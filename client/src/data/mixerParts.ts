@@ -9,6 +9,8 @@
  * duplicate-content penalties. English only.
  */
 
+import type { Blade } from "./blades";
+
 // ===== SHARED TYPES =====
 
 /** Key spec row shown in the product card and spec table */
@@ -65,11 +67,13 @@ export interface MixerPart {
   sector: MixerSectorType;
   categoryDisplay: string;
   image: string;
+  imageDimensions?: Blade["imageDimensions"];
   gallery: string[];
   description: string;
   link: string;
   specs: MixerSpec[];
   compatibleMachines: string[];
+  compatibleMachinesIntro?: string;
 
   // ── Optional list-page decorators ────────────────────────────────────────
   badge?: string;
@@ -169,6 +173,7 @@ export const mixerParts: MixerPart[] = [
   // CONCRETE MIXING PLANT
   // ───────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Source replacement concrete mixing arms cast in ZG310-570 steel and machined for your mixer's hub and bolt pattern. Send your plant model, drawing or worn arm, and Sureay will prepare a replacement quotation.",
     id: "concrete-mixing-arm",
     name: "Concrete Mixing Arm",
     fullName: "Concrete Mixing Plant Mixing Arm (ZG310-570 Cast Steel)",
@@ -177,6 +182,7 @@ export const mixerParts: MixerPart[] = [
     categoryDisplay: "Concrete Mixing Plant",
     image:
       "/images/mixer-parts/concrete-mixing-arm/concrete-mixing-arm-00.webp",
+    imageDimensions: { width: 629, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/concrete-mixing-arm/concrete-mixing-arm-00.webp",
       "/images/mixer-parts/concrete-mixing-arm/concrete-mixing-arm-01.webp",
@@ -299,6 +305,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Get bolt-in concrete mixer liners in Ni-Hard or high-chromium iron, with profiles and mounting holes tailored to your chamber. Share your mixer model and plate drawing for material selection support and a replacement quote.",
     id: "concrete-liner-plate",
     name: "Concrete Liner Plate",
     fullName: "Concrete Mixing Plant Liner Plate (Ni-Hard / High-Chrome Iron)",
@@ -307,6 +314,7 @@ export const mixerParts: MixerPart[] = [
     categoryDisplay: "Concrete Mixing Plant",
     image:
       "/images/mixer-parts/concrete-liner-plate/concrete-liner-plate-00.webp",
+    imageDimensions: { width: 629, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/concrete-liner-plate/concrete-liner-plate-00.webp",
       "/images/mixer-parts/concrete-liner-plate/concrete-liner-plate-01.webp",
@@ -424,6 +432,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Order replacement concrete mixer scrapers in high-chromium iron, with ground edge profiles for your wall and floor positions. Send Sureay your mixer model and scraper drawing or sample for a quotation tailored to your maintenance needs.",
     id: "concrete-scraper",
     name: "Concrete Scraper",
     fullName: "Concrete Mixing Plant Scraper Blade (High-Chrome, Drum-Wall)",
@@ -431,6 +440,7 @@ export const mixerParts: MixerPart[] = [
     sector: "scraper",
     categoryDisplay: "Concrete Mixing Plant",
     image: "/images/mixer-parts/concrete-scraper/concrete-scraper-00.webp",
+    imageDimensions: { width: 630, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/concrete-scraper/concrete-scraper-00.webp",
       "/images/mixer-parts/concrete-scraper/concrete-scraper-01.webp",
@@ -548,6 +558,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Get replacement concrete mixer paddles with bolt-on mounting and Ni-Hard or high-chromium iron options for your aggregate duty. Share your mixer model, blade drawing and quantity, and Sureay will help you select a grade and prepare a quote.",
     id: "concrete-mixer-blade",
     name: "Concrete Mixer Blade",
     fullName: "Concrete Mixer Blade / Paddle (Bolt-On Ni-Hard)",
@@ -556,6 +567,7 @@ export const mixerParts: MixerPart[] = [
     categoryDisplay: "Concrete Mixing Plant",
     image:
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-00.webp",
+    imageDimensions: { width: 591, height: 591, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-00.webp",
       "/images/mixer-parts/concrete-mixer-blade/concrete-mixer-blade-01.webp",
@@ -672,6 +684,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Source replacement concrete mixer seals formed to your shaft and housing dimensions using wear- and corrosion-resistant sealing material. Send your plant model and seal drawing or sample, and Sureay will prepare a quotation for your replacement requirements.",
     id: "concrete-wear-seal",
     name: "Concrete Wear Seal",
     fullName: "Concrete Mixing Plant Shaft Wear Seal (Anti-Leak)",
@@ -679,6 +692,7 @@ export const mixerParts: MixerPart[] = [
     sector: "seal",
     categoryDisplay: "Concrete Mixing Plant",
     image: "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-00.webp",
+    imageDimensions: { width: 630, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-00.webp",
       "/images/mixer-parts/concrete-wear-seal/concrete-wear-seal-01.webp",
@@ -806,6 +820,7 @@ export const mixerParts: MixerPart[] = [
   // ASPHALT MIXING PLANT
   // ───────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement asphalt mixing arms in heat-resistant alloy steel, with hubs and bolt patterns machined for your pugmill or twin-shaft mixer. Share your plant model, drawing or worn arm for a replacement quotation from Sureay.",
     id: "asphalt-mixing-arm",
     name: "Asphalt Mixing Arm",
     fullName: "Asphalt Mixing Plant Mixing Arm (High-Temperature Alloy Steel)",
@@ -813,6 +828,7 @@ export const mixerParts: MixerPart[] = [
     sector: "mixing_arm",
     categoryDisplay: "Asphalt Mixing Plant",
     image: "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-00.webp",
+    imageDimensions: { width: 629, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-00.webp",
       "/images/mixer-parts/asphalt-mixing-arm/asphalt-mixing-arm-01.webp",
@@ -934,6 +950,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Source high-chromium iron liner plates for your asphalt mixer, with bolt-in profiles tailored to the chamber lining. Send Sureay your plant model, liner drawing and quantities for a replacement quotation covering the plates you need.",
     id: "asphalt-liner-plate",
     name: "Asphalt Liner Plate",
     fullName:
@@ -943,6 +960,7 @@ export const mixerParts: MixerPart[] = [
     categoryDisplay: "Asphalt Mixing Plant",
     image:
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-00.webp",
+    imageDimensions: { width: 630, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-00.webp",
       "/images/mixer-parts/asphalt-liner-plate/asphalt-liner-plate-01.webp",
@@ -1058,6 +1076,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Get high-chromium iron side linings cast to your asphalt mixer's end-wall and corner profiles. Send your plant model and a drawing or worn plate, and Sureay will prepare a quotation for your replacement lining requirements.",
     id: "asphalt-side-lining",
     name: "Asphalt Side Lining",
     fullName: "Asphalt Mixing Plant Side Lining (Edge Wear Protection)",
@@ -1066,6 +1085,7 @@ export const mixerParts: MixerPart[] = [
     categoryDisplay: "Asphalt Mixing Plant",
     image:
       "/images/mixer-parts/asphalt-side-lining/asphalt-side-lining-00.webp",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 640] },
     gallery: [
       "/images/mixer-parts/asphalt-side-lining/asphalt-side-lining-00.webp",
       "/images/mixer-parts/asphalt-side-lining/asphalt-side-lining-01.webp",
@@ -1181,6 +1201,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Order replacement asphalt spiral and paddle blades in high-chromium iron, with bolt-on mounting, pitch and profiles tailored to your mixer. Send Sureay your plant model and blade drawing or sample for a replacement quotation.",
     id: "asphalt-spiral-blade",
     name: "Asphalt Spiral Blade",
     fullName: "Asphalt Mixing Plant Spiral / Paddle Blade (Hot-Mix Conveying)",
@@ -1189,6 +1210,7 @@ export const mixerParts: MixerPart[] = [
     categoryDisplay: "Asphalt Mixing Plant",
     image:
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
+    imageDimensions: { width: 630, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-00.webp",
       "/images/mixer-parts/asphalt-spiral-blade/asphalt-spiral-blade-01.webp",
@@ -1305,6 +1327,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Get replacement W-type asphalt scrapers in high-chromium iron, with profiles and mounting arrangements for your pugmill's floor and wall positions. Share your plant model and scraper drawing or sample for a quotation from Sureay.",
     id: "asphalt-scraper",
     name: "Asphalt Scraper (W-Type)",
     fullName: "Asphalt Mixing Plant Scraper Blade (W-Type, Hot-Mix)",
@@ -1312,6 +1335,7 @@ export const mixerParts: MixerPart[] = [
     sector: "scraper",
     categoryDisplay: "Asphalt Mixing Plant",
     image: "/images/mixer-parts/asphalt-scraper/asphalt-scraper-00.webp",
+    imageDimensions: { width: 630, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/asphalt-scraper/asphalt-scraper-00.webp",
       "/images/mixer-parts/asphalt-scraper/asphalt-scraper-01.webp",
@@ -1426,6 +1450,7 @@ export const mixerParts: MixerPart[] = [
     ],
   },
   {
+    compatibleMachinesIntro: "Source heat-resistant replacement sealing elements formed to your asphalt mixer's shaft and housing dimensions. Send Sureay your plant model and seal drawing or sample, and we will prepare a quotation for your shaft-sealing requirements.",
     id: "asphalt-sealing",
     name: "Asphalt Sealing Element",
     fullName: "Asphalt Mixing Plant Shaft Sealing Element (High-Temp)",
@@ -1433,6 +1458,7 @@ export const mixerParts: MixerPart[] = [
     sector: "seal",
     categoryDisplay: "Asphalt Mixing Plant",
     image: "/images/mixer-parts/asphalt-sealing/asphalt-sealing-00.webp",
+    imageDimensions: { width: 630, height: 420, smallerWidths: [320] },
     gallery: [
       "/images/mixer-parts/asphalt-sealing/asphalt-sealing-00.webp",
       "/images/mixer-parts/asphalt-sealing/asphalt-sealing-01.webp",

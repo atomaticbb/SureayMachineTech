@@ -4,24 +4,21 @@
  * Architecture follows Home.tsx: page orchestrates imported section components.
  */
 
-import { Helmet } from "react-helmet-async";
 import SEO from "@/components/common/SEO";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import IndustryHero from "@/components/industry/IndustryHero";
 import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
-import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
+import { industryProductList } from "@/components/industry/industryProductList";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
-import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
+import { getIndustryBlades } from "@/data/industry-blades";
 import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
-  IndustryProduct,
   IndustryNarrative,
   IndustrySpec,
   IndustryMaterial,
@@ -42,167 +39,6 @@ const GALLERY_IMAGES = [
 const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
 
-// JSON-LD structured data — Google indexes English structured data even
-// from localized pages, so keep it in English regardless of active locale.
-const PAGE_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Plastics Recycling & Compounding Tooling",
-  url: "https://sureay.com/plastic-industry",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      item: {
-        "@type": "Product",
-        name: "Twin Shaft Shredder Blades",
-        image:
-          "https://sureay.com/images/products/shredder-blades/shredder-blades-01.webp",
-        description:
-          "Heavy-duty D2 and H13 twin-shaft shredder blades for plastic waste, HDPE pipes and mixed post-consumer feedstocks.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/twin-shaft-blades-recycling",
-        offers: getBladeOffer("twin-shaft-blades-recycling"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      item: {
-        "@type": "Product",
-        name: "Granulator Blades",
-        image:
-          "https://sureay.com/images/products/granulator-blades/granulator-blades-01.webp",
-        description:
-          "Tungsten Carbide and D2 granulator rotor knives precision-ground for plastic recycling and size reduction lines.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/granulator-blades",
-        offers: getBladeOffer("granulator-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      item: {
-        "@type": "Product",
-        name: "Strand Pelletizer Rotors",
-        image:
-          "https://sureay.com/images/products/blades/strand-pelletizer-rotor-01.webp",
-        description:
-          "PM-HSS and solid tungsten carbide strand pelletizer rotors with ≤0.005 mm concentricity, dynamic balanced to ISO 1940-1 G2.5 for Maag, Coperion and Cumberland lines.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/strand-pelletizer-rotors",
-        offers: getBladeOffer("strand-pelletizer-rotors"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      item: {
-        "@type": "Product",
-        name: "Melt Filter Scraper Blades",
-        image: "https://sureay.com/images/products/blades/scraper-blades.webp",
-        description:
-          "D2, H13 and solid carbide scraper blades for continuous melt filters. Compatible with EREMA, Gneuß, Ettlinger and FIMIC filtration systems.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/continuous-melt-filter-scraper-blades",
-        offers: getBladeOffer("continuous-melt-filter-scraper-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 5,
-      item: {
-        "@type": "Product",
-        name: "Single Shaft Rotor Inserts",
-        image:
-          "https://sureay.com/images/products/shredder-blades/single-shredder-blades-06.webp",
-        description:
-          "Indexable D2 and H13 single-shaft shredder rotor inserts for plastic waste, HDPE, and mixed post-consumer feedstocks.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/single-shaft-shredder-blades",
-        offers: getBladeOffer("single-shaft-shredder-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 6,
-      item: {
-        "@type": "Product",
-        name: "Single Shaft Bed Knives",
-        image:
-          "https://sureay.com/images/products/shredder-blades/single-shredder-bed-knives.webp",
-        description:
-          "Precision-ground D2 counter blades for single-shaft shredder systems. Drop-in OEM replacements with controlled-wear hardness.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/single-shaft-bed-knives",
-        offers: getBladeOffer("single-shaft-bed-knives"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 7,
-      item: {
-        "@type": "Product",
-        name: "Tire Shredder Blades",
-        image:
-          "https://sureay.com/images/products/shredder-blades/3-claw-shredder-blades.webp",
-        description:
-          "3-claw and 4-claw tire shredder blades in CR12 and D2 for rubber tire and cable shredding under extreme impact and abrasive loads.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/tire-shredder-blades",
-        offers: getBladeOffer("tire-shredder-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 8,
-      item: {
-        "@type": "Product",
-        name: "Shredder Screens",
-        image:
-          "https://sureay.com/images/products/shredder-screens/shredder-screens-04.webp",
-        description:
-          "Perforated shredder screens, screen baskets and screen plates in S355 and Hardox 400–500. Hole Ø 8–80 mm, reverse-engineered for Lindner, Vecoplan, UNTHA and Herbold machines.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/shredder-screens",
-        offers: getBladeOffer("shredder-screens"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 9,
-      item: {
-        "@type": "Product",
-        name: "Cutter Compactor Blades",
-        image:
-          "https://sureay.com/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-        description:
-          "D2, M2 HSS and carbide-tipped rotor and stator knives for cutter compactors and agglomerators on film and PET recycling lines. Compatible with EREMA, NGR and Starlinger.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/cutter-compactor-blades",
-        offers: getBladeOffer("cutter-compactor-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 10,
-      item: {
-        "@type": "Product",
-        name: "Die Face Cutting Knives & Pelletizer Blades",
-        image:
-          "https://sureay.com/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-        description:
-          "Die face cutting knives and underwater pelletizer blades ground to a controlled hardness differential that protects the die plate. Fits Gala, Nordson BKG, Maag and ECON systems.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/die-face-cutting-knives",
-        offers: getBladeOffer("die-face-cutting-knives"),
-      },
-    },
-  ],
-};
-
-// ─────────────────────────────────────────────────────────────────────────────
 export default function PlasticIndustry() {
   const lang = useLang();
   const { t } = useTranslation();
@@ -210,7 +46,6 @@ export default function PlasticIndustry() {
   const HERO_DATA: IndustryHeroData = {
     breadcrumb: t("industry.plastic.hero.breadcrumb"),
     h1: t("industry.plastic.hero.h1"),
-    h2: t("industry.plastic.hero.h2"),
     body1: t("industry.plastic.hero.body1"),
     body2: t("industry.plastic.hero.body2"),
     ctaHref: "#tooling-matrix",
@@ -259,7 +94,7 @@ export default function PlasticIndustry() {
     {
       name: t("industry.plastic.materials.m1.name"),
       abrasion: t("industry.plastic.materials.m1.abrasion"),
-      grade: "Tungsten Carbide",
+      grade: t("industry.grade.tungsten"),
       image: "/images/materials/pet-flakes.webp",
     },
     {
@@ -276,19 +111,7 @@ export default function PlasticIndustry() {
     },
   ];
 
-  const PRODUCTS: IndustryProduct[] = getBlades(lang)
-    .filter(blade => blade.sector === "recycling")
-    .map((blade, index) => ({
-      category: blade.categoryDisplay,
-      name: blade.name,
-      image: blade.image,
-      href: blade.link,
-      isFlagship: index === 0,
-    }));
-  const FILTER_CATEGORIES = [
-    "ALL",
-    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-  ];
+  const industryBlades = getIndustryBlades(getBlades(lang), "recycling");
 
   return (
     <>
@@ -302,26 +125,22 @@ export default function PlasticIndustry() {
           { name: t("footer.industries"), url: "/products" },
           { name: t("footer.industry.plastic"), url: "/plastic-industry" },
         ]}
+        preloadImage={LCP_PRELOAD}
+        extraJsonLd={[
+          industryProductList(industryBlades, HERO_DATA.h1, "/plastic-industry", lang),
+        ]}
       />
-      <Helmet>
-        <link rel="preload" as="image" href={LCP_PRELOAD} />
-        <script type="application/ld+json">
-          {JSON.stringify(PAGE_SCHEMA)}
-        </script>
-      </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
         <Navbar />
-        <IndustryHero data={HERO_DATA} />
-        <IndustryToolingMatrix
-          products={PRODUCTS}
-          filterCategories={FILTER_CATEGORIES}
-        />
-        <CategoryLinksRow slugs={["shredder-blades", "granulator-blades"]} />
-        <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
-        <IndustryMaterialFocus materials={MATERIALS} />
-        <IndustryOemPipeline />
-        <ContactRFQ />
+        <main>
+          <IndustryHero data={HERO_DATA} />
+          <IndustryToolingMatrix blades={industryBlades} catalogCards />
+
+          <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
+          <IndustryMaterialFocus materials={MATERIALS} />
+          <ContactRFQ />
+        </main>
         <Footer />
       </div>
     </>

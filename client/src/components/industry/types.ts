@@ -8,20 +8,10 @@ export interface HeroImage {
 export interface IndustryHeroData {
   breadcrumb: string;
   h1: string;
-  h2: string;
   body1: string;
   body2: string;
   ctaHref: string;
   gallery: HeroImage[];
-}
-
-export interface IndustryProduct {
-  category: string;
-  name: string;
-  image: string;
-  href: string;
-  isFlagship: boolean;
-  desc?: string; // optional card body copy
 }
 
 /** A single cell in the 4-column spec dashboard */
@@ -60,7 +50,7 @@ export interface IndustryMaterial {
 
 // ─── Shared style tokens ─────────────────────────────────────────────────────
 export const MONO: React.CSSProperties = {
-  fontFamily: "'JetBrains Mono', 'Roboto Mono', monospace",
+  fontFamily: "var(--font-mono)",
 };
 
 export const SPRING_MECHANICAL = {

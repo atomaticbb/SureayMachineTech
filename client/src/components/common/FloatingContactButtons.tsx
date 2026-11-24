@@ -1,7 +1,7 @@
 /**
  * FloatingContactButtons — reusable desktop-only (>=md) floating pair:
  * WhatsApp (top, official green) + RFQ (bottom, site navy). Fixed
- * bottom-right; auto-hides while the RFQ form is in view so it never
+ * center-right; auto-hides while the RFQ form is in view so it never
  * covers the submit button.
  */
 
@@ -85,7 +85,7 @@ export default function FloatingContactButtons({
 
   return (
     <div
-      className={`hidden md:flex fixed bottom-6 right-6 z-30 flex-col gap-3 transition-opacity duration-200 ${
+      className={`hidden md:flex fixed top-1/2 -translate-y-1/2 right-6 z-30 flex-col gap-3 transition-opacity duration-200 ${
         hidden ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
@@ -96,7 +96,7 @@ export default function FloatingContactButtons({
         onClick={handleWhatsAppClick}
         aria-label="Chat on WhatsApp"
         title="Chat on WhatsApp"
-        className="flex items-center justify-center w-[54px] h-[54px] rounded-[15px] bg-[#25D366] text-white shadow-md hover:shadow-lg hover:scale-[1.08] transition-all duration-150"
+        className="flex items-center justify-center w-[54px] h-[54px] rounded-[15px] bg-[#25D366] text-white shadow-none shadow-none hover:scale-[1.08] transition-all duration-150"
       >
         <WhatsAppIcon />
       </a>
@@ -105,7 +105,7 @@ export default function FloatingContactButtons({
         onClick={handleRfqClick}
         aria-label="Get a Quote"
         title="Get a Quote"
-        className="flex items-center justify-center w-[54px] h-[54px] rounded-[15px] bg-[#001F4D] text-white shadow-md hover:shadow-lg hover:scale-[1.08] transition-all duration-150"
+        className="flex items-center justify-center w-[54px] h-[54px] rounded-[15px] bg-[#001F4D] text-white shadow-none shadow-none hover:scale-[1.08] transition-all duration-150"
       >
         <EnvelopeIcon />
       </a>

@@ -17,6 +17,8 @@ export const SUPPORTED_LANGS = [
 ] as const;
 export type Lang = (typeof SUPPORTED_LANGS)[number];
 
+import { getCategoryRedirect, isRetiredProductPath } from "../../../shared/catalog-routing";
+
 export const DEFAULT_LANG: Lang = "en";
 
 /**
@@ -101,19 +103,26 @@ export function localizedPath(path: string, lang: Lang): string {
   return clean === "/" ? `/${lang}` : `/${lang}${clean}`;
 }
 
-/**
- * Product IDs that ship in English only — no /{lang} variants, no hreflang,
- * one sitemap entry. Use when a page goes live before its translations exist,
- * so Google never sees five English duplicates under localized URLs.
- *
- * Removing an ID here requires adding the matching entry to all five
- * data/locales/blades.*.ts arrays first — a product missing from a locale
- * array 404s in that language, it does not fall back to English.
- */
-export const ENGLISH_ONLY_PRODUCT_IDS: readonly string[] = [];
+/** IDs that have no translated detail. Drafts are excluded from the public
+ * route manifest regardless of this list. */
+export const ENGLISH_ONLY_PRODUCT_IDS: readonly string[] = [
+  "filter-rod-cutting-blades",
+];
 
 /** True when `path` (prefixed or not) is an English-only product page. */
 export function isEnglishOnlyProductPath(path: string): boolean {
   const clean = stripLangPrefix(path);
   return ENGLISH_ONLY_PRODUCT_IDS.some(id => clean === `/products/${id}`);
+}
+
+/** Only advertise translations that actually exist for this page. */
+export function getPageLanguages(path: string): Lang[] {
+  const clean = stripLangPrefix(path);
+  if (getCategoryRedirect(clean) || isRetiredProductPath(clean)) return [];
+  if (
+    clean === "/news" || clean.startsWith("/news/") ||
+    clean === "/privacy-policy" || clean === "/terms" ||
+    isEnglishOnlyProductPath(clean)
+  ) return [DEFAULT_LANG];
+  return [...PUBLISHED_LANGS];
 }

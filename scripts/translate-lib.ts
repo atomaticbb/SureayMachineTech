@@ -43,6 +43,12 @@ export const NON_TRANSLATABLE_KEYS = new Set([
   "badgeColor", // UI color enum
   "compatibleMachines", // OEM brand names (Vecoplan, BHS, EREMA…)
   "relatedBladeIds",
+  "productIds",
+  "layout",
+  "oemExcludeList",
+  "itemNo",
+  "grade",
+  "hardness",
   "isFeatured",
   "offers", // price range, numbers
   "catalogUrl",
@@ -72,6 +78,7 @@ const FILE_LIKE =
 function isTranslatableString(s: string): boolean {
   const trimmed = s.trim();
   if (trimmed.length < 2) return false;
+  if (/^SR\d{6}$/.test(trimmed) || !/\p{L}/u.test(trimmed)) return false;
   if (URL_LIKE.test(trimmed)) return false;
   if (FILE_LIKE.test(trimmed)) return false;
   return true;
@@ -141,8 +148,7 @@ export function applyTranslations<T>(
 // ── Glossary ─────────────────────────────────────────────────────────────────
 // Industry-specific terminology that must stay consistent across the catalog.
 // Applied via placeholder substitution: English term → __G0__ → target term.
-// Order matters: list longer phrases BEFORE their substrings so the regex
-// doesn't shadow ("rotary slitter knives" before "slitter").
+// Preprocessing matches longer phrases before their substrings.
 
 export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
   es: {
@@ -151,14 +157,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
     // never timber and never a logbook. Machine translation got this wrong
     // on both log-saw products; pinned so a regeneration cannot undo it.
-    "log saw blades": "hojas de sierra para troncos",
-    "Log Saw Blades": "Hojas de sierra para troncos",
-    "log saws": "sierras para troncos",
-    "Log Saws": "Sierras para troncos",
-    "log saw": "sierra para troncos",
-    "Log Saw": "Sierra para troncos",
-    "tissue log": "tronco de papel tisú",
-    "Tissue Log": "Tronco de papel tisú",
+    "Log Saw Blades": "Hojas de sierra para cortar rollos",
+    "log saws": "sierras para rollos",
+    "Log Saws": "Sierras para rollos",
+    "log saw": "sierra para rollos",
+    "Log Saw": "Sierra para rollos",
+    "tissue log": "rollo de papel tisú",
+    "Tissue Log": "Rollo de papel tisú",
     "tissue paper": "papel tisú",
     tissue: "papel tisú",
     Tissue: "Papel tisú",
@@ -171,7 +176,7 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "guillotine blades": "cuchillas de guillotina",
     "shear blades": "cuchillas de cizalla",
     "circular knives": "cuchillas circulares",
-    "log saw blades": "sierras circulares para troncos",
+    "log saw blades": "hojas de sierra para cortar rollos",
     "heat treatment": "tratamiento térmico",
     "Rockwell hardness": "dureza Rockwell",
     "powder metallurgy": "pulvimetalurgia",
@@ -185,14 +190,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
     // never timber and never a logbook. Machine translation got this wrong
     // on both log-saw products; pinned so a regeneration cannot undo it.
-    "log saw blades": "lames de scie à bûches",
-    "Log Saw Blades": "Lames de scie à bûches",
-    "log saws": "scies à bûches",
-    "Log Saws": "Scies à bûches",
-    "log saw": "scie à bûches",
-    "Log Saw": "Scie à bûches",
-    "tissue log": "bûche de papier tissu",
-    "Tissue Log": "Bûche de papier tissu",
+    "Log Saw Blades": "Lames de scie pour rouleaux",
+    "log saws": "scies pour rouleaux",
+    "Log Saws": "Scies pour rouleaux",
+    "log saw": "scie pour rouleaux",
+    "Log Saw": "Scie pour rouleaux",
+    "tissue log": "rouleau de papier ouate",
+    "Tissue Log": "Rouleau de papier ouate",
     "tissue paper": "papier tissu",
     tissue: "papier tissu",
     Tissue: "Papier tissu",
@@ -205,7 +209,7 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "guillotine blades": "lames de guillotine",
     "shear blades": "lames de cisaille",
     "circular knives": "couteaux circulaires",
-    "log saw blades": "lames de scie circulaire pour rondins",
+    "log saw blades": "lames de scie pour rouleaux",
     "heat treatment": "traitement thermique",
     "Rockwell hardness": "dureté Rockwell",
     "powder metallurgy": "métallurgie des poudres",
@@ -219,14 +223,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
     // never timber and never a logbook. Machine translation got this wrong
     // on both log-saw products; pinned so a regeneration cannot undo it.
-    "log saw blades": "пильные диски для логов",
-    "Log Saw Blades": "Пильные диски для логов",
-    "log saws": "логорезные машины",
-    "Log Saws": "Логорезные машины",
-    "log saw": "логорезная машина",
-    "Log Saw": "Логорезная машина",
-    "tissue log": "лог тиссью",
-    "Tissue Log": "Лог тиссью",
+    "Log Saw Blades": "Дисковые ножи для резки рулонов",
+    "log saws": "пилы для резки рулонов",
+    "Log Saws": "Пилы для резки рулонов",
+    "log saw": "пила для резки рулонов",
+    "Log Saw": "Пила для резки рулонов",
+    "tissue log": "рулон санитарно-гигиенической бумаги",
+    "Tissue Log": "Рулон санитарно-гигиенической бумаги",
     "tissue paper": "бумага тиссью",
     tissue: "тиссью",
     Tissue: "Тиссью",
@@ -239,7 +242,7 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "guillotine blades": "гильотинные ножи",
     "shear blades": "ножницы для резки",
     "circular knives": "дисковые ножи",
-    "log saw blades": "дисковые пилы для бревен",
+    "log saw blades": "дисковые ножи для резки рулонов",
     "heat treatment": "термическая обработка",
     "Rockwell hardness": "твёрдость по Роквеллу",
     "powder metallurgy": "порошковая металлургия",
@@ -253,14 +256,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
     // never timber and never a logbook. Machine translation got this wrong
     // on both log-saw products; pinned so a regeneration cannot undo it.
-    "log saw blades": "lưỡi cưa cuộn",
-    "Log Saw Blades": "Lưỡi cưa cuộn",
+    "Log Saw Blades": "Lưỡi cưa cắt cuộn",
     "log saws": "máy cưa cuộn",
     "Log Saws": "Máy cưa cuộn",
-    "log saw": "cưa cuộn",
-    "Log Saw": "Cưa cuộn",
-    "tissue log": "cuộn khăn giấy",
-    "Tissue Log": "Cuộn khăn giấy",
+    "log saw": "máy cưa cuộn",
+    "Log Saw": "Máy cưa cuộn",
+    "tissue log": "cuộn giấy tissue",
+    "Tissue Log": "Cuộn giấy tissue",
     "tissue paper": "khăn giấy",
     tissue: "khăn giấy",
     Tissue: "Khăn giấy",
@@ -273,7 +275,7 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "guillotine blades": "dao cắt giấy",
     "shear blades": "dao cắt thép",
     "circular knives": "dao tròn",
-    "log saw blades": "lưỡi cưa tròn cho gỗ tròn",
+    "log saw blades": "lưỡi cưa cắt cuộn",
     "heat treatment": "xử lý nhiệt",
     "Rockwell hardness": "độ cứng Rockwell",
     "powder metallurgy": "luyện kim bột",
@@ -287,14 +289,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
     // never timber and never a logbook. Machine translation got this wrong
     // on both log-saw products; pinned so a regeneration cannot undo it.
-    "log saw blades": "lâminas de serra para troncos",
-    "Log Saw Blades": "Lâminas de serra para troncos",
-    "log saws": "serras para troncos",
-    "Log Saws": "Serras para troncos",
-    "log saw": "serra para troncos",
-    "Log Saw": "Serra para troncos",
-    "tissue log": "tronco de papel tissue",
-    "Tissue Log": "Tronco de papel tissue",
+    "Log Saw Blades": "Lâminas de serra para bobinas",
+    "log saws": "serras para bobinas",
+    "Log Saws": "Serras para bobinas",
+    "log saw": "serra para bobinas",
+    "Log Saw": "Serra para bobinas",
+    "tissue log": "bobina de papel tissue",
+    "Tissue Log": "Bobina de papel tissue",
     "tissue paper": "papel tissue",
     tissue: "papel tissue",
     Tissue: "Papel tissue",
@@ -340,14 +341,13 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     // A "log" in this catalogue is a wound roll of tissue or nonwoven web,
     // never timber and never a logbook. Machine translation got this wrong
     // on both log-saw products; pinned so a regeneration cannot undo it.
-    "log saw blades": "rulo testere bıçakları",
-    "Log Saw Blades": "Rulo testere bıçakları",
-    "log saws": "rulo testereleri",
-    "Log Saws": "Rulo testereleri",
-    "log saw": "rulo testere",
-    "Log Saw": "Rulo testere",
-    "tissue log": "kağıt rulosu",
-    "Tissue Log": "Kağıt rulosu",
+    "Log Saw Blades": "Rulo kesim testeresi bıçakları",
+    "log saws": "rulo kesim testereleri",
+    "Log Saws": "Rulo kesim testereleri",
+    "log saw": "rulo kesim testeresi",
+    "Log Saw": "Rulo kesim testeresi",
+    "tissue log": "temizlik kâğıdı rulosu",
+    "Tissue Log": "Temizlik kâğıdı rulosu",
     "tissue paper": "kağıt mendil",
     tissue: "kağıt mendil",
     Tissue: "Kağıt mendil",
@@ -360,7 +360,7 @@ export const GLOSSARY: Partial<Record<LangCode, Record<string, string>>> = {
     "guillotine blades": "giyotin bıçakları",
     "shear blades": "makaslama bıçakları",
     "circular knives": "dairesel bıçaklar",
-    "log saw blades": "log testere bıçakları",
+    "log saw blades": "rulo kesim testeresi bıçakları",
     "heat treatment": "ısıl işlem",
     "Rockwell hardness": "Rockwell sertliği",
     "powder metallurgy": "toz metalurjisi",
@@ -387,7 +387,13 @@ export function preprocessGlossary(
   const placeholders = new Map<string, string>();
   let processed = text;
   let i = 0;
-  for (const [en, targetTerm] of Object.entries(map)) {
+  processed = processed.replace(/\]\((\/[^)]+)\)/g, (_, url: string) => {
+    const placeholder = `zGTR${i++}zGTR`;
+    placeholders.set(placeholder, url);
+    return `](${placeholder})`;
+  });
+  const terms = Object.entries(map).sort(([a], [b]) => b.length - a.length);
+  for (const [en, targetTerm] of terms) {
     const escaped = en.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const regex = new RegExp(escaped, "g");
     if (regex.test(processed)) {

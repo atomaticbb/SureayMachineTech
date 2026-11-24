@@ -41,11 +41,6 @@ export const CATEGORY_FACETS: {
     analyticsName: "Shredder Blades",
   },
   {
-    value: "granulator_blades",
-    labelKey: "productList.filters.granulatorBlades",
-    analyticsName: "Granulator Blades",
-  },
-  {
     value: "log_saw_blades",
     labelKey: "productList.filters.logSawBlades",
     analyticsName: "Log Saw Blades",
@@ -56,19 +51,19 @@ export const CATEGORY_FACETS: {
     analyticsName: "Shear Blades",
   },
   {
-    value: "cold_saw_blades",
-    labelKey: "productList.filters.coldSawBlades",
-    analyticsName: "Cold Saw Blades",
-  },
-  {
     value: "wood_chipper",
     labelKey: "productList.filters.woodChipperBlades",
     analyticsName: "Wood Chipper Blades",
   },
   {
+    value: "paper_cutting",
+    labelKey: "productList.filters.paperCuttingKnives",
+    analyticsName: "Paper Cutting Knives",
+  },
+  {
     value: "custom_profile",
-    labelKey: "productList.filters.customBlades",
-    analyticsName: "Custom Blades",
+    labelKey: "productList.filters.otherCustomBlades",
+    analyticsName: "Other & Custom",
   },
 ];
 
@@ -117,7 +112,7 @@ function FacetRow({
 
   return (
     <label
-      className={`flex items-center gap-2.5 py-[5px] ${
+      className={`flex items-center gap-2.5 py-[5px] max-lg:min-h-11 ${
         disabled ? "cursor-not-allowed" : "cursor-pointer group"
       }`}
     >
@@ -129,7 +124,7 @@ function FacetRow({
         className="appearance-none w-[13px] h-[13px] shrink-0 border border-slate-300 bg-white checked:bg-[#001f4d] checked:border-[#001f4d] disabled:border-slate-200 disabled:bg-slate-50 group-hover:border-[#001f4d] cursor-pointer disabled:cursor-not-allowed transition-colors"
       />
       <span
-        className={`flex-1 text-[13px] leading-snug transition-colors ${
+        className={`flex-1 text-[16px] leading-snug transition-colors ${
           disabled
             ? "text-slate-300"
             : checked
@@ -140,12 +135,12 @@ function FacetRow({
         {label}
       </span>
       <span
-        className={`font-mono text-[11px] tabular-nums ${
+        className={`font-mono text-[14px] tabular-nums ${
           disabled
             ? "text-slate-200"
             : checked
               ? "text-[#001f4d]"
-              : "text-slate-400"
+              : "text-muted-foreground"
         }`}
       >
         {count}
@@ -181,14 +176,14 @@ export default function ProductFacetSidebar({
     <>
       <div>
         <div className="flex items-baseline justify-between border-b-2 border-[#001f4d] pb-2 mb-2">
-          <h2 className="font-mono text-[11px] font-black text-[#001f4d] tracking-[0.18em] uppercase">
+          <h2 className="font-display text-[14px] font-black text-[#001f4d] tracking-[0.18em] ">
             {t("productList.facets.categoryHeading")}
           </h2>
           {categories.length > 0 && (
             <button
               type="button"
               onClick={onClearCategories}
-              className="font-mono text-[10px] text-slate-400 tracking-[0.12em] hover:text-[#001f4d] transition-colors"
+              className="max-lg:min-h-11 max-lg:min-w-11 font-mono text-[12px] text-muted-foreground tracking-[0.12em] hover:text-[#001f4d] transition-colors"
             >
               {t("productList.facets.clear")}
             </button>
@@ -207,14 +202,14 @@ export default function ProductFacetSidebar({
 
       <div className="mt-8">
         <div className="flex items-baseline justify-between border-b-2 border-[#001f4d] pb-2 mb-2">
-          <h2 className="font-mono text-[11px] font-black text-[#001f4d] tracking-[0.18em] uppercase">
+          <h2 className="font-display text-[14px] font-black text-[#001f4d] tracking-[0.18em] ">
             {t("productList.facets.sectorHeading")}
           </h2>
           {sectors.length > 0 && (
             <button
               type="button"
               onClick={onClearSectors}
-              className="font-mono text-[10px] text-slate-400 tracking-[0.12em] hover:text-[#001f4d] transition-colors"
+              className="max-lg:min-h-11 max-lg:min-w-11 font-mono text-[12px] text-muted-foreground tracking-[0.12em] hover:text-[#001f4d] transition-colors"
             >
               {t("productList.facets.clear")}
             </button>
@@ -239,12 +234,12 @@ export default function ProductFacetSidebar({
         type="button"
         onClick={() => setMobileOpen(o => !o)}
         aria-expanded={mobileOpen}
-        className="lg:hidden w-full flex items-center justify-between border border-slate-200 px-4 py-3 font-mono text-[12px] font-bold text-[#001f4d] tracking-[0.14em] uppercase hover:border-[#001f4d] transition-colors"
+        className="lg:hidden w-full flex items-center justify-between border border-slate-200 px-4 py-3 font-mono text-[14px] font-bold text-[#001f4d] tracking-[0.14em]  hover:border-[#001f4d] transition-colors"
       >
         <span className="flex items-center gap-2">
           {t("productList.facets.filters")}
           {activeCount > 0 && (
-            <span className="bg-[#001f4d] text-white px-1.5 py-0.5 text-[10px]">
+            <span className="bg-[#001f4d] text-white px-1.5 py-0.5 text-[12px]">
               {activeCount}
             </span>
           )}

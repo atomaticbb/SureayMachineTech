@@ -1,146 +1,120 @@
-/**
- * scripts/catalog/html-builder.ts
- *
- * Assembles complete HTML documents for PDF catalog generation.
- *
- * Per-sector: Cover → About → Products (1 page each) → Process → Back Cover
- * Full:       Cover → About → [Industry Divider → Products]×N → Process → Back Cover
- */
-
-import type { Blade } from "../../client/src/data/blades.ts";
-import type { SectorMeta, IndustryHeroMeta } from "./constants.ts";
-import { COMPANY, SECTOR_CONFIG, INDUSTRY_HERO } from "./constants.ts";
+import type { Blade, BladeSectorType } from "../../client/src/data/blades.ts";
+import { COMPANY, SECTOR_CONFIG, type SectorMeta } from "./constants.ts";
+import { catalogCopy as copy } from "./copy.ts";
 import { CATALOG_CSS } from "./styles.ts";
-import { readSvgFile } from "./utils.ts";
+import { escapeHtml, readSvgFile } from "./utils.ts";
 import { buildCoverPage } from "./templates/cover.ts";
 import { buildAboutPage } from "./templates/about.ts";
 import { buildProcessPage } from "./templates/process.ts";
-import { buildProductPage } from "./templates/product-page.ts";
+import { buildProductPages } from "./templates/product-page.ts";
 import { buildBackCover } from "./templates/back-cover.ts";
 import { buildIndustryDivider } from "./templates/industry-divider.ts";
+import { buildToc, type IndexEntry } from "./templates/toc.ts";
 
-export async function buildCatalogHtml(
-  sectorBlades: Blade[],
+async function buildBook(
+  blades: Blade[],
+  publicDir: string,
+  logoPath: string,
+  sector?: BladeSectorType
+) {
+  const logo = readSvgFile(logoPath);
+  const title = sector ? copy.sectors[sector] : copy.complete;
+  const sections: string[] = [];
+  const index: IndexEntry[] = [];
+  let nextPage = 3; // Cover and contents each occupy one physical page.
+  async function products(items: Blade[]): Promise<IndexEntry[]> {
+    const entries: IndexEntry[] = [];
+    for (const blade of items) {
+      entries.push({
+        href: "product-" + blade.id,
+        name: blade.name,
+        page: nextPage,
+      });
+      const sheets = await buildProductPages(
+        blade,
+        publicDir,
+        logo,
+        nextPage,
+        copy
+      );
+      sections.push(...sheets);
+      nextPage += sheets.length;
+    }
+    return entries;
+  }
+  if (sector) {
+    index.push(...(await products(blades)));
+  } else {
+    const order = new Set([
+      ...(Object.keys(SECTOR_CONFIG) as BladeSectorType[]),
+      ...blades.map(b => b.sector),
+    ]);
+    for (const key of order) {
+      const items = blades.filter(b => b.sector === key);
+      if (!items.length) continue;
+      const page = nextPage++;
+      const position = sections.length;
+      index.push({ href: "sector-" + key, name: copy.sectors[key], page });
+      const entries = await products(items);
+      const image = items.find(b => b.image && !b.imagePending)?.image ?? "";
+      sections.splice(
+        position,
+        0,
+        await buildIndustryDivider(
+          key,
+          copy.sectors[key],
+          entries,
+          image,
+          publicDir,
+          logo,
+          page,
+          copy
+        )
+      );
+    }
+  }
+  index.push(
+    { href: "standards", name: copy.standardsTitle, page: nextPage },
+    { href: "contact", name: copy.contact, page: nextPage + 1 }
+  );
+  const [cover, contents, standards] = await Promise.all([
+    buildCoverPage(
+      title,
+      copy,
+      logo,
+      publicDir,
+      COMPANY.websiteUrl + "/products",
+      blades.length
+    ),
+    buildAboutPage(copy, publicDir, logo, buildToc(index)),
+    buildProcessPage(publicDir, logo, nextPage, copy),
+  ]);
+  const contact = buildBackCover(
+    logo,
+    copy,
+    COMPANY.websiteUrl + "/contact"
+  );
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8">
+    <title>${escapeHtml(title)} | Sureay</title><style>${CATALOG_CSS}</style></head><body>${[cover, contents, ...sections, standards, contact].join("")}</body></html>`;
+}
+
+export function buildCatalogHtml(
+  blades: Blade[],
   config: SectorMeta,
   publicDir: string,
   logoPath: string
-): Promise<string> {
-  const logoSvg = readSvgFile(logoPath);
-
-  const cover = await buildCoverPage(config, logoSvg, publicDir);
-  const about = await buildAboutPage(publicDir, logoSvg, 1);
-
-  // Products start at page 2 (after about)
-  const productPages = await Promise.all(
-    sectorBlades.map((blade, i) =>
-      buildProductPage(blade, i, publicDir, logoSvg, 2 + i)
-    )
-  );
-  const products = productPages.join("\n");
-
-  // Process page comes after all products
-  const processPageNum = 2 + sectorBlades.length;
-  const process = await buildProcessPage(publicDir, logoSvg, processPageNum);
-
-  const backCover = buildBackCover(logoSvg);
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${config.title} — Sureay Product Catalog</title>
-  <style>${CATALOG_CSS}</style>
-</head>
-<body>
-  ${cover}
-  ${about}
-  ${products}
-  ${process}
-  ${backCover}
-</body>
-</html>`;
+) {
+  const sector = Object.entries(SECTOR_CONFIG).find(
+    ([, entry]) => entry.filename === config.filename
+  )?.[0] as BladeSectorType | undefined;
+  if (!sector) throw new Error("Unknown sector catalog: " + config.filename);
+  return buildBook(blades, publicDir, logoPath, sector);
 }
 
-/**
- * Build a complete catalog containing ALL products, grouped by industry.
- * Structure: Cover → About → [Industry Divider → Products]×N → Process → Back Cover
- */
-export async function buildFullCatalogHtml(
-  allBlades: Blade[],
+export function buildFullCatalogHtml(
+  blades: Blade[],
   publicDir: string,
   logoPath: string
-): Promise<string> {
-  const logoSvg = readSvgFile(logoPath);
-  const year = new Date().getFullYear();
-
-  // Full catalog cover config
-  const fullConfig: SectorMeta = {
-    title: "Complete Product Catalog",
-    subtitle: "Industrial Blades & Cutting Solutions",
-    filename: "sureay-complete-product-catalog.pdf",
-    description:
-      "Full product catalog covering all industrial blade categories across recycling, paper, metal, converting, and new energy industries.",
-  };
-
-  const cover = await buildCoverPage(fullConfig, logoSvg, publicDir);
-  const about = await buildAboutPage(publicDir, logoSvg, 1);
-
-  // Build industry sections in sector order
-  const sectorOrder = Object.keys(SECTOR_CONFIG);
-  const sections: string[] = [];
-  let pageNum = 2;
-  let sectionIndex = 0;
-
-  for (const sectorKey of sectorOrder) {
-    const sectorBlades = allBlades.filter((b) => b.sector === sectorKey);
-    if (sectorBlades.length === 0) continue;
-
-    const hero = INDUSTRY_HERO[sectorKey];
-    if (hero) {
-      sectionIndex++;
-      const divider = await buildIndustryDivider(
-        hero,
-        SECTOR_CONFIG[sectorKey],
-        sectorBlades.length,
-        sectionIndex,
-        publicDir,
-        logoSvg
-      );
-      sections.push(divider);
-      pageNum++;
-    }
-
-    for (let i = 0; i < sectorBlades.length; i++) {
-      const productPage = await buildProductPage(
-        sectorBlades[i],
-        i,
-        publicDir,
-        logoSvg,
-        pageNum
-      );
-      sections.push(productPage);
-      pageNum++;
-    }
-  }
-
-  const process = await buildProcessPage(publicDir, logoSvg, pageNum);
-  const backCover = buildBackCover(logoSvg);
-
-  return `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete Product Catalog ${year} — Sureay Machinery</title>
-  <style>${CATALOG_CSS}</style>
-</head>
-<body>
-  ${cover}
-  ${about}
-  ${sections.join("\n")}
-  ${process}
-  ${backCover}
-</body>
-</html>`;
+) {
+  return buildBook(blades, publicDir, logoPath);
 }

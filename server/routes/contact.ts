@@ -7,7 +7,8 @@ const ALLOWED_EXT = /\.(pdf|dxf|dwg|step|stp|jpg|jpeg|png|webp|gif)$/i;
 
 const upload = multer({
   storage: multer.memoryStorage(), // never touches disk
-  limits: { fileSize: 15 * 1024 * 1024 }, // 15 MB hard cap
+  // Busboy emits its limit event at equality; allow exactly 15 MiB.
+  limits: { fileSize: 15 * 1024 * 1024 + 1 },
   fileFilter: (_req, file, cb) => {
     if (ALLOWED_EXT.test(file.originalname)) {
       cb(null, true);

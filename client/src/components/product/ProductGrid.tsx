@@ -2,7 +2,7 @@
  * ProductGrid — renders a collection of ProductCards
  * layout='list'  → stacked flex-col (used in BladeListPage sidebar layout)
  * layout='grid'  → 3-col card grid (future use)
- * layout='compact' → 4-col dense grid (used by the faceted /products catalogue)
+ * layout='compact' → 3-col catalogue grid (used by the faceted /products catalogue)
  * layout='related' → 3-col grid of compact related cards (used in BladeDetail)
  */
 
@@ -40,7 +40,7 @@ export default function ProductGrid({
             d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">
+        <p className="text-muted-foreground dark:text-muted-foreground text-lg font-medium">
           {t("productGrid.noResults")}
         </p>
         {onShowAll && (
@@ -57,7 +57,7 @@ export default function ProductGrid({
 
   if (layout === "related") {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="mobile-product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {blades.map(blade => (
           <ProductCard key={blade.id} blade={blade} variant="related" />
         ))}
@@ -67,7 +67,7 @@ export default function ProductGrid({
 
   if (layout === "compact") {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="mobile-product-grid grid auto-rows-fr grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {blades.map(blade => (
           <ProductCard
             key={blade.id}
@@ -82,7 +82,7 @@ export default function ProductGrid({
 
   if (layout === "grid") {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mobile-product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blades.map(blade => (
           <ProductCard
             key={blade.id}

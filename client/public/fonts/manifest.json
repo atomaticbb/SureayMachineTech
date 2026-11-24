@@ -1,0 +1,32 @@
+[
+  {
+    "file": "metropolis-latin-500-normal.woff2",
+    "bytes": 26360,
+    "source": "https://registry.npmjs.org/@fontsource/metropolis/-/metropolis-5.3.0.tgz"
+  },
+  {
+    "file": "metropolis-latin-600-normal.woff2",
+    "bytes": 26564,
+    "source": "https://registry.npmjs.org/@fontsource/metropolis/-/metropolis-5.3.0.tgz"
+  },
+  {
+    "file": "metropolis-latin-700-normal.woff2",
+    "bytes": 26428,
+    "source": "https://registry.npmjs.org/@fontsource/metropolis/-/metropolis-5.3.0.tgz"
+  },
+  {
+    "file": "inter-latin-wght-normal.woff2",
+    "bytes": 48256,
+    "source": "https://registry.npmjs.org/@fontsource-variable/inter/-/inter-5.3.0.tgz"
+  },
+  {
+    "file": "ibm-plex-mono-latin-400-normal.woff2",
+    "bytes": 14708,
+    "source": "https://registry.npmjs.org/@fontsource/ibm-plex-mono/-/ibm-plex-mono-5.3.0.tgz"
+  },
+  {
+    "file": "ibm-plex-mono-latin-500-normal.woff2",
+    "bytes": 14888,
+    "source": "https://registry.npmjs.org/@fontsource/ibm-plex-mono/-/ibm-plex-mono-5.3.0.tgz"
+  }
+]

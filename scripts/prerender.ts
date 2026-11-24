@@ -15,13 +15,15 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 // tsx resolves .ts imports at runtime — no compilation step needed
-import { blades } from "../client/src/data/blades.ts";
+import { bladeDetailPages } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
+  getPageLanguages,
   PUBLISHED_LANG_PREFIXES,
-  isEnglishOnlyProductPath,
+  stripLangPrefix,
+  localizedPath,
 } from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -53,11 +55,9 @@ const CANONICAL_ROUTES: string[] = [
   "/privacy-policy",
   "/terms",
   // dynamic product pages — derived from static blade data
-  ...blades.map(b => `/products/${b.id}`),
+  ...bladeDetailPages.map(b => `/products/${b.id}`),
   // dynamic category aggregation pages — derived from static category metadata
-  // "custom-profile" is excluded: the server returns 410 for it (/custom is
-  // the live page; this slug was only ever reached via old backlinks)
-  ...BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile").map(
+  ...BLADE_CATEGORIES.map(
     c => `/categories/${c.slug}`
   ),
   // mixer wear parts: overview + 2 categories + 11 products (multilingual)
@@ -71,7 +71,7 @@ const CANONICAL_ROUTES: string[] = [
 ];
 
 // Expand canonical English routes across all non-default languages.
-// Only PUBLISHED_LANG_PREFIXES are expanded — languages still being
+// Only published page languages are expanded — languages still being
 // translated (PENDING_LANGS) must not be prerendered or indexed.
 // Set PRERENDER_LANGS=en to skip the multi-lang expansion (fast dev iteration).
 const PRERENDER_LANGS_RAW = (
@@ -79,23 +79,13 @@ const PRERENDER_LANGS_RAW = (
 ).toLowerCase();
 const SHOULD_EXPAND_LANGS = PRERENDER_LANGS_RAW !== "en";
 
-// News and legal routes are English-only — exclude from multilingual
-// expansion. Mixer wear parts are translated and expand like product pages.
-const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
-const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
-const isEnglishOnlyRoute = (r: string) =>
-  isNewsRoute(r) ||
-  isLegalRoute(r) ||
-  isEnglishOnlyProductPath(r) ||
-  r === "/404";
-
 const ROUTES: string[] = SHOULD_EXPAND_LANGS
   ? [
       ...CANONICAL_ROUTES,
-      ...PUBLISHED_LANG_PREFIXES.flatMap(lang =>
-        CANONICAL_ROUTES.filter(r => !isEnglishOnlyRoute(r)).map(r =>
-          r === "/" ? `/${lang}` : `/${lang}${r}`
-        )
+      ...CANONICAL_ROUTES.filter(route => route !== "/404").flatMap(route =>
+        getPageLanguages(route)
+          .filter(lang => lang !== "en")
+          .map(lang => localizedPath(route, lang))
       ),
     ]
   : CANONICAL_ROUTES;
@@ -280,6 +270,12 @@ async function renderRoute(browser: Browser, route: string): Promise<void> {
     // hero), so the h1 wait above resolves before they've rendered. Wait
     // for the marker Home.tsx renders once that Suspense boundary has
     // actually resolved, or the static snapshot silently ships without them.
+    if (stripLangPrefix(route).startsWith("/categories/")) {
+      // Category cards and historical deep-link anchors come from a lazy section.
+      await page.waitForSelector("main #products a.blade-catalog-card", {
+        timeout: TIMEOUT_MS,
+      });
+    }
     const isHomeRoute =
       route === "/" ||
       PUBLISHED_LANG_PREFIXES.some(lang => route === `/${lang}`);

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import Helmet from "./PageHelmet";
 import { useLang } from "@/contexts/LangContext";
 import {
-  PUBLISHED_LANGS,
+  getPageLanguages,
   DEFAULT_LANG,
   isEnglishOnlyProductPath,
   localizedPath,
@@ -46,7 +46,7 @@ function dirForLang(lang: Lang): "ltr" | "rtl" {
 
 export interface ProductData {
   name: string;
-  image: string; // relative (/images/…) or absolute
+  image?: string; // relative (/images/…) or absolute; omitted for pending product photos
   images?: string[]; // additional gallery images
   description: string;
   sku?: string;
@@ -78,6 +78,7 @@ export interface SEOProps {
   canonicalUrl?: string;
   productData?: ProductData;
   ogImage?: string;
+  socialImageAlt?: string;
   noIndex?: boolean;
   keywords?: string;
   breadcrumbs?: BreadcrumbItem[];
@@ -111,6 +112,7 @@ export default function SEO({
   canonicalUrl,
   productData,
   ogImage,
+  socialImageAlt,
   noIndex = false,
   breadcrumbs,
   extraJsonLd,
@@ -142,24 +144,24 @@ export default function SEO({
   // English-only sections (news, legal) are excluded: no localized variants.
   const hreflangs =
     canonicalUrl && !isEnglishOnly
-      ? PUBLISHED_LANGS.map(altLang => ({
+      ? getPageLanguages(canonicalUrl).map(altLang => ({
           lang: altLang,
           href: abs(localizedPath(canonicalUrl, altLang)),
         }))
       : [];
 
-  const resolvedOgImage = productData
+  const resolvedOgImage = productData?.image
     ? abs(productData.image)
     : ogImage
       ? abs(ogImage)
       : DEFAULT_OG_IMAGE;
 
-  const allImages = productData
+  const allImages = productData?.image
     ? [
         abs(productData.image),
         ...(productData.images ?? [])
           .map(abs)
-          .filter(u => u !== abs(productData.image)),
+          .filter(u => u !== abs(productData.image!)),
       ]
     : [];
 
@@ -169,7 +171,7 @@ export default function SEO({
         "@type": "Product",
         name: productData.name,
         url: canonicalHref,
-        image: allImages,
+        ...(allImages.length > 0 && { image: allImages }),
         description: productData.description,
         ...(productData.sku && { sku: productData.sku }),
         ...(productData.mpn && { mpn: productData.mpn }),
@@ -280,19 +282,15 @@ export default function SEO({
       {noIndex && <meta name="robots" content="noindex,nofollow" />}
       {canonicalHref && <link rel="canonical" href={canonicalHref} />}
       {preloadImage && (
-        <link
-          rel="preload"
-          href={abs(preloadImage)}
-          as="image"
-          type="image/webp"
-        />
+        <link rel="preload" href={preloadImage} as="image" type="image/webp" />
       )}
 
       {/* hreflang alternates — one per supported language + x-default → English */}
       {hreflangs.map(({ lang: alt, href }) => (
         <link key={alt} rel="alternate" hrefLang={alt} href={href} />
       ))}
-      {canonicalUrl && !isEnglishOnly && (
+      {canonicalUrl && !isEnglishOnly &&
+        getPageLanguages(canonicalUrl).includes(DEFAULT_LANG) && (
         <link
           rel="alternate"
           hrefLang="x-default"
@@ -308,6 +306,18 @@ export default function SEO({
       <meta property="og:site_name" content={BRAND} />
       {canonicalHref && <meta property="og:url" content={canonicalHref} />}
       <meta property="og:image" content={resolvedOgImage} />
+      {socialImageAlt && [
+        <meta key="og-alt" property="og:image:alt" content={socialImageAlt} />,
+        <meta key="x-card" name="twitter:card" content="summary" />,
+        <meta key="x-title" name="twitter:title" content={fullTitle} />,
+        <meta
+          key="x-description"
+          name="twitter:description"
+          content={description}
+        />,
+        <meta key="x-image" name="twitter:image" content={resolvedOgImage} />,
+        <meta key="x-alt" name="twitter:image:alt" content={socialImageAlt} />,
+      ]}
 
       {/* JSON-LD Product schema */}
       {jsonLd && <script type="application/ld+json">{safeJson(jsonLd)}</script>}

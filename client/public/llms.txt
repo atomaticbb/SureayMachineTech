@@ -43,7 +43,8 @@ Sureay supplies precision replacement blades across six major categories:
 - /products — full product catalogue
 - /categories/slitter-knives — slitter knife family hub
 - /categories/shredder-blades — shredder blade family hub
-- /categories/granulator-blades — granulator blade family hub
+- /products/granulator-blades — plastic granulator knives in the Shredder group
+- /categories/other-custom-blades — compactor, melt filtration, pelletizing and custom blades
 - /categories/log-saw-blades — log saw blade family hub
 - /categories/trim-cut-blades — trim and cut blade family hub
 - /categories/metal-processing — metal processing blade family hub

@@ -24,7 +24,7 @@ export default function TrustProtocol() {
           {TRUST_ITEM_KEYS.map((key, i) => (
             <p
               key={i}
-              className="font-mono text-[11px] text-slate-700  tracking-widest"
+              className="font-mono text-[14px] text-slate-700  tracking-widest"
             >
               ■ {t(key)}
             </p>

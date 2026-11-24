@@ -4,7 +4,6 @@
  * Utility functions for catalog PDF generation:
  * - Image to base64 data URI
  * - Markdown heading parser
- * - Dimension table HTML builder (mirrors ComprehensiveData.tsx logic)
  */
 
 import fs from "fs";
@@ -54,6 +53,7 @@ export async function imageToBase64Compressed(
   if (!fs.existsSync(absPath)) return "";
   const buf = await sharp(absPath)
     .resize({ width: maxWidth, withoutEnlargement: true })
+    .flatten({ background: "#ffffff" })
     .jpeg({ quality: 75 })
     .toBuffer();
   const result = `data:image/jpeg;base64,${buf.toString("base64")}`;
@@ -107,69 +107,6 @@ export function parseMarkdownToHtml(text: string): string {
   return htmlParts.join("\n");
 }
 
-// ── Product "Features" copy (clean, sentence-safe) ──────────────────────────────
-
-/** Escape HTML then render simple **bold** markdown as <strong>. */
-function renderInline(text: string): string {
-  return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-}
-
-/** Trim to the last sentence boundary at or before `max` chars (never mid-word). */
-function trimToSentence(text: string, max: number): string {
-  if (text.length <= max) return text;
-  const window = text.slice(0, max);
-  const lastStop = Math.max(
-    window.lastIndexOf(". "),
-    window.lastIndexOf("! "),
-    window.lastIndexOf("? "),
-    window.lastIndexOf("; ")
-  );
-  if (lastStop > max * 0.5) return window.slice(0, lastStop + 1).trim();
-  // No sentence break found — fall back to last word boundary + ellipsis
-  const lastSpace = window.lastIndexOf(" ");
-  return window.slice(0, lastSpace > 0 ? lastSpace : max).trim() + "…";
-}
-
-/**
- * Build clean Features copy for a product page.
- * Uses the intro of `fullDescription` (everything before the first "## " heading),
- * keeps whole paragraphs/sentences, strips Markdown residue, renders **bold**.
- */
-export function buildFeaturesHtml(blade: Blade, maxChars = 440): string {
-  const raw = blade.fullDescription || blade.description || "";
-  if (!raw) return "";
-
-  // Intro = text before the first "## " section heading
-  const headingIdx = raw.search(/\n##\s/);
-  const intro = headingIdx === -1 ? raw : raw.slice(0, headingIdx);
-
-  // Split into paragraphs on blank lines, collapse internal whitespace
-  const paras = intro
-    .split(/\n\s*\n/)
-    .map((p) => p.replace(/\s+/g, " ").trim())
-    .filter(Boolean);
-
-  if (paras.length === 0) return "";
-
-  // Accumulate whole paragraphs up to budget; always keep at least the first
-  const chosen: string[] = [];
-  let used = 0;
-  for (const p of paras) {
-    if (chosen.length === 0 || used + p.length <= maxChars) {
-      chosen.push(p);
-      used += p.length;
-    } else break;
-    if (used >= maxChars) break;
-  }
-
-  // If the first (only) paragraph overflows, trim it to a sentence boundary
-  if (chosen.length === 1 && chosen[0].length > maxChars) {
-    chosen[0] = trimToSentence(chosen[0], maxChars);
-  }
-
-  return chosen.map((p) => `<p>${renderInline(p)}</p>`).join("");
-}
-
 // ── QR code (inline SVG) ────────────────────────────────────────────────────────
 
 /** Generate a crisp inline-SVG QR code for the given URL (navy on white). */
@@ -214,100 +151,6 @@ export function buildComponentsHtml(components: BladeComponent[]): string {
     .join("");
 
   return `<div class="advantages-grid">${cards}</div>`;
-}
-
-// ── Dimension table builder ───────────────────────────────────────────────────
-// Mirrors the column detection logic from ComprehensiveData.tsx
-
-export function buildDimensionTableHtml(blade: Blade): string {
-  if (!blade.standardDimensions || blade.standardDimensions.length === 0)
-    return "";
-
-  const dims = blade.standardDimensions;
-
-  // Column visibility detection (same logic as ComprehensiveData.tsx)
-  const hasLengthTeeth = dims.some(
-    (r) => r.length !== undefined || r.teeth !== undefined
-  );
-  const hasBoreHooks = dims.some(
-    (r) => r.bore !== undefined || r.hooks !== undefined
-  );
-  const hasOem = dims.some((r) => r.oem !== undefined);
-  const hasSpec =
-    blade.dimensionLabels?.col0 !== undefined &&
-    dims.some((r) => r.spec !== undefined);
-  const hasCol3 =
-    blade.dimensionLabels?.col3 !== undefined ||
-    dims.some((r) => r.thickness !== undefined || r.type !== undefined);
-
-  // Labels
-  const col0Label = blade.dimensionLabels?.col0 ?? "Specification";
-  const col1Label = blade.dimensionLabels?.col1 ?? "Outer Diameter (OD)";
-  const col2Label = blade.dimensionLabels?.col2 ?? "Inner Diameter (ID)";
-  const col3Label = blade.dimensionLabels?.col3 ?? "Thickness";
-  const col4Label = blade.dimensionLabels?.col4 ?? "Teeth";
-  const caption =
-    blade.dimensionLabels?.caption ??
-    "* Custom manufacturing is available. The outer diameter can reach up to 1200 mm upon request.";
-
-  // Build header
-  const headers: string[] = [];
-  if (hasSpec) headers.push(col0Label);
-  headers.push(col1Label, col2Label);
-  if (hasLengthTeeth || hasBoreHooks) {
-    headers.push(col3Label, col4Label);
-  } else if (hasCol3) {
-    headers.push(col3Label);
-    if (hasOem) headers.push(col4Label);
-  }
-
-  const headerHtml = headers
-    .map((h) => `<th>${escapeHtml(h)}</th>`)
-    .join("");
-
-  // Build rows
-  const rowsHtml = dims
-    .map((row) => {
-      const cells: string[] = [];
-
-      if (hasSpec) cells.push(row.spec ?? "—");
-
-      // col1
-      cells.push(
-        hasSpec
-          ? (row.dimension ?? row.od ?? "—")
-          : (row.dimension ?? row.spec ?? row.od ?? "—")
-      );
-
-      // col2
-      cells.push(
-        hasBoreHooks
-          ? (row.thickness ?? "—")
-          : (row.bolt ?? row.id ?? "—")
-      );
-
-      // col3 & col4
-      if (hasLengthTeeth) {
-        cells.push(row.length ?? "—");
-        cells.push(row.pcs ?? row.teeth ?? "—");
-      } else if (hasBoreHooks) {
-        cells.push(row.bore ?? "—");
-        cells.push(row.hooks ?? "—");
-      } else if (hasCol3) {
-        cells.push(row.type ?? row.thickness ?? "—");
-        if (hasOem) cells.push(row.oem ?? "—");
-      }
-
-      return `<tr>${cells.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`;
-    })
-    .join("");
-
-  return `
-      <table class="spec-table">
-        <thead><tr>${headerHtml}</tr></thead>
-        <tbody>${rowsHtml}</tbody>
-      </table>
-      <div class="spec-table-caption">${escapeHtml(caption)}</div>`;
 }
 
 // ── Compatible machines list ──────────────────────────────────────────────────

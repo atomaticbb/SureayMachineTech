@@ -23,6 +23,7 @@ import ContactRFQ from "@/components/home/ContactRFQ";
 import { useLang } from "@/contexts/LangContext";
 import { useTranslation } from "@/lib/useTranslation";
 import { getBladeById, getRelatedBlades, getSEO } from "@/data/locales";
+import { getShredderDetailBlade, isUpgradedShredderBlade } from "@/data/blades";
 
 // Zone sub-components
 import BladeHero from "@/components/product-detail/BladeHero";
@@ -33,7 +34,7 @@ import ProductDrawings from "@/components/product-detail/ProductDrawings";
 import ComprehensiveData from "@/components/product-detail/ComprehensiveData";
 import CompatibleTooling from "@/components/product-detail/CompatibleTooling";
 import InlineRFQPrompt from "@/components/product-detail/InlineRFQPrompt";
-import TrustProtocol from "@/components/product-detail/TrustProtocol";
+import { bladeHeroSpecs } from "@/components/product-detail/bladeSpecs";
 import CompatibleMachines from "@/components/product-detail/CompatibleMachines";
 import FloatingContactButtons from "@/components/common/FloatingContactButtons";
 import ProductFAQ from "@/components/product-detail/ProductFAQ";
@@ -45,10 +46,10 @@ export default function ProductDetail() {
   const { t } = useTranslation();
   const [, params] = useRoute("/products/:id");
   const bladeId = params?.id || "";
-  const blade = getBladeById(bladeId, lang);
+  const product = getBladeById(bladeId, lang);
 
   // 404 — Blade not found
-  if (!blade) {
+  if (!product) {
     return (
       <>
         <SEO
@@ -75,127 +76,172 @@ export default function ProductDetail() {
     );
   }
 
+  const isEnglishShredder = lang === "en" && isUpgradedShredderBlade(product);
+  const blade = isEnglishShredder && !product.detailLayout
+    ? getShredderDetailBlade(product)
+    : product;
   const relatedBlades = getRelatedBlades(bladeId, lang, 3);
   const pageSeo = getSEO(bladeId, lang);
+  const detailLayout = blade.detailLayout;
+  const { specs: heroSpecs, material } = bladeHeroSpecs(blade, t);
+  const breadcrumbItems = [
+    { label: t("nav.home"), href: "/" },
+    { label: t("nav.products"), href: "/products" },
+    { label: blade.name },
+  ];
+  const breadcrumbs = (
+    <Breadcrumbs
+      variant={detailLayout ? "embedded" : "bar"}
+      items={breadcrumbItems}
+    />
+  );
+  const hero = (
+    <BladeHero
+      blade={blade}
+      heroSpecs={heroSpecs}
+      breadcrumbs={detailLayout ? breadcrumbs : undefined}
+    />
+  );
+  const dimensions = <ComprehensiveData blade={blade} />;
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
       <SEO
-        title={pageSeo.title || blade.fullName || blade.name}
+        key={blade.id}
+        title={
+          pageSeo.title ||
+          detailLayout?.seoTitle ||
+          blade.fullName ||
+          blade.name
+        }
+        noIndex={blade.draft}
         description={pageSeo.description || blade.description}
         canonicalUrl={`/products/${blade.id}`}
         keywords={pageSeo.keywords}
-        {...(blade.id === "tissue-log-saw-blades" && {
+        socialImageAlt={
+          blade.imagePending ? undefined : detailLayout?.heroAlt ??
+          (detailLayout ? blade.galleryAlts?.[0] : undefined)
+        }
+        {...(blade.id === "tissue-log-saw-blades" && !detailLayout && {
           preloadImage: blade.image,
         })}
-        breadcrumbs={[
-          { name: t("nav.home"), url: "/" },
-          { name: t("nav.products"), url: "/products" },
-          { name: blade.name, url: `/products/${blade.id}` },
-        ]}
+        breadcrumbs={breadcrumbItems.map(item => ({
+          name: item.label,
+          url: item.href ?? `/products/${blade.id}`,
+        }))}
         productData={{
-          name: blade.fullName || blade.name,
-          image: blade.image,
-          images: blade.gallery?.slice(0, 4),
-          description: blade.fullDescription || blade.description,
-          sku: blade.id,
-          mpn: blade.id,
+          name: detailLayout?.heroTitle || blade.fullName || blade.name,
+          image: blade.imagePending ? undefined : blade.image,
+          images: blade.imagePending ? undefined : detailLayout?.specificationImage
+            ? [detailLayout.specificationImage.src]
+            : blade.gallery?.slice(0, 4),
+          description:
+            pageSeo.description ||
+            blade.fullDescription ||
+            blade.description,
           brand: "Sureay",
-          material: blade.specs.find(s => s.label === "Material")?.value,
-          specs: blade.specs,
-          // showPrice is deliberately not passed: no blade page displays a
-          // price, so these emit a bare Offer. blade.offers stays internal.
-          ...(blade.offers && { offers: blade.offers }),
+          material,
+          specs:
+            detailLayout?.technicalSpecs ??
+            (detailLayout
+              ? [
+                  { label: t("bladeUi.sizes"), value: detailLayout.sizeRange },
+                  ...blade.specs,
+                ]
+              : blade.specs),
+          // The redesigned page lists multiple part numbers and quotes by request.
+          ...(!getBladeById(bladeId, "en")?.detailLayout && {
+            sku: blade.id,
+            mpn: blade.id,
+            ...(!blade.quoteRequirements &&
+              blade.offers && { offers: blade.offers }),
+          }),
         }}
       />
 
       <Navbar />
 
-      <main className="flex-grow pt-[68px]">
-        {/* Breadcrumbs */}
-        <Breadcrumbs
-          variant="light"
-          items={[
-            { label: t("nav.home"), href: "/" },
-            { label: t("nav.products"), href: "/products" },
-            { label: blade.name },
-          ]}
-        />
+      <main className="blade-page flex-grow pt-[68px]">
+        {!detailLayout && breadcrumbs}
 
         {/* ── Content ──────────────────────────────────────────────────── */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-8">
-          <div className="flex flex-col gap-y-8">
-            {/* Zone 1 — CAD Viewport Hero (no inner px, uses outer container padding) */}
-            <BladeHero blade={blade} />
-
-            {/* Zone 1b — Trust credentials strip */}
-            <div className="-mx-4 sm:-mx-8">
-              <TrustProtocol />
+        <div
+          className={`pt-8 ${detailLayout ? "@container" : ""}`}
+        >
+          <div className="flex flex-col gap-y-12 lg:gap-y-16">
+            {/* Zone 1 — CAD Viewport Hero keeps its original content width. */}
+            <div className={`w-full max-w-7xl mx-auto px-4 sm:px-8 ${detailLayout ? "@container" : ""}`}>
+              {hero}
             </div>
 
-            {/* Zone 1c — Lead-in prose (renders only when present) */}
-            {blade.introNote && (
-              <div className="-mx-4 sm:-mx-8">
-                <section className="max-w-7xl mx-auto px-6 sm:px-8">
-                  <p className="text-[16px] text-slate-600 leading-relaxed max-w-[80ch]">
-                    {blade.introNote}
-                  </p>
-                </section>
-              </div>
-            )}
+            <DecisiveSpecs blade={blade} />
 
-            {/* Zone 2 — Decisive Specifications: spec table + image */}
-            <div className="-mx-4 sm:-mx-8">
-              <DecisiveSpecs blade={blade} />
-            </div>
+            {detailLayout && dimensions}
 
             {/* Inline CTA after dimensions + key specs */}
-            <div className="-mx-4 sm:-mx-8">
-              <InlineRFQPrompt />
+            <div>
+              <InlineRFQPrompt
+                content={
+                  detailLayout?.inlineRfq ??
+                  (blade.quoteRequirements
+                    ? {
+                        title: t("bladeUi.quoteRequirements"),
+                        description: blade.quoteRequirements,
+                        buttonLabel: t("cta.sendDrawing"),
+                      }
+                    : undefined)
+                }
+              />
             </div>
 
             {/* Zone 2b — Steel grade selection guidance (renders only when present) */}
             <SteelGradeTable blade={blade} />
 
             {/* Zone 3 — Comprehensive Technical Data */}
-            <div className="-mx-4 sm:-mx-8">
-              <ComprehensiveData blade={blade} />
-            </div>
+            {!detailLayout && dimensions}
 
             {/* Zone 3b — Compatible Machine Brands */}
-            <div className="-mx-4 sm:-mx-8">
+            <div className="empty:hidden">
               <CompatibleMachines blade={blade} />
             </div>
 
             {/* Zone 4 — Technical Audit Log */}
-            <div className="-mx-4 sm:-mx-8 pt-8">
+            <div className="empty:hidden">
               <TechnicalAudit blade={blade} />
             </div>
 
             {/* Zone 4b — Engineering drawings (renders only when present) */}
-            <div className="-mx-4 sm:-mx-8 pt-8">
+            <div className="empty:hidden">
               <ProductDrawings blade={blade} />
             </div>
           </div>
         </div>
 
         {/* Zone 5 — Compatible Tooling */}
-        <div className="mt-16">
-          <CompatibleTooling blades={relatedBlades} />
+        <div className="mt-12 lg:mt-16">
+          <CompatibleTooling
+            blades={relatedBlades}
+            responsiveImages={Boolean(detailLayout)}
+          />
         </div>
 
         {/* Zone 6 — FAQ (just above RFQ) */}
         {blade.faqs && (
-          <div className="mt-16">
+          <div className="mt-12 lg:mt-16">
             <ProductFAQ
               faqs={blade.faqs}
-              productName={blade.fullName || blade.name}
+              productName={
+                detailLayout?.heroTitle || blade.fullName || blade.name
+              }
+              questionHeading={
+                detailLayout && blade.faqs.company.length ? "h4" : "h3"
+              }
             />
           </div>
         )}
 
         {/* Zone 7 — Contact / RFQ form */}
-        <div id="rfq">
+        <div id="rfq" className="mt-8 lg:mt-12">
           <ContactRFQ
             productName={blade.name}
             messagePlaceholder={blade.rfqPlaceholder}

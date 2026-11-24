@@ -58,6 +58,7 @@ const REF_CODE: Record<BladeCategoryType, string> = {
   granulator_blades: "GRN",
   log_saw_blades: "LSW",
   shear_blades: "SHA",
+  paper_cutting: "PCT",
   cold_saw_blades: "CSW",
   wood_chipper: "WCH",
   custom_profile: "CST",
@@ -84,105 +85,107 @@ const bladeToItem = (b: Blade, seq: number): MegaItem => ({
 export function getIndustryMenuData(lang: Lang): MegaMenuData {
   const blades = getBlades(lang);
   return {
-  columnLabel: "INDUSTRIES",
-  bottomLinkText: "→ BROWSE ALL TOOLING",
-  bottomLinkHref: "/products",
-  categories: [
-    {
-      id: "recycling-waste",
-      title: "Recycling & Waste",
-      featured: {
-        coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
-        tagline: "EXTREME DURABILITY & IMPACT RESISTANCE",
-        subtitle: "ACTIVE INDUSTRY",
-        title: "RECYCLING & WASTE MANAGEMENT",
-        ctaText: "VIEW RECYCLING SOLUTIONS",
-        ctaHref: "/plastic-industry",
+    columnLabel: "INDUSTRIES",
+    bottomLinkText: "→ BROWSE ALL TOOLING",
+    bottomLinkHref: "/products",
+    categories: [
+      {
+        id: "recycling-waste",
+        title: "Recycling & Waste",
+        featured: {
+          coverImage: "/images/applications/Plastic-Waste-Recycling.webp",
+          tagline: "EXTREME DURABILITY & IMPACT RESISTANCE",
+          subtitle: "ACTIVE INDUSTRY",
+          title: "RECYCLING & WASTE MANAGEMENT",
+          ctaText: "VIEW RECYCLING SOLUTIONS",
+          ctaHref: "/plastic-industry",
+        },
+        items: blades.filter(b => b.sector === "recycling").map(bladeToItem),
       },
-      items: blades.filter(b => b.sector === "recycling").map(bladeToItem),
-    },
-    {
-      id: "paper-packaging-converting",
-      title: "Paper & Tissue",
-      featured: {
-        coverImage: "/images/applications/tissue-and-paper.webp",
-        tagline: "PRECISION CUTTING · ZERO DUST",
-        subtitle: "ACTIVE INDUSTRY",
-        title: "PAPER & TISSUE",
-        ctaText: "VIEW PAPER SOLUTIONS",
-        ctaHref: "/paper-industry",
+      {
+        id: "paper-packaging-converting",
+        title: "Paper & Tissue",
+        featured: {
+          coverImage: "/images/applications/tissue-and-paper.webp",
+          tagline: "PRECISION CUTTING · ZERO DUST",
+          subtitle: "ACTIVE INDUSTRY",
+          title: "PAPER & TISSUE",
+          ctaText: "VIEW PAPER SOLUTIONS",
+          ctaHref: "/paper-industry",
+        },
+        items: blades.filter(b => b.sector === "paper").map(bladeToItem),
       },
-      items: blades.filter(b => b.sector === "paper").map(bladeToItem),
-    },
-    {
-      id: "metal-processing",
-      title: "Metal Processing",
-      featured: {
-        coverImage: "/images/applications/Metal-Waste-Recycling.webp",
-        tagline: "HIGH-SPEED SHEAR CUTTING",
-        subtitle: "ACTIVE INDUSTRY",
-        title: "METAL COIL PROCESSING",
-        ctaText: "VIEW METAL SOLUTIONS",
-        ctaHref: "/metal-industry",
+      {
+        id: "metal-processing",
+        title: "Metal Processing",
+        featured: {
+          coverImage: "/images/applications/Metal-Waste-Recycling.webp",
+          tagline: "HIGH-SPEED SHEAR CUTTING",
+          subtitle: "ACTIVE INDUSTRY",
+          title: "METAL COIL PROCESSING",
+          ctaText: "VIEW METAL SOLUTIONS",
+          ctaHref: "/metal-industry",
+        },
+        items: blades.filter(b => b.sector === "metal").map(bladeToItem),
       },
-      items: blades.filter(b => b.sector === "metal").map(bladeToItem),
-    },
-    {
-      id: "flexible-converting",
-      title: "Film & Converting",
-      featured: {
-        coverImage:
-          "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
-        tagline: "PRECISION FILM & FOIL SLITTING",
-        subtitle: "ACTIVE INDUSTRY",
-        title: "FLEXIBLE CONVERTING & PACKAGING",
-        ctaText: "VIEW CONVERTING SOLUTIONS",
-        ctaHref: "/converting-industry",
+      {
+        id: "flexible-converting",
+        title: "Film & Converting",
+        featured: {
+          coverImage:
+            "/images/applications/tissue-industry/rotary-slitter-knives-00.webp",
+          tagline: "PRECISION FILM & FOIL SLITTING",
+          subtitle: "ACTIVE INDUSTRY",
+          title: "FLEXIBLE CONVERTING & PACKAGING",
+          ctaText: "VIEW CONVERTING SOLUTIONS",
+          ctaHref: "/converting-industry",
+        },
+        items: blades.filter(b => b.sector === "converting").map(bladeToItem),
       },
-      items: blades.filter(b => b.sector === "converting").map(bladeToItem),
-    },
-    {
-      id: "new-energy",
-      title: "New Energy",
-      featured: {
-        coverImage:
-          "/images/applications/metal-industry/metal-slitter-knives-00.webp",
-        tagline: "ZERO-BURR ELECTRODE SLITTING",
-        subtitle: "ACTIVE INDUSTRY",
-        title: "NEW ENERGY & BATTERY",
-        ctaText: "VIEW NEW ENERGY SOLUTIONS",
-        ctaHref: "/new-energy-industry",
+      {
+        id: "new-energy",
+        title: "New Energy",
+        featured: {
+          coverImage:
+            "/images/applications/metal-industry/metal-slitter-knives-00.webp",
+          tagline: "ZERO-BURR ELECTRODE SLITTING",
+          subtitle: "ACTIVE INDUSTRY",
+          title: "NEW ENERGY & BATTERY",
+          ctaText: "VIEW NEW ENERGY SOLUTIONS",
+          ctaHref: "/new-energy-industry",
+        },
+        items: blades.filter(b => b.sector === "new_energy").map(bladeToItem),
       },
-      items: blades.filter(b => b.sector === "new_energy").map(bladeToItem),
-    },
-    {
-      id: "wood-forestry",
-      title: "Wood & Forestry",
-      featured: {
-        coverImage:
-          "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-        tagline: "THROUGH-HARDENED DRUM & DISC CHIPPER KNIVES",
-        subtitle: "ACTIVE INDUSTRY",
-        title: "WOOD & FORESTRY",
-        ctaText: "VIEW WOOD SOLUTIONS",
-        ctaHref: "/wood-industry",
+      {
+        id: "wood-forestry",
+        title: "Wood & Forestry",
+        featured: {
+          coverImage:
+            "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+          tagline: "THROUGH-HARDENED DRUM & DISC CHIPPER KNIVES",
+          subtitle: "ACTIVE INDUSTRY",
+          title: "WOOD & FORESTRY",
+          ctaText: "VIEW WOOD SOLUTIONS",
+          ctaHref: "/wood-industry",
+        },
+        items: blades
+          .filter(b => b.category === "wood_chipper")
+          .map(bladeToItem),
       },
-      items: blades.filter(b => b.category === "wood_chipper").map(bladeToItem),
-    },
-    {
-      id: "custom-profile",
-      title: "Custom Blades",
-      featured: {
-        coverImage: "/images/products/blades/special-shaped-knife.webp",
-        tagline: "ANY GEOMETRY · ANY ALLOY",
-        subtitle: "CUSTOM MANUFACTURING",
-        title: "CUSTOM BLADES",
-        ctaText: "VIEW CUSTOM SOLUTIONS",
-        ctaHref: "/custom",
+      {
+        id: "custom-profile",
+        title: "Custom Blades",
+        featured: {
+          coverImage: "/images/products/blades/special-shaped-knife.webp",
+          tagline: "ANY GEOMETRY · ANY ALLOY",
+          subtitle: "CUSTOM MANUFACTURING",
+          title: "CUSTOM BLADES",
+          ctaText: "VIEW CUSTOM SOLUTIONS",
+          ctaHref: "/custom",
+        },
+        items: blades.filter(b => b.sector === "other").map(bladeToItem),
       },
-      items: blades.filter(b => b.sector === "other").map(bladeToItem),
-    },
-  ],
+    ],
   };
 }
 
@@ -199,7 +202,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
     data.categories.find(c => c.id === activeId) ?? data.categories[0];
 
   return (
-    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] shadow-2xl z-50 overflow-hidden">
+    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] shadow-none z-50 overflow-hidden">
       {/* Scanner line — sweeps across on category switch */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -215,7 +218,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex py-7 gap-0">
         {/* ── Column 1: Category Index (20%) ────────────────────────────── */}
         <div className="w-[20%] flex-shrink-0 flex flex-col">
-          <p className="font-mono text-[9px] text-slate-300  tracking-[0.2em] mb-4 pl-4">
+          <p className="font-mono text-[12px] text-slate-300  tracking-[0.2em] mb-4 pl-4">
             {data.columnLabel}
           </p>
 
@@ -227,10 +230,10 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                   <div
                     onMouseEnter={() => setActiveId(cat.id)}
                     onClick={onClose}
-                    className={`w-full text-left py-3 pl-4 border-l-2 font-mono text-[11px] font-bold tracking-wide transition-all duration-150 cursor-pointer ${
+                    className={`w-full text-left py-3 pl-4 border-l-2 font-mono text-[14px] font-bold tracking-wide transition-all duration-150 cursor-pointer ${
                       isActive
                         ? "text-[#001f4d] bg-slate-50 border-[#001f4d]"
-                        : "text-slate-500 border-transparent hover:text-[#001f4d] hover:bg-slate-50 hover:border-[#001f4d]"
+                        : "text-muted-foreground border-transparent hover:text-[#001f4d] hover:bg-slate-50 hover:border-[#001f4d]"
                     }`}
                   >
                     {cat.title}
@@ -244,7 +247,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
           <Link href={data.bottomLinkHref}>
             <div
               onClick={onClose}
-              className="mt-6 pl-4 font-mono text-[9px] text-[#003366]  tracking-widest hover:underline cursor-pointer"
+              className="mt-6 pl-4 font-mono text-[12px] text-[#003366]  tracking-widest hover:underline cursor-pointer"
             >
               {data.bottomLinkText}
             </div>
@@ -277,12 +280,12 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                     </div>
 
                     {/* REF code */}
-                    <p className="font-mono text-[9px] text-slate-400  tracking-widest mb-1">
+                    <p className="font-mono text-[12px] text-muted-foreground  tracking-widest mb-1">
                       {item.refCode}
                     </p>
 
                     {/* Product name */}
-                    <p className="font-black text-[10px]  leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
+                    <p className="font-black text-[12px]  leading-tight text-[#001f4d] group-hover:text-[#003366] transition-colors">
                       {item.name}
                     </p>
                   </div>
@@ -314,7 +317,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#001224]/85 via-[#001f4d]/35 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="font-mono text-[9px] text-white/60  tracking-[0.25em] mb-1.5">
+                  <p className="font-mono text-[12px] text-white/60  tracking-[0.25em] mb-1.5">
                     {active.featured.subtitle}
                   </p>
                   <p className="font-black text-lg text-white  leading-tight tracking-tight">
@@ -324,7 +327,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               </div>
 
               {/* Tagline */}
-              <p className="font-mono text-[9px] text-[#003366]  tracking-[0.22em] font-bold mt-3">
+              <p className="font-mono text-[12px] text-[#003366]  tracking-[0.22em] font-bold mt-3">
                 ■ {active.featured.tagline}
               </p>
 
@@ -332,7 +335,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               <Link href={active.featured.ctaHref}>
                 <div
                   onClick={onClose}
-                  className="mt-3 w-full bg-[#001f4d] hover:bg-[#003366] text-white font-mono text-[10px] font-bold tracking-[0.18em]  px-4 py-3 rounded-none transition-colors duration-150 flex items-center justify-between cursor-pointer group"
+                  className="mt-3 w-full bg-[#001f4d] hover:bg-[#003366] text-white font-mono text-[12px] font-bold tracking-[0.18em]  px-4 py-3 rounded-none transition-colors duration-150 flex items-center justify-between cursor-pointer group"
                 >
                   <span>{active.featured.ctaText}</span>
                   <span className="opacity-60 group-hover:opacity-100 transition-opacity">
@@ -342,7 +345,7 @@ export default function MegaMenu({ data, onClose }: MegaMenuProps) {
               </Link>
 
               {/* Quality strip */}
-              <p className="font-mono text-[8px] text-slate-400  tracking-widest mt-3">
+              <p className="font-mono text-[12px] text-muted-foreground  tracking-widest mt-3">
                 ■ ISO 9001:2015 · CMM VERIFIED
               </p>
             </motion.div>

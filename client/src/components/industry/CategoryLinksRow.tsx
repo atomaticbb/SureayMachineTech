@@ -18,12 +18,12 @@ interface Props {
 export default function CategoryLinksRow({ slugs }: Props) {
   const lang = useLang();
   const { t } = useTranslation();
-  if (slugs.length === 0) return null;
+  if (lang === "en" || slugs.length === 0) return null;
 
   return (
-    <section className="bg-white border-b border-slate-200 py-10">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <p className="font-bold text-[11px] text-slate-400 tracking-[0.45em] mb-4">
+    <section className="site-section bg-white border-b border-slate-200 py-10">
+      <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
+        <p className="font-bold text-[14px] text-muted-foreground tracking-[0.45em] mb-4">
           {t("industry.browseByCategory")}
         </p>
         <div className="flex flex-wrap gap-3">
@@ -33,9 +33,9 @@ export default function CategoryLinksRow({ slugs }: Props) {
               <Link
                 key={slug}
                 href={`/categories/${slug}`}
-                className="border-2 border-slate-200 px-6 py-2.5 text-[11px] font-black tracking-[0.2em] text-slate-500 rounded-none transition-colors duration-200 hover:border-[#001f4d] hover:text-[#001f4d]"
+                className="border-2 border-slate-200 px-6 py-2.5 text-[14px] font-black tracking-[0.2em] text-muted-foreground rounded-none transition-colors duration-200 hover:border-[#001f4d] hover:text-[#001f4d]"
               >
-                {name.toUpperCase()}
+                {name}
               </Link>
             );
           })}

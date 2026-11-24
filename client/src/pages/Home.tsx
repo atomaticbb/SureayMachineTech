@@ -2,8 +2,10 @@ import { Suspense } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
-import { useLang } from "@/contexts/LangContext";
-import { getSEO } from "@/data/locales";
+import { getBladeById, getSEO } from "@/data/locales";
+import { FEATURED_PRODUCTS } from "@/data/homeData";
+import { localizedPath } from "@/lib/i18n";
+import { useTranslation } from "@/lib/useTranslation";
 import { SEO_CONFIG as EN_SEO } from "@/utils/seo-config";
 import HomeHero from "@/components/home/HomeHero";
 import AuthorityCarousel from "@/components/home/AuthorityCarousel";
@@ -23,10 +25,6 @@ const MixerWearPartsTeaser = lazyWithRetry(
 const ManufacturingBlocks = lazyWithRetry(
   () => import("@/components/home/ManufacturingBlocks"),
   "home-manufacturing-blocks"
-);
-const IndustryOemPipeline = lazyWithRetry(
-  () => import("@/components/industry/IndustryOemPipeline"),
-  "home-oem-pipeline"
 );
 const HomeTestimonials = lazyWithRetry(
   () => import("@/components/home/HomeTestimonials"),
@@ -48,46 +46,19 @@ const WEBSITE_LD = JSON.stringify({
   name: "Sureay Machinery Technology",
 });
 
-const ITEM_LIST_LD = JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Industrial Blades & Recycling Solutions",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Plastic Recycling Blades",
-      url: "https://sureay.com/products/twin-shaft-blades-recycling",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Film & Tape Slitter Knives for Flexible Packaging Converting",
-      url: "https://sureay.com/products/rotary-slitter-knives",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Metal Foil & Strip Slitter Knives",
-      url: "https://sureay.com/products/metal-foil-strip-slitter-knives",
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      name: "Paper & Tissue Blades",
-      url: "https://sureay.com/products/tissue-log-saw-blades",
-    },
-    {
-      "@type": "ListItem",
-      position: 5,
-      name: "Granulator Blades",
-      url: "https://sureay.com/products/granulator-blades",
-    },
-  ],
-});
-
 export default function Home() {
-  const lang = useLang();
+  const { lang, t } = useTranslation();
+  const featuredList = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: t("nav.industrialBlades"),
+    itemListElement: FEATURED_PRODUCTS.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: getBladeById(product.href.replace("/products/", ""), lang)?.name ?? product.name,
+      url: "https://sureay.com" + localizedPath(product.href, lang),
+    })),
+  }).replace(/</g, "\\u003c");
   // Was hardcoded English, so every /{lang}/ homepage shipped the English
   // title and description — eight URLs sharing one snippet.
   // getSEO already falls back to English when a key is missing; the second
@@ -102,7 +73,7 @@ export default function Home() {
         description={pageSeo.description || enHome.description || ""}
         canonicalUrl="/"
         keywords={pageSeo.keywords || enHome.keywords}
-        preloadImage="/images/hero/homehero.webp"
+        preloadImage={lang === "en" ? undefined : "/images/hero/homehero.webp"}
       />
       {/* Rendered outside <Helmet> to avoid React 19 script-hoisting interference */}
       <script
@@ -111,25 +82,26 @@ export default function Home() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: ITEM_LIST_LD }}
+        dangerouslySetInnerHTML={{ __html: featuredList }}
       />
 
-      <div className="min-h-screen bg-slate-50 pt-[68px]">
+      <div className={`min-h-screen ${lang === "en" ? "english-home bg-white pt-[74px]" : "bg-slate-50 pt-[68px]"}`}>
         <Navbar />
-        <HomeHero />
-        <AuthorityCarousel />
-        <TabEcosystem />
-        <Suspense fallback={null}>
-          <MixerWearPartsTeaser />
-          <ManufacturingBlocks />
-          <IndustryOemPipeline />
-          <HomeTestimonials />
-          <TechnicalFAQ />
-          <NewsGrid />
-          {/* Prerender-readiness marker — see scripts/prerender.ts */}
-          <div data-lazy-ready="home" hidden />
-        </Suspense>
-        <ContactRFQ />
+        <main>
+          <HomeHero />
+          <AuthorityCarousel />
+          <TabEcosystem />
+          <Suspense fallback={null}>
+            <MixerWearPartsTeaser />
+            <ManufacturingBlocks />
+            <HomeTestimonials />
+            <TechnicalFAQ />
+            <NewsGrid />
+            {/* Prerender-readiness marker — see scripts/prerender.ts */}
+            <div data-lazy-ready="home" hidden />
+          </Suspense>
+          <ContactRFQ hideIntro={lang === "en"} />
+        </main>
         <Footer />
       </div>
     </>

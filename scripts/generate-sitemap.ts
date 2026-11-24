@@ -17,14 +17,13 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { blades } from "../client/src/data/blades.ts";
+import { bladeDetailPages } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
-  PUBLISHED_LANGS,
+  getPageLanguages,
   DEFAULT_LANG,
-  isEnglishOnlyProductPath,
   localizedPath,
 } from "../client/src/lib/i18n.ts";
 
@@ -70,16 +69,20 @@ interface UrlEntry {
  *  xhtml:link rel="alternate" hreflang block. Google requires every
  *  language version to list every alternate (including itself + x-default). */
 function expandUrlEntry(entry: UrlEntry): string[] {
+  const languages = getPageLanguages(entry.path);
+  if (languages.length === 1 && languages[0] === DEFAULT_LANG) {
+    return [singleUrlEntry(entry)];
+  }
   const alternates = [
-    ...PUBLISHED_LANGS.map(lang => ({
+    ...languages.map(lang => ({
       hreflang: lang,
       href: `${BASE_URL}${localizedPath(entry.path, lang)}`,
     })),
     // x-default points to the un-prefixed English version.
-    {
+    ...(languages.includes(DEFAULT_LANG) ? [{
       hreflang: "x-default",
       href: `${BASE_URL}${localizedPath(entry.path, DEFAULT_LANG)}`,
-    },
+    }] : []),
   ];
 
   const alternateLines = alternates.map(
@@ -87,7 +90,7 @@ function expandUrlEntry(entry: UrlEntry): string[] {
       `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}"/>`
   );
 
-  return PUBLISHED_LANGS.map(lang => {
+  return languages.map(lang => {
     const loc = `${BASE_URL}${localizedPath(entry.path, lang)}`;
     return [
       "  <url>",
@@ -155,30 +158,14 @@ const industryPages: UrlEntry[] = [
   { path: "/custom", changefreq: "monthly", priority: "0.8" },
 ];
 
-const EXCLUDED_CATEGORY_SLUGS = new Set([
-  "wood-chipper-blades",
-  "custom-profile",
-]);
-
-const allProductPages: UrlEntry[] = blades.map(b => ({
+const productPages: UrlEntry[] = bladeDetailPages.map(b => ({
   path: `/products/${b.id}`,
   changefreq: "monthly",
   priority: "0.85",
 }));
 
-// Products whose translations have not shipped yet get one English URL with
-// no hreflang block — see ENGLISH_ONLY_PRODUCT_IDS in client/src/lib/i18n.ts.
-const productPages = allProductPages.filter(
-  p => !isEnglishOnlyProductPath(p.path)
-);
-const englishOnlyProductPages = allProductPages.filter(p =>
-  isEnglishOnlyProductPath(p.path)
-);
-
-const categoryPages: UrlEntry[] = BLADE_CATEGORIES.filter(
-  c => !EXCLUDED_CATEGORY_SLUGS.has(c.slug)
-).map(c => ({
-  path: `/categories/${c.slug}`,
+const categoryPages: UrlEntry[] = BLADE_CATEGORIES.map(category => ({
+  path: `/categories/${category.slug}`,
   changefreq: "monthly",
   priority: "0.85",
 }));
@@ -250,9 +237,6 @@ const sections = [
   "  <!-- Product Detail Pages -->",
   ...productPages.flatMap(expandUrlEntry),
   "",
-  "  <!-- Product Detail Pages (English only — translations not shipped) -->",
-  ...englishOnlyProductPages.map(singleUrlEntry),
-  "",
   "  <!-- Mixer Wear Parts -->",
   ...mixerPages.flatMap(expandUrlEntry),
   "",
@@ -276,21 +260,8 @@ const xml = [
 ].join("\n");
 
 fs.writeFileSync(OUTPUT, xml, "utf-8");
-const multiLangCount =
-  corePages.length +
-  industryPages.length +
-  categoryPages.length +
-  productPages.length +
-  mixerPages.length;
-const newsCount = 1 + newsArticles.length;
-const legalCount = legalPages.length;
-const enOnlyProductCount = englishOnlyProductPages.length;
-const totalUrlCount =
-  multiLangCount * PUBLISHED_LANGS.length +
-  newsCount +
-  legalCount +
-  enOnlyProductCount;
+const totalUrlCount = (xml.match(/<loc>/g) ?? []).length;
 console.log(`[sitemap] ${OUTPUT}`);
 console.log(
-  `[sitemap] ${totalUrlCount} URLs written (${multiLangCount} canonical × ${PUBLISHED_LANGS.length} langs + ${newsCount} news + ${legalCount} legal + ${enOnlyProductCount} EN-only product, all EN-only)`
+  `[sitemap] ${totalUrlCount} URLs written using each page's published languages`
 );

@@ -13,8 +13,8 @@ export const errorHandler = (
   next: NextFunction
 ) => {
   // Handle Zod validation errors
-  if (err instanceof ZodError || (err.name === "ZodError" && err.errors)) {
-    const errors = (err.errors || []).map((error: any) => ({
+  if (err instanceof ZodError || (err.name === "ZodError" && (err.issues || err.errors))) {
+    const errors = (err.issues || err.errors || []).map((error: any) => ({
       field: error.path ? error.path.join(".") : "unknown",
       message: error.message || "Validation error",
     }));

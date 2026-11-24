@@ -5,7 +5,7 @@
  * This component renders only the grid content.
  *
  * accentColor='blue'   → #003366 accent bar before title
- * accentColor='orange' → #FF6600 accent bar before title
+ * accentColor='orange' → #0b4a8f accent bar before title
  * imagePosition='left' | 'right' controls column order
  */
 
@@ -28,7 +28,7 @@ export default function ZLayoutFeature({
   imagePosition = "right",
   className = "",
 }: ZLayoutFeatureProps) {
-  const accentBg = accentColor === "orange" ? "bg-[#FF6600]" : "bg-[#003366]";
+  const accentBg = accentColor === "orange" ? "bg-[#0b4a8f]" : "bg-[#003366]";
 
   const textBlock = (
     <div className="flex flex-col gap-6">
@@ -60,7 +60,7 @@ export default function ZLayoutFeature({
         width={540}
         height={400}
         onError={e => {
-          e.currentTarget.src = "/images/products/product.webp";
+          e.currentTarget.src = "/sureay.svg";
         }}
       />
     </div>

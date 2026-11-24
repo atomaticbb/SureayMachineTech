@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import { motion } from "framer-motion";
 import { gtagEvent } from "@/lib/gtag";
+import { useLang } from "@/contexts/LangContext";
 
 const EFFECTIVE_DATE = "2026-07-30";
 
@@ -23,6 +24,7 @@ function Section({
   children: React.ReactNode;
   delay?: number;
 }) {
+  const english = useLang() === "en";
   return (
     <motion.section
       id={id}
@@ -31,10 +33,10 @@ function Section({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, delay }}
     >
-      <h2 className="text-white font-black text-xs tracking-[0.3em] mb-5 pb-3 border-b border-slate-800">
+      <h2 className={`font-black text-xs tracking-[0.3em] mb-5 pb-3 border-b ${english ? "text-navy border-slate-200" : "text-white border-slate-800"}`}>
         {title}
       </h2>
-      <div className="text-slate-400 text-[15px] leading-relaxed space-y-4">
+      <div className="text-muted-foreground text-[18px] leading-relaxed space-y-4">
         {children}
       </div>
     </motion.section>
@@ -42,6 +44,14 @@ function Section({
 }
 
 export default function PrivacyPolicy() {
+  const lang = useLang();
+  const bodyTextClass = lang === "en" ? "text-navy" : "text-white";
+  const bodyLinkClass = lang === "en"
+    ? "text-navy underline underline-offset-4 hover:text-action-hover transition-colors"
+    : "text-[#ffffff] hover:text-white transition-colors";
+  const bodyPanelClass = lang === "en"
+    ? "border-slate-200 bg-slate-50"
+    : "border-slate-800 bg-[#0d1520]";
   return (
     <>
       <SEO
@@ -50,26 +60,28 @@ export default function PrivacyPolicy() {
         canonicalUrl="/privacy-policy"
       />
       <Navbar />
-      <main className="bg-[#0a0f1a] min-h-screen">
+      <main className={`min-h-screen ${lang === "en" ? "bg-white" : "bg-[#0a0f1a]"}`}>
         {/* ── Header ── */}
         <div className="bg-[#001f4d] border-b border-[#003366]">
           <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
-            <motion.p
-              className="text-[10px] font-black tracking-[0.35em] text-[#e8b84b] mb-4"
-              {...FADE_UP}
-            >
-              LEGAL
-            </motion.p>
+            {lang !== "en" && (
+              <motion.p
+                className="text-[12px] font-black tracking-[0.35em] text-[#ffffff] mb-4"
+                {...FADE_UP}
+              >
+                LEGAL
+              </motion.p>
+            )}
             <motion.h1
               className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              PRIVACY POLICY
+              Privacy policy
             </motion.h1>
             <motion.p
-              className="text-slate-400 text-[13px] font-semibold tracking-widest"
+              className="text-muted-foreground text-[16px] font-semibold tracking-widest"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -81,14 +93,15 @@ export default function PrivacyPolicy() {
         </div>
 
         {/* ── Body ── */}
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16">
+        <div className="site-section site-content max-w-3xl mx-auto px-6 sm:px-8 py-16">
+          <div className={lang === "en" ? "mx-auto max-w-[70ch]" : undefined}>
           <Section id="introduction" title="1. INTRODUCTION" delay={0.1}>
             <p>
               Sureay Machinery Technology Co., Ltd. ("Sureay", "we", "us", or
               "our") operates the website{" "}
               <a
                 href="https://sureay.com"
-                className="text-[#e8b84b] hover:text-white transition-colors"
+                className={bodyLinkClass}
               >
                 https://sureay.com
               </a>
@@ -105,7 +118,7 @@ export default function PrivacyPolicy() {
 
           <Section id="data-collected" title="2. DATA WE COLLECT" delay={0.15}>
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Contact form submissions
               </span>{" "}
               — When you fill in our enquiry or quote-request form we collect:
@@ -115,7 +128,7 @@ export default function PrivacyPolicy() {
               and forwarded to our sales team via email.
             </p>
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Cookies and tracking technologies
               </span>{" "}
               — We use cookies and similar technologies to operate the website,
@@ -123,7 +136,7 @@ export default function PrivacyPolicy() {
               details.
             </p>
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Usage and device data
               </span>{" "}
               — When you browse our website, analytics tools automatically
@@ -154,11 +167,11 @@ export default function PrivacyPolicy() {
                 ],
               ].map(([title, desc]) => (
                 <li key={title} className="flex gap-3">
-                  <span className="text-[#e8b84b] font-black mt-0.5 shrink-0">
+                  <span className={`${bodyTextClass} font-black mt-0.5 shrink-0`}>
                     —
                   </span>
                   <span>
-                    <span className="text-white font-semibold">{title}: </span>
+                    <span className={`${bodyTextClass} font-semibold`}>{title}: </span>
                     {desc}
                   </span>
                 </li>
@@ -177,8 +190,8 @@ export default function PrivacyPolicy() {
             </p>
 
             {/* Google Analytics */}
-            <div className="border border-slate-800 p-5 bg-[#0d1520]">
-              <p className="text-white font-black text-xs tracking-[0.25em] mb-3">
+            <div className={`border p-5 ${bodyPanelClass}`}>
+              <p className={`${bodyTextClass} font-black text-xs tracking-[0.25em] mb-3`}>
                 GOOGLE ANALYTICS 4
               </p>
               <p>
@@ -194,7 +207,7 @@ export default function PrivacyPolicy() {
                   href="https://policies.google.com/privacy"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   Google Privacy Policy
                 </a>
@@ -203,7 +216,7 @@ export default function PrivacyPolicy() {
                   href="https://tools.google.com/dlpage/gaoptout"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   Google Analytics Opt-out Browser Add-on
                 </a>
@@ -212,8 +225,8 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Google Ads */}
-            <div className="border border-slate-800 p-5 bg-[#0d1520]">
-              <p className="text-white font-black text-xs tracking-[0.25em] mb-3">
+            <div className={`border p-5 ${bodyPanelClass}`}>
+              <p className={`${bodyTextClass} font-black text-xs tracking-[0.25em] mb-3`}>
                 GOOGLE ADS — CONVERSION TRACKING & REMARKETING
               </p>
               <p>
@@ -245,7 +258,7 @@ export default function PrivacyPolicy() {
                   href="https://adssettings.google.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   Google Ads Settings
                 </a>{" "}
@@ -254,7 +267,7 @@ export default function PrivacyPolicy() {
                   href="https://optout.networkadvertising.org"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   NAI opt-out tool
                 </a>
@@ -263,8 +276,8 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Resend */}
-            <div className="border border-slate-800 p-5 bg-[#0d1520]">
-              <p className="text-white font-black text-xs tracking-[0.25em] mb-3">
+            <div className={`border p-5 ${bodyPanelClass}`}>
+              <p className={`${bodyTextClass} font-black text-xs tracking-[0.25em] mb-3`}>
                 RESEND (EMAIL DELIVERY)
               </p>
               <p>
@@ -276,7 +289,7 @@ export default function PrivacyPolicy() {
                   href="https://resend.com/privacy"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   Resend Privacy Policy
                 </a>
@@ -293,21 +306,21 @@ export default function PrivacyPolicy() {
             </p>
 
             <div className="overflow-x-auto">
-              <table className="w-full text-[13px] border-collapse">
+              <table className="w-full text-[16px] border-collapse">
                 <thead>
-                  <tr className="border-b border-slate-700">
-                    <th className="text-left text-white font-black tracking-widest py-3 pr-4 text-xs">
-                      CATEGORY
+                  <tr className={`border-b ${lang === "en" ? "border-slate-200" : "border-slate-700"}`}>
+                    <th className={`text-left ${bodyTextClass} font-black tracking-widest py-3 pr-4 text-xs`}>
+                      Category
                     </th>
-                    <th className="text-left text-white font-black tracking-widest py-3 pr-4 text-xs">
+                    <th className={`text-left ${bodyTextClass} font-black tracking-widest py-3 pr-4 text-xs`}>
                       COOKIES
                     </th>
-                    <th className="text-left text-white font-black tracking-widest py-3 text-xs">
+                    <th className={`text-left ${bodyTextClass} font-black tracking-widest py-3 text-xs`}>
                       PURPOSE
                     </th>
                   </tr>
                 </thead>
-                <tbody className="text-slate-400">
+                <tbody className="text-muted-foreground">
                   {[
                     [
                       "Essential",
@@ -327,12 +340,12 @@ export default function PrivacyPolicy() {
                   ].map(([cat, cookie, purpose]) => (
                     <tr
                       key={cat}
-                      className="border-b border-slate-800 align-top"
+                      className={`border-b align-top ${lang === "en" ? "border-slate-200" : "border-slate-800"}`}
                     >
-                      <td className="py-3 pr-4 text-white font-semibold whitespace-nowrap">
+                      <td className={`py-3 pr-4 ${bodyTextClass} font-semibold whitespace-nowrap`}>
                         {cat}
                       </td>
-                      <td className="py-3 pr-4 font-mono text-[#e8b84b] whitespace-nowrap">
+                      <td className={`py-3 pr-4 font-mono ${bodyTextClass} whitespace-nowrap`}>
                         {cookie}
                       </td>
                       <td className="py-3">{purpose}</td>
@@ -345,7 +358,7 @@ export default function PrivacyPolicy() {
 
           <Section id="retention" title="6. DATA RETENTION" delay={0.35}>
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Contact form data
               </span>{" "}
               is retained in our database for up to 3 years to allow follow-up
@@ -353,11 +366,11 @@ export default function PrivacyPolicy() {
               deleted or anonymised.
             </p>
             <p>
-              <span className="text-white font-semibold">Analytics data</span>{" "}
+              <span className={`${bodyTextClass} font-semibold`}>Analytics data</span>{" "}
               is retained by Google Analytics for 14 months by default.
             </p>
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Advertising cookies
               </span>{" "}
               set by Google Ads expire after 90 days.
@@ -419,11 +432,11 @@ export default function PrivacyPolicy() {
                 ],
               ].map(([right, desc]) => (
                 <li key={right} className="flex gap-3">
-                  <span className="text-[#e8b84b] font-black mt-0.5 shrink-0">
+                  <span className={`${bodyTextClass} font-black mt-0.5 shrink-0`}>
                     —
                   </span>
                   <span>
-                    <span className="text-white font-semibold">{right}: </span>
+                    <span className={`${bodyTextClass} font-semibold`}>{right}: </span>
                     {desc}
                   </span>
                 </li>
@@ -441,8 +454,8 @@ export default function PrivacyPolicy() {
               For privacy-related requests, questions, or complaints, contact us
               at:
             </p>
-            <div className="border border-slate-800 p-5 bg-[#0d1520] space-y-2">
-              <p className="text-white font-semibold">
+            <div className={`border p-5 space-y-2 ${bodyPanelClass}`}>
+              <p className={`${bodyTextClass} font-semibold`}>
                 Sureay Machinery Technology Co., Ltd.
               </p>
               <p>
@@ -453,7 +466,7 @@ export default function PrivacyPolicy() {
                 Email:{" "}
                 <a
                   href="mailto:lynn@sureay.com"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   lynn@sureay.com
                 </a>
@@ -467,7 +480,7 @@ export default function PrivacyPolicy() {
                       link_location: "privacy_policy",
                     })
                   }
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   +86 180 0555 0657
                 </a>
@@ -482,6 +495,7 @@ export default function PrivacyPolicy() {
               you to review this page periodically.
             </p>
           </Section>
+          </div>
         </div>
       </main>
       <Footer />

@@ -11,6 +11,7 @@
  */
 
 import type { IndustryHeroData } from "./types";
+import { useTranslation } from "@/lib/useTranslation";
 
 // Fixed visual rhythm for the two gallery columns
 const COL_A_HEIGHTS = [
@@ -44,6 +45,7 @@ interface Props {
 }
 
 export default function IndustryHero({ data }: Props) {
+  const { t } = useTranslation();
   return (
     <section className="bg-[#0b1622] overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-14">
@@ -51,33 +53,29 @@ export default function IndustryHero({ data }: Props) {
           {/* ── Left — Copy block ── */}
           <div className="flex flex-col justify-between py-10 lg:py-24 pl-0 sm:pl-2 lg:pl-10 xl:pl-12 pr-0 border-b lg:border-b-0 border-white/10">
             <div>
-              <p className="font-bold text-xs text-white/40  tracking-[0.45em] mb-8">
+              <p className="font-bold text-xs text-white/80  tracking-[0.45em] mb-8">
                 {data.breadcrumb}
               </p>
 
-              <h1 className="font-black text-[32px] lg:text-[36px] text-[#65AAD6]  tracking-tight leading-[1.1] mb-5 max-w-[520px]">
+              <h1 className="font-black text-[34px] lg:text-[38px] text-[#65AAD6]  tracking-tight leading-[1.1] mb-5 max-w-[520px]">
                 {data.h1}
               </h1>
 
-              <h2 className="font-bold text-[13px] text-white/80  tracking-[0.2em] mb-7 max-w-[500px]">
-                {data.h2}
-              </h2>
-
               <div className="w-14 h-[3px] bg-white/25 mb-9" />
 
-              <p className="text-[#B4D4E9] text-base leading-relaxed mb-6 max-w-[490px] tracking-[0.025em]">
+              <p className="text-description text-[#B4D4E9] leading-relaxed mb-6 max-w-[490px] tracking-[0.025em]">
                 {data.body1}
               </p>
 
-              <p className="text-[#B4D4E9]/70 text-[15px] leading-relaxed max-w-[480px] tracking-wide mb-12">
+              <p className="text-description text-[#B4D4E9]/70 leading-relaxed max-w-[480px] tracking-wide mb-12">
                 {data.body2}
               </p>
 
               <a
                 href={data.ctaHref}
-                className="self-start inline-block bg-white text-[#001f4d] font-black text-[13px]  tracking-widest px-10 py-4 rounded-none hover:bg-slate-200 transition-colors duration-200"
+                className="self-start inline-block bg-white text-[#001f4d] font-black text-[16px]  tracking-widest px-10 py-4 rounded-none hover:bg-slate-200 transition-colors duration-200"
               >
-                [ View Tooling Matrix ]
+                {t("industry.products.view")}
               </a>
             </div>
           </div>

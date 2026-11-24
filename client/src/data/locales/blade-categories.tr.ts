@@ -1,285 +1,325 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blade-categories.ts
-// Target:    tr
-// Generated: 2026-09-20T07:57:34.649Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (tr).
 import type { BladeCategoryMeta } from "../blade-categories";
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     slug: "slitter-knives",
     category: "slitter_knives",
-    title: "Kesme Bıçakları ve Dairesel Bıçaklar",
-    seoTitle: "Döner Dilme Bıçakları ve Dairesel Dilme Bıçakları",
-    shortName: "Kesme Bıçakları",
-    tagline: "Film, kağıt ve metal folyo için hassas taşlanmış döner bıçaklar",
+    title: "Dilme bıçakları ve dairesel bıçaklar",
+    seoTitle: "Döner dilme bıçakları ve dairesel kesici bıçaklar",
+    shortName: "Dilme bıçakları",
+    tagline: "Web dilme, metal bobin işleme ve oluklu dönüştürme için bıçaklar",
     heroImage: "/images/categories/slitter-knives-nav.webp",
     description:
-      "döner dilimleme bıçakları: kesme, yiv açma ve jilet kesimi için — film, kağıt, dokunmamış kumaşlar ve metal folyo. ±0,002 mm tolerans. M2 HSS, D2, ASP23 PM ve karbür.",
-    specItems: [
-      {
-        label: "Kalınlık Toleransı",
-        value: "±0,002 mm",
-      },
-      {
-        label: "T.I.R. Sapması",
-        value: "≤0,02 mm",
-      },
-      {
-        label: "Malzemeler",
-        value: "M2 HSS · D2 · ASP23 PM · Karbür",
-      },
-      {
-        label: "Kaplamalar",
-        value: "TiN · DLC · Teflon",
-      },
-      {
-        label: "Kesme Modları",
-        value: "Kesme · Çizme · Jilet",
-      },
-      {
-        label: "Başvurular",
-        value: "Film · Kağıt · Dokumasız kumaşlar · Folyo",
-      },
-    ],
+      "Film, kağıt, dokunmamış kumaşlar, bakır ve alüminyum folyo, çelik bobinler ve pillere yönelik dilme bıçaklarını keşfedin. Bıçak türlerini, alt halkaları ve karbür seçeneklerini karşılaştırın.",
   },
   {
     slug: "shredder-blades",
     category: "shredder_blades",
-    title: "Parçalayıcı Bıçakları ve Kesici Uçları",
-    shortName: "Parçalayıcı Bıçakları",
-    tagline: "Çift şaftlı, tek şaftlı ve lastik parçalayıcı kesici aletler",
+    title: "Parçalayıcı bıçakları ve aşınma parçaları",
+    shortName: "Parçalayıcı bıçakları",
+    tagline: "Rotor uçları, sabit bıçaklar, elekler ve mile monteli kesiciler",
     heroImage: "/images/categories/shredder-blades-nav.webp",
     description:
-      "Plastik, metal, lastik ve akü geri dönüşümü için ağır hizmet tipi parçalayıcı bıçakları. D2/SKD11/Cr12MoV, kriyojenik ve vakumlu ısıl işlemden geçirilmiş. OEM'e tam uyumlu, çift ve tek şaftlı.",
-    specItems: [
-      {
-        label: "Malzemeler",
-        value: "D2 · SKD11 · Cr12MoV",
-      },
-      {
-        label: "Sertlik",
-        value: "58–62 HRC",
-      },
-      {
-        label: "Isıl İşlem",
-        value: "Kriyojenik + Vakum",
-      },
-      {
-        label: "Platformlar",
-        value: "Çift şaftlı · Tek şaftlı",
-      },
-      {
-        label: "Başvurular",
-        value: "Plastik · Metal · Lastik · Pil",
-      },
-      {
-        label: "Uyum",
-        value: "Doğrudan takılabilen OEM yedek parça",
-      },
-    ],
-  },
-  {
-    slug: "granulator-blades",
-    category: "granulator_blades",
-    title:
-      "Plastik Parçalama Bıçakları: Granülatör, Peletleyici ve Sıkıştırıcı",
-    seoTitle: "Granülatör, Peletleme Makinesi ve Sıkıştırıcı Bıçakları",
-    shortName: "Öğütücü Bıçakları",
-    tagline:
-      "Yeniden öğütme kalitesinin en üst düzeye çıkarılması, MTBR’nin uzatılması",
-    heroImage: "/images/categories/granulator-blades-nav.webp",
-    description:
-      "Granülatör rotorları ve yatak bıçakları, şerit peletleyici rotorları, kalıp yüzeyi kesme bıçakları, sıkıştırıcı bıçakları ve eriyik filtresi sıyırıcıları arasından seçim yapın.",
-    specItems: [
-      {
-        label: "Malzemeler",
-        value: "H13 · D2 · M2 HSS · Karbür",
-      },
-      {
-        label: "Geometri",
-        value: "Optimize edilmiş eğim açısı",
-      },
-      {
-        label: "Makineler",
-        value: "Döner · Pençe · Hazne · Peletleme",
-      },
-      {
-        label: "Avantaj",
-        value: "Daha düşük motor yükü · Daha az toz",
-      },
-      {
-        label: "Başvurular",
-        value: "Plastik öğütme · Parçacık boyutunun küçültülmesi",
-      },
-      {
-        label: "Yeniden öğütülebilir",
-        value: "Evet — birden fazla döngü",
-      },
-    ],
+      "Genel geri dönüşüm, hurda metal, lastik veya pilin ön parçalanması için çok şaftlı kesicileri seçin. Tek şaftlı rotor uçlarını, sabit bıçakları ve elekleri bulun.",
+    selectionGuide: {
+      title: "Parçalayıcı Bıçağı Seçim Kılavuzu",
+      articles: [
+        {
+          id: "single-shaft-shredder-blade-face-profile-guide",
+          width: 800,
+          height: 800,
+          smallerWidths: [320, 400, 640],
+        },
+        {
+          id: "tire-shredder-blade-wear-steel-cord",
+          width: 2496,
+          height: 1696,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "granulator-rotor-bed-knife-configuration",
+          width: 1672,
+          height: 941,
+          smallerWidths: [400, 640, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "twin-and-multi-shaft-cutters",
+          title: "Uygulamaya Göre Çok Şaftlı Kesiciler",
+          description:
+            "Parçalayıcıya girenlerle başlayın. Daha sonra doğru değiştirmeyi belirlemek için makine modelini ve kesici yığınını kullanın.",
+          productIds: [
+            "twin-shaft-blades-recycling",
+            "multi-shaft-blades-metal",
+            "tire-shredder-blades",
+            "twin-shaft-blades-battery",
+          ],
+        },
+        {
+          id: "single-shaft-parts",
+          title: "Tek Şaftlı Parçalayıcı ve Granülatör Parçaları",
+          description:
+            "Rotor bıçakları sabit stator bıçaklarına karşı keser. Ekran hangi malzemenin hazneden dışarı çıkabileceğini kontrol eder.",
+          productIds: [
+            "single-shaft-shredder-blades",
+            "single-shaft-bed-knives",
+            "shredder-screens",
+            "granulator-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Makine modelini, parça numarasını, hammaddeyi ve miktarını ekleyin. Varsa bir kesici veya ekran çizimi ekleyin.",
+    },
   },
   {
     slug: "log-saw-blades",
     category: "log_saw_blades",
-    title: "Kağıt Havlu ve Rulo Testere Bıçakları",
-    shortName: "Rulo Testere Bıçakları",
-    tagline: "Sıfır toz. Çapak bırakmayan kağıt mendil ve peçete kesimi.",
+    title: "Temizlik kâğıdı ve dokusuz kumaş rulo kesme testere bıçakları",
+    shortName: "Rulo kesme testere bıçakları",
+    tagline: "Rulo malzemesine göre yedek dairesel bıçaklar",
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
-      "Kağıt mendil, mutfak havlusu ve peçete üretiminde kullanılan log testere bıçakları tipi dairesel bıçak. CBN ile uyumlu, kontrollü salgı, tozsuz delme için sürtünme önleyici kaplamalı.",
-    routingCopy:
-      "Keseceğiniz malzemeye göre ayrılan iki rulo testere bıçağı grubu bulunmaktadır. Perini, PCMC, Casmatic, Gambini ve Bretting makinelerinde işlenen kağıt mendil ve havlu ruloları için Ø610–1200 mm’lik kağıt mendil bıçakları kullanılır. Dokunmamış kumaş ve mendil ruloları ise farklı bir eğime sahip, daha küçük Ø350–700 mm'lik bıçaklarla kesilir. Üretim hattınıza uygun olanı seçin veya bize makine modelini gönderin, size doğru bıçağı önerelim.",
-    oemExcludeList: ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
-    specItems: [
-      {
-        label: "Profil",
-        value: "CBN uyumlu",
-      },
-      {
-        label: "Yüzey",
-        value: "Sürtünme önleyici işlem",
-      },
-      {
-        label: "Kesim Kalitesi",
-        value: "Tozsuz delme",
-      },
-      {
-        label: "Hız",
-        value: "Yüksek hat hızları için optimize edilmiştir",
-      },
-      {
-        label: "Başvurular",
-        value: "Kağıt mendil · Mutfak havlusu · Peçete",
-      },
-      {
-        label: "Tırtıl",
-        value: "Özel geometri seçenekleri mevcuttur",
-      },
-    ],
+      "Tuvalet kâğıdı, kâğıt havlu ve dokunmamış mendil ruloları için dairesel bıçakları karşılaştırın. Uygun bıçağı seçmek için rulo malzemesini ve testere modelini belirleyin.",
+    seoTitle: "Temizlik kâğıdı ve dokusuz kumaş rulo kesme testere bıçakları",
+    selectionGuide: {
+      title: "Rulo kesme testeresi bıçağı seçim kılavuzu",
+      articles: [
+        {
+          id: "log-saw-blade-chipping-causes-prevention",
+          width: 1600,
+          height: 878,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "log-saw-blade-bevel-angles",
+          width: 1108,
+          height: 1108,
+          smallerWidths: [320, 400, 480, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "tissue-and-towel-logs",
+          title: "Tuvalet kâğıdı ve kâğıt havlu ruloları",
+          productIds: ["tissue-log-saw-blades"],
+        },
+        {
+          id: "nonwoven-logs",
+          title: "Dokunmamış kumaş ve mendil ruloları",
+          productIds: ["nonwoven-log-saw-blades"],
+        },
+      ],
+      quotePrompt:
+        "Testere modelini, rulo malzemesini, bıçak çapını, deliği ve tahrik pimi düzenini ekleyin ve varsa bir çizim ekleyin.",
+    },
   },
   {
     slug: "shear-blades",
     category: "shear_blades",
-    title: "Kesme ve Giyotin Bıçakları",
-    seoTitle: "Giyotin Bıçakları ve Endüstriyel Kesme Bıçakları",
-    shortName: "Kesme Bıçakları",
-    tagline:
-      "Giyotin kesme bıçakları, metal makaslama bıçakları ve kağıt kesme setleri",
+    title: "Metal makas bıçakları",
+    seoTitle: "Sac, metal rulo ve hurda kesimi için makas bıçakları",
+    shortName: "Metal makas bıçakları",
+    tagline: "Metal kesme istasyonuna göre yedek bıçaklar",
     heroImage: "/images/categories/shear-blades-nav.webp",
     description:
-      "Sac kesme makinaları, kağıt kesiciler ve üç bıçaklı kesiciler için giyotin bıçakları. D2, 6CrW2Si, HSS ve TCT kaplamalı kesici kenarlar; teknik çizim veya numuneye göre taşlanmıştır.",
-    specItems: [
-      {
-        label: "Kenar Yapısı",
-        value: "TCT kaplamalı · Bimetalik · Katı HSS",
-      },
-      {
-        label: "Yüzey Düzgünlüğü",
-        value: "Tüm uzunluk boyunca korunmuştur",
-      },
-      {
-        label: "Tedarik Biçimi",
-        value: "OEM uyumlu setler",
-      },
-      {
-        label: "Makineler",
-        value: "Hidrolik giyotin · Levha kesici · Üç bıçaklı kesme makinesi",
-      },
-      {
-        label: "Başvurular",
-        value: "Çelik sac · Kağıt · Karton · Kitap bloğu",
-      },
-      {
-        label: "Yeniden öğütülebilir",
-        value: "Evet",
-      },
-    ],
+      "Giyotin, uçan makas ve hurda kıyıcı bıçaklarının yanı sıra sabit ve timsah tipi hurda makaslama bıçakları seçin. Makine ve bıçağın konumunu eşleştirin.",
+    selectionGuide: {
+      title: "Metal Kesme Bıçağı Seçim Kılavuzu",
+      articles: [
+        {
+          id: "guillotine-shear-blade-clearance-setting",
+          width: 1200,
+          height: 960,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "guillotine-shear-blade-parallelism",
+          image: "/images/news/guillotine-shear-blade-parallelism-cover.webp",
+          width: 990,
+          height: 742,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "metal-shearing",
+          title: "Sac Metal, Rulo Hatları ve Haddehaneler",
+          description:
+            "Bağımsız sac kesme bıçaklarını, haddehane uçan makaslama bıçakları veya kenar kesme kıyıcı bıçaklarını seçin.",
+          productIds: [
+            "guillotine-shear-blades",
+            "flying-shear-blades",
+            "scrap-chopper-blades",
+          ],
+        },
+        {
+          id: "scrap-recycling-shears",
+          title: "Hurda Geri Dönüşüm Makasları",
+          description:
+            "Yedek bıçağı seçmeden önce menteşeli çeneli timsah makası veya sabit hurda makası belirleyin.",
+          productIds: ["metal-shear-knives", "stationary-scrap-shear-blades"],
+        },
+      ],
+      quotePrompt:
+        "Makine modelini, bıçak konumunu, malzemeyi ve kalınlığını veya kesit boyutunu ekleyin ve bıçak çizimini ekleyin.",
+    },
   },
   {
-    slug: "cold-saw-blades",
-    category: "cold_saw_blades",
-    title: "Metal Soğuk Testere Bıçakları",
-    shortName: "Soğuk Testere Bıçakları",
+    slug: "paper-cutting-knives",
+    category: "paper_cutting",
+    title: "Kâğıt kesme ve tıraşlama bıçakları",
+    shortName: "Kâğıt kesme bıçakları",
     tagline:
-      "Çelik ve boruların soğuk kesimi için HSS ve karbür dairesel bıçaklar",
-    heroImage:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
+      "Kağıt yığınları, web kaplama ve baskı son işlemleri için bıçaklar",
+    heroImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     description:
-      "Çelik boru, kesme çubuğu ve yapı profillerinin çapak bırakmadan kesilmesi için soğuk kesim dairesel testere bıçakları. HSS-E (M35/M42) ve TCT karbür uçlu, kuru/sulu/MQL kesim.",
-    specItems: [
-      {
-        label: "Malzemeler",
-        value: "HSS-E M35/M42 · TCT karbür uçlu",
-      },
-      {
-        label: "Kesim Kalitesi",
-        value: "Çapak bırakmaz, ısıdan etkilenmiş bölge yoktur",
-      },
-      {
-        label: "Kesme Koşulları",
-        value: "Kuru · Su soğutmalı · MQL",
-      },
-      {
-        label: "Başvurular",
-        value: "Çelik boru · Dolu çubuk · Yapısal profil",
-      },
-      {
-        label: "Tedarik Biçimi",
-        value: "OEM yedek parçası veya özel dış çap/iç çap/adım",
-      },
-      {
-        label: "Yeniden öğütülebilir",
-        value: "Evet — birden fazla döngü",
-      },
-    ],
+      "Kağıt giyotin bıçakları , tabakalama bıçaklarını, üç bıçaklı düzeltici bıçaklarını ve tel dikiş bıçaklarını seçin. Kesme istasyonunu, bıçak konumunu ve makine çizimini eşleştirin.",
+    selectionGuide: {
+      title: "Kağıt Kesme Bıçağı Seçim Kılavuzu",
+      articles: [
+        {
+          id: "paper-guillotine-knives-selection-maintenance-guide",
+          width: 1200,
+          height: 537,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "custom-length-guillotine-paper-cutter-blades",
+          width: 1122,
+          height: 1402,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "paper-cutting",
+          title: "Kağıt Yığını Kesme ve Web Kaplama",
+          description:
+            "Kelepçeli kağıt yığını kesimini, sürekli web çapraz kesiminden tabakalara ayırın.",
+          productIds: ["paper-cutting-blades", "paper-sheeter-knives"],
+        },
+        {
+          id: "print-finishing",
+          title: "Kitap ve Baskı Sonlandırma",
+          description:
+            "Üç bıçaklı düzeltici veya tel dikiş hattı için bıçak setini seçin. Ön, yan, üst ve alt konumları onaylayın.",
+          productIds: [
+            "three-knife-trimmer-blades",
+            "saddle-stitcher-trimmer-knives",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Makine modelini ve versiyonunu, bıçak konumlarını, kağıt veya karton özelliklerini ve orijinal bıçak çizimlerini ekleyin.",
+    },
   },
   {
-    slug: "custom-profile",
+    slug: "other-custom-blades",
     category: "custom_profile",
-    title: "Özel ve Özel Şekilli Bıçaklar",
-    shortName: "Özel Bıçaklar",
-    tagline: "Her türlü geometri · her türlü alaşım · DXF, DWG veya numuneden",
+    title: "Diğer bıçaklar ve özel üretim bıçaklar",
+    shortName: "Diğer ve özel üretim",
+    tagline: "Prosese özel kesme parçaları ve özel profiller",
     heroImage: "/images/products/blades/special-shaped-knife.webp",
     description:
-      "DXF/DWG/STEP çizimlerinizden veya fiziksel numunelerinizden üretilen özel profilli ve özel şekilli endüstriyel bıçaklar. ±0,02 mm toleranslı D2, H13, PM-HSS ve katı karbür seçenekleri — her türlü profil, her türlü endüstri.",
+      "İşleme veya parça türüne göre kesici kompaktör bıçaklarını, eriyik filtre kazıyıcılarını, peletleme bıçaklarını ve özel profilleri bulun.",
+    selectionGuide: {
+      title: "Proses Bıçağı Seçim Kılavuzu",
+      articles: [
+        {
+          id: "cutter-compactor-blade-film-vs-flake-wear",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "how-to-spec-die-face-cutting-knives",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+          width: 1280,
+          height: 720,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "products",
+          title: "Diğer bıçaklar ve özel üretim bıçaklar",
+          productIds: [
+            "cutter-compactor-blades",
+            "continuous-melt-filter-scraper-blades",
+            "strand-pelletizer-rotors",
+            "die-face-cutting-knives",
+            "special-shaped-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Süreci, makine modelini, parça konumunu ve çizim veya örnek boyutlarını ekleyin.",
+    },
   },
   {
     slug: "wood-chipper-blades",
     category: "wood_chipper",
-    title: "Ağaç Öğütücü Bıçakları",
-    shortName: "Ağaç Öğütücü Bıçakları",
-    tagline:
-      "Ormancılık, biyokütle ve odun geri dönüşümü için tamburlu ve diskli yonga kesme bıçakları",
+    title: "Ağaç yongalama bıçakları ve karşı bıçaklar",
+    shortName: "Ağaç yongalama bıçakları",
+    tagline: "Hareketli bıçaklar ve sabit karşı bıçaklar",
     heroImage:
       "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
     description:
-      "D2, Cr12MoV ve TCT karbür uçlu çelikten imal edilmiş ağır hizmet tipi tambur ve diskli yonga kesme bıçakları. Derin kriyojenik işlem ile HRC 57–62 sertliğine kadar vakumla ısıl işleme tabi tutulmuştur. Temiz ve düzgün yonga geometrisi için ±0,05 mm kalınlık toleransında hassas taşlama işlemine tabi tutulmuştur.",
-    specItems: [
-      {
-        label: "Malzemeler",
-        value: "Yüksek Karbonlu Çelik · D2/Cr12MoV · TCT Karbür Uçlu",
-      },
-      {
-        label: "Sertlik",
-        value: "HRC 55–58 (standart) · HRC 58–62 (D2) · HRA 89–91 (TCT)",
-      },
-      {
-        label: "Kalınlık Toleransı",
-        value: "±0,05 mm",
-      },
-      {
-        label: "Başvurular",
-        value:
-          "Tamburlu yongalama makineleri · Diskli yongalama makineleri · Biyokütle için bütün ağaç yongalama makineleri",
-      },
-      {
-        label: "OEM Uyumluluğu",
-        value: "Bandit · Vermeer · Morbark · Peterson · Doppstadt · Jenz",
-      },
-      {
-        label: "Yeniden öğütülebilir",
-        value: "Evet — 8–12 döngü (tam sertleştirilmiş)",
-      },
-    ],
+      "Tamburlu ve diskli ağaç öğütücüler için hareketli öğütücü bıçakları ve sabit örsleri bulun. Rollerini karşılaştırın, ardından değiştirilen kişiyi makineyle eşleştirin.",
+    seoTitle:
+      "Tamburlu ve diskli odun yongalama makineleri için bıçaklar ve karşı bıçaklar",
+    selectionGuide: {
+      title: "Ağaç Öğütme Bıçağı Seçim Kılavuzu",
+      articles: [
+        {
+          id: "wood-chipper-blade-wear-patterns",
+          width: 1149,
+          height: 766,
+          smallerWidths: [320, 400, 640, 800],
+        },
+        {
+          id: "wood-chipper-knife-sharpening-guide",
+          width: 1536,
+          height: 1024,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "moving-chipper-knives",
+          title: "Hareketli Parçalayıcı Bıçaklar",
+          productIds: ["wood-chipper-blades"],
+        },
+        {
+          id: "stationary-anvils",
+          title: "Sabit Örsler",
+          productIds: ["wood-chipper-anvils"],
+        },
+      ],
+      quotePrompt:
+        "Öğütücünün modelini ve seri numarasını, tambur veya disk tipini, bıçak veya örs konumunu ve çizim veya numune boyutlarını ekleyin.",
+    },
   },
 ];

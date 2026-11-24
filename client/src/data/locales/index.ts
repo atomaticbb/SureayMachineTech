@@ -24,6 +24,8 @@ import { DEFAULT_LANG, type Lang } from "@/lib/i18n";
 import { loadDictionary } from "@/lib/translations";
 import {
   blades as bladesEn,
+  draftBlades,
+  getBladeById as getEnglishBladeById,
   type Blade,
   type BladeCategoryType,
   type BladeSectorType,
@@ -50,6 +52,7 @@ import {
 // English data is always synchronously available.
 // Non-English entries are populated by preloadLocale() below.
 const bladesByLang: Partial<Record<Lang, Blade[]>> = { en: bladesEn };
+const listedBladeIds = new Set(bladesEn.map(blade => blade.id));
 const categoriesByLang: Partial<Record<Lang, BladeCategoryMeta[]>> = {
   en: catEn,
 };
@@ -239,11 +242,19 @@ export function preloadLocale(lang: Lang): Promise<void> {
 // ── Accessors ───────────────────────────────────────────────────────────────
 
 export function getBlades(lang: Lang): Blade[] {
-  return bladesByLang[lang] ?? bladesByLang[DEFAULT_LANG]!;
+  const localized = bladesByLang[lang];
+  return localized && lang !== DEFAULT_LANG
+    ? localized.filter(blade => listedBladeIds.has(blade.id))
+    : bladesEn;
 }
 
 export function getBladeById(id: string, lang: Lang): Blade | undefined {
-  return getBlades(lang).find(b => b.id === id);
+  if (lang !== DEFAULT_LANG) {
+    if (!getEnglishBladeById(id)) return undefined;
+    return bladesByLang[lang]?.find(blade => blade.id === id);
+  }
+  return getEnglishBladeById(id) ??
+    (import.meta.env?.DEV ? draftBlades.find(blade => blade.id === id) : undefined);
 }
 
 export function getFeaturedBlades(lang: Lang): Blade[] {
@@ -256,12 +267,12 @@ export function getRelatedBlades(
   limit = 4
 ): Blade[] {
   const blades = getBlades(lang);
-  const current = blades.find(b => b.id === currentId);
+  const current = getBladeById(currentId, lang);
   if (!current) return [];
 
   if (current.relatedBladeIds && current.relatedBladeIds.length > 0) {
     return current.relatedBladeIds
-      .map(id => blades.find(b => b.id === id))
+      .map(id => getBladeById(id, lang))
       .filter((b): b is Blade => !!b)
       .slice(0, limit);
   }
@@ -272,7 +283,9 @@ export function getRelatedBlades(
 }
 
 export function getCategories(lang: Lang): BladeCategoryMeta[] {
-  return categoriesByLang[lang] ?? categoriesByLang[DEFAULT_LANG]!;
+  return (categoriesByLang[lang] ?? categoriesByLang[DEFAULT_LANG]!).filter(
+    category => category.slug !== "cold-saw-blades"
+  );
 }
 
 export function getCategoryBySlug(
@@ -337,10 +350,18 @@ export function getOemMachinesForCategory(
  * pages with newly-added keys never render with empty meta.
  */
 export function getSEO(pageKey: string, lang: Lang): PageSEO {
-  const config = seoByLang[lang] ?? seoByLang[DEFAULT_LANG]!;
-  return (
-    config[pageKey] ?? seoByLang[DEFAULT_LANG]![pageKey] ?? ({} as PageSEO)
-  );
+  const localized = seoByLang[lang]?.[pageKey];
+  if (lang !== DEFAULT_LANG) {
+    const blade = getBladeById(pageKey, lang);
+    if (blade) {
+      return {
+        ...localized,
+        title: blade.seoTitle || blade.detailLayout?.seoTitle || blade.fullName || blade.name,
+        description: blade.seoDescription || blade.description,
+      };
+    }
+  }
+  return localized ?? seoEn[pageKey] ?? {};
 }
 
 // ── Mixer Wear Parts accessors ──────────────────────────────────────────────

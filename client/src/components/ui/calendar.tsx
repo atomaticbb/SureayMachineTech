@@ -68,7 +68,7 @@ function Calendar({
           defaultClassNames.dropdowns
         ),
         dropdown_root: cn(
-          "relative has-focus:border-ring border border-input shadow-xs has-focus:ring-ring/50 has-focus:ring-[3px] rounded-none",
+          "relative has-focus:border-ring border border-input shadow-none has-focus:ring-ring/50 has-focus:ring-[3px] rounded-none",
           defaultClassNames.dropdown_root
         ),
         dropdown: cn(
@@ -85,7 +85,7 @@ function Calendar({
         table: "w-full border-collapse",
         weekdays: cn("flex", defaultClassNames.weekdays),
         weekday: cn(
-          "text-muted-foreground rounded-none flex-1 font-normal text-[0.8rem] select-none",
+          "text-muted-foreground rounded-none flex-1 font-normal text-[16px] select-none",
           defaultClassNames.weekday
         ),
         week: cn("flex w-full mt-2", defaultClassNames.week),
@@ -94,7 +94,7 @@ function Calendar({
           defaultClassNames.week_number_header
         ),
         week_number: cn(
-          "text-[0.8rem] select-none text-muted-foreground",
+          "text-[16px] select-none text-muted-foreground",
           defaultClassNames.week_number
         ),
         day: cn(

@@ -40,7 +40,7 @@ export default function MobileContactBar({
   return (
     <>
       <div className="md:hidden h-[72px]" aria-hidden="true" />
-      <div className="md:hidden fixed inset-x-0 bottom-0 z-30 bg-white border-t border-slate-200 shadow-2xl">
+      <div className="md:hidden fixed inset-x-0 bottom-0 z-30 bg-white border-t border-slate-200 shadow-none">
         <div className="px-4 py-3 flex items-center gap-2">
           <a
             href={whatsappUrl}

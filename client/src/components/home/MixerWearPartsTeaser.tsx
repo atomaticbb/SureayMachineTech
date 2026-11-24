@@ -5,8 +5,7 @@
  * "Two Plant Types" section (scene→products hover cross-fade, greyed down).
  */
 
-import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
+import MixerCategoryCards from "@/components/product/MixerCategoryCards";
 import { useLang } from "@/contexts/LangContext";
 import { useTranslation } from "@/lib/useTranslation";
 import { getMixerCategories } from "@/data/locales";
@@ -19,75 +18,30 @@ export default function MixerWearPartsTeaser() {
   return (
     <section
       aria-label={t("nav.mixerWearParts")}
-      className="border-y border-slate-200 bg-slate-50"
+      className={`home-section bg-slate-50 ${lang === "en" ? "" : "border-y border-slate-200"}`}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-16 lg:py-24">
+      <div className={`home-content max-w-7xl mx-auto px-6 sm:px-8 ${lang === "en" ? "" : "py-16 lg:py-24"}`}>
         {/* Header — mirrors the TabEcosystem "Markets We Serve" section */}
-        <div className="mb-10 lg:mb-14">
-          <p className="text-slate-500 font-bold text-xs tracking-[0.3em] mb-3">
-            {t("mixer.teaser.eyebrow")}
-          </p>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d] tracking-tight leading-[1.05] max-w-xl">
-              {t("mixer.hub.hero.titleLine1")} <br />
-              {t("mixer.teaser.titleLine2")}
+        <div className={lang === "en" ? "mb-5 lg:mb-6" : "mb-10 lg:mb-14"}>
+          {lang !== "en" && (
+            <p className="text-muted-foreground font-bold text-xs tracking-[0.3em] mb-3">
+              {t("mixer.teaser.eyebrow")}
+            </p>
+          )}
+          <div className={lang === "en" ? "space-y-3" : "flex flex-col md:flex-row md:items-end md:justify-between gap-6"}>
+            <h2 className="home-section-title font-black text-2xl md:text-3xl lg:text-[38px] text-[#001f4d] tracking-tight leading-[1.05]">
+              {lang === "en" ? t("mixer.hub.title") : (
+                <>{t("mixer.hub.hero.titleLine1")}<br />{t("mixer.teaser.titleLine2")}</>
+              )}
             </h2>
-            <p className="text-slate-500 max-w-sm text-sm md:text-base leading-relaxed md:text-right">
+            <p className={`text-description text-muted-foreground leading-relaxed ${lang === "en" ? "max-w-prose" : "max-w-sm md:text-right"}`}>
               {t("mixer.teaser.lead")}
             </p>
           </div>
-          <div className="w-14 h-[3px] bg-slate-300 mt-8" />
+          {lang !== "en" && <div className="w-14 h-[3px] bg-slate-300 mt-8" />}
         </div>
 
-        {/* Cards — /mixer-wear-parts "Two Plant Types" style */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {mixerCategories.map(cat => (
-            <Link key={cat.id} href={cat.link} asChild>
-              <a className="group block overflow-hidden bg-white border border-slate-200 hover:border-[#001f4d] hover:shadow-xl hover:shadow-slate-300/50 transition-all duration-200">
-                <div className="relative aspect-[16/9] overflow-hidden bg-slate-100">
-                  {/* Default — plant scene */}
-                  <img
-                    src={`/images/mixer-parts/hero/${cat.id}-scene.webp`}
-                    alt={cat.name}
-                    className="absolute inset-0 h-full w-full object-cover transition-opacity duration-300 group-hover:opacity-0"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  {/* On hover — the parts in this category */}
-                  <img
-                    src={`/images/mixer-parts/hero/${cat.id}-products.webp`}
-                    alt={t("mixer.hub.cardPartsAlt").replace(
-                      "{{name}}",
-                      cat.name
-                    )}
-                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  {/* Grey overlay — tone down the bright plant photos */}
-                  <div
-                    className="absolute inset-0 bg-slate-900/25 pointer-events-none transition-opacity duration-300 group-hover:opacity-0"
-                    aria-hidden="true"
-                  />
-                </div>
-                <div className="flex items-center justify-between gap-4 border-t border-slate-200 p-5 lg:p-6">
-                  <div className="min-w-0">
-                    <h3 className="font-black text-lg lg:text-xl text-[#001f4d] tracking-tight truncate">
-                      {cat.name}
-                    </h3>
-                    <p className="text-[13px] text-slate-500 leading-snug line-clamp-1 mt-0.5">
-                      {cat.description}
-                    </p>
-                  </div>
-                  <span className="inline-flex shrink-0 items-center gap-2 text-[11px] font-black tracking-[0.18em] text-[#001f4d] group-hover:gap-3 transition-all">
-                    {t("mixer.hub.viewParts")}
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </span>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </div>
+        <MixerCategoryCards categories={mixerCategories} showDescriptions={lang !== "en"} />
       </div>
     </section>
   );

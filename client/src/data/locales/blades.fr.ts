@@ -1,729 +1,915 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blades.ts
-// Target:    fr
-// Generated: 2026-05-22T04:35:15.807Z
-// Provider:  deepl (incremental: faqs + components)
-
+// Generated from the English industrial blade catalog (fr).
 import type { Blade } from "../blades";
+
 export const blades: Blade[] = [
   {
+    compatibleMachinesIntro:
+      "Commandez des lames de rechange pour découpeuses de films et de rubans, conçues sur mesure pour vos porte-lames, avec des alésages, des profils de coupe et des finitions de surface personnalisés. Envoyez votre plan ou un échantillon à Sureay pour obtenir un devis concernant des lames individuelles ou une paire de lames supérieure et inférieure.",
     id: "rotary-slitter-knives",
-    name: "Couteaux coupeurs de films et de bandes",
-    fullName:
-      "Couteaux rotatifs de précision pour la transformation de films, de rubans et d'emballages souples",
+    name: "Couteaux de refente pour films et rubans",
+    fullName: "Couteaux de refente pour films et rubans d’emballage souple",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Couteaux coupeurs de films et de bandes",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Meilleur vendeur",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    ],
+    categoryDisplay: "Couteaux de refente pour films et rubans",
+    image: "/images/products/slitter-detail/rotary-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lames de refendage circulaires affûtées avec précision pour les films BOPP, BOPET et CPP, les films étirables PE, les rubans PSA et la transformation des non-tissés. tolérance d'épaisseur de ±0,002 mm, faux-rond de T.I.R. ≤0,02 mm. Profils de cisaillement, d'incision et de rasage en acier M2 HSS, D2 et ASP23 PM avec revêtements anti-adhérents TiN et DLC en option. Adaptation OEM pour les systèmes de découpe Tidland, Kampf, Atlas et Dusenbery.",
-    fullDescription:
-      "Les lames et couteaux rotatifs de refente circulaires fonctionnent à l'intersection de la précision dimensionnelle et de la science des matériaux. Sur une ligne de transformation de film BOPP ou BOPET à 400-600 m/min, une erreur de tolérance d'épaisseur de lame de refente rotative de 0,005 mm par lame se compose à travers une pile d'arbres à plusieurs lames, produisant une déviation visible de la largeur de la fente, un enroulement des bords et de la poussière qui contamine l'équipement de rembobinage et d'emballage en aval. Les lames de refendage rotatives Sureay sont fabriquées avec une tolérance d'épaisseur de ±0,002 mm et un faux-rond total indiqué de ≤20,02 mm - des tolérances qui s'appliquent à l'ensemble du diamètre de production, et pas seulement à l'alésage.\n\nLe choix de l'alliage est déterminé par l'application. La transformation standard du papier couché et du carton kraft s'effectue avec de l'acier à roulement 52100 ou du D2 acier à outils pour travail à froid. Les substrats abrasifs - feuilles d'aluminium et d'électrodes de cuivre pour les piles au lithium des véhicules électriques, emballages renforcés de fibre de verre, revêtements antiadhésifs enduits de silicium - nécessitent un acier à métallurgie des poudres (PM) ASP23 ou ASP52 ou du carbure solide pour une durée de vie acceptable des arêtes. Les films plastiques souples (BOPP, BOPET, CPP, film étirable PE) sont couramment traités sur des lames M2 HSS avec un revêtement de surface TiN ou DLC PVD en option pour empêcher le transfert du film adhésif et réduire l'échauffement de la bande dû à la friction.\n\n## Par méthode de coupe\n\n**Cisaillement (paires de couteaux supérieurs et inférieurs appariés):** L'action de ciseaux entre le couteau supérieur bombé et le couteau inférieur rainuré de l'enclume génère une coupe de cisaillement propre avec une charge de traction nulle sur la bande. Le jeu entre les couteaux est généralement compris entre 0,05 et 0,15 mm (en fonction du support) ; nos tolérances de rectification garantissent la constance de ce jeu sur toute la largeur de la fente. Essentiel pour le papier, les non-tissés et les films souples légers pour lesquels la déformation des bords est inacceptable.\n\n**Découpe par écrasement (lame circulaire contre rouleau d'enclume en caoutchouc):** Une lame trempée à arêtes vives pénètre à travers un laminé adhésif, une mousse ou une bande d'emballage multicouche contre une enclume en caoutchouc à dureté contrôlée. La géométrie du profil de la lame et l'angle du biseau sont optimisés pour chaque substrat afin d'éviter l'écrasement de l'adhésif et la délamination au niveau du bord de coupe. C'est le choix standard pour les rubans adhésifs, la découpe de mousse et le découpage d'emballages médicaux.\n\n**Refendage par rasoir (lame unique flottante ou fixe):** Les lames ultra tranchantes à profil fin coupent les déchets de bord des lignes d'extrusion de films coulés, des lignes de films orientés et de la production de non-tissés spunbond à des vitesses supérieures à 500 m/min. La géométrie des lames est optimisée pour une traînée minimale de la bande et une propreté maximale des bords, ce qui évite l'enroulement des bords et les décharges électrostatiques à l'origine des ruptures de bande sur les lignes à grande vitesse.\n\n## Par matériau et industrie\n\n**Films d'emballage flexibles:** BOPP, BOPET, CPP, film étirable PE/PP, manchons rétractables. La découpe de films à grande vitesse nécessite un contrôle précis du faux-rond afin d'éviter les pics de tension de la bande induits par l'oscillation des couteaux. L'acier rapide M2 avec revêtement DLC en option élimine l'adhérence du transfert de film sur la face de la lame.\n\n**Non-tissés et tissus médicaux:** PP filé-lié, meltblown, tissus médicaux SMS, filtres HEPA. Des angles de coupe spéciaux empêchent l'effilochage des fibres et le glissement de la bande lors de la découpe de matériaux à structure lâche à des tensions de ligne élevées.\n\n**Rubans et étiquettes sensibles à la pression:** Masquage, ruban adhésif, mousse double face, étiquettes, adhésif de transfert. Les revêtements anti-adhésion TiN et Teflon réduisent la fréquence de nettoyage de 60 à 80 %, prolongeant ainsi le temps moyen entre les remplacements pour les applications de refendage de bandes les plus exigeantes.",
-    disambiguation:
-      "Vous traitez du papier, du papier tissu ou du carton plutôt que du film ? Consultez notre page [Couteaux coupe-papier](/products/rotary-slitter-knives-paper) pour les données de jeu de cisaillement et les intervalles de réaffûtage sur les substrats cellulosiques.",
+      "Lames de rechange pour découpeuses de films BOPP, PET, CPP et de rubans adhésifs. Lames supérieures et inférieures en acier à outils ou en carbure, avec alésages et profils sur mesure selon les plans.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Tidland",
-      "Mario Cotta",
-      "Dusenbery",
-      "Kampf",
-      "Atlas",
-      "Goebel",
-      "BHS",
-      "Agnati",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "52100 / D2 / M2 HSS / ASP23 PM / Solid Carbide",
+        label: "Dimensions",
+        value: "Diamètre extérieur des lames circulaires : 20–300 mm",
       },
       {
-        label: "Cutting Styles",
-        value: "Shear Slitting, Score / Crush Cutting, Razor Slitting",
-      },
-      {
-        label: "Outer Diameter",
-        value: "50–200 mm (custom OD available)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.002 mm thickness | ≤0.02 mm T.I.R. runout",
-      },
-      {
-        label: "Coatings",
-        value: "TiN, DLC, Teflon, CrAlN (optional)",
+        label: "Matériau",
+        value:
+          "52100, D2, M2 HSS, acier ASP23 PM ou carbure de tungstène monobloc",
       },
       {
         label: "Applications",
         value:
-          "BOPP / BOPET / CPP Film, PE Stretch Film, PSA Tape, Non-Wovens, Flexible Packaging",
+          "BOPP, BOPET, CPP, film étirable et ruban adhésif sensible à la pression",
       },
+      {
+        label: "Revêtements en option",
+        value:
+          "TiN, DLC, PTFE (Téflon), CrAlN ou céramique, selon le matériau de base de la lame",
+      },
+      {
+        label: "Fixation",
+        value: "Porte-lames rotatifs ou porte-lames à coupe par écrasement",
+      },
+      {
+        label: "Tolérance d'épaisseur",
+        value: "±0.002 mm",
+      },
+      {
+        label: "Faux-rond",
+        value: "≤0.02 mm T.I.R.",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Couteaux de refente pour films et rubans d’emballage souple",
+      sizeRange: "Diamètre extérieur des lames circulaires : 20–300 mm",
+      heroAlt:
+        "Couteaux circulaires pour découpeuses de films et de rubans, et anneaux inférieurs",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-detail.webp",
+        alt: "Gros plan du biseau affûté avec précision et de la face d'un couteau à découper circulaire",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Couteaux de refente",
+          title: "Lames de découpe supérieures et inférieures",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de Couteau",
+          ],
+          rows: [
+            ["SR001154", "60 × 40 × 1.0 mm", "Lame supérieure"],
+            ["SR001155", "62 × 35 × 0.5 mm", "Lame supérieure"],
+            ["SR001156", "75 × 45 × 1.2 mm", "Lame supérieure"],
+            ["SR001151", "90 × 60 × 1.0 mm", "Lame supérieure"],
+            ["SR001152", "105 × 70 × 1.2 mm", "Lame supérieure"],
+            ["SR001157", "130 × 80 × 1.2 mm", "Lame supérieure"],
+            ["SR001158", "150 × 75 × 2.0 mm", "Lame supérieure"],
+            ["SR001168", "70 × 28 × 12 mm", "Couteau inférieur"],
+            ["SR001169", "70 × 45 × 3 mm", "Couteau inférieur"],
+            ["SR001170", "70 × 45 × 20 mm", "Couteau inférieur"],
+            ["SR001182", "80 × 55 × 5 mm", "Couteau inférieur"],
+            ["SR001452", "80 × 60 × 10 mm", "Couteau inférieur"],
+            ["SR001183", "105 × 60 × 15 mm", "Couteau inférieur"],
+            ["SR001184", "108 × 80 × 8 mm", "Couteau inférieur"],
+            ["SR001185", "150 × 120 × 15 mm", "Couteau inférieur"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Lames supérieures et inférieures supplémentaires",
+          title: "Lames supérieures et inférieures supplémentaires",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de lame / Référence de la plate-forme",
+          ],
+          rows: [
+            [
+              "SR001801",
+              "75 × 25.4 × 1.0 / 1.2 mm",
+              "Couteau supérieur — Tidland / Atlas",
+            ],
+            [
+              "SR001802",
+              "70 × 25.4 × 8 / 10 mm",
+              "Enclume inférieure — Tidland / Atlas",
+            ],
+            [
+              "SR001803",
+              "100 × 32 × 1.2 / 1.5 mm",
+              "Lame supérieure — Kampf / Dusenbery",
+            ],
+            [
+              "SR001804",
+              "80 × 60 × 16 / 20 mm",
+              "Enclume inférieure — Kampf / Dusenbery",
+            ],
+            [
+              "SR001805",
+              "118 × 80 × 1.2 / 2.0 mm",
+              "Lame supérieure — Goebel / BHS / Agnati",
+            ],
+            [
+              "SR001806",
+              "100 × 70 × 16 / 20 mm",
+              "Enclume inférieure — Goebel / BHS / Agnati",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Diamètre extérieur des lames circulaires : 20–300 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "52100, D2, M2 HSS, acier ASP23 PM ou carbure de tungstène monobloc",
+        },
+        {
+          label: "Applications",
+          value:
+            "BOPP, BOPET, CPP, film étirable et ruban adhésif sensible à la pression",
+        },
+        {
+          label: "Revêtements en option",
+          value:
+            "TiN, DLC, PTFE (Téflon), CrAlN ou céramique, selon le matériau de base de la lame",
+        },
+        {
+          label: "Fixation",
+          value: "Porte-lames rotatifs ou porte-lames à coupe par écrasement",
+        },
+        {
+          label: "Tolérance d'épaisseur",
+          value: "±0.002 mm",
+        },
+        {
+          label: "Faux-rond",
+          value: "≤0.02 mm T.I.R.",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Tidland",
+      "Kampf",
+      "Atlas",
+      "Goebel",
+      "Windmöller & Hölscher",
     ],
     components: [
       {
-        id: "multi-material-compatibility",
-        tag: "METALLURGIE",
-        title: "Aciers à outils pour applications spécifiques",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Options en acier et en carbure adaptées à chaque application",
         description:
-          "Matériau adapté à votre bande. acier au carbone 52100 pour les revêtements de films d'emballage standard et les substrats revêtus ; acier rapide M2 pour les films plastiques abrasifs ; PM ASP23 ou carbure solide pour les revêtements antiadhésifs revêtus de silice et les stratifiés renforcés de fibre de verre. Toutes les qualités sont stockées et prêtes à être livrées rapidement par les OEM.",
+          "De la série 52100 et D2 à la série M2 HSS, en passant par l’acier PM et le carbure monobloc, Sureay propose un choix de matériaux adaptés à la découpe courante de films ainsi qu’aux conditions d’usure plus exigeantes.",
       },
       {
-        id: "advanced-coating-systems",
-        tag: "RETENUE DES BORDURES",
-        title: "Revêtements PVD anti-adhérents",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Arêtes rectifiées avec précision et revêtements en option",
         description:
-          "Les revêtements TiN et DLC réduisent l'adhérence de la surface jusqu'à 80 %, éliminant ainsi l'accumulation d'adhésif sur les faces de la lame lors de la découpe de bandes PSA et de laminés adhésifs. Une friction réduite signifie un fonctionnement plus froid, une durée de vie des bords plus longue et moins d'arrêts de nettoyage par équipe.",
+          "Les arêtes de coupe rectifiées avec précision sont disponibles avec des revêtements au choix : TiN, DLC, PTFE (Téflon), CrAlN ou céramique, sélectionnés en fonction du matériau de base de la lame et du film ou de la bande à découper.",
       },
       {
-        id: "five-cutting-applications",
-        tag: "CAPACITÉ DU PROCESSUS",
-        title: "Géométries optimisées des bords",
+        id: "selection-3",
+        tag: "Application",
+        title: "Lames de rechange sur mesure et paires assorties",
         description:
-          "Profilés à simple biseau, à double biseau et à arête émoussée conçus pour les paires de cisaillement, la coupe à l'enclume d'écrasement/de marquage et la coupe au rasoir. Profilés pour votre vitesse de ligne et votre tension de bande - spécifiez la méthode de coupe et le substrat et nous adapterons la géométrie.",
+          "Commandez des lames de rechange individuelles ou des paires assorties (lame supérieure et inférieure) dont les alésages, les profils et les détails de montage sont adaptés à votre système de découpe existant.",
       },
     ],
-    dimensionLabels: {
-      col0: "Type de lame / Application",
-      col1: "OD (mm)",
-      col2: "ID (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions standard des paires de cisailles. Les lames supérieure (bombée) et inférieure (rainure d'enclume) sont fournies par paires assorties. Profils OD / ID et rainures personnalisés sur demande.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Quelle lame de rechange convient à ma découpeuse de film ou de ruban ?",
+          answer:
+            "Identifiez d'abord la méthode de découpe et la position de la lame. Les stations de cisaillement rotatives utilisent des arêtes supérieure et inférieure qui coopèrent ; les stations de découpe par écrasement pressent une lame contre une surface d'appui. La référence du support, l'alésage, le profil de coupe et les dimensions axiales déterminent la pièce de rechange. Les « lames de découpe pour films » et les « lames de découpe pour rubans » sont des appellations courantes dans les achats, mais c'est le dispositif de découpe installé qui détermine la pièce requise.",
+        },
+        {
+          question:
+            "Dans quels cas la résistance à l'usure doit-elle être un critère prioritaire lors du choix d'une lame de refendage ?",
+          answer:
+            "Une résistance accrue à l’usure mérite d’être prise en compte lorsque le tranchant s’use progressivement dans le cadre d’une configuration de découpe par cisaillement par ailleurs adaptée. Lorsque l’écaillage ou les dommages par contact prédominent, le choix du matériau doit également tenir compte de la ténacité et du support de la lame. Comparez le tranchant usagé, la bande traitée et la paire de lames existante avant de choisir le matériau pour une commande de remplacement.",
+        },
+        {
+          question:
+            "Pourquoi de la colle s'accumule-t-elle sur les lames des découpeuses de ruban adhésif ?",
+          answer:
+            "La colle peut se transférer du ruban sur la lame lors du contact. Le profil de la lame, la surface de contact et l’état de finition de la surface influencent la facilité avec laquelle les résidus s’accumulent. Vérifiez où ils s’accumulent et comparez le biseau et les faces de travail actuels avec la structure du ruban. Un profil adapté, une surface polie ou un revêtement optionnel peuvent alors être envisagés pour ce matériau de lame et cette colle.",
+        },
+        {
+          question:
+            "Quelles sont les causes possibles d’un endommagement des arêtes sur une paire de lames de cisaillement-découpe ?",
+          answer:
+            "Un contact involontaire entre les arêtes des lames supérieure et inférieure lors de l'engagement peut endommager un ensemble de cisaillement-découpe. Inspectez les deux arêtes, le mouvement d'engagement du porte-lame et les positions des lames installées. Comparez les dommages localisés à l'usure progressive avant de changer de matériau, afin que le remplacement réponde à l'état observé plutôt que de reproduire un problème de contact ou de réglage.",
+        },
+        {
+          question:
+            "Dans quelle mesure l'épaisseur de la lame, l'alésage et la hauteur de la cuvette influent-ils sur l'ajustement lors du remplacement ?",
+          answer:
+            "L'alésage permet de positionner la lame sur son support, l'épaisseur de la lame décrit la section du matériau, et la hauteur de la cuvette décrit le profil axial global d'une lame bombée. Associées à la largeur de la bague inférieure et aux détails de montage, ces dimensions déterminent le point de rencontre des arêtes de coupe. Notez-les séparément lors du remplacement d'une lame dans un support existant.",
+        },
+        {
+          question:
+            "Dois-je remplacer à la fois les lames de découpe supérieures et inférieures ?",
+          answer:
+            "Vous pouvez commander une lame de rechange unique lorsque la lame d'appui conservée reste en état de marche et que sa géométrie est connue. Inspectez les deux arêtes de coupe, les faces de montage et les diamètres de travail. Pour une paire complète, identifiez séparément les positions supérieure et inférieure afin que leurs dimensions et le choix des matériaux puissent être pris en compte conjointement, y compris tout réaffûtage antérieur.",
+        },
+        {
+          question:
+            "Sureay peut-il fabriquer des lames de découpe de film sur mesure à partir d’un dessin ou d’un échantillon ?",
+          answer:
+            "Oui. Sureay peut fournir des alésages, des sections de lame, des caractéristiques de montage et des profils de coupe sur mesure. Un plan permet de définir les nouvelles dimensions souhaitées ; un échantillon usé aide à identifier la géométrie installée et toute perte de matière due à l'utilisation ou à l'affûtage. Veuillez inclure les détails de la lame d'appui ou de l'enclume pour former une paire fonctionnelle et indiquer la quantité requise pour chaque configuration.",
+        },
+      ],
+      company: [],
     },
-    standardDimensions: [
-      {
-        spec: "Top Blade — Tidland / Atlas",
-        od: "75",
-        id: "25.4",
-        thickness: "1.0 / 1.2",
-      },
-      {
-        spec: "Bottom Anvil — Tidland / Atlas",
-        od: "70",
-        id: "25.4",
-        thickness: "8 / 10",
-      },
-      {
-        spec: "Top Blade — Kampf / Dusenbery",
-        od: "100",
-        id: "32",
-        thickness: "1.2 / 1.5",
-      },
-      {
-        spec: "Bottom Anvil — Kampf / Dusenbery",
-        od: "80",
-        id: "60",
-        thickness: "16 / 20",
-      },
-      {
-        spec: "Top Blade — Goebel / BHS / Agnati",
-        od: "118",
-        id: "80",
-        thickness: "1.2 / 2.0",
-      },
-      {
-        spec: "Bottom Anvil — Goebel / BHS / Agnati",
-        od: "100",
-        id: "70",
-        thickness: "16 / 20",
-      },
-    ],
     relatedBladeIds: [
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
       "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
       "nonwoven-slitter-knives",
     ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 150,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Quelle tolérance d'épaisseur dois-je spécifier pour les lames d'une pile d'arbres multi-couteaux ?",
-          answer:
-            "Pour la découpe en cisaillement de films et de feuilles souples, spécifiez une tolérance d'épaisseur de ±0,002 mm et un faux-rond de T.I.R. ≤20,02 mm. Une erreur de 0,005 mm par lame se répercute sur une pile de 12 lames, produisant une déviation visible de la largeur de la fente et des pics de tension de la bande. Nous rectifions chaque lame selon ces tolérances et les vérifions sur une MMT avant l'expédition.",
-        },
-        {
-          question:
-            'Qu\'est-ce que le "rapport de sur-vitesse" pour les couteaux de cisaillement supérieur/inférieur et quelle est son importance ?',
-          answer:
-            "Le rapport de survitesse est le différentiel intentionnel de vitesse de rotation entre l'arbre du couteau supérieur et l'arbre de l'enclume inférieure, généralement fixé à 2-5% au-dessus de la vitesse de la bande. Ce différentiel crée une action de micro-cisaillement au point de coupe, produisant un bord plus net et réduisant l'accumulation de chaleur par rapport à une coupe purement tangentielle. Lorsque les rapports de survitesse sont plus élevés, la qualité de la coupe s'améliore, mais l'usure des bords s'accélère ; lorsque le différentiel est nul, la lame se comporte davantage comme un broyeur. L'équipementier de votre refendeuse spécifie le rapport de survitesse prévu ; nous fournissons des paires assorties optimisées pour ce réglage.",
-        },
-        {
-          question:
-            "Comment éviter le transfert et l'accumulation de film adhésif sur les faces des lames de refendage ?",
-          answer:
-            "L'accumulation d'adhésif sur les faces des lames augmente la friction, accroît la température de la bande et provoque une contamination par transfert de matière. Nous proposons des revêtements PVD TiN (nitrure de titane) et DLC (carbone de type diamant) qui réduisent l'adhérence de la surface jusqu'à 80 %, prolongeant ainsi les intervalles de fonctionnement propre sur les applications de refendage de rubans sensibles à la pression et de laminés adhésifs.",
-        },
-        {
-          question:
-            "Quand dois-je passer de l'acier D2 à l'acier à métallurgie des poudres (PM) pour la découpe de films souples ?",
-          answer:
-            "L'acier PM (ASP23, ASP52) est recommandé pour la découpe de substrats flexibles très abrasifs tels que les films d'emballage renforcés de fibre de verre, les films anti-adhésifs enduits de silice ou les films barrières remplis de céramique. Ces matériaux dépassent le plafond d'abrasion du D2 en un seul cycle de production grâce aux particules minérales dures de la charge. Les qualités PM offrent une distribution uniforme du carbure et une durée de vie des arêtes de 50 à 80 % plus longue sur les substrats flexibles très abrasifs.",
-        },
-        {
-          question:
-            "Quel est le meilleur revêtement de surface pour la découpe à grande vitesse de rubans adhésifs sensibles à la pression ?",
-          answer:
-            "Le revêtement PVD DLC (diamond-like carbon) est la meilleure spécification pour la découpe de bandes de mousse doublement revêtues et d'adhésifs de transfert. Il réduit l'angle de contact sur la face de la lame d'environ 35° par rapport au D2 non revêtu, ce qui permet de maintenir un glissement constant pendant des cycles de production de 8 à 12 heures sans arrêt de nettoyage. Le TiN est efficace pour les rubans de masquage simple face et les étiquettes légèrement adhésives à un coût de revêtement inférieur.",
-        },
-        {
-          question:
-            "Sureay peut-il fournir des paires de couteaux supérieurs et inférieurs appariés et vérifiés pour un jeu de cisaillement spécifié ?",
-          answer:
-            "Oui. Les paires de cisailles appariées - lame supérieure dépouillée et lame inférieure à enclume rainurée - sont fournies avec un jeu couteau à couteau pré-vérifié par rapport aux spécifications de votre substrat. Nous enregistrons le diamètre extérieur, le diamètre intérieur, l'épaisseur et le jeu de cisaillement prévu pour chaque paire appariée sur une fiche technique livrée avec l'outillage, ce qui permet aux opérateurs de la ligne de reproduire le réglage du jeu à chaque réinstallation.",
-        },
-        {
-          question:
-            "Quelle est la géométrie du bord de la lame recommandée pour la refente d'un tissu non tissé soufflé par fusion sans effilochage des fibres ?",
-          answer:
-            "Pour les tissus non tissés soufflés par fusion et filés-liés (8-80 GSM), spécifiez un angle de râteau positif (15°-20°) avec une finition de surface Ra ≤0,4 μm. Cette géométrie permet de cisailler proprement la structure fibreuse lâche sans déplacement latéral de la fibre qui provoque des bords effilochés. Pour le meltblown très léger (<15 GSM), un revêtement ESD (décharge électrostatique) optionnel empêche l'attraction des fibres induite par l'électricité statique sur la face de la lame.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
-        },
-        {
-          question:
-            "Qu'est-ce qui différencie le traitement thermique de Sureay des autres produits moins chers ?",
-          answer:
-            "Contrairement à la trempe standard, chaque lame Sureay subit un traitement cryogénique profond après la trempe sous vide. Ce traitement transforme l'austénite retenue en martensite, ce qui augmente la résistance à l'usure jusqu'à 40 % et garantit une dureté uniforme sur l'ensemble du tranchant.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les lames de remplacement OEM standard sont généralement expédiées sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question:
-            "Quelles sont les certifications de qualité détenues par Sureay et pouvez-vous fournir les rapports d'essais des matériaux ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle et un certificat de lot traitement thermique. Pour la qualification OEM, des rapports dimensionnels CMM complets et des certificats d'aciérie sont disponibles sur demande.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 lames) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables. Pour les profils personnalisés, des échantillons d'approbation dimensionnelle sont produits avant le début de la production complète - aucun engagement d'outillage avant que l'ajustement ne soit confirmé.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Procurez-vous des lames de refente de papier de rechange pour votre rebobineuse, avec des lames bombées ou à bord plat et des configurations de lames inférieures adaptées. Envoyez votre plan ou votre échantillon ainsi que la qualité du papier à Sureay pour obtenir un devis sur mesure pour votre paire de lames.",
     id: "rotary-slitter-knives-paper",
-    name: "Couteaux coupe-papier",
-    fullName:
-      "Couteaux coupeurs de papier et de papier tissu pour lignes de transformation à grande vitesse",
+    seoDescription:
+      "Lames de découpeuses pour le papier Papier tissue, le papier kraft et le papier couché. Associez des lames supérieures bombées ou plates à des lames inférieures correspondantes en acier à outils ou à pointe en carbure.",
+    name: "Couteaux de refente pour papier",
+    fullName: "Couteaux de refente pour papier ouate, kraft et couché",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Couteaux coupe-papier",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Transformation du papier",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
-    ],
+    categoryDisplay: "Couteaux de refente pour papier",
+    image: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Couteaux coupe-papier rectifiés pour la cellulose, et non adaptés d'un outillage pour films. Paires de cisailles supérieures et inférieures appariées en D2, M2 HSS ou 52100, tenues à ±0,002mm sur l'épaisseur et ≤0,02mm de faux-rond, avec un jeu pré-réglé selon le support traité : 0,02–0,05mm pour le papier tissu, 0,05–0,10mm pour le kraft. Conçus pour 600 m/min sur les lignes de papier tissu. Envoyez-nous un plan, une lame usée ou simplement le modèle de votre machine et nous confirmerons la compatibilité.",
-    fullDescription:
-      "Les lignes de transformation du papier exigent des couteaux de refendeuse qui fournissent des coupes régulières, sans poussière de fibre, tout au long des cycles de production de plusieurs équipes. Les couteaux rotatifs de refente Sureay de qualité papier sont affûtés avec précision à partir d'acier à outils D2 (pour le papier et le carton standard) ou d'acier à grande vitesse M2 (pour les papiers à grande vitesse et les papiers spéciaux) avec des tolérances dimensionnelles exactes qui empêchent l'oscillation de la lame et garantissent une qualité de fente uniforme.\n\n## Métallurgie spécifique au papier\n\nContrairement à la découpe de films plastiques ou de feuilles métalliques, la transformation du papier soumet le bord de la lame à une usure abrasive continue due aux fibres de cellulose, aux agents d'encollage et aux charges minérales (carbonate de calcium, kaolin). Nous sélectionnons des alliages de lames spécifiquement pour les applications du papier :\n\n**Acier à outils D2 (HRC 60-62):** Nuance standard pour le papier kraft, le carton et le carton ondulé. La teneur en chrome de 12 % offre une excellente résistance à l'abrasion contre les fibres riches en lignine et les charges minérales.\n\n**Acier à haute vitesse M2 (HRC 62-64):** Préféré pour la transformation du papier hygiénique et du papier de soie à haute vitesse lorsque la vitesse de la ligne dépasse 400 m/min. Le molybdène et les carbure de tungstène maintiennent la géométrie des arêtes sous la contrainte thermique de la coupe à très haute vitesse.\n\n**52100 Bearing Steel (HRC 58-60):** Option économique pour le papier journal standard, le papier magazine et la transformation de fibres recyclées de qualité inférieure où les taux d'usure sont modérés.\n\n**Carbure de Tungstène (Massif ou à Plaquette Brasée):** Le choix supérieur pour le papier couché à forte teneur en cendres, le papier d'art et le carton ondulé, où les charges minérales usent rapidement un tranchant en acier entre deux changements. Fourni en carbure massif sur les lames de petit diamètre, ou à plaquette brasée — une arête de carbure brasée sur un corps en acier — sur les lames de plus grand diamètre, lorsqu'un corps entièrement en carbure n'est pas rentable.\n\n## Coupe par cisaillement ou par écrasement pour le papier\n\nLa transformation du papier utilise deux méthodes principales de coupe :\n\n**Découpe par cisaillement (paires de couteaux supérieurs/inférieurs):** Deux couteaux circulaires tournant dans des directions opposées créent une action de cisaillement semblable à celle d'une paire de ciseaux. C'est la méthode standard pour les papiers couchés, le papier tissu et les emballages légers où l'arrachage des fibres et la production de poussière doivent être minimisés. Nous fournissons des paires appariées avec un jeu de cisaillement contrôlé (typiquement 0,02-0,05 mm pour le papier tissu, 0,05-0,10 mm pour le papier kraft).\n\n**Coupe par écrasement (couteau contre enclume):** Un couteau circulaire trempé écrase la bande de papier contre un rouleau d'enclume rainuré. Utilisé pour le carton ondulé lourd et les emballages multicouches où le maintien du jeu de cisaillement n'est pas pratique. La lame de l'enclume (position inférieure) est fabriquée avec une géométrie à rainures multiples qui comprime et fracture les fibres du papier.\n\n## Performance sans poussière de fibre\n\nLa poussière de fibre générée au bord de la fente contamine les stations de rembobinage des papeteries, dégrade la qualité des produits pour les papiers hygiéniques et les papiers de soie, et provoque des arrêts de nettoyage non planifiés. Nos couteaux de refendeuse pour papier sont affûtés avec précision pour obtenir une finition de surface Ra 0,2-0,4μm avec des angles de biseau contrôlés qui cisaillent proprement les faisceaux de fibres de cellulose plutôt que de les déchirer ou de les arracher. Cela permet de réduire la poussière de fibre en suspension dans l'air d'environ 60 à 70 % par rapport aux couteaux industriels standard.",
-    disambiguation:
-      "Vous découpez du film, du ruban adhésif ou de l'emballage souple ? Ces lames se trouvent sur notre page [Couteaux coupeurs de films et de bandes](/products/rotary-slitter-knives). Cette page ne couvre que les substrats papier.",
-    categoryCardAnchorText:
-      "Couteaux coupe-papier — papier tissu, kraft et papier couché",
+      "Lames de rechange pour découpeuses de papier destinées au papier Papier tissu, au papier kraft et au papier couché. Lames supérieures bombées ou plates et lames inférieures en acier ou en carbure, fabriquées sur plan.",
     link: "/products/rotary-slitter-knives-paper",
-    isFeatured: false,
-    compatibleMachines: [
-      "Atlas Converting",
-      "Tidland",
-      "Parkinson",
-      "Kampf",
-      "Laem System",
-      "Euromac",
-      "Goebel IMS",
-      "Fabio Perini",
-      "Körber",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 58–64 (steel) / HRA 90–92 (carbide)",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting (matched pairs), Crush Cutting (anvil pairs)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Ra 0.2–0.4μm (precision ground)",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.002mm | Runout: ≤0.02mm",
-      },
-      {
-        label: "Application",
+        label: "Dimensions",
         value:
-          "Papier tissue & Sanitary Paper, Kraft Paper, Corrugated Board, Coated Papers, Newsprint",
+          "Diamètre extérieur bombé 62–203 mm · Diamètre extérieur au fond 70–300 mm",
       },
+      {
+        label: "Matériau",
+        value:
+          "52100, D2, M2, ASP23, CPM 10V ou construction à pointe en carbure",
+      },
+      {
+        label: "Applications",
+        value: "Papier tissus, papier kraft, papier couché et papier recyclé",
+      },
+      {
+        label: "Fixation",
+        value:
+          "Lame supérieure montée sur arbre ou bride correspondante et face de coupe sur la lame inférieure",
+      },
+      {
+        label: "Dureté",
+        value:
+          "58–64 HRC pour les lames en acier ; 90–92 HRA pour les arêtes en carbure",
+      },
+      {
+        label: "Finition de surface",
+        value: "Faces rectifiées avec précision, Ra 0,2–0,4 μm",
+      },
+      {
+        label: "Tolérance d'épaisseur",
+        value: "±0.002 mm",
+      },
+      {
+        label: "Faux-rond",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Types de découpe",
+        value:
+          "Découpe par cisaillement avec des lames supérieure et inférieure appariées ou découpe par écrasement avec des paires d’enclumes",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lames de découpe pour papier d'Papier tissu et papier kraft",
+      sizeRange:
+        "Diamètre extérieur bombé 62–203 mm · Diamètre extérieur au fond 70–300 mm",
+      heroAlt:
+        "Paire de lames circulaires de découpeuse de papier montrant la lame supérieure et la bague inférieure",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-paper-detail.webp",
+        alt: "Lame de découpeuse de papier présentant la face de coupe rectifiée et l'alésage central",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Lames supérieures",
+          title: "Lames supérieures",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Profil ou référence",
+            "Hauteur du plateau",
+          ],
+          rows: [
+            ["SR001201", "90 × 60 × 1.2 mm", "Bombé", "Voir le schéma"],
+            ["SR001202", "130 × 80 × 1.5 mm", "Bombé", "Voir le schéma"],
+            [
+              "SR001203",
+              "150 × 80 × 2.5 mm",
+              "Convexe / Tidland Classe II",
+              "Voir le schéma",
+            ],
+            ["SR001204", "180 × 90 × 3.5 mm", "Bombé", "Voir le schéma"],
+            [
+              "SR001205",
+              "200 × 80 × 4.0 mm",
+              "Convexe / Tidland Classe III",
+              "9.25 mm",
+            ],
+            [
+              "SR001206",
+              "203 × 90 × 4.0 mm",
+              "Bielomatik 701.115",
+              "Voir le schéma",
+            ],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Couteaux inférieurs",
+          title: "Couteaux inférieurs",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Montage ou bord",
+            "Référence",
+          ],
+          rows: [
+            [
+              "SR001211",
+              "105 × 80 × 15 mm",
+              "Bride",
+              "Séries dimensionnelles DIENES",
+            ],
+            [
+              "SR001212",
+              "130 × 90 × 20 mm",
+              "Bride",
+              "Séries dimensionnelles DIENES",
+            ],
+            [
+              "SR001213",
+              "190 × 138 × 15 mm",
+              "Double tranchant",
+              "Tidland TID131393",
+            ],
+            [
+              "SR001214",
+              "130 × 100 × 30 mm",
+              "Double tranchant",
+              "Tidland TID133503",
+            ],
+            [
+              "SR001215",
+              "250 × 188 × 15 mm",
+              "Double tranchant",
+              "Tidland TID131395",
+            ],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Couteaux supplémentaires pour découpeuses de papier",
+          title: "Couteaux supplémentaires pour découpeuses de papier",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de lame / Référence de la plate-forme",
+          ],
+          rows: [
+            [
+              "SR001807",
+              "75 × 45 × 1.0 / 1.2 mm",
+              "Couteau supérieur (cisaillement)",
+            ],
+            ["SR001808", "70 × 45 × 10 / 8 mm", "Enclume inférieure"],
+            [
+              "SR001809",
+              "100 × 32 × 1.2 mm",
+              "Couteau supérieur (cisaillement)",
+            ],
+            ["SR001810", "80 × 60 × 20 / 16 mm", "Enclume inférieure"],
+            [
+              "SR001811",
+              "150 × 80 × 1.5 mm",
+              "Couteau supérieur (papier ouate)",
+            ],
+            ["SR001812", "108 × 80 × 20 / 18 mm", "Enclume inférieure"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value:
+            "Diamètre extérieur bombé 62–203 mm · Diamètre extérieur au fond 70–300 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "52100, D2, M2, ASP23, CPM 10V ou construction à pointe en carbure",
+        },
+        {
+          label: "Applications",
+          value: "Papier tissus, papier kraft, papier couché et papier recyclé",
+        },
+        {
+          label: "Fixation",
+          value:
+            "Lame supérieure montée sur arbre ou bride correspondante et face de coupe sur la lame inférieure",
+        },
+        {
+          label: "Dureté",
+          value:
+            "58–64 HRC pour les lames en acier ; 90–92 HRA pour les arêtes en carbure",
+        },
+        {
+          label: "Finition de surface",
+          value: "Faces rectifiées avec précision, Ra 0,2–0,4 μm",
+        },
+        {
+          label: "Tolérance d'épaisseur",
+          value: "±0.002 mm",
+        },
+        {
+          label: "Faux-rond",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Types de découpe",
+          value:
+            "Découpe par cisaillement avec des lames supérieure et inférieure appariées ou découpe par écrasement avec des paires d’enclumes",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Valmet",
+      "Voith",
+      "Tidland",
+      "Jagenberg",
+      "Bielomatik",
+      "E.C.H. Will",
     ],
     components: [
       {
-        id: "paper-metallurgy",
-        tag: "SCIENCE DES MATÉRIAUX",
-        title:
-          "Quelle nuance d'acier utiliser pour les couteaux coupe-papier ?",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Options de matériaux pour la transformation du papier",
         description:
-          "Les fibres de papier contiennent des charges minérales abrasives (carbonate de calcium, kaolin, dioxyde de titane) qui émoussent rapidement les aciers à couteaux standard. Nos nuances D2 et M2 HSS sont spécifiquement traitées thermiquement pour les applications de transformation du papier, offrant une durée de vie des arêtes de 40 à 60 % supérieure à celle des couteaux de refendeurs d'usage général sur les substrats de papier couché et rempli.",
+          "Les options en acier à outils, en acier HSS, en acier PM et à arête en carbure offrent aux transformateurs de papier un choix de matériaux adaptés aux qualités Papier tissu, kraft, couchées et recyclées.",
       },
       {
-        id: "shear-clearance",
-        tag: "PRÉCISION DE COUPE",
-        title:
-          "Quel jeu de cisaillement stoppe la poussière de fibre au bord de la fente ?",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Épaisseur et faces de coupe rectifiées avec précision",
         description:
-          "Les paires de cisailles supérieures et inférieures appariées sont vérifiées au préalable en fonction des spécifications de dégagement du papier tissu (0,02-0,05 mm pour le papier tissu ultraminces, 0,05-0,10 mm pour le papier kraft). Ce dégagement contrôlé permet de cisailler proprement les faisceaux de fibres de cellulose sans les déchirer ni générer de poussières de fibres en suspension dans l'air qui contaminent les stations de rembobinage et dégradent la qualité des produits.",
+          "Les lames de découpe pour papier peuvent être rectifiées avec précision selon l'épaisseur et la finition de la face de travail que vous spécifiez, pour la position supérieure ou inférieure dans la paire de lames de coupe.",
       },
       {
-        id: "bore-locking-options",
-        tag: "ADAPTATION MACHINE",
-        title:
-          "Quelles options d'alésage, de verrouillage et de biseau sont disponibles ?",
+        id: "selection-3",
+        tag: "Application",
+        title: "Jeux de lames supérieures et inférieures sur mesure",
         description:
-          "Les couteaux coupe-papier sont livrés avec des alésages lisses, à clavette ou à baïonnette adaptés à votre arbre, et se verrouillent en place par rainure de clavette, vis de blocage, excentrique à clavette ou serrage excentrique sans clavette — selon ce qu'utilise votre découpeuse ou enrouleuse. Les lames supérieures sont rectifiées avec un profil bombé à simple biseau de 15°–20°, avec un biseau composé (à deux étages) ou un meulage concave du dos disponible lorsque la durabilité du tranchant importe plus qu'un angle d'attaque extrêmement fin. Envoyez-nous votre couteau actuel ou le plan de votre arbre, et nous confirmons l'alésage, le verrouillage et le biseau avant de couper l'acier, afin que la lame de remplacement se positionne, se verrouille et coupe exactement comme l'originale.",
+          "Les alésages sur mesure, les profils bombés, les brides de couteau inférieur et les faces de coupe permettent le remplacement de couteaux individuels ou l’installation de jeux complets sur les rebobineuses existantes.",
+        relatedBladeIds: ["slitter-rewinder-bottom-knives"],
       },
     ],
-    steelGrades: {
-      intro:
-        "Les fibres de papier usent une lame différemment du film ou du feuillard — la charge abrasive provient des charges minérales de la pâte, et non de la fibre elle-même. Les nuances ci-dessous couvrent la gamme que nous proposons pour le papier, le papier tissu et le carton.",
-      rows: [
-        {
-          grade: "D2 Tool Steel",
-          hardness: "HRC 58–61",
-          bestFor:
-            "Papier kraft standard, carton plat et transformation du carton ondulé — notre nuance de papier par défaut.",
-          tradeoff:
-            "Bon rapport qualité-prix polyvalent ; la durée de vie du tranchant diminue plus rapidement que celle du M2 ou du carbure sur les papiers fortement chargés ou couchés.",
-        },
-        {
-          grade: "Acier à Haute Vitesse M2",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Papier papier tissu et papier hygiénique à grande vitesse au-delà de 400 m/min, où le tranchant doit conserver sa géométrie sous cyclage thermique.",
-          tradeoff:
-            "Coûte plus cher que le D2 ; l'intervalle de réaffûtage reste plus court que celui du carbure sur une pâte abrasive.",
-        },
-        {
-          grade: "Acier à Roulement 52100",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Papier journal standard, papier magazine et fibres recyclées de qualité inférieure où les taux d'usure sont modérés.",
-          tradeoff:
-            "Résistance à l'abrasion inférieure à celle du D2 sur les papiers chargés ou couchés — à réserver de préférence à une pâte plus propre.",
-        },
-        {
-          grade: "Carbure de Tungstène",
-          hardness: "HRA 90–92",
-          bestFor:
-            "Papier couché à forte teneur en cendres, papier d'art et carton ondulé, où les charges minérales usent rapidement un tranchant en acier entre deux changements. Fourni en version massive ou à plaquette brasée.",
-          tradeoff:
-            "Coût unitaire le plus élevé et plus fragile aux chocs que l'acier à outils — nécessite une alimentation régulière et un alignement précis pour éviter l'écaillage du tranchant.",
-        },
-      ],
-      outro:
-        "Les couteaux coupe-papier en carbure massif et à plaquette brasée sont tous deux disponibles. Indiquez-nous votre pâte (vierge, recyclée, couchée ou chargée), la vitesse de ligne et votre intervalle de réaffûtage actuel, et nous confirmerons la nuance qui réduit le coût total par coupe, pas seulement le prix affiché.",
-    },
-    dimensionLabels: {
-      col0: "Type de lame",
-      col1: "Diamètre extérieur",
-      col2: "Diamètre intérieur",
-      col3: "Épaisseur",
-      caption:
-        "* Dimensions standard pour la transformation du papier. Lames supérieures (profil bombé pour la coupe par cisaillement) et lames inférieures (enclume rainurée pour la coupe par écrasement). Nous fabriquons des lames coupe-papier et des lames d'enclume d'environ 50–320mm de diamètre extérieur, 20–100mm d'alésage et 0.8–20mm d'épaisseur (des lames supérieures bombées fines jusqu'aux lourdes enclumes rainurées) — en dehors des trois jeux ci-dessus, envoyez-nous le modèle de votre machine et nous confirmerons la correspondance la plus proche ou une découpe selon vos dimensions.",
-    },
-    standardDimensions: [
-      {
-        spec: "Top Blade (Shear)",
-        od: "75 mm",
-        id: "45 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "70 mm",
-        id: "45 mm",
-        thickness: "10 / 8 mm",
-      },
-      {
-        spec: "Top Blade (Shear)",
-        od: "100 mm",
-        id: "32 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "80 mm",
-        id: "60 mm",
-        thickness: "20 / 16 mm",
-      },
-      {
-        spec: "Top Blade (Papier tissue)",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "108 mm",
-        id: "80 mm",
-        thickness: "20 / 18 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "papier tissue-log-saw-blades",
-      "corrugated-slitter-scorer-blades",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 280,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Quelle qualité de matériau dois-je utiliser pour la transformation de papier tissu à grande vitesse (500 m/min) ?",
+            "Sureay peut-il reproduire des lames de découpeuse de papier pour mon rebobineur actuel ?",
           answer:
-            "Spécifiez l'acier rapide M2 à HRC 62-64 pour la transformation du papier tissu à plus de 400 m/min. Le molybdène et les carbure de tungstène de l'acier M2 maintiennent la géométrie des arêtes lors des cycles thermiques générés par la coupe à très haute vitesse, ce qui permet d'obtenir une durée de vie de campagne de 2 à 3 fois supérieure à celle de l'acier D2 pour les qualités de papier tissu légers (12-18 GSM).",
+            "Oui. Un dessin ou un échantillon permet de déterminer l'alésage, le profil et le mode de montage d'une lame supérieure ou inférieure de rechange. Indiquez la qualité du papier et les dimensions de la lame d'appariement. La référence de la pièce d'origine permet de distinguer les nouvelles dimensions prévues de celles d'un échantillon usé. Pour les ensembles à bride, à coupelle ou à bague remplaçable, consultez la rubrique [Lames inférieures pour découpeuses-rebobineuses](/products/slitter-rewinder-bottom-knives).",
         },
         {
           question:
-            "Comment éviter la contamination par la poussière de fibre sur le bord de la fente ?",
+            "Dans quels cas les papiers couchés ou chargés justifient-ils l'utilisation de lames de découpe en acier HSS ou en carbure ?",
           answer:
-            "La poussière de fibre est principalement causée par un jeu de cisaillement excessif (>0,10mm sur le papier tissu) ou un état de surface rugueux de la lame (Ra >0,6μm) qui déchire les faisceaux de fibres au lieu de les cisailler proprement. Spécifiez des paires de cisailles appariées avec un dégagement vérifié au préalable (0,02-0,05 mm pour le papier tissu, 0,05-0,10 mm pour le papier kraft) et une finition de surface Ra ≤0,4μm. Cela permet de réduire les poussières en suspension dans l'air de 60 à 70 % par rapport aux qualités de couteaux industriels standard.",
+            "Envisagez d’utiliser un matériau différent pour le tranchant lorsque la lame actuelle présente une usure progressive sur le type de papier concerné. La teneur en revêtement ou en charge, l’état de la contre-lame et les ébréchures observées influencent tous cette décision. Comparez la résistance à l’usure avec le comportement du tranchant au sein de la paire existante, en tenant compte de la stabilité du montage et du réglage de la découpe dans votre évaluation.",
         },
         {
           question:
-            "Dois-je utiliser la découpe par cisaillement ou la découpe par écrasement pour la transformation du carton ondulé ?",
+            "Quelles sont les causes de la formation de poussière de papier ou de bords irréguliers lors du refendage ?",
           answer:
-            "Pour le carton ondulé (cannelure B/C/E), le découpage par écrasement contre un rouleau d'enclume rainuré est la méthode standard. La lame de l'enclume comprime et rompt proprement les fibres du papier sans qu'il soit nécessaire de maintenir un jeu de cisaillement précis. La découpe par cisaillement est réservée aux papiers couchés légers et aux papier tissu pour lesquels l'arrachement des fibres doit être réduit au minimum. Pour les applications sur carton ondulé supérieures à 200 m/min, spécifiez les lames à enclume carbure de tungstène pour résister à l'usure par compression des cartons multiplis.",
+            "La structure du papier, l'état de la lame d'appui, la stabilité du support et le réglage de la découpe peuvent affecter le bord même lorsque la lame supérieure est bien affûtée. Inspectez les deux bords de coupe et comparez l'échantillon découpé aux réglages de production normaux. Noter la qualité du papier et les réglages permet de distinguer les changements au niveau du matériau ou du réglage de l'usure de la paire de lames.",
         },
         {
           question:
-            "Quelle est la fréquence de réaffûtage des couteaux de découpeurs de papier et combien de réaffûtages sont possibles ?",
+            "Les lames de découpe supérieure et inférieure doivent-elles être remplacées simultanément ?",
           answer:
-            "Les couteaux des refendeuses de papier des lignes de transformation du papier tissu (400-600 m/min) doivent généralement être réaffûtés toutes les 40-60 heures de fonctionnement en raison des vitesses de coupe élevées et des charges minérales abrasives contenues dans le papier tissu. Pour la transformation du papier kraft et du carton (200-300 m/min), l'intervalle de réaffûtage s'étend à 80-120 heures. Les couteaux M2 HSS et D2 peuvent être réaffûtés 4 à 6 fois avant que le diamètre extérieur ne tombe en dessous du diamètre opérationnel minimum. Nous proposons un service de réaffûtage avec revérification de la dureté et contrôle dimensionnel CMM inclus.",
+            "Elles peuvent être commandées séparément lorsque le composant conservé est en bon état et que la géométrie de travail est connue. Vérifiez la face de coupe inférieure ainsi que le bord supérieur. Si l’une des lames a été réaffûtée, vérifiez ses dimensions restantes avant de choisir une lame de rechange unique ou de commander une paire complète assortie.",
         },
         {
           question:
-            "Quelle est la cause de la qualité inégale des bords de fente sur toute la largeur de la bande de papier ?",
+            "Les lames bombées, les lames supérieures et les lames mâles correspondent-elles à la même pièce ?",
           answer:
-            "Une qualité de fente inégale (coupe nette d'un côté, traction de la fibre de l'autre) indique un montage inégal de la lame ou une dilatation thermique différentielle sur l'arbre. Vérifiez que tous les couteaux sur l'arbre sont rectifiés avec une tolérance d'épaisseur de ±0,002 mm et que le faux-rond de l'arbre est ≤0,02 mm T.I.R. La dilatation thermique peut être atténuée en utilisant une métallurgie adaptée (tous les D2 ou tous les M2) sur l'ensemble du jeu de couteaux, garantissant des coefficients de dilatation thermique uniformes pendant le fonctionnement à grande vitesse.",
+            "Ces noms désignent souvent l’élément supérieur d’une paire de cisailles-découpeuses. Le terme « bombé » décrit la forme axiale, tandis que « supérieur » et « mâle » indiquent la position de la lame. Il existe également des lames à face plate. Comparez le profil réel, le mode de montage et la relation avec la lame inférieure afin d’identifier la pièce de rechange appropriée à partir de ces termes d’achat.",
+        },
+        {
+          question:
+            "Pourquoi l'épaisseur de la lame et la hauteur de la cuvette sont-elles indiquées séparément ?",
+          answer:
+            "L'épaisseur de la lame correspond à la section du matériau ; la hauteur de bombage correspond au profil axial global de la lame. Deux lames bombées peuvent partager le même diamètre extérieur et le même alésage, mais présenter des arêtes de coupe positionnées différemment. Le fait de distinguer ces dimensions permet d'assurer la compatibilité de la lame de rechange avec le porte-lame et la disposition de la lame inférieure existants, tout en préservant la position prévue de l'arête de coupe.",
+        },
+        {
+          question:
+            "Quand faut-il réaffûter ou remplacer les lames de découpeuses de papier ?",
+          answer:
+            "Le réaffûtage est indiqué lorsque la géométrie de coupe usée peut être restaurée dans les limites des dimensions autorisées de la lame. Inspectez le tranchant, les faces de travail et l'alignement par rapport à la contre-lame avant de prendre une décision. Le plan de la lame et les spécifications de la machine définissent la géométrie résiduelle admissible. Le remplacement est indiqué lorsque des dommages ou une perte dimensionnelle empêchent la restauration de cette géométrie.",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay peut-il fournir des couteaux compatibles avec notre découpeuse/enrouleuse Atlas Converting ou Kampf existante ?",
-          answer:
-            "Oui, envoyez-nous votre échantillon de couteau actuel ou le numéro de modèle de votre machine. Nous confirmerons le diamètre extérieur, le diamètre intérieur, le profil d'alésage et l'épaisseur de la lame, et nous fournirons des couteaux de remplacement direct fabriqués selon les spécifications OEM. Des modèles de rainures personnalisés pour les rouleaux d'enclume sont disponibles pour des applications spécifiques de transformation du carton ondulé et du carton.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les lames de remplacement OEM standard sont généralement expédiées sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 lames) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables. Pour les profils personnalisés, des échantillons d'approbation dimensionnelle sont produits avant le début de la production complète - aucun engagement d'outillage avant que l'ajustement ne soit confirmé.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "groove-bottom-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Procurez-vous des lames de refendage de remplacement pour feuilles de cuivre et d’aluminium, avec des largeurs et des alésages sur mesure, ainsi que des entretoises adaptées à votre ensemble d’arbres. Envoyez à Sureay vos plans et votre tableau des largeurs de refendage pour obtenir un devis correspondant à l’outillage dont vous avez besoin.",
     id: "metal-foil-strip-slitter-knives",
-    name: "Coupeuses de bobines et de bandes",
-    fullName:
-      "Couteaux rotatifs de précision pour le refendage de bandes métalliques, de bobines et de feuilles de faible épaisseur",
+    name: "Couteaux de refente pour feuilles de cuivre et d’aluminium",
+    fullName: "Couteaux de refente pour feuilles de cuivre et d’aluminium",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Couteaux à refendre les bandes de métal",
+    categoryDisplay:
+      "Couteaux de refente pour feuilles de cuivre et d’aluminium",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Traitement des métaux",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
-    ],
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Couteaux circulaires de haute précision pour les centres de service des métaux et les laminoirs à froid. Acier à outils ASP23/ASP52 PM et carbure de tungstène massif rectifié avec une tolérance d'épaisseur stricte de ±0,001 mm. Conçus pour la refente en bande sans bavure des bandes et bobines d'aluminium, des bandes de cuivre, de l'acier inoxydable et de l'acier au silicium à grains orientés.",
-    fullDescription:
-      "Le refendage de précision de bandes et de feuilles métalliques exige des performances métallurgiques et une précision dimensionnelle qui dépassent de loin les applications de cisaillage standard. Lors du traitement de métaux de faible épaisseur (0,01 mm à 1,5 mm), même un défaut microscopique de la lame ou un écart d'épaisseur induira une cambrure (arc latéral), des bavures sur les bords et des bobines rejetées. Les lames Sureay couteaux rotatifs de refente sont rectifiées avec précision à ±0,001 mm de tolérance d'épaisseur avec un faux-rond total indiqué (T.I.R.) ≤0,01 mm, ce qui garantit un alignement parfait sur les piles d'arbres multi-couteaux.\n\n## Métallurgie avancée pour les métaux minces\n\nLe refendage de différents alliages métalliques nécessite des matériaux de lame spécifiques pour éviter l'émoussage rapide, l'écaillage des arêtes ou le grippage du matériau (soudure à froid).\n\n**ASP23 Powder Metallurgy (PM) Steel:** Une amélioration considérable par rapport au D2 conventionnel. Sa structure de carbure ultrafine et uniforme offre une durée de vie de 3 à 5 fois plus longue sur les feuilles d'aluminium d'emballage, les bandes de laiton et l'acier au carbone de faible épaisseur en général, sans micro-écaillage.\n\n**Acier ASP52 PM:** Conçu pour les matériaux à haute résistance. Avec une teneur en vanadium de 11 %, l'acier ASP52 offre la résistance extrême à l'abrasion requise pour le refendage des bandes d'acier inoxydable dur, de l'acier au silicium à grains orientés (noyaux de transformateurs) et du cuivre au béryllium.\n\n**Carbure de tungstène solide:** La spécification ultime pour les feuilles ultra-minces (<0,05 mm) où les bords tranchants et sans bavure sont obligatoires pendant des campagnes de production prolongées et à grande vitesse.\n\n## Lutte contre l'erreur de perçage cumulée\n\nSur les lignes de découpe en bande, 10 à 40 couteaux circulaires peuvent être empilés sur un seul arbre. L'erreur d'épaisseur de chaque couteau se cumule : une erreur de ±0,003 mm par lame entraîne une erreur massive de ±0,060 mm sur une pile de 20 couteaux, ce qui garantit des largeurs de bobines hors normes. Nous rectifions chaque couteau de refendage de qualité métallique et l'entretoise correspondante selon une tolérance d'épaisseur stricte de ±0,001 mm, en les vérifiant sur un équipement CMM pour garantir l'absence d'erreur cumulative.\n\n## Finition de surface anti-givrage\n\nLors de la refente de métaux non ferreux comme l'aluminium et le cuivre doux, la poussière de métal a tendance à adhérer à la face de la lame (grippage), ce qui raye gravement la surface des bobines refendues. Les couteaux de refendage de métaux Sureay sont dotés d'une finition latérale hautement polie et recouverte d'un miroir (Ra ≤0,02μm) qui réduit drastiquement les frottements et empêche l'adhésion des matériaux, garantissant des bords de bobine immaculés.",
+      "couteaux rotatifs de refentes de rechange pour les feuilles de cuivre et d’aluminium. Options en carbure, en acier à outils et en acier PM, avec alésages, largeurs et entretoises adaptées sur mesure.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Kampf",
-      "Sundwig",
-      "GOEBEL IMS",
-      "Fagor Arrasate",
-      "Camu",
-      "Heinrich Georg",
-      "Kohler",
-      "Yuri Roll",
-      "Hohsen",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "ASP23, ASP52 (PM Steel), Solid Tungsten Carbide, D2/D3",
+        label: "Dimensions",
+        value: "OD 100–300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 64–67 (PM Steel) | HRA 91–92 (Carbide)",
+        label: "Matériau",
+        value: "D2, D3, M2, ASP2023, ASP2052 ou carbure de tungstène (WC-Co)",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Applications",
+        value: "Feuilles de cuivre et d’aluminium",
       },
       {
-        label: "Runout (T.I.R.)",
-        value: "≤ 0.01 mm",
+        label: "Dureté",
+        value: "64–67 HRC pour l’acier PM ; 91–92 HRA pour le carbure",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror-lapped Ra ≤0.02μm — prevents galling on Al/Cu",
+        label: "Tolérance d'épaisseur",
+        value: "±0.001 mm",
       },
       {
-        label: "Application",
-        value: "Aluminum Foil, SS Strips, Silicon Steel, Brass/Copper",
+        label: "Faux-rond",
+        value: "≤0.01 mm T.I.R.",
       },
+      {
+        label: "Finition de surface",
+        value: "Faces polies miroir, Ra ≤ 0,02 μm",
+      },
+      {
+        label: "Fixation",
+        value: "Lames montées sur mandrin avec alésage lisse ou cannelé",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Lames de découpe pour feuilles de cuivre et d’aluminium | Sur mesure",
+      sizeRange: "OD 100–300 mm",
+      heroAlt:
+        "Lame de refendage circulaire pour film, à face polie et alésage lisse",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-foil-strip-slitter-knives-keyway.webp",
+        alt: "Lame de refendage circulaire pour feuille métallique présentant une rainure de clavette dans l'alésage",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Couteaux de refente",
+          title: "Couteaux de refente",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Matériau",
+          ],
+          rows: [
+            ["SR001253", "130 × 60 × 1 mm", "carbure de tungstène"],
+            ["SR001254", "130 × 60 × 2 mm", "carbure de tungstène"],
+            ["SR001255", "130 × 60 × 3 mm", "carbure de tungstène"],
+            ["SR001256", "130 × 60 × 4 mm", "carbure de tungstène"],
+            ["SR001257", "130 × 66.68 × 1 mm", "carbure de tungstène"],
+            ["SR001258", "130 × 66.68 × 2 mm", "carbure de tungstène"],
+            ["SR001259", "130 × 66.68 × 3 mm", "carbure de tungstène"],
+            ["SR001260", "130 × 66.68 × 4 mm", "carbure de tungstène"],
+            ["SR001261", "130 × 66.68 × 5 mm", "carbure de tungstène"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Autres dimensions de lames pour feuilles et bandes",
+          title: "Autres dimensions de lames pour feuilles et bandes",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de lame / Référence de la plate-forme",
+          ],
+          rows: [
+            [
+              "SR001813",
+              "100 × 40 × 1.0 / 1.5 mm",
+              "Machine à refendre les feuilles minces",
+            ],
+            [
+              "SR001814",
+              "150 × 80 × 2.0 / 3.0 mm",
+              "Découpeuse de bandes de précision",
+            ],
+            [
+              "SR001815",
+              "200 × 120 × 3.0 / 4.0 mm",
+              "Découpeuse à bandes générale",
+            ],
+            [
+              "SR001816",
+              "250 × 150 × 4.0 / 5.0 mm",
+              "Silicium / Acier inoxydable",
+            ],
+            [
+              "SR001817",
+              "300 × 200 × 5.0 / 10.0 mm",
+              "Bande de forte épaisseur",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "OD 100–300 mm",
+        },
+        {
+          label: "Matériau",
+          value: "D2, D3, M2, ASP2023, ASP2052 ou carbure de tungstène (WC-Co)",
+        },
+        {
+          label: "Applications",
+          value: "Feuilles de cuivre et d’aluminium",
+        },
+        {
+          label: "Dureté",
+          value: "64–67 HRC pour l’acier PM ; 91–92 HRA pour le carbure",
+        },
+        {
+          label: "Tolérance d'épaisseur",
+          value: "±0.001 mm",
+        },
+        {
+          label: "Faux-rond",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Finition de surface",
+          value: "Faces polies miroir, Ra ≤ 0,02 μm",
+        },
+        {
+          label: "Fixation",
+          value: "Lames montées sur mandrin avec alésage lisse ou cannelé",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Red Bud Industries",
+      "Fagor Arrasate",
+      "Burghardt + Schmidt",
+      "Heinrich Georg",
     ],
     components: [
       {
-        id: "pm-metallurgy",
-        tag: "DURABILITÉ",
-        title: "Métallurgie des poudres (PM) Acier",
+        id: "selection-1",
+        tag: "Sélection",
+        title:
+          "Options en acier à outils et en carbure pour les feuilles métalliques",
         description:
-          "Les aciers ASP23 et ASP52 PM éliminent la ségrégation de carbure en bandes que l'on trouve dans la fonte D2. Cette structure de grain submicronique empêche l'écaillage des arêtes lors de la coupe de bandes d'acier inoxydable ou d'acier au silicium dures et résistantes à la traction.",
+          "Les options D2, D3, M2, PM HSS et carbure de tungstène permettent aux transformateurs de feuilles métalliques de choisir le matériau en fonction de la nuance de cuivre ou d’aluminium, de l’épaisseur de la feuille et de l’usure observée de la lame.",
       },
       {
-        id: "cumulative-tolerance",
-        tag: "PRÉCISION",
-        title: "Erreur cumulative nulle",
+        id: "selection-2",
+        tag: "Réglage",
+        title:
+          "Faces de lames rectifiées avec précision pour l'usinage de feuilles métalliques",
         description:
-          "Sur les installations de refendage en bande, les erreurs d'épaisseur de lame s'accumulent rapidement. Notre rectification de précision de ±0,001 mm garantit que les dimensions de votre arbre restent parfaitement conformes aux spécifications, ce qui permet d'économiser des heures de réglage et de calage.",
+          "Sureay fournit des lames pour feuilles métalliques rectifiées avec précision, fabriquées selon les largeurs axiales et la finition de la face de travail spécifiées, ce qui permet de remplacer des lames individuelles au sein de votre ensemble d'arbres existant.",
       },
       {
-        id: "anti-galling",
-        tag: "QUALITÉ DE LA SURFACE",
-        title: "Vernis anti-gravillons",
+        id: "selection-3",
+        tag: "Application",
+        title: "Lames sur mesure et entretoises adaptées",
         description:
-          "Le fendage de l'aluminium et du cuivre entraîne souvent une \" soudure à froid \" de la poussière métallique sur la lame, ce qui raye le bord de la bobine. Nos faces latérales revêtues d'un miroir (Ra ≤0,02μm) réduisent drastiquement les frottements, empêchant totalement l'adhérence des matériaux.",
+          "Commandez ensemble des lames pour film sur mesure et les entretoises correspondantes, en précisant les largeurs individuelles, les caractéristiques d’alésage et les quantités en fonction de votre programme de largeurs de refendage et de l’outillage dont vous disposez.",
       },
     ],
-    dimensionLabels: {
-      col0: "Application typique",
-      col1: "Diamètre extérieur",
-      col2: "Diamètre intérieur",
-      col3: "Épaisseur",
-      caption:
-        "* Les dimensions représentent les normes courantes des centres de service des métaux. Nous fabriquons selon les spécifications exactes de la machine et pouvons fournir des entretoises de haute précision assorties, rectifiées avec la même tolérance de ±0,001 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Thin Foil Slitter",
-        od: "100 mm",
-        id: "40 mm",
-        thickness: "1.0 / 1.5 mm",
-      },
-      {
-        spec: "Precision Strip Slitter",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "2.0 / 3.0 mm",
-      },
-      {
-        spec: "General Strip Slitter",
-        od: "200 mm",
-        id: "120 mm",
-        thickness: "3.0 / 4.0 mm",
-      },
-      {
-        spec: "Silicon / Stainless Steel",
-        od: "250 mm",
-        id: "150 mm",
-        thickness: "4.0 / 5.0 mm",
-      },
-      {
-        spec: "Heavy Gauge Strip",
-        od: "300 mm",
-        id: "200 mm",
-        thickness: "5.0 / 10.0 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 750,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Dois-je utiliser D2 ou ASP23 pour refendre des bandes d'acier inoxydable ?",
+            "Comment spécifier des lames de remplacement sur mesure pour les machines à feuille et les entretoises correspondantes ?",
           answer:
-            "Alors que le D2 est adéquat pour les aciers au carbone doux, le refendage d'acier inoxydable à haute résistance provoque une usure rapide et des micro-écailles sur les arêtes du D2. L'acier à métallurgie des poudres ASP23 est fortement recommandé pour les bandes d'acier inoxydable d'une épaisseur inférieure à 1,0 mm. Sa structure carbure uniforme résiste à l'écaillage, offrant une durée de vie des arêtes 3 à 5 fois supérieure à celle du D2 et minimisant les temps d'arrêt de la machine.",
+            "Précisez le diamètre extérieur, l’alésage, la largeur axiale et la rainure de clavette de chaque lame, ainsi que les largeurs des entretoises et la disposition de l’empilement. Indiquez les spécifications de la feuille, le barème des largeurs de refente et la quantité de chaque configuration. Identifiez les pièces qui resteront en service afin que les nouvelles lames et entretoises puissent être prises en compte dans la configuration complète de l’arbre.",
         },
         {
           question:
-            "Comment éviter le grippage ou l'accumulation de métal lors du découpage de l'aluminium ?",
+            "En quoi l'épaisseur de la feuille et les dommages sur les bords influencent-ils le choix entre l'acier et le carbure ?",
           answer:
-            "L'aluminium est très sensible au grippage (soudure à froid sur la lame). Nous empêchons ce phénomène en appliquant un revêtement miroir sur les faces latérales des lames pour obtenir une rugosité de surface de Ra ≤0,02μm. Cette finition ultra-lisse réduit le coefficient de frottement, empêchant les particules d'aluminium d'adhérer au couteau et de rayer vos bobines finies.",
+            "L'alliage de la feuille, son épaisseur, l'état de sa surface et le profil de coupe requis constituent le point de départ. Comparez l'usure progressive de la lame actuelle et l'éventuel ébréchage du tranchant à ce poste. Le choix du matériau doit tenir compte de l'état observé tout en conservant la géométrie requise de la lame et la configuration associée, plutôt que d'être déterminé uniquement par la dureté.",
         },
         {
           question:
-            "Pourquoi une tolérance de ±0,001 mm sur l'épaisseur est-elle nécessaire ?",
+            "Qu'est-ce qui peut provoquer l'apparition de bavures sur une feuille de cuivre ou d'aluminium refendue ?",
           answer:
-            "Dans les opérations de découpe en bande, plusieurs couteaux et entretoises sont empilés sur l'arbre. Si une lame a une tolérance de ±0,005 mm, l'empilement de 20 lames crée une erreur cumulée de ±0,100 mm. Les bobines fendues ne seront donc pas conformes aux spécifications de largeur et induiront une cambrure (courbure). Notre tolérance de ±0,001 mm garantit une précision absolue sur l'ensemble de la pile de lames.",
+            "L'état du tranchant, les jeux de montage, l'état de l'arbre et l'alignement doivent tous faire l'objet d'une attention particulière lorsque des bavures apparaissent. Comparez les spécifications de la feuille avec la configuration utilisée, puis notez quel tranchant et quelle position de découpe sont concernés. Cela permet de distinguer plus facilement une lame endommagée d'un problème récurrent lié à la pile ou à la configuration de fonctionnement.",
         },
         {
           question:
-            "Pouvez-vous fournir des entretoises de précision assorties ?",
+            "Pourquoi les largeurs de découpe peuvent-elles varier même lorsque les lames individuelles sont précises ?",
           answer:
-            "Oui, la précision de la découpe exige que les couteaux et les entretoises aient des tolérances identiques. Nous fabriquons des racleurs/espaceurs légers en aluminium, en acier et en caoutchouc collé, rectifiés avec les mêmes tolérances d'épaisseur de ±0,001 mm que nos couteaux de refendage.",
+            "La largeur axiale d’une lame décrit le composant individuel, tandis que l’ensemble lame-entretoise, une fois assemblé, définit les positions de coupe. Les lames de rechange, même si elles sont conformes aux spécifications, doivent occuper les positions prévues au sein de cette configuration. Vérifiez leurs dimensions en vous référant au plan d’assemblage et aux largeurs des entretoises, en particulier lorsque certains composants sont conservés d’une configuration existante.",
+        },
+        {
+          question:
+            "Les lames pour feuilles métalliques nues et les lames revêtues pour électrodes de batterie sont-elles interchangeables ?",
+          answer:
+            "Les feuilles de cuivre ou d’aluminium nues et les électrodes de batterie revêtues présentent des exigences de refendage différentes. Une électrode combine une feuille collectrice et des couches de revêtement ; son profil de coupe et son réglage associé doivent donc être adaptés à cette structure. Identifiez la bande et la station concernées lors du choix d’une pièce de rechange ; les applications d’anodes et de cathodes revêtues sont traitées dans la section [Couteaux de refendage pour batteries](/products/lithium-battery-slitting-knives).",
+        },
+        {
+          question:
+            "Puis-je réutiliser les entretoises existantes lors du remplacement des lames de découpeuse de film ?",
+          answer:
+            "Oui, à condition que les entretoises conservées répondent toujours aux exigences de largeur, d’alésage et de face de la pile prévue. Notez leurs dimensions et positions réelles parallèlement aux nouvelles largeurs de lames et au tableau des largeurs de refente. Vérifiez la configuration finale avant de passer commande afin que les lames de rechange soient compatibles avec les entretoises que vous comptez conserver.",
         },
       ],
-      company: [
-        {
-          question:
-            "Fournissez-vous des jeux de couteaux assortis avec des rapports d'inspection ?",
-          answer:
-            "Oui. Pour les arbres de refendage à plusieurs couteaux, nous fournissons des ensembles assortis accompagnés d'un rapport contrôle CMM. Ce rapport indique l'épaisseur exacte de chaque couteau, garantissant ainsi que l'ensemble répond à vos exigences en matière de tolérance cumulative avant l'installation.",
-        },
-        {
-          question:
-            "Quel est le délai de livraison des couteaux de refendage en acier PM ou en carbure ?",
-          answer:
-            "Les dimensions standard D2 et les dimensions de base de l'acier PM peuvent généralement être fabriquées en 10 à 15 jours ouvrables. Le carbure de tungstène massif et les alliages PM hautement spécialisés nécessitent un rodage et un meulage complexes, ce qui prend généralement de 15 à 25 jours ouvrables en fonction du diamètre extérieur et des exigences de tolérance.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Assurez l'approvisionnement de votre ligne de recyclage en elames de broyeurs à double arbre de rechange, conçues pour s'adapter à votre ensemble de couteaux existant. Des profils de crochets, des épaisseurs et des alésages par électroérosion à fil sur mesure sont disponibles. Envoyez-nous votre plan ou un échantillon pour obtenir un devis concernant des couteaux individuels ou un jeu complet. Les marques de machines constituent des références de compatibilité pour les pièces de rechange Sureay.",
     id: "twin-shaft-blades-recycling",
-    name: "Lames de déchiquetage à double arbre",
+    name: "Couteaux pour broyeurs à deux arbres",
     fullName:
-      "Lames à double arbre D2/SKD11 pour le recyclage du plastique, des déchets solides et du bois",
+      "Couteaux pour broyeurs à deux arbres destinés au recyclage polyvalent",
+    seoTitle: "lames de broyeur à double arbre | Plastiques et déchets mixtes",
+    seoDescription:
+      "lames de broyeurs de rechange à double arbre pour les plastiques, les palettes en bois et les déchets mixtes. Options D2, SKD11 et 42CrMo, avec crochets et alésages sur mesure.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lames de déchiqueteuse",
-    image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+    categoryDisplay: "Couteaux de broyeur",
+    image:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
+    imageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
     gallery: [
-      "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "ZGTR0zGTR à double arbre en carbure de chrome D2/SKD11 conçu selon le principe de l'action en ciseaux croisés pour les déchets solides, les plastiques encombrants, les déchets électroniques et les palettes en bois de grand volume. Trempe sous vide HRC 55-62 avec traitement cryogénique profond pour une durée de vie prolongée de la lame. Géométries de griffes 3-12 personnalisées. Alésages par électroérosion à fil pour un ajustement sans jeu sur les rotors Weima, Untha, SSI et Vecoplan.",
-    fullDescription:
-      "Les lames de broyeur à deux arbres fonctionnent selon le principe des ciseaux croisés - deux arbres contrarotatifs avec des lames à griffes imbriquées qui cisaillent la matière première à travers une interface de ciseaux, fournissant une force de préhension agressive avec une faible demande de couple.\n\nLors du traitement de déchets volumineux très abrasifs, tels que les déchets solides contaminés par des métaux, les purges de plastique à paroi épaisse ou les balles de plastique rigide mélangé, les lames non standard souffrent d'un arrondissement prématuré des bords, d'un allongement de l'alésage et d'une rupture catastrophique du crochet.\n\nLes lames multi-arbres Sureay lames de broyeur sont fabriquées à partir d'aciers à outils D2 (1.2379), SKD11 et 42CrMo, trempés sous vide et revenus pendant 4 à 5 cycles pour obtenir une microstructure martensitique entièrement stabilisée (HRC 55-62). Le traitement cryogénique profond (-196°C, trempage de 24 heures) élimine l'austénite retenue et augmente considérablement la résistance à l'usure sans sacrifier la marge de ténacité nécessaire pour empêcher la rupture en bloc sur les matières premières contaminées.\n\n## Géométrie du crochet optimisée par FEA\n\nLe profil du crochet de coupe dicte l'efficacité du grappillage et la résistance à la fatigue. Sureay utilise l'analyse par éléments finis (FEA) pour optimiser la distribution des contraintes sur la lame lors d'impacts à couple élevé. Les modèles à trois griffes (3C) offrent une force de préhension agressive pour les gros bois et les conteneurs IBC ; les configurations à 8 griffes (8C) sont optimisées pour les plastiques rigides mixtes et les déchets solides municipaux ; les variantes à 12 griffes (12C) produisent une granulométrie plus fine pour le traitement en aval. Tous les profils de crochets sont renforcés au niveau du rayon de la racine pour résister à la déformation en cas de charge cyclique soutenue.\n\n## Alésages de précision pour l'électroérosion à fil\n\nUn ajustement lâche entre l'alésage de la pale et l'arbre du rotor crée des micro-impacts qui allongent progressivement l'alésage et détruisent l'arbre. Sureay élimine ce mode de défaillance : tous les alésages de montage intérieurs - hexagonaux, octogonaux ou cannelés - sont traités par électro-érosion à fil de précision, ce qui garantit un ajustement sans jeu pour les systèmes de rotor SSI, Untha, Weima et Vecoplan.\n\n## Sélection d'alliages par matière première\n\nD2 (1.2379) - Plastiques mélangés et déchets légers : Bouteilles en PEHD, plateaux en PET, pièces moulées en PP et balles de plastique rigide mélangées. Résistance à l'abrasion économique au carbure de chrome pour les lignes de recyclage générales.\n\nSKD11 - Courants contaminés abrasifs : Plastiques techniques remplis de verre, films agricoles sales et déchets post-industriels hautement contaminés. La ténacité supérieure du SKD11 prolonge la durée de vie des plaquettes sur les matériaux à surface dure dans les flux contaminés.\n\n42CrMo - Déchets de bois et de métaux inclus : Palettes de bois, déchets encombrants et déchets postindustriels présentant un risque de contamination métallique. l'absorption plus élevée de l'énergie d'impact du 42CrMo empêche la fracture fragile qui cause des dommages catastrophiques au rotor lors d'une collision avec du métal.",
+      "Lames de rechange D2/SKD11 pour broyeurs à double arbre traitant les plastiques, le bois et les déchets municipaux solides. Alésages, épaisseurs et profils de crochets sur mesure, réalisés selon les plans fournis.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
-    compatibleMachines: [
-      "WEIMA",
-      "UNTHA",
-      "Vecoplan",
-      "SSI Shredding Systems",
-      "Lindner",
-      "Erdwich",
-      "BRT Hartner",
-      "ZERMA",
-    ],
     specs: [
       {
-        label: "Material",
+        label: "Matériau",
         value: "D2 (1.2379), SKD11, 42CrMo",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–62 (4–5 tempering cycles)",
+        label: "Dureté",
+        value: "55–62 HRC (4 à 5 cycles de revenu)",
       },
       {
-        label: "Claw Count",
-        value: "3-Claw · 8-Claw · 12-Claw (custom)",
+        label: "Nombre de griffes",
+        value: "3 griffes · 5 griffes · 8 griffes · 12 griffes",
       },
       {
-        label: "Thickness",
-        value: "10 mm – 150 mm",
+        label: "Conception de l'alésage",
+        value:
+          "Électroérosion à fil de précision : hexagonale / octogonale / cannelée",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM: Hex / Octagonal / Splined",
-      },
-      {
-        label: "Compatibility",
+        label: "Compatibilité",
         value: "Weima, Untha, SSI, Vecoplan, Genox",
       },
       {
         label: "Application",
-        value: "MSW · Plastics · Wood Pallets · Bulky Waste",
+        value:
+          "Déchets municipaux · Plastiques · Palettes en bois · Encombrants",
+      },
+      {
+        label: "Dimensions",
+        value:
+          "Diamètre extérieur (Ø) répertorié : Ø 150–450 mm ; diamètre extérieur sur mesure jusqu’à Ø 800 mm ; épaisseur : 10–150 mm",
       },
     ],
-    components: [
-      {
-        id: "fea-geometry",
-        tag: "INGÉNIERIE",
-        title: "Profil du crochet optimisé par FEA",
-        description:
-          "La géométrie du crochet a été conçue par analyse des éléments finis afin d'éliminer les concentrateurs de contraintes. les configurations à 3 griffes, 8 griffes et 12 griffes fournissent la force de préhension correcte pour chaque type de matière première.",
-      },
-      {
-        id: "wire-edm",
-        tag: "PRÉCISION",
-        title: "Alésages de précision par électroérosion à fil",
-        description:
-          "Tous les alésages de montage sont découpés par Wire-EDM à ±0,01 mm, ce qui garantit un ajustement sans jeu qui élimine les micro-rotations qui causent des dommages à l'arbre et l'allongement de l'alésage.",
-      },
-      {
-        id: "cryogenic-treatment",
-        tag: "METALLURGIE",
-        title: "Traitement cryogénique profond",
-        description:
-          "Le traitement cryogénique de post-durcissement à -196°C élimine l'austénite retenue, stabilisant la microstructure de martensite pour une résistance à l'usure jusqu'à 40% plus élevée sans réduire la ténacité.",
-      },
+    relatedBladeIds: [
+      "multi-shaft-blades-metal",
+      "tire-shredder-blades",
+      "twin-shaft-blades-battery",
     ],
     dimensionLabels: {
       col0: "Série de broyeurs",
@@ -736,146 +922,222 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "200 Series",
+        itemNo: "SR002101",
+        spec: "Série 200",
         od: "Φ 150 mm",
         thickness: "15 mm",
-        bore: "Hex Ø70 mm",
-        hooks: "5-Claw",
+        bore: "Hexagone Ø 70 mm",
+        hooks: "5 griffes",
       },
       {
-        spec: "400 Series",
+        itemNo: "SR002102",
+        spec: "Série 400",
         od: "Φ 180 mm",
         thickness: "20 mm",
-        bore: "Hex Ø90 mm",
-        hooks: "8-Claw",
+        bore: "Hexagone Ø 90 mm",
+        hooks: "8 griffes",
       },
       {
-        spec: "600 Series",
+        itemNo: "SR002103",
+        spec: "Série 600",
         od: "Φ 200 mm",
         thickness: "20 mm",
-        bore: "Hex Ø140 mm",
-        hooks: "8-Claw",
+        bore: "Hexagone Ø 140 mm",
+        hooks: "8 griffes",
       },
       {
-        spec: "800 Series",
+        itemNo: "SR002104",
+        spec: "Série 800",
         od: "Φ 250 mm",
         thickness: "25 mm",
-        bore: "Hex Ø160 mm",
-        hooks: "8-Claw",
+        bore: "Hexagone Ø 160 mm",
+        hooks: "8 griffes",
       },
       {
-        spec: "1000 Series",
+        itemNo: "SR002105",
+        spec: "Série 1000",
         od: "Φ 300 mm",
         thickness: "30 mm",
-        bore: "Hex Ø180 mm",
-        hooks: "12-Claw",
+        bore: "Hexagone Ø 180 mm",
+        hooks: "12 griffes",
       },
       {
-        spec: "1200 Series",
+        itemNo: "SR002106",
+        spec: "Série 1200",
         od: "Φ 350 mm",
         thickness: "40 mm",
-        bore: "Splined Ø200 mm",
-        hooks: "12-Claw",
+        bore: "Cannelé Ø 200 mm",
+        hooks: "12 griffes",
       },
       {
-        spec: "1500 Series",
+        itemNo: "SR002107",
+        spec: "Série 1500",
         od: "Φ 400 mm",
         thickness: "40 mm",
-        bore: "Splined Ø220 mm",
-        hooks: "3-Claw",
+        bore: "Cannelé Ø 220 mm",
+        hooks: "3 griffes",
       },
       {
-        spec: "2000 Series",
+        itemNo: "SR002108",
+        spec: "Série 2000",
         od: "Φ 450 mm",
         thickness: "30 mm",
-        bore: "Splined Ø260 mm",
-        hooks: "3-Claw",
+        bore: "Cannelé Ø 260 mm",
+        hooks: "3 griffes",
       },
-    ],
-    relatedBladeIds: [
-      "tire-shredder-blades",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
     ],
     offers: {
       lowPrice: 45,
       highPrice: 600,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-recycling-advantage-1",
+        tag: "Options d’acier pour le recyclage général",
+        title: "Options d’acier pour le recyclage général",
+        description:
+          "Des lames en D2, SKD11 et 42CrMo sont disponibles pour le broyage des plastiques, des palettes en bois et des déchets mixtes, ce qui permet aux commandes de pièces de rechange d’inclure le choix du matériau en plus de la géométrie requise du crochet et de l’arbre.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-2",
+        tag: "Crochets sur mesure et alésages par électroérosion à fil",
+        title: "Crochets sur mesure et alésages par électroérosion à fil",
+        description:
+          "Sureay fabrique des lames à crochets dotées d’alésages hexagonaux, octogonaux ou cannelés. Les configurations répertoriées vont de Ø150 à 450 mm, avec des diamètres sur mesure pouvant atteindre Ø800 mm pour les remplacements sur plan.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-3",
+        tag: "Lames individuelles et kits de remplacement complets",
+        title: "Lames individuelles et kits de remplacement complets",
+        description:
+          "Commandez une configuration de coupe unique ou un ensemble couvrant plusieurs positions d’arbre, en précisant les épaisseurs, les orientations des crochets et les quantités requises pour votre pile de coupe installée.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Comment choisir entre les lames à 3 griffes, à 8 griffes et à 12 griffes ?",
+            "Quelles lames de rechange conviennent à un broyeur à double arbre ?",
           answer:
-            "Le nombre de griffes contrôle directement la fréquence de saisie de la lame et la taille des particules en sortie. les lames à 3 griffes (3C) sont conçues pour le broyage primaire à couple élevé de produits volumineux (palettes en bois et grands conteneurs en PEHD), où la géométrie agressive des crochets assure un maximum de mordant. les lames à 8 griffes (8C) constituent la norme générale pour les déchets solides mélangés, les balles de plastique et les déchets postindustriels. les configurations à 12 griffes (12C) produisent des particules plus fines à partir de matières premières plus légères telles que les plastiques ménagers rigides et les emballages.",
+            "Une lame de rechange est compatible lorsque son alésage, le profil de ses crochets, son épaisseur et son orientation de montage correspondent à sa position dans la pile de lames. Deux lames présentant le même diamètre extérieur peuvent avoir des alésages de tailles différentes ou des sens de crochet opposés. Utilisez la référence de la pièce et la disposition des entretoises pour distinguer les lames similaires.",
         },
         {
           question:
-            "Pourquoi Sureay utilise-t-il l'électroérosion par fil pour les alésages intérieurs au lieu du brochage ?",
+            "Les lames de broyeur à double arbre, à deux arbres et à double arbre sont-elles identiques ?",
           answer:
-            "Le brochage standard crée des tolérances dimensionnelles de ±0,1-0,2 mm et introduit des contraintes de surface résiduelles dans la paroi de l'alésage. Au fil des millions de cycles du rotor, cet espace permet un micro-rochetage - un allongement progressif de l'alésage qui finit par détruire l'arbre du rotor. L'électroérosion à fil de précision usine les alésages avec une précision de ±0,01 mm et une surface de coupe sans contrainte, éliminant ainsi le jeu à l'origine du micro-rochetage.",
+            "Oui. Dans les équipements de recyclage à cisaillement rotatif, ces trois termes désignent généralement les lames montées sur les deux arbres de la machine. Les lames en crochet et les lames à griffes décrivent le profil de coupe. Un « jeu de lames » désigne plusieurs pièces ; veillez donc à associer chaque lame à sa position spécifique sur l’arbre.",
         },
         {
           question:
-            "Comment choisir entre D2, SKD11 et 42CrMo pour le broyage de plastique contaminé ou de déchets solides municipaux ?",
+            "Comment le nombre de crochets et l’épaisseur de la lame influencent-ils le choix d’une lame de rechange ?",
           answer:
-            "D2 (1.2379) est adapté aux balles de plastique post-consommation avec des salissures résiduelles et des traces de contamination. Passez au SKD11 lorsque votre matière première comprend des plastiques techniques renforcés de verre (PA66-GF30, ABS) mélangés à des flux contaminés. Choisissez le 42CrMo pour le bois ou la ferraille industrielle présentant un risque élevé de contamination métallique - son absorption plus élevée de l'énergie d'impact empêche une fracture fragile en cas d'impact avec le métal.",
+            "La géométrie des crochets influence la manière dont la lame s'engage dans le matériau alimenté. L'épaisseur de la lame et la largeur de l'entretoise déterminent la disposition axiale de l'ensemble de coupe. Conservez ces dimensions pour un remplacement à l'identique. Toute modification du nombre ou de la largeur des crochets doit être prise en compte en fonction des lames opposées et du matériau à traiter.",
         },
         {
           question:
-            "Quelle est la fréquence d'indexation ou de remplacement des lames de broyeur à double arbre sur une ligne de recyclage en continu ?",
+            "Dans quels cas la résistance à l'usure ou la ténacité doivent-elles guider le choix de l'acier ?",
           answer:
-            "Sur une ligne continue de 16 heures traitant du PEHD et du PP post-consommation, planifiez la première indexation entre 400 et 600 heures de fonctionnement avec D2, et entre 600 et 800 heures avec SKD11 sur des matières premières propres. Les flux contaminés ou chargés de verre réduisent ces intervalles de 30 à 40 %. Il est recommandé de procéder à une indexation à tonnage fixe plutôt que d'attendre l'arrondi visible des bords.",
+            "L'arrondi progressif du tranchant rend la résistance à l'usure utile comme critère de comparaison. La formation répétée de copeaux ou la rupture des crochets nécessitent également de prêter attention à la ténacité, au soutien du tranchant et à l'impact de l'avance. Évaluez l'acier d'origine et son état après traitement thermique en tenant compte du type de dommages observés, afin que le matériau de remplacement réponde aux conditions constatées sur cette machine.",
         },
         {
           question:
-            "Fournissez-vous des contre-couteaux et des tamis de calibrage en tant que système d'outillage complet ?",
+            "Quelles sont les causes possibles d'une usure ou d'un ébréchage prématuré des lames de coupe ?",
           answer:
-            "Oui. Nous fabriquons des contre-couteaux stationnaires assortis et des tamis de calibrage perforés en tant que système complet d'outillage de broyage à deux arbres. La fourniture de lames de rotor et de contre-couteaux provenant du même cycle de broyage garantit un jeu de cisaillement constant sur l'ensemble de l'interface entre le rotor et le lit de broyage.",
+            "L'alimentation en abrasif peut accélérer l'usure progressive, tandis que la présence inattendue d'objets durs ou une charge locale excessive peut endommager les crochets et les faces de coupe. Un empilement de lames desserré ou mal assemblé peut également contribuer à ces dommages. Comparez l'emplacement des dommages avec l'historique d'alimentation et l'état de l'empilement avant de modifier les spécifications de remplacement.",
+        },
+        {
+          question:
+            "La configuration de la découpeuse est-elle la même pour les plastiques, la ferraille et les pneus ?",
+          answer:
+            "En général, non. Les broyeurs de recyclage généraux sont configurés pour les plastiques, les palettes en bois et les déchets mixtes. Les charges d’alimentation et la géométrie des lames diffèrent selon les modèles spécialisés [lames de broyeur pour la ferraille](/products/multi-shaft-blades-metal) et [lames de broyeur pour les pneus](/products/tire-shredder-blades). Choisissez la gamme adaptée à votre charge d’alimentation et adaptez la configuration à votre machine installée.",
+        },
+        {
+          question:
+            "De quelles informations avez-vous besoin pour établir un devis concernant des elames de broyeur à double arbre ?",
+          answer:
+            "Indiquez le modèle de la machine, le plan de la lame ou la référence de la pièce, le matériau à découper et les quantités par position d’arbre. Pour un remplacement complet, précisez la disposition des entretoises, l’épaisseur des lames et le sens des crochets. Un échantillon usé peut montrer les détails de l’alésage et du montage. Marquez les pointes de crochets usées et joignez une référence d’un produit neuf ou le plan d’origine si vous en disposez.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Indiquez le modèle de la machine, le diamètre extérieur de la lame, l'épaisseur, le profil de l'alésage, le nombre de crochets et la largeur de l'entretoise.",
+    compatibleMachines: ["Weima", "Untha", "SSI", "Vecoplan", "Genox"],
+    detailLayout: {
+      sizeRange: "Ø150–450 mm",
+      heroSpecs: [
         {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
+          label: "Matériau",
+          value: "D2 (1.2379), SKD11, 42CrMo",
         },
         {
-          question:
-            "Qu'est-ce qui différencie le traitement thermique de Sureay des autres produits moins chers ?",
-          answer:
-            "Contrairement à la trempe standard à cycle unique, chaque lame de broyeur Sureay subit une trempe sous vide suivie de 4 à 5 cycles de trempe et d'un traitement cryogénique profond à -196°C. Cela permet de stabiliser la microstructure martensitique complète et d'augmenter la résistance à l'usure jusqu'à 40 %.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les lames de remplacement OEM standard sont généralement expédiées sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question: "Quelles sont les certifications de qualité de Sureay ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle et un certificat de lot traitement thermique. Pour la qualification OEM, des rapports dimensionnels CMM complets et des certificats d'aciérie sont disponibles sur demande.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 lames) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables.",
+          label: "Application",
+          value:
+            "Déchets municipaux · Plastiques · Palettes en bois · Encombrants",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value:
+            "Diamètre extérieur (Ø) répertorié : Ø 150–450 mm ; diamètre extérieur sur mesure jusqu’à Ø 800 mm ; épaisseur : 10–150 mm",
+        },
+        {
+          label: "Matériau",
+          value: "D2 (1.2379), SKD11, 42CrMo",
+        },
+        {
+          label: "Dureté",
+          value: "55–62 HRC (4 à 5 cycles de revenu)",
+        },
+        {
+          label: "Nombre de griffes",
+          value: "3 griffes · 5 griffes · 8 griffes · 12 griffes",
+        },
+        {
+          label: "Conception de l'alésage",
+          value:
+            "Électroérosion à fil de précision : hexagonale / octogonale / cannelée",
+        },
+        {
+          label: "Application",
+          value:
+            "Déchets municipaux · Plastiques · Palettes en bois · Encombrants",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Indiquez le modèle de la machine, le diamètre extérieur de la lame, l'épaisseur, le profil de l'alésage, le nombre de crochets et la largeur de l'entretoise.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Procurez-vous des lames de rechange pour broyeurs de ferraille présentant la géométrie de crochet et l’interface d’arbre adaptées à votre machine. Sureay propose des configurations en H13 et 42CrMo avec des alésages cannelés ou clavetés sur mesure. Envoyez-nous vos plans de lames pour obtenir un devis portant sur des positions individuelles ou un jeu multi-arbres. Les marques de machines constituent des références de compatibilité pour les pièces de rechange Sureay.",
     id: "multi-shaft-blades-metal",
-    name: "Lames de déchiqueteuse en métal",
-    fullName:
-      "Lames multi-arbres à fort impact pour la ferraille, les VHU et les déchets électroniques",
+    name: "Couteaux pour broyeurs de ferraille",
+    fullName: "Couteaux pour broyeurs de ferraille à plusieurs arbres",
+    seoTitle: "lames de broyeur pour ferraille | H13 et 42CrMo",
+    seoDescription:
+      "Choisissez des lames en acier H13 ou 42CrMo pour les broyeurs à plusieurs arbres destinés au traitement des véhicules hors d'usage, des déchets électroniques ou des appareils électroménagers. Précisez le profil du crochet et l'alésage cannelé ou claveté.",
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Lames de déchiqueteuse en métal",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1309,
+      smallerWidths: [320, 640],
+    },
     badge: "Usage intensif",
     badgeColor: "red",
     gallery: [
@@ -884,70 +1146,35 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Conçu pour résister aux chocs catastrophiques provoqués par le broyage à deux arbres de la ferraille, des véhicules hors d'usage et des déchets électroniques. Forgés à partir d'aciers alliés H13 et 42CrMo (AISI 4140) de première qualité. Ces lames à usage intensif privilégient la ténacité du noyau afin d'éviter les fractures fragiles lorsqu'elles heurtent des inclusions métalliques solides.",
-    fullDescription:
-      "Lorsqu'un broyeur à deux arbres rencontre un bloc moteur, une poutre en I en acier ou des déchets électroniques compactés, les lames subissent des chocs catastrophiques mesurés en dizaines de milliers de newtons par milliseconde. L'utilisation d'aciers à outils standard à haute teneur en carbone (comme le D2) dans ces applications entraîne une fracture fragile immédiate et des crochets brisés, ce qui provoque de graves dommages au rotor, des temps d'arrêt imprévus et des fragments de projectiles potentiellement dangereux.\n\nPour le traitement des métaux lourds, la ténacité est plus importante que l'extrême dureté. Sureay conçoit ces pales spécifiques à partir d'un acier à outils **H13 (AISI H13 / 1.2344)** travaillé à chaud et d'un alliage **42CrMo (AISI 4140)** à haute résistance, grâce à un cycle thermique spécialisé de trempe profonde. La dureté de surface est délibérément maintenue à HRC 50-54. Cette dureté inférieure contrôlée offre une élasticité massive du noyau, permettant à la lame d'absorber des impacts cinétiques extrêmes sans s'ébrécher ni se briser.\n\n## Géométrie du crochet à profil bas pour une force de morsure maximale\n\nLe déchiquetage du métal nécessite une immense force de morsure plutôt qu'une fréquence de saisie. Sureay conçoit des géométries à profil bas à 1, 2 et 3 crochets avec une épaisseur de racine importante. Ces profils de griffes robustes peuvent saisir et cisailler des boîtiers métalliques épais, des profils en aluminium et des sous-ensembles automobiles sans rupture du crochet.\n\n## Alésages cannelés lourds : Transfert de couple sans glissement\n\nLa ferraille lourde génère des couples de réaction massifs du rotor qui peuvent cisailler les alésages clavetés standard. Sureay fabrique tous les alésages intérieurs pour les broyeurs de métaux lourds en utilisant des profils cannelés de précision découpés par électroérosion à fil. Cela permet un engagement complet du couple circonférentiel entre la lame et l'arbre, éliminant le mode de défaillance par cisaillement de la clavette et empêchant l'usure progressive de l'alésage par rapport à l'arbre qui détruit les rotors dans les opérations de déchiquetage de métaux standard.\n\n## Sélection d'alliages par profil de ferraille\n\n**H13 (1.2344) - Déchets électroniques et déchets mixtes légers:** Assemblages de cartes de circuits imprimés, extrusions d'aluminium, faisceaux de câbles en cuivre et équipements TIC. La dureté à chaud supérieure du H13 permet de gérer les pics de chaleur induits par la friction, typiques des déchets électroniques.\n\n**42CrMo (AISI 4140) - VHU et ferraille lourde:** Blocs moteurs, carters de transmission, chutes de bobines d'acier et acier de construction. l'absorption exceptionnelle de l'énergie d'impact du 42CrMo (Charpy V-notch > 35J) est le choix définitif pour les applications de charge de choc les plus lourdes dans l'automobile et la démolition des métaux.",
+      "Lames de rechange pour broyeurs à plusieurs arbres destinés aux déchets métalliques, aux véhicules hors d'usage (VHU) et aux déchets d'équipements électriques et électroniques (DEEE). Options en acier H13 et 42CrMo, avec alésages cannelés ou clavetés sur mesure selon les plans.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
-    compatibleMachines: [
-      "Shred-Tech",
-      "Arjes",
-      "Forus",
-      "SSI Shredding",
-      "Bano",
-      "Hammel",
-    ],
     specs: [
       {
-        label: "Material",
+        label: "Matériau",
         value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
       },
       {
-        label: "Hardness",
-        value: "HRC 50–54 (Optimized for Shock Absorption)",
+        label: "Dureté",
+        value: "HRC 50–54",
       },
       {
-        label: "Claw Geometry",
-        value: "1, 2, or 3 Low-Profile Thick Hooks",
+        label: "Géométrie des griffes",
+        value: "1, 2 ou 3 crochets épais à profil bas",
       },
       {
-        label: "Thickness",
-        value: "40 mm – 150 mm (Heavy Duty)",
+        label: "Conception de l'alésage",
+        value:
+          "À cannelures lourdes / à rainures multiples (électroérosion à fil)",
       },
       {
-        label: "Bore Design",
-        value: "Heavy Splined / Multi-Keyway (Wire-EDM)",
-      },
-      {
-        label: "OEM Fitment",
+        label: "Compatibilité OEM",
         value: "Shred-Tech, Forus, Arjes, SSI, Hammel",
       },
       {
         label: "Application",
-        value: "Scrap Metal · ELV · E-Waste · Appliances (WEEE)",
-      },
-    ],
-    components: [
-      {
-        id: "impact-alloy",
-        tag: "METALLURGIE",
-        title: "Résistance massive du noyau",
-        description:
-          "Maintenus à HRC 50-54, les alliages H13 et 42CrMo fournissent l'élasticité massive du noyau nécessaire pour absorber les impacts cinétiques extrêmes, évitant ainsi l'éclatement catastrophique typique des lames D2.",
-      },
-      {
-        id: "heavy-spline",
-        tag: "TRANSFERT DE COUPLE",
-        title: "Cannelures à glissement nul",
-        description:
-          "Les alésages cannelés sur toute la circonférence, usinés par électro-érosion à fil à ±0,01 mm, garantissent un transfert de couple sans glissement sous des charges de broyage extrêmes, éliminant ainsi les dommages causés à l'arbre du rotor.",
-      },
-      {
-        id: "low-profile-hooks",
-        tag: "GÉOMÉTRIE",
-        title: "Hameçons à mordre à profil bas",
-        description:
-          "1 à 3 crochets à forte épaisseur de racine fournissent une force de morsure maximale par course pour le cisaillement de boîtiers métalliques épais, sans les risques de fracture associés aux conceptions à plusieurs griffes.",
+        value:
+          "Ferraille · Véhicules hors d'usage (VHU) · Déchets électroniques · Appareils électroménagers (DEEE)",
       },
     ],
     dimensionLabels: {
@@ -961,90 +1188,183 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "E-Waste / Light Scrap",
+        itemNo: "SR002201",
+        spec: "Déchets électroniques / Déchets légers",
         od: "Φ 300–450 mm",
         thickness: "40–60 mm",
-        bore: "Hex / Light Splined",
-        hooks: "3 Hooks",
+        bore: "Hexagonal / Cannelé léger",
+        hooks: "3 crochets",
       },
       {
-        spec: "Appliances / Steel Drums",
+        itemNo: "SR002202",
+        spec: "Appareils ménagers / Fûts en acier",
         od: "Φ 450–600 mm",
         thickness: "60–80 mm",
-        bore: "Medium Splined",
-        hooks: "2–3 Hooks",
+        bore: "Cannelure moyenne",
+        hooks: "2 à 3 crochets",
       },
       {
-        spec: "ELV / Heavy Demolition",
+        itemNo: "SR002203",
+        spec: "Véhicules hors d'usage (ELV) / Démolition lourde",
         od: "Φ 600–800+ mm",
         thickness: "80–150 mm",
-        bore: "Heavy Splined",
-        hooks: "1–2 Hooks",
+        bore: "À cannelures lourdes",
+        hooks: "1 à 2 crochets",
       },
     ],
-    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "scrap-chopper-blades",
+      "metal-shear-knives",
+    ],
     offers: {
       lowPrice: 250,
       highPrice: 3500,
     },
+    components: [
+      {
+        id: "multi-shaft-blades-metal-advantage-1",
+        tag: "Options de lames de coupe en H13 et 42CrMo",
+        title: "Options de lames de coupe en H13 et 42CrMo",
+        description:
+          "Les configurations H13 et 42CrMo offrent aux transformateurs de déchets différentes options de matériaux pour les lames de rechange, l’acier spécifié étant pris en compte en fonction du flux de métaux et de la conception existante à crochet épais.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-2",
+        tag: "Profils à un, deux et trois crochets",
+        title: "Profils à un, deux et trois crochets",
+        description:
+          "Sureay fournit des lames de coupe à crochets épais et à profil bas, disponibles dans les configurations à un, deux ou trois crochets indiquées. Les alésages cannelés et à rainures multiples peuvent être réalisés selon le plan de l'arbre, la position des crochets étant définie par rapport à l'alésage.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-3",
+        tag: "Kits de remplacement par position d'arbre",
+        title: "Kits de remplacement par position d'arbre",
+        description:
+          "Les lames individuelles et les jeux multipositions peuvent être commandés avec des références de plan distinctes pour chaque arbre, ce qui facilite les remplacements lorsque la machine utilise plusieurs largeurs ou profils de lame.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Pourquoi choisir H13 ou 42CrMo plutôt que D2 pour les applications de broyage des métaux ?",
+            "Comment identifie-t-on les lames de rechange pour broyeurs de ferraille ?",
           answer:
-            "Le D2 est optimisé pour la résistance à l'usure au détriment de la ténacité - il atteint une dureté de 58 à 62 HRC mais devient cassant sous l'effet de chocs extrêmes. Lorsqu'une lame D2 heurte un bloc moteur, l'énergie de l'impact dépasse la résistance à la rupture du matériau en quelques microsecondes, provoquant un éclatement catastrophique du crochet. Le H13 et le 42CrMo (AISI 4140) possèdent une ténacité intrinsèquement supérieure ; à HRC 50-54, ils absorbent la même énergie d'impact de manière élastique au lieu de se fracturer.",
+            "Identifiez la position de l’arbre et de la lame, puis comparez le diamètre, l’épaisseur axiale, la forme du crochet et l’interface de l’arbre. Les machines à arbres multiples peuvent utiliser différentes configurations au sein d’une même chambre de coupe. Le modèle de la machine, la référence d’origine et le plan d’assemblage fournissent les informations de référence pour un jeu de pièces de rechange, y compris la relation avec les entretoises et les lames conservées.",
         },
         {
           question:
-            "Quel nombre de crochets et quel profil dois-je spécifier pour le broyage des véhicules hors d'usage ?",
+            "Les couteaux de broyeurs rotatifs, les marteaux et les elames de cisailles pour déchets sont-ils interchangeables ?",
           answer:
-            "Pour le broyage primaire de VHU (carrosseries de voitures, sous-ensembles de moteurs), spécifiez des modèles à 1 ou 2 crochets à profil bas avec une épaisseur de racine maximale. Un faible nombre de griffes concentre le couple disponible de la machine sur un nombre réduit de contacts de crochets robustes, générant ainsi la force de morsure massive nécessaire pour pénétrer l'acier épais. Un nombre élevé de griffes répartit le couple trop finement, ce qui fait que la lame glisse sur le métal au lieu de le mordre.",
+            "Non. Les couteaux rotatifs s'engrènent sur les arbres des broyeurs, les marteaux des broyeurs à marteaux concassent les matériaux par impact, et les [lames de cisaille Alligator](/products/metal-shear-knives) coupent en paire, montées sur des mâchoires. Le type d'équipement détermine la pièce d'usure à commander.",
         },
         {
           question:
-            "Comment les alésages cannelés empêchent-ils l'endommagement de l'arbre du rotor lors du broyage de métaux lourds ?",
+            "Quelles sont les caractéristiques des chutes à prendre en compte lors du choix du matériau de la lame de découpe ?",
           answer:
-            "Dans le cas du broyage de métaux lourds, le couple maximal du rotor atteint 3 à 5 fois la charge constante lors d'une frappe brutale. Les alésages standard à clavette unique concentrent tout ce couple en un seul point, élargissant progressivement la rainure de clavette et finissant par cisailler la clavette. Les alésages cannelés à fil EDM répartissent ce couple massif uniformément sur 10 à 20 faces de contact sur toute la circonférence, réduisant ainsi les pics de contrainte et protégeant votre coûteux arbre de rotor.",
+            "L'épaisseur des profilés métalliques, la force d'avance et la présence de matériaux mixtes ou abrasifs influent sur les charges exercées sur le tranchant. Les tôles d'appareils électroménagers légers, les déchets électroniques et les profilés métalliques denses peuvent générer des profils d'usure différents. Comparez ces conditions avec les spécifications existantes des nuances H13 ou 42CrMo, ainsi qu'avec l'état des crochets utilisés.",
         },
         {
           question:
-            "Quels sont les signes avant-coureurs de la nécessité de remplacer les lames de broyeur en métal ?",
+            "Pourquoi une lame de découpe de ferraille plus dure peut-elle tout de même subir une rupture de tranchant ?",
           answer:
-            "Les principaux indicateurs sont les suivants : (1) des fractures visibles à la racine du crochet ; (2) une usure du diamètre extérieur supérieure à 10-15 mm en dessous de la valeur nominale, indiquant une perte du jeu de cisaillement ; (3) une élongation de l'alésage, ce qui signifie que la lame bascule sur l'arbre même avec un couple de serrage maximal ; (4) une réduction du débit de >20 % à charge constante du moteur, indiquant que les lames poussent la ferraille au lieu de la cisailler.",
+            "La dureté ne constitue qu’un élément parmi d’autres des spécifications du matériau. Des chocs répétés, une concentration de charge au niveau d’un crochet et un soutien inadéquat peuvent entraîner une rupture même lorsque l’usure par abrasion est limitée. Évaluez conjointement la forme de la lame, son état après traitement thermique et l’avance réelle avant de modifier la dureté, en particulier lorsque la défaillance actuelle se traduit par un ébréchage localisé plutôt que par une usure progressive.",
+        },
+        {
+          question:
+            "Les alésages des lames à cannelures et à rainures multiples peuvent-ils être personnalisés ?",
+          answer:
+            "Oui. Sureay peut fabriquer l’interface d’arbre conformément au plan de la lame, y compris la géométrie des cannelures ou des rainures de clavette, les surfaces d’appui et l’orientation. Le plan doit indiquer l’emplacement des caractéristiques de l’alésage par rapport au profil du crochet. Cela s’avère particulièrement utile lorsque des lames adjacentes ont des diamètres similaires mais des calages ou des raccords d’arbre différents.",
+        },
+        {
+          question:
+            "Une lame de rechange pour la découpe de ferraille peut-elle conserver le profil de crochet d'origine ?",
+          answer:
+            "Oui. Utilisez le nombre de crochets, le contour et l’épaisseur du corps indiqués sur le dessin d’origine, l’alésage étant aligné sur le profil des crochets. Utilisez une pièce de référence non usée pour retrouver la géométrie prévue de la pointe si l’ancienne lame présente des crochets ébréchés ou arrondis.",
+        },
+        {
+          question:
+            "Comment puis-je demander un devis pour un ensemble de découpeuses à plusieurs arbres destinées à la ferraille ?",
+          answer:
+            "Indiquez le modèle de la machine, le flux de chutes et les sections les plus épaisses, puis répertoriez les plans des lames et les quantités par arbre et par position. Précisez quels entretoises et quelles lames resteront en service. Des lignes distinctes permettent de différencier les formes de crochets à profil bas, les largeurs axiales et les orientations d'alésage, même lorsque les diamètres des lames correspondent.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Indiquez le modèle de la machine, le type de chutes, les plans de la lame et de l'entretoise, ainsi que l'arbre d'où provient la pièce.",
+    compatibleMachines: ["Shred-Tech", "Forus", "Arjes", "SSI", "Hammel"],
+    detailLayout: {
+      sizeRange: "Ø300–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "Pouvez-vous fournir des lames pour les plates-formes de broyage Shred-Tech, Arjes ou Forus ?",
-          answer:
-            "Oui. Nous procédons à la rétro-ingénierie des lames de remplacement à partir d'échantillons OEM mesurés en usine pour les séries ST de Shred-Tech, Imperator/Orion d'Arjes, les déchiqueteuses à usage intensif de Forus et les plates-formes SSI. Les profils cannelés et les motifs de contre-perçage personnalisés sont produits avec une extrême précision à l'aide de la technologie Wire-EDM.",
+          label: "Matériau",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
         },
         {
-          question:
-            "Quel est le délai de livraison pour le métal lourd lames de broyeur ?",
-          answer:
-            "Les nuances H13 et 42CrMo standard dans les dimensions courantes sont conservées en stock semi-fini et sont généralement expédiées dans un délai de 10 à 15 jours ouvrables. Pour les diamètres extérieurs massifs non standard ou les profils cannelés personnalisés nécessitant un nouvel outillage, le délai de livraison est de 20 à 25 jours ouvrables.",
-        },
-        {
-          question:
-            "Quels sont les certificats de qualité et la documentation que vous fournissez ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Pour les lames de broyeur en métal lourd, nous fournissons une traçabilité complète : Rapports d'essais de dureté Rockwell HRC (minimum 5 points par lame), certificats d'essais de résilience Charpy pour les nuances 42CrMo, enregistrements d'inspection dimensionnelle CMM et certificats de composition de l'aciérie.",
+          label: "Application",
+          value:
+            "Ferraille · Véhicules hors d'usage (VHU) · Déchets électroniques · Appareils électroménagers (DEEE)",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Ø300–800+ mm",
+        },
+        {
+          label: "Matériau",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
+        },
+        {
+          label: "Dureté",
+          value: "HRC 50–54",
+        },
+        {
+          label: "Géométrie des griffes",
+          value: "1, 2 ou 3 crochets épais à profil bas",
+        },
+        {
+          label: "Conception de l'alésage",
+          value:
+            "À cannelures lourdes / à rainures multiples (électroérosion à fil)",
+        },
+        {
+          label: "Application",
+          value:
+            "Ferraille · Véhicules hors d'usage (VHU) · Déchets électroniques · Appareils électroménagers (DEEE)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Indiquez le modèle de la machine, le type de chutes, les plans de la lame et de l'entretoise, ainsi que l'arbre d'où provient la pièce.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
     id: "twin-shaft-blades-battery",
-    name: "Lames pour le recyclage des piles",
-    fullName:
-      "Lames de broyage de précision à double arbre pour le recyclage des batteries Li-Ion",
+    name: "Couteaux de broyeur pour le recyclage des batteries",
+    fullName: "Couteaux de prébroyage pour le recyclage des batteries",
+    seoTitle:
+      "lames de broyeur pour le recyclage des batteries | Pièces de rechange sur mesure",
     category: "shredder_blades",
     sector: "new_energy",
-    categoryDisplay: "Lames de déchiqueteuse",
+    categoryDisplay: "Couteaux de broyeur",
     image: "/images/products/shredder-blades/shredder-blades.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 640],
+    },
     badge: "Nouvelle énergie",
     badgeColor: "teal",
     gallery: [
@@ -1053,59 +1373,39 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Conçu pour le pré-broyage critique des packs, modules et cellules de batteries lithium-ion des véhicules électriques dans des environnements à gaz inerte. La rectification de précision avec un parallélisme d'épaisseur de ±0,02 mm garantit des distances de cisaillement exactes qui empêchent le déchirement de la feuille et l'emballement thermique. La sélection d'alliages spéciaux et les traitements de surface résistent aux effets hautement corrosifs des électrolytes de batterie LiPF6.",
-    fullDescription:
-      "Le recyclage des batteries lithium-ion (Li-ion) présente des défis mécaniques et chimiques uniques que les lames de broyeur standard ne peuvent pas traiter de manière fiable. Le pré-broyage des packs de batteries et des cellules cylindriques a souvent lieu dans des atmosphères purgées à l'azote pour supprimer les risques d'incendie et d'emballement thermique. Les lames de broyeur standard tombent en panne prématurément dans cet environnement à cause de deux mécanismes distincts : la corrosion de l'électrolyte par l'acide LiPF6 et HF libéré pendant la rupture de la cellule, et la défaillance mécanique causée par des dégagements de cisaillement imprécis qui plient - au lieu de couper - les feuilles de cuivre (8-12μm) et d'aluminium (15-20μm) du collecteur de courant à l'intérieur des cellules de la batterie.\n\n## Meulage de précision à micro-dégagement (±0,02 mm)\n\nSi l'espace entre les lames à deux arbres contrarotatifs est trop large, les feuilles de la batterie ne se cisaillent pas - elles se plient, s'étirent et s'enroulent autour du rotor, provoquant des blocages immédiats dans un environnement de gaz inerte. Le déblocage d'un rotor sous azote nécessite l'arrêt complet du système, une purge et un retrait manuel - des heures d'immobilisation qui consomment beaucoup de N₂. Les lames de broyeur Sureay battery sont rectifiés avec précision pour un parallélisme d'épaisseur de ±0,02 mm sur toute la surface de la lame, ce qui garantit un jeu de cisaillement minimum cohérent sur l'ensemble du rotor pour des coupes propres et contrôlées sur les éléments en poche, les modules prismatiques et les packs d'accus cylindriques 18650/21700.\n\n## Résistance à la corrosion de l'électrolyte\n\nLes électrolytes LiPF6 s'hydrolysent au contact de l'humidité atmosphérique pour produire de l'acide fluorhydrique (HF), l'un des produits chimiques industriels les plus agressifs. Les aciers à outils D2 ou SKD11 standard se corrodent rapidement dans cet environnement, des piqûres de surface apparaissant aux joints de grains dans les 200 à 500 heures de fonctionnement. Sureay applique des traitements de surface anticorrosion spécialisés et sélectionne des nuances d'alliage résistantes à la corrosion pour les applications de recyclage des batteries, ce qui permet d'allonger considérablement les intervalles de service.\n\n## Profils d'alésage de précision en fil métallique-EDM\n\nLes pré-broyeurs de batteries fonctionnent à des vitesses de rotor précises, contrôlées par ordinateur, où le jeu entre l'alésage et l'arbre affecte directement la précision de la position des lames et l'uniformité de l'espace de cisaillement. Tous les profils d'alésage sont usinés par électro-érosion à fil à ±0,01 mm, ce qui garantit l'absence de jeu rotatif susceptible de provoquer des incohérences dans le jeu de cisaillement pendant le déchiquetage de précision des piles de feuilles de batteries.",
+      "Lames de cisailles rotatives de rechange pour les pré-broyeurs destinés au recyclage des batteries. Profils de lames et interfaces d'arbres sur mesure, fabriqués selon des plans homologués.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
     specs: [
       {
-        label: "Tolerance",
-        value: "±0.02 mm Thickness Parallelism",
+        label: "Tolérance",
+        value: "±0,02 mm Épaisseur Parallélisme",
       },
       {
-        label: "Hardness",
+        label: "Dureté",
         value: "HRC 54–58",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM Hex / Splined",
+        label: "Conception de l'alésage",
+        value: "Électroérosion à fil de précision : hexagonale / cannelée",
       },
       {
-        label: "Surface",
-        value: "Anti-corrosion treatment available",
+        label: "Revêtements en option",
+        value: "Traitement de surface anticorrosion disponible",
       },
       {
         label: "Application",
-        value: "EV Battery Packs · Pouch Cells · 18650/21700",
+        value:
+          "Blocs-batteries pour véhicules électriques · Cellules en poche · 18650/21700",
       },
       {
-        label: "Environment",
-        value: "Inert gas (N₂ / Ar) compatible",
+        label: "Environnement",
+        value: "Compatible avec les gaz inertes (N₂ / Ar)",
       },
     ],
-    components: [
-      {
-        id: "micro-clearance",
-        tag: "PRÉCISION",
-        title: "±0,02mm Parallélisme d'épaisseur",
-        description:
-          "Rectifiée avec précision selon des tolérances d'épaisseur très strictes, elle garantit un jeu de cisaillement constant sur l'ensemble du rotor pour des coupes nettes sur les feuilles de batterie en cuivre et en aluminium sans pliage ni enroulement du rotor.",
-      },
-      {
-        id: "corrosion-resistance",
-        tag: "DURABILITÉ",
-        title: "Résistance à la corrosion de l'électrolyte",
-        description:
-          "Une métallurgie et des traitements de surface spécialisés offrent une résistance accrue à la corrosion par l'acide HF dérivé du LiPF6, prolongeant ainsi les intervalles de service des lames dans les environnements chimiques agressifs du recyclage des batteries.",
-      },
-      {
-        id: "wire-edm-bore",
-        tag: "AMÉNAGEMENT",
-        title: "Alésages de précision par électroérosion à fil",
-        description:
-          "Tous les profils d'alésage sont usinés à ±0,01 mm par électro-érosion à fil, ce qui élimine le jeu de rotation qui provoque des incohérences dans l'espace de cisaillement lors du traitement de précision des piles de feuilles.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "lithium-battery-slitting-knives",
     ],
     dimensionLabels: {
       col0: "Type de cellule / module",
@@ -1118,88 +1418,165 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Cylindrical / Pouch Cells",
+        itemNo: "SR002401",
+        spec: "Cellules cylindriques / à poche",
         od: "Φ 200–350 mm",
         thickness: "10–20 mm",
-        bore: "Hex / Splined",
+        bore: "Hexagonal / Cannelé",
         hooks: "±0.02 mm",
       },
       {
-        spec: "EV Module / Battery Pack",
+        itemNo: "SR002402",
+        spec: "Module EV / Bloc-batterie",
         od: "Φ 400–600 mm",
         thickness: "30–50 mm",
-        bore: "Splined",
+        bore: "Cannelé",
         hooks: "±0.05 mm",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 300,
       highPrice: 3000,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-battery-advantage-1",
+        tag: "Couteaux de pré-découpage basés sur des plans",
+        title: "Couteaux de pré-découpage basés sur des plans",
+        description:
+          "Sureay fournit des lames de pré-broyage de rechange pour batteries, conformes au plan de pièce et à la révision spécifiés. La dureté indiquée pour les lames est comprise entre 54 et 58 HRC, le matériau, la finition et l'interface d'arbre étant définis par le cahier des charges de chaque pièce.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-2",
+        tag: "Alésages hexagonaux et cannelés réalisés par électroérosion à fil",
+        title:
+          "Alésages hexagonaux et cannelés réalisés par électroérosion à fil",
+        description:
+          "Les interfaces d'arbres hexagonaux et cannelés peuvent être fabriquées avec l'épaisseur de lame et la géométrie d'appui spécifiées ; ainsi, l'alésage et la disposition axiale sont pris en compte dans la même commande de remplacement.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-3",
+        tag: "Traitement de surface anticorrosion en option",
+        title: "Traitement de surface anticorrosion en option",
+        description:
+          "Un traitement de surface anticorrosion est disponible en option pour certaines configurations de lames, ce qui permet d’inclure les exigences de finition aux côtés des exigences relatives au matériau et aux dimensions de la pièce.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Pourquoi la tolérance de ±0,02 mm d'épaisseur est-elle essentielle pour le pré-broyage des batteries ?",
+            "À quelle étape du recyclage des batteries ces lames sont-elles utilisées ?",
           answer:
-            "Les packs de batteries contiennent des feuilles de collecteur de courant en cuivre et en aluminium d'une épaisseur de 8 à 20μm. Lorsque l'espace de cisaillement entre les pales contrarotatives dépasse environ 0,05 mm, les feuilles se déforment plastiquement au lieu de se plier et de s'enrouler autour du rotor, ce qui provoque des blocages opérationnels. Dans un environnement purgé à l'azote, l'élimination d'un blocage du rotor nécessite l'arrêt complet du système de gaz inerte, l'évacuation et l'enlèvement manuel - des heures d'arrêt qui consomment beaucoup de N₂. Le maintien du parallélisme de l'épaisseur des pales à ±0,02 mm garantit un écart de cisaillement minimal constant sur toute la longueur du rotor, ce qui empêche les enroulements de feuilles dans des conditions de fonctionnement normales.",
+            "Ces découpeuses à cisaillement rotatif interviennent lors de l’étape de pré-broyage des équipements de recyclage des batteries. Les étapes ultérieures de broyage fin nécessitent un outillage différent. La fabrication de batteries utilise des [couteaux de refendage pour batteries](/products/lithium-battery-slitting-knives) destinés aux bandes d’électrodes enduites. L’étape du processus et le schéma de la découpeuse existante permettent de déterminer quelle pièce de rechange doit être installée dans la machine de recyclage.",
         },
         {
           question:
-            "Quelles sont les causes de la corrosion des lames dans les environnements de broyage des batteries lithium-ion ?",
+            "Quelles sont les dimensions qui déterminent si une lame de broyeur de batteries est adaptée ?",
           answer:
-            "Le LiPF6, le sel d'électrolyte lithium-ion le plus courant, réagit avec des traces d'humidité atmosphérique pour produire de l'HF (acide fluorhydrique). Lors d'une rupture de cellule pendant le pré-broyage, même une atmosphère d'azote contient suffisamment d'humidité résiduelle pour provoquer une hydrolyse partielle. Les aciers à outils standard (D2, SKD11) se corrodent rapidement dans l'HF - des piqûres de surface apparaissent aux joints de grains dans les 200 à 500 heures, dégradant la géométrie des arêtes et réduisant l'efficacité du cisaillement. Sureay applique des traitements de surface anticorrosion spécialisés pour prolonger les intervalles de service bien au-delà des aciers à outils standard dans les lignes de recyclage des batteries.",
+            "L'ajustement dépend du profil de la lame, de l'alésage ou de la cannelure, des surfaces d'appui et de la position axiale, qui doivent correspondre à l'assemblage d'origine. Les largeurs des entretoises déterminent l'emplacement des lames adjacentes. Un plan d'empilement permet de distinguer les contours de lames similaires affectés à différentes positions sur l'arbre.",
         },
         {
           question:
-            "Faut-il utiliser des broyeurs à deux arbres ou à un arbre pour le prétraitement des batteries Li-ion ?",
+            "Une découpeuse destinée aux cellules de batterie peut-elle également être utilisée pour les modules ou les packs ?",
           answer:
-            "Les broyeurs à double arbre sont la norme pour la réduction de la taille primaire des batteries de VE, car la conception contrarotative, à faible vitesse et à couple élevé, soumet les cellules à un cisaillement contrôlé plutôt qu'à un impact. Ce mode de défaillance contrôlé réduit les événements thermiques aigus par rapport aux impacteurs à arbre unique à grande vitesse. Les lames de précision à deux arbres avec des jeux de cisaillement contrôlés sont donc la norme mécanique de première étape, suivie d'un traitement ultérieur en aval.",
+            "Uniquement si la configuration homologuée de la machine prend en charge ce type d’alimentation. Les termes « cellule », « module » et « pack » décrivent l’entrée, et les mêmes dimensions de lame peuvent correspondre à différentes opérations de pré-découpage. Utilisez la référence de pièce homologuée pour votre ligne installée et faites évaluer tout changement d’alimentation au regard des exigences de son processus.",
         },
         {
           question:
-            "Quels sont les profils d'alésage requis pour les plates-formes de broyage de batteries purgées à l'azote ?",
+            "Comment faut-il spécifier le matériau et le traitement de surface optionnel ?",
           answer:
-            "Les pré-broyeurs de batteries des fabricants spécialisés (Erdwich, Hosokawa, Metso et les lignes de recyclage de batteries Andritz) utilisent des profils d'arbre de rotor exclusifs dont les tolérances sont plus précises que celles des broyeurs industriels généraux. Des alésages cannelés et hexagonaux à ±0,01 mm sont nécessaires pour un montage sans jeu du rotor - tout jeu de rotation à la vitesse de fonctionnement entraîne une variation constante de la fente de cisaillement et un risque de blocage de la feuille. Nous fabriquons des profils d'alésage selon des dessins d'arbres personnalisés ; veuillez fournir le dessin du profil de l'arbre du rotor pour une spécification exacte de l'alésage.",
+            "Précisez le matériau et le traitement de surface requis par le plan de la découpeuse sous forme d’exigences de commande distinctes. Pour un traitement anticorrosion en option, définissez la finition demandée ainsi que les dimensions finales et les surfaces d’accouplement. La sélection doit respecter les exigences relatives aux composants de la ligne, y compris toute restriction concernant la modification du matériau existant ou de la configuration de surface.",
+        },
+        {
+          question:
+            "En quoi un empilement de lames en vrac affecte-t-il les lames de rechange ?",
+          answer:
+            "Tout jeu au sein de l'ensemble « lame de coupe et entretoise » peut réduire les performances de déchiquetage et augmenter le risque d'endommagement de l'ensemble. Le simple fait de remplacer les arêtes de coupe ne suffit pas à corriger un ensemble usé ou mal fixé. Vérifiez son état par rapport aux exigences d'entretien de la machine et respectez les surfaces d'appui et les cotes axiales spécifiées lors de la commande de lames de rechange.",
+        },
+        {
+          question:
+            "Comment puis-je demander un devis pour des lames de pré-broyage de batteries ?",
+          answer:
+            "Indiquez le modèle de la ligne ou de la machine, le plan et la révision approuvés de la lame, la quantité par position d’arbre, ainsi que le matériau et le traitement de surface requis. Précisez le produit traité à cette étape. Si vous avez besoin d’une pièce révisée, indiquez sur le plan les caractéristiques modifiées ainsi que les dimensions de logement et d’empilage conservées.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Veuillez inclure le modèle du pré-déchiqueteur, les plans approuvés de la lame de coupe et de l'entretoise, ainsi que vos exigences en matière de matériau ou de surface.",
+    disambiguation:
+      "Pour la fabrication d’électrodes, consultez [Couteaux de refendage pour électrodes de batteries au lithium](/products/lithium-battery-slitting-knives).",
+    detailLayout: {
+      sizeRange: "Ø200–600 mm",
+      heroSpecs: [
         {
-          question:
-            "Pouvez-vous fournir des ensembles de rotors et de contre-couteaux assortis pour les pré-broyeurs de batteries ?",
-          answer:
-            "Oui. Pour les lignes de recyclage de batteries où la cohérence du jeu de cisaillement est primordiale, nous fournissons des jeux de lames de rotor et des contre-couteaux stationnaires rectifiés ensemble en tant que paire appariée pour garantir que le jeu de cisaillement composite est conforme à la spécification. Tous les ensembles appariés sont accompagnés d'un certificat de vérification de l'espacement qui documente l'espacement mesuré en plusieurs points sur la longueur du rotor.",
-        },
-        {
-          question:
-            "Quelle documentation sur la qualité est fournie pour la qualification de l'usine de recyclage des piles ?",
-          answer:
-            "Les installations de recyclage des batteries ont souvent besoin d'une documentation de qualité améliorée pour la validation des processus. Nous fournissons : Des rapports d'inspection dimensionnelle CMM, des enregistrements de mesures de circularité et de parallélisme, des certificats de processus de traitement de surface, la traçabilité des matériaux depuis le CoA de l'aciérie certifiée jusqu'à l'inspection finale, et des résultats d'essais de dureté par lame. Des ensembles de documents spécifiques à l'application peuvent être fournis pour les environnements contrôlés IATF 16949 ou ISO 45001.",
-        },
-        {
-          question:
-            "Proposez-vous des échantillons de lames pour la validation du processus avant la commande d'une production complète ?",
-          answer:
-            "Oui. La qualification du processus de recyclage des batteries nécessite généralement 2 à 4 échantillons de lames pour la vérification de l'ajustement et l'essai de résistance de l'électrolyte avant l'engagement de la production. Le délai de production des échantillons est de 10 à 15 jours ouvrables pour les spécifications relatives aux batteries. Nous pouvons participer aux appels de révision technique du client pendant le processus de validation.",
+          label: "Application",
+          value:
+            "Blocs-batteries pour véhicules électriques · Cellules en poche · 18650/21700",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Ø200–600 mm",
+        },
+        {
+          label: "Tolérance",
+          value: "±0,02 mm Épaisseur Parallélisme",
+        },
+        {
+          label: "Dureté",
+          value: "HRC 54–58",
+        },
+        {
+          label: "Conception de l'alésage",
+          value: "Électroérosion à fil de précision : hexagonale / cannelée",
+        },
+        {
+          label: "Revêtements en option",
+          value: "Traitement de surface anticorrosion disponible",
+        },
+        {
+          label: "Application",
+          value:
+            "Blocs-batteries pour véhicules électriques · Cellules en poche · 18650/21700",
+        },
+        {
+          label: "Environnement",
+          value: "Compatible avec les gaz inertes (N₂ / Ar)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Veuillez inclure le modèle du pré-déchiqueteur, les plans approuvés de la lame de coupe et de l'entretoise, ainsi que vos exigences en matière de matériau ou de surface.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Lames de scie à bûches de papier tissu",
-    fullName:
-      "Lames de scie circulaire à bûches de première qualité pour la transformation des mouchoirs et des serviettes",
+    seoDescription:
+      "Coupez des rouleaux de papier hygiénique et d'essuie-tout avec des lames D2, Cr12MoV ou M2 HSS. Les diamètres répertoriés vont de 610 à 1 000 mm, avec des tailles personnalisées jusqu'à 1 200 mm.",
+    name: "Lames de scie pour rouleaux de papier tissue",
+    fullName: "Lames de scie pour la découpe des rouleaux de papier ouate",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Lames en papier de soie",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
-    badge: "Zero Core Crush",
-    badgeColor: "blue",
+    imageDimensions: {
+      width: 2000,
+      height: 2000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1108,
+      height: 1108,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
@@ -1209,17 +1586,15 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Rendu de lame de scie circulaire à bûches de papier tissu avec face polie miroir et motif de trous d'entraînement",
-      "Pile de lames de scie circulaire à bûches de papier tissu finies dans une caisse en bois chez Sureay",
-      "Lame de scie circulaire à bûches de papier tissu emballée dans une caisse en bois avec protection de bord avant expédition",
-      "Lame de scie circulaire à bûches de papier tissu Ø610 mm D2, face polie miroir avec trous d'entraînement",
-      "Alésage Ø68,26 mm et motif de trous d'entraînement pour les scies à bûches Fabio Perini",
-      "Face de la lame de scie circulaire à bûches de papier tissu montrant la finition polie miroir sous l'éclairage de l'atelier",
+      "Lames de scie circulaire pour couper des rouleaux de papier ouate, rendu montrant une face polie miroir et un motif de trou d'épingle d'entraînement",
+      "Pile de lames de scie circulaire finies pour couper des rouleaux de papier ouate dans une caisse d'emballage en bois à Sureay",
+      "lames de scie circulaire pour couper des rouleaux de papier ouate emballés dans une caisse en bois avec protection de bord avant expédition",
+      "lames de scie circulaire pour couper des rouleaux de papier ouate avec une face polie et des trous de montage",
+      "Alésage central et configuration des trous de montage sur des lames de scie circulaire pour couper des rouleaux de papier ouate",
+      "Lames de scie circulaire pour couper des rouleaux de papier ouate, face montrant une finition polie miroir sous l'éclairage de l'atelier",
     ],
     description:
-      "Papier tissue lames de scie circulaire pour bûches Ø610-Ø1200 mm - D2/Cr12MoV trempé sous vide (HRC 58-60), micro-affûté à ≤0,15 mm de battement latéral pour une coupe transversale sans oscillation. Élimine les noyaux écrasés et la poussière de papier sur les lignes de mouchoirs en papier, d'essuie-tout et de JRT. Compatible avec l'affûtage CBN en ligne. Adaptation OEM pour Fabio Perini, PCMC, Casmatic, Gambini et Bretting. Diamètres personnalisés en 10 jours ouvrables.",
-    fullDescription:
-      "La coupe transversale des billes de papier est l'opération de coupe la plus importante d'une ligne de transformation du papier tissu. Un défaut dimensionnel à ce stade - noyaux de carton écrasés, production excessive de poussière ou faces de coupe inclinées - se propage immédiatement dans les stations d'emballage, déclenchant des arrêts de ligne et des rejets de produits de consommation.\n\nLes lames de scie circulaire pour bûches Sureay tissue sont fabriqués à partir de acier à outils pour travail à froid D2 (1.2379) et Cr12MoV de première qualité. Comme ces lames massives (jusqu'à Ø1200 mm) tournent à des vitesses extrêmes, la stabilité est essentielle. Chaque lame est trempée sous vide, mise à niveau de tension et micro-affûtée selon des tolérances dimensionnelles strictes vérifiées sur une MMT calibrée avant l'expédition :\n\n- **Décalage latéral:** ≤0,15 mm\n- battement latéral : ≤0,15 mm ** Battement d'arête : ≤0,10 mm **Parallélisme de face : ≤0,10 mm\n- **Parallélisme de face:** 0,05 mm\n- **Concentricité (diamètre extérieur par rapport à l'alésage):** ≤0,30 mm\n- **Tolérance d'alésage:** Ø68.26 mm (+0.05 / 0.00 mm)\n\n## Compatibilité avec l'affûtage en continu\n\nContrairement à la couteaux circulaires standard, les scies à bûches de papier tissu sont affûtées en continu *pendant* leur fonctionnement par des meules CBN (nitrure de bore cubique) synchronisées. La traitement thermique de Sureay vise la dureté HRC 58-60. Cette plage de dureté spécifique garantit que la lame s'affûte proprement contre les pierres CBN sans les charger ou les glacer, maintenant un tranchant rasoir cycle après cycle sans consommer vos coûteuses meules d'affûtage.\n\n## Géométrie du biseau et réduction de la poussière\n\nLe tissu est une bande de faible densité et de grande surface dont la résistance à la compression est proche de zéro. Le couper avec un biseau trop raide crée une compression qui entraîne un excès de poussière de papier (un risque majeur d'incendie dans les lignes de serviettes collées par pulvérisation) et une densification des bords qui réduit la souplesse du rouleau. Nous utilisons un angle de biseau peu profond (15°-25°) qui sépare les fibres par pur cisaillement. Associé à une face de lame polie miroir (Ra ≤0,2 μm), cela permet d'obtenir des coupes impeccables sur le papier hygiénique 2 plis et 3 plis de qualité supérieure.\n\n## Compatibilité d'alésage par plate-forme OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (toutes les séries), PCMC Forte/Elite, Körber/MTC scies à bûches.\n\n**Ø82,55 mm:** Casmatic (plates-formes sous licence Kimberly-Clark), systèmes de scies à bûches OEM tiers italiens et espagnols.\n\n**Ø60,00 mm:** Scies à bûches de grand format pour l'essuyage industriel, les rouleaux jumbo (JRT) et la production de papier hygiénique sans mandrin (diamètre extérieur 870-1000 mm).\n\nLes diamètres extérieurs de Ø610 mm à Ø1200 mm sont fabriqués sur commande dans un délai standard de 10 jours ouvrables. L'examen des dessins et l'approbation des dimensions sont possibles sur l'outillage de première commande.\n\n## Advanced Surface Coatings\n\n**Le chromage dur** offre une résistance à la corrosion dans les environnements de papeterie à forte humidité (≥75% HR) et réduit le coefficient d'adhérence des fibres de papier tissu, ce qui prolonge l'intervalle de nettoyage entre les cycles d'habillage des lames.\n\n**Le revêtement en téflon (PTFE):** crée une surface hautement lubrifiée qui glisse à travers les billes d'essuie-tout denses, réduisant considérablement l'intensité du moteur et éliminant les marques de brûlure sur les bords du papier. La meilleure spécification pour les lignes d'essuie-tout 3 plis de qualité supérieure.\n\n**Revêtement PVD TiN:** Le nitrure de titane par dépôt physique en phase vapeur (2-3 μm, HV 2300+) prolonge l'intervalle d'entretien des arêtes vives en cas de fonctionnement à cycle élevé. Recommandé pour les marques de papier tissus haut de gamme ayant des spécifications strictes en matière de contamination par la poussière.",
+      "Lames de rechange pour couper les rouleaux de papier hygiénique et d’essuie-tout. Acier D2, Cr12MoV ou acier rapide M2 HSS, avec alésage, perçages de fixation et profil de biseau sur mesure.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1235,141 +1610,71 @@ export const blades: Blade[] = [
       "Maflex",
       "MTorres",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379), Cr12MoV, M2 HSS",
-      },
-      {
-        label: "Diameter Capacity",
-        value: "Standard Ø610 mm up to Custom Ø1200 mm",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (Zero-wobble guaranteed)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Polished (Ra ≤0.2 μm)",
-      },
-      {
-        label: "Optional Coatings",
-        value: "Hard Chrome, Teflon (PTFE), TiN",
-      },
-      {
-        label: "Applications",
-        value: "Toilet Papier tissue, Kitchen Towels, Industrial Wipers (JRT)",
-      },
-      {
-        label: "Max Line Speed",
-        value: "300 strokes/min",
-      },
-      {
-        label: "Inspection Records Supplied",
-        value:
-          "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "La durée de vie d'une lame de scie à bûches sur une ligne de papier tissu dépend de la façon dont l'acier se comporte sous l'affûtage CBN continu, pas seulement de la dureté. Les deux nuances ci-dessous couvrent presque toutes les applications de papier tissu et d'essuie-tout que nous chiffrons.",
-      rows: [
-        {
-          grade: "D2 / 1.2379",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Lignes standard de papier hygiénique et d'essuie-tout avec affûtage CBN en ligne. Notre nuance par défaut.",
-          tradeoff:
-            "Le meilleur rapport qualité-prix global. Pas la durée de vie la plus longue sur fibre recyclée à forte teneur en cendres.",
-        },
-        {
-          grade: "Cr12MoV",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Lignes où le coût de la lame par coupe compte plus que la durée de vie absolue du tranchant ; support de réaffûtage largement disponible.",
-          tradeoff:
-            "Résistance à l'usure légèrement inférieure à celle du D2 sur fibre recyclée abrasive.",
-        },
-      ],
-      outro:
-        "Pour les lignes à grande vitesse traitant de la fibre recyclée très abrasive, nous proposons également l'acier M2 HSS, qui conserve le tranchant le plus longtemps entre les affûtages mais est plus sensible à l'état de la meule CBN. Si vous n'êtes pas sûr de la nuance dont votre ligne a besoin, indiquez-nous la fibre (vierge ou recyclée), la densité de la bille et le nombre de coupes par minute. Nous adaptons la nuance à la ligne, et non l'inverse.",
-    },
-    componentsIntro:
-      "La coupe transversale des billes de papier est l'opération de coupe la plus importante d'une ligne de transformation du papier tissu. Un défaut dimensionnel à ce stade - noyaux de carton écrasés, production excessive de poussière ou faces de coupe inclinées - se propage immédiatement dans les stations d'emballage, déclenchant des arrêts de ligne et des rejets de produits de consommation.",
+    compatibleMachinesIntro:
+      "Sureay fournit des lames de rechange en D2, Cr12MoV ou M2 HSS pour les lignes de transformation de papier ouate. Nous réalisons l’alésage, les perçages de fixation et le profil selon votre plan. Envoyez-nous celui de votre lame pour un devis adapté à votre scie. Les marques citées indiquent la compatibilité des pièces de rechange Sureay.",
     components: [
       {
-        id: "runout-control",
-        tag: "PRÉCISION",
-        title: "Tension sans oscillation",
+        id: "tissue-log-saw-mounting",
+        tag: "Géométrie de montage",
+        title:
+          "Options en acier à outils et en acier HSS pour la transformation du Papier tissu",
         description:
-          "Pourquoi une scie à bûches écrase-t-elle les noyaux de carton ? Presque toujours parce que le battement latéral a dépassé environ 0,20 mm, et la lame commence à frapper le noyau au lieu de le trancher. Une lame de 610 mm tournant à haut régime se déforme si elle n'est pas correctement tendue. Nous tendons et micro-affûtons chaque lame de scie à bûches avec un faux-rond latéral de ≤0,15 mm, ce qui garantit une coupe parfaitement droite sans osciller et écraser le fragile noyau de carton.",
+          "Sureay fournit des lames circulaires D2, Cr12MoV et M2 HSS pour couper les rouleaux destinés à la transformation du papier ouate et des essuie-tout, vous offrant ainsi des options de matériaux pour votre agencement de scie et d'affûtage existant.",
       },
       {
-        id: "cbn-compatible",
-        tag: "METALLURGIE",
-        title: "Prêt pour l'affûtage CBN en ligne",
+        id: "tissue-log-saw-profile",
+        tag: "Profil de la lame",
+        title: "Faces polies et traitements de surface en option",
         description:
-          "Lames D2 et Cr12MoV traitées thermiquement à HRC 58-60. Cette plage de dureté spécifique répond proprement aux meules CBN continues sans les charger ni les glacer, ce qui permet de conserver un tranchant rasoir et de protéger votre équipement d'affûtage.",
+          "Les faces de lame polies miroir sont disponibles avec des revêtements au chrome dur, au PTFE ou au TiN, ce qui permet de choisir les spécifications de surface en fonction du produit Papier tissu et du matériau de la lame.",
       },
       {
-        id: "anti-friction",
-        tag: "REVÊTEMENTS",
-        title: "Finitions téflon et chrome",
+        id: "tissue-log-saw-replacement",
+        tag: "Référence de remplacement",
+        title: "Configurations de montage et profils de biseau sur mesure",
         description:
-          "Le frottement génère de la chaleur et de la poussière de papier explosive. Les lames revêtues de chrome dur ou de téflon (PTFE) réduisent le coefficient de frottement, ce qui permet d'obtenir des bords de coupe impeccables sur les bûches d'essuie-tout 3 plis de qualité supérieure et d'allonger le temps moyen entre les cycles d'affûtage.",
+          "Commandez des lames de rechange avec des alésages, des gabarits de perçage, des moyeux et des biseaux sur mesure pour votre ligne de transformation. Les diamètres répertoriés vont de 610 à 1 000 mm, avec des diamètres sur mesure pouvant atteindre 1 200 mm.",
+        relatedBladeIds: ["rotary-slitter-knives-paper"],
       },
     ],
-    dimensionLabels: {
-      col0: "Machine cible / Type de bûche",
-      col1: "Diamètre extérieur (mm)",
-      col2: "Alésage / ID (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions standard pour les principaux équipementiers du secteur de la transformation des tissus. Trous d'entraînement personnalisés, rainures de clavette et dimensions jusqu'à Ø1200 mm pour les rouleaux industriels JRT fabriqués selon des spécifications exactes.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "4.76",
+        label: "Dimensions",
+        value:
+          "Diamètres extérieurs répertoriés : Ø 610–1 000 mm ; diamètres sur mesure jusqu'à Ø 1 200 mm",
       },
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "3.80",
+        label: "Matériau",
+        value: "D2 (1.2379), Cr12MoV ou M2 HSS",
       },
       {
-        spec: "Casmatic Standard",
-        od: '610 (24")',
-        id: '82.55 (3-1/4")',
-        thickness: "4.76",
+        label: "Revêtements en option",
+        value: "Chrome dur, PTFE ou TiN",
       },
       {
-        spec: "Bretting / MTC",
-        od: "680",
-        id: "68.26",
-        thickness: "4.76",
+        label: "Application",
+        value:
+          "Papier tissu pour les toilettes, essuie-tout, lingettes industrielles et rouleaux géants de Papier tissu",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "870",
-        id: "60",
-        thickness: "6.0",
+        label: "Faux-rond latéral",
+        value: "≤0.15 mm",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "1000",
-        id: "60",
-        thickness: "6.0",
+        label: "Excentricité du bord",
+        value: "≤0.10 mm",
+      },
+      {
+        label: "Finition de surface",
+        value: "Polissage miroir, Ra ≤ 0,2 µm",
+      },
+      {
+        label: "Taux de découpe de référence",
+        value:
+          "Jusqu’à 300 courses/min, en fonction de la scie et de la configuration de coupe",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["nonwoven-log-saw-blades", "rotary-slitter-knives-paper"],
     offers: {
       lowPrice: 180,
       highPrice: 1200,
@@ -1378,75 +1683,184 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Pourquoi ma scie à bûches écrase-t-elle les rouleaux de carton des rouleaux de papier hygiénique ?",
+            "Quelles lames de scie circulaire de rechange pour couper des rouleaux de papier ouate conviennent à ma ligne de transformation ?",
           answer:
-            "L'écrasement de la carotte est principalement dû à une oscillation excessive de la lame (battement latéral) ou à un tranchant émoussé. Lorsque le battement latéral dépasse 0,20 mm, la lame bat physiquement contre la carotte au lieu de la trancher. Nos lames sont mises à niveau par tension et vérifiées par CMM pour un battement latéral ≤0,15 mm. Vérifiez également que vos pierres d'affûtage CBN en ligne sont correctement alignées et qu'elles dressent activement la lame à chaque cycle.",
+            "La lame de rechange doit correspondre au diamètre, à l'alésage, à l'épaisseur, au moyeu, au biseau et au schéma des trous d'entraînement spécifiés pour la scie. Deux lames de Ø 610 mm peuvent présenter des alésages ou des épaisseurs de corps différents ; il convient donc d’utiliser la référence d’origine de la lame ainsi que le modèle de la machine. Les termes « lame de découpe pour papier toilette » et « lame de scie pour rouleau de papier tissue » peuvent tous deux désigner cette lame circulaire de coupe transversale. Pour la découpe longitudinale de bandes, voir [Lames de découpeuse rotative pour papier](/products/rotary-slitter-knives-paper).",
+        },
+        {
+          question: "Comment choisir entre les aciers D2, Cr12MoV et M2 HSS ?",
+          answer:
+            "Commencez par examiner le matériau actuel de la lame, le type de papier (Papier tissu) ou de papier essuie-tout, ainsi que le type d’affûtage. Comparez l’usure progressive, les dommages subis par le tranchant et la qualité de coupe obtenue entre deux cycles d’affûtage. Le cahier des charges de remplacement doit combiner le choix de l’acier avec le biseau et la section de lame existants, afin de pouvoir évaluer un changement de matériau dans des conditions de production comparables.",
         },
         {
           question:
-            "Comment minimiser la poussière et le déchirement des fibres lors de la coupe transversale des tissus ?",
+            "Qu'est-ce qui doit guider le choix d'un revêtement pour une lame de scie circulaire destinée à couper des rouleaux de papier ouate ?",
           answer:
-            "La poussière est générée lorsqu'une lame à friction élevée déchire les fibres des tissus au lieu de les cisailler. Nous avons conçu un angle de biseau peu profond (15°-25°) combiné à une face polie miroir (Ra ≤0,2 μm). Pour une réduction maximale de la poussière, optez pour nos lames revêtues de téflon (PTFE), qui réduisent considérablement la friction et permettent à la lame de glisser à travers la bille avec un déplacement minimal des fibres.",
+            "Tenez compte du matériau de la lame, du produit (Papier tissu) et de l’emplacement des résidus ou des problèmes de coupe liés à la chaleur. Le frottement entre la lame et le rouleau peut contribuer à l’échauffement. Précisez le traitement de surface souhaité indépendamment de la nuance d’acier et du biseau, et comparez les configurations revêtues et non revêtues dans les mêmes conditions de coupe.",
         },
         {
           question:
-            "Pouvez-vous fournir des lames pour les scies à bûches Fabio Perini, PCMC, Casmatic ou Gambini ?",
+            "Pourquoi les lames de scie circulaire destinées à couper des rouleaux de papier ouate peuvent-elles devenir festonnées après l'affûtage ?",
           answer:
-            "Oui. L'alésage standard de Ø68,26 mm (+0,05 mm) convient directement aux scies à bûches Fabio Perini et PCMC Forte/Elite. L'alésage de Ø82,55 mm couvre Casmatic et les plates-formes équivalentes. Pour les machines Gambini et Bretting, nous fabriquons selon la géométrie mesurée de votre lame actuelle ou votre propre plan, afin que le remplacement s'installe sans modification de l'outillage. Envoyez-nous le modèle de machine, une lame usée ou un croquis coté et nous confirmons la compatibilité avant de chiffrer.",
+            "Un affûtage irrégulier sur la circonférence peut produire un bord festonné ou polygonal. Les vérifications à effectuer portent notamment sur l’état de la meule, le contact sur les deux faces et le faux-rond de la lame montée. Comparez le profil obtenu avec l’historique d’affûtage et suivez la procédure d’affûtage du fabricant de la scie avant de choisir un autre matériau de remplacement.",
         },
         {
           question:
-            "Comment la lame interagit-elle avec le système d'affûtage continu CBN de la machine ?",
+            "Pourquoi le moyeu et le biseau ont-ils de l'importance alors que le diamètre correspond déjà ?",
           answer:
-            "Les scies à bûches utilisent des pierres CBN (nitrure de bore cubique) synchronisées pour affûter la lame en continu pendant le fonctionnement. Si le matériau de la lame est trop dur ou trop mou, il chargera ou glacera les pierres, les rendant inefficaces. Nos lames D2 traitées thermiquement à HRC 58-60 éliminent proprement les micro-copeaux sans encrasser les meules CBN.",
+            "Le moyeu définit la position de montage de la lame, tandis que le biseau détermine le profil de son arête de coupe et son contact avec les meules d’affûtage. Deux lames présentant le même diamètre, le même alésage et la même épaisseur de corps peuvent présenter des différences au niveau de ces caractéristiques. Un schéma en coupe permet d’identifier la configuration complète requise par la scie et son dispositif d’affûtage.",
         },
         {
           question:
-            "Quel est le plus grand diamètre de lame que vous pouvez fabriquer ?",
+            "Faut-il utiliser le diamètre d'une lame réaffûtée pour un nouveau remplacement ?",
           answer:
-            "Nous fabriquons des tissus lames de scie circulaire pour bûches jusqu'à Ø1200 mm pour les lignes de production d'essuie-glaces industriels grand format et de rouleaux jumbo (JRT). Celles-ci nécessitent nos fours sous vide traitement thermique de grand format et notre équipement de meulage à commande numérique. Le délai de livraison standard est de 10 jours ouvrables à compter de la signature du dessin.",
+            "Indiquez le diamètre d’origine de la lame neuve lorsque cette information est disponible. Les affûtages répétés réduisent le diamètre extérieur ; enregistrez donc séparément la dimension après réaffûtage. La référence du catalogue indique la taille répertoriée, et le schéma de la lame précise la géométrie du moyeu, du montage et du biseau pour une lame de rechange neuve.",
+        },
+        {
+          question:
+            "De quelles informations avez-vous besoin pour proposer une lame de scie circulaire pour couper des rouleaux de papier ouate ?",
+          answer:
+            "Indiquez le modèle de la scie, la référence d’origine de la lame ou le plan, la quantité et le produit Papier tissu que vous découpez. Précisez le diamètre et l’épaisseur de la nouvelle lame, l’alésage, la disposition des goupilles d’entraînement, la section transversale du moyeu et le biseau. Spécifiez l’acier et la finition souhaités s’ils sont déjà définis, et indiquez séparément le diamètre actuel si l’échantillon a été réaffûté.",
         },
       ],
-      company: [
-        {
-          question: "Vous êtes un fabricant ou une société commerciale ?",
-          answer:
-            "Fabricant direct. Nous forgeons, affûtons et contrôlons la qualité de chaque lame en interne, conformément à la certification ISO 9001:2015. Vous communiquez directement avec les ingénieurs de production qui ont fabriqué vos lames - pas de majoration pour les revendeurs.",
-        },
-        {
-          question:
-            "Fournissez-vous des meules d'affûtage CBN assorties aux lames ?",
-          answer:
-            "Oui. Nous fournissons des jeux de pierres à aiguiser CBN adaptés à notre lames de scie circulaire pour bûches, garantissant un angle d'affûtage, une dureté et des grains abrasifs corrects pour une durée de vie maximale de la lame et une usure minimale de la pierre.",
-        },
-        {
-          question: "Quelles sont les certifications de qualité de Sureay ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un enregistrement d'inspection dimensionnelle CMM et un certificat de lot traitement thermique. Les certificats d'usine et les rapports complets de traçabilité des matériaux sont disponibles sur demande.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Incluez le modèle de scie à rouleaux, le matériau du rouleau, le diamètre extérieur de la lame, l'alésage, l'épaisseur, le motif de trou de biseau et de goupille d'entraînement.",
+    dimensionLabels: {
+      col1: "Diamètre extérieur (mm)",
+      col2: "Alésage (mm)",
+      col3: "Épaisseur du corps (mm)",
+      intro:
+        "Chaque référence identifie une combinaison complète de diamètre extérieur, d'alésage et d'épaisseur de corps.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005101",
+        od: "610",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005102",
+        od: "610",
+        id: "68.26",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005103",
+        od: "610",
+        id: "82.55",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005104",
+        od: "680",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005105",
+        od: "870",
+        id: "60",
+        thickness: "6.0",
+      },
+      {
+        itemNo: "SR005106",
+        od: "1000",
+        id: "60",
+        thickness: "6.0",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lames de scie pour rouleaux de papier tissue | Ø610–1000 mm",
+      heroAlt:
+        "lames de scie circulaire pour couper des rouleaux de papier ouate avec un tranchant circulaire, un alésage central et des trous de montage",
+      sizeRange: "Ø610–1000 mm",
+      heroSpecs: [
+        {
+          label: "Application",
+          value: "découpe de rouleaux de papier ouate et d'essuie-tout",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value:
+            "Diamètres extérieurs répertoriés : Ø 610–1 000 mm ; diamètres sur mesure jusqu'à Ø 1 200 mm",
+        },
+        {
+          label: "Matériau",
+          value: "D2 (1.2379), Cr12MoV ou M2 HSS",
+        },
+        {
+          label: "Revêtements en option",
+          value: "Chrome dur, PTFE ou TiN",
+        },
+        {
+          label: "Application",
+          value:
+            "Papier tissu pour les toilettes, essuie-tout, lingettes industrielles et rouleaux géants de Papier tissu",
+        },
+        {
+          label: "Faux-rond latéral",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Excentricité du bord",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Finition de surface",
+          value: "Polissage miroir, Ra ≤ 0,2 µm",
+        },
+        {
+          label: "Taux de découpe de référence",
+          value:
+            "Jusqu’à 300 courses/min, en fonction de la scie et de la configuration de coupe",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/tissue-log-saw-blades-02.webp",
+        alt: "lames de scie circulaire pour couper des rouleaux de papier ouate montrant sa face et sa zone de montage centrale",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Demandez un devis pour vos lames circulaires pour rouleaux de coupe",
+        description:
+          "Indiquez la référence de l'article ou la référence d'origine de la lame, le modèle de la scie, les schémas de montage et de biseautage, ainsi que la quantité.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Indiquez la référence de l'article ou la référence d'origine de la lame, le modèle de la scie, les schémas de montage et de biseautage, ainsi que la quantité.",
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Lames de scie à bûches non tissées",
-    fullName:
-      "Lames de scie à bûches résistantes à la corrosion pour la transformation de non-tissés et d'articles d'hygiène",
+    name: "Lames de scie pour rouleaux de non-tissé",
+    fullName: "Lames de scie pour la découpe des rouleaux de non-tissé",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Lames pour la transformation de non-tissés",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Anti-corrosion",
-    badgeColor: "teal",
+    imageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Lames de scie à bûches conçues pour les lignes de transformation de non-tissés et d'articles d'hygiène — lingettes pour bébés, lingettes humides, hygiène féminine et rouleaux pour incontinence adulte. Acier à outils D2 avec revêtement anti-corrosion TiN ou chrome dur résistant aux solutions à base d'alcool, aux lotions et aux tensioactifs. Micro-affûtées à ≤0,15 mm de battement latéral pour des coupes sans effilochage sur les substrats spunbond, meltblown, SMS et airlaid. Compatibles avec les lignes de transformation Fameccanica, GDM, Curt G. Joa et Zuiko. Diamètres personnalisés en 10 jours ouvrables.",
-    fullDescription:
-      "Les lignes de transformation de non-tissés pour l'hygiène présentent des exigences fondamentalement différentes en matière de lames par rapport aux opérations sur papier tissu. Alors que les scies à bûches pour papier tissu doivent gérer la poussière de papier et l'écrasement du noyau, les scies à bûches pour non-tissés font face à deux modes de défaillance distincts : l'effilochage des fibres dû à des substrats synthétiques qui résistent à un cisaillement net, et une corrosion accélérée due à l'environnement chimique des lignes fonctionnant à l'alcool, aux lotions, aux conservateurs (phénoxyéthanol) et aux tensioactifs en forte humidité.\n\nLes lames de scie à bûches pour non-tissés Sureay sont fabriquées en acier à outils D2 (1.2379) à haute teneur en carbone et en chrome, et sont disponibles avec des revêtements anti-corrosion spécifiques à chaque application. Chaque lame est trempée sous vide, mise à niveau de tension et vérifiée par MMT avant expédition.\n\n## Pourquoi les lames pour papier tissu échouent sur les lignes de non-tissés\n\nLes nappes composites de polypropylène spunbond, de meltblown et de SMS sont fondamentalement plus difficiles à cisailler proprement que le tissu cellulosique. Les fibres synthétiques sont élastiques : elles se dérobent devant une lame émoussée ou légèrement voilée au lieu de se séparer proprement, produisant des bords de coupe effilochés et filandreux qui provoquent des défauts de pliage et d'emballage en aval. Une lame optimisée pour le tissu (biseau moins prononcé, matrice plus tendre pour la compatibilité CBN) produira un arrachement de fibres visible sur les substrats spunbond en une fraction du temps de service qu'elle atteindrait sur du papier tissu.\n\nL'environnement chimique aggrave le problème. Les lignes de lingettes humides fonctionnent avec des taux de saturation de 2,0 à 3,5× (poids de la solution par rapport au poids du substrat), ce qui signifie que la lame est continuellement exposée à la chimie d'imprégnation : généralement 80 à 95 % d'eau purifiée plus des conservateurs, des humectants et des tensioactifs. Le D2 standard sans traitement de surface développera une micro-piqûration au niveau du tranchant en quelques semaines, accélérant la dégradation du tranchant et augmentant le risque de contamination particulaire dans un produit critique pour l'hygiène.\n\n## Options de revêtement pour les environnements d'hygiène\n\n**Revêtement TiN PVD (2-3 µm, HV 2300+) :** Le nitrure de titane déposé par voie physique en phase vapeur fournit une barrière chimiquement inerte avec une excellente adhérence. Il bloque la pénétration de l'alcool et des tensioactifs dans le substrat de la lame, prolonge les intervalles d'entretien du tranchant et ajoute une couche de dureté qui résiste à la micro-abrasion des particules de SAP (polymère superabsorbant) présentes dans les lignes de noyau absorbant. Recommandé pour la transformation de lingettes humides et de produits d'incontinence pour adultes.\n\n**Chromage dur :** Le chrome dur électrodéposé (20-30 µm) offre une résistance exceptionnelle à la corrosion dans les environnements à forte humidité (≥75 % HR) et réduit le coefficient de friction contre les nappes de fibres synthétiques. La couche plus épaisse comble également les micropores de surface, créant un effet d'étanchéité contre la pénétration des agents de nettoyage pendant les cycles de lavage.\n\n**D2 non revêtu (standard) :** Convient aux lignes de transformation de non-tissés secs — airlaid, thermobond, spunlace — où aucune chimie de saturation n'est présente. Dureté HRC 58-60, compatible avec l'affûtage CBN.\n\n## Géométrie du biseau pour fibre synthétique\n\nLes substrats non tissés nécessitent un angle de biseau primaire légèrement plus prononcé (25°-35°) par rapport au tissu (15°-25°). Cette géométrie plus prononcée concentre la force de coupe au point de contact du tranchant, initiant une séparation nette des fibres plutôt que la déflexion élastique responsable de l'effilochage. Pour les bûches de lingettes humides imprégnées de lotion à forte résistance cohésive, un biseau composé (dépouille primaire + secondaire) offre la face de coupe la plus nette avec un roulement de bord minimal sur des cycles de production prolongés.\n\n## Tolérances dimensionnelles\n\n- **Battement latéral :** ≤0,15 mm\n- **Battement du tranchant :** ≤0,10 mm\n- **Parallélisme de face :** 0,05 mm\n- **Concentricité (diamètre extérieur par rapport à l'alésage) :** ≤0,30 mm\n- **Finition de surface :** Poli miroir (Ra ≤0,2 µm)\n\n## Compatibilité avec les plateformes OEM\n\nLes scies à bûches pour la transformation de non-tissés d'hygiène diffèrent des lignes de papier tissu par la spécification de l'alésage et le diamètre. Plateformes courantes :\n\n**Fameccanica (Italie) :** Lignes de transformation de couches pour bébés et de produits d'hygiène féminine ; diamètres de lame généralement compris entre Ø400 et Ø550 mm selon le format du produit et le diamètre du rouleau.\n\n**GDM (Italie) :** Lignes de produits d'hygiène à grande vitesse ; spécifications de lame selon le plan du client.\n\n**Curt G. Joa (États-Unis) :** Lignes nord-américaines d'incontinence pour adultes et d'hygiène féminine ; spécifications d'alésage en unités impériales disponibles.\n\n**Zuiko (Japon) :** Transformation de couches pour bébés ; dimensions de lame selon plan OEM.\n\n**Équipementiers chinois locaux (Zlink, Dachang, constructeurs basés à Quanzhou) :** Spécifications de lame fournies selon plan ou rétro-ingénierie d'échantillon.\n\nDiamètre extérieur personnalisé de Ø350 mm à Ø700 mm fabriqué sur commande. Examen des plans et validation dimensionnelle de la première pièce disponibles.",
+      "Lames circulaires de rechange D2 pour rouleaux de coupe pour rouleaux de coupe transversale de tissu non tissé. Alésages personnalisés, modèles de trous de montage et profils de lame réalisés selon le dessin de votre couteau.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1457,102 +1871,64 @@ export const blades: Blade[] = [
       "Zlink",
       "Dachang",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379) — HRC 58–60",
-      },
-      {
-        label: "Coating Options",
-        value: "TiN PVD | Hard Chrome | Uncoated",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (CMM-verified)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Diameter Range",
-        value: "Ø350 mm – Ø700 mm (custom to drawing)",
-      },
-      {
-        label: "Applications",
-        value: "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Commandez des lames de scie de rechange en acier D2 pour vos rouleaux de non-tissé. Nous adaptons l’alésage et les perçages de fixation, avec des versions sans revêtement, au TiN ou au chrome dur. Envoyez votre plan ou un échantillon à Sureay pour obtenir un devis correspondant à votre configuration. Les marques de machines sont citées uniquement comme références de compatibilité pour les pièces de rechange Sureay.",
     components: [
       {
-        id: "corrosion-coating",
-        tag: "REVÊTEMENTS",
-        title: "TiN et chrome dur pour la résistance chimique",
+        id: "nonwoven-log-saw-installation",
+        tag: "Géométrie d'installation",
+        title: "D2 Couteaux pour rouleaux de tissu non tissé",
         description:
-          "Les lignes de transformation de lingettes humides et d'articles d'hygiène sont exposées en continu aux alcools, tensioactifs et conservateurs qui corrodent les tranchants en acier à outils nu en quelques semaines. Notre revêtement TiN PVD (HV 2300+) et notre chromage dur créent une barrière chimiquement inerte, bloquant la pénétration au niveau du tranchant et prolongeant l'intervalle de fonctionnement propre entre les cycles de réaffûtage.",
+          "Sureay fournit des lames circulaires D2 pour couper des rouleaux d'une dureté indiquée de 58 à 60 HRC pour les rouleaux de coupe transversale de tissu non tissé. Le profil de coupe et la section de la lame peuvent être spécifiés pour l'équipement de coupe au rouleau installé.",
       },
       {
-        id: "nonwoven-bevel",
-        tag: "GÉOMÉTRIE",
-        title: "Profil de biseau pour fibre synthétique",
+        id: "nonwoven-log-saw-edge",
+        tag: "Géométrie des arêtes",
+        title: "Options sans revêtement, TiN et chrome dur",
         description:
-          "Les nappes spunbond, meltblown et SMS se dérobent élastiquement devant un biseau à spécification tissu, provoquant un effilochage visible des fibres sur la face de coupe. Nous appliquons un biseau primaire plus prononcé (25°-35°) avec une dépouille secondaire composée qui initie une séparation nette des fibres dès le premier contact — éliminant le filandrage et la densification du bord qui provoquent des rejets en ligne d'emballage.",
+          "Les lames non revêtues, les configurations TiN PVD et au chrome dur vous offrent différentes options de surface pour une commande de remplacement, le revêtement étant spécifié séparément de la géométrie de la lame.",
       },
       {
-        id: "runout-hygiene",
-        tag: "PRÉCISION",
-        title: "Battement ≤0,15 mm pour des coupes sans effilochage",
+        id: "nonwoven-log-saw-reference",
+        tag: "Identification des pièces",
+        title: "Alésages sur mesure et gabarits de montage complets",
         description:
-          "Les bûches de non-tissés sont plus tendres et plus compressibles que les bûches de papier tissu. Tout voile latéral de la lame se traduit directement par une face de coupe comprimée et irrégulière plutôt que par un plan de cisaillement net. Chaque lame est mise à niveau de tension et vérifiée par MMT à ≤0,15 mm de battement latéral avant expédition, garantissant que la lame pénètre dans la bûche selon un angle constant à chaque passage.",
+          "Grâce à des alésages centraux, des dispositifs de fixation et des surfaces de repérage personnalisés, les lames de rechange s'adaptent parfaitement au plan de votre scie existante, y compris dans les configurations partageant le même diamètre mais utilisant des fixations différentes.",
+        relatedBladeIds: ["nonwoven-slitter-knives"],
       },
     ],
-    dimensionLabels: {
-      col0: "Plateforme machine / Format de produit",
-      col1: "Diamètre extérieur (mm)",
-      col2: "Alésage / ID (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions de référence pour les plateformes courantes de transformation de non-tissés d'hygiène. Motifs d'alésage, rainures de clavette et trous de broches d'entraînement fabriqués selon le plan du client. Diamètre extérieur personnalisé Ø350-Ø700 mm disponible avec un délai de 10 jours ouvrables.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Baby Wipe / Wet Wipe (short log)",
-        od: "400",
-        id: "To drawing",
-        thickness: "3.80",
+        label: "Application",
+        value: "Rouleaux de coupe transversale de tissu non tissé",
       },
       {
-        spec: "Baby Wipe / Wet Wipe (standard log)",
-        od: "450",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Matériau",
+        value: "D2 (1.2379)",
       },
       {
-        spec: "Femcare / Sanitary Napkin Roll",
-        od: "500",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Dureté",
+        value: "58–60 HRC",
       },
       {
-        spec: "Adult Incontinence / Large Format",
-        od: "550",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Dimensions",
+        value: "Ø350–700 mm",
       },
       {
-        spec: "Industrial / Canister Wipe Roll",
-        od: "600",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Revêtements en option",
+        value:
+          "TiN PVD ou chrome dur ; lames non revêtues également disponibles",
       },
       {
-        spec: "Custom / OEM to Drawing",
-        od: "Ø350–700",
-        id: "To drawing",
-        thickness: "3.80–6.00",
+        label: "Extrémité latérale",
+        value: "≤0.15 mm",
+      },
+      {
+        label: "Faux-rond du bord",
+        value: "≤0.10 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["tissue-log-saw-blades", "nonwoven-slitter-knives"],
     offers: {
       lowPrice: 150,
       highPrice: 900,
@@ -1561,76 +1937,167 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Pourquoi mes lames se corrodent-elles rapidement sur notre ligne de transformation de lingettes humides ?",
+            "Comment puis-je identifier des couteaux circulaires de remplacement pour les rouleaux de coupe transversale de tissu non tissé ?",
           answer:
-            "Les lignes de lingettes humides exposent en continu les lames à des conservateurs (phénoxyéthanol), des tensioactifs et des solutions à base d'alcool en forte humidité. L'acier à outils D2 nu développe une micro-piqûration au niveau du tranchant en quelques semaines dans ces conditions, accélérant l'usure et créant un risque de contamination particulaire. La solution est un traitement de surface résistant à la corrosion : le revêtement TiN PVD (2-3 µm, HV 2300+) fournit une barrière chimiquement inerte contre la pénétration de l'alcool et des tensioactifs, tandis que le chromage dur scelle les micropores de surface contre la pénétration des agents de nettoyage pendant les cycles de lavage.",
+            "Identifiez la scie et la référence de la pièce d'origine, puis comparez le diamètre, l'alésage, l'épaisseur, le modèle de montage et le biseau. La lame de coupe en rouleau non tissé est un nom d'achat connexe. Confirmez que la pièce traverse un rouleau enroulé. Pour couper une bande en mouvement dans le sens de la longueur, voir [Couteaux de découpe non tissés](/products/nonwoven-slitter-knives) .",
         },
         {
           question:
-            "Mes lames laissent des bords de coupe effilochés et filandreux sur les bûches non tissées spunbond. Quelle en est la cause ?",
+            "Sureay peut-il créer un modèle d'alésage et de trous personnalisé pour une scie existante ?",
           answer:
-            "L'effilochage sur les substrats PP spunbond ou SMS est causé par deux facteurs : une géométrie de biseau incorrecte et/ou un battement latéral excessif. Les fibres synthétiques sont élastiques — elles se dérobent devant un biseau peu prononcé à spécification tissu (15°-25°) au lieu de cisailler proprement. Les substrats non tissés nécessitent un biseau primaire plus prononcé (25°-35°) pour concentrer la force de coupe au point de contact des fibres. De plus, un battement latéral supérieur à 0,20 mm entraîne un écrasement de la bûche par la lame plutôt qu'un cisaillement, produisant des bords irréguliers. Nos lames pour non-tissés sont vérifiées par MMT à ≤0,15 mm de battement latéral et rectifiées avec un profil de biseau composé optimisé pour la fibre synthétique.",
+            "Oui. Sureay peut créer l'alésage et le modèle de boulon ou de fente selon le dessin. Indiquer le diamètre du cercle primitif et les positions angulaires des éléments de fixation ainsi que leur taille. Deux supports peuvent avoir le même nombre de trous tout en utilisant des cercles primitifs ou des dispositions angulaires différents.",
         },
         {
           question:
-            "Pouvez-vous fournir des lames compatibles avec les machines de transformation d'hygiène Fameccanica ou GDM ?",
+            "Comment spécifier la dureté D2 et le traitement de surface ?",
           answer:
-            "Oui. Nous fabriquons selon le plan ou l'échantillon du client pour les plateformes Fameccanica, GDM, Curt G. Joa, Zuiko et les équipementiers locaux chinois. Le diamètre d'alésage, le motif des trous de broches d'entraînement, le diamètre extérieur et l'épaisseur sont tous personnalisables. Envoyez-nous votre plan OEM ou un échantillon de lame usée et nous vous fournirons une confirmation dimensionnelle et une validation de première pièce avant la production complète.",
+            "Spécifiez séparément la dureté de l'acier de base D2 et l'état de surface. Si vous passez d'une lame non revêtue à du TiN PVD ou du chrome dur, identifiez la finition demandée sur le dessin de remplacement et gardez clairement la section de lame spécifiée et les dimensions de montage.",
         },
         {
           question:
-            "Quelle est la différence entre le revêtement TiN et le chromage dur pour les lames d'hygiène ?",
+            "L’épaisseur du corps décrit-elle entièrement le profil de coupe ?",
           answer:
-            "Le TiN PVD (nitrure de titane) est un revêtement fin et extrêmement dur (2-3 µm, HV 2300+) appliqué dans une chambre à vide. Il fournit une barrière inerte contre la corrosion chimique, ajoute une dureté de surface qui résiste à la micro-abrasion des particules de SAP dans les lignes de noyau absorbant, et prolonge les intervalles d'entretien du tranchant. Le chrome dur est une couche électrodéposée plus épaisse (20-30 µm) qui offre une excellente résistance à la corrosion dans les environnements à forte humidité et réduit le coefficient de friction contre les nappes de fibres synthétiques. Pour les lignes de lingettes humides à chimie agressive, le TiN est l'option privilégiée. Pour les lignes de non-tissés secs ou semi-secs dans des environnements d'usine à forte humidité, le chromage dur est plus économique.",
+            "Non. L’épaisseur du corps ne donne qu’une seule dimension du profil axial. Incluez le biseau et son orientation, ainsi que tout moyeu ou section étagée, sur le dessin de coupe transversale. Ces détails localisent le bord tranchant par rapport à la face de montage.",
         },
         {
           question:
-            "Ces lames fonctionnent-elles avec les systèmes d'affûtage CBN en ligne sur les lignes de non-tissés ?",
+            "Que décrivent le faux-rond latéral et le faux-rond de bord ?",
           answer:
-            "La plupart des scies à bûches pour la transformation de non-tissés d'hygiène n'utilisent pas de systèmes d'affûtage CBN continu en ligne (contrairement aux lignes de papier tissu). Les lames sont généralement remplacées selon un intervalle programmé plutôt que rectifiées en continu. Cependant, si votre ligne utilise un rectifiage CBN en ligne, nos lames D2 traitées thermiquement à HRC 58-60 sont compatibles avec les spécifications standard des meules CBN. Le revêtement TiN sera éliminé par le contact CBN au niveau du tranchant, ce qui est normal — le bénéfice protecteur s'applique au corps de la lame, et non à la zone de tranchant activement affûtée.",
+            "Le faux-rond latéral décrit la variation latérale de la lame lors de sa rotation, tandis que le faux-rond décrit la variation radiale au niveau de la circonférence de coupe. Les deux appartiennent aux spécifications de la lame, aux côtés de la référence de montage utilisée pour la mesure. Lors de l'évaluation d'un couteau installé, distinguez les mesures de la lame des variations introduites par l'arbre, la bride ou l'état du siège.",
+        },
+        {
+          question:
+            "Que dois-je inclure dans une demande de couteaux circulaires pour couper transversalement des rouleaux de tissu non tissé ?",
+          answer:
+            "Fournissez le modèle de scie, le dessin du couteau ou le numéro de pièce, le type de tissu non tissé roulé et la quantité. Identifiez l'alésage central, le cercle primitif, la direction du biseau et la finition. Pour obtenir un échantillon, fournissez des vues de face, de dos et de bord et marquez toutes les zones rectifiées ou endommagées qui ne représentent plus le profil du nouveau couteau.",
         },
       ],
-      company: [
-        {
-          question: "Êtes-vous un fabricant ou une société commerciale ?",
-          answer:
-            "Fabricant direct. Nous forgeons, rectifions, revêtons et contrôlons la qualité de chaque lame en interne, dans notre installation de 15 000 m² à Ma'anshan, province de l'Anhui, sous certification ISO 9001:2015. Vous communiquez directement avec les ingénieurs de production qui ont fabriqué vos lames — sans marge de revendeur.",
-        },
-        {
-          question:
-            "Pouvez-vous effectuer une rétro-ingénierie d'une lame à partir d'un échantillon usé ou d'un plan OEM ?",
-          answer:
-            "Oui. Envoyez-nous votre lame usée ou votre plan dimensionnel OEM et nous établirons un rapport de mesure MMT et une confirmation dimensionnelle avant de nous engager dans la production. Les rapports d'inspection de première pièce sont disponibles sur demande pour les nouveaux projets d'outillage.",
-        },
-        {
-          question:
-            "Quelle est la quantité minimale de commande et le délai de livraison ?",
-          answer:
-            "La commande minimale est généralement de 2 à 5 lames selon le diamètre. Le délai standard est de 10 jours ouvrables à compter de la validation du plan. Les commandes urgentes peuvent être prises en charge — contactez-nous avec votre calendrier.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Incluez le modèle de scie, le dessin de la lame, le diamètre extérieur, l'alésage, l'épaisseur du corps, le biseau et le modèle de trou de montage.",
+    detailLayout: {
+      seoTitle:
+        "Lames de scie pour rouleaux de non-tissé | Lames de rechange sur mesure",
+      heroAlt:
+        "couteaux circulaires pour couper transversalement des rouleaux de tissu non tissé avec un bord tranchant circulaire, un alésage central et des trous de montage",
+      sizeRange: "Ø350–700 mm",
+      heroSpecs: [
+        {
+          label: "Application",
+          value: "rouleaux de coupe transversale de tissu non tissé",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Ø350–700 mm",
+        },
+        {
+          label: "Matériau",
+          value: "D2 (1.2379)",
+        },
+        {
+          label: "Dureté",
+          value: "58–60 HRC",
+        },
+        {
+          label: "Revêtements en option",
+          value:
+            "TiN PVD ou chrome dur ; lames non revêtues également disponibles",
+        },
+        {
+          label: "Extrémité latérale",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Faux-rond du bord",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Application",
+          value: "Rouleaux de coupe transversale de tissu non tissé",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/nonwoven-log-saw-blades-03.webp",
+        alt: "couteaux circulaires pour couper transversalement des rouleaux de tissu non tissé, échantillon montrant l'alésage et les trous de montage",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Demandez un devis pour vos lames circulaires pour rouleaux de coupe",
+        description:
+          "Envoyez le modèle de scie, la référence originale du couteau, le plan coté complet et la quantité.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Envoyez le modèle de scie, la référence originale du couteau, le plan coté complet et la quantité.",
+    dimensionLabels: {
+      col1: "Diamètre extérieur (mm)",
+      col2: "Alésage / ID (mm)",
+      col3: "Épaisseur (mm)",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005201",
+        od: "400",
+        id: "To drawing",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005202",
+        od: "450",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005203",
+        od: "500",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005204",
+        od: "550",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005205",
+        od: "600",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005206",
+        od: "Ø350–700",
+        id: "To drawing",
+        thickness: "3.80–6.00",
+      },
+    ],
   },
   {
     id: "paper-cutting-blades",
-    name: "Lames pour couper le papier",
-    fullName:
-      "Lames de coupe papier guillotine de qualité supérieure (HSS & TCT)",
-    category: "shear_blades",
+    name: "Lames de massicot pour papier",
+    fullName: "Lames de massicot pour la coupe de piles de papier",
+    seoTitle: "Lames de coupe-papier | Couteaux à guillotine en papier",
+    seoDescription:
+      "Commandez des couteaux guillotine à papier incrustés HSS ou à pointe de carbure pour les coupe-empiles. Les longueurs répertoriées sont de 450 à 2 050 mm, avec des longueurs personnalisées et des trous de montage disponibles.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Lames pour couper le papier",
-    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    image: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     badge: "Précision OEM",
     badgeColor: "teal",
     gallery: [
-      "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+      "/images/products/shear-detail/paper-cutting-blades-cover.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
+      "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
     ],
     description:
-      "Éliminez l'aspiration du papier et la poussière avec les lames de guillotine de remplacement pour les cutters Polar, Wohlenberg et Perfecta. Disponible avec des incrustations en acier rapide (HSS) à 18 % de tungstène et en carbure de tungstène (TCT). Micro-affûtage à un biseau précis de 21° avec une planéité de la face sur toute la longueur ≤0,05 mm pour des coupes parfaitement carrées sur les tirages de grand volume.",
-    fullDescription:
-      "Les lames de remplacement des massicots sont des composants consommés dont la qualité de l'alliage, la géométrie des arêtes et la précision dimensionnelle sur toute la longueur déterminent directement la qualité de la coupe sur l'ensemble de la pile de rames - des lames de massicots de bureau de 450 mm aux massicots de salle de presse commerciale à double poutre de 2050 mm.\n\nLes lames de coupe Sureay sont proposées en trois qualités métallurgiques, adaptées au volume de coupe, au substrat et au coût total de possession :\n\n## Nuances de matériaux\n\n**Acier à outils standard (T10, 9CrSi - HRC 57-60):** Rentable pour les imprimeries à volume modéré et les opérations de finition coupant du papier bond, du papier journal et du papier non couché jusqu'à 80 g/m². L'acier à haute teneur en carbone T10 est trempé à HRC 57-60 et offre un tranchant fiable au coût unitaire le plus bas. Convient aux machines de classe Polar, Schneider Senator et Challenge 305 dans des environnements à cycle quotidien modéré.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60-62):** Le meilleur choix pour l'impression commerciale à haut volume, l'édition de livres et les massicots de conversion d'étiquettes qui utilisent plusieurs rames à l'heure. Les lames M2 et SKH-51 HSS conservent toute leur dureté aux températures de coupe élevées générées par les opérations à cycle élevé, offrant une durée de vie de 4 à 6 fois supérieure entre les réaffûtages par rapport aux lames en acier au carbone standard. Recommandé pour les papiers d'art couchés, les cartons, les emballages laminés et les feuilles d'étiquettes adhésives multicouches où l'usure des bords s'accélère rapidement.\n\n**Incrustation en carbure de tungstène (YG15 / YG20):** Incrustation en carbure de tungstène brasée au four à l'azote pour les substrats les plus abrasifs : papier autocopiant (revêtement CBS), carton d'emballage à forte teneur en carbonate de calcium, carton couché, papiers spéciaux abrasifs et papiers techniques renforcés par des fibres. Les lames en TCT ont une durée de vie de 3 à 5 fois supérieure à celle des lames en acier inoxydable sur ces substrats et conservent la qualité des bords de fente bien au-delà du moment où les lames en acier inoxydable devraient être réaffûtées.\n\n## Normes d'affûtage de précision\n\n- **Angle de biseau:** 21° (géométrie guillotine standard, simple biseau)\n- **Tolérance en longueur:** +2 / -1 mm\n- **Tolérance sur la largeur:** ±1 mm\n- **Tolérance sur l'épaisseur du bord:** 0 / -0,1 mm\n- **Planéité de la face (sur toute la longueur):** ≤ 0,05 mm\n\nUn écart de planéité supérieur à 0,08 mm sur toute la longueur de la lame entraîne un contact inégal entre la lame et le panneau latéral, ce qui produit une coupe effilée et nécessite des cales de correction de la part de l'opérateur - une inefficacité de production qui se traduit par des temps d'arrêt mesurables sur les lignes de coupe à haut volume.\n\n## Compatibilité des machines et états d'approvisionnement\n\nLongueurs standard de 450 mm à 2050 mm. Compatible avec les séries Polar 115/137/155/176/200, Schneider Senator, Perfecta, Wohlenberg, Prism et les marques de guillotines Challenge. Longueurs personnalisées, modèles de trous de montage et profils de bord arrière fabriqués selon le dessin dans un délai de 7 jours ouvrables.\n\n**Conditions de livraison disponibles:** Bord affûté (prêt à être installé) / Bord semi-fini (pour un traitement final sur site selon les spécifications de la machine) / Couteau vierge (non affûté, pour les clients disposant d'une capacité d'affûtage en interne).",
+      "Lames de coupe-papier de rechange et couteaux guillotine à papier pour la coupe en pile. Incrustation HSS ou bords à pointe en carbure, avec longueurs et trous de montage personnalisés.",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1642,123 +2109,65 @@ export const blades: Blade[] = [
       "Prism",
       "Seybold",
     ],
+    compatibleMachinesIntro:
+      "Sureay fabrique des lames de massicot pour papier à tranchant rapporté en acier rapide (HSS) ou en carbure. Nous adaptons la longueur, le plan de perçage et le profil du biseau à votre machine. Envoyez votre plan ou un échantillon pour obtenir un devis selon la configuration et le matériau souhaités. Les marques citées indiquent la compatibilité des pièces de rechange Sureay.",
+    components: [
+      {
+        id: "paper-knife-edge-selection",
+        tag: "Sélection des matériaux",
+        title: "Incrustation HSS et bords de coupe à pointe en carbure",
+        description:
+          "Sureay propose des incrustations HSS à 18 % de tungstène et des bords à pointe en carbure de tungstène sur les corps en acier, offrant ainsi aux coupeurs de pile un choix de constructions de couteaux pour leur stock de papier et leurs tâches de production.",
+      },
+      {
+        id: "paper-guillotine-bevel",
+        tag: "Géométrie de coupe",
+        title: "Faces rectifiées et profils de biseau spécifiés",
+        description:
+          "Les coupe-papier sont disponibles avec des faces rectifiées et des biseaux définis par dessin, y compris des configurations à double biseau, de sorte que la géométrie de travail peut être spécifiée en même temps que le matériau de pointe.",
+      },
+      {
+        id: "paper-cutter-replacement-fit",
+        tag: "Ajustement de remplacement",
+        title: "Longueurs personnalisées et modèles de montage",
+        description:
+          "Les guillotines à papier répertoriées ont une longueur de 450 à 2 050 mm. Sureay fabrique également des corps de couteau de remplacement, des biseaux et des modèles de montage selon le dessin de votre poutre de coupe existante.",
+      },
+    ],
     specs: [
       {
-        label: "Material",
-        value: "18% Tungsten HSS Inlay | Tungsten Carbide Tipped (TCT)",
+        label: "Dimensions",
+        value: "450–2050 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 62–64 (HSS) | HRA 89–91 (Carbide)",
+        label: "Matériau",
+        value:
+          "Incrustation HSS à 18 % de tungstène ou pointe carbure de tungstène ( TCT )",
       },
       {
-        label: "Bevel Angle",
-        value: "Standard 21° – 24° (Double bevel available)",
+        label: "Dureté",
+        value: "HSS : 62-64 HRC ; carbure : 89–91 HRA",
       },
       {
-        label: "Face Flatness",
-        value: "≤0.05 mm (Eliminates paper draw & tapered cuts)",
+        label: "Construction de la lame",
+        value:
+          "Bimétallique : incrustation de pointe brasée sur un corps en acier allié",
       },
       {
-        label: "Construction",
-        value: "Bimetallic (premium edge brazed to alloy steel body)",
+        label: "Angle de biseau",
+        value: "21°-24° ; configurations à double biseau disponibles",
       },
       {
         label: "Application",
-        value: "Coated Art Paper, Recycled Board, Carbonless Copy Paper",
+        value:
+          "Piles de papier, papier d'art couché, carton recyclé et papier autocopiant",
+      },
+      {
+        label: "Planéité de la face",
+        value: "≤0.05 mm",
       },
     ],
-    components: [
-      {
-        id: "tct-inlay",
-        tag: "METALLURGIE",
-        title: "Incrustations en carbure de tungstène",
-        description:
-          "Les lames standard s'émoussent rapidement lorsqu'elles coupent des papiers abrasifs remplis de carbonate de calcium. Nos lames à pointe en carbure de tungstène (TCT) conservent leur tranchant 3 à 5 fois plus longtemps que les lames HSS, ce qui réduit considérablement les temps d'arrêt de la machine pour le changement de lame sur les copies autocopiantes et les papiers couchés.",
-      },
-      {
-        id: "face-flatness",
-        tag: "PRÉCISION",
-        title: "Zéro tirage papier",
-        description:
-          "Si une lame est courbée, même légèrement, la pression hydraulique la fait dévier au milieu de la coupe, produisant des tailles inégales du haut au bas de la pile. Nous affûtons nos lames pour obtenir une planéité de la face sur toute la longueur de ≤0,05 mm afin de garantir des coupes verticales parfaitement droites dans chaque alésage.",
-      },
-      {
-        id: "oem-compatibility",
-        tag: "AMÉNAGEMENT",
-        title: "Remplacement exact de l'OEM",
-        description:
-          "Nous possédons les plans d'ingénierie des guillotines Polar, Wohlenberg, Perfecta et Schneider Senator. Les trous de montage, les filetages et les fentes du bord arrière sont usinés à la commande numérique pour un ajustement garanti - aucune cale ou modification n'est nécessaire.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Spécification (mm)",
-      col1: "Longueur",
-      col2: "Largeur",
-      col3: "Épaisseur du bord",
-      col4: "Épaisseur du corps",
-      caption:
-        "* Dimensions standard indiquées ci-dessus. Dimensions personnalisées disponibles sur demande.",
-    },
-    standardDimensions: [
-      {
-        spec: "450 * 51 * 12/10",
-        od: "450",
-        id: "51",
-        length: "12",
-        teeth: "10",
-      },
-      {
-        spec: "595 * 55 * 13.5/10",
-        od: "595",
-        id: "55",
-        length: "13.5",
-        teeth: "10",
-      },
-      {
-        spec: "795 * 60 * 13.5/10",
-        od: "795",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
-      },
-      {
-        spec: "895 * 60 * 13.5/10",
-        od: "895",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
-      },
-      {
-        spec: "995 * 60 * 14/11",
-        od: "995",
-        id: "60",
-        length: "14",
-        teeth: "11",
-      },
-      {
-        spec: "1095 * 65 * 14/11",
-        od: "1095",
-        id: "65",
-        length: "14",
-        teeth: "11",
-      },
-      {
-        spec: "1350 * 80 * 16/13",
-        od: "1350",
-        id: "80",
-        length: "16",
-        teeth: "13",
-      },
-      {
-        spec: "2050 * 85 * 16/14",
-        od: "2050",
-        id: "85",
-        length: "16",
-        teeth: "14",
-      },
-    ],
-    relatedBladeIds: ["tissue-log-saw-blades", "paper-cutting-blades"],
+    relatedBladeIds: ["three-knife-trimmer-blades"],
     offers: {
       lowPrice: 80,
       highPrice: 650,
@@ -1767,78 +2176,168 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Dois-je choisir des lames M2 HSS ou TCT (Tungsten Carbide Tipped) pour ma guillotine ?",
+            "Comment puis-je identifier une lame de coupe-papier de remplacement ?",
           answer:
-            "M2 HSS est le bon choix pour le papier d'art couché, le papier bond et les étiquettes standard dans les imprimeries à grand volume - offrant une durée de vie de 4 à 6 fois supérieure à celle de l'acier au carbone standard. Le passage au TCT (incrustation de carbure YG15/YG20) n'est possible que pour la découpe de papier autocopiant, de carton d'emballage à forte teneur en carbonate de calcium ou de papiers spéciaux abrasifs. Le TCT est 3 à 5 fois plus performant que l'acier au carbone sur ces substrats, mais son coût unitaire est plus élevé.",
+            "Utilisez le modèle et la version complets du cutter avec la référence ou le dessin original du couteau. Vérifiez ensemble la longueur, l’épaisseur du corps et des bords, les trous de montage et l’orientation du biseau. Un échantillon utilisé doit inclure son historique de broyage. La largeur de travail annoncée de la fraise permet d'identifier la machine, tandis que les dimensions complètes du couteau établissent le remplacement.",
         },
         {
           question:
-            "Comment la géométrie de la lame permet-elle d'éviter la poussière lors du massicotage de rames de papier épaisses ?",
+            "Quand dois-je envisager un couteau guillotine à papier à pointe carbure ?",
           answer:
-            "Nous affûtons chaque lame de massicot pour obtenir un biseau de précision de 21° avec une planéité de la face ≤0,05 mm sur toute la longueur. Le biseau tranchant et peu profond cisaille chaque feuille progressivement à travers la rame au lieu de l'écraser à travers la pile - la poussière est générée par des bords émoussés ou incorrectement biseautés qui compriment les fibres du papier au lieu de les cisailler. Les qualités HSS M2 et TCT conservent cette géométrie de biseau de précision beaucoup plus longtemps que l'acier au carbone, de sorte que moins de réaffûtages signifient moins de cycles de coupe de lames émoussées générant de la poussière par an.",
+            "Le carbure mérite d'être évalué lorsque l'usure progressive des bords du papier lui-même entraîne des changements fréquents de couteaux. Les revêtements, les charges, le contenu recyclé et le processus de broyage disponible influencent ce choix. Si le couteau actuel s'écaille ou coupe de manière inégale, inspectez son biseau, le bâton de coupe et les conditions de serrage en fonction des exigences en matière de matériau.",
         },
         {
           question:
-            "Pouvez-vous fournir des lames dans la longueur exacte et le schéma de montage requis par ma machine Polar ou Wohlenberg ?",
+            "Les lames de coupe-papier et les couteaux-guillotines sont-ils identiques ?",
           answer:
-            "Oui. Nous stockons des longueurs standard de 450 mm à 2050 mm pour couvrir les guillotines Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta et la série Challenge. Les longueurs personnalisées, les profils de bord arrière et les modèles de trous de montage sont fabriqués sur plan dans un délai de 7 jours ouvrables. Les lames peuvent être fournies affûtées, semi-finies ou vierges pour s'adapter à votre installation d'affûtage sur site.",
+            "Oui. Dans la découpe industrielle de piles, les deux noms font référence à la lame droite qui coupe une pile serrée de papier ou de carton. Pour les machines qui coupent une bande en mouvement en feuilles, voir [Paper Sheeter Knives](/products/paper-sheeter-knives) .",
         },
         {
           question:
-            "Comment le lames de guillotine doit-il être stocké et manipulé pour éviter que les bords ne s'abîment prématurément avant l'installation ?",
+            "Pourquoi les feuilles inférieures peuvent-elles rester mal coupées après affûtage ?",
           answer:
-            "Stockez les lames horizontalement dans leur emballage d'origine sur des berceaux en bois rembourrés - ne les empilez jamais verticalement et ne laissez pas le bord coupant entrer en contact avec le métal. Utiliser des protections de bord en plastique ou en caoutchouc pendant la manipulation. Inspecter sous une loupe 10× avant le montage : une entaille de 0,2 mm dans le tranchant double le taux d'usure locale au cours des 10 000 premières coupes. Évitez de faire glisser le tranchant contre les rails de guidage pendant l'installation.",
+            "Un bâton de coupe usé, une pénétration incorrecte du couteau ou un serrage inégal peuvent laisser les feuilles inférieures mal coupées, même avec une lame tranchante. Vérifiez si le défaut est concentré au même point de la pile et inspectez la zone correspondante du bâton. Utilisez la configuration spécifiée du cutter pour vérifier la cause.",
         },
         {
           question:
-            "Pouvez-vous fournir du papier lames de guillotine à l'état semi-fini pour un rebroyage en interne ?",
+            "Comment choisir le biseau pour le papier ou le carton couché ?",
           answer:
-            "Oui. Les ébauches semi-finies sont disponibles dans toutes les longueurs standard, le corps étant meulé aux dimensions finales, mais le bord étant laissé en état de prépolissage pour le dressage final à l'angle de biseau et à la finition que vous souhaitez. Cet état de livraison convient aux imprimeries disposant d'une capacité de meulage de surface, réduit le coût unitaire de 15 à 20 % et permet un contrôle total de la géométrie et de la netteté du bord final.",
+            "Commencez par le biseau de couteau spécifié et le support en cours de traitement. La structure du papier, la teneur en revêtement ou en charge et les conditions de pile influencent la coupe. Comparez l’usure des bords, l’écaillage et la qualité de coupe avant de demander un profil différent. Le nouveau biseau doit rester compatible avec la construction du couteau et la configuration de travail de la fraise.",
+        },
+        {
+          question:
+            "Quand faut-il réaffûter ou remplacer un couteau guillotine à papier ?",
+          answer:
+            "Le réaffûtage est approprié lorsqu'il reste suffisamment de hauteur de couteau et de matériau de coupe pour restaurer le biseau spécifié dans les limites de service de la fraise. Inspectez l’incrustation ou le bord et le corps avant de meuler. Le remplacement est approprié lorsque des dommages, des matériaux de bord restants ou des limites de réglage empêchent la restauration de la configuration de travail requise.",
+        },
+        {
+          question: "Comment demander un devis pour une lame de coupe-papier ?",
+          answer:
+            "Envoyez le modèle et la version du cutter, le numéro ou le dessin original du couteau, le papier et la quantité. Pour une machine plus ancienne, incluez le modèle de trou de montage, l'orientation du biseau et la hauteur du nouveau couteau. Si la seule référence est un couteau usagé, affichez sa hauteur restante séparément de la nouvelle dimension cible.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de coupe, le dessin du couteau ou le numéro de pièce, le matériau et la hauteur de la pile, ainsi que l'espacement des trous de montage.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    detailLayout: {
+      heroAlt:
+        "Coupe-guillotine à papier avec trous de montage et bord tranchant droit",
+      sizeRange: "450–2050 mm",
+      heroSpecs: [
         {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
-        },
-        {
-          question:
-            "Qu'est-ce qui différencie le traitement thermique de Sureay des autres produits moins chers ?",
-          answer:
-            "Contrairement à la trempe standard, chaque lame Sureay subit un traitement cryogénique profond après la trempe sous vide. Ce traitement transforme l'austénite retenue en martensite, ce qui augmente la résistance à l'usure jusqu'à 40 % et garantit une dureté uniforme sur l'ensemble du tranchant.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les lames de remplacement OEM standard sont généralement expédiées sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question:
-            "Quelles sont les certifications de qualité détenues par Sureay et pouvez-vous fournir les rapports d'essais des matériaux ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle et un certificat de lot traitement thermique. Pour la qualification OEM, des rapports dimensionnels CMM complets et des certificats d'aciérie sont disponibles sur demande.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 lames) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables. Pour les profils personnalisés, des échantillons dimensionnels sont produits avant le lancement de la production complète - aucun engagement d'outillage n'est pris tant que l'adaptation n'est pas confirmée.",
+          label: "Application",
+          value: "Découpe en pile de papier et de carton",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
+        alt: "Coupe-guillotine à papier montrant le tranchant droit et le motif des trous de montage",
+      },
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "450–2050 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Incrustation HSS à 18 % de tungstène ou pointe carbure de tungstène ( TCT )",
+        },
+        {
+          label: "Dureté",
+          value: "HSS : 62-64 HRC ; carbure : 89–91 HRA",
+        },
+        {
+          label: "Construction de la lame",
+          value:
+            "Bimétallique : incrustation de pointe brasée sur un corps en acier allié",
+        },
+        {
+          label: "Angle de biseau",
+          value: "21°-24° ; configurations à double biseau disponibles",
+        },
+        {
+          label: "Application",
+          value:
+            "Piles de papier, papier d'art couché, carton recyclé et papier autocopiant",
+        },
+        {
+          label: "Planéité de la face",
+          value: "≤0.05 mm",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur du bord (mm)",
+            "Épaisseur du corps (mm)",
+          ],
+          rows: [
+            ["SR003101", "450", "51", "12", "10"],
+            ["SR003102", "595", "55", "13.5", "10"],
+            ["SR003103", "795", "60", "13.5", "10"],
+            ["SR003104", "895", "60", "13.5", "10"],
+            ["SR003105", "995", "60", "14", "11"],
+            ["SR003106", "1095", "65", "14", "11"],
+            ["SR003107", "1350", "80", "16", "13"],
+            ["SR003108", "2050", "85", "16", "14"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Incluez le modèle de coupe, le dessin du couteau ou le numéro de pièce, le matériau et la hauteur de la pile, ainsi que l'espacement des trous de montage.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Incluez le modèle de coupe, le dessin du couteau ou le numéro de pièce, le matériau et la hauteur de la pile, ainsi que l'espacement des trous de montage.",
+    dimensionLabels: {
+      intro:
+        "Les dimensions des couteaux répertoriées sont des configurations du catalogue et non des largeurs de coupe de la machine. Confirmez le modèle de montage et montrez l'épaisseur du bord et du corps sur un dessin en coupe transversale.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de rotor de rechange façonnés pour votre broyeur à arbre unique, y compris des profils plats, concaves, à rainure en V et en couronne. Sureay propose des faces de coupe personnalisées et des sièges de boulons de fixation, avec des couteaux stationnaires correspondants cités séparément. Envoyez votre dessin ou échantillon pour un devis sur mesure. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay.",
     id: "single-shaft-shredder-blades",
-    name: "Inserts pour rotors à arbre unique",
-    fullName:
-      "Inserts de rotor de broyeur à arbre unique à fort impact (Crown Cutters)",
+    name: "Couteaux de rotor pour broyeurs mono-arbre",
+    fullName: "Couteaux de rotor pour broyeurs mono-arbre",
+    seoTitle: "Couteaux de rotor de broyeur à arbre unique | Inserts carrés",
+    seoDescription:
+      "Choisissez des plaquettes de rotor carrées ou des couronnes de coupe concaves en DC53 , D2 ou Cr12MoV. Adaptez la face du couteau et le siège du boulon à votre broyeur à arbre unique.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Inserts pour rotors à arbre unique",
+    categoryDisplay: "Couteaux de rotor à arbre unique",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1918,
+      height: 1769,
+      smallerWidths: [320, 640],
+    },
     badge: "Usage intensif",
     badgeColor: "orange",
     gallery: [
@@ -1847,208 +2346,280 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "Inserts de rotor DC53, D2 (1.2379) et Cr12MoV acier à outils pour travail à froid pour broyeurs à arbre unique à faible vitesse et à couple élevé. Trempé sous vide et traité par cryogénie jusqu'à HRC 58-62, usiné par CNC avec une tolérance de ±0,02 mm sur la face. Géométrie carrée indexable dans 4 directions. Compatible avec les plates-formes Vecoplan, Weima, Lindner et Zerma.",
-    fullDescription:
-      "Les broyeurs à arbre unique fonctionnent à 80-150 tours/minute sous un couple extrêmement élevé, entraînant des inserts de rotor de type bloc dans un couteau de lit stationnaire à des distances de cisaillement serrées de 0,2-1,5 mm. Avec ces paramètres mécaniques, la principale cause de défaillance des lames est l'écaillage des arêtes dû à l'impact ou l'adoucissement thermique dû à des pics de couple soutenus à cycle élevé, plutôt que l'usure progressive.\n\nSureay répond à ces modes de défaillance par une métallurgie stricte. Les plaquettes en acier à outils D2 (1.2379) standard offrent une excellente résistance à l'usure à un prix avantageux. Pour les applications impliquant des plastiques techniques durs (PA66-GF, PC, PEEK) ou des morceaux de purge lourds, DC53 est spécifié - offrant une résistance à la rupture transversale 17% plus élevée pour empêcher l'écaillage des bords sous un impact important.\n\n## Tolérance d'usinage CNC de ±0,02 mm\n\nLe jeu de coupe entre la face de l'insert du rotor et le couteau du lit fixe détermine la taille des particules déchiquetées et la charge du moteur. Des jeux incohérents provoquent des retours de matière et des blocages du rotor. Les inserts de rotor Sureay sont usinés CNC avec une planéité de surface de ±0,02 mm, ce qui garantit un espace de cisaillement parfait et répétable sur toute la longueur du rotor lorsqu'il est associé à un couteau de lit de qualité.\n\n## Géométrie indexable 4 voies\n\nLe format symétrique du bloc carré offre quatre arêtes de coupe indépendantes par plaquette. Lorsqu'une arête s'émousse, l'opérateur desserre le boulon de montage à tête fraisée, fait pivoter la plaquette de 90° jusqu'à une nouvelle arête et procède à un nouveau calibrage. Un rotor complet peut être indexé rapidement sans extraction de l'arbre, ce qui permet de réduire de 75 % les dépenses annuelles en outillage.\n\n## Traitement cryogénique profond (-196°C)\n\nToutes les plaquettes Sureay à arbre unique subissent une trempe sous vide à HRC 58-62, suivie d'un traitement cryogénique profond obligatoire à -196°C. Cette étape finale critique élimine l'austénite retenue et stabilise la microstructure martensitique, réduisant drastiquement le risque de fracture en bloc lorsque le rotor rencontre des inclusions métalliques étrangères inattendues.",
+      "Couteaux de rotor de broyeur à arbre unique de remplacement en DC53 , D2 et Cr12MoV. Inserts carrés et couronnes de coupe concaves avec faces et sièges de boulons personnalisés.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
-        label: "Material",
+        label: "Matériau",
         value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Dureté cible",
+        value: "HRC 58-62 (cryogéniquement stabilisé)",
       },
       {
-        label: "Machining Tolerance",
-        value: "±0.02 mm Face Flatness",
+        label: "Tolérance d'usinage",
+        value: "±0,02 mm Planéité du visage",
       },
       {
-        label: "Edge Geometry",
-        value: "4-Way Indexable (90° Rotation)",
+        label: "Géométrie des bords",
+        value: "Indexable dans 4 directions (rotation à 90°)",
       },
       {
-        label: "Face Profile",
-        value: "Concave, Flat, V-Groove, Crown",
+        label: "Profil du visage",
+        value: "Concave, plat, rainure en V, couronne",
       },
       {
-        label: "Mounting Style",
-        value: "M12 to M24 Countersunk Hex Bolt",
+        label: "Style de montage",
+        value:
+          "Boulons de fixation M12 – M24 ; sièges fraisés ou à tête creuse par configuration",
       },
       {
-        label: "OEM Fitment",
-        value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
+        label: "Compatibilité OEM",
+        value: "Vecoplan , Weima , Lindner , Zerma , Cresswood",
       },
       {
-        label: "System Integration",
-        value: "Matched Bed Knives available separately",
+        label: "Intégration du système",
+        value: "Couteaux stationnaires assortis disponibles séparément",
       },
       {
         label: "Application",
         value:
-          "HDPE/PVC Pipes · Injection Purgings · Wood Pallets · IBC Totes · MSW",
+          "Tuyaux HDPE/PVC · Purge par injection · Palettes en bois · Bacs IBC · MSW",
       },
     ],
-    components: [
-      {
-        id: "indexable-design",
-        tag: "RÉDUCTION DU COÛT TOTAL DE POSSESSION",
-        title: "bords indexables à 4 voies",
-        description:
-          "La conception carrée symétrique permet une rotation de 90° lorsque la lame est émoussée. Cela quadruple la durée de vie d'une seule lame, réduisant les coûts de remplacement de 75 % et minimisant les temps d'arrêt pour la maintenance.",
-      },
-      {
-        id: "concave-profile",
-        tag: "EFFICACITÉ DU CISAILLEMENT",
-        title: "Profilage concave agressif",
-        description:
-          "Les faces concaves usinées avec précision par CNC assurent une morsure agressive dans les morceaux de plastique lisses et denses, empêchant le matériau de rebondir ou de former des ponts sur le rotor pendant le broyage à basse vitesse.",
-      },
-      {
-        id: "cryo-treatment",
-        tag: "FIABILITÉ EXTRÊME",
-        title: "Revenu cryogénique profond",
-        description:
-          "Traitement à -196°C pour éliminer les contraintes résiduelles internes. Cela garantit que la lame absorbera les chocs cinétiques massifs sans se briser lorsqu'elle heurte des inclusions métalliques cachées.",
-      },
+    relatedBladeIds: [
+      "single-shaft-bed-knives",
+      "shredder-screens",
+      "granulator-blades",
     ],
     dimensionLabels: {
-      col1: "Dimensions de l'insert (L × L × T)",
-      col2: "Taille du boulon",
-      col3: "Insérer un profil",
-      col4: "Plate-forme OEM typique",
-      caption:
-        "* Couteaux de stator et profils de lames de rotor personnalisés disponibles. Compatible avec les principales marques mondiales de broyeurs à arbre unique.",
+      col1: "Dimensions du couteau (L × L × T)",
+      col2: "Boulon de fixation",
+      col3: "Visage de coupe",
+      col4: "Référence machine/OEM",
+      intro:
+        "Utilisez le modèle de machine et la référence OEM pour identifier la pièce, puis comparez la face de coupe, le siège de montage et le boulon de fixation avec le couteau d'origine.",
     },
     standardDimensions: [
       {
+        itemNo: "SR002501",
+        spec: "34 × 34 × 20 mm",
+        bolt: "M12 × 40 (DIN 912)",
+        type: "—",
+        oem: "ZERMA ZSS 850 / 1200 · 80001003",
+      },
+      {
+        itemNo: "SR002502",
         spec: "34 × 34 × 23 mm",
         bolt: "M12",
-        type: "Concave / Flat",
+        type: "Concave / Plat",
         oem: "Weima / Vecoplan Standard",
       },
       {
+        itemNo: "SR002503",
         spec: "40 × 40 × 25 mm",
         bolt: "M14",
-        type: "Concave / Flat",
+        type: "Concave / Plat",
         oem: "Vecoplan / Heavy Plastics",
       },
       {
+        itemNo: "SR002504",
         spec: "43 × 43 × 19.5 mm",
         bolt: "M14",
-        type: "Crown / Concave",
-        oem: "Lindner Micromat / Urraco",
+        type: "Couronne / Concave",
+        oem: "Lindner Micromat",
       },
       {
+        itemNo: "SR002505",
         spec: "50 × 50 × 30 mm",
         bolt: "M16",
-        type: "Concave / Flat",
+        type: "Concave / Plat",
         oem: "Heavy Duty MSW",
       },
       {
+        itemNo: "SR002506",
         spec: "60 × 60 × 30 mm",
         bolt: "M16 / M18",
-        type: "Flat / V-Groove",
+        type: "Plat / Rainure en V",
         oem: "Zerma / Tyre Shredding",
       },
       {
+        itemNo: "SR002507",
         spec: "80 × 80 × 45 mm",
         bolt: "M24",
         type: "Concave",
         oem: "Extreme High-Torque",
       },
     ],
-    relatedBladeIds: [
-      "single-shaft-bed-knives",
-      "shredder-screens",
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 20,
       highPrice: 200,
     },
+    components: [
+      {
+        id: "single-shaft-shredder-blades-advantage-1",
+        tag: "Choix d'acier à outils pour les inserts de rotor",
+        title: "Choix d'acier à outils pour les inserts de rotor",
+        description:
+          "Les configurations DC53 , D2 , Cr12MoV et 42CrMo vous offrent des options de matériaux pour les couteaux de rotor de remplacement, en tenant compte de la face de coupe existante et des conditions d'usure de votre alimentation.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-2",
+        tag: "Faces de coupe plates, concaves et en couronne",
+        title: "Faces de coupe plates, concaves et en couronne",
+        description:
+          "Sureay fournit des profils plats, concaves, à rainure en V et en couronne. Les tailles d'insert répertoriées incluent 34 × 34 × 20 mm. Des configurations indexables sont disponibles où le couteau et le support sont conçus pour des bords de travail successifs.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-3",
+        tag: "Sièges de montage réalisés selon le dessin du rotor",
+        title: "Sièges de montage réalisés selon le dessin du rotor",
+        description:
+          "Sureay fabrique le dessous des couteaux et les sièges des boulons de fixation selon le dessin du rotor, de sorte qu'un remplacement puisse reproduire le profil du siège et la géométrie de serrage du support existant.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Quel alliage offre une meilleure rétention des arêtes pour la coupe de purges rigides : D2 ou DC53 ?",
+            "Comment puis-je identifier un couteau de rotor de remplacement pour un broyeur à arbre unique ?",
           answer:
-            "Pour les purges denses de moulage par injection et les PEHD à paroi épaisse sur des rotors à arbre unique à 80-120 tr/min, DC53 surpasse systématiquement D2. La charge d'impact sur un arbre unique met en évidence la résistance à la rupture transversale de DC53, supérieure de 17 %, qui résiste au micro-déchiquetage de la face de coupe que D2 développe généralement sur les matériaux de purge rigides après 300 à 500 heures de fonctionnement.",
+            "Utilisez le modèle de la machine et la référence de la pièce, puis comparez la face de coupe, le dessous et le siège du boulon de fixation. Deux inserts de même longueur et largeur peuvent avoir des centres surélevés, des trous ou des profils d'assise différents. Ces détails établissent comment le nouveau couteau se place et se fixe dans le support de rotor existant.",
         },
         {
           question:
-            "Quelles sont les causes de l'enroulement du matériau et du décrochage du rotor ?",
+            "Les couteaux de rotor, les plaquettes et les couronnes de coupe sont-ils le même produit ?",
           answer:
-            "L'enroulement est généralement causé par un manque de planéité de la face de la pile de plaquettes du rotor, ce qui crée un jeu irrégulier entre le couteau et le lit. La matière passe à travers de larges espaces au lieu d'être cisaillée, circule vers l'arrière et obstrue la poche du rotor. Nos plaquettes sont usinées CNC avec une planéité de ±0,02 mm pour éliminer ce problème.",
+            "Le couteau du rotor est le terme général désignant un couteau mobile sur le rotor. L'insert et la couronne coupante décrivent des conceptions particulières au sein de ce groupe. Le tranchant fixe en face de ces pièces est un [couteau de stator de déchiquetage à arbre unique](/products/single-shaft-bed-knives) .",
         },
         {
           question:
-            "Comment la conception indexable à quatre arêtes permet-elle de réduire les coûts d'outillage ?",
+            "Comment choisir les faces plates et concaves des couteaux du rotor ?",
           answer:
-            "Chaque plaquette carrée possède quatre arêtes de coupe indépendantes. Lorsqu'une arête s'émousse, il suffit de desserrer l'unique boulon de fixation, de faire pivoter la plaquette de 90° pour obtenir une nouvelle arête et de la resserrer. Cela quadruple la durée de vie effective par lame achetée, réduisant les dépenses annuelles d'outillage d'environ 75 % par rapport aux alternatives non indexables.",
+            "Conservez la face installée pour un remplacement à l’identique. Les profils plats et concaves modifient la manière dont l'arête de coupe engage l'alimentation, de sorte qu'une modification proposée doit tenir compte du matériau, du support et du stator correspondant. Une référence de couteau existante constitue un point de départ plus clair que de choisir une face uniquement en fonction de son apparence.",
         },
         {
           question:
-            "Quelle est la géométrie des inserts requise pour le broyage des conteneurs IBC et des fûts HDPE de grand format ?",
+            "Puis-je faire pivoter un insert carré usé pour utiliser un autre bord ?",
           answer:
-            "Pour les conteneurs à parois épaisses, spécifiez des inserts à face concave (50×50 mm ou 60×60 mm). Le profil concave crée une géométrie positive, empêchant la lame de déraper sur la surface lisse du PEHD lors de l'impact initial et assurant une pénétration immédiate lors de la course descendante.",
+            "Oui, lorsque la plaquette et le support sont conçus pour l'indexation et qu'un bord de travail intact reste disponible. Inspectez les surfaces d’assise et les éléments de fixation ainsi que le bord suivant. Utilisez la disposition d'indexation spécifiée pour ce couteau, car un contour carré à lui seul n'établit pas le nombre ou le sens de rotation autorisé.",
         },
         {
           question:
-            "Sureay peut-il fournir le couteau de lit stationnaire assorti ?",
+            "Qu'est-ce qui doit guider la sélection du matériau lorsque les coins du rotor s'écaillent ?",
           answer:
-            "Oui, les couteaux stationnaires sont fabriqués en tant qu'ensembles assortis avec les inserts de rotor, la face de dégagement étant rectifiée avec la même tolérance de ±0,02 mm. Un couteau de lit assorti élimine les conjectures sur le jeu introduites lors de l'approvisionnement des plaquettes de rotor et des couteaux de lit auprès de fournisseurs distincts.",
+            "Comparez les coins ébréchés avec l'usure progressive des autres inserts. La contamination des aliments, les impacts localisés et le soutien offert par la face et le support peuvent affecter les dommages. Évaluez ensemble l'état actuel de l'acier, du traitement thermique et du profil de coupe avant de changer de matériau, en particulier si des dommages apparaissent à plusieurs reprises dans une partie du rotor.",
+        },
+        {
+          question:
+            "Les sièges de boulons de fixation et les dessous de couteaux personnalisés peuvent-ils être reproduits ?",
+          answer:
+            "Oui. Le siège et la face inférieure des boulons de fixation peuvent être reproduits avec la face de coupe sur un dessin. Les photos des deux côtés sont utiles lorsque l’insert présente un centre surélevé ou une surface d’assise profilée. Marquez toutes les zones de contact usées et identifiez le boulon et le support utilisés avec celui-ci.",
+        },
+        {
+          question:
+            "Que dois-je fournir pour un devis de couteau à rotor de broyeur mono-arbre ?",
+          answer:
+            "Envoyez le modèle de broyeur, le numéro d'insertion original ou le dessin, le matériau d'alimentation et la quantité. Si vous avez plutôt un échantillon, incluez les dimensions de la plaquette et des photos de la face de coupe et du dessous, avec le siège du boulon de fixation visible. Ces vues distinguent des inserts ayant le même contour carré mais des profils de support différents.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envoyez le modèle de la machine, le numéro de pièce OEM et la quantité. Incluez un dessin ou des photos des deux côtés du couteau et dites-nous si vous avez également besoin du porte-couteau à rotor.",
+    disambiguation:
+      "Pour le couteau fixe opposé au rotor, voir [Couteaux de stator de déchiquetage à arbre unique](/products/single-shaft-bed-knives) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "34–80 mm",
+      heroSpecs: [
         {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
+          label: "Matériau",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
         },
         {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les inserts de remplacement OEM standard sont généralement expédiés sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de passer une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 plaquettes) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables.",
-        },
-        {
-          question:
-            "Quelles sont les certifications de qualité détenues par Sureay, et pouvez-vous fournir les rapports d'essais des matériaux ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle et un certificat de lot traitement thermique. Pour la qualification OEM, des rapports dimensionnels CMM complets et des certificats d'aciérie sont disponibles sur demande.",
+          label: "Application",
+          value:
+            "Tuyaux HDPE/PVC · Purge par injection · Palettes en bois · Bacs IBC · MSW",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "34–80 mm",
+        },
+        {
+          label: "Matériau",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
+        },
+        {
+          label: "Dureté cible",
+          value: "HRC 58-62 (cryogéniquement stabilisé)",
+        },
+        {
+          label: "Tolérance d'usinage",
+          value: "±0,02 mm Planéité du visage",
+        },
+        {
+          label: "Géométrie des bords",
+          value: "Indexable dans 4 directions (rotation à 90°)",
+        },
+        {
+          label: "Profil du visage",
+          value: "Concave, plat, rainure en V, couronne",
+        },
+        {
+          label: "Style de montage",
+          value:
+            "Boulons de fixation M12 – M24 ; sièges fraisés ou à tête creuse par configuration",
+        },
+        {
+          label: "Intégration du système",
+          value: "Couteaux stationnaires assortis disponibles séparément",
+        },
+        {
+          label: "Application",
+          value:
+            "Tuyaux HDPE/PVC · Purge par injection · Palettes en bois · Bacs IBC · MSW",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez le modèle de la machine, le numéro de pièce OEM et la quantité. Incluez un dessin ou des photos des deux côtés du couteau et dites-nous si vous avez également besoin du porte-couteau à rotor.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de stator de remplacement avec le profil de bord et les caractéristiques de montage requis par votre broyeur à arbre unique. Sureay fournit des configurations droites et dentelées, des longueurs personnalisées et des ensembles segmentés. Partagez votre dessin ou échantillon pour un devis, y compris les inserts de rotor si nécessaire. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     id: "single-shaft-bed-knives",
-    name: "Couteaux de lit à arbre unique",
-    fullName: "Couteaux de lit de broyeur à arbre unique (couteaux de stator)",
+    name: "Contre-couteaux pour broyeurs mono-arbre",
+    fullName:
+      "Couteaux fixes de stator pour broyeurs mono-arbre (contre-couteaux)",
+    seoTitle:
+      "Couteaux fixes de stator pour broyeurs mono-arbre (contre-couteaux)",
+    seoDescription:
+      "Couteaux fixes fixes pour broyeurs à arbre unique dans les longueurs indiquées de 279 à 3 000 mm. Commandez des bords droits ou dentelés et des fentes de montage adaptées à votre dessin.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Couteaux de lit à arbre unique",
+    categoryDisplay: "Couteaux de stator à arbre unique",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1814,
+      height: 1020,
+      smallerWidths: [320, 640],
+    },
     badge: "Précision de la rectification",
     badgeColor: "blue",
     gallery: [
@@ -2057,201 +2628,267 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Couteaux de stator (couteaux de lit) robustes pour les broyeurs à arbre unique. Fabriqués en D2 (1.2379) et en aciers hautement alliés spécialisés. Trempés à la presse et rectifiés avec précision selon des tolérances de rectitude strictes (≤ 0,05 mm/m) pour garantir un jeu de cisaillement uniforme entre le rotor et la table. Les modèles de trous oblongs personnalisés permettent un réglage précis du jeu. Compatible avec Vecoplan, Weima, Lindner et Zerma.",
-    fullDescription:
-      "Dans un système de broyage à arbre unique, le couteau de lit (stator) sert de contre-coupe rigide contre laquelle les inserts rotatifs cisaillent le matériau. Comme ces couteaux s'étendent sur toute la largeur du rotor du déchiqueteur (souvent plus de 2 000 mm de long), leur fabrication exige un contrôle absolu de la distorsion thermique.\n\n## L'impératif de rectitude\n\nLe gauchissement des couteaux est la première cause d'inefficacité des broyeurs. Si le couteau se courbe, l'espace de cisaillement devient inégal : trop serré au centre (risquant une collision catastrophique du rotor) et trop lâche aux extrémités (provoquant un retour de la matière et une fusion par friction). Les couteaux de lit Sureay subissent une trempe à la presse spécialisée pendant le traitement thermique, suivie d'une rectification de surface de précision. Nous garantissons une tolérance de rectitude de ≤ 0,05 mm par mètre linéaire, assurant un jeu de coupe parfaitement uniforme sur l'ensemble du rotor.\n\n## Durcissement en profondeur pour des rectifications multiples\n\nContrairement aux plaquettes de rotor qui sont mises au rebut ou indexées, les couteaux pour lit lourd représentent un investissement important et doivent pouvoir être réaffûtés. Nous utilisons le traitement thermique sous vide pour obtenir une dureté uniforme de HRC 56-60 sur toute la section transversale de la lame, et pas seulement sur la surface. Cela permet aux opérateurs de réaffûter le biseau plusieurs fois sans exposer un noyau mou, maximisant ainsi la durée de vie opérationnelle totale du couteau.\n\n## Montage à fente et contre-alésage\n\nLe maintien d'un écart de cisaillement optimal de 0,2 mm à 1,0 mm est essentiel à mesure que les couteaux du rotor et du stator s'usent. Nos couteaux de lit sont dotés de trous oblongs ou de contre-trous surdimensionnés usinés CNC avec précision, conçus pour s'adapter parfaitement aux mécanismes de réglage de votre machine OEM. Cela permet aux équipes de maintenance d'avancer le couteau de lit avec précision et de le bloquer en toute sécurité en cas de fortes vibrations.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
+      "Stator de broyeur à arbre unique de remplacement et couteaux fixes en D2, DC53 ou 42CrMo. Profils de bord personnalisés et fentes de montage réalisés selon le dessin.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 (1.2379), DC53, 42CrMo (AISI 4140), Chipper Knife Steel",
+        label: "Matériau",
+        value:
+          "D2 (1.2379), DC53 , 42CrMo (AISI 4140), acier pour couteau de déchiqueteuse",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 56–60 (Through-Hardened)",
+        label: "Dureté cible",
+        value: "HRC 56–60 (trempé à cœur)",
       },
       {
-        label: "Straightness Tol.",
-        value: "≤ 0.05 mm per linear meter",
+        label: "Rectitude Tol.",
+        value: "≤ 0,05 mm par mètre linéaire",
       },
       {
-        label: "Length Capability",
-        value: "Up to 3,500 mm (Seamless single piece)",
+        label: "Dimensions",
+        value:
+          "Longueurs répertoriées 279-3 000 mm ; couteaux monobloc sur mesure jusqu'à 3 500 mm",
       },
       {
-        label: "Edge Geometry",
-        value: "Single Bevel, Double Bevel, Serrated",
+        label: "Géométrie des bords",
+        value: "Biseau simple, biseau double, dentelé",
       },
       {
-        label: "Mounting Holes",
-        value: "Slotted, Counter-Bored, Threaded",
+        label: "Trous de montage",
+        value: "Fendu, contre-alésé, fileté",
       },
       {
-        label: "OEM Fitment",
-        value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
+        label: "Compatibilité OEM",
+        value: "Vecoplan , Weima , Lindner , Zerma , Cresswood",
       },
       {
-        label: "System Integration",
-        value: "Matched Rotor Inserts available separately",
+        label: "Intégration du système",
+        value: "Inserts de rotor assortis disponibles séparément",
       },
       {
         label: "Application",
         value:
-          "Single-Shaft Shredders · HDPE/PP/PVC · Wood Pallets · MSW · Tyre",
+          "Broyeurs mono-arbre · HDPE/PP/PVC · Palettes en bois · MSW · Pneu",
       },
     ],
-    components: [
-      {
-        id: "straightness-control",
-        tag: "TOLÉRANCE",
-        title: "Rectitude sans distorsion",
-        description:
-          "Trempé à la presse et rectifié avec précision pour éliminer les courbures. Un couteau parfaitement droit garantit un espace de cisaillement uniforme, empêchant le matériau de passer à travers sans être coupé.",
-      },
-      {
-        id: "deep-hardening",
-        tag: "PLAN DE VIE",
-        title: "Noyau trempé à cœur",
-        description:
-          "Traitement thermique sous vide pour garantir une dureté constante (HRC 56-60) jusqu'au cœur. Vous pouvez réaffûter le biseau plusieurs fois sans perte de performance.",
-      },
-      {
-        id: "adjustable-mounting",
-        tag: "ENTRETIEN",
-        title: "Fentes de réglage de précision",
-        description:
-          "Les fentes de montage fraisées CNC permettent aux techniciens d'avancer facilement le couteau du lit vers le rotor pour compenser l'usure et maintenir une efficacité de broyage maximale.",
-      },
-      {
-        id: "complete-wear-set",
-        tag: "SUPPLY",
-        title: "Complete Bed Knife Wear Set",
-        description:
-          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
-      },
-    ],
+    relatedBladeIds: ["single-shaft-shredder-blades", "shredder-screens"],
     dimensionLabels: {
       col0: "Longueur totale (mm)",
       col1: "Largeur (mm)",
       col2: "Épaisseur (mm)",
-      col3: "Configuration des trous / du montage",
-      caption:
-        "* Les couteaux de lit sont très spécifiques à chaque machine. Les dimensions de référence standard sont indiquées en mm - nous fabriquons selon les dessins OEM exacts ou les spécifications du client. Sans soudure en une seule pièce jusqu'à 3 500 mm.",
+      col3: "Montage / Référence OEM",
+      intro:
+        "Comparez le profil du couteau, les fentes de montage et le numéro de pièce OEM avec la pièce d'origine. Pour un ensemble segmenté, identifiez le segment dont vous avez besoin.",
     },
     standardDimensions: [
       {
+        itemNo: "SR002601",
+        spec: "279",
+        od: "80",
+        bolt: "30",
+        type: "Segmenté · Fixation M12 × 55 · ZERMA ZSS 850 (80001202)",
+      },
+      {
+        itemNo: "SR002602",
+        spec: "396",
+        od: "80",
+        bolt: "20",
+        type: "6 emplacements, 22 × 40 mm, espacés de 68 mm",
+      },
+      {
+        itemNo: "SR002603",
+        spec: "396",
+        od: "85",
+        bolt: "20",
+        type: "6 emplacements, 22 × 40 mm, espacés de 68 mm",
+      },
+      {
+        itemNo: "SR002604",
         spec: "800",
         od: "100",
         bolt: "30",
-        type: "Slotted / Counter-Bored",
+        type: "Fendu / Contre-alésé",
       },
       {
+        itemNo: "SR002605",
         spec: "1000",
         od: "120",
         bolt: "35",
-        type: "Slotted / Counter-Bored",
+        type: "Fendu / Contre-alésé",
       },
       {
+        itemNo: "SR002606",
         spec: "1300",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Fendu / Contre-alésé",
       },
       {
+        itemNo: "SR002607",
         spec: "1500",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Fendu / Contre-alésé",
       },
       {
+        itemNo: "SR002608",
         spec: "2000",
         od: "200",
         bolt: "50",
-        type: "Custom OEM Pattern",
+        type: "Modèle OEM personnalisé",
       },
       {
+        itemNo: "SR002609",
         spec: "3000",
         od: "250",
         bolt: "60",
-        type: "Heavy Duty Multi-Hole",
+        type: "Multi-trous robuste",
       },
     ],
-    relatedBladeIds: ["single-shaft-shredder-blades", "granulator-blades"],
     offers: {
       lowPrice: 150,
       highPrice: 1200,
     },
+    components: [
+      {
+        id: "single-shaft-bed-knives-advantage-1",
+        tag: "Options d'acier pour les bords de coupe stationnaires",
+        title: "Options d'acier pour les bords de coupe stationnaires",
+        description:
+          "Les configurations D2 , DC53 , 42CrMo et couteau-couteau-acier sont disponibles pour les couteaux de stator, prenant en charge les commandes de remplacement avec le matériau et la forme de bord spécifiés pour le broyeur existant.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-2",
+        tag: "Bords droits et dentelés avec fixations personnalisées",
+        title: "Bords droits et dentelés avec fixations personnalisées",
+        description:
+          "Les profilés à simple biseau, à double biseau et dentelés peuvent être fournis avec des caractéristiques de montage fendues, contre-alésées ou filetées, permettant de réaliser le bord de coupe et le motif de fixation comme une seule pièce de rechange.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-3",
+        tag: "Segments individuels et ensembles de stators complets",
+        title: "Segments individuels et ensembles de stators complets",
+        description:
+          "Les longueurs de stator répertoriées vont de 279 à 3 000 mm. Commandez un segment stationnaire individuel ou un jeu complet avec positions finales et intermédiaires spécifiées séparément. Les couteaux de rotor correspondants peuvent être cités dans la même demande.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Pourquoi la tolérance de rectitude d'un couteau de lit est-elle si importante ?",
+            "Les couteaux de stator, les couteaux fixes et les contre-couteaux sont-ils la même pièce ?",
           answer:
-            "Si un couteau de lit est déformé ne serait-ce que de 0,5 mm, le jeu entre les plaquettes du rotor et le couteau de lit devient incohérent. Lorsque l'espace est trop étroit, les couteaux du rotor heurtent le couteau du lit, ce qui provoque des dommages catastrophiques. Lorsque l'espace est trop large, le matériau se plie et s'enroule autour du rotor au lieu d'être cisaillé. Notre tolérance de rectitude ≤ 0,05mm/m permet d'éviter ces deux problèmes.",
-        },
-        {
-          question: "Combien de fois un couteau Sureay peut-il être réaffûté ?",
-          answer:
-            "Comme nous trempons nos couteaux à cœur (en veillant à ce que le cœur soit aussi dur que la surface), ils peuvent être réaffûtés à plusieurs reprises jusqu'à ce que la limite dimensionnelle du mécanisme de réglage de la machine soit atteinte. En règle générale, un couteau D2 à usage intensif peut subir 5 à 10 cycles de réaffûtage en fonction de la profondeur de l'usure.",
+            "Oui. Sur un broyeur à arbre unique, le couteau de stator, le couteau de lit et le contre-couteau décrivent tous le tranchant fixe opposé aux [couteaux du rotor du broyeur à arbre unique](/products/single-shaft-shredder-blades) . D'autres machines utilisent également certains de ces noms, de sorte que le modèle de déchiquetage et la position stationnaire sont importants lors de la commande.",
         },
         {
           question:
-            "Comment puis-je m'assurer que le couteau de lit de remplacement s'aligne sur les poussoirs de réglage de ma machine ?",
+            "Un couteau fixe de granulateur en plastique peut-il remplacer un couteau de stator de broyeur ?",
           answer:
-            "Les couteaux de lit utilisent des trous oblongs ou des motifs de contre-alésage spécifiques pour s'intégrer aux boulons de réglage arrière du broyeur (poussoirs). Nous disposons d'une vaste base de données de dessins OEM pour des marques telles que Weima, Vecoplan et Lindner. En nous fournissant le modèle de votre machine ou un dessin de base, vous vous assurez que les fentes sont fraisées selon les coordonnées exactes de l'OEM.",
+            "Généralement non. Le profil, l'assise et le réglage d'un couteau statorique de broyeur sont définis par sa machine d'origine. Un couteau de lit de granulateur travaille dans une autre chambre de coupe. Pour les ensembles rotor et lit qui produisent du plastique rebroyé, voir [Couteaux de granulateur en plastique](/products/granulator-blades) .",
         },
         {
           question:
-            "Dois-je remplacer le couteau de lit lorsque je remplace les inserts de rotor ?",
+            "Pourquoi les performances de coupe peuvent-elles rester médiocres après l'installation de nouvelles plaquettes de rotor ?",
           answer:
-            "Pas nécessairement à chaque fois. Les plaquettes de rotor s'usent beaucoup plus rapidement. Toutefois, si l'arête de coupe du couteau de lit est fortement arrondie ou ébréchée, le fait de placer de nouvelles plaquettes de rotor contre un couteau de lit émoussé réduira considérablement la durée de vie des nouvelles plaquettes et diminuera le rendement. Nous recommandons d'inspecter l'arête du couteau de lit lors de chaque cycle d'indexation du rotor et de le réaffûter ou de le remplacer lorsqu'il n'est plus possible de maintenir une arête tranchante.",
+            "Le bord du stator conservé et l'espace de coupe participent toujours à chaque coupe. Un profil stationnaire usé ou un réglage inapproprié peut affecter l'engagement même lorsque les inserts du rotor sont neufs. Vérifiez ensemble les segments du stator, l'état de montage et le réglage spécifié par la machine avant de décider quelles pièces de la paire de coupe doivent être remplacées.",
         },
         {
           question:
-            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+            "Comment mesurer un couteau de stator affûté pour le remplacer ?",
           answer:
-            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
+            "Mesurez à partir des repères de fixation jusqu'au bord restant et enregistrez cette mesure comme hauteur de rectification. Un couteau assorti inutilisé ou un dessin original peut établir la nouvelle position du bord. La distinction est importante lorsqu'un couteau raccourci a déjà utilisé une partie de la plage de réglage de la machine.",
+        },
+        {
+          question:
+            "Quels détails de bord et de montage peuvent être personnalisés ?",
+          answer:
+            "Sureay peut réaliser des bords à simple biseau, à double biseau et dentelés avec les fentes, lamages ou filetages spécifiés. Définissez l'orientation du bord à partir des références de fixation et identifiez la position du segment. Cela permet à deux couteaux de longueur totale similaire de conserver leurs profils de coupe et leurs dispositions d'installation distincts.",
+        },
+        {
+          question:
+            "Comment puis-je obtenir un devis pour des couteaux fixes ou des segments de stator de broyeur à arbre unique ?",
+          answer:
+            "Envoyez le modèle de la machine, les références des dessins ou des pièces d'origine et les quantités par segment. Pour un stator segmenté, étiquetez les pièces d'extrémité et intermédiaires et affichez leurs faces adjacentes, leurs profils de bord et leurs modèles de fixation dans une présentation. Incluez la hauteur originale du nouveau couteau lorsque la référence a été réaffûtée.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envoyez le modèle de la machine, le numéro de pièce OEM et la quantité. Incluez un dessin ou des photos montrant le tranchant et les fentes de montage, et dites-nous si vous avez également besoin de la plaque de montage.",
+    disambiguation:
+      "Pour les couteaux montés sur le rotor, voir [Couteaux du rotor de déchiquetage à arbre unique](/products/single-shaft-shredder-blades) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "279–3000 mm",
+      heroSpecs: [
         {
-          question:
-            "Avez-vous la capacité de fabriquer des lames de plus de 2 mètres de long ?",
-          answer:
-            "Oui. Nos installations sont équipées de meuleuses de surface robustes et de fours traitement thermique à vide poussé capables de traiter des couteaux de lit sans soudure, d'une seule pièce, d'une longueur allant jusqu'à 3 500 mm, sans induire de distorsion thermique.",
+          label: "Matériau",
+          value:
+            "D2 (1.2379), DC53 , 42CrMo (AISI 4140), acier pour couteau de déchiqueteuse",
         },
         {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM direct. Cela nous permet de contrôler strictement les processus traitement thermique et de meulage essentiels pour les longs couteaux de stator, éliminant ainsi les incohérences de qualité communes aux sociétés commerciales.",
-        },
-        {
-          question:
-            "Quel est le délai d'exécution pour les couteaux de lit personnalisés ?",
-          answer:
-            "Pour les remplacements OEM standard, nous expédions souvent sous 3 à 5 jours. Pour les longueurs personnalisées ou les alliages spécifiques, le délai de production est généralement de 15 à 20 jours ouvrables, y compris les cycles thermiques profonds nécessaires à la stabilité dimensionnelle.",
+          label: "Application",
+          value:
+            "Broyeurs mono-arbre · HDPE/PP/PVC · Palettes en bois · MSW · Pneu",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value:
+            "Longueurs répertoriées 279-3 000 mm ; couteaux monobloc sur mesure jusqu'à 3 500 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "D2 (1.2379), DC53 , 42CrMo (AISI 4140), acier pour couteau de déchiqueteuse",
+        },
+        {
+          label: "Dureté cible",
+          value: "HRC 56–60 (trempé à cœur)",
+        },
+        {
+          label: "Rectitude Tol.",
+          value: "≤ 0,05 mm par mètre linéaire",
+        },
+        {
+          label: "Géométrie des bords",
+          value: "Biseau simple, biseau double, dentelé",
+        },
+        {
+          label: "Trous de montage",
+          value: "Fendu, contre-alésé, fileté",
+        },
+        {
+          label: "Intégration du système",
+          value: "Inserts de rotor assortis disponibles séparément",
+        },
+        {
+          label: "Application",
+          value:
+            "Broyeurs mono-arbre · HDPE/PP/PVC · Palettes en bois · MSW · Pneu",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez le modèle de la machine, le numéro de pièce OEM et la quantité. Incluez un dessin ou des photos montrant le tranchant et les fentes de montage, et dites-nous si vous avez également besoin de la plaque de montage.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
     id: "granulator-blades",
-    name: "Lames de broyeur",
+    name: "Couteaux pour broyeurs granulateurs de plastique",
     fullName:
-      "Couteaux de broyeur et de granulateur industriels pour le recyclage du PET, du PVC et du PP",
-    category: "granulator_blades",
+      "Couteaux de rotor et contre-couteaux fixes pour broyeurs granulateurs de plastique",
+    seoTitle: "Couteaux de granulateur en plastique | Pales de rotor et de lit",
+    seoDescription:
+      "Remplacez le rotor et les couteaux fixes sur les granulateurs traitant du PET, PP, HDPE ou PVC. Lames de granulateur en plastique dans des longueurs répertoriées de 90 à 1 178 mm, avec des modèles de boulons personnalisés.",
+    category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Lames de broyeur",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2261,84 +2898,144 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
-      "Les couteaux de rotor et de stator des broyeurs D2, SKD-11 et Cr12MoV sont affûtés avec précision à une tolérance de ±0,02 mm pour les broyeurs Cumberland, Conair/Wortex, Herbold et Rapid. Les angles de biseau de 30° à 55° sont adaptés au type de polymère, ce qui permet d'obtenir un rebroyage propre et peu fin. La trempe sous vide et le traitement cryogénique profond stabilisent le HRC 58-62 pour une rétention prolongée des arêtes.",
-    fullDescription:
-      "Les couteaux du rotor et du stator du broyeur sont les composants qui s'usent le plus dans une ligne de recyclage des plastiques en circuit fermé. Un mauvais choix d'alliage ou des tolérances géométriques inférieures aux normes se traduisent directement par une distribution granulométrique élargie, un excès de poussière et de fines, une consommation élevée d'ampères par le moteur et des intervalles d'affûtage raccourcis - autant d'éléments qui dégradent la qualité des granulés de rebroyage et augmentent le coût par tonne traitée.\n\nLes lames de granulateur Sureay sont fabriquées à partir de acier à outils pour travail à froid D2 (1.2379), SKD-11, DC53 et Cr12MoV - sélectionnées en fonction du polymère spécifique et de la teneur en charge abrasive à traiter. Le PVC chargé de carbonate de calcium et le nylon renforcé de fibres de verre nécessitent SKD-11 ou DC53 pour une résistance maximale à l'abrasion. Les applications soumises à des chocs, telles que les conteneurs HDPE à parois épaisses, les glissières en nylon froid et les carottes lourdes, nécessitent le rapport ténacité/dureté plus élevé du Cr12MoV.\n\nToutes les lames sont trempées sous vide et traitées par cryogénie à -196°C pour obtenir une microstructure HRC 58-62 stabilisée. L'étape cryogénique élimine l'austénite retenue, réduit la contrainte de compression interne et prolonge de manière significative le temps entre les cycles d'affûtage en améliorant l'uniformité de la dispersion du carbure sur l'arête de coupe.\n\n## Normes d'affûtage de précision\nLe jeu de coupe entre les couteaux du rotor et du stator est la variable la plus influente qui contrôle la taille des particules de rebroyage et la fraction des fines. Les Sureay lames de granulateur sont usinés selon les tolérances suivantes afin d'assurer une distance constante entre le rotor et la table sur toute la largeur de coupe :\n\n- Tolérance de position du trou de boulon : ±0,02 mm\n- Planéité de la face : 0,05 mm\n- Parallélisme (face supérieure à face inférieure) : 0.03 mm\n- Angle de biseau : 30°-55° (optimisé en fonction du polymère et de la vitesse du rotor)\n\nUn écart de planéité de la face supérieur à 0,08 mm permet au couteau du rotor de basculer sous la charge, ce qui élargit progressivement la fente de coupe et augmente la fraction grossière dans le regrind - un défaut qui provoque des incohérences dans l'alimentation de l'extrudeuse en aval.\n\n## Sélection de l'angle de biseau spécifique aux polymères\nbiseau de 30°-35° : Thermoplastiques souples (LDPE, LLDPE, EVA, mousse PP). Le faible angle inclus offre une netteté maximale pour un cisaillement propre des matériaux conformes.\n\nbiseau de 40°-45° : Plastiques techniques d'usage général (HDPE, ABS, PP/PET rebroyé standard). Résistance et tranchant équilibrés pour les matières premières les plus courantes des granulateurs.\n\nbiseau de 50°-55° : Composés hautement abrasifs ou chargés (nylon chargé de verre, PVC à base de carbonate de calcium, UHMW-PE). Un biseau plus large répartit l'usure abrasive sur une plus grande surface de coupe, ce qui prolonge les intervalles d'affûtage.\n\n## Compatibilité avec les machines\nLes dimensions sont inversées pour correspondre aux configurations Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid et Ramco. Les modèles de montage à double trou et à trous multiples (triple, quadra) sont disponibles en stock.",
+      "Rotor de granulateur en plastique de remplacement et couteaux fixes en D2, SKD11, DC53 ou Cr12MoV. Profils personnalisés et modèles de boulons pour la production de rebroyés de plastique.",
     link: "/products/granulator-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "Gamma Meccanica",
-    ],
+    quoteRequirements:
+      "Incluez le modèle de granulateur, la position du rotor ou du lit, les dimensions du couteau, l'espacement des trous de montage et le matériau à couper.",
+    introNote:
+      "La disposition des couteaux droits et inclinés modifie la façon dont les bords se rejoignent dans la chambre de coupe. Identifiez l’arrangement d’origine avant de choisir un ensemble de remplacement.",
     specs: [
       {
-        label: "Material",
-        value: "D2 (1.2379), SKD-11, DC53, Cr12MoV",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
-      },
-      {
-        label: "Bolt-hole Tol.",
-        value: "±0.02 mm",
-      },
-      {
-        label: "Face Flatness",
-        value: "≤ 0.05 mm",
-      },
-      {
-        label: "Parallelism",
-        value: "≤ 0.03 mm",
-      },
-      {
-        label: "Bevel Angle",
-        value: "30° - 55° (Application-optimized)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
+        label: "Dimensions",
+        value: "90–1178 mm",
       },
       {
         label: "Application",
-        value: "PET, PVC, PP, HDPE, Engineering Plastics",
+        value: "Production de rebroyés de plastique",
       },
       {
-        label: "OEM Fitment",
-        value: "Cumberland, Rapid, Herbold, Conair, Nelmor",
+        label: "Positions des couteaux",
+        value: "Couteau à rotor rotatif et couteau fixe fixe",
+      },
+      {
+        label: "Matériau",
+        value: "D2 (1.2379), SKD-11 , DC53 ou Cr12MoV",
+      },
+      {
+        label: "Dureté",
+        value: "HRC 58–62",
+      },
+      {
+        label: "Angle de biseau",
+        value: "30°–55°",
+      },
+      {
+        label: "Tolérance des trous de boulons",
+        value: "±0.02 mm",
+      },
+      {
+        label: "Planéité de la face",
+        value: "≤0.05 mm",
+      },
+      {
+        label: "Parallélisme",
+        value: "≤0.03 mm",
+      },
+      {
+        label: "Traitement thermique",
+        value: "Trempe sous vide et traitement cryogénique profond (−196°C)",
+      },
+      {
+        label: "Matière première",
+        value: "PET, PVC, PP, HDPE et plastiques techniques",
       },
     ],
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "cutter-compactor-blades",
+    ],
+    offers: {
+      lowPrice: 25,
+      highPrice: 320,
+    },
     components: [
       {
-        id: "maximized-regrind-quality",
-        tag: "QUALITÉ",
-        title: "Qualité maximale du rebroyage",
+        id: "granulator-blades-advantage-1",
+        tag: "Options d'acier à outils pour le plastique rebroyé",
+        title: "Options d'acier à outils pour le plastique rebroyé",
         description:
-          "Les arêtes de coupe ultra-aiguisées et alignées avec précision cisaillent proprement le plastique au lieu de le déchirer, ce qui réduit considérablement la production de poussières et de fines indésirables.",
+          "Les couteaux D2 , SKD11 , DC53 et Cr12MoV offrent des choix de matériaux pour la production de rebroyés de plastique, l'acier spécifié étant pris en compte aux côtés du polymère, des charges et de l'agencement de coupe existant.",
       },
       {
-        id: "extended-mtbr",
-        tag: "FIABILITÉ",
-        title: "MTBR prolongé (temps moyen entre deux remplacements)",
+        id: "granulator-blades-advantage-2",
+        tag: "Biseaux rectifiés et géométrie de montage définie",
+        title: "Biseaux rectifiés et géométrie de montage définie",
         description:
-          "La haute résistance à l'usure minimise la fréquence d'affûtage et de remplacement des lames, ce qui permet à votre ligne de recyclage de fonctionner en continu.",
+          "Sureay fournit des couteaux à rotor et fixes avec des biseaux, des faces de travail et des modèles de boulons spécifiés, permettant aux commandes de remplacement de conserver l'orientation de coupe et la géométrie du siège de la machine.",
       },
       {
-        id: "reduced-motor-load",
-        tag: "EFFICACITÉ",
-        title: "Charge réduite du moteur",
+        id: "granulator-blades-advantage-3",
+        tag: "Ensembles de rotors et de couteaux stationnaires personnalisés",
+        title: "Ensembles de rotors et de couteaux stationnaires personnalisés",
         description:
-          "Les angles de coupe optimisés diminuent la force de cisaillement nécessaire, ce qui réduit la consommation électrique du moteur de votre broyeur et les coûts énergétiques par tonne.",
+          "Sureay fournit des rotors individuels et des couteaux fixes ou des ensembles complets sur dessin ou sur échantillon. Les longueurs de couteaux répertoriées vont de 90 à 1 178 mm, avec des positions mobiles et stationnaires spécifiées séparément pour la chambre de coupe.",
       },
     ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Comment sélectionner des couteaux de remplacement pour mon granulateur en plastique ?",
+          answer:
+            "Utilisez le modèle de la machine, la position du couteau et le numéro de pièce d'origine, puis comparez la longueur, la section, le biseau et le modèle de fixation. Les couteaux à rotor et fixes peuvent différer au sein d’une même machine. Le tableau des dimensions standard donne des configurations individuelles, tandis que le dessin du couteau établit le remplacement exact de votre chambre de coupe installée.",
+        },
+        {
+          question:
+            "Que signifient les couteaux à rotor, les couteaux à mouche et les couteaux stationnaires ?",
+          answer:
+            "Les couteaux du rotor, également appelés couteaux à mouche, se déplacent avec le rotor du granulateur. les couteaux fixes forment le bord opposé stationnaire. Les couteaux de broyeur en plastique sont un nom d'achat plus large parfois utilisé pour ces pièces. Identifiez la machine et la position réelles, car les mêmes termes peuvent être utilisés pour différentes dispositions de coupe dans les équipements de réduction de taille.",
+        },
+        {
+          question:
+            "Quand la teneur en polymère ou en charge doit-elle modifier le choix du matériau ?",
+          answer:
+            "Les charges abrasives et la contamination peuvent modifier la rapidité avec laquelle le bord de travail s'use, tandis que les chocs et les dommages aux bords fragiles soulèvent différentes préoccupations. Comparez le composé réel et le couteau utilisé avec les spécifications actuelles du matériau. Cette comparaison permet d'évaluer une nuance de remplacement sans modifier la section de couteau, le biseau ou la géométrie de montage requis de la machine.",
+        },
+        {
+          question:
+            "Pourquoi un granulateur produit-il plus de fines ou un rebroyé de moindre qualité ?",
+          answer:
+            "Une paire de couteaux émoussée, un jeu incorrect entre le rotor et le lit ou un tamis usé peuvent augmenter les fines ou modifier la qualité du rebroyé. Recherchez les bords arrondis ou l'usure inégale du rotor et des couteaux fixes et comparez le rendement dans les mêmes conditions d'alimentation avant de modifier les spécifications du couteau.",
+        },
+        {
+          question:
+            "Existe-t-il un espacement standard des couteaux pour tous les granulateurs ?",
+          answer:
+            "Non. L’écart spécifié entre le rotor et le lit dépend de votre granulateur et de la configuration de ses couteaux. Les paramètres OEM identifient les couteaux qui peuvent être ajustés et les dimensions minimales des couteaux après réaffûtage. Vérifiez les deux limites lors du montage d'un ensemble affûté ou de remplacement.",
+        },
+        {
+          question:
+            "Pourquoi les arrangements de couteaux droits et inclinés nécessitent-ils des dessins différents ?",
+          answer:
+            "L'angle de coupe peut résulter du profil du couteau, de sa position sur le rotor ou sur le banc, ou des deux. La longueur totale du couteau ne décrit donc qu'une partie de la configuration. Le dessin doit conserver l'orientation du biseau et la géométrie de fixation utilisées par la combinaison rotor-lit de la machine.",
+        },
+        {
+          question: "Quand peut-on réaffûter les couteaux du granulateur ?",
+          answer:
+            "Le réaffûtage est approprié lorsque le profil de coupe spécifié peut être restauré dans les dimensions minimales autorisées du couteau. Vérifiez la hauteur restante et la marge de réglage par rapport aux instructions de la machine. Les couteaux qui ont atteint leur limite de service ou qui ne peuvent pas retrouver un tranchant sain doivent être remplacés, les positions du rotor et du lit étant évaluées comme une paire de travail.",
+        },
+        {
+          question:
+            "Quelles informations sont nécessaires pour citer le rotor du granulateur en plastique et les couteaux fixes ?",
+          answer:
+            "Envoyez le modèle du granulateur et des dessins séparés, des numéros de pièces ou des échantillons pour les positions du rotor et du lit, ainsi que le type de plastique, les charges et la quantité pour chaque couteau. Affichez le motif de biseau et de trou pour chaque position. Marquez la hauteur de réaffûtage séparément si votre seule référence est un couteau aiguisé.",
+        },
+      ],
+      company: [],
+    },
     dimensionLabels: {
-      col0: "Configuration des trous",
+      col0: "Configuration",
       col1: "Dimensions (L × L × T)",
       col2: "Centre du trou Pas",
       caption:
@@ -2346,447 +3043,469 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Double hole",
+        itemNo: "SR002801",
+        spec: "Double trou",
         od: "90 × 70 × 8",
         bolt: "40 / 45 / 50",
       },
       {
-        spec: "Double hole",
+        itemNo: "SR002802",
+        spec: "Double trou",
         od: "120 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002803",
+        spec: "Triple trou",
         od: "126 × 60 × 8",
         bolt: "40",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002804",
+        spec: "Triple trou",
         od: "150 × 70 × 8",
         bolt: "50 / 55",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002805",
+        spec: "Triple trou",
         od: "170 × 70 × 8",
         bolt: "45",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002806",
+        spec: "Triple trou",
         od: "180 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002807",
+        spec: "Trou quadratique",
         od: "170 × 70 × 8",
         bolt: "40",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002808",
+        spec: "Trou quadratique",
         od: "200 × 70 × 8",
         bolt: "50",
       },
+      {
+        itemNo: "SR002809",
+        spec: "Rotor ZERMA GSP 560/700 — position 501",
+        od: "310 × 100 × 22",
+        bolt: "Voir le schéma",
+      },
+      {
+        itemNo: "SR002810",
+        spec: "Stator ZERMA GSP 560/700 — position 601",
+        od: "646 × 100 × 22",
+        bolt: "Voir le schéma",
+      },
+      {
+        itemNo: "SR002811",
+        spec: "Rotor ZERMA GSH 800/1200 — 80000900",
+        od: "568 × 100 × 22",
+        bolt: "Voir le schéma",
+      },
+      {
+        itemNo: "SR002812",
+        spec: "Stator ZERMA GSH 800/1200 — 80001050",
+        od: "1178 × 100 × 22",
+        bolt: "Voir le schéma",
+      },
+      {
+        itemNo: "SR002813",
+        spec: "Rotor ZERMA GSH 800/1600 — 80000920",
+        od: "385 × 100 × 22",
+        bolt: "Voir le schéma",
+      },
+      {
+        itemNo: "SR002814",
+        spec: "Stator ZERMA GSH 800/1600 — 80001070",
+        od: "795 × 100 × 22",
+        bolt: "Voir le schéma",
+      },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "twin-shaft-blades-recycling",
-      "cutter-compactor-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 320,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Comment choisir entre D2, DC53 et Cr12MoV pour mon broyeur ?",
-          answer:
-            "D2 est la norme industrielle pour les plastiques propres comme le PET et le PP. Pour les polymères chargés de verre ou abrasifs, DC53 offre une résistance à l'usure supérieure. Si votre alimentation contient des impuretés métalliques occasionnelles (comme des fils ou des agrafes), Cr12MoV offre une plus grande résistance aux chocs pour éviter l'écaillage des bords.",
-        },
-        {
-          question:
-            "Quelles sont les causes de l'excès de poussière et de fines lors de la granulation plastique ?",
-          answer:
-            "Cela est généralement dû à des arêtes émoussées ou à un angle de biseau incorrect qui déchire le plastique au lieu de le cisailler. Nous optimisons l'angle de biseau (30°-55°) en fonction de votre polymère spécifique pour garantir une coupe nette, ce qui maximise la qualité de votre rebroyé et la valeur de vos granulés.",
-        },
-        {
-          question:
-            "Pouvez-vous faire correspondre les modèles exacts de trous de boulon à ma machine spécifique ?",
-          answer:
-            "Absolument. Nous disposons d'une vaste base de données de plans OEM pour Cumberland, Herbold, Rapid, Weima et bien d'autres. Nous fraisons tous les contre-trous avec une tolérance stricte de ±0,02 mm afin de garantir un ajustement parfait sans micro-roche.",
-        },
-        {
-          question:
-            "Quelle géométrie des couteaux du rotor permet d'obtenir la fraction de fines la plus faible dans les broyeurs à côté de la presse ?",
-          answer:
-            "Pour les broyeurs en ligne hors presse sur les lignes de moulage par injection, un angle de biseau de 40°-45° avec une face de râteau polie (Ra ≤ 0,8μm) permet d'obtenir le rebroyage le plus propre et le moins chargé en fines sur les matériaux des canaux de coulée et de la carotte. La face polie réduit l'adhérence dans la zone de coupe, empêchant le micro-soudage des matériaux HDPE et PP qui génère des fines aux cadences élevées typiques de la production de moulage par injection en continu.",
-        },
-        {
-          question:
-            "Quand dois-je affûter ou remplacer les couteaux du rotor de mon broyeur ?",
-          answer:
-            "L'indicateur principal est la distribution de la taille des particules rebroyées - lorsque la fraction surdimensionnée dépasse 8 à 10 % du poids de sortie, les couteaux du rotor doivent être affûtés. Les indicateurs secondaires sont une augmentation de plus de 15 % de la consommation d'ampères du moteur par rapport à la ligne de base et une fraction de poussière élevée. Chaque lame Sureay peut généralement être réaffûtée 3 à 5 fois avant que la géométrie du biseau n'atteigne la profondeur minimale de matériau utilisable, le remplacement étant alors plus économique.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
-        },
-        {
-          question:
-            "Qu'est-ce qui différencie le traitement thermique de Sureay des autres produits moins chers ?",
-          answer:
-            "Contrairement à la trempe standard, chaque lame Sureay subit un traitement cryogénique profond après la trempe sous vide. Ce traitement transforme l'austénite retenue en martensite, ce qui augmente la résistance à l'usure jusqu'à 40 % et garantit une dureté uniforme sur l'ensemble du tranchant.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les lames de remplacement OEM standard sont généralement expédiées sous 48 heures. Les profils personnalisés prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question:
-            "Quelles sont les certifications de qualité détenues par Sureay et pouvez-vous fournir les rapports d'essais des matériaux ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle et un certificat de lot traitement thermique. Pour la qualification OEM, des rapports dimensionnels CMM complets et des certificats d'aciérie sont disponibles sur demande.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 5 lames) pour vérifier l'adaptation à la machine et tester la durée de vie des arêtes. Le délai de livraison des échantillons est de 5 à 7 jours ouvrables. Pour les profils personnalisés, des échantillons dimensionnels sont produits avant le lancement de la production complète - aucun engagement d'outillage n'est pris tant que l'adaptation n'est pas confirmée.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Commandez des couteaux de refendage de bobines d'acier avec les entretoises, les anneaux de dévêtissage et les disques séparateurs nécessaires à votre ligne. Sureay propose des options de nuances, des alésages personnalisés et des largeurs d'outillage ; envoyez vos dessins et votre calendrier de découpe pour un devis coordonné.",
     id: "metal-coil-slitting-knives",
-    name: "Couteaux à refendre les bobines de métal",
+    name: "Couteaux de refendage pour bobines d’acier",
     fullName:
-      "Couteaux rotatifs robustes pour le traitement des bobines d'acier",
+      "Couteaux de refendage des bobines d’acier et outillage de cisaille rotative",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Lames de refendage en métal",
-    image:
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "Usage intensif",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
-    ],
+    categoryDisplay: "Couteaux de refendage pour bobines d’acier",
+    image: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Outillage complet de refendage rotatif de bobines pour les centres de service des métaux et les aciéries. Couteaux circulaires de refendage D2, SKD-11 et H13 rodés à Ra ≤ 0,2μm avec une tolérance d'épaisseur de ±0,001 mm. Conçus pour le cisaillement sans bavure de l'acier laminé à froid (CR), de l'acier laminé à chaud (HR), des bobines galvanisées et de l'acier au silicium lourd.",
-    fullDescription:
-      "Le refendage de précision de bobines exige une norme de tolérance dimensionnelle que la plupart des applications industrielles de coupe n'approchent jamais. Sur une ligne de refendage à grande vitesse qui fait passer des bobines d'acier lourd à une vitesse de 200 à 400 m/min sur une pile d'arbres à plusieurs couteaux, une erreur d'épaisseur cumulée de seulement 0,01 mm par couteau produit une déviation mesurable de la largeur de la fente, des bavures importantes sur les bords et un cambrage de la bobine qui dépasse les limites de qualité pour la fabrication d'automobiles et d'appareils électroménagers.\n\nLes couteaux circulaires Sureay sont fabriqués avec des tolérances vérifiées extrêmes. Toutes les faces latérales des couteaux sont recouvertes d'une finition Ra ≤ 0,2μm. Cette finition de la face miroir n'est pas simplement esthétique - elle assure un contact métal sur métal complet entre les lames et les entretoises dans la pile d'arbres, éliminant les espaces d'air microscopiques qui permettent une déflexion individuelle de la lame sous les charges de refendage latérales.\n\n## Sélection d'alliages lourds par matériau de bande\n\n**Acier laminé à froid et galvanisé (CR, EG, HDG):** D2 (1.2379) ou SKD-11, durci à HRC 60-62 par trempe sous vide. La teneur élevée en carbure de chrome résiste à l'usure abrasive due aux paillettes de zinc et à l'écaillage de la surface. Recommandé pour les centres de service en acier CR à équipe continue.\n\n**Acier laminé à chaud et tôles fortes:** H13 (SKD-61) acier à outils pour travail à chaud ou 6CrW2Si. Le refendage d'acier laminé à chaud génère des forces d'impact massives et des températures ambiantes élevées. La ténacité supérieure de l'acier H13 empêche la rupture fragile catastrophique qui détruit les lames D2 standard sur les lignes à fort gabarit.\n\n**Acier au silicium (qualité électrique CRGO / CRNO):** qualités Cr12MoV ou PM obtenues par métallurgie des poudres. L'extrême abrasivité de l'acier au silicium - principalement causée par des inclusions de silice - exige une résistance à l'usure maximale pour maintenir les tolérances de largeur de fente tout au long du cycle de production d'une lamelle de transformateur.\n\n## Outillage complet pour l'arbre de refendage\n\nLe couteau de coupe n'est qu'un des composants d'un système de refente de bobine de précision. Les entretoises en acier, les anneaux de dénudage en caoutchouc collé et les disques séparateurs de bras doivent être dimensionnellement adaptés au jeu de couteaux pour assurer une précharge uniforme de l'arbre et une tension constante de la bande. Sureay fournit des ensembles d'outils de refendage entièrement intégrés - vérifiés en tant que système assorti pour éliminer les erreurs d'empilage des tolérances.",
+      "Couteaux de refendage de bobines d'acier de remplacement pour l'acier au carbone, l'acier inoxydable et l'acier à haute résistance. Cisailles rotatives sur mesure, entretoises et bagues de dévêtissage selon dessin.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Fagor Arrasate",
-      "Heinrich Georg",
-      "Red Bud Industries",
-      "Braner",
-      "Salico",
-      "Athader",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2, SKD11, Cr12MoV (Cold-Roll) | H13, 6CrW2Si (Hot-Roll)",
+        label: "Dimensions",
+        value: "Cisaille rotative OD 80–680 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 60–62 (Cold-Roll) | HRC 54–58 (Hot-Roll / Impact)",
+        label: "Matériau",
+        value:
+          "Carbure D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS ou WC-Co",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Applications",
+        value:
+          "Bobines laminées à froid, à chaud, inoxydables et à haute résistance",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.002 mm",
+        label: "Finition de surface",
+        value: "Faces polies miroir, Ra ≤0,2 μm",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤ 0.2 μm)",
+        label: "Ajustement de l'alésage",
+        value:
+          "H7 pour le modèle H7 répertorié. D'autres s'adaptent au dessin.",
       },
       {
-        label: "Complete Tooling",
-        value: "Knives, Spacers, Rubber Stripper Rings, Separators",
+        label: "Dureté typique",
+        value:
+          "D2 58–62 HRC · H13 54–58 HRC pour refendage de plaques à température ambiante · PM HSS 64–66 HRC",
       },
       {
-        label: "Application",
-        value: "Cold / Hot Rolled Steel, Silicon Steel, Galvanized Plate",
+        label: "Options de précision",
+        value:
+          "Pour un diamètre extérieur jusqu'à 420 mm, une épaisseur de ±0,001 mm et un parallélisme des faces de 0,002 mm. Autres tailles au dessin.",
       },
+      {
+        label: "Outillage",
+        value:
+          "Entretoises, anneaux dévêtisseurs et disques séparateurs surbras",
+      },
+      {
+        label: "Fixation",
+        value: "Arbre solide avec un alésage lisse ou claveté",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Couteaux à refendre les bobines d'acier | Outillage personnalisé",
+      sizeRange: "Cisaille rotative OD 80–680 mm",
+      heroAlt:
+        "Couteau de cisaille rotatif affûté épais pour le refendage de bobines d'acier",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-coil-slitting-knives-detail.webp",
+        alt: "Anneau de dénudage pour refendage de bobines avec un noyau en acier et un anneau extérieur collé",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "steel",
+          tabLabel: "Couteaux en acier",
+          title: "Couteaux rotatifs en acier",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Classe de ligne",
+          ],
+          rows: [
+            ["SR001301", "200 × 120 × 10 mm", "Jauge de lumière"],
+            ["SR001302", "200 × 120 × 12 mm", "Jauge de lumière"],
+            ["SR001303", "250 × 150 × 12 mm", "Centre de services"],
+            ["SR001304", "250 × 150 × 15 mm", "Centre de services"],
+            ["SR001305", "300 × 200 H7 × 12 mm", "Usage moyen"],
+            ["SR001306", "315 × 200 × 15 mm", "Laminé à froid/à chaud"],
+            ["SR001307", "315 × 200 × 20 mm", "Laminé à froid/à chaud"],
+            ["SR001308", "400 × 260 × 25 mm", "Laminé à chaud"],
+            ["SR001309", "500 × 320 × 40 mm", "Plaque lourde"],
+          ],
+        },
+        {
+          id: "carbide",
+          tabLabel: "Couteaux en carbure",
+          title: "Couteaux rotatifs en carbure",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Construction",
+          ],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Carbure monobloc"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Carbure monobloc"],
+            ["SR001333", "204 × 125 × 10 mm", "Carbure monobloc"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Carbure monobloc"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Carbure monobloc"],
+          ],
+        },
+        {
+          id: "tooling",
+          tabLabel: "Outillage d'arbre",
+          title: "Outillage d'arbre",
+          columns: [
+            "Référence",
+            "Composant",
+            "Fonction",
+            "Entrées de sélection",
+          ],
+          rows: [
+            [
+              "SR001341",
+              "Entretoises",
+              "Définir les positions de coupe",
+              "Largeur, alésage et ajustement de la pile",
+            ],
+            [
+              "SR001342",
+              "Anneaux décapants",
+              "Bande de support et de dégagement",
+              "Acier ou élastomère collé, dureté et largeur",
+            ],
+            [
+              "SR001343",
+              "Disques séparateurs",
+              "Bandes séparées de guidage",
+              "Alésage du surbras, diamètre extérieur et forme du bord",
+            ],
+          ],
+        },
+        {
+          id: "additional-steel-knives",
+          tabLabel: "Tailles supplémentaires de couteaux en acier",
+          title: "Tailles supplémentaires de couteaux en acier",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Application",
+          ],
+          rows: [
+            [
+              "SR001818",
+              "400 × 260 × 20 mm",
+              "Acier laminé à chaud de gros calibre",
+            ],
+            ["SR001819", "500 × 320 × 30 mm", "Plaque lourde"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Cisaille rotative OD 80–680 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Carbure D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS ou WC-Co",
+        },
+        {
+          label: "Applications",
+          value:
+            "Bobines laminées à froid, à chaud, inoxydables et à haute résistance",
+        },
+        {
+          label: "Finition de surface",
+          value: "Faces polies miroir, Ra ≤0,2 μm",
+        },
+        {
+          label: "Ajustement de l'alésage",
+          value:
+            "H7 pour le modèle H7 répertorié. D'autres s'adaptent au dessin.",
+        },
+        {
+          label: "Dureté typique",
+          value:
+            "D2 58–62 HRC · H13 54–58 HRC pour refendage de plaques à température ambiante · PM HSS 64–66 HRC",
+        },
+        {
+          label: "Options de précision",
+          value:
+            "Pour un diamètre extérieur jusqu'à 420 mm, une épaisseur de ±0,001 mm et un parallélisme des faces de 0,002 mm. Autres tailles au dessin.",
+        },
+        {
+          label: "Outillage",
+          value:
+            "Entretoises, anneaux dévêtisseurs et disques séparateurs surbras",
+        },
+        {
+          label: "Fixation",
+          value: "Arbre solide avec un alésage lisse ou claveté",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Fagor Arrasate",
+      "Heinrich Georg",
+      "Burghardt + Schmidt",
+      "ANDRITZ",
+      "Red Bud Industries",
     ],
     components: [
       {
-        id: "micron-tolerance",
-        tag: "PRÉCISION",
-        title: "Ingénierie de la micro-tolérance",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Nuances d'acier pour différentes charges de bobines",
         description:
-          "Conçue avec une tolérance d'épaisseur de ±0,001 mm et un parallélisme de 0,002 mm. Cela garantit une erreur cumulative nulle lors de l'empilage de plusieurs lames lourdes et d'entretoises sur l'arbre de la refendeuse.",
+          "Sureay propose des configurations d'acier à outils et d'acier PM pour différentes qualités de bobines et charges de traitement, permettant aux commandes de couteaux de remplacement de refléter les spécifications de la bande et l'usure ou l'écaillage observé.",
       },
       {
-        id: "alloy-toughness",
-        tag: "METALLURGIE",
-        title: "Sélection d'alliages pour usage intensif",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Dimensions au sol pour les piles de couteaux et d'espaceurs",
         description:
-          "Du D2/SKD11 à haute teneur en chrome pour l'acier abrasif laminé à froid et l'acier galvanisé, au H13 résistant aux chocs pour les laminoirs lourds à chaud. Chaque lame est trempée sous vide pour offrir une résistance exceptionnelle du tranchant.",
+          "Les couteaux de remplacement sont affûtés à la largeur et à la géométrie de face spécifiées pour votre pile de refendage de bobines, avec des dimensions d'espacement correspondantes coordonnées à la même disposition des outils.",
       },
       {
-        id: "complete-setup",
-        tag: "SYSTÈME",
-        title: "Outillage complet de l'arbre",
+        id: "selection-3",
+        tag: "Application",
+        title: "Couteaux à refendre avec outillage compagnon",
         description:
-          "En plus des lames, nous fournissons des entretoises en acier parfaitement adaptées, des anneaux d'effeuillage liés au caoutchouc et des disques séparateurs à bras. Un système entièrement intégré assure une tension parfaite de la bande et un enroulement de la bobine sans bavure.",
+          "Procurez-vous des couteaux de refendage, des entretoises, des anneaux de dévêtissage et des disques séparateurs en une seule demande, avec les composants et les quantités requis disposés autour de la disposition de vos outils de ligne de bobines.",
       },
     ],
-    dimensionLabels: {
-      col0: "Type de machine ou de ligne",
-      col1: "Diamètre extérieur",
-      col2: "Diamètre intérieur",
-      col3: "Épaisseur",
-      caption:
-        "* Les dimensions indiquées sont des exemples standard. Nous fabriquons jusqu'à un diamètre de 1500 mm pour les lignes de refendage de tôles de forte épaisseur. Les rainures de clavette et les trous de l'axe d'entraînement sont usinés selon les plans exacts de l'équipementier.",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Slitting Line",
-        od: "Ø 200 mm",
-        id: "120 mm",
-        thickness: "10 / 12 mm",
-      },
-      {
-        spec: "Standard Steel Service Center",
-        od: "Ø 250 mm",
-        id: "150 mm",
-        thickness: "12 / 15 mm",
-      },
-      {
-        spec: "Medium-Heavy CR/HR Line",
-        od: "Ø 315 mm",
-        id: "200 mm",
-        thickness: "15 / 20 mm",
-      },
-      {
-        spec: "Heavy Gauge HR Steel Mill",
-        od: "Ø 400 mm",
-        id: "260 mm",
-        thickness: "20 / 25 mm",
-      },
-      {
-        spec: "Extreme Heavy Plate Mill",
-        od: "Ø 500 mm",
-        id: "320 mm",
-        thickness: "30 / 40 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "metal-foil-strip-slitter-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1500,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Quel est le jeu de lame à respecter pour l'acier laminé à froid par rapport à l'acier au silicium ?",
+            "Qu'est-ce qui identifie un couteau de refendage de bobines d'acier de remplacement ?",
           answer:
-            "Pour l'acier doux laminé à froid (CR, EG), régler le jeu horizontal à 8-10% de l'épaisseur du matériau. Pour l'acier au silicium (CRGO/CRNO), le jeu doit être réduit à 5-8% - la dureté et la fragilité extrêmes de l'acier au silicium exigent un espace de cisaillement plus serré pour éviter la rupture des bords qui produit des bavures sur les bandes laminées des transformateurs.",
+            "Le diamètre extérieur, l'alésage, la largeur axiale et l'interface de l'arbre établissent l'ajustement de base. Incluez la qualité de la bande, l’épaisseur et l’outillage retenu. Les couteaux de cisaille rotatifs sont les couteaux circulaires utilisés pour le refendage longitudinal de bobines ; les couteaux de cisaillement droits coupent la bande, tandis que les [lames de hachoir à ferraille](/products/scrap-chopper-blades) coupent la garniture de bord en morceaux plus courts.",
         },
         {
           question:
-            "Pourquoi la largeur de ma fente dérive-t-elle sur toute la largeur de la bobine après la première bobine ?",
+            "Comment la résistance des bobines et les dommages causés à la lame affectent-ils le choix du matériau du couteau ?",
           answer:
-            "La dérive de la largeur de fente est causée par la perte de contact entre la lame et la face de l'entretoise en raison des tolérances d'épaisseur variables dans la pile de porte-outils. Même une incohérence d'épaisseur de lame de 0,002 mm dans une pile de 20 lames crée un décalage latéral cumulatif de 0,04 mm. Nos lames et entretoises sont rodées avec une tolérance d'épaisseur de ±0,001 mm et une finition de surface Ra ≤ 0,2μm, ce qui élimine les espaces d'air qui permettent une déviation individuelle des lames.",
+            "Tenez compte de la résistance de la bande, de son épaisseur et des conditions de traitement ainsi que de l'état du couteau utilisé. L'abrasion progressive et l'écaillage des bords soulèvent différentes questions de sélection de matériaux. La comparaison des spécifications de la bobine et du modèle d'usure actuel avec l'outillage existant permet de définir les exigences de remplacement, y compris l'équilibre entre la résistance à l'usure et la résistance aux dommages aux bords.",
         },
         {
           question:
-            "Dois-je utiliser D2 ou H13 pour refendre une tôle d'acier laminée à chaud (HR) de 8 mm d'épaisseur ?",
+            "Pourquoi les couteaux de refendage de bobines s'écaillent-ils au lieu de s'user progressivement ?",
           answer:
-            "Pour une tôle HR de 8 mm, il faut utiliser du H13 ou du 6CrW2Si. Le refendage d'acier laminé à chaud de forte épaisseur génère un choc d'impact massif au niveau du point de morsure. Le D2 (à HRC 60) est trop fragile et risque de se briser ou de subir de graves micro-écailles sous ces charges. Le H13 (trempé à HRC 54-56) offre la ténacité massive nécessaire pour absorber ces forces d'impact de manière fiable.",
+            "L'écaillage peut indiquer une surcharge mécanique. Un jeu horizontal incorrect, un chevauchement excessif, un outillage déformé ou un tranchant fatigué peuvent y contribuer. Le matériau et la dureté du couteau affectent également le résultat. Vérifiez la position endommagée, l'outillage conservé et l'historique de meulage par rapport à la qualité et à l'épaisseur réelles de la bande avant de décider si le matériau de configuration ou de remplacement doit être modifié.",
         },
         {
           question:
-            "Quel programme d'inspection de maintenance permet de maximiser la durée de vie des couteaux de la découpeuse circulaire ?",
+            "Quelles sont les causes des bavures ou des bords de fente inégaux sur une ligne de bobine ?",
           answer:
-            "Inspecter chaque semaine les faces des couteaux à la loupe 10× pour détecter tout écaillage des bords (indique une dérive du jeu ou des inclusions de matériaux durs). Recouvrir les faces latérales lorsque la rugosité de la surface dépasse Ra 0,4μm pour rétablir un contact complet avec l'arbre. Stocker les couteaux déposés verticalement dans de l'huile antirouille pour éviter la formation de piqûres corrosives pendant les périodes d'inactivité.",
+            "L'usure ou l'écaillage de la lame, le jeu des couteaux, le chevauchement, l'état de l'arbre et les changements dans la qualité de la bande peuvent tous y contribuer. Comparez la position et la direction du défaut sur le motif de fente. Cet enregistrement permet de déterminer s'il suit un couteau, une configuration d'outillage particulière ou un changement dans le matériau en cours de traitement.",
+        },
+        {
+          question:
+            "Comment les tolérances des couteaux et des entretoises doivent-elles être spécifiées pour une pile complète ?",
+          answer:
+            "Définissez la variation autorisée pour les largeurs individuelles et pour la pile terminée. L'ajustement de l'alésage, l'état de la face et le parallélisme affectent également l'assemblage. Les options de précision du catalogue s'appliquent aux couteaux jusqu'à 420 mm de diamètre extérieur ; d'autres tailles sont spécifiées sur le dessin. Enregistrez les composants conservés ainsi que les composants de remplacement afin que l'arrangement complet ait des exigences dimensionnelles claires.",
+        },
+        {
+          question:
+            "Sureay peut-il fournir ensemble des couteaux, des entretoises, des anneaux de dévêtissage et des disques séparateurs ?",
+          answer:
+            "Oui. Ces quatre types d’outillages peuvent être inclus dans un même devis. Le planning des largeurs de fentes et les dessins des composants définissent leur disposition. Répertoriez la quantité de chaque configuration et identifiez les pièces existantes qui resteront utilisées, permettant ainsi de considérer les largeurs de remplacement, les interfaces et les diamètres de travail comme faisant partie d'un seul assemblage.",
+        },
+        {
+          question:
+            "Comment puis-je comparer le coût des différents matériaux de couteaux de découpe de bobines ?",
+          answer:
+            "Comparez le coût par tonne ou par mètre acceptable sous les mêmes exigences de qualité de bobine, de calibre, de motif de fente et de qualité des bords. Incluez l'achat de couteaux, le réaffûtage, le temps de changement et les rebuts, en utilisant les résultats enregistrés entre les changements de couteaux. Appliquez la même période comptable à chaque option afin que les changements dans les conditions de production soient séparés des différences dans les performances des couteaux.",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay peut-il fournir un ensemble complet d'outils intégrés, y compris des entretoises et des anneaux d'arrachage ?",
-          answer:
-            "Oui. Nous fournissons des systèmes complets d'outillage de refente assortis : jeux de couteaux, entretoises en acier de précision (rectifiées à ±0,001 mm), anneaux d'effeuillage en caoutchouc collé et disques séparateurs de bras. L'approvisionnement de tous les composants à partir d'une seule pile de tolérance vérifiée élimine les erreurs cumulatives qui apparaissent lorsque l'on mélange des outils provenant de fournisseurs différents.",
-        },
-        {
-          question:
-            "Fabriquez-vous des couteaux de refendage de grand diamètre pour les laminoirs de tôles fortes ?",
-          answer:
-            "Oui, nos installations de meulage lourd et de traitement thermique peuvent traiter des couteaux de refendage circulaires d'un diamètre extérieur allant jusqu'à 1 500 mm, spécialement conçus pour les applications de rognage des bords de bobines et de tôles laminées à chaud de fort calibre.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "guillotine-shear-blades",
+    ],
   },
   {
     id: "metal-shear-knives",
-    name: "Couteaux à cisaillement en métal",
-    fullName:
-      "Couteaux de guillotine et de cisaille à ferraille robustes pour la fabrication du métal",
+    name: "Lames de cisaille crocodile",
+    fullName: "Lames de cisailles crocodiles pour le recyclage de la ferraille",
+    seoTitle: "Alligator lames de cisaille pour ferraille",
+    seoDescription:
+      "Remplacez la lame mobile supérieure ou le couteau fixe inférieur de votre cisaille crocodile. Les longueurs répertoriées sont de 320 à 508 mm, avec les options d'acier S1 , 6CrW2Si et H13 .",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Couteaux à cisaillement en métal",
-    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Cisaillement lourd",
+    categoryDisplay: "Lames de cisaille crocodile",
+    image: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+    badge: "Cisailles crocodiles",
     badgeColor: "blue",
     gallery: [
-      "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-04.webp",
-      "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+      "/images/products/shear-detail/alligator-shear-knives-detail.webp",
     ],
     description:
-      "ZGTR0zGTR droite de première qualité pour les guillotines hydrauliques, les cisailles alligator et les cisailles à ferraille lourdes. Forgée à partir d'aciers à outils D2, S1 (6CrW2Si) et H13. Surface rectifiée avec un parallélisme de ±0,05 mm sur toute la longueur pour un cisaillement sans bavure de l'acier doux, des tôles inoxydables et des billettes de ferraille lourde.",
-    fullDescription:
-      "La guillotine et la lames de cisaille de ferraille fonctionnent dans des conditions qui exposent toutes les faiblesses du choix de l'alliage, de la profondeur de la traitement thermique et du parallélisme du meulage. La lame de cisaillement supérieure est poussée contre la lame inférieure sous des forces d'actionnement allant de 40 à plus de 2000 tonnes sur les lignes de cisaillement de tôles lourdes. Les modes de défaillance prématurés - renversement des arêtes sur l'acier doux, fracture fragile sur l'acier inoxydable ou éclatement sur la ferraille lourde - sont tous attribuables à une inadéquation métallurgique ou à des écarts de parallélisme de meulage qui concentrent des forces extrêmes en un seul point.\n\nLes lames de cisaille métalliques Sureay sont fournis dans trois grades métallurgiques spécifiques, chacun correspondant à un régime mécanique défini :\n\n## Sélection d'alliage par application de cisaillement\n\n**Cisaillage à froid (acier doux):** Aciers à outils standard à haute teneur en carbone, trempés à HRC 57-59. Cela permet d'obtenir une géométrie d'arête tranchante et stable à un coût économique, ce qui en fait la bonne spécification pour les ateliers de fabrication générale et les entrepreneurs en acier de construction qui coupent des tôles d'acier doux A3/A36 standard jusqu'à 8 mm.\n\n**Cisaillage de tôles lourdes et d'acier inoxydable:** Nuances équivalentes D2 (Cr12MoV) trempées à HRC 58-60. Spécifiées pour une résistance maximale à l'usure sur les tôles en acier inoxydable austénitique (304, 316L) et en alliage à haute résistance (Hardox). La matrice à forte teneur en chrome-carbure résiste à l'usure sévère due à l'écrouissage imposée par ces métaux résistants.\n\n**Recyclage de la ferraille et cisaillage à chaud:** S1 (6CrW2Si) acier résistant aux chocs et H13 acier à outils pour le travail à chaud. Lors du cisaillement de ferrailles mixtes, de barres d'armature ou de billettes d'acier chaudes (900-1100°C), la résistance extrême aux chocs est prioritaire sur la dureté. Ces alliages absorbent les chocs massifs sans la fracture fragile qui détruit les lames D2 standard.\n\n## L'impératif de parallélisme (±0,05 mm)\nUn mauvais parallélisme est la cause la plus fréquente de défaillance prématurée des lames de cisaillement. Le contact inégal des faces concentre la totalité de la charge de cisaillement sur une longueur réduite du tranchant de la lame, ce qui entraîne un renversement du tranchant ou un écaillage en l'espace de quelques heures. Toutes les Sureay lames de cisaille sont rectifiées avec précision sur les deux faces de coupe pour garantir une tolérance de parallélisme standard de ±0,05 mm sur une longueur de 1000 mm (avec des tolérances supérieures de ±0,02 mm disponibles pour les applications aérospatiales et les applications inoxydables de précision).",
+      "lames de cisaille rechange pour la découpe de ferraille. Couteaux supérieurs et inférieurs S1 , 6CrW2Si ou H13 , avec détails de montage adaptés à votre dessin.",
     link: "/products/metal-shear-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "TRUMPF",
-      "AMADA",
-      "BYSTRONIC",
-      "Durma",
-      "Haco",
-      "Lefort",
-      "Harris",
+    compatibleMachines: ["JMC McIntyre", "Bronneberg"],
+    compatibleMachinesIntro:
+      "Sureay fournit les lames supérieures et inférieures de cisailles crocodiles à l’unité ou par paire. Nous usinons les dimensions et les perçages de fixation sur mesure en acier à outils S1, 6CrW2Si ou H13. Envoyez le plan de votre lame pour obtenir un devis. Les marques citées indiquent la compatibilité des pièces de rechange Sureay.",
+    components: [
+      {
+        id: "alligator-knife-position",
+        tag: "Position du couteau",
+        title: "Choix d'acier pour les tâches de coupe de ferraille",
+        description:
+          "Les options d'acier à outils S1 , 6CrW2Si et H13 vous offrent un choix de matériaux de remplacement pour les sections de rebut et les conditions d'usure des bords rencontrées sur votre cisaille crocodile.",
+      },
+      {
+        id: "alligator-edge-selection",
+        tag: "Conditions de mise au rebut",
+        title: "Couteaux supérieur et inférieur disponibles séparément",
+        description:
+          "Commandez un couteau supérieur mobile, un couteau inférieur fixe ou une paire complète, chaque pièce étant précisée pour sa position de mâchoire et les composants que vous comptez conserver.",
+      },
+      {
+        id: "alligator-indexing",
+        tag: "Configuration de bord",
+        title: "Corps de couteaux personnalisés et trous de montage",
+        description:
+          "Les couteaux de cisaillement alligator répertoriés ont une longueur de 320 à 508 mm. Sureay effectue également des remplacements basés sur des dessins avec la section du corps, le modèle de trous et les faces de positionnement requis par la mâchoire supérieure ou inférieure.",
+      },
     ],
     specs: [
       {
-        label: "Material",
-        value: "D2 (Cr12MoV), S1 (6CrW2Si), H13, High Carbon Steel",
+        label: "Dimensions",
+        value: "320–508 mm",
       },
       {
-        label: "Cold / Mild Steel",
-        value: "High Carbon Tool Steel (HRC 57–59)",
+        label: "Matériau",
+        value:
+          "Acier à outils S1 , 6CrW2Si ou H13 pour les configurations de coupe de ferraille",
       },
       {
-        label: "Stainless / Heavy",
-        value: "D2 / Cr12MoV (HRC 58–60)",
+        label: "Positions des couteaux",
+        value: "Couteau mobile supérieur et couteau fixe inférieur",
       },
       {
-        label: "Scrap / High Impact",
-        value: "S1 / 6CrW2Si / H13 (Shock Resistant)",
-      },
-      {
-        label: "Length Capacity",
-        value: "Up to 6000 mm (Single Piece Seamless)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "1, 2, or 4 Usable Cutting Edges",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
+        label: "Forme de lame",
+        value: "Couteaux rectangulaires droits",
       },
       {
         label: "Application",
-        value: "Plate Shearing, Alligator Shears, Scrap Metal Balers",
-      },
-    ],
-    components: [
-      {
-        id: "stainless-shearing",
-        tag: "LOURD",
-        title: "D2 pour l'acier inoxydable et les tôles fortes",
-        description:
-          "Utilisant de l'acier D2 (Cr12MoV) de première qualité, trempé jusqu'à HRC 58-60. Il résiste à l'usure abrasive extrême et aux forces d'écrouissage lors du cisaillement de plaques d'acier inoxydable et d'alliages épais.",
-      },
-      {
-        id: "scrap-shearing",
-        tag: "IMPACT ÉLEVÉ",
-        title: "Acier résistant aux chocs S1 pour la ferraille",
-        description:
-          "Pour les cisailles crocodiles et les presses à balles lourdes, les lames standard se brisent. Nous forgeons ces lames en acier S1 (6CrW2Si) résistant aux chocs, ce qui leur confère une grande résistance à cœur pour cisailler les barres d'armature et les poutres en I sans se fracturer.",
-      },
-      {
-        id: "precision-parallelism",
-        tag: "TOLÉRANCE",
-        title: "Parallélisme de précision (±0,05 mm)",
-        description:
-          "Une surface rectifiée pour une perfection absolue. Le maintien d'un parallélisme strict sur des longueurs allant jusqu'à 6 mètres permet à votre machine de conserver un espace de cisaillement uniforme, ce qui garantit des coupes sans bavures à chaque fois.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Dimensions typiques (L × L × T)",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions standard pour les modèles courants de cisaille guillotine hydraulique. Longueurs personnalisées jusqu'à 6000 mm, conceptions multi-segments et profils à bord simple, double ou quadruple disponibles.",
-    },
-    standardDimensions: [
-      {
-        spec: "500 × 70 × 22",
-        od: "500",
-        id: "70",
-        thickness: "22",
-      },
-      {
-        spec: "510 × 80 × 25",
-        od: "510",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "1025 × 80 × 20",
-        od: "1025",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1025 × 100 × 25",
-        od: "1025",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "1300 × 80 × 20",
-        od: "1300",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1300 × 125 × 32",
-        od: "1300",
-        id: "125",
-        thickness: "32",
-      },
-      {
-        spec: "3100 × 100 × 25",
-        od: "3100",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Scrap Shear",
-        od: "Custom",
-        id: "Custom",
-        thickness: "Up to 100+",
+        value: "Découpe de ferraille sur cisaille crocodile",
       },
     ],
     relatedBladeIds: [
-      "metal-coil-slitting-knives",
-      "multi-shaft-blades-metal",
+      "guillotine-shear-blades",
       "scrap-chopper-blades",
+      "multi-shaft-blades-metal",
     ],
     offers: {
       lowPrice: 120,
@@ -2796,66 +3515,153 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Quel alliage dois-je utiliser pour cisailler l'acier inoxydable 304 ?",
+            "Quelle lame de cisaille crocodile de remplacement convient à ma machine ?",
           answer:
-            "Nous recommandons le D2 (Cr12MoV) pour l'acier inoxydable (304, 316L) et les tôles à haute résistance comme le Hardox. La matrice à forte teneur en carbure de chrome du D2 résiste à l'usure par écrouissage sévère imposée par l'acier inoxydable austénitique. Pour l'acier doux standard, l'acier à outils à haute teneur en carbone offre une ténacité maximale à moindre coût.",
+            "Utilisez le modèle et la version de cisaille avec la position supérieure ou inférieure du couteau. Faites correspondre la longueur, la largeur, l'épaisseur, les trous de montage et les caractéristiques du siège de lame à la pièce d'origine. L'ouverture des mâchoires et la capacité de coupe annoncée décrivent le fonctionnement de la machine. La référence ou le dessin du couteau établit le corps et la géométrie de montage nécessaires au remplacement.",
         },
         {
           question:
-            "Nos lames ne cessent de s'ébrécher lorsqu'elles coupent de la ferraille mixte. Qu'est-ce qui ne va pas ?",
+            "Puis-je commander un seul couteau supérieur ou inférieur au lieu d’une paire ?",
           answer:
-            "Vous utilisez probablement une lame trop dure (comme D2). Les déchets mélangés contiennent des solides lourds et imprévisibles (comme des barres d'armature ou des boulons). Lorsqu'un impact extrême frappe une lame dure et fragile, celle-ci s'ébrèche ou se brise. Vous devez passer à un alliage résistant aux chocs comme le S1 (6CrW2Si) ou le H13, trempé à une dureté légèrement inférieure (HRC 54-56) pour absorber les chocs cinétiques massifs de manière élastique.",
+            "Oui. Les deux positions peuvent être commandées individuellement ou ensemble. Identifiez séparément les couteaux supérieurs mobiles et inférieurs fixes, y compris toute différence dans leurs profils de montage ou de coupe. Pour un seul remplacement, inspectez le couteau retenu et enregistrez ses dimensions de travail afin que la nouvelle pièce soit spécifiée pour cette paire existante.",
         },
         {
           question:
-            "Quel profil d'arête minimise les bavures lors du cisaillement de plaques d'acier à haute résistance ?",
+            "Comment l’alimentation en ferraille affecte-t-elle la sélection du matériau des couteaux à cisaille crocodile ?",
           answer:
-            "Le facteur critique est l'uniformité du contact. Un contact irrégulier entre les lames concentre la force de cisaillement à une extrémité, produisant le retournement compressif et la bavure de déchirement caractéristiques des aciers à haut écrouissage. Notre tolérance standard est de ±0,05 mm de parallélisme sur 1000 mm ; une tolérance supérieure de ±0,02 mm est spécifiée pour les applications inoxydables et de précision.",
+            "La composition des déchets, la forme et l'épaisseur de la section affectent la charge exercée sur l'arête de coupe. Comparez ces conditions avec l’usure, l’écaillage ou la déformation progressive du couteau actuel. Ils aident à établir l'équilibre requis entre ténacité et résistance à l'usure parmi les matériaux disponibles, parallèlement à la capacité de la cisaille et aux spécifications d'origine du couteau.",
         },
         {
           question:
-            "Comment les lames réversibles à double tranchant peuvent-elles réduire mon coût annuel d'outillage ?",
+            "Un couteau de cisaillement alligator peut-il être tourné pour utiliser un autre bord ?",
           answer:
-            "Une lame réversible à double tranchant (ou à 4 tranchants) offre plusieurs faces de coupe indépendantes à partir d'un seul corps de lame. Lorsque le bord 1 présente une usure, desserrez les boulons de montage, retournez ou faites pivoter la lame et resserrez le couple. Cela multiplie la durée de vie de la lame avant qu'un réaffûtage ne soit nécessaire, ce qui réduit considérablement les coûts d'outillage par coupe.",
+            "Oui, si le couteau et la mâchoire d'origine permettent un autre bord de travail. Confirmez que la position suivante conserve l'assise, la configuration des boulons et le jeu spécifiés. La notice machine définit quelles positions sont utilisables, même sur un couteau rectangulaire.",
+        },
+        {
+          question:
+            "Les couteaux McIntyre 320, 407 et 500 partagent-ils une même spécification ?",
+          answer:
+            "Le catalogue répertorie différentes configurations de corps de couteau pour les McIntyre 320, 407 et 500. Utilisez le tableau et le numéro d'article pour affiner la sélection, puis vérifiez la configuration des trous, la position du couteau et la version de la machine. Ces noms de modèles identifient les configurations de référence pour les remplacements Sureay .",
+        },
+        {
+          question:
+            "En quoi les couteaux alligator diffèrent-ils des lames de cisaille fixes ?",
+          answer:
+            "Les couteaux de cisaillement crocodile s'adaptent à une mâchoire articulée et à sa position fixe opposée. Les cisailles à portique stationnaires utilisent un ensemble différent de couteau mobile et de contre-couteau. Pour ce dernier, voir [Stationary Scrap lames de cisaille](/products/stationary-scrap-shear-blades) .",
+        },
+        {
+          question:
+            "Que dois-je envoyer pour un devis de lame de cisaille crocodile ?",
+          answer:
+            "Fournissez le modèle et la version de la machine, un dessin ou un échantillon coté, la position et la quantité du couteau. Indiquez si vous avez besoin du couteau supérieur mobile, du couteau inférieur fixe ou des deux. Ajoutez la section de rebut typique et marquez tout changement de hauteur de coupe résultant du réaffûtage de l'échantillon.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de cisaille crocodile, la position supérieure ou inférieure du couteau, le numéro de pièce ou le dessin, la quantité, ainsi que la qualité du métal et la taille de la section que vous coupez.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1024,
+      height: 765,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Deux échantillons de couteaux de cisaillement alligator avec trous de montage encastrés et bords de coupe droits",
+      sizeRange: "320–508 mm",
+      heroSpecs: [
         {
-          question:
-            "Pouvez-vous fabriquer des lames correspondant exactement à ma guillotine TRUMPF, AMADA ou Durma ?",
-          answer:
-            "Oui. Nous proposons des dimensions adaptées aux OEM pour les plates-formes TRUMPF, AMADA, BYSTRONIC, Durma et Haco. Des lames monoblocs jusqu'à 6000 mm, des conceptions multi-segments pour des tables plus longues, et des profils à bord simple, double ou quadruple sont tous disponibles. Les longueurs personnalisées sont fabriquées sur plan dans un délai de 15 jours ouvrables.",
-        },
-        {
-          question:
-            "Sureay peut-il fabriquer des lames de remplacement pour des cisailles à ferraille lourde obsolètes ?",
-          answer:
-            "Oui. Pour les cisailles à ferraille lourde (Lefort, Harris, Genesis) ou les modèles obsolètes, nous travaillons à partir de dessins fournis par le client ou d'échantillons physiques de lames. Un gabarit de relevé dimensionnel est disponible sur demande pour une mesure précise du profil de la lame et des trous de fixation.",
+          label: "Application",
+          value: "Découpe de ferraille sur cisaille crocodile",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/alligator-shear-knives-detail.webp",
+        alt: "Cinq échantillons de couteaux alligator montrant différents profils de corps et modèles de trous de montage",
+      },
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "320–508 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Acier à outils S1 , 6CrW2Si ou H13 pour les configurations de coupe de ferraille",
+        },
+        {
+          label: "Positions des couteaux",
+          value: "Couteau mobile supérieur et couteau fixe inférieur",
+        },
+        {
+          label: "Forme de lame",
+          value: "Couteaux rectangulaires droits",
+        },
+        {
+          label: "Application",
+          value: "Découpe de ferraille sur cisaille crocodile",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Référence machine",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+          ],
+          rows: [
+            ["SR003501", "JMC McIntyre 320", "320", "65", "30"],
+            ["SR003502", "JMC McIntyre 407", "407", "64", "32"],
+            ["SR003503", "JMC McIntyre 500", "508", "70", "30"],
+            ["SR003504", "Bronneberg A-400", "406", "70", "32"],
+            ["SR003505", "Bronneberg A-500PB", "500", "70", "32"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Incluez le modèle de cisaille crocodile, la position supérieure ou inférieure du couteau, le numéro de pièce ou le dessin, la quantité, ainsi que la qualité du métal et la taille de la section que vous coupez.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Incluez le modèle de cisaille crocodile, la position supérieure ou inférieure du couteau, le numéro de pièce ou le dessin, la quantité, ainsi que la qualité du métal et la taille de la section que vous coupez.",
+    dimensionLabels: {
+      intro:
+        "Les références de machine identifient les configurations répertoriées. Confirmez la version de la machine, la position du couteau supérieur ou inférieur et complétez le dessin des trous de montage avant de commander ; les dimensions du corps à elles seules ne suffisent pas à établir l’ajustement.",
     },
   },
   {
     id: "guillotine-shear-blades",
     name: "Lames de cisaille guillotine",
-    fullName:
-      "Lames de cisaille guillotine de précision pour cisailles à tôle hydrauliques et mécaniques",
+    fullName: "Lames de cisailles guillotines pour tôles",
+    seoTitle: "Lames de cisailles guillotines pour tôles",
+    seoDescription:
+      "Découper la tôle avec lames de cisaille guillotine D2 , 6CrW2Si ou 9CrSi . Commandez des couteaux supérieurs et inférieurs en ensembles monoblocs ou segmentés avec des modèles de montage personnalisés.",
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Lames de cisaille guillotine",
-    image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+    image: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
     badge: "Tôle",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+      "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+      "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
     ],
     description:
-      "Guillotine de haute précision lames de cisaille en aciers à outils D2 (Cr12MoV), 6CrW2Si et 9CrSi pour machines de cisaillement hydrauliques et mécaniques. Surface rectifiée avec un parallélisme de ±0,05 mm sur toute la longueur. Jeux de lames supérieures et inférieures pour machines d'une capacité maximale de 16 mm × 4000 mm. Remplacements compatibles avec les OEM pour les guillotines TRUMPF, AMADA, LVD, Durma et Bystronic.",
-    fullDescription:
-      "Les guillotines lames de cisaille sont les composants de coupe essentiels des machines de cisaillement de plaques hydrauliques et mécaniques utilisées dans les centres de service de l'acier, les chantiers navals, les ateliers de fabrication de structures et les usines d'emboutissage automobile. Chaque cycle de coupe soumet la lame à une énorme force de cisaillement concentrée le long d'une ligne de bord étroite. La lame doit conserver une géométrie de bord très nette, un parallélisme absolu et une dureté uniforme sur toute sa longueur pour fournir des coupes de tôle sans bavures et sans distorsions.\n\nSureay fabrique la guillotine lames de cisaille à partir d'aciers à outils de première qualité - D2 (Cr12MoV), 6CrW2Si, et 9CrSi - chacun sélectionné pour une gamme d'épaisseur spécifique et un profil de dureté du matériau. Chaque lame est traitée thermiquement sous vide en interne et rectifiée en surface avec précision à ±0,05 mm de parallélisme sur toute la longueur, ce qui garantit que l'espace de cisaillement entre les lames supérieure et inférieure reste uniforme d'un bout à l'autre. Cela permet d'éliminer les torsions, les courbures et les bavures de bord qui affectent les lames de remplacement mal fabriquées.\n\n## Sélection de l'alliage en fonction de l'application de cisaillement\n\n**D2 / Cr12MoV (HRC 58-62):** La meilleure spécification pour le cisaillage de l'acier inoxydable (304, 316L), des plaques en alliage faible à haute résistance (HSLA), des plaques d'usure Hardox et des bobines prépeintes. La matrice de carbure de chrome de 12 % du D2 offre la résistance extrême à l'abrasion nécessaire pour couper des aciers inoxydables austénitiques durcissant au travail, qui émoussent rapidement les lames de qualité plus douce.\n\n**6CrW2Si (HRC 55-58):** Alliage résistant aux chocs qui combine une excellente dureté des arêtes avec une ténacité à cœur. Spécifié pour le cisaillement de plaques moyennes à lourdes (acier doux de 6 à 25 mm) et pour les environnements de production de matériaux mixtes où la lame rencontre occasionnellement des matériaux plus durs que prévu. La teneur en tungstène et en chrome assure une résistance aux températures élevées.\n\n**9CrSi (HRC 55-60):** Alliage économique pour le cisaillage de gros volumes d'acier doux et d'acier au carbone (jusqu'à 12 mm). le 9CrSi offre une durée de vie fiable des arêtes sur l'acier de construction standard, les tôles galvanisées et les plaques de sol, à un coût par lame inférieur à celui du D2.\n\n## Jeux de lames supérieures et inférieures\n\nLes machines de cisaillement à guillotine fonctionnent avec des lames supérieures (coulisseau mobile) et inférieures (lit fixe) appariées. Sureay fournit des jeux de lames supérieures et inférieures appariées, rectifiées à partir du même lot d'acier, ce qui garantit une dureté et un comportement de dilatation thermique identiques pour toute la paire. Chaque jeu est fourni avec des trous de montage percés selon le schéma de boulonnage OEM exact de votre machine.\n\n## Lames réversibles à bords multiples\n\nPour les lames standard à section rectangulaire, nous proposons des profils réversibles à 2 ou 4 arêtes. Lorsqu'une arête de coupe s'use, l'opérateur desserre les boulons de montage, retourne ou fait pivoter la lame pour exposer une nouvelle arête, puis refait le réglage. Cela multiplie la durée de vie effective de la lame de 2× à 4× avant qu'un réaffûtage ou un remplacement ne soit nécessaire, ce qui réduit considérablement le coût annuel de l'outillage par coupe.\n\n## Systèmes de lames segmentées pour les tables longues\n\nPour les cisailles d'une largeur supérieure à 3200 mm, les lames monoblocs deviennent peu pratiques en raison du risque de distorsion traitement thermique. Sureay fabrique des systèmes de lames segmentées de précision - plusieurs lames plus courtes indexées bout à bout sur le banc de la machine - avec une tolérance de hauteur bout à bout (±0,02 mm) pour assurer une ligne de cisaillement continue et sans espace sur toute la largeur de la table.",
+      "Guillotine lames de cisaille de remplacement pour tôle, en D2 , 6CrW2Si ou 9CrSi. Couteaux supérieurs et inférieurs avec longueurs et modèles de montage personnalisés.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -2870,129 +3676,65 @@ export const blades: Blade[] = [
       "Adira",
       "Ursviken",
     ],
+    compatibleMachinesIntro:
+      "Équipez votre cisaille à tôle de couteaux supérieur et inférieur de remplacement, fournis sous forme de lames monobloc ou d'ensembles segmentés. Sureay propose des dimensions basées sur des dessins et des options d'acier pour vos tâches de coupe ; contactez-nous pour un devis pour votre machine. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "guillotine-upper-lower",
+        tag: "Configuration du couteau",
+        title: "Options d'acier à outils pour la découpe de tôle",
+        description:
+          "Sureay propose des aciers à outils D2 , 6CrW2Si , 9CrSi et à haute teneur en carbone, avec une dureté répertoriée de 55 à 62 HRC selon la nuance. Spécifiez la résistance de la feuille, la plage d'épaisseur et les conditions d'usure des bords lorsque vous comparez les matériaux de remplacement.",
+      },
+      {
+        id: "guillotine-segmented-knives",
+        tag: "Ensembles segmentés",
+        title: "Ensembles de couteaux monoblocs et segmentés",
+        description:
+          "Les couteaux supérieurs et inférieurs sont disponibles sous forme de pièces individuelles ou d'ensembles segmentés, avec des longueurs, des faces d'extrémité et des détails de montage spécifiés pour la poutre de coupe existante.",
+      },
+      {
+        id: "guillotine-material-setup",
+        tag: "Conditions de coupe",
+        title: "Modèles de montage personnalisés et bords utilisables",
+        description:
+          "Les modèles de trous personnalisés et les profils de coupe prennent en charge le remplacement de la configuration des couteaux installés. Des versions à un, deux et quatre tranchants sont disponibles selon la conception du couteau et ses positions d'indexation autorisées.",
+      },
+    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 (Cr12MoV), 6CrW2Si, 9CrSi, High Carbon Steel",
+        label: "Dimensions",
+        value: "508–1300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–62 (alloy dependent)",
+        label: "Matériau",
+        value:
+          "D2 , 6CrW2Si , 9CrSi ou acier à outils à haute teneur en carbone",
       },
       {
-        label: "Machine Capacity",
-        value: "4 mm × 2500 mm up to 16 mm × 4000 mm (and custom)",
+        label: "Dureté",
+        value: "55–62 HRC , selon la qualité de l'acier",
       },
       {
-        label: "Edge Profile",
-        value: "1, 2, or 4 Usable Cutting Edges (Reversible)",
+        label: "Positions des couteaux",
+        value:
+          "Couteaux supérieurs et inférieurs ; ensembles monoblocs ou segmentés",
       },
       {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
+        label: "Configurations de périphérie",
+        value:
+          "Un, deux ou quatre tranchants utilisables, selon le profil du couteau",
       },
       {
         label: "Application",
-        value:
-          "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
+        value: "Découpe de tôles sur guillotine et équerre",
+      },
+      {
+        label: "Parallélisme",
+        value: "±0,05 mm sur toute la longueur du couteau",
       },
     ],
-    components: [
-      {
-        id: "d2-stainless-shearing",
-        tag: "PLATEAU LOURD",
-        title: "D2 pour les tôles en acier inoxydable et HSLA",
-        description:
-          "Premium D2 (Cr12MoV) profondément trempé à HRC 58-62. La matrice à forte teneur en carbure de chrome résiste à l'usure abrasive extrême et aux forces d'écrouissage rencontrées lors du cisaillement de l'acier inoxydable 304/316L, des tôles HSLA et des bobines prélaquées.",
-      },
-      {
-        id: "6crw2si-shock",
-        tag: "RÉSISTANCE AUX CHOCS",
-        title: "6CrW2Si pour les tôles mi-lourdes",
-        description:
-          "L'alliage 6CrW2Si résistant aux chocs combine des arêtes de coupe dures (HRC 55-58) avec une résistance massive à cœur. Conçu pour les plaques d'acier doux de 6-25 mm et la production de matériaux mixtes où des inclusions dures inattendues ébrécheraient une lame fragile.",
-      },
-      {
-        id: "parallelism-precision",
-        tag: "TOLÉRANCE",
-        title: "Parallélisme de précision (±0,05 mm)",
-        description:
-          "Chaque lame est rectifiée en surface avec un parallélisme de ±0,05 mm sur toute la longueur jusqu'à 4000 mm. Cela garantit un espace de cisaillement uniforme entre les lames supérieures et inférieures, ce qui permet d'obtenir des coupes sans bavures et d'éviter les torsions et les courbures dans la tôle cisaillée.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Capacité de la machine",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      col4: "Pcs / Set",
-      caption:
-        "* Dimensions standard pour les machines à cisailler à guillotine hydrauliques et mécaniques courantes. Chaque jeu comprend les lames supérieures et inférieures. Conceptions de segments pour les tables d'une largeur supérieure à 4000 mm disponibles sur demande. Longueurs spéciales, profils à bords multiples et modèles de boulons OEM fabriqués sur plan.",
-    },
-    standardDimensions: [
-      {
-        spec: "4 × 2500",
-        od: "508",
-        id: "80",
-        length: "25",
-        pcs: "10",
-      },
-      {
-        spec: "4 × 2500",
-        od: "1300",
-        id: "63",
-        length: "16",
-        pcs: "4",
-      },
-      {
-        spec: "6 × 2500",
-        od: "1300",
-        id: "80",
-        length: "20",
-        pcs: "4",
-      },
-      {
-        spec: "6 × 3200",
-        od: "1100",
-        id: "80",
-        length: "20",
-        pcs: "6",
-      },
-      {
-        spec: "6 × 4000",
-        od: "1025",
-        id: "80",
-        length: "20",
-        pcs: "8",
-      },
-      {
-        spec: "16 × 2500",
-        od: "1300",
-        id: "100",
-        length: "25",
-        pcs: "4",
-      },
-      {
-        spec: "16 × 3200",
-        od: "1100",
-        id: "100",
-        length: "25",
-        pcs: "6",
-      },
-      {
-        spec: "16 × 4000",
-        od: "1025",
-        id: "100",
-        length: "25",
-        pcs: "8",
-      },
-    ],
-    relatedBladeIds: [
-      "metal-shear-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-      "multi-shaft-blades-metal",
-    ],
+    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
     offers: {
       lowPrice: 30,
       highPrice: 350,
@@ -3001,96 +3743,167 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Quelle nuance d'acier dois-je choisir pour cisailler de l'acier inoxydable 304 sur une guillotine hydraulique ?",
+            "Comment identifier une lame de cisaille guillotine de remplacement ?",
           answer:
-            "Le D2 (Cr12MoV) trempé à HRC 58-62 est la nuance recommandée pour l'acier inoxydable (304, 316L) et les tôles à haute résistance comme le Hardox. La teneur élevée en carbure de chrome de la nuance D2 permet de résister à l'abrasion par écrouissage sévère imposée par l'acier inoxydable austénitique. Pour l'acier doux standard, le 9CrSi offre une excellente durée de vie des arêtes à un coût inférieur.",
+            "Le dessin du couteau supérieur ou inférieur identifie le remplacement de manière plus fiable que la largeur de coupe annoncée de la cisaille. Comparez la longueur réelle, la section, les trous de boulons, les faces de positionnement et le bord de travail. Sur une poutre segmentée, faites correspondre la pièce individuelle et sa position dans la rangée.",
         },
         {
           question:
-            "Pourquoi ma guillotine lames de cisaille s'ébrèche-t-elle lors de la découpe de tôles mixtes ou plus lourdes ?",
+            "Comment choisir le matériau de la lame pour l'acier doux, l'acier inoxydable ou l'aluminium ?",
           answer:
-            "L'écaillage indique généralement que l'alliage de la lame est trop dur et trop fragile pour la charge de cisaillement. Si vous coupez des tôles mixtes de 10 à 25 mm ou si vous rencontrez occasionnellement des matériaux plus durs, passez du D2 au 6CrW2Si. Cet alliage résistant aux chocs offre une dureté inférieure contrôlée (HRC 55-58) avec une ténacité à cœur massive, absorbant les charges d'impact de manière élastique au lieu de s'écailler.",
+            "Commencez par la qualité réelle de la feuille, sa résistance, sa plage d'épaisseur et l'état du couteau utilisé. L’usure progressive, l’écaillage des bords et la déformation nécessitent différentes considérations en matière de matériaux. Comparez le matériau actuel avec les options d'acier disponibles tout en conservant la géométrie des bords requise. Une modification des spécifications de la feuille peut également nécessiter une révision des paramètres de découpe de la machine.",
+        },
+        {
+          question: "Pourquoi lames de cisaille tôle s'écaillent-elles ?",
+          answer:
+            "Inspectez le bord de travail et comparez les dommages avec les spécifications de la feuille et le jeu de coupe. Une surcharge mécanique, un jeu inapproprié ou des doubles couches involontaires peuvent contribuer à l'écaillage. Un bord usé ou endommagé peut affecter la coupe finie. Vérifiez ces conditions ensemble avant de décider s'il faut changer le matériau du couteau ou remplacer un segment endommagé.",
         },
         {
           question:
-            "Qu'est-ce qui cause les bavures et la torsion sur le bord cisaillé, et comment la guillotine lames de cisaille résout-elle ce problème ?",
+            "Les couteaux équarrissables et lames de cisaille guillotine sont-ils identiques ?",
           answer:
-            "Les bavures et la torsion sont presque toujours causées par un contact inégal entre les lames - lorsque l'écart de cisaillement varie d'une extrémité à l'autre de la lame. La force de cisaillement est alors concentrée en un point, ce qui produit des bavures de retournement en compression et une distorsion de la tôle. Nos lames sont rectifiées en surface avec un parallélisme de ±0,05 mm sur toute la longueur, ce qui garantit un espace uniforme sur toute la longueur de coupe pour un cisaillement propre et sans bavures.",
+            "Oui, dans les équipements de tôlerie, les deux noms peuvent faire référence à des couteaux supérieurs et inférieurs droits pour une coupe transversale. Faites correspondre le couteau à la poutre supérieure ou inférieure de la machine. Pour un couteau qui coupe une pile de papier serrée, voir [Couteaux à guillotine à papier](/products/paper-cutting-blades) .",
         },
         {
           question:
-            "Comment la guillotine réversible à 4 tranchants lames de cisaille peut-elle réduire mon coût annuel d'outillage ?",
+            "Quelle est la différence entre le dégagement de la lame et l’angle de coupe ?",
           answer:
-            "Une lame réversible à 4 tranchants offre quatre faces de coupe indépendantes à partir d'un seul corps de lame. Lorsque le bord 1 présente une usure, il suffit de desserrer les boulons de fixation, de faire pivoter la lame de 90° pour exposer un nouveau bord et de resserrer le serrage. La durée de vie de la lame est ainsi multipliée par 4 avant qu'un réaffûtage ne soit nécessaire, ce qui réduit considérablement le coût de l'outillage par coupe sur les lignes de cisaillage à grand volume.",
+            "Le jeu est l’écart entre les arêtes de coupe opposées. L'angle de coupe décrit leur inclinaison relative le long de la coupe. Les deux affectent les conditions de coupe, mais ce sont des paramètres distincts. Utilisez la procédure du fabricant de cisailles pour la qualité et l'épaisseur de la tôle, et conservez ces exigences lors de la spécification de la géométrie du couteau de remplacement.",
         },
         {
           question:
-            "Quelle est la longueur maximale de lame monobloc que Sureay peut fabriquer ?",
+            "Une lame de cisaille guillotine peut-elle être tournée ou réaffûtée ?",
           answer:
-            "Nous fabriquons des guillotines monoblocs lames de cisaille jusqu'à une longueur de 4000 mm. Pour les machines de plus de 4000 mm de large, nous produisons des jeux de lames segmentées de précision - plusieurs lames indexées bout à bout avec une tolérance de hauteur adaptée (±0,02 mm) - afin de créer une ligne de cisaillement continue et sans interstice sur toute la largeur de la table.",
+            "Une lame de cisaille peut être indexée si le couteau et le support supportent un autre bord de travail. Il peut être rectifié si le profil spécifié peut être restauré dans les dimensions restantes autorisées. Après chaque opération, vérifiez l'assise, la hauteur de coupe et le jeu par rapport au dessin original et aux limites de la machine.",
         },
         {
           question:
-            "Comment puis-je sélectionner les dimensions de lame correctes pour ma machine à cisailler à guillotine spécifique ?",
+            "Comment demander un devis pour une guillotine lames de cisaille ou un ensemble segmenté ?",
           answer:
-            "Les dimensions des lames sont déterminées par la capacité de coupe de votre machine (épaisseur maximale de la feuille × largeur de la table). Par exemple, une machine de 6 × 3200 mm utilise des lames de 1100 × 80 × 20 mm, fournies sous forme d'un jeu de 6 pièces segmentées. Envoyez-nous le numéro de modèle de votre machine ou un dessin de votre lame existante, et nous vous confirmerons les dimensions exactes, le schéma de boulonnage et la nuance d'acier recommandée.",
+            "Partagez le modèle de cisaillement, les dessins supérieur et inférieur ou les numéros de pièce, les qualités et épaisseurs de tôle, ainsi que les quantités. Pour une ligne segmentée, étiquetez la séquence de segments et affichez les faces adjacentes. Si vous remplacez seulement une partie de la ligne, identifiez les segments restant en service.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de cisaillement, les dessins supérieur et inférieur, la qualité et l'épaisseur de la feuille, ainsi que la quantité requise.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Échantillons de couteaux à guillotine montrant des bords de coupe droits et différents trous de montage",
+      sizeRange: "508–1300 mm",
+      heroSpecs: [
         {
-          question:
-            "Pouvez-vous fabriquer des lames de remplacement correspondant exactement à ma guillotine TRUMPF, AMADA, LVD ou Durma ?",
-          answer:
-            "Oui. Nous proposons des dimensions et des modèles de boulons correspondant à ceux des OEM pour les cisailles TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati et Adira. Fournissez le numéro de modèle de votre machine ou un échantillon de lame usée et nous confirmerons l'adaptation. Les longueurs personnalisées sont fabriquées sur plan dans un délai de 15 jours ouvrables.",
-        },
-        {
-          question:
-            "Fournissez-vous des jeux de lames de cisailles supérieures et inférieures ?",
-          answer:
-            "Oui. Chaque commande standard comprend des jeux de lames supérieures (bélier) et inférieures (lit) assortis, affûtés à partir du même lot d'acier pour garantir une dureté, une structure de grain et un comportement de dilatation thermique identiques sur l'ensemble de la paire. Les trous de montage sont percés selon le schéma de boulonnage exact de l'équipementier.",
-        },
-        {
-          question:
-            "Sureay peut-il fabriquer des lames de remplacement pour des machines de cisaillement plus anciennes ou abandonnées ?",
-          answer:
-            "Oui. Pour les modèles de guillotine abandonnés ou rares, nous travaillons à partir de dessins fournis par le client ou d'échantillons physiques de lames. Un modèle d'étude dimensionnelle est disponible sur demande pour mesurer avec précision le profil de la lame, les angles des arêtes et les trous de montage noyés. Nous avons réussi à remplacer des machines datant des années 1980.",
-        },
-        {
-          question:
-            "Quelle documentation de qualité est livrée avec chaque jeu de lames ?",
-          answer:
-            "Chaque livraison comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle vérifiant le parallélisme sur toute la longueur et un certificat de lot traitement thermique. Pour les programmes de qualification OEM, des rapports CMM complets et des certificats de matériaux d'aciérie sont disponibles sur demande.",
-        },
-        {
-          question:
-            "Quel est le délai de livraison typique pour la guillotine standard lames de cisaille ?",
-          answer:
-            "Les tailles standard (énumérées dans notre tableau des dimensions) sont expédiées dans un délai de 7 à 10 jours ouvrables. Les tailles personnalisées, les alliages spéciaux ou les commandes en grande quantité nécessitent généralement un délai de 15 à 20 jours ouvrables. Nous proposons une production accélérée sur demande pour les cas urgents de panne de machine.",
+          label: "Application",
+          value: "Découpe de tôles à la guillotine ou à l'équerre",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
+        alt: "Quatre échantillons de couteau guillotine en tôle montrant des bords droits et des trous de montage",
+      },
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "508–1300 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "D2 , 6CrW2Si , 9CrSi ou acier à outils à haute teneur en carbone",
+        },
+        {
+          label: "Dureté",
+          value: "55–62 HRC , selon la qualité de l'acier",
+        },
+        {
+          label: "Positions des couteaux",
+          value:
+            "Couteaux supérieurs et inférieurs ; ensembles monoblocs ou segmentés",
+        },
+        {
+          label: "Configurations de périphérie",
+          value:
+            "Un, deux ou quatre tranchants utilisables, selon le profil du couteau",
+        },
+        {
+          label: "Application",
+          value: "Découpe de tôles sur guillotine et équerre",
+        },
+        {
+          label: "Parallélisme",
+          value: "±0,05 mm sur toute la longueur du couteau",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Capacité de coupe de la machine (mm)",
+            "Longueur du couteau (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+            "Pièces/ensemble",
+          ],
+          rows: [
+            ["SR003201", "4 × 2500", "508", "80", "25", "10"],
+            ["SR003202", "4 × 2500", "1300", "63", "16", "4"],
+            ["SR003203", "6 × 2500", "1300", "80", "20", "4"],
+            ["SR003204", "6 × 3200", "1100", "80", "20", "6"],
+            ["SR003205", "6 × 4000", "1025", "80", "20", "8"],
+            ["SR003206", "16 × 2500", "1300", "100", "25", "4"],
+            ["SR003207", "16 × 3200", "1100", "100", "25", "6"],
+            ["SR003208", "16 × 4000", "1025", "100", "25", "8"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Incluez le modèle de cisaillement, les dessins supérieur et inférieur, la qualité et l'épaisseur de la feuille, ainsi que la quantité requise.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Incluez le modèle de cisaillement, les dessins supérieur et inférieur, la qualité et l'épaisseur de la feuille, ainsi que la quantité requise.",
+    dimensionLabels: {
+      intro:
+        "La capacité de coupe de la machine est une référence et non un modèle unique ou une garantie d'ajustement. Confirmez les positions des couteaux supérieur et inférieur, l'ordre des segments et les trous de montage pour les configurations répertoriées.",
     },
   },
   {
     id: "three-knife-trimmer-blades",
-    name: "Lames de coupe à trois couteaux",
-    fullName:
-      "Jeux de massicots à trois couteaux en acier rapide et en carbure de première qualité pour la reliure de livres",
-    category: "shear_blades",
+    name: "Lames pour massicots trilames",
+    fullName: "Lames de massicot trilatéral pour la finition des livres",
+    seoTitle: "Lames de massicot trilatéral pour la finition des livres",
+    seoDescription:
+      "Coupez le devant, la tête et le pied des livres reliés avec des couteaux HSS ou en carbure. Commandez une lame de rechange ou un ensemble assorti avec un couteau avant et deux couteaux latéraux.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Couteaux de reliure",
-    badge: "OEM Fit",
+    badge: "Ajustement OEM",
     badgeColor: "blue",
     image:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
     gallery: [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
     ],
     description:
-      "Jeux de remplacement de 3 couteaux assortis (1 frontal, 2 latéraux) pour la finition d'impression en grand volume. Construction bimétallique avec arêtes de coupe en acier rapide à 18 % de tungstène ou en carbure de tungstène massif (TC). Adaptation OEM directe aux massicots Müller Martini, Kolbus et Wohlenberg.",
-    fullDescription:
-      "Dans les opérations de reliure commerciale et de finition d'impression à grande vitesse, le massicot à trois lames est la dernière étape critique avant l'emballage. Les lames de massicotage de qualité inférieure provoquent l'éclatement du dos, l'écaillage de la couverture et l'accumulation de colle PUR/EVA, transformant les livres finis en rebuts coûteux.\n\nLes jeux de massicots à trois couteaux Sureay sont fabriqués selon des spécifications OEM précises pour garantir des bords avant, des têtes et des queues impeccables sur les catalogues épais, les magazines et les livres à reliure parfaite.\n\n## Construction bimétallique avancée\n\nLes lames en acier rapide de cette taille sont trop fragiles et susceptibles de se briser sous l'énorme pression de serrage d'un massicot. Nous utilisons un procédé de fabrication avancé **Incrustation bimétallique**. Un tranchant de qualité supérieure - soit du carbure de tungstène à 18 %, soit du carbure de tungstène à micro-grains - est brasé sous vide sur un corps en acier à ressorts à haute résistance qui absorbe les chocs. On obtient ainsi la combinaison ultime : un tranchant incroyablement dur et résistant à l'usure, doublé d'un noyau flexible et incassable.\n\n## Grades de matériaux pour la reliure\n\n- **18% Tungsten HSS (High-Speed Steel):** La norme de l'industrie pour l'impression commerciale générale. Il fournit un bord extrêmement tranchant et fin qui permet de traiter facilement les livres standards non couchés et légèrement couchés.\n- **Carbure de tungstène (TC / équivalent Widia):** La spécification de pointe absolue. Les lames TC ont une durée de vie **5× à 10× plus longue** que les lames HSS. Elles sont indispensables pour la coupe de papier recyclé lourd, de papier d'art à revêtement brillant très abrasif ou de livres reliés avec des adhésifs PUR résistants.\n\n## Anti-Glue Finition miroir\n\nLes livres modernes à reliure parfaite utilisent des adhésifs EVA ou PUR agressifs. Pendant le cycle de rognage, la friction chauffe la colle, ce qui la fait s'étaler et coller à la face de la lame. Les lames des massicots Sureay sont alignées avec précision pour obtenir une finition miroir Ra ≤0,1 μm, ce qui réduit considérablement les frottements et l'adhérence de la colle, assurant une coupe nette cycle après cycle.",
+      "Lames de rechange à trois couteaux pour la finition des livres. Couteaux frontaux et latéraux HSS ou en carbure, fournis en pièces détachées ou en jeux assortis selon dessin.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3101,102 +3914,65 @@ export const blades: Blade[] = [
       "Meccanotecnica",
       "Horizon",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS (Duritan eq.) | Tungsten Carbide (TC)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic Inlay (Hard edge brazed to tough steel body)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤0.1 μm) to prevent glue build-up",
-      },
-      {
-        label: "Set Configuration",
-        value: "Matched 3-Piece Set (1 Front Knife, 2 Side Knives)",
-      },
-      {
-        label: "OEM Tolerance",
-        value: "Thickness matched to ±0.01 mm across the full set",
-      },
-      {
-        label: "Applications",
-        value: "Perfect Bound Books, Magazines, Hardcover Book Blocks",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Commandez des couteaux avant et latéraux de remplacement pour votre coupe-livres sous forme d'ensemble assorti ou de pièces individuelles. Avec des options de pointe HSS et en carbure ainsi que des profils de montage personnalisés, Sureay peut proposer la configuration de couteaux dont votre ligne de finition a besoin. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     components: [
       {
-        id: "bimetallic-inlay",
-        tag: "METALLURGIE",
-        title: "Technologie d'incrustation bimétallique",
+        id: "trimmer-front-side-set",
+        tag: "Définir la configuration",
+        title: "Incrustations HSS et carbure pour le découpage de livres",
         description:
-          "Nous brasons un tranchant en acier rapide (HSS) ou en carbure de tungstène de première qualité sur un corps en acier allié résistant et flexible. Vous obtenez ainsi l'extrême résistance à l'usure nécessaire pour le papier couché, sans risque de rupture de la lame sous une forte pression de serrage.",
+          "Des bords tranchants HSS à 18 % de tungstène et carbure de tungstène sont disponibles sur les corps en acier, offrant aux liants un choix de matériaux pour le papier et les tâches de découpe de leur ligne de finition de livres.",
       },
       {
-        id: "matched-sets",
-        tag: "CONFIGURATION",
-        title: "Ensembles 3 pièces assortis",
+        id: "trimmer-edge-selection",
+        tag: "Sélection des bords",
+        title: "Épaisseur assortie et faces de travail rodées",
         description:
-          "Livré en kit prêt à installer (1 avant, 1 gauche, 1 droite). Les trois lames sont rectifiées avec précision dans le même lot avec une tolérance d'épaisseur de ±0,01 mm, ce qui garantit une installation sans temps d'arrêt et un alignement parfait.",
+          "La correspondance d’épaisseur définie indiquée est de ±0,01 mm. Les faces de travail à recouvrement miroir et la correspondance des épaisseurs confèrent aux couteaux avant et latéraux une finition et une géométrie définies pour être commandés ensemble.",
       },
       {
-        id: "anti-glue-finish",
-        tag: "PERFORMANCE",
-        title: "Anti-Glue Finition miroir",
+        id: "trimmer-spine-finish",
+        tag: "Coupe de la colonne vertébrale",
+        title: "Couteaux frontaux et latéraux en jeux ou en pièces détachées",
         description:
-          "La découpe des dos de livres expose la lame à des adhésifs PUR et EVA chauds et collants. Nos lames sont rodées pour obtenir une finition miroir microscopique, ce qui évite les traînées de colle qui s'étaleraient autrement sur la tranche du livre.",
+          "Commandez un ensemble complet avant, gauche et droit ou un remplacement individuel, avec des biseaux spécifiques à la position et des détails de montage reproduits à partir des dessins des couteaux.",
       },
     ],
-    dimensionLabels: {
-      col0: "Modèle de machine OEM",
-      col1: "Position de la lame",
-      col2: "Dimensions (L × L × T)",
-      col3: "Trous de montage / fentes",
-      caption:
-        "* Les dimensions correspondent aux modèles standard de Müller Martini et Kolbus. Nous disposons de plans OEM pour Wohlenberg et Perfecta. Les modèles de trous sont usinés sur commande.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Müller Martini 301/361",
-        od: "Front Knife",
-        id: "540 × 90 × 12 mm",
-        type: "12 × M10 Threaded",
+        label: "Dimensions",
+        value: "392–585 mm",
       },
       {
-        spec: "Müller Martini 301/361",
-        od: "Left & Right",
-        id: "392 × 90 × 12 mm",
-        type: "8 × M10 Threaded",
+        label: "Matériau",
+        value:
+          "Tranchants en acier rapide HSS à 18 % de tungstène ou en carbure de tungstène",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Front Knife",
-        id: "580 × 115 × 12 mm",
-        type: "12 × M10, 1 Slot",
+        label: "Construction de la lame",
+        value:
+          "Incrustation bimétallique avec tranchant brasé et corps en acier",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Left & Right",
-        id: "450 × 115 × 12 mm",
-        type: "15 × M10, 2 Slots",
+        label: "Définir la configuration",
+        value: "Un couteau frontal et deux couteaux latéraux",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Front Knife",
-        id: "510 × 110 × 10 mm",
-        type: "10 × M10 Threaded",
+        label: "Finition de surface",
+        value: "Miroir rodé, Ra ≤0,1 µm",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Left & Right",
-        id: "400 × 110 × 10 mm",
-        type: "8 × M10 Threaded",
+        label: "Application",
+        value:
+          "Coupe du devant, de la tête et des pieds des livres et blocs-livres reliés",
+      },
+      {
+        label: "Définir la correspondance d'épaisseur",
+        value: "±0,01 mm sur l'ensemble correspondant",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
+    relatedBladeIds: ["paper-cutting-blades"],
     offers: {
       lowPrice: 120,
       highPrice: 850,
@@ -3205,416 +3981,903 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Quand dois-je passer des lames de coupe HSS aux lames de coupe en carbure de tungstène (TC) ?",
+            "Quels couteaux composent un ensemble de remplacement de trois couteaux ?",
           answer:
-            "Il est conseillé de passer au carbure de tungstène (TC) pour couper de gros volumes de papier recyclé, de papier d'art couché brillant ou de livres épais reliés avec un adhésif PUR lourd. Les papiers couchés contiennent de l'argile et des minéraux qui émoussent très rapidement les lames HSS. Les lames en carbure de tungstène ont une durée de vie 5 à 10 fois supérieure à celle des lames en acier inoxydable, ce qui réduit considérablement les temps d'arrêt de la machine pour le remplacement des lames.",
+            "Le set comprend un couteau frontal et deux couteaux latéraux pour les coupes frontales, de tête et de pied sur un corps de livre. Chaque position a ses propres dimensions et détails de montage. Identifiez les couteaux gauche et droit séparément, y compris leur orientation en biseau, afin que l'ensemble commandé suive la disposition des coupe-bordures installée.",
         },
         {
           question:
-            "Pourquoi les lames de mon massicot ne cessent-elles de déchirer ou d'écailler le dos du livre ?",
+            "Comment assortir les couteaux à une tondeuse Müller Martini ou Kolbus ?",
           answer:
-            "La déchirure du dos est généralement due à l'une des trois causes suivantes : (1) la lame est émoussée et doit être changée ; (2) l'angle du biseau n'est pas adapté au type de papier/colle à couper ; ou (3) l'accumulation de colle à l'arrière de la lame provoque une \"traînée\". Veillez à ce que vos lames aient une finition miroir pour éviter l'adhérence de la colle, et envisagez de les remplacer par des lames en acier rapide ou en carbure pour une meilleure tenue du tranchant.",
+            "Faites correspondre les références des couteaux avant, gauche et droit au modèle et à la version complets de la tondeuse. Les entrées du catalogue couvrent des configurations spécifiques Müller Martini 367x et Kolbus HD. Comparez le numéro d'article séparé, le biseau et le modèle de montage pour chaque position avec votre dessin.",
         },
         {
           question:
-            "Les lames des coupe-bordures en carbure de tungstène (TC) peuvent-elles être réaffûtées ?",
+            "Comment le papier affecte-t-il le choix entre les chants HSS et carbure ?",
           answer:
-            "Oui, mais ils doivent être affûtés à l'aide de meules diamantées spécialisées. L'utilisation de meules standard en oxyde d'aluminium ou en carbure de silicium détruira l'arête en carbure et générera des microfissures. Si votre service d'affûtage local ne dispose pas de l'équipement adéquat pour les meules diamantées, nous vous recommandons de les envoyer à un affûteur industriel spécialisé.",
+            "Le revêtement du papier, la teneur en charges et les exigences de production influencent l'usure des bords. Envisagez le carbure lorsque l'usure progressive est le principal problème et évaluez le processus d'affûtage disponible pour cette construction. Conservez les biseaux avant et latéraux requis et définissez les dimensions. Pour l'écaillage, inspectez les conditions de bord et de coupe avant de sélectionner un matériau plus dur.",
         },
         {
           question:
-            "Quelle est la séquence d'installation correcte pour un set de trois couteaux ?",
+            "Qu'est-ce qui peut causer une marque persistante sur le bord coupé d'un livre ?",
           answer:
-            "Comme les couteaux latéraux se cisaillent souvent légèrement contre le bâton de coupe ou la trajectoire du couteau avant, l'alignement est essentiel. Installez d'abord les trois couteaux sans les serrer. Réglez et serrez le couteau avant pour établir le point de référence de la tête, puis serrez alternativement les couteaux latéraux. Comme nos jeux de 3 pièces sont rectifiés avec une tolérance d'épaisseur identique, ils évitent la pression de serrage inégale qui cause le grippage.",
+            "De petits éclats sur le bord de travail sont une cause possible. Repérez la marque sur le devant, la tête ou le pied coupé et inspectez le couteau correspondant. Vérifiez ensemble son tranchant, son biseau et son état de coupe. La restauration de la géométrie des bords et du support résout un problème différent de celui de l'élimination des résidus d'adhésif d'un couteau par ailleurs intact.",
+        },
+        {
+          question:
+            "Pourquoi la colle s'accumule-t-elle sur les coupe-livres ?",
+          answer:
+            "Une colle qui n'a pas suffisamment séché peut laisser des résidus lors de la coupe, et une encre incomplètement séchée peut également affecter la finition. Enregistrez si une accumulation se produit près de la colonne vertébrale et examinez les conditions de séchage avec le processus de reliure. Comparez le couteau nettoyé et la coupe affectée avant de décider si la géométrie ou la surface du couteau nécessite une attention particulière.",
+        },
+        {
+          question:
+            "Puis-je remplacer un couteau latéral sans acheter l’ensemble complet ?",
+          answer:
+            "Oui. Un couteau avant, côté gauche ou côté droit peut être commandé individuellement. Identifier sa référence d'origine et les dimensions des couteaux restant en service, y compris les éventuels réaffûtages. Le remplacement nécessite l'orientation du biseau et le modèle de montage appropriés, ainsi que les dimensions de travail requises par cet ensemble.",
+        },
+        {
+          question:
+            "Les couteaux de coupe-bordures à trois voies et les couteaux d'encarteuse-piqueuse sont-ils interchangeables ?",
+          answer:
+            "Généralement non. Les trois voies et trois couteaux font référence à la coupe des trois bords d'un bloc de livre relié. Une ligne de piqûre à cheval peut également couper trois bords, mais ses couteaux supérieur, inférieur, avant et latéral dépendent de la machine. Voir [Couteaux de coupe-piqueuse à cheval](/products/saddle-stitcher-trimmer-knives) pour les configurations de ligne de livret.",
+        },
+        {
+          question:
+            "Comment demander un devis pour un set de coupe-bordures à trois couteaux ?",
+          answer:
+            "Envoyez le modèle et la version de la tondeuse, les spécifications et les quantités du papier ou du bloc-livre. Étiquetez séparément les dessins des couteaux avant, gauche et droit avec leurs directions de biseau et les détails de montage. Pour les commandes ultérieures, indiquez chaque numéro d'article ou numéro de pièce d'origine. Pour un changement partiel, identifiez les couteaux restant dans l'ensemble.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de coupe-herbe, les dessins pour les positions avant et latérales, ainsi que le format et le stock du livre.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 960,
+      height: 960,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Échantillons de lames de coupe à trois couteaux montrant un long couteau avant et deux couteaux latéraux plus courts",
+      sizeRange: "392–585 mm",
+      heroSpecs: [
         {
-          question:
-            "Vos lames de coupe s'adaptent-elles aux machines Kolbus, Wohlenberg et Perfecta ?",
-          answer:
-            "Oui. Nous disposons d'une base de données complète de plans OEM exacts pour toutes les principales lignes de reliure européennes et japonaises, y compris Müller Martini, Kolbus, Wohlenberg, Perfecta et Horizon. Les trous de montage, les fentes et les inserts filetés seront parfaitement adaptés.",
-        },
-        {
-          question:
-            "Quel est le délai de fabrication d'un set de coupe en carbure de tungstène personnalisé ?",
-          answer:
-            "Les jeux standard en acier rapide pour les modèles populaires de Müller Martini et Kolbus sont souvent en stock. La fabrication des jeux d'incrustation en carbure de tungstène (TC) sur mesure nécessite généralement 15 à 20 jours ouvrables, en raison des processus complexes de brasage sous vide et de meulage au diamant requis pour le carbure.",
+          label: "Application",
+          value: "Découpe du devant, de la tête et du pied des produits reliés",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
+        alt: "Échantillons de couteaux à trois couteaux avec différents profils de corps et modèles de trous de montage",
+      },
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "392–585 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Tranchants en acier rapide HSS à 18 % de tungstène ou en carbure de tungstène",
+        },
+        {
+          label: "Construction de la lame",
+          value:
+            "Incrustation bimétallique avec tranchant brasé et corps en acier",
+        },
+        {
+          label: "Définir la configuration",
+          value: "Un couteau frontal et deux couteaux latéraux",
+        },
+        {
+          label: "Finition de surface",
+          value: "Miroir rodé, Ra ≤0,1 µm",
+        },
+        {
+          label: "Application",
+          value:
+            "Coupe du devant, de la tête et des pieds des livres et blocs-livres reliés",
+        },
+        {
+          label: "Définir la correspondance d'épaisseur",
+          value: "±0,01 mm sur l'ensemble correspondant",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Machine / version",
+            "Position du couteau",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+            "Trous/fentes de montage",
+          ],
+          rows: [
+            [
+              "SR003401",
+              "Müller Martini 3670 / 3672 — Nouveau style",
+              "Devant",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003402",
+              "Müller Martini 3670 / 3672 — Nouveau style",
+              "Côté gauche",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003403",
+              "Müller Martini 3670 / 3672 — Nouveau style",
+              "Côté droit",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003404",
+              "Müller Martini 3671 Mérite — Série 97",
+              "Devant",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003405",
+              "Müller Martini 3671 Mérite — Série 97",
+              "Côté gauche",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003406",
+              "Müller Martini 3671 Mérite — Série 97",
+              "Côté droit",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003407",
+              "Müller Martini 3675 Orbit — Style ancien",
+              "Devant",
+              "580",
+              "115",
+              "12",
+              "12 × M10 + 1 emplacement",
+            ],
+            [
+              "SR003408",
+              "Müller Martini 3675 Orbit — Style ancien",
+              "Côté gauche",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 emplacements",
+            ],
+            [
+              "SR003409",
+              "Müller Martini 3675 Orbit — Style ancien",
+              "Côté droit",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 emplacements",
+            ],
+            [
+              "SR003410",
+              "Müller Martini 3675 Orbit — Nouveau style",
+              "Devant",
+              "585",
+              "115",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003411",
+              "Müller Martini 3675 Orbit — Nouveau style",
+              "Côté gauche",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003412",
+              "Müller Martini 3675 Orbit — Nouveau style",
+              "Côté droit",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003413",
+              "Kolbus HD150 — Style ancien",
+              "Devant",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003414",
+              "Kolbus HD150 — Style ancien",
+              "Côté gauche",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003415",
+              "Kolbus HD150 — Style ancien",
+              "Côté droit",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003416",
+              "Kolbus HD153",
+              "Devant",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003417",
+              "Kolbus HD153",
+              "Côté gauche",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+            [
+              "SR003418",
+              "Kolbus HD153",
+              "Côté droit",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Incluez le modèle de coupe-herbe, les dessins pour les positions avant et latérales, ainsi que le format et le stock du livre.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Incluez le modèle de coupe-herbe, les dessins pour les positions avant et latérales, ainsi que le format et le stock du livre.",
+    dimensionLabels: {
+      intro:
+        "Chaque ensemble comprend un couteau avant et un couteau de chaque côté. Faites correspondre la version de la machine, la direction du biseau et le motif complet des trous et des fentes à votre dessin avant de commander.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenez des couteaux supérieurs et inférieurs de remplacement pour votre station de refendage d'électrodes de batterie, avec des alésages, des largeurs et des profils de bord personnalisés. Envoyez Sureay les dessins de votre station et les détails des électrodes pour un devis sur la paire de carbures et les options de surface.",
     id: "lithium-battery-slitting-knives",
-    name: "Couteaux à couper les piles",
-    fullName:
-      "Couteaux circulaires en carbure de tungstène pour feuilles d'électrodes de batteries au lithium",
+    seoDescription:
+      "Couteaux de refendage en carbure à grain fin pour anodes et cathodes de batteries au lithium revêtues. Commandez des couteaux rotatifs supérieurs et inférieurs assortis avec DLC ou TiN en option.",
+    name: "Couteaux de refente pour électrodes de batteries",
+    fullName: "Couteaux de refente pour électrodes de batteries au lithium",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Lames de précision à batterie",
+    categoryDisplay: "Couteaux de refente pour électrodes de batteries",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "Nouvelle énergie",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-07.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
-    ],
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Couteaux circulaires à refendre carbure de tungstène à finition miroir pour les feuilles d'électrodes de batteries lithium-ion. La qualité du bord Ra ≤ 0,05μm à encoche zéro empêche les micro-bavures sur les feuilles de cathode en Al et d'anode en Cu, ce qui permet de maintenir la propreté de l'assemblage des cellules de classe ISO 7. Tolérance : ±0,001 mm d'épaisseur, ≤0,01 mm T.I.R.",
-    fullDescription:
-      "La découpe d'électrodes de batteries au lithium est l'une des applications de découpe de précision les plus exigeantes de la fabrication industrielle. Une seule micro-bavure ou une seule entaille sur le bord de la feuille coupée peut pénétrer dans la membrane séparatrice pendant l'assemblage de la cellule, provoquant un court-circuit interne et une défaillance catastrophique de la batterie. Les couteaux Sureay pour le découpage des batteries au lithium sont conçus pour éliminer ce risque grâce à une précision dimensionnelle et une métallurgie de surface extrêmes.\n\nChaque couteau est fabriqué à partir d'un grain ultrafin carbure de tungstène (WC-Co, taille de grain ≤ 0,5μm) et rectifié avec précision pour obtenir une finition miroir Ra ≤ 0,05μm sur le biseau de coupe. La tolérance d'épaisseur est maintenue à ±0,001 mm sur toute la surface du disque - trois fois plus stricte que les spécifications des couteaux de refendeurs standard - et le faux-rond total indiqué (T.I.R.) est vérifié à ≤0,01 mm sur chaque unité avant l'expédition. Cette géométrie de bord à encoche zéro empêche la micro-délamination au niveau du bord de coupe de la feuille et élimine la génération de particules métalliques qui contaminent les environnements d'assemblage des cellules de salles sèches.\n\n## Applications des feuilles d'électrodes\n\n**Feuille cathodique en aluminium (cellules LFP, NMC, NCA):** Epaisseur de 12 à 20μm. La couche d'oxyde dure et cassante sur les feuilles d'aluminium de qualité batterie abrase rapidement les arêtes HSS et D2 standard en un seul rouleau. Les qualités de carbure de tungstène conservent une durée de vie géométrique des arêtes 8-12× plus longue, ce qui réduit les arrêts imprévus sur les lignes d'enroulement à grande vitesse fonctionnant à 80-120 m/min.\n\n**Feuille d'anode en cuivre (LFP, NMC, cellules à semi-conducteurs):** Épaisseur de 6 à 12μm. Les feuilles de cuivre ultrafines exigent que le jeu entre le couteau et l'ancre soit réglé à ±0,002 mm pour éviter que les feuilles ne se froissent et ne se télescopent sur le rouleau de rembobinage. Nos paires de couteaux à diamètre adapté sont rectifiées en tant qu'ensembles accouplés avec un jeu pré-vérifié selon les spécifications de votre machine.\n\n**Film séparateur en PVDF (procédé à sec):** Le film séparateur revêtu de céramique pour les procédés à électrodes sèches (utilisé dans les lignes de cellules à l'état solide Gen 4) présente un substrat de coupe extrêmement abrasif. Des couteaux en cermet ou en PCD (diamant polycristallin) sont disponibles sur demande pour cette application.\n\n## Compatibilité avec les salles blanches\n\nTous les couteaux sont nettoyés aux ultrasons, emballés individuellement dans des sacs antistatiques scellés et certifiés exempts de particules conformément aux normes ISO de classe 7. Les certificats d'emballage et de matériaux sont conformes aux exigences de documentation IATF 16949 pour les chaînes d'approvisionnement des batteries de véhicules électriques.",
+      "Couteaux de rechange en carbure pour anodes et cathodes de batteries au lithium revêtues. Paires de couteaux supérieurs et inférieurs personnalisés, avec options de revêtement DLC ou TiN.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Dimensions",
+        value: "Série d'électrodes OD 60–150 mm",
+      },
+      {
+        label: "Matériau",
+        value: "carbure de tungstène grains fins (WC-Co); cermet sur demande",
+      },
+      {
+        label: "Applications",
+        value: "Toiles d'anode et de cathode de batterie au lithium revêtues",
+      },
+      {
+        label: "Qualités d'électrodes",
+        value: "YG6X , YG6H , YG8 et YG10X",
+      },
+      {
+        label: "Finition des bords",
+        value: "Faces de coupe polies miroir, Ra ≤0,05 μm",
+      },
+      {
+        label: "Revêtements en option",
+        value: "DLC ou TiN",
+      },
+      {
+        label: "Dureté",
+        value: "91–93 HRA, selon la qualité WC-Co",
+      },
+      {
+        label: "Tolérance d'épaisseur",
+        value: "±0.001 mm",
+      },
+      {
+        label: "Faux-rond",
+        value: "≤0.01 mm T.I.R.",
+      },
+      {
+        label: "Fixation",
+        value:
+          "Paire de couteaux rotatifs supérieur et inférieur appariés par station de refendage d'électrodes",
+      },
+      {
+        label: "Feuille de collecteur de courant",
+        value: "Aluminium 12-20 µm ; cuivre 6–12 µm",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Couteaux à fendre les électrodes de batterie | Paires de carbure",
+      sizeRange: "Série d'électrodes OD 60–150 mm",
+      heroAlt:
+        "Couteaux de découpe à batterie circulaires disposés pour montrer les alésages et les faces de coupe polies",
+      specificationImage: {
+        src: "/images/products/slitter-detail/lithium-battery-slitting-knives-detail.webp",
+        alt: "Gros plan du tranchant poli d'un couteau à découper circulaire",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "electrode",
+          tabLabel: "Paires d'électrodes",
+          title: "Paires d'électrodes",
+          columns: [
+            "Référence",
+            "Série",
+            "OD supérieur × ID × W",
+            "OD inférieur × ID × W",
+          ],
+          rows: [
+            ["SR001351", "60 séries", "72 × 46 × 0.5 mm", "60 × 40 × 5.0 mm"],
+            ["SR001352", "série 80/98", "98 × 66 × 0.7 mm", "80 × 55 × 5.0 mm"],
+            [
+              "SR001353",
+              "100 séries",
+              "100 × 65 × 0.7 mm",
+              "100 × 65 × 3.0 mm",
+            ],
+            [
+              "SR001354",
+              "100 séries",
+              "100 × 65 × 1.0 mm",
+              "100 × 55 × 5.0 mm",
+            ],
+            ["SR001355", "série 130", "130 × 88 × 0.8 mm", "130 × 95 × 3.0 mm"],
+            ["SR001356", "série 130", "130 × 97 × 1.0 mm", "130 × 70 × 5.0 mm"],
+          ],
+        },
+        {
+          id: "individual-electrode-knives",
+          tabLabel: "Couteaux à électrodes individuels",
+          title: "Couteaux à électrodes individuels",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Configuration",
+          ],
+          rows: [
+            ["SR001820", "76 × 38 × 0.5 mm", "Couteau individuel"],
+            ["SR001821", "76 × 38 × 1.0 mm", "Couteau individuel"],
+            ["SR001822", "100 × 50 × 0.5 mm", "Couteau individuel"],
+            ["SR001823", "100 × 50 × 1.0 mm", "Couteau individuel"],
+            ["SR001824", "100 × 50 × 1.5 mm", "Couteau individuel"],
+            ["SR001825", "120 × 60 × 0.5 mm", "Couteau individuel"],
+            ["SR001826", "120 × 60 × 1.0 mm", "Couteau individuel"],
+            ["SR001827", "150 × 76 × 1.0 mm", "Couteau individuel"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Série d'électrodes OD 60–150 mm",
+        },
+        {
+          label: "Matériau",
+          value: "carbure de tungstène grains fins (WC-Co); cermet sur demande",
+        },
+        {
+          label: "Applications",
+          value: "Toiles d'anode et de cathode de batterie au lithium revêtues",
+        },
+        {
+          label: "Qualités d'électrodes",
+          value: "YG6X , YG6H , YG8 et YG10X",
+        },
+        {
+          label: "Finition des bords",
+          value: "Faces de coupe polies miroir, Ra ≤0,05 μm",
+        },
+        {
+          label: "Revêtements en option",
+          value: "DLC ou TiN",
+        },
+        {
+          label: "Dureté",
+          value: "91–93 HRA, selon la qualité WC-Co",
+        },
+        {
+          label: "Tolérance d'épaisseur",
+          value: "±0.001 mm",
+        },
+        {
+          label: "Faux-rond",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Fixation",
+          value:
+            "Paire de couteaux rotatifs supérieur et inférieur appariés par station de refendage d'électrodes",
+        },
+        {
+          label: "Feuille de collecteur de courant",
+          value: "Aluminium 12-20 µm ; cuivre 6–12 µm",
+        },
+      ],
+    },
     compatibleMachines: [
-      "Kaido",
-      "Koem",
+      "Nishimura",
+      "DIENES",
+      "Kampf",
+      "CIS",
+      "PNT",
       "Hirano Tecseed",
       "CKD",
-      "Manz",
-      "Targray",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "Ultra-fine WC-Co Tungsten Carbide, Cermet (on request)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror polish Ra ≤ 0.05μm — zero-notch edge",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.001mm | T.I.R. Runout: ≤0.01mm",
-      },
-      {
-        label: "Hardness",
-        value: "HRA 91–93 (WC-Co grade)",
-      },
-      {
-        label: "Coatings",
-        value: "DLC, TiN (optional, anti-adhesion for PVDF-coated foil)",
-      },
-      {
-        label: "Application",
-        value:
-          "Al cathode foil (12–20μm), Cu anode foil (6–12μm), PVDF separator film",
-      },
+      "Lead Intelligent",
     ],
     components: [
       {
-        id: "zero-notch-edge",
-        tag: "PRÉCISION",
-        title: "Finition miroir zéro défaut",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Configurations en carbure pour électrodes revêtues",
         description:
-          "Chaque biseau de coupe est rodée à Ra ≤ 0,05μm - la même norme de qualité de surface utilisée pour le meulage des lentilles optiques. Cela permet d'éliminer les micro-griffes qui génèrent des particules métalliques dans les environnements d'assemblage de cellules en salle sèche et d'éviter la perforation de la membrane du séparateur.",
+          "Des couteaux en carbure WC-Co sont disponibles pour le refendage d'anodes et de cathodes revêtues, les exigences en matière de matériaux et la configuration des couteaux étant définies pour votre station d'électrodes.",
       },
       {
-        id: "ultra-fine-carbide",
-        tag: "METALLURGIE",
-        title: "Nuance de carbure WC-Co ultrafin",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Faces de coupe rectifiées et DLC ou TiN en option",
         description:
-          "Le carbure industriel standard utilise des grains de 1 à 3μm. Nos couteaux pour batteries sont fabriqués à partir de WC-Co submicronique ≤0,5μm, ce qui permet d'obtenir une dureté d'arête nettement plus élevée (HRA 91-93), une résistance supérieure à l'abrasion sur les feuilles minces d'Al et de Cu, et une durée de vie plus longue entre les cycles de réaffûtage.",
+          "Les faces de coupe polies miroir et les configurations de surface DLC ou TiN en option permettent aux commandes de couteaux d'électrode de spécifier la surface de travail séparément du matériau carbure et de la géométrie de la lame.",
       },
       {
-        id: "matched-knife-pairs",
-        tag: "CAPACITÉ DU PROCESSUS",
-        title: "Paires d'autorisations pré-vérifiées",
+        id: "selection-3",
+        tag: "Application",
+        title: "Couteaux supérieurs et inférieurs pour stations d'électrodes",
         description:
-          "Les jeux de couteaux supérieurs et inférieurs sont rectifiés par paires de diamètres appariés avec un jeu vérifié au préalable selon les spécifications de votre bobineuse (généralement 0,002-0,005 mm pour les feuilles de cuivre). Chaque paire est livrée avec une fiche technique indiquant le diamètre extérieur, le diamètre intérieur, l'épaisseur et le jeu mesuré, ce qui permet une réinstallation cohérente en bord de ligne.",
+          "Commandez des paires de couteaux supérieurs et inférieurs personnalisés ou des remplacements individuels, avec des alésages, des largeurs et des profils de coupe spécifiés autour de votre station de refendage d'électrodes existante et du couteau correspondant conservé.",
       },
     ],
-    dimensionLabels: {
-      col1: "Diamètre extérieur (OD)",
-      col2: "Diamètre intérieur (ID)",
-      col3: "Épaisseur",
-      caption:
-        "* Dimensions standard pour la découpe de feuilles d'électrodes de batterie. Le diamètre extérieur, le diamètre intérieur et l'épaisseur peuvent être personnalisés pour tous les modèles de bobineuses. Des paires assorties haut/bas sont fournies avec une fiche de données de dégagement pré-vérifiée.",
-    },
-    standardDimensions: [
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "150 mm",
-        id: "76 mm",
-        thickness: "1.0 mm",
-      },
-    ],
-    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives"],
-    offers: {
-      lowPrice: 45,
-      highPrice: 480,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Quelle est la norme de finition de surface requise pour éviter les micro-bavures sur les feuilles d'électrodes de batterie ?",
+            "Comment puis-je identifier une paire de couteaux d'électrode supérieure et inférieure de remplacement ?",
           answer:
-            "Pour le refendage des électrodes de batteries lithium-ion, le biseau de coupe doit être poli à Ra ≤ 0,05μm (finition miroir) et vérifié pour l'absence d'entailles sous un grossissement de 400×. Toute irrégularité de surface supérieure à ce seuil génère des particules micro-métalliques qui contaminent les environnements de salle sèche de classe ISO 7 et peuvent pénétrer dans le séparateur, provoquant un court-circuit interne dans la cellule finie.",
+            "Identifiez les deux positions des couteaux et enregistrez leurs alésages, leurs largeurs, leurs profils de coupe et leur relation d'installation. Le modèle de station et les dessins actuels établissent les exigences de montage. Incluez la construction de la bande d'électrodes afin que la paire de remplacement puisse être spécifiée pour le matériau enduit ainsi que la disposition mécanique, chaque position étant clairement identifiée.",
         },
         {
           question:
-            "Comment régler le jeu entre les couteaux pour les feuilles d'anode en cuivre ultrafines ?",
+            "Comment le courant d’usure devrait-il guider la sélection du carbure pour les électrodes enrobées ?",
           answer:
-            "Pour une feuille d'anode en Cu de 6-12μm, le jeu supérieur/inférieur du couteau doit être réglé entre 0,002 et 0,005 mm (2 à 5 % de l'épaisseur de la feuille). Un jeu inférieur à cette fourchette entraîne la formation de bavures ; un jeu supérieur entraîne le froissement de la feuille et le télescopage de l'enrouleur. Nos paires appariées sont vérifiées au préalable en fonction du jeu spécifié et sont fournies avec une fiche technique dimensionnelle pour une installation cohérente en bord de ligne.",
+            "Enregistrez le modèle d'usure du couteau utilisé ainsi que la construction de l'électrode et la qualité des bords requise. Ceux-ci fournissent la base pour discuter des exigences en matière de carbure. Conservez la qualité du substrat et le revêtement de surface facultatif dans des spécifications distinctes et comparez-les avec la géométrie du couteau existante et les critères d'acceptation de la production lors de l'évaluation d'un remplacement.",
         },
         {
           question:
-            "Quelle qualité de carbure dois-je spécifier pour la feuille cathodique en aluminium par rapport à la feuille anodique en cuivre ?",
+            "Qu'est-ce qui peut causer des bavures, de la poussière ou des dommages au revêtement au bord de l'électrode ?",
           answer:
-            "Les deux types de feuilles bénéficient d'un WC-Co submicronique (grain ≤0,5μm, HRA 91-93). Pour les feuilles cathodiques en Al, la couche superficielle d'oxyde dur est le principal facteur d'abrasion - une nuance de carbure K10/K20 standard permet d'obtenir une durée de vie acceptable des bords. Pour les feuilles anodiques en Cu, la priorité consiste à obtenir la rugosité de surface la plus faible possible (Ra ≤ 0,05μm) afin d'éviter le transfert d'adhésif et le marquage de la feuille au niveau du bord de coupe.",
+            "L’état du tranchant, la géométrie de coupe, l’alignement des paires et la structure des électrodes peuvent tous y contribuer. Examinez le bord du collecteur et le revêtement séparément, en notant si le défaut apparaît sur un côté ou à plusieurs emplacements de fente. Comparez ces observations avec les paramètres validés de la machine et les exigences de qualité des bords pour définir ce à quoi la paire de couteaux de remplacement doit répondre.",
         },
         {
           question:
-            "Quel est le cycle d'affûtage typique des couteaux à refendre pour batteries ?",
+            "Pourquoi un couteau-électrode en carbure développe-t-il des micro-puces ?",
           answer:
-            "Sur une ligne de refendage de feuilles standard de 600 mm de large fonctionnant à 80 m/min, les couteaux submicroniques en WC-Co conservent généralement une qualité d'arête acceptable pendant 4 à 6 mois de fonctionnement continu avant qu'un réaffûtage ne soit nécessaire. La dégradation des arêtes se manifeste d'abord par une augmentation de la rugosité des arêtes de coupe (Ra supérieur à 0,1μm) visible sous inspection MEB, et non par un écaillage catastrophique. Nous proposons un service de réaffûtage avec recertification dimensionnelle complète.",
+            "Les bords en carbure dur sont sensibles aux impacts de manipulation, au contact involontaire du couteau et au positionnement instable. Inspectez les deux bords, l'état de montage et le faux-rond, puis comparez l'alignement des paires et la géométrie de coupe avec les exigences de la station. Enregistrez si les dommages apparaissent pour la première fois lors de l'installation, du démarrage ou du fonctionnement pour distinguer les dommages de contact d'un problème de fonctionnement récurrent avant de changer de niveau.",
+        },
+        {
+          question:
+            "Comment le DLC ou le TiN doivent-ils être spécifiés pour les couteaux à électrodes de remplacement ?",
+          answer:
+            "Spécifiez le revêtement séparément de la qualité du carbure, de l'alésage, de la largeur du couteau et du profil de coupe. Identifiez si la commande doit reproduire un couteau revêtu existant ou évaluer un changement par rapport à une configuration non revêtue. Conservez les exigences de construction de l'électrode et de qualité des bords avec les spécifications afin que le traitement de surface demandé soit défini pour cette station.",
+        },
+        {
+          question:
+            "Sureay peut-il fournir une paire de couteaux personnalisée ou remplacer uniquement le couteau supérieur ?",
+          answer:
+            "Oui. Des paires personnalisées peuvent être spécifiées à partir des dessins de la station, et un couteau supérieur peut être fourni séparément lorsque le couteau inférieur retenu est identifié et utilisable. Incluez ses dimensions réelles, son profil de bord et son historique de réaffûtage. Identifiez clairement quel couteau est remplacé et si la commande doit reproduire ou modifier la configuration existante.",
+        },
+        {
+          question:
+            "Les couteaux à électrodes sont-ils identiques aux couteaux en cuivre nu ou en aluminium ?",
+          answer:
+            "Les couteaux à électrodes coupent une bande d'anode ou de cathode revêtue contenant à la fois une feuille collectrice et des couches de revêtement. Les couteaux à feuille nue coupent le substrat en cuivre ou en aluminium non revêtu. Leurs exigences en matière de bords et de particules peuvent différer malgré une forme circulaire similaire. Pour les substrats non revêtus, voir [Couteaux à découper pour feuilles de cuivre et d'aluminium](/products/metal-foil-strip-slitter-knives) .",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay peut-il fournir des couteaux de découpe de batterie certifiés selon les exigences de l'IATF 16949 ?",
-          answer:
-            "Oui. Nous fournissons une documentation complète sur la traçabilité des matériaux pour la qualification de la chaîne d'approvisionnement des batteries de véhicules électriques : Certificats de broyage des matières premières WC-Co, rapports d'essai de dureté (HRA selon ASTM E18), relevés de mesure de la rugosité de surface (Ra selon ISO 4287) et rapports dimensionnels CMM. Tous les documents sont référencés par rapport au numéro de lot de votre bon de commande.",
-        },
-        {
-          question:
-            "Quel est le délai de livraison pour les commandes de couteaux à découper les batteries standard et personnalisées ?",
-          answer:
-            "Dimensions standard en stock : 3-5 jours ouvrables. Dimensions OD/ID personnalisées non disponibles en stock : 10-15 jours ouvrables, y compris la documentation complète de contrôle de qualité. Pour les commandes initiales de qualification OEM nécessitant la vérification d'échantillons avant la production complète, il faut compter 7 à 10 jours ouvrables pour les premiers échantillons de particules.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Sourcez des lames de coupe en carbure de rechange pour l'extrémité sèche de votre onduleuse, avec des alésages personnalisés, des trous de fixation et des modèles de montage à fentes. Envoyez Sureay le dessin de la pièce ou l'échantillon pour un devis sur votre configuration de lame solide ou divisée.",
     id: "corrugated-slitter-scorer-blades",
-    name: "Lames de refendeuse pour carton ondulé",
+    seoDescription:
+      "Lames de coupe en carbure pour lignes sèches d'onduleuses, avec configurations de référence BHS et Fosber . Alésages et modèles de fixation personnalisés réalisés sur dessin.",
+    name: "Lames de refente pour carton ondulé",
     fullName:
-      "Lames de refendage minces en carbure de tungstène pour lignes d'onduleuses à sec",
+      "Couteaux de refente pour la partie sèche des lignes de carton ondulé",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Lames ondulées",
+    categoryDisplay: "Lames de refente pour carton ondulé",
     image:
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-    badge: "Zéro Crush",
-    badgeColor: "orange",
-    gallery: [
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
-    ],
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lames de refendage minces en carbure de tungstène massif conçues pour le refendage sans écrasement du carton ondulé. Remplacements OEM exacts pour BHS, Fosber et Marquip. En tant que fabricant d'outillage complet pour les usines de carton, nous fournissons également des couteaux à rainurer, des couteaux à tronçonner en Z, des couteaux à rainurer et à gratter, et des couteaux à suturer.",
-    fullDescription:
-      "Sur une ligne d'ondulation à grande vitesse (plus de 250 m/min), c'est la découpeuse-scendeuse à sec qui détermine la qualité finale du carton ondulé. L'utilisation de lames de qualité inférieure entraîne l'écrasement des cannelures, des bords irréguliers et un excès de poussière de papier. Les lames de découpeuses pour ondulé Sureay sont fabriquées à partir de carbure de tungstène 100 % solide, à grain sub-micronique, par frittage HIP (Hot Isostatic Pressing), offrant une résistance à la rupture transversale et une stabilité des bords inégalées.\n\n## La géométrie du rasoir \"zéro écrasement\"\n\nLe terme \"lame fine\" fait référence au tranchant, et non à l'ensemble du corps de la lame. Pour éviter toute oscillation à grande vitesse, le corps de nos lames est usiné pour atteindre une épaisseur rigide de 1,0 à 1,2 mm. Le tranchant est ensuite laminé avec précision par des meules diamantées pour obtenir un profil de rasoir microscopique (généralement 0,3 mm de large à l'apex). Cette géométrie spécifique tranche les panneaux lourds à double paroi par simple action de cisaillement, ne générant aucune force de compression et éliminant complètement l'écrasement de la cannelure.\n\n## Affûtage continu en ligne\n\nLes onduleuses modernes utilisent des meules CBN automatiques en ligne pour affûter les lames de la refendeuse pendant le fonctionnement. Sureay a spécifiquement formulé sa matrice en carbure de tungstène pour équilibrer une résistance extrême à l'usure avec une meulabilité parfaite, garantissant que la lame se débarrasse proprement de la matière sans glacer ou charger les meules de la machine.\n\n## Portefeuille complet d'outillage pour le carton ondulé\n\nAlors que nos lames de refendage en carbure de tungstène sont le cœur de l'onduleuse, Sureay est un partenaire d'outillage complet pour l'ensemble de l'usine de carton ondulé. Au-delà des lames de refendage, nous fabriquons et fournissons :\n- **Couteaux à fente (Slotting) & Couteaux à fente à poutre:** Pour des fentes propres et sans déchirure sur les plieuses-colleuses Flexo (FFG).\n- **Couteaux de coupe Z:** Lames dentelées à coupe transversale à grande vitesse pour la station de coupe à sec.\n- **Lames de précision pour la coupe de la patte de collage/couture critique sur les boîtes pliantes.\n- **Couteaux à inciser et à rainer:** Anneaux d'incision mâle/femelle qui créent la charnière de pliage parfaite.\n- **Couteaux circulaires supérieurs et inférieurs:** Conception en deux parties pour un remplacement rapide sur la machine, ce qui permet d'économiser des heures d'immobilisation pour la maintenance des arbres.",
+      "Lames de coupe de rechange en carbure pour les lignes sèches d'onduleuse. BHS , Fosber et autres références de machines, avec alésages personnalisés et schémas de fixation sur plan.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "BHS",
-      "FOSBER",
-      "Marquip",
-      "Agnati",
-      "Martin / Bobst",
-      "TCY",
-      "Isowa",
-    ],
     specs: [
       {
-        label: "Main Product",
-        value: "Solid Tungsten Carbide Thin Slitter Blades (HIP Sintered)",
+        label: "Dimensions",
+        value: "Lame fine OD 15–340 mm",
       },
       {
-        label: "Material",
-        value: "Tungsten Carbide WC-Co K05 / K10 / K20 (grade by board type)",
-      },
-      {
-        label: "Blade Hardness",
-        value: "HRA 90–92 (Optimized for wear and in-line grindability)",
-      },
-      {
-        label: "Body Thickness",
-        value: "1.0 mm – 1.2 mm (Ensures high-speed rigidity)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Precision lapped razor profile, ~0.3 mm apex (Zero-crush)",
-      },
-      {
-        label: "Line Speed Rating",
-        value: "Up to 350+ m/min on modern high-speed corrugators",
-      },
-      {
-        label: "Application",
+        label: "Matériau",
         value:
-          "B/C/E/F flute corrugated board — slit and score on BHS, Marquip, FOSBER corrugators",
+          "Carbure WC-Co dans les nuances K05 , K10 , K20 , YG8 , YG10 , YG12X ou YG15",
       },
       {
-        label: "Other Tooling Cap.",
-        value: "Slotter Knives, Z Cut-off Knives, Scorer Knives, Split Knives",
+        label: "Applications",
+        value: "Refente longitudinale sur le côté sec de l'onduleuse",
       },
+      {
+        label: "Options de lame",
+        value: "Disque plein ou construction divisée",
+      },
+      {
+        label: "Dureté",
+        value: "90–92 HRA, selon la nuance de carbure",
+      },
+      {
+        label: "Fixation",
+        value:
+          "Alésage lisse, modèle de trou de fixation ou modèle de montage à fente",
+      },
+      {
+        label: "Méthode de production",
+        value: "carbure de tungstène solide fritté HIP",
+      },
+      {
+        label: "Sommet du bord",
+        value: "Environ 0,3 mm",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Lames de découpeuse-scanneuse pour carton ondulé | BHS & Fosber",
+      sizeRange: "Lame fine OD 15–340 mm",
+      heroAlt:
+        "Lames de découpe fines pour carton ondulé avec différents modèles d'alésage et de montage",
+      specificationImage: {
+        src: "/images/products/slitter-detail/corrugated-slitter-scorer-blades-detail.webp",
+        alt: "Lame de découpe circulaire ondulée montrant son grand alésage et ses trous de fixation",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "thin",
+          tabLabel: "Lames fines en carbure",
+          title: "Lames fines en carbure",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Référence matériel",
+            "Modèle de montage",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Modèle 6 × Ø9 mm"],
+            [
+              "SR001404",
+              "230 × 135 × 1.1 mm",
+              "Fosber",
+              "Modèle à 4 emplacements",
+            ],
+            [
+              "SR001405",
+              "257 × 135 × 1.1 mm",
+              "Fosber",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001406",
+              "291 × 203 × 1.1 mm",
+              "Fosber",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001408",
+              "220 × 115 × 1.0 mm",
+              "Agnati",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001409",
+              "240 × 115 × 1.0 mm",
+              "Agnati",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001410",
+              "280 × 160 × 1.1 mm",
+              "Mitsubishi",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001411",
+              "260 × 140 × 1.1 mm",
+              "Isowa",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001412",
+              "300 × 112 × 1.2 mm",
+              "TCY",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001413",
+              "340 × 230.2 × 1.0 mm",
+              "Göpfert",
+              "Dessin de correspondance",
+            ],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Tailles supplémentaires de couteaux pour onduleuse",
+          title: "Tailles supplémentaires de couteaux pour onduleuse",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de lame / Référence de la plate-forme",
+          ],
+          rows: [
+            ["SR001828", "240 × 115 × 1.0 / 1.2 mm", "BHS"],
+            ["SR001829", "260 × 140 × 1.2 mm", "BHS"],
+            ["SR001830", "230 × 135 × 1.15 / 1.2 mm", "FOSBER"],
+            ["SR001831", "260 × 112 × 1.2 mm", "FOSBER"],
+            ["SR001832", "230 × 110 × 1.2 / 1.5 mm", "Marquip"],
+            ["SR001833", "200 × 122 × 1.2 mm", "TCY / Justu"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Lame fine OD 15–340 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Carbure WC-Co dans les nuances K05 , K10 , K20 , YG8 , YG10 , YG12X ou YG15",
+        },
+        {
+          label: "Applications",
+          value: "Refente longitudinale sur le côté sec de l'onduleuse",
+        },
+        {
+          label: "Options de lame",
+          value: "Disque plein ou construction divisée",
+        },
+        {
+          label: "Dureté",
+          value: "90–92 HRA, selon la nuance de carbure",
+        },
+        {
+          label: "Fixation",
+          value:
+            "Alésage lisse, modèle de trou de fixation ou modèle de montage à fente",
+        },
+        {
+          label: "Méthode de production",
+          value: "carbure de tungstène solide fritté HIP",
+        },
+        {
+          label: "Sommet du bord",
+          value: "Environ 0,3 mm",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BHS",
+      "Fosber",
+      "MarquipWardUnited",
+      "Agnati",
+      "Mitsubishi",
+      "Isowa",
+      "TCY",
+      "Göpfert",
     ],
     components: [
       {
-        id: "hip-sintering",
-        tag: "METALLURGIE",
-        title: "Carbure fritté HIP",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Options de matériaux en carbure pour le refendage en onduleuse",
         description:
-          "Le pressage isostatique à chaud (HIP) garantit que nos lames de refendage fines n'ont pas de pores microscopiques. Cette structure ultra-dense maintient un bord rasoir impeccable (~0,3 mm de pointe) sans micro-déchirure sous l'impact du carton ondulé à grande vitesse.",
+          "Les options de carbure WC-Co vous offrent un choix de matériaux de remplacement pour le refendage en onduleuse. Spécifiez votre qualité actuelle, la configuration de la lame et l'état de la planche pour définir le couteau requis.",
       },
       {
-        id: "zero-crush",
-        tag: "GÉOMÉTRIE",
-        title: "Tranchant de rasoir sans écrasement",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Constructions à lames solides et fendues",
         description:
-          "Un corps de lame épais (1,0-1,2 mm) assure une stabilité absolue contre les oscillations latérales à vitesse élevée, tandis que le tranchant est profondément effilé et diamanté pour obtenir une finition rasoir. Cela permet de trancher proprement les cannelures au lieu de les enfoncer.",
+          "Des constructions à disque plein et divisées sont disponibles pour les stations de couteaux d'onduleuse existantes, vous permettant de commander la forme de lame requise par votre ensemble installé.",
       },
       {
-        id: "full-portfolio",
-        tag: "CAPACITÉ DE PRODUCTION",
-        title: "Outillage complet pour les plantes en boîte",
+        id: "selection-3",
+        tag: "Application",
+        title: "Alésages personnalisés et modèles de montage",
         description:
-          "Qu'il s'agisse de fentes minces en carbure de tungstène sur l'onduleuse, de couteaux de tronçonnage en Z, d'anneaux de rainurage et de couteaux à fente supérieure/inférieure sur votre plieuse-colleuse Flexo, nous concevons l'ensemble de la gamme de coupe pour votre usine d'emballage.",
+          "Les lames de remplacement peuvent être fabriquées avec des alésages, des trous de fixation et des fentes définis sur le dessin, vous offrant ainsi une voie d'achat directe pour le modèle de montage utilisé sur votre ligne.",
       },
     ],
-    dimensionLabels: {
-      col0: "Onduleuse Target OEM",
-      col1: "Diamètre extérieur (OD)",
-      col2: "Diamètre intérieur (ID)",
-      col3: "Épaisseur du corps",
-      caption:
-        "* Les dimensions ci-dessus sont des spécifications OEM standard pour les lames de refendage minces. Les trous des goupilles d'entraînement sont usinés selon les tolérances de la marque. Les couteaux de rainurage, d'inciseur et de tronçonnage en Z sont fabriqués selon les plans exacts du client ou de l'équipementier.",
-    },
-    standardDimensions: [
-      {
-        spec: "BHS",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "BHS",
-        od: "260 mm",
-        id: "140 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "230 mm",
-        id: "135 mm",
-        thickness: "1.15 / 1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "260 mm",
-        id: "112 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Marquip",
-        od: "230 mm",
-        id: "110 mm",
-        thickness: "1.2 / 1.5 mm",
-      },
-      {
-        spec: "Agnati",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        spec: "TCY / Justu",
-        od: "200 mm",
-        id: "122 mm",
-        thickness: "1.2 mm",
-      },
-    ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 150,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Pourquoi mes lames de refend fines écrasent-elles les flûtes sur les tables de flûte en mi et en fa ?",
+            "Comment puis-je identifier la bonne lame de découpe pour onduleuse de remplacement ?",
           answer:
-            "L'écrasement de la cannelure est causé par une lame qui a perdu sa géométrie de rasoir. Cela se produit si le carbure de la lame s'use trop rapidement ou si vos pierres d'affûtage automatiques en ligne sont glacées. Le passage à nos lames en carbure de tungstène fritté HIP permet de conserver un tranchant microscopique et de cisailler les cannelures proprement, sans force de compression.",
+            "Commencez par le modèle de la machine et la référence du couteau, puis précisez le diamètre extérieur, l'alésage, l'épaisseur et le schéma de fixation. Indiquez si la lame installée est un disque solide ou une construction divisée. Un dessin ou des photographies claires de l'agencement de montage aident à identifier la configuration requise, en particulier lorsque la même marque de machine utilise des ensembles de couteaux différents.",
         },
         {
           question:
-            "Comment vos lames interagissent-elles avec les systèmes d'affûtage automatique des découpeuses-correctrices ?",
+            "Les lames de découpe BHS et Fosber sont-elles interchangeables ?",
           answer:
-            "Nos lames sont spécialement conçues pour un affûtage en ligne continu (courant sur les lignes Fosber et BHS). La structure des grains de carbure et la proportion de liant cobalt sont équilibrées de manière à ce que la lame se débarrasse proprement de la matière lorsqu'elle est frappée par les pierres CBN, ce qui maintient la lame affûtée sans charger (glacer) les meules d'affûtage.",
+            "L'interchangeabilité dépend de la lame complète et de la géométrie de montage. Comparez l'alésage, les trous ou fentes de fixation, l'épaisseur et le profil de coupe avec la pièce installée. Des diamètres extérieurs similaires peuvent dissimuler différentes interfaces, utilisez donc le dessin du couteau ou la référence de la pièce pour établir la configuration de remplacement pour la station BHS ou Fosber spécifique.",
         },
         {
           question:
-            "Quel est l'avantage d'un couteau circulaire divisé en deux ?",
+            "Pourquoi carbure de tungstène est-il utilisé pour les lames de découpeuses-inciseurs de carton ondulé ?",
           answer:
-            "Sur les anciennes découpeuses-scanneuses, le remplacement d'un couteau circulaire solide usé exige que les opérateurs sortent l'ensemble de l'arbre lourd de la machine. Les Split couteaux circulaires sont fabriqués en deux moitiés qui s'emboîtent l'une dans l'autre. Il suffit de boulonner les moitiés directement autour de l'arbre en quelques minutes, ce qui permet d'économiser des heures de maintenance.",
+            "carbure de tungstène fournit un tranchant résistant à l'usure pour le refendage du carton ondulé. La sélection de la qualité doit refléter la construction de la lame et les conditions de travail réelles. Comparez l'usure progressive des bords avec l'écaillage et incluez le dispositif d'affûtage de la machine lors de la spécification d'un remplacement. Ces détails aident à définir le matériau requis de manière plus utile qu'une seule valeur de dureté.",
+        },
+        {
+          question:
+            "Pourquoi le carton ondulé présente-t-il des bords rugueux après la refente ?",
+          answer:
+            "Vérifiez le tranchant de la lame, l'état d'affûtage et le support de la planche au niveau de la coupe. Un bord usé ou une configuration de meulage inadaptée peut nuire à l'action de coupe de la lame fine. Comparez les échantillons coupés avant et après l'affûtage et notez les changements dans la qualité du papier. Suivez les paramètres de l'onduleuse pour le meulage et le support, plutôt que de traiter chaque arête rugueuse comme un problème de qualité carbure.",
+        },
+        {
+          question:
+            "Que faut-il vérifier lors de l'adaptation d'une lame à l'unité d'affûtage automatique ?",
+          answer:
+            "Vérifiez le profil de la lame et le diamètre restant par rapport au dispositif d'affûtage, ainsi que l'état et l'alignement des composants d'affûtage. Utilisez la documentation de la machine pour connaître les paramètres d'affûtage et les limites d'entretien. Incluez les détails de l'unité d'affûtage lors de la commande d'un remplacement afin que le couteau soit spécifié comme faisant partie de l'ensemble de coupe et de meulage installé.",
+        },
+        {
+          question:
+            "Sureay peut-il reproduire une lame d'onduleuse avec un modèle de montage spécifique ?",
+          answer:
+            "Oui. Sureay peut fabriquer des lames de remplacement selon les dessins définissant l'alésage, la disposition des trous de fixation, les fentes et le profil de coupe. La référence ou l'échantillon de la pièce d'origine permet d'identifier l'interface installée. Spécifiez si la lame est solide ou fendue, et incluez les détails de localisation et de fixation nécessaires pour reproduire le modèle de montage.",
+        },
+        {
+          question:
+            "Les lames de découpeuse-inciseur sont-elles les mêmes que les molettes ou les couteaux de découpeuse ?",
+          answer:
+            "Ces pièces effectuent différentes opérations. Les lames de découpeuse d'onduleuse coupent le carton dans le sens de la longueur, les molettes forment des lignes de pliage et les couteaux de découpeuse coupent les fentes des rabats pendant la conversion des boîtes. Les couteaux à rainurer mâles et femelles utilisent des profils et des dispositions de montage différents. Identifiez l’opération de découpe lors d’une demande de remplacement afin que la demande atteigne la configuration correcte du produit.",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay peut-il fournir l'ensemble des couteaux pour une nouvelle onduleuse et une installation FFG ?",
-          answer:
-            "Absolument. Nous sommes un partenaire complet en matière d'outillage pour les usines de boîtes. Outre les découpeuses en carbure de tungstène, nous fabriquons toute la gamme des outils de transformation : Couteaux de rainurage, couteaux de rainurage à poutre, couteaux de recouvrement de points, couteaux de rainurage/crémaillère et couteaux de coupe en Z.",
-        },
-        {
-          question:
-            "Maintenez-vous des dimensions pour les plieuses-colleuses Bobst / Martin Flexo ?",
-          answer:
-            "Oui, nous disposons d'une vaste base de données de plans OEM couvrant les sections de refente, de fente et de rainurage des principales machines de transformation, notamment Bobst, Martin, Isowa, Ward et TCY. Vos couteaux de remplacement seront parfaitement adaptés.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slotter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Sureay fournit des couteaux de rechange pour l’ensemble de coupe primaire de votre broyeur de pneus, avec crochets et alésages sur mesure. Nous proposons les couteaux à l’unité ou en jeux complets pour le broyage des pneus entiers et la production de combustible dérivé des pneus (TDF). Transmettez les caractéristiques de la machine et votre plan pour définir la configuration. Les marques citées indiquent la compatibilité des pièces de rechange Sureay.",
     id: "tire-shredder-blades",
-    name: "Lames de broyeur de pneus",
+    name: "Couteaux pour broyeurs de pneus",
     fullName:
-      "Lames de cisailles rotatives robustes à 3 griffes pour le recyclage des pneus",
+      "Couteaux de cisailles rotatives pour le broyage primaire des pneus",
+    seoTitle:
+      "Couteaux de cisailles rotatives pour le broyage primaire des pneus",
+    seoDescription:
+      "Source de coupe A8 ou 42CrMo modifiés pour le déchiquetage primaire des pneus. Faites correspondre le nombre de crochets, l’épaisseur de la fraise et l’alésage de l’arbre à votre cisaille rotative.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lames de broyeur de pneus",
+    categoryDisplay: "Couteaux pour broyeurs de pneus",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 880,
+      height: 880,
+      smallerWidths: [320, 640],
+    },
     badge: "Norme OEM",
     badgeColor: "red",
     gallery: [
@@ -3623,69 +4886,38 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
     description:
-      "Rotatif à 3 griffes de première qualité lames de cisaille conçu pour le déchiquetage primaire des pneus et la production de TDF (carburant dérivé des pneus). Fabriqué en acier à outils Cru-Wear (PGK) et Modified A8 de qualité OEM pour résister à l'impact extrême des tringles. Usiné avec précision selon des tolérances exactes de ±0,05 mm (0,002\") pour garantir que les pneus sont coupés proprement plutôt que déchirés.",
-    fullDescription:
-      "Le déchiquetage primaire des pneus est sans doute l'application la plus brutale de l'industrie de la réduction de taille. Les lames rotatives doivent à la fois trancher le caoutchouc élastique et percuter de manière répétée les tringles en acier à haute résistance. Dans cet environnement, les alliages standard utilisés pour le déchiquetage subissent des défaillances prématurées, soit par l'arrondissement rapide des bords, soit par une rupture fragile catastrophique.\n\n## Métallurgie de qualité supérieure pour les pneus\n\nNous fabriquons nos pneus lames de broyeur en utilisant les mêmes qualités de matériaux que celles éprouvées dans les équipements OEM de premier plan (tels que les broyeurs Barclay et CM) :\n\n**Cru-Wear (PGK):** Le matériau standard ultime pour l'usine. Il offre un volume exceptionnellement élevé de vanadium et de carbure de tungstène, offrant une résistance supérieure à l'usure tout en maintenant l'extrême ténacité nécessaire pour cisailler des bandes d'acier épaisses sans micro-éclats.\n\n**A8 modifié:** Offre un excellent équilibre entre performance et rentabilité, offrant une résistance massive aux chocs pour les opérations visant à minimiser les coûts initiaux d'outillage.\n\n## La règle de tolérance des deux millièmes (0,05 mm)\n\nLa différence entre un broyeur de pneus efficace et une machine constamment bloquée réside dans le jeu de coupe. Tous nos couteaux à pneus, quel que soit le matériau, sont affûtés selon des tolérances d'épaisseur précises - deux millièmes de pouce (0,05 mm) pour être exact.\n\nCette précision garantit que les pneus élastiques et les fils d'acier sont proprement **coupés** au lieu d'être **déchirés** et étirés. Une action de cisaillement appropriée réduit considérablement les forces de traction sur les arbres de rotor, diminue la consommation d'énergie électrique (ampérage) et empêche les fils d'acier exposés de s'enrouler autour du bloc rotor.\n\n## Géométrie des 3 griffes et dimensionnement du TDF\n\nLa géométrie standard à 3 griffes (crochet) offre un angle de morsure optimal pour saisir des pneus entiers de voitures particulières et de camionnettes, en les tirant agressivement dans la chambre de coupe. L'épaisseur de la lame (généralement 50 mm) détermine directement la taille des copeaux de carburant dérivé des pneus (TDF), ce qui garantit un produit final cohérent et de haute qualité, adapté aux fours à ciment ou à la libération des fils en aval.",
+      "Déchiqueteuses de pneus de rechange pour cisailles rotatives primaires. Options A8 et 42CrMo modifiées, avec profils de crochet personnalisés et alésages d'arbre selon dessin.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Granutech-Saturn Systems",
-      "UNTHA",
-      "WEIMA",
-      "Eldan Recycling",
-      "Lindner",
-      "Eco Green Equipment",
-      "American Pulverizer",
-      "Shred-Tech",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "Cru-Wear (PGK), Modified A8, 42CrMo",
+        label: "Matériau",
+        value: "Cru-Wear (PGK), A8 modifié, 42CrMo",
       },
       {
-        label: "Machining Tol.",
-        value: "Strictly ±0.05 mm (0.002 inches)",
+        label: "Usinage Tol.",
+        value: "Strictement ±0,05 mm (0,002 pouces)",
       },
       {
-        label: "Standard Geometry",
-        value: "3-Claw Rotary (Custom hook counts available)",
+        label: "Géométrie des griffes",
+        value: "1, 3 ou 5 griffes, selon la configuration proposée",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (Optimized for Wire Impact)",
+        label: "Dureté",
+        value: "HRC 54-58 (optimisé pour l'impact des fils)",
       },
       {
         label: "Application",
-        value: "Whole Tires, TDF Chips, OTR Tires",
+        value: "Pneus entiers, copeaux TDF, pneus OTR",
       },
       {
-        label: "OEM Fitment",
-        value: "Barclay, CM, SSI, Untha, Granutech-Saturn",
+        label: "Compatibilité OEM",
+        value: "Barclay , CM , SSI , Untha , Granutech-Saturn",
       },
     ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "MATÉRIAUX",
-        title: "Cru-Wear (PGK) et A8 modifié",
-        description:
-          "Utilisant des alliages de première qualité de type OEM. Le Cru-Wear offre une résistance et une durabilité ultimes pour les lignes à grand volume, tandis que le Modified A8 offre le meilleur équilibre entre le coût et la performance.",
-      },
-      {
-        id: "precise-cutting",
-        tag: "EFFICACITÉ",
-        title: "Couper, ne pas déchirer",
-        description:
-          "Rectifié avec une précision de ±0,05 mm. Cela garantit une véritable action de coupe en ciseaux, empêchant l'arrachement du fil, réduisant l'usure de la machine et diminuant considérablement la consommation d'énergie.",
-      },
-      {
-        id: "consistent-tdf",
-        tag: "QUALITÉ DE SORTIE",
-        title: "Des jetons TDF cohérents",
-        description:
-          "L'épaisseur exacte des lames (par exemple, 2 pouces standard) combinée au cisaillement sans dégagement produit des copeaux de carburant dérivé de pneus (TDF) uniformes et de haute qualité avec un minimum de fils exposés.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "multi-shaft-blades-metal",
     ],
     dimensionLabels: {
       col0: "Plate-forme OEM",
@@ -3698,156 +4930,486 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Barclay Standard",
+        itemNo: "SR002301",
+        spec: "Norme Barclay",
         od: 'Φ 450 mm (17.7")',
         thickness: '50.8 mm (2.0")',
-        bore: "Hex / Splined",
-        hooks: "3 Claws",
+        bore: "Hexagonal / Cannelé",
+        hooks: "3 griffes",
       },
       {
-        spec: "CM Primary",
+        itemNo: "SR002302",
+        spec: "CM Primaire",
         od: 'Φ 500 mm (19.6")',
         thickness: '50.8 mm (2.0")',
-        bore: "Heavy Splined",
-        hooks: "3 Claws",
+        bore: "À cannelures lourdes",
+        hooks: "3 griffes",
       },
       {
+        itemNo: "SR002303",
         spec: "SSI / Untha",
         od: "Φ 400–600 mm",
         thickness: "25–75 mm",
-        bore: "Hex / Octagon",
-        hooks: "1 / 3 / 5 Claws",
+        bore: "Hex / Octogone",
+        hooks: "1 / 3 / 5 Griffes",
       },
       {
-        spec: "OTR Shredder",
+        itemNo: "SR002304",
+        spec: "Broyeur OTR",
         od: "Φ 800+ mm",
         thickness: "100+ mm",
-        bore: "Heavy Keyed",
-        hooks: "1 / 3 Claws",
+        bore: "Clé lourde",
+        hooks: "1/3 Griffes",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 250,
       highPrice: 2500,
     },
+    components: [
+      {
+        id: "tire-shredder-blades-advantage-1",
+        tag: "Configurations en acier pour l'alimentation des pneus renforcés",
+        title:
+          "Configurations en acier pour l'alimentation des pneus renforcés",
+        description:
+          "Les options A8 et 42CrMo modifiées prennent en charge les commandes de remplacement de broyeurs de pneus, avec le matériau spécifié autour de la conception du couteau existant et des conditions d'usure ou d'impact en service.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-2",
+        tag: "Cutters à une, trois et cinq griffes",
+        title: "Cutters à une, trois et cinq griffes",
+        description:
+          "Les configurations de coupe-pneus répertoriées utilisent une, trois ou cinq griffes. Sureay fabrique le profil de griffe requis et l'alésage hexagonal, octogonal, cannelé ou claveté pour s'adapter à la position de remplacement sur votre broyeur principal.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-3",
+        tag: "Fraises simples et ensembles d'arbres",
+        title: "Fraises simples et ensembles d'arbres",
+        description:
+          "Des configurations de fraises individuelles et des ensembles couvrant plusieurs positions d'arbre peuvent être proposés ensemble, avec des fraises complètes et des plaquettes remplaçables identifiées séparément pour le changement prévu.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Pourquoi devrais-je passer de l'acier à outils D2 standard à l'acier Cru-Wear (PGK) ?",
+            "Quelle étape de recyclage utilise ces lames de broyeur pneus ?",
           answer:
-            "Les pneus contiennent des tringles à haute résistance à la traction qui agissent comme des charges d'impact extrêmes. Le D2 standard est très résistant à l'usure mais fragile ; le bord s'écaille lorsqu'il heurte la tringle. Le Cru-Wear (PGK) est conçu avec une structure de carbure différente, ce qui le rend nettement plus résistant et durable que le D2, absorbant l'impact sans se fracturer tout en conservant une excellente rétention des arêtes.",
+            "Ces lames de broyeur à pneus, également appelées couteaux de déchiquetage de pneus, sont des couteaux montés sur arbre pour les équipements de cisaille rotative primaires. Les râpes en aval et les granulateurs de caoutchouc utilisent leurs propres dispositifs de coupe. Spécifiez d'abord la machine et l'étape, puis identifiez si le remplacement requis est une fraise complète ou une plaquette montée sur un corps existant.",
         },
         {
           question:
-            "Quelle est l'incidence de la tolérance des lames sur la consommation d'énergie de mon broyeur ?",
+            "L'épaisseur de la fraise détermine-t-elle la taille finale des copeaux du pneu ?",
           answer:
-            "Si la tolérance d'épaisseur des lames rotatives varie de plus de 0,05 mm (0,002\"), un espace se forme entre les couteaux tournant en sens inverse. Au lieu de cisailler le pneu élastique, la machine tente de l'étirer et de le déchirer. Cette action de traction nécessite des quantités massives de couple, ce qui fait grimper l'ampérage du moteur et gaspille de l'énergie. Les tolérances de précision garantissent une coupe nette et sans frottement.",
+            "L’épaisseur de la fraise influence une dimension de la coupe primaire. La géométrie des crochets, la disposition des couteaux et toute étape de dimensionnement en aval affectent également la taille finale des copeaux du pneu. Conservez l’épaisseur de coupe existante et la taille cible des copeaux TDF comme exigences distinctes.",
         },
         {
           question:
-            "Quels sont les avantages de la conception à trois griffes pour le traitement des pneus entiers ?",
+            "Comment le renforcement en acier devrait-il affecter le choix de la fraise ?",
           answer:
-            "Une géométrie à trois griffes offre l'angle de morsure et l'espacement idéaux. S'il y a trop de griffes (8 ou 10 par exemple), le pneu rebondira sur le rotor car les espaces entre les crochets sont trop petits pour saisir le caoutchouc épais. 3 griffes offrent une ouverture massive qui s'accroche à la cavité du pneu et tire l'ensemble du pneu vers le bas, dans la chambre de coupe.",
+            "Les câbles en acier et les sections de tringles ajoutent des charges locales à la coupe du corps en caoutchouc. Comparez le matériau de coupe d'origine, le support de crochet et le modèle d'usure actuel lors de l'évaluation d'un remplacement. L'usure progressive et les crochets ébréchés nécessitent différents équilibres entre résistance à l'usure et ténacité, il faut donc conserver la description de l'alimentation spécifique aux pneus en cours de traitement.",
+        },
+        {
+          question:
+            "Qu'est-ce qui peut provoquer une usure rapide ou des crochets ébréchés sur les coupe-pneus ?",
+          answer:
+            "Le contact abrasif peut user progressivement les faces de coupe, tandis que les renforts ou les corps étrangers peuvent créer des charges concentrées au niveau des crochets. L’état de la pile est également important lorsque des dégâts apparaissent à des positions particulières. Enregistrez les faces affectées et comparez-les avec les fraises adjacentes avant de décider si le remplacement nécessite une correction de matériau, de profil ou d'assemblage différente.",
+        },
+        {
+          question:
+            "Le nombre de crochets ou la géométrie de l'alésage peuvent-ils être modifiés sur une lame de pneu personnalisée ?",
+          answer:
+            "Oui. Sureay peut faire un nombre d'hameçons révisé ou effectuer un dessin. Montrez comment le couteau révisé repose sur l'arbre et comment ses crochets s'alignent avec les couteaux opposés. Une référence de révision distingue ce changement d'un remplacement à l'identique.",
+        },
+        {
+          question:
+            "Un couteau usé peut-il être remplacé sans commander un jeu complet ?",
+          answer:
+            "Oui. Une seule fraise peut être fournie lorsque les pièces retenues et la géométrie d'accouplement sont connues. Vérifiez les couteaux adjacents, les largeurs des entretoises et l'orientation installée avant de définir ce remplacement. Pour un changement complet, indiquez chaque position séparément afin que les différences entre les fraises complètes, les plaquettes et les pièces spécifiques à l'arbre restent claires dans la commande.",
+        },
+        {
+          question:
+            "De quoi avez-vous besoin pour remplacer les couteaux de déchiqueteuse de pneus ?",
+          answer:
+            "Envoyez le modèle du broyeur principal, le dessin du coupeur ou le numéro de pièce, l'alimentation des pneus et les quantités. Spécifiez des couteaux complets ou des inserts remplaçables. Pour chaque position, indiquez le diamètre extérieur, l'épaisseur, la forme du crochet et l'alésage, ainsi que la disposition des entretoises si la commande couvre un jeu d'arbres.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de broyeur principal, l'alimentation des pneus, la taille cible des copeaux et les dimensions du couteau et de l'espaceur.",
+    compatibleMachines: ["Barclay", "CM", "SSI", "Untha", "Granutech-Saturn"],
+    detailLayout: {
+      sizeRange: "Ø400–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "Pouvez-vous fournir des entretoises et des doigts de nettoyage (plaques de raclage) assortis aux lames ?",
-          answer:
-            "Oui. Un rotor de broyage de pneus complet nécessite des lames, des entretoises et des doigts de nettoyage adaptés. Nous fabriquons l'ensemble selon les mêmes tolérances strictes afin de garantir un assemblage sans écart sur toute la longueur de l'arbre du rotor.",
+          label: "Matériau",
+          value: "Cru-Wear (PGK), A8 modifié, 42CrMo",
         },
         {
-          question: "Avez-vous les plans des broyeurs Barclay ou CM ?",
-          answer:
-            "Nous disposons d'une base de données complète de dessins de lames OEM pour les principales plates-formes de broyage de pneus. En nous fournissant le modèle de votre machine ou un dessin de confirmation de base, nous pouvons fabriquer des pièces de rechange exactes.",
+          label: "Application",
+          value: "Pneus entiers, copeaux TDF, pneus OTR",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Ø400–800+ mm",
+        },
+        {
+          label: "Matériau",
+          value: "Cru-Wear (PGK), A8 modifié, 42CrMo",
+        },
+        {
+          label: "Usinage Tol.",
+          value: "Strictement ±0,05 mm (0,002 pouces)",
+        },
+        {
+          label: "Géométrie des griffes",
+          value: "1, 3 ou 5 griffes, selon la configuration proposée",
+        },
+        {
+          label: "Dureté",
+          value: "HRC 54-58 (optimisé pour l'impact des fils)",
+        },
+        {
+          label: "Application",
+          value: "Pneus entiers, copeaux TDF, pneus OTR",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Incluez le modèle de broyeur principal, l'alimentation des pneus, la taille cible des copeaux et les dimensions du couteau et de l'espaceur.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de découpe de non-tissés de remplacement avec des profils personnalisés, des dimensions de montage et des options de revêtement pour votre ligne de transformation. Partagez votre dessin ou échantillon et votre application Web avec Sureay pour obtenir un devis couvrant la configuration de la lame et la documentation dont vous avez besoin.",
     id: "nonwoven-slitter-knives",
-    name: "Couteaux de refendage pour non-tissés",
-    fullName:
-      "Couteaux circulaires de refendage M2 HSS pour les tissus non tissés Spunbond, Meltblown et SMS",
+    name: "Couteaux de refente pour non-tissés",
+    fullName: "Couteaux de refente pour non-tissés spunbond, meltblown et SMS",
+    seoTitle: "Couteaux de découpe pour non-tissés | PP Spunbond & SMS",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Couteaux à fendre",
+    categoryDisplay: "Couteaux de refente",
     image:
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Qualité médicale",
     badgeColor: "teal",
     gallery: [
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-02.webp",
     ],
+    galleryAlts: [
+      "Lames de découpe circulaires non tissées et anneaux d'enclume noirs",
+      "Gros plan d'un biseau de lame de découpe circulaire",
+      "Lames de découpe circulaires et anneaux brisés vus de dessus",
+    ],
+    detailLayout: {
+      heroTitle:
+        "Couteaux de refente pour non-tissés spunbond, meltblown et SMS",
+      sizeRange: "OD 60–300 mm",
+      heroSpecs: [
+        {
+          label: "Matériau",
+          value: "M2 HSS , D2 , carbure de tungstène , 52100",
+        },
+        {
+          label: "Convient",
+          value:
+            "Supports de coupe par cisaillement Pneumatic (type 80/90/100/110) et rebobineuses jusqu'à",
+          emphasis: "800 m/min",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "OD 60–300 mm",
+        },
+        {
+          label: "Matériaux",
+          value: "M2 HSS , D2 , carbure de tungstène , 52100",
+        },
+        {
+          label: "Dureté",
+          value: "M2 : 62-64 HRC ; D2 : 60-62 HRC ; carbure : 89–92 HRA",
+        },
+        {
+          label: "Tolérance",
+          value: "Épaisseur ±0,002 mm",
+        },
+        {
+          label: "Interface",
+          value: "Alésage H7 , verrouillage par vis de réglage",
+        },
+        {
+          label: "Géométrie",
+          value: "Biseau 25°–45°",
+        },
+        {
+          label: "Revêtements en option",
+          value: "Revêtement conducteur PTFE, TiN, DLC ou ESD",
+        },
+        {
+          label: "Angle de coupe",
+          value: "Inclinaison positive de 15° à 20°",
+        },
+        {
+          label: "Finition de surface",
+          value: "Ra ≤0.4 µm",
+        },
+        {
+          label: "Application",
+          value:
+            "Spunbond PP, Meltblown, SMS/SMMS, Hydroenchevêtré, Géotextile",
+        },
+      ],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Lames de découpe supérieures",
+          title:
+            "Lames de découpe supérieures (coupe au cisaillement – ​​bombée et plate)",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Profil",
+            "Options matérielles",
+            "Ajustement du support",
+          ],
+          rows: [
+            [
+              "SR001101",
+              "76.2 × 17.0 × 1.00 mm",
+              "Bombé",
+              "M2 HSS / D2",
+              "Tapez 80",
+            ],
+            [
+              "SR001102",
+              "90.0 × 22.0 × 1.20 mm",
+              "Bombé",
+              "M2 HSS / Carbure",
+              "Tapez 90",
+            ],
+            [
+              "SR001103",
+              "100.0 × 40.0 × 1.20 mm",
+              "Bombé",
+              "M2 HSS / ASP-23",
+              "Dienes / Cotta 100",
+            ],
+            [
+              "SR001104",
+              "105.0 × 40.0 × 1.50 mm",
+              "Bombé",
+              "M2 HSS / D2",
+              "Tapez 105/110",
+            ],
+            [
+              "SR001105",
+              "130.0 × 60.0 × 1.50 mm",
+              "Bombé",
+              "M2 HSS / D2",
+              "Dienes PSG",
+            ],
+            [
+              "SR001106",
+              "150.0 × 70.0 × 2.00 mm",
+              "Plat / Plat",
+              "D2 / M2 HSS",
+              "A.Celli",
+            ],
+            ["SR001107", "200.0 × 80.0 × 3.00 mm", "Plat", "D2 / Cr12MoV", "—"],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Anneaux inférieurs et écraseurs",
+          title: "Anneaux de découpe inférieurs et coupe-écrasements",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de Couteau",
+            "Options matérielles",
+            "Spécification clé",
+          ],
+          rows: [
+            [
+              "SR001108",
+              "80.0 × 50.0 × 15.0 mm",
+              "Anneau d'enclume inférieur",
+              "D2 / 52100",
+              "Alésage H7 , vis de réglage",
+            ],
+            [
+              "SR001109",
+              "100.0 × 60.0 × 20.0 mm",
+              "Anneau à double tranchant",
+              "D2 / M2 HSS",
+              "Arbres pneumatiques/solides",
+            ],
+            [
+              "SR001110",
+              "126.0 × 76.2 × 50.0 mm",
+              "Manchon multi-rainures",
+              "D2 / Cr12MoV",
+              "Largeur de rainure ±0,01 mm",
+            ],
+            [
+              "SR001111",
+              "76.2 × 19.05 × 4.76 mm",
+              "Coupeur de score/écrasement",
+              "52100 / M2 HSS",
+              "R0.05 – R0.1 mm Rayon de pointe",
+            ],
+            [
+              "SR001112",
+              "100.0 × 25.4 × 6.00 mm",
+              "Coupe-écrasement robuste",
+              "52100 / D2",
+              "Pour feutre épais et molleton",
+            ],
+          ],
+        },
+        {
+          id: "additional-nonwoven-knives",
+          tabLabel: "Tailles supplémentaires de couteaux non tissés",
+          title: "Tailles supplémentaires de couteaux non tissés",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de Couteau",
+          ],
+          rows: [
+            [
+              "SR001834",
+              "75 × 32 × 1.0 mm",
+              "Couteau à découper les non-tissés",
+            ],
+            [
+              "SR001835",
+              "100 × 40 × 1.0 mm",
+              "Couteau à découper les non-tissés",
+            ],
+            [
+              "SR001836",
+              "100 × 50 × 1.5 mm",
+              "Couteau à découper les non-tissés",
+            ],
+            [
+              "SR001837",
+              "120 × 50 × 1.0 mm",
+              "Couteau à découper les non-tissés",
+            ],
+            [
+              "SR001838",
+              "120 × 60 × 1.5 mm",
+              "Couteau à découper les non-tissés",
+            ],
+            [
+              "SR001839",
+              "150 × 75 × 2.0 mm",
+              "Couteau à découper les non-tissés",
+            ],
+          ],
+        },
+      ],
+    },
     description:
-      "Couteaux circulaires M2 HSS et D2 pour les tissus non tissés PP, meltblown, SMS et SMMS. La géométrie spéciale de l'angle de coupe empêche l'effilochage des fibres et la formation de mèches sur les matériaux à structure lâche. Utilisés dans les lignes de découpe pour l'hygiène, le médical, la filtration et les géotextiles.",
+      "Couteaux de rechange pour non-tissés spunbond, meltblown et SMS. Options M2 HSS , D2 ou carbure, avec profils personnalisés et revêtements spécifiques à l'application.",
     fullDescription:
       "La découpe de tissus non tissés présente un défi fondamentalement différent de celui de la transformation de films ou de papier : le matériau n'a pas de sens du grain, une faible résistance à la traction dans le sens transversal de la machine et une structure fibreuse lâche qui peut s'effilocher, se déformer ou s'enrouler sur le bord de la découpe si la géométrie du couteau n'est pas adaptée à la construction du tissu et à la tension de la ligne.\n\nLes couteaux de découpe Sureay pour les non-tissés sont fabriqués en acier rapide M2 avec une géométrie d'angle de râteau spécialisée, développée spécifiquement pour les matériaux à structure lâche de type spunbond, meltblown et hydroentangled. L'angle de coupe positif optimisé cisaille les faisceaux de fibres proprement plutôt que de les pousser sur le côté, éliminant les bords effilochés et les fibres lâches qui causent des rejets de qualité en aval dans les lignes de transformation des couches pour bébés, de l'hygiène féminine et des draps chirurgicaux.\n\n## Types de tissus non tissés\n\n**PP filé-lié (structures S, SS, SSS):** Le substrat non tissé le plus courant. Disponible en 8-120 GSM. Standard M2 HSS à Ra ≤ 0,4μm finition de surface, râteau positif 15°-20°. Utilisé pour la transformation de produits absorbants hygiéniques, la découpe de rouleaux de géotextile et le film de paillage agricole.\n\n**Les couches de fibres ultrafines (1-5μm de diamètre) sont utilisées comme noyau de filtration dans les respirateurs N95/FFP2 et les masques chirurgicaux. Extrêmement fragile et sensible à la charge de traction latérale. Nécessite une vitesse de fente réduite (60-100 m/min), un corps de couteau de faible masse pour minimiser les vibrations, et des revêtements à décharge électrostatique (ESD) pour empêcher l'attraction des fibres sur la face de la lame.\n\n*tissus médicaux *SMS / SMMS:** composite filé-soufflé-filé utilisé pour les blouses chirurgicales, les draps et les enveloppes de stérilisation. Le SMS de qualité médicale nécessite un équipement validé - nous fournissons des certificats de matériaux et des rapports dimensionnels traçables à votre numéro de lot pour la conformité réglementaire.\n\n**Non-tissés hydro-étranglés / Wetlaid:** Tissu de poids de base plus élevé (50-200 GSM) avec une structure plus cohérente. Les caractéristiques de coupe sont plus proches de celles de la mousse ou du papier - les couteaux standard en acier D2 ou 52100 donnent de bons résultats sur ces substrats.\n\n## Option de revêtement ESD\n\nPour la découpe des médias filtrants meltblown et électrospun, un traitement de surface conducteur ESD (décharge électrostatique) est disponible pour empêcher l'accumulation de charges statiques sur la face de la lame. L'accumulation d'électricité statique fait que les fibres légères (en particulier le PP soufflé à <15 GSM) s'accrochent à la lame et se transfèrent sous forme de contamination sur le bord du rouleau refendu.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
-    compatibleMachines: [
-      "Parkinson Spencer Rees",
-      "Atlas Converting",
-      "Euromac",
-      "ACCO Brands",
-      "Erhardt+Leimer",
-    ],
+    compatibleMachines: ["Tidland", "Pneumatic", "Dienes", "Mario Cotta"],
     specs: [
       {
-        label: "Material",
-        value:
-          "M2 HSS (standard) / D2 (heavy nonwoven) / 52100 (hydroentangled)",
+        label: "Dimensions",
+        value: "OD 60–300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 62–64 (M2) | HRC 60–62 (D2)",
+        label: "Matériaux",
+        value: "M2 HSS , D2 , carbure de tungstène , 52100",
       },
       {
-        label: "Rake Angle",
-        value: "15°–20° positive rake (nonwoven-optimised geometry)",
+        label: "Dureté",
+        value: "M2 : 62-64 HRC ; D2 : 60-62 HRC ; carbure : 89–92 HRA",
       },
       {
-        label: "Surface Finish",
-        value: "Ra ≤ 0.4μm — reduces fibre adhesion and slub formation",
+        label: "Tolérance",
+        value: "Épaisseur ±0,002 mm",
       },
       {
-        label: "Options",
-        value: "ESD conductive coating (meltblown / filtration media)",
+        label: "Interface",
+        value: "Alésage H7 , verrouillage par vis de réglage",
+      },
+      {
+        label: "Géométrie",
+        value: "Biseau 25°–45°",
+      },
+      {
+        label: "Revêtements en option",
+        value: "Revêtement conducteur PTFE, TiN, DLC ou ESD",
+      },
+      {
+        label: "Angle de coupe",
+        value: "Inclinaison positive de 15° à 20°",
+      },
+      {
+        label: "Finition de surface",
+        value: "Ra ≤0.4 µm",
       },
       {
         label: "Application",
-        value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile",
+        value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroenchevêtré, Géotextile",
       },
     ],
     components: [
       {
         id: "rake-geometry",
         tag: "CONCEPTION DE L'ARÊTE",
-        title: "Angle d'inclinaison optimisé pour le non-tissé",
+        title: "Options de matériaux pour la découpe de non-tissés",
         description:
-          "Les géométries standard des couteaux de découpe conçus pour le papier et les films plastiques utilisent un angle de coupe positif ou neutre de 5° à 10°. Pour les non-tissés à structure libre, cette géométrie pousse les fibres latéralement avant de les cisailler, ce qui provoque un bord effiloché qui est considéré comme un défaut de qualité lors de l'inspection des produits d'hygiène. Notre angle de coupe positif de 15°-20° cisaille les faisceaux de fibres en une seule action progressive, produisant un bord de fente propre et serré à des vitesses de ligne allant jusqu'à 400 m/min.",
+          "Les options M2 HSS , D2 , acier à roulement et carbure prennent en charge les commandes de remplacement pour différentes bandes non tissées. Spécifiez le matériau autour de votre disposition de couteaux existante et l’usure des bords observée.",
       },
       {
         id: "esd-coating",
         tag: "TRAITEMENT DE SURFACE",
-        title: "Revêtement conducteur ESD",
+        title: "Profils de bord définis et traitements de surface en option",
         description:
-          "Une charge électrostatique est générée lorsque le non-tissé léger en PP passe à grande vitesse sur des surfaces métalliques. Sur les couches soufflées par fusion (<15 GSM), cette charge fait que les fibres s'accrochent à la face de la lame et se transfèrent sous forme de contamination sur le bord du rouleau refendu. Notre revêtement conducteur ESD dissipe la charge de la face de la lame en continu, éliminant l'attraction des fibres sans nécessiter de réduction de la vitesse du processus.",
+          "Les profils de lame et les revêtements conducteurs PTFE, TiN, DLC ou ESD en option peuvent être spécifiés séparément, permettant à votre commande de distinguer la géométrie de coupe requise du traitement de surface sélectionné.",
       },
       {
         id: "medical-traceability",
         tag: "CONFORMITÉ",
-        title: "Traçabilité des lots médicaux",
+        title: "Interfaces personnalisées pour les porte-couteaux existants",
         description:
-          "Pour les lignes de transformation qui fournissent les fabricants de draps chirurgicaux, de blouses et d'enveloppes de stérilisation, nous fournissons une traçabilité complète des lots : Certificats d'aciérie M2, rapports d'essais de dureté et rapports dimensionnels CMM référencés au numéro de lot de votre bon de commande. La documentation est formatée pour être incluse dans votre dossier de qualification du fournisseur.",
+          "Les alésages personnalisés, les dimensions de montage et les profils de coupe vous permettent de vous procurer des couteaux de remplacement pour vos supports existants à partir d'un dessin ou d'un échantillon, y compris l'ajustement d'arbre et le dispositif de verrouillage requis.",
       },
     ],
     dimensionLabels: {
@@ -3892,6 +5454,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "rotary-slitter-knives",
       "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
     ],
     offers: {
       lowPrice: 20,
@@ -3901,630 +5464,673 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Quel angle de coupe dois-je spécifier pour le polypropylène filé-lié à 200 m/min ?",
+            "Quel couteau de remplacement convient à mon support de refendage de non-tissés ?",
           answer:
-            "Pour le PP filé-lié à 200 m/min dans les poids de base 15-80 GSM, spécifier une inclinaison positive de 15° sur le biseau de coupe. Cette géométrie permet de cisailler proprement les fibres de polypropylène au point de contact, sans déplacement latéral à l'origine de l'effilochage. Pour les grammages plus importants (80-150 GSM SSS ou SMMS), une inclinaison positive de 20° avec une largeur de biseau légèrement plus grande offre une meilleure stabilité à une vitesse de ligne réduite (150 m/min).",
+            "Identifiez si la station utilise une coupe par cisaillement ou par écrasement, puis spécifiez les dimensions du support, du composant d'accouplement et du couteau. Incluez la construction de la toile et le grammage. Les couteaux de cisaillement fonctionnent avec un tranchant correspondant ; les couteaux à écraser se pressent contre une surface d'appui. Pour la coupe transversale de rouleaux déjà enroulés, voir [Nontissé lames de scie pour rouleaux](/products/nonwoven-log-saw-blades) .",
         },
         {
           question:
-            "Ma découpe par fusion-soufflage produit un transfert de fibres visible sur la face de la lame. Quelle en est la cause ?",
+            "Comment choisir le matériau des couteaux lorsque les bords non tissés s’effilochent ou s’usent ?",
           answer:
-            "Le transfert de fibres sur les tissus fondus (en particulier les couches <10 GSM) est causé par l'accumulation de charges électrostatiques sur la face de la lame, et non par la géométrie du bord. Les fibres PP soufflées par fusion d'un diamètre de 1-5μm sont extrêmement sensibles à l'attraction statique. Spécifiez l'option de revêtement conducteur ESD sur votre prochaine commande et veillez à ce que le châssis de la découpeuse soit correctement mis à la terre. Cela permet généralement d'éliminer la contamination visible de la surface des lames en une seule équipe de production.",
+            "Comparez l'état du bord utilisé avec la construction de l'âme et la stabilité de la paire de coupe. L’usure progressive et l’écaillage nécessitent des considérations matérielles différentes. Enregistrez le matériau actuel du couteau et les conditions de production lorsque vous discutez d'un remplacement, afin qu'un changement de matériau puisse être évalué parallèlement à la géométrie et à la disposition de support existantes.",
         },
-      ],
-      company: [
         {
           question:
-            "Sureay peut-il fournir des couteaux de découpeurs de non-tissés avec un certificat de conformité pour notre audit de fournisseur de dispositifs médicaux ?",
+            "Qu'est-ce qui peut provoquer l'effilochage ou le relâchement des fibres lors de la refente du non-tissé ?",
           answer:
-            "Oui. Nous émettons un certificat de conformité (CoC) avec chaque lot qui mentionne le numéro du bon de commande, la nuance d'acier (M2 AISI M2 / DIN 1.3343), la plage de dureté (HRC 62-64) et les résultats de la vérification dimensionnelle. Pour une qualification complète des fournisseurs de dispositifs médicaux, nous pouvons également fournir le certificat de l'aciérie et le dossier de lot traitement thermique sur demande.",
+            "L'usure des bords, une géométrie inappropriée, un support et des réglages de coupe instables peuvent tous contribuer à la perte de fibres. Inspectez le bord coupé et les deux composants fonctionnels dans des conditions de production normales. La construction de la bande est importante, tout comme la vitesse et le grammage, alors comparez ces détails avant de modifier le profil de la lame ou de considérer un angle de coupe comme adapté à chaque non-tissé.",
+        },
+        {
+          question:
+            "L’accumulation de fibres nécessite-t-elle toujours un revêtement antistatique ?",
+          answer:
+            "Non. Les résidus, l’état de la lame, la manipulation de la bande et la configuration de coupe doivent être vérifiés avant d’attribuer l’accumulation de fibres à l’électricité statique. Un revêtement conducteur résout un problème différent d’un bord endommagé ou d’un support de coupe instable. Décrivez l'accumulation et la configuration actuelle du couteau lorsque vous discutez d'un traitement de surface, afin que le choix du revêtement réponde à l'état observé.",
+        },
+        {
+          question:
+            "Comment spécifier les profils et revêtements de couteaux non tissés personnalisés ?",
+          answer:
+            "Envoyez un dessin ou un échantillon définissant l'alésage, les dimensions de montage et le profil de coupe. Spécifiez séparément le matériau et le revêtement de la lame, ainsi que la construction non tissée et la station de coupe prévue. En gardant la géométrie et le traitement de surface distincts, il est plus facile de comparer un remplacement avec le couteau existant et d'identifier exactement les changements dans la commande.",
+        },
+        {
+          question:
+            "Quelles exigences en matière de matériaux et de dimensions sont importantes pour les couteaux hygiéniques ?",
+          answer:
+            "Définir l'identification des matériaux, la dureté et les contrôles dimensionnels requis dans les spécifications d'achat. Incluez les dimensions pertinentes pour le support et le composant d'accouplement, et acceptez toutes les exigences en matière de documentation avant de commander. Les références de lots et de bons de commande peuvent ensuite relier la configuration du couteau aux informations d'inspection demandées et prendre en charge votre propre processus de qualification des fournisseurs.",
+        },
+        {
+          question:
+            "Quand les couteaux de découpe de non-tissés doivent-ils être affûtés ou remplacés ?",
+          answer:
+            "Un effilochage persistant ou de la poussière le long d'un bord usé est une raison pour évaluer l'affûtage, après avoir vérifié la configuration de coupe. Le réaffûtage n'est approprié que lorsque le profil et les dimensions de travail requis peuvent être restaurés. Sur les stations de cisaillement, conserver le chevauchement spécifié avec le couteau inférieur ; évaluer les profils d'écrasement par rapport à leur propre dessin. Remplacez les couteaux lorsque des dommages ou des dimensions restantes empêchent une configuration de coupe utilisable.",
         },
       ],
+      company: [],
     },
   },
   {
     id: "bottom-grooved-anvil-knives",
-    name: "Couteaux à enclume à rainure inférieure",
+    name: "Contre-couteaux inférieurs rainurés",
     fullName:
-      "Couteaux à enclume à rainure inférieure pour la refente par cisaillement - Transformation de films, de papiers et de feuilles métalliques",
+      "Contre-couteaux inférieurs rainurés pour refente par cisaillement",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Couteaux à fendre",
-    image:
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "Paires assorties OEM",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
-    ],
+    categoryDisplay: "Contre-couteaux inférieurs rainurés",
+    image: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Couteaux à enclume inférieure rainurée et rectifiée avec précision pour la coupe en cisaillement de films, papiers, feuilles et rubans. Adaptés aux systèmes de porte-couteaux supérieurs Tidland, Kampf, Atlas, Goebel et BHS. Profils à rainures multiples en D2, M2 HSS et carbure monobloc. Fournies en tant que paires de cisailles vérifiées ou en tant que remplacements autonomes de l'enclume inférieure.",
-    fullDescription:
-      "Dans la découpe par cisaillement, la lame inférieure rainurée de l'enclume est la moitié inférieure fixe de la paire de ciseaux - et pourtant, elle est souvent sous-spécifiée. Lorsque la géométrie de la rainure de l'enclume n'est pas adaptée à l'angle de la lame supérieure, ou lorsque la tolérance de l'alésage de l'enclume s'écarte de la conception de l'arbre, il en résulte un jeu de cisaillement incontrôlé, des bavures sur les bords et une usure prématurée des deux couteaux en même temps.\n\nLes couteaux à enclume inférieure rainurée Sureay sont fabriqués avec la même tolérance d'épaisseur de ±0,002 mm et la même spécification de faux-rond de ≤0,02 mm que nos couteaux de refendeurs supérieurs. Chaque enclume est rectifiée selon le profil de rainure de votre plate-forme OEM - qu'il s'agisse d'une enclume Tidland à simple rainure, d'une enclume Kampf à double rainure ou d'une enclume Goebel / BHS à corps large - et vérifiée par rapport à la lame supérieure correspondante avant l'expédition.\n\n## Pourquoi les couteaux à enclume inférieure nécessitent une attention particulière\n\n**Le profil de la rainure détermine le jeu:** La largeur et la profondeur de la rainure dans le couteau de l'enclume contrôlent directement le jeu de cisaillement entre la paire de couteaux supérieure et inférieure. Une rainure usée ou mal profilée augmente le jeu effectif, produisant un bord de fente irrégulier même lorsque la lame supérieure est neuve. Nous profilons chaque rainure d'enclume selon les spécifications de l'OEM (largeur de la rainure ±0,01 mm) afin de rétablir le jeu prévu en usine.\n\n**Taux d'usure différent, cycle de remplacement différent:** Les couteaux de l'enclume inférieure sont soumis à une charge de compression plutôt qu'à la charge de cisaillement qui domine sur la lame supérieure. Cela signifie que l'enclume dure généralement 3 à 5 fois plus longtemps que la lame supérieure, mais lorsqu'elle s'use, la face de la rainure s'arrondit progressivement, entraînant une détérioration progressive de la qualité de coupe qu'il est facile de ne pas remarquer jusqu'à ce que les taux de rejet augmentent. Le fait de commander des enclumes de remplacement indépendamment des lames supérieures permet d'éviter la mise au rebut inutile de ces dernières.\n\n**La planéité de l'alésage et de la face est essentielle:** Le couteau de l'enclume repose sur l'arbre inférieur et doit fonctionner correctement. Un écart d'alésage de 0,02 mm induit une oscillation de la lame qui se traduit directement par une variation de la largeur de la fente sur une pile de plusieurs couteaux. Tous les alésages de l'enclume Sureay sont rectifiés en finition selon la tolérance H6, et les faces sont recouvertes d'un parallélisme de ≤0,003 mm.\n\n## Domaines d'application\n\n**Refendage de films souples et d'emballages:** BOPP, BOPET, CPP, film étirable PE, manchons rétractables. Enclume standard D2 ou M2 HSS avec profil à simple ou double rainure. L'option TiN PVD sur la face de la rainure prolonge la durée de vie de l'usure de contact sur les lignes de film à grande vitesse fonctionnant à 400-600 m/min.\n\n**Transformation du papier et du carton:** Papier tissu, kraft, papier couché. Pour la coupe par écrasement (couteau contre rouleau d'enclume), l'enclume est fabriquée avec une géométrie à rainures multiples qui comprime et fracture les fibres du papier sans les déchirer. Acier D2 ou 52100, HRC 58-62.\n\n**Refendage de feuilles métalliques:** Feuilles cathodiques en aluminium, feuilles anodiques en cuivre, bandes d'acier au silicium. Le couteau à enclume pour les feuilles métalliques doit résister à l'usure par adhérence du substrat métallique. ASP23 PM acier ou carbure massif adapté à l'alliage du couteau supérieur ; tolérance de la forme de la rainure maintenue à ±0,005 mm.\n\n**Ruban adhésif et étiquettes:** Ruban de masquage, mousse à double couche, adhésif de transfert. La contamination de l'adhésif sur la face de la rainure est le principal mode de défaillance. Les faces des rainures revêtues de téflon ou de DLC réduisent les intervalles d'accumulation d'adhésif de 60 à 80 %.",
+      "Couteaux à enclume rainurés de remplacement et anneaux coupants pour les coupe-bandes. Options en acier ou en carbure, avec profils de rainures, alésages et dispositifs de verrouillage personnalisés.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
+    compatibleMachinesIntro:
+      "Obtenez des couteaux à enclume rainurées inférieures de remplacement adaptés à votre ligne de refendage, avec des profils de rainure, des alésages et des options de verrouillage personnalisés. Envoyez-nous votre dessin ou échantillon, et Sureay vous aidera à sélectionner le bon remplacement et à préparer un devis.",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "Anneaux rainurés OD 46–250 mm",
+      },
+      {
+        label: "Matériau",
+        value:
+          "52100, D2 , M2 HSS , PM HSS (y compris ASP23 ), construction en carbure monobloc ou à pointes en carbure",
+      },
+      {
+        label: "Applications",
+        value: "Refendage de films, papiers, feuilles et non-tissés",
+      },
+      {
+        label: "Manches de rasoir",
+        value: "Rainure soulagée pour dégager le bord du rasoir",
+      },
+      {
+        label: "Tolérance sur la largeur de rainure",
+        value: "±0.01 mm",
+      },
+      {
+        label: "Planéité du visage",
+        value: "≤0.003 mm",
+      },
+      {
+        label: "Tolérance d'alésage",
+        value: "Alésage rectifié H6",
+      },
+      {
+        label: "Revêtements en option",
+        value: "TiN sur la face de la rainure, DLC ou PTFE (Téflon)",
+      },
+      {
+        label: "Faux-rond",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Fixation",
+        value:
+          "Alésage lisse (NN), verrouillage excentrique (NG), verrouillage à vis de réglage (NS) ou montage à bague fendue/pince",
+      },
+      {
+        label: "Jeu de cisaillement",
+        value: "0,02–0,15 mm, selon le substrat et la paire de couteaux",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Couteaux à enclume à rainure inférieure | Anneaux de remplacement",
+      sizeRange: "Anneaux rainurés OD 46–250 mm",
+      heroAlt:
+        "Couteaux à enclume à fond rainuré et bagues coupantes amovibles",
+      specificationImage: {
+        src: "/images/products/slitter-detail/bottom-grooved-anvil-knives-detail.webp",
+        alt: "Deux anneaux inférieurs montrant la face de roulement en retrait et l'épaulement coupant",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "ring",
+          tabLabel: "Anneaux rainurés",
+          title: "Anneaux rainurés",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Profil ou référence",
+          ],
+          rows: [
+            ["SR001451", "46 × 25 × 5 mm", "Séries dimensionnelles DIENES"],
+            ["SR001452", "80 × 60 × 10 mm", "Anneau inférieur rainuré"],
+            ["SR001453", "105 × 90 × 15 mm", "Anneau inférieur rainuré"],
+            ["SR001454", "105 × 90 × 8 mm", "Référence dimensionnelle Kampf"],
+            ["SR001455", "105 × 90 × 17 mm", "Référence dimensionnelle Kampf"],
+          ],
+        },
+        {
+          id: "groove-profile-configurations",
+          tabLabel: "Configurations de profil de rainure",
+          title: "Configurations de profil de rainure",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Référence de la plateforme",
+            "Profil de rainure",
+          ],
+          rows: [
+            [
+              "SR001840",
+              "70 × 25.4 × 8 / 10 mm",
+              "Tidland — Rainure unique",
+              "W: 1.2 × D: 2.0 / 60°",
+            ],
+            [
+              "SR001841",
+              "100 × 60 × 20 / 25 mm",
+              "Atlas — contre-couteau à 3 gorges",
+              "W: 1.5 × D: 2.5 / 60°",
+            ],
+            [
+              "SR001842",
+              "80 × 30 × 10 mm",
+              "Mario Cotta — Single Groove",
+              "W: 1.3 × D: 2.2 / 45°",
+            ],
+            [
+              "SR001843",
+              "130 × 80 × 12 mm",
+              "Dienes — Rainure unique",
+              "W: 1.5 × D: 3.0 / 60°",
+            ],
+            [
+              "SR001844",
+              "Par dessin",
+              "Enclume personnalisée / Rechargée",
+              "Spécifications OEM ; Rainure usinée CNC exacte.",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Anneaux rainurés OD 46–250 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "52100, D2 , M2 HSS , PM HSS (y compris ASP23 ), construction en carbure monobloc ou à pointes en carbure",
+        },
+        {
+          label: "Applications",
+          value: "Refendage de films, papiers, feuilles et non-tissés",
+        },
+        {
+          label: "Manches de rasoir",
+          value: "Rainure soulagée pour dégager le bord du rasoir",
+        },
+        {
+          label: "Tolérance sur la largeur de rainure",
+          value: "±0.01 mm",
+        },
+        {
+          label: "Planéité du visage",
+          value: "≤0.003 mm",
+        },
+        {
+          label: "Tolérance d'alésage",
+          value: "Alésage rectifié H6",
+        },
+        {
+          label: "Revêtements en option",
+          value: "TiN sur la face de la rainure, DLC ou PTFE (Téflon)",
+        },
+        {
+          label: "Faux-rond",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Fixation",
+          value:
+            "Alésage lisse (NN), verrouillage excentrique (NG), verrouillage à vis de réglage (NS) ou montage à bague fendue/pince",
+        },
+        {
+          label: "Jeu de cisaillement",
+          value: "0,02–0,15 mm, selon le substrat et la paire de couteaux",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
+      "Mario Cotta",
       "Tidland",
       "Kampf",
-      "Atlas Converting",
       "Goebel",
-      "BHS",
-      "Agnati",
-      "Dusenbery",
-      "Euromac",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Groove Tolerance",
-        value: "Groove width ±0.01 mm | Face flatness ≤0.003 mm",
-      },
-      {
-        label: "Bore Tolerance",
-        value: "H6 finish-ground | T.I.R. ≤0.02 mm",
-      },
-      {
-        label: "Shear Clearance",
-        value: "Pre-verified to substrate spec (0.02–0.15 mm)",
-      },
-      {
-        label: "Coatings",
-        value: "TiN groove face, DLC, Teflon anti-adhesion (optional)",
-      },
-      {
-        label: "Applications",
-        value: "Film, Paper, Metal Foil, PSA Tape, Nonwovens",
-      },
+      "Atlas",
+      "Nishimura",
     ],
     components: [
       {
-        id: "groove-geometry-control",
-        tag: "MEULAGE DE PRÉCISION",
-        title: "Géométrie de la rainure du profil OEM",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Configurations d'enclume en acier et en carbure",
         description:
-          "La largeur et la profondeur de la rainure de chaque couteau d'enclume sont rectifiées en fonction des spécifications de la plate-forme OEM - Tidland à simple rainure, Kampf à double rainure ou Goebel à corps large - et maintenues à ±0,01 mm. La géométrie correcte de la rainure rétablit le jeu de cisaillement conçu en usine et élimine la détérioration progressive du bord de fente causée par un profil d'enclume usé.",
+          "Les couteaux à enclume rainurée sont disponibles en acier à outils, HSS , PM HSS , en carbure monobloc et en carbure pour les commandes de remplacement et spécifiques à une application.",
       },
       {
-        id: "bore-face-flatness",
-        tag: "PRÉCISION DIMENSIONNELLE",
-        title: "H6 Alésage et planéité de la face rodée",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Rainures rectifiées, alésages et faces de positionnement",
         description:
-          "Tous les alésages de l'enclume sont rectifiés en finition selon la tolérance H6 et limés à un parallélisme de ≤0,003 mm. Un écart d'alésage de 0,02 mm sur l'arbre inférieur induit une oscillation de la lame qui se traduit directement par une variation de la largeur de la fente dans une pile de plusieurs couteaux. Nos tolérances d'alésage et de face sont vérifiées sur une MMT pour chaque lot.",
+          "Les bagues de remplacement rectifiées sont fabriquées avec l'alésage, le profil de rainure et les faces de positionnement spécifiés pour votre arbre et votre couteau supérieur existants.",
       },
       {
-        id: "anti-adhesion-groove-coating",
-        tag: "TRAITEMENT DE SURFACE",
-        title: "Revêtements anti-adhésion pour rainures",
+        id: "selection-3",
+        tag: "Application",
+        title:
+          "Profils de rainure personnalisés et conceptions de verrouillage",
         description:
-          "Pour la découpe de rubans sensibles à la pression et de laminés adhésifs, les revêtements PVD en Téflon et DLC sur la face de contact de la rainure réduisent les intervalles d'accumulation d'adhésif de 60 à 80 %. Les enclumes revêtues fonctionnent proprement pendant des quarts de production de 8 à 12 heures sans contamination de la rainure qui dégrade le jeu de cisaillement et oblige à des arrêts non planifiés.",
+          "Des modèles de montage à alésage lisse, à verrouillage excentrique, à verrouillage à vis et à montage divisé ou à pince sont disponibles avec des profils de rainure et des largeurs d'anneau définis sur le dessin.",
       },
     ],
-    dimensionLabels: {
-      col0: "Plate-forme OEM / Type",
-      col1: "OD × ID (mm)",
-      col2: "Épaisseur (mm)",
-      col3: "Rainure (L × P / Angle)",
-      caption:
-        "* Dimensions standard de l'enclume adaptées aux OEM. La géométrie exacte des rainures garantit un accouplement sans oscillation avec les refendeuses supérieures. Des configurations à rainures multiples (2+ fentes) sont disponibles sur demande.",
-    },
-    standardDimensions: [
-      {
-        spec: "Tidland — Single Groove",
-        od: "70 × 25.4",
-        id: "8 / 10",
-        thickness: "W: 1.2 × D: 2.0 / 60°",
-      },
-      {
-        spec: "Atlas — Multi-Groove (3 Slots)",
-        od: "100 × 60",
-        id: "20 / 25",
-        thickness: "W: 1.5 × D: 2.5 / 60°",
-      },
-      {
-        spec: "Mario Cotta — Single Groove",
-        od: "80 × 30",
-        id: "10",
-        thickness: "W: 1.3 × D: 2.2 / 45°",
-      },
-      {
-        spec: "Dienes — Single Groove",
-        od: "130 × 80",
-        id: "12",
-        thickness: "W: 1.5 × D: 3.0 / 60°",
-      },
-      {
-        spec: "Custom Anvil / Hardfaced",
-        od: "Per Drawing",
-        id: "OEM Spec",
-        thickness: "Exact CNC Machined Groove",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 200,
-    },
     faqs: {
       technical: [
         {
           question:
-            "À quelle fréquence dois-je remplacer la lame inférieure rainurée de l'enclume par rapport à la lame supérieure ?",
+            "Qu'est-ce qui définit un couteau à enclume à fond rainuré de remplacement ?",
           answer:
-            "Les couteaux de l'enclume inférieure sont soumis à une charge de compression sur la face de la rainure et durent généralement 3 à 5 fois plus longtemps que la lame de cisaillement supérieure. Cependant, comme l'usure est progressive - la face de la rainure s'arrondit lentement - la détérioration de la qualité de la fente est facile à manquer jusqu'à ce que les taux de rebut augmentent. Nous recommandons d'inspecter la géométrie de la face de la rainure (largeur et profondeur de la rainure) tous les trois cycles de remplacement de la lame supérieure et de remplacer l'enclume lorsque l'écart de largeur de la rainure dépasse ±0,03 mm par rapport à la spécification OEM.",
+            "Le bord actif, le profil de la rainure, la largeur de l'anneau, l'alésage et le dispositif de verrouillage définissent le remplacement. Incluez la profondeur de la rainure et la position axiale du tranchant par rapport au couteau supérieur correspondant. Ces caractéristiques établissent la géométrie de travail au-delà du diamètre extérieur et du diamètre intérieur. Pour plusieurs positions de coupe sur un corps, voir [Couteaux inférieurs multi-rainures](/products/groove-bottom-knives) .",
+        },
+        {
+          question: "Que signifient les types de verrouillage NN, NG et NS ?",
+          answer:
+            "Dans la terminologie DIENES , NN signifie un alésage lisse, NG utilise un verrouillage excentrique et NS utilise un verrouillage par vis. Les anneaux NN sont positionnés avec des entretoises et serrés axialement ; NG utilise une bague excentrique, tandis que NS utilise une vis agissant sur l'arbre. Spécifiez l'alésage, la largeur de la bague et le profil de travail ainsi que le type de montage lors de la commande de remplacements.",
         },
         {
           question:
-            "Quelle distance de cisaillement dois-je respecter entre la lame supérieure et la rainure inférieure de l'enclume ?",
+            "Pourquoi la qualité de la fente du papier peut-elle rester médiocre après le remplacement du couteau supérieur ?",
           answer:
-            "Le jeu de cisaillement dépend du support. Pour les films plastiques souples (BOPP, BOPET, CPP), la norme est de 0,02-0,05 mm par côté. Pour le papier kraft et le carton, 0,05-0,10 mm. Pour les feuilles d'aluminium et de cuivre, 0,01-0,03 mm par côté. Nous vérifions au préalable que les paires supérieures et inférieures correspondent au jeu spécifié et nous enregistrons le réglage sur une fiche technique livrée avec chaque commande, ce qui permet aux opérateurs de reproduire le jeu à chaque réinstallation.",
+            "La découpe par cisaillement du papier dépend de la paire de couteaux complète et de sa configuration. Vérifiez le bord de travail inférieur, l'appariement des matériaux, l'état du support, le chevauchement, la pression latérale et l'angle d'inclinaison. Un nouveau couteau supérieur fonctionne toujours contre le couteau inférieur conservé, donc comparer les deux surfaces de travail et leur réglage permet d'identifier ce qui reste en suspens dans la disposition de coupe.",
         },
         {
           question:
-            "Puis-je commander des couteaux d'enclume de remplacement sans acheter une paire complète ?",
+            "Quel matériau ou revêtement convient à un couteau à enclume utilisé avec des bandes adhésives ?",
           answer:
-            "Oui. Nous fournissons des couteaux d'enclume inférieurs en tant que pièces de rechange autonomes usinées selon le profil de la rainure et le diamètre extérieur/identification de votre système d'arbre de couteau supérieur existant. Fournissez votre plate-forme OEM (Tidland, Kampf, Atlas, etc.) et le diamètre extérieur/identification du couteau supérieur, et nous adapterons l'enclume à la géométrie correspondante. Si vous nous fournissez une enclume usée en guise d'échantillon, nous pouvons procéder à une rétro-ingénierie du profil de la rainure d'origine avant de procéder au réaffûtage.",
+            "Séparez le ramassage de l'adhésif de l'usure de pointe. En cas d'accumulation de colle sur un bord par ailleurs sain, examinez la géométrie du contact, la finition de surface et le système adhésif lorsque vous envisagez les options TiN, DLC ou PTFE disponibles. En cas d'usure ou d'écaillage, évaluez d'abord le matériau de base et le couteau correspondant. Comparez les options de surface dans les mêmes conditions de bande et de découpe pour juger si elles résolvent le problème réel.",
         },
         {
           question:
-            "Pourquoi la qualité du bord de la fente se dégrade-t-elle même après le remplacement de la lame supérieure par une lame neuve ?",
+            "Sureay peut-il fournir un anneau d'enclume personnalisé sans remplacer le couteau supérieur ?",
           answer:
-            "Si de nouvelles lames supérieures ne rétablissent pas la qualité de la fente, il est presque certain que la rainure de l'enclume est usée au-delà de ses spécifications. Une face de rainure arrondie ou élargie augmente le jeu de cisaillement effectif, quel que soit l'état de la lame supérieure, ce qui produit un bord de fente irrégulier et en forme de plume. Inspectez la largeur et la profondeur de la rainure à l'aide d'une jauge ou d'un profilomètre. Si la déviation de la rainure dépasse ±0,03 mm par rapport aux spécifications de l'équipementier, l'enclume doit être remplacée ou réaffûtée.",
+            "Oui. Une bague de remplacement peut être fabriquée en fonction de l'alésage, de la largeur de la bague, du profil de la rainure, de la position de pointe et des détails de verrouillage requis par l'arbre existant. Incluez les dimensions et la position de travail du couteau supérieur retenu. Pour les commandes basées sur des échantillons, distinguez les surfaces de coupe usées des surfaces de montage afin que la nouvelle bague soit définie autour du couteau supérieur que vous conserverez.",
+        },
+        {
+          question:
+            "Un manchon support de rasoir peut-il remplacer une enclume de cisaillement ?",
+          answer:
+            "Un manchon de support de rasoir fournit un dégagement pour le bord du rasoir, tandis qu'une enclume de cisaillement fournit un bord de coupe coopérant. Leurs profils de travail servent à différentes méthodes de coupe. Précisez la lame correspondante, la méthode de coupe et la position du bord requise lors de la commande ; la présence d'une rainure à elle seule ne permet pas d'identifier le bon composant inférieur.",
         },
       ],
-      company: [
-        {
-          question:
-            "Fournissez-vous les couteaux à enclume inférieure en tant que partie d'une paire assortie, ou seulement individuellement ?",
-          answer:
-            "Les deux options sont disponibles. Pour les nouvelles installations ou les reconstructions complètes d'arbres, nous recommandons des paires appariées - lame supérieure et enclume inférieure vérifiées à un jeu de cisaillement spécifié, avec une fiche technique commune. Pour les commandes de remplacement sur des lignes existantes, des couteaux d'enclume autonomes usinés selon le profil de la rainure de votre OEM sont disponibles avec un délai de livraison standard de 5 à 7 jours.",
-        },
-        {
-          question:
-            "Pour quelles plates-formes OEM Sureay fournit-il des couteaux à enclume adaptés ?",
-          answer:
-            "Nous stockons et fournissons actuellement des couteaux d'enclume profilés pour Tidland (arbres à gorge simple et à gorge double), Kampf (séries d'arbres étroits et larges), Atlas Converting Equipment, Goebel, BHS, Agnati et Dusenbery. Pour les autres plates-formes OEM, fournissez le dessin de l'arbre ou un échantillon usé et nous concevrons un remplacement adapté.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les couteaux d'enclume à profil OEM standard sont expédiés sous 48-72 heures. Les profils de rainure sur mesure prennent de 7 à 12 jours ouvrables. Nous travaillons en partenariat avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "groove-bottom-knives",
+      "slitter-rewinder-bottom-knives",
+    ],
   },
-
   {
+    compatibleMachinesIntro:
+      "Sourcez des couteaux de coupe en carbure de remplacement avec des alésages, des épaisseurs et des profils de coupe personnalisés. Sureay propose des constructions en carbure monobloc et en carbure ; partagez votre dessin et votre demande de devis sur la configuration requise par votre machine.",
     id: "tungsten-carbide-slitter-knives",
-    name: "Couteaux de refendage en carbure de tungstène",
+    name: "Couteaux de refente en carbure de tungstène",
     fullName:
-      "Couteaux de refendage en carbure de tungstène pour refendage à forte usure",
+      "Couteaux de refente en carbure de tungstène massif ou à tranchant rapporté",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Couteaux de refendage",
+    categoryDisplay: "Couteaux de refente en carbure de tungstène",
     image:
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-    gallery: [
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
-    ],
-    galleryAlts: [
-      "Couteaux de refendage en carbure de tungstène, trois lames circulaires rectifiées à faces polies",
-      "Détail d'un couteau de refendage carbure montrant l'alésage central, les trous de fixation et le tranchant rectifié",
-    ],
-
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Le carbure monobloc coûte six à dix fois plus cher que le D2. Ce surcoût se rentabilise dans exactement deux cas : lorsque votre bande contient une charge minérale abrasive, ou lorsque vos séries sont assez longues pour que le temps d'arrêt lors des changements — et non le prix du couteau — soit ce qui vous coûte réellement de l'argent. Carbure à grain micrométrique YG6, YG6X, YG8 et YG10X (ISO K10–K30) à 89,5–92,5 HRA, rectifié à ±0,002 mm, avec rapport de dureté et relevé dimensionnel dans chaque expédition.",
-
-    fullDescription:
-      "Les couteaux de refendage en carbure relèvent d'une décision de résistance à l'usure, et non d'une montée en gamme systématique. Si vous refendez du BOPP transparent en séries courtes, le D2 ou l'ASP23 PM vous servira mieux pour moins cher, et nous vous le dirons avant que vous ne commandiez. Cette page concerne les travaux où l'acier à outils ne peut réellement pas tenir un tranchant : films chargés en minéraux, stratifiés renforcés de verre, non-tissés abrasifs, feuillards enduits et carton à grande vitesse.\n\n## Quand la montée en gamme est rentable\n\nLe carbure vaut son prix lorsque le coût d'un arrêt de ligne dépasse le coût du couteau. Prenez votre nombre de changements de couteaux par mois, multipliez-le par le coût d'arrêt de chaque changement, et comparez à l'écart de prix. Sur une ligne où un changement coûte une heure de production, une durée de vie de tranchant multipliée par 10 se rembourse généralement en un ou deux cycles de couteaux. Sur une ligne où les changements sont rapides et peu coûteux, ce ne sera pas le cas.\n\n## Là où le carbure justifie son coût\n\n**Films chargés en minéraux :** BOPP chargé en TiO₂, PE chargé en carbonate de calcium, qualités mates et cavitées. C'est la charge qui détruit les tranchants en acier ; la dureté est la seule défense.\n\n**Stratifiés renforcés de verre et composites :** détourage de FR-4 et de préimprégnés, rubans renforcés de fibre de verre, bandes composites aluminium. La teneur en verre est profondément abrasive et émousse l'HSS en une seule équipe.\n\n**Non-tissés abrasifs :** meltblown chargé en minéraux, spunbond avec charge, supports abrasifs et substrats d'essuyage où le peluchage des fibres apparaît dès que le tranchant s'adoucit.\n\n**Feuille métallique, bande enduite et électrode de batterie :** feuille d'aluminium et de cuivre, bande enduite et stratifiée, où des bords sans bavure doivent tenir sur toute une bobine.\n\n**Carton et papier couché à grande vitesse :** supports couchés au kaolin et aux pigments, sur des lignes où un changement de couteau coûte une heure de production et où le prix du couteau est une erreur d'arrondi face à cela.\n\n## Là où le carbure est le mauvais choix\n\n**Chocs et coupes interrompues.** Le carbure est fragile. Si la bande accroche, si une bande de raccord passe, ou si le couteau peut toucher la contre-lame métal contre métal, le carbure s'écaille là où le D2 se déformerait et survivrait.\n\n**Substrats propres et non chargés en séries courtes.** Vous refendez du BOPP transparent, du kraft ordinaire ou du PE non chargé ? Le D2 ou l'ASP23 PM tiendra un tranchant assez longtemps, pour une fraction du coût.\n\n**Pas d'accès au rectifiage diamant.** Si ni vous ni votre partenaire de service ne peut réaffûter sur meules diamantées, un couteau carbure émoussé devient un rebut plutôt qu'un actif réaffûtable — et l'équation économique s'inverse.\n\n**Jeu mal réglé ou non vérifié.** Le carbure amplifie ce que votre montage fait déjà. Il ne compensera pas un arbre usé, un porte-couteau voilé, ni un jeu que personne n'a mesuré.",
-
+      "Couteaux de rechange solides et à pointe en carbure pour la transformation et le traitement des métaux. Dimensions, alésages et profils de coupe personnalisés adaptés à l'application.",
     link: "/products/tungsten-carbide-slitter-knives",
-
-    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
-
     specs: [
       {
-        label: "Material",
+        label: "Dimensions",
         value:
-          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+          "Profils fins : OD 20–300 mm × 0,3–5,0 mm ; onduleuse OD 220–340 mm ; rotatif OD 150,1–300,15 mm",
       },
-      { label: "Hardness", value: "89.5–92.5 HRA" },
-      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
-      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
-      { label: "Outer Diameter", value: "20–300 mm" },
-      { label: "Thickness", value: "0.3–5.0 mm" },
       {
-        label: "Tolerance",
+        label: "Matériau",
         value:
-          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+          "Carbure WC-Co dans les nuances YG6 , YG6X , YG8 , YG10X , YG12X et YG15",
       },
-      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
-      {
-        label: "Edge Geometry",
-        value: "Single bevel, double bevel, hollow ground, razor",
-      },
-      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
       {
         label: "Applications",
+        value: "Carton ondulé, film, bande d'électrode et bande métallique",
+      },
+      {
+        label: "Dureté",
+        value: "89,5–92,5 HRA, selon la nuance de carbure",
+      },
+      {
+        label: "Options à grain fin",
+        value: "Taille des grains de carbure de 0,4 à 0,8 μm",
+      },
+      {
+        label: "Construction",
         value:
-          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
-      },
-    ],
-
-    steelGrades: {
-      intro:
-        "La teneur en cobalt est le curseur du compromis : plus de cobalt signifie plus de ténacité et moins de fragilité, mais le tranchant s'émousse plus tôt. Les quatre nuances de carbure ci-dessous sont présentées face aux aciers à outils qu'elles remplacent, afin que la décision de montée en gamme soit visible dans un seul tableau. Si vos couteaux acier actuels s'émoussent, allez vers plus de dureté. S'ils s'écaillent, allez vers plus de ténacité. Si les deux se produisent, le problème vient généralement du jeu et non du matériau.",
-      rows: [
-        {
-          grade: "D2",
-          hardness: "HRC 58–62",
-          bestFor: "Refendage polyvalent de substrats propres et non chargés",
-          tradeoff:
-            "Durée de vie de tranchant et coût de référence. Réaffûtage sur meules conventionnelles.",
-        },
-        {
-          grade: "M2 HSS",
-          hardness: "HRC 62–65",
-          bestFor: "Usure modérée à vitesses de ligne plus élevées",
-          tradeoff:
-            "2–3× la durée de vie de tranchant du D2 pour environ 1,5× le coût.",
-        },
-        {
-          grade: "ASP23 PM",
-          hardness: "HRC 66–68",
-          bestFor:
-            "Travail à grande vitesse et forte usure, sans véritables abrasifs",
-          tradeoff:
-            "4–6× la durée de vie de tranchant du D2 pour environ 3× le coût — souvent le meilleur choix commercial.",
-        },
-        {
-          grade: "YG6 (ISO K10)",
-          hardness: "89.5–91.5 HRA",
-          bestFor:
-            "Refendage régulier et sans choc de films et papiers abrasifs",
-          tradeoff:
-            "6 % de cobalt. La plus dure des quatre nuances de carbure et la moins tolérante aux chocs.",
-        },
-        {
-          grade: "YG6X (ISO K10UF)",
-          hardness: "91–92.5 HRA",
-          bestFor:
-            "Faible épaisseur, tolérance serrée, meilleure qualité de tranchant atteignable",
-          tradeoff:
-            "6 % de cobalt, grain ultrafin. Le tranchant le plus vif, le plus sensible aux coupes interrompues.",
-        },
-        {
-          grade: "YG8 (ISO K20)",
-          hardness: "88.5–90.5 HRA",
-          bestFor:
-            "Non-tissés, feuille métallique, et partout où la bande peut accrocher",
-          tradeoff:
-            "8 % de cobalt. Plus tenace et tolérant aux chocs, au prix d'une part de durée de vie du tranchant.",
-        },
-        {
-          grade: "YG10X (ISO K30)",
-          hardness: "90.5–91.5 HRA",
-          bestFor: "Coupes interrompues, stratifiés et supports plus épais",
-          tradeoff:
-            "10 % de cobalt, grain ultrafin. Le meilleur équilibre ténacité/usure de la gamme.",
-        },
-      ],
-      outro:
-        "Sur l'ensemble de la gamme, le carbure offre environ 10 à 30 fois la durée de vie de tranchant du D2 pour un coût 6 à 10 fois supérieur, accepte moins de cycles de réaffûtage et ne peut être rectifié que sur meules diamantées. Comment faire le calcul : le carbure vaut son prix lorsque le coût d'un arrêt de ligne dépasse le coût du couteau. Dites-nous le matériau et le mode de défaillance que vous constatez actuellement, et nous choisirons la nuance.",
-    },
-
-    componentsIntro:
-      "Envoyez-nous un couteau usé et le modèle de votre machine — nous reconstituerons le jeu par rétro-ingénierie et vous chiffrerons sous 2 heures.",
-
-    components: [
-      {
-        id: "carbide-when-it-pays",
-        tag: "ADÉQUATION APPLICATIVE",
-        title: "Là où le carbure justifie son coût",
-        description:
-          "C'est la charge abrasive qui détruit les tranchants en acier, et la dureté est la seule défense. Le BOPP chargé en TiO₂, le PE chargé en carbonate de calcium, le détourage de FR-4 et de préimprégnés, le ruban renforcé de fibre de verre, le meltblown chargé en minéraux, la feuille d'aluminium et de cuivre enduite et le carton couché au kaolin usent tous un tranchant en acier à outils plus vite que la longueur de série ne le permet. La même logique de nuance s'applique quel que soit le substrat — c'est une décision de matériau, pas d'application.",
+          "Disque en carbure monobloc ou corps en acier avec bague coupante en carbure",
       },
       {
-        id: "carbide-when-not-to",
-        tag: "LIMITES ASSUMÉES",
-        title: "Là où le carbure est le mauvais choix",
-        description:
-          "Le carbure est une solution de résistance à l'usure, pas une montée en gamme systématique. Il s'écaille là où le D2 se déformerait — sur les raccords, les accrochages et les coupes interrompues, ou là où le couteau peut toucher la contre-lame métal contre métal. Sur des substrats propres non chargés et des séries courtes, le D2 ou l'ASP23 PM tient un tranchant assez longtemps pour une fraction du prix. Et sans accès au réaffûtage sur meule diamantée, un couteau carbure émoussé est un rebut et non un actif. Si l'un de ces points décrit votre ligne, dites-le nous lors de votre demande — nous préférons vous chiffrer le bon acier.",
+        label: "Options de précision",
+        value:
+          "Épaisseur ±0,002 mm ; parallélisme des faces ≤0,005 mm ; T.I.R. ≤0,01 mm",
       },
       {
-        id: "carbide-grade-selection",
-        tag: "MÉTALLURGIE",
-        title: "Substrat à grain micrométrique, choisi pour chaque travail",
-        description:
-          "Nous sélectionnons parmi quatre nuances en fonction de votre matériau et de votre mode de défaillance actuel, plutôt que d'expédier une nuance unique pour tout. Les nuances submicroniques tiennent un tranchant plus vif ; les nuances à forte teneur en cobalt survivent aux chocs. Le carbure ne peut être fini que sur meules diamantées, et la géométrie de tranchant, le parallélisme et le faux-rond sont tenus au même standard de contrôle que notre rectification d'acier à outils — chaque couteau mesuré avant expédition, avec rapport d'essai de dureté et relevé dimensionnel dans la boîte.",
+        label: "Finition des bords",
+        value: "Ra 0.2–0.4 μm",
+      },
+      {
+        label: "Géométrie des bords",
+        value: "Profilé simple biseau, double biseau, rectifié creux ou rasoir",
+      },
+      {
+        label: "Revêtements en option",
+        value: "DLC, TiN ou TiAlN ; couteaux non revêtus également disponibles",
+      },
+      {
+        label: "Résistance à la rupture transversale",
+        value: "2,500–3,000 N/mm²",
       },
     ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "nonwoven-slitter-knives",
-      "metal-coil-slitting-knives",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 600,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "couteaux à découper carbure de tungstène | Tailles personnalisées",
+      sizeRange: "OD 20–340 mm",
+      heroAlt:
+        "Trois couteaux de découpe circulaires carbure de tungstène massif",
+      specificationImage: {
+        src: "/images/products/slitter-detail/tungsten-carbide-slitter-knives-detail.webp",
+        alt: "Anneaux de couteaux inférieurs du rembobineur montrant le corps et le périmètre de coupe",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
         {
-          question:
-            "Quand dois-je choisir le carbure monobloc plutôt que le M2 HSS ou le D2 ?",
-          answer:
-            "Uniquement lorsque votre bande contient une charge abrasive, ou lorsque vos séries sont assez longues pour que les économies de réaffûtage et de changement couvrent l'écart de prix de 6–10×. Pour du film transparent standard, du papier ordinaire ou du PE non chargé, le D2 ou l'ASP23 PM est généralement le meilleur choix commercial — et nous vous le dirons.",
+          id: "thin",
+          tabLabel: "Lames fines en carbure",
+          title: "Lames fines en carbure",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Référence matériel",
+            "Modèle de montage",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Modèle 6 × Ø9 mm"],
+            [
+              "SR001404",
+              "230 × 135 × 1.1 mm",
+              "Fosber",
+              "Modèle à 4 emplacements",
+            ],
+            [
+              "SR001405",
+              "257 × 135 × 1.1 mm",
+              "Fosber",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001406",
+              "291 × 203 × 1.1 mm",
+              "Fosber",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001408",
+              "220 × 115 × 1.0 mm",
+              "Agnati",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001409",
+              "240 × 115 × 1.0 mm",
+              "Agnati",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001410",
+              "280 × 160 × 1.1 mm",
+              "Mitsubishi",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001411",
+              "260 × 140 × 1.1 mm",
+              "Isowa",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001412",
+              "300 × 112 × 1.2 mm",
+              "TCY",
+              "Dessin de correspondance",
+            ],
+            [
+              "SR001413",
+              "340 × 230.2 × 1.0 mm",
+              "Göpfert",
+              "Dessin de correspondance",
+            ],
+          ],
         },
         {
-          question:
-            "Combien de fois un couteau de refendage carbure peut-il être réaffûté ?",
-          answer:
-            "Cela dépend de la surépaisseur prévue à la conception du couteau, pas du matériau. Chaque réaffûtage enlève de la matière ; la limite pratique se situe là où le couteau s'amincit au-delà de sa tolérance de jeu. Le carbure accepte généralement moins de réaffûtages que le D2, mais offre bien plus de temps de production entre chacun, et c'est là que se joue réellement l'économie. Des meules diamantées sont indispensables — les meules conventionnelles en oxyde d'aluminium se lustrent et ne coupent pas le carbure.",
-        },
-        {
-          question:
-            "Mon couteau carbure s'est écaillé dès la première série — que s'est-il passé ?",
-          answer:
-            "Presque toujours l'une de ces trois causes. La manutention : un couteau carbure tombé sur un sol en béton développe des contraintes internes et des fissures qui restent invisibles jusqu'à la mise en charge. Le jeu : réglé trop serré, le couteau entre en contact métal contre métal avec la contre-lame et micro-écaille le long du tranchant. Ou bien l'application comporte un choc — un raccord, un accrochage, une coupe interrompue — que la fragilité du carbure ne peut absorber. Envoyez-nous une photo du tranchant écaillé ; le faciès de rupture permet généralement d'identifier laquelle des trois causes est en jeu.",
-        },
-        {
-          question: "YG6 ou YG8 : quelle nuance dois-je spécifier ?",
-          answer:
-            "Le YG6 (ISO K10) est plus dur et dure plus longtemps sur un travail régulier, propre et abrasif. Le YG8 (ISO K20) contient plus de cobalt, il est donc plus tenace et tolère les chocs, au prix d'une part de durée de vie du tranchant. Si vos couteaux acier actuels s'émoussent, allez vers plus de dureté. S'ils s'écaillent, allez vers plus de ténacité. Si les deux se produisent, le problème vient généralement du jeu et non du matériau.",
-        },
-        {
-          question:
-            "Un couteau supérieur en carbure peut-il travailler contre une contre-lame inférieure en acier ?",
-          answer:
-            "Oui, et c'est courant — mais la contre-lame devient alors la pièce d'usure et demandera de l'attention plus tôt qu'auparavant. Si la contre-lame est plus tendre, vérifiez le jeu plus souvent, car son usure ouvre l'entrefer et le premier symptôme est un bord irrégulier qui ressemble à un problème de couteau. Des paires carbure appariées sont disponibles lorsque l'usure de la contre-lame est le facteur limitant.",
-        },
-        {
-          question:
-            "Comment les couteaux carbure doivent-ils être stockés et manipulés ?",
-          answer:
-            "Séparés individuellement, jamais empilés métal contre métal, dans un environnement sec. La plupart des défaillances carbure sur lesquelles nous enquêtons ont commencé au magasin ou pendant le transport, pas sur la machine. Les couteaux sont expédiés dans un emballage de protection qu'il vaut la peine de conserver pour ceux que vous n'utilisez pas.",
+          id: "carbide",
+          tabLabel: "Couteaux en carbure",
+          title: "Couteaux rotatifs en carbure",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Construction",
+          ],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Carbure monobloc"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Carbure monobloc"],
+            ["SR001333", "204 × 125 × 10 mm", "Carbure monobloc"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Carbure monobloc"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Carbure monobloc"],
+          ],
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question: "Êtes-vous fabricant ou société de négoce ?",
-          answer:
-            "Nous fabriquons. La rectification, le contrôle du traitement thermique et l'inspection sont réalisés dans notre propre usine certifiée ISO 9001:2015, en activité depuis 2008 et livrant dans plus de 50 pays. C'est pourquoi nous pouvons chiffrer à partir d'un échantillon usé et garantir le relevé dimensionnel qui l'accompagne.",
+          label: "Dimensions",
+          value:
+            "Profils fins : OD 20–300 mm × 0,3–5,0 mm ; onduleuse OD 220–340 mm ; rotatif OD 150,1–300,15 mm",
         },
         {
-          question:
-            "Pouvez-vous fabriquer des couteaux carbure sans plan OEM ?",
-          answer:
-            "Oui — envoyez-nous un couteau usé et le modèle de votre machine. Nous mesurons l'échantillon, reconstituons le jeu de travail par rétro-ingénierie à partir du profil d'usure et produisons un remplacement conforme ; le profil d'usure nous en dit généralement plus sur le fonctionnement réel du couteau que le plan d'origine. L'alésage, la rainure de clavette, le schéma de perçage et l'épaisseur sont ajustés aux arbres que vous utilisez déjà, sans changement de porte-couteau ni réoutillage.",
+          label: "Matériau",
+          value:
+            "Carbure WC-Co dans les nuances YG6 , YG6X , YG8 , YG10X , YG12X et YG15",
         },
         {
-          question: "Quelle documentation accompagne une commande carbure ?",
-          answer:
-            "Un rapport d'essai de dureté et un relevé de contrôle dimensionnel avec chaque expédition, depuis une usine certifiée ISO 9001:2015. Si votre contrôle à réception exige des données MMT complètes, demandez-le à la commande et elles seront expédiées avec les couteaux. Lorsque plusieurs couteaux partagent un arbre, ils sont rectifiés et expédiés en jeu apparié vérifié afin que l'erreur d'empilage ne s'accumule pas d'une position à l'autre.",
+          label: "Applications",
+          value: "Carton ondulé, film, bande d'électrode et bande métallique",
         },
         {
-          question:
-            "Pouvons-nous tester un petit jeu carbure avant de nous engager sur une commande complète ?",
-          answer:
-            "Oui. Nous fournissons des jeux d'essai — généralement de 2 à 5 couteaux — pour vérifier le montage sur machine et tester la durée de vie du tranchant face à vos couteaux acier actuels. Nous préférons que vous prouviez le retour sur investissement sur votre propre ligne plutôt que de nous croire sur parole. Pour les profils sur mesure, un échantillon de validation dimensionnelle est produit avant le lancement de la production.",
+          label: "Dureté",
+          value: "89,5–92,5 HRA, selon la nuance de carbure",
         },
         {
-          question:
-            "Quel est le délai de livraison des couteaux de refendage carbure ?",
-          answer:
-            "Les profils standard dans les nuances stockées partent en 7–12 jours ouvrés ; les géométries sur mesure et les diamètres non standard demandent 15 à 20 jours. Le carbure prend plus de temps que l'acier à outils parce que les ébauches frittées et la finition sur meule diamantée ne peuvent être accélérées sans vous coûter en qualité de tranchant. Les couteaux sont expédiés séparés individuellement dans un emballage de protection — la plupart des dommages carbure sur lesquels nous enquêtons sont survenus pendant le transport ou le stockage, pas sur la machine.",
+          label: "Options à grain fin",
+          value: "Taille des grains de carbure de 0,4 à 0,8 μm",
+        },
+        {
+          label: "Construction",
+          value:
+            "Disque en carbure monobloc ou corps en acier avec bague coupante en carbure",
+        },
+        {
+          label: "Options de précision",
+          value:
+            "Épaisseur ±0,002 mm ; parallélisme des faces ≤0,005 mm ; T.I.R. ≤0,01 mm",
+        },
+        {
+          label: "Finition des bords",
+          value: "Ra 0.2–0.4 μm",
+        },
+        {
+          label: "Géométrie des bords",
+          value:
+            "Profilé simple biseau, double biseau, rectifié creux ou rasoir",
+        },
+        {
+          label: "Revêtements en option",
+          value:
+            "DLC, TiN ou TiAlN ; couteaux non revêtus également disponibles",
+        },
+        {
+          label: "Résistance à la rupture transversale",
+          value: "2,500–3,000 N/mm²",
         },
       ],
     },
-  },
-  {
-    id: "metal-cold-saw-blades",
-    name: "Lames de scie à froid pour métaux",
-    fullName:
-      "Lames de scie circulaire à froid HSS & TCT pour la coupe de tubes et de profilés métalliques",
-    category: "cold_saw_blades",
-    sector: "metal",
-    categoryDisplay: "Lames pour l'usinage des métaux",
-    image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Coupe sans bavure",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-01.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
-    ],
-    description:
-      "Lames de scie à froid HSS (M2 / M35 Cobalt) et TCT de première qualité pour la coupe de tubes en acier, de barres pleines, de profilés en aluminium et d'acier inoxydable. Le processus de coupe à froid produit une extrémité précise, sans bavure et sans zone affectée par la chaleur (HAZ), prête à être soudée ou filetée immédiatement.",
-    fullDescription:
-      "La scie circulaire à froid est le procédé de coupe des métaux privilégié pour les tuberies, la fabrication de structures et les applications de barres de précision. Contrairement aux meules de tronçonnage abrasives ou aux scies à ruban, une lame de scie circulaire à froid coupe par enlèvement de métal (formation de copeaux) plutôt que par abrasion à frottement élevé. Le matériau reste froid, ce qui permet d'obtenir une surface finale lisse et parfaitement carrée, sans distorsion thermique ni ébavurage secondaire.\n\nLes lames de scie à froid Sureay sont fabriquées dans les configurations M2 (HSS standard), M35 (HSS à 5 % de cobalt) et TCT (Tungsten Carbide Tipped). Toutes les lames sont fabriquées selon les normes strictes DIN 1837/1840 et sont disponibles dans des diamètres standard de 200 mm à 450 mm avec des configurations de dents et des revêtements PVD adaptés au matériau de la pièce à usiner.\n\n## Guide de sélection des matériaux et des qualités\n\n**M2 HSS (standard / traité à la vapeur):** La qualité de base pour le sciage à froid de tubes en acier doux, de tubes de structure et de cornières jusqu'à 400 MPa de résistance à la traction. Elle offre une excellente ténacité pour les coupes interrompues sur les sections creuses. Généralement fourni avec une finition en oxyde noir (traité à la vapeur) pour retenir le liquide de refroidissement et empêcher les microsoudures.\n\n**M35 Cobalt HSS (recommandé pour l'acier inoxydable):** L'ajout de 5% de cobalt augmente considérablement la dureté rouge (dureté à chaud) et la résistance à l'usure de la lame. Ceci est essentiel pour la coupe de l'acier inoxydable austénitique 304/316, qui se durcit rapidement sous la lame. Le M35 maintient la géométrie du tranchant à travers les températures de coupe élevées générées par l'acier inoxydable.\n\n**TCT (Tungsten Carbide Tipped):** Plaquettes en carbure brasées sur un corps en acier fortement allié. Idéales pour les applications de broyage de tubes à grand volume et les métaux non ferreux (extrusions d'aluminium, tuyaux en cuivre) fonctionnant à des vitesses de coupe élevées. Durée de vie 5 à 8 fois supérieure à celle des plaquettes en acier rapide sur les profilés en aluminium.\n\n## Revêtements PVD avancés\nPour prolonger considérablement la durée de vie des lames et réduire la friction de coupe, nous proposons des revêtements PVD avancés :\n- **TiN (Nitrure de Titane - Or):** Réduit le coefficient de friction, idéal pour couper des tubes en acier standard à des vitesses plus élevées.\n- **TiAlN (Titanium Aluminum Nitride - Violet/Noir):** Forme une couche dure d'oxyde d'aluminium pendant la coupe, protégeant les dents de la chaleur extrême. Le meilleur choix pour couper l'acier inoxydable, la fonte et les alliages à haute résistance.",
-    link: "/products/metal-cold-saw-blades",
-    isFeatured: false,
     compatibleMachines: [
-      "Kaltenbach",
-      "Bewo",
-      "MEP",
-      "Kasto",
-      "Macc",
-      "Pedrazzoli",
-      "Ficep",
-    ],
-    specs: [
-      {
-        label: "Grade Options",
-        value: "M2 HSS (DMo5) · M35 Cobalt (Co5) · TCT Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 63–65 (M2) | HRC 64–66 (M35) | Carbide Tipped",
-      },
-      {
-        label: "Surface Finish",
-        value: "Steam Treated (Black) / TiN / TiAlN PVD Coatings",
-      },
-      {
-        label: "Tooth Form",
-        value: "BW, HZ (Standard) | Fine / Medium / Coarse Pitch",
-      },
-      {
-        label: "Application",
-        value: "Steel Pipes, Stainless Tubes, Aluminum Profiles, Solid Bars",
-      },
+      "BHS",
+      "Fosber",
+      "Dusenbery",
+      "DIENES",
+      "Tidland",
+      "Nishimura",
+      "Fagor Arrasate",
     ],
     components: [
       {
-        id: "cold-cut-quality",
-        tag: "AVANTAGE DU PROCESSUS",
-        title: "Tronçonnage à froid ou meules abrasives",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Configurations de couteaux solides et à pointe de carbure",
         description:
-          "Les meules abrasives génèrent des températures supérieures à 800°C, produisant une zone affectée thermiquement (ZAT) et des scories lourdes qui doivent être éliminées par meulage. La scie circulaire à froid fonctionne à faible vitesse de rotation avec un liquide de refroidissement, ce qui maintient la surface de coupe à une température inférieure à 200°C. Le résultat est une surface propre et prête à être soudée dès la sortie de la machine.",
+          "Choisissez des disques en carbure monobloc ou des corps en acier avec des bagues coupantes en carbure pour correspondre à la construction requise par votre découpeuse existante et votre commande de remplacement.",
       },
       {
-        id: "grade-cobalt",
-        tag: "METALLURGIE",
-        title: "M35 Cobalt pour l'acier inoxydable",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Formes de bord rectifiées avec revêtements en option",
         description:
-          "L'acier inoxydable (304/316) se durcit sous la pression de coupe, émoussant instantanément les lames M2 standard. Notre nuance M35 contient 5 % de cobalt, ce qui lui confère une \"dureté rouge\" extrême permettant de trancher l'acier inoxydable austénitique sans perdre la géométrie du tranchant.",
+          "Les profils à simple biseau, à double biseau, à meulage creux et à rasoir peuvent être spécifiés avec des surfaces non revêtues ou des revêtements DLC, TiN et TiAlN sélectionnés, vous permettant de contrôler la forme et la finition de la lame que vous commandez.",
       },
       {
-        id: "pvd-coatings",
-        tag: "SURFACE TECH",
-        title: "Revêtements TiN et TiAlN",
+        id: "selection-3",
+        tag: "Application",
+        title:
+          "Couteaux en carbure personnalisés pour les découpeuses existantes",
         description:
-          "Si les lames standard traitées à la vapeur conviennent parfaitement à l'acier doux, l'utilisation de revêtements TiN (nitrure de titane) ou TiAlN PVD réduit considérablement les frottements et la chaleur. Cela permet des vitesses d'avance plus rapides et empêche la soudure à froid du matériau sur les dents de la scie.",
+          "Des alésages personnalisés, des sections axiales et des profils de coupe sont disponibles selon le dessin de votre couteau ou la référence de pièce spécifique à la machine, de sorte que les commandes de remplacement peuvent suivre la géométrie de la station de coupe installée.",
+        relatedBladeIds: [
+          "corrugated-slitter-scorer-blades",
+          "metal-coil-slitting-knives",
+        ],
       },
     ],
-    dimensionLabels: {
-      col0: "Qualité et finition de la lame",
-      col1: "Diamètre extérieur (mm)",
-      col2: "Alésage (mm)",
-      col3: "Épaisseur (mm)",
-      col4: "Dents (Z)",
-      caption:
-        "* Dimensions standard pour les machines Kaltenbach, Bewo et MEP. Le nombre de dents (Z) est choisi en fonction de l'épaisseur de la paroi du tube. Les trous des goupilles d'entraînement sont usinés sur commande.",
-    },
-    standardDimensions: [
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "250",
-        id: "32 / 40",
-        length: "2.0",
-        teeth: "120 z / 160 z",
-      },
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "275",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "140 z / 180 z",
-      },
-      {
-        spec: "M35 Cobalt (TiN Coated)",
-        od: "315",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "160 z / 200 z",
-      },
-      {
-        spec: "M35 Cobalt (TiAlN Coated)",
-        od: "350",
-        id: "40 / 50",
-        length: "2.5",
-        teeth: "160 z / 220 z",
-      },
-      {
-        spec: "M2 / M35 HSS",
-        od: "400",
-        id: "40 / 50",
-        length: "3.0",
-        teeth: "180 z / 240 z",
-      },
-      {
-        spec: "TCT (Aluminum Profile)",
-        od: "450",
-        id: "30 / 32",
-        length: "3.5",
-        teeth: "120 z",
-      },
-    ],
-    relatedBladeIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 420,
-    },
     faqs: {
       technical: [
         {
-          question: "Comment choisir entre les qualités M2 et M35 Cobalt HSS ?",
+          question:
+            "Quelle est la différence entre les couteaux en carbure monobloc et les couteaux en carbure ?",
           answer:
-            "Pour l'acier de construction standard, les tuyaux en acier doux et les profilés en caisson, l'acier rapide M2 offre une ténacité et une valeur excellentes. Si vous coupez de l'acier inoxydable (304, 316), de l'acier à haute résistance, ou si vous utilisez des scies automatiques à grande vitesse, vous devez passer au M35. Le M35 contient 5 % de cobalt, ce qui empêche les dents de se ramollir sous l'effet d'une forte chaleur de frottement.",
+            "Un couteau en carbure monobloc utilise du carbure à travers le corps du couteau. Un couteau à pointe de carbure combine un corps en acier avec un bord de travail ou un anneau coupant en carbure. Précisez la construction ainsi que la géométrie de montage. Les couteaux rotatifs en carbure et les lames de découpe en carbure sont des noms d'achat qui se chevauchent ; aucun des deux noms n'identifie en lui-même la station de construction ou de découpe.",
         },
         {
           question:
-            "De combien de dents (TPI / Pitch) ai-je besoin pour mes tubes en acier ?",
+            "Quand dois-je choisir des couteaux de découpe en carbure plutôt que des couteaux HSS ou en acier à outils ?",
           answer:
-            "La règle d'or du sciage à froid est de toujours avoir 3 ou 4 dents engagées simultanément dans l'épaisseur du matériau. Si vous coupez des tubes à paroi mince (par exemple, 1,5 mm de paroi), vous avez besoin d'un pas fin (nombre de dents élevé, par exemple, 220Z ou 240Z) pour éviter que les dents ne s'accrochent et ne se cassent. Si vous coupez des barres massives épaisses (par exemple, 40 mm), vous avez besoin d'un pas grossier (faible nombre de dents, par exemple, 120Z) pour permettre aux copeaux métalliques massifs de s'échapper.",
+            "Considérez le carbure par rapport au modèle d’usure que vous devez traiter. Un couteau qui s'use progressivement présente un problème de sélection différent de celui qui s'écaille. Comparez le matériau actuel, la géométrie des bords et les conditions de travail, y compris l'assistance et la configuration de la machine. La dureté à elle seule ne garantit pas une durée de vie plus longue, et un bord plus dur ne peut pas corriger un mauvais support ou une configuration incorrecte.",
         },
         {
           question:
-            "Les lames de scie à froid HSS peuvent-elles être réaffûtées ?",
+            "Les nuances de carbure YG6 , YG8 et celles portant des noms similaires sont-elles interchangeables ?",
           answer:
-            "Oui, c'est le plus grand avantage des lames de scie à froid HSS. Contrairement aux disques abrasifs qui sont jetés, une lame HSS peut être affûtée par CNC 10 à 15 fois avant que son diamètre ne devienne trop petit pour être utilisé. Nous proposons des services professionnels d'affûtage et de revêtement pour restaurer les performances d'une lame neuve.",
+            "Des noms de qualité similaires n’établissent pas d’équivalence entre les fournisseurs ou les systèmes de notation. La structure des grains de carbure, la teneur en liant et l'application prévue définissent également le matériau. Fournissez les exigences matérielles spécifiées et les performances du couteau actuel lors de la demande de remplacement, afin que la qualité proposée puisse être évaluée au-delà de son nom ou de sa dureté nominale.",
         },
         {
           question:
-            "Dois-je utiliser un liquide de refroidissement pour couper avec des scies à froid HSS ?",
+            "Pourquoi un couteau à découper en carbure s'écaille-t-il avant de s'user ?",
           answer:
-            "Absolument. Vous devez utiliser un liquide de refroidissement (huile synthétique ou semi-synthétique soluble dans l'eau, mélangée à environ 8-10 %) dirigé directement vers les dents de coupe. Le liquide de refroidissement évacue les copeaux de métal et maintient la lame froide. La coupe à sec avec une lame HSS brûle instantanément les dents. Seules les lames TCT spécialisées des machines haut de gamme sont conçues pour la coupe à sec.",
+            "Un impact, une charge excessive sur les bords ou des dommages causés par le meulage peuvent briser un bord en carbure avant que l'usure progressive ne devienne le problème principal. Inspectez l’emplacement des dommages, l’engagement du couteau, le support et l’historique d’affûtage récent. La résistance à l'usure du carbure n'enlève pas sa sensibilité aux chocs. Déterminez si le problème résulte d'une manipulation, d'un réglage ou d'un meulage avant de modifier la nuance ou la géométrie de pointe.",
+        },
+        {
+          question:
+            "Les couteaux à découper en carbure doivent-ils être revêtus ou laissés sans revêtement ?",
+          answer:
+            "Des couteaux non revêtus et certaines options DLC, TiN ou TiAlN sont disponibles. Choisissez en fonction du substrat en carbure, du matériau traité et de l'usure observée. Spécifiez le revêtement séparément de l'alésage, de l'épaisseur et du profil de coupe requis, de sorte que le remplacement conserve la géométrie de montage nécessaire pendant que l'option de surface est prise en compte pour l'application réelle.",
+        },
+        {
+          question:
+            "Des couteaux en carbure personnalisés peuvent-ils être fabriqués pour une découpeuse existante ?",
+          answer:
+            "Oui. Sureay peut fabriquer des couteaux pleins ou à pointe de carbure selon un dessin ou une référence de pièce spécifique à la machine. Définissez l'alésage, la section axiale, le profil de coupe, le composant de montage et d'accouplement. Incluez le matériau traité, tel que la [feuille métallique](/products/metal-foil-strip-slitter-knives) ou l [électrode enrobée](/products/lithium-battery-slitting-knives) , de sorte que le matériau et la construction soient pris en compte avec la géométrie de remplacement complète.",
+        },
+        {
+          question:
+            "Les couteaux de refendage en carbure peuvent-ils être réaffûtés ?",
+          answer:
+            "Oui, lorsqu'il reste suffisamment de matériau pour restaurer le profil de bord et les dimensions de travail spécifiés. Évaluez le disque sur un couteau en carbure monobloc ; sur une conception à pointe, vérifiez également la bague en carbure restante et sa fixation au corps. Un meulage spécialisé du carbure et des contrôles dimensionnels sont nécessaires. Des dommages importants ou un matériau restant insuffisant peuvent faire du remplacement l'option appropriée.",
         },
       ],
-      company: [
-        {
-          question:
-            "Ces lames conviendront-elles à ma machine à scier à froid ?",
-          answer:
-            "Nos lames présentent des alésages standard (32 mm, 40 mm, 50 mm, par exemple) et des trous d'entraînement universels qui conviennent à 95 % du marché, y compris Kaltenbach, Bewo, MEP, Macc, Pedrazzoli et Kasto. Si votre machine a une disposition de goupille d'entraînement non standard, nous pouvons usiner CNC les trous de montage exacts avant l'expédition.",
-        },
-        {
-          question:
-            "Quel est le délai de livraison des lames M35 revêtues de cobalt ou de TiAlN ?",
-          answer:
-            "Les lames standard M2 (traitées à la vapeur) dans les tailles courantes sont souvent en stock et expédiées dans les 3 à 5 jours. Les lames M35 Cobalt de qualité supérieure et les revêtements PVD personnalisés (TiN, TiAlN) nécessitent généralement 10 à 15 jours ouvrables.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+    ],
   },
   {
     id: "scrap-chopper-blades",
-    name: "Lames de broyeur de ferraille",
+    name: "Couteaux de hacheuse de rives",
     fullName:
-      "Lames de broyeur de ferraille à usage intensif pour les lignes de refendage de métaux et de traitement des bobines",
+      "Couteaux de coupe-chutes de rives pour lignes de refendage de bobines",
+    seoTitle: "Lames de hachoir à ferraille | Couteaux à bobine personnalisés",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Lames de broyeur de ferraille",
-    image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
+    categoryDisplay: "Couteaux de hacheuse de rives",
+    image: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
     badge: "Impact extrême",
     badgeColor: "orange",
     gallery: [
-      "/images/products/granulator-blades/scrap-chopper-blades.webp",
+      "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
-      "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
+      "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
     ],
     description:
-      "Spécialement conçues pour survivre aux environnements chaotiques et aux impacts extrêmes de la découpe des bords des lignes de transformation. Forgées en acier à outils S7 résistant aux chocs ou dotées de géométries spécialisées incrustées de carbure, ces lames fracturent et réduisent proprement les bandes d'acier irrégulières, les découpes de bandes d'aluminium et les déchets de bordures de feuilles de cuivre sans subir de défaillance catastrophique de la lame ou d'écaillage.",
-    fullDescription:
-      "Situés à l'extrémité des lignes de refendage et de conversion des métaux, les broyeurs de ferraille ont pour mission de détruire les déchets irréguliers et les bordures générés au cours du traitement. L'environnement de travail implique des charges d'impact sévères et imprévisibles capables de briser les lames standard. Par conséquent, les lames des broyeurs de ferraille sont forgées à partir d'alliages résistants aux chocs et aux impacts, tels que l'acier à outils S7, ou utilisent des conceptions fortement incrustées de carbure pour fracturer proprement les déchets d'acier, d'aluminium et de cuivre sans s'abîmer.\n\n## Environnement opérationnel et défis\n\nLes hacheurs de ferraille fonctionnent dans des conditions fondamentalement différentes de celles du découpage ou du cisaillage de précision :\n\n**Géométrie imprévisible du matériau:** Les bords des lignes de refendage arrivent au hachoir dans des configurations irrégulières, courbées et tordues. Contrairement au cisaillement de tôles droites, la lame doit s'engager dans la ferraille à des angles aléatoires, créant des charges d'impact variables qui peuvent dépasser 3 à 5 fois la force nominale.\n\n**Inclusions métalliques et contamination:** Le flux de ferraille contient souvent des attaches métalliques, des éclats de soudure et des écailles de laminage qui créent des concentrations de contraintes localisées. Les lames standard à dureté élevée (D2 à HRC 60-62) sont fragiles et se fracturent de manière catastrophique lorsqu'elles sont touchées par de telles inclusions.\n\n**Fréquence de cycle élevée:** Les broyeurs de ferraille fonctionnent à une cadence de 40 à 120 coups par minute, en fonction de la vitesse de la ligne. Chaque coupe impose une charge de choc et la lame doit résister à la propagation de fissures de fatigue sur des millions de cycles.\n\n## Metallurgical Solutions\n\n**Acier à outils résistant aux chocs S7:** S7 est un acier à outils au chrome-molybdène-tungstène spécialement conçu pour les applications d'outillage à chocs. Contrairement au D2 (qui obtient une résistance à l'usure grâce à des précipités de carbure de chrome de 12 %), le S7 utilise une teneur en carbone plus faible (0,50 % C contre 1,55 % C dans le D2) et un système d'alliage équilibré qui produit une matrice résistante et résiliente. Traité thermiquement à HRC 54-58, le S7 offre une résistance à l'impact deux fois supérieure à celle du D2, ce qui élimine pratiquement toute fracture catastrophique de la lame.\n\n*acier à outils pour travail à chaud *H13:** H13 (5 % de chrome, 1,5 % de molybdène, 1 % de vanadium) est la nuance la plus utilisée pour le découpage des déchets d'aluminium et de cuivre. Sa structure austénitique à la température de fonctionnement offre une excellente absorption des chocs, et la faible fraction de volume de carbure empêche les fractures fragiles lors d'impacts d'inclusions métalliques. Elle convient mieux aux flux de ferraille non ferreuse.\n\n**Bords incrustés de carbure:** Pour les centres de services sidérurgiques qui traitent des garnitures en acier inoxydable et à haute résistance, les inserts de bord carbure de tungstène sont supportés mécaniquement dans un corps S7 ou H13. Le carbure offre une résistance à l'usure localisée au niveau de l'arête de coupe, tandis que le corps en acier à outils absorbe l'énergie brute de l'impact. Cette construction hybride offre une durée de vie 3 à 5 fois plus longue que le S7 solide dans les flux de ferraille fortement contaminés.",
+      "Lames de hachoir de rechange personnalisées pour garniture de bord de ligne de bobine. Couteaux S7 , H13 ou incrustés de carbure à agencement de coupe droit, incliné ou profilé.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4535,104 +6141,67 @@ export const blades: Blade[] = [
       "Kohler Maschinenbau",
       "Fagor Arrasate",
     ],
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de hachage de ferraille de remplacement pour votre ligne de refendage de bobines, avec des bords de coupe S7 , H13 ou incrustés de carbure et des profils personnalisés. Envoyez votre dessin ou échantillon de couteau existant et Sureay préparera un devis pour votre hachoir. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "scrap-chopper-profile",
+        tag: "Géométrie de coupe",
+        title: "Options d'acier à outils et de carbure incrusté",
+        description:
+          "Sureay propose des configurations S7 , H13 et S7 incrustées de carbure pour les garnitures de chant en acier, en aluminium ou en cuivre. La dureté indiquée pour les versions de couteaux en acier est de 54 à 58 HRC .",
+      },
+      {
+        id: "scrap-chopper-mounting",
+        tag: "Installation",
+        title: "Dispositions de coupe droites, inclinées et profilées",
+        description:
+          "Sureay fournit des couteaux de remplacement pour les dispositions droites ou inclinées, y compris les profils à rayon et rectifiés en spirale selon le dessin, afin que les commandes puissent reproduire la géométrie de travail du broyeur installé.",
+      },
+      {
+        id: "scrap-chopper-feed",
+        tag: "Conditions de la ligne de bobine",
+        title: "Blocs de couteaux personnalisés avec options indexables",
+        description:
+          "Les corps carrés et rectangulaires sont disponibles avec des détails de montage spécifiques à la machine. Des versions à quatre tranchants peuvent être commandées lorsque la configuration originale du couteau prend en charge l'indexation, ainsi que des pièces de remplacement individuelles.",
+      },
+    ],
     specs: [
       {
-        label: "Material",
+        label: "Dimensions",
+        value: "100–400 mm",
+      },
+      {
+        label: "Matériau",
         value:
-          "S7 Shock-Resisting Tool Steel | H13 Hot-Work Steel | Carbide-Inlaid S7",
+          "Acier à outils S7 , acier à outils H13 ou S7 incrusté de carbure",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (optimized for maximum impact toughness)",
+        label: "Dureté",
+        value: "Versions de couteaux en acier : 54–58 HRC",
       },
       {
-        label: "Edge Configuration",
-        value: "Square/Rectangular Profile (4-edge usable)",
+        label: "Corps de lame",
+        value:
+          "Profils carrés ou rectangulaires ; versions à quatre bords disponibles",
       },
       {
-        label: "Impact Resistance",
-        value: "2× toughness vs. D2 — prevents catastrophic fracture",
+        label: "Configurations du hacheur",
+        value:
+          "Dispositions de couteaux droits ou inclinés ; profils à rayon et rectifiés en spirale selon le dessin",
       },
       {
         label: "Application",
         value:
-          "Steel, aluminum, copper edge-trim scrap from slitting & coil processing lines",
+          "Débris d'acier, d'aluminium et de cuivre provenant des lignes de refendage de bobines",
       },
       {
-        label: "Cycle Life",
-        value: "50,000–200,000 chops (material & contamination dependent)",
+        label: "Cycle de vie",
+        value:
+          "50 000 à 200 000 côtelettes, en fonction du matériau et de la contamination",
       },
     ],
-    components: [
-      {
-        id: "s7-metallurgy",
-        tag: "SCIENCE DES MATÉRIAUX",
-        title: "Structure en alliage résistant aux chocs S7",
-        description:
-          "L'acier à outils S7 atteint sa ténacité supérieure grâce à un système d'alliage soigneusement équilibré : 0.50 % de carbone (contre 1,55 % dans le D2) minimisent la formation de carbures fragiles, tandis que les ajouts de chrome (3,25 %), de molybdène (1,40 %) et de tungstène (1,80 %) assurent la trempabilité et la résistance au revenu. Traité thermiquement à un HRC 54-58 plutôt qu'au HRC 60-62 typique du D2, le S7 sacrifie une partie de la résistance à l'abrasion en échange d'une énergie d'impact Charpy deux fois plus élevée. Il s'agit d'un compromis essentiel pour les applications de broyage de ferraille : la lame doit absorber des chocs imprévisibles sans se briser.",
-      },
-      {
-        id: "4-edge-design",
-        tag: "EFFICACITÉ DE LA CONCEPTION",
-        title: "Configuration réversible à quatre bords",
-        description:
-          "Les lames de broyeurs de ferraille sont fabriquées sous forme de blocs rectangulaires avec quatre arêtes de coupe utilisables. Lorsque l'arête active présente une usure visible (généralement indiquée par un bruit de coupe accru ou une fracture incomplète de la ferraille), l'opérateur indexe la lame à 90° pour présenter une nouvelle arête. Cette conception quadruple la durée de vie effective par rapport aux lames à un seul tranchant et réduit les temps d'arrêt non productifs. La géométrie du corps de la lame est rectifiée avec précision pour garantir que les quatre bords sont parallèles à ±0,05 mm près, évitant ainsi une charge inégale qui provoquerait une usure prématurée des bords indexés.",
-      },
-      {
-        id: "carbide-inlay",
-        tag: "OPTION AVANCÉE",
-        title: "Construction hybride incrustée de carbure",
-        description:
-          "Pour les centres de services sidérurgiques qui traitent des garnitures en acier à haute teneur en carbone ou en acier inoxydable fortement contaminées par la calamine, nous proposons des lames de broyeur de ferraille revêtues de carbure. Un insert carbure de tungstène (généralement d'une largeur de 6 à 10 mm, sur toute l'épaisseur de la lame) est verrouillé mécaniquement dans une fente rectifiée avec précision dans le corps S7 à l'aide d'un joint fretté ou brasé. Le carbure offre une résistance à l'usure localisée à l'endroit où la lame entre en contact avec la ferraille, tandis que le corps S7 absorbe l'énergie brute de l'impact. Cette construction est la solution optimale pour les flux de ferraille contaminés où le carbure solide se fracturerait et où le S7 solide s'use trop rapidement.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Machine typique / fonction",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions standard pour les modèles courants de broyeurs de ferraille. Des dimensions spéciales sont disponibles. Toutes les lames sont réversibles à 4 arêtes. L'option d'incrustation au carbure est disponible pour toutes les dimensions (supplément de prix unitaire de +30-40%).",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Trim",
-        od: "100",
-        id: "40",
-        thickness: "15",
-      },
-      {
-        spec: "Standard Capacity",
-        od: "150",
-        id: "50",
-        thickness: "20",
-      },
-      {
-        spec: "Butech / Medium Duty",
-        od: "200",
-        id: "60",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Duty Coil Line",
-        od: "250",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "Extra Heavy",
-        od: "300",
-        id: "80",
-        thickness: "30",
-      },
-      {
-        spec: "Extreme Plate Chopper",
-        od: "400",
-        id: "100",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: ["metal-shear-knives", "metal-coil-slitting-knives"],
+    relatedBladeIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
     offers: {
       lowPrice: 35,
       highPrice: 280,
@@ -4641,48 +6210,165 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Dois-je utiliser S7 ou H13 pour couper les bordures en acier inoxydable ?",
+            "Les lames de hachoir à ferraille et les couteaux de hachoir à bords sont-ils le même produit ?",
           answer:
-            "Pour les garnitures en acier inoxydable (304, 316 ou duplex), spécifiez S7 à HRC 54-58. L'acier inoxydable génère des forces de coupe plus élevées que l'acier doux en raison de l'écrouissage, et le système d'alliage équilibré du S7 offre une meilleure rétention des arêtes que le H13 dans cette application. Le H13 est optimisé pour les déchets d'aluminium et de cuivre où les forces de coupe plus faibles permettent à la matrice H13 plus tendre d'absorber l'impact sans déformation excessive des arêtes. Pour les déchets d'acier inoxydable fortement contaminés par des éclats de soudure ou des attaches, il est préférable d'opter pour le S7 à plaquettes de carbure.",
+            "Oui. Sur une ligne de bobines, les deux noms font référence à des couteaux qui coupent les bords mis au rebut en morceaux courts. L'ensemble hacheur détermine leur profil de travail et leur montage. Les couteaux circulaires qui refendent la bobine de production sont [Steel Coil Slitting Knives](/products/metal-coil-slitting-knives) .",
         },
         {
           question:
-            "Comment savoir quand indexer la lame sur le bord de coupe suivant ?",
+            "Comment l’épaisseur de la bande et la largeur de coupe affectent-elles les spécifications du couteau ?",
           answer:
-            "Le principal indicateur est l'augmentation du bruit de coupe ou des vibrations, qui signale que le bord actif a développé un méplat d'usure et ne fracture plus proprement la ferraille. Inspectez visuellement le bord actif toutes les 8 à 12 heures de fonctionnement. Lorsque le méplat d'usure (la zone polie et émoussée sur le coin de coupe) dépasse 1,0 à 1,5 mm de largeur, il est temps de passer à l'arête suivante. L'indexation avant que le méplat d'usure n'entre en contact avec le corps de la lame permet d'éviter l'usure accélérée du support et du cadre.",
+            "La qualité de la bande, l'épaisseur et la largeur de coupe décrivent le matériau entrant dans le broyeur et aident à définir la tâche de coupe. L'ensemble hachoir établit les dimensions et le montage du corps du couteau. Examinez les deux ensembles d'informations lorsque vous comparez les options de matériaux ou de bords, en particulier si la ligne traite une spécification de garniture différente d'auparavant.",
         },
         {
           question:
-            "Les lames de hachoir peuvent-elles être réaffûtées ou réaffutées ?",
+            "Pourquoi les bords des couteaux du hachoir peuvent-ils s'écailler ?",
           answer:
-            "Les lames de hachoir sont des consommables d'usure et ne sont généralement pas réaffûtées. La conception réversible à quatre arêtes offre déjà une durée de vie prolongée, et le réaffûtage nécessiterait un nouveau traitement thermique et un meulage de précision pour restaurer la géométrie et la dureté de l'arête. Le coût du réaffûtage avoisine 60 à 70 % du coût d'une nouvelle lame, ce qui rend le remplacement plus économique. Toutefois, pour les très grandes lames personnalisées (longueur supérieure à 500 mm), le réaffûtage peut être rentable - contactez-nous avec les dimensions de votre lame.",
+            "Une surcharge mécanique, un jeu de coupe inapproprié et une coupe de bord doublée peuvent contribuer à l'écaillage. Un temps excessif entre les rebroyés et un matériau ou une dureté inappropriée peuvent également être impliqués. Examinez ensemble l’avance, la configuration de coupe et le schéma de dommages. La procédure du fabricant du broyeur fournit les exigences de dégagement pour le matériau en cours de traitement.",
+        },
+        {
+          question:
+            "Qu'est-ce qui identifie les couteaux de hachage droits, inclinés, à rayon et affûtés en spirale ?",
+          answer:
+            "Ces termes décrivent la forme du bord de travail ou sa disposition dans la machine. Les dessins du couteau et de l'assemblage établissent le contour, l'orientation et la relation avec le bord opposé. Conservez ces caractéristiques lors de la commande d'un remplacement, en particulier lorsque les mêmes dimensions extérieures du bloc peuvent s'adapter à différents profils de travail.",
+        },
+        {
+          question:
+            "Chaque couteau de hachoir à ferraille a-t-il quatre bords utilisables ?",
+          answer:
+            "Non. Les quatre bords ne sont utilisables que sur les corps de couteaux et les supports conçus pour quatre positions d'indexation. Utilisez le dessin du couteau pour confirmer chaque orientation, inspectez les bords inutilisés pour détecter tout dommage et restaurez la configuration de coupe spécifiée lors du changement de bords.",
+        },
+        {
+          question: "Les couteaux de hachoir usés peuvent-ils être réaffûtés ?",
+          answer:
+            "Oui, si les faces usées ou endommagées peuvent être restaurées dans les dimensions autorisées du couteau. Vérifiez le profil de coupe, les surfaces d'appui et le stock restant par rapport au dessin. Un couteau réaffûté doit toujours être correctement placé et permettre le jeu de coupe spécifié.",
+        },
+        {
+          question:
+            "De quelles informations avez-vous besoin pour proposer des couteaux hachoirs à bordures ?",
+          answer:
+            "Envoyez le modèle du hachoir, le dessin du couteau ou le numéro de pièce d'origine, la qualité de la garniture, l'épaisseur et la largeur, ainsi que la quantité. Étiquetez la position de coupe et le profil de travail, en particulier pour les couteaux inclinés, à rayon ou affûtés en spirale. Si vous utilisez un échantillon, marquez les faces déjà rectifiées.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de hachoir, le dessin du couteau, le modèle de montage, la qualité de la bande, l'épaisseur et la largeur des bords.",
+    disambiguation:
+      "Pour les couteaux circulaires qui coupent la bobine de production, voir [Steel Coil Slitting Knives](/products/metal-coil-slitting-knives) .",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Deux couteaux de hachoir à ferraille rectangulaires montrant les trous de montage et les bords coupants",
+      sizeRange: "100–400 mm",
+      heroSpecs: [
         {
-          question:
-            "Sureay stocke-t-il des lames de hachoir en ferraille ou les fabrique-t-il sur commande ?",
-          answer:
-            "Nous disposons d'un stock de lames de broyeur de ferraille S7 standard dans les six tailles les plus courantes (100×40×15mm à 400×100×30mm). Les lames en stock sont expédiées dans un délai de 3 à 5 jours ouvrables. Les dimensions personnalisées, le matériau H13 et les configurations incrustées de carbure sont fabriqués sur commande avec des délais de 12 à 18 jours ouvrables à compter de l'approbation du dessin. Une production d'urgence (7-10 jours) est possible pour les dimensions standard, sous réserve de la disponibilité du programme de traitement thermique.",
-        },
-        {
-          question:
-            "Sureay peut-il fournir des lames de hachoir en ferraille qui correspondent aux dimensions de nos lames existantes ?",
-          answer:
-            "Oui, envoyez-nous un échantillon de lame, un dessin technique ou la marque et le numéro de modèle de la machine à hacher. Nous confirmerons la longueur, la largeur, l'épaisseur, le schéma des trous de montage (le cas échéant) et la qualité du matériau. La plupart des lames de hachoir sont des blocs rectangulaires standard sans trous de montage, mais certains modèles utilisent une fixation par serrage ou par boulonnage qui nécessite des emplacements de trous spécifiques. Nous pouvons reproduire n'importe quelle géométrie de lame existante.",
+          label: "Application",
+          value:
+            "Bordure de coupe déchargée d'une ligne de refendage de bobines",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
+        alt: "Échantillons de couteaux de hachage montrant différents profils de corps et modèles de trous de montage",
+      },
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "100–400 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Acier à outils S7 , acier à outils H13 ou S7 incrusté de carbure",
+        },
+        {
+          label: "Dureté",
+          value: "Versions de couteaux en acier : 54–58 HRC",
+        },
+        {
+          label: "Corps de lame",
+          value:
+            "Profils carrés ou rectangulaires ; versions à quatre bords disponibles",
+        },
+        {
+          label: "Configurations du hacheur",
+          value:
+            "Dispositions de couteaux droits ou inclinés ; profils à rayon et rectifiés en spirale selon le dessin",
+        },
+        {
+          label: "Application",
+          value:
+            "Débris d'acier, d'aluminium et de cuivre provenant des lignes de refendage de bobines",
+        },
+        {
+          label: "Cycle de vie",
+          value:
+            "50 000 à 200 000 côtelettes, en fonction du matériau et de la contamination",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+          ],
+          rows: [
+            ["SR003301", "100", "40", "15"],
+            ["SR003302", "150", "50", "20"],
+            ["SR003303", "200", "60", "25"],
+            ["SR003304", "250", "80", "25"],
+            ["SR003305", "300", "80", "30"],
+            ["SR003306", "400", "100", "30"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Incluez le modèle de hachoir, le dessin du couteau, le modèle de montage, la qualité de la bande, l'épaisseur et la largeur des bords.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    rfqPlaceholder:
+      "Incluez le modèle de hachoir, le dessin du couteau, le modèle de montage, la qualité de la bande, l'épaisseur et la largeur des bords.",
+    dimensionLabels: {
+      intro:
+        "Les dimensions répertoriées identifient les configurations de catalogue. Confirmez le dessin, l'interface de montage, la position du couteau et les bords de coupe utilisables ; la taille à elle seule n’identifie pas le modèle du hachoir.",
     },
   },
   {
     id: "strand-pelletizer-rotors",
-    name: "Rotors de granulation Strand",
-    fullName:
-      "Rotors de granulation de brins de haute précision pour lignes de compoundage",
-    category: "granulator_blades",
+    name: "Rotors pour granulateurs à joncs",
+    fullName: "Rotors de coupe pour granulateurs de joncs en plastique",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Lames de pelletisation",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    imageDimensions: {
+      width: 1600,
+      height: 1600,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "PM-HSS et carbure",
     badgeColor: "blue",
     gallery: [
@@ -4691,9 +6377,7 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
     description:
-      "Rotors de granulation de brins de précision conçus pour les lignes de compoundage en continu et à haut volume. Construction PM-HSS (ASP2023, ASP2052) et carbure de tungstène solide. Géométrie hélicoïdale avec une concentricité ≤0,005 mm, équilibrage dynamique selon ISO 1940-1 G2.5. Remplacement direct pour les granulateurs Maag, Coperion, Cumberland, Conair et Reduction Engineering.",
-    fullDescription:
-      "Conçus pour les lignes de compoundage en continu et à haut volume, les rotors de granulation Sureay produisent des micro-granulés impeccables et uniformes, sans résidus. Fabriqués à partir d'aciers rapides à métallurgie des poudres (PM-HSS) et de carbure de tungstène solide, nos rotors hélicoïdaux sont conçus pour résister à l'usure abrasive extrême des polymères chargés de verre (GF), de carbone et fortement pigmentés. Chaque rotor est soumis à un équilibrage dynamique rigoureux et à une rectification de profil de précision pour garantir une concentricité parfaite, réduisant ainsi l'usure des roulements et les vibrations, même aux vitesses de rotation les plus élevées.\n\n## Types de rotors\n\n**Rotors hélicoïdaux:** La configuration standard pour le compoundage continu à grande vitesse. Le pas hélicoïdal constant sur toute la largeur de coupe assure une action de cisaillement progressive - une dent s'engage à chaque instant plutôt que l'ensemble du bord soit impacté simultanément. Cela réduit considérablement la force de coupe maximale, la charge du moteur et les cassures de brins. Les centres d'affûtage CNC à 5 axes de Sureay maintiennent la constance du pas hélicoïdal à ±0,01° sur toute la surface du rotor.\n\n**Rotors à bord droit:** Spécifiés pour les élastomères plus souples et les polymères fondus de faible viscosité pour lesquels la force de cisaillement hélicoïdale est excessive. L'action de coupe simultanée sur toute la largeur permet d'obtenir une longueur de granulé propre et cohérente sur les brins de TPE, TPU et TPV.\n\n**Rotors à incrustation en carbure brasé:** La solution optimale pour le compoundage abrasif des composés à base de verre (GF), de carbone (CF) et de minéraux. Les inserts de coupe en carbure de tungstène sont brasés sous vide dans des corps de rotor HSS usinés avec précision. Les arêtes en carbure offrent une durée de vie 5 à 10 fois supérieure à celle des M2 standard sur les composés GF40 et CF30, tandis que le corps HSS résistant absorbe les chocs dus aux brins intermittents et aux démarrages à froid sans rupture fragile.\n\n**Rotors en carbure solide:** La spécification ultime pour les composés extrêmement abrasifs à débit modéré. Ils sont utilisés dans les mélanges spéciaux de céramiques ultra-abrasives, de nitrure de bore et de polymères remplis de SiC, où même les pointes en carbure brasées s'usent rapidement.\n\n## Sélection des matériaux par application\n\n**M2, M35 HSS (compoundage standard):** Rentable pour les thermoplastiques non chargés - PA6, PA66, PC, POM, PBT - à des températures de compoundage standard. La qualité cobalt M35 prolonge la durée de vie des charges modérément abrasives (talc, CaCO₃) de 30 à 40 % par rapport au M2 standard.\n\n**PM-HSS : ASP2023, ASP2052, CPM10V (Abrasive Compounding):** La fabrication par métallurgie des poudres produit une distribution de carbure ultra-fine et homogène que les HSS conventionnels ne peuvent pas atteindre. L'ASP2023 offre une durée de vie des arêtes 2 à 3 fois plus longue sur les composés GF20 et CF15. ASP2052 et CPM10V augmentent la durée de vie de l'outil de 4 à 6× M2 sur les composés chargés les plus exigeants. La microstructure PM réduit également le micro-déchiquetage de l'arête qui est à l'origine des particules fines et de la contamination par la poussière.\n\n**Carbure de tungstène massif (WC) et pointes en carbure brasées (usure extrême):** Pour les composés à fibres de verre longues (LGF), les polymères renforcés de fibres de carbone et les mélanges-maîtres à haute teneur en minéraux. Le carbure conserve son tranchant sous une charge abrasive soutenue qui décaperait le PM-HSS en quelques heures.\n\n## Scénarios d'application\n\n**Les rotors carbure de tungstène brasés conservent leur tranchant 5 à 10 fois plus longtemps que les HSS standard lors du cisaillement de composites structurels hautement abrasifs. Le processus de brasage sous vide garantit que les dents en carbure ne peuvent pas se détacher, même en cas de chocs sévères dus à des démarrages à froid.\n\n**Les cannelures des dents polies miroir (Ra 0,2 µm) empêchent l'accumulation de couleur, ce qui permet des changements de couleur rapides et une absence de contamination croisée entre les lots.\n\n**Thermoplastiques d'ingénierie (PA, PC, POM, PBT):** La concentricité ultra serrée (≤0,005 mm) permet aux opérateurs de régler des micro-écarts extrêmes, ce qui se traduit par une cisaille propre, semblable à un ciseau, qui élimine les fines, la poussière et les peaux de serpent.\n\n**Elastomères souples (TPE, TPU, TPV):** Les angles de coupe aigus optimisés empêchent l'étirement et le maculage des brins souples, éliminant ainsi l'effet de queue redouté.\n\n## Compatibilité OEM\n\nSureay fabrique des rotors de remplacement pour les principales plates-formes de granulation. Tous les rotors de remplacement sont conçus à partir de dessins OEM ou d'échantillons de clients, vérifiés sur CMM et fournis avec des rapports d'inspection dimensionnelle complets.\n\n*Tous les noms de fabricants et les modèles sont utilisés à des fins de référence et de compatibilité uniquement",
+      "Rotors de granulation à brins de rechange avec bords coupants hélicoïdaux ou droits. Options HSS et carbure, avec profils de dents et extrémités d'arbre personnalisés.",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
     compatibleMachines: [
@@ -4703,66 +6387,130 @@ export const blades: Blade[] = [
       "Conair",
       "Reduction Engineering",
     ],
+    compatibleMachinesIntro:
+      "Sourcez des rotors de granulation de brins de remplacement avec le motif de dents, la largeur de travail et les interfaces d'arbre dont votre ligne a besoin. Sureay propose des conceptions hélicoïdales ou à bord droit dans les constructions en acier et en carbure. Partagez votre dessin ou votre rotor usé pour un devis de remplacement personnalisé. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "strand-rotor-tooth-layout",
+        tag: "Géométrie de coupe",
+        title: "Options de rotor HSS , PM-Acier et Carbure",
+        description:
+          "Sureay propose des options M2 , M35 , ASP2023 , ASP2052 et CPM 10V ainsi que des constructions de coupe en carbure monobloc ou brasé, permettant de spécifier le matériau du rotor pour le composé polymère et la conception de coupe existante.",
+      },
+      {
+        id: "strand-rotor-construction",
+        tag: "Construction",
+        title: "Géométries de coupe hélicoïdales et droites",
+        description:
+          "Les diamètres de coupe répertoriés vont de Ø100 à 250 mm. Sureay fournit des rotors hélicoïdaux et droits avec le nombre de dents, le profil et la largeur de travail spécifiés pour le granulateur existant.",
+      },
+      {
+        id: "strand-rotor-cutting-pair",
+        tag: "Assemblage de coupe",
+        title: "Extrémités d'arbre et interfaces de roulements personnalisées",
+        description:
+          "Les rotors peuvent être fabriqués avec les extrémités d'arbre, les sièges de roulement, les épaulements et les connexions d'entraînement requis par la machine existante, combinant la section de coupe et les interfaces de montage dans une seule spécification de remplacement.",
+        relatedBladeIds: ["die-face-cutting-knives"],
+      },
+    ],
     specs: [
       {
-        label: "Material",
-        value:
-          "M2 (AISI M2 / 1.3343) | M35 (1.3243) | PM-HSS ASP2023 (1.3395) / ASP2052 / CPM10V | Solid WC & Brazed Carbide",
+        label: "Dimensions",
+        value: "Ø100–250 mm",
       },
       {
         label: "Application",
+        value: "Couper des brins de polymère refroidis en granulés",
+      },
+      {
+        label: "Matériau",
         value:
-          "GF/CF Compounding, Masterbatch, Engineering Thermoplastics (PA/PC/POM/PBT), Soft Elastomers (TPE/TPU/TPV)",
+          "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , carbure de tungstène solide ou carbure brasé",
       },
       {
-        label: "Rotor Types",
+        label: "Types de rotors",
         value:
-          "Helical (Spiral), Straight Edge, Brazed Carbide Inlay, Solid Carbide",
+          "Rotors hélicoïdaux ou droits ; tranchants pleins ou en carbure brasé",
       },
       {
-        label: "Tooth Count",
-        value: "10, 12, 16, 24, 32, 48, 60, up to 120 (custom)",
+        label: "Nombre de dents",
+        value: "10, 12, 16, 24, 32, 48 ou 60 ; la coutume compte jusqu'à 120",
       },
       {
-        label: "Concentricity (Runout)",
-        value: "≤ 0.005 mm — critical for micro-clearance setting",
+        label: "Angle hélicoïdal",
+        value: "1,5°, 2° ou 3° ; hélice personnalisée disponible",
       },
       {
-        label: "Surface Polish",
-        value: "Ra 0.2 µm — prevents polymer build-up and sticking",
+        label: "Concentricité (rond-rond)",
+        value: "≤0.005 mm",
       },
       {
-        label: "Dynamic Balancing",
-        value: "ISO 1940-1 G2.5 — vibration-free at peak RPM",
+        label: "Finition de surface",
+        value: "Ra 0.2 µm",
       },
       {
-        label: "Helical Angle",
-        value: "1.5°, 2°, 3° or custom-milled to OEM blueprints",
+        label: "Équilibrage dynamique",
+        value: "ISO 1940-1, qualité G2.5",
+      },
+      {
+        label: "Matière première",
+        value:
+          "Composés GF/CF, masterbatch, élastomères PA, PC, POM, PBT et TPE/TPU/TPV",
       },
     ],
-    components: [
-      {
-        id: "dynamic-balancing",
-        tag: "INGÉNIERIE DE PRÉCISION",
-        title: "Equilibrage dynamique sans défaut",
-        description:
-          "Fonctionnant à des vitesses élevées, les rotors déséquilibrés détruisent les roulements et les jeux. Chaque rotor Sureay est équilibré dynamiquement à des vitesses de fonctionnement conformes aux normes ISO 1940-1 G2.5, ce qui garantit un fonctionnement silencieux et sans vibrations et protège l'investissement en roulements du granulateur.",
-      },
-      {
-        id: "helical-geometry",
-        tag: "rECTIFICATION CNC À 5 AXES",
-        title: "Géométrie hélicoïdale parfaite",
-        description:
-          "Grâce à des centres de rectification CNC à 5 axes ultramodernes, nous garantissons que le pas hélicoïdal est constant sur toute la largeur de coupe. Cela garantit une force de cisaillement constante, réduisant la charge du moteur et empêchant la rupture des brins sur les lignes de compoundage à grande vitesse.",
-      },
-      {
-        id: "vacuum-brazing",
-        tag: "TECHNOLOGIE DU CARBURE",
-        title: "Brasage sous vide exclusif",
-        description:
-          "Pour les rotors à pointe en carbure, un procédé spécialisé de brasage sous vide à haute résistance garantit que les dents en carbure ne se détacheront jamais, même en cas de chocs violents dus à des démarrages à froid ou à des conditions d'alimentation intermittente en brins.",
-      },
-    ],
+    relatedBladeIds: ["die-face-cutting-knives", "granulator-blades"],
+    offers: {
+      lowPrice: 80,
+      highPrice: 1200,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Qu'est-ce qui identifie un rotor de granulateur à brins de remplacement ?",
+          answer:
+            "Le diamètre de coupe, la largeur de travail, la forme des dents, l'hélice et les deux extrémités de l'arbre identifient ensemble le rotor. Incluez les sièges de roulement, les connexions d'entraînement et le couteau fixe correspondant. Le rotor de coupe-granulation est un nom d'achat associé au composant denté qui coupe les brins de polymère, tandis que l'ensemble complet de la tête de coupe contient des pièces supplémentaires.",
+        },
+        {
+          question:
+            "Comment choisir le matériau du rotor pour les composés polymères chargés ?",
+          answer:
+            "Tenez compte du polymère, du type de charge et de la charge en fonction de l'état actuel des bords. L’usure abrasive et l’écaillage des dents nécessitent différentes considérations en matière de matériaux. Comparez la construction existante en HSS, en acier PM ou en carbure avec le modèle d'usure et l'agencement de coupe réels, y compris le couteau fixe, avant de sélectionner un matériau de remplacement différent.",
+        },
+        {
+          question:
+            "En quoi un rotor à torons diffère-t-il d'un couteau de découpe à matrice ?",
+          answer:
+            "Un rotor à torons coupe les brins de polymère formés contre un couteau à lit fixe. Les [Couteaux de découpe à face](/products/die-face-cutting-knives) sont des lames individuelles portées par un moyeu au niveau de la face de la filière d'extrusion. Certains systèmes de torons coupent également sous l'eau, de sorte que l'emplacement du processus et l'assemblage de coupe fournissent une identification plus claire que le mot sous l'eau seul.",
+        },
+        {
+          question:
+            "La seule modification du nombre de dents peut-elle modifier la taille des granulés ?",
+          answer:
+            "Oui. La modification du nombre de dents peut modifier la longueur des granulés même avec la même vitesse de rotor et la même alimentation en brins. La modification du nombre de dents modifie la configuration de coupe. Pour un remplacement à l'identique, conservez le modèle de dent approuvé et spécifiez séparément la configuration existante et la longueur cible des pellets.",
+        },
+        {
+          question:
+            "Pourquoi la qualité des pellets peut-elle changer même lorsque les bords du rotor sont tranchants ?",
+          answer:
+            "Une alimentation ou un refroidissement inégal des brins peut modifier la qualité des granulés, même lorsque les bords du rotor sont coupants. Comparez l’état du fil au niveau de la tête de coupe avec la configuration du rotor au couteau stationnaire. Si le défaut évolue avec l'avance, contrôler également en amont du tranchant.",
+        },
+        {
+          question: "Un rotor de granulateur à brins peut-il être réaffûté ?",
+          answer:
+            "Oui, lorsque la construction et le matériau de coupe restant permettent de restaurer la géométrie de dent spécifiée. Vérifiez le diamètre réduit du rotor par rapport à sa position de travail par rapport au couteau fixe. Enregistrez le diamètre rectifié séparément lors de la commande d'un nouveau rotor.",
+        },
+        {
+          question:
+            "Comment demander un devis pour un rotor de coupe pour granulateur de brins ?",
+          answer:
+            "Envoyez le modèle de pelletiseur, le dessin du rotor ou la référence originale, le polymère et la charge, ainsi que la quantité. Spécifiez le diamètre de coupe, la largeur de travail, le nombre de dents et la direction de l'hélice, et incluez des dessins des deux extrémités de l'arbre et du couteau fixe correspondant. Marquer séparément le diamètre réduit si le rotor de référence a été rectifié.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de granulateur, le dessin du rotor, la largeur de travail, le nombre et le profil des dents, les extrémités de l'arbre et les détails du couteau fixe.",
     dimensionLabels: {
       col0: "Plate-forme OEM",
       col1: "Diamètre du rotor (mm)",
@@ -4774,6 +6522,7 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007101",
         spec: "Maag Primo / Baoli",
         od: "100 – 200",
         id: "80 – 300",
@@ -4781,27 +6530,31 @@ export const blades: Blade[] = [
         teeth: "2° / 3°",
       },
       {
-        spec: "Coperion SP Series",
+        itemNo: "SR007102",
+        spec: "Série Coperion SP",
         od: "120 – 250",
         id: "100 – 350",
         length: "16 / 24 / 32",
         teeth: "1.5° / 2°",
       },
       {
-        spec: "Cumberland Quietizer",
+        itemNo: "SR007103",
+        spec: "Silencieux Cumberland",
         od: "100 – 180",
         id: "80 – 250",
         length: "12 / 16",
         teeth: "2° / 3°",
       },
       {
-        spec: "Conair 304 / 306 / CS",
+        itemNo: "SR007104",
+        spec: "Conair 304/306/CS",
         od: "100 – 200",
         id: "80 – 300",
         length: "12 / 16 / 24",
         teeth: "2°",
       },
       {
+        itemNo: "SR007105",
         spec: "Reduction Engineering SGS",
         od: "120 – 220",
         id: "100 – 320",
@@ -4809,74 +6562,100 @@ export const blades: Blade[] = [
         teeth: "1.5° / 2° / 3°",
       },
     ],
-    relatedBladeIds: [
-      "die-face-cutting-knives",
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "twin-shaft-blades-recycling",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1200,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Rotors de coupe pour pelletiseur à brins | Remplacement personnalisé",
+      heroAlt:
+        "Rotor de coupe pour granulateur de brins avec surface de coupe dentée et extrémités d'arbre",
+      sizeRange: "Ø100–250 mm",
+      heroSpecs: [
         {
-          question:
-            "Nous traitons 40 % de nylon chargé de verre (PA66 GF40). Les rotors M2 standard s'usent en quelques jours. Quelle est votre solution ?",
-          answer:
-            "Pour une usure abrasive extrême, l'acier M2 n'est pas suffisant. Nous recommandons nos qualités PM-HSS (ASP2023 ou ASP2052) ou nos rotors en carbure de tungstène brasés. Bien que l'investissement initial soit plus élevé, la durée de vie de l'outil est prolongée jusqu'à 1000%, ce qui réduit considérablement les temps d'arrêt de la machine et diminue votre coût par tonne de composé. Pour le PA66 GF40 en particulier, les rotors brasés en carbure constituent la solution à long terme la plus rentable - le corps en acier rapide supporte les chocs tandis que les arêtes de coupe en carbure résistent à l'abrasion.",
+          label: "Matériau",
+          value: "HSS , PM ou carbure de tungstène",
         },
         {
-          question:
-            'Pourquoi nos granulés ont-ils des "queues" et comment vos rotors peuvent-ils remédier à ce problème ?',
-          answer:
-            "La queue se produit lorsque le brin de polymère est déchiré ou fondu au lieu d'être cisaillé proprement. Ce phénomène est causé par des dents de rotor émoussées, des angles hélicoïdaux irréguliers ou un jeu excessif dû au faux-rond du rotor. Les rotors Sureay présentent une concentricité de ≤0,005 mm, ce qui permet à vos techniciens d'établir un micro-écart contre le couteau du lit pour une coupe parfaite, à la manière d'un ciseau. La surface polie des goujures (Ra 0,2 µm) empêche également le collage du polymère qui crée une traînée et une force de cisaillement inégale.",
-        },
-        {
-          question:
-            "Quelle est la différence entre les rotors hélicoïdaux et les rotors à bord droit, et quand dois-je les utiliser ?",
-          answer:
-            "Les rotors hélicoïdaux produisent une action de cisaillement progressive - un seul segment de dent s'engage à la fois - qui réduit la force de coupe maximale, les pics d'ampérage du moteur et les cassures de brins. Cela en fait le choix standard pour les thermoplastiques rigides et les composés chargés sur les lignes à grande vitesse. Les rotors à bord droit s'engagent simultanément sur toute la largeur de coupe, ce qui est préférable pour les élastomères souples (TPE, TPU, TPV) où la force de cisaillement hélicoïdale progressive peut étirer et déformer le brin au lieu de le couper proprement.",
-        },
-        {
-          question:
-            "Pouvez-vous reproduire un rotor sur mesure si nous vous envoyons un échantillon physique ou un dessin CAO ?",
-          answer:
-            "Absolument. En tant qu'usine de fabrication directe, nous disposons de capacités complètes d'ingénierie inverse. Vous pouvez nous envoyer votre rotor usé ou vos plans techniques, et nous produirons un dessin CAO détaillé pour votre approbation avant de fabriquer le remplacement exact. La vérification dimensionnelle sur CMM est effectuée avant l'expédition.",
-        },
-        {
-          question:
-            "Comment savoir quand remplacer ou rebroyer le rotor de mon granulateur de brins ?",
-          answer:
-            "Indicateurs clés : (1) augmentation des fines et de la poussière dans le flux de granulés - les dents émoussées déchirent au lieu de cisailler ; (2) augmentation de l'ampérage du moteur sur l'entraînement du granulateur - les bords émoussés nécessitent plus de force ; (3) rupture de brins de plus en plus fréquente - la force de cisaillement irrégulière due à la géométrie usée augmente les pics de tension ; (4) réapparition de résidus malgré un réglage correct de l'écartement - la concentricité usée entraîne une variation de l'écartement autour de la circonférence du rotor. Pour les rotors PM-HSS, le réaffûtage de précision selon la géométrie d'origine est rentable. Pour les rotors à pointe en carbure, le carbure peut être réajusté une fois avant qu'un remplacement complet du rotor ne soit nécessaire.",
+          label: "Application",
+          value: "Couper des brins de polymère refroidis en granulés",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "Sureay peut-il fournir des ensembles rotor et couteau de lit (stator) assortis ?",
-          answer:
-            "Oui, et nous recommandons fortement de les acheter par paires assorties. Nous fabriquons des couteaux de lit de stator en stellite 6 (pour les rotors HSS) et en carbure monobloc (pour les rotors à pointe en carbure). Une paire assortie garantit que la géométrie de la fente de coupe et le différentiel de dureté sont optimisés ensemble, ce qui permet une granulation sans queue dès le premier brin. Les combinaisons rotor-stator mal adaptées sont l'une des principales causes d'usure prématurée et de formation de queues sur des lignes par ailleurs bien entretenues.",
+          label: "Dimensions",
+          value: "Ø100–250 mm",
         },
         {
-          question:
-            "Quels sont les délais et la documentation que Sureay peut fournir pour les rotors de remplacement ?",
-          answer:
-            "Les rotors de remplacement PM-HSS standard pour les plates-formes OEM courantes (Maag, Coperion, Cumberland) sont expédiés dans un délai de 10 à 15 jours ouvrables à compter de l'approbation du dessin. Les angles d'hélice personnalisés ou les nombres de dents non standard nécessitent 15 à 20 jours ouvrables. Chaque rotor est livré avec : Certificat d'inspection dimensionnelle CMM, rapport d'équilibrage dynamique (ISO 1940-1 G2.5), certificat d'essai de dureté et traçabilité des matériaux de l'aciérie. La production d'urgence est possible sous réserve du calendrier.",
+          label: "Application",
+          value: "Couper des brins de polymère refroidis en granulés",
+        },
+        {
+          label: "Matériau",
+          value:
+            "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , carbure de tungstène solide ou carbure brasé",
+        },
+        {
+          label: "Types de rotors",
+          value:
+            "Rotors hélicoïdaux ou droits ; tranchants pleins ou en carbure brasé",
+        },
+        {
+          label: "Nombre de dents",
+          value: "10, 12, 16, 24, 32, 48 ou 60 ; la coutume compte jusqu'à 120",
+        },
+        {
+          label: "Angle hélicoïdal",
+          value: "1,5°, 2° ou 3° ; hélice personnalisée disponible",
+        },
+        {
+          label: "Concentricité (rond-rond)",
+          value: "≤0.005 mm",
+        },
+        {
+          label: "Finition de surface",
+          value: "Ra 0.2 µm",
+        },
+        {
+          label: "Équilibrage dynamique",
+          value: "ISO 1940-1, qualité G2.5",
+        },
+        {
+          label: "Matière première",
+          value:
+            "Composés GF/CF, masterbatch, élastomères PA, PC, POM, PBT et TPE/TPU/TPV",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/strand-pelletizer-rotor-03.webp",
+        alt: "Rotor de pelletiseur à brins montrant sa surface de coupe et la disposition de l'arbre",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour votre rotor de pelletiseur",
+        description:
+          "Incluez le modèle de la machine, le dessin du rotor, la largeur de travail, la forme des dents, les détails de l'extrémité de l'arbre et la quantité.",
+        buttonLabel: "Demander un devis",
+      },
     },
+    disambiguation:
+      "Pour les lames montées sur un moyeu de coupe-face, voir [Couteaux de découpe à face](/products/die-face-cutting-knives) .",
   },
   {
     id: "continuous-melt-filter-scraper-blades",
-    name: "Lames de raclage du filtre de fusion",
-    fullName:
-      "Lames de raclage et plaques filtrantes de qualité supérieure pour les filtres à fusion continue",
-    category: "granulator_blades",
+    name: "Lames racleuses pour filtres de polymère fondu",
+    fullName: "Lames de raclage pour filtres continus de polymère fondu",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Lames de raclage du filtre de fusion",
+    categoryDisplay: "Lames racleuses pour filtres de polymère fondu",
     image: "/images/products/blades/scraper-blades.webp",
+    imageDimensions: {
+      width: 2560,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 720,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Recyclage PCR",
     badgeColor: "orange",
     gallery: [
@@ -4885,9 +6664,7 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-02.webp",
     ],
     description:
-      "Lames de raclage de précision D2/H13/Carbure et plaques filtrantes coniques percées au laser pour les filtres continus à fusion PCR. La synergie des duretés (lame HRC 58-62 contre plaque nitrurée au plasma HV 1 000+) protège l'investissement en plaques filtrantes. Alliages résistants au HCl pour les mélanges de PVC. Compatible avec les filtres EREMA, Gneuß, Ettlinger et FIMIC.",
-    fullDescription:
-      "Les filtres à fusion continue sont le cœur de toute ligne de recyclage des plastiques PCR à haut débit. Lors du traitement d'un rebroyé post-consommation fortement contaminé - contenant des charges minérales, des fibres de verre, des résidus carbonisés et des particules étrangères dures - la lame de raclage est le seul composant soumis à la charge combinée la plus extrême : usure abrasive due aux contaminants durs, fatigue thermique due à l'exposition cyclique à la température de la matière fondue (220-300 °C), et contrainte de flexion cyclique due au mécanisme de rotation. Une lame qui s'abîme prématurément entraîne un arrêt d'urgence de la ligne, ce qui coûte des heures de redémarrage et gaspille d'importants volumes de matière fondue en cours de fabrication.\n\nLes lames de racleur de filtre à fusion continue Sureay sont fabriquées avec précision à partir d'acier à outils D2 acier à outils pour travail à froid et H13 - deux alliages spécifiquement sélectionnés pour cette double exigence de résistance à l'usure et à la chaleur - et traitées thermiquement sous vide à HRC 58-62 avec un post-traitement cryogénique profond pour éliminer l'austénite retenue et prolonger la durée de vie de 30 à 40 % par rapport à l'acier traitement thermique standard.\n\n## Sélection d'alliages par niveau de contamination\n\n**Acier à outils D2 (HRC 60-62):** La spécification standard pour les PCR HDPE, PP, et les plastiques rigides mixtes avec une contamination modérée (< 3% de charge minérale). La teneur en chrome de 12 % et en carbone de 1,5 % offre une excellente résistance à l'abrasion contre les particules de verre et les charges de carbonate de calcium à des températures de traitement de la matière fondue allant jusqu'à 260 °C. Rentable pour la filtration continue à usage moyen à des débits de 300-800 kg/h.\n\n**Acier à outils pour travail à chaud H13 (HRC 48-52):** Sélectionné pour les flux fortement contaminés - regrind de film post-consommation, film de paillage agricole, plastiques DEEE - où les températures de fusion dépassent 280 °C et où les cycles thermiques sont sévères. La matrice de carbure de molybdène et de vanadium du H13 maintient la stabilité dimensionnelle et la géométrie des arêtes sous une charge thermique soutenue qui amènerait le D2 à se ramollir et à se déformer.\n\n**Carbure de tungstène solide (HRA 88-91):** La spécification ultime pour les matières premières ultra-abrasives : plastiques techniques remplis de verre (PA-GF30, PBT-GF), flux contaminés par la céramique et film agricole riche en silicium avec des particules de terre incrustées. Les racleurs en carbure offrent une durée de vie 5 à 8 fois supérieure à celle des racleurs D2 sur ces matières premières, ce qui réduit la fréquence de remplacement des lames à une fois toutes les 1 000 heures de fonctionnement ou plus.\n\n## Géométrie des lames affûtées avec précision\n\nLa géométrie du bord de la lame du racleur contrôle directement la propreté de la surface du tamis de filtration et donc la constance de la pression de fusion. Un racleur usé ou mal profilé laisse une couche de contamination résiduelle sur le tamis de filtration, ce qui entraîne une augmentation progressive de la pression, une réduction du débit et, finalement, une rupture du tamis. Les lames Sureay sont rectifiées avec précision à ±0,05 mm de tolérance dimensionnelle avec des profils de biseau adaptés à la géométrie de contact du tamis de chaque équipementier de filtre. Le résultat est une action de raclage cohérente et reproductible qui maintient la propreté de l'écran pendant toute la durée de vie de la lame.\n\n## Compatibilité avec les OEM\n\nLa géométrie des lames de raclage est spécifique à chaque machine : chaque équipementier de filtre à fusion continue utilise des dimensions de rotor, des interfaces de montage de lames et des diamètres de tamis qui lui sont propres. Sureay procède à la rétro-ingénierie des lames de remplacement à partir des dessins des OEM ou des échantillons des clients, en vérifiant l'ajustement sur une machine à mesurer tridimensionnelle (CMM) avant la production. Compatible avec le filtre continu EREMA, le système de filtration rotatif Gneuß, la série ERF d'Ettlinger, la série RAS de FIMIC, la série KSF de Kreyenborg et les changeurs de tamis continus BKG de Nordson.\n\n## Micro-perforations des plaques filtrantes coniques percées au laser\n\nLa géométrie des trous de la plaque filtrante est aussi importante que le matériau de la lame de raclage. Les trous cylindriques standard perforés ou percés créent un canal à paroi plate où le polymère fondu et les contaminants en suspension peuvent stagner - se carbonisant à l'intérieur du trou sous l'effet d'une chaleur soutenue, réduisant progressivement la surface ouverte effective, et provoquant finalement un blocage prématuré du tamis. Les plaques filtrantes Sureay utilisent des micro-perforations coniques (effilées) percées au laser : le trou est le plus étroit au niveau de la surface de contact avec la matière fondue en amont et s'élargit progressivement vers la sortie en aval. Ce profil conique exploite la pression hydraulique du côté de la matière fondue : une fois qu'une particule contaminante passe la restriction étroite de l'entrée, la géométrie du canal en expansion l'expulse immédiatement vers la sortie sans stagnation de la zone morte. Il en résulte une plaque filtrante qui maintient une pression différentielle et un pourcentage de surface ouverte constants pendant un intervalle de service nettement plus long - ce qui est particulièrement important pour les flux de PCR fortement contaminés où les plaques à trous cylindriques nécessiteraient un remplacement fréquent.\n\nFinesse de filtration disponible : 80 µm (rPET/rHDPE en contact avec les aliments), 150-200 µm (PCR de qualité film), 300-500 µm (PCR de qualité injection), 500-2 000 µm (préfiltration grossière). Profil conique disponible pour tous les degrés de finesse.\n\n## Hardness Synergy : Protégez votre investissement en plaques filtrantes\n\nUne préoccupation commune et justifiée lors de l'approvisionnement en lames de raclage du marché secondaire est de savoir si une lame de remplacement à dureté élevée va marquer ou entailler la plaque de filtre - un composant d'investissement qui coûte beaucoup plus cher que la lame elle-même. Sureay conçoit une différence de dureté délibérée et vérifiée entre la lame de raclage et la surface de la plaque filtrante.\n\nLa face amont de la plaque filtrante est nitrurée au plasma à HV 1 000+ (équivalent approximativement à HRC 70+), créant une couche de surface extrêmement dure et résistante à l'usure, semblable à une céramique, d'une profondeur de 0,1 à 0,3 mm. La lame de raclage est intentionnellement fabriquée à un HRC inférieur (58-62). Ce différentiel signifie que dans toutes les conditions d'utilisation, la lame est le consommable à usure contrôlée : elle s'use progressivement contre la surface plus dure de la plaque sans générer de rayures ou de goujures dues au transfert de métal. La surface de la plaque filtrante reste intacte pendant plusieurs cycles de remplacement de la lame. Chaque livraison de lame Sureay comprend un certificat d'essai de dureté confirmant que la lame se situe dans la plage HRC spécifiée - documentation vérifiable que le principe d'usure contrôlée est maintenu dans chaque lot de production.\n\n## Résistance aux produits chimiques et à la corrosion pour les cours d'eau en PVC et en plastique mélangé\n\nLe traitement du PVC post-consommation lavé, des films flexibles mixtes ou des plastiques dérivés des DEEE libère des dégagements gazeux agressifs et corrosifs - principalement de l'acide chlorhydrique (HCl) et des composés organochlorés - à des températures de fusion comprises entre 200 et 260 °C. Les aciers à outils D2 et H13 standard se corrodent en cas d'exposition prolongée au HCl : des piqûres de surface apparaissent aux joints de grains, dégradant progressivement la géométrie des bords des micro-perforations et agrandissant les diamètres des trous au-delà des spécifications, compromettant ainsi la qualité de la filtration sans aucune indication externe visible.\n\nPour les flux incluant du PVC, Sureay applique deux mesures de protection : (1) l'amélioration de l'alliage de base avec des nuances d'acier PM (métallurgie des poudres) résistantes à la corrosion, avec une distribution homogène du chrome qui résiste à l'attaque acide des limites du grain ; (2) des revêtements de barrière par dépôt physique en phase vapeur (PVD) sur les surfaces des plaques filtrantes qui scellent les parois des micro-perforations contre la diffusion du HCl. Cette combinaison prolonge la durée de vie des plaques filtrantes de 2 à 3 fois par rapport aux plaques en alliage standard non revêtues sur les matières premières contenant du PVC, et empêche le mode de défaillance insidieux d'agrandissement des trous qui sape l'efficacité de la filtration sans déclencher d'alarme de pression.\n\n## Compatibilité avec le rinçage à contre-courant\n\nLes filtres à fusion continue haut de gamme (ERF d'Ettlinger, RSFgenius de Gneuß, KSF de Kreyenborg) intègrent des mécanismes de rétro-rinçage automatisés : une impulsion inverse à haute pression de matière fondue propre est périodiquement envoyée vers l'arrière à travers une section localisée de la plaque filtrante afin d'expulser le gâteau de contaminants incrusté dans les micro-perforations, ce qui rétablit la surface ouverte sans arrêter la ligne. L'impulsion de rétro-rinçage génère un pic de pression inverse localisé - typiquement de 150 à 400 bars selon l'équipementier - appliqué à une petite zone de la plaque filtrante.\n\nLes plaques filtrantes Sureay sont conçues et fabriquées pour résister aux pressions de rétro-rinçage des OEM sans micro-fissuration ni déformation. La géométrie du trou conique est dimensionnellement optimisée pour cela : la sortie aval plus large de chaque perforation conique agit comme une buse évasée qui accélère l'impulsion de rétro-rinçage, améliorant l'efficacité de l'éjection des contaminants par rapport aux trous cylindriques. L'intégrité structurelle sous des cycles répétés d'inversion à haute pression est validée par une analyse par éléments finis (FEA) de la distribution des contraintes du ligament inter-trou. Les plaques Sureay de remplacement sont compatibles à 100 % avec la synchronisation, la pression et la disposition du réseau de trous de l'équipementier - aucun recalibrage du contrôleur de rétro-rinçage n'est nécessaire.\n\n## Analyse des défaillances : Diagnostiquer et éliminer les défaillances courantes des racleurs et des filtres\n\nLes ingénieurs qui recherchent des composants de remplacement sont généralement confrontés à un mode de défaillance spécifique. Le choix du matériau à utiliser dépend de la cause première.\n\n**L'écaillage des arêtes (fracture fragile à l'extrémité de la lame):** Causé par un seul impact à haute énergie de métal perdu - boulons, écrous, fragments de fil - incrusté dans la matière première de rebroyage PCR. Les carbures D2 et standard sont vulnérables à la rupture fragile sous cette charge d'impulsion. **Amélioration:** Spécifier H13 (ténacité plus élevée que D2) pour les flux de contamination mixte où le risque de métaux parasites est modéré, ou une nuance de carbure à ténacité optimisée (teneur en Co ≥ 12 %) pour les flux à haut risque. Ajouter un aimant et/ou un détecteur de métaux en amont pour réduire la fréquence des déchets métalliques.\n\n**Rainurage progressif de la surface de la plaque filtrante:** Fines rainures parallèles sur la face de la plaque filtrante, accompagnées d'une augmentation de la pression différentielle et d'un raccourcissement de l'intervalle entre les lames. Causé par une dureté incorrecte de la lame (lame plus dure que la plaque), un angle de biseau incorrect causant une charge concentrée sur les bords, ou une contamination par des gravillons dans l'interface lame-plaque. **Mise à niveau:** Vérifier le certificat de dureté de la lame (doit être ≤ HRC 62). Confirmez que l'angle de biseau des bords correspond à la géométrie de contact de l'écran OEM (±0,5°). Inspecter la surface de la plaque pour vérifier l'appauvrissement de la couche de nitrure de plasma - si les rayures ont atteint le métal de base, la plaque doit être remplacée avant d'installer de nouvelles lames.\n\n**Usure rapide des lames (< 200 heures sur PCR standard):** Une durée de vie étonnamment courte pour une matière première nominalement modérée indique une contamination supérieure à celle déclarée : teneur élevée en fibres de verre, en silice ou en charges céramiques dans la matière rebroyée. Soumettre l'échantillon de matière rebroyée à une analyse XRF de la contamination. **Mise à niveau:** Passer d'abord de D2 à H13 ; si la durée de vie reste insuffisante, passer à carbure de tungstène solide qui offre une durée de vie 5 à 8 fois plus longue sur les flux de défaillance dominés par l'abrasion.\n\n**Agrandissement des trous / Dégradation de la qualité de filtration sans alarme de pression:** Les micro-perforations de la plaque filtrante s'agrandissent progressivement avec le temps, laissant passer des particules de contaminants surdimensionnées à une pression différentielle stable. Cause première : Corrosion HCl due au dégazage de PVC dissolvant le matériau de la paroi du trou. Pas d'alarme de pression car les trous élargis maintiennent une faible résistance. **Amélioration:** Spécifier des plaques filtrantes en acier PM revêtues de PVD et résistantes à la corrosion pour tous les flux contenant ≥ 5 % de PVC en poids.",
+      "Lames de grattoir de rechange pour filtres continus en matière plastique. Options D2 , H13 et carbure, avec profils personnalisés et détails de montage selon dessin.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -4898,63 +6675,129 @@ export const blades: Blade[] = [
       "Kreyenborg",
       "Nordson BKG",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 Tool Steel / H13 Hot-Work Steel / Solid Tungsten Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value:
-          "Blade: HRC 58–62 (controlled-wear consumable) | Filter Plate Surface: Plasma Nitrided HV 1,000+",
-      },
-      {
-        label: "Filter Plate Profile",
-        value:
-          "Laser-drilled conical micro-perforations, 80–2,000 µm — tapered inlet expels contaminants, prevents polymer stagnation",
-      },
-      {
-        label: "Dimensional Tolerance",
-        value: "±0.05 mm (blade profile) | ±0.02 mm (thickness)",
-      },
-      {
-        label: "Operating Temperature",
-        value: "Up to 300 °C (H13 / Carbide grades)",
-      },
-      {
-        label: "Corrosion Resistance",
-        value:
-          "HCl-resistant alloys & barrier coatings for PVC and mixed-plastic melt outgassing",
-      },
-      {
-        label: "Applications",
-        value:
-          "PCR HDPE/PP, Glass-Filled Compounds, PVC Blends, Agricultural Film, WEEE Plastics",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Obtenez des lames de grattoir de remplacement pour filtre à fusion avec des bords de travail, des profils de corps et des supports de support personnalisés. Sureay propose des configurations D2 , H13 et carbure avec des options de traitement de surface pour votre service de fusion. Envoyez votre dessin ou échantillon pour un devis adapté à votre filtre. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     components: [
       {
-        id: "hardness-synergy",
-        tag: "PROTECTION DES ACTIFS",
-        title: "Dureté technique Synergie",
+        id: "melt-scraper-working-edge",
+        tag: "Bord de travail",
+        title: "Options de grattoirs en acier et en carbure",
         description:
-          "Les plaques filtrantes sont nitrurées au plasma à HV 1 000+ (≈ HRC 70+). Les lames de grattoir sont délibérément maintenues à HRC 58-62. Cette différence vérifiée fait de la lame un consommable à usure contrôlée - elle s'use contre la surface plus dure de la plaque sans s'égratigner ni s'entailler. Chaque livraison est accompagnée d'un certificat de dureté confirmant que la lame se situe dans cette plage.",
+          "Les configurations D2 , H13 et en carbure monobloc vous offrent un choix de matériaux pour les grattoirs de remplacement du filtre à fusion, spécifiés en tenant compte du polymère, des contaminants et du tamis d'accouplement.",
       },
       {
-        id: "conical-laser-plates",
-        tag: "TECHNOLOGIE DE FILTRATION",
-        title: "Micro-perforations coniques percées au laser",
+        id: "melt-scraper-carrier",
+        tag: "Installation",
+        title: "Bords personnalisés et profils de montage sur support",
         description:
-          "La géométrie conique des trous (entrée étroite, sortie large) exploite la pression de fusion pour expulser immédiatement les contaminants au lieu de les laisser stagner dans les trous à paroi cylindrique. Empêche le blocage des trous dû à la carbonisation, maintient une pression différentielle constante et prend en charge la dynamique des impulsions de rétro-rinçage OEM à 150-400 bars sans micro-fissuration.",
+          "Les longueurs de grattoir répertoriées vont de 150 à 500 mm. Sureay peut définir le contour, l'épaisseur et les caractéristiques de montage du support selon le dessin du filtre afin que le nouveau grattoir place son bord de travail à la position spécifiée contre l'écran.",
       },
       {
-        id: "failure-upgrade-path",
-        tag: "ANALYSE DES DÉFAILLANCES",
-        title: "Chemin de mise à jour du diagnostic",
+        id: "melt-scraper-material",
+        tag: "Options matérielles",
+        title: "Options de surface pour le service de fusion spécifié",
         description:
-          "Ébréchure de l'arête causée par le métal de rebut → passer à un carbure H13 ou à un carbure de qualité supérieure. Ébarbage progressif de la plaque → vérifier le certificat HRC de la lame et l'angle du biseau. Durée de vie < 200 h sur PCR standard → passer au carbure monobloc pour les défaillances dues à l'abrasion. Agrandissement silencieux des trous → spécifier des plaques PM résistantes à la corrosion et revêtues de PVD pour les cours d'eau contenant du PVC.",
+          "Des options de revêtement barrière et d'alliage résistant à la corrosion sont disponibles pour le service de fusion spécifié de PVC et de plastique mixte, permettant d'inclure les exigences de surface et de matériaux dans la demande de lame.",
       },
     ],
+    specs: [
+      {
+        label: "Dimensions",
+        value: "150–500 mm",
+      },
+      {
+        label: "Application",
+        value: "Élimination de la contamination d'un tamis filtrant à fusion",
+      },
+      {
+        label: "Position de la pièce",
+        value: "Support grattoir sur le tamis du filtre",
+      },
+      {
+        label: "Matériau",
+        value:
+          "Acier à outils D2 , acier pour travail à chaud H13 ou carbure de tungstène massif",
+      },
+      {
+        label: "Dureté de la lame en acier",
+        value: "HRC 58–62",
+      },
+      {
+        label: "Tolérance du profil",
+        value: "±0.05 mm",
+      },
+      {
+        label: "Tolérance d'épaisseur",
+        value: "±0.02 mm",
+      },
+      {
+        label: "Température de fonctionnement",
+        value: "Jusqu'à 300 °C pour les configurations H13 ou carbure",
+      },
+      {
+        label: "Revêtements en option",
+        value:
+          "Revêtements barrières pour service de fusion de PVC et de plastiques mixtes",
+      },
+      {
+        label: "Résistance à la corrosion",
+        value:
+          "Options d'alliages résistants au HCl pour le service de fusion du PVC et des plastiques mixtes",
+      },
+      {
+        label: "Matière première",
+        value:
+          "PCR HDPE/PP, composés chargés de verre, mélanges de PVC, films agricoles et plastiques DEEE",
+      },
+    ],
+    relatedBladeIds: ["cutter-compactor-blades", "die-face-cutting-knives"],
+    offers: {
+      lowPrice: 35,
+      highPrice: 480,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "À quoi font référence les couteaux de filtre à fusion et les lames de grattoir ?",
+          answer:
+            "Ils décrivent les éléments remplaçables qui éliminent la contamination retenue de la surface du tamis filtrant. Le tamis perforé effectue la filtration et le porteur localise le racleur. Identifiez la position d'installation et la référence de la pièce lors de la commande, de sorte que la lame, l'écran et le support soient chacun spécifiés comme composant requis.",
+        },
+        {
+          question:
+            "Quelles caractéristiques identifient un grattoir de remplacement pour filtre à fusion ?",
+          answer:
+            "Utilisez le modèle et la version du filtre, le contour de la lame, le profil du bord de travail, l'épaisseur et le montage du support. Le bord doit occuper la position prévue par rapport à l'écran. La longueur totale n'est qu'un identifiant, en particulier lorsque des filtres continus portant le même nom utilisent des mécanismes de tamis ou de grattoir différents.",
+        },
+        {
+          question:
+            "Comment choisir le matériau du grattoir pour le plastique fondu contaminé ?",
+          answer:
+            "Considérez ensemble le polymère, le type de contaminant, les conditions de service de fusion et les spécifications du tamis conjugué. Comparez l’usure progressive des bords avec les dommages locaux du grattoir utilisé. La construction en acier ou en carbure sélectionnée doit être adaptée à la disposition des contacts du filtre, toute exigence de revêtement ou de résistance à la corrosion étant enregistrée séparément.",
+        },
+        {
+          question:
+            "Un filtre à fusion autonettoyant utilise-t-il un grattoir universellement interchangeable ?",
+          answer:
+            "Non. Le grattoir d'un filtre à fusion autonettoyant doit correspondre au profil de travail, au support et au tamis de cet ensemble spécifique. Certains systèmes OEM utilisent un contact contrôlé avec un écran plus dur pour maintenir le bord. Le remplacement doit préserver la géométrie et la combinaison de matériaux spécifiées pour le filtre.",
+        },
+        {
+          question:
+            "Que faut-il vérifier lorsque la contamination n’est plus éliminée efficacement ?",
+          answer:
+            "Vérifiez si le bord du grattoir est toujours en contact avec l'écran comme prévu. Une charge de contaminants ou une obstruction dans le système de décharge peut également affecter l'élimination. Comparez ces conditions avec les changements dans l'alimentation en matière fondue et utilisez la procédure d'entretien du fabricant de filtres pour identifier la pièce qui nécessite une attention particulière.",
+        },
+        {
+          question:
+            "Que dois-je envoyer pour un devis de lame de grattoir pour filtre à fonte ?",
+          answer:
+            "Envoyez le modèle et la version du filtre, le dessin du grattoir ou le numéro de pièce, le polymère et les contaminants, ainsi que la quantité. Ajoutez le support de montage et les spécifications de l'écran conservé. Si vous utilisez un échantillon, montrez dans quel sens il est monté sur le support et marquez le bord de travail usé.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de filtre, le dessin du grattoir, les détails de la plaque de tamis, le polymère et les contaminants typiques.",
     dimensionLabels: {
       col0: "Modèle de filtre / OEM",
       col1: "Longueur de la lame (mm)",
@@ -4965,638 +6808,152 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007201",
         spec: "EREMA",
         od: "180 – 420",
         id: "25 – 40",
         thickness: "6 / 8",
       },
       {
-        spec: "Gneuß Rotary System",
+        itemNo: "SR007202",
+        spec: "Système rotatif Gneuß",
         od: "150 – 380",
         id: "20 – 35",
         thickness: "5 / 8",
       },
       {
-        spec: "Ettlinger ERF 200/350",
+        itemNo: "SR007203",
+        spec: "Ettlinger ERF200/350",
         od: "200 / 350",
         id: "30 / 40",
         thickness: "8 / 10",
       },
       {
+        itemNo: "SR007204",
         spec: "FIMIC",
         od: "160 – 400",
         id: "22 – 38",
         thickness: "6 / 8",
       },
       {
-        spec: "Kreyenborg KSF",
+        itemNo: "SR007205",
+        spec: "KSF Kreyenborg",
         od: "200 – 500",
         id: "30 – 50",
         thickness: "8 / 12",
       },
       {
+        itemNo: "SR007206",
         spec: "Nordson BKG",
         od: "150 – 350",
         id: "20 – 35",
         thickness: "5 / 8",
       },
     ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 35,
-      highPrice: 480,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Lames de grattoir pour filtre à fusion | Remplacements personnalisés",
+      heroAlt: "Lames de grattoir de rechange pour un filtre à fusion continue",
+      sizeRange: "150–500 mm",
+      heroSpecs: [
         {
-          question:
-            "Quand dois-je passer de D2 à H13 pour mes lames de grattoir ?",
-          answer:
-            "Passez au H13 lorsque votre température de traitement à l'état fondu dépasse régulièrement 260 °C, ou lorsque vous traitez des flux hautement contaminés tels que les films agricoles post-consommation, les plastiques DEEE ou les déchets d'emballage fortement imprimés. Ces matières premières génèrent d'importantes contraintes de cycles thermiques qui font que le D2 se ramollit et perd la géométrie de ses bords en l'espace de 200 à 400 heures de fonctionnement. La matrice de carbure de molybdène et de vanadium du H13 conserve sa dureté et sa stabilité dimensionnelle jusqu'à 300 °C, ce qui prolonge la durée de vie du racleur de 60 à 80 % sur ces matières premières.",
+          label: "Matériau",
+          value: "D2 , H13 ou carbure de tungstène",
         },
         {
-          question:
-            "Comment l'usure de la lame de raclage affecte-t-elle la pression de fusion et le débit d'un filtre en continu ?",
-          answer:
-            "Une lame de raclage usée laisse un film de contamination résiduel sur la surface du filtre après chaque rotation. Ce film réduit progressivement la surface ouverte effective du tamis, ce qui entraîne une augmentation de la pression de la matière fondue et une diminution du débit. Sur une ligne PCR fortement chargée, une lame usée au-delà de sa limite de service peut entraîner une réduction du débit de 15 à 25 % et accélérer le colmatage du tamis jusqu'au point de rupture. La surveillance de la pression différentielle de la matière fondue à travers le filtre est l'indicateur d'usure le plus fiable - nous recommandons l'inspection des lames lorsque la pression différentielle augmente de plus de 20 % par rapport à la valeur de référence.",
-        },
-        {
-          question:
-            "Quelle finesse de filtration dois-je spécifier pour la production de granulés de PEHD et de PP recyclés ?",
-          answer:
-            "Pour la production standard de granulés PCR HDPE et PP destinés à des applications de film ou de moulage par injection, spécifiez une finesse de filtration de 300-500 µm. Cela permet d'éliminer les particules dures qui provoquent des stries sur la surface de la filière et des défauts de surface sans perte de charge excessive sur des matières premières modérément contaminées. Pour les résines recyclées par contact de qualité alimentaire (rHDPE, rPP selon EU 10/2011), spécifiez 150-200 µm pour répondre aux exigences plus strictes en matière d'élimination de la contamination. Pour les films agricoles hautement contaminés ou les matières premières dérivées des déchets solides municipaux, commencez par 500-800 µm pour gérer la pression et diminuez au fur et à mesure que la qualité des matières premières s'améliore.",
-        },
-        {
-          question:
-            "Les lames de raclage à dureté élevée du marché secondaire risquent-elles de marquer ou d'endommager mes plaques filtrantes ?",
-          answer:
-            "C'est la question la plus importante à poser à tout fournisseur de lames de rechange. Sureay conçoit une différence de dureté délibérée : les plaques filtrantes sont nitrurées au plasma à HV 1 000+ (environ HRC 70+), et les lames de raclage sont fabriquées à un HRC 58-62 strictement contrôlé. La lame est toujours plus douce que la surface de la plaque - elle fonctionne comme un consommable à usure contrôlée qui s'use progressivement sans générer de rayures ou de goujures par transfert de métal sur la face plus dure de la plaque. Chaque livraison comprend un certificat d'essai Rockwell HRC confirmant que la lame se situe dans cette plage. Si un fournisseur ne peut pas fournir ce certificat, vous n'avez aucune garantie que la différence de dureté est correcte.",
-        },
-        {
-          question:
-            "Les plaques filtrantes Sureay sont-elles compatibles avec le lavage à contre-courant automatisé des systèmes Ettlinger et Gneuß ?",
-          answer:
-            "Oui, entièrement compatible. Les plaques filtrantes Sureay sont conçues et validées par FEA pour des pressions d'impulsion de rétro-rinçage conformes aux normes OEM (typiquement 150-400 bars sur les systèmes Ettlinger ERF et Gneuß RSFgenius). La géométrie conique des trous percés au laser améliore l'efficacité du rinçage à contre-courant : la sortie aval plus large agit comme une buse qui accélère l'impulsion inverse à travers chaque perforation, améliorant ainsi l'éjection des contaminants par rapport aux plaques à trous cylindriques. La disposition des trous et les dimensions des plaques reproduisent exactement les spécifications OEM - aucun recalibrage des paramètres de synchronisation, de pression ou de contrôleur de rétro-rinçage n'est nécessaire après l'installation.",
-        },
-        {
-          question:
-            "Mon filtre perd en qualité de filtration sans alarme de pression différentielle. Comment puis-je le diagnostiquer ?",
-          answer:
-            "C'est le symptôme d'un élargissement silencieux des trous - un mode de défaillance où les micro-perforations de la plaque filtrante s'élargissent progressivement en raison de la corrosion chimique des parois des trous plutôt que de l'usure mécanique. Les trous élargis laissent passer des particules de contaminants surdimensionnées tout en maintenant une faible pression différentielle car les trous plus larges offrent moins de résistance. La cause première est presque toujours le dégazage de HCl provenant du PVC ou de la contamination organochlorée dans la matière première qui réagit avec l'acier à outils standard aux températures de fusion. Confirmez en (1) en mesurant la taille des particules de contamination de la matière fondue en sortie - si des particules surdimensionnées sont présentes sans augmentation de la pression, l'élargissement du trou est confirmé ; (2) en inspectant une plaque retirée sous grossissement pour détecter des piqûres ou des arrondis sur les parois du trou. La solution consiste à spécifier les plaques filtrantes Sureay en acier PM revêtues de PVD et résistantes à la corrosion, qui scellent les parois de la micro-perforation contre la diffusion de l'acide et empêchent l'élargissement progressif insidieux.",
-        },
-        {
-          question:
-            "Sureay peut-il s'adapter aux dimensions de nos racleurs EREMA ou Gneuß existants ?",
-          answer:
-            "Oui, envoyez-nous un échantillon de votre lame existante ou le numéro de pièce OEM et le modèle de la machine. Nous vérifierons les dimensions du profil de la lame sur notre CMM, confirmerons l'interface de montage, l'angle de biseau du bord et les spécifications du matériau, et fournirons des pièces de remplacement directes. Pour les systèmes de filtration continue EREMA et de filtration rotative Gneuß, nous conservons des dessins de référence pour les tailles de plate-forme les plus courantes. Le délai de livraison des lames de remplacement standard est de 7 à 12 jours ouvrables à compter de la confirmation des dimensions.",
-        },
-        {
-          question:
-            "Combien d'heures de fonctionnement puis-je attendre des lames de raclage D2 sur une ligne PCR mixte ?",
-          answer:
-            "Sur une ligne de plastiques rigides PCR mixtes (HDPE/PP, < 3 % de contamination minérale, température de fusion 230-260 °C), les lames de raclage D2 atteignent généralement 400-700 heures de fonctionnement avant que le profil des arêtes ne se dégrade au point d'entraîner une augmentation de la pression différentielle. Les lames H13 de la même gamme permettent d'allonger les intervalles de service à 600-1 000 heures. Sur les flux très abrasifs (composés remplis de verre, film agricole avec terre incrustée), la durée de vie du D2 tombe à 150-300 heures ; le H13 l'étend à 250-450 heures ; le carbure monobloc permet d'atteindre 1 000-2 000 heures sur ces matières premières.",
+          label: "Application",
+          value: "Filtration continue du plastique fondu",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "Les lames racleuses de votre filtre à matière fondue sont-elles des remplacements directs de l'OEM ou des pièces de rechange ?",
-          answer:
-            "Il s'agit de pièces de rechange de précision fabriquées selon les spécifications dimensionnelles des constructeurs. Nous procédons à la rétroconception de chaque lame à partir des plans OEM ou d'échantillons de clients, nous vérifions l'ajustement sur une MMT et nous fournissons un certificat d'inspection dimensionnelle. Nos lames ne sont pas des pièces OEM rebaptisées - elles sont fabriquées directement dans notre usine à partir de matériaux D2, H13 ou carbure de première qualité, avec notre documentation complète sur la qualité.",
+          label: "Dimensions",
+          value: "150–500 mm",
         },
         {
-          question:
-            "Quels sont les documents relatifs à la qualité qui accompagnent les expéditions de lames de raclage ?",
-          answer:
-            "Chaque livraison est accompagnée d'un certificat d'essai de dureté Rockwell HRC : Le certificat d'essai de dureté Rockwell HRC, le rapport d'inspection dimensionnelle CMM confirmant les tolérances du profil des bords et de l'interface de montage, le certificat de traçabilité des matériaux de l'aciérie et le certificat de lot traitement thermique. Pour les clients qui ont besoin d'une documentation plus complète pour la certification ISO 9001 ou la qualification du processus de recyclage, des rapports complets d'essais de matériaux et des enregistrements de processus sont disponibles sur demande.",
+          label: "Application",
+          value: "Élimination de la contamination d'un tamis filtrant à fusion",
+        },
+        {
+          label: "Position de la pièce",
+          value: "Support grattoir sur le tamis du filtre",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Acier à outils D2 , acier pour travail à chaud H13 ou carbure de tungstène massif",
+        },
+        {
+          label: "Dureté de la lame en acier",
+          value: "HRC 58–62",
+        },
+        {
+          label: "Tolérance du profil",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Tolérance d'épaisseur",
+          value: "±0.02 mm",
+        },
+        {
+          label: "Température de fonctionnement",
+          value: "Jusqu'à 300 °C pour les configurations H13 ou carbure",
+        },
+        {
+          label: "Revêtements en option",
+          value:
+            "Revêtements barrières pour service de fusion de PVC et de plastiques mixtes",
+        },
+        {
+          label: "Résistance à la corrosion",
+          value:
+            "Options d'alliages résistants au HCl pour le service de fusion du PVC et des plastiques mixtes",
+        },
+        {
+          label: "Matière première",
+          value:
+            "PCR HDPE/PP, composés chargés de verre, mélanges de PVC, films agricoles et plastiques DEEE",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/scraper-blades-02.webp",
+        alt: "Lames de grattoir pour filtre à fonte montrant leurs profils de corps et leurs bords de travail",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour votre grattoir pour filtre à fusion",
+        description:
+          "Incluez le modèle de filtre, le dessin ou l'échantillon de la lame, les détails du support, le polymère et la quantité requise.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
-    id: "special-shaped-blades",
-    name: "Lames de forme spéciale",
-    fullName: "Lames industrielles à profil personnalisé et de forme spéciale",
-    category: "custom_profile",
-    sector: "other",
-    categoryDisplay: "Lames à profil personnalisé",
-    image: "/images/products/blades/special-shaped-knife.webp",
-    badge: "OEM sur mesure",
-    badgeColor: "teal",
-    description:
-      "Lames industrielles à profil personnalisé et de forme spéciale fabriquées avec précision à partir de dessins DXF/DWG du client ou d'échantillons physiques. D2, H13, PM-HSS et carbure monobloc. Tolérances de ±0,02 mm. Tout profil, toute industrie.",
-    link: "/custom",
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / H13 / PM-HSS / Carbide",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.02 mm",
-      },
-      {
-        label: "Drawing Input",
-        value: "DXF / DWG / STEP / Sample",
-      },
-      {
-        label: "Lead Time",
-        value: "7–15 working days",
-      },
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 800,
-    },
-  },
-  {
-    id: "wood-chipper-blades",
-    name: "Lames de déchiqueteuse de bois",
-    fullName:
-      "Couteaux de déchiqueteuse à tambour et à disque pour la biomasse, la sylviculture et le recyclage du bois",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Lames de déchiqueteuse de bois",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-    badge: "Grade forestier",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
-    ],
-    description:
-      "Couteaux de broyeur à tambour et à disque de première qualité en D2, Cr12MoV et TCT pour le traitement de la biomasse, les opérations forestières et le recyclage du bois. Trempé à cœur HRC 57-62 avec traitement cryogénique profond. Rectification de précision avec une tolérance de ±0,05 mm sur l'épaisseur pour une géométrie de copeaux propre et uniforme. Adaptation OEM pour les déchiqueteuses Bandit, Vermeer, Morbark, Peterson, Doppstadt et Jenz.",
-    fullDescription:
-      "Les lames de déchiqueteuses de bois fonctionnent dans des conditions parmi les plus difficiles de l'industrie de la réduction de taille. Chaque rotation fait pénétrer le tranchant dans du bois dur dense, du bois vert à forte teneur en humidité, du bois de démolition contaminé ou des palettes recyclées incrustées de clous et d'agrafes. Une lame dont la dureté et la résistance ne sont pas équilibrées s'émoussera en quelques heures sur du bois dur propre ou se brisera au premier coup de clou dans du bois d'alimentation contaminé.\n\nLes lames de déchiqueteuse Sureay sont forgées à partir d'aciers à outils de première qualité - D2 (1.2379), Cr12MoV et acier à haute teneur en carbone pour les couteaux de déchiqueteuse - traités thermiquement sous vide à HRC 57-62, suivis d'un trempage cryogénique profond obligatoire à -196°C. Cette séquence de traitement produit une microstructure martensitique entièrement stabilisée avec une distribution uniforme du carbure sur l'ensemble de la section transversale de la lame, ce qui permet de répondre à la double exigence de performance du déchiquetage du bois : résistance à l'abrasion pour maintenir un bord tranchant à travers des centaines de mètres cubes de bois, combinée à une ténacité suffisante pour survivre aux impacts des contaminants métalliques incrustés sans fracture catastrophique.\n\n## Type de déchiqueteuse et géométrie de la lame\n\n### Lames de déchiqueteuse à tambour\n\nLes déchiqueteuses à tambour (Vermeer BC1800, Bandit 1990, Morbark 40/36) utilisent des couteaux droits rectangulaires boulonnés à un tambour tournant à grande vitesse (généralement de 1 000 à 2 500 tr/min). La lame agit comme un couteau de raboteuse - chaque tour arrache un copeau du bois d'entrée à la profondeur de coupe programmée. La longueur de la lame correspond à la largeur du tambour (généralement 200-600 mm), et l'épaisseur (généralement 12-30 mm) détermine la profondeur maximale du copeau.\n\nParamètres critiques pour les performances du déchiqueteur à tambour :\n- **Angle de biseau:** 30°-37° (bois dur) ou 25°-30° (bois tendre/vert)\n- **Parallélisme de l'épaisseur:** ≤ 0,05 mm - une épaisseur de lame inégale entraîne un déséquilibre du tambour, des vibrations destructrices et une taille de copeaux irrégulière\n- **Tolérance de position du trou de boulon:** ±0,10 mm - garantit que le tranchant se projette uniformément sur toute la largeur du tambour après le montage\n\n### Lames de déchiqueteuse à disque\n\nLes déchiqueteuses à disque (Peterson 5710, Morbark 50/48, Precision Husky) montent les lames radialement sur un disque rotatif lourd. Le bois est introduit axialement dans la face du disque et les lames produisent des copeaux par une combinaison d'action de cisaillement et de fendage. Les lames des déchiqueteuses à disque sont généralement plus courtes mais plus épaisses que les couteaux des déchiqueteuses à tambour, et sont soumises à des charges d'impact individuelles plus élevées de la part des billes de grand diamètre.\n\nLes lames de déchiqueteuse à disque nécessitent une spécification de ténacité maximale : L'acier Cr12MoV ou l'acier modifié pour couteaux de déchiqueteuse, d'une dureté HRC 55-58, est recommandé pour les déchiqueteuses à disque pour bûches entières qui traitent des bois durs de plus de 300 mm de diamètre.\n\n### Lames de déchiqueteuse pour arbres entiers / biomasse\n\nLes déchiqueteuses de biomasse et d'arbres entiers (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) traitent des arbres entiers, y compris les branches, les mottes de racines et les broussailles. La matière première contient de la terre, des pierres et parfois des débris métalliques. Les lames destinées à ces applications sont fabriquées en acier optimisé pour les chocs (HRC 55-58), avec un angle de biseau plus large (35°-42°) qui répartit les forces d'impact sur une face de coupe plus large et empêche le renversement des arêtes sur les matières premières contaminées.\n\n## Sélection des matériaux par matière première\n\n**Acier à haute teneur en carbone pour couteaux de déchiqueteuse (HRC 55-58):** La qualité standard de l'industrie pour la sylviculture générale et le déchiquetage du bois vert. Rentable, facilement réaffûtable sur des meuleuses de surface standard et suffisamment résistant pour supporter une contamination modérée par des clous. Convient aux entrepreneurs paysagistes, aux sociétés d'entretien d'arbres et aux entreprises municipales de traitement des déchets verts.\n\n**D2 / Cr12MoV Cold-Work Tool Steel (HRC 58-62):** Spécification de première qualité pour le recyclage du bois commercial à haut volume et la production de copeaux de combustible de biomasse. La matrice en carbure de chrome à 12 % offre une durée de vie des arêtes de 2 à 3 fois supérieure à celle de l'acier au carbone standard sur les bois durs abrasifs (chêne, caryer, écorce de fer) et le bois recyclé sec. Recommandé pour les déchiqueteuses industrielles à tambour fonctionnant en continu de 8 à 16 heures.\n\n**TCT - Tungsten Carbide Tipped (Brazed Inserts):** La spécification ultime pour le traitement extrême de la biomasse. Les couteaux de déchiqueteuse à pointe en carbure offrent une durée de vie de 5 à 10 fois supérieure à celle des couteaux D2 sur le bois de démolition contaminé, les traverses de chemin de fer et les mottes de racines très sales. Le tranchant en carbure est brasé sous vide sur un corps en acier allié résistant qui absorbe l'énergie brute de l'impact sans transmettre de fracture fragile à l'insert en carbure.\n\n## Meulage de précision pour la qualité des copeaux\n\nLa géométrie des copeaux est la principale mesure de la qualité du produit dans la production de combustible de biomasse : les usines de pâte à papier, les centrales électriques à biomasse et les fabricants de granulés imposent des normes strictes en matière de distribution de la taille des copeaux (par exemple, EN 17225-4 / TAPPI T257). Une épaisseur de lame inégale ou des angles de biseau incohérents sur un tambour ou un disque multi-lames produisent des copeaux surdimensionnés ou sous-dimensionnés qui ne répondent pas aux spécifications de criblage, nécessitant un traitement secondaire ou entraînant des déductions de prix.\n\nLes lames de déchiqueteuse Sureay sont rectifiées avec précision :\n- **Tolérance d'épaisseur:** ±0,05 mm sur toute la longueur de la lame\n- **Angle de biseau:** ±0,5° (vérifié par comparateur optique)\n- **Planéité de la face:** ≤ 0,05 mm par 300 mm de longueur\n- **Finition de surface:** Ra ≤ 1,6 μm sur la face de râteau pour une friction réduite et une éjection propre des copeaux\n\n## Contre-couteau (enclume) et plaque d'usure\n\nLe contre-couteau (enclume ou couteau de lit) définit l'espace de dégagement qui détermine l'épaisseur minimale des copeaux. Les contre-couteaux usés ou mal alignés annulent les avantages des nouvelles lames de déchiqueteuse. Sureay fabrique des contre-couteaux et des plaques d'usure remplaçables en acier D2 et en acier au manganèse, fournis sous forme d'ensembles intégrés avec des spécifications de dégagement vérifiées au préalable pour votre modèle de broyeur.\n\n## Capacité de réaffûtage\n\nContrairement au lames de broyeur, les couteaux de déchiqueteuse sont conçus pour de multiples cycles de réaffûtage. Notre traitement thermique trempé à cœur garantit une dureté uniforme de la surface au cœur - chaque réaffûtage expose un acier de dureté et de caractéristiques d'usure identiques. Une lame de broyeur D2 standard peut être réaffûtée 8 à 12 fois avant d'atteindre l'épaisseur minimale de sécurité, ce qui rend le coût total de possession extrêmement compétitif.",
-    link: "/products/wood-chipper-blades",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit Industries",
-      "Vermeer",
-      "Morbark",
-      "Peterson Pacific",
-      "Doppstadt",
-      "Jenz",
-      "CBI",
-      "Precision Husky",
-      "Bruks Siwertell",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value:
-          "High-Carbon Chipper Steel | D2 (1.2379) / Cr12MoV | TCT Carbide Tipped",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
-      },
-      {
-        label: "Thickness Tolerance",
-        value: "±0.05 mm (prevents drum imbalance & vibration)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per timber species & contamination level)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
-        value:
-          "Forestry Drum Chippers, Disc Chippers, Biomass Whole-Tree Chippers, Pallet Recycling",
-      },
-    ],
-    components: [
-      {
-        id: "through-hardened-core",
-        tag: "METALLURGIE",
-        title: "Trempé à cœur pour une durée de vie maximale de la broche",
-        description:
-          "Contrairement aux alternatives de cémentation qui exposent un noyau mou après le premier réaffûtage, les lames de broyeur Sureay sont traitées thermiquement sous vide pour obtenir une dureté uniforme (HRC 57-62) de la surface au noyau. Chaque réaffûtage offre des performances identiques à celles d'une lame neuve, ce qui permet d'obtenir 8 à 12 cycles de service productifs par lame.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "DURABILITÉ",
-        title: "Résistance aux ongles et aux contaminants",
-        description:
-          "Le bois de démolition contaminé, les palettes recyclées et les déchets verts urbains contiennent des clous, des vis et des pierres cachés. Notre traitement cryogénique profond (-196°C) stabilise la microstructure martensitique, ce qui confère au bois la ténacité nécessaire pour absorber les impacts des coups de métal sans fracture fragile des arêtes ni fissuration des lames.",
-      },
-      {
-        id: "chip-quality",
-        tag: "QUALITÉ DE SORTIE",
-        title: "Biseau de précision pour une taille uniforme des copeaux",
-        description:
-          "Les centrales électriques à biomasse et les usines de pâte à papier pénalisent les distributions de taille de copeaux non conformes. Chaque lame est rectifiée à ±0,05 mm d'épaisseur et à ±0,5° d'angle de biseau, ce qui garantit une géométrie de copeaux homogène sur toute la largeur du tambour ou du disque, conformément aux normes EN 17225 et TAPPI T257.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Type de broyeur / Plate-forme OEM",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions standard pour les principaux fabricants de broyeurs. modèles de boulons à 2, 3 et 4 trous usinés à la machine à commande numérique selon les plans exacts des fabricants d'équipement d'origine. Contre-couteaux et plaques d'usure disponibles en jeux assortis. Longueurs personnalisées jusqu'à 800 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Bandit 12" / 15" Drum',
-        od: "230",
-        id: "80",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 18" / 19" Drum',
-        od: "295",
-        id: "80",
-        thickness: "19",
-      },
-      {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: "Morbark 40/36 Drum",
-        od: "400",
-        id: "100",
-        thickness: "22",
-      },
-      {
-        spec: "Morbark 50/48 Disc",
-        od: "250",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Peterson 5710 Disc",
-        od: "280",
-        id: "130",
-        thickness: "25",
-      },
-      {
-        spec: "Doppstadt / Jenz Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Heavy Whole-Tree Chipper",
-        od: "600",
-        id: "150",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 380,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Quel type de lame dois-je utiliser pour déchiqueter du bois vert propre ou du bois de démolition contaminé ?",
-          answer:
-            "Pour le bois vert propre (sylviculture, entretien des arbres, défrichement), l'acier standard à haute teneur en carbone des couteaux de déchiqueteuse (HRC 55-58) offre une excellente durée de vie des arêtes au coût le plus bas par cycle de réaffûtage. Pour le bois de démolition contaminé, les palettes recyclées ou les déchets verts urbains contenant des clous, des vis et des pierres, il convient de passer à l'acier Cr12MoV ou D2 avec une dureté HRC de 58 à 60. La matrice de carbure de chrome permet d'augmenter de 2 à 3 fois la durée de vie des arêtes sur le bois sec abrasif tout en conservant une ténacité suffisante pour survivre à des impacts métalliques modérés. Pour les cours d'eau fortement contaminés (traverses de chemin de fer, débris de C&D), spécifiez des lames à pointe en carbure TCT qui offrent une durée de vie 5 à 10 fois plus longue que le D2.",
-        },
-        {
-          question:
-            "Comment la tolérance de l'épaisseur des lames affecte-t-elle la qualité des copeaux et les vibrations du tambour ?",
-          answer:
-            "L'épaisseur des lames contrôle directement la profondeur des copeaux et influence l'équilibre du tambour. Si l'épaisseur des lames varie de plus de 0,10 mm sur un tambour à lames multiples, les lames les plus épaisses coupent plus profondément et produisent des copeaux surdimensionnés, tandis que les lames les plus fines produisent des copeaux sous-dimensionnés - deux conditions qui ne répondent pas aux spécifications de criblage des combustibles de la biomasse (EN 17225-4). En outre, la masse inégale des lames crée un déséquilibre dynamique au régime de fonctionnement (1 000-2 500 tr/min), provoquant des vibrations destructrices qui accélèrent la défaillance des roulements et fatiguent le carter du tambour. Notre tolérance de ±0,05 mm sur l'épaisseur élimine ces deux problèmes.",
-        },
-        {
-          question:
-            "Quel angle de biseau dois-je spécifier pour le déchiquetage de bois dur ou de bois tendre ?",
-          answer:
-            "Pour le bois tendre et le bois vert à forte teneur en humidité (pin, épicéa, peuplier), spécifiez un angle de biseau de 25°-30°. L'angle d'inclusion le plus aigu tranche le bois tendre et fibreux avec une force de coupe minimale et produit des faces de copeaux propres avec une faible déchirure des fibres. Pour les bois durs secs (chêne, caryer, eucalyptus), augmentez l'angle à 30°-37° pour renforcer l'arête de coupe contre la densité plus élevée et la charge d'impact. Pour la biomasse contaminée et le déchiquetage d'arbres entiers avec contamination par la terre et les pierres, spécifiez 35°-42° - le biseau plus large répartit les forces d'impact sur une face de coupe plus large, empêchant le renversement de l'arête.",
-        },
-        {
-          question:
-            "Combien de fois les lames de broyeur Sureay peuvent-elles être réaffûtées, et quelle est la procédure d'affûtage correcte ?",
-          answer:
-            "Nos lames de broyeur trempées à cœur peuvent être réaffûtées 8 à 12 fois avant d'atteindre l'épaisseur minimale de sécurité (généralement 60 à 70 % de l'épaisseur d'origine). Le réaffûtage s'effectue à l'aide d'une meule en oxyde d'aluminium (grain 46-60) à une profondeur de 0,02-0,05 mm par passage, afin d'éviter tout dommage thermique sur le bord traité thermiquement. Ne jamais meuler à sec les couteaux de broyeur - la surchauffe localisée à plus de 200°C entraîne la trempe et ramollit le tranchant. Après l'affûtage, vérifiez l'angle du biseau à l'aide d'un comparateur optique ou d'un rapporteur numérique. Nous proposons également un service de réaffûtage professionnel avec revérification de la dureté.",
-        },
-        {
-          question:
-            "Qu'est-ce qui cause le renversement prématuré des bords de mes lames de déchiqueteuse et comment puis-je l'éviter ?",
-          answer:
-            "Le retournement du tranchant (le tranchant se replie au lieu de s'écailler ou de s'user progressivement) indique que la dureté de la lame est trop faible pour la matière première ou que l'angle du biseau est trop aigu pour la charge d'impact. Sur les lames en acier au carbone standard destinées à l'usinage de bois dur sec, le bord n'est pas suffisamment renforcé en carbure pour résister à la déformation plastique. Passez au D2 ou au Cr12MoV à HRC 58-62 et augmentez l'angle du biseau de 3° à 5°. Vérifiez également le dégagement du contre-couteau : un dégagement excessif (> 1,5 mm) oblige la lame à fracturer le bois par flexion plutôt que par cisaillement, ce qui augmente considérablement la charge sur le tranchant.",
-        },
-        {
-          question:
-            "Dois-je remplacer le contre-couteau (enclume) lorsque j'installe de nouvelles lames de broyeur ?",
-          answer:
-            "Le contre-couteau doit être inspecté à chaque changement de lames de déchiqueteuse. Un contre-couteau usé dont le bord est arrondi ou ébréché oblige les nouvelles lames à travailler contre un espace de cisaillement incohérent, ce qui réduit leur durée de vie effective de 30 à 50 % et produit des copeaux de mauvaise qualité. Remplacez ou réaffûtez le contre-couteau lorsque le tranchant présente un arrondi visible de plus de 1,0 mm ou un écaillage de plus de 0,5 mm de profondeur. Nous fournissons des contre-couteaux adaptés, fabriqués en acier D2 ou en acier au manganèse, sous forme de jeux intégrés avec un jeu vérifié au préalable.",
-        },
-        {
-          question:
-            "Quelle répartition de la taille des copeaux dois-je viser pour la production de combustible de biomasse par rapport à l'approvisionnement de l'usine de pâte à papier ?",
-          answer:
-            "Les centrales électriques à biomasse exigent généralement des copeaux de 3 à 50 mm (EN 17225-4 Classe P31s ou P45s) avec moins de 5% de fines (< 3 mm) et moins de 1% de surépaisseurs (> 63 mm). Les usines de pâte à papier exigent des spécifications plus strictes conformément à la norme TAPPI T257 : généralement 80 % d'acceptation dans une plage de 7 à 25 mm, avec des limites strictes pour les copeaux d'épingle et les pièces trop épaisses. Pour respecter ces spécifications, il faut une épaisseur de lame constante (±0,05 mm), un angle de biseau correct, un jeu de contre-couteau adéquat (0,5-1,0 mm) et une vitesse de tambour uniforme. Nous pouvons vous recommander la géométrie de lame optimale pour votre spécification cible.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames.",
-        },
-        {
-          question:
-            "Pouvez-vous fournir des lames pour mon modèle de broyeur spécifique s'il n'est pas listé dans vos dimensions standard ?",
-          answer:
-            "Oui, envoyez-nous un échantillon de votre lame existante, un dessin technique ou la marque et le numéro de modèle de votre broyeur. Nous confirmerons la longueur, la largeur, l'épaisseur, l'angle de biseau et le modèle de trou de boulon, et nous fabriquerons des remplacements exacts. Nous disposons d'une vaste base de données de plans de lames de déchiqueteuse OEM pour les plateformes Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz et CBI. Les dimensions personnalisées sont fabriquées selon le dessin dans un délai de 10 à 15 jours ouvrables.",
-        },
-        {
-          question:
-            "Qu'est-ce qui différencie le traitement thermique de Sureay des autres produits moins chers ?",
-          answer:
-            "Contrairement aux processus standard de trempe et de revenu, chaque lame de broyeur Sureay subit une trempe sous vide suivie d'un traitement cryogénique profond à -196°C. L'étape cryogénique transforme l'austénite retenue en martensite stable, ce qui améliore la résistance à l'usure jusqu'à 40 % et garantit une dureté uniforme de la surface au cœur. Cela signifie que chaque réaffûtage expose un acier de qualité identique - les lames bon marché exposent souvent un cœur plus mou après le premier réaffûtage, ce qui réduit de moitié la durée de vie du tranchant lors des cycles d'affûtage suivants.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les lames de broyeur de remplacement OEM standard en stock sont généralement expédiées sous 48-72 heures. Les profils personnalisés et les lames à pointe en carbure TCT prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question:
-            "Quelles sont les certifications de qualité détenues par Sureay et pouvez-vous fournir les rapports d'essais des matériaux ?",
-          answer:
-            "Sureay est certifié ISO 9001:2015. Chaque expédition comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle (épaisseur, angle de biseau, positions des trous de boulon) et un certificat de lot traitement thermique. Pour les opérations de biomasse à grand volume nécessitant une traçabilité complète, des certificats de composition de l'aciérie et des rapports dimensionnels CMM sont disponibles sur demande.",
-        },
-        {
-          question:
-            "Est-il possible de tester un échantillon avant de s'engager dans une commande de production complète ?",
-          answer:
-            "Oui. Nous proposons des jeux d'échantillons (généralement 2 à 4 lames) pour vérifier l'ajustement de la machine et comparer la durée de vie des arêtes à celle de votre fournisseur actuel. Le délai d'échantillonnage standard est de 5 à 7 jours ouvrables. Pour les lames en carbure TCT, le délai d'échantillonnage est de 10 à 12 jours ouvrables.",
-        },
-      ],
-    },
-  },
-  {
-    id: "wood-chipper-anvils",
-    name: "Enclumes de déchiqueteuse",
-    fullName:
-      "Contre-couteaux robustes et enclumes de couteaux pour déchiqueteuses à tambour et à disque",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Contre-couteaux et enclumes",
-    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-    badge: "Ensembles assortis",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
-    ],
-    description:
-      "Enclumes de déchiqueteuse de bois (contre-couteaux / couteaux de lit) en acier à outils D2, Cr12MoV et A8 modifié, rectifiées avec précision. Trempe à cœur HRC 55-60 pour une durée de vie maximale lors du réaffûtage. Définit l'écart entre la lame et l'aile qui contrôle l'épaisseur des copeaux et l'efficacité du broyeur. Surface rectifiée avec un parallélisme de ±0,05 mm sur toute la longueur. Remplacements compatibles avec les OEM pour les déchiqueteuses Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen et Jenz.",
-    fullDescription:
-      "L'enclume - également appelée contre-couteau, couteau de lit ou lame fixe - est l'arête de coupe fixe à l'intérieur d'un broyeur de bois contre laquelle le tambour rotatif ou la lame à disque coupe. Ensemble, la lame et l'enclume forment une paire de ciseaux : la lame coupe les copeaux du bois et l'enclume définit l'espace libre qui détermine l'épaisseur minimale des copeaux, l'efficacité de la coupe et la charge du moteur.\n\nUne enclume usée ou mal alignée est la cause la plus négligée des mauvaises performances d'un broyeur. Lorsque le bord de l'enclume s'arrondit, l'écart entre la lame et l'enclume s'élargit progressivement. Au lieu d'un cisaillement net, le bois est déchiré et écrasé au lieu d'être coupé, ce qui augmente la consommation de carburant de 15 à 25 %, produit des copeaux irréguliers qui ne répondent pas aux spécifications de criblage et accélère l'usure des lames de la déchiqueteuse elles-mêmes. Remplacer les lames de broyeur sans inspecter l'enclume, c'est gaspiller de l'argent : des lames neuves travaillant contre une enclume émoussée n'atteignent que 50 à 70 % de leur durée de vie potentielle.\n\n## Pourquoi l'enclume est aussi importante que la lame\n\n**L'écart entre la lame et l'enclume - généralement fixé à 0,5-1,5 mm pour les déchiqueteuses à tambour et à 0,8-2,0 mm pour les déchiqueteuses à disque - contrôle directement l'épaisseur minimale des copeaux. Une enclume usée augmente cet écart au-delà des spécifications, produisant des copeaux surdimensionnés et de longues lamelles fibreuses qui ne satisfont pas aux normes de sélection des combustibles de biomasse (EN 17225-4). Nos enclumes sont rectifiées avec précision à ±0,05 mm de parallélisme sur toute la longueur, ce qui garantit un écart de cisaillement uniforme sur toute la largeur de coupe.\n\n**Absorption des chocs:** Contrairement à la lame du broyeur (qui tourne à grande vitesse), l'enclume absorbe la totalité de la force de réaction de chaque coupe sous la forme d'une charge d'impact statique. Au cours de millions de cycles de déchiquetage, cette charge d'impact soutenue provoque une déformation des bords, des microfissures et finalement une fracture en bloc dans les enclumes mal traitées thermiquement. Les enclumes Sureay sont trempées à cœur jusqu'à HRC 55-60 sous vide traitement thermique - suffisamment dures pour conserver un bord tranchant contre le bois abrasif, mais suffisamment résistantes pour absorber les impacts répétés sans fracture fragile.\n\n**Taux d'usure différent, cycle de remplacement différent:** L'enclume dure généralement 2 à 4 fois plus longtemps que les lames de broyeurs, car elle est soumise à une charge de compression (statique) plutôt qu'à une charge de cisaillement dynamique sur la lame. Cependant, l'usure de l'enclume étant graduelle, les opérateurs ne remarquent souvent pas la détérioration progressive jusqu'à ce que la qualité des copeaux se soit dégradée de manière significative. Nous recommandons d'inspecter le bord de l'enclume à chaque fois que les lames de broyeur sont remplacées ou affûtées.\n\n## Sélection des matériaux\n\n**Acier à outils D2 / Cr12MoV (HRC 58-60):** La meilleure spécification pour les opérations commerciales de traitement du bois et de la biomasse à haut volume. La matrice en carbure de chrome à 12 % offre une résistance exceptionnelle à l'abrasion contre les bois durs denses et les matières premières à forte teneur en écorce. Recommandée pour les déchiqueteuses industrielles à tambour (Morbark, Vermeer série HG, Doppstadt) fonctionnant en continu de 8 à 16 heures.\n\n**Acier à outils modifié A8 (HRC 54-58):** La qualité OEM standard utilisée par Bandit, Morbark et Vermeer pour les enclumes d'origine. L'acier A8 modifié offre un excellent équilibre entre la résistance à l'usure et la résistance aux chocs, ce qui est essentiel pour les enclumes qui doivent absorber des millions de cycles d'impact sans microfissures. C'est le choix idéal pour les opérations générales de foresterie et d'entretien des arbres qui traitent des essences mixtes avec une contamination modérée.\n\n**42CrMo / Acier au manganèse (HRC 50-55):** Une option rentable et très résistante pour les opérateurs qui traitent du bois de démolition fortement contaminé, des traverses de chemin de fer et des déchets verts urbains où la matière première contient d'importants débris métalliques. La dureté plus faible privilégie l'absorption des chocs par rapport à la résistance à l'usure, évitant ainsi la rupture catastrophique de l'enclume qui peut endommager le carter du tambour.\n\n## Montage et dégagement réglables\n\nLa plupart des fabricants de déchiqueteuses fournissent un système de réglage mécanique - typiquement des plaques de calage ou des boulons de montage réglables - pour avancer l'enclume vers la lame au fur et à mesure que les deux composants s'usent, en maintenant l'espace de dégagement prévu. Les enclumes Sureay sont usinées CNC avec des trous de montage fendus ou surdimensionnés qui correspondent précisément au mécanisme de réglage de votre équipementier, ce qui permet aux équipes de maintenance de régler l'espace avec précision et de le verrouiller en toute sécurité.\n\n## Ensembles de lames et d'enclumes assorties\n\nPour les opérateurs qui changent simultanément les lames et l'enclume, nous proposons des ensembles assortis : lames de broyeur et contre-couteau fabriqués à partir du même lot d'acier, traités thermiquement dans le même cycle de four sous vide et rectifiés en surface selon la même tolérance de parallélisme. Un ensemble apparié élimine le décalage de dureté entre la lame et l'enclume qui provoque une usure accélérée lorsque les composants proviennent de différents fournisseurs.",
-    link: "/products/wood-chipper-anvils",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Morbark",
-      "Timberwolf",
-      "Schliesing",
-      "Greenmech",
-      "Jensen",
-      "Jenz",
-      "Eschlböck",
-      "Forst",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV) | A8 Modified | 42CrMo Manganese Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–60 (Through-Hardened, Surface = Core)",
-      },
-      {
-        label: "Parallelism",
-        value: "±0.05 mm full-length (uniform shear gap)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single-bevel 30°–37° (matched to chipper blade angle)",
-      },
-      {
-        label: "Mounting",
-        value: "Slotted holes / shim-adjustable (OEM clearance adjustment)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 5–10 regrind cycles per anvil",
-      },
-      {
-        label: "Application",
-        value:
-          "Drum Chippers, Disc Chippers, Biomass Chippers, Landscape Chippers",
-      },
-    ],
-    components: [
-      {
-        id: "clearance-gap-control",
-        tag: "EFFICACITÉ DE COUPE",
-        title: "Contrôle de précision de l'espace libre",
-        description:
-          "L'écart entre la lame et l'enclume détermine l'épaisseur des copeaux, la force de coupe et la consommation de carburant. Un bord d'enclume arrondi élargit cet espace au-delà des spécifications, transformant un cisaillement propre en un broyage inefficace. Nos enclumes sont rectifiées en surface avec un parallélisme de ±0,05 mm pour maintenir le jeu prévu sur toute la largeur de coupe, ce qui rétablit le mordant de l'auto-alimentation et réduit la charge du moteur jusqu'à 20 %.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "DURABILITÉ",
-        title: "Résistance aux chocs statiques",
-        description:
-          "L'enclume absorbe la totalité de la force de réaction de chaque coupe sous forme de charge d'impact statique - des millions de coups par équipe. L'acier modifié D2 et A8 trempé à cœur à HRC 54-60 offre le bon équilibre : suffisamment dur pour conserver un bord tranchant contre le bois abrasif, suffisamment résistant pour absorber des impacts répétés sans microfissures ou fracture catastrophique.",
-      },
-      {
-        id: "matched-sets",
-        tag: "L'INTÉGRATION DES SYSTÈMES",
-        title: "Ensembles de lames et d'enclumes assorties",
-        description:
-          "Les lames et contre-lames de broyeurs provenant de différents fournisseurs ont souvent une dureté différente - une enclume plus dure use la lame prématurément, ou une enclume plus molle se dégrade plus rapidement que prévu. Nos ensembles assortis sont fabriqués à partir du même lot d'acier et traités thermiquement au cours du même cycle, ce qui garantit des taux d'usure équilibrés et une durée de vie combinée maximale.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Déchiqueteuse OEM / Modèle",
-      col1: "Longueur (mm)",
-      col2: "Largeur (mm)",
-      col3: "Épaisseur (mm)",
-      caption:
-        "* Dimensions standard de l'enclume de remplacement OEM. Trous de montage fendus usinés CNC selon les schémas exacts de réglage de l'espace libre OEM. Des ensembles lame + enclume assortis sont disponibles pour toutes les tailles. Longueurs personnalisées jusqu'à 600 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Bandit 12" / 15" / Mighty Bandit',
-        od: "185",
-        id: "75",
-        thickness: "10",
-      },
-      {
-        spec: 'Bandit 18" / 19" / 1290 / 1590',
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      {
-        spec: "Vermeer BC1200 / BC1500",
-        od: "200",
-        id: "80",
-        thickness: "12",
-      },
-      {
-        spec: "Vermeer BC1800 / BC2000",
-        od: "260",
-        id: "100",
-        thickness: "16",
-      },
-      {
-        spec: "Morbark 2 / 5 / 7 / 12 / 13",
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      {
-        spec: "Morbark 40/36 / 50/48",
-        od: "400",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Timberwolf 150 / 190 / 230",
-        od: "230",
-        id: "80",
-        thickness: "16",
-      },
-      {
-        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
-        od: "260",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "Greenmech / Jensen / Forst",
-        od: "Per OEM Drawing",
-        id: "Per OEM Drawing",
-        thickness: "Per OEM Drawing",
-      },
-    ],
-    relatedBladeIds: ["wood-chipper-blades"],
-    offers: {
-      lowPrice: 25,
-      highPrice: 250,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "À quelle fréquence dois-je remplacer ou réaffûter l'enclume par rapport aux lames du broyeur ?",
-          answer:
-            "L'enclume dure généralement 2 à 4 fois plus longtemps que les lames de déchiqueteuse, car elle fonctionne sous une charge de compression statique plutôt que sous la charge de cisaillement dynamique de la lame. Cependant, nous recommandons d'inspecter le bord de l'enclume chaque fois que les lames de broyeur sont changées ou retournées. Si le bord de l'enclume présente un arrondi visible de plus de 1,0 mm (vérifier avec une règle sous une lumière vive), il faut le réaffûter ou le remplacer. L'installation de nouveaux couteaux de déchiqueteuse sur une enclume usée n'offre que 50 à 70 % de leur durée de vie potentielle et produit des copeaux de qualité médiocre, quel que soit le degré d'affûtage des couteaux.",
-        },
-        {
-          question:
-            "Quel est l'écart à respecter entre la lame du broyeur et l'enclume ?",
-          answer:
-            "Le dégagement varie en fonction du type de broyeur et de l'essence de bois. Pour les déchiqueteuses à tambour traitant du bois tendre vert : 0,5-1,0 mm. Pour les déchiqueteuses à tambour traitant du bois dur sec : 0,8-1,5 mm. Pour les déchiqueteuses à disque : 1.0-2,0 mm. Reportez-vous toujours au manuel de l'équipementier de votre déchiqueteuse pour connaître les spécifications exactes. L'écart doit être mesuré en plusieurs points sur toute la largeur de l'enclume à l'aide d'une jauge d'épaisseur. Si l'écart varie de plus de 0,3 mm d'un bout à l'autre, le parallélisme de la face de l'enclume s'est dégradé et l'enclume doit être réaffûtée ou remplacée.",
-        },
-        {
-          question:
-            "Dois-je utiliser la même qualité d'acier pour l'enclume que pour la lame du broyeur ?",
-          answer:
-            "Pas nécessairement - l'enclume et la lame ont des modes d'usure différents et donc une métallurgie optimale différente. La lame subit une charge de cisaillement dynamique à grande vitesse et bénéficie d'une dureté maximale du tranchant (HRC 58-62). L'enclume subit un impact de compression statique et bénéficie d'une dureté légèrement inférieure (HRC 54-58) qui permet une meilleure absorption de l'impact. C'est pour cette raison que l'enclume A8 modifiée à HRC 54-58 est la qualité d'enclume standard dans l'industrie. Cependant, pour les opérations de biomasse à haut volume sur du bois dur propre, il est recommandé d'améliorer la lame et l'enclume en D2 à HRC 58-60.",
-        },
-        {
-          question:
-            "Qu'est-ce qui fait qu'un broyeur cesse de s'auto-alimenter même si les lames sont bien aiguisées ?",
-          answer:
-            "Si le broyeur ne parvient plus à faire entrer le bois dans la chambre de coupe malgré des lames fraîchement affûtées ou neuves, il est presque certain que l'enclume est usée. Un bord d'enclume arrondi augmente l'espace libre effectif, ce qui signifie que la lame ne peut plus mordre dans le bois avec suffisamment de profondeur pour générer la force de traction. Le bois rebondit sur la surface de la lame au lieu d'être saisi et tiré. Inspectez et réaffûtez ou remplacez l'enclume, puis rétablissez l'espace libre selon les spécifications du fabricant.",
-        },
-        {
-          question:
-            "Puis-je affûter l'enclume avec les mêmes outils que ceux que j'utilise pour les lames de broyeur ?",
-          answer:
-            "Oui - la même meuleuse à eau et la même meule en oxyde d'aluminium (grain 46-60) que celles utilisées pour les lames de déchiqueteuse peuvent être utilisées pour les enclumes. Les mêmes règles s'appliquent : passes légères (0,02-0,05 mm par passe), jamais de meulage à sec sans trempe, et vérification de l'angle de biseau à l'aide d'un rapporteur après le meulage. L'angle de biseau de l'enclume doit correspondre aux spécifications de l'équipementier de la déchiqueteuse (généralement 30°-37°). Certains opérateurs négligent l'enclume lors du réaffûtage parce qu'elle semble moins usée que la lame - il s'agit d'une fausse économie qui raccourcit la durée de vie de la lame et dégrade la qualité des copeaux.",
-        },
-        {
-          question:
-            "Pourquoi mon broyeur produit-il des fibres longues et filandreuses au lieu de copeaux propres ?",
-          answer:
-            "De longues lamelles fibreuses - parfois appelées \"spaghetti\" ou \"stringers\" - indiquent que l'espace entre la lame et l'aile est trop large. Le bois est déchiré et arraché au lieu d'être cisaillé proprement. Cela se produit lorsque le bord de l'enclume s'est arrondi ou lorsque l'enclume a été mal calée après le remplacement de la lame. Réinitialisez le jeu à la spécification OEM à l'aide d'une jauge d'épaisseur. Si le bord de l'enclume ne peut pas être réaffûté pour obtenir un bord propre et droit (en raison d'ébréchures ou de fissures profondes), remplacez l'enclume.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Êtes-vous une société commerciale ou un fabricant direct ?",
-          answer:
-            "Nous sommes un fabricant OEM 100% direct établi en 2008. Lorsque vous achetez chez Sureay, vous évitez les majorations des intermédiaires et communiquez directement avec les ingénieurs qui forgent et affûtent vos lames et enclumes.",
-        },
-        {
-          question:
-            "Pouvez-vous fournir des ensembles lame + enclume adaptés à mon modèle de broyeur spécifique ?",
-          answer:
-            "Oui. Nous recommandons vivement d'acheter les lames et les enclumes en tant qu'ensembles assortis - fabriqués à partir du même lot d'acier et traités thermiquement dans le même cycle de four sous vide. Cela permet d'équilibrer la dureté et les taux d'usure des deux composants. Indiquez la marque et le numéro de modèle de votre broyeur, et nous vous fournirons un jeu complet de lames et d'enclumes avec des recommandations de dégagement vérifiées au préalable. Des ensembles assortis sont disponibles pour les plates-formes Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck et Forst.",
-        },
-        {
-          question:
-            "Pouvez-vous fabriquer une enclume pour mon broyeur si elle ne figure pas dans vos dimensions standard ?",
-          answer:
-            "Oui, envoyez-nous votre enclume existante, un dessin technique ou la marque et le numéro de modèle de votre broyeur. Nous procédons à une rétro-ingénierie des enclumes de remplacement à partir des dessins OEM ou d'échantillons physiques, en vérifiant l'ajustement sur une MMT avant la production. Les longueurs sur mesure jusqu'à 600 mm sont fabriquées dans un délai de 10 à 15 jours ouvrables.",
-        },
-        {
-          question:
-            "Faites-vous des livraisons dans le monde entier et combien de temps cela prend-il ?",
-          answer:
-            "Oui, nous exportons vers plus de 50 pays. Les enclumes de remplacement OEM standard en stock sont généralement expédiées sous 48-72 heures. Les dimensions personnalisées prennent 10 à 15 jours ouvrables. Nous travaillons en partenariat direct avec DHL, FedEx et des transitaires maritimes internationaux pour une livraison fiable de porte à porte.",
-        },
-        {
-          question:
-            "Quelle documentation de qualité est livrée avec chaque enclume ?",
-          answer:
-            "Chaque livraison comprend un rapport d'essai de dureté Rockwell HRC, un rapport d'inspection dimensionnelle (longueur, largeur, parallélisme de l'épaisseur, positions des trous de montage) et un certificat de lot traitement thermique. Pour les ensembles lame + enclume appariés, un rapport d'inspection combiné documente la dureté des deux composants afin de vérifier la différence de dureté prévue.",
-        },
-      ],
-    },
-  },
-  {
+    compatibleMachinesIntro:
+      "Obtenez des paniers et des plaques de tamis de remplacement fabriqués en fonction de la disposition de montage, de la courbure et du modèle d'ouverture de votre broyeur. Sureay propose des dispositions de trous personnalisées et des options de matériaux d'usure. Partagez votre dessin d'écran ou votre échantillon pour obtenir un devis adapté à votre application de contrôle de sortie. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     id: "shredder-screens",
-    name: "Grilles de Broyeur",
-    fullName: "Grilles de Broyeur, Paniers et Tôles Perforées",
+    name: "Grilles de broyeur",
+    fullName: "Grilles, paniers et tôles perforées pour broyeurs",
+    seoTitle:
+      "Écrans de déchiquetage de remplacement | Paniers et assiettes personnalisés",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Grilles de Broyeur",
-    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    categoryDisplay: "Grilles de broyeur",
+    image: "/images/products/shredder-screens/shredder-screens-04-square.webp",
+    imageDimensions: {
+      width: 836,
+      height: 836,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Pièces d'Usure",
     badgeColor: "teal",
     gallery: [
-      "/images/products/shredder-screens/shredder-screens-04.webp",
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
@@ -5606,148 +6963,39 @@ export const blades: Blade[] = [
       "Pile de tôles de grille cintrées sur palette, montrant le motif de trous ronds en quinconce",
     ],
     description:
-      "Grilles de broyeur perforées, paniers et tôles de grille en S355J2 et Hardox 400–500. Trou Ø 8–80 mm, épaisseur 12–30 mm, rétro-conçues à partir de votre grille usée.",
-    fullDescription:
-      "La grille est le composant qui détermine réellement la granulométrie de sortie — le rotor et les couteaux ne font que réduire la matière jusqu'à ce qu'elle soit assez fine pour passer au travers. C'est pourtant la pièce que la plupart des exploitants traitent comme secondaire, tournant des mois durant avec une grille colmatée ou évasée tout en imputant la baisse de débit aux couteaux. Sur une ligne de réduction de taille, l'état et la spécification de la grille expliquent davantage de perte de capacité que l'usure des couteaux.\n\nSureay fabrique les grilles de broyeur comme des pièces d'usure étudiées, et non comme de la tôle perforée générique. Chaque grille est cintrée au rayon exact du rotor, afin que le jeu entre la pointe du rotor et la surface de la grille reste uniforme sur toute la largeur de coupe. Un jeu irrégulier signifie que la matière est traînée et broyée au lieu d'être coupée, ce qui augmente l'intensité absorbée par le moteur, génère de la chaleur et des fines, et accélère l'usure des couteaux mêmes que la grille était censée protéger.\n\n## Les trois formes de grille\n\n**Panier de grille (demi-rond ou cylindrique complet) :** La géométrie standard des broyeurs monoarbre et biarbre. Fourni sous forme de demi-coquille épousant le rotor, ou de deux moitiés assemblées en cylindre complet. Les paniers offrent la plus grande surface ouverte et constituent la forme la plus sollicitée, car toute la surface intérieure est en contact avec la matière en circulation.\n\n**Tôle de grille (plate) :** Utilisée sur les granulateurs et les broyeurs en pied de presse, où la géométrie de la chambre de coupe est plane et non cylindrique. Plus simple à fabriquer et à rétro-concevoir, et généralement la forme la moins coûteuse à remplacer.\n\n**Grille en faucille :** Une grille partielle cintrée, installée lorsque la géométrie d'évacuation n'autorise pas un panier complet. Courante sur les broyeurs compacts et mobiles.\n\n**Grille cassette :** Un insert encadré à changement rapide. Coût initial supérieur, temps de changement radicalement réduit — à privilégier sur les lignes produisant plusieurs granulométries sur la même machine.\n\n## Spécifier une grille : trois chiffres qui comptent\n\nToute grille se définit par trois dimensions interdépendantes, et modifier l'une impose de modifier les autres :\n\n- **Le diamètre de trou (Ø)** fixe la taille maximale de particule qui passe. C'est le chiffre que les acheteurs indiquent habituellement, et souvent le seul.\n- **L'épaisseur de tôle (t)** détermine la durée de vie de la grille. Une tôle plus épaisse résiste mieux à la déformation et à l'évasement, mais réduit la surface ouverte utile, car chaque trou devient un canal plus long que la matière doit franchir.\n- **La largeur de ligament** — la bande d'acier entre deux trous voisins — définit la résistance structurelle de la grille. Réduire le ligament pour gagner de la surface ouverte fait fissurer la grille entre les trous sous l'impact, généralement à partir du bord d'évacuation.\n\nLa surface ouverte découle directement du diamètre de trou et du ligament. Pour des trous ronds au pas en quinconce à 60°, la surface ouverte ≈ 90,7 × (d / p)², où p est le pas entre centres de trous. Passer d'un trou de 20 mm au pas de 28 mm à un trou de 20 mm au pas de 24 mm fait passer la surface ouverte d'environ 46 % à 63 % — et réduit le ligament de 8 mm à 4 mm, ce qui, sur un broyeur à plastique exposé à une contamination métallique occasionnelle, cédera rapidement.\n\n## Pourquoi une grille ne doit pas être en acier à outils\n\nC'est l'erreur de spécification la plus fréquente que nous corrigeons. Une grille n'est pas un outil de coupe. C'est un élément structurel perforé qui absorbe des impacts et une abrasion continus tout en conservant sa forme. Tremper une grille à 58–62 HRC comme un couteau la rend fragile : les ligaments fissurent, et une grille rompue peut lâcher des fragments d'acier dans le rotor et détruire un jeu complet de couteaux.\n\nCe dont une grille a besoin, c'est de ténacité assortie d'une résistance à l'abrasion suffisante :\n\n- **Tôle structurelle S355J2** — le choix par défaut pour plastiques propres, films, papier et OM légères. Tenace, économique, facile à repercer et à réparer.\n- **Hardox 400 / 450** — pour déchets post-consommation mélangés, bois chargé de grains abrasifs et alimentation moyennement abrasive. Environ 2 à 3 fois la durée de vie du S355 pour un surcoût modéré.\n- **Hardox 500 ou surfaces rechargées dur** — pour composés chargés en fibre de verre, bois de démolition contaminé, déchets de construction et démolition et autres flux très abrasifs. Le rechargement est appliqué sélectivement sur la face intérieure la plus sollicitée, la tôle de base conservant sa ténacité.\n\n## Rétro-ingénierie à partir d'une grille usée\n\nLa plupart des commandes de rechange nous parviennent sans plan. Envoyez des photographies de la grille usée avec un mètre ruban posé en travers du pas des trous, ainsi que la marque et le modèle de la machine, et nous établirons un plan de fabrication soumis à votre approbation avant toute découpe d'acier. Lorsque la grille d'origine s'est évasée, nous partons de la géométrie non usée relevée sur les bords plutôt que des trous centraux agrandis, afin que la pièce de rechange restitue la granulométrie d'origine au lieu de reproduire l'état usé.",
+      "Grilles de rechange pour broyeurs à arbre unique, avec ouvertures de 8 à 80 mm. Paniers et assiettes personnalisés adaptés au modèle de trou, à la courbure et au montage.",
     disambiguation:
-      "Vous cherchez les outils de coupe plutôt que la grille de calibrage ? Consultez [Couteaux de Broyeur Monoarbre](/products/single-shaft-shredder-blades) pour les inserts de rotor, contre-couteaux et porte-couteaux.",
+      "Pour les outils de coupe mobiles, voir [Couteaux de rotor de déchiquetage à arbre unique](/products/single-shaft-shredder-blades) .",
     link: "/products/shredder-screens",
-    compatibleMachines: [
-      "Lindner",
-      "Vecoplan",
-      "UNTHA",
-      "WEIMA",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "SSI Shredding Systems",
-      "Genox",
-    ],
     specs: [
       {
-        label: "Screen Forms",
-        value: "Basket (half/full round) · Flat Plate · Sickle · Cassette",
+        label: "Formulaires d'écran",
+        value:
+          "Panier (demi/plein rond) · Assiette plate · Faucille · Cassette",
       },
       {
-        label: "Hole Diameter",
-        value: "8 – 80 mm (round, square or slotted)",
+        label: "Dimensions",
+        value: "Ouvertures 8–80 mm",
       },
       {
-        label: "Plate Thickness",
-        value: "12 – 30 mm",
+        label: "Matériau",
+        value: "S355J2 · Hardox 400 / 450 / 500 · Rechargement dur",
       },
       {
-        label: "Ligament Width",
-        value: "5 – 20 mm (application-matched)",
+        label: "Aire ouverte",
+        value: "34 – 58 % (en fonction du modèle)",
       },
       {
-        label: "Material",
-        value: "S355J2 · Hardox 400 / 450 / 500 · Hardfaced",
+        label: "Modèle de trou",
+        value: "60° décalés · Droit · Fendu",
       },
       {
-        label: "Open Area",
-        value: "34 – 58% (pattern-dependent)",
+        label: "Application",
+        value: "Criblage des décharges dans les broyeurs à arbre unique",
       },
       {
-        label: "Hole Pattern",
-        value: "60° staggered · Straight · Slotted",
-      },
-      {
-        label: "Supply Format",
-        value: "Drop-in OEM replacement or reverse-engineered from sample",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Lindner, Vecoplan, UNTHA, WEIMA, Herbold, ZERMA",
-      },
-    ],
-    componentsIntro:
-      "Une grille se juge sur trois points : tient-elle la granulométrie que vous avez spécifiée, combien de temps la tient-elle, et survit-elle à la contamination de votre alimentation sans fissurer.",
-    components: [
-      {
-        id: "aperture-sets-particle-size",
-        tag: "CALIBRAGE",
-        title: "C'est la grille qui définit votre sortie, pas le rotor",
-        description:
-          "Cintrée au rayon exact de votre rotor pour que le jeu pointe-grille reste uniforme sur toute la largeur. Un jeu constant signifie que la matière est coupée une fois puis évacuée, au lieu d'être remise en circulation et broyée en chaleur et en fines.",
-      },
-      {
-        id: "toughness-not-hardness",
-        tag: "MÉTALLURGIE",
-        title: "De la ténacité, pas une dureté de couteau",
-        description:
-          "Les grilles sont spécifiées en S355J2, Hardox 400–500 ou tôle rechargée dur sélectivement — jamais trempées à la dureté HRC d'un couteau. Une grille fragile fissure au niveau des ligaments et peut lâcher de l'acier dans le rotor, emportant avec elle un jeu complet de couteaux.",
-      },
-      {
-        id: "screen-knife-system",
-        tag: "SYSTÈME",
-        title:
-          "Grilles, contre-couteaux et porte-couteaux en une seule commande",
-        description:
-          "Une grille colmatée ou évasée accélère l'usure des couteaux, et des couteaux usés colmatent la grille plus vite. Nous fournissons les grilles avec les contre-couteaux, porte-couteaux, barres de serrage et entretoises, afin que l'ensemble des pièces d'usure soit remplacé lors du même arrêt.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Classe de Sortie",
-      col1: "Trou Ø (mm)",
-      col2: "Épaisseur de Tôle (mm)",
-      col3: "Ligament (mm)",
-      caption:
-        "* Spécifications représentatives de trous ronds au pas en quinconce à 60°. Grilles à trous carrés, oblongs et à motifs mixtes disponibles. Chaque grille est cintrée au rayon de rotor du client — envoyez-nous le modèle de machine ou une photographie de la grille usée pour la rétro-ingénierie.",
-    },
-    standardDimensions: [
-      {
-        spec: "Fine regrind — PET flake, film",
-        od: "8",
-        bolt: "12 – 15",
-        thickness: "5",
-      },
-      {
-        spec: "Fine regrind — PET flake, film",
-        od: "10",
-        bolt: "12 – 15",
-        thickness: "5",
-      },
-      {
-        spec: "General regrind",
-        od: "12",
-        bolt: "15",
-        thickness: "6",
-      },
-      {
-        spec: "General regrind",
-        od: "16",
-        bolt: "15 – 20",
-        thickness: "7",
-      },
-      {
-        spec: "Coarse regrind",
-        od: "20",
-        bolt: "20",
-        thickness: "8",
-      },
-      {
-        spec: "Coarse regrind",
-        od: "25",
-        bolt: "20 – 25",
-        thickness: "9",
-      },
-      {
-        spec: "Pre-shred / bulky waste",
-        od: "30",
-        bolt: "25",
-        thickness: "10",
-      },
-      {
-        spec: "Pre-shred / bulky waste",
-        od: "40",
-        bolt: "25 – 30",
-        thickness: "12",
-      },
-      {
-        spec: "Primary shred / RDF",
-        od: "50 – 80",
-        bolt: "30",
-        thickness: "14 – 20",
+        label: "Compatibilité OEM",
+        value: "Lindner , Vecoplan , UNTHA , WEIMA , Herbold , ZERMA",
       },
     ],
     relatedBladeIds: [
@@ -5755,78 +7003,238 @@ export const blades: Blade[] = [
       "single-shaft-bed-knives",
       "granulator-blades",
     ],
+    dimensionLabels: {
+      col0: "Classe de Sortie",
+      col1: "Trou Ø (mm)",
+      col2: "Épaisseur de Tôle (mm)",
+      col3: "Ligaments (mm)",
+      caption:
+        "* Spécifications représentatives de trous ronds au pas en quinconce à 60°. Grilles à trous carrés, oblongs et à motifs mixtes disponibles. Chaque grille est cintrée au rayon de rotor du client — envoyez-nous le modèle de machine ou une photographie de la grille usée pour la rétro-ingénierie.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR002701",
+        spec: "Broyage fin — flocons de PET, film",
+        od: "8",
+        bolt: "12 – 15",
+        thickness: "5",
+      },
+      {
+        itemNo: "SR002702",
+        spec: "Broyage fin — flocons de PET, film",
+        od: "10",
+        bolt: "12 – 15",
+        thickness: "5",
+      },
+      {
+        itemNo: "SR002703",
+        spec: "Rebroyage général",
+        od: "12",
+        bolt: "15",
+        thickness: "6",
+      },
+      {
+        itemNo: "SR002704",
+        spec: "Rebroyage général",
+        od: "16",
+        bolt: "15 – 20",
+        thickness: "7",
+      },
+      {
+        itemNo: "SR002705",
+        spec: "Rebroyé grossièrement",
+        od: "20",
+        bolt: "20",
+        thickness: "8",
+      },
+      {
+        itemNo: "SR002706",
+        spec: "Rebroyé grossièrement",
+        od: "25",
+        bolt: "20 – 25",
+        thickness: "9",
+      },
+      {
+        itemNo: "SR002707",
+        spec: "Pré-broyage / déchets encombrants",
+        od: "30",
+        bolt: "25",
+        thickness: "10",
+      },
+      {
+        itemNo: "SR002708",
+        spec: "Pré-broyage / déchets encombrants",
+        od: "40",
+        bolt: "25 – 30",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR002709",
+        spec: "Déchiquetage primaire / RDF",
+        od: "50 – 80",
+        bolt: "30",
+        thickness: "14 – 20",
+      },
+    ],
     offers: {
       lowPrice: 120,
       highPrice: 1900,
     },
+    components: [
+      {
+        id: "shredder-screens-advantage-1",
+        tag: "Options de plaques et de matériaux résistants à l'usure",
+        title: "Options de plaques et de matériaux résistants à l'usure",
+        description:
+          "Les configurations S355J2 , Hardox 400, 450 et 500 et à revêtement dur vous offrent des options de matériaux pour les tamis de déchiquetage de remplacement, avec la construction choisie spécifiée pour la conception de l'alimentation et des panneaux.",
+      },
+      {
+        id: "shredder-screens-advantage-2",
+        tag: "Ouvertures personnalisées de 8 à 80 mm",
+        title: "Ouvertures personnalisées de 8 à 80 mm",
+        description:
+          "Sureay réalise des motifs d'écran ronds et fendus. Les ouvertures répertoriées s'étendent de 8 à 80 mm. La taille et le pas de l'ouverture peuvent être spécifiés ensemble pour reproduire les ouvertures de décharge et le matériau laissé entre elles.",
+      },
+      {
+        id: "shredder-screens-advantage-3",
+        tag: "Paniers formés, plaques et écrans de cassettes",
+        title: "Paniers formés, plaques et écrans de cassettes",
+        description:
+          "Des paniers demi-ronds ou complets, des plaques plates, des formes de faucilles et des configurations de cassettes peuvent être réalisés selon la courbure et la disposition de fixation requises pour vos supports d'écran existants.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Mon débit a chuté. Dois-je remplacer d'abord la grille ou les couteaux ?",
+            "Quels détails identifient un écran de remplacement pour broyeur ?",
           answer:
-            "Inspectez d'abord la grille : c'est moins coûteux à vérifier et c'est plus souvent la cause. Cherchez un évasement — des trous usés en cône et élargis sur la face intérieure — et un colmatage, où le plastique ramolli a bouché les ouvertures. Si les trous ont grandi de plus de 10 % environ par rapport au nominal, la grille laisse déjà passer des particules surdimensionnées et doit être remplacée quel que soit l'état des couteaux. En pratique les deux s'usent ensemble : un couteau émoussé pousse la matière contre la grille au lieu de la couper, et une grille colmatée remet en circulation de la matière qui use le fil. Ne remplacer que l'un des deux signifie généralement un second arrêt sous quelques semaines.",
+            "Le modèle de machine, le contour du panneau, l’épaisseur de la plaque, la courbure et les positions de fixation déterminent l’ajustement. La taille et le motif des trous définissent les ouvertures de décharge. Une plaque plate et un panier incurvé peuvent partager une taille d'ouverture tout en nécessitant une géométrie d'installation différente. Utilisez donc le dessin du panneau d'origine ou les dimensions de référence non portées pour le remplacement.",
         },
         {
           question:
-            "Qu'est-ce qui provoque réellement le colmatage de la grille, et comment l'éviter ?",
+            "Comment choisir la taille d'ouverture du tamis du destructeur ?",
           answer:
-            "Le colmatage est presque toujours un problème thermique, pas un problème de taille de trou. Lorsque les couteaux sont émoussés ou que le jeu rotor-grille s'est ouvert, la matière est étalée et malaxée au lieu d'être coupée. La chaleur de frottement ramollit le polymère, qui s'extrude alors dans les ouvertures et y fige. Monter une grille à trous plus larges rend généralement la fraction grossière inacceptable sans traiter la cause. Les solutions durables sont l'affûtage ou le remplacement des couteaux, le rétablissement du jeu rotor correct et — pour les polymères sensibles à la chaleur comme les films LDPE et PP — la réduction du débit d'alimentation ou l'ajout d'un refroidissement. Une tôle plus épaisse aggrave le colmatage au lieu de l'améliorer, car chaque trou devient un canal plus long à dégager.",
+            "Commencez par les exigences de taille en aval et la forme de l'alimentation. Les ouvertures plus petites visent généralement un rendement plus fin, tandis que les ouvertures plus grandes permettent de décharger des matériaux plus grossiers. Les aliments plats ou flexibles peuvent passer différemment des pièces rigides, vérifiez donc la forme du trou existant et la configuration de la machine. L'ouverture est une taille d'ouverture. La sortie réelle a une distribution de taille.",
         },
         {
           question:
-            "Quelle surface ouverte puis-je ajouter avant que la grille ne devienne structurellement dangereuse ?",
+            "Que signifient le panier de tamisage, la cassette et la plaque de tamisage ?",
           answer:
-            "La limite est fixée par la largeur de ligament, pas par le pourcentage de surface ouverte. En règle pratique, maintenez le ligament à 0,4× le diamètre de trou ou plus pour les plastiques propres, et à 0,6× ou plus pour une alimentation susceptible de contenir du métal, de la pierre ou une autre contamination dure. Un trou de 20 mm avec un ligament de 8 mm donne environ 46 % de surface ouverte et supporte une alimentation contaminée ; le même trou avec un ligament de 4 mm atteint près de 63 %, mais fissurera entre les trous sous l'impact, généralement à partir du bord d'évacuation. Sur les flux abrasifs, nous préférons augmenter l'épaisseur de tôle et accepter un peu moins de surface ouverte plutôt que de courir après le débit avec un ligament mince.",
+            "Un panier décrit une forme d'écran incurvée, tandis qu'une plaque peut être plate ou façonnée. Cassette décrit un ensemble amovible pouvant inclure des fonctionnalités de support. L'étendue réelle du remplacement doit identifier le panneau perforé, le cadre et les détails de fixation, car ces noms d'achat peuvent faire référence à différents assemblages sur différentes machines.",
         },
         {
           question:
-            "Pourquoi une grille ne doit-elle pas être trempée à la même dureté HRC que les couteaux ?",
+            "La forme et le pas du trou peuvent-ils être personnalisés ?",
           answer:
-            "Parce qu'une grille ne casse pas comme un couteau. Un couteau a besoin de tenue de fil et travaille en compression au niveau du tranchant ; une grille est un élément structurel perforé qui absorbe des impacts continus sur une grande portée. Trempés à 58–62 HRC, les ligaments perdent la ductilité nécessaire pour absorber les chocs et fissurent au lieu de se déformer. Une grille fissurée coûte bien plus cher qu'une grille usée, car les fragments entrant dans le rotor peuvent détruire un jeu entier de couteaux. Nous spécifions le S355J2 pour les plastiques propres, le Hardox 400/450 pour l'alimentation post-consommation mélangée, et le Hardox 500 ou un rechargement dur sélectif pour les matières très abrasives — tous choisis en privilégiant la ténacité.",
+            "Oui. Sureay peut créer le motif d'ouverture et d'espacement spécifié sur le dessin de l'écran. Le pas des trous, la taille de l'ouverture et l'épaisseur de la plaque doivent être pris en compte ensemble car ils déterminent la zone ouverte et le matériau restant entre les trous. Incluez la disposition de montage lorsque vous proposez un changement de motif pour un panier ou un panneau existant.",
         },
         {
           question:
-            "Pouvez-vous fabriquer une grille d'après la mienne, usée, si je n'ai pas de plan ?",
+            "Comment choisir entre l'acier de construction, le Hardox et les écrans à rechargement dur ?",
           answer:
-            "Oui, et c'est ainsi que débutent la plupart de nos commandes de grilles. Envoyez des photographies de la grille usée avec un mètre ruban posé en travers du pas des trous, la marque et le modèle de la machine et, si possible, la longueur d'arc totale et le détail des flasques. Nous établissons un plan de fabrication soumis à votre approbation écrite avant toute découpe d'acier. Un point important : nous relevons la géométrie des trous sur les bords non usés plutôt que sur les trous centraux agrandis, afin que la nouvelle grille restitue votre granulométrie d'origine au lieu de reproduire l'état usé.",
+            "Comparez l'abrasivité et l'impact de l'alimentation avec le modèle d'usure, l'épaisseur et la géométrie formée du crible actuel. Les nuances Hardox et les constructions à rechargement dur offrent des alternatives à l'option d'acier de construction répertoriée. Spécifiez explicitement la construction de la plaque ou de la surface requise, en conservant les exigences de support et de fixation de la machine dans la conception de remplacement.",
         },
         {
           question:
-            "Fournissez-vous également les contre-couteaux, porte-couteaux et barres de serrage ?",
+            "Pourquoi les matériaux s'accumulent-ils sur le tamis d'un broyeur ?",
           answer:
-            "Oui. Grilles, contre-couteaux, porte-couteaux, barres de serrage et entretoises sont tous fabriqués en interne et expédiés habituellement ensemble, ce que nous recommandons. Remplacer la grille en laissant en place des contre-couteaux usés fait colmater la nouvelle grille plus vite, et un envoi unique et groupé réduit à la fois le coût de transport et le nombre d'arrêts de production.",
+            "Un modèle d'ouverture qui fonctionne avec une alimentation peut se boucher avec une autre, en particulier lors du traitement de matériaux plats. Comparez le matériau accumulé avec la configuration et l'état des trous avant de modifier la taille de l'ouverture. La géométrie du tamis peut résoudre les problèmes de passage spécifiques à l'alimentation, mais un remplacement doit conserver le support et la disposition de montage requis par la machine.",
+        },
+        {
+          question:
+            "Comment puis-je obtenir un devis pour un tamis ou un panier de remplacement pour le broyeur ?",
+          answer:
+            "Envoyez le modèle de déchiquetage et le dessin d'écran ou le numéro de pièce, la quantité de panneaux, l'alimentation et la taille de sortie cible. Pour un panier personnalisé, affichez le modèle de montage, la courbure, l'épaisseur de la plaque et la disposition des trous. Si un panneau usé est votre référence, signalez les trous agrandis, les zones pliées et les fixations endommagées.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle de la machine, la forme et la taille du trou, le pas, l'épaisseur de la plaque, le rayon du panneau et les positions de fixation. Pour les trous ronds de Ø100 mm, envoyer le modèle et le dessin du écran afin que nous puissions vérifier la configuration.",
+    compatibleMachines: [
+      "Lindner",
+      "Vecoplan",
+      "UNTHA",
+      "WEIMA",
+      "Herbold",
+      "ZERMA",
+    ],
+    detailLayout: {
+      sizeRange: "Ø8–80 mm",
+      heroSpecs: [
         {
-          question: "Êtes-vous fabricant ou société de négoce ?",
-          answer:
-            "Nous sommes un fabricant direct fondé en 2008. Les grilles sont découpées, cintrées, percées et — lorsque cela est spécifié — rechargées dur dans notre propre atelier, ce qui nous permet de travailler à partir de la photographie d'une pièce usée plutôt que d'exiger un plan finalisé.",
+          label: "Matériau",
+          value: "S355J2 · Hardox 400 / 450 / 500 · Rechargement dur",
         },
         {
-          question:
-            "Quel est le délai pour une grille rétro-conçue, et comment est-elle emballée ?",
-          answer:
-            "Les grilles standard dans les épaisseurs de tôle en stock sont expédiées sous 10 à 15 jours ouvrés après approbation du plan. Les grilles rétro-conçues ajoutent environ 3 à 5 jours pour le cycle de plan et d'approbation. Les grilles sont expédiées sur palettes bois fumigées avec protection des arêtes et cerclage acier ; les paniers de grand diamètre sont emboîtés pour réduire le coût de fret volumétrique.",
+          label: "Application",
+          value: "Criblage des décharges dans les broyeurs à arbre unique",
         },
         {
-          question: "Quelle documentation accompagne une commande de grilles ?",
-          answer:
-            "Chaque commande comprend un procès-verbal de contrôle dimensionnel par rapport au plan approuvé et un certificat matière de la tôle — y compris le certificat d'aciérie Hardox lorsque des nuances Hardox sont spécifiées. Les grilles rechargées dur comportent en outre un relevé du consommable de rechargement et de la dureté déposée.",
+          label: "Formulaires d'écran",
+          value:
+            "Panier (demi/plein rond) · Assiette plate · Faucille · Cassette",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Ouvertures 8–80 mm",
+        },
+        {
+          label: "Formulaires d'écran",
+          value:
+            "Panier (demi/plein rond) · Assiette plate · Faucille · Cassette",
+        },
+        {
+          label: "Matériau",
+          value: "S355J2 · Hardox 400 / 450 / 500 · Rechargement dur",
+        },
+        {
+          label: "Aire ouverte",
+          value: "34 – 58 % (en fonction du modèle)",
+        },
+        {
+          label: "Modèle de trou",
+          value: "60° décalés · Droit · Fendu",
+        },
+        {
+          label: "Application",
+          value: "Criblage des décharges dans les broyeurs à arbre unique",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Incluez le modèle de la machine, la forme et la taille du trou, le pas, l'épaisseur de la plaque, le rayon du panneau et les positions de fixation. Pour les trous ronds de Ø100 mm, envoyer le modèle et le dessin du écran afin que nous puissions vérifier la configuration.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
     id: "cutter-compactor-blades",
-    name: "Couteaux de Compacteur",
-    fullName: "Couteaux Rotor & Stator de Compacteur",
-    category: "granulator_blades",
+    seoDescription:
+      "Préparez le film PE ou PP et les flocons de PET pour l'extrusion avec des couteaux de rotor et de stator de remplacement en construction D2 , M2 HSS ou à pointe en carbure.",
+    name: "Couteaux pour coupeurs-compacteurs",
+    fullName: "Couteaux de coupeurs-compacteurs pour lignes d’extrusion",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Couteaux de Compacteur",
+    categoryDisplay: "Couteaux pour coupeurs-compacteurs",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+    imageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Recyclage PCR",
     badgeColor: "orange",
     gallery: [
@@ -5835,14 +7243,12 @@ export const blades: Blade[] = [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
-      "Paire de couteaux stator de compacteur montrant le biseau rectifié et la fixation fraisée",
+      "Paire de couteaux de stator de compacteur de coupe montrant le biseau affûté avec précision et le montage fraisé",
       "Jeu de couteaux de compacteur — couteau rotor, porte-couteau et couteau stator",
       "Long couteau rotor de compacteur avec tranchant rectifié et trou de fixation lamé",
     ],
     description:
-      "Couteaux rotor et stator pour compacteurs et agglomérateurs en D2, M2 HSS et à plaquette carbure. Montage direct sur EREMA, NGR, Starlinger et Previero.",
-    fullDescription:
-      "Dans un compacteur à couteaux — également vendu comme agglomérateur, densifieur ou unité de préconditionnement — des couteaux rotatifs coupent et échauffent par friction le film en vrac, la fibre ou les paillettes de PET jusqu'à ce que la matière ramollisse et se densifie en un grain fluide que l'extrudeuse peut réellement alimenter. Les couteaux accomplissent deux tâches à la fois : ils coupent, et ils génèrent la chaleur de friction maîtrisée qui rend la densification possible. Ce double rôle explique pourquoi ils s'usent plus vite que tout autre outil de la ligne, et pourquoi ils doivent généralement être remplacés tous les trois à six mois sur des productions continues de film et de PET.\n\nSureay fabrique aussi bien les couteaux rotatifs que les couteaux stator fixes, ainsi que les porte-couteaux et les couteaux de prédécoupe qui les accompagnent. Les couteaux sont rectifiés plans et parallèles sur toute leur longueur, car sur un compacteur c'est la planéité de la face d'appui qui détermine si le jeu de coupe réglé au montage est toujours le même à l'autre extrémité du couteau.\n\n## Le jeu de coupe : la variable qui commande tout\n\nLe jeu entre le couteau rotatif et le couteau stator fixe est le réglage le plus déterminant d'un compacteur, et celui que l'on laisse le plus souvent sans contrôle entre deux changements de couteaux.\n\n**Jeu trop large.** La matière est malaxée au lieu d'être coupée. La chaleur de friction dépasse la plage visée, le film s'agglutine en bûcheaux au lieu de former un grain homogène, la masse volumique apparente devient irrégulière et l'extrudeuse en aval reçoit une alimentation fluctuante. Sur les paillettes de PET, l'excès de chaleur provoque une dégradation liée à l'humidité avant même que la matière n'atteigne le sécheur. Le débit chute tandis que la consommation électrique augmente — la signature classique d'un jeu usé ou mal réglé.\n\n**Jeu trop serré.** Les couteaux entrent en contact sous charge. Les tranchants s'écaillent, le courant moteur présente des pointes à chaque charge lourde et, dans le pire des cas, un couteau rotatif percute le stator assez fort pour endommager le porte-couteau ou le disque rotor lui-même — une réparation d'un ordre de grandeur plus coûteuse que les couteaux.\n\nLes jeux de travail usuels se situent autour de 0,2–0,5 mm selon la taille de machine et la matière, mais la valeur correcte est celle du manuel de votre machine. L'essentiel est que le jeu puisse réellement être tenu : si la face d'appui du couteau n'est pas plane, ou si le couteau rotor et le couteau stator se sont usés différemment, le jeu variera sur la longueur de coupe quel que soit le soin apporté au réglage.\n\n## Pourquoi les couteaux rotor et stator se remplacent par jeu complet\n\nLes couteaux rotatifs et fixes s'usent à des rythmes et selon des géométries différents — le couteau rotor perd son fil, tandis que le stator tend à s'user en formant un rayon et à se creuser légèrement là où le flux de matière se concentre. Monter un couteau rotor neuf face à un stator usé ne restitue que la moitié de la géométrie de coupe : le jeu devient irrégulier sur sa longueur, le couteau neuf supporte seul toute la charge de coupe et s'émousse bien plus vite que prévu. Remplacer les deux ensemble coûte plus cher par arrêt et moins cher à la tonne.\n\n## Choix de la matière selon l'alimentation\n\n**D2 (1.2379), 58–61 HRC** — le choix polyvalent pour film propre LDPE, LLDPE et PP, sacs tissés et chutes de production avant consommation. Bonne tenue de fil, tolérant à un impact occasionnel, et le plus économique à réaffûter.\n\n**M2 HSS (1.3343), 62–64 HRC** — pour paillettes de PET, film imprimé et fortement empoussiéré, et matière post-consommation portant des résidus d'étiquettes papier ou une contamination minérale fine. Conserve son fil aux températures élevées régnant dans un compacteur en marche, là où le D2 commence à ramollir.\n\n**À plaquette carbure, 89–91 HRA au tranchant** — pour composés renforcés de fibre de verre, matières chargées en minéraux, mélanges maîtres au noir de carbone et alimentations à fort taux de cendres. Intervalles entre changements nettement plus longs sur les flux qui détruisent l'acier à outils, à un prix unitaire supérieur et avec une moindre tolérance aux chocs.\n\n## Compatibilité machines\n\nLes couteaux sont rétro-conçus pour les machines EREMA (unités de préconditionnement INTAREMA, TVEplus et RegrindPro), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac et Munchy. Envoyez le modèle de machine et une photographie du couteau usé, ou le couteau lui-même, et nous établirons un plan soumis à approbation avant fabrication.",
+      "Couteaux de rotor et de stator de rechange pour compacteurs de coupe-plastique. Options D2 , M2 HSS et pointes en carbure, avec profils personnalisés pour la préparation de l'alimentation par extrusion.",
     link: "/products/cutter-compactor-blades",
     compatibleMachines: [
       "EREMA",
@@ -5854,69 +7260,128 @@ export const blades: Blade[] = [
       "Plasmac",
       "Munchy",
     ],
-    specs: [
-      {
-        label: "Knife Types",
-        value: "Rotor (movable) · Stator (fixed) · Pre-cutter · Holder block",
-      },
-      {
-        label: "Material",
-        value: "D2 (1.2379) · M2 HSS (1.3343) · Carbide-tipped",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 58–61 (D2) · HRC 62–64 (M2) · HRA 89–91 (carbide)",
-      },
-      {
-        label: "Typical Cutting Gap",
-        value: "0.2 – 0.5 mm (machine-dependent)",
-      },
-      {
-        label: "Face Flatness",
-        value: "≤ 0.03 mm over full blade length",
-      },
-      {
-        label: "Parallelism",
-        value: "≤ 0.02 mm",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
-      },
-      {
-        label: "Applications",
-        value: "PE / PP Film, PET Flake, Woven Bags, Fibre, Foam",
-      },
-      {
-        label: "OEM Fitment",
-        value: "EREMA, NGR, Starlinger, Previero, Sorema, Erdwich",
-      },
-    ],
-    componentsIntro:
-      "Les couteaux de compacteur défaillent de trois façons : le fil s'en va, le jeu dérive, ou le couteau s'écaille sur une contamination. Chaque cas appelle une solution différente, et se tromper de diagnostic coûte cher.",
+    compatibleMachinesIntro:
+      "Procurez-vous des couteaux de coupe-compacteur de rechange pour votre ligne d'extrusion, y compris les positions du rotor, du stator et du pré-coupeur. Sureay propose des profils personnalisés dans les constructions D2 , M2 HSS et à pointe en carbure. Partagez votre dessin ou échantillon pour un devis couvrant les couteaux et les blocs de support spécifiés séparément. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     components: [
       {
-        id: "gap-holding-geometry",
-        tag: "GÉOMÉTRIE",
-        title: "Un jeu réglé une fois et qui le reste",
+        id: "compactor-knife-positions",
+        tag: "Positions des couteaux",
+        title: "Options de coupe en acier et en carbure",
         description:
-          "Rectifiés à ≤0,03 mm de planéité et ≤0,02 mm de parallélisme sur toute la longueur du couteau. Le jeu que vous réglez au montage reste uniforme d'un bout à l'autre, au lieu de s'ouvrir d'un côté et de se refermer de l'autre sous charge.",
+          "Les couteaux D2 , M2 HSS et à pointe en carbure vous offrent des choix de matériaux et de construction pour la préparation des aliments en plastique, le remplacement étant spécifié autour de la forme d'alimentation et de la position du couteau existant.",
       },
       {
-        id: "feedstock-matched-alloy",
-        tag: "MÉTALLURGIE",
-        title: "Une nuance adaptée à ce que vous traitez réellement",
+        id: "compactor-edge-construction",
+        tag: "Construction des bords",
+        title: "Couteaux de rotor, de stator et de pré-coupe",
         description:
-          "D2 pour film propre PE et PP, M2 HSS pour paillettes de PET et matière post-consommation empoussiérée qui ramollit le D2 à température de travail, plaquette carbure pour les flux chargés en fibre de verre et à fort taux de cendres. Spécifié d'après votre alimentation, pas d'après une valeur par défaut.",
+          "Sureay fournit des couteaux mobiles, fixes et de pré-coupe pour les ensembles coupe-compacteur. Les longueurs de couteaux répertoriées vont de 80 à 400 mm. Chaque position peut être commandée séparément ou coordonnée avec les autres positions de coupe de l'ensemble.",
       },
       {
-        id: "matched-rotor-stator-sets",
-        tag: "DURÉE DE VIE",
-        title: "Fournis en jeux appariés rotor + stator",
+        id: "compactor-process-position",
+        tag: "Poste de processus",
+        title: "Profils personnalisés avec blocs de support",
         description:
-          "Les couteaux rotor et stator s'usent selon des géométries différentes. Monter un couteau rotor neuf face à un stator usé laisse un jeu irrégulier et fait porter toute la charge au couteau neuf — il s'émousse en une fraction de sa durée de vie nominale. Nous les chiffrons et les expédions par jeux.",
+          "Des contours de lame personnalisés, des caractéristiques de fixation et des profils de coupe peuvent être proposés aux côtés des blocs de support requis, gardant la lame et ses pièces de support alignées avec votre assemblage existant.",
+        relatedBladeIds: ["granulator-blades"],
       },
     ],
+    specs: [
+      {
+        label: "Dimensions",
+        value: "80–400 mm",
+      },
+      {
+        label: "Application",
+        value: "Préconditionnement de la matière première avant extrusion",
+      },
+      {
+        label: "Types de couteaux",
+        value:
+          "Couteaux de rotor, couteaux de stator fixes, couteaux de pré-coupe et blocs porte-couteaux",
+      },
+      {
+        label: "Matériau",
+        value:
+          "Construction D2 (1.2379), M2 HSS (1.3343) ou à pointe en carbure",
+      },
+      {
+        label: "Dureté",
+        value:
+          "D2 : HRC 58-61 ; M2 : HRC 62-64 ; tranchant en carbure : HRA 89–91",
+      },
+      {
+        label: "Planéité de la face",
+        value: "≤0,03 mm sur la longueur de la lame",
+      },
+      {
+        label: "Parallélisme",
+        value: "≤0.02 mm",
+      },
+      {
+        label: "Matière première",
+        value: "Film PE/PP, flocons PET, sacs tissés, fibre et mousse",
+      },
+      {
+        label: "Écart de coupe typique",
+        value: "0,2–0,5 mm (en fonction de la machine)",
+      },
+      {
+        label: "Traitement thermique",
+        value: "Trempe sous vide et traitement cryogénique profond (−196°C)",
+      },
+    ],
+    relatedBladeIds: [
+      "granulator-blades",
+      "continuous-melt-filter-scraper-blades",
+    ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 560,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Les couteaux d’agglomérateur et les lames de cutter-compacteur sont-ils identiques ?",
+          answer:
+            "Oui, les noms peuvent faire référence à des couteaux sur le même équipement de préparation d’alimentation par extrusion. La pièce réelle dépend de la machine et du fait que le couteau soit placé sur le rotor, le stator ou la station de prédécoupe.",
+        },
+        {
+          question:
+            "Comment le film flexible et les flocons prédécoupés affectent-ils la sélection des couteaux ?",
+          answer:
+            "Le film flexible et les flocons prédécoupés présentent différentes formes d'alimentation à l'unité de préconditionnement. Comparez la position du couteau installé et le biseau avec le matériau en cours de traitement. La conservation de ces détails permet de spécifier un remplacement, tandis qu'un changement de forme d'alimentation peut nécessiter une révision de la configuration prévue des couteaux de la machine.",
+        },
+        {
+          question:
+            "Quand faut-il envisager d’utiliser des couteaux de compacteur à pointe de carbure ?",
+          answer:
+            "Évaluez les bords à pointe de carbure lorsque le modèle d'usure du couteau en acier actuel suggère un devoir abrasif, ainsi que la propreté et la cohérence de l'alimentation. Les dommages causés par des impacts récurrents nécessitent une évaluation distincte de la contamination et du support des bords. Comparez la construction complète de la pale et le biseau avec la configuration originale du rotor ou du stator.",
+        },
+        {
+          question:
+            "Un couteau granulateur peut-il remplacer un couteau cutter-compacteur ?",
+          answer:
+            "Généralement non. Les couteaux du cutter-compacteur préparent les aliments pour l'extrusion, tandis que les [Couteaux de granulateur en plastique](/products/granulator-blades) coupent le matériau en rebroyé. Choisissez en fonction de la position de travail, du siège du couteau et du profil de coupe même si les deux lames ont des longueurs ou un espacement des trous similaires.",
+        },
+        {
+          question:
+            "Sureay peut-il fournir des couteaux de rotor et de stator ensemble ?",
+          answer:
+            "Oui. Les couteaux mobiles et fixes peuvent être inclus dans une seule commande, chaque position étant identifiée séparément. Répertoriez tous les couteaux pré-coupeurs et les blocs de support comme des éléments distincts. Le modèle de machine et les dessins définissent les profils pertinents, les directions de coupe et les quantités pour l'exigence de remplacement complet.",
+        },
+        {
+          question:
+            "Comment puis-je obtenir un devis pour les couteaux et les blocs de support du compacteur de coupe ?",
+          answer:
+            "Envoyez le modèle de la machine, les dessins ou les numéros de pièces et les quantités par position du rotor, du stator et de la pré-coupe. Décrivez si vous traitez des films ou des flocons prédécoupés et indiquez si des blocs de support sont nécessaires. Si le couteau de référence a été affûté, distinguez sa position restante du bord de la dimension d'origine.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle du compacteur, la position du rotor ou stationnaire, le dessin de la lame, le polymère, la forme d'alimentation et le modèle d'usure.",
     dimensionLabels: {
       col0: "Type de Couteau",
       col1: "Longueur (mm)",
@@ -5927,114 +7392,143 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Rotor knife (movable)",
+        itemNo: "SR007301",
+        spec: "Couteau de rotor (mobile)",
         od: "150 – 250",
         bolt: "40 – 60",
         thickness: "8 – 12",
       },
       {
-        spec: "Rotor knife (movable)",
+        itemNo: "SR007302",
+        spec: "Couteau de rotor (mobile)",
         od: "250 – 400",
         bolt: "60 – 80",
         thickness: "12 – 20",
       },
       {
-        spec: "Stator knife (fixed)",
+        itemNo: "SR007303",
+        spec: "Couteau de stator (fixe)",
         od: "120 – 220",
         bolt: "40 – 60",
         thickness: "10 – 16",
       },
       {
-        spec: "Stator knife (fixed)",
+        itemNo: "SR007304",
+        spec: "Couteau de stator (fixe)",
         od: "220 – 350",
         bolt: "60 – 80",
         thickness: "16 – 25",
       },
       {
-        spec: "Pre-cutter / feed blade",
+        itemNo: "SR007305",
+        spec: "Lame de pré-coupe/alimentation",
         od: "80 – 160",
         bolt: "30 – 50",
         thickness: "8 – 14",
       },
       {
-        spec: "Knife holder block",
+        itemNo: "SR007306",
+        spec: "Bloc porte-couteau",
         od: "60 – 120",
         bolt: "50 – 90",
         thickness: "20 – 40",
       },
     ],
-    relatedBladeIds: [
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "strand-pelletizer-rotors",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 560,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle: "Lames de compacteur de coupe | Couteaux de rotor et de stator",
+      heroAlt:
+        "Couteaux de stator de compacteur de coupe avec arêtes de coupe rectifiées et caractéristiques de montage",
+      sizeRange: "80–400 mm",
+      heroSpecs: [
         {
-          question:
-            "Quel jeu de coupe dois-je régler entre les couteaux rotor et stator ?",
-          answer:
-            "Utilisez la valeur du manuel de votre machine — elle dépend de la machine et de la matière, et se situe généralement autour de 0,2–0,5 mm. La question la plus utile est de savoir si le jeu reste là où vous l'avez réglé. Si la face d'appui du couteau n'est pas plane, ou si vous avez monté un couteau rotor neuf face à un stator usé, le jeu variera sur la longueur de coupe quel que soit le soin du réglage. Réglez le jeu à l'aide de cales d'épaisseur aux deux extrémités et au centre du couteau, et non en un seul point, puis recontrôlez-le après les premières heures de marche, une fois l'ensemble stabilisé et à température de travail.",
+          label: "Matériau",
+          value: "Construction D2 , M2 HSS ou à pointe en carbure",
         },
         {
-          question:
-            "Mon compacteur chauffe et la sortie est bûcheleuse au lieu d'un grain homogène. Quel est le problème ?",
-          answer:
-            "C'est la signature classique d'un jeu de coupe trop large, généralement dû à des couteaux usés. Lorsque le jeu s'ouvre, la matière est malaxée au lieu d'être coupée : la chaleur de friction dépasse la plage visée, le film s'agglutine en bûcheaux et la masse volumique apparente devient erratique — ce que l'extrudeuse perçoit comme une alimentation fluctuante. Vous constaterez généralement en même temps une hausse de la consommation électrique et une baisse de débit. Vérifiez le jeu et les tranchants avant de modifier les consignes de température ou le débit d'alimentation, car ce ne sont que des compensations du vrai problème, pas des solutions.",
-        },
-        {
-          question:
-            "Puis-je ne remplacer que les couteaux rotor et conserver les couteaux stator ?",
-          answer:
-            "C'est possible, mais c'est généralement une fausse économie. Les deux s'usent selon des géométries différentes — le couteau rotor perd son fil tandis que le stator tend à s'user en rayon et à se creuser là où le flux de matière se concentre. Un couteau rotor neuf travaillant face à un stator usé supporte toute la charge de coupe sur un jeu irrégulier et s'émoussera bien plus vite que sa durée de vie nominale : vous vous retrouverez au même arrêt plus tôt que prévu. Remplacer les deux ensemble coûte plus cher par changement et moins cher à la tonne traitée.",
-        },
-        {
-          question:
-            "Comment choisir entre couteaux D2, M2 HSS et à plaquette carbure ?",
-          answer:
-            "Adaptez la nuance à votre alimentation. Le D2 à 58–61 HRC est le choix économique par défaut pour film propre LDPE, LLDPE et PP, sacs tissés et chutes avant consommation. Passez au M2 HSS à 62–64 HRC pour les paillettes de PET et pour le film post-consommation imprimé ou poussiéreux — le M2 conserve son fil à la température élevée régnant dans un compacteur en marche, là où le D2 commence à ramollir. Réservez les couteaux à plaquette carbure aux composés renforcés de fibre de verre, aux matières chargées en minéraux et aux flux à fort taux de cendres ; ils durent bien plus longtemps sur ces alimentations mais coûtent davantage et supportent moins bien les chocs, ce qui en fait un mauvais choix si votre alimentation contient occasionnellement du métal.",
-        },
-        {
-          question:
-            "Combien de fois un couteau de compacteur peut-il être réaffûté ?",
-          answer:
-            "Trois à cinq réaffûtages sont courants pour les couteaux D2 et M2 avant que le couteau n'atteigne sa hauteur minimale utilisable et que le jeu ne puisse plus être rattrapé. Chaque réaffûtage enlève de la matière sur la face de coupe, si bien que le couteau descend progressivement dans son logement — la plupart des machines permettent de compenser par des cales jusqu'à une certaine limite. Les couteaux à plaquette carbure sont réaffûtés uniquement sur le carbure et autorisent généralement moins de cycles. Nous indiquons la hauteur minimale sur le plan de fabrication afin que votre équipe de maintenance sache quand un couteau est en fin de vie plutôt que de le supposer.",
+          label: "Application",
+          value: "Préconditionnement des plastiques avant extrusion",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "Pouvez-vous fabriquer des couteaux pour mon compacteur sans plan OEM ?",
-          answer:
-            "Oui — c'est l'essentiel de ce que nous faisons sur ce produit. Envoyez la marque et le modèle de la machine ainsi qu'un couteau usé, ou des photographies nettes avec les cotes de longueur, largeur, épaisseur et position des trous de fixation. Nous établissons un plan de fabrication soumis à votre approbation écrite avant toute découpe d'acier, et nous l'archivons afin que les commandes suivantes ne nécessitent aucune nouvelle prise de cotes.",
+          label: "Dimensions",
+          value: "80–400 mm",
         },
         {
-          question:
-            "Quel est le délai, et puis-je essayer un jeu au préalable ?",
-          answer:
-            "Les couteaux fabriqués d'après un plan existant sont expédiés sous 10 à 15 jours ouvrés. Une première rétro-conception ajoute environ 3 à 5 jours pour le plan et son approbation. Nous fournissons des jeux d'essai pour vérifier le montage sur machine et comparer la tenue du fil avant que vous ne vous engagiez sur une quantité de production — pour les profils spéciaux, nous réalisons d'abord un échantillon dimensionnel de validation, sans aucun engagement d'outillage tant que le montage n'est pas confirmé.",
+          label: "Application",
+          value: "Préconditionnement de la matière première avant extrusion",
         },
         {
-          question: "Quelle documentation accompagne les couteaux ?",
-          answer:
-            "Chaque expédition comprend un certificat d'essai de dureté Rockwell, un procès-verbal de contrôle dimensionnel par rapport au plan approuvé, un certificat de traçabilité matière de l'aciérie et un relevé de lot de traitement thermique. Des rapports dimensionnels complets sur MMT sont disponibles sur demande pour la qualification OEM.",
+          label: "Types de couteaux",
+          value:
+            "Couteaux de rotor, couteaux de stator fixes, couteaux de pré-coupe et blocs porte-couteaux",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Construction D2 (1.2379), M2 HSS (1.3343) ou à pointe en carbure",
+        },
+        {
+          label: "Dureté",
+          value:
+            "D2 : HRC 58-61 ; M2 : HRC 62-64 ; tranchant en carbure : HRA 89–91",
+        },
+        {
+          label: "Planéité de la face",
+          value: "≤0,03 mm sur la longueur de la lame",
+        },
+        {
+          label: "Parallélisme",
+          value: "≤0.02 mm",
+        },
+        {
+          label: "Matière première",
+          value: "Film PE/PP, flocons PET, sacs tissés, fibre et mousse",
+        },
+        {
+          label: "Écart de coupe typique",
+          value: "0,2–0,5 mm (en fonction de la machine)",
+        },
+        {
+          label: "Traitement thermique",
+          value: "Trempe sous vide et traitement cryogénique profond (−196°C)",
         },
       ],
+      specificationImage: {
+        src: "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
+        alt: "Couteau de rotor de compacteur de coupe avec un tranchant affûté et un trou de fixation",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour vos couteaux de compacteur",
+        description:
+          "Incluez le modèle de la machine, la position du rotor ou du stator, le dessin ou l'échantillon de la pale, la forme d'alimentation et la quantité.",
+        buttonLabel: "Demander un devis",
+      },
     },
+    disambiguation:
+      "Pour la production de rebroyés, voir [Couteaux pour granulateurs en plastique](/products/granulator-blades) .",
   },
   {
     id: "die-face-cutting-knives",
-    name: "Couteaux de Coupe en Tête de Filière & Couteaux de Granulation",
-    fullName: "Couteaux de Coupe en Tête de Filière & Couteaux de Granulation",
-    category: "granulator_blades",
+    name: "Couteaux de granulation en tête",
+    fullName:
+      "Couteaux de coupe en tête de filière pour granulateurs de plastique",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Couteaux de Coupe en Tête de Filière",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+    imageDimensions: {
+      width: 1200,
+      height: 1200,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1199,
+      height: 899,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Filière Préservée",
     badgeColor: "blue",
     gallery: [
@@ -6048,11 +7542,7 @@ export const blades: Blade[] = [
       "Paire de couteaux de coupe en tête de filière sur fond blanc montrant la géométrie des lumières et la finition du tranchant",
     ],
     description:
-      "Couteaux de coupe en tête de filière pour granulateurs sous eau, à anneau d'eau et à filière chaude, rectifiés plus tendres que votre plaque filière. Compatibles Gala, Nordson BKG, Maag, ECON.",
-    fullDescription:
-      "Un couteau de coupe en tête de filière — vendu également comme couteau de granulateur sous eau, couteau de coupe à la filière, couteau de filière chaude ou couteau UWP — est un consommable travaillant en contact glissant permanent avec une plaque filière valant des dizaines de milliers de dollars. Cette asymétrie définit tout le problème de spécification : le couteau doit être assez dur pour tenir son fil face au polymère chaud, et délibérément plus tendre que la face de filière sur laquelle il glisse, afin que l'usure soit absorbée par la pièce que vous prévoyez de remplacer.\n\nC'est la même logique d'usure maîtrisée que Sureay applique aux racleurs de filtres à fondu continus, et c'est pourquoi nous chiffrons un différentiel de dureté plutôt que simplement la dureté la plus élevée disponible. Un couteau plus dur que la plaque filière ne dure pas plus longtemps — il raye la face de filière, ouvre le jeu de coupe et transforme un changement de couteaux de routine en réfection de filière.\n\n## Trois méthodes de granulation, trois couteaux différents\n\n**Granulation sous eau (UWP).** La face de filière est entièrement immergée dans une chambre d'eau à température régulée. Les granulés sont coupés directement à la face de filière et évacués en suspension. Les couteaux travaillent humides et tièdes, ce qui fait de la résistance à la corrosion un véritable critère de choix — l'inoxydable 440C y trouve sa place malgré une tenue de fil inférieure à celle de l'acier à outils.\n\n**Granulation à anneau d'eau.** Un rideau d'eau annulaire refroidit les granulés après la coupe, mais la face de filière elle-même travaille à l'air. Le cyclage thermique du tranchant est plus sévère qu'en coupe réellement sous eau, ce qui favorise les nuances plus tenaces au détriment des plus dures.\n\n**Granulation à filière chaude.** La coupe s'effectue à sec contre une filière chauffée, les granulés étant transportés par air. C'est la température de tranchant la plus élevée des trois méthodes, et l'argument le plus fort en faveur du PM-HSS ou du carbure.\n\n## Géométrie du couteau\n\nLa forme du tranchant se choisit selon la viscosité du polymère et la forme de granulé recherchée :\n\n- **Biseau à 45°** — la géométrie polyvalente. Bon équilibre entre résistance du tranchant et acuité de coupe sur les polyoléfines de grande consommation.\n- **Tranchant droit à 90°** — résistance maximale pour les composés rigides, chargés ou très abrasifs, où un biseau fin s'écaillerait.\n- **Biseau à épaulement** — un dégagement en deux temps qui conserve une ligne de coupe vive tout en laissant derrière elle une portée robuste. Utilisé lorsqu'un fil fin est nécessaire mais que la durée de vie à 45° serait inacceptable.\n- **Courbe / crochet** — attire le jonc de fondu dans la coupe au lieu de le repousser. Adapté aux polymères de faible viscosité et collants qui s'étalent contre un tranchant droit.\n\n## Pourquoi l'homogénéité d'épaisseur au sein d'un jeu détermine la durée de vie\n\nUn granulateur fait tourner un jeu complet de couteaux sur un même moyeu porte-couteaux, plaqués contre la face de filière par une précharge commune. Si l'épaisseur varie d'un couteau à l'autre, les plus épais supportent une part disproportionnée de la pression de contact tandis que les plus minces touchent à peine. Il en résulte un jeu qui s'use irrégulièrement, une qualité de coupe qui se dégrade bien avant que le couteau moyen ne soit usé, et un rayage localisé de la face de filière sous les couteaux hauts.\n\nNous rectifions les couteaux par jeux appariés et vérifions l'homogénéité d'épaisseur de l'ensemble du jeu sur MMT, plutôt que de contrôler uniquement une tolérance pièce par pièce. La planéité compte pour la même raison : un couteau qui n'est pas plan porte sur la filière par une arête au lieu de porter sur toute sa surface d'appui.\n\n## Choix de la matière\n\n**D2 (1.2379)** — nuance économique polyvalente pour polyoléfines propres de grande consommation.\n**M2 HSS (1.3343)** — meilleure dureté à chaud pour polymères techniques et à température plus élevée.\n**T42 (1.3207)** — HSS à forte teneur en tungstène pour coupe prolongée à température élevée.\n**HSS pulvimétallurgique (PM)** — structure de carbures fine et homogène, le meilleur compromis entre tenue de fil et ténacité pour composés abrasifs et chargés.\n**Inoxydable 440C** — pour service sous eau où la résistance à la corrosion prime sur la durée de vie maximale du tranchant, en particulier sur les lignes à l'arrêt entre deux campagnes.\n**Carbure de tungstène** — durée de vie maximale sur composés chargés en verre et en minéraux, où sa fragilité constitue un compromis acceptable.\n\n## Compatibilité machines\n\nLes couteaux sont fabriqués pour les systèmes de granulation Gala, Nordson BKG (y compris série AH), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec et WRP. Envoyez le modèle de machine avec un couteau échantillon ou une photographie cotée, et nous établirons un plan soumis à approbation. Moyeux porte-couteaux, plaques filières, tiges filetées, vis de couteaux et joints toriques sont fournis avec les couteaux.",
-    disambiguation:
-      "Vous coupez des joncs extrudés à l'air plutôt qu'à la face de filière ? Consultez [Rotors de Granulateur à Joncs](/products/strand-pelletizer-rotors) pour les jeux rotor hélicoïdal et contre-couteau.",
+      "Couteaux de granulation à face filière de rechange pour systèmes sous-marins, à anneau d'eau et à face chaude. Fentes de lame personnalisées, profils de bord et ensembles assortis au dessin.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -6067,114 +7557,75 @@ export const blades: Blade[] = [
       "IPS",
       "Filtec",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 · M2 HSS · T42 · PM-HSS · 440C Stainless · Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value: "Blade held below die plate hardness (controlled wear)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "45° bevel · 90° square · Stepped bevel · Curved / hooked",
-      },
-      {
-        label: "Thickness Consistency",
-        value: "≤ 0.01 mm variation within a matched set",
-      },
-      {
-        label: "Flatness",
-        value: "≤ 0.01 mm",
-      },
-      {
-        label: "Pelletizing Methods",
-        value: "Underwater · Water-ring · Hot die face",
-      },
-      {
-        label: "Supply Format",
-        value: "Matched sets, CMM-verified; hubs and die plates available",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Gala, Nordson BKG, Maag, ECON, Coperion, NGR",
-      },
-    ],
-    componentsIntro:
-      "La plaque filière est l'actif ; le couteau est le consommable. Tout ce qui suit découle du maintien de cette relation dans le bon sens.",
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de découpe de rechange conçus pour votre moyeu de coupe, avec des fentes, des épaulements et des profils de bord personnalisés. Sureay propose des ensembles de couteaux assortis dans des configurations en acier, HSS , inoxydable et carbure. Envoyez vos dessins pour un devis adapté à votre système de granulation. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     components: [
       {
-        id: "die-plate-protection",
-        tag: "USURE MAÎTRISÉE",
-        title: "Votre plaque filière survit au couteau",
+        id: "die-face-body-profiles",
+        tag: "Profils corporels",
+        title: "Choix de matériaux pour la paire lame-matrice",
         description:
-          "La dureté du couteau est spécifiée en dessous de celle de la face de filière afin que le consommable absorbe l'usure. Un couteau plus dur que la filière ne dure pas plus longtemps — il raye la face de filière, ouvre le jeu de coupe et transforme un changement de couteaux en réfection de filière.",
+          "Sureay propose des configurations D2 , M2 HSS , T42 , PM- HSS , 440C en acier inoxydable et en carbure, permettant de sélectionner le matériau du couteau avec le polymère et la plaque de matrice d'accouplement.",
       },
       {
-        id: "matched-set-grinding",
-        tag: "PRÉCISION",
-        title: "Rectifiés et contrôlés en jeu apparié",
+        id: "die-face-working-edge",
+        tag: "Bord de travail",
+        title: "Corps personnalisés et profils de travail",
         description:
-          "Homogénéité d'épaisseur à ≤0,01 mm sur l'ensemble du jeu, vérifiée sur MMT. Un jeu complet partage une seule précharge contre la filière : les couteaux épais encaissent la charge et rayent la filière, les minces ne coupent jamais. Une tolérance pièce par pièce seule n'empêche pas cela.",
+          "Les corps de couteaux répertoriés ont une longueur de 45 à 70 mm. Sureay fabrique des corps droits, fourchus et étagés avec les fentes, les faces d'appui et les bords de travail carrés, biseautés ou incurvés spécifiés pour le moyeu de coupe installé.",
       },
       {
-        id: "geometry-by-polymer",
-        tag: "GÉOMÉTRIE",
-        title: "La forme du tranchant se choisit d'après votre polymère",
+        id: "die-face-pelletizing-station",
+        tag: "Méthode de pelletisation",
+        title: "Ensembles de couteaux assortis et composants compagnons",
         description:
-          "45° pour les polyoléfines de grande consommation, 90° pour les composés chargés et abrasifs, biseau à épaulement lorsqu'un fil fin est nécessaire mais doit tenir, crochet pour les fondus de faible viscosité et collants qui s'étalent contre un tranchant droit.",
+          "Commandez des ensembles de couteaux assortis réalisés selon un dessin commun, avec l'épaisseur de la lame, la géométrie du siège et la direction de coupe spécifiées pour les positions de moyeu requises. Les moyeux et les matrices peuvent être inclus dans la demande.",
+        relatedBladeIds: ["strand-pelletizer-rotors"],
       },
     ],
-    dimensionLabels: {
-      col0: "Profil de Couteau",
-      col1: "Longueur × Largeur (mm)",
-      col2: "Épaisseur (mm)",
-      col3: "Fixation",
-      caption:
-        "* Géométries représentatives de couteaux actuellement en production. Les couteaux de granulateur sous eau sont réalisés pour le moyeu porte-couteaux spécifique — envoyez le modèle de machine avec un couteau échantillon ou une photographie cotée pour un chiffrage exact.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Straight, twin slot",
-        od: "45 × 25",
-        bolt: "3 – 6",
-        thickness: "2 × Ø5.5 slots",
+        label: "Application",
+        value: "Découpe de pellets sur la face de la filière d'extrusion",
       },
       {
-        spec: "Straight, twin slot",
-        od: "60 × 30",
-        bolt: "3 – 6",
-        thickness: "2 × R3.5 slots",
+        label: "Matériau",
+        value: "D2 , M2 HSS , T42 , PM- HSS , acier inoxydable 440C ou carbure",
       },
       {
-        spec: "Straight, wide body",
-        od: "60 × 46",
-        bolt: "4 – 8",
-        thickness: "2 × R3.5, R5 relief",
+        label: "Géométrie des bords",
+        value: "Biseau à 45°, carré à 90°, biseau étagé ou bord incurvé/crochu",
       },
       {
-        spec: "Forked, triple slot",
-        od: "55 × 34",
-        bolt: "3 – 6",
-        thickness: "3 × R3.5 slots",
+        label: "Dimensions",
+        value: "45–70 mm",
       },
       {
-        spec: "Stepped / shouldered",
-        od: "60 × 35",
-        bolt: "4 – 8",
-        thickness: "2 slots, 129° flank",
+        label: "Cohérence de l'épaisseur",
+        value: "Écart ≤0,01 mm au sein d’un jeu appairé",
       },
       {
-        spec: "Tapered / hooked",
-        od: "70 × 60",
-        bolt: "4 – 8",
-        thickness: "63° flank",
+        label: "Platitude",
+        value: "≤0.01 mm",
+      },
+      {
+        label: "Méthodes de pelletisation",
+        value: "Granulation sous l'eau, avec anneau d'eau ou à chaud",
+      },
+      {
+        label: "Différentiel de dureté",
+        value:
+          "Dureté de la lame sous la plaque matrice d'accouplement (configuration à usure contrôlée)",
+      },
+      {
+        label: "Format de l'offre",
+        value:
+          "Ensembles appariés, vérifiés par CMM ; moyeux et plaques matrices disponibles",
       },
     ],
     drawings: {
       intro:
-        "La plupart des commandes de couteaux de granulation nous parviennent sans plan OEM : le client envoie un couteau usé, ou une photographie et un modèle de machine. Les géométries ci-dessous sont des plans que nous avons établis ainsi, de la prise de cotes au plan de fabrication approuvé. Elles montrent l'éventail de formes de corps, de motifs de lumières et d'angles de flanc que nous tenons en production, et l'allure qu'aurait votre propre couteau une fois rétro-conçu.",
+        "Ces exemples de dessins montrent comment la forme du corps, les fentes de montage et les angles des flancs varient selon le moyeu de la fraise. Utilisez votre dessin approuvé ou un échantillon mesuré lorsque vous demandez un remplacement.",
       items: [
         {
           image:
@@ -6236,7 +7687,6 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "strand-pelletizer-rotors",
       "continuous-melt-filter-scraper-blades",
-      "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 18,
@@ -6245,549 +7695,2735 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Vos couteaux vont-ils endommager ma plaque filière ?",
+          question: "Quel couteau de rechange convient à mon granulateur ?",
           answer:
-            "Non, si le rapport de dureté est correctement spécifié, et c'est la première chose que nous établissons à chaque demande. Le couteau est délibérément maintenu en dessous de la dureté de la face de filière afin que l'usure soit absorbée par le consommable. Un couteau plus dur que la plaque filière ne vous donne pas une durée de vie supérieure — il raye la face de filière, ce qui ouvre le jeu de coupe, dégrade la qualité des granulés et finit par imposer une rectification ou un remplacement de la filière. Indiquez-nous la matière et la dureté de la plaque filière, ou le modèle de machine si vous ne les connaissez pas, et nous spécifierons le couteau en conséquence. Chaque expédition est accompagnée d'un certificat de dureté afin que vous puissiez vérifier ce rapport avant montage.",
+            "Identifiez le granulateur et le moyeu du coupeur, puis spécifiez le corps du couteau, l'épaisseur, les fentes de fixation, la face d'appui et le sens de coupe. Les couteaux à filière et lames de granuleuse face chaude sont des conditions d'achat associées. Le profil de travail complet et la relation de montage établissent le remplacement particulier au sein de cette machine.",
         },
         {
           question:
-            "Pourquoi un couteau de mon jeu s'use-t-il beaucoup plus vite que les autres ?",
+            "Les couteaux de granulation sous-marins, à anneau d'eau et à face chaude sont-ils interchangeables ?",
           answer:
-            "Presque toujours à cause d'une épaisseur inégale au sein du jeu. Un jeu complet de couteaux partage une seule précharge contre la face de filière : si l'épaisseur varie d'un couteau à l'autre, les plus épais supportent une part disproportionnée de la pression de contact — ils s'usent rapidement et rayent la filière, tandis que les plus minces touchent à peine et ne coupent jamais correctement. Le jeu est hors service bien avant que le couteau moyen ne soit usé. C'est pourquoi nous rectifions les couteaux par jeux appariés et vérifions sur MMT l'homogénéité d'épaisseur de l'ensemble du jeu à 0,01 mm près, plutôt que de contrôler chaque couteau isolément par rapport à une tolérance.",
+            "Les machines sous-marines, à anneau d'eau et à face chaude peuvent utiliser différents moyeux, caractéristiques de montage et profils de pales. Faites correspondre le dessin réel du moyeu et du couteau. Si la machine coupe des brins sous l'eau avec un rotor denté et un couteau de lit, voir [Rotors de pelletiseur de brins](/products/strand-pelletizer-rotors) .",
         },
         {
           question:
-            "Quelle géométrie de tranchant utiliser — 45°, 90°, à épaulement ou crochet ?",
+            "Pourquoi le matériau de la matrice est-il important lors du choix du couteau ?",
           answer:
-            "Choisissez selon la viscosité du polymère et le taux de charge. Un biseau à 45° est la géométrie polyvalente et le choix par défaut pertinent pour les polyoléfines de grande consommation. Passez à un tranchant droit à 90° pour les composés rigides, chargés en minéraux ou très abrasifs, où un biseau fin s'écaillerait. Un biseau à épaulement vous donne une ligne de coupe vive avec une portée robuste derrière, pour les cas où le fil fin est nécessaire mais où un simple 45° ne tiendrait pas. La géométrie courbe ou en crochet attire le fondu dans la coupe au lieu de le repousser, ce qui est recherché sur les polymères de faible viscosité ou collants qui s'étalent contre un tranchant droit.",
+            "Le couteau et la face de la matrice forment une paire fonctionnelle, leurs matériaux et leurs caractéristiques d'usure doivent donc être pris en compte ensemble. Utilisez les spécifications originales de la face de la matrice ainsi que l'usure actuelle du polymère et du couteau. Un changement dans la dureté ou la construction de la lame doit préserver la relation matérielle prévue pour ce système de granulation.",
         },
         {
           question:
-            "Dois-je utiliser des couteaux en acier inoxydable pour la granulation sous eau ?",
+            "Pourquoi les couteaux d'un même jeu devraient-ils partager la géométrie d'assise spécifiée ?",
           answer:
-            "L'inoxydable 440C mérite d'être spécifié lorsque la corrosion est un facteur d'exploitation réel — en particulier sur les lignes à l'arrêt entre deux campagnes, où un couteau en acier à outils peut développer de la rouille de surface dans la chambre d'eau, laquelle raye ensuite la filière au redémarrage. La contrepartie est la tenue de fil : le 440C ne conservera pas son tranchant aussi longtemps que le M2 ou le PM-HSS à service égal. Si votre ligne tourne en continu et que la chimie de l'eau est maîtrisée, l'acier à outils ou le PM-HSS offrent généralement un meilleur coût à la tonne. Si elle démarre et s'arrête, ou si la chambre d'eau n'est pas vidangée, l'option inoxydable se rentabilise souvent d'elle-même.",
+            "Chaque pale doit atteindre sa position de travail prévue sur le moyeu. Les variations d'épaisseur, de faces d'appui ou de position des bords peuvent affecter la manière dont les couteaux rencontrent la matrice. Spécifiez l'ensemble complet selon la même révision de dessin, y compris toutes les positions délibérément différentes, afin que la géométrie de coupe installée soit clairement définie.",
         },
         {
           question:
-            "En quoi les couteaux sous eau, à anneau d'eau et à filière chaude diffèrent-ils ?",
+            "Que faut-il revoir lorsqu’un couteau s’use plus vite que les autres ?",
           answer:
-            "Ils diffèrent surtout par l'environnement thermique et corrosif au niveau du tranchant. Les couteaux sous eau travaillent immergés et tièdes, ce qui fait de la résistance à la corrosion un véritable critère de choix. Les couteaux à anneau d'eau coupent sur une face de filière travaillant à l'air, le rideau d'eau se trouvant en aval, ce qui soumet le tranchant à un cyclage thermique plus sévère et favorise les nuances plus tenaces au détriment des plus dures. Les couteaux à filière chaude coupent à sec contre une filière chauffée et subissent la température de tranchant la plus élevée des trois, ce qui justifie la prime du PM-HSS et du carbure. Indiquez-nous la méthode employée sur votre ligne — elle modifie la nuance recommandée même lorsque les dimensions du couteau sont identiques.",
+            "Commencez par vérifier si ce couteau se trouve à la même hauteur et au même angle spécifiés que les autres sur le moyeu. Comparez son épaisseur, sa face d'appui et la position du bord, puis vérifiez l'alignement du support et la face de matrice partagée. L'inspection de ces points de contact permet d'évaluer une usure inégale avant de changer le matériau de la lame.",
         },
         {
           question:
-            "Fournissez-vous les moyeux porte-couteaux et les plaques filières en plus des couteaux ?",
+            "Sureay peut-il reproduire un couteau fourchu ou étagé à partir d’un échantillon ?",
           answer:
-            "Oui. Moyeux porte-couteaux, plaques filières, tiges filetées, vis de fixation de couteaux et joints toriques sont tous disponibles, et commander l'ensemble des pièces d'usure évite le désaccord dimensionnel qui provoque une charge inégale des couteaux. Si vous remplacez également le moyeu en plus des couteaux, nous recommandons de les fournir ensemble afin que les faces d'appui des couteaux et le moyeu soient contrôlés l'un par rapport à l'autre avant expédition.",
+            "Oui. Un échantillon peut identifier le contour, les fentes et les caractéristiques d'assise, tandis que le dessin établit les nouvelles dimensions et le profil de coupe prévus. Marquez clairement la face de travail et la direction de coupe. Les formes illustrées fournissent des références, avec l'épaisseur complète et les détails de montage définissant la lame de votre moyeu de coupe.",
+        },
+        {
+          question:
+            "De quoi avez-vous besoin pour citer lames de granuleuse , des moyeux ou des plaques de filière ?",
+          answer:
+            "Fournir le modèle de pelletiseur, le polymère, le dessin du couteau et la quantité pour l'ensemble. Montrez les sièges de lame, les fentes de fixation et le sens de coupe. Si le devis doit inclure un moyeu de coupe ou une plaque matrice, envoyez un dessin séparé ou une référence de pièce pour chacun et identifiez les composants que vous conserverez.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclut le modèle de granulateur et de moyeu de coupe, le dessin de la lame, le motif de fente, la direction du bord de travail et les détails de la plaque de matrice.",
+    dimensionLabels: {
+      col0: "Profil de Couteau",
+      col1: "Longueur × Largeur (mm)",
+      col2: "Épaisseur (mm)",
+      col3: "Fixation",
+      caption:
+        "* Géométries représentatives de couteaux actuellement en production. Les couteaux de granulateur sous eau sont réalisés pour le moyeu porte-couteaux spécifique — envoyez le modèle de machine avec un couteau échantillon ou une photographie cotée pour un chiffrage exact.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR007401",
+        spec: "Droit, double fente",
+        od: "45 × 25",
+        bolt: "3 – 6",
+        thickness: "2 × emplacements Ø5,5",
+      },
+      {
+        itemNo: "SR007402",
+        spec: "Droit, double fente",
+        od: "60 × 30",
+        bolt: "3 – 6",
+        thickness: "2 × emplacements R3.5",
+      },
+      {
+        itemNo: "SR007403",
+        spec: "Corps droit et large",
+        od: "60 × 46",
+        bolt: "4 – 8",
+        thickness: "2 × R3.5 , soulagement R5",
+      },
+      {
+        itemNo: "SR007404",
+        spec: "Fourchu, triple fente",
+        od: "55 × 34",
+        bolt: "3 – 6",
+        thickness: "3 × emplacements R3.5",
+      },
+      {
+        itemNo: "SR007405",
+        spec: "Étagé / épaulé",
+        od: "60 × 35",
+        bolt: "4 – 8",
+        thickness: "2 fentes, flanc 129°",
+      },
+      {
+        itemNo: "SR007406",
+        spec: "Conique / accroché",
+        od: "70 × 60",
+        bolt: "4 – 8",
+        thickness: "flanc 63°",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Couteaux de découpe à matrice | Lames de remplacement personnalisées",
+      heroAlt:
+        "Profils de couteaux de découpe avec formes de corps droites, fourchues et étagées",
+      sizeRange: "45–70 mm",
+      heroSpecs: [
         {
-          question:
-            "Pouvez-vous rétro-concevoir des couteaux à partir d'un échantillon sans plan OEM ?",
-          answer:
-            "Oui, et c'est ainsi que débutent la plupart des commandes de couteaux de granulation. Envoyez un couteau échantillon — idéalement neuf, ou usé accompagné du modèle de machine — et nous établirons un plan dimensionnel complet sur notre MMT, soumis à votre approbation avant fabrication. Nous archivons le plan approuvé afin que les commandes suivantes ne nécessitent aucune nouvelle prise de cotes. Vos plans et échantillons restent votre propriété intellectuelle et ne sont jamais communiqués.",
+          label: "Matériau",
+          value:
+            "Acier à outils, acier HSS , acier PM, acier inoxydable ou carbure",
         },
         {
-          question:
-            "Quel est le délai, et puis-je essayer un jeu au préalable ?",
-          answer:
-            "Les couteaux réalisés d'après un plan déjà approuvé sont expédiés sous 10 à 15 jours ouvrés ; une première rétro-conception ajoute environ 3 à 5 jours pour la prise de cotes, le plan et l'approbation. Nous fournissons des jeux d'essai pour vérifier le montage et comparer la tenue du fil à celle de votre fournisseur actuel avant que vous ne vous engagiez sur une quantité de production.",
-        },
-        {
-          question:
-            "Quelle documentation accompagne un jeu de couteaux de granulation ?",
-          answer:
-            "Chaque jeu comprend un certificat de dureté Rockwell — le document qui vous permet de vérifier le rapport de dureté couteau/filière avant montage — ainsi qu'un rapport dimensionnel MMT couvrant l'homogénéité d'épaisseur de l'ensemble du jeu, un certificat de traçabilité matière de l'aciérie et un relevé de lot de traitement thermique.",
+          label: "Application",
+          value: "Découpe de pellets sur la face de la filière d'extrusion",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Application",
+          value: "Découpe de pellets sur la face de la filière d'extrusion",
+        },
+        {
+          label: "Matériau",
+          value:
+            "D2 , M2 HSS , T42 , PM- HSS , acier inoxydable 440C ou carbure",
+        },
+        {
+          label: "Géométrie des bords",
+          value:
+            "Biseau à 45°, carré à 90°, biseau étagé ou bord incurvé/crochu",
+        },
+        {
+          label: "Dimensions",
+          value: "45–70 mm",
+        },
+        {
+          label: "Cohérence de l'épaisseur",
+          value: "Écart ≤0,01 mm au sein d’un jeu appairé",
+        },
+        {
+          label: "Platitude",
+          value: "≤0.01 mm",
+        },
+        {
+          label: "Méthodes de pelletisation",
+          value: "Granulation sous l'eau, avec anneau d'eau ou à chaud",
+        },
+        {
+          label: "Différentiel de dureté",
+          value:
+            "Dureté de la lame sous la plaque matrice d'accouplement (configuration à usure contrôlée)",
+        },
+        {
+          label: "Format de l'offre",
+          value:
+            "Ensembles appariés, vérifiés par CMM ; moyeux et plaques matrices disponibles",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
+        alt: "Couteaux de découpe à face montrant leurs fentes de montage et leurs bords rectifiés",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour vos couteaux à filière",
+        description:
+          "Incluez le modèle de granulateur et de moyeu de coupe, le dessin ou l'échantillon de la lame, le motif de fente, l'orientation des bords et la quantité.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
-    id: "groove-bottom-knives",
-    name: "Couteaux Inférieurs Rainurés",
-    fullName:
-      "Couteaux inférieurs multi-rainures et bagues de coupe pour refendage par cisaillement",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Couteaux de Refendage",
-    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Pas dès 5 mm",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    id: "special-shaped-blades",
+    name: "Lames industrielles de forme spéciale",
+    fullName: "Lames industrielles de forme spéciale fabriquées sur plan",
+    seoTitle: "Lames industrielles de forme spéciale | Profils personnalisés",
+    category: "custom_profile",
+    sector: "other",
+    categoryDisplay: "Lames à profil personnalisé",
+    image: "/images/products/blades/special-shaped-knife.webp",
+    badge: "OEM sur mesure",
+    badgeColor: "teal",
+    description:
+      "Couteaux de machine de remplacement à profil personnalisé en D2 , H13 , PM- HSS ou carbure. Contours, arêtes de coupe et caractéristiques de montage spécifiques à la pièce réalisés selon le dessin.",
+    link: "/custom",
+    specs: [
+      {
+        label: "Application",
+        value:
+          "Couteaux de machine avec un contour ou un profil de bord spécifique à la pièce",
+      },
+      {
+        label: "Matériau",
+        value: "D2 , H13 , PM- HSS ou carbure",
+      },
+      {
+        label: "Dimensions",
+        value: "Fait au dessin",
+      },
+      {
+        label: "Tolérance dimensionnelle",
+        value: "±0.02 mm",
+      },
     ],
-    galleryAlts: [
-      "Bague de couteau inférieur multi-rainures aux rainures parallèles rectifiées avec précision pour refendage par cisaillement",
-      "Bagues de couteau inférieur multi-rainures avec une bague d'écartement lisse et des couteaux inférieurs plats",
-      "Bague de coupe inférieure multi-rainures montrant le pas de rainure et l'alésage rectifié",
+    offers: {
+      lowPrice: 20,
+      highPrice: 800,
+    },
+    quoteRequirements:
+      "Incluez la machine et le matériau, la révision du dessin, le contour de la lame, les dimensions de montage et les exigences de bord critique ou de tolérance.",
+    components: [
+      {
+        id: "special-shaped-blades-advantage-1",
+        tag: "Profils de coupe spécifiques à la pièce",
+        title: "Profils de coupe spécifiques à la pièce",
+        description:
+          "Sureay fabrique des lames industrielles avec des contours, des biseaux et des positions de bord de travail personnalisés, vous offrant ainsi une voie de remplacement pour les profils de couteaux en dehors des configurations droites ou circulaires standard.",
+      },
+      {
+        id: "special-shaped-blades-advantage-2",
+        tag: "Options en acier à outils, PM- HSS et carbure",
+        title: "Options en acier à outils, PM- HSS et carbure",
+        description:
+          "Les configurations D2 , H13 , PM- HSS et carbure permettent de spécifier le matériau de coupe en fonction de la conception de votre lame existante et du matériau à traiter.",
+      },
+      {
+        id: "special-shaped-blades-advantage-3",
+        tag: "Montage basé sur des dessins et profils manuels",
+        title: "Montage basé sur des dessins et profils manuels",
+        description:
+          "Sureay réalise des trous, des fentes et des faces d'assise personnalisés selon vos références de montage. Spécifiez la distance bord-siège, la direction de coupe et toute différence vers la gauche ou la droite afin que le remplacement préserve la position de travail d'origine.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "Qu'est-ce qu'une lame industrielle de forme spéciale ?",
+          answer:
+            "Il s'agit d'une machine-couteau dont le contour, le profil de bord ou la disposition de montage nécessitent un dessin spécifique à la pièce. Le couteau à profil personnalisé et la lame spécialisée sont des noms d'achat liés. La tâche de coupe et la position d'installation établissent la géométrie réelle, y compris les caractéristiques qui ne peuvent pas être identifiées uniquement par la longueur totale, la largeur et l'épaisseur.",
+        },
+        {
+          question:
+            "Quelles dimensions déterminent l'ajustement sur un couteau à profil spécial ?",
+          answer:
+            "La position du bord par rapport aux références de montage est particulièrement importante. Définissez le contour, l'épaisseur, les trous, les fentes, les évidements et le biseau, puis identifiez les dimensions qui contrôlent l'emplacement et le serrage. Cela relie le profil de coupe à la position installée plutôt que de se fier uniquement aux dimensions globales.",
+        },
+        {
+          question: "Comment identifier les couteaux à gauche et à droite ?",
+          answer:
+            "Utilisez une vue de dessin définie et affichez l'orientation installée et la direction de coupe. Incluez les deux faces où le biseau, le fraisage ou l'évidement de montage change de côté. Un contour en miroir peut préserver les dimensions globales tout en déplaçant un élément critique, de sorte que chaque main requise doit avoir une référence de pièce sans ambiguïté.",
+        },
+        {
+          question:
+            "Le matériau peut-il être modifié tout en conservant le profil existant ?",
+          answer:
+            "Oui, un nouveau matériau peut être envisagé tout en conservant le profil requis. Choisissez le grade candidat en utilisant le support à couper, portez sur le couteau actuel et supportez le bord. Traitez-le comme une spécification de matériau révisée et conservez la géométrie de coupe et de montage requise.",
+        },
+        {
+          question: "Une lame de forme spéciale peut-elle être réaffûtée ?",
+          answer:
+            "Oui, si le meulage permet de restaurer le profil de coupe spécifié sans déplacer le bord au-delà des limites d'étirage. Faites référence au même trou, épaule ou face d'assise lorsque vous mesurez le bord rectifié. Remplacez le couteau si le tranchant ne peut plus être restauré dans ces limites.",
+        },
+        {
+          question:
+            "Que dois-je envoyer pour un devis de lame industrielle à profil personnalisé ?",
+          answer:
+            "Envoyez la machine ou le poste de découpe, le matériau à découper, le dessin de la pièce approuvé et la quantité. Marquez la direction de coupe, les références de montage et les dimensions toléranceées bord à siège, y compris chaque profil remis. Si vous ne disposez que d'un échantillon, montrez le composant correspondant ou une référence inutilisée et marquez les zones usées.",
+        },
+      ],
+      company: [],
+    },
+    disambiguation:
+      "Pour la soumission des dessins et le processus de fabrication, voir [Lames industrielles personnalisées](/custom) .",
+  },
+  {
+    id: "wood-chipper-blades",
+    seoDescription:
+      "Couteaux mobiles pour broyeurs de branches à tambour et à disque dans les longueurs indiquées de 230 à 600 mm. Spécifiez l'acier de déchiqueteuse, D2 ou un bord à pointe de carbure, ainsi que votre modèle de biseau et de boulon.",
+    name: "Couteaux pour déchiqueteuses de bois",
+    fullName: "Couteaux pour déchiqueteuses de bois à tambour et à disque",
+    category: "wood_chipper",
+    sector: "wood",
+    categoryDisplay: "Couteaux pour déchiqueteuses de bois",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1600,
+      height: 846,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Grade forestier",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Bagues de couteau inférieur multi-rainures pour refendage par cisaillement sur enrouleuses papier, carton et film. La laize se change en déplaçant le couteau supérieur dans une autre rainure au lieu de remonter l'outillage. Pas de rainure dès 5 mm, DE jusqu'à Φ406 mm, alésage lisse pour arbres pneumatiques ou vis de pression pour arbres pleins. Arête simple ou double, bague monobloc ou fendue. Également livrées en bagues à rainure unique et en bagues d'écartement lisses.",
-    fullDescription:
-      "Un couteau inférieur multi-rainures — aussi appelé refendeur inférieur multi-rainures, enclume multi-rainures ou MKB — est une bague large portant de nombreuses rainures parallèles rectifiées avec précision. Chaque rainure est une position de coupe utilisable : un changement de laize consiste donc à déplacer le couteau supérieur dans une autre rainure plutôt qu'à démonter l'arbre et à reconstruire l'empilage de couteaux. Sur une ligne qui change souvent de laize de commande, cet écart se mesure en heures de poste, pas en coût de couteau.\n\nCe sont les rainures qui font la coupe : ce sont donc elles qui doivent être justes. La position de la rainure fixe la laize, la largeur de rainure fixe le jeu de cisaillement effectif face au couteau supérieur associé, et l'état de l'arête de rainure détermine si la bande est cisaillée ou déchirée. Les trois sont rectifiées en une seule prise sur la même bague, et c'est pourquoi une bague multi-rainures tient la précision de laize sur tout l'empilage mieux qu'un nombre équivalent de couteaux enclumes séparés montés avec des entretoises.\n\n## Là où le format justifie son prix\n\nUn couteau inférieur à rainure unique coûte moins cher à l'unité et convient parfaitement à une ligne qui traite une même laize pendant des semaines. La bague multi-rainures l'emporte lorsque la laize de commande change fréquemment, lorsque le nombre de coupes est élevé, ou lorsque le réajustement d'un empilage d'entretoises est devenu le véritable goulot d'étranglement du changement. Elle supprime en outre toute une catégorie d'erreurs de réglage : avec des positions de rainure fixes rectifiées dans un seul corps, la laize ne peut pas dériver parce que quelqu'un a empilé les entretoises un millimètre à côté.\n\n## Montage : arbre pneumatique ou arbre plein\n\nDeux styles de montage couvrent presque toutes les enrouleuses. Un alésage lisse se serre sur un arbre pneumatique expansible, l'option de changement rapide et l'usage courant sur les lignes de transformation modernes. Une exécution à vis de pression se fixe sur un arbre inférieur plein, plus fréquente sur les machines anciennes et sur les lignes de carton lourd où la rigidité de l'arbre compte davantage que la vitesse de changement. Indiquez-nous l'arbre que vous utilisez : cela change la spécification d'alésage, pas seulement la fixation, et une bague alésée pour le mauvais système ne portera pas correctement.\n\n## Monobloc ou fendue\n\nLes bagues standard sont monobloc. Une bague fendue en deux pièces coûte davantage mais se retire et se remonte sans démonter l'ensemble de l'arbre, ce qui, sur une machine large, peut transformer un arrêt programmé en changement en marche. Si vos bagues se changent aujourd'hui en extrayant l'arbre complet, la version fendue est généralement la première chose à chiffrer.\n\n## Arête simple ou double\n\nLes bagues sont rectifiées avec une arête de coupe simple ou avec des arêtes des deux côtés de chaque rainure. La géométrie à double arête double les positions utilisables et permet de retourner la bague lorsqu'une face est usée, au prix d'une rectification plus exigeante et d'un prix unitaire plus élevé. Le bon choix dépend de la répartition de vos positions de coupe sur la bague : transmettez donc le plan de laizes et pas seulement le nombre de rainures.\n\n## Le pas de rainure est fabriqué selon votre plan de laizes\n\nLa division entre arêtes — la distance d'une arête de coupe à la suivante, aussi appelée pas — est sur mesure dans la quasi-totalité des cas et peut descendre jusqu'à 5 mm (0,200 in). Les diamètres extérieurs vont jusqu'à Φ406 mm (16 in). Il n'existe pas ici de tableau standard utile, et c'est pourquoi nous chiffrons à partir de votre plan de laizes ou d'un plan : donnez-nous le DE, l'alésage, la largeur de bague, les laizes que vous produisez réellement et le couteau supérieur associé, et nous rectifierons les positions de rainure selon ce plan.\n\n## Le reste du jeu de bagues\n\nUn arbre en production n'est presque jamais composé uniquement de bagues multi-rainures. Les bagues de coupe à rainure unique couvrent des positions fixes, et les bagues lisses servent d'entretoises et de supports de bande entre les positions de coupe. Nous fournissons les trois à la même spécification d'alésage et de faux-rond afin qu'elles s'empilent sans introduire d'oscillation : mélanger sur un même arbre des bagues de fournisseurs différents est une cause fréquente et difficile à diagnostiquer de variation de laize.\n\n## Applications\n\nTransformation du papier, du carton, du ouate et du carton ondulé ; film, feuille métallique, support autoadhésif, ruban adhésif, non-tissés et textiles sur enrouleuses à refendage par cisaillement.",
-    link: "/products/groove-bottom-knives",
-    disambiguation:
-      "Cette page traite des bagues multi-rainures regroupant de nombreuses positions de coupe sur un seul corps. Pour les couteaux inférieurs circulaires à arête unique associés à un couteau supérieur sur enrouleuses papier, consultez [Couteaux Inférieurs pour Refendeuses-Enrouleuses](/products/slitter-rewinder-bottom-knives).",
-    introNote:
-      "Le pas de rainure, le nombre de rainures et l'alésage sont fabriqués selon votre plan de laizes — il n'existe pas de taille standard significative pour ce produit. Transmettez les laizes que vous produisez réellement, le type d'arbre (pneumatique ou plein) et le couteau supérieur associé, et nous rectifierons les positions de rainure selon ce plan.",
+      "Couteaux de rechange pour broyeurs de bois à tambour et à disque. Options en acier pour broyeur, D2 et pointes en carbure, avec biseaux personnalisés et modèles de boulons selon le dessin.",
+    link: "/products/wood-chipper-blades",
+    isFeatured: true,
     compatibleMachines: [
-      "Kampf",
-      "Goebel",
-      "Atlas Converting",
-      "Dienes",
-      "Nishimura",
-      "Deacro",
-      "Parkinson Technologies",
+      "Bandit Industries",
+      "Vermeer",
+      "Morbark",
+      "Peterson Pacific",
+      "Doppstadt",
+      "Jenz",
+      "CBI",
+      "Precision Husky",
+      "Bruks Siwertell",
+    ],
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de remplacement fabriqués pour votre broyeur à tambour ou à disque, avec des biseaux, des trous de fixation et des profils de serrage personnalisés. Sureay propose des options d'acier pour broyeur, D2 , Cr12MoV et à pointe en carbure. Partagez votre dessin ou échantillon pour un devis, y compris l'enclume correspondante si nécessaire. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "chipper-knife-body",
+        tag: "Géométrie du couteau",
+        title: "Options de déchiqueteuse en acier et en carbure",
+        description:
+          "Les constructions en acier à haute teneur en carbone, D2 , Cr12MoV et à pointe en carbure vous offrent des choix de remplacement pour différentes alimentations en bois et conditions d'usure observées.",
+      },
+      {
+        id: "chipper-knife-material",
+        tag: "Options matérielles",
+        title: "Biseaux personnalisés et profils de montage",
+        description:
+          "Les longueurs de couteaux de déchiqueteuse à bois répertoriées s'étendent de 230 à 600 mm, avec des longueurs personnalisées jusqu'à 800 mm. Sureay réalise le biseau, le modèle de boulon et le profil de siège selon le dessin des déchiqueteuses à tambour et à disque existantes.",
+      },
+      {
+        id: "chipper-knife-anvil-pair",
+        tag: "Paire de coupe",
+        title: "Couteaux mobiles et enclumes assorties",
+        description:
+          "Commandez des couteaux mobiles et des enclumes fixes en une seule demande, chaque pièce étant spécifiée pour l'ensemble de coupe de la déchiqueteuse et les composants que vous souhaitez conserver.",
+        relatedBladeIds: ["wood-chipper-anvils"],
+      },
     ],
     specs: [
       {
-        label: "Matériau",
-        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / à plaquettes carbure",
+        label: "Dimensions",
+        value:
+          "Longueurs répertoriées 230 à 600 mm ; longueurs sur mesure jusqu'à 800 mm",
       },
       {
-        label: "Diamètre extérieur",
-        value: "Jusqu'à Φ406 mm (16 in)",
+        label: "Application",
+        value:
+          "Couteaux mobiles pour broyeurs d'arbres entiers à tambour, à disques et à biomasse et recyclage de palettes",
+      },
+      {
+        label: "Matériau",
+        value:
+          "Acier à haute teneur en carbone, D2 (1.2379), Cr12MoV ou construction à pointe en carbure",
+      },
+      {
+        label: "Dureté",
+        value:
+          "Acier pour broyeur : HRC 55–58 ; D2 / Cr12MoV : HRC 58-62 ; tranchant en carbure : HRA 89–91",
+      },
+      {
+        label: "Angle de biseau",
+        value: "25°–42°",
+      },
+      {
+        label: "Tolérance d'épaisseur",
+        value: "±0.05 mm",
+      },
+      {
+        label: "Traitement thermique",
+        value: "Trempe sous vide et traitement cryogénique profond (−196°C)",
+      },
+      {
+        label: "Réaffûtage",
+        value:
+          "Durci à cœur ; 8 à 12 cycles de réaffûtage, sous réserve de l'usure et de la hauteur restante du couteau",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Type de broyeur / Plate-forme OEM",
+      col1: "Longueur (mm)",
+      col2: "Largeur (mm)",
+      col3: "Épaisseur (mm)",
+      caption:
+        "* Dimensions standard pour les principaux fabricants de broyeurs. modèles de boulons à 2, 3 et 4 trous usinés à la machine à commande numérique selon les plans exacts des fabricants d'équipement d'origine. Contre-couteaux et plaques d'usure disponibles en jeux assortis. Longueurs personnalisées jusqu'à 800 mm.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR006101",
+        spec: 'Tambour Bandit 12" / 15"',
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006102",
+        spec: 'Tambour Bandit 18" / 19"',
+        od: "295",
+        id: "80",
+        thickness: "19",
+      },
+      {
+        itemNo: "SR006103",
+        spec: "Vermeer BC1800 / BC2100",
+        od: "310",
+        id: "100",
+        thickness: "19",
+      },
+      {
+        itemNo: "SR006104",
+        spec: "Tambour Morbark 40/36",
+        od: "400",
+        id: "100",
+        thickness: "22",
+      },
+      {
+        itemNo: "SR006105",
+        spec: "Disque Morbark 50/48",
+        od: "250",
+        id: "120",
+        thickness: "25",
+      },
+      {
+        itemNo: "SR006106",
+        spec: "Peterson 5710 Disque",
+        od: "280",
+        id: "130",
+        thickness: "25",
+      },
+      {
+        itemNo: "SR006107",
+        spec: "Biomasse Doppstadt / Jenz",
+        od: "350",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006108",
+        spec: "Déchiqueteuse lourde pour arbres entiers",
+        od: "600",
+        id: "150",
+        thickness: "30",
+      },
+      {
+        itemNo: "SR006109",
+        spec: "Eschlböck Biber",
+        od: "245",
+        id: "285",
+        thickness: "20",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Couteaux pour déchiqueteuses de bois à tambour et à disque",
+      heroAlt:
+        "Couteau de déchiqueteuse à bois avec un tranchant droit, des fentes de montage ouvertes et des trous de fixation",
+      sizeRange: "230–600 mm",
+      heroSpecs: [
+        {
+          label: "Matériau",
+          value: "Acier pour broyeur, D2 , Cr12MoV ou pointe en carbure",
+        },
+        {
+          label: "Application",
+          value: "Broyeurs de bois à tambour et à disque",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value:
+            "Longueurs répertoriées 230 à 600 mm ; longueurs sur mesure jusqu'à 800 mm",
+        },
+        {
+          label: "Application",
+          value:
+            "Couteaux mobiles pour broyeurs d'arbres entiers à tambour, à disques et à biomasse et recyclage de palettes",
+        },
+        {
+          label: "Matériau",
+          value:
+            "Acier à haute teneur en carbone, D2 (1.2379), Cr12MoV ou construction à pointe en carbure",
+        },
+        {
+          label: "Dureté",
+          value:
+            "Acier pour broyeur : HRC 55–58 ; D2 / Cr12MoV : HRC 58-62 ; tranchant en carbure : HRA 89–91",
+        },
+        {
+          label: "Angle de biseau",
+          value: "25°–42°",
+        },
+        {
+          label: "Tolérance d'épaisseur",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Traitement thermique",
+          value: "Trempe sous vide et traitement cryogénique profond (−196°C)",
+        },
+        {
+          label: "Réaffûtage",
+          value:
+            "Durci à cœur ; 8 à 12 cycles de réaffûtage, sous réserve de l'usure et de la hauteur restante du couteau",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
+        alt: "Dessin du couteau de déchiqueteuse à bois montrant le corps, les fentes de montage ouvertes et la section transversale en biseau",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour vos couteaux broyeurs",
+        description:
+          "Incluez le modèle et le numéro de série de la déchiqueteuse, le type de tambour ou de disque, le dessin ou l'échantillon du couteau et la quantité requise.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-anvils"],
+    offers: {
+      lowPrice: 25,
+      highPrice: 380,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Quels couteaux de déchiqueteuse à bois de remplacement conviennent à ma machine ?",
+          answer:
+            "Utilisez le modèle de déchiqueteuse, le numéro de série et la référence de la pièce d'origine pour identifier les dimensions du nouveau couteau, le biseau, le modèle de fixation et le siège. Les lames de déchiqueteuse et les couteaux de déchiqueteuse décrivent généralement les couteaux mobiles sur un tambour ou un disque. Les dents de la meuleuse sont un type de pièce d'usure distinct, de sorte que l'ensemble de coupe lui-même doit accompagner le nom d'achat.",
+        },
+        {
+          question:
+            "Quand faut-il envisager des couteaux de déchiqueteuse à pointe de carbure ?",
+          answer:
+            "Tenez compte du type d'usure et de l'état d'avance avant de modifier la construction du bord de travail. L’usure abrasive progressive et les dommages localisés par impact nécessitent des choix de matériaux différents. Comparez l'historique actuel des couteaux en acier, des biseaux et des contaminations avec la conception proposée à pointe en carbure, tout en préservant la géométrie de montage et de travail requise par la déchiqueteuse.",
+        },
+        {
+          question:
+            "Pourquoi la qualité des copeaux et l’effort de coupe changent-ils à mesure que les couteaux s’usent ?",
+          answer:
+            "Un bord émoussé ou endommagé modifie la façon dont le couteau engage le bois et peut augmenter l'effort nécessaire pour le traiter. Comparez les bords utilisés avec l'échantillon de copeaux et l'état d'alimentation. Incluez l'enclume fixe dans l'inspection, car les deux parties établissent la relation de coupe.",
+        },
+        {
+          question:
+            "Les couteaux réversibles et les couteaux réaffûtables sont-ils identiques ?",
+          answer:
+            "Non. Un couteau de déchiqueteuse réversible peut être tourné pour utiliser un deuxième tranchant. Un couteau réaffûtable peut avoir un bord usé réaffûté dans ses limites de service. Certains couteaux prennent en charge les deux. Utilisez le dessin de la lame et le manuel de la déchiqueteuse pour confirmer l'orientation autorisée, le biseau et les dimensions restantes.",
+        },
+        {
+          question:
+            "Quand faut-il remplacer un couteau de déchiqueteuse au lieu d’être affûté ?",
+          answer:
+            "Remplacez les couteaux présentant des fissures, des déformations ou des dommages empêchant la restauration de la géométrie de travail spécifiée. Un bord usé peut être réaffûté lorsque les dimensions restantes du couteau le permettent. Utilisez les limites de la déchiqueteuse pour un couteau particulier plutôt qu'un nombre fixe de réaffûtages et inspectez les surfaces de montage ainsi que le bord.",
+        },
+        {
+          question:
+            "L'enclume doit-elle être remplacée à chaque changement de couteaux mobiles ?",
+          answer:
+            "Non. Un nouveau couteau mobile ne nécessite pas toujours une nouvelle enclume. Évaluez l’enclume pour l’usure, les dommages et le réglage restant. Une enclume réparable peut rester en place si son bord et son montage permettent toujours l'espace de coupe requis. Voir [Enclumes de déchiqueteuse à bois](/products/wood-chipper-anvils) pour les couteaux fixes de remplacement.",
+        },
+        {
+          question:
+            "Comment demander un devis pour des lames de broyeur à tambour ou à disque ?",
+          answer:
+            "Envoyez le modèle et le numéro de série de la déchiqueteuse, la référence ou le dessin de la pièce d'origine, l'alimentation en bois et la quantité. Incluez les dimensions du biseau, du boulon ou de la fente et le profil du siège de lame. Pour une machine plus ancienne sans dessin, un échantillon coté peut montrer le siège et le schéma de fixation. Marquez toute hauteur perdue à cause de l’affûtage.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle et la série de la déchiqueteuse, le type de tambour ou de disque, le dessin du couteau, le modèle de boulon et la matière première en bois.",
+    rfqPlaceholder:
+      "Modèle et numéro de série de la déchiqueteuse, type de tambour ou de disque, dessin ou échantillon du couteau et quantité requise.",
+    disambiguation:
+      "Pour la partie fixe opposée au couteau rotatif, voir [Enclumes de déchiqueteuse à bois](/products/wood-chipper-anvils) .",
+  },
+  {
+    id: "wood-chipper-anvils",
+    seoDescription:
+      "Remplacez le contre-couteau fixe en face des couteaux mobiles du broyeur. Les enclumes de déchiqueteuse à bois sont répertoriées dans des longueurs de 185 à 400 mm, avec des fentes de montage personnalisées.",
+    name: "Contre-couteaux pour déchiqueteuses de bois",
+    fullName: "Enclumes et contre-couteaux pour déchiqueteuses de bois",
+    category: "wood_chipper",
+    sector: "wood",
+    categoryDisplay: "Contre-couteaux et enclumes",
+    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1439,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Ensembles assortis",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+    ],
+    description:
+      "Enclumes de rechange pour broyeur à bois en D2 , Cr12MoV , A8 modifié ou 42CrMo. Profils de bord de travail personnalisés et fentes de montage adaptés à la pièce d'origine.",
+    link: "/products/wood-chipper-anvils",
+    isFeatured: true,
+    compatibleMachines: [
+      "Bandit",
+      "Vermeer",
+      "Morbark",
+      "Timberwolf",
+      "Schliesing",
+      "Greenmech",
+      "Jensen",
+      "Jenz",
+      "Eschlböck",
+      "Forst",
+    ],
+    compatibleMachinesIntro:
+      "Obtenez une enclume de déchiqueteuse de remplacement avec le bord de travail, les fentes de fixation et les sièges répondant aux besoins de votre machine. Sureay propose des options de matériaux entièrement durcis et des profils personnalisés. Partagez votre dessin ou échantillon pour un devis d'enclume, avec des couteaux mobiles disponibles en tant qu'articles séparés. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "chipper-anvil-edge",
+        tag: "Bord stationnaire",
+        title: "Plusieurs options d'acier pour les bords fixes",
+        description:
+          "Sureay propose des enclumes D2 , Cr12MoV , A8 modifiées et 42CrMo , permettant de spécifier le matériau de remplacement en fonction de la paire de couteaux existante de la déchiqueteuse et des conditions d'usure.",
+      },
+      {
+        id: "chipper-anvil-adjustment",
+        tag: "Fixation",
+        title: "Bords de travail et faces d'assise définis",
+        description:
+          "Les longueurs d'enclume répertoriées s'étendent de 185 à 400 mm, avec des longueurs personnalisées jusqu'à 600 mm. Sureay réalise le bord stationnaire et les surfaces de positionnement selon le dessin de votre boîtier de déchiqueteuse existant.",
+      },
+      {
+        id: "chipper-anvil-pair",
+        tag: "Paire de remplacement",
+        title: "Fentes de montage pour systèmes de réglage existants",
+        description:
+          "Des configurations de montage à fentes sont disponibles pour les assemblages ajustés par cale, avec des emplacements de fentes et des dimensions de corps conformes au dessin original de l'enclume.",
+        relatedBladeIds: ["wood-chipper-blades"],
+      },
+    ],
+    specs: [
+      {
+        label: "Dimensions",
+        value:
+          "Longueurs répertoriées 185-400 mm ; longueurs sur mesure jusqu'à 600 mm",
+      },
+      {
+        label: "Application",
+        value: "Contre-couteau fixe en face des couteaux mobiles du broyeur",
+      },
+      {
+        label: "Matériau",
+        value: "D2 , Cr12MoV , A8 modifié ou 42CrMo",
+      },
+      {
+        label: "Fixation",
+        value: "Trous oblongs avec jeu de couteau réglable par cale",
+      },
+      {
+        label: "Dureté",
+        value: "HRC 54–60, trempé à coeur",
+      },
+      {
+        label: "Géométrie des bords",
+        value: "Biseau simple, 30°–37°",
+      },
+      {
+        label: "Parallélisme",
+        value: "±0,05 mm sur la longueur de la lame",
+      },
+      {
+        label: "Réaffûtage",
+        value:
+          "Durci à cœur ; 5 à 10 cycles de réaffûtage, sous réserve de l'usure et de la hauteur d'enclume restante",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Déchiqueteuse OEM / Modèle",
+      col1: "Longueur (mm)",
+      col2: "Largeur (mm)",
+      col3: "Épaisseur (mm)",
+      caption:
+        "* Dimensions standard de l'enclume de remplacement OEM. Trous de montage fendus usinés CNC selon les schémas exacts de réglage de l'espace libre OEM. Des ensembles lame + enclume assortis sont disponibles pour toutes les tailles. Longueurs personnalisées jusqu'à 600 mm.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR006201",
+        spec: 'Bandit 12" / 15" / Puissant Bandit',
+        od: "185",
+        id: "75",
+        thickness: "10",
+      },
+      {
+        itemNo: "SR006202",
+        spec: 'Bandit 18" / 19" / 1290 / 1590',
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006203",
+        spec: "Vermeer BC1200 / BC1500",
+        od: "200",
+        id: "80",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006204",
+        spec: "Vermeer BC1800 / BC2000",
+        od: "260",
+        id: "100",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006205",
+        spec: "Morbark 2 / 5 / 7 / 12 / 13",
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006206",
+        spec: "Morbark 40/36 / 50/48",
+        od: "400",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006207",
+        spec: "Timberwolf 150 / 190 / 230",
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006208",
+        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
+        od: "260",
+        id: "80",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006209",
+        spec: "Greenmech / Jensen / Forst",
+        od: "Par dessin OEM",
+        id: "Per OEM Drawing",
+        thickness: "Par dessin OEM",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Enclumes et contre-couteaux pour déchiqueteuses de bois",
+      heroAlt:
+        "Enclume de broyeur de bois rectangulaire avec trois trous de fixation et un bord de travail rectifié",
+      sizeRange: "185–400 mm",
+      heroSpecs: [
+        {
+          label: "Matériau",
+          value: "D2 , Cr12MoV , A8 modifié ou 42CrMo",
+        },
+        {
+          label: "Application",
+          value: "Contre-couteaux fixes pour broyeurs de branches",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value:
+            "Longueurs répertoriées 185-400 mm ; longueurs sur mesure jusqu'à 600 mm",
+        },
+        {
+          label: "Application",
+          value: "Contre-couteau fixe en face des couteaux mobiles du broyeur",
+        },
+        {
+          label: "Matériau",
+          value: "D2 , Cr12MoV , A8 modifié ou 42CrMo",
+        },
+        {
+          label: "Fixation",
+          value: "Trous oblongs avec jeu de couteau réglable par cale",
+        },
+        {
+          label: "Dureté",
+          value: "HRC 54–60, trempé à coeur",
+        },
+        {
+          label: "Géométrie des bords",
+          value: "Biseau simple, 30°–37°",
+        },
+        {
+          label: "Parallélisme",
+          value: "±0,05 mm sur la longueur de la lame",
+        },
+        {
+          label: "Réaffûtage",
+          value:
+            "Durci à cœur ; 5 à 10 cycles de réaffûtage, sous réserve de l'usure et de la hauteur d'enclume restante",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+        alt: "Deux contre-couteaux de déchiqueteuse à bois montrant les trous de fixation en biseau et contre-alésés",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour vos enclumes de broyeur",
+        description:
+          "Incluez le modèle et le numéro de série de la déchiqueteuse, la position de l'enclume, le dessin ou l'échantillon et la quantité requise.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-blades"],
+    offers: {
+      lowPrice: 25,
+      highPrice: 250,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "À quoi sert une enclume de déchiqueteuse à bois et est-ce un contre-couteau ?",
+          answer:
+            "L'enclume constitue le bord fixe contre lequel les couteaux mobiles du broyeur coupent. Le contre-couteau et le contre-couteau peuvent faire référence à la même position, selon la machine. Utilisez le schéma des pièces pour identifier le bord fixe et son montage avant de commander par nom.",
+        },
+        {
+          question:
+            "Pourquoi la coupe peut-elle rester mauvaise après le remplacement des couteaux mobiles ?",
+          answer:
+            "Les couteaux mobiles fonctionnent toujours contre le bord fixe existant. Un arrondi, des dommages ou une position d'installation modifiée au niveau de l'enclume peuvent affecter leur rapport de coupe. Comparez les deux pièces et leur état de montage, puis utilisez la procédure du fabricant de la déchiqueteuse pour évaluer le jeu. Un nouveau couteau mobile ne restaure pas un visage stationnaire usé.",
+        },
+        {
+          question: "Qu'est-ce qui doit guider le choix de l'acier à enclume ?",
+          answer:
+            "Comparez le matériau actuel, l'usure des bords et tout dommage local avec la configuration de l'alimentation en bois et du couteau mobile. La décision matérielle doit tenir compte de l’état observé tout en conservant le biseau et le profil de corps requis. Distinguez l’usure progressive des dommages liés aux impacts avant de choisir parmi les options d’acier répertoriées.",
+        },
+        {
+          question:
+            "Une enclume usée peut-elle être tournée pour exposer un autre bord ?",
+          answer:
+            "Oui, si l'enclume a été conçue avec un autre bord utilisable et que cette orientation est autorisée par le montage. Vérifiez le dessin pour connaître les faces d'assise et les exigences de réglage. Certaines faces d'une enclume rectangulaire peuvent la localiser ou la soutenir sans servir de bords de travail.",
+        },
+        {
+          question:
+            "Puis-je commander l’enclume séparément des couteaux de déchiqueteuse ?",
+          answer:
+            "Oui. L'enclume peut être fournie en remplacement individuel ou incluse avec des [lames de déchiqueteuse à bois](/products/wood-chipper-blades) . Gardez les deux dessins et quantités séparés. Les dimensions et l'état des couteaux mobiles retenus restent pertinents car la nouvelle enclume doit occuper sa position prévue dans la paire de coupe existante.",
+        },
+        {
+          question:
+            "De quels détails ai-je besoin pour obtenir un devis d’enclume de déchiqueteuse à bois ?",
+          answer:
+            "Envoyez le modèle et le numéro de série de la déchiqueteuse, le dessin de l'enclume ou le numéro de pièce, la quantité et le bois que vous traitez. Pour un assemblage ajusté par cale, montrez l'espacement des fentes, les faces d'appui, la disposition des cales et la position du bord de travail par rapport au couteau mobile. Marquez toutes les dimensions modifiées par l’usure ou le réaffûtage.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluez le modèle et la série de la déchiqueteuse, le dessin de l'enclume, le modèle de fente de montage, les faces de travail et les détails du couteau.",
+    rfqPlaceholder:
+      "Modèle et numéro de série de la déchiqueteuse, position de l'enclume, dessin ou échantillon et quantité requise.",
+    disambiguation:
+      "Pour les couteaux fixés au tambour ou au disque rotatif, voir [Lames de déchiqueteuse à bois](/products/wood-chipper-blades) .",
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenez des couteaux inférieurs de remplacement pour votre refendeuse-enrouleuse, y compris des modèles à coupelles, à double tranchant et à anneaux remplaçables. Envoyez Sureay votre dessin ou échantillon pour un devis sur la configuration de la bride, de l'alésage et de la face de coupe dont votre assemblage existant a besoin.",
+    id: "slitter-rewinder-bottom-knives",
+    seoDescription:
+      "Couteaux à coupelle, à double tranchant et à fond d'anneau remplaçable pour enrouleurs de papier, en diamètre extérieur 70–300 mm. Spécifiez un alésage claveté, un montage sur bride ou une arête de coupe en carbure.",
+    name: "Contre-couteaux pour refendeuses-bobineuses",
+    fullName:
+      "Couteaux inférieurs de refendeuse-bobineuse, à coupelle, à double tranchant ou à tranchant rapporté",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Contre-couteaux pour refendeuses-bobineuses",
+    image:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Couteaux inférieurs de remplacement pour les rebobineuses-découpeuses de papier. Conceptions en coupelle, à double tranchant et à pointe en carbure, avec alésages, brides et largeurs personnalisés selon le dessin.",
+    link: "/products/slitter-rewinder-bottom-knives",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "OD 70–300 mm",
+      },
+      {
+        label: "Matériau",
+        value:
+          "52100, D2 , M2 HSS , PM HSS , carbure de tungstène ou WC-Co sur corps acier",
+      },
+      {
+        label: "Applications",
+        value:
+          "Rebobineuses-découpeuses de papier et autres lignes de conversion de bobines",
+      },
+      {
+        label: "Profils",
+        value: "Coupelle, double bord ou bague coupante remplaçable",
+      },
+      {
+        label: "Options de carbure",
+        value:
+          "Constructions à pointe et à incrustations pour le bord de travail",
+      },
+      {
+        label: "Fixation",
+        value: "Montage à bride, alésage claveté ou alésage d'arbre lisse",
+      },
+      {
+        label: "Finition du visage",
+        value: "Poli miroir",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Couteaux inférieurs pour refendeuse et enrouleuse | Coupe et double tranchant",
+      sizeRange: "OD 70–300 mm",
+      heroAlt:
+        "Couteaux inférieurs de rembobineur circulaire avec plusieurs modèles de brides et de trous de montage",
+      specificationImage: {
+        src: "/images/products/slitter-detail/slitter-rewinder-bottom-knives-detail.webp",
+        alt: "Gros plan des couteaux inférieurs du rembobineur avec faces de bride percées et encastrées",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "flange",
+          tabLabel: "Bride et double bord",
+          title: "Couteaux inférieurs montés sur bride et à double tranchant",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Montage ou bord",
+            "Référence",
+          ],
+          rows: [
+            [
+              "SR001211",
+              "105 × 80 × 15 mm",
+              "Bride",
+              "Séries dimensionnelles DIENES",
+            ],
+            [
+              "SR001212",
+              "130 × 90 × 20 mm",
+              "Bride",
+              "Séries dimensionnelles DIENES",
+            ],
+            [
+              "SR001213",
+              "190 × 138 × 15 mm",
+              "Double tranchant",
+              "Tidland TID131393",
+            ],
+            [
+              "SR001214",
+              "130 × 100 × 30 mm",
+              "Double tranchant",
+              "Tidland TID133503",
+            ],
+            [
+              "SR001215",
+              "250 × 188 × 15 mm",
+              "Double tranchant",
+              "Tidland TID131395",
+            ],
+          ],
+        },
+        {
+          id: "tipped",
+          tabLabel: "Bord en carbure",
+          title: "Couteaux inférieurs avec un tranchant en carbure",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Construction",
+            "Référence",
+          ],
+          rows: [
+            [
+              "SR001561",
+              "90.81 × 60.00 × 12.70 mm",
+              "À pointe en carbure",
+              "Dusenbery 783533",
+            ],
+          ],
+        },
+        {
+          id: "keyed",
+          tabLabel: "Montage sur rainure de clavette",
+          title: "Couteaux inférieurs avec rainure de clavette",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Fixation",
+          ],
+          rows: [
+            ["SR001571", "70 × 45 × 10 mm", "Série de rainures de 10 mm"],
+            ["SR001572", "80 × 50 × 10 mm", "Série de rainures de 10 mm"],
+            ["SR001573", "108 × 80 × 20 mm", "Série de rainures de 10 mm"],
+          ],
+        },
+        {
+          id: "additional-rewinder-knives",
+          tabLabel: "Tailles supplémentaires des couteaux de rembobinage",
+          title: "Tailles supplémentaires des couteaux de rembobinage",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Type de Couteau",
+          ],
+          rows: [
+            [
+              "SR001845",
+              "250 × 188 × 25 mm",
+              "Couteau inférieur du rembobineur",
+            ],
+            [
+              "SR001846",
+              "254 × 195 × 50 mm",
+              "Couteau inférieur du rembobineur",
+            ],
+            [
+              "SR001847",
+              "250 × 140 × 20 mm",
+              "Couteau inférieur du rembobineur",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "OD 70–300 mm",
+        },
+        {
+          label: "Matériau",
+          value:
+            "52100, D2 , M2 HSS , PM HSS , carbure de tungstène ou WC-Co sur corps acier",
+        },
+        {
+          label: "Applications",
+          value:
+            "Rebobineuses-découpeuses de papier et autres lignes de conversion de bobines",
+        },
+        {
+          label: "Profils",
+          value: "Coupelle, double bord ou bague coupante remplaçable",
+        },
+        {
+          label: "Options de carbure",
+          value:
+            "Constructions à pointe et à incrustations pour le bord de travail",
+        },
+        {
+          label: "Fixation",
+          value: "Montage à bride, alésage claveté ou alésage d'arbre lisse",
+        },
+        {
+          label: "Finition du visage",
+          value: "Poli miroir",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Tidland",
+      "Mario Cotta",
+      "Jagenberg",
+      "Valmet",
+      "Voith",
+      "Dusenbery",
+      "Cameron",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Options de bord de travail en acier et en carbure",
+        description:
+          "Sureay fournit des couteaux inférieurs en acier, en carbure monobloc et en carbure, offrant ainsi aux transformateurs de papier un choix de matériaux et de constructions de pointe pour leurs assemblages de rembobineurs existants.",
+      },
+      {
+        id: "selection-2",
+        tag: "Réglage",
+        title:
+          "Conceptions de coupelles, à double bord et à anneaux remplaçables",
+        description:
+          "Les couteaux à coupelle, les profils à double tranchant et les bagues coupantes remplaçables sont disponibles avec des faces de travail finies, permettant le remplacement du corps de couteau ou de la bague coupante spécifique dont votre assemblage a besoin.",
+      },
+      {
+        id: "selection-3",
+        tag: "Application",
+        title: "Interfaces de montage personnalisées pour les enrouleurs",
+        description:
+          "Les brides, les alésages clavetés, les alésages lisses et les profils de coupe peuvent être fabriqués selon votre dessin ou échantillon, prenant en charge les commandes de remplacement pour les enrouleurs existants et les anciens ensembles de couteaux.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Quel couteau inférieur de remplacement convient à ma refendeuse-enrouleuse ?",
+          answer:
+            "Identifiez le modèle de machine ou la référence de la pièce, puis comparez le diamètre extérieur, l'alésage, la largeur, les détails de la bride et les trous de fixation avec l'ensemble installé. Les bandes inférieures, les couteaux inférieurs et les couteaux femelles sont des noms communs pour le membre inférieur d'une paire de cisailles. Le profil de travail et la disposition de montage établissent l'ajustement plus précisément que le nom seul.",
+        },
+        {
+          question:
+            "Des couteaux inférieurs personnalisés peuvent-ils être fournis pour une enrouleuse plus ancienne sans remplacer le couteau supérieur ?",
+          answer:
+            "Oui. Sureay peut fabriquer le couteau inférieur selon un dessin ou un échantillon tout en conservant un couteau supérieur utilisable. Définissez l'alésage, la bride, la largeur de travail et le profil de coupe, et incluez les dimensions du couteau supérieur, son état et l'historique de réaffûtage. Ces détails établissent la position de travail du couteau inférieur au sein de l'ensemble existant.",
+        },
+        {
+          question:
+            "En quoi les couteaux à coupelle, à double tranchant et à anneau remplaçable diffèrent-ils ?",
+          answer:
+            "Un couteau à tasse utilise un corps façonné pour positionner son bord de travail. Un couteau à double tranchant fournit deux faces de coupe de travail, tandis qu'un ensemble d'anneaux remplaçables sépare l'anneau coupant de son support. Sélectionnez la construction requise par le support installé. Pour une station conçue autour de plusieurs positions de coupe sur un seul corps, voir [Couteaux inférieurs multi-rainures](/products/groove-bottom-knives) .",
+        },
+        {
+          question:
+            "Un couteau inférieur de rembobineur doit-il utiliser de l'acier, du carbure monobloc ou un bord en carbure ?",
+          answer:
+            "Pour la coupe du papier par cisaille, commencez par la construction de couteau existante et le couteau supérieur retenu. Un tranchant en carbure mérite d'être évalué lorsque l'usure progressive entraîne des changements de couteau ; les puces récurrentes ou les dommages de contact appellent d'abord pour vérifier la paire et le support. Les corps en carbure monobloc et en acier avec bagues coupantes en carbure ont des constructions différentes, conservez donc la géométrie de montage et de travail requise lorsque vous comparez les alternatives.",
+        },
+        {
+          question:
+            "Pourquoi le bord du papier est-il toujours de mauvaise qualité après le remplacement d'un couteau inférieur ?",
+          answer:
+            "Le couteau supérieur conservé, la stabilité du support, l'état de la face de travail et les paramètres de refendage peuvent toujours affecter le bord du papier. Inspectez les deux membres de la paire et leurs faces de montage, y compris toute géométrie modifiée par le réaffûtage. La comparaison de la même qualité de papier avec les paramètres normaux permet de distinguer le couteau de remplacement des autres conditions dans la station de découpe.",
+        },
+        {
+          question:
+            "Quand un couteau inférieur de rembobineur peut-il être réaffûté plutôt que remplacé ?",
+          answer:
+            "Le réaffûtage peut être envisagé pour une conception à couteau inférieur dont la géométrie de travail peut être restaurée dans ses dimensions restantes autorisées. Évaluez la face de travail endommagée et sa relation avec le couteau supérieur par rapport au dessin original. Les couteaux à coupelles et les bagues coupantes remplaçables nécessitent leurs propres contrôles de géométrie et de tolérance avant de décider entre un réaffûtage et un remplacement.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "rotary-slitter-knives-paper",
+      "groove-bottom-knives",
+      "bottom-grooved-anvil-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de rechange pour votre imprimante-sloteuse ou votre plieuse-colleuse flexo, avec des arcs, des trous de montage et des profils de coupe personnalisés. Envoyez Sureay un dessin ou un échantillon pour un devis sur les couteaux mâles, les contre-couteaux et les entretoises assorties.",
+    id: "corrugated-slotter-knives",
+    seoDescription:
+      "Arcs mâles unis ou dentés et contre-couteaux femelles pour le rainurage des rabats ondulés. Commandez des lames de remplacement adaptées à la largeur de votre fente et à votre schéma de montage.",
+    name: "Couteaux de slotter pour carton ondulé",
+    fullName: "Couteaux mâles et femelles pour slotters de carton ondulé",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Couteaux de slotter pour carton ondulé",
+    image: "/images/products/slitter-detail/box-slotting-knives-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Couteaux de rechange mâles et femelles pour machines à boîtes en carton ondulé. Arcs simples ou dentelés, contre-couteaux et schémas de montage personnalisés sur dessin.",
+    link: "/products/corrugated-slotter-knives",
+    specs: [
+      {
+        label: "Matériau",
+        value: "D2 , M2 HSS , 9CrSi , 9Mn2V , 52100 ou contre-couteaux carbure",
+      },
+      {
+        label: "Applications",
+        value:
+          "Encoche de rabats ondulés sur plieuses-colleuses et imprimantes-slotters flexo",
+      },
+      {
+        label: "Dureté typique",
+        value:
+          "D2 58–62 HRC · M2 62–65 HRC · Arête d'attaque en carbure 89–92 HRA",
+      },
+      {
+        label: "Lame mâle",
+        value:
+          "Arc simple ou dentelé, avec segments de recouvrement et de coin disponibles",
+      },
+      {
+        label: "Assemblée féminine",
+        value: "Deux moitiés de contre-couteau avec une entretoise assortie",
+      },
+      {
+        label: "Fixation",
+        value: "Trous ronds, trous fraisés ou fentes de réglage de l'arc",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Couteaux de slotter pour carton ondulé | Mâles et femelles",
+      sizeRange: "Série Arc R105 – R406 mm",
+      heroAlt:
+        "Composants de slotter ondulés en forme d'arc avec trous de montage ronds et fentes allongées",
+      specificationImage: {
+        src: "/images/products/slitter-detail/box-slotting-knives-detail-white.webp",
+        alt: "Détail des segments de slotter incurvés montrant les trous de fixation ronds et les fentes de réglage de l'arc",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "male",
+          tabLabel: "Lames mâles",
+          title: "Lames de Slotter mâles",
+          columns: [
+            "Référence",
+            "R extérieur × R intérieur × T",
+            "Angle d'arc",
+            "Bord",
+          ],
+          rows: [
+            [
+              "SR001601",
+              "105 × 58 × 5 mm",
+              "Voir le schéma",
+              "Plaine ou dentelé",
+            ],
+            [
+              "SR001602",
+              "113 × 63.5 × 7.5 mm",
+              "Voir le schéma",
+              "Plaine ou dentelé",
+            ],
+            [
+              "SR001603",
+              "115 × 58 × 8 mm",
+              "Voir le schéma",
+              "Plaine ou dentelé",
+            ],
+            ["SR001604", "168.7 × 120.3 × 8 mm", "36.2°", "Voir le schéma"],
+            ["SR001605", "213.5 × 130 × 7.5 mm", "20.5°", "Voir le schéma"],
+            ["SR001606", "213.5 × 130 × 7.5 mm", "72°", "Voir le schéma"],
+            ["SR001607", "212 × 159 × 10 mm", "60°", "Voir le schéma"],
+            ["SR001608", "281.5 × 237.5 × 7.2 mm", "88°", "Voir le schéma"],
+            [
+              "SR001609",
+              "406 × 316 × 7.9 mm",
+              "Voir le schéma",
+              "Voir le schéma",
+            ],
+          ],
+        },
+        {
+          id: "female",
+          tabLabel: "Couteaux féminins",
+          title: "Contre-couteaux femelles",
+          columns: [
+            "Référence",
+            "Configuration",
+            "Dimensions",
+            "Montage ou référence",
+          ],
+          rows: [
+            [
+              "SR001610",
+              "Contre-couteau simple",
+              "Gamme OD 90–450 mm",
+              "Montage et épaisseur selon dessin",
+            ],
+            [
+              "SR001611",
+              "Contre-couteau fendu",
+              "Gamme OD 90–450 mm",
+              "Moitiés inférieures unies, entretoise selon le dessin",
+            ],
+            [
+              "SR001612",
+              "Ensemble inférieur à pointe en carbure",
+              "Pour faire correspondre la fente et le dessin",
+              "Confirmer l'arbre inférieur et la lame supérieure",
+            ],
+          ],
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BOBST",
+      "Martin",
+      "EMBA",
+      "Mitsubishi EVOL",
+      "Isowa",
+      "Göpfert",
+      "MarquipWardUnited",
+      "TCY",
+      "Shinko",
+      "Dongfang",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Matériaux sélectionnés par position du couteau mâle et femelle",
+        description:
+          "Sureay fournit des couteaux à rainurer en acier et des contre-couteaux à pointe en carbure, permettant de spécifier séparément les composants mâles et femelles pour le matériau et la construction requis par votre assemblage de rainures.",
+      },
+      {
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Arcs simples et dentelés avec montage personnalisé",
+        description:
+          "Les arcs simples et dentelés, les segments à recouvrement et les segments de coin sont disponibles avec des trous ronds, des trous fraisés ou des fentes de réglage conçues pour la tête de fente existante.",
+      },
+      {
+        id: "selection-3",
+        tag: "Application",
+        title: "Couteaux mâles, couteaux femelles et entretoises assorties",
+        description:
+          "Commandez des arcs mâles de remplacement, des moitiés de contre-couteau femelle et des entretoises correspondantes individuellement ou ensemble, chaque composant étant défini pour les pièces que vous prévoyez de conserver.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Comment les couteaux de remplacement sont-ils adaptés à une machine de transformation de boîtes ?",
+          answer:
+            "Identifiez la station d'imprimante-slotter ou de plieuse-colleuse flexo et si vous avez besoin d'un arc mâle, d'un contre-couteau femelle ou d'une entretoise. Comparez la géométrie de l'arc, l'épaisseur, le modèle de montage et la main installée avec la pièce existante. Les couteaux Slotter forment des fentes à rabat lors de la conversion des boîtes ; [lames de refendeuse-scorer](/products/corrugated-slitter-scorer-blades) coupent le carton dans le sens de la longueur à l'extrémité sèche de l'onduleuse et utilisent une géométrie différente. Pour les rainures dans le carton gris utilisées pour fabriquer des boîtes rigides, voir [Couteaux à rainures en V pour boîtes en carbure](/products/box-slotting-knives) .",
+        },
+        {
+          question:
+            "Quelle est la différence entre les couteaux slotter mâles et femelles ?",
+          answer:
+            "L'arc mâle pénètre dans l'ensemble couteau femelle pour former la fente pour carte. Deux contrefaces femelles et leur entretoise établissent l'ouverture coopérante. Une commande de remplacement doit identifier quel composant est modifié et les dimensions des pièces conservées, de sorte que la lame mâle et l'ouverture femelle restent définies comme une combinaison de travail.",
+        },
+        {
+          question:
+            "Dois-je choisir une lame de slotter mâle lisse ou dentelée ?",
+          answer:
+            "Pour un remplacement à l'identique, conservez la forme de bord lisse ou dentelé utilisée par la tête de fente installée. La modification de la forme du bord nécessite de vérifier l'arc mâle avec l'ouverture femelle, les spécifications de la carte et les exigences de qualité de l'emplacement. Spécifiez la forme de bord prévue sur le dessin afin que le remplacement ne soit pas identifié uniquement par les dimensions de l'arc.",
+        },
+        {
+          question:
+            "Pourquoi les fentes en carton ondulé ont-elles des bords déchirés ou des largeurs inégales ?",
+          answer:
+            "Des bords de fente déchirés ou une variation de largeur peuvent impliquer des faces de coupe usées ou la façon dont les têtes mâle et femelle s'assemblent. Vérifiez le bord mâle, les deux contre-faces femelles, l'entretoise, l'alignement de la tête et le faux-rond par rapport aux exigences de configuration de la machine. Comparez le défaut sur toutes les positions des fentes avant de décider quels couteaux ou composants de support doivent être remplacés.",
+        },
+        {
+          question:
+            "Quand faut-il envisager d’utiliser un couteau slotter femelle à pointe en carbure ?",
+          answer:
+            "Envisagez des contre-couteaux à pointe de carbure lorsque l'usure récurrente des faces coupantes femelles est le principal problème de remplacement, après avoir vérifié l'alignement de la tête, le faux-rond et le jeu d'accouplement. Gardez la géométrie de la lame mâle et l'ouverture femelle cohérentes avec l'assemblage d'origine. Comparez le profil d'usure et les conditions de fonctionnement du couteau en acier existant lors de la spécification de l'alternative à pointe en carbure.",
+        },
+        {
+          question:
+            "Les arcs de slotter personnalisés peuvent-ils être réalisés à partir d’un dessin ou d’un échantillon ?",
+          answer:
+            "Oui. Sureay peut reproduire des arcs avec des rayons intérieurs et extérieurs, un angle d'arc, une épaisseur, une forme de bord et des trous ou fentes de montage spécifiés. Un échantillon permet d'identifier le profil et la main installés ; les nouvelles dimensions prévues doivent tenir compte de l'usure de l'échantillon. Identifiez l'assemblage femelle correspondant et les segments d'arc requis.",
+        },
+        {
+          question:
+            "Les couteaux slotter mâles et femelles doivent-ils être remplacés ensemble ?",
+          answer:
+            "Ils peuvent être commandés séparément lorsque les composants retenus restent utilisables et que leur géométrie d'accouplement est connue. Vérifiez les deux faces des contre-faces femelles et l'entretoise ainsi que l'arc mâle. Le remplacement nécessite une relation correcte avec l'ouverture femelle, en plus de correspondre au modèle de montage.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenez des lames de coupe de paille de papier de remplacement avec des alésages, des épaisseurs et des profils de bord personnalisés pour votre coupe-ligne de bobinage. Partagez votre dessin ou échantillon avec Sureay pour obtenir un devis sur le matériau de la lame et les options de revêtement pour votre station.",
+    id: "paper-straw-slitting-blades",
+    name: "Lames de coupe pour pailles en papier",
+    fullName: "Lames de coupe pour pailles en papier",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Lames de coupe pour pailles en papier",
+    image: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "couteaux circulaires de remplacement pour couper et couper les pailles en papier. Options en carbure ou M2 HSS , alésages et profils personnalisés et revêtements sélectionnés pour la gamme.",
+    link: "/products/paper-straw-slitting-blades",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "Diamètre extérieur standard 88-100 mm",
+      },
+      {
+        label: "Matériau",
+        value: "Carbure à grains fins, M2 HSS ou zircone, selon station",
+      },
+      {
+        label: "Applications",
+        value:
+          "Découpage et découpe de paille de papier sur lignes de bobinage",
+      },
+      {
+        label: "Revêtements en option",
+        value: "DLC, TiN, TiAlN ou CrN par lame et application",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lames de coupe de paille de papier | Couteaux de remplacement",
+      sizeRange: "Diamètre extérieur standard 88-100 mm",
+      heroAlt:
+        "Couteau circulaire pour couper la paille en papier avec un petit alésage central",
+      specificationImage: {
+        src: "/images/products/slitter-detail/paper-straw-slitting-blades-detail.webp",
+        alt: "Fines lames de coupe circulaires montrant les faces polies et les arêtes de coupe",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "straw",
+          tabLabel: "Couteaux de paille en papier",
+          title: "Couteaux de paille en papier",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Gare",
+          ],
+          rows: [
+            ["SR001651", "100 × 15 × 0.20 mm", "Garniture en paille de papier"],
+            ["SR001652", "100 × 15 × 0.30 mm", "Garniture en paille de papier"],
+            ["SR001653", "100 × 16 × 0.30 mm", "Garniture en paille de papier"],
+            ["SR001654", "100 × 45 × 0.30 mm", "Garniture en paille de papier"],
+          ],
+        },
+        {
+          id: "additional-straw-knives",
+          tabLabel: "Tailles supplémentaires de couteaux à paille",
+          title: "Tailles supplémentaires de couteaux à paille",
+          columns: [
+            "Référence",
+            "Dimensions (diamètre extérieur × diamètre intérieur × largeur)",
+            "Application",
+          ],
+          rows: [
+            ["SR001848", "88 × 16 × 0.26 mm", "Coupe-paille en papier"],
+            ["SR001849", "89 × 15 × 0.30 mm", "Coupe-paille en papier"],
+            ["SR001850", "90 × 15 × 0.30 mm", "Coupe-paille en papier"],
+            ["SR001851", "100 × 15 × 0.15 mm", "Coupe-paille en papier"],
+            ["SR001852", "100 × 45 × 0.20 mm", "Coupe-paille en papier"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Diamètre extérieur standard 88-100 mm",
+        },
+        {
+          label: "Matériau",
+          value: "Carbure à grains fins, M2 HSS ou zircone, selon station",
+        },
+        {
+          label: "Applications",
+          value:
+            "Découpage et découpe de paille de papier sur lignes de bobinage",
+        },
+        {
+          label: "Revêtements en option",
+          value: "DLC, TiN, TiAlN ou CrN par lame et application",
+        },
+      ],
+    },
+    compatibleMachines: ["Jota", "KETE"],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Options de matériaux en carbure, HSS et céramique",
+        description:
+          "Les options de carbure à grain fin, M2 HSS et zircone dépendant de la station vous offrent un choix de matériaux de lame pour la coupe de paille formée, avec la construction spécifiée pour votre station de coupe existante.",
+      },
+      {
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Arêtes de coupe personnalisées et revêtements en option",
+        description:
+          "Sureay fournit des profils de coupe personnalisés avec des revêtements DLC, TiN, TiAlN ou CrN en option sélectionnés pour le matériau de la lame et l'application, de sorte que la géométrie des bords et la configuration de la surface peuvent être spécifiées séparément.",
+      },
+      {
+        id: "selection-3",
+        tag: "Application",
+        title: "Couteaux de rechange pour coupe-paille formée",
+        description:
+          "Les couteaux circulaires de remplacement sont conçus pour couper et couper des pailles en papier formé, avec des alésages, des sections de lame et des bords de travail définis pour le support de votre ligne d'enroulement.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Sureay peut-il fabriquer un couteau de remplacement pour ma station de découpe de pailles en papier ?",
+          answer:
+            "Oui. Un dessin ou un échantillon permet de définir l'alésage, l'épaisseur et le profil de coupe requis par votre porte-tronçonnage ou détourage. Incluez le matériau actuel de la lame, l’épaisseur de la paroi de la paille et la fabrication du papier. Ces détails distinguent les couteaux qui partagent un diamètre extérieur mais servent à différents agencements de coupe sur une ligne de production de paille.",
+        },
+        {
+          question:
+            "Les lames de coupe de paille de papier sont-elles les mêmes que les couteaux de découpe de papier ?",
+          answer:
+            "Les lames de coupe de paille de papier coupent ou coupent le tube formé sur sa ligne de production. [Couteaux de découpe de papier](/products/rotary-slitter-knives-paper) divisent une bande de papier plate continue en bandes plus étroites. Déterminez si la pièce requise fonctionne sur la bande entrante ou sur la paille finie, puis identifiez son support et son profil de coupe.",
+        },
+        {
+          question:
+            "Comment la lame devrait-elle porter le guide de sélection du matériau du couteau à paille en papier ?",
+          answer:
+            "Utilisez la station de coupe et l’état de la lame utilisée comme point de départ. Comparez séparément l'usure progressive des bords, l'écaillage et les résidus d'adhésif, puis évaluez un changement de matériau par rapport au problème observé. Gardez l'alésage requis, la section de lame et la géométrie du support définis lorsque vous envisagez une alternative à la lame actuelle.",
+        },
+        {
+          question:
+            "Pourquoi les extrémités des pailles en papier sont-elles déchirées ou déformées ?",
+          answer:
+            "Inspectez le bord de coupe, l’accumulation d’adhésif et le support du tube ainsi que le nombre de plis de papier, l’épaisseur de la paroi et l’état de l’adhésif. Comparez la coupe effectuée par une lame propre avec la lame affectée avec les réglages normaux de la machine. Cela donne une image plus utile des conditions de coupe que le seul jugement de la netteté.",
+        },
+        {
+          question:
+            "Qu'est-ce qui devrait guider le choix du revêtement lorsque l'adhésif s'accumule sur les couteaux à paille ?",
+          answer:
+            "Sélectionnez le revêtement ainsi que le matériau de la lame, le système adhésif et le motif des résidus au poste de découpe. Enregistrez l'endroit où l'accumulation se produit et comparez-la avec la lame d'origine dans des conditions normales de production. Les photographies des lames utilisées et les échantillons découpés aident à définir les exigences de surface lors de l'examen d'un changement de revêtement.",
+        },
+        {
+          question: "Quand faut-il remplacer une lame coupe-paille en papier ?",
+          answer:
+            "Remplacez une lame lorsque les bords endommagés ou l'usure continue empêchent la coupe nette requise, ou lorsque ses dimensions restantes se situent en dehors de la plage de travail spécifiée de la machine. Vérifiez les résidus d'adhésif et le support du tube lorsque vous comparez des échantillons découpés dans les mêmes conditions de production. Basez le remplacement sur l’état de la lame et la qualité de coupe requise plutôt que sur un intervalle de calendrier fixe.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Commandez des couteaux inférieurs multi-rainures fabriqués selon votre modèle de fente, avec un pas personnalisé, une disposition des bords de travail et un montage sur arbre. Envoyez Sureay votre plan et votre programme de largeur pour un devis sur une configuration monobloc ou à anneau brisé.",
+    id: "groove-bottom-knives",
+    seoDescription:
+      "Anneaux de coupe multi-rainures pour le refendage par cisaillement. Pas de rainure de 5 mm et diamètre extérieur jusqu'à 406 mm, avec configurations monobloc et divisées selon dessin.",
+    name: "Contre-couteaux inférieurs multigorges",
+    fullName: "Couteaux inférieurs à gorges multiples et bagues de coupe",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Contre-couteaux inférieurs multigorges",
+    image: "/images/products/slitter-detail/groove-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Couteaux inférieurs multi-rainures personnalisés pour le cisaillement par rembobineur. Bagues de coupe de rechange avec pas de rainure, largeur, alésage spécifiés et construction solide ou fendue.",
+    link: "/products/groove-bottom-knives",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "OD jusqu'à 406 mm",
+      },
+      {
+        label: "Options matérielles",
+        value: "Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS ou à pointe de carbure",
       },
       {
         label: "Pas de rainure",
-        value: "Dès 5 mm (0,200 in), rectifié selon votre plan de laizes",
-      },
-      {
-        label: "Montage",
         value:
-          "Alésage lisse pour arbre pneumatique expansible, ou vis de pression pour arbre plein",
-      },
-      {
-        label: "Configuration d'arête",
-        value: "Arête de coupe simple ou double",
+          "À partir de 5 mm ; Le nombre de pas et de rainures varie selon la configuration du couteau",
       },
       {
         label: "Construction",
         value: "Bague monobloc ou bague fendue en deux pièces",
       },
       {
-        label: "Application",
+        label: "Arêtes de coupe",
+        value: "Épaule de travail simple ou double",
+      },
+      {
+        label: "Fixation",
         value:
-          "Refendage par cisaillement multi-laizes du papier, carton, film, feuille métallique et ruban",
+          "Alésage lisse pour un arbre pneumatique extensible ou vis de réglage pour un arbre plein",
+      },
+      {
+        label: "Applications",
+        value:
+          "Coupe par cisaillement de papier, de carton, de film et de papier d'aluminium avec plusieurs positions de fente",
       },
     ],
-    dimensionLabels: {
-      col0: "Configuration",
-      col1: "Diamètre extérieur",
-      col2: "Montage",
-      col3: "Pas de rainure / Arêtes",
-      caption:
-        "* Le pas de rainure, le nombre de rainures, la largeur de bague et l'alésage sont fabriqués selon votre plan de laizes — il n'existe pas de tableau de tailles standard pour ce produit. Transmettez les laizes que vous produisez, le type d'arbre et la spécification du couteau supérieur associé, ou un plan, et nous rectifierons les positions de rainure en conséquence.",
-    },
-    standardDimensions: [
-      {
-        spec: "Bague multi-rainures — alésage lisse",
-        od: "Jusqu'à Φ406 (16 in)",
-        id: "Arbre pneumatique expansible",
-        thickness: "Dès 5 mm de pas",
-      },
-      {
-        spec: "Bague multi-rainures — vis de pression",
-        od: "Jusqu'à Φ406 (16 in)",
-        id: "Arbre inférieur plein",
-        thickness: "Dès 5 mm de pas",
-      },
-      {
-        spec: "Bague fendue en deux pièces",
-        od: "Jusqu'à Φ406 (16 in)",
-        id: "Arbre pneumatique ou plein",
-        thickness: "Dès 5 mm de pas",
-      },
-      {
-        spec: "Bague multi-rainures à double arête",
-        od: "Jusqu'à Φ406 (16 in)",
-        id: "Arbre pneumatique ou plein",
-        thickness: "Arêtes de coupe des deux côtés",
-      },
-      {
-        spec: "Bague de coupe à rainure unique",
-        od: "Sur plan",
-        id: "Arbre pneumatique ou plein",
-        thickness: "Une position fixe",
-      },
-      {
-        spec: "Bague d'écartement lisse",
-        od: "Sur plan",
-        id: "Arbre pneumatique ou plein",
-        thickness: "Sans rainure — fixe l'écartement",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Le choix de nuance sur une bague multi-rainures est gouverné par le caractère abrasif de la bande, car les arêtes de rainure s'usent là où la bande passe et non là où le couteau frappe. Une bague est en outre un corps volumineux et coûteux à mettre au rebut : les nuances qui supportent des réaffûtages répétés offrent donc généralement la meilleure économie.",
-      rows: [
+    detailLayout: {
+      seoTitle:
+        "Couteaux inférieurs multi-rainures | Anneaux coupants inférieurs",
+      sizeRange: "OD jusqu'à 406 mm",
+      technicalSpecs: [
         {
-          grade: "Cr12MoV / SKD-11",
-          hardness: "HRC 58–62",
-          bestFor:
-            "Papier, carton et film courants — la spécification standard et le meilleur équilibre entre durée de vie et aptitude au réaffûtage",
-          tradeoff:
-            "Dépassée par la version à plaquettes carbure sur supports fortement couchés ou chargés",
+          label: "Dimensions",
+          value: "OD jusqu'à 406 mm",
         },
         {
-          grade: "9CrSi / 65Mn",
-          hardness: "HRC 56–60",
-          bestFor:
-            "Supports souples non couchés, ouate et vitesses de ligne plus faibles où le prix unitaire décide",
-          tradeoff:
-            "Les arêtes de rainure s'arrondissent plus tôt : prévoyez un intervalle plus court entre réaffûtages",
+          label: "Options matérielles",
+          value: "Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS ou à pointe de carbure",
         },
         {
-          grade: "HSS",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Vitesses de ligne élevées et plannings mixtes où la bague doit tenir l'arête sur de longs tirages",
-          tradeoff:
-            "Coût supérieur à l'acier à outils ; s'use tout de même sur supports chargés",
+          label: "Pas de rainure",
+          value:
+            "À partir de 5 mm ; Le nombre de pas et de rainures varie selon la configuration du couteau",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 à la plaquette",
-          bestFor:
-            "Bandes abrasives, couchées, chargées et contrecollées où les rainures en acier à outils s'usent en quelques semaines",
-          tradeoff:
-            "Prix le plus élevé, et les plaquettes s'ébrèchent au lieu de s'user si l'arbre présente un faux-rond",
+          label: "Construction",
+          value: "Bague monobloc ou bague fendue en deux pièces",
+        },
+        {
+          label: "Arêtes de coupe",
+          value: "Épaule de travail simple ou double",
+        },
+        {
+          label: "Fixation",
+          value:
+            "Alésage lisse pour un arbre pneumatique extensible ou vis de réglage pour un arbre plein",
+        },
+        {
+          label: "Applications",
+          value:
+            "Coupe par cisaillement de papier, de carton, de film et de papier d'aluminium avec plusieurs positions de fente",
         },
       ],
-      outro:
-        "En cas de doute, transmettez-nous le substrat et votre intervalle de réaffûtage actuel et nous calibrerons la recommandation sur votre consommation réelle plutôt que sur un tableau générique.",
+      heroAlt:
+        "Anneau de couteau inférieur à rainures multiples montrant des rainures rectifiées parallèles",
+      specificationImage: {
+        src: "/images/products/slitter-detail/groove-bottom-knives-detail.webp",
+        alt: "Bague multi-rainures montrant l'alésage étagé, les rainures et la largeur totale du corps",
+      },
+      inlineRfq: {
+        title:
+          "Vous recherchez une dimension qui ne figure pas dans la liste ?",
+        description:
+          "Envoyez-nous un plan, un échantillon usé ou simplement le modèle de votre machine. Nous vous répondrons avec un devis dans les 24 heures.",
+        buttonLabel: "Demander un devis",
+      },
+      dimensionTables: [
+        {
+          id: "multi-groove",
+          tabLabel: "Contre-couteaux inférieurs multigorges",
+          title: "Tailles des couteaux inférieurs à rainures multiples",
+          columns: [
+            "Référence",
+            "Diamètre extérieur (mm)",
+            "Options d'alésage (mm)",
+            "Options de largeur (mm)",
+          ],
+          rows: [
+            ["SR001701", "150", "60 / 80 / 90", "39 / 49 / 50"],
+            ["SR001702", "130", "100 / 110", "50 / 100"],
+            ["SR001703", "150", "120 / 130", "50 / 100"],
+            ["SR001704", "180", "150", "50 / 100"],
+          ],
+        },
+        {
+          id: "multi-groove-configurations",
+          tabLabel: "Configurations d'anneaux et d'arbres",
+          title: "Configurations d'anneaux et d'arbres",
+          columns: [
+            "Référence",
+            "Diamètre extérieur (mm/po)",
+            "Configuration",
+            "Arbre / Montage",
+            "Pas / Bord de travail",
+          ],
+          rows: [
+            [
+              "SR001853",
+              "Jusqu’à Φ406 (16 pouces)",
+              "Bague multi-rainures — alésage lisse",
+              "Arbre à air extensible",
+              "Pas à partir de 5 mm",
+            ],
+            [
+              "SR001854",
+              "Jusqu’à Φ406 (16 pouces)",
+              "Bague multi-rainures — vis de réglage",
+              "Arbre inférieur solide",
+              "Pas à partir de 5 mm",
+            ],
+            [
+              "SR001855",
+              "Jusqu’à Φ406 (16 pouces)",
+              "Bague brisée en deux parties",
+              "Arbre pneumatique ou plein",
+              "Pas à partir de 5 mm",
+            ],
+            [
+              "SR001856",
+              "Jusqu’à Φ406 (16 pouces)",
+              "Bague multi-rainures à double tranchant",
+              "Arbre pneumatique ou plein",
+              "Arêtes de coupe des deux côtés",
+            ],
+            [
+              "SR001857",
+              "Voir le schéma",
+              "Bague coupante à une rainure",
+              "Arbre pneumatique ou plein",
+              "Un poste fixe",
+            ],
+            [
+              "SR001858",
+              "Voir le schéma",
+              "Bague d'espacement lisse",
+              "Arbre pneumatique ou plein",
+              "Pas de rainure : définit l'espacement",
+            ],
+          ],
+        },
+      ],
     },
+    compatibleMachines: ["Kampf", "Göbel"],
     components: [
       {
-        id: "one-ring-many-widths",
-        tag: "TEMPS DE CHANGEMENT",
-        title: "Une bague, de nombreuses positions de coupe",
+        id: "selection-1",
+        tag: "Sélection",
+        title: "Épaulements de travail en acier et en carbure",
         description:
-          "Chaque rainure est une position de coupe utilisable : un changement de laize consiste donc à repositionner le couteau supérieur plutôt qu'à démonter l'arbre et à reconstruire un empilage d'entretoises. Sur les lignes qui changent souvent de laize de commande, c'est d'abord un produit de temps de changement avant d'être un consommable.",
+          "Des constructions en acier et en carbure sont disponibles pour les couteaux inférieurs à plusieurs rainures, vous offrant des options définies de matériaux de bord de travail tout en conservant la géométrie d'anneau requise par votre station de refendage.",
       },
       {
-        id: "ground-in-one-setup",
-        tag: "PRÉCISION DIMENSIONNELLE",
-        title: "Toutes les rainures rectifiées en une seule prise",
+        id: "selection-2",
+        tag: "Réglage",
+        title: "Emplacement personnalisé et mises en page de pointe",
         description:
-          "Les positions de rainure sont rectifiées dans un seul corps en une seule prise : la laize ne peut donc pas dériver comme lorsqu'un opérateur reconstruit un empilage d'entretoises un millimètre à côté. L'alésage et le faux-rond sont tenus à la même spécification sur les bagues multi-rainures, à rainure unique et lisses, afin qu'un arbre mixte s'empile tout de même correctement.",
+          "Sureay réalise des modèles de rainures, des largeurs de corps et des dispositions à simple ou double épaulement de travail selon le dessin, permettant aux blocs de remplacement de reproduire les positions de coupe requises par votre programme de largeur de fente.",
       },
       {
-        id: "mounting-and-split",
-        tag: "OPTIONS DE MONTAGE",
-        title: "Arbre pneumatique, arbre plein ou bague fendue",
+        id: "selection-3",
+        tag: "Application",
+        title: "Conceptions de montage monobloc et divisées",
         description:
-          "L'alésage lisse se serre sur un arbre pneumatique expansible ; l'exécution à vis de pression se fixe sur un arbre inférieur plein. Une bague fendue en deux pièces se retire sans démonter l'ensemble de l'arbre, ce qui, sur une machine large, transforme un arrêt programmé en changement en marche.",
+          "Des anneaux brisés en une seule pièce et en deux pièces sont disponibles avec des alésages lisses pour les arbres pneumatiques extensibles ou un verrouillage par vis pour les arbres pleins, spécifiés pour s'adapter à la disposition de montage existante.",
       },
     ],
-    relatedBladeIds: [
-      "slitter-rewinder-bottom-knives",
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-    ],
-    rfqPlaceholder:
-      "Exemple : enrouleuse Kampf, arbre pneumatique expansible, bague inférieure Φ180 × 100 mm de large, 12 rainures au pas de 25 mm, arête simple. Refendage de carton couché 120 g/m², 8 coupes, changement de laize deux fois par semaine. Besoin de 4 bagues et de 2 bagues d'écartement lisses.",
     faqs: {
       technical: [
         {
           question:
-            "En quoi un couteau inférieur multi-rainures diffère-t-il d'un couteau enclume rainuré ?",
+            "Quelles dimensions définissent un bloc à couteaux multi-rainures de remplacement ?",
           answer:
-            "Par l'échelle et par la finalité. Un couteau enclume rainuré est un disque portant une à trois rainures, rectifié selon un profil de paire de cisaillement OEM et utilisé principalement sur les lignes film, feuille métallique et ruban — consultez notre page couteaux enclumes inférieurs rainurés pour ce produit. Une bague multi-rainures est un corps beaucoup plus large portant de nombreuses rainures parallèles, et son intérêt est qu'une seule bague couvre de nombreuses positions de coupe, de sorte que les changements de laize n'exigent pas de remonter l'outillage. Si vous changez souvent de laize, il vous faut la bague ; si vous travaillez une seule laize contre un profil d'enclume OEM spécifié, il vous faut l'enclume.",
+            "Définissez ensemble les positions de coupe, l'emplacement du premier bord, la largeur hors tout, le diamètre extérieur, l'alésage et la méthode de verrouillage. Les enclumes multi-rainures, les blocs de couteaux et les découpeuses inférieures décrivent un corps de coupe inférieur, mais n'établissent pas son montage ou sa disposition des bords. Identifiez également le couteau supérieur correspondant et la méthode de coupe : un manchon de support de rasoir rainuré remplit une fonction différente.",
         },
         {
           question:
-            "Quel pas de rainure pouvez-vous réellement rectifier, et comment le spécifier ?",
+            "Comment spécifier le pas des rainures et les positions des arêtes de coupe ?",
           answer:
-            "La division entre arêtes — la distance d'une arête de coupe à la suivante — est sur mesure dans la quasi-totalité des cas et peut descendre jusqu'à 5 mm (0,200 in). Ne la spécifiez pas comme une valeur unique : transmettez la liste des laizes que vous produisez réellement et nous répartirons les positions de rainure de sorte que toutes vos laizes courantes tombent sur une rainure. C'est la différence entre une bague qui couvre votre planning et une bague qui en couvre la moitié et vous oblige à monter un empilage d'entretoises pour le reste.",
+            "Le pas est la distance entre les arêtes de coupe correspondantes sur les rainures adjacentes. Marquez le premier bord de travail à partir d'une référence axiale commune, puis affichez les positions de coupe restantes et la largeur totale du corps. La largeur d'ouverture de la rainure est une mesure distincte ; il ne définit pas la distance entre les arêtes de coupe.",
         },
         {
           question:
-            "Dois-je commander un alésage lisse ou une vis de pression ?",
+            "Sureay peut-il fabriquer un bloc à couteaux selon un motif de largeur de fente personnalisé ?",
           answer:
-            "Cela découle de votre arbre inférieur, pas de votre préférence. L'alésage lisse se serre sur un arbre pneumatique expansible et constitue l'option de changement rapide présente sur la plupart des lignes de transformation modernes. L'exécution à vis de pression se fixe sur un arbre inférieur plein et est courante sur les machines anciennes et les lignes de carton lourd. Les deux ne sont pas interchangeables — la spécification d'alésage diffère — de sorte qu'une bague alésée pour le mauvais système ne portera pas correctement et se traduira par un faux-rond à la coupe. En cas de doute, photographiez l'extrémité de l'arbre avec les bagues en place.",
+            "Oui. Sureay peut adapter la disposition des rainures, le nombre de bords de travail, la largeur du corps et le montage de l'arbre à votre dessin. Spécifiez chaque position de coupe à partir de la même référence axiale et incluez le couteau supérieur correspondant. Identifiez les arêtes de coupe actives dans le motif de fente prévu afin que le bloc de remplacement reproduise la disposition requise.",
         },
         {
           question:
-            "Mes laizes se sont mises à dériver sur l'arbre. La bague est-elle en cause ?",
+            "Quand dois-je choisir une bague brisée plutôt qu’une bague d’une seule pièce ?",
           answer:
-            "Contrôlez le faux-rond et l'empilage des bagues avant les rainures. Les positions de rainure sont rectifiées en une seule prise et ne bougent pas : une bague juste à l'installation est donc rarement à l'origine d'une dérive progressive de laize. Les causes habituelles sont un alésage portant sur un arbre usé ou encrassé, ou des bagues de fournisseurs différents mélangées sur un même arbre avec des spécifications d'alésage et de face légèrement différentes, ce qui cumule une petite oscillation jusqu'à une erreur de laize mesurable. Des arêtes de rainure usées se manifestent par une dégradation de la tranche de coupe et une hausse de la poussière, non par une dérive de laize.",
+            "Choisissez en fonction de la disposition de l'arbre et de l'accès d'installation ou de retrait disponible. Un anneau brisé peut fournir un accès là où l'assemblage s'adapte à cette construction, tandis que ses joints et ses caractéristiques de verrouillage doivent être adaptés à la conception existante. Conservez le profil de coupe requis, l'ajustement de l'alésage et les positions du bord de travail définis pour chaque option.",
+        },
+        {
+          question:
+            "Que dois-je vérifier lorsque la qualité de la fente varie sur un bloc multi-rainures ?",
+          answer:
+            "Comparez le couteau supérieur et l'épaulement de travail à chaque position de coupe concernée, y compris leur état, l'appariement des matériaux et la géométrie de travail. Examinez le montage, le mouvement du couteau et tout meulage précédent le long du motif de fente. L'enregistrement des positions produisant le défaut permet de concentrer les contrôles sur la paire de couteaux concernée et les conditions d'assemblage.",
+        },
+        {
+          question:
+            "Comment choisir le matériau du bord de travail lorsque certaines positions de fente s'usent plus rapidement ?",
+          answer:
+            "Pour les lignes de bobinage du papier, comparez les épaulements de travail concernés avec leurs couteaux supérieurs correspondants avant de changer de matériau. Séparez l'usure progressive des éclats ou des dommages associés au mouvement, à la géométrie ou au meulage du couteau. Une fois la paire et les conditions de montage établies, comparez la configuration actuelle en acier ou en carbure avec le modèle d'usure réel et les exigences de production.",
+        },
+        {
+          question:
+            "Qu'est-ce qu'un numéro d'article identifie lors de la commande d'un bloc de remplacement ?",
+          answer:
+            "Le numéro d'article identifie la ligne ou la série du catalogue utilisée comme référence pour votre commande. Confirmez l'alésage sélectionné, la largeur du corps, le motif de rainure et le couteau supérieur correspondant sur le dessin de commande ; certaines entrées couvrent les options de taille ou les mises en page adaptées au dessin. Utilisez la référence de l'article avec ce dessin et sa révision pour les achats répétés.",
         },
       ],
-      company: [
+      company: [],
+    },
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    id: "stationary-scrap-shear-blades",
+    name: "Lames pour cisailles stationnaires à ferraille",
+    fullName: "Lames pour cisailles à ferraille fixes à portique",
+    seoTitle: "Lames pour cisailles à ferraille fixes à portique",
+    seoDescription:
+      "Commandez des blocs de couteaux mobiles montés sur boulons et des contre-couteaux fixes pour les cisailles à ferraille à portique stationnaires. Choisissez l'acier 1.2746 ou 1.2767 et envoyez votre plan de montage.",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Lames pour cisailles stationnaires à ferraille",
+    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Portique de remplacement et ferraille stationnaire lames de cisaille en acier 1.2746 ou 1.2767. Couteaux mobiles et contre-couteaux fabriqués selon le plan de montage spécifié.",
+    link: "/products/stationary-scrap-shear-blades",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "260–550 mm",
+      },
+      {
+        label: "Options matérielles",
+        value: "Acier à outils 1.2746 ou 1.2767",
+      },
+      {
+        label: "Positions des couteaux",
+        value: "Couteaux de coupe mobiles et contre-couteaux fixes",
+      },
+      {
+        label: "Fixation",
+        value: "Blocs à couteaux boulonnés",
+      },
+      {
+        label: "Application",
+        value: "Cisailles à ferraille stationnaires et cisailles à portique",
+      },
+    ],
+    compatibleMachines: [
+      "Danieli Henschel",
+      "Metso-Lindemann",
+      "Lefort",
+      "Becker-Leimbach",
+    ],
+    compatibleMachinesIntro:
+      "Remplacez les couteaux mobiles et les contre-couteaux fixes de votre cisaille à ferraille stationnaire par des blocs de couteaux étirés de Sureay . Commandez des pièces individuelles ou un ensemble complet en acier à outils 1.2746 ou 1.2767 et demandez un devis pour votre installation. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "stationary-scrap-shear-blades-1",
+        tag: "Siège de couteau",
+        title: "Options d'acier à outils 1.2746 et 1.2767",
+        description:
+          "Sureay propose ces options d'acier pour les blocs de couteaux fixes de cisaillement de ferraille, permettant de spécifier les besoins en matériaux autour de la charge de ferraille et de l'usure ou des dommages observés sur les couteaux existants.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-2",
+        tag: "Droit à la ferraille",
+        title: "Couteaux mobiles et contre-couteaux fixes",
+        description:
+          "Les couteaux de coupe et les contre-couteaux de remplacement peuvent être fournis individuellement ou sous forme d'ensemble requis, chaque bloc étant identifié par sa position dans l'ensemble de cisaille.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-3",
+        tag: "Disposition des couteaux",
+        title: "Blocs personnalisés pour sièges de couteaux existants",
+        description:
+          "Les blocs de couteaux répertoriés ont une longueur de 260 à 550 mm. Sureay réalise les évidements, les faces d'assise et les modèles de boulons selon votre dessin, y compris des blocs de même longueur et largeur mais d'épaisseurs ou de détails de montage différents.",
+      },
+    ],
+    faqs: {
+      technical: [
         {
-          question: "De quoi avez-vous besoin pour chiffrer ?",
+          question:
+            "Sureay peut-il fournir un contre-couteau ou un ensemble complet de couteaux ?",
           answer:
-            "Diamètre extérieur, alésage, largeur de bague, nombre de rainures et pas, le type d'arbre (pneumatique expansible ou plein), la spécification du couteau supérieur associé, ainsi que le substrat et la vitesse de ligne. L'information complémentaire la plus utile est votre liste de laizes de production : elle nous permet de répartir les positions de rainure selon votre planning réel au lieu de recopier un pas. Un plan ou une bague usée raccourcissent encore le chiffrage ; la rétro-ingénierie à partir d'échantillons fait partie de notre travail courant.",
+            "Oui. Un contre-couteau fixe peut être fourni séparément, et les couteaux mobiles et fixes peuvent être spécifiés comme un ensemble complet. Pour un ensemble, identifiez la position, le dessin et la quantité de chaque bloc. Pour un seul remplacement, incluez les composants retenus qui déterminent sa relation de coupe et de montage.",
         },
         {
           question:
-            "Fournissez-vous aussi des bagues à rainure unique et des bagues lisses, ou seulement multi-rainures ?",
+            "Quelle est la différence entre un couteau mobile et un contre-couteau ?",
           answer:
-            "Les trois, et nous recommandons de les acheter ensemble. Les bagues de coupe à rainure unique couvrent des positions fixes et les bagues lisses servent d'entretoises et de supports de bande entre les positions de coupe. Fabriquées à la même spécification d'alésage et de faux-rond, elles s'empilent sans introduire d'oscillation : mélanger sur un même arbre des bagues de fournisseurs différents est une cause fréquente et réellement difficile à diagnostiquer de variation de laize.",
+            "Le couteau mobile se déplace avec le mécanisme de cisaillement. Le contre-couteau fixe fournit le tranchant opposé. Leurs formes de corps, leurs faces de montage et leurs orientations d'installation peuvent différer même lorsque leurs dimensions nominales semblent similaires. Identifiez chacun par sa position de travail afin qu'un remplacement préserve la relation de coupe prévue.",
         },
         {
-          question: "Peuvent-elles être réaffûtées, et combien de fois ?",
+          question:
+            "Comment choisir l’acier 1.2746 ou 1.2767 pour les couteaux de cisaille à ferraille ?",
           answer:
-            "Oui, et le réaffûtage est central dans l'économie car une bague est un corps volumineux à mettre au rebut. Le nombre de cycles dépend de la profondeur de rainure et de la quantité de matière retirée à chaque réaffûtage ; les bagues en acier à outils offrent généralement plusieurs cycles avant que la géométrie de rainure ne puisse plus être rétablie. Nous réaffûtons les bagues que nous avons fabriquées et, dans la plupart des cas, celles que nous n'avons pas fabriquées, à condition que le corps soit sain et l'alésage intact — et nous vous dirons franchement quand une bague ne vaut pas le travail.",
+            "Utilisez les spécifications actuelles du matériau ainsi que la composition des déchets, la taille des sections et l'historique d'usure du couteau. L'abrasion progressive, l'écaillage localisé et la déformation des bords indiquent différentes conditions d'examen. Évaluez les exigences en matière de matériau et de dureté ainsi que le support de couteau et les tâches de coupe avant de sélectionner une alternative à l'acier existant.",
+        },
+        {
+          question:
+            "Comment puis-je identifier un bloc de couteaux de cisaille à ferraille stationnaire lorsque la longueur et la largeur correspondent ?",
+          answer:
+            "Vérifiez d'abord l'épaisseur, puis le modèle de boulons, les évidements et les faces de positionnement. Par exemple, le catalogue comprend des blocs de 525 × 200 mm de différentes épaisseurs. Utilisez les dimensions complètes, le numéro d'article et le dessin ensemble pour confirmer que le bloc est en position mobile ou fixe correcte.",
+        },
+        {
+          question:
+            "Un couteau de cisaille à ferraille stationnaire usé peut-il être indexé ou réaffûté ?",
+          answer:
+            "L'indexation est possible si la conception permet à un bord inutilisé de s'asseoir correctement. Le réaffûtage est possible si le bloc peut retrouver sa hauteur de coupe et son assise spécifiées dans les limites de la machine. Évaluez le tranchant et les surfaces du corps qui localisent le bloc avant de le remettre en service.",
+        },
+        {
+          question:
+            "Les cisailles à ferraille stationnaires peuvent-elles remplacer lames de cisaille alligator ?",
+          answer:
+            "Non. Une cisaille à portique stationnaire utilise un siège de couteau et un mécanisme de coupe différents de ceux d'une cisaille crocodile à mâchoires articulées. Pour les couteaux supérieurs et inférieurs sur une machine à mâchoires articulées, voir [Alligator lames de cisaille](/products/metal-shear-knives) .",
+        },
+        {
+          question:
+            "Comment puis-je obtenir un devis pour des cisailles à ferraille à portique stationnaires ?",
+          answer:
+            "Envoyez le modèle et la version de la machine, la section de rebut et le dessin ou le numéro de pièce pour chaque bloc. Répertoriez séparément les positions mobiles et fixes avec les quantités. Incluez l'épaisseur totale du bloc, les évidements et les références de montage lorsque plusieurs positions utilisent des contours de corps similaires.",
         },
       ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envoyez le modèle de cisaille stationnaire et le numéro de série, la position de la lame, le dessin complet du couteau, les rebuts et la quantité.",
+    rfqPlaceholder:
+      "Envoyez le modèle de cisaille stationnaire et le numéro de série, la position de la lame, le dessin complet du couteau, les rebuts et la quantité.",
+    relatedBladeIds: ["metal-shear-knives", "guillotine-shear-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Les configurations de couteaux de remplacement publiées sont présentées à titre de référence dimensionnelle. Chaque famille dispose de plusieurs modèles et modèles de montage. Fournir le dessin complet avant de commander ; ce ne sont pas des lames interchangeables ni une norme de taille à l’échelle de l’industrie.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Lame de cisaille à ferraille stationnaire avec deux trous de montage",
+      sizeRange: "260–550 mm",
+      heroSpecs: [
+        {
+          label: "Matériau",
+          value: "1,2746/1,2767 ; traitement thermique spécifié",
+        },
+        {
+          label: "Application",
+          value: "Cisailles à ferraille stationnaires et cisailles à portique",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "260–550 mm",
+        },
+        {
+          label: "Options matérielles",
+          value: "Acier à outils 1.2746 ou 1.2767",
+        },
+        {
+          label: "Positions des couteaux",
+          value: "Couteaux de coupe mobiles et contre-couteaux fixes",
+        },
+        {
+          label: "Fixation",
+          value: "Blocs à couteaux boulonnés",
+        },
+        {
+          label: "Application",
+          value: "Cisailles à ferraille stationnaires et cisailles à portique",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Famille de référence",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+          ],
+          rows: [
+            [
+              "SR003601",
+              "Danieli Henschel · configuration des couteaux",
+              "525",
+              "200",
+              "100",
+            ],
+            [
+              "SR003602",
+              "Metso-Lindemann · configuration des couteaux",
+              "525",
+              "200",
+              "80",
+            ],
+            [
+              "SR003603",
+              "Becker-Leimbach · configuration des couteaux",
+              "518",
+              "200",
+              "120",
+            ],
+            [
+              "SR003604",
+              "Danieli Henschel · contre-couteau",
+              "260",
+              "200",
+              "100",
+            ],
+            [
+              "SR003605",
+              "Lefort · configuration des couteaux",
+              "550",
+              "200",
+              "100",
+            ],
+            [
+              "SR003606",
+              "Lefort · configuration des couteaux",
+              "510",
+              "140",
+              "50",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Envoyez le modèle de cisaille stationnaire et le numéro de série, la position de la lame, le dessin complet du couteau, les rebuts et la quantité.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
-    id: "slitter-rewinder-bottom-knives",
-    name: "Couteaux Inférieurs pour Refendeuses-Enrouleuses",
+    id: "flying-shear-blades",
+    name: "Lames de cisaille volante",
     fullName:
-      "Couteaux inférieurs en carbure pour lignes de refendage et d'enroulage papier et film",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Couteaux de Refendage",
-    image:
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Poli Miroir",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Gamme de couteaux inférieurs et de bagues de refendeuse-enrouleuse en quatre diamètres",
-      "Paire de couteaux inférieurs en carbure montrant l'alésage et les trous de fixation",
-      "Bague de couteau inférieur de refendeuse avec face de roulement polie miroir",
-    ],
+      "Lames de cisailles d’éboutage et de cisailles volantes pour laminoirs",
+    seoTitle:
+      "Lames de cisailles volantes | Couteaux sur mesure pour laminoirs",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Lames de cisaille volante",
+    image: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+    imagePending: false,
+    imageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
     description:
-      "Couteaux inférieurs massifs et à plaquettes carbure pour refendeuses-enrouleuses papier à grande vitesse. Faces polies miroir, coupe sans bavure et poussière réduite dans la bobine. Tailles de stock Φ250–Φ254 mm en épaisseurs de 15 à 50 mm, alésages adaptés à la machine. Compatibles Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban et autres plateformes d'enroulage électrique.",
-    fullDescription:
-      "Le couteau inférieur d'une refendeuse-enrouleuse est la moitié fixe de la paire de cisaillement, et c'est délibérément la moitié la plus dure. Ce différentiel de dureté entre couteau supérieur et couteau inférieur n'est pas accessoire : c'est le mécanisme qui maintient la coupe propre. Lorsque les deux couteaux ont des duretés voisines, la zone de cisaillement se déforme au lieu de cisailler, et le résultat est une tranche ébavurée et de la poussière entraînée dans la bobine.\n\nLes couteaux inférieurs Sureay sont proposés en carbure de tungstène massif et en construction à plaquettes carbure, avec des faces polies miroir et une arête vive et positionnée avec précision. Sur la version à plaquettes, le carbure est fixé par un procédé de sertissage à chaud contrôlé afin que les plaquettes restent solidaires à grande vitesse plutôt que de se desserrer en service, et les plaquettes usées peuvent être remplacées sans mettre le corps au rebut.\n\n## Pourquoi la poussière dans la bobine est un problème de couteau inférieur\n\nLes opérateurs cherchent généralement la poussière en amont : nettoyeurs de bande, barres antistatiques, aspiration. Souvent la source est la coupe elle-même. Un couteau inférieur dont l'arête s'est arrondie ou dont la face a perdu son poli cesse de cisailler et se met à écraser, et la fibre de papier écrasée devient une poussière qui s'enroule directement dans la bobine et réapparaît comme défaut de transformation deux procédés plus loin. Si la poussière est apparue progressivement et non après un changement de qualité, le couteau inférieur est la première chose à inspecter.\n\n## Matériaux selon le substrat\n\nLe carbure de tungstène massif offre la plus longue durée de vie et constitue la bonne réponse sur les supports abrasifs et fortement couchés. La version à plaquettes offre le meilleur rapport coût/durée pour le papier courant, avec l'avantage pratique de pouvoir être re-plaquée. L'HSS reste raisonnable pour les tirages courts sur supports souples et au coût unitaire le plus bas.\n\n## Applications\n\nPapier, film, feuille métallique et matériaux en bande similaires sur plateformes électriques de refendage-enroulage : refendage de bobines, transformation de rouleaux et lignes d'enroulage traitant papier couché et non couché, carton et supports souples légers.\n\n## Le différentiel de dureté est tout le mécanisme\n\nUne coupe par cisaillement a besoin d'un différentiel de dureté pour rester une coupe par cisaillement. Lorsque les couteaux supérieur et inférieur ont des duretés voisines, la matière dans la zone de cisaillement se déforme au lieu de se séparer proprement, et l'on obtient une tranche ébavurée et de la fibre écrasée qui devient poussière dans la bobine. Le couteau inférieur, plus dur, conserve une géométrie d'arête stable tandis que le couteau supérieur, plus tendre, encaisse l'usure — c'est aussi pourquoi le supérieur est celui qu'on remplace le plus souvent, et pourquoi remplacer les deux au même cycle gaspille de l'outillage encore utilisable. Égaliser les deux duretés est une erreur de spécification courante et coûteuse, qu'il vaut la peine de vérifier sur toute ligne où la qualité de coupe s'est dégradée après un changement d'outillage.\n\n## La poussière dans la bobine commence généralement à la coupe\n\nLes opérateurs cherchent la poussière en amont — nettoyeurs de bande, barres antistatiques, aspiration — alors que la source est fréquemment la coupe elle-même. Un couteau inférieur dont l'arête s'est arrondie, ou dont la face a perdu son poli, cesse de cisailler et se met à écraser ; la fibre écrasée s'enroule directement dans la bobine et réapparaît comme défaut deux procédés plus loin. L'indice est chronologique : une poussière apparue progressivement désigne le couteau, une poussière apparue après un changement de qualité désigne le substrat. Inspectez l'arête sous grossissement et contrôlez le poli de la face plutôt que d'apprécier le tranchant au toucher, car le poli se dégrade avant l'arête et fait monter la poussière bien avant que quiconque juge le couteau émoussé.\n\n## Carbure massif ou à plaquettes\n\nLe carbure de tungstène massif offre la plus longue durée de vie unitaire et constitue la bonne réponse sur les supports abrasifs et fortement couchés, mais lorsque l'arête est épuisée le couteau l'est aussi. La version à plaquettes coûte moins cher, dure moins par cycle et se re-plaque : à condition que le corps soit droit et sans faux-rond et que les assises de brasure soient saines, les plaquettes usées sont remplacées et le couteau retourne en service. Cette possibilité de re-plaquage est généralement le facteur décisif lorsque l'économie entre les deux est serrée. Sur la construction à plaquettes, celles-ci sont serties à chaud dans des conditions contrôlées afin de rester solidaires aux vitesses d'enroulage plutôt que de se desserrer en service : ce qui limite la vie d'un couteau à plaquettes mal fabriqué, c'est la qualité de la brasure, pas la qualité du carbure.\n\n## Ce dont nous avons besoin pour nous adapter à votre machine\n\nLes couteaux inférieurs sont toujours fabriqués pour la machine ; les plateformes d'enroulage listées sont donc celles que nous voyons le plus souvent, non une limite. Pour chiffrer, transmettez le diamètre extérieur, l'alésage et l'épaisseur du couteau que vous utilisez aujourd'hui, la spécification du couteau supérieur associé, ce que vous refendez, la vitesse de ligne et le nombre de coupes. Si l'un de ces éléments est inconnu, envoyez le couteau usé ou des photographies avec un pied à coulisse dans le cadre — nous préférons faire de la rétro-ingénierie à partir d'un échantillon plutôt que de chiffrer sur une hypothèse. Les couteaux sont expédiés individuellement, arête protégée et papier VCI contre la corrosion, en caisse pour les grands diamètres, car un couteau inférieur qui arrive avec une arête entaillée est inutilisable, aussi bien fabriqué soit-il.",
-    link: "/products/slitter-rewinder-bottom-knives",
-    disambiguation:
-      "Il s'agit de couteaux inférieurs circulaires travaillant en paire de cisaillement avec un couteau supérieur sur les lignes d'enroulage. Si vous cherchez des enclumes plates pour coupe par écrasement, consultez [Couteaux Enclumes Inférieurs Rainurés](/products/bottom-grooved-anvil-knives).",
-    compatibleMachines: [
-      "Beck",
-      "Bielomatik",
-      "Clark Aiken",
-      "DATM",
-      "Didde",
-      "ECH Will",
-      "Harris",
-      "Hamblett",
-      "Jagenberg",
-      "Langston",
-      "Lenox",
-      "Maxson",
-      "Miltex",
-      "Masson Scott",
-      "Pasaban",
-    ],
+      "Récolte à façon et lames de cisaille volantes pour laminoirs. Couteaux droits ou profilés pour coupe à chaud, à froid ou en barre trempée, fabriqués sur plan.",
+    link: "/products/flying-shear-blades",
     specs: [
       {
-        label: "Matériau",
-        value: "Carbure de tungstène massif / à plaquettes carbure / HSS",
+        label: "Dimensions",
+        value: "Fait au dessin",
       },
       {
-        label: "Diamètre extérieur",
-        value: "Φ250–Φ254 mm standard",
-      },
-      {
-        label: "Épaisseur",
-        value: "15 / 20 / 25 / 50 mm",
-      },
-      {
-        label: "État de surface",
-        value: "Poli miroir",
-      },
-      {
-        label: "Principe de conception",
+        label: "Géométrie de la lame",
         value:
-          "Couteau inférieur plus dur que le supérieur — maîtrise de la bavure et de la poussière",
+          "Arêtes de coupe droites ou profilées ; corps de couteaux étagés",
       },
       {
-        label: "Matériaux refendus",
+        label: "Options matérielles",
         value:
-          "Papier, film, feuille métallique et supports en bande similaires",
+          "Acier à outils pour travail à chaud ou acier à outils fortement allié",
+      },
+      {
+        label: "Service de coupe",
+        value:
+          "Configurations de coupe à chaud, de coupe à froid ou de coupe à barre trempée",
+      },
+      {
+        label: "Application",
+        value:
+          "Coupe tête/queue et coupes de division sur cisailles volantes de laminoir",
       },
     ],
-    dimensionLabels: {
-      col0: "Réf.",
-      col1: "DE ØD (mm)",
-      col2: "Alésage Ød (mm)",
-      col3: "Épaisseur T (mm)",
-      caption:
-        "* Tailles standard de couteau inférieur pour refendeuse-enrouleuse. L'alésage, l'épaisseur et la géométrie d'arête sont adaptés à la machine — transmettez le DE/DI/T du couteau que vous utilisez aujourd'hui ainsi que la spécification du couteau supérieur associé.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "25",
-      },
-      {
-        spec: "2",
-        od: "Φ254",
-        id: "Φ195",
-        thickness: "50",
-      },
-      {
-        spec: "3",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "15",
-      },
-      {
-        spec: "4",
-        od: "Φ250",
-        id: "Φ140",
-        thickness: "20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Le couteau inférieur doit toujours être la moitié la plus dure de la paire. Dans ce cadre, la nuance se choisit selon le caractère abrasif du substrat et selon que vous souhaitez ou non un corps re-plaquable.",
-      rows: [
-        {
-          grade: "Carbure de tungstène massif",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Supports abrasifs et fortement couchés ; le plus long intervalle entre changements",
-          tradeoff:
-            "Prix unitaire le plus élevé, et le couteau entier est mis au rebut lorsque l'arête est épuisée",
-        },
-        {
-          grade: "À plaquettes carbure",
-          hardness: "HRA 89–91 à la plaquette",
-          bestFor:
-            "Papier et carton courants — le meilleur rapport coût/durée, et re-plaquable",
-          tradeoff:
-            "La qualité de brasure décide de la durée de vie ; des plaquettes mal serties se desserrent à vitesse",
-        },
-        {
-          grade: "HSS",
-          hardness: "62–64 HRC",
-          bestFor:
-            "Tirages courts, supports souples non couchés, coût unitaire le plus bas",
-          tradeoff:
-            "L'arête s'arrondit vite aux vitesses d'enroulage, et c'est là que commence la poussière dans la bobine",
-        },
-      ],
-      outro:
-        "Quelle que soit la nuance retenue, conservez le différentiel de dureté avec le couteau supérieur. Égaliser les deux duretés est une erreur courante et coûteuse : elle supprime le cisaillement et vous laisse écraser la bande.",
-    },
+    compatibleMachines: ["Danieli"],
+    compatibleMachinesIntro:
+      "Procurez-vous lames de cisaille volantes et des récoltes personnalisées pour votre laminoir, y compris des corps de couteaux droits, profilés et étagés. Sureay propose des options d'acier à outils pour travail à chaud et fortement allié ; partagez vos tâches de dessin et de découpe pour un devis de remplacement sur mesure. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
     components: [
       {
-        id: "hardness-differential",
-        tag: "MÉCANIQUE DU CISAILLEMENT",
-        title: "Délibérément plus dur que le couteau supérieur",
+        id: "flying-shear-blades-1",
+        tag: "Service thermique",
+        title: "Matériaux pour la coupe de barres à chaud, à froid et trempées",
         description:
-          "Le couteau inférieur est spécifié plus dur que le couteau supérieur associé, et c'est voulu. Ce différentiel est ce qui maintient la paire en cisaillement au lieu de déformer la bande, et c'est la cause directe de tranches sans bavure et d'un faible entraînement de poussière dans la bobine.",
+          "Les options d'acier à outils pour travail à chaud et fortement allié permettent de spécifier le matériau du couteau en fonction du produit laminé et des conditions de température au poste de découpe.",
       },
       {
-        id: "mirror-face-finish",
-        tag: "ÉTAT DE SURFACE",
-        title: "Face de roulement polie miroir",
+        id: "flying-shear-blades-2",
+        tag: "Correspondance de profil",
+        title:
+          "Profils adaptés au dessin pour la coupe de barres et de sections",
         description:
-          "Une face polie libère la bande au lieu de la freiner, ce qui garde la coupe propre et réduit l'échauffement par frottement. Le poli de la face est l'une des premières choses à se dégrader en service et l'une des dernières que les opérateurs vérifient : une face ternie fait monter la poussière bien avant que l'arête soit réellement usée.",
+          "Sureay fabrique des lames droites et profilées, y compris des corps étagés et des bords de coupe profilés. La section transversale d'origine et la géométrie de cisaillement installée définissent le contour de la lame et les références de montage pour chaque position du couteau.",
       },
       {
-        id: "hot-set-carbide",
-        tag: "CONSTRUCTION",
-        title: "Plaquettes carbure serties à chaud",
+        id: "flying-shear-blades-3",
+        tag: "État de service",
+        title:
+          "Paires de couteaux personnalisés pour le recadrage et la division",
         description:
-          "Sur la construction à plaquettes, celles-ci sont serties à chaud dans des conditions contrôlées afin de rester fermement solidaires à grande vitesse. Le bénéfice pratique est un corps re-plaquable : les plaquettes usées sont remplacées et le couteau retourne en service au lieu d'être mis au rebut.",
+          "Des couteaux individuels et des remplacements par paires peuvent être réalisés selon des dessins spécifiques à une position pour le recadrage de la tête et de la queue ou les coupes de division, l'orientation et l'interface de chaque couteau étant définies pour l'assemblage existant.",
       },
     ],
-    relatedBladeIds: [
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-      "tungsten-carbide-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Exemple : enrouleuse Jagenberg, couteau inférieur Φ250 × Φ188 × 25 mm, associé à un couteau supérieur Φ200. Refendage de papier couché 120 g/m² à 800 m/min, 12 coupes. Poussière dans la bobine et tranche légèrement ébavurée.",
     faqs: {
       technical: [
         {
           question:
-            "Pourquoi le couteau inférieur doit-il être plus dur que le couteau supérieur ?",
+            "Sureay peut-il fabriquer lames de cisaille volantes personnalisées pour un laminoir existant ?",
           answer:
-            "Parce qu'une coupe par cisaillement a besoin d'un différentiel de dureté pour le rester. Lorsque les deux couteaux ont des duretés voisines, la matière de la zone de cisaillement se déforme au lieu de se séparer proprement, et l'on obtient une tranche ébavurée et de la fibre écrasée qui devient poussière dans la bobine. Le couteau inférieur, plus dur, conserve une géométrie d'arête stable tandis que le supérieur, plus tendre, encaisse l'usure — c'est aussi pourquoi le supérieur est celui qu'on remplace le plus souvent. Égaliser les duretés est une erreur courante et coûteuse.",
+            "Oui. Sureay effectue des remplacements droits, profilés et étagés du dessin. Pour une barre profilée ou un couteau profilé, le contour de travail, les faces de référence et les caractéristiques de montage sont spécifiés ensemble. Le matériau peut ensuite être sélectionné en fonction de la température de coupe et de la charge réelles.",
         },
         {
           question:
-            "J'ai de la poussière dans la bobine. Où regarder en premier ?",
+            "Les cisailles à récolte et lames de cisaille volantes sont-elles identiques ?",
           answer:
-            "À la coupe elle-même, avant les nettoyeurs de bande et les barres antistatiques. Un couteau inférieur dont l'arête s'est arrondie ou dont le poli de face s'est terni cesse de cisailler et se met à écraser, et la fibre écrasée part directement dans la bobine — réapparaissant souvent comme défaut deux procédés plus loin. L'indice est chronologique : une poussière progressive désigne le couteau, une poussière apparue après un changement de qualité désigne le substrat. Inspectez l'arête sous grossissement et contrôlez le poli de la face, pas seulement le tranchant au toucher.",
+            "Ils se chevauchent lorsqu'une cisaille volante coupe la tête ou la queue du matériel en mouvement. Le recadrage décrit l'endroit où la coupe est effectuée. Flying décrit la coupe en coordination avec le matériel en mouvement, qui peut également être utilisé pour le diviser en longueurs. La position de la cisaille et du couteau installés définit le remplacement.",
         },
         {
           question:
-            "Puis-je commander des couteaux inférieurs sans remplacer les couteaux supérieurs ?",
+            "Qu'est-ce qui change lors de la sélection des couteaux pour la coupe à chaud et à froid ?",
           answer:
-            "Oui, et c'est la manière habituelle de les acheter. Les couteaux inférieurs durent en général bien plus longtemps que les supérieurs ; les remplacer au même cycle gaspille de l'outillage encore utilisable. Transmettez-nous le DE/DI/épaisseur du couteau inférieur et la spécification du couteau supérieur associé, et nous ajusterons la géométrie d'accouplement et le différentiel de dureté à ce que vous utilisez déjà.",
+            "Le bord rencontre différentes conditions thermiques et mécaniques. Spécifiez la qualité du stock, la section transversale et les conditions de température au poste de découpe, ainsi que le matériau du couteau existant. Comparez ces exigences avec les options disponibles d'acier à outils pour travail à chaud ou fortement allié tout en conservant le corps et le profil de coupe requis.",
         },
         {
           question:
-            "Les couteaux à plaquettes usés peuvent-ils être re-plaqués ?",
+            "Pourquoi la coupe en barres trempées doit-elle être identifiée séparément ?",
           answer:
-            "Oui, à condition que le corps soit droit et sans faux-rond et que les assises de brasure soient saines. Le re-plaquage est nettement moins cher qu'un couteau neuf et c'est la raison de préférer la version à plaquettes au carbure massif lorsque l'économie est serrée. Le carbure massif ne se re-plaque pas : quand l'arête est épuisée, le couteau l'est aussi, c'est le compromis accepté en échange de la plus longue durée de vie unitaire.",
+            "La surface et le cœur d’une barre trempée peuvent se trouver dans des conditions différentes lorsqu’elle atteint le cisaillement. Ces conditions affectent le devoir le long de la nuance d'acier et de la section de barre. Enregistrez l'état réel au point de coupe afin qu'un matériau de remplacement puisse être évalué pour cette opération plutôt qu'à partir d'une seule étiquette générale chaude ou froide.",
+        },
+        {
+          question:
+            "Qu'est-ce qui détermine le profil d'une cisaille volante ?",
+          answer:
+            "La section transversale du stock et le mouvement de la cisaille déterminent la manière dont les arêtes de coupe s'engagent. Les courbes, les marches et l'orientation des bords font partie de cette géométrie de travail, ainsi que les références de montage du couteau. Reproduire le contour spécifié lors du remplacement du couteau, y compris la relation avec son composant d'accouplement.",
+        },
+        {
+          question:
+            "Une cisaille volante usée peut-elle être utilisée comme échantillon de remplacement ?",
+          answer:
+            "Oui. Un couteau usé peut montrer le corps étagé, localisant les faces et les trous de montage. Identifiez de quelle position il vient et marquez les surfaces rectifiées. Utilisez le dessin original ou une référence de contact inutilisée, le cas échéant, pour distinguer le contour prévu du bord restant.",
+        },
+        {
+          question:
+            "Que dois-je envoyer pour proposer une paire de lames de cisaille volante ?",
+          answer:
+            "Envoyez le modèle de broyeur ou de cisaille, les dessins pour les positions et les quantités des couteaux. Indiquez si la coupe coupe la tête ou la queue ou divise le stock en longueur. Incluez la section laminée, la qualité de l'acier, la température du point de coupe et la vitesse de la ligne afin que les dessins et les spécifications des matériaux puissent être pris en compte ensemble.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envoyez le modèle de broyeur/cisaille, les dessins des couteaux, la section et la qualité du produit, la température de coupe, la vitesse de ligne, les positions des lames et les quantités.",
+    rfqPlaceholder:
+      "Envoyez le modèle de broyeur/cisaille, les dessins des couteaux, la section et la qualité du produit, la température de coupe, la vitesse de ligne, les positions des lames et les quantités.",
+    relatedBladeIds: [
+      "guillotine-shear-blades",
+      "stationary-scrap-shear-blades",
+    ],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Les corps et profils de cisaille volante sont spécifiques au broyeur et au mécanisme de cisaille. Les dimensions standard complètes du corps ne sont pas disponibles pour une configuration universelle ; fournir le dessin original ou un échantillon coté.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Échantillons de couteaux de coupe et de cisailles volantes avec corps étagés et trous de montage",
+      sizeRange: "Fait au dessin",
+      heroSpecs: [
         {
-          question:
-            "De quoi avez-vous besoin pour chiffrer un couteau inférieur ?",
-          answer:
-            "Diamètre extérieur, alésage et épaisseur du couteau que vous utilisez aujourd'hui, la spécification du couteau supérieur associé, ce que vous refendez, la vitesse de ligne et le nombre de coupes. Si l'un de ces éléments est inconnu, envoyez le couteau usé ou des photographies avec un pied à coulisse dans le cadre — nous préférons faire de la rétro-ingénierie à partir d'un échantillon plutôt que de chiffrer sur une hypothèse.",
+          label: "Matériau",
+          value: "Acier à outils pour travail à chaud/fortement allié",
         },
         {
-          question:
-            "Fournissez-vous pour des marques d'enrouleuse absentes de cette page ?",
-          answer:
-            "Oui. Les plateformes listées sont celles que nous voyons le plus souvent, non une limite — les couteaux inférieurs sont fabriqués pour la machine dans tous les cas. Toute refendeuse-enrouleuse électrique entre dans le périmètre dès que nous disposons des cotes de montage et de la spécification du couteau supérieur associé.",
-        },
-        {
-          question: "Comment sont-ils emballés ?",
-          answer:
-            "Individuellement, arête protégée et papier VCI contre la corrosion, en caisse ajustée pour les grands diamètres. Un couteau inférieur qui arrive avec une arête entaillée est inutilisable quelle que soit sa fabrication : l'emballage est donc spécifié pour le transport, pas pour l'étagère.",
+          label: "Application",
+          value:
+            "Coupe tête/queue et coupes de division sur cisailles volantes de laminoir",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "Fait au dessin",
+        },
+        {
+          label: "Géométrie de la lame",
+          value:
+            "Arêtes de coupe droites ou profilées ; corps de couteaux étagés",
+        },
+        {
+          label: "Options matérielles",
+          value:
+            "Acier à outils pour travail à chaud ou acier à outils fortement allié",
+        },
+        {
+          label: "Service de coupe",
+          value:
+            "Configurations de coupe à chaud, de coupe à froid ou de coupe à barre trempée",
+        },
+        {
+          label: "Application",
+          value:
+            "Coupe tête/queue et coupes de division sur cisailles volantes de laminoir",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Envoyez le modèle de broyeur/cisaille, les dessins des couteaux, la section et la qualité du produit, la température de coupe, la vitesse de ligne, les positions des lames et les quantités.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+  },
+  {
+    id: "paper-sheeter-knives",
+    name: "Couteaux de coupe en feuilles du papier",
+    fullName:
+      "Couteaux de coupe transversale pour coupeuses de papier en feuilles",
+    seoTitle:
+      "Couteaux pour coupeuses de papier en feuilles | Lames de rechange sur mesure",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay: "Couteaux de coupe en feuilles du papier",
+    image: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 680,
+      height: 1208,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Laminoir de papier de remplacement personnalisé et couteaux à coupe transversale. Bords en acier HSS , PM ou carbure pour bandes de papier et carton, réalisés selon votre profil de montage.",
+    link: "/products/paper-sheeter-knives",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "2230–2285 mm",
+      },
+      {
+        label: "Configurations de référence",
+        value:
+          "Corps de couteaux de la série Jagenberg Synchro répertoriés ci-dessous",
+      },
+      {
+        label: "Disposition des couteaux",
+        value: "Installation radiale ou tangentielle",
+      },
+      {
+        label: "Options matérielles",
+        value:
+          "Constructions HSS , en acier de métallurgie des poudres ou en carbure",
+      },
+      {
+        label: "Application",
+        value:
+          "Coupe transversale de bandes continues de papier et de carton en feuilles",
+      },
+    ],
+    compatibleMachines: ["Jagenberg", "Bielomatik", "E.C.H. Will", "Pasaban"],
+    compatibleMachinesIntro:
+      "Obtenez des couteaux de rechange pour coupe-papier avec des longueurs personnalisées, des profils de serrage et une géométrie de pointe pour votre machine. Sureay propose des options HSS , acier de métallurgie des poudres et pointes en carbure pour la coupe transversale du papier et du carton ; envoyez votre dessin pour un devis. Les marques de machines sont des références de compatibilité pour les pièces de rechange Sureay .",
+    components: [
+      {
+        id: "paper-sheeter-knives-1",
+        tag: "Mission transversale",
+        title: "Options en acier HSS , PM et à pointe en carbure",
+        description:
+          "Sureay propose ces choix de matériaux pour la coupe transversale de bandes de papier et de carton, permettant de spécifier la construction du couteau en fonction du stock, des tâches de production et du processus de maintenance existant.",
+      },
+      {
+        id: "paper-sheeter-knives-2",
+        tag: "Installation",
+        title: "Configurations de couteaux radiaux et tangentiels",
+        description:
+          "Des couteaux de remplacement sont disponibles pour les dispositions radiales et tangentielles, avec des profils de corps et des caractéristiques de serrage conçus pour le cylindre de coupe installé.",
+      },
+      {
+        id: "paper-sheeter-knives-3",
+        tag: "Finition des bords",
+        title: "Couteaux longs faits sur dessin",
+        description:
+          "Les longueurs répertoriées des couteaux à coupe transversale du papier s'étendent de 2 230 à 2 285 mm. Sureay réalise la section transversale complète, le profil de serrage, le bord de travail et la finition selon le dessin pour les couteaux de remplacement sur les cylindres de coupe existants.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "Quel coupe-papier de rechange convient à ma machine ?",
+          answer:
+            "Identifiez le modèle et la version du laminoir, la position du couteau et le dessin de montage. Faites correspondre la section transversale complète, les surfaces de serrage, le profil de coupe et l'orientation installée. Le couteau d'accouplement fait également partie de l'arrangement. Utilisez ces détails avec la référence de la pièce d'origine pour sélectionner la configuration de remplacement requise.",
+        },
+        {
+          question:
+            "En quoi les couteaux coupe-papier sont-ils différents des couteaux à découper et à guillotine ?",
+          answer:
+            "Un couteau laminoir coupe une bande de papier ou de carton en mouvement pour créer des feuilles. Un couteau de découpe coupe dans le sens de la longueur le long de la bande et un couteau à guillotine coupe une pile serrée. Pour l'opération dans le sens de la longueur, voir [Paper Slitter Knives](/products/rotary-slitter-knives-paper) .",
+        },
+        {
+          question:
+            "Comment comparer les couteaux à tôle HSS , PM et carbure ?",
+          answer:
+            "Comparez les performances sur la même qualité de papier, la même disposition des bandes et les mêmes exigences de qualité de coupe. L'usure progressive des bords, l'écaillage et le processus d'affûtage disponible devraient guider l'évaluation du matériau. Conservez le profil de montage et de travail existant défini afin qu'un matériau alternatif puisse être évalué dans la configuration réelle du laminoir.",
+        },
+        {
+          question:
+            "Pourquoi un laminoir peut-il laisser une mauvaise coupe transversale même avec des couteaux neufs ?",
+          answer:
+            "L'ajustement entre les couteaux correspondants, leur géométrie de coupe, la finition rectifiée et l'état de la machine peuvent affecter la coupe. Un grammage plus élevé ou plusieurs bandes ensemble peuvent modifier la tâche de coupe. Comparez la géométrie et la configuration installées avec les exigences de la machine, et enregistrez le stock et les défauts avant de décider que le matériau du couteau doit être modifié.",
+        },
+        {
+          question:
+            "Que signifie l'installation d'un couteau radial ou tangentiel ?",
+          answer:
+            "Les termes décrivent la position du couteau par rapport au cylindre de coupe. Chaque agencement a son propre profil de corps, sa propre position de serrage et de bord de travail. Le remplacement doit reproduire la conception installée, y compris la relation des couteaux d'accouplement. La longueur et l'épaisseur totales ne constituent qu'une partie des informations requises pour identifier cet arrangement.",
+        },
+        {
+          question:
+            "Les tailles indiquées conviennent-elles à toutes les laminoirs Jagenberg Synchro ?",
+          answer:
+            "Non. Les machines Jagenberg Synchro peuvent utiliser différents corps de couteaux et dispositifs de serrage selon la version. Utilisez le numéro d'article indiqué comme référence et comparez la section transversale complète et les faces de serrage avec le dessin de votre couteau installé.",
+        },
+        {
+          question:
+            "Quelles exigences géométriques sont importantes lors de la commande de couteaux à laminoirs longs ?",
+          answer:
+            "Rectitude de coupe, parallélisme des faces, épaisseur et finition du biseau décrivent différents aspects du couteau. Indiquer leurs valeurs requises et les données de mesure sur le dessin d'exécution. Ces exigences permettent d'évaluer le couteau fini de manière cohérente et contribuent à préserver la relation prévue entre ses surfaces de serrage et son bord de travail.",
+        },
+        {
+          question:
+            "De quoi avez-vous besoin pour proposer un coupe-papier radial ou tangentiel ?",
+          answer:
+            "Fournissez le modèle et la version du laminoir, les dessins de montage et de couteau, la qualité du papier ou du carton et la quantité. Étiquetez l'installation radiale ou tangentielle, les surfaces de serrage et la position d'accouplement. Incluez les références du bord de travail et les exigences de finition si elles sont définies sur votre dessin.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envoyez le modèle de laminoir, les dessins des couteaux et des pinces, la disposition radiale/tangentielle, la qualité du stock, les conditions de la bande et les quantités.",
+    rfqPlaceholder:
+      "Envoyez le modèle de laminoir, les dessins des couteaux et des pinces, la disposition radiale/tangentielle, la qualité du stock, les conditions de la bande et les quantités.",
+    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Les dimensions de référence suivent les configurations historiques des laminoirs IKS Klingelnberg. Ils n'identifient pas chaque version Synchro et ne spécifient pas le profil de serrage complet. Confirmez le modèle, la disposition d'installation et le dessin original du couteau avant de commander.",
+    },
+    detailLayout: {
+      heroAlt: "Long coupe-papier avec trous de montage fraisés",
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-sheeter-knives-detail.webp",
+        alt: "Coupe-papier sur supports d'atelier montrant les trous de montage et les détails des bords",
+      },
+      sizeRange: "2230–2285 mm",
+      heroSpecs: [
+        {
+          label: "Matériau",
+          value: "Acier HSS / PM / à pointe carbure",
+        },
+        {
+          label: "Application",
+          value:
+            "Coupe transversale de bandes continues de papier et de carton en feuilles",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "2230–2285 mm",
+        },
+        {
+          label: "Configurations de référence",
+          value:
+            "Corps de couteaux de la série Jagenberg Synchro répertoriés ci-dessous",
+        },
+        {
+          label: "Disposition des couteaux",
+          value: "Installation radiale ou tangentielle",
+        },
+        {
+          label: "Options matérielles",
+          value:
+            "Constructions HSS , en acier de métallurgie des poudres ou en carbure",
+        },
+        {
+          label: "Application",
+          value:
+            "Coupe transversale de bandes continues de papier et de carton en feuilles",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Configuration de référence",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+          ],
+          rows: [
+            ["SR004101", "Jagenberg Synchro · radiale", "2285", "55", "10"],
+            ["SR004102", "Jagenberg Synchro · radiale", "2285", "32", "10"],
+            [
+              "SR004103",
+              "Jagenberg Synchro · radial / conique",
+              "2230",
+              "60",
+              "9.5",
+            ],
+            [
+              "SR004104",
+              "Jagenberg Synchro · radial / conique",
+              "2230",
+              "35",
+              "10",
+            ],
+            ["SR004105", "Jagenberg Synchro · tangentiel", "2285", "40", "12"],
+            ["SR004106", "Jagenberg Synchro · tangentiel", "2285", "38", "12"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Envoyez le modèle de laminoir, les dessins des couteaux et des pinces, la disposition radiale/tangentielle, la qualité du stock, les conditions de la bande et les quantités.",
+        buttonLabel: "Demander un devis",
+      },
+    },
+  },
+  {
+    id: "saddle-stitcher-trimmer-knives",
+    name: "Lames de massicot trilatéral pour encarteuses-piqueuses",
+    fullName: "Lames de massicot trilatéral pour encarteuses-piqueuses",
+    seoTitle: "Lames de coupe trilatérale pour brochures piquées à cheval",
+    seoDescription:
+      "Remplacez les couteaux avant ou latéraux sur les lignes d'agrafage à cheval pour les livrets et les magazines. Voir les tailles de référence DS 304 / Tempo et les options HSS ou à pointe en carbure.",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay: "Lames de massicot trilatéral pour encarteuses-piqueuses",
+    image:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 559,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Couteaux de coupe-piqueuse à cheval de rechange pour livrets et magazines. Couteaux frontaux, latéraux, supérieurs et inférieurs en version acier à outils, HSS ou carbure.",
+    link: "/products/saddle-stitcher-trimmer-knives",
+    specs: [
+      {
+        label: "Dimensions",
+        value: "280–400 mm",
+      },
+      {
+        label: "Configurations de référence",
+        value:
+          "Positions des couteaux Müller Martini DS 304 / Tempo répertoriées ci-dessous",
+      },
+      {
+        label: "Positions des couteaux",
+        value:
+          "Avant supérieur, côté supérieur, avant inférieur et côté inférieur ; couteaux à gauche et à droite",
+      },
+      {
+        label: "Options matérielles",
+        value: "Tranchants en acier à outils, HSS ou carbure",
+      },
+      {
+        label: "Application",
+        value: "Découpage de livrets, brochures et magazines cousus",
+      },
+    ],
+    compatibleMachines: ["Müller Martini", "Heidelberg", "Horizon"],
+    compatibleMachinesIntro:
+      "Sureay fournit les lames frontales, latérales, supérieures et inférieures du massicot de votre encarteuse-piqueuse. Elles peuvent être commandées à l’unité ou avec un profil sur mesure, en acier à outils, en acier rapide (HSS) ou avec tranchant en carbure. Pour un devis adapté à votre ligne de piqûre, indiquez la position de chaque lame sur les plans. Les marques citées indiquent la compatibilité des pièces de rechange Sureay.",
+    components: [
+      {
+        id: "saddle-stitcher-trimmer-knives-1",
+        tag: "Assortiment de couteaux",
+        title: "Acier à outils, bords HSS et carbure",
+        description:
+          "Les options de matériaux pour le découpage des livrets et des magazines permettent aux commandes de remplacement de refléter le stock de papier, les tâches de coupe et l'usure des bords de la ligne existante.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-2",
+        tag: "Finition du livret",
+        title:
+          "Positions des couteaux avant, latéraux, supérieurs et inférieurs",
+        description:
+          "Les longueurs de couteaux répertoriées vont de 280 à 400 mm. Sureay fournit des positions avant et latérales dans des configurations supérieure, inférieure, gauche et droite afin que les acheteurs puissent commander les pièces nécessaires à leur tondeuse.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-3",
+        tag: "Configurations spéciales",
+        title: "Profils personnalisés pour les lignes de couture existantes",
+        description:
+          "Les corps, biseaux et trous de montage définis par le dessin permettent le remplacement des couteaux existants, avec des profils spéciaux spécifiés avec leurs pièces d'accouplement et leur orientation installée.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Comment identifier les couteaux de remplacement pour une ligne de piqûre à cheval ?",
+          answer:
+            "Identifiez la version de l'agrafeuse et du massicot, puis spécifiez l'avant ou le côté, le haut ou le bas, et la gauche ou la droite, le cas échéant. La référence originale et le dessin de montage distinguent les positions. Incluez la direction du biseau et l'orientation installée afin que le remplacement suive la disposition réelle des couteaux utilisée pour vos livrets ou magazines.",
+        },
+        {
+          question: "Puis-je remplacer un seul couteau latéral endommagé ?",
+          answer:
+            "Oui. Un couteau latéral peut être fourni séparément lorsque sa position et son montage sont identifiés. Inspectez le couteau d'accouplement retenu et enregistrez ses dimensions et son historique de réaffûtage. Utilisez la référence de pièce gauche ou droite avec la position supérieure ou inférieure, car ces caractéristiques déterminent quel remplacement est requis.",
+        },
+        {
+          question:
+            "Comment choisir le matériau des couteaux pour les livrets couchés ?",
+          answer:
+            "Comparez l'usure des bords existante avec le revêtement du papier, l'épaisseur du livret et les exigences de production. L’abrasion progressive et l’écaillage des bords nécessitent des considérations matérielles différentes. Le processus de meulage disponible affecte également le choix de la construction en acier à outils, HSS ou en carbure. Conservez le biseau et la géométrie de montage spécifiés avec les exigences en matière de matériau.",
+        },
+        {
+          question:
+            "Les couteaux répertoriés couvrent-ils toutes les configurations Müller Martini DS 304 / Tempo ?",
+          answer:
+            "Les entrées de numéro d'article répertoriées couvrent les positions et dimensions spécifiques des couteaux Müller Martini DS 304 / Tempo. Comparez la version et la référence de la pièce d'origine du couteau supérieur avant, supérieur latéral, inférieur avant ou inférieur latéral avec le schéma de montage complet.",
+        },
+        {
+          question:
+            "Quand faut-il remplacer un couteau de piqueuse-piqueuse plutôt que de le réaffûter ?",
+          answer:
+            "La hauteur restante du couteau et, pour les couteaux incrustés ou à pointe, le matériau de coupe utilisable déterminent si la géométrie de travail peut être restaurée. Utilisez la limite d'usure pour cette construction de couteau et les limites de réglage de la tondeuse. Les couteaux supérieurs et inférieurs peuvent différer dans leur construction, alors évaluez chaque position séparément pour décider quelles pièces doivent être remplacées.",
+        },
+        {
+          question:
+            "Les couteaux de l'encarteuse-piqueuse sont-ils également appelés lames de coupe à trois couteaux ?",
+          answer:
+            "Parfois. Les termes se chevauchent lorsqu’une ligne de piqûre à cheval coupe trois côtés d’un livret. Identifiez la piqueuse et la position exacte supérieure, inférieure, avant ou latérale lors de la commande. Pour connaître les jeux de trois couteaux séparés utilisés sur les blocs de livres reliés, voir [Lames de coupe à trois couteaux](/products/three-knife-trimmer-blades) .",
+        },
+        {
+          question:
+            "Que dois-je envoyer pour un devis de couteau de coupe-piqueuse à cheval ?",
+          answer:
+            "Envoyez le modèle de piqueuse et de coupe-bordures, le stock du livret, les numéros de pièces ou dessins d'origine et les quantités. Étiquetez en haut ou en bas, sur le devant ou sur le côté et à gauche ou à droite le cas échéant. Pour un agencement de séparateur ou de phase en V, incluez le profil réel et le dessin du couteau correspondant.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envoyez le modèle de la piqueuse à cheval/découpeuse, la version, les dessins du couteau étiquetés, l'épaisseur du stock et du livret, ainsi que les quantités.",
+    rfqPlaceholder:
+      "Envoyez le modèle de la piqueuse à cheval/découpeuse, la version, les dessins du couteau étiquetés, l'épaisseur du stock et du livret, ainsi que les quantités.",
+    relatedBladeIds: ["three-knife-trimmer-blades", "paper-cutting-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Les dimensions de référence DS 304 / Tempo suivent le catalogue des couteaux à papier DIENES , page 34. Les couteaux supérieurs gauche et droit ont des entrées de numéro d'article séparées même lorsque leurs dimensions extérieures correspondent. Confirmez le modèle de trou complet et le dessin du couteau ; d'autres versions de machine sont réalisées selon le dessin.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Ensemble de couteaux de coupe-piqueuse à cheval montrant des lames droites et profilées avec des trous de montage",
+      specificationImage: {
+        src: "/images/products/shear-detail/saddle-stitcher-trimmer-knives-detail.webp",
+        alt: "Trois couteaux de coupe sur une surface d'atelier montrant des biseaux de coupe et des trous de montage",
+      },
+      sizeRange: "280–400 mm",
+      heroSpecs: [
+        {
+          label: "Matériau",
+          value: "Acier à outils / HSS / à pointe carbure",
+        },
+        {
+          label: "Application",
+          value: "Découpage de livrets, brochures et magazines cousus",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Dimensions",
+          value: "280–400 mm",
+        },
+        {
+          label: "Configurations de référence",
+          value:
+            "Positions des couteaux Müller Martini DS 304 / Tempo répertoriées ci-dessous",
+        },
+        {
+          label: "Positions des couteaux",
+          value:
+            "Avant supérieur, côté supérieur, avant inférieur et côté inférieur ; couteaux à gauche et à droite",
+        },
+        {
+          label: "Options matérielles",
+          value: "Tranchants en acier à outils, HSS ou carbure",
+        },
+        {
+          label: "Application",
+          value: "Découpage de livrets, brochures et magazines cousus",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensions standards",
+          title: "Dimensions standards communes",
+          columns: [
+            "Référence",
+            "Machine / poste",
+            "Longueur (mm)",
+            "Largeur (mm)",
+            "Épaisseur (mm)",
+          ],
+          rows: [
+            ["SR004201", "DS 304 / Tempo · supérieur avant", "390", "60", "8"],
+            [
+              "SR004202",
+              "DS 304 / Tempo · côté supérieur droit",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004203",
+              "DS 304 / Tempo · côté supérieur gauche",
+              "280",
+              "60",
+              "8",
+            ],
+            ["SR004204", "DS 304 / Tempo · avant inférieur", "400", "40", "15"],
+            ["SR004205", "DS 304 / Tempo · côté inférieur", "295", "32", "15"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Demandez un devis pour votre configuration de couteau",
+        description:
+          "Envoyez le modèle de la piqueuse à cheval/découpeuse, la version, les dessins du couteau étiquetés, l'épaisseur du stock et du livret, ainsi que les quantités.",
+        buttonLabel: "Demander un devis",
+      },
     },
   },
   {
     id: "box-slotting-knives",
-    name: "Couteaux à Rainurer pour Boîtes",
+    name: "Couteaux de rainurage en V pour carton gris",
     fullName:
-      "Couteaux à rainurer en carbure de précision pour boîtes rigides et coffrets cadeaux",
+      "Couteaux de précision en carbure pour rainurer en V le carton gris des boîtes rigides et des coffrets cadeaux",
+    seoTitle: "Couteaux en carbure pour rainurage en V du carton gris",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Couteaux Emballage et Carton",
     image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Paires Gauche / Droite",
-    badgeColor: "teal",
-    gallery: [
-      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Six couteaux à rainurer en carbure disposés en éventail montrant la plage de longueurs et de largeurs de stock",
-      "Paire de couteaux à rainurer en carbure montrant le biseau de rainurage rectifié",
-      "Couteaux à rainurer dans des étuis de protection étiquetés à côté de deux couteaux libres",
-    ],
     description:
-      "Couteaux à rainurer en carbure pour le rainurage en V du carton gris sur lignes de boîtes rigides et de coffrets cadeaux. Livrés en paires gauche et droite en cinq tailles de stock, de 50 × 12 mm à 60 × 15 mm, épaisseur 2,0 / 2,2 mm, en nuances carbure GS05U (optimisée à l'usure) et GS20U (tenace). Rainures nettes sans déchirer ni effilocher la face du carton, réglables à l'épaisseur du support.",
-    fullDescription:
-      "Une boîte rigide ne vaut que ce que vaut sa rainure. La rainure en V pratiquée dans le carton gris détermine la manière dont le carton plie, et une rainure qui déchire ou effiloche la couche de surface transparaît à travers l'habillage comme un défaut visible sur un produit acheté précisément parce qu'il paraît coûteux. Sur les coffrets cadeaux et de luxe, il n'existe aucune tolérance acceptable pour une rainure irrégulière.\n\nLes couteaux à rainurer Sureay sont rectifiés dans un carbure de tungstène de haute qualité et livrés en paires appariées gauche et droite, parce que c'est ainsi qu'ils coupent. Les deux couteaux forment ensemble les parois de la rainure ; faire travailler un couteau neuf contre un couteau usé produit une rainure asymétrique qui plie hors d'équerre, et c'est pourquoi nous les chiffrons et les expédions par paires et non à l'unité.\n\n## Deux nuances, une décision\n\nGS05U est la nuance la plus dure, optimisée à l'usure, et le bon choix pour du carton gris standard sur longs tirages. GS20U échange une part de dureté contre de la ténacité et convient au carton épais et au carton recyclé porteur d'inclusions — la même distinction que l'on retrouve dans toute application du carbure, exprimée ici en termes de carton. Choisir GS05U pour du carton recyclé chargé d'impuretés est la façon la plus courante d'ébrécher ces couteaux.\n\n## Réglable à l'épaisseur du carton\n\nL'écartement des couteaux se règle sur le carton traité, de sorte qu'une seule paire couvre une plage d'épaisseurs au lieu d'être figée sur une valeur unique. En pratique, une ligne de boîtes rigides qui alterne entre carton gris de 1,5 mm et de 3 mm se règle au lieu de changer d'outillage, à condition que la largeur de rainure reste dans la plage.\n\n## Applications\n\nRainurage en V du carton gris sur lignes de boîtes rigides et de coffrets cadeaux : emballage de luxe, coffrets cosmétiques et spiritueux, étuis de présentation, carton de couverture pour reliure rigide et cartonnage rigide standard.\n\n## Pourquoi nous chiffrons par paires\n\nLes deux couteaux forment ensemble les parois de la rainure : ils sont donc rectifiés, appariés et expédiés en paire, et doivent être changés ensemble. Faire travailler un couteau neuf contre un couteau usé taille une rainure asymétrique, et une rainure asymétrique plie hors d'équerre — un défaut qui transparaît à travers l'habillage précisément sur les produits qui peuvent le moins se le permettre. Remplacer un seul couteau relève en outre généralement d'un diagnostic manqué : la défaillance précoce d'un couteau isolé signifie normalement un choc sur une inclusion ou un défaut de réglage, et les deux se reproduiront sur le couteau de remplacement. Indiquez-nous combien de postes de rainurage compte la ligne et combien de paires vous consommez sur un mois type, et nous chiffrerons un échéancier plutôt qu'une quantité ponctuelle, car la plupart des lignes de boîtes rigides sont mieux servies par une commande ouverte que par une commande passée quand la dernière paire lâche.\n\n## GS05U ou GS20U — décidez selon le carton, pas selon la longueur du tirage\n\nGS05U est plus dure et s'use plus lentement, ce qui la rend adaptée au carton gris vierge et propre. GS20U échange de la dureté contre de la ténacité et survit aux inclusions, ce qui la rend adaptée au carton épais et au support recyclé. Les modes de défaillance diffèrent et c'est là toute la décision : un couteau usé est réaffûté et remis en service, un couteau ébréché est mis au rebut. Si votre mélange de carton comporte du recyclé, même partiellement, GS20U revient généralement moins cher sur une année, alors même qu'elle mesure une dureté inférieure et montre une durée d'arête plus courte lors d'un essai sur carton propre. Choisir la nuance la plus dure disponible pour du carton contaminé est la façon la plus courante de détruire ces couteaux.\n\n## Rainures qui s'effilochent : arête ou réglage ?\n\nUne paroi de rainure effilochée est la signature d'une arête qui a cessé de sectionner la fibre et s'est mise à la pousser. Vérifiez d'abord les arêtes. Si elles sont encore vives, examinez l'écartement des couteaux par rapport à l'épaisseur du carton : trop ouvert, le carton est déchiré au lieu d'être coupé ; trop serré, la face est écrasée. La chronologie distingue les deux causes de façon fiable : les problèmes de réglage apparaissent immédiatement après un changement, les problèmes d'arête apparaissent progressivement au fil d'un tirage. Comme l'écartement se règle sur le carton au lieu d'être figé, une seule paire couvre une plage d'épaisseurs : une ligne qui alterne entre carton gris de 1,5 mm et de 3 mm se règle au lieu de changer d'outillage, tant que la largeur de rainure reste dans la plage.\n\n## Tailles et machines hors de la liste\n\nLes cinq tailles de stock sont les plus demandées, non une limite — longueurs, largeurs et géométrie d'arête sont fabriquées sur plan, et toute ligne de rainurage en V du carton gris ou de rainurage de boîtes rigides entre dans le périmètre dès que nous disposons de la géométrie du couteau. Si vous n'avez pas de plan, envoyez un couteau usé ou des photographies avec un pied à coulisse dans le cadre et nous vous retournerons un plan coté pour approbation avant fabrication. Nous préférons travailler d'après votre outillage réel plutôt que d'après une allégation de compatibilité. Les tailles de stock expédient généralement sous quelques jours ouvrés ; les géométries sur plan demandent 15 à 25 jours ouvrés à compter de l'approbation du plan, et les commandes répétées sur plan approuvé sont chiffrées le jour même.",
+      "Couteaux à rainurer en carbure pour rainures en V sur panneaux gris sur les lignes de boîtes rigides et cadeaux. Paires gauche et droite assorties en GS05U et GS20U , avec cinq tailles répertoriées.",
     link: "/products/box-slotting-knives",
     specs: [
       {
         label: "Matériau",
-        value: "Carbure de tungstène de haute qualité",
+        value: "carbure de tungstène",
       },
       {
         label: "Nuances",
-        value: "GS05U (usure) / GS20U (ténacité)",
+        value: "GS05U ou GS20U",
       },
       {
         label: "Longueur",
@@ -6799,7 +10435,7 @@ export const blades: Blade[] = [
       },
       {
         label: "Épaisseur",
-        value: "2,0 / 2,2 mm",
+        value: "2.0 / 2.2 mm",
       },
       {
         label: "Conditionnement",
@@ -6813,10 +10449,8 @@ export const blades: Blade[] = [
     ],
     dimensionLabels: {
       col0: "Réf.",
-      col1: "L × l (mm)",
-      col2: "Épaisseur T (mm)",
-      caption:
-        "* Cinq tailles de stock, livrées en paires gauche et droite. Autres longueurs, largeurs et géométries d'arête fabriquées sur plan ou par rétro-ingénierie à partir d'un couteau usé.",
+      col1: "L × W (mm)",
+      col2: "Épaisseur (mm)",
     },
     standardDimensions: [
       {
@@ -6845,311 +10479,70 @@ export const blades: Blade[] = [
         id: "2 / 2.2",
       },
     ],
-    steelGrades: {
-      intro:
-        "Sur les couteaux à rainurer, la décision de nuance oppose usure et ténacité, et c'est le carton qui indique laquelle vous convient. Le carton gris vierge et propre use une arête ; le carton recyclé porteur d'inclusions l'ébrèche.",
-      rows: [
-        {
-          grade: "GS05U",
-          hardness: "Dureté supérieure, optimisée à l'usure",
-          bestFor:
-            "Carton gris vierge standard sur longs tirages de production — la nuance par défaut",
-          tradeoff:
-            "Moins tolérante aux inclusions ; s'ébrèche au lieu de s'user si le carton est contaminé",
-        },
-        {
-          grade: "GS20U",
-          hardness: "Ténacité supérieure",
-          bestFor:
-            "Carton épais et carton recyclé porteur d'impuretés ou d'autres inclusions",
-          tradeoff: "Durée d'arête plus courte que GS05U sur carton propre",
-        },
-      ],
-      outro:
-        "Si votre mélange de carton comporte du recyclé, même partiellement, GS20U l'emporte généralement en coût total même si elle perd en durée d'arête : un couteau ébréché est mis au rebut, un couteau usé est réaffûté.",
-    },
     components: [
       {
         id: "matched-pairs",
-        tag: "FORMAT DE LIVRAISON",
-        title: "Gauche et droite livrés en paire",
+        tag: "Format de fourniture",
+        title: "Paires appariées gauche et droite",
         description:
-          "Les deux couteaux forment ensemble les parois de la rainure : ils sont rectifiés, appariés et expédiés en paire. Faire travailler un couteau neuf contre un couteau usé produit une rainure asymétrique qui plie hors d'équerre — un défaut qui transparaît à travers l'habillage sur exactement les produits qui peuvent le moins se le permettre.",
+          "Commandez les deux couteaux ensemble afin que chaque côté de la rainure en V puisse être spécifié avec son tranchant correspondant.",
       },
       {
-        id: "clean-groove-edge",
-        tag: "QUALITÉ DE SURFACE",
-        title: "Des rainures qui ne déchirent pas la face",
+        id: "carbide-grades",
+        tag: "Options matérielles",
+        title: "Options de carbure GS05U et GS20U",
         description:
-          "La géométrie d'arête est rectifiée pour sectionner la fibre du carton gris au lieu de la pousser, de sorte que les parois de la rainure restent nettes et que la couche de surface ne s'effiloche pas. Sur les boîtes rigides et les coffrets cadeaux, la rainure fait la différence entre un pli qui paraît usiné et un pli qui paraît abîmé.",
+          "Choisissez une nuance orientée usure ou orientée ténacité en fonction de la planche et de l'usure de vos couteaux existants.",
       },
       {
-        id: "adjustable-gap",
-        tag: "SOUPLESSE DE PROCÉDÉ",
-        title: "Réglable à l'épaisseur du carton",
+        id: "drawing-based-pairs",
+        tag: "Dimensions personnalisées",
+        title: "Paires de remplacement réalisées selon le dessin",
         description:
-          "L'écartement des couteaux se règle sur le carton traité, de sorte qu'une seule paire couvre une plage d'épaisseurs au lieu d'être figée sur une valeur unique. Une ligne qui alterne entre carton gris de 1,5 mm et de 3 mm se règle au lieu de changer d'outillage, tant que la largeur de rainure reste dans la plage.",
+          "Spécifiez le corps du couteau, le biseau et la main de coupe pour votre station de rainurage en V existante. Cinq tailles de référence donnent aux acheteurs un point de départ pour des commandes répétées.",
       },
     ],
-    relatedBladeIds: [
-      "corrugated-slitter-scorer-blades",
-      "tungsten-carbide-slitter-knives",
-      "paper-straw-slitting-blades",
-    ],
-    rfqPlaceholder:
-      "Exemple : ligne de rainurage en V pour boîtes rigides, couteaux 50 × 15 × 2,2 mm gauche et droite. Carton gris de 2 mm, en partie recyclé. Largeur de rainure 2 mm. Besoin de 10 paires et d'une recommandation de nuance.",
+    relatedBladeIds: ["corrugated-slotter-knives"],
+    quoteRequirements:
+      "Envoyez le modèle de votre machine, le dessin ou l'échantillon du couteau, l'épaisseur du panneau gris et le nombre de paires dont vous avez besoin.",
     faqs: {
       technical: [
         {
-          question:
-            "Puis-je remplacer un seul couteau de la paire lorsqu'un seul est usé ?",
+          question: "A quoi sert un couteau à rainurer en V à boîte rigide ?",
           answer:
-            "Vous le pouvez, mais c'est généralement une fausse économie. Les deux couteaux forment ensemble les parois de la rainure : un couteau neuf travaillant contre un couteau usé taille une rainure asymétrique et le carton plie hors d'équerre. Sur les boîtes rigides et les coffrets cadeaux, cela transparaît à travers l'habillage. Si un couteau de la paire a lâché prématurément, il vaut la peine d'en chercher la raison : une défaillance précoce isolée signifie normalement un choc sur une inclusion ou un problème de réglage, et les deux se reproduiront sur le couteau de remplacement.",
-        },
-        {
-          question: "GS05U ou GS20U — comment choisir ?",
-          answer:
-            "D'après ce que contient le carton, pas d'après la durée du tirage. GS05U est plus dure et s'use plus lentement, ce qui en fait la bonne nuance pour du carton gris vierge et propre. GS20U est plus tenace et survit aux inclusions, ce qui en fait la bonne nuance pour le carton épais et le support recyclé. Les modes de défaillance sont différents et c'est là toute la décision : un couteau usé est réaffûté et remis en service, un couteau ébréché est mis au rebut. Si votre mélange de carton comporte du recyclé, même partiellement, GS20U revient généralement moins cher sur une année.",
+            "Il découpe une rainure dans le carton gris afin que le tableau puisse se plier selon la ligne requise sur une boîte rigide ou un coffret cadeau. Pour les fentes à rabat dans les cartons ondulés, voir [Couteaux à rainurer en carton ondulé](/products/corrugated-slotter-knives) .",
         },
         {
           question:
-            "Mes rainures s'effilochent en surface. Est-ce le couteau ou le réglage ?",
+            "Les couteaux à rainurer en V sont-ils fournis par paires ?",
           answer:
-            "Vérifiez d'abord l'arête. Une paroi de rainure effilochée est la signature d'une arête qui a cessé de sectionner la fibre et s'est mise à la pousser — la même défaillance qui se manifeste par une coupe pelucheuse sur toute application carton. Si les arêtes sont encore vives, examinez l'écartement des couteaux par rapport à l'épaisseur du carton : trop ouvert, le carton est déchiré au lieu d'être coupé ; trop serré, la face est écrasée. Les problèmes de réglage apparaissent immédiatement après un changement, ceux d'arête progressivement.",
+            "Oui. Une paire appariée gauche et droite définit les deux parois de la rainure. Précisez les deux mains et l'orientation de votre machine.",
+        },
+        {
+          question: "Comment choisir entre GS05U et GS20U ?",
+          answer:
+            "GS05U est l'option orientée vers l'usure et GS20U est l'option orientée vers la ténacité. Comparez la composition de votre planche et si votre bord existant s'use doucement ou s'écaille.",
         },
         {
           question:
-            "Pouvez-vous fabriquer des longueurs autres que 50 et 60 mm ?",
+            "Les tailles répertoriées couvrent-elles les couteaux à rainure en V personnalisés ?",
           answer:
-            "Oui. Les tailles de stock sont les plus demandées, non une limite — longueurs, largeurs et géométrie d'arête sont fabriquées sur plan. Si vous ne disposez pas de plan, envoyez un couteau usé ou des photographies avec un pied à coulisse dans le cadre et nous établirons un plan coté pour votre approbation avant fabrication.",
+            "Le tableau répertorie cinq configurations de référence. Des longueurs, largeurs et biseaux personnalisés peuvent être spécifiés selon le dessin du porte-couteau installé.",
+        },
+        {
+          question:
+            "Que dois-je vérifier si la face du tableau gris s'effiloche ?",
+          answer:
+            "Vérifiez les bords émoussés ou ébréchés et confirmez le réglage du couteau en fonction de l'épaisseur de la planche. Un défaut apparaissant immédiatement après un changement de carte peut indiquer un problème de configuration.",
+        },
+        {
+          question:
+            "Que dois-je envoyer pour un devis de boîte de couteau à rainurer en V ?",
+          answer:
+            "Envoyez le modèle de la machine, le dessin du couteau ou l'échantillon et le nombre de paires. Incluez l'épaisseur de la planche et montrez les biseaux et les faces de montage pour les deux mains coupantes.",
         },
       ],
-      company: [
-        {
-          question: "Sont-ils chiffrés au couteau ou à la paire ?",
-          answer:
-            "À la paire, parce que c'est ainsi qu'ils coupent et qu'ils doivent être changés. Indiquez-nous combien de postes de rainurage compte la ligne et combien de paires vous consommez sur un mois type, et nous chiffrerons un échéancier plutôt qu'une quantité ponctuelle — la plupart des lignes de boîtes rigides sont mieux servies par une commande ouverte que par une commande passée quand la dernière paire lâche.",
-        },
-        {
-          question: "Pour quelles machines à rainurer fournissez-vous ?",
-          answer:
-            "Les couteaux sont fabriqués pour la machine : toute ligne de rainurage en V du carton gris ou de rainurage de boîtes rigides entre donc dans le périmètre dès que nous disposons de la géométrie du couteau. Envoyez la marque et le modèle de la machine ainsi que les dimensions des couteaux que vous utilisez aujourd'hui — ou un échantillon usé — et nous les reproduirons. Nous préférons travailler d'après votre outillage réel plutôt que d'après une allégation de compatibilité.",
-        },
-        {
-          question: "Quel est le délai de livraison ?",
-          answer:
-            "Les tailles de stock expédient généralement sous quelques jours ouvrés après confirmation de commande. Les géométries sur plan demandent 15 à 25 jours ouvrés à compter de l'approbation du plan. Les commandes répétées sur plan approuvé sont chiffrées le jour même, la géométrie restant archivée.",
-        },
-      ],
-    },
-  },
-  {
-    id: "paper-straw-slitting-blades",
-    name: "Lames de Coupe pour Pailles en Papier et Filtres",
-    fullName:
-      "Lames circulaires en carbure pour pailles en papier et bâtonnets filtres",
-    category: "slitter_knives",
-    sector: "converting",
-    categoryDisplay: "Couteaux de Refendage",
-    image:
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Revêtement Anti-adhérent",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
-    ],
-    galleryAlts: [
-      "Lame circulaire en carbure pour la coupe de pailles en papier et de bâtonnets filtres, face complète et alésage central",
-      "Paire de lames circulaires en carbure pour la coupe de pailles en papier, face et alésage central",
-      "Gros plan de la face polie miroir et de l'arête de coupe d'une lame pour pailles en papier",
-    ],
-    description:
-      "Lames circulaires en carbure anti-adhérentes pour la coupe de pailles en papier et de bâtonnets filtres. Diamètre extérieur Φ88–Φ100, épaisseur 0,15–0,30 mm, en six tailles de stock. Le revêtement anti-adhérent résiste à l'accumulation de colle en phase aqueuse, de sorte que la tranche reste d'équerre et sans effilochage sur de longs tirages, sur machines à pailles et à bâtonnets filtres à grande vitesse.",
-    fullDescription:
-      "Sur une ligne de pailles en papier, la lame ne tombe généralement pas en panne par usure. Elle tombe en panne parce qu'elle prend de la colle. L'adhésif en phase aqueuse se transfère sur la face de la lame, forme un bourrelet le long de l'arête de coupe et, à partir de là, la lame cesse de couper le tube et se met à l'entraîner — ce qui est exactement ce qu'est une extrémité de paille effilochée. Le tranchant n'est pas la variable qui règle cela.\n\nC'est pourquoi ces lames sont spécifiées autour du décollement de l'adhésif plutôt qu'autour de la seule dureté. Un substrat carbure tient l'arête ; le revêtement anti-adhérent garde la face propre pour que l'arête puisse continuer à travailler. Sur une ligne fonctionnant à la colle en phase aqueuse, le revêtement apporte davantage à la qualité de coupe qu'un point de dureté supplémentaire.\n\n## Les lignes de pailles ne sont pas des lignes de bâtonnets filtres\n\nLes deux applications partagent une ascendance de machines et une géométrie de lame, mais pas leurs conditions de défaillance. La coupe de bâtonnets filtres sur machines à tabac tourne à très grande vitesse sur un matériau homogène et bien caractérisé. Les lignes de pailles en papier sont plus récentes, traitent une gamme plus large de nombres de plis et de grammages, et utilisent des adhésifs qui varient d'un producteur à l'autre — de sorte que la durée de vie d'une lame sur une ligne de pailles est bien plus sensible à l'adhésif qu'au papier. Si vous mettez en service une nouvelle ligne de pailles, attendez-vous à ajuster la spécification de lame face à votre adhésif plutôt que face à votre papier.\n\n## Lames minces, conséquences réelles\n\nÀ 0,15 à 0,30 mm, ce sont des lames minces, et l'épaisseur est une décision de procédé. Une lame plus mince retire moins de matière et laisse une extrémité plus d'équerre sur un tube à paroi fine ; une lame plus épaisse est plus stable à vitesse et plus tolérante à une machine présentant du faux-rond. Se tromper ici se traduit soit par une extrémité irrégulière, soit par une lame qui fléchit et dérive.\n\n## Applications\n\nMachines d'enroulage et de coupe de pailles en papier ; machines à bâtonnets filtres pour cigarettes, y compris plateformes Hauni ; coupe de tubes et de mandrins en papier sur équipements de transformation à grande vitesse comparables.\n\n## Diagnostiquer une extrémité de paille effilochée\n\nSi les extrémités s'effilochent alors que l'arête paraît encore vive, la cause est presque toujours une prise d'adhésif et non l'usure. L'adhésif en phase aqueuse se transfère sur la face de la lame et forme un bourrelet le long de l'arête de coupe ; au-delà, la lame entraîne le tube au lieu de le sectionner, et un tube entraîné s'effiloche. L'arête en dessous peut être parfaitement utilisable. Essuyez la face et inspectez-la à la lumière avant de changer la lame : si le dépôt est visible, la réponse est un revêtement ou un intervalle de nettoyage, pas une lame plus affûtée. Traiter cela comme un problème de tranchant est la façon classique dont une ligne de pailles consomme des lames qu'elle n'avait pas besoin de remplacer.\n\n## L'épaisseur est un choix de procédé\n\nÀ 0,15 à 0,30 mm, l'épaisseur n'est pas une cote résiduelle. Une lame plus mince retire moins de matière et laisse une extrémité plus d'équerre sur des pailles à paroi fine et à faible nombre de plis, et c'est pourquoi c'est le choix sur les pailles haut de gamme. Une lame plus épaisse est plus rigide, tourne plus stablement à vitesse et tolère le faux-rond de broche, ce qui en fait l'option la plus sûre sur des machines anciennes ou sur du tube multiplis plus épais. Se tromper produit soit une extrémité irrégulière, soit une lame qui fléchit et dérive, et les deux défauts ne se ressemblent en rien — indiquez-nous le nombre de plis, le grammage et la machine et nous ferons une recommandation plutôt que de vous laisser deviner.\n\n## Héritage bâtonnet filtre, réalité de la paille\n\nBeaucoup de lignes de pailles ont été construites sur des machines à bâtonnets filtres, et la géométrie de lame est souvent interchangeable en cotes. Ce qui ne se transpose pas, c'est la logique de spécification. La coupe de bâtonnets filtres tourne à très grande vitesse sur un matériau homogène ; les lignes de pailles traitent des papiers variés et, surtout, des adhésifs variés. Une lame performante sur une machine Hauni à bâtonnets filtres peut s'encrasser en quelques heures sur une ligne de pailles utilisant une autre colle. Spécifiez face à l'adhésif, pas face à l'ascendance de la machine — l'adhésif est l'information la plus utile que vous puissiez nous donner sur cette application, et celle que la plupart des acheteurs omettent.\n\n## Revêtements, réaffûtage et mise en service d'une nouvelle ligne\n\nLe revêtement anti-adhérent est une couche de surface, et rectifier l'arête le retire précisément là où il compte : les lames revêtues de ce type sont donc menées jusqu'à la fin de leur vie puis remplacées, plutôt qu'intégrées à un cycle de réaffûtage. Si votre économie favorise le réaffûtage, nous chiffrerons du carbure non revêtu et vous accepterez un nettoyage de face plus fréquent en contrepartie. Sur une ligne encore en mise en service, la première étape utile est une petite quantité d'essai sur deux spécifications — typiquement une lame revêtue et une épaisseur différente — testées face à votre adhésif et à votre papier réels. Quinze jours de cela en disent plus que n'importe quelle comparaison de fiches techniques et fixent correctement dès le départ la spécification de la commande récurrente. Les tailles de stock expédient généralement sous quelques jours ouvrés ; les diamètres, alésages et épaisseurs sur mesure demandent 15 à 25 jours ouvrés à compter de l'approbation du plan, avec quelques jours supplémentaires pour le cycle de revêtement.",
-    link: "/products/paper-straw-slitting-blades",
-    introNote:
-      "La production de pailles en papier concentre aujourd'hui l'essentiel de la demande pour ces lames. Si votre ligne utilise un adhésif en phase aqueuse, indiquez-nous lequel : il prédit la durée de vie de la lame sur cette application mieux que la spécification du papier.",
-    compatibleMachines: ["Hauni"],
-    specs: [
-      {
-        label: "Matériau",
-        value: "Carbure de tungstène avec revêtement anti-adhérent",
-      },
-      {
-        label: "Diamètre extérieur",
-        value: "Φ88–Φ100 mm",
-      },
-      {
-        label: "Alésage",
-        value: "Φ15 / Φ16 / Φ45 mm",
-      },
-      {
-        label: "Épaisseur",
-        value: "0,15–0,30 mm",
-      },
-      {
-        label: "Rôle du revêtement",
-        value:
-          "Résiste à l'accumulation d'adhésif en phase aqueuse sur la face de la lame",
-      },
-      {
-        label: "Application",
-        value:
-          "Coupe de pailles en papier, coupe de bâtonnets filtres, coupe de tubes en papier",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Réf.",
-      col1: "DE ØD (mm)",
-      col2: "Alésage Ød (mm)",
-      col3: "Épaisseur T (mm)",
-      caption:
-        "* Six tailles de stock. Autres diamètres, alésages et épaisseurs fabriqués sur plan — transmettez le modèle de machine, le nombre de plis de la paille et le type d'adhésif et nous spécifierons la lame en conséquence.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ88",
-        id: "Φ16",
-        thickness: "0.26",
-      },
-      {
-        spec: "2",
-        od: "Φ89",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "3",
-        od: "Φ90",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "4",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.15",
-      },
-      {
-        spec: "5",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "6",
-        od: "Φ100",
-        id: "Φ45",
-        thickness: "0.20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Sur les travaux avec adhésif, la surface compte davantage que le substrat. Choisissez le revêtement selon l'adhésif que vous utilisez, puis choisissez le substrat selon le papier.",
-      rows: [
-        {
-          grade: "Carbure + revêtement anti-adhérent",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Lignes de pailles à adhésif en phase aqueuse et coupe de bâtonnets filtres — la spécification par défaut",
-          tradeoff:
-            "Prix unitaire plus élevé ; le revêtement est une couche consommable et ne survit pas à un réaffûtage",
-        },
-        {
-          grade: "Carbure non revêtu",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Applications sèches ou peu collantes, et coupe de tubes en papier sans adhésif au droit de la coupe",
-          tradeoff:
-            "Prend rapidement l'adhésif sur les lignes encollées ; la tranche s'effiloche bien avant que l'arête soit usée",
-        },
-        {
-          grade: "Acier à outils",
-          hardness: "60–63 HRC",
-          bestFor: "Essais, tirages courts et lignes lentes où le coût décide",
-          tradeoff:
-            "Perd l'arête rapidement aux vitesses des lignes de pailles ; non viable en production continue",
-        },
-      ],
-    },
-    components: [
-      {
-        id: "adhesive-release-coating",
-        tag: "TRAITEMENT DE SURFACE",
-        title:
-          "Revêtue pour le décollement de l'adhésif, pas seulement pour la dureté",
-        description:
-          "Sur les lignes à adhésif en phase aqueuse, la lame tombe en panne par prise de colle, pas par usure. Le revêtement anti-adhérent garde la face propre pour que l'arête continue de couper le tube au lieu de l'entraîner — c'est le mécanisme réel derrière une extrémité de paille sans effilochage.",
-      },
-      {
-        id: "thin-section-stability",
-        tag: "GÉOMÉTRIE DE LAME",
-        title: "0,15–0,30 mm, spécifié selon la coupe",
-        description:
-          "L'épaisseur est un choix de procédé, pas un reliquat. Les lames plus minces retirent moins de matière et laissent une extrémité plus d'équerre sur du tube à paroi fine ; les plus épaisses tournent plus stablement à vitesse et tolèrent le faux-rond machine. Nous la spécifions selon votre nombre de plis et votre machine plutôt que de retenir une valeur unique par défaut.",
-      },
-      {
-        id: "straw-line-tuning",
-        tag: "INGÉNIERIE D'APPLICATION",
-        title: "Ajustée à l'adhésif, pas seulement au papier",
-        description:
-          "Les lignes de pailles en papier varient bien plus par l'adhésif que par le papier, et la durée de vie de la lame suit l'adhésif. Indiquez-nous lequel vous utilisez et nous spécifierons revêtement et géométrie en conséquence — c'est l'information la plus utile que vous puissiez nous donner sur cette application.",
-      },
-    ],
-    relatedBladeIds: [
-      "tungsten-carbide-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "nonwoven-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Exemple : poste de coupe de pailles en papier, lame Φ100 × Φ15 × 0,20 mm. Paille trois plis, kraft 60 g/m², adhésif en phase aqueuse. Les lames s'encrassent au bout d'environ 6 heures et les extrémités de paille s'effilochent. Besoin de 50 pièces, revêtues.",
-    faqs: {
-      technical: [
-        {
-          question:
-            "Les extrémités de mes pailles s'effilochent mais l'arête de la lame paraît encore vive. Que se passe-t-il ?",
-          answer:
-            "Presque certainement une prise d'adhésif. L'adhésif en phase aqueuse se transfère sur la face de la lame et forme un bourrelet le long de l'arête de coupe ; au-delà, la lame entraîne le tube au lieu de le sectionner, et un tube entraîné s'effiloche. L'arête en dessous peut être parfaitement utilisable. Essuyez la face et inspectez-la à la lumière avant de changer la lame : si le dépôt est visible, la réponse est un revêtement ou un intervalle de nettoyage, pas une lame plus affûtée.",
-        },
-        {
-          question: "Dois-je utiliser 0,15 mm ou 0,30 mm ?",
-          answer:
-            "Cela dépend du tube et de la machine. Une lame plus mince retire moins de matière et donne une extrémité plus d'équerre sur des pailles à paroi fine et à faible nombre de plis, et c'est pourquoi c'est le choix sur les pailles haut de gamme. Une lame plus épaisse est plus rigide, tourne plus stablement à vitesse et tolère le faux-rond de broche, et c'est pourquoi c'est l'option la plus sûre sur des machines anciennes ou sur du tube multiplis plus épais. Indiquez-nous le nombre de plis, le grammage et la machine et nous ferons une recommandation plutôt que de vous laisser deviner.",
-        },
-        {
-          question: "Le revêtement survit-il au réaffûtage ?",
-          answer:
-            "Non. Le revêtement est une couche de surface, et rectifier l'arête le retire précisément là où il compte le plus. Sur les lames revêtues de ce type, l'approche pratique consiste à les mener jusqu'à la fin de leur vie et à les remplacer, plutôt qu'à construire un cycle de réaffûtage autour d'elles. Si votre économie favorise le réaffûtage, nous pouvons chiffrer du carbure non revêtu et vous accepterez un nettoyage de face plus fréquent en contrepartie.",
-        },
-        {
-          question:
-            "Les lames pour bâtonnets filtres et pour pailles en papier sont-elles interchangeables ?",
-          answer:
-            "En cotes, souvent oui — la filiation géométrique est la même et beaucoup de lignes de pailles ont été construites sur des machines à bâtonnets filtres. Ce qui ne se transpose pas, c'est la logique de spécification. La coupe de bâtonnets filtres tourne à très grande vitesse sur un matériau homogène ; les lignes de pailles traitent du papier varié et, surtout, de l'adhésif varié. Une lame performante sur une machine Hauni à bâtonnets filtres peut s'encrasser sur une ligne de pailles utilisant une autre colle. Spécifiez face à l'adhésif, pas face à l'ascendance de la machine.",
-        },
-      ],
-      company: [
-        {
-          question: "Quelles informations vous faut-il pour chiffrer ?",
-          answer:
-            "Diamètre extérieur, alésage et épaisseur ; le modèle de machine ; le nombre de plis de la paille et le grammage du papier ; le type d'adhésif ; et votre intervalle de changement actuel. L'adhésif est l'élément que la plupart des acheteurs omettent et celui qui prédit le mieux la durée de vie de la lame sur cette application : incluez-le même si vous n'êtes pas certain qu'il importe.",
-        },
-        {
-          question:
-            "Pouvez-vous fournir pour une ligne de pailles encore en mise en service ?",
-          answer:
-            "Oui, et il vaut la peine de nous associer tôt. Sur une ligne neuve, la première étape utile est une petite quantité d'essai sur deux spécifications — typiquement une lame revêtue et une épaisseur différente — testées face à votre adhésif et à votre papier réels. Cela en dit plus en quinze jours qu'une comparaison de fiches techniques, et fixe correctement dès le départ la spécification de la commande récurrente.",
-        },
-        {
-          question: "Quels sont les délais ?",
-          answer:
-            "Les tailles de stock expédient généralement sous quelques jours ouvrés. Les diamètres, alésages et épaisseurs sur mesure demandent 15 à 25 jours ouvrés à compter de l'approbation du plan. Les lames revêtues ajoutent quelques jours par rapport aux non revêtues pour le cycle de revêtement : tenez-en compte lors de la planification d'un premier essai.",
-        },
-      ],
+      company: [],
     },
   },
 ];

@@ -1,46 +1,21 @@
-/**
- * scripts/catalog/templates/cover.ts
- *
- * Full-bleed cover: factory photo + navy gradient wash + foil-gold detailing.
- */
-
-import { COMPANY, type SectorMeta } from "../constants.ts";
-import { imageToBase64Compressed } from "../utils.ts";
-
-const COVER_PHOTO = "/images/about/factory-image-02.webp";
+import type { CatalogCopy } from "../copy.ts";
+import { imageToBase64Compressed, escapeHtml } from "../utils.ts";
 
 export async function buildCoverPage(
-  config: SectorMeta,
-  logoSvg: string,
-  publicDir: string
-): Promise<string> {
-  const year = new Date().getFullYear();
-  const photo = await imageToBase64Compressed(publicDir, COVER_PHOTO, 1800);
-
-  return `
-  <div class="cover-page">
-    ${photo ? `<img class="cover-photo" src="${photo}" alt="" />` : ""}
-    <div class="cover-overlay"></div>
-    <div class="cover-frame"></div>
-
-    <div class="cover-top">
-      <div class="cover-logo">
-        ${logoSvg}<span class="cover-wordmark">Sureay Machinery</span>
-      </div>
-      <div class="cover-year-badge">Product Catalog · ${year}</div>
-    </div>
-
-    <div class="cover-content">
-      <div class="cover-gold-rule"></div>
-      <div class="cover-kicker">${COMPANY.tagline}</div>
-      <h1 class="cover-title">${config.title}</h1>
-      <p class="cover-subtitle">${config.subtitle}</p>
-      <div class="cover-meta">
-        <span>${COMPANY.iso}</span>
-        <span>${COMPANY.founded}</span>
-        <span>${COMPANY.location}</span>
-        <span>${COMPANY.website}</span>
-      </div>
-    </div>
-  </div>`;
+  title: string,
+  copy: CatalogCopy,
+  logo: string,
+  publicDir: string,
+  siteUrl: string,
+  count: number
+) {
+  const image = await imageToBase64Compressed(
+    publicDir,
+    "/images/about/factory-image-02.webp",
+    1650
+  );
+  return `<section class="sheet cover"><img class="cover-image" src="${image}" alt=""><div class="cover-shade"></div>
+    <div class="cover-top"><div class="brand" dir="ltr">${logo}<b>SUREAY MACHINERY</b></div><span class="edition">${new Date().getFullYear()}</span></div>
+    <div class="cover-heading"><div class="eyebrow">${escapeHtml(copy.catalog)}</div><h1>${escapeHtml(title)}</h1>
+    <div class="cover-meta"><span>${escapeHtml(copy.products)} · <bdi>${count}</bdi></span><a dir="ltr" href="${siteUrl}">sureay.com</a></div></div></section>`;
 }

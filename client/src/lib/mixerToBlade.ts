@@ -1,5 +1,5 @@
 import type { Blade } from "@/data/blades";
-import type { MixerPart } from "@/data/mixerParts";
+import { getMixerPartById, type MixerPart } from "@/data/mixerParts";
 
 /**
  * Adapts a MixerPart to the `Blade` shape so the mixer pages can reuse the
@@ -12,6 +12,7 @@ import type { MixerPart } from "@/data/mixerParts";
  * inside the mixer topic cluster and never cross-links to blade products.
  */
 export function mixerToBlade(part: MixerPart): Blade {
+  const cover = part.imageDimensions ? part : getMixerPartById(part.id);
   return {
     id: part.id,
     name: part.name,
@@ -20,6 +21,7 @@ export function mixerToBlade(part: MixerPart): Blade {
     sector: "other",
     categoryDisplay: part.categoryDisplay,
     image: part.image,
+    imageDimensions: cover?.image === part.image ? cover.imageDimensions : undefined,
     gallery: part.gallery,
     description: part.description,
     fullDescription: part.fullDescription,

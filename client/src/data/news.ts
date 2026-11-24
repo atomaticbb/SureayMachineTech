@@ -2948,7 +2948,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Rake angle is a separate lever with its own tradeoff. Increasing it lowers the tonnage the machine has to deliver, because less of the edge is engaged at any instant, but it also twists narrow strips more. If you're shearing long, narrow pieces and fighting bow, check the rake angle before blaming the clearance. And at the heavy end of the range — scrap and alligator shears running [metal shear knives](/products/metal-shear-knives) rather than sheet-gauge blades — clearance is generally set wider than sheet work would suggest, because mixed feed and heavy sections make a tight gap a fast route to blade damage.",
+          "Rake angle is a separate lever with its own tradeoff. Increasing it lowers the tonnage the machine has to deliver, because less of the edge is engaged at any instant, but it also twists narrow strips more. If you're shearing long, narrow pieces and fighting bow, check the rake angle before blaming the clearance. And at the heavy end of the range — alligator shears running [alligator shear blades](/products/metal-shear-knives) rather than sheet-gauge blades — clearance is generally set wider than sheet work would suggest, because mixed feed and heavy sections make a tight gap a fast route to blade damage.",
       },
       {
         type: "h2",
@@ -3560,7 +3560,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "For straight guillotine work — as opposed to the broader alligator and scrap shearing covered under our [metal shear knives](/products/metal-shear-knives) line — the steel grade decision usually comes down to three options. D2 (Cr12MoV equivalent) holds an edge the longest on mild and cold-rolled steel but is the least tolerant of impact; a plate with mill scale or a work-hardened edge can chip it. 6CrW2Si trades some wear resistance for toughness, which matters on lines cutting mixed-gauge coil where thickness isn't perfectly consistent shear to shear. 9CrSi is commonly selected for general-purpose hydraulic guillotine applications where balanced wear resistance and toughness are required.",
+          "For straight guillotine work — as opposed to alligator shearing covered under our [alligator shear blades](/products/metal-shear-knives) line — the steel grade decision usually comes down to three options. D2 (Cr12MoV equivalent) holds an edge the longest on mild and cold-rolled steel but is the least tolerant of impact; a plate with mill scale or a work-hardened edge can chip it. 6CrW2Si trades some wear resistance for toughness, which matters on lines cutting mixed-gauge coil where thickness isn't perfectly consistent shear to shear. 9CrSi is commonly selected for general-purpose hydraulic guillotine applications where balanced wear resistance and toughness are required.",
       },
       {
         type: "paragraph",
@@ -5624,7 +5624,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "granulator-blades",
       "rotary-slitter-knives",
       "twin-shaft-blades-recycling",
-      "metal-shear-knives",
+      "guillotine-shear-blades",
     ],
     content: [
       { type: "h2", value: "Introduction" },
@@ -5636,7 +5636,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "This guide helps engineers and procurement teams select the most suitable material for [slitter knives](/products/rotary-slitter-knives), [shredder blades](/products/twin-shaft-blades-recycling), [granulator knives](/products/granulator-blades), and recycling cutting tools.",
+          "This guide helps engineers and procurement teams select the most suitable material for [slitter knives](/categories/slitter-knives), [shredder blades](/products/twin-shaft-blades-recycling), [granulator knives](/products/granulator-blades), and recycling cutting tools.",
       },
       {
         type: "image",
@@ -5653,7 +5653,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "callout",
         value:
-          "D2 TYPICAL APPLICATIONS: [Slitter knives](/products/rotary-slitter-knives), [paper cutting blades](/products/paper-cutting-blades), plastic cutting knives, [industrial shearing knives](/products/metal-shear-knives).",
+          "D2 TYPICAL APPLICATIONS: [Slitter knives](/categories/slitter-knives), [paper cutting blades](/products/paper-cutting-blades), plastic cutting knives, [guillotine shear blades](/products/guillotine-shear-blades).",
       },
 
       { type: "h2", value: "SKD-11 Tool Steel" },
@@ -6054,9 +6054,8 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
     image: "/images/products/granulator-blades/metal-shear-blades-02.webp",
     readTime: "7 MIN",
     relatedProductIds: [
-      "metal-shear-knives",
+      "guillotine-shear-blades",
       "metal-coil-slitting-knives",
-      "metal-cold-saw-blades",
     ],
     content: [
       {
@@ -6073,7 +6072,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "High-hardness shear blades are a class of heavy-duty industrial knives designed to maintain a sharp, durable edge under continuous, high-stress use. Unlike standard off-the-shelf blades, Sureay's [Metal Shear Knives](/products/metal-shear-knives) are forged from premium tool steels and advanced alloys—such as 9CrSi, Cr12MoV (D2 equivalent), and H13.",
+          "High-hardness shear blades are a class of heavy-duty industrial knives designed to maintain a sharp, durable edge under continuous, high-stress use. Unlike standard off-the-shelf blades, Sureay's [Guillotine Shear Blades](/products/guillotine-shear-blades) are forged from premium tool steels and advanced alloys—such as 9CrSi, Cr12MoV (D2 equivalent), and H13.",
       },
       {
         type: "paragraph",
@@ -6185,7 +6184,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "High-hardness shear blades offer unparalleled durability, precision, and cost savings for heavy metal fabrication. Whether you operate in shipbuilding, aviation, structural steel, or a dedicated steel service center, upgrading your guillotine shears with [exact-match OEM metal shear knives](/products/metal-shear-knives) will guarantee continuous, peak performance.",
+          "High-hardness shear blades offer unparalleled durability, precision, and cost savings for heavy metal fabrication. Whether you operate in shipbuilding, aviation, structural steel, or a dedicated steel service center, upgrading your guillotine shears with [replacement guillotine shear blades](/products/guillotine-shear-blades) will guarantee continuous, peak performance.",
       },
       {
         type: "paragraph",
@@ -6803,7 +6802,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Prevent coil slitting line downtime with daily operator checks, slitter knife maintenance, shear blade care & a preventive maintenance schedule.",
     keywords:
       "coil slitting line maintenance, slitter knife maintenance, guillotine shear blade care, circular slitter knives, preventive maintenance, industrial blade maintenance",
-    relatedProductIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
+    relatedProductIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
     content: [
       {
         type: "paragraph",
@@ -6833,7 +6832,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Your [circular slitter knives](/products/metal-coil-slitting-knives) are the most critical factor in cut quality. Resharpen when you see uniform edge wear, but replace blades with localized chipping or deep nicks. Watch for edge rounding (increasing burr on strips), material buildup on blade faces, and uneven wear patterns. Store blades vertically in slotted racks with rust-preventive oil — never stack them without separators.",
+          "Your [steel coil slitting knives](/products/metal-coil-slitting-knives) are the most critical factor in cut quality. Resharpen when you see uniform edge wear, but replace blades with localized chipping or deep nicks. Watch for edge rounding (increasing burr on strips), material buildup on blade faces, and uneven wear patterns. Store blades vertically in slotted racks with rust-preventive oil — never stack them without separators.",
       },
       {
         type: "image",
@@ -6870,7 +6869,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "Precision-engineered tooling holds its edge longer and reduces stress across your entire line. At Sureay Machinery, our [circular slitter knives](/products/metal-coil-slitting-knives) and [guillotine shear blades](/products/guillotine-shear-blades) are built for zero-burr performance and extended service life — so you spend less time maintaining and more time producing.",
+          "Precision-engineered tooling holds its edge longer and reduces stress across your entire line. At Sureay Machinery, our [steel coil slitting knives](/products/metal-coil-slitting-knives) and [guillotine shear blades](/products/guillotine-shear-blades) are built for zero-burr performance and extended service life — so you spend less time maintaining and more time producing.",
       },
       {
         type: "callout",
@@ -6896,7 +6895,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       "Set axial clearance, verify cutter shaft parallelism & apply correct bolt torque on metal slitting lines — 3 steps that extend blade life 30%.",
     keywords:
       "metal slitting lines, rotary shear blades, slitting blade installation, axial clearance slitting, cutter shaft parallelism, blade life extension, coil slitting installation",
-    relatedProductIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
+    relatedProductIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
     content: [
       {
         type: "paragraph",
@@ -8195,7 +8194,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
       {
         type: "paragraph",
         value:
-          "When a rotor or bed knife wears out, it's tempting to reorder the same part number. That's fine if the process hasn't changed. But if particle size has been drifting, fines have crept up, or the feedstock has changed, it's worth checking whether knife count or arrangement should move too, not just the steel grade. We reverse-engineer rotor and bed knife configurations directly from Cumberland, Herbold, Rapid, and Conair OEM drawings across our full [granulator blades category](/categories/granulator-blades), so a configuration change doesn't mean settling for an off-the-shelf compromise.",
+          "When a rotor or bed knife wears out, it's tempting to reorder the same part number. That's fine if the process hasn't changed. But if particle size has been drifting, fines have crept up, or the feedstock has changed, it's worth checking whether knife count or arrangement should move too, not just the steel grade. We reverse-engineer rotor and bed knife configurations directly from Cumberland, Herbold, Rapid, and Conair OEM drawings across our full [granulator blades range](/products/granulator-blades), so a configuration change doesn't mean settling for an off-the-shelf compromise.",
       },
       {
         type: "h2",

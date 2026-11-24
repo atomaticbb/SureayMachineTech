@@ -1,733 +1,914 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blades.ts
-// Target:    pt
-// Generated: 2026-09-20T07:58:41.029Z
-// Provider:  deepl (incremental: faqs + components)
-
+// Generated from the English industrial blade catalog (pt).
 import type { Blade } from "../blades";
+
 export const blades: Blade[] = [
   {
+    compatibleMachinesIntro:
+      "Adquira lâminas de reposição para cortadoras de filme e fita, fabricadas sob medida para seus suportes, com diâmetros internos personalizados, perfis de corte e opções de superfície. Envie à Sureay seu desenho ou amostra para obter um orçamento de lâminas individuais ou de um par (superior e inferior).",
     id: "rotary-slitter-knives",
-    name: "Facas para cortadoras de filmes e fitas",
+    name: "Facas de corte longitudinal para filmes e fitas",
     fullName:
-      "Lâminas de corte de precisão para a conversão de filmes, fitas e embalagens flexíveis",
+      "Facas de corte longitudinal para filmes e fitas de embalagens flexíveis",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Facas para cortadoras de filmes e fitas",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Mais vendido",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    ],
+    categoryDisplay: "Facas de corte longitudinal para filmes e fitas",
+    image: "/images/products/slitter-detail/rotary-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lâminas circulares de corte para conversão de filmes BOPP, BOPET e CPP, filme extensível de PE, fitas PSA e não tecidos, retificadas com precisão. Tolerância de espessura de ±0,002 mm, desvio de T.I.R. ≤0,02 mm. Perfis de corte, ranhura e lâmina de barbear em aço M2 HSS, D2 e ASP23 PM, com revestimentos antiaderentes opcionais de TiN e DLC. Compatibilidade direta com sistemas de corte da Tidland, Kampf, Atlas e Dusenbery.",
-    fullDescription:
-      "As lâminas de corte circulares para filmes e fitas operam na interseção entre a precisão dimensional e a ciência dos materiais. Em uma linha de conversão que processa filmes BOPP ou BOPET a 400–600 m/min, um erro de tolerância de espessura da lâmina de corte de 0,005 mm por lâmina se acumula ao longo de um conjunto de lâminas no eixo, produzindo desvio visível na largura do corte, ondulação nas bordas e resíduos que contaminam os equipamentos de rebobinagem e embalagem a jusante. As lâminas de corte para filmes e fitas da Sureay são fabricadas com tolerância de espessura de ±0,002 mm e desvio radial total indicado (T.I.R.) ≤20,02 mm — tolerâncias que se mantêm em todo o diâmetro de produção, não apenas no furo.\n\nA seleção da liga é determinada pela aplicação. A conversão padrão de papel revestido e papelão kraft é realizada com aço para rolamentos 52100 ou D2 aço-ferramenta para trabalho a frio. Substratos abrasivos — folhas de alumínio e elétrodos de cobre de grau de bateria para células de lítio de veículos elétricos (EV), embalagens reforçadas com fibra de vidro, revestimentos antiaderentes revestidos com silício — exigem aço de metalurgia do pó (PM) ASP23 ou ASP52 ou metal duro para uma vida útil aceitável da aresta. Filmes plásticos flexíveis (BOPP, BOPET, CPP, filme extensível de PE) são processados rotineiramente com lâminas M2 HSS com revestimento superficial opcional de TiN ou DLC PVD para evitar a transferência de filme adesivo e reduzir o aquecimento da banda induzido pelo atrito.\n\n## Por método de corte\n\n**Corte por cisalhamento (pares de lâminas superior e inferior combinadas):** A ação de tesoura entre a lâmina superior côncava e a lâmina inferior em forma de bigorna ranhurada gera um corte limpo por cisalhamento, sem carga de tração na banda. A folga entre as lâminas é normalmente ajustada entre 0,05 e 0,15 mm (dependendo do substrato); nossas tolerâncias de retificação garantem que essa folga seja consistente em toda a largura do corte. Isso é fundamental para papel, não tecidos e filmes flexíveis leves, nos quais a deformação das bordas é inaceitável.\n\n**Corte por esmagamento/riscagem (lâmina circular contra rolo de bigorna de borracha):** Uma lâmina endurecida e de borda afiada penetra em um laminado adesivo sensível à pressão, espuma ou banda de embalagem multicamadas contra uma bigorna de borracha de dureza controlada. A geometria do perfil da lâmina e o ângulo de bisel são otimizados de acordo com o substrato para evitar o vazamento de adesivo e a delaminação na borda de corte. A opção padrão para fitas sensíveis à pressão, corte de espuma e corte de embalagens médicas.\n\n**Corte com lâmina tipo navalha (flutuação livre ou lâmina única fixa):** Lâminas ultra-afiadas e de perfil fino removem os resíduos das bordas em linhas de extrusão de filme fundido, linhas de filme orientado e produção de não-tecido spunbond a velocidades acima de 500 m/min. A geometria da lâmina é otimizada para proporcionar o mínimo de arrasto da banda e a máxima limpeza da borda, evitando o enrolamento da borda e descargas eletrostáticas que causam rupturas da banda em linhas de alta velocidade.\n\n## Por material e setor\n\n**Filmes para embalagens flexíveis:** BOPP, BOPET, CPP, filme extensível de PE/PP, manga retrátil. O corte de filmes em alta velocidade requer controle preciso do desvio da lâmina para evitar picos de tensão na banda causados pela oscilação da lâmina. O M2 HSS com revestimento DLC opcional elimina a adesão do filme à superfície da lâmina.\n\n**Tecidos não tecidos e tecidos médicos:** PP spunbond, meltblown, tecidos médicos SMS, meios filtrantes HEPA. Ângulos de inclinação especializados evitam o desfiamento das fibras e o deslizamento da banda durante o corte de materiais de estrutura solta sob altas tensões de linha.\n\n**Fitas e etiquetas sensíveis à pressão:** Fita de máscara, fita adesiva, espuma dupla-face, material para etiquetas, adesivo de transferência. Os revestimentos antiaderentes de TiN e Teflon reduzem a frequência de limpeza em 60–80%, prolongando o tempo médio entre substituições nas aplicações mais exigentes de corte de fitas.",
-    disambiguation:
-      "Está processando papel, papel-toalha ou papelão em vez de filme? Consulte nossa página [Lâminas para cortadoras rotativas de papel](/products/rotary-slitter-knives-paper) para obter dados sobre a folga de corte e os intervalos de reafiação em substratos de celulose.",
+      "Lâminas de reposição para cortadoras de filmes BOPP, PET, CPP e fitas adesivas. Lâminas superiores e inferiores em aço para ferramentas ou carboneto, com furos e perfis personalizados conforme desenho.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "Diâmetro externo (OD) circular de 20 a 300 mm",
+      },
+      {
+        label: "Material",
+        value: "52100, D2, M2 HSS, aço ASP23 PM ou metal duro sólido",
+      },
+      {
+        label: "Aplicações",
+        value:
+          "BOPP, BOPET, CPP, filme extensível e fita adesiva sensível à pressão",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value:
+          "TiN, DLC, PTFE (Teflon), CrAlN ou cerâmica, dependendo do substrato da lâmina",
+      },
+      {
+        label: "Montagem",
+        value:
+          "Porta-lâminas de cisalhamento rotativo ou porta-lâminas de corte por esmagamento",
+      },
+      {
+        label: "Tolerância de espessura",
+        value: "±0.002 mm",
+      },
+      {
+        label: "Desvio",
+        value: "≤0.02 mm T.I.R.",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Facas de corte longitudinal para filmes e fitas de embalagens flexíveis",
+      sizeRange: "Diâmetro externo (OD) circular de 20 a 300 mm",
+      heroAlt:
+        "Lâminas circulares para cortadoras de filme e fita e anéis inferiores",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-detail.webp",
+        alt: "Close do chanfro de precisão e da face de uma faca de corte circular",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Facas de corte longitudinal",
+          title: "Lâminas de corte superior e inferior",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de faca",
+          ],
+          rows: [
+            ["SR001154", "60 × 40 × 1.0 mm", "Lâmina superior"],
+            ["SR001155", "62 × 35 × 0.5 mm", "Lâmina superior"],
+            ["SR001156", "75 × 45 × 1.2 mm", "Lâmina superior"],
+            ["SR001151", "90 × 60 × 1.0 mm", "Lâmina superior"],
+            ["SR001152", "105 × 70 × 1.2 mm", "Lâmina superior"],
+            ["SR001157", "130 × 80 × 1.2 mm", "Lâmina superior"],
+            ["SR001158", "150 × 75 × 2.0 mm", "Lâmina superior"],
+            ["SR001168", "70 × 28 × 12 mm", "Faca inferior"],
+            ["SR001169", "70 × 45 × 3 mm", "Faca inferior"],
+            ["SR001170", "70 × 45 × 20 mm", "Faca inferior"],
+            ["SR001182", "80 × 55 × 5 mm", "Faca inferior"],
+            ["SR001452", "80 × 60 × 10 mm", "Faca inferior"],
+            ["SR001183", "105 × 60 × 15 mm", "Faca inferior"],
+            ["SR001184", "108 × 80 × 8 mm", "Faca inferior"],
+            ["SR001185", "150 × 120 × 15 mm", "Faca inferior"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Lâminas superiores e inferiores adicionais",
+          title: "Lâminas superiores e inferiores adicionais",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de lâmina / Referência da plataforma",
+          ],
+          rows: [
+            [
+              "SR001801",
+              "75 × 25.4 × 1.0 / 1.2 mm",
+              "Faca superior — Tidland / Atlas",
+            ],
+            [
+              "SR001802",
+              "70 × 25.4 × 8 / 10 mm",
+              "Bigorna inferior — Tidland / Atlas",
+            ],
+            [
+              "SR001803",
+              "100 × 32 × 1.2 / 1.5 mm",
+              "Lâmina superior — Kampf / Dusenbery",
+            ],
+            [
+              "SR001804",
+              "80 × 60 × 16 / 20 mm",
+              "Bigorna inferior — Kampf / Dusenbery",
+            ],
+            [
+              "SR001805",
+              "118 × 80 × 1.2 / 2.0 mm",
+              "Lâmina superior — Goebel / BHS / Agnati",
+            ],
+            [
+              "SR001806",
+              "100 × 70 × 16 / 20 mm",
+              "Bigorna inferior — Goebel / BHS / Agnati",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Diâmetro externo (OD) circular de 20 a 300 mm",
+        },
+        {
+          label: "Material",
+          value: "52100, D2, M2 HSS, aço ASP23 PM ou metal duro sólido",
+        },
+        {
+          label: "Aplicações",
+          value:
+            "BOPP, BOPET, CPP, filme extensível e fita adesiva sensível à pressão",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value:
+            "TiN, DLC, PTFE (Teflon), CrAlN ou cerâmica, dependendo do substrato da lâmina",
+        },
+        {
+          label: "Montagem",
+          value:
+            "Porta-lâminas de cisalhamento rotativo ou porta-lâminas de corte por esmagamento",
+        },
+        {
+          label: "Tolerância de espessura",
+          value: "±0.002 mm",
+        },
+        {
+          label: "Desvio",
+          value: "≤0.02 mm T.I.R.",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
       "Tidland",
-      "Mario Cotta",
-      "Dusenbery",
       "Kampf",
       "Atlas",
       "Goebel",
-      "BHS",
-      "Agnati",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "52100 / D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting, Score / Crush Cutting, Razor Slitting",
-      },
-      {
-        label: "Outer Diameter",
-        value: "50–200 mm (custom OD available)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.002 mm thickness | ≤0.02 mm T.I.R. runout",
-      },
-      {
-        label: "Coatings",
-        value: "TiN, DLC, Teflon, CrAlN (optional)",
-      },
-      {
-        label: "Applications",
-        value:
-          "BOPP / BOPET / CPP Film, PE Stretch Film, PSA Tape, Non-Wovens, Flexible Packaging",
-      },
+      "Windmöller & Hölscher",
     ],
     components: [
       {
-        id: "multi-material-compatibility",
-        tag: "METALURGIA",
-        title: "Aços para ferramentas específicos para cada aplicação",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Opções de aço e metal duro adequadas à aplicação",
         description:
-          "Material adequado para sua aplicação. Aço carbono 52100 para revestimentos de filmes de embalagem padrão e substratos revestidos; M2 HSS para filmes plásticos abrasivos; ASP23 PM ou metal duro para revestimentos antiaderentes revestidos com sílica e laminados reforçados com fibra de vidro. Todas as classes estão em estoque e prontas para entrega rápida aos fabricantes de equipamento original (OEM).",
+          "Desde as séries 52100 e D2 até M2 HSS, aço PM e metal duro maciço, a Sureay oferece opções de materiais para o corte rotineiro de filmes e condições de desgaste mais exigentes.",
       },
       {
-        id: "advanced-coating-systems",
-        tag: "RETENÇÃO DE BORDAS",
-        title: "Revestimentos PVD antiaderentes",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Bordas retificadas com precisão e revestimentos opcionais",
         description:
-          "Os revestimentos de TiN e DLC reduzem a aderência superficial em até 80%, eliminando o acúmulo de adesivo nas faces das lâminas durante o corte de fitas PSA e laminados adesivos. Menos atrito significa menor aquecimento durante a operação, maior vida útil das lâminas e menos paradas para limpeza por turno.",
+          "As arestas de corte retificadas com precisão estão disponíveis com opções de revestimento em TiN, DLC, PTFE (Teflon), CrAlN ou cerâmica, selecionadas de acordo com o substrato da lâmina e o filme ou fita a ser cortado.",
       },
       {
-        id: "five-cutting-applications",
-        tag: "CAPACIDADE DO PROCESSO",
-        title: "Geometrias de borda otimizadas",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Lâminas de reposição personalizadas e pares combinados",
         description:
-          "Perfis de bisel simples, bisel duplo e borda romba projetados para pares de cisalhamento, corte com bigorna de esmagamento/riscagem e corte com lâmina de barbear. Perfilados para a velocidade da sua linha de produção e a tensão da banda — especifique o método de corte e o substrato, e nós ajustaremos a geometria.",
+          "Encomende lâminas de reposição individuais ou pares combinados de lâminas superior e inferior com furos, perfis e detalhes de montagem adequados ao seu sistema de corte existente.",
       },
     ],
-    dimensionLabels: {
-      col0: "Tipo de lâmina / Aplicação",
-      col1: "Diâmetro externo (mm)",
-      col2: "ID (mm)",
-      col3: "Espessura (mm)",
-      caption:
-        "* Dimensões padrão do par de lâminas de cisalhamento. As lâminas superior (côncava) e inferior (ranhura de bigorna) são fornecidas como pares combinados. Diâmetros externo e interno personalizados e perfis de ranhura sob encomenda.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Qual lâmina de reposição é adequada para minha cortadora de filme ou fita?",
+          answer:
+            "Identifique primeiro o método de corte e a posição da lâmina. As estações de corte rotativo utilizam bordas superior e inferior que atuam em conjunto; as estações de corte por compressão pressionam uma lâmina contra uma superfície de apoio. A referência do suporte, o diâmetro interno, o perfil de corte e as dimensões axiais determinam a peça de reposição. Lâminas para cortadoras de filme e facas para cortadoras de fita são nomes comuns de compra, mas o arranjo de corte instalado determina a peça necessária.",
+        },
+        {
+          question:
+            "Quando a resistência ao desgaste deve ser priorizada na seleção de lâminas de corte por cisalhamento?",
+          answer:
+            "Vale a pena considerar uma maior resistência ao desgaste quando a aresta de trabalho se desgasta gradualmente em uma configuração de corte por cisalhamento que, de resto, seria adequada. Nos casos em que predominam lascas ou danos por contato, a escolha do material também precisa levar em conta a tenacidade e o suporte da lâmina. Compare a aresta usada, a banda processada e o par de lâminas existente antes de escolher o material para um pedido de reposição.",
+        },
+        {
+          question:
+            "Por que o adesivo se acumula nas lâminas das cortadoras de fita?",
+          answer:
+            "O adesivo pode ser transferido da fita para a lâmina durante o contato. O perfil da lâmina, a área de contato e o acabamento da superfície influenciam a facilidade com que os resíduos se acumulam. Verifique onde eles se acumulam e compare o chanfro atual e as faces de trabalho com a composição da fita. Um perfil adequado, uma superfície polida ou um revestimento opcional podem então ser considerados para aquele material de lâmina e adesivo.",
+        },
+        {
+          question:
+            "O que pode causar danos nas bordas de um par de lâminas de corte por cisalhamento?",
+          answer:
+            "O contato indesejado entre as bordas das lâminas superior e inferior durante o engate pode danificar um par de lâminas de corte por cisalhamento. Inspecione ambas as bordas, o movimento de engate do suporte e as posições das lâminas instaladas. Compare danos localizados com o desgaste gradual antes de trocar o material, para que a substituição resolva a condição observada, em vez de repetir um problema de contato ou de configuração.",
+        },
+        {
+          question:
+            "Como a espessura da lâmina, o furo e a altura da concavidade afetam o encaixe na substituição?",
+          answer:
+            "O diâmetro interno posiciona a lâmina em seu suporte, a espessura da lâmina descreve a seção do material e a altura da curvatura descreve o perfil axial geral de uma lâmina curvada. Juntamente com a largura do anel inferior e os detalhes de montagem, essas dimensões determinam onde as arestas de corte se encontram. Registre-as separadamente ao substituir uma lâmina em um suporte existente.",
+        },
+        {
+          question:
+            "Devo substituir tanto as lâminas superiores quanto as inferiores da cortadora?",
+          answer:
+            "É possível solicitar uma única peça de reposição quando a lâmina de acoplamento original ainda estiver em condições de uso e sua geometria for conhecida. Inspecione ambas as arestas de corte, as faces de montagem e os diâmetros de trabalho. Para um par completo, identifique separadamente as posições superior e inferior, para que suas dimensões e opções de material possam ser consideradas em conjunto, incluindo qualquer reafiação anterior.",
+        },
+        {
+          question:
+            "A Sureay pode fabricar lâminas personalizadas para cortadoras de filme a partir de um desenho ou amostra?",
+          answer:
+            "Sim. A Sureay pode fornecer diâmetros internos, seções de lâmina, características de montagem e perfis de corte personalizados. Um desenho define as novas dimensões pretendidas; uma amostra desgastada ajuda a identificar a geometria instalada e qualquer material perdido devido ao uso ou ao afiamento. Inclua os detalhes da lâmina de acoplamento ou da bigorna para um par de trabalho e indique a quantidade necessária para cada configuração.",
+        },
+      ],
+      company: [],
     },
-    standardDimensions: [
-      {
-        spec: "Top Blade — Tidland / Atlas",
-        od: "75",
-        id: "25.4",
-        thickness: "1.0 / 1.2",
-      },
-      {
-        spec: "Bottom Anvil — Tidland / Atlas",
-        od: "70",
-        id: "25.4",
-        thickness: "8 / 10",
-      },
-      {
-        spec: "Top Blade — Kampf / Dusenbery",
-        od: "100",
-        id: "32",
-        thickness: "1.2 / 1.5",
-      },
-      {
-        spec: "Bottom Anvil — Kampf / Dusenbery",
-        od: "80",
-        id: "60",
-        thickness: "16 / 20",
-      },
-      {
-        spec: "Top Blade — Goebel / BHS / Agnati",
-        od: "118",
-        id: "80",
-        thickness: "1.2 / 2.0",
-      },
-      {
-        spec: "Bottom Anvil — Goebel / BHS / Agnati",
-        od: "100",
-        id: "70",
-        thickness: "16 / 20",
-      },
-    ],
     relatedBladeIds: [
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
-      "tungsten-carbide-slitter-knives",
       "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
       "nonwoven-slitter-knives",
     ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 150,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Que tolerância de espessura devo especificar para as lâminas em um conjunto de eixos com várias lâminas?",
-          answer:
-            "Para o corte por cisalhamento de filmes e folhas flexíveis, especifique uma tolerância de espessura de ±0,002 mm e um desvio de T.I.R. ≤20,02 mm. Um erro de 0,005 mm por lâmina se acumula em uma pilha de 12 lâminas, produzindo desvio visível na largura do corte e picos de tensão na banda. Afiamos todas as lâminas de acordo com essas tolerâncias e verificamos em uma CMM antes da remessa.",
-        },
-        {
-          question:
-            "O que é a “relação de excesso de velocidade” das lâminas de corte superior e inferior e por que ela é importante?",
-          answer:
-            "A relação de sobrevelocidade é a diferença intencional na velocidade de rotação entre o eixo da lâmina superior e o eixo da bigorna inferior — normalmente definida entre 2% e 5% acima da velocidade da banda. Essa diferença cria uma ação de microcisalhamento no ponto de corte, produzindo uma borda mais limpa e reduzindo o acúmulo de calor em comparação com um corte puramente tangencial. Em relações de sobrevelocidade mais altas, a qualidade do corte melhora, mas o desgaste da borda se acelera; com diferencial zero, a lâmina age mais como um cortador por esmagamento. O fabricante original (OEM) da sua cortadora especifica a relação de sobrevelocidade projetada; nós fornecemos pares compatíveis, otimizados para essa configuração.",
-        },
-        {
-          question:
-            "Como posso evitar a transferência e o acúmulo de película adesiva nas faces das lâminas da cortadora?",
-          answer:
-            "O acúmulo de adesivo nas faces das lâminas aumenta o atrito, eleva a temperatura da banda e causa contaminação por transferência de material. Oferecemos revestimentos PVD de TiN (nitreto de titânio) e DLC (carbono tipo diamante) que reduzem a adesão superficial em até 80%, prolongando os intervalos entre limpezas em aplicações de corte de fitas sensíveis à pressão e laminados adesivos.",
-        },
-        {
-          question:
-            "Quando devo mudar do D2 para o aço de metalurgia do pó (PM) no corte de filmes flexíveis?",
-          answer:
-            "Recomenda-se o uso do aço PM (ASP23, ASP52) no corte de substratos flexíveis altamente abrasivos, como filmes de embalagem reforçados com fibra de vidro, revestimentos antiaderentes com revestimento de sílica ou filmes de barreira com enchimento cerâmico. Esses materiais excedem o limite máximo de abrasão D2 em uma única operação de produção devido às partículas duras de enchimento mineral. As classes PM proporcionam uma distribuição uniforme de carboneto e uma vida útil da aresta 50 a 80% maior em substratos flexíveis altamente abrasivos.",
-        },
-        {
-          question:
-            "Qual revestimento de superfície é o mais adequado para o corte longitudinal de fitas adesivas sensíveis à pressão em alta velocidade?",
-          answer:
-            "O revestimento PVD DLC (carbono tipo diamante) é a especificação de ponta para o corte de fitas de espuma com revestimento duplo e adesivos de transferência. Ele reduz o ângulo de contato na face da lâmina em aproximadamente 35° em comparação com o D2 sem revestimento, mantendo um deslizamento consistente durante ciclos de produção de 8 a 12 horas, sem paradas para limpeza. O TiN é eficaz para fitas de máscara de face única e etiquetas com baixa aderência, com um custo de revestimento mais baixo.",
-        },
-        {
-          question:
-            "A Sureay pode fornecer pares de facas superiores e inferiores combinadas, verificadas quanto a uma folga de corte especificada?",
-          answer:
-            "Sim. Os pares de lâminas de cisalhamento combinados — lâmina superior côncava e lâmina inferior em forma de bigorna com ranhuras — são fornecidos com a folga entre as lâminas pré-verificada de acordo com as especificações do seu substrato. Registramos o diâmetro externo (OD), o diâmetro interno (ID), a espessura e a folga de cisalhamento projetada para cada par combinado em uma ficha técnica de engenharia que acompanha o conjunto de ferramentas, permitindo que os operadores da linha reproduzam a configuração da folga a cada reinstalação.",
-        },
-        {
-          question:
-            "Qual geometria de lâmina é recomendada para o corte de tecido não tecido do tipo meltblown sem que as fibras se desfiem?",
-          answer:
-            "Para tecidos não tecidos do tipo meltblown e spunbond (8–80 GSM), especifique um ângulo de inclinação positivo (15°–20°) com acabamento superficial Ra ≤ 0,4 μm. Essa geometria corta a estrutura de fibras soltas de forma limpa, sem deslocamento lateral das fibras que cause bordas desfiadas. Para tecidos meltblown muito leves (<15 GSM), um revestimento ESD (descarga eletrostática) opcional evita que as fibras sejam atraídas para a face da lâmina devido à estática.",
-        },
-      ],
-      company: [
-        {
-          question: "Vocês são uma empresa comercial ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas.",
-        },
-        {
-          question:
-            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
-          answer:
-            "Ao contrário do têmpera convencional, todas as lâminas Sureay passam por um tratamento criogênico profundo após o endurecimento a vácuo. Isso transforma a austenita retida em martensita, aumentando a resistência ao desgaste em até 40% e garantindo uma dureza uniforme em toda a aresta de corte.",
-        },
-        {
-          question:
-            "Vocês fazem entregas para o mundo todo? E quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são enviadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Temos parceria direta com a DHL, a FedEx e agências de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question:
-            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação de OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
-        },
-        {
-          question:
-            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com a fabricação de ferramentas até que o ajuste seja confirmado.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Adquira lâminas de reposição para o seu rebobinador, com lâminas de topo côncavo ou plano e configurações inferiores compatíveis. Envie seu desenho ou amostra e o tipo de papel à Sureay para obter um orçamento personalizado para o seu par de lâminas de corte.",
     id: "rotary-slitter-knives-paper",
-    name: "Facas para cortadoras de papel",
+    seoDescription:
+      "Lâminas de cortadoras de papel para papelPapel tissue, papel kraft e papel revestido. Combine lâminas superiores côncavas ou planas com lâminas inferiores correspondentes, em aço para ferramentas ou com ponta de carboneto.",
+    name: "Facas de corte longitudinal para papel",
     fullName:
-      "Lâminas de corte para papel e papel-toalha destinadas a linhas de conversão de alta velocidade",
+      "Facas de corte longitudinal para papéis tissue, kraft e revestidos",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Facas para cortadoras de papel",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Transformação de papel",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
-    ],
-    galleryAlts: [
-      "Faca circular para corte de papel com perfil de cisalhamento côncavo e furo retificado com precisão",
-      "Par de lâminas de corte de papel, com partes superior e inferior combinadas, para corte por cisalhamento",
-      "Linha de transformação de papel com o sistema facas circulares de corte longitudinal para ranhurar e cortar a banda",
-    ],
+    categoryDisplay: "Facas de corte longitudinal para papel",
+    image: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lâminas de corte de papel retificadas para celulose, não adaptadas a partir de ferramentas para filmes. Pares de lâminas de corte superior e inferior combinados em D2, M2 HSS ou 52100, com tolerância de ±0,002 mm na espessura e ≤0,02 mm no desvio radial, com folga pré-ajustada para o substrato que você está processando: 0,02–0,05 mm para papel-toalha, 0,05–0,10 mm para papel kraft. Classificadas para 600 m/min em linhas de papel-toalha. Envie um desenho, uma lâmina desgastada ou apenas o modelo da sua máquina e confirmaremos a compatibilidade.",
-    fullDescription:
-      "As linhas de transformação de papel exigem lâminas de corte que proporcionem cortes consistentes e livres de pó de fibra ao longo de ciclos de produção com vários turnos. As lâminas facas circulares de corte longitudinal da Sureay para papel são retificadas com precisão a partir de aço para ferramentas D2 (para papel e papelão padrão) ou aço rápido M2 (para papéis-toalha de alta velocidade e papéis especiais), de acordo com tolerâncias dimensionais rigorosas que evitam a oscilação da lâmina e garantem uma qualidade uniforme de corte.\n\n## Metalurgia específica para papel\n\nDiferentemente do corte de filmes plásticos ou folhas metálicas, a conversão de papel submete a aresta da lâmina a um desgaste abrasivo contínuo causado por fibras de celulose, agentes de colagem e enchimentos minerais (carbonato de cálcio, caulim). Selecionamos ligas para lâminas especificamente para aplicações em papel:\n\n**Aço para ferramentas D2 (HRC 60–62):** Grau padrão para a transformação de papel kraft, papelão para caixas e papelão ondulado. O teor de 12% de cromo proporciona excelente resistência à abrasão contra fibras ricas em lignina e compostos de enchimentos minerais.\n\n**Aço de alta velocidade M2 (HRC 62–64):** Preferido para a conversão de papel-toalha e papel higiênico em alta velocidade, onde as velocidades da linha de produção excedem 400 m/min. O molibdênio e os metal duros mantêm a geometria do fio da lâmina sob o estresse térmico do corte em velocidade ultra-alta.\n\n**Aço para rolamentos 52100 (HRC 58–60):** Opção econômica para a conversão padrão de papel de jornal, papel de revista e fibra reciclada de baixa qualidade, onde as taxas de desgaste são moderadas.\n\n**Carboneto de tungstênio (sólido ou com ponta de carboneto):** A escolha ideal para papel revestido com alto teor de cinzas, papel artístico e papelão ondulado, onde os enchimentos minerais desgastam rapidamente a lâmina de aço entre as trocas. Fornecido como carboneto maciço em lâminas de diâmetro menor ou com ponta de carboneto — uma borda de carboneto soldada a um corpo de aço — em lâminas de diâmetro maior, onde um corpo totalmente de carboneto não é economicamente viável.\n\n## Corte por cisalhamento vs. corte por esmagamento para papel\n\nA conversão de papel emprega dois métodos principais de corte:\n\n**Corte por cisalhamento (pares de lâminas superior/inferior):** Duas facas circulares girando em direções opostas criam uma ação de cisalhamento semelhante à de uma tesoura. Esse é o método padrão para papéis revestidos, papel-toalha e tipos de papel para embalagens leves, nos quais o arrastamento de fibras e a geração de pó devem ser minimizados. Fornecemos pares combinados com folga de corte controlada (normalmente 0,02–0,05 mm para papel-toalha, 0,05–0,10 mm para papel kraft).\n\n**Corte por esmagamento (lâmina contra bigorna):** Uma lâmina circular endurecida esmaga a banda de papel contra um rolo de bigorna ranhurado. Utilizado para papelão ondulado pesado e embalagens multicamadas, nas quais a manutenção da folga de cisalhamento é impraticável. A lâmina de bigorna (posição inferior) é fabricada com um perfil de ranhura que comprime e fratura as fibras do papel.\n\n## Desempenho sem poeira de fibras\n\nA poeira de fibras gerada na borda de corte contamina as estações de rebobinagem das fábricas de papel, degrada a qualidade do produto em papéis higiênicos e tissue e provoca paradas não planejadas para limpeza. Nossas lâminas de corte para papel são retificadas com precisão para um acabamento superficial de Ra 0,2–0,4 μm, com ângulos de bisel controlados que cortam de forma limpa os feixes de fibras de celulose, em vez de rasgá-los ou puxá-los. Isso reduz o pó de fibras transportado pelo ar em aproximadamente 60–70% em comparação com as lâminas industriais padrão.",
-    disambiguation:
-      "Precisa cortar filmes, fitas ou embalagens flexíveis? Essas lâminas estão disponíveis em nossa página [Lâminas para Cortadoras de Filmes e Fitas](/products/rotary-slitter-knives). Esta página aborda apenas substratos de papel.",
-    categoryCardAnchorText:
-      "Lâminas para cortadoras de papel — papel-toalha, papel kraft e papel revestido",
+      "Lâminas de reposição para cortadoras de papel (Papel tissue), papel kraft e papel revestido. Lâminas superiores côncavas ou planas e lâminas inferiores em aço ou carboneto, fabricadas conforme desenho.",
     link: "/products/rotary-slitter-knives-paper",
-    isFeatured: false,
-    compatibleMachines: [
-      "Atlas Converting",
-      "Tidland",
-      "Parkinson",
-      "Kampf",
-      "Laem System",
-      "Euromac",
-      "Goebel IMS",
-      "Fabio Perini",
-      "Körber",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 58–64 (steel) / HRA 90–92 (carbide)",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting (matched pairs), Crush Cutting (anvil pairs)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Ra 0.2–0.4μm (precision ground)",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.002mm | Runout: ≤0.02mm",
-      },
-      {
-        label: "Application",
+        label: "Tamanhos",
         value:
-          "Tissue & Sanitary Paper, Kraft Paper, Corrugated Board, Coated Papers, Newsprint",
+          "Diâmetro externo côncavo 62–203 mm · Diâmetro externo inferior 70–300 mm",
       },
+      {
+        label: "Material",
+        value:
+          "52100, D2, M2, ASP23, CPM 10V ou construção com ponta de carboneto",
+      },
+      {
+        label: "Aplicações",
+        value: "Papel tissuem, papel kraft, papel revestido e papel reciclado",
+      },
+      {
+        label: "Montagem",
+        value:
+          "Lâmina superior montada no eixo ou flange correspondente e face de corte na lâmina inferior",
+      },
+      {
+        label: "Dureza",
+        value:
+          "58–64 HRC para lâminas de aço; 90–92 HRA para gumes de metal duro",
+      },
+      {
+        label: "Acabamento superficial",
+        value: "Superfícies retificadas com precisão, Ra 0,2–0,4 μm",
+      },
+      {
+        label: "Tolerância de espessura",
+        value: "±0.002 mm",
+      },
+      {
+        label: "Desvio",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Estilos de corte",
+        value:
+          "Corte por cisalhamento com lâminas superior e inferior combinadas ou corte por esmagamento com pares de bigornas",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lâminas de corte para papelPapel tissue e Kraft",
+      sizeRange:
+        "Diâmetro externo côncavo 62–203 mm · Diâmetro externo inferior 70–300 mm",
+      heroAlt:
+        "Par de lâminas circulares para cortadora de papel, mostrando a lâmina superior e o anel inferior",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-paper-detail.webp",
+        alt: "Lâmina de cortadora de papel mostrando a face de corte retificada e o furo central",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Lâminas superiores",
+          title: "Lâminas superiores",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Perfil ou referência",
+            "Altura do prato",
+          ],
+          rows: [
+            ["SR001201", "90 × 60 × 1.2 mm", "Côncava", "Ver desenho"],
+            ["SR001202", "130 × 80 × 1.5 mm", "Côncava", "Ver desenho"],
+            [
+              "SR001203",
+              "150 × 80 × 2.5 mm",
+              "Cônca / Tidland Classe II",
+              "Ver desenho",
+            ],
+            ["SR001204", "180 × 90 × 3.5 mm", "Côncava", "Ver desenho"],
+            [
+              "SR001205",
+              "200 × 80 × 4.0 mm",
+              "Cônca / Tidland Classe III",
+              "9.25 mm",
+            ],
+            [
+              "SR001206",
+              "203 × 90 × 4.0 mm",
+              "Bielomatik 701.115",
+              "Ver desenho",
+            ],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Lâminas inferiores",
+          title: "Lâminas inferiores",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Montagem ou borda",
+            "Referência",
+          ],
+          rows: [
+            [
+              "SR001211",
+              "105 × 80 × 15 mm",
+              "Flange",
+              "Série dimensional DIENES",
+            ],
+            [
+              "SR001212",
+              "130 × 90 × 20 mm",
+              "Flange",
+              "Série dimensional DIENES",
+            ],
+            [
+              "SR001213",
+              "190 × 138 × 15 mm",
+              "Duas lâminas",
+              "Tidland TID131393",
+            ],
+            [
+              "SR001214",
+              "130 × 100 × 30 mm",
+              "Duas lâminas",
+              "Tidland TID133503",
+            ],
+            [
+              "SR001215",
+              "250 × 188 × 15 mm",
+              "Duas lâminas",
+              "Tidland TID131395",
+            ],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Lâminas adicionais para cortadoras de papel",
+          title: "Lâminas adicionais para cortadoras de papel",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de lâmina / Referência da plataforma",
+          ],
+          rows: [
+            [
+              "SR001807",
+              "75 × 45 × 1.0 / 1.2 mm",
+              "Faca superior (corte por cisalhamento)",
+            ],
+            ["SR001808", "70 × 45 × 10 / 8 mm", "Bigorna inferior"],
+            [
+              "SR001809",
+              "100 × 32 × 1.2 mm",
+              "Faca superior (corte por cisalhamento)",
+            ],
+            ["SR001810", "80 × 60 × 20 / 16 mm", "Bigorna inferior"],
+            ["SR001811", "150 × 80 × 1.5 mm", "Faca superior (papel tissue)"],
+            ["SR001812", "108 × 80 × 20 / 18 mm", "Bigorna inferior"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value:
+            "Diâmetro externo côncavo 62–203 mm · Diâmetro externo inferior 70–300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2, M2, ASP23, CPM 10V ou construção com ponta de carboneto",
+        },
+        {
+          label: "Aplicações",
+          value:
+            "Papel tissuem, papel kraft, papel revestido e papel reciclado",
+        },
+        {
+          label: "Montagem",
+          value:
+            "Lâmina superior montada no eixo ou flange correspondente e face de corte na lâmina inferior",
+        },
+        {
+          label: "Dureza",
+          value:
+            "58–64 HRC para lâminas de aço; 90–92 HRA para gumes de metal duro",
+        },
+        {
+          label: "Acabamento superficial",
+          value: "Superfícies retificadas com precisão, Ra 0,2–0,4 μm",
+        },
+        {
+          label: "Tolerância de espessura",
+          value: "±0.002 mm",
+        },
+        {
+          label: "Desvio",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Estilos de corte",
+          value:
+            "Corte por cisalhamento com lâminas superior e inferior combinadas ou corte por esmagamento com pares de bigornas",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Valmet",
+      "Voith",
+      "Tidland",
+      "Jagenberg",
+      "Bielomatik",
+      "E.C.H. Will",
     ],
     components: [
       {
-        id: "paper-metallurgy",
-        tag: "CIÊNCIA DOS MATERIAIS",
-        title:
-          "Qual tipo de aço deve ser utilizado nas lâminas para cortadoras de papel?",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Opções de materiais para a transformação de papel",
         description:
-          "As fibras do papel contêm enchimentos minerais abrasivos (carbonato de cálcio, caulim, dióxido de titânio) que desgastam rapidamente os aços comuns das lâminas. Nossas classes de aço HSS D2 e M2 passam por um tratamento térmico específico para aplicações de processamento de papel, proporcionando uma vida útil da lâmina 40 a 60% maior do que as lâminas de corte de uso geral em substratos de papel revestidos e com enchimento.",
+          "As opções em aço para ferramentas, HSS, aço PM e com gume de metal duro oferecem aos transformadores de papel opções de materiais para os tipos de Papel tissue, kraft, revestido e reciclado.",
       },
       {
-        id: "shear-clearance",
-        tag: "PRECISÃO DE CORTE",
-        title:
-          "Qual folga de cisalhamento impede que o pó de fibra se acumule na borda do corte?",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Espessura e faces de corte retificadas com precisão",
         description:
-          "Os pares de lâminas superior e inferior combinados são pré-verificados de acordo com as especificações de folga para papel tissue (0,02–0,05 mm para papel tissue ultrafino, 0,05–0,10 mm para papel kraft). Essa folga controlada permite que a tesoura corte com precisão os feixes de fibras de celulose, sem rasgar nem gerar poeira de fibras suspensa no ar, que contamina as estações de rebobinagem e prejudica a qualidade do produto.",
+          "As lâminas para cortadoras de papel podem ser retificadas com precisão de acordo com a espessura especificada e o acabamento da superfície de trabalho, para a posição superior ou inferior no par de corte.",
       },
       {
-        id: "bore-locking-options",
-        tag: "AJUSTE DA MÁQUINA",
-        title:
-          "Quais opções de diâmetro interno, travamento e bisel estão disponíveis?",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Conjuntos personalizados de lâminas superiores e inferiores",
         description:
-          "As lâminas para cortadoras de papel são fornecidas com furos lisos, com chaveta ou tipo baioneta para se adequarem ao seu eixo, e são fixadas por meio de ranhura para chaveta, parafuso de fixação, excêntrico com chaveta ou excêntrico sem chaveta — dependendo do que sua cortadora ou rebobinadora utilizar. As lâminas superiores são retificadas com um perfil côncavo de bisel único de 15° a 20°, com bisel composto (de dois estágios) ou dorso retificado côncavo disponíveis nos casos em que a durabilidade do fio é mais importante do que um ângulo de aproximação extremamente fino. Envie o desenho da sua lâmina ou eixo atual e confirmaremos o furo, o sistema de travamento e o bisel antes de cortar o aço, para que a peça de reposição se encaixe, trave e corte exatamente como a original.",
+          "Furos personalizados, perfis côncavos, flanges da lâmina inferior e faces de corte permitem a substituição de lâminas individuais e a instalação de conjuntos completos em rebobinadoras de papel existentes.",
+        relatedBladeIds: ["slitter-rewinder-bottom-knives"],
       },
     ],
-    steelGrades: {
-      intro:
-        "As fibras de papel causam um desgaste diferente nas lâminas em comparação com o filme ou a folha metálica — a carga abrasiva provém dos enchimentos minerais presentes na massa de papel, e não da própria fibra. As classes abaixo abrangem a gama que oferecemos para papel, papel-toalha e papelão.",
-      rows: [
-        {
-          grade: "Aço para ferramentas D2",
-          hardness: "HRC 58–61",
-          bestFor:
-            "Papel kraft padrão, papelão para caixas e transformação de papelão ondulado — nosso tipo de papel padrão.",
-          tradeoff:
-            "Boa relação custo-benefício geral; a vida útil do gume diminui mais rapidamente do que a do M2 ou do metal duro em peças com alto teor de enchimento ou revestimento.",
-        },
-        {
-          grade: "Aço de alta velocidade M2",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Papel higiênico e de papel toalha de alta velocidade, acima de 400 m/min, em que a borda precisa manter a geometria sob ciclos térmicos.",
-          tradeoff:
-            "Custa mais do que o D2; o intervalo entre reafiações ainda é menor do que o do carboneto em grãos abrasivos.",
-        },
-        {
-          grade: "52100 Aço para rolamentos",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Papel de jornal comum, papel de revista e fibra reciclada de qualidade inferior, em que as taxas de desgaste são moderadas.",
-          tradeoff:
-            "Resistência à abrasão inferior à do D2 em materiais com enchimento ou revestimento — recomenda-se utilizá-lo preferencialmente em materiais mais puros.",
-        },
-        {
-          grade: "Carboneto de tungstênio",
-          hardness: "HRA 90–92",
-          bestFor:
-            "Papel revestido com alto teor de cinzas, papel artístico e papelão ondulado, nos quais os enchimentos minerais desgastam rapidamente a lâmina de aço entre uma troca e outra. Fornecidas na versão maciça ou com ponta de metal duro.",
-          tradeoff:
-            "Custo unitário mais elevado e maior fragilidade ao impacto do que o aço para ferramentas — requer avanço constante e alinhamento preciso para evitar lascas nas arestas.",
-        },
-      ],
-      outro:
-        "Estão disponíveis facas para corte de papel tanto de metal maciço quanto com ponta de metal duro. Informe-nos sobre o tipo de matéria-prima (virgem, reciclada, revestida ou com enchimento), a velocidade da linha de produção e o intervalo atual de reafiação, e confirmaremos o tipo de faca que reduz o custo total por corte, e não apenas o preço de tabela.",
-    },
-    dimensionLabels: {
-      col0: "Tipo de lâmina",
-      col1: "Diâmetro externo",
-      col2: "Diâmetro interno",
-      col3: "Espessura",
-      caption:
-        "* Dimensões padrão para a transformação de papel. Lâminas superiores (perfil côncavo para corte por cisalhamento) e lâminas inferiores (bigorna ranhurada para corte por esmagamento). Fabricamos lâminas para cortadoras de papel e bigornas com diâmetro externo (OD) de aproximadamente 50 a 320 mm, diâmetro interno de 20 a 100 mm e espessura de 0,8 a 20 mm (desde lâminas superiores côncavas finas até bigornas ranhuradas pesadas) — caso não se enquadre nos três conjuntos acima, envie o modelo da sua máquina e confirmaremos a correspondência mais próxima ou faremos o corte de acordo com suas dimensões.",
-    },
-    standardDimensions: [
-      {
-        spec: "Top Blade (Shear)",
-        od: "75 mm",
-        id: "45 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "70 mm",
-        id: "45 mm",
-        thickness: "10 / 8 mm",
-      },
-      {
-        spec: "Top Blade (Shear)",
-        od: "100 mm",
-        id: "32 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "80 mm",
-        id: "60 mm",
-        thickness: "20 / 16 mm",
-      },
-      {
-        spec: "Top Blade (Tissue)",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "108 mm",
-        id: "80 mm",
-        thickness: "20 / 18 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "tissue-log-saw-blades",
-      "corrugated-slitter-scorer-blades",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 280,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Que tipo de material devo usar para a conversão de papel-toalha em alta velocidade, a 500 m/min?",
+            "A Sureay pode reproduzir lâminas de corte de papel para o meu rebobinador atual?",
           answer:
-            "Especifique o aço rápido M2 com dureza HRC 62–64 para a conversão de papel-toalha a velocidades superiores a 400 m/min. O molibdênio e os metal duros presentes no M2 mantêm a geometria da aresta sob os ciclos térmicos gerados pelo corte em velocidade ultra-alta, proporcionando uma vida útil 2 a 3 vezes maior do que o D2 em tipos de papel tissue leves (12–18 GSM).",
+            "Sim. Um desenho ou amostra pode definir o diâmetro interno, o perfil e o arranjo de montagem para uma lâmina superior ou inferior de reposição. Inclua o tipo de papel e as dimensões da lâmina de acoplamento. A referência da peça original ajuda a distinguir as novas dimensões pretendidas de uma amostra desgastada. Para conjuntos com flange, copo ou anel substituível, consulte [Lâminas Inferiores para Cortadoras-Rebobinadoras](/products/slitter-rewinder-bottom-knives).",
         },
         {
           question:
-            "Como posso evitar a contaminação por pó de fibra na borda do corte?",
+            "Em que casos os papéis revestidos ou preenchidos justificam o uso de lâminas de corte de aço HSS ou de carboneto?",
           answer:
-            "A poeira de fibra é causada principalmente por uma folga de cisalhamento excessiva (>0,10 mm no papel tissue) ou por um acabamento superficial irregular da lâmina (Ra >0,6 μm), que rasga os feixes de fibras em vez de cortá-los de forma limpa. Especifique pares de lâminas de cisalhamento compatíveis com folga pré-verificada (0,02–0,05 mm para papel-toalha, 0,05–0,10 mm para papel kraft) e acabamento superficial Ra ≤ 0,4 μm. Isso reduz a poeira transportada pelo ar em 60–70% em comparação com as classes padrão de lâminas industriais.",
+            "Considere um material diferente para a aresta de corte quando a lâmina atual apresentar desgaste gradual no tipo específico de papel em questão. O conteúdo de revestimento ou de enchimento, a lâmina de acoplamento utilizada e as lascas observadas influenciam essa decisão. Compare a resistência ao desgaste com o comportamento da aresta no par existente, levando em conta a estabilidade da montagem e a configuração do corte na avaliação.",
         },
         {
           question:
-            "Devo usar o corte por cisalhamento ou o corte por esmagamento na transformação de papelão ondulado?",
+            "O que causa a formação de pó de papel ou bordas irregulares durante o corte transversal?",
           answer:
-            "Para papelão ondulado (ondulação B/C/E), o corte por compressão contra um rolo de bigorna ranhurado é o método padrão. A lâmina de bigorna comprime e fratura as fibras de papel de maneira limpa, sem a necessidade de manutenção precisa da folga de cisalhamento. O corte por cisalhamento é reservado para papéis revestidos leves e papéis-toalha, nos quais o arrastamento das fibras deve ser minimizado. Para aplicações em papelão ondulado acima de 200 m/min, especifique lâminas de anvil do tipo metal duro para resistir ao desgaste por compressão causado por papelão de várias camadas.",
+            "A estrutura do papel, o estado da lâmina de acoplamento, a estabilidade do suporte e a configuração do corte podem afetar a borda, mesmo quando a lâmina superior está afiada. Inspecione ambas as bordas de trabalho e compare a amostra cortada nas configurações normais de produção. Registrar o tipo de papel e as configurações ajuda a distinguir mudanças no material ou na configuração do desgaste do par de lâminas.",
         },
         {
           question:
-            "Com que frequência as lâminas de cortadoras de papel devem ser reafiadas e quantas reafiações são possíveis?",
+            "As lâminas de corte superior e inferior devem ser substituídas juntas?",
           answer:
-            "As lâminas de corte em linhas de transformação de papel-toalha (400–600 m/min) normalmente exigem reafiação a cada 40–60 horas de operação, devido às altas velocidades de corte e aos enchimentos minerais abrasivos presentes no papel-toalha. Para a transformação de papel kraft e papelão (200–300 m/min), o intervalo entre afiações se estende para 80–120 horas. As lâminas M2 HSS e D2 podem ser reafiadas de 4 a 6 vezes antes que o diâmetro externo (OD) fique abaixo do diâmetro operacional mínimo. Oferecemos um serviço de reafiação que inclui a reverificação da dureza e a verificação dimensional por CMM.",
+            "Elas podem ser encomendadas separadamente quando o componente retido estiver em condições adequadas e a geometria de trabalho for conhecida. Verifique a face de corte inferior, bem como a borda superior. Se alguma das lâminas tiver sido reafiada, confirme suas dimensões restantes antes de selecionar uma única peça de reposição ou encomendar um par completo compatível.",
         },
         {
           question:
-            "O que causa variações na qualidade da borda cortada ao longo de toda a largura da banda de papel?",
+            "As lâminas côncavas, as lâminas superiores e as lâminas macho são a mesma peça?",
           answer:
-            "A qualidade irregular do corte (corte limpo de um lado e arrasto de fibras do outro) indica uma montagem irregular das lâminas ou expansão térmica diferencial ao longo do eixo. Verifique se todas as lâminas no eixo foram retificadas com tolerância de espessura de ±0,002 mm e se o desvio do eixo é ≤0,02 mm T.I.R. A expansão térmica pode ser mitigada utilizando-se materiais metalúrgicos compatíveis (todas D2 ou todas M2) em todo o conjunto de lâminas, garantindo coeficientes de expansão térmica uniformes durante a operação em alta velocidade.",
+            "Esses nomes geralmente se referem ao elemento superior de um par de lâminas de corte por cisalhamento. “Dished” descreve o formato axial, enquanto “top” e “male” descrevem a posição da lâmina. Também existem lâminas com topo plano. Compare o perfil real, o arranjo de montagem e a relação com a lâmina inferior para identificar a peça de reposição correta a partir desses termos de compra.",
+        },
+        {
+          question:
+            "Por que a espessura da lâmina e a altura da concavidade são listadas separadamente?",
+          answer:
+            "A espessura da lâmina mede a seção do material; a altura do perfil côncavo mede o perfil axial total da lâmina. Duas lâminas côncavas podem ter o mesmo diâmetro externo e furo, mas posicionam suas arestas de corte de maneira diferente. Manter essas dimensões separadas permite que a lâmina de reposição se encaixe no suporte existente e no arranjo da lâmina inferior, preservando ao mesmo tempo a posição pretendida da aresta de trabalho.",
+        },
+        {
+          question:
+            "Quando as lâminas de cortadoras de papel devem ser reafiadas ou substituídas?",
+          answer:
+            "O reafiamento é indicado quando a geometria de corte desgastada pode ser restaurada dentro das dimensões permitidas da lâmina. Inspecione a aresta, as faces de trabalho e o alinhamento com a lâmina contrária antes de tomar uma decisão. O desenho da lâmina e os requisitos da máquina definem a geometria remanescente permitida. A substituição é indicada quando danos ou perda dimensional impedem que essa geometria seja restaurada.",
         },
       ],
-      company: [
-        {
-          question:
-            "A Sureay pode fornecer facas compatíveis com nossa cortadora/rebobinadora Atlas Converting ou Kampf já instalada?",
-          answer:
-            "Sim. Envie-nos uma amostra da sua lâmina atual ou o número do modelo da máquina. Confirmaremos o diâmetro externo (OD), o diâmetro interno (ID), o perfil do furo e a espessura da lâmina, e forneceremos lâminas de substituição direta fabricadas de acordo com as especificações do fabricante original (OEM). Estão disponíveis padrões de ranhuras personalizados para rolos de bigorna, destinados a aplicações específicas de conversão de papelão ondulado e chapas de papelão.",
-        },
-        {
-          question:
-            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são despachadas em até 48 horas. Perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question:
-            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com a fabricação de ferramentas até que o ajuste seja confirmado.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "groove-bottom-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Adquira lâminas de reposição para cortadoras de folhas de cobre e alumínio com larguras e furos personalizados, além de espaçadores compatíveis para o seu conjunto de eixo. Envie à Sureay seus desenhos e a tabela de larguras de corte para receber um orçamento que inclua as ferramentas de que você precisa.",
     id: "metal-foil-strip-slitter-knives",
-    name: "Cortadoras de bobinas e tiras",
-    fullName:
-      "Facas rotativas de precisão para corte de tiras metálicas, bobinas e folhas finas",
+    name: "Facas de corte longitudinal para folhas de cobre e alumínio",
+    fullName: "Facas de corte longitudinal para folhas de cobre e alumínio",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Facas para cortadoras de tiras metálicas",
+    categoryDisplay:
+      "Facas de corte longitudinal para folhas de cobre e alumínio",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Processamento de metais",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
-    ],
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lâminas circulares de alta precisão para centros de serviços de metal e laminadoras a frio. Aço para ferramentas ASP23/ASP52 PM e metal duro maciço, retificado com tolerância de espessura rigorosa de ±0,001 mm. Projetadas para o corte em série sem rebarbas de tiras e bobinas de alumínio, tiras de cobre, aço inoxidável e aço silício de grãos orientados.",
-    fullDescription:
-      "O corte de precisão de tiras e folhas metálicas exige desempenho metalúrgico e precisão dimensional que excedem em muito as aplicações padrão de corte. Ao processar metais de espessura fina (0,01 mm a 1,5 mm), mesmo um defeito microscópico na lâmina ou um desvio de espessura pode causar curvatura lateral, rebarbas nas bordas e bobinas rejeitadas. As lâminas Sureay facas circulares de corte longitudinal são retificadas com precisão para uma tolerância de espessura de ±0,001 mm e um desvio total indicado (T.I.R.) de ≤0,01 mm, garantindo um alinhamento perfeito em conjuntos de eixos com múltiplas lâminas.\n\n## Metalurgia avançada para metais finos\n\nO corte de diferentes ligas metálicas requer materiais específicos para as lâminas, a fim de evitar o embotamento rápido, lascas nas arestas ou aderência do material (soldagem a frio).\n\n**Aço ASP23 de metalurgia do pó (PM):** Uma melhoria significativa em relação ao D2 convencional. Sua estrutura de carboneto ultrafina e uniforme proporciona uma vida útil da lâmina 3 a 5 vezes maior em folhas de alumínio para embalagem, tiras de latão e aço carbono de espessura fina em geral, sem microlascações.\n\n**Aço ASP52 de metalurgia do pó (PM):** Projetado para materiais de alta resistência à tração. Com 11% de teor de vanádio, o ASP52 oferece a extrema resistência à abrasão necessária para o corte de tiras de aço inoxidável duro, aço silicioso de grãos orientados (núcleos de transformadores) e cobre-berílio.\n\n**Carboneto de tungstênio maciço:** A especificação definitiva para folhas ultrafinas (<0,05 mm), nas quais bordas afiadas como lâminas e sem rebarbas são obrigatórias em campanhas de produção prolongadas e em alta velocidade.\n\n## Eliminando o erro cumulativo do eixo\n\nEm linhas de corte em série, podem ser empilhadas de 10 a 40 lâminas zGTR1 em um único eixo. O erro de espessura de cada lâmina se acumula: um erro de ±0,003 mm por lâmina resulta em um enorme erro de ±0,060 mm em uma pilha de 20 lâminas, garantindo larguras de bobinas fora das especificações. Nós retificamos todas as lâminas de corte para metais e os espaçadores correspondentes com uma tolerância de espessura rigorosa de ±0,001 mm, verificando-as em equipamentos CMM para garantir erro cumulativo zero.\n\n## Acabamento de superfície antidesgaste\n\nAo cortar metais não ferrosos, como alumínio e cobre macio, o pó metálico tende a aderir à face da lâmina (desgaste por atrito), o que risca gravemente a superfície das bobinas cortadas. As lâminas para cortadoras de metais da Sureay apresentam um acabamento lateral altamente polido e com lapidação espelhada (Ra ≤ 0,02 μm) que reduz drasticamente o atrito e impede a adesão do material, garantindo bordas de bobinas impecáveis.",
+      "facas circulares de corte longitudinals de reposição para folhas de cobre e alumínio. Opções em metal duro, aço para ferramentas e aço PM, com furos, larguras e espaçadores personalizados.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Kampf",
-      "Sundwig",
-      "GOEBEL IMS",
-      "Fagor Arrasate",
-      "Camu",
-      "Heinrich Georg",
-      "Kohler",
-      "Yuri Roll",
-      "Hohsen",
-    ],
     specs: [
       {
+        label: "Tamanhos",
+        value: "OD 100–300 mm",
+      },
+      {
         label: "Material",
-        value: "ASP23, ASP52 (PM Steel), Solid Tungsten Carbide, D2/D3",
+        value: "D2, D3, M2, ASP2023, ASP2052 ou metal duro (WC-Co)",
       },
       {
-        label: "Hardness",
-        value: "HRC 64–67 (PM Steel) | HRA 91–92 (Carbide)",
+        label: "Aplicações",
+        value: "Folha de cobre e folha de alumínio",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Dureza",
+        value: "64–67 HRC para aço PM; 91–92 HRA para metal duro",
       },
       {
-        label: "Runout (T.I.R.)",
-        value: "≤ 0.01 mm",
+        label: "Tolerância de espessura",
+        value: "±0.001 mm",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror-lapped Ra ≤0.02μm — prevents galling on Al/Cu",
+        label: "Desvio",
+        value: "≤0.01 mm T.I.R.",
       },
       {
-        label: "Application",
-        value: "Aluminum Foil, SS Strips, Silicon Steel, Brass/Copper",
+        label: "Acabamento superficial",
+        value: "Superfícies lapidadas a espelho, Ra ≤ 0,02 μm",
       },
+      {
+        label: "Montagem",
+        value: "Lâminas montadas em eixo com furos lisos ou com chaveta",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Lâminas para cortadoras de folhas de cobre e alumínio | Personalizadas",
+      sizeRange: "OD 100–300 mm",
+      heroAlt:
+        "Faca circular para cortadora de folhas metálicas com face polida e furo liso",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-foil-strip-slitter-knives-keyway.webp",
+        alt: "Faca circular para cortadora de folha metálica, apresentando uma ranhura no furo",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Facas de corte longitudinal",
+          title: "Facas de corte longitudinal",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Material",
+          ],
+          rows: [
+            ["SR001253", "130 × 60 × 1 mm", "metal duro"],
+            ["SR001254", "130 × 60 × 2 mm", "metal duro"],
+            ["SR001255", "130 × 60 × 3 mm", "metal duro"],
+            ["SR001256", "130 × 60 × 4 mm", "metal duro"],
+            ["SR001257", "130 × 66.68 × 1 mm", "metal duro"],
+            ["SR001258", "130 × 66.68 × 2 mm", "metal duro"],
+            ["SR001259", "130 × 66.68 × 3 mm", "metal duro"],
+            ["SR001260", "130 × 66.68 × 4 mm", "metal duro"],
+            ["SR001261", "130 × 66.68 × 5 mm", "metal duro"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel:
+            "Tamanhos adicionais de lâminas para folhas metálicas e tiras",
+          title: "Tamanhos adicionais de lâminas para folhas metálicas e tiras",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de lâmina / Referência da plataforma",
+          ],
+          rows: [
+            [
+              "SR001813",
+              "100 × 40 × 1.0 / 1.5 mm",
+              "Cortadora de folhas finas",
+            ],
+            [
+              "SR001814",
+              "150 × 80 × 2.0 / 3.0 mm",
+              "Cortadora de tiras de precisão",
+            ],
+            [
+              "SR001815",
+              "200 × 120 × 3.0 / 4.0 mm",
+              "Cortadora de tiras geral",
+            ],
+            [
+              "SR001816",
+              "250 × 150 × 4.0 / 5.0 mm",
+              "Silício / Aço inoxidável",
+            ],
+            [
+              "SR001817",
+              "300 × 200 × 5.0 / 10.0 mm",
+              "Tira de espessura grossa",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "OD 100–300 mm",
+        },
+        {
+          label: "Material",
+          value: "D2, D3, M2, ASP2023, ASP2052 ou metal duro (WC-Co)",
+        },
+        {
+          label: "Aplicações",
+          value: "Folha de cobre e folha de alumínio",
+        },
+        {
+          label: "Dureza",
+          value: "64–67 HRC para aço PM; 91–92 HRA para metal duro",
+        },
+        {
+          label: "Tolerância de espessura",
+          value: "±0.001 mm",
+        },
+        {
+          label: "Desvio",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Acabamento superficial",
+          value: "Superfícies lapidadas a espelho, Ra ≤ 0,02 μm",
+        },
+        {
+          label: "Montagem",
+          value: "Lâminas montadas em eixo com furos lisos ou com chaveta",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Red Bud Industries",
+      "Fagor Arrasate",
+      "Burghardt + Schmidt",
+      "Heinrich Georg",
     ],
     components: [
       {
-        id: "pm-metallurgy",
-        tag: "DURABILIDADE",
-        title: "Aço produzido por metalurgia do pó (PM)",
+        id: "selection-1",
+        tag: "Seleção",
+        title:
+          "Opções de aço para ferramentas e metal duro para folhas metálicas",
         description:
-          "Os aços de forja ASP23 e ASP52 eliminam a segregação de carbonetos em faixas observada no D2 fundido. Essa estrutura de grãos submicrométrica evita o lascamento das arestas ao cortar tiras de aço inoxidável ou de silício duras e de alta resistência à tração.",
+          "As opções D2, D3, M2, PM HSS e metal duro oferecem aos processadores de folhas metálicas opções de materiais para seus tipos de cobre ou alumínio, espessura da folha e desgaste observado da lâmina.",
       },
       {
-        id: "cumulative-tolerance",
-        tag: "PRECISÃO",
-        title: "Erro cumulativo zero",
+        id: "selection-2",
+        tag: "Configuração",
+        title:
+          "Faces de lâmina retificadas com precisão para ferramentas de folha metálica",
         description:
-          "Em configurações de corte em série, os erros de espessura da lâmina se acumulam rapidamente. Nosso retificado de precisão de ±0,001 mm garante que as dimensões do eixo permaneçam perfeitamente dentro das especificações, economizando horas de configuração e ajuste com calços.",
+          "A Sureay fornece lâminas para folhas metálicas retificadas com precisão, fabricadas de acordo com as larguras axiais e o acabamento da face de trabalho especificados, permitindo a substituição de lâminas individuais em seu conjunto de eixos existente.",
       },
       {
-        id: "anti-galling",
-        tag: "QUALIDADE DA SUPERFÍCIE",
-        title: "Polidor antidesgaste",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Lâminas personalizadas e espaçadores correspondentes",
         description:
-          "O corte longitudinal de alumínio e cobre costuma fazer com que o pó metálico se “soldar a frio” à lâmina, arranhando a borda da bobina. Nossas faces laterais com acabamento espelhado (Ra ≤ 0,02 μm) reduzem drasticamente o atrito, impedindo totalmente a aderência do material.",
+          "Encomende facas para folhas metálicas personalizadas e espaçadores correspondentes em conjunto, com larguras individuais, detalhes de furo e quantidades definidas de acordo com sua programação de largura de corte e ferramentas existentes.",
       },
     ],
-    dimensionLabels: {
-      col0: "Aplicação típica",
-      col1: "Diâmetro externo",
-      col2: "Diâmetro interno",
-      col3: "Espessura",
-      caption:
-        "* As dimensões correspondem aos padrões comuns dos centros de serviços de metais. Fabricamos de acordo com as especificações exatas das máquinas e podemos fornecer espaçadores de alta precisão correspondentes, retificados com a mesma tolerância de ±0,001 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Thin Foil Slitter",
-        od: "100 mm",
-        id: "40 mm",
-        thickness: "1.0 / 1.5 mm",
-      },
-      {
-        spec: "Precision Strip Slitter",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "2.0 / 3.0 mm",
-      },
-      {
-        spec: "General Strip Slitter",
-        od: "200 mm",
-        id: "120 mm",
-        thickness: "3.0 / 4.0 mm",
-      },
-      {
-        spec: "Silicon / Stainless Steel",
-        od: "250 mm",
-        id: "150 mm",
-        thickness: "4.0 / 5.0 mm",
-      },
-      {
-        spec: "Heavy Gauge Strip",
-        od: "300 mm",
-        id: "200 mm",
-        thickness: "5.0 / 10.0 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 750,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Devo usar a D2 ou a ASP23 para cortar tiras de aço inoxidável?",
+            "Como faço para especificar facas de substituição personalizadas para folhas metálicas e espaçadores correspondentes?",
           answer:
-            "Embora o D2 seja adequado para aços carbono macios, o corte de aço inoxidável de alta resistência causa desgaste rápido e microlascas nas bordas do D2. O aço de metalurgia do pó ASP23 é altamente recomendado para tiras de aço inoxidável com espessura inferior a 1,0 mm. Sua estrutura uniforme de carboneto resiste a lascas, proporcionando uma vida útil da lâmina de 3 a 5 vezes maior do que a do D2 e minimizando o tempo de inatividade da máquina.",
+            "Especifique o diâmetro externo, o furo, a largura axial e a ranhura de chaveta de cada lâmina, juntamente com as larguras dos espaçadores e a disposição da pilha. Inclua a especificação da folha metálica, a tabela de larguras de corte e a quantidade de cada configuração. Identifique as peças que permanecerão em uso para que novas lâminas e espaçadores possam ser considerados no layout completo do eixo.",
         },
         {
           question:
-            "Como evitar o “desgaste por atrito” ou o acúmulo de metal ao cortar alumínio em tiras?",
+            "Como a espessura da folha e os danos nas bordas afetam a escolha entre aço ou carboneto?",
           answer:
-            "O alumínio é altamente suscetível ao atrito excessivo (soldagem a frio na lâmina). Evitamos isso realizando um polimento espelhado nas faces laterais das lâminas, até atingir uma rugosidade superficial de Ra ≤ 0,02 μm. Esse acabamento ultraliso reduz o coeficiente de atrito, impedindo que partículas de alumínio adiram à lâmina e arranhem suas bobinas acabadas.",
+            "A liga da folha, a espessura, o estado da superfície e a borda de corte exigida constituem o ponto de partida. Compare o desgaste gradual da lâmina atual e qualquer lasca na borda nessa estação. A escolha do material deve atender às condições observadas, mantendo a geometria exigida da lâmina e a configuração emparelhada, em vez de ser selecionada apenas com base na dureza.",
         },
         {
           question:
-            "Por que é necessária uma tolerância de espessura de ±0,001 mm?",
+            "O que pode causar rebarbas na folha de cobre ou alumínio cortada?",
           answer:
-            "Nas operações de corte em série, várias lâminas e espaçadores são empilhados no eixo. Se uma lâmina tiver uma tolerância de ±0,005 mm, o empilhamento de 20 lâminas gera um erro cumulativo de ±0,100 mm. Isso fará com que as bobinas cortadas fiquem fora das especificações de largura e provoque curvatura (compartimento). Nossa tolerância de ±0,001 mm garante precisão absoluta em toda a pilha do eixo.",
+            "O estado da lâmina, as folgas de montagem, o estado do eixo e o alinhamento devem ser verificados sempre que surgirem rebarbas. Compare as especificações da lâmina com a configuração em uso e, em seguida, registre qual borda e qual posição de corte foram afetadas. Isso facilita distinguir uma lâmina danificada de um problema recorrente relacionado à pilha ou à configuração operacional.",
         },
         {
-          question: "Vocês podem fornecer espaçadores de precisão compatíveis?",
+          question:
+            "Por que as larguras de corte podem variar mesmo quando as facas individuais estão calibradas corretamente?",
           answer:
-            "Sim, o corte de precisão exige que tanto as lâminas quanto os espaçadores tenham tolerâncias idênticas. Fabricamos separadores/espaçadores leves de alumínio, aço e borracha colada, retificados com as mesmas tolerâncias de espessura de ±0,001 mm que nossas lâminas de corte.",
+            "A largura axial de uma lâmina descreve o componente individual, enquanto o conjunto montado de lâmina e espaçador define as posições de corte. As lâminas de reposição precisas ainda precisam ocupar as posições pretendidas dentro desse layout. Verifique suas dimensões juntamente com o desenho da pilha e as larguras dos espaçadores, especialmente quando alguns componentes forem mantidos de uma configuração existente.",
+        },
+        {
+          question:
+            "As lâminas para folhas metálicas nuas e as lâminas revestidas para eletrodos de bateria são intercambiáveis?",
+          answer:
+            "Folhas de cobre ou alumínio nuas e eletrodos revestidos para baterias apresentam requisitos de corte diferentes. Um eletrodo combina uma folha coletora com camadas de revestimento; portanto, seu perfil de corte e configuração de pares devem se adequar a essa construção. Identifique a fita e a estação específicas ao selecionar uma peça de reposição; as aplicações de ânodos e cátodos revestidos são abordadas em [Facas de Corte para Baterias](/products/lithium-battery-slitting-knives).",
+        },
+        {
+          question:
+            "Posso reutilizar os espaçadores existentes ao substituir as lâminas de corte de folha metálica?",
+          answer:
+            "Sim, desde que os espaçadores mantidos ainda atendam aos requisitos de largura, furo e face da pilha pretendida. Registre suas dimensões e posições reais juntamente com as novas larguras das lâminas e a tabela de larguras de corte. Confirme o layout montado antes de fazer o pedido, para que as lâminas de reposição funcionem com os espaçadores que você pretende manter.",
         },
       ],
-      company: [
-        {
-          question:
-            "Vocês fornecem conjuntos de facas combinados com relatórios de inspeção?",
-          answer:
-            "Sim. Para eixos de corte em série com várias lâminas, fornecemos conjuntos combinados acompanhados de um relatório inspeção CMM. Esse documento indica a espessura exata de cada lâmina individual, garantindo que o conjunto atenda aos seus requisitos de tolerância cumulativa antes da instalação.",
-        },
-        {
-          question:
-            "Qual é o prazo de entrega das lâminas de corte em aço PM ou de metal duro?",
-          answer:
-            "As dimensões padrão D2 e as dimensões básicas de aço PM podem, normalmente, ser fabricadas em 10 a 15 dias úteis. O carboneto de tungstênio maciço e as ligas PM altamente especializadas exigem processos complexos de lapidação e retificação, o que geralmente leva de 15 a 25 dias úteis, dependendo do diâmetro externo e dos requisitos de tolerância.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Mantenha sua linha de reciclagem abastecida com lâminas de reposição de eixo duplo (facas para trituradores) projetadas para se adequarem ao seu conjunto de cortadores existente. Estão disponíveis perfis de gancho personalizados, espessuras e furos para eletroerosão a fio (EDM). Envie seu desenho ou amostra para obter um orçamento para cortadores individuais ou um conjunto completo. As marcas das máquinas servem como referência de compatibilidade para as peças de reposição da Sureay.",
     id: "twin-shaft-blades-recycling",
-    name: "Lâminas para triturador de eixo duplo",
+    name: "Facas para trituradores de dois eixos",
     fullName:
-      "Lâminas de garra de eixo duplo D2/SKD11 para serviços pesados, destinadas à reciclagem de plástico, resíduos sólidos urbanos e madeira",
+      "Facas para trituradores de dois eixos de uso geral na reciclagem",
+    seoTitle:
+      "facas para trituradores de eixo duplo | Plásticos e resíduos mistos",
+    seoDescription:
+      "facas para trituradores de eixo duplo de reposição para plásticos, paletes de madeira e resíduos mistos. Opções em D2, SKD11 e 42CrMo, com ganchos e furos personalizados.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lâminas de triturador",
-    image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+    categoryDisplay: "Facas para trituradores",
+    image:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
+    imageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
     gallery: [
-      "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Eixo duplo (facas para trituradores) para reciclagem de plástico, pneus, metal e resíduos sólidos urbanos. Carboneto de cromo D2/SKD11, endurecido a vácuo a HRC 55–62 com tratamento criogênico profundo. Projetado com base no princípio de ação em tesoura cruzada para trituração de alto volume. Geometrias personalizadas de garras de 3 a 12. Furos usinados por eletroerosão a fio (EDM) para encaixe sem folga em rotores Weima, Untha, SSI e Vecoplan.",
-    fullDescription:
-      "Os facas para trituradores de eixo duplo operam com base no princípio da ação em tesoura, em que dois eixos contrarrotativos com lâminas em forma de garras interligadas cortam a matéria-prima por meio de uma interface em tesoura, proporcionando uma força de preensão agressiva com baixa demanda de torque.\n\nAo processar resíduos volumosos altamente abrasivos — como RSU contaminados com metal, resíduos de plástico de parede espessa ou fardos mistos de plástico rígido —, lâminas de baixa qualidade sofrem com o arredondamento prematuro das bordas, o alongamento do furo e a fratura catastrófica dos ganchos.\n\nOs eixos múltiplos facas para trituradores da Sureay são fabricados a partir de aços para ferramentas D2 (1.2379), SKD11 e 42CrMo, aços para ferramentas, endurecidos a vácuo e revenidos por meio de 4 a 5 ciclos para alcançar uma microestrutura martensítica totalmente estabilizada (HRC 55–62). A etapa de tratamento criogênico profundo abaixo de zero (−196 °C, imersão de 24 horas) elimina a austenita retida e aumenta substancialmente a resistência ao desgaste sem sacrificar a margem de tenacidade necessária para evitar fraturas em massa em matérias-primas contaminadas.\n\n## Geometria do gancho otimizada por FEA\n\nO perfil do gancho de corte determina a eficiência de preensão e a resistência à fadiga. A Sureay utiliza simulação por Análise de Elementos Finitos (FEA) para otimizar a distribuição de tensões na lâmina durante impactos de alto torque. Os projetos de três garras (3C) proporcionam força de preensão agressiva para madeiras de grandes dimensões e contêineres IBC; as configurações de 8 garras (8C) são otimizadas para plásticos rígidos misturados e resíduos sólidos urbanos (RSU); as variantes de 12 garras (12C) produzem partículas de tamanho mais fino para processamento posterior. Todos os perfis dos ganchos são reforçados no raio da raiz para resistir à deformação sob carga cíclica sustentada.\n\n## Furos com precisão por eletroerosão a fio (Wire-EDM)\n\nUm encaixe folgado entre o furo da lâmina e o eixo do rotor cria microimpactos que alongam progressivamente o furo e destroem o eixo. A Sureay elimina esse tipo de falha: todos os furos internos de montagem — hexagonais, octogonais ou estriados — são usinados por meio de eletroerosão por fio de precisão, garantindo um encaixe perfeito, sem folga, para sistemas de rotores SSI, Untha, Weima e Vecoplan.\n\n## Seleção de ligas por tipo de matéria-prima\n\nD2 (1.2379) — Plásticos mistos e resíduos leves: garrafas de HDPE pós-consumo, bandejas de PET, peças moldadas de PP e fardos de plástico rígido misto. Resistência à abrasão com carboneto de cromo com boa relação custo-benefício para linhas de reciclagem em geral.\n\nSKD11 — Fluxos contaminados com materiais abrasivos: Plásticos de engenharia reforçados com fibra de vidro, filmes agrícolas sujos e sucata pós-industrial altamente contaminada. A tenacidade superior do SKD11 prolonga a vida útil das pastilhas em materiais de superfície dura dentro de fluxos contaminados.\n\n42CrMo — Resíduos com madeira e metais: paletes de madeira, resíduos sólidos urbanos volumosos e sucata pós-industrial com risco de contaminação por metais. A maior absorção de energia de impacto do 42CrMo evita a fratura por fragilidade que causa danos catastróficos ao rotor em caso de impacto com metal.\n\nOs trituradores de eixo duplo Sureay facas para trituradores têm comprovada eficácia em aplicações exigentes em todo o mundo: trituradores de plástico facas para trituradores para reciclagem pós-consumo, trituradores de pneus facas para trituradores para produção de combustível derivado de resíduos (TDF) e borracha triturada, e trituradores de metal facas para trituradores para processamento de sucata ferrosa e não ferrosa de espessura fina.",
+      "Lâminas de reposição D2/SKD11 para trituradores de eixo duplo que processam plásticos, madeira e resíduos sólidos urbanos. Diâmetros internos, espessuras e perfis de gancho personalizados, fabricados conforme desenho.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
-    compatibleMachines: [
-      "WEIMA",
-      "UNTHA",
-      "Vecoplan",
-      "SSI Shredding Systems",
-      "Lindner",
-      "Erdwich",
-      "BRT Hartner",
-      "ZERMA",
-    ],
     specs: [
       {
         label: "Material",
         value: "D2 (1.2379), SKD11, 42CrMo",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–62 (4–5 tempering cycles)",
+        label: "Dureza",
+        value: "55–62 HRC (4–5 ciclos de revenimento)",
       },
       {
-        label: "Claw Count",
-        value: "3-Claw · 8-Claw · 12-Claw (custom)",
+        label: "Contagem de garras",
+        value: "3 garras · 5 garras · 8 garras · 12 garras",
       },
       {
-        label: "Thickness",
-        value: "10 mm – 150 mm",
+        label: "Projeto do furo",
+        value:
+          "Eletróeroção por fio de precisão: hexagonal / octogonal / estriado",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM: Hex / Octagonal / Splined",
-      },
-      {
-        label: "Compatibility",
+        label: "Compatibilidade",
         value: "Weima, Untha, SSI, Vecoplan, Genox",
       },
       {
-        label: "Application",
-        value: "MSW · Plastics · Wood Pallets · Bulky Waste",
+        label: "Aplicação",
+        value:
+          "Resíduos Sólidos Urbanos · Plásticos · Paletes de madeira · Resíduos volumosos",
+      },
+      {
+        label: "Tamanhos",
+        value:
+          "Diâmetro externo (Ø) listado: Ø150–450 mm; diâmetro externo personalizado até Ø800 mm; espessura: 10–150 mm",
       },
     ],
-    components: [
-      {
-        id: "fea-geometry",
-        tag: "ENGENHARIA",
-        title: "Perfil do gancho otimizado por FEA",
-        description:
-          "A geometria do gancho foi projetada por meio da Análise de Elementos Finitos para eliminar concentradores de tensão. As configurações de 3, 8 e 12 garras proporcionam a força de preensão adequada para cada tipo de matéria-prima.",
-      },
-      {
-        id: "wire-edm",
-        tag: "PRECISÃO",
-        title: "Furos por eletroerosão por fio de alta precisão",
-        description:
-          "Todos os furos de montagem são usinados por eletroerosão a fio (Wire-EDM) com precisão de ±0,01 mm, garantindo um encaixe perfeito sem folga que elimina o micro-balanço, responsável por danos no eixo e alongamento do furo.",
-      },
-      {
-        id: "cryogenic-treatment",
-        tag: "METALURGIA",
-        title: "Tratamento criogênico profundo",
-        description:
-          "O tratamento criogênico pós-têmpera a −196 °C elimina a austenita retida, estabilizando a microestrutura martensítica e proporcionando uma resistência ao desgaste até 40% maior, sem reduzir a tenacidade.",
-      },
+    relatedBladeIds: [
+      "multi-shaft-blades-metal",
+      "tire-shredder-blades",
+      "twin-shaft-blades-battery",
     ],
     dimensionLabels: {
       col0: "Série Shredder",
@@ -740,146 +921,221 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "200 Series",
+        itemNo: "SR002101",
+        spec: "Série 200",
         od: "Φ 150 mm",
         thickness: "15 mm",
-        bore: "Hex Ø70 mm",
-        hooks: "5-Claw",
+        bore: "Seixilha de Ø70 mm",
+        hooks: "5 garras",
       },
       {
-        spec: "400 Series",
+        itemNo: "SR002102",
+        spec: "Série 400",
         od: "Φ 180 mm",
         thickness: "20 mm",
-        bore: "Hex Ø90 mm",
-        hooks: "8-Claw",
+        bore: "Sextavado Ø90 mm",
+        hooks: "8 garras",
       },
       {
-        spec: "600 Series",
+        itemNo: "SR002103",
+        spec: "Série 600",
         od: "Φ 200 mm",
         thickness: "20 mm",
-        bore: "Hex Ø140 mm",
-        hooks: "8-Claw",
+        bore: "Sextavado Ø140 mm",
+        hooks: "8 garras",
       },
       {
-        spec: "800 Series",
+        itemNo: "SR002104",
+        spec: "Série 800",
         od: "Φ 250 mm",
         thickness: "25 mm",
-        bore: "Hex Ø160 mm",
-        hooks: "8-Claw",
+        bore: "Sextavado Ø160 mm",
+        hooks: "8 garras",
       },
       {
-        spec: "1000 Series",
+        itemNo: "SR002105",
+        spec: "Série 1000",
         od: "Φ 300 mm",
         thickness: "30 mm",
-        bore: "Hex Ø180 mm",
-        hooks: "12-Claw",
+        bore: "Sextavado Ø180 mm",
+        hooks: "12 garras",
       },
       {
-        spec: "1200 Series",
+        itemNo: "SR002106",
+        spec: "Série 1200",
         od: "Φ 350 mm",
         thickness: "40 mm",
-        bore: "Splined Ø200 mm",
-        hooks: "12-Claw",
+        bore: "Estriado Ø200 mm",
+        hooks: "12 garras",
       },
       {
-        spec: "1500 Series",
+        itemNo: "SR002107",
+        spec: "Série 1500",
         od: "Φ 400 mm",
         thickness: "40 mm",
-        bore: "Splined Ø220 mm",
-        hooks: "3-Claw",
+        bore: "Estriado Ø220 mm",
+        hooks: "3 garras",
       },
       {
-        spec: "2000 Series",
+        itemNo: "SR002108",
+        spec: "Série 2000",
         od: "Φ 450 mm",
         thickness: "30 mm",
-        bore: "Splined Ø260 mm",
-        hooks: "3-Claw",
+        bore: "Estriado Ø260 mm",
+        hooks: "3 garras",
       },
-    ],
-    relatedBladeIds: [
-      "tire-shredder-blades",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
     ],
     offers: {
       lowPrice: 45,
       highPrice: 600,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-recycling-advantage-1",
+        tag: "Opções de aço para reciclagem geral",
+        title: "Opções de aço para reciclagem geral",
+        description:
+          "Estão disponíveis lâminas D2, SKD11 e 42CrMo para trituração de plásticos, paletes de madeira e resíduos mistos, oferecendo aos pedidos de reposição uma opção de material, além da geometria exigida para o gancho e o eixo.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-2",
+        tag: "Ganchos personalizados e furos para eletroerosão a fio",
+        title: "Ganchos personalizados e furos para eletroerosão a fio",
+        description:
+          "A Sureay fabrica cortadores em gancho com furos hexagonais, octogonais ou estriados. As configurações listadas variam de Ø150 a 450 mm, com diâmetros personalizados de até Ø800 mm para substituições baseadas em desenhos técnicos.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-3",
+        tag: "Lâminas individuais e conjuntos completos de troca",
+        title: "Lâminas individuais e conjuntos completos de troca",
+        description:
+          "Solicite uma configuração de cortador único ou um conjunto que abranja várias posições do eixo, com as espessuras, orientações dos ganchos e quantidades necessárias definidas para o seu conjunto de corte instalado.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Como faço para escolher entre os modelos de lâmina de 3, 8 e 12 garras?",
+            "Quais lâminas de reposição são compatíveis com um triturador de eixo duplo?",
           answer:
-            "O número de garras controla diretamente a frequência de preensão da lâmina e o tamanho das partículas produzidas. As lâminas de 3 garras (3C) são projetadas para a trituração primária de alto torque de materiais volumosos — paletes de madeira e grandes recipientes de HDPE —, onde a geometria agressiva dos ganchos proporciona máxima preensão. A configuração de 8 garras (8C) é o padrão de uso geral para resíduos sólidos urbanos mistos, fardos de plástico e sucata pós-industrial. As configurações de 12 garras (12C) produzem partículas finas a partir de matérias-primas mais leves, como plásticos domésticos rígidos e embalagens.",
+            "Uma peça de reposição se encaixa quando seu furo, perfil do gancho, espessura e orientação de instalação correspondem à sua posição na pilha de lâminas. Duas lâminas com o mesmo diâmetro externo podem ter tamanhos de furo ou direções de gancho diferentes. Use a referência da peça e o layout do espaçador para distinguir lâminas semelhantes.",
         },
         {
           question:
-            "Por que a Sureay utiliza a eletroerosão a fio (Wire-EDM) para furos internos em vez da brocagem?",
+            "As facas para trituradores de eixo duplo, eixo duplo e eixo duplo são a mesma coisa?",
           answer:
-            "A brocagem padrão gera tolerâncias dimensionais de ±0,1–0,2 mm e introduz tensão residual na superfície da parede do furo. Ao longo de milhões de ciclos do rotor, essa folga permite o micro-balanço — um alongamento progressivo do furo que, eventualmente, destrói o eixo do rotor. A eletroerosão por fio de precisão usina furos com precisão de ±0,01 mm e uma superfície de corte livre de tensões, eliminando a folga que causa o micro-balanço.",
+            "Sim. Em equipamentos de reciclagem com cisalhamento rotativo, todos os três nomes geralmente se referem aos cortadores nos dois eixos da máquina. Cortadores em gancho e lâminas em garra descrevem o contorno de corte. Um conjunto de lâminas refere-se a várias peças; portanto, associe cada cortador à sua própria posição no eixo.",
         },
         {
           question:
-            "Como devo escolher entre D2, SKD11 e 42CrMo para a trituração de plástico contaminado ou resíduos sólidos urbanos?",
+            "Como a contagem de ganchos e a espessura da lâmina afetam a escolha da peça de reposição?",
           answer:
-            "A norma D2 (1.2379) é adequada para fardos de plástico pós-consumo com sujeira residual e traços de contaminação. Opte pelo SKD11 quando sua matéria-prima incluir plásticos de engenharia reforçados com fibra de vidro (PA66-GF30, ABS) misturados a fluxos contaminados. Escolha o 42CrMo para madeira ou sucata industrial com alto risco de contaminação por metais — sua maior absorção de energia de impacto evita a fratura por fragilidade ao colidir com metal.",
+            "A geometria do gancho influencia a forma como o cortador se engata na alimentação. A espessura do cortador e a largura do espaçador determinam o arranjo axial do conjunto de corte. Mantenha essas dimensões para uma substituição por peça idêntica. Uma alteração no número ou na largura dos ganchos deve ser considerada em relação aos cortadores opostos e ao material que está sendo processado.",
         },
         {
           question:
-            "Com que frequência o facas para trituradores de dois eixos deve ser ajustado ou substituído em uma linha de reciclagem contínua?",
+            "Quando a resistência ao desgaste ou a tenacidade devem orientar a escolha do aço?",
           answer:
-            "Em uma linha de processamento contínuo de 16 horas que trabalha com HDPE e PP pós-consumo, programe a primeira indexação entre 400 e 600 horas de operação com D2 e entre 600 e 800 horas com SKD11, utilizando matéria-prima limpa. Fluxos contaminados ou com enchimento de vidro reduzem esses intervalos em 30–40%. Recomenda-se a indexação em marcos fixos de tonelagem, em vez de esperar pelo aparecimento de arredondamento visível nas bordas.",
+            "O arredondamento gradual da aresta de trabalho torna a resistência ao desgaste um parâmetro útil para comparação. Lascas repetidas ou ganchos quebrados também exigem atenção à tenacidade, ao suporte da aresta e ao impacto da alimentação. Avalie o aço original e a condição após o tratamento térmico juntamente com o padrão de danos, para que o material de reposição atenda às condições observadas naquela máquina.",
         },
         {
           question:
-            "Vocês fornecem facas de contra-corte e peneiras de classificação como um sistema completo de ferramentas?",
+            "O que pode causar o desgaste ou lascamento prematuro das lâminas de corte?",
           answer:
-            "Sim. Fabricamos contra-lâminas fixas e peneiras de classificação perfuradas combinadas, formando um sistema completo de ferramentas de trituração de eixo duplo. O fornecimento de lâminas de rotor e contra-lâminas provenientes do mesmo lote de retificação garante uma folga de cisalhamento consistente em toda a interface entre o rotor e a base.",
+            "A alimentação de material abrasivo pode acelerar o desgaste gradual, enquanto objetos duros inesperados ou carga local excessiva podem danificar os ganchos e as faces de corte. Uma pilha de lâminas solta ou montada incorretamente também pode contribuir para os danos. Compare o local onde ocorre o dano com o histórico de alimentação e as condições da pilha antes de alterar a especificação de substituição.",
+        },
+        {
+          question:
+            "Os plásticos, a sucata metálica e os pneus utilizam a mesma configuração de cortador?",
+          answer:
+            "Normalmente, não. As lâminas de corte para reciclagem em geral são configuradas para plásticos, paletes de madeira e resíduos mistos. As cargas de alimentação e a geometria das lâminas diferem nas versões dedicadas [Lâminas para trituradores de sucata](/products/multi-shaft-blades-metal)facas para trituradores e [Lâminas para trituradores de pneus](/products/tire-shredder-blades). Escolha a linha adequada para o seu material de alimentação e adapte a configuração à sua máquina instalada.",
+        },
+        {
+          question:
+            "Quais informações você precisa para fazer uma cotação de facas para trituradores de eixo duplo?",
+          answer:
+            "Envie o modelo da máquina, o desenho da lâmina ou o número da peça, o material de alimentação e as quantidades por posição do eixo. Para uma troca completa, inclua o layout dos espaçadores, as espessuras das lâminas e as direções dos ganchos. Uma amostra desgastada pode mostrar os detalhes do furo e da montagem. Marque as pontas desgastadas dos ganchos e acrescente uma referência de peça não utilizada ou o desenho original, se disponível.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo da máquina, o diâmetro externo da lâmina, a espessura, o perfil do furo, o número de ganchos e a largura do espaçador.",
+    compatibleMachines: ["Weima", "Untha", "SSI", "Vecoplan", "Genox"],
+    detailLayout: {
+      sizeRange: "Ø150–450 mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês são uma empresa de comércio ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas.",
+          label: "Material",
+          value: "D2 (1.2379), SKD11, 42CrMo",
         },
         {
-          question:
-            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
-          answer:
-            "Ao contrário do têmpera padrão de ciclo único, todas as lâminas dos trituradores Sureay passam por um processo de endurecimento a vácuo, seguido por 4 a 5 ciclos de revenimento e um tratamento criogênico profundo a −196 °C. Isso estabiliza a microestrutura totalmente martensítica, aumentando a resistência ao desgaste em até 40%.",
-        },
-        {
-          question:
-            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são enviadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question: "Quais certificações de qualidade a Sureay possui?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
-        },
-        {
-          question:
-            "Será que podemos testar um lote de amostras antes de confirmarmos um pedido de produção completo?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis.",
+          label: "Aplicação",
+          value:
+            "Resíduos Sólidos Urbanos · Plásticos · Paletes de madeira · Resíduos volumosos",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value:
+            "Diâmetro externo (Ø) listado: Ø150–450 mm; diâmetro externo personalizado até Ø800 mm; espessura: 10–150 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379), SKD11, 42CrMo",
+        },
+        {
+          label: "Dureza",
+          value: "55–62 HRC (4–5 ciclos de revenimento)",
+        },
+        {
+          label: "Contagem de garras",
+          value: "3 garras · 5 garras · 8 garras · 12 garras",
+        },
+        {
+          label: "Projeto do furo",
+          value:
+            "Eletróeroção por fio de precisão: hexagonal / octogonal / estriado",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Resíduos Sólidos Urbanos · Plásticos · Paletes de madeira · Resíduos volumosos",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Inclua o modelo da máquina, o diâmetro externo da lâmina, a espessura, o perfil do furo, o número de ganchos e a largura do espaçador.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Adquira lâminas de reposição para trituradores de sucata com a geometria de gancho e a interface de eixo que sua máquina necessita. A Sureay oferece configurações em H13 e 42CrMo com furos estriados ou com chaveta personalizados. Envie os desenhos das suas lâminas para obter um orçamento que abranja posições individuais ou um conjunto com vários eixos. As marcas das máquinas servem como referência de compatibilidade para as peças de reposição da Sureay.",
     id: "multi-shaft-blades-metal",
-    name: "Lâminas para trituradores de metal",
-    fullName:
-      "Lâminas de alto impacto com múltiplos eixos para sucata metálica, veículos fora de uso (ELV) e lixo eletrônico",
+    name: "Facas para trituradores de sucata metálica",
+    fullName: "Facas para trituradores multieixos de sucata metálica",
+    seoTitle: "facas para trituradores de sucata | H13 e 42CrMo",
+    seoDescription:
+      "Utilize cortadores de aço H13 ou 42CrMo para trituradores de múltiplos eixos que processam veículos em fim de vida, sucata eletrônica ou eletrodomésticos. Especifique o perfil do gancho e o furo estriado ou com chaveta.",
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Lâminas para trituradores de metal",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1309,
+      smallerWidths: [320, 640],
+    },
     badge: "Para serviços pesados",
     badgeColor: "red",
     gallery: [
@@ -888,70 +1144,34 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Projetadas para resistir às cargas de choque catastróficas decorrentes da trituração em eixos duplos de sucata metálica, veículos em fim de vida (ELV) e lixo eletrônico. Forjadas a partir de ligas de aço H13 e 42CrMo (AISI 4140) de alta qualidade. Essas lâminas para serviços pesados priorizam a tenacidade do núcleo para evitar fraturas por fragilidade ao colidir com inclusões metálicas sólidas.",
-    fullDescription:
-      "Quando um triturador de dois eixos encontra um bloco de motor, uma viga em I de aço ou lixo eletrônico compactado, as lâminas enfrentam cargas de choque catastróficas, medidas em dezenas de milhares de newtons por milissegundo. O uso de aços para ferramentas padrão de alto carbono (como o D2) nessas aplicações leva à fratura frágil imediata e à quebra dos ganchos — causando graves danos ao rotor, paradas não planejadas e fragmentos projetados potencialmente perigosos.\n\nPara o processamento de metais pesados, a tenacidade é mais importante do que a dureza extrema. A Sureay projeta essas lâminas específicas a partir do aço para ferramentas de trabalho a quente **H13 (AISI H13 / 1.2344)** e da liga de alta resistência **42CrMo (AISI 4140)**, por meio de um ciclo térmico especializado de têmpera profunda. A dureza superficial é mantida deliberadamente entre HRC 50 e 54. Essa dureza controlada mais baixa proporciona enorme elasticidade ao núcleo, permitindo que a lâmina absorva impactos cinéticos extremos sem lascar ou se fragmentar.\n\n## Geometria de ganchos de perfil baixo para máxima força de penetração\n\nA trituração de metais exige imensa força de mordida, em vez de alta frequência de preensão. A Sureay projeta geometrias de baixo perfil com 1, 2 e 3 ganchos, com espessura de raiz reforçada. Esses perfis robustos de garras podem agarrar e cortar invólucros metálicos espessos, perfis de alumínio e subconjuntos automotivos sem que os ganchos se quebrem.\n\n## Furos estriados reforçados: transferência de torque sem deslizamento\n\nA sucata de metal pesada gera enormes torques de reação do rotor que podem cortar furos com chaveta padrão. A Sureay usina todos os furos internos para trituradores de metal pesado utilizando perfis estriados cortados com precisão por eletroerosão a fio (EDM). Isso proporciona um engate de torque circunferencial total entre a lâmina e o eixo — eliminando a falha por cisalhamento da chaveta e evitando o desgaste progressivo entre o furo e o eixo que destrói os rotores em operações padrão de trituração de metal.\n\n## Seleção de liga de acordo com o perfil da sucata\n\n**H13 (1.2344) — Lixo eletrônico e sucata mista leve:** Conjuntos de placas de circuito impresso, extrusões de alumínio, feixes de cabos de cobre e equipamentos de TIC. A resistência superior do H13 ao calor suporta os picos de aquecimento induzidos pelo atrito, típicos da sucata eletrônica.\n\n**42CrMo (AISI 4140) — Veículos em fim de vida (ELV) e sucata pesada:** blocos de motor, caixas de transmissão, sobras de bobinas de aço e aço estrutural. A excepcional absorção de energia de impacto do 42CrMo (entalhe em V de Charpy > 35 J) é a escolha definitiva para as aplicações com cargas de choque mais intensas na indústria automotiva e na demolição de metais.",
+      "Lâminas de reposição para trituradores de eixos múltiplos destinados a sucata metálica, veículos fora de uso (ELV) e resíduos de equipamentos elétricos e eletrônicos (WEEE). Opções em H13 e 42CrMo, com furos estriados ou com chaveta personalizados conforme o desenho.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
-    compatibleMachines: [
-      "Shred-Tech",
-      "Arjes",
-      "Forus",
-      "SSI Shredding",
-      "Bano",
-      "Hammel",
-    ],
     specs: [
       {
         label: "Material",
         value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
       },
       {
-        label: "Hardness",
-        value: "HRC 50–54 (Optimized for Shock Absorption)",
+        label: "Dureza",
+        value: "HRC 50–54",
       },
       {
-        label: "Claw Geometry",
-        value: "1, 2, or 3 Low-Profile Thick Hooks",
+        label: "Geometria das garras",
+        value: "1, 2 ou 3 ganchos grossos de perfil baixo",
       },
       {
-        label: "Thickness",
-        value: "40 mm – 150 mm (Heavy Duty)",
+        label: "Projeto do furo",
+        value: "Estriado pesado / Multichanfo (EDM a fio)",
       },
       {
-        label: "Bore Design",
-        value: "Heavy Splined / Multi-Keyway (Wire-EDM)",
-      },
-      {
-        label: "OEM Fitment",
+        label: "Compatibilidade com OEM",
         value: "Shred-Tech, Forus, Arjes, SSI, Hammel",
       },
       {
-        label: "Application",
-        value: "Scrap Metal · ELV · E-Waste · Appliances (WEEE)",
-      },
-    ],
-    components: [
-      {
-        id: "impact-alloy",
-        tag: "METALURGIA",
-        title: "Resistência excepcional do núcleo",
-        description:
-          "Com dureza HRC 50–54, as ligas H13 e 42CrMo proporcionam a grande elasticidade do núcleo necessária para absorver impactos cinéticos extremos, evitando a fragmentação catastrófica típica das lâminas de D2.",
-      },
-      {
-        id: "heavy-spline",
-        tag: "TRANSFERÊNCIA DE TORÇÃO",
-        title: "Esplines sem deslizamento",
-        description:
-          "Os furos com ranhuras em toda a circunferência, usinados por eletroerosão a fio (EDM) com precisão de ±0,01 mm, garantem uma transferência de torque sem deslizamento sob cargas extremas de trituração, eliminando danos ao eixo do rotor.",
-      },
-      {
-        id: "low-profile-hooks",
-        tag: "GEOMETRIA",
-        title: "Ganchos de mordida de perfil baixo",
-        description:
-          "De 1 a 3 ganchos com espessura de raiz robusta proporcionam força máxima de mordida por curso para cortar invólucros metálicos espessos, sem os riscos de fratura associados aos projetos com múltiplas garras.",
+        label: "Aplicação",
+        value:
+          "Sucata · Veículos em fim de vida (ELV) · Lixo eletrônico · Eletrodomésticos (WEEE)",
       },
     ],
     dimensionLabels: {
@@ -965,90 +1185,181 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "E-Waste / Light Scrap",
+        itemNo: "SR002201",
+        spec: "Lixo eletrônico / Sucata leve",
         od: "Φ 300–450 mm",
         thickness: "40–60 mm",
-        bore: "Hex / Light Splined",
-        hooks: "3 Hooks",
+        bore: "Sextavado / Estriado leve",
+        hooks: "3 Ganchos",
       },
       {
-        spec: "Appliances / Steel Drums",
+        itemNo: "SR002202",
+        spec: "Eletrodomésticos / Tambores de aço",
         od: "Φ 450–600 mm",
         thickness: "60–80 mm",
-        bore: "Medium Splined",
-        hooks: "2–3 Hooks",
+        bore: "Estriado médio",
+        hooks: "2–3 ganchos",
       },
       {
-        spec: "ELV / Heavy Demolition",
+        itemNo: "SR002203",
+        spec: "ELV / Demolição Pesada",
         od: "Φ 600–800+ mm",
         thickness: "80–150 mm",
-        bore: "Heavy Splined",
-        hooks: "1–2 Hooks",
+        bore: "Estriado pesado",
+        hooks: "1–2 ganchos",
       },
     ],
-    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "scrap-chopper-blades",
+      "metal-shear-knives",
+    ],
     offers: {
       lowPrice: 250,
       highPrice: 3500,
     },
+    components: [
+      {
+        id: "multi-shaft-blades-metal-advantage-1",
+        tag: "Opções de lâminas de corte em H13 e 42CrMo",
+        title: "Opções de lâminas de corte em H13 e 42CrMo",
+        description:
+          "As configurações H13 e 42CrMo oferecem aos processadores de resíduos opções de materiais para lâminas de reposição, levando-se em consideração o aço especificado, o fluxo de metal e o projeto existente com gancho grosso.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-2",
+        tag: "Perfis de um, dois e três ganchos",
+        title: "Perfis de um, dois e três ganchos",
+        description:
+          "A Sureay fornece cortadores de gancho grosso de perfil baixo nas configurações listadas de um, dois e três ganchos. Os furos estriados e com múltiplas ranhuras podem ser fabricados de acordo com o desenho do eixo, com a posição do gancho definida em relação ao furo.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-3",
+        tag: "Conjuntos de reposição por posição do eixo",
+        title: "Conjuntos de reposição por posição do eixo",
+        description:
+          "Cortadores individuais e conjuntos multiposição podem ser encomendados com referências de desenho distintas para cada eixo, facilitando as trocas nos casos em que a máquina utiliza várias larguras ou perfis de cortador.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Por que escolher o H13 ou o 42CrMo em vez do D2 para aplicações de trituração de metais?",
+            "Como são identificadas as lâminas de reposição para trituradores de sucata?",
           answer:
-            "O D2 é otimizado para resistência ao desgaste em detrimento da tenacidade — atinge HRC 58–62, mas torna-se frágil sob cargas de choque extremas. Quando uma lâmina de D2 atinge um bloco de motor, a energia de impacto excede a tenacidade à fratura do material em microssegundos, causando uma quebra catastrófica da lâmina. O H13 e o 42CrMo (AISI 4140) possuem tenacidade inerentemente superior; com dureza HRC 50–54, eles absorvem a mesma energia de impacto de forma elástica, em vez de se fraturarem.",
+            "Identifique a posição do eixo e do cortador e, em seguida, compare o diâmetro, a espessura axial, o formato do gancho e a interface do eixo. Máquinas com múltiplos eixos podem utilizar designs diferentes dentro da mesma câmara de corte. O modelo da máquina, o número de peça original e o desenho de montagem fornecem a referência para um conjunto de reposição, incluindo a relação com os espaçadores e cortadores mantidos.",
         },
         {
           question:
-            "Que número de ganchos e que perfil devo especificar para a trituração de veículos ELV?",
+            "Os cortadores rotativos de trituradores, martelos e facas de cisalhamento de sucata são intercambiáveis?",
           answer:
-            "Para a trituração primária de veículos em fim de vida (carrocerias, subconjuntos de motores), especifique modelos de perfil baixo com 1 ou 2 garras e espessura máxima na raiz. Um número reduzido de garras concentra o torque disponível da máquina em menos pontos de contato robustos dos ganchos, gerando a enorme força de penetração necessária para perfurar o aço espesso. Um número elevado de garras distribui o torque de maneira muito dispersa, fazendo com que a lâmina deslize sobre o metal em vez de penetrar nele.",
+            "Não. Os cortadores rotativos intercalam-se nos eixos do triturador, os martelos do moinho de martelos quebram o material por impacto e [as facas de cisalhamento tipo Alligator](/products/metal-shear-knives) cortam como um par montado em mandíbulas. O tipo de equipamento determina qual peça de desgaste deve ser encomendada.",
         },
         {
           question:
-            "De que forma os furos estriados evitam danos ao eixo do rotor na trituração de metais pesados?",
+            "Quais características dos resíduos são importantes na escolha do material da lâmina de corte?",
           answer:
-            "Na trituração de metais pesados, o torque máximo do rotor atinge picos de 3 a 5 vezes a carga em estado estacionário durante um impacto forte. Os furos padrão com chaveta única concentram todo esse torque em um único ponto, alargando progressivamente a ranhura da chaveta e, por fim, causando o cisalhamento da chaveta. Os furos estriados por eletroerosão a fio (EDM) distribuem esse torque enorme uniformemente por 10 a 20 faces de contato ao redor de toda a circunferência, reduzindo a tensão de pico e protegendo o seu caro eixo do rotor.",
+            "As seções metálicas mais espessas, a força de alimentação e a presença de material misto ou abrasivo afetam as cargas na borda. Chapas de eletrodomésticos leves, sucata eletrônica e seções metálicas densas podem produzir diferentes padrões de desgaste. Compare essas condições com a especificação existente do H13 ou 42CrMo e o estado dos ganchos usados.",
         },
         {
           question:
-            "Quais são os sinais de alerta de que o facas para trituradores de metal precisa ser substituído?",
+            "Por que um cortador de sucata mais resistente ainda pode sofrer quebra na lâmina?",
           answer:
-            "Os principais indicadores incluem: (1) Fraturas finas visíveis na raiz do gancho; (2) Desgaste do diâmetro externo (DE) superior a 10–15 mm abaixo do valor nominal, indicando uma perda da folga de cisalhamento; (3) Alongamento do furo, o que significa que a lâmina balança no eixo mesmo sob torque de aperto total; (4) Uma redução na produtividade superior a 20% sob carga constante do motor, indicando que as lâminas estão empurrando, em vez de cortar, a sucata.",
+            "A dureza é apenas uma parte da especificação do material. Impactos repetidos, concentração de carga em um gancho e suporte inadequado podem causar quebra, mesmo quando o desgaste abrasivo é limitado. Avalie a forma do cortador, a condição do tratamento térmico e a alimentação real em conjunto antes de alterar a dureza, especialmente quando a falha atual for lascamento localizado, em vez de desgaste gradual.",
+        },
+        {
+          question:
+            "Os furos das lâminas com ranhuras estriadas e com múltiplas ranhuras podem ser personalizados?",
+          answer:
+            "Sim. A Sureay pode fabricar a interface do eixo de acordo com o desenho da lâmina de corte, incluindo a geometria da ranhura estriada ou da ranhura de chaveta, as faces de assentamento e a orientação. O desenho deve indicar a localização das características do furo em relação ao perfil do gancho. Isso é particularmente útil quando lâminas adjacentes têm diâmetros semelhantes, mas sincronização ou conexões de eixo diferentes.",
+        },
+        {
+          question:
+            "Um cortador de sucata de reposição pode manter o perfil original do gancho?",
+          answer:
+            "Sim. Utilize a contagem original de ganchos, o contorno e a espessura do corpo indicados no desenho, com o furo alinhado ao perfil dos ganchos. Utilize uma peça de referência em bom estado para recuperar a geometria pretendida da ponta, caso o cortador antigo tenha ganchos lascados ou arredondados.",
+        },
+        {
+          question:
+            "Como posso solicitar um orçamento para um conjunto de cortadores de sucata com múltiplos eixos?",
+          answer:
+            "Forneça o modelo da máquina, o fluxo de resíduos e as seções mais espessas; em seguida, liste os desenhos das lâminas e as quantidades por eixo e posição. Indique quais espaçadores e lâminas permanecerão em serviço. Itens separados distinguem formatos de gancho de baixo perfil, larguras axiais e orientações do furo, mesmo quando os diâmetros das lâminas são iguais.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo da máquina, o tipo de resíduo, os desenhos do cortador e do espaçador, e de qual eixo a peça foi retirada.",
+    compatibleMachines: ["Shred-Tech", "Forus", "Arjes", "SSI", "Hammel"],
+    detailLayout: {
+      sizeRange: "Ø300–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês fornecem lâminas para as plataformas de trituração Shred-Tech, Arjes ou Forus?",
-          answer:
-            "Sim. Realizamos a engenharia reversa de lâminas de reposição a partir de amostras OEM medidas na fábrica para a série ST da Shred-Tech, os trituradores Arjes Imperator/Orion, os trituradores para serviços pesados da Forus e as plataformas da SSI. Perfis de ranhuras e padrões de rebaixamento personalizados são produzidos com extrema precisão por meio da eletroerosão a fio (Wire-EDM).",
+          label: "Material",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
         },
         {
-          question:
-            "Qual é o prazo de entrega do facas para trituradores de metal para serviços pesados?",
-          answer:
-            "As classes padrão H13 e 42CrMo, em dimensões comuns, estão disponíveis em estoque de produtos semiacabados e, normalmente, são despachadas em um prazo de 10 a 15 dias úteis. Para diâmetros externos maciços fora do padrão ou perfis de ranhuras personalizados que exijam novas ferramentas, o prazo de entrega é de 20 a 25 dias úteis.",
-        },
-        {
-          question:
-            "Quais certificações de qualidade e documentação vocês fornecem?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Para o metal pesado facas para trituradores, oferecemos rastreabilidade completa: relatórios de ensaios de dureza Rockwell HRC (mínimo de 5 pontos por lâmina), certificados de ensaio de impacto Charpy para as classes 42CrMo, registros de inspeção dimensional por CMM e certificados de composição da siderúrgica.",
+          label: "Aplicação",
+          value:
+            "Sucata · Veículos em fim de vida (ELV) · Lixo eletrônico · Eletrodomésticos (WEEE)",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Ø300–800+ mm",
+        },
+        {
+          label: "Material",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 50–54",
+        },
+        {
+          label: "Geometria das garras",
+          value: "1, 2 ou 3 ganchos grossos de perfil baixo",
+        },
+        {
+          label: "Projeto do furo",
+          value: "Estriado pesado / Multichanfo (EDM a fio)",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Sucata · Veículos em fim de vida (ELV) · Lixo eletrônico · Eletrodomésticos (WEEE)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Inclua o modelo da máquina, o tipo de resíduo, os desenhos do cortador e do espaçador, e de qual eixo a peça foi retirada.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
     id: "twin-shaft-blades-battery",
-    name: "Lâminas para reciclagem de baterias",
-    fullName:
-      "Lâminas de precisão para trituradores de eixo duplo destinadas à reciclagem de baterias de íon-lítio",
+    name: "Facas de trituração para reciclagem de baterias",
+    fullName: "Facas de pré-trituração para reciclagem de baterias",
+    seoTitle:
+      "facas para trituradores para reciclagem de baterias | Peças de reposição personalizadas",
     category: "shredder_blades",
     sector: "new_energy",
-    categoryDisplay: "Lâminas de triturador",
+    categoryDisplay: "Facas para trituradores",
     image: "/images/products/shredder-blades/shredder-blades.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 640],
+    },
     badge: "Nova Energia",
     badgeColor: "teal",
     gallery: [
@@ -1057,59 +1368,39 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Projetado para a pré-trituração crítica de conjuntos de baterias, módulos e células de íons de lítio de veículos elétricos (EV) em ambientes com gás inerte. Retificado com precisão para obter um paralelismo de espessura de ±0,02 mm, a fim de garantir folgas de cisalhamento exatas que evitem o rasgo da folha metálica e o descontrole térmico. A seleção de ligas especializadas e os tratamentos de superfície resistem aos efeitos altamente corrosivos dos eletrólitos de LiPF₆ das baterias.",
-    fullDescription:
-      "A reciclagem de baterias de íon-lítio (Li-ion) apresenta desafios mecânicos e químicos únicos que o facas para trituradores padrão não consegue lidar de forma confiável. A pré-trituração de conjuntos de baterias e células cilíndricas ocorre frequentemente em atmosferas purgadas com nitrogênio para suprimir o risco de incêndio e de fuga térmica. As ferramentas facas para trituradores padrão falham prematuramente nesse ambiente por meio de dois mecanismos distintos: corrosão do eletrólito causada pelo LiPF₆ e pelo ácido HF liberados durante a ruptura da célula, e falha mecânica provocada por folgas de cisalhamento imprecisas que dobram — em vez de cortar — as finas folhas coletoras de corrente de cobre (8–12 μm) e alumínio (15–20 μm) dentro das células da bateria.\n\n## Retificação de precisão com microfolga (±0,02 mm)\n\nSe a folga entre as lâminas de eixo duplo que giram em sentidos opostos for muito grande, as folhas da bateria não são cortadas — elas se dobram, esticam e se enrolam no rotor, causando atolamentos imediatos em um ambiente de gás inerte. Desobstruir um atolamento no rotor sob nitrogênio requer o desligamento completo do sistema, purga e remoção manual — horas de inatividade que consomem uma quantidade significativa de N₂. As lâminas facas para trituradores da Sureay para baterias são retificadas com precisão para obter um paralelismo de espessura de ±0,02 mm em toda a face da lâmina, garantindo uma folga de cisalhamento mínima e consistente em todo o rotor para cortes limpos e controlados em células tipo bolsa, módulos prismáticos e pacotes de baterias cilíndricas 18650/21700.\n\n## Resistência à corrosão por eletrólito\n\nOs eletrólitos de LiPF₆ se hidrolisam ao entrar em contato com a umidade atmosférica, produzindo ácido fluorídrico (HF) — um dos produtos químicos industriais mais agressivamente corrosivos. Os aços para ferramentas padrão D2 ou SKD11 sofrem corrosão rápida nesse ambiente, com a formação de corrosão por pite na superfície iniciando-se nos limites dos grãos em um período de 200 a 500 horas de operação. A Sureay aplica tratamentos de superfície anticorrosivos especializados e seleciona ligas resistentes à corrosão para aplicações de reciclagem de baterias, prolongando significativamente os intervalos de manutenção.\n\n## Perfis de furo com precisão em eletroerosão a fio\n\nOs pré-trituradores de baterias operam em velocidades precisas do rotor, controladas por computador, nas quais a folga entre o furo e o eixo afeta diretamente a precisão da posição da lâmina e a consistência da folga de cisalhamento. Todos os perfis de furo são usinados por eletroerosão a fio com precisão de ±0,01 mm, garantindo folga rotacional zero que poderia causar inconsistência na folga de cisalhamento durante a trituração de precisão das pilhas de folhas metálicas das baterias.",
+      "Lâminas de corte rotativas de reposição para pré-trituradores de reciclagem de baterias. Perfis de corte e interfaces de eixo personalizados, fabricados de acordo com desenhos aprovados.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
     specs: [
       {
-        label: "Tolerance",
-        value: "±0.02 mm Thickness Parallelism",
+        label: "Tolerância",
+        value: "±0,02 mm Espessura Paralelismo",
       },
       {
-        label: "Hardness",
+        label: "Dureza",
         value: "HRC 54–58",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM Hex / Splined",
+        label: "Projeto do furo",
+        value: "Eletróeroção por fio de precisão – hexagonal / estriado",
       },
       {
-        label: "Surface",
-        value: "Anti-corrosion treatment available",
+        label: "Revestimentos opcionais",
+        value: "Tratamento anticorrosivo de superfície disponível",
       },
       {
-        label: "Application",
-        value: "EV Battery Packs · Pouch Cells · 18650/21700",
+        label: "Aplicação",
+        value:
+          "Baterias para veículos elétricos · Células tipo bolsa · 18650/21700",
       },
       {
-        label: "Environment",
-        value: "Inert gas (N₂ / Ar) compatible",
+        label: "Meio ambiente",
+        value: "Compatível com gás inerte (N₂ / Ar)",
       },
     ],
-    components: [
-      {
-        id: "micro-clearance",
-        tag: "PRECISÃO",
-        title: "±0,02 mm de espessura e paralelismo",
-        description:
-          "Retificado com precisão para tolerâncias de espessura extremamente rigorosas, garantindo uma folga de corte consistente em todo o rotor para cortes precisos em folhas de cobre e alumínio para baterias, sem dobras nem enrolementos no rotor.",
-      },
-      {
-        id: "corrosion-resistance",
-        tag: "DURABILIDADE",
-        title: "Resistência à corrosão por eletrólitos",
-        description:
-          "A metalurgia especializada e os tratamentos de superfície proporcionam maior resistência à corrosão pelo ácido fluorídrico (HF) derivado do LiPF₆, prolongando os intervalos de manutenção das lâminas em ambientes químicos agressivos de reciclagem de baterias.",
-      },
-      {
-        id: "wire-edm-bore",
-        tag: "COMPATIBILIDADE",
-        title: "Furos de precisão por eletroerosão a fio",
-        description:
-          "Todos os perfis dos furos são usinados com precisão de ±0,01 mm por meio de eletroerosão a fio (EDM), eliminando a folga rotacional que causa inconsistências na largura da fenda de cisalhamento durante o processamento de precisão de pilhas de folhas de bateria.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "lithium-battery-slitting-knives",
     ],
     dimensionLabels: {
       col0: "Tipo de célula / módulo",
@@ -1122,88 +1413,163 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Cylindrical / Pouch Cells",
+        itemNo: "SR002401",
+        spec: "Células cilíndricas / em forma de bolsa",
         od: "Φ 200–350 mm",
         thickness: "10–20 mm",
-        bore: "Hex / Splined",
+        bore: "Sextavado / Estriado",
         hooks: "±0.02 mm",
       },
       {
-        spec: "EV Module / Battery Pack",
+        itemNo: "SR002402",
+        spec: "Módulo EV / Conjunto de baterias",
         od: "Φ 400–600 mm",
         thickness: "30–50 mm",
-        bore: "Splined",
+        bore: "Estriado",
         hooks: "±0.05 mm",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 300,
       highPrice: 3000,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-battery-advantage-1",
+        tag: "Cortadores para pré-trituração baseados em desenhos",
+        title: "Cortadores para pré-trituração baseados em desenhos",
+        description:
+          "A Sureay fornece lâminas de reposição para pré-trituradores de baterias, de acordo com o desenho e a revisão especificados da peça. A dureza indicada para as lâminas é de 54–58 HRC, sendo que o material, o acabamento e a interface do eixo são definidos pela especificação individual da peça.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-2",
+        tag: "Furos hexagonais e estriados para eletroerosão a fio (EDM)",
+        title: "Furos hexagonais e estriados para eletroerosão a fio (EDM)",
+        description:
+          "As interfaces de eixo hexagonal e estriado podem ser fabricadas com a espessura da lâmina e a geometria de assentamento especificadas, de modo que o furo e o arranjo axial sejam considerados no mesmo pedido de reposição.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-3",
+        tag: "Tratamento superficial opcional resistente à corrosão",
+        title: "Tratamento superficial opcional resistente à corrosão",
+        description:
+          "Está disponível um tratamento superficial anticorrosivo opcional para configurações específicas de cortadores, permitindo que os requisitos de acabamento sejam incluídos juntamente com os requisitos de material e dimensões da peça.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Por que a tolerância de espessura de ±0,02 mm é fundamental para a pré-trituração de conjuntos de baterias?",
+            "Em qual etapa da reciclagem de baterias esses cortadores são utilizados?",
           answer:
-            "Os conjuntos de baterias contêm folhas coletoras de corrente de cobre e alumínio com espessura de 8 a 20 μm. Quando a folga de cisalhamento entre as lâminas que giram em sentidos opostos excede aproximadamente 0,05 mm, as folhas sofrem deformação plástica em vez de cisalhamento — dobrando-se e enrolando-se ao redor do rotor, causando congestionamentos operacionais. Em um ambiente purgado com nitrogênio, a resolução de um travamento do rotor exige o desligamento completo do sistema de gás inerte, a evacuação e a remoção manual — horas de inatividade que consomem uma quantidade significativa de N₂. Manter o paralelismo da espessura das pás em ±0,02 mm garante uma folga de cisalhamento mínima consistente ao longo de todo o comprimento do rotor, evitando que as folhas se enrolem em condições normais de operação.",
+            "Esses cortadores rotativos de cisalhamento atuam na etapa de pré-trituração dos equipamentos de reciclagem de baterias. As etapas posteriores de trituração fina utilizam ferramentas diferentes. A fabricação de baterias utiliza [Facas de Corte para Baterias](/products/lithium-battery-slitting-knives) para fitas de eletrodo revestidas. A etapa do equipamento e o desenho técnico do cortador existente determinam qual peça de reposição deve ser utilizada na máquina de reciclagem.",
         },
         {
           question:
-            "O que causa a corrosão das lâminas em ambientes de trituração de baterias de íons de lítio?",
+            "Quais dimensões determinam se uma lâmina para triturador de baterias é compatível?",
           answer:
-            "O LiPF₆, o sal eletrolítico de íons de lítio mais comum, reage com traços de umidade atmosférica para produzir HF (ácido fluorídrico). Em caso de rompimento de uma célula durante a pré-trituração, mesmo uma atmosfera de nitrogênio contém umidade residual suficiente para provocar hidrólise parcial. Os tipos padrão de aço para ferramentas (D2, SKD11) sofrem corrosão rápida em contato com o HF — a corrosão por pite na superfície se inicia nos limites dos grãos em um período de 200 a 500 horas, prejudicando a geometria das arestas e reduzindo a eficiência de corte. A Sureay aplica tratamentos de superfície anticorrosivos especializados para prolongar os intervalos de manutenção significativamente além dos observados com os aços para ferramentas padrão nas linhas de reciclagem de baterias.",
+            "O encaixe depende do perfil da lâmina, do furo ou da ranhura, das faces de assentamento e da posição axial, que devem corresponder à montagem original. As larguras dos espaçadores determinam onde as lâminas vizinhas se encaixam. Um desenho de empilhamento distingue contornos de lâminas semelhantes atribuídos a diferentes posições no eixo.",
         },
         {
           question:
-            "Deve-se utilizar trituradores de eixo duplo ou de eixo único para o pré-processamento de baterias de íon-lítio?",
+            "Um cortador para células de bateria também pode ser usado para módulos ou conjuntos?",
           answer:
-            "Os trituradores de eixo duplo (duas hastes) são o padrão para a redução primária do tamanho das baterias de veículos elétricos, pois o projeto de rotação contrária, baixa velocidade e alto torque submete as células a um cisalhamento controlado, em vez de impacto. Esse modo de ruptura controlada reduz os eventos térmicos agudos em comparação com os trituradores de eixo único de alta velocidade. Lâminas de precisão de eixo duplo com folgas de cisalhamento controladas são, portanto, o padrão mecânico do primeiro estágio, seguido por processamento adicional a jusante.",
+            "Somente se a configuração aprovada da máquina for compatível com essa alimentação. Célula, módulo e pacote descrevem a entrada, e as mesmas dimensões da lâmina podem corresponder a diferentes tarefas de pré-trituração. Utilize a referência de peça aprovada para sua linha instalada e solicite que qualquer alteração na alimentação seja avaliada em relação aos requisitos do processo.",
         },
         {
           question:
-            "Quais perfis de furo são necessários para plataformas de trituração de baterias com purga de nitrogênio?",
+            "Como devem ser especificados o material e o tratamento superficial opcional?",
           answer:
-            "Os pré-trituradores de baterias de fabricantes especializados (linhas de reciclagem de baterias da Erdwich, Hosokawa, Metso e Andritz) utilizam perfis de eixo de rotor exclusivos, com tolerâncias mais precisas do que os trituradores industriais comuns. São necessários furos estriados e hexagonais usinados por eletroerosão a fio (EDM) com tolerância de ±0,01 mm para a montagem do rotor sem folga — qualquer folga rotacional na velocidade de operação causa variação consistente na abertura de cisalhamento e risco de emperramento da folha. Fabricamos perfis de furo de acordo com desenhos personalizados do eixo; forneça o desenho do perfil do eixo do rotor para obter a especificação exata do furo.",
+            "Indique o material e o tratamento de superfície exigidos pelo desenho da cortadora como requisitos separados do pedido. Para um tratamento opcional de resistência à corrosão, defina o acabamento solicitado juntamente com as dimensões finais e as superfícies de contato. A seleção deve seguir os requisitos dos componentes da linha, incluindo quaisquer restrições à alteração do material existente ou da configuração da superfície.",
+        },
+        {
+          question:
+            "Como uma pilha de cortadores soltos afeta as lâminas de reposição?",
+          answer:
+            "O afrouxamento na pilha do cortador e do espaçador pode reduzir o desempenho da trituração e aumentar o risco de danos à montagem. Novas lâminas de corte, por si só, não corrigem uma pilha desgastada ou mal fixada. Verifique seu estado em relação aos requisitos de manutenção da máquina e mantenha as faces de assentamento e as dimensões axiais especificadas ao solicitar cortadores de reposição.",
+        },
+        {
+          question:
+            "Como posso solicitar um orçamento para cortadores de pré-trituração de baterias?",
+          answer:
+            "Envie o modelo da linha ou da máquina, o desenho aprovado da lâmina de corte e sua revisão, a quantidade por posição do eixo, bem como o material e o tratamento de superfície necessários. Especifique o material de alimentação processado nessa etapa. Caso precise de uma peça revisada, marque no desenho as características alteradas e as dimensões mantidas de assentamento e empilhamento.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do pré-triturador, os desenhos aprovados do cortador e do espaçador, bem como seus requisitos relativos ao material ou à superfície.",
+    disambiguation:
+      "Para a fabricação de eletrodos, consulte [Facas de corte para eletrodos de baterias de lítio](/products/lithium-battery-slitting-knives).",
+    detailLayout: {
+      sizeRange: "Ø200–600 mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês podem fornecer conjuntos combinados de rotor e contra-faca para pré-trituradores de baterias?",
-          answer:
-            "Sim. Para linhas de reciclagem de baterias, nas quais a consistência da folga de corte é fundamental, fornecemos conjuntos de lâminas de rotor e contra-lâminas fixas retificadas em conjunto como um par combinado, a fim de garantir que a folga de corte do compósito atenda às especificações. Todos os conjuntos combinados incluem um certificado de verificação da folga, que documenta a folga medida em vários pontos ao longo do comprimento do rotor.",
-        },
-        {
-          question:
-            "Que tipo de documentação de qualidade é fornecida para a qualificação de uma usina de reciclagem de baterias?",
-          answer:
-            "As instalações de reciclagem de baterias frequentemente exigem documentação de qualidade aprimorada para a validação do processo. Fornecemos: relatórios de inspeção dimensional por CMM, registros de medição de circularidade e paralelismo, certificados do processo de tratamento de superfície, rastreabilidade do material desde o Certificado de Análise (CoA) da siderúrgica certificada até a inspeção final e resultados de ensaios de dureza por lâmina. Pacotes de documentação específicos para cada aplicação podem ser fornecidos para ambientes controlados de acordo com as normas IATF 16949 ou ISO 45001.",
-        },
-        {
-          question:
-            "Vocês oferecem amostras de lâminas para validação do processo antes dos pedidos de produção em grande escala?",
-          answer:
-            "Sim. A qualificação do processo de reciclagem de baterias normalmente requer de 2 a 4 lâminas de amostra para verificação de adequação e testes de resistência ao eletrólito antes do compromisso de produção. O prazo de entrega das amostras é de 10 a 15 dias úteis para especificações de grau de bateria. Podemos participar de chamadas de revisão técnica com o cliente durante o processo de validação.",
+          label: "Aplicação",
+          value:
+            "Baterias para veículos elétricos · Células tipo bolsa · 18650/21700",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Ø200–600 mm",
+        },
+        {
+          label: "Tolerância",
+          value: "±0,02 mm Espessura Paralelismo",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 54–58",
+        },
+        {
+          label: "Projeto do furo",
+          value: "Eletróeroção por fio de precisão – hexagonal / estriado",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value: "Tratamento anticorrosivo de superfície disponível",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Baterias para veículos elétricos · Células tipo bolsa · 18650/21700",
+        },
+        {
+          label: "Meio ambiente",
+          value: "Compatível com gás inerte (N₂ / Ar)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Inclua o modelo do pré-triturador, os desenhos aprovados do cortador e do espaçador, bem como seus requisitos relativos ao material ou à superfície.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Lâminas de serra para troncos de papel",
-    fullName:
-      "Lâminas circulares de alta qualidade para serras de troncos, destinadas à fabricação de lenços de papel e toalhas",
+    seoDescription:
+      "Corte rolos de papel higiênico e papel de cozinha com lâminas D2, Cr12MoV ou M2 HSS. Os diâmetros listados são de 610 a 1.000 mm, com tamanhos personalizados de até 1.200 mm.",
+    name: "Lâminas de serra para rolos de papel tissue",
+    fullName: "Lâminas de serra para corte de rolos de papel tissue",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Lâminas de papel de seda",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
-    badge: "Zero Core Crush",
-    badgeColor: "blue",
+    imageDimensions: {
+      width: 2000,
+      height: 2000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1108,
+      height: 1108,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
@@ -1213,17 +1579,15 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Imagem de uma lâmina de serra para troncos de papel, mostrando a face com acabamento espelhado e o padrão de furos dos pinos de acionamento",
-      "Pilha de papel tissue acabado lâminas de serra para bobinas em uma caixa de madeira na Sureay",
-      "Lâmina de serra para troncos de celulose embalada em uma caixa de madeira com protetor de borda antes do embarque",
-      "Lâmina de serra para rolos de papel-toalha D2 de Ø610 mm, face com polimento espelhado e orifícios para pinos de acionamento",
-      "Diâmetro interno de Ø68,26 mm e padrão de furos para pinos de acionamento das serras para troncos Fabio Perini",
-      "Superfície da lâmina de serra para troncos de papel-papel tissue, apresentando acabamento polido espelhado sob a iluminação da oficina",
+      "lâminas de serra circular para cortar rolos de papel tissue mostrando face polida espelhada e padrão de furo de pino de acionamento",
+      "Pilha de lâminas de serra circular acabadas para cortar rolos de papel tissue numa caixa de madeira em Sureay",
+      "lâminas de serra circular para cortar rolos de papel tissue embalados em uma caixa de madeira com protetor de borda antes do envio",
+      "lâminas de serra circular para cortar rolos de papel tissue com face polida e furos de montagem",
+      "Furo central e padrão de furo de montagem em lâminas de serra circular para cortar rolos de papel tissue",
+      "lâminas de serra circular para cortar rolos de papel tissue com acabamento polido espelhado sob iluminação da oficina",
     ],
     description:
-      "Lâminas lâminas de serra para bobinas Ø610–Ø1200 mm — D2/Cr12MoV temperado a vácuo (HRC 58–60), microrretificado com desvio lateral ≤0,15 mm para corte transversal sem oscilação. Elimina núcleos amassados e pó de papel nas linhas de papel higiênico, papel-toalha e JRT. Compatível com afiação CBN em linha. Encaixe OEM pronto para uso em máquinas Fabio Perini, PCMC, Casmatic, Gambini e Bretting. Diâmetros personalizados em 10 dias úteis. lâminas de serra para bobinas: confiança comprovada em linhas de conversão de papel-toalha em todo o mundo.",
-    fullDescription:
-      "O corte transversal do rolo de papel-toalha é a operação de corte de maior risco em uma linha de conversão de papel-toalha. Um defeito dimensional nessa etapa — tubos de papelão amassados, geração excessiva de pó ou faces de corte inclinadas — se propaga imediatamente para as estações de embalagem, provocando paradas na linha e rejeições de produtos destinados ao consumidor.\n\nAs lâminas zGTR1 e zGTR da Sureay para papel-toalha são fabricadas a partir de aços D2 (1.2379) e Cr12MoV de alta qualidade. Como essas lâminas maciças (de até Ø1.200 mm) giram a rotações extremas, a estabilidade é fundamental. Cada lâmina é temperada a vácuo, nivelada por tensão e microretificada de acordo com rigorosas tolerâncias dimensionais, verificadas em uma CMM calibrada antes da remessa:\n\n- **Desvio lateral:** ≤0,15 mm\n- **Desvio da borda:** ≤0,10 mm\n- **Paralelismo da face:** 0,05 mm\n- **Concentricidade (diâmetro externo em relação ao furo):** ≤0,30 mm\n- **Tolerância do furo:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidade com afiamento contínuo\n\nDiferentemente do modelo padrão facas circulares, as serras para rolos de papel higiênico são afiadas continuamente *durante* a operação por rebolos sincronizados de CBN (nitreto de boro cúbico). O modelo tratamento térmico da Sureay atinge HRC 58–60. Essa faixa específica de dureza garante que a lâmina seja afiada de forma limpa contra os rebolos de CBN, sem obstruí-los ou causar vitrificação, mantendo um fio afiado como uma lâmina de barbear ciclo após ciclo, sem desgastar seus rebolos de afiação caros.\n\n## Geometria do bisel e redução de poeira\n\nO papel tissue de papel higiênico é uma banda de baixa densidade e grande área superficial, com resistência à compressão quase nula. Cortá-lo com um bisel muito inclinado cria compressão, levando à geração excessiva de pó de papel (um grande risco de incêndio em linhas de toalhas coladas por pulverização) e à densificação da borda, o que reduz a maciez do rolo. Utilizamos um ângulo de bisel raso (15°–25°) que separa as fibras por puro cisalhamento. Combinado com uma face da lâmina polida espelhada (Ra ≤0,2 μm), isso proporciona cortes impecáveis em papel higiênico premium de 2 e 3 camadas.\n\n## Compatibilidade de furo por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas as séries), PCMC Forte/Elite, serras de troncos Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas licenciadas pela Kimberly-Clark), sistemas de serras para troncos de terceiros italianos e espanhóis.\n\n**Ø60,00 mm:** serras de troncos de grande formato para produção industrial de lenços umedecidos, rolos jumbo (JRT) e papel higiênico sem núcleo (diâmetro externo de 870 a 1.000 mm).\n\nDiâmetro externo personalizado de Ø610 mm a Ø1.200 mm, fabricado sob encomenda com prazo de entrega padrão de 10 dias úteis. Análise de desenhos e aprovação dimensional disponíveis na primeira encomenda de ferramentas.\n\n## Revestimentos de Superfície Avançados\n\n**Cromagem dura:** Oferece resistência à corrosão em ambientes de fábricas de papel com alta umidade (≥75% UR) e reduz o coeficiente de adesão das fibras do papel tissue, prolongando o intervalo de funcionamento sem interrupções entre os ciclos de afiação das lâminas.\n\n**Revestimento de Teflon (PTFE):** Cria uma superfície altamente lubrificada que desliza facilmente através de rolos densos de papel-toalha de cozinha, reduzindo drasticamente o consumo de corrente do motor e eliminando marcas de queimadura nas bordas do papel. A especificação de ponta para linhas premium de papel-toalha de cozinha de 3 camadas.\n\n**Revestimento TiN PVD:** A deposição física de vapor de nitreto de titânio (2–3 μm, HV 2300+) prolonga o intervalo de manutenção das lâminas afiadas em operações de alto ciclo. Recomendado para marcas premium de papel-toalha com especificações rigorosas de contaminação por poeira.",
+      "Lâminas de reposição para corte de rolos de papel higiênico e papel-toalha. Em D2, Cr12MoV ou aço rápido M2 HSS, com furo central, furação de fixação e perfil de chanfro sob medida.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1239,141 +1603,71 @@ export const blades: Blade[] = [
       "Maflex",
       "MTorres",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379), Cr12MoV, M2 HSS",
-      },
-      {
-        label: "Diameter Capacity",
-        value: "Standard Ø610 mm up to Custom Ø1200 mm",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (Zero-wobble guaranteed)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Polished (Ra ≤0.2 μm)",
-      },
-      {
-        label: "Optional Coatings",
-        value: "Hard Chrome, Teflon (PTFE), TiN",
-      },
-      {
-        label: "Applications",
-        value: "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)",
-      },
-      {
-        label: "Max Line Speed",
-        value: "300 strokes/min",
-      },
-      {
-        label: "Inspection Records Supplied",
-        value:
-          "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "A vida útil da lâmina de serra para troncos em uma linha de produção de papel higiênico é determinada pelo comportamento do aço sob afiamento contínuo com CBN, e não apenas pela dureza. Os dois tipos de aço abaixo abrangem praticamente todas as aplicações de papel higiênico e toalhas que oferecemos.",
-      rows: [
-        {
-          grade: "D2 / 1,2379",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Linhas padrão de papel higiênico e papel de cozinha submetidas a afiação CBN em linha. Nosso grau padrão.",
-          tradeoff:
-            "Excelente custo-benefício geral. Não apresenta a maior vida útil quando fabricado com matéria-prima altamente reciclada e com alto teor de cinzas.",
-        },
-        {
-          grade: "Cr12MoV",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Setores em que o custo da lâmina por corte é mais importante do que a vida útil absoluta do fio; ampla disponibilidade de serviços de reafiação.",
-          tradeoff:
-            "Resistência ao desgaste ligeiramente inferior à do D2 em fibra reciclada abrasiva.",
-        },
-      ],
-      outro:
-        "Para linhas de alta velocidade que processam fibra altamente reciclada com enchimento abrasivo, também recomendamos a M2 HSS, que mantém o fio afiado por mais tempo entre as afiações, mas é mais sensível às condições do disco de CBN. Caso não tenha certeza de qual grau sua linha necessita, informe-nos sobre a matéria-prima (virgem ou reciclada), a densidade da troncos e quantos cortes por minuto você realiza. Nós adaptamos o grau à linha, e não o contrário.",
-    },
-    componentsIntro:
-      "O corte transversal do rolo de papel-papel tissue é a operação de corte de maior risco em uma linha de transformação de papel-papel tissue. Um defeito dimensional nessa etapa — tubos de papelão amassados, geração excessiva de pó ou faces de corte inclinadas — se propaga imediatamente para as estações de embalagem, provocando paradas na linha e rejeições de produtos destinados ao consumidor.",
+    compatibleMachinesIntro:
+      "A Sureay fornece lâminas de reposição em D2, Cr12MoV ou M2 HSS para linhas de conversão de papel tissue. O furo central, a furação de montagem e o perfil são feitos sob medida. Envie o desenho para receber uma cotação para a sua serra. As marcas de máquinas indicam a compatibilidade das peças de reposição Sureay.",
     components: [
       {
-        id: "runout-control",
-        tag: "PRECISÃO",
-        title: "Tensionamento sem oscilação",
+        id: "tissue-log-saw-mounting",
+        tag: "Geometria de montagem",
+        title:
+          "Opções de aço para ferramentas e HSS para a conversão de Papel tissue",
         description:
-          "Por que uma serra para troncos amassa os tubos de papelão? Quase sempre porque o desvio lateral ultrapassou cerca de 0,20 mm, e a lâmina começa a bater no tubo em vez de cortá-lo. Uma lâmina de 610 mm girando em alta rotação (RPM) pode entortar se não estiver devidamente tensionada. Tensionamos por CNC e micro-retificamos cada lâmina de serra para torção lateral ≤0,15 mm, garantindo que ela corte perfeitamente em linha reta, sem oscilar e sem amassar o frágil tubo de papelão.",
+          "A Sureay fornece lâminas circulares D2, Cr12MoV e M2 HSS para cortar rolos para papel tissue e conversão de papel de cozinha, oferecendo opções de materiais para sua serra existente e arranjo de afiação.",
       },
       {
-        id: "cbn-compatible",
-        tag: "METALURGIA",
-        title: "Pronto para afiação com CBN em linha",
+        id: "tissue-log-saw-profile",
+        tag: "Perfil da lâmina",
+        title: "Faces polidas e tratamentos de superfície opcionais",
         description:
-          "Lâminas de D2 e Cr12MoV submetidas a tratamento térmico para atingir HRC 58–60. Essa faixa específica de dureza responde bem ao uso contínuo de rebolos de CBN, sem sobrecarregá-los nem causar vitrificação, mantendo um fio afiado como uma lâmina de barbear e protegendo seu equipamento de afiação.",
+          "As faces das lâminas com polimento espelhado estão disponíveis com opções de cromo duro, PTFE ou TiN, permitindo que a especificação da superfície seja selecionada juntamente com o produto de Papel tissue e o material da lâmina.",
       },
       {
-        id: "anti-friction",
-        tag: "REVESTIMENTOS",
-        title: "Acabamentos em Teflon e cromo",
+        id: "tissue-log-saw-replacement",
+        tag: "Referência de reposição",
+        title: "Padrões de montagem personalizados e perfis de bisel",
         description:
-          "O atrito gera calor e poeira explosiva de papel. Lâminas revestidas com cromo duro ou Teflon (PTFE) reduzem o coeficiente de atrito, proporcionando bordas de corte impecáveis em rolos de papel-toalha de cozinha premium de três camadas e prolongando o tempo médio entre os ciclos de afiação.",
+          "Encomende lâminas de reposição com furos personalizados, padrões de furos de acionamento, cubos e chanfros para sua linha de conversão. Os diâmetros listados variam de 610 a 1.000 mm, com diâmetros personalizados de até 1.200 mm.",
+        relatedBladeIds: ["rotary-slitter-knives-paper"],
       },
     ],
-    dimensionLabels: {
-      col0: "Máquina de destino / Tipo de log",
-      col1: "Diâmetro externo (mm)",
-      col2: "Diâmetro interno (mm)",
-      col3: "Espessura (mm)",
-      caption:
-        "* Dimensões padrão para os principais fabricantes de produtos de papel e papelão (OEMs). Orifícios personalizados para pinos de acionamento, ranhuras para chavetas e diâmetros de até Ø1200 mm para rolos industriais da JRT, fabricados de acordo com especificações exatas.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "4.76",
+        label: "Tamanhos",
+        value:
+          "Diâmetros externos listados: Ø610–1000 mm; diâmetros personalizados de até Ø1200 mm",
       },
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "3.80",
+        label: "Material",
+        value: "D2 (1.2379), Cr12MoV ou M2 HSS",
       },
       {
-        spec: "Casmatic Standard",
-        od: '610 (24")',
-        id: '82.55 (3-1/4")',
-        thickness: "4.76",
+        label: "Revestimentos opcionais",
+        value: "Cromo duro, PTFE ou TiN",
       },
       {
-        spec: "Bretting / MTC",
-        od: "680",
-        id: "68.26",
-        thickness: "4.76",
+        label: "Aplicação",
+        value:
+          "Papel tissue para banheiro, toalhas de cozinha, toalhas de limpeza industriais e rolos jumbo de Papel tissue",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "870",
-        id: "60",
-        thickness: "6.0",
+        label: "Desvio lateral",
+        value: "≤0.15 mm",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "1000",
-        id: "60",
-        thickness: "6.0",
+        label: "Desvio da borda",
+        value: "≤0.10 mm",
+      },
+      {
+        label: "Acabamento da superfície",
+        value: "Polimento espelhado, Ra ≤ 0,2 µm",
+      },
+      {
+        label: "Taxa de corte de referência",
+        value:
+          "Até 300 cursos/min, dependendo da serra e da configuração de corte",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["nonwoven-log-saw-blades", "rotary-slitter-knives-paper"],
     offers: {
       lowPrice: 180,
       highPrice: 1200,
@@ -1382,75 +1676,184 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Por que minha serra para troncos está amassando os tubos de papelão dos rolos de papel higiênico?",
+            "Quais lâminas de serra circular de reposição para cortar rolos de papel tissue se adaptam à minha linha de conversão?",
           answer:
-            "A quebra do núcleo é causada principalmente pela oscilação excessiva da lâmina (desvio lateral) ou por uma aresta de corte cega. Quando o desvio lateral excede 0,20 mm, a lâmina bate fisicamente contra o núcleo, em vez de cortá-lo. Nossas lâminas são niveladas por tensão e verificadas por CMM para um desvio lateral ≤0,15 mm. Verifique também se suas pedras de afiamento CBN em linha estão corretamente alinhadas e se estão retificando ativamente a lâmina a cada ciclo.",
+            "A lâmina de reposição deve corresponder ao diâmetro, furo, espessura, cubo, bisel e padrão de furos de acionamento especificados para a serra. Duas lâminas de Ø610 mm podem ter furos ou espessuras de corpo diferentes; portanto, utilize a referência original da lâmina, bem como o modelo da máquina. Tanto a lâmina de corte de papel higiênico quanto a lâmina de serra para rolos de paptora de papel tissue podem se referir a esta lâmina circular de corte transversal. Para corte longitudinal de faixas, consulte [Lâminas para Cortadoras Rotativas de Papel](/products/rotary-slitter-knives-paper).",
+        },
+        {
+          question: "Como devo escolher entre D2, Cr12MoV e M2 HSS?",
+          answer:
+            "Comece analisando o material atual da lâmina — se é para papelPapel tissue, toalha de papel ou outro tipo — e o método de afiação. Compare o desgaste gradual, os danos na borda e o resultado do corte entre os ciclos de afiação. A especificação de substituição deve combinar a escolha do aço com o bisel e a seção da lâmina existentes, para que uma mudança de material possa ser avaliada em condições de produção comparáveis.",
         },
         {
           question:
-            "Como posso minimizar a formação de poeira e o rasgo das fibras durante o corte transversal de lenços de papel?",
+            "O que deve orientar a escolha do revestimento para lâminas de serra circular para corte de rolos de papel tissue?",
           answer:
-            "A poeira é gerada quando uma lâmina de alto atrito rasga as fibras do papel tissue em vez de cortá-las. Nós projetamos um ângulo de bisel raso (15°–25°) combinado com uma superfície polida espelhada (Ra ≤ 0,2 μm). Para obter a máxima redução de poeira, opte por nossas lâminas revestidas com Teflon (PTFE), que reduzem drasticamente o atrito e permitem que a lâmina deslize pelo tronco com deslocamento mínimo das fibras.",
+            "Leve em consideração o material da lâmina, o produto de pPapel tissue e a localização de resíduos ou problemas de corte relacionados ao calor. O atrito entre a lâmina e o rolo pode contribuir para o aquecimento. Especifique o tratamento de superfície solicitado separadamente do tipo de aço e do chanfro, e compare as configurações revestidas e não revestidas nas mesmas condições de corte.",
         },
         {
           question:
-            "Vocês fornecem lâminas para serras de troncos das marcas Fabio Perini, PCMC, Casmatic ou Gambini?",
+            "Por que as lâminas de uma serra circular para cortar rolos de papel tissue podem ficar recortadas após serem afiadas?",
           answer:
-            "Sim. O furo padrão de Ø68,26 mm (+0,05 mm) é compatível diretamente com as serras para troncos Fabio Perini e PCMC Forte/Elite. O furo de Ø82,55 mm é compatível com as plataformas Casmatic e equivalentes. Para máquinas Gambini e Bretting, fabricamos de acordo com a geometria medida da sua lâmina existente ou com base no seu próprio desenho, para que a lâmina de reposição se encaixe perfeitamente sem a necessidade de reajustes. Envie-nos o modelo da máquina, uma lâmina desgastada ou um esboço com as dimensões, e confirmaremos a compatibilidade antes de apresentar o orçamento.",
+            "O afiamento irregular ao redor da circunferência pode produzir uma borda recortada ou poligonal. As verificações relevantes incluem o estado do rebolo, o contato nas duas faces e o desvio da lâmina montada. Compare o padrão com o histórico de afiamento e siga o procedimento de afiamento do fabricante da serra antes de selecionar um material de reposição diferente.",
         },
         {
           question:
-            "Como a lâmina interage com o sistema de afiação contínua com CBN da máquina?",
+            "Por que o cubo e o ângulo de inclinação são importantes se o diâmetro já é compatível?",
           answer:
-            "As serras para troncos utilizam pedras de CBN (nitreto de boro cúbico) sincronizadas para afiar a lâmina continuamente durante a operação. Se o material da lâmina for muito duro ou muito macio, ele causará acúmulo de resíduos ou vitrificação nas pedras, tornando-as ineficazes. Nossas lâminas D2, submetidas a tratamento térmico para atingir HRC 58–60, eliminam microlascas de forma limpa, sem entupir seus discos de CBN.",
+            "O cubo define a relação de montagem da lâmina, enquanto o chanfro determina o perfil da aresta de corte e o contato com as rodas de afiamento. Duas lâminas com o mesmo diâmetro, furo e espessura do corpo podem diferir nessas características. Um desenho em corte transversal identifica a configuração completa necessária para a serra e seu arranjo de afiamento.",
         },
         {
           question:
-            "Qual é o maior diâmetro de lâmina que vocês conseguem fabricar?",
+            "O diâmetro de uma lâmina reafiada deve ser usado para uma nova substituição?",
           answer:
-            "Fabricamos papel tissue lâminas de serra para bobinas de até Ø1200 mm para linhas de produção de lenços de papel industriais de grande formato e rolos jumbo (JRT). Para isso, são necessários nossos fornos a vácuo de grande formato tratamento térmico e equipamentos de retificação CNC. O prazo de entrega padrão é de 10 dias úteis a partir da aprovação do desenho.",
+            "Utilize o diâmetro original da lâmina nova, quando disponível. O afiamento repetido reduz o diâmetro externo; portanto, registre a dimensão após o reafiamento separadamente. O número do item do catálogo indica o tamanho listado, e o desenho da lâmina inclui a geometria do cubo, da montagem e do bisel para uma nova peça de reposição.",
+        },
+        {
+          question:
+            "De quais informações você precisa para cotar lâminas de serra circular para corte de rolos de papel tissue?",
+          answer:
+            "Informe o modelo da serra, a referência original da lâmina ou o desenho, a quantidade e o produto de Papel tissue que você corta. Inclua o diâmetro e a espessura da lâmina nova, o furo, o layout dos pinos de acionamento, a seção transversal do cubo e o chanfro. Especifique o tipo de aço e o acabamento solicitados, se já estiverem definidos, e indique o diâmetro atual separadamente caso a amostra tenha sido reafiada.",
         },
       ],
-      company: [
-        {
-          question: "Você é um fabricante ou uma empresa comercial?",
-          answer:
-            "Fabricante direto. Nós forjamos, afiamos e inspecionamos a qualidade de cada lâmina em nossas instalações, de acordo com a certificação ISO 9001:2015. Você se comunica diretamente com os engenheiros de produção que fabricaram suas lâminas — sem margem de lucro de revendedores.",
-        },
-        {
-          question:
-            "Vocês fornecem rebolos de afiação de CBN compatíveis junto com as lâminas?",
-          answer:
-            "Sim. Fornecemos conjuntos combinados de pedras de afiar CBN projetadas especificamente para o nosso lâminas de serra para bobinas, garantindo o ângulo de afiação correto, a dureza do aglutinante e o grão abrasivo adequados para maximizar a vida útil da lâmina e minimizar o desgaste da pedra.",
-        },
-        {
-          question: "Quais certificações de qualidade a Sureay possui?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional por CMM e um certificado de lote tratamento térmico. Certificados de fábrica e relatórios completos de rastreabilidade de materiais estão disponíveis mediante solicitação.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Inclua o modelo de serra de corte de rolo, material do rolo, diâmetro externo da lâmina, furo, espessura, chanfro e padrão de furo do pino de acionamento.",
+    dimensionLabels: {
+      col1: "Diâmetro externo (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura do corpo (mm)",
+      intro:
+        "Cada número de item identifica uma combinação completa de diâmetro externo, furo e espessura do corpo.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005101",
+        od: "610",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005102",
+        od: "610",
+        id: "68.26",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005103",
+        od: "610",
+        id: "82.55",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005104",
+        od: "680",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005105",
+        od: "870",
+        id: "60",
+        thickness: "6.0",
+      },
+      {
+        itemNo: "SR005106",
+        od: "1000",
+        id: "60",
+        thickness: "6.0",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lâminas de serra para rolos de papel tissue | Ø610–1000 mm",
+      heroAlt:
+        "lâminas de serra circular para cortar rolos de papel tissue com aresta de corte circular, furo central e furos de montagem",
+      sizeRange: "Ø610–1000 mm",
+      heroSpecs: [
+        {
+          label: "Aplicação",
+          value: "corte de rolo de papel tissue e papel de cozinha",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value:
+            "Diâmetros externos listados: Ø610–1000 mm; diâmetros personalizados de até Ø1200 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379), Cr12MoV ou M2 HSS",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value: "Cromo duro, PTFE ou TiN",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Papel tissue para banheiro, toalhas de cozinha, toalhas de limpeza industriais e rolos jumbo de Papel tissue",
+        },
+        {
+          label: "Desvio lateral",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Desvio da borda",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Acabamento da superfície",
+          value: "Polimento espelhado, Ra ≤ 0,2 µm",
+        },
+        {
+          label: "Taxa de corte de referência",
+          value:
+            "Até 300 cursos/min, dependendo da serra e da configuração de corte",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/tissue-log-saw-blades-02.webp",
+        alt: "lâminas de serra circular para corte de rolos de papel tissue mostrando sua face e área central de montagem",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Solicite um orçamento de suas lâminas circulares para corte de rolos",
+        description:
+          "Inclua o número do item ou a referência original da lâmina, o modelo da serra, os desenhos de montagem e do bisel, além da quantidade.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Inclua o número do item ou a referência original da lâmina, o modelo da serra, os desenhos de montagem e do bisel, além da quantidade.",
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Lâminas de serra para troncos de não tecido",
-    fullName:
-      "Lâminas de serra para troncos resistentes à corrosão para a transformação de não tecidos e produtos de higiene",
+    name: "Lâminas de serra para rolos de não tecido",
+    fullName: "Lâminas de serra para corte de rolos de não tecido",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Lâminas para processamento de não tecidos",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Anticorrosão",
-    badgeColor: "teal",
+    imageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Lâminas de serra para troncos projetadas para linhas de conversão de não tecidos e produtos de higiene — lenços umedecidos para bebês, lenços umedecidos, produtos de higiene feminina e rolos para incontinência adulta. Aço para ferramentas D2 com revestimento TiN resistente à corrosão ou cromo duro, que resiste a soluções à base de álcool, loções e surfactantes. Microafiação para um desvio lateral ≤0,15 mm, garantindo cortes sem desfiamento em substratos spunbond, meltblown, SMS e airlaid. Compatíveis com linhas de conversão da Fameccanica, GDM, Curt G. Joa e Zuiko. Diâmetros personalizados em 10 dias úteis.",
-    fullDescription:
-      "As linhas de conversão de produtos higiênicos não tecidos apresentam um conjunto de exigências em relação às lâminas fundamentalmente diferente daquele das operações com papel-toalha. Enquanto as serras para rolos de papel-toalha precisam lidar com o pó de papel e a trituração do tubo central, as serras para rolos de tecido não tecido enfrentam dois modos distintos de falha: o desfiamento das fibras provenientes de substratos sintéticos que resistem ao cisalhamento limpo e a corrosão acelerada causada pelo ambiente químico em linhas que processam álcool, loções, conservantes (fenoxietanol) e surfactantes em condições de alta umidade.\n\nAs lâminas lâminas de serra para bobinas da Sureay para não tecidos são fabricadas em aço-ferramenta D2 (1.2379) de alto carbono e alto cromo e estão disponíveis com revestimentos resistentes à corrosão específicos para cada aplicação. Cada lâmina é endurecida a vácuo, nivelada por tensão e verificada por CMM antes do envio.\n\n## Por que as lâminas para papel-toalha falham em linhas de não tecidos\n\nAs telas de polipropileno spunbond, meltblown e compósitas SMS são fundamentalmente mais resistentes ao corte limpo do que o papel-toalha celulósico. As fibras sintéticas são elásticas — elas se deformam diante de uma lâmina cega ou ligeiramente instável, em vez de se separarem de maneira limpa, produzindo bordas de corte desfiadas e fibrosas que causam falhas na dobragem e na embalagem nas etapas posteriores. Uma lâmina otimizada para papel-toalha (chanfro mais raso, matriz mais macia para compatibilidade com CBN) produzirá arrancamento visível de fibras em substratos spunbond em uma fração do tempo de operação que levaria no papel-toalha.\n\nO ambiente químico agrava o problema. As linhas de produção de lenços umedecidos operam com índices de saturação de 2,0 a 3,5× (peso da solução em relação ao peso do substrato), o que significa que a lâmina fica continuamente exposta à composição química da impregnação: normalmente 80 a 95% de água purificada, além de conservantes, umectantes e surfactantes. O D2 padrão, sem tratamento de superfície, desenvolverá microcorrosões na aresta de corte em poucas semanas, acelerando a degradação da aresta e aumentando o risco de contaminação por partículas em um produto de higiene crítica.\n\n## Opções de revestimento para ambientes de higiene\n\n**Revestimento TiN por PVD (2–3 µm, HV 2300+):** O nitreto de titânio aplicado por deposição física de vapor (PVD) oferece uma barreira quimicamente inerte com excelente adesão. Impede a penetração de álcool e surfactantes no substrato da lâmina, prolonga os intervalos de manutenção da borda e adiciona uma camada de dureza que resiste à microabrasão causada pelas partículas de SAP (polímero superabsorvente) presentes nas linhas de núcleos absorventes. Recomendado para a fabricação de lenços umedecidos e produtos para incontinência adulta.\n\n**Cromagem dura:** O cromo duro eletrodepositado (20–30 µm) oferece excelente resistência à corrosão em ambientes de alta umidade (≥75% UR) e reduz o coeficiente de atrito contra teias de fibras sintéticas. A camada mais espessa também preenche os microporos da superfície, criando um efeito de vedação contra a penetração de agentes de limpeza durante os ciclos de lavagem.\n\n**D2 sem revestimento (padrão):** Adequado para linhas de conversão de não tecidos a seco — airlaid, thermobond, spunlace — onde não há presença de produtos químicos de saturação. Dureza HRC 58–60, compatível com afiação por CBN.\n\n## Geometria do bisel para fibras sintéticas\n\nSubstratos não tecidos exigem um ângulo de bisel primário ligeiramente mais acentuado (25°–35°) em comparação com o papel-toalha (15°–25°). A geometria mais inclinada concentra a força de corte no ponto de contato da aresta, iniciando uma separação limpa das fibras em vez da deflexão elástica que causa desfiamento. Para rolos de lenços umedecidos impregnados com loção e com alta resistência coesiva, um bisel composto (alívio primário + secundário) proporciona a superfície de corte mais limpa com mínimo enrolamento da aresta durante ciclos de operação prolongados.\n\n## Tolerâncias dimensionais\n\n- **Desvio lateral:** ≤0,15 mm\n- **Desvio da borda:** ≤0,10 mm\n- **Paralelismo da face:** 0,05 mm\n- **Concentricidade (diâmetro externo em relação ao furo):** ≤0,30 mm\n- **Acabamento superficial:** Polimento espelhado (Ra ≤0,2 µm)\n\n## Compatibilidade com plataformas OEM\n\nAs serras para rolos de produtos higiênicos de não-tecido diferem nas especificações do furo e no diâmetro em relação às linhas de papel higiênico. Plataformas comuns:\n\n**Fameccanica (Itália):** Linhas de conversão de fraldas infantis e produtos de higiene feminina; diâmetros das lâminas normalmente variam de Ø400 a Ø550 mm, dependendo do formato do produto e do diâmetro do rolo.\n\n**GDM (Itália):** Linhas de alta velocidade para produtos de higiene; especificações das lâminas de acordo com o desenho do cliente.\n\n**Curt G. Joa (EUA):** Linhas norte-americanas de produtos para incontinência adulta e higiene feminina; especificações de furo no sistema imperial disponíveis.\n\n**Zuiko (Japão):** Produção de fraldas infantis; dimensões da lâmina de acordo com o desenho do OEM.\n\n**Fabricantes OEM chineses (Zlink, Dachang, fabricantes sediados em Quanzhou):** Especificações das lâminas fornecidas conforme desenho ou por engenharia reversa a partir de amostra.\n\nDiâmetro externo personalizado de Ø350 mm a Ø700 mm fabricado sob encomenda. Análise de desenhos e aprovação dimensional do primeiro artigo disponíveis.",
+      "Lâminas circulares de reposição D2 para corte de rolos para corte transversal de rolos de tecido não tecido. Furos personalizados, padrões de furos de montagem e perfis de lâmina feitos de acordo com o desenho da sua faca.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1461,102 +1864,65 @@ export const blades: Blade[] = [
       "Zlink",
       "Dachang",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379) — HRC 58–60",
-      },
-      {
-        label: "Coating Options",
-        value: "TiN PVD | Hard Chrome | Uncoated",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (CMM-verified)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Diameter Range",
-        value: "Ø350 mm – Ø700 mm (custom to drawing)",
-      },
-      {
-        label: "Applications",
-        value: "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Solicite lâminas circulares de reposição D2 para rolos de corte para seu equipamento de corte de rolos não tecidos, com furos e padrões de montagem personalizados, além de opções sem revestimento, TiN ou cromo duro. Envie seu desenho ou amostra e a Sureay preparará um orçamento para sua configuração. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay.",
     components: [
       {
-        id: "corrosion-coating",
-        tag: "REVESTIMENTOS",
-        title: "TiN e cromo duro para resistência química",
+        id: "nonwoven-log-saw-installation",
+        tag: "Geometria de instalação",
+        title: "Facas D2 para rolos de tecido não tecido",
         description:
-          "As linhas de produção de lenços umedecidos e produtos de higiene estão constantemente expostas a álcoois, surfactantes e conservantes que corroem as arestas de aço para ferramentas sem revestimento em questão de semanas. Nosso revestimento TiN PVD (HV 2300+) e o cromagem dura criam uma barreira quimicamente inerte, impedindo a penetração de substâncias na aresta de corte e prolongando o intervalo de operação sem problemas entre os ciclos de reafiação.",
+          "A Sureay fornece lâminas circulares D2 para corte de rolos com uma dureza listada de 58–60 HRC para corte transversal de rolos de tecido não tecido. O perfil de corte e a seção da lâmina podem ser especificados para o equipamento de corte de rolo instalado.",
       },
       {
-        id: "nonwoven-bevel",
-        tag: "GEOMETRIA",
-        title: "Perfil biselado de fibra sintética",
+        id: "nonwoven-log-saw-edge",
+        tag: "Geometria da borda",
+        title: "Opções sem revestimento, TiN e cromo duro",
         description:
-          "As telas spunbond, meltblown e SMS se deformam elasticamente antes de um chanfro específico para papel-toalha, causando desfiamento visível das fibras na superfície de corte. Aplicamos um bisel primário mais inclinado (25°–35°) com um relevo secundário composto que inicia a separação limpa das fibras logo no primeiro contato — eliminando o formação de fios e a densificação das bordas que causam rejeições na linha de embalagem.",
+          "As configurações de lâminas sem revestimento, TiN PVD e cromo duro oferecem opções de superfície para um pedido de reposição, com o revestimento especificado separadamente da geometria da lâmina.",
       },
       {
-        id: "runout-hygiene",
-        tag: "PRECISÃO",
-        title: "Desvio ≤ 0,15 mm para cortes sem desfiamento",
+        id: "nonwoven-log-saw-reference",
+        tag: "Identificação de peças",
+        title:
+          "Diâmetros internos personalizados e padrões completos de montagem",
         description:
-          "As bobinas de tecido não tecido são mais macias e mais compressíveis do que as bobinas de papel-toalha. Qualquer oscilação lateral da lâmina resulta diretamente em uma superfície de corte comprimida e irregular, em vez de um plano de corte limpo. Cada lâmina é nivelada por tensão e verificada por CMM para um desvio lateral ≤0,15 mm antes da expedição, garantindo que a lâmina penetre na tronco em um ângulo consistente a cada corte.",
+          "Furos centrais personalizados, recursos de fixação e superfícies de posicionamento permitem que as lâminas de reposição se adaptem ao desenho da sua serra existente, incluindo configurações que compartilham o mesmo diâmetro, mas utilizam suportes diferentes.",
+        relatedBladeIds: ["nonwoven-slitter-knives"],
       },
     ],
-    dimensionLabels: {
-      col0: "Plataforma da máquina / Formato do produto",
-      col1: "Diâmetro externo (mm)",
-      col2: "Diâmetro interno (mm)",
-      col3: "Espessura (mm)",
-      caption:
-        "* Dimensões de referência para plataformas comuns de conversão de produtos higiênicos não tecidos. Padrões de furos, ranhuras de chaveta e furos para pinos de acionamento fabricados de acordo com o desenho do cliente. Diâmetros externos personalizados de Ø350 a Ø700 mm disponíveis com prazo de entrega de 10 dias úteis.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Baby Wipe / Wet Wipe (short log)",
-        od: "400",
-        id: "To drawing",
-        thickness: "3.80",
+        label: "Aplicação",
+        value: "Rolos transversais de tecido não tecido",
       },
       {
-        spec: "Baby Wipe / Wet Wipe (standard log)",
-        od: "450",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Material",
+        value: "D2 (1.2379)",
       },
       {
-        spec: "Femcare / Sanitary Napkin Roll",
-        od: "500",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Dureza",
+        value: "58–60 HRC",
       },
       {
-        spec: "Adult Incontinence / Large Format",
-        od: "550",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Tamanhos",
+        value: "Ø350–700 mm",
       },
       {
-        spec: "Industrial / Canister Wipe Roll",
-        od: "600",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Revestimentos opcionais",
+        value:
+          "TiN PVD ou cromo duro; lâminas sem revestimento também estão disponíveis",
       },
       {
-        spec: "Custom / OEM to Drawing",
-        od: "Ø350–700",
-        id: "To drawing",
-        thickness: "3.80–6.00",
+        label: "Desvio lateral",
+        value: "≤0.15 mm",
+      },
+      {
+        label: "Desvio da borda",
+        value: "≤0.10 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["tissue-log-saw-blades", "nonwoven-slitter-knives"],
     offers: {
       lowPrice: 150,
       highPrice: 900,
@@ -1565,76 +1931,168 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Por que minhas lâminas se corroem rapidamente na nossa linha de produção de lenços umedecidos?",
+            "Como identifico facas circulares substitutas para rolos transversais de tecido não tecido?",
           answer:
-            "As linhas de produção de lenços umedecidos expõem continuamente as lâminas a conservantes (fenoxietanol), surfactantes e soluções à base de álcool em condições de umidade elevada. O aço para ferramentas D2, sem revestimento, desenvolve microcorrosão na aresta de corte em questão de semanas nessas condições, acelerando o desgaste e criando um risco de contaminação por partículas. A solução é um tratamento de superfície resistente à corrosão: o revestimento PVD de TiN (2–3 µm, HV 2300+) oferece uma barreira quimicamente inerte contra a penetração de álcool e surfactantes, enquanto o cromagem dura sela os microporos da superfície, impedindo a penetração de agentes de limpeza durante os ciclos de lavagem.",
+            "Identifique a serra e a referência da peça original e, em seguida, compare o diâmetro, o furo, a espessura, o padrão de montagem e o chanfro. “Lâmina para corte de rolos de não-tecido” é um nome de compra relacionado. Confirme se a peça realiza o corte transversal de um rolo enrolado. Para cortar uma banda em movimento no sentido do comprimento, consulte [Facas para cortadoras de não-tecido](/products/nonwoven-slitter-knives).",
         },
         {
           question:
-            "Minhas lâminas estão deixando bordas de corte desfiadas e fibrosas nos rolos de tecido não tecido spunbond. O que está causando isso?",
+            "A Sureay pode fabricar um furo e um padrão de furos personalizados para uma serra já existente?",
           answer:
-            "O desgaste em substratos de PP spunbond ou SMS é causado por dois fatores: geometria incorreta do bisel e/ou desvio lateral excessivo. As fibras sintéticas são elásticas — elas se deformam antes de um bisel raso próprio para tecido (15°–25°), em vez de serem cortadas de forma limpa. Substratos não tecidos exigem um bisel primário mais acentuado (25°–35°) para concentrar a força de corte no ponto de contato com a fibra. Além disso, um desvio lateral acima de 0,20 mm faz com que a lâmina comprima a bobina em vez de cortá-la, produzindo bordas irregulares. Nossas lâminas para não tecidos são verificadas por CMM com desvio lateral ≤0,15 mm e retificadas com um perfil de bisel composto otimizado para fibras sintéticas.",
+            "Sim. A Sureay pode fabricar o furo e o padrão de parafusos ou ranhuras de acordo com o desenho. Indique o diâmetro do círculo primitivo e as posições angulares dos elementos de fixação, bem como suas dimensões. Duas formas de montagem podem ter o mesmo número de furos e, ainda assim, utilizar círculos primitivos ou disposições angulares diferentes.",
         },
         {
           question:
-            "Vocês podem fornecer lâminas compatíveis com as máquinas de conversão para produtos de higiene da Fameccanica ou da GDM?",
+            "Como devem ser especificadas a dureza D2 e o tratamento de superfície?",
           answer:
-            "Sim. Fabricamos de acordo com o desenho ou amostra do cliente para as marcas Fameccanica, GDM, Curt G. Joa, Zuiko e plataformas OEM do mercado interno chinês. O diâmetro interno, o padrão dos furos dos pinos de acionamento, o diâmetro externo e a espessura são todos personalizáveis. Envie-nos seu desenho OEM ou uma amostra de lâmina desgastada e forneceremos uma confirmação dimensional e a aprovação do primeiro artigo antes do início da produção em série.",
+            "Especifique separadamente a dureza do aço-base D2 e o acabamento superficial. Se estiver trocando uma lâmina sem revestimento por uma com revestimento TiN PVD ou cromo duro, identifique o acabamento solicitado no desenho de substituição e mantenha claras as dimensões especificadas da seção da lâmina e da montagem.",
         },
         {
           question:
-            "Qual é a diferença entre o revestimento de TiN e o cromagem dura para lâminas de uso higiênico?",
+            "A espessura do corpo descreve totalmente o perfil de corte?",
           answer:
-            "O TiN PVD (nitreto de titânio) é um revestimento fino e extremamente duro (2–3 µm, HV 2300+) aplicado em uma câmara de vácuo. Ele proporciona uma barreira inerte contra a corrosão química, confere dureza à superfície que resiste à microabrasão causada por partículas de SAP nas linhas de núcleos absorventes e prolonga os intervalos de manutenção das bordas. O cromo duro é uma camada eletrodepositada mais espessa (20–30 µm) que oferece excelente resistência à corrosão em ambientes de alta umidade e reduz o coeficiente de atrito contra as teias de fibras sintéticas. Para linhas de lenços umedecidos com produtos químicos agressivos, o TiN é a opção preferida. Para linhas de não-tecidos secos ou semissecos em ambientes de fábrica com alta umidade, o cromo duro é uma opção econômica.",
+            "Não. A espessura do corpo fornece apenas uma dimensão do perfil axial. Inclua o chanfro e sua orientação, além de qualquer cubo ou seção escalonada, no desenho da seção transversal. Esses detalhes localizam a aresta de corte em relação à face de montagem.",
         },
         {
           question:
-            "Essas lâminas são compatíveis com sistemas de afiação CBN em linha em linhas de produção de não-tecidos?",
+            "O que significam os termos “desvio lateral” e “desvio de borda”?",
           answer:
-            "A maioria das serras circulares utilizadas na conversão de produtos higiênicos não tecidos não utiliza sistemas contínuos de afiamento em linha com CBN (ao contrário das linhas de produção de papel higiênico). As lâminas são normalmente substituídas em intervalos programados, em vez de serem afiadas continuamente. No entanto, se sua linha utilizar afiamento CBN em linha, nossas lâminas D2, temperadas a HRC 58–60, são compatíveis com as especificações padrão dos discos de CBN. O revestimento de TiN será removido pelo contato com o CBN na aresta de corte, o que é normal — a proteção se aplica ao corpo da lâmina, e não à zona da aresta que está sendo afiada ativamente.",
+            "O desvio lateral descreve a variação de lado a lado da lâmina à medida que ela gira, enquanto o desvio da borda descreve a variação radial na circunferência de corte. Ambos fazem parte da especificação da lâmina, juntamente com a referência de montagem utilizada para a medição. Ao avaliar uma lâmina instalada, diferencie as medidas da lâmina das variações introduzidas pelo eixo, pelo flange ou pelas condições de assentamento.",
+        },
+        {
+          question:
+            "O que devo incluir em uma pesquisa sobre facas circulares para rolos transversais de tecido não tecido?",
+          answer:
+            "Forneça o modelo da serra, desenho da faca ou número da peça, tipo de tecido não tecido enrolado e quantidade. Identifique o furo central, o círculo primitivo, a direção do chanfro e o acabamento. Para obter uma amostra, forneça vistas frontal, traseira e da borda e marque quaisquer áreas retificadas ou danificadas que não representem mais o perfil da nova faca.",
         },
       ],
-      company: [
-        {
-          question: "Você é um fabricante ou uma empresa comercial?",
-          answer:
-            "Fabricante direto. Nós forjamos, retificamos, revestimos e inspecionamos a qualidade de cada lâmina internamente em nossas instalações de 15.000 m² em Ma’anshan, na província de Anhui, de acordo com a certificação ISO 9001:2015. Você se comunica diretamente com os engenheiros de produção que fabricaram suas lâminas — sem margem de lucro de revendedores.",
-        },
-        {
-          question:
-            "É possível fazer a engenharia reversa de uma lâmina a partir de uma amostra desgastada ou de um desenho do fabricante original (OEM)?",
-          answer:
-            "Sim. Envie-nos sua lâmina desgastada ou o desenho dimensional do fabricante original (OEM) e elaboraremos um relatório de medição por CMM e uma confirmação dimensional antes de dar início à produção. Relatórios de inspeção do primeiro artigo estão disponíveis mediante solicitação para novos projetos de ferramentas.",
-        },
-        {
-          question:
-            "Qual é a quantidade mínima de pedido e o prazo de entrega?",
-          answer:
-            "O pedido mínimo é normalmente de 2 a 5 lâminas, dependendo do diâmetro. O prazo de entrega padrão é de 10 dias úteis a partir da aprovação do desenho. Podemos atender a pedidos urgentes — entre em contato conosco informando seu prazo.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Inclua o modelo da serra, o desenho da lâmina, o diâmetro externo, o furo, a espessura do corpo, o chanfro e o padrão dos orifícios de montagem.",
+    detailLayout: {
+      seoTitle:
+        "Lâminas de serra para rolos de não tecido | Reposição sob medida",
+      heroAlt:
+        "facas circulares para corte transversal de rolos de tecido não tecido com fio de corte circular, furo central e furos de montagem",
+      sizeRange: "Ø350–700 mm",
+      heroSpecs: [
+        {
+          label: "Aplicação",
+          value: "rolos transversais de tecido não tecido",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Ø350–700 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379)",
+        },
+        {
+          label: "Dureza",
+          value: "58–60 HRC",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value:
+            "TiN PVD ou cromo duro; lâminas sem revestimento também estão disponíveis",
+        },
+        {
+          label: "Desvio lateral",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Desvio da borda",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Aplicação",
+          value: "Rolos transversais de tecido não tecido",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/nonwoven-log-saw-blades-03.webp",
+        alt: "facas circulares para corte transversal de rolos de tecido não tecido amostra mostrando o furo e os furos de montagem",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Solicite um orçamento de suas lâminas circulares para corte de rolos",
+        description:
+          "Envie o modelo da serra, a referência original da lâmina, o desenho dimensionado completo e a quantidade.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Envie o modelo da serra, a referência original da lâmina, o desenho dimensionado completo e a quantidade.",
+    dimensionLabels: {
+      col1: "Diâmetro externo (mm)",
+      col2: "Diâmetro interno (mm)",
+      col3: "Espessura (mm)",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005201",
+        od: "400",
+        id: "To drawing",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005202",
+        od: "450",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005203",
+        od: "500",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005204",
+        od: "550",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005205",
+        od: "600",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005206",
+        od: "Ø350–700",
+        id: "To drawing",
+        thickness: "3.80–6.00",
+      },
+    ],
   },
   {
     id: "paper-cutting-blades",
-    name: "Lâminas para corte de papel",
-    fullName:
-      "Lâminas premium para cortadores de papel tipo guilhotina (HSS e TCT)",
-    category: "shear_blades",
+    name: "Facas de guilhotina para papel",
+    fullName: "Facas de guilhotina para corte de pilhas de papel",
+    seoTitle:
+      "Lâminas para cortadores de papel | Lâminas para guilhotinas de papel",
+    seoDescription:
+      "Encomende lâminas de guilhotina para papel com incrustações de HSS ou com ponta de metal duro para cortadores de pilhas. Os comprimentos listados variam de 450 a 2.050 mm, com comprimentos personalizados e furos de montagem disponíveis.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Lâminas para corte de papel",
-    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    image: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     badge: "Precisão OEM",
     badgeColor: "teal",
     gallery: [
-      "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+      "/images/products/shear-detail/paper-cutting-blades-cover.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
+      "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
     ],
     description:
-      "Elimine o arrasto de papel e a poeira com a lâmina de reposição facas de guilhotina para cortadoras Polar, Wohlenberg e Perfecta. Disponível com inserções em aço rápido (HSS) com 18% de tungstênio e com ponta de carboneto de tungstênio (TCT). Micro-retificado com um bisel preciso de 21°, com planicidade da face em todo o comprimento ≤0,05 mm, para cortes perfeitamente retos em tiragens de grande volume.",
-    fullDescription:
-      "As lâminas de reposição para cortadores de papel tipo guilhotina são componentes de consumo cujo tipo de liga, geometria do fio de corte e precisão dimensional em todo o comprimento determinam diretamente a qualidade do corte em toda a pilha de resmas — desde lâminas para cortadores de escritório de 450 mm até guilhotinas comerciais de dupla viga para salas de impressão de 2.050 mm.\n\nAs lâminas de corte de papel da Sureay são oferecidas em três classes metalúrgicas, adequadas aos requisitos de volume de corte, substrato e custo total de propriedade:\n\n## Classes de Material\n\n**Aço para ferramentas padrão (T10, 9CrSi — HRC 57–60):** Custo-benefício para gráficas de volume moderado e operações de acabamento que cortam papel bond, papel de jornal e papéis não revestidos de até 80 g/m². O aço de alto carbono T10 é temperado a HRC 57–60 e oferece afiação confiável do fio com o menor custo unitário. Adequado para máquinas das classes Polar, Schneider Senator e Challenge 305 em ambientes com ciclo diário moderado.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** A escolha premium para impressão comercial de alto volume, publicação de livros e guilhotinas de conversão de etiquetas que processam várias pilhas de resmas por hora. As lâminas M2 e SKH-51 HSS mantêm a dureza total nas altas temperaturas de corte geradas pela operação de alto ciclo — proporcionando uma vida útil 4 a 6 vezes maior entre os reafiamamentos, em comparação com lâminas padrão de aço carbono. Recomendadas para papel arte revestido, cartolina, materiais de embalagem laminados e folhas de etiquetas adesivas multicamadas, onde o desgaste das bordas se acelera rapidamente.\n\n**Incrustação TCT — Ponta de carboneto de tungstênio (YG15 / YG20):** Incrustação de ponta de carboneto soldada em forno a nitrogênio para os substratos que apresentam maior abrasão: papel autocopiativo (revestimento CBS), papelão de embalagem com alto teor de carbonato de cálcio, papelão revestido, papéis especiais abrasivos e papéis técnicos reforçados com fibras. As lâminas TCT duram de 3 a 5 vezes mais do que as de HSS nesses substratos e mantêm a qualidade da borda de corte muito além do ponto em que as lâminas de HSS precisariam ser reafiasadas.\n\n## Padrões de retificação de precisão\n\n- **Ângulo de bisel:** 21° (geometria padrão de guilhotina, bisel único)\n- **Tolerância de comprimento:** +2 / −1 mm\n- **Tolerância de largura:** ±1 mm\n- **Tolerância de espessura da aresta:** 0 / −0,1 mm\n- **Planicidade da face (comprimento total):** ≤ 0,05 mm\n\nUm desvio de planicidade superior a 0,08 mm ao longo do comprimento da lâmina causa contato irregular entre a lâmina e a placa lateral, produzindo um corte cônico e exigindo o uso de calços de correção pelo operador — uma ineficiência de produção que se acumula, resultando em tempo de inatividade mensurável em linhas de corte de alto volume.\n\n## Compatibilidade com máquinas e condições de fornecimento\n\nComprimentos padrão em estoque de 450 mm a 2.050 mm. Compatível com as séries Polar 115/137/155/176/200 e com as marcas de guilhotinas Schneider Senator, Perfecta, Wohlenberg, Prism e Challenge. Comprimentos personalizados, padrões de furos de montagem e perfis de borda traseira fabricados conforme desenho em até 7 dias úteis.\n\n**Condições de fornecimento disponíveis:** Lâmina afiada (pronta para instalação) / Lâmina semiacabada (para acabamento final no local, de acordo com as especificações da máquina) / Lâmina em bruto (não afiada, para clientes com capacidade interna de reafiamento).",
+      "Lâminas de reposição para cortadores de papel e lâminas de guilhotina para corte de pilhas. Lâminas com inserções de HSS ou pontas de carboneto, com comprimentos personalizados e furos de montagem.",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1646,123 +2104,65 @@ export const blades: Blade[] = [
       "Prism",
       "Seybold",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS Inlay | Tungsten Carbide Tipped (TCT)",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 62–64 (HSS) | HRA 89–91 (Carbide)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "Standard 21° – 24° (Double bevel available)",
-      },
-      {
-        label: "Face Flatness",
-        value: "≤0.05 mm (Eliminates paper draw & tapered cuts)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic (premium edge brazed to alloy steel body)",
-      },
-      {
-        label: "Application",
-        value: "Coated Art Paper, Recycled Board, Carbonless Copy Paper",
-      },
-    ],
+    compatibleMachinesIntro:
+      "A Sureay fabrica lâminas de guilhotina para papel com incrustações de HSS e pontas de carboneto, com comprimentos, padrões de montagem e perfis de bisel personalizados para o seu cortador. Envie seu desenho ou amostra para receber uma cotação para a configuração e o material da lâmina de que você precisa. As marcas das máquinas servem como referência de compatibilidade para as peças de reposição da Sureay.",
     components: [
       {
-        id: "tct-inlay",
-        tag: "METALURGIA",
-        title: "Incrustações de carboneto de tungstênio",
+        id: "paper-knife-edge-selection",
+        tag: "Seleção de materiais",
+        title: "Lâminas com inserções de HSS e pontas de metal duro",
         description:
-          "As lâminas padrão perdem o fio rapidamente ao cortar papéis abrasivos com alto teor de carbonato de cálcio. Nossas lâminas com ponta de carboneto de tungstênio (TCT) mantêm seu fio afiado de 3 a 5 vezes mais tempo do que as de aço rápido (HSS), reduzindo drasticamente o tempo de inatividade da máquina para trocas de lâmina em papéis autocopiativos e papéis artísticos revestidos.",
+          "A Sureay oferece inserções de HSS com 18% de tungstênio e gumes com ponta de metal duro em corpos de aço, proporcionando aos cortadores de pilhas uma variedade de opções de construção de lâminas para seus tipos de papel e condições de produção.",
       },
       {
-        id: "face-flatness",
-        tag: "PRECISÃO",
-        title: "Sorteio “Zero Papel”",
+        id: "paper-guillotine-bevel",
+        tag: "Geometria de corte",
+        title: "Superfícies retificadas e perfis de bisel especificados",
         description:
-          "Se uma lâmina estiver curvada, mesmo que ligeiramente, a pressão hidráulica faz com que ela se desvie no meio do corte, resultando em tamanhos desiguais da parte superior à parte inferior da pilha. Afiamos nossas lâminas para obter uma planicidade da face em todo o comprimento de ≤0,05 mm, a fim de garantir cortes verticais perfeitamente retos em todas as resmas.",
+          "As lâminas para cortadores de papel estão disponíveis com faces retificadas e chanfros definidos por desenho, incluindo configurações de chanfro duplo, de modo que a geometria de trabalho possa ser especificada juntamente com o material da aresta de corte.",
       },
       {
-        id: "oem-compatibility",
-        tag: "COMPATIBILIDADE",
-        title: "Substituição exata do fabricante original (OEM)",
+        id: "paper-cutter-replacement-fit",
+        tag: "Compatibilidade de substituição",
+        title: "Comprimentos personalizados e padrões de montagem",
         description:
-          "Dispomos de desenhos técnicos para guilhotinas das marcas Polar, Wohlenberg, Perfecta e Schneider Senator. Os orifícios de montagem, as roscas e as ranhuras da borda traseira são usinados por CNC para garantir um encaixe perfeito — sem necessidade de calços ou modificações.",
+          "As lâminas para guilhotinas de papel listadas têm comprimentos que variam de 450 a 2.050 mm. A Sureay também fabrica corpos de lâmina de reposição, chanfros e padrões de montagem de acordo com o desenho da sua barra de corte existente.",
       },
     ],
-    dimensionLabels: {
-      col0: "Especificações (mm)",
-      col1: "Comprimento",
-      col2: "Largura",
-      col3: "Espessura da borda",
-      col4: "Espessura do corpo",
-      caption:
-        "* Tamanhos padrão listados acima. Dimensões personalizadas disponíveis mediante solicitação.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "450 * 51 * 12/10",
-        od: "450",
-        id: "51",
-        length: "12",
-        teeth: "10",
+        label: "Tamanhos",
+        value: "450–2050 mm",
       },
       {
-        spec: "595 * 55 * 13.5/10",
-        od: "595",
-        id: "55",
-        length: "13.5",
-        teeth: "10",
+        label: "Material",
+        value:
+          "Inserção de 18% de tungstênio em HSS ou com ponta de metal duro (TCT)",
       },
       {
-        spec: "795 * 60 * 13.5/10",
-        od: "795",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
+        label: "Dureza",
+        value: "HSS: 62–64 HRC; metal duro: 89–91 HRA",
       },
       {
-        spec: "895 * 60 * 13.5/10",
-        od: "895",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
+        label: "Construção da lâmina",
+        value:
+          "Bimetálico: lâmina de corte soldada por brasagem a um corpo de aço-liga",
       },
       {
-        spec: "995 * 60 * 14/11",
-        od: "995",
-        id: "60",
-        length: "14",
-        teeth: "11",
+        label: "Ângulo de bisel",
+        value: "21°–24°; configurações com bisel duplo disponíveis",
       },
       {
-        spec: "1095 * 65 * 14/11",
-        od: "1095",
-        id: "65",
-        length: "14",
-        teeth: "11",
+        label: "Aplicação",
+        value:
+          "Pilhas de papel, papel artístico revestido, papelão reciclado e papel autocopiativo",
       },
       {
-        spec: "1350 * 80 * 16/13",
-        od: "1350",
-        id: "80",
-        length: "16",
-        teeth: "13",
-      },
-      {
-        spec: "2050 * 85 * 16/14",
-        od: "2050",
-        id: "85",
-        length: "16",
-        teeth: "14",
+        label: "Planicidade da superfície",
+        value: "≤0.05 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "three-knife-trimmer-blades"],
+    relatedBladeIds: ["three-knife-trimmer-blades"],
     offers: {
       lowPrice: 80,
       highPrice: 650,
@@ -1771,76 +2171,170 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Devo escolher lâminas M2 HSS ou com ponta de carboneto de tungstênio (TCT) para minha guilhotina?",
+            "Como posso identificar uma lâmina de reposição para cortador de papel?",
           answer:
-            "A M2 HSS é a escolha certa para papel artístico revestido, papel bond e papel para etiquetas padrão em gráficas de alto volume — proporcionando uma vida útil de 4 a 6 vezes maior do que o aço carbono padrão. Opte pelo TCT (inserção de carboneto YG15/YG20) apenas ao cortar papel autocopiativo, papelão de embalagem com alto teor de carbonato de cálcio ou papéis especiais abrasivos. O TCT apresenta desempenho 3 a 5 vezes superior ao HSS nesses substratos, mas tem um custo unitário mais elevado.",
+            "Utilize o modelo e a versão completos da cortadora, juntamente com a referência original da lâmina ou o desenho. Verifique o comprimento, a espessura do corpo e do gume, os orifícios de montagem e a orientação do chanfro. Uma amostra usada deve incluir seu histórico de afiação. A largura de trabalho anunciada da cortadora ajuda a identificar a máquina, enquanto as dimensões completas da lâmina determinam a peça de reposição.",
         },
         {
           question:
-            "Como a geometria da sua lâmina evita a formação de poeira ao cortar resmas de papel grosso com a guilhotina?",
+            "Quando devo considerar uma lâmina de guilhotina para papel com ponta de metal duro?",
           answer:
-            "Afiamos cada lâmina de guilhotina com um bisel de precisão de 21°, com planicidade da face ≤0,05 mm em todo o comprimento. O bisel afiado e raso corta cada folha progressivamente ao longo da resma, em vez de esmagá-la — a poeira é gerada por bordas cegas ou com bisel incorreto, que comprimem as fibras do papel em vez de cortá-las. As classes HSS M2 e TCT mantêm essa geometria de bisel de precisão por muito mais tempo do que o aço carbono; assim, menos operações de reafiação significam menos ciclos de corte com lâminas cegas — que geram poeira — por ano.",
+            "Vale a pena considerar o uso de metal duro quando o desgaste gradual da borda na própria massa de papel exige trocas frequentes de lâmina. Revestimentos, enchimentos, conteúdo reciclado e o processo de retificação disponível influenciam essa escolha. Se a lâmina atual estiver lascando ou cortando de forma irregular, verifique seu bisel, a barra de corte e as condições de fixação, além dos requisitos do material.",
         },
         {
           question:
-            "Vocês podem fornecer lâminas com o comprimento exato e o padrão de furos de montagem que minha máquina Polar ou Wohlenberg exige?",
+            "As lâminas de cortadores de papel e as lâminas de guilhotinas de papel são a mesma coisa?",
           answer:
-            "Sim. Temos em estoque comprimentos padrão de 450 mm a 2.050 mm para atender às guilhotinas das séries Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta e Challenge. Comprimentos personalizados, perfis da borda traseira e padrões de furos de montagem são fabricados conforme desenho em até 7 dias úteis. As lâminas podem ser fornecidas afiadas, semiacabadas ou em bruto, para se adequarem à sua configuração de reafiamento no local.",
+            "Sim. No corte industrial de pilhas, ambos os nomes se referem à lâmina reta que corta uma pilha de papel ou cartão fixada. Para máquinas que cortam transversalmente uma banda em movimento em folhas, consulte [Lâminas para Cortadoras de Papel](/products/paper-sheeter-knives).",
         },
         {
           question:
-            "Como o facas de guilhotina deve ser armazenado e manuseado para evitar danos prematuros nas bordas antes da instalação?",
+            "Por que as folhas inferiores podem continuar mal cortadas após o afiamento?",
           answer:
-            "Armazene as lâminas horizontalmente na embalagem original, sobre suportes de madeira acolchoados — nunca as empilhe verticalmente nem permita o contato metal com metal na borda de corte. Utilize protetores de borda de plástico ou borracha durante o manuseio. Inspecione com uma lupa de 10× antes da montagem: uma lasca de 0,2 mm na borda dobra a taxa de desgaste local nos primeiros 10.000 cortes. Evite arrastar a borda contra os trilhos-guia durante a instalação.",
+            "Uma barra de corte desgastada, penetração incorreta da lâmina ou fixação irregular podem resultar em um corte inadequado das folhas inferiores, mesmo com uma lâmina afiada. Verifique se o defeito está concentrado no mesmo ponto ao longo da pilha e inspecione a área correspondente da barra. Utilize a configuração especificada do cortador para verificar a causa.",
         },
         {
           question:
-            "Vocês podem fornecer o papel facas de guilhotina em estado semiacabado para remoagem interna?",
+            "Como deve ser selecionado o chanfro para papel revestido ou cartolina?",
           answer:
-            "Sim. As peças semiacabadas estão disponíveis em todos os comprimentos padrão, com o corpo retificado nas dimensões finais, mas com a borda deixada na condição de pré-retificação para o acabamento final de acordo com seu ângulo de bisel e acabamento específicos. Esse estado de fornecimento é adequado para gráficas com capacidade de retificação de superfícies, reduz o custo unitário em 15 a 20% e oferece controle total sobre a geometria e o fio da borda final.",
+            "Comece pela inclinação especificada da lâmina e pelo material a ser processado. A estrutura do papel, o revestimento ou o teor de enchimento e as condições da pilha influenciam o corte. Compare o desgaste da borda, lascas e a qualidade do corte antes de solicitar um perfil diferente. A nova inclinação deve permanecer compatível com a construção da lâmina e com a disposição de trabalho da cortadora.",
+        },
+        {
+          question:
+            "Quando uma lâmina de guilhotina para papel deve ser reafiada ou substituída?",
+          answer:
+            "O reafiamento é indicado quando ainda há altura suficiente da lâmina e material na aresta de corte para restaurar o bisel especificado dentro dos limites de serviço da lâmina. Inspecione o revestimento ou a ponta da lâmina e o corpo antes do reafiamento. A substituição é indicada quando danos, material remanescente na aresta ou limites de ajuste impedem que a configuração de trabalho necessária seja restaurada.",
+        },
+        {
+          question:
+            "Como posso solicitar um orçamento para uma lâmina de cortador de papel?",
+          answer:
+            "Envie o modelo e a versão da cortadora, o número original da lâmina ou o desenho, o tipo de papel e a quantidade. Para uma máquina mais antiga, inclua o padrão dos furos de montagem, a orientação do bisel e a altura da lâmina nova. Se a única referência for uma lâmina usada, indique sua altura restante separadamente da nova dimensão alvo.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do cortador, o desenho da lâmina ou o número da peça, o material e a altura da pilha, bem como o passo dos furos de montagem.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    detailLayout: {
+      heroAlt:
+        "Lâmina de guilhotina para papel com orifícios de fixação e gume reto",
+      sizeRange: "450–2050 mm",
+      heroSpecs: [
         {
-          question: "Vocês são uma empresa comercial ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e afiam suas lâminas.",
-        },
-        {
-          question:
-            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
-          answer:
-            "Ao contrário do temperamento convencional, todas as lâminas Sureay passam por um tratamento criogênico profundo após o endurecimento a vácuo. Isso transforma a austenita retida em martensita, aumentando a resistência ao desgaste em até 40% e garantindo uma dureza uniforme em toda a aresta de corte.",
-        },
-        {
-          question: "Vocês fazem entregas para o exterior e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são despachadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Temos parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question:
-            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação de OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
-        },
-        {
-          question:
-            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo padrão de entrega das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com ferramentas até que o ajuste seja confirmado.",
+          label: "Aplicação",
+          value: "Corte em pilha de papel e papelão",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
+        alt: "Lâmina de guilhotina para papel, mostrando o fio de corte reto e o padrão de furos de montagem",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "450–2050 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Inserção de 18% de tungstênio em HSS ou com ponta de metal duro (TCT)",
+        },
+        {
+          label: "Dureza",
+          value: "HSS: 62–64 HRC; metal duro: 89–91 HRA",
+        },
+        {
+          label: "Construção da lâmina",
+          value:
+            "Bimetálico: lâmina de corte soldada por brasagem a um corpo de aço-liga",
+        },
+        {
+          label: "Ângulo de bisel",
+          value: "21°–24°; configurações com bisel duplo disponíveis",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Pilhas de papel, papel artístico revestido, papelão reciclado e papel autocopiativo",
+        },
+        {
+          label: "Planicidade da superfície",
+          value: "≤0.05 mm",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura da borda (mm)",
+            "Espessura do corpo (mm)",
+          ],
+          rows: [
+            ["SR003101", "450", "51", "12", "10"],
+            ["SR003102", "595", "55", "13.5", "10"],
+            ["SR003103", "795", "60", "13.5", "10"],
+            ["SR003104", "895", "60", "13.5", "10"],
+            ["SR003105", "995", "60", "14", "11"],
+            ["SR003106", "1095", "65", "14", "11"],
+            ["SR003107", "1350", "80", "16", "13"],
+            ["SR003108", "2050", "85", "16", "14"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Inclua o modelo do cortador, o desenho da lâmina ou o número da peça, o material e a altura da pilha, bem como o passo dos furos de montagem.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Inclua o modelo do cortador, o desenho da lâmina ou o número da peça, o material e a altura da pilha, bem como o passo dos furos de montagem.",
+    dimensionLabels: {
+      intro:
+        "As dimensões das lâminas listadas são configurações do catálogo, não larguras de corte da máquina. Confirme o padrão de montagem e indique a espessura da lâmina e do corpo em um desenho de seção transversal.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha facas de rotor de reposição moldadas para seu triturador de eixo único, incluindo perfis planos, côncavos, com ranhura em V e coroa. Sureay oferece faces de corte personalizadas e sedes de parafusos de fixação, com facas estacionárias correspondentes cotadas separadamente. Envie seu desenho ou amostra para um orçamento personalizado. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay.",
     id: "single-shaft-shredder-blades",
-    name: "Inserções para rotor de eixo único",
-    fullName:
-      "Inserções para rotores de trituradores de eixo único de alto impacto (cortadores de coroa)",
+    name: "Facas de rotor para trituradores de um eixo",
+    fullName: "Facas de rotor para trituradores de um eixo",
+    seoTitle:
+      "Lâminas de rotor para trituradores de eixo único | Inserções quadradas",
+    seoDescription:
+      "Escolha insertos de rotor quadrados ou coroas de corte côncavas em DC53, D2 ou Cr12MoV. Adapte a face da lâmina e o assento do parafuso ao seu triturador de eixo único.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Inserções para rotores de eixo único",
+    categoryDisplay: "Lâminas de rotor de eixo único",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1918,
+      height: 1769,
+      smallerWidths: [320, 640],
+    },
     badge: "Para serviços pesados",
     badgeColor: "orange",
     gallery: [
@@ -1849,205 +2343,279 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "Inserções de rotor DC53, D2 (1.2379) e Cr12MoV aço-ferramenta para trabalho a frio para trituradores de eixo único de baixa velocidade e alto torque. Têm endurecimento a vácuo e tratamento criogênico para atingir HRC 58–62, com usinagem CNC para tolerância de face de ±0,02 mm. Apresentam geometria quadrada indexável em 4 posições. Compatíveis diretamente com as plataformas Vecoplan, Weima, Lindner e Zerma.",
-    fullDescription:
-      "Os trituradores de eixo único operam a 80–150 RPM sob torque extremamente alto, impulsionando insertos de rotor em formato de bloco contra uma lâmina fixa, com folgas de cisalhamento reduzidas de 0,2–1,5 mm. Com esses parâmetros mecânicos, a principal causa de falha das lâminas é a microfratura nas bordas induzida por impacto ou o amolecimento térmico causado por picos de torque de alto ciclo sustentados, e não o desgaste progressivo.\n\nA Sureay resolve esses modos de falha por meio de uma metalurgia rigorosa. Os insertos de aço para ferramentas D2 (1.2379) padrão oferecem excelente resistência ao desgaste a um preço acessível. Para aplicações envolvendo plásticos de engenharia duros (PA66-GF, PC, PEEK) ou pedaços volumosos de purga, especifica-se o DC53 — que oferece resistência à ruptura transversal 17% maior para evitar lascas nas arestas sob forte impacto.\n\n## Tolerância de usinagem CNC de ±0,02 mm\n\nA folga de corte entre a face da pastilha do rotor e a lâmina fixa determina o tamanho das partículas trituradas e a carga do motor. Folgas inconsistentes causam o retorno do material e o travamento do rotor. As pastilhas de rotor da Sureay são usinadas em CNC com planicidade da face de ±0,02 mm, garantindo uma folga de cisalhamento perfeita e repetível em todo o comprimento do rotor quando combinadas com uma lâmina fixa de qualidade.\n\n## Geometria indexável em 4 direções\n\nO formato simétrico de bloco quadrado oferece quatro arestas de corte independentes por inserto. Quando uma aresta fica cega, o operador afrouxa o parafuso de montagem escareado, gira o inserto 90° para uma aresta nova e reaplica o torque. Um conjunto completo de rotores pode ser indexado rapidamente sem a necessidade de extração do eixo, reduzindo efetivamente as despesas anuais com ferramentas em 75%.\n\n## Tratamento criogênico profundo (−196 °C)\n\nTodos os insertos de eixo único da Sureay passam por um processo de endurecimento a vácuo até HRC 58–62, seguido por um tratamento criogênico profundo obrigatório a −196 °C. Essa etapa final crítica elimina a austenita retida e estabiliza a microestrutura martensítica, reduzindo drasticamente o risco de fratura em massa quando o rotor encontra inclusões metálicas estranhas inesperadas.",
+      "Lâminas de reposição para o rotor de trituradores de eixo único nos materiais DC53, D2 e Cr12MoV. Inserções quadradas e coroas de corte côncavas com faces personalizadas e assentos de parafuso.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
         label: "Material",
         value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Dureza alvo",
+        value: "HRC 58–62 (estabilizado criogenicamente)",
       },
       {
-        label: "Machining Tolerance",
-        value: "±0.02 mm Face Flatness",
+        label: "Tolerância de usinagem",
+        value: "±0,02 mm de planicidade da face",
       },
       {
-        label: "Edge Geometry",
-        value: "4-Way Indexable (90° Rotation)",
+        label: "Geometria da borda",
+        value: "Indexável em 4 direções (rotação de 90°)",
       },
       {
-        label: "Face Profile",
-        value: "Concave, Flat, V-Groove, Crown",
+        label: "Perfil da face",
+        value: "Côncava, Plana, Ranhura em V, Arqueada",
       },
       {
-        label: "Mounting Style",
-        value: "M12 to M24 Countersunk Hex Bolt",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
-      },
-      {
-        label: "System Integration",
-        value: "Matched Bed Knives available separately",
-      },
-      {
-        label: "Application",
+        label: "Tipo de montagem",
         value:
-          "HDPE/PVC Pipes · Injection Purgings · Wood Pallets · IBC Totes · MSW",
-      },
-    ],
-    components: [
-      {
-        id: "indexable-design",
-        tag: "REDUÇÃO DO CUSTO TOTAL DE POSSE (TCO)",
-        title: "Lâminas indexáveis em 4 posições",
-        description:
-          "O design quadrado simétrico permite uma rotação de 90° quando a lâmina fica cega. Isso quadruplica a vida útil de uma única lâmina, reduzindo os custos de reposição em 75% e minimizando o tempo de inatividade para manutenção.",
+          "Parafusos de fixação M12–M24; assentos com cabeça escareada ou sextavada, conforme a configuração",
       },
       {
-        id: "concave-profile",
-        tag: "EFICIÊNCIA DE CORTE",
-        title: "Perfil côncavo agressivo",
-        description:
-          "As faces côncavas usinadas com precisão por CNC garantem uma penetração agressiva em pedaços de plástico lisos e densos, impedindo que o material salte ou forme pontes no rotor durante a trituração em baixa velocidade.",
+        label: "Compatibilidade com OEM",
+        value: "Vecoplan , Weima , Lindner , Zerma , Cresswood",
       },
       {
-        id: "cryo-treatment",
-        tag: "CONFIABILIDADE EXTREMA",
-        title: "Têmpera criogênica profunda",
-        description:
-          "Submetida a um tratamento a −196 °C para eliminar tensões residuais internas. Isso garante que a lâmina absorva choques cinéticos intensos sem se quebrar ao atingir inclusões metálicas ocultas.",
-      },
-    ],
-    dimensionLabels: {
-      col1: "Dimensões da inserção (C × L × P)",
-      col2: "Tamanho do parafuso",
-      col3: "Inserir perfil",
-      col4: "Plataforma típica de OEM",
-      caption:
-        "* Estão disponíveis facas de base do estator e perfis personalizados de lâminas do rotor. Compatível com as principais marcas mundiais de trituradores de eixo único.",
-    },
-    standardDimensions: [
-      {
-        spec: "34 × 34 × 23 mm",
-        bolt: "M12",
-        type: "Concave / Flat",
-        oem: "Weima / Vecoplan Standard",
+        label: "Integração de Sistemas",
+        value: "Facas estacionárias combinadas disponíveis separadamente",
       },
       {
-        spec: "40 × 40 × 25 mm",
-        bolt: "M14",
-        type: "Concave / Flat",
-        oem: "Vecoplan / Heavy Plastics",
-      },
-      {
-        spec: "43 × 43 × 19.5 mm",
-        bolt: "M14",
-        type: "Crown / Concave",
-        oem: "Lindner Micromat / Urraco",
-      },
-      {
-        spec: "50 × 50 × 30 mm",
-        bolt: "M16",
-        type: "Concave / Flat",
-        oem: "Heavy Duty MSW",
-      },
-      {
-        spec: "60 × 60 × 30 mm",
-        bolt: "M16 / M18",
-        type: "Flat / V-Groove",
-        oem: "Zerma / Tyre Shredding",
-      },
-      {
-        spec: "80 × 80 × 45 mm",
-        bolt: "M24",
-        type: "Concave",
-        oem: "Extreme High-Torque",
+        label: "Aplicação",
+        value:
+          "Tubos HDPE/PVC · Purgas de injeção · Paletes de madeira · Sacolas IBC · MSW",
       },
     ],
     relatedBladeIds: [
       "single-shaft-bed-knives",
       "shredder-screens",
-      "twin-shaft-blades-recycling",
       "granulator-blades",
+    ],
+    dimensionLabels: {
+      col1: "Dimensões da faca (C × L × T)",
+      col2: "Parafuso de fixação",
+      col3: "Rosto de corte",
+      col4: "Referência de máquina/OEM",
+      intro:
+        "Use o modelo da máquina e a referência OEM para identificar a peça e, em seguida, compare a face de corte, o assento de montagem e o parafuso de fixação com a faca original.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR002501",
+        spec: "34 × 34 × 20 mm",
+        bolt: "M12 × 40 (DIN 912)",
+        type: "—",
+        oem: "ZERMA ZSS 850 / 1200 · 80001003",
+      },
+      {
+        itemNo: "SR002502",
+        spec: "34 × 34 × 23 mm",
+        bolt: "M12",
+        type: "Côncavo / Plano",
+        oem: "Weima / Vecoplan Standard",
+      },
+      {
+        itemNo: "SR002503",
+        spec: "40 × 40 × 25 mm",
+        bolt: "M14",
+        type: "Côncavo / Plano",
+        oem: "Vecoplan / Heavy Plastics",
+      },
+      {
+        itemNo: "SR002504",
+        spec: "43 × 43 × 19.5 mm",
+        bolt: "M14",
+        type: "Coroa / Côncava",
+        oem: "Lindner Micromat",
+      },
+      {
+        itemNo: "SR002505",
+        spec: "50 × 50 × 30 mm",
+        bolt: "M16",
+        type: "Côncavo / Plano",
+        oem: "Heavy Duty MSW",
+      },
+      {
+        itemNo: "SR002506",
+        spec: "60 × 60 × 30 mm",
+        bolt: "M16 / M18",
+        type: "Plana / Ranhura em V",
+        oem: "Zerma / Tyre Shredding",
+      },
+      {
+        itemNo: "SR002507",
+        spec: "80 × 80 × 45 mm",
+        bolt: "M24",
+        type: "Côncavo",
+        oem: "Extreme High-Torque",
+      },
     ],
     offers: {
       lowPrice: 20,
       highPrice: 200,
     },
+    components: [
+      {
+        id: "single-shaft-shredder-blades-advantage-1",
+        tag: "Opções de aço ferramenta para pastilhas de rotor",
+        title: "Opções de aço ferramenta para pastilhas de rotor",
+        description:
+          "As configurações DC53 , D2 , Cr12MoV e 42CrMo oferecem opções de materiais para substituição de facas do rotor, considerando a face de corte existente e as condições de desgaste de sua alimentação.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-2",
+        tag: "Faces de corte planas, côncavas e em coroa",
+        title: "Faces de corte planas, côncavas e em coroa",
+        description:
+          "Sureay fornece perfis planos, côncavos, com ranhura em V e coroa. Os tamanhos de pastilha listados incluem 34 × 34 × 20 mm. Configurações intercambiáveis ​​estão disponíveis onde a faca e o suporte são projetados para bordas de trabalho sucessivas.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-3",
+        tag: "Montagem de assentos feitos de acordo com o desenho do rotor",
+        title: "Montagem de assentos feitos de acordo com o desenho do rotor",
+        description:
+          "Sureay fabrica a parte inferior da faca e os assentos dos parafusos de fixação de acordo com o desenho do rotor, de modo que uma substituição possa reproduzir o perfil do assento e a geometria de fixação do suporte existente.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Qual liga oferece melhor retenção do fio de corte para o corte de resíduos rígidos: D2 ou DC53?",
+            "Como identifico uma faca de rotor de reposição para um triturador de eixo único?",
           answer:
-            "Em purgas densas de moldagem por injeção e HDPE de parede espessa em rotores de eixo único a 80–120 RPM, o DC53 apresenta desempenho consistentemente superior ao do D2. A carga de impacto em rotores de eixo único revela que o DC53 possui uma resistência à ruptura transversal 17% maior, resistindo às microfraturas na face de corte que o D2 normalmente apresenta em materiais de purga rígidos após 300–500 horas de operação.",
-        },
-        {
-          question: "O que causa o retorno do material e o bloqueio do rotor?",
-          answer:
-            "O “wrap-back” geralmente é causado pela falta de uniformidade na planicidade da face ao longo da pilha de insertos do rotor, o que gera uma folga irregular entre a lâmina e a base. O material passa por aberturas largas em vez de ser cortado, circula de volta e obstrui o compartimento do rotor. Nossos insertos são usinados em CNC com planicidade da face de ±0,02 mm para eliminar esse problema.",
+            "Use o modelo da máquina e a referência da peça e compare a face de corte, a parte inferior e o assento do parafuso de fixação. Duas pastilhas com o mesmo comprimento e largura podem ter centros elevados, furos ou perfis de assentamento diferentes. Esses detalhes estabelecem como a nova faca se assenta e se fixa no suporte do rotor existente.",
         },
         {
           question:
-            "De que forma o design com quatro arestas indexáveis reduz os custos com ferramentas?",
+            "As facas do rotor, os insertos e as coroas de corte são o mesmo produto?",
           answer:
-            "Cada pastilha quadrada possui quatro arestas de corte independentes. Quando uma aresta ficar cega, afrouxe o único parafuso de fixação, gire a pastilha 90° para expor uma aresta nova e reaparafuse com o torque adequado. Isso quadruplica a vida útil efetiva por lâmina adquirida, reduzindo os gastos anuais com ferramentas em aproximadamente 75% em comparação com alternativas não indexáveis.",
+            "Faca do rotor é o termo geral para uma faca móvel no rotor. A inserção e a coroa de corte descrevem designs específicos dentro desse grupo. A aresta de corte fixa oposta a essas peças é uma [faca estator trituradora de eixo único](/products/single-shaft-bed-knives) .",
         },
         {
           question:
-            "Qual geometria de inserto é necessária para triturar caixas IBC de grande formato e tambores de HDPE?",
+            "Como devem ser selecionadas as faces planas e côncavas da faca do rotor?",
           answer:
-            "Para recipientes de parede espessa, especifique insertos com face côncava (50 × 50 mm ou 60 × 60 mm). O perfil côncavo cria uma geometria de inclinação positiva, impedindo que a lâmina deslize pela superfície lisa do HDPE no impacto inicial e garantindo a penetração imediata durante o movimento descendente.",
+            "Guarde a face instalada para uma substituição igual. Perfis planos e côncavos alteram a forma como a aresta de corte engata o avanço, portanto, uma mudança proposta deve levar em conta o material, o suporte e o estator correspondente. Uma referência de faca existente fornece um ponto de partida mais claro do que escolher uma face apenas pela sua aparência.",
         },
         {
-          question: "A Sureay pode fornecer a lâmina fixa correspondente?",
+          question:
+            "Posso girar uma pastilha quadrada desgastada para usar outra aresta?",
           answer:
-            "Sim. As lâminas fixas são fabricadas em conjuntos combinados com os insertos do rotor, com a superfície de folga retificada com a mesma tolerância de ±0,02 mm. Uma lâmina fixa combinada elimina as incertezas quanto à folga que surgem quando os insertos do rotor e as lâminas fixas são adquiridos de fornecedores diferentes.",
+            "Sim, onde a pastilha e o suporte são projetados para indexação e uma aresta de trabalho intacta permanece disponível. Inspecione as superfícies de assentamento e os recursos de fixação, bem como a próxima borda. Use o arranjo de indexação especificado para essa faca, pois um contorno quadrado por si só não estabelece o número permitido ou a direção de rotações.",
+        },
+        {
+          question:
+            "O que deve orientar a seleção do material quando os cantos do rotor lascam?",
+          answer:
+            "Compare cantos lascados com desgaste gradual nas outras pastilhas. A contaminação da ração, o impacto localizado e o apoio oferecido pela face e pelo suporte podem afetar os danos. Avalie o aço atual, a condição de tratamento térmico e o perfil de corte em conjunto antes de alterar o material, especialmente se ocorrerem danos repetidamente em uma parte do rotor.",
+        },
+        {
+          question:
+            "Os assentos dos parafusos de fixação personalizados e a parte inferior da faca podem ser reproduzidos?",
+          answer:
+            "Sim. O assento e a parte inferior do parafuso de fixação podem ser reproduzidos com a face de corte em um desenho. Fotos de ambos os lados são úteis quando a pastilha tem um centro elevado ou uma superfície de assentamento modelada. Marque todas as áreas de contato desgastadas e identifique o parafuso e o suporte usado com ele.",
+        },
+        {
+          question:
+            "O que devo fornecer para uma cotação de faca de rotor trituradora de eixo único?",
+          answer:
+            "Envie o modelo do triturador, número do encarte original ou desenho, material de alimentação e quantidade. Se você tiver uma amostra, inclua as dimensões da pastilha e fotos da face de corte e da parte inferior, com o assento do parafuso de fixação visível. Essas visualizações distinguem pastilhas com o mesmo contorno quadrado, mas com perfis de suporte diferentes.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envie o modelo da máquina, número da peça OEM e quantidade. Inclua um desenho ou fotos de ambos os lados da faca e diga-nos se você também precisa do porta-faca rotor.",
+    disambiguation:
+      "Para a faca fixa oposta ao rotor, consulte [Facas de estator trituradoras de eixo único](/products/single-shaft-bed-knives) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "34–80 mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês são uma empresa de comércio ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas.",
+          label: "Material",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
         },
         {
-          question: "Vocês fazem entregas para o exterior e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As pastilhas de reposição OEM padrão geralmente são despachadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais.",
-        },
-        {
-          question:
-            "Podemos testar um lote de amostras antes de fazer um pedido de produção em grande escala?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 insertos) para verificação do ajuste na máquina e testes de vida útil das arestas. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis.",
-        },
-        {
-          question:
-            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
+          label: "Aplicação",
+          value:
+            "Tubos HDPE/PVC · Purgas de injeção · Paletes de madeira · Sacolas IBC · MSW",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "34–80 mm",
+        },
+        {
+          label: "Material",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
+        },
+        {
+          label: "Dureza alvo",
+          value: "HRC 58–62 (estabilizado criogenicamente)",
+        },
+        {
+          label: "Tolerância de usinagem",
+          value: "±0,02 mm de planicidade da face",
+        },
+        {
+          label: "Geometria da borda",
+          value: "Indexável em 4 direções (rotação de 90°)",
+        },
+        {
+          label: "Perfil da face",
+          value: "Côncava, Plana, Ranhura em V, Arqueada",
+        },
+        {
+          label: "Tipo de montagem",
+          value:
+            "Parafusos de fixação M12–M24; assentos com cabeça escareada ou sextavada, conforme a configuração",
+        },
+        {
+          label: "Integração de Sistemas",
+          value: "Facas estacionárias combinadas disponíveis separadamente",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Tubos HDPE/PVC · Purgas de injeção · Paletes de madeira · Sacolas IBC · MSW",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie o modelo da máquina, número da peça OEM e quantidade. Inclua um desenho ou fotos de ambos os lados da faca e diga-nos se você também precisa do porta-faca rotor.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha facas de estator de reposição com o perfil de borda e recursos de montagem exigidos pelo seu triturador de eixo único. Sureay fornece configurações retas e serrilhadas, comprimentos personalizados e conjuntos segmentados. Compartilhe seu desenho ou amostra para um orçamento, incluindo insertos de rotor quando necessário. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     id: "single-shaft-bed-knives",
-    name: "Facas de base de eixo único",
-    fullName: "Facas fixas para trituradores de eixo único (facas do estator)",
+    name: "Contrafacas para trituradores de um eixo",
+    fullName:
+      "Facas fixas do estator para trituradores de um eixo (contrafacas)",
+    seoTitle:
+      "Facas fixas do estator para trituradores de um eixo (contrafacas)",
+    seoDescription:
+      "Facas estacionárias para trituradores de eixo único em comprimentos listados de 279–3000 mm. Solicite bordas retas ou serrilhadas e slots de montagem que correspondam ao seu desenho.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Facas de base de eixo único",
+    categoryDisplay: "Facas de Estator de Eixo Único",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1814,
+      height: 1020,
+      smallerWidths: [320, 640],
+    },
     badge: "Retificado com precisão",
     badgeColor: "blue",
     gallery: [
@@ -2056,202 +2624,263 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Lâminas de estator para serviços pesados (lâminas de base) para trituradores de eixo único. Fabricadas em D2 (1.2379) e aços de alta liga especializados. Têm endurecimento por prensagem e retificação de precisão, com tolerâncias rigorosas de retidão (≤ 0,05 mm/m), para garantir uma folga de cisalhamento uniforme entre o rotor e a base. Padrões de furos com ranhuras personalizados para ajuste exato da folga. Compatíveis com Vecoplan, Weima, Lindner e Zerma.",
-    fullDescription:
-      "Em um sistema de trituração de eixo único, a lâmina fixa (estator) atua como a borda rígida de contra-corte contra a qual as pastilhas rotativas cortam o material. Como essas lâminas abrangem toda a largura do rotor do triturador — frequentemente ultrapassando 2.000 mm de comprimento —, sua fabricação exige controle absoluto sobre a distorção térmica.\n\n## A importância da retidão\n\nUma lâmina fixa empenada é a principal causa da ineficiência do triturador. Se a lâmina se curvar, a folga de corte torna-se irregular: muito apertada no centro (correm-se riscos de colisão catastrófica com o rotor) e muito folgada nas extremidades (causando o retorno do material e derretimento por atrito). As facas de base da Sureay passam por um processo especializado de têmpera por prensagem durante o tratamento térmico, seguido por retificação de superfície de precisão. Garantimos uma tolerância de retidão de ≤ 0,05 mm por metro linear, assegurando uma folga de corte perfeitamente uniforme em todo o rotor.\n\n## Endurecimento profundo para múltiplas retificações\n\nAo contrário das pastilhas do rotor, que são descartadas ou indexadas, as facas de base pesadas representam um investimento de capital significativo e devem ser reafiáveis. Utilizamos o tratamento térmico a vácuo para alcançar uma dureza uniforme de HRC 56–60 em toda a seção transversal da lâmina, não apenas na superfície. Isso permite que os operadores reafiem a aresta chanfrada várias vezes sem expor um núcleo macio, maximizando a vida útil total da lâmina.\n\n## Montagem com ranhuras e furos alargados\n\nManter a folga de cisalhamento ideal de 0,2 mm a 1,0 mm é fundamental, pois tanto as lâminas do rotor quanto as do estator sofrem desgaste. Nossas lâminas de base apresentam orifícios com ranhuras usinados com precisão por CNC ou furos cônicos superdimensionados, projetados para se adequarem perfeitamente aos mecanismos de ajuste da sua máquina OEM. Isso garante que as equipes de manutenção possam avançar a lâmina de base com precisão e travá-la com segurança mesmo sob forte vibração.\n\n## Encomenda do conjunto completo de peças de desgaste\n\nA folga de cisalhamento é definida por duas peças, não por uma. Substituir uma faca de base enquanto as inserções do rotor desgastadas permanecem no eixo faz com que a folga de 0,2 mm a 1,0 mm fique fora das especificações em todas as posições das inserções, e a nova lâmina da faca de base arcar com a carga desigual. As pastilhas do rotor, os suportes da lâmina, as barras de fixação, os calços de ajuste e os espaçadores são fabricados internamente e enviados no mesmo pedido — adquirir o conjunto de três fornecedores significa três acumulações de tolerância, e a folga que pode ser alcançada na remontagem é limitada pela mais folgada delas.",
+      "Estator triturador de eixo único de reposição e facas estacionárias em D2, DC53 ou 42CrMo. Perfis de borda personalizados e slots de montagem feitos conforme desenho.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
         label: "Material",
-        value: "D2 (1.2379), DC53, 42CrMo (AISI 4140), Chipper Knife Steel",
+        value: "D2 (1.2379), DC53 , 42CrMo (AISI 4140), Faca picadora de aço",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 56–60 (Through-Hardened)",
+        label: "Dureza alvo",
+        value: "HRC 56–60 (totalmente endurecido)",
       },
       {
-        label: "Straightness Tol.",
-        value: "≤ 0.05 mm per linear meter",
+        label: "Retidão Tol.",
+        value: "≤ 0,05 mm por metro linear",
       },
       {
-        label: "Length Capability",
-        value: "Up to 3,500 mm (Seamless single piece)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single Bevel, Double Bevel, Serrated",
-      },
-      {
-        label: "Mounting Holes",
-        value: "Slotted, Counter-Bored, Threaded",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
-      },
-      {
-        label: "System Integration",
-        value: "Matched Rotor Inserts available separately",
-      },
-      {
-        label: "Application",
+        label: "Tamanhos",
         value:
-          "Single-Shaft Shredders · HDPE/PP/PVC · Wood Pallets · MSW · Tyre",
+          "Comprimentos listados 279–3000 mm; facas personalizadas de peça única de até 3.500 mm",
+      },
+      {
+        label: "Geometria da borda",
+        value: "Bisel único, bisel duplo, serrilhado",
+      },
+      {
+        label: "Orifícios de montagem",
+        value: "Com fenda, escareado, rosqueado",
+      },
+      {
+        label: "Compatibilidade com OEM",
+        value: "Vecoplan , Weima , Lindner , Zerma , Cresswood",
+      },
+      {
+        label: "Integração de Sistemas",
+        value: "Inserções de rotor correspondentes disponíveis separadamente",
+      },
+      {
+        label: "Aplicação",
+        value:
+          "Trituradores de eixo único · HDPE/PP/PVC · Paletes de madeira · RSU · Pneu",
       },
     ],
-    components: [
-      {
-        id: "straightness-control",
-        tag: "TOLERÂNCIA",
-        title: "Retilineidade sem distorção",
-        description:
-          "Têm endurecimento por prensagem e retificação de precisão para eliminar a curvatura. Uma lâmina fixa perfeitamente reta garante uma folga de corte uniforme, impedindo que o material escorregue sem ser cortado.",
-      },
-      {
-        id: "deep-hardening",
-        tag: "EXPERIÊNCIA DE VIDA",
-        title: "Núcleo temperado em toda a sua extensão",
-        description:
-          "Submetido a tratamento térmico a vácuo para garantir dureza consistente (HRC 56–60) até o centro do material. É possível reafiar o fio várias vezes sem perda de desempenho.",
-      },
-      {
-        id: "adjustable-mounting",
-        tag: "MANUTENÇÃO",
-        title: "Ranhuras de ajuste de precisão",
-        description:
-          "As ranhuras de montagem usinadas por CNC permitem que os técnicos aproximem facilmente a lâmina fixa do rotor para compensar o desgaste, mantendo a eficiência máxima de trituração.",
-      },
-      {
-        id: "complete-wear-set",
-        tag: "FORNECIMENTO",
-        title: "Conjunto completo de lâminas de corte",
-        description:
-          "A folga de cisalhamento é definida conjuntamente pela pastilha do rotor e pela lâmina fixa. As pastilhas do rotor, os suportes de lâmina, as barras de fixação e os calços de ajuste correspondentes são fabricados internamente e enviados em um único pedido, de modo que todo o conjunto de peças de desgaste seja substituído em uma única parada da linha de produção.",
-      },
-    ],
+    relatedBladeIds: ["single-shaft-shredder-blades", "shredder-screens"],
     dimensionLabels: {
       col0: "Comprimento total (mm)",
       col1: "Largura (mm)",
       col2: "Espessura (mm)",
-      col3: "Configuração de furos / montagem",
-      caption:
-        "* As lâminas de base são altamente específicas para cada máquina. As dimensões padrão de referência são apresentadas em mm — fabricamos de acordo com desenhos exatos do fabricante original (OEM) ou com especificações personalizadas do cliente. Peças únicas sem emendas de até 3.500 mm.",
+      col3: "Montagem/Referência OEM",
+      intro:
+        "Compare o perfil da faca, os slots de montagem e o número da peça OEM com a peça original. Para um conjunto segmentado, identifique qual segmento você precisa.",
     },
     standardDimensions: [
       {
+        itemNo: "SR002601",
+        spec: "279",
+        od: "80",
+        bolt: "30",
+        type: "Segmentado · Fixação M12 × 55 · ZERMA ZSS 850 (80001202)",
+      },
+      {
+        itemNo: "SR002602",
+        spec: "396",
+        od: "80",
+        bolt: "20",
+        type: "6 slots, 22 × 40 mm, com centros de 68 mm",
+      },
+      {
+        itemNo: "SR002603",
+        spec: "396",
+        od: "85",
+        bolt: "20",
+        type: "6 slots, 22 × 40 mm, com centros de 68 mm",
+      },
+      {
+        itemNo: "SR002604",
         spec: "800",
         od: "100",
         bolt: "30",
-        type: "Slotted / Counter-Bored",
+        type: "Slotted / Counter-Entediado",
       },
       {
+        itemNo: "SR002605",
         spec: "1000",
         od: "120",
         bolt: "35",
-        type: "Slotted / Counter-Bored",
+        type: "Slotted / Counter-Entediado",
       },
       {
+        itemNo: "SR002606",
         spec: "1300",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Slotted / Counter-Entediado",
       },
       {
+        itemNo: "SR002607",
         spec: "1500",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Slotted / Counter-Entediado",
       },
       {
+        itemNo: "SR002608",
         spec: "2000",
         od: "200",
         bolt: "50",
-        type: "Custom OEM Pattern",
+        type: "Padrão OEM personalizado",
       },
       {
+        itemNo: "SR002609",
         spec: "3000",
         od: "250",
         bolt: "60",
-        type: "Heavy Duty Multi-Hole",
+        type: "Multi-furo para serviço pesado",
       },
     ],
-    relatedBladeIds: ["single-shaft-shredder-blades", "granulator-blades"],
     offers: {
       lowPrice: 150,
       highPrice: 1200,
     },
+    components: [
+      {
+        id: "single-shaft-bed-knives-advantage-1",
+        tag: "Opções de aço para arestas de corte estacionárias",
+        title: "Opções de aço para arestas de corte estacionárias",
+        description:
+          "As configurações D2 , DC53 , 42CrMo e faca picadora de aço estão disponíveis para facas estator, atendendo a pedidos de substituição com o material e formato da borda especificados para o triturador existente.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-2",
+        tag: "Bordas retas e serrilhadas com fixações personalizadas",
+        title: "Bordas retas e serrilhadas com fixações personalizadas",
+        description:
+          "Perfis de chanfro único, chanfro duplo e serrilhados podem ser fornecidos com recursos de montagem ranhurados, escareados ou rosqueados, permitindo que a aresta de corte e o padrão de fixação sejam feitos como uma peça de reposição.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-3",
+        tag: "Segmentos individuais e conjuntos completos de estatores",
+        title: "Segmentos individuais e conjuntos completos de estatores",
+        description:
+          "Os comprimentos de estator listados variam de 279 a 3.000 mm. Encomende um segmento estacionário individual ou um conjunto completo com posições finais e intermediárias especificadas separadamente. As facas do rotor correspondentes podem ser citadas na mesma consulta.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Por que a tolerância de retidão de uma lâmina fixa é tão importante?",
+            "As facas do estator, as facas estacionárias e as contrafacas são a mesma peça?",
           answer:
-            "Se uma lâmina fixa estiver empenada, mesmo que seja apenas 0,5 mm, a folga entre as lâminas do rotor e a lâmina fixa torna-se irregular. Nos pontos em que a folga for muito estreita, as lâminas do rotor baterão na lâmina fixa, causando danos catastróficos. Nos pontos em que a folga for muito ampla, o material se dobrará e se enrolará ao redor do rotor, em vez de ser cortado. Nossa tolerância de retidão de ≤ 0,05 mm/m evita ambos os problemas.",
+            "Sim. Em um triturador de eixo único, a faca do estator, a faca de base e a contrafaca descrevem a borda de corte fixa oposta às [Facas de rotor do triturador de eixo único](/products/single-shaft-shredder-blades) . Outras máquinas também usam alguns desses nomes, portanto, o modelo do triturador e a posição estacionária são importantes no momento do pedido.",
         },
         {
           question:
-            "Quantas vezes uma lâmina fixa da Sureay pode ser reafiada?",
+            "Uma faca estacionária de granulador de plástico pode substituir uma faca de estator trituradora?",
           answer:
-            "Como realizamos o endurecimento completo de nossas lâminas de base (garantindo que o núcleo tenha a mesma dureza da superfície), elas podem ser reafiadas repetidamente até que seja atingido o limite dimensional do mecanismo de ajuste da máquina. Normalmente, uma lâmina de base D2 para serviços pesados pode passar por 5 a 10 ciclos de reafiação, dependendo da profundidade do desgaste.",
+            "Geralmente não. O perfil, assento e ajuste de uma faca estator trituradora são definidos por sua máquina original. Uma faca granuladora funciona em uma câmara de corte diferente. Para conjuntos de rotor e leito que produzem material reciclado de plástico, consulte [Facas granuladoras de plástico](/products/granulator-blades) .",
         },
         {
           question:
-            "Como faço para garantir que a lâmina de corte de reposição fique alinhada com os empurradores de ajuste da minha máquina?",
+            "Por que o desempenho de corte pode permanecer ruim após a instalação de novas pastilhas de rotor?",
           answer:
-            "As lâminas fixas utilizam orifícios com ranhuras ou padrões específicos de rebaixamento para se encaixarem nos parafusos de ajuste traseiros (empurradores) do triturador. Mantemos um vasto banco de dados de desenhos originais (OEM) de marcas como Weima, Vecoplan e Lindner. Ao nos fornecer o modelo da sua máquina ou um desenho básico, garantimos que as ranhuras sejam fresadas de acordo com as coordenadas exatas do fabricante original (OEM).",
+            "A borda retida do estator e a folga de corte ainda participam de cada corte. Um perfil estacionário desgastado ou um ajuste inadequado podem afetar o engate mesmo quando as inserções do rotor são novas. Verifique juntos os segmentos do estator, as condições de montagem e o ajuste especificado pela máquina antes de decidir quais peças do par de corte precisam ser substituídas.",
         },
         {
           question:
-            "Devo trocar a lâmina fixa ao substituir as pastilhas do rotor?",
+            "Como uma faca de estator retificada deve ser medida para substituição?",
           answer:
-            "Não necessariamente todas as vezes. As pastilhas do rotor se desgastam muito mais rápido. No entanto, se a aresta de corte da lâmina fixa estiver muito arredondada ou lascada, a instalação de novas pastilhas do rotor em contato com uma lâmina fixa cega reduzirá drasticamente a vida útil das novas pastilhas e diminuirá a produtividade. Recomendamos inspecionar a lâmina fixa a cada ciclo de indexação do rotor e reafirá-la ou substituí-la quando não for mais possível manter uma borda afiada.",
+            "Meça desde os pontos de referência de fixação até a borda restante e registre essa medida como altura de reesbaste. Uma faca correspondente não utilizada ou um desenho original podem estabelecer a nova posição da aresta. A distinção é importante quando uma faca encurtada já utilizou parte da faixa de ajuste da máquina.",
         },
         {
           question:
-            "Vocês podem fornecer os insertos de rotor, suportes e calços correspondentes no mesmo pedido?",
+            "Quais detalhes de borda e montagem podem ser personalizados?",
           answer:
-            "Sim. As pastilhas do rotor, os suportes das facas, as barras de fixação, os calços de ajuste e os espaçadores são fabricados internamente e normalmente enviados junto com as facas da base. É assim que recomendamos fazer o pedido, pois a folga entre o rotor e a base é definida por ambas as peças: instalar uma nova lâmina de base contra insertos desgastados deixa a folga fora das especificações em todas as posições dos insertos, e a borda nova absorve a carga desigual. Uma remessa consolidada também significa uma parada na produção em vez de duas e uma soma de tolerâncias em vez de três.",
+            "Sureay pode fazer bordas de chanfro único, chanfro duplo e serrilhadas com as ranhuras, rebaixos ou roscas especificadas. Defina a orientação da aresta a partir dos pontos de referência de fixação e identifique a posição do segmento. Isto permite que duas facas de comprimento total semelhante mantenham seus perfis de corte e arranjos de instalação distintos.",
+        },
+        {
+          question:
+            "Como posso obter uma cotação para facas estacionárias ou segmentos de estator de triturador de eixo único?",
+          answer:
+            "Envie o modelo da máquina, desenhos ou referências da peça original e quantidades por segmento. Para um estator segmentado, rotule as peças finais e intermediárias e mostre suas faces adjacentes, perfis de borda e padrões de fixação em um layout. Inclua a altura original da nova faca quando a referência tiver sido reafiada.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envie o modelo da máquina, número da peça OEM e quantidade. Inclua um desenho ou fotos mostrando a ponta e os slots de montagem e diga-nos se você também precisa da placa de montagem.",
+    disambiguation:
+      "Para as facas montadas no rotor, consulte [Facas de rotor triturador de eixo único](/products/single-shaft-shredder-blades) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "279–3000 mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês têm capacidade de fabricação para pás com mais de 2 metros de comprimento?",
-          answer:
-            "Sim. Nossa unidade está equipada com retificadoras de superfície para serviços pesados e fornos a vácuo de comprimento estendido tratamento térmico, capazes de processar facas de leito sem costura, de peça única, com até 3.500 mm de comprimento, sem causar distorção térmica.",
+          label: "Material",
+          value: "D2 (1.2379), DC53 , 42CrMo (AISI 4140), Faca picadora de aço",
         },
         {
-          question:
-            "Vocês são uma empresa de comércio ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM direto. Isso nos permite controlar rigorosamente os processos tratamento térmico e de retificação, essenciais para facas longas de estator, eliminando as inconsistências de qualidade comuns às empresas comerciais.",
-        },
-        {
-          question:
-            "Qual é o prazo de entrega para facas de cama personalizadas?",
-          answer:
-            "Para peças de reposição OEM padrão, geralmente enviamos em até 3 a 5 dias. Para comprimentos personalizados ou requisitos específicos de liga, o prazo de produção é normalmente de 15 a 20 dias úteis, incluindo os processos de ciclos térmicos intensivos necessários para garantir a estabilidade dimensional.",
+          label: "Aplicação",
+          value:
+            "Trituradores de eixo único · HDPE/PP/PVC · Paletes de madeira · RSU · Pneu",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value:
+            "Comprimentos listados 279–3000 mm; facas personalizadas de peça única de até 3.500 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379), DC53 , 42CrMo (AISI 4140), Faca picadora de aço",
+        },
+        {
+          label: "Dureza alvo",
+          value: "HRC 56–60 (totalmente endurecido)",
+        },
+        {
+          label: "Retidão Tol.",
+          value: "≤ 0,05 mm por metro linear",
+        },
+        {
+          label: "Geometria da borda",
+          value: "Bisel único, bisel duplo, serrilhado",
+        },
+        {
+          label: "Orifícios de montagem",
+          value: "Com fenda, escareado, rosqueado",
+        },
+        {
+          label: "Integração de Sistemas",
+          value: "Inserções de rotor correspondentes disponíveis separadamente",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Trituradores de eixo único · HDPE/PP/PVC · Paletes de madeira · RSU · Pneu",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie o modelo da máquina, número da peça OEM e quantidade. Inclua um desenho ou fotos mostrando a ponta e os slots de montagem e diga-nos se você também precisa da placa de montagem.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
     id: "granulator-blades",
-    name: "Lâminas para granuladores",
+    name: "Facas para moinhos granuladores de plástico",
     fullName:
-      "Facas para trituradores e granuladores industriais de plástico para reciclagem de PET, PVC e PP",
-    category: "granulator_blades",
+      "Facas de rotor e facas fixas para moinhos granuladores de plástico",
+    seoTitle: "Facas granuladoras de plástico | Lâminas de rotor e base",
+    seoDescription:
+      "Substitua o rotor e as facas estacionárias em granuladores que processam PET, PP, HDPE ou PVC. Lâminas granuladoras de plástico em comprimentos listados de 90–1178 mm, com padrões de parafusos personalizados.",
+    category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Lâminas para granuladores",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2261,88 +2890,145 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
-      "Lâminas de rotor e estator para granuladores em D2, SKD-11 e Cr12MoV, retificadas com precisão para uma tolerância de ±0,02 mm nos furos dos parafusos, destinadas aos granuladores Cumberland, Conair/Wortex, Herbold e Rapid. Ângulos de bisel de 30° a 55° são adaptados ao tipo de polímero, proporcionando uma remoagem limpa e com baixo teor de partículas finas. O endurecimento a vácuo, aliado ao processamento criogênico profundo, estabiliza a dureza HRC 58–62, garantindo maior retenção do fio de corte.",
-    fullDescription:
-      "As lâminas do rotor e do estator do granulador são os componentes que sofrem maior desgaste em qualquer linha de reciclagem de plástico em circuito fechado. A seleção incorreta da liga ou tolerâncias geométricas abaixo do padrão se traduzem diretamente em maior distribuição granulométrica, excesso de pó e partículas finas, aumento do consumo de corrente do motor e intervalos de afiação mais curtos — fatores que prejudicam a qualidade dos pellets de material triturado e aumentam o custo por tonelada processada.\n\nAs facas Sureay facas para granuladores são fabricadas em D2 (1.2379), SKD-11, DC53 e Cr12MoV aço-ferramenta para trabalho a frio — selecionadas com base no polímero específico e no teor de enchimento abrasivo que está sendo processado. O PVC com enchimento de carbonato de cálcio e o nylon reforçado com fibra de vidro exigem SKD-11 ou DC53 para máxima resistência à abrasão. Aplicações sujeitas a impactos, como recipientes de HDPE de parede espessa, canais de nylon a frio e canais de injeção pesados, requerem a maior relação tenacidade/dureza do Cr12MoV.\n\nTodas as lâminas são endurecidas a vácuo e submetidas a um tratamento criogênico profundo a -196 °C para obter uma microestrutura estabilizada de HRC 58–62. A etapa criogênica elimina a austenita retida, reduz a tensão compressiva interna e prolonga significativamente o tempo entre os ciclos de afiamento, melhorando a uniformidade da dispersão de carbonetos ao longo da aresta de corte.\n\n## Padrões de retificação de precisão\nA folga de corte entre as facas do rotor e do estator é a variável mais influente no controle do tamanho das partículas de remoagem e da fração de finos. As facas Sureay facas para granuladores são usinadas de acordo com as seguintes tolerâncias para garantir uma folga consistente entre o rotor e a base ao longo de toda a largura de corte:\n\n- Tolerância posicional dos furos dos parafusos: ±0,02 mm\n- Planicidade da face: 0,05 mm\n- Paralelismo (face superior em relação à face inferior): 0,03 mm\n- Ângulo de bisel: 30°–55° (otimizado para a aplicação de acordo com o polímero e a velocidade do rotor)\n\nUm desvio na planicidade da face superior a 0,08 mm permite que a lâmina do rotor balance sob carga, alargando progressivamente a folga de corte e aumentando a fração grossa no material remoído — um defeito que causa inconsistência na alimentação da extrusora a jusante.\n\n## Seleção do ângulo de bisel específico para cada polímero\nBisel de 30°–35°: Termoplásticos macios (LDPE, LLDPE, EVA, PP expandido). O baixo ângulo de inclinação proporciona máxima nitidez para um corte limpo de materiais flexíveis.\n\nChanfro de 40°–45°: Plásticos de engenharia de uso geral (HDPE, ABS, material reciclado padrão de PP/PET). Equilíbrio entre resistência da aresta e nitidez para as matérias-primas mais comuns em granuladores.\n\nBisel de 50°–55°: Compostos altamente abrasivos ou com enchimento (nylon com enchimento de vidro, PVC com carbonato de cálcio, UHMW-PE). O bisel mais amplo distribui o desgaste abrasivo por uma superfície de corte maior, prolongando os intervalos entre afiações.\n\n## Compatibilidade com máquinas\nAs dimensões são projetadas por engenharia reversa para se adequarem às configurações das marcas Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid e Ramco. Os padrões de montagem com dois furos e com vários furos (três, quatro) estão disponíveis em estoque padrão.",
+      "Rotor granulador de plástico de reposição e facas estacionárias em D2, SKD11, DC53 ou Cr12MoV. Perfis personalizados e padrões de parafusos para produção de reciclados de plástico.",
     link: "/products/granulator-blades",
     isFeatured: true,
-    rfqPlaceholder:
-      "Por exemplo, lâminas do rotor e da base para um granulador Rapid, aço D2, 3 conjuntos — desenho em anexo",
+    quoteRequirements:
+      "Inclua o modelo do granulador, a posição do rotor ou do leito, as dimensões da faca, o passo do furo de montagem e o material que está sendo cortado.",
     introNote:
-      "As lâminas do rotor e as lâminas fixas se desgastam em ritmos diferentes e raramente são substituídas no mesmo intervalo. As lâminas do rotor suportam a carga principal de corte e, normalmente, precisam ser afiadas duas a três vezes mais frequentemente do que as lâminas fixas; no entanto, a folga de corte é ajustada entre as duas — de modo que uma lâmina do rotor nova, quando em contato com uma lâmina fixa desgastada, ainda rasga o material e gera partículas finas. A Sureay fornece ambas como um conjunto combinado, retificado a partir do mesmo lote de aço, de modo que a folga se mantenha após o primeiro reafiamento. As lâminas fixas (também chamadas de lâminas do estator ou lâminas fixas) estão disponíveis nos mesmos tipos de aço: D2, SKD-11, DC53 e Cr12MoV.",
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "Gamma Meccanica",
-    ],
+      "Arranjos de facas retos e inclinados mudam a forma como as bordas se encontram na câmara de corte. Identifique o arranjo original antes de escolher um conjunto de reposição.",
     specs: [
       {
+        label: "Tamanhos",
+        value: "90–1178 mm",
+      },
+      {
+        label: "Aplicação",
+        value: "Produção de reafiação de plástico",
+      },
+      {
+        label: "Posições de faca",
+        value: "Faca de rotor rotativa e faca estacionária estacionária",
+      },
+      {
         label: "Material",
-        value: "D2 (1.2379), SKD-11, DC53, Cr12MoV",
+        value: "D2 (1.2379), SKD-11 , DC53 ou Cr12MoV",
       },
       {
-        label: "Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Dureza",
+        value: "HRC 58–62",
       },
       {
-        label: "Bolt-hole Tol.",
+        label: "Ângulo de bisel",
+        value: "30°–55°",
+      },
+      {
+        label: "Tolerância ao furo do parafuso",
         value: "±0.02 mm",
       },
       {
-        label: "Face Flatness",
-        value: "≤ 0.05 mm",
+        label: "Planicidade da superfície",
+        value: "≤0.05 mm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.03 mm",
+        label: "Paralelismo",
+        value: "≤0.03 mm",
       },
       {
-        label: "Bevel Angle",
-        value: "30° - 55° (Application-optimized)",
+        label: "Tratamento térmico",
+        value:
+          "Endurecimento a vácuo e tratamento criogênico profundo (-196°C)",
       },
       {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
-      },
-      {
-        label: "Application",
-        value: "PET, PVC, PP, HDPE, Engineering Plastics",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Cumberland, Rapid, Herbold, Conair, Nelmor",
+        label: "Matéria-prima",
+        value: "PET, PVC, PP, HDPE e plásticos de engenharia",
       },
     ],
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "cutter-compactor-blades",
+    ],
+    offers: {
+      lowPrice: 25,
+      highPrice: 320,
+    },
     components: [
       {
-        id: "maximized-regrind-quality",
-        tag: "QUALIDADE",
-        title: "Qualidade máxima do material triturado",
+        id: "granulator-blades-advantage-1",
+        tag: "Opções de aço ferramenta para reafiação de plástico",
+        title: "Opções de aço ferramenta para reafiação de plástico",
         description:
-          "As lâminas ultraprecisas e perfeitamente alinhadas cortam o plástico de forma limpa, em vez de rasgá-lo, reduzindo drasticamente a geração de poeira e partículas indesejadas.",
+          "As facas D2 , SKD11 , DC53 e Cr12MoV oferecem opções de materiais para a produção de material reciclado de plástico, com o aço especificado considerado juntamente com o polímero, as cargas e o arranjo de corte existente.",
       },
       {
-        id: "extended-mtbr",
-        tag: "CONFIABILIDADE",
-        title: "MTBR (Tempo Médio entre Substituições) estendido",
+        id: "granulator-blades-advantage-2",
+        tag: "Chanfros de solo e geometria de montagem definida",
+        title: "Chanfros de solo e geometria de montagem definida",
         description:
-          "A alta resistência ao desgaste reduz a frequência de afiamento e substituição das lâminas, mantendo sua linha de reciclagem em operação contínua.",
+          "A Sureay fornece facas rotativas e estacionárias com chanfros, faces de trabalho e padrões de parafusos especificados, permitindo pedidos de substituição para manter a orientação de corte e a geometria de assentamento da máquina.",
       },
       {
-        id: "reduced-motor-load",
-        tag: "EFICIÊNCIA",
-        title: "Carga reduzida do motor",
+        id: "granulator-blades-advantage-3",
+        tag: "Conjuntos personalizados de rotor e faca estacionária",
+        title: "Conjuntos personalizados de rotor e faca estacionária",
         description:
-          "Os ângulos de corte otimizados diminuem a força de cisalhamento necessária, reduzindo o consumo de corrente elétrica do motor do seu granulador e diminuindo os custos de energia por tonelada.",
+          "Sureay fornece rotores individuais e facas estacionárias ou conjuntos completos para desenho ou amostra. Os comprimentos de faca listados vão de 90 a 1.178 mm, com posições móveis e estacionárias especificadas separadamente para a câmara de corte.",
       },
     ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Como seleciono facas de reposição para meu granulador de plástico?",
+          answer:
+            "Use o modelo da máquina, a posição da faca e o número da peça original e, em seguida, compare o comprimento, a seção, o chanfro e o padrão de fixação. As facas rotativas e estacionárias podem diferir dentro da mesma máquina. A tabela de dimensões padrão fornece configurações individuais, enquanto o desenho da faca estabelece a substituição exata para a câmara de corte instalada.",
+        },
+        {
+          question:
+            "O que significam facas rotativas, facas voadoras e facas estacionárias?",
+          answer:
+            "As facas do rotor, também chamadas de facas voadoras, movem-se com o rotor do granulador. facas estacionárias formam a borda oposta estacionária. Facas trituradoras de plástico é um nome de compra mais amplo, às vezes usado para essas peças. Identifique a máquina e a posição reais, pois os mesmos termos podem ser usados ​​para diferentes arranjos de corte em equipamentos de redução de tamanho.",
+        },
+        {
+          question:
+            "Quando o conteúdo do polímero ou da carga deve alterar a escolha do material?",
+          answer:
+            "Preenchimentos abrasivos e contaminação podem alterar a rapidez com que a borda de trabalho se desgasta, enquanto danos por impacto e bordas quebradiças levantam preocupações diferentes. Compare o composto real e a faca usada com a especificação atual do material. Essa comparação ajuda a avaliar uma classe de substituição sem alterar a seção da faca, o chanfro ou a geometria de montagem necessária da máquina.",
+        },
+        {
+          question:
+            "Por que um granulador produz mais finos ou material reciclado de pior qualidade?",
+          answer:
+            "Um par de corte cego, folga incorreta entre o rotor e a base ou uma tela desgastada podem aumentar os finos ou alterar a qualidade do material reciclado. Procure bordas arredondadas ou desgaste irregular no rotor e nas facas estacionárias e compare a produção sob as mesmas condições de alimentação antes de alterar a especificação da faca.",
+        },
+        {
+          question:
+            "Existe um intervalo de faca padrão para todos os granuladores?",
+          answer:
+            "Não. A folga especificada entre o rotor e o leito depende do granulador e da configuração da faca. As configurações OEM identificam quais facas podem ser ajustadas e as dimensões mínimas da faca após a reafiação. Verifique ambos os limites ao instalar um conjunto afiado ou de reposição.",
+        },
+        {
+          question:
+            "Por que arranjos de facas retas e inclinadas precisam de desenhos diferentes?",
+          answer:
+            "O ângulo de corte pode resultar do perfil da faca, de sua posição no rotor ou na base, ou de ambos. O comprimento total da faca descreve, portanto, apenas parte da configuração. O desenho precisa preservar a orientação do chanfro e a geometria de fixação usada pela combinação rotor-base da máquina.",
+        },
+        {
+          question: "Quando as facas granuladoras podem ser retificadas?",
+          answer:
+            "A reafiação é adequada quando o perfil de corte especificado pode ser restaurado dentro das dimensões mínimas permitidas da faca. Verifique a altura restante e a margem de ajuste de acordo com as instruções da máquina. Facas que atingiram seu limite de serviço ou não conseguem recuperar o fio sólido precisam ser substituídas, com as posições do rotor e da base avaliadas como um par funcional.",
+        },
+        {
+          question:
+            "Que informações são necessárias para cotar rotor granulador de plástico e facas estacionárias?",
+          answer:
+            "Envie o modelo do granulador e desenhos separados, números de peças ou amostras das posições do rotor e da base, além do tipo de plástico, enchimentos e quantidade de cada faca. Mostre o padrão de chanfro e furo para cada posição. Marque a altura do reboco separadamente se sua única referência for uma faca afiada.",
+        },
+      ],
+      company: [],
+    },
     dimensionLabels: {
-      col0: "Configuração dos furos",
+      col0: "Configuração",
       col1: "Dimensões (C × L × P)",
       col2: "Distância entre os centros dos furos",
       caption:
@@ -2350,454 +3036,463 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Double hole",
+        itemNo: "SR002801",
+        spec: "Buraco duplo",
         od: "90 × 70 × 8",
         bolt: "40 / 45 / 50",
       },
       {
-        spec: "Double hole",
+        itemNo: "SR002802",
+        spec: "Buraco duplo",
         od: "120 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002803",
+        spec: "Buraco triplo",
         od: "126 × 60 × 8",
         bolt: "40",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002804",
+        spec: "Buraco triplo",
         od: "150 × 70 × 8",
         bolt: "50 / 55",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002805",
+        spec: "Buraco triplo",
         od: "170 × 70 × 8",
         bolt: "45",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002806",
+        spec: "Buraco triplo",
         od: "180 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002807",
+        spec: "Buraco quadra",
         od: "170 × 70 × 8",
         bolt: "40",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002808",
+        spec: "Buraco quadra",
         od: "200 × 70 × 8",
         bolt: "50",
       },
+      {
+        itemNo: "SR002809",
+        spec: "Rotor ZERMA GSP 560/700 - posição 501",
+        od: "310 × 100 × 22",
+        bolt: "Ver desenho",
+      },
+      {
+        itemNo: "SR002810",
+        spec: "Estator ZERMA GSP 560/700 - posição 601",
+        od: "646 × 100 × 22",
+        bolt: "Ver desenho",
+      },
+      {
+        itemNo: "SR002811",
+        spec: "Rotor ZERMA GSH 800/1200 - 80000900",
+        od: "568 × 100 × 22",
+        bolt: "Ver desenho",
+      },
+      {
+        itemNo: "SR002812",
+        spec: "Estator ZERMA GSH 800/1200 — 80001050",
+        od: "1178 × 100 × 22",
+        bolt: "Ver desenho",
+      },
+      {
+        itemNo: "SR002813",
+        spec: "Rotor ZERMA GSH 800/1600 - 80000920",
+        od: "385 × 100 × 22",
+        bolt: "Ver desenho",
+      },
+      {
+        itemNo: "SR002814",
+        spec: "Estator ZERMA GSH 800/1600 — 80001070",
+        od: "795 × 100 × 22",
+        bolt: "Ver desenho",
+      },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "twin-shaft-blades-recycling",
-      "cutter-compactor-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 320,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Como faço para escolher entre D2, DC53 e Cr12MoV para o meu granulador?",
-          answer:
-            "O D2 é o padrão da indústria para plásticos puros, como PET e PP. Para polímeros reforçados com fibra de vidro ou abrasivos, o DC53 oferece resistência superior ao desgaste. Se o seu material de alimentação contiver impurezas metálicas ocasionais (como fios ou grampos), o Cr12MoV proporciona maior tenacidade ao impacto para evitar lascas nas bordas.",
-        },
-        {
-          question:
-            "O que causa o excesso de poeira e partículas finas durante a granulação de plástico?",
-          answer:
-            "Isso geralmente é causado por bordas sem corte ou por um ângulo de bisel incorreto, que rasga o plástico em vez de cortá-lo. Otimizamos o ângulo de bisel (30°–55°) com base no seu polímero específico para garantir um corte limpo, o que maximiza a qualidade do material triturado e o valor dos grânulos.",
-        },
-        {
-          question:
-            "Vocês conseguem reproduzir os padrões exatos de furos para parafusos da minha máquina específica?",
-          answer:
-            "Com certeza. Mantemos um vasto banco de dados de desenhos técnicos originais (OEM) das marcas Cumberland, Herbold, Rapid, Weima e outras. Usinamos todos os rebaixamentos em fresadora CNC com uma tolerância rigorosa de ±0,02 mm para garantir um encaixe perfeito, sem microoscilações.",
-        },
-        {
-          question:
-            "Qual geometria da lâmina do rotor produz a menor fração de partículas finas nos granuladores instalados ao lado da prensa?",
-          answer:
-            "Para granuladores em linha instalados ao lado da máquina em linhas de moldagem por injeção, um ângulo de bisel de 40°–45° com uma face de inclinação polida (Ra ≤ 0,8 μm) proporciona o material triturado mais limpo e com menor teor de partículas finas a partir do material do canal de injeção e do beiral. A face polida reduz a adesão na zona de corte, evitando a microsoldagem de materiais de HDPE e PP que gera partículas finas nas altas taxas de ciclo típicas da produção contínua de moldagem por injeção.",
-        },
-        {
-          question:
-            "Quando devo afiar ou substituir as lâminas do rotor do meu granulador?",
-          answer:
-            "O indicador principal é a distribuição granulométrica do material triturado — quando a fração de partículas acima do tamanho nominal ultrapassa 8–10% do peso da produção, as lâminas do rotor precisam ser afiadas. Os indicadores secundários são um aumento de 15% ou mais no consumo de corrente do motor em relação ao valor de referência e uma fração elevada de pó. Cada lâmina Sureay pode, normalmente, ser reafiada de 3 a 5 vezes antes que a geometria do bisel atinja a profundidade mínima utilizável do material; nesse ponto, a substituição se torna mais econômica.",
-        },
-        {
-          question:
-            "São as lâminas ou a peneira que determinam o tamanho das partículas do material moído?",
-          answer:
-            "A peneira define o tamanho das partículas — o material permanece na câmara de corte até ficar pequeno o suficiente para passar por ela. As lâminas controlam algo diferente: a precisão com que o material é cortado ao longo do percurso. Lâminas cegas ou com ângulo inadequado rasgam em vez de cortar, o que produz poeira e partículas finas que passam pela peneira, mas reduzem o valor do seu material triturado. Se o tamanho das partículas estiver incorreto, troque a tela. Se o tamanho das partículas estiver correto, mas a fração de finos estiver aumentando, verifique as lâminas e a folga de corte.",
-        },
-      ],
-      company: [
-        {
-          question:
-            "Vocês são uma empresa de comércio ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e afiam suas lâminas.",
-        },
-        {
-          question:
-            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
-          answer:
-            "Ao contrário do temperamento convencional, todas as lâminas Sureay passam por um tratamento criogênico profundo após o endurecimento a vácuo. Isso transforma a austenita retida em martensita, o que aumenta a resistência ao desgaste e, mais importante ainda, mantém a dureza uniforme ao longo de todo o comprimento da aresta de corte — a principal causa do desgaste irregular em facas longas de granuladores é uma seção mais macia resultante de uma transformação incompleta.",
-        },
-        {
-          question:
-            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As lâminas de reposição OEM padrão geralmente são despachadas em até 48 horas. Os perfis personalizados levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question:
-            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional e um certificado de lote tratamento térmico. Para qualificação de OEM, relatórios dimensionais completos de CMM e certificados da siderúrgica estão disponíveis mediante solicitação.",
-        },
-        {
-          question:
-            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 5 lâminas) para verificação do ajuste na máquina e testes de vida útil do fio de corte. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para perfis personalizados, são produzidas amostras para aprovação dimensional antes do início da produção em série — não há compromisso com ferramentas até que o ajuste seja confirmado.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Encomende facas de corte de bobinas de aço com os espaçadores, anéis decapadores e discos separadores necessários para sua linha. Sureay oferece opções de classes, furos personalizados e larguras de ferramentas; envie seus desenhos e cronograma de corte para um orçamento coordenado.",
     id: "metal-coil-slitting-knives",
-    name: "Facas para corte de bobinas metálicas",
+    name: "Facas para corte longitudinal de bobinas de aço",
     fullName:
-      "Facas rotativas de corte para serviços pesados, destinadas ao processamento de bobinas de aço",
+      "Facas de corte longitudinal de bobinas de aço e ferramentas de cisalhamento rotativo",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Lâminas de corte de metal",
-    image:
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "Para serviços pesados",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
-    ],
+    categoryDisplay: "Facas para corte longitudinal de bobinas de aço",
+    image: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Conjunto completo de ferramentas para corte rotativo de bobinas destinado a centros de serviços de metalurgia e siderúrgicas. Facas circulares para cortadoras D2, SKD-11 e H13, lapidadas com rugosidade Ra ≤ 0,2 μm e tolerância de espessura de ±0,001 mm. Projetadas para o corte sem rebarbas de aço laminado a frio (CR), aço laminado a quente (HR), bobinas galvanizadas e aço de silício pesado.",
-    fullDescription:
-      "O corte de bobinas de precisão exige um padrão de tolerância dimensional que a maioria das aplicações de corte industrial nunca chega nem perto de atingir. Em uma linha de corte de alta velocidade que processa bobinas de aço pesado a 200–400 m/min através de um conjunto de eixos com múltiplas lâminas, um erro cumulativo de espessura de apenas 0,01 mm por lâmina produz um desvio mensurável na largura do corte, rebarbas graves nas bordas e curvatura da bobina que excede os limites de qualidade para a fabricação de automóveis e eletrodomésticos.\n\nAs lâminas circulares para corte de metal da Sureay são fabricadas com tolerâncias extremas e verificadas. Todas as faces laterais das lâminas são lapidadas com acabamento de Ra ≤ 0,2 μm. Esse acabamento espelhado não é meramente estético — ele garante contato total metal com metal entre as lâminas e os espaçadores no conjunto de eixos, eliminando folgas microscópicas de ar que permitem a deflexão de lâminas individuais sob cargas laterais de corte.\n\n## Seleção de ligas pesadas de acordo com o material da tira\n\n**Aço laminado a frio e galvanizado (CR, EG, HDG):** D2 (1.2379) ou SKD-11, endurecido a HRC 60–62 por têmpera a vácuo. O alto teor de carboneto de cromo resiste ao desgaste abrasivo causado por partículas de zinco e escamas superficiais. Recomendado para centros de serviços de aço CR em turnos contínuos.\n\n**Aço laminado a quente e chapas de espessura elevada:** Aço para ferramentas de trabalho a quente H13 (SKD-61) ou 6CrW2Si. O corte de aço laminado a quente gera forças de impacto enormes e temperaturas ambientes elevadas. A tenacidade superior do H13 evita a fratura frágil catastrófica que destrói as lâminas D2 padrão em linhas de espessuras grossas.\n\n**Aço silicônico (grau elétrico CRGO / CRNO):** Cr12MoV ou graus PM de metalurgia do pó. A extrema abrasividade do aço silicônico — causada principalmente por inclusões de sílica — exige resistência máxima ao desgaste para manter as tolerâncias de largura de corte durante toda a produção de chapas laminadas para transformadores.\n\n## Conjunto completo de ferramentas para o eixo de corte\n\nA lâmina de corte é apenas um componente de um sistema de corte de bobinas de precisão. Espaçadores de aço, anéis separadores de borracha colados e discos separadores de braço superior devem ter dimensões compatíveis com o conjunto de lâminas para garantir pré-carga uniforme no eixo e tensão consistente da tira. A Sureay fornece pacotes de ferramentas de corte totalmente integrados — verificados como um sistema compatível para eliminar erros de acúmulo de tolerâncias.",
+      "Facas de corte de bobinas de aço de reposição para aço carbono, inoxidável e de alta resistência. Facas de cisalhamento rotativo personalizadas, espaçadores e anéis de remoção de acordo com o desenho.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Fagor Arrasate",
-      "Heinrich Georg",
-      "Red Bud Industries",
-      "Braner",
-      "Salico",
-      "Athader",
-    ],
     specs: [
       {
+        label: "Tamanhos",
+        value: "Tesoura rotativa DE 80–680 mm",
+      },
+      {
         label: "Material",
-        value: "D2, SKD11, Cr12MoV (Cold-Roll) | H13, 6CrW2Si (Hot-Roll)",
+        value:
+          "D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS ou carboneto WC-Co",
       },
       {
-        label: "Hardness",
-        value: "HRC 60–62 (Cold-Roll) | HRC 54–58 (Hot-Roll / Impact)",
+        label: "Aplicações",
+        value:
+          "Bobinas laminadas a frio, laminadas a quente, inoxidáveis ​​e de alta resistência",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Acabamento superficial",
+        value: "Faces lapidadas em espelho, Ra ≤0,2 μm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.002 mm",
+        label: "Ajuste do furo",
+        value: "H7 para o modelo H7 listado. Outros ajustes ao desenho.",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤ 0.2 μm)",
+        label: "Dureza típica",
+        value:
+          "D2 58–62 HRC · H13 54–58 HRC para corte de placas em temperatura ambiente · PM HSS 64–66 HRC",
       },
       {
-        label: "Complete Tooling",
-        value: "Knives, Spacers, Rubber Stripper Rings, Separators",
+        label: "Opções de precisão",
+        value:
+          "Para diâmetro externo de até 420 mm, espessura de ±0,001 mm e paralelismo de face de 0,002 mm. Outros tamanhos para desenho.",
       },
       {
-        label: "Application",
-        value: "Cold / Hot Rolled Steel, Silicon Steel, Galvanized Plate",
+        label: "Ferramentas",
+        value: "Espaçadores, anéis de remoção e discos separadores de braço",
       },
+      {
+        label: "Montagem",
+        value: "Mandril sólido com furo liso ou chavetado",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Facas de corte de bobina de aço | Ferramentas personalizadas",
+      sizeRange: "Tesoura rotativa DE 80–680 mm",
+      heroAlt:
+        "Faca de cisalhamento rotativa retificada espessa para corte de bobinas de aço",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-coil-slitting-knives-detail.webp",
+        alt: "Anel descascador de corte de bobina com núcleo de aço e anel externo colado",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "steel",
+          tabLabel: "Facas de aço",
+          title: "Facas Rotativas de Aço",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Classe de linha",
+          ],
+          rows: [
+            ["SR001301", "200 × 120 × 10 mm", "Medidor de luz"],
+            ["SR001302", "200 × 120 × 12 mm", "Medidor de luz"],
+            ["SR001303", "250 × 150 × 12 mm", "Centro de serviço"],
+            ["SR001304", "250 × 150 × 15 mm", "Centro de serviço"],
+            ["SR001305", "300 × 200 H7 × 12 mm", "Serviço médio"],
+            ["SR001306", "315 × 200 × 15 mm", "Laminado a frio/quente"],
+            ["SR001307", "315 × 200 × 20 mm", "Laminado a frio/quente"],
+            ["SR001308", "400 × 260 × 25 mm", "Laminado a quente"],
+            ["SR001309", "500 × 320 × 40 mm", "Prato pesado"],
+          ],
+        },
+        {
+          id: "carbide",
+          tabLabel: "Facas de Carboneto",
+          title: "Facas rotativas de metal duro",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Construção",
+          ],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Carboneto sólido"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Carboneto sólido"],
+            ["SR001333", "204 × 125 × 10 mm", "Carboneto sólido"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Carboneto sólido"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Carboneto sólido"],
+          ],
+        },
+        {
+          id: "tooling",
+          tabLabel: "Ferramentas de árvore",
+          title: "Ferramentas de árvore",
+          columns: [
+            "Nº do item",
+            "Componente",
+            "Função",
+            "Entradas de seleção",
+          ],
+          rows: [
+            [
+              "SR001341",
+              "Espaçadores",
+              "Definir posições de corte",
+              "Largura, diâmetro e ajuste da pilha",
+            ],
+            [
+              "SR001342",
+              "Anéis de stripper",
+              "Faixa de suporte e liberação",
+              "Aço ou elastômero ligado, dureza e largura",
+            ],
+            [
+              "SR001343",
+              "Discos separadores",
+              "Tiras separadas por guia",
+              "Furo sobre o braço, diâmetro externo e formato da borda",
+            ],
+          ],
+        },
+        {
+          id: "additional-steel-knives",
+          tabLabel: "Tamanhos adicionais de facas de aço",
+          title: "Tamanhos adicionais de facas de aço",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Aplicação",
+          ],
+          rows: [
+            [
+              "SR001818",
+              "400 × 260 × 20 mm",
+              "Aço laminado a quente de alto calibre",
+            ],
+            ["SR001819", "500 × 320 × 30 mm", "Prato pesado"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Tesoura rotativa DE 80–680 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS ou carboneto WC-Co",
+        },
+        {
+          label: "Aplicações",
+          value:
+            "Bobinas laminadas a frio, laminadas a quente, inoxidáveis ​​e de alta resistência",
+        },
+        {
+          label: "Acabamento superficial",
+          value: "Faces lapidadas em espelho, Ra ≤0,2 μm",
+        },
+        {
+          label: "Ajuste do furo",
+          value: "H7 para o modelo H7 listado. Outros ajustes ao desenho.",
+        },
+        {
+          label: "Dureza típica",
+          value:
+            "D2 58–62 HRC · H13 54–58 HRC para corte de placas em temperatura ambiente · PM HSS 64–66 HRC",
+        },
+        {
+          label: "Opções de precisão",
+          value:
+            "Para diâmetro externo de até 420 mm, espessura de ±0,001 mm e paralelismo de face de 0,002 mm. Outros tamanhos para desenho.",
+        },
+        {
+          label: "Ferramentas",
+          value: "Espaçadores, anéis de remoção e discos separadores de braço",
+        },
+        {
+          label: "Montagem",
+          value: "Mandril sólido com furo liso ou chavetado",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Fagor Arrasate",
+      "Heinrich Georg",
+      "Burghardt + Schmidt",
+      "ANDRITZ",
+      "Red Bud Industries",
     ],
     components: [
       {
-        id: "micron-tolerance",
-        tag: "PRECISÃO",
-        title: "Engenharia de Microtolerância",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Classes de aço para diferentes cargas de bobinas",
         description:
-          "Projetado com uma tolerância de espessura de ±0,001 mm e paralelismo de 0,002 mm. Isso garante erro cumulativo zero ao empilhar várias lâminas pesadas e espaçadores no eixo da cortadora.",
+          "Sureay oferece configurações de aço ferramenta e aço PM para diferentes tipos de bobinas e cargas de processamento, permitindo que os pedidos de facas de substituição reflitam a especificação da tira e o desgaste ou lascamento observados.",
       },
       {
-        id: "alloy-toughness",
-        tag: "METALURGIA",
-        title: "Seleção de ligas para serviços pesados",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Dimensões do solo para pilhas de facas e espaçadores",
         description:
-          "Desde o D2/SKD11 com alto teor de cromo, para aço laminado a frio e galvanizado, até o H13 resistente a impactos, para laminadores pesados de aço laminado a quente. Cada lâmina é temperada a vácuo para oferecer uma resistência excepcional ao gume.",
+          "As facas de reposição são retificadas na largura e geometria de face especificadas para sua pilha de corte de bobinas, com dimensões de espaçadores correspondentes coordenadas para o mesmo layout de ferramentas.",
       },
       {
-        id: "complete-setup",
-        tag: "SISTEMA",
-        title: "Conjunto completo de ferramentas para torneiros",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Facas de corte com ferramentas complementares",
         description:
-          "Além das lâminas, fornecemos espaçadores de aço com encaixe perfeito, anéis de descascamento revestidos de borracha e discos separadores de braço superior. Um sistema totalmente integrado garante a tensão perfeita da tira e o rebobinamento da bobina sem rebarbas.",
+          "Obtenha facas de corte, espaçadores, anéis decapadores e discos separadores em uma única consulta, com os componentes necessários e as quantidades organizadas em torno do layout de ferramentas da linha de bobina.",
       },
     ],
-    dimensionLabels: {
-      col0: "Tipo típico de máquina/linha",
-      col1: "Diâmetro externo",
-      col2: "Diâmetro interno",
-      col3: "Espessura",
-      caption:
-        "* As dimensões apresentadas são exemplos padrão. Fabricamos peças de até Ø 1.500 mm para linhas de corte de chapas de alta espessura. Ranhuras de chaveta e orifícios para pinos de acionamento personalizados, usinados de acordo com os projetos originais exatos do fabricante (OEM).",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Slitting Line",
-        od: "Ø 200 mm",
-        id: "120 mm",
-        thickness: "10 / 12 mm",
-      },
-      {
-        spec: "Standard Steel Service Center",
-        od: "Ø 250 mm",
-        id: "150 mm",
-        thickness: "12 / 15 mm",
-      },
-      {
-        spec: "Medium-Heavy CR/HR Line",
-        od: "Ø 315 mm",
-        id: "200 mm",
-        thickness: "15 / 20 mm",
-      },
-      {
-        spec: "Heavy Gauge HR Steel Mill",
-        od: "Ø 400 mm",
-        id: "260 mm",
-        thickness: "20 / 25 mm",
-      },
-      {
-        spec: "Extreme Heavy Plate Mill",
-        od: "Ø 500 mm",
-        id: "320 mm",
-        thickness: "30 / 40 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "metal-foil-strip-slitter-knives",
-      "scrap-chopper-blades",
-      "tungsten-carbide-slitter-knives",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1500,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Qual folga da faca devo definir para o aço laminado a frio em comparação com o aço ao silício?",
+            "O que identifica uma faca de corte de bobina de aço de reposição?",
           answer:
-            "Para aço macio laminado a frio (CR, EG), defina a folga horizontal entre 8% e 10% da espessura do material. Para o aço ao silício (CRGO/CRNO), reduza a folga para 5 a 8% — a extrema dureza e fragilidade do aço ao silício exigem uma folga de cisalhamento menor para evitar a fratura das bordas, que gera rebarbas nas tiras laminadas do transformador.",
+            "O diâmetro externo, o furo, a largura axial e a interface do mandril estabelecem o ajuste básico. Inclua o grau da tira, a espessura e as ferramentas retidas. As facas de cisalhamento rotativas são as facas circulares usadas para corte longitudinal de bobinas; facas de cisalhamento retas cortam a tira, enquanto [Scrap Chopper Blades](/products/scrap-chopper-blades) cortam a borda em pedaços mais curtos.",
         },
         {
           question:
-            "Por que a largura da fenda varia ao longo de toda a largura da bobina após a primeira bobina?",
+            "Como a resistência da bobina e os danos à lâmina afetam a seleção do material da faca?",
           answer:
-            "O desvio na largura da fenda é causado pela perda de contato entre a lâmina e a superfície do espaçador, devido às variações nas tolerâncias de espessura na pilha de eixos. Mesmo uma variação de 0,002 mm na espessura das lâminas em uma pilha de 20 facas gera um deslocamento lateral cumulativo de 0,04 mm. Nossas lâminas e espaçadores são lapidados com tolerância de espessura de ±0,001 mm e acabamento superficial Ra ≤ 0,2 μm, eliminando as folgas de ar que permitem a deflexão de lâminas individuais.",
+            "Considere a resistência da tira, a espessura e as condições de processamento juntamente com a condição da faca usada. A abrasão gradual e o lascamento das bordas apresentam diferentes questões de seleção de material. A comparação da especificação da bobina e do padrão de desgaste atual com o ferramental existente ajuda a definir o requisito de substituição, incluindo o equilíbrio entre resistência ao desgaste e resistência a danos nas bordas.",
         },
         {
           question:
-            "Devo usar D2 ou H13 para cortar chapas de aço laminadas a quente (HR) com 8 mm de espessura?",
+            "Por que as facas de corte de bobinas lascam em vez de se desgastarem gradualmente?",
           answer:
-            "Para chapas HR de 8 mm, é necessário utilizar H13 ou 6CrW2Si. O corte longitudinal de aço laminado a quente de espessura elevada gera um impacto enorme no ponto de corte. O D2 (com HRC 60) é muito frágil e provavelmente se fragmentará ou sofrerá micro-lascas graves sob essas cargas. O H13 (temperado a HRC 54–56) oferece a alta tenacidade necessária para absorver essas forças de impacto de maneira confiável.",
+            "Lascas podem indicar sobrecarga mecânica. Folga horizontal incorreta, sobreposição excessiva, ferramentas deformadas ou aresta de corte desgastada podem contribuir. O material e a dureza da faca também afetam o resultado. Verifique a posição danificada, as ferramentas retidas e o histórico de retificação em relação ao grau e espessura reais da tira antes de decidir se o material de configuração ou substituição precisa ser alterado.",
         },
         {
           question:
-            "Qual é o cronograma de inspeção de manutenção que maximiza a vida útil das lâminas de corte circular?",
+            "O que causa rebarbas ou bordas irregulares em uma linha de bobina?",
           answer:
-            "Inspecione semanalmente as faces das facas sob ampliação de 10× para verificar se há lascas no fio (o que indica desvio da folga ou inclusões de material duro). Reafine as faces laterais quando a rugosidade da superfície exceder Ra 0,4 μm para restaurar o contato total com o eixo. Armazene as facas removidas na vertical em óleo inibidor de ferrugem para evitar corrosão por pite durante os períodos de inatividade.",
+            "Desgaste ou lascamento da lâmina, folga da faca, sobreposição, condição da árvore e alterações na classe da tira podem contribuir. Compare a posição e a direção do defeito no padrão de fenda. Esse registro ajuda a determinar se ele segue uma faca, uma configuração específica de ferramenta ou uma alteração no material que está sendo processado.",
+        },
+        {
+          question:
+            "Como as tolerâncias da faca e do espaçador devem ser especificadas para uma pilha completa?",
+          answer:
+            "Defina a variação permitida para larguras individuais e para a pilha completa. O ajuste do furo, a condição da face e o paralelismo também afetam a montagem. As opções de precisão do catálogo aplicam-se a facas com diâmetro externo de até 420 mm; outros tamanhos são especificados no desenho. Registre os componentes retidos junto com as substituições para que o arranjo completo tenha requisitos dimensionais claros.",
+        },
+        {
+          question:
+            "Sureay pode fornecer facas, espaçadores, anéis decapadores e discos separadores juntos?",
+          answer:
+            "Sim. Esses quatro tipos de ferramentas podem ser incluídos na mesma cotação. A tabela de largura de fenda e os desenhos dos componentes definem sua disposição. Liste a quantidade de cada configuração e identifique quais peças existentes permanecerão em uso, permitindo que as larguras, interfaces e diâmetros de trabalho de substituição sejam considerados como parte de um conjunto.",
+        },
+        {
+          question:
+            "Como comparo o custo de diferentes materiais de faca cortadora de bobina?",
+          answer:
+            "Compare o custo por tonelada ou metro aceitável sob o mesmo tipo de bobina, bitola, padrão de fenda e requisitos de qualidade de borda. Inclua a compra de facas, reafiação, tempo de troca e sucata, usando a produção registrada entre as trocas de facas. Aplique o mesmo período contábil a cada opção para que as alterações nas condições de produção sejam separadas das diferenças no desempenho da faca.",
         },
       ],
-      company: [
-        {
-          question:
-            "A Sureay pode fornecer um pacote completo e integrado de ferramentas, incluindo espaçadores e anéis de remoção?",
-          answer:
-            "Sim. Fornecemos sistemas completos e compatíveis de ferramentas para corte longitudinal: conjuntos de lâminas, espaçadores de aço de precisão (retificados com tolerância de ±0,001 mm), anéis separadores de borracha colados e discos separadores de braço superior. A aquisição de todos os componentes a partir de uma única pilha de tolerâncias verificada elimina os erros cumulativos que surgem ao combinar ferramentas de fornecedores distintos.",
-        },
-        {
-          question:
-            "Vocês fabricam lâminas de corte de grande diâmetro para laminadores de chapas grossas?",
-          answer:
-            "Sim, nossas instalações de retificação pesada e tratamento térmico são capazes de processar facas de corte circular com diâmetro externo de até 1.500 mm, projetadas especificamente para aplicações de corte de bordas em bobinas e chapas laminadas a quente de espessura elevada.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "guillotine-shear-blades",
+    ],
   },
   {
     id: "metal-shear-knives",
-    name: "Facas de corte para metal",
-    fullName:
-      "Lâminas para guilhotinas e tesouras de sucata de alta resistência para fabricação de metais",
+    name: "Facas para tesouras jacaré",
+    fullName: "Facas de tesoura jacaré para reciclagem de sucata metálica",
+    seoTitle: "facas de cisalhamento de jacaré para sucata",
+    seoDescription:
+      "Substitua a lâmina móvel superior ou a faca fixa inferior em sua tesoura jacaré. Os comprimentos listados são 320–508 mm, com opções de aço S1 , 6CrW2Si e H13 .",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Facas de corte para metal",
-    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Corte intenso",
+    categoryDisplay: "Facas para tesouras jacaré",
+    image: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+    badge: "Tesouras Jacaré",
     badgeColor: "blue",
     gallery: [
-      "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-04.webp",
-      "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+      "/images/products/shear-detail/alligator-shear-knives-detail.webp",
     ],
     description:
-      "Lâmina reta premium facas de cisalhamento para guilhotinas hidráulicas, tesouras tipo jacaré e tesouras para sucata pesada. Forjadas a partir dos aços para ferramentas D2, S1 (6CrW2Si) e H13. Retificadas superficialmente para obter um paralelismo de ±0,05 mm em todo o comprimento, garantindo um corte sem rebarbas de aço macio, chapas de aço inoxidável e lingotes pesados de sucata.",
-    fullDescription:
-      "A guilhotina e a sucata facas de cisalhamento operam em condições que expõem todas as deficiências na seleção da liga, na profundidade tratamento térmico e no paralelismo da retificação. A lâmina de corte superior é pressionada contra a inferior sob forças do atuador que variam de 40 a mais de 2.000 toneladas em linhas de corte de chapas pesadas. Os modos de falha prematura — enrolamento da borda em aço macio, fratura frágil em aço inoxidável ou fragmentação em sucata pesada — são, cada um, atribuíveis a incompatibilidade metalúrgica ou a desvios no paralelismo do retificado que concentram forças extremas em um único ponto.\n\nAs lâminas Sureay metal facas de cisalhamento são fornecidas em três classes metalúrgicas específicas, cada uma adaptada a um regime mecânico definido:\n\n## Seleção de Liga por Aplicação de Corte\n\n**Corte a frio (aço macio):** Aços para ferramentas padrão de alto carbono, temperados a HRC 57–59. Isso proporciona uma geometria de aresta afiada e estável a um custo econômico, tornando-a a especificação correta para oficinas de fabricação em geral e empreiteiras de aço estrutural que cortam chapas de aço macio padrão A3/A36 de até 8 mm.\n\n**Corte de chapas pesadas e aço inoxidável:** Classes equivalentes a D2 (Cr12MoV) temperadas a HRC 58–60. Especificadas para máxima resistência ao desgaste em aço inoxidável austenítico (304, 316L) e chapas de ligas de alta resistência (Hardox). A matriz rica em carboneto de cromo resiste ao desgaste severo causado pelo endurecimento por deformação imposto por esses metais resistentes.\n\n**Reciclagem de sucata e corte a quente:** aço resistente a impactos S1 (6CrW2Si) e aço para ferramentas de trabalho a quente H13. Ao cortar sucata mista, vergalhões ou tarugos de aço quentes (900–1100 °C), a resistência extrema ao impacto tem prioridade sobre a dureza. Essas ligas absorvem cargas de choque intensas sem a fratura frágil que destrói as lâminas D2 padrão.\n\n## A Importância do Paralelismo (±0,05 mm)\nO paralelismo inadequado é a causa evitável mais comum de falha prematura da lâmina de cisalhamento. O contato irregular da face concentra toda a carga de cisalhamento em um comprimento reduzido da aresta da lâmina, causando o enrolamento da aresta ou lascas em questão de horas. Todas as lâminas Sureay facas de cisalhamento são retificadas com precisão em ambas as faces de corte para garantir uma tolerância padrão de paralelismo de ±0,05 mm ao longo de um comprimento de 1.000 mm (com tolerâncias premium de ±0,02 mm disponíveis para aplicações aeroespaciais e de aço inoxidável de precisão).",
+      "Substituição facas de cisalhamento jacaré para corte de sucata. Facas superiores e inferiores S1 , 6CrW2Si ou H13 , com detalhes de montagem adequados ao seu desenho.",
     link: "/products/metal-shear-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "TRUMPF",
-      "AMADA",
-      "BYSTRONIC",
-      "Durma",
-      "Haco",
-      "Lefort",
-      "Harris",
+    compatibleMachines: ["JMC McIntyre", "Bronneberg"],
+    compatibleMachinesIntro:
+      "A Sureay fornece facas superiores e inferiores para tesouras jacaré de corte de sucata, avulsas ou em pares. Fabricamos em aço-ferramenta S1, 6CrW2Si ou H13 com dimensões e furos de fixação sob medida. Envie o desenho da faca para solicitar um orçamento. As marcas citadas indicam a compatibilidade das peças de reposição Sureay.",
+    components: [
+      {
+        id: "alligator-knife-position",
+        tag: "Posição da faca",
+        title: "Escolhas de aço para serviço de corte de sucata",
+        description:
+          "As opções de aço ferramenta S1 , 6CrW2Si e H13 oferecem a você uma escolha de materiais de substituição para as seções de sucata e condições de desgaste de borda encontradas em sua tesoura jacaré.",
+      },
+      {
+        id: "alligator-edge-selection",
+        tag: "Condições de sucata",
+        title: "Facas superiores e inferiores disponíveis separadamente",
+        description:
+          "Encomende uma faca superior móvel, uma faca inferior fixa ou um par completo, com cada peça especificada para a posição da mandíbula e os componentes que pretende reter.",
+      },
+      {
+        id: "alligator-indexing",
+        tag: "Configuração de borda",
+        title: "Corpos de facas personalizados e furos de montagem",
+        description:
+          "As facas de cisalhamento de jacaré listadas têm 320–508 mm de comprimento. Sureay também faz substituições baseadas em desenhos com a seção do corpo, padrão de furos e faces de localização exigidas pela mandíbula superior ou inferior.",
+      },
     ],
     specs: [
       {
+        label: "Tamanhos",
+        value: "320–508 mm",
+      },
+      {
         label: "Material",
-        value: "D2 (Cr12MoV), S1 (6CrW2Si), H13, High Carbon Steel",
+        value:
+          "Aço ferramenta S1 , 6CrW2Si ou H13 para configurações de corte de sucata",
       },
       {
-        label: "Cold / Mild Steel",
-        value: "High Carbon Tool Steel (HRC 57–59)",
+        label: "Posições de faca",
+        value: "Faca móvel superior e faca fixa inferior",
       },
       {
-        label: "Stainless / Heavy",
-        value: "D2 / Cr12MoV (HRC 58–60)",
+        label: "Forma de lâmina",
+        value: "Facas retangulares retas",
       },
       {
-        label: "Scrap / High Impact",
-        value: "S1 / 6CrW2Si / H13 (Shock Resistant)",
-      },
-      {
-        label: "Length Capacity",
-        value: "Up to 6000 mm (Single Piece Seamless)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "1, 2, or 4 Usable Cutting Edges",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Application",
-        value: "Plate Shearing, Alligator Shears, Scrap Metal Balers",
-      },
-    ],
-    components: [
-      {
-        id: "stainless-shearing",
-        tag: "PARA SERVIÇO PESADO",
-        title: "D2 para chapas de aço inoxidável e chapas grossas",
-        description:
-          "Fabricada com aço D2 (Cr12MoV) de alta qualidade, com endurecimento profundo até HRC 58–60. Ela resiste ao desgaste abrasivo extremo e às forças de endurecimento por deformação durante o corte de chapas de aço inoxidável e chapas grossas de liga metálica.",
-      },
-      {
-        id: "scrap-shearing",
-        tag: "ALTO IMPACTO",
-        title: "Aço S1 resistente a impactos para sucata",
-        description:
-          "Em tesouras tipo “alligator” e enfardadeiras para sucata pesada, as lâminas padrão se quebram. Nós forjamos essas lâminas em aço S1 (6CrW2Si) resistente a impactos, proporcionando uma enorme tenacidade ao núcleo para cortar vergalhões e vigas em I sem se fraturarem.",
-      },
-      {
-        id: "precision-parallelism",
-        tag: "TOLERÂNCIA",
-        title: "Paralelismo de precisão (±0,05 mm)",
-        description:
-          "Retificado com perfeição absoluta. A manutenção de um paralelismo rigoroso em comprimentos de até 6 metros garante que sua máquina mantenha uma folga de cisalhamento uniforme, proporcionando cortes sem rebarbas em todas as ocasiões.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Dimensões típicas (C × L × P)",
-      col1: "Comprimento (mm)",
-      col2: "Largura (mm)",
-      col3: "Espessura (mm)",
-      caption:
-        "* Dimensões padrão para modelos comuns de tesouras hidráulicas do tipo guilhotina. Estão disponíveis comprimentos personalizados de até 6.000 mm, projetos com vários segmentos e perfis de uma, duas ou quatro arestas.",
-    },
-    standardDimensions: [
-      {
-        spec: "500 × 70 × 22",
-        od: "500",
-        id: "70",
-        thickness: "22",
-      },
-      {
-        spec: "510 × 80 × 25",
-        od: "510",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "1025 × 80 × 20",
-        od: "1025",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1025 × 100 × 25",
-        od: "1025",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "1300 × 80 × 20",
-        od: "1300",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1300 × 125 × 32",
-        od: "1300",
-        id: "125",
-        thickness: "32",
-      },
-      {
-        spec: "3100 × 100 × 25",
-        od: "3100",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Scrap Shear",
-        od: "Custom",
-        id: "Custom",
-        thickness: "Up to 100+",
+        label: "Aplicação",
+        value: "Corte de sucata em tesoura jacaré",
       },
     ],
     relatedBladeIds: [
-      "metal-coil-slitting-knives",
-      "multi-shaft-blades-metal",
+      "guillotine-shear-blades",
       "scrap-chopper-blades",
+      "multi-shaft-blades-metal",
     ],
     offers: {
       lowPrice: 120,
@@ -2806,66 +3501,154 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Que liga devo usar para cortar aço inoxidável 304?",
+          question:
+            "Qual lâmina de corte jacaré de reposição se adapta à minha máquina?",
           answer:
-            "Recomendamos o D2 (Cr12MoV) para aço inoxidável (304, 316L) e chapas de alta resistência, como o Hardox. A matriz rica em carboneto de cromo do D2 resiste ao desgaste severo causado pelo endurecimento por deformação imposto pelo aço inoxidável austenítico. Para o aço macio padrão, o aço para ferramentas de alto carbono oferece máxima tenacidade a um custo menor.",
+            "Use o modelo e a versão da tesoura juntamente com a posição superior ou inferior da faca. Combine comprimento, largura, espessura, furos de montagem e características do assento da lâmina com a peça original. A abertura da mandíbula e a capacidade de corte anunciada descrevem a operação da máquina. A referência ou desenho da faca estabelece o corpo e a geometria de montagem necessária para a substituição.",
         },
         {
           question:
-            "Nossas lâminas ficam lascando ao cortar sucata mista. O que está acontecendo?",
+            "Posso pedir uma única faca superior ou inferior em vez de um par?",
           answer:
-            "Provavelmente você está usando uma lâmina muito dura (como a D2). A sucata mista contém sólidos pesados e imprevisíveis (como vergalhões ou parafusos). Quando um impacto extremo atinge uma lâmina dura e frágil, ela lasca ou se estilhaça. Você precisa mudar para uma liga resistente a choques, como a S1 (6CrW2Si) ou a H13, temperada para uma dureza ligeiramente menor (HRC 54–56), a fim de absorver os enormes choques cinéticos de forma elástica.",
+            "Sim. Ambas as posições podem ser encomendadas individualmente ou em conjunto. Identifique as facas superiores móveis e inferiores fixas separadamente, incluindo quaisquer diferenças em seus perfis de montagem ou corte. Para uma única substituição, inspecione a faca retida e registre suas dimensões de trabalho para que a nova peça seja especificada para o par existente.",
         },
         {
           question:
-            "Qual perfil de lâmina minimiza as rebarbas ao cortar chapas de aço de alta resistência?",
+            "Como a alimentação de sucata afeta a seleção do material da faca de corte jacaré?",
           answer:
-            "O fator crítico é a uniformidade do contato. O contato irregular entre as lâminas concentra a força de cisalhamento em uma das extremidades, produzindo o rolamento compressivo e a rebarba de rasgo característicos dos aços de alto endurecimento por deformação. Nossa tolerância padrão é de ±0,05 mm de paralelismo em 1.000 mm; a tolerância premium de ±0,02 mm é especificada para aplicações em aço inoxidável e de precisão.",
+            "A composição da sucata, o formato da seção e a espessura afetam a carga na aresta de corte. Compare essas condições com o desgaste gradual, lascamento ou deformação da faca atual. Eles ajudam a estabelecer o equilíbrio necessário entre tenacidade e resistência ao desgaste entre os materiais disponíveis, juntamente com a capacidade da tesoura e a especificação original da faca.",
         },
         {
           question:
-            "Como as lâminas reversíveis de dupla face reduzem meu custo anual com ferramentas?",
+            "Uma faca de corte de crocodilo pode ser girada para usar outra lâmina?",
           answer:
-            "Uma lâmina reversível de dupla face (ou de 4 faces) oferece várias faces de corte independentes a partir de um único corpo de lâmina. Quando a face 1 apresentar desgaste, afrouxe os parafusos de fixação, vire ou gire a lâmina e reaparafuse com o torque adequado. Isso multiplica a vida útil da lâmina antes que seja necessário reafiar, reduzindo drasticamente os custos com ferramentas por corte.",
+            "Sim, se a faca e a mandíbula originais permitirem outra aresta de trabalho. Confirme se a próxima posição mantém o assentamento, padrão de parafuso e folga especificados. As instruções da máquina definem quais posições podem ser utilizadas, mesmo em uma faca retangular.",
+        },
+        {
+          question:
+            "As facas McIntyre 320, 407 e 500 compartilham uma especificação?",
+          answer:
+            "Não. O catálogo lista diferentes configurações de corpo de faca para os McIntyre 320, 407 e 500. Use a tabela e o número do item para restringir a seleção e, em seguida, verifique o padrão de furo, a posição da faca e a versão da máquina. Esses nomes de modelos identificam configurações de referência para substituições Sureay .",
+        },
+        {
+          question:
+            "Como as facas de cisalhamento jacaré diferem das facas de cisalhamento de sucata estacionárias?",
+          answer:
+            "As facas de cisalhamento jacaré cabem em uma mandíbula articulada e em sua posição fixa oposta. As tesouras de pórtico estacionárias usam um conjunto diferente de faca móvel e contra-faca. Para este último, veja [facas de cisalhamento sucata estacionária](/products/stationary-scrap-shear-blades) .",
+        },
+        {
+          question:
+            "O que devo enviar para uma cotação de lâmina de corte jacaré?",
+          answer:
+            "Fornecer modelo e versão da máquina, desenho ou amostra dimensionada, posição e quantidade da faca. Indique se você precisa da faca superior móvel, da faca inferior fixa ou de ambas. Adicione a seção de refugo típica e marque quaisquer alterações na altura de corte resultantes da reafiação da amostra.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo de tesoura jacaré, posição superior ou inferior da faca, número da peça ou desenho, quantidade e o tipo de metal e tamanho da seção que você corta.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1024,
+      height: 765,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Duas amostras de faca de corte tipo jacaré com furos de montagem embutidos e arestas de corte retas",
+      sizeRange: "320–508 mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês podem fabricar lâminas que se encaixem perfeitamente na minha guilhotina TRUMPF, AMADA ou Durma?",
-          answer:
-            "Sim. Oferecemos dimensões compatíveis com as do fabricante original (OEM) para as plataformas TRUMPF, AMADA, BYSTRONIC, Durma e Haco. Estão disponíveis lâminas de peça única de até 6.000 mm, modelos com vários segmentos para mesas mais longas e perfis com uma, duas ou quatro arestas. Comprimentos personalizados são fabricados conforme desenho em até 15 dias úteis.",
-        },
-        {
-          question:
-            "A Sureay pode fabricar lâminas de reposição para tesouras pesadas para sucata que estão fora de linha?",
-          answer:
-            "Sim. No caso de tesouras para sucata pesada (Lefort, Harris, Genesis) ou modelos obsoletos, trabalhamos com base em desenhos fornecidos pelo cliente ou em amostras físicas das lâminas. Um gabarito de levantamento dimensional está disponível mediante solicitação para a medição precisa do perfil da lâmina e dos orifícios de montagem escareados.",
+          label: "Aplicação",
+          value: "Corte de sucata em tesoura jacaré",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/alligator-shear-knives-detail.webp",
+        alt: "Cinco amostras de facas de cisalhamento de crocodilo mostrando diferentes perfis de corpo e padrões de furos de montagem",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "320–508 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Aço ferramenta S1 , 6CrW2Si ou H13 para configurações de corte de sucata",
+        },
+        {
+          label: "Posições de faca",
+          value: "Faca móvel superior e faca fixa inferior",
+        },
+        {
+          label: "Forma de lâmina",
+          value: "Facas retangulares retas",
+        },
+        {
+          label: "Aplicação",
+          value: "Corte de sucata em tesoura jacaré",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Referência da máquina",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+          ],
+          rows: [
+            ["SR003501", "JMC McIntyre 320", "320", "65", "30"],
+            ["SR003502", "JMC McIntyre 407", "407", "64", "32"],
+            ["SR003503", "JMC McIntyre 500", "508", "70", "30"],
+            ["SR003504", "Bronneberg A-400", "406", "70", "32"],
+            ["SR003505", "Bronneberg A-500PB", "500", "70", "32"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Inclua o modelo de tesoura jacaré, posição superior ou inferior da faca, número da peça ou desenho, quantidade e o tipo de metal e tamanho da seção que você corta.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Inclua o modelo de tesoura jacaré, posição superior ou inferior da faca, número da peça ou desenho, quantidade e o tipo de metal e tamanho da seção que você corta.",
+    dimensionLabels: {
+      intro:
+        "As referências de máquina identificam as configurações listadas. Confirme a versão da máquina, a posição superior ou inferior da faca e complete o desenho do furo de montagem antes de fazer o pedido; as dimensões do corpo por si só não estabelecem o ajuste.",
     },
   },
   {
     id: "guillotine-shear-blades",
-    name: "Lâminas de tesoura guilhotina",
-    fullName:
-      "Lâminas de precisão para tesouras guilhotina destinadas a máquinas hidráulicas e mecânicas de corte de chapas metálicas",
+    name: "Facas para guilhotinas de chapas",
+    fullName: "Facas de guilhotina para chapas metálicas",
+    seoTitle: "Facas de guilhotina para chapas metálicas",
+    seoDescription:
+      "Corte de chapa com facas de cisalhamento guilhotina D2 , 6CrW2Si ou 9CrSi . Encomende facas superiores e inferiores em peças únicas ou conjuntos segmentados com padrões de montagem personalizados.",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Lâminas de tesoura guilhotina",
-    image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+    categoryDisplay: "Facas para guilhotinas de chapas",
+    image: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
     badge: "Chapa metálica",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+      "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+      "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
     ],
     description:
-      "Lâminas de guilhotina de alta precisão facas de cisalhamento em aços para ferramentas D2 (Cr12MoV), 6CrW2Si e 9CrSi, destinadas a máquinas de corte hidráulicas e mecânicas. Retificado superficialmente para obter paralelismo em todo o comprimento com tolerância de ±0,05 mm. Conjuntos de lâminas superiores e inferiores para máquinas com capacidade de até 16 mm × 4.000 mm. Peças de reposição compatíveis com OEM para guilhotinas TRUMPF, AMADA, LVD, Durma e Bystronic.",
-    fullDescription:
-      "As guilhotinas facas de cisalhamento são os componentes essenciais de corte em máquinas hidráulicas e mecânicas de corte de chapas, utilizadas em centros de serviços siderúrgicos, estaleiros, oficinas de fabricação de estruturas e fábricas de estampagem automotiva. Cada ciclo de corte submete a lâmina a uma enorme força de cisalhamento concentrada ao longo de uma linha estreita na borda — a lâmina deve manter uma geometria de borda afiada como uma lâmina de barbear, paralelismo absoluto e dureza uniforme em todo o seu comprimento para proporcionar cortes em chapas metálicas sem rebarbas e sem distorções.\n\nA Sureay fabrica as guilhotinas facas de cisalhamento a partir de aços para ferramentas de alta qualidade — D2 (Cr12MoV), 6CrW2Si e 9CrSi —, cada um selecionado para uma faixa específica de espessura e perfil de dureza do material. Cada lâmina é submetida a tratamento térmico a vácuo em nossas instalações e retificada com precisão na superfície para um paralelismo em todo o comprimento de ±0,05 mm, garantindo que a folga de cisalhamento entre as lâminas superior e inferior permaneça uniforme de ponta a ponta. Isso elimina a torção, o arqueamento e as rebarbas nas bordas que afetam as lâminas de reposição mal fabricadas.\n\n## Seleção de liga por aplicação de cisalhamento\n\n**D2 / Cr12MoV (HRC 58–62):** A especificação premium para cisalhamento de aço inoxidável (304, 316L), chapas de alta resistência e baixa liga (HSLA), chapas de desgaste Hardox e bobinas pré-pintadas. A matriz de 12% de carboneto de cromo da D2 oferece a extrema resistência à abrasão necessária ao cortar aços inoxidáveis austeníticos com endurecimento por deformação, que rapidamente embotam as lâminas de classes mais macias.\n\n**6CrW2Si (HRC 55–58):** Uma liga resistente a impactos que combina excelente dureza de gume com tenacidade do núcleo. Indicada para cisalhamento de chapas de espessura média a grossa (6–25 mm de aço macio) e ambientes de produção com materiais mistos, nos quais a lâmina ocasionalmente encontra material mais duro do que o esperado. O teor de tungstênio e cromo proporciona resistência ao revenimento em altas temperaturas.\n\n**9CrSi (HRC 55–60):** Uma liga econômica para corte em grande volume de aço macio e aço carbono (até 12 mm). A 9CrSi oferece vida útil confiável da lâmina em aço estrutural padrão, chapas galvanizadas e chapas de piso a um custo por lâmina menor do que o da D2.\n\n## Conjuntos de lâminas superior e inferior\n\nAs máquinas de corte por guilhotina operam com pares de lâminas superiores (curso móvel) e inferiores (base fixa). A Sureay fornece conjuntos combinados de lâminas superiores e inferiores retificadas a partir do mesmo lote de aço, garantindo dureza e comportamento de expansão térmica idênticos em todo o par. Cada conjunto é fornecido com furos de montagem perfurados de acordo com o padrão exato de parafusos OEM da sua máquina.\n\n## Lâminas reversíveis com múltiplas arestas\n\nPara lâminas padrão de seção retangular, oferecemos perfis reversíveis de 2 e 4 arestas. Quando uma aresta de corte se desgasta, o operador afrouxa os parafusos de fixação, vira ou gira a lâmina para expor uma aresta nova e reapertá-la. Isso multiplica a vida útil efetiva da lâmina por 2 a 4 vezes antes que seja necessário reafiar ou substituir — reduzindo drasticamente o custo anual de ferramentas por corte.\n\n## Sistemas de lâminas segmentadas para mesas longas\n\nPara máquinas de cisalhamento com largura superior a 3.200 mm, as lâminas de peça única tornam-se impraticáveis devido ao risco de distorção. A Sureay fabrica sistemas de lâminas segmentadas de precisão — várias lâminas mais curtas indexadas de ponta a ponta na base da máquina — com tolerância de altura combinada de ponta a ponta (±0,02 mm) para garantir uma linha de corte contínua e sem folgas em toda a largura da mesa.",
+      "Substituição facas de cisalhamento guilhotinadas para chapas metálicas, em D2 , 6CrW2Si ou 9CrSi. Facas superiores e inferiores com comprimentos personalizados e padrões de montagem.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -2880,141 +3663,65 @@ export const blades: Blade[] = [
       "Adira",
       "Ursviken",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV), 6CrW2Si, 9CrSi, High Carbon Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–62 (alloy dependent)",
-      },
-      {
-        label: "Machine Capacity",
-        value: "4 mm × 2500 mm up to 16 mm × 4000 mm (and custom)",
-      },
-      {
-        label: "Edge Profile",
-        value: "1, 2, or 4 Usable Cutting Edges (Reversible)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Blade Clearance",
-        value:
-          "4–6% of thickness (mild steel) · 6–9% (304/316L) · 3–4% (aluminium) · 7–10% (HSLA)",
-      },
-      {
-        label: "Application",
-        value:
-          "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Equipe sua tesoura para chapas metálicas com facas superiores e inferiores de reposição, fornecidas como lâminas de peça única ou conjuntos segmentados. Sureay oferece dimensões baseadas em desenhos e opções de aço para suas tarefas de corte; entre em contato conosco para obter um orçamento para sua máquina. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     components: [
       {
-        id: "d2-stainless-shearing",
-        tag: "CHAPA GROSSA",
-        title: "D2 para chapas de aço inoxidável e HSLA",
+        id: "guillotine-upper-lower",
+        tag: "Configuração de faca",
+        title: "Opções de aço ferramenta para corte de chapa metálica",
         description:
-          "Aço Premium D2 (Cr12MoV) com endurecimento profundo a HRC 58–62. A matriz rica em carboneto de cromo resiste ao desgaste abrasivo extremo e às forças de endurecimento por deformação encontradas durante o corte de aço inoxidável 304/316L, chapas HSLA e bobinas pré-pintadas.",
+          "Sureay oferece aço para ferramentas D2 , 6CrW2Si , 9CrSi e com alto teor de carbono, com dureza listada de 55–62 HRC dependendo da classe. Especifique a resistência da chapa, a faixa de espessura e as condições de desgaste da borda ao comparar materiais de substituição.",
       },
       {
-        id: "6crw2si-shock",
-        tag: "RESISTÊNCIA A IMPACTOS",
-        title: "6CrW2Si para chapas de espessura média a pesada",
+        id: "guillotine-segmented-knives",
+        tag: "Conjuntos segmentados",
+        title: "Conjuntos de facas de peça única e segmentadas",
         description:
-          "A liga 6CrW2Si, resistente a impactos, combina arestas de corte duras (HRC 55–58) com alta tenacidade no núcleo. Projetada para chapas de aço macio de 6 a 25 mm e para a produção de materiais mistos, onde inclusões duras inesperadas poderiam causar lascas em uma lâmina frágil.",
+          "As facas superiores e inferiores estão disponíveis como peças individuais ou conjuntos segmentados, com comprimentos, faces finais e detalhes de montagem especificados para a viga de corte existente.",
       },
       {
-        id: "parallelism-precision",
-        tag: "TOLERÂNCIA",
-        title: "Paralelismo de precisão (±0,05 mm)",
+        id: "guillotine-material-setup",
+        tag: "Condições de corte",
+        title: "Padrões de montagem personalizados e bordas utilizáveis",
         description:
-          "Cada lâmina é retificada superficialmente para garantir um paralelismo em todo o comprimento de ±0,05 mm, em comprimentos de até 4.000 mm. Isso garante uma folga de corte uniforme entre as lâminas superior e inferior, proporcionando cortes sem rebarbas e evitando torções e empenamentos na chapa cortada.",
-      },
-      {
-        id: "discontinued-machine-matching",
-        tag: "COMPATIBILIDADE COM OEM",
-        title: "Máquina fora de linha? Envie a lâmina antiga",
-        description:
-          "Trabalhamos a partir de uma amostra usada, e não de um número de catálogo. Comprimento, largura, espessura, chanfro e padrão de furos são medidos na lâmina que você enviar e reproduzidos de acordo com o desenho — e é assim que fornecemos máquinas cujo fabricante deixou de listar peças há anos. Os conjuntos da TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira e Ursviken são mantidos como geometria padrão; todo o restante é adaptado à sua amostra.",
+          "Padrões de furos e perfis de corte personalizados suportam a substituição da configuração de faca instalada. Versões de um, dois e quatro gumes estão disponíveis de acordo com o desenho da faca e suas posições de indexação permitidas.",
       },
     ],
-    dimensionLabels: {
-      col0: "Capacidade da máquina",
-      col1: "Comprimento (mm)",
-      col2: "Largura (mm)",
-      col3: "Espessura (mm)",
-      col4: "Unidades / Conjunto",
-      caption:
-        "* Dimensões padrão para máquinas de corte tipo guilhotina hidráulicas e mecânicas comuns. Cada conjunto inclui lâminas superior e inferior. Modelos segmentados para mesas com largura superior a 4.000 mm disponíveis mediante solicitação. Comprimentos personalizados, perfis com múltiplas arestas e padrões de parafusos OEM fabricados conforme desenho.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "4 × 2500",
-        od: "508",
-        id: "80",
-        length: "25",
-        pcs: "10",
+        label: "Tamanhos",
+        value: "508–1300 mm",
       },
       {
-        spec: "4 × 2500",
-        od: "1300",
-        id: "63",
-        length: "16",
-        pcs: "4",
+        label: "Material",
+        value:
+          "D2 , 6CrW2Si , 9CrSi ou aço para ferramentas com alto teor de carbono",
       },
       {
-        spec: "6 × 2500",
-        od: "1300",
-        id: "80",
-        length: "20",
-        pcs: "4",
+        label: "Dureza",
+        value: "55–62 HRC , dependendo do tipo de aço",
       },
       {
-        spec: "6 × 3200",
-        od: "1100",
-        id: "80",
-        length: "20",
-        pcs: "6",
+        label: "Posições de faca",
+        value:
+          "Facas superiores e inferiores; conjuntos de peça única ou segmentados",
       },
       {
-        spec: "6 × 4000",
-        od: "1025",
-        id: "80",
-        length: "20",
-        pcs: "8",
+        label: "Configurações de borda",
+        value:
+          "Uma, duas ou quatro arestas de corte utilizáveis, dependendo do perfil da faca",
       },
       {
-        spec: "16 × 2500",
-        od: "1300",
-        id: "100",
-        length: "25",
-        pcs: "4",
+        label: "Aplicação",
+        value: "Corte de chapas metálicas em guilhotina e tesoura de esquadria",
       },
       {
-        spec: "16 × 3200",
-        od: "1100",
-        id: "100",
-        length: "25",
-        pcs: "6",
-      },
-      {
-        spec: "16 × 4000",
-        od: "1025",
-        id: "100",
-        length: "25",
-        pcs: "8",
+        label: "Paralelismo",
+        value: "±0,05 mm em todo o comprimento da faca",
       },
     ],
-    relatedBladeIds: [
-      "metal-shear-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-      "multi-shaft-blades-metal",
-    ],
+    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
     offers: {
       lowPrice: 30,
       highPrice: 350,
@@ -3022,103 +3729,167 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Qual deve ser a folga entre as lâminas em uma tesoura guilhotina?",
+          question: "Como identifico uma lâmina de guilhotina de reposição?",
           answer:
-            "A folga é definida como uma porcentagem da espessura do material, e não como um valor fixo, e deve se ajustar conforme o movimento do material. O aço macio e o aço estrutural (S235, A36) operam com uma folga de 4 a 6%. O aço inoxidável 304 e 316L requer 6 a 9%, pois sofre endurecimento por deformação na borda de corte, e a folga utilizada para o aço macio sobrecarrega a lâmina. O alumínio requer 3 a 4% — ele é macio o suficiente para que uma folga ampla permita que ele se deforme e enrole, em vez de se fraturar. O aço HSLA e as chapas de alta resistência exigem 7–10%. Chapas galvanizadas e pré-pintadas ficam na faixa inferior de 4–6%, já que uma folga ampla arrasta e descama o revestimento ao longo da linha de corte. Em milímetros: o aço macio de 6 mm com 5% requer uma folga de cerca de 0,30 mm, enquanto o mesmo aço de 6 mm do tipo 304 com 8% requer uma folga mais próxima de 0,48 mm. Considere esses valores como pontos de partida — o manual da sua máquina é a referência definitiva, e as condições da lâmina, o ângulo de inclinação e a pressão de fixação alteram a faixa prática.",
+            "O desenho da faca superior ou inferior identifica a substituição de forma mais confiável do que a largura de corte anunciada da tesoura. Compare o comprimento real, a seção, os furos dos parafusos, as faces de localização e a borda de trabalho. Em uma viga segmentada, combine a peça individual e sua posição na linha.",
         },
         {
           question:
-            "Qual tipo de aço devo escolher para cortar aço inoxidável 304 em uma guilhotina hidráulica?",
+            "Como deve ser escolhido o material da lâmina para aço-carbono, aço inoxidável ou alumínio?",
           answer:
-            "O D2 (Cr12MoV), temperado a HRC 58–62, é a liga recomendada para aço inoxidável (304, 316L) e chapas de alta resistência, como o Hardox. O alto teor de carboneto de cromo do D2 resiste à severa abrasão causada pelo endurecimento por deformação imposta pelo aço inoxidável austenítico. Para o aço macio padrão, o 9CrSi oferece excelente vida útil do fio de corte a um custo menor.",
+            "Comece com o grau real da folha, resistência, faixa de espessura e condição da faca usada. Desgaste gradual, lascamento de bordas e deformação exigem diferentes considerações sobre materiais. Compare o material atual com as opções de aço disponíveis, mantendo a geometria da aresta necessária. Uma alteração na especificação da folha também pode exigir a revisão das configurações de corte da máquina.",
+        },
+        {
+          question: "Por que facas de cisalhamento em chapa lascam?",
+          answer:
+            "Inspecione a borda de trabalho e compare o dano com a especificação da folha e a folga de corte. Sobrecarga mecânica, folga inadequada ou camadas duplas não intencionais podem contribuir para o lascamento. Uma borda desgastada ou danificada pode afetar o corte final. Verifique essas condições em conjunto antes de decidir se deve trocar o material da faca ou substituir um segmento danificado.",
         },
         {
           question:
-            "Por que minha guilhotina facas de cisalhamento apresenta falhas ao cortar chapas mistas ou mais pesadas?",
+            "As facas de cisalhamento esquadradas e facas de cisalhamento guilhotina são a mesma coisa?",
           answer:
-            "A lasca geralmente indica que a liga da lâmina é dura e frágil demais para a carga de cisalhamento. Se você estiver cortando chapas mistas de 10 a 25 mm ou, ocasionalmente, se deparar com materiais mais duros, troque a D2 pela 6CrW2Si. Essa liga resistente a choques oferece uma dureza controlada mais baixa (HRC 55–58) com alta tenacidade no núcleo, absorvendo cargas de impacto de forma elástica em vez de lascar.",
+            "Sim, em equipamentos de chapa metálica ambos os nomes podem se referir a facas retas superiores e inferiores para corte transversal. Combine a faca com a viga superior ou inferior da máquina. Para uma faca que corta uma pilha de papel presa, consulte [Facas de guilhotina de papel](/products/paper-cutting-blades) .",
         },
         {
           question:
-            "O que causa rebarbas e torção na borda cortada, e como a guilhotina facas de cisalhamento resolve esse problema?",
+            "Qual é a diferença entre a folga da lâmina e o ângulo de inclinação?",
           answer:
-            "Rebarbas e torção são quase sempre causadas pelo contato irregular entre as lâminas — quando a folga de corte varia de uma extremidade da lâmina à outra. Isso concentra a força de cisalhamento em um único ponto, produzindo rebarbas compressivas por rolagem e distorção da chapa. Nossas lâminas são retificadas superficialmente para garantir um paralelismo de ±0,05 mm em todo o comprimento, assegurando uma folga uniforme ao longo de todo o comprimento de corte para um corte limpo e sem rebarbas.",
+            "A folga é a lacuna entre as arestas de corte opostas. O ângulo de inclinação descreve sua inclinação relativa ao longo do corte. Ambos afetam as condições de corte, mas são configurações separadas. Use o procedimento do fabricante da tesoura para o grau e espessura da chapa e mantenha esses requisitos ao especificar a geometria da faca de reposição.",
+        },
+        {
+          question: "Uma lâmina de guilhotina pode ser girada ou reafiada?",
+          answer:
+            "Uma lâmina de corte pode ser indexada se a faca e o suporte suportarem outra borda de trabalho. Pode ser retificado se o perfil especificado puder ser restaurado dentro das dimensões restantes permitidas. Após qualquer operação, verifique o assentamento, a altura de corte e a folga em relação ao desenho original e aos limites da máquina.",
         },
         {
           question:
-            "Como a guilhotina reversível de 4 lâminas facas de cisalhamento reduz meu custo anual com ferramentas?",
+            "Como solicito orçamento de facas de cisalhamento guilhotina ou conjunto segmentado?",
           answer:
-            "Uma lâmina reversível de 4 gumes oferece quatro faces de corte independentes a partir de um único corpo de lâmina. Quando o gume 1 apresentar desgaste, afrouxe os parafusos de fixação, gire a lâmina 90° para expor um gume novo e reaparafuse com o torque adequado. Isso multiplica por 4 a vida útil da lâmina antes que seja necessário reafiar, reduzindo drasticamente o custo de ferramentas por corte em linhas de corte de alto volume.",
-        },
-        {
-          question:
-            "Qual é o comprimento máximo de uma lâmina individual que a Sureay pode fabricar?",
-          answer:
-            "Fabricamos guilhotinas de peça única facas de cisalhamento com comprimento de até 4.000 mm. Para máquinas com largura superior a 4.000 mm, produzimos conjuntos de lâminas segmentadas de precisão — várias lâminas indexadas de ponta a ponta com tolerância de altura compatível (±0,02 mm) — para criar uma linha de corte contínua e sem intervalos em toda a largura da mesa.",
-        },
-        {
-          question:
-            "Como faço para selecionar as dimensões corretas da lâmina para a minha máquina de corte guilhotina específica?",
-          answer:
-            "As dimensões da lâmina são determinadas pela capacidade de corte da sua máquina (espessura máxima da chapa × largura da mesa). Por exemplo, uma máquina de 6 × 3.200 mm utiliza lâminas com as dimensões 1.100 × 80 × 20 mm, fornecidas como um conjunto segmentado de 6 peças. Envie-nos o número do modelo da sua máquina ou um desenho da lâmina atual, e confirmaremos as dimensões exatas, o padrão de fixação e o tipo de aço recomendado.",
+            "Compartilhe o modelo de cisalhamento, desenhos superiores e inferiores ou números de peças, classes e espessuras de chapas e quantidades. Para uma linha segmentada, rotule a sequência de segmentos e mostre as faces adjacentes. Se você estiver substituindo apenas parte da linha, identifique os segmentos que permanecem em serviço.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo de cisalhamento, desenhos superiores e inferiores, classe e espessura da chapa e quantidade necessária.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Amostras de facas de guilhotina mostrando arestas de corte retas e diferentes furos de montagem",
+      sizeRange: "508–1300 mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês podem fabricar lâminas de reposição que se encaixem perfeitamente na minha guilhotina TRUMPF, AMADA, LVD ou Durma?",
-          answer:
-            "Sim. Oferecemos dimensões e padrões de parafusos compatíveis com os originais (OEM) para máquinas de corte TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati e Adira. Forneça o número do modelo da sua máquina ou uma amostra de lâmina desgastada e confirmaremos a compatibilidade. Comprimentos personalizados são fabricados conforme desenho em até 15 dias úteis.",
-        },
-        {
-          question:
-            "Vocês fornecem conjuntos de lâminas de corte tipo guilhotina, tanto para a parte superior quanto para a inferior?",
-          answer:
-            "Sim. Todo pedido padrão inclui conjuntos de lâminas superiores (ram) e inferiores (bed) combinadas, retificadas a partir do mesmo lote de aço para garantir dureza, estrutura de grão e comportamento de expansão térmica idênticos em todo o par. Os orifícios de montagem são perfurados de acordo com o padrão exato dos parafusos do fabricante original (OEM).",
-        },
-        {
-          question:
-            "A Sureay pode fabricar lâminas de reposição para máquinas de corte mais antigas ou fora de linha?",
-          answer:
-            "Sim. No caso de modelos de guilhotinas descontinuados ou raros, trabalhamos com base em desenhos fornecidos pelo cliente ou em amostras físicas das lâminas. Um modelo de levantamento dimensional está disponível mediante solicitação para a medição precisa do perfil da lâmina, dos ângulos das arestas e dos orifícios de montagem escareados. Já produzimos com sucesso peças de reposição para máquinas que datam da década de 1980.",
-        },
-        {
-          question:
-            "Que tipo de documentação é fornecida com cada conjunto de lâminas?",
-          answer:
-            "Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional que comprova o paralelismo em todo o comprimento e um certificado de lote tratamento térmico. Para programas de qualificação de fabricantes de equipamentos originais (OEM), relatórios completos de CMM e certificados de material da siderúrgica estão disponíveis mediante solicitação.",
-        },
-        {
-          question:
-            "Qual é o prazo de entrega normal para a guilhotina padrão facas de cisalhamento?",
-          answer:
-            "Os tamanhos padrão (listados em nossa tabela de dimensões) são enviados em até 7 a 10 dias úteis. Tamanhos personalizados, tipos especiais de ligas ou pedidos de grande volume geralmente levam de 15 a 20 dias úteis. Oferecemos produção acelerada, mediante solicitação, para situações urgentes de paralisação de máquinas.",
+          label: "Aplicação",
+          value: "Corte de chapa metálica em guilhotina ou tesoura quadrada",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
+        alt: "Quatro amostras de facas de guilhotina de chapa metálica mostrando bordas retas e furos de montagem",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "508–1300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 , 6CrW2Si , 9CrSi ou aço para ferramentas com alto teor de carbono",
+        },
+        {
+          label: "Dureza",
+          value: "55–62 HRC , dependendo do tipo de aço",
+        },
+        {
+          label: "Posições de faca",
+          value:
+            "Facas superiores e inferiores; conjuntos de peça única ou segmentados",
+        },
+        {
+          label: "Configurações de borda",
+          value:
+            "Uma, duas ou quatro arestas de corte utilizáveis, dependendo do perfil da faca",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Corte de chapas metálicas em guilhotina e tesoura de esquadria",
+        },
+        {
+          label: "Paralelismo",
+          value: "±0,05 mm em todo o comprimento da faca",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Capacidade de corte da máquina (mm)",
+            "Comprimento da faca (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+            "Peças/conjunto",
+          ],
+          rows: [
+            ["SR003201", "4 × 2500", "508", "80", "25", "10"],
+            ["SR003202", "4 × 2500", "1300", "63", "16", "4"],
+            ["SR003203", "6 × 2500", "1300", "80", "20", "4"],
+            ["SR003204", "6 × 3200", "1100", "80", "20", "6"],
+            ["SR003205", "6 × 4000", "1025", "80", "20", "8"],
+            ["SR003206", "16 × 2500", "1300", "100", "25", "4"],
+            ["SR003207", "16 × 3200", "1100", "100", "25", "6"],
+            ["SR003208", "16 × 4000", "1025", "100", "25", "8"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Inclua o modelo de cisalhamento, desenhos superiores e inferiores, classe e espessura da chapa e quantidade necessária.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Inclua o modelo de cisalhamento, desenhos superiores e inferiores, classe e espessura da chapa e quantidade necessária.",
+    dimensionLabels: {
+      intro:
+        "A capacidade de corte da máquina é uma referência e não um modelo único ou garantia de ajuste. Confirme as posições superior e inferior da faca, a ordem dos segmentos e os furos de montagem para as configurações listadas.",
     },
   },
   {
     id: "three-knife-trimmer-blades",
-    name: "Lâminas para cortador de três facas",
-    fullName:
-      "Lâminas de corte de três facas de alta qualidade em HSS e metal duro para encadernação",
-    category: "shear_blades",
+    name: "Facas para guilhotinas trilaterais",
+    fullName: "Facas de refile trilateral para acabamento de livros",
+    seoTitle: "Facas de refile trilateral para acabamento de livros",
+    seoDescription:
+      "Apare a frente, a cabeça e o pé dos livros encadernados com facas HSS ou de metal duro. Solicite uma lâmina de reposição ou um conjunto correspondente com uma faca frontal e duas laterais.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Facas para encadernação",
     badge: "Compatibilidade OEM",
     badgeColor: "blue",
     image:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
     gallery: [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
     ],
     description:
-      "Conjuntos de substituição de 3 lâminas combinadas (1 frontal, 2 laterais) para acabamento de impressão de alto volume. Construção bimetálica com gumes de corte em HSS com 18% de tungstênio ou carboneto de tungstênio (TC) maciço. Compatibilidade direta com o equipamento original (OEM) para cortadoras Müller Martini, Kolbus e Wohlenberg.",
-    fullDescription:
-      "Em operações comerciais de encadernação e acabamento de impressão em alta velocidade, o cortador de três lâminas é a etapa final e crítica antes da embalagem. Lâminas de corte de baixa qualidade causam rachaduras na lombada, lascas na capa e acúmulo de cola PUR/EVA, transformando livros acabados em sucata cara.\n\nOs conjuntos de cortadores de três lâminas da Sureay são fabricados de acordo com especificações precisas dos fabricantes de equipamentos originais (OEM) para garantir bordas frontais, cabeças e caudas impecáveis em catálogos grossos, revistas e livros com encadernação perfeita. Esse conjunto de três lâminas — dianteira, esquerda e direita — também é conhecido no setor como **cabeçote combinado** ou cabeçote de corte combinado.\n\n## Construção bimetálica avançada\n\nLâminas sólidas de aço rápido desse tamanho são muito frágeis e propensas a quebrar sob a imensa pressão de fixação de uma cortadora de livros. Utilizamos um processo avançado de fabricação com **incrustração bimetálica**. Uma lâmina de corte premium — seja de aço rápido com 18% de tungstênio (HSS) ou de carboneto de tungstênio de microgrão — é soldada a vácuo em um corpo de aço para molas de alta resistência à tração e com propriedades de absorção de choque. Isso proporciona a combinação definitiva: uma lâmina de corte incrivelmente dura e resistente ao desgaste, apoiada por um núcleo flexível e à prova de quebra.\n\n## Tipos de materiais para encadernação\n\n- **Aço de alta velocidade (HSS) com 18% de tungstênio:** O padrão da indústria para impressão comercial em geral. Oferece uma lâmina extremamente afiada e fina, que lida facilmente com papéis para livros padrão, não revestidos e levemente revestidos.\n- **Carboneto de tungstênio (TC / equivalente a Widia):** A especificação de nível mais alto. As lâminas de TC oferecem uma vida útil de até **5 a 10 vezes maior** do que as de HSS. Elas são obrigatórias ao cortar papel reciclado pesado, papel artístico com revestimento brilhante altamente abrasivo ou livros encadernados com adesivos PUR resistentes.\n\n## Acabamento espelhado anti-cola\n\nOs livros modernos com encadernação perfeita utilizam adesivos EVA ou PUR agressivos. Durante o ciclo de corte, o atrito aquece a cola, fazendo com que ela se espalhe e grude na superfície da lâmina. As lâminas de corte da Sureay são lapidadas com precisão até um acabamento espelhado com Ra ≤0,1 μm, reduzindo significativamente o atrito e a aderência da cola, garantindo um corte limpo ciclo após ciclo.",
+      "Lâminas de reposição de três facas para acabamento de livros. Facas frontais e laterais HSS ou metal duro, fornecidas como peças individuais ou conjuntos correspondentes ao desenho.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3129,102 +3900,64 @@ export const blades: Blade[] = [
       "Meccanotecnica",
       "Horizon",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS (Duritan eq.) | Tungsten Carbide (TC)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic Inlay (Hard edge brazed to tough steel body)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤0.1 μm) to prevent glue build-up",
-      },
-      {
-        label: "Set Configuration",
-        value: "Matched 3-Piece Set (1 Front Knife, 2 Side Knives)",
-      },
-      {
-        label: "OEM Tolerance",
-        value: "Thickness matched to ±0.01 mm across the full set",
-      },
-      {
-        label: "Applications",
-        value: "Perfect Bound Books, Magazines, Hardcover Book Blocks",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Solicite facas frontais e laterais de reposição para o seu aparador de livros como um conjunto combinado ou peças individuais. Com opções de ponta HSS e metal duro, além de perfis de montagem personalizados, Sureay pode cotar a configuração de faca que sua linha de acabamento precisa. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     components: [
       {
-        id: "bimetallic-inlay",
-        tag: "METALURGIA",
-        title: "Tecnologia de incrustação bimetálica",
+        id: "trimmer-front-side-set",
+        tag: "Definir configuração",
+        title: "Incrustações HSS e Metal Duro para Corte de Livros",
         description:
-          "Soldamos uma lâmina de alta qualidade em aço rápido (HSS) ou carboneto de tungstênio a um corpo de liga de aço resistente e flexível. Isso proporciona a extrema resistência ao desgaste necessária para papel revestido, sem o risco de a lâmina se partir sob forte pressão de fixação.",
+          "Arestas de corte HSS com 18% de tungstênio e metal duro estão disponíveis em corpos de aço, oferecendo opções de material de encadernação para o estoque de papel e tarefas de corte de sua linha de acabamento de livros.",
       },
       {
-        id: "matched-sets",
-        tag: "CONFIGURAÇÃO",
-        title: "Conjuntos de 3 peças combinadas",
+        id: "trimmer-edge-selection",
+        tag: "Seleção de borda",
+        title: "Espessura correspondente e faces de trabalho lapidadas",
         description:
-          "Fornecido como um conjunto pronto para instalação (1 frontal, 1 esquerda, 1 direita). Todas as três lâminas são retificadas com precisão no mesmo lote, com uma tolerância de espessura de ±0,01 mm, garantindo uma instalação sem tempo de inatividade e um alinhamento perfeito.",
+          "A correspondência de espessura definida listada é de ±0,01 mm. As faces de trabalho lapidadas espelhadas e a correspondência de espessura proporcionam às facas frontais e laterais um acabamento e geometria definidos para pedidos em conjunto.",
       },
       {
-        id: "anti-glue-finish",
-        tag: "DESEMPENHO",
-        title: "Acabamento espelhado antiaderente",
+        id: "trimmer-spine-finish",
+        tag: "Corte da coluna",
+        title: "Facas frontais e laterais como conjuntos ou peças individuais",
         description:
-          "O corte das lombadas dos livros expõe a lâmina a adesivos PUR e EVA quentes e pegajosos. Nossas lâminas são polidas até atingirem um acabamento espelhado microscópico, evitando que a cola se espalhe pela borda do livro.",
+          "Solicite um conjunto completo frontal, esquerdo e direito ou uma substituição individual, com chanfros específicos de posição e detalhes de montagem reproduzidos a partir dos desenhos da faca.",
       },
     ],
-    dimensionLabels: {
-      col0: "Modelo da máquina OEM",
-      col1: "Posição da lâmina",
-      col2: "Dimensões (C × L × P)",
-      col3: "Orifícios de montagem / Ranhuras",
-      caption:
-        "* As dimensões correspondem aos modelos padrão da Müller Martini e da Kolbus. Dispomos de desenhos técnicos originais (OEM) para a Wohlenberg e a Perfecta. Padrões de furos personalizados usinados sob encomenda.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Müller Martini 301/361",
-        od: "Front Knife",
-        id: "540 × 90 × 12 mm",
-        type: "12 × M10 Threaded",
+        label: "Tamanhos",
+        value: "392–585 mm",
       },
       {
-        spec: "Müller Martini 301/361",
-        od: "Left & Right",
-        id: "392 × 90 × 12 mm",
-        type: "8 × M10 Threaded",
+        label: "Material",
+        value: "18% de tungstênio HSS ou arestas de corte metal duro",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Front Knife",
-        id: "580 × 115 × 12 mm",
-        type: "12 × M10, 1 Slot",
+        label: "Construção da lâmina",
+        value:
+          "Incrustação bimetálica com aresta de corte soldada e corpo em aço",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Left & Right",
-        id: "450 × 115 × 12 mm",
-        type: "15 × M10, 2 Slots",
+        label: "Definir configuração",
+        value: "Uma faca frontal e duas facas laterais",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Front Knife",
-        id: "510 × 110 × 10 mm",
-        type: "10 × M10 Threaded",
+        label: "Acabamento da superfície",
+        value: "Espelho lapidado, Ra ≤0,1 µm",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Left & Right",
-        id: "400 × 110 × 10 mm",
-        type: "8 × M10 Threaded",
+        label: "Aplicação",
+        value:
+          "Corte frontal, superior e inferior de livros encadernados e blocos de livros",
+      },
+      {
+        label: "Definir correspondência de espessura",
+        value: "±0,01 mm em todo o conjunto correspondente",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
+    relatedBladeIds: ["paper-cutting-blades"],
     offers: {
       lowPrice: 120,
       highPrice: 850,
@@ -3233,432 +3966,852 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Quando devo trocar as lâminas de corte HSS pelas de carboneto de tungstênio (TC)?",
+            "Quais facas compõem um conjunto de substituição do aparador de três facas?",
           answer:
-            "Você deve optar por lâminas de carboneto de tungstênio (TC) ao cortar grandes volumes de papel reciclado, papel artístico com revestimento brilhante ou livros grossos encadernados com adesivo PUR de alta densidade. Papéis revestidos contêm argila e minerais que embotam o HSS muito rapidamente. As lâminas de TC oferecem uma vida útil de corte de 5 a 10 vezes maior do que a do HSS, reduzindo drasticamente o tempo de inatividade da máquina para trocas de lâmina.",
+            "O conjunto é composto por uma faca frontal e duas facas laterais para cortes frontais, cabeça e pés em um bloco de livro. Cada posição tem suas próprias dimensões e detalhes de montagem. Identifique as facas esquerda e direita separadamente, incluindo a orientação do bisel, para que o conjunto encomendado siga a disposição do aparador instalado.",
         },
         {
           question:
-            "Por que as lâminas do meu cortador ficam rasgando ou lascando a lombada do livro?",
+            "Como faço para combinar facas com um aparador Müller Martini ou Kolbus ?",
           answer:
-            "O rasgo da espinha é geralmente causado por um destes três fatores: (1) A lâmina está cega e precisa ser trocada; (2) O ângulo de bisel está incorreto para o tipo de papel/cola que está sendo cortado; ou (3) O acúmulo de adesivo na parte de trás da lâmina está causando “resistência”. Certifique-se de que suas lâminas tenham um acabamento polido espelhado para evitar a aderência da cola e considere a possibilidade de trocar por lâminas de HSS ou carboneto para uma melhor retenção do fio.",
+            "Combine as referências da faca frontal, esquerda e direita com o modelo e versão completo do aparador. As entradas do catálogo cobrem configurações específicas Müller Martini 367x e Kolbus HD. Compare o número do item separado, o chanfro e o padrão de montagem para cada posição com o seu desenho.",
         },
         {
           question:
-            "As lâminas de aparador de carboneto de tungstênio (TC) podem ser reafiadas?",
+            "Como o estoque de papel afeta a escolha entre bordas HSS e metal duro?",
           answer:
-            "Sim, mas elas devem ser afiadas com rebolos de diamante especializados. O uso de rebolos comuns de óxido de alumínio ou carboneto de silício destruirá o gume de carboneto e causará microfissuras. Se o serviço de afiação da sua região não dispuser do equipamento adequado com rebolos de diamante, recomendamos enviá-las a uma empresa especializada em afiação industrial.",
+            "O revestimento do papel, o conteúdo de enchimento e o serviço de produção influenciam o desgaste das bordas. Considere o metal duro quando o desgaste gradual for o principal problema e avalie o processo de afiação disponível para essa construção. Mantenha os chanfros frontais e laterais necessários e defina as dimensões. Para lascar, inspecione a aresta e as condições de corte antes de selecionar um material mais duro.",
         },
         {
           question:
-            "Qual é a sequência correta de instalação de um conjunto de três lâminas?",
+            "O que pode causar uma marca persistente na borda aparada de um livro?",
           answer:
-            "Como as lâminas laterais costumam deslizar levemente contra a barra de corte ou o trajeto da lâmina frontal, o alinhamento é fundamental. Instale primeiro as três lâminas sem apertá-las totalmente. Ajuste e aperte a lâmina frontal para estabelecer o ponto de referência do cabeçote e, em seguida, vá apertando as lâminas laterais alternadamente. Como nossos conjuntos de três peças são retificados com uma tolerância de espessura idêntica, eles evitam a pressão de fixação desigual que causa o emperramento.",
+            "Pequenas lascas na borda de trabalho são uma causa possível. Localize a marca no corte frontal, da cabeça ou do pé e inspecione a faca correspondente. Verifique juntos a nitidez, o chanfro e a condição da haste de corte. Restaurar a geometria da borda e o suporte resolve um problema diferente da remoção de resíduos de adesivo de uma faca que de outra forma estaria intacta.",
+        },
+        {
+          question: "Por que a cola se acumula nas facas para aparar livros?",
+          answer:
+            "A cola que não secou o suficiente pode deixar resíduos durante o corte, e a tinta mal seca também pode afetar o acabamento. Registre se ocorre acúmulo perto da lombada e revise as condições de secagem com o processo de encadernação. Compare a faca limpa e o corte afetado antes de decidir se a geometria ou superfície da faca requer mais atenção.",
         },
         {
           question:
-            "O que significa “cabeçote combinado” ou “facas sobressalentes para cabeçote combinado”?",
+            "Posso substituir uma faca lateral sem comprar o conjunto completo?",
           answer:
-            "A cabeça combinada (ou cabeça de corte combinada) é o conjunto de três lâminas presente em uma encadernadora ou cortadora de três lâminas que corta a cabeça, a cauda e a borda frontal de um livro em um único ciclo. “Lâminas sobressalentes para cabeça combinada” refere-se ao conjunto de lâminas dianteiras e laterais de reposição para esse conjunto — exatamente o que fornecemos aqui.",
+            "Sim. Uma faca frontal, esquerda ou direita pode ser encomendada individualmente. Identifique sua referência original e as dimensões das facas que permanecem em serviço, incluindo eventuais reafiações. A substituição precisa da orientação do chanfro e do padrão de montagem apropriados, juntamente com as dimensões de trabalho exigidas por esse conjunto.",
+        },
+        {
+          question:
+            "As facas de corte de três vias e as facas de alcear-sela são intercambiáveis?",
+          answer:
+            "Geralmente não. Três vias e três facas referem-se ao corte de três bordas de um bloco de livro encadernado. Uma linha de costura de lombada também pode aparar três bordas, mas suas facas superior, inferior, frontal e lateral dependem da máquina. Consulte [Saddle Stitcher Trimmer Knives](/products/saddle-stitcher-trimmer-knives) para configurações de linha de livreto.",
+        },
+        {
+          question:
+            "Como solicito um orçamento para um conjunto de aparador de três facas?",
+          answer:
+            "Enviar modelo e versão da roçadeira, especificação do papel ou bloco de livro e quantidades. Identifique os desenhos da faca frontal, esquerda e direita separadamente com suas direções de chanfro e detalhes de montagem. Para novos pedidos, inclua cada número de item ou número de peça original. Para uma troca parcial, identifique as facas que ficam no conjunto.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do aparador, desenhos das posições frontal e lateral e o formato e estoque do livro.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 960,
+      height: 960,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Amostras de lâmina de corte de três facas mostrando uma faca frontal longa e duas facas laterais mais curtas",
+      sizeRange: "392–585 mm",
+      heroSpecs: [
         {
-          question:
-            "As lâminas do seu cortador são compatíveis com as máquinas Kolbus, Wohlenberg e Perfecta?",
-          answer:
-            "Sim. Mantemos um banco de dados abrangente com desenhos técnicos originais (OEM) precisos para todas as principais linhas de encadernação europeias e japonesas, incluindo Müller Martini, Kolbus, Wohlenberg, Perfecta e Horizon. Os orifícios de montagem, as ranhuras e as inserções roscadas se encaixam perfeitamente.",
-        },
-        {
-          question:
-            "O modelo da minha cortadora Wohlenberg não consta na tabela de dimensões acima — vocês ainda podem fornecer lâminas?",
-          answer:
-            "Sim. A tabela acima mostra os tamanhos de lâmina mais comuns que oferecemos (Müller Martini e Kolbus). Para a Wohlenberg e outros modelos não listados, envie-nos o número do modelo da sua máquina, uma planta ou uma amostra de lâmina desgastada — confirmaremos o comprimento, a largura, a espessura e o padrão de montagem exatos antes de elaborarmos o orçamento.",
-        },
-        {
-          question:
-            "Qual é o prazo de entrega de um conjunto personalizado de lâminas de corte de carboneto de tungstênio?",
-          answer:
-            "Conjuntos padrão de HSS para os modelos mais comuns da Müller Martini e da Kolbus costumam estar em estoque. Conjuntos personalizados com incrustações de carboneto de tungstênio (TC) geralmente levam de 15 a 20 dias úteis para serem fabricados, devido aos complexos processos de brasagem a vácuo e retificação com diamante necessários para o carboneto.",
+          label: "Aplicação",
+          value: "Aparar a frente, a cabeça e o pé dos produtos encadernados",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
+        alt: "Amostras de facas de corte de três facas com diferentes perfis de corpo e padrões de furos de montagem",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "392–585 mm",
+        },
+        {
+          label: "Material",
+          value: "18% de tungstênio HSS ou arestas de corte metal duro",
+        },
+        {
+          label: "Construção da lâmina",
+          value:
+            "Incrustação bimetálica com aresta de corte soldada e corpo em aço",
+        },
+        {
+          label: "Definir configuração",
+          value: "Uma faca frontal e duas facas laterais",
+        },
+        {
+          label: "Acabamento da superfície",
+          value: "Espelho lapidado, Ra ≤0,1 µm",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Corte frontal, superior e inferior de livros encadernados e blocos de livros",
+        },
+        {
+          label: "Definir correspondência de espessura",
+          value: "±0,01 mm em todo o conjunto correspondente",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Máquina/versão",
+            "Posição da faca",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+            "Furos/ranhuras de montagem",
+          ],
+          rows: [
+            [
+              "SR003401",
+              "Müller Martini 3670/3672 — Novo estilo",
+              "Frente",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003402",
+              "Müller Martini 3670/3672 — Novo estilo",
+              "Lado esquerdo",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003403",
+              "Müller Martini 3670/3672 — Novo estilo",
+              "Lado direito",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003404",
+              "Mérito Müller Martini 3671 - Série 97",
+              "Frente",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003405",
+              "Mérito Müller Martini 3671 - Série 97",
+              "Lado esquerdo",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003406",
+              "Mérito Müller Martini 3671 - Série 97",
+              "Lado direito",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003407",
+              "Müller Martini 3675 Orbit – estilo antigo",
+              "Frente",
+              "580",
+              "115",
+              "12",
+              "12 × M10 + 1 slot",
+            ],
+            [
+              "SR003408",
+              "Müller Martini 3675 Orbit – estilo antigo",
+              "Lado esquerdo",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 slots",
+            ],
+            [
+              "SR003409",
+              "Müller Martini 3675 Orbit – estilo antigo",
+              "Lado direito",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 slots",
+            ],
+            [
+              "SR003410",
+              "Müller Martini 3675 Orbit – Novo estilo",
+              "Frente",
+              "585",
+              "115",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003411",
+              "Müller Martini 3675 Orbit – Novo estilo",
+              "Lado esquerdo",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003412",
+              "Müller Martini 3675 Orbit – Novo estilo",
+              "Lado direito",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003413",
+              "Kolbus HD150 – estilo antigo",
+              "Frente",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003414",
+              "Kolbus HD150 – estilo antigo",
+              "Lado esquerdo",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003415",
+              "Kolbus HD150 – estilo antigo",
+              "Lado direito",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003416",
+              "Kolbus HD153",
+              "Frente",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003417",
+              "Kolbus HD153",
+              "Lado esquerdo",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+            [
+              "SR003418",
+              "Kolbus HD153",
+              "Lado direito",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Inclua o modelo do aparador, desenhos das posições frontal e lateral e o formato e estoque do livro.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Inclua o modelo do aparador, desenhos das posições frontal e lateral e o formato e estoque do livro.",
+    dimensionLabels: {
+      intro:
+        "Cada conjunto possui uma faca frontal e uma faca para cada lado. Combine a versão da máquina, a direção do chanfro e o padrão completo de furos e ranhuras com seu desenho antes de fazer o pedido.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha facas superiores e inferiores de reposição para sua estação de corte de eletrodos de bateria, com furos, larguras e perfis de borda personalizados. Envie Sureay os desenhos da sua estação e detalhes do eletrodo para obter uma cotação do par de metal duro e opções de superfície.",
     id: "lithium-battery-slitting-knives",
-    name: "Facas para corte longitudinal de baterias",
-    fullName:
-      "Facas circulares de corte de carboneto de tungstênio para folhas de eletrodo de baterias de lítio",
+    seoDescription:
+      "Facas de corte de metal duro de grão fino para ânodos e cátodos de baterias de lítio revestidos. Solicite facas rotativas superiores e inferiores combinadas com DLC ou TiN opcional.",
+    name: "Facas de corte longitudinal para eletrodos de baterias",
+    fullName: "Facas de corte longitudinal para eletrodos de baterias de lítio",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Lâminas de precisão a bateria",
+    categoryDisplay: "Facas de corte longitudinal para eletrodos de baterias",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "Nova Energia",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-07.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
-    ],
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Facas de corte circular metal duro com acabamento espelhado para folhas de eletrodo de baterias de íons de lítio. A qualidade da borda com entalhe zero e Ra ≤ 0,05 μm evita micro-rebarbas nas folhas de alumínio do cátodo e de cobre do ânodo, mantendo a limpeza da montagem das células de acordo com a Classe 7 da ISO. Tolerância: ±0,001 mm de espessura, ≤0,01 mm de T.I.R.",
-    fullDescription:
-      "O corte de eletrodos de baterias de lítio está entre as aplicações de corte de precisão mais exigentes na fabricação industrial. Uma única micro-rebarba ou entalhe na borda da folha cortada pode penetrar na membrana separadora durante a montagem da célula, causando curto-circuito interno e falha catastrófica da bateria. As lâminas de corte para baterias de lítio da Sureay são projetadas para eliminar esse risco por meio de extrema precisão dimensional e metalurgia de superfície.\n\nCada lâmina é fabricada com metal duro de grão ultrafino (WC-Co, tamanho de grão ≤ 0,5 μm) e retificada com precisão para um acabamento espelhado com Ra ≤ 0,05 μm no bisel de corte. A tolerância de espessura é mantida em ±0,001 mm em toda a face do disco — três vezes mais rigorosa do que as especificações padrão para lâminas de corte — e o desvio total indicado (T.I.R.) é verificado em ≤0,01 mm em cada unidade antes do envio. Essa geometria de borda sem entalhe evita a microdelaminação na borda de corte da folha e elimina a geração de partículas metálicas que contaminam os ambientes de montagem de células em salas secas.\n\n## Aplicações de folhas de eletrodo\n\n**Folha de cátodo de alumínio (células LFP, NMC, NCA):** Faixa de espessura de 12–20 μm. A camada de óxido dura e frágil na folha de alumínio de grau para baterias desgasta rapidamente as lâminas padrão de HSS e D2 em um único rolo. Os tipos de carboneto de tungstênio mantêm uma vida útil geométrica da borda 8 a 12 vezes maior, reduzindo paradas não planejadas em linhas de enrolamento de alta velocidade operando a 80–120 m/min.\n\n**Folha de ânodo de cobre (células LFP, NMC, de estado sólido):** Faixa de espessura de 6–12 μm. A folha de cobre ultrafina exige que a folga entre a lâmina e a bigorna seja ajustada dentro de ±0,002 mm para evitar que a folha enrugue e se sobreponha no rolo de rebobinagem. Nossos pares de lâminas com diâmetros compatíveis são retificados como conjuntos combinados, com a folga pré-verificada de acordo com as especificações da sua máquina.\n\n**Filme separador de PVDF (processo a seco):** O filme separador com revestimento cerâmico para processos de eletrodo a seco (utilizado nas linhas de células de estado sólido da 4ª geração) apresenta um substrato de corte extremamente abrasivo. Facas de cermet ou PCD (diamante policristalino) sólido estão disponíveis para essa aplicação, mediante solicitação.\n\n## Compatibilidade com sala limpa\n\nTodas as lâminas são limpas por ultrassom, embaladas individualmente em sacos antiestáticos selados e certificadas como livres de partículas de acordo com as normas ISO Classe 7. As certificações de embalagem e de materiais estão em conformidade com os requisitos de documentação da IATF 16949 para cadeias de suprimentos de baterias de veículos elétricos.",
+      "Facas de corte de substituição de metal duro para ânodos e cátodos de baterias de lítio revestidos. Pares de facas superiores e inferiores personalizados, com opções de revestimento DLC ou TiN.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "Série de eletrodos DE 60–150 mm",
+      },
+      {
+        label: "Material",
+        value: "metal duro de grão fino (WC-Co); cermet a pedido",
+      },
+      {
+        label: "Aplicações",
+        value: "Redes de ânodo e cátodo de bateria de lítio revestidas",
+      },
+      {
+        label: "Classes de eletrodo",
+        value: "YG6X , YG6H , YG8 e YG10X",
+      },
+      {
+        label: "Acabamento de borda",
+        value: "Faces de corte polidas espelhadas, Ra ≤0,05 μm",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value: "DLC ou TiN",
+      },
+      {
+        label: "Dureza",
+        value: "91–93 HRA, dependendo do grau WC-Co",
+      },
+      {
+        label: "Tolerância de espessura",
+        value: "±0.001 mm",
+      },
+      {
+        label: "Desvio",
+        value: "≤0.01 mm T.I.R.",
+      },
+      {
+        label: "Montagem",
+        value:
+          "Par de facas rotativas superior e inferior combinados por estação de corte de eletrodo",
+      },
+      {
+        label: "Folha de Colecionador Atual",
+        value: "Alumínio 12–20 µm; cobre 6–12 µm",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Facas de corte de eletrodo de bateria | Pares de Carboneto",
+      sizeRange: "Série de eletrodos DE 60–150 mm",
+      heroAlt:
+        "Facas cortadoras de bateria circulares dispostas para mostrar os furos e as faces de corte polidas",
+      specificationImage: {
+        src: "/images/products/slitter-detail/lithium-battery-slitting-knives-detail.webp",
+        alt: "Close da borda cortante polida de uma faca circular",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "electrode",
+          tabLabel: "Pares de eletrodos",
+          title: "Pares de eletrodos",
+          columns: [
+            "Nº do item",
+            "Série",
+            "OD superior × ID × W",
+            "OD inferior × ID × W",
+          ],
+          rows: [
+            ["SR001351", "Série 60", "72 × 46 × 0.5 mm", "60 × 40 × 5.0 mm"],
+            ["SR001352", "Série 80/98", "98 × 66 × 0.7 mm", "80 × 55 × 5.0 mm"],
+            ["SR001353", "Série 100", "100 × 65 × 0.7 mm", "100 × 65 × 3.0 mm"],
+            ["SR001354", "Série 100", "100 × 65 × 1.0 mm", "100 × 55 × 5.0 mm"],
+            ["SR001355", "Série 130", "130 × 88 × 0.8 mm", "130 × 95 × 3.0 mm"],
+            ["SR001356", "Série 130", "130 × 97 × 1.0 mm", "130 × 70 × 5.0 mm"],
+          ],
+        },
+        {
+          id: "individual-electrode-knives",
+          tabLabel: "Facas de eletrodo individuais",
+          title: "Facas de eletrodo individuais",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Configuração",
+          ],
+          rows: [
+            ["SR001820", "76 × 38 × 0.5 mm", "Faca individual"],
+            ["SR001821", "76 × 38 × 1.0 mm", "Faca individual"],
+            ["SR001822", "100 × 50 × 0.5 mm", "Faca individual"],
+            ["SR001823", "100 × 50 × 1.0 mm", "Faca individual"],
+            ["SR001824", "100 × 50 × 1.5 mm", "Faca individual"],
+            ["SR001825", "120 × 60 × 0.5 mm", "Faca individual"],
+            ["SR001826", "120 × 60 × 1.0 mm", "Faca individual"],
+            ["SR001827", "150 × 76 × 1.0 mm", "Faca individual"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Série de eletrodos DE 60–150 mm",
+        },
+        {
+          label: "Material",
+          value: "metal duro de grão fino (WC-Co); cermet a pedido",
+        },
+        {
+          label: "Aplicações",
+          value: "Redes de ânodo e cátodo de bateria de lítio revestidas",
+        },
+        {
+          label: "Classes de eletrodo",
+          value: "YG6X , YG6H , YG8 e YG10X",
+        },
+        {
+          label: "Acabamento de borda",
+          value: "Faces de corte polidas espelhadas, Ra ≤0,05 μm",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value: "DLC ou TiN",
+        },
+        {
+          label: "Dureza",
+          value: "91–93 HRA, dependendo do grau WC-Co",
+        },
+        {
+          label: "Tolerância de espessura",
+          value: "±0.001 mm",
+        },
+        {
+          label: "Desvio",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Montagem",
+          value:
+            "Par de facas rotativas superior e inferior combinados por estação de corte de eletrodo",
+        },
+        {
+          label: "Folha de Colecionador Atual",
+          value: "Alumínio 12–20 µm; cobre 6–12 µm",
+        },
+      ],
+    },
     compatibleMachines: [
-      "Kaido",
-      "Koem",
+      "Nishimura",
+      "DIENES",
+      "Kampf",
+      "CIS",
+      "PNT",
       "Hirano Tecseed",
       "CKD",
-      "Manz",
-      "Targray",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "Ultra-fine WC-Co Tungsten Carbide, Cermet (on request)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror polish Ra ≤ 0.05μm — zero-notch edge",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.001mm | T.I.R. Runout: ≤0.01mm",
-      },
-      {
-        label: "Hardness",
-        value: "HRA 91–93 (WC-Co grade)",
-      },
-      {
-        label: "Coatings",
-        value: "DLC, TiN (optional, anti-adhesion for PVDF-coated foil)",
-      },
-      {
-        label: "Application",
-        value:
-          "Al cathode foil (12–20μm), Cu anode foil (6–12μm), PVDF separator film",
-      },
+      "Lead Intelligent",
     ],
     components: [
       {
-        id: "zero-notch-edge",
-        tag: "PRECISÃO",
-        title: "Acabamento espelhado sem entalhes",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Configurações de metal duro para eletrodos revestidos",
         description:
-          "Cada bisel de corte é lapidado até atingir um Ra ≤ 0,05 μm — o mesmo padrão de qualidade de superfície utilizado no polimento de lentes ópticas. Isso elimina os microentalhes que geram partículas metálicas em ambientes de montagem de células em salas secas e evita a perfuração da membrana separadora.",
+          "As facas de metal duro WC-Co estão disponíveis para corte de ânodo e cátodo revestido, com os requisitos de material e configuração de faca definidos para sua estação de eletrodo.",
       },
       {
-        id: "ultra-fine-carbide",
-        tag: "METALURGIA",
-        title: "Tipo de carboneto WC-Co ultrafino",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Faces de corte retificadas e DLC ou TiN opcional",
         description:
-          "O carboneto industrial padrão utiliza granulometrias de 1 a 3 μm. Nossas lâminas para baterias são fabricadas com WC-Co submicrônico de ≤0,5 μm, proporcionando uma dureza de aresta significativamente maior (HRA 91–93), resistência superior à abrasão em folhas finas de Al e Cu e uma vida útil mais longa, com possibilidade de polimento, entre os ciclos de reafiação.",
+          "Faces de corte polidas espelhadas e configurações opcionais de superfície DLC ou TiN permitem que os pedidos de facas de eletrodo especifiquem a superfície de trabalho separadamente do material de metal duro e da geometria da lâmina.",
       },
       {
-        id: "matched-knife-pairs",
-        tag: "CAPACIDADE DO PROCESSO",
-        title: "Par de autorizações pré-verificadas",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Facas superiores e inferiores para estações de eletrodos",
         description:
-          "Os conjuntos de lâminas superior e inferior são retificados como pares com diâmetros compatíveis, com a folga pré-verificada de acordo com as especificações da sua máquina de bobinagem (normalmente 0,002–0,005 mm para folha de cobre). Cada par é fornecido com uma ficha técnica que registra o diâmetro externo (OD), o diâmetro interno (ID), a espessura e a folga medida, permitindo uma reinstalação consistente na linha de produção.",
+          "Solicite pares de facas superiores e inferiores personalizados ou substituições individuais, com furos, larguras e perfis de corte especificados em torno de sua estação de corte de eletrodo existente e faca correspondente retida.",
       },
     ],
-    dimensionLabels: {
-      col1: "Diâmetro externo (DE)",
-      col2: "Diâmetro interno (DI)",
-      col3: "Espessura",
-      caption:
-        "* Dimensões padrão para o corte de folhas de eletrodo de bateria. Diâmetros externo e interno e espessuras personalizados disponíveis para todos os modelos de máquinas de enrolamento. Pares correspondentes de partes superior e inferior fornecidos com folha de dados de folga pré-verificada.",
-    },
-    standardDimensions: [
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "150 mm",
-        id: "76 mm",
-        thickness: "1.0 mm",
-      },
-    ],
-    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives"],
-    offers: {
-      lowPrice: 45,
-      highPrice: 480,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Qual é a norma de acabamento superficial exigida para evitar micro-rebarbas na folha de eletrodo da bateria?",
+            "Como identifico um par de facas de eletrodo superior e inferior de reposição?",
           answer:
-            "Para o corte de eletrodos de baterias de íons de lítio, o chanfro de corte deve ser polido até atingir um Ra ≤ 0,05 μm (acabamento espelhado) e verificado quanto à ausência de entalhes sob ampliação de 400×. Qualquer irregularidade superficial acima desse limite gera micropartículas metálicas que contaminam ambientes de sala seca da Classe 7 da ISO e podem penetrar no separador, causando curto-circuito interno na célula finalizada.",
+            "Identifique ambas as posições das facas e registre seus furos, larguras, perfis de corte e relação instalada. O modelo da estação e os desenhos atuais estabelecem os requisitos de montagem. Inclua a construção da rede do eletrodo para que o par de substituição possa ser especificado para o material revestido, bem como para o arranjo mecânico, com cada posição claramente identificada.",
         },
         {
           question:
-            "Como faço para definir a distância entre as lâminas para uma folha de ânodo de cobre ultrafina?",
+            "Como o desgaste atual deve orientar a seleção de metal duro para eletrodos revestidos?",
           answer:
-            "Para folhas de ânodo de cobre de 6 a 12 μm, a folga entre as lâminas superior e inferior deve ser ajustada entre 0,002 e 0,005 mm (2 a 5% da espessura da folha). Uma folga abaixo dessa faixa causa a formação de rebarbas; acima dela, resulta em enrugamento da folha e telescopagem durante o rebobinamento. Nossos pares combinados são pré-verificados de acordo com a folga especificada por você e fornecidos com uma ficha técnica dimensional para garantir uma instalação consistente na linha de produção.",
+            "Registre o padrão de desgaste da faca usada juntamente com a construção do eletrodo e a qualidade necessária da borda. Eles fornecem a base para discutir os requisitos de material de metal duro. Mantenha o grau do substrato e o revestimento de superfície opcional como especificações separadas e compare-os com a geometria da faca existente e os critérios de aceitação da produção ao avaliar uma substituição.",
         },
         {
           question:
-            "Que tipo de carboneto devo especificar para a folha de cátodo de alumínio em comparação com a folha de ânodo de cobre?",
+            "O que pode causar rebarbas, poeira ou danos ao revestimento na borda do eletrodo?",
           answer:
-            "Ambos os tipos de folha se beneficiam do WC-Co submicrométrico (grão ≤ 0,5 μm, HRA 91–93). Para a folha de cátodo de Al, a camada superficial de óxido duro é o principal fator de abrasão — um tipo padrão de carboneto K10/K20 proporciona uma vida útil aceitável da borda. Para a folha de ânodo de Cu, a prioridade passa a ser alcançar a menor rugosidade superficial possível (Ra ≤ 0,05 μm) para evitar a transferência de adesivo e marcas na borda de corte.",
+            "A condição da lâmina, a geometria do corte, o alinhamento dos pares e a estrutura do eletrodo podem contribuir. Examine a borda do coletor e o revestimento separadamente, observando se o defeito aparece em um lado ou em diversas posições da fenda. Compare essas observações com as configurações validadas da máquina e os requisitos de qualidade da aresta para definir o que o par de facas de reposição precisa atender.",
         },
         {
           question:
-            "Qual é o ciclo típico de reafiação das facas de corte de baterias?",
+            "Por que uma faca de eletrodo de metal duro desenvolve microchips?",
           answer:
-            "Em uma linha padrão de corte de folha metálica com 600 mm de largura, operando a 80 m/min, as lâminas de WC-Co submicrônicas normalmente mantêm uma qualidade de aresta aceitável por 4 a 6 meses de operação contínua antes que seja necessário reafiar. A degradação do fio se manifesta inicialmente como um aumento da rugosidade da borda de corte (Ra superior a 0,1 μm), visível na inspeção por microscópio eletrônico de varredura (SEM), e não como lascas catastróficas. Oferecemos um serviço de reafiação com recertificação dimensional completa.",
+            "Arestas duras de metal duro são sensíveis a impactos de manuseio, contato não intencional da faca e posicionamento instável. Inspecione ambas as arestas, a condição de montagem e o desvio e, em seguida, compare o alinhamento do par e a geometria de corte com os requisitos da estação. Registre se o dano aparece pela primeira vez durante a instalação, inicialização ou operação para distinguir danos de contato de um problema operacional recorrente antes de alterar a classificação.",
+        },
+        {
+          question:
+            "Como o DLC ou o TiN devem ser especificados para facas de eletrodos de reposição?",
+          answer:
+            "Especifique o revestimento separadamente da classe de metal duro, furo, largura da faca e perfil de corte. Identifique se o pedido deve reproduzir uma faca revestida existente ou avaliar uma alteração de uma configuração não revestida. Mantenha os requisitos de construção do eletrodo e qualidade da borda conforme a especificação para que o tratamento de superfície solicitado seja definido para aquela estação.",
+        },
+        {
+          question:
+            "Sureay pode fornecer um par de facas personalizado ou substituir apenas a faca superior?",
+          answer:
+            "Sim. Pares personalizados podem ser especificados a partir dos desenhos da estação, e uma faca superior pode ser fornecida separadamente quando a faca inferior retida for identificada e utilizável. Inclua suas dimensões reais, perfil da aresta e histórico de reafiação. Identifique claramente qual faca está sendo substituída e se o pedido deve reproduzir ou alterar a configuração existente.",
+        },
+        {
+          question:
+            "As facas cortadoras de eletrodo são iguais às facas de cobre puro ou de folha de alumínio?",
+          answer:
+            "As facas de eletrodo cortam uma teia revestida de ânodo ou cátodo contendo folha coletora e camadas de revestimento. Facas de folha nua cortam o substrato de cobre ou alumínio não revestido. Seus requisitos de borda e partícula podem diferir apesar de um formato circular semelhante. Para substratos não revestidos, consulte [Facas cortadoras para folha de cobre e alumínio](/products/metal-foil-strip-slitter-knives) .",
         },
       ],
-      company: [
-        {
-          question:
-            "A Sureay pode fornecer facas para corte de baterias certificadas de acordo com os requisitos da norma IATF 16949?",
-          answer:
-            "Sim. Fornecemos documentação completa de rastreabilidade de materiais para a qualificação da cadeia de suprimentos de baterias para veículos elétricos: certificados da usina de matéria-prima da WC-Co, relatórios de testes de dureza (HRA conforme a norma ASTM E18), registros de medição de rugosidade superficial (Ra conforme a norma ISO 4287) e relatórios dimensionais de CMM. Toda a documentação está referenciada ao número de lote da sua ordem de compra.",
-        },
-        {
-          question:
-            "Qual é o prazo de entrega para pedidos de facas de corte para baterias, tanto padrão quanto personalizadas?",
-          answer:
-            "Dimensões padrão em estoque: 3 a 5 dias úteis. Dimensões personalizadas de diâmetro externo (OD) e diâmetro interno (ID) não disponíveis em estoque: 10 a 15 dias úteis, incluindo toda a documentação de controle de qualidade. Para pedidos iniciais de qualificação OEM que exijam verificação de amostras antes da produção em massa, considere um prazo de 7 a 10 dias úteis para as amostras de primeiro artigo.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha lâminas cortadoras de metal duro de reposição para a extremidade seca da sua corrugadora, com furos personalizados, furos de fixação e padrões de montagem com fenda. Envie Sureay o desenho da peça ou amostra para um orçamento sobre sua configuração de lâmina sólida ou dividida.",
     id: "corrugated-slitter-scorer-blades",
-    name: "Lâminas para cortadoras de papel ondulado",
+    seoDescription:
+      "Lâminas cortadoras de metal duro para linhas dry-end de corrugadoras, com configurações de referência BHS e Fosber . Furos personalizados e padrões de fixação feitos conforme desenho.",
+    name: "Lâminas de corte longitudinal para papelão ondulado",
     fullName:
-      "Lâminas finas de corte de carboneto de tungstênio para linhas de secagem de máquinas de papelão ondulado",
+      "Facas de corte longitudinal para a seção seca de linhas de papelão ondulado",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Lâminas onduladas",
+    categoryDisplay: "Lâminas de corte longitudinal para papelão ondulado",
     image:
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-    badge: "Zero Crush",
-    badgeColor: "orange",
-    gallery: [
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
-    ],
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lâminas finas de corte para cortadoras, fabricadas em carboneto de tungstênio maciço, projetadas para o corte de papelão ondulado sem esmagamento. Substituições exatas de peças originais (OEM) para as marcas BHS, Fosber e Marquip. Como fabricante completo de ferramentas para fábricas de caixas, também fornecemos facas para ranhuradoras, facas de corte em Z, facas para marcadoras/vincoadoras e facas para costura sobreposta.",
-    fullDescription:
-      "Em uma linha de ondulação de alta velocidade operando a mais de 250 m/min, a cortadora-marcadora da extremidade seca determina a qualidade final do papelão ondulado. O uso de lâminas de baixa qualidade resulta em canais amassados, bordas irregulares e excesso de pó de papel. As lâminas finas para cortadoras da Sureay Corrugated são fabricadas em carboneto de tungstênio 100% sólido, com grãos submicrométricos, por meio de sinterização HIP (Prensagem Isostática a Quente), proporcionando resistência à ruptura transversal e estabilidade de borda incomparáveis.\n\n## A geometria de lâmina tipo “lâmina de barbear” “Zero-Crush”\n\nO termo “lâmina fina” refere-se à aresta de corte, não ao corpo inteiro da lâmina. Para evitar oscilações em alta velocidade, os corpos de nossas lâminas são usinados com uma espessura rígida de 1,0 mm a 1,2 mm. A aresta de corte é então lapidada com precisão por rebolos de diamante até atingir um perfil microscópico de lâmina de barbear (normalmente com 0,3 mm de largura no ápice). Essa geometria específica corta placas pesadas de parede dupla exclusivamente por meio de ação de cisalhamento, gerando força compressiva zero e eliminando completamente o esmagamento das ranhuras.\n\n## Afiamento contínuo em linha\n\nAs modernas máquinas de ondulação utilizam rebolos CBN automáticos em linha para afiar as lâminas cortadoras durante a operação. A Sureay formula especificamente nossa matriz de carboneto de tungstênio para equilibrar extrema resistência ao desgaste com perfeita capacidade de afiação, garantindo que a lâmina remova material de forma limpa, sem formar camada vítrea nem sobrecarregar as pedras de afiação da máquina.\n\n## Portfólio completo de ferramentas para papelão ondulado\n\nEmbora nossas lâminas finas de corte de papelão ondulado em carboneto de tungstênio sejam o coração da seção seca da onduladora, a Sureay é uma parceira abrangente em ferramentas para toda a fábrica de caixas. Além das lâminas de corte, fabricamos e fornecemos:\n- **Facas para ranhuras (slotting) e facas para ranhuras em viga:** Para ranhuras limpas e sem rasgos em dobradoras-coladoras flexográficas (FFG).\n- **Facas de corte em Z:** Lâminas serrilhadas de corte transversal de alta velocidade para a estação de corte da seção seca.\n- **Lâminas para sobreposição de costura:** Lâminas de precisão para cortar a aba crítica de cola/costura em caixas dobráveis.\n- **Lâminas para ranhuradoras e bigas:** Anéis de ranhura macho/fêmea que criam a dobradiça perfeita.\n- **Lâminas circulares com topo e fundo divididos:** Design em duas peças para troca rápida dentro da máquina, economizando horas de tempo de inatividade para manutenção do eixo.",
+      "Lâminas de corte de substituição de metal duro para linhas de ponta seca de corrugador. BHS , Fosber e outras referências de máquinas, com furos personalizados e padrões de fixação ao desenho.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "BHS",
-      "FOSBER",
-      "Marquip",
-      "Agnati",
-      "Martin / Bobst",
-      "TCY",
-      "Isowa",
-    ],
     specs: [
       {
-        label: "Main Product",
-        value: "Solid Tungsten Carbide Thin Slitter Blades (HIP Sintered)",
+        label: "Tamanhos",
+        value: "Lâmina fina com DE 15–340 mm",
       },
       {
         label: "Material",
-        value: "Tungsten Carbide WC-Co K05 / K10 / K20 (grade by board type)",
-      },
-      {
-        label: "Blade Hardness",
-        value: "HRA 90–92 (Optimized for wear and in-line grindability)",
-      },
-      {
-        label: "Body Thickness",
-        value: "1.0 mm – 1.2 mm (Ensures high-speed rigidity)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Precision lapped razor profile, ~0.3 mm apex (Zero-crush)",
-      },
-      {
-        label: "Line Speed Rating",
-        value: "Up to 350+ m/min on modern high-speed corrugators",
-      },
-      {
-        label: "Application",
         value:
-          "B/C/E/F flute corrugated board — slit and score on BHS, Marquip, FOSBER corrugators",
+          "Metal duro WC-Co nas classes K05 , K10 , K20 , YG8 , YG10 , YG12X ou YG15",
       },
       {
-        label: "Other Tooling Cap.",
-        value: "Slotter Knives, Z Cut-off Knives, Scorer Knives, Split Knives",
+        label: "Aplicações",
+        value: "Corte longitudinal na extremidade seca da corrugadora",
       },
+      {
+        label: "Opções de lâmina",
+        value: "Disco sólido ou construção dividida",
+      },
+      {
+        label: "Dureza",
+        value: "90–92 HRA, dependendo do tipo de metal duro",
+      },
+      {
+        label: "Montagem",
+        value:
+          "Furo liso, padrão de furo de fixação ou padrão de montagem com fenda",
+      },
+      {
+        label: "Método de produção",
+        value: "metal duro sinterizado HIP",
+      },
+      {
+        label: "Ápice da borda",
+        value: "Aproximadamente 0,3mm",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Lâminas para cortadoras e marcadoras de papelão ondulado | BHS & Fosber",
+      sizeRange: "Lâmina fina com DE 15–340 mm",
+      heroAlt:
+        "Lâminas finas de papelão ondulado com diferentes padrões de furo e montagem",
+      specificationImage: {
+        src: "/images/products/slitter-detail/corrugated-slitter-scorer-blades-detail.webp",
+        alt: "Lâmina de corte ondulada circular mostrando seu grande diâmetro e furos de fixação",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "thin",
+          tabLabel: "Lâminas Finas de Carboneto",
+          title: "Lâminas Finas de Carboneto",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Referência do equipamento",
+            "Padrão de montagem",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Padrão 6 × Ø9 mm"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "Padrão de 4 slots"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Desenho de partida"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Desenho de partida"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Desenho de partida"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Desenho de partida"],
+            [
+              "SR001410",
+              "280 × 160 × 1.1 mm",
+              "Mitsubishi",
+              "Desenho de partida",
+            ],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Desenho de partida"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Desenho de partida"],
+            [
+              "SR001413",
+              "340 × 230.2 × 1.0 mm",
+              "Göpfert",
+              "Desenho de partida",
+            ],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Tamanhos adicionais de faca corrugadora",
+          title: "Tamanhos adicionais de faca corrugadora",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de lâmina / Referência da plataforma",
+          ],
+          rows: [
+            ["SR001828", "240 × 115 × 1.0 / 1.2 mm", "BHS"],
+            ["SR001829", "260 × 140 × 1.2 mm", "BHS"],
+            ["SR001830", "230 × 135 × 1.15 / 1.2 mm", "FOSBER"],
+            ["SR001831", "260 × 112 × 1.2 mm", "FOSBER"],
+            ["SR001832", "230 × 110 × 1.2 / 1.5 mm", "Marquip"],
+            ["SR001833", "200 × 122 × 1.2 mm", "TCY / Justu"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Lâmina fina com DE 15–340 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Metal duro WC-Co nas classes K05 , K10 , K20 , YG8 , YG10 , YG12X ou YG15",
+        },
+        {
+          label: "Aplicações",
+          value: "Corte longitudinal na extremidade seca da corrugadora",
+        },
+        {
+          label: "Opções de lâmina",
+          value: "Disco sólido ou construção dividida",
+        },
+        {
+          label: "Dureza",
+          value: "90–92 HRA, dependendo do tipo de metal duro",
+        },
+        {
+          label: "Montagem",
+          value:
+            "Furo liso, padrão de furo de fixação ou padrão de montagem com fenda",
+        },
+        {
+          label: "Método de produção",
+          value: "metal duro sinterizado HIP",
+        },
+        {
+          label: "Ápice da borda",
+          value: "Aproximadamente 0,3mm",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BHS",
+      "Fosber",
+      "MarquipWardUnited",
+      "Agnati",
+      "Mitsubishi",
+      "Isowa",
+      "TCY",
+      "Göpfert",
     ],
     components: [
       {
-        id: "hip-sintering",
-        tag: "METALURGIA",
-        title: "Carboneto sinterizado HIP",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Opções de material de metal duro para corte de corrugador",
         description:
-          "O processo de prensagem isostática a quente (HIP) garante que nossas lâminas finas para cortadoras não apresentem poros microscópicos. Essa estrutura ultradensa mantém um fio de lâmina impecável (ponta de ~0,3 mm) sem microlascas, mesmo sob o impacto de papelão ondulado em alta velocidade.",
+          "As opções de metal duro WC-Co oferecem uma escolha de materiais de reposição para corte de corrugadores. Especifique sua classe atual, configuração da lâmina e condições da placa para definir a faca necessária.",
       },
       {
-        id: "zero-crush",
-        tag: "GEOMETRIA",
-        title: "Lâmina de barbear Zero-Crush",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Construções de lâmina sólida e dividida",
         description:
-          "O corpo espesso da lâmina (1,0–1,2 mm) proporciona estabilidade absoluta contra a oscilação lateral em alta velocidade, enquanto o fio é profundamente cônico e polido com diamante até atingir um acabamento afiado como uma lâmina de barbear. Isso corta as ranhuras de forma limpa, em vez de pressioná-las para baixo.",
+          "Construções de disco sólido e divididas estão disponíveis para estações de facas corrugadoras existentes, permitindo que você solicite o formato da lâmina exigido pelo conjunto instalado.",
       },
       {
-        id: "full-portfolio",
-        tag: "CAPACIDADE DE FABRICAÇÃO",
-        title: "Conjunto completo de ferramentas para fábrica de caixas",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Furos personalizados e padrões de montagem",
         description:
-          "Desde lâminas finas de carboneto de tungstênio na onduladora até facas de corte em Z, anéis de ranhura e facas de ranhura superiores/inferiores na sua dobradeira-coladora flexográfica — projetamos toda a gama de soluções de corte para a sua fábrica de caixas.",
+          "As lâminas de reposição podem ser feitas com furos definidos em desenho, furos de fixação e ranhuras, proporcionando uma rota de compra direta para o padrão de montagem utilizado em sua linha.",
       },
     ],
-    dimensionLabels: {
-      col0: "Fabricante de máquinas de papelão ondulado (OEM)",
-      col1: "Diâmetro externo (DE)",
-      col2: "Diâmetro interno (DI)",
-      col3: "Espessura do corpo",
-      caption:
-        "* As dimensões acima correspondem às especificações padrão do fabricante original (OEM) para lâminas finas de corte. Os orifícios dos pinos de acionamento são usinados de acordo com as tolerâncias da marca. As lâminas para ranhuradoras, marcadoras e cortadoras em Z são fabricadas de acordo com os projetos exatos do cliente ou do fabricante original (OEM).",
-    },
-    standardDimensions: [
-      {
-        spec: "BHS",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "BHS",
-        od: "260 mm",
-        id: "140 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "230 mm",
-        id: "135 mm",
-        thickness: "1.15 / 1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "260 mm",
-        id: "112 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Marquip",
-        od: "230 mm",
-        id: "110 mm",
-        thickness: "1.2 / 1.5 mm",
-      },
-      {
-        spec: "Agnati",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        spec: "TCY / Justu",
-        od: "200 mm",
-        id: "122 mm",
-        thickness: "1.2 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "paper-cutting-blades",
-      "rotary-slitter-knives",
-      "box-slotting-knives",
-    ],
-    offers: {
-      lowPrice: 35,
-      highPrice: 150,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Por que minhas lâminas finas do cortador estão amassando as ondulações nas placas com ondulações E e F?",
+            "Como identifico a lâmina cortadora corrugadora de reposição correta?",
           answer:
-            "O esmagamento das ranhuras é causado por uma lâmina que perdeu sua geometria de lâmina de barbear. Isso ocorre se o carboneto da lâmina estiver se desgastando muito rapidamente ou se as pedras de afiamento automáticas em linha estiverem vitrificadas. A adoção de nossas lâminas de carboneto de tungstênio sinterizadas por HIP garante que o fio permaneça microscopicamente afiado, cortando as ranhuras de forma limpa, sem força compressiva.",
+            "Comece com o modelo da máquina e a referência da faca, depois especifique o diâmetro externo, furo, espessura e padrão de fixação. Inclua se a lâmina instalada é um disco sólido ou uma construção dividida. Um desenho ou fotografias nítidas do arranjo de montagem ajudam a identificar a configuração necessária, principalmente quando a mesma marca de máquina utiliza conjuntos de facas diferentes.",
+        },
+        {
+          question: "As lâminas de corte BHS e Fosber são intercambiáveis?",
+          answer:
+            "A intercambialidade depende da lâmina completa e da geometria de montagem. Compare o furo, furos ou ranhuras de fixação, espessura e perfil de corte com a peça instalada. Diâmetros externos semelhantes podem ocultar interfaces diferentes; portanto, use o desenho da faca ou a referência da peça para estabelecer a configuração de substituição para a estação BHS ou Fosber específica.",
         },
         {
           question:
-            "Como suas lâminas interagem com os sistemas automáticos de afiação para cortadoras-marcadoras?",
+            "Por que metal duro é usado para lâminas de corte e marcação de papelão ondulado?",
           answer:
-            "Nossas lâminas são projetadas especificamente para afiação contínua em linha (comum nas linhas da Fosber e da BHS). A estrutura dos grãos de carboneto e a proporção do aglutinante de cobalto são equilibradas de forma que a lâmina libere material de maneira limpa ao entrar em contato com as pedras de CBN, mantendo a lâmina afiada sem obstruir (esmaltar) os discos de afiação.",
+            "metal duro fornece uma aresta de corte resistente ao desgaste para corte de papelão ondulado. A seleção da classe deve refletir a construção da lâmina e as condições reais de trabalho. Compare o desgaste gradual da borda com o lascamento e inclua o arranjo de afiação da máquina ao especificar uma substituição. Esses detalhes ajudam a definir o material necessário de forma mais útil do que apenas um valor de dureza.",
         },
         {
           question:
-            "Qual é a vantagem de uma lâmina circular dividida na parte superior e na parte inferior?",
+            "Por que o papelão ondulado apresenta arestas após o corte?",
           answer:
-            "Nas máquinas de corte e ranhura de geração anterior, a troca de uma lâmina circular maciça desgastada exige que os operadores retirem todo o eixo pesado da máquina. As lâminas facas circulares são fabricadas em duas metades que se encaixam. Basta aparafusar as metades diretamente ao redor do eixo em questão de minutos, economizando horas de tempo de inatividade para manutenção.",
+            "Verifique o fio de corte da lâmina, o estado de afiação e o suporte da tábua no corte. Uma borda desgastada ou uma configuração de desbaste inadequada podem prejudicar a ação de corte da lâmina fina. Compare as amostras cortadas antes e depois da afiação e observe as alterações na qualidade do papel. Siga as configurações da corrugadora para retificação e suporte, em vez de tratar cada aresta como um problema de classe de metal duro.",
+        },
+        {
+          question:
+            "O que deve ser verificado ao combinar uma lâmina com a unidade de afiação automática?",
+          answer:
+            "Verifique o perfil da lâmina e o diâmetro restante em relação ao arranjo de afiação, juntamente com a condição e o alinhamento dos componentes de retificação. Use a documentação da máquina para obter configurações de afiação e limites de serviço. Inclua os detalhes da unidade de afiação ao solicitar uma substituição para que a faca seja especificada como parte do conjunto de corte e retificação instalado.",
+        },
+        {
+          question:
+            "Sureay pode reproduzir uma lâmina corrugadora com um padrão de montagem específico?",
+          answer:
+            "Sim. Sureay pode fazer lâminas de reposição de acordo com desenhos que definem o furo, disposição dos furos de fixação, ranhuras e perfil de corte. A referência ou amostra da peça original ajuda a identificar a interface instalada. Especifique se a lâmina é sólida ou dividida e inclua os detalhes de localização e fixação necessários para reproduzir o padrão de montagem.",
+        },
+        {
+          question:
+            "As lâminas de corte e de corte são iguais às rodas de corte ou às facas de corte?",
+          answer:
+            "Essas peças realizam operações diferentes. As lâminas cortadoras do corrugador cortam a placa longitudinalmente, as rodas de pontuação formam linhas de dobra e as facas escateladoras cortam as ranhuras das abas durante a conversão da caixa. As facas ranhuradoras macho e fêmea usam perfis e arranjos de montagem diferentes. Identifique a operação de corte ao solicitar a substituição para que a consulta chegue à configuração correta do produto.",
         },
       ],
-      company: [
-        {
-          question:
-            "A Sureay pode fornecer o conjunto completo de lâminas para uma nova instalação de onduladora e FFG?",
-          answer:
-            "Com certeza. Somos um parceiro completo na área de ferramentas para fábricas de caixas. Além das lâminas finas de carboneto de tungstênio, fabricamos toda a linha de ferramentas para conversão: lâminas para ranhuradoras, lâminas para ranhuras em viga, lâminas para sobreposição de costura, lâminas para ranhuradoras/vincoadoras e lâminas para corte em Z.",
-        },
-        {
-          question:
-            "Vocês mantêm as dimensões das dobradoras-coladoras flexográficas Bobst / Martin?",
-          answer:
-            "Sim, dispomos de um amplo banco de dados de desenhos técnicos originais (OEM) que abrangem as seções de corte longitudinal, ranhura e marcagem das principais máquinas de conversão, incluindo Bobst, Martin, Isowa, Ward e TCY. Suas lâminas de reposição se encaixarão perfeitamente.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slotter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "A Sureay fornece facas de reposição para o conjunto de corte primário do seu triturador de pneus, com ganchos e furos centrais sob medida. Orçamos facas avulsas ou jogos completos para trituração de pneus inteiros e produção de combustível derivado de pneus (TDF). Envie os dados da máquina e o desenho para definir a configuração. As marcas citadas indicam a compatibilidade das peças de reposição Sureay.",
     id: "tire-shredder-blades",
-    name: "Lâminas para triturador de pneus",
+    name: "Facas para trituradores de pneus",
     fullName:
-      "Lâminas de corte rotativas de alta resistência com 3 garras para reciclagem de pneus",
+      "Facas de cisalhamento rotativo para trituração primária de pneus",
+    seoTitle:
+      "Facas de cisalhamento rotativo para trituração primária de pneus",
+    seoDescription:
+      "Cortadores A8 ou 42CrMo modificados na origem para trituração primária de pneus. Combine a contagem de ganchos, a espessura do cortador e o diâmetro do eixo com sua tesoura rotativa.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lâminas para triturador de pneus",
+    categoryDisplay: "Facas para trituradores de pneus",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 880,
+      height: 880,
+      smallerWidths: [320, 640],
+    },
     badge: "Padrão OEM",
     badgeColor: "red",
     gallery: [
@@ -3667,69 +4820,38 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
     description:
-      'Rotativo premium de 3 garras facas de cisalhamento, projetado para a trituração primária de pneus e a produção de TDF (combustível derivado de pneus). Fabricado com aços para ferramentas Cru-Wear (PGK) e A8 modificado, de qualidade OEM, para suportar o impacto extremo dos fios do talão. Usinado com precisão para tolerâncias exatas de ±0,05 mm (0,002"), garantindo que os pneus sejam cortados de forma limpa, em vez de rasgados.',
-    fullDescription:
-      "A trituração primária de pneus é, sem dúvida, a aplicação mais severa no setor de redução de tamanho. As lâminas rotativas precisam, simultaneamente, cortar a borracha elástica e impactar repetidamente os fios de aço de alta resistência da talha. As ligas padrão para trituradores apresentam falhas prematuras nesse ambiente, seja por meio do rápido arredondamento das arestas ou de fraturas frágeis catastróficas.\n\n## Metalurgia Premium para Pneus\n\nFabricamos nosso facas para trituradores para pneus utilizando exatamente os tipos de materiais premium comprovados em equipamentos OEM de primeira linha (como os trituradores Barclay e CM):\n\n**Cru-Wear (PGK):** O material padrão de fábrica definitivo. Oferece um teor excepcionalmente alto de vanádio e metal duro, proporcionando resistência superior ao desgaste ao mesmo tempo em que mantém a extrema tenacidade necessária para cortar cintos de aço espessos sem microlascas.\n\n**A8 Modificado:** Oferece um excelente equilíbrio entre desempenho e custo-benefício, proporcionando enorme resistência ao impacto para operações focadas na minimização dos custos iniciais com ferramentas.\n\n## A Regra da Tolerância de Dois Milésimos (0,05 mm)\n\nA diferença entre um triturador de pneus eficiente e uma máquina que fica constantemente emperrada está na folga de corte. Todas as nossas lâminas para pneus, independentemente do material, são retificadas com tolerâncias precisas de espessura — dois milésimos de polegada (0,05 mm), para ser exato.\n\nEssa precisão garante que os pneus elásticos e os fios de aço sejam **cortados** de forma limpa, em vez de serem **rasgados** e esticados. Uma ação de cisalhamento adequada reduz drasticamente as forças de tração nos eixos do rotor, diminui o consumo de energia elétrica (consumo de amperagem) e evita que os fios de aço expostos se enrolem no bloco do rotor.\n\n## Geometria de 3 garras e dimensionamento do TDF\n\nA geometria padrão de 3 garras (ganchos) oferece o ângulo de mordida ideal para agarrar pneus inteiros de veículos de passageiros e caminhonetes, puxando-os com força para dentro da câmara de corte. A espessura da lâmina (normalmente 2 polegadas / 50 mm) determina diretamente o tamanho das lascas de Combustível Derivado de Pneus (TDF), garantindo um produto final consistente e de alta qualidade, adequado para fornos de cimento ou para a liberação de fios em etapas posteriores do processo.",
+      "Cortadores trituradores de pneus de reposição para tesouras rotativas primárias. Opções modificadas A8 e 42CrMo , com perfis de gancho personalizados e furos de eixo conforme desenho.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Granutech-Saturn Systems",
-      "UNTHA",
-      "WEIMA",
-      "Eldan Recycling",
-      "Lindner",
-      "Eco Green Equipment",
-      "American Pulverizer",
-      "Shred-Tech",
-    ],
     specs: [
       {
         label: "Material",
-        value: "Cru-Wear (PGK), Modified A8, 42CrMo",
+        value: "Cru-Wear (PGK), A8 modificado, 42CrMo",
       },
       {
-        label: "Machining Tol.",
-        value: "Strictly ±0.05 mm (0.002 inches)",
+        label: "Usinagem Tol.",
+        value: "Estritamente ±0,05 mm (0,002 polegadas)",
       },
       {
-        label: "Standard Geometry",
-        value: "3-Claw Rotary (Custom hook counts available)",
+        label: "Geometria das garras",
+        value: "1, 3 ou 5 garras, dependendo da configuração listada",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (Optimized for Wire Impact)",
+        label: "Dureza",
+        value: "HRC 54–58 (otimizado para impacto de fio)",
       },
       {
-        label: "Application",
-        value: "Whole Tires, TDF Chips, OTR Tires",
+        label: "Aplicação",
+        value: "Pneus inteiros, chips TDF, pneus OTR",
       },
       {
-        label: "OEM Fitment",
-        value: "Barclay, CM, SSI, Untha, Granutech-Saturn",
+        label: "Compatibilidade com OEM",
+        value: "Barclay , CM , SSI , Untha , Granutech-Saturn",
       },
     ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "MATERIAIS",
-        title: "Cru-Wear (PGK) e A8 modificado",
-        description:
-          "Utilizando ligas premium de nível OEM. A Cru-Wear oferece resistência e durabilidade máximas para linhas de alto volume, enquanto a Modified A8 proporciona o melhor equilíbrio entre custo e desempenho.",
-      },
-      {
-        id: "precise-cutting",
-        tag: "EFICIÊNCIA",
-        title: "Corte, não rasgue",
-        description:
-          "Retificado com precisão de ±0,05 mm. Isso garante um movimento de corte semelhante ao de uma tesoura, evitando que o fio se solte, reduzindo o desgaste da máquina e diminuindo drasticamente o consumo de energia.",
-      },
-      {
-        id: "consistent-tdf",
-        tag: "QUALIDADE DA SAÍDA",
-        title: "Chips TDF consistentes",
-        description:
-          "Espessuras exatas das lâminas (por exemplo, padrão de 2 polegadas), combinadas com o corte sem folga, produzem lascas uniformes e de alta qualidade de Combustível Derivado de Pneus (TDF), com o mínimo de fio exposto.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "multi-shaft-blades-metal",
     ],
     dimensionLabels: {
       col0: "Plataforma OEM",
@@ -3742,156 +4864,465 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Barclay Standard",
+        itemNo: "SR002301",
+        spec: "Padrão Barclay",
         od: 'Φ 450 mm (17.7")',
         thickness: '50.8 mm (2.0")',
-        bore: "Hex / Splined",
-        hooks: "3 Claws",
+        bore: "Sextavado / Estriado",
+        hooks: "3 garras",
       },
       {
-        spec: "CM Primary",
+        itemNo: "SR002302",
+        spec: "CM Primário",
         od: 'Φ 500 mm (19.6")',
         thickness: '50.8 mm (2.0")',
-        bore: "Heavy Splined",
-        hooks: "3 Claws",
+        bore: "Estriado pesado",
+        hooks: "3 garras",
       },
       {
+        itemNo: "SR002303",
         spec: "SSI / Untha",
         od: "Φ 400–600 mm",
         thickness: "25–75 mm",
-        bore: "Hex / Octagon",
-        hooks: "1 / 3 / 5 Claws",
+        bore: "Hex / Octógono",
+        hooks: "1/3/5 Garras",
       },
       {
-        spec: "OTR Shredder",
+        itemNo: "SR002304",
+        spec: "Triturador OTR",
         od: "Φ 800+ mm",
         thickness: "100+ mm",
-        bore: "Heavy Keyed",
-        hooks: "1 / 3 Claws",
+        bore: "Chave Pesada",
+        hooks: "1/3 Garras",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 250,
       highPrice: 2500,
     },
+    components: [
+      {
+        id: "tire-shredder-blades-advantage-1",
+        tag: "Configurações de aço para alimentação reforçada de pneus",
+        title: "Configurações de aço para alimentação reforçada de pneus",
+        description:
+          "As opções modificadas A8 e 42CrMo atendem a pedidos de substituição de cortadores para trituração de pneus, com o material especificado de acordo com o design da faca existente e as condições de desgaste ou impacto em serviço.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-2",
+        tag: "Cortadores de uma, três e cinco garras",
+        title: "Cortadores de uma, três e cinco garras",
+        description:
+          "As configurações de cortador de pneus listadas usam uma, três ou cinco garras. Sureay fabrica o perfil de garra necessário e furo hexagonal, octogonal, estriado ou chaveado para se adequar à posição de substituição em seu triturador principal.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-3",
+        tag: "Conjuntos de cortadores individuais e eixos",
+        title: "Conjuntos de cortadores individuais e eixos",
+        description:
+          "Configurações e conjuntos de fresas individuais que abrangem diversas posições de eixo podem ser cotados juntos, com fresas completas e pastilhas substituíveis identificadas separadamente para a troca planejada.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Por que eu deveria mudar do aço para ferramentas D2 padrão para o Cru-Wear (PGK)?",
+            "Qual etapa de reciclagem utiliza essas facas para trituradores ?",
           answer:
-            "Os pneus contêm fios de talão de alta resistência à tração que suportam cargas de impacto extremas. O D2 padrão é altamente resistente ao desgaste, mas frágil; o gume se lasca ao entrar em contato com o fio de reforço do talão. O Cru-Wear (PGK) foi projetado com uma estrutura de carboneto diferente, tornando-o significativamente mais resistente e durável do que o D2, absorvendo o impacto sem fraturar e mantendo, ao mesmo tempo, excelente retenção do gume.",
+            "Essas facas para trituradores de pneus, também chamadas de facas trituradoras de pneus, são cortadores montados em eixo para equipamentos primários de cisalhamento rotativo. Raspers e granuladores de borracha a jusante usam seus próprios arranjos de corte. Especifique primeiro a máquina e o estágio e, em seguida, identifique se a substituição necessária é uma fresa completa ou uma pastilha instalada em um corpo existente.",
         },
         {
           question:
-            "Como a tolerância das lâminas afeta o consumo de energia do meu triturador?",
+            "A espessura da fresa determina o tamanho final dos cavacos do pneu?",
           answer:
-            'Se a tolerância de espessura das lâminas rotativas variar em mais de 0,05 mm (0,002"), forma-se uma folga entre as lâminas contrarrotativas. Em vez de cortar o pneu elástico, a máquina tenta esticá-lo e rasgá-lo. Essa ação de tração exige uma quantidade enorme de torque, o que provoca picos no consumo de corrente do motor e desperdiça energia. Tolerâncias precisas garantem um corte limpo e de baixo atrito.',
+            "Não. A espessura da fresa influencia uma dimensão do corte primário. A geometria do gancho, a disposição do cortador e qualquer estágio de dimensionamento posterior também afetam o tamanho final dos cavacos do pneu. Mantenha a espessura da fresa existente e o tamanho alvo do chip TDF como requisitos separados.",
+        },
+        {
+          question: "Como o reforço de aço deve afetar a seleção da fresa?",
+          answer:
+            "Cordões de aço e seções de cordão adicionam cargas locais ao corte do corpo de borracha. Compare o material da fresa original, o suporte do gancho e o padrão de desgaste atual ao avaliar uma substituição. O desgaste gradual e os ganchos lascados exigem diferentes equilíbrios entre resistência ao desgaste e tenacidade, portanto, mantenha a descrição da alimentação específica para os pneus que estão sendo processados.",
         },
         {
           question:
-            "De que forma o design com três garras beneficia o processamento de pneus inteiros?",
+            "O que pode causar desgaste rápido ou ganchos lascados nos cortadores de pneus?",
           answer:
-            "Uma geometria de 3 garras proporciona o ângulo de mordida e o espaçamento ideais. Se houver garras em excesso (por exemplo, 8 ou 10), o pneu vai quicar sobre o rotor, pois os espaços entre os ganchos são muito pequenos para agarrar a borracha espessa. Três garras proporcionam uma abertura ampla que se encaixa na cavidade do pneu e puxa o pneu inteiro para dentro da câmara de corte.",
+            "O contato abrasivo pode desgastar gradualmente as faces de corte, enquanto o reforço ou material estranho pode criar cargas concentradas nos ganchos. A condição da pilha também é importante quando o dano aparece em posições específicas. Registre as faces afetadas e compare-as com fresas adjacentes antes de decidir se a substituição precisa de um material, perfil ou correção de montagem diferente.",
+        },
+        {
+          question:
+            "A contagem de ganchos ou a geometria do furo podem ser alteradas em uma lâmina de pneu personalizada?",
+          answer:
+            "Sim. Sureay pode fazer uma contagem revisada de ganchos ou furar o desenho. Mostre como o cortador revisado assenta no eixo e como seus ganchos se alinham com os cortadores opostos. Uma referência de revisão distingue esta alteração de uma substituição igual.",
+        },
+        {
+          question:
+            "Um cortador desgastado pode ser substituído sem solicitar um conjunto completo?",
+          answer:
+            "Sim. Uma única fresa pode ser fornecida quando as peças retidas e a geometria correspondente são conhecidas. Verifique as fresas adjacentes, larguras dos espaçadores e orientação instalada antes de definir essa substituição. Para uma troca completa, liste cada posição separadamente para que as diferenças entre fresas completas, pastilhas e peças específicas do eixo permaneçam claras no pedido.",
+        },
+        {
+          question:
+            "O que você precisa para cotar facas trituradoras de pneus de reposição?",
+          answer:
+            "Envie o modelo do triturador primário, desenho do cortador ou número da peça, alimentação dos pneus e quantidades. Especifique fresas completas ou pastilhas substituíveis. Para cada posição, inclua o diâmetro externo, a espessura, o formato do gancho e o furo, juntamente com o arranjo do espaçador, se o pedido abranger um conjunto de eixos.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do triturador primário, a alimentação do pneu, o tamanho alvo do chip e as dimensões do cortador e do espaçador.",
+    compatibleMachines: ["Barclay", "CM", "SSI", "Untha", "Granutech-Saturn"],
+    detailLayout: {
+      sizeRange: "Ø400–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "Vocês podem fornecer espaçadores e pentes de limpeza (placas raspadoras) compatíveis com as lâminas?",
-          answer:
-            "Sim. Um rotor completo para trituração de pneus requer lâminas, espaçadores e dedos de limpeza compatíveis. Fabricamos o conjunto completo de acordo com as mesmas tolerâncias rigorosas para garantir uma montagem sem folga ao longo de todo o comprimento do eixo do rotor.",
+          label: "Material",
+          value: "Cru-Wear (PGK), A8 modificado, 42CrMo",
         },
         {
-          question: "Você tem as plantas dos trituradores Barclay ou CM?",
-          answer:
-            "Mantemos um banco de dados abrangente com desenhos originais de lâminas para as principais plataformas de trituração de pneus. Ao nos fornecer o modelo da sua máquina ou um desenho básico de referência, podemos fabricar peças de reposição exatamente compatíveis.",
+          label: "Aplicação",
+          value: "Pneus inteiros, chips TDF, pneus OTR",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Ø400–800+ mm",
+        },
+        {
+          label: "Material",
+          value: "Cru-Wear (PGK), A8 modificado, 42CrMo",
+        },
+        {
+          label: "Usinagem Tol.",
+          value: "Estritamente ±0,05 mm (0,002 polegadas)",
+        },
+        {
+          label: "Geometria das garras",
+          value: "1, 3 ou 5 garras, dependendo da configuração listada",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 54–58 (otimizado para impacto de fio)",
+        },
+        {
+          label: "Aplicação",
+          value: "Pneus inteiros, chips TDF, pneus OTR",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Inclua o modelo do triturador primário, a alimentação do pneu, o tamanho alvo do chip e as dimensões do cortador e do espaçador.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha facas cortadoras de não tecido de reposição com perfis personalizados, dimensões de montagem e opções de revestimento para sua linha de conversão. Compartilhe seu desenho ou amostra e aplicativo da web com Sureay para obter um orçamento que cubra a configuração do blade e a documentação necessária.",
     id: "nonwoven-slitter-knives",
-    name: "Facas para cortadoras de não-tecido",
+    name: "Facas de corte longitudinal para não tecidos",
     fullName:
-      "Lâminas circulares de corte M2 HSS para tecidos não tecidos do tipo spunbond, meltblown e SMS",
+      "Facas de corte longitudinal para não tecidos spunbond, meltblown e SMS",
+    seoTitle: "Facas para cortadoras de não tecidos | PP spunbond e SMS",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Lâminas de corte",
+    categoryDisplay: "Facas de corte longitudinal",
     image:
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Grau médico",
     badgeColor: "teal",
     gallery: [
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-02.webp",
     ],
+    galleryAlts: [
+      "Lâminas de corte circulares não tecidas e anéis de bigorna pretos",
+      "Close de um chanfro de lâmina de cortador circular",
+      "Lâminas de corte circulares e anéis de divisão vistos de cima",
+    ],
+    detailLayout: {
+      heroTitle:
+        "Facas de corte longitudinal para não tecidos spunbond, meltblown e SMS",
+      sizeRange: "OD 60–300 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "M2 HSS , D2 , metal duro , 52100",
+        },
+        {
+          label: "Serve",
+          value:
+            "Porta-cortes Pneumatic (tipo 80/90/100/110) e rebobinadeiras cortadoras de até",
+          emphasis: "800 m/min",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "OD 60–300 mm",
+        },
+        {
+          label: "Materiais",
+          value: "M2 HSS , D2 , metal duro , 52100",
+        },
+        {
+          label: "Dureza",
+          value: "M2 : 62–64 HRC ; D2 : 60–62 HRC ; carboneto: 89–92 HRA",
+        },
+        {
+          label: "Tolerância",
+          value: "Espessura ±0,002 mm",
+        },
+        {
+          label: "Interface",
+          value: "Furo H7 , travamento por parafuso de fixação",
+        },
+        {
+          label: "Geometria",
+          value: "Bisel 25°–45°",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value: "Revestimento condutor PTFE, TiN, DLC ou ESD",
+        },
+        {
+          label: "Ângulo de inclinação",
+          value: "inclinação positiva de 15°–20°",
+        },
+        {
+          label: "Acabamento da superfície",
+          value: "Ra ≤0.4 µm",
+        },
+        {
+          label: "Aplicação",
+          value: "Spunbond PP, Meltblown, SMS/SMMS, Hidroemaranhado, Geotêxtil",
+        },
+      ],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Lâminas de corte superiores",
+          title:
+            "Lâminas de corte superior (corte de cisalhamento - cônico e plano)",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Perfil",
+            "Opções de materiais",
+            "Ajuste do suporte",
+          ],
+          rows: [
+            [
+              "SR001101",
+              "76.2 × 17.0 × 1.00 mm",
+              "Côncava",
+              "M2 HSS / D2",
+              "Tipo 80",
+            ],
+            [
+              "SR001102",
+              "90.0 × 22.0 × 1.20 mm",
+              "Côncava",
+              "M2 HSS / Metal Duro",
+              "Tipo 90",
+            ],
+            [
+              "SR001103",
+              "100.0 × 40.0 × 1.20 mm",
+              "Côncava",
+              "M2 HSS / ASP-23",
+              "Dienes / Cota 100",
+            ],
+            [
+              "SR001104",
+              "105.0 × 40.0 × 1.50 mm",
+              "Côncava",
+              "M2 HSS / D2",
+              "Tipo 105/110",
+            ],
+            [
+              "SR001105",
+              "130.0 × 60.0 × 1.50 mm",
+              "Côncava",
+              "M2 HSS / D2",
+              "Dienes PSG",
+            ],
+            [
+              "SR001106",
+              "150.0 × 70.0 × 2.00 mm",
+              "Arredondado / Plano",
+              "D2 / M2 HSS",
+              "A. Celli",
+            ],
+            [
+              "SR001107",
+              "200.0 × 80.0 × 3.00 mm",
+              "Plano",
+              "D2 / Cr12MoV",
+              "—",
+            ],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Anéis inferiores e cortadores de esmagamento",
+          title: "Anéis cortadores inferiores e cortadores de esmagamento",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de faca",
+            "Opções de materiais",
+            "Especificação principal",
+          ],
+          rows: [
+            [
+              "SR001108",
+              "80.0 × 50.0 × 15.0 mm",
+              "Anel de bigorna inferior",
+              "D2 / 52100",
+              "Furo H7 , parafuso de fixação",
+            ],
+            [
+              "SR001109",
+              "100.0 × 60.0 × 20.0 mm",
+              "Anel de borda dupla",
+              "D2 / M2 HSS",
+              "Eixos Ar/Sólidos",
+            ],
+            [
+              "SR001110",
+              "126.0 × 76.2 × 50.0 mm",
+              "Manga multi-ranhura",
+              "D2 / Cr12MoV",
+              "Largura da ranhura ±0,01 mm",
+            ],
+            [
+              "SR001111",
+              "76.2 × 19.05 × 4.76 mm",
+              "Cortador de pontuação / esmagamento",
+              "52100 / M2 HSS",
+              "R0.05 – R0.1 mm Raio da ponta",
+            ],
+            [
+              "SR001112",
+              "100.0 × 25.4 × 6.00 mm",
+              "Cortador de esmagamento para serviço pesado",
+              "52100 / D2",
+              "Para feltro grosso e rebatidas",
+            ],
+          ],
+        },
+        {
+          id: "additional-nonwoven-knives",
+          tabLabel: "Tamanhos adicionais de facas não tecidas",
+          title: "Tamanhos adicionais de facas não tecidas",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de faca",
+          ],
+          rows: [
+            ["SR001834", "75 × 32 × 1.0 mm", "Faca cortadora não tecida"],
+            ["SR001835", "100 × 40 × 1.0 mm", "Faca cortadora não tecida"],
+            ["SR001836", "100 × 50 × 1.5 mm", "Faca cortadora não tecida"],
+            ["SR001837", "120 × 50 × 1.0 mm", "Faca cortadora não tecida"],
+            ["SR001838", "120 × 60 × 1.5 mm", "Faca cortadora não tecida"],
+            ["SR001839", "150 × 75 × 2.0 mm", "Faca cortadora não tecida"],
+          ],
+        },
+      ],
+    },
     description:
-      "Lâminas circulares de corte M2 HSS e D2 para tecidos não tecidos de PP spunbond, meltblown, SMS e SMMS. A geometria especializada do ângulo de inclinação evita o desfiamento das fibras e a formação de nódulos em materiais de estrutura solta. Utilizadas em linhas de corte para produtos de higiene, médicos, de filtração e geotêxteis.",
+      "Facas cortadoras de reposição para não-tecidos spunbond, meltblown e SMS. Opções M2 HSS , D2 ou metal duro, com perfis personalizados e revestimentos específicos para aplicação.",
     fullDescription:
       "O corte de tecidos não tecidos apresenta um desafio fundamentalmente diferente do processamento de filmes ou papéis: o material não possui direção de fibra, apresenta baixa resistência à tração na direção transversal à máquina e possui uma estrutura fibrosa e solta que pode desfiar, distorcer-se ou formar bolinhas na borda de corte se a geometria da lâmina não for adequada à composição do tecido e à tensão da linha.\n\nAs lâminas de corte para não tecidos da Sureay são fabricadas em aço rápido M2 com uma geometria especializada do ângulo de inclinação, desenvolvida especificamente para materiais de estrutura solta, como spunbond, meltblown e hidroentrelaçados. O ângulo de inclinação positivo otimizado corta os feixes de fibras de maneira limpa, em vez de empurrá-los para o lado, eliminando a borda desfiada e os grumos de fibras soltas que causam rejeições de qualidade nas linhas de conversão de fraldas infantis, produtos de higiene feminina e campos cirúrgicos.\n\n## Tipos de tecidos não tecidos\n\n**Spunbond PP (estruturas S, SS, SSS):** O substrato não tecido mais comum. Disponível em 8–120 GSM. Aço rápido M2 padrão com acabamento superficial Ra ≤ 0,4 μm e ângulo de inclinação positivo de 15°–20°. Utilizado na conversão de produtos absorventes de higiene, no corte de rolos de geotêxteis e em filmes de cobertura agrícola.\n\n**Meltblown (camada M):** Camadas de fibras ultrafinas (diâmetro de 1 a 5 μm) utilizadas como núcleo de filtragem em respiradores N95/FFP2 e máscaras cirúrgicas. Extremamente frágeis e sensíveis à carga de tração lateral. Requerem velocidade de corte reduzida (60–100 m/min), corpo de lâmina de baixa massa para minimizar a vibração e revestimentos contra descargas eletrostáticas (ESD) para evitar a atração das fibras pela face da lâmina.\n\n**Tecidos médicos SMS / SMMS:** Composto Spunbond-Meltblown-Spunbond utilizado em aventais cirúrgicos, campos cirúrgicos e embalagens de esterilização. O SMS de grau médico requer equipamentos validados — fornecemos certificados de material e relatórios dimensionais rastreáveis ao seu número de lote para conformidade regulatória.\n\n**Tecidos não tecidos hidroentrelaçados / wetlaid:** Tecido com maior gramatura (50–200 GSM) e estrutura mais coesa. Com características de corte mais próximas das da espuma ou do papel — lâminas de aço padrão D2 ou 52100 apresentam bom desempenho nesses substratos.\n\n## Opção de revestimento ESD\n\nPara o corte de meios de filtração meltblown e eletrofiados, está disponível um tratamento de superfície condutivo ESD (descarga eletrostática) que evita o acúmulo de carga estática na face da lâmina. O acúmulo de carga estática faz com que fibras leves (principalmente PP meltblown com <15 GSM) adiram à lâmina e sejam transferidas como contaminação para a borda do rolo recortado.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
-    compatibleMachines: [
-      "Parkinson Spencer Rees",
-      "Atlas Converting",
-      "Euromac",
-      "ACCO Brands",
-      "Erhardt+Leimer",
-    ],
+    compatibleMachines: ["Tidland", "Pneumatic", "Dienes", "Mario Cotta"],
     specs: [
       {
-        label: "Material",
-        value:
-          "M2 HSS (standard) / D2 (heavy nonwoven) / 52100 (hydroentangled)",
+        label: "Tamanhos",
+        value: "OD 60–300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 62–64 (M2) | HRC 60–62 (D2)",
+        label: "Materiais",
+        value: "M2 HSS , D2 , metal duro , 52100",
       },
       {
-        label: "Rake Angle",
-        value: "15°–20° positive rake (nonwoven-optimised geometry)",
+        label: "Dureza",
+        value: "M2 : 62–64 HRC ; D2 : 60–62 HRC ; carboneto: 89–92 HRA",
       },
       {
-        label: "Surface Finish",
-        value: "Ra ≤ 0.4μm — reduces fibre adhesion and slub formation",
+        label: "Tolerância",
+        value: "Espessura ±0,002 mm",
       },
       {
-        label: "Options",
-        value: "ESD conductive coating (meltblown / filtration media)",
+        label: "Interface",
+        value: "Furo H7 , travamento por parafuso de fixação",
       },
       {
-        label: "Application",
-        value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile",
+        label: "Geometria",
+        value: "Bisel 25°–45°",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value: "Revestimento condutor PTFE, TiN, DLC ou ESD",
+      },
+      {
+        label: "Ângulo de inclinação",
+        value: "inclinação positiva de 15°–20°",
+      },
+      {
+        label: "Acabamento da superfície",
+        value: "Ra ≤0.4 µm",
+      },
+      {
+        label: "Aplicação",
+        value: "Spunbond PP, Meltblown, SMS/SMMS, Hidroemaranhado, Geotêxtil",
       },
     ],
     components: [
       {
         id: "rake-geometry",
         tag: "DESIGN DE BORDAS",
-        title: "Ângulo de inclinação otimizado para não-tecidos",
+        title: "Opções de materiais para corte não tecido",
         description:
-          "As geometrias padrão das lâminas de corte projetadas para papel e filmes plásticos utilizam um ângulo de inclinação positivo ou neutro de 5° a 10°. No caso de não tecidos de estrutura solta, essa geometria empurra as fibras lateralmente antes do corte, causando a borda desfiada que é considerada um defeito de qualidade na inspeção de produtos de higiene. Nossa lâmina com ângulo de inclinação positivo de 15° a 20° corta os feixes de fibras em uma única ação progressiva, produzindo uma borda de corte limpa e bem ajustada em velocidades de linha de até 400 m/min.",
+          "As opções M2 HSS , D2 , aço para rolamentos e metal duro suportam pedidos de substituição para diferentes tramas não tecidas. Especifique o material ao redor do arranjo de facas existente e o desgaste observado da borda.",
       },
       {
         id: "esd-coating",
         tag: "TRATAMENTO DE SUPERFÍCIE",
-        title: "Revestimento condutor ESD",
+        title:
+          "Perfis de borda definidos e tratamentos de superfície opcionais",
         description:
-          "A carga eletrostática é gerada quando o tecido não tecido leve de PP passa sobre superfícies metálicas em alta velocidade. Em camadas de tecido meltblown (<15 GSM), essa carga faz com que as fibras adiram à superfície da lâmina e sejam transferidas como contaminação para a borda do rolo recortado. Nosso revestimento condutor ESD dissipa continuamente a carga da superfície da lâmina, eliminando a atração das fibras sem a necessidade de reduzir a velocidade do processo.",
+          "Perfis de lâmina e revestimentos condutores opcionais de PTFE, TiN, DLC ou ESD podem ser especificados separadamente, permitindo que seu pedido distinga a geometria de corte necessária do tratamento de superfície selecionado.",
       },
       {
         id: "medical-traceability",
         tag: "CONFORMIDADE",
-        title: "Rastreabilidade de lotes de produtos médicos",
+        title: "Interfaces personalizadas para porta-facas existentes",
         description:
-          "Para as linhas de produção que abastecem fabricantes de campos cirúrgicos, aventais e embalagens de esterilização, oferecemos rastreabilidade completa do lote: certificados da siderúrgica M2, registros de testes de dureza e relatórios dimensionais de CMM referenciados ao número do lote da sua ordem de compra. A documentação é formatada para inclusão no seu arquivo de qualificação de fornecedores.",
+          "Furos personalizados, dimensões de montagem e perfis de corte permitem que você obtenha facas de reposição para seus suportes existentes a partir de um desenho ou amostra, incluindo o ajuste do eixo necessário e o arranjo de travamento.",
       },
     ],
     dimensionLabels: {
@@ -3946,644 +5377,628 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Qual ângulo de inclinação devo especificar para o polipropileno spunbond a 200 m/min?",
+            "Qual faca de reposição cabe no meu suporte de corte não tecido?",
           answer:
-            "Para PP spunbond a 200 m/min, com gramaturas de 15 a 80 GSM, especifique um ângulo de inclinação positivo de 15° no bisel de corte. Essa geometria corta as fibras de polipropileno de forma limpa no ponto de contato, sem o deslocamento lateral que causa o desfiado. Para gramaturas mais altas (80–150 GSM SSS ou SMMS), um ângulo de inclinação positivo de 20°, com uma largura de bisel ligeiramente maior, proporciona melhor estabilidade em velocidades de linha reduzidas (150 m/min).",
+            "Identifique se a estação utiliza corte por cisalhamento ou por esmagamento e, em seguida, especifique o suporte, o componente correspondente e as dimensões da faca. Inclua a construção da teia e a gramatura. As facas de cisalhamento funcionam com uma ponta correspondente; os cortadores de esmagamento pressionam contra uma superfície de suporte. Para cortes transversais de rolos já enrolados, consulte [Lâminas lâminas de serra para toras de papel papel não tecidas](/products/nonwoven-log-saw-blades) .",
         },
         {
           question:
-            "No meu processo de corte de tecido meltblown, observa-se transferência visível de fibras na superfície da lâmina. Qual é a causa?",
+            "Como o material da faca deve ser escolhido quando as bordas do não tecido se desgastam ou o desgaste aumenta?",
           answer:
-            "A transferência de fibras no tecido meltblown (especialmente em camadas com menos de 10 GSM) é causada pelo acúmulo de carga eletrostática na superfície da lâmina, e não pela geometria da borda. As fibras de PP meltblown com diâmetro de 1 a 5 μm são extremamente suscetíveis à atração estática. Especifique a opção de revestimento condutor ESD em seu próximo pedido e certifique-se de que a estrutura da máquina cortadora esteja devidamente aterrada. Isso normalmente elimina a contaminação visível na superfície da lâmina em um único turno de produção.",
+            "Compare a condição da aresta usada com a construção da alma e a estabilidade do par de corte. O desgaste gradual e o lascamento exigem diferentes considerações de material. Registre o material atual da faca e as condições de produção ao discutir uma substituição, para que uma mudança de material possa ser avaliada juntamente com a geometria existente e o arranjo de suporte.",
         },
-      ],
-      company: [
         {
           question:
-            "A Sureay pode fornecer facas para cortadoras de não-tecido acompanhadas de um certificado de conformidade para a auditoria do nosso fornecedor de dispositivos médicos?",
+            "O que pode causar desfiamento ou fibras soltas durante o corte de não tecido?",
           answer:
-            "Sim. Emitimos um Certificado de Conformidade (CoC) para cada lote, indicando o número do pedido de compra, o tipo de aço (M2 AISI M2 / DIN 1.3343), a faixa de dureza (HRC 62–64) e os resultados da verificação dimensional. Para a qualificação completa do fornecedor de dispositivos médicos, também podemos fornecer, mediante solicitação, o certificado da siderúrgica e o registro de lote tratamento térmico.",
+            "Desgaste das arestas, geometria inadequada, suporte instável e configurações de corte podem contribuir para fibras soltas. Inspecione a borda cortada e ambos os componentes de trabalho em condições normais de produção. A construção da teia é importante junto com a velocidade e o peso base, portanto compare esses detalhes antes de alterar o perfil da lâmina ou tratar um ângulo de inclinação como adequado para cada não tecido.",
+        },
+        {
+          question:
+            "O acúmulo de fibra sempre requer um revestimento antiestático?",
+          answer:
+            "Não. Os resíduos, a condição da lâmina, o manuseio da folha e a configuração de corte devem ser verificados antes de atribuir o acúmulo de fibra à estática. Um revestimento condutor aborda um problema diferente de uma borda danificada ou suporte de corte instável. Descreva o acúmulo e a configuração atual da faca ao discutir um tratamento de superfície, para que a escolha do revestimento atenda à condição observada.",
+        },
+        {
+          question:
+            "Como devem ser especificados os perfis e revestimentos de facas não tecidos personalizados?",
+          answer:
+            "Envie um desenho ou amostra definindo o furo, dimensões de montagem e perfil de corte. Especifique o material da lâmina e o revestimento separadamente, juntamente com a construção não tecida e a estação de corte pretendida. Manter a geometria e o tratamento de superfície distintos torna mais fácil comparar uma faca substituta com a faca existente e identificar exatamente o que muda no pedido.",
+        },
+        {
+          question:
+            "Quais requisitos de material e dimensões são importantes para facas de conversão higiênica?",
+          answer:
+            "Defina a identificação do material, dureza e verificações dimensionais necessárias na especificação de compra. Inclua as dimensões relevantes ao suporte e ao componente correspondente e concorde com quaisquer requisitos de documentação antes de fazer o pedido. As referências de lote e pedido de compra podem então conectar a configuração da faca com as informações de inspeção solicitadas e dar suporte ao seu próprio processo de qualificação de fornecedor.",
+        },
+        {
+          question:
+            "Quando as facas de corte não tecido devem ser afiadas ou substituídas?",
+          answer:
+            "Desgaste persistente ou poeira ao longo de uma borda desgastada é um motivo para avaliar a afiação, após verificar a configuração de corte. A retificação só é adequada quando o perfil e as dimensões de trabalho necessários podem ser restaurados. Nas estações de cisalhamento, mantenha a sobreposição especificada com a faca inferior; avaliar perfis de esmagamento em relação ao seu próprio desenho. Substitua as facas quando danos ou dimensões restantes impedirem uma configuração de corte utilizável.",
         },
       ],
+      company: [],
     },
   },
   {
     id: "bottom-grooved-anvil-knives",
-    name: "Facas de bigorna com ranhura na parte inferior",
+    name: "Contrafacas inferiores ranhuradas",
     fullName:
-      "Facas de bigorna com ranhura na parte inferior para corte por cisalhamento — Processamento de filmes, papel e folhas metálicas",
+      "Contrafacas inferiores ranhuradas para corte longitudinal por cisalhamento",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Lâminas de corte longitudinal",
-    image:
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "Paros compatíveis com OEM",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
-    ],
+    categoryDisplay: "Contrafacas inferiores ranhuradas",
+    image: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lâminas de bigorna com ranhuras na parte inferior, retificadas com precisão, para corte por cisalhamento de filmes, papel, folhas metálicas e fitas. Compatíveis com os sistemas de eixos de facas superiores das marcas Tidland, Kampf, Atlas, Goebel e BHS. Perfis de bigorna com ranhura única ou dupla em D2, M2 HSS e metal duro maciço. Fornecidas como pares de cisalhamento verificados ou como peças de reposição individuais para a bigorna inferior.",
-    fullDescription:
-      "No corte por cisalhamento, a lâmina de bigorna com ranhura inferior é a metade inferior fixa do par de lâminas — mas é frequentemente subdimensionada. Quando a geometria da ranhura da bigorna não corresponde ao ângulo de curvatura da lâmina superior, ou quando a tolerância do furo da bigorna se desvia do projeto do eixo, o resultado é uma folga de cisalhamento descontrolada, rebarbas nas bordas e desgaste prematuro em ambas as lâminas simultaneamente.\n\nAs facas de bigorna com ranhura inferior da Sureay são fabricadas com a mesma tolerância de espessura de ±0,002 mm e especificação de excentricidade (T.I.R.) de ≤0,02 mm que nossas facas de corte superiores. Cada bigorna é retificada de acordo com o perfil da ranhura da sua plataforma OEM — seja uma bigorna Tidland de ranhura única, uma Kampf de ranhura dupla ou uma Goebel/BHS de corpo largo — e verificada em relação à lâmina superior correspondente antes do envio.\n\n## Por que as facas inferiores da bigorna precisam de atenção individual\n\n**O perfil da ranhura determina a folga:** A largura e a profundidade da ranhura na lâmina de bigorna controlam diretamente a folga de cisalhamento de trabalho entre o par de lâminas superior e inferior. Uma ranhura desgastada ou com perfil incorreto aumenta a folga efetiva, produzindo uma borda de corte irregular mesmo quando a lâmina superior é nova. Nós retificamos o perfil de cada ranhura da bigorna de acordo com suas especificações OEM (largura da ranhura ±0,01 mm) para restaurar a folga projetada de fábrica.\n\n**Taxa de desgaste diferente, ciclo de substituição diferente:** As facas da bigorna inferior operam sob carga compressiva, ao contrário da carga predominantemente de cisalhamento exercida sobre a lâmina superior. Isso significa que a bigorna normalmente dura de 3 a 5 vezes mais do que a lâmina superior — mas, quando se desgasta, a face da ranhura se arredonda gradualmente, causando uma deterioração progressiva na qualidade do corte que é fácil de passar despercebida até que as taxas de rejeição aumentem. Encomendar bigornas de reposição independentemente das lâminas superiores evita o descarte desnecessário dessas últimas.\n\n**O diâmetro interno e a planicidade da face são fundamentais:** A lâmina de bigorna se encaixa no eixo inferior e deve funcionar com precisão. Um desvio no diâmetro interno de 0,02 mm induz oscilação da lâmina, o que se traduz diretamente em variação da largura do corte em uma pilha de eixos com múltiplas lâminas. Todos os furos das garras Sureay são retificados com acabamento na tolerância H6 e a face é lapidada para obter paralelismo ≤0,003 mm.\n\n## Áreas de aplicação\n\n**Corte de filmes flexíveis e embalagens:** BOPP, BOPET, CPP, filme extensível de PE, manga retrátil. Anvil padrão D2 ou M2 de aço rápido (HSS) com perfil de ranhura simples ou dupla. O revestimento opcional de TiN PVD na face da ranhura prolonga a vida útil contra desgaste por contato em linhas de filme de alta velocidade operando a 400–600 m/min.\n\n**Conversão de papel e papelão:** Papel-toalha, papel kraft, papel revestido. Para corte por compressão (faca contra o rolo de bigorna), a bigorna é fabricada com um perfil de ranhura com fenda que comprime e fratura as fibras do papel sem rasgá-lo. Aço D2 ou 52100, HRC 58–62.\n\n**Corte de folhas metálicas:** Folha de cátodo de alumínio, folha de ânodo de cobre, tira de aço silicônico. A lâmina de anvil para folhas metálicas deve resistir ao desgaste adesivo causado pelo substrato metálico. Aço ASP23 PM ou carboneto sólido com grau compatível com a liga da lâmina superior; tolerância da forma da ranhura mantida em ±0,005 mm.\n\n**Fitas e etiquetas sensíveis à pressão:** Fita de máscara, espuma de dupla face, adesivo de transferência. A contaminação por adesivo na face da ranhura é a principal causa de falha. As faces da ranhura revestidas com Teflon ou DLC reduzem os intervalos de acúmulo de adesivo em 60–80%.",
+      "Facas de bigorna ranhuradas de reposição e anéis de corte para cortadores de teia. Opções de aço ou metal duro, com perfis de ranhura, furos e arranjos de travamento personalizados.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
-    disambiguation:
-      "Trata-se de bigornas em disco com uma a três ranhuras compatíveis com os equipamentos originais (OEM). Se você precisar de um anel largo com várias posições de ranhura em um único corpo, consulte [Facas para fundo de ranhura](/products/groove-bottom-knives).",
+    compatibleMachinesIntro:
+      "Obtenha facas de bigorna com ranhura inferior de reposição adaptadas à sua linha de corte, com perfis de ranhura, furos e opções de travamento personalizados. Envie-nos seu desenho ou amostra e Sureay o ajudará a selecionar o substituto certo e a preparar um orçamento.",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "Anéis ranhurados com DE 46–250 mm",
+      },
+      {
+        label: "Material",
+        value:
+          "52100, D2 , M2 HSS , PM HSS (incluindo ASP23 ), construção sólida em metal duro ou com ponta de metal duro",
+      },
+      {
+        label: "Aplicações",
+        value: "Corte de filme, papel, folha e não tecido",
+      },
+      {
+        label: "Mangas de navalha",
+        value: "Ranhura aliviada para limpar o fio da navalha",
+      },
+      {
+        label: "Tolerância de largura de canal",
+        value: "±0.01 mm",
+      },
+      {
+        label: "Planicidade do rosto",
+        value: "≤0.003 mm",
+      },
+      {
+        label: "Tolerância ao furo",
+        value: "Furo retificado H6",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value: "TiN na face da ranhura, DLC ou PTFE (Teflon)",
+      },
+      {
+        label: "Desvio",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Montagem",
+        value:
+          "Furo liso (NN), trava excêntrica (NG), trava com parafuso de fixação (NS) ou anel dividido/montagem por braçadeira",
+      },
+      {
+        label: "Folga de cisalhamento",
+        value: "0,02–0,15 mm, de acordo com o substrato e par de facas",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Facas de bigorna com ranhura inferior | Anéis de reposição",
+      sizeRange: "Anéis ranhurados com DE 46–250 mm",
+      heroAlt:
+        "Facas de bigorna com fundo ranhurado e anéis de corte removíveis",
+      specificationImage: {
+        src: "/images/products/slitter-detail/bottom-grooved-anvil-knives-detail.webp",
+        alt: "Dois anéis inferiores mostrando a superfície recuada e o ombro de corte",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "ring",
+          tabLabel: "Anéis Ranhurados",
+          title: "Anéis Ranhurados",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Perfil ou referência",
+          ],
+          rows: [
+            ["SR001451", "46 × 25 × 5 mm", "Série dimensional DIENES"],
+            ["SR001452", "80 × 60 × 10 mm", "Anel inferior ranhurado"],
+            ["SR001453", "105 × 90 × 15 mm", "Anel inferior ranhurado"],
+            ["SR001454", "105 × 90 × 8 mm", "Referência dimensional Kampf"],
+            ["SR001455", "105 × 90 × 17 mm", "Referência dimensional Kampf"],
+          ],
+        },
+        {
+          id: "groove-profile-configurations",
+          tabLabel: "Configurações de perfil do Groove",
+          title: "Configurações de perfil do Groove",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Referência da plataforma",
+            "Perfil de ranhura",
+          ],
+          rows: [
+            [
+              "SR001840",
+              "70 × 25.4 × 8 / 10 mm",
+              "Tidland — Sulco Único",
+              "W: 1.2 × D: 2.0 / 60°",
+            ],
+            [
+              "SR001841",
+              "100 × 60 × 20 / 25 mm",
+              "Atlas — contrafaca com 3 ranhuras",
+              "W: 1.5 × D: 2.5 / 60°",
+            ],
+            [
+              "SR001842",
+              "80 × 30 × 10 mm",
+              "Mario Cotta - Single Groove",
+              "W: 1.3 × D: 2.2 / 45°",
+            ],
+            [
+              "SR001843",
+              "130 × 80 × 12 mm",
+              "Dienes - Ranhura Simples",
+              "W: 1.5 × D: 3.0 / 60°",
+            ],
+            [
+              "SR001844",
+              "Por desenho",
+              "Bigorna personalizada/face dura",
+              "Especificações OEM; Ranhura usinada CNC exata",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Anéis ranhurados com DE 46–250 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2 , M2 HSS , PM HSS (incluindo ASP23 ), construção sólida em metal duro ou com ponta de metal duro",
+        },
+        {
+          label: "Aplicações",
+          value: "Corte de filme, papel, folha e não tecido",
+        },
+        {
+          label: "Mangas de navalha",
+          value: "Ranhura aliviada para limpar o fio da navalha",
+        },
+        {
+          label: "Tolerância de largura de canal",
+          value: "±0.01 mm",
+        },
+        {
+          label: "Planicidade do rosto",
+          value: "≤0.003 mm",
+        },
+        {
+          label: "Tolerância ao furo",
+          value: "Furo retificado H6",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value: "TiN na face da ranhura, DLC ou PTFE (Teflon)",
+        },
+        {
+          label: "Desvio",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Montagem",
+          value:
+            "Furo liso (NN), trava excêntrica (NG), trava com parafuso de fixação (NS) ou anel dividido/montagem por braçadeira",
+        },
+        {
+          label: "Folga de cisalhamento",
+          value: "0,02–0,15 mm, de acordo com o substrato e par de facas",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
+      "Mario Cotta",
       "Tidland",
       "Kampf",
-      "Atlas Converting",
       "Goebel",
-      "BHS",
-      "Agnati",
-      "Dusenbery",
-      "Euromac",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Groove Tolerance",
-        value: "Groove width ±0.01 mm | Face flatness ≤0.003 mm",
-      },
-      {
-        label: "Bore Tolerance",
-        value: "H6 finish-ground | T.I.R. ≤0.02 mm",
-      },
-      {
-        label: "Shear Clearance",
-        value: "Pre-verified to substrate spec (0.02–0.15 mm)",
-      },
-      {
-        label: "Coatings",
-        value: "TiN groove face, DLC, Teflon anti-adhesion (optional)",
-      },
-      {
-        label: "Applications",
-        value: "Film, Paper, Metal Foil, PSA Tape, Nonwovens",
-      },
+      "Atlas",
+      "Nishimura",
     ],
     components: [
       {
-        id: "groove-geometry-control",
-        tag: "RETIFICAÇÃO DE PRECISÃO",
-        title: "Geometria da ranhura do perfil OEM",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Configurações de bigorna de aço e metal duro",
         description:
-          "A largura e a profundidade da ranhura de cada lâmina de bigorna são retificadas de acordo com as especificações da sua plataforma OEM — ranhura única Tidland, ranhura dupla Kampf ou corpo largo Goebel — e mantidas com uma tolerância de ±0,01 mm. A geometria correta da ranhura restaura a folga de cisalhamento projetada de fábrica e elimina a deterioração progressiva da borda da fenda causada pelo desgaste do perfil da bigorna.",
+          "As facas bigorna ranhuradas estão disponíveis em aço ferramenta, HSS , PM HSS , metal duro sólido e construções com ponta de metal duro para pedidos de reposição e aplicações específicas.",
       },
       {
-        id: "bore-face-flatness",
-        tag: "PRECISÃO DIMENSIONAL",
-        title: "H6: Diâmetro interno e planicidade da face lapidada",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Ranhuras de solo, furos e faces de localização",
         description:
-          "Todos os furos das bigornas são retificados com acabamento na tolerância H6 e lapidados na face para obter um paralelismo de ≤0,003 mm. Um desvio de 0,02 mm no furo do eixo inferior provoca oscilação da lâmina, o que se traduz diretamente em variação da largura da fenda em uma pilha de lâminas múltiplas. Nossas tolerâncias de furo e face são verificadas em uma CMM para cada lote.",
+          "Os anéis de substituição com acabamento retificado são feitos com o furo, o perfil da ranhura e as faces de localização especificadas para o eixo e faca superior existentes.",
       },
       {
-        id: "anti-adhesion-groove-coating",
-        tag: "TRATAMENTO DE SUPERFÍCIES",
-        title: "Revestimentos com ranhuras antiaderentes",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Perfis de ranhura personalizados e designs de travamento",
         description:
-          "No corte de fitas sensíveis à pressão e laminados adesivos, os revestimentos de Teflon e DLC PVD na face de contato da ranhura reduzem os intervalos de acúmulo de adesivo em 60 a 80%. As bigornas revestidas operam sem problemas durante turnos de produção de 8 a 12 horas, sem contaminação da ranhura que prejudique a folga de cisalhamento e force paradas não planejadas.",
+          "Projetos de furo simples, trava excêntrica, trava por parafuso e montagem dividida ou por braçadeira estão disponíveis com perfis de ranhura e larguras de anel definidos por desenho.",
       },
     ],
-    dimensionLabels: {
-      col0: "Plataforma OEM / Tipo",
-      col1: "Diâmetro externo × Diâmetro interno (mm)",
-      col2: "Espessura (mm)",
-      col3: "Ranhura (L × P / Ângulo)",
-      caption:
-        "* Dimensões padrão das bigornas, compatíveis com as do fabricante original (OEM). A geometria exata das ranhuras garante um encaixe sem oscilação com os cortadores superiores. As bigornas com mais de três ranhuras são fornecidas como anéis cortadores inferiores — consulte as facas inferiores para ranhuras.",
-    },
-    standardDimensions: [
-      {
-        spec: "Tidland — Single Groove",
-        od: "70 × 25.4",
-        id: "8 / 10",
-        thickness: "W: 1.2 × D: 2.0 / 60°",
-      },
-      {
-        spec: "Atlas — 3-Slot Anvil",
-        od: "100 × 60",
-        id: "20 / 25",
-        thickness: "W: 1.5 × D: 2.5 / 60°",
-      },
-      {
-        spec: "Mario Cotta — Single Groove",
-        od: "80 × 30",
-        id: "10",
-        thickness: "W: 1.3 × D: 2.2 / 45°",
-      },
-      {
-        spec: "Dienes — Single Groove",
-        od: "130 × 80",
-        id: "12",
-        thickness: "W: 1.5 × D: 3.0 / 60°",
-      },
-      {
-        spec: "Custom Anvil / Hardfaced",
-        od: "Per Drawing",
-        id: "OEM Spec",
-        thickness: "Exact CNC Machined Groove",
-      },
-    ],
-    relatedBladeIds: [
-      "groove-bottom-knives",
-      "rotary-slitter-knives",
-      "rotary-slitter-knives-paper",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 200,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Com que frequência devo substituir a faca de bigorna ranhurada inferior em comparação com a lâmina superior?",
+            "O que define uma bigorna de substituição com fundo ranhurado?",
           answer:
-            "As facas da bigorna inferior operam sob carga compressiva na face da ranhura e, normalmente, duram de 3 a 5 vezes mais do que a lâmina de corte superior. No entanto, como o desgaste é gradual — a face da ranhura se arredonda lentamente —, é fácil não perceber a deterioração na qualidade do corte até que as taxas de refugo aumentem. Recomendamos inspecionar a geometria da face da ranhura (largura e profundidade da ranhura) a cada 3 ciclos de substituição da lâmina superior e substituir a bigorna quando o desvio da largura da ranhura exceder ±0,03 mm em relação à especificação do fabricante original (OEM).",
+            "A aresta de trabalho, o perfil da ranhura, a largura do anel, o furo e o arranjo de travamento definem a substituição. Inclua a profundidade da ranhura e a posição axial da aresta de corte em relação à faca superior correspondente. Esses recursos estabelecem a geometria de trabalho além do diâmetro externo e do diâmetro interno. Para várias posições de corte em um corpo, consulte [Facas de fundo multi-ranhuras](/products/groove-bottom-knives) .",
+        },
+        {
+          question: "O que significam os tipos de bloqueio NN, NG e NS?",
+          answer:
+            "Na terminologia DIENES , NN significa furo liso, NG usa travamento excêntrico e NS usa travamento por parafuso. Os anéis NN são posicionados com espaçadores e fixados axialmente; O NG utiliza um anel excêntrico, enquanto o NS utiliza um parafuso que atua no eixo. Especifique o furo, a largura do anel e o perfil de trabalho junto com o tipo de montagem ao solicitar peças de reposição.",
         },
         {
           question:
-            "Qual deve ser a folga de cisalhamento entre a lâmina superior e a ranhura da bigorna inferior?",
+            "Por que a qualidade do corte do papel pode permanecer ruim após a substituição da faca superior?",
           answer:
-            "A folga de cisalhamento depende do substrato. Para filmes plásticos flexíveis (BOPP, BOPET, CPP), o padrão é de 0,02 a 0,05 mm de cada lado. Para papel kraft e papelão, de 0,05 a 0,10 mm. Para folhas de alumínio e cobre, o padrão é de 0,01 a 0,03 mm por lado. Verificamos previamente os pares de partes superior e inferior para garantir que estejam de acordo com a folga especificada por você e registramos a configuração em uma ficha técnica de engenharia que acompanha cada pedido, permitindo que os operadores reproduzam a folga em todas as reinstalações.",
+            "O corte por cisalhamento de papel depende do par completo de facas e de sua configuração. Verifique a borda de trabalho inferior, o emparelhamento do material, a condição do suporte, a sobreposição, a pressão lateral e o ângulo de inclinação. Uma nova faca superior ainda funciona contra a faca inferior retida, portanto, comparar ambas as superfícies de trabalho e seu ajuste ajuda a identificar o que permanece sem solução no arranjo de corte.",
         },
         {
           question:
-            "Posso encomendar lâminas de bigorna de reposição sem comprar um par completo?",
+            "Qual material ou revestimento é adequado para uma bigorna usada com telas adesivas?",
           answer:
-            "Sim. Fornecemos facas de bigorna inferiores como peças de reposição avulsas, usinadas de acordo com o perfil da ranhura e o diâmetro externo/interno do seu sistema de eixo de faca superior existente. Informe-nos a plataforma do fabricante original (Tidland, Kampf, Atlas, etc.) e o diâmetro externo/interno da faca superior, e nós adaptaremos a bigorna à geometria de acoplamento. Se você nos fornecer uma bigorna desgastada como amostra, podemos fazer a engenharia reversa do perfil original da ranhura antes do reafiamento.",
+            "Separa o captador de adesivo do desgaste das bordas. Para acúmulo de cola em uma borda sólida, revise a geometria de contato, o acabamento superficial e o sistema adesivo ao considerar as opções disponíveis de TiN, DLC ou PTFE. Para desgaste ou lascas, avalie primeiro o material de base e a faca correspondente. Compare as opções de superfície sob as mesmas condições de alma e corte para avaliar se elas resolvem o problema real.",
         },
         {
           question:
-            "Por que a qualidade do corte continua piorando mesmo depois de trocar a lâmina superior por uma nova?",
+            "Sureay pode fornecer um anel de bigorna personalizado sem substituir a faca superior?",
           answer:
-            "Se as novas lâminas superiores não restaurarem a qualidade do corte, é quase certo que a ranhura da bigorna esteja desgastada além das especificações. Uma face da ranhura arredondada ou alargada aumenta a folga efetiva de cisalhamento, independentemente da condição das lâminas superiores, produzindo uma borda de corte irregular e com franjas. Inspecione a largura e a profundidade da ranhura com um medidor de ranhura ou um perfilômetro. Se o desvio da ranhura exceder ±0,03 mm em relação às especificações do fabricante original (OEM), será necessária a substituição ou o reafiamento da bigorna.",
+            "Sim. Um anel de substituição pode ser feito de acordo com o furo, largura do anel, perfil da ranhura, posição da aresta de corte e detalhes de travamento exigidos pelo eixo existente. Inclua as dimensões e a posição de trabalho da faca superior retida. Para pedidos baseados em amostras, distinga as superfícies de corte desgastadas das superfícies de montagem para que o novo anel seja definido ao redor da faca superior que você manterá.",
+        },
+        {
+          question:
+            "Uma luva de suporte de navalha pode substituir uma bigorna de corte?",
+          answer:
+            "Uma luva de suporte da navalha fornece folga para o fio da navalha, enquanto uma bigorna de corte fornece uma borda cortante cooperante. Seus perfis de trabalho atendem a diferentes métodos de corte. Especifique a lâmina correspondente, o método de corte e a posição da borda necessária ao fazer o pedido; a presença de uma ranhura por si só não identifica o componente inferior correto.",
         },
       ],
-      company: [
-        {
-          question:
-            "Vocês fornecem facas de bigorna inferior como parte de um par combinado ou apenas individualmente?",
-          answer:
-            "Ambas as opções estão disponíveis. Para novas instalações ou reconstruções completas de eixos, recomendamos pares combinados — lâmina superior e bigorna inferior verificadas de acordo com uma folga de cisalhamento especificada, acompanhadas de uma ficha técnica conjunta. Para pedidos de reposição em linhas existentes, estão disponíveis facas de bigorna avulsas, usinadas de acordo com o perfil de ranhura do fabricante original (OEM), com prazo de entrega padrão de 5 a 7 dias.",
-        },
-        {
-          question:
-            "Para quais plataformas de fabricantes de equipamentos originais (OEM) a Sureay fornece facas de bigorna compatíveis?",
-          answer:
-            "Atualmente, mantemos em estoque e fornecemos facas de bigorna com perfil ranhurado para as marcas Tidland (eixos de ranhura única e dupla), Kampf (séries de eixos estreitos e largos), Atlas Converting Equipment, Goebel, BHS, Agnati e Dusenbery. Para outras plataformas OEM, forneça o desenho do eixo ou uma amostra desgastada e nós projetaremos uma peça de reposição compatível.",
-        },
-        {
-          question:
-            "Vocês fazem entregas para o mundo todo e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As facas de bigorna com perfil OEM padrão são enviadas em 48 a 72 horas. Os perfis de ranhura personalizados levam de 7 a 12 dias úteis. Trabalhamos em parceria com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "groove-bottom-knives",
+      "slitter-rewinder-bottom-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Fonte de facas cortadoras de metal duro de reposição com furos, espessuras e perfis de corte personalizados. Sureay oferece construções de metal duro e anéis de metal duro; compartilhe seu desenho e aplicação para obter um orçamento da configuração exigida por sua máquina.",
     id: "tungsten-carbide-slitter-knives",
-    name: "Facas de corte de carboneto de tungstênio",
+    name: "Facas de corte longitudinal de carboneto de tungstênio",
     fullName:
-      "Lâminas de corte de carboneto de tungstênio para corte com alto desgaste",
+      "Facas de corte longitudinal de carboneto de tungstênio, inteiriças ou com fio de metal duro",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Lâminas de corte",
+    categoryDisplay: "Facas de corte longitudinal de carboneto de tungstênio",
     image:
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-    gallery: [
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
-    ],
-    galleryAlts: [
-      "Facas de corte de carboneto de tungstênio, três lâminas circulares retificadas com faces polidas",
-      "Detalhe de uma lâmina de corte de carboneto, mostrando o furo central, os orifícios de fixação e a aresta de corte retificada",
-    ],
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "O metal duro custa de seis a dez vezes mais do que o D2. Esse custo adicional se justifica exatamente em duas situações: quando a banda transporta material de enchimento abrasivo ou quando as tiragens são longas o suficiente para que o tempo de inatividade devido à troca — e não o preço da lâmina — seja o que realmente gera custo para você. Microgrãos YG6, YG6X, YG8 e YG10X (ISO K10–K30) com dureza de 89,5–92,5 HRA, retificados com tolerância de ±0,002 mm, acompanhados de um laudo de dureza e dimensões em cada remessa.",
-    fullDescription:
-      "As lâminas de corte em carboneto de tungstênio são uma opção para resistência ao desgaste, não uma atualização geral. Se você estiver cortando BOPP transparente em tiragens curtas, as lâminas D2 ou ASP23 PM serão mais adequadas e mais econômicas, e nós lhe informaremos isso antes de você fazer o pedido. Esta página é destinada aos trabalhos em que o aço para ferramentas realmente não consegue manter o fio: filmes com enchimento mineral, laminados reforçados com fibra de vidro, não tecidos abrasivos, folhas revestidas e papelão de alta velocidade.\n\n## Quando a atualização compensa\n\nO carboneto vale a pena quando o custo da parada da linha excede o custo da lâmina. Calcule o número de trocas de lâmina por mês, multiplique pelo custo do tempo de inatividade por troca e compare esse valor com a diferença de preço. Em uma linha em que uma troca custa uma hora de produção, uma vida útil 10 vezes maior geralmente se paga em um ou dois ciclos de lâmina. Em uma linha em que as trocas são rápidas e baratas, isso não acontecerá.\n\n## Onde o carboneto compensa o custo\n\n**Filmes com adição de minerais e cargas:** BOPP com adição de TiO₂, PE com carga de carbonato de cálcio, tipos foscos e com cavitação. A carga é o que destrói as lâminas de aço; a dureza é a única defesa.\n\n**Laminados reforçados com fibra de vidro e compósitos:** acabamentos em FR-4 e pré-impregnados, fitas reforçadas com fibra de vidro, telas de compósito de alumínio. O conteúdo de vidro é altamente abrasivo e embota o HSS em um turno.\n\n**Não tecidos abrasivos:** meltblown com adição de minerais, spunbond com enchimento, substratos com revestimento abrasivo e de limpeza, nos quais o fiapo das fibras aparece no momento em que a aresta amolece.\n\n**Folhas metálicas, tiras revestidas e eletrodos de bateria:** folhas de alumínio e cobre, tiras revestidas e laminadas, onde as bordas sem rebarbas devem se manter em toda a extensão da bobina.\n\n**Papelão e papel revestidos de alta velocidade:** matérias-primas revestidas com argila e pigmentos em linhas onde a troca de lâmina custa uma hora de produção e o preço da lâmina é insignificante em comparação com isso.\n\n## Onde o carboneto é a escolha errada\n\n**Cortes com impacto e intermitentes.** O metal duro é frágil. Se a banda ficar presa, se a fita de emenda passar pela lâmina ou se a lâmina entrar em contato metal com metal com a bigorna, o metal duro se lasca, enquanto o D2 se deforma e sobrevive.\n\n**Substratos limpos e sem enchimento em tiragens curtas.** Cortar BOPP transparente, papel kraft comum ou PE sem enchimento? O D2 ou o ASP23 PM mantêm o fio por tempo suficiente, por uma fração do custo.\n\n**Sem acesso à afiação com diamante.** Se nem você nem seu parceiro de serviços puderem reafiar com rebolos de diamante, uma lâmina de metal duro cega se torna sucata, em vez de um ativo que pode ser reafiado — e a relação custo-benefício se inverte.\n\n**Folga solta ou não verificada.** O metal duro amplifica o que quer que sua configuração já faça. Ele não compensará um eixo desgastado, um porta-lâmina desalinhado ou uma folga que ninguém tenha medido.",
+      "Facas cortadoras de substituição sólidas e com ponta de metal duro para conversão e processamento de metal. Tamanhos personalizados, furos e perfis de corte adequados à aplicação.",
     link: "/products/tungsten-carbide-slitter-knives",
-    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
     specs: [
+      {
+        label: "Tamanhos",
+        value:
+          "Perfis finos: DE 20–300 mm × 0,3–5,0 mm; diâmetro externo do corrugador 220–340 mm; diâmetro externo rotativo 150,1–300,15 mm",
+      },
       {
         label: "Material",
         value:
-          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+          "Metal duro WC-Co nas classes YG6 , YG6X , YG8 , YG10X , YG12X e YG15",
       },
       {
-        label: "Hardness",
-        value: "89.5–92.5 HRA",
+        label: "Aplicações",
+        value: "Papelão ondulado, filme, tela de eletrodo e tira de metal",
       },
       {
-        label: "Grain Size",
-        value: "0.4–0.8 µm, ultra-fine to sub-micron",
+        label: "Dureza",
+        value: "89,5–92,5 HRA, dependendo do tipo de metal duro",
       },
       {
-        label: "Transverse Rupture Strength",
+        label: "Opções de grãos finos",
+        value: "Tamanho de grão de carboneto de 0,4–0,8 μm",
+      },
+      {
+        label: "Construção",
+        value:
+          "Disco de metal duro ou corpo de aço com anel de corte de metal duro",
+      },
+      {
+        label: "Opções de precisão",
+        value:
+          "Espessura ±0,002 mm; paralelismo das faces ≤0,005 mm; T.I.R. ≤0,01 mm",
+      },
+      {
+        label: "Acabamento de borda",
+        value: "Ra 0.2–0.4 μm",
+      },
+      {
+        label: "Geometria da borda",
+        value: "Bisel simples, bisel duplo, perfil oco ou navalha",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value: "DLC, TiN ou TiAlN ; facas não revestidas também disponíveis",
+      },
+      {
+        label: "Resistência à Ruptura Transversal",
         value: "2,500–3,000 N/mm²",
       },
-      {
-        label: "Outer Diameter",
-        value: "20–300 mm",
-      },
-      {
-        label: "Thickness",
-        value: "0.3–5.0 mm",
-      },
-      {
-        label: "Tolerance",
-        value:
-          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
-      },
-      {
-        label: "Edge Finish",
-        value: "Ra 0.2–0.4 µm",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single bevel, double bevel, hollow ground, razor",
-      },
-      {
-        label: "Coatings",
-        value: "Uncoated, DLC, TiN, TiAlN (optional)",
-      },
-      {
-        label: "Applications",
-        value:
-          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
-      },
     ],
-    steelGrades: {
-      intro:
-        "O teor de cobalto é o fator de equilíbrio: quanto mais cobalto, mais resistente e menos frágil, mas o fio fica cego mais cedo. Os quatro tipos de carboneto abaixo são apresentados em comparação com os aços para ferramentas que substituem, de modo que a decisão de atualização fica clara em uma única tabela. Se suas lâminas de aço atuais estão ficando cegas, opte por um material mais duro. Se estiverem lascando, opte por um material mais resistente. Se ocorrerem os dois problemas, a causa geralmente é a folga, e não o material.",
-      rows: [
+    detailLayout: {
+      seoTitle: "facas cortadoras metal duro | Tamanhos personalizados",
+      sizeRange: "OD 20–340 mm",
+      heroAlt: "Três facas de corte circular metal duro sólido",
+      specificationImage: {
+        src: "/images/products/slitter-detail/tungsten-carbide-slitter-knives-detail.webp",
+        alt: "Anéis da faca inferior do rebobinador mostrando o corpo e o perímetro de corte",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
         {
-          grade: "D2",
-          hardness: "HRC 58–62",
-          bestFor:
-            "Corte longitudinal de uso geral de substratos limpos e sem enchimento",
-          tradeoff:
-            "Vida útil inicial da aresta e custo inicial. Material triturado em rebolos convencionais.",
+          id: "thin",
+          tabLabel: "Lâminas Finas de Carboneto",
+          title: "Lâminas Finas de Carboneto",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Referência do equipamento",
+            "Padrão de montagem",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Padrão 6 × Ø9 mm"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "Padrão de 4 slots"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Desenho de partida"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Desenho de partida"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Desenho de partida"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Desenho de partida"],
+            [
+              "SR001410",
+              "280 × 160 × 1.1 mm",
+              "Mitsubishi",
+              "Desenho de partida",
+            ],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Desenho de partida"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Desenho de partida"],
+            [
+              "SR001413",
+              "340 × 230.2 × 1.0 mm",
+              "Göpfert",
+              "Desenho de partida",
+            ],
+          ],
         },
         {
-          grade: "M2 HSS",
-          hardness: "HRC 62–65",
-          bestFor: "Desgaste moderado em velocidades de linha mais altas",
-          tradeoff:
-            "2 a 3 vezes a vida útil do D2, a um custo de aproximadamente 1,5 vez o do D2.",
-        },
-        {
-          grade: "ASP23 PM",
-          hardness: "HRC 66–68",
-          bestFor:
-            "Trabalhos de alta velocidade e alto desgaste que não envolvam abrasivos propriamente ditos",
-          tradeoff:
-            "Vida útil 4 a 6 vezes maior do que a do D2, a um custo de aproximadamente 3 vezes maior — frequentemente, a melhor opção comercial.",
-        },
-        {
-          grade: "YG6 (ISO K10)",
-          hardness: "89,5–91,5 HRA",
-          bestFor:
-            "Corte contínuo e com baixo impacto de filmes abrasivos e papel",
-          tradeoff:
-            "6% de cobalto. O mais duro dos quatro tipos de carboneto e o menos resistente a impactos.",
-        },
-        {
-          grade: "YG6X (ISO K10UF)",
-          hardness: "91–92,5 HRA",
-          bestFor:
-            "Espessura fina, tolerância estreita, a melhor qualidade de borda possível",
-          tradeoff:
-            "6% de cobalto, grão ultrafino. Lâmina mais afiada, mais sensível a cortes intermitentes.",
-        },
-        {
-          grade: "YG8 (ISO K20)",
-          hardness: "88,5–90,5 HRA",
-          bestFor:
-            "Tecidos não tecidos, folhas metálicas, em qualquer lugar onde a tela possa ficar presa",
-          tradeoff:
-            "8% de cobalto. Mais resistente e tolerante a impactos, em troca de uma menor durabilidade das arestas.",
-        },
-        {
-          grade: "YG10X (ISO K30)",
-          hardness: "90,5–91,5 HRA",
-          bestFor: "Cortes interrompidos, laminados e papéis mais pesados",
-          tradeoff:
-            "10% de cobalto, grão ultrafino. O melhor equilíbrio entre tenacidade e resistência ao desgaste da linha.",
+          id: "carbide",
+          tabLabel: "Facas de Carboneto",
+          title: "Facas rotativas de metal duro",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Construção",
+          ],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Carboneto sólido"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Carboneto sólido"],
+            ["SR001333", "204 × 125 × 10 mm", "Carboneto sólido"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Carboneto sólido"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Carboneto sólido"],
+          ],
         },
       ],
-      outro:
-        "Em toda a linha de produtos, o metal duro oferece uma vida útil da lâmina cerca de 10 a 30 vezes maior do que a do D2, a um custo de 6 a 10 vezes maior, requer menos ciclos de reafiação e só pode ser reafiado em rebolos de diamante. Como fazer as contas: o metal duro vale a pena quando o custo de parar a linha de produção excede o custo da lâmina. Informe-nos o material e o tipo de falha que você está observando no momento, e nós escolheremos a classe adequada.",
-    },
-    componentsIntro:
-      "Envie uma lâmina gasta e o modelo da sua máquina — faremos a engenharia reversa da folga e apresentaremos um orçamento em até 2 horas.",
-    components: [
-      {
-        id: "carbide-when-it-pays",
-        tag: "ADAPTAÇÃO DA APLICAÇÃO",
-        title: "Onde o carboneto justifica seu custo",
-        description:
-          "O enchimento abrasivo é o que destrói as bordas de aço, e a dureza é a única defesa. BOPP com adição de TiO₂, PE com enchimento de carbonato de cálcio, FR-4 e acabamentos em pré-impregnado, fita reforçada com fibra de vidro, tecido fundido com adição de minerais, folhas revestidas de alumínio e cobre e cartolina revestida com argila — todos desgastam a lâmina de aço para ferramentas mais rapidamente do que o comprimento de produção permite. A mesma lógica de classificação se aplica independentemente do substrato — trata-se de uma decisão relacionada ao material, não à aplicação.",
-      },
-      {
-        id: "carbide-when-not-to",
-        tag: "LIMITES HONESTOS",
-        title: "Quando o carboneto não é a escolha certa",
-        description:
-          "O carboneto é uma solução para resistência ao desgaste, não uma melhoria geral. Ele lasca onde o D2 se deformaria — em emendas, obstruções e cortes interrompidos, ou onde a lâmina pode entrar em contato metal com metal com a bigorna. Em substratos limpos e sem enchimento e em tiragens curtas, o D2 ou o ASP23 PM mantêm o fio por tempo suficiente por uma fração do preço. E sem acesso ao reafiamento com disco de diamante, uma lâmina de carboneto cega é lixo, e não um ativo. Se alguma dessas características se aplicar à sua linha de produção, informe-nos quando fizer sua consulta — preferimos indicar o aço correto.",
-      },
-      {
-        id: "carbide-grade-selection",
-        tag: "METALURGIA",
-        title: "Substrato de microgrãos, escolhido de acordo com cada trabalho",
-        description:
-          "Selecionamos entre quatro classes de acordo com o seu material e o seu modo de falha atual, em vez de enviar uma única classe para todas as aplicações. As classes submicrométricas apresentam um fio mais afiado; as classes com maior teor de cobalto resistem a impactos. O carboneto só pode ser acabado em rebolos de diamante, e a geometria do fio, o paralelismo e o desvio são submetidos ao mesmo padrão de inspeção que nossa retificação de aço para ferramentas — cada lâmina é medida antes da expedição, com um relatório de teste de dureza e um registro dimensional incluídos na embalagem.",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "nonwoven-slitter-knives",
-      "metal-coil-slitting-knives",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 600,
-    },
-    faqs: {
-      technical: [
+      technicalSpecs: [
         {
-          question:
-            "Quando devo optar pelo metal duro em vez do aço rápido M2 ou do D2?",
-          answer:
-            "Somente quando sua tela contém enchimento abrasivo ou quando suas tiragens são longas o suficiente para que a economia com material moído e com a troca de molde cubra a diferença de preço de 6 a 10 vezes. Para filmes transparentes padrão, papel comum ou PE sem enchimento, o PM D2 ou ASP23 costuma ser a melhor opção comercial — e é isso que vamos dizer.",
+          label: "Tamanhos",
+          value:
+            "Perfis finos: DE 20–300 mm × 0,3–5,0 mm; diâmetro externo do corrugador 220–340 mm; diâmetro externo rotativo 150,1–300,15 mm",
         },
         {
-          question:
-            "Quantas vezes uma lâmina de corte de carboneto pode ser reafiada?",
-          answer:
-            "Isso depende da margem de espessura prevista no projeto da lâmina, e não do material. Cada reafiação remove material; o limite prático é atingido quando a lâmina fica mais fina do que sua tolerância de folga. O metal duro normalmente requer menos reafiações do que o D2, mas oferece um tempo de operação muito maior entre cada uma delas, e é aí que reside a vantagem econômica. São necessários discos de diamante — os discos convencionais de óxido de alumínio ficam vitrificados e não cortam o metal duro.",
+          label: "Material",
+          value:
+            "Metal duro WC-Co nas classes YG6 , YG6X , YG8 , YG10X , YG12X e YG15",
         },
         {
-          question:
-            "Minha lâmina de carboneto lascou logo na primeira passagem — o que deu errado?",
-          answer:
-            "Quase sempre é uma dessas três coisas. Manuseio: uma lâmina de carboneto que cai no chão de concreto desenvolve tensão interna e rachaduras que permanecem invisíveis até que seja aplicada uma carga. Folga: se ajustada muito apertada, a faca entra em contato metal com metal com a bigorna e apresenta microlascas ao longo do fio. Ou a aplicação envolve um impacto — uma emenda, um empecilho, um corte interrompido — que a fragilidade do carboneto não consegue absorver. Envie-nos uma foto do gume lascado; o padrão de fratura geralmente identifica qual das três causas foi a responsável.",
+          label: "Aplicações",
+          value: "Papelão ondulado, filme, tela de eletrodo e tira de metal",
         },
         {
-          question: "YG6 ou YG8 — qual grau devo especificar?",
-          answer:
-            "O YG6 (ISO K10) é mais duro e tem maior durabilidade em trabalhos abrasivos constantes e limpos. O YG8 (ISO K20) contém mais cobalto, por isso é mais resistente e tolera impactos, embora isso reduza um pouco a vida útil do fio. Se suas lâminas de aço atuais estão ficando cegas, opte por uma de maior dureza. Se estiverem lascando, opte por uma mais resistente. Se ocorrerem ambos os problemas, a causa geralmente está na folga, e não no material.",
+          label: "Dureza",
+          value: "89,5–92,5 HRA, dependendo do tipo de metal duro",
         },
         {
-          question:
-            "Uma lâmina superior de carboneto pode funcionar contra uma bigorna inferior de aço?",
-          answer:
-            "Sim, e isso é comum — mas, nesse caso, a bigorna passa a ser a peça sujeita a desgaste e precisará de manutenção mais cedo do que antes. Se a bigorna for mais macia, verifique a folga com mais frequência, pois o desgaste da bigorna aumenta a folga e o primeiro sintoma é uma borda irregular que parece um problema com a lâmina. Estão disponíveis pares combinados de metal duro nos casos em que o desgaste da bigorna é o fator limitante.",
+          label: "Opções de grãos finos",
+          value: "Tamanho de grão de carboneto de 0,4–0,8 μm",
         },
         {
-          question:
-            "Como as lâminas de carboneto devem ser armazenadas e manuseadas?",
-          answer:
-            "Separadas individualmente, nunca empilhadas com contato direto de metal com metal, em um ambiente seco. A maioria das falhas em carbonetos que investigamos teve início no almoxarifado ou durante o transporte, e não na máquina. As lâminas são enviadas em embalagens protetoras que vale a pena guardar para aquelas que você não estiver utilizando.",
-        },
-      ],
-      company: [
-        {
-          question: "Você é um fabricante ou uma empresa comercial?",
-          answer:
-            "Nós fabricamos. A retificação, o controle tratamento térmico e a inspeção são realizados em nossas próprias instalações, certificadas pela ISO 9001:2015, em operação desde 2008 e com remessas para mais de 50 países. É por isso que podemos apresentar uma cotação com base em uma amostra desgastada e garantir a precisão das medidas que acompanham a remessa.",
+          label: "Construção",
+          value:
+            "Disco de metal duro ou corpo de aço com anel de corte de metal duro",
         },
         {
-          question:
-            "É possível fabricar lâminas de carboneto sem um desenho do fabricante original?",
-          answer:
-            "Sim — envie uma lâmina desgastada e o modelo da sua máquina. Medimos a amostra, fazemos a engenharia reversa da folga de trabalho a partir do padrão de desgaste e produzimos uma peça de reposição compatível; o padrão de desgaste geralmente nos fornece mais informações sobre como a lâmina está realmente funcionando do que o desenho original. O diâmetro interno, a ranhura de chaveta, o padrão dos furos de fixação e a espessura são adaptados aos eixos que você já utiliza, de modo que não há necessidade de trocar o porta-fresas nem de reajustar o equipamento.",
+          label: "Opções de precisão",
+          value:
+            "Espessura ±0,002 mm; paralelismo das faces ≤0,005 mm; T.I.R. ≤0,01 mm",
         },
         {
-          question: "Que documentação acompanha um pedido de carboneto?",
-          answer:
-            "Um relatório de teste de dureza e um registro de inspeção dimensional acompanham cada remessa, provenientes de uma unidade certificada pela ISO 9001:2015. Caso sua inspeção de recebimento exija dados completos da CMM, solicite-os no momento do pedido e eles serão enviados junto com as lâminas. Quando várias facas compartilham um eixo, elas são retificadas e enviadas como um conjunto verificado e combinada, de modo que o erro de empilhamento não se acumule entre as posições.",
+          label: "Acabamento de borda",
+          value: "Ra 0.2–0.4 μm",
         },
         {
-          question:
-            "Será que podemos testar um pequeno conjunto de carbonetos antes de fechar um pedido completo?",
-          answer:
-            "Sim. Fornecemos conjuntos de teste — geralmente de 2 a 5 lâminas — para verificação do ajuste na máquina e testes de durabilidade do fio de corte em comparação com suas lâminas de aço atuais. Preferimos que você comprove o retorno do investimento em sua própria linha de produção, em vez de acreditar apenas na nossa palavra quanto ao fator de multiplicação. Para perfis personalizados, é produzida uma amostra de aprovação dimensional antes do início da produção em escala.",
+          label: "Geometria da borda",
+          value: "Bisel simples, bisel duplo, perfil oco ou navalha",
         },
         {
-          question:
-            "Qual é o prazo de entrega das lâminas de corte de metal duro?",
-          answer:
-            "Os perfis padrão em classes em estoque são enviados em 7 a 12 dias úteis; geometrias personalizadas e diâmetros fora do padrão levam de 15 a 20 dias. O metal duro tem vida útil mais longa do que o aço para ferramentas, pois a fabricação de peças sinterizadas e o acabamento com disco de diamante não podem ser apressados sem comprometer a qualidade do fio. As lâminas são enviadas separadas individualmente em embalagens protetoras — a maioria dos danos ao metal duro que investigamos ocorreu durante o transporte ou o armazenamento, e não na máquina.",
+          label: "Revestimentos opcionais",
+          value: "DLC, TiN ou TiAlN ; facas não revestidas também disponíveis",
+        },
+        {
+          label: "Resistência à Ruptura Transversal",
+          value: "2,500–3,000 N/mm²",
         },
       ],
     },
-  },
-  {
-    id: "metal-cold-saw-blades",
-    name: "Lâminas de serra a frio para metal",
-    fullName:
-      "Lâminas de serra circular a frio HSS e TCT para corte de tubos e perfis metálicos",
-    category: "cold_saw_blades",
-    sector: "metal",
-    categoryDisplay: "Lâminas para processamento de metais",
-    image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Corte sem rebarbas",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-01.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
-    ],
-    description:
-      "Lâminas de serra a frio Premium HSS (M2 / M35 cobalto) e TCT para o corte de tubos de aço, barras maciças, perfis de alumínio e aço inoxidável. O processo de corte a frio produz uma extremidade precisa e sem rebarbas, sem zona afetada pelo calor (HAZ) — pronta para soldagem ou rosqueamento imediatos.",
-    fullDescription:
-      "O corte com serra circular a frio é o processo preferido de corte de metal para usinas de tubos, fabricação de estruturas e aplicações de barras de precisão. Ao contrário dos discos de corte abrasivos ou das serras de fita, uma lâmina de serra circular a frio corta por remoção de metal (formação de cavacos), em vez de abrasão por alto atrito. Isso mantém o material resfriado, produzindo uma face de corte lisa e perfeitamente perpendicular, sem distorção térmica e sem a necessidade de rebarbação secundária.\n\nAs lâminas de serra a frio da Sureay são fabricadas nas configurações M2 (HSS padrão), M35 (HSS com 5% de cobalto) e TCT (com pontas de carboneto de tungstênio). Todas as lâminas são fabricadas de acordo com as rigorosas normas DIN 1837/1840 e estão disponíveis em diâmetros padrão de 200 mm a 450 mm, com configurações de dentes e revestimentos PVD adequados ao material da peça de trabalho.\n\n## Guia de seleção de materiais e classes\n\n**M2 HSS (padrão / tratado a vapor):** A classe básica para o corte a frio de tubos de aço macio, tubos estruturais e perfis angulares com resistência à tração de até 400 MPa. Oferece excelente tenacidade para cortes interrompidos em perfis ocos. Normalmente fornecida com acabamento de óxido preto (tratada a vapor) para reter o refrigerante e evitar a microsoldagem.\n\n**M35 HSS com cobalto (recomendada para aço inoxidável):** A adição de 5% de cobalto eleva drasticamente a dureza a quente da lâmina e sua resistência ao desgaste. Isso é essencial ao cortar aço inoxidável austenítico 304/316, que se endurece rapidamente sob a lâmina. O M35 mantém a geometria afiada do gume mesmo sob as elevadas temperaturas de corte geradas pelo aço inoxidável.\n\n**TCT (com ponta de carboneto de tungstênio):** Insertos de carboneto soldados por brasagem em um corpo de aço de alta liga. Ideal para aplicações em usinarias de tubos de alto volume e metais não ferrosos (extrusões de alumínio, tubos de cobre) operando em altas velocidades de corte. Proporciona vida útil 5 a 8 vezes maior em comparação com o HSS em perfis de alumínio.\n\n## Revestimentos PVD avançados\nPara prolongar significativamente a vida útil da lâmina e reduzir o atrito de corte, oferecemos revestimentos PVD avançados:\n- **TiN (Nitreto de titânio — Dourado):** Reduz o coeficiente de atrito, ideal para o corte de tubos de aço padrão em velocidades mais altas.\n- **TiAlN (nitreto de titânio-alumínio — violeta/preto):** Forma uma camada dura de óxido de alumínio durante o corte, protegendo os dentes do calor extremo. A escolha definitiva para o corte de aço inoxidável, ferro fundido e ligas de alta resistência.",
-    link: "/products/metal-cold-saw-blades",
-    isFeatured: false,
     compatibleMachines: [
-      "Kaltenbach",
-      "Bewo",
-      "MEP",
-      "Kasto",
-      "Macc",
-      "Pedrazzoli",
-      "Ficep",
-    ],
-    specs: [
-      {
-        label: "Grade Options",
-        value: "M2 HSS (DMo5) · M35 Cobalt (Co5) · TCT Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 63–65 (M2) | HRC 64–66 (M35) | Carbide Tipped",
-      },
-      {
-        label: "Surface Finish",
-        value: "Steam Treated (Black) / TiN / TiAlN PVD Coatings",
-      },
-      {
-        label: "Tooth Form",
-        value: "BW, HZ (Standard) | Fine / Medium / Coarse Pitch",
-      },
-      {
-        label: "Application",
-        value: "Steel Pipes, Stainless Tubes, Aluminum Profiles, Solid Bars",
-      },
+      "BHS",
+      "Fosber",
+      "Dusenbery",
+      "DIENES",
+      "Tidland",
+      "Nishimura",
+      "Fagor Arrasate",
     ],
     components: [
       {
-        id: "cold-cut-quality",
-        tag: "VANTAGEM DO PROCESSO",
-        title: "Discos de corte a frio x discos abrasivos",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Configurações de facas sólidas e com ponta de metal duro",
         description:
-          "Os discos abrasivos geram temperaturas acima de 800 °C, produzindo uma zona afetada pelo calor (HAZ) e escória pesada que precisa ser removida por esmerilhamento. O corte com serra circular a frio opera em baixa rotação com líquido de refrigeração, mantendo a superfície de corte abaixo de 200 °C. O resultado é uma superfície limpa e pronta para soldagem assim que sai da máquina.",
+          "Escolha discos de metal duro sólido ou corpos de aço com anéis de corte de metal duro para combinar com a construção exigida pela sua cortadora existente e pedido de substituição.",
       },
       {
-        id: "grade-cobalt",
-        tag: "METALURGIA",
-        title: "M35 Cobalto para aço inoxidável",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Formas de borda do solo com revestimentos opcionais",
         description:
-          "O aço inoxidável (304/316) sofre endurecimento por deformação sob pressão de corte, o que embota instantaneamente as lâminas M2 padrão. Nossa classe M35 contém 5% de cobalto, o que lhe confere extrema “dureza vermelha” para cortar o aço inoxidável austenítico sem perder a geometria do fio.",
+          "Perfis de chanfro único, chanfro duplo, retificados ocos e de navalha podem ser especificados com superfícies não revestidas ou revestimentos DLC, TiN e TiAlN selecionados, proporcionando controle sobre o formato da lâmina e o acabamento solicitado.",
       },
       {
-        id: "pvd-coatings",
-        tag: "TECNOLOGIA DE SUPERFÍCIE",
-        title: "Revestimentos de TiN e TiAlN",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Facas de metal duro personalizadas para cortadores existentes",
         description:
-          "Embora as lâminas padrão tratadas a vapor sejam excelentes para aço carbono, a mudança para revestimentos PVD de TiN (nitreto de titânio) ou TiAlN reduz drasticamente o atrito e o calor. Isso permite velocidades de avanço mais rápidas e evita que o material se solde a frio aos dentes da serra.",
+          "Furos personalizados, seções axiais e perfis de corte estão disponíveis para o desenho da sua faca ou referência de peça específica da máquina, para que os pedidos de substituição possam seguir a geometria da estação de corte instalada.",
+        relatedBladeIds: [
+          "corrugated-slitter-scorer-blades",
+          "metal-coil-slitting-knives",
+        ],
       },
     ],
-    dimensionLabels: {
-      col0: "Tipo e acabamento da lâmina",
-      col1: "Diâmetro externo (mm)",
-      col2: "Diâmetro interno (mm)",
-      col3: "Espessura (mm)",
-      col4: "Dentes (Z)",
-      caption:
-        "* Dimensões padrão para máquinas Kaltenbach, Bewo e MEP. O número de dentes (Z) é selecionado com base na espessura da parede do tubo. Orifícios personalizados para pinos de acionamento usinados sob encomenda.",
-    },
-    standardDimensions: [
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "250",
-        id: "32 / 40",
-        length: "2.0",
-        teeth: "120 z / 160 z",
-      },
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "275",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "140 z / 180 z",
-      },
-      {
-        spec: "M35 Cobalt (TiN Coated)",
-        od: "315",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "160 z / 200 z",
-      },
-      {
-        spec: "M35 Cobalt (TiAlN Coated)",
-        od: "350",
-        id: "40 / 50",
-        length: "2.5",
-        teeth: "160 z / 220 z",
-      },
-      {
-        spec: "M2 / M35 HSS",
-        od: "400",
-        id: "40 / 50",
-        length: "3.0",
-        teeth: "180 z / 240 z",
-      },
-      {
-        spec: "TCT (Aluminum Profile)",
-        od: "450",
-        id: "30 / 32",
-        length: "3.5",
-        teeth: "120 z",
-      },
-    ],
-    relatedBladeIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 420,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Como faço para escolher entre as classes de aço HSS M2 e M35 Cobalt?",
+            "Qual é a diferença entre facas de metal duro e facas com ponta de metal duro?",
           answer:
-            "Para aço estrutural padrão, tubos de aço macio e perfis em caixa, o M2 HSS oferece excelente tenacidade e custo-benefício. Se você estiver cortando aço inoxidável (304, 316), aço de alta resistência ou utilizando serras automáticas de alta velocidade, é necessário optar pela M35. A M35 contém 5% de cobalto, o que evita que os dentes amoleçam devido ao calor gerado pelo alto atrito.",
+            "Uma faca de metal duro usa carboneto através do corpo da faca. Uma faca com ponta de metal duro combina um corpo de aço com uma borda de trabalho ou anel de corte de metal duro. Especifique a construção, bem como a geometria de montagem. Facas rotativas de metal duro e lâminas cortadoras de metal duro são nomes de compra sobrepostos; nenhum dos nomes identifica a construção ou estação de corte por si só.",
         },
         {
           question:
-            "Quantos dentes (TPI / Passo) preciso para meus tubos de aço?",
+            "Quando devo escolher metal duro em vez de HSS ou facas cortadoras de aço ferramenta?",
           answer:
-            "A regra de ouro do corte a frio é ter sempre de 3 a 4 dentes em contato simultâneo com a espessura do material. Se você estiver cortando tubos de parede fina (por exemplo, parede de 1,5 mm), é necessário um passo fino (alto número de dentes, por exemplo, 220Z ou 240Z) para evitar que os dentes fiquem presos e se quebrem. Se você estiver cortando barras maciças grossas (por exemplo, 40 mm de diâmetro), precisará de um passo grosso (baixo número de dentes, por exemplo, 120Z) para permitir que as grandes limalhas de metal sejam expelidas.",
-        },
-        {
-          question: "As lâminas de serra a frio HSS podem ser reafiadas?",
-          answer:
-            "Sim. Essa é a maior vantagem das lâminas de serra a frio HSS. Ao contrário dos discos abrasivos, que são descartados, uma lâmina HSS pode ser reafiada por CNC de 10 a 15 vezes antes que o diâmetro fique pequeno demais para ser utilizada. Oferecemos serviços profissionais de reafiagem e recobrimento para restaurar o desempenho original de fábrica.",
+            "Considere o metal duro em relação ao padrão de desgaste que você precisa abordar. Uma faca que se desgasta gradualmente apresenta um problema de seleção diferente daquela que lasca. Compare o material atual, a geometria da aresta e as condições de trabalho, incluindo suporte e configuração da máquina. A dureza por si só não estabelece uma vida útil mais longa, e uma aresta mais dura não pode corrigir um suporte deficiente ou uma configuração incorreta.",
         },
         {
           question:
-            "Devo usar líquido de arrefecimento ao cortar com serras a frio HSS?",
+            "YG6 , YG8 e classes de metal duro com nomes semelhantes são intercambiáveis?",
           answer:
-            "Com certeza. É preciso usar um fluido de refrigeração de jato (óleo sintético ou semissintético solúvel em água, misturado em uma proporção de cerca de 8 a 10%) direcionado diretamente para os dentes de corte. O fluido de refrigeração remove as limalhas de metal e mantém a lâmina resfriada. O corte a seco com uma lâmina HSS queimará os dentes instantaneamente. Apenas lâminas TCT especializadas em máquinas de última geração são projetadas para corte a seco.",
+            "Nomes de classes semelhantes não estabelecem equivalência entre fornecedores ou sistemas de classificação. A estrutura do grão de metal duro, o conteúdo do ligante e a aplicação pretendida também definem o material. Forneça os requisitos de material especificados e o desempenho da faca atual ao solicitar uma substituição, para que o grau proposto possa ser avaliado além de seu nome ou dureza nominal.",
+        },
+        {
+          question:
+            "Por que uma faca cortadora de metal duro lasca antes de se desgastar?",
+          answer:
+            "Impacto, carga excessiva na aresta ou danos por retificação podem quebrar uma aresta de metal duro antes que o desgaste gradual se torne o problema principal. Inspecione o local do dano, o engate da faca, o suporte e o histórico recente de afiação. A resistência ao desgaste do carboneto não elimina sua sensibilidade ao choque. Estabeleça se o problema ocorre após manuseio, configuração ou retificação antes de alterar a classe ou a geometria da aresta de corte.",
+        },
+        {
+          question:
+            "As facas cortadoras de metal duro devem ser revestidas ou deixadas sem revestimento?",
+          answer:
+            "Estão disponíveis facas não revestidas e opções selecionadas de DLC, TiN ou TiAlN . Escolha com base no substrato de metal duro, material processado e desgaste observado. Especifique o revestimento separadamente do furo, espessura e perfil de corte necessários, para que a substituição retenha a geometria de montagem necessária enquanto a opção de superfície é considerada para a aplicação real.",
+        },
+        {
+          question:
+            "Podem ser feitas facas de metal duro personalizadas para uma cortadora existente?",
+          answer:
+            "Sim. Sureay pode fabricar facas sólidas ou com ponta de metal duro de acordo com um desenho específico da máquina ou referência de peça. Defina o furo, a seção axial, o perfil de corte, o componente de montagem e de acoplamento. Inclua o material processado, como [folha de metal](/products/metal-foil-strip-slitter-knives) ou [eletrodo revestido](/products/lithium-battery-slitting-knives) , para que o material e a construção sejam considerados com a geometria de substituição completa.",
+        },
+        {
+          question: "As facas cortadoras de metal duro podem ser retificadas?",
+          answer:
+            "Sim, onde resta material suficiente para restaurar o perfil de borda e as dimensões de trabalho especificadas. Avalie o disco em uma faca de metal duro; em um projeto com ponta, verifique também o anel de metal duro restante e sua fixação ao corpo. São necessárias retificações especializadas de metal duro e verificações dimensionais. Danos extensos ou material restante insuficiente podem tornar a substituição a opção apropriada.",
         },
       ],
-      company: [
-        {
-          question:
-            "Essas lâminas são compatíveis com a minha serra a frio específica?",
-          answer:
-            "Nossas lâminas apresentam diâmetros de furo padrão (por exemplo, 32 mm, 40 mm, 50 mm) e padrões universais de orifícios para pinos de acionamento que se adaptam a 95% do mercado, incluindo Kaltenbach, Bewo, MEP, Macc, Pedrazzoli e Kasto. Se sua máquina tiver um layout de pinos de acionamento fora do padrão, podemos usinar os furos de montagem exatos em uma máquina CNC antes do envio.",
-        },
-        {
-          question:
-            "Qual é o prazo de entrega das lâminas revestidas com cobalto M35 ou TiAlN?",
-          answer:
-            "As lâminas padrão M2 (tratadas a vapor) nos tamanhos mais comuns costumam estar em estoque e são enviadas em 3 a 5 dias. As lâminas Premium M35 de cobalto e os revestimentos PVD personalizados (TiN, TiAlN) geralmente levam de 10 a 15 dias úteis.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+    ],
   },
   {
     id: "scrap-chopper-blades",
-    name: "Lâminas para triturador de sucata",
+    name: "Facas para picadores de aparas metálicas",
     fullName:
-      "Lâminas de triturador de sucata para serviços pesados, destinadas a linhas de corte de metal e processamento de bobinas",
+      "Facas picadoras de aparas laterais para linhas de corte longitudinal de bobinas",
+    seoTitle: "Lâminas de corte de sucata | Facas Coil-Line Personalizadas",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Lâminas para triturador de sucata",
-    image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
+    categoryDisplay: "Facas para picadores de aparas metálicas",
+    image: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
     badge: "Impacto Extremo",
     badgeColor: "orange",
     gallery: [
-      "/images/products/granulator-blades/scrap-chopper-blades.webp",
+      "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
-      "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
+      "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
     ],
     description:
-      "Projetadas especificamente para resistir aos ambientes caóticos e de impacto extremo do corte de sobras de bordas em linhas de processamento. Forjadas em aço para ferramentas S7 resistente a impactos ou com geometrias especializadas com incrustações de metal duro, essas lâminas fraturam e reduzem de forma limpa tiras irregulares de aço, sobras de tiras de alumínio e resíduos de folhas de cobre, sem sofrer falhas catastróficas ou lascas.",
-    fullDescription:
-      "Localizados no final das linhas de corte e transformação de metais, os trituradores de sucata têm a função de destruir os resíduos irregulares e as sobras de corte gerados durante o processamento. O ambiente operacional envolve cargas de impacto severas e imprevisíveis, capazes de quebrar lâminas padrão. Consequentemente, as lâminas dos trituradores de sucata são forjadas a partir de ligas de alto impacto e resistentes a choques, como o aço para ferramentas S7, ou empregam designs com incrustações de carboneto e reforço robusto para fraturar de forma limpa resíduos de aço, alumínio e cobre sem falhar.\n\n## Ambiente Operacional e Desafios\n\nOs trituradores de sucata operam em condições fundamentalmente diferentes das do corte de precisão ou da cisalhamento:\n\n**Geometria imprevisível do material:** Os resíduos de corte das linhas de corte chegam ao triturador em configurações irregulares, enroladas e torcidas. Diferentemente do corte reto de chapas, a lâmina deve entrar em contato com a sucata em ângulos aleatórios, criando cargas de impacto variáveis que podem exceder 3 a 5 vezes a força nominal.\n\n**Inclusões metálicas e contaminação:** O fluxo de sucata frequentemente contém fixadores metálicos, respingos de solda e escória de laminação que criam concentrações de tensão localizadas. Lâminas padrão de alta dureza (D2 com HRC 60–62) são frágeis e sofrem fraturas catastróficas quando impactadas por tais inclusões.\n\n**Alta frequência de ciclos:** Os trituradores de sucata operam a 40–120 cortes por minuto, dependendo da velocidade da linha. Cada corte aplica uma carga de choque, e a lâmina deve resistir à propagação de trincas por fadiga ao longo de milhões de ciclos.\n\n## Soluções metalúrgicas\n\n**Aço para ferramentas S7 resistente a choques:** O S7 é um aço para ferramentas de cromo-molibdênio-tungstênio desenvolvido especificamente para aplicações em ferramentas de impacto. Ao contrário do D2 (que alcança resistência ao desgaste por meio de precipitados de carboneto de cromo a 12%), o S7 utiliza um teor de carbono mais baixo (0,50% de C contra 1,55% de C no D2) e um sistema de liga equilibrado que produz uma matriz tenaz e resiliente. Submetido a tratamento térmico para HRC 54–58, o S7 oferece o dobro da tenacidade ao impacto do D2, praticamente eliminando a fratura catastrófica da lâmina.\n\n**Aço para ferramentas de trabalho a quente H13:** O H13 (5% de cromo, 1,5% de molibdênio, 1% de vanádio) é a classe mais utilizada para o corte de sucata de alumínio e cobre. Sua estrutura austenítica à temperatura de operação proporciona excelente absorção de choques, e a baixa fração volumétrica de carbonetos evita a fratura frágil em impactos com inclusões metálicas. Mais adequado para fluxos de sucata não ferrosa.\n\n**Bordas com incrustações de carboneto:** Para centros de serviços de aço que processam sobras de aço de alta resistência e aço inoxidável, as pastilhas de borda metal duro são fixadas mecanicamente em um corpo de S7 ou H13. O carboneto proporciona resistência localizada ao desgaste na aresta de corte, enquanto o corpo em aço para ferramentas absorve a energia bruta do impacto. Essa construção híbrida oferece vida útil 3 a 5 vezes maior do que o S7 maciço em fluxos de sucata altamente contaminados.",
+      "Lâminas de corte de sucata de reposição personalizadas para corte de borda de linha de bobina. Facas S7 , H13 ou incrustadas em metal duro com arranjos de corte reto, inclinado ou perfilado.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4594,104 +6009,66 @@ export const blades: Blade[] = [
       "Kohler Maschinenbau",
       "Fagor Arrasate",
     ],
+    compatibleMachinesIntro:
+      "Obtenha facas picadoras de reposição para sua linha de corte de bobinas, com arestas de corte S7 , H13 ou incrustadas em metal duro e perfis personalizados. Envie o desenho ou amostra de sua faca existente e Sureay preparará um orçamento para seu helicóptero. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "scrap-chopper-profile",
+        tag: "Geometria de corte",
+        title: "Opções de aço ferramenta e incrustações de metal duro",
+        description:
+          "Sureay oferece configurações S7 , H13 e S7 com incrustações de metal duro para acabamento de borda de aço, alumínio ou cobre. A dureza listada para versões de faca de aço é 54–58 HRC .",
+      },
+      {
+        id: "scrap-chopper-mounting",
+        tag: "Instalação",
+        title: "Arranjos de corte reto, inclinado e perfilado",
+        description:
+          "Sureay fornece facas de reposição para arranjos retos ou inclinados, incluindo perfis radiais e retificados em espiral conforme desenho, para que os pedidos possam reproduzir a geometria de trabalho do picador instalado.",
+      },
+      {
+        id: "scrap-chopper-feed",
+        tag: "Condições da linha de bobina",
+        title: "Blocos de faca personalizados com opções indexáveis",
+        description:
+          "Corpos quadrados e retangulares estão disponíveis com detalhes de montagem específicos da máquina. Versões de quatro arestas podem ser encomendadas onde a configuração original da faca suporta indexação, juntamente com peças de reposição individuais.",
+      },
+    ],
     specs: [
+      {
+        label: "Tamanhos",
+        value: "100–400 mm",
+      },
       {
         label: "Material",
         value:
-          "S7 Shock-Resisting Tool Steel | H13 Hot-Work Steel | Carbide-Inlaid S7",
+          "Aço ferramenta S7 , aço ferramenta H13 ou S7 com incrustação de metal duro",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (optimized for maximum impact toughness)",
+        label: "Dureza",
+        value: "Versões de faca de aço: 54–58 HRC",
       },
       {
-        label: "Edge Configuration",
-        value: "Square/Rectangular Profile (4-edge usable)",
-      },
-      {
-        label: "Impact Resistance",
-        value: "2× toughness vs. D2 — prevents catastrophic fracture",
-      },
-      {
-        label: "Application",
+        label: "Corpos de lâmina",
         value:
-          "Steel, aluminum, copper edge-trim scrap from slitting & coil processing lines",
+          "Perfis quadrados ou retangulares; versões de quatro bordas disponíveis",
       },
       {
-        label: "Cycle Life",
-        value: "50,000–200,000 chops (material & contamination dependent)",
+        label: "Configurações do helicóptero",
+        value:
+          "Arranjos de facas retas ou inclinadas; perfis de raio e retificados em espiral para desenho",
+      },
+      {
+        label: "Aplicação",
+        value: "Sucata de aço, alumínio e cobre de linhas de corte de bobinas",
+      },
+      {
+        label: "Ciclo de vida",
+        value:
+          "50.000–200.000 costeletas, dependendo do material e da contaminação",
       },
     ],
-    components: [
-      {
-        id: "s7-metallurgy",
-        tag: "CIÊNCIA DOS MATERIAIS",
-        title: "Estrutura em liga resistente a impactos S7",
-        description:
-          "O aço para ferramentas S7 alcança sua tenacidade superior por meio de um sistema de liga cuidadosamente equilibrado: 0,50% de carbono (em comparação com 1,55% no D2) minimiza a formação de carbonetos frágeis, enquanto as adições de cromo (3,25%), o molibdênio (1,40%) e o tungstênio (1,80%) proporcionam temperabilidade e resistência ao revenimento. Submetido a tratamento térmico para HRC 54–58, em vez dos HRC 60–62 típicos do D2, o S7 sacrifica parte da resistência à abrasão em troca do dobro da energia de impacto Charpy. Essa é a compensação crítica para aplicações em trituradores de sucata: a lâmina deve absorver cargas de choque imprevisíveis sem se fragmentar.",
-      },
-      {
-        id: "4-edge-design",
-        tag: "EFICIÊNCIA DO PROJETO",
-        title: "Configuração reversível de quatro bordas",
-        description:
-          "As lâminas do triturador de sucata são fabricadas na forma de blocos retangulares com quatro arestas de corte utilizáveis. Quando a aresta ativa apresenta desgaste visível (normalmente indicado por aumento do ruído de trituração ou fratura incompleta da sucata), o operador gira a lâmina em 90° para expor uma aresta nova. Esse projeto quadruplica a vida útil efetiva em comparação com lâminas de aresta única e reduz o tempo de inatividade improdutivo. A geometria do corpo da lâmina é retificada com precisão para garantir que todas as quatro arestas fiquem paralelas com uma tolerância de ±0,05 mm, evitando cargas desiguais que causariam desgaste prematuro nas arestas giradas.",
-      },
-      {
-        id: "carbide-inlay",
-        tag: "OPÇÃO AVANÇADA",
-        title: "Construção híbrida com incrustações de carboneto",
-        description:
-          "Para centros de serviços siderúrgicos que processam sobras de aço de alto teor de carbono ou aço inoxidável com forte contaminação por escória de laminação, oferecemos lâminas de triturador de sucata com incrustações de carboneto. Um inserto metal duro (normalmente com 6 a 10 mm de largura, correspondendo à espessura total da lâmina) é travado mecanicamente em uma ranhura retificada com precisão no corpo S7, por meio de uma junta por contração térmica ou soldagem por brasagem. O carboneto proporciona resistência localizada ao desgaste nos pontos de contato da lâmina com a sucata, enquanto o corpo S7 absorve a energia bruta do impacto. Essa construção é a solução ideal para fluxos de sucata contaminados, nos quais o carboneto maciço se fraturaria e o S7 maciço se desgastaria muito rapidamente.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Máquina típica / Função",
-      col1: "Comprimento (mm)",
-      col2: "Largura (mm)",
-      col3: "Espessura (mm)",
-      caption:
-        "* Dimensões padrão para modelos comuns de trituradores de sucata. Tamanhos personalizados disponíveis. Todas as lâminas são reversíveis e possuem quatro gumes. Opção com incrustações de metal duro disponível para todas as dimensões (acrescenta +30–40% ao preço unitário).",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Trim",
-        od: "100",
-        id: "40",
-        thickness: "15",
-      },
-      {
-        spec: "Standard Capacity",
-        od: "150",
-        id: "50",
-        thickness: "20",
-      },
-      {
-        spec: "Butech / Medium Duty",
-        od: "200",
-        id: "60",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Duty Coil Line",
-        od: "250",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "Extra Heavy",
-        od: "300",
-        id: "80",
-        thickness: "30",
-      },
-      {
-        spec: "Extreme Plate Chopper",
-        od: "400",
-        id: "100",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: ["metal-shear-knives", "metal-coil-slitting-knives"],
+    relatedBladeIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
     offers: {
       lowPrice: 35,
       highPrice: 280,
@@ -4700,48 +6077,164 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Devo usar a S7 ou a H13 para cortar a guarnição de borda de aço inoxidável?",
+            "As lâminas de corte de sucata e as facas de corte de borda são o mesmo produto?",
           answer:
-            "Para acabamentos em aço inoxidável (tipos 304, 316 ou duplex), especifique S7 com HRC 54–58. O aço inoxidável gera forças de corte maiores do que o aço macio devido ao endurecimento por deformação, e o sistema de liga equilibrado do S7 proporciona melhor retenção do fio do que o H13 nessa aplicação. O H13 é otimizado para sucata de alumínio e cobre, onde as forças de corte mais baixas permitem que a matriz mais macia do H13 absorva o impacto sem deformação excessiva do gume. Para sucata de aço inoxidável altamente contaminada com respingos de solda ou fixadores, opte pelo S7 com incrustações de carboneto.",
+            "Sim. Em uma linha de bobina, ambos os nomes referem-se a facas que cortam as bordas descartadas em pedaços curtos. O conjunto do picador determina seu perfil de trabalho e montagem. As facas circulares que cortam a bobina de produção são [Facas de corte de bobina de aço](/products/metal-coil-slitting-knives) .",
         },
         {
           question:
-            "Como sei quando devo ajustar a lâmina para a próxima aresta de corte?",
+            "Como a espessura da tira e a largura do corte afetam a especificação da faca?",
           answer:
-            "O principal indicador é o aumento do ruído de corte ou da vibração, o que sinaliza que a aresta ativa desenvolveu uma zona de desgaste e não está mais fraturando a sucata de maneira limpa. Inspecione visualmente a aresta ativa a cada 8 a 12 horas de operação. Quando a área de desgaste (a zona sem corte, polida no canto de corte) exceder 1,0 a 1,5 mm de largura, é hora de avançar para a próxima aresta. Avançar antes que a área de desgaste entre em contato com o corpo da lâmina evita o desgaste acelerado do suporte e da estrutura.",
+            "O grau da tira, a espessura e a largura do corte descrevem o material que entra no picador e ajudam a definir a tarefa de corte. O conjunto do picador estabelece as dimensões e a montagem do corpo da faca. Revise ambos os conjuntos de informações ao comparar opções de material ou aresta, especialmente se a linha processar uma especificação de corte diferente da anterior.",
+        },
+        {
+          question: "Por que as pontas das facas do picador podem lascar?",
+          answer:
+            "Sobrecarga mecânica, folga de corte inadequada e corte de aresta dupla podem contribuir para o lascamento. Tempo excessivo entre reafiações e material ou dureza inadequados também podem estar envolvidos. Examine o avanço, a configuração de corte e o padrão de danos juntos. O procedimento do fabricante do picador fornece os requisitos de folga para o material que está sendo processado.",
         },
         {
           question:
-            "As lâminas de trituradores de sucata podem ser reafiadas ou retificadas?",
+            "O que identifica facas picadoras retas, inclinadas, radiais e espiraladas?",
           answer:
-            "As lâminas do triturador de sucata são um consumível sujeito a desgaste e, normalmente, não são reafiadas. O design reversível de quatro gumes já proporciona uma vida útil prolongada, e a reafiação exigiria um novo tratamento térmico e retificação de precisão para restaurar a geometria e a dureza dos gumes. O custo do reafiamento chega a 60–70% do custo de uma lâmina nova, tornando a substituição mais econômica. No entanto, para lâminas personalizadas muito grandes (com mais de 500 mm de comprimento), o reafiamento pode ser economicamente viável — entre em contato conosco informando as dimensões da sua lâmina.",
+            "Estes termos descrevem a forma da borda de trabalho ou sua disposição na máquina. Os desenhos da faca e da montagem estabelecem o contorno, a orientação e a relação com a aresta oposta. Mantenha esses recursos ao solicitar uma substituição, especialmente quando as mesmas dimensões externas do bloco puderem acomodar diferentes perfis de trabalho.",
+        },
+        {
+          question:
+            "Cada faca picadora de sucata tem quatro arestas utilizáveis?",
+          answer:
+            "Não. Quatro arestas são utilizáveis ​​somente em corpos de facas e suportes projetados para quatro posições de indexação. Use o desenho da faca para confirmar cada orientação, inspecione as bordas não utilizadas quanto a danos e restaure a configuração de corte especificada ao trocar as bordas.",
+        },
+        {
+          question: "As facas usadas do picador podem ser retificadas?",
+          answer:
+            "Sim, se as faces desgastadas ou danificadas puderem ser restauradas dentro das dimensões permitidas da faca. Verifique o perfil de corte, as superfícies de assentamento e o material restante em relação ao desenho. Uma faca retificada ainda deve assentar corretamente e permitir a folga de corte especificada.",
+        },
+        {
+          question:
+            "De quais informações você precisa para cotar facas picadoras de corte de borda?",
+          answer:
+            "Envie o modelo do picador, desenho da faca ou número da peça original, grau de acabamento, espessura e largura e quantidade. Identifique a posição de corte e o perfil de trabalho, especialmente para facas inclinadas, radiais ou retificadas em espiral. Se estiver usando uma amostra, marque as faces já retificadas.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do picador, o desenho da faca, o padrão de montagem, o grau da tira, a espessura e a largura do corte da borda.",
+    disambiguation:
+      "Para as facas circulares que cortam a bobina de produção, consulte [Facas de corte de bobina de aço](/products/metal-coil-slitting-knives) .",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Duas facas picadoras retangulares mostrando orifícios de montagem e arestas de corte",
+      sizeRange: "100–400 mm",
+      heroSpecs: [
         {
-          question:
-            "A Sureay tem em estoque lâminas para trituradores de sucata ou elas são fabricadas sob encomenda?",
-          answer:
-            "Mantemos em estoque lâminas padrão para trituradores de sucata S7 nos seis tamanhos mais comuns (de 100×40×15 mm a 400×100×30 mm). As lâminas em estoque são enviadas em 3 a 5 dias úteis. Dimensões personalizadas, material H13 e configurações com incrustações de carboneto são fabricadas sob encomenda, com prazos de entrega de 12 a 18 dias úteis a partir da aprovação do desenho. Produção urgente (7 a 10 dias) disponível para tamanhos padrão, sujeita à disponibilidade da programação de tratamento térmico.",
-        },
-        {
-          question:
-            "A Sureay pode fornecer lâminas para trituradores de sucata que correspondam às dimensões das nossas lâminas atuais?",
-          answer:
-            "Sim. Envie-nos uma amostra da lâmina, um desenho técnico ou a marca e o número do modelo da máquina picadora. Confirmaremos o comprimento, a largura, a espessura, o padrão dos furos de fixação (se aplicável) e o tipo de material. A maioria das lâminas de picadoras são blocos retangulares padrão sem furos de fixação, mas alguns modelos utilizam fixação por grampos ou parafusos, o que requer posições específicas para os furos. Podemos reproduzir qualquer geometria de lâmina existente.",
+          label: "Aplicação",
+          value:
+            "Aparas de borda de corte descarregadas de uma linha de corte de bobina",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
+        alt: "Amostras de facas picadoras mostrando diferentes perfis de corpo e padrões de furos de montagem",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "100–400 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Aço ferramenta S7 , aço ferramenta H13 ou S7 com incrustação de metal duro",
+        },
+        {
+          label: "Dureza",
+          value: "Versões de faca de aço: 54–58 HRC",
+        },
+        {
+          label: "Corpos de lâmina",
+          value:
+            "Perfis quadrados ou retangulares; versões de quatro bordas disponíveis",
+        },
+        {
+          label: "Configurações do helicóptero",
+          value:
+            "Arranjos de facas retas ou inclinadas; perfis de raio e retificados em espiral para desenho",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Sucata de aço, alumínio e cobre de linhas de corte de bobinas",
+        },
+        {
+          label: "Ciclo de vida",
+          value:
+            "50.000–200.000 costeletas, dependendo do material e da contaminação",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+          ],
+          rows: [
+            ["SR003301", "100", "40", "15"],
+            ["SR003302", "150", "50", "20"],
+            ["SR003303", "200", "60", "25"],
+            ["SR003304", "250", "80", "25"],
+            ["SR003305", "300", "80", "30"],
+            ["SR003306", "400", "100", "30"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Inclua o modelo do picador, o desenho da faca, o padrão de montagem, o grau da tira, a espessura e a largura do corte da borda.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    rfqPlaceholder:
+      "Inclua o modelo do picador, o desenho da faca, o padrão de montagem, o grau da tira, a espessura e a largura do corte da borda.",
+    dimensionLabels: {
+      intro:
+        "As dimensões listadas identificam as configurações do catálogo. Confirme o desenho, interface de montagem, posição da faca e arestas de corte utilizáveis; o tamanho por si só não identifica o modelo do helicóptero.",
     },
   },
   {
     id: "strand-pelletizer-rotors",
-    name: "Rotores do peletizador Strand",
-    fullName:
-      "Rotores de peletizador de fios de alta precisão para linhas de compounding",
-    category: "granulator_blades",
+    name: "Rotores para granuladores de fios",
+    fullName: "Rotores de corte para granuladores de espaguete plástico",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Lâminas para peletizadoras",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    imageDimensions: {
+      width: 1600,
+      height: 1600,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "PM-HSS e carboneto",
     badgeColor: "blue",
     gallery: [
@@ -4750,9 +6243,7 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
     description:
-      "Rotores para peletizadores de fio e rotores cortadores para peletização em linhas de composição e reciclagem de plásticos. PM-HSS (ASP2023, ASP2052) e construção sólida metal duro. Geometria helicoidal com concentricidade ≤0,005 mm, balanceamento dinâmico conforme a norma ISO 1940-1 G2.5. Substituição direta para peletizadores das marcas Maag, Coperion, Cumberland, Conair e Reduction Engineering.",
-    fullDescription:
-      "Projetados para linhas de composição contínuas e de alto volume, os rotores do peletizador de fios da Sureay produzem micropeletas impecáveis e uniformes, sem resíduos. Fabricados com aços de alta velocidade por metalurgia do pó (PM-HSS) e carboneto de tungstênio maciço, nossos rotores helicoidais são projetados para suportar o desgaste abrasivo extremo causado por polímeros reforçados com fibra de vidro (GF), reforçados com carbono e altamente pigmentados. Cada rotor passa por um rigoroso balanceamento dinâmico e retificação de perfil de precisão para garantir concentricidade perfeita, reduzindo o desgaste dos rolamentos e a vibração mesmo em rotações máximas.\n\n## Tipos de rotores\n\n**Rotores helicoidais (em espiral):** A configuração padrão para composição contínua em alta velocidade. O passo helicoidal constante em toda a largura de corte garante uma ação de cisalhamento progressiva — um dente se engata a cada instante, em vez de toda a borda impactar simultaneamente. Isso reduz drasticamente a força de corte de pico, a carga do motor e os eventos de ruptura de fios. Os centros de retificação CNC de 5 eixos da Sureay mantêm a constância do passo helicoidal com uma tolerância de ±0,01° em toda a face do rotor.\n\n**Rotores de borda reta:** Indicados para elastômeros mais macios e polímeros fundidos de baixa viscosidade, nos quais a força de cisalhamento helicoidal é excessiva. A ação de corte simultâneo em toda a largura proporciona um comprimento de pelotas limpo e consistente em fios de TPE, TPU e TPV.\n\n**Rotores com inserções de carboneto soldadas a vácuo:** A solução ideal para a composição abrasiva de compostos com enchimento de vidro (GF), carbono (CF) e minerais. As inserções de corte de carboneto de tungstênio são soldadas a vácuo em corpos de rotor de HSS usinados com precisão. As arestas de carboneto proporcionam uma vida útil 5 a 10 vezes maior em comparação com o M2 padrão em compostos GF40 e CF30, enquanto o corpo resistente de HSS absorve cargas de choque provenientes de fios intermitentes e eventos de partida a frio sem fratura por fragilidade.\n\n**Rotores de carboneto maciço:** A especificação definitiva para compostos extremamente abrasivos com rendimento moderado. Utilizados na composição especializada de polímeros ultraabrasivos recheados com cerâmica, nitreto de boro e SiC, nos quais até mesmo as pontas de carboneto soldadas se desgastam rapidamente.\n\n## Seleção de materiais por aplicação\n\n**M2, M35 HSS (compostação padrão):** Custo-benefício para termoplásticos não recheados — PA6, PA66, PC, POM, PBT — em temperaturas padrão de compostação. A classe de cobalto M35 prolonga a vida útil em enchimentos moderadamente abrasivos (talco, CaCO₃) em 30–40% em comparação com o M2 padrão.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Compostos Abrasivos):** A fabricação por metalurgia do pó produz uma distribuição ultrafina e homogênea de carboneto que o HSS convencional não consegue alcançar. O ASP2023 proporciona vida útil da aresta 2 a 3 vezes maior em compostos GF20 e CF15. O ASP2052 e o CPM10V aumentam a vida útil da ferramenta para 4 a 6 vezes a do M2 nos compostos com enchimento mais exigentes. A microestrutura da metalurgia do pó também reduz a microfratura da aresta, que causa a formação de partículas finas e contaminação por poeira.\n\n**Carboneto de tungstênio sólido (WC) e pontas de carboneto soldadas (desgaste extremo):** Para compostos de fibra de vidro longa (LGF), polímeros reforçados com fibra de carbono e masterbatch com alto teor mineral. O carboneto mantém sua aresta de corte sob carga abrasiva sustentada que desgastaria o PM-HSS em questão de horas.\n\n## Cenários de aplicação\n\n**Compostos de fibra de vidro longa (LGF) e fibra de carbono:** Os rotores metal duro soldados mantêm sua aresta de corte por um período de 5 a 10 vezes maior do que o HSS padrão ao cortar compósitos estruturais altamente abrasivos. O processo de soldagem a vácuo garante que os dentes de carboneto não se soltem, mesmo sob cargas de choque severas decorrentes de partidas a frio do fio.\n\n**Produção de masterbatches e materiais com alto teor de pigmento:** As ranhuras dos dentes com polimento espelhado (Ra 0,2 µm) evitam o acúmulo de cor, permitindo mudanças rápidas de cor e zero contaminação cruzada entre lotes.\n\n**Termoplásticos de engenharia (PA, PC, POM, PBT):** A concentricidade ultraprecisa (≤0,005 mm) permite que os operadores definam microespaços extremamente estreitos, resultando em um corte limpo, semelhante ao de uma tesoura, que elimina partículas finas, poeira e resíduos em forma de “pele de cobra”.\n\n**Elastômeros macios (TPE, TPU, TPV):** Ângulos de corte agudos otimizados evitam o alongamento e o esmaecimento de fios macios, eliminando o temido efeito de rabo.\n\n## Compatibilidade com OEM\n\nA Sureay fabrica rotores de reposição com encaixe perfeito para as principais plataformas de peletizadoras. Todos os rotores de reposição são projetados por engenharia reversa a partir de desenhos dos fabricantes originais (OEM) ou amostras dos clientes, verificados em CMM e fornecidos com relatórios completos de inspeção dimensional. Também oferecemos serviços de reparo e reafiação de rotores de peletizadores — restaurando rotores helicoidais desgastados e eixos de rotores de granuladores à concentricidade de fábrica por uma fração do custo de reposição.\n\n*Todos os nomes de fabricantes e modelos são utilizados apenas para fins de referência e compatibilidade.*",
+      "Rotores de pelotização de fios de reposição com arestas de corte helicoidais ou retas. Opções de HSS e metal duro, com perfis de dentes e pontas de eixo personalizados.",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
     compatibleMachines: [
@@ -4762,66 +6253,130 @@ export const blades: Blade[] = [
       "Conair",
       "Reduction Engineering",
     ],
+    compatibleMachinesIntro:
+      "Forneça rotores peletizadores de fios de reposição com o padrão de dente, largura de trabalho e interfaces de eixo que sua linha exige. Sureay oferece projetos helicoidais ou de aresta reta em construções de aço e metal duro. Compartilhe seu desenho ou rotor desgastado para obter um orçamento de substituição personalizado. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "strand-rotor-tooth-layout",
+        tag: "Geometria de corte",
+        title: "Opções de rotor HSS , aço PM e metal duro",
+        description:
+          "Sureay oferece opções M2 , M35 , ASP2023 , ASP2052 e CPM 10V juntamente com construções de corte sólidas ou de metal duro brasado, permitindo que o material do rotor seja especificado para o composto de polímero e o design da fresa existente.",
+      },
+      {
+        id: "strand-rotor-construction",
+        tag: "Construção",
+        title: "Geometrias de corte helicoidal e reto",
+        description:
+          "Os diâmetros de corte listados variam de Ø100–250 mm. Sureay fornece rotores helicoidais e retos com número de dentes, perfil e largura de trabalho especificados para o peletizador existente.",
+      },
+      {
+        id: "strand-rotor-cutting-pair",
+        tag: "Conjunto de corte",
+        title: "Extremidades de eixo e interfaces de rolamento personalizadas",
+        description:
+          "Os rotores podem ser fabricados com as extremidades do eixo, assentos de rolamento, ressaltos e conexões de acionamento exigidos pela máquina existente, combinando a seção de corte e as interfaces de montagem em uma especificação de substituição.",
+        relatedBladeIds: ["die-face-cutting-knives"],
+      },
+    ],
     specs: [
+      {
+        label: "Tamanhos",
+        value: "Ø100–250 mm",
+      },
+      {
+        label: "Aplicação",
+        value: "Corte de fios de polímero resfriados em pellets",
+      },
       {
         label: "Material",
         value:
-          "M2 (AISI M2 / 1.3343) | M35 (1.3243) | PM-HSS ASP2023 (1.3395) / ASP2052 / CPM10V | Solid WC & Brazed Carbide",
+          "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , metal duro duro ou metal duro soldado",
       },
       {
-        label: "Application",
+        label: "Tipos de rotor",
         value:
-          "GF/CF Compounding, Masterbatch, Engineering Thermoplastics (PA/PC/POM/PBT), Soft Elastomers (TPE/TPU/TPV)",
+          "Rotores helicoidais ou retos; arestas de corte de metal duro sólidas ou soldadas",
       },
       {
-        label: "Rotor Types",
+        label: "Número de dentes",
+        value: "10, 12, 16, 24, 32, 48 ou 60; personalizado conta até 120",
+      },
+      {
+        label: "Ângulo Helicoidal",
+        value: "1,5°, 2° ou 3°; hélice personalizada disponível",
+      },
+      {
+        label: "Concentricidade (Excentricidade)",
+        value: "≤0.005 mm",
+      },
+      {
+        label: "Acabamento da superfície",
+        value: "Ra 0.2 µm",
+      },
+      {
+        label: "Balanceamento Dinâmico",
+        value: "ISO 1940-1, grau G2.5",
+      },
+      {
+        label: "Matéria-prima",
         value:
-          "Helical (Spiral), Straight Edge, Brazed Carbide Inlay, Solid Carbide",
-      },
-      {
-        label: "Tooth Count",
-        value: "10, 12, 16, 24, 32, 48, 60, up to 120 (custom)",
-      },
-      {
-        label: "Concentricity (Runout)",
-        value: "≤ 0.005 mm — critical for micro-clearance setting",
-      },
-      {
-        label: "Surface Polish",
-        value: "Ra 0.2 µm — prevents polymer build-up and sticking",
-      },
-      {
-        label: "Dynamic Balancing",
-        value: "ISO 1940-1 G2.5 — vibration-free at peak RPM",
-      },
-      {
-        label: "Helical Angle",
-        value: "1.5°, 2°, 3° or custom-milled to OEM blueprints",
+          "Compostos GF/CF, masterbatch, PA, PC, POM, PBT e elastômeros TPE/TPU/TPV",
       },
     ],
-    components: [
-      {
-        id: "dynamic-balancing",
-        tag: "ENGENHARIA DE PRECISÃO",
-        title: "Equilíbrio dinâmico com tolerância zero a defeitos",
-        description:
-          "Ao operarem em altas velocidades, os rotores desbalanceados danificam os rolamentos e prejudicam as folgas. Todos os rotores Sureay são balanceados dinamicamente nas velocidades de operação, de acordo com as normas ISO 1940-1 G2.5, garantindo um funcionamento silencioso e sem vibrações, além de proteger o investimento em rolamentos do peletizador.",
-      },
-      {
-        id: "helical-geometry",
-        tag: "RETIFICAÇÃO CNC DE 5 EIXOS",
-        title: "Geometria helicoidal impecável",
-        description:
-          "Utilizando centros de retificação CNC de 5 eixos de última geração, garantimos que o passo helicoidal seja constante em toda a largura de corte. Isso assegura uma força de cisalhamento constante, reduzindo a carga no motor e evitando a ruptura dos fios em linhas de composição de alta velocidade.",
-      },
-      {
-        id: "vacuum-brazing",
-        tag: "TECNOLOGIA DE CARBIDO",
-        title: "Brasagem a vácuo de tecnologia exclusiva",
-        description:
-          "No caso dos rotores com dentes de carboneto, um processo especializado de brasagem a vácuo de alta resistência garante que os dentes de carboneto nunca se soltem, mesmo sob cargas de choque severas decorrentes de partidas a frio do fio ou condições de alimentação intermitente do fio.",
-      },
-    ],
+    relatedBladeIds: ["die-face-cutting-knives", "granulator-blades"],
+    offers: {
+      lowPrice: 80,
+      highPrice: 1200,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "O que identifica um rotor peletizador de fio de substituição?",
+          answer:
+            "O diâmetro de corte, a largura de trabalho, a forma do dente, a hélice e ambas as extremidades do eixo identificam o rotor em conjunto. Inclui assentos de rolamento, conexões de acionamento e a faca estacionária correspondente. Rotor de corte de pelotização é um nome de compra relacionado ao componente dentado que corta fios de polímero, enquanto o conjunto completo da cabeça de corte contém peças adicionais.",
+        },
+        {
+          question:
+            "Como o material do rotor deve ser selecionado para compostos poliméricos preenchidos?",
+          answer:
+            "Considere o polímero, o tipo de carga e a carga juntamente com a condição atual da borda. O desgaste abrasivo e o lascamento dos dentes exigem diferentes considerações de materiais. Compare a construção existente em HSS, aço PM ou metal duro com o padrão de desgaste real e o arranjo de corte, incluindo a faca estacionária, antes de selecionar um material de substituição diferente.",
+        },
+        {
+          question:
+            "Como um rotor de fio difere de uma faca de corte de matriz?",
+          answer:
+            "Um rotor de fio corta fios de polímero formados contra uma faca de base estacionária. [Facas de corte de face](/products/die-face-cutting-knives) são lâminas individuais transportadas por um cubo na face da matriz de extrusão. Alguns sistemas de fios também cortam debaixo d'água, portanto a localização do processo e a montagem de corte fornecem uma identificação mais clara do que apenas a palavra debaixo d'água.",
+        },
+        {
+          question:
+            "Apenas alterar a contagem de dentes pode alterar o tamanho do pellet?",
+          answer:
+            "Sim. Alterar a contagem de dentes pode alterar o comprimento do pellet mesmo com a mesma velocidade do rotor e avanço do fio. Alterar a contagem de dentes altera a configuração de corte. Para uma substituição igual, mantenha o padrão de dente aprovado e especifique a configuração existente e o comprimento alvo do pellet separadamente.",
+        },
+        {
+          question:
+            "Por que a qualidade do pellet pode mudar mesmo quando as bordas do rotor são afiadas?",
+          answer:
+            "A alimentação irregular do fio ou o resfriamento podem alterar a qualidade do pellet mesmo quando as bordas do rotor são afiadas. Compare a condição do fio na cabeça de corte com a configuração do rotor para a faca estacionária. Se o defeito mudar com o avanço, verifique também a montante da aresta de corte.",
+        },
+        {
+          question: "Um rotor peletizador de fio pode ser reafiado?",
+          answer:
+            "Sim, quando a construção e o restante material de corte permitem restaurar a geometria especificada do dente. Verifique o diâmetro reduzido do rotor em relação à sua posição de trabalho em relação à faca estacionária. Registre o diâmetro retificado separadamente ao solicitar um novo rotor.",
+        },
+        {
+          question:
+            "Como solicito um orçamento para um rotor de corte peletizador de fios?",
+          answer:
+            "Enviar modelo do peletizador, desenho do rotor ou referência original, polímero e carga e quantidade. Especifique o diâmetro de corte, largura de trabalho, contagem de dentes e direção da hélice e inclua desenhos de ambas as extremidades do eixo e da faca estacionária correspondente. Marque o diâmetro reduzido separadamente se o rotor de referência tiver sido retificado.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do peletizador, desenho do rotor, largura de trabalho, contagem e perfil dos dentes, pontas do eixo e detalhes da faca estacionária.",
     dimensionLabels: {
       col0: "Plataforma OEM",
       col1: "Diâmetro do rotor (mm)",
@@ -4833,6 +6388,7 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007101",
         spec: "Maag Primo / Baoli",
         od: "100 – 200",
         id: "80 – 300",
@@ -4840,102 +6396,132 @@ export const blades: Blade[] = [
         teeth: "2° / 3°",
       },
       {
-        spec: "Coperion SP Series",
+        itemNo: "SR007102",
+        spec: "Série Coperion SP",
         od: "120 – 250",
         id: "100 – 350",
         length: "16 / 24 / 32",
         teeth: "1.5° / 2°",
       },
       {
-        spec: "Cumberland Quietizer",
+        itemNo: "SR007103",
+        spec: "Silencioso Cumberland",
         od: "100 – 180",
         id: "80 – 250",
         length: "12 / 16",
         teeth: "2° / 3°",
       },
       {
-        spec: "Conair 304 / 306 / CS",
+        itemNo: "SR007104",
+        spec: "Conair 304/306/CS",
         od: "100 – 200",
         id: "80 – 300",
         length: "12 / 16 / 24",
         teeth: "2°",
       },
       {
-        spec: "Reduction Engineering SGS",
+        itemNo: "SR007105",
+        spec: "GV Reduction Engineering",
         od: "120 – 220",
         id: "100 – 320",
         length: "16 / 24 / 32",
         teeth: "1.5° / 2° / 3°",
       },
     ],
-    relatedBladeIds: [
-      "die-face-cutting-knives",
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "twin-shaft-blades-recycling",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1200,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Rotores de corte para pelotizadores de fio | Substituição personalizada",
+      heroAlt:
+        "Rotor de corte do peletizador de fios com superfície de corte dentada e pontas de eixo",
+      sizeRange: "Ø100–250 mm",
+      heroSpecs: [
         {
-          question:
-            "Processamos nylon com 40% de fibra de vidro (PA66 GF40). Os rotores M2 padrão se desgastam em poucos dias. Qual é a sua solução?",
-          answer:
-            "Para desgaste abrasivo extremo, o aço M2 é insuficiente. Recomendamos nossas classes PM-HSS (ASP2023 ou ASP2052) ou nossos rotores de carboneto de tungstênio soldados. Embora o investimento inicial seja maior, a vida útil da ferramenta é prolongada em até 1.000%, reduzindo drasticamente o tempo de inatividade da máquina e diminuindo seu custo por tonelada de composto. Especificamente para o PA66 GF40, os rotores com inserções de carboneto soldadas são a solução de longo prazo mais econômica — o corpo em HSS suporta cargas de choque, enquanto as arestas de corte em carboneto resistem à abrasão.",
+          label: "Material",
+          value: "HSS , aço PM ou metal duro",
         },
         {
-          question:
-            "Por que nossos pellets estão ficando com “caudas” e como seus rotores podem resolver isso?",
-          answer:
-            "O “tailing” ocorre quando a cadeia de polímero é rasgada ou derretida, em vez de ser cortada de forma limpa. Isso é causado por dentes de rotor cegos, ângulos helicoidais irregulares ou folga excessiva devido ao desvio do rotor. Os rotores Sureay apresentam uma concentricidade de ≤0,005 mm, permitindo que seus técnicos ajustem uma microfenda em relação à lâmina fixa para um corte perfeito, semelhante ao de uma tesoura. A superfície polida da ranhura (Ra 0,2 µm) também evita que o polímero grude, o que gera resistência e força de cisalhamento irregular.",
-        },
-        {
-          question:
-            "Qual é a diferença entre rotores helicoidais e retos, e quando devo usar cada um deles?",
-          answer:
-            "Os rotores helicoidais produzem uma ação de cisalhamento progressiva — apenas um segmento de dente se engata por vez —, o que reduz o pico de força de corte, os picos de amperagem do motor e os casos de ruptura dos fios. Isso os torna a escolha padrão para termoplásticos rígidos e compostos com enchimento em linhas de alta velocidade. Os rotores de borda reta engatam toda a largura de corte simultaneamente, o que é preferível para elastômeros macios (TPE, TPU, TPV), nos quais a força de cisalhamento helicoidal gradual pode esticar e deformar o fio em vez de cortá-lo de forma limpa.",
-        },
-        {
-          question:
-            "É possível reproduzir um rotor personalizado se enviarmos uma amostra física ou um desenho em CAD?",
-          answer:
-            "Com certeza. Como somos uma fábrica de produção direta, dispomos de recursos completos de engenharia reversa. Você pode nos enviar seu rotor desgastado ou desenhos técnicos, e nós produziremos um desenho CAD detalhado para sua aprovação antes de fabricarmos a peça de reposição exata. A verificação dimensional em CMM é realizada antes do envio.",
-        },
-        {
-          question:
-            "Como posso saber quando devo substituir ou reafiar o rotor do meu peletizador de fios?",
-          answer:
-            "Indicadores-chave: (1) aumento das partículas finas e do pó no fluxo de pelotas — dentes cegos rasgam em vez de cortar; (2) aumento da amperagem do motor do acionamento do peletizador — bordas cegas exigem mais força; (3) rompimento de fios cada vez mais frequente — a força de cisalhamento irregular causada pela geometria desgastada aumenta os picos de tensão; (4) reaparecimento de resíduos, apesar do ajuste correto da folga — a concentricidade desgastada causa variação na folga ao redor da circunferência do rotor. Para rotores PM-HSS, o reafiamento de precisão de acordo com a geometria do fabricante original (OEM) é economicamente viável. Para rotores com pontas de metal duro, o metal duro pode ser reafilado uma vez antes que seja necessária a substituição completa do rotor.",
+          label: "Aplicação",
+          value: "Corte de fios de polímero resfriados em pellets",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "A Sureay pode fornecer conjuntos compatíveis de rotor e lâmina fixa (estator)?",
-          answer:
-            "Sim, e recomendamos enfaticamente que sejam adquiridas em pares combinados. Fabricamos facas de base do estator em Stellite 6 (para rotores HSS) e em metal duro maciço (para rotores com pontas de metal duro). Um par combinado garante que a geometria da abertura de corte e o diferencial de dureza sejam otimizados em conjunto, proporcionando peletização sem resíduos desde o primeiro fio. Combinações incompatíveis de rotor e estator são uma das principais causas de desgaste prematuro e formação de resíduos em linhas que, de outra forma, estariam bem conservadas.",
+          label: "Tamanhos",
+          value: "Ø100–250 mm",
         },
         {
-          question:
-            "Quais são os prazos de entrega e a documentação que a Sureay pode fornecer para rotores de reposição?",
-          answer:
-            "Os rotores de reposição PM-HSS padrão para plataformas OEM comuns (Maag, Coperion, Cumberland) são enviados em 10 a 15 dias úteis a partir da aprovação do desenho. Ângulos de hélice personalizados ou números de dentes fora do padrão exigem 15 a 20 dias úteis. Cada rotor é enviado com: certificado de inspeção dimensional por CMM, relatório de balanceamento dinâmico (ISO 1940-1 G2.5), certificado de teste de dureza e rastreabilidade do material da siderúrgica. Produção urgente disponível, sujeita à programação.",
+          label: "Aplicação",
+          value: "Corte de fios de polímero resfriados em pellets",
+        },
+        {
+          label: "Material",
+          value:
+            "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , metal duro duro ou metal duro soldado",
+        },
+        {
+          label: "Tipos de rotor",
+          value:
+            "Rotores helicoidais ou retos; arestas de corte de metal duro sólidas ou soldadas",
+        },
+        {
+          label: "Número de dentes",
+          value: "10, 12, 16, 24, 32, 48 ou 60; personalizado conta até 120",
+        },
+        {
+          label: "Ângulo Helicoidal",
+          value: "1,5°, 2° ou 3°; hélice personalizada disponível",
+        },
+        {
+          label: "Concentricidade (Excentricidade)",
+          value: "≤0.005 mm",
+        },
+        {
+          label: "Acabamento da superfície",
+          value: "Ra 0.2 µm",
+        },
+        {
+          label: "Balanceamento Dinâmico",
+          value: "ISO 1940-1, grau G2.5",
+        },
+        {
+          label: "Matéria-prima",
+          value:
+            "Compostos GF/CF, masterbatch, PA, PC, POM, PBT e elastômeros TPE/TPU/TPV",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/strand-pelletizer-rotor-03.webp",
+        alt: "Rotor do peletizador de fio mostrando sua superfície de corte e disposição do eixo",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para seu rotor peletizador",
+        description:
+          "Inclua o modelo da máquina, desenho do rotor, largura de trabalho, forma do dente, detalhes da extremidade do eixo e quantidade.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
+    disambiguation:
+      "Para lâminas montadas em um cubo de corte de matriz, consulte [Facas de corte de matriz](/products/die-face-cutting-knives) .",
   },
   {
     id: "continuous-melt-filter-scraper-blades",
-    name: "Lâminas raspadoras para filtros de fusão",
-    fullName:
-      "Lâminas raspadoras e placas filtrantes premium para filtros de fusão contínua",
-    category: "granulator_blades",
+    name: "Lâminas raspadoras para filtros de polímero fundido",
+    fullName: "Facas raspadoras para filtros contínuos de polímero fundido",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Lâminas raspadoras para filtro de fusão",
+    categoryDisplay: "Lâminas raspadoras para filtros de polímero fundido",
     image: "/images/products/blades/scraper-blades.webp",
+    imageDimensions: {
+      width: 2560,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 720,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Reciclagem PCR",
     badgeColor: "orange",
     gallery: [
@@ -4944,9 +6530,7 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-02.webp",
     ],
     description:
-      "Lâminas raspadoras de precisão D2/H13/carboneto e placas de filtro cônicas perfuradas a laser para filtros de fusão contínua de PCR. A sinergia de dureza projetada (lâmina HRC 58–62 vs. placa nitretada a plasma HV 1.000+) protege o investimento em ativos das placas de filtro. Ligas resistentes ao HCl para misturas de PVC. Compatíveis com retrolavagem nos sistemas EREMA, Gneuß, Ettlinger e FIMIC.",
-    fullDescription:
-      "Os filtros de fusão contínua são o coração de qualquer linha de reciclagem de plástico com PCR de alto rendimento. Ao processar material triturado pós-consumo altamente contaminado — contendo enchimentos minerais, fibras de vidro, resíduos carbonizados e partículas estranhas duras —, a lâmina raspadora é o único componente submetido à carga combinada mais extrema: desgaste abrasivo causado por contaminantes duros, fadiga térmica decorrente da exposição cíclica à temperatura da massa fundida (220–300 °C) e tensão de flexão cíclica proveniente do mecanismo de rotação. Uma lâmina que falha prematuramente força uma parada de emergência da linha, custando horas de tempo de reinício e desperdiçando volumes significativos de massa fundida em processo.\n\nAs lâminas raspadoras do filtro de fusão contínua da Sureay são fabricadas com precisão a partir de aço para ferramentas de trabalho a quente D2 aço-ferramenta para trabalho a frio e H13 de alta qualidade — duas ligas selecionadas especificamente para esse duplo requisito de resistência ao desgaste eresistência ao calor — e são submetidas a tratamento térmico a vácuo até HRC 58–62, seguido de pós-tratamento criogênico profundo para eliminar a austenita retida e prolongar a vida útil em 30–40% em comparação com o tratamento térmico padrão.\n\n## Seleção de liga por nível de contaminação\n\n**Aço para ferramentas D2 (HRC 60–62):** A especificação padrão para PCR de HDPE, PP e plásticos rígidos mistos com contaminação moderada (< 3% de teor de enchimento mineral). O teor de 12% de cromo e 1,5% de carbono proporciona excelente resistência à abrasão contra partículas de vidro e enchimentos de carbonato de cálcio em temperaturas de processamento de fusão de até 260 °C. Custo-benefício para filtração contínua de carga média com taxas de produção de 300–800 kg/h.\n\n**Aço para ferramentas de trabalho a quente H13 (HRC 48–52):** Selecionado para fluxos altamente contaminados — resíduos triturados de filmes pós-consumo, filmes de cobertura agrícola, plásticos de REEE — onde as temperaturas de fusão excedem 280 °C e os ciclos térmicos são severos. A matriz de carboneto de molibdênio-vanádio do H13 mantém a estabilidade dimensional e a geometria das arestas sob carga térmica sustentada que causaria o amolecimento e a deformação do D2.\n\n**Carboneto de tungstênio maciço (HRA 88–91):** A especificação definitiva para matérias-primas ultraabrasivas: plásticos de engenharia reforçados com fibra de vidro (PA-GF30, PBT-GF), fluxos contaminados com cerâmica e filmes agrícolas ricos em silício com partículas de solo incrustadas. Os raspadores de carboneto oferecem vida útil 5 a 8 vezes maior em comparação com o D2 nessas matérias-primas, reduzindo a frequência de troca da lâmina para uma vez a cada mais de 1.000 horas de operação.\n\n## Geometria da lâmina retificada com precisão\n\nA geometria do fio da lâmina do raspador controla diretamente a limpeza da superfície da tela de filtragem e, portanto, a consistência da pressão da massa fundida. Um raspador desgastado ou com perfil incorreto deixa uma camada residual de contaminação na tela do filtro, causando aumento progressivo da pressão, redução da produtividade e, por fim, rompimento da tela. As lâminas da Sureay são retificadas com precisão, com tolerância dimensional de ±0,05 mm, e os perfis de chanfro das bordas são adaptados à geometria de contato com a tela de cada fabricante original (OEM) do filtro. O resultado é uma ação de raspagem consistente e reproduzível que mantém a limpeza da tela durante toda a vida útil da lâmina.\n\n## Compatibilidade direta com OEMs\n\nA geometria da lâmina raspadora é específica para cada máquina: cada fabricante de filtros contínuos de material fundido utiliza dimensões proprietárias do rotor, interfaces de montagem das lâminas e diâmetros de tela. A Sureay realiza a engenharia reversa de lâminas de reposição a partir de desenhos dos fabricantes ou amostras dos clientes, verificando o encaixe em uma máquina de medição por coordenadas (CMM) antes da produção. Compatível com o filtro contínuo EREMA, o sistema de filtração rotativo Gneuß, a série ERF da Ettlinger, a série RAS da FIMIC, a série KSF da Kreyenborg e os trocadores contínuos de tela BKG da Nordson.\n\n## Microperfurações cônicas na placa de filtro feitas a laser\n\nA geometria dos orifícios da placa de filtro é tão crítica quanto o material da lâmina raspadora. Orifícios cilíndricos padrão, perfurados ou puncionados, criam um canal de parede plana onde o polímero fundido e os contaminantes em suspensão podem estagnar — carbonizando-se dentro do orifício sob calor contínuo, reduzindo progressivamente a área aberta efetiva e, eventualmente, causando o entupimento prematuro da tela. As placas de filtro Sureay utilizam microperfurações cônicas (afuniladas) feitas a laser: o orifício é mais estreito na superfície de contato com o material fundido a montante e se alarga progressivamente em direção à saída a jusante. Esse perfil cônico aproveita a pressão hidráulica do lado da massa fundida: assim que uma partícula de contaminante passa pela restrição estreita da entrada, a geometria do canal em expansão a expulsa imediatamente em direção à saída, sem estagnação em zonas mortas. O resultado é uma placa de filtragem que mantém pressão diferencial e porcentagem de área aberta consistentes ao longo de um intervalo de serviço significativamente mais longo — o que é particularmente crítico em fluxos de PCR altamente contaminados, nos quais placas com orifícios cilíndricos exigiriam substituição frequente.\n\nFiness de filtragem disponível: 80 µm (rPET/rHDPE para contato com alimentos), 150–200 µm (PCR de grau de filme), 300–500 µm (PCR de grau de injeção), 500–2.000 µm (pré-filtração grossa). Perfil cônico disponível em todos os graus de finura.\n\n## Sinergia de dureza: protegendo seu investimento em placas de filtro\n\nUma preocupação comum e justificada ao adquirir lâminas raspadoras de reposição é se uma lâmina de reposição de alta dureza irá riscar ou danificar a placa de filtragem — um componente essencial que custa significativamente mais do que a própria lâmina. A Sureay projeta um diferencial de dureza deliberado e comprovado entre a lâmina raspadora e a superfície da placa de filtragem.\n\nA face a montante da placa de filtragem é nitretada a plasma até HV 1.000+ (aproximadamente equivalente a HRC 70+), criando uma camada superficial extremamente dura e resistente ao desgaste, semelhante à cerâmica, com profundidade de 0,1 a 0,3 mm. A lâmina raspadora é fabricada intencionalmente com uma dureza HRC mais baixa, entre 58 e 62. Esse diferencial significa que, em todas as condições operacionais, a lâmina é o consumível de desgaste controlado: ela se desgasta gradualmente contra a superfície mais dura da placa, sem gerar arranhões ou sulcos por transferência de metal. A superfície da placa filtrante permanece intacta ao longo de vários ciclos de substituição da lâmina. Cada remessa de lâminas Sureay inclui um certificado de teste de dureza confirmando que a lâmina está dentro da faixa de HRC especificada — documentação verificável de que o princípio de desgaste controlado é mantido em todos os lotes de produção.\n\n## Resistência química e à corrosão para fluxos de PVC e plásticos mistos\n\nO processamento de PVC pós-consumo lavado, filmes flexíveis mistos ou plásticos derivados de REEE libera gases corrosivos agressivos — principalmente ácido clorídrico (HCl) e compostos organoclorados — em temperaturas de fusão de 200 a 260 °C. Os aços para ferramentas padrão D2 e H13 sofrem corrosão sob exposição prolongada ao HCl: a corrosão por pite se inicia nos limites dos grãos, degradando progressivamente a geometria da borda com microperfurações e aumentando os diâmetros dos orifícios além das especificações, comprometendo a qualidade da filtragem sem qualquer indício externo visível.\n\nPara fluxos que incluem PVC, a Sureay aplica duas medidas de proteção: (1) atualização da liga de base para classes de aço PM (metalurgia do pó) resistentes à corrosão, com distribuição homogênea de cromo que resiste ao ataque ácido nos limites dos grãos; (2) revestimentos de barreira por deposição física de vapor (PVD) nas superfícies das placas filtrantes, que vedam as paredes das microperfurações contra a difusão do HCl. Essa combinação prolonga a vida útil das placas de filtragem em 2 a 3 vezes em comparação com placas de liga padrão sem revestimento em matérias-primas contendo PVC e previne o modo de falha insidioso de aumento do diâmetro dos orifícios, que prejudica a eficiência da filtragem sem acionar um alarme de pressão.\n\n## Compatibilidade com retrolavagem\n\nFiltros contínuos de fusão de alta tecnologia (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporam mecanismos automatizados de retrolavagem: um pulso reverso de alta pressão de material fundido limpo é periodicamente disparado para trás através de uma seção localizada da placa filtrante para expelir o bolo de contaminantes incrustado nas microperfurações, restaurando a área aberta sem interromper a linha. O pulso de retrolavagem gera um pico de pressão reversa localizado — normalmente de 150 a 400 bar, dependendo do fabricante original (OEM) — aplicado a uma pequena área da placa de filtragem.\n\nAs placas de filtragem Sureay são projetadas e fabricadas para suportar as pressões de retrolavagem especificadas pelos fabricantes originais (OEM) sem microfissuras ou deformações. A geometria cônica dos orifícios é dimensionalmente otimizada para isso: a saída a jusante mais larga de cada perfuração cônica atua como um bocal alargado que acelera o pulso de retrolavagem, melhorando a eficiência de ejeção de contaminantes em comparação com orifícios cilíndricos. A integridade estrutural sob ciclos repetidos de alta pressão reversa é validada por meio da análise de elementos finitos (FEA) da distribuição de tensão nos ligamentos entre os orifícios. As placas de reposição da Sureay mantêm 100% de compatibilidade com o tempo, a pressão e o layout da matriz de orifícios da retrolavagem do fabricante original — não é necessária nenhuma recalibração do controlador de retrolavagem.\n\n## Análise de Falhas: Diagnóstico e Eliminação de Falhas Comuns em Raspadores e Filtros\n\nEngenheiros que buscam componentes de reposição geralmente lidam com um modo específico de falha. A escolha correta do material depende da causa raiz.\n\n**Lasca na borda (fratura frágil na ponta da lâmina):** Causada por um único impacto de alta energia proveniente de metais estranhos — parafusos, porcas, fragmentos de fio — incrustados na matéria-prima de remoagem PCR. Os tipos de carboneto D2 e padrão são vulneráveis à fratura frágil sob essa carga de impulso. **Atualização:** Especifique H13 (maior tenacidade ao impacto do que o D2) para fluxos com contaminação mista, nos quais o risco de metais estranhos é moderado, ou uma classe de carboneto com tenacidade otimizada (teor de Co ≥ 12%) para fluxos de alto risco. Adicione um ímã e/ou detector de metais a montante para reduzir a frequência de metais estranhos.\n\n**Riscas progressivas na superfície da placa de filtragem:** Sulcos finos e paralelos na face da placa de filtragem, acompanhados por aumento da pressão diferencial e intervalos reduzidos entre as lâminas. Causado por dureza incorreta da lâmina (lâmina mais dura que a placa), ângulo de bisel incorreto causando carga concentrada na borda ou contaminação por areia na interface lâmina-placa. **Atualização:** Verifique o certificado de dureza das lâminas (deve ser ≤ HRC 62). Confirme se o ângulo de chanfro da borda corresponde à geometria de contato da tela do fabricante original (OEM) (±0,5°). Inspecione a superfície da placa quanto ao desgaste da camada de nitreto de plasma — se o arranhão tiver atingido o metal base, a placa precisa ser substituída antes da instalação de novas lâminas.\n\n**Desgaste rápido das lâminas (< 200 horas em PCR padrão):** Vida útil inesperadamente curta em uma matéria-prima nominalmente moderada indica contaminação superior à declarada: elevado teor de fibra de vidro, sílica ou enchimento cerâmico no material triturado. Envie uma amostra do material triturado para análise de contaminação por XRF. **Atualização:** Passe primeiro do D2 para o H13; se a vida útil continuar inadequada, mude para o metal duro sólido, que proporciona uma vida útil de 5 a 8 vezes maior em fluxos de falha dominados por abrasivos.\n\n**Alargamento dos orifícios / Degradação da qualidade da filtragem sem alarme de pressão:** As microperfurações da placa filtrante se alargam gradualmente com o tempo, permitindo a passagem de partículas de contaminantes de grandes dimensões sob pressão diferencial estável. Causa raiz: corrosão por HCl decorrente da desgaseificação do PVC, que dissolve o material das paredes dos orifícios. Não há alarme de pressão porque os orifícios ampliados mantêm baixa resistência. **Atualização:** Especifique placas de filtro de aço PM com revestimento PVD e resistentes à corrosão para todos os fluxos contendo ≥ 5% de PVC em peso.",
+      "Lâminas raspadoras de reposição para filtros contínuos de plástico fundido. Opções D2 , H13 e metal duro, com perfis customizados e detalhes de montagem conforme desenho.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -4957,63 +6541,129 @@ export const blades: Blade[] = [
       "Kreyenborg",
       "Nordson BKG",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 Tool Steel / H13 Hot-Work Steel / Solid Tungsten Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value:
-          "Blade: HRC 58–62 (controlled-wear consumable) | Filter Plate Surface: Plasma Nitrided HV 1,000+",
-      },
-      {
-        label: "Filter Plate Profile",
-        value:
-          "Laser-drilled conical micro-perforations, 80–2,000 µm — tapered inlet expels contaminants, prevents polymer stagnation",
-      },
-      {
-        label: "Dimensional Tolerance",
-        value: "±0.05 mm (blade profile) | ±0.02 mm (thickness)",
-      },
-      {
-        label: "Operating Temperature",
-        value: "Up to 300 °C (H13 / Carbide grades)",
-      },
-      {
-        label: "Corrosion Resistance",
-        value:
-          "HCl-resistant alloys & barrier coatings for PVC and mixed-plastic melt outgassing",
-      },
-      {
-        label: "Applications",
-        value:
-          "PCR HDPE/PP, Glass-Filled Compounds, PVC Blends, Agricultural Film, WEEE Plastics",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Obtenha lâminas raspadoras de filtro de fusão de reposição com bordas de trabalho, perfis de corpo e suportes de suporte personalizados. Sureay oferece configurações D2 , H13 e metal duro com opções de tratamento de superfície para seu serviço de fusão. Envie seu desenho ou amostra para um orçamento adequado ao seu filtro. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     components: [
       {
-        id: "hardness-synergy",
-        tag: "PROTEÇÃO DE BENS",
-        title: "Sinergia de dureza projetada",
+        id: "melt-scraper-working-edge",
+        tag: "Borda de trabalho",
+        title: "Opções de raspador de aço e metal duro",
         description:
-          "As placas de filtro são submetidas a nitretação a plasma até atingir uma dureza HV 1.000+ (≈ HRC 70+). As lâminas raspadoras são mantidas deliberadamente na faixa de HRC 58–62. Essa diferença comprovada faz com que a lâmina seja o consumível de desgaste controlado — ela se desgasta contra a superfície mais dura da placa sem riscar nem arranhar. Cada remessa inclui um certificado de dureza que confirma que a lâmina está dentro da faixa especificada.",
+          "As configurações D2 , H13 e de metal duro oferecem opções de materiais para substituição de raspadores de filtro fundido, especificados com o polímero, os contaminantes e a tela correspondente em vista.",
       },
       {
-        id: "conical-laser-plates",
-        tag: "TECNOLOGIA DE FILTRAGEM",
-        title: "Microperfurações cônicas feitas a laser",
+        id: "melt-scraper-carrier",
+        tag: "Instalação",
+        title: "Bordas personalizadas e perfis de montagem de suporte",
         description:
-          "A geometria cônica do orifício (entrada estreita, saída larga) aproveita a pressão do material fundido para expelir imediatamente os contaminantes, em vez de permitir que eles fiquem estagnados dentro de orifícios com paredes cilíndricas. Evita o entupimento dos orifícios causado pela carbonização, mantém uma pressão diferencial consistente e suporta a dinâmica de pulsos de retrolavagem do fabricante original (OEM) na faixa de 150 a 400 bar sem a formação de microfissuras.",
+          "Os comprimentos de raspador listados variam de 150 a 500 mm. Sureay pode definir o contorno, a espessura e os recursos de montagem do suporte no desenho do filtro para que o novo raspador coloque sua borda de trabalho na posição especificada contra a tela.",
       },
       {
-        id: "failure-upgrade-path",
-        tag: "ANÁLISE DE FALHAS",
-        title: "Plano de atualização do diagnóstico",
+        id: "melt-scraper-material",
+        tag: "Opções de materiais",
+        title: "Opções de superfície para serviço de fusão específico",
         description:
-          "Lasca nas bordas causada por metais estranhos → mude para H13 ou metal duro de alta tenacidade. Riscos progressivos na placa → verifique o certificado HRC da lâmina e o ângulo de bisel. Vida útil < 200 h em PCR padrão → opte por metal duro maciço em caso de falha predominantemente por abrasão. Alargamento silencioso do furo → especifique placas PM com revestimento PVD resistentes à corrosão para fluxos contendo PVC.",
+          "Opções de revestimento de barreira e liga resistente à corrosão estão disponíveis para serviços específicos de fusão de PVC e plástico misto, permitindo que os requisitos de superfície e material sejam incluídos na consulta da lâmina.",
       },
     ],
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "150–500 mm",
+      },
+      {
+        label: "Aplicação",
+        value: "Remoção de contaminação de uma tela de filtro de fusão",
+      },
+      {
+        label: "Posição da peça",
+        value: "Transportador raspador na tela do filtro",
+      },
+      {
+        label: "Material",
+        value:
+          "Aço ferramenta D2 , aço para trabalho a quente H13 ou metal duro",
+      },
+      {
+        label: "Dureza da lâmina de aço",
+        value: "HRC 58–62",
+      },
+      {
+        label: "Tolerância de perfil",
+        value: "±0.05 mm",
+      },
+      {
+        label: "Tolerância de espessura",
+        value: "±0.02 mm",
+      },
+      {
+        label: "Temperatura operacional",
+        value: "Até 300 °C para configurações H13 ou metal duro",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value:
+          "Revestimentos de barreira para serviço de fusão de PVC e plástico misto",
+      },
+      {
+        label: "Resistência à corrosão",
+        value:
+          "Opções de liga resistente a HCl para serviço de fusão de PVC e plástico misto",
+      },
+      {
+        label: "Matéria-prima",
+        value:
+          "PCR HDPE/PP, compostos preenchidos com vidro, misturas de PVC, filmes agrícolas e plásticos REEE",
+      },
+    ],
+    relatedBladeIds: ["cutter-compactor-blades", "die-face-cutting-knives"],
+    offers: {
+      lowPrice: 35,
+      highPrice: 480,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "A que se referem as facas de filtro de fusão e as lâminas raspadoras?",
+          answer:
+            "Eles descrevem os elementos substituíveis que removem a contaminação retida da superfície da tela do filtro. A tela perfurada realiza a filtração e o transportador localiza o raspador. Identifique a posição instalada e a referência da peça ao fazer o pedido, para que a lâmina, a tela e o suporte sejam especificados como o componente necessário.",
+        },
+        {
+          question:
+            "Quais recursos identificam um raspador de filtro fundido substituto?",
+          answer:
+            "Use o modelo e versão do filtro, contorno da lâmina, perfil da borda de trabalho, espessura e montagem do suporte. A borda deve ocupar a posição pretendida em relação à tela. O comprimento total é apenas um identificador, especialmente quando filtros contínuos com nomes semelhantes usam diferentes mecanismos de tela ou raspador.",
+        },
+        {
+          question:
+            "Como deve ser escolhido o material raspador para plástico fundido contaminado?",
+          answer:
+            "Considere o polímero, o tipo de contaminante, as condições de serviço de fusão e a especificação da tela correspondente em conjunto. Compare o desgaste gradual da borda com danos locais no raspador usado. A construção selecionada em aço ou metal duro deve ser adequada ao arranjo de contato do filtro, com qualquer requisito de revestimento ou resistência à corrosão registrado separadamente.",
+        },
+        {
+          question:
+            "Um filtro fundido autolimpante usa um raspador universalmente intercambiável?",
+          answer:
+            "Não. O raspador de um filtro fundido autolimpante deve corresponder ao perfil de trabalho, transportador e tela desse conjunto específico. Alguns sistemas OEM usam contato controlado com uma tela mais dura para manter a borda. A substituição precisa preservar a geometria e o emparelhamento de materiais especificados para o filtro.",
+        },
+        {
+          question:
+            "O que deve ser revisto quando a contaminação já não é removida de forma eficaz?",
+          answer:
+            "Verifique se a borda do raspador ainda mantém o contato pretendido com a tela. Carga contaminante ou obstrução no sistema de descarga também podem afetar a remoção. Compare essas condições com as alterações na alimentação do material fundido e utilize o procedimento de serviço do fabricante do filtro para identificar a peça que precisa de atenção.",
+        },
+        {
+          question:
+            "O que devo enviar para uma cotação de lâmina raspadora de filtro derretido?",
+          answer:
+            "Enviar modelo e versão do filtro, desenho do raspador ou número da peça, polímero e contaminantes e quantidade. Adicione a montagem do suporte e as especificações retidas da tela. Se você usar uma amostra, mostre como ela é montada no suporte e marque a borda de trabalho desgastada.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do filtro, desenho do raspador, detalhes da placa da tela, polímero e contaminantes típicos.",
     dimensionLabels: {
       col0: "Modelo do filtro / OEM",
       col1: "Comprimento da lâmina (mm)",
@@ -5024,130 +6674,153 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007201",
         spec: "EREMA",
         od: "180 – 420",
         id: "25 – 40",
         thickness: "6 / 8",
       },
       {
-        spec: "Gneuß Rotary System",
+        itemNo: "SR007202",
+        spec: "Sistema rotativo Gneuß",
         od: "150 – 380",
         id: "20 – 35",
         thickness: "5 / 8",
       },
       {
+        itemNo: "SR007203",
         spec: "Ettlinger ERF 200/350",
         od: "200 / 350",
         id: "30 / 40",
         thickness: "8 / 10",
       },
       {
+        itemNo: "SR007204",
         spec: "FIMIC",
         od: "160 – 400",
         id: "22 – 38",
         thickness: "6 / 8",
       },
       {
+        itemNo: "SR007205",
         spec: "Kreyenborg KSF",
         od: "200 – 500",
         id: "30 – 50",
         thickness: "8 / 12",
       },
       {
+        itemNo: "SR007206",
         spec: "Nordson BKG",
         od: "150 – 350",
         id: "20 – 35",
         thickness: "5 / 8",
       },
     ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 35,
-      highPrice: 480,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Lâminas raspadoras de filtro derretido | Substituições personalizadas",
+      heroAlt:
+        "Lâminas raspadoras de reposição para um filtro de fusão contínuo",
+      sizeRange: "150–500 mm",
+      heroSpecs: [
         {
-          question:
-            "Quando devo trocar as lâminas do raspador do modelo D2 pelo modelo H13?",
-          answer:
-            "Mude para o H13 quando a temperatura de processamento da massa fundida exceder consistentemente 260 °C ou quando estiver processando fluxos altamente contaminados, como filmes agrícolas pós-consumo, plásticos de resíduos de equipamentos elétricos e eletrônicos (REEE) ou resíduos de embalagens com impressão intensa. Essas matérias-primas geram um estresse significativo devido aos ciclos térmicos, o que faz com que o D2 amoleça e perca a geometria das bordas em 200 a 400 horas de operação. A matriz de carboneto de molibdênio-vanádio do H13 mantém a dureza e a estabilidade dimensional até 300 °C, prolongando a vida útil do raspador em 60 a 80% com essas matérias-primas.",
+          label: "Material",
+          value: "D2 , H13 ou metal duro",
         },
         {
-          question:
-            "Como o desgaste da lâmina raspadora afeta a pressão de fusão e a produtividade em um filtro contínuo?",
-          answer:
-            "Uma lâmina raspadora desgastada deixa uma película de contaminação residual na superfície da tela do filtro após cada rotação. Essa película reduz progressivamente a área efetiva aberta da tela, fazendo com que a pressão do material fundido aumente e a produtividade diminua. Em uma linha de PCR com carga pesada, uma lâmina desgastada além de seu limite de vida útil pode causar uma redução de 15 a 25% na produtividade e acelerar o entupimento da tela a ponto de ocorrer falha por rompimento. O monitoramento do diferencial de pressão da massa fundida no filtro é o indicador de desgaste mais confiável — recomendamos a inspeção da lâmina quando o diferencial de pressão subir mais de 20% acima do valor de referência.",
-        },
-        {
-          question:
-            "Que grau de finura de filtração devo especificar para a produção de pellets reciclados de HDPE e PP?",
-          answer:
-            "Para a produção padrão de pellets de HDPE e PP por PCR destinados a aplicações de filmes ou moldagem por injeção, especifique uma finura de filtração de 300–500 µm. Isso remove partículas duras que causam riscos na face da matriz e defeitos superficiais, sem queda excessiva de pressão em matéria-prima moderadamente contaminada. Para resinas recicladas de contato com alimentos (rHDPE, rPP de acordo com a norma UE 10/2011), especifique 150–200 µm para atender aos requisitos mais rigorosos de remoção de contaminação. Para filmes agrícolas altamente contaminados ou matéria-prima derivada de resíduos sólidos urbanos (RSU), comece com 500–800 µm para controlar a pressão e reduza gradualmente à medida que a qualidade da matéria-prima melhora.",
-        },
-        {
-          question:
-            "As lâminas raspadoras de reposição de alta dureza podem riscar ou danificar minhas placas de filtro?",
-          answer:
-            "Essa é a pergunta mais importante a se fazer a qualquer fornecedor de lâminas de reposição. A Sureay projeta um diferencial de dureza deliberado: as placas de filtro são submetidas a nitretação a plasma até HV 1.000+ (aproximadamente HRC 70+), e as lâminas raspadoras são fabricadas com um nível de dureza estritamente controlado entre HRC 58 e 62. A lâmina é sempre mais macia do que a superfície da placa — ela funciona como um consumível de desgaste controlado que se desgasta gradualmente sem causar riscos ou sulcos por transferência de metal na face mais dura da placa. Cada remessa inclui um certificado de teste Rockwell HRC confirmando que a lâmina está dentro dessa faixa. Se um fornecedor não puder apresentar esse certificado, você não terá garantia de que o diferencial de dureza esteja correto.",
-        },
-        {
-          question:
-            "As placas de filtragem da Sureay são compatíveis com a retrolavagem automatizada nos sistemas da Ettlinger e da Gneuß?",
-          answer:
-            "Sim, totalmente compatíveis. As placas filtrantes Sureay são projetadas e validadas por análise de elementos finitos (FEA) para pressões de pulso de retrolavagem nominal do fabricante original (normalmente 150–400 bar nos sistemas Ettlinger ERF e Gneuß RSFgenius). A geometria cônica dos orifícios perfurados a laser aumenta a eficiência da retrolavagem: a saída a jusante mais ampla atua como um bocal que acelera o pulso reverso através de cada perfuração, melhorando a ejeção de contaminantes em comparação com placas de orifícios cilíndricos. O layout do arranjo de orifícios e as dimensões das placas reproduzem exatamente as especificações do fabricante original — não é necessária nenhuma recalibração do tempo de retrolavagem, da pressão ou dos parâmetros do controlador após a instalação.",
-        },
-        {
-          question:
-            "Meu filtro está perdendo qualidade de filtragem sem que haja um alarme de pressão diferencial. Como posso diagnosticar esse problema?",
-          answer:
-            "Esse é o sintoma do alargamento silencioso dos orifícios — um modo de falha em que as microperfurações da placa filtrante se alargam gradualmente devido à corrosão química das paredes dos orifícios, e não ao desgaste mecânico. Os orifícios alargados permitem a passagem de partículas de contaminantes de tamanho excessivo, mantendo, ao mesmo tempo, uma baixa pressão diferencial, pois os orifícios mais largos oferecem menor resistência. A causa principal é quase sempre a liberação de HCl do PVC ou a contaminação por organoclorados na matéria-prima, que reagem com o aço-ferramenta padrão em temperaturas de fusão. Confirme da seguinte forma: (1) medindo o tamanho das partículas de contaminação na massa fundida de saída — se houver partículas de tamanho excessivo sem aumento de pressão, o aumento do diâmetro dos orifícios está confirmado; (2) inspecionar uma placa removida sob ampliação para verificar se há corrosão por pite ou arredondamento nas paredes dos orifícios. A solução é especificar placas de filtro de aço PM resistentes à corrosão com revestimento PVD da Sureay, que vedam as paredes das microperfurações contra a difusão de ácido e impedem o alargamento progressivo e insidioso.",
-        },
-        {
-          question:
-            "A Sureay consegue fabricar lâminas raspadoras com as mesmas dimensões das nossas lâminas EREMA ou Gneuß atuais?",
-          answer:
-            "Sim. Envie-nos uma amostra da lâmina que você possui ou o número de peça do fabricante original (OEM) e o modelo da máquina. Verificaremos as dimensões do perfil da lâmina em nossa máquina de medição por coordenadas (CMM), confirmaremos a interface de montagem, o ângulo de bisel da borda e as especificações do material, e forneceremos peças de reposição diretas, prontas para uso. Para os sistemas de filtragem contínua da EREMA e os sistemas de filtragem rotativa da Gneuß, mantemos desenhos de referência para os tamanhos de plataforma mais comuns. O prazo de entrega para lâminas de reposição padrão é de 7 a 12 dias úteis a partir da confirmação das dimensões.",
-        },
-        {
-          question:
-            "Quantas horas de operação posso esperar das lâminas raspadoras D2 em uma linha de PCR mista?",
-          answer:
-            "Em uma linha de produção de plásticos rígidos por PCR misto (HDPE/PP, < 3% de contaminação mineral, temperatura de fusão de 230 a 260 °C), as lâminas raspadoras D2 geralmente proporcionam de 400 a 700 horas de operação antes que o perfil da borda se degrade a ponto de causar aumento da pressão diferencial. As lâminas H13 na mesma linha prolongam os intervalos de manutenção para 600–1.000 horas. Em fluxos altamente abrasivos (compostos com enchimento de vidro, filme agrícola com solo incrustado), a vida útil das lâminas D2 cai para 150–300 horas; as lâminas H13 estendem esse tempo para 250–450 horas; o metal duro proporciona 1.000–2.000+ horas nessas matérias-primas.",
+          label: "Aplicação",
+          value: "Filtração contínua de plástico por fusão",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "As lâminas raspadoras do filtro de fusão são peças de reposição originais (OEM) ou peças de reposição do mercado paralelo?",
-          answer:
-            "Trata-se de peças de reposição de precisão fabricadas de acordo com as especificações dimensionais do fabricante original (OEM). Realizamos a engenharia reversa de cada lâmina a partir de desenhos do fabricante original ou amostras do cliente, verificamos o encaixe em uma máquina de medição por coordenadas (CMM) e fornecemos um certificado de inspeção dimensional. Nossas lâminas não são peças originais com nova marca — elas são fabricadas diretamente em nossas instalações utilizando materiais premium D2, H13 ou carboneto, acompanhadas de nosso pacote completo de documentação de qualidade.",
+          label: "Tamanhos",
+          value: "150–500 mm",
         },
         {
-          question:
-            "Que tipo de documentação de qualidade é fornecida junto com as remessas de lâminas raspadoras?",
-          answer:
-            "Cada remessa inclui: certificado de ensaio de dureza Rockwell HRC, relatório de inspeção dimensional por CMM confirmando o perfil das arestas e as tolerâncias da interface de montagem, certificado de rastreabilidade do material da siderúrgica e certificado de lote tratamento térmico. Para clientes que necessitem de documentação mais detalhada para a certificação ISO 9001 ou para a qualificação de processos de reciclagem, relatórios completos de ensaios de materiais e registros de processo estão disponíveis mediante solicitação.",
+          label: "Aplicação",
+          value: "Remoção de contaminação de uma tela de filtro de fusão",
+        },
+        {
+          label: "Posição da peça",
+          value: "Transportador raspador na tela do filtro",
+        },
+        {
+          label: "Material",
+          value:
+            "Aço ferramenta D2 , aço para trabalho a quente H13 ou metal duro",
+        },
+        {
+          label: "Dureza da lâmina de aço",
+          value: "HRC 58–62",
+        },
+        {
+          label: "Tolerância de perfil",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Tolerância de espessura",
+          value: "±0.02 mm",
+        },
+        {
+          label: "Temperatura operacional",
+          value: "Até 300 °C para configurações H13 ou metal duro",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value:
+            "Revestimentos de barreira para serviço de fusão de PVC e plástico misto",
+        },
+        {
+          label: "Resistência à corrosão",
+          value:
+            "Opções de liga resistente a HCl para serviço de fusão de PVC e plástico misto",
+        },
+        {
+          label: "Matéria-prima",
+          value:
+            "PCR HDPE/PP, compostos preenchidos com vidro, misturas de PVC, filmes agrícolas e plásticos REEE",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/scraper-blades-02.webp",
+        alt: "Lâminas raspadoras de filtro derretido mostrando seus perfis corporais e bordas de trabalho",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para seu raspador de filtro derretido",
+        description:
+          "Inclua o modelo do filtro, desenho ou amostra da lâmina, detalhes do transportador, polímero e quantidade necessária.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha cestas e placas de tela de reposição feitas de acordo com o layout de montagem, curvatura e padrão de abertura do seu triturador. Sureay oferece arranjos de furos personalizados e opções de materiais de desgaste. Compartilhe seu desenho de tela ou amostra para obter um orçamento personalizado para sua aplicação de triagem de alta. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     id: "shredder-screens",
     name: "Peneiras para trituradores",
-    fullName: "Peneiras, cestas e placas de peneiramento para trituradores",
+    fullName: "Peneiras, cestos e chapas perfuradas para trituradores",
+    seoTitle:
+      "Telas trituradoras de reposição | Cestas e Pratos Personalizados",
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Peneiras para trituradores",
-    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    image: "/images/products/shredder-screens/shredder-screens-04-square.webp",
+    imageDimensions: {
+      width: 836,
+      height: 836,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Peças de desgaste",
     badgeColor: "teal",
     gallery: [
-      "/images/products/shredder-screens/shredder-screens-04.webp",
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
@@ -5157,84 +6830,45 @@ export const blades: Blade[] = [
       "Pilha de placas curvas de peneira para triturador em um palete, mostrando um padrão de orifícios redondos dispostos em escalonamento",
     ],
     description:
-      "Peneiras perfuradas para trituradores, cestas e placas de peneira em S355J2 e Hardox 400–500. Diâmetro dos furos: 8–80 mm; espessura: 12–30 mm; projetadas com base na sua peneira desgastada.",
-    fullDescription:
-      "A tela é o componente que realmente determina o tamanho das partículas na saída — o rotor e as lâminas apenas reduzem o material até que ele fique pequeno o suficiente para passar. No entanto, é a peça que a maioria dos operadores trata como algo secundário, operando uma tela cega ou em forma de sino por meses enquanto atribuem a queda na produtividade às lâminas. Em uma linha de redução de tamanho, as condições e as especificações da tela, juntas, são responsáveis por mais perda de capacidade do que o desgaste das lâminas.\n\nA Sureay fabrica telas para trituradores como peças de desgaste projetadas especificamente, e não como placas perfuradas genéricas. Cada tela é laminada de acordo com o raio exato do rotor, de modo que a folga entre a ponta do rotor e a superfície da tela permaneça uniforme em toda a largura de corte. Uma folga irregular faz com que o material seja arrastado e triturado em vez de cortado, o que aumenta o consumo de amperagem do motor, gera calor e partículas finas, além de acelerar o desgaste das próprias lâminas que a tela deveria proteger.\n\n## As três formas de tela\n\n**Cesto de tela (semicircular ou circular):** A geometria padrão para trituradores de eixo único e de eixo duplo. Fornecida como uma meia concha que envolve o rotor ou como duas metades fixadas em um cilindro completo. As peneiras tipo cesta apresentam a maior área aberta e são a forma que sofre maior desgaste, pois toda a superfície interna está em contato com o material em circulação.\n\n**Plaqueta de peneira (plana):** Utilizada em granuladores e trituradores ao lado da prensa, onde a geometria da câmara de corte é plana, em vez de cilíndrica. Mais fácil de fabricar e de fazer a engenharia reversa, e geralmente a forma mais barata de substituir.\n\n**Peneira em forma de foice:** Uma tela parcial curva instalada onde a geometria de descarga não permite o uso de uma cesta completa. Comum em trituradores compactos e móveis.\n\n**Tela tipo cassete:** Um inserto emoldurado de troca rápida. Custo inicial mais alto, tempo de troca drasticamente menor — vale a pena especificá-la em linhas que processam partículas de vários tamanhos na mesma máquina.\n\n## Especificação de uma tela: três números que importam\n\nToda tela é definida por três dimensões que interagem entre si, e a alteração de uma delas força uma mudança nas outras:\n\n- **Diâmetro do orifício (Ø)** define o tamanho máximo das partículas que passam. É o número que os compradores geralmente citam, e o único que costumam citar.\n- **Espessura da chapa (t)** determina a vida útil da tela. Uma chapa mais espessa resiste à deformação e ao alargamento dos orifícios, mas reduz a área aberta efetiva, pois cada orifício se torna um canal mais longo pelo qual o material precisa passar.\n- **Largura do ligamento** — a tira de aço entre orifícios adjacentes — determina a resistência estrutural da tela. Se o ligamento for muito estreito na tentativa de aumentar a área aberta, a tela racha entre os orifícios sob impacto, geralmente começando na borda de descarga.\n\nA área aberta decorre diretamente do diâmetro do furo e da largura do ligamento. Para furos redondos com passo escalonado de 60°, a área aberta ≈ 90,7 × (d / p)², onde p é o passo entre os centros dos furos. Passar de um orifício de 20 mm com passo de 28 mm para um orifício de 20 mm com passo de 24 mm aumenta a área aberta de aproximadamente 46% para 63% — e reduz a largura do ligamento de 8 mm para 4 mm, o que, em um triturador de plásticos que lida com contaminação ocasional por metais, levará à falha precoce.\n\n## Por que as telas não devem ser feitas de aço para ferramentas\n\nEsse é o erro de especificação mais comum que corrigimos. Uma tela não é uma ferramenta de corte. É um elemento estrutural perfurado que absorve impactos e abrasão contínuos enquanto mantém sua forma. Endurecer uma tela até HRC 58–62, como se fosse uma lâmina, torna-a frágil: os ligamentos racham, e uma tela fraturada pode lançar fragmentos de aço no rotor e destruir um conjunto completo de facas.\n\nO que uma tela precisa é de tenacidade com resistência adequada à abrasão:\n\n- **Chapa estrutural S355J2** — a opção padrão para plásticos limpos, filmes, papel e resíduos sólidos urbanos leves. Tenaz, barata, fácil de perfurar novamente e reparar.\n- **Hardox 400 / 450** — para resíduos pós-consumo mistos, madeira com areia e material de alimentação moderadamente abrasivo. Vida útil cerca de 2 a 3 vezes maior que a da S355, com um custo adicional modesto.\n- **Hardox 500 ou superfícies com revestimento duro** — para compostos com enchimento de vidro, madeira de demolição contaminada, resíduos de construção e demolição e outros fluxos altamente abrasivos. O revestimento duro é aplicado seletivamente na face interna de alto desgaste, enquanto a chapa base permanece resistente.\n\n## Engenharia reversa a partir de uma peneira desgastada\n\nA maioria dos pedidos de reposição chega sem um desenho técnico. Envie fotografias da peneira desgastada com uma fita métrica colocada ao longo do espaçamento entre os orifícios, além da marca e do modelo da máquina, e nós produziremos um desenho de fabricação para sua aprovação antes de cortar o aço. Quando a tela original apresenta orifícios alargados em forma de sino, trabalhamos com base na geometria dos orifícios não desgastados nas bordas, em vez dos orifícios centrais ampliados; assim, a peça de reposição restaura o tamanho original das partículas, em vez de reproduzir a condição desgastada.",
+      "Telas de reposição para trituradores de eixo único, com aberturas de 8–80 mm. Cestos e pratos personalizados de acordo com o padrão de furo, curvatura e montagem.",
     disambiguation:
-      "Está procurando ferramentas de corte em vez da peneira de classificação? Consulte [Lâminas para trituradores de eixo único](/products/single-shaft-shredder-blades) para encontrar insertos de rotor, facas fixas e suportes.",
+      "Para ferramentas de corte móveis, consulte [Facas de rotor triturador de eixo único](/products/single-shaft-shredder-blades) .",
     link: "/products/shredder-screens",
-    compatibleMachines: [
-      "Lindner",
-      "Vecoplan",
-      "UNTHA",
-      "WEIMA",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "SSI Shredding Systems",
-      "Genox",
-    ],
     specs: [
       {
-        label: "Screen Forms",
-        value: "Basket (half/full round) · Flat Plate · Sickle · Cassette",
+        label: "Formulários de tela",
+        value:
+          "Cesta (meia rodada/volta completa) · Placa plana · Foice · Cassete",
       },
       {
-        label: "Hole Diameter",
-        value: "8 – 80 mm (round, square or slotted)",
-      },
-      {
-        label: "Plate Thickness",
-        value: "12 – 30 mm",
-      },
-      {
-        label: "Ligament Width",
-        value: "5 – 20 mm (application-matched)",
+        label: "Tamanhos",
+        value: "Aberturas 8–80 mm",
       },
       {
         label: "Material",
-        value: "S355J2 · Hardox 400 / 450 / 500 · Hardfaced",
+        value: "S355J2 · Hardox 400/450/500 · Revestido duro",
       },
       {
-        label: "Open Area",
-        value: "34 – 58% (pattern-dependent)",
+        label: "Área aberta",
+        value: "34 – 58% (dependente do padrão)",
       },
       {
-        label: "Hole Pattern",
-        value: "60° staggered · Straight · Slotted",
+        label: "Padrão de furo",
+        value: "60° escalonado · Reto · Com fenda",
       },
       {
-        label: "Supply Format",
-        value: "Drop-in OEM replacement or reverse-engineered from sample",
+        label: "Aplicação",
+        value: "Triagem de descarga em trituradores de eixo único",
       },
       {
-        label: "OEM Fitment",
-        value: "Lindner, Vecoplan, UNTHA, WEIMA, Herbold, ZERMA",
+        label: "Compatibilidade com OEM",
+        value: "Lindner , Vecoplan , UNTHA , WEIMA , Herbold , ZERMA",
       },
     ],
-    componentsIntro:
-      "Uma peneira é avaliada com base em três critérios: se retém o tamanho de partícula que você especificou, por quanto tempo a retém e se resiste à contaminação presente na matéria-prima sem rachar.",
-    components: [
-      {
-        id: "aperture-sets-particle-size",
-        tag: "TAMANHOS",
-        title: "É a tela que determina o resultado, não o rotor",
-        description:
-          "Laminado de acordo com o raio exato do seu rotor, para que a distância entre a ponta e a tela permaneça uniforme em toda a largura. Uma distância consistente significa que o material é cortado uma única vez e descarregado, em vez de ser recirculado e triturado até gerar calor e partículas finas.",
-      },
-      {
-        id: "toughness-not-hardness",
-        tag: "METALURGIA",
-        title: "Resistência, e não dureza da lâmina",
-        description:
-          "As telas são especificadas em S355J2, Hardox 400–500 ou chapa com revestimento de dureza seletiva — nunca temperadas até atingir a dureza HRC das lâminas. Uma tela frágil racha nos pontos de ligação e pode fazer com que pedaços de aço caiam no rotor, levando consigo um conjunto completo de lâminas.",
-      },
-      {
-        id: "screen-knife-system",
-        tag: "SISTEMA",
-        title: "Peneiras, facas de balcão e suportes em um único pedido",
-        description:
-          "Uma tela entupida ou com abertura em forma de sino acelera o desgaste das lâminas, e lâminas desgastadas entopem a tela mais rapidamente. Fornecemos telas juntamente com contra-lâminas, suportes de lâminas, barras de fixação e espaçadores, para que todo o conjunto de peças de desgaste seja substituído na mesma parada da produção.",
-      },
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "single-shaft-bed-knives",
+      "granulator-blades",
     ],
     dimensionLabels: {
       col0: "Classe de saída",
@@ -5246,137 +6880,224 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Fine regrind — PET flake, film",
+        itemNo: "SR002701",
+        spec: "Moagem fina – flocos de PET, filme",
         od: "8",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
-        spec: "Fine regrind — PET flake, film",
+        itemNo: "SR002702",
+        spec: "Moagem fina – flocos de PET, filme",
         od: "10",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
-        spec: "General regrind",
+        itemNo: "SR002703",
+        spec: "Remoagem geral",
         od: "12",
         bolt: "15",
         thickness: "6",
       },
       {
-        spec: "General regrind",
+        itemNo: "SR002704",
+        spec: "Remoagem geral",
         od: "16",
         bolt: "15 – 20",
         thickness: "7",
       },
       {
-        spec: "Coarse regrind",
+        itemNo: "SR002705",
+        spec: "Moagem grossa",
         od: "20",
         bolt: "20",
         thickness: "8",
       },
       {
-        spec: "Coarse regrind",
+        itemNo: "SR002706",
+        spec: "Moagem grossa",
         od: "25",
         bolt: "20 – 25",
         thickness: "9",
       },
       {
-        spec: "Pre-shred / bulky waste",
+        itemNo: "SR002707",
+        spec: "Pré-triturar/resíduos volumosos",
         od: "30",
         bolt: "25",
         thickness: "10",
       },
       {
-        spec: "Pre-shred / bulky waste",
+        itemNo: "SR002708",
+        spec: "Pré-triturar/resíduos volumosos",
         od: "40",
         bolt: "25 – 30",
         thickness: "12",
       },
       {
-        spec: "Primary shred / RDF",
+        itemNo: "SR002709",
+        spec: "Trituração primária / RDF",
         od: "50 – 80",
         bolt: "30",
         thickness: "14 – 20",
       },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "single-shaft-bed-knives",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 120,
       highPrice: 1900,
     },
+    components: [
+      {
+        id: "shredder-screens-advantage-1",
+        tag: "Opções de placas e materiais resistentes ao desgaste",
+        title: "Opções de placas e materiais resistentes ao desgaste",
+        description:
+          "As configurações S355J2 , Hardox 400, 450 e 500 e com revestimento rígido oferecem opções de materiais para telas trituradoras de reposição, com a construção escolhida especificada para o design do painel e da alimentação.",
+      },
+      {
+        id: "shredder-screens-advantage-2",
+        tag: "Aberturas personalizadas de 8 a 80 mm",
+        title: "Aberturas personalizadas de 8 a 80 mm",
+        description:
+          "Sureay faz padrões de tela redondos e com fenda. As aberturas listadas abrangem 8–80 mm. O tamanho e o passo da abertura podem ser especificados em conjunto para reproduzir as aberturas de descarga e o material deixado entre elas.",
+      },
+      {
+        id: "shredder-screens-advantage-3",
+        tag: "Cestos, Pratos e Telas de Cassetes Formados",
+        title: "Cestos, Pratos e Telas de Cassetes Formados",
+        description:
+          "Cestos semicirculares ou redondos, placas planas, formas de foice e configurações de cassetes podem ser feitos de acordo com a curvatura necessária e o layout de fixação para seus suportes de tela existentes.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Minha produtividade caiu. Devo trocar a tela ou as lâminas primeiro?",
+            "Quais detalhes identificam uma tela trituradora de reposição?",
           answer:
-            "Inspecione primeiro a tela, pois é mais barato verificar e, na maioria das vezes, é essa a causa. Procure por “bell-mouthing” — orifícios que se desgastaram de forma cônica e se ampliaram na face interna — e por “blinding”, quando o plástico amolecido obstruiu as aberturas. Se os orifícios tiverem aumentado mais de cerca de 10% em relação ao tamanho nominal, a tela já está deixando passar partículas acima do tamanho permitido e deve ser substituída, independentemente do estado da lâmina. Na prática, os dois se desgastam juntos: uma lâmina cega empurra o material contra a tela em vez de cortá-lo, e uma tela obstruída recircula o material que desgasta o fio da lâmina. Substituir apenas um deles geralmente significa uma segunda parada da produção em poucas semanas.",
+            "O modelo da máquina, o contorno do painel, a espessura da placa, a curvatura e as posições de fixação estabelecem o ajuste. O tamanho e o padrão do furo definem as aberturas de descarga. Uma placa plana e uma cesta curva podem compartilhar um tamanho de abertura enquanto exigem geometria de instalação diferente, portanto, use o desenho original do painel ou dimensões de referência não usadas para a substituição.",
+        },
+        {
+          question: "Como escolho o tamanho da abertura da tela do triturador?",
+          answer:
+            "Comece com o requisito de tamanho a jusante e o formato da alimentação. Aberturas menores geralmente visam resultados mais finos, enquanto aberturas maiores permitem a descarga de material mais grosso. O avanço plano ou flexível pode passar de maneira diferente das peças rígidas, portanto, confirme o formato do furo existente e a configuração da máquina. A abertura é um tamanho de abertura. A produção real tem uma distribuição de tamanho.",
         },
         {
           question:
-            "O que realmente causa o efeito de ofuscamento da tela e como posso evitar isso?",
+            "O que significam a cesta da tela, o cassete e a placa da tela?",
           answer:
-            "O entupimento é quase sempre um problema de aquecimento, e não de tamanho dos orifícios. Quando as lâminas estão cegas ou a folga entre o rotor e a tela aumentou, o material é espalhado e malhado, em vez de ser cortado. O calor gerado pelo atrito amolece o polímero, que então é extrudado para dentro das aberturas e solidifica. Instalar uma tela maior geralmente torna a fração grossa inaceitável, a menos que a causa seja corrigida. As soluções duradouras são afiar ou substituir as lâminas, restaurar a folga correta do rotor e — para polímeros sensíveis ao calor, como o LDPE e o filme de PP — reduzir a taxa de alimentação ou adicionar resfriamento. Uma placa mais espessa agrava o entupimento, em vez de melhorá-lo, pois cada orifício se torna um canal mais longo a ser desobstruído.",
+            "Uma cesta descreve uma forma de tela curva, enquanto uma placa pode ser plana ou moldada. Cassete descreve um conjunto removível que pode incluir recursos de suporte. O escopo real da substituição deve identificar o painel perfurado, a moldura e os detalhes de fixação, pois esses nomes de compra podem referir-se a diferentes montagens em diferentes máquinas.",
+        },
+        {
+          question: "O formato e o passo do furo podem ser personalizados?",
+          answer:
+            "Sim. Sureay pode criar o padrão de abertura e espaçamento especificado para o desenho da tela. O passo do furo, o tamanho da abertura e a espessura da placa devem ser considerados em conjunto porque determinam a área aberta e o material restante entre os furos. Inclua o layout de montagem ao propor uma mudança de padrão para uma cesta ou painel existente.",
         },
         {
           question:
-            "Quanta área aberta posso adicionar antes que a tela se torne estruturalmente insegura?",
+            "Como escolho entre aço estrutural, Hardox e telas com revestimento duro?",
           answer:
-            "O limite é determinado pela largura do ligamento, e não pela porcentagem de área aberta. Como regra prática, mantenha o ligamento com largura igual ou superior a 0,4× o diâmetro do orifício para plásticos puros e igual ou superior a 0,6× para matérias-primas que possam conter metal, pedras ou outros resíduos duros. Um orifício de 20 mm com um ligamento de 8 mm proporciona aproximadamente 46% de área aberta e resiste ao material contaminado; o mesmo orifício com um ligamento de 4 mm atinge cerca de 63% de área aberta, mas rachará entre os orifícios sob impacto, geralmente começando na borda de descarga. Em fluxos abrasivos, preferimos aumentar a espessura da placa e aceitar uma área aberta ligeiramente menor do que buscar maior rendimento com um ligamento fino.",
+            "Compare a abrasividade e o impacto da alimentação com o padrão de desgaste, espessura e geometria formada da tela atual. Os graus Hardox e construções com revestimento duro oferecem alternativas à opção de aço estrutural listada. Especifique explicitamente a placa necessária ou a construção da superfície, mantendo o suporte da máquina e os requisitos de fixação como parte do projeto de substituição.",
+        },
+        {
+          question: "Por que o material se acumula na tela do triturador?",
+          answer:
+            "Um padrão de abertura que funciona com uma alimentação pode obstruir outra, principalmente ao processar material plano. Compare o material acumulado com o padrão e condição do furo antes de alterar o tamanho da abertura. A geometria da tela pode resolver problemas de passagem específicos da alimentação, mas uma substituição deve manter o suporte e o arranjo de montagem exigidos pela máquina.",
         },
         {
           question:
-            "Por que uma tela não deveria ser endurecida até atingir o mesmo HRC das lâminas?",
+            "Como faço para obter um orçamento para uma tela ou cesta de triturador de reposição?",
           answer:
-            "Porque uma tela se danifica de maneira diferente de uma lâmina. Uma lâmina precisa manter a retenção do fio e opera sob compressão na borda de corte; uma tela é um elemento estrutural perfurado que absorve impactos contínuos ao longo de uma grande extensão. Endurecidos a HRC 58–62, os ligamentos perdem a ductilidade necessária para absorver choques e acabam rachando em vez de se deformarem. Uma tela rachada é muito mais cara do que uma desgastada, pois fragmentos que entram no rotor podem destruir um conjunto inteiro de facas. Especificamos o S355J2 para plásticos puros, o Hardox 400/450 para matérias-primas mistas pós-consumo e o Hardox 500 ou revestimento seletivo para materiais altamente abrasivos — todos escolhidos, em primeiro lugar, por sua tenacidade.",
-        },
-        {
-          question:
-            "Vocês conseguem fabricar uma tela a partir da minha, que está gasta, caso eu não tenha um desenho?",
-          answer:
-            "Sim, e é assim que a maioria dos nossos pedidos de peneiras começa. Envie fotos da peneira desgastada com uma fita métrica colocada ao longo do espaçamento entre os orifícios, além da marca e do modelo da máquina e, quando possível, o comprimento total do arco e os detalhes da placa terminal. Elaboramos um desenho de fabricação para sua aprovação por escrito antes de qualquer corte no aço. Um detalhe importante: determinamos a geometria dos orifícios a partir das bordas não desgastadas, e não dos orifícios centrais alargados, de modo que a nova tela restaure o tamanho original das partículas, em vez de reproduzir a condição de desgaste.",
-        },
-        {
-          question:
-            "Vocês também fornecem as lâminas de contra-corte, os suportes e as barras de fixação?",
-          answer:
-            "Sim. As telas, as facas contrárias, os suportes das facas, as barras de fixação e os espaçadores são todos fabricados internamente e normalmente enviados juntos, e é assim que recomendamos que sejam encomendados. Substituir a tela sem retirar as facas contrárias desgastadas significa que a nova tela ficará entupida mais rapidamente, e uma única remessa consolidada reduz tanto o custo de frete quanto o número de interrupções na produção.",
+            "Envie o modelo do triturador e o desenho da tela ou número da peça, quantidade do painel, alimentação e tamanho de saída alvo. Para uma cesta personalizada, mostre o padrão de montagem, curvatura, espessura da placa e layout dos furos. Se a sua referência for um painel desgastado, sinalize furos alargados, áreas dobradas e fixações danificadas.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo da máquina, formato e tamanho do furo, passo, espessura da placa, raio do painel e posições de fixação. Para furos redondos de Ø100 mm enviar modelo e desenho da tela para verificarmos a configuração.",
+    compatibleMachines: [
+      "Lindner",
+      "Vecoplan",
+      "UNTHA",
+      "WEIMA",
+      "Herbold",
+      "ZERMA",
+    ],
+    detailLayout: {
+      sizeRange: "Ø8–80 mm",
+      heroSpecs: [
         {
-          question: "Você é um fabricante ou uma empresa comercial?",
-          answer:
-            "Somos um fabricante direto fundado em 2008. As telas são cortadas, laminadas, perfuradas e — quando especificado — revestidas com metal duro em nossa própria oficina; é por isso que podemos trabalhar a partir de uma fotografia de uma peça desgastada, em vez de precisarmos de um desenho finalizado.",
+          label: "Material",
+          value: "S355J2 · Hardox 400/450/500 · Revestido duro",
         },
         {
-          question:
-            "Qual é o prazo de entrega de uma tela produzida por engenharia reversa e como ela é embalada?",
-          answer:
-            "As telas padrão, nas espessuras de chapa disponíveis em estoque, são enviadas em 10 a 15 dias úteis a partir da aprovação do desenho. As telas projetadas por engenharia reversa levam cerca de 3 a 5 dias a mais para o ciclo de desenho e aprovação. As telas são enviadas em paletes de madeira fumigadas, com proteção nas bordas e cintas de aço; as cestas de grande diâmetro são encaixadas umas nas outras para reduzir o custo volumétrico do frete.",
+          label: "Aplicação",
+          value: "Triagem de descarga em trituradores de eixo único",
         },
         {
-          question: "Que documentação acompanha um pedido de tela?",
-          answer:
-            "Cada pedido inclui um registro de inspeção dimensional em relação ao desenho aprovado e um certificado do material da chapa — incluindo o certificado de fábrica da Hardox, quando forem especificadas as classes Hardox. As peneiras com revestimento duro, além disso, vêm acompanhadas de um registro do consumível de revestimento e da dureza depositada.",
+          label: "Formulários de tela",
+          value:
+            "Cesta (meia rodada/volta completa) · Placa plana · Foice · Cassete",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Aberturas 8–80 mm",
+        },
+        {
+          label: "Formulários de tela",
+          value:
+            "Cesta (meia rodada/volta completa) · Placa plana · Foice · Cassete",
+        },
+        {
+          label: "Material",
+          value: "S355J2 · Hardox 400/450/500 · Revestido duro",
+        },
+        {
+          label: "Área aberta",
+          value: "34 – 58% (dependente do padrão)",
+        },
+        {
+          label: "Padrão de furo",
+          value: "60° escalonado · Reto · Com fenda",
+        },
+        {
+          label: "Aplicação",
+          value: "Triagem de descarga em trituradores de eixo único",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Inclua o modelo da máquina, formato e tamanho do furo, passo, espessura da placa, raio do painel e posições de fixação. Para furos redondos de Ø100 mm enviar modelo e desenho da tela para verificarmos a configuração.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
     id: "cutter-compactor-blades",
-    name: "Lâminas do compactador de corte",
-    fullName: "Facas do rotor e do estator do compactador cortador",
-    category: "granulator_blades",
+    seoDescription:
+      "Prepare filmes PE ou PP e flocos de PET para extrusão com rotor de reposição e facas de estator em D2 , M2 HSS ou construção com ponta de metal duro.",
+    name: "Facas para cortadores compactadores",
+    fullName: "Facas para cortadores-compactadores de linhas de extrusão",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Lâminas do compactador cortador",
+    categoryDisplay: "Facas para cortadores compactadores",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+    imageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Reciclagem PCR",
     badgeColor: "orange",
     gallery: [
@@ -5385,14 +7106,12 @@ export const blades: Blade[] = [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
-      "Par de facas do estator do compactador cortador, mostrando o chanfro retificado e a fixação com cabeça escareada",
+      "Par de facas do estator do compactador de corte mostrando o chanfro retificado com precisão e a montagem escareada",
       "Conjunto de lâminas do compactador — lâmina do rotor, bloco de fixação da lâmina e lâmina do estator",
       "Faca de rotor de compactador com lâmina longa, com aresta de corte retificada e orifício de fixação escareado",
     ],
     description:
-      "Lâminas de rotor e estator para compactadores com cortador e aglomeradores em D2, M2 HSS e com ponta de metal duro. Encaixe direto para EREMA, NGR, Starlinger e Previero.",
-    fullDescription:
-      "Em um compactador com lâminas — também conhecido como aglomerador, densificador ou unidade de pré-condicionamento —, as lâminas giratórias cortam e aquecem por atrito a película solta, a fibra ou os flocos de PET até que amoleçam e se densifiquem, formando uma farofa solta que a extrusora possa realmente alimentar. As lâminas desempenham duas funções ao mesmo tempo: cortam e geram o calor por atrito controlado que possibilita a densificação. Essa dupla função é o motivo pelo qual elas se desgastam mais rapidamente do que qualquer outra ferramenta da linha, precisando normalmente de substituição a cada três a seis meses em operações contínuas com filme e PET.\n\nA Sureay fabrica tanto as facas rotativas quanto as facas fixas do estator, além dos blocos de fixação e das lâminas de pré-corte que são montadas junto com elas. As lâminas são retificadas de forma plana e paralela em todo o seu comprimento, pois, em um compactador, é a planicidade da face de montagem que determina se a folga de corte definida na instalação é a mesma que ainda se mantém na extremidade oposta da lâmina.\n\n## Folga de corte: a variável que controla tudo\n\nA folga entre a lâmina rotativa e a lâmina fixa do estator é o ajuste de maior importância em um cortador-compactador e o que mais frequentemente é deixado sem verificação entre as trocas de lâminas.\n\n**Folga muito larga.** O material é amassado em vez de cortado. O calor de atrito ultrapassa o intervalo pretendido, o filme se espalha formando grumos em vez de formar uma farofa uniforme, a densidade aparente torna-se inconsistente e a extrusora a jusante recebe uma alimentação instável. No caso de flocos de PET, o excesso de calor provoca degradação relacionada à umidade antes mesmo que o material chegue ao secador. A produtividade cai enquanto o consumo de energia aumenta — a característica clássica de uma folga desgastada ou mal ajustada.\n\n**Folga muito estreita.** As lâminas entram em contato sob carga. As bordas lascam, a corrente do motor apresenta picos a cada carga pesada e, na pior das hipóteses, uma lâmina giratória atinge o estator com força suficiente para danificar o bloco de fixação ou o próprio disco do rotor — um reparo uma ordem de magnitude mais caro do que as lâminas.\n\nAs aberturas de trabalho típicas variam entre 0,2 e 0,5 mm, dependendo do tamanho da máquina e do material, mas o valor correto é aquele indicado no manual da sua máquina. O que importa é que a folga possa realmente ser mantida: se a face de montagem da lâmina não for plana, ou se a lâmina do rotor e a do estator se desgastarem em graus diferentes, a folga varia ao longo do comprimento de corte, independentemente do cuidado com que tenha sido ajustada.\n\n## Por que as lâminas do rotor e do estator são substituídas como um conjunto\n\nAs lâminas rotativas e fixas se desgastam em ritmos diferentes e com geometrias distintas — a lâmina do rotor perde o fio, enquanto a lâmina do estator tende a se desgastar em forma de raio e a se cavar levemente onde o fluxo de material se concentra. Ajustar uma nova lâmina do rotor contra um estator desgastado restaura apenas metade da geometria de corte: a folga torna-se irregular ao longo de seu comprimento, a lâmina nova suporta toda a carga de corte e fica cega muito mais rápido do que deveria. Substituir ambas juntas custa mais por parada, mas menos por tonelada.\n\n## Seleção de material por tipo de matéria-prima\n\n**D2 (1.2379), HRC 58–61** — a escolha de uso geral para filmes limpos de LDPE, LLDPE e PP, sacos tecidos e resíduos de produção pré-consumo. Boa retenção do fio, tolerante a impactos ocasionais e a opção mais econômica para reafiar.\n\n**M2 HSS (1,3343), HRC 62–64** — para flocos de PET, filmes impressos e com grande acúmulo de pó, e material pós-consumo com resíduos de etiquetas de papel ou contaminação por minerais finos. Mantém o fio em temperaturas elevadas no interior de um compactador em operação, onde o D2 começa a amolecer.\n\n**Com ponta de carboneto, HRA 89–91 no fio** — para compostos reforçados com fibra de vidro, materiais com enchimento mineral, masterbatch de negro de fumo e matérias-primas com alto teor de cinzas. Intervalos substancialmente mais longos entre as trocas em fluxos que danificam o aço para ferramentas, a um preço unitário mais alto e com menor tolerância a impactos.\n\n## Compatibilidade com máquinas\n\nAs lâminas são projetadas por engenharia reversa para máquinas EREMA (unidades de pré-condicionamento INTAREMA, TVEplus e RegrindPro), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac e Munchy. Envie o modelo da máquina e uma fotografia da lâmina desgastada, ou a própria lâmina, e elaboraremos um desenho para aprovação antes da fabricação.",
+      "Rotor de substituição e facas de estator para compactadores de corte de plástico. Opções D2 , M2 HSS e pontas de metal duro, com perfis personalizados para preparação de alimentação de extrusão.",
     link: "/products/cutter-compactor-blades",
     compatibleMachines: [
       "EREMA",
@@ -5404,69 +7123,128 @@ export const blades: Blade[] = [
       "Plasmac",
       "Munchy",
     ],
+    compatibleMachinesIntro:
+      "Obtenha facas cortadoras-compactadoras de reposição para sua linha de extrusão, incluindo rotor, estator e posições de pré-cortador. Sureay oferece perfis personalizados em construções D2 , M2 HSS e com ponta de metal duro. Compartilhe seu desenho ou amostra para obter um orçamento cobrindo as facas e os blocos de suporte especificados separadamente. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "compactor-knife-positions",
+        tag: "Posições de faca",
+        title: "Opções de corte com pontas de aço e metal duro",
+        description:
+          "As facas D2 , M2 HSS e com ponta de metal duro oferecem opções de material e construção para preparação de alimentação de plástico, com a substituição especificada em torno da forma de alimentação e da posição existente da faca.",
+      },
+      {
+        id: "compactor-edge-construction",
+        tag: "Construção de borda",
+        title: "Facas de rotor, estator e pré-cortador",
+        description:
+          "Sureay fornece facas móveis, fixas e pré-cortadoras para conjuntos cortador-compactador. Os comprimentos de faca listados variam de 80 a 400 mm. Cada posição pode ser encomendada separadamente ou coordenada com as outras posições de corte na montagem.",
+      },
+      {
+        id: "compactor-process-position",
+        tag: "Posição do processo",
+        title: "Perfis personalizados com blocos de suporte",
+        description:
+          "Contornos de lâmina personalizados, recursos de fixação e perfis de corte podem ser cotados juntamente com os blocos de suporte necessários, mantendo a lâmina e suas peças de suporte alinhadas com a montagem existente.",
+        relatedBladeIds: ["granulator-blades"],
+      },
+    ],
     specs: [
       {
-        label: "Knife Types",
-        value: "Rotor (movable) · Stator (fixed) · Pre-cutter · Holder block",
+        label: "Tamanhos",
+        value: "80–400 mm",
+      },
+      {
+        label: "Aplicação",
+        value: "Pré-condicionamento da matéria-prima antes da extrusão",
+      },
+      {
+        label: "Tipos de faca",
+        value:
+          "Facas de rotor, facas de estator fixas, facas pré-cortadoras e blocos porta-facas",
       },
       {
         label: "Material",
-        value: "D2 (1.2379) · M2 HSS (1.3343) · Carbide-tipped",
+        value:
+          "D2 (1.2379), M2 HSS (1.3343) ou construção com ponta de metal duro",
       },
       {
-        label: "Hardness",
-        value: "HRC 58–61 (D2) · HRC 62–64 (M2) · HRA 89–91 (carbide)",
+        label: "Dureza",
+        value:
+          "D2 : HRC 58–61; M2 : HRC 62–64; aresta de corte de metal duro: HRA 89–91",
       },
       {
-        label: "Typical Cutting Gap",
-        value: "0.2 – 0.5 mm (machine-dependent)",
+        label: "Planicidade da superfície",
+        value: "≤0,03 mm ao longo da lâmina",
       },
       {
-        label: "Face Flatness",
-        value: "≤ 0.03 mm over full blade length",
+        label: "Paralelismo",
+        value: "≤0.02 mm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.02 mm",
+        label: "Matéria-prima",
+        value: "Filme PE / PP, flocos de PET, sacos de tecido, fibra e espuma",
       },
       {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
+        label: "Espaço de corte típico",
+        value: "0,2–0,5 mm (dependente da máquina)",
       },
       {
-        label: "Applications",
-        value: "PE / PP Film, PET Flake, Woven Bags, Fibre, Foam",
-      },
-      {
-        label: "OEM Fitment",
-        value: "EREMA, NGR, Starlinger, Previero, Sorema, Erdwich",
+        label: "Tratamento térmico",
+        value:
+          "Endurecimento a vácuo e tratamento criogênico profundo (-196°C)",
       },
     ],
-    componentsIntro:
-      "As lâminas dos compactadores apresentam falhas de uma das três maneiras a seguir: o fio da lâmina se desgasta, a folga se altera ou a lâmina lasca devido à contaminação. Cada uma delas requer uma solução diferente, e escolher a solução errada representa um desperdício de dinheiro.",
-    components: [
-      {
-        id: "gap-holding-geometry",
-        tag: "GEOMETRIA",
-        title: "Uma meta que você define uma vez e mantém",
-        description:
-          "Retificado com planicidade ≤0,03 mm e paralelismo ≤0,02 mm ao longo de todo o comprimento da lâmina. A folga ajustada durante a instalação permanece uniforme de ponta a ponta, em vez de se abrir em uma extremidade e fechar na outra à medida que a carga é aplicada.",
-      },
-      {
-        id: "feedstock-matched-alloy",
-        tag: "METALURGIA",
-        title: "Liga metálica adequada ao que você realmente utiliza",
-        description:
-          "D2 para filmes limpos de PE e PP; M2 HSS para flocos de PET e material pós-consumo em pó que amolece o D2 na temperatura de trabalho; com ponta de carboneto para fluxos com enchimento de vidro e alto teor de cinzas. Especificado com base na sua matéria-prima, e não a partir de uma configuração padrão.",
-      },
-      {
-        id: "matched-rotor-stator-sets",
-        tag: "VIDA ÚTIL",
-        title: "Fornecidos como conjuntos combinados de rotor e estator",
-        description:
-          "As lâminas do rotor e do estator sofrem desgaste, assumindo geometrias diferentes. A instalação de uma lâmina nova no rotor em contato com um estator desgastado deixa a folga irregular e sobrecarrega apenas a lâmina nova — fazendo com que ela perca o fio em uma fração de sua vida útil nominal. Nós as vendemos e enviamos em conjuntos.",
-      },
+    relatedBladeIds: [
+      "granulator-blades",
+      "continuous-melt-filter-scraper-blades",
     ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 560,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "As facas aglomeradoras e as lâminas cortadoras-compactadoras são iguais?",
+          answer:
+            "Sim, os nomes podem referir-se a facas no mesmo equipamento de preparação de alimentação por extrusão. A peça real depende da máquina e se a faca fica no rotor, estator ou estação de pré-corte.",
+        },
+        {
+          question:
+            "Como o filme flexível e os flocos pré-cortados afetam a seleção da faca?",
+          answer:
+            "Filme flexível e flocos pré-cortados apresentam diferentes formas de alimentação para a unidade de pré-condicionamento. Compare a posição da faca instalada e o chanfro com o material que está sendo processado. Manter esses detalhes ajuda a especificar uma substituição, enquanto uma mudança na forma de alimentação pode exigir a revisão da configuração pretendida da faca da máquina.",
+        },
+        {
+          question:
+            "Quando as facas compactadoras com ponta de metal duro devem ser consideradas?",
+          answer:
+            "Avalie as arestas com ponta de metal duro quando o padrão de desgaste atual da faca de aço sugerir uma tarefa abrasiva, juntamente com a limpeza e a consistência do avanço. Os danos recorrentes por impacto exigem uma avaliação separada da contaminação e do suporte das bordas. Compare a construção completa da lâmina e o chanfro com a configuração original do rotor ou estator.",
+        },
+        {
+          question:
+            "Uma faca granuladora pode substituir uma faca compactadora de corte?",
+          answer:
+            "Geralmente não. As facas cortadoras-compactadoras preparam a alimentação para extrusão, enquanto as [Facas Granuladoras de Plástico](/products/granulator-blades) cortam o material em material reciclado. Escolha pela posição de trabalho, assento da faca e perfil de corte, mesmo que as duas lâminas tenham comprimentos ou espaçamentos de furos semelhantes.",
+        },
+        {
+          question: "Sureay pode fornecer facas de rotor e estator juntas?",
+          answer:
+            "Sim. Facas móveis e fixas podem ser incluídas em um pedido com cada posição identificada separadamente. Liste todas as facas pré-cortadoras e blocos de suporte como itens distintos. O modelo e os desenhos da máquina definem os perfis relevantes, direções de corte e quantidades para a necessidade de substituição completa.",
+        },
+        {
+          question:
+            "Como posso obter um orçamento para facas compactadoras de corte e blocos porta-ferramentas?",
+          answer:
+            "Envie o modelo da máquina, desenhos ou peças e quantidades por rotor, estator e posição do pré-cortador. Descreva se você processa filme ou flocos pré-cortados e indique se são necessários blocos de suporte. Se a faca de referência foi afiada, diferencie a posição restante da aresta da dimensão original.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do compactador, rotor ou posição estacionária, desenho da lâmina, polímero, forma de alimentação e padrão de desgaste.",
     dimensionLabels: {
       col0: "Tipo de faca",
       col1: "Comprimento (mm)",
@@ -5477,115 +7255,145 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Rotor knife (movable)",
+        itemNo: "SR007301",
+        spec: "Faca do rotor (móvel)",
         od: "150 – 250",
         bolt: "40 – 60",
         thickness: "8 – 12",
       },
       {
-        spec: "Rotor knife (movable)",
+        itemNo: "SR007302",
+        spec: "Faca do rotor (móvel)",
         od: "250 – 400",
         bolt: "60 – 80",
         thickness: "12 – 20",
       },
       {
-        spec: "Stator knife (fixed)",
+        itemNo: "SR007303",
+        spec: "Faca do estator (fixa)",
         od: "120 – 220",
         bolt: "40 – 60",
         thickness: "10 – 16",
       },
       {
-        spec: "Stator knife (fixed)",
+        itemNo: "SR007304",
+        spec: "Faca do estator (fixa)",
         od: "220 – 350",
         bolt: "60 – 80",
         thickness: "16 – 25",
       },
       {
-        spec: "Pre-cutter / feed blade",
+        itemNo: "SR007305",
+        spec: "Pré-cortador/lâmina de alimentação",
         od: "80 – 160",
         bolt: "30 – 50",
         thickness: "8 – 14",
       },
       {
-        spec: "Knife holder block",
+        itemNo: "SR007306",
+        spec: "Bloco porta-faca",
         od: "60 – 120",
         bolt: "50 – 90",
         thickness: "20 – 40",
       },
     ],
-    relatedBladeIds: [
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "strand-pelletizer-rotors",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 560,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle: "Lâminas Compactadoras de Cortador | Facas de rotor e estator",
+      heroAlt:
+        "Facas do estator do compactador cortador com arestas de corte retificadas e recursos de montagem",
+      sizeRange: "80–400 mm",
+      heroSpecs: [
         {
-          question:
-            "Qual deve ser a folga de corte entre o rotor e as lâminas do estator?",
-          answer:
-            "Use o valor indicado no manual da sua máquina — ele é específico para cada máquina e material e, normalmente, fica na faixa de 0,2 a 0,5 mm. A questão mais importante é se a folga permanece no valor definido. Se a superfície de montagem da lâmina não estiver plana, ou se você tiver instalado uma nova lâmina do rotor em um estator desgastado, a folga irá variar ao longo do comprimento de corte, independentemente do cuidado com que tenha sido ajustada. Ajuste a folga com calibres de folga nas duas extremidades e no centro da lâmina, e não em um único ponto, e verifique novamente após as primeiras horas de funcionamento, quando tudo estiver assentado e tiver atingido a temperatura de operação.",
+          label: "Material",
+          value: "D2 , M2 HSS ou construção com ponta de metal duro",
         },
         {
-          question:
-            "Meu compactador está superaquecendo e o produto final está grumoso, em vez de ter uma textura uniforme. O que está acontecendo?",
-          answer:
-            "Essa é a característica clássica de uma folga de corte excessivamente larga, geralmente causada por lâminas desgastadas. Quando a folga aumenta, o material é amassado em vez de cortado; assim, o calor de atrito ultrapassa o intervalo pretendido, o filme se aglomera em pedaços e a densidade aparente torna-se irregular — o que a extrusora interpreta como uma alimentação flutuante. Normalmente, você também observará um aumento no consumo de energia e uma queda na produtividade ao mesmo tempo. Verifique a folga e as bordas das lâminas antes de ajustar os pontos de ajuste de temperatura ou a taxa de alimentação, pois essas são compensações para o problema real, e não soluções.",
-        },
-        {
-          question:
-            "Posso substituir apenas as lâminas do rotor e manter as do estator?",
-          answer:
-            "É possível, mas geralmente é uma economia ilusória. Os dois se desgastam de maneiras diferentes — a lâmina do rotor perde o fio, enquanto o estator tende a apresentar um desgaste radial e a formar uma cavidade no local onde o fluxo de material se concentra. Uma faca do rotor nova operando contra um estator desgastado carrega toda a carga de corte por uma abertura irregular e ficará cega muito mais rápido do que sua vida útil nominal, de modo que você acaba tendo que interromper a operação novamente mais cedo. Substituir as duas peças juntas custa mais por troca, mas menos por tonelada processada.",
-        },
-        {
-          question:
-            "Como faço para escolher entre lâminas D2, M2 HSS e com ponta de metal duro?",
-          answer:
-            "Escolha a liga adequada à sua matéria-prima. A D2 com HRC 58–61 é a opção padrão econômica para filmes limpos de LDPE, LLDPE e PP, sacos tecidos e resíduos pré-consumo. Opte pelo M2 HSS com dureza HRC 62–64 para flocos de PET e para filmes pós-consumo impressos ou empoeirados — o M2 mantém o fio da lâmina mesmo nas altas temperaturas dentro de um compactador em funcionamento, onde o D2 começa a amolecer. Reserve as lâminas com ponta de carboneto para compostos reforçados com fibra de vidro, materiais com enchimento mineral e fluxos com alto teor de cinzas; elas duram significativamente mais nessas matérias-primas, mas custam mais e toleram menos bem os impactos, portanto, são a escolha errada se sua matéria-prima contiver metais ocasionalmente.",
-        },
-        {
-          question:
-            "Quantas vezes é possível reafiar uma lâmina de compactador cortante?",
-          answer:
-            "É comum que as lâminas D2 e M2 passem por três a cinco reafiações antes que a lâmina atinja sua altura mínima utilizável e a folga não possa mais ser ajustada para compensar. Cada reafiação remove material da face de corte, de modo que a lâmina fica progressivamente mais baixa em seu suporte — a maioria das máquinas permite compensar isso com calços até certo ponto. As lâminas com ponta de metal duro são reafiadas apenas no metal duro e, geralmente, permitem menos ciclos. Marcamos a altura mínima no desenho de fabricação para que sua equipe de manutenção saiba quando uma lâmina está no fim de sua vida útil, em vez de ter que adivinhar.",
+          label: "Aplicação",
+          value: "Pré-condicionamento de plásticos antes da extrusão",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "Vocês conseguem fabricar lâminas para o meu compactador sem um desenho do fabricante original?",
-          answer:
-            "Sim — isso representa a maior parte do que fazemos com esse produto. Envie a marca e o modelo da máquina, além de uma lâmina desgastada ou fotos nítidas com as medidas de comprimento, largura, espessura e as posições dos orifícios de fixação. Elaboramos um desenho de fabricação para sua aprovação por escrito antes de cortar o aço e o mantemos em nossos arquivos, de modo que pedidos repetidos não precisem de novas medições.",
+          label: "Tamanhos",
+          value: "80–400 mm",
         },
         {
-          question:
-            "Qual é o prazo de entrega? Posso experimentar um conjunto primeiro?",
-          answer:
-            "As lâminas fabricadas a partir de um desenho existente são enviadas em 10 a 15 dias úteis. No caso de lâminas criadas pela primeira vez por meio de engenharia reversa, há um acréscimo de aproximadamente 3 a 5 dias para a elaboração do desenho e a aprovação. Fornecemos conjuntos de teste para verificação do ajuste na máquina e testes de vida útil das arestas antes de você se comprometer com uma quantidade de produção — para perfis personalizados, produzimos primeiro uma amostra dimensional para aprovação, de modo que não há compromisso com ferramentas até que o ajuste seja confirmado.",
+          label: "Aplicação",
+          value: "Pré-condicionamento da matéria-prima antes da extrusão",
         },
         {
-          question: "Que documentação acompanha as lâminas?",
-          answer:
-            "Cada remessa inclui um certificado de teste dureza Rockwell, um registro de inspeção dimensional em relação ao desenho aprovado, um certificado de rastreabilidade do material da siderúrgica e um registro de lote tratamento térmico. Relatórios dimensionais completos de CMM estão disponíveis mediante solicitação para qualificação de OEM.",
+          label: "Tipos de faca",
+          value:
+            "Facas de rotor, facas de estator fixas, facas pré-cortadoras e blocos porta-facas",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 (1.2379), M2 HSS (1.3343) ou construção com ponta de metal duro",
+        },
+        {
+          label: "Dureza",
+          value:
+            "D2 : HRC 58–61; M2 : HRC 62–64; aresta de corte de metal duro: HRA 89–91",
+        },
+        {
+          label: "Planicidade da superfície",
+          value: "≤0,03 mm ao longo da lâmina",
+        },
+        {
+          label: "Paralelismo",
+          value: "≤0.02 mm",
+        },
+        {
+          label: "Matéria-prima",
+          value:
+            "Filme PE / PP, flocos de PET, sacos de tecido, fibra e espuma",
+        },
+        {
+          label: "Espaço de corte típico",
+          value: "0,2–0,5 mm (dependente da máquina)",
+        },
+        {
+          label: "Tratamento térmico",
+          value:
+            "Endurecimento a vácuo e tratamento criogênico profundo (-196°C)",
         },
       ],
+      specificationImage: {
+        src: "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
+        alt: "Faca de rotor compactador cortador com aresta de corte retificada e furo de fixação",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para suas facas compactadoras",
+        description:
+          "Inclua o modelo da máquina, posição do rotor ou estator, desenho ou amostra da lâmina, forma de alimentação e quantidade.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
+    disambiguation:
+      "Para produção de material reciclado, consulte [Facas granuladoras de plástico](/products/granulator-blades) .",
   },
   {
     id: "die-face-cutting-knives",
-    name: "Facas de corte frontal e lâminas para peletizadoras",
-    fullName: "Facas de corte com matriz e lâminas para peletizadoras",
-    category: "granulator_blades",
+    name: "Facas para corte na face da matriz",
+    fullName: "Facas de corte na face da matriz para granuladores de plástico",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Facas de corte para matrizes",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
-    badge: "Die-Safe",
+    imageDimensions: {
+      width: 1200,
+      height: 1200,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1199,
+      height: 899,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Morre Seguro",
     badgeColor: "blue",
     gallery: [
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
@@ -5598,11 +7406,7 @@ export const blades: Blade[] = [
       "Par de facas de corte da face da matriz sobre fundo branco, mostrando a geometria da ranhura e o acabamento da borda",
     ],
     description:
-      "Facas de corte para peletizadores subaquáticos, de anel de água e de face quente, com dureza inferior à da placa de molde. Compatíveis com Gala, Nordson BKG, Maag e ECON.",
-    fullDescription:
-      "Uma faca de corte para a face da matriz — também conhecida como lâmina para peletizador subaquático, faca cortadora para a face da matriz, faca para face da matriz a quente ou faca UWP — é um consumível que opera em contato deslizante permanente com uma placa de matriz que custa dezenas de milhares de dólares. Essa assimetria define todo o problema de especificação: a lâmina deve ser dura o suficiente para manter uma aresta de corte contra o polímero quente e, deliberadamente, mais macia do que a face do molde sobre a qual desliza, de modo que o desgaste seja absorvido pela peça que se pretende substituir.\n\nEssa é a mesma lógica de desgaste controlado que a Sureay aplica às lâminas raspadoras de filtro de fusão contínua, e é por isso que indicamos um diferencial de dureza em vez de simplesmente a maior dureza disponível. Uma lâmina mais dura do que a placa da matriz não dura mais — ela risca a face da matriz, abre a abertura de corte e transforma uma troca rotineira de lâmina em um recondicionamento da matriz.\n\n## Três métodos de peletização, três lâminas diferentes\n\n**Peletização subaquática (UWP).** A face da matriz fica totalmente submersa em uma caixa de água com temperatura controlada. Os pellets são cortados diretamente na face da matriz e transportados como uma pasta. As lâminas operam em ambiente úmido e quente, o que torna a resistência à corrosão um fator de seleção genuíno — o aço inoxidável 440C se destaca aqui, apesar de apresentar menor retenção de fio do que o aço para ferramentas.\n\n**Pelletização por anel de água.** Uma cortina de água anular resfria os pellets após o corte, mas a face da matriz em si opera ao ar livre. O ciclo térmico na aresta da lâmina é mais severo do que no corte subaquático propriamente dito, favorecendo classes de aço mais resistentes em detrimento das mais duras.\n\n**Peletização com face da matriz aquecida.** O corte ocorre a seco contra uma matriz aquecida, com os pellets sendo transportados pelo ar. A temperatura da aresta mais alta dos três métodos e o caso mais forte para PM-HSS ou carboneto.\n\n## Geometria da lâmina\n\nA forma da aresta é escolhida com base na viscosidade do polímero e na forma desejada do pellet:\n\n- **Chanfro de 45°** — a geometria de uso geral. Bom equilíbrio entre resistência da aresta e nitidez de corte em poliolefinas comuns.\n- **Aresta reta de 90°** — resistência máxima da aresta para compostos rígidos, com enchimento ou altamente abrasivos, nos quais um chanfro fino se lascaria.\n- **Chanfro escalonado** — um alívio em duas etapas que mantém uma linha de corte afiada, deixando uma área de apoio robusta atrás dela. Utilizado quando é necessária uma borda fina, mas a vida útil da lâmina com um ângulo de 45° seria inaceitável.\n- **Curvada/em gancho** — atrai o fio de material fundido para dentro do corte, em vez de empurrá-lo para fora. Adequado para polímeros de baixa viscosidade e pegajosos que se espalham contra uma aresta reta.\n\n## Por que a consistência da espessura dentro de um conjunto determina a vida útil da lâmina\n\nUm peletizador opera com um conjunto completo de lâminas em um cubo cortador, mantidas contra a face da matriz por uma pré-carga comum. Se as lâminas desse conjunto apresentarem espessuras diferentes, as mais grossas suportam uma parcela desproporcional da pressão de contato, enquanto as mais finas mal tocam a matriz. O resultado é um conjunto que se desgasta de forma desigual, uma qualidade de corte que se degrada muito antes que a lâmina média se desgaste e arranhões localizados na face da matriz sob as lâminas mais altas.\n\nNós retificamos as lâminas em conjuntos combinados e verificamos a consistência da espessura em todo o conjunto em uma CMM, em vez de inspecionar apenas a tolerância por peça. A planicidade é importante pela mesma razão: uma lâmina que não é plana entra em contato com a matriz por uma borda, em vez de por toda a sua superfície de contato.\n\n## Seleção de Materiais\n\n**D2 (1.2379)** — grau econômico de uso geral para poliolefinas comuns de alta pureza.\n**M2 HSS (1.3343)** — melhor dureza a quente para polímeros de alta temperatura e de engenharia.\n**T42 (1.3207)** — HSS com alto teor de tungstênio para corte prolongado em temperaturas elevadas.\n**HSS de metalurgia do pó (PM)** — estrutura fina e uniforme de carboneto, a melhor combinação de retenção de fio e tenacidade para compostos abrasivos e com enchimento.\n**Aço inoxidável 440C** — para serviços subaquáticos em que a resistência à corrosão é mais importante do que a vida útil máxima do fio de corte, especialmente em linhas que ficam paradas entre campanhas.\n**Carboneto de tungstênio** — vida útil máxima em compostos com enchimento de vidro e minerais, onde sua fragilidade é uma contrapartida aceitável.\n\n## Compatibilidade com máquinas\n\nAs lâminas são fabricadas para se adequarem aos sistemas de peletização Gala, Nordson BKG (incluindo a série AH), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec e WRP. Envie o modelo da máquina junto com uma amostra da lâmina ou uma fotografia com as medidas, e nós elaboraremos um desenho para aprovação. Cubos de corte, placas de matriz, hastes roscadas, parafusos de lâmina e anéis de vedação são fornecidos junto com as lâminas.",
-    disambiguation:
-      "Cortar fios extrudados no ar, em vez de na face da matriz? Consulte [Rotores para peletizadores de fios](/products/strand-pelletizer-rotors) para conhecer os conjuntos de rotores helicoidais e facas fixas.",
+      "Facas peletizadoras de reposição para sistemas subaquáticos, de anel de água e de face quente. Slots de lâmina personalizados, perfis de borda e conjuntos correspondentes ao desenho.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -5617,114 +7421,77 @@ export const blades: Blade[] = [
       "IPS",
       "Filtec",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 · M2 HSS · T42 · PM-HSS · 440C Stainless · Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value: "Blade held below die plate hardness (controlled wear)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "45° bevel · 90° square · Stepped bevel · Curved / hooked",
-      },
-      {
-        label: "Thickness Consistency",
-        value: "≤ 0.01 mm variation within a matched set",
-      },
-      {
-        label: "Flatness",
-        value: "≤ 0.01 mm",
-      },
-      {
-        label: "Pelletizing Methods",
-        value: "Underwater · Water-ring · Hot die face",
-      },
-      {
-        label: "Supply Format",
-        value: "Matched sets, CMM-verified; hubs and die plates available",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Gala, Nordson BKG, Maag, ECON, Coperion, NGR",
-      },
-    ],
-    componentsIntro:
-      "A placa de corte é o ativo; a lâmina é o consumível. Tudo o que vem a seguir decorre de manter essa relação na ordem correta.",
+    compatibleMachinesIntro:
+      "Obtenha facas de corte de reposição feitas para o seu cubo de corte, com ranhuras, ombros e perfis de borda personalizados. Sureay oferece conjuntos de facas combinados em configurações de aço, HSS , aço inoxidável e metal duro. Envie seus desenhos para um orçamento adequado ao seu sistema de pelotização. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     components: [
       {
-        id: "die-plate-protection",
-        tag: "DESGASTE CONTROLADO",
-        title: "Sua placa de corte dura mais do que a lâmina",
+        id: "die-face-body-profiles",
+        tag: "Perfis corporais",
+        title: "Escolhas de materiais para o par lâmina e matriz",
         description:
-          "A dureza da lâmina é especificada como inferior à dureza da face da matriz, para que o consumível absorva o desgaste. Uma lâmina mais dura que a matriz não dura mais tempo — ela risca a face da matriz, aumenta a folga de corte e transforma a troca da lâmina em um recondicionamento da matriz.",
+          "Sureay oferece configurações D2 , M2 HSS , T42 , PM- HSS , aço inoxidável 440C e metal duro, permitindo que o material da faca seja selecionado com o polímero e a placa de matriz correspondente.",
       },
       {
-        id: "matched-set-grinding",
-        tag: "PRECISÃO",
-        title: "Ajustado e verificado como um conjunto correspondente",
+        id: "die-face-working-edge",
+        tag: "Borda de trabalho",
+        title: "Corpos personalizados e perfis de borda de trabalho",
         description:
-          "Consistência de espessura de ≤0,01 mm em todo o conjunto, verificada por CMM. Um conjunto completo compartilha uma única pré-carga contra a matriz: as lâminas mais grossas absorvem a carga e marcam a matriz, enquanto as mais finas nunca cortam. A tolerância por peça, por si só, não evita isso.",
+          "Os corpos das facas listados medem 45–70 mm de comprimento. Sureay fabrica corpos retos, bifurcados e escalonados com ranhuras, faces de assentamento e bordas de trabalho quadradas, chanfradas ou curvas especificadas para o cubo de corte instalado.",
       },
       {
-        id: "geometry-by-polymer",
-        tag: "GEOMETRIA",
-        title: "Formato da borda escolhido a partir do seu polímero",
+        id: "die-face-pelletizing-station",
+        tag: "Método de pelotização",
+        title: "Conjuntos de facas e componentes complementares combinados",
         description:
-          "45° para poliolefinas comuns, 90° para compostos com enchimento e abrasivos; bisel escalonado quando for necessária uma borda fina, mas que deva resistir; em forma de gancho para massas fundidas de baixa viscosidade e pegajosas que mancham contra uma borda reta.",
+          "Solicite conjuntos de facas correspondentes feitos de acordo com um desenho comum, com espessura da lâmina, geometria de assentamento e direção de corte especificadas para as posições de cubo necessárias. Cubos e placas de matriz podem ser incluídos na consulta.",
+        relatedBladeIds: ["strand-pelletizer-rotors"],
       },
     ],
-    dimensionLabels: {
-      col0: "Perfil da lâmina",
-      col1: "Comprimento × Largura (mm)",
-      col2: "Espessura (mm)",
-      col3: "Montagem",
-      caption:
-        "* Geometrias representativas das lâminas atualmente em produção. As lâminas subaquáticas facas para peletizadoras são fabricadas sob medida para o cubo específico do cortador — envie o modelo da máquina junto com uma amostra da lâmina ou uma fotografia com as dimensões para obter um orçamento exato.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Straight, twin slot",
-        od: "45 × 25",
-        bolt: "3 – 6",
-        thickness: "2 × Ø5.5 slots",
+        label: "Aplicação",
+        value: "Corte de pellets na face da matriz de extrusão",
       },
       {
-        spec: "Straight, twin slot",
-        od: "60 × 30",
-        bolt: "3 – 6",
-        thickness: "2 × R3.5 slots",
+        label: "Material",
+        value:
+          "D2 , M2 HSS , T42 , PM- HSS , aço inoxidável 440C ou metal duro",
       },
       {
-        spec: "Straight, wide body",
-        od: "60 × 46",
-        bolt: "4 – 8",
-        thickness: "2 × R3.5, R5 relief",
+        label: "Geometria da borda",
+        value:
+          "Bisel de 45°, quadrado de 90°, bisel escalonado ou borda curva/em forma de gancho",
       },
       {
-        spec: "Forked, triple slot",
-        od: "55 × 34",
-        bolt: "3 – 6",
-        thickness: "3 × R3.5 slots",
+        label: "Tamanhos",
+        value: "45–70 mm",
       },
       {
-        spec: "Stepped / shouldered",
-        od: "60 × 35",
-        bolt: "4 – 8",
-        thickness: "2 slots, 129° flank",
+        label: "Consistência de Espessura",
+        value: "Variação ≤0,01 mm no conjunto pareado",
       },
       {
-        spec: "Tapered / hooked",
-        od: "70 × 60",
-        bolt: "4 – 8",
-        thickness: "63° flank",
+        label: "Planicidade",
+        value: "≤0.01 mm",
+      },
+      {
+        label: "Métodos de pelotização",
+        value: "Pelotização subaquática, em anel de água ou em matriz quente",
+      },
+      {
+        label: "Diferencial de dureza",
+        value:
+          "Dureza da lâmina abaixo da placa da matriz correspondente (configuração de desgaste controlado)",
+      },
+      {
+        label: "Formato de fornecimento",
+        value:
+          "Conjuntos correspondentes, verificados pelo CMM; cubos e placas de matriz disponíveis",
       },
     ],
     drawings: {
       intro:
-        "A maioria dos pedidos de lâminas para peletizadoras chega até nós sem um desenho do fabricante original — o cliente envia uma lâmina desgastada, ou uma fotografia e o modelo da máquina. As geometrias abaixo são desenhos que produzimos dessa forma, desde a medição até o desenho de fabricação aprovado. Elas mostram a variedade de formatos do corpo, padrões de ranhuras e ângulos de flanco que mantemos em produção, e como seria a sua própria lâmina após a engenharia reversa.",
+        "Estes exemplos de desenhos mostram como o formato do corpo, as ranhuras de montagem e os ângulos dos flancos variam de acordo com o cubo da fresa. Use seu desenho aprovado ou uma amostra medida ao solicitar uma substituição.",
       items: [
         {
           image:
@@ -5787,7 +7554,6 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "strand-pelletizer-rotors",
       "continuous-melt-filter-scraper-blades",
-      "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 18,
@@ -5796,68 +7562,180 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "As suas lâminas vão danificar a minha placa de moldagem?",
+          question: "Qual faca de reposição se adapta ao meu peletizador?",
           answer:
-            "Não, desde que a relação de dureza seja especificada corretamente, e essa é a primeira coisa que verificamos em qualquer consulta. A lâmina é mantida deliberadamente com dureza inferior à da face da matriz, de modo que o desgaste seja absorvido pelo consumível. Uma lâmina mais dura do que a placa da matriz não proporciona maior vida útil — ela risca a superfície da matriz, o que aumenta a abertura do espaço de corte, prejudica a qualidade dos pellets e, eventualmente, exige que a matriz seja reafiada ou substituída. Informe-nos o material e a dureza da placa da matriz, ou o modelo da máquina caso não tenha esses dados, e nós especificaremos a lâmina de acordo com essas informações. Cada remessa vem acompanhada de um certificado de dureza para que você possa verificar essa relação antes da instalação das lâminas.",
+            "Identifique o peletizador e o cubo do cortador e, em seguida, especifique o corpo da faca, a espessura, as ranhuras de fixação, a face de assentamento e a direção de corte. Facas de matriz e facas para peletizadoras são termos de compra relacionados. O perfil de trabalho completo e a relação de montagem estabelecem a substituição específica dentro daquela máquina.",
         },
         {
           question:
-            "Por que uma lâmina do meu conjunto se desgasta muito mais rápido do que as outras?",
+            "As facas peletizadoras subaquáticas, de anel de água e de face quente são intercambiáveis?",
           answer:
-            "Quase sempre há espessura irregular dentro do conjunto. Um conjunto completo de lâminas compartilha uma pré-carga contra a face da matriz; portanto, se a espessura variar de lâmina para lâmina, as mais grossas suportam uma parcela desproporcional da pressão de contato — elas se desgastam rapidamente e riscam a matriz, enquanto as lâminas mais finas mal fazem contato e nunca cortam adequadamente. O conjunto falha muito antes que a lâmina média se desgaste. É por isso que retificamos as lâminas em conjuntos combinados e verificamos, por meio de CMM, a consistência da espessura em todo o conjunto com uma tolerância de até 0,01 mm, em vez de inspecionar cada lâmina isoladamente de acordo com uma tolerância específica.",
+            "Não. Máquinas subaquáticas, de anel de água e de face quente podem usar diferentes cubos, recursos de montagem e perfis de lâmina. Combine o desenho real do cubo e da faca. Se a máquina corta fios debaixo d’água com um rotor dentado e uma faca de base, consulte [Rotores Pelletizadores de Fios](/products/strand-pelletizer-rotors) .",
         },
         {
           question:
-            "Que geometria de aresta devo usar — 45°, 90°, escalonada ou em gancho?",
+            "Por que o material da placa é importante na escolha da faca?",
           answer:
-            "Escolha entre a viscosidade do polímero e o teor de enchimento. Um bisel de 45° é a geometria de uso geral e a configuração padrão adequada para poliolefinas comuns. Opte por uma aresta reta de 90° para compostos rígidos, com enchimento mineral ou altamente abrasivos, nos quais um chanfro fino se lascaria. Um chanfro escalonado proporciona uma linha de corte nítida com uma área de apoio robusta atrás dela, para casos em que você precisa de uma aresta fina, mas um chanfro simples de 45° não resistiria. A geometria curva ou em gancho atrai a massa fundida para dentro do corte, em vez de empurrá-la para fora, o que é ideal para polímeros de baixa viscosidade ou pegajosos que se espalham contra uma aresta reta.",
+            "A faca e a face da matriz formam um par de trabalho, portanto seus materiais e características de desgaste precisam ser considerados em conjunto. Use a especificação original da face da matriz junto com o polímero e o desgaste atual da faca. Uma alteração na dureza ou na construção da lâmina deve preservar a relação de material pretendida para aquele sistema de pelotização.",
         },
         {
           question:
-            "Devo usar lâminas de aço inoxidável para a peletização subaquática?",
+            "Por que as facas de um conjunto devem compartilhar a geometria de assentamento especificada?",
           answer:
-            "Vale a pena especificar o aço inoxidável 440C quando a corrosão é um fator operacional real — especialmente em linhas que ficam ociosas entre campanhas, onde uma lâmina de aço para ferramentas pode desenvolver ferrugem superficial na caixa de água, o que, por sua vez, risca a matriz no reinício da operação. A desvantagem é a retenção do fio: o 440C não mantém o fio por tanto tempo quanto o M2 ou o PM-HSS nas mesmas condições de trabalho. Se sua linha operar continuamente e a composição química da água for controlada, o aço para ferramentas ou o PM-HSS geralmente oferecem melhor custo por tonelada. Se houver paradas e reinícios, ou se a caixa de água não for drenada, a opção de aço inoxidável muitas vezes se paga sozinha.",
+            "Cada lâmina deve atingir a posição de trabalho pretendida no cubo. Variações na espessura, faces de assentamento ou posição da aresta podem afetar o modo como as facas encontram a matriz. Especifique o conjunto completo para a mesma revisão de desenho, incluindo quaisquer posições deliberadamente diferentes, para que a geometria de corte instalada seja claramente definida.",
         },
         {
           question:
-            "Quais são as diferenças entre as lâminas subaquáticas, as de anel de água e as de face quente?",
+            "O que deve ser revisto quando uma faca se desgasta mais rápido que as outras?",
           answer:
-            "Elas diferem principalmente no ambiente térmico e corrosivo na borda. As lâminas subaquáticas operam submersas e aquecidas, portanto, a resistência à corrosão é um fator de seleção determinante. As lâminas de anel de água cortam na face da matriz, que opera ao ar livre com a cortina de água a jusante, o que submete a borda a ciclos térmicos mais severos e favorece ligas mais tenazes em detrimento das mais duras. As lâminas de face de matriz quente cortam a seco contra uma matriz aquecida e atingem a temperatura de aresta mais alta entre as três, e é nesse ponto que o PM-HSS e o carboneto se destacam. Informe-nos qual método sua linha utiliza — isso altera a classe recomendada, mesmo quando as dimensões das lâminas são idênticas.",
+            "Comece verificando se a faca fica na mesma altura e ângulo especificados que as outras no cubo. Compare sua espessura, face de assentamento e posição da borda e, em seguida, verifique o alinhamento do suporte e a face da matriz compartilhada. A inspeção desses pontos de contato ajuda a avaliar o desgaste irregular antes de trocar o material da lâmina.",
         },
         {
           question:
-            "Vocês fornecem cubos de corte e placas de matriz, além de lâminas?",
+            "Sureay pode reproduzir uma faca bifurcada ou escalonada a partir de uma amostra?",
           answer:
-            "Sim. Cubos de corte, placas de matriz, hastes roscadas, parafusos de fixação das lâminas e anéis O-ring estão todos disponíveis, e encomendar o conjunto de peças de desgaste como um todo evita a incompatibilidade que causa uma distribuição desigual da carga nas lâminas. Se você estiver substituindo um cubo além das lâminas, recomendamos que os forneça juntos para que as superfícies de encaixe das lâminas e o cubo sejam verificados em relação um ao outro antes do envio.",
+            "Sim. Uma amostra pode identificar o contorno, as ranhuras e as características de assentamento, enquanto o desenho estabelece as novas dimensões e o perfil de corte pretendidos. Marque claramente a face de trabalho e a direção de corte. As formas ilustradas fornecem referências, com a espessura completa e os detalhes de montagem que definem a lâmina do cubo do cortador.",
+        },
+        {
+          question:
+            "O que você precisa para cotar facas para peletizadoras , cubos ou placas de matriz?",
+          answer:
+            "Forneça o modelo do peletizador, polímero, desenho da faca e quantidade do conjunto. Mostre os assentos da lâmina, ranhuras de fixação e direção de corte. Se a cotação incluir um cubo de corte ou uma placa de matriz, envie um desenho separado ou uma referência de peça para cada um e identifique os componentes que você manterá.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Inclua o modelo do peletizador e do cubo do cortador, desenho da lâmina, padrão de ranhura, direção da borda de trabalho e detalhes da placa de matriz.",
+    dimensionLabels: {
+      col0: "Perfil da lâmina",
+      col1: "Comprimento × Largura (mm)",
+      col2: "Espessura (mm)",
+      col3: "Montagem",
+      caption:
+        "* Geometrias representativas das lâminas atualmente em produção. As lâminas subaquáticas facas para peletizadoras são fabricadas sob medida para o cubo específico do cortador — envie o modelo da máquina junto com uma amostra da lâmina ou uma fotografia com as dimensões para obter um orçamento exato.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR007401",
+        spec: "Slot duplo reto",
+        od: "45 × 25",
+        bolt: "3 – 6",
+        thickness: "2 × ranhuras Ø5,5",
+      },
+      {
+        itemNo: "SR007402",
+        spec: "Slot duplo reto",
+        od: "60 × 30",
+        bolt: "3 – 6",
+        thickness: "2 × slots R3.5",
+      },
+      {
+        itemNo: "SR007403",
+        spec: "Corpo reto e largo",
+        od: "60 × 46",
+        bolt: "4 – 8",
+        thickness: "2 × R3.5 , alívio R5",
+      },
+      {
+        itemNo: "SR007404",
+        spec: "Bifurcado, slot triplo",
+        od: "55 × 34",
+        bolt: "3 – 6",
+        thickness: "3 × slots R3.5",
+      },
+      {
+        itemNo: "SR007405",
+        spec: "Escalonado/ombro",
+        od: "60 × 35",
+        bolt: "4 – 8",
+        thickness: "2 slots, flanco de 129°",
+      },
+      {
+        itemNo: "SR007406",
+        spec: "Cônico / em forma de gancho",
+        od: "70 × 60",
+        bolt: "4 – 8",
+        thickness: "Flanco 63°",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Facas de corte moldadas | Lâminas de reposição personalizadas",
+      heroAlt:
+        "Perfis de facas de corte pré-fabricadas com corpos retos, bifurcados e escalonados",
+      sizeRange: "45–70 mm",
+      heroSpecs: [
         {
-          question:
-            "É possível fazer a engenharia reversa de lâminas a partir de uma amostra, sem um desenho do fabricante original?",
-          answer:
-            "Sim, e é assim que a maioria dos pedidos de lâminas para peletizadoras começa. Envie uma amostra de lâmina — de preferência uma que não esteja desgastada, ou uma desgastada acompanhada do modelo da máquina — e elaboraremos um desenho com todas as dimensões em nossa CMM para sua aprovação antes da fabricação. Mantemos o desenho aprovado em nossos arquivos, de modo que pedidos repetidos não exijam novas medições. Seus desenhos e amostras permanecem como sua propriedade intelectual e nunca são compartilhados.",
+          label: "Material",
+          value: "Aço ferramenta, HSS , aço PM, aço inoxidável ou metal duro",
         },
         {
-          question:
-            "Qual é o prazo de entrega? Posso testar um conjunto experimental primeiro?",
-          answer:
-            "As lâminas fabricadas com base em um desenho aprovado já existente são entregues em 10 a 15 dias úteis; os primeiros conjuntos produzidos por engenharia reversa levam cerca de 3 a 5 dias a mais para medição, elaboração do desenho e aprovação. Fornecemos conjuntos de teste para verificação do ajuste e comparação da vida útil das lâminas com as do seu fornecedor atual antes de você se comprometer com uma quantidade de produção.",
-        },
-        {
-          question:
-            "Que tipo de documentação acompanha um conjunto de lâminas para peletizador?",
-          answer:
-            "Cada conjunto inclui um certificado dureza Rockwell — o documento que permite verificar a relação entre a dureza da lâmina e da matriz antes da instalação —, além de um relatório dimensional de CMM que abrange a uniformidade da espessura em todo o conjunto, um certificado de rastreabilidade do material da siderúrgica e um registro de lote tratamento térmico.",
+          label: "Aplicação",
+          value: "Corte de pellets na face da matriz de extrusão",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Aplicação",
+          value: "Corte de pellets na face da matriz de extrusão",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 , M2 HSS , T42 , PM- HSS , aço inoxidável 440C ou metal duro",
+        },
+        {
+          label: "Geometria da borda",
+          value:
+            "Bisel de 45°, quadrado de 90°, bisel escalonado ou borda curva/em forma de gancho",
+        },
+        {
+          label: "Tamanhos",
+          value: "45–70 mm",
+        },
+        {
+          label: "Consistência de Espessura",
+          value: "Variação ≤0,01 mm no conjunto pareado",
+        },
+        {
+          label: "Planicidade",
+          value: "≤0.01 mm",
+        },
+        {
+          label: "Métodos de pelotização",
+          value: "Pelotização subaquática, em anel de água ou em matriz quente",
+        },
+        {
+          label: "Diferencial de dureza",
+          value:
+            "Dureza da lâmina abaixo da placa da matriz correspondente (configuração de desgaste controlado)",
+        },
+        {
+          label: "Formato de fornecimento",
+          value:
+            "Conjuntos correspondentes, verificados pelo CMM; cubos e placas de matriz disponíveis",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
+        alt: "Facas de corte estampadas mostrando suas ranhuras de montagem e bordas retificadas",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para suas facas de matriz",
+        description:
+          "Inclua o modelo do peletizador e do cubo de corte, desenho ou amostra da lâmina, padrão de ranhura, orientação da borda e quantidade.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
     id: "special-shaped-blades",
-    name: "Lâminas com formatos especiais",
+    name: "Lâminas industriais de formato especial",
     fullName:
-      "Lâminas industriais com perfil personalizado e formatos especiais",
+      "Facas industriais de formato especial fabricadas conforme desenho",
+    seoTitle:
+      "Lâminas Industriais com Formato Especial | Perfis personalizados",
     category: "custom_profile",
     sector: "other",
     categoryDisplay: "Lâminas com perfil personalizado",
@@ -5865,40 +7743,116 @@ export const blades: Blade[] = [
     badge: "Personalização OEM",
     badgeColor: "teal",
     description:
-      "Lâminas industriais com perfis personalizados e formatos especiais, fabricadas com precisão a partir de desenhos DXF/DWG fornecidos pelo cliente ou de amostras físicas. Aços D2, H13, PM-HSS e metal duro maciço. Tolerâncias de ±0,02 mm. Qualquer perfil, qualquer setor.",
+      "Facas para máquinas de reposição com perfil personalizado em D2 , H13 , PM- HSS ou metal duro. Contornos específicos da peça, arestas de corte e recursos de montagem feitos de acordo com o desenho.",
     link: "/custom",
     specs: [
       {
+        label: "Aplicação",
+        value:
+          "Facas de máquina com contorno ou perfil de borda específico da peça",
+      },
+      {
         label: "Material",
-        value: "D2 / H13 / PM-HSS / Carbide",
+        value: "D2 , H13 , PM- HSS ou metal duro",
       },
       {
-        label: "Tolerance",
+        label: "Tamanhos",
+        value: "Feito para Desenhar",
+      },
+      {
+        label: "Tolerância Dimensional",
         value: "±0.02 mm",
-      },
-      {
-        label: "Drawing Input",
-        value: "DXF / DWG / STEP / Sample",
-      },
-      {
-        label: "Lead Time",
-        value: "7–15 working days",
       },
     ],
     offers: {
       lowPrice: 20,
       highPrice: 800,
     },
+    quoteRequirements:
+      "Inclua a máquina e o material, a revisão do desenho, o contorno da lâmina, as dimensões de montagem e os requisitos críticos de aresta ou tolerância.",
+    components: [
+      {
+        id: "special-shaped-blades-advantage-1",
+        tag: "Perfis de corte específicos para peças",
+        title: "Perfis de corte específicos para peças",
+        description:
+          "Sureay fabrica lâminas industriais com contornos, chanfros e posições de borda de trabalho personalizados, oferecendo uma rota de substituição para perfis de faca fora das configurações padrão retas ou circulares.",
+      },
+      {
+        id: "special-shaped-blades-advantage-2",
+        tag: "Opções de aço ferramenta, PM- HSS e metal duro",
+        title: "Opções de aço ferramenta, PM- HSS e metal duro",
+        description:
+          "As configurações D2 , H13 , PM- HSS e metal duro permitem que o material de corte seja especificado de acordo com o design da lâmina existente e o material que está sendo processado.",
+      },
+      {
+        id: "special-shaped-blades-advantage-3",
+        tag: "Montagem baseada em desenho e perfis manuais",
+        title: "Montagem baseada em desenho e perfis manuais",
+        description:
+          "Sureay faz furos, ranhuras e faces de assentamento personalizadas para seus pontos de referência de montagem. Especifique a distância entre a borda e o assento, a direção de corte e quaisquer diferenças à esquerda ou à direita para que a substituição preserve a posição de trabalho original.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "O que é uma lâmina industrial com formato especial?",
+          answer:
+            "É uma faca mecânica cujo contorno, perfil de borda ou disposição de montagem necessita de um desenho específico da peça. Faca de perfil personalizado e lâmina especial são nomes de compra relacionados. A tarefa de corte e a posição instalada estabelecem a geometria real, incluindo características que não podem ser identificadas apenas pelo comprimento, largura e espessura totais.",
+        },
+        {
+          question:
+            "Quais dimensões determinam o ajuste em uma faca de perfil especial?",
+          answer:
+            "A posição da borda em relação aos pontos de referência de montagem é particularmente importante. Defina o contorno, a espessura, os furos, as ranhuras, os recessos e o chanfro e, em seguida, identifique quais dimensões controlam a localização e a fixação. Isto conecta o perfil de corte à posição instalada, em vez de depender apenas das dimensões gerais.",
+        },
+        {
+          question: "Como as facas esquerda e direita devem ser identificadas?",
+          answer:
+            "Use uma vista de desenho definida e mostre a orientação instalada e a direção de corte. Inclua ambas as faces onde o chanfro, o escareador ou o recesso de montagem mudam de lado. Um contorno espelhado pode preservar as dimensões gerais enquanto move um recurso crítico, portanto, cada mão necessária deve ter uma referência de peça inequívoca.",
+        },
+        {
+          question: "O material pode ser alterado mantendo o perfil existente?",
+          answer:
+            "Sim, um novo material pode ser considerado mantendo o perfil exigido. Escolha a classe candidata usando o material que está sendo cortado, desgaste da faca atual e suporte na borda. Trate-a como uma especificação de material revisada e mantenha a geometria de corte e montagem necessária.",
+        },
+        {
+          question: "Uma lâmina com formato especial pode ser reafiada?",
+          answer:
+            "Sim, se a retificação puder restaurar o perfil de corte especificado sem mover a aresta além dos limites do desenho. Faça referência ao mesmo furo, ressalto ou face de assentamento ao medir a borda retificada. Substitua a faca se o fio não puder mais ser restaurado dentro desses limites.",
+        },
+        {
+          question:
+            "O que devo enviar para um orçamento de lâmina industrial com perfil personalizado?",
+          answer:
+            "Envie a máquina ou estação de corte, material a ser cortado, desenho da peça aprovada e quantidade. Marque a direção de corte, os pontos de referência de montagem e as dimensões toleradas da borda ao assento, incluindo cada perfil entregue. Se você tiver apenas uma amostra, mostre o componente correspondente ou uma referência não utilizada e marque as áreas desgastadas.",
+        },
+      ],
+      company: [],
+    },
+    disambiguation:
+      "Para envio de desenhos e processo de fabricação, consulte [Lâminas Industriais Personalizadas](/custom) .",
   },
   {
     id: "wood-chipper-blades",
-    name: "Lâminas para trituradores de madeira",
-    fullName:
-      "Lâminas de alta resistência para trituradores de tambor e disco, destinadas à biomassa, silvicultura e reciclagem de madeira",
+    seoDescription:
+      "Facas móveis para picadores de madeira de tambor e disco em comprimentos listados de 230–600 mm. Especifique o aço picador, D2 ou uma aresta com ponta de metal duro, além do padrão de chanfro e parafuso.",
+    name: "Facas para picadores de madeira",
+    fullName: "Facas para picadores de madeira a tambor e a disco",
     category: "wood_chipper",
     sector: "wood",
-    categoryDisplay: "Lâminas para trituradores de madeira",
+    categoryDisplay: "Facas para picadores de madeira",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1600,
+      height: 846,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Curso de Silvicultura",
     badgeColor: "green",
     gallery: [
@@ -5907,9 +7861,7 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Lâminas de triturador de tambor e disco Premium D2, Cr12MoV e TCT para processamento de biomassa, operações florestais e reciclagem de madeira. Têm endurecimento completo com dureza HRC 57–62 e tratamento criogênico profundo. Retificadas com precisão, com tolerância de espessura de ±0,05 mm, para uma geometria de lascas limpa e uniforme. Encaixe direto (OEM) para trituradores das marcas Bandit, Vermeer, Morbark, Peterson, Doppstadt e Jenz.",
-    fullDescription:
-      "As lâminas dos trituradores de madeira operam em algumas das condições mais adversas do setor de redução de tamanho. A cada rotação, a aresta de corte penetra em madeira densa de folhosas, madeira verde com alto teor de umidade, madeira contaminada proveniente de demolições ou paletes recicladas com pregos e grampos incrustados. Uma lâmina que não possua o equilíbrio correto entre dureza e tenacidade ficará cega em poucas horas ao cortar madeira de folhosas limpa ou se quebrará ao atingir o primeiro prego em material contaminado.\n\nAs lâminas para trituradores de madeira da Sureay são forjadas a partir de aços para ferramentas de alta qualidade — D2 (1.2379), Cr12MoV e aço de alto carbono para lâminas de trituradores — submetidas a tratamento térmico a vácuo até HRC 57–62, seguido por um recozimento criogênico profundo obrigatório a −196 °C. Essa sequência de processamento produz uma microestrutura martensítica totalmente estabilizada, com distribuição uniforme de carbonetos em toda a seção transversal da lâmina, atendendo aos dois requisitos de desempenho do triturador de madeira: resistência à abrasão para manter o fio afiado ao longo de centenas de metros cúbicos de madeira, combinada com tenacidade suficiente no núcleo para resistir a impactos de contaminantes metálicos incrustados sem fraturas catastróficas.\n\n## Tipo de triturador e geometria da lâmina\n\n### Lâminas para trituradores de tambor\n\nOs trituradores de tambor (Vermeer BC1800, Bandit 1990, Morbark 40/36) utilizam lâminas retas retangulares aparafusadas a um tambor giratório de alta velocidade (normalmente 1.000–2.500 RPM). A lâmina atua como uma faca de plaina — cada revolução descasca um lascamento da madeira alimentada na profundidade de corte programada. O comprimento da lâmina corresponde à largura do tambor (normalmente 200–600 mm), e a espessura (normalmente 12–30 mm) determina a profundidade máxima do lascamento.\n\nParâmetros críticos para o desempenho do picador de tambor:\n- **Ângulo de bisel:** 30°–37° (madeira de folhosas) ou 25°–30° (madeira de coníferas/madeira verde)\n- **Paralelismo da espessura:** ≤ 0,05 mm — a espessura irregular da lâmina causa desequilíbrio no tambor, vibração destrutiva e tamanho inconsistente das lascas\n- **Tolerância posicional dos furos dos parafusos:** ±0,10 mm — garante que a aresta de corte se projete uniformemente por toda a largura do tambor após a montagem\n\n### Lâminas para trituradores de disco\n\nOs trituradores de disco (Peterson 5710, Morbark 50/48, Precision Husky) montam as lâminas radialmente em um disco giratório robusto. A madeira é alimentada axialmente na face do disco, e as lâminas produzem lascas por meio de uma combinação de ação de cisalhamento e fenda. As lâminas para trituradores de disco são normalmente mais curtas, porém mais espessas do que as facas para trituradores de tambor, e estão sujeitas a cargas de impacto individuais mais elevadas provenientes de toras de grande diâmetro.\n\nAs lâminas para trituradores de disco exigem especificações de tenacidade máxima: recomenda-se o uso de Cr12MoV ou aço modificado para lâminas de triturador com dureza HRC 55–58 em trituradores de disco para toras inteiras que processam madeira de lei com diâmetro superior a 300 mm.\n\n### Lâminas para trituradores de árvores inteiras / biomassa\n\nOs trituradores de biomassa e de árvores inteiras (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) processam árvores inteiras, incluindo galhos, torrões de raiz e vegetação rasteira. A matéria-prima contém solo incrustado, pedras e, ocasionalmente, detritos metálicos. As lâminas para essas aplicações são fabricadas em aço otimizado para impacto com dureza HRC 55–58, com um ângulo de bisel mais amplo (35°–42°) que distribui as forças de impacto por uma face de corte mais ampla e evita o enrolamento da borda em matéria-prima contaminada.\n\n## Seleção de material de acordo com a matéria-prima\n\n**Aço de alto carbono para lâminas de trituradores (HRC 55–58):** O grau padrão do setor para trituração florestal em geral e de madeira verde. Econômico, facilmente reafiável em retificadoras de superfície padrão e resistente o suficiente para contaminação moderada por pregos. Adequado para empreiteiras de paisagismo, empresas de serviços florestais e operações municipais de resíduos verdes.\n\n**Aço para ferramentas de trabalho a frio D2 / Cr12MoV (HRC 58–62):** Especificação premium para reciclagem comercial de madeira em grande volume e produção de cavacos para combustível de biomassa. A matriz de carboneto de cromo a 12% proporciona vida útil da lâmina 2 a 3 vezes maior em comparação com o aço carbono padrão em madeiras duras abrasivas (carvalho, nogueira-americana, eucalipto) e madeira reciclada seca. Recomendado para picadores industriais de tambor que operam em turnos contínuos de 8 a 16 horas.\n\n**TCT — Com ponta de carboneto de tungstênio (insertos soldados):** A especificação definitiva para o processamento de biomassa em condições extremas. As lâminas de picador com ponta de carboneto oferecem uma vida útil de 5 a 10 vezes maior do que a do aço D2 em madeira de demolição contaminada, dormentes ferroviários e torrões de raízes fortemente sujos. A aresta de corte de carboneto é soldada a vácuo em um corpo de liga de aço resistente que absorve a energia bruta do impacto sem transmitir fratura frágil ao inserto de carboneto.\n\n## Retificação de precisão para a qualidade das lascas\n\nA geometria das lascas é o principal indicador de qualidade do produto na produção de combustível de biomassa: fábricas de celulose, usinas de energia de biomassa e fabricantes de pellets especificam padrões rigorosos de distribuição do tamanho das lascas (por exemplo, EN 17225-4 / TAPPI T257). Espessura irregular das lâminas ou ângulos de bisel inconsistentes em um tambor ou disco com múltiplas lâminas produzem lascas acima ou abaixo do tamanho especificado, que não atendem às especificações de peneiramento, exigindo processamento secundário ou causando deduções no preço.\n\nAs lâminas dos picadores Sureay são retificadas com precisão para:\n- **Tolerância de espessura:** ±0,05 mm em todo o comprimento da lâmina\n- **Ângulo de bisel:** ±0,5° (verificado por comparador óptico)\n- **Planicidade da face:** ≤ 0,05 mm por 300 mm de comprimento\n- **Acabamento superficial:** Ra ≤ 1,6 μm na face de corte para reduzir o atrito e garantir a ejeção limpa das lascas\n\n## Fornecimento de contra-faca (bigorna) e placa de desgaste\n\nA contra-lâmina (bigorna ou lâmina de base) define a folga que determina a espessura mínima do cavaco. Contra-lâminas desgastadas ou desalinhadas anulam o benefício das lâminas novas do triturador. A Sureay fabrica contra-facas combinadas e placas de desgaste substituíveis em aço D2 e manganês, fornecidas como conjuntos integrados com especificações de folga pré-verificadas para o seu modelo de triturador.\n\n## Capacidade de reafiamento\n\nAo contrário do facas para trituradores, as lâminas de triturador são projetadas para múltiplos ciclos de reafiamento. Nosso tratamento térmico, com endurecimento completo, garante dureza uniforme da superfície até o núcleo — cada reafiação expõe aço com dureza e características de desgaste idênticas. Uma lâmina padrão de triturador em D2 pode ser reafiada de 8 a 12 vezes antes de atingir a espessura mínima de segurança, tornando o custo total de propriedade extremamente competitivo.",
+      "Facas de reposição para picadores de madeira de tambor e disco. Opções de picador em aço, D2 e ​​ponta de metal duro, com chanfros personalizados e padrões de parafusos de acordo com o desenho.",
     link: "/products/wood-chipper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -5923,61 +7875,70 @@ export const blades: Blade[] = [
       "Precision Husky",
       "Bruks Siwertell",
     ],
+    compatibleMachinesIntro:
+      "Obtenha facas de reposição feitas para seu picador de tambor ou disco, com chanfros personalizados, furos de fixação e perfis de fixação. Sureay oferece opções de aço picador, D2 , Cr12MoV e ponta de metal duro. Compartilhe seu desenho ou amostra para um orçamento, incluindo a bigorna correspondente quando necessário. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "chipper-knife-body",
+        tag: "Geometria da faca",
+        title: "Opções de picador de aço e ponta de metal duro",
+        description:
+          "As construções de aço picador com alto teor de carbono, D2 , Cr12MoV e pontas de metal duro oferecem opções de substituição para diferentes alimentações de madeira e condições de desgaste observadas.",
+      },
+      {
+        id: "chipper-knife-material",
+        tag: "Opções de materiais",
+        title: "Chanfros personalizados e perfis de montagem",
+        description:
+          "Os comprimentos de faca picadora de madeira listados variam de 230 a 600 mm, com comprimentos personalizados de até 800 mm. Sureay faz o chanfro, o padrão do parafuso e o perfil de assentamento de acordo com o desenho dos picadores de tambor e disco existentes.",
+      },
+      {
+        id: "chipper-knife-anvil-pair",
+        tag: "Par de corte",
+        title: "Movendo facas e bigornas correspondentes",
+        description:
+          "Solicite facas móveis e bigornas estacionárias em uma única consulta, com cada peça especificada para o conjunto de corte do picador e os componentes que você pretende reter.",
+        relatedBladeIds: ["wood-chipper-anvils"],
+      },
+    ],
     specs: [
+      {
+        label: "Tamanhos",
+        value:
+          "Comprimentos listados 230–600 mm; comprimentos personalizados de até 800 mm",
+      },
+      {
+        label: "Aplicação",
+        value:
+          "Facas móveis para picadores de árvores inteiras de tambor, disco e biomassa e reciclagem de paletes",
+      },
       {
         label: "Material",
         value:
-          "High-Carbon Chipper Steel | D2 (1.2379) / Cr12MoV | TCT Carbide Tipped",
+          "Aço picador com alto teor de carbono, D2 (1.2379), Cr12MoV ou construção com ponta de metal duro",
       },
       {
-        label: "Hardness",
+        label: "Dureza",
         value:
-          "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
+          "Aço picador: HRC 55–58; D2 / Cr12MoV : HRC 58–62; aresta de corte de metal duro: HRA 89–91",
       },
       {
-        label: "Thickness Tolerance",
-        value: "±0.05 mm (prevents drum imbalance & vibration)",
+        label: "Ângulo de bisel",
+        value: "25°–42°",
       },
       {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per timber species & contamination level)",
+        label: "Tolerância de espessura",
+        value: "±0.05 mm",
       },
       {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
+        label: "Tratamento térmico",
         value:
-          "Forestry Drum Chippers, Disc Chippers, Biomass Whole-Tree Chippers, Pallet Recycling",
-      },
-    ],
-    components: [
-      {
-        id: "through-hardened-core",
-        tag: "METALURGIA",
-        title:
-          "Têm endurecimento total para garantir a máxima vida útil após o reafiamento",
-        description:
-          "Ao contrário das alternativas com cementação, que expõem um núcleo macio após o primeiro reafiamento, as lâminas do triturador Sureay são submetidas a tratamento térmico a vácuo para atingir uma dureza uniforme (HRC 57–62) da superfície ao núcleo. Cada reafiamento proporciona um desempenho de corte idêntico ao de uma lâmina nova, resultando em 8 a 12 ciclos de serviço produtivos por lâmina.",
+          "Endurecimento a vácuo e tratamento criogênico profundo (-196°C)",
       },
       {
-        id: "impact-toughness",
-        tag: "DURABILIDADE",
-        title: "Resistência a pregos e contaminantes",
-        description:
-          "Madeira contaminada proveniente de demolições, paletes recicladas e resíduos verdes urbanos contêm pregos, parafusos e pedras ocultos. Nosso tratamento criogênico profundo (−196 °C) estabiliza a microestrutura martensítica, proporcionando a tenacidade necessária ao núcleo para absorver impactos contra metais sem causar fraturas frágeis nas bordas ou rachaduras na lâmina.",
-      },
-      {
-        id: "chip-quality",
-        tag: "QUALIDADE DA SAÍDA",
-        title: "Chanfro de precisão para tamanho uniforme de cavacos",
-        description:
-          "As usinas de energia de biomassa e as fábricas de celulose não toleram distribuições de tamanho de lascas fora das especificações. Cada lâmina é retificada superficialmente para uma espessura de ±0,05 mm e um ângulo de bisel de ±0,5°, garantindo uma geometria consistente das lascas em toda a largura do tambor ou do disco, em conformidade com as normas EN 17225 e TAPPI T257.",
+        label: "Afiação",
+        value:
+          "Totalmente endurecido; 8–12 ciclos de reafiação, sujeitos ao desgaste e à altura restante da faca",
       },
     ],
     dimensionLabels: {
@@ -5990,60 +7951,137 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: 'Bandit 12" / 15" Drum',
+        itemNo: "SR006101",
+        spec: 'Tambor Bandit 12" / 15"',
         od: "230",
         id: "80",
         thickness: "16",
       },
       {
-        spec: 'Bandit 18" / 19" Drum',
+        itemNo: "SR006102",
+        spec: 'Bandit 18" / 19"',
         od: "295",
         id: "80",
         thickness: "19",
       },
       {
+        itemNo: "SR006103",
         spec: "Vermeer BC1800 / BC2100",
         od: "310",
         id: "100",
         thickness: "19",
       },
       {
-        spec: "Morbark 40/36 Drum",
+        itemNo: "SR006104",
+        spec: "Tambor Morbark 40/36",
         od: "400",
         id: "100",
         thickness: "22",
       },
       {
-        spec: "Morbark 50/48 Disc",
+        itemNo: "SR006105",
+        spec: "Disco Morbark 50/48",
         od: "250",
         id: "120",
         thickness: "25",
       },
       {
-        spec: "Peterson 5710 Disc",
+        itemNo: "SR006106",
+        spec: "Disco Peterson 5710",
         od: "280",
         id: "130",
         thickness: "25",
       },
       {
-        spec: "Doppstadt / Jenz Biomass",
+        itemNo: "SR006107",
+        spec: "Doppstadt / Jenz Biomassa",
         od: "350",
         id: "100",
         thickness: "20",
       },
       {
-        spec: "Heavy Whole-Tree Chipper",
+        itemNo: "SR006108",
+        spec: "Picador pesado de árvores inteiras",
         od: "600",
         id: "150",
         thickness: "30",
       },
+      {
+        itemNo: "SR006109",
+        spec: "Eschlböck Biber",
+        od: "245",
+        id: "285",
+        thickness: "20",
+      },
     ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
+    detailLayout: {
+      seoTitle: "Facas para picadores de madeira a tambor e a disco",
+      heroAlt:
+        "Faca picadora de madeira com fio de corte reto, ranhuras de montagem abertas e furos de fixação",
+      sizeRange: "230–600 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "Picador de aço, D2 , Cr12MoV ou ponta de metal duro",
+        },
+        {
+          label: "Aplicação",
+          value: "Picadores de madeira de tambor e disco",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value:
+            "Comprimentos listados 230–600 mm; comprimentos personalizados de até 800 mm",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Facas móveis para picadores de árvores inteiras de tambor, disco e biomassa e reciclagem de paletes",
+        },
+        {
+          label: "Material",
+          value:
+            "Aço picador com alto teor de carbono, D2 (1.2379), Cr12MoV ou construção com ponta de metal duro",
+        },
+        {
+          label: "Dureza",
+          value:
+            "Aço picador: HRC 55–58; D2 / Cr12MoV : HRC 58–62; aresta de corte de metal duro: HRA 89–91",
+        },
+        {
+          label: "Ângulo de bisel",
+          value: "25°–42°",
+        },
+        {
+          label: "Tolerância de espessura",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Tratamento térmico",
+          value:
+            "Endurecimento a vácuo e tratamento criogênico profundo (-196°C)",
+        },
+        {
+          label: "Afiação",
+          value:
+            "Totalmente endurecido; 8–12 ciclos de reafiação, sujeitos ao desgaste e à altura restante da faca",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
+        alt: "Desenho da faca picadora de madeira mostrando o corpo, ranhuras de montagem abertas e seção transversal chanfrada",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para suas facas picadoras",
+        description:
+          "Inclua o modelo e número de série do picador, tipo de tambor ou disco, desenho da faca ou amostra e quantidade necessária.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-anvils"],
     offers: {
       lowPrice: 25,
       highPrice: 380,
@@ -6052,96 +8090,75 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Que material de lâmina devo usar para triturar madeira verde limpa em comparação com madeira de demolição contaminada?",
+            "Quais facas picadoras de madeira de reposição cabem na minha máquina?",
           answer:
-            "Para madeira limpa e verde (silvicultura, serviços de poda de árvores, limpeza de terrenos), o aço padrão de alto carbono para lâminas de triturador, com dureza HRC 55–58, oferece excelente vida útil do fio de corte com o menor custo por ciclo de reafiamento. Para madeira contaminada proveniente de demolições, paletes recicladas ou resíduos verdes urbanos com pregos, parafusos e pedras incrustados, opte pelo Cr12MoV ou D2 com dureza HRC 58–60. A matriz de carboneto de cromo proporciona uma vida útil do fio 2 a 3 vezes maior em madeira seca abrasiva, mantendo resiliência suficiente para resistir a impactos moderados de metal. Para fluxos altamente contaminados (dormentes ferroviários, entulho de construção e demolição), especifique lâminas com ponta de carboneto TCT, que oferecem vida útil 5 a 10 vezes maior do que o D2.",
+            "Use o modelo do picador, o número de série e a referência da peça original para identificar as dimensões da nova faca, o chanfro, o padrão de fixação e o assento. Lâminas picadoras e facas picadoras geralmente descrevem as facas móveis em um tambor ou disco. Os dentes do moedor são um tipo de peça de desgaste separada, portanto o conjunto de corte real deve acompanhar o nome da compra.",
         },
         {
           question:
-            "Como a tolerância na espessura da lâmina afeta a qualidade da limalha e a vibração do tambor?",
+            "Quando devem ser consideradas facas picadoras com ponta de metal duro?",
           answer:
-            "A espessura da lâmina controla diretamente a profundidade do corte e influencia o equilíbrio do tambor. Se as espessuras das lâminas variarem em mais de 0,10 mm em um tambor com várias lâminas, as lâminas mais espessas cortam mais profundamente e produzem cavacos maiores do que o permitido, enquanto as lâminas mais finas produzem cavacos menores do que o permitido — ambas as condições não atendem às especificações de classificação de combustível de biomassa (EN 17225-4). Além disso, a massa irregular das lâminas cria um desequilíbrio dinâmico na rotação de operação (1.000–2.500 RPM), causando vibrações destrutivas que aceleram a falha dos rolamentos e causam fadiga na carcaça do tambor. Nossa tolerância de espessura de ±0,05 mm elimina ambos os problemas.",
+            "Considere o padrão de desgaste e a condição de avanço antes de alterar a construção da aresta de trabalho. O desgaste abrasivo gradual e os danos por impacto localizados exigem diferentes decisões sobre materiais. Compare o atual histórico de faca de aço, chanfro e contaminação com o projeto de ponta de metal duro proposto, preservando ao mesmo tempo a geometria de montagem e de trabalho exigida pelo picador.",
         },
         {
           question:
-            "Que ângulo de bisel devo especificar para a trituração de madeira de folhosas em comparação com a de madeiras de coníferas?",
+            "Por que a qualidade dos cavacos e o esforço de corte mudam à medida que as facas se desgastam?",
           answer:
-            "Para madeiras de coníferas e madeiras verdes com alto teor de umidade (pinheiro, abeto, álamo), especifique um ângulo de bisel de 25°–30°. O ângulo entre os lados mais agudo corta madeiras macias e fibrosas com o mínimo de força de corte e produz faces de lascas limpas com baixo rasgo das fibras. Para madeira dura seca (carvalho, nogueira-americana, eucalipto), aumente para 30°–37° a fim de reforçar a aresta de corte contra a maior densidade e a carga de impacto. Para biomassa contaminada e trituração de árvores inteiras com contaminação por solo e pedras, especifique 35°–42° — o bisel mais amplo distribui as forças de impacto por uma superfície de corte mais ampla, evitando o rolamento da aresta.",
+            "Uma borda cega ou danificada altera a forma como a faca se encaixa na madeira e pode aumentar o esforço necessário para processá-la. Compare as bordas usadas com a amostra do cavaco e a condição de alimentação. Inclua a bigorna estacionária na inspeção, pois ambas as peças estabelecem a relação de corte.",
+        },
+        {
+          question: "Facas reversíveis e facas reafiáveis ​​são iguais?",
+          answer:
+            "Não. Uma faca picadora reversível pode ser girada para usar uma segunda lâmina cortante. Uma faca reafiável pode ter uma borda desgastada dentro de seus limites de serviço. Algumas facas suportam ambos. Utilize o desenho da lâmina e o manual do picador para confirmar a orientação permitida, o chanfro e as dimensões restantes.",
         },
         {
           question:
-            "Quantas vezes as lâminas do triturador Sureay podem ser reafiadas e qual é o procedimento correto de reafiação?",
+            "Quando uma faca picadora deve ser substituída em vez de afiada?",
           answer:
-            "Nossas lâminas de triturador com endurecimento total podem ser reafiadas de 8 a 12 vezes antes de atingirem a espessura mínima de segurança (normalmente 60% a 70% da espessura original). Reafie em uma retificadora de superfície úmida usando um disco de óxido de alumínio (grão 46–60) a uma profundidade de 0,02–0,05 mm por passagem para evitar danos térmicos à aresta tratada termicamente. Nunca afie as lâminas do triturador a seco — o superaquecimento localizado acima de 200 °C retira a têmpera e amolece a aresta. Após o afiamento, verifique o ângulo de bisel com um comparador óptico ou um transferidor digital. Também oferecemos um serviço profissional de reafiamento com nova verificação da dureza.",
+            "Substitua as facas com rachaduras, distorções ou danos que impeçam a restauração da geometria de trabalho especificada. Uma borda desgastada pode ser reafiada quando as dimensões restantes da faca permitirem. Use os limites do picador para a faca específica, em vez de uma contagem fixa de material reciclado, e inspecione as superfícies de montagem, bem como a borda.",
         },
         {
           question:
-            "O que causa o enrolamento prematuro das bordas nas lâminas do meu triturador e como posso evitar isso?",
+            "A bigorna deve ser substituída sempre que as facas móveis forem trocadas?",
           answer:
-            "A dobragem da aresta (quando a aresta de corte se dobra em vez de lascar ou se desgastar gradualmente) indica que a dureza da lâmina é baixa demais para o material a ser processado ou que o ângulo de bisel é muito agudo para a carga de impacto. Em lâminas padrão de aço carbono que processam madeira dura seca, a aresta não possui reforço de carboneto suficiente para resistir à deformação plástica. Mude para D2 ou Cr12MoV com dureza HRC 58–62 e aumente o ângulo de bisel em 3°–5°. Verifique também a folga da contra-lâmina: uma folga excessiva (> 1,5 mm) força a lâmina a fraturar a madeira por flexão, em vez de cisalhamento, aumentando drasticamente a carga sobre a aresta.",
+            "Não. Uma nova faca em movimento nem sempre requer uma nova bigorna. Avalie a bigorna quanto a desgaste, danos e ajustes restantes. Uma bigorna utilizável pode permanecer no lugar se sua borda e montagem ainda permitirem a folga de corte necessária. Consulte [Bigornas picadoras de madeira](/products/wood-chipper-anvils) para obter facas estacionárias de reposição.",
         },
         {
           question:
-            "Devo substituir a lâmina contrária (biqueira) ao instalar novas lâminas no triturador?",
+            "Como solicito um orçamento para lâminas picadoras de tambor ou disco?",
           answer:
-            "A contra-lâmina deve ser inspecionada sempre que as lâminas do triturador forem trocadas. Uma contra-lâmina desgastada, com o gume arredondado ou lascado, obriga as lâminas novas a trabalharem contra uma folga de cisalhamento irregular, reduzindo sua vida útil efetiva em 30–50% e produzindo aparas de baixa qualidade. Substitua ou reafie a contra-lâmina quando a aresta de corte apresentar um arredondamento visível superior a 1,0 mm ou lascas com profundidade superior a 0,5 mm. Fornecemos contra-lâminas compatíveis, fabricadas em aço D2 ou manganês, como conjuntos integrados com folga pré-verificada.",
-        },
-        {
-          question:
-            "Qual distribuição de tamanho de lascas devo buscar para a produção de combustível de biomassa em comparação com o abastecimento de fábricas de celulose?",
-          answer:
-            "As usinas de energia de biomassa normalmente exigem lascas com dimensões entre 3 e 50 mm (EN 17225-4 Classe P31s ou P45s), com menos de 5% de partículas finas (< 3 mm) e menos de 1% de peças acima do tamanho permitido (> 63 mm). As fábricas de celulose exigem especificações mais rigorosas de acordo com a norma TAPPI T257: normalmente, 80% de aceitação na faixa de 7 a 25 mm, com limites estritos para lascas em forma de pino e pedaços com espessura excessiva. Para atender a essas especificações, é necessário que a lâmina tenha espessura consistente (±0,05 mm), ângulo de bisel correto, folga adequada entre a lâmina e a contra-lâmina (0,5–1,0 mm) e velocidade uniforme do tambor. Podemos recomendar a geometria ideal da lâmina para a especificação desejada.",
+            "Enviar modelo e número de série do picador, referência ou desenho original da peça, alimentação de madeira e quantidade. Inclua as dimensões do chanfro, do parafuso ou da ranhura e o perfil do assento da lâmina. Para uma máquina mais antiga sem desenho, uma amostra dimensionada pode mostrar o assento e o padrão de fixação. Marque qualquer altura perdida devido à nitidez.",
         },
       ],
-      company: [
-        {
-          question:
-            "Vocês são uma empresa de comércio ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e afiam suas lâminas.",
-        },
-        {
-          question:
-            "Vocês podem fornecer lâminas para o meu modelo específico de triturador, caso ele não conste na lista de dimensões padrão?",
-          answer:
-            "Sim. Envie-nos uma amostra da lâmina que você possui, um desenho técnico ou a marca e o número do modelo do seu triturador. Confirmaremos o comprimento, a largura, a espessura, o ângulo de bisel e o padrão dos furos dos parafusos, e fabricaremos peças de reposição exatas, prontas para instalação. Mantemos um extenso banco de dados de desenhos técnicos de lâminas de trituradores OEM para as plataformas Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz e CBI. Dimensões personalizadas são fabricadas de acordo com o desenho em um prazo de 10 a 15 dias úteis.",
-        },
-        {
-          question:
-            "O que diferencia o tratamento térmico da Sureay das alternativas mais baratas?",
-          answer:
-            "Ao contrário dos processos padrão de têmpera e revenimento, todas as lâminas dos trituradores Sureay passam por um processo de endurecimento a vácuo, seguido de um tratamento criogênico profundo a −196 °C. A etapa criogênica transforma a austenita retida em martensita estável, melhorando a resistência ao desgaste em até 40% e garantindo dureza uniforme da superfície até o núcleo. Isso significa que cada reafiação revela aço de qualidade idêntica — lâminas baratas costumam revelar um núcleo mais macio após a primeira reafiação, reduzindo pela metade a vida útil do fio nos ciclos de afiação subsequentes.",
-        },
-        {
-          question:
-            "Vocês fazem entregas para o exterior e quanto tempo demora?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As lâminas padrão para trituradores, em tamanhos em estoque, geralmente são enviadas em 48 a 72 horas. Perfis personalizados e lâminas com ponta de carboneto TCT levam de 10 a 15 dias úteis. Temos parceria direta com a DHL, a FedEx e agentes de frete marítimo internacional para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question:
-            "Quais certificações de qualidade a Sureay possui? Vocês podem fornecer relatórios de testes de materiais?",
-          answer:
-            "A Sureay possui certificação ISO 9001:2015. Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional (espessura, ângulo de chanfro, posições dos furos para parafusos) e um certificado de lote tratamento térmico. Para operações de biomassa de grande volume que exijam rastreabilidade total, certificados de composição da siderúrgica e relatórios dimensionais da CMM estão disponíveis mediante solicitação.",
-        },
-        {
-          question:
-            "Será que podemos testar um lote de amostras antes de fechar um pedido de produção completo?",
-          answer:
-            "Sim. Oferecemos conjuntos de amostras (normalmente de 2 a 4 lâminas) para verificação do ajuste na máquina e comparação da vida útil do fio de corte com a do seu fornecedor atual. O prazo de entrega padrão das amostras é de 5 a 7 dias úteis. Para lâminas com ponta de metal duro TCT, o prazo de entrega das amostras é de 10 a 12 dias úteis.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Inclua o modelo e série do picador, tipo de tambor ou disco, desenho da faca, padrão do parafuso e matéria-prima de madeira.",
+    rfqPlaceholder:
+      "Modelo e número de série do picador, tipo de tambor ou disco, desenho da faca ou amostra e quantidade necessária.",
+    disambiguation:
+      "Para a parte estacionária oposta à faca rotativa, consulte [Bigornas picadoras de madeira](/products/wood-chipper-anvils) .",
   },
   {
     id: "wood-chipper-anvils",
-    name: "Bigornas para trituradores de madeira",
-    fullName:
-      "Lâminas de contra-corte e bigornas para lâminas de base de alta resistência para trituradores de madeira do tipo tambor e disco",
+    seoDescription:
+      "Substitua a contrafaca estacionária oposta às facas picadoras móveis. As bigornas do picador de madeira estão listadas em comprimentos de 185–400 mm, com slots de montagem personalizados.",
+    name: "Contrafacas para picadores de madeira",
+    fullName: "Bigornas e contrafacas para picadores de madeira",
     category: "wood_chipper",
     sector: "wood",
     categoryDisplay: "Facas de bancada e bigornas",
     image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1439,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Conjuntos combinados",
     badgeColor: "blue",
     gallery: [
@@ -6150,9 +8167,7 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
     description:
-      "Anéis de corte e contra-lâminas (lâminas de base) para trituradores de tambor e de disco. Aço para ferramentas D2, Cr12MoV e A8 Modificado, temperado em toda a espessura com dureza HRC 55–60 para máxima vida útil de reafiamento. Define a folga entre a lâmina e a bigorna, que controla a espessura das lascas e a eficiência do triturador. Retificado superficialmente para garantir paralelismo em todo o comprimento com precisão de ±0,05 mm. Peças de reposição compatíveis com os fabricantes originais (OEM) para trituradores Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen e Jenz.",
-    fullDescription:
-      "A bigorna — também chamada de contra-lâmina, lâmina fixa ou lâmina estacionária — é a lâmina fixa dentro de um triturador de madeira contra a qual o tambor giratório ou a lâmina de disco realiza o corte. Juntas, a lâmina do triturador e a bigorna formam um par de corte semelhante a uma tesoura: a lâmina corta lascas da madeira, e a bigorna define a folga que determina a espessura mínima das lascas, a eficiência de corte e a carga do motor.\n\nUma bigorna desgastada ou desalinhada é a causa mais negligenciada do baixo desempenho do triturador. Quando a aresta da bigorna fica arredondada, a folga entre a lâmina e a bigorna aumenta progressivamente. Em vez de uma ação de corte limpa, a madeira é rasgada e esmagada em vez de ser cortada — aumentando o consumo de combustível em 15 a 25%, produzindo lascas irregulares que não atendem às especificações de triagem e acelerando o desgaste das próprias lâminas do triturador. Substituir as lâminas do triturador sem inspecionar a bigorna é jogar dinheiro fora: lâminas novas trabalhando contra uma bigorna cega atingem apenas 50–70% de sua vida útil potencial.\n\n## Por que a bigorna é tão importante quanto a lâmina\n\n**Controle da folga:** A folga entre a lâmina e a bigorna — normalmente ajustada entre 0,5 e 1,5 mm para picadores de tambor e entre 0,8 e 2,0 mm para picadores de disco — controla diretamente a espessura mínima das lascas. Uma bigorna desgastada aumenta essa folga além das especificações, produzindo lascas superdimensionadas e lascas longas e fibrosas que não atendem aos padrões de classificação de combustível de biomassa (EN 17225-4). Nossas bigornas são retificadas com precisão para um paralelismo em todo o comprimento de ±0,05 mm, garantindo uma folga de cisalhamento uniforme em toda a largura de corte.\n\n**Absorção de impacto:** Ao contrário da lâmina do picador (que gira em alta velocidade), a bigorna absorve toda a força de reação de cada corte como uma carga de impacto estática. Ao longo de milhões de ciclos de trituração, essa carga de impacto sustentada causa deformação das arestas, microfissuras e, eventualmente, fratura em massa em bigornas com tratamento térmico inadequado. As bigornas da Sureay são temperadas em toda a espessura até HRC 55–60 por meio do processo tratamento térmico a vácuo — duras o suficiente para manter uma aresta afiada contra madeira abrasiva, mas resistentes o suficiente para absorver impactos repetidos sem fratura por fragilidade.\n\n**Taxa de desgaste diferente, ciclo de substituição diferente:** A bigorna normalmente dura de 2 a 4 vezes mais do que as lâminas do picador, pois opera sob carga compressiva (estática), em vez da carga de cisalhamento dinâmica exercida sobre a lâmina. No entanto, como o desgaste da bigorna é gradual, os operadores muitas vezes não percebem a deterioração progressiva até que a qualidade das lascas tenha se degradado significativamente. Recomendamos inspecionar o fio da bigorna sempre que as lâminas do picador forem trocadas ou afiadas.\n\n## Seleção de materiais\n\n**Aço para ferramentas D2 / Cr12MoV (HRC 58–60):** A especificação premium para operações comerciais de grande volume de processamento de madeira e biomassa. A matriz com 12% de carboneto de cromo oferece excelente resistência à abrasão contra madeiras duras densas e matérias-primas com grande quantidade de casca. Recomendada para picadores industriais de tambor (Morbark, série HG da Vermeer, Doppstadt) que operam em turnos contínuos de 8 a 16 horas.\n\n**Aço para ferramentas A8 modificado (HRC 54–58):** O padrão da indústria de grau OEM utilizado pela Bandit, Morbark e Vermeer para bigornas originais de fábrica. O A8 Modificado oferece um excelente equilíbrio entre resistência ao desgaste e tenacidade ao impacto — aspectos essenciais para bigornas que precisam absorver milhões de ciclos de impacto sem apresentar microfissuras. A escolha correta para operações gerais de silvicultura e serviços florestais que processam espécies mistas com contaminação moderada.\n\n**42CrMo / Aço de manganês (HRC 50–55):** Uma opção econômica e de alta tenacidade para operadores que processam madeira de demolição altamente contaminada, dormentes ferroviários e resíduos verdes urbanos, nos quais a matéria-prima contém detritos metálicos significativos. A menor dureza prioriza a absorção de impactos em detrimento da resistência ao desgaste, evitando a fratura catastrófica do bigorna que pode danificar o compartimento do tambor.\n\n## Ajuste de montagem e folga\n\nA maioria dos fabricantes de picadores (OEMs) fornece um sistema de ajuste mecânico — normalmente placas de calço ou parafusos de montagem ajustáveis — para avançar a bigorna em direção à lâmina à medida que ambos os componentes se desgastam, mantendo a folga projetada. As bigornas Sureay são usinadas em CNC com furos de montagem ranhurados ou sobredimensionados que se encaixam com precisão no mecanismo de ajuste do seu fabricante original, garantindo que as equipes de manutenção possam definir a folga com exatidão e travá-la com segurança.\n\n## Conjuntos combinados de lâmina + bigorna\n\nPara operadores que trocam simultaneamente as lâminas e a bigorna, oferecemos conjuntos combinados: lâminas de triturador e contra-lâmina fabricadas a partir do mesmo lote de aço, tratadas termicamente no mesmo ciclo de forno a vácuo e retificadas superficialmente com a mesma tolerância de paralelismo. Um conjunto combinado elimina a incompatibilidade de dureza entre a lâmina e a bigorna, que causa desgaste acelerado quando os componentes são adquiridos de fornecedores diferentes.",
+      "Bigornas picadoras de madeira de reposição em D2 , Cr12MoV , A8 modificado ou 42CrMo. Perfis de borda de trabalho personalizados e slots de montagem correspondentes à peça original.",
     link: "/products/wood-chipper-anvils",
     isFeatured: true,
     compatibleMachines: [
@@ -6167,58 +8182,66 @@ export const blades: Blade[] = [
       "Eschlböck",
       "Forst",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV) | A8 Modified | 42CrMo Manganese Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–60 (Through-Hardened, Surface = Core)",
-      },
-      {
-        label: "Parallelism",
-        value: "±0.05 mm full-length (uniform shear gap)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single-bevel 30°–37° (matched to chipper blade angle)",
-      },
-      {
-        label: "Mounting",
-        value: "Slotted holes / shim-adjustable (OEM clearance adjustment)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 5–10 regrind cycles per anvil",
-      },
-      {
-        label: "Application",
-        value:
-          "Drum Chippers, Disc Chippers, Biomass Chippers, Landscape Chippers",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Obtenha uma bigorna picadora de reposição com a borda de trabalho, ranhuras de fixação e faces de assentamento que sua máquina precisa. Sureay oferece opções de materiais totalmente endurecidos e perfis personalizados. Compartilhe seu desenho ou amostra para uma cotação de bigorna, com facas móveis disponíveis como itens separados. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
     components: [
       {
-        id: "clearance-gap-control",
-        tag: "EFICIÊNCIA DE CORTE",
-        title: "Controle de folga de precisão",
+        id: "chipper-anvil-edge",
+        tag: "Borda estacionária",
+        title: "Várias opções de aço para bordas estacionárias",
         description:
-          "A folga entre a lâmina e a bigorna determina a espessura da limalha, a força de corte e o consumo de combustível. Uma borda arredondada da bigorna aumenta essa folga além das especificações, transformando o corte limpo em um esmagamento ineficiente. Nossas bigornas são retificadas superficialmente com paralelismo de ±0,05 mm para manter a folga projetada em toda a largura de corte — restaurando a penetração com alimentação automática e reduzindo a carga do motor em até 20%.",
+          "Sureay oferece bigornas D2 , Cr12MoV , A8 modificadas e 42CrMo , permitindo que o material de substituição seja especificado de acordo com o par de facas existente e as condições de desgaste do picador.",
       },
       {
-        id: "impact-toughness",
-        tag: "DURABILIDADE",
-        title: "Resistência ao impacto estático",
+        id: "chipper-anvil-adjustment",
+        tag: "Montagem",
+        title: "Arestas de trabalho e faces de assentamento definidas",
         description:
-          "A bigorna absorve toda a força de reação de cada corte como uma carga de impacto estática — milhões de golpes por turno. O aço D2 e A8 Modificado, temperado em toda a espessura, com dureza HRC 54–60, oferece o equilíbrio ideal: duro o suficiente para manter o fio afiado diante da madeira abrasiva e resistente o suficiente para absorver impactos repetidos sem microfissuras ou fraturas catastróficas.",
+          "Os comprimentos de bigorna listados vão de 185 a 400 mm, com comprimentos personalizados de até 600 mm. Sureay faz a borda estacionária e as superfícies de localização de acordo com o desenho do alojamento do picador existente.",
       },
       {
-        id: "matched-sets",
-        tag: "INTEGRAÇÃO DE SISTEMAS",
-        title: "Conjuntos de lâmina e bigorna combinados",
+        id: "chipper-anvil-pair",
+        tag: "Par de substituição",
+        title: "Slots de montagem para sistemas de ajuste existentes",
         description:
-          "As lâminas de triturador e as contra-lâminas de diferentes fornecedores costumam apresentar durezas incompatíveis — uma bigorna mais dura desgasta a lâmina prematuramente, ou uma bigorna mais macia se desgasta mais rápido do que o esperado. Nossos conjuntos combinados são fabricados a partir do mesmo lote de aço e submetidos ao mesmo ciclo de tratamento térmico, garantindo taxas de desgaste equilibradas e a máxima vida útil combinada.",
+          "Configurações de montagem com fenda estão disponíveis para montagens com calço ajustado, com localizações de fenda e dimensões do corpo feitas de acordo com o desenho original da bigorna.",
+        relatedBladeIds: ["wood-chipper-blades"],
+      },
+    ],
+    specs: [
+      {
+        label: "Tamanhos",
+        value:
+          "Comprimentos listados 185–400 mm; comprimentos personalizados de até 600 mm",
+      },
+      {
+        label: "Aplicação",
+        value: "Contra-faca estacionária oposta às facas picadoras móveis",
+      },
+      {
+        label: "Material",
+        value: "D2 , Cr12MoV , A8 modificado ou 42CrMo",
+      },
+      {
+        label: "Montagem",
+        value: "Orifícios ranhurados com folga da faca ajustável por calço",
+      },
+      {
+        label: "Dureza",
+        value: "HRC 54–60, totalmente endurecido",
+      },
+      {
+        label: "Geometria da borda",
+        value: "Bisel único, 30°–37°",
+      },
+      {
+        label: "Paralelismo",
+        value: "±0,05 mm ao longo do comprimento da lâmina",
+      },
+      {
+        label: "Afiação",
+        value:
+          "Totalmente endurecido; 5–10 ciclos de reafiação, sujeitos ao desgaste e à altura restante da bigorna",
       },
     ],
     dimensionLabels: {
@@ -6231,60 +8254,132 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: 'Bandit 12" / 15" / Mighty Bandit',
+        itemNo: "SR006201",
+        spec: 'Bandit 12" / 15" / Bandit Poderoso',
         od: "185",
         id: "75",
         thickness: "10",
       },
       {
+        itemNo: "SR006202",
         spec: 'Bandit 18" / 19" / 1290 / 1590',
         od: "265",
         id: "95",
         thickness: "12",
       },
       {
+        itemNo: "SR006203",
         spec: "Vermeer BC1200 / BC1500",
         od: "200",
         id: "80",
         thickness: "12",
       },
       {
+        itemNo: "SR006204",
         spec: "Vermeer BC1800 / BC2000",
         od: "260",
         id: "100",
         thickness: "16",
       },
       {
+        itemNo: "SR006205",
         spec: "Morbark 2 / 5 / 7 / 12 / 13",
         od: "265",
         id: "95",
         thickness: "12",
       },
       {
-        spec: "Morbark 40/36 / 50/48",
+        itemNo: "SR006206",
+        spec: "Morbark 40/36/50/48",
         od: "400",
         id: "100",
         thickness: "20",
       },
       {
+        itemNo: "SR006207",
         spec: "Timberwolf 150 / 190 / 230",
         od: "230",
         id: "80",
         thickness: "16",
       },
       {
-        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
+        itemNo: "SR006208",
+        spec: "Schliesing 400/500/550/600/660",
         od: "260",
         id: "80",
         thickness: "20",
       },
       {
+        itemNo: "SR006209",
         spec: "Greenmech / Jensen / Forst",
-        od: "Per OEM Drawing",
+        od: "Por desenho OEM",
         id: "Per OEM Drawing",
-        thickness: "Per OEM Drawing",
+        thickness: "Por desenho OEM",
       },
     ],
+    detailLayout: {
+      seoTitle: "Bigornas e contrafacas para picadores de madeira",
+      heroAlt:
+        "Bigorna picadora de madeira retangular com três furos de fixação e borda de trabalho retificada",
+      sizeRange: "185–400 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "D2 , Cr12MoV , A8 modificado ou 42CrMo",
+        },
+        {
+          label: "Aplicação",
+          value: "Contrafacas estacionárias para picadores de madeira",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value:
+            "Comprimentos listados 185–400 mm; comprimentos personalizados de até 600 mm",
+        },
+        {
+          label: "Aplicação",
+          value: "Contra-faca estacionária oposta às facas picadoras móveis",
+        },
+        {
+          label: "Material",
+          value: "D2 , Cr12MoV , A8 modificado ou 42CrMo",
+        },
+        {
+          label: "Montagem",
+          value: "Orifícios ranhurados com folga da faca ajustável por calço",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 54–60, totalmente endurecido",
+        },
+        {
+          label: "Geometria da borda",
+          value: "Bisel único, 30°–37°",
+        },
+        {
+          label: "Paralelismo",
+          value: "±0,05 mm ao longo do comprimento da lâmina",
+        },
+        {
+          label: "Afiação",
+          value:
+            "Totalmente endurecido; 5–10 ciclos de reafiação, sujeitos ao desgaste e à altura restante da bigorna",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+        alt: "Duas contrafacas picadoras de madeira mostrando os furos de fixação chanfrados e escareados",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para suas bigornas picadoras",
+        description:
+          "Inclua o modelo e número de série do picador, posição da bigorna, desenho ou amostra e quantidade necessária.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
     relatedBladeIds: ["wood-chipper-blades"],
     offers: {
       lowPrice: 25,
@@ -6293,356 +8388,1925 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Qual é a função da bigorna em um triturador de madeira?",
+          question:
+            "O que uma bigorna picadora de madeira faz e é uma contrafaca?",
           answer:
-            "A bigorna (também chamada de lâmina fixa ou contra-lâmina) é a lâmina fixa contra a qual as lâminas giratórias do picador cortam. A madeira é cortada de forma limpa no espaço entre a lâmina giratória e a bigorna fixa. Uma folga corretamente ajustada entre a bigorna e a lâmina (normalmente de 0,5 a 1,5 mm) produz lascas uniformes, reduz o desgaste da lâmina e evita a produção de lascas fibrosas ou excessivamente grandes. Uma bigorna desgastada ou desalinhada é a causa mais comum de má qualidade das lascas e do embotamento acelerado da lâmina.",
+            "A bigorna fornece a borda estacionária contra a qual as facas picadoras móveis cortam. A contrafaca e a faca de base podem referir-se à mesma posição, dependendo da máquina. Use o diagrama de peças para identificar a borda estacionária e sua montagem antes de fazer o pedido por nome.",
         },
         {
           question:
-            "Com que frequência devo substituir ou reafiar a bigorna em comparação com as lâminas do triturador?",
+            "Por que o corte pode permanecer ruim após a substituição das facas móveis?",
           answer:
-            "A bigorna geralmente dura de 2 a 4 vezes mais do que as lâminas do triturador, pois opera sob carga compressiva estática, ao invés da carga de cisalhamento dinâmica a que a lâmina está sujeita. No entanto, recomendamos inspecionar a borda da bigorna sempre que as lâminas do triturador forem trocadas ou viradas. Quando a borda da bigorna apresentar um arredondamento visível superior a 1,0 mm (verifique com uma régua sob luz forte), reafie-a ou substitua-a. A instalação de novas lâminas de triturador contra uma bigorna desgastada proporciona apenas 50 a 70% de sua vida útil potencial e produz aparas de baixa qualidade, independentemente do grau de afiação das lâminas.",
+            "As facas móveis ainda funcionam contra a borda estacionária existente. Arredondamentos, danos ou uma posição de instalação alterada na bigorna podem afetar a relação de corte. Compare ambas as peças e suas condições de montagem e, em seguida, use o procedimento do fabricante do picador para avaliar a folga. Uma nova faca em movimento não restaura uma face estacionária desgastada.",
+        },
+        {
+          question: "O que deve orientar a escolha do aço da bigorna?",
+          answer:
+            "Compare o material atual, o desgaste da borda e qualquer dano local com a alimentação da madeira e a configuração da faca móvel. A decisão do material deve abordar a condição observada, mantendo o chanfro e o perfil do corpo necessários. Distinga o desgaste gradual dos danos relacionados ao impacto antes de selecionar entre as opções de aço listadas.",
         },
         {
           question:
-            "Qual deve ser a folga entre a lâmina do triturador e a bigorna?",
+            "Uma bigorna desgastada pode ser girada para expor outra aresta?",
           answer:
-            "A folga varia de acordo com o tipo de triturador e a espécie de madeira. Para trituradores de tambor que processam madeira macia verde: 0,5–1,0 mm. Para trituradores de tambor que processam madeira dura seca: 0,8–1,5 mm. Para trituradores de disco: 1,0–2,0 mm. Sempre consulte o manual do fabricante do triturador para obter as especificações exatas. A folga deve ser medida em vários pontos ao longo de toda a largura da bigorna, utilizando um calibrador de folga. Se a folga variar mais de 0,3 mm de uma extremidade à outra, o paralelismo da face da bigorna está comprometido e a bigorna precisa ser reafiada ou substituída.",
+            "Sim, se a bigorna tiver sido projetada com outra aresta utilizável e essa orientação for permitida pela montagem. Verifique no desenho as faces de assentamento e os requisitos de ajuste. Algumas faces de uma bigorna retangular podem localizá-la ou apoiá-la sem servir como arestas de trabalho.",
         },
         {
           question:
-            "Devo usar o mesmo tipo de aço para a bigorna e para a lâmina do triturador?",
+            "Posso encomendar a bigorna separadamente das facas picadoras?",
           answer:
-            "Não necessariamente — a bigorna e a lâmina apresentam modos de desgaste diferentes e, portanto, metalurgias ideais distintas. A lâmina sofre cargas dinâmicas de cisalhamento em alta velocidade e se beneficia de uma dureza máxima na aresta (HRC 58–62). A bigorna sofre impacto compressivo estático e se beneficia de uma dureza ligeiramente menor (HRC 54–58), que proporciona maior absorção de impacto. Por esse motivo, o A8 Modificado com HRC 54–58 é o tipo de bigorna padrão do setor. No entanto, para operações de biomassa de alto volume com madeira de lei limpa, recomenda-se a atualização tanto da lâmina quanto da bigorna para o D2 com HRC 58–60.",
+            "Sim. A bigorna pode ser fornecida como substituição individual ou incluída com [Lâminas picadoras de madeira](/products/wood-chipper-blades) . Mantenha os dois desenhos e quantidades separados. As dimensões e a condição das facas móveis retidas permanecem relevantes porque a nova bigorna deve ocupar a posição pretendida no par de corte existente.",
         },
         {
           question:
-            "O que faz com que um triturador pare de alimentar-se automaticamente, mesmo com lâminas afiadas?",
+            "Quais detalhes eu preciso para obter uma cotação de bigorna para picador de madeira?",
           answer:
-            "Se o triturador deixar de puxar a madeira para dentro da câmara de corte, mesmo com lâminas recém-afiladas ou novas, é quase certo que a bigorna esteja desgastada. Uma borda arredondada da bigorna aumenta a folga efetiva, o que significa que a lâmina não consegue mais penetrar na madeira com profundidade suficiente para gerar a força de tração. A madeira ricocheteia na superfície da lâmina em vez de ser agarrada e puxada para dentro. Inspecione e reafie ou substitua a bigorna e, em seguida, reajuste a folga de acordo com as especificações do fabricante original (OEM).",
-        },
-        {
-          question:
-            "Posso afiar a bigorna com as mesmas ferramentas que uso para as lâminas do triturador?",
-          answer:
-            "Sim — a mesma retificadora de superfície úmida e o mesmo disco de óxido de alumínio (grão 46–60) usados para lâminas de triturador também servem para bigornas. As mesmas regras se aplicam: passadas leves (0,02–0,05 mm por passada), nunca retifique a seco sem resfriamento e verifique o ângulo de bisel com um transferidor após a retificação. O ângulo de bisel da bigorna deve corresponder à especificação do fabricante original (OEM) do triturador (normalmente 30°–37°). Alguns operadores negligenciam a bigorna durante o reafiamento porque ela parece menos desgastada do que a lâmina — essa é uma falsa economia que reduz a vida útil da lâmina e prejudica a qualidade das lascas.",
-        },
-        {
-          question:
-            "Por que meu triturador produz fibras longas e finas em vez de lascas bem cortadas?",
-          answer:
-            "Lascas longas e fibrosas — às vezes chamadas de “espaguete” ou “fios” — indicam que a folga entre a lâmina e a bigorna está muito grande. A madeira está sendo rasgada e separada, em vez de ser cortada de forma limpa. Isso ocorre quando a borda da bigorna está desgastada ou quando a bigorna foi calçada incorretamente após a troca da lâmina. Reajuste a folga de acordo com as especificações do fabricante original (OEM) usando um calibrador de folga. Se a borda da bigorna não puder ser reafiada para ficar lisa e reta (devido a lascas profundas ou rachaduras), substitua a bigorna.",
+            "Envie o modelo e número de série do picador, desenho da bigorna ou número da peça, quantidade e a madeira que você processa. Para uma montagem com calço ajustado, mostre o espaçamento das ranhuras, as faces de assentamento, a disposição dos calços e a posição da aresta de trabalho em relação à faca em movimento. Marque quaisquer dimensões alteradas por desgaste ou reafiação.",
         },
       ],
-      company: [
-        {
-          question: "Vocês são uma empresa comercial ou um fabricante direto?",
-          answer:
-            "Somos um fabricante OEM 100% direto, fundado em 2008. Ao comprar da Sureay, você evita as margens de lucro dos intermediários e se comunica diretamente com os engenheiros que forjam e retificam suas lâminas e bigornas.",
-        },
-        {
-          question:
-            "Vocês podem fornecer conjuntos de lâminas e bigornas compatíveis com o meu modelo específico de triturador?",
-          answer:
-            "Sim. Recomendamos enfaticamente a compra de lâminas e bigornas como conjuntos combinados — fabricados a partir do mesmo lote de aço e submetidos a tratamento térmico no mesmo ciclo de forno a vácuo. Isso garante dureza e taxas de desgaste equilibradas em ambos os componentes. Forneça a marca e o número do modelo do seu triturador, e nós forneceremos um conjunto completo combinado com recomendações de folga pré-verificadas. Conjuntos combinados estão disponíveis para as plataformas Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck e Forst.",
-        },
-        {
-          question:
-            "Vocês podem fabricar uma bigorna para o meu triturador, caso ela não esteja listada nas dimensões padrão de vocês?",
-          answer:
-            "Sim. Envie-nos sua bigorna atual, um desenho técnico ou a marca e o número do modelo do seu triturador. Realizamos a engenharia reversa de bigornas de reposição a partir de desenhos do fabricante original (OEM) ou amostras físicas, verificando o encaixe em uma máquina de medição por coordenadas (CMM) antes da produção. Comprimentos personalizados de até 600 mm são fabricados em um prazo de 10 a 15 dias úteis.",
-        },
-        {
-          question: "Vocês fazem entregas para o exterior e quanto tempo leva?",
-          answer:
-            "Sim, exportamos para mais de 50 países. As bigornas de reposição OEM padrão, nos tamanhos disponíveis em estoque, geralmente são despachadas em 48 a 72 horas. As dimensões personalizadas levam de 10 a 15 dias úteis. Trabalhamos em parceria direta com a DHL, a FedEx e agentes de frete marítimo internacionais para garantir uma entrega porta a porta confiável.",
-        },
-        {
-          question: "Que tipo de documentação é fornecida com cada bigorna?",
-          answer:
-            "Cada remessa inclui um relatório de teste de dureza Rockwell HRC, um registro de inspeção dimensional (comprimento, largura, espessura, paralelismo e posições dos furos de montagem) e um certificado de lote tratamento térmico. Para conjuntos combinados de lâmina e bigorna, um relatório de inspeção combinado documenta a dureza de ambos os componentes para verificar o diferencial de dureza projetado.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Inclua o modelo e a série do picador, o desenho da bigorna, o padrão do slot de montagem, as faces de trabalho e os detalhes da faca.",
+    rfqPlaceholder:
+      "Modelo e número de série do picador, posição da bigorna, desenho ou amostra e quantidade necessária.",
+    disambiguation:
+      "Para as facas fixadas no tambor ou disco giratório, consulte [Lâminas picadoras de madeira](/products/wood-chipper-blades) .",
   },
   {
+    compatibleMachinesIntro:
+      "Obtenha facas inferiores de reposição para sua rebobinadora cortadora, incluindo designs de copo, borda dupla e anel substituível. Envie Sureay seu desenho ou amostra para uma cotação da configuração de flange, furo e face de corte que sua montagem existente precisa.",
     id: "slitter-rewinder-bottom-knives",
-    name: "Facas inferiores de cortadoras-rebobinadoras",
+    seoDescription:
+      "Facas de fundo em forma de copo, borda dupla e anel substituível para rebobinadeiras de papel, em DE 70–300 mm. Especifique um furo chaveado, montagem em flange ou aresta de corte de metal duro.",
+    name: "Facas inferiores para cortadeiras rebobinadeiras",
     fullName:
-      "Facas inferiores de cortadoras-rebobinadoras de carboneto para linhas de rebobinagem de papel e filme",
+      "Facas inferiores para cortadeiras-rebobinadeiras, tipo copo, de fio duplo ou com fio de metal duro",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Lâminas de corte",
+    categoryDisplay: "Facas inferiores para cortadeiras rebobinadeiras",
     image:
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Acabamento espelhado",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Linha de facas inferiores e anéis de lâmina para cortadoras-rebobinadoras em quatro diâmetros",
-      "Par de facas inferiores de cortadora-rebobinadora de carboneto, mostrando o furo central e os orifícios para parafusos",
-      "Anel de lâmina inferior para cortadora-rebobinadora simples com superfície de contato com acabamento espelhado",
-    ],
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lâminas inferiores sólidas e com ponta de metal duro para cortadoras-rebobinadoras de papel de alta velocidade. Superfícies com acabamento espelhado, corte sem rebarbas e redução da poeira no rolo enrolado. Tamanhos padrão de Φ250–Φ254 em espessuras de 15 a 50 mm, furos personalizados para a máquina. Compatível com Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban e outras plataformas de rebobinadoras elétricas.",
-    fullDescription:
-      "A lâmina inferior de uma cortadora-rebobinadora é a metade fixa de um par de lâminas de corte e é, propositalmente, a metade mais dura. Essa diferença de dureza entre a lâmina superior e a inferior não é acidental — é o mecanismo que garante um corte limpo. Quando as duas lâminas têm durezas próximas, a zona de corte se deforma em vez de cortar, e o resultado é uma borda de corte com rebarbas e poeira transportada para o rolo enrolado.\n\nAs lâminas inferiores da Sureay são fornecidas na construção sólida metal duro e com ponta de metal duro, com faces com acabamento espelhado e um fio afiado e posicionado com precisão. Na versão com ponta de metal duro, o metal duro é fixado por um processo controlado de fixação a quente, de modo que as inserções permaneçam fixadas durante a operação em alta velocidade, em vez de se soltarem durante o uso, e as inserções desgastadas possam ser substituídas sem a necessidade de descartar o corpo da lâmina.\n\n## Por que a poeira no rolo é um problema da lâmina inferior\n\nOs operadores geralmente tentam eliminar a poeira a montante — limpadores de banda, barras estáticas, extração. Muitas vezes, a fonte é a própria fenda. Uma lâmina inferior cujo gume esteja arredondado ou cuja face tenha perdido o acabamento deixa de cortar e passa a esmagar, e as fibras de papel esmagadas se transformam em poeira suspensa no ar que é enrolada diretamente no rolo e aparece como um defeito de conversão dois processos depois. Se a poeira surgir gradualmente, em vez de após uma mudança de tipo de papel, a faca inferior é a primeira coisa a ser inspecionada.\n\n## Materiais por substrato\n\nA lâmina sólida metal duro é a opção de maior durabilidade e a escolha certa para materiais abrasivos e com revestimento espesso. A lâmina com ponta de carboneto oferece o melhor equilíbrio entre custo e durabilidade para papel comum, além de ter a vantagem prática de permitir a recarga da ponta. O HSS continua sendo uma opção razoável para tiragens curtas em materiais macios e com o menor custo unitário.\n\n## Aplicações\n\nPapel, filme, folha metálica e materiais em banda semelhantes em plataformas elétricas de corte e rebobinagem — linhas de corte de bobinas, conversão de rolos e rebobinagem que processam papel revestido e não revestido, papelão e substratos flexíveis leves.\n\n## O diferencial de dureza é o mecanismo fundamental\n\nUm corte por cisalhamento precisa de um diferencial de dureza para permanecer como tal. Quando as lâminas superior e inferior têm durezas próximas, o material na zona de cisalhamento se deforma em vez de se separar de forma limpa, e os resultados são uma borda de corte com rebarbas e fibras esmagadas que se transformam em pó no rolo. A lâmina inferior, mais dura, mantém uma geometria estável da borda, enquanto a lâmina superior, mais macia, arca com o desgaste — e é também por isso que se espera que a lâmina superior seja trocada com mais frequência, e por que a substituição de ambas no mesmo ciclo desperdiça ferramentas ainda em bom estado. Equiparar as duas durezas é um erro comum e dispendioso de especificação, e vale a pena verificar em qualquer linha em que a qualidade do corte tenha se deteriorado após uma troca de ferramentas.\n\n## A poeira no rolo geralmente começa no corte\n\nOs operadores procuram a origem da poeira a montante — limpadores de banda, barras estáticas, extração — quando a fonte é, com frequência, o próprio corte. Uma lâmina inferior cujo fio ficou arredondado, ou cujo acabamento da face ficou opaco, deixa de cortar e começa a esmagar; a fibra esmagada é enrolada diretamente no rolo e aparece como um defeito de conversão dois processos depois. O momento em que ocorre é o indício: poeira que apareceu gradualmente aponta para a lâmina; poeira que apareceu após uma mudança de tipo de material aponta para o substrato. Inspecione a aresta sob ampliação e verifique o acabamento da face, em vez de testar o fio pelo toque, pois o acabamento da face se degrada antes da aresta e gera poeira bem antes que alguém considere a lâmina cega.\n\n## Metal duro maciço ou com ponta de metal duro\n\nO metal duro maciço oferece a maior vida útil única e é a escolha certa para materiais abrasivos e com revestimento espesso, mas, quando a lâmina se desgasta, a faca fica inutilizada. A faca com ponta de metal duro custa menos, dura menos por ciclo e permite a substituição da ponta: desde que o corpo esteja reto e alinhado e os assentos de brasagem estejam em boas condições, os insertos desgastados são substituídos e a faca volta a funcionar. Essa possibilidade de substituição da ponta costuma ser o fator decisivo quando a relação custo-benefício entre as duas opções é semelhante. Na construção com ponta, os insertos são fixados a quente sob condições controladas para que permaneçam unidos nas velocidades da rebobinadora, em vez de se soltarem durante o uso — a qualidade da soldagem, e não o tipo de metal duro, é o que limita a vida útil de uma faca com ponta mal fabricada.\n\n## O que precisamos para adequar à sua máquina\n\nAs facas inferiores são fabricadas sob medida para a máquina em todos os casos; portanto, as plataformas de rebobinadoras listadas são aquelas que vemos com mais frequência, e não um limite. Para solicitar um orçamento, envie o diâmetro externo (OD), o furo e a espessura da faca que você utiliza atualmente, a especificação da faca superior correspondente, o material que você está cortando, a velocidade da linha e o número de cortes. Caso algum desses dados seja desconhecido, envie a faca desgastada ou fotografias com um paquímetro em quadro — preferimos fazer engenharia reversa a partir de uma amostra do que fazer um orçamento com base em suposições. As lâminas são enviadas individualmente com o gume protegido e papel VCI contra corrosão, embaladas em caixotes para os diâmetros maiores, pois uma lâmina inferior que chega com o gume lascado é inútil, por melhor que tenha sido afiada.",
+      "Facas inferiores de reposição para rebobinadeiras cortadoras de papel. Projetos de copo, aresta dupla e ponta de metal duro, com furos, flanges e larguras personalizadas de acordo com o desenho.",
     link: "/products/slitter-rewinder-bottom-knives",
-    disambiguation:
-      "Trata-se de facas inferiores circulares que funcionam como um par de cisalhamento com uma faca superior em linhas de rebobinagem. Se você precisar, em vez disso, de bigornas planas para corte por esmagamento, consulte [Facas com bigorna ranhurada na parte inferior](/products/bottom-grooved-anvil-knives).",
-    compatibleMachines: [
-      "Beck",
-      "Bielomatik",
-      "Clark Aiken",
-      "DATM",
-      "Didde",
-      "ECH Will",
-      "Harris",
-      "Hamblett",
-      "Jagenberg",
-      "Langston",
-      "Lenox",
-      "Maxson",
-      "Miltex",
-      "Masson Scott",
-      "Pasaban",
-    ],
     specs: [
       {
+        label: "Tamanhos",
+        value: "OD 70–300 mm",
+      },
+      {
         label: "Material",
-        value: "Solid tungsten carbide / carbide-tipped / HSS",
+        value:
+          "52100, D2 , M2 HSS , PM HSS , metal duro ou WC-Co em corpo de aço",
       },
       {
-        label: "Outer Diameter",
-        value: "Φ250–Φ254 mm standard",
+        label: "Aplicações",
+        value:
+          "Rebobinadeiras cortadoras de papel e outras linhas de conversão de banda",
       },
       {
-        label: "Thickness",
-        value: "15 / 20 / 25 / 50 mm",
+        label: "Perfis",
+        value: "Copo, borda dupla ou anel de corte substituível",
       },
       {
-        label: "Face Finish",
-        value: "Mirror finished",
+        label: "Opções de metal duro",
+        value: "Construções inclinadas e embutidas para a borda de trabalho",
       },
       {
-        label: "Design Principle",
-        value: "Bottom knife harder than the top knife — burr and dust control",
+        label: "Montagem",
+        value: "Montagem em flange, furo chaveado ou furo de eixo liso",
       },
       {
-        label: "Materials Slit",
-        value: "Paper, film, foil and similar web substrates",
+        label: "Acabamento facial",
+        value: "Espelho finalizado",
       },
     ],
-    dimensionLabels: {
-      col0: "Item",
-      col1: "Diâmetro externo × Diâmetro interno (mm)",
-      col2: "Diâmetro interno (mm)",
-      col3: "Espessura T (mm)",
-      caption:
-        "* Tamanhos padrão das lâminas inferiores do rebobinador. O diâmetro interno, a espessura e a geometria do gume são adaptados à máquina — envie o diâmetro externo (OD), o diâmetro interno (ID) e a espessura (T) da lâmina que você utiliza atualmente, além das especificações da lâmina superior correspondente.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "25",
+    detailLayout: {
+      seoTitle:
+        "Facas inferiores cortadoras e rebobinadoras | Copo e Borda Dupla",
+      sizeRange: "OD 70–300 mm",
+      heroAlt:
+        "Facas inferiores do rebobinador circular com vários padrões de flange e furos de montagem",
+      specificationImage: {
+        src: "/images/products/slitter-detail/slitter-rewinder-bottom-knives-detail.webp",
+        alt: "Close das facas inferiores do rebobinador com faces de flange perfuradas e rebaixadas",
       },
-      {
-        spec: "2",
-        od: "Φ254",
-        id: "Φ195",
-        thickness: "50",
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
       },
-      {
-        spec: "3",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "15",
-      },
-      {
-        spec: "4",
-        od: "Φ250",
-        id: "Φ140",
-        thickness: "20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "A lâmina inferior deve ser sempre a mais dura do par. Dentro dessa regra, o grau é escolhido com base no grau de abrasividade do substrato e na necessidade de um corpo com ponta recarregável.",
-      rows: [
+      dimensionTables: [
         {
-          grade: "Sólido metal duro",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Lâminas abrasivas e com revestimento espesso; o maior intervalo entre as trocas",
-          tradeoff:
-            "O preço unitário é o mais alto, e a faca inteira é descartada quando o fio se desgasta",
+          id: "flange",
+          tabLabel: "Flange e borda dupla",
+          title: "Facas inferiores montadas em flange e de borda dupla",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Montagem ou borda",
+            "Referência",
+          ],
+          rows: [
+            [
+              "SR001211",
+              "105 × 80 × 15 mm",
+              "Flange",
+              "Série dimensional DIENES",
+            ],
+            [
+              "SR001212",
+              "130 × 90 × 20 mm",
+              "Flange",
+              "Série dimensional DIENES",
+            ],
+            [
+              "SR001213",
+              "190 × 138 × 15 mm",
+              "Duas lâminas",
+              "Tidland TID131393",
+            ],
+            [
+              "SR001214",
+              "130 × 100 × 30 mm",
+              "Duas lâminas",
+              "Tidland TID133503",
+            ],
+            [
+              "SR001215",
+              "250 × 188 × 15 mm",
+              "Duas lâminas",
+              "Tidland TID131395",
+            ],
+          ],
         },
         {
-          grade: "Com ponta de carboneto",
-          hardness: "HRA 89–91 na ponta",
-          bestFor:
-            "Papel comum e papelão — a melhor relação custo-duração, além de poderem ser reutilizados",
-          tradeoff:
-            "A qualidade da soldagem determina a vida útil; os insertos mal fixados se soltam com a velocidade",
+          id: "tipped",
+          tabLabel: "Borda de metal duro",
+          title: "Facas inferiores com lâmina cortante de metal duro",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Construção",
+            "Referência",
+          ],
+          rows: [
+            [
+              "SR001561",
+              "90.81 × 60.00 × 12.70 mm",
+              "Ponta de carboneto",
+              "Dusenbery 783533",
+            ],
+          ],
         },
         {
-          grade: "HSS",
-          hardness: "62–64 HRC",
-          bestFor:
-            "Pequenas tiragens, papéis não revestidos e macios, menor custo unitário",
-          tradeoff:
-            "A borda fica arredondada rapidamente às velocidades do rebobinador, que é onde começa a formação de poeira no rolo",
+          id: "keyed",
+          tabLabel: "Montagem de chaveta",
+          title: "Facas inferiores com chaveta",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Montagem",
+          ],
+          rows: [
+            ["SR001571", "70 × 45 × 10 mm", "Série de chaveta de 10 mm"],
+            ["SR001572", "80 × 50 × 10 mm", "Série de chaveta de 10 mm"],
+            ["SR001573", "108 × 80 × 20 mm", "Série de chaveta de 10 mm"],
+          ],
+        },
+        {
+          id: "additional-rewinder-knives",
+          tabLabel: "Tamanhos adicionais de faca rebobinadora",
+          title: "Tamanhos adicionais de faca rebobinadora",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Tipo de faca",
+          ],
+          rows: [
+            ["SR001845", "250 × 188 × 25 mm", "Faca inferior do rebobinador"],
+            ["SR001846", "254 × 195 × 50 mm", "Faca inferior do rebobinador"],
+            ["SR001847", "250 × 140 × 20 mm", "Faca inferior do rebobinador"],
+          ],
         },
       ],
-      outro:
-        "Seja qual for o grau que você escolher, mantenha a diferença de dureza em relação à lâmina superior. Igualar as duas durezas é um erro comum e caro — isso elimina o cisalhamento e faz com que você acabe esmagando a banda.",
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "OD 70–300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2 , M2 HSS , PM HSS , metal duro ou WC-Co em corpo de aço",
+        },
+        {
+          label: "Aplicações",
+          value:
+            "Rebobinadeiras cortadoras de papel e outras linhas de conversão de banda",
+        },
+        {
+          label: "Perfis",
+          value: "Copo, borda dupla ou anel de corte substituível",
+        },
+        {
+          label: "Opções de metal duro",
+          value: "Construções inclinadas e embutidas para a borda de trabalho",
+        },
+        {
+          label: "Montagem",
+          value: "Montagem em flange, furo chaveado ou furo de eixo liso",
+        },
+        {
+          label: "Acabamento facial",
+          value: "Espelho finalizado",
+        },
+      ],
     },
+    compatibleMachines: [
+      "DIENES",
+      "Tidland",
+      "Mario Cotta",
+      "Jagenberg",
+      "Valmet",
+      "Voith",
+      "Dusenbery",
+      "Cameron",
+    ],
     components: [
       {
-        id: "hardness-differential",
-        tag: "MECÂNICA DE CORTES",
-        title: "Deliberadamente mais duro do que a lâmina superior",
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Opções de arestas de trabalho em aço e metal duro",
         description:
-          "A lâmina inferior é propositalmente mais dura do que a lâmina superior com a qual se acopla. Essa diferença é o que faz com que o par realize o corte por cisalhamento, em vez de deformar a banda, e é a causa direta das bordas cortadas sem rebarbas e do baixo transporte de poeira para o rolo enrolado.",
+          "Sureay fornece facas inferiores de aço, metal duro e bordas de metal duro, dando aos convertedores de papel uma escolha de materiais e construções de ponta para seus conjuntos rebobinadores existentes.",
       },
       {
-        id: "mirror-face-finish",
-        tag: "ACABAMENTO DA SUPERFÍCIE",
-        title: "Superfície de trabalho com acabamento espelhado",
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Projetos de copo, borda dupla e anel substituível",
         description:
-          "Uma face polida desliza sobre a tela em vez de arrastar-se nela, o que mantém a fenda limpa e reduz o calor de atrito no ponto de corte. O acabamento da face é uma das primeiras coisas a se desgastar durante o uso e uma das últimas que os operadores verificam — uma face sem brilho levanta poeira muito antes que a própria borda esteja desgastada.",
+          "Facas tipo copo, perfis de borda dupla e anéis de corte substituíveis estão disponíveis com faces de trabalho acabadas, suportando a substituição do corpo da faca ou anel de corte específico que sua montagem exige.",
       },
       {
-        id: "hot-set-carbide",
-        tag: "CONSTRUÇÃO",
-        title: "Insertos de carboneto com endurecimento a quente controlado",
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Interfaces de montagem personalizadas para rebobinadeiras",
         description:
-          "Na construção com ponta removível, os insertos são fixados a quente em condições controladas, de modo que permaneçam firmemente fixados durante a operação em alta velocidade. A vantagem prática é um corpo com ponta removível: os insertos desgastados são substituídos e a faca volta a funcionar, em vez de ser descartada.",
+          "Flanges, furos chavetados, furos lisos e perfis de corte podem ser feitos de acordo com seu desenho ou amostra, atendendo a pedidos de substituição de rebobinadeiras existentes e conjuntos de facas mais antigos.",
       },
     ],
-    relatedBladeIds: [
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-      "tungsten-carbide-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Exemplo: Rebobinadora Jagenberg, lâmina inferior Φ250 × Φ188 × 25 mm, combinada com uma lâmina superior de Φ200. Corte transversal de papel revestido de 120 g/m² a 800 m/min, com 12 cortes. Observa-se a presença de poeira no rolo e uma borda ligeiramente com rebarbas.",
     faqs: {
       technical: [
         {
           question:
-            "Por que a lâmina inferior deveria ser mais dura do que a lâmina superior?",
+            "Qual faca inferior de reposição se adapta à minha rebobinadora cortadora?",
           answer:
-            "Isso porque um corte por cisalhamento precisa de um diferencial de dureza para se manter como tal. Quando as duas lâminas têm durezas próximas, o material na zona de cisalhamento se deforma em vez de se separar de forma limpa, e o resultado é uma borda de corte com rebarbas e fibras esmagadas que se transformam em pó no rolo. A lâmina inferior, mais dura, mantém uma geometria de corte estável, enquanto a lâmina superior, mais macia, arca com o desgaste — e é também por isso que a lâmina superior é aquela que você espera trocar com mais frequência. Equilibrar as durezas é um erro comum e caro.",
+            "Identifique o modelo da máquina ou a referência da peça e compare o diâmetro externo, o furo, a largura, os detalhes do flange e os furos de fixação com o conjunto instalado. Faixas inferiores, facas inferiores e facas femininas são nomes comuns para o membro inferior de um par de corte por cisalhamento. O perfil de trabalho e o arranjo de montagem estabelecem um ajuste mais preciso do que apenas o nome.",
         },
         {
           question:
-            "Está entrando poeira na bobina de ferimento. Onde devo procurar primeiro?",
+            "As facas inferiores personalizadas podem ser fornecidas para uma rebobinadeira mais antiga sem substituir a faca superior?",
           answer:
-            "Na própria fenda, antes dos limpadores de banda e das barras estáticas. Uma lâmina inferior cujo gume esteja arredondado ou cujo acabamento da face esteja embotado deixa de cortar e passa a esmagar, e a fibra esmagada vai diretamente para o rolo — muitas vezes aparecendo como um defeito duas etapas depois. O indício está no momento em que o problema ocorre: poeira que apareceu gradualmente aponta para a lâmina; poeira que apareceu após uma mudança de tipo de papel aponta para o substrato. Inspecione o fio sob ampliação e verifique o acabamento da superfície, não apenas o afiamento pelo toque.",
+            "Sim. Sureay pode fazer a faca inferior de acordo com um desenho ou amostra, mantendo uma faca superior útil. Defina o furo, flange, largura de trabalho e perfil de corte, e inclua as dimensões da faca superior, condição e histórico de reafiação. Estes detalhes estabelecem a posição de trabalho da faca inferior dentro da montagem existente.",
         },
         {
           question:
-            "Posso encomendar facas inferiores sem substituir as facas superiores?",
+            "Qual a diferença entre as facas de copo, de borda dupla e de fundo de anel substituível?",
           answer:
-            "Sim, e essa é a forma padrão como elas são adquiridas. As lâminas inferiores geralmente duram muito mais do que as superiores, portanto, substituí-las no mesmo ciclo representa um desperdício de ferramentas ainda em bom estado. Forneça-nos o diâmetro externo (OD), o diâmetro interno (ID) e a espessura da lâmina inferior, bem como as especificações da lâmina superior correspondente, e nós ajustaremos a geometria de encaixe e o diferencial de dureza de acordo com o que vocês já utilizam.",
+            "Uma faca para copos usa um corpo moldado para posicionar sua borda de trabalho. Uma faca de fio duplo fornece duas faces de corte funcionais, enquanto um conjunto de anel substituível separa o anel de corte de seu suporte. Selecione a construção exigida pelo suporte instalado. Para uma estação projetada em torno de várias posições de corte em um corpo, consulte [Facas de fundo multi-ranhuras](/products/groove-bottom-knives) .",
         },
         {
           question:
-            "É possível refazer a ponta de facas com ponta de carboneto que estão gastas?",
+            "Uma faca inferior rebobinadora deve usar aço, metal duro ou borda de metal duro?",
           answer:
-            "Sim, desde que o corpo esteja reto e alinhado e que os assentos de soldagem estejam em boas condições. A troca da ponta é consideravelmente mais barata do que uma faca nova e é o motivo para se optar por facas com ponta substituível em vez das de metal duro maciço quando os custos são semelhantes. As lâminas de metal duro maciço não podem ter a ponta substituída — quando o fio se desgasta, a lâmina está inutilizada, o que é a contrapartida que você aceita em troca da vida útil mais longa.",
+            "Para corte de papel, comece com a construção da faca existente e a faca superior retida. Vale a pena avaliar uma aresta de trabalho de metal duro quando o desgaste gradual leva a trocas de faca; chips recorrentes ou danos de contato, ligue para verificar o par e o suporte primeiro. Corpos sólidos de metal duro e aço com anéis de corte de metal duro têm construções diferentes, portanto, mantenha a montagem necessária e a geometria de trabalho ao comparar alternativas.",
+        },
+        {
+          question:
+            "Por que a borda do papel ainda fica ruim depois de substituir uma faca inferior?",
+          answer:
+            "A faca superior mantida, a estabilidade do suporte, a condição da face de trabalho e as configurações de corte ainda podem afetar a borda do papel. Inspecione ambos os membros do par e suas faces de montagem, incluindo qualquer geometria alterada pela reafiação. Comparar o mesmo tipo de papel nas configurações normais ajuda a distinguir a faca de reposição de outras condições na estação de corte.",
+        },
+        {
+          question:
+            "Quando uma faca inferior do rebobinador pode ser reafiada em vez de substituída?",
+          answer:
+            "A reafiação pode ser considerada para um projeto de faca inferior cuja geometria de trabalho possa ser restaurada dentro das dimensões restantes permitidas. Avalie a face de trabalho danificada e sua relação com a faca superior em relação ao desenho original. As facas tipo copo e os anéis de corte substituíveis exigem suas próprias verificações de geometria e tolerância antes de decidir entre reafiação e substituição.",
         },
       ],
-      company: [
+      company: [],
+    },
+    relatedBladeIds: [
+      "rotary-slitter-knives-paper",
+      "groove-bottom-knives",
+      "bottom-grooved-anvil-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenha facas de slot de reposição para sua impressora-slotter ou dobradora-coladora flexográfica, com arcos personalizados, furos de montagem e perfis de corte. Envie Sureay um desenho ou amostra para um orçamento de facas macho, contrafacas e espaçadores correspondentes.",
+    id: "corrugated-slotter-knives",
+    seoDescription:
+      "Arcos machos lisos ou serrilhados e contrafacas fêmeas para abertura de abas corrugadas. Solicite lâminas de reposição feitas de acordo com a largura do slot e o desenho de montagem.",
+    name: "Facas de abertura de rasgos para papelão ondulado",
+    fullName: "Facas macho e fêmea para slotter de papelão ondulado",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Facas de abertura de rasgos para papelão ondulado",
+    image: "/images/products/slitter-detail/box-slotting-knives-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Facas ranhuradoras macho e fêmea de reposição para máquinas de caixa de papelão ondulado. Arcos lisos ou serrilhados, contra-facas e padrões de montagem personalizados no desenho.",
+    link: "/products/corrugated-slotter-knives",
+    specs: [
+      {
+        label: "Material",
+        value:
+          "D2 , M2 HSS , 9CrSi , 9Mn2V , 52100 ou contrafacas com ponta de metal duro",
+      },
+      {
+        label: "Aplicações",
+        value:
+          "Ranhura de aba corrugada em dobradoras-coladoras flexográficas e ranhuradoras de impressora",
+      },
+      {
+        label: "Dureza típica",
+        value:
+          "D2 58–62 HRC · M2 62–65 HRC · Aresta de trabalho de metal duro 89–92 HRA",
+      },
+      {
+        label: "Lâmina masculina",
+        value:
+          "Arco liso ou serrilhado, com segmentos de costura e cantos disponíveis",
+      },
+      {
+        label: "Assembleia feminina",
+        value: "Duas metades de contrafaca com espaçador correspondente",
+      },
+      {
+        label: "Montagem",
+        value: "Furos redondos, furos escareados ou ranhuras de ajuste de arco",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Facas de slotter para papelão ondulado | Macho e fêmea",
+      sizeRange: "Arco série R105 – R406 mm",
+      heroAlt:
+        "Componentes da ranhuradora corrugada em forma de arco com furos de montagem redondos e ranhuras alongadas",
+      specificationImage: {
+        src: "/images/products/slitter-detail/box-slotting-knives-detail-white.webp",
+        alt: "Detalhe dos segmentos curvos da escateladora mostrando furos redondos de fixação e ranhuras de ajuste de arco",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
         {
-          question:
-            "O que é necessário para fazer um orçamento de uma lâmina inferior?",
-          answer:
-            "Diâmetro externo (OD), diâmetro interno e espessura da lâmina que você utiliza atualmente, as especificações da lâmina superior correspondente, o material que está sendo cortado, a velocidade da linha de produção e o número de cortes. Caso algum desses dados seja desconhecido, envie a lâmina desgastada ou fotografias com um paquímetro em quadro — preferimos fazer a engenharia reversa a partir de uma amostra do que fornecer um orçamento com base em suposições.",
+          id: "male",
+          tabLabel: "Lâminas Masculinas",
+          title: "Lâminas Slotter Masculinas",
+          columns: [
+            "Nº do item",
+            "R externo × R interno × T",
+            "Ângulo do arco",
+            "Borda",
+          ],
+          rows: [
+            [
+              "SR001601",
+              "105 × 58 × 5 mm",
+              "Ver desenho",
+              "Simples ou serrilhado",
+            ],
+            [
+              "SR001602",
+              "113 × 63.5 × 7.5 mm",
+              "Ver desenho",
+              "Simples ou serrilhado",
+            ],
+            [
+              "SR001603",
+              "115 × 58 × 8 mm",
+              "Ver desenho",
+              "Simples ou serrilhado",
+            ],
+            ["SR001604", "168.7 × 120.3 × 8 mm", "36.2°", "Ver desenho"],
+            ["SR001605", "213.5 × 130 × 7.5 mm", "20.5°", "Ver desenho"],
+            ["SR001606", "213.5 × 130 × 7.5 mm", "72°", "Ver desenho"],
+            ["SR001607", "212 × 159 × 10 mm", "60°", "Ver desenho"],
+            ["SR001608", "281.5 × 237.5 × 7.2 mm", "88°", "Ver desenho"],
+            ["SR001609", "406 × 316 × 7.9 mm", "Ver desenho", "Ver desenho"],
+          ],
         },
         {
-          question:
-            "Vocês fornecem peças para marcas de rebobinadoras que não constam na lista desta página?",
-          answer:
-            "Sim. As plataformas listadas são as que vemos com mais frequência, mas não representam um limite — as lâminas inferiores são fabricadas sob medida para a máquina em todos os casos. Qualquer cortadora-rebobinadora elétrica está dentro do escopo, desde que tenhamos as dimensões de montagem e as especificações da lâmina superior correspondente.",
-        },
-        {
-          question: "Como eles são embalados?",
-          answer:
-            "Em embalagens individuais, com a lâmina protegida e papel VCI contra corrosão; para os diâmetros maiores, em uma caixa sob medida. As lâminas inferiores que chegam com o fio danificado são inutilizáveis, independentemente de como foram fabricadas; portanto, a embalagem é especificada para o transporte, e não para o armazenamento.",
+          id: "female",
+          tabLabel: "Facas Femininas",
+          title: "Contrafacas femininas",
+          columns: [
+            "Nº do item",
+            "Configuração",
+            "Dimensões",
+            "Montagem ou referência",
+          ],
+          rows: [
+            [
+              "SR001610",
+              "Contrafaca simples",
+              "Faixa de diâmetro externo 90–450 mm",
+              "Montagem e espessura conforme desenho",
+            ],
+            [
+              "SR001611",
+              "Contra-faca dividida",
+              "Faixa de diâmetro externo 90–450 mm",
+              "Metades inferiores lisas, espaçador no desenho",
+            ],
+            [
+              "SR001612",
+              "Conjunto inferior com ponta de carboneto",
+              "Para slot e desenho correspondentes",
+              "Confirme o eixo inferior e a lâmina superior",
+            ],
+          ],
         },
       ],
+    },
+    compatibleMachines: [
+      "BOBST",
+      "Martin",
+      "EMBA",
+      "Mitsubishi EVOL",
+      "Isowa",
+      "Göpfert",
+      "MarquipWardUnited",
+      "TCY",
+      "Shinko",
+      "Dongfang",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Seleção",
+        title:
+          "Materiais selecionados por posição de faca masculina e feminina",
+        description:
+          "Sureay fornece facas escateladoras de aço e contrafacas com ponta de metal duro, permitindo que componentes macho e fêmea sejam especificados separadamente para o material e construção exigidos por sua montagem de escatelação.",
+      },
+      {
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Arcos lisos e serrilhados com montagem personalizada",
+        description:
+          "Arcos lisos e serrilhados, segmentos de costura e segmentos de canto estão disponíveis com furos redondos, furos escareados ou ranhuras de ajuste feitas para a cabeça da ranhuradora existente.",
+      },
+      {
+        id: "selection-3",
+        tag: "Aplicação",
+        title:
+          "Facas masculinas, facas femininas e espaçadores correspondentes",
+        description:
+          "Solicite arcos machos de reposição, metades de contrafaca fêmeas e espaçadores correspondentes individualmente ou em conjunto, com cada componente definido para as peças que você planeja reter.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Como as facas de reposição são combinadas com uma máquina de conversão de caixas?",
+          answer:
+            "Identifique a estação impressora-slotter ou dobradora-coladora flexográfica e se você precisa de um arco macho, contra-faca fêmea ou espaçador. Compare a geometria do arco, espessura, padrão de montagem e mão instalada com a peça existente. As facas Slotter formam ranhuras nas abas durante a conversão da caixa; [lâminas de corte-corrugador](/products/corrugated-slitter-scorer-blades) cortam a placa longitudinalmente na extremidade seca do corrugador e usam geometria diferente. Para ranhuras em cartão cinza usadas para fazer caixas rígidas, consulte [Carbide Box V-Grooving Knives](/products/box-slotting-knives) .",
+        },
+        {
+          question:
+            "Qual é a diferença entre facas slotter masculinas e femininas?",
+          answer:
+            "O arco macho entra no conjunto da faca fêmea para formar a ranhura da placa. Duas contrafaces fêmeas e seu espaçador estabelecem a abertura cooperante. Um pedido de substituição deve identificar qual componente está sendo trocado e as dimensões das peças retidas, para que a lâmina macho e a abertura fêmea permaneçam definidas como uma combinação funcional.",
+        },
+        {
+          question: "Devo escolher uma lâmina macho lisa ou serrilhada?",
+          answer:
+            "Para uma substituição igual, mantenha o formato da borda lisa ou serrilhada usada pela cabeça da ranhuradora instalada. A alteração do formato da borda requer a verificação do arco macho com a abertura fêmea, especificação da placa e requisitos de qualidade da ranhura. Especifique a forma da aresta pretendida no desenho para que a substituição não seja identificada apenas pelas dimensões do arco.",
+        },
+        {
+          question:
+            "Por que as ranhuras corrugadas têm bordas rasgadas ou larguras irregulares?",
+          answer:
+            "Bordas rasgadas da ranhura ou variação de largura podem envolver faces de corte desgastadas ou a forma como as cabeças macho e fêmea funcionam juntas. Verifique a borda macho, ambas as faces fêmeas, o espaçador, o alinhamento do cabeçote e a excentricidade em relação aos requisitos de configuração da máquina. Compare o defeito nas posições das ranhuras antes de decidir quais facas ou componentes de suporte precisam ser substituídos.",
+        },
+        {
+          question:
+            "Quando uma faca ranhuradora fêmea com ponta de carboneto deve ser considerada?",
+          answer:
+            "Considere contrafacas com ponta de metal duro quando o desgaste recorrente das faces de corte fêmea for o principal problema de substituição, após verificar o alinhamento da cabeça, o desvio e a folga de acoplamento. Mantenha a geometria da lâmina macho e a abertura fêmea consistentes com a montagem original. Compare o padrão de desgaste e as condições operacionais da faca de aço existente ao especificar a alternativa com ponta de metal duro.",
+        },
+        {
+          question:
+            "Os arcos de slotter personalizados podem ser feitos a partir de um desenho ou amostra?",
+          answer:
+            "Sim. Sureay pode reproduzir arcos com raios internos e externos especificados, ângulo de arco, espessura, formato de borda e furos ou ranhuras de montagem. Uma amostra ajuda a identificar o perfil e a mão instalados; as novas dimensões pretendidas devem levar em conta o desgaste da amostra. Identifique o conjunto fêmea correspondente e quais segmentos de arco são necessários.",
+        },
+        {
+          question: "As facas macho e fêmea devem ser substituídas juntas?",
+          answer:
+            "Eles podem ser encomendados separadamente quando os componentes retidos permanecerem utilizáveis ​​e sua geometria correspondente for conhecida. Verifique ambas as contrafaces fêmeas e o espaçador, bem como o arco macho. A reposição necessita da correta relação com a abertura fêmea, além de combinar com o padrão de montagem.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenha lâminas de corte de palha de papel de reposição com furos, espessuras e perfis de borda personalizados para seu cortador de linha de enrolamento. Compartilhe seu desenho ou amostra com Sureay para obter um orçamento sobre o material da lâmina e opções de revestimento para sua estação.",
+    id: "paper-straw-slitting-blades",
+    name: "Facas para corte de canudos de papel",
+    fullName: "Facas para corte de canudos de papel",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Facas para corte de canudos de papel",
+    image: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Substituição facas circulares para corte e recorte de palha de papel. Opções de metal duro ou M2 HSS , furos e perfis personalizados e revestimentos selecionados para a linha.",
+    link: "/products/paper-straw-slitting-blades",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "DE padrão 88–100 mm",
+      },
+      {
+        label: "Material",
+        value:
+          "Metal duro de grão fino, M2 HSS ou zircônia, dependendo da estação",
+      },
+      {
+        label: "Aplicações",
+        value: "Corte de palha de papel e corte em linhas sinuosas",
+      },
+      {
+        label: "Revestimentos opcionais",
+        value: "DLC, TiN, TiAlN ou CrN por lâmina e aplicação",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lâminas de corte de palha de papel | Facas de reposição",
+      sizeRange: "DE padrão 88–100 mm",
+      heroAlt:
+        "Faca circular para cortar palha de papel com furo central pequeno",
+      specificationImage: {
+        src: "/images/products/slitter-detail/paper-straw-slitting-blades-detail.webp",
+        alt: "Lâminas de corte circulares finas mostrando as faces polidas e arestas de corte",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "straw",
+          tabLabel: "Facas de palha de papel",
+          title: "Facas de palha de papel",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Estação",
+          ],
+          rows: [
+            ["SR001651", "100 × 15 × 0.20 mm", "Guarnição de palha de papel"],
+            ["SR001652", "100 × 15 × 0.30 mm", "Guarnição de palha de papel"],
+            ["SR001653", "100 × 16 × 0.30 mm", "Guarnição de palha de papel"],
+            ["SR001654", "100 × 45 × 0.30 mm", "Guarnição de palha de papel"],
+          ],
+        },
+        {
+          id: "additional-straw-knives",
+          tabLabel: "Tamanhos adicionais de faca de palha",
+          title: "Tamanhos adicionais de faca de palha",
+          columns: [
+            "Nº do item",
+            "Dimensões (Diâmetro Externo × Diâmetro Interno × Largura)",
+            "Aplicação",
+          ],
+          rows: [
+            ["SR001848", "88 × 16 × 0.26 mm", "Corte de palha de papel"],
+            ["SR001849", "89 × 15 × 0.30 mm", "Corte de palha de papel"],
+            ["SR001850", "90 × 15 × 0.30 mm", "Corte de palha de papel"],
+            ["SR001851", "100 × 15 × 0.15 mm", "Corte de palha de papel"],
+            ["SR001852", "100 × 45 × 0.20 mm", "Corte de palha de papel"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "DE padrão 88–100 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Metal duro de grão fino, M2 HSS ou zircônia, dependendo da estação",
+        },
+        {
+          label: "Aplicações",
+          value: "Corte de palha de papel e corte em linhas sinuosas",
+        },
+        {
+          label: "Revestimentos opcionais",
+          value: "DLC, TiN, TiAlN ou CrN por lâmina e aplicação",
+        },
+      ],
+    },
+    compatibleMachines: ["Jota", "KETE"],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Opções de materiais de metal duro, HSS e cerâmica",
+        description:
+          "As opções de metal duro de grão fino, HSS M2 e zircônia dependente da estação oferecem a você uma escolha de materiais de lâmina para corte de palha moldada, com a construção especificada para sua estação de corte existente.",
+      },
+      {
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Arestas de corte personalizadas e revestimentos opcionais",
+        description:
+          "Sureay fornece perfis de corte personalizados com revestimentos opcionais DLC, TiN, TiAlN ou CrN selecionados para o material da lâmina e aplicação, para que a geometria da borda e a configuração da superfície possam ser especificadas separadamente.",
+      },
+      {
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Facas de reposição para corte de palha formada",
+        description:
+          "As facas circulares de reposição são feitas para aparar e cortar canudos de papel formados, com furos, seções de lâmina e bordas de trabalho definidas para o suporte em sua linha de enrolamento.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Sureay pode fazer uma faca de reposição para minha estação de corte de palha de papel?",
+          answer:
+            "Sim. Um desenho ou amostra pode definir o furo, a espessura e o perfil de corte exigidos pelo seu porta-corte ou aparador. Inclua o material atual da lâmina, a espessura da parede do canudo e a construção do papel. Esses detalhes distinguem facas que compartilham um diâmetro externo, mas atendem a diferentes arranjos de corte em uma linha de produção de palha.",
+        },
+        {
+          question:
+            "As lâminas de corte de palha de papel são iguais às facas de corte de papel?",
+          answer:
+            "Lâminas de corte de palha de papel cortam ou aparam o tubo formado em sua linha de produção. [Facas cortadoras de papel](/products/rotary-slitter-knives-paper) dividem uma folha contínua de papel plano em tiras mais estreitas. Estabeleça se a peça necessária funciona na folha de entrada ou na palha acabada e, em seguida, identifique seu suporte e perfil de corte.",
+        },
+        {
+          question:
+            "Como o desgaste da lâmina deve orientar a seleção do material da faca de palha de papel?",
+          answer:
+            "Use a estação de corte e a condição da lâmina usada como ponto de partida. Compare separadamente o desgaste gradual da borda, lascas e resíduos de adesivo e, em seguida, avalie a alteração do material em relação ao problema observado. Mantenha o diâmetro necessário, a seção da lâmina e a geometria do suporte definidos ao considerar uma alternativa à lâmina atual.",
+        },
+        {
+          question:
+            "Por que as pontas dos canudos de papel estão irregulares ou distorcidas?",
+          answer:
+            "Inspecione a borda cortante, o acúmulo de adesivo e o suporte do tubo juntamente com a contagem de camadas de papel, a espessura da parede e a condição do adesivo. Compare o corte feito por uma lâmina limpa com a lâmina afetada nas configurações normais da máquina. Isto fornece uma imagem mais útil das condições de corte do que julgar apenas a nitidez.",
+        },
+        {
+          question:
+            "O que deve orientar a seleção do revestimento quando o adesivo se acumula nas facas de palha?",
+          answer:
+            "Selecione o revestimento juntamente com o material da lâmina, sistema adesivo e padrão de resíduo na estação de corte. Registre onde ocorre o acúmulo e compare-o com a lâmina original sob condições normais de produção. Fotografias de lâminas usadas e amostras cortadas ajudam a definir os requisitos de superfície ao considerar uma mudança de revestimento.",
+        },
+        {
+          question:
+            "Quando uma lâmina de corte de canudo de papel deve ser substituída?",
+          answer:
+            "Substitua uma lâmina quando danos na borda ou desgaste contínuo impedirem o corte final limpo necessário ou quando suas dimensões restantes estiverem fora da faixa de trabalho especificada da máquina. Verifique os resíduos de adesivo e o suporte do tubo ao comparar amostras cortadas nas mesmas condições de produção. A substituição baseia-se na condição da lâmina e na qualidade de corte necessária, em vez de um intervalo fixo de calendário.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Solicite facas de fundo multiranhuras feitas de acordo com seu padrão de fenda, com passo personalizado, layout de borda de trabalho e montagem de eixo. Envie Sureay seu desenho e programação de largura para um orçamento em uma configuração de peça única ou anel dividido.",
+    id: "groove-bottom-knives",
+    seoDescription:
+      "Anéis de corte multiranhuras para corte por cisalhamento. Passo de ranhura de 5 mm e diâmetro externo de até 406 mm, com configurações de peça única e divididas conforme desenho.",
+    name: "Contrafacas inferiores multirranhuras",
+    fullName: "Facas inferiores com múltiplas ranhuras e anéis de corte",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Contrafacas inferiores multirranhuras",
+    image: "/images/products/slitter-detail/groove-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Facas de fundo multiranhuras personalizadas para corte de cisalhamento rebobinador. Anéis de corte de reposição com passo de ranhura, largura e furo especificados e construção sólida ou dividida.",
+    link: "/products/groove-bottom-knives",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "DE até 406 mm",
+      },
+      {
+        label: "Opções de materiais",
+        value:
+          "Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS ou construção com ponta de metal duro",
+      },
+      {
+        label: "Passo do sulco",
+        value:
+          "A partir de 5mm; a contagem de passos e ranhuras varia de acordo com a configuração da faca",
+      },
+      {
+        label: "Construção",
+        value: "Anel de peça única ou anel dividido de duas peças",
+      },
+      {
+        label: "Arestas de corte",
+        value: "Ombro de trabalho simples ou duplo",
+      },
+      {
+        label: "Montagem",
+        value:
+          "Furo simples para um eixo pneumático expansível ou parafuso de fixação para um eixo sólido",
+      },
+      {
+        label: "Aplicações",
+        value:
+          "Corte por cisalhamento de papel, cartão, filme e folha com múltiplas posições de fenda",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Facas de fundo com múltiplas ranhuras | Anéis de corte inferior",
+      sizeRange: "DE até 406 mm",
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "DE até 406 mm",
+        },
+        {
+          label: "Opções de materiais",
+          value:
+            "Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS ou construção com ponta de metal duro",
+        },
+        {
+          label: "Passo do sulco",
+          value:
+            "A partir de 5mm; a contagem de passos e ranhuras varia de acordo com a configuração da faca",
+        },
+        {
+          label: "Construção",
+          value: "Anel de peça única ou anel dividido de duas peças",
+        },
+        {
+          label: "Arestas de corte",
+          value: "Ombro de trabalho simples ou duplo",
+        },
+        {
+          label: "Montagem",
+          value:
+            "Furo simples para um eixo pneumático expansível ou parafuso de fixação para um eixo sólido",
+        },
+        {
+          label: "Aplicações",
+          value:
+            "Corte por cisalhamento de papel, cartão, filme e folha com múltiplas posições de fenda",
+        },
+      ],
+      heroAlt:
+        "Anel de faca inferior com múltiplas ranhuras mostrando ranhuras retificadas paralelas",
+      specificationImage: {
+        src: "/images/products/slitter-detail/groove-bottom-knives-detail.webp",
+        alt: "Anel multiranhuras mostrando o furo escalonado, as ranhuras e a largura total do corpo",
+      },
+      inlineRfq: {
+        title: "Precisa de um tamanho que não está listado?",
+        description:
+          "Envie um desenho, uma amostra desgastada ou apenas o modelo da sua máquina. Responderemos com um orçamento em até 24 horas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+      dimensionTables: [
+        {
+          id: "multi-groove",
+          tabLabel: "Contrafacas inferiores multirranhuras",
+          title: "Tamanhos de faca inferior com múltiplas ranhuras",
+          columns: [
+            "Nº do item",
+            "Diâmetro externo (mm)",
+            "Opções de furo (mm)",
+            "Opções de largura (mm)",
+          ],
+          rows: [
+            ["SR001701", "150", "60 / 80 / 90", "39 / 49 / 50"],
+            ["SR001702", "130", "100 / 110", "50 / 100"],
+            ["SR001703", "150", "120 / 130", "50 / 100"],
+            ["SR001704", "180", "150", "50 / 100"],
+          ],
+        },
+        {
+          id: "multi-groove-configurations",
+          tabLabel: "Configurações de anel e eixo",
+          title: "Configurações de anel e eixo",
+          columns: [
+            "Nº do item",
+            "Diâmetro externo (mm/pol.)",
+            "Configuração",
+            "Eixo / Montagem",
+            "Passo/borda de trabalho",
+          ],
+          rows: [
+            [
+              "SR001853",
+              "Até Φ406 (16 polegadas)",
+              "Anel multiranhuras — furo liso",
+              "Eixo de ar expansível",
+              "Passo a partir de 5 mm",
+            ],
+            [
+              "SR001854",
+              "Até Φ406 (16 polegadas)",
+              "Anel multiranhuras – parafuso de fixação",
+              "Eixo inferior sólido",
+              "Passo a partir de 5 mm",
+            ],
+            [
+              "SR001855",
+              "Até Φ406 (16 polegadas)",
+              "Smooth spacer ring",
+              "Eixo pneumático ou sólido",
+              "Passo a partir de 5 mm",
+            ],
+            [
+              "SR001856",
+              "Até Φ406 (16 polegadas)",
+              "Smooth spacer ring",
+              "Eixo pneumático ou sólido",
+              "No groove — sets spacing",
+            ],
+            [
+              "SR001857",
+              "Ver desenho",
+              "Smooth spacer ring",
+              "Eixo pneumático ou sólido",
+              "No groove — sets spacing",
+            ],
+            [
+              "SR001858",
+              "Ver desenho",
+              "Anel espaçador liso",
+              "Eixo pneumático ou sólido",
+              "Sem ranhura — define o espaçamento",
+            ],
+          ],
+        },
+      ],
+    },
+    compatibleMachines: ["Kampf", "Göbel"],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Seleção",
+        title: "Ombros de trabalho com bordas de aço e metal duro",
+        description:
+          "Construções com pontas de aço e metal duro estão disponíveis para facas de fundo multiranhuras, oferecendo opções definidas de materiais de borda de trabalho, mantendo a geometria do anel exigida pela sua estação de corte.",
+      },
+      {
+        id: "selection-2",
+        tag: "Configuração",
+        title: "Passo personalizado e layouts de ponta",
+        description:
+          "Sureay cria padrões de ranhuras, larguras de corpo e layouts de ombros simples ou duplos de acordo com o desenho, permitindo que os blocos de substituição reproduzam as posições de corte exigidas pela sua programação de largura de fenda.",
+      },
+      {
+        id: "selection-3",
+        tag: "Aplicação",
+        title: "Projetos de montagem de peça única e dividida",
+        description:
+          "Anéis bipartidos de peça única e de duas peças estão disponíveis com furos lisos para eixos pneumáticos expansíveis ou travamento por parafuso para eixos sólidos, especificados para se adequarem ao arranjo de montagem existente.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Quais dimensões definem um bloco de faca multiranhuras de substituição?",
+          answer:
+            "Defina as posições de corte, localização da primeira aresta, largura total, diâmetro externo, furo e método de travamento em conjunto. Bigornas com múltiplas ranhuras, blocos de facas e cortadores inferiores descrevem um corpo de corte inferior, mas não estabelecem sua montagem ou disposição das bordas. Identifique também a faca superior correspondente e o método de corte: uma luva de suporte de navalha ranhurada desempenha uma função diferente.",
+        },
+        {
+          question:
+            "Como devem ser especificados o passo da ranhura e as posições das arestas de corte?",
+          answer:
+            "Passo é a distância entre arestas de corte correspondentes em ranhuras adjacentes. Marque a primeira aresta de trabalho a partir de um ponto de referência axial comum e depois mostre as restantes posições de corte e a largura total do corpo. A largura da abertura da ranhura é uma medida separada; não define a distância entre as arestas de corte.",
+        },
+        {
+          question:
+            "Sureay pode fazer um bloco de faca com um padrão de largura de fenda personalizado?",
+          answer:
+            "Sim. Sureay pode fazer o layout da ranhura, a contagem da borda de trabalho, a largura do corpo e a montagem do eixo de acordo com seu desenho. Especifique cada posição de corte a partir do mesmo ponto de referência axial e inclua a faca superior correspondente. Identifique as arestas de corte ativas no padrão de fenda pretendido para que o bloco de substituição reproduza o layout necessário.",
+        },
+        {
+          question:
+            "Quando devo escolher um anel dividido em vez de um anel de peça única?",
+          answer:
+            "Escolha de acordo com a disposição do eixo e o acesso disponível para instalação ou remoção. Um anel dividido pode fornecer acesso onde a montagem acomoda essa construção, enquanto suas juntas e recursos de travamento devem se adequar ao projeto existente. Mantenha o perfil de corte necessário, o ajuste do furo e as posições da aresta de trabalho definidos para qualquer uma das opções.",
+        },
+        {
+          question:
+            "O que devo verificar quando a qualidade da fenda varia em um bloco multiranhuras?",
+          answer:
+            "Compare a faca superior e o ombro de trabalho em cada posição de corte afetada, incluindo sua condição, emparelhamento de material e geometria de trabalho. Revise a montagem, o movimento da faca e qualquer desbaste anterior ao longo do padrão de fenda. Registrar quais posições produzem o defeito ajuda a concentrar as verificações no par de facas relevante e nas condições de montagem.",
+        },
+        {
+          question:
+            "Como o material da borda de trabalho deve ser escolhido quando algumas posições de fenda se desgastam mais rapidamente?",
+          answer:
+            "Para linhas de enrolamento de papel, compare os ombros de trabalho afetados com as facas superiores correspondentes antes de trocar o material. Separe o desgaste gradual de cavacos ou danos associados ao movimento, geometria ou retificação da faca. Uma vez estabelecidos o par e as condições de montagem, compare a configuração atual da ponta de aço ou metal duro com o padrão de desgaste real e os requisitos de produção.",
+        },
+        {
+          question:
+            "O que um número de item identifica ao solicitar um bloco de substituição?",
+          answer:
+            "O número do item identifica a linha ou série do catálogo usada como referência para seu pedido. Confirme o furo selecionado, a largura do corpo, o padrão da ranhura e a faca superior correspondente no desenho do pedido; algumas entradas cobrem opções de tamanho ou layouts feitos sob medida. Utilize a referência do item junto com esse desenho e sua revisão para compras repetidas.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    id: "stationary-scrap-shear-blades",
+    name: "Facas para tesouras estacionárias de sucata",
+    fullName: "Facas para tesouras fixas de pórtico para sucata metálica",
+    seoTitle: "Facas para tesouras fixas de pórtico para sucata metálica",
+    seoDescription:
+      "Encomende blocos de facas móveis montados em parafusos e contrafacas fixas para tesouras de sucata de pórtico estacionárias. Escolha o aço 1.2746 ou 1.2767 e envie seu desenho de montagem.",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Facas para tesouras estacionárias de sucata",
+    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Pórtico de reposição e sucata estacionária facas de cisalhamento em aço 1.2746 ou 1.2767. Facas móveis e contrafacas feitas de acordo com o desenho de montagem especificado.",
+    link: "/products/stationary-scrap-shear-blades",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "260–550 mm",
+      },
+      {
+        label: "Opções de materiais",
+        value: "Aço ferramenta 1.2746 ou 1.2767",
+      },
+      {
+        label: "Posições de faca",
+        value: "Facas de corte móveis e contrafacas fixas",
+      },
+      {
+        label: "Montagem",
+        value: "Blocos de faca montados em parafusos",
+      },
+      {
+        label: "Aplicação",
+        value: "Tesouras de sucata estacionárias e tesouras de pórtico",
+      },
+    ],
+    compatibleMachines: [
+      "Danieli Henschel",
+      "Metso-Lindemann",
+      "Lefort",
+      "Becker-Leimbach",
+    ],
+    compatibleMachinesIntro:
+      "Substitua facas móveis e contrafacas fixas em sua tesoura de sucata estacionária por blocos de facas feitos com desenhos da Sureay . Solicite peças individuais ou um conjunto completo em aço ferramenta 1.2746 ou 1.2767 e solicite um orçamento para sua instalação. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "stationary-scrap-shear-blades-1",
+        tag: "Assento de faca",
+        title: "Opções de aço ferramenta 1.2746 e 1.2767",
+        description:
+          "Sureay oferece essas opções de aço para blocos de facas de cisalhamento estacionários, permitindo que os requisitos de material sejam especificados em torno da taxa de sucata e do desgaste ou dano observado nas facas existentes.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-2",
+        tag: "Serviço de sucata",
+        title: "Facas Móveis e Contra Facas Fixas",
+        description:
+          "As facas de corte e contrafacas de reposição podem ser fornecidas individualmente ou como conjunto necessário, com cada bloco identificado por sua posição dentro do conjunto de cisalhamento.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-3",
+        tag: "Arranjo de faca",
+        title: "Blocos personalizados para assentos de faca existentes",
+        description:
+          "Os blocos de facas listados têm 260–550 mm de comprimento. Sureay faz os recessos, faces de assentamento e padrões de parafusos de acordo com seu desenho, incluindo blocos com o mesmo comprimento e largura, mas diferentes espessuras ou detalhes de montagem.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Sureay pode fornecer uma contrafaca ou um conjunto completo de facas?",
+          answer:
+            "Sim. Uma contrafaca fixa pode ser fornecida separadamente e as facas móveis e fixas podem ser especificadas como um conjunto completo. Para um conjunto, identifique a posição, desenho e quantidade de cada bloco. Para uma única substituição, inclua os componentes retidos que determinam sua relação de corte e montagem.",
+        },
+        {
+          question: "Qual é a diferença entre uma faca móvel e uma contrafaca?",
+          answer:
+            "A faca móvel viaja com o mecanismo de cisalhamento. A contrafaca fixa fornece a aresta de corte oposta. As formas do corpo, as faces de montagem e as orientações de instalação podem diferir mesmo quando as suas dimensões nominais são semelhantes. Identifique cada um pela sua posição de trabalho para que uma substituição preserve a relação de corte pretendida.",
+        },
+        {
+          question:
+            "Como o aço 1.2746 ou 1.2767 deve ser selecionado para facas de cisalhamento de sucata?",
+          answer:
+            "Use a especificação atual do material juntamente com a composição da sucata, o tamanho da seção e o histórico de desgaste da faca. Abrasão gradual, lascamento localizado e deformação da borda indicam condições diferentes para revisão. Avalie os requisitos de material e dureza juntamente com o suporte da faca e a tarefa de corte antes de selecionar uma alternativa ao aço existente.",
+        },
+        {
+          question:
+            "Como identifico um bloco de faca de corte para sucata estacionário quando o comprimento e a largura coincidem?",
+          answer:
+            "Verifique primeiro a espessura, seguida pelo padrão do parafuso, reentrâncias e faces de localização. Por exemplo, o catálogo inclui blocos de 525 × 200 mm com diferentes espessuras. Use as dimensões completas, o número do item e o desenho juntos para confirmar se o bloco está na posição móvel ou fixa correta.",
+        },
+        {
+          question:
+            "Uma faca de corte estacionária desgastada pode ser indexada ou reafiada?",
+          answer:
+            "A indexação é possível se o design permitir que uma borda não utilizada se encaixe corretamente. A reafiação é possível se o bloco puder recuperar a altura de corte especificada e o assentamento dentro dos limites da máquina. Avalie a aresta de corte e as superfícies do corpo que localizam o bloco antes de devolvê-lo ao serviço.",
+        },
+        {
+          question:
+            "Facas de cisalhamento estacionárias podem substituir facas de cisalhamento de jacaré?",
+          answer:
+            "Não. Uma tesoura de pórtico estacionária usa um assento de faca e mecanismo de corte diferentes de uma tesoura jacaré de mandíbula articulada. Para facas superiores e inferiores em máquina de mandíbula articulada, veja [facas de cisalhamento Alligator](/products/metal-shear-knives) .",
+        },
+        {
+          question:
+            "Como posso obter uma cotação para facas de cisalhamento estacionárias para sucata de pórtico?",
+          answer:
+            "Envie o modelo e versão da máquina, seção de refugo e o desenho ou número da peça de cada bloco. Liste as posições móveis e fixas separadamente com quantidades. Inclua a espessura total do bloco, os recessos e os pontos de referência de montagem quando diversas posições usarem contornos de corpo semelhantes.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envie o modelo e número de série da tesoura estacionária, posição da lâmina, desenho completo da faca, material de sucata e quantidade.",
+    rfqPlaceholder:
+      "Envie o modelo e número de série da tesoura estacionária, posição da lâmina, desenho completo da faca, material de sucata e quantidade.",
+    relatedBladeIds: ["metal-shear-knives", "guillotine-shear-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "As configurações de facas de reposição publicadas são mostradas para referência dimensional. Cada família possui vários modelos e padrões de montagem. Forneça o desenho completo antes de fazer o pedido; estas não são lâminas intercambiáveis ​​​​ou um padrão de tamanho para todo o setor.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Lâmina de corte de sucata estacionária com dois furos de montagem",
+      sizeRange: "260–550 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "1,2746/1,2767; tratamento térmico especificado",
+        },
+        {
+          label: "Aplicação",
+          value: "Tesouras de sucata estacionárias e tesouras de pórtico",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "260–550 mm",
+        },
+        {
+          label: "Opções de materiais",
+          value: "Aço ferramenta 1.2746 ou 1.2767",
+        },
+        {
+          label: "Posições de faca",
+          value: "Facas de corte móveis e contrafacas fixas",
+        },
+        {
+          label: "Montagem",
+          value: "Blocos de faca montados em parafusos",
+        },
+        {
+          label: "Aplicação",
+          value: "Tesouras de sucata estacionárias e tesouras de pórtico",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Família de referência",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+          ],
+          rows: [
+            [
+              "SR003601",
+              "Danieli Henschel · configuração de faca",
+              "525",
+              "200",
+              "100",
+            ],
+            [
+              "SR003602",
+              "Metso-Lindemann · configuração de faca",
+              "525",
+              "200",
+              "80",
+            ],
+            [
+              "SR003603",
+              "Becker-Leimbach · configuração de faca",
+              "518",
+              "200",
+              "120",
+            ],
+            ["SR003604", "Danieli Henschel · contrafaca", "260", "200", "100"],
+            ["SR003605", "Lefort · configuração de faca", "550", "200", "100"],
+            ["SR003606", "Lefort · configuração de faca", "510", "140", "50"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Envie o modelo e número de série da tesoura estacionária, posição da lâmina, desenho completo da faca, material de sucata e quantidade.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+  },
+  {
+    id: "flying-shear-blades",
+    name: "Facas para tesouras volantes",
+    fullName:
+      "Facas para tesouras de desponte e tesouras volantes de laminação",
+    seoTitle:
+      "Facas para tesouras volantes | Sob medida para linhas de laminação",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Facas para tesouras volantes",
+    image: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+    imagePending: false,
+    imageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Corte personalizado e facas de cisalhamento para laminadores. Facas retas ou perfiladas para corte a quente, frio ou temperado, fabricadas sob medida.",
+    link: "/products/flying-shear-blades",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "Feito para Desenhar",
+      },
+      {
+        label: "Geometria da lâmina",
+        value:
+          "Arestas de corte retas ou perfiladas; corpos de faca escalonados",
+      },
+      {
+        label: "Opções de materiais",
+        value:
+          "Aço para ferramentas para trabalho a quente ou aço para ferramentas de alta liga",
+      },
+      {
+        label: "Dever de corte",
+        value:
+          "Configurações de corte a quente, corte a frio ou barra temperada",
+      },
+      {
+        label: "Aplicação",
+        value:
+          "Corte de cabeça/cauda e cortes de divisão em tesouras volantes para laminadores",
+      },
+    ],
+    compatibleMachines: ["Danieli"],
+    compatibleMachinesIntro:
+      "Adquira facas de cisalhamento cortadas e voadoras personalizadas para seu laminador, incluindo corpos de facas retos, perfilados e escalonados. Sureay oferece opções de aço para ferramentas para trabalho a quente e alta liga; compartilhe suas tarefas de desenho e corte para um orçamento de substituição personalizado. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "flying-shear-blades-1",
+        tag: "Dever térmico",
+        title: "Materiais para corte de barras a quente, a frio e temperadas",
+        description:
+          "As opções de aço ferramenta para trabalho a quente e de alta liga permitem que o material da faca seja especificado para o produto laminado e as condições de temperatura na estação de corte.",
+      },
+      {
+        id: "flying-shear-blades-2",
+        tag: "Correspondência de perfil",
+        title:
+          "Perfis correspondentes ao desenho para corte de barras e seções",
+        description:
+          "Sureay fabrica lâminas retas e perfiladas, incluindo corpos escalonados e arestas de corte moldadas. A seção transversal do estoque e a geometria de cisalhamento instalada definem o contorno da lâmina e os pontos de referência de montagem para cada posição da faca.",
+      },
+      {
+        id: "flying-shear-blades-3",
+        tag: "Condição de serviço",
+        title: "Pares de facas personalizados para cortar e dividir",
+        description:
+          "Facas individuais e substituições em pares podem ser feitas de acordo com desenhos específicos de posição para corte de cabeça e cauda ou cortes de divisão, com orientação e interface de cada faca definidas para a montagem existente.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Sureay pode fabricar facas de cisalhamento voadoras personalizadas para uma laminação existente?",
+          answer:
+            "Sim. Sureay faz substituições retas, perfiladas e escalonadas no desenho. Para uma barra perfilada ou faca de corte, o contorno de trabalho, as faces de referência e os recursos de montagem são especificados em conjunto. O material pode então ser selecionado para a temperatura e carga reais de corte.",
+        },
+        {
+          question:
+            "Facas de cisalhamento e facas de cisalhamento são a mesma coisa?",
+          answer:
+            "Eles se sobrepõem quando uma tesoura voadora corta a cabeça ou a cauda do material em movimento. O recorte descreve onde o corte é feito. Voar descreve o corte em coordenação com o material móvel, que também pode ser usado para dividi-lo em comprimentos. A tesoura instalada e a posição da faca definem a substituição.",
+        },
+        {
+          question:
+            "O que muda na hora de selecionar facas para corte a quente e a frio?",
+          answer:
+            "A borda encontra diferentes condições térmicas e mecânicas. Especifique a qualidade do material, a seção transversal e a condição de temperatura na estação de corte, juntamente com o material da faca existente. Compare esses requisitos com as opções disponíveis de aço para ferramentas para trabalho a quente ou de alta liga, mantendo o corpo e o perfil de corte necessários.",
+        },
+        {
+          question:
+            "Por que o corte de barras temperadas deve ser identificado separadamente?",
+          answer:
+            "A superfície e o núcleo de uma barra temperada podem estar em diferentes condições quando atingem o cisalhamento. Essas condições afetam a carga juntamente com o tipo de aço e a seção da barra. Registre a condição real no ponto de corte para que um material de substituição possa ser avaliado para essa operação, em vez de apenas uma etiqueta geral de quente ou frio.",
+        },
+        {
+          question:
+            "O que determina o perfil de uma faca de cisalhamento voadora?",
+          answer:
+            "A seção transversal do material e o movimento da tesoura determinam como as arestas de corte engatam. Curvas, degraus e orientação das arestas fazem parte dessa geometria de trabalho, juntamente com os pontos de referência de montagem da faca. Reproduza o contorno especificado ao substituir a faca, incluindo a relação com seu componente correspondente.",
+        },
+        {
+          question:
+            "Uma faca de cisalhamento voadora desgastada pode ser usada como amostra de reposição?",
+          answer:
+            "Sim. Uma faca gasta pode mostrar o corpo escalonado, localizando faces e furos de montagem. Identifique de qual posição ele veio e marque as superfícies retificadas. Use o desenho original ou uma referência de posicionamento não utilizada, quando disponível, para distinguir o contorno pretendido da aresta restante.",
+        },
+        {
+          question:
+            "O que devo enviar para cotar um par de lâminas de cisalhamento voadoras?",
+          answer:
+            "Envie o modelo do moinho ou tesoura, desenhos das posições e quantidades das facas. Indique se o corte corta a cabeça ou a cauda ou divide o tronco em comprimento. Inclua a seção laminada, o tipo de aço, a temperatura do ponto de corte e a velocidade da linha para que os desenhos e as especificações do material possam ser considerados em conjunto.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envie o modelo do moinho/cisalhadeira, desenhos das facas, seção e classe do produto, temperatura de corte, velocidade da linha, posições e quantidades das lâminas.",
+    rfqPlaceholder:
+      "Envie o modelo do moinho/cisalhadeira, desenhos das facas, seção e classe do produto, temperatura de corte, velocidade da linha, posições e quantidades das lâminas.",
+    relatedBladeIds: [
+      "guillotine-shear-blades",
+      "stationary-scrap-shear-blades",
+    ],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Os corpos e perfis de cisalhamento voador são específicos para o mecanismo de fresagem e cisalhamento. As dimensões padrão completas do corpo não estão disponíveis para uma configuração universal; forneça o desenho original ou uma amostra dimensionada.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Amostras de facas de corte e de corte voador com corpos escalonados e furos de montagem",
+      sizeRange: "Feito para Desenhar",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "Aço ferramenta para trabalho a quente/alta liga para serviço",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Corte de cabeça/cauda e cortes de divisão em tesouras volantes para laminadores",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "Feito para Desenhar",
+        },
+        {
+          label: "Geometria da lâmina",
+          value:
+            "Arestas de corte retas ou perfiladas; corpos de faca escalonados",
+        },
+        {
+          label: "Opções de materiais",
+          value:
+            "Aço para ferramentas para trabalho a quente ou aço para ferramentas de alta liga",
+        },
+        {
+          label: "Dever de corte",
+          value:
+            "Configurações de corte a quente, corte a frio ou barra temperada",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Corte de cabeça/cauda e cortes de divisão em tesouras volantes para laminadores",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Envie o modelo do moinho/cisalhadeira, desenhos das facas, seção e classe do produto, temperatura de corte, velocidade da linha, posições e quantidades das lâminas.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+  },
+  {
+    id: "paper-sheeter-knives",
+    name: "Facas de corte transversal de papel em folhas",
+    fullName:
+      "Facas de corte transversal para cortadeiras de papel de bobina em folhas",
+    seoTitle:
+      "Facas para cortadeiras de papel de bobina em folhas | Reposição sob medida",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay: "Facas de corte transversal de papel em folhas",
+    image: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 680,
+      height: 1208,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Folhador de papel de substituição personalizado e facas transversais. Bordas com ponta de aço HSS , PM ou metal duro para bandas de papel e cartão, feitas de acordo com seu perfil de montagem.",
+    link: "/products/paper-sheeter-knives",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "2230–2285 mm",
+      },
+      {
+        label: "Configurações de referência",
+        value: "Corpos de facas da série Jagenberg Synchro listados abaixo",
+      },
+      {
+        label: "Arranjo de faca",
+        value: "Instalação radial ou tangencial",
+      },
+      {
+        label: "Opções de materiais",
+        value:
+          "HSS , aço para metalurgia do pó ou construções com ponta de metal duro",
+      },
+      {
+        label: "Aplicação",
+        value: "Corte cruzado de folhas contínuas de papel e cartão em folhas",
+      },
+    ],
+    compatibleMachines: ["Jagenberg", "Bielomatik", "E.C.H. Will", "Pasaban"],
+    compatibleMachinesIntro:
+      "Obtenha facas laminadoras de papel de reposição com comprimentos personalizados, perfis de fixação e geometria de ponta para sua máquina. Sureay oferece opções HSS , aço para metalurgia do pó e pontas de metal duro para corte transversal de papel e cartão; envie seu desenho para orçamento. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "paper-sheeter-knives-1",
+        tag: "Dever transversal",
+        title: "Opções de aço HSS , PM e ponta de metal duro",
+        description:
+          "Sureay oferece essas opções de materiais para folhas transversais de papel e cartão, permitindo que a construção da faca seja especificada para o estoque, serviço de produção e processo de manutenção existente.",
+      },
+      {
+        id: "paper-sheeter-knives-2",
+        tag: "Instalação",
+        title: "Configurações de faca radial e tangencial",
+        description:
+          "As facas de reposição estão disponíveis para arranjos radiais e tangenciais, com perfis de corpo e recursos de fixação feitos para o cilindro de corte instalado.",
+      },
+      {
+        id: "paper-sheeter-knives-3",
+        tag: "Acabamento de borda",
+        title: "Facas longas feitas sob medida",
+        description:
+          "Os comprimentos listados das facas de corte transversal de papel vão de 2.230 a 2.285 mm. Sureay faz a seção transversal completa, perfil de fixação, borda de trabalho e acabamento conforme desenho para facas de reposição em cilindros de corte existentes.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Qual faca cortadora de papel de reposição se adapta à minha máquina?",
+          answer:
+            "Identifique o modelo e a versão da laminadora, a posição da faca e o desenho de montagem. Combine a seção transversal completa, superfícies de fixação, perfil de corte e orientação instalada. A faca de acasalamento também faz parte do arranjo. Use esses detalhes com a referência da peça original para selecionar a configuração de substituição necessária.",
+        },
+        {
+          question:
+            "Qual a diferença entre as facas cortadoras de papel e as facas cortadoras e de guilhotina?",
+          answer:
+            "Uma faca cortadora corta uma teia de papel ou cartão em movimento para fazer folhas. Uma faca de corte corta longitudinalmente ao longo da teia e uma faca de guilhotina corta uma pilha presa. Para a operação longitudinal, consulte [Facas cortadoras de papel](/products/rotary-slitter-knives-paper) .",
+        },
+        {
+          question:
+            "Como as facas laminadoras de aço HSS , PM e com ponta de metal duro devem ser comparadas?",
+          answer:
+            "Compare o desempenho no mesmo tipo de papel, disposição da folha e requisito de qualidade de corte. O desgaste gradual da borda, o lascamento e o processo de afiação disponível devem orientar a avaliação do material. Mantenha o perfil de montagem e de trabalho existente definido para que um material alternativo possa ser avaliado dentro da configuração real da laminadora.",
+        },
+        {
+          question:
+            "Por que uma laminadora pode deixar um corte transversal ruim mesmo com facas novas?",
+          answer:
+            "O ajuste entre as facas correspondentes, sua geometria de corte, acabamento de retificação e condição da máquina podem afetar o corte. Maior gramatura ou várias teias juntas podem alterar a capacidade de corte. Compare a geometria instalada e a configuração com os requisitos da máquina e registre o estoque e o defeito antes de decidir que o material da faca precisa ser trocado.",
+        },
+        {
+          question: "O que significa instalação de faca radial ou tangencial?",
+          answer:
+            "Os termos descrevem a posição da faca em relação ao cilindro de corte. Cada arranjo possui seu próprio perfil de corpo, fixação e posição de borda de trabalho. A substituição deve reproduzir o design instalado, incluindo a relação da faca correspondente. O comprimento total e a espessura são apenas parte das informações necessárias para identificar esse arranjo.",
+        },
+        {
+          question:
+            "Os tamanhos listados cabem em todas as laminadoras Jagenberg Synchro?",
+          answer:
+            "Não. As máquinas Jagenberg Synchro podem usar diferentes corpos de faca e arranjos de fixação por versão. Use o número do item listado como referência e compare a seção transversal completa e as faces de fixação com o desenho da faca instalada.",
+        },
+        {
+          question:
+            "Quais requisitos geométricos são importantes ao solicitar facas cortantes longas?",
+          answer:
+            "A retilineidade da aresta de corte, o paralelismo da face, a espessura e o acabamento chanfrado descrevem diferentes aspectos da faca. Indique os valores necessários e os dados de medição no desenho de trabalho. Esses requisitos permitem que a faca acabada seja avaliada de forma consistente e ajudam a preservar a relação pretendida entre suas superfícies de fixação e a borda de trabalho.",
+        },
+        {
+          question:
+            "O que você precisa para citar uma faca cortadora de papel radial ou tangencial?",
+          answer:
+            "Forneça o modelo e a versão da laminadora, os desenhos de montagem e da faca, o tipo de papel ou cartão e a quantidade. Identifique a instalação radial ou tangencial, as superfícies de fixação e a posição de acoplamento. Inclua os pontos de referência da borda de trabalho e os requisitos de acabamento, se definidos no seu desenho.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envie o modelo da laminadora, desenhos de facas e grampos, disposição radial/tangencial, classe de estoque, condições e quantidades da alma.",
+    rfqPlaceholder:
+      "Envie o modelo da laminadora, desenhos de facas e grampos, disposição radial/tangencial, classe de estoque, condições e quantidades da alma.",
+    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "As dimensões de referência seguem as configurações históricas da laminadora IKS Klingelnberg. Eles não identificam todas as versões do Synchro nem especificam o perfil de fixação completo. Confirme o modelo, o arranjo de instalação e o desenho original da faca antes de fazer o pedido.",
+    },
+    detailLayout: {
+      heroAlt: "Faca cortadora de papel longa com furos de montagem escareados",
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-sheeter-knives-detail.webp",
+        alt: "Facas cortadoras de papel em suportes de oficina mostrando furos de montagem e detalhes das bordas",
+      },
+      sizeRange: "2230–2285 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "Aço HSS / PM / com ponta de metal duro",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Corte cruzado de folhas contínuas de papel e cartão em folhas",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "2230–2285 mm",
+        },
+        {
+          label: "Configurações de referência",
+          value: "Corpos de facas da série Jagenberg Synchro listados abaixo",
+        },
+        {
+          label: "Arranjo de faca",
+          value: "Instalação radial ou tangencial",
+        },
+        {
+          label: "Opções de materiais",
+          value:
+            "HSS , aço para metalurgia do pó ou construções com ponta de metal duro",
+        },
+        {
+          label: "Aplicação",
+          value:
+            "Corte cruzado de folhas contínuas de papel e cartão em folhas",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Configuração de referência",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+          ],
+          rows: [
+            [
+              "SR004101",
+              "Sincronização Jagenberg · radial",
+              "2285",
+              "55",
+              "10",
+            ],
+            [
+              "SR004102",
+              "Sincronização Jagenberg · radial",
+              "2285",
+              "32",
+              "10",
+            ],
+            [
+              "SR004103",
+              "Jagenberg Synchro · radial / cônico",
+              "2230",
+              "60",
+              "9.5",
+            ],
+            [
+              "SR004104",
+              "Jagenberg Synchro · radial / cônico",
+              "2230",
+              "35",
+              "10",
+            ],
+            ["SR004105", "Jagenberg Synchro · tangencial", "2285", "40", "12"],
+            ["SR004106", "Jagenberg Synchro · tangencial", "2285", "38", "12"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Envie o modelo da laminadora, desenhos de facas e grampos, disposição radial/tangencial, classe de estoque, condições e quantidades da alma.",
+        buttonLabel: "Solicite um orçamento",
+      },
+    },
+  },
+  {
+    id: "saddle-stitcher-trimmer-knives",
+    name: "Facas de refile trilateral para linhas de grampeação a cavalo",
+    fullName: "Facas de refile trilateral para linhas de grampeação a cavalo",
+    seoTitle: "Facas de refile trilateral para livretos grampeados a cavalo",
+    seoDescription:
+      "Substitua as facas frontais ou laterais nas linhas de lombada para livretos e revistas. Consulte tamanhos de referência DS 304/Tempo e opções de HSS ou ponta de metal duro.",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay:
+      "Facas de refile trilateral para linhas de grampeação a cavalo",
+    image:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 559,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Facas aparadoras de sela-agrafador de reposição para livretos e revistas. Facas frontais, laterais, superiores e inferiores em aço ferramenta, versões com ponta de metal duro ou HSS .",
+    link: "/products/saddle-stitcher-trimmer-knives",
+    specs: [
+      {
+        label: "Tamanhos",
+        value: "280–400 mm",
+      },
+      {
+        label: "Configurações de referência",
+        value: "Posições da faca Müller Martini DS 304 / Tempo listadas abaixo",
+      },
+      {
+        label: "Posições de faca",
+        value:
+          "Superior frontal, superior lateral, inferior frontal e inferior lateral; facas esquerda e direita",
+      },
+      {
+        label: "Opções de materiais",
+        value:
+          "Aço ferramenta, HSS ou arestas de corte com ponta de metal duro",
+      },
+      {
+        label: "Aplicação",
+        value: "Corte de livretos, brochuras e revistas costurados",
+      },
+    ],
+    compatibleMachines: ["Müller Martini", "Heidelberg", "Horizon"],
+    compatibleMachinesIntro:
+      "Encomende facas de corte frontais, laterais, superiores ou inferiores da Sureay , incluindo substituições individuais e perfis de faca personalizados. Estão disponíveis opções de aço ferramenta, HSS e ponta de metal duro; envie seus desenhos marcados com posição para um orçamento adaptado à sua linha de costura. As marcas de máquinas são referências de compatibilidade para peças de reposição Sureay .",
+    components: [
+      {
+        id: "saddle-stitcher-trimmer-knives-1",
+        tag: "Combinação de faca",
+        title: "Aço ferramenta, HSS e bordas com ponta de metal duro",
+        description:
+          "As opções de materiais para corte de livretos e revistas permitem que os pedidos de substituição reflitam o estoque de papel, a taxa de corte e o desgaste das bordas da linha existente.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-2",
+        tag: "Acabamento do livreto",
+        title: "Posições da faca frontal, lateral, superior e inferior",
+        description:
+          "Os comprimentos de faca listados variam de 280 a 400 mm. Sureay fornece posições frontal e lateral nas configurações superior, inferior, esquerda e direita para que os compradores possam solicitar as peças necessárias para seu aparador.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-3",
+        tag: "Configurações especiais",
+        title: "Perfis personalizados para linhas de costura existentes",
+        description:
+          "Corpos, chanfros e furos de montagem definidos por desenho suportam a substituição de facas existentes, com perfis especiais especificados juntamente com suas peças correspondentes e orientação instalada.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Como identifico facas de reposição para uma linha de costura de lombada?",
+          answer:
+            "Identifique a versão do agrafador e do aparador e especifique frente ou lateral, superior ou inferior e esquerda ou direita quando relevante. A referência original e o desenho de montagem distinguem as posições. Inclua a direção do chanfro e a orientação instalada para que a substituição siga o arranjo real das facas usado em seus livretos ou revistas.",
+        },
+        {
+          question: "Posso substituir apenas uma faca lateral danificada?",
+          answer:
+            "Sim. Uma faca lateral pode ser fornecida separadamente quando sua posição e montagem forem identificadas. Inspecione a faca correspondente retida e registre suas dimensões e histórico de reafiação. Use a referência de peça esquerda ou direita com a posição superior ou inferior, pois esses recursos determinam qual substituição é necessária.",
+        },
+        {
+          question:
+            "Como o material da faca deve ser escolhido para livretos revestidos?",
+          answer:
+            "Compare o desgaste da borda existente com o revestimento do papel, a espessura do livreto e a taxa de produção. A abrasão gradual e o lascamento das bordas exigem diferentes considerações de materiais. O processo de retificação disponível também afeta a escolha do aço ferramenta, HSS ou construção com ponta de metal duro. Mantenha o chanfro especificado e a geometria de montagem de acordo com os requisitos do material.",
+        },
+        {
+          question:
+            "As facas listadas cobrem todas as configurações Müller Martini DS 304 / Tempo?",
+          answer:
+            "Não. As entradas de número de item listadas cobrem posições e dimensões específicas da faca Müller Martini DS 304 / Tempo. Compare a versão e a referência da peça original da faca frontal superior, lateral superior, frontal inferior ou lateral inferior com o desenho de montagem completo.",
+        },
+        {
+          question:
+            "Quando uma faca de alceadura deve ser substituída em vez de reafiada?",
+          answer:
+            "A altura restante da faca e, para facas incrustadas ou com ponta, o material de ponta utilizável determinam se a geometria de trabalho pode ser restaurada. Use o limite de desgaste para a construção da faca e os limites de ajuste do aparador. As facas superiores e inferiores podem ter construção diferente, portanto, avalie cada posição separadamente ao decidir quais peças precisam ser substituídas.",
+        },
+        {
+          question:
+            "As facas de costura de sela também são chamadas de lâminas de corte de três facas?",
+          answer:
+            "Às vezes. Os termos se sobrepõem quando uma linha de lombada corta três lados de um livreto. Identifique o agrafador e a posição exata superior, inferior, frontal ou lateral ao fazer o pedido. Para conjuntos separados de três facas usados ​​em blocos de livros encadernados, consulte [Lâminas de corte de três facas](/products/three-knife-trimmer-blades) .",
+        },
+        {
+          question:
+            "O que devo enviar para um orçamento de faca de aparador de sela-agrafador?",
+          answer:
+            "Envie o modelo do agrafador e do aparador, estoque de livretos, números de peças originais ou desenhos e quantidades. Etiqueta superior ou inferior, frontal ou lateral e esquerda ou direita, quando aplicável. Para um arranjo de divisor ou fase V, inclua o perfil real e o desenho da faca correspondente.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envie o modelo da sela-grampeadora/aparadora, versão, desenhos da faca com etiqueta de posição, espessura do material e do livreto e quantidades.",
+    rfqPlaceholder:
+      "Envie o modelo da sela-grampeadora/aparadora, versão, desenhos da faca com etiqueta de posição, espessura do material e do livreto e quantidades.",
+    relatedBladeIds: ["three-knife-trimmer-blades", "paper-cutting-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "As dimensões de referência do DS 304 / Tempo seguem o catálogo de facas de papel DIENES , página 34. As facas superiores esquerda e direita têm entradas de número de item separadas, mesmo quando suas dimensões externas coincidem. Confirme o padrão completo do furo e o desenho da faca; outras versões da máquina são feitas conforme desenho.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Conjunto de facas aparadoras para agrafador-agrafador mostrando lâminas retas e moldadas com furos de montagem",
+      specificationImage: {
+        src: "/images/products/shear-detail/saddle-stitcher-trimmer-knives-detail.webp",
+        alt: "Três facas de corte em uma superfície de oficina mostrando chanfros de corte e furos de montagem",
+      },
+      sizeRange: "280–400 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "Aço ferramenta / HSS / com ponta de metal duro",
+        },
+        {
+          label: "Aplicação",
+          value: "Corte de livretos, brochuras e revistas costurados",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamanhos",
+          value: "280–400 mm",
+        },
+        {
+          label: "Configurações de referência",
+          value:
+            "Posições da faca Müller Martini DS 304 / Tempo listadas abaixo",
+        },
+        {
+          label: "Posições de faca",
+          value:
+            "Superior frontal, superior lateral, inferior frontal e inferior lateral; facas esquerda e direita",
+        },
+        {
+          label: "Opções de materiais",
+          value:
+            "Aço ferramenta, HSS ou arestas de corte com ponta de metal duro",
+        },
+        {
+          label: "Aplicação",
+          value: "Corte de livretos, brochuras e revistas costurados",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensões padrão",
+          title: "Dimensões padrão comuns",
+          columns: [
+            "Nº do item",
+            "Máquina / posição",
+            "Comprimento (mm)",
+            "Largura (mm)",
+            "Espessura (mm)",
+          ],
+          rows: [
+            [
+              "SR004201",
+              "DS 304 / Tempo · parte superior frontal",
+              "390",
+              "60",
+              "8",
+            ],
+            [
+              "SR004202",
+              "DS 304 / Tempo · lateral superior, direita",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004203",
+              "DS 304 / Tempo · lateral superior, esquerdo",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004204",
+              "DS 304 / Tempo · frontal inferior",
+              "400",
+              "40",
+              "15",
+            ],
+            [
+              "SR004205",
+              "DS 304 / Tempo · lateral inferior",
+              "295",
+              "32",
+              "15",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite um orçamento para a configuração da sua lâmina",
+        description:
+          "Envie o modelo da sela-grampeadora/aparadora, versão, desenhos da faca com etiqueta de posição, espessura do material e do livreto e quantidades.",
+        buttonLabel: "Solicite um orçamento",
+      },
     },
   },
   {
     id: "box-slotting-knives",
-    name: "Facas para ranhuras em caixas",
+    name: "Facas para canais em V em papelão cinza",
     fullName:
-      "Facas de corte em metal duro de precisão para ranhuras em caixas rígidas e de presente",
+      "Facas de precisão em metal duro para abrir canais em V no papelão cinza de caixas rígidas e de presente",
+    seoTitle:
+      "Facas de metal duro para canais em V no papelão cinza de caixas rígidas",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Facas para embalagens e papelão",
     image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Pares esquerda/direita",
-    badgeColor: "teal",
-    gallery: [
-      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Seis facas de ranhura em caixa de metal duro dispostas em leque para mostrar a variação do comprimento e da largura do material em bruto",
-      "Par de facas de corte para caixas de carboneto, mostrando o bisel retificado para ranhura",
-      "Facas para entalhar caixas em estojos protetores rotulados, juntamente com duas facas avulsas",
-    ],
     description:
-      "Facas de corte em metal duro para ranhura em V em papelão cinza em linhas de produção de caixas rígidas e de presente. Fornecidas em pares para o lado esquerdo e direito em cinco tamanhos padrão, de 50 × 12 mm a 60 × 15 mm, com espessura de 2,0 / 2,2 mm, nas classes de metal duro GS05U, otimizada para resistência ao desgaste, e GS20U, de alta resistência. Ranhuras limpas, sem rasgar ou desfiar a superfície do papelão, ajustáveis à espessura do papelão.",
-    fullDescription:
-      "A qualidade de uma caixa rígida depende inteiramente da qualidade de sua ranhura. A ranhura em V cortada no papelão cinza controla a forma como a placa se dobra, e uma ranhura que rasga ou desfiou o revestimento externo fica visível através do revestimento externo como um defeito perceptível em um produto que é comprado justamente por parecer caro. No trabalho com caixas para presentes e de luxo, não há tolerância aceitável para uma ranhura irregular.\n\nAs lâminas de ranhura Sureay são retificadas a partir de zGTR0 de alta qualidade e fornecidas em pares combinados de esquerda e direita, pois é assim que elas cortam. As duas lâminas trabalham juntas para formar as paredes da ranhura; usar uma lâmina nova junto com uma desgastada produz uma ranhura assimétrica que se dobra fora de esquadria, e é por isso que as cotamos e enviamos em pares, em vez de unidades avulsas.\n\n## Dois tipos, uma decisão\n\nO GS05U é a classe de maior dureza, otimizada contra desgaste, e a escolha certa para papelão cinza padrão em tiragens longas. O GS20U troca um pouco de dureza por tenacidade e é a classe indicada para papelão espesso e para papelão reciclado com inclusões — a mesma distinção que se aplica a todas as aplicações de carboneto, expressa aqui em termos de papelão. Escolher a GS05U para papelão reciclado com partículas de areia é a causa mais comum de lascas nessas lâminas.\n\n## Ajustável à espessura do papelão\n\nA abertura entre as lâminas é ajustada de acordo com o papelão em produção, de modo que um par cobre uma variedade de espessuras de papelão, em vez de ficar restrito a uma única espessura. Na prática, isso significa que uma linha de caixas rígidas que alterna entre papelão cinza de 1,5 mm e 3 mm de espessura se ajusta em vez de precisar de reequipamento, desde que a largura do sulco esteja dentro da faixa permitida.\n\n## Aplicações\n\nRanhura em V em papelão cinza em linhas de caixas rígidas e caixas para presentes: embalagens de luxo, caixas para cosméticos e bebidas alcoólicas, estojos de apresentação, papelão para capas duras de livros e caixas rígidas padrão.\n\n## Por que fazemos cotações em pares\n\nAs duas lâminas formam juntas as paredes da ranhura; portanto, são afiadas, combinadas e enviadas como um par, e devem ser trocadas juntas. Utilizar uma lâmina nova junto com uma desgastada resulta em uma ranhura assimétrica, e uma ranhura assimétrica faz com que a dobra fique desalinhada — um defeito que fica visível através do revestimento justamente nos produtos que menos podem arcar com isso. Substituir uma única lâmina também costuma ser um diagnóstico incorreto: uma falha precoce em uma única lâmina normalmente significa um impacto de inclusão ou uma falha de ajuste, e ambos ocorrerão novamente com a lâmina de reposição. Informe-nos quantas estações de ranhura a linha possui e quantos pares vocês consomem em um mês típico, e nós apresentaremos um cronograma de fornecimento em vez de uma cotação para uma quantidade única, pois a maioria das linhas de caixas rígidas se beneficia mais de um pedido contínuo do que de encomendas feitas apenas quando o último par falha.\n\n## GS05U ou GS20U — Decida com base no tipo de papelão, não na extensão da tiragem\n\nO GS05U é mais duro e se desgasta mais lentamente, o que o torna ideal para papelão cinza virgem limpo. O GS20U troca a dureza pela resistência e resiste a inclusões, o que o torna ideal para papelão espesso e material reciclado. Os modos de falha diferem e essa é a essência da decisão: uma lâmina desgastada é reafiada e volta ao serviço, enquanto uma lascada é descartada. Se sua mistura de papelão incluir qualquer material reciclado, o GS20U geralmente custa menos ao longo de um ano, mesmo que seja mais macio nos testes e apresente menor vida útil da lâmina em um teste com papelão limpo. Escolher o grau mais duro disponível para papelão contaminado é a maneira mais comum de essas lâminas serem destruídas.\n\n## Ranhuras Desgastadas: Lâmina ou Ajuste\n\nUma face de ranhura desgastada é o sinal de uma lâmina que parou de cortar a fibra e começou a empurrá-la. Verifique primeiro as lâminas. Se elas ainda estiverem afiadas, observe a folga da faca em relação à espessura da placa — se estiver muito larga, a placa é rasgada em vez de cortada; se estiver muito apertada, a superfície fica amassada. O tempo de ocorrência diferencia as duas causas de maneira confiável: problemas de ajuste aparecem imediatamente após uma troca, enquanto problemas na lâmina surgem gradualmente ao longo de uma tiragem. Como a abertura da lâmina é ajustada à placa em vez de ser fixa, um único par cobre uma faixa de espessuras; assim, uma linha que trabalhe com papelão cinza com espessuras entre 1,5 mm e 3 mm se ajusta em vez de exigir troca de ferramentas, desde que a largura do sulco permaneça dentro da faixa.\n\n## Tamanhos e máquinas fora da lista\n\nOs cinco tamanhos padrão são os mais solicitados, mas não constituem um limite — comprimentos, larguras e geometria das bordas são fabricados conforme desenho, e qualquer linha de ranhura em V em papelão cinza ou de ranhura em caixas rígidas está dentro do escopo, desde que tenhamos a geometria das lâminas. Caso você não tenha um desenho, envie uma lâmina desgastada ou fotografias com um paquímetro no enquadramento, e nós enviaremos um desenho com dimensões para aprovação antes da fabricação. Preferimos trabalhar com base em suas ferramentas reais do que em uma alegação de compatibilidade. Os tamanhos padrão são normalmente enviados em poucos dias úteis; geometrias feitas sob medida levam de 15 a 25 dias úteis a partir da aprovação do desenho, e pedidos repetidos com base em um desenho aprovado são cotados no mesmo dia.",
+      "Facas de metal duro para ranhuramento em V de cartão cinza em linhas rígidas e de caixa de presente. Pares esquerdo e direito combinados em GS05U e GS20U , com cinco tamanhos listados.",
     link: "/products/box-slotting-knives",
     specs: [
       {
         label: "Material",
-        value: "High-grade tungsten carbide",
+        value: "metal duro",
       },
       {
-        label: "Grades",
-        value: "GS05U (wear) / GS20U (toughness)",
+        label: "Notas",
+        value: "GS05U ou GS20U",
       },
       {
-        label: "Length",
+        label: "Comprimento",
         value: "50 / 60 mm",
       },
       {
-        label: "Width",
+        label: "Largura",
         value: "12 / 15 / 16 mm",
       },
       {
-        label: "Thickness",
+        label: "Espessura",
         value: "2.0 / 2.2 mm",
       },
       {
-        label: "Supply",
-        value: "Matched left- and right-hand pairs",
+        label: "Fornecer",
+        value: "Pares correspondentes da esquerda e da direita",
       },
       {
-        label: "Application",
-        value: "Greyboard V-grooving on rigid and gift box lines",
+        label: "Aplicação",
+        value:
+          "Ranhura em V Greyboard em linhas rígidas e de caixas de presente",
       },
     ],
     dimensionLabels: {
       col0: "Item",
-      col1: "C × L (mm)",
-      col2: "Espessura T (mm)",
-      caption:
-        "* Cinco tamanhos padrão, fornecidos em pares para a mão esquerda e direita. Outros comprimentos, larguras e geometrias de lâmina são fabricados conforme desenho ou por engenharia reversa a partir de uma faca desgastada.",
+      col1: "L × W (mm)",
+      col2: "Espessura (mm)",
     },
     standardDimensions: [
       {
@@ -6671,544 +10335,69 @@ export const blades: Blade[] = [
         id: "2 / 2.2",
       },
     ],
-    steelGrades: {
-      intro:
-        "A escolha do tipo de lâmina para corte depende do equilíbrio entre desgaste e resistência, e o tipo de papelão indica qual você precisa. O papelão cinza virgem limpo desgasta a lâmina; o papelão reciclado com inclusões a lasca.",
-      rows: [
-        {
-          grade: "GS05U",
-          hardness: "Maior dureza, otimizado contra o desgaste",
-          bestFor:
-            "Papelão cinza virgem padrão em tiragens longas — o tipo padrão",
-          tradeoff:
-            "Menos tolerante a impurezas; apresenta lascas em vez de desgaste se a placa estiver contaminada",
-        },
-        {
-          grade: "GS20U",
-          hardness: "Maior tenacidade",
-          bestFor:
-            "Papelão espesso e papelão reciclado contendo areia ou outras inclusões",
-          tradeoff:
-            "A vida útil das lâminas é menor na placa limpa do que no GS05U",
-        },
-      ],
-      outro:
-        "Se a composição da sua placa incluir qualquer quantidade de material reciclado, o GS20U geralmente se sai melhor em termos de custo total, mesmo que tenha menor vida útil do gume — uma lâmina lascada é descartada, enquanto uma desgastada é reafiada.",
-    },
     components: [
       {
         id: "matched-pairs",
-        tag: "FORMATO DE FORNECIMENTO",
-        title: "Esquerda e direita fornecidas em conjunto",
+        tag: "Formato de fornecimento",
+        title: "Pares correspondentes da mão esquerda e direita",
         description:
-          "As duas lâminas formam juntas as paredes da ranhura; por isso, são afiadas, ajustadas e enviadas como um par. Ao utilizar uma lâmina nova junto com uma desgastada, forma-se uma ranhura assimétrica que fica desalinhada — um defeito que fica visível através da embalagem justamente nos produtos que menos podem arcar com isso.",
+          "Encomende as duas facas juntas para que cada lado da ranhura em V possa ser especificado com sua aresta de corte correspondente.",
       },
       {
-        id: "clean-groove-edge",
-        tag: "QUALIDADE DA SUPERFÍCIE",
-        title: "Ranhuras que não arranham o rosto",
+        id: "carbide-grades",
+        tag: "Opções de materiais",
+        title: "Opções de Metal Duro GS05U e GS20U",
         description:
-          "A geometria da borda é retificada para cortar as fibras do papelão cinza, em vez de empurrá-las, de modo que as paredes da ranhura permaneçam limpas e o revestimento superficial não se desfaça. Em trabalhos com papelão rígido e caixas para presente, a ranhura é o que faz a diferença entre uma dobra com aparência de ter sido feita à máquina e uma que parece danificada.",
+          "Escolha uma classe orientada para o desgaste ou para a resistência de acordo com a placa e o desgaste das facas existentes.",
       },
       {
-        id: "adjustable-gap",
-        tag: "FLEXIBILIDADE DO PROCESSO",
-        title: "Ajustável ao calibrador de pranchas",
+        id: "drawing-based-pairs",
+        tag: "Dimensões personalizadas",
+        title: "Pares de reposição feitos conforme desenho",
         description:
-          "A abertura entre as lâminas é ajustada de acordo com a placa que está sendo processada; assim, um único par de lâminas abrange uma variedade de espessuras, em vez de ficar limitado a uma única espessura. Uma linha de produção que trabalhe com papelão cinza com espessuras entre 1,5 mm e 3 mm se adapta à variação, sem necessidade de reajustes nas ferramentas, desde que a largura da ranhura permaneça dentro desse intervalo.",
+          "Especifique o corpo da faca, o chanfro e o ponteiro de corte para sua estação de canal em V existente. Cinco tamanhos de referência oferecem aos compradores um ponto de partida para pedidos repetidos.",
       },
     ],
-    relatedBladeIds: [
-      "corrugated-slitter-scorer-blades",
-      "tungsten-carbide-slitter-knives",
-      "paper-straw-slitting-blades",
-    ],
-    rfqPlaceholder:
-      "Exemplo: linha de ranhura em V para caixas rígidas, lâminas de 50 × 15 × 2,2 mm à esquerda e à direita. Processamento de papelão cinza de 2 mm, parte dele reciclado. Largura da ranhura: 2 mm. São necessários 10 pares e uma recomendação quanto à qualidade.",
+    relatedBladeIds: ["corrugated-slotter-knives"],
+    quoteRequirements:
+      "Envie o modelo da sua máquina, desenho ou amostra da faca, espessura do cartão cinza e a quantidade de pares que você precisa.",
     faqs: {
       technical: [
         {
-          question:
-            "Posso substituir apenas uma faca de um par quando apenas uma está desgastada?",
+          question: "Para que é usada uma faca de canal em V de caixa rígida?",
           answer:
-            "É possível, mas geralmente não vale a pena. As duas lâminas formam juntas as paredes da ranhura; portanto, uma lâmina nova trabalhando ao lado de uma desgastada corta uma ranhura assimétrica, e a placa acaba ficando torto. Em trabalhos com materiais rígidos e caixas de presente, isso fica visível através do revestimento. Se uma das lâminas de um par falhar prematuramente, vale a pena descobrir o motivo — uma falha precoce de uma única lâmina normalmente indica um impacto de inclusão ou um problema de ajuste, e ambos ocorrerão novamente na lâmina de reposição.",
+            "Ele faz uma ranhura no cartão cinza para que o cartão possa dobrar na linha necessária em uma caixa rígida ou caixa de presente. Para ranhuras de aba em caixas de papelão ondulado, consulte [Facas Slotter Corrugadas](/products/corrugated-slotter-knives) .",
         },
         {
-          question: "GS05U ou GS20U — como faço para escolher?",
+          question: "As facas para ranhurar em V são fornecidas em pares?",
           answer:
-            "Depende da composição do papelão, e não do comprimento da tiragem. O GS05U é mais duro e se desgasta mais lentamente, o que o torna o tipo ideal para papelão cinza virgem puro. O GS20U é mais resistente e suporta inclusões, o que o torna o tipo ideal para papelões espessos e material reciclado. Os modos de falha são diferentes e é isso que determina a decisão: uma lâmina desgastada é reafiada e volta a ser utilizada; uma lâmina lascada é descartada. Se a sua mistura de papelão incluir qualquer quantidade de material reciclado, o GS20U geralmente sai mais barato ao longo de um ano.",
+            "Sim. Um par correspondente à esquerda e à direita define ambas as paredes da ranhura. Especifique os dois ponteiros e a orientação da sua máquina.",
         },
         {
-          question:
-            "As ranhuras da minha lâmina estão se desgastando na parte frontal. Isso é culpa da faca ou do ajuste?",
+          question: "Como devo escolher entre GS05U e GS20U ?",
           answer:
-            "Verifique primeiro a lâmina. Uma superfície sulcada e desgastada é sinal de que a lâmina deixou de cortar as fibras e passou a empurrá-las — a mesma falha que se manifesta como um corte irregular em qualquer aplicação em tábuas. Se as arestas ainda estiverem afiadas, observe a folga da lâmina em relação à espessura da tábua: se estiver muito larga, a tábua será rasgada em vez de cortada; se estiver muito apertada, a superfície ficará amassada. Problemas de ajuste tendem a aparecer imediatamente após uma troca, enquanto problemas nas arestas surgem gradualmente.",
+            "GS05U é a opção orientada ao desgaste e GS20U é a opção orientada à tenacidade. Compare a composição da sua placa e se a borda existente se desgasta suavemente ou lasca.",
         },
         {
           question:
-            "É possível fabricar comprimentos diferentes de 50 e 60 mm?",
+            "Os tamanhos listados abrangem facas personalizadas para canal em V?",
           answer:
-            "Sim. Os tamanhos padrão são aqueles mais solicitados, mas não representam um limite — comprimentos, larguras e geometria das bordas são fabricados de acordo com o desenho. Caso não tenha um desenho, envie uma faca gasta ou fotografias com um paquímetro em cena, e nós elaboraremos um desenho dimensionado para sua aprovação antes da fabricação.",
+            "A tabela lista cinco configurações de referência. Comprimentos, larguras e chanfros personalizados podem ser especificados de acordo com o desenho do porta-faca instalado.",
+        },
+        {
+          question:
+            "O que devo verificar se a face do quadro cinza estiver desgastada?",
+          answer:
+            "Verifique se há bordas cegas ou lascadas e confirme o ajuste da faca para a espessura da placa. Um defeito que apareça imediatamente após uma troca de placa pode indicar um problema de configuração.",
+        },
+        {
+          question:
+            "O que devo enviar para uma cotação de faca para ranhurar em V?",
+          answer:
+            "Envie o modelo da máquina, desenho da faca ou amostra e a quantidade de pares. Inclua a espessura da placa e mostre os chanfros e as faces de montagem para ambas as mãos de corte.",
         },
       ],
-      company: [
-        {
-          question: "Esses preços são por faca ou por par?",
-          answer:
-            "Por par, pois é assim que eles são cortados e como devem ser trocados. Informe-nos quantas estações de ranhura a linha possui e quantos pares vocês consomem em um mês típico, e nós apresentaremos uma cotação com base em um cronograma, em vez de uma quantidade pontual — para a maioria das linhas de caixas rígidas, é mais vantajoso ter um pedido recorrente do que fazer o pedido somente quando o último par falhar.",
-        },
-        {
-          question: "Para quais máquinas de encaixe vocês fornecem produtos?",
-          answer:
-            "As lâminas são fabricadas sob medida para a máquina; portanto, qualquer linha de ranhura em V para papelão cinza ou de ranhura para caixas rígidas está dentro do nosso escopo, desde que tenhamos a geometria da lâmina. Envie a marca e o modelo da máquina, juntamente com as dimensões das lâminas que você utiliza atualmente — ou uma amostra desgastada — e nós faremos a adaptação. Preferimos trabalhar com base em suas ferramentas reais do que em uma simples declaração de compatibilidade.",
-        },
-        {
-          question: "Qual é o prazo de entrega?",
-          answer:
-            "Os tamanhos em estoque são normalmente enviados em poucos dias úteis após a confirmação do pedido. As geometrias fabricadas sob desenho levam de 15 a 25 dias úteis a partir da aprovação do desenho. Pedidos repetidos com base em um desenho aprovado recebem cotação no mesmo dia, já que a geometria permanece arquivada.",
-        },
-      ],
-    },
-  },
-  {
-    id: "paper-straw-slitting-blades",
-    name: "Lâminas de corte para canudos de papel e hastes de filtro",
-    fullName:
-      "Lâminas circulares de corte de metal duro para canudos de papel e hastes de filtro",
-    category: "slitter_knives",
-    sector: "converting",
-    categoryDisplay: "Lâminas de corte longitudinal",
-    image:
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Com revestimento antiaderente",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
-    ],
-    galleryAlts: [
-      "Lâmina circular de corte de carboneto para corte de canudos de papel e hastes de filtro, com face completa e furo central",
-      "Par de lâminas circulares de corte de carboneto para corte de canudos de papel, com furo frontal e central",
-      "Close-up da superfície com acabamento espelhado e da borda de corte de uma lâmina para corte de canudos de papel",
-    ],
-    description:
-      "Lâminas circulares de carboneto antiaderentes para corte de canudos de papel e hastes de filtro. Diâmetro externo de Φ88–Φ100, espessura de 0,15–0,30 mm, disponíveis em seis tamanhos padrão. O revestimento antiaderente resiste ao acúmulo de adesivo à base de água, de modo que a borda de corte permanece reta e sem desfiados durante longas tiragens em máquinas de alta velocidade para a produção de canudos e hastes de filtro.",
-    fullDescription:
-      "Em uma linha de produção de canudos de papel, a lâmina geralmente não falha por desgaste. Ela falha por acumular cola. O adesivo à base de água se transfere para a superfície da lâmina, formando uma saliência ao longo da aresta de corte e, a partir desse ponto, a lâmina para de cortar o tubo e passa a arrastá-lo — o que é exatamente o que ocorre quando a ponta do canudo fica desfiada. O fio da lâmina não é a variável que resolve o problema.\n\nÉ por isso que essas lâminas são especificadas com base na resistência à aderência do adesivo, e não apenas na dureza. Um substrato de carboneto mantém a aresta afiada; o revestimento antiaderente mantém a superfície limpa para que a aresta possa continuar funcionando. Em uma linha que utiliza adesivo à base de água, o revestimento contribui mais para a qualidade do corte do que um nível diferente de dureza.\n\n## Linhas de canudos de papel não são linhas de hastes de filtro\n\nAs duas aplicações compartilham a mesma origem das máquinas e a geometria das lâminas, mas não suas condições de falha. O corte de hastes de filtro em máquinas de tabaco ocorre em velocidade muito alta em um material consistente e bem caracterizado. As linhas de canudos de papel são mais recentes, processam uma variedade maior de camadas de papel e gramaturas e utilizam adesivos que variam entre os fabricantes — portanto, a vida útil da lâmina em uma linha de canudos é muito mais sensível ao adesivo do que ao papel. Se você estiver colocando em operação uma nova linha de canudos, espere ajustar as especificações da lâmina de acordo com o seu adesivo, e não com o seu papel.\n\n## Lâminas Finas, Consequências Reais\n\nCom espessuras de 0,15 a 0,30 mm, essas são lâminas finas, e a espessura é uma decisão do processo. Uma lâmina mais fina remove menos material e deixa uma extremidade mais reta em um tubo de parede fina; uma lâmina mais grossa é mais estável em alta velocidade e mais tolerante a máquinas com desvio axial. Errar nessa escolha resulta em uma extremidade irregular ou em uma lâmina que flexiona e se desvia.\n\n## Aplicações\n\nMáquinas de enrolamento e corte de canudos de papel; fabricantes de hastes para filtros de cigarro, incluindo plataformas Hauni; corte de tubos e núcleos de papel em equipamentos de conversão de alta velocidade comparáveis.\n\n## Diagnóstico de uma extremidade de canudo desfiada\n\nSe as extremidades ficarem desfiadas enquanto a borda ainda parecer afiada, a causa é quase sempre a acumulação de adesivo, e não o desgaste. O adesivo à base de água se transfere para a face da lâmina e forma uma saliência ao longo da aresta de corte; a partir desse ponto, a lâmina arrasta o tubo em vez de cortá-lo, e um tubo arrastado fica desfiado. A borda por baixo pode estar em perfeitas condições de uso. Limpe a face da lâmina e inspecione-a sob uma luz antes de trocá-la — se o depósito for visível, a solução é um revestimento ou um intervalo de limpeza, e não uma lâmina mais afiada. Tratar isso como um problema de afiação é a maneira padrão pela qual uma linha de produção de canudos desgasta lâminas que não precisavam ser substituídas.\n\n## A espessura é uma escolha de processo\n\nEntre 0,15 e 0,30 mm, a espessura não é uma dimensão residual. Uma lâmina mais fina remove menos material e deixa uma extremidade mais reta em tubos de parede fina e poucas camadas, razão pela qual é a escolha preferida em trabalhos com tubos de alta qualidade. Uma lâmina mais espessa é mais rígida, funciona de maneira mais estável em alta velocidade e tolera o desvio do eixo, o que a torna a escolha mais segura em máquinas mais antigas ou em tubos de camadas múltiplas mais espessos. Escolher errado resulta em uma extremidade irregular ou em uma lâmina que flexiona e se desvia, e as duas falhas não se parecem em nada — informe-nos o número de camadas, a gramatura e o tipo de máquina, e nós faremos a recomendação, em vez de deixar você adivinhar.\n\n## Tradição das hastes de filtro, realidade dos canudos\n\nMuitas linhas de canudos foram construídas com base em máquinas de hastes de filtro, e a geometria da lâmina costuma ser dimensionalmente intercambiável. O que não se transfere é a lógica das especificações. O corte de hastes de filtro ocorre em velocidade muito alta em um material consistente e bem caracterizado; as linhas de canudos processam uma variedade maior de papéis e, fundamentalmente, adesivos que variam entre os fabricantes. Uma lâmina que tem bom desempenho em uma máquina de hastes filtrantes da Hauni pode ficar grudenta em questão de horas em uma linha de canudos que utiliza uma cola diferente. Especifique com base no adesivo, não na origem da máquina — o adesivo é a informação mais útil que você pode nos fornecer sobre essa aplicação e a que a maioria dos compradores deixa de fora.\n\n## Revestimentos, reafiação e comissionamento de uma nova linha\n\nO revestimento antiaderente é uma camada superficial, e a afiação da borda o remove exatamente onde é mais importante; portanto, lâminas revestidas desse tipo são utilizadas até o fim de sua vida útil e substituídas, em vez de serem incluídas em um ciclo de reafiação. Se sua análise econômica favorecer a reafiação, faremos uma cotação para lâminas de metal duro sem revestimento, e você aceitará uma limpeza mais frequente da face como contrapartida. Em uma linha ainda em fase de comissionamento, o primeiro passo útil é testar uma pequena quantidade experimental com duas especificações — normalmente uma lâmina revestida e outra com espessura diferente — operando com seu adesivo e papel reais. Duas semanas desse teste fornecem mais informações do que qualquer comparação de fichas técnicas e definem corretamente a especificação do pedido permanente desde o início. Tamanhos em estoque geralmente são enviados em poucos dias úteis; diâmetros, furos e espessuras personalizados levam de 15 a 25 dias úteis a partir da aprovação do desenho, com alguns dias adicionais para o ciclo de revestimento.",
-    link: "/products/paper-straw-slitting-blades",
-    introNote:
-      "A produção de canudos de papel é onde atualmente se concentra a maior parte da demanda por essas lâminas. Se sua linha utiliza adesivo à base de água, informe-nos qual é o tipo de adesivo — isso permite prever a vida útil da lâmina nessa aplicação com mais precisão do que as especificações do papel.",
-    compatibleMachines: ["Hauni"],
-    specs: [
-      {
-        label: "Material",
-        value: "Tungsten carbide with anti-stick coating",
-      },
-      {
-        label: "Outer Diameter",
-        value: "Φ88–Φ100 mm",
-      },
-      {
-        label: "Bore",
-        value: "Φ15 / Φ16 / Φ45 mm",
-      },
-      {
-        label: "Thickness",
-        value: "0.15–0.30 mm",
-      },
-      {
-        label: "Coating Purpose",
-        value: "Resists water-based adhesive build-up on the blade face",
-      },
-      {
-        label: "Application",
-        value: "Paper straw cut-off, filter rod cutting, paper tube cut-off",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Item",
-      col1: "Diâmetro externo (ØD) (mm)",
-      col2: "Diâmetro interno (mm)",
-      col3: "Espessura T (mm)",
-      caption:
-        "* Seis tamanhos padrão. Outros diâmetros, furos e espessuras fabricados conforme desenho — envie o modelo da máquina, o número de camadas da palha e o tipo de adesivo, e nós especificaremos a lâmina de acordo com esses dados.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ88",
-        id: "Φ16",
-        thickness: "0.26",
-      },
-      {
-        spec: "2",
-        od: "Φ89",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "3",
-        od: "Φ90",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "4",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.15",
-      },
-      {
-        spec: "5",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "6",
-        od: "Φ100",
-        id: "Φ45",
-        thickness: "0.20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Em trabalhos com adesivo, a superfície é mais importante do que o substrato. Escolha o revestimento adequado ao adesivo que você utiliza e, em seguida, escolha o substrato para o papel.",
-      rows: [
-        {
-          grade: "Carboneto + revestimento antiaderente",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Linhas de palha com adesivo à base de água e corte de hastes de filtro — a especificação padrão",
-          tradeoff:
-            "Preço unitário mais alto; o revestimento é uma camada consumível e não resiste à remoagem",
-        },
-        {
-          grade: "Carboneto sem revestimento",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Aplicações a seco ou com baixa aderência e corte de tubos de papel sem adesivo na linha de corte",
-          tradeoff:
-            "Absorve rapidamente o adesivo nas linhas coladas; a borda cortada desfia muito antes de se desgastar",
-        },
-        {
-          grade: "Aço para ferramentas",
-          hardness: "60–63 HRC",
-          bestFor:
-            "Testes, tiragens curtas e linhas de baixa velocidade, onde o custo é o fator determinante",
-          tradeoff:
-            "Perde o fio rapidamente em velocidades de linha de palha; não é viável para produção contínua",
-        },
-      ],
-    },
-    components: [
-      {
-        id: "adhesive-release-coating",
-        tag: "TRATAMENTO DE SUPERFÍCIES",
-        title:
-          "Revestido para facilitar a remoção do adesivo, não apenas para conferir dureza",
-        description:
-          "Nas linhas de adesivos à base de água, a lâmina se danifica devido à aderência, e não ao desgaste. O revestimento antiaderente mantém a superfície limpa, de modo que a lâmina continua cortando o tubo em vez de arrastá-lo — e esse é o mecanismo por trás de uma ponta de canudo sem desfiados.",
-      },
-      {
-        id: "thin-section-stability",
-        tag: "GEOMETRIA DA LÂMINA",
-        title: "0,15–0,30 mm, conforme especificado para o corte",
-        description:
-          "A espessura é uma escolha de processo, não um resíduo. Lâminas mais finas removem menos material e deixam uma extremidade mais reta em tubos de parede fina; lâminas mais grossas funcionam de forma mais estável em alta velocidade e toleram melhor o desvio da máquina. Nós a especificamos de acordo com o número de camadas e o tipo de máquina, em vez de adotar um valor padrão.",
-      },
-      {
-        id: "straw-line-tuning",
-        tag: "ENGENHARIA DE APLICAÇÕES",
-        title: "Adaptado ao adesivo, não apenas ao papel",
-        description:
-          "As linhas de canudos de papel variam muito mais em termos de adesivo do que em termos de papel, e a vida útil da lâmina depende do adesivo. Informe-nos qual linha você utiliza e nós especificaremos o revestimento e a geometria adequados a ela — essa é a informação mais útil que você pode nos fornecer sobre essa aplicação.",
-      },
-    ],
-    relatedBladeIds: [
-      "tungsten-carbide-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "nonwoven-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Exemplo: estação de corte de canudos de papel, lâmina Φ100 × Φ15 × 0,20 mm. Canudo de três camadas, papel kraft de 60 g/m², adesivo à base de água. As lâminas ficam obstruídas após cerca de 6 horas e as pontas dos canudos ficam desfiadas. São necessárias 50 unidades, revestidas.",
-    faqs: {
-      technical: [
-        {
-          question:
-            "As pontas da minha palha estão se desfazendo, mas a lâmina ainda parece afiada. O que está acontecendo?",
-          answer:
-            "É quase certo que se trata de acúmulo de adesivo. O adesivo à base de água se transfere para a superfície da lâmina e forma uma saliência ao longo da borda de corte; a partir desse ponto, a lâmina arrasta o tubo em vez de cortá-lo, e um tubo arrastado se desfia. A própria borda pode estar em perfeitas condições logo abaixo dessa saliência. Limpe a superfície e inspecione-a sob uma luz antes de trocar a lâmina — se o resíduo estiver visível, a solução é aplicar um revestimento ou realizar a limpeza, e não usar uma lâmina mais afiada.",
-        },
-        {
-          question: "Devo usar 0,15 mm ou 0,30 mm?",
-          answer:
-            "Isso depende do tubo e da máquina. Uma lâmina mais fina remove menos material e proporciona uma extremidade mais quadrada em canudos de parede fina e com poucas camadas, e é por isso que ela é a escolha ideal para trabalhos com canudos de alta qualidade. Uma lâmina mais grossa é mais rígida, funciona de maneira mais estável em alta velocidade e tolera melhor o desvio do eixo, razão pela qual é a escolha mais segura em máquinas mais antigas ou em tubos mais grossos de várias camadas. Informe-nos o número de camadas, a gramatura e o tipo de máquina, e nós faremos a recomendação, em vez de deixar que você tenha que adivinhar.",
-        },
-        {
-          question: "O revestimento resiste ao reafiamento?",
-          answer:
-            "Não. O revestimento é uma camada superficial, e o afiamento da borda o remove justamente onde é mais importante. Em lâminas revestidas desse tipo, a abordagem prática é utilizá-las até o fim da vida útil e substituí-las, em vez de planejar um ciclo de reafiamento para elas. Se sua análise econômica for a favor do reafiamento, podemos oferecer um orçamento para carboneto não revestido e, em troca, você aceita uma limpeza mais frequente da face da lâmina.",
-        },
-        {
-          question:
-            "As lâminas das varetas de filtro e as lâminas das canudinhas de papel são intercambiáveis?",
-          answer:
-            "Em termos dimensionais, muitas vezes sim — a linhagem geométrica é a mesma e muitas linhas de canudos foram construídas com máquinas para hastes de filtro. O que não se transfere é a lógica das especificações. O corte de hastes de filtro ocorre em velocidade muito alta com um material consistente; as linhas de canudos utilizam papéis variados e, fundamentalmente, adesivos variados. Uma lâmina que funciona bem em uma máquina de fabricação de hastes de filtro da Hauni pode ficar grudenta em uma linha de canudos que utiliza uma cola diferente. Especifique com base no adesivo, não na origem da máquina.",
-        },
-      ],
-      company: [
-        {
-          question: "Quais informações você precisa para fazer um orçamento?",
-          answer:
-            "Diâmetro externo, diâmetro interno e espessura; o modelo da máquina; o número de camadas de palha e a gramatura do papel; o tipo de adesivo; e o seu intervalo atual de troca. O adesivo é o item que a maioria dos compradores deixa de fora e o que melhor prediz a vida útil da lâmina nessa aplicação; portanto, inclua essa informação mesmo que não tenha certeza de que seja relevante.",
-        },
-        {
-          question:
-            "Vocês poderiam fornecer material para uma linha de tubulação de palha que ainda estamos colocando em operação?",
-          answer:
-            "Sim, e vale a pena nos envolver desde o início. Em uma nova linha de produção, o primeiro passo recomendável é realizar um pequeno teste com duas especificações — geralmente uma lâmina revestida e uma espessura diferente — utilizando seu próprio adesivo e papel. Isso fornece mais informações em duas semanas do que uma simples comparação de fichas técnicas e define corretamente as especificações do pedido permanente desde o início.",
-        },
-        {
-          question: "Quais são os prazos de entrega?",
-          answer:
-            "Os tamanhos padrão geralmente são enviados em poucos dias úteis. Diâmetros, furos e espessuras personalizados levam de 15 a 25 dias úteis a partir da aprovação do desenho. As lâminas revestidas levam alguns dias a mais do que as não revestidas devido ao ciclo de revestimento; portanto, leve isso em consideração ao planejar um primeiro teste.",
-        },
-      ],
-    },
-  },
-  {
-    id: "groove-bottom-knives",
-    name: "Facas para fundo de ranhura",
-    fullName:
-      "Lâminas inferiores com ranhuras múltiplas e anéis de corte para corte por cisalhamento",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Lâminas de corte",
-    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Passo de 5 mm",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Anel de faca inferior com múltiplas ranhuras, com ranhuras paralelas retificadas com precisão para corte por cisalhamento",
-      "Anéis de facas inferiores com múltiplas ranhuras, com um anel espaçador liso e facas inferiores planas",
-      "Anel cortador inferior com múltiplas ranhuras, mostrando o passo das ranhuras e o furo retificado",
-    ],
-    description:
-      "Anéis de lâmina inferiores com múltiplas ranhuras para corte por cisalhamento em rebobinadoras de papel, papelão e filmes. A largura do corte é ajustada movendo-se a lâmina superior para outra ranhura, sem a necessidade de troca de ferramentas. Passo das ranhuras a partir de 5 mm, diâmetro externo (OD) até Φ406 mm, furo liso para eixos pneumáticos ou parafuso de fixação para eixos maciços. Gume de corte simples ou duplo, anel de uma peça ou dividido. Também são fornecidos como anéis de ranhura única e espaçadores lisos.",
-    fullDescription:
-      "Uma faca inferior com múltiplas ranhuras — também chamada de cortador inferior com múltiplas ranhuras, bigorna com múltiplas ranhuras ou MKB — é um anel largo que apresenta várias ranhuras paralelas retificadas com precisão. Cada ranhura é uma posição de corte utilizável; portanto, uma mudança na largura significa deslocar a faca superior para uma ranhura diferente, em vez de desmontar o eixo e remontar a pilha de facas. Em uma linha que altera frequentemente a largura do produto, essa diferença é medida em horas de turno, e não no custo das lâminas.\n\nSão as ranhuras que realizam o corte; portanto, é nelas que tudo deve estar correto. A posição da ranhura define a largura do corte, a largura da ranhura define a folga de cisalhamento de trabalho em relação à faca superior correspondente e o estado da borda da ranhura determina se a tira será cortada ou rasgada. Todos os três são retificados em uma única configuração no mesmo anel, e é por isso que um anel com múltiplas ranhuras mantém a precisão da largura em toda a pilha de lâminas melhor do que um número equivalente de lâminas de bigorna separadas, montadas com espaçadores.\n\n## Onde o formato justifica seu preço\n\nUma lâmina inferior de ranhura única é mais barata por peça e perfeitamente adequada em uma linha que opera com uma única largura por semanas. O anel com múltiplas ranhuras se destaca quando a largura do pedido muda com frequência, quando o número de cortes é alto ou quando o reajuste de uma pilha de espaçadores se tornou o verdadeiro gargalo na troca de formato. Ele também elimina toda uma classe de erros de ajuste: com posições fixas das ranhuras retificadas em um único corpo, a largura não pode sofrer desvios porque alguém empilhou os espaçadores com um deslocamento de um milímetro.\n\n## Montagem: eixo pneumático ou eixo sólido\n\nDois estilos de montagem atendem a praticamente todos os rebobinadores. Um furo liso é fixado em um eixo pneumático expansível, que é a opção de troca rápida e a escolha usual em linhas de conversão modernas. Um projeto com parafuso de fixação prende-se a um eixo sólido, mais comum em máquinas mais antigas e em linhas de cartolina pesada, onde a rigidez do eixo é mais importante do que a velocidade de troca. Informe-nos qual eixo você utiliza — isso altera a especificação do furo, não apenas a fixação, e um anel com furo para o sistema errado não se encaixará corretamente.\n\n## De peça única ou dividido\n\nOs anéis padrão são de peça única. Um anel dividido em duas peças custa mais, mas pode ser removido e recolocado sem desmontar o conjunto do eixo, o que, em uma máquina de grande largura, pode transformar uma parada planejada em uma troca em operação. Se atualmente seus anéis são trocados puxando-se o eixo inteiro, a versão dividida é geralmente a primeira opção que vale a pena considerar.\n\n## Borda de corte simples ou dupla\n\nOs anéis são retificados com uma única borda de corte ou com bordas de corte em ambos os lados de cada ranhura. A geometria de dupla aresta de corte dobra as posições utilizáveis e permite que o anel seja invertido quando um lado estiver desgastado, ao custo de um retificado mais exigente e de um preço unitário mais alto. A escolha correta depende de como as posições das ranhuras estão distribuídas ao longo do anel; portanto, envie a tabela de larguras, em vez de apenas o número de ranhuras.\n\n## O passo das ranhuras é feito de acordo com sua especificação\n\nA divisão das arestas de corte — a distância entre uma aresta de corte e a seguinte, também chamada de passo — é personalizada em quase todos os casos e pode chegar a apenas 5 mm (0,200 pol.). Os diâmetros externos chegam a Φ406 mm (16 pol.). Não existe uma tabela-padrão útil para isso, e é por isso que fazemos a cotação com base na sua tabela de larguras ou em um desenho: forneça-nos o diâmetro externo (OD), o furo, a largura do anel, as larguras que você realmente utiliza e a faca superior correspondente, e nós retificaremos as posições das ranhuras de acordo com essa tabela.\n\n## O restante do conjunto de anéis\n\nUm eixo em operação raramente é composto inteiramente por anéis com múltiplas ranhuras. Anéis de corte com ranhura única cobrem posições fixas, e anéis lisos atuam como espaçadores e suportes de alma entre as posições de corte. Fornecemos os três tipos com as mesmas especificações de furo e excentricidade, para que se encaixem sem causar oscilação — misturar anéis de diferentes fornecedores em um mesmo eixo é uma fonte comum e difícil de diagnosticar de variação na largura do corte.\n\n## Aplicações\n\nConversão de papel, papelão, papel-toalha e papelão ondulado; filmes, folhas metálicas, etiquetas, fitas adesivas, não-tecidos e têxteis em rebobinadoras com corte por cisalhamento.",
-    link: "/products/groove-bottom-knives",
-    disambiguation:
-      "Esta página aborda os anéis com múltiplas ranhuras, que apresentam várias posições de corte em um único corpo. Para as facas inferiores circulares de lâmina única que são combinadas com uma faca superior em rebobinadoras de papel, consulte [Facas inferiores para cortadoras-rebobinadoras](/products/slitter-rewinder-bottom-knives).",
-    introNote:
-      "O passo da ranhura, o número de ranhuras e o diâmetro interno são fabricados de acordo com sua especificação de larguras — não existe um tamanho padrão significativo para este produto. Envie as larguras que você realmente utiliza, o tipo de eixo (ocoso ou maciço) e a faca superior correspondente, e nós retificaremos as posições das ranhuras de acordo com essa especificação.",
-    compatibleMachines: [
-      "Kampf",
-      "Goebel",
-      "Atlas Converting",
-      "Dienes",
-      "Nishimura",
-      "Deacro",
-      "Parkinson Technologies",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / carbide-tipped",
-      },
-      {
-        label: "Outer Diameter",
-        value: "Up to Φ406 mm (16 in)",
-      },
-      {
-        label: "Groove Pitch",
-        value: "From 5 mm (0.200 in), ground to your width schedule",
-      },
-      {
-        label: "Mounting",
-        value:
-          "Plain bore for expandable air shaft, or set screw for solid shaft",
-      },
-      {
-        label: "Edge Configuration",
-        value: "Single or double cutting edge",
-      },
-      {
-        label: "Construction",
-        value: "One-piece ring or two-piece split ring",
-      },
-      {
-        label: "Application",
-        value:
-          "Multi-width shear slitting of paper, board, film, foil and tape",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Configuração",
-      col1: "Diâmetro externo",
-      col2: "Montagem",
-      col3: "Passo da ranhura / Arestas",
-      caption:
-        "* O passo da ranhura, o número de ranhuras, a largura do anel e o diâmetro interno são fabricados de acordo com sua tabela de larguras — não há uma tabela de tamanhos padrão para este produto. Envie as larguras que você utiliza, o tipo de eixo e as especificações da faca superior correspondente, ou um desenho, e nós retificaremos as posições das ranhuras para que se ajustem a elas.",
-    },
-    standardDimensions: [
-      {
-        spec: "Multi-groove ring — plain bore",
-        od: "Up to Φ406 (16 in)",
-        id: "Expandable air shaft",
-        thickness: "From 5 mm pitch",
-      },
-      {
-        spec: "Multi-groove ring — set screw",
-        od: "Up to Φ406 (16 in)",
-        id: "Solid bottom shaft",
-        thickness: "From 5 mm pitch",
-      },
-      {
-        spec: "Two-piece split ring",
-        od: "Up to Φ406 (16 in)",
-        id: "Air or solid shaft",
-        thickness: "From 5 mm pitch",
-      },
-      {
-        spec: "Double-edged multi-groove ring",
-        od: "Up to Φ406 (16 in)",
-        id: "Air or solid shaft",
-        thickness: "Cutting edges both sides",
-      },
-      {
-        spec: "Single-groove cutter ring",
-        od: "To drawing",
-        id: "Air or solid shaft",
-        thickness: "One fixed position",
-      },
-      {
-        spec: "Smooth spacer ring",
-        od: "To drawing",
-        id: "Air or solid shaft",
-        thickness: "No groove — sets spacing",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "A escolha do grau em um anel com múltiplas ranhuras depende do grau de abrasividade da banda, pois as bordas das ranhuras se desgastam no ponto por onde a banda passa, e não onde a lâmina atinge. Além disso, um anel é uma peça grande e cara para ser descartada; portanto, os graus que podem ser reafiados repetidamente costumam ser a opção mais econômica.",
-      rows: [
-        {
-          grade: "Cr12MoV / SKD-11",
-          hardness: "HRC 58–62",
-          bestFor:
-            "Papel comum, papelão e filme — a especificação padrão e o melhor equilíbrio geral entre vida útil e capacidade de trituração",
-          tradeoff:
-            "Menor vida útil quando utilizadas com pontas de carboneto em matérias-primas com revestimento espesso ou com alto teor de enchimento",
-        },
-        {
-          grade: "9CrSi / 65Mn",
-          hardness: "HRC 56–60",
-          bestFor:
-            "Papéis macios não revestidos, papel-toalha e velocidades de linha mais baixas, em que o preço unitário é o fator determinante na decisão",
-          tradeoff:
-            "As bordas das ranhuras se desgastam mais rapidamente; portanto, espere um intervalo mais curto entre as retificações",
-        },
-        {
-          grade: "HSS",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Velocidades de linha mais altas e programas de produção mistos, nos quais o anel deve manter a estabilidade das bordas durante tiragens longas",
-          tradeoff:
-            "Custo mais elevado do que o do aço para ferramentas; ainda assim, sofre desgaste em matérias-primas preenchidas",
-        },
-        {
-          grade: "Com ponta de carboneto",
-          hardness: "HRA 89–91 na ponta",
-          bestFor:
-            "Fitas com revestimento abrasivo, reforçadas e laminadas, nas quais as ranhuras do aço para ferramentas se desgastam em poucas semanas",
-          tradeoff:
-            "É o mais caro, e as pontas se lascam em vez de se desgastarem caso o eixo fique desalinhado",
-        },
-      ],
-      outro:
-        "Caso tenha dúvidas, envie-nos o substrato e o intervalo atual de moagem, e faremos uma recomendação com base no seu próprio consumo, em vez de nos basearmos em uma tabela genérica.",
-    },
-    components: [
-      {
-        id: "one-ring-many-widths",
-        tag: "TEMPO DE TROCA",
-        title: "Um anel, várias posições de fenda",
-        description:
-          "Cada ranhura é uma posição de corte utilizável; portanto, uma mudança na largura implica reposicionar a lâmina superior, em vez de desmontar o eixo e remontar uma pilha de espaçadores. Em linhas que alteram frequentemente a largura dos pedidos, trata-se de um item que reduz o tempo de troca, mais do que um consumível.",
-      },
-      {
-        id: "ground-in-one-setup",
-        tag: "PRECISÃO DIMENSIONAL",
-        title: "Todas as ranhuras usinadas em uma única configuração",
-        description:
-          "As posições das ranhuras são retificadas em um único corpo em uma única operação, de modo que a largura da fenda não pode sofrer desvios, como ocorre quando um operador remontar uma pilha de espaçadores com um desvio de um milímetro. O diâmetro interno e o desvio radial são mantidos dentro da mesma especificação em anéis com múltiplas ranhuras, com ranhura única e lisos, de modo que um eixo misto ainda seja montado corretamente.",
-      },
-      {
-        id: "mounting-and-split",
-        tag: "OPÇÕES DE MONTAGEM",
-        title: "Eixo de ar, eixo maciço ou anel dividido",
-        description:
-          "A braçadeira de furo liso é fixada em um eixo pneumático expansível; um sistema de parafuso de fixação a prende a um eixo inferior sólido. Um anel dividido em duas partes pode ser removido sem desmontar o conjunto do eixo, o que, em uma máquina de grande porte, transforma uma parada programada em uma troca em operação.",
-      },
-    ],
-    relatedBladeIds: [
-      "slitter-rewinder-bottom-knives",
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-    ],
-    rfqPlaceholder:
-      "Exemplo: Rebobinador Kampf, eixo pneumático expansível, anel inferior com Φ180 × 100 mm de largura, 12 ranhuras com passo de 25 mm, borda única. Corte longitudinal de cartolina revestida de 120 g/m², 8 cortes, com mudança de largura duas vezes por semana. São necessários 4 anéis, além de 2 anéis espaçadores lisos.",
-    faqs: {
-      technical: [
-        {
-          question:
-            "Em que difere uma faca de fundo com várias ranhuras de uma faca de bigorna com ranhuras?",
-          answer:
-            "Dimensões e finalidade. Uma lâmina de bigorna com ranhuras é um disco com uma a três ranhuras, retificada de acordo com o perfil de um par de lâminas OEM e utilizada principalmente em linhas de produção de filmes, folhas metálicas e fitas — consulte nossa página sobre lâminas de bigorna com ranhuras inferiores para obter informações sobre esse produto. Um anel com múltiplas ranhuras é um corpo muito mais largo, com várias ranhuras paralelas, e sua vantagem é que um único anel cobre várias posições de corte, de modo que as mudanças de largura não exigem a troca de ferramentas. Se você altera a largura com frequência, opte pelo anel; se opera com uma única largura de acordo com um perfil de bigorna OEM específico, opte pela bigorna.",
-        },
-        {
-          question:
-            "Qual é o passo de ranhura que você consegue realmente retificar, e como faço para especificá-lo?",
-          answer:
-            "A distância entre as arestas de corte — a distância de uma aresta de corte à seguinte — é personalizada em quase todos os casos e pode chegar a apenas 5 mm (0,200 pol.). Não a especifique como um único número: envie a lista das larguras de fenda que você realmente utiliza e nós definiremos as posições das ranhuras de modo que todas as suas larguras comuns fiquem alinhadas em uma ranhura. Essa é a diferença entre um anel que atende à sua programação e outro que atende apenas à metade dela, obrigando o uso de uma pilha de espaçadores para o restante.",
-        },
-        {
-          question: "Devo pedir com furo liso ou com parafuso de fixação?",
-          answer:
-            "Isso depende do eixo inferior, e não da sua preferência. Um anel de furo liso é fixado em um eixo pneumático expansível e é a opção de troca rápida encontrada na maioria das linhas de conversão modernas. Um modelo com parafuso de fixação é montado em um eixo inferior sólido e é comum em máquinas mais antigas e em linhas de cartolina pesada. Os dois não são intercambiáveis — a especificação do furo difere —, portanto, um anel com furo para o sistema errado não se encaixará corretamente e será interpretado como desvio na fenda. Se você não tiver certeza, tire uma foto da extremidade do eixo com os anéis existentes nele.",
-        },
-        {
-          question:
-            "As larguras das fendas começaram a variar ao longo do eixo. O anel é o problema?",
-          answer:
-            "Verifique o desvio radial e o conjunto de anéis antes das ranhuras. As posições das ranhuras são retificadas em uma única configuração e não se alteram; portanto, um anel que estava preciso na instalação raramente é a causa de um desvio progressivo na largura. As causas mais comuns são o assentamento do furo em um eixo desgastado ou contaminado, ou a mistura de anéis de diferentes fornecedores em um único eixo com especificações de furo e face ligeiramente diferentes, o que acumula uma pequena oscilação, resultando em um erro de largura mensurável. Bordas de ranhuras desgastadas se manifestam como uma borda de corte deteriorada e aumento de poeira, e não como desvio de largura.",
-        },
-      ],
-      company: [
-        {
-          question: "O que é necessário para fazer um orçamento?",
-          answer:
-            "Diâmetro externo, diâmetro interno, largura do anel, número de ranhuras e passo, tipo de eixo (eixo pneumático expansível ou eixo maciço), especificação da faca superior correspondente, bem como o substrato e a velocidade da linha. O dado adicional mais útil é a sua lista de larguras de produção — isso nos permite definir as posições das ranhuras de acordo com sua programação real, em vez de simplesmente copiar um passo. Um desenho ou um anel desgastado reduz ainda mais o tempo de elaboração do orçamento; fazemos engenharia reversa a partir de amostras como parte de nosso trabalho de rotina.",
-        },
-        {
-          question:
-            "Vocês também fornecem anéis de ranhura única e lisos, ou apenas os de ranhuras múltiplas?",
-          answer:
-            "Todos os três, e recomendamos comprá-los juntos. Os anéis de corte com ranhura única cobrem posições fixas, enquanto os anéis lisos atuam como espaçadores e suportes de banda entre as posições de corte. Como são fabricados com as mesmas especificações de diâmetro interno e excentricidade, eles se encaixam sem causar oscilações — misturar anéis de diferentes fornecedores em um único eixo é uma causa comum e realmente difícil de diagnosticar para variações na largura do corte.",
-        },
-        {
-          question: "É possível retificá-los, e quantas vezes?",
-          answer:
-            "Sim, e o reafiamento é fundamental do ponto de vista econômico, pois um anel é uma peça grande para ser descartada. O número de ciclos que se consegue depende da profundidade da ranhura e da quantidade de material removida a cada reafiamento; anéis de aço para ferramentas geralmente permitem vários ciclos antes que a geometria da ranhura não possa mais ser restaurada. Reafiamos anéis que fabricamos e, na maioria dos casos, também aqueles que não fabricamos, desde que o corpo esteja em boas condições e o furo não esteja danificado — e informaremos claramente quando um anel não valer a pena o trabalho.",
-        },
-      ],
+      company: [],
     },
   },
 ];

@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
 import { motion } from "framer-motion";
 import { gtagEvent } from "@/lib/gtag";
+import { useLang } from "@/contexts/LangContext";
 
 const EFFECTIVE_DATE = "2026-06-11";
 
@@ -17,6 +18,7 @@ function Section({
   children: React.ReactNode;
   delay?: number;
 }) {
+  const english = useLang() === "en";
   return (
     <motion.section
       id={id}
@@ -25,10 +27,10 @@ function Section({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, delay }}
     >
-      <h2 className="text-white font-black text-xs tracking-[0.3em] mb-5 pb-3 border-b border-slate-800">
+      <h2 className={`font-black text-xs tracking-[0.3em] mb-5 pb-3 border-b ${english ? "text-navy border-slate-200" : "text-white border-slate-800"}`}>
         {title}
       </h2>
-      <div className="text-slate-400 text-[15px] leading-relaxed space-y-4">
+      <div className="text-muted-foreground text-[18px] leading-relaxed space-y-4">
         {children}
       </div>
     </motion.section>
@@ -36,6 +38,14 @@ function Section({
 }
 
 export default function Terms() {
+  const lang = useLang();
+  const bodyTextClass = lang === "en" ? "text-navy" : "text-white";
+  const bodyLinkClass = lang === "en"
+    ? "text-navy underline underline-offset-4 hover:text-action-hover transition-colors"
+    : "text-[#ffffff] hover:text-white transition-colors";
+  const bodyPanelClass = lang === "en"
+    ? "border-slate-200 bg-slate-50"
+    : "border-slate-800 bg-[#0d1520]";
   return (
     <>
       <SEO
@@ -44,28 +54,30 @@ export default function Terms() {
         canonicalUrl="/terms"
       />
       <Navbar />
-      <main className="bg-[#0a0f1a] min-h-screen">
+      <main className={`min-h-screen ${lang === "en" ? "bg-white" : "bg-[#0a0f1a]"}`}>
         {/* ── Header ── */}
         <div className="bg-[#001f4d] border-b border-[#003366]">
           <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
-            <motion.p
-              className="text-[10px] font-black tracking-[0.35em] text-[#e8b84b] mb-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              LEGAL
-            </motion.p>
+            {lang !== "en" && (
+              <motion.p
+                className="text-[12px] font-black tracking-[0.35em] text-[#ffffff] mb-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                LEGAL
+              </motion.p>
+            )}
             <motion.h1
               className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              TERMS OF SERVICE
+              Terms of service
             </motion.h1>
             <motion.p
-              className="text-slate-400 text-[13px] font-semibold tracking-widest"
+              className="text-muted-foreground text-[16px] font-semibold tracking-widest"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -77,13 +89,14 @@ export default function Terms() {
         </div>
 
         {/* ── Body ── */}
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16">
+        <div className="site-section site-content max-w-3xl mx-auto px-6 sm:px-8 py-16">
+          <div className={lang === "en" ? "mx-auto max-w-[70ch]" : undefined}>
           <Section id="acceptance" title="1. ACCEPTANCE OF TERMS" delay={0.1}>
             <p>
               By accessing or using{" "}
               <a
                 href="https://sureay.com"
-                className="text-[#e8b84b] hover:text-white transition-colors"
+                className={bodyLinkClass}
               >
                 https://sureay.com
               </a>{" "}
@@ -112,7 +125,7 @@ export default function Terms() {
                 "Misrepresent your identity, affiliation, or the purpose of your enquiry.",
               ].map(item => (
                 <li key={item} className="flex gap-3">
-                  <span className="text-[#e8b84b] font-black mt-0.5 shrink-0">
+                  <span className={`${bodyTextClass} font-black mt-0.5 shrink-0`}>
                     —
                   </span>
                   <span>{item}</span>
@@ -127,7 +140,7 @@ export default function Terms() {
             delay={0.2}
           >
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Product information:
               </span>{" "}
               Specifications, dimensions, material grades, and images on the
@@ -137,20 +150,20 @@ export default function Terms() {
               notice.
             </p>
             <p>
-              <span className="text-white font-semibold">Quotations:</span> Any
+              <span className={`${bodyTextClass} font-semibold`}>Quotations:</span> Any
               quotation provided by Sureay — whether via the Website contact
               form, email, or other channel — is an invitation to treat, not a
               binding offer. A contract is formed only upon Sureay's written
               order confirmation and receipt of any agreed deposit.
             </p>
             <p>
-              <span className="text-white font-semibold">Pricing:</span> All
+              <span className={`${bodyTextClass} font-semibold`}>Pricing:</span> All
               prices quoted are exclusive of applicable taxes, duties, and
               shipping costs unless stated otherwise in writing. Prices are
               subject to change without notice until an order is confirmed.
             </p>
             <p>
-              <span className="text-white font-semibold">
+              <span className={`${bodyTextClass} font-semibold`}>
                 Custom OEM orders:
               </span>{" "}
               Technical drawings, samples, and specifications submitted by
@@ -245,8 +258,8 @@ export default function Terms() {
 
           <Section id="contact" title="9. CONTACT" delay={0.5}>
             <p>For questions about these Terms, please contact us:</p>
-            <div className="border border-slate-800 p-5 bg-[#0d1520] space-y-2">
-              <p className="text-white font-semibold">
+            <div className={`border p-5 space-y-2 ${bodyPanelClass}`}>
+              <p className={`${bodyTextClass} font-semibold`}>
                 Sureay Machinery Technology Co., Ltd.
               </p>
               <p>
@@ -257,7 +270,7 @@ export default function Terms() {
                 Email:{" "}
                 <a
                   href="mailto:lynn@sureay.com"
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   lynn@sureay.com
                 </a>
@@ -269,13 +282,14 @@ export default function Terms() {
                   onClick={() =>
                     gtagEvent("phone_click", { link_location: "terms" })
                   }
-                  className="text-[#e8b84b] hover:text-white transition-colors"
+                  className={bodyLinkClass}
                 >
                   +86 180 0555 0657
                 </a>
               </p>
             </div>
           </Section>
+          </div>
         </div>
       </main>
       <Footer />

@@ -10,12 +10,11 @@ import {
 } from "wouter";
 import { Suspense, use, useEffect, useState, type ReactNode } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
-import { ThemeProvider } from "./contexts/ThemeContext";
 import { usePageTracking } from "./hooks/usePageTracking";
 import CookieConsent from "./components/CookieConsent";
 import GlobalMobileCTA from "@/components/common/GlobalMobileCTA";
 import { LangProvider, useLang } from "./contexts/LangContext";
-import { parseLangFromPath, DEFAULT_LANG } from "./lib/i18n";
+import { parseLangFromPath, stripLangPrefix, DEFAULT_LANG } from "./lib/i18n";
 import { preloadLocale } from "@/data/locales";
 import { lazyWithRetry } from "./lib/lazyWithRetry";
 
@@ -23,17 +22,12 @@ const importProductListPage = () => import("./pages/ProductListPage");
 const importProductDetail = () => import("./pages/ProductDetail");
 
 const initialPath =
-  typeof window !== "undefined" ? window.location.pathname : "";
-const isProductsEntryPath =
-  /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?products(?:\/|$)/.test(initialPath) ||
-  /^\/products(?:\/|$)/.test(initialPath);
+  typeof window !== "undefined" ? stripLangPrefix(window.location.pathname) : "";
+const isProductsEntryPath = /^\/products(?:\/|$)/.test(initialPath);
 
 if (isProductsEntryPath) {
   void importProductListPage();
-  if (
-    /^\/(?:(?:en|es|fr|ru|vi|ar)\/)?products\/.+/.test(initialPath) ||
-    /^\/products\/.+/.test(initialPath)
-  ) {
+  if (/^\/products\/.+/.test(initialPath)) {
     void importProductDetail();
   }
 }
@@ -143,7 +137,7 @@ function PageLoader() {
             key={i}
             style={{
               width: "6px",
-              backgroundColor: "#e8b84b",
+              backgroundColor: "#ffffff",
               animation: "sureay-bar 1s ease-in-out infinite",
               animationDelay: `${i * 0.15}s`,
               borderRadius: 0,
@@ -154,9 +148,9 @@ function PageLoader() {
 
       <p
         style={{
-          color: "#e8b84b",
-          fontFamily: "sans-serif",
-          fontSize: "11px",
+          color: "#ffffff",
+          fontFamily: "var(--font-sans)",
+          fontSize: "14px",
           fontWeight: 700,
           letterSpacing: "0.25em",
           margin: 0,
@@ -223,6 +217,11 @@ function ScrollToTop() {
 // ── Router ─────────────────────────────────────────────────────────────────────
 function Router() {
   const [location] = useLocation();
+  const lang = useLang();
+  const isBladePage =
+    /^\/(?:products|categories)(?:\/|$)/.test(location) ||
+    location === "/custom" ||
+    /^\/(?:plastic|metal|paper|new-energy|converting|wood)-industry\/?$/.test(location);
 
   useEffect(() => {
     if (location === "/" || location === "/about" || location === "/contact") {
@@ -255,7 +254,13 @@ function Router() {
 
   usePageTracking();
   return (
-    <>
+    <div
+      className={
+        (lang === "en" && !location.startsWith("/admin")) || isBladePage
+          ? "english-site"
+          : undefined
+      }
+    >
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <LocalePreloader>
@@ -264,6 +269,8 @@ function Router() {
 
             {/* Products — blade-only architecture */}
             <Route path="/products" component={ProductListPage} />
+            <Route path="/products/metal-cold-saw-blades" component={NotFound} />
+            <Route path="/categories/cold-saw-blades" component={NotFound} />
             <Route path="/products/:id" component={ProductDetail} />
             <Route path="/categories/:slug" component={CategoryAggregation} />
 
@@ -319,7 +326,7 @@ function Router() {
           <GlobalMobileCTA />
         </LocalePreloader>
       </Suspense>
-    </>
+    </div>
   );
 }
 
@@ -339,13 +346,11 @@ function App() {
       <WouterRouter base={base}>
         <HelmetProvider>
           <ErrorBoundary>
-            <ThemeProvider defaultTheme="light">
-              <TooltipProvider>
-                <Toaster />
-                <Router />
-                <CookieConsent />
-              </TooltipProvider>
-            </ThemeProvider>
+            <TooltipProvider>
+              <Toaster />
+              <Router />
+              <CookieConsent />
+            </TooltipProvider>
           </ErrorBoundary>
         </HelmetProvider>
       </WouterRouter>

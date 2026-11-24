@@ -3,7 +3,10 @@
  * Renders blade.components[] as an equal-height 3-column card grid on desktop.
  */
 
+import { Link } from "wouter";
+import { useLang } from "@/contexts/LangContext";
 import type { Blade } from "@/data/blades";
+import { getBladeById } from "@/data/locales";
 import { useTranslation } from "@/lib/useTranslation";
 
 interface TechnicalAuditProps {
@@ -17,31 +20,35 @@ function splitFirstSentence(text: string): [string, string] {
 }
 
 export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
+  const lang = useLang();
   const { t } = useTranslation();
+  const showMixerLabels = lang !== "en" && blade.link.startsWith("/mixer-wear-parts/");
   if (!blade.components || blade.components.length === 0) return null;
 
   return (
     <section
-      aria-label="Technical audit"
-      className="max-w-7xl mx-auto px-6 sm:px-8"
+      aria-label={t("productDetail.technicalAudit.headline")}
+      className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Section header */}
-      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ {t("productDetail.technicalAudit.eyebrow")} ]
-      </p>
+      {showMixerLabels && (
+        <p className="font-mono text-[12px] text-slate-700  tracking-widest mb-3">
+          {t("productDetail.technicalAudit.eyebrow")}
+        </p>
+      )}
       <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-8">
         {t("productDetail.technicalAudit.headline")}
       </h2>
 
       {blade.componentsIntro && (
-        <p className="text-[16px] text-slate-600 leading-relaxed max-w-[80ch] mb-8">
+        <p className="text-description text-slate-600 leading-relaxed max-w-[80ch] mb-8">
           {blade.componentsIntro}
         </p>
       )}
 
       {/* 3-column card grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {blade.components.map((comp, i) => {
+        {blade.components.slice(0, 3).map(comp => {
           const [lead, rest] = splitFirstSentence(comp.description);
 
           return (
@@ -49,12 +56,13 @@ export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
               key={comp.id}
               className="border border-slate-200 border-t-4 border-t-slate-900 p-8 bg-white flex flex-col"
             >
-              {/* Index tag */}
-              <div className="mb-4">
-                <span className="font-mono text-[10px] text-[#003366] font-bold  bg-[#003366]/10 px-2 py-0.5 tracking-widest">
-                  {String(i + 1).padStart(2, "0")} — {comp.tag}
-                </span>
-              </div>
+              {showMixerLabels && (
+                <div className="mb-4">
+                  <span className="font-mono text-[12px] text-[#003366] font-bold  bg-[#003366]/10 px-2 py-0.5 tracking-widest">
+                    {comp.tag}
+                  </span>
+                </div>
+              )}
 
               {/* Title */}
               <h3 className="text-base font-black text-[#001f4d]  tracking-tight leading-tight mb-4">
@@ -62,10 +70,22 @@ export default function TechnicalAudit({ blade }: TechnicalAuditProps) {
               </h3>
 
               {/* Description — first sentence bolded as a scannable TL;DR */}
-              <p className="text-base text-slate-600 leading-relaxed mt-auto">
+              <p className="text-description text-slate-600 leading-relaxed">
                 <span className="font-semibold text-slate-900">{lead}</span>
                 {rest && <> {rest}</>}
               </p>
+              {comp.relatedBladeIds?.map(id => {
+                const relatedBlade = getBladeById(id, lang);
+                return relatedBlade && (
+                  <Link
+                    key={id}
+                    href={relatedBlade.link}
+                    className="mt-3 self-start text-sm font-semibold text-[#003366] underline underline-offset-4"
+                  >
+                    {relatedBlade.name}
+                  </Link>
+                );
+              })}
             </div>
           );
         })}

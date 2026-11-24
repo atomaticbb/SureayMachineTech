@@ -27,6 +27,7 @@ export default [
   {
     ignores: [
       "dist/**",
+      "qa-results/**", // Generated reports and vendored audit runtime.
       "node_modules/**",
       "*.config.ts",
       "*.config.js",

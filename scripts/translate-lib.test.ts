@@ -184,6 +184,15 @@ describe("applyTranslations", () => {
 // ── Glossary preprocessing ──────────────────────────────────────────────────
 
 describe("preprocessGlossary / postprocessGlossary", () => {
+  it("preserves internal link destinations and matches the complete roll-saw name", () => {
+    const source = "[log saw blades](/products/tissue-log-saw-blades)";
+    const { processed, placeholders } = preprocessGlossary(source, "es");
+    expect(processed).not.toContain("/products/");
+    expect(postprocessGlossary(processed, placeholders)).toBe(
+      "[hojas de sierra para cortar rollos](/products/tissue-log-saw-blades)"
+    );
+  });
+
   it("round-trips a known glossary term", () => {
     const { processed, placeholders } = preprocessGlossary(
       "Our shredder blades cut everything",

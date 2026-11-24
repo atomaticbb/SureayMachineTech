@@ -1,8 +1,4 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    seo-config.ts
-// Target:    es
-// Generated: 2026-05-21T13:14:59.473Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (es).
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
@@ -13,14 +9,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "fabricante de cuchillas industriales, cuchillas a medida para maquinaria, cuchillas para trituradoras, cuchillas para granuladoras, cuchillas para cortadoras, cuchillas para cizallas, cuchillas a medida para fabricantes de equipos originales (OEM)",
     ogImage: "/images/hero/homehero.webp",
-  },
-  products: {
-    title:
-      "Productos de cuchillas industriales | Herramientas de corte de precisión | Sureay",
-    description:
-      "Consulte nuestra gama completa de cuchillas de corte industrial: cuchillas rotativas de corte longitudinal, cuchillas trituradoras, cuchillas para granuladoras, sierras circulares para troncos para tejidos y cuchillas para cizallas de metal. Metalurgia a medida, desde D2 hasta carburo. Tolerancias a nivel de micras.",
-    keywords:
-      "catalogo cuchillas industriales, herramientas de corte, cuchillas rotativas, cuchillas trituradoras, cuchillas de granulador",
   },
   about: {
     title:
@@ -46,6 +34,14 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "tecnología de cuchillas, noticias de fabricación, guías técnicas, conocimientos de corte industrial",
   },
+  products: {
+    title:
+      "Productos de cuchillas industriales | Herramientas de corte de precisión | Sureay",
+    description:
+      "Explore nuestra gama completa de hojas de corte industriales: cuchillas cortadoras rotativas, cuchillas trituradoras, cuchillas granuladoras, hojas de sierra circular para cortar rollos de papel tisú y cuchillas cortadoras de metal. Metalurgia personalizada desde D2 hasta carburo. Tolerancias a nivel de micras.",
+    keywords:
+      "catalogo cuchillas industriales, herramientas de corte, cuchillas rotativas, cuchillas trituradoras, cuchillas de granulador",
+  },
   plasticIndustry: {
     title:
       "Cuchillas para reciclado de plástico | Cuchillas para granuladoras y trituradoras | Sureay",
@@ -64,234 +60,276 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   paperIndustry: {
     title:
-      "Cuchillas para Transformación de Papel | Sierras y Guillotinas para Papel Tissue | Sureay",
+      "Cuchillas de conversión de papel | Sierras cortadoras de rollos de papel tisú y cuchillas guillotina | Claro",
     description:
-      "Cuchillas de alta precisión para la transformación de papel tisú y la impresión comercial: Ø610 sierras circulares para troncos con pulido espejo, cuchillas de corte de guillotina. Recubrimiento TiN disponible para entornos húmedos. Cortes ultralimpios, sin generación de polvo.",
+      "Cuchillas de alta precisión para conversión de papel tisú e impresión comercial: cuchillas circulares de Ø610 para cortar rollos con pulido espejo, cuchillas de corte de guillotina. Recubrimiento TiN disponible para ambientes húmedos. Cortes ultralimpios, cero generación de polvo.",
     keywords:
-      "tissue sierras circulares para troncos, cuchillas de corte de papel, cuchillas de guillotina, conversión de papel, cuchillas para la industria gráfica",
+      "Hojas de sierra circular para cortar rollos de papel tisú, cuchillas para cortar papel, hojas de guillotina, conversión de papel, hojas para la industria gráfica.",
   },
   "rotary-slitter-knives": {
-    title: "Cuchillas cortadoras giratorias para películas, cintas y embalajes",
+    title:
+      "Cuchillas de corte longitudinal para películas y cintas de envases flexibles",
     description:
-      "Cuchillas y hojas de corte giratorias con rectificado de precisión de ±0,002 mm. Opciones de acero D2, M2 HSS, ASP23 PM y carburo de tungsteno. Perfiles de cizalla, corte y rasurado para BOPP, BOPET, film CPP, cinta PSA y no tejido. Ajuste OEM Tidland, Kampf, Atlas y Dusenbery - presupuesto directo de fábrica.",
-    keywords:
-      "cuchillas cortadoras rotativas, cuchillas cortadoras cuchillas rotativas de corte longitudinal, carburo de tungsteno, cuchillas cortadoras circulares, cuchilla cortadora, cuchillas cortadoras rotativas, cuchillas cortadoras industriales, cuchillas cortadoras de film, cuchillas cortadoras de BOPP, cuchillas cortadoras de cinta PSA, cuchillas de conversión",
+      "Cuchillas de recorte de recambio para películas de BOPP, PET y CPP, y cinta adhesiva. Cuchillas superiores e inferiores de acero para herramientas o de carburo, con orificios y perfiles personalizados según plano.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives.webp",
   },
-  "tungsten-carbide-slitter-knives": {
-    title: "Cuchillas cortadoras de metal duro | Cuchillas de corte de carburo",
+  "rotary-slitter-knives-paper": {
+    title: "Cuchillas de corte para Papel tisú y papel Kraft",
     description:
-      "Cuchillas cortadoras de metal duro con 10-30× la vida útil de filo del acero de herramientas. Grados micrograno YG6/YG8 e ISO K10/K20, rectificadas a ±0,002 mm, con informes de ensayo.",
-    keywords:
-      "cuchillas cortadoras de metal duro, cuchillas de carburo de tungsteno, cuchillas de corte de carburo, cuchillas cortadoras de carburo, cuchillas de refilado de metal duro, cuchillas YG6, cuchillas de carburo YG8, cuchillas de carburo K10, cuchillas de carburo micrograno",
+      "Cuchillas de corte para papel tisú (Papel tisú), papel kraft y papel estucado. Combine cuchillas superiores cóncavas o planas con cuchillas inferiores a juego, fabricadas en acero para herramientas o con punta de carburo.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
   },
   "metal-foil-strip-slitter-knives": {
     title:
-      "Cuchillas para papel de aluminio y tiras metálicas | ASP23/ASP52 Acero PM, ±0,001 mm | Sureay",
+      "Cuchillas para cortadoras de láminas de cobre y aluminio | A medida",
     description:
-      "Cuchillas ASP23/ASP52 PM de acero para herramientas y carburo de tungsteno para centros de servicio del metal. tolerancia de espesor de ±0,001 mm, Ra de espejo ≤0,02 μm para corte longitudinal sin rebabas de papel de aluminio, tiras de cobre, acero inoxidable y acero al silicio. Venta directa al por mayor de fábrica - MOQ bajo, especificaciones de la petición.",
-    keywords:
-      "cuchillas cortadoras de papel de aluminio, cuchillas cortadoras carburo de tungsteno, cuchillas cortadoras de papel metálico, cuchillas cortadoras ASP23, cuchillas cortadoras de acero al silicio, árbol de corte longitudinal, cuchillas cortadoras de bobinas, cortadora de tiras metálicas, cuchillas cortadoras ASP52",
+      "cuchillas rotativas de corte longitudinals de recambio para láminas de cobre y aluminio. Opciones de carburo, acero para herramientas y acero PM, con diámetros interiores, anchuras y espaciadores a medida.",
+    ogImage:
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
   },
   "twin-shaft-blades-recycling": {
-    title: "Cuchillas Trituradoras de Doble Eje | D2/SKD11 OEM Fit",
+    title: "cuchillas trituradoras de doble eje | Plásticos y residuos mixtos",
     description:
-      "Cuchillas de rotor D2/SKD11 y carburo de cromo para trituración de RSU, plásticos y madera de doble eje. Geometría de intersección-tijera, 3-12 garras, taladros Wire-EDM. Reemplazo OEM para Weima, Untha, SSI y Vecoplan. Venta directa al por mayor de fábrica - MOQ bajo, especificaciones personalizadas y cotización rápida.",
-    keywords:
-      "cuchillas de rotor de carburo de cromo, doble eje cuchillas trituradoras, D2 cuchillas trituradoras, cuchillas trituradoras de RSU, cuchillas de reciclaje de plástico, trituradora SKD11, cuchillas de doble eje, cuchillas de rotor de carburo de cromo al por mayor, trituradora de rotor de tijera de intersección",
+      "cuchillas trituradoras de doble eje de recambio para plásticos, palés de madera y residuos mixtos. Opciones en D2, SKD11 y 42CrMo, con ganchos y orificios a medida.",
+    ogImage:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
   },
   "multi-shaft-blades-metal": {
-    title:
-      "Cuchillas trituradoras de metal | H13 para chatarra y residuos electrónicos",
+    title: "cuchillas trituradoras para chatarra | H13 y 42CrMo",
     description:
-      "Multieje H13/42CrMo de alto impacto cuchillas trituradoras para el procesamiento de chatarra, VFU y residuos electrónicos. Resistencia HRC 50-54 optimizada para soportar cargas de choque catastróficas. Taladros pesados estriados Wire-EDM para plataformas Shred-Tech, Forus y Arjes.",
-    keywords:
-      "metal cuchillas trituradoras, cuchillas para chatarra, cuchillas para trituradoras de residuos electrónicos, H13 cuchillas trituradoras, trituradora de VFU, cuchillas para reciclaje de metales",
+      "Seleccione cuchillas de acero H13 o 42CrMo para trituradoras multieje destinadas al tratamiento de vehículos al final de su vida útil, residuos electrónicos o electrodomésticos. Especifique el perfil del gancho y el orificio estriado o con chaveta.",
+    ogImage: "/images/products/shredder-blades/shredder-blades-05.webp",
   },
   "twin-shaft-blades-battery": {
-    title: "Cuchillas Trituradoras de Batería Li-Ion | ±0,02mm Precisión",
+    title:
+      "cuchillas trituradoras para el reciclaje de baterías | Recambios a medida",
     description:
-      "ZGTR0zGTR de precisión de doble eje para la trituración previa de baterías de iones de litio de vehículos eléctricos. paralelismo de ±0,02 mm de grosor para una holgura de cizallamiento uniforme en láminas de cobre y aluminio. Tratamientos superficiales resistentes a la corrosión para entornos de gas inerte LiPF6.",
-    keywords:
-      "batería cuchillas trituradoras, cuchillas de reciclaje de baterías de litio, trituradora de baterías EV, procesamiento de baterías Li-ion, pretrituración de baterías",
+      "Cuchillas de corte rotativas de recambio para trituradoras previas de reciclaje de baterías. Perfiles de cuchilla e interfaces de eje personalizados, fabricados según planos homologados.",
+    ogImage: "/images/products/shredder-blades/shredder-blades.webp",
   },
   "tissue-log-saw-blades": {
-    title: "Hojas de sierra para troncos de papel tisú | D2 Ø610-1200mm | Sureay",
+    title: "Discos de sierra para rollos de papel tisú | Ø610–1000 mm",
     description:
-      "Papel tisú sierras circulares para troncos Ø610-1200mm, D2 HRC 58-60, pulido espejo, desviación ≤0,15mm. Recubierto de TiN. Para Perini, PCMC, Gambini. Presupuesto rápido.",
-    keywords:
-      "papel tisú sierras circulares para troncos, papel tisú sierras circulares para troncos, sierras circulares para troncos, hojas de sierra para papel, conversión de sierras circulares, hojas de sierra D2",
+      "Corte rollos de papel higiénico y paños de cocina con hojas D2, Cr12MoV o M2 HSS. Los diámetros listados son de 610 a 1000 mm, con tamaños personalizados de hasta 1200 mm.",
+    ogImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
   },
-  "granulator-blades": {
+  "nonwoven-log-saw-blades": {
     title:
-      "Cuchillas para granuladores de plástico y cuchillas trituradoras | OEM",
+      "Discos de sierra para rollos de tejido no tejido | Recambios a medida",
     description:
-      "D2, SKD-11 & Cr12MoV plástico cuchillas de granulador - cuchillas de rotor y estator rectificadas a ±0,02 mm. HRC 58-62, recambio OEM para granuladores Cumberland, Herbold y Rapid. Suministro directo de fábrica, disponible al por mayor. Envíe el número de modelo para obtener un presupuesto exacto.",
-    keywords:
-      "cuchillas de granulador de plástico, cuchillas de granulador, cuchillas de granulador proveedores, cuchillas trituradoras de plástico, cuchillas granuladoras, cuchillas para estator de rotor, cuchillas para reciclado de PET",
-  },
-  "tire-shredder-blades": {
-    title:
-      "Cuchillas Trituradoras de Neumáticos | Cizalla Rotativa de 3 Garras para TDF | Sureay",
-    description:
-      "ZGTR0zGTR rotativa de 3 garras de primera calidad para la trituración primaria de neumáticos y la producción de TDF. Grados de acero Cru-Wear (PGK) y A8 modificado. tolerancia de espesor de ±0,05 mm. Compatible con OEM Barclay, CM, SSI, Untha, Granutech-Saturn. Trituración de neumáticos enteros y OTR.",
-    keywords:
-      "neumático cuchillas trituradoras, cuchillas trituradoras de neumáticos, rotativas cuchillas de cizalla, cuchillas TDF, cuchillas de reciclaje de neumáticos, trituradora de 3 garras, Barclay cuchillas trituradoras",
+      "Cuchillas circulares de repuesto D2 para corte de rollos para corte transversal de rollos de tela no tejida. Orificios personalizados, patrones de orificios de montaje y perfiles de hoja hechos según el dibujo de su cuchillo.",
+    ogImage: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
   },
   "paper-cutting-blades": {
-    title: "Cuchillas de guillotina y corte de papel de precisión",
+    title:
+      "Cuchillas para cortadoras de papel | Cuchillas para guillotinas de papel",
     description:
-      "ZGTR0zGTR profesional para impresión comercial y conversión de papel. Rectificado de precisión con una tolerancia de 0,01 mm. Cortes limpios y sin rebabas en papel estucado, cartón y materiales multicapa. Amplia compatibilidad con máquinas.",
-    keywords:
-      "cuchillas de corte de papel, cuchillas de guillotina, cuchillas de impresión, cuchillas de guillotina de papel",
-  },
-  "three-knife-trimmer-blades": {
-    title: "Cuchillas y cuchillas de recambio para cabezal Combi | Sureay",
-    description:
-      "HSS & TC cuchillas de tres cuchillas, cuchillas de repuesto para cabezal combinado. Ajuste OEM Müller Martini, Heidelberg, Kolbus. Disponibles juegos frontal + lateral.",
-    keywords:
-      "cuchillas de guillotina de tres cuchillas, cuchillas de recambio para cabezal combinado, cuchillas de recambio Müller Martini, cuchillas de guillotina para encuadernación, cuchillas de guillotina HSS, cuchillas de guillotina TC, cuchilla de guillotina Heidelberg, juego de cuchillas de guillotina Kolbus",
-    ogImage:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      "Solicite cuchillas de guillotina para papel con incrustaciones de HSS o con puntas de carburo para cortadoras de pilas. Las longitudes indicadas son de 450 a 2050 mm, aunque hay disponibles longitudes personalizadas y orificios de montaje.",
+    ogImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
   },
   "single-shaft-shredder-blades": {
-    title: "Insertos de Rotor Monoeje | Cuchillas de Corona | Sureay",
+    title:
+      "Cuchillas de rotor para trituradoras de un solo eje | Insertos cuadrados",
     description:
-      "Insertos de rotor de trituradora monoeje de alto impacto para una reducción agresiva del tamaño. Perfiles cóncavo, corona y ranura en V. 4 filos de corte utilizables por plaquita. Tratamiento criogénico profundo. Para plásticos voluminosos, envases de paredes gruesas y RSU.",
-    keywords:
-      "plaquitas de rotor de un eje, cuchillas de rotor triturador, fresas corona, plaquitas de rotor cuadradas, cóncavas cuchillas trituradoras, indexables en 4 direcciones",
+      "Elija insertos de rotor cuadrado o coronas de corte cóncavas en DC53, D2 o Cr12MoV. Adapte la cara de la cuchilla y el asiento del perno a su trituradora de un solo eje.",
+    ogImage: "/images/products/shredder-blades/single-shredder-blades-06.webp",
   },
   "single-shaft-bed-knives": {
-    title: "Estator y cuchillas para trituradoras monoeje",
+    title:
+      "Cuchillas fijas de estator para trituradoras de un eje (contracuchillas)",
     description:
-      "Cuchillas de estator D2/DC53 (cuchillas de contracama) para trituradoras monoeje. Rectitud ≤0,05 mm/m, longitudes personalizadas hasta 3500 mm. Recambio OEM para Vecoplan, Weima, Lindner y Zerma. Directo de fábrica: envíe el plano o el modelo de la máquina para obtener un presupuesto rápido.",
-    keywords:
-      "cuchilla estator, cuchillas estator, cuchillas estator eje simple, cuchilla estator trituradora, cuchillas estator trituradora, cuchillas estator trituradora, cuchilla estator D2, cuchilla estator trituradora, cuchilla estator Vecoplan",
+      "Cuchillas fijas fijas para trituradoras de un eje en longitudes indicadas de 279 a 3000 mm. Solicite bordes rectos o dentados y ranuras de montaje que coincidan con su dibujo.",
+    ogImage: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+  },
+  "granulator-blades": {
+    title: "Cuchillos granuladores de plástico | Rotor y palas de bancada",
+    description:
+      "Reemplace el rotor y las cuchillas estacionarias en los granuladores que procesan PET, PP, HDPE o PVC. Cuchillas de granulador de plástico en longitudes indicadas de 90 a 1178 mm, con patrones de pernos personalizados.",
+    ogImage: "/images/products/granulator-blades/granulator-blades-06.webp",
   },
   "metal-coil-slitting-knives": {
     title:
-      "Cuchillas de precisión para corte longitudinal de bobinas | Cuchillas para corte longitudinal de metal",
+      "Cuchillos para corte de bobinas de acero | Herramientas personalizadas",
     description:
-      "Juegos de cuchillas de corte superior e inferior de alta calidad para el procesamiento de bobinas metálicas. Tolerancia de espesor ±0,001 mm, paralelismo 0,002 mm. Herramientas completas con separadores y anillos de goma. Para bobinas de acero, aluminio, cobre y galvanizadas.",
-    keywords:
-      "cuchillas de corte longitudinal de metal, cuchillas de corte longitudinal de bobinas, cortadoras rotativas de metal, cortadoras superiores inferiores, cuchillas de corte longitudinal de acero",
+      "Cuchillas cortadoras de bobinas de acero de repuesto para acero al carbono, inoxidable y de alta resistencia. Cuchillas de corte rotativas, espaciadores y anillos extractores personalizados según plano.",
+    ogImage: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
   },
   "metal-shear-knives": {
-    title: "Cizallas y guillotinas de metal para trabajos pesados",
+    title: "cuchillas de cizalla para Chatarra",
     description:
-      "Cuchillas de guillotina y cizalla de precisión para chatarra en aceros para herramientas D2, S1 (6CrW2Si) y H13. Rectificadas con un paralelismo de ±0,05 mm para cizallar sin rebabas acero dulce, chapa inoxidable y chatarra pesada. Longitudes de una pieza de hasta 6000 mm.",
-    keywords:
-      "cuchillas cizallas metal, guillotina cuchillas de cizalla, cuchillas cizallas acero, hidráulicas cuchillas de cizalla, chatarra cuchillas de cizalla, D2 cuchillas de cizalla",
+      "Reemplace la hoja móvil superior o la cuchilla fija inferior en su cizalla de cocodrilo. Las longitudes indicadas son de 320 a 508 mm, con opciones de acero S1 , 6CrW2Si y H13 .",
+    ogImage: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
   },
-  "metal-cold-saw-blades": {
-    title: "Hojas de sierra en frío HSS y TCT | Corte de tubos metálicos",
+  "guillotine-shear-blades": {
+    title: "Cuchillas de cizalla guillotina para chapa metálica",
     description:
-      "Hojas de sierra circular en frío de HSS y TCT de cobalto M2, M35 para el corte de tubos de acero, acero inoxidable y perfiles de aluminio. Norma DIN 1837/1840. Cara final sin rebabas, sin HAZ. Recubrimientos de PVD TiN/TiAlN disponibles. OEM para Kaltenbach, Bewo, MEP.",
-    keywords:
-      "hojas de sierra en frío, hojas de sierra en frío HSS, sierra en frío de cobalto M35, hojas de sierra en frío TCT, sierra circular en frío para metal, hojas de corte de tubos, fabricante de hojas de sierra en frío",
+      "Corte chapa con cuchillas de cizalla D2 , 6CrW2Si o 9CrSi . Solicite las cuchillas superiores e inferiores en juegos de una sola pieza o segmentados con patrones de montaje personalizados.",
+    ogImage: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
+  },
+  "three-knife-trimmer-blades": {
+    title: "Cuchillas para guillotinas trilaterales de acabado de libros",
+    description:
+      "Recorte el frente, la cabecera y el pie de los libros encuadernados con cuchillas HSS o de carburo. Pida una hoja de repuesto o un juego combinado con una cuchilla frontal y dos laterales.",
+    ogImage:
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
   },
   "lithium-battery-slitting-knives": {
-    title: "Cuchillas de corte de carburo para baterías | Lámina de electrodo",
+    title: "Cuchillas para corte de electrodos de batería | Pares de carburo",
     description:
-      "Cuchillas de corte longitudinal carburo de tungsteno con acabado de espejo para láminas de electrodos de baterías de iones de litio. Ra ≤0,05μm de filo, ±0,001mm de tolerancia. Cero microperforaciones en la lámina de Al/Cu.",
-    keywords:
-      "cuchillas cortadoras carburo de tungsteno, cuchillas cortadoras para baterías, cuchillas para baterías de litio, cuchillas para láminas de electrodos, cuchillas cortadoras de carburo, carburo cuchillas circulares",
+      "Cuchillas cortadoras de carburo de grano fino para ánodos y cátodos de baterías de litio revestidos. Solicite cuchillas giratorias superior e inferior combinadas con DLC o TiN opcionales.",
+    ogImage:
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
   },
   "corrugated-slitter-scorer-blades": {
     title: "Cuchillas para cortadoras de cartón ondulado | BHS & Fosber",
     description:
-      "Sólidas cuchillas carburo de tungsteno para líneas de corte en seco de cartón ondulado. Corte sin aplastamiento. Ajuste OEM para BHS, Fosber, Marquip. Cuchillas ranuradoras e incisoras en stock.",
-    keywords:
-      "cuchillas cortadoras de cartón ondulado, cuchillas cortadoras carburo de tungsteno, cuchillas incisoras, cortadora BHS, cuchillas cortadoras Fosber, cuchillas para cajas de cartón ondulado",
+      "Cuchillas cortadoras de carburo para líneas de extremo seco de corrugadoras, con configuraciones de referencia BHS y Fosber . Taladros a medida y patrones de fijación realizados sobre plano.",
+    ogImage:
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+  },
+  "tire-shredder-blades": {
+    title:
+      "Cuchillas para cizallas rotativas de trituración primaria de neumáticos",
+    description:
+      "Cortadoras A8 o 42CrMo modificadas para la trituración primaria de neumáticos. Haga coincidir el número de ganchos, el grosor del cortador y el diámetro del eje con su cizalla rotativa.",
+    ogImage: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
   },
   "nonwoven-slitter-knives": {
     title: "Cuchillas cortadoras no tejidas | PP Spunbond & SMS",
     description:
-      "Cuchillas cortadoras circulares M2 HSS y D2 para PP spunbond, meltblown y SMS nonwoven a 200-500 m/min. La geometría de rastrillo antideshilachado elimina el desgarro de fibras en líneas de higiene, médicas y de filtración. Ajuste OEM para los principales sistemas de conversión de no tejidos - solicite presupuesto.",
-    keywords:
-      "cortadora de no tejidos, cuchillas de corte de no tejidos, cuchillas de corte de no tejidos, cuchillas de corte de spunbond, cuchillas de corte de meltblown, cuchillas de no tejidos médicos",
-  },
-  "scrap-chopper-blades": {
-    title: "Cuchillas para chatarra | S7 y H13 para líneas de bobinas",
-    description:
-      "Cuchillas de corte de chatarra de alta resistencia en acero para herramientas S7 y H13 para líneas de corte longitudinal de metal. diseño indexable de 4 filos, incrustación de carburo opcional. Alta resistencia al impacto.",
-    keywords:
-      "cuchillas picadoras de chatarra, cuchillas para procesamiento de bobinas, picadoras de chatarra metálica, cuchillas picadoras para líneas de corte longitudinal, cuchillas picadoras S7",
-  },
-  "rotary-slitter-knives-paper": {
-    title: "Cuchillas cortadoras de papel | Tisú y kraft | D2, M2 HSS | Sureay",
-    description:
-      "Cuchillas cortadoras por cizalla y aplastamiento para tisú, papel kraft y papel estucado. D2, M2 HSS y 52100 a ±0.002mm de espesor. Ajuste OEM Atlas, Kampf, Goebel IMS, Perini.",
-    keywords:
-      "cuchillas cortadoras de papel tisú, cuchillas cortadoras de papel, cuchillas cortadoras de cartón ondulado, cuchillas convertidoras de papel tisú, cuchillas cortadoras de papel kraft, cuchillas cortadoras de troncos, pares de cizallas de papel, corte sin polvo de fibras",
-  },
-  "guillotine-shear-blades": {
-    title:
-      "Cuchillas de cizalla de guillotina | D2 & 6CrW2Si para cizallas hidráulicas | Sureay",
-    description:
-      "Guillotina D2 (Cr12MoV), 6CrW2Si & 9CrSi cuchillas de cizalla rectificada a ±0,05 mm de paralelismo en toda su longitud. Juegos superior e inferior para máquinas de hasta 16 mm × 4000 mm. Compatible con TRUMPF, AMADA, LVD, Durma y Bystronic.",
-    keywords:
-      "guillotina cuchillas de cizalla, hidráulica cuchillas de cizalla, D2 cuchillas de cizalla, cuchillas de cizalla 6CrW2Si, chapa cuchillas de cizalla, cuchillas de recambio AMADA, cuchillas de cizalla TRUMPF",
-  },
-  "wood-chipper-blades": {
-    title:
-      "Cuchillas para astilladoras de madera | D2 & TCT Cuchillas para astilladoras de tambor y disco | Sureay",
-    description:
-      "Cuchillas astilladoras de tambor y disco D2, Cr12MoV y TCT, HRC 57-62, tolerancia de espesor ±0,05 mm. Ajuste OEM para Bandit, Vermeer, Morbark, Peterson, Doppstadt y Jenz. 8-12 ciclos de reafilado.",
-    keywords:
-      "cuchillas astilladoras de madera, cuchillas astilladoras de tambor, cuchillas astilladoras de disco, cuchillas astilladoras forestales, cuchillas astilladoras de biomasa, cuchillas astilladoras D2, cuchillas astilladoras TCT, cuchillas astilladoras Vermeer, cuchillas astilladoras Bandit",
-  },
-  "wood-chipper-anvils": {
-    title:
-      "Yunques y contracuchillas para astilladoras de madera | D2 - A8 modificados | Juegos combinados | Sureay",
-    description:
-      "Yunques para astilladoras (contracuchillas/cuchillas de bancada) rectificados con precisión en acero D2, Cr12MoV y A8 Modificado. HRC 54-60 endurecido en toda su masa. Paralelismo de ±0,05 mm. Ajuste OEM para Bandit, Vermeer, Morbark, Timberwolf y Schliesing. Juegos de cuchilla y yunque disponibles.",
-    keywords:
-      "yunque astilladora de madera, contracuchilla astilladora, contracuchilla astilladora, recambio yunque astilladora, yunque Bandit, contracuchilla Vermeer, contracuchilla Morbark, yunque astilladora de tambor, contracuchilla astilladora de disco, juego de yunques de cuchillas emparejadas",
-  },
-  "special-shaped-blades": {
-    title:
-      "Cuchillas especiales a medida | Cualquier perfil, cualquier aleación | Sureay",
-    description:
-      "Cuchillas industriales de forma especial y perfil personalizado fabricadas a partir de planos DXF/DWG/STEP o muestras físicas. D2, H13, PM-HSS y metal duro. Tolerancias de ±0,02 mm. Cualquier industria, cualquier geometría.",
-    keywords:
-      "cuchillas personalizadas, cuchillas con formas especiales, cuchillas con perfiles personalizados, cuchillas personalizadas OEM, cuchillas industriales a medida, fabricación de cuchillas DXF",
+      "Cuchillas cortadoras de repuesto para telas no tejidas spunbond, meltblown y SMS. Opciones M2 HSS , D2 o carburo, con perfiles personalizados y revestimientos específicos para aplicaciones.",
+    ogImage:
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
   },
   "bottom-grooved-anvil-knives": {
-    title:
-      "Cuchillas de yunque con ranura inferior | Yunques para tijeras (par) | Sureay",
+    title: "Cuchillos de yunque con ranuras inferiores | Anillos de repuesto",
+    description:
+      "Cuchillas de yunque ranuradas de repuesto y anillos cortantes para cortadoras de banda. Opciones de acero o carburo, con perfiles de ranura, orificios y disposiciones de bloqueo personalizados.",
+    ogImage: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
   },
-  "continuous-melt-filter-scraper-blades": {
-    title: "Filtro de fusión Cuchillas rascadoras y placas filtrantes",
+  "tungsten-carbide-slitter-knives": {
+    title: "Cuchillos cortadores carburo de tungsteno | Tamaños personalizados",
+    description:
+      "Cuchillas cortadoras de repuesto sólidas y con punta de carburo para conversión y procesamiento de metales. Tamaños, orificios y perfiles de corte personalizados adaptados a la aplicación.",
+    ogImage:
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+  },
+  "scrap-chopper-blades": {
+    title:
+      "Cuchillas picadoras de chatarra | Cuchillas de línea de bobina personalizadas",
+    description:
+      "Cuchillas picadoras de chatarra de repuesto personalizadas para recortar los bordes de la línea de bobina. Cuchillas S7 , H13 o con incrustaciones de carburo con disposiciones de corte rectas, inclinadas o perfiladas.",
+    ogImage: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
   },
   "strand-pelletizer-rotors": {
-    title: "Rotores granuladores de filamentos para líneas de compuestos",
-  },
-  "groove-bottom-knives": {
-    title: "Cuchillas inferiores multirranura | Anillos de corte | Sureay",
+    title:
+      "Rotores de corte para granuladoras de hebras | Reemplazo personalizado",
     description:
-      "Anillos de cuchilla inferior multirranura para corte por cizalla. Paso de ranura desde 5 mm, DE hasta Φ406 mm, alojamiento para eje neumático o prisionero.",
-    keywords:
-      "cuchilla inferior multirranura, anillos de corte inferiores, cuchillas inferiores ranuradas, anillo separador liso, paso de ranura",
+      "Rotores peletizadores de hebras de repuesto con bordes cortantes helicoidales o rectos. Opciones de HSS y carburo, con perfiles de dientes y extremos de eje personalizados.",
+    ogImage: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+  },
+  "continuous-melt-filter-scraper-blades": {
+    title:
+      "Cuchillas raspadoras de filtro de fusión | Reemplazos personalizados",
+    description:
+      "Cuchillas raspadoras de repuesto para filtros continuos de plástico fundido. Opciones D2 , H13 y carburo, con perfiles personalizados y detalles de montaje según plano.",
+    ogImage: "/images/products/blades/scraper-blades.webp",
+  },
+  "shredder-screens": {
+    title:
+      "Pantallas trituradoras de repuesto | Cestas y platos personalizados",
+    description:
+      "Cribas de repuesto para trituradoras de un solo eje, con aperturas de 8 a 80 mm. Cestas y placas personalizadas que se adaptan al patrón de orificios, la curvatura y el montaje.",
+    ogImage:
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
+  },
+  "cutter-compactor-blades": {
+    title: "Cuchillas cortadoras compactadoras | Cuchillas de rotor y estator",
+    description:
+      "Prepare películas de PE o PP y escamas de PET para extrusión con cuchillas de rotor y estator de repuesto en construcción D2 , M2 HSS o con punta de carburo.",
+    ogImage:
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+  },
+  "die-face-cutting-knives": {
+    title: "Cuchillas troqueladoras | Cuchillas de repuesto personalizadas",
+    description:
+      "Cuchillas peletizadoras de repuesto para sistemas submarinos, de anillo de agua y de cara caliente. Ranuras de hoja personalizadas, perfiles de borde y juegos combinados según el dibujo.",
+    ogImage:
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+  },
+  "special-shaped-blades": {
+    title: "Cuchillas industriales de forma especial | Perfiles personalizados",
+    description:
+      "Cuchillas de repuesto para máquina con perfil personalizado en D2 , H13 , PM- HSS o carburo. Contornos específicos de la pieza, bordes cortantes y características de montaje hechos según el dibujo.",
+    ogImage: "/images/products/blades/special-shaped-knife.webp",
+  },
+  "wood-chipper-blades": {
+    title: "Cuchillas para astilladoras de madera de tambor y de disco",
+    description:
+      "Cuchillas móviles para astilladoras de madera de tambor y de disco en longitudes indicadas de 230 a 600 mm. Especifique acero chipper, D2 o un borde con punta de carburo, además de su patrón de bisel y pernos.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+  },
+  "wood-chipper-anvils": {
+    title: "Yunques y contracuchillas para astilladoras de madera",
+    description:
+      "Vuelva a colocar la contracuchilla estacionaria opuesta a las cuchillas móviles de la astilladora. Los yunques de las trituradoras de madera se presentan en longitudes de 185 a 400 mm, con ranuras de montaje personalizadas.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
   },
   "slitter-rewinder-bottom-knives": {
-    title: "Cuchillas inferiores para rebobinadoras cortadoras | Sureay",
+    title: "Cuchillas inferiores de cortadora rebobinadora | Copa y doble filo",
     description:
-      "Cuchillas inferiores macizas y con plaquitas de carburo para rebobinadoras de papel. Acabado espejo, sin rebabas. Medidas Φ250–Φ254, alojamientos a medida.",
-    keywords:
-      "cuchillas inferiores rebobinadora, cuchilla inferior de corte, cuchillas para rebobinadora de papel, cuchillas Jagenberg",
+      "Cuchillas de copa, de doble filo y de fondo de anillo reemplazable para rebobinadoras de papel, en DE 70–300 mm. Especifique un orificio con llave, un montaje con brida o un filo de corte de carburo.",
+    ogImage:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
   },
-  "box-slotting-knives": {
-    title: "Cuchillas ranuradoras para cajas | Carburo GS05U y GS20U | Sureay",
+  "corrugated-slotter-knives": {
+    title: "Cuchillas para ranuradoras de cartón ondulado | Macho y hembra",
     description:
-      "Cuchillas ranuradoras de carburo para cartón gris en cajas rígidas y de regalo. Pares izquierda/derecha, calidades GS05U y GS20U, cinco medidas de stock.",
-    keywords:
-      "cuchillas ranuradoras cajas, ranurado en V cartón gris, cuchillas cajas rígidas, cuchilla ranuradora carburo",
+      "Arcos macho lisos o dentados y contracuchillas hembra para ranurado de láminas corrugadas. Solicite hojas de repuesto hechas según el ancho de su ranura y el plano de montaje.",
+    ogImage: "/images/products/slitter-detail/box-slotting-knives-white.webp",
   },
   "paper-straw-slitting-blades": {
-    title: "Cuchillas para pajitas de papel | Carburo antiadherente | Sureay",
+    title: "Cuchillas para cortar pajitas de papel | Cuchillos de repuesto",
     description:
-      "Cuchillas circulares de carburo antiadherentes para pajitas de papel y varillas de filtro. Φ88–Φ100, 0,15–0,30 mm. Resisten la acumulación de adhesivo.",
-    keywords:
-      "cuchillas pajitas de papel, cuchilla circular antiadherente, cuchillas varilla de filtro, corte de pajitas de papel",
+      "cuchillas circulares de repuesto para corte y recorte de pajitas de papel. Opciones de carburo o M2 HSS , orificios y perfiles personalizados y recubrimientos seleccionados para la línea.",
+    ogImage: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+  },
+  "groove-bottom-knives": {
+    title: "Cuchillas inferiores multiranuras | Anillos cortadores inferiores",
+    description:
+      "Anillos cortadores de ranuras múltiples para corte longitudinal. Paso de ranura desde 5 mm y DE hasta 406 mm, con configuraciones monobloque y partidas según plano.",
+    ogImage: "/images/products/slitter-detail/groove-bottom-knives.webp",
+  },
+  "stationary-scrap-shear-blades": {
+    title: "Cuchillas para cizallas fijas de pórtico para chatarra",
+    description:
+      "Solicite bloques de cuchillas móviles montados con pernos y contracuchillas fijas para cizallas de pórtico estacionarias para chatarra. Elija acero 1.2746 o 1.2767 y envíe su plano de montaje.",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+  },
+  "flying-shear-blades": {
+    title: "Cuchillas de cizalla volante | A medida para trenes de laminación",
+    description:
+      "cuchillas de cizalla volantes y de cultivo a medida para laminadores. Cuchillas rectas o perfiladas para corte en caliente, en frío o en barra templada, fabricadas sobre plano.",
+    ogImage: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+  },
+  "paper-sheeter-knives": {
+    title:
+      "Cuchillas para cortadoras de papel de bobina a hoja | Recambios a medida",
+    description:
+      "Cortadora de papel y cuchillas transversales de repuesto personalizadas. Cantos de acero HSS , PM o con puntas de carburo para bandas de papel y cartón, fabricados a medida de su perfil de montaje.",
+    ogImage: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+  },
+  "saddle-stitcher-trimmer-knives": {
+    title: "Cuchillas de corte trilateral para folletos cosidos a caballete",
+    description:
+      "Reemplace las cuchillas frontales o laterales en las líneas de engrapado para folletos y revistas. Ver tamaños de referencia DS 304 / Tempo y opciones con punta de carburo o HSS .",
+    ogImage:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+  },
+  "box-slotting-knives": {
+    title: "Cuchillas de metal duro para ranurado en V de cartón gris",
+    description:
+      "Cuchillas ranuradoras de carburo para ranurado en V de tableros grises en líneas rígidas y de cajas de regalo. Pares coincidentes para mano izquierda y derecha en GS05U y GS20U , con cinco tamaños listados.",
+    ogImage: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
   },
 };

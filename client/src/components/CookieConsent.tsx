@@ -15,7 +15,7 @@
  * Storage key: "sureay_cookie_v2"  (values: "granted" | "denied")
  */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { pageview } from "@/lib/gtag";
 import { useTranslation } from "@/lib/useTranslation";
@@ -38,6 +38,25 @@ export default function CookieConsent() {
   // null = checking region (show nothing), false = no banner, true = show banner
   const [showBanner, setShowBanner] = useState<boolean | null>(null);
 
+  const firstButton = useRef<HTMLButtonElement>(null);
+  const returnFocus = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    const reopen = () => {
+      returnFocus.current = document.activeElement as HTMLElement;
+      setShowBanner(true);
+    };
+    window.addEventListener("sureay:cookie-settings", reopen);
+    return () => window.removeEventListener("sureay:cookie-settings", reopen);
+  }, []);
+  useEffect(() => {
+    if (showBanner && returnFocus.current) firstButton.current?.focus();
+  }, [showBanner]);
+  function closeBanner() {
+    setShowBanner(false);
+    returnFocus.current?.focus();
+    returnFocus.current = null;
+  }
+
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
 
@@ -52,6 +71,7 @@ export default function CookieConsent() {
     axios
       .get<{ requiresConsent: boolean; country: string }>("/api/region")
       .then(({ data }) => {
+        if (localStorage.getItem(STORAGE_KEY) !== null) return;
         if (!data.requiresConsent) {
           // Non-GDPR region — grant immediately without showing a banner.
           // GA4's wait_for_update window is still open, so the first page_view
@@ -64,8 +84,8 @@ export default function CookieConsent() {
         }
       })
       .catch(() => {
-        // Region check failed — show the banner as a safe fallback.
-        setShowBanner(true);
+        // Do not reopen after a choice made while the request was pending.
+        if (localStorage.getItem(STORAGE_KEY) === null) setShowBanner(true);
       });
   }, []);
 
@@ -75,19 +95,20 @@ export default function CookieConsent() {
     // The wait_for_update window has long passed by now (user read the banner),
     // so fire a fresh page_view with the newly granted consent.
     pageview(window.location.href, document.title);
-    setShowBanner(false);
+    closeBanner();
   }
 
   function handleEssentialOnly() {
     localStorage.setItem(STORAGE_KEY, "denied");
-    // All signals remain denied — nothing else to call.
-    setShowBanner(false);
+    updateAllConsent("denied");
+    window.gtag?.("set", "user_data", {});
+    closeBanner();
   }
 
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-[#001f4d] border-t border-white/20 shadow-2xl">
+    <div role="region" aria-label={t("cookieConsent.title")} className="fixed bottom-0 left-0 right-0 z-[9999] bg-[#001f4d] border-t border-white/20 shadow-none">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10">
         {/* Text */}
         <div className="flex-1 min-w-0">
@@ -100,16 +121,17 @@ export default function CookieConsent() {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-shrink-0 items-center gap-3">
+        <div className="flex w-full flex-wrap items-center gap-3 sm:w-auto sm:flex-shrink-0">
           <button
+            ref={firstButton}
             onClick={handleEssentialOnly}
-            className="border border-white/40 text-white hover:border-white px-5 py-2.5 text-sm font-semibold transition-colors duration-150 rounded-none whitespace-nowrap"
+            className="border border-white/40 text-white hover:border-white px-5 py-2.5 text-sm font-semibold transition-colors duration-150 rounded-none whitespace-normal break-words min-h-11"
           >
             {t("cookieConsent.essentialOnly")}
           </button>
           <button
             onClick={handleAcceptAll}
-            className="bg-white text-[#001f4d] hover:bg-white/90 px-5 py-2.5 text-sm font-bold transition-colors duration-150 rounded-none whitespace-nowrap"
+            className="bg-white text-[#001f4d] hover:bg-white/90 px-5 py-2.5 text-sm font-bold transition-colors duration-150 rounded-none whitespace-normal break-words min-h-11"
           >
             {t("cookieConsent.acceptAll")}
           </button>

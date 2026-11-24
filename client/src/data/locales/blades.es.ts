@@ -1,724 +1,908 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blades.ts
-// Target:    es
-// Generated: 2026-05-22T04:34:50.565Z
-// Provider:  deepl (incremental: faqs + components)
-
+// Generated from the English industrial blade catalog (es).
 import type { Blade } from "../blades";
+
 export const blades: Blade[] = [
   {
+    compatibleMachinesIntro:
+      "Consigue cuchillas de recorte de película y cinta de recambio fabricadas a medida para tus portacuchillas, con diámetros interiores, perfiles de corte y opciones de superficie personalizados. Envía a Sureay tu plano o muestra para obtener un presupuesto de cuchillas individuales o de un par de cuchillas superior e inferior.",
     id: "rotary-slitter-knives",
-    name: "Cuchillas cortadoras de película y cinta",
+    name: "Cuchillas de corte longitudinal para películas y cintas",
     fullName:
-      "Cuchillas cortadoras rotativas de precisión para conversión de film, cintas y envases flexibles",
+      "Cuchillas de corte longitudinal para películas y cintas de envases flexibles",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Cuchillas cortadoras de película y cinta",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Los más vendidos",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    ],
+    categoryDisplay: "Cuchillas de corte longitudinal para películas y cintas",
+    image: "/images/products/slitter-detail/rotary-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Cuchillas cortadoras circulares rectificadas con precisión para películas de BOPP, BOPET y CPP, películas estirables de PE, cintas PSA y conversión de telas no tejidas. tolerancia de espesor de ±0,002 mm, desviación T.I.R. de ≤0,02 mm. Perfiles de corte, rayado y afeitado en acero M2 HSS, D2 y ASP23 PM con recubrimientos antiadherentes TiN y DLC opcionales. Ajuste OEM para sistemas de corte Tidland, Kampf, Atlas y Dusenbery.",
-    fullDescription:
-      "Las cuchillas rotativas de corte longitudinal y cuchillas circulares operan en la intersección de la precisión dimensional y la ciencia de los materiales. En una línea de conversión que trabaja con film de BOPP o BOPET a 400-600 m/min, un error de tolerancia de grosor de la cuchilla de corte rotativo de 0,005 mm por cuchilla se acumula en un conjunto de múltiples cuchillas, produciendo una desviación visible del ancho de corte, rizado de los bordes y polvo que contamina los equipos de rebobinado y embalaje posteriores. Las cuchillas de las cortadoras rotativas Sureay se fabrican con una tolerancia de espesor de ±0,002 mm y una desviación total indicada (T.I.R.) de ≤20,02 mm, tolerancias que se mantienen en todo el diámetro de producción, no sólo en el orificio.\n\nLa selección de la aleación depende de la aplicación. La conversión estándar de papel estucado y cartón kraft funciona con acero para rodamientos 52100 o D2 acero para herramientas de trabajo en frío. Los sustratos abrasivos (láminas de electrodos de aluminio y cobre para pilas de litio EV, envases reforzados con fibra de vidrio, revestimientos de silicona) requieren acero ASP23 o ASP52 pulvimetalúrgico (PM) o carburo sólido para una duración aceptable de los bordes. Los films de plástico flexible (BOPP, BOPET, CPP, film estirable de PE) se procesan de forma rutinaria en cuchillas M2 HSS con revestimiento superficial opcional TiN o DLC PVD para evitar la transferencia de film adhesivo y reducir el calentamiento de la banda inducido por la fricción.\n\n## Por método de corte\n\n**Corte de cizalla (pares de cuchillas superior e inferior emparejadas):** La acción de tijera entre la cuchilla superior abombada y la cuchilla de yunque inferior ranurada genera un corte de cizalla limpio sin carga de tracción en la banda. La holgura entre cuchilla y cuchilla suele ser de 0,05-0,15 mm (dependiendo del sustrato); nuestras tolerancias de rectificado garantizan que esta holgura sea constante en toda la anchura de la hendidura. Es fundamental para papel, telas no tejidas y películas flexibles ligeras en las que la deformación de los bordes es inaceptable.\n\n**Corte por aplastamiento o rayado (cuchilla circular contra yunque de caucho):** Una cuchilla endurecida de bordes afilados penetra a través de un laminado adhesivo sensible a la presión, espuma o banda de embalaje multicapa contra un yunque de caucho de dureza controlada. La geometría del perfil de la cuchilla y el ángulo del bisel se optimizan según el sustrato para evitar el desprendimiento del adhesivo y la delaminación en el borde de corte. La elección estándar para cinta sensible a la presión, troquelado de espuma y división de envases médicos.\n\n**Cuchillas ultraafiladas de perfil fino recortan los bordes sobrantes de las líneas de extrusión de film fundido, las líneas de film orientado y la producción de spunbond no tejido a velocidades superiores a 500 m/min. La geometría de la cuchilla está optimizada para un arrastre mínimo de la banda y una limpieza máxima de los bordes, evitando el rizado de los bordes y las descargas electrostáticas que provocan roturas de banda en las líneas de alta velocidad.\n\n## Por material e industria\n\n**Films de envasado flexibles:** BOPP, BOPET, CPP, film estirable PE/PP, funda retráctil. El corte de film a alta velocidad requiere un control preciso de la desviación para evitar picos de tensión en la banda inducidos por el bamboleo de la cuchilla. M2 HSS con recubrimiento DLC opcional elimina la adherencia de la película en la cara de la cuchilla.\n\n**Tejidos no tejidos y tejidos médicos:** PP hilado, meltblown, tejidos médicos SMS, medios de filtración HEPA. Los ángulos de rastrillo especializados evitan el deshilachado de las fibras y el deslizamiento de la banda durante el corte de materiales de estructura suelta a altas tensiones de línea.\n\n**Cintas y etiquetas sensibles a la presión:** Cinta adhesiva, cinta aislante, espuma de doble cara, etiquetas, adhesivo de transferencia. Los revestimientos antiadherentes de TiN y teflón reducen la frecuencia de limpieza en un 60-80%, prolongando el tiempo medio entre sustituciones en las aplicaciones de corte de cinta más exigentes.",
-    disambiguation:
-      "¿Procesa papel, tisú o cartón en lugar de película? Consulte nuestra página de [Cuchillas cortadoras de papel](/products/rotary-slitter-knives-paper) para conocer los datos de holgura de cizallamiento y los intervalos de reafilado en sustratos de celulosa.",
+      "Cuchillas de recorte de recambio para películas de BOPP, PET y CPP, y cinta adhesiva. Cuchillas superiores e inferiores de acero para herramientas o de carburo, con orificios y perfiles personalizados según plano.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Tamaños",
+        value: "Diámetro exterior de la cuchilla circular: 20–300 mm",
+      },
+      {
+        label: "Material",
+        value:
+          "52100, D2, M2 HSS, acero ASP23 PM o carburo de tungsteno macizo",
+      },
+      {
+        label: "Aplicaciones",
+        value: "BOPP, BOPET, CPP, film estirable y cinta adhesiva",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value:
+          "TiN, DLC, PTFE (teflón), CrAlN o cerámica, dependiendo del sustrato de la cuchilla",
+      },
+      {
+        label: "Montaje",
+        value:
+          "Portacuchillas de corte rotativo o portacuchillas de corte por compresión",
+      },
+      {
+        label: "Tolerancia de espesor",
+        value: "±0.002 mm",
+      },
+      {
+        label: "Excentricidad",
+        value: "≤0.02 mm T.I.R.",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas de corte longitudinal para películas y cintas de envases flexibles",
+      sizeRange: "Diámetro exterior de la cuchilla circular: 20–300 mm",
+      heroAlt:
+        "Cuchillas circulares para cortadoras de film y cinta, y anillos inferiores",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-detail.webp",
+        alt: "Primer plano del bisel rectificado con precisión y la cara de una cuchilla cortadora circular",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Cuchillas de corte longitudinal",
+          title: "Cuchillas de corte superior e inferior",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de Cuchilla",
+          ],
+          rows: [
+            ["SR001154", "60 × 40 × 1.0 mm", "Cuchilla superior"],
+            ["SR001155", "62 × 35 × 0.5 mm", "Cuchilla superior"],
+            ["SR001156", "75 × 45 × 1.2 mm", "Cuchilla superior"],
+            ["SR001151", "90 × 60 × 1.0 mm", "Cuchilla superior"],
+            ["SR001152", "105 × 70 × 1.2 mm", "Cuchilla superior"],
+            ["SR001157", "130 × 80 × 1.2 mm", "Cuchilla superior"],
+            ["SR001158", "150 × 75 × 2.0 mm", "Cuchilla superior"],
+            ["SR001168", "70 × 28 × 12 mm", "Cuchilla inferior"],
+            ["SR001169", "70 × 45 × 3 mm", "Cuchilla inferior"],
+            ["SR001170", "70 × 45 × 20 mm", "Cuchilla inferior"],
+            ["SR001182", "80 × 55 × 5 mm", "Cuchilla inferior"],
+            ["SR001452", "80 × 60 × 10 mm", "Cuchilla inferior"],
+            ["SR001183", "105 × 60 × 15 mm", "Cuchilla inferior"],
+            ["SR001184", "108 × 80 × 8 mm", "Cuchilla inferior"],
+            ["SR001185", "150 × 120 × 15 mm", "Cuchilla inferior"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Cuchillas superiores e inferiores adicionales",
+          title: "Cuchillas superiores e inferiores adicionales",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de cuchilla / Referencia de la plataforma",
+          ],
+          rows: [
+            [
+              "SR001801",
+              "75 × 25.4 × 1.0 / 1.2 mm",
+              "Cuchilla superior — Tidland / Atlas",
+            ],
+            [
+              "SR001802",
+              "70 × 25.4 × 8 / 10 mm",
+              "Yunque inferior — Tidland / Atlas",
+            ],
+            [
+              "SR001803",
+              "100 × 32 × 1.2 / 1.5 mm",
+              "Cuchilla superior — Kampf / Dusenbery",
+            ],
+            [
+              "SR001804",
+              "80 × 60 × 16 / 20 mm",
+              "Yunque inferior — Kampf / Dusenbery",
+            ],
+            [
+              "SR001805",
+              "118 × 80 × 1.2 / 2.0 mm",
+              "Cuchilla superior — Goebel / BHS / Agnati",
+            ],
+            [
+              "SR001806",
+              "100 × 70 × 16 / 20 mm",
+              "Yunque inferior — Goebel / BHS / Agnati",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Diámetro exterior de la cuchilla circular: 20–300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2, M2 HSS, acero ASP23 PM o carburo de tungsteno macizo",
+        },
+        {
+          label: "Aplicaciones",
+          value: "BOPP, BOPET, CPP, film estirable y cinta adhesiva",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value:
+            "TiN, DLC, PTFE (teflón), CrAlN o cerámica, dependiendo del sustrato de la cuchilla",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Portacuchillas de corte rotativo o portacuchillas de corte por compresión",
+        },
+        {
+          label: "Tolerancia de espesor",
+          value: "±0.002 mm",
+        },
+        {
+          label: "Excentricidad",
+          value: "≤0.02 mm T.I.R.",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
       "Tidland",
-      "Mario Cotta",
-      "Dusenbery",
       "Kampf",
       "Atlas",
       "Goebel",
-      "BHS",
-      "Agnati",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "52100 / D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting, Score / Crush Cutting, Razor Slitting",
-      },
-      {
-        label: "Outer Diameter",
-        value: "50–200 mm (custom OD available)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.002 mm thickness | ≤0.02 mm T.I.R. runout",
-      },
-      {
-        label: "Coatings",
-        value: "TiN, DLC, Teflon, CrAlN (optional)",
-      },
-      {
-        label: "Applications",
-        value:
-          "BOPP / BOPET / CPP Film, PE Stretch Film, PSA Tape, Non-Wovens, Flexible Packaging",
-      },
+      "Windmöller & Hölscher",
     ],
     components: [
       {
-        id: "multi-material-compatibility",
-        tag: "METALURGIA",
-        title: "Aceros para herramientas específicos para cada aplicación",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Opciones de acero y metal duro adaptadas a cada aplicación",
         description:
-          "Material adaptado a su banda. acero al carbono 52100 para revestimientos de film de embalaje estándar y sustratos revestidos; M2 HSS para films de plástico abrasivos; ASP23 PM o carburo sólido para revestimientos antiadherentes revestidos de sílice y laminados reforzados con fibra de vidrio. Todas las calidades en stock y listas para entrega rápida OEM.",
+          "Desde los modelos 52100 y D2 hasta los M2 HSS, el acero PM y el carburo macizo, Sureay ofrece una amplia gama de materiales para el corte habitual de películas y para condiciones de desgaste más exigentes.",
       },
       {
-        id: "advanced-coating-systems",
-        tag: "RETENCIÓN DE BORDES",
-        title: "Recubrimientos PVD antiadherentes",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Cantos rectificados con precisión y recubrimientos opcionales",
         description:
-          "Los recubrimientos TiN y DLC reducen la adherencia a la superficie hasta en un 80%, eliminando la acumulación de adhesivo en las caras de la cuchilla durante el corte de cintas PSA y laminados adhesivos. Una menor fricción se traduce en un funcionamiento más frío, una mayor vida útil del filo y menos paradas de limpieza por turno.",
+          "Los filos de corte rectificados con precisión están disponibles con recubrimientos de TiN, DLC, PTFE (teflón), CrAlN o cerámica, seleccionados en función del sustrato de la cuchilla y de la película o cinta que se vaya a cortar.",
       },
       {
-        id: "five-cutting-applications",
-        tag: "CAPACIDAD DE PROCESO",
-        title: "Geometrías de bordes optimizadas",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Cuchillas de recambio a medida y pares a juego",
         description:
-          "Perfiles de bisel simple, bisel doble y filo romo diseñados para pares de cizalla, corte de yunque de aplastamiento/raspado y corte de cuchilla. Perfilados para su velocidad de línea y tensión de banda: especifique el método de corte y el sustrato y nosotros adaptaremos la geometría.",
+          "Solicite cuchillas de recambio individuales o pares coordinados de cuchilla superior e inferior con orificios, perfiles y detalles de montaje adaptados a su sistema de corte actual.",
       },
     ],
-    dimensionLabels: {
-      col0: "Tipo de cuchilla / Aplicación",
-      col1: "OD (mm)",
-      col2: "ID (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones estándar de los pares de cizallas. Cuchillas superior (abombada) e inferior (ranura de yunque) suministradas como pares emparejados. Perfiles OD / ID y de ranura personalizados bajo pedido.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Qué cuchilla de recambio se adapta a mi cortadora de film o cinta?",
+          answer:
+            "Identifique primero el método de corte y la posición de la cuchilla. Las estaciones de corte rotativo utilizan bordes superior e inferior que actúan conjuntamente; las estaciones de corte por compresión presionan una cuchilla contra una superficie de apoyo. La referencia del soporte, el diámetro interior, el perfil de corte y las dimensiones axiales determinan la pieza de recambio. «Cuchillas para cortadoras de film» y «cuchillas para cortadoras de cinta» son denominaciones habituales en las compras, pero la configuración de corte instalada es la que determina la pieza necesaria.",
+        },
+        {
+          question:
+            "¿Cuándo debe primar la resistencia al desgaste en la selección de cuchillas de corte por cizallamiento?",
+          answer:
+            "Merece la pena considerar una mayor resistencia al desgaste cuando el filo de trabajo se desgasta gradualmente en una configuración de corte por cizallamiento que, por lo demás, es adecuada. Cuando predominan las astillas o los daños por contacto, la elección del material también debe tener en cuenta la tenacidad y el soporte de la cuchilla. Compare el filo usado, la banda procesada y el par de cuchillas existente antes de elegir el material para un pedido de recambio.",
+        },
+        {
+          question:
+            "¿Por qué se acumula adhesivo en las cuchillas de las cortadoras de cinta?",
+          answer:
+            "El adhesivo puede transferirse de la cinta a la cuchilla durante el contacto. El perfil de la cuchilla, el área de contacto y el acabado de la superficie influyen en la facilidad con la que se acumulan los residuos. Compruebe dónde se acumulan y compare el bisel y las caras de trabajo actuales con la estructura de la cinta. A continuación, se puede considerar un perfil adecuado, una superficie pulida o un recubrimiento opcional para ese material de cuchilla y ese adhesivo.",
+        },
+        {
+          question:
+            "¿Qué puede provocar daños en los filos de un par de cuchillas de corte por cizallamiento?",
+          answer:
+            "El contacto involuntario entre los filos de las cuchillas superior e inferior durante el acoplamiento puede dañar un par de cuchillas de corte por cizallamiento. Inspeccione ambos filos, el movimiento de acoplamiento del soporte y las posiciones de las cuchillas instaladas. Compare los daños localizados con el desgaste gradual antes de cambiar el material, de modo que la sustitución solucione el problema observado en lugar de repetir un problema de contacto o de configuración.",
+        },
+        {
+          question:
+            "¿Cómo influyen el grosor de la cuchilla, el diámetro interior y la altura del cóncavo en el ajuste de la cuchilla de recambio?",
+          answer:
+            "El diámetro interior permite situar la cuchilla en su soporte, el grosor de la hoja describe la sección del material y la altura del cóncavo describe el perfil axial general de una cuchilla cóncava. Junto con la anchura del anillo inferior y los detalles de montaje, estas dimensiones determinan el punto de encuentro de los filos de trabajo. Anótelas por separado al sustituir una cuchilla en un soporte ya instalado.",
+        },
+        {
+          question:
+            "¿Debo sustituir tanto las cuchillas de corte superiores como las inferiores?",
+          answer:
+            "Se puede solicitar una sola pieza de recambio cuando la cuchilla de acoplamiento que se conserva sigue siendo apta para su uso y se conoce su geometría. Inspeccione ambos filos de corte, las caras de montaje y los diámetros de trabajo. Para un par completo, identifique por separado las posiciones superior e inferior, de modo que se puedan considerar conjuntamente sus dimensiones y la elección de materiales, incluyendo cualquier reafilado previo.",
+        },
+        {
+          question:
+            "¿Puede Sureay fabricar cuchillas de corte de film a medida a partir de un plano o una muestra?",
+          answer:
+            "Sí. Sureay puede suministrar diámetros interiores, secciones de hoja, características de montaje y perfiles de corte a medida. Un plano establece las nuevas dimensiones previstas; una muestra desgastada ayuda a identificar la geometría instalada y cualquier material perdido por el uso o el afilado. Incluya los detalles de la cuchilla de acoplamiento o del yunque para formar un par de trabajo e indique la cantidad necesaria para cada configuración.",
+        },
+      ],
+      company: [],
     },
-    standardDimensions: [
-      {
-        spec: "Top Blade — Tidland / Atlas",
-        od: "75",
-        id: "25.4",
-        thickness: "1.0 / 1.2",
-      },
-      {
-        spec: "Bottom Anvil — Tidland / Atlas",
-        od: "70",
-        id: "25.4",
-        thickness: "8 / 10",
-      },
-      {
-        spec: "Top Blade — Kampf / Dusenbery",
-        od: "100",
-        id: "32",
-        thickness: "1.2 / 1.5",
-      },
-      {
-        spec: "Bottom Anvil — Kampf / Dusenbery",
-        od: "80",
-        id: "60",
-        thickness: "16 / 20",
-      },
-      {
-        spec: "Top Blade — Goebel / BHS / Agnati",
-        od: "118",
-        id: "80",
-        thickness: "1.2 / 2.0",
-      },
-      {
-        spec: "Bottom Anvil — Goebel / BHS / Agnati",
-        od: "100",
-        id: "70",
-        thickness: "16 / 20",
-      },
-    ],
     relatedBladeIds: [
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
       "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
       "nonwoven-slitter-knives",
     ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 150,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "¿Qué tolerancia de grosor debo especificar para las cuchillas de una pila de mandriles de varias cuchillas?",
-          answer:
-            "Para el corte longitudinal de películas y láminas flexibles, especifique una tolerancia de espesor de ±0,002 mm y una excentricidad T.I.R. de ≤20,02 mm. Un error de 0,005 mm por cuchilla se acumula en una pila de 12 cuchillas, produciendo una desviación visible del ancho de corte y picos de tensión en la banda. Rectificamos todas las cuchillas con estas tolerancias y las verificamos en una MMC antes de enviarlas.",
-        },
-        {
-          question:
-            '¿Qué es la "relación de sobrevelocidad" de las cuchillas de cizalla superior/inferior y por qué es importante?',
-          answer:
-            "La relación de sobrevelocidad es el diferencial de velocidad de rotación intencionado entre el eje superior de la cuchilla y el eje inferior del yunque, normalmente fijado entre un 2 y un 5% por encima de la velocidad de la banda. Este diferencial crea una acción de microcizallamiento en el punto de corte, produciendo un borde más limpio y reduciendo la acumulación de calor frente a un corte puramente tangencial. A relaciones de sobrevelocidad más altas, la calidad del corte mejora pero el desgaste del borde se acelera; a un diferencial cero, la cuchilla actúa más como un cortador de aplastamiento. El OEM de su cortadora especifica la relación de sobrevelocidad diseñada; nosotros suministramos pares adaptados y optimizados para ese ajuste.",
-        },
-        {
-          question:
-            "¿Cómo puedo evitar la transferencia y la acumulación de película adhesiva en las caras de las cuchillas de la cortadora?",
-          answer:
-            "La acumulación de adhesivo en las caras de las cuchillas aumenta la fricción, incrementa la temperatura de la banda y provoca la contaminación por transferencia de material. Ofrecemos revestimientos de PVD TiN (nitruro de titanio) y DLC (carbono similar al diamante) que reducen la adherencia de la superficie hasta en un 80%, lo que amplía los intervalos de funcionamiento limpio en aplicaciones de corte de cintas sensibles a la presión y laminados adhesivos.",
-        },
-        {
-          question:
-            "¿Cuándo debo pasar del acero D2 al acero pulvimetalúrgico (PM) para el corte de film flexible?",
-          answer:
-            "El acero PM (ASP23, ASP52) se recomienda para cortar sustratos flexibles muy abrasivos, como films de embalaje reforzados con fibra de vidrio, revestimientos antiadherentes recubiertos de sílice o films de barrera rellenos de cerámica. Estos materiales superan el límite de abrasión de D2 en una sola tirada de producción debido a las partículas de relleno mineral duro. Las calidades PM ofrecen una distribución uniforme del carburo y una duración del filo entre un 50 y un 80% mayor en sustratos flexibles muy abrasivos.",
-        },
-        {
-          question:
-            "¿Qué revestimiento superficial es mejor para cortar cintas adhesivas sensibles a la presión a alta velocidad?",
-          answer:
-            "El recubrimiento PVD DLC (carbono diamante) es la especificación superior para el corte de cinta de espuma de doble recubrimiento y adhesivo de transferencia. Reduce el ángulo de contacto en la cara de la cuchilla en aproximadamente 35° frente al D2 sin recubrimiento, manteniendo un deslizamiento constante durante tiradas de producción de 8-12 horas sin paradas de limpieza. El TiN es eficaz para cintas de enmascarar de una cara y etiquetas ligeramente adhesivas con un coste de revestimiento inferior.",
-        },
-        {
-          question:
-            "¿Puede Sureay suministrar pares de cuchillas superiores e inferiores verificadas con una holgura de cizallamiento especificada?",
-          answer:
-            "Sí. Los pares de cizallas emparejados (cuchilla superior pulida y cuchilla inferior de yunque acanalado) se suministran con una holgura de cuchilla a cuchilla verificada previamente según las especificaciones de su sustrato. Registramos el diámetro exterior, el diámetro interior, el grosor y la holgura de cizalladura diseñada para cada par emparejado en una hoja de datos de ingeniería que se envía con el utillaje, lo que permite a los operarios de la línea replicar el ajuste de holgura en cada reinstalación.",
-        },
-        {
-          question:
-            "¿Qué geometría de filo de cuchilla se recomienda para cortar tela no tejida fundida sin que se deshilache la fibra?",
-          answer:
-            "Para las telas no tejidas meltblown y spunbond (8-80 GSM), especifique un ángulo de rastrillo positivo (15°-20°) con Ra ≤0,4 μm de acabado superficial. Esta geometría cizalla a través de la estructura de fibra suelta limpiamente sin desplazamiento lateral de la fibra que causa bordes deshilachados. Para meltblown muy ligero (<15 GSM), un recubrimiento ESD (descarga electrostática) opcional evita la atracción de fibra inducida por estática a la cara de la cuchilla.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
-        },
-        {
-          question:
-            "¿Qué diferencia al tratamiento térmico de Sureay de otras alternativas más baratas?",
-          answer:
-            "A diferencia del templado estándar, todas las cuchillas Sureay se someten a un tratamiento criogénico profundo tras el endurecimiento en vacío. Esto transforma la austenita retenida en martensita, aumentando la resistencia al desgaste hasta en un 40% y garantizando una dureza uniforme en todo el filo de corte.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Las cuchillas de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question:
-            "¿Qué certificaciones de calidad posee Sureay y puede facilitar informes de ensayos de materiales?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional y un certificado de lote tratamiento térmico. Para la cualificación OEM, se pueden solicitar informes dimensionales completos de MMC y certificados de acería.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 cuchillas) para verificar el ajuste de la máquina y probar la vida útil del filo. El plazo de entrega estándar de las muestras es de 5-7 días laborables. En el caso de los perfiles personalizados, se fabrican muestras de aprobación dimensional antes de iniciar la producción completa, sin compromiso de utillaje hasta que se confirme el ajuste.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Adquiera cuchillas de recambio para la cortadora de papel de su rebobinadora, con cuchillas de parte superior cóncava o plana y configuraciones inferiores a juego. Envíe su plano o muestra y el tipo de papel a Sureay para obtener un presupuesto a medida para su par de cuchillas.",
     id: "rotary-slitter-knives-paper",
-    name: "Cuchillas cortadoras de papel",
+    seoDescription:
+      "Cuchillas de corte para papel tisú (Papel tisú), papel kraft y papel estucado. Combine cuchillas superiores cóncavas o planas con cuchillas inferiores a juego, fabricadas en acero para herramientas o con punta de carburo.",
+    name: "Cuchillas de corte longitudinal para papel",
     fullName:
-      "Cuchillas cortadoras de papel y tisú para líneas de conversión de alta velocidad",
+      "Cuchillas de corte longitudinal para papel tisú, kraft y estucado",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Cuchillas cortadoras de papel",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Transformación del papel",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
-    ],
+    categoryDisplay: "Cuchillas de corte longitudinal para papel",
+    image: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Cuchillas cortadoras de papel rectificadas para celulosa, no adaptadas de utillaje para film. Pares de cizalla superior e inferior emparejados en D2, M2 HSS o 52100, con tolerancia de ±0.002mm en espesor y ≤0.02mm de desviación T.I.R., con la holgura preajustada al sustrato que esté procesando: 0.02–0.05mm para tisú, 0.05–0.10mm para papel kraft. Con capacidad de hasta 600 m/min en líneas de tisú. Envíenos un plano, una cuchilla desgastada o simplemente el modelo de su máquina y confirmaremos el ajuste.",
-    fullDescription:
-      "Las líneas de conversión de papel exigen cuchillas cortadoras que proporcionen cortes uniformes y sin polvo de fibras en producciones de varios turnos. Las cuchillas Sureay cuchillas rotativas de corte longitudinal para papel están rectificadas con precisión a partir de acero para herramientas D2 (para papel y cartón estándar) o acero de alta velocidad M2 (para papel tisú de alta velocidad y papeles especiales) con tolerancias dimensionales exactas que evitan el bamboleo de la cuchilla y garantizan una calidad de corte uniforme.\n\n## Metalurgia específica del papel\n\nA diferencia del corte de películas de plástico o láminas metálicas, la conversión de papel somete el borde de la cuchilla a un desgaste abrasivo continuo debido a las fibras de celulosa, los agentes de encolado y los rellenos minerales (carbonato cálcico, caolín). Seleccionamos aleaciones de cuchillas específicas para aplicaciones de papel:\n\n**Acero para herramientas D2 (HRC 60-62):** Grado estándar para papel kraft, cartón y cartón ondulado. El contenido de cromo del 12% proporciona una excelente resistencia a la abrasión contra fibras ricas en lignina y compuestos minerales de relleno.\n\n**Acero de alta velocidad M2 (HRC 62-64):** Preferido para la transformación de alta velocidad de papel tisú y papel sanitario, donde las velocidades de línea superan los 400 m/min. El molibdeno y los carburo de tungsteno mantienen la geometría del filo bajo el estrés térmico del corte a ultra alta velocidad.\n\n**Acero para rodamientos 52100 (HRC 58-60):** Opción rentable para la conversión de papel prensa estándar, papel de revista y fibra reciclada de baja calidad, donde los índices de desgaste son moderados.\n\n**Carburo de Tungsteno (Sólido o con Punta de Carburo):** El siguiente nivel para papel estucado de alto contenido en cenizas, papel para artes gráficas y cartón ondulado, donde las cargas minerales desgastan rápidamente un filo de acero entre cambios. Se suministra en carburo sólido en cuchillas de menor diámetro, o con punta de carburo -un filo de carburo soldado a un cuerpo de acero- en cuchillas de mayor diámetro, donde un cuerpo íntegramente de carburo no resulta rentable.\n\n## Corte por cizallamiento vs. corte por aplastamiento para papel\n\nLa transformación del papel emplea dos métodos principales de corte:\n\n**Corte por cizallamiento (pares de cuchillas superior/inferior):** Dos cuchillas circulares que giran en sentidos opuestos crean una acción de cizallamiento similar a la de una tijera. Este es el método estándar para papeles estucados, tisú y embalajes ligeros en los que se debe minimizar la tracción de la fibra y la generación de polvo. Suministramos pares emparejados con holgura de cizallamiento controlada (normalmente 0,02-0,05 mm para papel tisú, 0,05-0,10 mm para papel kraft).\n\n**Corte por aplastamiento (cuchilla contra yunque):** Una cuchilla circular endurecida aplasta la banda de papel contra un rodillo de yunque acanalado. Se utiliza para embalajes pesados de cartón ondulado y multicapa en los que el mantenimiento de la holgura de la cizalla es poco práctico. La cuchilla contra yunque (posición inferior) está fabricada con geometría multiranura que comprime y fractura las fibras de papel.\n\n## Rendimiento sin polvo de fibras\n\nEl polvo de fibra generado en el borde de corte contamina las estaciones de rebobinado de las fábricas de papel, degrada la calidad del producto en las calidades de papel tisú y papel sanitario y provoca paradas de limpieza no planificadas. Nuestras cuchillas cortadoras de papel están rectificadas con precisión a un acabado superficial Ra de 0,2-0,4μm con ángulos de biselado del borde controlados que cortan limpiamente los haces de fibras de celulosa en lugar de desgarrarlos o tirar de ellos. Esto reduce el polvo de fibra en el aire en aproximadamente un 60-70% en comparación con las cuchillas industriales estándar.",
-    disambiguation:
-      "¿Corta película, cinta o envases flexibles? Esas cuchillas están en nuestra página de [Cuchillas cortadoras de película y cinta](/products/rotary-slitter-knives). Esta página cubre únicamente sustratos de papel.",
-    categoryCardAnchorText:
-      "Cuchillas Cortadoras de Papel — tisú, papel kraft y papel estucado",
+      "Cuchillas de recorte de repuesto para papel dePapel tisúe, papel kraft y papel estucado. Cuchillas superiores cóncavas o planas y cuchillas inferiores de acero o carburo, fabricadas según plano.",
     link: "/products/rotary-slitter-knives-paper",
-    isFeatured: false,
-    compatibleMachines: [
-      "Atlas Converting",
-      "Tidland",
-      "Parkinson",
-      "Kampf",
-      "Laem System",
-      "Euromac",
-      "Goebel IMS",
-      "Fabio Perini",
-      "Körber",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 58–64 (steel) / HRA 90–92 (carbide)",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting (matched pairs), Crush Cutting (anvil pairs)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Ra 0.2–0.4μm (precision ground)",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.002mm | Runout: ≤0.02mm",
-      },
-      {
-        label: "Application",
+        label: "Tamaños",
         value:
-          "Tissue & Sanitary Paper, Kraft Paper, Corrugated Board, Coated Papers, Newsprint",
+          "Diámetro exterior cóncavo: 62–203 mm · Diámetro exterior inferior: 70–300 mm",
       },
+      {
+        label: "Material",
+        value:
+          "52100, D2, M2, ASP23, CPM 10V o construcción con puntas de carburo",
+      },
+      {
+        label: "Aplicaciones",
+        value: "Papel tisúto, papel kraft, papel estucado y papel reciclado",
+      },
+      {
+        label: "Montaje",
+        value:
+          "Cuchilla superior montada en el eje o brida y superficie de corte a juego en la cuchilla inferior",
+      },
+      {
+        label: "Dureza",
+        value:
+          "58-64 HRC para cuchillas de acero; 90-92 HRA para filos de carburo",
+      },
+      {
+        label: "Acabado superficial",
+        value: "Superficies rectificadas con precisión, Ra 0,2–0,4 μm",
+      },
+      {
+        label: "Tolerancia de espesor",
+        value: "±0.002 mm",
+      },
+      {
+        label: "Excentricidad",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Estilos de corte",
+        value:
+          "Corte por cizallamiento con cuchillas superior e inferior a juego o corte por aplastamiento con pares de yunques",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Cuchillas de corte para Papel tisú y papel Kraft",
+      sizeRange:
+        "Diámetro exterior cóncavo: 62–203 mm · Diámetro exterior inferior: 70–300 mm",
+      heroAlt:
+        "Par de cuchillas circulares para cortadoras de papel en el que se aprecian la cuchilla superior y el anillo inferior",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-paper-detail.webp",
+        alt: "Cuchilla de corte de papel en la que se aprecian la cara de corte rectificada y el orificio central",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Cuchillas superiores",
+          title: "Cuchillas superiores",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Perfil o referencia",
+            "Altura del plato",
+          ],
+          rows: [
+            ["SR001201", "90 × 60 × 1.2 mm", "Cóncavo", "Ver plano"],
+            ["SR001202", "130 × 80 × 1.5 mm", "Cóncavo", "Ver plano"],
+            [
+              "SR001203",
+              "150 × 80 × 2.5 mm",
+              "Cóncava / Clase II de Tidland",
+              "Ver plano",
+            ],
+            ["SR001204", "180 × 90 × 3.5 mm", "Cóncavo", "Ver plano"],
+            [
+              "SR001205",
+              "200 × 80 × 4.0 mm",
+              "Cóncava / Clase III de Tidland",
+              "9.25 mm",
+            ],
+            [
+              "SR001206",
+              "203 × 90 × 4.0 mm",
+              "Bielomatik 701.115",
+              "Ver plano",
+            ],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Cuchillas inferiores",
+          title: "Cuchillas inferiores",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Montaje o borde",
+            "Referencia",
+          ],
+          rows: [
+            [
+              "SR001211",
+              "105 × 80 × 15 mm",
+              "Brida",
+              "Series dimensionales de DIENES",
+            ],
+            [
+              "SR001212",
+              "130 × 90 × 20 mm",
+              "Brida",
+              "Series dimensionales de DIENES",
+            ],
+            [
+              "SR001213",
+              "190 × 138 × 15 mm",
+              "Doble filo",
+              "Tidland TID131393",
+            ],
+            [
+              "SR001214",
+              "130 × 100 × 30 mm",
+              "Doble filo",
+              "Tidland TID133503",
+            ],
+            [
+              "SR001215",
+              "250 × 188 × 15 mm",
+              "Doble filo",
+              "Tidland TID131395",
+            ],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Cuchillas adicionales para cortadoras de papel",
+          title: "Cuchillas adicionales para cortadoras de papel",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de cuchilla / Referencia de la plataforma",
+          ],
+          rows: [
+            [
+              "SR001807",
+              "75 × 45 × 1.0 / 1.2 mm",
+              "Cuchilla superior (corte por cizalla)",
+            ],
+            ["SR001808", "70 × 45 × 10 / 8 mm", "Yunque inferior"],
+            [
+              "SR001809",
+              "100 × 32 × 1.2 mm",
+              "Cuchilla superior (corte por cizalla)",
+            ],
+            ["SR001810", "80 × 60 × 20 / 16 mm", "Yunque inferior"],
+            ["SR001811", "150 × 80 × 1.5 mm", "Cuchilla superior (papel tisú)"],
+            ["SR001812", "108 × 80 × 20 / 18 mm", "Yunque inferior"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value:
+            "Diámetro exterior cóncavo: 62–203 mm · Diámetro exterior inferior: 70–300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2, M2, ASP23, CPM 10V o construcción con puntas de carburo",
+        },
+        {
+          label: "Aplicaciones",
+          value: "Papel tisúto, papel kraft, papel estucado y papel reciclado",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Cuchilla superior montada en el eje o brida y superficie de corte a juego en la cuchilla inferior",
+        },
+        {
+          label: "Dureza",
+          value:
+            "58-64 HRC para cuchillas de acero; 90-92 HRA para filos de carburo",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Superficies rectificadas con precisión, Ra 0,2–0,4 μm",
+        },
+        {
+          label: "Tolerancia de espesor",
+          value: "±0.002 mm",
+        },
+        {
+          label: "Excentricidad",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Estilos de corte",
+          value:
+            "Corte por cizallamiento con cuchillas superior e inferior a juego o corte por aplastamiento con pares de yunques",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Valmet",
+      "Voith",
+      "Tidland",
+      "Jagenberg",
+      "Bielomatik",
+      "E.C.H. Will",
     ],
     components: [
       {
-        id: "paper-metallurgy",
-        tag: "CIENCIA DE MATERIALES",
-        title:
-          "¿Qué grado de acero deben utilizar las cuchillas cortadoras de papel?",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Opciones de materiales para la transformación del papel",
         description:
-          "Las fibras de papel contienen cargas minerales abrasivas (carbonato cálcico, caolín, dióxido de titanio) que desafilan rápidamente los aceros de cuchilla estándar. Nuestras calidades D2 y M2 HSS han recibido un tratamiento térmico específico para aplicaciones de conversión de papel y ofrecen una vida útil del filo entre un 40 y un 60% superior a la de las cuchillas de corte de uso general en sustratos de papel recubiertos y rellenos.",
+          "Las opciones de acero para herramientas, HSS, acero PM y con filo de carburo ofrecen a los transformadores de papel diversas opciones de materiales para los tipos de Papel tisú, kraft, estucado y reciclado.",
       },
       {
-        id: "shear-clearance",
-        tag: "PRECISIÓN DE CORTE",
-        title:
-          "¿Qué holgura de cizallamiento detiene el polvo de fibra en el borde de corte?",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Espesor y caras de corte rectificados con precisión",
         description:
-          "Los pares de cizallas superior/inferior emparejados se verifican previamente según las especificaciones de holgura de grado de papel tisú (0,02-0,05 mm para papel tisú ultrafino, 0,05-0,10 mm para papel kraft). Esta holgura controlada cizalla limpiamente los haces de fibras de celulosa sin desgarrarlos ni generar polvo de fibras en el aire que contamine las estaciones de rebobinado y degrade la calidad del producto.",
+          "Las cuchillas para cortadoras de papel pueden rectificarse con precisión según el grosor y el acabado de la superficie de trabajo que usted especifique, tanto para la posición superior como para la inferior en el par de corte.",
       },
       {
-        id: "bore-locking-options",
-        tag: "AJUSTE A LA MÁQUINA",
-        title: "¿Qué opciones de orificio, fijación y bisel están disponibles?",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Juegos de cuchillas superiores e inferiores a medida",
         description:
-          "Las cuchillas cortadoras de papel se suministran con orificio liso, con chavetero o de bayoneta para adaptarse a su árbol, y se fijan mediante chaveta, tornillo prisionero, excéntrica con chaveta o excéntrica sin chaveta -según lo que utilice su cortadora o rebobinadora. Las cuchillas superiores se rectifican con un perfil abombado de bisel simple a 15°–20°, con bisel compuesto (de dos etapas) o respaldo hueco disponibles cuando la durabilidad del filo importa más que un ángulo de ataque ultrafino. Envíenos el plano de su cuchilla o árbol actual y confirmaremos el orificio, la fijación y el bisel antes de cortar el acero, de modo que el recambio asiente, se fije y corte exactamente igual que el original.",
+          "Los orificios personalizados, los perfiles cóncavos, las bridas de la cuchilla inferior y las caras de corte permiten la sustitución de cuchillas individuales y la instalación de juegos completos en rebobinadoras de papel ya existentes.",
+        relatedBladeIds: ["slitter-rewinder-bottom-knives"],
       },
     ],
-    steelGrades: {
-      intro:
-        "Las fibras de papel desgastan una cuchilla de forma distinta al film o la lámina metálica: la carga abrasiva procede de las cargas minerales de la pasta, no de la fibra en sí. Los siguientes grados cubren la gama que cotizamos para papel, tisú y cartón.",
-      rows: [
-        {
-          grade: "D2 Tool Steel",
-          hardness: "HRC 58–61",
-          bestFor:
-            "Papel kraft estándar, cartoncillo y transformación de cartón ondulado -nuestro grado de papel por defecto.",
-          tradeoff:
-            "Buena relación calidad-precio general; la vida útil del filo cae más rápido que en M2 o carburo en sustratos muy cargados o estucados.",
-        },
-        {
-          grade: "M2 Acero de Alta Velocidad",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Papel tisú y sanitario de alta velocidad por encima de 400 m/min, donde el filo debe mantener su geometría bajo ciclos térmicos.",
-          tradeoff:
-            "Cuesta más que el D2; el intervalo de reafilado sigue siendo más corto que el del carburo en pastas abrasivas.",
-        },
-        {
-          grade: "52100 Acero para Rodamientos",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Papel prensa estándar, papel de revista y fibra reciclada de baja calidad, donde los índices de desgaste son moderados.",
-          tradeoff:
-            "Menor resistencia a la abrasión que el D2 en sustratos cargados o estucados; mejor reservarlo para pastas más limpias.",
-        },
-        {
-          grade: "Carburo de Tungsteno",
-          hardness: "HRA 90–92",
-          bestFor:
-            "Papel estucado de alto contenido en cenizas, papel para artes gráficas y cartón ondulado, donde las cargas minerales desgastan rápidamente un filo de acero entre cambios. Se suministra sólido o con punta de carburo.",
-          tradeoff:
-            "El coste unitario más alto y más frágil ante impactos que el acero para herramientas: requiere una alimentación constante y una alineación limpia para evitar el astillado del filo.",
-        },
-      ],
-      outro:
-        "Disponemos de cuchillas cortadoras de papel tanto sólidas como con punta de carburo. Indíquenos su pasta (virgen, reciclada, estucada o cargada), la velocidad de línea y su intervalo de reafilado actual, y confirmaremos el grado que reduce el coste total por corte, no solo el precio de venta.",
-    },
-    dimensionLabels: {
-      col0: "Tipo de cuchilla",
-      col1: "Diámetro exterior",
-      col2: "Diámetro interior",
-      col3: "Espesor",
-      caption:
-        "* Dimensiones estándar para la transformación del papel. Cuchillas superiores (perfil abombado para corte por cizalladura) e inferiores (yunque ranurado para corte por aplastamiento). Fabricamos cuchillas cortadoras y de yunque para papel desde aproximadamente 50–320mm de diámetro exterior, 20–100mm de orificio y 0.8–20mm de espesor (desde finas cuchillas superiores abombadas hasta yunques ranurados de gran espesor) -fuera de los tres conjuntos anteriores, envíenos el modelo de su máquina y confirmaremos la correspondencia más cercana o el corte a medida según sus dimensiones.",
-    },
-    standardDimensions: [
-      {
-        spec: "Top Blade (Shear)",
-        od: "75 mm",
-        id: "45 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "70 mm",
-        id: "45 mm",
-        thickness: "10 / 8 mm",
-      },
-      {
-        spec: "Top Blade (Shear)",
-        od: "100 mm",
-        id: "32 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "80 mm",
-        id: "60 mm",
-        thickness: "20 / 16 mm",
-      },
-      {
-        spec: "Top Blade (Tissue)",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "108 mm",
-        id: "80 mm",
-        thickness: "20 / 18 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "tissue-log-saw-blades",
-      "corrugated-slitter-scorer-blades",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 280,
-    },
     faqs: {
       technical: [
         {
           question:
-            "¿Qué grado de material debo utilizar para la transformación de papel tisú a alta velocidad de 500 m/min?",
+            "¿Puede Sureay fabricar cuchillas de corte de papel para mi rebobinadora actual?",
           answer:
-            "Especifique acero de alta velocidad M2 con HRC 62-64 para la conversión de papel tisú por encima de 400 m/min. El molibdeno y los carburo de tungsteno de M2 mantienen la geometría del filo bajo los ciclos térmicos generados por el corte a ultra alta velocidad, lo que proporciona una vida útil de la campaña entre 2 y 3 veces superior a la de D2 en calidades de papel tisú ligeras (12-18 GSM).",
+            "Sí. Un plano o una muestra pueden determinar el diámetro interior, el perfil y la disposición de montaje de una cuchilla superior o inferior de recambio. Incluya el tipo de papel y las dimensiones de la cuchilla de acoplamiento. La referencia de la pieza original ayuda a distinguir las nuevas dimensiones previstas de las de una muestra desgastada. Para conjuntos con brida, copa o anillo reemplazable, consulte [Cuchillas inferiores para cortadoras-rebobinadoras](/products/slitter-rewinder-bottom-knives).",
         },
         {
           question:
-            "¿Cómo puedo evitar la contaminación por polvo de fibra en el borde de la hendidura?",
+            "¿En qué casos se justifica el uso de cuchillas de corte de acero rápido (HSS) o de carburo para papeles estucados o con relleno?",
           answer:
-            "El polvo de fibras se debe principalmente a una holgura excesiva de la cizalla (>0,10 mm en el papel tisú) o a un acabado rugoso de la superficie de la cuchilla (Ra >0,6μm) que desgarra los haces de fibras en lugar de cizallarlos limpiamente. Especifique pares de cizallas emparejadas con holgura verificada previamente (0,02-0,05 mm para papel tisú, 0,05-0,10 mm para papel kraft) y acabado superficial Ra ≤0,4μm. Esto reduce el polvo en suspensión en un 60-70% en comparación con las cuchillas industriales estándar.",
+            "Considere utilizar un material diferente para el filo de trabajo cuando la cuchilla actual muestre un desgaste progresivo con el tipo de papel en cuestión. El contenido de recubrimiento o de relleno, el estado de la cuchilla de contrapresión y las astillas observadas influyen en esa decisión. Compare la resistencia al desgaste con el comportamiento del filo en el par actual, teniendo en cuenta en la evaluación la estabilidad del montaje y la configuración del corte.",
         },
         {
           question:
-            "¿Debo utilizar el corte de cizalla o el corte por aplastamiento para la transformación del cartón ondulado?",
+            "¿Qué provoca el polvo de papel o los bordes irregulares durante el corte longitudinal?",
           answer:
-            "Para el cartón ondulado (flauta B/C/E), el corte por aplastamiento contra un rodillo de yunque ranurado es el método estándar. La cuchilla de yunque comprime y fractura las fibras de papel limpiamente sin requerir un mantenimiento preciso de la holgura de la cizalla. El corte por cizalladura se reserva para papeles estucados ligeros y tissue en los que debe minimizarse la tracción de las fibras. Para aplicaciones de cartón ondulado por encima de 200 m/min, especifique las cuchillas de yunque carburo de tungsteno para resistir el desgaste por compresión del cartón multicapa.",
+            "La estructura del papel, el estado de la cuchilla de acoplamiento, la estabilidad del soporte y la configuración del corte pueden afectar al borde incluso cuando la cuchilla superior está afilada. Inspeccione ambos bordes de trabajo y compare la muestra cortada con los ajustes normales de producción. Anotar el tipo de papel y los ajustes ayuda a distinguir los cambios en el material o en la configuración del desgaste del par de cuchillas.",
         },
         {
           question:
-            "¿Con qué frecuencia deben reafilarse las cuchillas de las cortadoras de papel y cuántas reafilaciones son posibles?",
+            "¿Es necesario sustituir a la vez las cuchillas superior e inferior de la cortadora de papel?",
           answer:
-            "Las cuchillas de las cortadoras de papel de las líneas de transformación de papel tisú (400-600 m/min) suelen requerir un reafilado cada 40-60 horas de funcionamiento debido a las altas velocidades de corte y a los rellenos minerales abrasivos del papel tisú. Para la conversión de papel kraft y cartón (200-300 m/min), el intervalo de reafilado se extiende a 80-120 horas. Las cuchillas M2 HSS y D2 pueden reafilarse 4-6 veces antes de que el diámetro exterior caiga por debajo del diámetro mínimo operativo. Ofrecemos un servicio de reafilado con verificación de la dureza y control dimensional CMM incluidos.",
+            "Se pueden pedir por separado cuando el componente que se conserva se encuentra en buen estado y se conoce la geometría de trabajo. Compruebe tanto la cara de corte inferior como el borde superior. Si alguna de las cuchillas ha sido reafilada, confirme sus dimensiones restantes antes de seleccionar una sola cuchilla de recambio o de pedir un par completo a juego.",
         },
         {
           question:
-            "¿Cuál es la causa de que la calidad de los bordes de corte no sea uniforme en toda la anchura de la banda de papel?",
+            "¿Son la misma pieza las cuchillas cóncavas, las cuchillas superiores y las cuchillas macho?",
           answer:
-            "La calidad desigual de la hendidura (corte limpio en un lado, tirón de la fibra en el otro) indica un montaje desigual de la cuchilla o una expansión térmica diferencial a través del árbol. Verifique que todas las cuchillas del árbol estén rectificadas con una tolerancia de grosor de ±0,002 mm y que la excentricidad del eje del árbol sea ≤0,02 mm T.I.R. La expansión térmica puede mitigarse utilizando metalurgia adaptada (todo D2 o todo M2) en todo el juego de cuchillas, garantizando coeficientes de expansión térmica uniformes durante el funcionamiento a alta velocidad.",
+            "Estos nombres suelen referirse al elemento superior de un par de cuchillas de corte por cizallamiento. El término «cóncavo» describe la forma axial, mientras que «superior» y «macho» describen la posición de la cuchilla. También existen cuchillas de parte superior plana. Compare el perfil real, la disposición de montaje y la relación con la cuchilla inferior para identificar el recambio correcto a partir de estos términos de compra.",
+        },
+        {
+          question:
+            "¿Por qué se indican por separado el grosor de la cuchilla y la altura del cóncavo?",
+          answer:
+            "El grosor de la cuchilla mide la sección del material; la altura cóncava mide el perfil axial total de la cuchilla. Dos cuchillas cóncavas pueden compartir el mismo diámetro exterior y el mismo orificio, pero colocar sus filos de corte de forma diferente. Mantener estas dimensiones separadas permite que la cuchilla de recambio se adapte a la disposición existente del soporte y de la cuchilla inferior, al tiempo que se conserva la posición prevista del filo de trabajo.",
+        },
+        {
+          question:
+            "¿Cuándo deben reafilarse o sustituirse las cuchillas de las cortadoras de papel?",
+          answer:
+            "El reafilado es adecuado cuando la geometría de corte desgastada puede restaurarse dentro de las dimensiones permitidas de la cuchilla. Inspeccione el filo, las caras de trabajo y la relación con la cuchilla contraposida antes de tomar una decisión. El plano de la cuchilla y los requisitos de la máquina definen la geometría restante permitida. La sustitución es adecuada cuando los daños o la pérdida dimensional impiden que se restaure dicha geometría.",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Puede Sureay suministrar cuchillas compatibles con nuestra cortadora/rebobinadora Atlas Converting o Kampf?",
-          answer:
-            "Sí, envíenos una muestra de su cuchilla actual o el número de modelo de su máquina. Confirmaremos el diámetro exterior, el diámetro interior, el perfil del orificio y el grosor de la cuchilla, y le suministraremos cuchillas de sustitución directa fabricadas conforme a las especificaciones de los fabricantes de equipos originales. Disponemos de patrones de ranura personalizados para rodillos de yunque para aplicaciones específicas de conversión de cartón ondulado y cartoncillo.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Las cuchillas de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 cuchillas) para verificar el ajuste de la máquina y probar la vida útil del filo. El plazo de entrega estándar de las muestras es de 5-7 días laborables. En el caso de los perfiles personalizados, se fabrican muestras de aprobación dimensional antes de iniciar la producción completa, sin compromiso de utillaje hasta que se confirme el ajuste.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "groove-bottom-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Adquiera cuchillas de recorte de recambio para láminas de cobre y aluminio con anchos y diámetros interiores personalizados, así como espaciadores a medida para su conjunto de eje. Envíe a Sureay sus planos y la tabla de anchos de corte para recibir un presupuesto que incluya las herramientas que necesita.",
     id: "metal-foil-strip-slitter-knives",
-    name: "Cortadoras de bobinas y tiras",
+    name: "Cuchillas de corte longitudinal para láminas de cobre y aluminio",
     fullName:
-      "Cuchillas cortadoras giratorias de precisión para corte de bandas metálicas, bobinas y láminas de calibre fino",
+      "Cuchillas de corte longitudinal para láminas de cobre y aluminio",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Cuchillas cortadoras de tiras de metal",
+    categoryDisplay:
+      "Cuchillas de corte longitudinal para láminas de cobre y aluminio",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Procesado de metales",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
-    ],
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Cuchillas de corte circular de alta precisión para centros de servicio del metal y trenes de laminación en frío. Acero para herramientas ASP23/ASP52 PM y macizo carburo de tungsteno rectificado con una estricta tolerancia de espesor de ±0,001 mm. Diseñadas para el corte longitudinal sin rebabas de fleje y bobina de aluminio, fleje de cobre, acero inoxidable y acero al silicio de grano orientado.",
-    fullDescription:
-      "El corte de precisión de bandas y láminas metálicas exige un rendimiento metalúrgico y una precisión dimensional que superan con creces las aplicaciones de cizallado estándar. Cuando se procesan metales de calibre fino (de 0,01 mm a 1,5 mm), incluso un defecto microscópico de la cuchilla o una desviación del grosor provocará curvatura (arco lateral), rebabas en los bordes y bobinas rechazadas. Las cuchillas Sureay cuchillas rotativas de corte longitudinal tienen un rectificado de precisión con una tolerancia de espesor de ±0,001 mm y una desviación total indicada (T.I.R.) de ≤0,01 mm, lo que garantiza una alineación perfecta en las pilas de ejes de varias cuchillas.\n\n## Metalurgia avanzada para metales finos\n\nEl corte de diferentes aleaciones metálicas requiere materiales de cuchilla específicos para evitar el embotamiento rápido, el astillado del filo o la corrosión del material (soldadura en frío).\n\n**Acero ASP23 Powder Metallurgy (PM):** Una mejora masiva sobre el D2 convencional. Su estructura de carburo ultrafina y uniforme proporciona una duración del filo de 3 a 5 veces mayor en papel de aluminio para embalaje, tiras de latón y acero al carbono de calibre fino en general sin microastilladuras.\n\n**Acero ASP52 PM:** Diseñado para materiales de alta resistencia. Con un contenido de vanadio del 11%, ASP52 proporciona la resistencia extrema a la abrasión necesaria para cortar tiras de acero inoxidable duro, acero al silicio de grano orientado (núcleos de transformadores) y cobre de berilio.\n\n**Carburo de wolframio macizo:** La especificación definitiva para láminas ultrafinas (<0,05 mm) en las que es obligatorio disponer de bordes afilados y sin rebabas en campañas de producción prolongadas y a alta velocidad.\n\n## Derrotando el Error Acumulativo del Arbor\n\nEn las líneas de corte longitudinal, pueden apilarse de 10 a 40 cuchillas circulares en un solo eje. El error de espesor de cada cuchilla se acumula: un error de ±0,003 mm por cuchilla produce un error masivo de ±0,060 mm en una pila de 20 cuchillas, lo que garantiza anchuras de bobina fuera de especificación. Rectificamos todas las cuchillas de corte de calidad metálica y el espaciador correspondiente con una estricta tolerancia de grosor de ±0,001 mm y los verificamos con equipos CMM para garantizar un error acumulativo cero.\n\n## Acabado superficial antidesgaste\n\nAl cortar metales no ferrosos como el aluminio y el cobre blando, el polvo metálico tiende a adherirse a la cara de la cuchilla (rozamiento), lo que raya gravemente la superficie de las bobinas cortadas. Las cuchillas cortadoras de metal Sureay cuentan con un acabado lateral altamente pulido y lapeado en espejo (Ra ≤0,02μm) que reduce drásticamente la fricción y evita la adherencia de material, garantizando unos bordes de bobina prístinos.",
+      "cuchillas rotativas de corte longitudinals de recambio para láminas de cobre y aluminio. Opciones de carburo, acero para herramientas y acero PM, con diámetros interiores, anchuras y espaciadores a medida.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Kampf",
-      "Sundwig",
-      "GOEBEL IMS",
-      "Fagor Arrasate",
-      "Camu",
-      "Heinrich Georg",
-      "Kohler",
-      "Yuri Roll",
-      "Hohsen",
-    ],
     specs: [
       {
+        label: "Tamaños",
+        value: "OD 100–300 mm",
+      },
+      {
         label: "Material",
-        value: "ASP23, ASP52 (PM Steel), Solid Tungsten Carbide, D2/D3",
+        value: "D2, D3, M2, ASP2023, ASP2052 o carburo de tungsteno (WC-Co)",
       },
       {
-        label: "Hardness",
-        value: "HRC 64–67 (PM Steel) | HRA 91–92 (Carbide)",
+        label: "Aplicaciones",
+        value: "Láminas de cobre y de aluminio",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Dureza",
+        value: "64–67 HRC para acero PM; 91–92 HRA para carburo",
       },
       {
-        label: "Runout (T.I.R.)",
-        value: "≤ 0.01 mm",
+        label: "Tolerancia de espesor",
+        value: "±0.001 mm",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror-lapped Ra ≤0.02μm — prevents galling on Al/Cu",
+        label: "Excentricidad",
+        value: "≤0.01 mm T.I.R.",
       },
       {
-        label: "Application",
-        value: "Aluminum Foil, SS Strips, Silicon Steel, Brass/Copper",
+        label: "Acabado superficial",
+        value: "Superficies pulidas a espejo, Ra ≤ 0,02 μm",
       },
+      {
+        label: "Montaje",
+        value: "Cuchillas montadas en eje con orificios lisos o con chaveta",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas para cortadoras de láminas de cobre y aluminio | A medida",
+      sizeRange: "OD 100–300 mm",
+      heroAlt:
+        "Cuchilla circular para cortadora de láminas con cara pulida y agujero liso",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-foil-strip-slitter-knives-keyway.webp",
+        alt: "Cuchilla circular para cortadoras de láminas metálicas que presenta una ranura de chaveta en el orificio",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Cuchillas de corte longitudinal",
+          title: "Cuchillas de corte longitudinal",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Material",
+          ],
+          rows: [
+            ["SR001253", "130 × 60 × 1 mm", "carburo de tungsteno"],
+            ["SR001254", "130 × 60 × 2 mm", "carburo de tungsteno"],
+            ["SR001255", "130 × 60 × 3 mm", "carburo de tungsteno"],
+            ["SR001256", "130 × 60 × 4 mm", "carburo de tungsteno"],
+            ["SR001257", "130 × 66.68 × 1 mm", "carburo de tungsteno"],
+            ["SR001258", "130 × 66.68 × 2 mm", "carburo de tungsteno"],
+            ["SR001259", "130 × 66.68 × 3 mm", "carburo de tungsteno"],
+            ["SR001260", "130 × 66.68 × 4 mm", "carburo de tungsteno"],
+            ["SR001261", "130 × 66.68 × 5 mm", "carburo de tungsteno"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Tamaños adicionales de cuchillas para láminas y tiras",
+          title: "Tamaños adicionales de cuchillas para láminas y tiras",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de cuchilla / Referencia de la plataforma",
+          ],
+          rows: [
+            [
+              "SR001813",
+              "100 × 40 × 1.0 / 1.5 mm",
+              "Cortadora de láminas finas",
+            ],
+            [
+              "SR001814",
+              "150 × 80 × 2.0 / 3.0 mm",
+              "Cortadora de tiras de precisión",
+            ],
+            [
+              "SR001815",
+              "200 × 120 × 3.0 / 4.0 mm",
+              "Cortadora longitudinal general",
+            ],
+            [
+              "SR001816",
+              "250 × 150 × 4.0 / 5.0 mm",
+              "Silicio / Acero inoxidable",
+            ],
+            ["SR001817", "300 × 200 × 5.0 / 10.0 mm", "Tira de gran espesor"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "OD 100–300 mm",
+        },
+        {
+          label: "Material",
+          value: "D2, D3, M2, ASP2023, ASP2052 o carburo de tungsteno (WC-Co)",
+        },
+        {
+          label: "Aplicaciones",
+          value: "Láminas de cobre y de aluminio",
+        },
+        {
+          label: "Dureza",
+          value: "64–67 HRC para acero PM; 91–92 HRA para carburo",
+        },
+        {
+          label: "Tolerancia de espesor",
+          value: "±0.001 mm",
+        },
+        {
+          label: "Excentricidad",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Superficies pulidas a espejo, Ra ≤ 0,02 μm",
+        },
+        {
+          label: "Montaje",
+          value: "Cuchillas montadas en eje con orificios lisos o con chaveta",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Red Bud Industries",
+      "Fagor Arrasate",
+      "Burghardt + Schmidt",
+      "Heinrich Georg",
     ],
     components: [
       {
-        id: "pm-metallurgy",
-        tag: "DURABILIDAD",
-        title: "Acero pulvimetalúrgico (PM)",
+        id: "selection-1",
+        tag: "Selección",
+        title:
+          "Opciones de acero para herramientas y metal duro para láminas metálicas",
         description:
-          "Los aceros ASP23 y ASP52 PM eliminan la segregación de carburo en bandas que se encuentra en la fundición D2. Esta estructura de grano submicrónico evita el astillado del filo al cortar flejes de acero inoxidable o al silicio duros y de alta resistencia a la tracción.",
+          "Las opciones D2, D3, M2, PM HSS y carburo de tungsteno ofrecen a los procesadores de láminas diversas opciones de material en función del tipo de cobre o aluminio, el calibre de la lámina y el desgaste observado en la cuchilla.",
       },
       {
-        id: "cumulative-tolerance",
-        tag: "PRECISIÓN",
-        title: "Error acumulado cero",
+        id: "selection-2",
+        tag: "Configuración",
+        title:
+          "Superficies de cuchilla rectificadas con precisión para herramientas de laminado",
         description:
-          "En las instalaciones de corte longitudinal en grupo, los errores de grosor de la cuchilla se acumulan rápidamente. Nuestro rectificado de precisión de ±0,001 mm garantiza que las dimensiones de los ejes se mantengan perfectamente dentro de las especificaciones, ahorrando horas de preparación y calce.",
+          "Sureay suministra cuchillas para láminas rectificadas con precisión, fabricadas con los anchos axiales y el acabado de la superficie de trabajo especificados, lo que permite la sustitución de cuchillas individuales dentro de su conjunto de ejes existente.",
       },
       {
-        id: "anti-galling",
-        tag: "CALIDAD DE LA SUPERFICIE",
-        title: "Abrillantador antigripado",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Cuchillas a medida y espaciadores a juego",
         description:
-          'El corte de aluminio y cobre a menudo provoca que el polvo metálico se "suelde en frío" a la cuchilla, rayando el borde de la bobina. Nuestras caras laterales con recubrimiento de espejo (Ra ≤0,02μm) reducen drásticamente la fricción, evitando por completo la adherencia del material.',
+          "Solicite conjuntamente cuchillas para láminas a medida y espaciadores a juego, con anchos individuales, detalles de diámetro interior y cantidades definidas en función de su programa de anchos de corte y del utillaje con el que cuente.",
       },
     ],
-    dimensionLabels: {
-      col0: "Aplicación típica",
-      col1: "Diámetro exterior",
-      col2: "Diámetro interior",
-      col3: "Espesor",
-      caption:
-        "* Las dimensiones representan los estándares comunes de los centros de servicio de metales. Fabricamos según las especificaciones exactas de la máquina y podemos suministrar espaciadores de alta precisión rectificados con la misma tolerancia de ±0,001 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Thin Foil Slitter",
-        od: "100 mm",
-        id: "40 mm",
-        thickness: "1.0 / 1.5 mm",
-      },
-      {
-        spec: "Precision Strip Slitter",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "2.0 / 3.0 mm",
-      },
-      {
-        spec: "General Strip Slitter",
-        od: "200 mm",
-        id: "120 mm",
-        thickness: "3.0 / 4.0 mm",
-      },
-      {
-        spec: "Silicon / Stainless Steel",
-        od: "250 mm",
-        id: "150 mm",
-        thickness: "4.0 / 5.0 mm",
-      },
-      {
-        spec: "Heavy Gauge Strip",
-        od: "300 mm",
-        id: "200 mm",
-        thickness: "5.0 / 10.0 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 750,
-    },
     faqs: {
       technical: [
         {
           question:
-            "¿Debo utilizar D2 o ASP23 para cortar tiras de acero inoxidable?",
+            "¿Cómo puedo especificar cuchillas de recambio a medida y espaciadores a juego?",
           answer:
-            "Mientras que el D2 es adecuado para aceros al carbono blandos, el corte de acero inoxidable de alta resistencia a la tracción provoca un rápido desgaste y microastillado en los bordes del D2. El acero pulvimetalúrgico ASP23 es muy recomendable para flejes de acero inoxidable de menos de 1,0 mm de espesor. Su estructura de carburo uniforme resiste el astillado, proporcionando de 3 a 5 veces la vida del filo de D2 y minimizando el tiempo de inactividad de la máquina.",
+            "Especifique el diámetro exterior, el orificio, la anchura axial y la ranura de chaveta de cada cuchilla, junto con las anchuras de los espaciadores y la disposición de la pila. Incluya las especificaciones de la lámina, la tabla de anchuras de corte y la cantidad de cada configuración. Identifique las piezas que seguirán en uso para que se puedan tener en cuenta las nuevas cuchillas y espaciadores dentro de la disposición completa del eje.",
         },
         {
           question:
-            '¿Cómo se evita el "gripado" o la acumulación de metal al cortar aluminio?',
+            "¿Cómo influyen el espesor del papel de aluminio y los daños en los bordes en la elección del acero o el carburo?",
           answer:
-            "El aluminio es muy susceptible al gripado (soldadura en frío de la cuchilla). Evitamos esto mediante el lapeado espejo de las caras laterales de las cuchillas hasta una rugosidad superficial de Ra ≤0,02μm. Este acabado ultrasuave reduce el coeficiente de fricción, evitando que las partículas de aluminio se adhieran a la cuchilla y rayen sus bobinas acabadas.",
+            "La aleación de la lámina, el espesor, el estado de la superficie y el borde de corte requerido constituyen el punto de partida. Compare el desgaste gradual de la cuchilla actual y cualquier astillamiento del filo en esa estación. La elección del material debe tener en cuenta el estado observado, al tiempo que se mantiene la geometría requerida de la cuchilla y la configuración emparejada, en lugar de seleccionarse únicamente en función de la dureza.",
         },
         {
           question:
-            "¿Por qué es necesaria una tolerancia de espesor de ±0,001 mm?",
+            "¿Qué puede provocar la aparición de rebabas en el papel de aluminio o el cobre cortado?",
           answer:
-            "En las operaciones de corte longitudinal en grupo, se apilan varias cuchillas y separadores en el eje. Si una cuchilla tiene una tolerancia de ±0,005 mm, apilar 20 cuchillas crea un error acumulado de ±0,100 mm. Esto provocará que las bobinas cortadas queden fuera de la especificación de anchura e inducirá la combadura (arqueo). Nuestra tolerancia de ±0,001 mm garantiza una precisión absoluta en toda la pila del árbol.",
+            "El estado del filo de la cuchilla, las holguras de montaje, el estado del eje y la alineación requieren atención cuando aparecen rebabas. Compare las especificaciones de la lámina con la configuración utilizada y, a continuación, anote qué filo y qué posición de corte se ven afectados. Esto facilita distinguir entre una cuchilla dañada y un problema recurrente relacionado con la pila o la configuración de funcionamiento.",
         },
         {
-          question: "¿Pueden suministrar separadores de precisión a juego?",
+          question:
+            "¿Por qué pueden variar los anchos de corte incluso cuando las cuchillas individuales son precisas?",
           answer:
-            "Sí, el corte de precisión requiere que tanto las cuchillas como los separadores tengan tolerancias idénticas. Fabricamos separadores ligeros de aluminio, acero y caucho rectificados con las mismas tolerancias de espesor de ±0,001 mm que nuestras cuchillas de corte longitudinal.",
+            "La anchura axial de una cuchilla describe el componente individual, mientras que la disposición ensamblada de la cuchilla y el espaciador establece las posiciones de corte. Las cuchillas de recambio, aunque sean precisas, deben ocupar las posiciones previstas dentro de esa disposición. Consulte sus dimensiones junto con el plano de montaje y las anchuras de los espaciadores, especialmente cuando se mantengan algunos componentes de una configuración existente.",
+        },
+        {
+          question:
+            "¿Son intercambiables las cuchillas para láminas metálicas sin recubrimiento y las cuchillas recubiertas para electrodos de baterías?",
+          answer:
+            "Las láminas de cobre o aluminio sin recubrimiento y los electrodos de batería recubiertos presentan requisitos de corte diferentes. Un electrodo combina una lámina colectora con capas de recubrimiento, por lo que su perfil de corte y su configuración deben adaptarse a esa estructura. Identifique la banda y la estación concretas al seleccionar un recambio; las aplicaciones de ánodos y cátodos recubiertos se tratan en [Cuchillas de corte para baterías](/products/lithium-battery-slitting-knives).",
+        },
+        {
+          question:
+            "¿Puedo reutilizar los espaciadores existentes al sustituir las cuchillas de la cortadora de láminas?",
+          answer:
+            "Sí, siempre que los espaciadores que se mantengan sigan cumpliendo los requisitos de anchura, diámetro interior y cara de la pila prevista. Anote sus dimensiones y posiciones reales junto con las nuevas anchuras de las cuchillas y la tabla de anchuras de corte. Confirme la disposición final antes de realizar el pedido para que las cuchillas de recambio sean compatibles con los espaciadores que pretende conservar.",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Suministran juegos de cuchillos emparejados con informes de inspección?",
-          answer:
-            "Sí. En el caso de los ejes de corte longitudinal de varias cuchillas, suministramos juegos adaptados acompañados de un informe inspección CMM. Este informe documenta el espesor exacto de cada cuchilla individual, garantizando que el conjunto cumple sus requisitos de tolerancia acumulada antes de la instalación.",
-        },
-        {
-          question:
-            "¿Cuál es el plazo de entrega de las cuchillas cortadoras de acero PM o de carburo?",
-          answer:
-            "Los tamaños estándar de acero D2 y PM básico pueden fabricarse normalmente en 10-15 días laborables. El carburo de tungsteno macizo y las aleaciones PM altamente especializadas requieren un complejo lapeado y rectificado, y suelen tardar entre 15 y 25 días laborables en función del diámetro exterior y los requisitos de tolerancia.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Mantenga su línea de reciclaje abastecida con cuchillas trituradoras de doble eje de recambio diseñadas en función de su conjunto de cuchillas actual. Se ofrecen perfiles de gancho personalizados, distintos espesores y orificios para electroerosión por hilo. Envíenos su plano o una muestra para obtener un presupuesto de cuchillas individuales o de un juego completo. Las marcas de las máquinas sirven como referencia de compatibilidad para las piezas de recambio de Sureay.",
     id: "twin-shaft-blades-recycling",
-    name: "Cuchillas trituradoras de doble eje",
-    fullName:
-      "Heavy-Duty D2/SKD11 Cuchillas de Doble Eje para Reciclaje de Plásticos, RSU y Madera",
+    name: "Cuchillas para trituradoras de doble eje",
+    fullName: "Cuchillas para trituradoras de doble eje para reciclaje general",
+    seoTitle:
+      "cuchillas trituradoras de doble eje | Plásticos y residuos mixtos",
+    seoDescription:
+      "cuchillas trituradoras de doble eje de recambio para plásticos, palés de madera y residuos mixtos. Opciones en D2, SKD11 y 42CrMo, con ganchos y orificios a medida.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Cuchillas trituradoras",
-    image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+    categoryDisplay: "Cuchillas para trituradoras",
+    image:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
+    imageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
     gallery: [
-      "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Doble eje de carburo de cromo D2/SKD11 cuchillas trituradoras diseñado según el principio de intersección de acción tijera para grandes volúmenes de RSU, plásticos voluminosos, residuos electrónicos y palets de madera. Endurecido al vacío HRC 55-62 con tratamiento criogénico profundo para prolongar la vida útil de la hoja. Geometrías de garras 3-12 personalizadas. Taladros de alambre EDM para ajuste sin holgura en rotores Weima, Untha, SSI y Vecoplan.",
-    fullDescription:
-      "Las cuchillas trituradoras de doble eje funcionan según el principio de intersección de acción de tijera: dos ejes contrarrotantes con cuchillas de garra entrelazadas que cizallan la materia prima a través de una interfaz de tijera, proporcionando una fuerza de agarre agresiva con baja demanda de par.\n\nAl procesar residuos voluminosos muy abrasivos -como RSU contaminados con metales, purgas de plástico de pared gruesa o balas de plástico rígido mezclado-, las cuchillas estándar sufren un redondeo prematuro de los bordes, alargamiento del orificio y fractura catastrófica del gancho.\n\nLas cuchillas multieje Sureay cuchillas trituradoras se fabrican con aceros para herramientas D2 (1.2379), SKD11 y 42CrMo, endurecidos al vacío y templados mediante 4-5 ciclos para conseguir una microestructura martensítica totalmente estabilizada (HRC 55-62). La etapa de tratamiento criogénico profundo bajo cero (-196°C, 24 horas de inmersión) elimina la austenita retenida y aumenta sustancialmente la resistencia al desgaste sin sacrificar el margen de tenacidad necesario para evitar la fractura en masa en materias primas contaminadas.\n\n## Geometría del gancho optimizada por análisis de elementos finitos\n\nEl perfil del gancho de corte dicta la eficacia del agarre y la resistencia a la fatiga. Sureay utiliza la simulación por análisis de elementos finitos (FEA) para optimizar la distribución de la tensión en la cuchilla durante los impactos de alto par. Los diseños de tres garras (3C) proporcionan una fuerza de agarre agresiva para madera de gran tamaño y contenedores IBC; las configuraciones de 8 garras (8C) están optimizadas para plásticos rígidos mixtos y RSU; las variantes de 12 garras (12C) producen un tamaño de partícula de salida más fino para el procesamiento posterior. Todos los perfiles de gancho están reforzados en el radio de la raíz para resistir la deformación bajo cargas cíclicas sostenidas.\n\n## Taladros de precisión para electroerosión por hilo\n\nUn ajuste flojo entre el orificio de la pala y el eje del rotor crea microimpactos que alargan progresivamente el orificio y destruyen el eje. Sureay elimina este modo de fallo: todos los orificios de montaje interiores -exagonales, octogonales o estriados- se procesan utilizando Wire-EDM de precisión, lo que garantiza un ajuste sin holgura para los sistemas de rotor SSI, Untha, Weima y Vecoplan.\n\n## Selección de aleaciones por materia prima\n\nD2 (1.2379) - Mezcla de plásticos y residuos ligeros: Botellas de HDPE postconsumo, bandejas de PET, piezas moldeadas de PP y balas de plástico rígido mezclado. Resistencia a la abrasión rentable con carburo de cromo para líneas generales de reciclado.\n\nSKD11 - Corrientes contaminadas abrasivas: Plásticos técnicos rellenos de vidrio, films agrícolas sucios y chatarra postindustrial muy contaminada. La dureza superior del SKD11 prolonga la vida útil del inserto en materiales de cara dura dentro de corrientes contaminadas.\n\n42CrMo - Madera y residuos metálicos: Palés de madera, RSU voluminosos y chatarra postindustrial con riesgo de contaminación metálica. la mayor absorción de energía de impacto del 42CrMo evita la fractura frágil que provoca daños catastróficos en el rotor en caso de impacto metálico.",
+      "Cuchillas de recambio D2/SKD11 para trituradoras de doble eje que procesan plásticos, madera y residuos sólidos urbanos. Diámetros interiores, espesores y perfiles de gancho personalizados según plano.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
-    compatibleMachines: [
-      "WEIMA",
-      "UNTHA",
-      "Vecoplan",
-      "SSI Shredding Systems",
-      "Lindner",
-      "Erdwich",
-      "BRT Hartner",
-      "ZERMA",
-    ],
     specs: [
       {
         label: "Material",
         value: "D2 (1.2379), SKD11, 42CrMo",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–62 (4–5 tempering cycles)",
+        label: "Dureza",
+        value: "55–62 HRC (4–5 ciclos de revenido)",
       },
       {
-        label: "Claw Count",
-        value: "3-Claw · 8-Claw · 12-Claw (custom)",
+        label: "Recuento de garras",
+        value: "3 garras · 5 garras · 8 garras · 12 garras",
       },
       {
-        label: "Thickness",
-        value: "10 mm – 150 mm",
+        label: "Diseño del orificio",
+        value:
+          "Electroerosión por hilo de precisión: hexagonal / octogonal / estriado",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM: Hex / Octagonal / Splined",
-      },
-      {
-        label: "Compatibility",
+        label: "Compatibilidad",
         value: "Weima, Untha, SSI, Vecoplan, Genox",
       },
       {
-        label: "Application",
-        value: "MSW · Plastics · Wood Pallets · Bulky Waste",
+        label: "Aplicación",
+        value:
+          "Residuos sólidos urbanos · Plásticos · Palés de madera · Residuos voluminosos",
+      },
+      {
+        label: "Tamaños",
+        value:
+          "Diámetro exterior (Ø) en catálogo: 150–450 mm; diámetros exteriores a medida hasta Ø800 mm; espesor: 10–150 mm",
       },
     ],
-    components: [
-      {
-        id: "fea-geometry",
-        tag: "INGENIERÍA",
-        title: "Perfil de gancho optimizado mediante AEF",
-        description:
-          "Geometría del gancho diseñada mediante análisis de elementos finitos para eliminar los concentradores de tensiones. las configuraciones de 3, 8 y 12 garras proporcionan la fuerza de agarre correcta para cada tipo de materia prima.",
-      },
-      {
-        id: "wire-edm",
-        tag: "PRECISIÓN",
-        title: "Taladros de precisión con alambre EDM",
-        description:
-          "Todos los orificios de montaje son cortados por Wire-EDM a ±0,01 mm, garantizando un ajuste sin holgura que elimina el micro-rocking que causa daños en el eje y el alargamiento del orificio.",
-      },
-      {
-        id: "cryogenic-treatment",
-        tag: "METALURGIA",
-        title: "Tratamiento criogénico profundo",
-        description:
-          "El tratamiento criogénico postendurecimiento a -196°C elimina la austenita retenida, estabilizando la microestructura de martensita para una resistencia al desgaste hasta un 40% mayor sin reducir la tenacidad.",
-      },
+    relatedBladeIds: [
+      "multi-shaft-blades-metal",
+      "tire-shredder-blades",
+      "twin-shaft-blades-battery",
     ],
     dimensionLabels: {
       col0: "Trituradoras",
@@ -731,144 +915,221 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "200 Series",
+        itemNo: "SR002101",
+        spec: "Serie 200",
         od: "Φ 150 mm",
         thickness: "15 mm",
-        bore: "Hex Ø70 mm",
-        hooks: "5-Claw",
+        bore: "Hexagonal de Ø70 mm",
+        hooks: "5 garras",
       },
       {
-        spec: "400 Series",
+        itemNo: "SR002102",
+        spec: "Serie 400",
         od: "Φ 180 mm",
         thickness: "20 mm",
-        bore: "Hex Ø90 mm",
-        hooks: "8-Claw",
+        bore: "Hexagonal de Ø90 mm",
+        hooks: "8 garras",
       },
       {
-        spec: "600 Series",
+        itemNo: "SR002103",
+        spec: "Serie 600",
         od: "Φ 200 mm",
         thickness: "20 mm",
-        bore: "Hex Ø140 mm",
-        hooks: "8-Claw",
+        bore: "Hexagonal Ø140 mm",
+        hooks: "8 garras",
       },
       {
-        spec: "800 Series",
+        itemNo: "SR002104",
+        spec: "Serie 800",
         od: "Φ 250 mm",
         thickness: "25 mm",
-        bore: "Hex Ø160 mm",
-        hooks: "8-Claw",
+        bore: "Hexagonal de Ø160 mm",
+        hooks: "8 garras",
       },
       {
-        spec: "1000 Series",
+        itemNo: "SR002105",
+        spec: "Serie 1000",
         od: "Φ 300 mm",
         thickness: "30 mm",
-        bore: "Hex Ø180 mm",
-        hooks: "12-Claw",
+        bore: "Hexagonal de Ø180 mm",
+        hooks: "12 garras",
       },
       {
-        spec: "1200 Series",
+        itemNo: "SR002106",
+        spec: "Serie 1200",
         od: "Φ 350 mm",
         thickness: "40 mm",
-        bore: "Splined Ø200 mm",
-        hooks: "12-Claw",
+        bore: "Canalado de Ø200 mm",
+        hooks: "12 garras",
       },
       {
-        spec: "1500 Series",
+        itemNo: "SR002107",
+        spec: "Serie 1500",
         od: "Φ 400 mm",
         thickness: "40 mm",
-        bore: "Splined Ø220 mm",
-        hooks: "3-Claw",
+        bore: "Canalado de Ø220 mm",
+        hooks: "3 garras",
       },
       {
-        spec: "2000 Series",
+        itemNo: "SR002108",
+        spec: "Serie 2000",
         od: "Φ 450 mm",
         thickness: "30 mm",
-        bore: "Splined Ø260 mm",
-        hooks: "3-Claw",
+        bore: "Canalado de Ø260 mm",
+        hooks: "3 garras",
       },
-    ],
-    relatedBladeIds: [
-      "tire-shredder-blades",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
     ],
     offers: {
       lowPrice: 45,
       highPrice: 600,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-recycling-advantage-1",
+        tag: "Opciones de acero para el reciclaje general",
+        title: "Opciones de acero para el reciclaje general",
+        description:
+          "Las cuchillas D2, SKD11 y 42CrMo están disponibles para la trituración de plásticos, palés de madera y residuos mixtos, lo que permite elegir el material en los pedidos de recambio, además de la geometría requerida del gancho y el eje.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-2",
+        tag: "Ganchos a medida y orificios para electroerosión por hilo",
+        title: "Ganchos a medida y orificios para electroerosión por hilo",
+        description:
+          "Sureay fabrica cuchillas en gancho con orificios hexagonales, octogonales o estriados. Las configuraciones disponibles abarcan diámetros de Ø150 a 450 mm, con diámetros personalizados de hasta Ø800 mm para recambios basados en planos.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-3",
+        tag: "Cuchillas individuales y juegos completos de recambio",
+        title: "Cuchillas individuales y juegos completos de recambio",
+        description:
+          "Solicite una configuración de cortador individual o un juego que cubra varias posiciones del eje, con los espesores, las orientaciones de los ganchos y las cantidades necesarios definidos para su conjunto de corte instalado.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "¿Cómo elijo entre los diseños de cuchilla de 3, 8 y 12 garras?",
+            "¿Qué cuchillas de recambio son compatibles con una trituradora de doble eje?",
           answer:
-            "El número de garras controla directamente la frecuencia de agarre de la cuchilla y el tamaño de las partículas de salida. las cuchillas de 3 garras (3C) están diseñadas para la trituración primaria de alta torsión de material voluminoso -palés de madera y grandes contenedores de HDPE- donde la agresiva geometría del gancho proporciona la máxima mordida. las cuchillas de 8 garras (8C) son el estándar de uso general para RSU mezclados, balas de plástico y chatarra postindustrial. las configuraciones de 12 garras (12C) producen partículas más finas a partir de materias primas más ligeras, como plásticos domésticos rígidos y envases.",
+            "Una pieza de recambio encaja cuando su diámetro interior, perfil de gancho, grosor y orientación de montaje coinciden con su posición en la pila de cuchillas. Dos cuchillas con el mismo diámetro exterior pueden tener diámetros interiores diferentes o direcciones de gancho distintas. Utilice la referencia de la pieza y la disposición de los espaciadores para distinguir entre cuchillas similares.",
         },
         {
           question:
-            "¿Por qué Sureay utiliza Wire-EDM para los taladros interiores en lugar del brochado?",
+            "¿Son lo mismo las ecuchillas trituradoras de doble eje, de dos ejes y de ejes gemelos?",
           answer:
-            "El brochado estándar crea tolerancias dimensionales de ±0,1-0,2 mm e introduce una tensión superficial residual en la pared del orificio. A lo largo de millones de ciclos del rotor, esta brecha permite el micro-rocking -elongación progresiva del agujero que acaba destruyendo el eje del rotor. Precision Wire-EDM mecaniza los orificios con una precisión de ±0,01 mm con una superficie de corte libre de tensiones, eliminando la holgura que provoca el micro-rocking.",
+            "Sí. En los equipos de reciclaje con cizalla rotativa, estos tres términos suelen referirse a las cuchillas situadas en los dos ejes de la máquina. Las cuchillas en forma de gancho y las cuchillas en forma de garra describen el contorno de corte. Un juego de cuchillas hace referencia a varias piezas, por lo que hay que asignar cada cuchilla a su correspondiente posición en el eje.",
         },
         {
           question:
-            "¿Cómo elegir entre D2, SKD11 y 42CrMo para la trituración de plástico contaminado o RSU?",
+            "¿Cómo influyen el número de ganchos y el grosor de la cuchilla en la elección de las piezas de recambio?",
           answer:
-            "D2 (1.2379) es correcto para balas de plástico postconsumo con suciedad residual y trazas de contaminación. Cambie a SKD11 cuando su materia prima incluya plásticos técnicos reforzados con vidrio (PA66-GF30, ABS) mezclados con flujos contaminados. Seleccione 42CrMo para madera o chatarra industrial con alto riesgo de contaminación metálica: su mayor absorción de energía de impacto evita la fractura frágil en caso de impacto metálico.",
+            "La geometría del gancho influye en la forma en que la cuchilla se acopla a la alimentación. El grosor de la cuchilla y la anchura del espaciador determinan la disposición axial del conjunto de corte. Mantenga esas dimensiones para una sustitución por un modelo equivalente. Cualquier cambio en el número de ganchos o en la anchura debe tenerse en cuenta en relación con las cuchillas opuestas y el material que se va a procesar.",
         },
         {
           question:
-            "¿Con qué frecuencia deben indexarse o sustituirse los cuchillas trituradoras de doble eje en una línea de reciclado continuo?",
+            "¿En qué casos debe ser la resistencia al desgaste o la tenacidad el criterio determinante a la hora de elegir el acero?",
           answer:
-            "En una línea continua de 16 horas que procese HDPE y PP postconsumo, programe la primera indexación a las 400-600 horas de funcionamiento con D2, y a las 600-800 horas con SKD11 en materias primas limpias. Los flujos contaminados o rellenos de vidrio reducen estos intervalos en un 30-40%. Se recomienda una indexación por tonelaje fijo en lugar de esperar a que se redondeen los bordes.",
+            "El redondeo gradual del filo de trabajo hace que la resistencia al desgaste sea un parámetro útil para la comparación. Las virutas repetidas o los ganchos rotos también requieren prestar atención a la tenacidad, el soporte del filo y el impacto de la alimentación. Evalúe el acero original y el estado tras el tratamiento térmico junto con el patrón de daños, de modo que el material de sustitución se adapte a las condiciones observadas en esa máquina.",
         },
         {
           question:
-            "¿Suministran contracuchillas y cribas de calibrado como sistema de utillaje completo?",
+            "¿Qué puede provocar que las cuchillas se desgasten o se astillen prematuramente?",
           answer:
-            "Sí. Fabricamos contracuchillas estacionarias adaptadas y cribas perforadas como un sistema completo de herramientas de trituración de doble eje. El suministro de palas de rotor y contracuchillas a partir de la misma pasada de rectificado garantiza una holgura de cizallamiento uniforme en toda la interfaz entre el rotor y el lecho.",
+            "La alimentación de material abrasivo puede acelerar el desgaste gradual, mientras que la presencia inesperada de objetos duros o una carga local excesiva pueden dañar los ganchos y las caras de corte. Una pila de cuchillas suelta o montada incorrectamente también puede contribuir a que se produzcan daños. Compare el lugar donde se produce el daño con el historial de alimentación y el estado de la pila antes de modificar las especificaciones de sustitución.",
+        },
+        {
+          question:
+            "¿Se utiliza la misma configuración de cortadora para plásticos, chatarra y neumáticos?",
+          answer:
+            "En general, no. Las cuchillas de reciclaje de uso general se configuran para plásticos, palés de madera y residuos mixtos. Las cargas de alimentación y la geometría de corte son distintas en las [cuchillas trituradoras para chatarra metálica](/products/multi-shaft-blades-metal) y las [cuchillas trituradoras para neumáticos](/products/tire-shredder-blades). Seleccione la gama adecuada para el material y verifique la configuración de su máquina.",
+        },
+        {
+          question:
+            "¿Qué información necesita para presupuestar ecuchillas trituradoras de doble eje?",
+          answer:
+            "Envíe el modelo de la máquina, el plano de la cuchilla o el número de pieza, el material de alimentación y las cantidades por posición del eje. Para un cambio completo, incluya la disposición de los espaciadores, los espesores de las cuchillas y las direcciones de los ganchos. Una muestra desgastada puede mostrar los detalles del orificio y del montaje. Marque las puntas desgastadas de los ganchos y añada una referencia de una pieza sin usar o el plano original, si está disponible.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de la máquina, el diámetro exterior de la cuchilla, el espesor, el perfil del orificio, el número de ganchos y la anchura del espaciador.",
+    compatibleMachines: ["Weima", "Untha", "SSI", "Vecoplan", "Genox"],
+    detailLayout: {
+      sizeRange: "Ø150–450 mm",
+      heroSpecs: [
         {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
+          label: "Material",
+          value: "D2 (1.2379), SKD11, 42CrMo",
         },
         {
-          question:
-            "¿Qué diferencia al tratamiento térmico de Sureay de otras alternativas más baratas?",
-          answer:
-            "A diferencia del templado estándar de un solo ciclo, todas las cuchillas de las trituradoras Sureay se someten a un templado al vacío seguido de 4-5 ciclos de revenido y un tratamiento criogénico profundo a -196°C. De este modo se estabiliza toda la microestructura de martensita y se aumenta la resistencia al desgaste hasta en un 40%. Esto estabiliza la microestructura de martensita completa, aumentando la resistencia al desgaste hasta en un 40%.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Las cuchillas de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question: "¿Qué certificaciones de calidad tiene Sureay?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional y un certificado de lote tratamiento térmico. Para la cualificación OEM, se pueden solicitar informes dimensionales completos de MMC y certificados de acería.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 cuchillas) para verificar el ajuste de la máquina y probar la vida útil del filo. El plazo de entrega estándar de las muestras es de 5-7 días laborables.",
+          label: "Aplicación",
+          value:
+            "Residuos sólidos urbanos · Plásticos · Palés de madera · Residuos voluminosos",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value:
+            "Diámetro exterior (Ø) en catálogo: 150–450 mm; diámetros exteriores a medida hasta Ø800 mm; espesor: 10–150 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379), SKD11, 42CrMo",
+        },
+        {
+          label: "Dureza",
+          value: "55–62 HRC (4–5 ciclos de revenido)",
+        },
+        {
+          label: "Recuento de garras",
+          value: "3 garras · 5 garras · 8 garras · 12 garras",
+        },
+        {
+          label: "Diseño del orificio",
+          value:
+            "Electroerosión por hilo de precisión: hexagonal / octogonal / estriado",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Residuos sólidos urbanos · Plásticos · Palés de madera · Residuos voluminosos",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Incluya el modelo de la máquina, el diámetro exterior de la cuchilla, el espesor, el perfil del orificio, el número de ganchos y la anchura del espaciador.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Adquiera cuchillas de recambio para trituradoras de chatarra con la geometría de gancho y la interfaz de eje que necesita su máquina. Sureay ofrece configuraciones de H13 y 42CrMo con orificios estriados o con chaveta a medida. Envíenos los planos de sus cuchillas para recibir un presupuesto que cubra posiciones individuales o un juego de varios ejes. Las marcas de las máquinas sirven de referencia de compatibilidad para las piezas de recambio de Sureay.",
     id: "multi-shaft-blades-metal",
-    name: "Cuchillas trituradoras de metal",
-    fullName:
-      "Cuchillas multieje de alto impacto para chatarra, VFU y residuos electrónicos",
+    name: "Cuchillas para trituradoras de chatarra",
+    fullName: "Cuchillas para trituradoras multieje de chatarra metálica",
+    seoTitle: "cuchillas trituradoras para chatarra | H13 y 42CrMo",
+    seoDescription:
+      "Seleccione cuchillas de acero H13 o 42CrMo para trituradoras multieje destinadas al tratamiento de vehículos al final de su vida útil, residuos electrónicos o electrodomésticos. Especifique el perfil del gancho y el orificio estriado o con chaveta.",
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Cuchillas trituradoras de metal",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1309,
+      smallerWidths: [320, 640],
+    },
     badge: "Carga pesada",
     badgeColor: "red",
     gallery: [
@@ -877,70 +1138,34 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Diseñadas para soportar las cargas de choque catastróficas de la trituración de doble eje de chatarra, vehículos al final de su vida útil y residuos electrónicos. Forjadas a partir de aceros de aleación H13 y 42CrMo (AISI 4140) de primera calidad. Estas cuchillas de alta resistencia priorizan la tenacidad del núcleo para evitar la fractura frágil al golpear inclusiones metálicas sólidas.",
-    fullDescription:
-      "Cuando una trituradora de doble eje se encuentra con un bloque de motor, una viga en I de acero o residuos electrónicos compactados, las cuchillas se enfrentan a cargas de choque catastróficas medidas en decenas de miles de newtons por milisegundo. El uso de aceros para herramientas estándar con alto contenido en carbono (como el D2) en estas aplicaciones provoca una fractura frágil inmediata y la rotura de los ganchos, lo que causa graves daños en el rotor, tiempos de inactividad imprevistos y fragmentos de proyectiles potencialmente peligrosos.\n\nPara el procesamiento de metales pesados, la tenacidad es primordial por encima de la dureza extrema. Sureay fabrica estas palas específicas a partir de acero para herramientas **H13 (AISI H13 / 1.2344)** para trabajo en caliente y aleación de alta resistencia **42CrMo (AISI 4140)** mediante un ciclo térmico especializado de temple profundo. La dureza superficial se mantiene deliberadamente en HRC 50-54. Esta dureza inferior controlada proporciona una gran elasticidad al núcleo, lo que permite a la hoja absorber impactos cinéticos extremos sin astillarse ni romperse.\n\n## Geometría de gancho de perfil bajo para una máxima fuerza de mordida\n\nLa trituración de metales requiere una inmensa fuerza de mordida en lugar de una frecuencia de agarre. Sureay diseña geometrías de 1 gancho, 2 ganchos y 3 ganchos de perfil bajo con un gran grosor de raíz. Estos robustos perfiles de garra pueden agarrar y cizallar carcasas metálicas gruesas, perfiles de aluminio y subconjuntos de automoción sin que se rompa el gancho.\n\n## Agujeros estriados pesados: Transferencia de par sin deslizamiento\n\nLa chatarra pesada genera enormes pares de reacción del rotor que pueden cizallar los orificios ranurados estándar. Sureay mecaniza todos los orificios interiores de las trituradoras de metales pesados utilizando perfiles estriados de precisión cortados por Wire-EDM. De este modo, se consigue un acoplamiento de par circunferencial completo entre la cuchilla y el eje, lo que elimina el modo de fallo por cizallamiento de la chaveta y evita el desgaste progresivo entre el orificio y el eje que destruye los rotores en las operaciones estándar de trituración de metal.\n\n## Selección de aleaciones por perfil de chatarra\n\n**H13 (1.2344) - Residuos electrónicos y chatarra mixta ligera:** Ensamblajes de circuitos impresos, extrusiones de aluminio, haces de cables de cobre y equipos de TIC. La dureza superior en caliente del H13 soporta los picos de calentamiento inducidos por la fricción típicos de la chatarra electrónica.\n\n**42CrMo (AISI 4140) - ELV y chatarra pesada:** Bloques de motor, carcasas de transmisión, recortes de bobinas de acero y acero estructural. la excepcional absorción de energía de impacto del 42CrMo (Charpy V-notch > 35J) es la elección definitiva para las aplicaciones de cargas de impacto más pesadas en automoción y demolición de metales.",
+      "Cuchillas de recambio para trituradoras multieje destinadas a chatarra, vehículos fuera de uso (ELV) y residuos de aparatos eléctricos y electrónicos (RAEE). Opciones de acero H13 y 42CrMo, con orificios estriados o con chaveta a medida según plano.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
-    compatibleMachines: [
-      "Shred-Tech",
-      "Arjes",
-      "Forus",
-      "SSI Shredding",
-      "Bano",
-      "Hammel",
-    ],
     specs: [
       {
         label: "Material",
         value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
       },
       {
-        label: "Hardness",
-        value: "HRC 50–54 (Optimized for Shock Absorption)",
+        label: "Dureza",
+        value: "HRC 50–54",
       },
       {
-        label: "Claw Geometry",
-        value: "1, 2, or 3 Low-Profile Thick Hooks",
+        label: "Geometría de las garras",
+        value: "1, 2 o 3 ganchos gruesos de perfil bajo",
       },
       {
-        label: "Thickness",
-        value: "40 mm – 150 mm (Heavy Duty)",
+        label: "Diseño del orificio",
+        value: "Con ranuras pesadas / múltiples (electroerosión por hilo)",
       },
       {
-        label: "Bore Design",
-        value: "Heavy Splined / Multi-Keyway (Wire-EDM)",
-      },
-      {
-        label: "OEM Fitment",
+        label: "Compatibilidad con fabricantes de equipos originales (OEM)",
         value: "Shred-Tech, Forus, Arjes, SSI, Hammel",
       },
       {
-        label: "Application",
-        value: "Scrap Metal · ELV · E-Waste · Appliances (WEEE)",
-      },
-    ],
-    components: [
-      {
-        id: "impact-alloy",
-        tag: "METALURGIA",
-        title: "Resistencia masiva del núcleo",
-        description:
-          "Con HRC 50-54, las aleaciones H13 y 42CrMo proporcionan la enorme elasticidad del núcleo necesaria para absorber impactos cinéticos extremos, evitando la rotura catastrófica típica de las cuchillas D2.",
-      },
-      {
-        id: "heavy-spline",
-        tag: "TRANSFERENCIA DE PAR",
-        title: "Estrías de deslizamiento cero",
-        description:
-          "Los orificios de estrías de circunferencia completa mecanizados por Wire-EDM a ±0,01 mm garantizan una transferencia de par sin deslizamiento bajo cargas de trituración extremas, eliminando los daños en el eje del rotor.",
-      },
-      {
-        id: "low-profile-hooks",
-        tag: "GEOMETRÍA",
-        title: "Ganchos mordedores de perfil bajo",
-        description:
-          "de 1 a 3 ganchos de raíz gruesa proporcionan la máxima fuerza de mordida por carrera para cizallar carcasas metálicas gruesas, sin los riesgos de fractura asociados a los diseños con varias garras.",
+        label: "Aplicación",
+        value:
+          "Chatarra · Vehículos fuera de uso (ELV) · Residuos electrónicos · Electrodomésticos (RAEE)",
       },
     ],
     dimensionLabels: {
@@ -954,89 +1179,181 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "E-Waste / Light Scrap",
+        itemNo: "SR002201",
+        spec: "Residuos electrónicos / Chatarra ligera",
         od: "Φ 300–450 mm",
         thickness: "40–60 mm",
-        bore: "Hex / Light Splined",
-        hooks: "3 Hooks",
+        bore: "Hexagonal / Ranurado ligero",
+        hooks: "3 ganchos",
       },
       {
-        spec: "Appliances / Steel Drums",
+        itemNo: "SR002202",
+        spec: "Electrodomésticos / Bidones de acero",
         od: "Φ 450–600 mm",
         thickness: "60–80 mm",
-        bore: "Medium Splined",
-        hooks: "2–3 Hooks",
+        bore: "Con ranuras medianas",
+        hooks: "2-3 ganchos",
       },
       {
-        spec: "ELV / Heavy Demolition",
+        itemNo: "SR002203",
+        spec: "Vehículos al final de su vida útil (ELV) / Demolición pesada",
         od: "Φ 600–800+ mm",
         thickness: "80–150 mm",
-        bore: "Heavy Splined",
-        hooks: "1–2 Hooks",
+        bore: "Con estrías pesadas",
+        hooks: "1–2 ganchos",
       },
     ],
-    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "scrap-chopper-blades",
+      "metal-shear-knives",
+    ],
     offers: {
       lowPrice: 250,
       highPrice: 3500,
     },
+    components: [
+      {
+        id: "multi-shaft-blades-metal-advantage-1",
+        tag: "Opciones de cuchillas de H13 y 42CrMo",
+        title: "Opciones de cuchillas de H13 y 42CrMo",
+        description:
+          "Las configuraciones H13 y 42CrMo ofrecen a los procesadores de residuos opciones de material para las cuchillas de recambio, teniendo en cuenta el acero especificado, el flujo de metal y el diseño existente de gancho grueso.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-2",
+        tag: "Perfiles de uno, dos y tres ganchos",
+        title: "Perfiles de uno, dos y tres ganchos",
+        description:
+          "Sureay suministra cuchillas de perfil bajo con ganchos gruesos en las configuraciones indicadas de uno, dos y tres ganchos. Los orificios con ranuras y con múltiples chaveteros pueden fabricarse según el plano del eje, definiendo la posición del gancho en relación con el orificio.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-3",
+        tag: "Juegos de recambio según la posición del eje",
+        title: "Juegos de recambio según la posición del eje",
+        description:
+          "Se pueden encargar cuchillas individuales y juegos multiposición con referencias de plano distintas para cada eje, lo que facilita los cambios cuando la máquina utiliza varios anchos o perfiles de cuchilla.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "¿Por qué elegir H13 o 42CrMo en lugar de D2 para aplicaciones de trituración de metales?",
+            "¿Cómo se identifican las cuchillas de recambio para trituradoras de chatarra?",
           answer:
-            "El D2 está optimizado para resistir el desgaste a expensas de la dureza: alcanza HRC 58-62, pero se vuelve quebradizo bajo cargas de choque extremas. Cuando una cuchilla de D2 golpea un bloque de motor, la energía del impacto supera la resistencia a la fractura del material en microsegundos, provocando la rotura catastrófica del gancho. H13 y 42CrMo (AISI 4140) poseen una tenacidad inherentemente superior; con HRC 50-54, absorben elásticamente la misma energía de impacto en lugar de fracturarse.",
+            "Identifique la posición del eje y de la cuchilla, y a continuación compare el diámetro, el espesor axial, la forma del gancho y la interfaz del eje. Las máquinas multieje pueden utilizar diferentes diseños dentro de la misma cámara de corte. El modelo de la máquina, el número de pieza original y el plano de montaje sirven de referencia para un juego de recambio, incluida la relación con los espaciadores y las cuchillas que se conservan.",
         },
         {
           question:
-            "¿Qué número de ganchos y perfil debo especificar para la trituración de vehículos al final de su vida útil?",
+            "¿Son intercambiables las cuchillas de cizalla, los martillos y las cuchillas de cizalla de trituradoras rotativas?",
           answer:
-            "Para la trituración primaria de VFU (carrocerías de automóviles, subconjuntos de motores), especifique diseños de perfil bajo de 1 o 2 ganchos con el máximo grosor de raíz. Un número bajo de garras concentra el par disponible de la máquina en menos contactos de gancho robustos, generando la fuerza de mordida masiva necesaria para penetrar acero grueso. Un número elevado de garras distribuye demasiado el par, haciendo que la hoja se deslice sobre el metal en lugar de morderlo.",
+            "No. Las cuchillas rotativas se intercalan en los ejes de las trituradoras, los martillos de los molinos de martillos rompen el material por impacto y las [cuchillas de cizalla «Alligator»](/products/metal-shear-knives) cortan en pares montados en mandíbulas. El tipo de equipo determina qué pieza de desgaste hay que pedir.",
         },
         {
           question:
-            "¿Cómo evitan los orificios estriados los daños en el eje del rotor en la trituración de metales pesados?",
+            "¿Qué características de los residuos son importantes a la hora de elegir el material de la cuchilla?",
           answer:
-            "En la trituración de metales pesados, el par máximo del rotor aumenta hasta 3-5 veces la carga constante durante un golpe fuerte. Los taladros estándar de chaveta única concentran todo este par en un punto, ensanchando progresivamente el chavetero y, en última instancia, cortando la chaveta. Los taladros estriados con alambre EDM distribuyen este par masivo uniformemente entre 10 y 20 caras de contacto en toda la circunferencia, reduciendo el esfuerzo máximo y protegiendo el costoso eje del rotor.",
+            "Las secciones metálicas más gruesas, la fuerza de alimentación y la presencia de material mixto o abrasivo influyen en las cargas que se ejercen sobre el filo. Las chapas de electrodomésticos ligeros, los residuos electrónicos y las secciones metálicas densas pueden producir diferentes patrones de desgaste. Compare esas condiciones con las especificaciones existentes de H13 o 42CrMo y el estado de los ganchos utilizados.",
         },
         {
           question:
-            "¿Cuáles son las señales de advertencia de que el cuchillas trituradoras metálico necesita ser sustituido?",
+            "¿Por qué una cortadora de chatarra más resistente puede seguir sufriendo roturas en el filo?",
           answer:
-            "Los indicadores clave son: (1) Fracturas finas visibles en la raíz del gancho; (2) Desgaste del diámetro exterior (DE) superior a 10-15 mm por debajo del nominal, lo que indica una pérdida de holgura de cizallamiento; (3) Alargamiento del agujero, lo que significa que la cuchilla se balancea en el eje incluso con un par de apriete máximo; (4) Una reducción del rendimiento de >20% con una carga constante del motor, lo que indica que las cuchillas están empujando la chatarra en lugar de cizallarla.",
+            "La dureza es solo una parte de las especificaciones del material. Los impactos repetidos, la concentración de carga en un gancho y un soporte inadecuado pueden provocar roturas, incluso cuando el desgaste por abrasión es limitado. Evalúe conjuntamente la forma de la cuchilla, el estado del tratamiento térmico y la alimentación real antes de modificar la dureza, especialmente cuando el fallo actual consiste en astillamientos localizados en lugar de un desgaste gradual.",
+        },
+        {
+          question:
+            "¿Se pueden personalizar los orificios de las cuchillas con ranuras de acoplamiento y con múltiples ranuras de chaveta?",
+          answer:
+            "Sí. Sureay puede fabricar la interfaz del eje según el plano de la cuchilla, incluyendo la geometría de las estrías o la ranura de chaveta, las superficies de asiento y la orientación. El plano debe indicar la ubicación de las características del orificio en relación con el perfil del gancho. Esto resulta especialmente útil cuando las cuchillas adyacentes tienen diámetros similares pero diferentes posiciones angulares o conexiones de eje.",
+        },
+        {
+          question:
+            "¿Puede una cuchilla de recambio para chatarra mantener el perfil de gancho original?",
+          answer:
+            "Sí. Utilice el número de ganchos, el contorno y el grosor del cuerpo originales que figuran en el plano, con el orificio alineado con el perfil de los ganchos. Utilice una pieza de referencia sin desgastar para recuperar la geometría prevista de la punta si la cuchilla antigua presenta ganchos astillados o redondeados.",
+        },
+        {
+          question:
+            "¿Cómo puedo solicitar un presupuesto para un juego de cortadoras de chatarra de varios ejes?",
+          answer:
+            "Indique el modelo de la máquina, el flujo de residuos y las secciones más gruesas; a continuación, enumere los planos de las cuchillas y las cantidades por eje y posición. Marque qué espaciadores y cuchillas seguirán en servicio. Las partidas separadas distinguen las formas de gancho de perfil bajo, los anchos axiales y las orientaciones del orificio, incluso cuando los diámetros de las cuchillas coinciden.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de la máquina, el tipo de desecho, los planos de la cuchilla y el espaciador, y de qué eje procede la pieza.",
+    compatibleMachines: ["Shred-Tech", "Forus", "Arjes", "SSI", "Hammel"],
+    detailLayout: {
+      sizeRange: "Ø300–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "¿Pueden suministrar cuchillas para las plataformas de trituración Shred-Tech, Arjes o Forus?",
-          answer:
-            "Sí. Realizamos ingeniería inversa de cuchillas de recambio a partir de muestras OEM medidas en fábrica para la serie ST de Shred-Tech, Arjes Imperator/Orion, trituradoras de gran potencia Forus y plataformas SSI. Los perfiles de estrías y los patrones de avellanado personalizados se producen con extrema precisión utilizando Wire-EDM.",
+          label: "Material",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
         },
         {
-          question:
-            "¿Cuál es el plazo de entrega del metal pesado cuchillas trituradoras?",
-          answer:
-            "Las calidades estándar H13 y 42CrMo en dimensiones comunes se mantienen en stock semiacabado y suelen enviarse en un plazo de 10-15 días laborables. Para diámetros exteriores masivos no estándar o perfiles estriados personalizados que requieren nuevas herramientas, el plazo de entrega es de 20-25 días laborables.",
-        },
-        {
-          question: "¿Qué certificaciones de calidad y documentación aportan?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Para cuchillas trituradoras de metales pesados, proporcionamos trazabilidad completa: Informes de ensayo de dureza Rockwell HRC (mínimo 5 puntos por hoja), certificados de ensayo de impacto Charpy para grados 42CrMo, registros de inspección dimensional CMM y certificados de composición de acería.",
+          label: "Aplicación",
+          value:
+            "Chatarra · Vehículos fuera de uso (ELV) · Residuos electrónicos · Electrodomésticos (RAEE)",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Ø300–800+ mm",
+        },
+        {
+          label: "Material",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 50–54",
+        },
+        {
+          label: "Geometría de las garras",
+          value: "1, 2 o 3 ganchos gruesos de perfil bajo",
+        },
+        {
+          label: "Diseño del orificio",
+          value: "Con ranuras pesadas / múltiples (electroerosión por hilo)",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Chatarra · Vehículos fuera de uso (ELV) · Residuos electrónicos · Electrodomésticos (RAEE)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Incluya el modelo de la máquina, el tipo de desecho, los planos de la cuchilla y el espaciador, y de qué eje procede la pieza.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
     id: "twin-shaft-blades-battery",
-    name: "Cuchillas de reciclaje de baterías",
-    fullName:
-      "Cuchillas trituradoras de precisión de doble eje para el reciclaje de baterías de iones de litio",
+    name: "Cuchillas trituradoras para reciclaje de baterías",
+    fullName: "Cuchillas de pretrituración para el reciclaje de baterías",
+    seoTitle:
+      "cuchillas trituradoras para el reciclaje de baterías | Recambios a medida",
     category: "shredder_blades",
     sector: "new_energy",
-    categoryDisplay: "Cuchillas trituradoras",
+    categoryDisplay: "Cuchillas para trituradoras",
     image: "/images/products/shredder-blades/shredder-blades.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 640],
+    },
     badge: "Nueva energía",
     badgeColor: "teal",
     gallery: [
@@ -1045,59 +1362,39 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Diseñado para el pretriturado crítico de paquetes, módulos y celdas de baterías de iones de litio de vehículos eléctricos en entornos de gas inerte. Rectificado de precisión con un paralelismo de ±0,02 mm de grosor para garantizar holguras de cizallamiento exactas que eviten el desgarro de la lámina y el desbordamiento térmico. La selección de aleaciones especializadas y los tratamientos superficiales resisten los efectos altamente corrosivos de los electrolitos de las baterías LiPF6.",
-    fullDescription:
-      "El reciclaje de baterías de iones de litio (Li-ion) presenta retos mecánicos y químicos únicos que el cuchillas trituradoras estándar no puede gestionar de forma fiable. La trituración previa de los paquetes de baterías y las celdas cilíndricas se realiza con frecuencia en atmósferas purgadas con nitrógeno para suprimir el riesgo de incendio y fuga térmica. Los cuchillas trituradoras estándar fallan prematuramente en este entorno por dos mecanismos distintos: la corrosión electrolítica del LiPF6 y el ácido HF liberado durante la rotura de la celda, y el fallo mecánico causado por las imprecisas holguras de cizallamiento que doblan -en lugar de cortar- las finas láminas colectoras de corriente de cobre (8-12μm) y aluminio (15-20μm) del interior de las celdas de la batería.\n\n## Rectificado de precisión de microdistancias (±0,02 mm)\n\nSi la separación entre las cuchillas de doble eje en contrarrotación es demasiado amplia, las láminas de la batería no se cortan, sino que se pliegan, estiran y envuelven alrededor del rotor, provocando atascos inmediatos en un entorno de gas inerte. Para eliminar un atasco del rotor bajo nitrógeno es necesario apagar completamente el sistema, purgarlo y retirarlo manualmente: horas de inactividad que consumen una cantidad considerable de N₂. Las cuchillas Sureay cuchillas trituradoras están rectificadas con precisión con un paralelismo de ±0,02 mm de grosor en toda la cara de la cuchilla, lo que garantiza una holgura de corte mínima y uniforme en todo el rotor para realizar cortes limpios y controlados en pilas de bolsa, módulos prismáticos y paquetes de baterías cilíndricas 18650/21700.\n\n## Resistencia a la corrosión del electrolito\n\nLos electrolitos LiPF6 se hidrolizan en contacto con la humedad atmosférica para producir ácido fluorhídrico (HF), uno de los productos químicos industriales más agresivamente corrosivos. Los aceros para herramientas D2 o SKD11 estándar se corroen rápidamente en este entorno, iniciándose las picaduras superficiales en los límites del grano en 200-500 horas de funcionamiento. Sureay aplica tratamientos superficiales anticorrosión especializados y selecciona grados de aleación resistentes a la corrosión para aplicaciones de reciclado de baterías, ampliando significativamente los intervalos de servicio.\n\n## Perfiles de perforación de precisión de alambre-EDM\n\nLos pretrituradores de baterías funcionan a velocidades de rotor precisas, controladas por ordenador, en las que la holgura entre el agujero y el eje afecta directamente a la precisión de la posición de las cuchillas y a la uniformidad de la separación de corte. Todos los perfiles de los orificios están mecanizados por Wire-EDM con una precisión de ±0,01 mm, lo que garantiza una holgura rotacional cero que podría causar incoherencias en la holgura de corte durante la trituración de precisión de pilas de papel de aluminio para baterías.",
+      "Cuchillas de corte rotativas de recambio para trituradoras previas de reciclaje de baterías. Perfiles de cuchilla e interfaces de eje personalizados, fabricados según planos homologados.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
     specs: [
       {
-        label: "Tolerance",
-        value: "±0.02 mm Thickness Parallelism",
+        label: "Tolerancia",
+        value: "±0,02 mm de espesor y paralelismo",
       },
       {
-        label: "Hardness",
+        label: "Dureza",
         value: "HRC 54–58",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM Hex / Splined",
+        label: "Diseño del orificio",
+        value: "Electroerosión por hilo de precisión: hexagonal / estriado",
       },
       {
-        label: "Surface",
-        value: "Anti-corrosion treatment available",
+        label: "Recubrimientos opcionales",
+        value: "Disponible tratamiento anticorrosivo de la superficie",
       },
       {
-        label: "Application",
-        value: "EV Battery Packs · Pouch Cells · 18650/21700",
+        label: "Aplicación",
+        value:
+          "Baterías para vehículos eléctricos · Células tipo bolsa · 18650/21700",
       },
       {
-        label: "Environment",
-        value: "Inert gas (N₂ / Ar) compatible",
+        label: "Medio ambiente",
+        value: "Compatible con gases inertes (N₂ / Ar)",
       },
     ],
-    components: [
-      {
-        id: "micro-clearance",
-        tag: "PRECISIÓN",
-        title: "±0,02mm Espesor Paralelismo",
-        description:
-          "Rectificado de precisión con tolerancias de grosor ultra estrictas, lo que garantiza una holgura de cizallamiento constante en todo el rotor para realizar cortes limpios en láminas de batería de cobre y aluminio sin dobleces ni enrollamientos del rotor.",
-      },
-      {
-        id: "corrosion-resistance",
-        tag: "DURABILIDAD",
-        title: "Resistencia a la corrosión del electrolito",
-        description:
-          "La metalurgia especializada y los tratamientos superficiales proporcionan una mayor resistencia a la corrosión del ácido HF derivado del LiPF6, ampliando los intervalos de servicio de las palas en entornos químicos agresivos de reciclaje de baterías.",
-      },
-      {
-        id: "wire-edm-bore",
-        tag: "AJUSTE",
-        title: "Taladros de precisión con electroerosión por hilo",
-        description:
-          "Todos los perfiles de perforación se mecanizan con una precisión de ±0,01 mm mediante electroerosión por hilo, lo que elimina la holgura rotacional que provoca la incoherencia de la ranura de cizallamiento durante el procesamiento de precisión de las pilas de láminas.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "lithium-battery-slitting-knives",
     ],
     dimensionLabels: {
       col0: "Tipo de célula / módulo",
@@ -1110,88 +1407,163 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Cylindrical / Pouch Cells",
+        itemNo: "SR002401",
+        spec: "Células cilíndricas / de bolsa",
         od: "Φ 200–350 mm",
         thickness: "10–20 mm",
-        bore: "Hex / Splined",
+        bore: "Hexagonal / Estriado",
         hooks: "±0.02 mm",
       },
       {
-        spec: "EV Module / Battery Pack",
+        itemNo: "SR002402",
+        spec: "Módulo EV / Paquete de baterías",
         od: "Φ 400–600 mm",
         thickness: "30–50 mm",
-        bore: "Splined",
+        bore: "Con ranuras",
         hooks: "±0.05 mm",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 300,
       highPrice: 3000,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-battery-advantage-1",
+        tag: "Cortadoras de pretrituración basadas en planos",
+        title: "Cortadoras de pretrituración basadas en planos",
+        description:
+          "Sureay suministra cuchillas de recambio para la trituradora previa de baterías, de acuerdo con el plano de pieza y la revisión especificados. La dureza indicada de las cuchillas es de 54-58 HRC, y el material, el acabado y la interfaz del eje se establecen según las especificaciones de cada pieza.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-2",
+        tag: "Agujeros hexagonales y estriados para electroerosión por hilo",
+        title: "Agujeros hexagonales y estriados para electroerosión por hilo",
+        description:
+          "Las interfaces de eje hexagonales y estriadas pueden fabricarse con el grosor de la cuchilla y la geometría de asentamiento especificados, de modo que el diámetro interior y la disposición axial se incluyen en el mismo pedido de recambio.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-3",
+        tag: "Tratamiento superficial opcional resistente a la corrosión",
+        title: "Tratamiento superficial opcional resistente a la corrosión",
+        description:
+          "Se ofrece un tratamiento superficial anticorrosión opcional para configuraciones específicas de cuchillas, lo que permite incluir los requisitos de acabado junto con los requisitos de material y dimensiones de la pieza.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "¿Por qué es crítica la tolerancia de ±0,02 mm de grosor en el pretriturado de baterías?",
+            "¿En qué fase del reciclaje de baterías se utilizan estas cuchillas?",
           answer:
-            "Los paquetes de baterías contienen láminas colectoras de corriente de cobre y aluminio de 8-20μm de grosor. Cuando el espacio de cizallamiento entre las palas contrarrotantes supera aproximadamente los 0,05 mm, las láminas se deforman plásticamente en lugar de cizallarse, plegándose y enrollándose alrededor del rotor, lo que provoca atascos operativos. En un entorno purgado con nitrógeno, la eliminación de un atasco del rotor requiere la parada completa del sistema de gas inerte, la evacuación y la retirada manual, lo que supone horas de inactividad que consumen una cantidad significativa de N₂. El mantenimiento del paralelismo del grosor de las palas a ±0,02 mm garantiza una separación de cizalladura mínima constante en toda la longitud del rotor, lo que evita que la lámina se enrolle en condiciones normales de funcionamiento.",
+            "Estas cortadoras de cizalla rotativa se utilizan en la fase de pretrituración de los equipos de reciclaje de baterías. Las fases posteriores de trituración fina cuentan con herramientas diferentes. En la fabricación de baterías se utilizan [cuchillas de corte para baterías](/products/lithium-battery-slitting-knives) para las bandas de electrodos recubiertos. La fase del proceso y el plano de la cortadora existente determinan qué recambio debe instalarse en la máquina de reciclaje.",
         },
         {
           question:
-            "¿Qué causa la corrosión de las cuchillas en entornos de trituración de baterías de iones de litio?",
+            "¿Qué dimensiones determinan si una cuchilla para trituradora de baterías es compatible?",
           answer:
-            "El LiPF6, la sal electrolítica de iones de litio más común, reacciona con trazas de humedad atmosférica para producir HF (ácido fluorhídrico). En caso de rotura de la célula durante la trituración previa, incluso una atmósfera de nitrógeno contiene suficiente humedad residual para una hidrólisis parcial. Los tipos de acero para herramientas estándar (D2, SKD11) se corroen rápidamente en HF; las picaduras superficiales se inician en los límites de grano en 200-500 horas, degradando la geometría de los bordes y reduciendo la eficacia del cizallamiento. Sureay aplica tratamientos superficiales anticorrosión especializados para prolongar los intervalos de servicio significativamente más allá de los aceros para herramientas estándar en las líneas de reciclado de baterías.",
+            "El ajuste depende de que el perfil de la cuchilla, el orificio o la ranura, las superficies de asiento y la posición axial coincidan con el montaje original. Las anchuras de los espaciadores determinan dónde se asientan las cuchillas adyacentes. Un plano de apilamiento distingue los contornos similares de las cuchillas asignadas a diferentes posiciones del eje.",
         },
         {
           question:
-            "¿Deben utilizarse trituradoras de doble eje o de eje único para el pretratamiento de baterías de iones de litio?",
+            "¿Se puede utilizar una cortadora para celdas de batería también para módulos o paquetes?",
           answer:
-            "Los trituradores de doble eje son la norma para la reducción del tamaño primario de las baterías de los vehículos eléctricos, ya que su diseño contrarrotatorio, de baja velocidad y alto par, somete a las celdas a un cizallamiento controlado en lugar de a un impacto. Este modo de fallo controlado reduce los eventos térmicos agudos en comparación con los impactadores de alta velocidad de un solo eje. Las cuchillas de precisión de doble eje con holguras de cizallamiento controladas son, por tanto, el estándar mecánico de primera etapa, seguido de otros procesos posteriores.",
+            "Solo si la configuración homologada de la máquina admite esa alimentación. Los términos «célula», «módulo» y «paquete» describen la entrada, y unas mismas dimensiones de la cuchilla pueden corresponder a diferentes tareas de pretrituración. Utilice la referencia de pieza homologada para su línea instalada y haga que cualquier cambio en la alimentación se evalúe en función de los requisitos del proceso.",
         },
         {
           question:
-            "¿Qué perfiles de perforación se necesitan para las plataformas de trituración de baterías purgadas con nitrógeno?",
+            "¿Cómo deben especificarse el material y el tratamiento superficial opcional?",
           answer:
-            "Los pretrituradores de baterías de fabricantes especializados (Erdwich, Hosokawa, Metso y líneas de reciclaje de baterías Andritz) utilizan perfiles de eje de rotor patentados con tolerancias más precisas que los trituradores industriales generales. Se requieren orificios hexagonales y estriados con alambre EDM de ±0,01 mm para un montaje del rotor sin holgura; cualquier holgura rotacional a velocidad de funcionamiento provoca una variación constante de la separación de cizallamiento y riesgo de atasco de la lámina. Fabricamos perfiles de orificio según planos de eje personalizados; proporcione el plano del perfil del eje del rotor para obtener la especificación exacta del orificio.",
+            "Indique el material y el tratamiento superficial requeridos por el plano de la cortadora como requisitos de pedido independientes. En el caso de un tratamiento opcional resistente a la corrosión, defina el acabado solicitado junto con las dimensiones finales y las superficies de contacto. La selección debe ajustarse a los requisitos de los componentes de la línea, incluidas las restricciones relativas al cambio del material o la configuración superficial existentes.",
+        },
+        {
+          question:
+            "¿Cómo afecta una pila de cortadores sueltos a las cuchillas de recambio?",
+          answer:
+            "Si se produce holgura en la pila de cuchillas y separadores, puede reducirse el rendimiento del triturado y aumentar el riesgo de daños en el conjunto. Las cuchillas nuevas por sí solas no corrigen una pila desgastada o mal fijada. Compruebe su estado según los requisitos de mantenimiento de la máquina y respete las superficies de asiento y las dimensiones axiales especificadas al solicitar cuchillas de recambio.",
+        },
+        {
+          question:
+            "¿Cómo puedo solicitar un presupuesto para cortadoras de pretrituración de baterías?",
+          answer:
+            "Indique el modelo de la línea o de la máquina, el plano y la revisión aprobados de la cuchilla, la cantidad por posición del eje, así como el material y el tratamiento superficial requeridos. Especifique el material que se procesa en esa fase. Si necesita una pieza revisada, marque en el plano las características modificadas y las dimensiones de asentamiento y apilamiento que se mantienen.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de la trituradora previa, los planos aprobados de la cuchilla y el espaciador, así como sus requisitos en cuanto al material o la superficie.",
+    disambiguation:
+      "Para la fabricación de electrodos, consulte [Cuchillas de corte para electrodos de baterías de litio](/products/lithium-battery-slitting-knives).",
+    detailLayout: {
+      sizeRange: "Ø200–600 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Pueden suministrar juegos de rotor y contracuchilla adaptados para pretrituradoras de pilas?",
-          answer:
-            "Sí. Para las líneas de reciclado de baterías en las que la consistencia de la holgura de cizallamiento es primordial, suministramos juegos de palas de rotor y contracuchillas estacionarias rectificadas juntas como un par emparejado para garantizar que la holgura de cizallamiento compuesta cumple las especificaciones. Todos los juegos emparejados incluyen un certificado de verificación de holgura que documenta la holgura medida en múltiples puntos a lo largo del rotor.",
-        },
-        {
-          question:
-            "¿Qué documentación de calidad se proporciona para la cualificación de la planta de reciclado de baterías?",
-          answer:
-            "Las instalaciones de reciclado de baterías requieren con frecuencia una documentación de calidad mejorada para la validación del proceso. Suministramos: Informes de inspección dimensional CMM, registros de medición de redondez y paralelismo, certificados del proceso de tratamiento de superficies, trazabilidad de materiales desde el CoA certificado de la acería hasta la inspección final, y resultados de pruebas de dureza por cuchilla. Se pueden suministrar paquetes de documentación específicos de la aplicación para entornos controlados por IATF 16949 o ISO 45001.",
-        },
-        {
-          question:
-            "¿Ofrecen cuchillas de muestra para la validación del proceso antes de los pedidos de producción completa?",
-          answer:
-            "Sí. La cualificación del proceso de reciclado de baterías suele requerir de 2 a 4 láminas de muestra para la verificación del ajuste y las pruebas de resistencia del electrolito antes del compromiso de producción. El plazo de entrega de las muestras es de 10-15 días laborables para las especificaciones de calidad de las baterías. Podemos participar en las llamadas de revisión técnica del cliente durante el proceso de validación.",
+          label: "Aplicación",
+          value:
+            "Baterías para vehículos eléctricos · Células tipo bolsa · 18650/21700",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Ø200–600 mm",
+        },
+        {
+          label: "Tolerancia",
+          value: "±0,02 mm de espesor y paralelismo",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 54–58",
+        },
+        {
+          label: "Diseño del orificio",
+          value: "Electroerosión por hilo de precisión: hexagonal / estriado",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value: "Disponible tratamiento anticorrosivo de la superficie",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Baterías para vehículos eléctricos · Células tipo bolsa · 18650/21700",
+        },
+        {
+          label: "Medio ambiente",
+          value: "Compatible con gases inertes (N₂ / Ar)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Incluya el modelo de la trituradora previa, los planos aprobados de la cuchilla y el espaciador, así como sus requisitos en cuanto al material o la superficie.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Hojas de sierra para troncos de papel tisú",
-    fullName:
-      "Hojas de sierra circulares de alta calidad para la fabricación de toallas y pañuelos de papel",
+    seoDescription:
+      "Corte rollos de papel higiénico y paños de cocina con hojas D2, Cr12MoV o M2 HSS. Los diámetros listados son de 610 a 1000 mm, con tamaños personalizados de hasta 1200 mm.",
+    name: "Discos de sierra para rollos de papel tisú",
+    fullName: "Cuchillas de sierra para el corte de rollos de papel tisú",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Cuchillas de papel de seda",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
-    badge: "Aplastamiento del núcleo cero",
-    badgeColor: "blue",
+    imageDimensions: {
+      width: 2000,
+      height: 2000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1108,
+      height: 1108,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
@@ -1201,17 +1573,15 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Render de hoja de sierra circular para troncos de papel tisú con cara pulida a espejo y patrón de orificios para pasadores de arrastre",
-      "Pila de hojas de sierra circulares para troncos de papel tisú terminadas en un cajón de madera en Sureay",
-      "Hoja de sierra circular para troncos de papel tisú embalada en un cajón de madera con protector de borde antes del envío",
-      "Hoja de sierra circular para troncos de papel tisú Ø610 mm D2, cara pulida a espejo con orificios para pasadores de arrastre",
-      "Diámetro interior de Ø68,26 mm y patrón de orificios para pasadores de arrastre para sierras de troncos Fabio Perini",
-      "Cara de la hoja de sierra circular para troncos de papel tisú mostrando el acabado pulido a espejo bajo luz de taller",
+      "Hojas de sierra circular para cortar rollos de papel tisú que muestran la cara pulida como espejo y el patrón de orificios del pasador de accionamiento",
+      "Pila de hojas de sierra circular terminadas para cortar rollos de papel tisú en una caja de madera en Sureay",
+      "Hojas de sierra circular para cortar rollos de papel tisú embaladas en una caja de madera con protector de bordes antes del envío",
+      "Hojas de sierra circular para cortar rollos de papel tisú con cara pulida y orificios de montaje.",
+      "Patrón de orificios de montaje y orificio central en hojas de sierra circular para cortar rollos de papel tisú",
+      "Hojas de sierra circular para cortar rollos de papel tisú que muestran un acabado pulido espejo bajo la iluminación del taller",
     ],
     description:
-      "Tissue sierras circulares para troncos Ø610-Ø1200 mm - endurecido al vacío D2/Cr12MoV (HRC 58-60), microrectificado a ≤0,15 mm de excentricidad lateral para corte transversal sin oscilación. Elimina los núcleos aplastados y el polvo de papel en las líneas de pañuelos de papel, papel de cocina y JRT. Compatible con afilado CBN en línea. Compatible con Fabio Perini, PCMC, Casmatic, Gambini y Bretting. Diámetros personalizados en 10 días laborables.",
-    fullDescription:
-      "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.\n\nLas cuchillas de papel tisú Sureay sierras circulares para troncos se fabrican con D2 (1.2379) y Cr12MoV acero para herramientas de trabajo en frío de primera calidad. Dado que estas enormes cuchillas (de hasta Ø1200 mm) giran a revoluciones extremas, la estabilidad lo es todo. Todas las cuchillas se endurecen al vacío, se nivelan en tensión y se rectifican según estrictas tolerancias dimensionales verificadas en una MMC calibrada antes de su envío:\n\n- **Desviación lateral:** ≤0,15 mm\n- **Desviación del borde:** ≤0,10 mm\n- **Paralelismo de la cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Tolerancia del agujero:** Ø68,26 mm (+0,05 / 0,00 mm)\n\n## Compatibilidad con afilado continuo\n\nA diferencia de la cuchillas circulares estándar, las sierras de troncos de papel tisú se afilan continuamente *durante* el funcionamiento mediante muelas CBN (nitruro de boro cúbico) sincronizadas. El objetivo de la tratamiento térmico de Sureay es HRC 58-60. Este rango de dureza específico garantiza que la cuchilla se afile limpiamente contra las piedras CBN sin cargarlas ni satinarlas, manteniendo un filo afilado ciclo tras ciclo sin consumir sus costosas muelas de afilado.\n\n## Geometría del bisel y reducción del polvo\n\nEl papel tisú es un material de baja densidad y gran superficie con una resistencia a la compresión casi nula. Cortarlo con un bisel demasiado pronunciado crea compresión, lo que provoca un exceso de polvo de papel (un importante peligro de incendio en las líneas de toallas encoladas por pulverización) y una densificación de los bordes que reduce la suavidad del rollo. Utilizamos un ángulo de bisel poco pronunciado (15°-25°) que separa las fibras por cizallamiento puro. Combinado con una cara de la cuchilla pulida a espejo (Ra ≤0,2 μm), esto proporciona cortes impecables en papel de baño de 2 y 3 capas de primera calidad.\n\n## Compatibilidad de diámetro interior por plataforma OEM\n\n**Ø68,26 mm (+0,05 mm):** Fabio Perini (todas las series), PCMC Forte/Elite, sierras de troncos Körber/MTC.\n\n**Ø82,55 mm:** Casmatic (plataformas con licencia de Kimberly-Clark), sistemas de sierras de troncos OEM de terceros italianos y españoles.\n\n**Ø60,00 mm:** Sierras de troncos de gran formato para la producción industrial de paños, rollos gigantes (JRT) y papel de baño sin núcleo (DE 870-1000 mm).\n\nOD personalizados de Ø610 mm a Ø1200 mm fabricados bajo pedido con un plazo de entrega estándar de 10 días laborables. Revisión de planos y aprobación dimensional disponibles en el primer pedido de herramientas.\n\n## Recubrimientos superficiales avanzados\n\n**Cromado duro:** Proporciona resistencia a la corrosión en entornos de fábricas de papel de alta humedad (≥75% HR) y reduce el coeficiente de adherencia de la fibra del papel tisú, ampliando el intervalo de funcionamiento limpio entre los ciclos de reavivado de la cuchilla.\n\n**Recubrimiento de Teflón (PTFE):** Crea una superficie altamente lubricada que se desliza a través de los densos troncos de papel de cocina, reduciendo drásticamente el consumo de amperios del motor y eliminando las marcas de quemaduras en los bordes del papel. La especificación superior para líneas de papel de cocina de 3 capas de primera calidad.\n\n**Recubrimiento TiN PVD:** El nitruro de titanio por deposición física de vapor (2-3 μm, HV 2300+) prolonga el intervalo de servicio de los bordes afilados en funcionamiento de ciclo alto. Recomendado para marcas de papel tisú premium con estrictas especificaciones de contaminación por polvo.",
+      "Discos de recambio para cortar rollos de papel higiénico y de cocina. Disponibles en D2, Cr12MoV o acero rápido M2 HSS, con taladro central, orificios de fijación y biseles a medida.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1227,141 +1597,71 @@ export const blades: Blade[] = [
       "Maflex",
       "MTorres",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379), Cr12MoV, M2 HSS",
-      },
-      {
-        label: "Diameter Capacity",
-        value: "Standard Ø610 mm up to Custom Ø1200 mm",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (Zero-wobble guaranteed)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Polished (Ra ≤0.2 μm)",
-      },
-      {
-        label: "Optional Coatings",
-        value: "Hard Chrome, Teflon (PTFE), TiN",
-      },
-      {
-        label: "Applications",
-        value: "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)",
-      },
-      {
-        label: "Max Line Speed",
-        value: "300 strokes/min",
-      },
-      {
-        label: "Inspection Records Supplied",
-        value:
-          "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "La vida útil de una hoja de sierra para troncos en una línea de papel tisú depende de cómo se comporta el acero bajo el afilado continuo con CBN, no solo de la dureza. Los dos grados siguientes cubren prácticamente todas las aplicaciones de papel tisú y papel de cocina que cotizamos.",
-      rows: [
-        {
-          grade: "D2 / 1.2379",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Líneas estándar de papel higiénico y papel de cocina con afilado CBN en línea. Nuestro grado por defecto.",
-          tradeoff:
-            "El mejor valor global. No es el de mayor vida útil en fibra reciclada con alto contenido de ceniza.",
-        },
-        {
-          grade: "Cr12MoV",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Líneas donde el coste de la cuchilla por corte importa más que la vida útil absoluta del filo; soporte de reafilado ampliamente disponible.",
-          tradeoff:
-            "Resistencia al desgaste ligeramente inferior a la del D2 en fibra reciclada abrasiva.",
-        },
-      ],
-      outro:
-        "Para líneas de alta velocidad con fibra reciclada muy abrasiva, también cotizamos M2 HSS, que mantiene el filo durante más tiempo entre afilados pero es más sensible al estado de la muela CBN. Si no está seguro de qué grado necesita su línea, indíquenos el tipo de fibra (virgen o reciclada), la densidad del tronco y cuántos cortes por minuto realiza. Adaptamos el grado a la línea, no al revés.",
-    },
-    componentsIntro:
-      "El corte transversal de los troncos de papel tisú es la operación de corte más importante en una línea de transformación de papel tisú. Un defecto dimensional en esta fase -núcleos de cartón aplastados, generación excesiva de polvo o caras cortadas en ángulo- se propaga inmediatamente a las estaciones de empaquetado, provocando paradas de la línea y rechazos por parte del consumidor.",
+    compatibleMachinesIntro:
+      "Sureay suministra discos de recambio en D2, Cr12MoV o M2 HSS para líneas de transformación de papel tisú. Fabricamos el taladro central, los orificios de fijación y el perfil del disco según su plano. Envíenos el plano para cotizar la configuración de su sierra. Las marcas de máquinas se indican como referencias de compatibilidad para los recambios Sureay.",
     components: [
       {
-        id: "runout-control",
-        tag: "PRECISIÓN",
-        title: "Tensado Zero-Wobble",
+        id: "tissue-log-saw-mounting",
+        tag: "Geometría de montaje",
+        title:
+          "Opciones de acero para herramientas y HSS para la transformación de Papel tisú",
         description:
-          "¿Por qué una sierra de troncos aplasta los núcleos de cartón? Casi siempre porque la excentricidad lateral ha superado los 0,20 mm, y la cuchilla empieza a golpear el núcleo en lugar de cortarlo. Una hoja de 610 mm girando a altas RPM se alabeará si no está bien tensada. Tensionamos por CNC y microafilamos cada hoja de sierra para troncos a ≤0,15 mm de desviación lateral, lo que garantiza que corte perfectamente recto sin oscilar ni aplastar el frágil núcleo de cartón.",
+          "Sureay suministra hojas circulares D2, Cr12MoV y M2 HSS para cortar rollos para convertir papel tisú y paños de cocina, lo que le brinda opciones de materiales para su sistema de sierra y afilado existente.",
       },
       {
-        id: "cbn-compatible",
-        tag: "METALURGIA",
-        title: "Afilado CBN en línea listo",
+        id: "tissue-log-saw-profile",
+        tag: "Perfil de la cuchilla",
+        title: "Caras pulidas y tratamientos superficiales opcionales",
         description:
-          "Cuchillas D2 y Cr12MoV tratadas térmicamente a HRC 58-60. Este rango específico de dureza responde limpiamente a las muelas CBN continuas sin cargarlas ni satinarlas, manteniendo un filo de navaja y protegiendo su equipo de afilado.",
+          "Las caras de las cuchillas pulidas a espejo están disponibles con recubrimientos de cromo duro, PTFE o TiN, lo que permite seleccionar las especificaciones de la superficie junto con el producto de Papel tisú y el material de la cuchilla.",
       },
       {
-        id: "anti-friction",
-        tag: "REVESTIMIENTOS",
-        title: "Acabados en teflón y cromo",
+        id: "tissue-log-saw-replacement",
+        tag: "Referencia de recambio",
+        title: "Patrones de montaje y perfiles biselados personalizados",
         description:
-          "La fricción genera calor y polvo de papel explosivo. Las cuchillas con revestimiento de cromo duro o teflón (PTFE) reducen el coeficiente de fricción, lo que permite obtener bordes de corte inmaculados en los rollos de papel de cocina de 3 capas y prolonga el tiempo medio entre ciclos de afilado.",
+          "Solicite cuchillas de recambio con orificios de montaje, patrones de orificios de accionamiento, cubos y biseles a medida para su línea de transformación. Los diámetros indicados abarcan de 610 a 1000 mm, con diámetros personalizados de hasta 1200 mm.",
+        relatedBladeIds: ["rotary-slitter-knives-paper"],
       },
     ],
-    dimensionLabels: {
-      col0: "Máquina de destino / Tipo de tronco",
-      col1: "Diámetro exterior (mm)",
-      col2: "Diámetro / ID (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones estándar para los principales OEM de transformación de papel tisú. Orificios para pasadores de arrastre personalizados, chaveteros y tamaños de hasta Ø1200 mm para rollos industriales JRT fabricados según especificaciones exactas.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "4.76",
+        label: "Tamaños",
+        value:
+          "Diámetros exteriores (Ø) indicados: 610–1000 mm; diámetros a medida hasta Ø1200 mm",
       },
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "3.80",
+        label: "Material",
+        value: "D2 (1.2379), Cr12MoV o M2 HSS",
       },
       {
-        spec: "Casmatic Standard",
-        od: '610 (24")',
-        id: '82.55 (3-1/4")',
-        thickness: "4.76",
+        label: "Recubrimientos opcionales",
+        value: "Cromo duro, PTFE o TiN",
       },
       {
-        spec: "Bretting / MTC",
-        od: "680",
-        id: "68.26",
-        thickness: "4.76",
+        label: "Aplicación",
+        value:
+          "Papel tisú de aseo, papel de cocina, paños industriales y rollos gigantes de papel tisú",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "870",
-        id: "60",
-        thickness: "6.0",
+        label: "Excentricidad lateral",
+        value: "≤0.15 mm",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "1000",
-        id: "60",
-        thickness: "6.0",
+        label: "Excentricidad del borde",
+        value: "≤0.10 mm",
+      },
+      {
+        label: "Acabado superficial",
+        value: "Pulido a espejo, Ra ≤ 0,2 µm",
+      },
+      {
+        label: "Velocidad de corte de referencia",
+        value:
+          "Hasta 300 carreras/min, dependiendo de la sierra y de la configuración de corte",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["nonwoven-log-saw-blades", "rotary-slitter-knives-paper"],
     offers: {
       lowPrice: 180,
       highPrice: 1200,
@@ -1370,75 +1670,184 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Por qué mi sierra de troncos aplasta los núcleos de cartón de los rollos de papel higiénico?",
+            "¿Qué hojas de sierra circular de repuesto para cortar rollos de papel tisú se adaptan a mi línea de conversión?",
           answer:
-            "El aplastamiento del núcleo se debe principalmente a un bamboleo excesivo de la cuchilla (excentricidad lateral) o a un filo de corte romo. Cuando la excentricidad lateral supera los 0,20 mm, la cuchilla golpea físicamente el núcleo en lugar de cortarlo. Nuestras cuchillas están niveladas en tensión y verificadas en MMC a ≤0,15 mm de excentricidad lateral. Verifique también que sus piedras de afilar CBN en línea estén correctamente alineadas y que estén rectificando activamente la cuchilla en cada ciclo.",
+            "La hoja de recambio debe coincidir con el diámetro, el diámetro interior, el grosor, el cubo, el bisel y la disposición de los orificios de accionamiento especificados para la sierra. Dos cuchillas de Ø610 mm pueden tener diferentes diámetros interiores o espesores de cuerpo, por lo que debe utilizarse la referencia original de la cuchilla, además del modelo de la máquina. Tanto la cuchilla de corte de papel higiénico como la cuchilla de sierra para rollo de papel tisú pueden referirse a esta cuchilla circular de corte transversal. Para el corte longitudinal de bandas, consulte [Cuchillas para cortadoras rotativas de papel](/products/rotary-slitter-knives-paper).",
+        },
+        {
+          question: "¿Cómo debo elegir entre D2, Cr12MoV y M2 HSS?",
+          answer:
+            "Comience por el material actual de la cuchilla —Papel tisú o de tipo toalla— y la configuración de afilado. Compare el desgaste gradual, los daños en el filo y el corte obtenido entre ciclos de afilado. Las especificaciones de sustitución deben combinar la elección del acero con el bisel y la sección de la cuchilla existentes, de modo que se pueda evaluar un cambio de material en condiciones de producción comparables.",
         },
         {
           question:
-            "¿Cómo minimizar el polvo y el desgarro de fibras durante el corte transversal de papel tisú?",
+            "¿Qué debería guiar la elección del recubrimiento para las hojas de sierra circular para cortar rollos de papel tisú?",
           answer:
-            "El polvo se genera cuando una cuchilla de alta fricción desgarra las fibras de papel tisú en lugar de cortarlas. Diseñamos un ángulo de bisel poco profundo (15°-25°) combinado con una cara pulida a espejo (Ra ≤0,2 μm). Para una reducción máxima del polvo, utilice nuestras cuchillas con revestimiento de teflón (PTFE), que reducen drásticamente la fricción y permiten que la cuchilla se deslice por el tronco con un desplazamiento mínimo de las fibras.",
+            "Tenga en cuenta el material de la cuchilla, el producto de ePapel tisúo y la ubicación de los residuos o los problemas de corte relacionados con el calor. La fricción entre la cuchilla y el rollo puede contribuir al calentamiento. Especifique el tratamiento superficial solicitado por separado del tipo de acero y del bisel, y compare las configuraciones con y sin recubrimiento en las mismas condiciones de corte.",
         },
         {
           question:
-            "¿Pueden suministrar hojas para sierras de troncos Fabio Perini, PCMC, Casmatic o Gambini?",
+            "¿Por qué las hojas de una sierra circular para cortar rollos de papel de seda pueden festonearse después de afilarlas?",
           answer:
-            "Sí. El calibre estándar de Ø68,26 mm (+0,05 mm) se adapta directamente a las sierras de troncos Fabio Perini y PCMC Forte/Elite. El orificio de Ø82,55 mm cubre Casmatic y plataformas equivalentes. Para las máquinas Gambini y Bretting, fabricamos según la geometría medida de su cuchilla actual o su propio plano, de modo que el repuesto se instala sin necesidad de reajustar la máquina. Envíenos el modelo de máquina, una cuchilla desgastada o un boceto acotado y confirmamos el ajuste antes de cotizar.",
+            "Un rectificado irregular alrededor de la circunferencia puede producir un borde festoneado o poligonal. Las comprobaciones pertinentes incluyen el estado de la muela, el contacto en las dos caras y la excentricidad de la hoja montada. Compare el patrón con el historial de afilado y siga el procedimiento de rectificado del fabricante de la sierra antes de seleccionar un material de recambio diferente.",
         },
         {
           question:
-            "¿Cómo interactúa la cuchilla con el sistema de afilado continuo CBN de la máquina?",
+            "¿Por qué son importantes el cubo y el bisel si el diámetro ya coincide?",
           answer:
-            "Las sierras de troncos utilizan piedras CBN (nitruro de boro cúbico) sincronizadas para afilar la hoja continuamente durante el funcionamiento. Si el material de la hoja es demasiado duro o blando, se cargarán o satinarán las piedras, haciéndolas ineficaces. Nuestras cuchillas D2 tratadas térmicamente a HRC 58-60 desprenden las microvirutas limpiamente sin obstruir las muelas CBN.",
+            "El cubo determina la relación de montaje de la cuchilla, mientras que el bisel define el perfil de su filo de trabajo y el contacto con las muelas de afilado. Dos cuchillas con el mismo diámetro, agujero central y grosor del cuerpo pueden diferir en estas características. Un dibujo en sección transversal identifica la configuración completa que requiere la sierra y su sistema de rectificado.",
         },
         {
           question:
-            "¿Cuál es el diámetro de hoja más largo que se puede fabricar?",
+            "¿Debería utilizarse el diámetro de una cuchilla reacondicionada para una nueva sustitución?",
           answer:
-            "Fabricamos papel tisú sierras circulares para troncos de hasta Ø1200 mm para líneas de producción de rascadores industriales de gran formato y rollos jumbo (JRT). Para ello se necesitan nuestros hornos de vacío de gran formato tratamiento térmico y equipos de rectificado CNC. El plazo de entrega estándar es de 10 días laborables a partir de la firma del plano.",
+            "Utilice el diámetro original de la cuchilla nueva siempre que sea posible. El afilado repetido reduce el diámetro exterior, por lo que debe registrarse por separado la dimensión tras el reafilado. El número de referencia del catálogo indica el tamaño indicado, y el plano de la cuchilla incluye la geometría del cubo, el montaje y el bisel para una sustitución nueva.",
+        },
+        {
+          question:
+            "¿Qué información necesitas para cotizar hojas de sierra circular para cortar rollos de papel de seda?",
+          answer:
+            "Indique el modelo de sierra, la referencia original de la hoja o el plano, la cantidad y el producto de Papel tisú que se va a cortar. Incluya el diámetro y el grosor de la hoja nueva, el orificio central, la disposición de los pasadores de accionamiento, la sección transversal del cubo y el bisel. Especifique el acero y el acabado solicitados, si ya están definidos, e indique por separado el diámetro actual si la muestra ha sido reafilada.",
         },
       ],
-      company: [
-        {
-          question: "¿Es usted fabricante o empresa comercial?",
-          answer:
-            "Fabricante directo. Forjamos, rectificamos e inspeccionamos la calidad de todas las cuchillas en nuestras instalaciones con la certificación ISO 9001:2015. Usted se comunica directamente con los ingenieros de producción que han fabricado sus cuchillas.",
-        },
-        {
-          question:
-            "¿Suministran muelas de afilar CBN emparejadas junto con las cuchillas?",
-          answer:
-            "Sí. Suministramos juegos emparejados de piedras de afilar CBN diseñadas para nuestra sierras circulares para troncos, garantizando el ángulo de afilado correcto, la dureza del aglomerante y el grano abrasivo para una máxima vida útil de la cuchilla y un mínimo desgaste de la piedra.",
-        },
-        {
-          question: "¿Qué certificaciones de calidad tiene Sureay?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional CMM y un certificado de lote tratamiento térmico. Los certificados de fresado y los informes de trazabilidad completa de los materiales están disponibles previa solicitud.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Incluya el modelo de sierras de corte en rollo, el material en rollo, el diámetro exterior de la hoja, el diámetro interior, el espesor, el bisel y el patrón de orificios del pasador de accionamiento.",
+    dimensionLabels: {
+      col1: "Diámetro exterior (mm)",
+      col2: "Diámetro (mm)",
+      col3: "Espesor del cuerpo (mm)",
+      intro:
+        "Cada número de artículo identifica una combinación completa de diámetro exterior, diámetro interior y espesor del cuerpo.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005101",
+        od: "610",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005102",
+        od: "610",
+        id: "68.26",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005103",
+        od: "610",
+        id: "82.55",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005104",
+        od: "680",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005105",
+        od: "870",
+        id: "60",
+        thickness: "6.0",
+      },
+      {
+        itemNo: "SR005106",
+        od: "1000",
+        id: "60",
+        thickness: "6.0",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Discos de sierra para rollos de papel tisú | Ø610–1000 mm",
+      heroAlt:
+        "Hojas de sierra circular para cortar rollos de papel tisú con filo circular, orificio central y orificios de montaje.",
+      sizeRange: "Ø610–1000 mm",
+      heroSpecs: [
+        {
+          label: "Aplicación",
+          value: "Corte de rollos de papel de seda y toalla de cocina.",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value:
+            "Diámetros exteriores (Ø) indicados: 610–1000 mm; diámetros a medida hasta Ø1200 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379), Cr12MoV o M2 HSS",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value: "Cromo duro, PTFE o TiN",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Papel tisú de aseo, papel de cocina, paños industriales y rollos gigantes de papel tisú",
+        },
+        {
+          label: "Excentricidad lateral",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Excentricidad del borde",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Pulido a espejo, Ra ≤ 0,2 µm",
+        },
+        {
+          label: "Velocidad de corte de referencia",
+          value:
+            "Hasta 300 carreras/min, dependiendo de la sierra y de la configuración de corte",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/tissue-log-saw-blades-02.webp",
+        alt: "Hojas de sierra circular para cortar rollos de papel tisú mostrando su cara y área de montaje central.",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Solicita presupuesto para tus cuchillas circulares para corte de rollos",
+        description:
+          "Incluya el número de artículo o la referencia original de la cuchilla, el modelo de sierra, los planos de montaje y biselado, y la cantidad.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Incluya el número de artículo o la referencia original de la cuchilla, el modelo de sierra, los planos de montaje y biselado, y la cantidad.",
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Hojas de sierra para troncos no tejidos",
-    fullName:
-      "Hojas de sierra para troncos resistentes a la corrosión para la transformación de no tejidos e higiene",
+    name: "Discos de sierra para rollos de tejido no tejido",
+    fullName: "Cuchillas de sierra para cortar rollos de material no tejido",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Cuchillas para transformación de no tejidos",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Anticorrosión",
-    badgeColor: "teal",
+    imageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Hojas de sierra para troncos diseñadas para líneas de transformación de no tejidos e higiene: toallitas para bebés, toallitas húmedas, higiene femenina y rollos para incontinencia de adultos. Acero para herramientas D2 con recubrimiento resistente a la corrosión de TiN o cromo duro que resiste soluciones a base de alcohol, lociones y tensioactivos. Microrrectificadas a ≤0,15 mm de excentricidad lateral para cortes sin deshilachado en sustratos spunbond, meltblown, SMS y airlaid. Compatibles con líneas de transformación Fameccanica, GDM, Curt G. Joa y Zuiko. Diámetros personalizados en 10 días laborables.",
-    fullDescription:
-      "Las líneas de transformación de no tejidos para higiene presentan un conjunto de exigencias sobre la cuchilla fundamentalmente distinto al de las operaciones de papel tisú. Mientras que las sierras para troncos de tisú deben gestionar el polvo de papel y el aplastamiento del núcleo, las sierras para troncos de no tejidos se enfrentan a dos modos de fallo distintos: el deshilachado de fibras por sustratos sintéticos que resisten un corte limpio, y la corrosión acelerada por el entorno químico de líneas que trabajan con alcohol, lociones, conservantes (fenoxietanol) y tensioactivos con alta humedad.\n\nLas hojas de sierra para troncos no tejidos de Sureay se fabrican en acero para herramientas D2 (1.2379) de alto carbono y alto cromo, y están disponibles con recubrimientos resistentes a la corrosión específicos para cada aplicación. Todas las hojas se endurecen al vacío, se nivelan en tensión y se verifican mediante MMC antes del envío.\n\n## Por qué las cuchillas para tisú fallan en líneas de no tejidos\n\nLas bandas compuestas de polipropileno spunbond, meltblown y SMS son fundamentalmente más difíciles de cortar limpiamente que el tisú celulósico. Las fibras sintéticas son elásticas: se deforman ante una cuchilla desafilada o ligeramente descentrada en lugar de separarse limpiamente, produciendo bordes de corte deshilachados y con hilos que provocan fallos de plegado y envasado aguas abajo. Una cuchilla optimizada para tisú (bisel menos pronunciado, matriz más blanda para compatibilidad con CBN) producirá un desprendimiento de fibras visible en sustratos spunbond en una fracción del tiempo de servicio que lograría en tisú.\n\nEl entorno químico agrava el problema. Las líneas de toallitas húmedas trabajan con ratios de saturación de 2,0-3,5× (peso de la solución respecto al peso del sustrato), lo que significa que la cuchilla queda expuesta continuamente a la química de impregnación: normalmente un 80-95% de agua purificada más conservantes, humectantes y tensioactivos. El D2 estándar sin tratamiento superficial desarrollará micropicaduras en el filo de corte en cuestión de semanas, acelerando el deterioro del filo y aumentando el riesgo de contaminación por partículas en un producto crítico para la higiene.\n\n## Opciones de recubrimiento para entornos de higiene\n\n**Recubrimiento TiN PVD (2-3 µm, HV 2300+):** El nitruro de titanio por deposición física de vapor proporciona una barrera químicamente inerte con excelente adherencia. Bloquea la entrada de alcohol y tensioactivos en el sustrato de la cuchilla, prolonga los intervalos de servicio del filo y añade una capa de dureza que resiste la microabrasión de las partículas de SAP (polímero superabsorbente) presentes en las líneas de núcleo absorbente. Recomendado para la transformación de toallitas húmedas y productos de incontinencia para adultos.\n\n**Cromado duro:** El cromo duro electrodepositado (20-30 µm) proporciona una resistencia a la corrosión excepcional en entornos de alta humedad (≥75% HR) y reduce el coeficiente de fricción frente a las bandas de fibra sintética. La capa más gruesa también rellena los microporos superficiales, creando un efecto de sellado frente a la entrada de agentes de limpieza durante los ciclos de lavado.\n\n**D2 sin recubrimiento (estándar):** Adecuado para líneas de transformación de no tejidos secas -airlaid, thermobond, spunlace- donde no hay presencia de química de saturación. Dureza HRC 58-60, compatible con afilado CBN.\n\n## Geometría del bisel para fibra sintética\n\nLos sustratos de no tejidos requieren un ángulo de bisel primario ligeramente más pronunciado (25°-35°) en comparación con el tisú (15°-25°). La geometría más pronunciada concentra la fuerza de corte en el punto de contacto del filo, iniciando una separación limpia de la fibra en lugar de la deformación elástica que provoca el deshilachado. Para troncos de toallitas húmedas impregnadas con loción y alta resistencia cohesiva, un bisel compuesto (alivio primario + secundario) proporciona la cara de corte más limpia con un mínimo redondeo del filo a lo largo de ciclos de producción prolongados.\n\n## Tolerancias dimensionales\n\n- **Excentricidad lateral:** ≤0,15 mm\n- **Excentricidad del filo:** ≤0,10 mm\n- **Paralelismo de cara:** 0,05 mm\n- **Concentricidad (diámetro exterior respecto al agujero):** ≤0,30 mm\n- **Acabado superficial:** Pulido espejo (Ra ≤0,2 µm)\n\n## Compatibilidad con plataformas OEM\n\nLas sierras para troncos de transformación de no tejidos para higiene difieren en la especificación del agujero y el diámetro respecto a las líneas de tisú. Plataformas habituales:\n\n**Fameccanica (Italia):** Líneas de transformación de pañales para bebé y productos de higiene femenina; diámetros de cuchilla habitualmente entre Ø400 y Ø550 mm según el formato del producto y el diámetro del rollo.\n\n**GDM (Italia):** Líneas de productos de higiene de alta velocidad; especificaciones de cuchilla según plano del cliente.\n\n**Curt G. Joa (EE. UU.):** Líneas norteamericanas de incontinencia para adultos e higiene femenina; disponibles especificaciones de agujero en medidas imperiales.\n\n**Zuiko (Japón):** Transformación de pañales para bebé; dimensiones de cuchilla según plano OEM.\n\n**Fabricantes OEM chinos (Zlink, Dachang, fabricantes de la zona de Quanzhou):** Especificaciones de cuchilla suministradas según plano o ingeniería inversa de muestra.\n\nDiámetro exterior personalizado de Ø350 mm a Ø700 mm fabricado bajo pedido. Disponible revisión de planos y aprobación dimensional de la primera pieza.",
+      "Cuchillas circulares de repuesto D2 para corte de rollos para corte transversal de rollos de tela no tejida. Orificios personalizados, patrones de orificios de montaje y perfiles de hoja hechos según el dibujo de su cuchillo.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1449,102 +1858,65 @@ export const blades: Blade[] = [
       "Zlink",
       "Dachang",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379) — HRC 58–60",
-      },
-      {
-        label: "Coating Options",
-        value: "TiN PVD | Hard Chrome | Uncoated",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (CMM-verified)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Diameter Range",
-        value: "Ø350 mm – Ø700 mm (custom to drawing)",
-      },
-      {
-        label: "Applications",
-        value: "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Solicite cuchillas circulares de repuesto D2 para cortar rollos para su equipo de corte de rollos de tela no tejida, con orificios y patrones de montaje personalizados, además de opciones sin recubrimiento, TiN o cromo duro. Envíe su dibujo o muestra y Suray preparará una cotización para su configuración. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto de Suray.",
     components: [
       {
-        id: "corrosion-coating",
-        tag: "RECUBRIMIENTOS",
-        title: "TiN y cromo duro para resistencia química",
+        id: "nonwoven-log-saw-installation",
+        tag: "Geometría de instalación",
+        title: "D2 Cuchillas para rollos de tela no tejida",
         description:
-          "Las líneas de transformación de toallitas húmedas e higiene están expuestas de forma continua a alcoholes, tensioactivos y conservantes que corroen los filos de acero para herramientas sin recubrir en cuestión de semanas. Nuestro recubrimiento TiN PVD (HV 2300+) y el cromado duro crean una barrera químicamente inerte, bloqueando la entrada en el filo de corte y ampliando el intervalo de funcionamiento limpio entre ciclos de reafilado.",
+          "Sureay suministra hojas circulares D2 para cortar rollos con una dureza indicada de 58 a 60 HRC para rollos de corte transversal de tela no tejida. El perfil de corte y la sección de la hoja se pueden especificar para el equipo de corte de rollos instalado.",
       },
       {
-        id: "nonwoven-bevel",
-        tag: "GEOMETRÍA",
-        title: "Perfil de bisel para fibra sintética",
+        id: "nonwoven-log-saw-edge",
+        tag: "Geometría del filo",
+        title:
+          "Opciones sin recubrimiento, con recubrimiento de TiN y con cromo duro",
         description:
-          "Las bandas spunbond, meltblown y SMS se deforman elásticamente ante un bisel con especificación para tisú, provocando un deshilachado de fibras visible en la cara de corte. Aplicamos un bisel primario más pronunciado (25°-35°) con un alivio secundario compuesto que inicia una separación limpia de la fibra desde el primer contacto, eliminando el hilado y la densificación del borde que provocan rechazos en la línea de envasado.",
+          "Las configuraciones de cuchillas sin recubrimiento, con recubrimiento TiN PVD y con cromo duro le ofrecen opciones de superficie para un pedido de recambio, especificándose el recubrimiento por separado de la geometría de la cuchilla.",
       },
       {
-        id: "runout-hygiene",
-        tag: "PRECISIÓN",
-        title: "Excentricidad ≤0,15 mm para cortes sin deshilachado",
+        id: "nonwoven-log-saw-reference",
+        tag: "Identificación de piezas",
+        title: "Diámetros interiores a medida y patrones de montaje completos",
         description:
-          "Los troncos de no tejidos son más blandos y compresibles que los de tisú. Cualquier oscilación lateral de la cuchilla se traduce directamente en una cara de corte comprimida e irregular en lugar de un plano de corte limpio. Todas las cuchillas se nivelan en tensión y se verifican mediante MMC a ≤0,15 mm de excentricidad lateral antes del envío, garantizando que la cuchilla penetre en el tronco con un ángulo constante en cada pasada.",
+          "Los orificios centrales, los elementos de fijación y las superficies de posicionamiento personalizados permiten que las cuchillas de recambio se ajusten al plano de su sierra actual, incluidas las configuraciones que comparten un mismo diámetro pero utilizan soportes diferentes.",
+        relatedBladeIds: ["nonwoven-slitter-knives"],
       },
     ],
-    dimensionLabels: {
-      col0: "Plataforma de máquina / Formato de producto",
-      col1: "Diámetro exterior (mm)",
-      col2: "Agujero / ID (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones de referencia para las plataformas habituales de transformación de no tejidos para higiene. Patrones de agujero, chaveteros y orificios para pasadores de arrastre fabricados según plano del cliente. Diámetro exterior personalizado Ø350-Ø700 mm disponible con un plazo de entrega de 10 días laborables.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Baby Wipe / Wet Wipe (short log)",
-        od: "400",
-        id: "To drawing",
-        thickness: "3.80",
+        label: "Aplicación",
+        value: "Rollos transversales de tela no tejida.",
       },
       {
-        spec: "Baby Wipe / Wet Wipe (standard log)",
-        od: "450",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Material",
+        value: "D2 (1.2379)",
       },
       {
-        spec: "Femcare / Sanitary Napkin Roll",
-        od: "500",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Dureza",
+        value: "58–60 HRC",
       },
       {
-        spec: "Adult Incontinence / Large Format",
-        od: "550",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Tamaños",
+        value: "Ø350–700 mm",
       },
       {
-        spec: "Industrial / Canister Wipe Roll",
-        od: "600",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Recubrimientos opcionales",
+        value:
+          "TiN PVD o cromo duro; también hay disponibles cuchillas sin recubrimiento",
       },
       {
-        spec: "Custom / OEM to Drawing",
-        od: "Ø350–700",
-        id: "To drawing",
-        thickness: "3.80–6.00",
+        label: "Excentricidad lateral",
+        value: "≤0.15 mm",
+      },
+      {
+        label: "Excentricidad del borde",
+        value: "≤0.10 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["tissue-log-saw-blades", "nonwoven-slitter-knives"],
     offers: {
       lowPrice: 150,
       highPrice: 900,
@@ -1553,75 +1925,168 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Por qué mis cuchillas se corroen rápidamente en nuestra línea de transformación de toallitas húmedas?",
+            "¿Cómo identifico cuchillas circulares de repuesto para rollos de corte transversal de tela no tejida?",
           answer:
-            "Las líneas de toallitas húmedas exponen continuamente las cuchillas a conservantes (fenoxietanol), tensioactivos y soluciones a base de alcohol con alta humedad. El acero para herramientas D2 sin recubrir desarrolla micropicaduras en el filo de corte en cuestión de semanas bajo estas condiciones, acelerando el desgaste y creando un riesgo de contaminación por partículas. La solución es un tratamiento superficial resistente a la corrosión: el recubrimiento TiN PVD (2-3 µm, HV 2300+) proporciona una barrera químicamente inerte frente a la entrada de alcohol y tensioactivos, mientras que el cromado duro sella los microporos superficiales frente a la penetración de agentes de limpieza durante los ciclos de lavado.",
+            "Identifique la sierra y la referencia de la pieza original; a continuación, compare el diámetro, el orificio, el grosor, el patrón de montaje y el bisel. «Hoja de corte de rollos de tejido no tejido» es una denominación de compra relacionada. Confirme que la pieza realiza un corte transversal en un rollo enrollado. Para cortar una banda en movimiento a lo largo, consulte [Cuchillas de corte de tejido no tejido](/products/nonwoven-slitter-knives).",
         },
         {
           question:
-            "Mis cuchillas dejan bordes de corte deshilachados y con hilos en troncos de no tejido spunbond. ¿Cuál es la causa?",
+            "¿Puede Sureay fabricar un patrón de orificios y un diámetro interior a medida para una sierra ya existente?",
           answer:
-            "El deshilachado en sustratos de PP spunbond o SMS se debe a dos factores: geometría de bisel incorrecta y/o excentricidad lateral excesiva. Las fibras sintéticas son elásticas: se deforman ante un bisel poco pronunciado con especificación para tisú (15°-25°) en lugar de cortarse limpiamente. Los sustratos de no tejidos requieren un bisel primario más pronunciado (25°-35°) para concentrar la fuerza de corte en el punto de contacto de la fibra. Además, una excentricidad lateral superior a 0,20 mm hace que la cuchilla comprima el tronco en lugar de cortarlo, produciendo bordes irregulares. Nuestras cuchillas para no tejidos están verificadas mediante MMC a ≤0,15 mm de excentricidad lateral y rectificadas con un perfil de bisel compuesto optimizado para fibra sintética.",
+            "Sí. Sureay puede fabricar el diámetro interior y la disposición de los pernos o ranuras según el plano. Indique el diámetro del círculo primitivo y las posiciones angulares de los elementos de fijación, así como su tamaño. Dos sistemas de montaje pueden tener el mismo número de orificios y, aun así, utilizar círculos primitivos o disposiciones angulares diferentes.",
         },
         {
           question:
-            "¿Pueden suministrar cuchillas compatibles con máquinas de transformación de higiene Fameccanica o GDM?",
+            "¿Cómo deben especificarse la dureza D2 y el tratamiento superficial?",
           answer:
-            "Sí. Fabricamos según plano o muestra del cliente para las plataformas Fameccanica, GDM, Curt G. Joa, Zuiko y OEM nacionales chinas. El diámetro del agujero, el patrón de orificios para pasadores de arrastre, el diámetro exterior y el espesor son totalmente personalizables. Envíenos su plano OEM o una cuchilla desgastada de muestra y le proporcionaremos una confirmación dimensional y la aprobación de la primera pieza antes de la producción completa.",
+            "Especifique por separado la dureza del acero base D2 y el acabado superficial. Si se cambia de una cuchilla sin recubrimiento a una con recubrimiento PVD de TiN o cromo duro, indique el acabado solicitado en el plano de sustitución y mantenga claras las dimensiones especificadas de la sección de la cuchilla y del montaje.",
         },
         {
           question:
-            "¿Cuál es la diferencia entre el recubrimiento TiN y el cromado duro para cuchillas de higiene?",
+            "¿El grosor del cuerpo describe completamente el perfil de corte?",
           answer:
-            "El TiN PVD (nitruro de titanio) es un recubrimiento fino y extremadamente duro (2-3 µm, HV 2300+) aplicado en una cámara de vacío. Proporciona una barrera inerte frente a la corrosión química, añade una dureza superficial que resiste la microabrasión de las partículas de SAP en las líneas de núcleo absorbente y prolonga los intervalos de servicio del filo. El cromo duro es una capa electrodepositada más gruesa (20-30 µm) que ofrece una excelente resistencia a la corrosión en entornos de alta humedad y reduce el coeficiente de fricción frente a las bandas de fibra sintética. Para líneas de toallitas húmedas con química agresiva, el TiN es la opción preferida. Para líneas de no tejidos secas o semisecas en entornos de fábrica con alta humedad, el cromo duro resulta más rentable.",
+            "No. El espesor del cuerpo solo proporciona una dimensión del perfil axial. Incluya el bisel y su orientación, además de cualquier cubo o sección escalonada, en el plano de sección transversal. Esos detalles permiten localizar el filo de corte con respecto a la superficie de montaje.",
         },
         {
           question:
-            "¿Estas cuchillas funcionan con sistemas de afilado CBN en línea en líneas de no tejidos?",
+            "¿Qué describen la excentricidad lateral y la excentricidad del borde?",
           answer:
-            "La mayoría de las sierras para troncos de transformación de no tejidos para higiene no utilizan sistemas de afilado CBN continuo en línea (a diferencia de las líneas de tisú). Las cuchillas suelen sustituirse en un intervalo programado en lugar de rectificarse continuamente. Sin embargo, si su línea sí utiliza rectificado CBN en línea, nuestras cuchillas D2 endurecidas a HRC 58-60 son compatibles con las especificaciones estándar de muelas CBN. El recubrimiento TiN se eliminará por el contacto con el CBN en el filo de corte, lo cual es normal: el beneficio protector se aplica al cuerpo de la cuchilla, no a la zona de filo afilado activamente.",
+            "La desviación lateral describe la variación de lado a lado de la cuchilla mientras gira, mientras que la desviación del filo describe la variación radial en la circunferencia de corte. Ambas forman parte de las especificaciones de la cuchilla, junto con la referencia de montaje utilizada para la medición. Al evaluar una cuchilla instalada, hay que distinguir las medidas de la cuchilla de la variación introducida por el eje, la brida o el estado del asiento.",
+        },
+        {
+          question:
+            "¿Qué debo incluir en unas cuchillas circulares para corte transversal de rollos de tela no tejida?",
+          answer:
+            "Proporcione el modelo de sierra, el dibujo de la cuchilla o el número de pieza, el tipo de tela no tejida enrollada y la cantidad. Identifique el orificio central, el círculo primitivo, la dirección del bisel y el acabado. Para obtener una muestra, proporcione vistas frontal, posterior y de borde y marque cualquier área dañada o rectificada que ya no represente el perfil de la nueva cuchilla.",
         },
       ],
-      company: [
-        {
-          question: "¿Son ustedes fabricantes o una empresa comercial?",
-          answer:
-            "Fabricante directo. Forjamos, rectificamos, recubrimos e inspeccionamos la calidad de todas las cuchillas internamente en nuestras instalaciones de 15.000 m² en Ma'anshan, provincia de Anhui, bajo certificación ISO 9001:2015. Usted se comunica directamente con los ingenieros de producción que fabricaron sus cuchillas, sin margen de revendedor.",
-        },
-        {
-          question:
-            "¿Pueden aplicar ingeniería inversa a una cuchilla a partir de una muestra desgastada o un plano OEM?",
-          answer:
-            "Sí. Envíenos su cuchilla desgastada o el plano dimensional OEM y elaboraremos un informe de medición MMC y una confirmación dimensional antes de comprometernos con la producción. Los informes de inspección de primera pieza están disponibles bajo petición para nuevos proyectos de herramental.",
-        },
-        {
-          question:
-            "¿Cuál es la cantidad mínima de pedido y el plazo de entrega?",
-          answer:
-            "El pedido mínimo suele ser de 2 a 5 cuchillas según el diámetro. El plazo de entrega estándar es de 10 días laborables a partir de la aprobación del plano. Podemos atender pedidos urgentes: contáctenos con su plazo requerido.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Incluya el modelo de la sierra, el plano de la hoja, el diámetro exterior, el diámetro interior, el espesor del cuerpo, el bisel y la disposición de los orificios de montaje.",
+    detailLayout: {
+      seoTitle:
+        "Discos de sierra para rollos de tejido no tejido | Recambios a medida",
+      heroAlt:
+        "Cuchillas circulares para cortar transversalmente rollos de tela no tejida con filo circular, orificio central y orificios de montaje.",
+      sizeRange: "Ø350–700 mm",
+      heroSpecs: [
+        {
+          label: "Aplicación",
+          value: "rollos transversales de tela no tejida",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Ø350–700 mm",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379)",
+        },
+        {
+          label: "Dureza",
+          value: "58–60 HRC",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value:
+            "TiN PVD o cromo duro; también hay disponibles cuchillas sin recubrimiento",
+        },
+        {
+          label: "Excentricidad lateral",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Excentricidad del borde",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Aplicación",
+          value: "Rollos transversales de tela no tejida.",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/nonwoven-log-saw-blades-03.webp",
+        alt: "cuchillas circulares para corte transversal de rollos de tela no tejida muestra que muestra el orificio y los orificios de montaje",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title:
+          "Solicita presupuesto para tus cuchillas circulares para corte de rollos",
+        description:
+          "Envíe el modelo de la sierra, la referencia original de la cuchilla, el plano acotado completo y la cantidad.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Envíe el modelo de la sierra, la referencia original de la cuchilla, el plano acotado completo y la cantidad.",
+    dimensionLabels: {
+      col1: "Diámetro exterior (mm)",
+      col2: "Diámetro / ID (mm)",
+      col3: "Espesor (mm)",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005201",
+        od: "400",
+        id: "To drawing",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005202",
+        od: "450",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005203",
+        od: "500",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005204",
+        od: "550",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005205",
+        od: "600",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005206",
+        od: "Ø350–700",
+        id: "To drawing",
+        thickness: "3.80–6.00",
+      },
+    ],
   },
   {
     id: "paper-cutting-blades",
-    name: "Cuchillas para cortar papel",
-    fullName: "Cuchillas de guillotina de alta calidad (HSS y TCT)",
-    category: "shear_blades",
+    name: "Cuchillas de guillotina para papel",
+    fullName: "Cuchillas para guillotinas y cortadoras de papel en pilas",
+    seoTitle:
+      "Cuchillas para cortadoras de papel | Cuchillas para guillotinas de papel",
+    seoDescription:
+      "Solicite cuchillas de guillotina para papel con incrustaciones de HSS o con puntas de carburo para cortadoras de pilas. Las longitudes indicadas son de 450 a 2050 mm, aunque hay disponibles longitudes personalizadas y orificios de montaje.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Cuchillas para cortar papel",
-    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    image: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     badge: "Precisión OEM",
     badgeColor: "teal",
     gallery: [
-      "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+      "/images/products/shear-detail/paper-cutting-blades-cover.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
+      "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
     ],
     description:
-      "Elimine el arrastre de papel y el polvo con el recambio cuchillas de guillotina para fresas Polar, Wohlenberg y Perfecta. Disponibles con incrustaciones de acero de alta velocidad (HSS) al 18% de tungsteno y con punta de carburo de tungsteno (TCT). Microafilado a un bisel preciso de 21° con planitud de la cara en toda su longitud ≤0,05 mm para cortes perfectamente cuadrados en tiradas de gran volumen.",
-    fullDescription:
-      "Las cuchillas de recambio para guillotinas de papel son componentes consumidos cuyo grado de aleación, geometría del filo y precisión dimensional en toda la longitud determinan directamente la calidad de corte en toda la pila de resmas, desde cuchillas de oficina de 450 mm hasta guillotinas comerciales de doble haz de 2050 mm.\n\nLas cuchillas de corte de papel Sureay se ofrecen en tres grados metalúrgicos, adaptados a los requisitos de volumen de corte, sustrato y coste total de propiedad:\n\n## Grados de material\n\n**Acero para herramientas estándar (T10, 9CrSi - HRC 57-60):** Rentable para imprentas de volumen moderado y operaciones de acabado que cortan papel bond, papel prensa y papel no estucado de hasta 80 g/m². El acero con alto contenido en carbono T10 está endurecido a HRC 57-60 y proporciona un filo fiable al menor coste por unidad. Adecuada para máquinas Polar, Schneider Senator y Challenge 305 en entornos de ciclo diario moderado.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60-62):** La mejor elección para impresión comercial de gran volumen, publicación de libros y guillotinas de conversión de etiquetas que trabajan con varias resmas por hora. M2 y SKH-51 HSS conservan toda su dureza a las elevadas temperaturas de corte generadas por el funcionamiento de alto ciclo, proporcionando una vida útil de 4 a 6 veces más larga entre reafilados en comparación con las cuchillas de acero al carbono estándar. Recomendada para papel estucado, cartón, material de embalaje laminado y hojas de etiquetas adhesivas multicapa, donde el desgaste de los bordes se acelera rápidamente.\n\n**Recubrimiento de carburo de tungsteno (YG15 / YG20):** Recubrimiento de carburo de tungsteno soldado en horno con nitrógeno para los sustratos más abrasivos: papel autocopiativo (recubrimiento CBS), cartón para embalajes con alto contenido en carbonato cálcico, cartón recubierto, papeles especiales abrasivos y papeles técnicos reforzados con fibra. Las cuchillas TCT duran entre 3 y 5 veces más que las HSS en estos sustratos y mantienen la calidad del filo de corte mucho más allá del punto en el que las HSS necesitarían un reafilado.\n\n## Estándares de rectificado de precisión\n\n- **Ángulo de bisel:** 21° (geometría de guillotina estándar, bisel único)\n- **Tolerancia de longitud:** +2 / -1 mm\n- **Tolerancia de anchura:** ±1 mm\n- **Tolerancia del grosor del canto:** 0 / -0,1 mm\n- **Planeidad de la cara (longitud completa):** ≤ 0,05 mm\n\nUna desviación de la planitud superior a 0,08 mm en toda la longitud de la cuchilla provoca un contacto desigual entre la cuchilla y el tablero lateral, lo que produce un corte cónico y requiere calzos de corrección por parte del operario, una ineficiencia de producción que se acumula en tiempos de inactividad medibles en líneas de corte de gran volumen.\n\n## Compatibilidad con máquinas y estados de suministro\n\nLongitudes de stock estándar de 450 mm a 2050 mm. Compatible con las series Polar 115/137/155/176/200, Schneider Senator, Perfecta, Wohlenberg, Prism y las marcas de guillotinas Challenge. Longitudes personalizadas, patrones de orificios de montaje y perfiles de borde posterior fabricados según plano en un plazo de 7 días laborables.\n\n**Condiciones de suministro disponibles:** Canto afilado (listo para instalar) / Canto semiacabado (para el acabado final in situ según las especificaciones de la máquina) / Cuchilla en blanco (sin afilar, para clientes con capacidad de reafilado interna).",
+      "Cuchillas de recambio para cortadoras de papel y cuchillas de guillotina para el corte de pilas. Filos con incrustaciones de HSS o con puntas de carburo, con longitudes y orificios de montaje a medida.",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1633,123 +2098,65 @@ export const blades: Blade[] = [
       "Prism",
       "Seybold",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS Inlay | Tungsten Carbide Tipped (TCT)",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 62–64 (HSS) | HRA 89–91 (Carbide)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "Standard 21° – 24° (Double bevel available)",
-      },
-      {
-        label: "Face Flatness",
-        value: "≤0.05 mm (Eliminates paper draw & tapered cuts)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic (premium edge brazed to alloy steel body)",
-      },
-      {
-        label: "Application",
-        value: "Coated Art Paper, Recycled Board, Carbonless Copy Paper",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Sureay fabrica cuchillas de guillotina para papel con incrustaciones de HSS y puntas de carburo, con longitudes, patrones de montaje y perfiles de bisel personalizados para su cortadora. Envíenos su plano o una muestra para recibir un presupuesto con la configuración y el material de la cuchilla que necesite. Las marcas de las máquinas sirven de referencia de compatibilidad para los recambios de Sureay.",
     components: [
       {
-        id: "tct-inlay",
-        tag: "METALURGIA",
-        title: "Incrustaciones de carburo de tungsteno",
+        id: "paper-knife-edge-selection",
+        tag: "Selección de materiales",
+        title: "Cuchillas con incrustaciones de HSS y con puntas de carburo",
         description:
-          "Las cuchillas estándar se desafilan rápidamente al cortar papeles abrasivos, rellenos de carbonato cálcico. Nuestras cuchillas con punta de carburo de tungsteno (TCT) mantienen su filo de corte entre 3 y 5 veces más tiempo que las HSS, lo que reduce drásticamente el tiempo de inactividad de la máquina para cambiar las cuchillas en copias autocopiativas y papel estucado.",
+          "Sureay ofrece incrustaciones de acero HSS con un 18 % de tungsteno y filos con punta de carburo de tungsteno sobre cuerpos de acero, lo que ofrece a los cortadores de pilas una variedad de diseños de cuchillas adaptados a su tipo de papel y a sus necesidades de producción.",
       },
       {
-        id: "face-flatness",
-        tag: "PRECISIÓN",
-        title: "Sorteo de papel cero",
+        id: "paper-guillotine-bevel",
+        tag: "Geometría de corte",
+        title: "Superficies rectificadas y perfiles de bisel especificados",
         description:
-          "Si una cuchilla se dobla aunque sea ligeramente, la presión hidráulica hace que se desvíe a mitad del corte, produciendo tamaños desiguales desde la parte superior a la inferior de la pila. Rectificamos nuestras cuchillas con una planitud de cara en toda su longitud de ≤0,05 mm para garantizar cortes verticales rectos e impecables en cada resma.",
+          "Las cuchillas para cortadoras de papel están disponibles con caras rectificadas y biseles definidos en los planos, incluidas configuraciones de doble bisel, de modo que la geometría de trabajo puede especificarse junto con el material del filo.",
       },
       {
-        id: "oem-compatibility",
-        tag: "AJUSTE",
-        title: "Recambio OEM exacto",
+        id: "paper-cutter-replacement-fit",
+        tag: "Compatibilidad de recambio",
+        title: "Longitudes personalizadas y patrones de montaje",
         description:
-          "Disponemos de planos de ingeniería de las guillotinas Polar, Wohlenberg, Perfecta y Schneider Senator. Los orificios de montaje, las roscas y las ranuras del borde posterior se mecanizan mediante CNC para garantizar un ajuste perfecto, sin necesidad de calces ni modificaciones.",
+          "Las cuchillas de guillotina para papel que figuran en la lista tienen una longitud de entre 450 y 2050 mm. Sureay también fabrica cuerpos de cuchilla de recambio, biseles y patrones de montaje según el plano de su viga de corte actual.",
       },
     ],
-    dimensionLabels: {
-      col0: "Especificación (mm)",
-      col1: "Longitud",
-      col2: "Anchura",
-      col3: "Grosor del canto",
-      col4: "Grosor del cuerpo",
-      caption:
-        "* Dimensiones estándar indicadas arriba. Dimensiones especiales bajo pedido.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "450 * 51 * 12/10",
-        od: "450",
-        id: "51",
-        length: "12",
-        teeth: "10",
+        label: "Tamaños",
+        value: "450–2050 mm",
       },
       {
-        spec: "595 * 55 * 13.5/10",
-        od: "595",
-        id: "55",
-        length: "13.5",
-        teeth: "10",
+        label: "Material",
+        value:
+          "Incrustaciones de HSS con un 18 % de tungsteno o con punta de carburo de tungsteno (TCT)",
       },
       {
-        spec: "795 * 60 * 13.5/10",
-        od: "795",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
+        label: "Dureza",
+        value: "HSS: 62–64 HRC; metal duro: 89–91 HRA",
       },
       {
-        spec: "895 * 60 * 13.5/10",
-        od: "895",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
+        label: "Estructura de la cuchilla",
+        value:
+          "Bimetálico: inserto de corte soldado con bronce a un cuerpo de acero aleado",
       },
       {
-        spec: "995 * 60 * 14/11",
-        od: "995",
-        id: "60",
-        length: "14",
-        teeth: "11",
+        label: "Ángulo de bisel",
+        value: "21°–24°; hay disponibles configuraciones de doble bisel",
       },
       {
-        spec: "1095 * 65 * 14/11",
-        od: "1095",
-        id: "65",
-        length: "14",
-        teeth: "11",
+        label: "Aplicación",
+        value:
+          "Pilas de papel, papel artístico estucado, cartón reciclado y papel autocopiativo",
       },
       {
-        spec: "1350 * 80 * 16/13",
-        od: "1350",
-        id: "80",
-        length: "16",
-        teeth: "13",
-      },
-      {
-        spec: "2050 * 85 * 16/14",
-        od: "2050",
-        id: "85",
-        length: "16",
-        teeth: "14",
+        label: "Planitud de la cara",
+        value: "≤0.05 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "paper-cutting-blades"],
+    relatedBladeIds: ["three-knife-trimmer-blades"],
     offers: {
       lowPrice: 80,
       highPrice: 650,
@@ -1758,76 +2165,170 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Debo elegir cuchillas M2 HSS o con punta de carburo de tungsteno (TCT) para mi guillotina?",
+            "¿Cómo puedo identificar una cuchilla de recambio para una cortadora de papel?",
           answer:
-            "M2 HSS es la elección correcta para papel estucado, papel bond y etiquetas estándar en imprentas de gran volumen, ya que ofrece una vida útil entre 4 y 6 veces mayor que el acero al carbono estándar. Cambie a TCT (incrustación de carburo YG15/YG20) sólo cuando corte papel autocopiativo, cartón de embalaje con alto contenido en carbonato cálcico o papeles especiales abrasivos. El TCT supera al HSS entre 3 y 5 veces en estos sustratos, pero tiene un coste unitario más elevado.",
+            "Utilice el modelo y la versión completos de la cortadora junto con la referencia original de la cuchilla o el plano. Compruebe conjuntamente la longitud, el grosor del cuerpo y del filo, los orificios de montaje y la orientación del bisel. Una muestra usada debe incluir su historial de afilado. El ancho de trabajo indicado de la cortadora ayuda a identificar la máquina, mientras que las dimensiones completas de la cuchilla determinan la pieza de recambio.",
         },
         {
           question:
-            "¿Cómo evita el polvo la geometría de su cuchilla al guillotinar resmas de papel gruesas?",
+            "¿Cuándo debería plantearme utilizar una cuchilla de guillotina para papel con punta de carburo?",
           answer:
-            "Rectificamos cada cuchilla de guillotina con un bisel de precisión de 21° y una planitud de cara ≤0,05 mm en toda su longitud. El bisel afilado y poco profundo cizalla cada hoja progresivamente a través de la resma en lugar de aplastar a través de la pila - el polvo es generado por bordes embotados o incorrectamente biselados que comprimen las fibras de papel en lugar de cizallarlas. Las calidades HSS M2 y TCT conservan esta geometría de biselado de precisión durante mucho más tiempo que el acero al carbono, por lo que un menor número de reafilados se traduce en un menor número de ciclos de corte de hojas romas al año que generan polvo.",
+            "Merece la pena considerar el uso de carburo cuando el desgaste gradual del filo debido al tipo de papel en cuestión obliga a cambios frecuentes de cuchilla. Los recubrimientos, los rellenos, el contenido reciclado y el proceso de rectificado disponible influyen en esa elección. Si la cuchilla actual se astilla o corta de forma irregular, compruebe su bisel, la barra de corte y las condiciones de sujeción, además de los requisitos del material.",
         },
         {
           question:
-            "¿Pueden suministrar cuchillas con la longitud exacta y el patrón de orificios de montaje que necesita mi máquina Polar o Wohlenberg?",
+            "¿Son lo mismo las cuchillas para cortadoras de papel y las cuchillas de guillotina para papel?",
           answer:
-            "Sí. Disponemos de longitudes estándar de 450 mm a 2050 mm para cubrir las guillotinas de las series Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta y Challenge. Las longitudes personalizadas, los perfiles de los bordes traseros y los patrones de los orificios de montaje se fabrican bajo plano en un plazo de 7 días laborables. Las cuchillas pueden suministrarse afiladas, semiacabadas o en blanco para adaptarse a su instalación de reafilado in situ.",
+            "Sí. En el corte industrial de pilas, ambos nombres se refieren a la cuchilla recta que corta una pila de papel o cartón sujeta con abrazaderas. Para la maquinaria que corta transversalmente una banda en movimiento en hojas, véase [Cuchillas para cortadoras de papel](/products/paper-sheeter-knives).",
         },
         {
           question:
-            "¿Cómo debe almacenarse y manipularse cuchillas de guillotina para evitar daños prematuros en los bordes antes de su instalación?",
+            "¿Por qué las hojas inferiores pueden quedar mal cortadas tras el afilado?",
           answer:
-            "Almacene las cuchillas horizontalmente en su embalaje original sobre soportes de madera acolchados; nunca las apile verticalmente ni permita el contacto de metal con metal en el filo de corte. Utilice protectores de bordes de plástico o goma durante la manipulación. Inspeccione con una lupa de 10× antes del montaje: una mella de 0,2 mm en el filo duplica la tasa de desgaste local en los primeros 10.000 cortes. Evite arrastrar el filo contra los carriles guía durante el montaje.",
+            "Una barra de corte desgastada, una penetración incorrecta de la cuchilla o una sujeción desigual pueden provocar que las hojas inferiores queden mal cortadas, incluso con una cuchilla afilada. Comprueba si el defecto se concentra en el mismo punto a lo largo de la pila e inspecciona la zona correspondiente de la barra. Utiliza la configuración especificada para la cortadora a fin de determinar la causa.",
         },
         {
           question:
-            "¿Pueden suministrar papel cuchillas de guillotina semielaborado para su rectificado en la propia empresa?",
+            "¿Cómo se debe seleccionar el bisel para el papel estucado o el cartón?",
           answer:
-            "Sí, las piezas en bruto semiacabadas están disponibles en todas las longitudes estándar con el cuerpo rectificado a las dimensiones finales, pero con el borde prerectificado para el rectificado final a su ángulo de bisel y acabado específicos. Este estado de suministro es adecuado para talleres de impresión con capacidad de rectificado de superficies, reduce el coste unitario en un 15-20% y ofrece un control total sobre la geometría y el filo del borde final.",
+            "Comience por el bisel de la cuchilla especificado y el material que se va a procesar. La estructura del papel, el recubrimiento o el contenido de relleno y las condiciones de apilamiento influyen en el corte. Compare el desgaste del filo, las astillas y la calidad del corte antes de solicitar un perfil diferente. El nuevo bisel debe seguir siendo compatible con la construcción de la cuchilla y la disposición de trabajo de la cortadora.",
+        },
+        {
+          question:
+            "¿Cuándo debe afilarse o sustituirse una cuchilla de guillotina para papel?",
+          answer:
+            "El reafilado es adecuado cuando queda suficiente altura de cuchilla y material en el filo para restablecer el bisel especificado dentro de los límites de servicio de la cuchilla. Inspeccione la incrustación o el filo con punta y el cuerpo antes del afilado. La sustitución es adecuada cuando los daños, el material restante en el filo o los límites de ajuste impiden restablecer la configuración de trabajo requerida.",
+        },
+        {
+          question:
+            "¿Cómo puedo solicitar un presupuesto para una cuchilla de cortadora de papel?",
+          answer:
+            "Indique el modelo y la versión de la cortadora, el número de cuchilla original o el plano, el tipo de papel y la cantidad. En el caso de una máquina antigua, incluya la disposición de los orificios de montaje, la orientación del bisel y la altura de la cuchilla nueva. Si la única referencia es una cuchilla usada, indique su altura restante por separado de la nueva dimensión deseada.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de la cortadora, el plano de la cuchilla o el número de referencia, el material y la altura de la pila, así como el paso entre los orificios de montaje.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    detailLayout: {
+      heroAlt:
+        "Cuchilla de guillotina para papel con orificios de montaje y filo recto",
+      sizeRange: "450–2050 mm",
+      heroSpecs: [
         {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
-        },
-        {
-          question:
-            "¿Qué diferencia al tratamiento térmico de Sureay de otras alternativas más baratas?",
-          answer:
-            "A diferencia del templado estándar, todas las cuchillas Sureay se someten a un tratamiento criogénico profundo tras el endurecimiento en vacío. Esto transforma la austenita retenida en martensita, aumentando la resistencia al desgaste hasta en un 40% y garantizando una dureza uniforme en todo el filo de corte.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Las cuchillas de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question:
-            "¿Qué certificaciones de calidad posee Sureay y puede facilitar informes de ensayos de materiales?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional y un certificado de lote tratamiento térmico. Para la cualificación OEM, se pueden solicitar informes dimensionales completos de MMC y certificados de acería.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 cuchillas) para verificar el ajuste en máquina y probar la vida útil del filo. El plazo de entrega estándar de las muestras es de 5-7 días laborables. En el caso de perfiles personalizados, se fabrican muestras dimensionales antes de iniciar la producción completa, sin compromiso de utillaje hasta que se confirme el ajuste.",
+          label: "Aplicación",
+          value: "Corte en pilas de papel y cartón",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
+        alt: "Cuchilla de guillotina para papel que muestra el filo recto y la disposición de los orificios de montaje",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "450–2050 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Incrustaciones de HSS con un 18 % de tungsteno o con punta de carburo de tungsteno (TCT)",
+        },
+        {
+          label: "Dureza",
+          value: "HSS: 62–64 HRC; metal duro: 89–91 HRA",
+        },
+        {
+          label: "Estructura de la cuchilla",
+          value:
+            "Bimetálico: inserto de corte soldado con bronce a un cuerpo de acero aleado",
+        },
+        {
+          label: "Ángulo de bisel",
+          value: "21°–24°; hay disponibles configuraciones de doble bisel",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Pilas de papel, papel artístico estucado, cartón reciclado y papel autocopiativo",
+        },
+        {
+          label: "Planitud de la cara",
+          value: "≤0.05 mm",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor del borde (mm)",
+            "Espesor del cuerpo (mm)",
+          ],
+          rows: [
+            ["SR003101", "450", "51", "12", "10"],
+            ["SR003102", "595", "55", "13.5", "10"],
+            ["SR003103", "795", "60", "13.5", "10"],
+            ["SR003104", "895", "60", "13.5", "10"],
+            ["SR003105", "995", "60", "14", "11"],
+            ["SR003106", "1095", "65", "14", "11"],
+            ["SR003107", "1350", "80", "16", "13"],
+            ["SR003108", "2050", "85", "16", "14"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Incluya el modelo de la cortadora, el plano de la cuchilla o el número de referencia, el material y la altura de la pila, así como el paso entre los orificios de montaje.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Incluya el modelo de la cortadora, el plano de la cuchilla o el número de referencia, el material y la altura de la pila, así como el paso entre los orificios de montaje.",
+    dimensionLabels: {
+      intro:
+        "Las dimensiones de las cuchillas que figuran en la lista corresponden a las configuraciones del catálogo, no a los anchos de corte de la máquina. Confirme el patrón de montaje e indique el grosor del filo y del cuerpo en un dibujo en sección transversal.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas de rotor de repuesto con la forma adecuada para su trituradora de un solo eje, incluidos perfiles planos, cóncavos, con ranura en V y de corona. Sureay ofrece caras de corte y asientos de pernos de fijación personalizados, con cuchillas estacionarias a juego que se cotizan por separado. Envíe su dibujo o muestra para una cotización personalizada. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto de Suray.",
     id: "single-shaft-shredder-blades",
-    name: "Insertos de rotor de un eje",
-    fullName:
-      "Insertos de Rotor de Trituradora de Eje Simple de Alto Impacto (Cortadores de Corona)",
+    name: "Cuchillas de rotor para trituradoras de un eje",
+    fullName: "Cuchillas de rotor para trituradoras de un eje",
+    seoTitle:
+      "Cuchillas de rotor para trituradoras de un solo eje | Insertos cuadrados",
+    seoDescription:
+      "Elija insertos de rotor cuadrado o coronas de corte cóncavas en DC53, D2 o Cr12MoV. Adapte la cara de la cuchilla y el asiento del perno a su trituradora de un solo eje.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Insertos de rotor de un eje",
+    categoryDisplay: "Cuchillas de rotor de un solo eje",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1918,
+      height: 1769,
+      smallerWidths: [320, 640],
+    },
     badge: "Carga pesada",
     badgeColor: "orange",
     gallery: [
@@ -1836,207 +2337,280 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "Plaquitas de rotor DC53, D2 (1.2379) y Cr12MoV acero para herramientas de trabajo en frío para trituradoras monoeje de baja velocidad y alto par. Endurecidas al vacío y procesadas criogénicamente a HRC 58-62, mecanizadas por CNC con una tolerancia de cara de ±0,02 mm. Geometría cuadrada indexable en 4 direcciones. Compatible con las plataformas Vecoplan, Weima, Lindner y Zerma.",
-    fullDescription:
-      "Las trituradoras de un solo eje funcionan a 80-150 RPM con un par extremadamente alto, impulsando los insertos del rotor tipo bloque en una cuchilla de lecho estacionaria con holguras de cizallamiento estrechas de 0,2-1,5 mm. Con estos parámetros mecánicos, la principal causa de fallo de las cuchillas es el microdesgarro de los bordes inducido por el impacto o el reblandecimiento térmico debido a picos de par sostenidos de alto ciclo, en lugar del desgaste progresivo.\n\nSureay aborda estos modos de fallo mediante una metalurgia estricta. Las plaquitas estándar de acero para herramientas D2 (1.2379) proporcionan una excelente resistencia al desgaste a un precio rentable. Para aplicaciones con plásticos de ingeniería duros (PA66-GF, PC, PEEK) o grumos de purga pesados, se especifica DC53, que proporciona una resistencia a la rotura transversal un 17% superior para evitar el astillado del filo en caso de fuerte impacto.\n\n## Tolerancia de mecanizado CNC ±0,02 mm\n\nLa holgura de corte entre la cara de la plaquita del rotor y la cuchilla estacionaria determina el tamaño de las partículas trituradas y la carga del motor. Las holguras incoherentes provocan el retroceso del material y el bloqueo del rotor. Los insertos de rotor Sureay se mecanizan mediante CNC con una planitud de cara de ±0,02 mm, lo que garantiza una separación de corte perfecta y repetible en toda la longitud del rotor cuando se combina con una cuchilla de calidad.\n\n## Geometría indexable de 4 vías\n\nEl formato de bloque cuadrado simétrico proporciona cuatro filos de corte independientes por plaquita. Cuando un filo se embota, el operario afloja el perno de montaje avellanado, gira la plaquita 90° hasta un filo nuevo y vuelve a realizar el corte. Se puede indexar rápidamente un rotor completo sin necesidad de extraer el eje, lo que reduce el gasto anual en herramientas en un 75%.\n\n## Tratamiento criogénico profundo (-196°C)\n\nTodas las plaquitas Sureay de un solo eje se someten a un temple en vacío hasta HRC 58-62, seguido de una inmersión criogénica profunda obligatoria a -196°C. Esta etapa final crítica elimina la austenita retenida y estabiliza la microestructura martensítica, reduciendo drásticamente el riesgo de fractura cuando el rotor encuentra inclusiones metálicas extrañas inesperadas.",
+      "Cuchillas de recambio para el rotor de trituradoras de un solo eje en DC53, D2 y Cr12MoV. Insertos cuadrados y coronas de corte cóncavas con caras y asientos de perno personalizados.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
         label: "Material",
         value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Dureza objetivo",
+        value: "HRC 58–62 (estabilizado criogénicamente)",
       },
       {
-        label: "Machining Tolerance",
-        value: "±0.02 mm Face Flatness",
+        label: "Tolerancia de mecanizado",
+        value: "±0,02 mm de planitud de la superficie",
       },
       {
-        label: "Edge Geometry",
-        value: "4-Way Indexable (90° Rotation)",
+        label: "Geometría del filo",
+        value: "Intercambiable en 4 posiciones (rotación de 90°)",
       },
       {
-        label: "Face Profile",
-        value: "Concave, Flat, V-Groove, Crown",
+        label: "Perfil de la cara",
+        value: "Cóncava, plana, con ranura en V, abombada",
       },
       {
-        label: "Mounting Style",
-        value: "M12 to M24 Countersunk Hex Bolt",
+        label: "Tipo de montaje",
+        value:
+          "Pernos de fijación M12–M24; con cabeza avellanada o de cabeza hueca, según la configuración",
       },
       {
-        label: "OEM Fitment",
+        label: "Compatibilidad con fabricantes de equipos originales (OEM)",
         value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
       },
       {
-        label: "System Integration",
-        value: "Matched Bed Knives available separately",
+        label: "Integración de sistemas",
+        value: "Cuchillos estacionarios combinados disponibles por separado",
       },
       {
-        label: "Application",
+        label: "Aplicación",
         value:
-          "HDPE/PVC Pipes · Injection Purgings · Wood Pallets · IBC Totes · MSW",
-      },
-    ],
-    components: [
-      {
-        id: "indexable-design",
-        tag: "REDUCCIÓN DEL COSTE TOTAL DE PROPIEDAD",
-        title: "cantos indexables de 4 vías",
-        description:
-          "El diseño cuadrado simétrico permite una rotación de 90° cuando está desafilada. Esto cuadruplica la vida útil de una sola cuchilla, reduciendo los costes de sustitución en un 75% y minimizando el tiempo de inactividad por mantenimiento.",
-      },
-      {
-        id: "concave-profile",
-        tag: "EFICACIA DE CIZALLAMIENTO",
-        title: "Perfil cóncavo agresivo",
-        description:
-          "Las caras cóncavas mecanizadas con precisión CNC garantizan una mordida agresiva en los grumos de plástico lisos y densos, evitando que el material rebote o se formen puentes en el rotor durante la trituración a baja velocidad.",
-      },
-      {
-        id: "cryo-treatment",
-        tag: "FIABILIDAD EXTREMA",
-        title: "Revenido criogénico profundo",
-        description:
-          "Procesada a -196°C para eliminar la tensión residual interna. Esto garantiza que la hoja absorba impactos cinéticos masivos sin romperse al golpear inclusiones metálicas ocultas.",
-      },
-    ],
-    dimensionLabels: {
-      col1: "Dimensiones del inserto (L × A × T)",
-      col2: "Tamaño del tornillo",
-      col3: "Insertar perfil",
-      col4: "Plataforma OEM típica",
-      caption:
-        "* Cuchillas de bancada de estator y perfiles de pala de rotor personalizados disponibles. Compatible con las principales marcas mundiales de trituradoras monoeje.",
-    },
-    standardDimensions: [
-      {
-        spec: "34 × 34 × 23 mm",
-        bolt: "M12",
-        type: "Concave / Flat",
-        oem: "Weima / Vecoplan Standard",
-      },
-      {
-        spec: "40 × 40 × 25 mm",
-        bolt: "M14",
-        type: "Concave / Flat",
-        oem: "Vecoplan / Heavy Plastics",
-      },
-      {
-        spec: "43 × 43 × 19.5 mm",
-        bolt: "M14",
-        type: "Crown / Concave",
-        oem: "Lindner Micromat / Urraco",
-      },
-      {
-        spec: "50 × 50 × 30 mm",
-        bolt: "M16",
-        type: "Concave / Flat",
-        oem: "Heavy Duty MSW",
-      },
-      {
-        spec: "60 × 60 × 30 mm",
-        bolt: "M16 / M18",
-        type: "Flat / V-Groove",
-        oem: "Zerma / Tyre Shredding",
-      },
-      {
-        spec: "80 × 80 × 45 mm",
-        bolt: "M24",
-        type: "Concave",
-        oem: "Extreme High-Torque",
+          "Tuberías de HDPE/PVC · Residuos de inyección · Palés de madera · Contenedores IBC · Residuos sólidos urbanos (RSU)",
       },
     ],
     relatedBladeIds: [
       "single-shaft-bed-knives",
       "shredder-screens",
-      "twin-shaft-blades-recycling",
       "granulator-blades",
+    ],
+    dimensionLabels: {
+      col1: "Dimensiones de la cuchilla (L × W × T)",
+      col2: "Perno de fijación",
+      col3: "Superficie de corte",
+      col4: "Referencia de la máquina / fabricante de equipo original (OEM)",
+      intro:
+        "Utilice el modelo de la máquina y la referencia del fabricante de equipo original (OEM) para identificar la pieza; a continuación, compare la superficie de corte, el asiento de montaje y el perno de fijación con los de la cuchilla original.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR002501",
+        spec: "34 × 34 × 20 mm",
+        bolt: "M12 × 40 (DIN 912)",
+        type: "—",
+        oem: "ZERMA ZSS 850 / 1200 · 80001003",
+      },
+      {
+        itemNo: "SR002502",
+        spec: "34 × 34 × 23 mm",
+        bolt: "M12",
+        type: "Cóncava / Plana",
+        oem: "Weima / Vecoplan Standard",
+      },
+      {
+        itemNo: "SR002503",
+        spec: "40 × 40 × 25 mm",
+        bolt: "M14",
+        type: "Cóncava / Plana",
+        oem: "Vecoplan / Heavy Plastics",
+      },
+      {
+        itemNo: "SR002504",
+        spec: "43 × 43 × 19.5 mm",
+        bolt: "M14",
+        type: "Corona / Cóncavo",
+        oem: "Lindner Micromat",
+      },
+      {
+        itemNo: "SR002505",
+        spec: "50 × 50 × 30 mm",
+        bolt: "M16",
+        type: "Cóncava / Plana",
+        oem: "Heavy Duty MSW",
+      },
+      {
+        itemNo: "SR002506",
+        spec: "60 × 60 × 30 mm",
+        bolt: "M16 / M18",
+        type: "Plana / Ranura en V",
+        oem: "Zerma / Tyre Shredding",
+      },
+      {
+        itemNo: "SR002507",
+        spec: "80 × 80 × 45 mm",
+        bolt: "M24",
+        type: "Cóncavo",
+        oem: "Extreme High-Torque",
+      },
     ],
     offers: {
       lowPrice: 20,
       highPrice: 200,
     },
+    components: [
+      {
+        id: "single-shaft-shredder-blades-advantage-1",
+        tag: "Opciones de acero para herramientas para los insertos del rotor",
+        title:
+          "Opciones de acero para herramientas para los insertos del rotor",
+        description:
+          "Las configuraciones DC53, D2, Cr12MoV y 42CrMo le ofrecen opciones de material para las cuchillas de rotor de recambio, teniendo en cuenta la superficie de corte existente y las condiciones de desgaste de su material de alimentación.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-2",
+        tag: "Superficies de corte planas, cóncavas y abombadas",
+        title: "Superficies de corte planas, cóncavas y abombadas",
+        description:
+          "Sureays suministra perfiles planos, cóncavos, con ranura en V y abombados. Entre los tamaños de insertos indicados se incluye el de 34 × 34 × 20 mm. Hay disponibles configuraciones intercambiables en las que la cuchilla y el portacuchillas están diseñados para utilizar sucesivamente los filos de trabajo.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-3",
+        tag: "Asientos de montaje fabricados según el plano del rotor",
+        title: "Asientos de montaje fabricados según el plano del rotor",
+        description:
+          "Sureay fabrica la parte inferior de las cuchillas y los asientos de los pernos de fijación según el plano del rotor, de modo que una pieza de recambio pueda reproducir el perfil de asentamiento y la geometría de sujeción del soporte existente.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "¿Qué aleación ofrece mejor retención de filo para cortar purgas rígidas: ¿D2 o DC53?",
+            "¿Cómo puedo identificar una cuchilla de rotor de recambio para una trituradora de un solo eje?",
           answer:
-            "Para purgas densas de moldeo por inyección y HDPE de pared gruesa en rotores de un solo eje a 80-120 RPM, la DC53 supera sistemáticamente a la D2. La carga de impacto de un solo eje pone de manifiesto la resistencia a la rotura transversal un 17% superior de DC53, que resiste las microastillas en la cara de corte que suele desarrollar D2 en material de purga rígido después de 300-500 horas de funcionamiento.",
+            "Utilice el modelo de la máquina y la referencia de la pieza, y compare a continuación la cara de corte, la parte inferior y el asiento del perno de fijación. Dos insertos con la misma longitud y anchura pueden tener centros elevados, orificios o perfiles de asiento diferentes. Estos detalles determinan cómo se asienta y se sujeta la nueva cuchilla en el soporte del rotor existente.",
         },
         {
           question:
-            "¿Cuál es la causa de que el material se enrolle y el rotor se atasque?",
+            "¿Son lo mismo las cuchillas de rotor, los insertos y las coronas de corte?",
           answer:
-            "El enrollamiento hacia atrás suele deberse a la falta de uniformidad en la planitud de las caras de la pila de plaquitas del rotor, lo que crea una separación desigual entre la cuchilla y el lecho. El material pasa a través de huecos anchos en lugar de ser cortado, circula hacia atrás y obstruye la cavidad del rotor. Nuestras plaquitas se mecanizan mediante CNC con una planitud de cara de ±0,02 mm para eliminar este problema.",
+            "«Cuchilla de rotor» es el término general para referirse a una cuchilla móvil situada en el rotor. Los términos «inserto» y «corona de corte» describen diseños concretos dentro de ese grupo. El filo fijo situado frente a estas piezas es una [cuchilla de estator para trituradora de un solo eje](/products/single-shaft-bed-knives).",
         },
         {
           question:
-            "¿Cómo reduce los costes de utillaje el diseño indexable de cuatro filos?",
+            "¿Cómo deben seleccionarse las caras planas y cóncavas de las cuchillas de rotor?",
           answer:
-            "Cada plaquita cuadrada tiene cuatro filos independientes. Cuando uno de los filos se desafila, se afloja el perno de montaje, se gira la plaquita 90° hacia un filo nuevo y se vuelve a apretar. Esto cuadruplica la vida útil efectiva por cuchilla adquirida, reduciendo el gasto anual en herramientas en aproximadamente un 75% frente a las alternativas no indexables.",
+            "Conserve la superficie de contacto instalada para realizar una sustitución equivalente. Los perfiles planos y cóncavos modifican la forma en que el filo de corte se acopla al material de alimentación, por lo que cualquier cambio propuesto debe tener en cuenta el material, el soporte y el estator correspondiente. Una referencia de cuchilla existente ofrece un punto de partida más claro que elegir una superficie de contacto basándose únicamente en su aspecto.",
         },
         {
           question:
-            "¿Qué geometría de plaquita se necesita para triturar contenedores IBC de gran formato y bidones de HDPE?",
+            "¿Puedo girar un inserto cuadrado desgastado para utilizar otro borde?",
           answer:
-            "Para recipientes de pared gruesa, especifique insertos de cara cóncava (50×50 mm o 60×60 mm). El perfil cóncavo crea una geometría de inclinación positiva, lo que evita que la hoja patine sobre la superficie lisa de HDPE en el impacto inicial y garantiza una penetración inmediata durante la carrera descendente.",
+            "Sí, siempre que el inserto y el soporte estén diseñados para la indexación y se mantenga disponible un filo de trabajo en buen estado. Inspeccione las superficies de asiento y los elementos de fijación, así como el siguiente filo. Utilice la disposición de indexación especificada para esa cuchilla, ya que una forma cuadrada por sí sola no determina el número ni la dirección de rotaciones permitidos.",
         },
         {
           question:
-            "¿Puede Sureay suministrar el cuchillo de cama fijo a juego?",
+            "¿Qué criterios deben guiar la selección del material cuando se astillan las esquinas del rotor?",
           answer:
-            "Sí, las cuchillas de bancada fija se fabrican como juegos combinados con las plaquitas del rotor, con la cara de holgura rectificada con la misma tolerancia de ±0,02 mm. Una cuchilla de bancada emparejada elimina las conjeturas sobre la holgura que surgen cuando se adquieren plaquitas de rotor y cuchillas de bancada de proveedores distintos.",
+            "Compare las esquinas astilladas con el desgaste gradual en el resto de los insertos. La contaminación en la alimentación, los impactos localizados y el apoyo que ofrecen la superficie de contacto y el soporte pueden influir en el daño. Evalúe conjuntamente el acero actual, el estado del tratamiento térmico y el perfil de corte antes de cambiar de material, especialmente si el daño aparece repetidamente en una misma parte del rotor.",
+        },
+        {
+          question:
+            "¿Se pueden reproducir los asientos de los pernos de fijación y la parte inferior de las cuchillas a medida?",
+          answer:
+            "Sí. El asiento del perno de fijación y la parte inferior pueden reproducirse junto con la cara de corte en un mismo plano. Las fotografías de ambas caras resultan útiles cuando el inserto tiene un centro elevado o una superficie de asiento perfilada. Marque cualquier zona de contacto desgastada e identifique el perno y el soporte que se utilizan con él.",
+        },
+        {
+          question:
+            "¿Qué datos debo facilitar para solicitar un presupuesto de cuchillas para el rotor de una trituradora de un solo eje?",
+          answer:
+            "Envíe el modelo de la trituradora, el número de inserto original o el plano, el material de alimentación y la cantidad. Si dispone de una muestra, incluya las dimensiones del inserto y fotografías de la cara de corte y de la parte inferior, en las que se vea claramente el asiento del perno de fijación. Estas vistas permiten distinguir entre insertos con el mismo contorno cuadrado pero con perfiles de soporte diferentes.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envíe el modelo de la máquina, el número de referencia del fabricante de equipo original (OEM) y la cantidad. Incluya un plano o fotografías de ambos lados de la cuchilla e indíquenos si también necesita el soporte de la cuchilla del rotor.",
+    disambiguation:
+      "Para la cuchilla fija situada frente al rotor, véase [Cuchillas de estator para trituradoras de un solo eje](/products/single-shaft-bed-knives).",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "34–80 mm",
+      heroSpecs: [
         {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
+          label: "Material",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
         },
         {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Los insertos de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Trabajamos directamente con DHL, FedEx y empresas de transporte marítimo internacional.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestras antes de hacer un pedido de producción completa?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 plaquitas) para verificar el ajuste en máquina y probar la vida útil de los bordes. El plazo de entrega estándar de las muestras es de 5-7 días laborables.",
-        },
-        {
-          question:
-            "¿Qué certificaciones de calidad posee Sureay y puede facilitar informes de ensayos de materiales?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional y un certificado de lote tratamiento térmico. Para la cualificación OEM, se pueden solicitar informes dimensionales completos de MMC y certificados de acería.",
+          label: "Aplicación",
+          value:
+            "Tuberías de HDPE/PVC · Residuos de inyección · Palés de madera · Contenedores IBC · Residuos sólidos urbanos (RSU)",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "34–80 mm",
+        },
+        {
+          label: "Material",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
+        },
+        {
+          label: "Dureza objetivo",
+          value: "HRC 58–62 (estabilizado criogénicamente)",
+        },
+        {
+          label: "Tolerancia de mecanizado",
+          value: "±0,02 mm de planitud de la superficie",
+        },
+        {
+          label: "Geometría del filo",
+          value: "Intercambiable en 4 posiciones (rotación de 90°)",
+        },
+        {
+          label: "Perfil de la cara",
+          value: "Cóncava, plana, con ranura en V, abombada",
+        },
+        {
+          label: "Tipo de montaje",
+          value:
+            "Pernos de fijación M12–M24; con cabeza avellanada o de cabeza hueca, según la configuración",
+        },
+        {
+          label: "Integración de sistemas",
+          value: "Cuchillos estacionarios combinados disponibles por separado",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Tuberías de HDPE/PVC · Residuos de inyección · Palés de madera · Contenedores IBC · Residuos sólidos urbanos (RSU)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíe el modelo de la máquina, el número de referencia del fabricante de equipo original (OEM) y la cantidad. Incluya un plano o fotografías de ambos lados de la cuchilla e indíquenos si también necesita el soporte de la cuchilla del rotor.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Adquiera cuchillas de estator de recambio con el perfil de filo y las características de montaje que requiera su trituradora de un solo eje. Sureay suministra configuraciones rectas y dentadas, longitudes a medida y juegos segmentados. Envíenos su plano o muestra para obtener un presupuesto, incluyendo los insertos del rotor cuando sea necesario. Las marcas de las máquinas sirven de referencia de compatibilidad para las piezas de recambio de Sureay.",
     id: "single-shaft-bed-knives",
-    name: "Cuchillas de un solo eje",
+    name: "Contracuchillas para trituradoras de un eje",
     fullName:
-      "Cuchillas de la bancada trituradora de un eje (cuchillas del estator)",
+      "Cuchillas fijas de estator para trituradoras de un eje (contracuchillas)",
+    seoTitle:
+      "Cuchillas fijas de estator para trituradoras de un eje (contracuchillas)",
+    seoDescription:
+      "Cuchillas fijas fijas para trituradoras de un eje en longitudes indicadas de 279 a 3000 mm. Solicite bordes rectos o dentados y ranuras de montaje que coincidan con su dibujo.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Cuchillas de un solo eje",
+    categoryDisplay: "Cuchillas de estator de un solo eje",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1814,
+      height: 1020,
+      smallerWidths: [320, 640],
+    },
     badge: "Rectificado de precisión",
     badgeColor: "blue",
     gallery: [
@@ -2045,200 +2619,265 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Cuchillas de estator resistentes (cuchillas de bancada) para trituradoras monoeje. Fabricadas en acero D2 (1.2379) y aceros especiales de alta aleación. Templadas a presión y rectificadas con precisión según estrictas tolerancias de rectitud (≤ 0,05 mm/m) para garantizar una holgura uniforme entre el rotor y la bancada. Patrones de orificios ranurados personalizados para un ajuste exacto de la holgura. Compatible con Vecoplan, Weima, Lindner y Zerma.",
-    fullDescription:
-      "En un sistema de trituración de un solo eje, la cuchilla del lecho (estator) sirve como borde rígido de contracorte contra el que los insertos giratorios cizallan el material. Dado que estas cuchillas abarcan toda la anchura del rotor de la trituradora (a menudo superan los 2.000 mm de longitud), su fabricación requiere un control absoluto de la distorsión térmica.\n\n## El imperativo de la rectitud\n\nUna cuchilla deformada es la principal causa de ineficacia de la trituradora. Si la cuchilla se dobla, el espacio de corte se vuelve irregular: demasiado apretado en el centro (con el riesgo de una colisión catastrófica del rotor) y demasiado suelto en los extremos (provocando el retroceso del material y la fusión por fricción). Las cuchillas de bancada Sureay se someten a un templado a presión especializado durante el proceso tratamiento térmico, seguido de un rectificado superficial de precisión. Garantizamos una tolerancia de rectitud de ≤ 0,05 mm por metro lineal, lo que asegura una holgura de corte perfectamente uniforme en todo el rotor.\n\n## Endurecimiento profundo para rectificados múltiples\n\nA diferencia de las plaquitas de rotor que se desechan o indexan, las cuchillas de bancada pesada representan una inversión de capital significativa y deben ser reafilables. Utilizamos tratamiento térmico al vacío para conseguir una dureza uniforme de HRC 56-60 en toda la sección transversal de la cuchilla, no sólo en la superficie. Esto permite a los operadores reafilar el borde biselado varias veces sin exponer un núcleo blando, maximizando la vida útil operativa total de la cuchilla.\n\n## Montaje ranurado y avellanado\n\nMantener la separación óptima de 0,2 mm a 1,0 mm es fundamental a medida que se desgastan las cuchillas del rotor y del estator. Nuestras cuchillas de bancada cuentan con orificios ranurados de precisión mecanizados por CNC o con avellanados sobredimensionados, diseñados para adaptarse perfectamente a los mecanismos de ajuste de su máquina OEM. Esto garantiza que los equipos de mantenimiento puedan hacer avanzar la cuchilla con precisión y bloquearla de forma segura en caso de fuertes vibraciones.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
+      "Estator de trituradora de un solo eje de repuesto y cuchillas estacionarias en D2, DC53 o 42CrMo. Perfiles de borde personalizados y ranuras de montaje hechas según el dibujo.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
         label: "Material",
-        value: "D2 (1.2379), DC53, 42CrMo (AISI 4140), Chipper Knife Steel",
+        value:
+          "D2 (1.2379), DC53, 42CrMo (AISI 4140), acero para cuchillas de trituradoras",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 56–60 (Through-Hardened)",
+        label: "Dureza objetivo",
+        value: "HRC 56–60 (templado a fondo)",
       },
       {
-        label: "Straightness Tol.",
-        value: "≤ 0.05 mm per linear meter",
+        label: "Rectitud Tol.",
+        value: "≤ 0,05 mm por metro lineal",
       },
       {
-        label: "Length Capability",
-        value: "Up to 3,500 mm (Seamless single piece)",
+        label: "Tamaños",
+        value:
+          "Longitudes listadas 279–3000 mm; Cuchillas personalizadas de una sola pieza de hasta 3.500 mm.",
       },
       {
-        label: "Edge Geometry",
-        value: "Single Bevel, Double Bevel, Serrated",
+        label: "Geometría del filo",
+        value: "Bisel simple, bisel doble, dentado",
       },
       {
-        label: "Mounting Holes",
-        value: "Slotted, Counter-Bored, Threaded",
+        label: "Orificios de montaje",
+        value: "Ranurado, avellanado, roscado",
       },
       {
-        label: "OEM Fitment",
+        label: "Compatibilidad con fabricantes de equipos originales (OEM)",
         value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
       },
       {
-        label: "System Integration",
-        value: "Matched Rotor Inserts available separately",
+        label: "Integración de sistemas",
+        value: "Insertos de rotor combinados disponibles por separado",
       },
       {
-        label: "Application",
+        label: "Aplicación",
         value:
-          "Single-Shaft Shredders · HDPE/PP/PVC · Wood Pallets · MSW · Tyre",
+          "Trituradoras Monoeje · HDPE/PP/PVC · Palets de Madera · RSU · Neumático",
       },
     ],
-    components: [
-      {
-        id: "straightness-control",
-        tag: "TOLERANCIA",
-        title: "Rectitud con distorsión cero",
-        description:
-          "Templada a presión y rectificada con precisión para eliminar el arqueo. Una cuchilla perfectamente recta garantiza un espacio de corte uniforme, evitando que el material se deslice sin cortar.",
-      },
-      {
-        id: "deep-hardening",
-        tag: "LIFESPAN",
-        title: "Núcleo endurecido",
-        description:
-          "Tratada térmicamente al vacío para garantizar una dureza constante (HRC 56-60) hasta el núcleo. Puede reafilar el bisel varias veces sin pérdida de rendimiento.",
-      },
-      {
-        id: "adjustable-mounting",
-        tag: "MANTENIMIENTO",
-        title: "Ranuras de ajuste de precisión",
-        description:
-          "Las ranuras de montaje fresadas mediante CNC permiten a los técnicos avanzar fácilmente la cuchilla de la bancada hacia el rotor para compensar el desgaste, manteniendo la máxima eficacia de trituración.",
-      },
-      {
-        id: "complete-wear-set",
-        tag: "SUPPLY",
-        title: "Complete Bed Knife Wear Set",
-        description:
-          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
-      },
-    ],
+    relatedBladeIds: ["single-shaft-shredder-blades", "shredder-screens"],
     dimensionLabels: {
       col0: "Longitud total (mm)",
       col1: "Anchura (mm)",
       col2: "Espesor (mm)",
-      col3: "Agujero / Configuración de montaje",
-      caption:
-        "* Las cuchillas de bancada son muy específicas para cada máquina. Los tamaños de referencia estándar se muestran en mm; fabricamos según planos OEM exactos o especificaciones personalizadas del cliente. Una sola pieza sin soldadura hasta 3.500 mm.",
+      col3: "Montaje / Referencia OEM",
+      intro:
+        "Compare el perfil de la cuchilla, las ranuras de montaje y el número de pieza OEM con la pieza original. Para un conjunto segmentado, identifique qué segmento necesita.",
     },
     standardDimensions: [
       {
+        itemNo: "SR002601",
+        spec: "279",
+        od: "80",
+        bolt: "30",
+        type: "Segmentado · Fijación M12 ×55 · ZERMA ZSS 850 (80001202)",
+      },
+      {
+        itemNo: "SR002602",
+        spec: "396",
+        od: "80",
+        bolt: "20",
+        type: "6 ranuras, 22 × 40 mm, en centros de 68 mm",
+      },
+      {
+        itemNo: "SR002603",
+        spec: "396",
+        od: "85",
+        bolt: "20",
+        type: "6 ranuras, 22 × 40 mm, en centros de 68 mm",
+      },
+      {
+        itemNo: "SR002604",
         spec: "800",
         od: "100",
         bolt: "30",
-        type: "Slotted / Counter-Bored",
+        type: "Ranurado/Avellanado",
       },
       {
+        itemNo: "SR002605",
         spec: "1000",
         od: "120",
         bolt: "35",
-        type: "Slotted / Counter-Bored",
+        type: "Ranurado/Avellanado",
       },
       {
+        itemNo: "SR002606",
         spec: "1300",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Ranurado/Avellanado",
       },
       {
+        itemNo: "SR002607",
         spec: "1500",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Ranurado/Avellanado",
       },
       {
+        itemNo: "SR002608",
         spec: "2000",
         od: "200",
         bolt: "50",
-        type: "Custom OEM Pattern",
+        type: "Patrón OEM personalizado",
       },
       {
+        itemNo: "SR002609",
         spec: "3000",
         od: "250",
         bolt: "60",
-        type: "Heavy Duty Multi-Hole",
+        type: "Agujeros múltiples de servicio pesado",
       },
     ],
-    relatedBladeIds: ["single-shaft-shredder-blades", "granulator-blades"],
     offers: {
       lowPrice: 150,
       highPrice: 1200,
     },
+    components: [
+      {
+        id: "single-shaft-bed-knives-advantage-1",
+        tag: "Opciones de acero para filos de corte estacionarios",
+        title: "Opciones de acero para filos de corte estacionarios",
+        description:
+          "Las configuraciones D2 , DC53 , 42CrMo y trituradora-cuchilla-acero están disponibles para las cuchillas del estator, lo que admite pedidos de reemplazo con el material y la forma del borde especificados para la trituradora existente.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-2",
+        tag: "Bordes rectos y dentados con fijaciones personalizadas",
+        title: "Bordes rectos y dentados con fijaciones personalizadas",
+        description:
+          "Los perfiles de bisel simple, doble bisel y dentados se pueden suministrar con características de montaje ranuradas, avellanadas o roscadas, lo que permite fabricar el borde de corte y el patrón de fijación como una sola pieza de repuesto.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-3",
+        tag: "Segmentos individuales y juegos de estatores completos",
+        title: "Segmentos individuales y juegos de estatores completos",
+        description:
+          "Las longitudes de estator enumeradas abarcan entre 279 y 3000 mm. Solicite un segmento estacionario individual o un juego completo con las posiciones finales e intermedias especificadas por separado. Las cuchillas del rotor correspondientes se pueden cotizar en la misma consulta.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "¿Por qué es tan importante la tolerancia de rectitud de una cuchilla?",
+            "¿Las cuchillas del estator, las cuchillas estacionarias y las contracuchillas son la misma parte?",
           answer:
-            "Si una cuchilla se deforma incluso 0,5 mm, la holgura entre las plaquitas del rotor y la cuchilla se vuelve inconsistente. Si la separación es demasiado estrecha, las cuchillas del rotor golpearán la contracuchilla, causando daños catastróficos. Cuando la separación es demasiado amplia, el material se doblará y envolverá alrededor del rotor en lugar de cizallarse. Nuestra tolerancia de rectitud ≤ 0,05 mm/m evita ambos problemas.",
-        },
-        {
-          question: "¿Cuántas veces se puede rectificar una cuchilla Sureay?",
-          answer:
-            "Dado que nuestras cuchillas se templan en toda su masa (garantizando que el núcleo sea tan duro como la superficie), pueden rectificarse repetidamente hasta alcanzar el límite dimensional del mecanismo de ajuste de la máquina. Normalmente, una cuchilla D2 de alta resistencia puede someterse a entre 5 y 10 ciclos de reafilado, dependiendo de la profundidad del desgaste.",
+            "Sí. En una trituradora de un solo eje, la cuchilla del estator, la cuchilla fija y la contracuchilla describen el filo fijo opuesto a las [cuchillas del rotor de la trituradora de un solo eje](/products/single-shaft-shredder-blades) . Otras máquinas también usan algunos de estos nombres, por lo que el modelo de trituradora y la posición estacionaria son importantes al realizar el pedido.",
         },
         {
           question:
-            "¿Cómo me aseguro de que la cuchilla de recambio se alinea con los empujadores de ajuste de mi máquina?",
+            "¿Puede una cuchilla fija del granulador de plástico reemplazar la cuchilla del estator de una trituradora?",
           answer:
-            "Las cuchillas de bancada utilizan orificios ranurados o patrones de avellanado específicos para integrarse con los pernos de ajuste trasero (empujadores) de la trituradora. Disponemos de una amplia base de datos de planos OEM de marcas como Weima, Vecoplan y Lindner. Si nos proporciona el modelo de su máquina o un plano básico, se asegurará de que las ranuras se fresen según las coordenadas exactas del OEM.",
+            "Generalmente no. El perfil, asiento y ajuste de la cuchilla del estator de una trituradora están definidos por su máquina original. Una cuchilla granuladora trabaja en una cámara de corte diferente. Para conocer los juegos de rotor y base que producen triturado de plástico, consulte [Cuchillas granuladoras de plástico](/products/granulator-blades) .",
         },
         {
           question:
-            "¿Debo cambiar la cuchilla de la bancada cuando cambie los insertos del rotor?",
+            "¿Por qué el rendimiento de corte puede seguir siendo deficiente después de colocar nuevos insertos de rotor?",
           answer:
-            "No necesariamente siempre. Los insertos de rotor se desgastan mucho más rápido. Sin embargo, si el filo de la cuchilla está muy redondeado o astillado, la colocación de nuevos insertos de rotor contra una cuchilla desafilada reducirá drásticamente la vida útil de los nuevos insertos y disminuirá el rendimiento. Recomendamos inspeccionar el filo de la cuchilla durante cada ciclo de indexación del rotor y reafilarlo o sustituirlo cuando ya no se pueda mantener un filo afilado.",
+            "En cada corte participan todavía el borde del estator conservado y la ranura de corte. Un perfil estacionario desgastado o un ajuste inadecuado pueden afectar el acoplamiento incluso cuando los insertos del rotor son nuevos. Verifique juntos los segmentos del estator, la condición de montaje y el ajuste especificado por la máquina antes de decidir qué partes del par de corte necesitan reemplazo.",
         },
         {
           question:
-            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+            "¿Cómo se debe medir una cuchilla de estator rectificada para reemplazarla?",
           answer:
-            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
+            "Mida desde los puntos de referencia de fijación hasta el borde restante y registre esa medida como altura de rectificado. Un cuchillo adecuado sin usar o un dibujo original pueden establecer la nueva posición del borde. La distinción es importante cuando una cuchilla acortada ya ha utilizado parte del rango de ajuste de la máquina.",
+        },
+        {
+          question: "¿Qué detalles de borde y montaje se pueden personalizar?",
+          answer:
+            "Sureay puede realizar bordes de bisel simple, doble bisel y dentados con las ranuras, avellanados o roscas especificadas. Defina la orientación del borde a partir de los datos de fijación e identifique la posición del segmento. Esto permite que dos cuchillas de longitud total similar conserven sus distintos perfiles de corte y disposiciones de instalación.",
+        },
+        {
+          question:
+            "¿Cómo obtengo una cotización para cuchillas estacionarias o segmentos de estator de trituradora de un solo eje?",
+          answer:
+            "Enviar modelo de máquina, referencias de planos o piezas originales y cantidades por segmento. Para un estator segmentado, etiquete las piezas extremas e intermedias y muestre sus caras adyacentes, perfiles de borde y patrones de fijación en un diseño. Incluya la altura original de la nueva cuchilla cuando la referencia haya sido reafilada.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envíe el modelo de la máquina, el número de pieza OEM y la cantidad. Incluya un dibujo o fotografías que muestren el filo y las ranuras de montaje, y díganos si también necesita la placa de montaje.",
+    disambiguation:
+      "Para conocer las cuchillas montadas en el rotor, consulte [Cuchillas del rotor de la trituradora de un solo eje](/products/single-shaft-shredder-blades) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "279–3000 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Tiene capacidad para fabricar cuchillas de más de 2 metros?",
-          answer:
-            "Sí. Nuestras instalaciones están equipadas con rectificadoras de superficie de alta resistencia y hornos tratamiento térmico de vacío prolongado capaces de procesar cuchillas de bancada sin soldadura de una sola pieza de hasta 3.500 mm de longitud sin inducir distorsión térmica.",
+          label: "Material",
+          value:
+            "D2 (1.2379), DC53, 42CrMo (AISI 4140), acero para cuchillas de trituradoras",
         },
         {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM directo. Esto nos permite controlar estrictamente la tratamiento térmico y procesos de molienda críticos para cuchillas largas del estator, eliminando las inconsistencias de calidad comunes con las empresas comerciales.",
-        },
-        {
-          question:
-            "¿Cuál es el plazo de entrega de los cuchillos de cama a medida?",
-          answer:
-            "Para los recambios OEM estándar, solemos enviarlos en un plazo de 3 a 5 días. Para longitudes personalizadas o requisitos de aleación específicos, el plazo de producción suele ser de 15-20 días laborables, incluidos los profundos procesos de ciclado térmico necesarios para la estabilidad dimensional.",
+          label: "Aplicación",
+          value:
+            "Trituradoras Monoeje · HDPE/PP/PVC · Palets de Madera · RSU · Neumático",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value:
+            "Longitudes listadas 279–3000 mm; Cuchillas personalizadas de una sola pieza de hasta 3.500 mm.",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 (1.2379), DC53, 42CrMo (AISI 4140), acero para cuchillas de trituradoras",
+        },
+        {
+          label: "Dureza objetivo",
+          value: "HRC 56–60 (templado a fondo)",
+        },
+        {
+          label: "Rectitud Tol.",
+          value: "≤ 0,05 mm por metro lineal",
+        },
+        {
+          label: "Geometría del filo",
+          value: "Bisel simple, bisel doble, dentado",
+        },
+        {
+          label: "Orificios de montaje",
+          value: "Ranurado, avellanado, roscado",
+        },
+        {
+          label: "Integración de sistemas",
+          value: "Insertos de rotor combinados disponibles por separado",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Trituradoras Monoeje · HDPE/PP/PVC · Palets de Madera · RSU · Neumático",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíe el modelo de la máquina, el número de pieza OEM y la cantidad. Incluya un dibujo o fotografías que muestren el filo y las ranuras de montaje, y díganos si también necesita la placa de montaje.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
     id: "granulator-blades",
-    name: "Cuchillas granuladoras",
+    name: "Cuchillas para molinos granuladores de plástico",
     fullName:
-      "Cuchillas trituradoras y granuladoras industriales de plástico para el reciclaje de PET, PVC y PP",
-    category: "granulator_blades",
+      "Cuchillas de rotor y cuchillas fijas para molinos granuladores de plástico",
+    seoTitle: "Cuchillos granuladores de plástico | Rotor y palas de bancada",
+    seoDescription:
+      "Reemplace el rotor y las cuchillas estacionarias en los granuladores que procesan PET, PP, HDPE o PVC. Cuchillas de granulador de plástico en longitudes indicadas de 90 a 1178 mm, con patrones de pernos personalizados.",
+    category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Cuchillas granuladoras",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2248,84 +2887,145 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
-      "Cuchillas de rotor y estator de granuladores D2, SKD-11 y Cr12MoV rectificadas con precisión con una tolerancia de ±0,02 mm en los orificios de los pernos para granuladores Cumberland, Conair/Wortex, Herbold y Rapid. Los ángulos de bisel de 30° a 55° se adaptan al tipo de polímero, proporcionando un triturado limpio y con bajo contenido en finos. El endurecimiento al vacío y el procesamiento criogénico profundo estabilizan el HRC 58-62 para una mayor retención del filo.",
-    fullDescription:
-      "Las cuchillas del rotor y del estator del granulador son los componentes de mayor desgaste en cualquier línea de reciclaje de plástico de circuito cerrado. Una selección incorrecta de la aleación o unas tolerancias de geometría inferiores se traducen directamente en una mayor distribución del tamaño de las partículas, un exceso de polvo y finos, un elevado consumo de amperios del motor y unos intervalos de afilado más cortos, todo lo cual degrada la calidad del granulado triturado y aumenta el coste por tonelada procesada.\n\nLos Sureay cuchillas de granulador se fabrican a partir de D2 (1.2379), SKD-11, DC53 y Cr12MoV acero para herramientas de trabajo en frío, seleccionados en función del polímero específico y del contenido de relleno abrasivo que se procese. El PVC relleno de carbonato cálcico y el nailon reforzado con fibra de vidrio requieren SKD-11 o DC53 para obtener la máxima resistencia a la abrasión. Las aplicaciones sometidas a impactos, como los contenedores de HDPE de pared gruesa, las guías de nylon en frío y los bebederos pesados, requieren la mayor relación dureza/resistencia del Cr12MoV.\n\nTodas las cuchillas se endurecen al vacío y se procesan criogénicamente a -196°C para conseguir una microestructura HRC 58-62 estabilizada. El paso criogénico elimina la austenita retenida, reduce la tensión de compresión interna y prolonga significativamente el tiempo entre ciclos de afilado al mejorar la uniformidad de dispersión del carburo en todo el filo de corte.\n\n## Estándares de afilado de precisión\nLa holgura de corte entre las cuchillas del rotor y del estator es la variable que más influye en el control del tamaño de las partículas de material triturado y la fracción de finos. Las Sureay cuchillas de granulador se mecanizan con las siguientes tolerancias para garantizar una separación constante entre el rotor y el lecho en toda la anchura de corte:\n\n- Tolerancia de posición de los orificios de los pernos: ±0,02 mm\n- Planitud de la cara: 0,05 mm\n- Paralelismo (cara superior a cara inferior): 0.03 mm\n- Ángulo de bisel: 30°-55° (optimizado para la aplicación según el polímero y la velocidad del rotor)\n\nUna desviación de la planeidad de la cara superior a 0,08 mm permite que la cuchilla del rotor se balancee bajo carga, ampliando progresivamente la separación de corte y aumentando la fracción gruesa en el regrind, un defecto que causa inconsistencia en la alimentación del extrusor aguas abajo.\n\n## Selección del ángulo de biselado específico para polímeros\nbisel de 30°-35°: Termoplásticos blandos (LDPE, LLDPE, EVA, PP espumado). El ángulo bajo incluido proporciona la máxima nitidez para un cizallamiento limpio de materiales conformes.\n\nbisel de 40°-45°: Plásticos técnicos de uso general (HDPE, ABS, PP/PET reafilado estándar). Resistencia del filo y afilado equilibrados para las materias primas más comunes de los granuladores.\n\nbisel de 50°-55°: Compuestos altamente abrasivos o rellenos (nylon relleno de vidrio, PVC de carbonato cálcico, UHMW-PE). Un bisel más ancho distribuye el desgaste abrasivo sobre una cara de corte más grande, alargando los intervalos de afilado.\n\n## Compatibilidad con máquinas\nLas dimensiones se han diseñado para adaptarse a las configuraciones de Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid y Ramco. Tanto los patrones de montaje de doble orificio como los de múltiples orificios (triple, cuádruple) están disponibles en stock.",
+      "Rotor granulador de plástico de repuesto y cuchillas estacionarias en D2, SKD11, DC53 o Cr12MoV. Perfiles personalizados y patrones de pernos para la producción de triturado de plástico.",
     link: "/products/granulator-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "Gamma Meccanica",
-    ],
+    quoteRequirements:
+      "Incluya el modelo del granulador, la posición del rotor o de la cama, las dimensiones de la cuchilla, el paso del orificio de montaje y el material que se está cortando.",
+    introNote:
+      "Las disposiciones de las cuchillas rectas y torcidas cambian la forma en que se unen los bordes a lo largo de la cámara de corte. Identifique el arreglo original antes de elegir un juego de reemplazo.",
     specs: [
       {
+        label: "Tamaños",
+        value: "90–1178 mm",
+      },
+      {
+        label: "Aplicación",
+        value: "Producción de triturado de plástico",
+      },
+      {
+        label: "Posiciones de cuchillo",
+        value: "Cuchilla de rotor giratorio y cuchilla estacionaria",
+      },
+      {
         label: "Material",
-        value: "D2 (1.2379), SKD-11, DC53, Cr12MoV",
+        value: "D2 (1.2379), SKD-11 , DC53 o Cr12MoV",
       },
       {
-        label: "Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Dureza",
+        value: "HRC 58–62",
       },
       {
-        label: "Bolt-hole Tol.",
+        label: "Ángulo de bisel",
+        value: "30°–55°",
+      },
+      {
+        label: "Tolerancia de orificios para pernos",
         value: "±0.02 mm",
       },
       {
-        label: "Face Flatness",
-        value: "≤ 0.05 mm",
+        label: "Planitud de la cara",
+        value: "≤0.05 mm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.03 mm",
+        label: "Paralelismo",
+        value: "≤0.03 mm",
       },
       {
-        label: "Bevel Angle",
-        value: "30° - 55° (Application-optimized)",
+        label: "Tratamiento térmico",
+        value:
+          "Endurecimiento al vacío y tratamiento criogénico profundo (−196°C)",
       },
       {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
-      },
-      {
-        label: "Application",
-        value: "PET, PVC, PP, HDPE, Engineering Plastics",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Cumberland, Rapid, Herbold, Conair, Nelmor",
+        label: "Materia prima",
+        value: "PET, PVC, PP, HDPE y plásticos de ingeniería",
       },
     ],
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "cutter-compactor-blades",
+    ],
+    offers: {
+      lowPrice: 25,
+      highPrice: 320,
+    },
     components: [
       {
-        id: "maximized-regrind-quality",
-        tag: "CALIDAD",
-        title: "Máxima calidad de corteza",
+        id: "granulator-blades-advantage-1",
+        tag: "Opciones de acero para herramientas para triturado de plástico",
+        title: "Opciones de acero para herramientas para triturado de plástico",
         description:
-          "Los bordes de corte ultra afilados y alineados con precisión cizallan el plástico limpiamente en lugar de desgarrarlo, reduciendo drásticamente la generación de polvo y finos no deseados.",
+          "Las cuchillas D2 , SKD11 , DC53 y Cr12MoV brindan opciones de materiales para la producción de triturado de plástico, considerando el acero especificado junto con el polímero, los rellenos y la disposición de corte existente.",
       },
       {
-        id: "extended-mtbr",
-        tag: "FIABILIDAD",
-        title: "MTBR ampliado (tiempo medio entre sustituciones)",
+        id: "granulator-blades-advantage-2",
+        tag: "Biseles rectificados y geometría de montaje definida",
+        title: "Biseles rectificados y geometría de montaje definida",
         description:
-          "La alta resistencia al desgaste minimiza la frecuencia de afilado y sustitución de las cuchillas, manteniendo su línea de reciclaje en continuo funcionamiento.",
+          "Suray suministra cuchillas de rotor y estacionarias con biseles, caras de trabajo y patrones de pernos específicos, lo que permite que los pedidos de reemplazo conserven la orientación de corte y la geometría de asiento de la máquina.",
       },
       {
-        id: "reduced-motor-load",
-        tag: "EFICIENCIA",
-        title: "Carga reducida del motor",
+        id: "granulator-blades-advantage-3",
+        tag: "Juegos de cuchillas estacionarias y rotores personalizados",
+        title: "Juegos de cuchillas estacionarias y rotores personalizados",
         description:
-          "Los ángulos de corte optimizados reducen la fuerza de cizallamiento necesaria, disminuyen el consumo de amperios eléctricos del motor de su granuladora y reducen los costes de energía por tonelada.",
+          "Suray suministra rotores individuales y cuchillas estacionarias o juegos completos según plano o muestra. Las longitudes de cuchilla enumeradas abarcan entre 90 y 1178 mm, con posiciones móviles y estacionarias especificadas por separado para la cámara de corte.",
       },
     ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Cómo selecciono cuchillas de repuesto para mi granulador de plástico?",
+          answer:
+            "Utilice el modelo de la máquina, la posición de la cuchilla y el número de pieza original, luego compare la longitud, la sección, el bisel y el patrón de fijación. Las cuchillas rotatorias y estacionarias pueden diferir dentro de la misma máquina. La tabla de dimensiones estándar brinda configuraciones individuales, mientras que el dibujo de la cuchilla establece el reemplazo exacto para su cámara de corte instalada.",
+        },
+        {
+          question:
+            "¿Qué significan las cuchillas de rotor, las cuchillas de mosca y las cuchillas estacionarias?",
+          answer:
+            "Las cuchillas del rotor, también llamadas cuchillas de mosca, se mueven con el rotor del granulador. Los cuchillos estacionarios forman el borde opuesto estacionario. Cuchillos trituradores de plástico es un nombre de compra más amplio que a veces se utiliza para estas piezas. Identifique la máquina y la posición reales, porque se pueden usar los mismos términos para diferentes disposiciones de corte en equipos de reducción de tamaño.",
+        },
+        {
+          question:
+            "¿Cuándo debería el contenido de polímero o relleno cambiar la elección del material?",
+          answer:
+            "Los rellenos abrasivos y la contaminación pueden alterar la rapidez con la que se desgasta el borde de trabajo, mientras que el impacto y el daño del borde quebradizo plantean preocupaciones diferentes. Compare el cuchillo compuesto y usado real con la especificación actual del material. Esa comparación ayuda a evaluar una calidad de reemplazo sin cambiar la sección de cuchilla, el bisel o la geometría de montaje requeridos por la máquina.",
+        },
+        {
+          question:
+            "¿Por qué un granulador produce más finos o un molido peor?",
+          answer:
+            "Un par de corte desafilado, una separación incorrecta entre el rotor y la base o una criba desgastada pueden aumentar los finos o cambiar la calidad del triturado. Busque bordes redondeados o desgaste desigual en el rotor y las cuchillas estacionarias y compare la producción en las mismas condiciones de alimentación antes de cambiar las especificaciones de las cuchillas.",
+        },
+        {
+          question:
+            "¿Existe un espacio entre cuchillas estándar para todos los granuladores?",
+          answer:
+            "No. El espacio especificado entre el rotor y la cama depende de su granulador y de la configuración de sus cuchillas. Los ajustes OEM identifican qué cuchillas se pueden ajustar y las dimensiones mínimas de las cuchillas después del reafilado. Compruebe ambos límites al instalar un juego afilado o de repuesto.",
+        },
+        {
+          question:
+            "¿Por qué las disposiciones de cuchillos rectos e inclinados necesitan dibujos diferentes?",
+          answer:
+            "El ángulo de corte puede resultar del perfil de la cuchilla, su posición en el rotor o en la bancada, o ambos. Por lo tanto, la longitud total de la cuchilla describe sólo una parte de la configuración. El dibujo debe preservar la orientación del bisel y la geometría de fijación utilizada por la combinación de rotor y bancada de la máquina.",
+        },
+        {
+          question: "¿Cuándo se pueden reafilar las cuchillas del granulador?",
+          answer:
+            "El reafilado es adecuado cuando el perfil de corte especificado se puede restaurar dentro de las dimensiones mínimas permitidas de la cuchilla. Verifique la altura restante y el margen de ajuste con las instrucciones de la máquina. Las cuchillas que han alcanzado su límite de servicio o no pueden recuperar un filo sano necesitan ser reemplazadas, y las posiciones del rotor y la base se evalúan como un par funcional.",
+        },
+        {
+          question:
+            "¿Qué información se necesita para cotizar el rotor del granulador de plástico y las cuchillas estacionarias?",
+          answer:
+            "Envíe el modelo del granulador y dibujos separados, números de pieza o muestras para las posiciones del rotor y la cama, además del tipo de plástico, rellenos y cantidad para cada cuchilla. Muestre el patrón de bisel y orificios para cada posición. Marque la altura del rectificado por separado si su única referencia es un cuchillo afilado.",
+        },
+      ],
+      company: [],
+    },
     dimensionLabels: {
-      col0: "Configuración de los orificios",
+      col0: "Configuración",
       col1: "Dimensiones (L × A × T)",
       col2: "Centro del agujero Paso",
       caption:
@@ -2333,444 +3033,467 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Double hole",
+        itemNo: "SR002801",
+        spec: "Doble agujero",
         od: "90 × 70 × 8",
         bolt: "40 / 45 / 50",
       },
       {
-        spec: "Double hole",
+        itemNo: "SR002802",
+        spec: "Doble agujero",
         od: "120 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002803",
+        spec: "triple agujero",
         od: "126 × 60 × 8",
         bolt: "40",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002804",
+        spec: "triple agujero",
         od: "150 × 70 × 8",
         bolt: "50 / 55",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002805",
+        spec: "triple agujero",
         od: "170 × 70 × 8",
         bolt: "45",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002806",
+        spec: "triple agujero",
         od: "180 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002807",
+        spec: "agujero cuadrado",
         od: "170 × 70 × 8",
         bolt: "40",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002808",
+        spec: "agujero cuadrado",
         od: "200 × 70 × 8",
         bolt: "50",
       },
+      {
+        itemNo: "SR002809",
+        spec: "Rotor ZERMA GSP 560/700 — posición 501",
+        od: "310 × 100 × 22",
+        bolt: "Ver plano",
+      },
+      {
+        itemNo: "SR002810",
+        spec: "Estator ZERMA GSP 560/700 — posición 601",
+        od: "646 × 100 × 22",
+        bolt: "Ver plano",
+      },
+      {
+        itemNo: "SR002811",
+        spec: "Rotor ZERMA GSH 800/1200 — 80000900",
+        od: "568 × 100 × 22",
+        bolt: "Ver plano",
+      },
+      {
+        itemNo: "SR002812",
+        spec: "Estator ZERMA GSH 800/1200 — 80001050",
+        od: "1178 × 100 × 22",
+        bolt: "Ver plano",
+      },
+      {
+        itemNo: "SR002813",
+        spec: "Rotor ZERMA GSH 800/1600 — 80000920",
+        od: "385 × 100 × 22",
+        bolt: "Ver plano",
+      },
+      {
+        itemNo: "SR002814",
+        spec: "Estator ZERMA GSH 800/1600 — 80001070",
+        od: "795 × 100 × 22",
+        bolt: "Ver plano",
+      },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "twin-shaft-blades-recycling",
-      "cutter-compactor-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 320,
-    },
-    faqs: {
-      technical: [
-        {
-          question: "¿Cómo elijo entre D2, DC53 y Cr12MoV para mi granulador?",
-          answer:
-            "D2 es el estándar de la industria para plásticos limpios como PET y PP. Para polímeros rellenos de vidrio o abrasivos, DC53 ofrece una mayor resistencia al desgaste. Si su alimentación contiene impurezas metálicas ocasionales (como alambre o grapas), Cr12MoV proporciona una mayor tenacidad al impacto para evitar el astillado de los bordes.",
-        },
-        {
-          question:
-            "¿Cuáles son las causas del exceso de polvo y finos durante la granulación de plásticos?",
-          answer:
-            "Suele deberse a bordes romos o a un ángulo de biselado incorrecto que desgarra el plástico en lugar de cortarlo. Optimizamos el ángulo de biselado (30°-55°) en función de su polímero específico para garantizar un corte limpio, lo que maximiza la calidad del triturado y el valor del granulado.",
-        },
-        {
-          question:
-            "¿Pueden hacer coincidir los patrones exactos de los orificios de los tornillos para mi máquina específica?",
-          answer:
-            "Absolutamente. Mantenemos una amplia base de datos de planos OEM de Cumberland, Herbold, Rapid, Weima y otros. Fresamos por CNC todos los avellanados con una estricta tolerancia de ±0,02 mm para garantizar un ajuste perfecto sin micro-rocking.",
-        },
-        {
-          question:
-            "¿Qué geometría de las cuchillas del rotor produce la fracción de finos más baja en los granuladores junto a la prensa?",
-          answer:
-            "Para granuladores en línea al lado de la prensa en líneas de moldeo por inyección, un ángulo de bisel de 40°-45° con una cara de rastrillo pulida (Ra ≤ 0,8μm) proporciona el triturado más limpio y con menos finos en material de canal y bebedero. La cara pulida reduce la adherencia en la zona de corte, evitando la microsoldadura del material de HDPE y PP que genera finos a las altas velocidades de ciclo típicas de la producción de moldeo por inyección continua.",
-        },
-        {
-          question:
-            "¿Cuándo debo afilar o sustituir las cuchillas del rotor de mi molino?",
-          answer:
-            "El principal indicador es la distribución del tamaño de las partículas de triturado: cuando la fracción de gran tamaño supera el 8-10% del peso de salida, es necesario afilar las cuchillas del rotor. Los indicadores secundarios son un aumento de más del 15% en el consumo de amperios del motor por encima del valor de referencia y una fracción de polvo elevada. Cada cuchilla Sureay puede reafilarse normalmente de 3 a 5 veces antes de que la geometría del bisel alcance la profundidad mínima de material utilizable, momento en el que la sustitución resulta más económica.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
-        },
-        {
-          question:
-            "¿Qué diferencia al tratamiento térmico de Sureay de otras alternativas más baratas?",
-          answer:
-            "A diferencia del templado estándar, todas las cuchillas Sureay se someten a un tratamiento criogénico profundo tras el endurecimiento en vacío. Esto transforma la austenita retenida en martensita, aumentando la resistencia al desgaste hasta un 40% y garantizando una dureza uniforme en todo el filo de corte.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Las cuchillas de recambio OEM estándar suelen enviarse en 48 horas. Los perfiles personalizados tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question:
-            "¿Qué certificaciones de calidad posee Sureay y puede facilitar informes de ensayos de materiales?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional y un certificado de lote tratamiento térmico. Para la cualificación OEM, se pueden solicitar informes dimensionales completos de MMC y certificados de acería.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 5 cuchillas) para verificar el ajuste de la máquina y probar la vida útil del filo. El plazo de entrega estándar de las muestras es de 5-7 días laborables. En el caso de perfiles personalizados, se fabrican muestras dimensionales antes de iniciar la producción completa, sin compromiso de utillaje hasta que se confirme el ajuste.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Solicite cuchillas cortadoras de bobinas de acero con los espaciadores, anillos extractores y discos separadores necesarios para su línea. Sureay ofrece opciones de calidad, orificios personalizados y anchos de herramientas; envíe sus dibujos y cronograma de corte para una cotización coordinada.",
     id: "metal-coil-slitting-knives",
-    name: "Cuchillas para cortar bobinas de metal",
+    name: "Cuchillas para corte longitudinal de bobinas de acero",
     fullName:
-      "Cuchillas de corte longitudinal giratorias de alta resistencia para el procesamiento de bobinas de acero",
+      "Cuchillas de corte longitudinal de bobinas de acero y herramientas de cizallado rotativo",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Cuchillas de corte de metal",
-    image:
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "Carga pesada",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
-    ],
+    categoryDisplay: "Cuchillas para corte longitudinal de bobinas de acero",
+    image: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Utillaje completo de corte rotativo de bobinas para centros de servicio del metal y acerías. Cuchillas de corte circulares D2, SKD-11 y H13 lapeadas a Ra ≤ 0,2μm con tolerancia de espesor de ±0,001 mm. Diseñadas para el corte sin rebabas de acero laminado en frío (CR), laminado en caliente (HR), bobinas galvanizadas y acero pesado al silicio.",
-    fullDescription:
-      "El corte de precisión de bobinas exige un nivel de tolerancia dimensional al que la mayoría de las aplicaciones industriales de corte nunca se aproximan. En una línea de corte longitudinal de alta velocidad que procesa bobinas de acero pesado a 200-400 m/min a través de una pila de mandriles de varias cuchillas, un error de grosor acumulado de tan solo 0,01 mm por cuchilla produce una desviación medible del ancho de corte, graves rebabas en los bordes y una curvatura de la bobina que supera los límites de calidad para la fabricación de automóviles y electrodomésticos.\n\nLas cuchillas de las cortadoras circulares de metal Sureay se fabrican con tolerancias verificadas extremas. Todas las caras laterales de las cuchillas tienen un acabado Ra ≤ 0,2μm. Este acabado espejo de las caras no es meramente estético, sino que garantiza un contacto total de metal con metal entre las cuchillas y los espaciadores en la pila del eje, eliminando los espacios de aire microscópicos que permiten la deflexión individual de la cuchilla bajo cargas de corte laterales.\n\n## Selección de aleaciones pesadas por material de banda\n\n**Acero laminado en frío y galvanizado (CR, EG, HDG):** D2 (1.2379) o SKD-11, endurecido a HRC 60-62 mediante temple en vacío. El alto contenido de carburo de cromo resiste el desgaste abrasivo del zinc y las incrustaciones superficiales. Recomendada para centros de servicio de acero CR de turno continuo.\n\n**Acero laminado en caliente y chapa de gran espesor:** Acero para herramientas H13 (SKD-61) para trabajo en caliente o 6CrW2Si. El corte de acero laminado en caliente genera fuerzas de impacto masivas y temperaturas ambiente elevadas. La tenacidad superior del H13 evita la fractura frágil catastrófica que destruye las cuchillas D2 estándar en las líneas de gran calibre.\n\n**Acero al silicio (grado eléctrico CRGO / CRNO):** Cr12MoV o grados pulvimetalúrgicos PM. La extrema abrasividad del acero al silicio, causada principalmente por las inclusiones de sílice, exige la máxima resistencia al desgaste para mantener las tolerancias de anchura de corte durante toda la producción de laminados de transformadores.\n\n## Utillaje completo de mandriles de corte\n\nLa cuchilla de corte es sólo uno de los componentes de un sistema de corte de precisión de bobinas. Los espaciadores de acero, los anillos separadores de caucho adherido y los discos separadores del sobrebrazo deben ajustarse dimensionalmente al conjunto de cuchillas para garantizar una precarga uniforme del árbol y una tensión constante de la banda. Sureay suministra paquetes de herramientas de corte totalmente integrados, verificados como un sistema adaptado para eliminar los errores de apilamiento de tolerancias.",
+      "Cuchillas cortadoras de bobinas de acero de repuesto para acero al carbono, inoxidable y de alta resistencia. Cuchillas de corte rotativas, espaciadores y anillos extractores personalizados según plano.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Fagor Arrasate",
-      "Heinrich Georg",
-      "Red Bud Industries",
-      "Braner",
-      "Salico",
-      "Athader",
-    ],
     specs: [
       {
+        label: "Tamaños",
+        value: "Cizalla rotativa DE 80–680 mm",
+      },
+      {
         label: "Material",
-        value: "D2, SKD11, Cr12MoV (Cold-Roll) | H13, 6CrW2Si (Hot-Roll)",
+        value:
+          "D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS o carburo WC-Co",
       },
       {
-        label: "Hardness",
-        value: "HRC 60–62 (Cold-Roll) | HRC 54–58 (Hot-Roll / Impact)",
+        label: "Aplicaciones",
+        value:
+          "Bobinas laminadas en frío, laminadas en caliente, inoxidables y de alta resistencia.",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Acabado superficial",
+        value: "Caras superpuestas en espejo, Ra ≤0,2 μm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.002 mm",
+        label: "Ajuste del orificio",
+        value: "H7 para el modelo H7 listado. Otros se ajustan al dibujo.",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤ 0.2 μm)",
+        label: "Dureza típica",
+        value:
+          "D2 58–62 HRC · H13 54–58 HRC para corte de placas a temperatura ambiente · PM HSS 64–66 HRC",
       },
       {
-        label: "Complete Tooling",
-        value: "Knives, Spacers, Rubber Stripper Rings, Separators",
+        label: "Opciones de precisión",
+        value:
+          "Para diámetro exterior de hasta 420 mm, espesor de ±0,001 mm y paralelismo de cara de 0,002 mm. Otros tamaños según dibujo.",
       },
       {
-        label: "Application",
-        value: "Cold / Hot Rolled Steel, Silicon Steel, Galvanized Plate",
+        label: "Estampación",
+        value:
+          "Espaciadores, anillos extractores y discos separadores superiores.",
       },
+      {
+        label: "Montaje",
+        value: "Eje sólido con orificio liso o con llave",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillos para corte de bobinas de acero | Herramientas personalizadas",
+      sizeRange: "Cizalla rotativa DE 80–680 mm",
+      heroAlt:
+        "Cizalla rotativa de suelo grueso para corte de bobinas de acero",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-coil-slitting-knives-detail.webp",
+        alt: "Anillo pelador de corte longitudinal de bobinas con núcleo de acero y anillo exterior adherido",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "steel",
+          tabLabel: "Cuchillos de acero",
+          title: "Cuchillas rotativas de acero",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "clase de línea",
+          ],
+          rows: [
+            ["SR001301", "200 × 120 × 10 mm", "indicador de luz"],
+            ["SR001302", "200 × 120 × 12 mm", "indicador de luz"],
+            ["SR001303", "250 × 150 × 12 mm", "Centro de servicio"],
+            ["SR001304", "250 × 150 × 15 mm", "Centro de servicio"],
+            ["SR001305", "300 × 200 H7 × 12 mm", "Servicio medio"],
+            ["SR001306", "315 × 200 × 15 mm", "Laminado en frío/caliente"],
+            ["SR001307", "315 × 200 × 20 mm", "Laminado en frío/caliente"],
+            ["SR001308", "400 × 260 × 25 mm", "laminado en caliente"],
+            ["SR001309", "500 × 320 × 40 mm", "plato pesado"],
+          ],
+        },
+        {
+          id: "carbide",
+          tabLabel: "Cuchillos de carburo",
+          title: "Cuchillas rotativas de carburo",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Construcción",
+          ],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Carburo sólido"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Carburo sólido"],
+            ["SR001333", "204 × 125 × 10 mm", "Carburo sólido"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Carburo sólido"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Carburo sólido"],
+          ],
+        },
+        {
+          id: "tooling",
+          tabLabel: "Herramientas de eje",
+          title: "Herramientas de eje",
+          columns: [
+            "N.º de artículo",
+            "Componente",
+            "Función",
+            "Entradas de selección",
+          ],
+          rows: [
+            [
+              "SR001341",
+              "Espaciadores",
+              "Establecer posiciones de corte",
+              "Ancho, diámetro interior y ajuste de la pila",
+            ],
+            [
+              "SR001342",
+              "Anillos separadores",
+              "Tira de soporte y liberación",
+              "Acero o elastómero adherido, dureza y ancho.",
+            ],
+            [
+              "SR001343",
+              "Discos separadores",
+              "Guía de tiras separadas",
+              "Diámetro interior del brazo, diámetro exterior y forma del borde",
+            ],
+          ],
+        },
+        {
+          id: "additional-steel-knives",
+          tabLabel: "Tamaños de cuchillos de acero adicionales",
+          title: "Tamaños de cuchillos de acero adicionales",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Aplicación",
+          ],
+          rows: [
+            [
+              "SR001818",
+              "400 × 260 × 20 mm",
+              "Acero laminado en caliente de gran espesor",
+            ],
+            ["SR001819", "500 × 320 × 30 mm", "plato pesado"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Cizalla rotativa DE 80–680 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS o carburo WC-Co",
+        },
+        {
+          label: "Aplicaciones",
+          value:
+            "Bobinas laminadas en frío, laminadas en caliente, inoxidables y de alta resistencia.",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Caras superpuestas en espejo, Ra ≤0,2 μm",
+        },
+        {
+          label: "Ajuste del orificio",
+          value: "H7 para el modelo H7 listado. Otros se ajustan al dibujo.",
+        },
+        {
+          label: "Dureza típica",
+          value:
+            "D2 58–62 HRC · H13 54–58 HRC para corte de placas a temperatura ambiente · PM HSS 64–66 HRC",
+        },
+        {
+          label: "Opciones de precisión",
+          value:
+            "Para diámetro exterior de hasta 420 mm, espesor de ±0,001 mm y paralelismo de cara de 0,002 mm. Otros tamaños según dibujo.",
+        },
+        {
+          label: "Estampación",
+          value:
+            "Espaciadores, anillos extractores y discos separadores superiores.",
+        },
+        {
+          label: "Montaje",
+          value: "Eje sólido con orificio liso o con llave",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Fagor Arrasate",
+      "Heinrich Georg",
+      "Burghardt + Schmidt",
+      "ANDRITZ",
+      "Red Bud Industries",
     ],
     components: [
       {
-        id: "micron-tolerance",
-        tag: "PRECISIÓN",
-        title: "Ingeniería de microtolerancias",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Grados de acero para diferentes cargas de bobina",
         description:
-          "Diseñada con una tolerancia de espesor de ±0,001 mm y un paralelismo de 0,002 mm. Esto garantiza un error acumulativo cero al apilar varias cuchillas pesadas y separadores en el eje de la cortadora.",
+          "Sureay ofrece configuraciones de acero para herramientas y acero PM para diferentes grados de bobina y cargas de procesamiento, lo que permite que los pedidos de cuchillas de reemplazo reflejen la especificación de la tira y el desgaste o astillado observado.",
       },
       {
-        id: "alloy-toughness",
-        tag: "METALURGIA",
-        title: "Selección de aleaciones resistentes",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Dimensiones del suelo para pilas de cuchillas y espaciadores",
         description:
-          "Desde D2/SKD11 de alto cromo para acero laminado en frío y galvanizado abrasivo, hasta H13 resistente a los golpes para laminados en caliente pesados. Todas las hojas se templan al vacío para ofrecer una resistencia excepcional del filo.",
+          "Las cuchillas de repuesto se rectifican al ancho y la geometría de la cara especificados para su pila de corte de bobinas, con dimensiones de espaciador coincidentes coordinadas con el mismo diseño de herramientas.",
       },
       {
-        id: "complete-setup",
-        tag: "SISTEMA",
-        title: "Utillaje completo para mandriles",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Cuchillas de corte con herramientas complementarias",
         description:
-          "Además de las cuchillas, suministramos espaciadores de acero de ajuste exacto, anillos separadores de goma y discos separadores de sobrebrazos. Un sistema totalmente integrado garantiza una tensión perfecta de la banda y un rebobinado de la bobina sin rebabas.",
+          "Obtenga cuchillas cortadoras, espaciadores, anillos extractores y discos separadores en una sola consulta, con los componentes y cantidades requeridos organizados según el diseño de herramientas de su línea de bobinas.",
       },
     ],
-    dimensionLabels: {
-      col0: "Tipo de máquina/línea típica",
-      col1: "Diámetro exterior",
-      col2: "Diámetro interior",
-      col3: "Espesor",
-      caption:
-        "* Las dimensiones indicadas son ejemplos estándar. Fabricamos hasta Ø 1500 mm para líneas de corte longitudinal de chapas de gran espesor. Chaveteros y orificios de pasador de arrastre personalizados mecanizados según planos OEM exactos.",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Slitting Line",
-        od: "Ø 200 mm",
-        id: "120 mm",
-        thickness: "10 / 12 mm",
-      },
-      {
-        spec: "Standard Steel Service Center",
-        od: "Ø 250 mm",
-        id: "150 mm",
-        thickness: "12 / 15 mm",
-      },
-      {
-        spec: "Medium-Heavy CR/HR Line",
-        od: "Ø 315 mm",
-        id: "200 mm",
-        thickness: "15 / 20 mm",
-      },
-      {
-        spec: "Heavy Gauge HR Steel Mill",
-        od: "Ø 400 mm",
-        id: "260 mm",
-        thickness: "20 / 25 mm",
-      },
-      {
-        spec: "Extreme Heavy Plate Mill",
-        od: "Ø 500 mm",
-        id: "320 mm",
-        thickness: "30 / 40 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "metal-foil-strip-slitter-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1500,
-    },
     faqs: {
       technical: [
         {
           question:
-            "¿Qué holgura de cuchilla debo ajustar para el acero laminado en frío frente al acero al silicio?",
+            "¿Qué identifica a una cuchilla cortadora de bobinas de acero de repuesto?",
           answer:
-            "Para acero dulce laminado en frío (CR, EG), ajuste la holgura horizontal al 8-10% del espesor del material. Para el acero al silicio (CRGO/CRNO), reduzca la holgura al 5-8%: la extrema dureza y fragilidad del acero al silicio exigen una holgura de cizalladura más estrecha para evitar la fractura de los bordes que produce rebabas en las bandas laminadas de los transformadores.",
+            "El diámetro exterior, el diámetro interior, el ancho axial y la interfaz del eje establecen el ajuste básico. Incluya el grado de la tira, el espesor y las herramientas retenidas. Las cuchillas de corte rotativas son las cuchillas circulares que se utilizan para el corte longitudinal de bobinas; Los cuchillos de corte rectos cortan a lo largo de la tira, mientras que las [Cuchillas cortadoras de chatarra](/products/scrap-chopper-blades) cortan el borde en trozos más cortos.",
         },
         {
           question:
-            "¿Por qué mi ancho de hendidura se desplaza por todo el ancho de la bobina después de la primera bobina?",
+            "¿Cómo afectan la resistencia de la bobina y el daño de la hoja a la selección del material de la cuchilla?",
           answer:
-            "La desviación de la anchura de corte se debe a la pérdida de contacto entre la cuchilla y la cara espaciadora por la variación de las tolerancias de grosor en la pila de cuchillas. Incluso una inconsistencia de 0,002 mm en el grosor de una cuchilla en una pila de 20 cuchillas crea un desplazamiento lateral acumulativo de 0,04 mm. Nuestras cuchillas y espaciadores están lapeados con una tolerancia de espesor de ±0,001 mm y un acabado de cara Ra ≤ 0,2μm, lo que elimina los espacios de aire que permiten la desviación individual de la cuchilla.",
+            "Considere la resistencia de la tira, el grosor y las condiciones de procesamiento junto con el estado del cuchillo usado. La abrasión gradual y el desconchado de los bordes presentan diferentes cuestiones a la hora de seleccionar el material. Comparar las especificaciones de la bobina y el patrón de desgaste actual con las herramientas existentes ayuda a definir los requisitos de reemplazo, incluido el equilibrio entre la resistencia al desgaste y la resistencia al daño de los bordes.",
         },
         {
           question:
-            "¿Debo utilizar D2 o H13 para cortar chapa de acero laminado en caliente (HR) de 8 mm de espesor?",
+            "¿Por qué las cuchillas cortadoras de bobinas se astillan en lugar de desgastarse gradualmente?",
           answer:
-            "Para chapa HR de 8 mm, debe utilizar H13 o 6CrW2Si. El corte de acero laminado en caliente de gran calibre genera un choque de impacto masivo en el punto de mordida. El D2 (a HRC 60) es demasiado quebradizo y es probable que se rompa o sufra microastillamientos graves bajo estas cargas. El H13 (templado a HRC 54-56) proporciona la tenacidad masiva del núcleo necesaria para absorber estas fuerzas de impacto de forma fiable.",
+            "El desconchado puede indicar una sobrecarga mecánica. Esto puede contribuir a una holgura horizontal incorrecta, una superposición excesiva, herramientas deformadas o un borde cortante fatigado. El material del cuchillo y la dureza también afectan el resultado. Verifique la posición dañada, las herramientas retenidas y el historial de rectificado con el grado y espesor de la tira real antes de decidir si es necesario cambiar el material de instalación o reemplazo.",
         },
         {
           question:
-            "¿Qué programa de inspección de mantenimiento maximiza la vida útil de la cuchilla de la cortadora circular?",
+            "¿Qué causa las rebabas o los bordes cortados desiguales en una línea de bobina?",
           answer:
-            "Inspeccione semanalmente las caras de las cuchillas con un aumento de 10× para ver si hay astillas en los bordes (indica desviación de la holgura o inclusiones de material duro). Vuelva a solapar las caras laterales cuando la rugosidad de la superficie supere Ra 0,4μm para restablecer el contacto total con el eje. Almacene las cuchillas desmontadas verticalmente en aceite antioxidante para evitar la corrosión durante los periodos de inactividad.",
+            "El desgaste o astillado de la hoja, el espacio libre de las cuchillas, el traslape, el estado del eje y los cambios en la calidad de la tira pueden contribuir. Compare la posición y dirección del defecto a lo largo del patrón de hendidura. Ese registro ayuda a determinar si se debe a una cuchilla, una configuración de herramienta particular o un cambio en el material que se procesa.",
+        },
+        {
+          question:
+            "¿Cómo se deben especificar las tolerancias de las cuchillas y los espaciadores para una pila completa?",
+          answer:
+            "Defina la variación permitida para anchos individuales y para la pila completa. El ajuste del orificio, la condición de la cara y el paralelismo también afectan el ensamblaje. Las opciones de precisión del catálogo se aplican a cuchillas de hasta 420 mm de diámetro exterior; Otros tamaños se especifican en el dibujo. Registre los componentes retenidos junto con los reemplazos para que la disposición completa tenga requisitos dimensionales claros.",
+        },
+        {
+          question:
+            "¿Puede Sureay suministrar cuchillos, espaciadores, anillos extractores y discos separadores juntos?",
+          answer:
+            "Sí. Estos cuatro tipos de herramientas se pueden incluir en la misma cotización. La tabla de anchos de hendidura y los dibujos de componentes definen su disposición. Enumere la cantidad de cada configuración e identifique qué piezas existentes permanecerán en uso, permitiendo que los anchos, interfaces y diámetros de trabajo de reemplazo se consideren como parte de un conjunto.",
+        },
+        {
+          question:
+            "¿Cómo comparo el costo de diferentes materiales de cuchillas cortadoras de bobinas?",
+          answer:
+            "Compare el costo por tonelada o metro aceptable bajo los mismos requisitos de grado de bobina, calibre, patrón de hendidura y calidad de borde. Incluya la compra de cuchillas, el reafilado, el tiempo de cambio y los desechos, utilizando la producción registrada entre cambios de cuchillas. Aplique el mismo período contable a cada opción para separar los cambios en las condiciones de producción de las diferencias en el rendimiento de la cuchilla.",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Puede Sureay suministrar un paquete completo de utillaje integrado que incluya separadores y anillos separadores?",
-          answer:
-            "Sí. Suministramos sistemas completos de utillaje de corte: juegos de cuchillas, separadores de acero de precisión (rectificados a ±0,001 mm), anillos separadores de caucho y discos separadores. El abastecimiento de todos los componentes a partir de una única pila de tolerancia verificada elimina los errores acumulativos que aparecen al mezclar utillaje de distintos proveedores.",
-        },
-        {
-          question:
-            "¿Fabrican cuchillas cortadoras de gran diámetro para laminadoras de chapa gruesa?",
-          answer:
-            "Sí, nuestras instalaciones de rectificado pesado y tratamiento térmico pueden procesar cuchillas de corte circular de hasta 1.500 mm de diámetro exterior, diseñadas específicamente para aplicaciones de corte de bordes de bobinas laminadas en caliente de gran calibre y laminadores de chapas.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "guillotine-shear-blades",
+    ],
   },
   {
     id: "metal-shear-knives",
-    name: "Cuchillos de cizalla de metal",
+    name: "Cuchillas para cizallas cocodrilo",
     fullName:
-      "Cuchillas de guillotina y cizalla de alta resistencia para la fabricación de metales",
+      "Cuchillas de cizalla cocodrilo para el reciclaje de chatarra metálica",
+    seoTitle: "cuchillas de cizalla para Chatarra",
+    seoDescription:
+      "Reemplace la hoja móvil superior o la cuchilla fija inferior en su cizalla de cocodrilo. Las longitudes indicadas son de 320 a 508 mm, con opciones de acero S1 , 6CrW2Si y H13 .",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Cuchillos de cizalla de metal",
-    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Cizallado pesado",
+    categoryDisplay: "Cuchillas para cizallas cocodrilo",
+    image: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+    badge: "Tijeras de cocodrilo",
     badgeColor: "blue",
     gallery: [
-      "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-04.webp",
-      "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+      "/images/products/shear-detail/alligator-shear-knives-detail.webp",
     ],
     description:
-      "ZGTR0zGTR recto de primera calidad para guillotinas hidráulicas, cizallas cocodrilo y cizallas para chatarra pesada. Forjadas en aceros para herramientas D2, S1 (6CrW2Si) y H13. Rectificado superficialmente a ±0,05 mm de paralelismo en toda la longitud para cizallar sin rebabas acero dulce, chapa inoxidable y palanquillas de chatarra pesada.",
-    fullDescription:
-      "La guillotina y la chatarra cuchillas de cizalla funcionan en condiciones que dejan al descubierto cualquier punto débil en la selección de la aleación, la profundidad tratamiento térmico y el paralelismo del rectificado. La cuchilla de cizalladura superior se acciona contra la inferior bajo fuerzas de accionamiento de 40 a más de 2000 toneladas en líneas de cizalladura de chapas pesadas. Los modos de fallo prematuro (vuelco del borde en acero dulce, fractura frágil en acero inoxidable o rotura en chatarra pesada) se atribuyen a desajustes metalúrgicos o desviaciones del paralelismo de rectificado que concentran fuerzas extremas en un único punto.\n\nSureay metal cuchillas de cizalla se suministra en tres grados metalúrgicos específicos, cada uno de ellos adaptado a un régimen mecánico definido:\n\n## Selección de aleación por aplicación de cizallamiento\n\n**Cizallado en frío (acero dulce):** Aceros estándar para herramientas con alto contenido en carbono templados a HRC 57-59. Esto proporciona una geometría de filo afilada y estable a un precio competitivo. Esto proporciona una geometría de filo afilado y estable a un coste económico, por lo que es la especificación correcta para talleres de fabricación general y contratistas de acero estructural que cortan chapa de acero dulce A3/A36 estándar de hasta 8 mm.\n\n**Corte de chapa gruesa y acero inoxidable:** Calidades equivalentes a D2 (Cr12MoV) templadas a HRC 58-60. Especificadas para la máxima resistencia al desgaste en chapa gruesa y acero inoxidable. Especificado para la máxima resistencia al desgaste en acero inoxidable austenítico (304, 316L) y chapas de aleación de alta resistencia (Hardox). La matriz de alto contenido en cromo y carburo resiste el fuerte desgaste por endurecimiento impuesto por estos metales duros.\n\n**Reciclaje de chatarra y cizallado en caliente:** Acero antichoque S1 (6CrW2Si) y acero para herramientas H13 para trabajo en caliente. Al cizallar chatarra mixta, barras de refuerzo o tochos de acero en caliente (900-1100°C), se prioriza la tenacidad extrema al impacto sobre la dureza. Estas aleaciones absorben cargas de choque masivas sin la fractura quebradiza que destruye las cuchillas D2 estándar.\n\n## El imperativo del paralelismo (±0,05 mm)\nUn paralelismo inadecuado es la causa prevenible más común de fallo prematuro de una cuchilla de cizallamiento. El contacto desigual de las caras concentra toda la carga de cizallamiento en una longitud reducida del filo de la cuchilla, produciendo el vuelco o astillado del filo en cuestión de horas. Todas las cuchillas Sureay cuchillas de cizalla están rectificadas con precisión en ambas caras de corte para garantizar una tolerancia de paralelismo estándar de ±0,05 mm en una longitud de 1000 mm (con tolerancias superiores de ±0,02 mm disponibles para aplicaciones aeroespaciales y de acero inoxidable de precisión).",
+      "cuchillas de cizalla cocodrilo de repuesto para corte de chatarra. Cuchillas superiores e inferiores S1 , 6CrW2Si o H13 , con detalles de montaje que coinciden con su dibujo.",
     link: "/products/metal-shear-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "TRUMPF",
-      "AMADA",
-      "BYSTRONIC",
-      "Durma",
-      "Haco",
-      "Lefort",
-      "Harris",
+    compatibleMachines: ["JMC McIntyre", "Bronneberg"],
+    compatibleMachinesIntro:
+      "Sureay suministra cuchillas superiores e inferiores para cizallas de tipo cocodrilo, por separado o como pareja de repuesto. Fabricamos en aceros para herramientas S1, 6CrW2Si o H13, con dimensiones y orificios de montaje a medida. Envíenos el plano de la cuchilla para solicitar presupuesto. Las marcas mencionadas sirven como referencia de compatibilidad para los repuestos de Sureay.",
+    components: [
+      {
+        id: "alligator-knife-position",
+        tag: "Posición del cuchillo",
+        title: "Opciones de acero para tareas de corte de chatarra",
+        description:
+          "Las opciones de acero para herramientas S1 , 6CrW2Si y H13 le brindan una variedad de materiales de reemplazo para las secciones de desecho y las condiciones de desgaste de los bordes que se encuentran en su cizalla tipo cocodrilo.",
+      },
+      {
+        id: "alligator-edge-selection",
+        tag: "Condiciones de chatarra",
+        title: "Cuchillas superiores e inferiores disponibles por separado",
+        description:
+          "Solicite una cuchilla superior móvil, una cuchilla inferior fija o un par completo, con cada pieza especificada para la posición de su mandíbula y los componentes que desea conservar.",
+      },
+      {
+        id: "alligator-indexing",
+        tag: "Configuración de borde",
+        title: "Cuerpos de cuchillos personalizados y orificios de montaje",
+        description:
+          "Las cuchillas de corte de cocodrilo enumeradas tienen una longitud de 320 a 508 mm. Sureay también realiza reemplazos basados ​​en dibujos con la sección del cuerpo, el patrón de orificios y las caras de ubicación requeridas por la mandíbula superior o inferior.",
+      },
     ],
     specs: [
       {
+        label: "Tamaños",
+        value: "320–508 mm",
+      },
+      {
         label: "Material",
-        value: "D2 (Cr12MoV), S1 (6CrW2Si), H13, High Carbon Steel",
+        value:
+          "Acero para herramientas S1 , 6CrW2Si o H13 para configuraciones de corte de chatarra",
       },
       {
-        label: "Cold / Mild Steel",
-        value: "High Carbon Tool Steel (HRC 57–59)",
+        label: "Posiciones de cuchillo",
+        value: "Cuchilla móvil superior y cuchilla fija inferior.",
       },
       {
-        label: "Stainless / Heavy",
-        value: "D2 / Cr12MoV (HRC 58–60)",
+        label: "Forma de hoja",
+        value: "Cuchillos rectangulares rectos",
       },
       {
-        label: "Scrap / High Impact",
-        value: "S1 / 6CrW2Si / H13 (Shock Resistant)",
-      },
-      {
-        label: "Length Capacity",
-        value: "Up to 6000 mm (Single Piece Seamless)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "1, 2, or 4 Usable Cutting Edges",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Application",
-        value: "Plate Shearing, Alligator Shears, Scrap Metal Balers",
-      },
-    ],
-    components: [
-      {
-        id: "stainless-shearing",
-        tag: "SERVICIO PESADO",
-        title: "D2 para acero inoxidable y chapa gruesa",
-        description:
-          "Utiliza acero D2 (Cr12MoV) de primera calidad endurecido hasta HRC 58-60. Soporta el desgaste abrasivo extremo y las fuerzas de endurecimiento por trabajo al cizallar acero inoxidable y chapas de aleación gruesas.",
-      },
-      {
-        id: "scrap-shearing",
-        tag: "ALTO IMPACTO",
-        title: "S1 Acero antichoque para chatarra",
-        description:
-          "En las cizallas de cocodrilo y las empacadoras de chatarra pesada, las cuchillas estándar se rompen. Forjamos estas cuchillas a partir de acero S1 (6CrW2Si) resistente a los golpes, que proporciona una enorme dureza al núcleo para cizallar barras de refuerzo y vigas en I sin fracturarse.",
-      },
-      {
-        id: "precision-parallelism",
-        tag: "TOLERANCIA",
-        title: "Paralelismo de precisión (±0,05 mm)",
-        description:
-          "Rectificado superficial a la perfección absoluta. El mantenimiento de un paralelismo estricto en longitudes de hasta 6 metros garantiza que su máquina mantenga una separación de cizalladura uniforme, proporcionando cortes sin rebabas en todo momento.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Tamaño típico (L × A × T)",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones estándar para los modelos habituales de cizalla de guillotina hidráulica. Longitudes personalizadas de hasta 6000 mm, diseños de varios segmentos y perfiles de uno, dos o cuatro bordes disponibles.",
-    },
-    standardDimensions: [
-      {
-        spec: "500 × 70 × 22",
-        od: "500",
-        id: "70",
-        thickness: "22",
-      },
-      {
-        spec: "510 × 80 × 25",
-        od: "510",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "1025 × 80 × 20",
-        od: "1025",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1025 × 100 × 25",
-        od: "1025",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "1300 × 80 × 20",
-        od: "1300",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1300 × 125 × 32",
-        od: "1300",
-        id: "125",
-        thickness: "32",
-      },
-      {
-        spec: "3100 × 100 × 25",
-        od: "3100",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Scrap Shear",
-        od: "Custom",
-        id: "Custom",
-        thickness: "Up to 100+",
+        label: "Aplicación",
+        value: "Corte de chatarra con tijeras de cocodrilo",
       },
     ],
     relatedBladeIds: [
-      "metal-coil-slitting-knives",
-      "multi-shaft-blades-metal",
+      "guillotine-shear-blades",
       "scrap-chopper-blades",
+      "multi-shaft-blades-metal",
     ],
     offers: {
       lowPrice: 120,
@@ -2780,66 +3503,153 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Qué aleación debo utilizar para cizallar acero inoxidable 304?",
+            "¿Qué cuchilla de corte de cocodrilo de repuesto se adapta a mi máquina?",
           answer:
-            "Recomendamos D2 (Cr12MoV) para acero inoxidable (304, 316L) y chapas de alta resistencia como Hardox. La matriz de alto contenido en cromo y carburo del D2 resiste el fuerte desgaste por endurecimiento impuesto por el acero inoxidable austenítico. En el caso del acero dulce estándar, el acero para herramientas con alto contenido en carbono proporciona la máxima tenacidad a un coste inferior.",
+            "Utilice el modelo y versión de cizalla junto con la posición de cuchilla superior o inferior. Haga coincidir la longitud, el ancho, el grosor, los orificios de montaje y las características del asiento de la hoja con la pieza original. La apertura de la mandíbula y la capacidad de corte anunciada describen el funcionamiento de la máquina. La referencia o el dibujo de la cuchilla establece el cuerpo y la geometría de montaje necesarios para el reemplazo.",
         },
         {
           question:
-            "Nuestras cuchillas siguen astillándose al cortar chatarra mezclada. ¿Cuál es el problema?",
+            "¿Puedo pedir un solo cuchillo superior o inferior en lugar de un par?",
           answer:
-            "Es probable que esté utilizando una cuchilla demasiado dura (como D2). La chatarra mixta contiene sólidos impredecibles y pesados (como barras de refuerzo o pernos). Cuando un impacto extremo golpea una hoja dura y quebradiza, ésta se astilla o se rompe. Necesita cambiar a una aleación resistente a los golpes como S1 (6CrW2Si) o H13, templada a una dureza ligeramente inferior (HRC 54-56) para absorber elásticamente los impactos cinéticos masivos.",
+            "Sí. Ambas posiciones se pueden pedir individualmente o juntas. Identifique las cuchillas superiores móviles e inferiores fijas por separado, incluida cualquier diferencia en sus perfiles de montaje o corte. Para un solo reemplazo, inspeccione la cuchilla retenida y registre sus dimensiones de trabajo para que la pieza nueva se especifique para ese par existente.",
         },
         {
           question:
-            "¿Qué perfil de arista minimiza las rebabas al cizallar chapas de acero de alta resistencia?",
+            "¿Cómo afecta la alimentación de chatarra a la selección del material de la cuchilla de corte de cocodrilo?",
           answer:
-            "El factor crítico es la uniformidad del contacto. Un contacto desigual entre hojas concentra la fuerza de cizallamiento en un extremo, produciendo el vuelco por compresión y la rebaba de desgarro característicos de los aceros de alto endurecimiento por deformación. Nuestra tolerancia estándar es de ±0,05 mm de paralelismo en 1000 mm; se especifica ±0,02 mm superior para aplicaciones inoxidables y de precisión.",
+            "La composición de la chatarra, la forma de la sección y el espesor afectan la carga sobre el filo. Compare esas condiciones con el desgaste gradual, el desconchado o la deformación del cuchillo actual. Ayudan a establecer el equilibrio requerido de tenacidad y resistencia al desgaste entre los materiales disponibles, junto con la capacidad de la cizalla y las especificaciones originales de la cuchilla.",
         },
         {
           question:
-            "¿Cómo reducen las cuchillas reversibles de doble filo mi coste anual en herramientas?",
+            "¿Se puede girar una navaja de cocodrilo para usar otro filo?",
           answer:
-            "Una cuchilla reversible de doble filo (o 4 filos) proporciona múltiples caras de corte independientes a partir de un único cuerpo de cuchilla. Cuando el filo 1 muestra desgaste, afloje los pernos de montaje, voltee o gire la cuchilla y vuelva a apretar. Esto multiplica la vida útil de la cuchilla antes de que sea necesario reafilarla, reduciendo drásticamente los costes de herramientas por corte.",
+            "Sí, si la cuchilla y la mordaza originales permiten otro filo de trabajo. Confirme que la siguiente posición conserve el asiento, el patrón de pernos y la holgura especificados. Las instrucciones de la máquina definen qué posiciones son utilizables, incluso en una cuchilla rectangular.",
+        },
+        {
+          question:
+            "¿Las cuchillas McIntyre 320, 407 y 500 comparten una misma especificación?",
+          answer:
+            "No. El catálogo enumera diferentes configuraciones de cuerpo de cuchilla para McIntyre 320, 407 y 500. Utilice la tabla y el número de artículo para limitar la selección, luego verifique el patrón de orificios, la posición de la cuchilla y la versión de la máquina. Estos nombres de modelos identifican configuraciones de referencia para reemplazos Sureay .",
+        },
+        {
+          question:
+            "¿En qué se diferencian las cuchillas de corte de cocodrilo de cuchillas de cizalla estacionarias para chatarra?",
+          answer:
+            "Las cuchillas de corte de cocodrilo se ajustan a una mandíbula con bisagras y su posición fija opuesta. Las cizallas de pórtico estacionarias utilizan un conjunto diferente de cuchilla móvil y contracuchilla. Para esto último, consulte [cuchillas de cizalla para chatarra estacionarias](/products/stationary-scrap-shear-blades) .",
+        },
+        {
+          question:
+            "¿Qué debo enviar para obtener una cotización de una cuchilla de corte de cocodrilo?",
+          answer:
+            "Proporcione el modelo y la versión de la máquina, un dibujo o muestra dimensionada, la posición de la cuchilla y la cantidad. Indique si necesita la cuchilla superior móvil, la cuchilla inferior fija o ambas. Agregue la sección de desecho típica y marque cualquier cambio en la altura de corte al volver a moler la muestra.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de cizalla de cocodrilo, la posición de la cuchilla superior o inferior, el número de pieza o el dibujo, la cantidad y el grado de metal y el tamaño de la sección que corta.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1024,
+      height: 765,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Dos muestras de navajas de cocodrilo con orificios de montaje empotrados y bordes cortantes rectos",
+      sizeRange: "320–508 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Pueden fabricar cuchillas que se adapten exactamente a mi guillotina TRUMPF, AMADA o Durma?",
-          answer:
-            "Sí. Disponemos de dimensiones que se adaptan a las plataformas TRUMPF, AMADA, BYSTRONIC, Durma y Haco. Disponemos de hojas de una sola pieza de hasta 6000 mm, diseños multi-segmento para mesas más largas y perfiles de uno, dos o cuatro filos. Las longitudes personalizadas se fabrican bajo plano en un plazo de 15 días laborables.",
-        },
-        {
-          question:
-            "¿Puede Sureay fabricar cuchillas de recambio para cizallas obsoletas de chatarra pesada?",
-          answer:
-            "Sí. Para cizallas de chatarra pesada (Lefort, Harris, Genesis) o modelos obsoletos, trabajamos a partir de planos suministrados por el cliente o muestras físicas de cuchillas. Si lo desea, disponemos de una plantilla de medición dimensional para medir con precisión el perfil de la cuchilla y los orificios de montaje avellanados.",
+          label: "Aplicación",
+          value: "Corte de chatarra con tijeras de cocodrilo",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/alligator-shear-knives-detail.webp",
+        alt: "Cinco muestras de navajas de cocodrilo que muestran diferentes perfiles de cuerpo y patrones de orificios de montaje",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "320–508 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Acero para herramientas S1 , 6CrW2Si o H13 para configuraciones de corte de chatarra",
+        },
+        {
+          label: "Posiciones de cuchillo",
+          value: "Cuchilla móvil superior y cuchilla fija inferior.",
+        },
+        {
+          label: "Forma de hoja",
+          value: "Cuchillos rectangulares rectos",
+        },
+        {
+          label: "Aplicación",
+          value: "Corte de chatarra con tijeras de cocodrilo",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Referencia de la máquina",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+          ],
+          rows: [
+            ["SR003501", "JMC McIntyre 320", "320", "65", "30"],
+            ["SR003502", "JMC McIntyre 407", "407", "64", "32"],
+            ["SR003503", "JMC McIntyre 500", "508", "70", "30"],
+            ["SR003504", "Bronneberg A-400", "406", "70", "32"],
+            ["SR003505", "Bronneberg A-500PB", "500", "70", "32"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Incluya el modelo de cizalla de cocodrilo, la posición de la cuchilla superior o inferior, el número de pieza o el dibujo, la cantidad y el grado de metal y el tamaño de la sección que corta.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Incluya el modelo de cizalla de cocodrilo, la posición de la cuchilla superior o inferior, el número de pieza o el dibujo, la cantidad y el grado de metal y el tamaño de la sección que corta.",
+    dimensionLabels: {
+      intro:
+        "Las referencias de la máquina identifican las configuraciones enumeradas. Confirme la versión de la máquina, la posición de la cuchilla superior o inferior y el dibujo completo del orificio de montaje antes de realizar el pedido; Las dimensiones corporales por sí solas no establecen el ajuste.",
     },
   },
   {
     id: "guillotine-shear-blades",
-    name: "Cuchillas de guillotina",
-    fullName:
-      "Cuchillas de guillotina de precisión para cizallas de chapa hidráulicas y mecánicas",
+    name: "Cuchillas para cizallas guillotina",
+    fullName: "Cuchillas de cizalla guillotina para chapa metálica",
+    seoTitle: "Cuchillas de cizalla guillotina para chapa metálica",
+    seoDescription:
+      "Corte chapa con cuchillas de cizalla D2 , 6CrW2Si o 9CrSi . Solicite las cuchillas superiores e inferiores en juegos de una sola pieza o segmentados con patrones de montaje personalizados.",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Cuchillas de guillotina",
-    image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+    categoryDisplay: "Cuchillas para cizallas guillotina",
+    image: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
     badge: "Chapa metálica",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+      "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+      "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
     ],
     description:
-      "Guillotina de alta precisión cuchillas de cizalla en aceros para herramientas D2 (Cr12MoV), 6CrW2Si y 9CrSi para cizallas hidráulicas y mecánicas. Superficies rectificadas con un paralelismo de ±0,05 mm en toda la longitud. Juegos de cuchillas superiores e inferiores para máquinas de hasta 16 mm × 4000 mm de capacidad. Recambios compatibles OEM para guillotinas TRUMPF, AMADA, LVD, Durma y Bystronic.",
-    fullDescription:
-      "Las guillotinas cuchillas de cizalla son los componentes de corte críticos en las cizallas de chapa hidráulicas y mecánicas que se utilizan en centros de servicio del acero, astilleros, talleres de fabricación de estructuras y plantas de estampación de automóviles. Cada ciclo de corte somete a la cuchilla a una enorme fuerza de cizallamiento concentrada a lo largo de una estrecha línea de filo: la cuchilla debe mantener una geometría de filo afiladísima, un paralelismo absoluto y una dureza uniforme en toda su longitud para ofrecer cortes de chapa sin rebabas ni distorsiones.\n\nSureay fabrica cuchillas de guillotina cuchillas de cizalla a partir de aceros para herramientas de primera calidad - D2 (Cr12MoV), 6CrW2Si, y 9CrSi - cada uno seleccionado para un rango de espesor específico y un perfil de dureza del material. Todas las hojas se someten a un tratamiento térmico al vacío y a un rectificado superficial de precisión con un paralelismo de ±0,05 mm en toda su longitud, lo que garantiza que el espacio de corte entre las hojas superior e inferior permanezca uniforme de un extremo a otro. Esto elimina la torsión, la curvatura y las rebabas en los bordes que afectan a las cuchillas de recambio mal fabricadas.\n\n## Selección de la aleación según la aplicación de corte\n\n**D2 / Cr12MoV (HRC 58-62):** La especificación superior para cizallar acero inoxidable (304, 316L), placas de baja aleación de alta resistencia (HSLA), placa de desgaste Hardox y bobina prepintada. La matriz de carburo de cromo del 12% de D2 proporciona la resistencia extrema a la abrasión necesaria al cortar aceros inoxidables austeníticos endurecidos por el trabajo que embotan rápidamente los grados de hoja más blandos.\n\n**6CrW2Si (HRC 55-58):** Aleación resistente a los golpes que combina una excelente dureza del filo con la tenacidad del núcleo. Especificada para cizallamiento de chapa media a pesada (6-25 mm de acero dulce) y entornos de producción de materiales mixtos en los que la hoja se encuentra ocasionalmente con material más duro de lo esperado. El contenido de tungsteno y cromo proporciona resistencia al temple a altas temperaturas.\n\n**9CrSi (HRC 55-60):** Una aleación rentable para cizallar grandes volúmenes de acero dulce y acero al carbono (hasta 12 mm). 9CrSi proporciona una duración fiable del filo en acero estructural estándar, chapa galvanizada y chapa de suelo a un coste por hoja inferior al de D2.\n\n## Juegos de cuchillas superior e inferior\n\nLas cizallas de guillotina funcionan con cuchillas emparejadas superior (husillo móvil) e inferior (bancada fija). Sureay suministra juegos de cuchillas superior e inferior rectificadas a partir del mismo lote de acero, lo que garantiza una dureza y un comportamiento de expansión térmica idénticos en todo el par. Cada juego se suministra con orificios de montaje taladrados según el patrón de pernos OEM exacto de su máquina.\n\n## Cuchillas Reversibles Multi-Edge\n\nPara las cuchillas estándar de sección rectangular, ofrecemos perfiles reversibles de 2 y 4 filos. Cuando se desgasta un filo de corte, el operario afloja los pernos de montaje, voltea o gira la cuchilla para exponer un filo nuevo y vuelve a apretar. Esto multiplica la vida útil de la cuchilla entre 2 y 4 veces antes de que sea necesario reafilarla o sustituirla, lo que reduce drásticamente el coste anual de herramientas por corte.\n\n## Sistemas de cuchillas de segmentos para mesas largas\n\nPara cizallas de más de 3200 mm de ancho, las cuchillas de una sola pieza resultan poco prácticas debido al riesgo de distorsión tratamiento térmico. Sureay fabrica sistemas de cuchillas de segmentos de precisión -múltiples cuchillas más cortas indexadas de extremo a extremo en la bancada de la máquina- con una tolerancia de altura de extremo a extremo igualada (±0,02 mm) para garantizar una línea de cizallado continua y sin huecos en todo el ancho de la mesa.",
+      "Recambio cuchillas de cizalla para chapa, en D2 , 6CrW2Si o 9CrSi. Cuchillas superiores e inferiores con longitudes y patrones de montaje personalizados.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -2854,129 +3664,66 @@ export const blades: Blade[] = [
       "Adira",
       "Ursviken",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV), 6CrW2Si, 9CrSi, High Carbon Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–62 (alloy dependent)",
-      },
-      {
-        label: "Machine Capacity",
-        value: "4 mm × 2500 mm up to 16 mm × 4000 mm (and custom)",
-      },
-      {
-        label: "Edge Profile",
-        value: "1, 2, or 4 Usable Cutting Edges (Reversible)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Application",
-        value:
-          "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Equipe su cizalla para chapa con cuchillas superiores e inferiores de repuesto, suministradas como hojas de una sola pieza o juegos segmentados. Sureay ofrece dimensiones basadas en planos y opciones de acero para sus tareas de corte; Contáctenos para una cotización para su máquina. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
     components: [
       {
-        id: "d2-stainless-shearing",
-        tag: "PLACA PESADA",
-        title: "D2 para chapa inoxidable y HSLA",
+        id: "guillotine-upper-lower",
+        tag: "Configuración de cuchillo",
+        title:
+          "Opciones de acero para herramientas para corte de chapa metálica",
         description:
-          "Premium D2 (Cr12MoV) endurecido hasta HRC 58-62. La matriz de alto contenido en carburo de cromo resiste el desgaste abrasivo extremo y las fuerzas de endurecimiento por deformación que se producen al cizallar acero inoxidable 304/316L, chapas HSLA y bobinas prepintadas.",
+          "Sureay ofrece acero para herramientas D2 , 6CrW2Si , 9CrSi y con alto contenido de carbono, con una dureza indicada de 55 a 62 HRC según el grado. Especifique la resistencia de la lámina, el rango de espesor y las condiciones de desgaste de los bordes al comparar materiales de reemplazo.",
       },
       {
-        id: "6crw2si-shock",
-        tag: "RESISTENCIA A LOS GOLPES",
-        title: "6CrW2Si para chapa semipesada",
+        id: "guillotine-segmented-knives",
+        tag: "Conjuntos segmentados",
+        title: "Juegos de cuchillos segmentados y de una sola pieza",
         description:
-          "La aleación 6CrW2Si resistente a los golpes combina filos duros (HRC 55-58) con una gran tenacidad en el núcleo. Diseñado para placas de acero dulce de 6-25 mm y producción de materiales mixtos donde las inclusiones duras inesperadas astillarían una hoja quebradiza.",
+          "Las cuchillas superior e inferior están disponibles como piezas individuales o juegos segmentados, con longitudes, caras extremas y detalles de montaje especificados para la viga de corte existente.",
       },
       {
-        id: "parallelism-precision",
-        tag: "TOLERANCIA",
-        title: "Paralelismo de precisión (±0,05 mm)",
+        id: "guillotine-material-setup",
+        tag: "Condiciones de corte",
+        title: "Patrones de montaje personalizados y bordes utilizables",
         description:
-          "Todas las cuchillas están rectificadas con un paralelismo de ±0,05 mm en longitudes de hasta 4000 mm. Esto garantiza una separación de cizalladura uniforme entre las cuchillas superior e inferior, lo que proporciona cortes sin rebabas y evita la torsión y el arqueo de la chapa cizallada.",
+          "Los patrones de orificios personalizados y los perfiles de corte permiten reemplazar la configuración de la cuchilla instalada. Según el diseño de la cuchilla y sus posiciones de indexación permitidas, están disponibles versiones de uno, dos y cuatro filos.",
       },
     ],
-    dimensionLabels: {
-      col0: "Capacidad de la máquina",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      col4: "Piezas / Juego",
-      caption:
-        "* Dimensiones estándar para cizallas de guillotina hidráulicas y mecánicas comunes. Cada juego incluye cuchillas superior e inferior. Diseños de segmentos para mesas de más de 4000 mm disponibles bajo pedido. Longitudes personalizadas, perfiles de varios bordes y patrones de pernos OEM fabricados según plano.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "4 × 2500",
-        od: "508",
-        id: "80",
-        length: "25",
-        pcs: "10",
+        label: "Tamaños",
+        value: "508–1300 mm",
       },
       {
-        spec: "4 × 2500",
-        od: "1300",
-        id: "63",
-        length: "16",
-        pcs: "4",
+        label: "Material",
+        value:
+          "D2 , 6CrW2Si , 9CrSi o acero para herramientas con alto contenido de carbono",
       },
       {
-        spec: "6 × 2500",
-        od: "1300",
-        id: "80",
-        length: "20",
-        pcs: "4",
+        label: "Dureza",
+        value: "55–62 HRC , dependiendo del grado de acero",
       },
       {
-        spec: "6 × 3200",
-        od: "1100",
-        id: "80",
-        length: "20",
-        pcs: "6",
+        label: "Posiciones de cuchillo",
+        value:
+          "Cuchillos superiores e inferiores; conjuntos de una sola pieza o segmentados",
       },
       {
-        spec: "6 × 4000",
-        od: "1025",
-        id: "80",
-        length: "20",
-        pcs: "8",
+        label: "Configuraciones de borde",
+        value:
+          "Uno, dos o cuatro filos de corte utilizables, según el perfil de la cuchilla",
       },
       {
-        spec: "16 × 2500",
-        od: "1300",
-        id: "100",
-        length: "25",
-        pcs: "4",
+        label: "Aplicación",
+        value: "Corte de chapa con guillotina y cizalla escuadradora",
       },
       {
-        spec: "16 × 3200",
-        od: "1100",
-        id: "100",
-        length: "25",
-        pcs: "6",
-      },
-      {
-        spec: "16 × 4000",
-        od: "1025",
-        id: "100",
-        length: "25",
-        pcs: "8",
+        label: "Paralelismo",
+        value: "±0,05 mm en toda la longitud de la cuchilla",
       },
     ],
-    relatedBladeIds: [
-      "metal-shear-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-      "multi-shaft-blades-metal",
-    ],
+    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
     offers: {
       lowPrice: 30,
       highPrice: 350,
@@ -2984,97 +3731,167 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "¿Qué calidad de acero debo elegir para cizallar acero inoxidable 304 en una guillotina hidráulica?",
+          question: "¿Cómo identifico una cuchilla de guillotina de repuesto?",
           answer:
-            "D2 (Cr12MoV) endurecido a HRC 58-62 es el grado recomendado para acero inoxidable (304, 316L) y chapas de alta resistencia como Hardox. El alto contenido en carburo de cromo del D2 resiste la abrasión severa del endurecimiento por trabajo que imponen los inoxidables austeníticos. Para el acero dulce estándar, 9CrSi proporciona una excelente duración del filo a un coste inferior.",
+            "El dibujo de la cuchilla superior o inferior identifica el reemplazo de manera más confiable que el ancho de corte anunciado de la cizalla. Compare la longitud real, la sección, los orificios para pernos, las caras de ubicación y el borde de trabajo. En una viga segmentada, haga coincidir la pieza individual y su posición en la fila.",
         },
         {
           question:
-            "¿Por qué se astilla mi guillotina cuchillas de cizalla al cortar chapa mixta o más pesada?",
+            "¿Cómo se debe elegir el material de la hoja para acero dulce, acero inoxidable o aluminio?",
           answer:
-            "El astillado suele indicar que la aleación de la hoja es demasiado dura y quebradiza para la carga de corte. Si está cortando chapa mixta de 10-25 mm u ocasionalmente se encuentra con material más duro, cambie de D2 a 6CrW2Si. Esta aleación resistente a los golpes proporciona una dureza inferior controlada (HRC 55-58) con una gran tenacidad en el núcleo, absorbiendo las cargas de impacto elásticamente en lugar de astillarse.",
+            "Comience con el grado real de la hoja, la resistencia, el rango de espesor y la condición del cuchillo usado. El desgaste gradual, el desconchado de los bordes y la deformación requieren diferentes consideraciones sobre el material. Compare el material actual con las opciones de acero disponibles manteniendo la geometría de borde requerida. Un cambio en las especificaciones de la hoja también puede requerir revisar la configuración de corte de la máquina.",
+        },
+        {
+          question: "¿Por qué se astillan cuchillas de cizalla chapa?",
+          answer:
+            "Inspeccione el borde de trabajo y compare el daño con las especificaciones de la hoja y el espacio libre de corte. Una sobrecarga mecánica, una holgura inadecuada o capas dobles involuntarias pueden contribuir al desconchado. Un borde desgastado o dañado puede afectar el corte terminado. Verifique estas condiciones juntas antes de decidir si cambiar el material de la cuchilla o reemplazar un segmento dañado.",
         },
         {
           question:
-            "¿Qué causa las rebabas y la torsión en el borde cizallado, y cómo lo solucionan las cuchillas de cizalla de guillotina?",
+            "¿Son lo mismo las cuchillas de cizalla escuadradora y cuchillas de cizalla ?",
           answer:
-            "Las rebabas y la torsión se producen casi siempre por un contacto desigual entre cuchillas, es decir, cuando la distancia de cizallamiento varía de un extremo a otro de la cuchilla. Esto concentra la fuerza de cizallamiento en un punto, produciendo rebabas por compresión y distorsión de la hoja. Nuestras cuchillas están rectificadas con un paralelismo de ±0,05 mm en toda su longitud, lo que garantiza una separación uniforme en toda la longitud de corte para un cizallado limpio y sin rebabas.",
+            "Sí, en equipos de chapa ambos nombres pueden referirse a cuchillas superiores e inferiores rectas para un corte transversal. Haga coincidir la cuchilla con la viga superior o inferior de la máquina. Para conocer una cuchilla que corta una pila de papel sujeta, consulte [Cuchillas de guillotina para papel](/products/paper-cutting-blades) .",
         },
         {
           question:
-            "¿Cómo reducen las guillotinas reversibles de 4 cantos cuchillas de cizalla mis costes anuales de utillaje?",
+            "¿Cuál es la diferencia entre la holgura de la hoja y el ángulo de ataque?",
           answer:
-            "Una cuchilla reversible de 4 filos proporciona cuatro caras de corte independientes a partir de un único cuerpo de cuchilla. Cuando el filo 1 muestra desgaste, afloje los pernos de montaje, gire la cuchilla 90° para exponer un filo nuevo y vuelva a apretar. Esto multiplica por 4 la vida útil de la cuchilla instalada antes de que sea necesario reafilarla, lo que reduce drásticamente el coste de las herramientas por corte en las líneas de cizallado de gran volumen.",
+            "El espacio libre es el espacio entre los bordes cortantes opuestos. El ángulo de inclinación describe su inclinación relativa a lo largo del corte. Ambos afectan las condiciones de corte, pero son configuraciones separadas. Utilice el procedimiento del fabricante de la cizalla para el grado y el espesor de la hoja y conserve esos requisitos al especificar la geometría de la cuchilla de repuesto.",
         },
         {
           question:
-            "¿Cuál es la longitud máxima de hoja de una sola pieza que Sureay puede fabricar?",
+            "¿Se puede girar o rectificar la hoja de una cizalla de guillotina?",
           answer:
-            "Fabricamos guillotinas de una sola pieza cuchillas de cizalla de hasta 4000 mm de longitud. Para máquinas de más de 4000 mm de ancho, fabricamos juegos de cuchillas de segmentos de precisión -cuchillas múltiples indexadas de extremo a extremo con tolerancia de altura igualada (±0,02 mm)- para crear una línea de cizalla continua y sin huecos en todo el ancho de la mesa.",
+            "Se puede indexar una hoja de cizalla si la cuchilla y el soporte soportan otro borde de trabajo. Se puede rectificar si el perfil especificado se puede restaurar dentro de las dimensiones restantes permitidas. Después de cualquiera de las operaciones, verifique el asiento, la altura de corte y el espacio libre con el dibujo original y los límites de la máquina.",
         },
         {
           question:
-            "¿Cómo selecciono las dimensiones correctas de la cuchilla para mi cizalla guillotina específica?",
+            "¿Cómo solicito cotización de cuchillas de cizalla o de un juego segmentado?",
           answer:
-            "Las dimensiones de las cuchillas vienen determinadas por la capacidad de corte de su máquina (grosor máximo de la chapa × anchura de la mesa). Por ejemplo, una máquina de 6 × 3200 mm utiliza cuchillas de 1100 × 80 × 20 mm, suministradas como un juego segmentado de 6 piezas. Envíenos el número de modelo de su máquina o un dibujo de la cuchilla que ya tiene y le confirmaremos las dimensiones exactas, el patrón de atornillado y la calidad de acero recomendada.",
+            "Comparta el modelo de corte, los dibujos superiores e inferiores o los números de pieza, los grados y espesores de las láminas y las cantidades. Para una fila segmentada, etiquete la secuencia del segmento y muestre las caras adyacentes. Si está reemplazando solo una parte de la fila, identifique los segmentos que permanecen en servicio.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de corte, los dibujos superior e inferior, el grado y espesor de la lámina y la cantidad requerida.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Muestras de cuchillas de guillotina que muestran bordes cortantes rectos y diferentes orificios de montaje",
+      sizeRange: "508–1300 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Pueden fabricar cuchillas de recambio que se adapten exactamente a mi guillotina TRUMPF, AMADA, LVD o Durma?",
-          answer:
-            "Sí. Disponemos de dimensiones y patrones de tornillos que coinciden con los OEM para las cizallas TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati y Adira. Facilítenos el número de modelo de su máquina o una muestra de cuchilla desgastada y le confirmaremos el ajuste. Las longitudes personalizadas se fabrican bajo plano en un plazo de 15 días laborables.",
-        },
-        {
-          question:
-            "¿Suministran juegos de cuchillas de guillotina superior e inferior?",
-          answer:
-            "Sí. Cada pedido estándar incluye juegos de cuchillas superior (ariete) e inferior (bancada), rectificadas a partir del mismo lote de acero para garantizar una dureza, estructura del grano y comportamiento de expansión térmica idénticos en todo el par. Los orificios de montaje se taladran siguiendo exactamente el patrón de tornillos del fabricante original.",
-        },
-        {
-          question:
-            "¿Puede Sureay fabricar cuchillas de recambio para cizallas antiguas o descatalogadas?",
-          answer:
-            "Sí. Para los modelos de guillotina descatalogados o poco comunes, trabajamos a partir de planos suministrados por el cliente o muestras físicas de la cuchilla. Si lo desea, disponemos de una plantilla de medición dimensional para medir con precisión el perfil de la cuchilla, los ángulos de los bordes y los orificios de montaje avellanados. Hemos fabricado con éxito recambios para máquinas que datan de la década de 1980.",
-        },
-        {
-          question:
-            "¿Qué documentación de calidad se suministra con cada juego de cuchillas?",
-          answer:
-            "Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional que verifica el paralelismo de longitud completa y un certificado de lote tratamiento térmico. Para los programas de cualificación de OEM, se pueden solicitar informes completos de MMC y certificados de material de acería.",
-        },
-        {
-          question:
-            "¿Cuál es el plazo de entrega habitual de la guillotina estándar cuchillas de cizalla?",
-          answer:
-            "Los tamaños estándar (indicados en nuestra tabla de dimensiones) se envían en un plazo de 7 a 10 días laborables. Los tamaños personalizados, los grados de aleación especiales o los pedidos de gran volumen suelen requerir entre 15 y 20 días laborables. Ofrecemos producción acelerada bajo pedido para situaciones urgentes de avería de máquina.",
+          label: "Aplicación",
+          value: "Corte de chapa con guillotina o cizalla escuadradora",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
+        alt: "Cuatro muestras de cuchillos de guillotina de chapa que muestran bordes rectos y orificios de montaje",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "508–1300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 , 6CrW2Si , 9CrSi o acero para herramientas con alto contenido de carbono",
+        },
+        {
+          label: "Dureza",
+          value: "55–62 HRC , dependiendo del grado de acero",
+        },
+        {
+          label: "Posiciones de cuchillo",
+          value:
+            "Cuchillos superiores e inferiores; conjuntos de una sola pieza o segmentados",
+        },
+        {
+          label: "Configuraciones de borde",
+          value:
+            "Uno, dos o cuatro filos de corte utilizables, según el perfil de la cuchilla",
+        },
+        {
+          label: "Aplicación",
+          value: "Corte de chapa con guillotina y cizalla escuadradora",
+        },
+        {
+          label: "Paralelismo",
+          value: "±0,05 mm en toda la longitud de la cuchilla",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Capacidad de corte de la máquina (mm)",
+            "Longitud del cuchillo (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+            "Piezas/juego",
+          ],
+          rows: [
+            ["SR003201", "4 × 2500", "508", "80", "25", "10"],
+            ["SR003202", "4 × 2500", "1300", "63", "16", "4"],
+            ["SR003203", "6 × 2500", "1300", "80", "20", "4"],
+            ["SR003204", "6 × 3200", "1100", "80", "20", "6"],
+            ["SR003205", "6 × 4000", "1025", "80", "20", "8"],
+            ["SR003206", "16 × 2500", "1300", "100", "25", "4"],
+            ["SR003207", "16 × 3200", "1100", "100", "25", "6"],
+            ["SR003208", "16 × 4000", "1025", "100", "25", "8"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Incluya el modelo de corte, los dibujos superior e inferior, el grado y espesor de la lámina y la cantidad requerida.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Incluya el modelo de corte, los dibujos superior e inferior, el grado y espesor de la lámina y la cantidad requerida.",
+    dimensionLabels: {
+      intro:
+        "La capacidad de corte de la máquina es una referencia, no un modelo único ni una garantía de ajuste. Confirme las posiciones de las cuchillas superior e inferior, el orden de los segmentos y los orificios de montaje para las configuraciones enumeradas.",
     },
   },
   {
     id: "three-knife-trimmer-blades",
-    name: "Recortadoras de tres cuchillas",
-    fullName:
-      "Juego de tres cuchillas HSS y carburo de alta calidad para encuadernación",
-    category: "shear_blades",
+    name: "Cuchillas para guillotinas trilaterales",
+    fullName: "Cuchillas para guillotinas trilaterales de acabado de libros",
+    seoTitle: "Cuchillas para guillotinas trilaterales de acabado de libros",
+    seoDescription:
+      "Recorte el frente, la cabecera y el pie de los libros encuadernados con cuchillas HSS o de carburo. Pida una hoja de repuesto o un juego combinado con una cuchilla frontal y dos laterales.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Cuchillos de encuadernación",
     badge: "Ajuste OEM",
     badgeColor: "blue",
     image:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
     gallery: [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
     ],
     description:
-      "Juegos de recambio de 3 cuchillas (1 frontal, 2 laterales) para el acabado de grandes volúmenes de impresión. Construcción bimetálica con filos de corte de HSS de tungsteno al 18% o de carburo de tungsteno (TC) macizo. Ajuste OEM directo para recortadoras Müller Martini, Kolbus y Wohlenberg.",
-    fullDescription:
-      "En las encuadernaciones comerciales de alta velocidad y en las operaciones de acabado de impresión, la guillotina de tres cuchillas es el último paso crítico antes del empaquetado. Las cuchillas de corte de calidad inferior provocan la rotura del lomo, el astillado de la cubierta y la acumulación de cola PUR/EVA, convirtiendo los libros acabados en costosa chatarra.\n\nLos juegos de guillotinas de tres cuchillas Sureay se fabrican según las especificaciones precisas de los fabricantes de equipos originales para garantizar bordes anteriores, cabezas y colas impecables en catálogos gruesos, revistas y libros de encuadernación perfecta.\n\n## Construcción bimetálica avanzada\n\nLas cuchillas macizas de acero rápido de este tamaño son demasiado frágiles y propensas a romperse bajo la inmensa presión de sujeción de una guillotina para libros. Utilizamos un avanzado proceso de fabricación **Bimetallic Inlay**. Un filo de primera calidad, ya sea HSS de tungsteno al 18% o carburo de tungsteno micrograno, se suelda al vacío sobre un cuerpo de acero para muelles de alta resistencia que absorbe los golpes. Esto proporciona la combinación definitiva: un filo increíblemente duro y resistente al desgaste respaldado por un núcleo flexible e inastillable.\n\n## Grados de material para la encuadernación\n\n- **18% Tungsteno HSS (Acero de alta velocidad):** El estándar de la industria para la impresión comercial general. Ofrece un filo extremadamente fino y afilado que se adapta fácilmente a los materiales de libros estándar sin recubrimiento y ligeramente recubiertos.\n- **Carburo de Tungsteno (TC / Equivalente Widia):** La especificación más alta. Las cuchillas de carburo de tungsteno tienen entre 5 y 10 veces más vida útil** que las de acero rápido. Son obligatorias para cortar papel reciclado pesado, papel artístico con revestimiento brillante muy abrasivo o libros encuadernados con adhesivos PUR resistentes.\n\n## Acabado Espejo Anti-Glue\n\nLos libros modernos de encuadernación perfecta utilizan adhesivos EVA o PUR agresivos. Durante el ciclo de corte, la fricción calienta la cola, haciendo que se corra y se pegue a la cara de la cuchilla. Las cuchillas de la guillotina Sureay están recubiertas con precisión con un acabado de espejo Ra ≤0,1 μm, lo que reduce significativamente la fricción y la adherencia del adhesivo, garantizando un corte limpio ciclo tras ciclo.",
+      "Cuchillas de repuesto para recortadora de tres cuchillas para acabado de libros. Cuchillas frontales y laterales HSS o carburo, suministradas como piezas individuales o juegos combinados según el plano.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3085,102 +3902,64 @@ export const blades: Blade[] = [
       "Meccanotecnica",
       "Horizon",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS (Duritan eq.) | Tungsten Carbide (TC)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic Inlay (Hard edge brazed to tough steel body)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤0.1 μm) to prevent glue build-up",
-      },
-      {
-        label: "Set Configuration",
-        value: "Matched 3-Piece Set (1 Front Knife, 2 Side Knives)",
-      },
-      {
-        label: "OEM Tolerance",
-        value: "Thickness matched to ±0.01 mm across the full set",
-      },
-      {
-        label: "Applications",
-        value: "Perfect Bound Books, Magazines, Hardcover Book Blocks",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Solicite cuchillas frontales y laterales de repuesto para su cortadora de libros como un juego combinado o como piezas individuales. Con opciones de vanguardia HSS y carburo, además de perfiles de montaje personalizados, Sureay puede cotizar la configuración de cuchillas que su línea de acabado necesita. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
     components: [
       {
-        id: "bimetallic-inlay",
-        tag: "METALURGIA",
-        title: "Tecnología de incrustación bimetálica",
+        id: "trimmer-front-side-set",
+        tag: "Establecer configuración",
+        title: "Incrustaciones HSS y carburo para recorte de libros",
         description:
-          "Soldamos un filo de acero de alta velocidad (HSS) o de carburo de tungsteno sobre un cuerpo de aleación de acero resistente y flexible. Esto le proporciona la resistencia extrema al desgaste necesaria para el papel estucado, sin el riesgo de que la cuchilla se rompa bajo una fuerte presión de apriete.",
+          "Los filos de corte HSS con 18% de tungsteno y carburo de tungsteno están disponibles en cuerpos de acero, lo que brinda a los encuadernadores opciones de materiales para el tipo de papel y las tareas de corte de su línea de acabado de libros.",
       },
       {
-        id: "matched-sets",
-        tag: "CONFIGURACIÓN",
-        title: "Conjuntos de 3 piezas a juego",
+        id: "trimmer-edge-selection",
+        tag: "Selección de borde",
+        title: "Espesor emparejado y caras de trabajo traslapadas",
         description:
-          "Se suministra como juego listo para instalar (1 delantera, 1 izquierda, 1 derecha). Las tres láminas están rectificadas con precisión en el mismo lote con una tolerancia de grosor de ±0,01 mm, lo que garantiza una instalación sin tiempos de inactividad y una alineación perfecta.",
+          "La coincidencia de espesor establecida indicada es ±0,01 mm. Las caras de trabajo con espejo y la combinación de espesores brindan a las cuchillas frontales y laterales un acabado y una geometría definidos para realizar pedidos juntos.",
       },
       {
-        id: "anti-glue-finish",
-        tag: "RENDIMIENTO",
-        title: "Acabado de espejo antiadherente",
+        id: "trimmer-spine-finish",
+        tag: "recorte de columna",
+        title:
+          "Cuchillas frontales y laterales como juegos o piezas individuales",
         description:
-          "Al cortar los lomos de los libros, la cuchilla queda expuesta a adhesivos PUR y EVA calientes y pegajosos. Nuestras cuchillas están lapeadas con un acabado microscópico de espejo, lo que evita el arrastre de pegamento que, de otro modo, mancharía el borde del libro.",
+          "Solicite un juego completo de frente, izquierdo y derecho o un reemplazo individual, con biseles específicos de posición y detalles de montaje reproducidos de los dibujos de la cuchilla.",
       },
     ],
-    dimensionLabels: {
-      col0: "Modelo de máquina OEM",
-      col1: "Posición de la cuchilla",
-      col2: "Dimensiones (L × A × T)",
-      col3: "Orificios de montaje / Ranuras",
-      caption:
-        "* Las dimensiones reflejan los modelos estándar de Müller Martini y Kolbus. Disponemos de planos OEM para Wohlenberg y Perfecta. Patrones de agujeros personalizados mecanizados por encargo.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Müller Martini 301/361",
-        od: "Front Knife",
-        id: "540 × 90 × 12 mm",
-        type: "12 × M10 Threaded",
+        label: "Tamaños",
+        value: "392–585 mm",
       },
       {
-        spec: "Müller Martini 301/361",
-        od: "Left & Right",
-        id: "392 × 90 × 12 mm",
-        type: "8 × M10 Threaded",
+        label: "Material",
+        value: "18% tungsteno HSS o carburo de tungsteno",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Front Knife",
-        id: "580 × 115 × 12 mm",
-        type: "12 × M10, 1 Slot",
+        label: "Estructura de la cuchilla",
+        value: "Incrustación bimetálica con filo soldado y cuerpo de acero.",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Left & Right",
-        id: "450 × 115 × 12 mm",
-        type: "15 × M10, 2 Slots",
+        label: "Establecer configuración",
+        value: "Un cuchillo frontal y dos cuchillos laterales.",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Front Knife",
-        id: "510 × 110 × 10 mm",
-        type: "10 × M10 Threaded",
+        label: "Acabado superficial",
+        value: "Espejo lapeado, Ra ≤0,1 µm",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Left & Right",
-        id: "400 × 110 × 10 mm",
-        type: "8 × M10 Threaded",
+        label: "Aplicación",
+        value:
+          "Recorte frontal, frontal y de pies de libros encuadernados y bloques de libros.",
+      },
+      {
+        label: "Establecer coincidencia de espesor",
+        value: "±0,01 mm en todo el conjunto combinado",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
+    relatedBladeIds: ["paper-cutting-blades"],
     offers: {
       lowPrice: 120,
       highPrice: 850,
@@ -3189,415 +3968,857 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Cuándo debo cambiar las cuchillas de HSS por cuchillas de carburo de tungsteno (TC)?",
+            "¿Qué cuchillas componen un juego de repuesto de recortadora de tres cuchillas?",
           answer:
-            "Debe cambiar a carburo de tungsteno (TC) cuando corte grandes volúmenes de papel reciclado, papel artístico con revestimiento brillante o libros gruesos encuadernados con adhesivo PUR grueso. Los papeles estucados contienen arcilla y minerales que desafilan el HSS muy rápidamente. Las cuchillas de carburo de tungsteno tienen de 5 a 10 veces más vida útil que las de acero rápido, lo que reduce drásticamente el tiempo de inactividad de la máquina para cambiar las cuchillas.",
+            "El juego se compone de una cuchilla frontal y dos cuchillas laterales para cortes frontales, de cabeza y de pies en un bloque de libros. Cada posición tiene sus propias dimensiones y detalles de montaje. Identifique las cuchillas izquierda y derecha por separado, incluida su orientación de bisel, de modo que el juego solicitado siga la disposición de la recortadora instalada.",
         },
         {
           question:
-            "¿Por qué las cuchillas de mi recortadora siguen rompiendo o astillando el lomo del libro?",
+            "¿Cómo puedo combinar cuchillos con una recortadora Müller Martini o Kolbus ?",
           answer:
-            'El desgarro del lomo suele deberse a una de estas tres causas: (1) la cuchilla está desafilada y debe cambiarse; (2) el ángulo de biselado es incorrecto para el tipo de papel o pegamento que se está cortando; o (3) la acumulación de pegamento en la parte posterior de la cuchilla está causando "arrastre". Asegúrese de que sus cuchillas tienen un acabado de espejo para evitar la adherencia del pegamento, y considere la posibilidad de cambiar a HSS o carburo para una mejor retención del filo.',
+            "Haga coincidir las referencias de las cuchillas delantera, izquierda y derecha con el modelo y la versión completa de la recortadora. Las entradas del catálogo cubren configuraciones específicas Müller Martini 367x y Kolbus HD. Compare el número de artículo, el bisel y el patrón de montaje separados para cada posición con su dibujo.",
         },
         {
           question:
-            "¿Se pueden reafilar las cuchillas de carburo de tungsteno (TC)?",
+            "¿Cómo afecta el papel a la elección entre HSS y filos de carburo?",
           answer:
-            "Sí, pero deben afilarse con muelas de diamante especializadas. El uso de muelas estándar de óxido de aluminio o carburo de silicio destruirá el filo de carburo y generará microfisuras. Si su servicio de afilado local no dispone del equipo de muelas de diamante adecuado, le recomendamos que las envíe a un afilador industrial especializado.",
+            "El recubrimiento del papel, el contenido de relleno y el rendimiento de producción influyen en el desgaste de los bordes. Considere el carburo cuando el problema principal sea el desgaste gradual y evalúe el proceso de afilado disponible para esa construcción. Conserve los biseles frontales y laterales requeridos y establezca las dimensiones. En caso de astillado, inspeccione el borde y las condiciones de corte antes de seleccionar un material más duro.",
         },
         {
           question:
-            "¿Cuál es la secuencia correcta de instalación de un juego de tres cuchillas?",
+            "¿Qué puede causar una marca persistente en el borde recortado de un libro?",
           answer:
-            "Dado que las cuchillas laterales suelen cizallar ligeramente contra el palo de corte o la trayectoria de la cuchilla frontal, la alineación es fundamental. Instale primero las tres cuchillas sin apretarlas. Ajuste y apriete la cuchilla frontal para establecer el punto de referencia del cabezal y, a continuación, apriete alternativamente las cuchillas laterales. Dado que nuestros juegos de 3 piezas están rectificados con una tolerancia de grosor idéntica, evitan la presión de apriete desigual que causa el atascamiento.",
+            "Una posible causa son pequeñas astillas en el borde de trabajo. Localice la marca en el corte frontal, cabeza o pie e inspeccione el cuchillo correspondiente. Compruebe juntos el filo, el bisel y el estado de la varilla de corte. Restaurar la geometría del borde y el soporte aborda un problema diferente al de eliminar residuos de adhesivo de un cuchillo que de otro modo estaría intacto.",
+        },
+        {
+          question:
+            "¿Por qué se acumula pegamento en los cuchillos para recortar libros?",
+          answer:
+            "El pegamento que no se ha secado lo suficiente puede dejar residuos durante el recorte y la tinta que no se haya secado por completo también puede afectar el acabado. Registre si se produce acumulación cerca del lomo y revise las condiciones de secado durante el proceso de encuadernación. Compare la cuchilla limpia y el corte afectado antes de decidir si la geometría o la superficie de la cuchilla requieren mayor atención.",
+        },
+        {
+          question:
+            "¿Puedo reemplazar un cuchillo lateral sin comprar el juego completo?",
+          answer:
+            "Sí. Se puede pedir individualmente una cuchilla delantera, izquierda o derecha. Identifique su referencia original y las dimensiones de las cuchillas que permanecen en servicio, incluido cualquier reafilado. El reemplazo necesita la orientación de bisel y el patrón de montaje adecuados, junto con las dimensiones de trabajo requeridas por ese conjunto.",
+        },
+        {
+          question:
+            "¿Son intercambiables las cuchillas de corte de tres vías y las cuchillas de encuadernación?",
+          answer:
+            "Generalmente no. Tres vías y tres cuchillas se refieren al recorte de tres bordes de un bloque de libro encuadernado. Una línea de encuadernación también puede recortar tres bordes, pero sus cuchillas superior, inferior, frontal y lateral dependen de la máquina. Consulte [Cuchillas recortadoras para encuadernadora](/products/saddle-stitcher-trimmer-knives) para conocer las configuraciones de líneas de folletos.",
+        },
+        {
+          question:
+            "¿Cómo solicito un presupuesto para un juego de recortadora de tres cuchillas?",
+          answer:
+            "Enviar modelo y versión de recortadora, especificaciones y cantidades del papel o bloque de libros. Etiquete los dibujos de las cuchillas frontal, izquierda y derecha por separado con sus direcciones de bisel y detalles de montaje. Para pedidos nuevos, incluya cada número de artículo o número de pieza original. Para un cambio parcial, identifique los cuchillos que quedan en el juego.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de recortadora, dibujos de las posiciones frontal y lateral, y el formato y stock del libro.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 960,
+      height: 960,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Muestras de hojas de recortadoras de tres cuchillas que muestran una cuchilla frontal larga y dos cuchillas laterales más cortas",
+      sizeRange: "392–585 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Son compatibles sus cuchillas con las máquinas Kolbus, Wohlenberg y Perfecta?",
-          answer:
-            "Sí. Mantenemos una amplia base de datos de planos OEM exactos para las principales líneas de encuadernación europeas y japonesas, incluyendo Müller Martini, Kolbus, Wohlenberg, Perfecta y Horizon. Los orificios de montaje, las ranuras y los insertos roscados se ajustarán perfectamente.",
-        },
-        {
-          question:
-            "¿Cuál es el plazo de entrega de un juego de recortadoras de carburo de tungsteno personalizado?",
-          answer:
-            "Los juegos estándar de HSS para los populares modelos Müller Martini y Kolbus suelen estar en stock. Los juegos personalizados con incrustaciones de carburo de tungsteno (TC) suelen tardar entre 15 y 20 días laborables en fabricarse, debido a los complejos procesos de soldadura al vacío y rectificado con diamante que requiere el carburo.",
+          label: "Aplicación",
+          value: "Recorte del frente, cabeza y pie de productos encuadernados",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
+        alt: "Muestras de cuchillas recortadoras de tres cuchillas con diferentes perfiles de cuerpo y patrones de orificios de montaje",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "392–585 mm",
+        },
+        {
+          label: "Material",
+          value: "18% tungsteno HSS o carburo de tungsteno",
+        },
+        {
+          label: "Estructura de la cuchilla",
+          value: "Incrustación bimetálica con filo soldado y cuerpo de acero.",
+        },
+        {
+          label: "Establecer configuración",
+          value: "Un cuchillo frontal y dos cuchillos laterales.",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Espejo lapeado, Ra ≤0,1 µm",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Recorte frontal, frontal y de pies de libros encuadernados y bloques de libros.",
+        },
+        {
+          label: "Establecer coincidencia de espesor",
+          value: "±0,01 mm en todo el conjunto combinado",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Máquina / versión",
+            "Posición del cuchillo",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+            "Orificios/ranuras de montaje",
+          ],
+          rows: [
+            [
+              "SR003401",
+              "Müller Martini 3670 / 3672 — Nuevo estilo",
+              "Frente",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003402",
+              "Müller Martini 3670 / 3672 — Nuevo estilo",
+              "Lado izquierdo",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003403",
+              "Müller Martini 3670 / 3672 — Nuevo estilo",
+              "Lado derecho",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003404",
+              "Müller Martini 3671 Mérito — Serie 97",
+              "Frente",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003405",
+              "Müller Martini 3671 Mérito — Serie 97",
+              "Lado izquierdo",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003406",
+              "Müller Martini 3671 Mérito — Serie 97",
+              "Lado derecho",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003407",
+              "Müller Martini 3675 Orbit — Estilo antiguo",
+              "Frente",
+              "580",
+              "115",
+              "12",
+              "12 × M10 + 1 ranura",
+            ],
+            [
+              "SR003408",
+              "Müller Martini 3675 Orbit — Estilo antiguo",
+              "Lado izquierdo",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 ranuras",
+            ],
+            [
+              "SR003409",
+              "Müller Martini 3675 Orbit — Estilo antiguo",
+              "Lado derecho",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 ranuras",
+            ],
+            [
+              "SR003410",
+              "Müller Martini 3675 Orbit: nuevo estilo",
+              "Frente",
+              "585",
+              "115",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003411",
+              "Müller Martini 3675 Orbit: nuevo estilo",
+              "Lado izquierdo",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003412",
+              "Müller Martini 3675 Orbit: nuevo estilo",
+              "Lado derecho",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003413",
+              "Kolbus HD150 — Estilo antiguo",
+              "Frente",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003414",
+              "Kolbus HD150 — Estilo antiguo",
+              "Lado izquierdo",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003415",
+              "Kolbus HD150 — Estilo antiguo",
+              "Lado derecho",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003416",
+              "Kolbus HD153",
+              "Frente",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003417",
+              "Kolbus HD153",
+              "Lado izquierdo",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+            [
+              "SR003418",
+              "Kolbus HD153",
+              "Lado derecho",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Incluya el modelo de recortadora, dibujos de las posiciones frontal y lateral, y el formato y stock del libro.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Incluya el modelo de recortadora, dibujos de las posiciones frontal y lateral, y el formato y stock del libro.",
+    dimensionLabels: {
+      intro:
+        "Cada juego tiene un cuchillo frontal y un cuchillo para cada lado. Haga coincidir la versión de la máquina, la dirección del bisel y el patrón completo de orificios y ranuras con su dibujo antes de realizar el pedido.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas superiores e inferiores de repuesto para su estación de corte de electrodos de batería, con orificios, anchos y perfiles de borde personalizados. Envíe Sureay los planos de su estación y los detalles de los electrodos para obtener una cotización sobre el par de carburo y las opciones de superficie.",
     id: "lithium-battery-slitting-knives",
-    name: "Cuchillas de corte a batería",
+    seoDescription:
+      "Cuchillas cortadoras de carburo de grano fino para ánodos y cátodos de baterías de litio revestidos. Solicite cuchillas giratorias superior e inferior combinadas con DLC o TiN opcionales.",
+    name: "Cuchillas para corte longitudinal de electrodos de batería",
     fullName:
-      "Cuchillas circulares de carburo de tungsteno para láminas de electrodos de baterías de litio",
+      "Cuchillas de corte longitudinal para electrodos de baterías de litio",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Cuchillas de precisión a batería",
+    categoryDisplay:
+      "Cuchillas para corte longitudinal de electrodos de batería",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "Nueva energía",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-07.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
-    ],
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Cuchillas de corte circular carburo de tungsteno con acabado de espejo para láminas de electrodos de baterías de iones de litio. La calidad del filo Zero-notch Ra ≤ 0,05μm evita las microabolladuras en las láminas de cátodo de Al y ánodo de Cu, manteniendo la limpieza del ensamblaje de celdas ISO Clase 7. Tolerancia: ±0,001 mm de espesor, ≤0,01 mm T.I.R.",
-    fullDescription:
-      "El corte de electrodos de baterías de litio es una de las aplicaciones de corte de precisión más exigentes en la fabricación industrial. Una sola microperforación o muesca en el borde de la lámina cortada puede penetrar en la membrana separadora durante el montaje de la célula, provocando un cortocircuito interno y un fallo catastrófico de la batería. Las cuchillas de corte de baterías de litio Sureay están diseñadas para eliminar este riesgo mediante una precisión dimensional y una metalurgia superficial extremas.\n\nCada cuchilla está fabricada con grano ultrafino carburo de tungsteno (WC-Co, tamaño de grano ≤ 0,5μm) y rectificada con precisión a un acabado de espejo Ra ≤ 0,05μm en el bisel de corte. La tolerancia de espesor se mantiene en ±0,001 mm en toda la cara del disco -tres veces más estricta que las especificaciones estándar de las cuchillas cortadoras- y la excentricidad total indicada (T.I.R.) se verifica en ≤0,01 mm en cada unidad antes de su envío. Esta geometría de borde sin muescas evita la microdecamación en el borde de corte de la lámina y elimina la generación de partículas metálicas que contaminan los entornos de montaje de células en sala seca.\n\n## Aplicaciones de la lámina de electrodo\n\n**Lámina de cátodo de aluminio (células LFP, NMC, NCA):** Grosor de 12-20μm. La capa de óxido dura y quebradiza de la lámina de aluminio para baterías desgasta rápidamente los bordes estándar HSS y D2 en un solo rollo. Los grados de carburo de tungsteno mantienen una vida geométrica del filo 8-12× más larga, reduciendo las paradas imprevistas en líneas de bobinado de alta velocidad que funcionan a 80-120 m/min.\n\n**Lámina de ánodo de cobre (LFP, NMC, celdas de estado sólido):** Grosor de 6-12μm. La lámina ultrafina de Cu requiere que la separación entre la cuchilla y el yunque sea de ±0,002 mm para evitar que la lámina se arrugue y se pliegue en el rodillo rebobinador. Nuestros pares de cuchillas de diámetro adaptado se rectifican como juegos acoplados con una holgura verificada previamente según las especificaciones de su máquina.\n\n**Película separadora de PVDF (proceso en seco):** La película separadora revestida de cerámica para procesos de electrodo en seco (utilizada en líneas celulares de estado sólido Gen 4) presenta un sustrato de corte extremadamente abrasivo. Las cuchillas de grado cermet o PCD (diamante policristalino) sólido están disponibles para esta aplicación bajo pedido.\n\n## Compatibilidad con salas limpias\n\nTodas las cuchillas se limpian por ultrasonidos, se embalan individualmente en bolsas antiestáticas selladas y se certifican como libres de partículas según las normas ISO Clase 7. Los certificados de embalaje y materiales cumplen los requisitos de documentación IATF 16949 para cadenas de suministro de baterías de vehículos eléctricos.",
+      "Cuchillas cortadoras de repuesto de carburo para ánodos y cátodos de baterías de litio recubiertas. Pares de cuchillas superiores e inferiores personalizados, con opciones de recubrimiento DLC o TiN.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Tamaños",
+        value: "Serie de electrodos DE 60–150 mm",
+      },
+      {
+        label: "Material",
+        value: "carburo de tungsteno (WC-Co) de grano fino; cermet bajo pedido",
+      },
+      {
+        label: "Aplicaciones",
+        value: "Redes de ánodo y cátodo de batería de litio recubiertas",
+      },
+      {
+        label: "Grados de electrodos",
+        value: "YG6X , YG6H , YG8 y YG10X",
+      },
+      {
+        label: "Acabado de borde",
+        value: "Caras de corte pulidas a espejo, Ra ≤0,05 μm",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value: "DLC o TiN",
+      },
+      {
+        label: "Dureza",
+        value: "91–93 HRA, según el grado WC-Co",
+      },
+      {
+        label: "Tolerancia de espesor",
+        value: "±0.001 mm",
+      },
+      {
+        label: "Excentricidad",
+        value: "≤0.01 mm T.I.R.",
+      },
+      {
+        label: "Montaje",
+        value:
+          "Par de cuchillas giratorias superior e inferior emparejadas mediante estación de corte longitudinal de electrodos",
+      },
+      {
+        label: "Lámina de coleccionista actual",
+        value: "Aluminio 12–20 µm; cobre 6–12 µm",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas para corte de electrodos de batería | Pares de carburo",
+      sizeRange: "Serie de electrodos DE 60–150 mm",
+      heroAlt:
+        "Cuchillas cortadoras de batería circulares dispuestas para mostrar los orificios y las caras de corte pulidas.",
+      specificationImage: {
+        src: "/images/products/slitter-detail/lithium-battery-slitting-knives-detail.webp",
+        alt: "Primer plano del filo pulido de una cuchilla cortadora circular",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "electrode",
+          tabLabel: "Pares de electrodos",
+          title: "Pares de electrodos",
+          columns: [
+            "N.º de artículo",
+            "Serie",
+            "Superior OD × ID × W",
+            "Inferior OD × ID × W",
+          ],
+          rows: [
+            ["SR001351", "serie 60", "72 × 46 × 0.5 mm", "60 × 40 × 5.0 mm"],
+            ["SR001352", "serie 80/98", "98 × 66 × 0.7 mm", "80 × 55 × 5.0 mm"],
+            ["SR001353", "serie 100", "100 × 65 × 0.7 mm", "100 × 65 × 3.0 mm"],
+            ["SR001354", "serie 100", "100 × 65 × 1.0 mm", "100 × 55 × 5.0 mm"],
+            ["SR001355", "serie 130", "130 × 88 × 0.8 mm", "130 × 95 × 3.0 mm"],
+            ["SR001356", "serie 130", "130 × 97 × 1.0 mm", "130 × 70 × 5.0 mm"],
+          ],
+        },
+        {
+          id: "individual-electrode-knives",
+          tabLabel: "Cuchillas de electrodos individuales",
+          title: "Cuchillas de electrodos individuales",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Configuración",
+          ],
+          rows: [
+            ["SR001820", "76 × 38 × 0.5 mm", "cuchillo individual"],
+            ["SR001821", "76 × 38 × 1.0 mm", "cuchillo individual"],
+            ["SR001822", "100 × 50 × 0.5 mm", "cuchillo individual"],
+            ["SR001823", "100 × 50 × 1.0 mm", "cuchillo individual"],
+            ["SR001824", "100 × 50 × 1.5 mm", "cuchillo individual"],
+            ["SR001825", "120 × 60 × 0.5 mm", "cuchillo individual"],
+            ["SR001826", "120 × 60 × 1.0 mm", "cuchillo individual"],
+            ["SR001827", "150 × 76 × 1.0 mm", "cuchillo individual"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Serie de electrodos DE 60–150 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "carburo de tungsteno (WC-Co) de grano fino; cermet bajo pedido",
+        },
+        {
+          label: "Aplicaciones",
+          value: "Redes de ánodo y cátodo de batería de litio recubiertas",
+        },
+        {
+          label: "Grados de electrodos",
+          value: "YG6X , YG6H , YG8 y YG10X",
+        },
+        {
+          label: "Acabado de borde",
+          value: "Caras de corte pulidas a espejo, Ra ≤0,05 μm",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value: "DLC o TiN",
+        },
+        {
+          label: "Dureza",
+          value: "91–93 HRA, según el grado WC-Co",
+        },
+        {
+          label: "Tolerancia de espesor",
+          value: "±0.001 mm",
+        },
+        {
+          label: "Excentricidad",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Par de cuchillas giratorias superior e inferior emparejadas mediante estación de corte longitudinal de electrodos",
+        },
+        {
+          label: "Lámina de coleccionista actual",
+          value: "Aluminio 12–20 µm; cobre 6–12 µm",
+        },
+      ],
+    },
     compatibleMachines: [
-      "Kaido",
-      "Koem",
+      "Nishimura",
+      "DIENES",
+      "Kampf",
+      "CIS",
+      "PNT",
       "Hirano Tecseed",
       "CKD",
-      "Manz",
-      "Targray",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "Ultra-fine WC-Co Tungsten Carbide, Cermet (on request)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror polish Ra ≤ 0.05μm — zero-notch edge",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.001mm | T.I.R. Runout: ≤0.01mm",
-      },
-      {
-        label: "Hardness",
-        value: "HRA 91–93 (WC-Co grade)",
-      },
-      {
-        label: "Coatings",
-        value: "DLC, TiN (optional, anti-adhesion for PVDF-coated foil)",
-      },
-      {
-        label: "Application",
-        value:
-          "Al cathode foil (12–20μm), Cu anode foil (6–12μm), PVDF separator film",
-      },
+      "Lead Intelligent",
     ],
     components: [
       {
-        id: "zero-notch-edge",
-        tag: "PRECISIÓN",
-        title: "Acabado de espejo cero muescas",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Configuraciones de carburo para electrodos recubiertos",
         description:
-          "Cada bisel de corte está lapeado a Ra ≤ 0,05μm - el mismo estándar de calidad de superficie utilizado para el rectificado de lentes ópticas. Esto elimina las micropicaduras que generan partículas metálicas en entornos de montaje de celdas en sala seca y evita la perforación de la membrana del separador.",
+          "Las cuchillas de carburo WC-Co están disponibles para corte de ánodos y cátodos recubiertos, con los requisitos de material y la configuración de las cuchillas definidos para su estación de electrodos.",
       },
       {
-        id: "ultra-fine-carbide",
-        tag: "METALURGIA",
-        title: "Grado de carburo WC-Co ultrafino",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Caras de corte rectificadas y DLC o TiN opcionales",
         description:
-          "El carburo industrial estándar utiliza tamaños de grano de 1-3μm. Nuestras cuchillas para batería se fabrican con WC-Co submicrónico de ≤0,5μm, lo que proporciona una dureza de filo mucho mayor (HRA 91-93), una resistencia a la abrasión superior en láminas finas de Al y Cu, y una vida útil pulible más larga entre ciclos de reafilado.",
+          "Las caras de corte pulidas como espejo y las configuraciones de superficie DLC o TiN opcionales permiten que los pedidos de cuchillas de electrodos especifiquen la superficie de trabajo por separado del material de carburo y la geometría de la hoja.",
       },
       {
-        id: "matched-knife-pairs",
-        tag: "CAPACIDAD DE PROCESO",
-        title: "Pares de liquidación previamente verificados",
+        id: "selection-3",
+        tag: "Aplicación",
+        title:
+          "Cuchillas superiores e inferiores para estaciones de electrodos",
         description:
-          "Los juegos de cuchillas superior e inferior se rectifican como pares de diámetros emparejados con holgura verificada previamente según las especificaciones de su bobinadora (normalmente 0,002-0,005 mm para lámina de Cu). Cada par se envía con una hoja de datos de ingeniería que registra el diámetro exterior, el diámetro interior, el grosor y la holgura medida, lo que permite una reinstalación coherente en el lado de la línea.",
+          "Solicite pares de cuchillas superior e inferior personalizados o reemplazos individuales, con orificios, anchos y perfiles de corte especificados alrededor de su estación de corte de electrodos existente y la cuchilla correspondiente retenida.",
       },
     ],
-    dimensionLabels: {
-      col1: "Diámetro exterior (OD)",
-      col2: "Diámetro interior (DI)",
-      col3: "Espesor",
-      caption:
-        "* Dimensiones estándar para el corte de láminas de electrodos de baterías. OD/ID y espesor personalizados disponibles para todos los modelos de bobinadoras. Pares superior/inferior emparejados suministrados con hoja de datos de holgura verificada previamente.",
-    },
-    standardDimensions: [
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "150 mm",
-        id: "76 mm",
-        thickness: "1.0 mm",
-      },
-    ],
-    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives"],
-    offers: {
-      lowPrice: 45,
-      highPrice: 480,
-    },
     faqs: {
       technical: [
         {
           question:
-            "¿Qué norma de acabado superficial se requiere para evitar microperforaciones en la lámina del electrodo de la batería?",
+            "¿Cómo identifico un par de cuchillas de electrodos superior e inferior de repuesto?",
           answer:
-            "Para el corte longitudinal de electrodos de baterías de iones de litio, el bisel de corte debe pulirse a Ra ≤ 0,05μm (acabado de espejo) y verificarse que no haya muescas con un aumento de 400×. Cualquier irregularidad de la superficie por encima de este umbral genera micropartículas metálicas que contaminan los entornos de sala seca ISO Clase 7 y pueden penetrar en el separador, provocando un cortocircuito interno en la célula acabada.",
+            "Identifique ambas posiciones de las cuchillas y registre sus orificios, anchos, perfiles de corte y relaciones de instalación. El modelo de la estación y los planos actuales establecen los requisitos de montaje. Incluya la construcción de la red de electrodos de modo que se pueda especificar el par de reemplazo para el material recubierto, así como la disposición mecánica, con cada posición claramente identificada.",
         },
         {
           question:
-            "¿Cómo se ajusta la separación entre cuchillas para láminas de ánodo de cobre ultrafinas?",
+            "¿Cómo debería el desgaste actual guiar la selección de carburo para electrodos recubiertos?",
           answer:
-            "Para láminas de ánodo de Cu de 6-12μm, la holgura superior/inferior de la cuchilla debe fijarse en 0,002-0,005 mm (2-5% del grosor de la lámina). Una holgura por debajo de este rango provoca la formación de rebabas; por encima, la lámina se arruga y el rebobinado se vuelve telescópico. Nuestros pares emparejados se verifican previamente según la holgura especificada y se suministran con una hoja de datos dimensionales para una instalación consistente en el lado de la línea.",
+            "Registre el patrón de desgaste del cuchillo usado junto con la construcción del electrodo y la calidad del borde requerida. Estos proporcionan la base para discutir los requisitos del material de carburo. Mantenga el grado del sustrato y el recubrimiento de superficie opcional como especificaciones separadas y compárelos con la geometría de la cuchilla existente y los criterios de aceptación de producción al evaluar un reemplazo.",
         },
         {
           question:
-            "¿Qué grado de carburo debo especificar para la lámina catódica de aluminio frente a la lámina anódica de cobre?",
+            "¿Qué puede causar rebabas, polvo o daños en el recubrimiento en el borde del electrodo?",
           answer:
-            "Ambos tipos de láminas se benefician del WC-Co submicrónico (grano ≤0,5μm, HRA 91-93). En el caso de la lámina catódica de Al, la capa superficial de óxido duro es el principal factor de abrasión: un grado de carburo K10/K20 estándar proporciona una duración aceptable de los bordes. Para la lámina de ánodo de Cu, la prioridad pasa a ser conseguir la menor rugosidad superficial posible (Ra ≤ 0,05μm) para evitar la transferencia de adhesivo y el marcado de la lámina en el borde de corte.",
+            "La condición del filo de la cuchilla, la geometría de corte, la alineación del par y la estructura del electrodo pueden contribuir. Examine el borde del colector y el revestimiento por separado, observando si el defecto aparece en un lado o en varias posiciones de las hendiduras. Compare esas observaciones con las configuraciones validadas de la máquina y los requisitos de calidad de los bordes para definir qué debe abordar el par de cuchillas de reemplazo.",
         },
         {
           question:
-            "¿Cuál es el ciclo típico de reafilado de las cuchillas de corte a batería?",
+            "¿Por qué una cuchilla con electrodo de carburo desarrolla microchips?",
           answer:
-            "En una línea estándar de corte de lámina de 600 mm de ancho a 80 m/min, las cuchillas submicrónicas de WC-Co suelen mantener una calidad de filo aceptable durante 4-6 meses de funcionamiento continuo antes de que sea necesario reafilarlas. La degradación del filo aparece primero como un aumento de la rugosidad del filo de corte (Ra por encima de 0,1μm) visible bajo inspección SEM, no como astillado catastrófico. Ofrecemos un servicio de reafilado con recertificación dimensional completa.",
+            "Los bordes de carburo duro son sensibles a los impactos de manipulación, al contacto involuntario de la cuchilla y al posicionamiento inestable. Inspeccione ambos bordes, la condición de montaje y la desviación, luego compare la alineación del par y la geometría de corte con los requisitos de la estación. Registre si el daño aparece por primera vez durante la instalación, el arranque o el funcionamiento para distinguir el daño por contacto de un problema operativo recurrente antes de cambiar la calidad.",
+        },
+        {
+          question:
+            "¿Cómo se debe especificar DLC o TiN para las cuchillas de electrodos de repuesto?",
+          answer:
+            "Especifique el recubrimiento por separado del grado de carburo, el diámetro interior, el ancho de la cuchilla y el perfil de corte. Identifique si el pedido debe reproducir un cuchillo revestido existente o evaluar un cambio desde una configuración sin revestir. Mantenga los requisitos de construcción del electrodo y calidad de los bordes con la especificación para que el tratamiento de superficie solicitado esté definido para esa estación.",
+        },
+        {
+          question:
+            "¿Puede Sureay suministrar un par de cuchillas personalizadas o reemplazar solo la cuchilla superior?",
+          answer:
+            "Sí. Se pueden especificar pares personalizados a partir de los planos de la estación, y se puede suministrar una cuchilla superior por separado cuando la cuchilla inferior retenida esté identificada y en condiciones de servicio. Incluya sus dimensiones reales, perfil de borde e historial de reafilado. Identifique claramente qué cuchilla se está reemplazando y si el pedido debe reproducir o cambiar la configuración existente.",
+        },
+        {
+          question:
+            "¿Las cuchillas cortadoras de electrodos son las mismas que las cuchillas de cobre desnudo o de papel de aluminio?",
+          answer:
+            "Las cuchillas de electrodo cortan una red de ánodo o cátodo recubierta que contiene tanto una lámina colectora como capas de recubrimiento. Los cuchillos de lámina desnuda cortan el sustrato de cobre o aluminio sin recubrimiento. A pesar de tener una forma circular similar, sus requisitos de cantos y partículas pueden diferir. Para sustratos sin recubrimiento, consulte [Cuchillas cortadoras para papel de cobre y aluminio](/products/metal-foil-strip-slitter-knives) .",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Puede Sureay suministrar cuchillas de corte de batería certificadas conforme a los requisitos de la norma IATF 16949?",
-          answer:
-            "Sí. Suministramos documentación completa de trazabilidad de materiales para la cualificación de la cadena de suministro de baterías de vehículos eléctricos: Certificados de fresado de materias primas WC-Co, informes de ensayos de dureza (HRA según ASTM E18), registros de medición de la rugosidad superficial (Ra según ISO 4287) e informes dimensionales CMM. Toda la documentación está referenciada al número de lote de su pedido de compra.",
-        },
-        {
-          question:
-            "¿Cuál es el plazo de entrega de los pedidos estándar y personalizados de cuchillas para cortar baterías?",
-          answer:
-            "Dimensiones estándar en stock: 3-5 días laborables. Dimensiones OD/ID personalizadas no disponibles en stock: 10-15 días laborables, incluida toda la documentación de control de calidad. Para pedidos iniciales de cualificación de OEM que requieran la verificación de muestras antes de la producción completa, espere de 7 a 10 días laborables para las primeras muestras.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Obtenga hojas cortadoras de carburo de repuesto para el extremo seco de su corrugador, con orificios personalizados, orificios de fijación y patrones de montaje ranurados. Envíe Sureay el dibujo de la pieza o la muestra para obtener una cotización sobre su configuración de hoja sólida o dividida.",
     id: "corrugated-slitter-scorer-blades",
-    name: "Cuchillas para cartón ondulado",
+    seoDescription:
+      "Cuchillas cortadoras de carburo para líneas de extremo seco de corrugadoras, con configuraciones de referencia BHS y Fosber . Taladros a medida y patrones de fijación realizados sobre plano.",
+    name: "Cuchillas de corte longitudinal para cartón ondulado",
     fullName:
-      "Cuchillas de carburo de tungsteno para líneas de corte en seco de onduladoras",
+      "Cuchillas de corte longitudinal para la sección seca de líneas de cartón ondulado",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Cuchillas onduladas",
+    categoryDisplay: "Cuchillas de corte longitudinal para cartón ondulado",
     image:
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-    badge: "Cero Crush",
-    badgeColor: "orange",
-    gallery: [
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
-    ],
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Sólidas cuchillas de carburo de tungsteno diseñadas para el corte de cartón ondulado sin aplastamiento. Reemplazos OEM exactos para BHS, Fosber y Marquip. Como fabricante completo de herramientas para plantas de cajas, también suministramos cuchillas ranuradoras, cuchillas de corte en Z, cuchillas incisoras/rasgadoras y cuchillas de vuelta de puntada.",
-    fullDescription:
-      "En una línea de ondulado de alta velocidad que funciona a más de 250 m/min, la cuchilla de corte en seco determina la calidad final del cartón ondulado. El uso de cuchillas de calidad inferior da como resultado flautas aplastadas, bordes irregulares y un exceso de polvo de papel. Las cuchillas Sureay Corrugated Thin Slitter Blades están fabricadas con carburo de tungsteno 100% sólido de grano submicrónico mediante sinterización HIP (prensado isostático en caliente), lo que proporciona una resistencia a la rotura transversal y una estabilidad de los bordes inigualables.\n\n## La Geometría de Navaja 'Zero-Crush\n\nEl término 'Thin Blade' se refiere al filo, no a todo el cuerpo de la cuchilla. Para evitar el bamboleo a alta velocidad, nuestros cuerpos de hoja se mecanizan con un grosor rígido de 1,0 mm a 1,2 mm. A continuación, el filo se lapea con precisión mediante discos de diamante con un perfil de cuchilla microscópico (normalmente 0,3 mm de ancho en el vértice). Esta geometría específica corta los tableros pesados de doble pared por pura acción de cizallamiento, generando una fuerza de compresión nula y eliminando por completo el aplastamiento del filo.\n\n## Afilado continuo en línea\n\nLas onduladoras modernas utilizan muelas CBN automáticas en línea para afilar las cuchillas de la cortadora durante el funcionamiento. Sureay formula específicamente nuestra matriz de carburo de tungsteno para equilibrar una resistencia extrema al desgaste con una capacidad de afilado perfecta, garantizando que la cuchilla desprenda material limpiamente sin vidriar ni cargar las piedras de afilado de la máquina.\n\n## Cartera completa de herramientas para cartón ondulado\n\nMientras que nuestras cuchillas de carburo de tungsteno son el corazón de las máquinas de cartón ondulado, Sureay es un socio integral de utillaje para toda la planta de cajas. Además de cuchillas de corte, fabricamos y suministramos:\n- **Cuchillas para ranurar (Slotting) y cuchillas para ranurar vigas:** Para ranuras limpias y sin desgarros en encoladoras plegadoras flexográficas (FFG).\n- **Cuchillas de corte Z:** Cuchillas dentadas de corte transversal de alta velocidad para la estación de corte en seco.\n- **Cuchillas de precisión para cortar la pestaña crítica de pegamento/cosido en cajas plegables.\n- **Cuchillas de ranurado y hendido: Anillos de ranurado macho/hembra que crean la bisagra de plegado perfecta.\n- **Cuchillas circulares superiores e inferiores divididas:** Diseño de dos piezas para una rápida sustitución en la máquina, ahorrando horas de inactividad por mantenimiento del árbol.",
+      "Cuchillas cortadoras de repuesto de carburo para líneas de extremo seco de corrugadoras. BHS , Fosber y otras referencias de máquinas, con taladros a medida y patrones de fijación sobre plano.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "BHS",
-      "FOSBER",
-      "Marquip",
-      "Agnati",
-      "Martin / Bobst",
-      "TCY",
-      "Isowa",
-    ],
     specs: [
       {
-        label: "Main Product",
-        value: "Solid Tungsten Carbide Thin Slitter Blades (HIP Sintered)",
+        label: "Tamaños",
+        value: "Hoja delgada de 15–340 mm de diámetro exterior",
       },
       {
         label: "Material",
-        value: "Tungsten Carbide WC-Co K05 / K10 / K20 (grade by board type)",
-      },
-      {
-        label: "Blade Hardness",
-        value: "HRA 90–92 (Optimized for wear and in-line grindability)",
-      },
-      {
-        label: "Body Thickness",
-        value: "1.0 mm – 1.2 mm (Ensures high-speed rigidity)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Precision lapped razor profile, ~0.3 mm apex (Zero-crush)",
-      },
-      {
-        label: "Line Speed Rating",
-        value: "Up to 350+ m/min on modern high-speed corrugators",
-      },
-      {
-        label: "Application",
         value:
-          "B/C/E/F flute corrugated board — slit and score on BHS, Marquip, FOSBER corrugators",
+          "Carburo WC-Co en grados K05 , K10 , K20 , YG8 , YG10 , YG12X o YG15",
       },
       {
-        label: "Other Tooling Cap.",
-        value: "Slotter Knives, Z Cut-off Knives, Scorer Knives, Split Knives",
+        label: "Aplicaciones",
+        value: "Corte longitudinal en el extremo seco del corrugador",
       },
+      {
+        label: "Opciones de hoja",
+        value: "Disco sólido o construcción dividida.",
+      },
+      {
+        label: "Dureza",
+        value: "90–92 HRA, según el grado de carburo",
+      },
+      {
+        label: "Montaje",
+        value:
+          "Orificio liso, patrón de orificios de fijación o patrón de montaje ranurado",
+      },
+      {
+        label: "Método de producción",
+        value: "carburo de tungsteno sólido sinterizado HIP",
+      },
+      {
+        label: "Ápice del borde",
+        value: "Aproximadamente 0,3 mm",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Cuchillas para cortadoras de cartón ondulado | BHS & Fosber",
+      sizeRange: "Hoja delgada de 15–340 mm de diámetro exterior",
+      heroAlt:
+        "Cuchillas cortadoras delgadas de cartón corrugado con diferentes diámetros y patrones de montaje",
+      specificationImage: {
+        src: "/images/products/slitter-detail/corrugated-slitter-scorer-blades-detail.webp",
+        alt: "Hoja cortadora circular corrugada que muestra su gran diámetro y orificios de fijación",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "thin",
+          tabLabel: "Hojas delgadas de carburo",
+          title: "Hojas delgadas de carburo",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Referencia del equipo",
+            "Patrón de montaje",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Patrón de 6 × Ø9 mm"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "patrón de 4 ranuras"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Dibujo de partido"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Dibujo de partido"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Dibujo de partido"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Dibujo de partido"],
+            [
+              "SR001410",
+              "280 × 160 × 1.1 mm",
+              "Mitsubishi",
+              "Dibujo de partido",
+            ],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Dibujo de partido"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Dibujo de partido"],
+            [
+              "SR001413",
+              "340 × 230.2 × 1.0 mm",
+              "Göpfert",
+              "Dibujo de partido",
+            ],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Tamaños adicionales de cuchillas para corrugadores",
+          title: "Tamaños adicionales de cuchillas para corrugadores",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de cuchilla / Referencia de la plataforma",
+          ],
+          rows: [
+            ["SR001828", "240 × 115 × 1.0 / 1.2 mm", "BHS"],
+            ["SR001829", "260 × 140 × 1.2 mm", "BHS"],
+            ["SR001830", "230 × 135 × 1.15 / 1.2 mm", "FOSBER"],
+            ["SR001831", "260 × 112 × 1.2 mm", "FOSBER"],
+            ["SR001832", "230 × 110 × 1.2 / 1.5 mm", "marqués"],
+            ["SR001833", "200 × 122 × 1.2 mm", "TCY /Justu"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Hoja delgada de 15–340 mm de diámetro exterior",
+        },
+        {
+          label: "Material",
+          value:
+            "Carburo WC-Co en grados K05 , K10 , K20 , YG8 , YG10 , YG12X o YG15",
+        },
+        {
+          label: "Aplicaciones",
+          value: "Corte longitudinal en el extremo seco del corrugador",
+        },
+        {
+          label: "Opciones de hoja",
+          value: "Disco sólido o construcción dividida.",
+        },
+        {
+          label: "Dureza",
+          value: "90–92 HRA, según el grado de carburo",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Orificio liso, patrón de orificios de fijación o patrón de montaje ranurado",
+        },
+        {
+          label: "Método de producción",
+          value: "carburo de tungsteno sólido sinterizado HIP",
+        },
+        {
+          label: "Ápice del borde",
+          value: "Aproximadamente 0,3 mm",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BHS",
+      "Fosber",
+      "MarquipWardUnited",
+      "Agnati",
+      "Mitsubishi",
+      "Isowa",
+      "TCY",
+      "Göpfert",
     ],
     components: [
       {
-        id: "hip-sintering",
-        tag: "METALURGIA",
-        title: "Carburo sinterizado HIP",
+        id: "selection-1",
+        tag: "Selección",
+        title:
+          "Opciones de materiales de carburo para corte longitudinal de corrugadores",
         description:
-          "El prensado isostático en caliente (HIP) garantiza que nuestras finas cuchillas de corte no tengan poros microscópicos. Esta estructura ultradensa mantiene un filo impecable (punta de ~0,3 mm) sin microdesgarros bajo el impacto del cartón ondulado a alta velocidad.",
+          "Las opciones de carburo WC-Co le brindan una variedad de materiales de reemplazo para el corte del corrugador. Especifique su calidad actual, configuración de la hoja y condiciones de la tabla para definir la cuchilla requerida.",
       },
       {
-        id: "zero-crush",
-        tag: "GEOMETRÍA",
-        title: "Filo de navaja Zero-Crush",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Construcciones de hoja sólida y dividida",
         description:
-          "El grueso cuerpo de la hoja (1,0-1,2 mm) proporciona una estabilidad absoluta contra el bamboleo lateral a gran velocidad, mientras que el filo está profundamente afilado y diamantado hasta conseguir un acabado de navaja. Esto corta las estrías limpiamente en lugar de presionarlas.",
+          "Hay disponibles construcciones de disco sólido y divididas para estaciones de cuchillas corrugadoras existentes, lo que le permite pedir la forma de cuchilla requerida por su conjunto instalado.",
       },
       {
-        id: "full-portfolio",
-        tag: "CAPACIDAD DE FABRICACIÓN",
-        title: "Utillaje completo para plantas en cajas",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Orificios personalizados y patrones de montaje",
         description:
-          "Desde cortadoras finas de carburo de tungsteno en la onduladora, hasta cuchillas de corte en Z, anillos incisores y cuchillas ranuradoras superiores e inferiores en su plegadora encoladora flexográfica, diseñamos todo el espectro de corte para su planta de cajas.",
+          "Las hojas de repuesto se pueden fabricar con orificios, orificios de fijación y ranuras definidos en el dibujo, lo que le brinda una ruta de compra directa para el patrón de montaje utilizado en su línea.",
       },
     ],
-    dimensionLabels: {
-      col0: "Onduladora Target OEM",
-      col1: "Diámetro exterior (OD)",
-      col2: "Diámetro interior (DI)",
-      col3: "Grosor del cuerpo",
-      caption:
-        "* Las dimensiones arriba indicadas son especificaciones OEM estándar para cuchillas de corte fino. Los orificios de los pasadores de arrastre se mecanizan según las tolerancias de la marca. Las cuchillas ranuradoras, incisoras y de corte en Z se fabrican según los planos exactos del cliente o del OEM.",
-    },
-    standardDimensions: [
-      {
-        spec: "BHS",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "BHS",
-        od: "260 mm",
-        id: "140 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "230 mm",
-        id: "135 mm",
-        thickness: "1.15 / 1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "260 mm",
-        id: "112 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Marquip",
-        od: "230 mm",
-        id: "110 mm",
-        thickness: "1.2 / 1.5 mm",
-      },
-      {
-        spec: "Agnati",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        spec: "TCY / Justu",
-        od: "200 mm",
-        id: "122 mm",
-        thickness: "1.2 mm",
-      },
-    ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 150,
-    },
     faqs: {
       technical: [
         {
           question:
-            "¿Por qué las finas cuchillas de mi cortadora aplastan las flautas de las tablas de flauta E y F?",
+            "¿Cómo identifico la cuchilla cortadora corrugadora de repuesto correcta?",
           answer:
-            "El aplastamiento del filo está causado por una cuchilla que ha perdido su geometría. Esto ocurre si el carburo de la cuchilla se desgasta demasiado rápido o si las piedras de afilado automático en línea están vidriadas. El cambio a nuestras cuchillas de carburo de tungsteno sinterizado HIP garantiza que el filo se mantenga microscópicamente afilado, cortando las estrías limpiamente sin fuerza de compresión.",
+            "Comience con el modelo de máquina y la referencia de la cuchilla, luego especifique el diámetro exterior, el diámetro interior, el espesor y el patrón de fijación. Incluya si la hoja instalada es un disco sólido o una construcción dividida. Un dibujo o fotografías claras de la disposición de montaje ayudan a identificar la configuración requerida, particularmente cuando la misma marca de máquina utiliza diferentes conjuntos de cuchillas.",
+        },
+        {
+          question: "¿Se intercambian las cuchillas cortadoras BHS y Fosber ?",
+          answer:
+            "La intercambiabilidad depende de la hoja completa y de la geometría de montaje. Compare el orificio, los orificios o ranuras de fijación, el espesor y el perfil de corte con la pieza instalada. Diámetros exteriores similares pueden ocultar diferentes interfaces, así que utilice el dibujo de la cuchilla o la referencia de pieza para establecer la configuración de reemplazo para la estación BHS o Fosber específica.",
         },
         {
           question:
-            "¿Cómo interactúan sus cuchillas con los sistemas automáticos de afilado de cortadoras-grapadoras?",
+            "¿Por qué se utiliza carburo de tungsteno para las cuchillas cortadoras e incisoras de cartón corrugado?",
           answer:
-            "Nuestras cuchillas están diseñadas específicamente para el afilado continuo en línea (común en las líneas Fosber y BHS). La estructura del grano de carburo y la proporción de aglutinante de cobalto están equilibradas para que la cuchilla desprenda material limpiamente al ser golpeada por las piedras CBN, manteniendo la cuchilla afilada sin cargar (satinar) las muelas de afilado.",
+            "carburo de tungsteno proporciona un filo resistente al desgaste para cortar cartón corrugado. La selección de la calidad debe reflejar la construcción de la hoja y las condiciones de trabajo reales. Compare el desgaste gradual de los bordes con el desconchado e incluya la disposición de afilado de la máquina cuando especifique un reemplazo. Estos detalles ayudan a definir el material requerido de manera más útil que un solo valor de dureza.",
         },
         {
           question:
-            "¿Cuál es la ventaja de una cuchilla circular dividida por arriba y por abajo?",
+            "¿Por qué el cartón ondulado presenta bordes ásperos después del corte?",
           answer:
-            "En las cortadoras-cortadoras tradicionales, el cambio de una cuchilla circular maciza desgastada requiere que los operarios extraigan todo el pesado eje de la máquina. Las Split cuchillas circulares se fabrican en dos mitades interconectadas. Basta con atornillar las mitades directamente alrededor del eje en cuestión de minutos, ahorrando horas de inactividad por mantenimiento.",
+            "Compruebe el filo de la hoja, el estado de afilado y el apoyo de la tabla en el corte. Un borde desgastado o una configuración de afilado inadecuada pueden perjudicar la acción de corte de la hoja delgada. Compare muestras cortadas antes y después del afilado y observe los cambios en la calidad del papel. Siga las configuraciones del corrugador para esmerilado y soporte, en lugar de tratar cada borde áspero como un problema de grado de carburo.",
+        },
+        {
+          question:
+            "¿Qué se debe comprobar al combinar una cuchilla con la unidad de afilado automático?",
+          answer:
+            "Verifique el perfil de la hoja y el diámetro restante con el dispositivo de afilado, junto con el estado y la alineación de los componentes de afilado. Utilice la documentación de la máquina para conocer los ajustes de afilado y los límites de servicio. Incluya los detalles de la unidad de afilado cuando solicite un reemplazo para que el cuchillo se especifique como parte del conjunto de corte y afilado instalado.",
+        },
+        {
+          question:
+            "¿Puede Sureay reproducir una hoja corrugadora con un patrón de montaje específico?",
+          answer:
+            "Sí. Sureay puede fabricar hojas de repuesto según los dibujos que definen el orificio, la disposición de los orificios de fijación, las ranuras y el perfil de corte. La referencia o muestra de la pieza original ayuda a identificar la interfaz instalada. Especifique si la hoja es sólida o dividida e incluya los detalles de ubicación y fijación necesarios para reproducir el patrón de montaje.",
+        },
+        {
+          question:
+            "¿Son las hojas cortadoras-incisoras lo mismo que los rodeles o las cuchillas ranuradoras?",
+          answer:
+            "Estas partes realizan diferentes operaciones. Las cuchillas cortadoras corrugadoras cortan las tablas a lo largo, las ruedas rodadoras forman líneas de pliegue y las cuchillas ranuradoras cortan las ranuras de las solapas durante la conversión de cajas. Las cuchillas ranuradoras macho y hembra utilizan diferentes perfiles y disposiciones de montaje. Identifique la operación de corte al solicitar un reemplazo para que la consulta llegue a la configuración correcta del producto.",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Puede Sureay suministrar el paquete completo de cuchillas para una instalación nueva de onduladora y FFG?",
-          answer:
-            "Absolutamente. Somos un socio integral de utillaje para plantas de cajas. Además de las cortadoras finas de carburo de tungsteno, fabricamos todo el espectro de conversión: Cuchillas ranuradoras, cuchillas ranuradoras de haz, cuchillas de vuelta de puntada, cuchillas rascadoras y cuchillas de corte en Z.",
-        },
-        {
-          question:
-            "¿Mantienen ustedes las dimensiones de las encoladoras Bobst / Martin Flexo Folder?",
-          answer:
-            "Sí, disponemos de una amplia base de datos de planos OEM que cubren las secciones de corte, ranurado e hendido de las principales máquinas de conversión, incluidas Bobst, Martin, Isowa, Ward y TCY. Sus cuchillas de repuesto serán exactamente iguales.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slotter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Suministramos cuchillas de repuesto para el conjunto de corte primario de su trituradora de neumáticos, con ganchos y orificios centrales a medida. Sureay puede cotizar cuchillas sueltas o juegos completos para procesar neumáticos enteros y producir combustible derivado de neumáticos (TDF). Envíenos los datos de la máquina y el plano para definir la configuración. Las marcas mencionadas sirven como referencia de compatibilidad para los repuestos de Sureay.",
     id: "tire-shredder-blades",
-    name: "Cuchillas trituradoras de neumáticos",
-    fullName: "Cizallas rotativas de 3 garras para reciclado de neumáticos",
+    name: "Cuchillas para trituradoras de neumáticos",
+    fullName:
+      "Cuchillas para cizallas rotativas de trituración primaria de neumáticos",
+    seoTitle:
+      "Cuchillas para cizallas rotativas de trituración primaria de neumáticos",
+    seoDescription:
+      "Cortadoras A8 o 42CrMo modificadas para la trituración primaria de neumáticos. Haga coincidir el número de ganchos, el grosor del cortador y el diámetro del eje con su cizalla rotativa.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Cuchillas trituradoras de neumáticos",
+    categoryDisplay: "Cuchillas para trituradoras de neumáticos",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 880,
+      height: 880,
+      smallerWidths: [320, 640],
+    },
     badge: "Estándar OEM",
     badgeColor: "red",
     gallery: [
@@ -3606,69 +4827,38 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
     description:
-      'ZGTR0zGTR rotativa de 3 garras de primera calidad diseñada para la trituración primaria de neumáticos y la producción de TDF (combustible derivado de neumáticos). Fabricado con aceros para herramientas Cru-Wear (PGK) y A8 modificado de calidad OEM para soportar el impacto extremo de los alambres de talón. Mecanizado de precisión con tolerancias exactas de ±0,05 mm (0,002") para garantizar que los neumáticos se cortan limpiamente en lugar de desgarrarse.',
-    fullDescription:
-      "La trituración primaria de neumáticos es posiblemente la aplicación más brutal en la industria de la reducción de tamaño. Las cuchillas giratorias deben cortar simultáneamente el caucho elástico e impactar repetidamente contra los alambres de acero de alta resistencia de los talones. Las aleaciones estándar de las trituradoras fallan prematuramente en este entorno, ya sea por un rápido redondeo de los bordes o por una fractura frágil catastrófica.\n\n## Metalurgia de primera calidad para neumáticos\n\nFabricamos nuestro neumático cuchillas trituradoras utilizando exactamente los mismos materiales de primera calidad probados en equipos OEM de primer nivel (como las trituradoras Barclay y CM):\n\n**Cru-Wear (PGK):** El material estándar de fábrica definitivo. Ofrece un volumen excepcionalmente alto de vanadio y carburo de tungsteno, proporcionando una resistencia superior al desgaste al tiempo que mantiene la extrema dureza necesaria para cizallar gruesas bandas de acero sin microastillarse.\n\n**A8 modificado:** Ofrece un excelente equilibrio entre rendimiento y rentabilidad, proporcionando una enorme resistencia al impacto para operaciones centradas en minimizar los costes iniciales de utillaje.\n\n## La regla de tolerancia de las dos milésimas (0,05 mm)\n\nLa diferencia entre una trituradora de neumáticos eficiente y una máquina que se atasca constantemente radica en la holgura de corte. Todas nuestras cuchillas para neumáticos, independientemente del material, se rectifican con tolerancias de grosor precisas: dos milésimas de pulgada (0,05 mm) para ser exactos.\n\nEsta precisión garantiza que los neumáticos elásticos y los alambres de acero se **cortan** limpiamente en lugar de **desgarrarse** y estirarse. Una acción de corte adecuada reduce drásticamente las fuerzas de tracción en los ejes del rotor, disminuye el consumo de energía eléctrica (amperios) y evita que los alambres de acero expuestos se enrollen alrededor del bloque del rotor.\n\n## Geometría de 3 garras y tamaño TDF\n\nLa geometría estándar de 3 garras (gancho) proporciona el ángulo de mordida óptimo para agarrar neumáticos enteros de turismos y camiones ligeros, tirando agresivamente de ellos hacia la cámara de corte. El grosor de la cuchilla (normalmente 2 pulgadas / 50 mm) determina directamente el tamaño de las virutas de combustible derivado de neumáticos (TDF), garantizando un producto final consistente y de alta calidad adecuado para hornos de cemento o para la liberación de alambre.",
+      "Cortadoras trituradoras de neumáticos de repuesto para cizallas rotativas primarias. Opciones modificadas A8 y 42CrMo , con perfiles de gancho personalizados y orificios de eje según el dibujo.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Granutech-Saturn Systems",
-      "UNTHA",
-      "WEIMA",
-      "Eldan Recycling",
-      "Lindner",
-      "Eco Green Equipment",
-      "American Pulverizer",
-      "Shred-Tech",
-    ],
     specs: [
       {
         label: "Material",
-        value: "Cru-Wear (PGK), Modified A8, 42CrMo",
+        value: "Cru-Wear (PGK), A8 modificado, 42CrMo",
       },
       {
-        label: "Machining Tol.",
-        value: "Strictly ±0.05 mm (0.002 inches)",
+        label: "Tol. de mecanizado.",
+        value: "Estrictamente ±0,05 mm (0,002 pulgadas)",
       },
       {
-        label: "Standard Geometry",
-        value: "3-Claw Rotary (Custom hook counts available)",
+        label: "Geometría de las garras",
+        value: "1, 3 o 5 garras, según la configuración indicada",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (Optimized for Wire Impact)",
+        label: "Dureza",
+        value: "HRC 54–58 (optimizado para impacto de cables)",
       },
       {
-        label: "Application",
-        value: "Whole Tires, TDF Chips, OTR Tires",
+        label: "Aplicación",
+        value: "Neumáticos enteros, chips TDF, neumáticos OTR",
       },
       {
-        label: "OEM Fitment",
-        value: "Barclay, CM, SSI, Untha, Granutech-Saturn",
+        label: "Compatibilidad con fabricantes de equipos originales (OEM)",
+        value: "Barclay , CM , SSI , Untha , Granutech-Saturn",
       },
     ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "MATERIALES",
-        title: "Cru-Wear (PGK) y A8 modificado",
-        description:
-          "Utilizando aleaciones premium de calidad OEM. Cru-Wear proporciona la máxima resistencia y durabilidad para líneas de gran volumen, mientras que Modified A8 ofrece el mejor equilibrio entre coste y rendimiento.",
-      },
-      {
-        id: "precise-cutting",
-        tag: "EFICIENCIA",
-        title: "Cortar, no rasgar",
-        description:
-          "Rectificado de precisión a ±0,05 mm. Esto garantiza una verdadera acción de corte tipo tijera, evitando la extracción del hilo, reduciendo el desgaste de la máquina y disminuyendo drásticamente el consumo de energía.",
-      },
-      {
-        id: "consistent-tdf",
-        tag: "CALIDAD DE LA SALIDA",
-        title: "Fichas TDF consistentes",
-        description:
-          "El grosor exacto de las cuchillas (por ejemplo, el estándar de 2 pulgadas) combinado con el cizallamiento de separación cero produce virutas de combustible derivado de neumáticos (TDF) uniformes y de alta calidad con un mínimo de alambre expuesto.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "multi-shaft-blades-metal",
     ],
     dimensionLabels: {
       col0: "Plataforma OEM",
@@ -3681,156 +4871,468 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Barclay Standard",
+        itemNo: "SR002301",
+        spec: "Estándar Barclay",
         od: 'Φ 450 mm (17.7")',
         thickness: '50.8 mm (2.0")',
-        bore: "Hex / Splined",
-        hooks: "3 Claws",
+        bore: "Hexagonal / Estriado",
+        hooks: "3 garras",
       },
       {
-        spec: "CM Primary",
+        itemNo: "SR002302",
+        spec: "CM Primaria",
         od: 'Φ 500 mm (19.6")',
         thickness: '50.8 mm (2.0")',
-        bore: "Heavy Splined",
-        hooks: "3 Claws",
+        bore: "Con estrías pesadas",
+        hooks: "3 garras",
       },
       {
+        itemNo: "SR002303",
         spec: "SSI / Untha",
         od: "Φ 400–600 mm",
         thickness: "25–75 mm",
-        bore: "Hex / Octagon",
-        hooks: "1 / 3 / 5 Claws",
+        bore: "Hexágono/Octágono",
+        hooks: "1 / 3 / 5 Garras",
       },
       {
-        spec: "OTR Shredder",
+        itemNo: "SR002304",
+        spec: "Trituradora OTR",
         od: "Φ 800+ mm",
         thickness: "100+ mm",
-        bore: "Heavy Keyed",
-        hooks: "1 / 3 Claws",
+        bore: "Llave pesada",
+        hooks: "1/3 garras",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 250,
       highPrice: 2500,
     },
+    components: [
+      {
+        id: "tire-shredder-blades-advantage-1",
+        tag: "Configuraciones de acero para alimentación de neumáticos reforzados",
+        title:
+          "Configuraciones de acero para alimentación de neumáticos reforzados",
+        description:
+          "Las opciones modificadas A8 y 42CrMo admiten pedidos de reemplazo para cortadoras trituradoras de neumáticos, con el material especificado en torno al diseño de cuchilla existente y las condiciones de desgaste o impacto en servicio.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-2",
+        tag: "Cortadores de una, tres y cinco garras",
+        title: "Cortadores de una, tres y cinco garras",
+        description:
+          "Las configuraciones de cortadoras de neumáticos enumeradas utilizan una, tres o cinco garras. Sureay fabrica el perfil de garra y el orificio hexagonal, octogonal, estriado o enchavetado necesarios para adaptarse a la posición de reemplazo en su trituradora primaria.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-3",
+        tag: "Cortadores individuales y juegos de ejes",
+        title: "Cortadores individuales y juegos de ejes",
+        description:
+          "Las configuraciones de cortadores individuales y los juegos que cubren múltiples posiciones de eje se pueden cotizar juntos, con cortadores completos e insertos reemplazables identificados por separado para el cambio planificado.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "¿Por qué debería sustituir el acero para herramientas D2 estándar por Cru-Wear (PGK)?",
+            "¿En qué etapa de reciclaje se utilizan estas cuchillas trituradoras de neumáticos?",
           answer:
-            "Los neumáticos contienen alambres de talón de alta resistencia que actúan como cargas de impacto extremas. El D2 estándar es muy resistente al desgaste pero quebradizo; el borde se astilla cuando golpea el alambre del talón. Cru-Wear (PGK) está diseñado con una estructura de carburo diferente, haciéndolo significativamente más duro y más duradero que el D2, absorbiendo el impacto sin fracturarse mientras mantiene una excelente retención del filo.",
+            "Estas cuchillas trituradoras de neumáticos, también llamadas cuchillas trituradoras de neumáticos, son cortadoras montadas en eje para equipos de cizalla rotativa primaria. Los raspadores y granuladores de caucho posteriores utilizan sus propios dispositivos de corte. Primero especifique la máquina y la etapa, luego identifique si el reemplazo requerido es una cortadora completa o un inserto instalado en un cuerpo existente.",
         },
         {
           question:
-            "¿Cómo afecta la tolerancia de las cuchillas al consumo de energía de mi trituradora?",
+            "¿El espesor del cortador determina el tamaño final de las virutas del neumático?",
           answer:
-            'Si la tolerancia de grosor de las cuchillas giratorias varía en más de 0,05 mm (0,002"), se forma un hueco entre las cuchillas contrarrotantes. En lugar de cizallar el neumático elástico, la máquina intenta estirarlo y desgarrarlo. Esta acción de tracción requiere grandes cantidades de par, lo que aumenta el consumo de amperios del motor y desperdicia energía. Las tolerancias de precisión garantizan un corte limpio y de baja fricción.',
+            "No. El espesor del cortador influye en una dimensión del corte primario. La geometría del gancho, la disposición de las cuchillas y cualquier etapa de dimensionamiento posterior también afectan el tamaño final de las astillas de neumático. Mantenga el grosor del cortador existente y el tamaño de chip TDF objetivo como requisitos separados.",
         },
         {
           question:
-            "¿Cómo beneficia el diseño de 3 garras al procesado de neumáticos enteros?",
+            "¿Cómo debería afectar el refuerzo de acero a la selección del cortador?",
           answer:
-            "Una geometría de 3 garras proporciona el ángulo de mordida y la separación ideales. Si hay demasiadas garras (por ejemplo, 8 ó 10), el neumático rebotará en la parte superior del rotor porque los huecos de los ganchos son demasiado pequeños para agarrar la gruesa goma. 3 garras proporcionan una abertura masiva que se engancha en la cavidad del neumático y tira de todo el neumático hacia abajo en la cámara de corte.",
+            "Los cordones de acero y las secciones de talón añaden cargas locales al corte del cuerpo de caucho. Compare el material original del cortador, el soporte del gancho y el patrón de desgaste actual cuando evalúe un reemplazo. El desgaste gradual y los ganchos astillados exigen diferentes equilibrios entre resistencia al desgaste y tenacidad, por lo tanto, mantenga la descripción del avance específica para los neumáticos que se procesan.",
+        },
+        {
+          question:
+            "¿Qué puede causar un desgaste rápido o ganchos astillados en las cortadoras de neumáticos?",
+          answer:
+            "El contacto abrasivo puede desgastar gradualmente las caras de corte, mientras que el refuerzo o el material extraño pueden crear cargas concentradas en los ganchos. El estado de la pila también importa cuando aparecen daños en posiciones particulares. Registre las caras afectadas y compárelas con las fresas adyacentes antes de decidir si el reemplazo necesita un material, perfil o corrección de ensamblaje diferente.",
+        },
+        {
+          question:
+            "¿Se puede cambiar el número de ganchos o la geometría del orificio en una hoja de neumático personalizada?",
+          answer:
+            "Sí. Sureay puede hacer un recuento de anzuelos revisado o un orificio según el dibujo. Muestre cómo se asienta el cortador revisado en el eje y cómo sus ganchos se alinean con los cortadores opuestos. Una referencia de revisión distingue este cambio de un reemplazo similar.",
+        },
+        {
+          question:
+            "¿Se puede reemplazar un cortador desgastado sin pedir un juego completo?",
+          answer:
+            "Sí. Se puede suministrar un solo cortador cuando se conocen las piezas retenidas y la geometría de acoplamiento. Verifique los cortadores adyacentes, los anchos de los espaciadores y la orientación instalada antes de definir ese reemplazo. Para un cambio completo, enumere cada posición por separado para que las diferencias entre cortadores completos, insertos y piezas específicas del eje queden claras en el pedido.",
+        },
+        {
+          question:
+            "¿Qué necesitas para cotizar cuchillas trituradoras de llantas de repuesto?",
+          answer:
+            "Envíe el modelo de la trituradora primaria, plano o número de pieza de la cortadora, alimentación de neumáticos y cantidades. Especifique cortadores completos o insertos reemplazables. Para cada posición, incluya el diámetro exterior, el espesor, la forma del gancho y el orificio, junto con la disposición del espaciador si el pedido cubre un juego de ejes.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de trituradora principal, la alimentación de neumáticos, el tamaño de astilla objetivo y las dimensiones del cortador y del espaciador.",
+    compatibleMachines: ["Barclay", "CM", "SSI", "Untha", "Granutech-Saturn"],
+    detailLayout: {
+      sizeRange: "Ø400–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "¿Pueden suministrar separadores y dedos de limpieza (placas rascadoras) a juego con las cuchillas?",
-          answer:
-            "Sí. Un rotor de trituración de neumáticos completo requiere cuchillas, espaciadores y dedos de limpieza emparejados. Fabricamos el conjunto completo con las mismas estrictas tolerancias para garantizar un ensamblaje sin holguras en toda la longitud del eje del rotor.",
+          label: "Material",
+          value: "Cru-Wear (PGK), A8 modificado, 42CrMo",
         },
         {
-          question: "¿Tiene los planos de las trituradoras Barclay o CM?",
-          answer:
-            "Mantenemos una amplia base de datos de planos de cuchillas OEM para las principales plataformas de trituración de neumáticos. Si nos proporciona el modelo de su máquina o un plano de confirmación básico, podremos fabricar recambios de sustitución directa exactos.",
+          label: "Aplicación",
+          value: "Neumáticos enteros, chips TDF, neumáticos OTR",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Ø400–800+ mm",
+        },
+        {
+          label: "Material",
+          value: "Cru-Wear (PGK), A8 modificado, 42CrMo",
+        },
+        {
+          label: "Tol. de mecanizado.",
+          value: "Estrictamente ±0,05 mm (0,002 pulgadas)",
+        },
+        {
+          label: "Geometría de las garras",
+          value: "1, 3 o 5 garras, según la configuración indicada",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 54–58 (optimizado para impacto de cables)",
+        },
+        {
+          label: "Aplicación",
+          value: "Neumáticos enteros, chips TDF, neumáticos OTR",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Incluya el modelo de trituradora principal, la alimentación de neumáticos, el tamaño de astilla objetivo y las dimensiones del cortador y del espaciador.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas cortadoras no tejidas de repuesto con perfiles personalizados, dimensiones de montaje y opciones de recubrimiento para su línea de conversión. Comparta su dibujo o muestra y aplicación web con Sureay para obtener una cotización que cubra la configuración de la hoja y la documentación que necesita.",
     id: "nonwoven-slitter-knives",
-    name: "Cuchillas cortadoras de tela no tejida",
+    name: "Cuchillas de corte longitudinal para no tejidos",
     fullName:
-      "Cuchillas de corte circular M2 HSS para telas no tejidas Spunbond, Meltblown y SMS",
+      "Cuchillas de corte longitudinal para no tejidos spunbond, meltblown y SMS",
+    seoTitle: "Cuchillas cortadoras no tejidas | PP Spunbond & SMS",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Cuchillas cortadoras",
+    categoryDisplay: "Cuchillas de corte longitudinal",
     image:
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Grado médico",
     badgeColor: "teal",
     gallery: [
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-02.webp",
     ],
+    galleryAlts: [
+      "Cuchillas cortadoras circulares no tejidas y anillos de yunque negros",
+      "Primer plano de un bisel de hoja cortadora circular",
+      "Cuchillas cortadoras circulares y anillos partidos vistos desde arriba",
+    ],
+    detailLayout: {
+      heroTitle:
+        "Cuchillas de corte longitudinal para no tejidos spunbond, meltblown y SMS",
+      sizeRange: "OD 60–300 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "M2 HSS , D2 , carburo de tungsteno , 52100",
+        },
+        {
+          label: "Se adapta",
+          value:
+            "Porta-cizallas Pneumatic (tipo 80/90/100/110) y cortadoras rebobinadoras de hasta",
+          emphasis: "800 m/min",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "OD 60–300 mm",
+        },
+        {
+          label: "Materiales",
+          value: "M2 HSS , D2 , carburo de tungsteno , 52100",
+        },
+        {
+          label: "Dureza",
+          value: "M2 : 62–64 HRC ; D2 : 60–62 HRC ; carburo: 89–92 HRA",
+        },
+        {
+          label: "Tolerancia",
+          value: "Espesor ±0,002 mm",
+        },
+        {
+          label: "Interfaz",
+          value: "Orificio H7 , bloqueo por tornillo prisionero",
+        },
+        {
+          label: "Geometría",
+          value: "Bisel 25°–45°",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value: "Recubrimiento conductor de PTFE, TiN, DLC o ESD",
+        },
+        {
+          label: "Ángulo de inclinación",
+          value: "Inclinación positiva de 15° a 20°",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Ra ≤0.4 µm",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Spunbond PP, Meltblown, SMS/SMMS, Hidroentrelazado, Geotextil",
+        },
+      ],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Cuchillas cortadoras superiores",
+          title:
+            "Cuchillas cortadoras superiores (corte cizallado: abombado y plano)",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Perfil",
+            "Opciones de materiales",
+            "Ajuste del soporte",
+          ],
+          rows: [
+            [
+              "SR001101",
+              "76.2 × 17.0 × 1.00 mm",
+              "Cóncavo",
+              "M2 HSS / D2",
+              "Tipo 80",
+            ],
+            [
+              "SR001102",
+              "90.0 × 22.0 × 1.20 mm",
+              "Cóncavo",
+              "M2 HSS / Carburo",
+              "Tipo 90",
+            ],
+            [
+              "SR001103",
+              "100.0 × 40.0 × 1.20 mm",
+              "Cóncavo",
+              "M2 HSS / ASP-23",
+              "Dienes / Cota 100",
+            ],
+            [
+              "SR001104",
+              "105.0 × 40.0 × 1.50 mm",
+              "Cóncavo",
+              "M2 HSS / D2",
+              "Tipo 105 / 110",
+            ],
+            [
+              "SR001105",
+              "130.0 × 60.0 × 1.50 mm",
+              "Cóncavo",
+              "M2 HSS / D2",
+              "Dienes PSG",
+            ],
+            [
+              "SR001106",
+              "150.0 × 70.0 × 2.00 mm",
+              "Plato / Plano",
+              "D2 / M2 HSS",
+              "A.Celli",
+            ],
+            [
+              "SR001107",
+              "200.0 × 80.0 × 3.00 mm",
+              "Departamento",
+              "D2 / Cr12MoV",
+              "—",
+            ],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Anillos inferiores y cortadores trituradores",
+          title: "Anillos cortadores inferiores y cortadores trituradores",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de Cuchilla",
+            "Opciones de materiales",
+            "Especificación clave",
+          ],
+          rows: [
+            [
+              "SR001108",
+              "80.0 × 50.0 × 15.0 mm",
+              "Anillo de yunque inferior",
+              "D2 / 52100",
+              "Orificio H7 , tornillo de fijación",
+            ],
+            [
+              "SR001109",
+              "100.0 × 60.0 × 20.0 mm",
+              "Anillo de doble filo",
+              "D2 / M2 HSS",
+              "Ejes de aire/sólidos",
+            ],
+            [
+              "SR001110",
+              "126.0 × 76.2 × 50.0 mm",
+              "Manga multiranura",
+              "D2 / Cr12MoV",
+              "Ancho de ranura ±0,01 mm",
+            ],
+            [
+              "SR001111",
+              "76.2 × 19.05 × 4.76 mm",
+              "Cortador de puntuación/aplastamiento",
+              "52100 / M2 HSS",
+              "R0.05 – R0.1 mm Radio de la punta",
+            ],
+            [
+              "SR001112",
+              "100.0 × 25.4 × 6.00 mm",
+              "Cortadora trituradora de servicio pesado",
+              "52100 / D2",
+              "Para fieltro grueso y guata",
+            ],
+          ],
+        },
+        {
+          id: "additional-nonwoven-knives",
+          tabLabel: "Tamaños adicionales de cuchillos no tejidos",
+          title: "Tamaños adicionales de cuchillos no tejidos",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de Cuchilla",
+          ],
+          rows: [
+            ["SR001834", "75 × 32 × 1.0 mm", "Cuchillo cortador no tejido"],
+            ["SR001835", "100 × 40 × 1.0 mm", "Cuchillo cortador no tejido"],
+            ["SR001836", "100 × 50 × 1.5 mm", "Cuchillo cortador no tejido"],
+            ["SR001837", "120 × 50 × 1.0 mm", "Cuchillo cortador no tejido"],
+            ["SR001838", "120 × 60 × 1.5 mm", "Cuchillo cortador no tejido"],
+            ["SR001839", "150 × 75 × 2.0 mm", "Cuchillo cortador no tejido"],
+          ],
+        },
+      ],
+    },
     description:
-      "Cuchillas cortadoras circulares M2 HSS y D2 para telas no tejidas de PP spunbond, meltblown, SMS y SMMS. La geometría especial del ángulo de rastrillo evita el deshilachado de las fibras y la formación de bolitas en materiales de estructura suelta. Se utilizan en líneas de corte de productos higiénicos, médicos, de filtración y geotextiles.",
+      "Cuchillas cortadoras de repuesto para telas no tejidas spunbond, meltblown y SMS. Opciones M2 HSS , D2 o carburo, con perfiles personalizados y revestimientos específicos para aplicaciones.",
     fullDescription:
       "El corte longitudinal de telas no tejidas presenta un desafío fundamentalmente diferente al de la conversión de películas o papel: el material no tiene dirección de grano, baja resistencia a la tracción en la dirección transversal de la máquina y una estructura fibrosa suelta que puede deshilacharse, distorsionarse o formar bolitas en el borde de corte si la geometría de la cuchilla no se adapta a la construcción del tejido y a la tensión de la línea.\n\nLas cuchillas de las cortadoras de no tejidos Sureay están fabricadas en acero rápido M2 con una geometría de ángulo de rastrillo especial desarrollada específicamente para materiales spunbond, meltblown e hidroentrelazados de estructura suelta. El ángulo de rastrillo positivo optimizado corta los haces de fibras limpiamente en lugar de empujarlos hacia un lado, eliminando los bordes deshilachados y las fibras sueltas que provocan rechazos de calidad en las líneas de conversión de pañales para bebés, higiene femenina y paños quirúrgicos.\n\n## Tipos de telas no tejidas\n\n**PP hilado (estructuras S, SS, SSS):** El sustrato no tejido más común. Disponible en 8-120 GSM. Estándar M2 HSS en Ra ≤ 0,4μm de acabado superficial, rastrillo positivo 15°-20°. Utilizado en la conversión de productos absorbentes higiénicos, corte de rollos geotextiles y película de mantillo agrícola.\n\n**Capas de fibra ultrafina (1-5μm de diámetro) utilizadas como núcleo de filtración en mascarillas quirúrgicas y respiradores N95/FFP2. Extremadamente frágil y sensible a la carga de tracción lateral. Requiere una velocidad de corte reducida (60-100 m/min), un cuerpo de cuchilla de baja masa para minimizar la vibración y revestimientos de descarga electrostática (ESD) para evitar la atracción de fibras a la cara de la cuchilla.\n\n**Tejidos médicos SMS / SMMS:** Compuesto hilado-soplado-fundido utilizado en batas quirúrgicas, paños y envolturas de esterilización. Los SMS de calidad médica requieren equipos validados: suministramos certificados de materiales e informes dimensionales trazables a su número de lote para el cumplimiento de la normativa.\n\n**Tejidos no tejidos hidroenmarañados / wetlaid:** Tejido de mayor gramaje (50-200 GSM) con una estructura más coherente. Sus características de corte son similares a las de la espuma o el papel; las cuchillas de acero D2 o 52100 estándar funcionan bien en estos sustratos.\n\n## Opción de revestimiento ESD\n\nPara el corte de materiales de filtración meltblown y electrospun, se dispone de un tratamiento superficial conductor ESD (descarga electrostática) que evita la acumulación de carga estática en la cara de la cuchilla. La acumulación de electricidad estática hace que las fibras ligeras (especialmente las de PP meltblown de <15 GSM) se adhieran a la cuchilla y se transfieran en forma de contaminación al borde del rodillo que se vuelve a cortar.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
-    compatibleMachines: [
-      "Parkinson Spencer Rees",
-      "Atlas Converting",
-      "Euromac",
-      "ACCO Brands",
-      "Erhardt+Leimer",
-    ],
+    compatibleMachines: ["Tidland", "Pneumatic", "Dienes", "Mario Cotta"],
     specs: [
       {
-        label: "Material",
-        value:
-          "M2 HSS (standard) / D2 (heavy nonwoven) / 52100 (hydroentangled)",
+        label: "Tamaños",
+        value: "OD 60–300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 62–64 (M2) | HRC 60–62 (D2)",
+        label: "Materiales",
+        value: "M2 HSS , D2 , carburo de tungsteno , 52100",
       },
       {
-        label: "Rake Angle",
-        value: "15°–20° positive rake (nonwoven-optimised geometry)",
+        label: "Dureza",
+        value: "M2 : 62–64 HRC ; D2 : 60–62 HRC ; carburo: 89–92 HRA",
       },
       {
-        label: "Surface Finish",
-        value: "Ra ≤ 0.4μm — reduces fibre adhesion and slub formation",
+        label: "Tolerancia",
+        value: "Espesor ±0,002 mm",
       },
       {
-        label: "Options",
-        value: "ESD conductive coating (meltblown / filtration media)",
+        label: "Interfaz",
+        value: "Orificio H7 , bloqueo por tornillo prisionero",
       },
       {
-        label: "Application",
-        value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile",
+        label: "Geometría",
+        value: "Bisel 25°–45°",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value: "Recubrimiento conductor de PTFE, TiN, DLC o ESD",
+      },
+      {
+        label: "Ángulo de inclinación",
+        value: "Inclinación positiva de 15° a 20°",
+      },
+      {
+        label: "Acabado superficial",
+        value: "Ra ≤0.4 µm",
+      },
+      {
+        label: "Aplicación",
+        value: "Spunbond PP, Meltblown, SMS/SMMS, Hidroentrelazado, Geotextil",
       },
     ],
     components: [
       {
         id: "rake-geometry",
         tag: "DISEÑO DE BORDES",
-        title: "Ángulo de rastrillo optimizado para no tejidos",
+        title: "Opciones de materiales para corte de no tejidos",
         description:
-          "Las geometrías estándar de las cuchillas de las cortadoras diseñadas para papel y film plástico utilizan un ángulo de corte positivo o neutro de 5°-10°. En el caso de los no tejidos de estructura suelta, esta geometría empuja las fibras lateralmente antes del cizallamiento, provocando el borde deshilachado que se registra como defecto de calidad en la inspección de productos higiénicos. Nuestro rastrillo positivo de 15°-20° cizalla los haces de fibras en una sola acción progresiva, produciendo un borde de corte limpio y ajustado a velocidades de línea de hasta 400 m/min.",
+          "Las opciones M2 HSS , D2 , acero para rodamientos y carburo admiten pedidos de reemplazo para diferentes redes no tejidas. Especifique el material alrededor de la disposición de cuchillas existente y el desgaste observado en los bordes.",
       },
       {
         id: "esd-coating",
         tag: "TRATAMIENTO SUPERFICIAL",
-        title: "Revestimiento conductor ESD",
+        title:
+          "Perfiles de borde definidos y tratamientos superficiales opcionales",
         description:
-          "La carga electrostática se genera cuando la tela no tejida ligera de PP pasa sobre superficies metálicas a alta velocidad. En las capas fundidas (<15 GSM), esta carga hace que las fibras se adhieran a la cara de la cuchilla y se transfieran como contaminación al borde del rodillo reentelado. Nuestro recubrimiento conductor ESD disipa la carga de la cara de la cuchilla de forma continua, eliminando la atracción de fibras sin necesidad de reducir la velocidad del proceso.",
+          "Los perfiles de hoja y los recubrimientos conductores opcionales de PTFE, TiN, DLC o ESD se pueden especificar por separado, lo que permite que su pedido distinga la geometría de corte requerida del tratamiento de superficie seleccionado.",
       },
       {
         id: "medical-traceability",
         tag: "CUMPLIMIENTO",
-        title: "Trazabilidad de lotes médicos",
+        title: "Interfaces personalizadas para portacuchillas existentes",
         description:
-          "Para las líneas de transformación que suministran a fabricantes de paños quirúrgicos, batas y envolturas de esterilización, ofrecemos una trazabilidad completa de los lotes: Certificados de acería M2, registros de pruebas de dureza e informes dimensionales CMM referenciados al número de lote de su orden de compra. La documentación está formateada para su inclusión en el expediente de cualificación del proveedor.",
+          "Los orificios personalizados, las dimensiones de montaje y los perfiles de corte le permiten obtener cuchillas de repuesto para sus soportes existentes a partir de un dibujo o muestra, incluido el ajuste del eje y la disposición de bloqueo requeridos.",
       },
     ],
     dimensionLabels: {
@@ -3875,6 +5377,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "rotary-slitter-knives",
       "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
     ],
     offers: {
       lowPrice: 20,
@@ -3884,625 +5387,636 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Qué ángulo de rastrillo debo especificar para el polipropileno spunbond a 200 m/min?",
+            "¿Qué cuchilla de repuesto se adapta a mi soporte cortador de tejido no tejido?",
           answer:
-            "Para la hilatura de PP a 200 m/min en pesos base 15-80 GSM, especifique 15° de inclinación positiva en el bisel de corte. Esta geometría corta las fibras de polipropileno limpiamente en el punto de contacto sin el desplazamiento lateral que causa el deshilachado. Para pesos base más pesados (80-150 GSM SSS o SMMS), un rastrillo positivo de 20° con una anchura de bisel ligeramente mayor proporciona una mejor estabilidad a una velocidad de línea reducida (150 m/min).",
+            "Identifique si la estación utiliza corte por cizallamiento o por aplastamiento, luego especifique el soporte, el componente acoplado y las dimensiones de la cuchilla. Incluya la construcción del alma y el peso base. Las cuchillas de corte funcionan con un filo coincidente; Los cortadores trituradores presionan contra una superficie de soporte. Para rollos de corte transversal ya enrollados, consulte [cuchillas de sierra para rollos no tejidas](/products/nonwoven-log-saw-blades) .",
         },
         {
           question:
-            "Mi corte por soplado en fusión produce una transferencia visible de fibras en la cara de la cuchilla. ¿Cuál es la causa?",
+            "¿Cómo se debe elegir el material del cuchillo cuando los bordes no tejidos se deshilachan o aumentan el desgaste?",
           answer:
-            "La transferencia de fibras en el tejido meltblown (especialmente en capas <10 GSM) está causada por la acumulación de carga electrostática en la cara de la hoja, no por la geometría del borde. Las fibras de PP meltblown de 1-5μm de diámetro son extremadamente susceptibles a la atracción estática. Especifique la opción de revestimiento conductor ESD en su próximo pedido y asegúrese de que el bastidor de la cortadora está correctamente conectado a tierra. Esto suele eliminar la contaminación visible de la cara de la cuchilla en un solo turno de producción.",
+            "Compare la condición del borde usado con la construcción del alma y la estabilidad del par de corte. El desgaste gradual y el desconchado exigen diferentes consideraciones sobre el material. Registre el material actual de la cuchilla y las condiciones de producción cuando analice un reemplazo, de modo que se pueda evaluar un cambio de material junto con la geometría existente y la disposición de soporte.",
         },
-      ],
-      company: [
         {
           question:
-            "¿Puede Sureay suministrar cuchillas cortadoras de telas no tejidas con un certificado de conformidad para nuestra auditoría de proveedores de productos sanitarios?",
+            "¿Qué puede causar que las fibras se deshilachen o se suelten durante el corte del no tejido?",
           answer:
-            "Sí. Emitimos un Certificado de Conformidad (CoC) con cada lote haciendo referencia al número de orden de compra, grado de acero (M2 AISI M2 / DIN 1.3343), rango de dureza (HRC 62-64) y resultados de la verificación dimensional. Para una cualificación completa como proveedor de dispositivos médicos, también podemos proporcionar el certificado de la acería y el registro de lotes tratamiento térmico previa solicitud.",
+            "El desgaste de los bordes, la geometría inadecuada, el soporte inestable y los ajustes de corte pueden contribuir a que las fibras se suelten. Inspeccione el borde cortado y ambos componentes de trabajo en condiciones normales de producción. La construcción de la red es importante junto con la velocidad y el peso base, así que compare estos detalles antes de cambiar el perfil de la hoja o tratar un ángulo de inclinación como adecuado para cada no tejido.",
+        },
+        {
+          question:
+            "¿La acumulación de fibra siempre requiere un revestimiento antiestático?",
+          answer:
+            "No. Se deben verificar los residuos, el estado de la hoja, el manejo de la banda y la configuración de corte antes de atribuir la acumulación de fibra a la estática. Un recubrimiento conductor soluciona un problema diferente al de un borde dañado o un soporte de corte inestable. Describa la acumulación y la configuración actual de la cuchilla cuando hable sobre un tratamiento de superficie, de modo que la elección del recubrimiento aborde la condición observada.",
+        },
+        {
+          question:
+            "¿Cómo se deben especificar los perfiles y recubrimientos personalizados para cuchillos no tejidos?",
+          answer:
+            "Enviar plano o muestra definiendo agujero, dimensiones de montaje y perfil de corte. Especifique el material de la hoja y el revestimiento por separado, junto con la construcción no tejida y la estación de corte prevista. Mantener la geometría y el tratamiento de la superficie distintos hace que sea más fácil comparar un reemplazo con el cuchillo existente e identificar exactamente qué cambios en el pedido.",
+        },
+        {
+          question:
+            "¿Qué requisitos de material y dimensiones son importantes para los cuchillos que se adaptan a la higiene?",
+          answer:
+            "Defina la identificación del material requerido, la dureza y los controles dimensionales en la especificación de compra. Incluya las dimensiones relevantes para el soporte y el componente correspondiente, y acuerde cualquier requisito de documentación antes de realizar el pedido. Las referencias de lotes y órdenes de compra pueden luego conectar la configuración de la cuchilla con la información de inspección solicitada y respaldar su propio proceso de calificación de proveedores.",
+        },
+        {
+          question:
+            "¿Cuándo se deben afilar o reemplazar las cuchillas cortadoras no tejidas?",
+          answer:
+            "El desgaste persistente o el polvo junto a un borde desgastado es un motivo para evaluar el afilado, después de comprobar la configuración de corte. El reafilado sólo es adecuado cuando se pueden restaurar el perfil y las dimensiones de trabajo requeridas. En las estaciones de corte, mantenga la superposición especificada con la cuchilla inferior; evaluar los perfiles de aplastamiento comparándolos con su propio dibujo. Reemplace las cuchillas cuando los daños o las dimensiones restantes impidan una configuración de corte utilizable.",
         },
       ],
+      company: [],
     },
   },
   {
     id: "bottom-grooved-anvil-knives",
-    name: "Cuchillos de yunque acanalado inferior",
+    name: "Contracuchillas inferiores ranuradas",
     fullName:
-      "Cuchillas de yunque ranurado inferior para corte longitudinal con cizalla - Conversión de film, papel y láminas metálicas",
+      "Contracuchillas inferiores ranuradas para corte longitudinal por cizallamiento",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Cuchillas cortadoras",
-    image:
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "Pares adaptados OEM",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
-    ],
+    categoryDisplay: "Contracuchillas inferiores ranuradas",
+    image: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Cuchillas de yunque con ranura inferior rectificadas con precisión para el corte longitudinal de film, papel, lámina y cinta. Adaptadas a los sistemas de eje de cuchillas superiores Tidland, Kampf, Atlas, Goebel y BHS. Perfiles multiranura en D2, M2 HSS y metal duro. Se suministran como pares de cizallas verificadas o como sustitutos independientes del yunque inferior.",
-    fullDescription:
-      "En el corte longitudinal por cizalladura, la cuchilla inferior ranurada del yunque es la mitad inferior fija del par de tijeras y, sin embargo, suele estar poco especificada. Cuando la geometría de la ranura del yunque no coincide con el ángulo del plato de la cuchilla superior, o cuando la tolerancia del orificio del yunque se desvía del diseño del árbol, el resultado es una holgura de cizalladura incontrolada, rebabas en el filo y desgaste prematuro en ambas cuchillas simultáneamente.\n\nLas cuchillas de yunque ranurado inferior Sureay se fabrican con la misma tolerancia de espesor de ±0,002 mm y la misma especificación de desviación T.I.R. de ≤0,02 mm que nuestras cuchillas de corte superior. Cada yunque se rectifica según el perfil de ranura de su plataforma OEM, ya sea un yunque Tidland de ranura simple, un yunque Kampf de ranura doble o un yunque Goebel / BHS de cuerpo ancho, y se verifica contra la cuchilla superior de acoplamiento antes del envío.\n\n## Por qué las cuchillas de yunque inferior necesitan atención individual\n\n**El perfil de la ranura determina la holgura:** La anchura y profundidad de la ranura en la cuchilla del yunque controla directamente la holgura de trabajo entre el par de cuchillas superior e inferior. Una ranura desgastada o incorrectamente perfilada aumenta la holgura efectiva, produciendo un filo de corte irregular incluso cuando la cuchilla superior es nueva. Rectificamos cada ranura del yunque según las especificaciones del fabricante (anchura de la ranura ±0,01 mm) para restablecer la holgura diseñada en fábrica.\n\n**Diferente tasa de desgaste, diferente ciclo de sustitución:** Las cuchillas de yunque inferiores funcionan bajo carga de compresión en lugar de la carga de cizallamiento dominante en la cuchilla superior. Esto significa que el yunque suele durar entre 3 y 5 veces más que la cuchilla superior, pero cuando se desgasta, la cara de la ranura se redondea gradualmente, provocando un deterioro progresivo de la calidad de corte que es fácil pasar por alto hasta que aumentan los índices de rechazo. Pedir yunques de repuesto independientemente de las cuchillas superiores evita la eliminación innecesaria de éstas.\n\n**La cuchilla del yunque se asienta en el eje inferior y debe funcionar correctamente. Una desviación del agujero de 0,02 mm induce el bamboleo de la cuchilla que se traduce directamente en una variación de la anchura de la hendidura en una pila de yunques de varias cuchillas. Todos los agujeros de los yunques Sureay están rectificados con tolerancia H6 y con un paralelismo de ≤0,003 mm.\n\n## Áreas de aplicación\n\n**Corte de film flexible y embalaje:** BOPP, BOPET, CPP, film estirable de PE, funda retráctil. Yunque estándar D2 o M2 HSS con perfil de ranura simple o doble. El PVD TiN opcional en la cara de la ranura prolonga la vida útil del contacto en líneas de film de alta velocidad de 400-600 m/min.\n\n**Transformación de papel y cartón:** Papel tisú, kraft y estucado. Para el corte por aplastamiento (cuchilla contra el rodillo del yunque), el yunque está fabricado con una geometría de ranuras múltiples que comprime y fractura las fibras de papel sin desgarrarlas. Acero D2 o 52100, HRC 58-62.\n\n**Corte de láminas metálicas:** Lámina catódica de aluminio, lámina anódica de cobre, banda de acero al silicio. La cuchilla de yunque para láminas metálicas debe resistir el desgaste adhesivo del sustrato metálico. Acero ASP23 PM o grado de carburo sólido adaptado a la aleación de la cuchilla superior; la tolerancia de la forma de la ranura se mantiene en ±0,005 mm.\n\n**Cinta y etiquetas sensibles a la presión:** Cinta de enmascarar, espuma de doble revestimiento, adhesivo de transferencia. La contaminación del adhesivo en la cara de la ranura es el principal modo de fallo. Las caras de las ranuras recubiertas de teflón o DLC reducen los intervalos de acumulación de adhesivo en un 60-80%.",
+      "Cuchillas de yunque ranuradas de repuesto y anillos cortantes para cortadoras de banda. Opciones de acero o carburo, con perfiles de ranura, orificios y disposiciones de bloqueo personalizados.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
+    compatibleMachinesIntro:
+      "Obtenga cuchillas de yunque ranuradas inferiores de repuesto adaptadas a su línea de corte, con perfiles de ranura, orificios y opciones de bloqueo personalizados. Envíenos su dibujo o muestra y Sureay lo ayudará a seleccionar el reemplazo adecuado y preparar una cotización.",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "Anillos ranurados DE 46–250 mm",
+      },
+      {
+        label: "Material",
+        value:
+          "52100, D2 , M2 HSS , PM HSS (incluido ASP23 ), construcción de carburo sólido o con punta de carburo",
+      },
+      {
+        label: "Aplicaciones",
+        value: "Corte de películas, papel, láminas y no tejidos",
+      },
+      {
+        label: "Mangas de afeitar",
+        value: "Ranura aliviada para despejar el filo de la navaja",
+      },
+      {
+        label: "Tolerancia del ancho de ranura",
+        value: "±0.01 mm",
+      },
+      {
+        label: "Planicidad de la cara",
+        value: "≤0.003 mm",
+      },
+      {
+        label: "Tolerancia del agujero",
+        value: "Orificio rectificado con acabado H6",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value: "TiN en la cara de la ranura, DLC o PTFE (Teflón)",
+      },
+      {
+        label: "Excentricidad",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Montaje",
+        value:
+          "Orificio liso (NN), bloqueo excéntrico (NG), bloqueo con tornillo de fijación (NS) o montaje con anillo partido/abrazadera",
+      },
+      {
+        label: "Espacio libre de corte",
+        value: "0,02–0,15 mm, según el sustrato y el par de cuchillas",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillos de yunque con ranuras inferiores | Anillos de repuesto",
+      sizeRange: "Anillos ranurados DE 46–250 mm",
+      heroAlt:
+        "Cuchillas de yunque con fondo ranurado y anillos de corte desmontables",
+      specificationImage: {
+        src: "/images/products/slitter-detail/bottom-grooved-anvil-knives-detail.webp",
+        alt: "Dos anillos inferiores que muestran la cara de rodadura empotrada y el hombro de corte.",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "ring",
+          tabLabel: "Anillos ranurados",
+          title: "Anillos ranurados",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Perfil o referencia",
+          ],
+          rows: [
+            ["SR001451", "46 × 25 × 5 mm", "Series dimensionales de DIENES"],
+            ["SR001452", "80 × 60 × 10 mm", "Anillo inferior ranurado"],
+            ["SR001453", "105 × 90 × 15 mm", "Anillo inferior ranurado"],
+            ["SR001454", "105 × 90 × 8 mm", "Referencia dimensional Kampf"],
+            ["SR001455", "105 × 90 × 17 mm", "Referencia dimensional Kampf"],
+          ],
+        },
+        {
+          id: "groove-profile-configurations",
+          tabLabel: "Configuraciones de perfil de ranura",
+          title: "Configuraciones de perfil de ranura",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Referencia de plataforma",
+            "Perfil de ranura",
+          ],
+          rows: [
+            [
+              "SR001840",
+              "70 × 25.4 × 8 / 10 mm",
+              "Tidland - Surco único",
+              "W: 1.2 × D: 2.0 / 60°",
+            ],
+            [
+              "SR001841",
+              "100 × 60 × 20 / 25 mm",
+              "Atlas — contracuchilla con 3 ranuras",
+              "W: 1.5 × D: 2.5 / 60°",
+            ],
+            [
+              "SR001842",
+              "80 × 30 × 10 mm",
+              "Mario Cotta - Surco único",
+              "W: 1.3 × D: 2.2 / 45°",
+            ],
+            [
+              "SR001843",
+              "130 × 80 × 12 mm",
+              "Dienes : ranura única",
+              "W: 1.5 × D: 3.0 / 60°",
+            ],
+            [
+              "SR001844",
+              "Por dibujo",
+              "Yunque personalizado/revestimiento duro",
+              "Especificaciones OEM; Ranura mecanizada CNC exacta",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Anillos ranurados DE 46–250 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2 , M2 HSS , PM HSS (incluido ASP23 ), construcción de carburo sólido o con punta de carburo",
+        },
+        {
+          label: "Aplicaciones",
+          value: "Corte de películas, papel, láminas y no tejidos",
+        },
+        {
+          label: "Mangas de afeitar",
+          value: "Ranura aliviada para despejar el filo de la navaja",
+        },
+        {
+          label: "Tolerancia del ancho de ranura",
+          value: "±0.01 mm",
+        },
+        {
+          label: "Planicidad de la cara",
+          value: "≤0.003 mm",
+        },
+        {
+          label: "Tolerancia del agujero",
+          value: "Orificio rectificado con acabado H6",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value: "TiN en la cara de la ranura, DLC o PTFE (Teflón)",
+        },
+        {
+          label: "Excentricidad",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Orificio liso (NN), bloqueo excéntrico (NG), bloqueo con tornillo de fijación (NS) o montaje con anillo partido/abrazadera",
+        },
+        {
+          label: "Espacio libre de corte",
+          value: "0,02–0,15 mm, según el sustrato y el par de cuchillas",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
+      "Mario Cotta",
       "Tidland",
       "Kampf",
-      "Atlas Converting",
       "Goebel",
-      "BHS",
-      "Agnati",
-      "Dusenbery",
-      "Euromac",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Groove Tolerance",
-        value: "Groove width ±0.01 mm | Face flatness ≤0.003 mm",
-      },
-      {
-        label: "Bore Tolerance",
-        value: "H6 finish-ground | T.I.R. ≤0.02 mm",
-      },
-      {
-        label: "Shear Clearance",
-        value: "Pre-verified to substrate spec (0.02–0.15 mm)",
-      },
-      {
-        label: "Coatings",
-        value: "TiN groove face, DLC, Teflon anti-adhesion (optional)",
-      },
-      {
-        label: "Applications",
-        value: "Film, Paper, Metal Foil, PSA Tape, Nonwovens",
-      },
+      "Atlas",
+      "Nishimura",
     ],
     components: [
       {
-        id: "groove-geometry-control",
-        tag: "RECTIFICADO DE PRECISIÓN",
-        title: "Geometría de ranura de perfil OEM",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Configuraciones de yunque de acero y carburo",
         description:
-          "La anchura y profundidad de la ranura de cada cuchilla de yunque se rectifica según las especificaciones de su plataforma OEM - ranura simple Tidland, ranura doble Kampf o cuerpo ancho Goebel - y se mantiene a ±0,01 mm. La geometría correcta de la ranura restablece la holgura de cizallamiento diseñada en fábrica y elimina el deterioro progresivo del borde de la hendidura causado por un perfil de yunque desgastado.",
+          "Las cuchillas de yunque ranuradas están disponibles en acero para herramientas, HSS , PM HSS , carburo sólido y construcciones con punta de carburo para pedidos de reemplazo y aplicaciones específicas.",
       },
       {
-        id: "bore-face-flatness",
-        tag: "PRECISIÓN DIMENSIONAL",
-        title: "H6 Planitud del agujero y de la cara lapeada",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Ranuras rectificadas, perforaciones y caras de ubicación",
         description:
-          "Todos los orificios del yunque están rectificados con la tolerancia H6 y con un paralelismo de ≤0,003 mm. Una desviación del orificio de 0,02 mm en el eje inferior induce un bamboleo de la cuchilla que se traduce directamente en una variación del ancho de corte en una pila de varias cuchillas. Nuestras tolerancias de agujero y cara se verifican en una MMC para cada lote.",
+          "Los anillos de repuesto rectificados con acabado se fabrican con el orificio, el perfil de la ranura y las caras de ubicación especificadas para su eje y cuchilla superior existentes.",
       },
       {
-        id: "anti-adhesion-groove-coating",
-        tag: "TRATAMIENTO SUPERFICIAL",
-        title: "Revestimientos antiadherentes para ranuras",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Perfiles de ranura personalizados y diseños de bloqueo",
         description:
-          "Para el corte de cintas sensibles a la presión y laminados adhesivos, los revestimientos de PVD de teflón y DLC en la cara de contacto de la ranura reducen los intervalos de acumulación de adhesivo en un 60-80%. Los yunques recubiertos funcionan limpios durante turnos de producción de 8-12 horas sin contaminación de la ranura que degrade la holgura de cizallamiento y obligue a paradas imprevistas.",
+          "Los diseños de montaje de orificio liso, de bloqueo excéntrico, de bloqueo de tornillo y divididos o con abrazadera están disponibles con perfiles de ranura y anchos de anillo definidos en el dibujo.",
       },
     ],
-    dimensionLabels: {
-      col0: "Plataforma OEM / Tipo",
-      col1: "DE × DI (mm)",
-      col2: "Espesor (mm)",
-      col3: "Ranura (An × Pr / Ángulo)",
-      caption:
-        "* Dimensiones de yunque estándar adaptadas a los fabricantes de equipos originales. La geometría exacta de las ranuras garantiza un acoplamiento sin vibraciones con las cortadoras superiores. Configuraciones multiranura (2+ ranuras) disponibles bajo pedido.",
-    },
-    standardDimensions: [
-      {
-        spec: "Tidland — Single Groove",
-        od: "70 × 25.4",
-        id: "8 / 10",
-        thickness: "W: 1.2 × D: 2.0 / 60°",
-      },
-      {
-        spec: "Atlas — Multi-Groove (3 Slots)",
-        od: "100 × 60",
-        id: "20 / 25",
-        thickness: "W: 1.5 × D: 2.5 / 60°",
-      },
-      {
-        spec: "Mario Cotta — Single Groove",
-        od: "80 × 30",
-        id: "10",
-        thickness: "W: 1.3 × D: 2.2 / 45°",
-      },
-      {
-        spec: "Dienes — Single Groove",
-        od: "130 × 80",
-        id: "12",
-        thickness: "W: 1.5 × D: 3.0 / 60°",
-      },
-      {
-        spec: "Custom Anvil / Hardfaced",
-        od: "Per Drawing",
-        id: "OEM Spec",
-        thickness: "Exact CNC Machined Groove",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 200,
-    },
     faqs: {
       technical: [
         {
           question:
-            "¿Con qué frecuencia debo sustituir la cuchilla acanalada inferior del yunque frente a la cuchilla superior?",
+            "¿Qué define a una cuchilla de yunque con fondo ranurado de repuesto?",
           answer:
-            "Las cuchillas de yunque inferiores funcionan bajo una carga de compresión de la cara de la ranura y suelen durar entre 3 y 5 veces más que la cuchilla de la cizalla superior. Sin embargo, dado que el desgaste es gradual (la cara de la ranura se redondea lentamente), es fácil pasar por alto el deterioro de la calidad de la ranura hasta que aumentan los índices de desecho. Recomendamos inspeccionar la geometría de la cara de la ranura (anchura y profundidad de la ranura) cada 3 ciclos de sustitución de la cuchilla superior y sustituir el yunque cuando la desviación de la anchura de la ranura supere ±0,03 mm con respecto a la especificación del OEM.",
+            "El borde de trabajo, el perfil de la ranura, el ancho del anillo, el orificio y la disposición de bloqueo definen el reemplazo. Incluya la profundidad de la ranura y la posición axial del filo con respecto a la cuchilla superior correspondiente. Estas características establecen la geometría de trabajo más allá del diámetro exterior y el diámetro interior. Para conocer varias posiciones de corte en un cuerpo, consulte [Cuchillas inferiores multiranuras](/products/groove-bottom-knives) .",
+        },
+        {
+          question: "¿Qué significan los tipos de bloqueo NN, NG y NS?",
+          answer:
+            "En la terminología DIENES , NN significa orificio liso, NG utiliza bloqueo excéntrico y NS utiliza bloqueo por tornillo. Los anillos NN se colocan con espaciadores y se sujetan axialmente; NG utiliza un anillo excéntrico, mientras que NS utiliza un tornillo que actúa sobre el eje. Especifique el orificio, el ancho del anillo y el perfil de trabajo junto con el tipo de montaje al solicitar reemplazos.",
         },
         {
           question:
-            "¿Qué distancia de cizallamiento debo fijar entre la cuchilla superior y la ranura inferior del yunque?",
+            "¿Por qué la calidad del corte del papel puede seguir siendo mala después de reemplazar la cuchilla superior?",
           answer:
-            "La holgura de cizallamiento depende del sustrato. Para films de plástico flexible (BOPP, BOPET, CPP), lo normal es 0,02-0,05 mm por cara. Para papel kraft y cartón, 0,05-0,10 mm. Para láminas de aluminio y cobre, 0,01-0,03 mm por cara. Verificamos previamente que los pares superior/inferior coincidan con la holgura especificada y registramos el ajuste en una hoja de datos de ingeniería que se envía con cada pedido, lo que permite a los operarios reproducir la holgura en cada reinstalación.",
+            "El corte con cizalla de papel depende del par de cuchillas completo y de su configuración. Compruebe el borde de trabajo inferior, el emparejamiento de materiales, el estado del soporte, la superposición, la presión lateral y el ángulo de inclinación. Una nueva cuchilla superior todavía trabaja contra la cuchilla inferior retenida, por lo que comparar ambas superficies de trabajo y su ajuste ayuda a identificar lo que queda sin resolver en la disposición de corte.",
         },
         {
           question:
-            "¿Puedo pedir cuchillas de yunque de repuesto sin comprar un par completo?",
+            "¿Qué material o revestimiento es adecuado para una cuchilla de yunque utilizada con bandas adhesivas?",
           answer:
-            "Sí. Suministramos cuchillas de yunque inferior como recambios independientes mecanizados según el perfil de la ranura y el diámetro exterior/identidad de su sistema de árbol de cuchillas superior existente. Facilítenos su plataforma OEM (Tidland, Kampf, Atlas, etc.) y el diámetro exterior/identidad de la cuchilla superior, y adaptaremos el yunque a la geometría de acoplamiento. Si nos proporciona un yunque desgastado como muestra, podemos realizar ingeniería inversa del perfil de ranura original antes del reafilado.",
+            "Separe la recogida de adhesivo del desgaste de vanguardia. Para la acumulación de pegamento en un borde que de otro modo estaría sano, revise la geometría de contacto, el acabado de la superficie y el sistema adhesivo al considerar las opciones disponibles de TiN, DLC o PTFE. En busca de desgaste o astillas, evalúe primero el material base y la cuchilla correspondiente. Compare las opciones de superficie bajo la misma red y condiciones de corte para juzgar si abordan el problema real.",
         },
         {
           question:
-            "¿Por qué se degrada la calidad del filo de corte incluso después de sustituir la cuchilla superior por una nueva?",
+            "¿Puede Sureay suministrar un anillo de yunque personalizado sin reemplazar la cuchilla superior?",
           answer:
-            "Si las cuchillas superiores nuevas no restauran la calidad de la hendidura, es casi seguro que la ranura del yunque está desgastada más allá de sus especificaciones. Una cara de la ranura redondeada o ensanchada aumenta la holgura de cizallamiento efectiva independientemente del estado de la hoja superior, produciendo un borde de hendidura irregular y emplumado. Inspeccione la anchura y profundidad de la ranura con un calibrador de ranuras o un perfilómetro. Si la desviación de la ranura es superior a ±0,03 mm de la especificación del OEM, es necesario sustituir el yunque o rectificarlo.",
+            "Sí. Se puede fabricar un anillo de reemplazo según el diámetro interior, el ancho del anillo, el perfil de la ranura, la posición del borde de corte y los detalles de bloqueo requeridos por el eje existente. Incluya las dimensiones y la posición de trabajo de la cuchilla superior retenida. Para pedidos basados ​​en muestras, distinga las superficies de corte desgastadas de las superficies de montaje para que el nuevo anillo quede definido alrededor de la cuchilla superior que conservará.",
+        },
+        {
+          question:
+            "¿Puede una funda de soporte para navaja reemplazar un yunque de corte?",
+          answer:
+            "Una funda de soporte de la navaja proporciona espacio para el filo de la navaja, mientras que un yunque de corte proporciona un filo cooperante. Sus perfiles de trabajo sirven para diferentes métodos de corte. Especifique la hoja correspondiente, el método de corte y la posición del borde requerida al realizar el pedido; la presencia de una ranura por sí sola no identifica el componente inferior correcto.",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Suministran los cuchillos de yunque inferior como parte de un par emparejado o sólo individualmente?",
-          answer:
-            "Ambas opciones están disponibles. Para instalaciones nuevas o reconstrucciones completas del árbol, recomendamos pares emparejados: cuchilla superior y yunque inferior verificados para una holgura de cizallamiento especificada, con una hoja de datos de ingeniería conjunta. Para pedidos de sustitución en líneas existentes, disponemos de cuchillas de yunque independientes mecanizadas según su perfil de ranura OEM con un plazo de entrega estándar de 5-7 días.",
-        },
-        {
-          question:
-            "¿Para qué plataformas OEM suministra Sureay cuchillas de yunque adaptadas?",
-          answer:
-            "Actualmente almacenamos y suministramos cuchillas de yunque con perfil de ranura para Tidland (mandriles de ranura simple y doble), Kampf (series de mandriles estrechos y anchos), Atlas Converting Equipment, Goebel, BHS, Agnati y Dusenbery. Para otras plataformas OEM, proporcione el plano del árbol o una muestra desgastada y diseñaremos un recambio adecuado.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Los cuchillos de yunque de perfil OEM estándar se envían en 48-72 horas. Los perfiles de ranura personalizados tardan entre 7 y 12 días laborables. Colaboramos con DHL, FedEx y transitarios marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "groove-bottom-knives",
+      "slitter-rewinder-bottom-knives",
+    ],
   },
-
   {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas cortadoras de carburo de repuesto con orificios, espesores y perfiles de corte personalizados. Sureay ofrece construcciones de carburo sólido y anillos de carburo; comparta su dibujo y solicitud para una cotización de la configuración requerida por su máquina.",
     id: "tungsten-carbide-slitter-knives",
-    name: "Cuchillas cortadoras de metal duro",
-    fullName: "Cuchillas cortadoras de metal duro para corte de alto desgaste",
+    name: "Cuchillas de corte longitudinal de carburo de tungsteno",
+    fullName:
+      "Cuchillas de corte longitudinal de carburo de tungsteno, integrales o con filo de carburo",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Cuchillas cortadoras",
+    categoryDisplay: "Cuchillas de corte longitudinal de carburo de tungsteno",
     image:
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-    gallery: [
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
-    ],
-    galleryAlts: [
-      "Cuchillas cortadoras de metal duro, tres hojas circulares rectificadas con caras pulidas",
-      "Detalle de cuchilla cortadora de metal duro que muestra el orificio central, los agujeros de montaje y el filo rectificado",
-    ],
-
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "El metal duro macizo cuesta entre seis y diez veces más que el D2. Ese sobreprecio se recupera exactamente en dos situaciones: cuando su banda lleva carga mineral abrasiva, o cuando sus tiradas son lo bastante largas como para que el tiempo de parada por cambio — y no el precio de la cuchilla — sea lo que realmente le cuesta dinero. Metal duro de grano micrométrico YG6, YG6X, YG8 e YG10X (ISO K10–K30) a 89,5–92,5 HRA, rectificado a ±0,002 mm, con informe de dureza y dimensional en cada envío.",
-
-    fullDescription:
-      "Las cuchillas cortadoras de metal duro son una decisión de resistencia al desgaste, no una mejora general. Si corta BOPP transparente en tiradas cortas, el D2 o el ASP23 PM le servirán mejor y le costarán menos, y se lo diremos antes de que haga el pedido. Esta página es para los trabajos en los que el acero de herramientas realmente no puede mantener el filo: films con carga mineral, laminados reforzados con vidrio, no tejidos abrasivos, láminas estucadas y cartón a alta velocidad.\n\n## Cuándo compensa la mejora\n\nEl metal duro merece la pena cuando el coste de parar la línea supera el coste de la cuchilla. Tome sus cambios de cuchilla al mes, multiplíquelos por el coste de parada de cada cambio y compárelo con la diferencia de precio. En una línea donde un cambio cuesta una hora de producción, una vida útil de filo 10× suele amortizarse en uno o dos ciclos de cuchilla. En una línea donde los cambios son rápidos y baratos, no lo hará.\n\n## Dónde el metal duro justifica su coste\n\n**Films con carga mineral:** BOPP cargado con TiO₂, PE con carbonato de calcio, calidades mate y cavitadas. La carga mineral es lo que destruye los filos de acero; la dureza es la única defensa.\n\n**Laminados reforzados con vidrio y compuestos:** recorte de FR-4 y preimpregnados, cintas reforzadas con fibra de vidrio, bandas de composite de aluminio. El contenido de vidrio es profundamente abrasivo y desafila el HSS en un solo turno.\n\n**No tejidos abrasivos:** meltblown con carga mineral, spunbond con relleno, soportes abrasivos y sustratos de bayeta donde el pelusado de la fibra aparece en cuanto el filo se ablanda.\n\n**Lámina metálica, fleje estucado y electrodo de batería:** lámina de aluminio y cobre, fleje estucado y laminado, donde los bordes sin rebaba deben mantenerse durante toda una bobina.\n\n**Cartón y papel estucado a alta velocidad:** soportes estucados con caolín y pigmentos en líneas donde un cambio de cuchilla cuesta una hora de producción y el precio de la cuchilla es un error de redondeo frente a eso.\n\n## Dónde el metal duro es la elección equivocada\n\n**Impactos y cortes interrumpidos.** El metal duro es frágil. Si la banda se engancha, si pasa cinta de empalme, o si la cuchilla puede tocar el yunque metal contra metal, el metal duro se astilla donde el D2 se deformaría y sobreviviría.\n\n**Sustratos limpios y sin carga en tiradas cortas.** ¿Corta BOPP transparente, kraft liso o PE sin carga? El D2 o el ASP23 PM mantendrán el filo el tiempo suficiente, a una fracción del coste.\n\n**Sin acceso a rectificado con diamante.** Si ni usted ni su socio de servicio pueden reafilar con muelas de diamante, una cuchilla de metal duro desafilada pasa a ser chatarra en lugar de un activo reafilable — y la economía se invierte.\n\n**Holgura floja o sin verificar.** El metal duro amplifica lo que su montaje ya hace. No compensará un árbol desgastado, un portacuchillas descentrado ni una holgura que nadie ha medido.",
-
+      "Cuchillas cortadoras de repuesto sólidas y con punta de carburo para conversión y procesamiento de metales. Tamaños, orificios y perfiles de corte personalizados adaptados a la aplicación.",
     link: "/products/tungsten-carbide-slitter-knives",
-
-    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
-
     specs: [
+      {
+        label: "Tamaños",
+        value:
+          "Perfiles delgados: DE 20–300 mm × 0,3–5,0 mm; corrugador con diámetro exterior de 220 a 340 mm; giratorio DE 150,1–300,15 mm",
+      },
       {
         label: "Material",
         value:
-          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+          "Carburo WC-Co en grados YG6 , YG6X , YG8 , YG10X , YG12X y YG15",
       },
-      { label: "Hardness", value: "89.5–92.5 HRA" },
-      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
-      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
-      { label: "Outer Diameter", value: "20–300 mm" },
-      { label: "Thickness", value: "0.3–5.0 mm" },
       {
-        label: "Tolerance",
+        label: "Aplicaciones",
         value:
-          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+          "Cartón ondulado, láminas, láminas de electrodos y tiras metálicas.",
       },
-      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
       {
-        label: "Edge Geometry",
-        value: "Single bevel, double bevel, hollow ground, razor",
+        label: "Dureza",
+        value: "89,5–92,5 HRA, según el grado de carburo",
       },
-      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
       {
-        label: "Applications",
+        label: "Opciones de grano fino",
+        value: "Tamaño de grano de carburo de 0,4 a 0,8 μm",
+      },
+      {
+        label: "Construcción",
         value:
-          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+          "Disco de carburo macizo o cuerpo de acero con anillo cortante de carburo",
+      },
+      {
+        label: "Opciones de precisión",
+        value:
+          "Espesor ±0,002 mm; paralelismo de caras ≤0,005 mm; T.I.R. ≤0,01 mm",
+      },
+      {
+        label: "Acabado de borde",
+        value: "Ra 0.2–0.4 μm",
+      },
+      {
+        label: "Geometría del filo",
+        value: "Bisel simple, doble bisel, perfil hueco o tipo navaja",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value:
+          "DLC, TiN o TiAlN ; Cuchillos sin recubrimiento también disponibles",
+      },
+      {
+        label: "Resistencia a la rotura transversal",
+        value: "2,500–3,000 N/mm²",
       },
     ],
-
-    steelGrades: {
-      intro:
-        "El contenido de cobalto es el mando de compromiso: más cobalto significa mayor tenacidad y menor fragilidad, pero el filo se desafila antes. Los cuatro grados de metal duro siguientes se muestran frente a los aceros de herramientas a los que sustituyen, de modo que la decisión de mejora queda visible en una sola tabla. Si sus cuchillas de acero actuales se desafilan, vaya a más dureza. Si se astillan, vaya a más tenacidad. Si ocurren ambas cosas, el problema suele ser la holgura y no el material.",
-      rows: [
+    detailLayout: {
+      seoTitle:
+        "Cuchillos cortadores carburo de tungsteno | Tamaños personalizados",
+      sizeRange: "OD 20–340 mm",
+      heroAlt:
+        "Tres cuchillas cortadoras circulares sólidas carburo de tungsteno",
+      specificationImage: {
+        src: "/images/products/slitter-detail/tungsten-carbide-slitter-knives-detail.webp",
+        alt: "Anillos inferiores de la cuchilla rebobinadora que muestran el cuerpo y el perímetro de corte.",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
         {
-          grade: "D2",
-          hardness: "HRC 58–62",
-          bestFor: "Corte de uso general de sustratos limpios y sin carga",
-          tradeoff:
-            "Vida útil de filo y coste de referencia. Se reafila con muelas convencionales.",
+          id: "thin",
+          tabLabel: "Hojas delgadas de carburo",
+          title: "Hojas delgadas de carburo",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Referencia del equipo",
+            "Patrón de montaje",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Patrón de 6 × Ø9 mm"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "patrón de 4 ranuras"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Dibujo de partido"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Dibujo de partido"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Dibujo de partido"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Dibujo de partido"],
+            [
+              "SR001410",
+              "280 × 160 × 1.1 mm",
+              "Mitsubishi",
+              "Dibujo de partido",
+            ],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Dibujo de partido"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Dibujo de partido"],
+            [
+              "SR001413",
+              "340 × 230.2 × 1.0 mm",
+              "Göpfert",
+              "Dibujo de partido",
+            ],
+          ],
         },
         {
-          grade: "M2 HSS",
-          hardness: "HRC 62–65",
-          bestFor: "Desgaste moderado a mayores velocidades de línea",
-          tradeoff:
-            "2–3× la vida útil de filo del D2 a aproximadamente 1,5× el coste.",
-        },
-        {
-          grade: "ASP23 PM",
-          hardness: "HRC 66–68",
-          bestFor:
-            "Trabajo de alta velocidad y alto desgaste sin llegar a abrasivos reales",
-          tradeoff:
-            "4–6× la vida útil de filo del D2 a aproximadamente 3× el coste — con frecuencia la mejor opción comercial.",
-        },
-        {
-          grade: "YG6 (ISO K10)",
-          hardness: "89.5–91.5 HRA",
-          bestFor: "Corte estable y sin impactos de film y papel abrasivos",
-          tradeoff:
-            "6 % de cobalto. El más duro de los cuatro grados de metal duro y el menos tolerante al impacto.",
-        },
-        {
-          grade: "YG6X (ISO K10UF)",
-          hardness: "91–92.5 HRA",
-          bestFor:
-            "Espesor fino, tolerancia estrecha, la mejor calidad de filo alcanzable",
-          tradeoff:
-            "6 % de cobalto, grano ultrafino. El filo más agudo, el más sensible a los cortes interrumpidos.",
-        },
-        {
-          grade: "YG8 (ISO K20)",
-          hardness: "88.5–90.5 HRA",
-          bestFor:
-            "No tejidos, lámina metálica, y allí donde la banda pueda engancharse",
-          tradeoff:
-            "8 % de cobalto. Más tenaz y tolerante al impacto, a costa de algo de vida útil del filo.",
-        },
-        {
-          grade: "YG10X (ISO K30)",
-          hardness: "90.5–91.5 HRA",
-          bestFor: "Cortes interrumpidos, laminados y soportes más pesados",
-          tradeoff:
-            "10 % de cobalto, grano ultrafino. El mejor equilibrio tenacidad-desgaste de la gama.",
+          id: "carbide",
+          tabLabel: "Cuchillos de carburo",
+          title: "Cuchillas rotativas de carburo",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Construcción",
+          ],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Carburo sólido"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Carburo sólido"],
+            ["SR001333", "204 × 125 × 10 mm", "Carburo sólido"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Carburo sólido"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Carburo sólido"],
+          ],
         },
       ],
-      outro:
-        "En toda la gama, el metal duro ofrece aproximadamente entre 10 y 30 veces la vida útil de filo del D2 a un coste de 6 a 10 veces mayor, admite menos ciclos de reafilado y sólo puede rectificarse con muelas de diamante. Cómo hacer el cálculo: el metal duro merece la pena cuando el coste de parar la línea supera el coste de la cuchilla. Díganos el material y el fallo que está observando ahora, y nosotros elegiremos el grado.",
-    },
-
-    componentsIntro:
-      "Envíenos una cuchilla desgastada y el modelo de su máquina — realizaremos ingeniería inversa de la holgura y le cotizaremos en 2 horas.",
-
-    components: [
-      {
-        id: "carbide-when-it-pays",
-        tag: "IDONEIDAD DE APLICACIÓN",
-        title: "Dónde el metal duro justifica su coste",
-        description:
-          "La carga abrasiva es lo que destruye los filos de acero, y la dureza es la única defensa. El BOPP cargado con TiO₂, el PE con carbonato de calcio, el recorte de FR-4 y preimpregnados, la cinta reforzada con fibra de vidrio, el meltblown con carga mineral, la lámina de aluminio y cobre estucada y el cartón estucado con caolín desgastan un filo de acero de herramientas más rápido de lo que permite la longitud de la tirada. La misma lógica de grado se aplica sea cual sea el sustrato — es una decisión de material, no de aplicación.",
-      },
-      {
-        id: "carbide-when-not-to",
-        tag: "LÍMITES HONESTOS",
-        title: "Dónde el metal duro es la elección equivocada",
-        description:
-          "El metal duro es una solución de resistencia al desgaste, no una mejora general. Se astilla donde el D2 se deformaría — en empalmes, enganchones y cortes interrumpidos, o allí donde la cuchilla puede tocar el yunque metal contra metal. En sustratos limpios sin carga y tiradas cortas, el D2 o el ASP23 PM mantienen el filo el tiempo suficiente a una fracción del precio. Y sin acceso a reafilado con muela de diamante, una cuchilla de metal duro desafilada es chatarra en lugar de un activo. Si algo de esto describe su línea, díganoslo al consultar — preferimos cotizarle el acero correcto.",
-      },
-      {
-        id: "carbide-grade-selection",
-        tag: "METALURGIA",
-        title: "Sustrato de grano micrométrico, elegido para cada trabajo",
-        description:
-          "Seleccionamos entre cuatro grados en función de su material y de su modo de fallo actual, en lugar de enviar un único grado para todo. Los grados submicrónicos mantienen un filo más agudo; los grados con más cobalto sobreviven al impacto. El metal duro sólo puede acabarse con muelas de diamante, y la geometría de filo, el paralelismo y la excentricidad se mantienen con el mismo estándar de inspección que nuestro rectificado de acero de herramientas — cada cuchilla medida antes del despacho, con informe de ensayo de dureza y registro dimensional en la caja.",
-      },
-    ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "nonwoven-slitter-knives",
-      "metal-coil-slitting-knives",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 600,
-    },
-    faqs: {
-      technical: [
+      technicalSpecs: [
         {
-          question:
-            "¿Cuándo debo elegir metal duro macizo en lugar de M2 HSS o D2?",
-          answer:
-            "Sólo cuando su banda lleve carga abrasiva, o cuando sus tiradas sean lo bastante largas como para que el ahorro en reafilado y cambios cubra la diferencia de precio de 6–10×. Para film transparente estándar, papel liso o PE sin carga, el D2 o el ASP23 PM suele ser la mejor opción comercial — y se lo diremos.",
+          label: "Tamaños",
+          value:
+            "Perfiles delgados: DE 20–300 mm × 0,3–5,0 mm; corrugador con diámetro exterior de 220 a 340 mm; giratorio DE 150,1–300,15 mm",
         },
         {
-          question:
-            "¿Cuántas veces se puede reafilar una cuchilla cortadora de metal duro?",
-          answer:
-            "Depende del sobreespesor previsto en el diseño de la cuchilla, no del material. Cada reafilado elimina material; el límite práctico está donde la cuchilla adelgaza por debajo de su tolerancia de holgura. El metal duro suele admitir menos reafilados que el D2, pero ofrece mucho más tiempo de trabajo entre cada uno, que es donde está realmente la economía. Se requieren muelas de diamante — las muelas convencionales de óxido de aluminio se vidrian y no cortan metal duro.",
+          label: "Material",
+          value:
+            "Carburo WC-Co en grados YG6 , YG6X , YG8 , YG10X , YG12X y YG15",
         },
         {
-          question:
-            "Mi cuchilla de metal duro se astilló en la primera tirada, ¿qué falló?",
-          answer:
-            "Casi siempre una de tres cosas. Manipulación: una cuchilla de metal duro que cae sobre un suelo de hormigón desarrolla tensiones internas y grietas que permanecen invisibles hasta que se aplica carga. Holgura: ajustada demasiado estrecha, la cuchilla hace contacto metal contra metal con el yunque y se microastilla a lo largo del filo. O la aplicación tiene impacto — un empalme, un enganchón, un corte interrumpido — que la fragilidad del metal duro no puede absorber. Envíenos una foto del filo astillado; el patrón de fractura suele identificar cuál de los tres fue.",
+          label: "Aplicaciones",
+          value:
+            "Cartón ondulado, láminas, láminas de electrodos y tiras metálicas.",
         },
         {
-          question: "¿YG6 o YG8: qué grado debo especificar?",
-          answer:
-            "El YG6 (ISO K10) es más duro y dura más en trabajo estable, limpio y abrasivo. El YG8 (ISO K20) lleva más cobalto, por lo que es más tenaz y tolera el impacto a costa de algo de vida útil del filo. Si sus cuchillas de acero actuales se desafilan, vaya a más dureza. Si se astillan, vaya a más tenacidad. Si ocurren ambas cosas, el problema suele ser la holgura y no el material.",
+          label: "Dureza",
+          value: "89,5–92,5 HRA, según el grado de carburo",
         },
         {
-          question:
-            "¿Puede una cuchilla superior de metal duro trabajar contra un yunque inferior de acero?",
-          answer:
-            "Sí, y es habitual — pero entonces el yunque pasa a ser la pieza de desgaste y necesitará atención antes que hasta ahora. Si el yunque es más blando, verifique la holgura con más frecuencia, ya que el desgaste del yunque abre la separación y el primer síntoma es un borde irregular que parece un problema de la cuchilla. Disponemos de pares de metal duro emparejados cuando el desgaste del yunque es el factor limitante.",
+          label: "Opciones de grano fino",
+          value: "Tamaño de grano de carburo de 0,4 a 0,8 μm",
         },
         {
-          question:
-            "¿Cómo deben almacenarse y manipularse las cuchillas de metal duro?",
-          answer:
-            "Separadas individualmente, nunca apiladas metal contra metal, en un entorno seco. La mayoría de los fallos de metal duro que investigamos comenzaron en el almacén o en el transporte, no en la máquina. Las cuchillas se envían en embalaje protector que conviene conservar para las que no esté utilizando.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Son ustedes fabricante o empresa comercial?",
-          answer:
-            "Fabricamos. El rectificado, el control del tratamiento térmico y la inspección se realizan en nuestras propias instalaciones certificadas ISO 9001:2015, en funcionamiento desde 2008 y con envíos a más de 50 países. Por eso podemos cotizar a partir de una muestra desgastada y respaldar el registro dimensional que se envía con ella.",
+          label: "Construcción",
+          value:
+            "Disco de carburo macizo o cuerpo de acero con anillo cortante de carburo",
         },
         {
-          question: "¿Pueden fabricar cuchillas de metal duro sin plano OEM?",
-          answer:
-            "Sí — envíenos una cuchilla desgastada y el modelo de su máquina. Medimos la muestra, deducimos por ingeniería inversa la holgura de trabajo a partir del patrón de desgaste y producimos un recambio equivalente; el patrón de desgaste suele decirnos más sobre cómo trabaja realmente la cuchilla que el plano original. El diámetro interior, el chavetero, el patrón de agujeros de montaje y el espesor se ajustan a los árboles que ya utiliza, de modo que no hay que cambiar el portacuchillas ni reutillar.",
+          label: "Opciones de precisión",
+          value:
+            "Espesor ±0,002 mm; paralelismo de caras ≤0,005 mm; T.I.R. ≤0,01 mm",
         },
         {
-          question: "¿Qué documentación acompaña a un pedido de metal duro?",
-          answer:
-            "Un informe de ensayo de dureza y un registro de inspección dimensional con cada envío, desde unas instalaciones certificadas ISO 9001:2015. Si su inspección de entrada necesita datos completos de MMC, solicítelo al hacer el pedido y se enviará con las cuchillas. Cuando varias cuchillas comparten un eje, se rectifican y envían como un juego emparejado verificado para que el error de apilamiento no se acumule entre posiciones.",
+          label: "Acabado de borde",
+          value: "Ra 0.2–0.4 μm",
         },
         {
-          question:
-            "¿Podemos probar un juego pequeño de metal duro antes de comprometernos con un pedido completo?",
-          answer:
-            "Sí. Suministramos juegos de prueba — normalmente de 2 a 5 cuchillas — para verificar el ajuste en máquina y ensayar la vida útil del filo frente a sus cuchillas de acero actuales. Preferimos que demuestre la amortización en su propia línea antes que creer en nuestro multiplicador. Para perfiles a medida, se produce una muestra de aprobación dimensional antes de iniciar la producción completa.",
+          label: "Geometría del filo",
+          value: "Bisel simple, doble bisel, perfil hueco o tipo navaja",
         },
         {
-          question:
-            "¿Cuál es el plazo de entrega de las cuchillas cortadoras de metal duro?",
-          answer:
-            "Los perfiles estándar en grados de stock se envían en 7–12 días laborables; la geometría a medida y los diámetros no estándar tardan de 15 a 20. El metal duro lleva más tiempo que el acero de herramientas porque los preformados sinterizados y el acabado con muela de diamante no pueden acelerarse sin que le cueste calidad de filo. Las cuchillas se envían separadas individualmente en embalaje protector — la mayoría de los daños en metal duro que investigamos ocurrieron en tránsito o almacenamiento, no en la máquina.",
+          label: "Recubrimientos opcionales",
+          value:
+            "DLC, TiN o TiAlN ; Cuchillos sin recubrimiento también disponibles",
+        },
+        {
+          label: "Resistencia a la rotura transversal",
+          value: "2,500–3,000 N/mm²",
         },
       ],
     },
-  },
-  {
-    id: "metal-cold-saw-blades",
-    name: "Hojas de sierra en frío para metal",
-    fullName:
-      "Hojas de sierra circular en frío de HSS y TCT para corte de tubos y perfiles metálicos",
-    category: "cold_saw_blades",
-    sector: "metal",
-    categoryDisplay: "Cuchillas para procesamiento de metales",
-    image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Corte sin rebaba",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-01.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
-    ],
-    description:
-      "Hojas de sierra en frío HSS (M2 / M35 Cobalto) y TCT de primera calidad para cortar tubos de acero, barras macizas, perfiles de aluminio y acero inoxidable. El proceso de corte en frío produce un extremo preciso y sin rebabas, sin zona afectada por el calor (HAZ), listo para soldar o roscar inmediatamente.",
-    fullDescription:
-      "La sierra circular en frío es el proceso de corte de metal preferido para los molinos de tubos, la fabricación estructural y las aplicaciones de barras de precisión. A diferencia de los discos de corte abrasivos o las sierras de cinta, una sierra circular en frío corta por eliminación de metal (formación de virutas) en lugar de por abrasión de alta fricción. Esto mantiene el material frío, produciendo una superficie lisa y perfectamente cuadrada con cero distorsión térmica y sin necesidad de desbarbado secundario.\n\nLas hojas de sierra en frío Sureay se fabrican en configuraciones M2 (HSS estándar), M35 (HSS con 5% de cobalto) y TCT (con punta de carburo de tungsteno). Todas las hojas se fabrican según las estrictas normas DIN 1837/1840 y están disponibles en diámetros estándar de 200 mm a 450 mm con configuraciones de dientes y recubrimientos de PVD adaptados al material de la pieza de trabajo.\n\n## Guía de selección de materiales y calidades\n\n**M2 HSS (Estándar / Tratada con Vapor):** La calidad básica para serrar en frío tubos de acero dulce, tubos estructurales y perfiles angulares con una resistencia a la tracción de hasta 400 MPa. Proporciona una excelente tenacidad para cortes interrumpidos en secciones huecas. Normalmente se suministra con un acabado de óxido negro (tratado al vapor) para retener el refrigerante y evitar la microsoldadura.\n\n**M35 Cobalto HSS (Recomendado para acero inoxidable):** La adición de un 5% de cobalto eleva drásticamente la dureza al rojo (dureza en caliente) y la resistencia al desgaste de la hoja. Esto es esencial al cortar acero inoxidable austenítico 304/316, que se endurece rápidamente bajo la hoja. M35 mantiene la geometría del filo a través de las elevadas temperaturas de corte generadas por el acero inoxidable.\n\n**TCT (Tungsten Carbide Tipped):** Plaquitas de metal duro soldadas sobre un cuerpo de acero de alta aleación. Ideal para aplicaciones de fresado de tubos de gran volumen y metales no ferrosos (extrusiones de aluminio, tubos de cobre) que funcionan a velocidades de corte elevadas. Ofrece una vida útil entre 5 y 8 veces superior a la del HSS en perfiles de aluminio.\n\n## Recubrimientos PVD avanzados\nPara prolongar significativamente la vida útil de la hoja y reducir la fricción de corte, ofrecemos revestimientos PVD avanzados:\n- **TiN (Nitruro de Titanio - Oro):** Reduce el coeficiente de fricción, ideal para cortar tubos de acero estándar a velocidades más altas.\n- **TiAlN (Nitruro de Titanio y Aluminio - Violeta/Negro):** Forma una capa dura de óxido de aluminio durante el corte, protegiendo los dientes del calor extremo. La mejor elección para cortar acero inoxidable, hierro fundido y aleaciones de alta resistencia.",
-    link: "/products/metal-cold-saw-blades",
-    isFeatured: false,
     compatibleMachines: [
-      "Kaltenbach",
-      "Bewo",
-      "MEP",
-      "Kasto",
-      "Macc",
-      "Pedrazzoli",
-      "Ficep",
-    ],
-    specs: [
-      {
-        label: "Grade Options",
-        value: "M2 HSS (DMo5) · M35 Cobalt (Co5) · TCT Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 63–65 (M2) | HRC 64–66 (M35) | Carbide Tipped",
-      },
-      {
-        label: "Surface Finish",
-        value: "Steam Treated (Black) / TiN / TiAlN PVD Coatings",
-      },
-      {
-        label: "Tooth Form",
-        value: "BW, HZ (Standard) | Fine / Medium / Coarse Pitch",
-      },
-      {
-        label: "Application",
-        value: "Steel Pipes, Stainless Tubes, Aluminum Profiles, Solid Bars",
-      },
+      "BHS",
+      "Fosber",
+      "Dusenbery",
+      "DIENES",
+      "Tidland",
+      "Nishimura",
+      "Fagor Arrasate",
     ],
     components: [
       {
-        id: "cold-cut-quality",
-        tag: "VENTAJA DEL PROCESO",
-        title: "Corte en frío frente a discos abrasivos",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Configuraciones de cuchillas sólidas y con punta de carburo",
         description:
-          "Los discos abrasivos generan temperaturas superiores a 800°C, produciendo una zona afectada por el calor (ZAC) y escoria pesada que debe ser rectificada. La sierra circular en frío funciona a bajas RPM con refrigerante, manteniendo la superficie de corte por debajo de 200°C. El resultado es una superficie limpia y lista para soldar nada más salir de la máquina. El resultado es una superficie limpia y lista para soldar recién salida de la máquina.",
+          "Elija discos de carburo sólido o cuerpos de acero con anillos de corte de carburo para que coincidan con la construcción requerida por su cortadora existente y su pedido de reemplazo.",
       },
       {
-        id: "grade-cobalt",
-        tag: "METALURGIA",
-        title: "M35 Cobalto para inoxidable",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Encofrados de borde rectificado con revestimientos opcionales",
         description:
-          'El acero inoxidable (304/316) se endurece bajo presión de corte, desafilando instantáneamente las hojas M2 estándar. Nuestra calidad M35 contiene un 5% de cobalto, lo que le confiere una "dureza roja" extrema para cortar acero inoxidable austenítico sin perder la geometría del filo.',
+          "Se pueden especificar perfiles de bisel simple, bisel doble, rectificado hueco y de afeitar con superficies sin recubrimiento o con recubrimientos DLC, TiN y TiAlN seleccionados, lo que le brinda control sobre la forma de la hoja y el acabado que solicita.",
       },
       {
-        id: "pvd-coatings",
-        tag: "TECNOLOGÍA DE SUPERFICIE",
-        title: "Recubrimientos TiN y TiAlN",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Cuchillas de carburo personalizadas para cortadoras existentes",
         description:
-          "Mientras que las hojas estándar tratadas con vapor son excelentes para el acero dulce, la actualización a recubrimientos TiN (nitruro de titanio) o TiAlN PVD reduce drásticamente la fricción y el calor. Esto permite velocidades de avance más rápidas y evita que el material se suelde en frío a los dientes de la sierra.",
+          "Los orificios, secciones axiales y perfiles de corte personalizados están disponibles según el dibujo de su cuchilla o la referencia de pieza específica de su máquina, de modo que los pedidos de reemplazo puedan seguir la geometría de la estación de corte instalada.",
+        relatedBladeIds: [
+          "corrugated-slitter-scorer-blades",
+          "metal-coil-slitting-knives",
+        ],
       },
     ],
-    dimensionLabels: {
-      col0: "Calidad y acabado de la hoja",
-      col1: "Diámetro exterior (mm)",
-      col2: "Diámetro (mm)",
-      col3: "Espesor (mm)",
-      col4: "Dientes (Z)",
-      caption:
-        "* Dimensiones estándar para máquinas Kaltenbach, Bewo y MEP. El número de dientes (Z) se selecciona en función del grosor de la pared del tubo. Agujeros de pasador de arrastre personalizados mecanizados bajo pedido.",
-    },
-    standardDimensions: [
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "250",
-        id: "32 / 40",
-        length: "2.0",
-        teeth: "120 z / 160 z",
-      },
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "275",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "140 z / 180 z",
-      },
-      {
-        spec: "M35 Cobalt (TiN Coated)",
-        od: "315",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "160 z / 200 z",
-      },
-      {
-        spec: "M35 Cobalt (TiAlN Coated)",
-        od: "350",
-        id: "40 / 50",
-        length: "2.5",
-        teeth: "160 z / 220 z",
-      },
-      {
-        spec: "M2 / M35 HSS",
-        od: "400",
-        id: "40 / 50",
-        length: "3.0",
-        teeth: "180 z / 240 z",
-      },
-      {
-        spec: "TCT (Aluminum Profile)",
-        od: "450",
-        id: "30 / 32",
-        length: "3.5",
-        teeth: "120 z",
-      },
-    ],
-    relatedBladeIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 420,
-    },
     faqs: {
       technical: [
         {
-          question: "¿Cómo elegir entre las calidades M2 y M35 de Cobalto HSS?",
+          question:
+            "¿Cuál es la diferencia entre cuchillos con punta de carburo sólido y cuchillos con punta de carburo?",
           answer:
-            "Para acero estructural estándar, tubos de acero dulce y perfiles en caja, el HSS M2 proporciona una excelente tenacidad y valor. Si corta acero inoxidable (304, 316), acero de alta resistencia o utiliza sierras automáticas de alta velocidad, debe cambiar a M35. El M35 contiene un 5% de cobalto, que evita que los dientes se reblandezcan bajo el calor de la alta fricción.",
+            "Una cuchilla de carburo sólido utiliza carburo a través del cuerpo de la cuchilla. Un cuchillo con punta de carburo combina un cuerpo de acero con un filo de trabajo o anillo cortante de carburo. Especifique la construcción y la geometría de montaje. Las cuchillas rotativas de carburo y las cuchillas cortadoras de carburo son nombres de compras que se superponen; ninguno de los nombres identifica la estación de construcción o corte por sí solo.",
         },
         {
           question:
-            "¿Cuántos dientes (TPI / Paso) necesito para mis tubos de acero?",
+            "¿Cuándo debo elegir cuchillas cortadoras de carburo en lugar de HSS o acero para herramientas?",
           answer:
-            "La regla de oro del serrado en frío es tener siempre de 3 a 4 dientes engranados simultáneamente en el espesor del material. Si está cortando tubos de pared fina (por ejemplo, de 1,5 mm de pared), necesita un paso fino (número de dientes alto, por ejemplo, 220Z o 240Z) para evitar que los dientes se enganchen y se rompan. Si corta barras macizas gruesas (por ejemplo, macizas de 40 mm), necesita un paso grueso (número de dientes bajo, por ejemplo, 120Z) para dejar espacio para que salgan las virutas de metal macizo.",
-        },
-        {
-          question: "¿Pueden reafilarse las hojas de sierra en frío HSS?",
-          answer:
-            "Sí, ésta es la mayor ventaja de las hojas de sierra en frío HSS. A diferencia de los discos abrasivos que se tiran, una hoja HSS puede reafilarse con CNC de 10 a 15 veces antes de que el diámetro sea demasiado pequeño para utilizarla. Ofrecemos servicios profesionales de reafilado y recubrimiento para restaurar el rendimiento de fábrica.",
+            "Considere el carburo en relación con el patrón de desgaste que necesita abordar. Un cuchillo que se desgasta progresivamente presenta un problema de selección diferente que uno que se astilla. Compare el material actual, la geometría de los bordes y las condiciones de trabajo, incluido el soporte y la configuración de la máquina. La dureza por sí sola no establece una vida útil más larga y un borde más duro no puede corregir un soporte deficiente o una configuración incorrecta.",
         },
         {
           question:
-            "¿Debo utilizar refrigerante al cortar con sierras en frío HSS?",
+            "¿Son intercambiables YG6 , YG8 y grados de carburo con nombres similares?",
           answer:
-            "Absolutamente. Debe utilizar un refrigerante de inundación (aceite sintético o semisintético soluble en agua, mezclado al 8-10% aproximadamente) dirigido directamente a los dientes de corte. El refrigerante elimina las virutas de metal y mantiene la cuchilla fría. Cortar en seco con una hoja HSS quemará los dientes al instante. Sólo las hojas TCT especializadas de las máquinas de gama alta están diseñadas para el corte en seco.",
+            "Los nombres de grados similares no establecen equivalencia entre proveedores o sistemas de calificación. La estructura del grano de carburo, el contenido de aglutinante y la aplicación prevista también definen el material. Proporcione los requisitos de material especificados y el rendimiento de la cuchilla actual cuando solicite un reemplazo, de modo que el grado propuesto pueda evaluarse más allá de su nombre o dureza nominal.",
+        },
+        {
+          question:
+            "¿Por qué una cuchilla cortadora de carburo se astilla antes de desgastarse?",
+          answer:
+            "El impacto, la carga excesiva en el borde o el daño por rectificado pueden romper un borde de carburo antes de que el desgaste gradual se convierta en el problema principal. Inspeccione la ubicación del daño, el contacto de la cuchilla, el soporte y el historial reciente de afilado. La resistencia al desgaste del carburo no elimina su sensibilidad al impacto. Establezca si el problema se debe a la manipulación, la configuración o el rectificado antes de cambiar la calidad o la geometría del filo.",
+        },
+        {
+          question:
+            "¿Las cuchillas cortadoras de carburo deben recubrirse o dejarse sin recubrir?",
+          answer:
+            "Están disponibles tanto cuchillas sin recubrimiento como opciones seleccionadas de DLC, TiN o TiAlN . Elija con referencia al sustrato de carburo, el material procesado y el desgaste observado. Especifique el recubrimiento por separado del diámetro interior, el espesor y el perfil de corte requeridos, de modo que el reemplazo conserve la geometría de montaje necesaria mientras se considera la opción de superficie para la aplicación real.",
+        },
+        {
+          question:
+            "¿Se pueden fabricar cuchillas de carburo personalizadas para una cortadora existente?",
+          answer:
+            "Sí. Sureay puede fabricar cuchillas sólidas o con punta de carburo según un dibujo o referencia de pieza específica de la máquina. Defina el orificio, la sección axial, el perfil de corte, el montaje y el componente de acoplamiento. Incluya el material procesado, como [lámina metálica](/products/metal-foil-strip-slitter-knives) o [electrodo recubierto](/products/lithium-battery-slitting-knives) , de modo que el material y la construcción se consideren con la geometría de reemplazo completa.",
+        },
+        {
+          question: "¿Se pueden reafilar las cuchillas cortadoras de carburo?",
+          answer:
+            "Sí, donde quede suficiente material para restaurar el perfil de borde y las dimensiones de trabajo especificadas. Evalúe el disco con una cuchilla de carburo sólido; en un diseño con punta, verifique también el anillo de carburo restante y su fijación al cuerpo. Se necesitan comprobaciones dimensionales y rectificado de carburo especializado. Los daños importantes o la cantidad insuficiente de material restante pueden hacer que el reemplazo sea la opción adecuada.",
         },
       ],
-      company: [
-        {
-          question:
-            "¿Se adaptarán estas hojas a mi máquina de sierra en frío específica?",
-          answer:
-            "Nuestras cuchillas presentan tamaños de orificio estándar (por ejemplo, 32 mm, 40 mm, 50 mm) y patrones de orificios de pasador de arrastre universales que se adaptan al 95% del mercado, incluidos Kaltenbach, Bewo, MEP, Macc, Pedrazzoli y Kasto. Si su máquina tiene una disposición de pasadores de transmisión no estándar, podemos mecanizar por CNC los orificios de montaje exactos antes del envío.",
-        },
-        {
-          question:
-            "¿Cuál es el plazo de entrega de las cuchillas M35 con revestimiento de cobalto o TiAlN?",
-          answer:
-            "Las cuchillas estándar M2 (tratadas al vapor) en tamaños comunes suelen estar en stock y se envían en 3-5 días. Las cuchillas Premium M35 de cobalto y los recubrimientos PVD personalizados (TiN, TiAlN) suelen requerir entre 10 y 15 días laborables.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+    ],
   },
   {
     id: "scrap-chopper-blades",
-    name: "Cuchillas para chatarra",
+    name: "Cuchillas troceadoras de recortes metálicos",
     fullName:
-      "Cuchillas para chatarra de alta resistencia para líneas de corte longitudinal de metal y procesamiento de bobinas",
+      "Cuchillas troceadoras de recortes laterales para líneas de corte longitudinal de bobinas",
+    seoTitle:
+      "Cuchillas picadoras de chatarra | Cuchillas de línea de bobina personalizadas",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Cuchillas para chatarra",
-    image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
+    categoryDisplay: "Cuchillas troceadoras de recortes metálicos",
+    image: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
     badge: "Impacto extremo",
     badgeColor: "orange",
     gallery: [
-      "/images/products/granulator-blades/scrap-chopper-blades.webp",
+      "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
-      "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
+      "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
     ],
     description:
-      "Específicamente diseñadas para sobrevivir a los entornos caóticos y de impacto extremo del corte de bordes de líneas de procesamiento. Forjadas en acero para herramientas S7 resistente a los golpes o con geometrías especializadas con incrustaciones de carburo, estas cuchillas rompen y reducen limpiamente tiras de acero irregulares, recortes de tiras de aluminio y desechos de bordes de láminas de cobre sin sufrir fallos catastróficos de la cuchilla ni astillamientos.",
-    fullDescription:
-      "Situadas en los extremos de las líneas de corte y transformación de metales, las cortadoras de chatarra se encargan de destruir los residuos irregulares generados durante el proceso. El entorno operativo implica cargas de impacto severas e impredecibles capaces de destrozar las cuchillas estándar. En consecuencia, las cuchillas de las cortadoras de chatarra se forjan a partir de aleaciones de alto impacto y resistentes a los golpes, como el acero para herramientas S7, o emplean diseños con incrustaciones de carburo fuertemente soportadas para fracturar limpiamente los residuos de acero, aluminio y cobre sin que fallen.\n\n## Entorno operativo y retos\n\nLas picadoras de chatarra operan en condiciones fundamentalmente diferentes a las del corte longitudinal de precisión o el cizallado:\n\n**Geometría impredecible del material:** Los recortes de las líneas de corte llegan a la picadora en configuraciones irregulares, curvadas y retorcidas. A diferencia del cizallado de chapas rectas, la cuchilla debe engancharse a la chatarra en ángulos aleatorios, creando cargas de impacto variables que pueden superar 3-5 veces la fuerza nominal nominal.\n\n**Inclusiones metálicas y contaminación:** El flujo de chatarra contiene con frecuencia fijaciones metálicas, salpicaduras de soldadura y cascarilla de laminación que crean concentraciones de tensión localizadas. Las cuchillas estándar de alta dureza (D2 a HRC 60-62) son frágiles y se fracturan catastróficamente cuando reciben el impacto de dichas inclusiones.\n\n**Alta frecuencia de ciclo:** Las picadoras de chatarra funcionan a 40-120 cortes por minuto, dependiendo de la velocidad de la línea. Cada corte supone una carga de choque y la cuchilla debe resistir la propagación de grietas por fatiga durante millones de ciclos.\n\n## Soluciones metalúrgicas\n\n**Acero para herramientas resistente a impactos S7:** El S7 es un acero para herramientas al cromo-molibdeno-tungsteno desarrollado específicamente para aplicaciones de herramientas de impacto. A diferencia del D2 (que consigue la resistencia al desgaste mediante precipitados de carburo de cromo al 12%), el S7 utiliza un menor contenido de carbono (0,50% C frente al 1,55% C del D2) y un sistema de aleación equilibrado que produce una matriz dura y resistente. Tratada térmicamente a HRC 54-58, la S7 ofrece el doble de resistencia al impacto que la D2, eliminando prácticamente la fractura catastrófica de la hoja.\n\n**H13 (5% de cromo, 1,5% de molibdeno, 1% de vanadio) es la calidad más utilizada para el corte de chatarra de aluminio y cobre. Su estructura austenítica a temperatura de funcionamiento proporciona una excelente absorción de impactos, y la baja fracción volumétrica de carburo evita la fractura frágil en impactos de inclusiones metálicas. La más adecuada para flujos de chatarra no férrica.\n\n**Bordes incrustados de carburo:** Para centros de servicio de acero que procesan recortes de acero inoxidable y de alta resistencia a la tracción, los insertos de borde carburo de tungsteno están soportados mecánicamente en un cuerpo S7 o H13. El metal duro proporciona resistencia al desgaste localizada en el filo de corte, mientras que el cuerpo de acero para herramientas absorbe la energía bruta del impacto. Esta construcción híbrida proporciona una vida útil entre 3 y 5 veces mayor que el S7 macizo en flujos de chatarra muy contaminados.",
+      "Cuchillas picadoras de chatarra de repuesto personalizadas para recortar los bordes de la línea de bobina. Cuchillas S7 , H13 o con incrustaciones de carburo con disposiciones de corte rectas, inclinadas o perfiladas.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4513,104 +6027,68 @@ export const blades: Blade[] = [
       "Kohler Maschinenbau",
       "Fagor Arrasate",
     ],
+    compatibleMachinesIntro:
+      "Obtenga cuchillas picadoras de chatarra de repuesto para su línea de corte longitudinal de bobinas, con bordes cortantes S7 , H13 o con incrustaciones de carburo y perfiles personalizados. Envíe su dibujo o muestra de cuchillo existente y Sureay preparará una cotización para su picadora. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "scrap-chopper-profile",
+        tag: "Geometría de corte",
+        title:
+          "Opciones de acero para herramientas y con incrustaciones de carburo",
+        description:
+          "Sureay ofrece configuraciones S7 , H13 y S7 con incrustaciones de carburo para molduras de bordes de acero, aluminio o cobre. La dureza indicada para las versiones de cuchillas de acero es de 54 a 58 HRC .",
+      },
+      {
+        id: "scrap-chopper-mounting",
+        tag: "Instalación",
+        title: "Disposiciones de corte recto, inclinado y perfilado",
+        description:
+          "Sureay suministra cuchillas de repuesto para disposiciones rectas o inclinadas, incluidos perfiles rectificados en radio y en espiral según plano, de modo que los pedidos puedan reproducir la geometría de trabajo de la picadora instalada.",
+      },
+      {
+        id: "scrap-chopper-feed",
+        tag: "Condiciones de la línea de bobina",
+        title: "Bloques de cuchillos personalizados con opciones indexables",
+        description:
+          "Los cuerpos cuadrados y rectangulares están disponibles con detalles de montaje específicos de la máquina. Se pueden pedir versiones de cuatro filos donde la configuración de la cuchilla original admite la indexación, junto con piezas de repuesto individuales.",
+      },
+    ],
     specs: [
+      {
+        label: "Tamaños",
+        value: "100–400 mm",
+      },
       {
         label: "Material",
         value:
-          "S7 Shock-Resisting Tool Steel | H13 Hot-Work Steel | Carbide-Inlaid S7",
+          "Acero para herramientas S7 , acero para herramientas H13 o S7 con incrustaciones de metal duro",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (optimized for maximum impact toughness)",
+        label: "Dureza",
+        value: "Versiones de cuchillas de acero: 54–58 HRC",
       },
       {
-        label: "Edge Configuration",
-        value: "Square/Rectangular Profile (4-edge usable)",
-      },
-      {
-        label: "Impact Resistance",
-        value: "2× toughness vs. D2 — prevents catastrophic fracture",
-      },
-      {
-        label: "Application",
+        label: "Cuerpos de pala",
         value:
-          "Steel, aluminum, copper edge-trim scrap from slitting & coil processing lines",
+          "Perfiles cuadrados o rectangulares; versiones de cuatro filos disponibles",
       },
       {
-        label: "Cycle Life",
-        value: "50,000–200,000 chops (material & contamination dependent)",
+        label: "Configuraciones del helicóptero",
+        value:
+          "Disposiciones de cuchillos rectos o inclinados; Perfiles de radio y rectificados en espiral según dibujo.",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Chatarra de cantos de acero, aluminio y cobre procedentes de líneas de corte longitudinal de bobinas",
+      },
+      {
+        label: "Ciclo de vida",
+        value:
+          "50 000-200 000 cortes, dependiendo del material y de la contaminación",
       },
     ],
-    components: [
-      {
-        id: "s7-metallurgy",
-        tag: "CIENCIA DE MATERIALES",
-        title: "Estructura de aleación antichoque S7",
-        description:
-          "El acero para herramientas S7 consigue su dureza superior gracias a un sistema de aleación cuidadosamente equilibrado: 0.el 50% de carbono (frente al 1,55% del D2) minimiza la formación de carburos frágiles, mientras que las adiciones de cromo (3,25%), molibdeno (1,40%) y wolframio (1,80%) proporcionan templabilidad y resistencia al revenido. Con un tratamiento térmico a HRC 54-58 en lugar del HRC 60-62 típico del D2, el S7 sacrifica algo de resistencia a la abrasión a cambio del doble de energía de impacto Charpy. Este es el compromiso crítico para las aplicaciones de corte de chatarra: la cuchilla debe absorber cargas de impacto impredecibles sin romperse.",
-      },
-      {
-        id: "4-edge-design",
-        tag: "EFICACIA DEL DISEÑO",
-        title: "Configuración reversible de cuatro bordes",
-        description:
-          "Las cuchillas de las picadoras de chatarra se fabrican como bloques rectangulares con cuatro filos utilizables. Cuando el filo activo muestra un desgaste visible (normalmente indicado por un aumento del ruido de corte o una fractura incompleta de la chatarra), el operario gira la cuchilla 90° para presentar un filo nuevo. Este diseño cuadruplica la vida útil efectiva en comparación con las cuchillas de un solo filo y reduce los tiempos de inactividad no productivos. La geometría del cuerpo de la cuchilla está rectificada con precisión para garantizar que los cuatro bordes estén paralelos dentro de un margen de ±0,05 mm, evitando la carga desigual que causaría un desgaste prematuro en los bordes indexados.",
-      },
-      {
-        id: "carbide-inlay",
-        tag: "OPCIÓN AVANZADA",
-        title: "Construcción híbrida con incrustaciones de carburo",
-        description:
-          "Para los centros de servicio de acero que procesan recortes de acero inoxidable o de alto contenido en carbono con una fuerte contaminación de cascarilla de laminación, ofrecemos cuchillas de corte de chatarra con incrustación de metal duro. Un inserto carburo de tungsteno (normalmente de 6 a 10 mm de ancho, espesor total de la cuchilla) se fija mecánicamente en una ranura rectificada con precisión en el cuerpo S7 mediante una unión por contracción o soldadura. El carburo proporciona resistencia al desgaste localizada donde la hoja entra en contacto con la chatarra, mientras que el cuerpo S7 absorbe la energía bruta del impacto. Esta construcción es la solución óptima para flujos de chatarra contaminada en los que el carburo sólido se fracturaría y el S7 sólido se desgasta demasiado rápido.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Máquina / servicio típico",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones estándar para los modelos habituales de picadoras de chatarra. Tamaños personalizados disponibles. Todas las cuchillas son reversibles de 4 filos. Opción de incrustación de metal duro disponible para todas las dimensiones (+30-40% de sobreprecio por unidad).",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Trim",
-        od: "100",
-        id: "40",
-        thickness: "15",
-      },
-      {
-        spec: "Standard Capacity",
-        od: "150",
-        id: "50",
-        thickness: "20",
-      },
-      {
-        spec: "Butech / Medium Duty",
-        od: "200",
-        id: "60",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Duty Coil Line",
-        od: "250",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "Extra Heavy",
-        od: "300",
-        id: "80",
-        thickness: "30",
-      },
-      {
-        spec: "Extreme Plate Chopper",
-        od: "400",
-        id: "100",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: ["metal-shear-knives", "metal-coil-slitting-knives"],
+    relatedBladeIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
     offers: {
       lowPrice: 35,
       highPrice: 280,
@@ -4619,48 +6097,166 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "¿Debo utilizar S7 o H13 para cortar cantos de acero inoxidable?",
+            "¿Las cuchillas para picar chatarra y las cuchillas para cortar bordes son el mismo producto?",
           answer:
-            "Para recortes de acero inoxidable (304, 316 o grados dúplex), especifique S7 a HRC 54-58. El acero inoxidable genera mayores fuerzas de corte que el acero dulce debido al endurecimiento por deformación, y el sistema de aleación equilibrada del S7 proporciona una mejor retención del filo que el H13 en esta aplicación. El H13 está optimizado para chatarra de aluminio y cobre, donde las menores fuerzas de corte permiten que la matriz más blanda del H13 absorba el impacto sin una deformación excesiva del filo. Para chatarra de acero inoxidable muy contaminada con salpicaduras de soldadura o fijaciones, utilice S7 con incrustación de metal duro.",
+            "Sí. En una línea de bobinas, ambos nombres se refieren a cuchillos que cortan los bordes desechados en trozos cortos. El conjunto del picador determina su perfil de trabajo y montaje. Las cuchillas circulares que cortan la bobina de producción son [Steel Coil Slitting Knives](/products/metal-coil-slitting-knives) .",
         },
         {
           question:
-            "¿Cómo sé cuándo indexar la cuchilla hasta el siguiente filo de corte?",
+            "¿Cómo afectan el espesor de la tira y el ancho del recorte a las especificaciones de la cuchilla?",
           answer:
-            "El principal indicador es el aumento del ruido de corte o la vibración, que indica que el filo activo ha desarrollado un desgaste plano y ya no está fracturando limpiamente la chatarra. Inspeccione visualmente el filo activo cada 8-12 horas de funcionamiento. Cuando el plano de desgaste (la zona sin brillo y pulida de la esquina de corte) supera 1,0-1,5 mm de ancho, es el momento de pasar al siguiente filo. La indexación antes de que el plano de desgaste entre en contacto con el cuerpo de la cuchilla evita el desgaste acelerado del soporte y del bastidor.",
+            "El grado de la tira, el espesor y el ancho del recorte describen el material que ingresa a la picadora y ayudan a definir la tarea de corte. El conjunto del picador establece las dimensiones y el montaje del cuerpo de la cuchilla. Revise ambos conjuntos de información al comparar opciones de materiales u bordes, especialmente si la línea procesa una especificación de recorte diferente a la anterior.",
         },
         {
           question:
-            "¿Se pueden reafilar o rectificar las cuchillas de las picadoras de chatarra?",
+            "¿Por qué se pueden astillar los bordes de las cuchillas picadoras de desecho?",
           answer:
-            "Las cuchillas de las picadoras de chatarra son un consumible de desgaste y no suelen rectificarse. El diseño reversible de 4 filos ya proporciona una vida útil prolongada, y el reafilado requeriría un nuevo tratamiento térmico y un rectificado de precisión para restaurar la geometría y dureza de los filos. El coste del reafilado se aproxima al 60-70% del coste de una cuchilla nueva, por lo que la sustitución resulta más económica. Sin embargo, en el caso de las cuchillas personalizadas de gran tamaño (más de 500 mm de longitud), el reafilado puede resultar rentable; póngase en contacto con nosotros para indicarnos las dimensiones de su cuchilla.",
+            "La sobrecarga mecánica, una distancia de corte inadecuada y un corte de borde doble pueden contribuir al astillado. También puede estar involucrado un tiempo excesivo entre reafilados y un material o dureza inadecuados. Examinen juntos el avance, la configuración de corte y el patrón de daños. El procedimiento del fabricante de la picadora proporciona los requisitos de autorización para el material que se procesa.",
+        },
+        {
+          question:
+            "¿Qué identifica a las cuchillas picadoras rectas, inclinadas, radiales y en espiral?",
+          answer:
+            "Estos términos describen la forma del borde de trabajo o su disposición en la máquina. Los planos de cuchilla y montaje establecen el contorno, orientación y relación con el borde opuesto. Conserve esas características cuando solicite un reemplazo, especialmente cuando las mismas dimensiones de bloque exterior puedan acomodar diferentes perfiles de trabajo.",
+        },
+        {
+          question:
+            "¿Cada cuchilla picadora de chatarra tiene cuatro filos utilizables?",
+          answer:
+            "No. Los cuatro filos solo se pueden utilizar en cuerpos de cuchillas y soportes diseñados para cuatro posiciones de indexación. Utilice el dibujo de la cuchilla para confirmar cada orientación, inspeccione los bordes no utilizados en busca de daños y restablezca la configuración de corte especificada al cambiar los bordes.",
+        },
+        {
+          question:
+            "¿Se pueden reafilar las cuchillas trituradoras de chatarra desgastadas?",
+          answer:
+            "Sí, si las caras desgastadas o dañadas se pueden restaurar dentro de las dimensiones permitidas del cuchillo. Verifique el perfil de corte, las superficies de asiento y el material restante con el dibujo. Una cuchilla reafilada aún debe asentarse correctamente y permitir el espacio de corte especificado.",
+        },
+        {
+          question:
+            "¿Qué información necesita para cotizar las cuchillas picadoras de borde?",
+          answer:
+            "Envíe el modelo de picadora, el dibujo de la cuchilla o el número de pieza original, el grado de acabado, el espesor y ancho, y la cantidad. Etiquete la posición de corte y el perfil de trabajo, especialmente para cuchillas inclinadas, radiales o en espiral. Si utiliza una muestra, marque las caras ya rectificadas.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de picadora, el dibujo de la cuchilla, el patrón de montaje, el grado de la tira, el espesor y el ancho del borde.",
+    disambiguation:
+      "Para las cuchillas circulares que cortan la bobina de producción, consulte [Cuchillas cortadoras de bobinas de acero](/products/metal-coil-slitting-knives) .",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Dos cuchillas picadoras de chatarra rectangulares que muestran orificios de montaje y bordes cortantes",
+      sizeRange: "100–400 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Tiene Sureay cuchillas de desguace en stock o se fabrican por encargo?",
-          answer:
-            "Mantenemos existencias de cuchillas estándar S7 para chatarra en los seis tamaños más comunes (de 100×40×15 mm a 400×100×30 mm). Las cuchillas en stock se envían en un plazo de 3 a 5 días laborables. Las dimensiones personalizadas, el material H13 y las configuraciones con incrustaciones de metal duro se fabrican bajo pedido con plazos de entrega de 12-18 días laborables a partir de la aprobación del plano. La producción urgente (7-10 días) está disponible para tamaños estándar sujetos a la disponibilidad del programa de tratamiento térmico.",
-        },
-        {
-          question:
-            "¿Puede Sureay suministrar cuchillas picadoras de chatarra que se ajusten a las dimensiones de nuestras cuchillas actuales?",
-          answer:
-            "Sí. Envíenos una cuchilla de muestra, un dibujo técnico o la marca y el número de modelo de la picadora. Le confirmaremos la longitud, la anchura, el grosor, el patrón de orificios de montaje (si procede) y la calidad del material. La mayoría de las cuchillas para picadoras son bloques rectangulares estándar sin orificios de montaje, pero algunos modelos utilizan una retención con abrazaderas o pernos que requiere ubicaciones específicas de los orificios. Podemos reproducir cualquier geometría de cuchilla existente.",
+          label: "Aplicación",
+          value:
+            "Recorte del borde de corte descargado desde una línea de corte longitudinal de bobinas",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
+        alt: "Muestras de cuchillas picadoras de chatarra que muestran diferentes perfiles de cuerpo y patrones de orificios de montaje",
+      },
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "100–400 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Acero para herramientas S7 , acero para herramientas H13 o S7 con incrustaciones de metal duro",
+        },
+        {
+          label: "Dureza",
+          value: "Versiones de cuchillas de acero: 54–58 HRC",
+        },
+        {
+          label: "Cuerpos de pala",
+          value:
+            "Perfiles cuadrados o rectangulares; versiones de cuatro filos disponibles",
+        },
+        {
+          label: "Configuraciones del helicóptero",
+          value:
+            "Disposiciones de cuchillos rectos o inclinados; Perfiles de radio y rectificados en espiral según dibujo.",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Chatarra de cantos de acero, aluminio y cobre procedentes de líneas de corte longitudinal de bobinas",
+        },
+        {
+          label: "Ciclo de vida",
+          value:
+            "50 000-200 000 cortes, dependiendo del material y de la contaminación",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+          ],
+          rows: [
+            ["SR003301", "100", "40", "15"],
+            ["SR003302", "150", "50", "20"],
+            ["SR003303", "200", "60", "25"],
+            ["SR003304", "250", "80", "25"],
+            ["SR003305", "300", "80", "30"],
+            ["SR003306", "400", "100", "30"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Incluya el modelo de picadora, el dibujo de la cuchilla, el patrón de montaje, el grado de la tira, el espesor y el ancho del borde.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    rfqPlaceholder:
+      "Incluya el modelo de picadora, el dibujo de la cuchilla, el patrón de montaje, el grado de la tira, el espesor y el ancho del borde.",
+    dimensionLabels: {
+      intro:
+        "Las dimensiones enumeradas identifican las configuraciones del catálogo. Confirme el dibujo, la interfaz de montaje, la posición de la cuchilla y los bordes cortantes utilizables; El tamaño por sí solo no identifica el modelo de helicóptero.",
     },
   },
   {
     id: "strand-pelletizer-rotors",
-    name: "Rotores granuladores Strand",
-    fullName:
-      "Rotores granuladores de filamentos de alta precisión para líneas de compuestos",
-    category: "granulator_blades",
+    name: "Rotores para peletizadoras de hebras",
+    fullName: "Rotores de corte para peletizadoras de hebras de plástico",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Cuchillas granuladoras",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    imageDimensions: {
+      width: 1600,
+      height: 1600,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "PM-HSS y metal duro",
     badgeColor: "blue",
     gallery: [
@@ -4669,9 +6265,7 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
     description:
-      "Rotores granuladores de precisión diseñados para líneas continuas de producción de compuestos de gran volumen. PM-HSS (ASP2023, ASP2052) y construcción sólida carburo de tungsteno. Geometría helicoidal con concentricidad ≤0,005 mm, equilibrado dinámico según ISO 1940-1 G2.5. Sustitución directa de granuladores Maag, Coperion, Cumberland, Conair y Reduction Engineering.",
-    fullDescription:
-      "Diseñados para líneas de producción de compuestos continuas y de gran volumen, los rotores granuladores Sureay proporcionan microgranulados uniformes y sin defectos con cero residuos. Fabricados con aceros de alta velocidad pulvimetalúrgicos (PM-HSS) y carburo de tungsteno sólido, nuestros rotores helicoidales están diseñados para soportar el desgaste abrasivo extremo de los polímeros rellenos de vidrio (GF), rellenos de carbono y muy pigmentados. Cada rotor se somete a un riguroso equilibrado dinámico y a un rectificado de precisión del perfil para garantizar una concentricidad perfecta, reduciendo el desgaste de los rodamientos y las vibraciones incluso a las revoluciones máximas.\n\n## Tipos de rotor\n\n**Rotores helicoidales (en espiral):** La configuración estándar para el compounding continuo de alta velocidad. El paso helicoidal constante en toda la anchura de corte garantiza una acción de cizallamiento progresiva: un diente se engrana en cada instante en lugar de que todo el filo impacte simultáneamente. Esto reduce drásticamente la fuerza de corte máxima, la carga del motor y los casos de rotura del filamento. Los centros de rectificado CNC de 5 ejes de Sureay mantienen la constancia del paso helicoidal dentro de ±0,01° en toda la cara del rotor.\n\n**Rotores de filo recto:** Especificados para elastómeros más blandos y polímeros fundidos de baja viscosidad en los que la fuerza de corte helicoidal es excesiva. La acción de corte simultáneo en toda la anchura proporciona una longitud de gránulo limpia y uniforme en filamentos de TPE, TPU y TPV.\n\n**Rotores de incrustación de carburo de tungsteno:** La solución óptima para el compuesto abrasivo de compuestos rellenos de vidrio (GF), carbono (CF) y minerales. Los insertos de corte de carburo de tungsteno se sueldan al vacío en cuerpos de rotor de HSS mecanizados con precisión. Los filos de metal duro ofrecen una vida útil entre 5 y 10 veces mayor que los M2 estándar en compuestos GF40 y CF30, mientras que el resistente cuerpo de HSS absorbe las cargas de choque de los filamentos intermitentes y los arranques en frío sin fracturas frágiles.\n\n**Rotores de carburo sólido:** La especificación definitiva para compuestos abrasivos extremos con un rendimiento moderado. Se utilizan en compuestos especiales de cerámica ultraabrasiva, nitruro de boro y polímeros rellenos de SiC, donde incluso las puntas de carburo soldadas se desgastan rápidamente.\n\n## Selección de materiales por aplicación\n\n**M2, M35 HSS (Compuesto estándar):** Rentable para termoplásticos sin relleno - PA6, PA66, PC, POM, PBT - a temperaturas de compuesto estándar. El grado de cobalto M35 prolonga la vida útil de los rellenos moderadamente abrasivos (talco, CaCO₃) en un 30-40% frente al M2 estándar.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Compuesto abrasivo):** La fabricación pulvimetalúrgica produce una distribución ultrafina y homogénea del carburo que el HSS convencional no puede conseguir. ASP2023 proporciona una duración del filo de 2 a 3 veces mayor en los compuestos GF20 y CF15. ASP2052 y CPM10V aumentan la vida útil de la herramienta a 4-6× M2 en los compuestos rellenos más exigentes. La microestructura PM también reduce la microastilladura del filo que causa la contaminación por finos de granalla y polvo.\n\n**Para compuestos de fibra de vidrio larga (LGF), polímeros reforzados con fibra de carbono y masterbatch de alto contenido mineral. El metal duro mantiene su filo de corte bajo una carga abrasiva sostenida que desgastaría el PM-HSS en cuestión de horas.\n\n## Escenarios de aplicación\n\n**Compuestos de fibra de vidrio larga (LGF) y fibra de carbono:** Los rotores carburo de tungsteno soldados mantienen su filo de corte entre 5 y 10 veces más que el HSS estándar al cizallar compuestos estructurales altamente abrasivos. El proceso de soldadura al vacío garantiza que los dientes de carburo no se desprendan, incluso bajo cargas de choque severas de arranques de filamentos en frío.\n\n**Producción de lotes maestros y de alta pigmentación:** Los dientes pulidos a espejo (Ra 0,2 µm) evitan la acumulación de color, lo que permite cambios rápidos de color y cero contaminación cruzada entre lotes.\n\n**Termoplásticos de ingeniería (PA, PC, POM, PBT):** La concentricidad ultraestrecha (≤0,005 mm) permite a los operarios ajustar microespacios extremos, lo que da como resultado una cizalla limpia, tipo tijera, que elimina finos, polvo y pieles de serpiente.\n\n**Elastómeros blandos (TPE, TPU, TPV):** Los ángulos de corte agudos optimizados evitan el estiramiento y el embadurnamiento de los filamentos blandos, eliminando el temido efecto de cola.\n\n## Compatibilidad OEM\n\nSureay fabrica rotores de repuesto de ajuste exacto para las principales plataformas de peletizadoras. Todos los rotores de repuesto se fabrican a partir de planos de OEM o muestras de clientes, se verifican en CMM y se suministran con informes completos de inspección dimensional.\n\n*Todos los nombres y modelos de fabricantes se utilizan únicamente a efectos de referencia y compatibilidad",
+      "Rotores peletizadores de hebras de repuesto con bordes cortantes helicoidales o rectos. Opciones de HSS y carburo, con perfiles de dientes y extremos de eje personalizados.",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
     compatibleMachines: [
@@ -4681,66 +6275,131 @@ export const blades: Blade[] = [
       "Conair",
       "Reduction Engineering",
     ],
+    compatibleMachinesIntro:
+      "Obtenga rotores peletizadores de hebra de repuesto con el patrón de dientes, el ancho de trabajo y las interfaces de eje que su línea requiere. Sureay ofrece diseños helicoidales o de borde recto en construcciones de acero y carburo. Comparta su dibujo o rotor desgastado para obtener una cotización de reemplazo personalizada. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "strand-rotor-tooth-layout",
+        tag: "Geometría de corte",
+        title: "Opciones de rotor HSS , acero PM y carburo",
+        description:
+          "Sureay ofrece opciones M2 , M35 , ASP2023 , ASP2052 y CPM 10V junto con construcciones de corte de carburo sólido o soldado, lo que permite especificar el material del rotor para el compuesto de polímero y el diseño de cortador existente.",
+      },
+      {
+        id: "strand-rotor-construction",
+        tag: "Construcción",
+        title: "Geometrías de corte helicoidal y recta",
+        description:
+          "Los diámetros de corte enumerados abarcan entre Ø100 y 250 mm. Sureay suministra rotores helicoidales y de borde recto con número de dientes, perfil y ancho de trabajo especificados para el peletizador existente.",
+      },
+      {
+        id: "strand-rotor-cutting-pair",
+        tag: "Conjunto de corte",
+        title: "Extremos de eje e interfaces de rodamientos personalizados",
+        description:
+          "Los rotores se pueden fabricar con los extremos del eje, los asientos de los cojinetes, los hombros y las conexiones de transmisión que requiere la máquina existente, combinando la sección de corte y las interfaces de montaje en una especificación de reemplazo.",
+        relatedBladeIds: ["die-face-cutting-knives"],
+      },
+    ],
     specs: [
+      {
+        label: "Tamaños",
+        value: "Ø100–250 mm",
+      },
+      {
+        label: "Aplicación",
+        value: "Cortar hebras de polímero enfriadas en gránulos",
+      },
       {
         label: "Material",
         value:
-          "M2 (AISI M2 / 1.3343) | M35 (1.3243) | PM-HSS ASP2023 (1.3395) / ASP2052 / CPM10V | Solid WC & Brazed Carbide",
+          "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , carburo de tungsteno sólido o carburo soldado",
       },
       {
-        label: "Application",
+        label: "Tipos de rotores",
         value:
-          "GF/CF Compounding, Masterbatch, Engineering Thermoplastics (PA/PC/POM/PBT), Soft Elastomers (TPE/TPU/TPV)",
+          "Rotores helicoidales o de borde recto; filos de corte de carburo macizo o soldado",
       },
       {
-        label: "Rotor Types",
+        label: "Recuento de dientes",
+        value: "10, 12, 16, 24, 32, 48 o 60; cuenta personalizada hasta 120",
+      },
+      {
+        label: "Ángulo helicoidal",
+        value: "1,5°, 2° o 3°; hélice personalizada disponible",
+      },
+      {
+        label: "Concentricidad (agotamiento)",
+        value: "≤0.005 mm",
+      },
+      {
+        label: "Acabado superficial",
+        value: "Ra 0.2 µm",
+      },
+      {
+        label: "Equilibrio dinámico",
+        value: "ISO 1940-1, grado G2.5",
+      },
+      {
+        label: "Materia prima",
         value:
-          "Helical (Spiral), Straight Edge, Brazed Carbide Inlay, Solid Carbide",
-      },
-      {
-        label: "Tooth Count",
-        value: "10, 12, 16, 24, 32, 48, 60, up to 120 (custom)",
-      },
-      {
-        label: "Concentricity (Runout)",
-        value: "≤ 0.005 mm — critical for micro-clearance setting",
-      },
-      {
-        label: "Surface Polish",
-        value: "Ra 0.2 µm — prevents polymer build-up and sticking",
-      },
-      {
-        label: "Dynamic Balancing",
-        value: "ISO 1940-1 G2.5 — vibration-free at peak RPM",
-      },
-      {
-        label: "Helical Angle",
-        value: "1.5°, 2°, 3° or custom-milled to OEM blueprints",
+          "Compuestos GF/CF, masterbatch, elastómeros PA, PC, POM, PBT y TPE/TPU/TPV",
       },
     ],
-    components: [
-      {
-        id: "dynamic-balancing",
-        tag: "INGENIERÍA DE PRECISIÓN",
-        title: "Equilibrado dinámico sin defectos",
-        description:
-          "Al funcionar a altas velocidades, los rotores desequilibrados destruyen los rodamientos y arruinan las holguras. Todos los rotores Sureay están equilibrados dinámicamente a velocidades de funcionamiento según las normas ISO 1940-1 G2.5, lo que garantiza un funcionamiento silencioso y sin vibraciones y protege la inversión en rodamientos de la granuladora.",
-      },
-      {
-        id: "helical-geometry",
-        tag: "rECTIFICADO CNC DE 5 EJES",
-        title: "Geometría helicoidal impecable",
-        description:
-          "Utilizando centros de rectificado CNC de 5 ejes de última generación, garantizamos que el paso helicoidal sea constante en toda la anchura de corte. Esto garantiza una fuerza de corte constante, reduciendo la carga del motor y evitando que el filamento se rompa en las líneas de compuestos de alta velocidad.",
-      },
-      {
-        id: "vacuum-brazing",
-        tag: "TECNOLOGÍA DE CARBURO",
-        title: "Soldadura al vacío patentada",
-        description:
-          "En el caso de los rotores con dientes de metal duro, un proceso especializado de soldadura al vacío de alta resistencia garantiza que los dientes de metal duro nunca se desprendan, ni siquiera bajo cargas de choque severas debidas a arranques en frío de los filamentos o a condiciones de alimentación intermitente de los filamentos.",
-      },
-    ],
+    relatedBladeIds: ["die-face-cutting-knives", "granulator-blades"],
+    offers: {
+      lowPrice: 80,
+      highPrice: 1200,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Qué identifica a un rotor peletizador de hebras de repuesto?",
+          answer:
+            "El diámetro de corte, el ancho de trabajo, la forma del diente, la hélice y ambos extremos del eje identifican al rotor. Incluya los asientos de los cojinetes, las conexiones de transmisión y la cuchilla estacionaria correspondiente. Rotor cortador de peletización es un nombre de compra relacionado para el componente dentado que corta hebras de polímero, mientras que el conjunto completo del cabezal de corte contiene piezas adicionales.",
+        },
+        {
+          question:
+            "¿Cómo se debe seleccionar el material del rotor para compuestos poliméricos cargados?",
+          answer:
+            "Considere el polímero, el tipo de relleno y la carga junto con la condición actual del borde. El desgaste abrasivo y el desconchado de los dientes requieren consideraciones de materiales diferentes. Compare la construcción existente de HSS, acero PM o carburo con el patrón de desgaste real y la disposición de corte, incluida la cuchilla estacionaria, antes de seleccionar un material de reemplazo diferente.",
+        },
+        {
+          question:
+            "¿En qué se diferencia un rotor de hebras de una cuchilla cortadora de troqueles?",
+          answer:
+            "Un rotor de hebras corta hebras de polímero formadas contra una cuchilla fija. Las [cuchillas de corte de cara](/products/die-face-cutting-knives) son hojas individuales transportadas por un cubo en la cara de la matriz de extrusión. Algunos sistemas de cordones también cortan bajo el agua, por lo que la ubicación del proceso y el conjunto de corte proporcionan una identificación más clara que la palabra bajo el agua por sí sola.",
+        },
+        {
+          question:
+            "¿El solo cambio del número de dientes puede cambiar el tamaño de los gránulos?",
+          answer:
+            "Sí. Cambiar el número de dientes puede cambiar la longitud del pellet incluso con la misma velocidad del rotor y alimentación de hebra. Cambiar el número de dientes cambia la configuración de corte. Para un reemplazo similar, conserve el patrón de dientes aprobado y especifique la configuración existente y la longitud del pellet objetivo por separado.",
+        },
+        {
+          question:
+            "¿Por qué la calidad del pellet puede cambiar incluso cuando los bordes del rotor están afilados?",
+          answer:
+            "La alimentación o el enfriamiento desigual de la hebra pueden cambiar la calidad del pellet incluso cuando los bordes del rotor están afilados. Compare la condición del hilo en el cabezal de corte con la configuración del rotor a la cuchilla estacionaria. Si el defecto cambia con el avance, verifique también aguas arriba del filo.",
+        },
+        {
+          question:
+            "¿Se puede rectificar el rotor de una peletizadora de hebras?",
+          answer:
+            "Sí, cuando la construcción y el material de corte restante permitan restaurar la geometría dental especificada. Verifique el diámetro reducido del rotor en relación con su posición de trabajo con respecto a la cuchilla estacionaria. Registre el diámetro rectificado por separado cuando solicite un rotor nuevo.",
+        },
+        {
+          question:
+            "¿Cómo solicito una cotización para un rotor de corte para peletizadora de hebras?",
+          answer:
+            "Enviar modelo de peletizadora, dibujo del rotor o referencia original, polímero y relleno, y cantidad. Especifique el diámetro de corte, el ancho de trabajo, el número de dientes y la dirección de la hélice, e incluya dibujos de ambos extremos del eje y la cuchilla estacionaria correspondiente. Marcar el diámetro reducido por separado si el rotor de referencia ha sido rectificado.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de peletizadora, el dibujo del rotor, el ancho de trabajo, el número y perfil de dientes, los extremos del eje y los detalles de la cuchilla estacionaria.",
     dimensionLabels: {
       col0: "Plataforma OEM",
       col1: "Diámetro del rotor (mm)",
@@ -4752,6 +6411,7 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007101",
         spec: "Maag Primo / Baoli",
         od: "100 – 200",
         id: "80 – 300",
@@ -4759,27 +6419,31 @@ export const blades: Blade[] = [
         teeth: "2° / 3°",
       },
       {
-        spec: "Coperion SP Series",
+        itemNo: "SR007102",
+        spec: "Serie Coperion SP",
         od: "120 – 250",
         id: "100 – 350",
         length: "16 / 24 / 32",
         teeth: "1.5° / 2°",
       },
       {
-        spec: "Cumberland Quietizer",
+        itemNo: "SR007103",
+        spec: "Silenciador Cumberland",
         od: "100 – 180",
         id: "80 – 250",
         length: "12 / 16",
         teeth: "2° / 3°",
       },
       {
-        spec: "Conair 304 / 306 / CS",
+        itemNo: "SR007104",
+        spec: "Conair 304/306/CS",
         od: "100 – 200",
         id: "80 – 300",
         length: "12 / 16 / 24",
         teeth: "2°",
       },
       {
+        itemNo: "SR007105",
         spec: "Reduction Engineering SGS",
         od: "120 – 220",
         id: "100 – 320",
@@ -4787,74 +6451,100 @@ export const blades: Blade[] = [
         teeth: "1.5° / 2° / 3°",
       },
     ],
-    relatedBladeIds: [
-      "die-face-cutting-knives",
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "twin-shaft-blades-recycling",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1200,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Rotores de corte para granuladoras de hebras | Reemplazo personalizado",
+      heroAlt:
+        "Rotor de corte para peletizadora de hilos con superficie de corte dentada y extremos de eje",
+      sizeRange: "Ø100–250 mm",
+      heroSpecs: [
         {
-          question:
-            "Procesamos un 40% de nailon relleno de vidrio (PA66 GF40). Los rotores M2 estándar se desgastan en días. ¿Cuál es su solución?",
-          answer:
-            "Para el desgaste abrasivo extremo, el acero M2 es insuficiente. Recomendamos nuestras calidades PM-HSS (ASP2023 o ASP2052) o nuestros rotores de carburo de tungsteno soldados. Aunque la inversión inicial es mayor, la vida útil de la herramienta se prolonga hasta un 1000%, lo que reduce drásticamente el tiempo de inactividad de la máquina y disminuye su coste por tonelada de compuesto. En el caso concreto de PA66 GF40, los rotores de carburo de tungsteno soldados son la solución más rentable a largo plazo: el cuerpo de HSS soporta la carga de choque, mientras que los filos de carburo resisten la abrasión.",
+          label: "Material",
+          value: "HSS , acero PM o carburo de tungsteno",
         },
         {
-          question:
-            '¿Por qué aparecen "colas" en los pellets y cómo pueden solucionarlo sus rotores?',
-          answer:
-            "Las colas se producen cuando la hebra de polímero se desgarra o se funde en lugar de cizallarse limpiamente. Esto se debe a dientes de rotor romos, ángulos helicoidales irregulares o una holgura excesiva debido al descentramiento del rotor. Los rotores Sureay presentan una concentricidad de ≤0,005 mm, lo que permite a sus técnicos establecer un microespacio contra la cuchilla de la bancada para obtener un corte perfecto, tipo tijera. La superficie pulida de la ranura (Ra 0,2 µm) también evita que el polímero se adhiera, lo que genera arrastre y una fuerza de corte desigual.",
-        },
-        {
-          question:
-            "¿Cuál es la diferencia entre los rotores helicoidales y los de bordes rectos, y cuándo debo utilizar cada uno?",
-          answer:
-            "Los rotores helicoidales producen una acción de cizallamiento progresivo (sólo se engrana un segmento de dientes cada vez) que reduce la fuerza de corte máxima, los picos de amperaje del motor y los casos de rotura del filamento. Esto los convierte en la elección estándar para termoplásticos rígidos y compuestos rellenos en líneas de alta velocidad. Los rotores de filo recto engranan toda la anchura de corte simultáneamente, lo que es preferible para elastómeros blandos (TPE, TPU, TPV) donde la fuerza de corte helicoidal gradual puede estirar y deformar el filamento en lugar de cortarlo limpiamente.",
-        },
-        {
-          question:
-            "¿Pueden duplicar un rotor personalizado si les enviamos una muestra física o un plano CAD?",
-          answer:
-            "Absolutamente. Como fábrica de fabricación directa, tenemos plena capacidad de ingeniería inversa. Puede enviarnos su rotor desgastado o sus planos técnicos, y realizaremos un dibujo CAD detallado para su aprobación antes de fabricar el recambio exacto. La verificación dimensional en MMC se realiza antes del envío.",
-        },
-        {
-          question:
-            "¿Cómo sé cuándo debo sustituir o rectificar el rotor de mi granuladora de filamentos?",
-          answer:
-            "Indicadores clave: (1) aumento de finos de granulado y polvo en el flujo de granulado - los dientes desafilados desgarran en lugar de cizallar; (2) aumento del amperaje del motor en el accionamiento del granulador - los bordes romos requieren más fuerza; (3) rotura de filamentos cada vez más frecuente - la fuerza de cizallamiento irregular de la geometría desgastada aumenta los picos de tensión; (4) reaparición de colas a pesar del ajuste correcto de la separación - la concentricidad desgastada provoca una variación de la separación alrededor de la circunferencia del rotor. Para los rotores PM-HSS, el rectificado de precisión a la geometría OEM es rentable. En el caso de los rotores con dientes de metal duro, el metal duro puede reafilarse una vez antes de que sea necesario sustituir todo el rotor.",
+          label: "Aplicación",
+          value: "Cortar hebras de polímero enfriadas en gránulos",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "¿Puede Sureay suministrar conjuntos de rotor y cuchilla (estator) adaptados?",
-          answer:
-            "Sí, y le recomendamos encarecidamente que las compre por pares. Fabricamos cuchillas de lecho estator en Stellite 6 (para rotores HSS) y en carburo sólido (para rotores con punta de carburo). Un par emparejado garantiza que la geometría de la ranura de corte y el diferencial de dureza se optimicen conjuntamente, proporcionando una granulación sin cola desde el primer filamento. Las combinaciones de rotor y estator mal adaptadas son una de las principales causas del desgaste prematuro y de la formación de colas en líneas que, por lo demás, están bien mantenidas.",
+          label: "Tamaños",
+          value: "Ø100–250 mm",
         },
         {
-          question:
-            "¿Qué plazos de entrega y documentación puede proporcionar Sureay para los rotores de recambio?",
-          answer:
-            "Los rotores de recambio PM-HSS estándar para plataformas OEM comunes (Maag, Coperion, Cumberland) se envían en 10-15 días laborables desde la aprobación del plano. Los ángulos de hélice personalizados o los números de dientes no estándar requieren 15-20 días laborables. Todos los rotores se entregan con: Certificado de inspección dimensional CMM, informe de equilibrado dinámico (ISO 1940-1 G2.5), certificado de ensayo de dureza y trazabilidad del material de la acería. Producción urgente sujeta a plazos.",
+          label: "Aplicación",
+          value: "Cortar hebras de polímero enfriadas en gránulos",
+        },
+        {
+          label: "Material",
+          value:
+            "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , carburo de tungsteno sólido o carburo soldado",
+        },
+        {
+          label: "Tipos de rotores",
+          value:
+            "Rotores helicoidales o de borde recto; filos de corte de carburo macizo o soldado",
+        },
+        {
+          label: "Recuento de dientes",
+          value: "10, 12, 16, 24, 32, 48 o 60; cuenta personalizada hasta 120",
+        },
+        {
+          label: "Ángulo helicoidal",
+          value: "1,5°, 2° o 3°; hélice personalizada disponible",
+        },
+        {
+          label: "Concentricidad (agotamiento)",
+          value: "≤0.005 mm",
+        },
+        {
+          label: "Acabado superficial",
+          value: "Ra 0.2 µm",
+        },
+        {
+          label: "Equilibrio dinámico",
+          value: "ISO 1940-1, grado G2.5",
+        },
+        {
+          label: "Materia prima",
+          value:
+            "Compuestos GF/CF, masterbatch, elastómeros PA, PC, POM, PBT y TPE/TPU/TPV",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/strand-pelletizer-rotor-03.webp",
+        alt: "Rotor peletizador de hebras que muestra su superficie de corte y disposición del eje.",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite presupuesto para su rotor peletizador",
+        description:
+          "Incluya el modelo de la máquina, el dibujo del rotor, el ancho de trabajo, la forma del diente, los detalles del extremo del eje y la cantidad.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
+    disambiguation:
+      "Para hojas montadas en un cubo de cortador de troquel, consulte [Cuchillas de corte de troquel](/products/die-face-cutting-knives) .",
   },
   {
     id: "continuous-melt-filter-scraper-blades",
-    name: "Filtro de fusión Cuchillas rascadoras",
-    fullName:
-      "Cuchillas rascadoras y placas filtrantes de alta calidad para filtros de masa fundida continuos",
-    category: "granulator_blades",
+    name: "Cuchillas rascadoras para filtros de polímero fundido",
+    fullName: "Cuchillas rascadoras para filtros continuos de polímero fundido",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Filtro de fusión Cuchillas rascadoras",
+    categoryDisplay: "Cuchillas rascadoras para filtros de polímero fundido",
     image: "/images/products/blades/scraper-blades.webp",
+    imageDimensions: {
+      width: 2560,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 720,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Reciclaje de PCR",
     badgeColor: "orange",
     gallery: [
@@ -4863,9 +6553,7 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-02.webp",
     ],
     description:
-      "Cuchillas rascadoras de precisión D2/H13/Carburo y placas filtrantes cónicas perforadas por láser para filtros de masa fundida continuos PCR. La sinergia de dureza diseñada (cuchilla HRC 58-62 frente a placa nitrurada por plasma HV 1.000+) protege la inversión de capital de la placa filtrante. Aleaciones resistentes a HCl para mezclas de PVC. Compatible con EREMA, Gneuß, Ettlinger y FIMIC.",
-    fullDescription:
-      "Los filtros de masa fundida continuos son el corazón de cualquier línea de reciclaje de plástico PCR de alto rendimiento. Cuando se procesa material triturado postconsumo muy contaminado (que contiene cargas minerales, fibras de vidrio, residuos carbonizados y partículas extrañas duras), el rascador es el único componente sometido a la carga combinada más extrema: desgaste abrasivo por contaminantes duros, fatiga térmica por exposición cíclica a la temperatura de fusión (220-300 °C) y esfuerzo de flexión cíclico por el mecanismo de rotación. Una cuchilla que falla prematuramente obliga a una parada de emergencia de la línea, lo que cuesta horas de reinicio y desperdicia volúmenes significativos de masa fundida en proceso.\n\nLas cuchillas rascadoras Sureay para filtros de colada continua se fabrican con precisión a partir de acero para herramientas en caliente D2 acero para herramientas de trabajo en frío y H13 de primera calidad -dos aleaciones seleccionadas específicamente para este doble requisito de resistencia al desgaste y al calor- y se someten a un tratamiento térmico al vacío hasta HRC 58-62 con un postratamiento criogénico profundo para eliminar la austenita retenida y prolongar la vida útil entre un 30% y un 40% en comparación con el acero tratamiento térmico estándar.\n\n## Selección de aleaciones por nivel de contaminación\n\n**Acero para herramientas D2 (HRC 60-62):** La especificación estándar para PCR HDPE, PP y plásticos rígidos mixtos con contaminación moderada (< 3% de contenido de carga mineral). El 12% de cromo y el 1,5% de carbono proporcionan una excelente resistencia a la abrasión contra partículas de vidrio y cargas de carbonato cálcico a temperaturas de fusión de hasta 260 °C. Rentable para la filtración continua de uso medio a caudales de 300-800 kg/h.\n\n**Acero para herramientas de trabajo en caliente H13 (HRC 48-52):** Seleccionado para flujos muy contaminados -molido de película postconsumo, película de mantillo agrícola, plásticos RAEE- donde las temperaturas de fusión superan los 280 °C y los ciclos térmicos son severos. La matriz de carburo de molibdeno-vanadio del H13 mantiene la estabilidad dimensional y la geometría del filo bajo cargas térmicas sostenidas que provocarían el reblandecimiento y la deformación del D2.\n\n**Carburo de wolframio sólido (HRA 88-91):** La especificación definitiva para materias primas ultraabrasivas: plásticos técnicos rellenos de vidrio (PA-GF30, PBT-GF), corrientes contaminadas con cerámica y películas agrícolas ricas en silicio con partículas de tierra incrustadas. Los rascadores de carburo ofrecen una vida útil entre 5 y 8 veces mayor que los de D2 en estas materias primas, lo que reduce la frecuencia de cambio de las cuchillas a una vez cada más de 1.000 horas de funcionamiento.\n\n## Geometría de la cuchilla afilada con precisión\n\nLa geometría del filo del rascador controla directamente la limpieza de la superficie de la pantalla de filtración y, por tanto, la consistencia de la presión de fusión. Un rascador desgastado o con un perfil incorrecto deja una capa de contaminación residual en la malla filtrante, lo que provoca un aumento progresivo de la presión, una reducción del rendimiento y, en última instancia, la rotura de la malla. Las cuchillas Sureay se rectifican con precisión con una tolerancia dimensional de ±0,05 mm, con perfiles de bisel de borde adaptados a la geometría de contacto de la malla de cada fabricante de equipos originales de filtros. El resultado es una acción de rascado uniforme y reproducible que mantiene la limpieza de la malla durante toda la vida útil de la cuchilla.\n\n## Compatibilidad con OEM\n\nLa geometría de las palas rascadoras es específica de cada máquina: cada fabricante de equipos originales de filtros de fusión continua utiliza dimensiones de rotor, interfaces de montaje de palas y diámetros de malla propios. Sureay realiza la ingeniería inversa de los rascadores de recambio a partir de los planos de los OEM o de muestras de los clientes, verificando el ajuste en una máquina de medición de coordenadas (MMC) antes de la producción. Compatible con el filtro continuo EREMA, el sistema de filtración rotativo Gneuß, la serie ERF de Ettlinger, la serie RAS de FIMIC, la serie KSF de Kreyenborg y los cambiadores de tamiz continuo BKG de Nordson.\n\n## Microperforaciones de placas de filtro cónicas perforadas con láser\n\nLa geometría del orificio de la placa filtrante es tan crítica como el material de la hoja rascadora. Los orificios cilíndricos estándar perforados o taladrados crean un canal de pared plana en el que el polímero fundido y los contaminantes en suspensión pueden estancarse, carbonizándose en el interior del orificio bajo un calor sostenido, reduciendo progresivamente el área abierta efectiva y provocando finalmente el bloqueo prematuro de la malla. Las placas filtrantes Sureay utilizan microperforaciones cónicas perforadas con láser: el orificio es más estrecho en la superficie de contacto con la masa fundida aguas arriba y se ensancha progresivamente hacia la salida aguas abajo. Este perfil cónico aprovecha la presión hidráulica del lado de la masa fundida: una vez que una partícula contaminante pasa la estrecha restricción de entrada, la geometría del canal en expansión la expulsa inmediatamente hacia la salida sin estancamiento en la zona muerta. El resultado es una placa filtrante que mantiene una presión diferencial y un porcentaje de área abierta constantes durante un intervalo de servicio significativamente mayor, lo que resulta especialmente crítico en corrientes de PCR muy contaminadas en las que las placas con orificios cilíndricos requerirían una sustitución frecuente.\n\nFinura de filtración disponible: 80 µm (rPET/rHDPE en contacto con alimentos), 150-200 µm (PCR de grado película), 300-500 µm (PCR de grado inyección), 500-2.000 µm (prefiltración gruesa). Perfil cónico disponible en todos los grados de finura.\n\n## Sinergia de dureza: Protección de su inversión en placas de filtro\n\nUna preocupación común y justificada cuando se buscan cuchillas rascadoras de repuesto es si una cuchilla de repuesto de alta dureza rayará o ranurará la placa del filtro, un componente de capital que cuesta mucho más que la propia cuchilla. Sureay diseña un diferencial de dureza deliberado y verificado entre el rascador y la superficie de la placa filtrante.\n\nLa cara superior de la placa del filtro está nitrurada por plasma a HV 1.000+ (aproximadamente equivalente a HRC 70+), creando una capa superficial extremadamente dura y resistente al desgaste, similar a la cerámica, de 0,1 a 0,3 mm de profundidad. El rascador se fabrica intencionadamente con un HRC 58-62 inferior. Este diferencial significa que, en todas las condiciones de funcionamiento, la cuchilla es el consumible de desgaste controlado: se desgasta gradualmente contra la superficie más dura de la placa sin generar estrías ni estrías por transferencia de metal. La superficie de la placa filtrante permanece intacta durante varios ciclos de sustitución de la cuchilla. Todos los envíos de cuchillas Sureay incluyen un certificado de ensayo de dureza que confirma que la cuchilla se encuentra dentro del rango HRC especificado: documentación verificable de que el principio de desgaste controlado se mantiene en todos los lotes de producción.\n\n## Resistencia química y a la corrosión para corrientes de PVC y plásticos mixtos\n\nEl procesamiento de PVC postconsumo lavado, películas flexibles mixtas o plásticos derivados de RAEE libera gases corrosivos agresivos -principalmente ácido clorhídrico (HCl) y compuestos organoclorados- a temperaturas de fusión de 200-260 °C. Los aceros para herramientas D2 y H13 estándar se corroen bajo una exposición prolongada al HCl: las picaduras superficiales se inician en los límites del grano, degradando progresivamente la geometría del borde de la microperforación y ampliando los diámetros de los orificios más allá de lo especificado, comprometiendo la calidad de la filtración sin ninguna indicación externa visible.\n\nPara las corrientes que incluyen PVC, Sureay aplica dos medidas de protección: (1) actualización de la aleación base a grados de acero PM (pulvimetalurgia) resistentes a la corrosión con distribución homogénea del cromo que resiste el ataque de los límites de grano del ácido; (2) revestimientos de barrera por deposición física de vapor (PVD) en las superficies de las placas filtrantes que sellan las paredes de las microperforaciones contra la difusión de HCl. Esta combinación prolonga la vida útil de la placa filtrante de 2 a 3 veces en comparación con las placas de aleación estándar sin revestimiento en materias primas que contienen PVC, y evita el insidioso modo de fallo de agrandamiento de orificios que socava la eficacia de la filtración sin activar una alarma de presión.\n\n## Compatibilidad con el lavado a contracorriente\n\nLos filtros de masa fundida continuos de gama alta (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporan mecanismos automatizados de retrolavado: un impulso inverso de alta presión de masa fundida limpia se dispara periódicamente hacia atrás a través de una sección localizada de la placa filtrante para expulsar la torta contaminante incrustada de las microperforaciones, restaurando el área abierta sin detener la línea. El pulso de retrolavado genera un pico de presión inversa localizada -normalmente de 150-400 bares, dependiendo del OEM- que se aplica a una pequeña zona de la placa filtrante.\n\nLas placas filtrantes Sureay están diseñadas y fabricadas para soportar las presiones de retrolavado de los fabricantes de equipos originales sin microfisuras ni deformaciones. La geometría del orificio cónico está optimizada dimensionalmente para ello: la salida más ancha aguas abajo de cada perforación cónica actúa como una boquilla abocinada que acelera el pulso de retrolavado, mejorando la eficacia de expulsión de contaminantes frente a los orificios cilíndricos. La integridad estructural bajo ciclos inversos repetidos de alta presión se valida mediante análisis de elementos finitos (FEA) de la distribución de tensiones del ligamento entre orificios. Las placas Sureay de repuesto mantienen una compatibilidad del 100% con la sincronización, la presión y la disposición de la matriz de orificios de los fabricantes originales, por lo que no es necesario recalibrar el controlador de retrolavado.\n\n## Análisis de fallos: Diagnóstico y eliminación de fallos comunes de rascadores y filtros\n\nLos ingenieros que buscan componentes de repuesto normalmente se enfrentan a un modo de fallo específico. La mejora correcta del material depende de la causa raíz.\n\n**Astillado del filo (fractura frágil en la punta de la cuchilla):** Causado por un único impacto de alta energía de metal de desecho -pernos, tuercas, fragmentos de alambre- incrustado en la materia prima de rectificado PCR. Las calidades D2 y carburo estándar son vulnerables a la fractura frágil bajo este impulso de carga. **Mejora:** Especifique H13 (mayor tenacidad al impacto que D2) para flujos de contaminación mixta en los que el riesgo de metal atrapado es moderado, o un grado de carburo de tenacidad optimizada (contenido de Co ≥ 12%) para flujos de alto riesgo. Añada un imán y/o un detector de metales aguas arriba para reducir la frecuencia de metales atrapados.\n\n**Estrías superficiales progresivas en la placa filtrante:** Finas estrías paralelas en la cara de la placa filtrante, acompañadas de un aumento de la presión diferencial y de intervalos acortados entre las cuchillas. Causado por una dureza incorrecta de la cuchilla (cuchilla más dura que la placa), ángulo de bisel incorrecto causando una carga concentrada en el borde, o contaminación de arenilla en la interfaz cuchilla-placa. **Verifique el certificado de dureza de la cuchilla (debe ser ≤ HRC 62). Confirmar que el ángulo del bisel del filo coincide con la geometría de contacto de la pantalla del OEM (±0,5°). Inspeccione la superficie de la placa en busca de agotamiento de la capa de plasma-nitruro - si el rayado ha alcanzado el metal base, la placa requiere sustitución antes de instalar nuevas cuchillas.\n\n**Desgaste rápido de las cuchillas (< 200 horas en PCR estándar):** Una vida útil inesperadamente corta en una materia prima nominalmente moderada indica una contaminación superior a la declarada: contenido elevado de fibra de vidrio, sílice o relleno cerámico en el material triturado. Envíe la muestra de remolido para el análisis de contaminación XRF. **Actualizar:** Pasar primero de D2 a H13; si la vida útil sigue siendo inadecuada, pasar a carburo de tungsteno sólido, que proporciona una vida útil 5-8 veces mayor en flujos de fallo dominados por abrasivos.\n\n**Agrandamiento del orificio / Degradación de la calidad de filtración sin alarma de presión:** Las microperforaciones de la placa del filtro se agrandan gradualmente con el tiempo, permitiendo el paso de partículas contaminantes de gran tamaño a una presión diferencial estable. Causa principal: Corrosión por HCl debido a la desgasificación del PVC que disuelve el material de la pared del orificio. No hay alarma de presión porque los orificios agrandados mantienen una baja resistencia. **Actualización:** Especifique placas filtrantes de acero PM recubiertas de PVD y resistentes a la corrosión para todas las corrientes que contengan ≥ 5% de PVC en peso.",
+      "Cuchillas raspadoras de repuesto para filtros continuos de plástico fundido. Opciones D2 , H13 y carburo, con perfiles personalizados y detalles de montaje según plano.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -4876,63 +6564,130 @@ export const blades: Blade[] = [
       "Kreyenborg",
       "Nordson BKG",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 Tool Steel / H13 Hot-Work Steel / Solid Tungsten Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value:
-          "Blade: HRC 58–62 (controlled-wear consumable) | Filter Plate Surface: Plasma Nitrided HV 1,000+",
-      },
-      {
-        label: "Filter Plate Profile",
-        value:
-          "Laser-drilled conical micro-perforations, 80–2,000 µm — tapered inlet expels contaminants, prevents polymer stagnation",
-      },
-      {
-        label: "Dimensional Tolerance",
-        value: "±0.05 mm (blade profile) | ±0.02 mm (thickness)",
-      },
-      {
-        label: "Operating Temperature",
-        value: "Up to 300 °C (H13 / Carbide grades)",
-      },
-      {
-        label: "Corrosion Resistance",
-        value:
-          "HCl-resistant alloys & barrier coatings for PVC and mixed-plastic melt outgassing",
-      },
-      {
-        label: "Applications",
-        value:
-          "PCR HDPE/PP, Glass-Filled Compounds, PVC Blends, Agricultural Film, WEEE Plastics",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Obtenga hojas raspadoras de filtro de fusión de repuesto con bordes de trabajo, perfiles de cuerpo y soportes de soporte personalizados. Sureay ofrece configuraciones D2 , H13 y de carburo con opciones de tratamiento de superficie para su servicio de fundición. Envíe su dibujo o muestra para obtener una cotización adaptada a su filtro. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
     components: [
       {
-        id: "hardness-synergy",
-        tag: "PROTECCIÓN DE ACTIVOS",
-        title: "Dureza de ingeniería Sinergia",
+        id: "melt-scraper-working-edge",
+        tag: "Borde de trabajo",
+        title: "Opciones de raspadores de acero y carburo",
         description:
-          "Las placas de filtro están nitruradas por plasma a HV 1.000+ (≈ HRC 70+). Las cuchillas de los rascadores se mantienen deliberadamente en HRC 58-62. Este diferencial verificado convierte a la cuchilla en el consumible de desgaste controlado: se desgasta contra la superficie más dura de la placa sin rayar ni estriar. Cada envío incluye un certificado de dureza que confirma que la cuchilla está dentro del rango.",
+          "Las configuraciones D2 , H13 y de carburo sólido le brindan opciones de materiales para raspadores de filtro de fusión de reemplazo, especificados con el polímero, los contaminantes y la pantalla de acoplamiento a la vista.",
       },
       {
-        id: "conical-laser-plates",
-        tag: "TECNOLOGÍA DE FILTRACIÓN",
-        title: "Microperforaciones cónicas perforadas con láser",
+        id: "melt-scraper-carrier",
+        tag: "Instalación",
+        title: "Bordes personalizados y perfiles de montaje de portadores",
         description:
-          "La geometría cónica del orificio (entrada estrecha, salida ancha) aprovecha la presión de fusión para expulsar inmediatamente los contaminantes en lugar de permitir que se estanquen dentro de los orificios de pared cilíndrica. Evita la obstrucción de los orificios provocada por la carbonización, mantiene una presión diferencial constante y admite la dinámica de impulsos de retrolavado OEM a 150-400 bar sin microfisuras.",
+          "Las longitudes de raspador enumeradas abarcan entre 150 y 500 mm. Sureay puede incluir el contorno, el grosor y las características de montaje del soporte en el dibujo del filtro para que el nuevo raspador coloque su borde de trabajo en la posición especificada contra la pantalla.",
       },
       {
-        id: "failure-upgrade-path",
-        tag: "ANÁLISIS DE FALLOS",
-        title: "Ruta de actualización de diagnóstico",
+        id: "melt-scraper-material",
+        tag: "Opciones de materiales",
+        title: "Opciones de superficie para servicio de fusión específico",
         description:
-          "Astillado del filo por metal atrapado → mejore a H13 o carburo de grado de dureza. Estriado progresivo de la placa → verificar el certificado HRC de la hoja y el ángulo de biselado. Vida útil < 200 h en PCR estándar → paso a metal duro sólido para fallos dominados por la abrasión. Ampliación silenciosa del orificio → especifique placas PM resistentes a la corrosión con recubrimiento de PVD para corrientes que contengan PVC.",
+          "Hay opciones de revestimiento de barrera y aleaciones resistentes a la corrosión disponibles para servicios de fusión de plástico mixto y PVC específicos, lo que permite incluir los requisitos de superficie y material en la consulta de la hoja.",
       },
     ],
+    specs: [
+      {
+        label: "Tamaños",
+        value: "150–500 mm",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Eliminación de contaminación de una pantalla de filtro de fusión",
+      },
+      {
+        label: "Posición parcial",
+        value: "Portarascadores en el tamiz del filtro",
+      },
+      {
+        label: "Material",
+        value:
+          "Acero para herramientas D2 , acero para trabajo en caliente H13 o carburo de tungsteno sólido",
+      },
+      {
+        label: "Dureza de la hoja de acero",
+        value: "HRC 58–62",
+      },
+      {
+        label: "Tolerancia del perfil",
+        value: "±0.05 mm",
+      },
+      {
+        label: "Tolerancia de grosor",
+        value: "±0.02 mm",
+      },
+      {
+        label: "Temperatura de funcionamiento",
+        value: "Hasta 300 °C para configuraciones H13 o carburo",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value:
+          "Recubrimientos de barrera para servicio de fusión de PVC y plástico mixto",
+      },
+      {
+        label: "Resistencia a la corrosión",
+        value:
+          "Opciones de aleaciones resistentes al HCl para servicio fundido de PVC y plástico mixto",
+      },
+      {
+        label: "Materia prima",
+        value:
+          "PCR HDPE/PP, compuestos rellenos de vidrio, mezclas de PVC, películas agrícolas y plásticos RAEE",
+      },
+    ],
+    relatedBladeIds: ["cutter-compactor-blades", "die-face-cutting-knives"],
+    offers: {
+      lowPrice: 35,
+      highPrice: 480,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿A qué se refieren las cuchillas filtrantes y las cuchillas raspadoras?",
+          answer:
+            "Describen los elementos reemplazables que levantan la contaminación retenida de la superficie del filtro. La pantalla perforada realiza la filtración y el transportador ubica el rascador. Identifique la posición de instalación y la referencia de la pieza al realizar el pedido, de modo que la hoja, la pantalla y el soporte se especifiquen como el componente requerido.",
+        },
+        {
+          question:
+            "¿Qué características identifican un raspador de filtro fundido de repuesto?",
+          answer:
+            "Utilice el modelo y la versión del filtro, el contorno de la hoja, el perfil del borde de trabajo, el espesor y el montaje del soporte. El borde debe ocupar la posición prevista con respecto a la pantalla. La longitud total es sólo un identificador, particularmente cuando filtros continuos con nombres similares utilizan diferentes mecanismos de criba o raspador.",
+        },
+        {
+          question:
+            "¿Cómo se debe elegir el material raspador para plástico fundido contaminado?",
+          answer:
+            "Considere juntos el polímero, el tipo de contaminante, las condiciones de servicio de fusión y la especificación de la pantalla de acoplamiento. Compare el desgaste gradual de los bordes con el daño local en el raspador usado. La construcción de acero o carburo seleccionada debe adaptarse a la disposición de contacto del filtro, con cualquier requisito de recubrimiento o resistencia a la corrosión registrado por separado.",
+        },
+        {
+          question:
+            "¿Un filtro de material fundido autolimpiante utiliza un raspador universalmente intercambiable?",
+          answer:
+            "No. El raspador de un filtro de fusión autolimpiante debe coincidir con el perfil de trabajo, el soporte y la rejilla de ese conjunto específico. Algunos sistemas OEM utilizan contacto controlado con una pantalla más dura para mantener el borde. El reemplazo debe preservar la geometría y la combinación de materiales especificada para el filtro.",
+        },
+        {
+          question:
+            "¿Qué se debe revisar cuando la contaminación ya no se elimina eficazmente?",
+          answer:
+            "Compruebe si el borde raspador todavía hace el contacto deseado con la rejilla. La carga contaminante o una obstrucción en el sistema de descarga también pueden afectar la eliminación. Compare esas condiciones con los cambios en la alimentación del material fundido y utilice el procedimiento de servicio del fabricante del filtro para identificar la pieza que necesita atención.",
+        },
+        {
+          question:
+            "¿Qué debo enviar para una cotización de cuchilla raspadora de filtro de fusión?",
+          answer:
+            "Envíe el modelo y versión del filtro, dibujo del raspador o número de pieza, polímero y contaminantes, y cantidad. Agregue el montaje del soporte y la especificación de la pantalla retenida. Si utiliza una muestra, muestre de qué manera se monta en el soporte y marque el borde de trabajo desgastado.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de filtro, el dibujo del raspador, los detalles de la placa de criba, el polímero y los contaminantes típicos.",
     dimensionLabels: {
       col0: "Modelo de filtro / OEM",
       col1: "Longitud de la hoja (mm)",
@@ -4943,635 +6698,154 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007201",
         spec: "EREMA",
         od: "180 – 420",
         id: "25 – 40",
         thickness: "6 / 8",
       },
       {
-        spec: "Gneuß Rotary System",
+        itemNo: "SR007202",
+        spec: "Sistema rotativo Gneuß",
         od: "150 – 380",
         id: "20 – 35",
         thickness: "5 / 8",
       },
       {
+        itemNo: "SR007203",
         spec: "Ettlinger ERF 200/350",
         od: "200 / 350",
         id: "30 / 40",
         thickness: "8 / 10",
       },
       {
+        itemNo: "SR007204",
         spec: "FIMIC",
         od: "160 – 400",
         id: "22 – 38",
         thickness: "6 / 8",
       },
       {
+        itemNo: "SR007205",
         spec: "Kreyenborg KSF",
         od: "200 – 500",
         id: "30 – 50",
         thickness: "8 / 12",
       },
       {
+        itemNo: "SR007206",
         spec: "Nordson BKG",
         od: "150 – 350",
         id: "20 – 35",
         thickness: "5 / 8",
       },
     ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 35,
-      highPrice: 480,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Cuchillas raspadoras de filtro de fusión | Reemplazos personalizados",
+      heroAlt:
+        "Cuchillas raspadoras de repuesto para un filtro de fusión continuo",
+      sizeRange: "150–500 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Cuándo debo pasar de D2 a H13 para mis cuchillas rascadoras?",
-          answer:
-            "Cambie a H13 cuando la temperatura de fusión supere constantemente los 260 °C o cuando procese flujos muy contaminados, como film agrícola postconsumo, plásticos RAEE o residuos de envases muy impresos. Estas materias primas generan un estrés cíclico térmico significativo que hace que el D2 se reblandezca y pierda la geometría de los bordes en 200-400 horas de funcionamiento. La matriz de carburo de molibdeno-vanadio del H13 mantiene la dureza y la estabilidad dimensional hasta 300 °C, prolongando la vida útil del rascador entre un 60 y un 80% en estas materias primas.",
+          label: "Material",
+          value: "D2 , H13 o carburo de tungsteno",
         },
         {
-          question:
-            "¿Cómo afecta el desgaste del rascador a la presión de la masa fundida y al rendimiento de un filtro continuo?",
-          answer:
-            "Una cuchilla rascadora desgastada deja una película de contaminación residual en la superficie de la malla filtrante después de cada rotación. Esta película reduce progresivamente el área abierta efectiva de la malla, provocando un aumento de la presión de la masa fundida y un descenso del rendimiento. En una línea de PCR muy cargada, una cuchilla desgastada más allá de su límite de servicio puede causar una reducción del rendimiento del 15-25% y acelerar la obstrucción de la malla hasta el punto de provocar un fallo. El control de la presión diferencial de la masa fundida a través del filtro es el indicador de desgaste más fiable; recomendamos inspeccionar las palas cuando la presión diferencial aumente más de un 20% por encima del valor de referencia.",
-        },
-        {
-          question:
-            "¿Qué finura de filtración debo especificar para la producción de granulados de HDPE y PP reciclados?",
-          answer:
-            "Para la producción estándar de granza de PCR HDPE y PP destinada a aplicaciones de moldeo de películas o por inyección, especifique una finura de filtración de 300-500 µm. Esto elimina las partículas duras que causan estrías en la matriz y defectos superficiales sin una caída de presión excesiva en materias primas moderadamente contaminadas. Para resina reciclada de contacto de calidad alimentaria (rHDPE, rPP según EU 10/2011), especifique 150-200 µm para cumplir los requisitos de eliminación de contaminación más estrictos. En el caso de películas agrícolas o materias primas derivadas de RSU muy contaminadas, comience con 500-800 µm para gestionar la presión y redúzcala a medida que mejore la calidad de la materia prima.",
-        },
-        {
-          question:
-            "¿Las cuchillas rascadoras de alta dureza del mercado de accesorios rayarán o dañarán las placas de mi filtro?",
-          answer:
-            "Esta es la pregunta más importante que debe hacerse a cualquier proveedor de cuchillas de recambio. Sureay diseña un diferencial de dureza deliberado: las placas de filtro se nitruran con plasma a HV 1.000+ (aproximadamente HRC 70+), y las cuchillas rascadoras se fabrican a un HRC 58-62 estrictamente controlado. La cuchilla es siempre más blanda que la superficie de la placa: funciona como un consumible de desgaste controlado que se desgasta gradualmente sin generar estrías ni estrías por transferencia de metal en la cara más dura de la placa. Cada envío incluye un certificado de ensayo Rockwell HRC que confirma que la cuchilla se encuentra dentro de este rango. Si un proveedor no puede proporcionar este certificado, usted no tiene ninguna garantía de que el diferencial de dureza sea correcto.",
-        },
-        {
-          question:
-            "¿Son compatibles las placas filtrantes Sureay con el retrolavado automático de los sistemas Ettlinger y Gneuß?",
-          answer:
-            "Sí, totalmente compatibles. Las placas filtrantes Sureay están diseñadas y validadas por análisis de elementos finitos para las presiones de pulso de retrolavado de los fabricantes de equipos originales (normalmente 150-400 bar en los sistemas Ettlinger ERF y Gneuß RSFgenius). La geometría cónica de los orificios perforados con láser mejora la eficacia del lavado a contracorriente: la salida más ancha aguas abajo actúa como una boquilla que acelera el impulso inverso a través de cada perforación, mejorando la expulsión de contaminantes en comparación con las placas de orificios cilíndricos. La disposición de los orificios y las dimensiones de las placas reproducen exactamente las especificaciones de los fabricantes de equipos originales, por lo que no es necesario recalibrar los parámetros de temporización, presión o control después de la instalación.",
-        },
-        {
-          question:
-            "Mi filtro está perdiendo calidad de filtración sin alarma de presión diferencial. ¿Cómo puedo diagnosticarlo?",
-          answer:
-            "Este es el síntoma del agrandamiento silencioso de los orificios, un modo de fallo en el que las microperforaciones de la placa filtrante se ensanchan gradualmente debido a la corrosión química de las paredes de los orificios y no al desgaste mecánico. Los orificios ensanchados permiten el paso de partículas contaminantes de gran tamaño a la vez que mantienen una presión diferencial baja porque los orificios más anchos ofrecen menos resistencia. La causa principal es casi siempre la desgasificación de HCl del PVC o la contaminación organoclorada de la materia prima que reacciona con el acero para herramientas estándar a temperaturas de fusión. Confirmar mediante: (1) midiendo el tamaño de las partículas de contaminación de la masa fundida de salida: si hay partículas de gran tamaño sin aumento de presión, se confirma el agrandamiento del agujero; (2) inspeccionando una placa desmontada con lupa para ver si hay picaduras o redondeos en la pared del agujero. La solución es especificar placas filtrantes de acero PM Sureay recubiertas de PVD y resistentes a la corrosión, que sellan las paredes de la microperforación contra la difusión de ácido y evitan el insidioso agrandamiento progresivo.",
-        },
-        {
-          question:
-            "¿Puede Sureay adaptarse a las dimensiones de nuestros rascadores EREMA o Gneuß?",
-          answer:
-            "Sí, envíenos una muestra de la cuchilla existente o el número de pieza OEM y el modelo de la máquina. Verificaremos dimensionalmente el perfil de la cuchilla en nuestra MMC, confirmaremos la interfaz de montaje, el ángulo de biselado del borde y la especificación del material, y suministraremos recambios directos. Para los sistemas de filtración continua EREMA y de filtración rotativa Gneuß, disponemos de planos de referencia para los tamaños de plataforma más comunes. El plazo de entrega de las cuchillas de recambio estándar es de 7 a 12 días laborables a partir de la confirmación de las dimensiones.",
-        },
-        {
-          question:
-            "¿Cuántas horas de funcionamiento puedo esperar de los rascadores D2 en una línea mixta PCR?",
-          answer:
-            "En una línea de plásticos rígidos PCR mixtos (HDPE/PP, < 3% de contaminación mineral, temperatura de fusión 230-260 °C), las cuchillas rascadoras D2 suelen ofrecer 400-700 horas de funcionamiento antes de que el perfil del borde se degrade hasta el punto de aumentar la presión diferencial. Las cuchillas H13 de la misma línea amplían los intervalos de servicio a 600-1.000 horas. En flujos muy abrasivos (compuestos de vidrio, película agrícola con tierra incrustada), la vida útil de D2 desciende a 150-300 horas; H13 amplía este intervalo a 250-450 horas; el carburo sólido proporciona 1.000-2.000+ horas en estas materias primas.",
+          label: "Aplicación",
+          value: "Filtración continua de plástico fundido",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "¿Sus rascadores de filtro de fusión son recambios originales o piezas de recambio?",
-          answer:
-            "Son recambios de precisión fabricados conforme a las especificaciones dimensionales de los fabricantes de equipos originales. Realizamos ingeniería inversa de cada cuchilla a partir de planos OEM o muestras de clientes, verificamos el ajuste en una MMC y suministramos un certificado de inspección dimensional. Nuestras cuchillas no son recambios OEM de marca, se fabrican directamente en nuestras instalaciones utilizando materiales de primera calidad D2, H13 o carburo con nuestro paquete completo de documentación de calidad.",
+          label: "Tamaños",
+          value: "150–500 mm",
         },
         {
-          question:
-            "¿Qué documentación de calidad se incluye con los envíos de rascadores?",
-          answer:
-            "Cada envío incluye: Certificado de ensayo de dureza Rockwell HRC, informe de inspección dimensional CMM que confirma el perfil del borde y las tolerancias de la interfaz de montaje, certificado de trazabilidad del material de acería y certificado de lote tratamiento térmico. Los clientes que necesiten una documentación más completa para la ISO 9001 o la cualificación del proceso de reciclado pueden solicitar informes completos de ensayos de materiales y registros de procesos.",
+          label: "Aplicación",
+          value:
+            "Eliminación de contaminación de una pantalla de filtro de fusión",
+        },
+        {
+          label: "Posición parcial",
+          value: "Portarascadores en el tamiz del filtro",
+        },
+        {
+          label: "Material",
+          value:
+            "Acero para herramientas D2 , acero para trabajo en caliente H13 o carburo de tungsteno sólido",
+        },
+        {
+          label: "Dureza de la hoja de acero",
+          value: "HRC 58–62",
+        },
+        {
+          label: "Tolerancia del perfil",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Tolerancia de grosor",
+          value: "±0.02 mm",
+        },
+        {
+          label: "Temperatura de funcionamiento",
+          value: "Hasta 300 °C para configuraciones H13 o carburo",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value:
+            "Recubrimientos de barrera para servicio de fusión de PVC y plástico mixto",
+        },
+        {
+          label: "Resistencia a la corrosión",
+          value:
+            "Opciones de aleaciones resistentes al HCl para servicio fundido de PVC y plástico mixto",
+        },
+        {
+          label: "Materia prima",
+          value:
+            "PCR HDPE/PP, compuestos rellenos de vidrio, mezclas de PVC, películas agrícolas y plásticos RAEE",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/scraper-blades-02.webp",
+        alt: "Hojas raspadoras del filtro de material fundido que muestran sus perfiles de cuerpo y bordes de trabajo",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite presupuesto para su filtro rascador de fusión",
+        description:
+          "Incluya el modelo de filtro, dibujo o muestra de la hoja, detalles del soporte, polímero y cantidad requerida.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
-    id: "special-shaped-blades",
-    name: "Cuchillas de forma especial",
-    fullName:
-      "Cuchillas industriales de perfil personalizado y formas especiales",
-    category: "custom_profile",
-    sector: "other",
-    categoryDisplay: "Cuchillas de perfil personalizado",
-    image: "/images/products/blades/special-shaped-knife.webp",
-    badge: "OEM Personalizado",
-    badgeColor: "teal",
-    description:
-      "Cuchillas industriales de perfil personalizado y formas especiales fabricadas con precisión a partir de planos DXF/DWG del cliente o muestras físicas. D2, H13, PM-HSS y carburo sólido. Tolerancias de ±0,02 mm. Cualquier perfil, cualquier industria.",
-    link: "/custom",
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / H13 / PM-HSS / Carbide",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.02 mm",
-      },
-      {
-        label: "Drawing Input",
-        value: "DXF / DWG / STEP / Sample",
-      },
-      {
-        label: "Lead Time",
-        value: "7–15 working days",
-      },
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 800,
-    },
-  },
-  {
-    id: "wood-chipper-blades",
-    name: "Astilladoras de madera",
-    fullName:
-      "Cuchillas para astilladoras de tambor y disco de alta resistencia para biomasa, silvicultura y reciclaje de madera",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Astilladoras de madera",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-    badge: "Grado forestal",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
-    ],
-    description:
-      "Cuchillas para astilladoras de tambor y disco de D2, Cr12MoV y TCT de primera calidad para el procesamiento de biomasa, operaciones forestales y reciclaje de madera. Endurecidas HRC 57-62 con tratamiento criogénico profundo. Rectificado de precisión con una tolerancia de espesor de ±0,05 mm para una geometría de viruta limpia y uniforme. Ajuste OEM directo para astilladoras Bandit, Vermeer, Morbark, Peterson, Doppstadt y Jenz.",
-    fullDescription:
-      "Las cuchillas de las astilladoras de madera trabajan en algunas de las condiciones más duras del sector de la reducción de tamaño. Cada rotación impulsa el filo de corte hacia madera dura densa, madera verde con alto contenido de humedad, madera de demolición contaminada o palets reciclados incrustados con clavos y grapas. Una cuchilla que carezca del equilibrio correcto de dureza y resistencia se desafilará en cuestión de horas en madera dura limpia o se romperá al primer golpe de clavo en materia prima contaminada.\n\nLas cuchillas para astilladoras de madera Sureay se forjan a partir de aceros para herramientas de primera calidad - D2 (1.2379), Cr12MoV, y acero para cuchillas astilladoras de alto contenido en carbono - tratados térmicamente al vacío hasta HRC 57-62, seguidos de una inmersión criogénica profunda obligatoria a -196°C. Esta secuencia de procesamiento produce una microestructura martensítica totalmente estabilizada con una distribución uniforme del carburo a lo largo de toda la sección transversal de la hoja, proporcionando el doble requisito de rendimiento del astillado de madera: resistencia a la abrasión para mantener un filo afilado a través de cientos de metros cúbicos de madera, combinada con la suficiente tenacidad del núcleo para sobrevivir a los impactos de contaminantes metálicos incrustados sin fractura catastrófica.\n\n## Tipo de astilladora y geometría de la hoja\n\n### Astilladoras de tambor\n\nLas astilladoras de tambor (Vermeer BC1800, Bandit 1990, Morbark 40/36) utilizan cuchillas rectangulares atornilladas a un tambor giratorio de alta velocidad (normalmente 1.000-2.500 RPM). La cuchilla actúa como una cuchilla de cepillo - cada revolución pela una viruta de la madera de entrada a la profundidad de corte programada. La longitud de la hoja corresponde a la anchura del tambor (normalmente 200-600 mm), y el grosor (normalmente 12-30 mm) determina la profundidad máxima de la viruta.\n\nParámetros críticos para el rendimiento de la astilladora de tambor:\n- **Ángulo de bisel:** 30°-37° (madera dura) o 25°-30° (madera blanda/madera verde)\n- **Paralelismo del grosor:** ≤ 0,05 mm - un grosor desigual de las cuchillas provoca desequilibrios en el tambor, vibraciones destructivas y un tamaño inconsistente de las astillas\n- **Tolerancia de posición de los orificios:** ±0,10 mm - garantiza que el filo de corte se proyecte uniformemente en toda la anchura del tambor después del montaje\n\n### Cuchillas astilladoras de disco\n\nLas astilladoras de disco (Peterson 5710, Morbark 50/48, Precision Husky) montan las cuchillas radialmente en un pesado disco giratorio. La madera se introduce axialmente en la cara del disco y las cuchillas producen astillas mediante una combinación de cizallamiento y división. Las cuchillas de las astilladoras de disco suelen ser más cortas pero más gruesas que las cuchillas de las astilladoras de tambor, y están sometidas a mayores cargas de impacto individuales de troncos de gran diámetro.\n\nLas cuchillas de las astilladoras de disco requieren la máxima especificación de tenacidad: Se recomienda utilizar acero Cr12MoV o acero modificado para cuchillas de astilladoras con HRC 55-58 para astilladoras de disco de troncos enteros que procesen madera dura de más de 300 mm de diámetro.\n\n### Cuchillas para astilladoras de troncos enteros / biomasa\n\nLas astilladoras de biomasa y árboles enteros (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) procesan árboles enteros, incluyendo ramas, cepellones y broza. La materia prima contiene tierra incrustada, piedras y, ocasionalmente, restos metálicos. Las cuchillas para estas aplicaciones se fabrican con acero de impacto optimizado HRC 55-58, con un ángulo de bisel más amplio (35°-42°) que distribuye las fuerzas de impacto a través de una cara de corte más amplia y evita el vuelco del filo en material de alimentación contaminado.\n\n## Selección de material por materia prima\n\n**Acero para cuchillas astilladoras de alto contenido en carbono (HRC 55-58):** La calidad estándar del sector para el astillado de madera verde y forestal en general. Rentable, fácil de reafilar en amoladoras de superficie estándar y suficientemente resistente para una contaminación moderada por clavos. Adecuado para contratistas de jardinería, empresas de servicios de árboles y operaciones municipales de residuos verdes.\n\n**Acero para herramientas en frío D2 / Cr12MoV (HRC 58-62):** Especificación de primera calidad para el reciclado comercial de madera de gran volumen y la producción de astillas de combustible de biomasa. La matriz de carburo de cromo al 12% proporciona una vida útil del filo entre 2 y 3 veces mayor que el acero al carbono estándar en maderas duras abrasivas (roble, nogal americano, corteza de hierro) y madera reciclada seca. Recomendada para astilladoras de tambor industriales que trabajan en turnos continuos de 8 a 16 horas.\n\n**La especificación definitiva para el procesamiento de biomasa en condiciones extremas. Las cuchillas con punta de carburo ofrecen una vida útil 5-10 veces superior a las D2 en madera de demolición contaminada, traviesas de ferrocarril y cepellones muy sucios. El filo de corte de carburo está soldado al vacío en un cuerpo de acero de aleación resistente que absorbe la energía de impacto bruta sin transmitir la fractura frágil al inserto de carburo.\n\n## Rectificado de precisión para calidad de viruta\n\nLa geometría de la viruta es la principal medida de calidad del producto en la producción de combustible de biomasa: las fábricas de pasta de papel, las centrales eléctricas de biomasa y los fabricantes de pelets especifican normas estrictas de distribución del tamaño de la viruta (por ejemplo, EN 17225-4 / TAPPI T257). El grosor desigual de las cuchillas o los ángulos de bisel incoherentes en un tambor o disco de varias cuchillas producen astillas de tamaño excesivo o insuficiente que no cumplen las especificaciones de cribado, lo que requiere un procesamiento secundario o provoca deducciones en el precio.\n\nLas cuchillas de las astilladoras Sureay están rectificadas con precisión:\n- **Tolerancia de espesor:** ±0,05 mm en toda la longitud de la cuchilla\n- **Ángulo de bisel:** ±0,5° (verificado mediante comparador óptico)\n- **Planeidad de la cara:** ≤ 0,05 mm por cada 300 mm de longitud\n- **Acabado de la superficie:** Ra ≤ 1,6 μm en la cara de rastrillo para reducir la fricción y expulsar limpiamente las virutas\n\n## Suministro de contracuchillas (yunque) y placas de desgaste\n\nLa contracuchilla (yunque o cuchilla de bancada) establece la holgura que determina el espesor mínimo de viruta. Las contracuchillas desgastadas o desalineadas anulan las ventajas de las cuchillas nuevas. Sureay fabrica contracuchillas y placas de desgaste reemplazables de acero D2 y acero al manganeso, suministradas como juegos integrados con especificaciones de holgura verificadas previamente para su modelo de astilladora.\n\n## Capacidad de reafilado\n\nA diferencia de cuchillas trituradoras, las cuchillas para astilladoras están diseñadas para múltiples ciclos de reafilado. Nuestra cuchilla tratamiento térmico templada garantiza una dureza uniforme desde la superficie hasta el núcleo - cada reafilado expone acero de idéntica dureza y características de desgaste. Una cuchilla astilladora D2 estándar puede reafilarse entre 8 y 12 veces antes de alcanzar un espesor mínimo seguro, lo que hace que el coste total de propiedad sea extremadamente competitivo.",
-    link: "/products/wood-chipper-blades",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit Industries",
-      "Vermeer",
-      "Morbark",
-      "Peterson Pacific",
-      "Doppstadt",
-      "Jenz",
-      "CBI",
-      "Precision Husky",
-      "Bruks Siwertell",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value:
-          "High-Carbon Chipper Steel | D2 (1.2379) / Cr12MoV | TCT Carbide Tipped",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
-      },
-      {
-        label: "Thickness Tolerance",
-        value: "±0.05 mm (prevents drum imbalance & vibration)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per timber species & contamination level)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
-        value:
-          "Forestry Drum Chippers, Disc Chippers, Biomass Whole-Tree Chippers, Pallet Recycling",
-      },
-    ],
-    components: [
-      {
-        id: "through-hardened-core",
-        tag: "METALURGIA",
-        title:
-          "Endurecido en toda su masa para maximizar la vida útil de la rectificación",
-        description:
-          "A diferencia de las alternativas cementadas que dejan al descubierto un núcleo blando tras el primer reafilado, las cuchillas para astilladoras Sureay se someten a un tratamiento térmico al vacío para conseguir una dureza uniforme (HRC 57-62) desde la superficie hasta el núcleo. Cada reafilado ofrece un rendimiento de filo idéntico al de una cuchilla nueva, lo que permite entre 8 y 12 ciclos de servicio productivos por cuchilla.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "DURABILIDAD",
-        title: "Resistencia a clavos y contaminantes",
-        description:
-          "La madera de demolición contaminada, los palés reciclados y los residuos verdes urbanos contienen clavos, tornillos y piedras ocultos. Nuestro tratamiento criogénico profundo (-196 °C) estabiliza la microestructura martensítica, proporcionando la dureza del núcleo necesaria para absorber los impactos de los golpes metálicos sin que se produzcan fracturas frágiles en los bordes ni grietas en las hojas.",
-      },
-      {
-        id: "chip-quality",
-        tag: "CALIDAD DE LA SALIDA",
-        title: "Bisel de precisión para un tamaño de viruta uniforme",
-        description:
-          "Las centrales eléctricas de biomasa y las fábricas de pasta de papel penalizan las distribuciones de tamaño de virutas fuera de especificación. Todas las cuchillas están rectificadas con un grosor de ±0,05 mm y un ángulo de bisel de ±0,5°, lo que garantiza una geometría de virutas uniforme en toda la anchura del tambor o disco que cumple las normas EN 17225 y TAPPI T257.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Tipo de astilladora / Plataforma OEM",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones estándar para los principales fabricantes de astilladoras. patrones de pernos de 2, 3 y 4 orificios mecanizados por CNC según los planos exactos de los OEM. Contracuchillas y placas de desgaste disponibles como juegos combinados. Longitudes personalizadas de hasta 800 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Bandit 12" / 15" Drum',
-        od: "230",
-        id: "80",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 18" / 19" Drum',
-        od: "295",
-        id: "80",
-        thickness: "19",
-      },
-      {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: "Morbark 40/36 Drum",
-        od: "400",
-        id: "100",
-        thickness: "22",
-      },
-      {
-        spec: "Morbark 50/48 Disc",
-        od: "250",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Peterson 5710 Disc",
-        od: "280",
-        id: "130",
-        thickness: "25",
-      },
-      {
-        spec: "Doppstadt / Jenz Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Heavy Whole-Tree Chipper",
-        od: "600",
-        id: "150",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 380,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "¿Qué material de cuchilla debo utilizar para astillar madera verde limpia frente a madera de demolición contaminada?",
-          answer:
-            "Para madera verde limpia (silvicultura, arboricultura, desbroce), el acero estándar para cuchillas de astilladoras de alto contenido en carbono con HRC 55-58 proporciona una excelente duración del filo al menor coste por ciclo de reafilado. Para madera de demolición contaminada, palets reciclados o residuos verdes urbanos con clavos, tornillos y piedras incrustados, mejore a Cr12MoV o D2 a HRC 58-60. La matriz de carburo de cromo proporciona una vida útil del filo entre 2 y 3 veces mayor en madera seca abrasiva, al tiempo que mantiene la dureza suficiente para sobrevivir a impactos metálicos moderados. Para arroyos muy contaminados (traviesas de ferrocarril, escombros de C&D), especifique cuchillas con punta de carburo TCT que proporcionan una vida útil de 5 a 10 veces mayor que las D2.",
-        },
-        {
-          question:
-            "¿Cómo afecta la tolerancia del grosor de las cuchillas a la calidad de las virutas y a la vibración del tambor?",
-          answer:
-            "El grosor de las cuchillas controla directamente la profundidad de las virutas e influye en el equilibrio del tambor. Si el grosor de las cuchillas varía en más de 0,10 mm en un tambor de varias cuchillas, las cuchillas más gruesas cortan a mayor profundidad y producen astillas de tamaño excesivo, mientras que las cuchillas más finas producen astillas de tamaño insuficiente; ambas condiciones no cumplen las especificaciones de cribado de combustible de biomasa (EN 17225-4). Además, la masa desigual de las cuchillas crea un desequilibrio dinámico a las RPM de funcionamiento (1.000-2.500 RPM), causando vibraciones destructivas que aceleran el fallo de los cojinetes y fatigan la carcasa del tambor. Nuestra tolerancia de espesor de ±0,05 mm elimina ambos problemas.",
-        },
-        {
-          question:
-            "¿Qué ángulo de bisel debo especificar para el astillado de madera dura frente al de madera blanda?",
-          answer:
-            "Para madera blanda y madera verde con alto contenido de humedad (pino, abeto, álamo), especifique un ángulo de bisel de 25°-30°. El ángulo incluido más agudo corta la madera blanda y fibrosa con una fuerza de corte mínima y produce caras de virutas limpias con poco desgarro de fibras. Para madera dura seca (roble, nogal americano, eucalipto), aumente a 30°-37° para reforzar el filo de corte contra la mayor densidad y carga de impacto. Para biomasa contaminada y astillado de árboles enteros con contaminación de tierra y piedras, especifique 35°-42° - el bisel más ancho distribuye las fuerzas de impacto a través de una cara de corte más amplia, evitando el vuelco del filo.",
-        },
-        {
-          question:
-            "¿Cuántas veces se pueden reafilar las cuchillas de la astilladora Sureay y cuál es el procedimiento correcto de reafilado?",
-          answer:
-            "Nuestras cuchillas de astilladora endurecidas pueden reafilarse entre 8 y 12 veces antes de alcanzar un grosor mínimo seguro (normalmente un 60-70% del grosor original). Rectifique en una amoladora de superficie húmeda utilizando una muela de óxido de aluminio (grano 46-60) a 0,02-0,05 mm de profundidad por pasada para evitar daños térmicos en el filo tratado térmicamente. Nunca afile en seco las cuchillas astilladoras - el sobrecalentamiento localizado por encima de 200°C extrae el temple y ablanda el filo. Después del afilado, verifique el ángulo del bisel con un comparador óptico o un transportador digital. También ofrecemos un servicio profesional de reafilado con verificación de la dureza.",
-        },
-        {
-          question:
-            "¿Qué causa el vuelco prematuro de los bordes de las cuchillas de mi astilladora y cómo puedo evitarlo?",
-          answer:
-            "El vuelco del filo (el filo de corte se dobla en lugar de astillarse o desgastarse gradualmente) indica que la dureza de la hoja es demasiado baja para la materia prima, o que el ángulo del bisel es demasiado agudo para la carga de impacto. En las cuchillas estándar de acero al carbono que procesan madera dura seca, el filo carece de suficiente refuerzo de carburo para resistir la deformación plástica. Cambie a D2 o Cr12MoV a HRC 58-62 y aumente el ángulo de biselado entre 3º y 5º. Compruebe también la holgura de la contracuchilla: una holgura excesiva (> 1,5 mm) obliga a la cuchilla a fracturar la madera por flexión en lugar de por cizallamiento, lo que aumenta drásticamente la carga sobre el filo.",
-        },
-        {
-          question:
-            "¿Debo sustituir la contracuchilla (yunque) cuando instale cuchillas astilladoras nuevas?",
-          answer:
-            "La contracuchilla debe inspeccionarse cada vez que se cambien las cuchillas de la astilladora. Una contracuchilla desgastada con el filo redondeado o astillado obliga a las cuchillas nuevas a trabajar contra un espacio de corte inconsistente, reduciendo su vida útil efectiva en un 30-50% y produciendo una mala calidad de las astillas. Sustituya o rectifique la contracuchilla cuando el filo de corte muestre un redondeo visible superior a 1,0 mm o un astillado superior a 0,5 mm. Suministramos contracuchillas emparejadas fabricadas en acero D2 o acero al manganeso como juegos integrados con holgura preverificada.",
-        },
-        {
-          question:
-            "¿Qué distribución del tamaño de las astillas debería tener como objetivo la producción de combustible de biomasa frente al suministro de las fábricas de celulosa?",
-          answer:
-            "Las centrales eléctricas de biomasa suelen exigir astillas de entre 3 y 50 mm (EN 17225-4 Clase P31s o P45s) con menos del 5% de finos (< 3 mm) y menos del 1% de sobredimensionados (> 63 mm). Las fábricas de pasta de papel exigen especificaciones más estrictas según TAPPI T257: normalmente un 80% de aceptación en el rango de 7-25 mm con límites estrictos en virutas de espiga y piezas sobredimensionadas. Para cumplir estas especificaciones se requiere un grosor constante de la cuchilla (±0,05 mm), un ángulo de bisel correcto, una holgura adecuada de la contracuchilla (0,5-1,0 mm) y una velocidad uniforme del tambor. Podemos recomendarle la geometría de cuchilla óptima para sus especificaciones.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando compras en Sureay, evitas los márgenes de intermediarios y te comunicas directamente con los ingenieros que forjan y afilan tus cuchillas.",
-        },
-        {
-          question:
-            "¿Pueden suministrar cuchillas para mi modelo específico de astilladora si no figura en sus dimensiones estándar?",
-          answer:
-            "Sí, envíenos una muestra de su cuchilla actual, un dibujo técnico o la marca y el número de modelo de su astilladora. Confirmaremos la longitud, la anchura, el grosor, el ángulo de biselado y el patrón de orificios para pernos, y fabricaremos repuestos directos exactos. Mantenemos una amplia base de datos de planos de cuchillas de astilladoras OEM para plataformas Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz y CBI. Las dimensiones personalizadas se fabrican según plano en un plazo de 10-15 días laborables.",
-        },
-        {
-          question:
-            "¿Qué diferencia al tratamiento térmico de Sureay de otras alternativas más baratas?",
-          answer:
-            "A diferencia de los procesos estándar de templado y revenido, todas las cuchillas astilladoras Sureay se someten a un endurecimiento en vacío seguido de un tratamiento criogénico profundo a -196°C. El paso criogénico transforma la austenita retenida en martensita estable, mejorando la resistencia al desgaste hasta en un 40% y garantizando una dureza uniforme desde la superficie hasta el núcleo. Esto significa que cada reafilado expone acero de idéntica calidad - las cuchillas baratas suelen exponer un núcleo más blando tras el primer reafilado, reduciendo a la mitad la vida útil del filo en los siguientes ciclos de afilado.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Las cuchillas astilladoras de repuesto OEM estándar en tamaños de stock suelen enviarse en 48-72 horas. Los perfiles personalizados y las cuchillas con punta de carburo TCT tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question:
-            "¿Qué certificaciones de calidad posee Sureay y puede facilitar informes de ensayos de materiales?",
-          answer:
-            "Sureay cuenta con la certificación ISO 9001:2015. Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional (espesor, ángulo de bisel, posiciones de los orificios de los pernos) y un certificado de lote tratamiento térmico. Para operaciones de biomasa de gran volumen que requieran una trazabilidad completa, se pueden solicitar certificados de composición de la acería e informes dimensionales de la MMC.",
-        },
-        {
-          question:
-            "¿Podemos probar un juego de muestra antes de comprometernos a un pedido de producción completo?",
-          answer:
-            "Sí. Ofrecemos juegos de muestras (normalmente de 2 a 4 cuchillas) para la verificación del ajuste de la máquina y la comparación de la vida útil del filo con su proveedor actual. El plazo de entrega estándar de las muestras es de 5-7 días laborables. Para las cuchillas con punta de metal duro, el plazo de entrega es de 10-12 días laborables.",
-        },
-      ],
-    },
-  },
-  {
-    id: "wood-chipper-anvils",
-    name: "Yunques para astilladoras de madera",
-    fullName:
-      "Contracuchillas y yunques de cuchillas de alta resistencia para astilladoras de tambor y de disco",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Contracuchillos y yunques",
-    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-    badge: "Conjuntos combinados",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
-    ],
-    description:
-      "Yunques para astilladoras de madera (contracuchillas/cuchillas de bancada) afilados con precisión en acero para herramientas D2, Cr12MoV y A8 modificado. Endurecido HRC 55-60 para una máxima vida de reafilado. Establece la separación entre la hoja y el yunque que controla el espesor de la viruta y la eficacia de la astilladora. Rectificado en superficie con un paralelismo de ±0,05 mm en toda su longitud. Recambios compatibles OEM para astilladoras Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen y Jenz.",
-    fullDescription:
-      "El yunque -también llamado contracuchilla, cuchilla de apoyo o cuchilla estacionaria- es el filo de corte fijo dentro de una astilladora de madera contra el que corta el tambor giratorio o la cuchilla de disco. Juntos, la cuchilla de la astilladora y el yunque forman un par de corte en forma de tijera: la cuchilla corta las astillas de la madera y el yunque establece la separación que determina el grosor mínimo de las astillas, la eficacia del corte y la carga del motor.\n\nUn yunque desgastado o desalineado es la causa que más se pasa por alto del bajo rendimiento de la astilladora. Cuando el borde del yunque se redondea, la separación entre la cuchilla y el yunque se ensancha progresivamente. En lugar de un corte limpio, la madera se desgarra y se aplasta en lugar de cortarse, lo que aumenta el consumo de combustible en un 15-25%, produce astillas irregulares que no cumplen las especificaciones de cribado y acelera el desgaste de las propias cuchillas de la astilladora. Sustituir las cuchillas de la astilladora sin inspeccionar el yunque es tirar el dinero: las cuchillas nuevas que trabajan contra un yunque desafilado sólo rinden el 50-70% de su vida útil potencial.\n\n## Por qué el yunque es tan importante como la cuchilla\n\n**Control de la holgura:** La holgura entre la cuchilla y el yunque - normalmente de 0,5-1,5 mm para astilladoras de tambor y de 0,8-2,0 mm para astilladoras de disco - controla directamente el espesor mínimo de la viruta. Un yunque desgastado aumenta esta separación más allá de lo especificado, produciendo astillas sobredimensionadas y largas astillas fibrosas que no cumplen las normas de cribado de combustibles de biomasa (EN 17225-4). Nuestros yunques tienen un rectificado superficial de precisión de ±0,05 mm de paralelismo en toda su longitud, lo que garantiza una separación de cizallamiento uniforme en toda la anchura de corte.\n\n**Absorción de impactos:** A diferencia de la cuchilla de la astilladora (que gira a gran velocidad), el yunque absorbe toda la fuerza de reacción de cada corte como carga de impacto estática. A lo largo de millones de ciclos de astillado, esta carga de impacto sostenida provoca la deformación de los bordes, microfisuras y, finalmente, la fractura general en yunques mal tratados térmicamente. Los yunques Sureay están endurecidos hasta HRC 55-60 mediante vacío tratamiento térmico - lo suficientemente duros para mantener un borde afilado contra madera abrasiva, pero lo suficientemente resistentes para absorber impactos repetidos sin fracturas frágiles.\n\n**Diferente tasa de desgaste, diferente ciclo de sustitución:** El yunque suele durar entre 2 y 4 veces más que las cuchillas de la astilladora porque funciona bajo carga de compresión (estática) en lugar de la carga dinámica de cizallamiento de la cuchilla. Sin embargo, debido a que el desgaste del yunque es gradual, los operadores a menudo pasan por alto el deterioro progresivo hasta que la calidad de las astillas se ha degradado significativamente. Recomendamos inspeccionar el borde del yunque cada vez que se cambien o afilen las cuchillas de la astilladora.\n\n## Selección del material\n\n**Acero para herramientas D2 / Cr12MoV (HRC 58-60):** La especificación de primera calidad para operaciones comerciales de gran volumen de procesamiento de madera y biomasa. La matriz de carburo de cromo al 12% proporciona una excelente resistencia a la abrasión contra maderas duras densas y materias primas pesadas como la corteza. Recomendada para astilladoras de tambor industriales (Morbark, Vermeer serie HG, Doppstadt) que trabajan en turnos continuos de 8 a 16 horas.\n\n**Acero para herramientas A8 modificado (HRC 54-58):** El grado OEM estándar del sector utilizado por Bandit, Morbark y Vermeer para yunques originales de fábrica. A8 Modificado proporciona un excelente equilibrio de resistencia al desgaste y tenacidad al impacto, lo que es crítico para yunques que deben absorber millones de ciclos de impacto sin microfisuras. La elección correcta para operaciones generales de silvicultura y servicio de árboles que procesan especies mixtas con contaminación moderada.\n\n**Acero al manganeso / 42CrMo (HRC 50-55):** Una opción rentable y de gran dureza para operadores que procesan madera de demolición muy contaminada, traviesas de ferrocarril y residuos verdes urbanos en los que la materia prima contiene importantes restos metálicos. La menor dureza prioriza la absorción de impactos sobre la resistencia al desgaste, evitando la fractura catastrófica del yunque que puede dañar la carcasa del tambor.\n\n## Montaje ajustable y ajuste de holgura\n\nLa mayoría de los fabricantes de astilladoras proporcionan un sistema de ajuste mecánico (normalmente placas de calce o pernos de montaje ajustables) para avanzar el yunque hacia la cuchilla a medida que ambos componentes se desgastan, manteniendo la holgura diseñada. Los yunques Sureay están mecanizados mediante CNC con orificios de montaje ranurados o sobredimensionados que coinciden exactamente con el mecanismo de ajuste de su OEM, lo que garantiza que los equipos de mantenimiento puedan ajustar la holgura con precisión y fijarla de forma segura.\n\n## Juegos de cuchillas y yunques a juego\n\nPara los operarios que cambian simultáneamente las cuchillas y el yunque, ofrecemos juegos adaptados: cuchillas de astilladora y contracuchilla fabricadas a partir del mismo lote de acero, tratadas térmicamente en el mismo ciclo de horno de vacío y rectificadas superficialmente con la misma tolerancia de paralelismo. Un juego emparejado elimina el desajuste de dureza entre la cuchilla y el yunque que causa un desgaste acelerado cuando se obtienen componentes de diferentes proveedores.",
-    link: "/products/wood-chipper-anvils",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Morbark",
-      "Timberwolf",
-      "Schliesing",
-      "Greenmech",
-      "Jensen",
-      "Jenz",
-      "Eschlböck",
-      "Forst",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV) | A8 Modified | 42CrMo Manganese Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–60 (Through-Hardened, Surface = Core)",
-      },
-      {
-        label: "Parallelism",
-        value: "±0.05 mm full-length (uniform shear gap)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single-bevel 30°–37° (matched to chipper blade angle)",
-      },
-      {
-        label: "Mounting",
-        value: "Slotted holes / shim-adjustable (OEM clearance adjustment)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 5–10 regrind cycles per anvil",
-      },
-      {
-        label: "Application",
-        value:
-          "Drum Chippers, Disc Chippers, Biomass Chippers, Landscape Chippers",
-      },
-    ],
-    components: [
-      {
-        id: "clearance-gap-control",
-        tag: "EFICACIA DE CORTE",
-        title: "Control de precisión de la holgura",
-        description:
-          "La distancia entre la hoja y el yunque determina el grosor de la viruta, la fuerza de corte y el consumo de combustible. Un filo de yunque redondeado ensancha esta separación más allá de lo especificado, convirtiendo el cizallamiento limpio en un triturado ineficiente. Nuestros yunques están rectificados superficialmente con un paralelismo de ±0,05 mm para mantener la separación diseñada en toda la anchura de corte, restaurando la mordida de autoalimentación y reduciendo la carga del motor hasta en un 20%.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "DURABILIDAD",
-        title: "Resistencia al impacto estático",
-        description:
-          "El yunque absorbe toda la fuerza de reacción de cada corte como una carga de impacto estática: millones de impactos por turno. El acero templado D2 y A8 modificado a HRC 54-60 proporciona el equilibrio correcto: lo suficientemente duro para mantener un borde afilado contra la madera abrasiva, lo suficientemente resistente para absorber impactos repetidos sin microfisuras ni fracturas catastróficas.",
-      },
-      {
-        id: "matched-sets",
-        tag: "INTEGRACIÓN DEL SISTEMA",
-        title: "Juegos de cuchillas y yunques",
-        description:
-          "Las cuchillas y contracuchillas de astilladoras de distintos proveedores suelen tener durezas desiguales: un yunque más duro desgasta la cuchilla prematuramente, o un yunque más blando se degrada antes de lo esperado. Nuestros juegos emparejados se fabrican a partir del mismo lote de acero y se someten a tratamiento térmico en el mismo ciclo, lo que garantiza índices de desgaste equilibrados y la máxima vida útil combinada.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Astilladora OEM / Modelo",
-      col1: "Longitud (mm)",
-      col2: "Anchura (mm)",
-      col3: "Espesor (mm)",
-      caption:
-        "* Dimensiones estándar del yunque de repuesto OEM. Agujeros de montaje ranurados mecanizados por CNC según los patrones de ajuste de holgura exactos de OEM. Juegos de cuchilla y yunque disponibles para todos los tamaños. Longitudes personalizadas de hasta 600 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Bandit 12" / 15" / Mighty Bandit',
-        od: "185",
-        id: "75",
-        thickness: "10",
-      },
-      {
-        spec: 'Bandit 18" / 19" / 1290 / 1590',
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      {
-        spec: "Vermeer BC1200 / BC1500",
-        od: "200",
-        id: "80",
-        thickness: "12",
-      },
-      {
-        spec: "Vermeer BC1800 / BC2000",
-        od: "260",
-        id: "100",
-        thickness: "16",
-      },
-      {
-        spec: "Morbark 2 / 5 / 7 / 12 / 13",
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      {
-        spec: "Morbark 40/36 / 50/48",
-        od: "400",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Timberwolf 150 / 190 / 230",
-        od: "230",
-        id: "80",
-        thickness: "16",
-      },
-      {
-        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
-        od: "260",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "Greenmech / Jensen / Forst",
-        od: "Per OEM Drawing",
-        id: "Per OEM Drawing",
-        thickness: "Per OEM Drawing",
-      },
-    ],
-    relatedBladeIds: ["wood-chipper-blades"],
-    offers: {
-      lowPrice: 25,
-      highPrice: 250,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "¿Con qué frecuencia debo sustituir o reafilar el yunque en comparación con las cuchillas de la astilladora?",
-          answer:
-            "El yunque suele durar entre 2 y 4 veces más que las cuchillas de la astilladora porque funciona con una carga de compresión estática en lugar de con la carga de cizallamiento dinámica de la cuchilla. Sin embargo, recomendamos inspeccionar el borde del yunque cada vez que se cambien o volteen las cuchillas de la astilladora. Cuando el borde del yunque muestre un redondeo visible superior a 1,0 mm (compruébelo con una regla bajo luz brillante), vuelva a rectificarlo o sustitúyalo. La instalación de cuchillas astilladoras nuevas contra un yunque desgastado sólo proporciona un 50-70% de su vida útil potencial y produce una calidad de astillas pobre, independientemente del afilado de la cuchilla.",
-        },
-        {
-          question:
-            "¿Qué distancia debo dejar entre la cuchilla de la astilladora y el yunque?",
-          answer:
-            "El espacio libre varía según el tipo de astilladora y la especie de madera. Para astilladoras de tambor que procesan madera blanda verde: 0,5-1,0 mm. Para astilladoras de tambor en madera dura seca: 0,8-1,5 mm. Para astilladoras de disco: 1.0-2,0 mm. Consulte siempre las especificaciones exactas en el manual del fabricante de su astilladora. La separación debe medirse en varios puntos a lo largo de toda la anchura del yunque utilizando una galga de espesores. Si la separación varía en más de 0,3 mm de un extremo a otro, el paralelismo de la cara del yunque se ha degradado y es necesario rectificar o sustituir el yunque.",
-        },
-        {
-          question:
-            "¿Debo utilizar la misma calidad de acero para el yunque que para la cuchilla de la astilladora?",
-          answer:
-            "No necesariamente: el yunque y la cuchilla tienen diferentes modos de desgaste y, por tanto, una metalurgia óptima diferente. La cuchilla experimenta cargas dinámicas de cizallamiento a alta velocidad y se beneficia de la máxima dureza del filo (HRC 58-62). El yunque experimenta impactos de compresión estáticos y se beneficia de una dureza ligeramente inferior (HRC 54-58) que proporciona una mayor absorción del impacto. Por esta razón, el yunque estándar de la industria es el A8 modificado con HRC 54-58. Sin embargo, para operaciones de biomasa de gran volumen en madera dura limpia, se recomienda mejorar tanto la hoja como el yunque a D2 con HRC 58-60.",
-        },
-        {
-          question:
-            "¿Qué hace que una astilladora deje de autoalimentarse incluso con las cuchillas afiladas?",
-          answer:
-            "Si la astilladora deja de arrastrar madera a la cámara de corte a pesar de tener las cuchillas recién afiladas o nuevas, es casi seguro que el yunque está desgastado. Un borde redondeado del yunque aumenta el espacio libre efectivo, lo que significa que la cuchilla ya no puede morder la madera con la profundidad suficiente para generar la fuerza de arrastre. La madera rebota en la superficie de la hoja en lugar de ser agarrada y arrastrada. Inspeccione y rectifique o sustituya el yunque y, a continuación, reajuste la holgura a las especificaciones del fabricante.",
-        },
-        {
-          question:
-            "¿Puedo afilar el yunque con las mismas herramientas que uso para las cuchillas de la astilladora?",
-          answer:
-            "Sí, la misma amoladora en húmedo y la misma muela de óxido de aluminio (grano 46-60) que se utilizan para las cuchillas de las astilladoras sirven para los yunques. Se aplican las mismas reglas: pasadas ligeras (0,02-0,05 mm por pasada), nunca esmerilar en seco sin templar, y verificar el ángulo de bisel con un transportador después del esmerilado. El ángulo de biselado del yunque debe coincidir con la especificación del OEM de la astilladora (normalmente 30°-37°). Algunos operadores descuidan el yunque durante el reafilado porque parece menos desgastado que la cuchilla - esto es un falso ahorro que acorta la vida de la cuchilla y degrada la calidad de la viruta.",
-        },
-        {
-          question:
-            "¿Por qué mi astilladora produce fibras largas y fibrosas en lugar de astillas limpias?",
-          answer:
-            'Las astillas largas y fibrosas, a veces llamadas "espaguetis" o "hilos", indican que la separación entre la hoja y el yunque es demasiado grande. La madera se está desgarrando y separando en lugar de cortarse limpiamente. Esto ocurre cuando el borde del yunque se ha redondeado o cuando el yunque se ha calzado incorrectamente después de cambiar la cuchilla. Reajuste la holgura a la especificación OEM utilizando una galga de espesores. Si el filo del yunque no puede reafilarse hasta obtener un filo limpio y recto (debido a astillas o grietas profundas), sustituya el yunque.',
-        },
-      ],
-      company: [
-        {
-          question: "¿Es usted una empresa comercial o un fabricante directo?",
-          answer:
-            "Somos un fabricante OEM 100% directo establecido en 2008. Cuando usted compra a Sureay, evita los márgenes de intermediarios y se comunica directamente con los ingenieros que forjan y afilan sus cuchillas y yunques.",
-        },
-        {
-          question:
-            "¿Pueden suministrar juegos de cuchillas y yunques adaptados a mi modelo específico de astilladora?",
-          answer:
-            "Sí. Recomendamos encarecidamente la compra de cuchillas y yunques como juegos emparejados, fabricados a partir del mismo lote de acero y tratados térmicamente en el mismo ciclo de horno de vacío. Esto garantiza una dureza y un desgaste equilibrados en ambos componentes. Indique la marca y el número de modelo de su astilladora y le suministraremos un juego completo con recomendaciones de holgura previamente verificadas. Hay juegos adaptados disponibles para las plataformas Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck y Forst.",
-        },
-        {
-          question:
-            "¿Pueden fabricar un yunque para mi astilladora si no figura en sus dimensiones estándar?",
-          answer:
-            "Sí, envíenos su yunque actual, un dibujo técnico o la marca y el número de modelo de su astilladora. Realizamos ingeniería inversa de yunques de repuesto a partir de dibujos de OEM o muestras físicas, verificando el ajuste en una MMC antes de la producción. Las longitudes personalizadas de hasta 600 mm se fabrican en un plazo de 10-15 días laborables.",
-        },
-        {
-          question: "¿Hacen envíos a todo el mundo y cuánto tardan?",
-          answer:
-            "Sí, exportamos a más de 50 países. Los yunques de repuesto OEM estándar en tamaños de stock suelen enviarse en 48-72 horas. Las dimensiones personalizadas tardan entre 10 y 15 días laborables. Nos asociamos directamente con DHL, FedEx y transportistas marítimos internacionales para una entrega fiable puerta a puerta.",
-        },
-        {
-          question: "¿Qué documentación de calidad se entrega con cada yunque?",
-          answer:
-            "Cada envío incluye un informe de ensayo de dureza Rockwell HRC, un registro de inspección dimensional (longitud, anchura, paralelismo del espesor, posiciones de los orificios de montaje) y un certificado de lote tratamiento térmico. En el caso de los juegos de cuchilla y yunque emparejados, un informe de inspección combinado documenta la dureza de ambos componentes para verificar el diferencial de dureza diseñado.",
-        },
-      ],
-    },
-  },
-  {
+    compatibleMachinesIntro:
+      "Obtenga cestas y placas de criba de repuesto fabricadas según el diseño de montaje, la curvatura y el patrón de apertura de su trituradora. Sureay ofrece disposiciones de orificios personalizadas y opciones de materiales de desgaste. Comparta su dibujo de pantalla o muestra para obtener una cotización adaptada a su aplicación de detección de descargas. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
     id: "shredder-screens",
-    name: "Cribas para Trituradoras",
-    fullName: "Cribas para Trituradoras, Cestas y Placas Perforadas",
+    name: "Cribas para trituradoras",
+    fullName: "Cribas, cestas y placas perforadas para trituradoras",
+    seoTitle:
+      "Pantallas trituradoras de repuesto | Cestas y platos personalizados",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Cribas para Trituradoras",
-    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    categoryDisplay: "Cribas para trituradoras",
+    image: "/images/products/shredder-screens/shredder-screens-04-square.webp",
+    imageDimensions: {
+      width: 836,
+      height: 836,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Piezas de Desgaste",
     badgeColor: "teal",
     gallery: [
-      "/images/products/shredder-screens/shredder-screens-04.webp",
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
@@ -5581,84 +6855,44 @@ export const blades: Blade[] = [
       "Pila de placas de criba curvadas sobre un palé, mostrando el patrón de orificios redondos al tresbolillo",
     ],
     description:
-      "Cribas perforadas para trituradoras, cestas y placas de criba en S355J2 y Hardox 400–500. Orificio Ø 8–80 mm, espesor 12–30 mm, fabricadas por ingeniería inversa a partir de su criba desgastada.",
-    fullDescription:
-      "La criba es el componente que realmente determina el tamaño de partícula de salida — el rotor y las cuchillas solo reducen el material hasta que es lo bastante pequeño para pasar a través de ella. Sin embargo, es la pieza que la mayoría de los operadores trata como algo secundario, trabajando durante meses con una criba cegada o abocardada mientras culpan a las cuchillas de la caída de producción. En una línea de reducción de tamaño, el estado y la especificación de la criba explican más pérdida de capacidad que el desgaste de las cuchillas.\n\nSureay fabrica cribas para trituradoras como piezas de desgaste diseñadas, no como chapa perforada genérica. Cada criba se curva al radio exacto del rotor, de modo que la holgura entre la punta del rotor y la superficie de la criba se mantiene uniforme en todo el ancho de corte. Una holgura irregular significa que el material es arrastrado y molido en lugar de cortado, lo que eleva el consumo de amperios del motor, genera calor y finos, y acelera el desgaste de las mismas cuchillas que la criba debía proteger.\n\n## Las tres formas de criba\n\n**Cesta de criba (semicircular o cilíndrica completa):** La geometría estándar para trituradoras de uno y dos ejes. Se suministra como media carcasa que envuelve el rotor, o como dos mitades unidas en un cilindro completo. Las cestas ofrecen la mayor superficie abierta y son la forma de mayor desgaste, porque toda la superficie interior está en contacto con el material en circulación.\n\n**Placa de criba (plana):** Se emplea en granuladores y molinos junto a prensa, donde la geometría de la cámara de corte es plana en lugar de cilíndrica. Más fácil de fabricar y de reproducir por ingeniería inversa, y normalmente la forma más económica de reemplazar.\n\n**Criba de hoz:** Una criba parcial curvada que se instala donde la geometría de descarga no admite una cesta completa. Habitual en trituradoras compactas y móviles.\n\n**Criba en casete:** Un inserto enmarcado de cambio rápido. Mayor coste inicial y un tiempo de cambio drásticamente menor — conviene especificarla en líneas que trabajan con varios tamaños de partícula en la misma máquina.\n\n## Especificar una criba: tres números que importan\n\nToda criba se define por tres dimensiones que interactúan entre sí, y cambiar una obliga a cambiar las demás:\n\n- **El diámetro de orificio (Ø)** fija el tamaño máximo de partícula que pasa. Es la cifra que los compradores suelen indicar, y normalmente la única que indican.\n- **El espesor de chapa (t)** determina cuánto dura la criba. Una chapa más gruesa resiste la deformación y el abocardado, pero reduce la superficie abierta efectiva, porque cada orificio se convierte en un canal más largo que el material debe atravesar.\n- **El ancho de ligamento** — el nervio de acero entre orificios contiguos — define la resistencia estructural de la criba. Si se reduce demasiado el ligamento buscando superficie abierta, la criba se agrieta entre orificios bajo impacto, normalmente empezando por el borde de descarga.\n\nLa superficie abierta se deriva directamente del diámetro de orificio y del ligamento. Para orificios redondos con paso al tresbolillo de 60°, la superficie abierta ≈ 90,7 × (d / p)², donde p es el paso entre centros de orificio. Pasar de un orificio de 20 mm con paso de 28 mm a un orificio de 20 mm con paso de 24 mm eleva la superficie abierta de aproximadamente el 46 % al 63 % — y reduce el ligamento de 8 mm a 4 mm, lo que en una trituradora de plástico con contaminación metálica ocasional fallará pronto.\n\n## Por qué las cribas no deben fabricarse en acero de herramientas\n\nEste es el error de especificación más frecuente que corregimos. Una criba no es una herramienta de corte. Es un elemento estructural perforado que absorbe impacto y abrasión continuos mientras mantiene su forma. Templar una criba a HRC 58–62 como si fuera una cuchilla la vuelve frágil: los ligamentos se agrietan, y una criba fracturada puede soltar fragmentos de acero al rotor y destruir un juego completo de cuchillas.\n\nLo que una criba necesita es tenacidad con una resistencia a la abrasión adecuada:\n\n- **Chapa estructural S355J2** — la opción por defecto para plásticos limpios, film, papel y RSU ligero. Tenaz, económica, fácil de retaladrar y reparar.\n- **Hardox 400 / 450** — para residuo post-consumo mixto, madera con áridos y alimentación moderadamente abrasiva. Aproximadamente 2–3× la vida útil del S355 con un sobrecoste moderado.\n- **Hardox 500 o superficies con recargue duro** — para compuestos cargados con fibra de vidrio, madera de demolición contaminada, residuo de construcción y demolición y otras corrientes muy abrasivas. El recargue se aplica de forma selectiva sobre la cara interior de mayor desgaste, mientras la chapa base conserva su tenacidad.\n\n## Ingeniería inversa a partir de una criba desgastada\n\nLa mayoría de los pedidos de repuesto llegan sin plano. Envíenos fotografías de la criba desgastada con una cinta métrica sobre el paso de los orificios, además de la marca y el modelo de la máquina, y elaboraremos un plano de fabricación para su aprobación antes de cortar acero. Cuando la criba original se ha abocardado, trabajamos a partir de la geometría no desgastada de los bordes en lugar de los orificios centrales agrandados, de modo que el repuesto restituye el tamaño de partícula original en vez de reproducir el estado desgastado.",
+      "Cribas de repuesto para trituradoras de un solo eje, con aperturas de 8 a 80 mm. Cestas y placas personalizadas que se adaptan al patrón de orificios, la curvatura y el montaje.",
     disambiguation:
-      "¿Busca las herramientas de corte en lugar de la criba de dimensionado? Consulte [Cuchillas para Trituradoras de Un Solo Eje](/products/single-shaft-shredder-blades) para insertos de rotor, contracuchillas y portacuchillas.",
+      "Para conocer las herramientas de corte móviles, consulte [Cuchillas del rotor de la trituradora de un solo eje](/products/single-shaft-shredder-blades) .",
     link: "/products/shredder-screens",
-    compatibleMachines: [
-      "Lindner",
-      "Vecoplan",
-      "UNTHA",
-      "WEIMA",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "SSI Shredding Systems",
-      "Genox",
-    ],
     specs: [
       {
-        label: "Screen Forms",
-        value: "Basket (half/full round) · Flat Plate · Sickle · Cassette",
+        label: "Formularios de pantalla",
+        value: "Cesta (media caña/completa) · Plato llano · Hoz · Cassette",
       },
       {
-        label: "Hole Diameter",
-        value: "8 – 80 mm (round, square or slotted)",
-      },
-      {
-        label: "Plate Thickness",
-        value: "12 – 30 mm",
-      },
-      {
-        label: "Ligament Width",
-        value: "5 – 20 mm (application-matched)",
+        label: "Tamaños",
+        value: "Aberturas de 8 a 80 mm",
       },
       {
         label: "Material",
-        value: "S355J2 · Hardox 400 / 450 / 500 · Hardfaced",
+        value: "S355J2 · Hardox 400 / 450 / 500 · Revestimiento duro",
       },
       {
-        label: "Open Area",
-        value: "34 – 58% (pattern-dependent)",
+        label: "Área abierta",
+        value: "34 – 58% (dependiente del patrón)",
       },
       {
-        label: "Hole Pattern",
-        value: "60° staggered · Straight · Slotted",
+        label: "Patrón de agujeros",
+        value: "60° escalonado · Recto · Ranurado",
       },
       {
-        label: "Supply Format",
-        value: "Drop-in OEM replacement or reverse-engineered from sample",
+        label: "Aplicación",
+        value: "Cribado de descarga en trituradoras de un solo eje",
       },
       {
-        label: "OEM Fitment",
-        value: "Lindner, Vecoplan, UNTHA, WEIMA, Herbold, ZERMA",
+        label: "Compatibilidad con fabricantes de equipos originales (OEM)",
+        value: "Lindner , Vecoplan , UNTHA , WEIMA , Herbold , ZERMA",
       },
     ],
-    componentsIntro:
-      "Una criba se juzga por tres cosas: si mantiene el tamaño de partícula que usted especificó, cuánto tiempo lo mantiene, y si sobrevive a la contaminación de su alimentación sin agrietarse.",
-    components: [
-      {
-        id: "aperture-sets-particle-size",
-        tag: "DIMENSIONADO",
-        title: "La criba define su producto final, no el rotor",
-        description:
-          "Curvada al radio exacto de su rotor para que la holgura punta-criba se mantenga uniforme en todo el ancho. Una holgura constante significa que el material se corta una vez y se descarga, en lugar de recircular y molerse hasta convertirse en calor y finos.",
-      },
-      {
-        id: "toughness-not-hardness",
-        tag: "METALURGIA",
-        title: "Tenacidad, no dureza de cuchilla",
-        description:
-          "Las cribas se especifican en S355J2, Hardox 400–500 o chapa con recargue duro selectivo — nunca templadas a la dureza HRC de una cuchilla. Una criba frágil se agrieta en los ligamentos y puede soltar acero al rotor, llevándose consigo un juego completo de cuchillas.",
-      },
-      {
-        id: "screen-knife-system",
-        tag: "SISTEMA",
-        title: "Cribas, contracuchillas y portacuchillas en un solo pedido",
-        description:
-          "Una criba cegada o abocardada acelera el desgaste de las cuchillas, y las cuchillas desgastadas ciegan la criba más rápido. Suministramos las cribas junto con contracuchillas, portacuchillas, barras de sujeción y separadores, para que todo el conjunto de desgaste se sustituya en la misma parada.",
-      },
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "single-shaft-bed-knives",
+      "granulator-blades",
     ],
     dimensionLabels: {
       col0: "Clase de Salida",
@@ -5670,138 +6904,223 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Fine regrind — PET flake, film",
+        itemNo: "SR002701",
+        spec: "Molido fino: escamas de PET, película",
         od: "8",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
-        spec: "Fine regrind — PET flake, film",
+        itemNo: "SR002702",
+        spec: "Molido fino: escamas de PET, película",
         od: "10",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
-        spec: "General regrind",
+        itemNo: "SR002703",
+        spec: "Rectificado general",
         od: "12",
         bolt: "15",
         thickness: "6",
       },
       {
-        spec: "General regrind",
+        itemNo: "SR002704",
+        spec: "Rectificado general",
         od: "16",
         bolt: "15 – 20",
         thickness: "7",
       },
       {
-        spec: "Coarse regrind",
+        itemNo: "SR002705",
+        spec: "triturado grueso",
         od: "20",
         bolt: "20",
         thickness: "8",
       },
       {
-        spec: "Coarse regrind",
+        itemNo: "SR002706",
+        spec: "triturado grueso",
         od: "25",
         bolt: "20 – 25",
         thickness: "9",
       },
       {
-        spec: "Pre-shred / bulky waste",
+        itemNo: "SR002707",
+        spec: "Residuos pretriturados / voluminosos",
         od: "30",
         bolt: "25",
         thickness: "10",
       },
       {
-        spec: "Pre-shred / bulky waste",
+        itemNo: "SR002708",
+        spec: "Residuos pretriturados / voluminosos",
         od: "40",
         bolt: "25 – 30",
         thickness: "12",
       },
       {
-        spec: "Primary shred / RDF",
+        itemNo: "SR002709",
+        spec: "Trituración primaria / RDF",
         od: "50 – 80",
         bolt: "30",
         thickness: "14 – 20",
       },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "single-shaft-bed-knives",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 120,
       highPrice: 1900,
     },
+    components: [
+      {
+        id: "shredder-screens-advantage-1",
+        tag: "Opciones de placas y materiales resistentes al desgaste",
+        title: "Opciones de placas y materiales resistentes al desgaste",
+        description:
+          "S355J2 , Hardox 400, 450 y 500, y las configuraciones con revestimiento duro le brindan opciones de materiales para reemplazar las cribas trituradoras, con la construcción elegida especificada para el diseño del panel y la alimentación.",
+      },
+      {
+        id: "shredder-screens-advantage-2",
+        tag: "Aperturas personalizadas de 8 a 80 mm",
+        title: "Aperturas personalizadas de 8 a 80 mm",
+        description:
+          "Sureay fabrica patrones de pantalla redondos y ranurados. Las aperturas enumeradas abarcan entre 8 y 80 mm. El tamaño y el paso de la apertura se pueden especificar juntos para reproducir las aberturas de descarga y el material que queda entre ellas.",
+      },
+      {
+        id: "shredder-screens-advantage-3",
+        tag: "Cestas formadas, placas y cribas de casete",
+        title: "Cestas formadas, placas y cribas de casete",
+        description:
+          "Se pueden fabricar cestas semicirculares o completamente redondas, placas planas, formas de hoz y configuraciones de casetes según la curvatura y el diseño de fijación requeridos para los soportes de pantalla existentes.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Mi producción ha bajado. ¿Debo sustituir primero la criba o las cuchillas?",
+            "¿Qué detalles identifican una criba trituradora de repuesto?",
           answer:
-            "Revise primero la criba, porque es más barato comprobarla y con más frecuencia es la causa. Busque abocardado — orificios que se han desgastado en forma cónica y ensanchado en la cara interior — y cegado, donde el plástico reblandecido ha taponado las aberturas. Si los orificios han crecido más de un 10 % aproximadamente sobre el nominal, la criba ya está dejando pasar partículas sobredimensionadas y debe sustituirse con independencia del estado de las cuchillas. En la práctica ambos se desgastan juntos: una cuchilla roma empuja el material contra la criba en lugar de cortarlo, y una criba cegada recircula material que desgasta el filo. Sustituir solo uno de los dos suele significar una segunda parada en cuestión de semanas.",
+            "El modelo de máquina, el contorno del panel, el espesor de la placa, la curvatura y las posiciones de fijación establecen el ajuste. El tamaño y el patrón de los orificios definen las aberturas de descarga. Una placa plana y una canasta curva pueden compartir un tamaño de apertura y al mismo tiempo requerir una geometría de instalación diferente, así que use el dibujo del panel original o las dimensiones de referencia sin usar para el reemplazo.",
         },
         {
           question:
-            "¿Qué provoca realmente el cegado de la criba y cómo se evita?",
+            "¿Cómo elijo el tamaño de apertura de la pantalla de la trituradora?",
           answer:
-            "El cegado es casi siempre un problema térmico, no de tamaño de orificio. Cuando las cuchillas están romas o la holgura rotor-criba se ha abierto, el material se embadurna y amasa en lugar de cortarse. El calor por fricción reblandece el polímero, que entonces se extruye dentro de las aberturas y fragua. Montar una criba de orificio mayor suele volver inaceptable la fracción gruesa sin corregir la causa. Las soluciones duraderas son afilar o sustituir las cuchillas, restablecer la holgura correcta del rotor y — en polímeros sensibles al calor como el film de LDPE y PP — reducir la velocidad de alimentación o añadir refrigeración. Una chapa más gruesa empeora el cegado, no lo mejora, porque cada orificio se convierte en un canal más largo que despejar.",
+            "Comience con el requisito de tamaño aguas abajo y la forma del alimento. Las aberturas más pequeñas generalmente apuntan a una salida más fina, mientras que las aberturas más grandes permiten la descarga de material más grueso. La alimentación plana o flexible puede pasar de manera diferente a la de las piezas rígidas, por lo tanto, confirme la forma del orificio existente y la configuración de la máquina. La apertura es un tamaño de apertura. La producción real tiene una distribución de tamaño.",
+        },
+        {
+          question: "¿Qué significan cesta de criba, casete y placa de criba?",
+          answer:
+            "Una canasta describe una forma de pantalla curva, mientras que un plato puede ser plano o con forma. Cassette describe un conjunto extraíble que puede incluir características de soporte. El alcance real del reemplazo debe identificar el panel perforado, el marco y los detalles de fijación, porque estos nombres de compra pueden referirse a diferentes conjuntos en diferentes máquinas.",
+        },
+        {
+          question: "¿Se pueden personalizar la forma y el paso del orificio?",
+          answer:
+            "Sí. Sureay puede crear el patrón de apertura y espaciado especificado en el dibujo de la pantalla. El paso de los orificios, el tamaño de la abertura y el espesor de la placa deben considerarse juntos porque determinan el área abierta y el material que queda entre los orificios. Incluya el diseño de montaje cuando proponga un cambio de patrón para una canasta o panel existente.",
         },
         {
           question:
-            "¿Cuánta superficie abierta puedo añadir antes de que la criba deje de ser estructuralmente segura?",
+            "¿Cómo elijo entre mallas de acero estructural, Hardox y de revestimiento duro?",
           answer:
-            "El límite lo fija el ancho de ligamento, no el porcentaje de superficie abierta. Como regla práctica, mantenga el ligamento en 0,4× el diámetro de orificio o más para plásticos limpios, y en 0,6× o más para alimentación que pueda contener metal, piedra u otra contaminación dura. Un orificio de 20 mm con un ligamento de 8 mm da aproximadamente un 46 % de superficie abierta y resiste alimentación contaminada; el mismo orificio con un ligamento de 4 mm alcanza cerca del 63 %, pero se agrietará entre orificios bajo impacto, normalmente empezando por el borde de descarga. En corrientes abrasivas preferimos aumentar el espesor de chapa y aceptar algo menos de superficie abierta antes que perseguir producción con un ligamento fino.",
+            "Compare la abrasividad y el impacto de la alimentación con el patrón de desgaste, el espesor y la geometría formada de la criba actual. Los grados Hardox y las construcciones con revestimiento duro ofrecen alternativas a la opción de acero estructural listada. Especifique explícitamente la placa o construcción de superficie requerida, manteniendo los requisitos de soporte y fijación de la máquina como parte del diseño de reemplazo.",
+        },
+        {
+          question: "¿Por qué se acumula material en una criba trituradora?",
+          answer:
+            "Un patrón de apertura que funciona con una alimentación puede obstruirse con otra, especialmente cuando se procesa material plano. Compare el material acumulado con el patrón de orificios y la condición antes de cambiar el tamaño de la apertura. La geometría de la criba puede solucionar problemas de paso específicos de la alimentación, pero un reemplazo debe conservar el soporte y la disposición de montaje requeridos por la máquina.",
         },
         {
           question:
-            "¿Por qué no debe templarse una criba a la misma dureza HRC que las cuchillas?",
+            "¿Cómo obtengo una cotización para una rejilla o canasta de trituradora de repuesto?",
           answer:
-            "Porque una criba falla de forma distinta a una cuchilla. Una cuchilla necesita retención de filo y trabaja a compresión en el borde de corte; una criba es un elemento estructural perforado que absorbe impacto continuo sobre una gran luz. Templada a HRC 58–62, los ligamentos pierden la ductilidad que necesitan para absorber el choque y se agrietan en lugar de deformarse. Una criba agrietada resulta mucho más cara que una desgastada, porque los fragmentos que entran en el rotor pueden destruir un juego entero de cuchillas. Especificamos S355J2 para plásticos limpios, Hardox 400/450 para alimentación post-consumo mixta, y Hardox 500 o recargue duro selectivo para material muy abrasivo — todos elegidos priorizando la tenacidad.",
-        },
-        {
-          question:
-            "¿Pueden fabricar una criba a partir de la mía desgastada si no tengo plano?",
-          answer:
-            "Sí, y así es como empieza la mayoría de nuestros pedidos de cribas. Envíenos fotografías de la criba desgastada con una cinta métrica apoyada sobre el paso de los orificios, además de la marca y el modelo de la máquina y, si es posible, la longitud total del arco y el detalle de las placas laterales. Elaboramos un plano de fabricación para su aprobación por escrito antes de cortar acero. Un detalle importante: tomamos la geometría de los orificios de los bordes no desgastados en lugar de los orificios centrales agrandados, de modo que la nueva criba restituye su tamaño de partícula original en vez de reproducir el estado desgastado.",
-        },
-        {
-          question:
-            "¿Suministran también las contracuchillas, los portacuchillas y las barras de sujeción?",
-          answer:
-            "Sí. Cribas, contracuchillas, portacuchillas, barras de sujeción y separadores se fabrican todos en nuestras instalaciones y se envían habitualmente juntos, que es como recomendamos pedirlos. Sustituir la criba dejando montadas contracuchillas desgastadas hace que la nueva criba se ciegue antes, y un único envío consolidado reduce tanto el coste de transporte como el número de paradas de producción.",
+            "Envíe el modelo de la trituradora y el dibujo de la pantalla o el número de pieza, la cantidad del panel, la alimentación y el tamaño de salida objetivo. Para una canasta personalizada, muestre el patrón de montaje, la curvatura, el grosor de la placa y la disposición de los orificios. Si su referencia es un panel desgastado, marque los agujeros agrandados, las áreas dobladas y las fijaciones dañadas.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo de la máquina, la forma y el tamaño del orificio, el paso, el espesor de la placa, el radio del panel y las posiciones de fijación. Para agujeros redondos de Ø100 mm enviar modelo y plano de pantalla para que podamos comprobar la configuración.",
+    compatibleMachines: [
+      "Lindner",
+      "Vecoplan",
+      "UNTHA",
+      "WEIMA",
+      "Herbold",
+      "ZERMA",
+    ],
+    detailLayout: {
+      sizeRange: "Ø8–80 mm",
+      heroSpecs: [
         {
-          question: "¿Son ustedes fabricante o empresa comercial?",
-          answer:
-            "Somos un fabricante directo constituido en 2008. Las cribas se cortan, curvan, taladran y — cuando se especifica — reciben recargue duro en nuestro propio taller, y por eso podemos trabajar a partir de la fotografía de una pieza desgastada en lugar de exigir un plano acabado.",
+          label: "Material",
+          value: "S355J2 · Hardox 400 / 450 / 500 · Revestimiento duro",
         },
         {
-          question:
-            "¿Cuál es el plazo de entrega de una criba de ingeniería inversa y cómo se embala?",
-          answer:
-            "Las cribas estándar en espesores de chapa en stock se envían en 10–15 días laborables desde la aprobación del plano. Las cribas de ingeniería inversa añaden aproximadamente 3–5 días para el ciclo de plano y aprobación. Las cribas se envían sobre palés de madera fumigada con protección de cantos y flejado de acero; las cestas de gran diámetro se anidan para reducir el coste de transporte volumétrico.",
+          label: "Aplicación",
+          value: "Cribado de descarga en trituradoras de un solo eje",
         },
         {
-          question: "¿Qué documentación acompaña a un pedido de cribas?",
-          answer:
-            "Cada pedido incluye un registro de inspección dimensional frente al plano aprobado y un certificado de material de la chapa — incluido el certificado de colada Hardox cuando se especifican grados Hardox. Las cribas con recargue duro incorporan además un registro del consumible de recargue y de la dureza depositada.",
+          label: "Formularios de pantalla",
+          value: "Cesta (media caña/completa) · Plato llano · Hoz · Cassette",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Aberturas de 8 a 80 mm",
+        },
+        {
+          label: "Formularios de pantalla",
+          value: "Cesta (media caña/completa) · Plato llano · Hoz · Cassette",
+        },
+        {
+          label: "Material",
+          value: "S355J2 · Hardox 400 / 450 / 500 · Revestimiento duro",
+        },
+        {
+          label: "Área abierta",
+          value: "34 – 58% (dependiente del patrón)",
+        },
+        {
+          label: "Patrón de agujeros",
+          value: "60° escalonado · Recto · Ranurado",
+        },
+        {
+          label: "Aplicación",
+          value: "Cribado de descarga en trituradoras de un solo eje",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Incluya el modelo de la máquina, la forma y el tamaño del orificio, el paso, el espesor de la placa, el radio del panel y las posiciones de fijación. Para agujeros redondos de Ø100 mm enviar modelo y plano de pantalla para que podamos comprobar la configuración.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
     id: "cutter-compactor-blades",
-    name: "Cuchillas para Compactadoras",
-    fullName: "Cuchillas de Rotor y Estátor para Compactadoras",
-    category: "granulator_blades",
+    seoDescription:
+      "Prepare películas de PE o PP y escamas de PET para extrusión con cuchillas de rotor y estator de repuesto en construcción D2 , M2 HSS o con punta de carburo.",
+    name: "Cuchillas para cortadoras compactadoras",
+    fullName: "Cuchillas para cortadoras compactadoras de líneas de extrusión",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Cuchillas para Compactadoras",
+    categoryDisplay: "Cuchillas para cortadoras compactadoras",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-    badge: "Reciclaje PCR",
+    imageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Reciclaje de PCR",
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
@@ -5809,14 +7128,12 @@ export const blades: Blade[] = [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
-      "Par de cuchillas de estátor de compactadora mostrando el bisel rectificado y el montaje avellanado",
+      "Par de cuchillas del estator del compactador cortador que muestran el bisel rectificado con precisión y el montaje avellanado",
       "Juego de cuchillas de compactadora — cuchilla de rotor, portacuchillas y cuchilla de estátor",
       "Cuchilla de rotor larga de compactadora con filo rectificado y orificio de fijación avellanado",
     ],
     description:
-      "Cuchillas de rotor y estátor para compactadoras y aglomeradoras en D2, M2 HSS y con plaquita de metal duro. Montaje directo en EREMA, NGR, Starlinger y Previero.",
-    fullDescription:
-      "En una compactadora de corte — vendida también como aglomeradora, densificadora o unidad de preacondicionamiento — las cuchillas giratorias cortan y calientan por fricción el film suelto, la fibra o la escama de PET hasta que reblandece y se densifica en un grano suelto que la extrusora puede alimentar realmente. Las cuchillas hacen dos trabajos a la vez: cortan y generan el calor de fricción controlado que hace posible la densificación. Esa doble función explica por qué se desgastan más rápido que cualquier otra herramienta de la línea, y por qué suelen requerir sustitución cada tres a seis meses en operaciones continuas de film y PET.\n\nSureay fabrica tanto las cuchillas giratorias como las cuchillas fijas de estátor, además de los portacuchillas y las cuchillas de precorte que se montan con ellas. Las cuchillas se rectifican planas y paralelas en toda su longitud, porque en una compactadora es la planitud de la cara de montaje la que determina si la holgura de corte que ajustó en la instalación sigue siendo la misma en el extremo opuesto de la cuchilla.\n\n## La holgura de corte: la variable que lo controla todo\n\nLa holgura entre la cuchilla giratoria y la cuchilla fija de estátor es el ajuste más determinante de una compactadora, y el que con más frecuencia se deja sin verificar entre cambios de cuchilla.\n\n**Holgura excesiva.** El material se amasa en lugar de cortarse. El calor de fricción sube por encima de la ventana prevista, el film se embadurna formando grumos en vez de un grano uniforme, la densidad aparente se vuelve irregular y la extrusora aguas abajo recibe una alimentación fluctuante. En escama de PET, el exceso de calor provoca degradación por humedad antes incluso de que el material llegue al secador. La producción cae mientras sube el consumo eléctrico — la firma clásica de una holgura desgastada o mal ajustada.\n\n**Holgura insuficiente.** Las cuchillas contactan bajo carga. Los filos se desportillan, la corriente del motor da picos en cada carga pesada y, en el peor caso, una cuchilla giratoria golpea el estátor con fuerza suficiente para dañar el portacuchillas o el propio disco del rotor — una reparación un orden de magnitud más cara que las cuchillas.\n\nLas holguras de trabajo típicas se sitúan en torno a 0,2–0,5 mm según el tamaño de máquina y el material, pero la cifra correcta es la del manual de su máquina. Lo importante es que la holgura pueda mantenerse realmente: si la cara de montaje de la cuchilla no es plana, o si la cuchilla de rotor y la de estátor se han desgastado de forma desigual, la holgura variará a lo largo de la longitud de corte por muy cuidadosamente que se haya ajustado.\n\n## Por qué las cuchillas de rotor y estátor se sustituyen en juego\n\nLas cuchillas giratorias y fijas se desgastan a distinto ritmo y con distinta geometría — la cuchilla de rotor pierde el filo, mientras que la de estátor tiende a desgastarse formando un radio y a ahuecarse ligeramente donde se concentra el flujo de material. Montar una cuchilla de rotor nueva contra un estátor desgastado restituye solo la mitad de la geometría de corte: la holgura queda desigual a lo largo de su longitud, la cuchilla nueva soporta toda la carga de corte y se embota mucho antes de lo debido. Sustituir ambas a la vez cuesta más por parada y menos por tonelada.\n\n## Selección de material según la alimentación\n\n**D2 (1.2379), HRC 58–61** — la opción de uso general para film limpio de LDPE, LLDPE y PP, sacos tejidos y recorte de producción pre-consumo. Buena retención de filo, tolerante a algún impacto ocasional y la más económica de reafilar.\n\n**M2 HSS (1.3343), HRC 62–64** — para escama de PET, film impreso y muy empolvado, y material post-consumo con restos de etiqueta de papel o contaminación mineral fina. Mantiene el filo a las temperaturas elevadas del interior de una compactadora en marcha, donde el D2 empieza a reblandecer.\n\n**Con plaquita de metal duro, HRA 89–91 en el filo** — para compuestos reforzados con fibra de vidrio, material con carga mineral, masterbatch de negro de humo y alimentaciones de alto contenido en cenizas. Intervalos entre cambios sustancialmente mayores en corrientes que destruyen el acero de herramientas, a mayor precio unitario y con menor tolerancia al impacto.\n\n## Compatibilidad de máquinas\n\nLas cuchillas se reproducen por ingeniería inversa para máquinas EREMA (unidades de preacondicionamiento INTAREMA, TVEplus y RegrindPro), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac y Munchy. Envíenos el modelo de máquina y una fotografía de la cuchilla desgastada, o la propia cuchilla, y elaboraremos un plano para su aprobación antes de fabricar.",
+      "Cuchillas de rotor y estator de repuesto para compactadores cortadores de plástico. Opciones D2 , M2 HSS y con punta de carburo, con perfiles personalizados para la preparación de la alimentación de extrusión.",
     link: "/products/cutter-compactor-blades",
     compatibleMachines: [
       "EREMA",
@@ -5828,69 +7145,131 @@ export const blades: Blade[] = [
       "Plasmac",
       "Munchy",
     ],
+    compatibleMachinesIntro:
+      "Obtenga cuchillas cortadoras-compactadoras de repuesto para su línea de extrusión, incluidas las posiciones del rotor, el estator y el precortador. Sureay ofrece perfiles personalizados en D2 , M2 HSS y construcciones con punta de carburo. Comparta su dibujo o muestra para obtener una cotización que cubra las cuchillas y los bloques de soporte especificados por separado. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "compactor-knife-positions",
+        tag: "Posiciones de cuchillo",
+        title: "Opciones de corte con punta de acero y carburo",
+        description:
+          "Las cuchillas D2 , M2 HSS y con punta de carburo le brindan opciones de materiales y construcción para la preparación de alimentación de plástico, con el reemplazo especificado según la forma de alimentación y la posición de la cuchilla existente.",
+      },
+      {
+        id: "compactor-edge-construction",
+        tag: "Construcción de bordes",
+        title: "Rotor, estator y cuchillas precortadoras",
+        description:
+          "Sureay suministra cuchillas móviles, fijas y precortadoras para conjuntos cortadora-compactadora. Las longitudes de cuchilla enumeradas oscilan entre 80 y 400 mm. Cada posición se puede pedir por separado o coordinarse con las otras posiciones de corte del conjunto.",
+      },
+      {
+        id: "compactor-process-position",
+        tag: "Posición del proceso",
+        title: "Perfiles personalizados con bloques de soporte",
+        description:
+          "Se pueden cotizar contornos de hoja personalizados, características de fijación y perfiles de corte junto con los bloques de soporte necesarios, manteniendo la hoja y sus piezas de soporte alineadas con su conjunto existente.",
+        relatedBladeIds: ["granulator-blades"],
+      },
+    ],
     specs: [
       {
-        label: "Knife Types",
-        value: "Rotor (movable) · Stator (fixed) · Pre-cutter · Holder block",
+        label: "Tamaños",
+        value: "80–400 mm",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Preacondicionamiento de la materia prima antes de la extrusión.",
+      },
+      {
+        label: "Tipos de cuchillos",
+        value:
+          "Cuchillas de rotor, cuchillas de estator fijas, cuchillas de precorte y bloques portacuchillas",
       },
       {
         label: "Material",
-        value: "D2 (1.2379) · M2 HSS (1.3343) · Carbide-tipped",
+        value:
+          "D2 (1.2379), M2 HSS (1.3343) o construcción con punta de carburo",
       },
       {
-        label: "Hardness",
-        value: "HRC 58–61 (D2) · HRC 62–64 (M2) · HRA 89–91 (carbide)",
+        label: "Dureza",
+        value:
+          "D2 : HRC 58–61; M2 : HRC 62–64; filo de corte de carburo: HRA 89–91",
       },
       {
-        label: "Typical Cutting Gap",
-        value: "0.2 – 0.5 mm (machine-dependent)",
+        label: "Planitud de la cara",
+        value: "≤0,03 mm a lo largo de la cuchilla",
       },
       {
-        label: "Face Flatness",
-        value: "≤ 0.03 mm over full blade length",
+        label: "Paralelismo",
+        value: "≤0.02 mm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.02 mm",
+        label: "Materia prima",
+        value:
+          "Película de PE/PP, escamas de PET, bolsas tejidas, fibra y espuma",
       },
       {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
+        label: "Espacio de corte típico",
+        value: "0,2–0,5 mm (dependiendo de la máquina)",
       },
       {
-        label: "Applications",
-        value: "PE / PP Film, PET Flake, Woven Bags, Fibre, Foam",
-      },
-      {
-        label: "OEM Fitment",
-        value: "EREMA, NGR, Starlinger, Previero, Sorema, Erdwich",
+        label: "Tratamiento térmico",
+        value:
+          "Endurecimiento al vacío y tratamiento criogénico profundo (−196°C)",
       },
     ],
-    componentsIntro:
-      "Las cuchillas de compactadora fallan de tres maneras: se pierde el filo, se desajusta la holgura o la cuchilla se desportilla por contaminación. Cada caso tiene una solución distinta, y especificar para el problema equivocado es tirar el dinero.",
-    components: [
-      {
-        id: "gap-holding-geometry",
-        tag: "GEOMETRÍA",
-        title: "Una holgura que se ajusta una vez y se mantiene",
-        description:
-          "Rectificadas a ≤0,03 mm de planitud y ≤0,02 mm de paralelismo en toda la longitud de la cuchilla. La holgura que ajusta en la instalación se mantiene uniforme de extremo a extremo, en lugar de abrirse por un lado y cerrarse por el otro al aplicar carga.",
-      },
-      {
-        id: "feedstock-matched-alloy",
-        tag: "METALURGIA",
-        title: "La aleación adecuada a lo que usted realmente procesa",
-        description:
-          "D2 para film limpio de PE y PP, M2 HSS para escama de PET y material post-consumo empolvado que reblandece el D2 a temperatura de trabajo, y plaquita de metal duro para corrientes con fibra de vidrio y alto contenido en cenizas. Se especifica a partir de su alimentación, no de un valor por defecto.",
-      },
-      {
-        id: "matched-rotor-stator-sets",
-        tag: "VIDA ÚTIL",
-        title: "Suministradas como juegos emparejados de rotor + estátor",
-        description:
-          "Las cuchillas de rotor y estátor se desgastan con geometrías distintas. Montar una cuchilla de rotor nueva contra un estátor desgastado deja la holgura desigual y carga sola a la cuchilla nueva — se embota en una fracción de su vida nominal. Las cotizamos y enviamos como juegos.",
-      },
+    relatedBladeIds: [
+      "granulator-blades",
+      "continuous-melt-filter-scraper-blades",
     ],
+    offers: {
+      lowPrice: 40,
+      highPrice: 560,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Son iguales las cuchillas de aglomerador y las cuchillas cortadoras-compactadoras?",
+          answer:
+            "Sí, los nombres pueden referirse a cuchillas en el mismo equipo de preparación de alimento para extrusión. La pieza en sí depende de la máquina y de si la cuchilla se apoya en el rotor, en el estator o en la estación de precorte.",
+        },
+        {
+          question:
+            "¿Cómo afectan la película flexible y las hojuelas precortadas a la selección de cuchillos?",
+          answer:
+            "La película flexible y las escamas precortadas presentan diferentes formas de alimentación a la unidad de preacondicionamiento. Compare la posición de la cuchilla instalada y el bisel con el material que se está procesando. Conservar esos detalles ayuda a especificar un reemplazo, mientras que un cambio de forma de alimentación puede requerir una revisión de la configuración prevista de las cuchillas de la máquina.",
+        },
+        {
+          question:
+            "¿Cuándo se deben considerar las cuchillas compactadoras con punta de carburo?",
+          answer:
+            "Evalúe los bordes con punta de carburo cuando el patrón de desgaste de la cuchilla de acero actual sugiera un trabajo abrasivo, junto con la limpieza y consistencia de la alimentación. Los daños por impacto recurrentes requieren una evaluación separada de la contaminación y el soporte de los bordes. Compare la construcción completa de la pala y el bisel con la configuración original del rotor o estator.",
+        },
+        {
+          question:
+            "¿Puede una cuchilla granuladora sustituir a una cuchilla cortadora-compactadora?",
+          answer:
+            "Generalmente no. Las cuchillas cortadoras-compactadoras preparan el alimento para la extrusión, mientras que las [cuchillas granuladoras de plástico](/products/granulator-blades) cortan el material para triturarlo. Elija según la posición de trabajo, el asiento de la cuchilla y el perfil de corte, incluso si las dos cuchillas tienen longitudes o espacios entre orificios similares.",
+        },
+        {
+          question:
+            "¿Puede Sureay suministrar cuchillas de rotor y estator juntas?",
+          answer:
+            "Sí. Las cuchillas móviles y fijas se pueden incluir en un pedido y cada posición se identifica por separado. Enumere las cuchillas precortadoras y los bloques de soporte como elementos distintos. El modelo y los dibujos de la máquina definen los perfiles relevantes, las direcciones de corte y las cantidades para el requisito de reemplazo completo.",
+        },
+        {
+          question:
+            "¿Cómo obtengo una cotización para cuchillas compactadoras cortadoras y bloques de soporte?",
+          answer:
+            "Envíe el modelo de la máquina, planos o números de pieza y cantidades por posición de rotor, estator y precortador. Describa si procesa película o escamas precortadas e indique si se necesitan bloques de soporte. Si el cuchillo de referencia fue afilado, distinga la posición del borde restante de la dimensión original.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo del compactador, la posición del rotor o estacionaria, el dibujo de la hoja, el polímero, la forma de alimentación y el patrón de desgaste.",
     dimensionLabels: {
       col0: "Tipo de Cuchilla",
       col1: "Longitud (mm)",
@@ -5901,114 +7280,147 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Rotor knife (movable)",
+        itemNo: "SR007301",
+        spec: "Cuchilla del rotor (móvil)",
         od: "150 – 250",
         bolt: "40 – 60",
         thickness: "8 – 12",
       },
       {
-        spec: "Rotor knife (movable)",
+        itemNo: "SR007302",
+        spec: "Cuchilla del rotor (móvil)",
         od: "250 – 400",
         bolt: "60 – 80",
         thickness: "12 – 20",
       },
       {
-        spec: "Stator knife (fixed)",
+        itemNo: "SR007303",
+        spec: "Cuchilla del estator (fija)",
         od: "120 – 220",
         bolt: "40 – 60",
         thickness: "10 – 16",
       },
       {
-        spec: "Stator knife (fixed)",
+        itemNo: "SR007304",
+        spec: "Cuchilla del estator (fija)",
         od: "220 – 350",
         bolt: "60 – 80",
         thickness: "16 – 25",
       },
       {
-        spec: "Pre-cutter / feed blade",
+        itemNo: "SR007305",
+        spec: "Precortador/cuchilla de avance",
         od: "80 – 160",
         bolt: "30 – 50",
         thickness: "8 – 14",
       },
       {
-        spec: "Knife holder block",
+        itemNo: "SR007306",
+        spec: "Bloque portacuchillas",
         od: "60 – 120",
         bolt: "50 – 90",
         thickness: "20 – 40",
       },
     ],
-    relatedBladeIds: [
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "strand-pelletizer-rotors",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 560,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle:
+        "Cuchillas cortadoras compactadoras | Cuchillas de rotor y estator",
+      heroAlt:
+        "Cuchillas del estator del compactador cortador con bordes cortantes rectificados y características de montaje",
+      sizeRange: "80–400 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Qué holgura de corte debo ajustar entre las cuchillas de rotor y estátor?",
-          answer:
-            "Utilice la cifra del manual de su máquina — depende de la máquina y del material, y normalmente se sitúa en torno al rango de 0,2–0,5 mm. La pregunta más útil es si la holgura se mantiene donde usted la ajustó. Si la cara de montaje de la cuchilla no es plana, o si ha montado una cuchilla de rotor nueva contra un estátor desgastado, la holgura variará a lo largo de la longitud de corte por muy cuidadosamente que se haya ajustado. Ajuste la holgura con galgas de espesores en ambos extremos y en el centro de la cuchilla, no en un solo punto, y vuelva a comprobarla tras las primeras horas de marcha, cuando todo haya asentado y alcanzado la temperatura de trabajo.",
+          label: "Material",
+          value: "Construcción D2 , M2 HSS o con punta de carburo",
         },
         {
-          question:
-            "Mi compactadora trabaja caliente y el producto sale grumoso en vez de un grano uniforme. ¿Qué ocurre?",
-          answer:
-            "Esa es la firma clásica de una holgura de corte excesiva, normalmente por cuchillas desgastadas. Cuando la holgura se abre, el material se amasa en lugar de cortarse, así que el calor de fricción sobrepasa la ventana prevista, el film se embadurna formando grumos y la densidad aparente se vuelve errática — lo que la extrusora percibe como una alimentación fluctuante. Habitualmente verá además un aumento del consumo eléctrico y una caída de producción al mismo tiempo. Compruebe la holgura y los filos de las cuchillas antes de tocar las consignas de temperatura o la velocidad de alimentación, porque eso son compensaciones del problema real, no soluciones.",
-        },
-        {
-          question:
-            "¿Puedo sustituir solo las cuchillas de rotor y conservar las de estátor?",
-          answer:
-            "Puede, pero suele ser un ahorro falso. Ambas se desgastan con geometrías distintas — la cuchilla de rotor pierde el filo mientras que el estátor tiende a desgastarse formando un radio y a ahuecarse donde se concentra el flujo de material. Una cuchilla de rotor nueva trabajando contra un estátor desgastado soporta toda la carga de corte sobre una holgura desigual y se embotará mucho antes de su vida nominal, con lo que volverá a la misma parada antes de lo previsto. Sustituir ambas a la vez cuesta más por cambio y menos por tonelada procesada.",
-        },
-        {
-          question:
-            "¿Cómo elijo entre cuchillas de D2, M2 HSS y con plaquita de metal duro?",
-          answer:
-            "Ajuste la aleación a su alimentación. El D2 a HRC 58–61 es la opción económica por defecto para film limpio de LDPE, LLDPE y PP, sacos tejidos y recorte pre-consumo. Pase a M2 HSS a HRC 62–64 para escama de PET y para film post-consumo impreso o polvoriento — el M2 mantiene el filo a la temperatura elevada del interior de una compactadora en marcha, donde el D2 empieza a reblandecer. Reserve las cuchillas con plaquita de metal duro para compuestos reforzados con fibra de vidrio, material con carga mineral y corrientes de alto contenido en cenizas; duran muchísimo más con esas alimentaciones, pero cuestan más y toleran peor el impacto, por lo que son mala elección si su alimentación contiene metal de forma ocasional.",
-        },
-        {
-          question:
-            "¿Cuántas veces se puede reafilar una cuchilla de compactadora?",
-          answer:
-            "Tres a cinco reafilados es lo habitual en cuchillas de D2 y M2 antes de que la cuchilla alcance su altura mínima utilizable y la holgura ya no pueda ajustarse para compensar. Cada reafilado retira material de la cara de corte, por lo que la cuchilla queda progresivamente más baja en su alojamiento — la mayoría de las máquinas permiten recuperarlo con suplementos hasta cierto punto. Las cuchillas con plaquita de metal duro se reafilan solo sobre el metal duro y admiten en general menos ciclos. Marcamos la altura mínima en el plano de fabricación para que su equipo de mantenimiento sepa cuándo una cuchilla está agotada en lugar de suponerlo.",
+          label: "Aplicación",
+          value: "Preacondicionamiento de plásticos antes de la extrusión.",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "¿Pueden fabricar cuchillas para mi compactadora sin plano OEM?",
-          answer:
-            "Sí — es la mayor parte de lo que hacemos en este producto. Envíenos la marca y el modelo de la máquina junto con una cuchilla desgastada, o fotografías nítidas con medidas de longitud, anchura, espesor y posición de los orificios de montaje. Elaboramos un plano de fabricación para su aprobación por escrito antes de cortar acero, y lo archivamos para que los pedidos repetidos no requieran volver a medir.",
+          label: "Tamaños",
+          value: "80–400 mm",
         },
         {
-          question:
-            "¿Cuál es el plazo de entrega y puedo probar primero un juego?",
-          answer:
-            "Las cuchillas fabricadas a partir de un plano existente se envían en 10–15 días laborables. Las cuchillas de ingeniería inversa por primera vez añaden aproximadamente 3–5 días para el plano y su aprobación. Suministramos juegos de prueba para verificar el ajuste en máquina y comparar la vida del filo antes de que se comprometa con una cantidad de producción — para perfiles especiales fabricamos primero una muestra dimensional de aprobación, de modo que no hay compromiso de utillaje hasta confirmar el ajuste.",
+          label: "Aplicación",
+          value:
+            "Preacondicionamiento de la materia prima antes de la extrusión.",
         },
         {
-          question: "¿Qué documentación acompaña a las cuchillas?",
-          answer:
-            "Cada envío incluye un certificado de ensayo de dureza Rockwell, un registro de inspección dimensional frente al plano aprobado, un certificado de trazabilidad del material de la acería y un registro del lote de tratamiento térmico. Los informes dimensionales completos por CMM están disponibles bajo petición para homologación OEM.",
+          label: "Tipos de cuchillos",
+          value:
+            "Cuchillas de rotor, cuchillas de estator fijas, cuchillas de precorte y bloques portacuchillas",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 (1.2379), M2 HSS (1.3343) o construcción con punta de carburo",
+        },
+        {
+          label: "Dureza",
+          value:
+            "D2 : HRC 58–61; M2 : HRC 62–64; filo de corte de carburo: HRA 89–91",
+        },
+        {
+          label: "Planitud de la cara",
+          value: "≤0,03 mm a lo largo de la cuchilla",
+        },
+        {
+          label: "Paralelismo",
+          value: "≤0.02 mm",
+        },
+        {
+          label: "Materia prima",
+          value:
+            "Película de PE/PP, escamas de PET, bolsas tejidas, fibra y espuma",
+        },
+        {
+          label: "Espacio de corte típico",
+          value: "0,2–0,5 mm (dependiendo de la máquina)",
+        },
+        {
+          label: "Tratamiento térmico",
+          value:
+            "Endurecimiento al vacío y tratamiento criogénico profundo (−196°C)",
         },
       ],
+      specificationImage: {
+        src: "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
+        alt: "Cuchilla del rotor del compactador cortador con filo rectificado y orificio de fijación",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite presupuesto para sus cuchillas compactadoras",
+        description:
+          "Incluya el modelo de la máquina, la posición del rotor o estator, el dibujo o muestra de la hoja, la forma y cantidad de alimentación.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
+    disambiguation:
+      "Para conocer la producción de triturado, consulte [Cuchillas granuladoras de plástico](/products/granulator-blades) .",
   },
   {
     id: "die-face-cutting-knives",
-    name: "Cuchillas de Corte a Cara de Hilera y Cuchillas de Granceado",
-    fullName: "Cuchillas de Corte a Cara de Hilera y Cuchillas de Granceado",
-    category: "granulator_blades",
+    name: "Cuchillas de corte en cabeza para peletización",
+    fullName:
+      "Cuchillas de corte en la cara de la matriz para peletizadoras de plástico",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Cuchillas de Corte a Cara de Hilera",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+    imageDimensions: {
+      width: 1200,
+      height: 1200,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1199,
+      height: 899,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Protege la Hilera",
     badgeColor: "blue",
     gallery: [
@@ -6022,11 +7434,7 @@ export const blades: Blade[] = [
       "Par de cuchillas de corte a cara de hilera sobre fondo blanco mostrando la geometría de ranura y el acabado del filo",
     ],
     description:
-      "Cuchillas de corte a cara de hilera para granceadoras subacuáticas, de anillo de agua y de cara caliente, rectificadas más blandas que su placa de hilera. Compatibles con Gala, Nordson BKG, Maag, ECON.",
-    fullDescription:
-      "Una cuchilla de corte a cara de hilera — vendida también como cuchilla de granceadora subacuática, cuchilla de corte a hilera, cuchilla de cara caliente o cuchilla UWP — es un consumible que trabaja en contacto deslizante permanente con una placa de hilera que vale decenas de miles de dólares. Esa asimetría define todo el problema de especificación: la cuchilla debe ser lo bastante dura para mantener el filo frente al polímero caliente, y deliberadamente más blanda que la cara de hilera sobre la que desliza, de modo que el desgaste lo absorba la pieza que usted tiene previsto reemplazar.\n\nEs la misma lógica de desgaste controlado que Sureay aplica a las cuchillas rascadoras de filtros de fundido continuo, y es la razón por la que cotizamos un diferencial de dureza en lugar de simplemente la mayor dureza disponible. Una cuchilla más dura que la placa de hilera no dura más — raya la cara de la hilera, abre la holgura de corte y convierte un cambio rutinario de cuchillas en una reparación de hilera.\n\n## Tres métodos de granceado, tres cuchillas distintas\n\n**Granceado subacuático (UWP).** La cara de la hilera queda totalmente sumergida en una cámara de agua a temperatura controlada. Los granos se cortan directamente en la cara de la hilera y se evacuan en suspensión. Las cuchillas trabajan húmedas y templadas, lo que convierte la resistencia a la corrosión en un factor de selección real — el acero inoxidable 440C se gana aquí su sitio pese a retener el filo menos que el acero de herramientas.\n\n**Granceado por anillo de agua.** Una cortina anular de agua enfría los granos después del corte, pero la propia cara de la hilera trabaja al aire. El ciclado térmico sobre el filo es más severo que en el corte subacuático puro, lo que favorece los grados más tenaces frente a los más duros.\n\n**Granceado a cara caliente.** El corte se realiza en seco contra una hilera calefactada y los granos se transportan por aire. Es la mayor temperatura de filo de los tres métodos y el argumento más fuerte a favor del PM-HSS o del metal duro.\n\n## Geometría de la cuchilla\n\nLa forma del filo se elige según la viscosidad del polímero y la forma de grano deseada:\n\n- **Bisel de 45°** — la geometría de uso general. Buen equilibrio entre resistencia del filo y agudeza de corte en poliolefinas de gran consumo.\n- **Filo recto de 90°** — máxima resistencia de filo para compuestos rígidos, cargados o muy abrasivos, donde un bisel fino se desportillaría.\n- **Bisel escalonado** — un destalonado en dos etapas que conserva una línea de corte afilada dejando tras ella un apoyo robusto. Se emplea cuando se necesita un filo fino pero la vida de la cuchilla a 45° resultaría inaceptable.\n- **Curvo / en gancho** — atrae el hilo de fundido hacia el corte en lugar de empujarlo. Adecuado para polímeros de baja viscosidad y pegajosos que se embadurnan contra un filo recto.\n\n## Por qué la uniformidad de espesor dentro de un juego decide la vida de la cuchilla\n\nUna granceadora trabaja con un juego completo de cuchillas sobre un mismo portacuchillas, presionadas contra la cara de la hilera por una precarga común. Si el espesor varía entre las cuchillas del juego, las más gruesas soportan una parte desproporcionada de la presión de contacto mientras que las más finas apenas tocan. El resultado es un juego que se desgasta de forma desigual, una calidad de corte que se degrada mucho antes de que la cuchilla media esté agotada, y rayado localizado de la cara de hilera bajo las cuchillas altas.\n\nRectificamos las cuchillas en juegos emparejados y verificamos la uniformidad de espesor de todo el juego en CMM, en lugar de inspeccionar únicamente frente a una tolerancia pieza a pieza. La planitud importa por la misma razón: una cuchilla que no es plana contacta con la hilera por un canto en lugar de por toda su superficie de apoyo.\n\n## Selección de material\n\n**D2 (1.2379)** — grado económico de uso general para poliolefinas limpias de gran consumo.\n**M2 HSS (1.3343)** — mejor dureza en caliente para polímeros de mayor temperatura y de ingeniería.\n**T42 (1.3207)** — HSS de alto contenido en wolframio para corte sostenido a temperatura elevada.\n**HSS pulvimetalúrgico (PM)** — estructura de carburos fina y uniforme, la mejor combinación de retención de filo y tenacidad para compuestos abrasivos y cargados.\n**Inoxidable 440C** — para servicio subacuático donde la resistencia a la corrosión pesa más que la vida máxima de filo, sobre todo en líneas que permanecen paradas entre campañas.\n**Metal duro de wolframio** — vida máxima en compuestos con carga de vidrio y de minerales, donde su fragilidad es un compromiso aceptable.\n\n## Compatibilidad de máquinas\n\nLas cuchillas se fabrican para sistemas de granceado Gala, Nordson BKG (incluida la serie AH), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec y WRP. Envíenos el modelo de máquina junto con una cuchilla de muestra o una fotografía acotada, y elaboraremos un plano para su aprobación. También suministramos portacuchillas, placas de hilera, tirantes roscados, tornillos de cuchilla y juntas tóricas junto con las cuchillas.",
-    disambiguation:
-      "¿Corta hilos extruidos al aire en lugar de en la cara de la hilera? Consulte [Rotores de Granceadora de Hilos](/products/strand-pelletizer-rotors) para juegos de rotor helicoidal y contracuchilla.",
+      "Cuchillas peletizadoras de repuesto para sistemas submarinos, de anillo de agua y de cara caliente. Ranuras de hoja personalizadas, perfiles de borde y juegos combinados según el dibujo.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -6041,114 +7449,77 @@ export const blades: Blade[] = [
       "IPS",
       "Filtec",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 · M2 HSS · T42 · PM-HSS · 440C Stainless · Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value: "Blade held below die plate hardness (controlled wear)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "45° bevel · 90° square · Stepped bevel · Curved / hooked",
-      },
-      {
-        label: "Thickness Consistency",
-        value: "≤ 0.01 mm variation within a matched set",
-      },
-      {
-        label: "Flatness",
-        value: "≤ 0.01 mm",
-      },
-      {
-        label: "Pelletizing Methods",
-        value: "Underwater · Water-ring · Hot die face",
-      },
-      {
-        label: "Supply Format",
-        value: "Matched sets, CMM-verified; hubs and die plates available",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Gala, Nordson BKG, Maag, ECON, Coperion, NGR",
-      },
-    ],
-    componentsIntro:
-      "La placa de hilera es el activo; la cuchilla es el consumible. Todo lo que sigue se deriva de mantener esa relación en el sentido correcto.",
+    compatibleMachinesIntro:
+      "Obtenga cuchillas troqueladoras de repuesto hechas para el centro de su cortadora, con ranuras, hombros y perfiles de borde personalizados. Sureay ofrece juegos de cuchillos combinados en configuraciones de acero, HSS , acero inoxidable y carburo. Envíe sus dibujos para obtener una cotización adaptada a su sistema de peletización. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
     components: [
       {
-        id: "die-plate-protection",
-        tag: "DESGASTE CONTROLADO",
-        title: "Su placa de hilera sobrevive a la cuchilla",
+        id: "die-face-body-profiles",
+        tag: "Perfiles corporales",
+        title: "Opciones de materiales para el par de cuchilla y matriz",
         description:
-          "La dureza de la cuchilla se especifica por debajo de la dureza de la cara de hilera para que el consumible absorba el desgaste. Una cuchilla más dura que la hilera no dura más — raya la cara de la hilera, abre la holgura de corte y convierte un cambio de cuchillas en una reparación de hilera.",
+          "Sureay ofrece configuraciones de carburo y acero inoxidable D2 , M2 HSS , T42 , PM- HSS , 440C , lo que permite seleccionar el material de la cuchilla con el polímero y la placa de matriz correspondiente.",
       },
       {
-        id: "matched-set-grinding",
-        tag: "PRECISIÓN",
-        title: "Rectificadas y verificadas como juego emparejado",
+        id: "die-face-working-edge",
+        tag: "Borde de trabajo",
+        title: "Cuerpos personalizados y perfiles de vanguardia",
         description:
-          "Uniformidad de espesor dentro de ≤0,01 mm en todo el juego, verificada por CMM. Un juego completo comparte una única precarga contra la hilera: las cuchillas gruesas soportan la carga y rayan la hilera, las finas nunca llegan a cortar. La tolerancia pieza a pieza por sí sola no evita esto.",
+          "Los cuerpos de cuchillos listados tienen una longitud de 45 a 70 mm. Sureay fabrica cuerpos rectos, bifurcados y escalonados con las ranuras, caras de asiento y bordes de trabajo cuadrados, biselados o curvos especificados para el cubo de corte instalado.",
       },
       {
-        id: "geometry-by-polymer",
-        tag: "GEOMETRÍA",
-        title: "La forma del filo se elige a partir de su polímero",
+        id: "die-face-pelletizing-station",
+        tag: "Método de peletización",
+        title: "Juegos de cuchillos combinados y componentes complementarios",
         description:
-          "45° para poliolefinas de gran consumo, 90° para compuestos cargados y abrasivos, bisel escalonado cuando se necesita un filo fino que además aguante, y geometría en gancho para fundidos de baja viscosidad y pegajosos que se embadurnan contra un filo recto.",
+          "Solicite juegos de cuchillas combinados fabricados según un dibujo común, con el grosor de la hoja, la geometría del asiento y la dirección de corte especificados para las posiciones requeridas del cubo. Se pueden incluir bujes y placas de matriz en la consulta.",
+        relatedBladeIds: ["strand-pelletizer-rotors"],
       },
     ],
-    dimensionLabels: {
-      col0: "Perfil de Cuchilla",
-      col1: "Longitud × Anchura (mm)",
-      col2: "Espesor (mm)",
-      col3: "Montaje",
-      caption:
-        "* Geometrías representativas de cuchillas actualmente en producción. Las cuchillas de granceadora subacuática se fabrican para el portacuchillas concreto — envíenos el modelo de máquina junto con una cuchilla de muestra o una fotografía acotada para una cotización exacta.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Straight, twin slot",
-        od: "45 × 25",
-        bolt: "3 – 6",
-        thickness: "2 × Ø5.5 slots",
+        label: "Aplicación",
+        value: "Corte de pellets en la cara del troquel de extrusión",
       },
       {
-        spec: "Straight, twin slot",
-        od: "60 × 30",
-        bolt: "3 – 6",
-        thickness: "2 × R3.5 slots",
+        label: "Material",
+        value: "D2 , M2 HSS , T42 , PM- HSS , acero inoxidable 440C o carburo",
       },
       {
-        spec: "Straight, wide body",
-        od: "60 × 46",
-        bolt: "4 – 8",
-        thickness: "2 × R3.5, R5 relief",
+        label: "Geometría del filo",
+        value:
+          "Bisel de 45°, cuadrado de 90°, bisel escalonado o borde curvo/en forma de gancho",
       },
       {
-        spec: "Forked, triple slot",
-        od: "55 × 34",
-        bolt: "3 – 6",
-        thickness: "3 × R3.5 slots",
+        label: "Tamaños",
+        value: "45–70 mm",
       },
       {
-        spec: "Stepped / shouldered",
-        od: "60 × 35",
-        bolt: "4 – 8",
-        thickness: "2 slots, 129° flank",
+        label: "Consistencia del espesor",
+        value: "Variación ≤0,01 mm dentro del juego emparejado",
       },
       {
-        spec: "Tapered / hooked",
-        od: "70 × 60",
-        bolt: "4 – 8",
-        thickness: "63° flank",
+        label: "Llanura",
+        value: "≤0.01 mm",
+      },
+      {
+        label: "Métodos de peletización",
+        value:
+          "Granulación bajo el agua, por anillo de agua o por matriz caliente",
+      },
+      {
+        label: "Diferencial de dureza",
+        value:
+          "Dureza de la hoja debajo de la placa de matriz correspondiente (configuración de desgaste controlado)",
+      },
+      {
+        label: "Formato de suministro",
+        value:
+          "Conjuntos coincidentes, verificados por CMM; bujes y placas troqueladoras disponibles",
       },
     ],
     drawings: {
       intro:
-        "La mayoría de los pedidos de cuchillas de granceado nos llegan sin plano OEM: el cliente envía una cuchilla desgastada, o una fotografía y un modelo de máquina. Las geometrías siguientes son planos que elaboramos así, desde la medición hasta el plano de fabricación aprobado. Muestran la variedad de formas de cuerpo, patrones de ranura y ángulos de flanco que tenemos en producción, y el aspecto que tendría su propia cuchilla una vez reproducida por ingeniería inversa.",
+        "Estos ejemplos de dibujos muestran cómo la forma del cuerpo, las ranuras de montaje y los ángulos de los flancos varían según el cubo del cortador. Utilice su dibujo aprobado o una muestra medida cuando solicite un reemplazo.",
       items: [
         {
           image:
@@ -6210,7 +7581,6 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "strand-pelletizer-rotors",
       "continuous-melt-filter-scraper-blades",
-      "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 18,
@@ -6219,558 +7589,2756 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "¿Dañarán sus cuchillas mi placa de hilera?",
+          question: "¿Qué cuchilla de repuesto se adapta a mi peletizadora?",
           answer:
-            "No, si la relación de durezas se especifica correctamente, y eso es lo primero que establecemos en cualquier consulta. La cuchilla se mantiene deliberadamente por debajo de la dureza de la cara de hilera para que el desgaste lo absorba el consumible. Una cuchilla más dura que la placa de hilera no le da más vida — raya la cara de la hilera, lo que abre la holgura de corte, degrada la calidad del grano y termina obligando a rectificar o sustituir la hilera. Indíquenos el material y la dureza de la placa de hilera, o el modelo de máquina si no dispone de ese dato, y especificaremos la cuchilla en consecuencia. Cada envío incluye un certificado de dureza para que pueda verificar la relación antes de montar las cuchillas.",
+            "Identifique el cubo del peletizador y del cortador, luego especifique el cuerpo de la cuchilla, el grosor, las ranuras de fijación, la cara del asiento y la dirección de corte. Las cuchillas de matriz y cuchillas de peletizadora de cara caliente son términos de compra relacionados. El perfil de trabajo completo y la relación de montaje establecen el reemplazo particular dentro de esa máquina.",
         },
         {
           question:
-            "¿Por qué una cuchilla de mi juego se desgasta mucho más rápido que las demás?",
+            "¿Son intercambiables las cuchillas peletizadoras sumergibles, de anillo de agua y de cara caliente?",
           answer:
-            "Casi siempre por espesor desigual dentro del juego. Un juego completo de cuchillas comparte una única precarga contra la cara de hilera, así que si el espesor varía de una cuchilla a otra, las más gruesas soportan una parte desproporcionada de la presión de contacto — se desgastan rápido y rayan la hilera, mientras que las más finas apenas hacen contacto y nunca llegan a cortar bien. El juego falla mucho antes de que la cuchilla media esté agotada. Por eso rectificamos las cuchillas en juegos emparejados y verificamos por CMM la uniformidad de espesor de todo el juego dentro de 0,01 mm, en lugar de inspeccionar cada cuchilla frente a una tolerancia de forma aislada.",
+            "No. Las máquinas sumergibles, de anillo de agua y de cara caliente pueden utilizar diferentes bujes, características de montaje y perfiles de cuchilla. Haga coincidir el dibujo real del cubo y la cuchilla. Si la máquina corta hebras bajo el agua con un rotor dentado y una cuchilla fija, consulte [Rotores peletizadores de hebras](/products/strand-pelletizer-rotors) .",
         },
         {
           question:
-            "¿Qué geometría de filo debo usar — 45°, 90°, escalonada o en gancho?",
+            "¿Por qué es importante el material de la matriz a la hora de elegir la cuchilla?",
           answer:
-            "Elíjala según la viscosidad del polímero y el contenido de carga. Un bisel de 45° es la geometría de uso general y la opción por defecto correcta para poliolefinas de gran consumo. Pase a un filo recto de 90° para compuestos rígidos, con carga mineral o muy abrasivos, donde un bisel fino se desportillaría. Un bisel escalonado le da una línea de corte afilada con un apoyo robusto detrás, para casos en que necesita el filo fino pero un 45° simple no sobreviviría. La geometría curva o en gancho atrae el fundido hacia el corte en lugar de empujarlo, que es lo que conviene en polímeros de baja viscosidad o pegajosos que se embadurnan contra un filo recto.",
+            "La cara de la cuchilla y la matriz forman un par de trabajo, por lo que sus materiales y características de desgaste deben considerarse en conjunto. Utilice la especificación original de la cara del troquel junto con el polímero y el desgaste actual de la cuchilla. Un cambio en la dureza o la construcción de la hoja debe preservar la relación material prevista para ese sistema de granulación.",
         },
         {
           question:
-            "¿Debo usar cuchillas de acero inoxidable para granceado subacuático?",
+            "¿Por qué las cuchillas de un juego deberían compartir la geometría de asiento especificada?",
           answer:
-            "El inoxidable 440C merece la pena cuando la corrosión es un factor operativo real — sobre todo en líneas que permanecen paradas entre campañas, donde una cuchilla de acero de herramientas puede desarrollar óxido superficial en la cámara de agua que después raya la hilera al reanudar. La contrapartida es la retención de filo: el 440C no mantendrá el filo tanto como el M2 o el PM-HSS en el mismo servicio. Si su línea trabaja en continuo y la química del agua está controlada, el acero de herramientas o el PM-HSS suelen dar mejor coste por tonelada. Si arranca y para, o la cámara de agua no se vacía, la opción inoxidable a menudo se paga sola.",
+            "Cada pala debe alcanzar su posición de trabajo prevista en el cubo. Las variaciones en el espesor, las caras de asiento o la posición de los bordes pueden afectar la forma en que las cuchillas se unen al troquel. Especifique el juego completo con la misma revisión del dibujo, incluidas las posiciones deliberadamente diferentes, de modo que la geometría de corte instalada esté claramente definida.",
         },
         {
           question:
-            "¿En qué se diferencian las cuchillas subacuáticas, de anillo de agua y de cara caliente?",
+            "¿Qué se debe revisar cuando un cuchillo se desgasta más rápido que los demás?",
           answer:
-            "Se diferencian sobre todo en el entorno térmico y corrosivo del filo. Las cuchillas subacuáticas trabajan sumergidas y templadas, por lo que la resistencia a la corrosión es un factor de selección real. Las de anillo de agua cortan en una cara de hilera que trabaja al aire, con la cortina de agua aguas abajo, lo que somete el filo a un ciclado térmico más severo y favorece los grados más tenaces frente a los más duros. Las de cara caliente cortan en seco contra una hilera calefactada y ven la mayor temperatura de filo de las tres, que es donde el PM-HSS y el metal duro justifican su sobreprecio. Indíquenos qué método emplea su línea — cambia el grado recomendado incluso cuando las dimensiones de la cuchilla son idénticas.",
+            "Comience verificando si ese cuchillo se encuentra a la misma altura y ángulo especificados que los demás en el cubo. Compare su espesor, la cara de asiento y la posición del borde, luego verifique la alineación del soporte y la cara compartida del troquel. Inspeccionar esos puntos de contacto ayuda a evaluar el desgaste desigual antes de cambiar el material de la hoja.",
         },
         {
           question:
-            "¿Suministran también portacuchillas y placas de hilera además de las cuchillas?",
+            "¿Puede Sureay reproducir un cuchillo bifurcado o escalonado a partir de una muestra?",
           answer:
-            "Sí. Portacuchillas, placas de hilera, tirantes roscados, tornillos de fijación de cuchilla y juntas tóricas están todos disponibles, y pedir el conjunto de desgaste completo evita el desajuste que provoca una carga desigual de las cuchillas. Si va a sustituir también el portacuchillas además de las cuchillas, recomendamos suministrarlos juntos para verificar entre sí las caras de asiento de las cuchillas y el portacuchillas antes del envío.",
+            "Sí. Una muestra permite identificar el contorno, las ranuras y las características del asiento, mientras que el dibujo establece las nuevas dimensiones previstas y el perfil de corte. Marque claramente la cara de trabajo y la dirección de corte. Las formas ilustradas proporcionan referencias, y el espesor completo y los detalles de montaje definen la hoja para el centro de su cortador.",
+        },
+        {
+          question:
+            "¿Qué necesitas para cotizar cuchillas de peletizadora , mazas o placas de troquel?",
+          answer:
+            "Proporcione el modelo de peletizadora, el polímero, el dibujo de la cuchilla y la cantidad del juego. Muestra los asientos de la hoja, las ranuras de fijación y la dirección de corte. Si la cotización debe incluir un cubo de corte o una placa de matriz, envíe un dibujo por separado o una referencia de pieza para cada uno e identifique los componentes que conservará.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo del cubo del peletizador y del cortador, el dibujo de la hoja, el patrón de ranura, la dirección del borde de trabajo y los detalles de la placa de matriz.",
+    dimensionLabels: {
+      col0: "Perfil de Cuchilla",
+      col1: "Longitud × Anchura (mm)",
+      col2: "Espesor (mm)",
+      col3: "Montaje",
+      caption:
+        "* Geometrías representativas de cuchillas actualmente en producción. Las cuchillas de granceadora subacuática se fabrican para el portacuchillas concreto — envíenos el modelo de máquina junto con una cuchilla de muestra o una fotografía acotada para una cotización exacta.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR007401",
+        spec: "Ranura doble recta",
+        od: "45 × 25",
+        bolt: "3 – 6",
+        thickness: "2 × ranuras Ø5,5",
+      },
+      {
+        itemNo: "SR007402",
+        spec: "Ranura doble recta",
+        od: "60 × 30",
+        bolt: "3 – 6",
+        thickness: "2 × ranuras R3.5",
+      },
+      {
+        itemNo: "SR007403",
+        spec: "Cuerpo recto y ancho.",
+        od: "60 × 46",
+        bolt: "4 – 8",
+        thickness: "2 × R3.5 , alivio R5",
+      },
+      {
+        itemNo: "SR007404",
+        spec: "Bifurcado, triple ranura",
+        od: "55 × 34",
+        bolt: "3 – 6",
+        thickness: "3 × ranuras R3.5",
+      },
+      {
+        itemNo: "SR007405",
+        spec: "Pisado / a hombros",
+        od: "60 × 35",
+        bolt: "4 – 8",
+        thickness: "2 ranuras, flanco de 129°",
+      },
+      {
+        itemNo: "SR007406",
+        spec: "Cónico / enganchado",
+        od: "70 × 60",
+        bolt: "4 – 8",
+        thickness: "flanco de 63°",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas troqueladoras | Cuchillas de repuesto personalizadas",
+      heroAlt:
+        "Perfiles de cuchillas troqueladoras con formas de cuerpo rectas, bifurcadas y escalonadas",
+      sizeRange: "45–70 mm",
+      heroSpecs: [
         {
-          question:
-            "¿Pueden reproducir cuchillas a partir de una muestra sin plano OEM?",
-          answer:
-            "Sí, y así empieza la mayoría de los pedidos de cuchillas de granceado. Envíenos una cuchilla de muestra — preferiblemente sin desgastar, o una desgastada junto con el modelo de máquina — y elaboraremos un plano dimensional completo en nuestra CMM para su aprobación antes de fabricar. Conservamos el plano aprobado en archivo, de modo que los pedidos repetidos no requieren volver a medir. Sus planos y muestras siguen siendo su propiedad intelectual y nunca se comparten.",
+          label: "Material",
+          value:
+            "Acero para herramientas, HSS , acero PM, acero inoxidable o carburo",
         },
         {
-          question:
-            "¿Cuál es el plazo de entrega y puedo probar primero un juego?",
-          answer:
-            "Las cuchillas fabricadas a partir de un plano ya aprobado se envían en 10–15 días laborables; los juegos reproducidos por ingeniería inversa por primera vez añaden aproximadamente 3–5 días para medición, plano y aprobación. Suministramos juegos de prueba para verificar el ajuste y comparar la vida del filo frente a su proveedor actual antes de que se comprometa con una cantidad de producción.",
-        },
-        {
-          question:
-            "¿Qué documentación acompaña a un juego de cuchillas de granceado?",
-          answer:
-            "Cada juego incluye un certificado de dureza Rockwell — el documento que le permite verificar la relación de dureza cuchilla-hilera antes de la instalación — además de un informe dimensional por CMM que cubre la uniformidad de espesor de todo el juego, un certificado de trazabilidad del material de la acería y un registro del lote de tratamiento térmico.",
+          label: "Aplicación",
+          value: "Corte de pellets en la cara del troquel de extrusión",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Aplicación",
+          value: "Corte de pellets en la cara del troquel de extrusión",
+        },
+        {
+          label: "Material",
+          value:
+            "D2 , M2 HSS , T42 , PM- HSS , acero inoxidable 440C o carburo",
+        },
+        {
+          label: "Geometría del filo",
+          value:
+            "Bisel de 45°, cuadrado de 90°, bisel escalonado o borde curvo/en forma de gancho",
+        },
+        {
+          label: "Tamaños",
+          value: "45–70 mm",
+        },
+        {
+          label: "Consistencia del espesor",
+          value: "Variación ≤0,01 mm dentro del juego emparejado",
+        },
+        {
+          label: "Llanura",
+          value: "≤0.01 mm",
+        },
+        {
+          label: "Métodos de peletización",
+          value:
+            "Granulación bajo el agua, por anillo de agua o por matriz caliente",
+        },
+        {
+          label: "Diferencial de dureza",
+          value:
+            "Dureza de la hoja debajo de la placa de matriz correspondiente (configuración de desgaste controlado)",
+        },
+        {
+          label: "Formato de suministro",
+          value:
+            "Conjuntos coincidentes, verificados por CMM; bujes y placas troqueladoras disponibles",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
+        alt: "Cuchillas troqueladoras que muestran sus ranuras de montaje y bordes rectificados.",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite presupuesto para sus cuchillas troqueladoras",
+        description:
+          "Incluya el modelo del peletizador y del cubo de corte, el dibujo o muestra de la hoja, el patrón de ranura, la orientación del borde y la cantidad.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
-    id: "groove-bottom-knives",
-    name: "Cuchillas Inferiores Ranuradas",
-    fullName:
-      "Cuchillas inferiores multirranura y anillos de corte para corte por cizalla",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Cuchillas Cortadoras",
-    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Paso desde 5 mm",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    id: "special-shaped-blades",
+    name: "Cuchillas industriales de forma especial",
+    fullName: "Cuchillas industriales de forma especial fabricadas según plano",
+    seoTitle:
+      "Cuchillas industriales de forma especial | Perfiles personalizados",
+    category: "custom_profile",
+    sector: "other",
+    categoryDisplay: "Cuchillas de perfil personalizado",
+    image: "/images/products/blades/special-shaped-knife.webp",
+    badge: "OEM Personalizado",
+    badgeColor: "teal",
+    description:
+      "Cuchillas de repuesto para máquina con perfil personalizado en D2 , H13 , PM- HSS o carburo. Contornos específicos de la pieza, bordes cortantes y características de montaje hechos según el dibujo.",
+    link: "/custom",
+    specs: [
+      {
+        label: "Aplicación",
+        value:
+          "Cuchillas para máquinas con contorno o perfil de filo específico para la pieza",
+      },
+      {
+        label: "Material",
+        value: "D2 , H13 , PM- HSS o carburo",
+      },
+      {
+        label: "Tamaños",
+        value: "Hecho a dibujo",
+      },
+      {
+        label: "Tolerancia dimensional",
+        value: "±0.02 mm",
+      },
     ],
-    galleryAlts: [
-      "Anillo de cuchilla inferior multirranura con ranuras paralelas rectificadas con precisión para corte por cizalla",
-      "Anillos de cuchilla inferior multirranura con un anillo separador liso y cuchillas inferiores planas",
-      "Anillo de corte inferior multirranura mostrando el paso de ranura y el alojamiento rectificado",
+    offers: {
+      lowPrice: 20,
+      highPrice: 800,
+    },
+    quoteRequirements:
+      "Incluya la máquina y el material, la revisión del dibujo, el contorno de la hoja, las dimensiones de montaje y los requisitos críticos de tolerancia o borde.",
+    components: [
+      {
+        id: "special-shaped-blades-advantage-1",
+        tag: "Perfiles de corte específicos de piezas",
+        title: "Perfiles de corte específicos de piezas",
+        description:
+          "Sureay fabrica hojas industriales con contornos, biseles y posiciones del borde de trabajo personalizados, lo que le brinda una ruta de reemplazo para perfiles de cuchillas fuera de las configuraciones estándar rectas o circulares.",
+      },
+      {
+        id: "special-shaped-blades-advantage-2",
+        tag: "Opciones de acero para herramientas, PM- HSS y carburo",
+        title: "Opciones de acero para herramientas, PM- HSS y carburo",
+        description:
+          "Las configuraciones D2 , H13 , PM- HSS y carburo permiten especificar el material de corte según el diseño de la hoja existente y el material que se está procesando.",
+      },
+      {
+        id: "special-shaped-blades-advantage-3",
+        tag: "Montaje basado en dibujos y perfiles manuales",
+        title: "Montaje basado en dibujos y perfiles manuales",
+        description:
+          "Sureay fabrica orificios, ranuras y superficies de asiento personalizados para sus puntos de referencia de montaje. Especifique la distancia entre el borde y el asiento, la dirección de corte y cualquier diferencia entre el lado izquierdo y el derecho para que el reemplazo conserve la posición de trabajo original.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "¿Qué es una cuchilla industrial de forma especial?",
+          answer:
+            "Se trata de una cuchilla mecánica cuyo contorno, perfil de borde o disposición de montaje necesita un dibujo específico de la pieza. El cuchillo de perfil personalizado y la hoja especial son nombres de compras relacionados. La tarea de corte y la posición de instalación establecen la geometría real, incluidas características que no pueden identificarse únicamente por la longitud, el ancho y el espesor totales.",
+        },
+        {
+          question:
+            "¿Qué dimensiones determinan el ajuste de una cuchilla de perfil especial?",
+          answer:
+            "Es especialmente importante la posición del borde con respecto a los puntos de referencia de montaje. Defina el contorno, el espesor, los orificios, las ranuras, los huecos y el bisel, luego identifique qué dimensiones controlan la ubicación y la sujeción. Esto conecta el perfil de corte con la posición de instalación en lugar de depender únicamente de las dimensiones generales.",
+        },
+        {
+          question:
+            "¿Cómo se deben identificar los cuchillos de mano izquierda y de mano derecha?",
+          answer:
+            "Utilice una vista de dibujo definida y muestre la orientación instalada y la dirección de corte. Incluya ambas caras donde el bisel, avellanado o hueco de montaje cambia de lado. Un contorno reflejado puede preservar las dimensiones generales mientras se mueve una característica crítica, por lo que cada mano requerida debe tener una referencia de pieza inequívoca.",
+        },
+        {
+          question:
+            "¿Se puede cambiar el material manteniendo el perfil existente?",
+          answer:
+            "Sí, se puede considerar un nuevo material manteniendo el perfil requerido. Elija el grado candidato utilizando el material que se está cortando, use el cuchillo actual y apoye el borde. Trátelo como una especificación de material revisada y conserve la geometría de corte y montaje requerida.",
+        },
+        {
+          question: "¿Se puede reafilar una hoja de forma especial?",
+          answer:
+            "Sí, si el rectificado puede restaurar el perfil de corte especificado sin mover el borde más allá de los límites del dibujo. Haga referencia al mismo orificio, hombro o cara de asiento al medir el borde rectificado. Reemplace el cuchillo si el filo ya no se puede restaurar dentro de esos límites.",
+        },
+        {
+          question:
+            "¿Qué debo enviar para una cotización de pala industrial de perfil personalizado?",
+          answer:
+            "Envíe la máquina o estación de corte, el material que se está cortando, el plano de la pieza aprobada y la cantidad. Marque la dirección de corte, los puntos de referencia de montaje y las dimensiones toleradas desde el borde hasta el asiento, incluido cada perfil lateral. Si solo tiene una muestra, muestre el componente coincidente o una referencia no utilizada y marque las áreas desgastadas.",
+        },
+      ],
+      company: [],
+    },
+    disambiguation:
+      "Para el envío de dibujos y el proceso de fabricación, consulte [Cuchillas industriales personalizadas](/custom) .",
+  },
+  {
+    id: "wood-chipper-blades",
+    seoDescription:
+      "Cuchillas móviles para astilladoras de madera de tambor y de disco en longitudes indicadas de 230 a 600 mm. Especifique acero chipper, D2 o un borde con punta de carburo, además de su patrón de bisel y pernos.",
+    name: "Cuchillas para astilladoras de madera",
+    fullName: "Cuchillas para astilladoras de madera de tambor y de disco",
+    category: "wood_chipper",
+    sector: "wood",
+    categoryDisplay: "Cuchillas para astilladoras de madera",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1600,
+      height: 846,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Grado forestal",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Anillos de cuchilla inferior multirranura para corte por cizalla en rebobinadoras de papel, cartoncillo y film. El ancho de corte se cambia moviendo la cuchilla superior a otra ranura en lugar de reconfigurar la herramienta. Paso de ranura desde 5 mm, DE hasta Φ406 mm, alojamiento liso para ejes neumáticos o con prisionero para ejes macizos. Filo simple o doble, anillo de una pieza o partido. También se suministran anillos de una sola ranura y anillos separadores lisos.",
-    fullDescription:
-      "Una cuchilla inferior multirranura —también llamada cortadora inferior multirranura, yunque multirranura o MKB— es un anillo ancho con muchas ranuras paralelas rectificadas con precisión. Cada ranura es una posición de corte utilizable, de modo que un cambio de ancho consiste en mover la cuchilla superior a otra ranura en lugar de desmontar el eje y reconstruir el paquete de cuchillas. En una línea que cambia de ancho de pedido con frecuencia, esa diferencia se mide en horas de turno, no en coste de cuchilla.\n\nLas ranuras son las que hacen el corte, así que son las que deben estar bien. La posición de la ranura fija el ancho de corte, el ancho de la ranura fija la holgura de cizalla efectiva frente a la cuchilla superior asociada, y el estado del filo de la ranura determina si la banda se cizalla o se desgarra. Las tres se rectifican en una sola sujeción sobre el mismo anillo, y por eso un anillo multirranura mantiene la precisión de ancho a lo largo de todo el paquete mejor que un número equivalente de cuchillas yunque independientes montadas con separadores.\n\n## Dónde el formato justifica su precio\n\nUna cuchilla inferior de una sola ranura es más barata por unidad y perfectamente adecuada en una línea que trabaja un mismo ancho durante semanas. El anillo multirranura gana donde el ancho de pedido cambia con frecuencia, donde el número de cortes es alto, o donde reajustar un paquete de separadores se ha convertido en el verdadero cuello de botella del cambio. Además elimina toda una clase de error de reglaje: con posiciones de ranura fijas rectificadas en un único cuerpo, el ancho no puede desviarse porque alguien haya montado los separadores un milímetro fuera.\n\n## Montaje: eje neumático o eje macizo\n\nDos estilos de montaje cubren casi cualquier rebobinadora. Un alojamiento liso se fija por apriete sobre un eje neumático expansible, que es la opción de cambio rápido y la habitual en líneas de transformación modernas. Un diseño con prisionero se fija sobre un eje inferior macizo, más común en máquinas antiguas y en líneas de cartón pesado donde la rigidez del eje importa más que la velocidad de cambio. Indíquenos qué eje utiliza: cambia la especificación del alojamiento, no solo la fijación, y un anillo mecanizado para el sistema equivocado no asentará verdadero.\n\n## Una pieza o partido\n\nLos anillos estándar son de una pieza. Un anillo partido en dos piezas cuesta más pero se desmonta y se vuelve a montar sin desarmar el conjunto del eje, lo que en una máquina ancha puede convertir una parada programada en un cambio en marcha. Si actualmente cambia sus anillos extrayendo el eje completo, la versión partida suele ser lo primero que merece la pena cotizar.\n\n## Filo simple o doble\n\nLos anillos se rectifican con un filo de corte simple o con filos a ambos lados de cada ranura. La geometría de doble filo duplica las posiciones utilizables y permite invertir el anillo cuando una cara está desgastada, a costa de un rectificado más exigente y un precio unitario mayor. Cuál es la correcta depende de cómo se distribuyan sus posiciones de corte a lo largo del anillo, así que envíe el plan de anchos y no solo el número de ranuras.\n\n## El paso de ranura se fabrica según su plan de anchos\n\nLa división entre filos —la distancia de un filo de corte al siguiente, también llamada paso— es prácticamente siempre a medida y puede llegar a ser tan estrecha como 5 mm (0,200 in). Los diámetros exteriores llegan hasta Φ406 mm (16 in). Aquí no existe una tabla estándar útil, y por eso cotizamos a partir de su plan de anchos o de un plano: facilítenos el DE, el alojamiento, el ancho del anillo, los anchos que realmente produce y la cuchilla superior asociada, y rectificaremos las posiciones de ranura conforme a ese plan.\n\n## El resto del juego de anillos\n\nUn eje en producción rara vez está formado solo por anillos multirranura. Los anillos de corte de una sola ranura cubren posiciones fijas, y los anillos lisos actúan como separadores y como apoyo de la banda entre posiciones de corte. Suministramos los tres con la misma especificación de alojamiento y de excentricidad para que se apilen sin introducir oscilación: mezclar anillos de distintos proveedores en un mismo eje es una causa habitual y difícil de diagnosticar de variación en el ancho de corte.\n\n## Aplicaciones\n\nTransformación de papel, cartoncillo, tisú y cartón ondulado; film, lámina metálica, papel autoadhesivo, cinta adhesiva, no tejidos y textiles en rebobinadoras de corte por cizalla.",
-    link: "/products/groove-bottom-knives",
-    disambiguation:
-      "Esta página trata los anillos multirranura que agrupan muchas posiciones de corte en un solo cuerpo. Para las cuchillas inferiores circulares de filo simple que se emparejan con una cuchilla superior en rebobinadoras de papel, consulte [Cuchillas Inferiores para Rebobinadoras Cortadoras](/products/slitter-rewinder-bottom-knives).",
-    introNote:
-      "El paso de ranura, el número de ranuras y el alojamiento se fabrican según su plan de anchos: no existe una medida estándar significativa para este producto. Envíe los anchos que realmente produce, el tipo de eje (neumático o macizo) y la cuchilla superior asociada, y rectificaremos las posiciones de ranura conforme a ese plan.",
+      "Cuchillas de repuesto para astilladoras de madera de tambor y disco. Opciones de astilladora de acero, D2 y con punta de carburo, con biseles y patrones de pernos personalizados según el dibujo.",
+    link: "/products/wood-chipper-blades",
+    isFeatured: true,
     compatibleMachines: [
-      "Kampf",
-      "Goebel",
-      "Atlas Converting",
-      "Dienes",
-      "Nishimura",
-      "Deacro",
-      "Parkinson Technologies",
+      "Bandit Industries",
+      "Vermeer",
+      "Morbark",
+      "Peterson Pacific",
+      "Doppstadt",
+      "Jenz",
+      "CBI",
+      "Precision Husky",
+      "Bruks Siwertell",
+    ],
+    compatibleMachinesIntro:
+      "Obtenga cuchillas de repuesto hechas para su astilladora de tambor o disco, con biseles, orificios de fijación y perfiles de sujeción personalizados. Sureay ofrece opciones de astilladora de acero, D2 , Cr12MoV y con punta de carburo. Comparta su dibujo o muestra para obtener una cotización, incluido el yunque correspondiente cuando sea necesario. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "chipper-knife-body",
+        tag: "Geometría del cuchillo",
+        title: "Opciones de trituradora de acero y con punta de carburo",
+        description:
+          "Las construcciones de acero con alto contenido de carbono de la trituradora, D2 , Cr12MoV y con punta de carburo le brindan opciones de reemplazo para diferentes avances de madera y condiciones de desgaste observadas.",
+      },
+      {
+        id: "chipper-knife-material",
+        tag: "Opciones de materiales",
+        title: "Biseles personalizados y perfiles de montaje",
+        description:
+          "Las longitudes de las cuchillas para trituradoras de madera enumeradas varían de 230 a 600 mm, con longitudes personalizadas de hasta 800 mm. Sureay fabrica el bisel, el patrón de pernos y el perfil de asiento según el dibujo para astilladoras de tambor y disco existentes.",
+      },
+      {
+        id: "chipper-knife-anvil-pair",
+        tag: "par de corte",
+        title: "Cuchillos en movimiento y yunques a juego",
+        description:
+          "Solicite cuchillas móviles y yunques estacionarios en una sola consulta, con cada pieza especificada para el conjunto de corte de la astilladora y los componentes que desea conservar.",
+        relatedBladeIds: ["wood-chipper-anvils"],
+      },
     ],
     specs: [
       {
+        label: "Tamaños",
+        value:
+          "Longitudes listadas 230–600 mm; longitudes personalizadas de hasta 800 mm",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Cuchillas móviles para astilladoras de árboles enteros, de tambor, de disco y de biomasa, y para el reciclaje de palets",
+      },
+      {
         label: "Material",
         value:
-          "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / con plaquitas de carburo",
+          "Chipeadora de acero con alto contenido de carbono, D2 (1.2379), Cr12MoV o construcción con punta de carburo",
       },
       {
-        label: "Diámetro exterior",
-        value: "Hasta Φ406 mm (16 in)",
+        label: "Dureza",
+        value:
+          "Acero para trituradora: HRC 55–58; D2 / Cr12MoV : HRC 58–62; filo de corte de carburo: HRA 89–91",
       },
       {
-        label: "Paso de ranura",
-        value: "Desde 5 mm (0,200 in), rectificado según su plan de anchos",
+        label: "Ángulo de bisel",
+        value: "25°–42°",
+      },
+      {
+        label: "Tolerancia de grosor",
+        value: "±0.05 mm",
+      },
+      {
+        label: "Tratamiento térmico",
+        value:
+          "Endurecimiento al vacío y tratamiento criogénico profundo (−196°C)",
+      },
+      {
+        label: "Reafilado",
+        value:
+          "Endurecido completamente; 8 a 12 ciclos de rectificado, sujeto al desgaste y a la altura restante de la cuchilla",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Tipo de astilladora / Plataforma OEM",
+      col1: "Longitud (mm)",
+      col2: "Anchura (mm)",
+      col3: "Espesor (mm)",
+      caption:
+        "* Dimensiones estándar para los principales fabricantes de astilladoras. patrones de pernos de 2, 3 y 4 orificios mecanizados por CNC según los planos exactos de los OEM. Contracuchillas y placas de desgaste disponibles como juegos combinados. Longitudes personalizadas de hasta 800 mm.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR006101",
+        spec: 'Tambor Bandit 12" / 15"',
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006102",
+        spec: 'Bandit de 18" / 19"',
+        od: "295",
+        id: "80",
+        thickness: "19",
+      },
+      {
+        itemNo: "SR006103",
+        spec: "Vermeer BC1800 / BC2100",
+        od: "310",
+        id: "100",
+        thickness: "19",
+      },
+      {
+        itemNo: "SR006104",
+        spec: "Tambor Morbark 40/36",
+        od: "400",
+        id: "100",
+        thickness: "22",
+      },
+      {
+        itemNo: "SR006105",
+        spec: "Disco Morbark 50/48",
+        od: "250",
+        id: "120",
+        thickness: "25",
+      },
+      {
+        itemNo: "SR006106",
+        spec: "Disco Peterson 5710",
+        od: "280",
+        id: "130",
+        thickness: "25",
+      },
+      {
+        itemNo: "SR006107",
+        spec: "Doppstadt / Jenz Biomasa",
+        od: "350",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006108",
+        spec: "Astilladora pesada de árboles enteros",
+        od: "600",
+        id: "150",
+        thickness: "30",
+      },
+      {
+        itemNo: "SR006109",
+        spec: "Eschlböck Biber",
+        od: "245",
+        id: "285",
+        thickness: "20",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Cuchillas para astilladoras de madera de tambor y de disco",
+      heroAlt:
+        "Cuchilla trituradora de madera con filo recto, ranuras de montaje abiertas y orificios de fijación",
+      sizeRange: "230–600 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "Trituradora de acero, D2 , Cr12MoV o con punta de carburo",
+        },
+        {
+          label: "Aplicación",
+          value: "Astilladoras de madera de tambor y disco",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value:
+            "Longitudes listadas 230–600 mm; longitudes personalizadas de hasta 800 mm",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Cuchillas móviles para astilladoras de árboles enteros, de tambor, de disco y de biomasa, y para el reciclaje de palets",
+        },
+        {
+          label: "Material",
+          value:
+            "Chipeadora de acero con alto contenido de carbono, D2 (1.2379), Cr12MoV o construcción con punta de carburo",
+        },
+        {
+          label: "Dureza",
+          value:
+            "Acero para trituradora: HRC 55–58; D2 / Cr12MoV : HRC 58–62; filo de corte de carburo: HRA 89–91",
+        },
+        {
+          label: "Ángulo de bisel",
+          value: "25°–42°",
+        },
+        {
+          label: "Tolerancia de grosor",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Tratamiento térmico",
+          value:
+            "Endurecimiento al vacío y tratamiento criogénico profundo (−196°C)",
+        },
+        {
+          label: "Reafilado",
+          value:
+            "Endurecido completamente; 8 a 12 ciclos de rectificado, sujeto al desgaste y a la altura restante de la cuchilla",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
+        alt: "Dibujo de la cuchilla trituradora de madera que muestra el cuerpo, las ranuras de montaje abiertas y la sección transversal biselada",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite presupuesto para sus cuchillas trituradoras",
+        description:
+          "Incluya el modelo de la trituradora y el número de serie, el tipo de tambor o disco, el dibujo o muestra de la cuchilla y la cantidad requerida.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-anvils"],
+    offers: {
+      lowPrice: 25,
+      highPrice: 380,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Qué cuchillas de repuesto para trituradora de madera se adaptan a mi máquina?",
+          answer:
+            "Utilice el modelo de la trituradora, el número de serie y la referencia de la pieza original para identificar las dimensiones, el bisel, el patrón de fijación y el asiento de la nueva cuchilla. Las cuchillas y cuchillas de la trituradora comúnmente describen las cuchillas móviles en un tambor o disco. Los dientes de la amoladora son un tipo de pieza de desgaste independiente, por lo que el conjunto de corte real debe acompañar al nombre de la compra.",
+        },
+        {
+          question:
+            "¿Cuándo se deben considerar las cuchillas trituradoras con punta de carburo?",
+          answer:
+            "Considere el patrón de desgaste y la condición de avance antes de cambiar la construcción del borde de trabajo. El desgaste abrasivo gradual y los daños por impacto localizados exigen decisiones de materiales diferentes. Compare el historial actual de contaminación, bisel y cuchilla de acero con el diseño con punta de carburo propuesto, preservando al mismo tiempo la geometría de montaje y trabajo requerida por la astilladora.",
+        },
+        {
+          question:
+            "¿Por qué la calidad de las virutas y el esfuerzo de corte cambian a medida que se desgastan las cuchillas?",
+          answer:
+            "Un borde desafilado o dañado cambia la forma en que el cuchillo se acopla a la madera y puede aumentar el esfuerzo necesario para procesarla. Compare los bordes usados ​​con la muestra de viruta y la condición de alimentación. Incluya el yunque estacionario en la inspección, porque ambas partes establecen la relación de corte.",
+        },
+        {
+          question:
+            "¿Son iguales los cuchillos reversibles y los cuchillos reafilables?",
+          answer:
+            "No. Se puede girar una cuchilla trituradora reversible para utilizar un segundo filo. Un cuchillo reafilable puede tener un borde desgastado reafilado dentro de sus límites de servicio. Algunos cuchillos soportan ambos. Utilice el manual de dibujo de la cuchilla y de la astilladora para confirmar la orientación permitida, el bisel y las dimensiones restantes.",
+        },
+        {
+          question:
+            "¿Cuándo se debe reemplazar una cuchilla trituradora en lugar de afilarla?",
+          answer:
+            "Reemplace las cuchillas con grietas, deformaciones o daños que impidan la restauración de la geometría de trabajo especificada. Un borde desgastado puede reafilarse cuando las dimensiones restantes de la cuchilla lo permitan. Utilice los límites de la trituradora para cada cuchilla en particular en lugar de un recuento fijo de triturado, e inspeccione las superficies de montaje así como el borde.",
+        },
+        {
+          question:
+            "¿Se debe reemplazar el yunque cada vez que se cambian las cuchillas móviles?",
+          answer:
+            "No. Un nuevo cuchillo en movimiento no siempre requiere un nuevo yunque. Evalúe el yunque en busca de desgaste, daños y ajustes restantes. Un yunque en buen estado puede permanecer en su lugar si su borde y su montaje aún permiten el espacio de corte requerido. Consulte [Yunques de trituradora de madera](/products/wood-chipper-anvils) para obtener cuchillas fijas de repuesto.",
+        },
+        {
+          question:
+            "¿Cómo solicito una cotización de cuchillas para trituradoras de tambor o de disco?",
+          answer:
+            "Enviar modelo y número de serie de la trituradora, referencia o plano de la pieza original, alimentación de madera y cantidad. Incluya las dimensiones del bisel, perno o ranura y el perfil del asiento de la hoja. Para una máquina más antigua sin dibujo, una muestra dimensionada puede mostrar el asiento y el patrón de fijación. Marque cualquier altura perdida al afilar.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo y serie de la trituradora, el tipo de tambor o disco, el dibujo de la cuchilla, el patrón de pernos y la materia prima de madera.",
+    rfqPlaceholder:
+      "Modelo y número de serie de la trituradora, tipo de tambor o disco, dibujo o muestra de la cuchilla y cantidad requerida.",
+    disambiguation:
+      "Para conocer la parte estacionaria opuesta a la cuchilla giratoria, consulte [Yunques de trituradora de madera](/products/wood-chipper-anvils) .",
+  },
+  {
+    id: "wood-chipper-anvils",
+    seoDescription:
+      "Vuelva a colocar la contracuchilla estacionaria opuesta a las cuchillas móviles de la astilladora. Los yunques de las trituradoras de madera se presentan en longitudes de 185 a 400 mm, con ranuras de montaje personalizadas.",
+    name: "Contracuchillas para astilladoras de madera",
+    fullName: "Yunques y contracuchillas para astilladoras de madera",
+    category: "wood_chipper",
+    sector: "wood",
+    categoryDisplay: "Contracuchillos y yunques",
+    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1439,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Conjuntos combinados",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+    ],
+    description:
+      "Yunques de repuesto para trituradora de madera en D2 , Cr12MoV , A8 modificado o 42CrMo. Perfiles de borde de trabajo personalizados y ranuras de montaje que coinciden con la pieza original.",
+    link: "/products/wood-chipper-anvils",
+    isFeatured: true,
+    compatibleMachines: [
+      "Bandit",
+      "Vermeer",
+      "Morbark",
+      "Timberwolf",
+      "Schliesing",
+      "Greenmech",
+      "Jensen",
+      "Jenz",
+      "Eschlböck",
+      "Forst",
+    ],
+    compatibleMachinesIntro:
+      "Obtenga un yunque de astilladora de repuesto con el borde de trabajo, las ranuras de fijación y las caras de asiento que su máquina necesita. Sureay ofrece opciones de materiales completamente endurecidos y perfiles personalizados. Comparta su dibujo o muestra para obtener una cotización de yunque, con cuchillas móviles disponibles como artículos separados. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "chipper-anvil-edge",
+        tag: "Borde estacionario",
+        title: "Múltiples opciones de acero para bordes estacionarios",
+        description:
+          "Sureay ofrece yunques D2 , Cr12MoV , A8 modificado y 42CrMo , lo que permite especificar el material de reemplazo según el par de cuchillas y las condiciones de desgaste existentes de la astilladora.",
+      },
+      {
+        id: "chipper-anvil-adjustment",
+        tag: "Montaje",
+        title: "Bordes de trabajo definidos y caras de asiento",
+        description:
+          "Las longitudes de yunque enumeradas van de 185 a 400 mm, con longitudes personalizadas de hasta 600 mm. Sureay crea el borde estacionario y las superficies de ubicación según el dibujo de la carcasa de su astilladora existente.",
+      },
+      {
+        id: "chipper-anvil-pair",
+        tag: "Par de repuesto",
+        title: "Ranuras de montaje para sistemas de ajuste existentes",
+        description:
+          "Hay configuraciones de montaje ranuradas disponibles para conjuntos ajustados con cuñas, con ubicaciones de ranuras y dimensiones del cuerpo hechas según el dibujo del yunque original.",
+        relatedBladeIds: ["wood-chipper-blades"],
+      },
+    ],
+    specs: [
+      {
+        label: "Tamaños",
+        value:
+          "Longitudes listadas 185–400 mm; longitudes personalizadas de hasta 600 mm",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Contracuchilla fija opuesta a las cuchillas móviles de la trituradora",
+      },
+      {
+        label: "Material",
+        value: "D2 , Cr12MoV , A8 modificado o 42CrMo",
       },
       {
         label: "Montaje",
         value:
-          "Alojamiento liso para eje neumático expansible, o prisionero para eje macizo",
+          "Orificios ranurados con espacio libre para cuchillas ajustable mediante cuñas",
       },
       {
-        label: "Configuración de filo",
-        value: "Filo de corte simple o doble",
+        label: "Dureza",
+        value: "HRC 54–60, totalmente templado",
+      },
+      {
+        label: "Geometría del filo",
+        value: "Bisel simple, 30°–37°",
+      },
+      {
+        label: "Paralelismo",
+        value: "±0,05 mm sobre la longitud de la hoja",
+      },
+      {
+        label: "Reafilado",
+        value:
+          "Endurecido completamente; 5 a 10 ciclos de rectificado, sujeto al desgaste y a la altura restante del yunque",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Astilladora OEM / Modelo",
+      col1: "Longitud (mm)",
+      col2: "Anchura (mm)",
+      col3: "Espesor (mm)",
+      caption:
+        "* Dimensiones estándar del yunque de repuesto OEM. Agujeros de montaje ranurados mecanizados por CNC según los patrones de ajuste de holgura exactos de OEM. Juegos de cuchilla y yunque disponibles para todos los tamaños. Longitudes personalizadas de hasta 600 mm.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR006201",
+        spec: 'Bandit 12" / 15" / Poderoso Bandit',
+        od: "185",
+        id: "75",
+        thickness: "10",
+      },
+      {
+        itemNo: "SR006202",
+        spec: 'Bandit 18" / 19" / 1290 / 1590',
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006203",
+        spec: "Vermeer BC1200 / BC1500",
+        od: "200",
+        id: "80",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006204",
+        spec: "Vermeer BC1800 / BC2000",
+        od: "260",
+        id: "100",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006205",
+        spec: "Morbark 2 / 5 / 7 / 12 / 13",
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006206",
+        spec: "Morbark 40/36 / 50/48",
+        od: "400",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006207",
+        spec: "Timberwolf 150 / 190 / 230",
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006208",
+        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
+        od: "260",
+        id: "80",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006209",
+        spec: "Greenmech / Jensen / Forst",
+        od: "Por dibujo OEM",
+        id: "Per OEM Drawing",
+        thickness: "Por dibujo OEM",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Yunques y contracuchillas para astilladoras de madera",
+      heroAlt:
+        "Yunque de trituradora de madera rectangular con tres orificios de fijación y borde de trabajo rectificado",
+      sizeRange: "185–400 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "D2 , Cr12MoV , A8 modificado o 42CrMo",
+        },
+        {
+          label: "Aplicación",
+          value: "Contracuchillas estacionarias para trituradoras de madera",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value:
+            "Longitudes listadas 185–400 mm; longitudes personalizadas de hasta 600 mm",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Contracuchilla fija opuesta a las cuchillas móviles de la trituradora",
+        },
+        {
+          label: "Material",
+          value: "D2 , Cr12MoV , A8 modificado o 42CrMo",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Orificios ranurados con espacio libre para cuchillas ajustable mediante cuñas",
+        },
+        {
+          label: "Dureza",
+          value: "HRC 54–60, totalmente templado",
+        },
+        {
+          label: "Geometría del filo",
+          value: "Bisel simple, 30°–37°",
+        },
+        {
+          label: "Paralelismo",
+          value: "±0,05 mm sobre la longitud de la hoja",
+        },
+        {
+          label: "Reafilado",
+          value:
+            "Endurecido completamente; 5 a 10 ciclos de rectificado, sujeto al desgaste y a la altura restante del yunque",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+        alt: "Dos contracuchillas de la trituradora de madera que muestran los orificios de fijación biselados y avellanados.",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite presupuesto para sus yunques de trituradora",
+        description:
+          "Incluya el modelo y número de serie de la astilladora, la posición del yunque, el dibujo o muestra y la cantidad requerida.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-blades"],
+    offers: {
+      lowPrice: 25,
+      highPrice: 250,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Qué hace el yunque de una trituradora de madera? ¿Es una contracuchilla?",
+          answer:
+            "El yunque proporciona el borde estacionario contra el cual cortan las cuchillas móviles de la trituradora. La contracuchilla y la cuchilla fija pueden referirse a esa misma posición, dependiendo de la máquina. Utilice el diagrama de piezas para identificar el borde estacionario y su montaje antes de realizar el pedido por nombre.",
+        },
+        {
+          question:
+            "¿Por qué el corte puede seguir siendo deficiente después de reemplazar las cuchillas móviles?",
+          answer:
+            "Las cuchillas móviles todavía actúan contra el borde estacionario existente. El redondeo, el daño o una posición instalada alterada en el yunque pueden afectar su relación de corte. Compare ambas piezas y su condición de montaje, luego utilice el procedimiento del fabricante de la astilladora para evaluar el espacio libre. Una nueva cuchilla en movimiento no restaura una cara estacionaria desgastada.",
+        },
+        {
+          question: "¿Qué debería guiar la elección del acero para yunque?",
+          answer:
+            "Compare el material actual, el desgaste de los bordes y cualquier daño local con la configuración de alimentación de madera y cuchilla móvil. La decisión sobre el material debe abordar la condición observada manteniendo al mismo tiempo el bisel y el perfil del cuerpo requeridos. Distinga el desgaste gradual del daño relacionado con el impacto antes de seleccionar entre las opciones de acero enumeradas.",
+        },
+        {
+          question:
+            "¿Se puede girar un yunque desgastado para exponer otro borde?",
+          answer:
+            "Sí, si el yunque fue diseñado con otro borde utilizable y esa orientación está permitida por el montaje. Consulte el dibujo para conocer las caras de asiento y los requisitos de ajuste. Algunas caras de un yunque rectangular pueden ubicarlo o sostenerlo sin servir como bordes de trabajo.",
+        },
+        {
+          question:
+            "¿Puedo pedir el yunque por separado de las cuchillas de la trituradora?",
+          answer:
+            "Sí. El yunque puede suministrarse como reemplazo individual o incluirse con las [Cuchillas para trituradoras de madera](/products/wood-chipper-blades) . Mantenga los dos dibujos y las cantidades separados. Las dimensiones y el estado de las cuchillas móviles retenidas siguen siendo relevantes porque el nuevo yunque debe ocupar la posición prevista en el par de corte existente.",
+        },
+        {
+          question:
+            "¿Qué detalles necesito para obtener una cotización de yunque para trituradora de madera?",
+          answer:
+            "Envíe el modelo y número de serie de la trituradora, el dibujo del yunque o número de pieza, la cantidad y la madera que procesa. Para un conjunto ajustado con cuñas, muestre el espacio entre ranuras, las caras de asiento, la disposición de las cuñas y la posición del borde de trabajo en relación con la cuchilla móvil. Marque cualquier dimensión modificada por desgaste o rectificado.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Incluya el modelo y el número de serie de la astilladora, el dibujo del yunque, el patrón de las ranuras de montaje, las caras de trabajo y los detalles de la cuchilla.",
+    rfqPlaceholder:
+      "Modelo y número de serie de la astilladora, posición del yunque, dibujo o muestra y cantidad requerida.",
+    disambiguation:
+      "Para conocer las cuchillas conectadas al tambor o disco giratorio, consulte [Cuchillas para trituradora de madera](/products/wood-chipper-blades) .",
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas inferiores de repuesto para su cortadora rebobinadora, incluidos diseños de copa, de doble filo y de anillo reemplazable. Envíe Sureay su dibujo o muestra para obtener una cotización sobre la configuración de brida, orificio y cara de corte que su ensamblaje existente necesita.",
+    id: "slitter-rewinder-bottom-knives",
+    seoDescription:
+      "Cuchillas de copa, de doble filo y de fondo de anillo reemplazable para rebobinadoras de papel, en DE 70–300 mm. Especifique un orificio con llave, un montaje con brida o un filo de corte de carburo.",
+    name: "Cuchillas inferiores para cortadoras rebobinadoras",
+    fullName:
+      "Cuchillas inferiores para cortadoras rebobinadoras, de copa, de doble filo o con filo de carburo",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Cuchillas inferiores para cortadoras rebobinadoras",
+    image:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Cuchillas inferiores de repuesto para cortadoras rebobinadoras de papel. Diseños de copa, de doble filo y con punta de carburo, con orificios, bridas y anchos personalizados según el dibujo.",
+    link: "/products/slitter-rewinder-bottom-knives",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "OD 70–300 mm",
+      },
+      {
+        label: "Material",
+        value:
+          "52100, D2 , M2 HSS , PM HSS , carburo de tungsteno sólido o WC-Co sobre cuerpo de acero",
+      },
+      {
+        label: "Aplicaciones",
+        value:
+          "Cortadoras rebobinadoras de papel y otras líneas de conversión de bobinas.",
+      },
+      {
+        label: "Perfiles",
+        value: "Copa, doble filo o anillo cortante reemplazable",
+      },
+      {
+        label: "Opciones de carburo",
+        value:
+          "Construcciones con punta e incrustaciones para el borde de trabajo.",
+      },
+      {
+        label: "Montaje",
+        value: "Montaje con brida, orificio con chaveta o orificio de eje liso",
+      },
+      {
+        label: "Acabado facial",
+        value: "Pulido a espejo",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas inferiores de cortadora rebobinadora | Copa y doble filo",
+      sizeRange: "OD 70–300 mm",
+      heroAlt:
+        "Cuchillas inferiores de rebobinado circular con varios patrones de bridas y orificios de montaje",
+      specificationImage: {
+        src: "/images/products/slitter-detail/slitter-rewinder-bottom-knives-detail.webp",
+        alt: "Primer plano de las cuchillas inferiores de la rebobinadora con caras de brida perforadas y empotradas",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "flange",
+          tabLabel: "Brida y doble filo",
+          title: "Cuchillas inferiores de doble filo y montadas con bridas",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Montaje o borde",
+            "Referencia",
+          ],
+          rows: [
+            [
+              "SR001211",
+              "105 × 80 × 15 mm",
+              "Brida",
+              "Series dimensionales de DIENES",
+            ],
+            [
+              "SR001212",
+              "130 × 90 × 20 mm",
+              "Brida",
+              "Series dimensionales de DIENES",
+            ],
+            [
+              "SR001213",
+              "190 × 138 × 15 mm",
+              "Doble filo",
+              "Tidland TID131393",
+            ],
+            [
+              "SR001214",
+              "130 × 100 × 30 mm",
+              "Doble filo",
+              "Tidland TID133503",
+            ],
+            [
+              "SR001215",
+              "250 × 188 × 15 mm",
+              "Doble filo",
+              "Tidland TID131395",
+            ],
+          ],
+        },
+        {
+          id: "tipped",
+          tabLabel: "Borde de carburo",
+          title: "Cuchillas inferiores con filo de carburo",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Construcción",
+            "Referencia",
+          ],
+          rows: [
+            [
+              "SR001561",
+              "90.81 × 60.00 × 12.70 mm",
+              "Con punta de carburo",
+              "Dusenbery 783533",
+            ],
+          ],
+        },
+        {
+          id: "keyed",
+          tabLabel: "Montaje de chavetero",
+          title: "Cuchillas inferiores con chavetero",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Montaje",
+          ],
+          rows: [
+            ["SR001571", "70 × 45 × 10 mm", "Serie de chaveteros de 10 mm"],
+            ["SR001572", "80 × 50 × 10 mm", "Serie de chaveteros de 10 mm"],
+            ["SR001573", "108 × 80 × 20 mm", "Serie de chaveteros de 10 mm"],
+          ],
+        },
+        {
+          id: "additional-rewinder-knives",
+          tabLabel: "Tamaños adicionales de cuchilla rebobinadora",
+          title: "Tamaños adicionales de cuchilla rebobinadora",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Tipo de Cuchilla",
+          ],
+          rows: [
+            ["SR001845", "250 × 188 × 25 mm", "Cuchilla inferior rebobinadora"],
+            ["SR001846", "254 × 195 × 50 mm", "Cuchilla inferior rebobinadora"],
+            ["SR001847", "250 × 140 × 20 mm", "Cuchilla inferior rebobinadora"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "OD 70–300 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "52100, D2 , M2 HSS , PM HSS , carburo de tungsteno sólido o WC-Co sobre cuerpo de acero",
+        },
+        {
+          label: "Aplicaciones",
+          value:
+            "Cortadoras rebobinadoras de papel y otras líneas de conversión de bobinas.",
+        },
+        {
+          label: "Perfiles",
+          value: "Copa, doble filo o anillo cortante reemplazable",
+        },
+        {
+          label: "Opciones de carburo",
+          value:
+            "Construcciones con punta e incrustaciones para el borde de trabajo.",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Montaje con brida, orificio con chaveta o orificio de eje liso",
+        },
+        {
+          label: "Acabado facial",
+          value: "Pulido a espejo",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Tidland",
+      "Mario Cotta",
+      "Jagenberg",
+      "Valmet",
+      "Voith",
+      "Dusenbery",
+      "Cameron",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Selección",
+        title: "Opciones de borde de trabajo de acero y carburo",
+        description:
+          "Sureay suministra cuchillas inferiores de acero, carburo sólido y con bordes de carburo, lo que brinda a los convertidores de papel una variedad de materiales y construcciones de vanguardia para sus conjuntos rebobinadores existentes.",
+      },
+      {
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Diseños de copa, de doble borde y de anillo reemplazable",
+        description:
+          "Las cuchillas de copa, los perfiles de doble filo y los anillos cortantes reemplazables están disponibles con caras de trabajo terminadas, lo que permite reemplazar el cuerpo de cuchilla específico o el anillo cortante que requiere su ensamblaje.",
+      },
+      {
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Interfaces de montaje personalizadas para rebobinadoras",
+        description:
+          "Se pueden fabricar bridas, orificios con llave, orificios lisos y perfiles de corte según su dibujo o muestra, lo que respalda pedidos de reemplazo para rebobinadores existentes y conjuntos de cuchillas más antiguos.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Qué cuchilla inferior de repuesto se adapta a mi cortadora rebobinadora?",
+          answer:
+            "Identifique el modelo de la máquina o la referencia de la pieza, luego compare el diámetro exterior, el orificio, el ancho, los detalles de la brida y los orificios de fijación con el conjunto instalado. Bandas inferiores, cuchillas inferiores y cuchillas hembra son nombres comunes para el miembro inferior de un par de cizalla y corte. El perfil de trabajo y la disposición de montaje determinan el ajuste con mayor precisión que el solo nombre.",
+        },
+        {
+          question:
+            "¿Se pueden suministrar cuchillas inferiores personalizadas para una rebobinadora más antigua sin reemplazar la cuchilla superior?",
+          answer:
+            "Sí. Sureay puede fabricar la cuchilla inferior según un dibujo o una muestra manteniendo una cuchilla superior en buen estado. Defina el diámetro interior, la brida, el ancho de trabajo y el perfil de corte, e incluya las dimensiones de la cuchilla superior, el estado y el historial de reafilado. Estos detalles establecen la posición de trabajo de la cuchilla inferior dentro del conjunto existente.",
+        },
+        {
+          question:
+            "¿En qué se diferencian las cuchillas de copa, de doble filo y de fondo de anillo reemplazable?",
+          answer:
+            "Una cuchilla de copa utiliza un cuerpo moldeado para colocar su borde de trabajo. Una cuchilla de doble filo proporciona dos caras de corte de trabajo, mientras que un conjunto de anillo reemplazable separa el anillo de corte de su soporte. Seleccione la construcción requerida por el titular instalado. Para conocer una estación diseñada en torno a varias posiciones de corte en un solo cuerpo, consulte [Cuchillas inferiores con ranuras múltiples](/products/groove-bottom-knives) .",
+        },
+        {
+          question:
+            "¿La cuchilla inferior de una rebobinadora debe utilizar acero, carburo sólido o un borde de carburo?",
+          answer:
+            "Para cortar papel con cizalla, comience con la construcción de la cuchilla existente y la cuchilla superior conservada. Vale la pena evaluar un filo de trabajo de carburo cuando el desgaste gradual impulsa cambios de cuchilla; chips recurrentes o daños en los contactos llame para verificar el par y soporte primero. Los cuerpos de acero y carburo sólido con anillos cortantes de carburo tienen construcciones diferentes, por lo que conservan la geometría de trabajo y montaje requerida al comparar alternativas.",
+        },
+        {
+          question:
+            "¿Por qué el borde del papel sigue teniendo mala calidad después de reemplazar una cuchilla inferior?",
+          answer:
+            "La cuchilla superior retenida, la estabilidad del soporte, la condición de la cara de trabajo y los ajustes de corte aún pueden afectar el borde del papel. Inspeccione ambos miembros del par y sus caras de montaje, incluida cualquier geometría modificada al reafilarse. Comparar la misma calidad de papel en la configuración normal ayuda a distinguir la cuchilla de repuesto de otras condiciones en la estación de corte.",
+        },
+        {
+          question:
+            "¿Cuándo se puede reafilar la cuchilla inferior de una rebobinadora en lugar de reemplazarla?",
+          answer:
+            "Se puede considerar el reafilado para un diseño de cuchilla inferior cuya geometría de trabajo se puede restaurar dentro de las dimensiones restantes permitidas. Evalúe la cara de trabajo dañada y su relación con la cuchilla superior con respecto al dibujo original. Las cuchillas de copa y los anillos cortantes reemplazables requieren su propia geometría y controles de tolerancia antes de decidir entre reafilar y reemplazar.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "rotary-slitter-knives-paper",
+      "groove-bottom-knives",
+      "bottom-grooved-anvil-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas ranuradoras de repuesto para su impresora-ranuradora o plegadora-encoladora flexográfica, con arcos, orificios de montaje y perfiles de corte personalizados. Envíe Sureay un dibujo o una muestra para solicitar una cotización sobre cuchillas macho, contracuchillas y espaciadores a juego.",
+    id: "corrugated-slotter-knives",
+    seoDescription:
+      "Arcos macho lisos o dentados y contracuchillas hembra para ranurado de láminas corrugadas. Solicite hojas de repuesto hechas según el ancho de su ranura y el plano de montaje.",
+    name: "Cuchillas ranuradoras para cartón ondulado",
+    fullName: "Cuchillas macho y hembra para ranuradoras de cartón ondulado",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Cuchillas ranuradoras para cartón ondulado",
+    image: "/images/products/slitter-detail/box-slotting-knives-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Repuestos de cuchillas ranuradoras macho y hembra para máquinas de cartón corrugado. Arcos lisos o dentados, contracuchillas y patrones de montaje personalizados según dibujo.",
+    link: "/products/corrugated-slotter-knives",
+    specs: [
+      {
+        label: "Material",
+        value:
+          "D2 , M2 HSS , 9CrSi , 9Mn2V , 52100 o contracuchillas con punta de carburo",
+      },
+      {
+        label: "Aplicaciones",
+        value:
+          "Ranurado de solapas de cartón ondulado en plegadoras-encoladoras flexográficas e impresoras-ranuradoras",
+      },
+      {
+        label: "Dureza típica",
+        value:
+          "D2 58–62 HRC · M2 62–65 HRC · Borde de trabajo de carburo 89–92 HRA",
+      },
+      {
+        label: "Hoja macho",
+        value:
+          "Arco liso o dentado, con segmentos de puntada y esquina disponibles",
+      },
+      {
+        label: "Asamblea femenina",
+        value: "Dos mitades de contracuchilla con un espaciador adaptado",
+      },
+      {
+        label: "Montaje",
+        value: "Orificios redondos, avellanados o ranuras de ajuste de arco",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas para ranuradoras de cartón ondulado | Macho y hembra",
+      sizeRange: "Serie de arco R105 – R406 mm",
+      heroAlt:
+        "Componentes ranuradores corrugados en forma de arco con orificios de montaje redondos y ranuras alargadas",
+      specificationImage: {
+        src: "/images/products/slitter-detail/box-slotting-knives-detail-white.webp",
+        alt: "Detalle de segmentos de ranura curvos que muestran orificios de fijación redondos y ranuras de ajuste de arco",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "male",
+          tabLabel: "Hojas masculinas",
+          title: "Cuchillas ranuradoras macho",
+          columns: [
+            "N.º de artículo",
+            "Exterior R × Interior r × T",
+            "ángulo de arco",
+            "Borde",
+          ],
+          rows: [
+            ["SR001601", "105 × 58 × 5 mm", "Ver plano", "Llano o dentado"],
+            ["SR001602", "113 × 63.5 × 7.5 mm", "Ver plano", "Llano o dentado"],
+            ["SR001603", "115 × 58 × 8 mm", "Ver plano", "Llano o dentado"],
+            ["SR001604", "168.7 × 120.3 × 8 mm", "36.2°", "Ver plano"],
+            ["SR001605", "213.5 × 130 × 7.5 mm", "20.5°", "Ver plano"],
+            ["SR001606", "213.5 × 130 × 7.5 mm", "72°", "Ver plano"],
+            ["SR001607", "212 × 159 × 10 mm", "60°", "Ver plano"],
+            ["SR001608", "281.5 × 237.5 × 7.2 mm", "88°", "Ver plano"],
+            ["SR001609", "406 × 316 × 7.9 mm", "Ver plano", "Ver plano"],
+          ],
+        },
+        {
+          id: "female",
+          tabLabel: "Cuchillos femeninos",
+          title: "Cuchillos femeninos",
+          columns: [
+            "N.º de artículo",
+            "Configuración",
+            "Dimensiones",
+            "Montaje o referencia",
+          ],
+          rows: [
+            [
+              "SR001610",
+              "Contracuchilla simple",
+              "Rango de diámetro exterior de 90 a 450 mm",
+              "Montaje y espesor según plano.",
+            ],
+            [
+              "SR001611",
+              "Contracuchilla partida",
+              "Rango de diámetro exterior de 90 a 450 mm",
+              "Mitades inferiores lisas, espaciador según dibujo",
+            ],
+            [
+              "SR001612",
+              "Juego inferior con punta de carburo",
+              "A ranura y dibujo coincidentes",
+              "Confirmar el eje inferior y la hoja superior",
+            ],
+          ],
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BOBST",
+      "Martin",
+      "EMBA",
+      "Mitsubishi EVOL",
+      "Isowa",
+      "Göpfert",
+      "MarquipWardUnited",
+      "TCY",
+      "Shinko",
+      "Dongfang",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Selección",
+        title:
+          "Materiales seleccionados por posición de cuchilla macho y hembra",
+        description:
+          "Sureay suministra cuchillas ranuradoras de acero y contracuchillas con punta de carburo, lo que permite especificar los componentes macho y hembra por separado para el material y la construcción requeridos por su conjunto de ranurado.",
+      },
+      {
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Arcos lisos y dentados con montaje personalizado",
+        description:
+          "Los arcos lisos y dentados, los segmentos cosidos y los segmentos de esquina están disponibles con orificios redondos, orificios avellanados o ranuras de ajuste hechas para el cabezal ranurador existente.",
+      },
+      {
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Cuchillos macho, cuchillos hembra y espaciadores a juego",
+        description:
+          "Solicite arcos macho de reemplazo, mitades de contracuchilla hembra y espaciadores coincidentes individualmente o juntos, con cada componente definido para las piezas que planea conservar.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Cómo se combinan las cuchillas ranuradoras de repuesto con una máquina convertidora de cajas?",
+          answer:
+            "Identifique la estación impresora-ranuradora o flexográfica plegadora-encoladora y si necesita un arco macho, una contracuchilla hembra o un espaciador. Compare la geometría del arco, el espesor, el patrón de montaje y la mano instalada con la pieza existente. Las cuchillas ranuradoras forman ranuras con solapa durante la conversión de cajas; [cuchillas cortadoras-instructoras](/products/corrugated-slitter-scorer-blades) corten el tablero longitudinalmente en el extremo seco del corrugador y utilicen una geometría diferente. Para conocer las ranuras en el tablero gris utilizado para hacer cajas rígidas, consulte [Cuchillas para ranurar en V para cajas de carburo](/products/box-slotting-knives) .",
+        },
+        {
+          question:
+            "¿Cuál es la diferencia entre los cuchillos ranuradores macho y hembra?",
+          answer:
+            "El arco macho ingresa al conjunto de cuchilla hembra para formar la ranura del tablero. Dos contracaras hembra y su distanciador crean la abertura cooperante. Una orden de reemplazo debe identificar qué componente se está cambiando y las dimensiones de las piezas retenidas, de modo que la hoja macho y la abertura hembra permanezcan definidas como una combinación de trabajo.",
+        },
+        {
+          question: "¿Debo elegir una hoja ranuradora macho lisa o dentada?",
+          answer:
+            "Para un reemplazo similar, conserve la forma del borde liso o dentado utilizado por el cabezal ranurador instalado. Cambiar la forma del borde requiere verificar el arco macho con la abertura hembra, las especificaciones de la placa y los requisitos de calidad de la ranura. Especifique la forma del borde prevista en el dibujo para que el reemplazo no se identifique únicamente por las dimensiones del arco.",
+        },
+        {
+          question:
+            "¿Por qué las ranuras corrugadas tienen bordes rasgados o anchos desiguales?",
+          answer:
+            "Los bordes desgarrados de las ranuras o la variación del ancho pueden implicar caras de corte desgastadas o la forma en que las cabezas macho y hembra se unen. Verifique el borde macho, ambas caras hembra, el espaciador, la alineación del cabezal y el descentramiento según los requisitos de configuración de la máquina. Compare el defecto en las posiciones de las ranuras antes de decidir qué cuchillas o componentes de soporte necesitan reemplazo.",
+        },
+        {
+          question:
+            "¿Cuándo se debe considerar una cuchilla ranuradora hembra con punta de carburo?",
+          answer:
+            "Considere las contracuchillas con punta de carburo cuando el principal problema de reemplazo sea el desgaste recurrente de las caras de corte hembra, después de verificar la alineación del cabezal, el descentramiento y la holgura de acoplamiento. Mantenga la geometría de la hoja macho y la apertura hembra consistentes con el conjunto original. Compare el patrón de desgaste y las condiciones operativas de la cuchilla de acero existente cuando especifique la alternativa con punta de carburo.",
+        },
+        {
+          question:
+            "¿Se pueden fabricar arcos ranuradores personalizados a partir de un dibujo o una muestra?",
+          answer:
+            "Sí. Sureay puede reproducir arcos con radios interiores y exteriores, ángulos de arco, espesor, forma de borde y orificios o ranuras de montaje específicos. Una muestra ayuda a identificar el perfil y la mano instalados; las nuevas dimensiones previstas deben tener en cuenta el desgaste de la muestra. Identifique el conjunto hembra correspondiente y qué segmentos de arco se requieren.",
+        },
+        {
+          question:
+            "¿Deben reemplazarse juntas las cuchillas ranuradoras macho y hembra?",
+          answer:
+            "Se pueden pedir por separado cuando los componentes retenidos siguen siendo útiles y se conoce su geometría de acoplamiento. Verifique ambas caras contrarias hembra y el espaciador, así como el arco macho. El reemplazo necesita la relación correcta con la abertura hembra, además de coincidir con el patrón de montaje.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Obtenga cuchillas cortadoras de pajitas de papel de repuesto con orificios, grosores y perfiles de borde personalizados para su cortador de hilo de bobinado. Comparta su dibujo o muestra con Sureay para obtener una cotización sobre el material de la hoja y las opciones de recubrimiento para su estación.",
+    id: "paper-straw-slitting-blades",
+    name: "Cuchillas para cortar pajitas de papel",
+    fullName: "Cuchillas para cortar pajitas de papel",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Cuchillas para cortar pajitas de papel",
+    image: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "cuchillas circulares de repuesto para corte y recorte de pajitas de papel. Opciones de carburo o M2 HSS , orificios y perfiles personalizados y recubrimientos seleccionados para la línea.",
+    link: "/products/paper-straw-slitting-blades",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "Estándar DE 88–100 mm",
+      },
+      {
+        label: "Material",
+        value: "Metal duro de grano fino, M2 HSS o circonio, según la estación",
+      },
+      {
+        label: "Aplicaciones",
+        value: "Recorte y corte de paja de papel en líneas de bobinado.",
+      },
+      {
+        label: "Recubrimientos opcionales",
+        value: "DLC, TiN, TiAlN o CrN por pala y aplicación",
+      },
+    ],
+    detailLayout: {
+      seoTitle:
+        "Cuchillas para cortar pajitas de papel | Cuchillos de repuesto",
+      sizeRange: "Estándar DE 88–100 mm",
+      heroAlt:
+        "Cuchillo circular para cortar pajitas de papel con un orificio central pequeño",
+      specificationImage: {
+        src: "/images/products/slitter-detail/paper-straw-slitting-blades-detail.webp",
+        alt: "Hojas de corte circulares delgadas que muestran las caras pulidas y los bordes cortantes.",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "straw",
+          tabLabel: "Cuchillos de paja de papel",
+          title: "Cuchillos de paja de papel",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Estación",
+          ],
+          rows: [
+            ["SR001651", "100 × 15 × 0.20 mm", "Adorno de paja de papel"],
+            ["SR001652", "100 × 15 × 0.30 mm", "Adorno de paja de papel"],
+            ["SR001653", "100 × 16 × 0.30 mm", "Adorno de paja de papel"],
+            ["SR001654", "100 × 45 × 0.30 mm", "Adorno de paja de papel"],
+          ],
+        },
+        {
+          id: "additional-straw-knives",
+          tabLabel: "Tamaños adicionales de cuchillos para paja",
+          title: "Tamaños adicionales de cuchillos para paja",
+          columns: [
+            "N.º de artículo",
+            "Dimensiones (diámetro exterior × diámetro interior × anchura)",
+            "Aplicación",
+          ],
+          rows: [
+            ["SR001848", "88 × 16 × 0.26 mm", "Corte de pajita de papel"],
+            ["SR001849", "89 × 15 × 0.30 mm", "Corte de pajita de papel"],
+            ["SR001850", "90 × 15 × 0.30 mm", "Corte de pajita de papel"],
+            ["SR001851", "100 × 15 × 0.15 mm", "Corte de pajita de papel"],
+            ["SR001852", "100 × 45 × 0.20 mm", "Corte de pajita de papel"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Estándar DE 88–100 mm",
+        },
+        {
+          label: "Material",
+          value:
+            "Metal duro de grano fino, M2 HSS o circonio, según la estación",
+        },
+        {
+          label: "Aplicaciones",
+          value: "Recorte y corte de paja de papel en líneas de bobinado.",
+        },
+        {
+          label: "Recubrimientos opcionales",
+          value: "DLC, TiN, TiAlN o CrN por pala y aplicación",
+        },
+      ],
+    },
+    compatibleMachines: ["Jota", "KETE"],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Selección",
+        title: "Opciones de carburo, HSS y materiales cerámicos",
+        description:
+          "Las opciones de carburo de grano fino, M2 HSS y circonio dependiente de la estación le ofrecen una variedad de materiales de cuchilla para corte de paja formada, con la construcción especificada para su estación de corte existente.",
+      },
+      {
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Bordes de corte personalizados y revestimientos opcionales",
+        description:
+          "Sureay suministra perfiles de corte personalizados con recubrimientos DLC, TiN, TiAlN o CrN opcionales seleccionados para el material de la hoja y la aplicación, de modo que la geometría del borde y la configuración de la superficie se pueden especificar por separado.",
+      },
+      {
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Cuchillas de repuesto para corte de paja formada",
+        description:
+          "Las cuchillas circulares de repuesto están hechas para recortar y cortar pajitas de papel formadas, con orificios, secciones de cuchilla y bordes de trabajo definidos para el soporte de su línea de bobinado.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Puede Sureay fabricar una cuchilla de repuesto para mi estación de corte de pajitas de papel?",
+          answer:
+            "Sí. Un dibujo o muestra puede definir el diámetro interior, el espesor y el perfil de corte requerido por su soporte de corte o recorte. Incluya el material actual de la hoja, el espesor de la pared de paja y la construcción del papel. Estos detalles distinguen a los cuchillos que comparten un diámetro exterior pero sirven para diferentes disposiciones de corte en una línea de producción de paja.",
+        },
+        {
+          question:
+            "¿Las cuchillas para cortar pajitas de papel son lo mismo que las cuchillas para cortar papel?",
+          answer:
+            "Las cuchillas cortadoras de paja de papel cortan o recortan el tubo formado en su línea de producción. [Cuchillas cortadoras de papel](/products/rotary-slitter-knives-paper) divide una banda continua de papel plano en tiras más estrechas. Establezca si la pieza requerida funciona en la banda entrante o en la pajita terminada, luego identifique su soporte y perfil de corte.",
+        },
+        {
+          question:
+            "¿Cómo debe seleccionarse el material del cuchillo de paja de papel guía de desgaste de la hoja?",
+          answer:
+            "Utilice la estación de corte y el estado de la hoja usada como punto de partida. Compare el desgaste gradual de los bordes, las astillas y los residuos de adhesivo por separado, luego evalúe un cambio de material en función del problema observado. Mantenga definidos el diámetro interior requerido, la sección de la hoja y la geometría del soporte cuando considere una alternativa a la hoja actual.",
+        },
+        {
+          question:
+            "¿Por qué los extremos de las pajitas de papel están desgarrados o distorsionados?",
+          answer:
+            "Inspeccione el borde cortante, la acumulación de adhesivo y el soporte del tubo junto con el número de capas de papel, el espesor de la pared y el estado del adhesivo. Compare el corte realizado con una hoja limpia con la hoja afectada en la configuración normal de la máquina. Esto proporciona una imagen más útil de las condiciones de corte que juzgar únicamente la nitidez.",
+        },
+        {
+          question:
+            "¿Qué debería guiar la selección del recubrimiento cuando se acumula adhesivo en los cuchillos para paja?",
+          answer:
+            "Seleccione el recubrimiento junto con el material de la cuchilla, el sistema adhesivo y el patrón de residuos en la estación de corte. Registre dónde se produce la acumulación y compárelo con la hoja original en condiciones normales de producción. Las fotografías de hojas usadas y muestras de cortes ayudan a definir los requisitos de la superficie al considerar un cambio de recubrimiento.",
+        },
+        {
+          question:
+            "¿Cuándo se debe reemplazar una cuchilla cortadora de pajitas de papel?",
+          answer:
+            "Reemplace una hoja cuando el daño en el borde o el desgaste continuo impidan el corte final limpio requerido, o cuando sus dimensiones restantes estén fuera del rango de trabajo especificado de la máquina. Verifique los residuos de adhesivo y el soporte del tubo al comparar muestras cortadas en las mismas condiciones de producción. Base el reemplazo en el estado de la hoja y en la calidad de corte requerida en lugar de en un intervalo calendario fijo.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Solicite cuchillas inferiores de múltiples ranuras hechas según su patrón de hendidura, con paso personalizado, diseño del borde de trabajo y montaje del eje. Envíe Sureay su plano y cronograma de anchos para obtener una cotización sobre una configuración de una sola pieza o de anillo dividido.",
+    id: "groove-bottom-knives",
+    seoDescription:
+      "Anillos cortadores de ranuras múltiples para corte longitudinal. Paso de ranura desde 5 mm y DE hasta 406 mm, con configuraciones monobloque y partidas según plano.",
+    name: "Contracuchillas inferiores de múltiples ranuras",
+    fullName: "Cuchillas inferiores multirranura y anillos de corte",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Contracuchillas inferiores de múltiples ranuras",
+    image: "/images/products/slitter-detail/groove-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Cuchillas inferiores de múltiples ranuras personalizadas para corte con cizalla rebobinadora. Anillos cortadores de repuesto con paso de ranura, ancho y diámetro especificados y construcción sólida o dividida.",
+    link: "/products/groove-bottom-knives",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "DE hasta 406 mm",
+      },
+      {
+        label: "Opciones de materiales",
+        value:
+          "Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS o construcción con punta de carburo",
+      },
+      {
+        label: "tono de ranura",
+        value:
+          "Desde 5mm; El número de pasos y ranuras varía según la configuración de la cuchilla.",
       },
       {
         label: "Construcción",
         value: "Anillo de una pieza o anillo partido en dos piezas",
       },
       {
-        label: "Aplicación",
+        label: "Bordes cortantes",
+        value: "Hombro de trabajo simple o doble",
+      },
+      {
+        label: "Montaje",
         value:
-          "Corte por cizalla multiancho de papel, cartoncillo, film, lámina metálica y cinta",
+          "Orificio liso para un eje de aire expandible o tornillo de fijación para un eje sólido",
+      },
+      {
+        label: "Aplicaciones",
+        value:
+          "Corte por cizalla de papel, cartón, películas y láminas con múltiples posiciones de corte",
       },
     ],
-    dimensionLabels: {
-      col0: "Configuración",
-      col1: "Diámetro exterior",
-      col2: "Montaje",
-      col3: "Paso de ranura / Filos",
-      caption:
-        "* El paso de ranura, el número de ranuras, el ancho del anillo y el alojamiento se fabrican según su plan de anchos: no existe tabla de medidas estándar para este producto. Envíe los anchos que produce, el tipo de eje y la especificación de la cuchilla superior asociada, o un plano, y rectificaremos las posiciones de ranura en consecuencia.",
-    },
-    standardDimensions: [
-      {
-        spec: "Anillo multirranura — alojamiento liso",
-        od: "Hasta Φ406 (16 in)",
-        id: "Eje neumático expansible",
-        thickness: "Desde 5 mm de paso",
-      },
-      {
-        spec: "Anillo multirranura — con prisionero",
-        od: "Hasta Φ406 (16 in)",
-        id: "Eje inferior macizo",
-        thickness: "Desde 5 mm de paso",
-      },
-      {
-        spec: "Anillo partido en dos piezas",
-        od: "Hasta Φ406 (16 in)",
-        id: "Eje neumático o macizo",
-        thickness: "Desde 5 mm de paso",
-      },
-      {
-        spec: "Anillo multirranura de doble filo",
-        od: "Hasta Φ406 (16 in)",
-        id: "Eje neumático o macizo",
-        thickness: "Filos de corte a ambos lados",
-      },
-      {
-        spec: "Anillo de corte de una sola ranura",
-        od: "Según plano",
-        id: "Eje neumático o macizo",
-        thickness: "Una posición fija",
-      },
-      {
-        spec: "Anillo separador liso",
-        od: "Según plano",
-        id: "Eje neumático o macizo",
-        thickness: "Sin ranura — fija la separación",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "La elección de calidad en un anillo multirranura la gobierna lo abrasiva que sea la banda, porque los filos de las ranuras se desgastan allí donde pasa la banda y no donde golpea la cuchilla. Un anillo es además un cuerpo grande y caro de desechar, por lo que las calidades que admiten rectificados repetidos suelen ofrecer mejor economía.",
-      rows: [
+    detailLayout: {
+      seoTitle:
+        "Cuchillas inferiores multiranuras | Anillos cortadores inferiores",
+      sizeRange: "DE hasta 406 mm",
+      technicalSpecs: [
         {
-          grade: "Cr12MoV / SKD-11",
-          hardness: "HRC 58–62",
-          bestFor:
-            "Papel, cartoncillo y film en general — la especificación estándar y el mejor equilibrio entre vida útil y capacidad de rectificado",
-          tradeoff:
-            "Superada por la versión con plaquitas de carburo en sustratos muy estucados o con carga mineral",
+          label: "Tamaños",
+          value: "DE hasta 406 mm",
         },
         {
-          grade: "9CrSi / 65Mn",
-          hardness: "HRC 56–60",
-          bestFor:
-            "Sustratos blandos sin estucar, tisú y velocidades de línea más bajas donde manda el precio unitario",
-          tradeoff:
-            "Los filos de las ranuras se redondean antes, así que el intervalo entre rectificados será más corto",
+          label: "Opciones de materiales",
+          value:
+            "Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS o construcción con punta de carburo",
         },
         {
-          grade: "HSS",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Velocidades de línea altas y programaciones mixtas donde el anillo debe mantener el filo en tiradas largas",
-          tradeoff:
-            "Mayor coste que el acero de herramientas; sigue desgastándose en sustratos con carga mineral",
+          label: "tono de ranura",
+          value:
+            "Desde 5mm; El número de pasos y ranuras varía según la configuración de la cuchilla.",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 en la plaquita",
-          bestFor:
-            "Bandas abrasivas, estucadas, con carga mineral y laminadas donde las ranuras de acero de herramientas se agotan en semanas",
-          tradeoff:
-            "Precio más alto, y las plaquitas se astillan en lugar de desgastarse si el eje no gira verdadero",
+          label: "Construcción",
+          value: "Anillo de una pieza o anillo partido en dos piezas",
+        },
+        {
+          label: "Bordes cortantes",
+          value: "Hombro de trabajo simple o doble",
+        },
+        {
+          label: "Montaje",
+          value:
+            "Orificio liso para un eje de aire expandible o tornillo de fijación para un eje sólido",
+        },
+        {
+          label: "Aplicaciones",
+          value:
+            "Corte por cizalla de papel, cartón, películas y láminas con múltiples posiciones de corte",
         },
       ],
-      outro:
-        "Si tiene dudas, envíenos el sustrato y su intervalo actual de rectificado y dimensionaremos la recomendación conforme a su propio consumo en lugar de una tabla genérica.",
+      heroAlt:
+        "Anillo de cuchilla inferior con múltiples ranuras que muestra ranuras rectificadas paralelas",
+      specificationImage: {
+        src: "/images/products/slitter-detail/groove-bottom-knives-detail.webp",
+        alt: "Anillo con múltiples ranuras que muestra el orificio escalonado, las ranuras y el ancho total del cuerpo.",
+      },
+      inlineRfq: {
+        title: "¿Necesita un tamaño que no aparece en la lista?",
+        description:
+          "Envíenos un plano, una muestra desgastada o simplemente el modelo de su máquina. Le responderemos con un presupuesto en un plazo de 24 horas.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+      dimensionTables: [
+        {
+          id: "multi-groove",
+          tabLabel: "Contracuchillas inferiores de múltiples ranuras",
+          title: "Tamaños de cuchillas inferiores con ranuras múltiples",
+          columns: [
+            "N.º de artículo",
+            "Diámetro exterior (mm)",
+            "Opciones de diámetro (mm)",
+            "Opciones de ancho (mm)",
+          ],
+          rows: [
+            ["SR001701", "150", "60 / 80 / 90", "39 / 49 / 50"],
+            ["SR001702", "130", "100 / 110", "50 / 100"],
+            ["SR001703", "150", "120 / 130", "50 / 100"],
+            ["SR001704", "180", "150", "50 / 100"],
+          ],
+        },
+        {
+          id: "multi-groove-configurations",
+          tabLabel: "Configuraciones de anillo y eje",
+          title: "Configuraciones de anillo y eje",
+          columns: [
+            "N.º de artículo",
+            "Diámetro exterior (mm/pulg.)",
+            "Configuración",
+            "Eje / Montaje",
+            "Paso/borde de trabajo",
+          ],
+          rows: [
+            [
+              "SR001853",
+              "Hasta Φ406 (16 pulgadas)",
+              "Anillo multiranura — orificio liso",
+              "Eje de aire expandible",
+              "Paso desde 5 mm",
+            ],
+            [
+              "SR001854",
+              "Hasta Φ406 (16 pulgadas)",
+              "Anillo multiranura: tornillo de fijación",
+              "Eje inferior sólido",
+              "Paso desde 5 mm",
+            ],
+            [
+              "SR001855",
+              "Hasta Φ406 (16 pulgadas)",
+              "Anillo partido de dos piezas",
+              "Eje neumático o sólido",
+              "Paso desde 5 mm",
+            ],
+            [
+              "SR001856",
+              "Hasta Φ406 (16 pulgadas)",
+              "Anillo multiranuras de doble filo",
+              "Eje neumático o sólido",
+              "Bordes cortantes en ambos lados.",
+            ],
+            [
+              "SR001857",
+              "Ver plano",
+              "Anillo cortador de ranura única",
+              "Eje neumático o sólido",
+              "Una posición fija",
+            ],
+            [
+              "SR001858",
+              "Ver plano",
+              "Anillo espaciador liso",
+              "Eje neumático o sólido",
+              "Sin ranura: establece el espaciado",
+            ],
+          ],
+        },
+      ],
     },
+    compatibleMachines: ["Kampf", "Göbel"],
     components: [
       {
-        id: "one-ring-many-widths",
-        tag: "TIEMPO DE CAMBIO",
-        title: "Un anillo, muchas posiciones de corte",
+        id: "selection-1",
+        tag: "Selección",
+        title: "Hombros de trabajo con bordes de acero y carburo",
         description:
-          "Cada ranura es una posición de corte utilizable, de modo que un cambio de ancho consiste en reposicionar la cuchilla superior en lugar de desmontar el eje y reconstruir un paquete de separadores. En líneas que cambian de ancho de pedido con frecuencia, esto es antes un producto de tiempo de cambio que un consumible.",
+          "Hay disponibles construcciones con punta de acero y carburo para cuchillas inferiores con ranuras múltiples, lo que le brinda opciones definidas de materiales para el borde de trabajo y al mismo tiempo conserva la geometría del anillo requerida por su estación de corte.",
       },
       {
-        id: "ground-in-one-setup",
-        tag: "PRECISIÓN DIMENSIONAL",
-        title: "Todas las ranuras rectificadas en una sola sujeción",
+        id: "selection-2",
+        tag: "Configuración",
+        title: "Paso personalizado y diseños de vanguardia",
         description:
-          "Las posiciones de ranura se rectifican sobre un único cuerpo en una sola sujeción, de modo que el ancho de corte no puede desviarse como ocurre cuando un operario reconstruye un paquete de separadores un milímetro fuera. El alojamiento y la excentricidad se mantienen con la misma especificación en anillos multirranura, de una sola ranura y lisos, para que un eje mixto siga apilando verdadero.",
+          "Sureay crea patrones de ranura, anchos de cuerpo y diseños de hombro de trabajo simple o doble según el dibujo, lo que permite que los bloques de reemplazo reproduzcan las posiciones de corte requeridas por su programa de ancho de hendidura.",
       },
       {
-        id: "mounting-and-split",
-        tag: "OPCIONES DE MONTAJE",
-        title: "Eje neumático, eje macizo o anillo partido",
+        id: "selection-3",
+        tag: "Aplicación",
+        title: "Diseños de montaje divididos y de una sola pieza",
         description:
-          "El alojamiento liso se fija por apriete sobre un eje neumático expansible; el diseño con prisionero se fija a un eje inferior macizo. Un anillo partido en dos piezas se desmonta sin desarmar el conjunto del eje, lo que en una máquina ancha convierte una parada programada en un cambio en marcha.",
+          "Los anillos divididos de una y dos piezas están disponibles con orificios lisos para ejes de aire expandibles o con bloqueo de tornillo para ejes sólidos, especificados para adaptarse a la disposición de montaje existente.",
       },
     ],
-    relatedBladeIds: [
-      "slitter-rewinder-bottom-knives",
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-    ],
-    rfqPlaceholder:
-      "Ejemplo: rebobinadora Kampf, eje neumático expansible, anillo inferior Φ180 × 100 mm de ancho, 12 ranuras con paso de 25 mm, filo simple. Cortando cartoncillo estucado de 120 g/m², 8 cortes, con cambio de ancho dos veces por semana. Necesito 4 anillos más 2 anillos separadores lisos.",
     faqs: {
       technical: [
         {
           question:
-            "¿En qué se diferencia una cuchilla inferior multirranura de una cuchilla yunque ranurada?",
+            "¿Qué dimensiones definen un bloque de cuchillas multiranuras de repuesto?",
           answer:
-            "En escala y en propósito. Una cuchilla yunque ranurada es un disco con una a tres ranuras, rectificado según un perfil de par de cizalla OEM y utilizado principalmente en líneas de film, lámina metálica y cinta; consulte nuestra página de cuchillas yunque inferiores ranuradas para ese producto. Un anillo multirranura es un cuerpo mucho más ancho con muchas ranuras paralelas, y su razón de ser es que un solo anillo cubre muchas posiciones de corte, de modo que los cambios de ancho no exigen reconfigurar la herramienta. Si cambia de ancho con frecuencia, necesita el anillo; si trabaja un solo ancho contra un perfil de yunque OEM especificado, necesita el yunque.",
+            "Defina las posiciones de corte, la ubicación del primer borde, el ancho total, el diámetro exterior, el orificio y el método de bloqueo juntos. Los yunques de ranuras múltiples, los bloques de cuchillas y las cortadoras de fondo describen un cuerpo de corte inferior, pero no establecen su montaje o disposición de los bordes. Identifique también la cuchilla superior correspondiente y el método de corte: una funda de soporte de navaja ranurada realiza una función diferente.",
         },
         {
           question:
-            "¿Qué paso de ranura pueden rectificar realmente y cómo lo especifico?",
+            "¿Cómo se deben especificar el paso de ranura y las posiciones del filo?",
           answer:
-            "La división entre filos —la distancia de un filo de corte al siguiente— es a medida en prácticamente todos los casos y puede llegar a ser tan estrecha como 5 mm (0,200 in). No la especifique como un único número: envíe la lista de anchos de corte que realmente produce y distribuiremos las posiciones de ranura de forma que todos sus anchos habituales caigan sobre una ranura. Esa es la diferencia entre un anillo que cubre su programación y otro que cubre la mitad y le obliga a montar un paquete de separadores para el resto.",
-        },
-        {
-          question: "¿Debo pedir alojamiento liso o con prisionero?",
-          answer:
-            "Depende de su eje inferior, no de su preferencia. El alojamiento liso se fija por apriete sobre un eje neumático expansible y es la opción de cambio rápido presente en la mayoría de las líneas de transformación modernas. El diseño con prisionero se fija sobre un eje inferior macizo y es habitual en máquinas antiguas y en líneas de cartón pesado. Los dos no son intercambiables —la especificación del alojamiento es distinta—, así que un anillo mecanizado para el sistema equivocado no asentará verdadero y se manifestará como excentricidad en el corte. Si no está seguro, fotografíe el extremo del eje con los anillos montados.",
+            "El paso es la distancia entre los bordes cortantes correspondientes en ranuras adyacentes. Marque el primer borde de trabajo a partir de un punto de referencia axial común, luego muestre las posiciones de corte restantes y el ancho total del cuerpo. El ancho de la abertura de la ranura es una medida separada; no define la distancia entre los filos de corte.",
         },
         {
           question:
-            "Mis anchos de corte han empezado a desviarse a lo largo del eje. ¿Es culpa del anillo?",
+            "¿Puede Sureay hacer un bloque de cuchillos con un patrón de ancho de hendidura personalizado?",
           answer:
-            "Compruebe la excentricidad y el montaje del paquete de anillos antes que las ranuras. Las posiciones de ranura se rectifican en una sola sujeción y no se mueven, así que un anillo que era preciso al instalarlo rara vez es el origen de una deriva progresiva del ancho. Las causas habituales son un alojamiento asentado sobre un eje desgastado o sucio, o anillos de distintos proveedores mezclados en un mismo eje con especificaciones de alojamiento y de cara ligeramente distintas, lo que acumula una pequeña oscilación hasta convertirla en un error de ancho medible. Los filos de ranura desgastados se manifiestan como deterioro del canto de corte y aumento de polvo, no como deriva de ancho.",
+            "Sí. Sureay puede hacer el diseño de las ranuras, el número de bordes de trabajo, el ancho del cuerpo y el montaje del eje según su dibujo. Especifique cada posición de corte a partir del mismo dato axial e incluya la cuchilla superior correspondiente. Identifique los bordes cortantes activos en el patrón de hendidura deseado para que el bloque de reemplazo reproduzca el diseño requerido.",
+        },
+        {
+          question:
+            "¿Cuándo debo elegir un anillo partido en lugar de un anillo de una sola pieza?",
+          answer:
+            "Elija según la disposición del eje y el acceso de instalación o desmontaje disponible. Un anillo dividido puede proporcionar acceso donde el conjunto se adapta a esa construcción, mientras que sus juntas y características de bloqueo deben adaptarse al diseño existente. Mantenga definidos el perfil de corte requerido, el ajuste del orificio y las posiciones del borde de trabajo para cualquiera de las opciones.",
+        },
+        {
+          question:
+            "¿Qué debo comprobar cuando la calidad de la hendidura varía en un bloque de ranuras múltiples?",
+          answer:
+            "Compare la cuchilla superior y el hombro de trabajo en cada posición de corte afectada, incluida su condición, combinación de materiales y geometría de trabajo. Revise el montaje, el movimiento de la cuchilla y cualquier pulido previo junto con el patrón de hendidura. Registrar qué posiciones producen el defecto ayuda a centrar las comprobaciones en el par de cuchillas y las condiciones de montaje relevantes.",
+        },
+        {
+          question:
+            "¿Cómo se debe elegir el material del borde de trabajo cuando algunas posiciones de hendidura se desgastan más rápido?",
+          answer:
+            "Para las líneas de bobinado de papel, compare los hombros de trabajo afectados con sus cuchillas superiores correspondientes antes de cambiar el material. Separe el desgaste gradual de las astillas o daños asociados con el movimiento, la geometría o el rectificado de la cuchilla. Una vez establecidos el par y las condiciones de montaje, compare la configuración actual de acero o punta de carburo con el patrón de desgaste real y los requisitos de producción.",
+        },
+        {
+          question:
+            "¿Qué identifica un número de artículo al pedir un bloque de repuesto?",
+          answer:
+            "El número de artículo identifica la fila o serie del catálogo utilizada como referencia para su pedido. Confirme el diámetro interior seleccionado, el ancho del cuerpo, el patrón de ranura y la cuchilla superior correspondiente en el plano del pedido; algunas entradas cubren opciones de tamaño o diseños hechos a medida. Utilice la referencia del artículo junto con ese dibujo y su revisión para compras repetidas.",
         },
       ],
-      company: [
+      company: [],
+    },
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    id: "stationary-scrap-shear-blades",
+    name: "Cuchillas para cizallas estacionarias de chatarra",
+    fullName: "Cuchillas para cizallas fijas de pórtico para chatarra",
+    seoTitle: "Cuchillas para cizallas fijas de pórtico para chatarra",
+    seoDescription:
+      "Solicite bloques de cuchillas móviles montados con pernos y contracuchillas fijas para cizallas de pórtico estacionarias para chatarra. Elija acero 1.2746 o 1.2767 y envíe su plano de montaje.",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Cuchillas para cizallas estacionarias de chatarra",
+    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Recambio cuchillas de cizalla pórtico y chatarra estacionaria en acero 1.2746 o 1.2767. Cuchillas móviles y contracuchillas fabricadas según el plano de montaje especificado.",
+    link: "/products/stationary-scrap-shear-blades",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "260–550 mm",
+      },
+      {
+        label: "Opciones de materiales",
+        value: "Acero para herramientas 1.2746 o 1.2767",
+      },
+      {
+        label: "Posiciones de cuchillo",
+        value: "Cuchillas de corte móviles y contracuchillas fijas",
+      },
+      {
+        label: "Montaje",
+        value: "Bloques de cuchillas atornillados",
+      },
+      {
+        label: "Aplicación",
+        value: "Cizallas para chatarra estacionarias y cizallas de pórtico",
+      },
+    ],
+    compatibleMachines: [
+      "Danieli Henschel",
+      "Metso-Lindemann",
+      "Lefort",
+      "Becker-Leimbach",
+    ],
+    compatibleMachinesIntro:
+      "Reemplace las cuchillas móviles y las contracuchillas fijas de su cizalla de chatarra estacionaria con bloques de cuchillas hechos con dibujo de Sureay . Solicite piezas individuales o un juego completo en acero para herramientas 1.2746 o 1.2767 y solicite un presupuesto para su instalación. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "stationary-scrap-shear-blades-1",
+        tag: "Asiento de cuchillo",
+        title: "Opciones de acero para herramientas 1.2746 y 1.2767",
+        description:
+          "Sureay ofrece estas opciones de acero para bloques de cuchillas estacionarias para corte de chatarra, lo que permite especificar los requisitos de material en función del trabajo de chatarra y el desgaste o daño observado en las cuchillas existentes.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-2",
+        tag: "Servicio de chatarra",
+        title: "Cuchillas móviles y contracuchillas fijas",
+        description:
+          "Las cuchillas de corte y contracuchillas de repuesto se pueden suministrar individualmente o como el juego requerido, con cada bloque identificado por su posición dentro del conjunto de corte.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-3",
+        tag: "Disposición del cuchillo",
+        title: "Bloques personalizados para asientos de cuchillo existentes",
+        description:
+          "Los bloques de cuchillos listados tienen una longitud de 260 a 550 mm. Sureay fabrica los huecos, las caras de los asientos y los patrones de pernos según su dibujo, incluidos bloques con la misma longitud y ancho pero diferentes espesores o detalles de montaje.",
+      },
+    ],
+    faqs: {
+      technical: [
         {
-          question: "¿Qué necesitan para cotizar?",
+          question:
+            "¿Puede Sureay suministrar una contracuchilla o un juego completo de cuchillas?",
           answer:
-            "Diámetro exterior, alojamiento, ancho del anillo, número de ranuras y paso, el tipo de eje (neumático expansible o macizo), la especificación de la cuchilla superior asociada, y el sustrato y la velocidad de línea. El dato adicional más útil es su lista de anchos de producción: nos permite distribuir las posiciones de ranura conforme a su programación real en lugar de copiar un paso. Un plano o un anillo desgastado acortan aún más la cotización; hacemos ingeniería inversa a partir de muestras como trabajo habitual.",
+            "Sí. Se puede suministrar una contracuchilla fija por separado y las cuchillas móvil y fija se pueden especificar como un juego completo. Para un conjunto, identifique la posición, el dibujo y la cantidad de cada bloque. Para un solo reemplazo, incluya los componentes retenidos que determinan su relación de corte y montaje.",
         },
         {
           question:
-            "¿Suministran también anillos de una sola ranura y anillos lisos, o solo multirranura?",
+            "¿Cuál es la diferencia entre una cuchilla móvil y una contracuchilla?",
           answer:
-            "Los tres, y recomendamos comprarlos juntos. Los anillos de corte de una sola ranura cubren posiciones fijas y los anillos lisos actúan como separadores y como apoyo de la banda entre posiciones de corte. Al fabricarse con la misma especificación de alojamiento y excentricidad, se apilan sin introducir oscilación: mezclar anillos de distintos proveedores en un mismo eje es una causa habitual y realmente difícil de diagnosticar de variación en el ancho de corte.",
+            "La cuchilla en movimiento viaja con el mecanismo de corte. La contracuchilla fija proporciona el filo opuesto. Las formas de sus cuerpos, las caras de montaje y las orientaciones de instalación pueden diferir incluso cuando sus dimensiones nominales parecen similares. Identifique cada uno por su posición de trabajo para que un reemplazo preserve la relación de corte deseada.",
         },
         {
-          question: "¿Se pueden rectificar y cuántas veces?",
+          question:
+            "¿Cómo se debe seleccionar el acero 1.2746 o 1.2767 para las cuchillas de corte para chatarra?",
           answer:
-            "Sí, y el rectificado es central en la economía porque un anillo es un cuerpo grande de desechar. El número de ciclos depende de la profundidad de ranura y de cuánto material retire cada rectificado; los anillos de acero de herramientas suelen admitir varios ciclos antes de que la geometría de ranura ya no pueda restablecerse. Rectificamos anillos fabricados por nosotros y, en la mayoría de los casos, anillos que no lo son, siempre que el cuerpo esté verdadero y el alojamiento intacto, y le diremos con franqueza cuándo un anillo no merece el trabajo.",
+            "Utilice la especificación actual del material junto con la composición de la chatarra, el tamaño de la sección y el historial de desgaste de la cuchilla. La abrasión gradual, el desconchado localizado y la deformación de los bordes indican diferentes condiciones para su revisión. Evalúe los requisitos de material y dureza junto con el soporte de la cuchilla y la función de corte antes de seleccionar una alternativa al acero existente.",
+        },
+        {
+          question:
+            "¿Cómo identifico un bloque de cuchillas de corte estacionario cuando el largo y el ancho coinciden?",
+          answer:
+            "Primero verifique el espesor, seguido del patrón de pernos, los huecos y las caras de ubicación. Por ejemplo, el catálogo incluye bloques de 525 × 200 mm con diferentes espesores. Utilice las dimensiones completas, el número de artículo y el dibujo en conjunto para confirmar que el bloque se encuentra en la posición fija o móvil correcta.",
+        },
+        {
+          question:
+            "¿Se puede indexar o reafilar una cuchilla de corte estacionaria desgastada?",
+          answer:
+            "La indexación es posible si el diseño permite que un borde no utilizado se asiente correctamente. El reafilado es posible si el bloque puede recuperar su altura de corte especificada y su asiento dentro de los límites de la máquina. Evaluar el filo y las superficies del cuerpo que ubican el bloque antes de devolverlo a servicio.",
+        },
+        {
+          question:
+            "¿Pueden las cuchillas estacionarias para cortar chatarra reemplazar cuchillas de cizalla ?",
+          answer:
+            "No. Una cizalla de pórtico estacionaria utiliza un asiento de cuchilla y un mecanismo de corte diferentes a los de una cizalla de cocodrilo con mandíbula articulada. Para las cuchillas superiores e inferiores en una máquina de mandíbula articulada, consulte [Alligator cuchillas de cizalla](/products/metal-shear-knives) .",
+        },
+        {
+          question:
+            "¿Cómo obtengo una cotización para cuchillas cizallas para chatarra de pórtico estacionarias?",
+          answer:
+            "Enviar modelo y versión de la máquina, sección de desecho y plano o número de pieza de cada bloque. Enumere las posiciones móviles y fijas por separado con cantidades. Incluya el espesor completo del bloque, los huecos y las referencias de montaje cuando varias posiciones utilicen contornos de cuerpo similares.",
         },
       ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envíe el modelo y número de serie de la cizalla estacionaria, la posición de la hoja, el dibujo completo de la cuchilla, el material de desecho y la cantidad.",
+    rfqPlaceholder:
+      "Envíe el modelo y número de serie de la cizalla estacionaria, la posición de la hoja, el dibujo completo de la cuchilla, el material de desecho y la cantidad.",
+    relatedBladeIds: ["metal-shear-knives", "guillotine-shear-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Las configuraciones de cuchillas de repuesto publicadas se muestran como referencia dimensional. Cada familia tiene múltiples modelos y patrones de montaje. Proporcione el dibujo completo antes de realizar el pedido; Estas no son hojas intercambiables ni un estándar de tamaño para toda la industria.",
+    },
+    detailLayout: {
+      heroAlt: "Cuchilla de corte estacionaria con dos orificios de montaje",
+      sizeRange: "260–550 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "1,2746/1,2767; tratamiento térmico especificado",
+        },
+        {
+          label: "Aplicación",
+          value: "Cizallas para chatarra estacionarias y cizallas de pórtico",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "260–550 mm",
+        },
+        {
+          label: "Opciones de materiales",
+          value: "Acero para herramientas 1.2746 o 1.2767",
+        },
+        {
+          label: "Posiciones de cuchillo",
+          value: "Cuchillas de corte móviles y contracuchillas fijas",
+        },
+        {
+          label: "Montaje",
+          value: "Bloques de cuchillas atornillados",
+        },
+        {
+          label: "Aplicación",
+          value: "Cizallas para chatarra estacionarias y cizallas de pórtico",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Familia de referencia",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+          ],
+          rows: [
+            [
+              "SR003601",
+              "Danieli Henschel · configuración del cuchillo",
+              "525",
+              "200",
+              "100",
+            ],
+            [
+              "SR003602",
+              "Metso-Lindemann · configuración de cuchillas",
+              "525",
+              "200",
+              "80",
+            ],
+            [
+              "SR003603",
+              "Becker-Leimbach · configuración de cuchillas",
+              "518",
+              "200",
+              "120",
+            ],
+            [
+              "SR003604",
+              "Danieli Henschel · contracuchillo",
+              "260",
+              "200",
+              "100",
+            ],
+            [
+              "SR003605",
+              "Lefort · configuración del cuchillo",
+              "550",
+              "200",
+              "100",
+            ],
+            [
+              "SR003606",
+              "Lefort · configuración del cuchillo",
+              "510",
+              "140",
+              "50",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Envíe el modelo y número de serie de la cizalla estacionaria, la posición de la hoja, el dibujo completo de la cuchilla, el material de desecho y la cantidad.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
-    id: "slitter-rewinder-bottom-knives",
-    name: "Cuchillas Inferiores para Rebobinadoras Cortadoras",
+    id: "flying-shear-blades",
+    name: "Cuchillas para cizallas volantes",
     fullName:
-      "Cuchillas inferiores de carburo para rebobinadoras cortadoras de papel y film",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Cuchillas Cortadoras",
-    image:
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Acabado Espejo",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Gama de cuchillas inferiores y anillos para rebobinadoras cortadoras en cuatro diámetros",
-      "Par de cuchillas inferiores de carburo mostrando el alojamiento y los agujeros de fijación",
-      "Anillo de cuchilla inferior para rebobinadora con cara de rodadura pulida a espejo",
-    ],
+      "Cuchillas para cizallas de despunte y cizallas volantes de trenes de laminación",
+    seoTitle:
+      "Cuchillas de cizalla volante | A medida para trenes de laminación",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Cuchillas para cizallas volantes",
+    image: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+    imagePending: false,
+    imageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
     description:
-      "Cuchillas inferiores macizas y con plaquitas de carburo para rebobinadoras cortadoras de papel de alta velocidad. Caras pulidas a espejo, corte sin rebabas y menor polvo en la bobina. Medidas de stock Φ250–Φ254 mm en espesores de 15 a 50 mm, alojamientos a medida de la máquina. Compatibles con Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban y otras plataformas de rebobinado eléctrico.",
-    fullDescription:
-      "La cuchilla inferior de una rebobinadora cortadora es la mitad fija del par de cizalla, y es deliberadamente la mitad más dura. Ese diferencial de dureza entre cuchilla superior e inferior no es accidental: es el mecanismo que mantiene limpio el corte. Cuando ambas cuchillas tienen una dureza parecida, la zona de cizalla se deforma en lugar de cortar, y el resultado es un canto con rebaba y polvo arrastrado hacia la bobina.\n\nLas cuchillas inferiores Sureay se suministran en carburo de tungsteno macizo y en construcción con plaquitas de carburo, con caras pulidas a espejo y un filo agudo y posicionado con precisión. En la versión con plaquitas, el carburo se fija mediante un proceso controlado de asentamiento en caliente para que las plaquitas permanezcan unidas a alta velocidad en lugar de aflojarse en servicio, y las plaquitas desgastadas pueden sustituirse sin desechar el cuerpo.\n\n## Por qué el polvo en la bobina es un problema de la cuchilla inferior\n\nLos operarios suelen buscar el polvo aguas arriba: limpiadores de banda, barras antiestáticas, aspiración. A menudo el origen es el propio corte. Una cuchilla inferior cuyo filo se ha redondeado o cuya cara ha perdido el acabado deja de cizallar y empieza a aplastar, y la fibra de papel aplastada se convierte en polvo que se bobina directamente en el rollo y aparece como defecto de transformación dos procesos más adelante. Si el polvo apareció de forma gradual y no tras un cambio de calidad, la cuchilla inferior es lo primero que hay que inspeccionar.\n\n## Materiales según el sustrato\n\nEl carburo de tungsteno macizo es la opción de mayor vida útil y la respuesta correcta en sustratos abrasivos y muy estucados. La versión con plaquitas ofrece el mejor equilibrio coste-vida para papel general, con la ventaja práctica de poder reponer las plaquitas. El HSS sigue siendo razonable para tiradas cortas en sustratos blandos y con el menor coste unitario.\n\n## Aplicaciones\n\nPapel, film, lámina metálica y materiales de banda similares en plataformas eléctricas de rebobinado y corte: corte de bobinas, transformación de rollos y líneas de rebobinado con papel estucado y sin estucar, cartoncillo y sustratos flexibles ligeros.\n\n## El diferencial de dureza es todo el mecanismo\n\nUn corte por cizalla necesita un diferencial de dureza para seguir siendo un corte por cizalla. Cuando las cuchillas superior e inferior tienen durezas próximas, el material de la zona de cizalla se deforma en vez de separarse limpiamente, y el resultado es un canto con rebaba y fibra aplastada que acaba como polvo en la bobina. La cuchilla inferior, más dura, mantiene una geometría de filo estable mientras la superior, más blanda, absorbe el desgaste; por eso la superior es la que se cambia con más frecuencia y por eso sustituir ambas en el mismo ciclo desperdicia herramienta todavía útil. Igualar las dos durezas es un error de especificación habitual y caro, y conviene revisarlo en cualquier línea donde la calidad de corte se haya degradado tras un cambio de herramienta.\n\n## El polvo en la bobina suele empezar en el corte\n\nLos operarios persiguen el polvo aguas arriba —limpiadores de banda, barras antiestáticas, aspiración— cuando con frecuencia el origen es el propio corte. Una cuchilla inferior con el filo redondeado, o cuya cara ha perdido acabado, deja de cizallar y empieza a aplastar; la fibra aplastada se bobina directamente en el rollo y aparece como defecto dos procesos más adelante. El indicio está en el momento: un polvo que aparece de forma gradual apunta a la cuchilla, un polvo que aparece tras un cambio de calidad apunta al sustrato. Inspeccione el filo con aumento y compruebe el acabado de la cara en lugar de juzgar el filo al tacto, porque el acabado se degrada antes que el propio filo y eleva el polvo mucho antes de que nadie considere roma la cuchilla.\n\n## Carburo macizo o con plaquitas\n\nEl carburo de tungsteno macizo ofrece la mayor vida útil por unidad y es la respuesta correcta en sustratos abrasivos y muy estucados, pero cuando el filo se agota la cuchilla se agota. La versión con plaquitas cuesta menos, dura menos por ciclo y admite reposición: siempre que el cuerpo esté recto y verdadero y los asientos de soldadura estén sanos, se sustituyen las plaquitas y la cuchilla vuelve a servicio. Esa reponibilidad suele ser el factor decisivo cuando la economía entre ambas opciones está ajustada. En la construcción con plaquitas, estas se asientan en caliente en condiciones controladas para que permanezcan unidas a las velocidades de rebobinado en lugar de aflojarse en servicio: lo que limita la vida de una cuchilla con plaquitas mal fabricada es la calidad de la soldadura, no la calidad del carburo.\n\n## Qué necesitamos para ajustarnos a su máquina\n\nLas cuchillas inferiores se fabrican siempre a la máquina, así que las plataformas de rebobinado enumeradas son las que vemos con más frecuencia, no un límite. Para cotizar, envíe el diámetro exterior, el alojamiento y el espesor de la cuchilla que utiliza ahora, la especificación de la cuchilla superior correspondiente, qué está cortando, la velocidad de línea y el número de cortes. Si desconoce alguno de esos datos, envíe la cuchilla desgastada o fotografías con un calibre en el encuadre: preferimos hacer ingeniería inversa a partir de una muestra antes que cotizar sobre una suposición. Las cuchillas se envían individualmente con el filo protegido y papel VCI contra la corrosión, encajonadas en los diámetros mayores, porque una cuchilla inferior que llega con una muesca en el filo es inservible por bien fabricada que esté.",
-    link: "/products/slitter-rewinder-bottom-knives",
-    disambiguation:
-      "Estas son cuchillas inferiores circulares que trabajan como par de cizalla con una cuchilla superior en líneas de rebobinado. Si necesita yunques planos para corte por aplastamiento, consulte [Cuchillas Yunque Inferiores Ranuradas](/products/bottom-grooved-anvil-knives).",
-    compatibleMachines: [
-      "Beck",
-      "Bielomatik",
-      "Clark Aiken",
-      "DATM",
-      "Didde",
-      "ECH Will",
-      "Harris",
-      "Hamblett",
-      "Jagenberg",
-      "Langston",
-      "Lenox",
-      "Maxson",
-      "Miltex",
-      "Masson Scott",
-      "Pasaban",
-    ],
+      "cuchillas de cizalla volantes y de cultivo a medida para laminadores. Cuchillas rectas o perfiladas para corte en caliente, en frío o en barra templada, fabricadas sobre plano.",
+    link: "/products/flying-shear-blades",
     specs: [
       {
-        label: "Material",
-        value: "Carburo de tungsteno macizo / con plaquitas de carburo / HSS",
+        label: "Tamaños",
+        value: "Hecho a dibujo",
       },
       {
-        label: "Diámetro exterior",
-        value: "Φ250–Φ254 mm estándar",
-      },
-      {
-        label: "Espesor",
-        value: "15 / 20 / 25 / 50 mm",
-      },
-      {
-        label: "Acabado de cara",
-        value: "Pulido a espejo",
-      },
-      {
-        label: "Principio de diseño",
+        label: "Geometría de la hoja",
         value:
-          "Cuchilla inferior más dura que la superior — control de rebaba y polvo",
+          "Filos cortantes rectos o perfilados; cuerpos de cuchillo escalonados",
       },
       {
-        label: "Materiales cortados",
-        value: "Papel, film, lámina metálica y sustratos de banda similares",
+        label: "Opciones de materiales",
+        value:
+          "Acero para herramientas para trabajos en caliente o acero para herramientas de alta aleación",
+      },
+      {
+        label: "Servicio de corte",
+        value:
+          "Configuraciones de corte en caliente, corte en frío o corte con barra templada",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Corte de cabeza/cola y cortes divisorios en cizallas volantes de laminador",
       },
     ],
-    dimensionLabels: {
-      col0: "Ítem",
-      col1: "DE ØD (mm)",
-      col2: "Alojamiento Ød (mm)",
-      col3: "Espesor T (mm)",
-      caption:
-        "* Medidas estándar de cuchilla inferior para rebobinadora. El alojamiento, el espesor y la geometría de filo se ajustan a la máquina: envíe el DE/DI/T de la cuchilla que utiliza ahora junto con la especificación de la cuchilla superior correspondiente.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "25",
-      },
-      {
-        spec: "2",
-        od: "Φ254",
-        id: "Φ195",
-        thickness: "50",
-      },
-      {
-        spec: "3",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "15",
-      },
-      {
-        spec: "4",
-        od: "Φ250",
-        id: "Φ140",
-        thickness: "20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "La cuchilla inferior debe ser siempre la mitad más dura del par. Dentro de esa regla, la calidad se elige según lo abrasivo que sea el sustrato y según si desea un cuerpo con plaquitas reponibles.",
-      rows: [
-        {
-          grade: "Solid tungsten carbide",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Sustratos abrasivos y muy estucados; el mayor intervalo entre cambios",
-          tradeoff:
-            "Precio unitario más alto, y toda la cuchilla se desecha cuando el filo se agota",
-        },
-        {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 en la plaquita",
-          bestFor:
-            "Papel y cartoncillo general — el mejor equilibrio coste-vida, con plaquitas reponibles",
-          tradeoff:
-            "La calidad de la soldadura decide la vida útil; plaquitas mal asentadas se aflojan a velocidad",
-        },
-        {
-          grade: "HSS",
-          hardness: "62–64 HRC",
-          bestFor:
-            "Tiradas cortas, sustratos blandos sin estucar, menor coste unitario",
-          tradeoff:
-            "El filo se redondea rápido a velocidades de rebobinado, que es donde empieza el polvo en la bobina",
-        },
-      ],
-      outro:
-        "Sea cual sea la calidad elegida, mantenga el diferencial de dureza con la cuchilla superior. Igualar ambas durezas es un error habitual y caro: elimina la cizalla y deja la banda aplastada.",
-    },
+    compatibleMachines: ["Danieli"],
+    compatibleMachinesIntro:
+      "Obtenga cuchillas de cizalla volantes y de corte personalizadas para su laminador, incluidos cuerpos de cuchillas rectas, perfiladas y escalonadas. Sureay ofrece opciones de acero para herramientas de alta aleación y trabajo en caliente; comparta sus tareas de dibujo y corte para obtener una cotización de reemplazo personalizada. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
     components: [
       {
-        id: "hardness-differential",
-        tag: "MECÁNICA DE CIZALLA",
-        title: "Deliberadamente más dura que la cuchilla superior",
+        id: "flying-shear-blades-1",
+        tag: "Servicio térmico",
+        title: "Materiales para corte en caliente, en frío y enfriado",
         description:
-          "La cuchilla inferior se especifica más dura que la superior con la que trabaja de forma intencionada. Ese diferencial es lo que mantiene el par cizallando en lugar de deformar la banda, y es la causa directa de cantos sin rebaba y de un bajo arrastre de polvo hacia la bobina.",
+          "Las opciones de trabajo en caliente y acero para herramientas de alta aleación permiten especificar el material de la cuchilla para el producto laminado y las condiciones de temperatura en la estación de corte.",
       },
       {
-        id: "mirror-face-finish",
-        tag: "ACABADO SUPERFICIAL",
-        title: "Cara de rodadura pulida a espejo",
+        id: "flying-shear-blades-2",
+        tag: "Coincidencia de perfil",
+        title: "Perfiles adaptados al dibujo para corte de barras y secciones",
         description:
-          "Una cara pulida libera la banda en lugar de arrastrarla, lo que mantiene limpio el corte y reduce el calor de fricción. El acabado de la cara es de lo primero que se degrada en servicio y de lo último que comprueban los operarios: una cara mate eleva el polvo mucho antes de que el filo esté realmente gastado.",
+          "Sureay fabrica hojas rectas y perfiladas, incluidos cuerpos escalonados y bordes cortantes perfilados. La sección transversal original y la geometría de corte instalada definen el contorno de la hoja y los datos de montaje para cada posición de la cuchilla.",
       },
       {
-        id: "hot-set-carbide",
-        tag: "CONSTRUCCIÓN",
-        title: "Plaquitas de carburo asentadas en caliente",
+        id: "flying-shear-blades-3",
+        tag: "condición de servicio",
+        title: "Pares de cuchillos personalizados para recortar y dividir",
         description:
-          "En la construcción con plaquitas, estas se asientan en caliente en condiciones controladas para que permanezcan firmemente unidas a alta velocidad. La ventaja práctica es un cuerpo reponible: se sustituyen las plaquitas desgastadas y la cuchilla vuelve a servicio en lugar de desecharse.",
+          "Se pueden realizar cuchillas individuales y reemplazos emparejados según dibujos de posiciones específicas para cortes de cabeza y cola o cortes divisorios, con la orientación y la interfaz de cada cuchilla definidas para el conjunto existente.",
       },
     ],
-    relatedBladeIds: [
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-      "tungsten-carbide-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Ejemplo: rebobinadora Jagenberg, cuchilla inferior Φ250 × Φ188 × 25 mm, emparejada con una cuchilla superior Φ200. Cortando papel estucado de 120 g/m² a 800 m/min, 12 cortes. Aparece polvo en la bobina y el canto sale ligeramente con rebaba.",
     faqs: {
       technical: [
         {
           question:
-            "¿Por qué la cuchilla inferior debe ser más dura que la superior?",
+            "¿Puede Sureay fabricar cuchillas de cizalla voladoras personalizadas para un laminador existente?",
           answer:
-            "Porque un corte por cizalla necesita un diferencial de dureza para seguir siéndolo. Cuando ambas cuchillas tienen durezas próximas, el material de la zona de cizalla se deforma en lugar de separarse limpiamente, y aparecen un canto con rebaba y fibra aplastada que acaba como polvo en la bobina. La cuchilla inferior, más dura, mantiene una geometría de filo estable mientras la superior, más blanda, absorbe el desgaste; por eso la superior es la que se cambia con más frecuencia. Igualar las durezas es un error habitual y caro.",
-        },
-        {
-          question: "Tengo polvo en la bobina. ¿Dónde debo mirar primero?",
-          answer:
-            "En el propio corte, antes que en los limpiadores de banda y las barras antiestáticas. Una cuchilla inferior con el filo redondeado o con el acabado de cara degradado deja de cizallar y empieza a aplastar, y la fibra aplastada va directa a la bobina, apareciendo a menudo como defecto dos procesos más adelante. El indicio está en el momento: un polvo gradual apunta a la cuchilla, un polvo que aparece tras un cambio de calidad apunta al sustrato. Inspeccione el filo con aumento y compruebe el acabado de la cara, no solo el filo al tacto.",
+            "Sí. Sureay realiza sustituciones según dibujo rectas, perfiladas y escalonadas. Para una barra perfilada o una cuchilla seccionada, el contorno de trabajo, las caras de referencia y las características de montaje se especifican juntas. Luego se puede seleccionar el material para la temperatura de corte y la carga reales.",
         },
         {
           question:
-            "¿Puedo pedir cuchillas inferiores sin sustituir las superiores?",
+            "¿Son lo mismo las cuchillas cizallas que cuchillas de cizalla ?",
           answer:
-            "Sí, y es la forma habitual de comprarlas. Las cuchillas inferiores suelen durar mucho más que las superiores, así que sustituirlas en el mismo ciclo desperdicia herramienta todavía útil. Indíquenos el DE/DI/espesor de la cuchilla inferior y la especificación de la cuchilla superior correspondiente, y ajustaremos la geometría de acoplamiento y el diferencial de dureza a lo que ya utiliza.",
+            "Se superponen cuando una cizalla voladora corta la cabeza o la cola del material en movimiento. Recortar describe dónde se realiza el corte. Volar describe el corte en coordinación con el material en movimiento, que también se puede utilizar para dividirlo en longitudes. La posición de la cizalla y la cuchilla instaladas definen el reemplazo.",
         },
         {
           question:
-            "¿Se pueden reponer las plaquitas de una cuchilla desgastada?",
+            "¿Qué cambia a la hora de seleccionar cuchillos para corte en caliente y en frío?",
           answer:
-            "Sí, siempre que el cuerpo esté recto y verdadero y los asientos de soldadura estén sanos. Reponer plaquitas es bastante más barato que una cuchilla nueva y es la razón para elegir la versión con plaquitas frente al carburo macizo cuando la economía está ajustada. El carburo macizo no admite reposición: cuando el filo se agota, la cuchilla se agota, que es el compromiso que se acepta a cambio de la mayor vida útil por unidad.",
+            "El borde encuentra diferentes condiciones térmicas y mecánicas. Especifique la calidad del material, la sección transversal y las condiciones de temperatura en la estación de corte, junto con el material de la cuchilla existente. Compare esos requisitos con las opciones disponibles para trabajo en caliente o acero para herramientas de alta aleación mientras conserva el cuerpo y el perfil de corte requeridos.",
+        },
+        {
+          question:
+            "¿Por qué debería identificarse por separado el corte de barras enfriadas?",
+          answer:
+            "La superficie y el núcleo de una barra templada pueden encontrarse en diferentes condiciones cuando llega al corte. Esas condiciones afectan el servicio junto con la calidad del acero y la sección de la barra. Registre la condición real en el punto de corte para que se pueda evaluar un material de reemplazo para esa operación en lugar de solo una etiqueta general de frío o calor.",
+        },
+        {
+          question: "¿Qué determina el perfil de una navaja voladora?",
+          answer:
+            "La sección transversal del material y el movimiento de la cizalla determinan cómo se acoplan los filos. Las curvas, los escalones y la orientación de los bordes forman parte de esa geometría de trabajo, junto con los puntos de referencia de montaje de la cuchilla. Reproduzca el contorno especificado al reemplazar la cuchilla, incluida la relación con su componente coincidente.",
+        },
+        {
+          question:
+            "¿Se puede utilizar una cuchilla de corte voladora desgastada como muestra de reemplazo?",
+          answer:
+            "Sí. Un cuchillo desgastado puede mostrar el cuerpo escalonado, las caras de localización y los orificios de montaje. Identifique de qué posición proviene y marque las superficies rectificadas. Utilice el dibujo original o una referencia coincidente no utilizada, cuando esté disponible, para distinguir el contorno deseado del borde restante.",
+        },
+        {
+          question:
+            "¿Qué debo enviar para cotizar un par de cuchillas de corte volante?",
+          answer:
+            "Enviar modelo de molino o cizalla, planos tanto de posiciones de cuchillas como de cantidades. Indique si el corte corta la cabeza o la cola o divide el material a lo largo. Incluya la sección laminada, la calidad del acero, la temperatura del punto de corte y la velocidad de la línea para que los dibujos y las especificaciones del material puedan considerarse juntos.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Envíe el modelo de molino/cizalla, dibujos de cuchillas, sección y calidad del producto, temperatura de corte, velocidad de la línea, posiciones de las cuchillas y cantidades.",
+    rfqPlaceholder:
+      "Envíe el modelo de molino/cizalla, dibujos de cuchillas, sección y calidad del producto, temperatura de corte, velocidad de la línea, posiciones de las cuchillas y cantidades.",
+    relatedBladeIds: [
+      "guillotine-shear-blades",
+      "stationary-scrap-shear-blades",
+    ],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Los cuerpos y perfiles de las cizallas volantes son específicos del mecanismo de fresado y cizalla. Las dimensiones estándar completas de la carrocería no están disponibles para una configuración universal; proporcione el dibujo original o una muestra acotada.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Muestras de cuchillas de corte y de corte voladoras con cuerpos escalonados y orificios de montaje",
+      sizeRange: "Hecho a dibujo",
+      heroSpecs: [
         {
-          question: "¿Qué necesitan para cotizar una cuchilla inferior?",
+          label: "Material",
+          value:
+            "Trabajo en caliente/acero para herramientas de alta aleación según servicio",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Corte de cabeza/cola y cortes divisorios en cizallas volantes de laminador",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "Hecho a dibujo",
+        },
+        {
+          label: "Geometría de la hoja",
+          value:
+            "Filos cortantes rectos o perfilados; cuerpos de cuchillo escalonados",
+        },
+        {
+          label: "Opciones de materiales",
+          value:
+            "Acero para herramientas para trabajos en caliente o acero para herramientas de alta aleación",
+        },
+        {
+          label: "Servicio de corte",
+          value:
+            "Configuraciones de corte en caliente, corte en frío o corte con barra templada",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Corte de cabeza/cola y cortes divisorios en cizallas volantes de laminador",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Envíe el modelo de molino/cizalla, dibujos de cuchillas, sección y calidad del producto, temperatura de corte, velocidad de la línea, posiciones de las cuchillas y cantidades.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+  },
+  {
+    id: "paper-sheeter-knives",
+    name: "Cuchillas para cortadoras transversales de papel",
+    fullName:
+      "Cuchillas de corte transversal para cortadoras de papel de bobina a hoja",
+    seoTitle:
+      "Cuchillas para cortadoras de papel de bobina a hoja | Recambios a medida",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay: "Cuchillas para cortadoras transversales de papel",
+    image: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 680,
+      height: 1208,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Cortadora de papel y cuchillas transversales de repuesto personalizadas. Cantos de acero HSS , PM o con puntas de carburo para bandas de papel y cartón, fabricados a medida de su perfil de montaje.",
+    link: "/products/paper-sheeter-knives",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "2230–2285 mm",
+      },
+      {
+        label: "Configuraciones de referencia",
+        value:
+          "Los cuerpos de cuchillos de la serie Jagenberg Synchro se enumeran a continuación",
+      },
+      {
+        label: "Disposición del cuchillo",
+        value: "Instalación radial o tangencial",
+      },
+      {
+        label: "Opciones de materiales",
+        value:
+          "HSS , acero pulvimetalúrgico o construcciones con punta de carburo",
+      },
+      {
+        label: "Aplicación",
+        value:
+          "Corte transversal de bandas continuas de papel y cartón en hojas",
+      },
+    ],
+    compatibleMachines: ["Jagenberg", "Bielomatik", "E.C.H. Will", "Pasaban"],
+    compatibleMachinesIntro:
+      "Obtenga cuchillas cortadoras de papel de repuesto con longitudes personalizadas, perfiles de sujeción y geometría de vanguardia para su máquina. Sureay ofrece opciones HSS , acero pulvimetalúrgico y con punta de carburo para corte transversal de papel y cartón; envíe su dibujo para una cotización. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "paper-sheeter-knives-1",
+        tag: "Deber transversal",
+        title: "Opciones de acero HSS , PM y con punta de carburo",
+        description:
+          "Sureay ofrece estas opciones de materiales para corte transversal de bandas de papel y cartón, lo que permite especificar la construcción de la cuchilla para el stock, el servicio de producción y el proceso de mantenimiento existente.",
+      },
+      {
+        id: "paper-sheeter-knives-2",
+        tag: "Instalación",
+        title: "Configuraciones de cuchilla radial y tangencial",
+        description:
+          "Hay cuchillas de repuesto disponibles para disposiciones radiales y tangenciales, con perfiles de cuerpo y características de sujeción diseñadas para el cilindro de corte instalado.",
+      },
+      {
+        id: "paper-sheeter-knives-3",
+        tag: "Acabado de borde",
+        title: "Cuchillas laminadoras largas hechas sobre dibujo",
+        description:
+          "Las longitudes indicadas de las cuchillas transversales para papel oscilan entre 2230 y 2285 mm. Suray fabrica la sección transversal completa, el perfil de sujeción, el borde de trabajo y el acabado según plano para las cuchillas de repuesto en los cilindros de corte existentes.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Qué cuchilla cortadora de papel de repuesto se adapta a mi máquina?",
           answer:
-            "Diámetro exterior, alojamiento y espesor de la cuchilla que utiliza ahora, la especificación de la cuchilla superior correspondiente, qué está cortando, la velocidad de línea y el número de cortes. Si desconoce alguno de esos datos, envíe la cuchilla desgastada o fotografías con un calibre en el encuadre: preferimos hacer ingeniería inversa a partir de una muestra antes que cotizar sobre una suposición.",
+            "Identifique el modelo y la versión de la laminadora, la posición de la cuchilla y el plano de montaje. Haga coincidir la sección transversal completa, las superficies de sujeción, el perfil de corte y la orientación de instalación. La contracuchilla también forma parte de la disposición. Utilice esos detalles con la referencia de la pieza original para seleccionar la configuración de reemplazo requerida.",
         },
         {
           question:
-            "¿Suministran para marcas de rebobinadora que no aparecen en esta página?",
+            "¿En qué se diferencian las cuchillas cortadoras de papel de las cuchillas cortadoras y de guillotina?",
           answer:
-            "Sí. Las plataformas enumeradas son las que vemos con más frecuencia, no un límite: las cuchillas inferiores se fabrican a la máquina en todos los casos. Cualquier rebobinadora cortadora eléctrica entra en alcance una vez tengamos las cotas de montaje y la especificación de la cuchilla superior correspondiente.",
+            "Una cuchilla laminadora corta una banda de papel o cartón en movimiento para formar hojas. Una cuchilla cortadora corta longitudinalmente a lo largo de la red y una cuchilla de guillotina corta una pila sujeta. Para conocer la operación longitudinal, consulte [Cuchillas cortadoras de papel](/products/rotary-slitter-knives-paper) .",
         },
         {
-          question: "¿Cómo se embalan?",
+          question:
+            "¿Cómo se deben comparar las cuchillas laminadoras de acero HSS , PM y con punta de carburo?",
           answer:
-            "Individualmente, con el filo protegido y papel VCI contra la corrosión, en caja de madera a medida para los diámetros mayores. Una cuchilla inferior que llega con una muesca en el filo es inservible por bien fabricada que esté, así que el embalaje se especifica para el transporte, no para el almacén.",
+            "Compare el rendimiento con la misma calidad de papel, disposición de la banda y requisitos de calidad de corte. El desgaste gradual de los bordes, el desconchado y el proceso de afilado disponible deben guiar la evaluación del material. Mantenga definido el perfil de montaje y trabajo existente para que se pueda evaluar un material alternativo dentro de la configuración real de la laminadora.",
+        },
+        {
+          question:
+            "¿Por qué una laminadora puede dejar un corte transversal deficiente incluso con cuchillas nuevas?",
+          answer:
+            "El ajuste entre las cuchillas coincidentes, su geometría de corte, el acabado del rectificado y el estado de la máquina pueden afectar el corte. Un gramaje más alto o varias bandas juntas pueden cambiar la tarea de corte. Compare la geometría y la configuración instaladas con los requisitos de la máquina y registre el stock y los defectos antes de decidir que es necesario cambiar el material de la cuchilla.",
+        },
+        {
+          question:
+            "¿Qué significa instalación de cuchilla radial o tangencial?",
+          answer:
+            "Los términos describen la posición de la cuchilla en relación con el cilindro de corte. Cada disposición tiene su propio perfil de cuerpo, sujeción y posición del borde de trabajo. El reemplazo debe reproducir el diseño instalado, incluida la relación de las cuchillas coincidentes. La longitud y el espesor totales son sólo una parte de la información necesaria para identificar esa disposición.",
+        },
+        {
+          question:
+            "¿Los tamaños indicados se ajustan a todas las laminadoras Jagenberg Synchro?",
+          answer:
+            "No. Las máquinas Jagenberg Synchro pueden utilizar diferentes cuerpos de cuchillas y disposiciones de sujeción según la versión. Utilice el número de artículo indicado como referencia y compare la sección transversal completa y las caras de sujeción con el dibujo de su cuchilla instalada.",
+        },
+        {
+          question:
+            "¿Qué requisitos geométricos importan al pedir cuchillas laminadoras largas?",
+          answer:
+            "La rectitud del filo, el paralelismo de la cara, el grosor y el acabado del bisel describen diferentes aspectos del cuchillo. Indique los valores requeridos y los datos de medición en el plano de trabajo. Esos requisitos permiten que la cuchilla terminada se evalúe de manera consistente y ayudan a preservar la relación prevista entre sus superficies de sujeción y el borde de trabajo.",
+        },
+        {
+          question:
+            "¿Qué necesitas para cotizar una cuchilla cortadora de papel radial o tangencial?",
+          answer:
+            "Proporcione el modelo y la versión de la laminadora, los dibujos de montaje y cuchilla, la calidad del papel o cartón y la cantidad. Etiquete la instalación radial o tangencial, las superficies de sujeción y la posición de acoplamiento. Incluya los puntos de referencia del borde de trabajo y el requisito de acabado si se definen en su plano.",
         },
       ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envíe el modelo de la cortadora, planos de cuchilla y abrazadera, disposición radial/tangencial, calidad del stock, condiciones de la banda y cantidades.",
+    rfqPlaceholder:
+      "Envíe el modelo de la cortadora, planos de cuchilla y abrazadera, disposición radial/tangencial, calidad del stock, condiciones de la banda y cantidades.",
+    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Las dimensiones de referencia siguen las configuraciones históricas de las laminadoras IKS Klingelnberg. No identifican todas las versiones Synchro ni especifican el perfil de sujeción completo. Confirme el modelo, la disposición de instalación y el dibujo original del cuchillo antes de realizar el pedido.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Cuchilla cortadora de papel larga con orificios de montaje avellanados",
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-sheeter-knives-detail.webp",
+        alt: "Cuchillas laminadoras de papel sobre soportes de taller que muestran orificios de montaje y detalles de los bordes",
+      },
+      sizeRange: "2230–2285 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "HSS / acero PM / con puntas de carburo",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Corte transversal de bandas continuas de papel y cartón en hojas",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "2230–2285 mm",
+        },
+        {
+          label: "Configuraciones de referencia",
+          value:
+            "Los cuerpos de cuchillos de la serie Jagenberg Synchro se enumeran a continuación",
+        },
+        {
+          label: "Disposición del cuchillo",
+          value: "Instalación radial o tangencial",
+        },
+        {
+          label: "Opciones de materiales",
+          value:
+            "HSS , acero pulvimetalúrgico o construcciones con punta de carburo",
+        },
+        {
+          label: "Aplicación",
+          value:
+            "Corte transversal de bandas continuas de papel y cartón en hojas",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Configuración de referencia",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+          ],
+          rows: [
+            [
+              "SR004101",
+              "Sincronizador Jagenberg · radial",
+              "2285",
+              "55",
+              "10",
+            ],
+            [
+              "SR004102",
+              "Sincronizador Jagenberg · radial",
+              "2285",
+              "32",
+              "10",
+            ],
+            [
+              "SR004103",
+              "Sincronizador Jagenberg · radial / cónico",
+              "2230",
+              "60",
+              "9.5",
+            ],
+            [
+              "SR004104",
+              "Sincronizador Jagenberg · radial / cónico",
+              "2230",
+              "35",
+              "10",
+            ],
+            ["SR004105", "Sincro Jagenberg · tangencial", "2285", "40", "12"],
+            ["SR004106", "Sincro Jagenberg · tangencial", "2285", "38", "12"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Envíe el modelo de la cortadora, planos de cuchilla y abrazadera, disposición radial/tangencial, calidad del stock, condiciones de la banda y cantidades.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
+    },
+  },
+  {
+    id: "saddle-stitcher-trimmer-knives",
+    name: "Cuchillas de corte trilateral para líneas de cosido a caballete",
+    fullName: "Cuchillas de corte trilateral para líneas de cosido a caballete",
+    seoTitle: "Cuchillas de corte trilateral para folletos cosidos a caballete",
+    seoDescription:
+      "Reemplace las cuchillas frontales o laterales en las líneas de engrapado para folletos y revistas. Ver tamaños de referencia DS 304 / Tempo y opciones con punta de carburo o HSS .",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay:
+      "Cuchillas de corte trilateral para líneas de cosido a caballete",
+    image:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 559,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Cuchillas de repuesto para grapadoras y grapadoras para folletos y revistas. Cuchillas frontales, laterales, superiores e inferiores en versiones con punta de acero para herramientas, HSS o carburo.",
+    link: "/products/saddle-stitcher-trimmer-knives",
+    specs: [
+      {
+        label: "Tamaños",
+        value: "280–400 mm",
+      },
+      {
+        label: "Configuraciones de referencia",
+        value:
+          "Posiciones de cuchillos Müller Martini DS 304 / Tempo enumeradas a continuación",
+      },
+      {
+        label: "Posiciones de cuchillo",
+        value:
+          "Frontal superior, lateral superior, frontal inferior y lateral inferior; cuchillos para mano izquierda y derecha",
+      },
+      {
+        label: "Opciones de materiales",
+        value:
+          "Filos de corte de acero para herramientas, HSS o con punta de carburo",
+      },
+      {
+        label: "Aplicación",
+        value: "Recorte de folletos, folletos y revistas cosidos",
+      },
+    ],
+    compatibleMachines: ["Müller Martini", "Heidelberg", "Horizon"],
+    compatibleMachinesIntro:
+      "Solicite cuchillas recortadoras para engrapadoras frontales, laterales, superiores o inferiores de Sureay , incluidos repuestos individuales y perfiles de cuchilla personalizados. Se encuentran disponibles opciones de acero para herramientas, HSS y con punta de carburo; envíe sus dibujos con etiquetas de posición para obtener una cotización adaptada a su línea de costura. Las marcas de máquinas son referencias de compatibilidad para las piezas de repuesto Sureay .",
+    components: [
+      {
+        id: "saddle-stitcher-trimmer-knives-1",
+        tag: "Combinación de cuchillos",
+        title: "Bordes con punta de carburo, HSS y acero para herramientas",
+        description:
+          "Las opciones de materiales para el recorte de folletos y revistas permiten que los pedidos de reemplazo reflejen el stock de papel, el trabajo de corte y el desgaste de los bordes en la línea existente.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-2",
+        tag: "Acabado de folleto",
+        title: "Posiciones de cuchilla frontal, lateral, superior e inferior",
+        description:
+          "Las longitudes de cuchilla enumeradas oscilan entre 280 y 400 mm. Sureay suministra posiciones frontales y laterales en configuraciones superior, inferior, izquierda y derecha para que los compradores puedan pedir las piezas necesarias para su recortadora.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-3",
+        tag: "Configuraciones especiales",
+        title: "Perfiles personalizados para líneas de costura existentes",
+        description:
+          "Los cuerpos, biseles y orificios de montaje definidos en el dibujo permiten reemplazar las cuchillas existentes, con perfiles especiales especificados junto con sus piezas coincidentes y la orientación de instalación.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "¿Cómo identifico cuchillas de repuesto para una línea de encuadernación?",
+          answer:
+            "Identifique la versión de grapadora y recortadora, luego especifique frontal o lateral, superior o inferior e izquierda o derecha cuando sea relevante. La referencia original y el plano de montaje distinguen las posiciones. Incluya la dirección del bisel y la orientación de instalación para que el reemplazo siga la disposición real de las cuchillas utilizadas para sus folletos o revistas.",
+        },
+        {
+          question: "¿Puedo reemplazar solo una cuchilla lateral dañada?",
+          answer:
+            "Sí. Se puede suministrar una cuchilla lateral por separado cuando se identifica su posición y montaje. Inspeccione la cuchilla coincidente retenida y registre sus dimensiones y su historial de reafilado. Utilice la referencia de la pieza izquierda o derecha con la posición superior o inferior, porque esas características determinan qué reemplazo se requiere.",
+        },
+        {
+          question:
+            "¿Cómo se debe elegir el material de las cuchillas para los folletos estucados?",
+          answer:
+            "Compare el desgaste de los bordes existente con el recubrimiento del papel, el grosor del folleto y el servicio de producción. La abrasión gradual y el desconchado de los bordes exigen consideraciones de material diferentes. El proceso de rectificado disponible también influye en la elección del acero para herramientas, HSS o construcción con punta de carburo. Mantenga el bisel y la geometría de montaje especificados según los requisitos del material.",
+        },
+        {
+          question:
+            "¿Los cuchillos enumerados cubren todas las configuraciones Müller Martini DS 304 / Tempo?",
+          answer:
+            "No. Los números de artículo enumerados cubren posiciones y dimensiones específicas de las cuchillas Müller Martini DS 304 / Tempo. Compare la versión y referencia de pieza original de la cuchilla frontal superior, lateral superior, frontal inferior o lateral inferior con el plano de montaje completo.",
+        },
+        {
+          question:
+            "¿Cuándo se debe reemplazar una cuchilla de cosedora en lugar de volver a afilarse?",
+          answer:
+            "La altura restante de la cuchilla y, en el caso de cuchillas con incrustaciones o con punta, el material de corte utilizable determinan si se puede restaurar la geometría de trabajo. Utilice el límite de desgaste para esa construcción de cuchilla y los límites de ajuste de la recortadora. Las cuchillas superior e inferior pueden diferir en construcción, así que evalúe cada posición por separado al decidir qué piezas requieren reemplazo.",
+        },
+        {
+          question:
+            "¿Los cuchillos de cosedora también se llaman hojas de corte de tres cuchillas?",
+          answer:
+            "A veces. Los términos se superponen cuando una línea de encuadernación recorta tres lados de un folleto. Identifique la cosedora y la posición exacta superior, inferior, frontal o lateral al realizar el pedido. Para conocer juegos separados de tres cuchillas utilizados en bloques de libros encuadernados, consulte [Cuchillas recortadoras de tres cuchillas](/products/three-knife-trimmer-blades) .",
+        },
+        {
+          question:
+            "¿Qué debo enviar para obtener una cotización de una cuchilla cortadora para encuadernadora?",
+          answer:
+            "Envíe el modelo de grapadora y guillotina, el material para folletos, los números de piezas o dibujos originales y las cantidades. Etiqueta superior o inferior, frontal o lateral, e izquierda o derecha cuando corresponda. Para una disposición de divisor o de fase en V, incluya el perfil real y el dibujo de la cuchilla correspondiente.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Envíe el modelo de grapadora/recortadora, la versión, los dibujos de las cuchillas con etiquetas de posición, el grosor del material y del folleto y las cantidades.",
+    rfqPlaceholder:
+      "Envíe el modelo de grapadora/recortadora, la versión, los dibujos de las cuchillas con etiquetas de posición, el grosor del material y del folleto y las cantidades.",
+    relatedBladeIds: ["three-knife-trimmer-blades", "paper-cutting-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Las dimensiones de referencia de DS 304 / Tempo siguen el catálogo de cortapapeles DIENES , página 34. Las cuchillas superiores izquierda y derecha tienen entradas de número de artículo separadas incluso cuando sus dimensiones exteriores coincidan. Confirme el patrón de agujeros completo y el dibujo de la cuchilla; Otras versiones de máquinas se fabrican según plano.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Juego de cuchillas recortadoras para grapadoras de lomo que muestran hojas rectas y perfiladas con orificios de montaje",
+      specificationImage: {
+        src: "/images/products/shear-detail/saddle-stitcher-trimmer-knives-detail.webp",
+        alt: "Tres cuchillas recortadoras en una superficie de taller que muestran biseles de corte y orificios de montaje",
+      },
+      sizeRange: "280–400 mm",
+      heroSpecs: [
+        {
+          label: "Material",
+          value: "Acero para herramientas / HSS / con punta de carburo",
+        },
+        {
+          label: "Aplicación",
+          value: "Recorte de folletos, folletos y revistas cosidos",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Tamaños",
+          value: "280–400 mm",
+        },
+        {
+          label: "Configuraciones de referencia",
+          value:
+            "Posiciones de cuchillos Müller Martini DS 304 / Tempo enumeradas a continuación",
+        },
+        {
+          label: "Posiciones de cuchillo",
+          value:
+            "Frontal superior, lateral superior, frontal inferior y lateral inferior; cuchillos para mano izquierda y derecha",
+        },
+        {
+          label: "Opciones de materiales",
+          value:
+            "Filos de corte de acero para herramientas, HSS o con punta de carburo",
+        },
+        {
+          label: "Aplicación",
+          value: "Recorte de folletos, folletos y revistas cosidos",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Dimensiones estándar",
+          title: "Dimensiones estándar habituales",
+          columns: [
+            "N.º de artículo",
+            "Máquina / posición",
+            "Longitud (mm)",
+            "Anchura (mm)",
+            "Espesor (mm)",
+          ],
+          rows: [
+            [
+              "SR004201",
+              "DS 304 / Tempo · parte superior delantera",
+              "390",
+              "60",
+              "8",
+            ],
+            [
+              "SR004202",
+              "DS 304 / Tempo · lateral superior derecho",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004203",
+              "DS 304 / Tempo · lado superior izquierdo",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004204",
+              "DS 304 / Tempo · delantero inferior",
+              "400",
+              "40",
+              "15",
+            ],
+            [
+              "SR004205",
+              "DS 304 / Tempo · lateral inferior",
+              "295",
+              "32",
+              "15",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Solicite un presupuesto para la configuración de su cuchilla",
+        description:
+          "Envíe el modelo de grapadora/recortadora, la versión, los dibujos de las cuchillas con etiquetas de posición, el grosor del material y del folleto y las cantidades.",
+        buttonLabel: "Solicitar un presupuesto",
+      },
     },
   },
   {
     id: "box-slotting-knives",
-    name: "Cuchillas Ranuradoras para Cajas",
+    name: "Cuchillas para ranuras en V de cartón gris",
     fullName:
-      "Cuchillas ranuradoras de carburo de precisión para cajas rígidas y de regalo",
+      "Cuchillas de precisión de metal duro para ranurar en V el cartón gris de estuches rígidos y cajas de regalo",
+    seoTitle: "Cuchillas de metal duro para ranurado en V de cartón gris",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Cuchillas para Embalaje y Cartón",
     image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Pares Izquierda / Derecha",
-    badgeColor: "teal",
-    gallery: [
-      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Seis cuchillas ranuradoras de carburo dispuestas en abanico mostrando el rango de longitudes y anchos de stock",
-      "Par de cuchillas ranuradoras de carburo mostrando el bisel de ranurado rectificado",
-      "Cuchillas ranuradoras en estuches protectores etiquetados junto a dos cuchillas sueltas",
-    ],
     description:
-      "Cuchillas ranuradoras de carburo para el ranurado en V de cartón gris en líneas de cajas rígidas y de regalo. Se suministran como pares de mano izquierda y derecha en cinco medidas de stock, de 50 × 12 mm a 60 × 15 mm, con 2,0 / 2,2 mm de espesor, en las calidades de carburo GS05U (optimizada al desgaste) y GS20U (tenaz). Ranuras limpias sin desgarrar ni deshilachar la cara del cartón, ajustables al espesor del material.",
-    fullDescription:
-      "Una caja rígida vale lo que vale su ranura. La ranura en V practicada en el cartón gris determina cómo pliega el material, y una ranura que desgarra o deshilacha la capa exterior se transparenta a través del forro como un defecto visible en un producto que se compra precisamente porque parece caro. En cajas de regalo y de lujo no existe tolerancia aceptable para una ranura irregular.\n\nLas cuchillas ranuradoras Sureay se rectifican en carburo de tungsteno de alta calidad y se suministran como pares emparejados de mano izquierda y derecha, porque así es como cortan. Las dos cuchillas forman juntas las paredes de la ranura; trabajar una cuchilla nueva contra una desgastada produce una ranura asimétrica que pliega fuera de escuadra, y por eso las cotizamos y enviamos por pares y no por unidades.\n\n## Dos calidades, una decisión\n\nGS05U es la calidad de mayor dureza, optimizada al desgaste, y la elección correcta para cartón gris estándar en tiradas largas. GS20U cede algo de dureza a cambio de tenacidad y es la calidad para cartón grueso y para cartón reciclado con inclusiones: la misma distinción que recorre toda aplicación de carburo, expresada aquí en términos de cartón. Elegir GS05U para cartón reciclado con impurezas es la forma más habitual de astillar estas cuchillas.\n\n## Ajustable al espesor del cartón\n\nLa separación entre cuchillas se ajusta al cartón que se está procesando, de modo que un solo par cubre un rango de calibres en lugar de quedar fijado a un único espesor. En la práctica, una línea de cajas rígidas que alterna entre cartón gris de 1,5 mm y de 3 mm se reajusta en lugar de cambiar de herramienta, siempre que el ancho de ranura esté dentro del rango.\n\n## Aplicaciones\n\nRanurado en V de cartón gris en líneas de cajas rígidas y de regalo: embalaje de lujo, estuches de cosmética y de bebidas espirituosas, cajas de presentación, cartón para tapa dura y cartonaje rígido estándar.\n\n## Por qué cotizamos por pares\n\nLas dos cuchillas forman juntas las paredes de la ranura, así que se rectifican, se emparejan y se envían como par, y deben cambiarse como tal. Trabajar una cuchilla nueva contra una desgastada corta una ranura asimétrica, y una ranura asimétrica pliega fuera de escuadra: un defecto que se transparenta a través del forro precisamente en los productos que menos pueden permitírselo. Sustituir una sola cuchilla suele ser además un diagnóstico fallido: el fallo prematuro de una única cuchilla suele significar un impacto contra una inclusión o un error de reglaje, y ambos volverán a ocurrirle al recambio. Indíquenos cuántas estaciones de ranurado tiene la línea y cuántos pares consume en un mes típico y le cotizaremos una programación en lugar de una cantidad puntual, porque la mayoría de las líneas de cajas rígidas se sirven mejor con un pedido abierto que pidiendo cuando falla el último par.\n\n## GS05U o GS20U: decida por el cartón, no por la longitud de la tirada\n\nGS05U es más dura y se desgasta más despacio, lo que la hace adecuada para cartón gris virgen y limpio. GS20U cede dureza a cambio de tenacidad y sobrevive a las inclusiones, lo que la hace adecuada para cartón grueso y material reciclado. Los modos de fallo son distintos y en eso consiste toda la decisión: una cuchilla desgastada se rectifica y vuelve a servicio, una astillada se desecha. Si su mezcla de cartón incluye material reciclado en alguna medida, GS20U suele costar menos a lo largo de un año aunque mida menor dureza y muestre menos vida de filo en una prueba con cartón limpio. Elegir la calidad más dura disponible para cartón contaminado es la forma más habitual de destruir estas cuchillas.\n\n## Ranuras que se deshilachan: ¿filo o reglaje?\n\nUna cara de ranura deshilachada es la firma de un filo que ha dejado de seccionar la fibra y ha empezado a empujarla. Compruebe primero los filos. Si siguen agudos, revise la separación entre cuchillas respecto al calibre del cartón: demasiado abierta y el cartón se rasga en lugar de cortarse, demasiado cerrada y la cara se aplasta. El momento distingue las dos causas de forma fiable: los problemas de reglaje aparecen inmediatamente después de un cambio, los problemas de filo aparecen de forma gradual a lo largo de una tirada. Como la separación se ajusta al cartón en lugar de ser fija, un solo par cubre un rango de calibres, de modo que una línea que alterna entre cartón gris de 1,5 mm y de 3 mm se reajusta en lugar de cambiar de herramienta, siempre que el ancho de ranura siga dentro del rango.\n\n## Medidas y máquinas fuera de la lista\n\nLas cinco medidas de stock son las que más se piden, no un límite: longitudes, anchos y geometría de filo se fabrican según plano, y cualquier línea de ranurado en V de cartón gris o de ranurado de cajas rígidas entra en alcance en cuanto dispongamos de la geometría de la cuchilla. Si no tiene plano, envíe una cuchilla desgastada o fotografías con un calibre en el encuadre y le devolveremos un plano acotado para su aprobación antes de fabricar. Preferimos trabajar sobre su herramienta real antes que sobre una declaración de compatibilidad. Las medidas de stock se envían normalmente en pocos días laborables; las geometrías según plano requieren de 15 a 25 días laborables desde la aprobación del plano, y los pedidos repetidos contra un plano aprobado se cotizan el mismo día.",
+      "Cuchillas ranuradoras de carburo para ranurado en V de tableros grises en líneas rígidas y de cajas de regalo. Pares coincidentes para mano izquierda y derecha en GS05U y GS20U , con cinco tamaños listados.",
     link: "/products/box-slotting-knives",
     specs: [
       {
         label: "Material",
-        value: "Carburo de tungsteno de alta calidad",
+        value: "carburo de tungsteno",
       },
       {
         label: "Calidades",
-        value: "GS05U (desgaste) / GS20U (tenacidad)",
+        value: "GS05U o GS20U",
       },
       {
         label: "Longitud",
         value: "50 / 60 mm",
       },
       {
-        label: "Ancho",
+        label: "Anchura",
         value: "12 / 15 / 16 mm",
       },
       {
         label: "Espesor",
-        value: "2,0 / 2,2 mm",
+        value: "2.0 / 2.2 mm",
       },
       {
         label: "Suministro",
@@ -6784,10 +10352,8 @@ export const blades: Blade[] = [
     ],
     dimensionLabels: {
       col0: "Ítem",
-      col1: "L × A (mm)",
-      col2: "Espesor T (mm)",
-      caption:
-        "* Cinco medidas de stock, suministradas como pares de mano izquierda y derecha. Otras longitudes, anchos y geometrías de filo se fabrican según plano o mediante ingeniería inversa a partir de una cuchilla desgastada.",
+      col1: "L × W (mm)",
+      col2: "Espesor (mm)",
     },
     standardDimensions: [
       {
@@ -6816,310 +10382,70 @@ export const blades: Blade[] = [
         id: "2 / 2.2",
       },
     ],
-    steelGrades: {
-      intro:
-        "En cuchillas ranuradoras la decisión de calidad es desgaste frente a tenacidad, y es el cartón el que indica cuál necesita. El cartón gris virgen y limpio desgasta el filo; el cartón reciclado con inclusiones lo astilla.",
-      rows: [
-        {
-          grade: "GS05U",
-          hardness: "Mayor dureza, optimizada al desgaste",
-          bestFor:
-            "Cartón gris virgen estándar en tiradas largas de producción — la calidad por defecto",
-          tradeoff:
-            "Menos indulgente con las inclusiones; se astilla en lugar de desgastarse si el cartón está contaminado",
-        },
-        {
-          grade: "GS20U",
-          hardness: "Mayor tenacidad",
-          bestFor:
-            "Cartón grueso y cartón reciclado con impurezas u otras inclusiones",
-          tradeoff: "Menor vida de filo que GS05U en cartón limpio",
-        },
-      ],
-      outro:
-        "Si su mezcla de cartón incluye material reciclado en alguna medida, GS20U suele ganar en coste total aunque pierda en vida de filo: una cuchilla astillada se desecha, una desgastada se rectifica.",
-    },
     components: [
       {
         id: "matched-pairs",
-        tag: "FORMATO DE SUMINISTRO",
-        title: "Izquierda y derecha suministradas como par",
+        tag: "Formato de suministro",
+        title: "Pares coincidentes de mano izquierda y derecha",
         description:
-          "Las dos cuchillas forman juntas las paredes de la ranura, así que se rectifican, se emparejan y se envían como par. Trabajar una cuchilla nueva contra una desgastada produce una ranura asimétrica que pliega fuera de escuadra: un defecto que se transparenta a través del forro justo en los productos que menos pueden permitírselo.",
+          "Ordene las dos cuchillas juntas para que cada lado de la ranura en V pueda especificarse con su filo correspondiente.",
       },
       {
-        id: "clean-groove-edge",
-        tag: "CALIDAD SUPERFICIAL",
-        title: "Ranuras que no desgarran la cara",
+        id: "carbide-grades",
+        tag: "Opciones de materiales",
+        title: "Opciones de carburo GS05U y GS20U",
         description:
-          "La geometría de filo se rectifica para seccionar la fibra del cartón gris en lugar de empujarla, de modo que las paredes de la ranura quedan limpias y la capa exterior no se deshilacha. En cajas rígidas y de regalo, la ranura marca la diferencia entre un pliegue que parece hecho a máquina y uno que parece dañado.",
+          "Elija un grado orientado al desgaste o a la tenacidad según la tabla y el desgaste de sus cuchillos existentes.",
       },
       {
-        id: "adjustable-gap",
-        tag: "FLEXIBILIDAD DE PROCESO",
-        title: "Ajustable al calibre del cartón",
+        id: "drawing-based-pairs",
+        tag: "Dimensiones personalizadas",
+        title: "Pares de repuesto hechos según el dibujo",
         description:
-          "La separación entre cuchillas se ajusta al cartón que se procesa, de modo que un solo par cubre un rango de calibres en lugar de quedar fijado a un único espesor. Una línea que alterna entre cartón gris de 1,5 mm y de 3 mm se reajusta en lugar de cambiar de herramienta, siempre que el ancho de ranura siga dentro del rango.",
+          "Especifique el cuerpo de la cuchilla, el bisel y la mano de corte para su estación de ranurado en V existente. Cinco tamaños de referencia brindan a los compradores un punto de partida para repetir pedidos.",
       },
     ],
-    relatedBladeIds: [
-      "corrugated-slitter-scorer-blades",
-      "tungsten-carbide-slitter-knives",
-      "paper-straw-slitting-blades",
-    ],
-    rfqPlaceholder:
-      "Ejemplo: línea de ranurado en V para cajas rígidas, cuchillas de 50 × 15 × 2,2 mm izquierda y derecha. Procesando cartón gris de 2 mm, parte reciclado. Ancho de ranura 2 mm. Necesito 10 pares y una recomendación de calidad.",
+    relatedBladeIds: ["corrugated-slotter-knives"],
+    quoteRequirements:
+      "Envíe su modelo de máquina, plano o muestra de la cuchilla, espesor del tablero gris y la cantidad de pares que necesita.",
     faqs: {
       technical: [
         {
           question:
-            "¿Puedo sustituir solo una cuchilla del par cuando únicamente una está desgastada?",
+            "¿Para qué se utiliza una cuchilla ranuradora en V de caja rígida?",
           answer:
-            "Puede hacerlo, pero suele ser una falsa economía. Las dos cuchillas forman juntas las paredes de la ranura, así que una cuchilla nueva trabajando contra una desgastada corta una ranura asimétrica y el cartón pliega fuera de escuadra. En cajas rígidas y de regalo eso se transparenta a través del forro. Si una cuchilla del par ha fallado prematuramente, conviene averiguar por qué: un fallo prematuro de una sola cuchilla suele significar un impacto contra una inclusión o un problema de reglaje, y ambos volverán a ocurrirle al recambio.",
+            "Corta una ranura en el tablero gris para que el tablero pueda doblarse en la línea requerida en una caja rígida o de regalo. Para conocer las ranuras de las solapas en cajas de cartón corrugado, consulte [Cuchillas ranuradoras para corrugado](/products/corrugated-slotter-knives) .",
         },
         {
-          question: "GS05U o GS20U: ¿cómo elijo?",
+          question: "¿Las cuchillas para ranurar en V se suministran en pares?",
           answer:
-            "Por lo que hay en el cartón, no por la duración de la tirada. GS05U es más dura y se desgasta más despacio, lo que la convierte en la calidad adecuada para cartón gris virgen y limpio. GS20U es más tenaz y sobrevive a las inclusiones, lo que la convierte en la calidad adecuada para cartón grueso y material reciclado. Los modos de fallo son distintos y en eso consiste toda la decisión: una cuchilla desgastada se rectifica y vuelve a servicio, una astillada se desecha. Si su mezcla de cartón incluye material reciclado en alguna medida, GS20U suele costar menos a lo largo de un año.",
+            "Sí. Un par izquierdo y derecho coincidentes define ambas paredes de la ranura. Especifique las dos manos y la orientación de su máquina.",
+        },
+        {
+          question: "¿Cómo debo elegir entre GS05U y GS20U ?",
+          answer:
+            "GS05U es la opción orientada al desgaste y GS20U es la opción orientada a la tenacidad. Compare la composición de su tablero y si su borde existente se desgasta suavemente o se astilla.",
         },
         {
           question:
-            "Mis ranuras se deshilachan en la cara. ¿Es la cuchilla o el reglaje?",
+            "¿Los tamaños enumerados cubren cuchillas de ranurado en V personalizadas?",
           answer:
-            "Compruebe primero el filo. Una cara de ranura deshilachada es la firma de un filo que ha dejado de seccionar la fibra y ha empezado a empujarla, el mismo fallo que aparece como corte velloso en cualquier aplicación sobre cartón. Si los filos siguen agudos, revise la separación entre cuchillas respecto al calibre del cartón: demasiado abierta y el cartón se rasga en lugar de cortarse, demasiado cerrada y la cara se aplasta. Los problemas de reglaje suelen aparecer inmediatamente después de un cambio; los de filo, de forma gradual.",
-        },
-        {
-          question: "¿Pueden fabricar longitudes distintas de 50 y 60 mm?",
-          answer:
-            "Sí. Las medidas de stock son las que más se piden, no un límite: longitudes, anchos y geometría de filo se fabrican según plano. Si no dispone de plano, envíe una cuchilla desgastada o fotografías con un calibre en el encuadre y elaboraremos un plano acotado para su aprobación antes de fabricar.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Se cotizan por cuchilla o por par?",
-          answer:
-            "Por par, porque así es como cortan y como deben cambiarse. Indíquenos cuántas estaciones de ranurado tiene la línea y cuántos pares consume en un mes típico, y le cotizaremos una programación en lugar de una cantidad puntual: la mayoría de las líneas de cajas rígidas se sirven mejor con un pedido abierto que pidiendo cuando falla el último par.",
-        },
-        {
-          question: "¿Para qué máquinas ranuradoras suministran?",
-          answer:
-            "Las cuchillas se fabrican a la máquina, así que cualquier línea de ranurado en V de cartón gris o de ranurado de cajas rígidas entra en alcance en cuanto dispongamos de la geometría de la cuchilla. Envíe la marca y el modelo de la máquina junto con las dimensiones de las cuchillas que utiliza ahora —o una muestra desgastada— y las igualaremos. Preferimos trabajar sobre su herramienta real antes que sobre una declaración de compatibilidad.",
-        },
-        {
-          question: "¿Cuál es el plazo de entrega?",
-          answer:
-            "Las medidas de stock se envían normalmente en pocos días laborables desde la confirmación del pedido. Las geometrías según plano requieren de 15 a 25 días laborables desde la aprobación del plano. Los pedidos repetidos contra un plano aprobado se cotizan el mismo día, ya que la geometría queda archivada.",
-        },
-      ],
-    },
-  },
-  {
-    id: "paper-straw-slitting-blades",
-    name: "Cuchillas de Corte para Pajitas de Papel y Filtros",
-    fullName:
-      "Cuchillas circulares de carburo para pajitas de papel y varillas de filtro",
-    category: "slitter_knives",
-    sector: "converting",
-    categoryDisplay: "Cuchillas Cortadoras",
-    image:
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Recubrimiento Antiadherente",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
-    ],
-    galleryAlts: [
-      "Cuchilla circular de carburo para corte de pajitas de papel y varillas de filtro, cara completa y alojamiento central",
-      "Par de cuchillas circulares de carburo para corte de pajitas de papel, cara y alojamiento central",
-      "Detalle de la cara pulida a espejo y del filo de corte de una cuchilla para pajitas de papel",
-    ],
-    description:
-      "Cuchillas circulares de carburo antiadherentes para el corte de pajitas de papel y varillas de filtro. Diámetro exterior Φ88–Φ100, espesor 0,15–0,30 mm, en seis medidas de stock. El recubrimiento antiadherente resiste la acumulación de adhesivo de base acuosa, de modo que el canto de corte se mantiene escuadrado y sin deshilachar durante tiradas largas en máquinas de alta velocidad de pajitas y varillas de filtro.",
-    fullDescription:
-      "En una línea de pajitas de papel la cuchilla no suele fallar por desgaste. Falla porque recoge cola. El adhesivo de base acuosa se transfiere a la cara de la cuchilla, forma un cordón a lo largo del filo de corte y, a partir de ese momento, la cuchilla deja de cortar el tubo y empieza a arrastrarlo, que es exactamente lo que es un extremo de pajita deshilachado. El filo no es la variable que lo resuelve.\n\nPor eso estas cuchillas se especifican en torno a la liberación del adhesivo y no solo en torno a la dureza. Un sustrato de carburo mantiene el filo; el recubrimiento antiadherente mantiene limpia la cara para que el filo pueda seguir trabajando. En una línea con adhesivo de base acuosa, el recubrimiento aporta más a la calidad de corte que un punto adicional de dureza.\n\n## Las líneas de pajitas no son líneas de varilla de filtro\n\nLas dos aplicaciones comparten ascendencia de maquinaria y geometría de cuchilla, pero no sus condiciones de fallo. El corte de varilla de filtro en maquinaria tabaquera trabaja a muy alta velocidad sobre un material homogéneo y bien caracterizado. Las líneas de pajitas de papel son más recientes, procesan una gama más amplia de capas y gramajes de papel y utilizan adhesivos que varían entre fabricantes, de modo que la vida de la cuchilla en una línea de pajitas es mucho más sensible al adhesivo que al papel. Si está poniendo en marcha una línea nueva de pajitas, cuente con ajustar la especificación de cuchilla frente a su adhesivo y no frente a su papel.\n\n## Cuchillas finas, consecuencias reales\n\nCon 0,15 a 0,30 mm estas son cuchillas finas, y el espesor es una decisión de proceso. Una cuchilla más fina retira menos material y deja un extremo más escuadrado en tubo de pared delgada; una cuchilla más gruesa es más estable a velocidad y más tolerante con una máquina con excentricidad. Equivocarse aquí se manifiesta o bien como un extremo irregular o bien como una cuchilla que flexa y se desvía.\n\n## Aplicaciones\n\nMáquinas de bobinado y corte de pajitas de papel; máquinas de varilla de filtro para cigarrillos, incluidas plataformas Hauni; corte de tubo y mandril de papel en equipos de transformación de alta velocidad comparables.\n\n## Diagnóstico de un extremo de pajita deshilachado\n\nSi los extremos se deshilachan mientras el filo todavía se nota agudo, la causa es casi siempre acumulación de adhesivo y no desgaste. El adhesivo de base acuosa se transfiere a la cara de la cuchilla y forma un cordón a lo largo del filo; a partir de ahí la cuchilla arrastra el tubo en lugar de seccionarlo, y un tubo arrastrado se deshilacha. El filo que hay debajo puede estar perfectamente en servicio. Limpie la cara e inspecciónela al trasluz antes de cambiar la cuchilla: si el depósito es visible, la respuesta es un recubrimiento o un intervalo de limpieza, no una cuchilla más afilada. Perseguir esto como un problema de filo es la forma habitual en que una línea de pajitas consume cuchillas que no necesitaba sustituir.\n\n## El espesor es una elección de proceso\n\nCon 0,15 a 0,30 mm, el espesor no es una cota residual. Una cuchilla más fina retira menos material y deja un extremo más escuadrado en pajitas de pared delgada y pocas capas, y por eso es la elección en pajitas de gama alta. Una cuchilla más gruesa es más rígida, trabaja de forma más estable a velocidad y tolera la excentricidad del husillo, lo que la convierte en la opción más segura en maquinaria antigua o en tubo multicapa más grueso. Equivocarse produce o bien un extremo irregular o bien una cuchilla que flexa y se desvía, y los dos defectos no se parecen en nada: indíquenos el número de capas, el gramaje y la máquina y le haremos una recomendación en lugar de dejarle adivinar.\n\n## Herencia de varilla de filtro, realidad de la pajita\n\nMuchas líneas de pajitas se construyeron sobre maquinaria de varilla de filtro, y la geometría de cuchilla a menudo es intercambiable en cotas. Lo que no se transfiere es la lógica de especificación. El corte de varilla de filtro trabaja a muy alta velocidad sobre un material homogéneo y bien caracterizado; las líneas de pajitas procesan papeles más variados y, sobre todo, adhesivos que varían entre fabricantes. Una cuchilla que rinde en una máquina Hauni de varilla de filtro puede empastarse en horas en una línea de pajitas con otra cola. Especifique frente al adhesivo, no frente a la ascendencia de la máquina: el adhesivo es el dato más útil que puede darnos en esta aplicación y el que más compradores omiten.\n\n## Recubrimientos, rectificado y puesta en marcha de una línea nueva\n\nEl recubrimiento antiadherente es una capa superficial, y rectificar el filo la elimina justo donde más importa, de modo que las cuchillas recubiertas de este tipo se llevan hasta el final de su vida y se sustituyen en lugar de integrarse en un ciclo de rectificado. Si su economía favorece el rectificado, le cotizaremos carburo sin recubrir y usted acepta una limpieza de cara más frecuente como contrapartida. En una línea todavía en puesta en marcha, el primer paso útil es una pequeña cantidad de prueba con dos especificaciones —normalmente una cuchilla recubierta y un espesor distinto— ensayadas contra su adhesivo y su papel reales. Quince días de eso dicen más que cualquier comparación de fichas técnicas y fijan correctamente la especificación del pedido recurrente desde el principio. Las medidas de stock se envían por lo general en pocos días laborables; los diámetros, alojamientos y espesores a medida requieren de 15 a 25 días laborables desde la aprobación del plano, con algunos días adicionales para el ciclo de recubrimiento.",
-    link: "/products/paper-straw-slitting-blades",
-    introNote:
-      "La producción de pajitas de papel concentra hoy la mayor parte de la demanda de estas cuchillas. Si su línea trabaja con adhesivo de base acuosa, indíquenos cuál: predice la vida de la cuchilla en esta aplicación mejor que la especificación del papel.",
-    compatibleMachines: ["Hauni"],
-    specs: [
-      {
-        label: "Material",
-        value: "Carburo de tungsteno con recubrimiento antiadherente",
-      },
-      {
-        label: "Diámetro exterior",
-        value: "Φ88–Φ100 mm",
-      },
-      {
-        label: "Alojamiento",
-        value: "Φ15 / Φ16 / Φ45 mm",
-      },
-      {
-        label: "Espesor",
-        value: "0,15–0,30 mm",
-      },
-      {
-        label: "Función del recubrimiento",
-        value:
-          "Resiste la acumulación de adhesivo de base acuosa en la cara de la cuchilla",
-      },
-      {
-        label: "Aplicación",
-        value:
-          "Corte de pajitas de papel, corte de varilla de filtro, corte de tubo de papel",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Ítem",
-      col1: "DE ØD (mm)",
-      col2: "Alojamiento Ød (mm)",
-      col3: "Espesor T (mm)",
-      caption:
-        "* Seis medidas de stock. Otros diámetros, alojamientos y espesores se fabrican según plano: envíe el modelo de máquina, el número de capas de la pajita y el tipo de adhesivo y especificaremos la cuchilla en consecuencia.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ88",
-        id: "Φ16",
-        thickness: "0.26",
-      },
-      {
-        spec: "2",
-        od: "Φ89",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "3",
-        od: "Φ90",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "4",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.15",
-      },
-      {
-        spec: "5",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "6",
-        od: "Φ100",
-        id: "Φ45",
-        thickness: "0.20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "En trabajos con adhesivo, la superficie importa más que el sustrato. Elija el recubrimiento por el adhesivo que utiliza y después elija el sustrato por el papel.",
-      rows: [
-        {
-          grade: "Carburo + recubrimiento antiadherente",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Líneas de pajitas con adhesivo de base acuosa y corte de varilla de filtro — la especificación por defecto",
-          tradeoff:
-            "Precio unitario más alto; el recubrimiento es una capa consumible y no sobrevive a un rectificado",
-        },
-        {
-          grade: "Carburo sin recubrir",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Aplicaciones secas o de baja adherencia, y corte de tubo de papel sin adhesivo en la línea de corte",
-          tradeoff:
-            "Recoge adhesivo con rapidez en líneas encoladas; el canto de corte se deshilacha mucho antes de que el filo esté gastado",
-        },
-        {
-          grade: "Acero de herramientas",
-          hardness: "60–63 HRC",
-          bestFor:
-            "Pruebas, tiradas cortas y líneas de baja velocidad donde manda el coste",
-          tradeoff:
-            "Pierde el filo rápidamente a velocidades de línea de pajitas; no es viable en producción continua",
-        },
-      ],
-    },
-    components: [
-      {
-        id: "adhesive-release-coating",
-        tag: "TRATAMIENTO SUPERFICIAL",
-        title: "Recubierta para liberar el adhesivo, no solo por dureza",
-        description:
-          "En líneas con adhesivo de base acuosa la cuchilla falla por acumulación, no por desgaste. El recubrimiento antiadherente mantiene limpia la cara para que el filo siga cortando el tubo en lugar de arrastrarlo, que es el mecanismo real detrás de un extremo de pajita sin deshilachar.",
-      },
-      {
-        id: "thin-section-stability",
-        tag: "GEOMETRÍA DE CUCHILLA",
-        title: "0,15–0,30 mm, especificado según el corte",
-        description:
-          "El espesor es una elección de proceso, no un resto. Las cuchillas más finas retiran menos material y dejan un extremo más escuadrado en tubo de pared delgada; las más gruesas trabajan de forma más estable a velocidad y toleran la excentricidad de la máquina. Lo especificamos según su número de capas y su máquina en lugar de recurrir a un valor único.",
-      },
-      {
-        id: "straw-line-tuning",
-        tag: "INGENIERÍA DE APLICACIÓN",
-        title: "Ajustada al adhesivo, no solo al papel",
-        description:
-          "Las líneas de pajitas de papel varían mucho más en adhesivo que en papel, y la vida de la cuchilla sigue al adhesivo. Indíquenos cuál utiliza y especificaremos recubrimiento y geometría en consecuencia: es el dato más útil que puede darnos en esta aplicación.",
-      },
-    ],
-    relatedBladeIds: [
-      "tungsten-carbide-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "nonwoven-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Ejemplo: estación de corte de pajitas de papel, cuchilla Φ100 × Φ15 × 0,20 mm. Pajita de tres capas, kraft de 60 g/m², adhesivo de base acuosa. Las cuchillas se empastan al cabo de unas 6 horas y los extremos de la pajita se deshilachan. Necesito 50 unidades, recubiertas.",
-    faqs: {
-      technical: [
-        {
-          question:
-            "Los extremos de mis pajitas se deshilachan pero el filo de la cuchilla todavía se nota agudo. ¿Qué está pasando?",
-          answer:
-            "Casi con seguridad, acumulación de adhesivo. El adhesivo de base acuosa se transfiere a la cara de la cuchilla y forma un cordón a lo largo del filo de corte; a partir de ahí la cuchilla arrastra el tubo en lugar de seccionarlo, y un tubo arrastrado se deshilacha. El filo que hay debajo puede estar perfectamente en servicio. Limpie la cara e inspecciónela al trasluz antes de cambiar la cuchilla: si el depósito es visible, la respuesta es un recubrimiento o un intervalo de limpieza, no una cuchilla más afilada.",
-        },
-        {
-          question: "¿Debo utilizar 0,15 mm o 0,30 mm?",
-          answer:
-            "Depende del tubo y de la máquina. Una cuchilla más fina retira menos material y da un extremo más escuadrado en pajitas de pared delgada y pocas capas, y por eso es la elección en pajitas de gama alta. Una cuchilla más gruesa es más rígida, trabaja de forma más estable a velocidad y tolera la excentricidad del husillo, y por eso es la opción más segura en maquinaria antigua o en tubo multicapa más grueso. Indíquenos el número de capas, el gramaje y la máquina y le haremos una recomendación en lugar de dejarle adivinar.",
-        },
-        {
-          question: "¿Sobrevive el recubrimiento al rectificado?",
-          answer:
-            "No. El recubrimiento es una capa superficial, y rectificar el filo lo elimina justo donde más importa. En cuchillas recubiertas de este tipo, el enfoque práctico es llevarlas hasta el final de su vida y sustituirlas, en lugar de construir un ciclo de rectificado en torno a ellas. Si su economía favorece el rectificado, podemos cotizarle carburo sin recubrir y usted acepta una limpieza de cara más frecuente como contrapartida.",
+            "La tabla enumera cinco configuraciones de referencia. Se pueden especificar longitudes, anchos y biseles personalizados según el dibujo del portacuchillas instalado.",
         },
         {
           question:
-            "¿Son intercambiables las cuchillas de varilla de filtro y las de pajita de papel?",
+            "¿Qué debo comprobar si la cara del tablero gris se deshilacha?",
           answer:
-            "En cotas a menudo sí: el linaje geométrico es el mismo y muchas líneas de pajitas se construyeron sobre maquinaria de varilla de filtro. Lo que no se transfiere es la lógica de especificación. El corte de varilla de filtro trabaja a muy alta velocidad sobre un material homogéneo; las líneas de pajitas procesan papel variado y, sobre todo, adhesivo variado. Una cuchilla que rinde en una máquina Hauni de varilla de filtro puede empastarse en una línea de pajitas con otra cola. Especifique frente al adhesivo, no frente a la ascendencia de la máquina.",
-        },
-      ],
-      company: [
-        {
-          question: "¿Qué información necesitan para cotizar?",
-          answer:
-            "Diámetro exterior, alojamiento y espesor; el modelo de máquina; el número de capas de la pajita y el gramaje del papel; el tipo de adhesivo; y su intervalo actual de cambio. El adhesivo es el dato que más compradores omiten y el que mejor predice la vida de la cuchilla en esta aplicación, así que inclúyalo aunque no esté seguro de que importe.",
+            "Verifique que no haya bordes romos o astillados y confirme la configuración de la cuchilla para el grosor de la tabla. Un defecto que aparece inmediatamente después de un cambio de placa puede indicar un problema de configuración.",
         },
         {
           question:
-            "¿Pueden suministrar para una línea de pajitas que todavía estamos poniendo en marcha?",
+            "¿Qué debo enviar para una cotización de cuchilla ranuradora en V para cajas?",
           answer:
-            "Sí, y conviene contar con nosotros pronto. En una línea nueva, el primer paso útil es una pequeña cantidad de prueba con dos especificaciones —normalmente una cuchilla recubierta y un espesor distinto— ensayadas contra su adhesivo y su papel reales. Eso dice más en quince días que cualquier comparación de fichas técnicas, y fija correctamente desde el principio la especificación del pedido recurrente.",
-        },
-        {
-          question: "¿Cuáles son los plazos de entrega?",
-          answer:
-            "Las medidas de stock se envían por lo general en pocos días laborables. Los diámetros, alojamientos y espesores a medida requieren de 15 a 25 días laborables desde la aprobación del plano. Las cuchillas recubiertas añaden unos días sobre las no recubiertas por el ciclo de recubrimiento, así que téngalo en cuenta al planificar una primera prueba.",
+            "Envíe el modelo de la máquina, el dibujo de la cuchilla o la muestra y el número de pares. Incluya el grosor de la tabla y muestre los biseles y las caras de montaje para ambas manos de corte.",
         },
       ],
+      company: [],
     },
   },
 ];

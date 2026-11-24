@@ -204,7 +204,7 @@ const ContactRow = memo(function ContactRow({
         </span>
         <span
           className={cn(
-            "shrink-0 text-[10px] font-black tracking-wider px-1.5 py-0.5",
+            "shrink-0 text-[12px] font-black tracking-wider px-1.5 py-0.5",
             sm.cls
           )}
         >
@@ -229,7 +229,7 @@ const ContactRow = memo(function ContactRow({
         {iq ? (
           <span
             className={cn(
-              "text-[10px] font-semibold tracking-wide px-1.5 py-0.5 border",
+              "text-[12px] font-semibold tracking-wide px-1.5 py-0.5 border",
               selected
                 ? "border-primary-foreground/30 text-primary-foreground/80"
                 : "border-border text-muted-foreground"
@@ -243,7 +243,7 @@ const ContactRow = memo(function ContactRow({
 
         <div
           className={cn(
-            "flex items-center gap-2 text-[10px] font-mono shrink-0",
+            "flex items-center gap-2 text-[12px] font-mono shrink-0",
             selected ? "text-primary-foreground/60" : "text-muted-foreground"
           )}
         >
@@ -407,7 +407,7 @@ function DetailView({
         <div className="px-4 md:px-6 py-5 space-y-6">
           {/* ── 客户档案 ── */}
           <section>
-            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
+            <p className="text-[12px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
               客户档案
             </p>
             <div className="space-y-2">
@@ -438,11 +438,11 @@ function DetailView({
 
               <div className="flex items-center gap-3 pt-1 flex-wrap">
                 {iq && (
-                  <span className="text-[10px] font-black tracking-widest border border-border px-2 py-0.5 text-muted-foreground">
+                  <span className="text-[12px] font-black tracking-widest border border-border px-2 py-0.5 text-muted-foreground">
                     {iq}
                   </span>
                 )}
-                <span className="text-[10px] font-mono text-muted-foreground">
+                <span className="text-[12px] font-mono text-muted-foreground">
                   提交于 {fmtDate(contact.createdAt)}
                 </span>
               </div>
@@ -453,7 +453,7 @@ function DetailView({
 
           {/* ── 询盘内容 ── */}
           <section>
-            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
+            <p className="text-[12px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
               询盘内容
             </p>
             <div className="border-l-4 border-primary bg-muted/30 px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap text-foreground">
@@ -466,7 +466,7 @@ function DetailView({
             <>
               <Separator />
               <section>
-                <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
+                <p className="text-[12px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
                   技术图纸
                 </p>
                 <div className="border border-border bg-muted/20 p-4 flex items-start gap-4">
@@ -482,7 +482,7 @@ function DetailView({
                       {contact.attachmentSize ? " · " : ""}
                       {contact.attachmentName.split(".").pop()?.toUpperCase()}
                     </p>
-                    <p className="text-[10px] text-muted-foreground mt-1.5 leading-snug">
+                    <p className="text-[12px] text-muted-foreground mt-1.5 leading-snug">
                       已通过邮件发送 · 不存储于服务器
                     </p>
                   </div>
@@ -495,7 +495,7 @@ function DetailView({
 
           {/* ── 跟进时间轴（最新在上）── */}
           <section>
-            <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
+            <p className="text-[12px] font-black tracking-[0.25em] text-muted-foreground  mb-3">
               跟进时间轴
               {sortedFollowUps.length > 0 && (
                 <span className="ml-2 normal-case font-normal">
@@ -528,16 +528,16 @@ function DetailView({
                           <div className="flex items-center gap-2 mb-1 flex-wrap">
                             <span
                               className={cn(
-                                "text-[9px] font-black tracking-widest px-1.5 py-0.5",
+                                "text-[12px] font-black tracking-widest px-1.5 py-0.5",
                                 meta.cls
                               )}
                             >
                               {meta.label}
                             </span>
-                            <span className="text-[10px] font-semibold text-foreground">
+                            <span className="text-[12px] font-semibold text-foreground">
                               {fu.author}
                             </span>
-                            <span className="text-[10px] font-mono text-muted-foreground">
+                            <span className="text-[12px] font-mono text-muted-foreground">
                               {fmtShort(fu.createdAt)}
                             </span>
                           </div>
@@ -560,7 +560,7 @@ function DetailView({
 
       {/* ── 添加跟进记录（底部固定）── */}
       <div className="shrink-0 border-t bg-background p-4 space-y-3">
-        <p className="text-[10px] font-black tracking-[0.25em] text-muted-foreground ">
+        <p className="text-[12px] font-black tracking-[0.25em] text-muted-foreground ">
           添加跟进记录
         </p>
 
@@ -609,7 +609,7 @@ function DetailView({
 
           <div className="flex-1" />
 
-          <span className="text-[10px] text-muted-foreground font-mono hidden sm:block">
+          <span className="text-[12px] text-muted-foreground font-mono hidden sm:block">
             ⌘↵ 提交
           </span>
 
@@ -825,314 +825,320 @@ export default function Admin() {
         noIndex
       />
       <div className="h-screen flex flex-col overflow-hidden bg-background">
-      {/* ── Command Bar (main header) ── */}
-      <div className="shrink-0 bg-primary text-primary-foreground border-b border-primary/80 px-4 md:px-6 py-3 flex items-center gap-4 md:gap-6">
-        {/* Branding */}
-        <div className="font-black tracking-widest text-lg mr-6 shrink-0">
-          SUREAY <span className="text-primary-foreground/50">OS</span>
-        </div>
-
-        {statistics && (
-          <>
-            <div className="flex items-center gap-2 text-sm">
-              <Users className="h-3.5 w-3.5 opacity-60" />
-              <span className="font-black">{statistics.contacts.total}</span>
-              <span className="text-primary-foreground/60 text-xs">条询盘</span>
-              <span className="font-black text-amber-400 ml-1">
-                {statistics.contacts.pending}
-              </span>
-              <span className="text-primary-foreground/60 text-xs">
-                条待处理
-              </span>
-            </div>
-
-            <div className="w-px h-4 bg-primary-foreground/20 hidden sm:block" />
-
-            <div className="hidden sm:flex items-center gap-2 text-sm">
-              <Eye className="h-3.5 w-3.5 opacity-60" />
-              <span className="font-black">
-                {statistics.analytics.pageViews}
-              </span>
-              <span className="text-primary-foreground/60 text-xs">次浏览</span>
-              <span className="font-black text-emerald-400 ml-1">
-                {statistics.analytics.uniqueVisitors}
-              </span>
-              <span className="text-primary-foreground/60 text-xs">位访客</span>
-            </div>
-
-            {statistics.popularPages[0]?.page && (
-              <>
-                <div className="w-px h-4 bg-primary-foreground/20" />
-                <div className="hidden md:flex items-center gap-2 text-sm min-w-0">
-                  <TrendingUp className="h-3.5 w-3.5 opacity-60 shrink-0" />
-                  <span className="font-mono text-xs text-primary-foreground/70 truncate max-w-[200px]">
-                    {statistics.popularPages[0].page}
-                  </span>
-                  <span className="text-primary-foreground/60 text-xs shrink-0">
-                    热门页面
-                  </span>
-                </div>
-              </>
-            )}
-          </>
-        )}
-
-        <div className="ml-auto flex items-center gap-2">
-          {/* Tab switcher */}
-          <div className="flex border border-primary-foreground/30">
-            <button
-              onClick={() => setActiveTab("contacts")}
-              className={cn(
-                "px-3 py-1 text-xs font-black tracking-wider transition-colors",
-                activeTab === "contacts"
-                  ? "bg-primary-foreground text-primary"
-                  : "text-primary-foreground/70 hover:text-primary-foreground"
-              )}
-            >
-              询盘大厅
-            </button>
-            <button
-              onClick={() => setActiveTab("analytics")}
-              className={cn(
-                "px-3 py-1 text-xs font-black tracking-wider border-l border-primary-foreground/30 transition-colors",
-                activeTab === "analytics"
-                  ? "bg-primary-foreground text-primary"
-                  : "text-primary-foreground/70 hover:text-primary-foreground"
-              )}
-            >
-              流量监控
-            </button>
+        {/* ── Command Bar (main header) ── */}
+        <div className="shrink-0 bg-primary text-primary-foreground border-b border-primary/80 px-4 md:px-6 py-3 flex items-center gap-4 md:gap-6">
+          {/* Branding */}
+          <div className="font-black tracking-widest text-lg mr-6 shrink-0">
+            SUREAY <span className="text-primary-foreground/50">OS</span>
           </div>
 
-          <button
-            onClick={handleLogout}
-            className="flex items-center gap-1.5 text-xs text-primary-foreground/70 hover:text-primary-foreground transition-colors ml-2"
-          >
-            <LogOut className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline font-medium">退出</span>
-          </button>
-        </div>
-      </div>
-
-      {/* ── Main content area ── */}
-      <div className="flex flex-col flex-1 min-h-0">
-        {/* ── 询盘大厅：主从布局 ── */}
-        {activeTab === "contacts" && (
-          <div className="flex flex-1 min-h-0 overflow-hidden">
-            {/* LEFT PANE — inquiry list (hidden on mobile when a contact is selected) */}
-            <div
-              className={cn(
-                "w-full md:w-80 shrink-0 border-r flex flex-col min-h-0",
-                selectedId ? "hidden md:flex" : "flex"
-              )}
-            >
-              {/* List filter bar */}
-              <div className="shrink-0 border-b p-3 flex gap-2">
-                <div className="relative flex-1">
-                  <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
-                  <Input
-                    placeholder="搜索客户姓名/公司..."
-                    value={searchTerm}
-                    onChange={e => setSearchTerm(e.target.value)}
-                    className="pl-8 h-8 text-xs font-mono"
-                  />
-                </div>
-                <Select value={statusFilter} onValueChange={setStatusFilter}>
-                  <SelectTrigger className="w-[90px] h-8 text-xs font-mono">
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">全部</SelectItem>
-                    <SelectItem value="pending">待处理</SelectItem>
-                    <SelectItem value="replied">已回复</SelectItem>
-                    <SelectItem value="closed">已归档</SelectItem>
-                  </SelectContent>
-                </Select>
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8 shrink-0"
-                  onClick={() => fetchContacts(1)}
-                  disabled={loading}
-                  title="刷新"
-                >
-                  <RefreshCcw
-                    className={cn("h-3.5 w-3.5", loading && "animate-spin")}
-                  />
-                </Button>
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-8 w-8 shrink-0"
-                  onClick={() => exportToCSV(contacts)}
-                  disabled={contacts.length === 0}
-                  title="导出报表 (CSV)"
-                >
-                  <Download className="h-3.5 w-3.5" />
-                </Button>
+          {statistics && (
+            <>
+              <div className="flex items-center gap-2 text-sm">
+                <Users className="h-3.5 w-3.5 opacity-60" />
+                <span className="font-black">{statistics.contacts.total}</span>
+                <span className="text-primary-foreground/60 text-xs">
+                  条询盘
+                </span>
+                <span className="font-black text-amber-400 ml-1">
+                  {statistics.contacts.pending}
+                </span>
+                <span className="text-primary-foreground/60 text-xs">
+                  条待处理
+                </span>
               </div>
 
-              {/* List body */}
-              <div className="flex-1 overflow-y-auto">
-                {loading ? (
-                  <div className="p-3 space-y-3">
-                    {Array.from({ length: 6 }).map((_, i) => (
-                      <div key={i} className="space-y-2">
-                        <Skeleton className="h-4 w-32" />
-                        <Skeleton className="h-3 w-48" />
-                        <Skeleton className="h-3 w-24" />
-                      </div>
-                    ))}
-                  </div>
-                ) : contacts.length === 0 ? (
-                  <div className="p-6 text-center text-xs text-muted-foreground tracking-widest">
-                    暂无询盘记录
-                  </div>
-                ) : (
-                  <>
-                    {contacts.map(c => (
-                      <ContactRow
-                        key={c.id}
-                        contact={c}
-                        selected={c.id === selectedId}
-                        onClick={() => setSelectedId(c.id)}
-                      />
-                    ))}
+              <div className="w-px h-4 bg-primary-foreground/20 hidden sm:block" />
 
-                    {/* 加载更多 */}
-                    {hasMore && (
-                      <div className="p-3 border-t">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="w-full h-8 text-xs font-black tracking-wider"
-                          onClick={() => fetchContacts(page + 1)}
-                          disabled={loadingMore}
-                        >
-                          {loadingMore ? (
-                            <>
-                              <RefreshCcw className="h-3 w-3 mr-1.5 animate-spin" />
-                              加载中...
-                            </>
-                          ) : (
-                            "加载更多"
-                          )}
-                        </Button>
-                      </div>
-                    )}
-                  </>
+              <div className="hidden sm:flex items-center gap-2 text-sm">
+                <Eye className="h-3.5 w-3.5 opacity-60" />
+                <span className="font-black">
+                  {statistics.analytics.pageViews}
+                </span>
+                <span className="text-primary-foreground/60 text-xs">
+                  次浏览
+                </span>
+                <span className="font-black text-emerald-400 ml-1">
+                  {statistics.analytics.uniqueVisitors}
+                </span>
+                <span className="text-primary-foreground/60 text-xs">
+                  位访客
+                </span>
+              </div>
+
+              {statistics.popularPages[0]?.page && (
+                <>
+                  <div className="w-px h-4 bg-primary-foreground/20" />
+                  <div className="hidden md:flex items-center gap-2 text-sm min-w-0">
+                    <TrendingUp className="h-3.5 w-3.5 opacity-60 shrink-0" />
+                    <span className="font-mono text-xs text-primary-foreground/70 truncate max-w-[200px]">
+                      {statistics.popularPages[0].page}
+                    </span>
+                    <span className="text-primary-foreground/60 text-xs shrink-0">
+                      热门页面
+                    </span>
+                  </div>
+                </>
+              )}
+            </>
+          )}
+
+          <div className="ml-auto flex items-center gap-2">
+            {/* Tab switcher */}
+            <div className="flex border border-primary-foreground/30">
+              <button
+                onClick={() => setActiveTab("contacts")}
+                className={cn(
+                  "px-3 py-1 text-xs font-black tracking-wider transition-colors",
+                  activeTab === "contacts"
+                    ? "bg-primary-foreground text-primary"
+                    : "text-primary-foreground/70 hover:text-primary-foreground"
+                )}
+              >
+                询盘大厅
+              </button>
+              <button
+                onClick={() => setActiveTab("analytics")}
+                className={cn(
+                  "px-3 py-1 text-xs font-black tracking-wider border-l border-primary-foreground/30 transition-colors",
+                  activeTab === "analytics"
+                    ? "bg-primary-foreground text-primary"
+                    : "text-primary-foreground/70 hover:text-primary-foreground"
+                )}
+              >
+                流量监控
+              </button>
+            </div>
+
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-1.5 text-xs text-primary-foreground/70 hover:text-primary-foreground transition-colors ml-2"
+            >
+              <LogOut className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline font-medium">退出</span>
+            </button>
+          </div>
+        </div>
+
+        {/* ── Main content area ── */}
+        <div className="flex flex-col flex-1 min-h-0">
+          {/* ── 询盘大厅：主从布局 ── */}
+          {activeTab === "contacts" && (
+            <div className="flex flex-1 min-h-0 overflow-hidden">
+              {/* LEFT PANE — inquiry list (hidden on mobile when a contact is selected) */}
+              <div
+                className={cn(
+                  "w-full md:w-80 shrink-0 border-r flex flex-col min-h-0",
+                  selectedId ? "hidden md:flex" : "flex"
+                )}
+              >
+                {/* List filter bar */}
+                <div className="shrink-0 border-b p-3 flex gap-2">
+                  <div className="relative flex-1">
+                    <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-muted-foreground" />
+                    <Input
+                      placeholder="搜索客户姓名/公司..."
+                      value={searchTerm}
+                      onChange={e => setSearchTerm(e.target.value)}
+                      className="pl-8 h-8 text-xs font-mono"
+                    />
+                  </div>
+                  <Select value={statusFilter} onValueChange={setStatusFilter}>
+                    <SelectTrigger className="w-[90px] h-8 text-xs font-mono">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="all">全部</SelectItem>
+                      <SelectItem value="pending">待处理</SelectItem>
+                      <SelectItem value="replied">已回复</SelectItem>
+                      <SelectItem value="closed">已归档</SelectItem>
+                    </SelectContent>
+                  </Select>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8 shrink-0"
+                    onClick={() => fetchContacts(1)}
+                    disabled={loading}
+                    title="刷新"
+                  >
+                    <RefreshCcw
+                      className={cn("h-3.5 w-3.5", loading && "animate-spin")}
+                    />
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-8 w-8 shrink-0"
+                    onClick={() => exportToCSV(contacts)}
+                    disabled={contacts.length === 0}
+                    title="导出报表 (CSV)"
+                  >
+                    <Download className="h-3.5 w-3.5" />
+                  </Button>
+                </div>
+
+                {/* List body */}
+                <div className="flex-1 overflow-y-auto">
+                  {loading ? (
+                    <div className="p-3 space-y-3">
+                      {Array.from({ length: 6 }).map((_, i) => (
+                        <div key={i} className="space-y-2">
+                          <Skeleton className="h-4 w-32" />
+                          <Skeleton className="h-3 w-48" />
+                          <Skeleton className="h-3 w-24" />
+                        </div>
+                      ))}
+                    </div>
+                  ) : contacts.length === 0 ? (
+                    <div className="p-6 text-center text-xs text-muted-foreground tracking-widest">
+                      暂无询盘记录
+                    </div>
+                  ) : (
+                    <>
+                      {contacts.map(c => (
+                        <ContactRow
+                          key={c.id}
+                          contact={c}
+                          selected={c.id === selectedId}
+                          onClick={() => setSelectedId(c.id)}
+                        />
+                      ))}
+
+                      {/* 加载更多 */}
+                      {hasMore && (
+                        <div className="p-3 border-t">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="w-full h-8 text-xs font-black tracking-wider"
+                            onClick={() => fetchContacts(page + 1)}
+                            disabled={loadingMore}
+                          >
+                            {loadingMore ? (
+                              <>
+                                <RefreshCcw className="h-3 w-3 mr-1.5 animate-spin" />
+                                加载中...
+                              </>
+                            ) : (
+                              "加载更多"
+                            )}
+                          </Button>
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
+              </div>
+
+              {/* RIGHT PANE — detail (hidden on mobile when no contact selected) */}
+              <div
+                className={cn(
+                  "flex-1 flex flex-col min-h-0",
+                  selectedId ? "flex" : "hidden md:flex"
+                )}
+              >
+                {loading && !selectedContact ? (
+                  <DetailSkeleton />
+                ) : selectedContact ? (
+                  <DetailView
+                    key={selectedContact.id}
+                    contact={selectedContact}
+                    onBack={() => setSelectedId(null)}
+                    onStatusChange={handleStatusChange}
+                    onFollowUpAdded={handleFollowUpAdded}
+                  />
+                ) : (
+                  <DetailEmpty />
                 )}
               </div>
             </div>
+          )}
 
-            {/* RIGHT PANE — detail (hidden on mobile when no contact selected) */}
-            <div
-              className={cn(
-                "flex-1 flex flex-col min-h-0",
-                selectedId ? "flex" : "hidden md:flex"
-              )}
-            >
-              {loading && !selectedContact ? (
-                <DetailSkeleton />
-              ) : selectedContact ? (
-                <DetailView
-                  key={selectedContact.id}
-                  contact={selectedContact}
-                  onBack={() => setSelectedId(null)}
-                  onStatusChange={handleStatusChange}
-                  onFollowUpAdded={handleFollowUpAdded}
-                />
-              ) : (
-                <DetailEmpty />
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* ── 流量监控 ── */}
-        {activeTab === "analytics" && (
-          <div className="flex-1 overflow-y-auto">
-            <div className="p-6 max-w-6xl mx-auto">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-sm font-black tracking-[0.2em]  text-muted-foreground">
-                  页面访问日志
-                </h2>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={fetchAnalytics}
-                  disabled={loading}
-                  className="h-8 gap-2 text-xs"
-                >
-                  <RefreshCcw
-                    className={cn("h-3.5 w-3.5", loading && "animate-spin")}
-                  />
-                  刷新
-                </Button>
-              </div>
-
-              {loading ? (
-                <div className="space-y-3">
-                  {Array.from({ length: 8 }).map((_, i) => (
-                    <Skeleton key={i} className="h-10 w-full" />
-                  ))}
+          {/* ── 流量监控 ── */}
+          {activeTab === "analytics" && (
+            <div className="flex-1 overflow-y-auto">
+              <div className="p-6 max-w-6xl mx-auto">
+                <div className="flex justify-between items-center mb-6">
+                  <h2 className="text-sm font-black tracking-[0.2em]  text-muted-foreground">
+                    页面访问日志
+                  </h2>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={fetchAnalytics}
+                    disabled={loading}
+                    className="h-8 gap-2 text-xs"
+                  >
+                    <RefreshCcw
+                      className={cn("h-3.5 w-3.5", loading && "animate-spin")}
+                    />
+                    刷新
+                  </Button>
                 </div>
-              ) : analytics.length === 0 ? (
-                <p className="text-muted-foreground text-sm text-center py-12">
-                  暂无访问数据
-                </p>
-              ) : (
-                <div className="border border-border">
-                  <Table>
-                    <TableHeader>
-                      <TableRow className="bg-muted/30">
-                        <TableHead className="text-[10px] font-black tracking-widest ">
-                          事件
-                        </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest ">
-                          页面
-                        </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest ">
-                          IP 地址
-                        </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest  hidden lg:table-cell">
-                          用户代理
-                        </TableHead>
-                        <TableHead className="text-[10px] font-black tracking-widest ">
-                          时间
-                        </TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {analytics.map(r => (
-                        <TableRow key={r.id} className="text-xs">
-                          <TableCell>
-                            <span className="font-mono font-bold text-xs border border-border px-1.5 py-0.5">
-                              {r.eventType}
-                            </span>
-                          </TableCell>
-                          <TableCell className="font-mono max-w-[200px] truncate">
-                            {r.page ?? "—"}
-                          </TableCell>
-                          <TableCell className="font-mono text-muted-foreground">
-                            {r.ipAddress ?? "—"}
-                          </TableCell>
-                          <TableCell className="max-w-xs truncate text-muted-foreground hidden lg:table-cell">
-                            {r.userAgent ?? "—"}
-                          </TableCell>
-                          <TableCell className="font-mono text-muted-foreground whitespace-nowrap">
-                            {fmtShort(r.createdAt)}
-                          </TableCell>
+
+                {loading ? (
+                  <div className="space-y-3">
+                    {Array.from({ length: 8 }).map((_, i) => (
+                      <Skeleton key={i} className="h-10 w-full" />
+                    ))}
+                  </div>
+                ) : analytics.length === 0 ? (
+                  <p className="text-muted-foreground text-sm text-center py-12">
+                    暂无访问数据
+                  </p>
+                ) : (
+                  <div className="border border-border">
+                    <Table>
+                      <TableHeader>
+                        <TableRow className="bg-muted/30">
+                          <TableHead className="text-[12px] font-black tracking-widest ">
+                            事件
+                          </TableHead>
+                          <TableHead className="text-[12px] font-black tracking-widest ">
+                            页面
+                          </TableHead>
+                          <TableHead className="text-[12px] font-black tracking-widest ">
+                            IP 地址
+                          </TableHead>
+                          <TableHead className="text-[12px] font-black tracking-widest  hidden lg:table-cell">
+                            用户代理
+                          </TableHead>
+                          <TableHead className="text-[12px] font-black tracking-widest ">
+                            时间
+                          </TableHead>
                         </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </div>
-              )}
+                      </TableHeader>
+                      <TableBody>
+                        {analytics.map(r => (
+                          <TableRow key={r.id} className="text-xs">
+                            <TableCell>
+                              <span className="font-mono font-bold text-xs border border-border px-1.5 py-0.5">
+                                {r.eventType}
+                              </span>
+                            </TableCell>
+                            <TableCell className="font-mono max-w-[200px] truncate">
+                              {r.page ?? "—"}
+                            </TableCell>
+                            <TableCell className="font-mono text-muted-foreground">
+                              {r.ipAddress ?? "—"}
+                            </TableCell>
+                            <TableCell className="max-w-xs truncate text-muted-foreground hidden lg:table-cell">
+                              {r.userAgent ?? "—"}
+                            </TableCell>
+                            <TableCell className="font-mono text-muted-foreground whitespace-nowrap">
+                              {fmtShort(r.createdAt)}
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
       </div>
     </>
   );

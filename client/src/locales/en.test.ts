@@ -53,10 +53,22 @@ describe("locales/en.json", () => {
       existing.push(key);
       byNamespace[ns].set(value, existing);
     }
+    // These independently translated contexts intentionally share English copy.
+    // SEO/headline agreement and consistent specification labels are QA requirements.
+    const intentionalPairs = new Set([
+      "productDetail.decisiveSpecs.eyebrow|productDetail.drawings.eyebrow",
+      "productList.hero.headline|productList.seo.title",
+      // D03 requires the same inquiry action to use the same visible wording.
+      "cta.getQuote|cta.requestEngineeringQuote|cta.requestQuote",
+      "mixer.category.cta.button|mixer.category.cta.eyebrow|mixer.product.requestQuote",
+    ]);
     const offenders: string[] = [];
     for (const [ns, map] of Object.entries(byNamespace)) {
       for (const [value, keys] of map.entries()) {
-        if (keys.length > 1) {
+        if (
+          keys.length > 1 &&
+          !intentionalPairs.has([...keys].sort().join("|"))
+        ) {
           offenders.push(`[${ns}] "${value}" → ${keys.join(", ")}`);
         }
       }

@@ -93,6 +93,7 @@ export default function MixerCategoryPage() {
         </script>
       </Helmet>
       <Navbar />
+      <main>
 
       {/* 1 · Hero — plant scene + navy gradient + trust strip */}
       <section className="relative mt-[74px] h-[300px] lg:h-[380px] overflow-hidden border-b border-slate-200 bg-[#001229]">
@@ -115,20 +116,22 @@ export default function MixerCategoryPage() {
         />
         <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex flex-col justify-center">
           <div className="max-w-2xl">
-            <p className="text-[11px] font-semibold tracking-[0.28em] text-white/50 mb-4 uppercase">
-              {t("nav.mixerWearParts")}
-            </p>
-            <h1 className="text-[clamp(1.9rem,4.4vw,3rem)] font-black text-white tracking-tight leading-[1.05] mb-4">
+            {lang !== "en" && (
+              <p className="text-[14px] font-semibold tracking-[0.28em] text-white/80 mb-4 ">
+                {t("nav.mixerWearParts")}
+              </p>
+            )}
+            <h1 className="text-[34px] lg:text-[50px] font-black text-white tracking-tight leading-[1.05] mb-4">
               {meta.name}
             </h1>
-            <p className="text-white/75 text-[14px] lg:text-[16px] leading-relaxed max-w-xl">
+            <p className="text-description text-white/75 leading-relaxed max-w-xl">
               {content.heroTagline}
             </p>
             <ul className="hidden lg:flex flex-wrap gap-x-6 gap-y-2 mt-7">
               {trustItems.map(item => (
                 <li
                   key={item}
-                  className="font-mono text-[11px] text-white/60 tracking-widest"
+                  className="font-mono text-[14px] text-white/60 tracking-widest"
                 >
                   ■ {item}
                 </li>
@@ -149,17 +152,17 @@ export default function MixerCategoryPage() {
       {/* 2 · Products */}
       <section
         aria-label={t("mixer.category.productsAria")}
-        className="bg-white border-b border-slate-200"
+        className="site-section bg-white border-b border-slate-200"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-10 pb-16">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 pt-10 pb-16">
           <div className="border-b border-slate-200 pb-6 mb-10 flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-            <h2 className="text-[26px] lg:text-[32px] font-black text-[#001f4d] tracking-tight">
+            <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight">
               {t("mixer.category.allHeading").replace(
                 "{{name}}",
                 meta.name.toLowerCase()
               )}
             </h2>
-            <p className="text-[12px] text-slate-400 font-medium">
+            <p className="text-[14px] text-muted-foreground font-medium">
               {t("mixer.category.countLine").replace(
                 "{{count}}",
                 String(parts.length)
@@ -173,29 +176,31 @@ export default function MixerCategoryPage() {
       {/* 3 · Overview — unique category prose */}
       <section
         aria-label={t("mixer.category.overview.eyebrow")}
-        className="border-b border-slate-200 bg-slate-50"
+        className="site-section border-b border-slate-200 bg-slate-50"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
           <aside className="lg:col-span-4">
-            <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-              {t("mixer.category.overview.eyebrow")}
-            </p>
-            <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1]">
+            {lang !== "en" && (
+              <p className="font-mono text-[12px] text-muted-foreground tracking-[0.28em] mb-5 ">
+                {t("mixer.category.overview.eyebrow")}
+              </p>
+            )}
+            <h2 className="text-[30px] lg:text-[36px] font-black text-[#001f4d] tracking-tight leading-[1.1]">
               {content.overviewLead}
             </h2>
             <div className="mt-6 border-t border-slate-200 pt-4">
-              <p className="text-[13px] text-slate-600 leading-relaxed">
+              <p className="text-description text-slate-600 leading-relaxed">
                 {t("mixer.category.reviewedBy")}{" "}
                 <span className="font-bold text-[#001f4d]">
                   {contentReviewer.name}
                 </span>
                 , {contentReviewer.title}
               </p>
-              <p className="font-mono text-[10px] text-slate-400 tracking-[0.18em] mt-1.5 uppercase">
+              <p className="font-mono text-[12px] text-muted-foreground tracking-[0.18em] mt-1.5 ">
                 {t("mixer.category.lastReviewed")} · {contentLastReviewed}
               </p>
               <Link href="/about#certifications" asChild>
-                <a className="group inline-flex items-center gap-2 pb-1 mt-4 text-[13px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+                <a className="group inline-flex items-center gap-2 pb-1 mt-4 text-[16px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
                   {t("mixer.category.isoLink")}
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
                 </a>
@@ -206,7 +211,7 @@ export default function MixerCategoryPage() {
             {content.overviewBody.map((para, i) => (
               <p
                 key={i}
-                className="text-[16px] text-slate-700 leading-[1.75] max-w-[70ch]"
+                className="text-[18px] text-slate-700 leading-[1.75] max-w-[70ch]"
               >
                 {para}
               </p>
@@ -218,17 +223,19 @@ export default function MixerCategoryPage() {
       {/* 4 · Materials & grade selection */}
       <section
         aria-label={t("mixer.category.materials.eyebrow")}
-        className="border-b border-slate-200 bg-white"
+        className="site-section border-b border-slate-200 bg-white"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
           <aside className="lg:col-span-4">
-            <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-              {t("mixer.category.materials.eyebrow")}
-            </p>
-            <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
+            {lang !== "en" && (
+              <p className="font-mono text-[12px] text-muted-foreground tracking-[0.28em] mb-5 ">
+                {t("mixer.category.materials.eyebrow")}
+              </p>
+            )}
+            <h2 className="text-[30px] lg:text-[36px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
               {t("mixer.category.materials.heading")}
             </h2>
-            <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
+            <p className="text-description text-muted-foreground leading-[1.7] max-w-sm">
               {content.gradeNote}
             </p>
           </aside>
@@ -239,10 +246,10 @@ export default function MixerCategoryPage() {
                   key={row.part}
                   className="grid grid-cols-1 sm:grid-cols-[minmax(0,12rem)_1fr] gap-x-6 gap-y-1 px-5 py-3.5"
                 >
-                  <span className="font-black text-[14px] text-[#001f4d] tracking-tight">
+                  <span className="font-black text-[16px] text-[#001f4d] tracking-tight">
                     {row.part}
                   </span>
-                  <span className="text-[14px] text-slate-600 leading-snug">
+                  <span className="text-[16px] text-slate-600 leading-snug">
                     {row.material}
                   </span>
                 </div>
@@ -255,20 +262,22 @@ export default function MixerCategoryPage() {
       {/* 5 · How to order */}
       <section
         aria-label={t("mixer.order.eyebrow")}
-        className="border-b border-slate-200 bg-slate-50"
+        className="site-section border-b border-slate-200 bg-slate-50"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
-          <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
-            {t("mixer.order.eyebrow")}
-          </p>
-          <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-4">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
+          {lang !== "en" && (
+            <p className="font-mono text-[12px] text-muted-foreground tracking-[0.28em] mb-3 ">
+              {t("mixer.order.eyebrow")}
+            </p>
+          )}
+          <h2 className="font-black text-[30px] lg:text-[36px] text-[#001f4d] tracking-tight mb-4">
             {t("mixer.order.heading")}
           </h2>
-          <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-4">
+          <p className="text-description text-slate-600 leading-[1.7] max-w-3xl mb-4">
             {t("mixer.order.lead")}
           </p>
           <Link href="/news/mixer-wear-parts-oem-matching" asChild>
-            <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] mb-10 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+            <a className="group inline-flex items-center gap-2 pb-1.5 text-[16px] font-bold text-[#001f4d] mb-10 bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
               {t("mixer.order.articleLink")}
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
@@ -276,13 +285,13 @@ export default function MixerCategoryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
             {orderSteps.map(step => (
               <div key={step.tag} className="bg-white p-6 flex flex-col">
-                <span className="font-mono text-[11px] text-[#003a8c] tracking-[0.28em] mb-3">
+                <span className="font-mono text-[14px] text-[#003a8c] tracking-[0.28em] mb-3">
                   {step.tag}
                 </span>
                 <h3 className="font-black text-lg text-[#001f4d] tracking-tight leading-tight mb-3">
                   {step.title}
                 </h3>
-                <p className="text-[14px] text-slate-600 leading-[1.7]">
+                <p className="text-description text-slate-600 leading-[1.7]">
                   {step.body}
                 </p>
               </div>
@@ -295,13 +304,15 @@ export default function MixerCategoryPage() {
       {content.caseStudy && (
         <section
           aria-label={t("mixer.category.caseStudy.eyebrow")}
-          className="border-b border-slate-200 bg-white"
+          className="site-section border-b border-slate-200 bg-white"
         >
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
-            <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-3 uppercase">
-              {t("mixer.category.caseStudy.eyebrow")}
-            </p>
-            <h2 className="font-black text-[28px] lg:text-[34px] text-[#001f4d] tracking-tight mb-8 max-w-3xl">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20">
+            {lang !== "en" && (
+              <p className="font-mono text-[12px] text-muted-foreground tracking-[0.28em] mb-3 ">
+                {t("mixer.category.caseStudy.eyebrow")}
+              </p>
+            )}
+            <h2 className="font-black text-[30px] lg:text-[36px] text-[#001f4d] tracking-tight mb-8 max-w-3xl">
               {content.caseStudy.title}
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10">
@@ -309,13 +320,13 @@ export default function MixerCategoryPage() {
                 {content.caseStudy.paragraphs.map((para, i) => (
                   <p
                     key={i}
-                    className="text-[15px] text-slate-700 leading-[1.75]"
+                    className="text-[18px] text-slate-700 leading-[1.75]"
                   >
                     {para}
                   </p>
                 ))}
                 <Link href={content.caseStudy.articleLink} asChild>
-                  <a className="group inline-flex items-center gap-2 pb-1.5 text-[14px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
+                  <a className="group inline-flex items-center gap-2 pb-1.5 text-[16px] font-bold text-[#001f4d] bg-no-repeat [background-image:linear-gradient(#001f4d,#001f4d),linear-gradient(#cbd5e1,#cbd5e1)] [background-position:left_bottom,left_bottom] [background-size:0%_2px,100%_2px] hover:[background-size:100%_2px,100%_2px] transition-[background-size] duration-300">
                     {t("mixer.category.caseStudy.link")}
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-300" />
                   </a>
@@ -333,7 +344,7 @@ export default function MixerCategoryPage() {
                         decoding="async"
                       />
                     </div>
-                    <figcaption className="font-mono text-[10px] text-slate-500 leading-relaxed mt-2">
+                    <figcaption className="font-mono text-[12px] text-muted-foreground leading-relaxed mt-2">
                       {img.caption}
                     </figcaption>
                   </figure>
@@ -348,18 +359,24 @@ export default function MixerCategoryPage() {
       {oemMachines.length > 0 && (
         <section
           aria-label={t("mixer.oem.eyebrow")}
-          className="border-b border-slate-200 bg-white"
+          className="site-section border-b border-slate-200 bg-white"
         >
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
             <aside className="lg:col-span-4">
-              <p className="font-mono text-[10px] text-slate-400 tracking-[0.28em] mb-5 uppercase">
-                {t("mixer.oem.eyebrow")}
-              </p>
-              <h2 className="text-[28px] lg:text-[34px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
-                {t("mixer.oem.heading")}
+              {lang !== "en" && (
+                <p className="font-mono text-[12px] text-muted-foreground tracking-[0.28em] mb-5 ">
+                  {t("mixer.oem.eyebrow")}
+                </p>
+              )}
+              <h2 className="text-[30px] lg:text-[36px] font-black text-[#001f4d] tracking-tight leading-[1.1] mb-4">
+                {lang === "en"
+                  ? "Compatible Mixer & Plant Brands"
+                  : t("mixer.oem.heading")}
               </h2>
-              <p className="text-[14px] text-slate-500 leading-[1.7] max-w-sm">
-                {t("mixer.oem.plantNote")}
+              <p className="text-description text-muted-foreground leading-[1.7] max-w-sm">
+                {lang === "en"
+                  ? "Sureay manufactures replacement wear parts for the listed mixing plants. Share the plant model and a drawing or worn sample to confirm fit; Sureay is independent of the listed manufacturers."
+                  : t("mixer.oem.plantNote")}
               </p>
             </aside>
             <div className="lg:col-span-8 flex flex-col justify-center">
@@ -369,9 +386,9 @@ export default function MixerCategoryPage() {
                     key={m}
                     className="border border-slate-200 bg-slate-50 px-4 py-2"
                   >
-                    <span className="font-bold text-[13px] text-[#001f4d] tracking-tight">
+                    <span className="font-bold text-[16px] text-[#001f4d] tracking-tight">
                       {m}
-                      <sup className="text-[8px] font-normal text-slate-400 ml-px">
+                      <sup className="text-[12px] font-normal text-muted-foreground ml-px">
                         ®
                       </sup>
                     </span>
@@ -386,21 +403,23 @@ export default function MixerCategoryPage() {
       {/* 7 · Full-set RFQ CTA */}
       <section
         aria-label={t("mixer.category.cta.eyebrow")}
-        className="bg-[#001f4d]"
+        className="site-section bg-[#001f4d]"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
           <div>
-            <p className="font-mono text-[10px] text-white/40 tracking-[0.28em] mb-2 uppercase">
-              {t("mixer.category.cta.eyebrow")}
-            </p>
-            <p className="text-white text-lg lg:text-xl font-black tracking-tight max-w-2xl">
+            {lang !== "en" && (
+              <p className="font-mono text-[12px] text-white/80 tracking-[0.28em] mb-2 ">
+                {t("mixer.category.cta.eyebrow")}
+              </p>
+            )}
+            <p className={`text-lg lg:text-xl font-black tracking-tight max-w-2xl ${lang === "en" ? "text-[#001f4d]" : "text-white"}`}>
               {t("mixer.category.cta.lead")}
             </p>
           </div>
           <a
             href="#rfq"
             onClick={scrollToRfq}
-            className="shrink-0 inline-flex items-center gap-3 bg-white text-[#001f4d] hover:bg-slate-100 font-black text-sm tracking-widest px-6 py-4 rounded-none transition-colors duration-200"
+            className={`shrink-0 inline-flex items-center gap-3 font-black text-sm tracking-widest px-6 py-4 rounded-none transition-colors duration-200 ${lang === "en" ? "bg-[#001f4d] text-white hover:bg-[#0b4a8f]" : "bg-white text-[#001f4d] hover:bg-slate-100"}`}
           >
             {t("mixer.category.cta.button")}
             <ArrowRight className="w-4 h-4 shrink-0" />
@@ -412,7 +431,7 @@ export default function MixerCategoryPage() {
       {content.faq.length > 0 && (
         <section
           aria-label={t("mixer.faq.ariaLabel")}
-          className="bg-slate-50 border-b border-slate-200 py-14 lg:py-20"
+          className="site-section bg-slate-50 border-b border-slate-200 py-14 lg:py-20"
         >
           <ProductFAQ
             faqs={{ technical: content.faq, company: getMixerCompanyFaq(lang) }}
@@ -425,6 +444,7 @@ export default function MixerCategoryPage() {
       <div id="rfq">
         <ContactRFQ productName={meta.name} formLocation="mixer_parts" />
       </div>
+      </main>
       <Footer />
     </div>
   );

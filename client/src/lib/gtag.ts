@@ -63,11 +63,12 @@ export function trackLead(
 
   const email = user.email?.trim().toLowerCase();
   const phoneNumber = toE164(user.phone);
-  if (email || phoneNumber) {
+  if (localStorage.getItem("sureay_cookie_v2") === "granted" && (email || phoneNumber)) {
     window.gtag("set", "user_data", {
       ...(email ? { email } : {}),
       ...(phoneNumber ? { phone_number: phoneNumber } : {}),
     });
   }
   window.gtag("event", "generate_lead", params);
+  window.gtag("set", "user_data", {});
 }

@@ -1,292 +1,327 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blade-categories.ts
-// Target:    pt
-// Generated: 2026-09-20T07:57:07.811Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (pt).
 import type { BladeCategoryMeta } from "../blade-categories";
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
     slug: "slitter-knives",
     category: "slitter_knives",
-    title: "Facas de corte e lâminas circulares",
-    seoTitle:
-      "Facas rotativas para corte longitudinal e lâminas circulares para corte longitudinal",
-    shortName: "Lâminas de corte longitudinal",
+    title: "Facas de corte longitudinal e lâminas circulares",
+    seoTitle: "Facas rotativas e lâminas circulares para corte longitudinal",
+    shortName: "Facas de corte longitudinal",
     tagline:
-      "Lâminas rotativas retificadas com precisão para filmes, papel e folhas metálicas",
+      "Facas para corte de bandas, processamento de bobinas metálicas e conversão de papelão ondulado",
     heroImage: "/images/categories/slitter-knives-nav.webp",
     description:
-      "facas circulares de corte longitudinal para corte por cisalhamento, entalhe e corte com lâmina — filme, papel, não tecidos e folha metálica. Tolerância de ±0,002 mm. M2 HSS, D2, ASP23 PM e metal duro.",
-    specItems: [
-      {
-        label: "Tolerância de espessura",
-        value: "±0,002 mm",
-      },
-      {
-        label: "Desvio T.I.R.",
-        value: "≤0,02 mm",
-      },
-      {
-        label: "Materiais",
-        value: "M2 HSS · D2 · ASP23 PM · Metal duro",
-      },
-      {
-        label: "Revestimentos",
-        value: "TiN · DLC · Teflon",
-      },
-      {
-        label: "Modos de corte",
-        value: "Corte · Ranhura · Lâmina",
-      },
-      {
-        label: "Aplicações",
-        value: "Filme · Papel · Tecidos não tecidos · Folha metálica",
-      },
-    ],
+      "Explore facas cortadoras para filme, papel, não-tecidos, folhas de cobre e alumínio, bobinas de aço e baterias. Compare tipos de lâminas, anéis inferiores e opções de metal duro.",
   },
   {
     slug: "shredder-blades",
     category: "shredder_blades",
-    title: "Lâminas para trituradores e insertos de corte",
-    shortName: "Lâminas de triturador",
+    title: "Facas e peças de desgaste para trituradores",
+    shortName: "Facas para trituradores",
     tagline:
-      "Ferramentas de corte para trituradores de pneus de eixo duplo, eixo único e trituradores de pneus",
+      "Insertos de rotor, facas estacionárias, peneiras e fresas montadas em eixo",
     heroImage: "/images/categories/shredder-blades-nav.webp",
     description:
-      "facas para trituradores para serviços pesados, destinado à reciclagem de plástico, metal, pneus e baterias. D2/SKD11/Cr12MoV, com tratamento térmico criogênico e a vácuo. Compatibilidade direta com peças originais (OEM), em versões de eixo duplo e eixo único.",
-    specItems: [
-      {
-        label: "Materiais",
-        value: "D2 · SKD11 · Cr12MoV",
-      },
-      {
-        label: "Dureza",
-        value: "58–62 HRC",
-      },
-      {
-        label: "Tratamento térmico",
-        value: "Criogênico + Vácuo",
-      },
-      {
-        label: "Plataformas",
-        value: "De dois eixos · De um eixo",
-      },
-      {
-        label: "Aplicações",
-        value: "Plástico · Metal · Pneu · Bateria",
-      },
-      {
-        label: "Ajuste",
-        value: "Substituição direta de peças originais (OEM)",
-      },
-    ],
-  },
-  {
-    slug: "granulator-blades",
-    category: "granulator_blades",
-    title:
-      "Lâminas de redução de tamanho para plástico: granulador, peletizador e compactador",
-    seoTitle: "Lâminas para granuladores, peletizadores e compactadores",
-    shortName: "Lâminas para granuladores",
-    tagline: "Qualidade maximizada do material moído, MTBR prolongado",
-    heroImage: "/images/categories/granulator-blades-nav.webp",
-    description:
-      "Escolha entre rotores de granulador e facas de leito, rotores de peletizador de fios, facas de corte na face da matriz, lâminas de compactador e raspadores de filtro de material fundido.",
-    specItems: [
-      {
-        label: "Materiais",
-        value: "H13 · D2 · M2 HSS · Metal duro",
-      },
-      {
-        label: "Geometria",
-        value: "Ângulo de inclinação otimizado",
-      },
-      {
-        label: "Máquinas",
-        value: "Rotativo · Garra · Funil · Peletização",
-      },
-      {
-        label: "Benefício",
-        value: "Menor carga no motor · Menos poeira",
-      },
-      {
-        label: "Aplicações",
-        value: "Resíduos plásticos · Redução de tamanho",
-      },
-      {
-        label: "Reciclável",
-        value: "Sim — vários ciclos",
-      },
-    ],
+      "Escolha cortadores de vários eixos para reciclagem geral, sucata, pneus ou pré-trituração de baterias. Encontre insertos de rotor de eixo único, facas estacionárias e telas.",
+    selectionGuide: {
+      title: "Guia de seleção de lâmina trituradora",
+      articles: [
+        {
+          id: "single-shaft-shredder-blade-face-profile-guide",
+          width: 800,
+          height: 800,
+          smallerWidths: [320, 400, 640],
+        },
+        {
+          id: "tire-shredder-blade-wear-steel-cord",
+          width: 2496,
+          height: 1696,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "granulator-rotor-bed-knife-configuration",
+          width: 1672,
+          height: 941,
+          smallerWidths: [400, 640, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "twin-and-multi-shaft-cutters",
+          title: "Cortadores multieixos por aplicação",
+          description:
+            "Comece com o que vai para a trituradora. Em seguida, use o modelo da máquina e a pilha de cortadores para identificar a substituição correta.",
+          productIds: [
+            "twin-shaft-blades-recycling",
+            "multi-shaft-blades-metal",
+            "tire-shredder-blades",
+            "twin-shaft-blades-battery",
+          ],
+        },
+        {
+          id: "single-shaft-parts",
+          title: "Peças para triturador e granulador de eixo único",
+          description:
+            "As facas do rotor cortam as facas estacionárias do estator. A tela controla qual material pode sair da câmara.",
+          productIds: [
+            "single-shaft-shredder-blades",
+            "single-shaft-bed-knives",
+            "shredder-screens",
+            "granulator-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Inclua o modelo da máquina, número da peça, matéria-prima e quantidade. Anexe um cortador ou desenho de tela, se disponível.",
+    },
   },
   {
     slug: "log-saw-blades",
     category: "log_saw_blades",
-    title: "Lâminas de serra para papel-toalha e troncos",
-    shortName: "Lâminas de serra para troncos",
-    tagline: "Sem poeira. Corte de lenços de papel e guardanapos sem rebarbas.",
+    title: "Lâminas de serra para rolos de papel tissue e não tecido",
+    shortName: "Lâminas de serra para rolos",
+    tagline: "Lâminas circulares de reposição por material do rolo",
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
-      "Lâmina circular lâminas de serra para bobinas para a conversão de papel tissue, papel-toalha e guardanapos. Compatível com CBN, desvio controlado, revestimento antifricção para perfuração sem poeira.",
-    routingCopy:
-      "Existem duas famílias de lâminas para serras de rolos, diferenciadas de acordo com o que você está cortando. Os rolos de papel-toalha e lenços de papel nas máquinas Perini, PCMC, Casmatic, Gambini e Bretting utilizam as lâminas para papel-toalha com diâmetro de Ø610–1200 mm. Os rolos de não tecidos e toalhas umedecidas utilizam lâminas menores, com diâmetro de Ø350–700 mm e um chanfro diferente. Escolha a que for compatível com a sua linha de produção ou envie-nos o modelo da máquina, e nós indicaremos a opção correta.",
-    oemExcludeList: ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
-    specItems: [
-      {
-        label: "Perfil",
-        value: "Compatível com CBN",
-      },
-      {
-        label: "Superfície",
-        value: "Tratamento antifricção",
-      },
-      {
-        label: "Qualidade do corte",
-        value: "Perfuração sem poeira",
-      },
-      {
-        label: "Velocidade",
-        value: "Otimizado para altas velocidades de linha",
-      },
-      {
-        label: "Aplicações",
-        value: "Lenço de papel · Papel-toalha · Guardanapo",
-      },
-      {
-        label: "Serrilha",
-        value: "Geometria personalizada disponível",
-      },
-    ],
+      "Compare as lâminas circulares para cortar rolos de papel higiênico, papel-toalha e não tecido para lenços. Identifique o material do rolo e o modelo da serra para selecionar a lâmina.",
+    seoTitle: "Lâminas de serra para rolos de papel tissue e não tecido",
+    selectionGuide: {
+      title: "Guia de seleção de lâminas para corte de rolos",
+      articles: [
+        {
+          id: "log-saw-blade-chipping-causes-prevention",
+          width: 1600,
+          height: 878,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "log-saw-blade-bevel-angles",
+          width: 1108,
+          height: 1108,
+          smallerWidths: [320, 400, 480, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "tissue-and-towel-logs",
+          title: "Rolos de papel higiênico e papel-toalha",
+          productIds: ["tissue-log-saw-blades"],
+        },
+        {
+          id: "nonwoven-logs",
+          title: "Rolos de não tecido e de material para lenços",
+          productIds: ["nonwoven-log-saw-blades"],
+        },
+      ],
+      quotePrompt:
+        "Inclua o modelo da serra, o material do rolo, o diâmetro da lâmina, o furo e o layout do pino de acionamento e anexe um desenho, se disponível.",
+    },
   },
   {
     slug: "shear-blades",
     category: "shear_blades",
-    title: "Lâminas de corte e guilhotina",
-    seoTitle: "Lâminas de guilhotina e facas de corte industrial",
-    shortName: "Lâminas de corte",
-    tagline:
-      "Lâminas para tesouras guilhotina, conjuntos para corte de metal facas de cisalhamento e papel",
+    title: "Facas para tesouras de metal",
+    seoTitle: "Facas de cisalha para chapas, bobinas metálicas e sucata",
+    shortName: "Facas para tesouras de metal",
+    tagline: "Substituição de facas por estação de corte de metal",
     heroImage: "/images/categories/shear-blades-nav.webp",
     description:
-      "Lâminas de guilhotina para tesouras de chapas metálicas, cortadores de papel e cortadoras de três facas. Lâminas com revestimento D2, 6CrW2Si, HSS e TCT, retificadas conforme desenho ou amostra.",
-    specItems: [
-      {
-        label: "Construção de bordas",
-        value: "Inserto TCT · Bimetálico · HSS maciço",
-      },
-      {
-        label: "Planicidade da superfície",
-        value: "Manutenção em todo o comprimento",
-      },
-      {
-        label: "Formato de fornecimento",
-        value: "Conjuntos OEM compatíveis",
-      },
-      {
-        label: "Máquinas",
-        value:
-          "Gilhotina hidráulica · Cortador de chapas · Cortador de três lâminas",
-      },
-      {
-        label: "Aplicações",
-        value: "Chapa de aço · Papel · Papelão · Bloco de livro",
-      },
-      {
-        label: "Reciclável",
-        value: "Sim",
-      },
-    ],
+      "Escolha facas de guilhotina, tesoura voadora e picadora de sucata, além de facas de cisalhamento fixas e de sucata de jacaré. Combine a posição da máquina e da faca.",
+    selectionGuide: {
+      title: "Guia de seleção de lâmina de cisalhamento de metal",
+      articles: [
+        {
+          id: "guillotine-shear-blade-clearance-setting",
+          width: 1200,
+          height: 960,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "guillotine-shear-blade-parallelism",
+          image: "/images/news/guillotine-shear-blade-parallelism-cover.webp",
+          width: 990,
+          height: 742,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "metal-shearing",
+          title: "Chapas metálicas, linhas de bobinas e laminadores",
+          description:
+            "Escolha facas de cisalhamento independentes para chapas metálicas, facas de cisalhamento voadoras para laminação ou facas picadoras de corte de borda.",
+          productIds: [
+            "guillotine-shear-blades",
+            "flying-shear-blades",
+            "scrap-chopper-blades",
+          ],
+        },
+        {
+          id: "scrap-recycling-shears",
+          title: "Tesouras para reciclagem de sucata",
+          description:
+            "Identifique uma tesoura jacaré de mandíbula articulada ou uma tesoura de sucata estacionária antes de escolher a faca de reposição.",
+          productIds: ["metal-shear-knives", "stationary-scrap-shear-blades"],
+        },
+      ],
+      quotePrompt:
+        "Inclua o modelo da máquina, posição da lâmina, material e espessura ou tamanho da seção e anexe o desenho da faca.",
+    },
   },
   {
-    slug: "cold-saw-blades",
-    category: "cold_saw_blades",
-    title: "Lâminas para serras a frio para metal",
-    shortName: "Lâminas de serra a frio",
+    slug: "paper-cutting-knives",
+    category: "paper_cutting",
+    title: "Facas de corte e refile de papel",
+    shortName: "Facas de corte de papel",
     tagline:
-      "Lâminas circulares de HSS e metal duro para corte a frio de aço e tubos",
-    heroImage:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
+      "Facas para pilhas de papel, folhas de teia e acabamento de impressão",
+    heroImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     description:
-      "Lâminas de serra circular a frio para corte sem rebarbas de tubos de aço, barras maciças e perfis estruturais. HSS-E (M35/M42) e com pontas de metal duro TCT, para corte a seco, com lubrificação abundante ou MQL.",
-    specItems: [
-      {
-        label: "Materiais",
-        value: "HSS-E M35/M42 · TCT com ponta de metal duro",
-      },
-      {
-        label: "Qualidade do corte",
-        value: "Sem rebarbas, sem zona afetada pelo calor",
-      },
-      {
-        label: "Condições de corte",
-        value: "A seco · Refrigeração por injeção · MQL",
-      },
-      {
-        label: "Aplicações",
-        value: "Tubo de aço · Barra maciça · Perfil estrutural",
-      },
-      {
-        label: "Formato de fornecimento",
-        value:
-          "Substituição OEM ou diâmetro externo/diâmetro interno/passo personalizados",
-      },
-      {
-        label: "Reciclável",
-        value: "Sim — vários ciclos",
-      },
-    ],
+      "Escolha facas de guilhotina de papel, facas cortadoras, lâminas aparadoras de três facas e facas de grampeador. Combine a estação de corte, a posição da faca e o desenho da máquina.",
+    selectionGuide: {
+      title: "Guia de seleção de faca para corte de papel",
+      articles: [
+        {
+          id: "paper-guillotine-knives-selection-maintenance-guide",
+          width: 1200,
+          height: 537,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "custom-length-guillotine-paper-cutter-blades",
+          width: 1122,
+          height: 1402,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "paper-cutting",
+          title: "Corte de pilha de papel e folhas de teia",
+          description:
+            "Distinguir o corte de pilha de papel fixado do corte transversal de folha contínua em folhas.",
+          productIds: ["paper-cutting-blades", "paper-sheeter-knives"],
+        },
+        {
+          id: "print-finishing",
+          title: "Acabamento de livro e impressão",
+          description:
+            "Escolha o conjunto de facas para um aparador de três facas ou linha de costura de lombada. Confirme as posições frontal, lateral, superior e inferior.",
+          productIds: [
+            "three-knife-trimmer-blades",
+            "saddle-stitcher-trimmer-knives",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Inclua o modelo e a versão da máquina, as posições das facas, as especificações do papel ou cartão e os desenhos originais das facas.",
+    },
   },
   {
-    slug: "custom-profile",
+    slug: "other-custom-blades",
     category: "custom_profile",
-    title: "Lâminas personalizadas e com formatos especiais",
-    shortName: "Lâminas personalizadas",
-    tagline:
-      "Qualquer geometria · qualquer liga · a partir de arquivos DXF, DWG ou amostra",
+    title: "Outras facas e facas sob medida",
+    shortName: "Outras e sob medida",
+    tagline: "Peças de corte específicas do processo e perfis personalizados",
     heroImage: "/images/products/blades/special-shaped-knife.webp",
     description:
-      "Lâminas industriais com perfis personalizados e formatos especiais, fabricadas a partir de seus desenhos em DXF/DWG/STEP ou amostras físicas. Opções em D2, H13, PM-HSS e metal duro maciço com tolerâncias de ±0,02 mm — qualquer perfil, qualquer setor.",
+      "Encontre lâminas compactadoras de corte, raspadores de filtro de fusão, facas de pelotização e perfis personalizados por processo ou tipo de peça.",
+    selectionGuide: {
+      title: "Guia de seleção de faca de processo",
+      articles: [
+        {
+          id: "cutter-compactor-blade-film-vs-flake-wear",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "how-to-spec-die-face-cutting-knives",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+          width: 1280,
+          height: 720,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "products",
+          title: "Outras facas e facas sob medida",
+          productIds: [
+            "cutter-compactor-blades",
+            "continuous-melt-filter-scraper-blades",
+            "strand-pelletizer-rotors",
+            "die-face-cutting-knives",
+            "special-shaped-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Inclua o processo, modelo da máquina, posição da peça e um desenho ou dimensões de amostra.",
+    },
   },
   {
     slug: "wood-chipper-blades",
     category: "wood_chipper",
-    title: "Lâminas para trituradores de madeira",
-    shortName: "Lâminas para trituradores de madeira",
-    tagline:
-      "Lâminas para trituradores de tambor e disco para silvicultura, biomassa e reciclagem de madeira",
+    title: "Facas e contrafacas para picadores de madeira",
+    shortName: "Facas para picadores de madeira",
+    tagline: "Facas móveis e contrafacas estacionárias",
     heroImage:
       "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
     description:
-      "Lâminas para trituradores de tambor e disco para serviços pesados, fabricadas em aço D2, Cr12MoV e aço com ponta de metal duro TCT. Submetidas a tratamento térmico a vácuo até HRC 57–62, com tratamento criogênico profundo. Retificadas com precisão, com tolerância de espessura de ±0,05 mm, para garantir uma geometria limpa e uniforme das lascas.",
-    specItems: [
-      {
-        label: "Materiais",
-        value:
-          "Aço de alto teor de carbono · D2/Cr12MoV · TCT com ponta de metal duro",
-      },
-      {
-        label: "Dureza",
-        value: "HRC 55–58 (padrão) · HRC 58–62 (D2) · HRA 89–91 (TCT)",
-      },
-      {
-        label: "Tolerância de espessura",
-        value: "±0,05 mm",
-      },
-      {
-        label: "Aplicações",
-        value:
-          "Trituradores de tambor · Trituradores de disco · Trituradores de biomassa para árvores inteiras",
-      },
-      {
-        label:
-          "Compatibilidade com fabricantes de equipamentos originais (OEM)",
-        value: "Bandit · Vermeer · Morbark · Peterson · Doppstadt · Jenz",
-      },
-      {
-        label: "Reciclável",
-        value: "Sim — 8 a 12 ciclos (têmpera completa)",
-      },
-    ],
+      "Encontre facas picadoras móveis e bigornas estacionárias para picadores de madeira de tambor e disco. Compare suas funções e, em seguida, combine o substituto com a máquina.",
+    seoTitle:
+      "Facas e contrafacas para picadores de madeira a tambor e a disco",
+    selectionGuide: {
+      title: "Guia de seleção de faca picadora de madeira",
+      articles: [
+        {
+          id: "wood-chipper-blade-wear-patterns",
+          width: 1149,
+          height: 766,
+          smallerWidths: [320, 400, 640, 800],
+        },
+        {
+          id: "wood-chipper-knife-sharpening-guide",
+          width: 1536,
+          height: 1024,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "moving-chipper-knives",
+          title: "Movendo facas picadoras",
+          productIds: ["wood-chipper-blades"],
+        },
+        {
+          id: "stationary-anvils",
+          title: "Bigornas Estacionárias",
+          productIds: ["wood-chipper-anvils"],
+        },
+      ],
+      quotePrompt:
+        "Inclua o modelo e número de série do picador, tipo de tambor ou disco, posição da faca ou bigorna e um desenho ou dimensões de amostra.",
+    },
   },
 ];

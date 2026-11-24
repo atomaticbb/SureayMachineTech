@@ -2,6 +2,8 @@
  * Blade Data Structure - Source of Truth for BladeListPage and BladeDetail
  */
 
+import { COMPLETE_CATALOG_URL } from "../lib/catalogPdf";
+
 // ===== SHARED TYPES =====
 
 /** Key spec row shown in ProductCard and DecisiveSpecs table */
@@ -18,10 +20,14 @@ export interface BladeComponent {
   description: string;
   image?: string;
   link?: string;
+  relatedBladeIds?: string[];
 }
+
+export const ITEM_NO_COLUMN = "Item No.";
 
 /** One row in the Common Standard Dimensions table (ComprehensiveData) */
 export interface StandardDimension {
+  itemNo?: string; // Stable Sureay catalog identifier
   spec?: string; // Optional first column: e.g. "450 * 51 * 12/10"
   dimension?: string; // Alternative to od: full dimension spec "L × W × T"
   od?: string; // Outer Diameter (or Length for straight blades)
@@ -44,8 +50,9 @@ export type BladeCategoryType =
   | "shredder_blades" // Twin-shaft · single-shaft · rubber shredder · scrap chopper
   | "granulator_blades" // Plastic granulator / crusher knives
   | "log_saw_blades" // Tissue / log circular saw blades
-  | "shear_blades" // Guillotine shear · metal shear knives · paper trim blades
-  | "cold_saw_blades" // Metal cold circular saw blades
+  | "shear_blades" // Metal shearing and coil-line knives
+  | "paper_cutting" // Paper sheeters and print-finishing knives
+  | "cold_saw_blades" // Retired; retained for existing locale data types
   | "wood_chipper" // Drum chipper · disc chipper · biomass chipper knives
   | "custom_profile"; // Custom profile / special-shaped blades
 
@@ -60,18 +67,31 @@ export type BladeSectorType =
   | "other";
 
 // ===== MAIN BLADE INTERFACE =====
+interface BladeImageDimensions {
+  width: number;
+  height: number;
+  smallerWidths: number[]; // Each has a matching -{width}w.webp asset.
+}
+
 export interface Blade {
   // ── List page (always present) ───────────────────────────────────────────
   id: string;
   name: string;
   fullName: string;
+  seoTitle?: string; // English search title; product metadata stays in this catalog.
+  seoDescription?: string; // Search snippet when it differs from the catalog-card copy.
+  legacyLocaleSeoTitle?: string; // Existing fallback title for languages without an SEO entry.
   category: BladeCategoryType;
   sector: BladeSectorType;
   categoryDisplay: string;
   image: string;
+  imagePending?: boolean; // Approved empty photo slot; excluded from product image schema
+  imageDimensions?: BladeImageDimensions;
   description: string;
   link: string;
   specs: BladeSpec[]; // Key specs: ProductCard + DecisiveSpecs table
+
+  draft?: true;
 
   // ── Optional list-page decorators ────────────────────────────────────────
   badge?: string;
@@ -85,6 +105,7 @@ export interface Blade {
     | "teal";
 
   // ── Detail page ──────────────────────────────────────────────────────────
+  specificationImageDimensions?: BladeImageDimensions;
   gallery?: string[]; // [0–3] thumbnail track · [4] DecisiveSpecs · [5] ComprehensiveData
   galleryAlts?: string[]; // per-image alt text, parallel to `gallery`; falls back to fullName/name when absent
   fullDescription?: string; // PageMeta description (longer copy)
@@ -101,6 +122,33 @@ export interface Blade {
   components?: BladeComponent[]; // TechnicalAudit cards
   componentsIntro?: string; // optional lede paragraph above the TechnicalAudit card grid
   standardDimensions?: StandardDimension[]; // ComprehensiveData table
+  detailLayout?: {
+    seoTitle?: string;
+    heroAlt?: string;
+    additionalHeroImages?: {
+      src: string;
+      alt: string;
+      dimensions: BladeImageDimensions;
+    }[];
+    specificationImage?: { src: string; alt: string };
+    dimensionsHeading?: string;
+    heroTitle?: string;
+    sizeRange: string;
+    heroSpecs?: (BladeSpec & { emphasis?: string })[];
+    technicalSpecs?: BladeSpec[];
+    inlineRfq?: {
+      title: string;
+      description: string;
+      buttonLabel: string;
+    };
+    dimensionTables: {
+      id: string;
+      tabLabel: string;
+      title: string;
+      columns: string[];
+      rows: string[][];
+    }[];
+  };
   steelGrades?: {
     // Steel grade comparison table, rendered between DecisiveSpecs and ComprehensiveData
     intro: string;
@@ -134,6 +182,7 @@ export interface Blade {
     col3?: string; // replaces "Thickness"
     col4?: string; // replaces "Teeth" (length/teeth mode only)
     caption?: string; // replaces default table footnote
+    intro?: string; // Visible note above the detail dimensions table
   };
 
   // ── Meta / utility ────────────────────────────────────────────────────────
@@ -141,6 +190,7 @@ export interface Blade {
   isFeatured?: boolean;
   catalogUrl?: string;
   compatibleMachines?: string[]; // OEM brand compatibility e.g. ["BHS", "Tidland", "EREMA"]
+  compatibleMachinesIntro?: string;
 
   /** Optional prose paragraph rendered between the hero and the Decisive
    *  Specifications table. Use for buyer-facing context that belongs above the
@@ -151,6 +201,8 @@ export interface Blade {
    *  brand-neutral global placeholder so the example names a machine this
    *  product actually fits. */
   rfqPlaceholder?: string;
+  /** Quote-to-drawing products list the information needed to check fit. */
+  quoteRequirements?: string;
 
   // ── Indicative price range — internal reference, NOT published ───────
   // No product page shows a price, and marking up a price that is not visible
@@ -179,698 +231,759 @@ export interface BladeOffer {
 }
 
 // ===== BLADE DATA =====
+const nonwovenTopKnifeOdMm = [60, 250];
+const nonwovenBottomRingOdMm = [80, 300];
+const nonwovenOdMm = [...nonwovenTopKnifeOdMm, ...nonwovenBottomRingOdMm];
+const nonwovenSlitterImage =
+  "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp";
+
+const slitterRfq = {
+  title: "Need a size that is not listed?",
+  description:
+    "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+  buttonLabel: "Request a Quote",
+};
+const nonwovenCrushModel = [
+  "SR001111",
+  "76.2 × 19.05 × 4.76 mm",
+  "Score / Crush Cutter",
+  "52100 / M2 HSS",
+  "R0.05–R0.1 mm Tip Radius",
+];
+const sharedSlitterModels = {
+  SR001452: ["SR001452", "80 × 60 × 10 mm", "Grooved bottom ring"],
+  SR001453: ["SR001453", "105 × 90 × 15 mm", "Grooved bottom ring"],
+  SR001211: [
+    "SR001211",
+    "105 × 80 × 15 mm",
+    "Flange",
+    "DIENES dimensional series",
+  ],
+  SR001212: [
+    "SR001212",
+    "130 × 90 × 20 mm",
+    "Flange",
+    "DIENES dimensional series",
+  ],
+  SR001213: [
+    "SR001213",
+    "190 × 138 × 15 mm",
+    "Double edge",
+    "Tidland TID131393",
+  ],
+  SR001214: [
+    "SR001214",
+    "130 × 100 × 30 mm",
+    "Double edge",
+    "Tidland TID133503",
+  ],
+  SR001215: [
+    "SR001215",
+    "250 × 188 × 15 mm",
+    "Double edge",
+    "Tidland TID131395",
+  ],
+  SR001561: [
+    "SR001561",
+    "90.81 × 60.00 × 12.70 mm",
+    "Carbide-tipped",
+    "Dusenbery 783533",
+  ],
+};
+
+type BladeDimensionTable = NonNullable<
+  Blade["detailLayout"]
+>["dimensionTables"][number];
+
+const corrugatedThinBladeTable: BladeDimensionTable = {
+  id: "thin",
+  tabLabel: "Carbide Thin Blades",
+  title: "Carbide Thin Blades",
+  columns: [
+    ITEM_NO_COLUMN,
+    "Dimensions (OD × ID × W)",
+    "Equipment reference",
+    "Mounting pattern",
+  ],
+  rows: [
+    ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+    ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+    ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "6 × Ø9 mm pattern"],
+    ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "4-slot pattern"],
+    ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Match drawing"],
+    ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Match drawing"],
+    ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Match drawing"],
+    ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Match drawing"],
+    ["SR001410", "280 × 160 × 1.1 mm", "Mitsubishi", "Match drawing"],
+    ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Match drawing"],
+    ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Match drawing"],
+    ["SR001413", "340 × 230.2 × 1.0 mm", "Göpfert", "Match drawing"],
+  ],
+};
+
+const carbideCoilKnifeTable: BladeDimensionTable = {
+  id: "carbide",
+  tabLabel: "Carbide Knives",
+  title: "Carbide Rotary Knives",
+  columns: [ITEM_NO_COLUMN, "Dimensions (OD × ID × W)", "Construction"],
+  rows: [
+    ["SR001331", "150.1 × 95 × 6.35 mm", "Solid carbide"],
+    ["SR001332", "181 × 125 × 9.5 mm", "Solid carbide"],
+    ["SR001333", "204 × 125 × 10 mm", "Solid carbide"],
+    ["SR001334", "250 × 125 × 10.1 mm", "Solid carbide"],
+    ["SR001335", "300.15 × 160 × 28 mm", "Solid carbide"],
+  ],
+};
+
+const foilStandardOdMm = 130;
+const standardSquareImage = { width: 800, height: 800, smallerWidths: [320, 640] };
+
+function listedOuterDiameterRange(table: BladeDimensionTable): string {
+  const diameters = table.rows.map(([, size]) => Number(size.split(" × ")[0]));
+  return `${Math.min(...diameters)}–${Math.max(...diameters)} mm`;
+}
+
 export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   // 1. Rotary Slitter Knives & Circular Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement film and tape slitter knives made for your holders, with custom bores, cutting profiles and surface options. Send Sureay your drawing or sample for a quotation on individual knives or a top-and-bottom pair.",
     id: "rotary-slitter-knives",
     name: "Film & Tape Slitter Knives",
-    fullName:
-      "Precision Slitter Knives for Film, Tape & Flexible Packaging Converting",
+    fullName: "Film & Tape Slitter Knives for Flexible Packaging",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Film & Tape Slitter Knives",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Best Seller",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    ],
-
-    // Shortened for SEO Meta Description & UI Product Cards (< 155 chars)
+    image: "/images/products/slitter-detail/rotary-slitter-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Precision-ground circular slitter blades for BOPP, BOPET & CPP film, PE stretch film, PSA tape & nonwoven converting. \u00b10.002\u202fmm thickness tolerance, \u22640.02\u202fmm T.I.R. runout. Shear, score & razor profiles in M2 HSS, D2 & ASP23 PM steel with optional TiN & DLC anti-stick coatings. Drop-in OEM fit for Tidland, Kampf, Atlas & Dusenbery slitter systems.",
-
-    // Structured for B2B reading flow and technical authority
-    fullDescription:
-      "Circular film and tape slitter knives operate at the intersection of dimensional precision and material science. On a converting line running BOPP or BOPET film at 400\u2013600\u202fm/min, a slitting blade thickness tolerance error of 0.005\u202fmm per knife compounds across a multi-knife arbor stack, producing visible slit-width deviation, edge curl, and dust that contaminates downstream rewinding and packaging equipment. Sureay film and tape slitter blades are manufactured to \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm total indicated runout (T.I.R.)\u2014tolerances that hold across the full production diameter, not just at the bore.\n\nAlloy selection is application-determined. Standard converting of coated paper and kraft board runs on 52100 bearing steel or D2 cold-work tool steel. Abrasive substrates\u2014battery-grade aluminum and copper electrode foils for EV lithium cells, fiberglass-reinforced packaging, silicon-coated release liners\u2014require ASP23 or ASP52 powder-metallurgy (PM) steel or solid carbide for acceptable edge life. Flexible plastic films (BOPP, BOPET, CPP, PE stretch film) are routinely processed on M2 HSS blades with optional TiN or DLC PVD surface coating to prevent adhesive film transfer and reduce friction-induced web heating.\n\n## By Cutting Method\n\n**Shear Slitting (Matched Top & Bottom Knife Pairs):** The scissor action between the dished upper knife and grooved lower anvil knife generates a clean shear cut with zero tensile loading on the web. Knife-to-knife clearance is typically set at 0.05\u20130.15\u202fmm (substrate-dependent); our grinding tolerances ensure this clearance is consistent across the full slit width. Critical for paper, non-wovens, and light flexible films where edge deformation is unacceptable.\n\n**Crush/Score Cutting (Circular Blade Against Rubber Anvil Roll):** A hardened, sharp-edged blade penetrates through a pressure-sensitive adhesive laminate, foam, or multi-layer packaging web against a controlled-hardness rubber anvil. Blade profile geometry and bevel angle are optimized per substrate to prevent adhesive squeeze-out and delamination at the cut edge. The standard choice for pressure-sensitive tape, foam die-cutting, and medical packaging splitting.\n\n**Razor Slitting (Free-Float or Fixed Single Blade):** Ultra-sharp, thin-profile blades trim edge waste from cast film extrusion lines, oriented film lines, and nonwoven spunbond production at speeds above 500\u202fm/min. Blade geometry is optimized for minimum web drag and maximum edge cleanliness, preventing edge curl and electrostatic discharge that cause web break events on high-speed lines.\n\n## By Material & Industry\n\n**Flexible Packaging Films:** BOPP, BOPET, CPP, PE/PP stretch film, shrink sleeve. High-speed film slitting requires precise runout control to prevent knife wobble-induced web tension spikes. M2 HSS with optional DLC coating eliminates film transfer adhesion on the blade face.\n\n**Non-Wovens & Medical Fabrics:** Spunbond PP, meltblown, SMS medical fabrics, HEPA filter media. Specialized rake angles prevent fiber fraying and web slippage during slitting of loose-structure materials at high line tensions.\n\n**Pressure-Sensitive Tapes & Labels:** Masking, duct tape, double-sided foam, label stock, transfer adhesive. TiN and Teflon anti-adhesion coatings reduce cleaning frequency by 60\u201380%, extending Mean Time Between Replacements on the most demanding tape-slitting applications.",
-    disambiguation:
-      "Running paper, tissue or board instead of film? See our [Paper Slitter Knives](/products/rotary-slitter-knives-paper) page for shear clearance data and regrind intervals on cellulose substrates.",
+      "Replacement slitter knives for BOPP, PET, CPP film and adhesive tape. Tool steel or carbide top and bottom knives, with custom bores and profiles to drawing.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
-
+    specs: [
+      { label: "Sizes", value: "Circular OD 20–300 mm" },
+      {
+        label: "Material",
+        value: "52100, D2, M2 HSS, ASP23 PM steel or solid tungsten carbide",
+      },
+      {
+        label: "Applications",
+        value: "BOPP, BOPET, CPP, stretch film and pressure-sensitive tape",
+      },
+      {
+        label: "Optional Coatings",
+        value:
+          "TiN, DLC, PTFE (Teflon), CrAlN or ceramic, depending on blade substrate",
+      },
+      { label: "Mounting", value: "Rotary shear holders or crush-cut holders" },
+      { label: "Thickness tolerance", value: "±0.002 mm" },
+      { label: "Runout", value: "≤0.02 mm T.I.R." },
+    ],
+    detailLayout: {
+      seoTitle: "Film & Tape Slitter Knives for Flexible Packaging",
+      sizeRange: "Circular OD 20–300 mm",
+      heroAlt: "Circular film and tape slitter knives and bottom rings",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-detail.webp",
+        alt: "Close-up of the ground bevel and face of a circular slitter knife",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Slitter Knives",
+          title: "Top & Bottom Slitter Knives",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Knife Type"],
+          rows: [
+            ["SR001154", "60 × 40 × 1.0 mm", "Top knife"],
+            ["SR001155", "62 × 35 × 0.5 mm", "Top knife"],
+            ["SR001156", "75 × 45 × 1.2 mm", "Top knife"],
+            ["SR001151", "90 × 60 × 1.0 mm", "Top knife"],
+            ["SR001152", "105 × 70 × 1.2 mm", "Top knife"],
+            ["SR001157", "130 × 80 × 1.2 mm", "Top knife"],
+            ["SR001158", "150 × 75 × 2.0 mm", "Top knife"],
+            ["SR001168", "70 × 28 × 12 mm", "Bottom knife"],
+            ["SR001169", "70 × 45 × 3 mm", "Bottom knife"],
+            ["SR001170", "70 × 45 × 20 mm", "Bottom knife"],
+            ["SR001182", "80 × 55 × 5 mm", "Bottom knife"],
+            ["SR001452", "80 × 60 × 10 mm", "Bottom knife"],
+            ["SR001183", "105 × 60 × 15 mm", "Bottom knife"],
+            ["SR001184", "108 × 80 × 8 mm", "Bottom knife"],
+            ["SR001185", "150 × 120 × 15 mm", "Bottom knife"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Additional Top & Bottom Knives",
+          title: "Additional Top & Bottom Knives",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Knife Type / Platform Reference",
+          ],
+          rows: [
+            ["SR001801", "75 × 25.4 × 1.0 / 1.2 mm", "Top Blade — Tidland / Atlas"],
+            ["SR001802", "70 × 25.4 × 8 / 10 mm", "Bottom Anvil — Tidland / Atlas"],
+            ["SR001803", "100 × 32 × 1.2 / 1.5 mm", "Top Blade — Kampf / Dusenbery"],
+            ["SR001804", "80 × 60 × 16 / 20 mm", "Bottom Anvil — Kampf / Dusenbery"],
+            [
+              "SR001805",
+              "118 × 80 × 1.2 / 2.0 mm",
+              "Top Blade — Goebel / BHS / Agnati",
+            ],
+            [
+              "SR001806",
+              "100 × 70 × 16 / 20 mm",
+              "Bottom Anvil — Goebel / BHS / Agnati",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Circular OD 20–300 mm" },
+        {
+          label: "Material",
+          value: "52100, D2, M2 HSS, ASP23 PM steel or solid tungsten carbide",
+        },
+        {
+          label: "Applications",
+          value: "BOPP, BOPET, CPP, stretch film and pressure-sensitive tape",
+        },
+        {
+          label: "Optional Coatings",
+          value:
+            "TiN, DLC, PTFE (Teflon), CrAlN or ceramic, depending on blade substrate",
+        },
+        { label: "Mounting", value: "Rotary shear holders or crush-cut holders" },
+        { label: "Thickness tolerance", value: "±0.002 mm" },
+        { label: "Runout", value: "≤0.02 mm T.I.R." },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
       "Tidland",
-      "Mario Cotta",
-      "Dusenbery",
       "Kampf",
       "Atlas",
       "Goebel",
-      "BHS",
-      "Agnati",
+      "Windmöller & Hölscher",
     ],
-
-    specs: [
-      {
-        label: "Material",
-        value: "52100 / D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting, Score / Crush Cutting, Razor Slitting",
-      },
-      {
-        label: "Outer Diameter",
-        value: "50\u2013200\u202fmm (custom OD available)",
-      },
-      {
-        label: "Tolerance",
-        value:
-          "\u00b10.002\u202fmm thickness | \u22640.02\u202fmm T.I.R. runout",
-      },
-      { label: "Coatings", value: "TiN, DLC, Teflon, CrAlN (optional)" },
-      {
-        label: "Applications",
-        value:
-          "BOPP / BOPET / CPP Film, PE Stretch Film, PSA Tape, Non-Wovens, Flexible Packaging",
-      },
-    ],
-
     components: [
       {
-        id: "multi-material-compatibility",
-        tag: "METALLURGY",
-        title: "Application-Specific Tool Steels",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Application-Matched Steel and Carbide Options",
         description:
-          "Material matched to your web. 52100 carbon steel for standard packaging film liners and coated substrates; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for silica-coated release liners and fiberglass-reinforced laminates. Every grade stocked and ready for fast-turn OEM delivery.",
+          "From 52100 and D2 to M2 HSS, PM steel and solid carbide, Sureay offers material choices for routine film cutting and more demanding wear conditions.",
       },
       {
-        id: "advanced-coating-systems",
-        tag: "EDGE RETENTION",
-        title: "Anti-Stick PVD Coatings",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Precision-Ground Edges and Optional Coatings",
         description:
-          "TiN and DLC coatings reduce surface adhesion by up to 80%, eliminating adhesive build-up on blade faces during PSA tape and adhesive-laminate slitting. Lower friction means cooler running, longer edge life, and fewer cleaning stops per shift.",
+          "Precision-ground cutting edges are available with TiN, DLC, PTFE (Teflon), CrAlN or ceramic coating options, selected for the blade substrate and the film or tape being cut.",
       },
       {
-        id: "five-cutting-applications",
-        tag: "PROCESS CAPABILITY",
-        title: "Optimized Edge Geometries",
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Replacement Knives and Matched Pairs",
         description:
-          "Single bevel, double bevel, and blunt-edge profiles engineered for shear pairs, crush/score anvil cutting, and razor trim. Profiled for your line speed and web tension \u2014 specify cutting method and substrate and we match the geometry.",
+          "Order individual replacement knives or matched top-and-bottom pairs with bores, profiles and mounting details made to your existing slitting arrangement.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Blade Type / Application",
-      col1: "OD (mm)",
-      col2: "ID (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Standard shear-pair dimensions. Top (dished) and bottom (anvil groove) blades supplied as matched pairs. Custom OD / ID and groove profiles on request.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Top Blade \u2014 Tidland / Atlas",
-        od: "75",
-        id: "25.4",
-        thickness: "1.0 / 1.2",
-      },
-      {
-        spec: "Bottom Anvil \u2014 Tidland / Atlas",
-        od: "70",
-        id: "25.4",
-        thickness: "8 / 10",
-      },
-      {
-        spec: "Top Blade \u2014 Kampf / Dusenbery",
-        od: "100",
-        id: "32",
-        thickness: "1.2 / 1.5",
-      },
-      {
-        spec: "Bottom Anvil \u2014 Kampf / Dusenbery",
-        od: "80",
-        id: "60",
-        thickness: "16 / 20",
-      },
-      {
-        spec: "Top Blade \u2014 Goebel / BHS / Agnati",
-        od: "118",
-        id: "80",
-        thickness: "1.2 / 2.0",
-      },
-      {
-        spec: "Bottom Anvil \u2014 Goebel / BHS / Agnati",
-        od: "100",
-        id: "70",
-        thickness: "16 / 20",
-      },
-    ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
-      "tungsten-carbide-slitter-knives",
-      "bottom-grooved-anvil-knives",
-      "nonwoven-slitter-knives",
-    ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 150,
-    },
     faqs: {
       technical: [
         {
-          question:
-            "What thickness tolerance should I specify for blades on a multi-knife arbor stack?",
+          question: "Which replacement knife fits my film or tape slitter?",
           answer:
-            "For shear slitting of flexible films and foils, specify \u00b10.002\u202fmm thickness tolerance and \u226420.02\u202fmm T.I.R. runout. A 0.005\u202fmm error per blade compounds across a 12-knife stack, producing visible slit-width deviation and web tension spikes. We grind every blade to these tolerances and verify on a CMM before dispatch.",
+            "Identify the cutting method and knife position first. Rotary shear stations use cooperating top and bottom edges; crush-cut stations press a cutter against a supporting surface. The holder reference, bore, cutting profile and axial dimensions establish the replacement. Film slitter blades and tape slitter knives are common purchasing names, but the installed cutting arrangement determines the required part.",
         },
         {
           question:
-            "What is \u2018over-speed ratio\u2019 for top/bottom shear knives and why does it matter?",
+            "When should wear resistance take priority in shear-slitting knife selection?",
           answer:
-            "Over-speed ratio is the intentional rotational speed differential between the top knife arbor and bottom anvil arbor\u2014typically set at 2\u20135% above web speed. This differential creates a micro-shear action at the cut point, producing a cleaner edge and reducing heat build-up versus a purely tangential cut. At higher over-speed ratios cut quality improves but edge wear accelerates; at zero differential the blade acts more like a crush cutter. Your slitter OEM specifies the designed over-speed ratio; we supply matched pairs optimized for that setting.",
+            "Greater wear resistance is worth considering when the working edge wears gradually under an otherwise suitable shear-slitting setup. Where chipping or contact damage dominates, the material decision also needs to account for toughness and knife support. Compare the used edge, processed web and existing knife pair before choosing the material for a replacement order.",
+        },
+        {
+          question: "Why does adhesive build up on tape slitter knives?",
+          answer:
+            "Adhesive can transfer from the tape to the blade during contact. Blade profile, contact area and surface finish influence how readily residue accumulates. Check where it collects and compare the current bevel and working faces with the tape construction. A suitable profile, polished surface or optional coating can then be considered for that blade material and adhesive.",
         },
         {
           question:
-            "How do I prevent adhesive film transfer and build-up on slitter blade faces?",
+            "What can cause edge damage in a shear-slitting knife pair?",
           answer:
-            "Adhesive build-up on blade faces increases friction, raises web temperature, and causes material transfer contamination. We offer TiN (titanium nitride) and DLC (diamond-like carbon) PVD coatings that reduce surface adhesion by up to 80%, extending clean-running intervals on pressure-sensitive tape and adhesive laminate slitting applications.",
+            "Unintended contact between the top and bottom knife edges during engagement can damage a shear-slitting pair. Inspect both edges, the holder's engagement movement and the installed knife positions. Compare localized damage with gradual wear before changing material, so the replacement addresses the observed condition rather than repeating a contact or setup problem.",
         },
         {
           question:
-            "When should I upgrade from D2 to powder-metallurgy (PM) steel for flexible film slitting?",
+            "How do blade thickness, bore and dish height affect replacement fit?",
           answer:
-            "PM steel (ASP23, ASP52) is recommended when slitting highly abrasive flexible substrates such as fiberglass-reinforced packaging films, silica-coated release liners, or ceramic-filled barrier films. These materials exceed the abrasion ceiling of D2 within a single production run due to hard mineral filler particles. PM grades deliver uniform carbide distribution and 50\u201380% longer edge life on highly abrasive flexible substrates.",
+            "The bore locates the knife on its mount, blade thickness describes the material section, and dish height describes the overall axial profile of a dished knife. Together with the bottom-ring width and mounting details, these dimensions determine where the working edges meet. Record them separately when replacing a knife in an existing holder.",
+        },
+        {
+          question: "Should I replace both the top and bottom slitter knives?",
+          answer:
+            "You can order a single replacement when the retained mating knife remains serviceable and its geometry is known. Inspect both cutting edges, mounting faces and working diameters. For a complete pair, identify the upper and lower positions separately so their dimensions and material choices can be considered together, including any previous regrinding.",
         },
         {
           question:
-            "What surface coating is best for slitting pressure-sensitive adhesive tapes at high speed?",
+            "Can Sureay make custom film slitter knives from a drawing or sample?",
           answer:
-            "DLC (diamond-like carbon) PVD coating is the top specification for double-coated foam tape and transfer adhesive slitting. It reduces contact angle on the blade face by approximately 35\u00b0 versus uncoated D2, maintaining consistent slip through 8\u201312 hour production runs without cleaning stops. TiN is effective for single-faced masking tape and lightly adhesive label stock at a lower coating cost.",
-        },
-        {
-          question:
-            "Can Sureay supply matched top and bottom knife pairs verified to a specified shear clearance?",
-          answer:
-            "Yes. Matched shear pairs\u2014dished top blade and grooved anvil bottom blade\u2014are supplied with knife-to-knife clearance pre-verified against your substrate specification. We record OD, ID, thickness, and designed shear clearance for each matched pair on an engineering data sheet that ships with the tooling, allowing line operators to replicate the clearance setting on every reinstallation.",
-        },
-        {
-          question:
-            "What blade edge geometry is recommended for slitting meltblown nonwoven fabric without fiber fraying?",
-          answer:
-            "For meltblown and spunbond nonwoven fabrics (8\u201380 GSM), specify a positive rake angle (15\u00b0\u201320\u00b0) with Ra \u22640.4\u202f\u03bcm surface finish. This geometry shears through the loose fiber structure cleanly without lateral fiber displacement that causes frayed edges. For very lightweight meltblown (<15 GSM), an optional ESD (electrostatic discharge) coating prevents static-induced fiber attraction to the blade face.",
+            "Yes. Sureay can supply custom bores, blade sections, mounting features and cutting profiles. A drawing establishes the intended new dimensions; a worn sample helps identify the installed geometry and any material lost through use or sharpening. Include the mating knife or anvil details for a working pair and state the quantity required for each configuration.",
         },
       ],
-      company: [
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
-        },
-        {
-          question:
-            "What makes Sureay\u2019s heat treatment different from cheaper alternatives?",
-          answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10\u201315 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
-        },
-        {
-          question:
-            "Can we trial a sample set before committing to a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2\u20135 blades) for machine fit verification and edge life testing. Standard sample lead time is 5\u20137 working days. For custom profiles, dimensional sign-off samples are produced before full production commences\u2014no tooling commitment until fit is confirmed.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
+      "nonwoven-slitter-knives",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 2.1 Rotary Slitter Knives for Paper & Tissue Converting
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Source replacement paper slitter knives for your rewinder, with dished or flat top knives and matching bottom configurations. Share your drawing or sample and paper grade with Sureay for a quotation tailored to your cutting pair.",
     id: "rotary-slitter-knives-paper",
+    seoDescription:
+      "Paper slitter blades for tissue, kraft and coated paper. Pair dished or flat top knives with matching bottom knives in tool steel or carbide-tipped construction.",
     name: "Paper Slitter Knives",
-    fullName: "Paper & Tissue Slitter Knives for High-Speed Converting Lines",
+    fullName: "Paper Slitter Knives for Tissue, Kraft & Coated Paper",
     category: "slitter_knives",
     sector: "paper",
     categoryDisplay: "Paper Slitter Knives",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Paper Converting",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
-    ],
-    galleryAlts: [
-      "Circular paper slitter knife with dished shear profile and precision-ground bore",
-      "Matched top and bottom paper slitter knife pair for shear cutting",
-      "Paper converting line with rotary slitter knives scoring and slitting the web",
-    ],
+    image: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Paper slitter knives ground for cellulose, not repurposed from film tooling. Matched top and bottom shear pairs in D2, M2 HSS or 52100, held to ±0.002mm on thickness and ≤0.02mm runout, with clearance pre-set to the substrate you are running: 0.02–0.05mm for tissue, 0.05–0.10mm for kraft. Rated to 600 m/min on tissue lines. Send a drawing, a worn blade or just your machine model and we will confirm fitment.",
-    fullDescription:
-      "Paper converting lines demand slitter knives that deliver consistent, fiber-dust-free cuts throughout multi-shift production runs. Sureay paper-grade rotary slitter knives are precision-ground from D2 tool steel (for standard paper and board) or M2 high-speed steel (for high-speed tissue and specialty papers) to exacting dimensional tolerances that prevent blade wobble and ensure uniform slit quality.\n\n## Paper-Specific Metallurgy\n\nUnlike plastic film or metal foil slitting, paper converting subjects the blade edge to continuous abrasive wear from cellulose fibers, sizing agents, and mineral fillers (calcium carbonate, kaolin). We select blade alloys specifically for paper applications:\n\n**D2 Tool Steel (HRC 60–62):** Standard grade for kraft paper, boxboard, and corrugated converting. The 12% chromium content provides excellent abrasion resistance against lignin-rich fibers and mineral filler compounds.\n\n**M2 High-Speed Steel (HRC 62–64):** Preferred for high-speed tissue and sanitary paper converting where line speeds exceed 400 m/min. The molybdenum and tungsten carbides maintain edge geometry under the thermal stress of ultra-high-speed cutting.\n\n**52100 Bearing Steel (HRC 58–60):** Cost-effective option for standard newsprint, magazine paper, and low-grade recycled fiber converting where wear rates are moderate.\n\n**Tungsten Carbide (Solid or Carbide-Tipped):** The step up for high-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied as solid carbide on smaller-diameter blades or carbide-tipped — a carbide edge brazed to a steel body — on larger-diameter blades where a full carbide body isn't cost-effective.\n\n## Shear vs. Crush Cutting for Paper\n\nPaper converting employs two primary slitting methods:\n\n**Shear Slitting (Top/Bottom Knife Pairs):** Two circular knives rotating in opposite directions create a scissor-like shear action. This is the standard method for coated papers, tissue, and lightweight packaging grades where fiber pull and dust generation must be minimized. We supply matched pairs with controlled shear clearance (typically 0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper).\n\n**Crush Cutting (Knife Against Anvil):** A hardened circular knife crushes the paper web against a grooved anvil roll. Used for heavy corrugated board and multi-ply packaging where shear clearance maintenance is impractical. The anvil blade (bottom position) is manufactured with a slotted groove profile that compresses and fractures the paper fibers.\n\n## Fiber-Dust-Free Performance\n\nFiber dust generated at the slit edge contaminates paper mill rewinding stations, degrades product quality on tissue and sanitary paper grades, and triggers unplanned cleaning stops. Our paper-grade slitter knives are precision-ground to Ra 0.2–0.4μm surface finish with controlled edge bevel angles that shear cleanly through cellulose fiber bundles rather than tearing or pulling. This reduces airborne fiber dust by approximately 60–70% compared to standard industrial knife grades.",
-    disambiguation:
-      "Slitting film, tape or flexible packaging? Those blades are on our [Film & Tape Slitter Knives](/products/rotary-slitter-knives) page. This page covers paper substrates only.",
-    categoryCardAnchorText:
-      "Paper Slitter Knives — tissue, kraft & coated paper",
+      "Replacement paper slitter knives for tissue, kraft and coated paper. Dished or flat top knives and bottom knives in steel or carbide, made to drawing.",
     link: "/products/rotary-slitter-knives-paper",
-    isFeatured: false,
-    compatibleMachines: [
-      "Atlas Converting",
-      "Tidland",
-      "Parkinson",
-      "Kampf",
-      "Laem System",
-      "Euromac",
-      "Goebel IMS",
-      "Fabio Perini",
-      "Körber",
-    ],
-
     specs: [
+      { label: "Sizes", value: "Dished OD 62–203 mm · Bottom OD 70–300 mm" },
       {
         label: "Material",
-        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
+        value: "52100, D2, M2, ASP23, CPM 10V or carbide-tipped construction",
+      },
+      { label: "Applications", value: "Tissue, kraft, coated and recycled paper" },
+      {
+        label: "Mounting",
+        value:
+          "Shaft-mounted top knife or matching flange and cutting face on the bottom knife",
       },
       {
         label: "Hardness",
-        value: "HRC 58–64 (steel) / HRA 90–92 (carbide)",
+        value: "58–64 HRC for steel knives; 90–92 HRA for carbide edges",
       },
+      { label: "Surface finish", value: "Precision-ground faces, Ra 0.2–0.4 μm" },
+      { label: "Thickness tolerance", value: "±0.002 mm" },
+      { label: "Runout", value: "≤0.02 mm T.I.R." },
       {
         label: "Cutting Styles",
-        value: "Shear Slitting (matched pairs), Crush Cutting (anvil pairs)",
-      },
-      { label: "Surface Finish", value: "Ra 0.2–0.4μm (precision ground)" },
-      { label: "Tolerance", value: "Thickness: ±0.002mm | Runout: ≤0.02mm" },
-      {
-        label: "Application",
         value:
-          "Tissue & Sanitary Paper, Kraft Paper, Corrugated Board, Coated Papers, Newsprint",
+          "Shear slitting with matched top and bottom knives or crush cutting with anvil pairs",
       },
     ],
-
-    components: [
-      {
-        id: "paper-metallurgy",
-        tag: "MATERIAL SCIENCE",
-        title: "Which steel grade should paper slitter knives use?",
-        description:
-          "Paper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels. Our D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates.",
+    detailLayout: {
+      seoTitle: "Paper Slitter Knives for Tissue & Kraft",
+      sizeRange: "Dished OD 62–203 mm · Bottom OD 70–300 mm",
+      heroAlt:
+        "Pair of circular paper slitter knives showing upper blade and bottom ring",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-paper-detail.webp",
+        alt: "Paper slitter knife showing the ground cutting face and center bore",
       },
-      {
-        id: "shear-clearance",
-        tag: "CUTTING PRECISION",
-        title: "What shear clearance stops fibre dust at the slit edge?",
-        description:
-          "Matched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper). This controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality.",
-      },
-      {
-        id: "bore-locking-options",
-        tag: "MACHINE FIT",
-        title: "What bore, locking, and bevel options are available?",
-        description:
-          "Paper slitter knives ship with smooth, keyed, or bayonet bores to match your arbor, and lock in place with keyway, set screw, keyed excenter, or keyless excenter clamping — whichever your slitter or rewinder uses. Top blades are ground with a single-bevel dished profile at 15°–20°, with compound (two-stage) bevel or hollow-ground backing available where edge durability matters more than a razor-thin approach angle. Send your current knife or arbor drawing and we confirm bore, locking, and bevel before cutting steel, so the replacement seats, locks, and cuts exactly like the original.",
-      },
-    ],
-
-    steelGrades: {
-      intro:
-        "Paper fibers wear a blade differently than film or foil — the abrasive load comes from mineral fillers in the furnish, not the fiber itself. The grades below cover the range we quote for paper, tissue, and board.",
-      rows: [
+      inlineRfq: slitterRfq,
+      dimensionTables: [
         {
-          grade: "D2 Tool Steel",
-          hardness: "HRC 58–61",
-          bestFor:
-            "Standard kraft paper, boxboard, and corrugated converting — our default paper grade.",
-          tradeoff:
-            "Good all-round value; edge life falls off faster than M2 or carbide on heavily filled or coated stock.",
+          id: "top",
+          tabLabel: "Top Knives",
+          title: "Top Knives",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Profile or reference",
+            "Dish height",
+          ],
+          rows: [
+            ["SR001201", "90 × 60 × 1.2 mm", "Dished", "To drawing"],
+            ["SR001202", "130 × 80 × 1.5 mm", "Dished", "To drawing"],
+            [
+              "SR001203",
+              "150 × 80 × 2.5 mm",
+              "Dished / Tidland Class II",
+              "To drawing",
+            ],
+            ["SR001204", "180 × 90 × 3.5 mm", "Dished", "To drawing"],
+            [
+              "SR001205",
+              "200 × 80 × 4.0 mm",
+              "Dished / Tidland Class III",
+              "9.25 mm",
+            ],
+            ["SR001206", "203 × 90 × 4.0 mm", "Bielomatik 701.115", "To drawing"],
+          ],
         },
         {
-          grade: "M2 High-Speed Steel",
-          hardness: "HRC 62–64",
-          bestFor:
-            "High-speed tissue and sanitary paper above 400 m/min, where the edge has to hold geometry under thermal cycling.",
-          tradeoff:
-            "Costs more than D2; regrind interval is still shorter than carbide on abrasive furnish.",
+          id: "bottom",
+          tabLabel: "Bottom Knives",
+          title: "Bottom Knives",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Mounting or edge",
+            "Reference",
+          ],
+          rows: [
+            ["SR001211", "105 × 80 × 15 mm", "Flange", "DIENES dimensional series"],
+            ["SR001212", "130 × 90 × 20 mm", "Flange", "DIENES dimensional series"],
+            ["SR001213", "190 × 138 × 15 mm", "Double edge", "Tidland TID131393"],
+            ["SR001214", "130 × 100 × 30 mm", "Double edge", "Tidland TID133503"],
+            ["SR001215", "250 × 188 × 15 mm", "Double edge", "Tidland TID131395"],
+          ],
         },
         {
-          grade: "52100 Bearing Steel",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Standard newsprint, magazine paper, and lower-grade recycled fiber where wear rates are moderate.",
-          tradeoff:
-            "Lower abrasion resistance than D2 on filled or coated stock — best reserved for cleaner furnish.",
-        },
-        {
-          grade: "Tungsten Carbide",
-          hardness: "HRA 90–92",
-          bestFor:
-            "High-ash coated paper, art paper, and corrugated board, where mineral fillers wear a steel edge fast between changes. Supplied solid or carbide-tipped.",
-          tradeoff:
-            "Highest unit cost and more brittle under impact than tool steel — needs consistent feed and clean alignment to avoid edge chipping.",
+          id: "catalog-configurations",
+          tabLabel: "Additional Paper Slitter Knives",
+          title: "Additional Paper Slitter Knives",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Knife Type / Platform Reference",
+          ],
+          rows: [
+            ["SR001807", "75 × 45 × 1.0 / 1.2 mm", "Top Blade (Shear)"],
+            ["SR001808", "70 × 45 × 10 / 8 mm", "Bottom Anvil"],
+            ["SR001809", "100 × 32 × 1.2 mm", "Top Blade (Shear)"],
+            ["SR001810", "80 × 60 × 20 / 16 mm", "Bottom Anvil"],
+            ["SR001811", "150 × 80 × 1.5 mm", "Top Blade (Tissue)"],
+            ["SR001812", "108 × 80 × 20 / 18 mm", "Bottom Anvil"],
+          ],
         },
       ],
-      outro:
-        "Solid and carbide-tipped paper slitter knives are both available. Tell us your furnish (virgin, recycled, coated, or filled), line speed, and current regrind interval, and we'll confirm the grade that lowers total cost per cut, not just the sticker price.",
+      technicalSpecs: [
+        { label: "Sizes", value: "Dished OD 62–203 mm · Bottom OD 70–300 mm" },
+        {
+          label: "Material",
+          value: "52100, D2, M2, ASP23, CPM 10V or carbide-tipped construction",
+        },
+        { label: "Applications", value: "Tissue, kraft, coated and recycled paper" },
+        {
+          label: "Mounting",
+          value:
+            "Shaft-mounted top knife or matching flange and cutting face on the bottom knife",
+        },
+        {
+          label: "Hardness",
+          value: "58–64 HRC for steel knives; 90–92 HRA for carbide edges",
+        },
+        { label: "Surface finish", value: "Precision-ground faces, Ra 0.2–0.4 μm" },
+        { label: "Thickness tolerance", value: "±0.002 mm" },
+        { label: "Runout", value: "≤0.02 mm T.I.R." },
+        {
+          label: "Cutting Styles",
+          value:
+            "Shear slitting with matched top and bottom knives or crush cutting with anvil pairs",
+        },
+      ],
     },
-
-    dimensionLabels: {
-      col0: "Blade Type",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
-      caption:
-        "* Standard dimensions for paper converting. Top blades (dished profile for shear cutting) and bottom blades (grooved anvil for crush cutting). We manufacture paper slitter and anvil blades from roughly 50–320mm OD, 20–100mm bore, and 0.8–20mm thickness (thin dished top blades through heavy grooved anvils) — outside the three sets above, send your machine model and we confirm the closest match or cut to your dimensions.",
-    },
-
-    standardDimensions: [
+    compatibleMachines: [
+      "DIENES",
+      "Valmet",
+      "Voith",
+      "Tidland",
+      "Jagenberg",
+      "Bielomatik",
+      "E.C.H. Will",
+    ],
+    components: [
       {
-        spec: "Top Blade (Shear)",
-        od: "75 mm",
-        id: "45 mm",
-        thickness: "1.0 / 1.2 mm",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Material Options for Paper Converting",
+        description:
+          "Tool-steel, HSS, PM-steel and carbide-edged options give paper converters material choices for tissue, kraft, coated and recycled grades.",
       },
       {
-        spec: "Bottom Anvil",
-        od: "70 mm",
-        id: "45 mm",
-        thickness: "10 / 8 mm",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Precision-Ground Thickness and Cutting Faces",
+        description:
+          "Paper slitter knives can be precision-ground to your specified thickness and working-face finish for the top or bottom position in the cutting pair.",
       },
       {
-        spec: "Top Blade (Shear)",
-        od: "100 mm",
-        id: "32 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "80 mm",
-        id: "60 mm",
-        thickness: "20 / 16 mm",
-      },
-      {
-        spec: "Top Blade (Tissue)",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "108 mm",
-        id: "80 mm",
-        thickness: "20 / 18 mm",
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Top and Bottom Knife Sets",
+        description:
+          "Custom bores, dished profiles, bottom-knife flanges and cutting faces support single-knife replacements and complete sets for existing paper rewinders.",
+        relatedBladeIds: ["slitter-rewinder-bottom-knives"],
       },
     ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "tissue-log-saw-blades",
-      "corrugated-slitter-scorer-blades",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 280,
-    },
     faqs: {
       technical: [
         {
           question:
-            "What material grade should I use for high-speed tissue converting at 500 m/min?",
+            "Can Sureay reproduce paper slitter knives for my existing rewinder?",
           answer:
-            "Specify M2 high-speed steel at HRC 62–64 for tissue converting above 400 m/min. The molybdenum and tungsten carbides in M2 maintain edge geometry under the thermal cycling generated by ultra-high-speed cutting, delivering 2–3× longer campaign life than D2 on lightweight tissue grades (12–18 GSM).",
+            "Yes. A drawing or sample can establish the bore, profile and mounting arrangement for a replacement top or bottom knife. Include the paper grade and mating-knife dimensions. An original part reference helps distinguish the intended new dimensions from a worn sample. For flange, cup or replaceable-ring assemblies, see [Slitter Rewinder Bottom Knives](/products/slitter-rewinder-bottom-knives).",
         },
         {
           question:
-            "How do I prevent fiber dust contamination at the slit edge?",
+            "When do coated or filled papers justify HSS or carbide slitter knives?",
           answer:
-            "Fiber dust is primarily caused by excessive shear clearance (>0.10mm on tissue) or rough blade surface finish (Ra >0.6μm) that tears fiber bundles rather than shearing cleanly. Specify matched shear pairs with pre-verified clearance (0.02–0.05mm for tissue, 0.05–0.10mm for kraft paper) and Ra ≤0.4μm surface finish. This reduces airborne dust by 60–70% compared to standard industrial knife grades.",
+            "Consider a different working-edge material when the current knife shows gradual wear on the actual paper grade. Coating or filler content, the retained mating knife and observed chipping all affect that decision. Compare wear resistance with the edge's behaviour in the existing pair, keeping mounting stability and slitting setup part of the assessment.",
+        },
+        {
+          question: "What causes paper dust or ragged edges during slitting?",
+          answer:
+            "Paper structure, mating-knife condition, holder stability and slitting setup can affect the edge even when the top knife is sharp. Inspect both working edges and compare the slit sample at normal production settings. Recording the paper grade and settings helps distinguish changes in the material or setup from wear in the knife pair.",
         },
         {
           question:
-            "Should I use shear slitting or crush cutting for corrugated board converting?",
+            "Must top and bottom paper slitter knives be replaced together?",
           answer:
-            "For corrugated board (B/C/E flute), crush cutting against a grooved anvil roll is the standard method. The anvil blade compresses and fractures the paper fibers cleanly without requiring precise shear clearance maintenance. Shear slitting is reserved for lightweight coated papers and tissue where fiber pull must be minimized. For corrugated applications above 200 m/min, specify tungsten carbide anvil blades to resist the compressive wear from multi-ply board stock.",
+            "They can be ordered separately when the retained component is in suitable condition and the working geometry is known. Check the bottom cutting face as well as the top edge. If either knife has been reground, confirm its remaining dimensions before selecting a single replacement or ordering a complete matched pair.",
         },
         {
           question:
-            "How often should paper slitter knives be reground, and how many regrinds are possible?",
+            "Are dished knives, top knives and male knives the same part?",
           answer:
-            "Paper slitter knives on tissue converting lines (400–600 m/min) typically require regrinding every 40–60 operating hours due to the high cutting speeds and abrasive mineral fillers in tissue paper. For kraft paper and board converting (200–300 m/min), the regrind interval extends to 80–120 hours. M2 HSS and D2 knives can be reground 4–6 times before the OD falls below minimum operational diameter. We offer a regrinding service with hardness re-verification and CMM dimensional check included.",
+            "These names often refer to the upper member of a shear-slitting pair. Dished describes the axial shape, while top and male describe the knife's position. Flat top knives also exist. Compare the actual profile, mounting arrangement and relationship to the bottom knife to identify the correct replacement from these purchasing terms.",
         },
         {
           question:
-            "What causes uneven slit edge quality across the full width of the paper web?",
+            "Why are blade thickness and dish height listed separately?",
           answer:
-            "Uneven slit quality (clean cut on one side, fiber pull on the other) indicates uneven blade mounting or differential thermal expansion across the arbor. Verify that all knives on the arbor are ground to ±0.002mm thickness tolerance and that the arbor shaft runout is ≤0.02mm T.I.R. Thermal expansion can be mitigated by using matched metallurgy (all D2 or all M2) across the full knife set, ensuring uniform thermal expansion coefficients during high-speed operation.",
+            "Blade thickness measures the material section; dish height measures the knife's overall axial profile. Two dished knives can share an outside diameter and bore but position their cutting edges differently. Keeping these dimensions separate lets the replacement match the existing holder and bottom-knife arrangement while preserving the intended working-edge position.",
+        },
+        {
+          question: "When should paper slitter knives be reground or replaced?",
+          answer:
+            "Regrinding is appropriate when the worn cutting geometry can be restored within the knife's permitted dimensions. Inspect the edge, working faces and relationship to the mating knife before deciding. The knife drawing and machine requirements define the allowable remaining geometry. Replacement is appropriate when damage or dimensional loss prevents that geometry from being restored.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can Sureay supply knives compatible with our existing Atlas Converting or Kampf slitter/rewinder?",
-          answer:
-            "Yes. Send us your current knife sample or machine model number. We will confirm OD, ID, bore profile, and blade thickness, and supply direct-replacement knives manufactured to OEM specifications. Custom groove patterns for anvil rolls are available for specific corrugated and board converting applications.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question:
-            "Can we trial a sample set before committing to a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "groove-bottom-knives",
+      "rotary-slitter-knives",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 2.2 Rotary Slitter Knives for Metal Foil Processing
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement copper and aluminum foil slitter knives with custom widths, bores and matching spacers for your arbor assembly. Send Sureay your drawings and slit-width schedule for a quotation covering the tooling you need.",
     id: "metal-foil-strip-slitter-knives",
-    name: "Coil & Strip Slitters",
-    fullName:
-      "Precision Rotary Slitter Knives for Metal Strip, Coil & Thin-Gauge Foil Slitting",
+    name: "Slitter Knives for Copper & Aluminum Foil",
+    fullName: "Slitter Knives for Copper & Aluminum Foil",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Metal Strip Slitter Knives",
+    categoryDisplay: "Slitter Knives for Copper & Aluminum Foil",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Metal Processing",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
-    ],
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "High-precision circular slitter knives for metal service centers and cold rolling mills. ASP23/ASP52 PM tool steel and solid tungsten carbide ground to strict ±0.001\u202fmm thickness tolerance. Engineered for burr-free gang slitting of aluminum strip & coil, copper strip, stainless steel, and grain-oriented silicon steel.",
-    fullDescription:
-      "Precision metal strip and foil slitting demands metallurgical performance and dimensional accuracy far exceeding standard shearing applications. When processing thin-gauge metals (0.01mm to 1.5mm), even a microscopic blade defect or thickness deviation will induce camber (lateral bow), edge burrs, and rejected coils. Sureay rotary slitter knives are precision-ground to ±0.001mm thickness tolerance with ≤0.01mm total indicated runout (T.I.R.), ensuring perfect alignment across multi-knife arbor stacks.\n\n## Advanced Metallurgy for Thin Metals\n\nSlitting different metal alloys requires specific blade materials to prevent rapid dulling, edge chipping, or material galling (cold welding).\n\n**ASP23 Powder Metallurgy (PM) Steel:** A massive upgrade over conventional D2. Its ultra-fine, uniform carbide structure delivers 3–5× longer edge life on aluminum packaging foil, brass strips, and general thin-gauge carbon steel without micro-chipping.\n\n**ASP52 PM Steel:** Engineered for high-tensile materials. With 11% vanadium content, ASP52 provides the extreme abrasion resistance required for slitting hard stainless steel strips, grain-oriented silicon steel (transformer cores), and beryllium copper.\n\n**Solid Tungsten Carbide:** The ultimate specification for ultra-thin foils (<0.05mm) where razor-sharp, zero-burr edges are mandatory over extended, high-speed production campaigns.\n\n## Defeating Cumulative Arbor Error\n\nOn gang slitting lines, 10 to 40 circular knives may be stacked on a single arbor. Each knife's thickness error compounds cumulatively: a ±0.003mm error per blade yields a massive ±0.060mm error across a 20-knife stack, guaranteeing out-of-spec coil widths. We grind every metal-grade slitter knife and matching spacer to a strict ±0.001mm thickness tolerance, verifying them on CMM equipment to ensure zero cumulative error.\n\n## Anti-Galling Surface Finish\n\nWhen slitting non-ferrous metals like aluminum and soft copper, metal dust tends to adhere to the blade face (galling), which severely scratches the surface of the slit coils. Sureay metal slitter knives feature a highly polished, mirror-lapped side finish (Ra ≤0.02μm) that drastically reduces friction and prevents material adhesion, ensuring pristine coil edges.",
+      "Replacement rotary slitter knives for copper and aluminum foil. Carbide, tool steel and PM steel options, with custom bores, widths and matching spacers.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Kampf",
-      "Sundwig",
-      "GOEBEL IMS",
-      "Fagor Arrasate",
-      "Camu",
-      "Heinrich Georg",
-      "Kohler",
-      "Yuri Roll",
-      "Hohsen",
-    ],
-
     specs: [
+      { label: "Sizes", value: "OD 100–300 mm" },
       {
         label: "Material",
-        value: "ASP23, ASP52 (PM Steel), Solid Tungsten Carbide, D2/D3",
+        value: "D2, D3, M2, ASP2023, ASP2052 or tungsten carbide (WC-Co)",
       },
+      { label: "Applications", value: "Copper foil and aluminum foil" },
+      { label: "Hardness", value: "64–67 HRC for PM steel; 91–92 HRA for carbide" },
+      { label: "Thickness tolerance", value: "±0.001 mm" },
+      { label: "Runout", value: "≤0.01 mm T.I.R." },
+      { label: "Surface finish", value: "Mirror-lapped faces, Ra ≤0.02 μm" },
       {
-        label: "Hardness",
-        value: "HRC 64–67 (PM Steel) | HRA 91–92 (Carbide)",
-      },
-      { label: "Thickness Tol.", value: "Strictly ±0.001 mm" },
-      { label: "Runout (T.I.R.)", value: "≤ 0.01 mm" },
-      {
-        label: "Surface Finish",
-        value: "Mirror-lapped Ra ≤0.02μm — prevents galling on Al/Cu",
-      },
-      {
-        label: "Application",
-        value: "Aluminum Foil, SS Strips, Silicon Steel, Brass/Copper",
+        label: "Mounting",
+        value: "Arbor-mounted knives with plain or keyed bores",
       },
     ],
-
+    detailLayout: {
+      seoTitle: "Copper & Aluminum Foil Slitter Knives | Custom",
+      sizeRange: "OD 100–300 mm",
+      heroAlt:
+        "Circular foil slitter knife with a polished face and plain bore",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-foil-strip-slitter-knives-keyway.webp",
+        alt: "Circular metal foil slitter knife showing a keyway in the bore",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Slitter Knives",
+          title: "Slitter Knives",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Material"],
+          rows: [
+            ["SR001253", "130 × 60 × 1 mm", "Tungsten Carbide"],
+            ["SR001254", "130 × 60 × 2 mm", "Tungsten Carbide"],
+            ["SR001255", "130 × 60 × 3 mm", "Tungsten Carbide"],
+            ["SR001256", "130 × 60 × 4 mm", "Tungsten Carbide"],
+            ["SR001257", "130 × 66.68 × 1 mm", "Tungsten Carbide"],
+            ["SR001258", "130 × 66.68 × 2 mm", "Tungsten Carbide"],
+            ["SR001259", "130 × 66.68 × 3 mm", "Tungsten Carbide"],
+            ["SR001260", "130 × 66.68 × 4 mm", "Tungsten Carbide"],
+            ["SR001261", "130 × 66.68 × 5 mm", "Tungsten Carbide"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Additional Foil & Strip Knife Sizes",
+          title: "Additional Foil & Strip Knife Sizes",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Knife Type / Platform Reference",
+          ],
+          rows: [
+            ["SR001813", "100 × 40 × 1.0 / 1.5 mm", "Thin Foil Slitter"],
+            ["SR001814", "150 × 80 × 2.0 / 3.0 mm", "Precision Strip Slitter"],
+            ["SR001815", "200 × 120 × 3.0 / 4.0 mm", "General Strip Slitter"],
+            ["SR001816", "250 × 150 × 4.0 / 5.0 mm", "Silicon / Stainless Steel"],
+            ["SR001817", "300 × 200 × 5.0 / 10.0 mm", "Heavy Gauge Strip"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "OD 100–300 mm" },
+        {
+          label: "Material",
+          value: "D2, D3, M2, ASP2023, ASP2052 or tungsten carbide (WC-Co)",
+        },
+        { label: "Applications", value: "Copper foil and aluminum foil" },
+        { label: "Hardness", value: "64–67 HRC for PM steel; 91–92 HRA for carbide" },
+        { label: "Thickness tolerance", value: "±0.001 mm" },
+        { label: "Runout", value: "≤0.01 mm T.I.R." },
+        { label: "Surface finish", value: "Mirror-lapped faces, Ra ≤0.02 μm" },
+        {
+          label: "Mounting",
+          value: "Arbor-mounted knives with plain or keyed bores",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Red Bud Industries",
+      "Fagor Arrasate",
+      "Burghardt + Schmidt",
+      "Heinrich Georg",
+    ],
     components: [
       {
-        id: "pm-metallurgy",
-        tag: "DURABILITY",
-        title: "Powder Metallurgy (PM) Steel",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Tool Steel and Carbide Options for Metal Foil",
         description:
-          "ASP23 and ASP52 PM steels eliminate the banded carbide segregation found in cast D2. This sub-micron grain structure prevents edge chipping when cutting hard, high-tensile stainless or silicon steel strips.",
+          "D2, D3, M2, PM HSS and tungsten carbide options give foil processors material choices for their copper or aluminum grade, foil gauge and observed knife wear.",
       },
       {
-        id: "cumulative-tolerance",
-        tag: "PRECISION",
-        title: "Zero Cumulative Error",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Precision-Ground Knife Faces for Foil Tooling",
         description:
-          "On gang slitting setups, blade thickness errors stack up quickly. Our ±0.001mm precision grinding ensures your arbor dimensions remain perfectly within specification, saving hours of setup and shimming time.",
+          "Sureay supplies precision-ground foil knives made to the specified axial widths and working-face finish, supporting replacement of individual blades within your existing arbor stack.",
       },
       {
-        id: "anti-galling",
-        tag: "SURFACE QUALITY",
-        title: "Anti-Galling Polish",
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Knives and Matching Spacers",
         description:
-          "Slitting aluminum and copper often causes metal dust to 'cold weld' to the blade, scratching the coil edge. Our mirror-lapped side faces (Ra ≤0.02μm) drastically reduce friction, preventing material adhesion entirely.",
+          "Order custom foil knives and matching spacers together, with individual widths, bore details and quantities defined around your slit-width schedule and retained tooling.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Typical Application",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
-      caption:
-        "* Dimensions represent common metal service center standards. We manufacture to exact machine specifications and can supply matching high-precision spacers ground to the same ±0.001mm tolerance.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Thin Foil Slitter",
-        od: "100 mm",
-        id: "40 mm",
-        thickness: "1.0 / 1.5 mm",
-      },
-      {
-        spec: "Precision Strip Slitter",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "2.0 / 3.0 mm",
-      },
-      {
-        spec: "General Strip Slitter",
-        od: "200 mm",
-        id: "120 mm",
-        thickness: "3.0 / 4.0 mm",
-      },
-      {
-        spec: "Silicon / Stainless Steel",
-        od: "250 mm",
-        id: "150 mm",
-        thickness: "4.0 / 5.0 mm",
-      },
-      {
-        spec: "Heavy Gauge Strip",
-        od: "300 mm",
-        id: "200 mm",
-        thickness: "5.0 / 10.0 mm",
-      },
-    ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 750,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Should I use D2 or ASP23 for slitting stainless steel strips?",
+            "How do I specify custom replacement foil knives and matching spacers?",
           answer:
-            "While D2 is adequate for soft carbon steels, slitting high-tensile stainless steel causes rapid wear and micro-chipping on D2 edges. ASP23 Powder Metallurgy steel is highly recommended for stainless strips under 1.0mm thickness. Its uniform carbide structure resists chipping, delivering 3 to 5 times the edge life of D2 and minimizing machine downtime.",
+            "Specify each knife's outside diameter, bore, axial width and keyway, together with the spacer widths and stack arrangement. Include the foil specification, slit-width schedule and quantity of each configuration. Identify the parts that will remain in use so new knives and spacers can be considered within the complete arbor layout.",
         },
         {
           question:
-            "How do you prevent 'galling' or metal build-up when slitting aluminum?",
+            "How do foil gauge and edge damage affect the choice of steel or carbide?",
           answer:
-            "Aluminum is highly susceptible to galling (cold welding to the blade). We prevent this by mirror-lapping the side faces of the blades to a surface roughness of Ra ≤0.02μm. This ultra-smooth finish reduces the friction coefficient, preventing aluminum particles from adhering to the knife and scratching your finished coils.",
+            "Foil alloy, thickness, surface condition and the required slit edge provide the starting point. Compare the current knife's gradual wear and any edge chipping at that station. The material choice should address the observed condition while retaining the required knife geometry and paired setup, rather than being selected from hardness alone.",
         },
         {
-          question: "Why is a ±0.001mm thickness tolerance necessary?",
+          question: "What can cause burrs on slit copper or aluminum foil?",
           answer:
-            "In gang slitting operations, multiple knives and spacers are stacked on the arbor. If a blade has a ±0.005mm tolerance, stacking 20 blades creates a cumulative error of ±0.100mm. This will cause the slit coils to be out of width specification and induce camber (bowing). Our ±0.001mm tolerance ensures absolute precision across the entire arbor stack.",
-        },
-        {
-          question: "Can you supply matching precision spacers?",
-          answer:
-            "Yes, precision slitting requires both knives and spacers to have identical tolerances. We manufacture lightweight aluminum, steel, and bonded-rubber strippers/spacers ground to the same ±0.001mm thickness tolerances as our slitter knives.",
-        },
-      ],
-      company: [
-        {
-          question: "Do you supply matched knife sets with inspection reports?",
-          answer:
-            "Yes. For multi-knife gang slitting arbors, we supply matched sets accompanied by a CMM inspection report. This documents the exact thickness of each individual knife, guaranteeing the set meets your cumulative tolerance requirements before installation.",
+            "Knife-edge condition, assembled clearances, arbor condition and alignment all need attention when burrs appear. Compare the foil specification with the setup being used, then record which edge and slit position is affected. This makes it easier to distinguish a damaged knife from a recurring issue with the stack or operating setup.",
         },
         {
           question:
-            "What is the lead time for PM steel or Carbide slitter knives?",
+            "Why can slit widths vary even when individual knives are accurate?",
           answer:
-            "Standard D2 and basic PM steel sizes can typically be manufactured in 10–15 working days. Solid Tungsten Carbide and highly specialized PM alloys require complex lapping and grinding, usually taking 15–25 working days depending on the OD and tolerance requirements.",
+            "A knife's axial width describes the individual component, while the assembled knife-and-spacer arrangement establishes the cutting positions. Accurate replacement knives still need to occupy the intended positions within that layout. Read their dimensions alongside the stack drawing and spacer widths, especially where some components are retained from an existing setup.",
+        },
+        {
+          question:
+            "Are bare-foil knives and coated battery electrode knives interchangeable?",
+          answer:
+            "Bare copper or aluminum foil and coated battery electrodes present different slitting requirements. An electrode combines collector foil with coating layers, so its cutting profile and paired setup must suit that construction. Identify the actual web and station when selecting a replacement; coated anode and cathode applications are covered under [Battery Slitting Knives](/products/lithium-battery-slitting-knives).",
+        },
+        {
+          question:
+            "Can I reuse existing spacers when replacing foil slitter knives?",
+          answer:
+            "Yes, if the retained spacers still meet the width, bore and face requirements of the intended stack. Record their actual dimensions and positions alongside the new knife widths and slit-width schedule. Confirm the assembled layout before ordering so the replacement knives work with the spacers you intend to keep.",
         },
       ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
+    ],
   },
   // ─────────────────────────────────────────────────────────────────────────
   // 3a. Twin Shaft Shredder Blades — Recycling & Waste
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Keep your recycling line supplied with replacement twin-shaft shredder blades built around your existing cutter stack. Custom hook profiles, thicknesses and wire-EDM bores are available. Share your drawing or sample for a quotation for individual cutters or a complete set. Machine brands are compatibility references for Sureay aftermarket parts.",
     id: "twin-shaft-blades-recycling",
-    name: "Twin Shaft Shredder Blades",
-    fullName:
-      "Heavy-Duty D2/SKD11 Twin Shaft Claw Blades for Plastic, MSW & Wood Recycling",
+    name: "Twin-Shaft Shredder Blades",
+    fullName: "Twin-Shaft Shredder Blades for General Recycling",
+    seoTitle: "Twin-Shaft Shredder Blades | Plastics & Mixed Waste",
+    seoDescription:
+      "Replacement twin-shaft shredder blades for plastics, wood pallets and mixed waste. D2, SKD11 and 42CrMo options with custom hooks and bores.",
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Shredder Blades",
-    image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+    image:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
+    imageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: { width: 1280, height: 1280, smallerWidths: [320, 640] },
     gallery: [
-      "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Twin shaft (double shaft) shredder blades for plastic, tire, metal & MSW recycling. Chromium carbide D2/SKD11, vacuum-hardened HRC 55\u201362 with deep cryogenic treatment. Engineered on the intersecting scissor-action principle for high-volume shredding. Custom 3\u201312 claw geometries. Wire-EDM bores for zero-backlash fit on Weima, Untha, SSI & Vecoplan rotors.",
-
-    fullDescription:
-      "Twin-shaft shredder blades operate on the intersecting scissor-action principle\u2014two counter-rotating shafts with interlocking claw blades that shear feedstock through a scissor interface, delivering aggressive grabbing force with low torque demand.\n\nWhen processing highly abrasive bulky waste\u2014such as metal-contaminated MSW, thick-wall plastic purges, or mixed rigid plastic bales\u2014substandard blades suffer from premature edge rounding, bore elongation, and catastrophic hook fracture.\n\nSureay multi-shaft shredder blades are manufactured from D2 (1.2379), SKD11, and 42CrMo tool steels, vacuum-hardened and tempered through 4–5 cycles to achieve a fully stabilized martensitic microstructure (HRC 55–62). The deep cryogenic sub-zero treatment stage (−196°C, 24-hour soak) eliminates retained austenite and substantially increases wear resistance without sacrificing the toughness margin needed to prevent bulk fracture on contaminated feedstocks.\n\n## FEA-Optimized Hook Geometry\n\nThe profile of the cutting hook dictates grabbing efficiency and resistance to fatigue. Sureay utilizes Finite Element Analysis (FEA) simulation to optimize stress distribution across the blade during high-torque impacts. Three-claw (3C) designs deliver aggressive grabbing force for large timber and IBC totes; 8-claw (8C) configurations are optimized for mixed rigid plastics and MSW; 12-claw (12C) variants produce finer output particle sizing for downstream processing. All hook profiles are reinforced at the root radius to resist deformation under sustained cyclic loading.\n\n## Precision Wire-EDM Bores\n\nA loose fit between the blade bore and the rotor shaft creates micro-impacts that progressively elongate the bore and destroy the shaft. Sureay eliminates this failure mode: all inner mounting bores—hexagonal, octagonal, or splined—are processed using precision Wire-EDM, guaranteeing a zero-backlash, drop-in fit for SSI, Untha, Weima, and Vecoplan rotor systems.\n\n## Alloy Selection by Feedstock\n\nD2 (1.2379) — Mixed Plastics & Light Waste: Post-consumer HDPE bottles, PET trays, PP moulded parts, and mixed rigid plastic bales. Cost-effective chromium-carbide abrasion resistance for general recycling lines.\n\nSKD11 — Abrasive Contaminated Streams: Glass-filled engineering plastics, dirty agricultural films, and high-contamination post-industrial scrap. SKD11's superior toughness extends insert service life on hard-face materials within contaminated streams.\n\n42CrMo — Timber & Metal-Inclusive Waste: Wood pallets, bulky MSW, and post-industrial scrap with metal contamination risk. 42CrMo's higher impact energy absorption prevents brittle fracture that causes catastrophic rotor damage on a metal strike.\n\nSureay twin shaft shredder blades are proven in demanding applications worldwide: plastic shredder blades for post-consumer recycling, tire shredder blades for TDF and crumb rubber production, and metal shredder blades for light-gauge ferrous and non-ferrous scrap processing.",
-
+      "D2/SKD11 replacement blades for twin-shaft shredders processing plastics, wood and MSW. Custom bores, thicknesses and hook profiles made to drawing.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
-    compatibleMachines: [
-      "WEIMA",
-      "UNTHA",
-      "Vecoplan",
-      "SSI Shredding Systems",
-      "Lindner",
-      "Erdwich",
-      "BRT Hartner",
-      "ZERMA",
-    ],
-
     specs: [
       { label: "Material", value: "D2 (1.2379), SKD11, 42CrMo" },
       { label: "Hardness", value: "HRC 55–62 (4–5 tempering cycles)" },
-      { label: "Claw Count", value: "3-Claw · 8-Claw · 12-Claw (custom)" },
-      { label: "Thickness", value: "10 mm – 150 mm" },
+      { label: "Claw Count", value: "3-Claw · 5-Claw · 8-Claw · 12-Claw" },
       {
         label: "Bore Design",
         value: "Precision Wire-EDM: Hex / Octagonal / Splined",
@@ -880,32 +993,17 @@ export const blades: Blade[] = [
         label: "Application",
         value: "MSW · Plastics · Wood Pallets · Bulky Waste",
       },
-    ],
-
-    components: [
       {
-        id: "fea-geometry",
-        tag: "ENGINEERING",
-        title: "FEA-Optimized Hook Profile",
-        description:
-          "Hook geometry designed via Finite Element Analysis to eliminate stress concentrators. 3-claw, 8-claw, and 12-claw configurations provide the correct grabbing force for every feedstock type.",
-      },
-      {
-        id: "wire-edm",
-        tag: "PRECISION",
-        title: "Precision Wire-EDM Bores",
-        description:
-          "All mounting bores are cut by Wire-EDM to ±0.01mm, guaranteeing a zero-backlash drop-in fit that eliminates the micro-rocking that causes shaft damage and bore elongation.",
-      },
-      {
-        id: "cryogenic-treatment",
-        tag: "METALLURGY",
-        title: "Deep Cryogenic Treatment",
-        description:
-          "Post-hardening cryogenic processing at −196°C eliminates retained austenite, stabilizing the martensite microstructure for up to 40% greater wear resistance without reducing toughness.",
+        label: "Sizes",
+        value:
+          "Listed OD Ø150–450 mm; custom OD up to Ø800 mm; thickness 10–150 mm",
       },
     ],
-
+    relatedBladeIds: [
+      "multi-shaft-blades-metal",
+      "tire-shredder-blades",
+      "twin-shaft-blades-battery",
+    ],
     dimensionLabels: {
       col0: "Shredder Series",
       col1: "Blade Outer Diameter",
@@ -915,9 +1013,9 @@ export const blades: Blade[] = [
       caption:
         "* Standard series Φ150–Φ450 mm. Custom OD up to Φ800 mm, bore hex/octagonal/splined, and claw profiles available on request.",
     },
-
     standardDimensions: [
       {
+        itemNo: "SR002101",
         spec: "200 Series",
         od: "Φ 150 mm",
         thickness: "15 mm",
@@ -925,6 +1023,7 @@ export const blades: Blade[] = [
         hooks: "5-Claw",
       },
       {
+        itemNo: "SR002102",
         spec: "400 Series",
         od: "Φ 180 mm",
         thickness: "20 mm",
@@ -932,6 +1031,7 @@ export const blades: Blade[] = [
         hooks: "8-Claw",
       },
       {
+        itemNo: "SR002103",
         spec: "600 Series",
         od: "Φ 200 mm",
         thickness: "20 mm",
@@ -939,6 +1039,7 @@ export const blades: Blade[] = [
         hooks: "8-Claw",
       },
       {
+        itemNo: "SR002104",
         spec: "800 Series",
         od: "Φ 250 mm",
         thickness: "25 mm",
@@ -946,6 +1047,7 @@ export const blades: Blade[] = [
         hooks: "8-Claw",
       },
       {
+        itemNo: "SR002105",
         spec: "1000 Series",
         od: "Φ 300 mm",
         thickness: "30 mm",
@@ -953,6 +1055,7 @@ export const blades: Blade[] = [
         hooks: "12-Claw",
       },
       {
+        itemNo: "SR002106",
         spec: "1200 Series",
         od: "Φ 350 mm",
         thickness: "40 mm",
@@ -960,6 +1063,7 @@ export const blades: Blade[] = [
         hooks: "12-Claw",
       },
       {
+        itemNo: "SR002107",
         spec: "1500 Series",
         od: "Φ 400 mm",
         thickness: "40 mm",
@@ -967,6 +1071,7 @@ export const blades: Blade[] = [
         hooks: "3-Claw",
       },
       {
+        itemNo: "SR002108",
         spec: "2000 Series",
         od: "Φ 450 mm",
         thickness: "30 mm",
@@ -974,91 +1079,94 @@ export const blades: Blade[] = [
         hooks: "3-Claw",
       },
     ],
-    relatedBladeIds: [
-      "tire-shredder-blades",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 45,
       highPrice: 600,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-recycling-advantage-1",
+        tag: "Steel Options for General Recycling",
+        title: "Steel Options for General Recycling",
+        description:
+          "D2, SKD11 and 42CrMo cutters are available for plastics, wood pallets and mixed-waste shredding, giving replacement orders a material choice alongside the required hook and shaft geometry.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-2",
+        tag: "Custom Hooks and Wire-EDM Bores",
+        title: "Custom Hooks and Wire-EDM Bores",
+        description:
+          "Sureay makes hooked cutters with hexagonal, octagonal or splined bores. Listed configurations span Ø150–450 mm, with custom diameters up to Ø800 mm for drawing-based replacements.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-3",
+        tag: "Individual Cutters and Complete Changeout Sets",
+        title: "Individual Cutters and Complete Changeout Sets",
+        description:
+          "Order a single cutter configuration or a set covering several shaft positions, with the required thicknesses, hook orientations and quantities defined for your installed cutting stack.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "How do I choose between 3-claw, 8-claw, and 12-claw blade designs?",
+          question: "Which replacement blades fit a twin-shaft shredder?",
           answer:
-            "Claw count directly controls the blade's grabbing frequency and output particle size. 3-claw (3C) blades are designed for high-torque primary shredding of bulky stock—wooden pallets and large HDPE containers—where aggressive hook geometry provides maximum bite. 8-claw (8C) is the general-purpose standard for mixed MSW, plastic bales, and post-industrial scrap. 12-claw (12C) configurations produce finer output particles from lighter feedstocks such as rigid household plastics and packaging.",
+            "A replacement fits when its bore, hook profile, thickness and installed orientation match its position in the cutter stack. Two cutters with the same outside diameter can have different bore sizes or hook directions. Use the part reference and spacer layout to tell similar cutters apart.",
         },
         {
-          question:
-            "Why does Sureay use Wire-EDM for inner bores instead of broaching?",
+          question: "Are twin-shaft, double-shaft and dual-shaft shredder blades the same?",
           answer:
-            "Standard broaching creates dimensional tolerances of ±0.1–0.2mm and introduces residual surface stress in the bore wall. Over millions of rotor cycles, this gap allows micro-rocking—progressive bore elongation that eventually destroys the rotor shaft. Precision Wire-EDM machines bores to ±0.01mm accuracy with a stress-free cut surface, eliminating the clearance that causes micro-rocking.",
+            "Yes. In rotary-shear recycling equipment, all three names commonly refer to cutters on the machine's two shafts. Hooked cutters and claw blades describe the cutting outline. A knife set refers to multiple parts, so match each cutter to its own shaft position.",
         },
         {
-          question:
-            "How do I choose between D2, SKD11, and 42CrMo for contaminated plastic or MSW shredding?",
+          question: "How do hook count and cutter thickness affect replacement selection?",
           answer:
-            "D2 (1.2379) is correct for post-consumer plastic bales with residual dirt and trace contamination. Upgrade to SKD11 when your feedstock includes glass-reinforced engineering plastics (PA66-GF30, ABS) mixed into contaminated streams. Select 42CrMo for timber or industrial scrap with high metal contamination risk—its higher impact energy absorption prevents brittle fracture on a metal strike.",
+            "Hook geometry influences how the cutter engages the feed. Cutter thickness and spacer width establish the axial arrangement of the cutting stack. Retain those dimensions for a like-for-like replacement. A change in hook count or width needs to be considered with the opposing cutters and the material being processed.",
         },
         {
-          question:
-            "How often should twin-shaft shredder blades be indexed or replaced on a continuous recycling line?",
+          question: "When should wear resistance or toughness guide the steel choice?",
           answer:
-            "On a 16-hour continuous line processing post-consumer HDPE and PP, schedule first indexing at 400–600 operating hours with D2, and 600–800 hours with SKD11 on clean feedstock. Contaminated or glass-filled streams reduce these intervals by 30–40%. Fixed tonnage-milestone indexing is recommended rather than waiting for visible edge rounding.",
+            "Gradual rounding of the working edge makes wear resistance a useful comparison. Repeated chips or broken hooks also require attention to toughness, edge support and feed impact. Evaluate the original steel and heat-treated condition together with the damage pattern, so the replacement material addresses the condition observed on that machine.",
         },
         {
-          question:
-            "Do you supply counter-knives and sizing screens as a complete tooling system?",
+          question: "What can cause cutters to wear or chip prematurely?",
           answer:
-            "Yes. We manufacture matched stationary counter-knives and perforated sizing screens as a complete twin-shaft shredding tooling system. Supplying rotor blades and counter-knives from the same grinding run ensures consistent shear clearance across the full rotor-to-bed interface.",
+            "Abrasive feed can accelerate gradual wear, while unexpected hard objects or excessive local loading can damage hooks and cutting faces. A loose or incorrectly assembled cutter stack can contribute to damage as well. Compare where the damage occurs with the feed history and stack condition before changing the replacement specification.",
+        },
+        {
+          question: "Do plastics, scrap metal and tires use the same cutter configuration?",
+          answer:
+            "Usually no. General recycling cutters are configured for plastics, wood pallets and mixed waste. The feed loads and cutter geometry differ in dedicated [Scrap Metal Shredder Blades](/products/multi-shaft-blades-metal) and [Tire Shredder Blades](/products/tire-shredder-blades). Choose the range for your feed and match the configuration to your installed machine.",
+        },
+        {
+          question: "What information do you need to quote twin-shaft shredder blades?",
+          answer:
+            "Send the machine model, cutter drawing or part number, feed material and quantities by shaft position. For a complete changeout, include the spacer layout, cutter thicknesses and hook directions. A worn sample can show the bore and mounting details. Mark the worn hook tips and add an unused reference or original drawing if available.",
         },
       ],
-      company: [
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
-        },
-        {
-          question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
-          answer:
-            "Unlike standard single-cycle quenching, every Sureay shredder blade undergoes vacuum hardening followed by 4–5 tempering cycles and deep cryogenic treatment at −196°C. This stabilizes the full martensite microstructure, boosting wear resistance by up to 40%.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question: "What quality certifications does Sureay hold?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
-        },
-        {
-          question:
-            "Can we trial a sample set before committing to a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the machine model, cutter OD, thickness, bore profile, hook count and spacer width.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 3b. Multi-Shaft Shredder Blades — Metal Processing
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Source replacement scrap-metal shredder cutters with the hook geometry and shaft interface your machine needs. Sureay offers H13 and 42CrMo configurations with custom splined or keyed bores. Share your cutter drawings for a quotation covering individual positions or a multi-shaft set. Machine brands are compatibility references for Sureay aftermarket parts.",
     id: "multi-shaft-blades-metal",
-    name: "Metal Shredder Blades",
-    fullName: "High-Impact Multi-Shaft Blades for Scrap Metal, ELV & E-Waste",
+    name: "Scrap Metal Shredder Blades",
+    fullName: "Scrap Metal Shredder Blades for Multi-Shaft Machines",
+    seoTitle: "Scrap Metal Shredder Blades | H13 & 42CrMo",
+    seoDescription:
+      "Source H13 or 42CrMo cutters for multi-shaft shredders processing end-of-life vehicles, e-scrap or appliances. Specify the hook profile and splined or keyed bore.",
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Metal Shredder Blades",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: { width: 1920, height: 1309, smallerWidths: [320, 640] },
     badge: "Heavy Duty",
     badgeColor: "red",
     gallery: [
@@ -1067,20 +1175,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Designed to survive the catastrophic shock loads of scrap metal, ELV (end-of-life vehicle), and e-waste twin-shaft shredding. Forged from premium H13 and 42CrMo (AISI 4140) alloy steels. These heavy-duty blades prioritize core toughness to prevent brittle fracture when striking solid metal inclusions.",
-    fullDescription:
-      "When a twin-shaft shredder encounters an engine block, a steel I-beam, or compacted e-waste, the blades face catastrophic shock loads measured in tens of thousands of Newtons per millisecond. Using standard high-carbon tool steels (like D2) in these applications leads to immediate brittle fracture and shattered hooks—causing severe rotor damage, unplanned downtime, and potentially dangerous projectile fragments.\n\nFor heavy metal processing, toughness is paramount over extreme hardness. Sureay engineers these specific blades from **H13 (AISI H13 / 1.2344)** hot-work tool steel and high-strength **42CrMo (AISI 4140)** alloy through a specialized deep-tempering thermal cycle. Surface hardness is held deliberately at HRC 50–54. This controlled lower hardness provides massive core elasticity, allowing the blade to absorb extreme kinetic impacts without chipping or shattering.\n\n## Low-Profile Hook Geometry for Maximum Biting Force\n\nMetal shredding requires immense biting force rather than grabbing frequency. Sureay designs 1-hook, 2-hook, and 3-hook low-profile geometries with heavy root thickness. These robust claw profiles can grip and shear thick metal casings, aluminum profiles, and automotive sub-assemblies without hook fracture.\n\n## Heavy Splined Bores: Zero-Slippage Torque Transfer\n\nHeavy scrap metal generates massive rotor reaction torques that can shear standard keyed bores. Sureay machines all inner bores for heavy metal shredders using precision Wire-EDM-cut spline profiles. This provides full circumferential torque engagement between the blade and the shaft—eliminating the key-shear failure mode and preventing the progressive bore-to-shaft fretting that destroys rotors in standard metal shredding operations.\n\n## Alloy Selection by Scrap Profile\n\n**H13 (1.2344) — E-Waste & Light Mixed Scrap:** Circuit board assemblies, aluminum extrusions, copper cable bundles, and ICT equipment. H13's superior hot-toughness handles the friction-induced heating peaks typical of electronics scrap.\n\n**42CrMo (AISI 4140) — ELV & Heavy Scrap:** Engine blocks, transmission casings, steel coil offcuts, and structural steel. 42CrMo's exceptional impact energy absorption (Charpy V-notch > 35J) is the definitive choice for the heaviest shock-load applications in automotive and metal demolition.",
+      "Replacement multi-shaft shredder cutters for scrap metal, ELV and WEEE. H13 and 42CrMo options, with custom splined or keyed bores to drawing.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
-    compatibleMachines: [
-      "Shred-Tech",
-      "Arjes",
-      "Forus",
-      "SSI Shredding",
-      "Bano",
-      "Hammel",
-    ],
-
     specs: [
       {
         label: "Material",
@@ -1088,10 +1185,9 @@ export const blades: Blade[] = [
       },
       {
         label: "Hardness",
-        value: "HRC 50–54 (Optimized for Shock Absorption)",
+        value: "HRC 50–54",
       },
       { label: "Claw Geometry", value: "1, 2, or 3 Low-Profile Thick Hooks" },
-      { label: "Thickness", value: "40 mm – 150 mm (Heavy Duty)" },
       {
         label: "Bore Design",
         value: "Heavy Splined / Multi-Keyway (Wire-EDM)",
@@ -1102,31 +1198,6 @@ export const blades: Blade[] = [
         value: "Scrap Metal · ELV · E-Waste · Appliances (WEEE)",
       },
     ],
-
-    components: [
-      {
-        id: "impact-alloy",
-        tag: "METALLURGY",
-        title: "Massive Core Toughness",
-        description:
-          "Held at HRC 50–54, H13 and 42CrMo alloys provide the massive core elasticity needed to absorb extreme kinetic impacts, avoiding the catastrophic shattering typical of D2 blades.",
-      },
-      {
-        id: "heavy-spline",
-        tag: "TORQUE TRANSFER",
-        title: "Zero-Slippage Splines",
-        description:
-          "Full-circumference spline bores machined by Wire-EDM to ±0.01mm ensure zero-slippage torque transfer under extreme shredding loads, eliminating rotor shaft damage.",
-      },
-      {
-        id: "low-profile-hooks",
-        tag: "GEOMETRY",
-        title: "Low-Profile Biting Hooks",
-        description:
-          "1 to 3 heavy-root-thickness hooks provide maximum biting force per stroke for shearing thick metal casings, without the fracture risks associated with multi-claw designs.",
-      },
-    ],
-
     dimensionLabels: {
       col0: "Scrap Class",
       col1: "Outer Diameter",
@@ -1136,9 +1207,9 @@ export const blades: Blade[] = [
       caption:
         "* Custom OD up to Ø800+ mm, specific spline profiles, and custom thicknesses available. Send us your rotor shaft drawing for an exact match.",
     },
-
     standardDimensions: [
       {
+        itemNo: "SR002201",
         spec: "E-Waste / Light Scrap",
         od: "Φ 300–450 mm",
         thickness: "40–60 mm",
@@ -1146,6 +1217,7 @@ export const blades: Blade[] = [
         hooks: "3 Hooks",
       },
       {
+        itemNo: "SR002202",
         spec: "Appliances / Steel Drums",
         od: "Φ 450–600 mm",
         thickness: "60–80 mm",
@@ -1153,6 +1225,7 @@ export const blades: Blade[] = [
         hooks: "2–3 Hooks",
       },
       {
+        itemNo: "SR002203",
         spec: "ELV / Heavy Demolition",
         od: "Φ 600–800+ mm",
         thickness: "80–150 mm",
@@ -1160,60 +1233,80 @@ export const blades: Blade[] = [
         hooks: "1–2 Hooks",
       },
     ],
-
-    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "scrap-chopper-blades",
+      "metal-shear-knives",
+    ],
     offers: {
       lowPrice: 250,
       highPrice: 3500,
     },
+    components: [
+      {
+        id: "multi-shaft-blades-metal-advantage-1",
+        tag: "H13 and 42CrMo Cutter Options",
+        title: "H13 and 42CrMo Cutter Options",
+        description:
+          "H13 and 42CrMo configurations give scrap processors material options for replacement cutters, with the specified steel considered alongside the metal stream and existing thick-hook design.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-2",
+        tag: "One-, Two- and Three-Hook Profiles",
+        title: "One-, Two- and Three-Hook Profiles",
+        description:
+          "Sureay supplies low-profile thick-hook cutters in listed one-, two- and three-hook configurations. Splined and multi-keyway bores can be made to the shaft drawing, with the hook position defined relative to the bore.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-3",
+        tag: "Replacement Sets by Shaft Position",
+        title: "Replacement Sets by Shaft Position",
+        description:
+          "Individual cutters and multi-position sets can be ordered with distinct drawing references for each shaft, supporting changeouts where the machine uses several cutter widths or profiles.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "Why choose H13 or 42CrMo over D2 for metal shredding applications?",
+          question: "How are replacement scrap-metal shredder cutters identified?",
           answer:
-            "D2 is optimized for wear resistance at the expense of toughness—it reaches HRC 58–62 but becomes brittle under extreme shock loading. When a D2 blade strikes an engine block, the impact energy exceeds the material's fracture toughness in microseconds, causing catastrophic hook shattering. H13 and 42CrMo (AISI 4140) possess inherently superior toughness; at HRC 50–54, they absorb the same impact energy elastically rather than fracturing.",
+            "Identify the shaft and cutter position, then compare diameter, axial thickness, hook form and shaft interface. Multi-shaft machines can use different designs within the same cutting chamber. The machine model, original part number and assembly drawing provide the reference for a replacement set, including the relationship to retained spacers and cutters.",
         },
         {
-          question:
-            "What hook count and profile should I specify for ELV automotive shredding?",
+          question: "Are rotary shredder cutters, hammers and scrap shear blades interchangeable?",
           answer:
-            "For ELV primary shredding (car bodies, engine subassemblies), specify 1-hook or 2-hook low-profile designs with maximum root thickness. A low claw count concentrates the available machine torque onto fewer, robust hook contacts, generating the massive biting force needed to penetrate thick steel. High claw counts spread torque too thinly, causing the blade to slide over the metal rather than biting into it.",
+            "No. Rotary cutters interleave on shredder shafts, hammermill hammers break material by impact, and [Alligator Shear Blades](/products/metal-shear-knives) cut as a jaw-mounted pair. The equipment type establishes which wear part to order.",
         },
         {
-          question:
-            "How do splined bores prevent rotor shaft damage in heavy metal shredding?",
+          question: "Which scrap characteristics matter when choosing cutter material?",
           answer:
-            "In heavy metal shredding, peak rotor torque spikes to 3–5× steady-state load during a hard strike. Standard single-keyed bores concentrate all this torque on one point, progressively widening the keyway and ultimately shearing the key. Wire-EDM splined bores distribute this massive torque evenly across 10 to 20 contact faces around the full circumference, reducing peak stress and protecting your expensive rotor shaft.",
+            "The thickest metal sections, strength of the feed and presence of mixed or abrasive material affect the loads at the edge. Light appliance sheet, electronic scrap and dense metal sections can produce different wear patterns. Compare those conditions with the existing H13 or 42CrMo specification and the condition of the used hooks.",
         },
         {
-          question:
-            "What are the warning signs that metal shredder blades need replacement?",
+          question: "Why can a harder scrap-metal cutter still suffer edge breakage?",
           answer:
-            "Key indicators include: (1) Visible hairline fractures at the hook root; (2) Outer diameter (OD) wear exceeding 10–15mm below nominal, indicating a loss of shear clearance; (3) Bore elongation, meaning the blade rocks on the shaft even under full tightening torque; (4) A throughput reduction of >20% at a constant motor load, indicating the blades are pushing rather than shearing the scrap.",
+            "Hardness is only one part of the material specification. Repeated impact, concentrated loading at a hook and inadequate support can cause breakage even when abrasive wear is limited. Evaluate the cutter shape, heat-treated condition and actual feed together before changing hardness, particularly when the current failure is localized chipping rather than gradual wear.",
+        },
+        {
+          question: "Can splined and multi-keyway cutter bores be customized?",
+          answer:
+            "Yes. Sureay can manufacture the shaft interface to the cutter drawing, including spline or keyway geometry, seating faces and orientation. The drawing should locate the bore features relative to the hook profile. This is particularly useful when adjacent cutters have similar diameters but different clocking or shaft connections.",
+        },
+        {
+          question: "Can a replacement scrap-metal cutter keep the original hook profile?",
+          answer:
+            "Yes. Use the original hook count, outline and body thickness on the drawing, with the bore clocked to the hook profile. Use an unworn reference to recover the intended tip geometry if the old cutter has chipped or rounded hooks.",
+        },
+        {
+          question: "How do I request a quote for a multi-shaft scrap-metal cutter set?",
+          answer:
+            "Provide the machine model, scrap stream and thickest sections, then list the cutter drawings and quantities by shaft and position. Mark which spacers and cutters will stay in service. Separate line items distinguish low-profile hook shapes, axial widths and bore orientations even when cutter diameters match.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can you supply blades for Shred-Tech, Arjes, or Forus shredding platforms?",
-          answer:
-            "Yes. We reverse-engineer replacement blades from factory-measured OEM samples for Shred-Tech ST series, Arjes Imperator/Orion, Forus heavy-duty shredders, and SSI platforms. Custom spline profiles and counter-bore patterns are produced with extreme precision using Wire-EDM.",
-        },
-        {
-          question:
-            "What is the lead time for heavy-duty metal shredder blades?",
-          answer:
-            "Standard H13 and 42CrMo grades in common dimensions are held in semi-finished stock and typically ship within 10–15 working days. For non-standard massive ODs or custom spline profiles requiring new tooling, lead time is 20–25 working days.",
-        },
-        {
-          question:
-            "What quality certifications and documentation do you provide?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. For heavy metal shredder blades, we provide full traceability: Rockwell HRC hardness test reports (minimum 5 points per blade), Charpy impact test certificates for 42CrMo grades, CMM dimensional inspection records, and steel mill composition certificates.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the machine model, scrap type, cutter and spacer drawings, and which shaft the part came from.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1221,13 +1314,15 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "twin-shaft-blades-battery",
-    name: "Battery Recycling Blades",
-    fullName:
-      "Precision Twin Shaft Shredder Blades for Li-Ion Battery Recycling",
+    name: "Battery Recycling Shredder Blades",
+    fullName: "Battery Recycling Shredder Blades for Pre-Shredding",
+    seoTitle: "Battery Recycling Shredder Blades | Custom Replacements",
     category: "shredder_blades",
     sector: "new_energy",
     categoryDisplay: "Shredder Blades",
     image: "/images/products/shredder-blades/shredder-blades.webp",
+    imageDimensions: { width: 1920, height: 1920, smallerWidths: [320, 640] },
+    specificationImageDimensions: { width: 1920, height: 1440, smallerWidths: [320, 640] },
     badge: "New Energy",
     badgeColor: "teal",
     gallery: [
@@ -1236,48 +1331,24 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Engineered for the critical pre-shredding of EV lithium-ion battery packs, modules, and cells under inert gas environments. Precision ground to ±0.02mm thickness parallelism to ensure exacting shear clearances that prevent foil tearing and thermal runaway. Specialized alloy selection and surface treatments resist the highly corrosive effects of LiPF6 battery electrolytes.",
-    fullDescription:
-      "The recycling of lithium-ion (Li-ion) batteries presents unique mechanical and chemical challenges that standard shredder blades cannot reliably handle. Pre-shredding of battery packs and cylindrical cells frequently occurs in nitrogen-purged atmospheres to suppress fire and thermal runaway risk. Standard shredder blades fail prematurely in this environment through two distinct mechanisms: electrolyte corrosion from LiPF6 and HF acid released during cell breach, and mechanical failure caused by imprecise shear clearances that fold—rather than cut—the thin copper (8–12μm) and aluminum (15–20μm) current collector foils inside battery cells.\n\n## Micro-Clearance Precision Grinding (±0.02mm)\n\nIf the gap between counter-rotating twin-shaft blades is too wide, battery foils do not shear—they fold, stretch, and wrap around the rotor, causing immediate jams in an inert gas environment. Clearing a rotor jam under nitrogen requires complete system shutdown, purge, and manual removal—hours of downtime consuming significant N₂. Sureay battery shredder blades are precision ground to ±0.02mm thickness parallelism across the full blade face, ensuring minimum consistent shear clearance across the entire rotor for clean, controlled cuts on pouch cells, prismatic modules, and cylindrical 18650/21700 battery packs.\n\n## Electrolyte Corrosion Resistance\n\nLiPF6 electrolytes hydrolyze on contact with atmospheric moisture to produce hydrofluoric acid (HF)—one of the most aggressively corrosive industrial chemicals. Standard D2 or SKD11 tool steels corrode rapidly in this environment, with surface pitting initiating at grain boundaries within 200–500 operating hours. Sureay applies specialized anti-corrosion surface treatments and selects corrosion-resistant alloy grades for battery recycling applications, significantly extending service intervals.\n\n## Precision Wire-EDM Bore Profiles\n\nBattery pre-shredders operate at precise, computer-controlled rotor speeds where bore-to-shaft backlash directly affects blade position accuracy and shear gap consistency. All bore profiles are Wire-EDM machined to ±0.01mm, ensuring zero rotational play that could cause shear clearance inconsistency during the precision shredding of battery foil stacks.",
+      "Replacement rotary-shear cutters for battery-recycling pre-shredders. Custom cutter profiles and shaft interfaces made to approved drawings.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
-
     specs: [
       { label: "Tolerance", value: "±0.02 mm Thickness Parallelism" },
       { label: "Hardness", value: "HRC 54–58" },
       { label: "Bore Design", value: "Precision Wire-EDM Hex / Splined" },
-      { label: "Surface", value: "Anti-corrosion treatment available" },
+      { label: "Optional Coatings", value: "Anti-corrosion surface treatment available" },
       {
         label: "Application",
         value: "EV Battery Packs · Pouch Cells · 18650/21700",
       },
       { label: "Environment", value: "Inert gas (N₂ / Ar) compatible" },
     ],
-
-    components: [
-      {
-        id: "micro-clearance",
-        tag: "PRECISION",
-        title: "±0.02mm Thickness Parallelism",
-        description:
-          "Precision ground to ultra-tight thickness tolerances, ensuring consistent shear clearance across the full rotor for clean cuts on copper and aluminum battery foils without folding or rotor wrap-arounds.",
-      },
-      {
-        id: "corrosion-resistance",
-        tag: "DURABILITY",
-        title: "Electrolyte Corrosion Resistance",
-        description:
-          "Specialized metallurgy and surface treatments provide enhanced resistance to LiPF6-derived HF acid corrosion, extending blade service intervals in aggressive battery recycling chemical environments.",
-      },
-      {
-        id: "wire-edm-bore",
-        tag: "FITMENT",
-        title: "Wire-EDM Precision Bores",
-        description:
-          "All bore profiles are machined to ±0.01mm via Wire-EDM, eliminating rotational play that causes shear gap inconsistency during precision battery foil stack processing.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "lithium-battery-slitting-knives",
     ],
-
     dimensionLabels: {
       col0: "Cell / Module Type",
       col1: "Blade Outer Diameter",
@@ -1287,9 +1358,9 @@ export const blades: Blade[] = [
       caption:
         "* Exact bore profiles, OD, and thickness supplied to customer drawings. Inert-gas compatible material options available.",
     },
-
     standardDimensions: [
       {
+        itemNo: "SR002401",
         spec: "Cylindrical / Pouch Cells",
         od: "Φ 200–350 mm",
         thickness: "10–20 mm",
@@ -1297,6 +1368,7 @@ export const blades: Blade[] = [
         hooks: "±0.02 mm",
       },
       {
+        itemNo: "SR002402",
         spec: "EV Module / Battery Pack",
         od: "Φ 400–600 mm",
         thickness: "30–50 mm",
@@ -1304,63 +1376,72 @@ export const blades: Blade[] = [
         hooks: "±0.05 mm",
       },
     ],
-
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-    ],
     offers: {
       lowPrice: 300,
       highPrice: 3000,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-battery-advantage-1",
+        tag: "Drawing-Based Pre-Shredder Cutters",
+        title: "Drawing-Based Pre-Shredder Cutters",
+        description:
+          "Sureay supplies replacement battery pre-shredder cutters to the specified part drawing and revision. The listed cutter hardness is 54–58 HRC, with the material, finish and shaft interface set by the individual part specification.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-2",
+        tag: "Wire-EDM Hexagonal and Splined Bores",
+        title: "Wire-EDM Hexagonal and Splined Bores",
+        description:
+          "Hexagonal and splined shaft interfaces can be manufactured with the specified cutter thickness and seating geometry, so the bore and axial arrangement are addressed in the same replacement order.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-3",
+        tag: "Optional Corrosion-Resistant Surface Treatment",
+        title: "Optional Corrosion-Resistant Surface Treatment",
+        description:
+          "Optional anti-corrosion surface treatment is available for specified cutter configurations, allowing the finish requirement to be included alongside the material and dimensional requirements of the part.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "Why is ±0.02mm thickness tolerance critical for battery pack pre-shredding?",
+          question: "Which battery-recycling stage uses these cutters?",
           answer:
-            "Battery packs contain copper and aluminum current collector foils that are 8–20μm thick. When the shear gap between counter-rotating blades exceeds approximately 0.05mm, the foils deform plastically rather than shearing—folding and wrapping around the rotor, causing operational jams. In a nitrogen-purged environment, clearing a rotor jam requires complete shutdown of the inert gas system, evacuation, and manual removal—hours of downtime consuming significant N₂. Holding blade thickness parallelism to ±0.02mm guarantees a consistent minimum shear gap across the full rotor length, preventing foil wrap-arounds under normal operating conditions.",
+            "These rotary-shear cutters serve the pre-shredding stage of battery-recycling equipment. Later fine-shredding stages have different tooling. Battery manufacturing uses [Battery Slitting Knives](/products/lithium-battery-slitting-knives) for coated electrode webs. The equipment stage and existing cutter drawing establish which replacement belongs in the recycling machine.",
         },
         {
-          question:
-            "What causes blade corrosion in lithium-ion battery shredding environments?",
+          question: "Which dimensions determine whether a battery shredder cutter fits?",
           answer:
-            "LiPF6, the most common lithium-ion electrolyte salt, reacts with trace atmospheric moisture to produce HF (hydrofluoric acid). In a cell breach event during pre-shredding, even a nitrogen atmosphere contains enough residual moisture for partial hydrolysis. Standard tool steel grades (D2, SKD11) corrode rapidly in HF—surface pitting initiates at grain boundaries within 200–500 hours, degrading edge geometry and reducing shear efficiency. Sureay applies specialized anti-corrosion surface treatments to extend service intervals significantly beyond standard tool steels in battery recycling lines.",
+            "Fit depends on the cutter profile, bore or spline, seating faces and axial position matching the original assembly. Spacer widths determine where neighboring cutters seat. A stack drawing distinguishes similar cutter outlines assigned to different shaft positions.",
         },
         {
-          question:
-            "Should twin-shaft or single-shaft shredders be used for Li-ion battery pre-processing?",
+          question: "Can a cutter for battery cells also be used for modules or packs?",
           answer:
-            "Twin-shaft (dual-shaft) shredders are standard for EV battery pack primary size reduction because the counter-rotating, low-speed high-torque design subjects cells to controlled shear rather than impact. This controlled failure mode reduces acute thermal events compared to high-speed single-shaft impactors. Precision twin-shaft blades with controlled shear clearances are therefore the mechanical first-stage standard, followed by further downstream processing.",
+            "Only if the machine's approved configuration covers that feed. Cell, module and pack describe the input, and the same cutter dimensions can correspond to different pre-shredding duties. Use the approved part reference for your installed line and have any feed change assessed against its process requirements.",
         },
         {
-          question:
-            "What bore profiles are required for nitrogen-purged battery shredder platforms?",
+          question: "How should material and optional surface treatment be specified?",
           answer:
-            "Battery pre-shredders from specialist manufacturers (Erdwich, Hosokawa, Metso, and Andritz battery recycling lines) use proprietary rotor shaft profiles more precisely toleranced than general industrial shredders. Wire-EDM splined and hexagonal bores to ±0.01mm are required for zero-play rotor mounting—any rotational backlash at operating speed causes consistent shear gap variation and foil jam risk. We manufacture bore profiles to custom shaft drawings; please provide the rotor shaft profile drawing for exact bore specification.",
+            "State the material and surface treatment required by the cutter drawing as separate order requirements. For an optional corrosion-resistant treatment, define the requested finish together with the finished dimensions and mating surfaces. Selection should follow the line's component requirements, including any restrictions on changing the existing material or surface configuration.",
+        },
+        {
+          question: "How does a loose cutter stack affect replacement blades?",
+          answer:
+            "Loosening within the cutter and spacer stack can reduce shredding performance and increase the risk of assembly damage. New cutting edges alone do not correct a worn or inadequately secured stack. Review its condition against the machine's maintenance requirements, and retain the specified seating faces and axial dimensions when ordering replacement cutters.",
+        },
+        {
+          question: "How do I request a quote for battery pre-shredder cutters?",
+          answer:
+            "Send the line or machine model, approved cutter drawing and revision, quantity by shaft position, and required material and surface treatment. Specify the feed handled at that stage. If you need a revised part, mark the changed features and the retained seating and stack dimensions on the drawing.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can you supply matched rotor and counter-knife sets for battery pre-shredders?",
-          answer:
-            "Yes. For battery recycling lines where shear clearance consistency is paramount, we supply rotor blade sets and stationary counter-knives ground together as a matched pair to ensure the composite shear gap meets specification. All matched sets include a clearance verification certificate documenting the measured gap at multiple points across the rotor length.",
-        },
-        {
-          question:
-            "What quality documentation is provided for battery recycling plant qualification?",
-          answer:
-            "Battery recycling facilities frequently require enhanced quality documentation for process validation. We supply: CMM dimensional inspection reports, roundness and parallelism measurement records, surface treatment process certificates, material traceability from certified steel mill CoA through to final inspection, and hardness test results per blade. Application-specific documentation packages can be provided for IATF 16949 or ISO 45001 controlled environments.",
-        },
-        {
-          question:
-            "Do you offer sample blades for process validation before full production orders?",
-          answer:
-            "Yes. Battery recycling process qualification typically requires 2–4 sample blades for fit verification and electrolyte resistance testing before production commitment. Sample lead time is 10–15 working days for battery-grade specifications. We can participate in customer technical review calls during the validation process.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the pre-shredder model, approved cutter and spacer drawings, and your material or surface requirements.",
+    disambiguation:
+      "For electrode manufacturing, see [Lithium Battery Electrode Slitting Knives](/products/lithium-battery-slitting-knives).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1368,14 +1449,20 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "tissue-log-saw-blades",
+    seoDescription:
+      "Cut toilet tissue and kitchen towel logs with D2, Cr12MoV or M2 HSS blades. Listed diameters are 610–1000 mm, with custom sizes up to 1200 mm.",
     name: "Tissue Log Saw Blades",
-    fullName: "Premium Circular Log Saw Blades for Tissue & Towel Converting",
+    fullName: "Tissue Log Saw Blades for Paper Roll Converting",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Tissue Paper Blades",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
-    badge: "Zero Core Crush",
-    badgeColor: "blue",
+    imageDimensions: { width: 2000, height: 2000, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: {
+      width: 1108,
+      height: 1108,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
@@ -1388,161 +1475,68 @@ export const blades: Blade[] = [
       "Tissue log saw blade render showing mirror-polished face and drive pin hole pattern",
       "Stack of finished tissue log saw blades in a wooden packing crate at Sureay",
       "Tissue log saw blade packed in a wooden crate with edge protector before shipment",
-      "Ø610 mm D2 tissue log saw blade, mirror-polished face with drive pin holes",
-      "Ø68.26 mm bore and drive pin hole pattern for Fabio Perini log saws",
+      "Tissue log saw blade with a polished face and mounting holes",
+      "Central bore and mounting-hole pattern on a tissue log saw blade",
       "Tissue log saw blade face showing mirror-polished finish under workshop lighting",
     ],
-
     description:
-      "Tissue log saw blades Ø610–Ø1200 mm — vacuum-hardened D2/Cr12MoV (HRC 58–60), micro-ground to ≤0.15 mm lateral runout for zero-wobble cross-cutting. Eliminates crushed cores and paper dust on tissue, kitchen towel & JRT lines. In-line CBN sharpening compatible. Drop-in OEM fit for Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Custom diameters in 10 working days. Trusted log saw blades for tissue converting lines worldwide.",
-
-    fullDescription:
-      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage\u2014crushed cardboard cores, excessive dust generation, or angled cut faces\u2014propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.\n\nSureay tissue log saw blades are manufactured from premium D2 (1.2379) and Cr12MoV cold-work tool steels. Because these massive blades (up to \u00d81200\u202fmm) spin at extreme RPMs, stability is everything. Every blade is vacuum-hardened, tension-leveled, and micro-ground to strict dimensional tolerances verified on a calibrated CMM before dispatch:\n\n- **Lateral runout:** \u22640.15\u202fmm\n- **Edge runout:** \u22640.10\u202fmm\n- **Face parallelism:** 0.05\u202fmm\n- **Concentricity (OD to bore):** \u22640.30\u202fmm\n- **Bore tolerance:** \u00d868.26\u202fmm (+0.05\u202f/\u202f0.00\u202fmm)\n\n## Continuous Sharpening Compatibility\n\nUnlike standard circular knives, tissue log saws are continuously sharpened *during* operation by synchronized CBN (Cubic Boron Nitride) grinding wheels. Sureay\u2019s heat treatment targets HRC\u202f58\u201360. This specific hardness range ensures the blade hones cleanly against the CBN stones without loading or glazing them, maintaining a razor-sharp edge cycle after cycle without consuming your expensive sharpening wheels.\n\n## Bevel Geometry & Dust Reduction\n\nTissue is a low-density, high-surface-area web with near-zero compressive strength. Cutting it with too steep a bevel creates compression, leading to excessive paper dust (a major fire hazard in spray-glued towel lines) and edge densification that reduces roll softness. We utilize a shallow bevel angle (15\u00b0\u201325\u00b0) that separates fibers by pure shear. Combined with a mirror-polished blade face (Ra\u202f\u22640.2\u202f\u03bcm), this delivers flawless cuts on premium 2-ply and 3-ply bath tissue.\n\n## Bore Compatibility by OEM Platform\n\n**\u00d868.26\u202fmm (+0.05\u202fmm):** Fabio Perini (all series), PCMC Forte/Elite, K\u00f6rber/MTC log saws.\n\n**\u00d882.55\u202fmm:** Casmatic (Kimberly-Clark licensed platforms), Italian and Spanish third-party OEM log saw systems.\n\n**\u00d860.00\u202fmm:** Large-format log saws for industrial wiper, jumbo roll (JRT), and coreless bath tissue production (OD 870\u20131000\u202fmm).\n\nCustom OD from \u00d8610\u202fmm to \u00d81200\u202fmm manufactured to order with a standard 10-working-day lead time. Drawing review and dimensional sign-off available on first-order tooling.\n\n## Advanced Surface Coatings\n\n**Hard Chrome Plating:** Provides corrosion resistance in high-humidity paper mill environments (\u226575% RH) and reduces tissue fiber adhesion coefficient, extending the clean-running interval between blade dressing cycles.\n\n**Teflon (PTFE) Coating:** Creates a highly lubricated surface that glides through dense kitchen towel logs, drastically reducing motor amp draw and eliminating burn marks on the paper edges. The top specification for premium 3-ply kitchen towel lines.\n\n**TiN PVD Coating:** Physical vapour deposition titanium nitride (2\u20133\u202f\u03bcm, HV\u202f2300+) extends the sharp-edge service interval in high-cycle operation. Recommended for premium tissue brands with strict dust contamination specifications.",
+      "Replacement tissue log saw blades for toilet rolls and kitchen towels. D2, Cr12MoV or M2 HSS, with custom bores, mounting patterns and bevel profiles.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
-
     compatibleMachines: [
-      "Fabio Perini",
-      "PCMC",
-      "Casmatic",
-      "Gambini",
-      "Bretting",
-      "MTC",
-      "Futura",
-      "United Converting",
-      "Italconverting",
-      "Maflex",
-      "MTorres",
+      "Fabio Perini", "PCMC", "Casmatic", "Gambini", "Bretting", "MTC",
+      "Futura", "United Converting", "Italconverting", "Maflex", "MTorres",
     ],
-
-    specs: [
-      { label: "Material", value: "D2 (1.2379), Cr12MoV, M2 HSS" },
-      {
-        label: "Diameter Capacity",
-        value: "Standard \u00d8610\u202fmm up to Custom \u00d81200\u202fmm",
-      },
-      {
-        label: "Lateral Runout",
-        value: "\u22640.15\u202fmm (Zero-wobble guaranteed)",
-      },
-      { label: "Edge Runout", value: "\u22640.10\u202fmm" },
-      {
-        label: "Surface Finish",
-        value: "Mirror Polished (Ra\u202f\u22640.2\u202f\u03bcm)",
-      },
-      { label: "Optional Coatings", value: "Hard Chrome, Teflon (PTFE), TiN" },
-      {
-        label: "Applications",
-        value: "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)",
-      },
-      { label: "Max Line Speed", value: "300 strokes/min" },
-      {
-        label: "Inspection Records Supplied",
-        value:
-          "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment",
-      },
-    ],
-
-    steelGrades: {
-      intro:
-        "Log saw blade life on a tissue line is decided by how the steel behaves under continuous CBN honing, not by hardness alone. The two grades below cover almost every tissue and towel application we quote.",
-      rows: [
-        {
-          grade: "D2 / 1.2379",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Standard bath tissue and kitchen towel lines running in-line CBN sharpening. Our default grade.",
-          tradeoff:
-            "Highest all-round value. Not the longest life on heavily recycled, high-ash furnish.",
-        },
-        {
-          grade: "Cr12MoV",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Lines where blade cost per cut matters more than absolute edge life; widely available regrind support.",
-          tradeoff:
-            "Slightly lower wear resistance than D2 on abrasive recycled fibre.",
-        },
-      ],
-      outro:
-        "For high-speed lines running heavily recycled fibre with abrasive filler, we also quote M2 HSS, which holds the edge longest between grinds but is more sensitive to CBN wheel condition. If you are not sure which grade your line needs, tell us the furnish (virgin or recycled), the log density, and how many cuts per minute you run. We match the grade to the line, not the other way round.",
-    },
-
-    componentsIntro:
-      "The tissue log cross-cut is the single highest-stakes cutting operation in a tissue converting line. A dimensional defect at this stage\u2014crushed cardboard cores, excessive dust generation, or angled cut faces\u2014propagates immediately into the packaging stations, triggering line stops and consumer-grade rejections.",
+    compatibleMachinesIntro:
+      "Source replacement tissue log saw blades in D2, Cr12MoV or M2 HSS for your converting line. Sureay offers custom bores, mounting patterns and blade profiles; send your drawing for a quotation tailored to your saw. Machine brands are compatibility references for Sureay aftermarket parts.",
     components: [
       {
-        id: "runout-control",
-        tag: "PRECISION",
-        title: "Zero-Wobble Tensioning",
+        id: "tissue-log-saw-mounting",
+        tag: "Mounting geometry",
+        title: "Tool-Steel and HSS Options for Tissue Converting",
         description:
-          "Why does a log saw crush cardboard cores? Almost always because lateral runout has drifted past about 0.20\u202fmm, and the blade starts beating the core instead of slicing it. A 610\u202fmm blade spinning at high RPM will warp if not properly tensioned. We CNC-tension and micro-grind every log saw blade to \u22640.15\u202fmm lateral runout, ensuring it cuts perfectly straight without oscillating and crushing the fragile cardboard core.",
+          "Sureay supplies D2, Cr12MoV and M2 HSS log saw blades for tissue and kitchen-towel converting, giving you material options for your existing saw and sharpening arrangement.",
       },
       {
-        id: "cbn-compatible",
-        tag: "METALLURGY",
-        title: "In-Line CBN Sharpening Ready",
+        id: "tissue-log-saw-profile",
+        tag: "Blade profile",
+        title: "Polished Faces and Optional Surface Treatments",
         description:
-          "D2 and Cr12MoV blades heat-treated to HRC\u202f58\u201360. This specific hardness range responds cleanly to continuous CBN grinding wheels without loading or glazing them, maintaining a razor edge and protecting your sharpening equipment.",
+          "Mirror-polished blade faces are available with hard-chrome, PTFE or TiN options, allowing the surface specification to be selected alongside the tissue product and blade material.",
       },
       {
-        id: "anti-friction",
-        tag: "COATINGS",
-        title: "Teflon & Chrome Finishes",
+        id: "tissue-log-saw-replacement",
+        tag: "Replacement reference",
+        title: "Custom Mounting Patterns and Bevel Profiles",
         description:
-          "Friction generates heat and explosive paper dust. Hard Chrome or Teflon (PTFE) coated blades lower the coefficient of friction, yielding pristine cut edges on premium 3-ply kitchen towel logs and extending Mean Time Between sharpening cycles.",
+          "Order replacement blades with custom bores, drive-hole patterns, hubs and bevels for your converting line. Listed diameters cover 610–1000 mm, with custom diameters up to 1200 mm.",
+        relatedBladeIds: ["rotary-slitter-knives-paper"],
       },
     ],
-
-    dimensionLabels: {
-      col0: "Target Machine / Log Type",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore / ID (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Standard dimensions for major tissue converting OEMs. Custom drive-pin holes, keyways, and sizes up to \u00d81200\u202fmm for JRT industrial rolls manufactured to exact specifications.",
-    },
-
-    standardDimensions: [
+    specs: [
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "4.76",
+        label: "Sizes",
+        value: "Listed OD Ø610–1000 mm; custom diameters up to Ø1200 mm",
       },
+      { label: "Material", value: "D2 (1.2379), Cr12MoV or M2 HSS" },
+      { label: "Optional Coatings", value: "Hard chrome, PTFE or TiN" },
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "3.80",
+        label: "Application",
+        value:
+          "Toilet tissue, kitchen towels, industrial wipers and jumbo roll tissue",
       },
+      { label: "Lateral Runout", value: "≤0.15 mm" },
+      { label: "Edge Runout", value: "≤0.10 mm" },
+      { label: "Surface Finish", value: "Mirror polished, Ra ≤0.2 µm" },
       {
-        spec: "Casmatic Standard",
-        od: '610 (24")',
-        id: '82.55 (3-1/4")',
-        thickness: "4.76",
-      },
-      {
-        spec: "Bretting / MTC",
-        od: "680",
-        id: "68.26",
-        thickness: "4.76",
-      },
-      {
-        spec: "JRT / Industrial Roll",
-        od: "870",
-        id: "60",
-        thickness: "6.0",
-      },
-      {
-        spec: "JRT / Industrial Roll",
-        od: "1000",
-        id: "60",
-        thickness: "6.0",
+        label: "Reference Cutting Rate",
+        value: "Up to 300 strokes/min, dependent on the saw and cutting setup",
       },
     ],
-
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: [
+      "nonwoven-log-saw-blades",
+      "rotary-slitter-knives-paper",
+    ],
     offers: {
       lowPrice: 180,
       highPrice: 1200,
@@ -1550,54 +1544,101 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Why is my log saw crushing the cardboard cores of the toilet rolls?",
+          question: "Which replacement tissue log saw blade fits my converting line?",
           answer:
-            "Core crushing is primarily caused by excessive blade wobble (lateral runout) or a dull cutting edge. When lateral runout exceeds 0.20\u202fmm, the blade physically beats against the core rather than slicing it. Our blades are tension-leveled and CMM-verified to \u22640.15\u202fmm lateral runout. Also verify that your in-line CBN sharpening stones are correctly aligned and actively dressing the blade on every cycle.",
+            "The replacement must match the blade diameter, bore, thickness, hub, bevel and drive-hole pattern specified for the saw. Two Ø610 mm blades can have different bores or body thicknesses, so use the original knife reference as well as the machine model. Toilet paper cutting knife and tissue log saw blade can both refer to this circular cross-cutting blade. For lengthwise web cutting, see [Paper Slitter Knives](/products/rotary-slitter-knives-paper).",
         },
         {
-          question:
-            "How do I minimize dust and fiber tearing during tissue cross-cutting?",
+          question: "How should I choose between D2, Cr12MoV and M2 HSS?",
           answer:
-            "Dust is generated when a high-friction blade tears tissue fibers instead of shearing them. We engineer a shallow bevel angle (15\u00b0\u201325\u00b0) combined with a mirror-polished face (Ra\u202f\u22640.2\u202f\u03bcm). For maximum dust reduction, upgrade to our Teflon (PTFE) coated blades, which drastically lower friction and allow the blade to glide through the log with minimal fiber displacement.",
+            "Start with the current blade material, tissue or towel grade and sharpening arrangement. Compare gradual wear, edge damage and the cut produced between sharpening cycles. The replacement specification should combine the steel choice with the existing bevel and blade section, so a material change can be evaluated under comparable production conditions.",
         },
         {
-          question:
-            "Can you supply blades for Fabio Perini, PCMC, Casmatic, or Gambini log saws?",
+          question: "What should guide the choice of a coating for a tissue log saw blade?",
           answer:
-            "Yes. The standard \u00d868.26\u202fmm (+0.05\u202fmm) bore fits Fabio Perini and PCMC Forte/Elite log saws directly. The \u00d882.55\u202fmm bore covers Casmatic and equivalent platforms. For Gambini and Bretting machines we build to the measured geometry of your existing blade or your own drawing, so the replacement drops in without retooling. Send us the machine model, a worn blade, or a dimensioned sketch and we confirm fitment before quoting.",
+            "Consider the blade material, tissue product and the location of residue or heat-related cutting problems. Friction between the blade and roll can contribute to heating. Specify the requested surface treatment separately from the steel grade and bevel, and compare coated and uncoated configurations under the same cutting conditions.",
         },
         {
-          question:
-            "How does the blade interact with the machine\u2019s continuous CBN sharpening system?",
+          question: "Why can a tissue log saw blade become scalloped after sharpening?",
           answer:
-            "Log saws use synchronized CBN (Cubic Boron Nitride) stones to hone the blade continuously during operation. If the blade material is too hard or soft, it will load or glaze the stones, rendering them ineffective. Our D2 blades heat-treated to HRC\u202f58\u201360 shed micro-chips cleanly without clogging your CBN wheels.",
+            "Uneven grinding around the circumference can produce a scalloped or polygonal edge. Relevant checks include grinding-wheel condition, contact on the two faces and runout of the mounted blade. Compare the pattern with the sharpening history and follow the saw maker's grinding procedure before selecting a different replacement material.",
         },
         {
-          question: "What is the longest blade diameter you can manufacture?",
+          question: "Why do the hub and bevel matter when the diameter already matches?",
           answer:
-            "We manufacture tissue log saw blades up to \u00d81200\u202fmm for large-format industrial wiper and jumbo roll (JRT) production lines. These require our large-format vacuum heat treatment furnaces and CNC grinding equipment. Standard lead time is 10 working days from drawing sign-off.",
+            "The hub establishes the blade's mounting relationship, while the bevel determines its working-edge profile and contact with the sharpening wheels. Two knives with the same diameter, bore and body thickness can differ in these features. A cross-section drawing identifies the full configuration needed by the saw and its grinding arrangement.",
+        },
+        {
+          question: "Should a reground blade's diameter be used for a new replacement?",
+          answer:
+            "Use the original new-blade diameter where available. Repeated sharpening reduces the outside diameter, so record the reground dimension separately. The catalog Item No. gives the listed size, and the blade drawing adds the hub, mounting and bevel geometry for a new replacement.",
+        },
+        {
+          question: "What information do you need to quote a tissue log saw blade?",
+          answer:
+            "Share the saw model, original blade reference or drawing, quantity and the tissue product you cut. Include the new-blade diameter and thickness, bore, drive-pin layout, hub cross-section and bevel. Specify the requested steel and finish if already defined, and label the current diameter separately if the sample has been reground.",
         },
       ],
-      company: [
-        {
-          question: "Are you a manufacturer or a trading company?",
-          answer:
-            "Direct manufacturer. We forge, grind, and quality-inspect every blade in-house under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades \u2014 no reseller markup.",
-        },
-        {
-          question:
-            "Do you supply matched CBN sharpening wheels alongside the blades?",
-          answer:
-            "Yes. We supply matched sets of CBN sharpening stones engineered for our log saw blades, ensuring correct grinding angle, bond hardness, and abrasive grit for maximum blade life and minimum stone wear.",
-        },
-        {
-          question: "What quality certifications does Sureay hold?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a CMM dimensional inspection record, and a heat treatment batch certificate. Mill certificates and full material traceability reports are available on request.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the log saw model, log material, blade OD, bore, thickness, bevel and drive-pin hole pattern.",
+    dimensionLabels: {
+      col1: "Outer Diameter (mm)",
+      col2: "Bore (mm)",
+      col3: "Body Thickness (mm)",
+      intro:
+        "Each Item No. identifies a complete outside diameter, bore and body thickness combination.",
+    },
+    standardDimensions: [
+      { itemNo: "SR005101", od: "610", id: "68.26", thickness: "4.76" },
+      { itemNo: "SR005102", od: "610", id: "68.26", thickness: "3.80" },
+      { itemNo: "SR005103", od: "610", id: "82.55", thickness: "4.76" },
+      { itemNo: "SR005104", od: "680", id: "68.26", thickness: "4.76" },
+      { itemNo: "SR005105", od: "870", id: "60", thickness: "6.0" },
+      { itemNo: "SR005106", od: "1000", id: "60", thickness: "6.0" },
+    ],
+    detailLayout: {
+      seoTitle: "Tissue Log Saw Blades | Ø610–1000 mm",
+      heroAlt: "Tissue log saw blade with a circular cutting edge, central bore and mounting holes",
+      sizeRange: "Ø610–1000 mm",
+      heroSpecs: [
+        { label: "Application", value: "Tissue and kitchen towel log cutting" },
+      ],
+      technicalSpecs: [
+        {
+          label: "Sizes",
+          value: "Listed OD Ø610–1000 mm; custom diameters up to Ø1200 mm",
+        },
+        { label: "Material", value: "D2 (1.2379), Cr12MoV or M2 HSS" },
+        { label: "Optional Coatings", value: "Hard chrome, PTFE or TiN" },
+        {
+          label: "Application",
+          value:
+            "Toilet tissue, kitchen towels, industrial wipers and jumbo roll tissue",
+        },
+        { label: "Lateral Runout", value: "≤0.15 mm" },
+        { label: "Edge Runout", value: "≤0.10 mm" },
+        { label: "Surface Finish", value: "Mirror polished, Ra ≤0.2 µm" },
+        {
+          label: "Reference Cutting Rate",
+          value: "Up to 300 strokes/min, dependent on the saw and cutting setup",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/tissue-log-saw-blades-02.webp",
+        alt: "Tissue log saw blade showing its face and central mounting area",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your log saw blade",
+        description:
+          "Include the Item No. or original knife reference, saw model, mounting and bevel drawings, and quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Include the Item No. or original knife reference, saw model, mounting and bevel drawings, and quantity.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1606,190 +1647,163 @@ export const blades: Blade[] = [
   {
     id: "nonwoven-log-saw-blades",
     name: "Nonwoven Log Saw Blades",
-    fullName:
-      "Corrosion-Resistant Log Saw Blades for Nonwoven & Hygiene Converting",
+    fullName: "Nonwoven Log Saw Blades for Wound Rolls",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Nonwoven Converting Blades",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Anti-Corrosion",
-    badgeColor: "teal",
+    imageDimensions: { width: 1000, height: 1000, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
-
     description:
-      "Log saw blades engineered for nonwoven and hygiene converting lines — baby wipes, wet wipes, feminine hygiene, and adult incontinence rolls. D2 tool steel with corrosion-resistant TiN or hard chrome coating resists alcohol-based solutions, lotions, and surfactants. Micro-ground to ≤0.15 mm lateral runout for fraying-free cuts on spunbond, meltblown, SMS, and airlaid substrates. Compatible with Fameccanica, GDM, Curt G. Joa, and Zuiko converting lines. Custom diameters in 10 working days.",
-
-    fullDescription:
-      "Nonwoven hygiene converting lines present a fundamentally different set of blade demands compared to tissue paper operations. Where tissue log saws must manage paper dust and core crushing, nonwoven log saws face two distinct failure modes: fibre fraying from synthetic substrates that resist clean shear, and accelerated corrosion from the chemical environment on lines running alcohol, lotions, preservatives (phenoxyethanol), and surfactants at high humidity.\n\nSureay nonwoven log saw blades are built from D2 (1.2379) high-carbon, high-chromium tool steel and are available with application-specific corrosion-resistant coatings. Every blade is vacuum-hardened, tension-leveled, and CMM-verified before dispatch.\n\n## Why Tissue Blades Fail on Nonwoven Lines\n\nSpunbond polypropylene, meltblown, and SMS composite webs are fundamentally tougher to shear cleanly than cellulosic tissue. Synthetic fibres are elastic — they deflect ahead of a dull or slightly wobbly blade instead of separating cleanly, producing the frayed, stringy cut edges that cause downstream folding and packaging failures. A blade optimised for tissue (shallower bevel, softer matrix for CBN compatibility) will produce visible fibre pull-out on spunbond substrates within a fraction of the run time it would achieve on tissue.\n\nThe chemical environment compounds the problem. Wet wipe lines run saturation ratios of 2.0–3.5× (solution weight to substrate weight), meaning the blade is continuously exposed to the impregnation chemistry: typically 80–95% purified water plus preservatives, humectants, and surfactants. Standard D2 without a surface treatment will develop micro-pitting at the cutting edge within weeks, accelerating edge degradation and increasing particulate contamination risk in a hygiene-critical product.\n\n## Coating Options for Hygiene Environments\n\n**TiN PVD Coating (2–3 µm, HV 2300+):** Physical vapour deposition titanium nitride provides a chemically inert barrier with excellent adhesion. Blocks alcohol and surfactant ingress to the blade substrate, extends edge service intervals, and adds a hardness layer that resists micro-abrasion from SAP (superabsorbent polymer) particles present in absorbent core lines. Recommended for wet wipe and adult incontinence converting.\n\n**Hard Chrome Plating:** Electrodeposited hard chrome (20–30 µm) provides outstanding corrosion resistance in high-humidity environments (≥75% RH) and reduces the coefficient of friction against synthetic fibre webs. The thicker layer also fills surface micro-pores, creating a sealing effect against cleaning agent ingress during washdown cycles.\n\n**Uncoated D2 (standard):** Suitable for dry nonwoven converting lines — airlaid, thermobond, spunlace — where no saturation chemistry is present. Hardness HRC 58–60, CBN sharpening compatible.\n\n## Bevel Geometry for Synthetic Fibre\n\nNonwoven substrates require a slightly steeper primary bevel angle (25°–35°) compared to tissue (15°–25°). The steeper geometry concentrates cutting force at the edge contact point, initiating a clean fibre separation rather than the elastic deflection that causes fraying. For lotion-impregnated wet wipe logs with high cohesive strength, a compound bevel (primary + secondary relief) delivers the cleanest cut face with minimal edge rollover over extended run cycles.\n\n## Dimensional Tolerances\n\n- **Lateral runout:** ≤0.15 mm\n- **Edge runout:** ≤0.10 mm\n- **Face parallelism:** 0.05 mm\n- **Concentricity (OD to bore):** ≤0.30 mm\n- **Surface finish:** Mirror polished (Ra ≤0.2 µm)\n\n## OEM Platform Compatibility\n\nNonwoven hygiene converting log saws differ in bore specification and diameter from tissue lines. Common platforms:\n\n**Fameccanica (Italy):** Baby diaper and femcare converting lines; blade diameters typically Ø400–Ø550 mm depending on product format and roll diameter.\n\n**GDM (Italy):** High-speed hygiene product lines; blade specifications to customer drawing.\n\n**Curt G. Joa (USA):** North American adult incontinence and femcare lines; imperial bore specifications available.\n\n**Zuiko (Japan):** Baby diaper converting; blade dimensions to OEM drawing.\n\n**Chinese domestic OEMs (Zlink, Dachang, Quanzhou-based builders):** Blade specifications supplied to drawing or sample reverse-engineering.\n\nCustom OD from Ø350 mm to Ø700 mm manufactured to order. Drawing review and first-article dimensional sign-off available.",
-
+      "D2 replacement log saw blades for cross-cutting wound nonwoven rolls. Custom bores, mounting-hole patterns and blade profiles made to your knife drawing.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
-
     compatibleMachines: [
-      "Fameccanica",
-      "GDM",
-      "Curt G. Joa",
-      "Zuiko",
-      "Zlink",
-      "Dachang",
+      "Fameccanica", "GDM", "Curt G. Joa", "Zuiko", "Zlink", "Dachang",
     ],
-
-    specs: [
-      { label: "Material", value: "D2 (1.2379) — HRC 58–60" },
-      {
-        label: "Coating Options",
-        value: "TiN PVD | Hard Chrome | Uncoated",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (CMM-verified)",
-      },
-      { label: "Edge Runout", value: "≤0.10 mm" },
-      {
-        label: "Diameter Range",
-        value: "Ø350 mm – Ø700 mm (custom to drawing)",
-      },
-      {
-        label: "Applications",
-        value: "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls",
-      },
-    ],
-
+    compatibleMachinesIntro:
+      "Order D2 replacement log saw blades for your nonwoven roll-cutting equipment, with custom bores and mounting patterns plus uncoated, TiN or hard-chrome options. Send your drawing or sample, and Sureay will prepare a quotation for your configuration. Machine brands are compatibility references for Sureay aftermarket parts.",
     components: [
       {
-        id: "corrosion-coating",
-        tag: "COATINGS",
-        title: "TiN & Hard Chrome for Chemical Resistance",
+        id: "nonwoven-log-saw-installation",
+        tag: "Installation geometry",
+        title: "D2 Knives for Wound Nonwoven Rolls",
         description:
-          "Wet wipe and hygiene converting lines run continuous exposure to alcohols, surfactants, and preservatives that corrode bare tool steel edges within weeks. Our TiN PVD coating (HV 2300+) and hard chrome plating create a chemically inert barrier, blocking ingress at the cutting edge and extending the clean-running interval between regrinding cycles.",
+          "Sureay supplies D2 log saw knives at a listed hardness of 58–60 HRC for cross-cutting wound nonwoven rolls. The cutting profile and blade section can be specified for the installed roll-cutting equipment.",
       },
       {
-        id: "nonwoven-bevel",
-        tag: "GEOMETRY",
-        title: "Synthetic-Fibre Bevel Profile",
+        id: "nonwoven-log-saw-edge",
+        tag: "Edge geometry",
+        title: "Uncoated, TiN and Hard-Chrome Options",
         description:
-          "Spunbond, meltblown, and SMS webs deflect elastically ahead of a tissue-spec bevel, causing visible fibre fraying on the cut face. We apply a steeper primary bevel (25°–35°) with a compound secondary relief that initiates clean fibre separation on first contact — eliminating the stringing and edge densification that drives packaging line rejects.",
+          "Uncoated blades, TiN PVD and hard-chrome configurations give you surface options for a replacement order, with the coating specified separately from the blade geometry.",
       },
       {
-        id: "runout-hygiene",
-        tag: "PRECISION",
-        title: "≤0.15 mm Runout for Fraying-Free Cuts",
+        id: "nonwoven-log-saw-reference",
+        tag: "Part identification",
+        title: "Custom Bores and Complete Mounting Patterns",
         description:
-          "Nonwoven logs are softer and more compressible than tissue logs. Any lateral blade wobble translates directly into a compressed, ragged cut face rather than a clean shear plane. Every blade is tension-leveled and CMM-verified to ≤0.15 mm lateral runout before dispatch, ensuring the blade enters the log at a consistent angle on every stroke.",
+          "Custom centre bores, fixing features and locating surfaces allow replacement knives to follow your existing saw drawing, including configurations that share a diameter but use different mounts.",
+        relatedBladeIds: ["nonwoven-slitter-knives"],
       },
     ],
-
+    specs: [
+      { label: "Application", value: "Cross-cutting wound nonwoven logs" },
+      { label: "Material", value: "D2 (1.2379)" },
+      { label: "Hardness", value: "58–60 HRC" },
+      {
+        label: "Sizes",
+        value: "Ø350–700 mm",
+      },
+      { label: "Optional Coatings", value: "TiN PVD or hard chrome; uncoated blades also available" },
+      {
+        label: "Lateral runout",
+        value: "≤0.15 mm",
+      },
+      {
+        label: "Edge runout",
+        value: "≤0.10 mm",
+      },
+    ],
+    relatedBladeIds: ["tissue-log-saw-blades", "nonwoven-slitter-knives"],
+    offers: {
+      lowPrice: 150,
+      highPrice: 900,
+    },
+    faqs: {
+      technical: [
+        {
+          question: "How do I identify a replacement nonwoven log saw knife?",
+          answer:
+            "Identify the saw and original part reference, then compare diameter, bore, thickness, mounting pattern and bevel. Nonwoven roll-cutting blade is a related purchasing name. Confirm that the part cross-cuts a wound roll. For cutting a moving web lengthwise, see [Nonwoven Slitter Knives](/products/nonwoven-slitter-knives).",
+        },
+        {
+          question: "Can Sureay make a custom bore and hole pattern for an existing saw?",
+          answer:
+            "Yes. Sureay can make the bore and bolt or slot pattern to drawing. State the pitch-circle diameter and angular positions of the fixing features as well as their size. Two mountings can have the same number of holes and still use different pitch circles or angular layouts.",
+        },
+        {
+          question: "How should D2 hardness and surface treatment be specified?",
+          answer:
+            "Specify the D2 base-steel hardness and the surface finish separately. If changing from an uncoated blade to TiN PVD or hard chrome, identify the requested finish on the replacement drawing and keep the specified blade section and mounting dimensions clear.",
+        },
+        {
+          question: "Does body thickness fully describe the cutting profile?",
+          answer:
+            "No. The body thickness gives only one dimension of the axial profile. Include the bevel and its orientation, plus any hub or stepped section, on the cross-section drawing. Those details locate the cutting edge relative to the mounting face.",
+        },
+        {
+          question: "What do lateral runout and edge runout describe?",
+          answer:
+            "Lateral runout describes the blade's side-to-side variation as it rotates, while edge runout describes radial variation at the cutting circumference. Both belong to the blade specification, alongside the mounting reference used for measurement. When assessing an installed knife, distinguish the blade measurements from variation introduced by the shaft, flange or seating condition.",
+        },
+        {
+          question: "What should I include in a nonwoven log saw knife inquiry?",
+          answer:
+            "Provide the saw model, knife drawing or part number, type of wound nonwoven and quantity. Identify the centre bore, pitch circle, bevel direction and finish. For a sample, provide front, back and edge views and mark any reground or damaged areas that no longer represent the new-knife profile.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Include the saw model, blade drawing, outer diameter, bore, body thickness, bevel and mounting-hole pattern.",
+    detailLayout: {
+      seoTitle: "Nonwoven Log Saw Blades | Custom Replacements",
+      heroAlt: "Nonwoven log saw blade with a circular cutting edge, central bore and mounting holes",
+      sizeRange: "Ø350–700 mm",
+      heroSpecs: [
+        { label: "Application", value: "Nonwoven log cutting" },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Ø350–700 mm" },
+        { label: "Material", value: "D2 (1.2379)" },
+        { label: "Hardness", value: "58–60 HRC" },
+        { label: "Optional Coatings", value: "TiN PVD or hard chrome; uncoated blades also available" },
+        { label: "Lateral runout", value: "≤0.15 mm" },
+        { label: "Edge runout", value: "≤0.10 mm" },
+        { label: "Application", value: "Cross-cutting wound nonwoven logs" },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/nonwoven-log-saw-blades-03.webp",
+        alt: "Nonwoven log saw blade sample showing the bore and mounting holes",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your log saw blade",
+        description:
+          "Send the saw model, original knife reference, complete dimensioned drawing and quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Send the saw model, original knife reference, complete dimensioned drawing and quantity.",
     dimensionLabels: {
-      col0: "Machine Platform / Product Format",
       col1: "Outer Diameter (mm)",
       col2: "Bore / ID (mm)",
       col3: "Thickness (mm)",
-      caption:
-        "* Reference dimensions for common nonwoven hygiene converting platforms. Bore patterns, keyways, and drive-pin holes manufactured to customer drawing. Custom OD Ø350–Ø700 mm available with 10-working-day lead time.",
     },
-
     standardDimensions: [
+      { itemNo: "SR005201", od: "400", id: "To drawing", thickness: "3.80" },
+      { itemNo: "SR005202", od: "450", id: "To drawing", thickness: "4.00" },
+      { itemNo: "SR005203", od: "500", id: "To drawing", thickness: "4.00" },
+      { itemNo: "SR005204", od: "550", id: "To drawing", thickness: "4.76" },
+      { itemNo: "SR005205", od: "600", id: "To drawing", thickness: "4.76" },
       {
-        spec: "Baby Wipe / Wet Wipe (short log)",
-        od: "400",
-        id: "To drawing",
-        thickness: "3.80",
-      },
-      {
-        spec: "Baby Wipe / Wet Wipe (standard log)",
-        od: "450",
-        id: "To drawing",
-        thickness: "4.00",
-      },
-      {
-        spec: "Femcare / Sanitary Napkin Roll",
-        od: "500",
-        id: "To drawing",
-        thickness: "4.00",
-      },
-      {
-        spec: "Adult Incontinence / Large Format",
-        od: "550",
-        id: "To drawing",
-        thickness: "4.76",
-      },
-      {
-        spec: "Industrial / Canister Wipe Roll",
-        od: "600",
-        id: "To drawing",
-        thickness: "4.76",
-      },
-      {
-        spec: "Custom / OEM to Drawing",
+        itemNo: "SR005206",
         od: "Ø350–700",
         id: "To drawing",
         thickness: "3.80–6.00",
       },
     ],
-
-    relatedBladeIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
-
-    offers: {
-      lowPrice: 150,
-      highPrice: 900,
-    },
-
-    faqs: {
-      technical: [
-        {
-          question:
-            "Why do my blades corrode quickly on our wet wipe converting line?",
-          answer:
-            "Wet wipe lines continuously expose blades to preservatives (phenoxyethanol), surfactants, and alcohol-based solutions at elevated humidity. Bare D2 tool steel develops micro-pitting at the cutting edge within weeks under these conditions, accelerating wear and creating a particulate contamination risk. The solution is a corrosion-resistant surface treatment: TiN PVD coating (2–3 µm, HV 2300+) provides a chemically inert barrier against alcohol and surfactant ingress, while hard chrome plating seals surface micro-pores against cleaning agent penetration during washdown cycles.",
-        },
-        {
-          question:
-            "My blades are leaving frayed, stringy cut edges on spunbond nonwoven logs. What is causing this?",
-          answer:
-            "Fraying on spunbond PP or SMS substrates is caused by two factors: incorrect bevel geometry and/or excessive lateral runout. Synthetic fibres are elastic — they deflect ahead of a shallow tissue-spec bevel (15°–25°) instead of shearing cleanly. Nonwoven substrates require a steeper primary bevel (25°–35°) to concentrate cutting force at the fibre contact point. Additionally, lateral runout above 0.20 mm causes the blade to compress the log rather than shear it, producing ragged edges. Our nonwoven blades are CMM-verified to ≤0.15 mm lateral runout and ground with a compound bevel profile optimised for synthetic fibre.",
-        },
-        {
-          question:
-            "Can you supply blades compatible with Fameccanica or GDM hygiene converting machines?",
-          answer:
-            "Yes. We manufacture to customer drawing or sample for Fameccanica, GDM, Curt G. Joa, Zuiko, and Chinese domestic OEM platforms. Bore diameter, drive-pin hole pattern, OD, and thickness are all customisable. Send us your OEM drawing or a worn blade sample and we will provide a dimensional confirmation and first-article sign-off before full production.",
-        },
-        {
-          question:
-            "What is the difference between TiN coating and hard chrome plating for hygiene blades?",
-          answer:
-            "TiN PVD (titanium nitride) is a thin, extremely hard coating (2–3 µm, HV 2300+) applied in a vacuum chamber. It provides an inert barrier against chemical corrosion, adds surface hardness that resists micro-abrasion from SAP particles in absorbent core lines, and extends edge service intervals. Hard chrome is a thicker electrodeposited layer (20–30 µm) that offers excellent corrosion resistance in high-humidity environments and reduces friction coefficient against synthetic fibre webs. For wet wipe lines with aggressive chemistry, TiN is the preferred option. For dry or semi-dry nonwoven lines in high-humidity mill environments, hard chrome is cost-effective.",
-        },
-        {
-          question:
-            "Do these blades work with in-line CBN sharpening systems on nonwoven lines?",
-          answer:
-            "Most nonwoven hygiene converting log saws do not use continuous in-line CBN sharpening systems (unlike tissue lines). Blades are typically replaced on a scheduled interval rather than continuously dressed. However, if your line does use in-line CBN grinding, our D2 blades hardened to HRC 58–60 are compatible with standard CBN wheel specifications. The TiN coating will be removed by CBN contact at the cutting edge, which is normal — the protective benefit applies to the blade body, not the actively sharpened edge zone.",
-        },
-      ],
-      company: [
-        {
-          question: "Are you a manufacturer or a trading company?",
-          answer:
-            "Direct manufacturer. We forge, grind, coat, and quality-inspect every blade in-house at our 15,000 m² facility in Ma'anshan, Anhui Province, under ISO 9001:2015 certification. You communicate directly with the production engineers who made your blades — no reseller markup.",
-        },
-        {
-          question:
-            "Can you reverse-engineer a blade from a worn sample or OEM drawing?",
-          answer:
-            "Yes. Send us your worn blade or OEM dimensional drawing and we will produce a CMM measurement report and dimensional confirmation before committing to production. First-article inspection reports are available on request for new tooling projects.",
-        },
-        {
-          question: "What is the minimum order quantity and lead time?",
-          answer:
-            "Minimum order is typically 2–5 blades depending on diameter. Standard lead time is 10 working days from drawing sign-off. Rush orders can be accommodated — contact us with your timeline.",
-        },
-      ],
-    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1797,26 +1811,26 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "paper-cutting-blades",
-    name: "Paper Cutting Blades",
-    fullName: "Premium Guillotine Paper Cutter Blades (HSS & TCT)",
-    category: "shear_blades",
+    name: "Paper Guillotine Knives",
+    fullName: "Paper Cutter Blades & Paper Guillotine Knives",
+    seoTitle: "Paper Cutter Blades | Paper Guillotine Knives",
+    seoDescription:
+      "Order HSS-inlaid or carbide-tipped paper guillotine knives for stack cutters. Listed lengths are 450–2050 mm, with custom lengths and mounting holes available.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Paper Cutting Blades",
-    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    image: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     badge: "OEM Precision",
     badgeColor: "teal",
     gallery: [
-      "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+      "/images/products/shear-detail/paper-cutting-blades-cover.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
+      "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
     ],
     description:
-      "Eliminate paper draw and dust with replacement guillotine blades for Polar, Wohlenberg, and Perfecta cutters. Available in 18% Tungsten High-Speed Steel (HSS) and Tungsten Carbide Tipped (TCT) inlays. Micro-ground to a precise 21\u00b0 bevel with full-length face flatness \u22640.05\u202fmm for perfectly square cuts on high-volume print runs.",
-    fullDescription:
-      "Guillotine paper cutter replacement blades are consumed components whose alloy grade, edge geometry, and full-length dimensional accuracy directly determine cut quality across the entire ream stack—from 450mm office cutter blades to 2050mm double-beam commercial pressroom guillotines.\n\nSureay paper cutting blades are offered in three metallurgical grades, matched to cut volume, substrate, and total cost of ownership requirements:\n\n## Material Grades\n\n**Standard Tool Steel (T10, 9CrSi — HRC 57–60):** Cost-effective for moderate-volume print shops and finishing operations cutting bond paper, newsprint, and uncoated stock up to 80 gsm. T10 high-carbon steel is hardened to HRC 57–60 and provides reliable edge sharpness at the lowest unit cost. Suited to Polar, Schneider Senator, and Challenge 305 class machines in moderate daily-cycle environments.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** The premium choice for high-volume commercial printing, book publishing, and label-converting guillotines running multiple ream stacks per hour. M2 and SKH-51 HSS retain full hardness at the elevated cutting temperatures generated by high-cycle operation—delivering 4–6× longer service life between resharpening events compared to standard carbon steel blades. Recommended for coated art paper, board, laminated packaging stock, and multi-layer adhesive label sheets where edge wear accelerates rapidly.\n\n**TCT Inlay — Tungsten Carbide Tipped (YG15 / YG20):** Nitrogen furnace-brazed carbide edge inlay for the most abrasion-intensive substrates: carbonless copy paper (CBS coating), high-calcium-carbonate-filled packaging board, coated cartonboard, abrasive specialty papers, and fibre-reinforced technical papers. TCT blades outlast HSS on these substrates by a factor of 3–5× and maintain slit-edge quality well beyond the point where HSS would require resharpening.\n\n## Precision Grinding Standards\n\n- **Bevel angle:** 21° (standard guillotine geometry, single-bevel)\n- **Length tolerance:** +2 / −1 mm\n- **Width tolerance:** ±1 mm\n- **Edge thickness tolerance:** 0 / −0.1 mm\n- **Face flatness (full length):** ≤ 0.05 mm\n\nFlatness deviation above 0.08mm across the blade length causes uneven blade-to-sideboard contact, producing a tapered cut and requiring operator correction shims—a production inefficiency that accumulates to measurable downtime on high-volume cutting lines.\n\n## Machine Compatibility & Supply States\n\nStandard stock lengths from 450 mm to 2050 mm. Compatible with Polar 115/137/155/176/200 series, Schneider Senator, Perfecta, Wohlenberg, Prism, and Challenge guillotine brands. Custom lengths, mounting hole patterns, and back-edge profiles manufactured to drawing within 7 working days.\n\n**Available supply conditions:** Sharp-ground edge (ready to install) / Semi-finished edge (for on-site final dressing to machine specification) / Blank knife (unground, for customers with in-house regrinding capability).",
+      "Replacement paper cutter blades and paper guillotine knives for stack cutting. HSS inlay or carbide-tipped edges, with custom lengths and mounting holes.",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
-
     compatibleMachines: [
       "Polar",
       "Wohlenberg",
@@ -1826,196 +1840,172 @@ export const blades: Blade[] = [
       "Prism",
       "Seybold",
     ],
-
+    compatibleMachinesIntro:
+      "Sureay manufactures HSS-inlaid and carbide-tipped paper guillotine knives, with custom lengths, mounting patterns and bevel profiles for your cutter. Share your drawing or sample to receive a quotation for the blade configuration and material you need. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "paper-knife-edge-selection",
+        tag: "Material selection",
+        title: "HSS Inlay and Carbide-Tipped Cutting Edges",
+        description:
+          "Sureay offers 18% tungsten HSS inlay and tungsten carbide-tipped edges on steel bodies, giving stack cutters a choice of knife constructions for their paper stock and production duty.",
+      },
+      {
+        id: "paper-guillotine-bevel",
+        tag: "Cutting geometry",
+        title: "Ground Faces and Specified Bevel Profiles",
+        description:
+          "Paper cutter knives are available with ground faces and drawing-defined bevels, including double-bevel configurations, so the working geometry can be specified alongside the cutting-edge material.",
+      },
+      {
+        id: "paper-cutter-replacement-fit",
+        tag: "Replacement fit",
+        title: "Custom Lengths and Mounting Patterns",
+        description:
+          "Listed paper guillotine knives span 450–2050 mm in length. Sureay also makes replacement knife bodies, bevels and mounting patterns to the drawing for your existing cutting beam.",
+      },
+    ],
     specs: [
+      { label: "Sizes", value: "450–2050 mm" },
       {
         label: "Material",
-        value: "18% Tungsten HSS Inlay | Tungsten Carbide Tipped (TCT)",
+        value: "18% tungsten HSS inlay or tungsten carbide-tipped (TCT)",
+      },
+      { label: "Hardness", value: "HSS: 62–64 HRC; carbide: 89–91 HRA" },
+      {
+        label: "Blade construction",
+        value: "Bimetallic: cutting-edge inlay brazed to an alloy-steel body",
       },
       {
-        label: "Hardness",
-        value: "HRC\u202f62\u201364 (HSS) | HRA\u202f89\u201391 (Carbide)",
-      },
-      {
-        label: "Bevel Angle",
-        value:
-          "Standard 21\u00b0\u202f\u2013\u202f24\u00b0 (Double bevel available)",
-      },
-      {
-        label: "Face Flatness",
-        value: "\u22640.05\u202fmm (Eliminates paper draw & tapered cuts)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic (premium edge brazed to alloy steel body)",
+        label: "Bevel angle",
+        value: "21°–24°; double-bevel configurations available",
       },
       {
         label: "Application",
-        value: "Coated Art Paper, Recycled Board, Carbonless Copy Paper",
+        value:
+          "Paper stacks, coated art paper, recycled board and carbonless copy paper",
       },
+      { label: "Face Flatness", value: "≤0.05 mm" },
     ],
-
-    components: [
-      {
-        id: "tct-inlay",
-        tag: "METALLURGY",
-        title: "Tungsten Carbide Inlays",
-        description:
-          "Standard blades dull rapidly when cutting abrasive, calcium-carbonate-filled papers. Our Tungsten Carbide Tipped (TCT) blades maintain their razor edge 3\u202f\u2013\u202f5\u00d7 longer than HSS, drastically reducing machine downtime for blade changes on carbonless copy and coated art stock.",
-      },
-      {
-        id: "face-flatness",
-        tag: "PRECISION",
-        title: "Zero Paper Draw",
-        description:
-          "If a blade is bowed even slightly, hydraulic pressure causes it to deflect mid-cut, producing unequal sizes from the top to the bottom of the stack. We grind our blades to a full-length face flatness of \u22640.05\u202fmm to ensure flawlessly straight vertical cuts through every ream.",
-      },
-      {
-        id: "oem-compatibility",
-        tag: "FITMENT",
-        title: "Exact OEM Replacement",
-        description:
-          "We hold engineering blueprints for Polar, Wohlenberg, Perfecta, and Schneider Senator guillotines. Mounting holes, threads, and back-edge slots are CNC-machined for a guaranteed drop-in fit — no shimming or modification required.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Specification (mm)",
-      col1: "Length",
-      col2: "Width",
-      col3: "Edge Thickness",
-      col4: "Body Thickness",
-      caption:
-        "* Standard sizes listed above. Custom dimensions available on request.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "450 * 51 * 12/10",
-        od: "450",
-        id: "51",
-        length: "12",
-        teeth: "10",
-      },
-      {
-        spec: "595 * 55 * 13.5/10",
-        od: "595",
-        id: "55",
-        length: "13.5",
-        teeth: "10",
-      },
-      {
-        spec: "795 * 60 * 13.5/10",
-        od: "795",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
-      },
-      {
-        spec: "895 * 60 * 13.5/10",
-        od: "895",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
-      },
-      {
-        spec: "995 * 60 * 14/11",
-        od: "995",
-        id: "60",
-        length: "14",
-        teeth: "11",
-      },
-      {
-        spec: "1095 * 65 * 14/11",
-        od: "1095",
-        id: "65",
-        length: "14",
-        teeth: "11",
-      },
-      {
-        spec: "1350 * 80 * 16/13",
-        od: "1350",
-        id: "80",
-        length: "16",
-        teeth: "13",
-      },
-      {
-        spec: "2050 * 85 * 16/14",
-        od: "2050",
-        id: "85",
-        length: "16",
-        teeth: "14",
-      },
-    ],
-
-    relatedBladeIds: ["tissue-log-saw-blades", "three-knife-trimmer-blades"],
-    offers: {
-      lowPrice: 80,
-      highPrice: 650,
-    },
+    relatedBladeIds: ["three-knife-trimmer-blades"],
+    offers: { lowPrice: 80, highPrice: 650 },
     faqs: {
       technical: [
         {
-          question:
-            "Should I choose M2 HSS or Tungsten Carbide Tipped (TCT) blades for my guillotine?",
+          question: "How do I identify a replacement paper cutter blade?",
           answer:
-            "M2 HSS is the correct choice for coated art paper, bond paper, and standard label stock in high-volume print shops — delivering 4–6× longer life than standard carbon steel. Upgrade to TCT (YG15/YG20 carbide inlay) only when cutting carbonless copy paper, high-calcium-carbonate packaging board, or abrasive specialty papers. TCT outperforms HSS 3–5× on these substrates but carries a higher unit cost.",
+            "Use the full cutter model and version with the original knife reference or drawing. Check length, body and edge thickness, mounting holes and bevel orientation together. A used sample should include its grinding history. The cutter's advertised working width helps identify the machine, while the complete knife dimensions establish the replacement.",
         },
         {
-          question:
-            "How does your blade geometry prevent dust when guillotining thick paper reams?",
+          question: "When should I consider a carbide-tipped paper guillotine knife?",
           answer:
-            "We grind every guillotine blade to a precision 21° bevel with face flatness ≤0.05mm across the full length. The sharp, shallow bevel shears each sheet progressively through the ream rather than crushing through the stack — dust is generated by dull or incorrectly bevelled edges that compress paper fibres instead of shearing them. HSS M2 and TCT grades retain this precision bevel geometry significantly longer than carbon steel, so fewer resharpening events mean fewer dust-generating dull-blade cutting cycles per year.",
+            "Carbide is worth assessing when gradual edge wear on the actual paper stock drives frequent knife changes. Coatings, fillers, recycled content and the available grinding process influence that choice. If the current knife chips or cuts unevenly, inspect its bevel, the cutting stick and clamping conditions alongside the material requirement.",
         },
         {
-          question:
-            "Can you supply blades in the exact length and mounting hole pattern my Polar or Wohlenberg machine requires?",
+          question: "Are paper cutter blades and paper guillotine knives the same?",
           answer:
-            "Yes. We stock standard lengths from 450mm to 2050mm to cover Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta, and Challenge series guillotines. Custom lengths, back-edge profiles, and mounting hole patterns are manufactured to drawing within 7 working days. Blades can be supplied sharp-ground, semi-finished, or blank to suit your on-site regrinding setup.",
+            "Yes. In industrial stack cutting, both names refer to the straight blade that cuts a clamped stack of paper or board. For machinery that cross-cuts a moving web into sheets, see [Paper Sheeter Knives](/products/paper-sheeter-knives).",
         },
         {
-          question:
-            "How should guillotine blades be stored and handled to prevent premature edge damage before installation?",
+          question: "Why can the bottom sheets remain poorly cut after sharpening?",
           answer:
-            "Store blades horizontally in original packaging on padded wooden cradles — never stack vertically or allow metal-to-metal contact on the cutting edge. Use plastic or rubber edge guards during handling. Inspect under a 10× loupe before mounting: a 0.2mm edge nick doubles local wear rate within the first 10,000 cuts. Avoid dragging the edge against guide rails during installation.",
+            "A worn cutting stick, incorrect knife penetration or uneven clamping can leave the bottom sheets poorly cut even with a sharp blade. Check whether the defect is concentrated at the same point across the stack and inspect the corresponding area of the stick. Use the cutter's specified setup to check the cause.",
         },
         {
-          question:
-            "Can you supply paper guillotine blades in semi-finished condition for in-house regrinding?",
+          question: "How should the bevel be selected for coated paper or board?",
           answer:
-            "Yes. Semi-finished blanks are available in all standard lengths with the body ground to final dimensions but the edge left in pre-ground condition for final dressing to your specific bevel angle and finish. This supply state suits print shops with surface grinding capability, reduces unit cost by 15–20%, and gives full control over final edge geometry and sharpness.",
+            "Start with the specified knife bevel and the stock being processed. Paper structure, coating or filler content and stack conditions influence the cut. Compare edge wear, chipping and cut quality before requesting a different profile. The new bevel must remain compatible with the knife construction and the cutter's working arrangement.",
+        },
+        {
+          question: "When should a paper guillotine knife be reground or replaced?",
+          answer:
+            "Regrinding is appropriate when sufficient knife height and cutting-edge material remain to restore the specified bevel within the cutter's service limits. Inspect the inlay or tipped edge and body before grinding. Replacement is appropriate when damage, remaining edge material or adjustment limits prevent the required working configuration from being restored.",
+        },
+        {
+          question: "How do I request a quote for a paper cutter blade?",
+          answer:
+            "Send the cutter model and version, original knife number or drawing, paper stock and quantity. For an older machine, include the mounting hole pattern, bevel orientation and new-knife height. If the only reference is a used knife, show its remaining height separately from the new target dimension.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the cutter model, knife drawing or part number, stack material and height, and mounting-hole pitch.",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 640] },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    detailLayout: {
+      heroAlt:
+        "Paper guillotine knife with mounting holes and a straight cutting edge",
+      sizeRange: "450–2050 mm",
+      heroSpecs: [
+        { label: "Application", value: "Stack cutting of paper and board" },
+      ],
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
+        alt: "Paper guillotine knife showing the straight cutting edge and mounting-hole pattern",
+      },
+      technicalSpecs: [
+        { label: "Sizes", value: "450–2050 mm" },
         {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
+          label: "Material",
+          value: "18% tungsten HSS inlay or tungsten carbide-tipped (TCT)",
+        },
+        { label: "Hardness", value: "HSS: 62–64 HRC; carbide: 89–91 HRA" },
+        {
+          label: "Blade construction",
+          value: "Bimetallic: cutting-edge inlay brazed to an alloy-steel body",
         },
         {
-          question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
-          answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, boosting wear resistance by up to 40% and ensuring uniform hardness across the entire cutting edge.",
+          label: "Bevel angle",
+          value: "21°–24°; double-bevel configurations available",
         },
         {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
+          label: "Application",
+          value:
+            "Paper stacks, coated art paper, recycled board and carbonless copy paper",
         },
+        { label: "Face Flatness", value: "≤0.05 mm" },
+      ],
+      dimensionTables: [
         {
-          question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
-        },
-        {
-          question:
-            "Can we trial a sample set before committing to a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences — no tooling commitment until fit is confirmed.",
+          id: "standard-dimensions",
+          tabLabel: "Standard dimensions",
+          title: "Common Standard Dimensions",
+          columns: [
+            "Item No.",
+            "Length (mm)",
+            "Width (mm)",
+            "Edge thickness (mm)",
+            "Body thickness (mm)",
+          ],
+          rows: [
+            ["SR003101", "450", "51", "12", "10"],
+            ["SR003102", "595", "55", "13.5", "10"],
+            ["SR003103", "795", "60", "13.5", "10"],
+            ["SR003104", "895", "60", "13.5", "10"],
+            ["SR003105", "995", "60", "14", "11"],
+            ["SR003106", "1095", "65", "14", "11"],
+            ["SR003107", "1350", "80", "16", "13"],
+            ["SR003108", "2050", "85", "16", "14"],
+          ],
         },
       ],
+      inlineRfq: {
+        title: "Request a quote for your knife configuration",
+        description:
+          "Include the cutter model, knife drawing or part number, stack material and height, and mounting-hole pitch.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Include the cutter model, knife drawing or part number, stack material and height, and mounting-hole pitch.",
+    dimensionLabels: {
+      intro:
+        "Listed knife dimensions are catalog configurations, not machine cutting widths. Confirm the mounting pattern and show the edge and body thickness on a cross-section drawing.",
     },
   },
 
@@ -2023,13 +2013,19 @@ export const blades: Blade[] = [
   // 8. Single Shaft Rotor Inserts
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement rotor knives shaped for your single-shaft shredder, including flat, concave, V-groove and crown profiles. Sureay offers custom cutting faces and fixing-bolt seats, with matching bed knives quoted separately. Send your drawing or sample for a tailored quotation. Machine brands are compatibility references for Sureay aftermarket parts.",
     id: "single-shaft-shredder-blades",
-    name: "Single Shaft Rotor Inserts",
-    fullName: "High-Impact Single Shaft Shredder Rotor Inserts (Crown Cutters)",
+    name: "Single-Shaft Shredder Rotor Knives",
+    fullName: "Single-Shaft Shredder Rotor Knives",
+    seoTitle: "Single-Shaft Shredder Rotor Knives | Square Inserts",
+    seoDescription:
+      "Choose square rotor inserts or concave cutting crowns in DC53, D2 or Cr12MoV. Match the knife face and bolt seat to your single-shaft shredder.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Single Shaft Rotor Inserts",
+    categoryDisplay: "Single-Shaft Rotor Knives",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: { width: 1918, height: 1769, smallerWidths: [320, 640] },
     badge: "Heavy Duty",
     badgeColor: "orange",
     gallery: [
@@ -2038,22 +2034,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "DC53, D2 (1.2379), and Cr12MoV cold-work tool steel rotor inserts for low-speed, high-torque single-shaft shredders. Vacuum-hardened and cryogenically processed to HRC 58–62, CNC-machined to ±0.02mm face tolerance. Features 4-way indexable square geometry. Drop-in compatible with Vecoplan, Weima, Lindner, and Zerma platforms.",
-    fullDescription:
-      "Single-shaft shredders operate at 80–150 RPM under extremely high torque, driving block-style rotor inserts into a stationary bed knife at tight shear clearances of 0.2–1.5mm. At these mechanical parameters, the primary cause of blade failure is impact-induced edge microchipping or thermal softening from sustained high-cycle torque peaks, rather than progressive wear.\n\nSureay addresses these failure modes through strict metallurgy. Standard D2 (1.2379) tool steel inserts provide excellent wear resistance at a cost-effective price point. For applications involving hard engineering plastics (PA66-GF, PC, PEEK) or heavy purge lumps, DC53 is specified—delivering 17% higher transverse rupture strength to prevent edge chipping under heavy impact.\n\n## ±0.02mm CNC Machining Tolerance\n\nCutting clearance between the rotor insert face and the stationary bed knife governs shred particle size and motor load. Inconsistent clearances cause material wrap-back and rotor stalls. Sureay rotor inserts are CNC-machined to ±0.02mm face flatness, ensuring a perfect and repeatable shear gap across the entire rotor length when paired with a quality bed knife.\n\n## 4-Way Indexable Geometry\n\nThe symmetrical square block format provides four independent cutting edges per insert. When one edge dulls, the operator loosens the countersunk mounting bolt, rotates the insert 90° to a fresh edge, and retorques. A full rotor complement can be indexed rapidly without shaft extraction, effectively reducing annual tooling expenditure by 75%.\n\n## Deep Cryogenic Treatment (−196°C)\n\nAll Sureay single-shaft inserts undergo vacuum hardening to HRC 58–62, followed by a mandatory deep cryogenic soak at −196°C. This critical final stage eliminates retained austenite and stabilizes the martensitic microstructure, drastically reducing the risk of bulk fracture when the rotor encounters unexpected foreign metal inclusions.",
+      "Replacement single-shaft shredder rotor knives in DC53, D2 and Cr12MoV. Square inserts and concave cutting crowns with custom faces and bolt seats.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
-
     specs: [
       { label: "Material", value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo" },
       {
@@ -2063,7 +2046,10 @@ export const blades: Blade[] = [
       { label: "Machining Tolerance", value: "±0.02 mm Face Flatness" },
       { label: "Edge Geometry", value: "4-Way Indexable (90° Rotation)" },
       { label: "Face Profile", value: "Concave, Flat, V-Groove, Crown" },
-      { label: "Mounting Style", value: "M12 to M24 Countersunk Hex Bolt" },
+      {
+        label: "Mounting Style",
+        value: "M12–M24 fixing bolts; countersunk or socket-head seats by configuration",
+      },
       {
         label: "OEM Fitment",
         value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
@@ -2078,157 +2064,160 @@ export const blades: Blade[] = [
           "HDPE/PVC Pipes · Injection Purgings · Wood Pallets · IBC Totes · MSW",
       },
     ],
-
-    components: [
-      {
-        id: "indexable-design",
-        tag: "TCO REDUCTION",
-        title: "4-Way Indexable Edges",
-        description:
-          "The symmetrical square design allows for a 90° rotation when dull. This quadruples the lifespan of a single blade, cutting replacement costs by 75% and minimizing maintenance downtime.",
-      },
-      {
-        id: "concave-profile",
-        tag: "SHEAR EFFICIENCY",
-        title: "Aggressive Concave Profiling",
-        description:
-          "Precision CNC-machined concave faces ensure an aggressive bite into smooth, dense plastic lumps, preventing material from bouncing or bridging on the rotor during low-speed shredding.",
-      },
-      {
-        id: "cryo-treatment",
-        tag: "EXTREME RELIABILITY",
-        title: "Deep Cryogenic Tempering",
-        description:
-          "Processed at −196°C to eliminate internal residual stress. This guarantees the blade will absorb massive kinetic shocks without shattering when hitting hidden metal inclusions.",
-      },
+    relatedBladeIds: [
+      "single-shaft-bed-knives",
+      "shredder-screens",
+      "granulator-blades",
     ],
-
     dimensionLabels: {
-      col1: "Insert Dimensions (L × W × T)",
-      col2: "Bolt Size",
-      col3: "Insert Profile",
-      col4: "Typical OEM Platform",
-      caption:
-        "* Stator bed knives and custom rotor blade profiles available. Compatible with major global single-shaft shredder brands.",
+      col1: "Knife Dimensions (L × W × T)",
+      col2: "Fixing Bolt",
+      col3: "Cutting Face",
+      col4: "Machine / OEM Reference",
+      intro:
+        "Use the machine model and OEM reference to identify the part, then compare the cutting face, mounting seat and fixing bolt with the original knife.",
     },
-
     standardDimensions: [
       {
+        itemNo: "SR002501",
+        spec: "34 × 34 × 20 mm",
+        bolt: "M12 × 40 (DIN 912)",
+        type: "—",
+        oem: "ZERMA ZSS 850 / 1200 · 80001003",
+      },
+      {
+        itemNo: "SR002502",
         spec: "34 × 34 × 23 mm",
         bolt: "M12",
         type: "Concave / Flat",
         oem: "Weima / Vecoplan Standard",
       },
       {
+        itemNo: "SR002503",
         spec: "40 × 40 × 25 mm",
         bolt: "M14",
         type: "Concave / Flat",
         oem: "Vecoplan / Heavy Plastics",
       },
       {
+        itemNo: "SR002504",
         spec: "43 × 43 × 19.5 mm",
         bolt: "M14",
         type: "Crown / Concave",
-        oem: "Lindner Micromat / Urraco",
+        oem: "Lindner Micromat",
       },
       {
+        itemNo: "SR002505",
         spec: "50 × 50 × 30 mm",
         bolt: "M16",
         type: "Concave / Flat",
         oem: "Heavy Duty MSW",
       },
       {
+        itemNo: "SR002506",
         spec: "60 × 60 × 30 mm",
         bolt: "M16 / M18",
         type: "Flat / V-Groove",
         oem: "Zerma / Tyre Shredding",
       },
       {
+        itemNo: "SR002507",
         spec: "80 × 80 × 45 mm",
         bolt: "M24",
         type: "Concave",
         oem: "Extreme High-Torque",
       },
     ],
-
-    relatedBladeIds: [
-      "single-shaft-bed-knives",
-      "shredder-screens",
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 20,
       highPrice: 200,
     },
+    components: [
+      {
+        id: "single-shaft-shredder-blades-advantage-1",
+        tag: "Tool-Steel Choices for Rotor Inserts",
+        title: "Tool-Steel Choices for Rotor Inserts",
+        description:
+          "DC53, D2, Cr12MoV and 42CrMo configurations give you material options for replacement rotor knives, considered with the existing cutting face and the wear conditions of your feed.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-2",
+        tag: "Flat, Concave and Crown Cutting Faces",
+        title: "Flat, Concave and Crown Cutting Faces",
+        description:
+          "Sureay supplies flat, concave, V-groove and crown profiles. Listed insert sizes include 34 × 34 × 20 mm. Indexable configurations are available where the knife and holder are designed for successive working edges.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-3",
+        tag: "Mounting Seats Made to the Rotor Drawing",
+        title: "Mounting Seats Made to the Rotor Drawing",
+        description:
+          "Sureay makes knife undersides and fixing-bolt seats to the rotor drawing, so a replacement can reproduce the seating profile and clamping geometry of the existing holder.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "Which alloy offers better edge retention for cutting rigid purges: D2 or DC53?",
+          question: "How do I identify a replacement rotor knife for a single-shaft shredder?",
           answer:
-            "For dense injection-moulding purges and thick-wall HDPE on single-shaft rotors at 80–120 RPM, DC53 consistently outperforms D2. Single-shaft impact loading exposes DC53's 17% higher transverse rupture strength, resisting the micro-chipping at the cutting face that D2 typically develops on rigid purge material after 300–500 operating hours.",
+            "Use the machine model and part reference, then compare the cutting face, underside and fixing-bolt seat. Two inserts with the same length and width can have different raised centers, holes or seating profiles. These details establish how the new knife sits and clamps in the existing rotor holder.",
         },
         {
-          question: "What causes material wrap-back and rotor stalling?",
+          question: "Are rotor knives, inserts and cutting crowns the same product?",
           answer:
-            "Wrap-back is usually caused by inconsistent face flatness across the rotor insert stack, creating uneven knife-to-bed clearance. Material passes through wide gaps instead of being sheared, circulates back, and clogs the rotor pocket. Our inserts are CNC-machined to ±0.02mm face flatness to eliminate this.",
+            "Rotor knife is the general term for a moving knife on the rotor. Insert and cutting crown describe particular designs within that group. The fixed cutting edge opposite these parts is a [Single-Shaft Shredder Stator Knife](/products/single-shaft-bed-knives).",
         },
         {
-          question:
-            "How does the four-edge indexable design reduce tooling costs?",
+          question: "How should flat and concave rotor-knife faces be selected?",
           answer:
-            "Each square insert has four independent cutting edges. When one edge dulls, loosen the single mounting bolt, rotate the insert 90° to a fresh edge, and retorque. This quadruples the effective service life per blade purchased, reducing annual tooling expenditure by approximately 75% versus non-indexable alternatives.",
+            "Retain the installed face for a like-for-like replacement. Flat and concave profiles change the way the cutting edge engages the feed, so a proposed change should account for the material, holder and mating stator. An existing knife reference provides a clearer starting point than choosing a face solely from its appearance.",
         },
         {
-          question:
-            "What insert geometry is required for shredding large-format IBC totes and HDPE drums?",
+          question: "Can I rotate a worn square insert to use another edge?",
           answer:
-            "For thick-wall containers, specify concave-faced inserts (50×50mm or 60×60mm). The concave profile creates a positive rake geometry, preventing the blade from skiving across the smooth HDPE surface at initial impact and ensuring immediate penetration during the downstroke.",
+            "Yes, where the insert and holder are designed for indexing and an undamaged working edge remains available. Inspect the seating surfaces and fixing features as well as the next edge. Use the indexing arrangement specified for that knife, because a square outline alone does not establish the permitted number or direction of rotations.",
         },
         {
-          question: "Can Sureay supply the matching stationary bed knife?",
+          question: "What should guide material selection when rotor corners chip?",
           answer:
-            "Yes. Stationary bed knives are manufactured as matched sets with rotor inserts, with the clearance face ground to the same ±0.02mm tolerance. A matched bed knife eliminates the clearance guesswork introduced when sourcing rotor inserts and bed knives from separate suppliers.",
+            "Compare chipped corners with gradual wear across the other inserts. Feed contamination, localized impact and the support offered by the face and holder can affect the damage. Evaluate the current steel, heat-treated condition and cutting profile together before changing material, particularly if damage repeatedly appears in one part of the rotor.",
+        },
+        {
+          question: "Can custom fixing-bolt seats and knife undersides be reproduced?",
+          answer:
+            "Yes. The fixing-bolt seat and underside can be reproduced with the cutting face on one drawing. Photos of both sides are useful when the insert has a raised centre or a shaped seating surface. Mark any worn contact areas and identify the bolt and holder used with it.",
+        },
+        {
+          question: "What should I provide for a single-shaft shredder rotor knife quote?",
+          answer:
+            "Send the shredder model, original insert number or drawing, feed material and quantity. If you have a sample instead, include the insert dimensions and photos of the cutting face and underside, with the fixing-bolt seat visible. Those views distinguish inserts with the same square outline but different holder profiles.",
         },
       ],
-      company: [
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement inserts typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders.",
-        },
-        {
-          question: "Can we trial a sample set before a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 inserts) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days.",
-        },
-        {
-          question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Send the machine model, OEM part number and quantity. Include a drawing or photos of both sides of the knife, and tell us if you also need the rotor knife holder.",
+    disambiguation:
+      "For the fixed knife opposite the rotor, see [Single-Shaft Shredder Stator Knives](/products/single-shaft-bed-knives).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // Single-Shaft Bed Knives (Stationary Counter Knives)
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement stator knives with the edge profile and mounting features required by your single-shaft shredder. Sureay supplies straight and serrated configurations, custom lengths and segmented sets. Share your drawing or sample for a quotation, including rotor inserts when needed. Machine brands are compatibility references for Sureay aftermarket parts.",
     id: "single-shaft-bed-knives",
-    name: "Single Shaft Bed Knives",
-    fullName: "Single Shaft Shredder Bed Knives (Stator Knives)",
+    name: "Single-Shaft Shredder Stator Knives",
+    fullName: "Single-Shaft Shredder Stator Knives (Bed Knives)",
+    seoTitle: "Single-Shaft Shredder Stator Knives (Bed Knives)",
+    seoDescription:
+      "Stationary bed knives for single-shaft shredders in listed lengths of 279–3000 mm. Order straight or serrated edges and mounting slots matched to your drawing.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Single Shaft Bed Knives",
+    categoryDisplay: "Single-Shaft Stator Knives",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+    imageDimensions: { width: 3200, height: 3200, smallerWidths: [320, 640] },
+    specificationImageDimensions: { width: 1814, height: 1020, smallerWidths: [320, 640] },
     badge: "Precision Ground",
     badgeColor: "blue",
     gallery: [
@@ -2237,22 +2226,9 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Heavy-duty stator knives (bed knives) for single-shaft shredders. Manufactured from D2 (1.2379) and specialized high-alloy steels. Press-quenched and precision-ground to strict straightness tolerances (≤ 0.05mm/m) to ensure uniform rotor-to-bed shear clearance. Custom slotted hole patterns for exact clearance adjustment. Compatible with Vecoplan, Weima, Lindner, and Zerma.",
-    fullDescription:
-      "In a single-shaft shredding system, the bed knife (stator) serves as the rigid counter-cutting edge against which the rotating inserts shear the material. Because these knives span the entire width of the shredder rotor—often exceeding 2,000mm in length—manufacturing them requires absolute control over thermal distortion.\n\n## The Straightness Imperative\n\nA warped bed knife is the primary cause of shredder inefficiency. If the knife bows, the shear gap becomes uneven: too tight in the center (risking catastrophic rotor collision) and too loose at the ends (causing material wrap-back and frictional melting). Sureay bed knives undergo specialized press-quenching during heat treatment, followed by precision surface grinding. We guarantee a straightness tolerance of ≤ 0.05mm per linear meter, ensuring a perfectly uniform cutting clearance across the entire rotor.\n\n## Deep Hardening for Multiple Regrinds\n\nUnlike rotor inserts which are discarded or indexed, heavy bed knives represent a significant capital investment and must be regrindable. We utilize vacuum heat treatment to achieve a uniform hardness of HRC 56–60 through the entire cross-section of the blade, not just the surface. This allows operators to re-sharpen the bevel edge multiple times without exposing a soft core, maximizing the total operational lifespan of the knife.\n\n## Slotted and Counter-Bored Mounting\n\nMaintaining the optimal 0.2mm–1.0mm shear gap is critical as both rotor and stator knives wear. Our bed knives feature precision CNC-machined slotted holes or oversized counter-bores, engineered to match your OEM machine's adjustment mechanisms perfectly. This ensures maintenance teams can advance the bed knife precisely and lock it down securely under heavy vibration.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
+      "Replacement single-shaft shredder stator and bed knives in D2, DC53 or 42CrMo. Custom edge profiles and mounting slots made to drawing.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
-
     specs: [
       {
         label: "Material",
@@ -2261,8 +2237,8 @@ export const blades: Blade[] = [
       { label: "Target Hardness", value: "HRC 56–60 (Through-Hardened)" },
       { label: "Straightness Tol.", value: "≤ 0.05 mm per linear meter" },
       {
-        label: "Length Capability",
-        value: "Up to 3,500 mm (Seamless single piece)",
+        label: "Sizes",
+        value: "Listed lengths 279–3000 mm; custom single-piece knives up to 3,500 mm",
       },
       { label: "Edge Geometry", value: "Single Bevel, Double Bevel, Serrated" },
       { label: "Mounting Holes", value: "Slotted, Counter-Bored, Threaded" },
@@ -2280,114 +2256,146 @@ export const blades: Blade[] = [
           "Single-Shaft Shredders · HDPE/PP/PVC · Wood Pallets · MSW · Tyre",
       },
     ],
-
-    components: [
-      {
-        id: "straightness-control",
-        tag: "TOLERANCE",
-        title: "Zero-Distortion Straightness",
-        description:
-          "Press-quenched and precision-ground to eliminate bowing. A perfectly straight bed knife guarantees a uniform shear gap, preventing material from slipping through uncut.",
-      },
-      {
-        id: "deep-hardening",
-        tag: "LIFESPAN",
-        title: "Through-Hardened Core",
-        description:
-          "Vacuum heat-treated to ensure consistent hardness (HRC 56–60) deep into the core. You can regrind the bevel multiple times without performance loss.",
-      },
-      {
-        id: "adjustable-mounting",
-        tag: "MAINTENANCE",
-        title: "Precision Adjustment Slots",
-        description:
-          "CNC-milled mounting slots allow technicians to easily advance the bed knife toward the rotor to compensate for wear, maintaining peak shredding efficiency.",
-      },
-      {
-        id: "complete-wear-set",
-        tag: "SUPPLY",
-        title: "Complete Bed Knife Wear Set",
-        description:
-          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
-      },
-    ],
-
+    relatedBladeIds: ["single-shaft-shredder-blades", "shredder-screens"],
     dimensionLabels: {
       col0: "Overall Length (mm)",
       col1: "Width (mm)",
       col2: "Thickness (mm)",
-      col3: "Hole / Mounting Configuration",
-      caption:
-        "* Bed knives are highly machine-specific. Standard reference sizes shown in mm — we manufacture to exact OEM drawings or custom customer specs. Single-piece seamless up to 3,500 mm.",
+      col3: "Mounting / OEM Reference",
+      intro:
+        "Compare the knife profile, mounting slots and OEM part number with the original part. For a segmented set, identify which segment you need.",
     },
-
     standardDimensions: [
-      { spec: "800", od: "100", bolt: "30", type: "Slotted / Counter-Bored" },
-      { spec: "1000", od: "120", bolt: "35", type: "Slotted / Counter-Bored" },
-      { spec: "1300", od: "150", bolt: "40", type: "Slotted / Counter-Bored" },
-      { spec: "1500", od: "150", bolt: "40", type: "Slotted / Counter-Bored" },
-      { spec: "2000", od: "200", bolt: "50", type: "Custom OEM Pattern" },
-      { spec: "3000", od: "250", bolt: "60", type: "Heavy Duty Multi-Hole" },
+      {
+        itemNo: "SR002601",
+        spec: "279",
+        od: "80",
+        bolt: "30",
+        type: "Segmented · M12 × 55 fixing · ZERMA ZSS 850 (80001202)",
+      },
+      {
+        itemNo: "SR002602",
+        spec: "396",
+        od: "80",
+        bolt: "20",
+        type: "6 slots, 22 × 40 mm, at 68 mm centres",
+      },
+      {
+        itemNo: "SR002603",
+        spec: "396",
+        od: "85",
+        bolt: "20",
+        type: "6 slots, 22 × 40 mm, at 68 mm centres",
+      },
+      {
+        itemNo: "SR002604",
+        spec: "800",
+        od: "100",
+        bolt: "30",
+        type: "Slotted / Counter-Bored",
+      },
+      {
+        itemNo: "SR002605",
+        spec: "1000",
+        od: "120",
+        bolt: "35",
+        type: "Slotted / Counter-Bored",
+      },
+      {
+        itemNo: "SR002606",
+        spec: "1300",
+        od: "150",
+        bolt: "40",
+        type: "Slotted / Counter-Bored",
+      },
+      {
+        itemNo: "SR002607",
+        spec: "1500",
+        od: "150",
+        bolt: "40",
+        type: "Slotted / Counter-Bored",
+      },
+      {
+        itemNo: "SR002608",
+        spec: "2000",
+        od: "200",
+        bolt: "50",
+        type: "Custom OEM Pattern",
+      },
+      {
+        itemNo: "SR002609",
+        spec: "3000",
+        od: "250",
+        bolt: "60",
+        type: "Heavy Duty Multi-Hole",
+      },
     ],
-
-    relatedBladeIds: ["single-shaft-shredder-blades", "granulator-blades"],
-
     offers: {
       lowPrice: 150,
       highPrice: 1200,
     },
-
+    components: [
+      {
+        id: "single-shaft-bed-knives-advantage-1",
+        tag: "Steel Options for Stationary Cutting Edges",
+        title: "Steel Options for Stationary Cutting Edges",
+        description:
+          "D2, DC53, 42CrMo and chipper-knife-steel configurations are available for stator knives, supporting replacement orders with the material and edge form specified for the existing shredder.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-2",
+        tag: "Straight and Serrated Edges with Custom Fixings",
+        title: "Straight and Serrated Edges with Custom Fixings",
+        description:
+          "Single-bevel, double-bevel and serrated profiles can be supplied with slotted, counter-bored or threaded mounting features, allowing the cutting edge and fixing pattern to be made as one replacement part.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-3",
+        tag: "Individual Segments and Full Stator Sets",
+        title: "Individual Segments and Full Stator Sets",
+        description:
+          "Listed stator lengths span 279–3000 mm. Order an individual stationary segment or a complete set with end and intermediate positions specified separately. Matching rotor knives can be quoted in the same inquiry.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "Why is the straightness tolerance of a bed knife so important?",
+          question: "Are stator knives, bed knives and counter knives the same part?",
           answer:
-            "If a bed knife is warped by even 0.5mm, the clearance between the rotor inserts and the bed knife becomes inconsistent. Where the gap is too tight, the rotor knives will strike the bed knife, causing catastrophic damage. Where the gap is too wide, material will fold and wrap around the rotor instead of being sheared. Our ≤ 0.05mm/m straightness tolerance prevents both issues.",
+            "Yes. On a single-shaft shredder, stator knife, bed knife and counter knife all describe the fixed cutting edge opposite the [Single-Shaft Shredder Rotor Knives](/products/single-shaft-shredder-blades). Other machines also use some of these names, so the shredder model and stationary position matter when ordering.",
         },
         {
-          question: "How many times can a Sureay bed knife be reground?",
+          question: "Can a plastic granulator bed knife replace a shredder stator knife?",
           answer:
-            "Because we through-harden our bed knives (ensuring the core is as hard as the surface), they can be reground repeatedly until the dimensional limit of the machine's adjustment mechanism is reached. Typically, a heavy-duty D2 bed knife can undergo 5 to 10 regrind cycles depending on the depth of wear.",
+            "Generally no. The profile, seat and adjustment of a shredder stator knife are defined by its original machine. A granulator bed knife works in a different cutting chamber. For rotor-and-bed sets that produce plastic regrind, see [Plastic Granulator Knives](/products/granulator-blades).",
         },
         {
-          question:
-            "How do I ensure the replacement bed knife aligns with my machine's adjustment pushers?",
+          question: "Why can cutting performance remain poor after new rotor inserts are fitted?",
           answer:
-            "Bed knives utilize slotted holes or specific counter-bore patterns to integrate with the shredder's rear adjustment bolts (pushers). We maintain a vast database of OEM drawings for brands like Weima, Vecoplan, and Lindner. Supplying us with your machine model or a basic drawing ensures the slots are milled to the exact OEM coordinates.",
+            "The retained stator edge and the cutting gap still participate in each cut. A worn stationary profile or unsuitable adjustment can affect engagement even when the rotor inserts are new. Check the stator segments, mounting condition and machine-specified adjustment together before deciding which parts of the cutting pair need replacement.",
         },
         {
-          question:
-            "Should I replace the bed knife when I replace the rotor inserts?",
+          question: "How should a reground stator knife be measured for replacement?",
           answer:
-            "Not necessarily every time. Rotor inserts wear out much faster. However, if the bed knife's cutting edge is severely rounded or chipped, placing new rotor inserts against a dull bed knife will drastically reduce the lifespan of the new inserts and decrease throughput. We recommend inspecting the bed knife edge during every rotor indexing cycle and regrinding or replacing it when a sharp edge can no longer be maintained.",
+            "Measure from the fixing datums to the remaining edge and record that measurement as reground height. An unused matching knife or original drawing can establish the new edge position. The distinction matters when a shortened knife has already used part of the machine's adjustment range.",
         },
         {
-          question:
-            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+          question: "Which edge and mounting details can be customized?",
           answer:
-            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
+            "Sureay can make single-bevel, double-bevel and serrated edges with the specified slots, counterbores or threads. Define the edge orientation from the fixing datums and identify the segment position. This allows two knives of similar overall length to retain their distinct cutting profiles and installation arrangements.",
+        },
+        {
+          question: "How do I get a quote for single-shaft shredder bed knives or stator segments?",
+          answer:
+            "Send the machine model, drawing or original part references, and quantities by segment. For a segmented stator, label the end and intermediate pieces and show their adjoining faces, edge profiles and fixing patterns in a layout. Include the original new-knife height when the reference has been reground.",
         },
       ],
-      company: [
-        {
-          question:
-            "Do you have the manufacturing capacity for blades over 2 meters long?",
-          answer:
-            "Yes. Our facility is equipped with heavy-duty surface grinders and extended vacuum heat treatment furnaces capable of processing seamless, single-piece bed knives up to 3,500mm in length without inducing thermal distortion.",
-        },
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a direct OEM manufacturer. This allows us to strictly control the heat treatment and grinding processes critical for long stator knives, eliminating the quality inconsistencies common with trading companies.",
-        },
-        {
-          question: "What is the lead time for custom bed knives?",
-          answer:
-            "For standard OEM replacements, we often ship within 3–5 days. For custom lengths or specific alloy requirements, production lead time is typically 15–20 working days, inclusive of the deep thermal cycling processes required for dimensional stability.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Send the machine model, OEM part number and quantity. Include a drawing or photos showing the cutting edge and mounting slots, and tell us if you also need the mounting plate.",
+    disambiguation:
+      "For the knives mounted on the rotor, see [Single-Shaft Shredder Rotor Knives](/products/single-shaft-shredder-blades).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -2395,10 +2403,12 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "granulator-blades",
-    name: "Granulator Blades",
-    fullName:
-      "Industrial Plastic Crusher & Granulator Knives for PET, PVC & PP Recycling",
-    category: "granulator_blades",
+    name: "Plastic Granulator Knives",
+    fullName: "Plastic Granulator Knives: Rotor & Bed Blades",
+    seoTitle: "Plastic Granulator Knives | Rotor & Bed Blades",
+    seoDescription:
+      "Replace rotor and bed knives on granulators processing PET, PP, HDPE or PVC. Plastic granulator blades in listed lengths of 90–1178 mm, with custom bolt patterns.",
+    category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Granulator Blades",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2407,513 +2417,598 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/granulator-blades-03.webp",
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
-
     description:
-      "D2, SKD-11, and Cr12MoV granulator rotor and stator knives precision-ground to ±0.02mm bolt-hole tolerance for Cumberland, Conair/Wortex, Herbold, and Rapid granulators. Bevel angles from 30° to 55° are matched to polymer type-delivering clean, low-fines regrind. Vacuum hardening plus deep cryogenic processing stabilizes HRC 58–62 for extended edge retention.",
-
-    fullDescription:
-      "Granulator rotor and stator knives are the highest-wear components in any closed-loop plastic recycling line. Incorrect alloy selection or substandard geometry tolerances directly translate into enlarged particle size distribution, excessive dust and fines, elevated motor amp draw, and shortened sharpening intervals-all of which degrade regrind pellet quality and increase cost per tonne processed.\n\nSureay granulator blades are manufactured from D2 (1.2379), SKD-11, DC53, and Cr12MoV cold-work tool steels-selected based on the specific polymer and abrasive filler content being processed. Calcium carbonate-filled PVC and glass-fibre-reinforced nylon demand SKD-11 or DC53 for maximum abrasion resistance. Impact-loaded applications such as thick-wall HDPE containers, cold nylon runners, and heavy sprues require the higher toughness-to-hardness ratio of Cr12MoV.\n\nAll blades are vacuum-hardened and deep-cryogenically processed at -196°C to achieve a stabilized HRC 58–62 microstructure. The cryogenic step eliminates retained austenite, reduces internal compressive stress, and significantly extends the time between sharpening cycles by improving carbide dispersion uniformity across the cutting edge.\n\n## Precision Grinding Standards\nThe cutting clearance between rotor and stator knives is the single most influential variable controlling regrind particle size and fines fraction. Sureay granulator blades are machined to the following tolerances to ensure consistent rotor-to-bed gap across the full cutting width:\n\n- Bolt-hole positional tolerance: ±0.02 mm\n- Face flatness: 0.05 mm\n- Parallelism (top face to bottom face): 0.03 mm\n- Bevel angle: 30°–55° (application-optimized per polymer and rotor speed)\n\nA face flatness deviation above 0.08mm allows rotor knife rocking under load, progressively widening the cutting gap and increasing the coarse fraction in regrind-a defect that causes downstream extruder feed inconsistency.\n\n## Polymer-Specific Bevel Angle Selection\n30°–35° bevel: Soft thermoplastics (LDPE, LLDPE, EVA, foam PP). Low included angle delivers maximum sharpness for clean shearing of compliant materials.\n\n40°–45° bevel: General-purpose engineering plastics (HDPE, ABS, standard PP/PET regrind). Balanced edge strength and sharpness for the most common granulator feedstocks.\n\n50°–55° bevel: Highly abrasive or filled compounds (glass-filled nylon, calcium carbonate PVC, UHMW-PE). Wider bevel distributes abrasive wear over a larger cutting face, extending sharpening intervals.\n\n## Machine Compatibility\nDimensions are reverse-engineered to match Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid, and Ramco configurations. Both double-hole and multi-hole (triple, quadra) mounting patterns are carried in standard stock.",
-
+      "Replacement plastic granulator rotor and bed knives in D2, SKD11, DC53 or Cr12MoV. Custom profiles and bolt patterns for plastic regrind production.",
     link: "/products/granulator-blades",
     isFeatured: true,
-    rfqPlaceholder:
-      "E.g., rotor and bed knives for a Rapid granulator, D2 steel, 3 sets — drawing attached",
-
+    quoteRequirements:
+      "Include the granulator model, rotor or bed position, knife dimensions, mounting-hole pitch and material being cut.",
     introNote:
-      "Rotor knives and bed knives wear at different rates and are rarely replaced on the same schedule. Rotor knives take the primary cutting load and typically need sharpening two to three times more often than the bed knife, but the cutting gap is set between the two — so a fresh rotor knife against a rounded bed knife still tears material and generates fines. Sureay supplies both as a matched set, ground from the same steel batch, so the gap holds after the first regrind. Bed knives (also called stator or fixed knives) are available in the same D2, SKD-11, DC53 and Cr12MoV grades.",
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "Gamma Meccanica",
-    ],
-
+      "Straight and skewed knife arrangements change how the edges meet across the cutting chamber. Identify the original arrangement before choosing a replacement set.",
     specs: [
-      { label: "Material", value: "D2 (1.2379), SKD-11, DC53, Cr12MoV" },
-      { label: "Hardness", value: "HRC 58–62 (Cryogenically Stabilized)" },
-      { label: "Bolt-hole Tol.", value: "±0.02 mm" },
-      { label: "Face Flatness", value: "≤ 0.05 mm" },
-      { label: "Parallelism", value: "≤ 0.03 mm" },
-      { label: "Bevel Angle", value: "30° - 55° (Application-optimized)" },
+      { label: "Sizes", value: "90–1178 mm" },
+      { label: "Application", value: "Plastic regrind production" },
+      {
+        label: "Knife positions",
+        value: "Rotating rotor knife and stationary bed knife",
+      },
+      { label: "Material", value: "D2 (1.2379), SKD-11, DC53 or Cr12MoV" },
+      { label: "Hardness", value: "HRC 58–62" },
+      { label: "Bevel Angle", value: "30°–55°" },
+      { label: "Bolt-hole Tolerance", value: "±0.02 mm" },
+      { label: "Face Flatness", value: "≤0.05 mm" },
+      { label: "Parallelism", value: "≤0.03 mm" },
       {
         label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
+        value: "Vacuum hardening and deep cryogenic treatment (−196°C)",
       },
-      {
-        label: "Application",
-        value: "PET, PVC, PP, HDPE, Engineering Plastics",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Cumberland, Rapid, Herbold, Conair, Nelmor",
-      },
+      { label: "Feedstock", value: "PET, PVC, PP, HDPE and engineering plastics" },
     ],
-
-    components: [
-      {
-        id: "maximized-regrind-quality",
-        tag: "QUALITY",
-        title: "Maximized Regrind Quality",
-        description:
-          "Ultra-sharp, precisely aligned cutting edges shear plastic cleanly rather than tearing it, drastically reducing the generation of unwanted dust and fines.",
-      },
-      {
-        id: "extended-mtbr",
-        tag: "RELIABILITY",
-        title: "Extended MTBR (Mean Time Between Replacements)",
-        description:
-          "High wear resistance minimizes the frequency of blade sharpening and replacement, keeping your recycling line running continuously.",
-      },
-      {
-        id: "reduced-motor-load",
-        tag: "EFFICIENCY",
-        title: "Reduced Motor Load",
-        description:
-          "Optimized cutting angles decrease the shearing force required, lowering the electrical amp draw on your granulator's motor and reducing energy costs per ton.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Hole Configuration",
-      col1: "Dimensions (L × W × T)",
-      col2: "Hole Center Pitch",
-      caption:
-        "* Standard dimensions for rotor and stator knives in millimeters (mm). Custom profiles to drawing within 10 days.",
-    },
-
-    standardDimensions: [
-      { spec: "Double hole", od: "90 × 70 × 8", bolt: "40 / 45 / 50" },
-      { spec: "Double hole", od: "120 × 70 × 8", bolt: "60" },
-      { spec: "Triple hole", od: "126 × 60 × 8", bolt: "40" },
-      { spec: "Triple hole", od: "150 × 70 × 8", bolt: "50 / 55" },
-      { spec: "Triple hole", od: "170 × 70 × 8", bolt: "45" },
-      { spec: "Triple hole", od: "180 × 70 × 8", bolt: "60" },
-      { spec: "Quadra hole", od: "170 × 70 × 8", bolt: "40" },
-      { spec: "Quadra hole", od: "200 × 70 × 8", bolt: "50" },
-    ],
-
     relatedBladeIds: [
       "single-shaft-shredder-blades",
-      "twin-shaft-blades-recycling",
       "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 25,
       highPrice: 320,
     },
-
+    components: [
+      {
+        id: "granulator-blades-advantage-1",
+        tag: "Tool-Steel Options for Plastic Regrind",
+        title: "Tool-Steel Options for Plastic Regrind",
+        description:
+          "D2, SKD11, DC53 and Cr12MoV knives provide material choices for plastic regrind production, with the specified steel considered alongside the polymer, fillers and existing cutting arrangement.",
+      },
+      {
+        id: "granulator-blades-advantage-2",
+        tag: "Ground Bevels and Defined Mounting Geometry",
+        title: "Ground Bevels and Defined Mounting Geometry",
+        description:
+          "Sureay supplies rotor and bed knives with specified bevels, working faces and bolt patterns, allowing replacement orders to retain the cutting orientation and seating geometry of the machine.",
+      },
+      {
+        id: "granulator-blades-advantage-3",
+        tag: "Custom Rotor and Bed Knife Sets",
+        title: "Custom Rotor and Bed Knife Sets",
+        description:
+          "Sureay supplies individual rotor and bed knives or complete sets to drawing or sample. Listed knife lengths span 90–1178 mm, with moving and stationary positions specified separately for the cutting chamber.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "How do I choose between D2, DC53, and Cr12MoV for my granulator?",
+          question: "How do I select replacement knives for my plastic granulator?",
           answer:
-            "D2 is the industry standard for clean plastics like PET and PP. For glass-filled or abrasive polymers, DC53 offers superior wear resistance. If your feed contains occasional metal impurities (like wire or staples), Cr12MoV provides higher impact toughness to prevent edge chipping.",
+            "Use the machine model, knife position and original part number, then compare the length, section, bevel and fixing pattern. Rotor and bed knives can differ within the same machine. The standard-dimensions table gives individual configurations, while the knife drawing establishes the exact replacement for your installed cutting chamber.",
         },
         {
-          question:
-            "What causes excessive dust and fines during plastic granulation?",
+          question: "What do rotor knives, fly knives and bed knives mean?",
           answer:
-            "It's usually caused by blunt edges or an incorrect bevel angle tearing the plastic instead of shearing it. We optimize the bevel angle (30°–55°) based on your specific polymer to ensure clean cutting, which maximizes your regrind quality and pellet value.",
+            "Rotor knives, also called fly knives, move with the granulator rotor. Bed knives form the stationary opposing edge. Plastic crusher knives is a broader purchasing name sometimes used for these parts. Identify the actual machine and position, because the same terms can be used for different cutting arrangements in size-reduction equipment.",
         },
         {
-          question:
-            "Can you match the exact bolt-hole patterns for my specific machine?",
+          question: "When should the polymer or filler content change the material choice?",
           answer:
-            "Absolutely. We maintain a vast database of OEM blueprints for Cumberland, Herbold, Rapid, Weima, and more. We CNC-mill all counter-bores to a strict ±0.02mm tolerance to guarantee a perfect drop-in fit without micro-rocking.",
+            "Abrasive fillers and contamination can alter how quickly the working edge wears, while impact and brittle edge damage raise different concerns. Compare the actual compound and used knife with the current material specification. That comparison helps assess a replacement grade without changing the machine's required knife section, bevel or mounting geometry.",
         },
         {
-          question:
-            "What rotor knife geometry produces the lowest fines fraction in beside-the-press granulators?",
+          question: "Why does a granulator produce more fines or poorer regrind?",
           answer:
-            "For beside-the-press in-line granulators on injection moulding lines, a 40°–45° bevel angle with a polished rake face (Ra ≤ 0.8μm) delivers the cleanest, lowest-fines regrind on runner and sprue material. The polished face reduces adhesion in the cutting zone, preventing the micro-welding of HDPE and PP material that generates fines at the high cycle rates typical of continuous injection moulding production.",
+            "A dull cutting pair, incorrect rotor-to-bed clearance or a worn screen can increase fines or change regrind quality. Look for rounded edges or uneven wear across the rotor and bed knives and compare output under the same feed conditions before changing the knife specification.",
         },
         {
-          question:
-            "When should I sharpen versus replace my granulator rotor knives?",
+          question: "Is there one standard knife gap for all granulators?",
           answer:
-            "The primary indicator is regrind particle size distribution - when the oversize fraction exceeds 8–10% of output weight, rotor knives need sharpening. Secondary indicators are a 15%+ increase in motor amp draw above baseline and elevated dust fraction. Each Sureay blade can typically be resharpened 3–5 times before the bevel geometry reaches minimum usable material depth, at which point replacement is more economical.",
+            "No. The specified rotor-to-bed gap depends on your granulator and its knife configuration. The OEM settings identify which knives can be adjusted and the minimum knife dimensions after regrinding. Check both limits when fitting a sharpened or replacement set.",
         },
         {
-          question: "Do blades or the screen control my regrind particle size?",
+          question: "Why do straight and slanted knife arrangements need different drawings?",
           answer:
-            "The screen sets the particle size — material stays in the cutting chamber until it is small enough to pass through. Blades control something different: how cleanly that material is cut on the way there. Dull or badly angled knives tear rather than shear, which produces dust and fines that pass the screen but lower the value of your regrind. If your particle size is wrong, change the screen. If your particle size is right but the fines fraction is climbing, look at the knives and the cutting gap.",
+            "The cutting angle can result from the knife profile, its position on the rotor or bed, or both. The overall knife length therefore describes only part of the configuration. The drawing needs to preserve the bevel orientation and fixing geometry used by the machine's rotor-and-bed combination.",
+        },
+        {
+          question: "When can granulator knives be reground?",
+          answer:
+            "Regrinding is suitable when the specified cutting profile can be restored within the permitted minimum knife dimensions. Check the remaining height and adjustment allowance against the machine instructions. Knives that have reached their service limit or cannot recover a sound edge need replacement, with rotor and bed positions assessed as a working pair.",
+        },
+        {
+          question: "What information is needed to quote plastic granulator rotor and bed knives?",
+          answer:
+            "Send the granulator model and separate drawings, part numbers or samples for the rotor and bed positions, plus the plastic type, fillers and quantity for each knife. Show the bevel and hole pattern for each position. Mark the reground height separately if your only reference is a sharpened knife.",
         },
       ],
-      company: [
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
-        },
-        {
-          question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
-          answer:
-            "Unlike standard quenching, every Sureay blade undergoes deep cryogenic treatment after vacuum hardening. This transforms retained austenite into martensite, which raises wear resistance and, more importantly, keeps hardness uniform along the full length of the cutting edge — the single biggest cause of uneven wear on long granulator knives is a soft section left by incomplete transformation.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement blades typically ship within 48 hours. Custom profiles take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record, and a heat treatment batch certificate. For OEM qualification, full CMM dimensional reports and steel mill certificates are available on request.",
-        },
-        {
-          question:
-            "Can we trial a sample set before committing to a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–5 blades) for machine fit verification and edge life testing. Standard sample lead time is 5–7 working days. For custom profiles, dimensional sign-off samples are produced before full production commences - no tooling commitment until fit is confirmed.",
-        },
-      ],
+      company: [],
     },
+    dimensionLabels: {
+      col0: "Configuration",
+      col1: "Dimensions (L × W × T)",
+      col2: "Hole Center Pitch",
+      caption:
+        "* Standard dimensions for rotor and stator knives in millimeters (mm). Custom profiles to drawing within 10 days.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR002801",
+        spec: "Double hole",
+        od: "90 × 70 × 8",
+        bolt: "40 / 45 / 50",
+      },
+      { itemNo: "SR002802", spec: "Double hole", od: "120 × 70 × 8", bolt: "60" },
+      { itemNo: "SR002803", spec: "Triple hole", od: "126 × 60 × 8", bolt: "40" },
+      {
+        itemNo: "SR002804",
+        spec: "Triple hole",
+        od: "150 × 70 × 8",
+        bolt: "50 / 55",
+      },
+      { itemNo: "SR002805", spec: "Triple hole", od: "170 × 70 × 8", bolt: "45" },
+      { itemNo: "SR002806", spec: "Triple hole", od: "180 × 70 × 8", bolt: "60" },
+      { itemNo: "SR002807", spec: "Quadra hole", od: "170 × 70 × 8", bolt: "40" },
+      { itemNo: "SR002808", spec: "Quadra hole", od: "200 × 70 × 8", bolt: "50" },
+      {
+        itemNo: "SR002809",
+        spec: "ZERMA GSP 560/700 rotor — position 501",
+        od: "310 × 100 × 22",
+        bolt: "To drawing",
+      },
+      {
+        itemNo: "SR002810",
+        spec: "ZERMA GSP 560/700 stator — position 601",
+        od: "646 × 100 × 22",
+        bolt: "To drawing",
+      },
+      {
+        itemNo: "SR002811",
+        spec: "ZERMA GSH 800/1200 rotor — 80000900",
+        od: "568 × 100 × 22",
+        bolt: "To drawing",
+      },
+      {
+        itemNo: "SR002812",
+        spec: "ZERMA GSH 800/1200 stator — 80001050",
+        od: "1178 × 100 × 22",
+        bolt: "To drawing",
+      },
+      {
+        itemNo: "SR002813",
+        spec: "ZERMA GSH 800/1600 rotor — 80000920",
+        od: "385 × 100 × 22",
+        bolt: "To drawing",
+      },
+      {
+        itemNo: "SR002814",
+        spec: "ZERMA GSH 800/1600 stator — 80001070",
+        od: "795 × 100 × 22",
+        bolt: "To drawing",
+      },
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 1. Rotary Metal Slitters (金属卷材纵剪/分条刀具组)
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Order steel coil slitting knives with the spacers, stripper rings and separator discs needed for your line. Sureay offers grade options, custom bores and tooling widths; send your drawings and slit schedule for a coordinated quotation.",
     id: "metal-coil-slitting-knives",
-    name: "Metal Coil Slitting Knives",
-    fullName: "Heavy-Duty Rotary Slitting Knives for Steel Coil Processing",
+    name: "Steel Coil Slitting Knives",
+    fullName: "Steel Coil Slitting Knives & Rotary Shear Tooling",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Metal Slitting Blades",
-    image:
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "Heavy Duty",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
-    ],
+    categoryDisplay: "Steel Coil Slitting Knives",
+    image: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Complete rotary coil slitting tooling for metal service centers and steel mills. D2, SKD-11, and H13 circular slitter knives lapped to Ra ≤ 0.2μm with ±0.001mm thickness tolerance. Engineered for burr-free shearing of cold-rolled (CR), hot-rolled (HR) steel, galvanized coils, and heavy silicon steel.",
-    fullDescription:
-      "Precision coil slitting demands a dimensional tolerance standard that most industrial cutting applications never approach. On a high-speed slitting line running heavy steel coils at 200–400 m/min across a multi-knife arbor stack, a cumulative thickness error of just 0.01mm per knife produces measurable slit-width deviation, severe edge burrs, and coil camber that exceeds the quality limits for automotive and appliance manufacturing.\n\nSureay circular metal slitter knives are manufactured to extreme verified tolerances. All knife side faces are finish-lapped to Ra ≤ 0.2μm. This mirror face finish is not merely aesthetic—it ensures full metal-to-metal contact between blades and spacers in the arbor stack, eliminating microscopic air gaps that allow individual blade deflection under lateral slitting loads.\n\n## Heavy Alloy Selection by Strip Material\n\n**Cold-Rolled & Galvanized Steel (CR, EG, HDG):** D2 (1.2379) or SKD-11, hardened to HRC 60–62 via vacuum quench. High chromium carbide content resists the abrasive wear from zinc spangle and surface scale. Recommended for continuous-shift CR steel service centers.\n\n**Hot-Rolled Steel & Heavy Gauge Plate:** H13 (SKD-61) hot-work tool steel or 6CrW2Si. Hot-rolled steel slitting generates massive impact forces and elevated ambient temperatures. H13's superior toughness prevents the catastrophic brittle fracture that destroys standard D2 blades on heavy-gauge lines.\n\n**Silicon Steel (CRGO / CRNO Electrical Grade):** Cr12MoV or PM powder-metallurgy grades. Silicon steel's extreme abrasiveness—primarily caused by silica inclusions—demands maximum wear resistance to maintain slit-width tolerances throughout a full transformer laminate production run.\n\n## Complete Slitting Arbor Tooling\n\nThe cutting knife is only one component of a precision coil slitting system. Steel spacers, bonded rubber stripper rings, and overarm separator discs must be dimensionally matched to the knife set to ensure uniform arbor preload and consistent strip tension. Sureay supplies fully integrated slitting tooling packages—verified as a matched system to eliminate tolerance stack-up errors.",
+      "Replacement steel coil slitting knives for carbon, stainless and high-strength steel. Custom rotary shear knives, spacers and stripper rings to drawing.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Fagor Arrasate",
-      "Heinrich Georg",
-      "Red Bud Industries",
-      "Braner",
-      "Salico",
-      "Athader",
-    ],
-
     specs: [
+      { label: "Sizes", value: "Rotary shear OD 80–680 mm" },
       {
         label: "Material",
-        value: "D2, SKD11, Cr12MoV (Cold-Roll) | H13, 6CrW2Si (Hot-Roll)",
+        value:
+          "D2, SKD11, Cr12MoV, H13, 6CrW2Si, DC53, M2, PM HSS or WC-Co carbide",
       },
       {
-        label: "Hardness",
-        value: "HRC 60–62 (Cold-Roll) | HRC 54–58 (Hot-Roll / Impact)",
+        label: "Applications",
+        value: "Cold-rolled, hot-rolled, stainless and high-strength coil",
       },
-      { label: "Thickness Tol.", value: "Strictly ±0.001 mm" },
-      { label: "Parallelism", value: "≤ 0.002 mm" },
-      { label: "Surface Finish", value: "Mirror Lapped (Ra ≤ 0.2 μm)" },
+      { label: "Surface finish", value: "Mirror-lapped faces, Ra ≤0.2 μm" },
       {
-        label: "Complete Tooling",
-        value: "Knives, Spacers, Rubber Stripper Rings, Separators",
+        label: "Bore fit",
+        value: "H7 for the listed H7 model. Other fits to drawing.",
       },
       {
-        label: "Application",
-        value: "Cold / Hot Rolled Steel, Silicon Steel, Galvanized Plate",
+        label: "Typical hardness",
+        value:
+          "D2 58–62 HRC · H13 54–58 HRC for ambient plate slitting · PM HSS 64–66 HRC",
       },
+      {
+        label: "Precision options",
+        value:
+          "For OD up to 420 mm, ±0.001 mm thickness and 0.002 mm face parallelism. Other sizes to drawing.",
+      },
+      {
+        label: "Tooling",
+        value: "Spacers, stripper rings and overarm separator discs",
+      },
+      { label: "Mounting", value: "Solid arbor with a plain or keyed bore" },
     ],
-
+    detailLayout: {
+      seoTitle: "Steel Coil Slitting Knives | Custom Tooling",
+      sizeRange: "Rotary shear OD 80–680 mm",
+      heroAlt: "Thick ground rotary shear knife for steel coil slitting",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-coil-slitting-knives-detail.webp",
+        alt: "Coil slitting stripper ring with a steel core and bonded outer ring",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "steel",
+          tabLabel: "Steel Knives",
+          title: "Steel Rotary Knives",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Line class"],
+          rows: [
+            ["SR001301", "200 × 120 × 10 mm", "Light gauge"],
+            ["SR001302", "200 × 120 × 12 mm", "Light gauge"],
+            ["SR001303", "250 × 150 × 12 mm", "Service center"],
+            ["SR001304", "250 × 150 × 15 mm", "Service center"],
+            ["SR001305", "300 × 200 H7 × 12 mm", "Medium-duty"],
+            ["SR001306", "315 × 200 × 15 mm", "Cold / hot rolled"],
+            ["SR001307", "315 × 200 × 20 mm", "Cold / hot rolled"],
+            ["SR001308", "400 × 260 × 25 mm", "Hot rolled"],
+            ["SR001309", "500 × 320 × 40 mm", "Heavy plate"],
+          ],
+        },
+        {
+          id: "carbide",
+          tabLabel: "Carbide Knives",
+          title: "Carbide Rotary Knives",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Construction"],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "Solid carbide"],
+            ["SR001332", "181 × 125 × 9.5 mm", "Solid carbide"],
+            ["SR001333", "204 × 125 × 10 mm", "Solid carbide"],
+            ["SR001334", "250 × 125 × 10.1 mm", "Solid carbide"],
+            ["SR001335", "300.15 × 160 × 28 mm", "Solid carbide"],
+          ],
+        },
+        {
+          id: "tooling",
+          tabLabel: "Arbor Tooling",
+          title: "Arbor Tooling",
+          columns: ["Item No.", "Component", "Function", "Selection inputs"],
+          rows: [
+            [
+              "SR001341",
+              "Spacers",
+              "Set cutting positions",
+              "Width, bore and stack fit",
+            ],
+            [
+              "SR001342",
+              "Stripper rings",
+              "Support and release strip",
+              "Steel or bonded elastomer, hardness and width",
+            ],
+            [
+              "SR001343",
+              "Separator discs",
+              "Guide separated strips",
+              "Overarm bore, OD and edge form",
+            ],
+          ],
+        },
+        {
+          id: "additional-steel-knives",
+          tabLabel: "Additional Steel Knife Sizes",
+          title: "Additional Steel Knife Sizes",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Application"],
+          rows: [
+            ["SR001818", "400 × 260 × 20 mm", "Heavy gauge hot-rolled steel"],
+            ["SR001819", "500 × 320 × 30 mm", "Heavy plate"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Rotary shear OD 80–680 mm" },
+        {
+          label: "Material",
+          value:
+            "D2, SKD11, Cr12MoV, H13, 6CrW2Si, DC53, M2, PM HSS or WC-Co carbide",
+        },
+        {
+          label: "Applications",
+          value: "Cold-rolled, hot-rolled, stainless and high-strength coil",
+        },
+        { label: "Surface finish", value: "Mirror-lapped faces, Ra ≤0.2 μm" },
+        {
+          label: "Bore fit",
+          value: "H7 for the listed H7 model. Other fits to drawing.",
+        },
+        {
+          label: "Typical hardness",
+          value:
+            "D2 58–62 HRC · H13 54–58 HRC for ambient plate slitting · PM HSS 64–66 HRC",
+        },
+        {
+          label: "Precision options",
+          value:
+            "For OD up to 420 mm, ±0.001 mm thickness and 0.002 mm face parallelism. Other sizes to drawing.",
+        },
+        {
+          label: "Tooling",
+          value: "Spacers, stripper rings and overarm separator discs",
+        },
+        { label: "Mounting", value: "Solid arbor with a plain or keyed bore" },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Fagor Arrasate",
+      "Heinrich Georg",
+      "Burghardt + Schmidt",
+      "ANDRITZ",
+      "Red Bud Industries",
+    ],
     components: [
       {
-        id: "micron-tolerance",
-        tag: "PRECISION",
-        title: "Micro-Tolerance Engineering",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Steel Grades for Different Coil Loads",
         description:
-          "Engineered with a thickness tolerance of ±0.001mm and parallelism of 0.002mm. This guarantees zero cumulative error when stacking multiple heavy blades and spacers on the slitter arbor.",
+          "Sureay offers tool-steel and PM-steel configurations for different coil grades and processing loads, allowing replacement knife orders to reflect the strip specification and observed wear or chipping.",
       },
       {
-        id: "alloy-toughness",
-        tag: "METALLURGY",
-        title: "Heavy-Duty Alloy Selection",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Ground Dimensions for Knife and Spacer Stacks",
         description:
-          "From high-chromium D2/SKD11 for abrasive cold-rolled and galvanized steel, to shock-resistant H13 for heavy hot-rolled mills. Each blade is vacuum hardened to deliver exceptional edge strength.",
+          "Replacement knives are ground to the specified width and face geometry for your coil-slitting stack, with matching spacer dimensions coordinated to the same tooling layout.",
       },
       {
-        id: "complete-setup",
-        tag: "SYSTEM",
-        title: "Complete Arbor Tooling",
+        id: "selection-3",
+        tag: "Application",
+        title: "Slitting Knives with Companion Tooling",
         description:
-          "Beyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and overarm separator discs. A fully integrated system ensures perfect strip tension and burr-free coil rewinding.",
+          "Source slitting knives, spacers, stripper rings and separator discs in one enquiry, with the required components and quantities arranged around your coil-line tooling layout.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Typical Machine / Line Type",
-      col1: "Outer Diameter",
-      col2: "Inner Diameter",
-      col3: "Thickness",
-      caption:
-        "* Dimensions shown are standard examples. We manufacture up to Ø 1500 mm for heavy-gauge plate slitting lines. Custom keyways and drive pin holes machined to exact OEM blueprints.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Light Gauge Slitting Line",
-        od: "Ø 200 mm",
-        id: "120 mm",
-        thickness: "10 / 12 mm",
-      },
-      {
-        spec: "Standard Steel Service Center",
-        od: "Ø 250 mm",
-        id: "150 mm",
-        thickness: "12 / 15 mm",
-      },
-      {
-        spec: "Medium-Heavy CR/HR Line",
-        od: "Ø 315 mm",
-        id: "200 mm",
-        thickness: "15 / 20 mm",
-      },
-      {
-        spec: "Heavy Gauge HR Steel Mill",
-        od: "Ø 400 mm",
-        id: "260 mm",
-        thickness: "20 / 25 mm",
-      },
-      {
-        spec: "Extreme Heavy Plate Mill",
-        od: "Ø 500 mm",
-        id: "320 mm",
-        thickness: "30 / 40 mm",
-      },
-    ],
-
-    relatedBladeIds: [
-      "metal-foil-strip-slitter-knives",
-      "scrap-chopper-blades",
-      "tungsten-carbide-slitter-knives",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1500,
-    },
     faqs: {
       technical: [
         {
-          question:
-            "What knife clearance should I set for cold-rolled steel versus silicon steel?",
+          question: "What identifies a replacement steel coil slitting knife?",
           answer:
-            "For cold-rolled mild steel (CR, EG), set horizontal clearance at 8–10% of material thickness. For silicon steel (CRGO/CRNO), tighten clearance to 5–8% — silicon steel's extreme hardness and brittleness demand a tighter shear gap to prevent the edge fracturing that produces burrs on transformer laminate strips.",
+            "Outside diameter, bore, axial width and arbor interface establish the basic fit. Include the strip grade, thickness and retained tooling. Rotary shear knives are the circular knives used for longitudinal coil slitting; straight shear knives cut across the strip, while [Scrap Chopper Blades](/products/scrap-chopper-blades) cut the edge trim into shorter pieces.",
         },
         {
           question:
-            "Why does my slit-width drift across the full coil width after the first coil?",
+            "How do coil strength and blade damage affect knife material selection?",
           answer:
-            "Slit-width drift is caused by blade-to-spacer face contact loss from varying thickness tolerances in the arbor stack. Even a 0.002mm blade-thickness inconsistency in a 20-knife stack creates a cumulative 0.04mm lateral shift. Our blades and spacers are lapped to ±0.001mm thickness tolerance and Ra ≤ 0.2μm face finish, eliminating the air gaps that allow individual blade deflection.",
+            "Consider strip strength, thickness and processing conditions alongside the used knife's condition. Gradual abrasion and edge chipping present different material-selection questions. Comparing the coil specification and current wear pattern with the existing tooling helps define the replacement requirement, including the balance between wear resistance and resistance to edge damage.",
         },
         {
           question:
-            "Should I use D2 or H13 for slitting 8mm thick Hot-Rolled (HR) steel plate?",
+            "Why do coil slitting knives chip instead of wearing gradually?",
           answer:
-            "For 8mm HR plate, you must use H13 or 6CrW2Si. Slitting heavy-gauge hot-rolled steel generates massive impact shock at the bite point. D2 (at HRC 60) is too brittle and will likely shatter or suffer severe micro-chipping under these loads. H13 (tempered to HRC 54–56) provides the massive core toughness required to absorb these impact forces reliably.",
+            "Chipping can indicate mechanical overload. Incorrect horizontal clearance, excessive overlap, deformed tooling or a fatigued cutting edge can contribute. Knife material and hardness also affect the result. Check the damaged position, retained tooling and grinding history against the actual strip grade and thickness before deciding whether the setup or replacement material needs to change.",
+        },
+        {
+          question: "What causes burrs or uneven slit edges on a coil line?",
+          answer:
+            "Blade wear or chipping, knife clearance, overlap, arbor condition and changes in the strip grade can all contribute. Compare the defect's position and direction across the slit pattern. That record helps determine whether it follows one knife, a particular tooling setup or a change in the material being processed.",
         },
         {
           question:
-            "What maintenance inspection schedule maximizes circular slitter knife service life?",
+            "How should knife and spacer tolerances be specified for a complete stack?",
           answer:
-            "Inspect knife faces weekly under 10× magnification for edge chipping (indicates clearance drift or hard material inclusions). Re-lap side faces when surface roughness exceeds Ra 0.4μm to restore full arbor contact. Store removed knives vertically in rust-inhibitor oil to prevent corrosive pitting during idle periods.",
+            "Define permitted variation for individual widths and for the completed stack. Bore fit, face condition and parallelism also affect assembly. The catalog precision options apply to knives up to 420 mm outside diameter; other sizes are specified to drawing. Record retained components alongside the replacements so the complete arrangement has clear dimensional requirements.",
+        },
+        {
+          question:
+            "Can Sureay supply knives, spacers, stripper rings and separator discs together?",
+          answer:
+            "Yes. These four tooling types can be included in the same quotation. The slit-width schedule and component drawings define their arrangement. List the quantity of each configuration and identify which existing parts will remain in use, allowing the replacement widths, interfaces and working diameters to be considered as part of one assembly.",
+        },
+        {
+          question:
+            "How do I compare the cost of different coil slitter knife materials?",
+          answer:
+            "Compare cost per acceptable tonne or metre under the same coil grade, gauge, slit pattern and edge-quality requirements. Include knife purchase, regrinding, changeover time and scrap, using recorded output between knife changes. Apply the same accounting period to each option so changes in production conditions are separated from differences in knife performance.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can Sureay supply a complete integrated tooling package including spacers and stripper rings?",
-          answer:
-            "Yes. We supply complete matched slitting tooling systems: knife sets, precision steel spacers (ground to ±0.001mm), bonded rubber stripper rings, and overarm separator discs. Sourcing all components from a single verified tolerance stack eliminates the cumulative errors that appear when mixing tooling from separate suppliers.",
-        },
-        {
-          question:
-            "Do you manufacture large diameter slitter knives for heavy plate mills?",
-          answer:
-            "Yes, our heavy grinding and heat treatment facilities can process circular slitting knives up to 1500mm in outer diameter, specifically designed for heavy gauge hot-rolled coil and plate mill edge-trimming applications.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "guillotine-shear-blades",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // 2. Metal Shear Knives
+  // 2. Alligator Shear Blades (existing product URL retained)
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "metal-shear-knives",
-    name: "Metal Shear Knives",
-    fullName:
-      "Heavy-Duty Guillotine & Scrap Shear Knives for Metal Fabrication",
+    name: "Alligator Shear Blades",
+    fullName: "Alligator Shear Blades for Scrap Metal Recycling",
+    seoTitle: "Alligator Shear Blades for Scrap Metal",
+    seoDescription:
+      "Replace the upper moving blade or lower fixed knife on your alligator shear. Listed lengths are 320–508 mm, with S1, 6CrW2Si and H13 steel options.",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Metal Shear Knives",
-    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Heavy Shearing",
+    categoryDisplay: "Alligator Shear Blades",
+    image: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+    badge: "Alligator Shears",
     badgeColor: "blue",
     gallery: [
-      "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-04.webp",
-      "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+      "/images/products/shear-detail/alligator-shear-knives-detail.webp",
     ],
     description:
-      "Premium straight shear blades for hydraulic guillotines, alligator shears, and heavy scrap metal shears. Forged from D2, S1 (6CrW2Si), and H13 tool steels. Surface-ground to ±0.05 mm full-length parallelism for burr-free shearing of mild steel, stainless plate, and heavy scrap billets.",
-
-    fullDescription:
-      "Guillotine and scrap shear blades operate under conditions that expose every weakness in alloy selection, heat treatment depth, and grinding parallelism. The upper shear blade is driven against the lower under actuator forces from 40 to over 2000 tonnes on heavy plate shearing lines. Premature failure modes—edge rollover on mild steel, brittle fracture on stainless, or shattering on heavy scrap—are each attributable to metallurgical mismatch or grinding parallelism deviations that concentrate extreme forces at a single point.\n\nSureay metal shear blades are supplied in three specific metallurgical grades, each matched to a defined mechanical regime:\n\n## Alloy Selection by Shearing Application\n\n**Cold Shearing (Mild Steel):** Standard high-carbon tool steels hardened to HRC 57–59. This provides sharp, stable edge geometry at an economical cost, making it the correct specification for general fabrication shops and structural steel contractors cutting standard A3/A36 mild steel plate up to 8 mm.\n\n**Heavy Plate & Stainless Shearing:** D2 (Cr12MoV) equivalent grades hardened to HRC 58–60. Specified for maximum wear resistance on austenitic stainless steel (304, 316L) and high-strength alloy plates (Hardox). The high chromium-carbide matrix withstands the severe work-hardening wear imposed by these tough metals.\n\n**Scrap Recycling & Hot Shearing:** S1 (6CrW2Si) shock-resisting steel and H13 hot-work tool steel. When shearing mixed scrap metal, rebar, or hot steel billets (900–1100°C), extreme impact toughness is prioritized over hardness. These alloys absorb massive shock loads without the brittle fracture that destroys standard D2 blades.\n\n## The Parallelism Imperative (±0.05 mm)\nImproper parallelism is the single most common preventable cause of premature shear blade failure. Uneven face contact concentrates the full shearing load onto a reduced length of the blade edge, producing edge rollover or chipping within hours. All Sureay shear blades are precision surface-ground on both cutting faces to guarantee a standard parallelism tolerance of ±0.05 mm over a 1000 mm length (with premium ±0.02 mm tolerances available for aerospace and precision stainless applications).",
-
+      "Replacement alligator shear blades for scrap metal cutting. S1, 6CrW2Si or H13 upper and lower knives, with mounting details matched to your drawing.",
     link: "/products/metal-shear-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "TRUMPF",
-      "AMADA",
-      "BYSTRONIC",
-      "Durma",
-      "Haco",
-      "Lefort",
-      "Harris",
-    ],
-
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV), S1 (6CrW2Si), H13, High Carbon Steel",
-      },
-      {
-        label: "Cold / Mild Steel",
-        value: "High Carbon Tool Steel (HRC 57–59)",
-      },
-      { label: "Stainless / Heavy", value: "D2 / Cr12MoV (HRC 58–60)" },
-      {
-        label: "Scrap / High Impact",
-        value: "S1 / 6CrW2Si / H13 (Shock Resistant)",
-      },
-      {
-        label: "Length Capacity",
-        value: "Up to 6000 mm (Single Piece Seamless)",
-      },
-      { label: "Edge Geometry", value: "1, 2, or 4 Usable Cutting Edges" },
-      { label: "Tolerance", value: "±0.05 mm Full-Length Parallelism" },
-      {
-        label: "Application",
-        value: "Plate Shearing, Alligator Shears, Scrap Metal Balers",
-      },
-    ],
-
+    compatibleMachines: ["JMC McIntyre", "Bronneberg"],
+    compatibleMachinesIntro:
+      "Source individual upper or lower alligator shear knives, or a complete replacement pair, from Sureay. Custom dimensions and mounting holes are available in S1, 6CrW2Si or H13 tool steel; send your knife drawing for a quotation. Machine brands are compatibility references for Sureay aftermarket parts.",
     components: [
       {
-        id: "stainless-shearing",
-        tag: "HEAVY DUTY",
-        title: "D2 for Stainless & Heavy Plate",
+        id: "alligator-knife-position",
+        tag: "Knife position",
+        title: "Steel Choices for Scrap-Cutting Duty",
         description:
-          "Utilizing premium D2 (Cr12MoV) steel deep-hardened to HRC 58–60. It withstands the extreme abrasive wear and work-hardening forces when shearing stainless steel and thick alloy plates.",
+          "S1, 6CrW2Si and H13 tool-steel options give you a choice of replacement materials for the scrap sections and edge-wear conditions encountered on your alligator shear.",
       },
       {
-        id: "scrap-shearing",
-        tag: "HIGH IMPACT",
-        title: "S1 Shock-Resisting Steel for Scrap",
+        id: "alligator-edge-selection",
+        tag: "Scrap conditions",
+        title: "Upper and Lower Knives Available Separately",
         description:
-          "For alligator shears and heavy scrap balers, standard blades shatter. We forge these blades from S1 (6CrW2Si) shock-resisting steel, providing massive core toughness to shear rebar and I-beams without fracturing.",
+          "Order a moving upper knife, a fixed lower knife or a complete pair, with each part specified for its jaw position and the components you intend to retain.",
       },
       {
-        id: "precision-parallelism",
-        tag: "TOLERANCE",
-        title: "Precision Parallelism (±0.05 mm)",
+        id: "alligator-indexing",
+        tag: "Edge configuration",
+        title: "Custom Knife Bodies and Mounting Holes",
         description:
-          "Surface-ground to absolute perfection. Maintaining strict parallelism across lengths up to 6 meters ensures your machine maintains a uniform shear gap, delivering burr-free cuts every time.",
+          "Listed alligator shear knives span 320–508 mm in length. Sureay also makes drawing-based replacements with the body section, hole pattern and locating faces required by the upper or lower jaw.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Typical Size (L × W × T)",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Standard dimensions for common hydraulic guillotine shear models. Custom lengths to 6000 mm, multi-segment designs, and single / double / quad-edge profiles available.",
-    },
-
-    standardDimensions: [
-      { spec: "500 × 70 × 22", od: "500", id: "70", thickness: "22" },
-      { spec: "510 × 80 × 25", od: "510", id: "80", thickness: "25" },
-      { spec: "1025 × 80 × 20", od: "1025", id: "80", thickness: "20" },
-      { spec: "1025 × 100 × 25", od: "1025", id: "100", thickness: "25" },
-      { spec: "1300 × 80 × 20", od: "1300", id: "80", thickness: "20" },
-      { spec: "1300 × 125 × 32", od: "1300", id: "125", thickness: "32" },
-      { spec: "3100 × 100 × 25", od: "3100", id: "100", thickness: "25" },
+    specs: [
+      { label: "Sizes", value: "320–508 mm" },
       {
-        spec: "Heavy Scrap Shear",
-        od: "Custom",
-        id: "Custom",
-        thickness: "Up to 100+",
+        label: "Material",
+        value: "S1, 6CrW2Si or H13 tool steel for scrap-cutting configurations",
+      },
+      {
+        label: "Knife positions",
+        value: "Upper moving knife and lower fixed knife",
+      },
+      { label: "Blade form", value: "Straight rectangular knives" },
+      {
+        label: "Application",
+        value: "Scrap metal cutting on alligator shears",
       },
     ],
-
     relatedBladeIds: [
-      "metal-coil-slitting-knives",
-      "multi-shaft-blades-metal",
+      "guillotine-shear-blades",
       "scrap-chopper-blades",
+      "multi-shaft-blades-metal",
     ],
-    offers: {
-      lowPrice: 120,
-      highPrice: 2500,
-    },
+    offers: { lowPrice: 120, highPrice: 2500 },
     faqs: {
       technical: [
         {
-          question:
-            "Which alloy should I use for shearing 304 stainless steel?",
+          question: "Which replacement alligator shear blade fits my machine?",
           answer:
-            "We recommend D2 (Cr12MoV) for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide matrix withstands the severe work-hardening wear imposed by austenitic stainless. For standard mild steel, high-carbon tool steel provides maximum toughness at a lower cost.",
+            "Use the shear model and version together with the upper or lower knife position. Match length, width, thickness, mounting holes and blade-seat features to the original part. Jaw opening and advertised cutting capacity describe the machine's operation. The knife reference or drawing establishes the body and mounting geometry needed for replacement.",
         },
         {
-          question:
-            "Our blades keep chipping when cutting mixed scrap metal. What is wrong?",
+          question: "Can I order a single upper or lower knife instead of a pair?",
           answer:
-            "You are likely using a blade that is too hard (like D2). Mixed scrap contains unpredictable, heavy solids (like rebar or bolts). When extreme impact hits a hard, brittle blade, it chips or shatters. You need to switch to a shock-resisting alloy like S1 (6CrW2Si) or H13, tempered to a slightly lower hardness (HRC 54–56) to absorb the massive kinetic shocks elastically.",
+            "Yes. Both positions can be ordered individually or together. Identify the moving upper and fixed lower knives separately, including any differences in their mounting or cutting profiles. For a single replacement, inspect the retained knife and record its working dimensions so the new part is specified for that existing pair.",
         },
         {
-          question:
-            "What edge profile minimizes burrs when shearing high-tensile steel plates?",
+          question: "How does the scrap feed affect alligator shear knife material selection?",
           answer:
-            "The critical factor is contact uniformity. Uneven blade-to-blade contact concentrates shear force at one end, producing the compressive rollover and tearing burr characteristic of high-work-hardening steels. Our standard tolerance is ±0.05 mm parallelism over 1000 mm; premium ±0.02 mm is specified for stainless and precision applications.",
+            "Scrap composition, section shape and thickness affect the load on the cutting edge. Compare those conditions with the current knife's gradual wear, chipping or deformation. They help establish the required balance of toughness and wear resistance among the available materials, alongside the shear's capacity and original knife specification.",
         },
         {
-          question:
-            "How do double-edge reversible blades reduce my annual tooling cost?",
+          question: "Can an alligator shear knife be rotated to use another edge?",
           answer:
-            "A double-edge (or 4-edge) reversible blade provides multiple independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, flip or rotate the blade, and retorque. This multiplies the blade's lifespan before regrinding is required, reducing per-cut tooling costs drastically.",
+            "Yes, if the original knife and jaw allow another working edge. Confirm that the next position retains the specified seating, bolt pattern and clearance. The machine instructions define which positions are usable, even on a rectangular knife.",
+        },
+        {
+          question: "Do McIntyre 320, 407 and 500 knives share one specification?",
+          answer:
+            "No. The catalog lists different knife-body configurations for the McIntyre 320, 407 and 500. Use the table and Item No. to narrow the selection, then check the hole pattern, knife position and machine version. These model names identify reference configurations for Sureay replacements.",
+        },
+        {
+          question: "How do alligator shear knives differ from stationary scrap shear blades?",
+          answer:
+            "Alligator shear knives fit a hinged jaw and its opposing fixed position. Stationary gantry shears use a different moving knife and counter-knife assembly. For the latter, see [Stationary Scrap Shear Blades](/products/stationary-scrap-shear-blades).",
+        },
+        {
+          question: "What should I send for an alligator shear blade quote?",
+          answer:
+            "Provide the machine model and version, a drawing or dimensioned sample, knife position and quantity. Indicate whether you need the moving upper knife, fixed lower knife or both. Add the typical scrap section and mark any changes to cutting height from regrinding the sample.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the alligator shear model, upper or lower knife position, part number or drawing, quantity, and the metal grade and section size you cut.",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 640] },
+    specificationImageDimensions: {
+      width: 1024,
+      height: 765,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Two alligator shear knife samples with recessed mounting holes and straight cutting edges",
+      sizeRange: "320–508 mm",
+      heroSpecs: [
+        { label: "Application", value: "Scrap metal cutting on alligator shears" },
+      ],
+      specificationImage: {
+        src: "/images/products/shear-detail/alligator-shear-knives-detail.webp",
+        alt: "Five alligator shear knife samples showing different body profiles and mounting-hole patterns",
+      },
+      technicalSpecs: [
+        { label: "Sizes", value: "320–508 mm" },
         {
-          question:
-            "Can you manufacture blades to match my TRUMPF, AMADA, or Durma guillotine exactly?",
-          answer:
-            "Yes. We carry OEM-matching dimensions for TRUMPF, AMADA, BYSTRONIC, Durma, and Haco platforms. Single-piece blades up to 6000 mm, multi-segment designs for longer tables, and single, double, or quad-edge profiles are all available. Custom lengths are manufactured to drawing within 15 working days.",
+          label: "Material",
+          value:
+            "S1, 6CrW2Si or H13 tool steel for scrap-cutting configurations",
         },
         {
-          question:
-            "Can Sureay manufacture replacement blades for obsolete heavy scrap shears?",
-          answer:
-            "Yes. For heavy scrap shears (Lefort, Harris, Genesis) or obsolete models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile and counter-sunk mounting holes.",
+          label: "Knife positions",
+          value: "Upper moving knife and lower fixed knife",
+        },
+        { label: "Blade form", value: "Straight rectangular knives" },
+        {
+          label: "Application",
+          value: "Scrap metal cutting on alligator shears",
         },
       ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Standard dimensions",
+          title: "Common Standard Dimensions",
+          columns: [
+            "Item No.",
+            "Machine reference",
+            "Length (mm)",
+            "Width (mm)",
+            "Thickness (mm)",
+          ],
+          rows: [
+            ["SR003501", "JMC McIntyre 320", "320", "65", "30"],
+            ["SR003502", "JMC McIntyre 407", "407", "64", "32"],
+            ["SR003503", "JMC McIntyre 500", "508", "70", "30"],
+            ["SR003504", "Bronneberg A-400", "406", "70", "32"],
+            ["SR003505", "Bronneberg A-500PB", "500", "70", "32"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Request a quote for your knife configuration",
+        description:
+          "Include the alligator shear model, upper or lower knife position, part number or drawing, quantity, and the metal grade and section size you cut.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Include the alligator shear model, upper or lower knife position, part number or drawing, quantity, and the metal grade and section size you cut.",
+    dimensionLabels: {
+      intro:
+        "Machine references identify the listed configurations. Confirm the machine version, upper or lower knife position and complete mounting-hole drawing before ordering; body dimensions alone do not establish fit.",
     },
   },
 
@@ -2923,30 +3018,25 @@ export const blades: Blade[] = [
   {
     id: "guillotine-shear-blades",
     name: "Guillotine Shear Blades",
-    fullName:
-      "Precision Guillotine Shear Blades for Hydraulic & Mechanical Sheet Metal Shearing Machines",
+    fullName: "Guillotine Shear Blades for Sheet Metal",
+    seoTitle: "Guillotine Shear Blades for Sheet Metal",
+    seoDescription:
+      "Cut sheet metal with D2, 6CrW2Si or 9CrSi guillotine shear blades. Order upper and lower knives in single-piece or segmented sets with custom mounting patterns.",
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Guillotine Shear Blades",
-    image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+    image: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
     badge: "Sheet Metal",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+      "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+      "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
     ],
-
     description:
-      "High-precision guillotine shear blades in D2 (Cr12MoV), 6CrW2Si, and 9CrSi tool steels for hydraulic and mechanical shearing machines. Surface-ground to ±0.05 mm full-length parallelism. Upper and lower blade sets for machines up to 16 mm × 4000 mm capacity. OEM-compatible replacements for TRUMPF, AMADA, LVD, Durma, and Bystronic guillotines.",
-
-    fullDescription:
-      "Guillotine shear blades are the critical cutting components in hydraulic and mechanical plate shearing machines used across steel service centers, shipyards, structural fabrication shops, and automotive stamping plants. Every cut cycle subjects the blade to enormous shear force concentrated along a narrow edge line — the blade must maintain razor-sharp edge geometry, absolute parallelism, and uniform hardness across its full length to deliver burr-free, distortion-free sheet metal cuts.\n\nSureay manufactures guillotine shear blades from premium tool steels — D2 (Cr12MoV), 6CrW2Si, and 9CrSi — each selected for a specific thickness range and material hardness profile. Every blade is vacuum heat-treated in-house and precision surface-ground to ±0.05 mm full-length parallelism, ensuring the shear gap between upper and lower blades remains uniform from end to end. This eliminates the twist, bow, and edge burring that plague poorly manufactured replacement blades.\n\n## Alloy Selection by Shearing Application\n\n**D2 / Cr12MoV (HRC 58–62):** The premium specification for shearing stainless steel (304, 316L), high-strength low-alloy (HSLA) plates, Hardox wear plate, and pre-painted coil. D2's 12% chromium-carbide matrix provides the extreme abrasion resistance needed when cutting work-hardening austenitic stainless steels that rapidly dull softer blade grades.\n\n**6CrW2Si (HRC 55–58):** A shock-resisting alloy that combines excellent edge hardness with core toughness. Specified for medium-to-heavy plate shearing (6–25 mm mild steel) and mixed-material production environments where the blade occasionally encounters harder-than-expected stock. The tungsten and chromium content provides high-temperature temper resistance.\n\n**9CrSi (HRC 55–60):** A cost-effective alloy for high-volume mild steel and carbon steel shearing (up to 12 mm). 9CrSi delivers reliable edge life on standard structural steel, galvanized sheet, and floor plate at a lower per-blade cost than D2.\n\n## Upper & Lower Blade Sets\n\nGuillotine shearing machines operate with paired upper (moving ram) and lower (fixed bed) blades. Sureay supplies matched upper and lower blade sets ground from the same steel batch, ensuring identical hardness and thermal expansion behavior across the pair. Each set is supplied with mounting holes drilled to the exact OEM bolt pattern of your machine.\n\n## Multi-Edge Reversible Blades\n\nFor standard rectangular-section blades, we offer 2-edge and 4-edge reversible profiles. When one cutting edge wears, the operator loosens the mounting bolts, flips or rotates the blade to expose a fresh edge, and retorques. This multiplies effective blade life by 2× to 4× before regrinding or replacement is required — drastically reducing annual tooling cost per cut.\n\n## Segment Blade Systems for Long Tables\n\nFor shearing machines wider than 3200 mm, single-piece blades become impractical due to heat treatment distortion risk. Sureay manufactures precision segment blade systems — multiple shorter blades indexed end-to-end on the machine bed — with matched end-to-end height tolerance (±0.02 mm) to ensure a continuous, gap-free shear line across the full table width.",
-
+      "Replacement guillotine shear blades for sheet metal, in D2, 6CrW2Si or 9CrSi. Upper and lower knives with custom lengths and mounting patterns.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
-
     compatibleMachines: [
       "TRUMPF",
       "AMADA",
@@ -2959,179 +3049,168 @@ export const blades: Blade[] = [
       "Adira",
       "Ursviken",
     ],
-
+    compatibleMachinesIntro:
+      "Equip your sheet-metal shear with replacement upper and lower knives, supplied as single-piece blades or segmented sets. Sureay offers drawing-based dimensions and steel options for your cutting duty; contact us for a quotation for your machine. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "guillotine-upper-lower",
+        tag: "Knife configuration",
+        title: "Tool-Steel Options for Sheet-Metal Cutting",
+        description:
+          "Sureay offers D2, 6CrW2Si, 9CrSi and high-carbon tool steel, with listed hardness of 55–62 HRC depending on the grade. Specify the sheet strength, thickness range and edge-wear conditions when comparing replacement materials.",
+      },
+      {
+        id: "guillotine-segmented-knives",
+        tag: "Segmented sets",
+        title: "Single-Piece and Segmented Knife Sets",
+        description:
+          "Upper and lower knives are available as individual pieces or segmented sets, with lengths, end faces and mounting details specified for the existing cutting beam.",
+      },
+      {
+        id: "guillotine-material-setup",
+        tag: "Cutting conditions",
+        title: "Custom Mounting Patterns and Usable Edges",
+        description:
+          "Custom hole patterns and cutting profiles support replacement of the installed knife configuration. One-, two- and four-edge versions are available according to the knife design and its permitted indexing positions.",
+      },
+    ],
     specs: [
+      { label: "Sizes", value: "508–1300 mm" },
+      { label: "Material", value: "D2, 6CrW2Si, 9CrSi or high-carbon tool steel" },
+      { label: "Hardness", value: "55–62 HRC, depending on steel grade" },
       {
-        label: "Material",
-        value: "D2 (Cr12MoV), 6CrW2Si, 9CrSi, High Carbon Steel",
+        label: "Knife positions",
+        value: "Upper and lower knives; single-piece or segmented sets",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–62 (alloy dependent)",
-      },
-      {
-        label: "Machine Capacity",
-        value: "4 mm × 2500 mm up to 16 mm × 4000 mm (and custom)",
-      },
-      {
-        label: "Edge Profile",
-        value: "1, 2, or 4 Usable Cutting Edges (Reversible)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Blade Clearance",
-        value:
-          "4–6% of thickness (mild steel) · 6–9% (304/316L) · 3–4% (aluminium) · 7–10% (HSLA)",
+        label: "Edge configurations",
+        value: "One, two or four usable cutting edges, depending on knife profile",
       },
       {
         label: "Application",
-        value:
-          "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
+        value: "Sheet-metal cutting on guillotine and squaring shears",
       },
+      { label: "Parallelism", value: "±0.05 mm over the full knife length" },
     ],
-
-    components: [
-      {
-        id: "d2-stainless-shearing",
-        tag: "HEAVY PLATE",
-        title: "D2 for Stainless & HSLA Plate",
-        description:
-          "Premium D2 (Cr12MoV) deep-hardened to HRC 58–62. The high chromium-carbide matrix withstands the extreme abrasive wear and work-hardening forces encountered when shearing 304/316L stainless steel, HSLA plate, and pre-painted coil stock.",
-      },
-      {
-        id: "6crw2si-shock",
-        tag: "SHOCK RESISTANCE",
-        title: "6CrW2Si for Medium-Heavy Plate",
-        description:
-          "Shock-resisting 6CrW2Si alloy combines hard cutting edges (HRC 55–58) with massive core toughness. Engineered for 6–25 mm mild steel plate and mixed-material production where unexpected hard inclusions would chip a brittle blade.",
-      },
-      {
-        id: "parallelism-precision",
-        tag: "TOLERANCE",
-        title: "Precision Parallelism (±0.05 mm)",
-        description:
-          "Every blade is surface-ground to ±0.05 mm full-length parallelism across lengths up to 4000 mm. This ensures a uniform shear gap between upper and lower blades, delivering burr-free cuts and preventing twist and bow in the sheared sheet.",
-      },
-      {
-        id: "discontinued-machine-matching",
-        tag: "OEM MATCHING",
-        title: "Discontinued Machine? Send the Old Blade",
-        description:
-          "We build from a worn sample, not a catalogue number. Length, width, thickness, bevel and hole pattern are measured off the blade you send and reproduced to drawing — which is how we supply machines whose manufacturer stopped listing parts years ago. TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, Salvagnini, Adira and Ursviken sets are held as standard geometry; everything else is matched to your sample.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Machine Capacity",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      col4: "Pcs / Set",
-      caption:
-        "* Standard dimensions for common hydraulic & mechanical guillotine shearing machines. Each set includes upper and lower blades. Segment designs for tables wider than 4000 mm available on request. Custom lengths, multi-edge profiles, and OEM bolt patterns manufactured to drawing.",
-    },
-
-    standardDimensions: [
-      { spec: "4 × 2500", od: "508", id: "80", length: "25", pcs: "10" },
-      { spec: "4 × 2500", od: "1300", id: "63", length: "16", pcs: "4" },
-      { spec: "6 × 2500", od: "1300", id: "80", length: "20", pcs: "4" },
-      { spec: "6 × 3200", od: "1100", id: "80", length: "20", pcs: "6" },
-      { spec: "6 × 4000", od: "1025", id: "80", length: "20", pcs: "8" },
-      { spec: "16 × 2500", od: "1300", id: "100", length: "25", pcs: "4" },
-      { spec: "16 × 3200", od: "1100", id: "100", length: "25", pcs: "6" },
-      { spec: "16 × 4000", od: "1025", id: "100", length: "25", pcs: "8" },
-    ],
-
-    relatedBladeIds: [
-      "metal-shear-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-      "multi-shaft-blades-metal",
-    ],
-
-    offers: {
-      lowPrice: 30,
-      highPrice: 350,
-    },
-
+    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
+    offers: { lowPrice: 30, highPrice: 350 },
     faqs: {
       technical: [
         {
-          question: "What blade clearance should I set on a guillotine shear?",
+          question: "How do I identify a replacement guillotine shear blade?",
           answer:
-            "Clearance is set as a percentage of material thickness, not as a fixed number, and it has to move when the material does. Mild and structural steel (S235, A36) runs at 4–6%. Stainless 304 and 316L needs 6–9%, because it work-hardens at the cut edge and mild-steel clearance overloads the blade. Aluminium wants 3–4% — it is soft enough that a wide gap lets it draw and roll instead of fracturing. HSLA and high-strength plate takes 7–10%. Galvanized and pre-painted sheet sits at the lower end of 4–6%, since a wide gap drags and flakes the coating along the cut line. To put that in millimetres: 6 mm mild steel at 5% wants about 0.30 mm of gap, while the same 6 mm in 304 at 8% wants closer to 0.48 mm. Treat these as starting points — your machine manual is the authority, and blade condition, rake angle and hold-down pressure all shift the practical window.",
+            "The upper or lower knife drawing identifies the replacement more reliably than the shear's advertised cutting width. Compare the actual length, section, bolt holes, locating faces and working edge. On a segmented beam, match the individual piece and its position in the row.",
         },
         {
-          question:
-            "Which steel grade should I choose for shearing 304 stainless steel on a hydraulic guillotine?",
+          question: "How should blade material be chosen for mild steel, stainless steel or aluminium?",
           answer:
-            "D2 (Cr12MoV) hardened to HRC 58–62 is the recommended grade for stainless steel (304, 316L) and high-strength plates like Hardox. D2's high chromium-carbide content withstands the severe work-hardening abrasion imposed by austenitic stainless. For standard mild steel, 9CrSi provides excellent edge life at a lower cost.",
+            "Start with the actual sheet grade, strength, thickness range and used knife's condition. Gradual wear, edge chipping and deformation call for different material considerations. Compare the current material with the available steel options while retaining the required edge geometry. A change in sheet specification may also require reviewing the machine's cutting settings.",
         },
         {
-          question:
-            "Why do my guillotine shear blades chip when cutting mixed or heavier plate?",
+          question: "Why do sheet-metal shear blades chip?",
           answer:
-            "Chipping usually indicates the blade alloy is too hard and brittle for the shearing load. If you are cutting 10–25 mm mixed plate or occasionally encounter harder stock, switch from D2 to 6CrW2Si. This shock-resisting alloy provides a controlled lower hardness (HRC 55–58) with massive core toughness, absorbing impact loads elastically instead of chipping.",
+            "Inspect the working edge and compare the damage with the sheet specification and cutting clearance. Mechanical overload, an unsuitable clearance or unintended double layers can contribute to chipping. A worn or damaged edge can affect the finished cut. Check these conditions together before deciding whether to change the knife material or replace a damaged segment.",
         },
         {
-          question:
-            "What causes burrs and twist on the sheared edge, and how do guillotine shear blades solve this?",
+          question: "Are squaring shear knives and guillotine shear blades the same?",
           answer:
-            "Burrs and twist are almost always caused by uneven blade-to-blade contact — when the shear gap varies from one end of the blade to the other. This concentrates shear force at one point, producing compressive rollover burrs and sheet distortion. Our blades are surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform gap across the entire cut length for clean, burr-free shearing.",
+            "Yes, in sheet-metal equipment both names can refer to straight upper and lower knives for a transverse cut. Match the knife to the machine's upper or lower beam. For a knife that cuts a clamped stack of paper, see [Paper Guillotine Knives](/products/paper-cutting-blades).",
         },
         {
-          question:
-            "How do 4-edge reversible guillotine shear blades reduce my annual tooling cost?",
+          question: "What is the difference between blade clearance and rake angle?",
           answer:
-            "A 4-edge reversible blade provides four independent cutting faces from a single blade body. When edge 1 shows wear, loosen the mounting bolts, rotate the blade 90° to expose a fresh edge, and retorque. This multiplies the blade's installed lifespan by 4× before regrinding is required, drastically reducing per-cut tooling cost on high-volume shearing lines.",
+            "Clearance is the gap between the opposing cutting edges. Rake angle describes their relative inclination along the cut. Both affect cutting conditions, but they are separate settings. Use the shear manufacturer's procedure for the sheet grade and thickness, and retain those requirements when specifying replacement knife geometry.",
         },
         {
-          question:
-            "What is the maximum single-piece blade length Sureay can manufacture?",
+          question: "Can a guillotine shear blade be turned or reground?",
           answer:
-            "We manufacture single-piece guillotine shear blades up to 4000 mm in length. For machines wider than 4000 mm, we produce precision segment blade sets — multiple blades indexed end-to-end with matched height tolerance (±0.02 mm) — to create a continuous, gap-free shear line across the full table width.",
+            "A shear blade can be indexed if the knife and holder support another working edge. It can be reground if the specified profile can be restored within the permitted remaining dimensions. After either operation, check seating, cutting height and clearance against the original drawing and machine limits.",
         },
         {
-          question:
-            "How do I select the correct blade dimensions for my specific guillotine shearing machine?",
+          question: "How do I request a quote for guillotine shear blades or a segmented set?",
           answer:
-            "Blade dimensions are determined by your machine's cutting capacity (maximum sheet thickness × table width). For example, a 6 × 3200 mm machine uses blades sized 1100 × 80 × 20 mm, supplied as a 6-piece segmented set. Send us your machine model number or a drawing of your existing blade, and we will confirm the exact dimensions, bolt pattern, and recommended steel grade.",
+            "Share the shear model, upper and lower drawings or part numbers, sheet grades and thicknesses, and quantities. For a segmented row, label the segment sequence and show the adjoining faces. If you're replacing only part of the row, identify the segments staying in service.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the shear model, upper and lower drawings, sheet grade and thickness, and required quantity.",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 640] },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Guillotine shear knife samples showing straight cutting edges and different mounting holes",
+      sizeRange: "508–1300 mm",
+      heroSpecs: [
         {
-          question:
-            "Can you manufacture replacement blades to match my TRUMPF, AMADA, LVD, or Durma guillotine exactly?",
-          answer:
-            "Yes. We carry OEM-matching dimensions and bolt patterns for TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati, and Adira shearing machines. Supply your machine model number or a worn blade sample and we will confirm fitment. Custom lengths are manufactured to drawing within 15 working days.",
-        },
-        {
-          question:
-            "Do you supply both upper and lower guillotine shear blade sets?",
-          answer:
-            "Yes. Every standard order includes matched upper (ram) and lower (bed) blade sets, ground from the same steel batch to ensure identical hardness, grain structure, and thermal expansion behavior across the pair. Mounting holes are drilled to your exact OEM bolt pattern.",
-        },
-        {
-          question:
-            "Can Sureay manufacture replacement blades for older or discontinued shearing machines?",
-          answer:
-            "Yes. For discontinued or rare guillotine models, we work from customer-supplied drawings or physical blade samples. A dimensional survey template is available on request for accurate measurement of the blade profile, edge angles, and counter-sunk mounting holes. We have successfully produced replacements for machines dating back to the 1980s.",
-        },
-        {
-          question: "What quality documentation ships with each blade set?",
-          answer:
-            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record verifying full-length parallelism, and a heat treatment batch certificate. For OEM qualification programs, full CMM reports and steel mill material certificates are available on request.",
-        },
-        {
-          question:
-            "What is the typical lead time for standard guillotine shear blades?",
-          answer:
-            "Standard sizes (listed in our dimension table) ship within 7–10 working days. Custom sizes, special alloy grades, or high-volume orders typically require 15–20 working days. We offer expedited production on request for urgent machine-down situations.",
+          label: "Application",
+          value: "Sheet-metal cutting on a guillotine or squaring shear",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
+        alt: "Four sheet-metal guillotine knife samples showing straight edges and mounting holes",
+      },
+      technicalSpecs: [
+        { label: "Sizes", value: "508–1300 mm" },
+        { label: "Material", value: "D2, 6CrW2Si, 9CrSi or high-carbon tool steel" },
+        { label: "Hardness", value: "55–62 HRC, depending on steel grade" },
+        {
+          label: "Knife positions",
+          value: "Upper and lower knives; single-piece or segmented sets",
+        },
+        {
+          label: "Edge configurations",
+          value: "One, two or four usable cutting edges, depending on knife profile",
+        },
+        {
+          label: "Application",
+          value: "Sheet-metal cutting on guillotine and squaring shears",
+        },
+        { label: "Parallelism", value: "±0.05 mm over the full knife length" },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Standard dimensions",
+          title: "Common Standard Dimensions",
+          columns: [
+            "Item No.",
+            "Machine cutting capacity (mm)",
+            "Knife length (mm)",
+            "Width (mm)",
+            "Thickness (mm)",
+            "Pcs / set",
+          ],
+          rows: [
+            ["SR003201", "4 × 2500", "508", "80", "25", "10"],
+            ["SR003202", "4 × 2500", "1300", "63", "16", "4"],
+            ["SR003203", "6 × 2500", "1300", "80", "20", "4"],
+            ["SR003204", "6 × 3200", "1100", "80", "20", "6"],
+            ["SR003205", "6 × 4000", "1025", "80", "20", "8"],
+            ["SR003206", "16 × 2500", "1300", "100", "25", "4"],
+            ["SR003207", "16 × 3200", "1100", "100", "25", "6"],
+            ["SR003208", "16 × 4000", "1025", "100", "25", "8"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Request a quote for your knife configuration",
+        description:
+          "Include the shear model, upper and lower drawings, sheet grade and thickness, and required quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Include the shear model, upper and lower drawings, sheet grade and thickness, and required quantity.",
+    dimensionLabels: {
+      intro:
+        "Machine cutting capacity is a reference, not a unique model or fit guarantee. Confirm upper and lower knife positions, segment order and mounting holes for the listed configurations.",
     },
   },
 
@@ -3141,30 +3220,26 @@ export const blades: Blade[] = [
   {
     id: "three-knife-trimmer-blades",
     name: "Three-Knife Trimmer Blades",
-    fullName:
-      "Premium HSS & Carbide Three-Knife Trimmer Blades for Bookbinding",
-    category: "shear_blades",
+    fullName: "Three-Knife Trimmer Blades for Book Finishing",
+    seoTitle: "Three-Knife Trimmer Blades for Book Finishing",
+    seoDescription:
+      "Trim the front, head and foot of bound books with HSS or carbide knives. Order one replacement blade or a matched set with one front and two side knives.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Bookbinding Knives",
     badge: "OEM Fit",
     badgeColor: "blue",
     image:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
     gallery: [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
     ],
-
     description:
-      "Matched 3-knife replacement sets (1 Front, 2 Sides) for high-volume print finishing. Bimetallic construction with 18% Tungsten HSS or solid Tungsten Carbide (TC) cutting edges. Direct OEM fit for Müller Martini, Kolbus, and Wohlenberg trimmers.",
-
-    fullDescription:
-      "In high-speed commercial bindery and print finishing operations, the three-knife trimmer is the final, critical step before packaging. Substandard trimmer blades cause spine splitting, cover chipping, and PUR/EVA glue build-up, turning finished books into expensive scrap.\n\nSureay Three-Knife Trimmer sets are manufactured to precise OEM specifications to guarantee flawless fore-edges, heads, and tails on thick catalogs, magazines, and perfect-bound books. This three-knife assembly — front, left, and right — is also referred to in the trade as a **combi head** or combination trim head.\n\n## Advanced Bimetallic Construction\n\nSolid high-speed steel blades of this size are too brittle and prone to snapping under the immense clamping pressure of a book trimmer. We utilize an advanced **Bimetallic Inlay** manufacturing process. A premium cutting edge—either 18% Tungsten HSS or micro-grain Tungsten Carbide—is vacuum-brazed onto a shock-absorbing, high-tensile spring steel body. This delivers the ultimate combination: an incredibly hard, wear-resistant cutting edge backed by a flexible, shatter-proof core.\n\n## Material Grades for the Bindery\n\n- **18% Tungsten HSS (High-Speed Steel):** The industry standard for general commercial printing. Delivers an extremely sharp, fine edge that easily handles standard uncoated and lightly coated book stocks.\n- **Tungsten Carbide (TC / Widia Equivalent):** The absolute top-tier specification. TC blades deliver up to **5× to 10× the service life** of HSS. They are mandatory when cutting heavy recycled paper, highly abrasive gloss-coated art paper, or books bound with tough PUR adhesives.\n\n## Anti-Glue Mirror Finish\n\nModern perfect-bound books use aggressive EVA or PUR adhesives. During the trim cycle, friction heats the glue, causing it to smear and stick to the blade face. Sureay trimmer blades are precision-lapped to a Ra ≤0.1 μm mirror finish, significantly reducing friction and adhesive adherence, ensuring a clean cut cycle after cycle.",
-
+      "Replacement three-knife trimmer blades for book finishing. HSS or carbide front and side knives, supplied as individual parts or matched sets to drawing.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
-
     compatibleMachines: [
       "Müller Martini",
       "Kolbus",
@@ -3173,163 +3248,328 @@ export const blades: Blade[] = [
       "Meccanotecnica",
       "Horizon",
     ],
-
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS (Duritan eq.) | Tungsten Carbide (TC)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic Inlay (Hard edge brazed to tough steel body)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤0.1 μm) to prevent glue build-up",
-      },
-      {
-        label: "Set Configuration",
-        value: "Matched 3-Piece Set (1 Front Knife, 2 Side Knives)",
-      },
-      {
-        label: "OEM Tolerance",
-        value: "Thickness matched to ±0.01 mm across the full set",
-      },
-      {
-        label: "Applications",
-        value: "Perfect Bound Books, Magazines, Hardcover Book Blocks",
-      },
-    ],
-
+    compatibleMachinesIntro:
+      "Order replacement front and side knives for your book trimmer as a matched set or individual pieces. With HSS and carbide cutting-edge options plus custom mounting profiles, Sureay can quote the knife configuration your finishing line needs. Machine brands are compatibility references for Sureay aftermarket parts.",
     components: [
       {
-        id: "bimetallic-inlay",
-        tag: "METALLURGY",
-        title: "Bimetallic Inlay Technology",
+        id: "trimmer-front-side-set",
+        tag: "Set configuration",
+        title: "HSS and Carbide Inlays for Book Trimming",
         description:
-          "We braze a premium High-Speed Steel (HSS) or Tungsten Carbide edge onto a tough, flexible alloy steel body. This gives you the extreme wear resistance needed for coated paper, without the risk of the blade snapping under heavy clamping pressure.",
+          "18% tungsten HSS and tungsten carbide cutting edges are available on steel bodies, giving binders material choices for the paper stock and cutting duty of their book-finishing line.",
       },
       {
-        id: "matched-sets",
-        tag: "CONFIGURATION",
-        title: "Matched 3-Piece Sets",
+        id: "trimmer-edge-selection",
+        tag: "Edge selection",
+        title: "Matched Thickness and Lapped Working Faces",
         description:
-          "Supplied as a ready-to-install set (1 Front, 1 Left, 1 Right). All three blades are precision surface-ground in the same batch to a ±0.01 mm thickness tolerance, ensuring zero-downtime installation and perfect alignment.",
+          "The listed set thickness matching is ±0.01 mm. Mirror-lapped working faces and thickness matching give front and side knives a defined finish and geometry for ordering together.",
       },
       {
-        id: "anti-glue-finish",
-        tag: "PERFORMANCE",
-        title: "Anti-Glue Mirror Finish",
+        id: "trimmer-spine-finish",
+        tag: "Spine trimming",
+        title: "Front and Side Knives as Sets or Individual Parts",
         description:
-          "Cutting through book spines exposes the blade to hot, sticky PUR and EVA adhesives. Our blades are lapped to a microscopic mirror finish, preventing glue drag that would otherwise smear across the book’s edge.",
+          "Order a complete front, left and right set or an individual replacement, with position-specific bevels and mounting details reproduced from the knife drawings.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "OEM Machine Model",
-      col1: "Blade Position",
-      col2: "Dimensions (L × W × T)",
-      col3: "Mounting Holes / Slots",
-      caption:
-        "* Dimensions reflect standard Müller Martini and Kolbus models. We carry OEM blueprints for Wohlenberg and Perfecta. Custom hole patterns machined to order.",
-    },
-
-    standardDimensions: [
+    specs: [
+      { label: "Sizes", value: "392–585 mm" },
       {
-        spec: "Müller Martini 301/361",
-        od: "Front Knife",
-        id: "540 × 90 × 12 mm",
-        type: "12 × M10 Threaded",
+        label: "Material",
+        value: "18% tungsten HSS or tungsten carbide cutting edges",
       },
       {
-        spec: "Müller Martini 301/361",
-        od: "Left & Right",
-        id: "392 × 90 × 12 mm",
-        type: "8 × M10 Threaded",
+        label: "Blade construction",
+        value: "Bimetallic inlay with a brazed cutting edge and steel body",
       },
+      { label: "Set configuration", value: "One front knife and two side knives" },
+      { label: "Surface Finish", value: "Mirror lapped, Ra ≤0.1 µm" },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Front Knife",
-        id: "580 × 115 × 12 mm",
-        type: "12 × M10, 1 Slot",
+        label: "Application",
+        value: "Front, head and foot trimming of bound books and book blocks",
       },
-      {
-        spec: "Müller Martini 3671 Merit",
-        od: "Left & Right",
-        id: "450 × 115 × 12 mm",
-        type: "15 × M10, 2 Slots",
-      },
-      {
-        spec: "Kolbus HD 150/153",
-        od: "Front Knife",
-        id: "510 × 110 × 10 mm",
-        type: "10 × M10 Threaded",
-      },
-      {
-        spec: "Kolbus HD 150/153",
-        od: "Left & Right",
-        id: "400 × 110 × 10 mm",
-        type: "8 × M10 Threaded",
-      },
+      { label: "Set Thickness Matching", value: "±0.01 mm across the matched set" },
     ],
-
-    relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
-    offers: {
-      lowPrice: 120,
-      highPrice: 850,
-    },
+    relatedBladeIds: ["paper-cutting-blades"],
+    offers: { lowPrice: 120, highPrice: 850 },
     faqs: {
       technical: [
         {
-          question:
-            "When should I upgrade from HSS to Tungsten Carbide (TC) trimmer blades?",
+          question: "Which knives make up a three-knife trimmer replacement set?",
           answer:
-            "You should upgrade to Tungsten Carbide (TC) when cutting high volumes of recycled paper, gloss-coated art paper, or thick books bound with heavy PUR adhesive. Coated papers contain clay and minerals that dull HSS very quickly. TC blades provide 5 to 10 times the cutting life of HSS, drastically reducing machine downtime for blade changes.",
+            "The set comprises one front knife and two side knives for the front, head and foot cuts on a book block. Each position has its own dimensions and mounting details. Identify the left and right knives separately, including their bevel orientation, so the ordered set follows the installed trimmer arrangement.",
         },
         {
-          question:
-            "Why do my trimmer blades keep tearing or chipping the book spine?",
+          question: "How do I match knives to a Müller Martini or Kolbus trimmer?",
           answer:
-            "Spine tearing is usually caused by one of three things: (1) The blade is dull and needs changing; (2) The bevel angle is incorrect for the type of paper/glue being cut; or (3) Adhesive build-up on the back of the blade is causing ‘drag’. Ensure your blades have a mirror-lapped finish to prevent glue adhesion, and consider upgrading to HSS or Carbide for better edge retention.",
+            "Match the front, left and right knife references to the complete trimmer model and version. Catalog entries cover specific Müller Martini 367x and Kolbus HD configurations. Compare the separate Item No., bevel and mounting pattern for each position against your drawing.",
         },
         {
-          question: "Can Tungsten Carbide (TC) trimmer blades be resharpened?",
+          question: "How does paper stock affect the choice between HSS and carbide edges?",
           answer:
-            "Yes, but they must be sharpened using specialized diamond grinding wheels. Using standard aluminum oxide or silicon carbide wheels will destroy the carbide edge and generate micro-cracks. If your local sharpening service does not have the correct diamond wheel equipment, we recommend sending them to a specialized industrial grinder.",
+            "Paper coating, filler content and production duty influence edge wear. Consider carbide when gradual wear is the main issue, and assess the sharpening process available for that construction. Retain the required front and side bevels and set dimensions. For chipping, inspect the edge and cutting conditions before selecting a harder material.",
         },
         {
-          question:
-            "What is the correct installation sequence for a three-knife set?",
+          question: "What can cause a persistent mark on a book's trimmed edge?",
           answer:
-            "Because the side knives often shear slightly against the cutting stick or front knife path, alignment is critical. Install all three blades loosely first. Set and torque the front knife to establish the head datum, then alternate tightening the side knives. Since our 3-piece sets are ground to an identical thickness tolerance, they prevent the uneven clamping pressure that causes binding.",
+            "Small chips in the working edge are one possible cause. Locate the mark on the front, head or foot cut and inspect the corresponding knife. Check its sharpness, bevel and cutting-stick condition together. Restoring the edge geometry and support addresses a different problem from removing adhesive residue from an otherwise intact knife.",
         },
         {
-          question:
-            "What does 'combi head' or 'spare knives for combi head' mean?",
+          question: "Why does glue build up on book-trimming knives?",
           answer:
-            "The combi head (or combination trim head) is the three-knife assembly on a perfect binder or three-knife trimmer that cuts a book's head, tail, and foredge in a single cycle. 'Spare knives for combi head' refers to the replacement front + side knife set for that assembly — exactly what we supply here.",
+            "Glue that has not dried sufficiently can leave residue during trimming, and incompletely dried ink can also affect the finish. Record whether buildup occurs near the spine and review drying conditions with the binding process. Compare the cleaned knife and affected cut before deciding whether the knife geometry or surface requires further attention.",
+        },
+        {
+          question: "Can I replace one side knife without buying the complete set?",
+          answer:
+            "Yes. A front, left-side or right-side knife can be ordered individually. Identify its original reference and the dimensions of the knives staying in service, including any regrinding. The replacement needs the appropriate bevel orientation and mounting pattern, together with the working dimensions required by that set.",
+        },
+        {
+          question: "Are three-way trimmer knives and saddle-stitcher knives interchangeable?",
+          answer:
+            "Generally no. Three-way and three-knife refer to trimming three edges of a bound book block. A saddle-stitching line can also trim three edges, but its upper, lower, front and side knives depend on the machine. See [Saddle Stitcher Trimmer Knives](/products/saddle-stitcher-trimmer-knives) for booklet-line configurations.",
+        },
+        {
+          question: "How do I request a quote for a three-knife trimmer set?",
+          answer:
+            "Send the trimmer model and version, paper or book-block specification and quantities. Label the front, left and right knife drawings separately with their bevel directions and mounting details. For reorders, include each Item No. or original part number. For a partial change, identify the knives staying in the set.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the trimmer model, drawings for the front and side positions, and the book format and stock.",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 640] },
+    specificationImageDimensions: {
+      width: 960,
+      height: 960,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Three-knife trimmer blade samples showing a long front knife and two shorter side knives",
+      sizeRange: "392–585 mm",
+      heroSpecs: [
         {
-          question:
-            "Do your trimmer blades fit Kolbus, Wohlenberg, and Perfecta machines?",
-          answer:
-            "Yes. We maintain a comprehensive database of exact OEM blueprints for all major European and Japanese bookbinding lines, including Müller Martini, Kolbus, Wohlenberg, Perfecta, and Horizon. The mounting holes, slots, and threaded inserts will be a perfect drop-in fit.",
-        },
-        {
-          question:
-            "My Wohlenberg trimmer model isn't listed in the dimension table above — can you still supply blades?",
-          answer:
-            "Yes. The table above shows our most common stock sizes (Müller Martini and Kolbus). For Wohlenberg and other models not listed, send us your machine model number, a blueprint, or a worn blade sample — we'll confirm the exact length, width, thickness, and mounting pattern before quoting.",
-        },
-        {
-          question:
-            "What is the lead time for a custom Tungsten Carbide trimmer set?",
-          answer:
-            "Standard HSS sets for popular Müller Martini and Kolbus models are often in stock. Custom Tungsten Carbide (TC) inlaid sets typically require 15–20 working days to manufacture, due to the complex vacuum brazing and diamond grinding processes required for carbide.",
+          label: "Application",
+          value: "Trimming the front, head and foot of bound products",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
+        alt: "Three-knife trimmer knife samples with different body profiles and mounting-hole patterns",
+      },
+      technicalSpecs: [
+        { label: "Sizes", value: "392–585 mm" },
+        {
+          label: "Material",
+          value: "18% tungsten HSS or tungsten carbide cutting edges",
+        },
+        {
+          label: "Blade construction",
+          value: "Bimetallic inlay with a brazed cutting edge and steel body",
+        },
+        { label: "Set configuration", value: "One front knife and two side knives" },
+        { label: "Surface Finish", value: "Mirror lapped, Ra ≤0.1 µm" },
+        {
+          label: "Application",
+          value: "Front, head and foot trimming of bound books and book blocks",
+        },
+        { label: "Set Thickness Matching", value: "±0.01 mm across the matched set" },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Standard dimensions",
+          title: "Common Standard Dimensions",
+          columns: [
+            "Item No.",
+            "Machine / version",
+            "Knife position",
+            "Length (mm)",
+            "Width (mm)",
+            "Thickness (mm)",
+            "Mounting holes / slots",
+          ],
+          rows: [
+            [
+              "SR003401",
+              "Müller Martini 3670 / 3672 — New style",
+              "Front",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003402",
+              "Müller Martini 3670 / 3672 — New style",
+              "Left side",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003403",
+              "Müller Martini 3670 / 3672 — New style",
+              "Right side",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003404",
+              "Müller Martini 3671 Merit — Series 97",
+              "Front",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003405",
+              "Müller Martini 3671 Merit — Series 97",
+              "Left side",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003406",
+              "Müller Martini 3671 Merit — Series 97",
+              "Right side",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003407",
+              "Müller Martini 3675 Orbit — Old style",
+              "Front",
+              "580",
+              "115",
+              "12",
+              "12 × M10 + 1 slot",
+            ],
+            [
+              "SR003408",
+              "Müller Martini 3675 Orbit — Old style",
+              "Left side",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 slots",
+            ],
+            [
+              "SR003409",
+              "Müller Martini 3675 Orbit — Old style",
+              "Right side",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 slots",
+            ],
+            [
+              "SR003410",
+              "Müller Martini 3675 Orbit — New style",
+              "Front",
+              "585",
+              "115",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003411",
+              "Müller Martini 3675 Orbit — New style",
+              "Left side",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003412",
+              "Müller Martini 3675 Orbit — New style",
+              "Right side",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003413",
+              "Kolbus HD150 — Old style",
+              "Front",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003414",
+              "Kolbus HD150 — Old style",
+              "Left side",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003415",
+              "Kolbus HD150 — Old style",
+              "Right side",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003416",
+              "Kolbus HD153",
+              "Front",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003417",
+              "Kolbus HD153",
+              "Left side",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+            [
+              "SR003418",
+              "Kolbus HD153",
+              "Right side",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Request a quote for your knife configuration",
+        description:
+          "Include the trimmer model, drawings for the front and side positions, and the book format and stock.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Include the trimmer model, drawings for the front and side positions, and the book format and stock.",
+    dimensionLabels: {
+      intro:
+        "Each set has one front knife and one knife for each side. Match the machine version, bevel direction and complete hole and slot pattern to your drawing before ordering.",
     },
   },
 
@@ -3337,337 +3577,422 @@ export const blades: Blade[] = [
   // 10. Lithium Battery Electrode Slitting Knives
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement upper and lower knives for your battery electrode slitting station, with custom bores, widths and edge profiles. Send Sureay your station drawings and electrode details for a quotation on the carbide pair and surface options.",
     id: "lithium-battery-slitting-knives",
+    seoDescription:
+      "Fine-grain carbide slitting knives for coated lithium battery anodes and cathodes. Order matched upper and lower rotary knives with optional DLC or TiN.",
     name: "Battery Slitting Knives",
-    fullName:
-      "Tungsten Carbide Circular Slitting Knives for Lithium Battery Electrode Foil",
+    fullName: "Lithium Battery Electrode Slitting Knives",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Battery Precision Blades",
+    categoryDisplay: "Battery Slitting Knives",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "New Energy",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-07.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
-    ],
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Mirror-finish tungsten carbide circular slitting knives for lithium-ion battery electrode foil. Zero-notch Ra ≤ 0.05μm edge quality prevents micro-burrs on Al cathode and Cu anode foil, maintaining ISO Class 7 cell assembly cleanliness. Tolerance: ±0.001mm thickness, ≤0.01mm T.I.R.",
-    fullDescription:
-      "Lithium battery electrode slitting is among the most demanding precision cutting applications in industrial manufacturing. A single micro-burr or edge notch on the cut foil edge can penetrate the separator membrane during cell assembly, causing internal short-circuit and catastrophic battery failure. Sureay lithium battery slitting knives are engineered to eliminate this risk through extreme dimensional precision and surface metallurgy.\n\nEvery knife is manufactured from ultra-fine grain tungsten carbide (WC-Co, grain size ≤ 0.5μm) and precision ground to a Ra ≤ 0.05μm mirror finish on the cutting bevel. Thickness tolerance is held to ±0.001mm across the full disc face — three times tighter than standard slitter knife specifications — and total indicated runout (T.I.R.) is verified at ≤0.01mm on every unit before shipment. This zero-notch edge geometry prevents micro-delamination at the foil cut edge and eliminates the metallic particle generation that contaminates dry-room cell assembly environments.\n\n## Electrode Foil Applications\n\n**Aluminum Cathode Foil (LFP, NMC, NCA Cells):** Thickness range 12–20μm. The hard, brittle oxide layer on battery-grade Al foil rapidly abrades standard HSS and D2 edges within a single roll. Tungsten carbide grades maintain a geometric edge life 8–12× longer, reducing unplanned stops on high-speed winder lines running at 80–120 m/min.\n\n**Copper Anode Foil (LFP, NMC, Solid-State Cells):** Thickness range 6–12μm. Ultra-thin Cu foil requires the knife/anvil clearance to be set within ±0.002mm to prevent foil wrinkling and telescoping on the rewind roll. Our diameter-matched knife pairs are ground as mated sets with clearance pre-verified to your machine specification.\n\n**PVDF Separator Film (Dry Process):** Ceramic-coated separator film for dry-electrode processes (used in Gen 4 solid-state cell lines) presents an extremely abrasive cutting substrate. Cermet-grade or solid PCD (polycrystalline diamond) knives are available for this application on request.\n\n## Cleanroom Compatibility\n\nAll knives are ultrasonically cleaned, individually packaged in sealed anti-static bags, and certified particulate-free to ISO Class 7 standards. Packaging and material certificates are compliant with IATF 16949 documentation requirements for EV battery supply chains.",
+      "Carbide replacement slitting knives for coated lithium battery anodes and cathodes. Custom upper and lower knife pairs, with DLC or TiN coating options.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Kaido",
-      "Koem",
-      "Hirano Tecseed",
-      "CKD",
-      "Manz",
-      "Targray",
-    ],
-
     specs: [
+      { label: "Sizes", value: "Electrode series OD 60–150 mm" },
       {
         label: "Material",
-        value: "Ultra-fine WC-Co Tungsten Carbide, Cermet (on request)",
+        value: "Fine-grain tungsten carbide (WC-Co); cermet on request",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror polish Ra ≤ 0.05μm — zero-notch edge",
+        label: "Applications",
+        value: "Coated lithium battery anode and cathode webs",
       },
+      { label: "Electrode grades", value: "YG6X, YG6H, YG8 and YG10X" },
+      { label: "Edge finish", value: "Mirror-polished cutting faces, Ra ≤0.05 μm" },
+      { label: "Optional Coatings", value: "DLC or TiN" },
+      { label: "Hardness", value: "91–93 HRA, depending on WC-Co grade" },
+      { label: "Thickness tolerance", value: "±0.001 mm" },
+      { label: "Runout", value: "≤0.01 mm T.I.R." },
       {
-        label: "Tolerance",
-        value: "Thickness: ±0.001mm | T.I.R. Runout: ≤0.01mm",
-      },
-      { label: "Hardness", value: "HRA 91–93 (WC-Co grade)" },
-      {
-        label: "Coatings",
-        value: "DLC, TiN (optional, anti-adhesion for PVDF-coated foil)",
-      },
-      {
-        label: "Application",
+        label: "Mounting",
         value:
-          "Al cathode foil (12–20μm), Cu anode foil (6–12μm), PVDF separator film",
+          "Matched upper and lower rotary knife pair by electrode slitting station",
+      },
+      {
+        label: "Current Collector Foil",
+        value: "Aluminum 12–20 µm; copper 6–12 µm",
       },
     ],
-
+    detailLayout: {
+      seoTitle: "Battery Electrode Slitting Knives | Carbide Pairs",
+      sizeRange: "Electrode series OD 60–150 mm",
+      heroAlt:
+        "Circular battery slitter knives arranged to show the bores and polished cutting faces",
+      specificationImage: {
+        src: "/images/products/slitter-detail/lithium-battery-slitting-knives-detail.webp",
+        alt: "Close-up of the polished cutting edge on a circular slitter knife",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "electrode",
+          tabLabel: "Electrode Pairs",
+          title: "Electrode Pairs",
+          columns: ["Item No.", "Series", "Upper OD × ID × W", "Lower OD × ID × W"],
+          rows: [
+            ["SR001351", "60 series", "72 × 46 × 0.5 mm", "60 × 40 × 5.0 mm"],
+            ["SR001352", "80/98 series", "98 × 66 × 0.7 mm", "80 × 55 × 5.0 mm"],
+            ["SR001353", "100 series", "100 × 65 × 0.7 mm", "100 × 65 × 3.0 mm"],
+            ["SR001354", "100 series", "100 × 65 × 1.0 mm", "100 × 55 × 5.0 mm"],
+            ["SR001355", "130 series", "130 × 88 × 0.8 mm", "130 × 95 × 3.0 mm"],
+            ["SR001356", "130 series", "130 × 97 × 1.0 mm", "130 × 70 × 5.0 mm"],
+          ],
+        },
+        {
+          id: "individual-electrode-knives",
+          tabLabel: "Individual Electrode Knives",
+          title: "Individual Electrode Knives",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Configuration"],
+          rows: [
+            ["SR001820", "76 × 38 × 0.5 mm", "Individual knife"],
+            ["SR001821", "76 × 38 × 1.0 mm", "Individual knife"],
+            ["SR001822", "100 × 50 × 0.5 mm", "Individual knife"],
+            ["SR001823", "100 × 50 × 1.0 mm", "Individual knife"],
+            ["SR001824", "100 × 50 × 1.5 mm", "Individual knife"],
+            ["SR001825", "120 × 60 × 0.5 mm", "Individual knife"],
+            ["SR001826", "120 × 60 × 1.0 mm", "Individual knife"],
+            ["SR001827", "150 × 76 × 1.0 mm", "Individual knife"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Electrode series OD 60–150 mm" },
+        {
+          label: "Material",
+          value: "Fine-grain tungsten carbide (WC-Co); cermet on request",
+        },
+        {
+          label: "Applications",
+          value: "Coated lithium battery anode and cathode webs",
+        },
+        { label: "Electrode grades", value: "YG6X, YG6H, YG8 and YG10X" },
+        { label: "Edge finish", value: "Mirror-polished cutting faces, Ra ≤0.05 μm" },
+        { label: "Optional Coatings", value: "DLC or TiN" },
+        { label: "Hardness", value: "91–93 HRA, depending on WC-Co grade" },
+        { label: "Thickness tolerance", value: "±0.001 mm" },
+        { label: "Runout", value: "≤0.01 mm T.I.R." },
+        {
+          label: "Mounting",
+          value:
+            "Matched upper and lower rotary knife pair by electrode slitting station",
+        },
+        {
+          label: "Current Collector Foil",
+          value: "Aluminum 12–20 µm; copper 6–12 µm",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Nishimura",
+      "DIENES",
+      "Kampf",
+      "CIS",
+      "PNT",
+      "Hirano Tecseed",
+      "CKD",
+      "Lead Intelligent",
+    ],
     components: [
       {
-        id: "zero-notch-edge",
-        tag: "PRECISION",
-        title: "Zero-Notch Mirror Finish",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Carbide Configurations for Coated Electrodes",
         description:
-          "Every cutting bevel is lapped to Ra ≤ 0.05μm — the same surface quality standard used for optical lens grinding. This eliminates the micro-notching that generates metallic particles in dry-room cell assembly environments and prevents separator membrane puncture.",
+          "WC-Co carbide knives are available for coated anode and cathode slitting, with the material requirement and knife configuration defined for your electrode station.",
       },
       {
-        id: "ultra-fine-carbide",
-        tag: "METALLURGY",
-        title: "Ultra-Fine WC-Co Carbide Grade",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Ground Cutting Faces and Optional DLC or TiN",
         description:
-          "Standard industrial carbide uses grain sizes of 1–3μm. Our battery-grade knives are manufactured from ≤0.5μm submicron WC-Co, providing dramatically higher edge hardness (HRA 91–93), superior abrasion resistance on thin Al and Cu foils, and a longer polishable service life between regrinding cycles.",
+          "Mirror-polished cutting faces and optional DLC or TiN surface configurations allow electrode knife orders to specify the working surface separately from the carbide material and blade geometry.",
       },
       {
-        id: "matched-knife-pairs",
-        tag: "PROCESS CAPABILITY",
-        title: "Pre-Verified Clearance Pairs",
+        id: "selection-3",
+        tag: "Application",
+        title: "Upper and Lower Knives for Electrode Stations",
         description:
-          "Upper and lower knife sets are ground as matched diameter pairs with clearance pre-verified to your winding machine specification (typically 0.002–0.005mm for Cu foil). Each pair ships with an engineering data sheet recording OD, ID, thickness, and measured clearance, enabling consistent line-side reinstallation.",
+          "Order custom upper-and-lower knife pairs or individual replacements, with bores, widths and cutting profiles specified around your existing electrode-slitting station and retained mating knife.",
       },
     ],
-
-    dimensionLabels: {
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Thickness",
-      caption:
-        "* Standard dimensions for battery electrode foil slitting. Custom OD/ID and thickness available for all winding machine models. Matched top/bottom pairs supplied with pre-verified clearance data sheet.",
-    },
-
-    standardDimensions: [
-      { od: "76 mm", id: "38 mm", thickness: "0.5 mm" },
-      { od: "76 mm", id: "38 mm", thickness: "1.0 mm" },
-      { od: "100 mm", id: "50 mm", thickness: "0.5 mm" },
-      { od: "100 mm", id: "50 mm", thickness: "1.0 mm" },
-      { od: "100 mm", id: "50 mm", thickness: "1.5 mm" },
-      { od: "120 mm", id: "60 mm", thickness: "0.5 mm" },
-      { od: "120 mm", id: "60 mm", thickness: "1.0 mm" },
-      { od: "150 mm", id: "76 mm", thickness: "1.0 mm" },
-    ],
-
-    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives"],
-    offers: {
-      lowPrice: 45,
-      highPrice: 480,
-    },
     faqs: {
       technical: [
         {
           question:
-            "What surface finish standard is required to prevent micro-burrs on battery electrode foil?",
+            "How do I identify a replacement upper and lower electrode knife pair?",
           answer:
-            "For lithium-ion battery electrode slitting, the cutting bevel must be polished to Ra ≤ 0.05μm (mirror finish) and verified for zero notches under 400× magnification. Any surface irregularity above this threshold generates micro-metallic particles that contaminate ISO Class 7 dry-room environments and can penetrate the separator, causing internal short-circuit in the finished cell.",
+            "Identify both knife positions and record their bores, widths, cutting profiles and installed relationship. The station model and current drawings establish the mounting requirements. Include the electrode web construction so the replacement pair can be specified for the coated material as well as the mechanical arrangement, with each position clearly identified.",
         },
         {
           question:
-            "How do I set the knife-to-knife clearance for ultra-thin copper anode foil?",
+            "How should current wear guide carbide selection for coated electrodes?",
           answer:
-            "For 6–12μm Cu anode foil, the upper/lower knife clearance should be set at 0.002–0.005mm (2–5% of foil thickness). Clearance below this range causes burr formation; above it results in foil wrinkling and rewind telescoping. Our matched pairs are pre-verified to your specified clearance and supplied with a dimensional data sheet for consistent line-side installation.",
+            "Record the used knife's wear pattern alongside the electrode construction and required edge quality. These provide the basis for discussing the carbide material requirement. Keep the substrate grade and optional surface coating as separate specifications, and compare them with the existing knife geometry and production acceptance criteria when assessing a replacement.",
         },
         {
           question:
-            "What carbide grade should I specify for aluminum cathode foil vs. copper anode foil?",
+            "What can cause burrs, dust or coating damage at the electrode edge?",
           answer:
-            "Both foil types benefit from submicron WC-Co (≤0.5μm grain, HRA 91–93). For Al cathode foil, the hard oxide surface layer is the primary abrasion driver — a standard K10/K20 carbide grade provides acceptable edge life. For Cu anode foil, the priority shifts to achieving the lowest possible surface roughness (Ra ≤ 0.05μm) to prevent adhesive transfer and foil marking at the cut edge.",
+            "Knife-edge condition, cutting geometry, pair alignment and electrode structure can all contribute. Examine the collector edge and coating separately, noting whether the defect appears on one side or at several slit positions. Compare those observations with the validated machine settings and edge-quality requirements to define what the replacement knife pair needs to address.",
+        },
+        {
+          question: "Why does a carbide electrode knife develop micro-chips?",
+          answer:
+            "Hard carbide edges are sensitive to handling impacts, unintended knife contact and unstable positioning. Inspect both edges, mounting condition and runout, then compare the pair alignment and cutting geometry with the station requirements. Record whether damage first appears during installation, startup or running to distinguish contact damage from a recurring operating problem before changing grade.",
         },
         {
           question:
-            "What is the typical regrinding cycle on battery slitting knives?",
+            "How should DLC or TiN be specified for replacement electrode knives?",
           answer:
-            "On a standard 600mm-wide foil slitting line running 80 m/min, submicron WC-Co knives typically sustain acceptable edge quality for 4–6 months of continuous operation before regrinding is required. Edge degradation appears first as increased cut-edge roughness (Ra climbing above 0.1μm) visible under SEM inspection, not as catastrophic chipping. We offer a regrinding service with full dimensional re-certification.",
+            "Specify the coating separately from the carbide grade, bore, knife width and cutting profile. Identify whether the order should reproduce an existing coated knife or evaluate a change from an uncoated configuration. Keep the electrode construction and edge-quality requirements with the specification so the requested surface treatment is defined for that station.",
+        },
+        {
+          question:
+            "Can Sureay supply a custom knife pair or replace only the upper knife?",
+          answer:
+            "Yes. Custom pairs can be specified from the station drawings, and an upper knife can be supplied separately when the retained lower knife is identified and serviceable. Include its actual dimensions, edge profile and regrinding history. Clearly identify which knife is being replaced and whether the order should reproduce or change the existing configuration.",
+        },
+        {
+          question:
+            "Are electrode slitter knives the same as bare copper or aluminum foil knives?",
+          answer:
+            "Electrode knives cut a coated anode or cathode web containing both collector foil and coating layers. Bare-foil knives slit the uncoated copper or aluminum substrate. Their edge and particle requirements can differ despite a similar circular shape. For uncoated substrates, see [Slitter Knives for Copper & Aluminum Foil](/products/metal-foil-strip-slitter-knives).",
         },
       ],
-      company: [
-        {
-          question:
-            "Can Sureay supply battery slitting knives certified to IATF 16949 requirements?",
-          answer:
-            "Yes. We supply full material traceability documentation for EV battery supply chain qualification: WC-Co raw material mill certificates, hardness test reports (HRA per ASTM E18), surface roughness measurement records (Ra per ISO 4287), and dimensional CMM reports. All documentation is referenced to your purchase order batch number.",
-        },
-        {
-          question:
-            "What is the lead time for standard and custom battery slitting knife orders?",
-          answer:
-            "Standard stock dimensions: 3–5 working days. Custom OD/ID dimensions not held in stock: 10–15 working days including full QC documentation. For initial OEM qualification orders requiring sample verification before full production, allow 7–10 working days for first-article samples.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 11. Corrugated Slitter Scorer Blades (瓦楞纸薄刀及全系刀具能力展示)
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Source replacement carbide slitter blades for your corrugator dry end, with custom bores, fixing holes and slotted mounting patterns. Send Sureay the part drawing or sample for a quotation on your solid or split blade configuration.",
     id: "corrugated-slitter-scorer-blades",
-    name: "Corrugated Slitter Blades",
-    fullName:
-      "Tungsten Carbide Thin Slitter Blades for Corrugator Dry-End Lines",
+    seoDescription:
+      "Carbide slitter blades for corrugator dry-end lines, with BHS and Fosber reference configurations. Custom bores and fixing patterns made to drawing.",
+    name: "Corrugated Board Slitter Blades",
+    fullName: "Corrugated Board Slitter Blades for Dry-End Lines",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Corrugated Blades",
+    categoryDisplay: "Corrugated Board Slitter Blades",
     image:
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-    badge: "Zero Crush",
-    badgeColor: "orange",
-    gallery: [
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
-    ],
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Solid Tungsten Carbide thin slitter blades engineered for zero-crush corrugated board slitting. Exact OEM replacements for BHS, Fosber, and Marquip. As a complete box plant tooling manufacturer, we also supply slotter knives, Z cut-off knives, scorer/creaser knives, and stitch lap knives.",
-    fullDescription:
-      "On a high-speed corrugating line running at over 250 m/min, the dry-end slitter-scorer dictates the final quality of the corrugated board. Using inferior blades results in crushed flutes, ragged edges, and excessive paper dust. Sureay Corrugated Thin Slitter Blades are manufactured from 100% solid, sub-micron grain Tungsten Carbide via HIP (Hot Isostatic Pressing) sintering, delivering unparalleled transverse rupture strength and edge stability.\n\n## The 'Zero-Crush' Razor Geometry\n\nThe term 'Thin Blade' refers to the cutting edge, not the entire blade body. To prevent high-speed wobble, our blade bodies are machined to a rigid 1.0mm to 1.2mm thickness. The cutting edge is then precision-lapped by diamond wheels to a microscopic razor profile (typically 0.3mm wide at the apex). This specific geometry slices through heavy double-wall boards purely by shearing action, generating zero compressive force and completely eliminating flute crushing.\n\n## Continuous In-Line Sharpening\n\nModern corrugators utilize automatic, in-line CBN grinding wheels to hone the slitter blades during operation. Sureay specifically formulates our Tungsten Carbide matrix to balance extreme wear resistance with perfect grindability, ensuring the blade sheds material cleanly without glazing or loading the machine's grinding stones.\n\n## Complete Corrugated Tooling Portfolio\n\nWhile our Tungsten Carbide thin slitters are the heartbeat of the corrugator dry-end, Sureay is a comprehensive tooling partner for the entire box plant. Beyond slitter blades, we manufacture and supply:\n- **Slotter Knives (Slotting) & Beam Slot Knives:** For clean, tear-free slots on Flexo Folder Gluers (FFG).\n- **Z Cut-off Knives:** High-speed cross-cutting serrated blades for the dry-end cutoff station.\n- **Stitch Lap Knives:** Precision blades for cutting the critical glue/stitch tab on folding cartons.\n- **Scorer & Creaser Knives:** Male/female scoring rings that create the perfect folding hinge.\n- **Split Top and Bottom Circular Knives:** Two-piece design for rapid in-machine replacement, saving hours of arbor maintenance downtime.",
+      "Carbide replacement slitter blades for corrugator dry-end lines. BHS, Fosber and other machine references, with custom bores and fixing patterns to drawing.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "BHS",
-      "FOSBER",
-      "Marquip",
-      "Agnati",
-      "Martin / Bobst",
-      "TCY",
-      "Isowa",
-    ],
-
     specs: [
-      {
-        label: "Main Product",
-        value: "Solid Tungsten Carbide Thin Slitter Blades (HIP Sintered)",
-      },
+      { label: "Sizes", value: "Thin blade OD 15–340 mm" },
       {
         label: "Material",
-        value: "Tungsten Carbide WC-Co K05 / K10 / K20 (grade by board type)",
+        value: "WC-Co carbide in K05, K10, K20, YG8, YG10, YG12X or YG15 grades",
       },
       {
-        label: "Blade Hardness",
-        value: "HRA 90–92 (Optimized for wear and in-line grindability)",
+        label: "Applications",
+        value: "Longitudinal slitting on the corrugator dry end",
       },
+      { label: "Blade options", value: "Solid disc or split construction" },
+      { label: "Hardness", value: "90–92 HRA, depending on carbide grade" },
       {
-        label: "Body Thickness",
-        value: "1.0 mm – 1.2 mm (Ensures high-speed rigidity)",
+        label: "Mounting",
+        value: "Plain bore, fixing-hole pattern or slotted mounting pattern",
       },
-      {
-        label: "Edge Geometry",
-        value: "Precision lapped razor profile, ~0.3 mm apex (Zero-crush)",
-      },
-      {
-        label: "Line Speed Rating",
-        value: "Up to 350+ m/min on modern high-speed corrugators",
-      },
-      {
-        label: "Application",
-        value:
-          "B/C/E/F flute corrugated board — slit and score on BHS, Marquip, FOSBER corrugators",
-      },
-      {
-        label: "Other Tooling Cap.",
-        value: "Slotter Knives, Z Cut-off Knives, Scorer Knives, Split Knives",
-      },
+      { label: "Production Method", value: "HIP-sintered solid tungsten carbide" },
+      { label: "Edge Apex", value: "Approximately 0.3 mm" },
     ],
-
+    detailLayout: {
+      seoTitle: "Corrugated Slitter Scorer Blades | BHS & Fosber",
+      sizeRange: "Thin blade OD 15–340 mm",
+      heroAlt:
+        "Corrugated board thin slitter blades with different bore and mounting patterns",
+      specificationImage: {
+        src: "/images/products/slitter-detail/corrugated-slitter-scorer-blades-detail.webp",
+        alt: "Circular corrugated slitter blade showing its large bore and fixing holes",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "thin",
+          tabLabel: "Carbide Thin Blades",
+          title: "Carbide Thin Blades",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Equipment reference",
+            "Mounting pattern",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "6 × Ø9 mm pattern"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "4-slot pattern"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Match drawing"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Match drawing"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Match drawing"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Match drawing"],
+            ["SR001410", "280 × 160 × 1.1 mm", "Mitsubishi", "Match drawing"],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Match drawing"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Match drawing"],
+            ["SR001413", "340 × 230.2 × 1.0 mm", "Göpfert", "Match drawing"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Additional Corrugator Knife Sizes",
+          title: "Additional Corrugator Knife Sizes",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Knife Type / Platform Reference",
+          ],
+          rows: [
+            ["SR001828", "240 × 115 × 1.0 / 1.2 mm", "BHS"],
+            ["SR001829", "260 × 140 × 1.2 mm", "BHS"],
+            ["SR001830", "230 × 135 × 1.15 / 1.2 mm", "FOSBER"],
+            ["SR001831", "260 × 112 × 1.2 mm", "FOSBER"],
+            ["SR001832", "230 × 110 × 1.2 / 1.5 mm", "Marquip"],
+            ["SR001833", "200 × 122 × 1.2 mm", "TCY / Justu"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Thin blade OD 15–340 mm" },
+        {
+          label: "Material",
+          value: "WC-Co carbide in K05, K10, K20, YG8, YG10, YG12X or YG15 grades",
+        },
+        {
+          label: "Applications",
+          value: "Longitudinal slitting on the corrugator dry end",
+        },
+        { label: "Blade options", value: "Solid disc or split construction" },
+        { label: "Hardness", value: "90–92 HRA, depending on carbide grade" },
+        {
+          label: "Mounting",
+          value: "Plain bore, fixing-hole pattern or slotted mounting pattern",
+        },
+        { label: "Production Method", value: "HIP-sintered solid tungsten carbide" },
+        { label: "Edge Apex", value: "Approximately 0.3 mm" },
+      ],
+    },
+    compatibleMachines: [
+      "BHS",
+      "Fosber",
+      "MarquipWardUnited",
+      "Agnati",
+      "Mitsubishi",
+      "Isowa",
+      "TCY",
+      "Göpfert",
+    ],
     components: [
       {
-        id: "hip-sintering",
-        tag: "METALLURGY",
-        title: "HIP Sintered Carbide",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Carbide Material Options for Corrugator Slitting",
         description:
-          "Hot Isostatic Pressing (HIP) ensures our thin slitter blades have zero microscopic pores. This ultra-dense structure holds a flawless razor edge (~0.3mm tip) without micro-chipping under high-speed corrugated board impact.",
+          "WC-Co carbide options give you a choice of replacement materials for corrugator slitting. Specify your current grade, blade configuration and board conditions to define the required knife.",
       },
       {
-        id: "zero-crush",
-        tag: "GEOMETRY",
-        title: "Zero-Crush Razor Edge",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Solid and Split Blade Constructions",
         description:
-          "A thick blade body (1.0–1.2mm) provides absolute stability against lateral wobble at speed, while the edge is deeply tapered and diamond-lapped to a razor finish. This slices the flutes cleanly instead of pressing them down.",
+          "Solid-disc and split constructions are available for existing corrugator knife stations, allowing you to order the blade form required by your installed assembly.",
       },
       {
-        id: "full-portfolio",
-        tag: "MANUFACTURING CAPABILITY",
-        title: "Complete Box Plant Tooling",
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Bores and Mounting Patterns",
         description:
-          "From Tungsten Carbide Thin Slitters on the corrugator, to Z Cut-off knives, Scorer rings, and upper/lower Slotter Knives on your Flexo Folder Gluer — we engineer the entire cutting spectrum for your box plant.",
+          "Replacement blades can be made with drawing-defined bores, fixing holes and slots, giving you a direct purchasing route for the mounting pattern used on your line.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Target Corrugator OEM",
-      col1: "Outer Diameter (OD)",
-      col2: "Inner Diameter (ID)",
-      col3: "Body Thickness",
-      caption:
-        "* Dimensions above are standard OEM specifications for Thin Slitter Blades. Drive pin holes are machined to brand tolerances. Slotter, Scorer, and Z Cut-off knives are manufactured to exact customer or OEM blueprints.",
-    },
-
-    standardDimensions: [
-      { spec: "BHS", od: "240 mm", id: "115 mm", thickness: "1.0 / 1.2 mm" },
-      { spec: "BHS", od: "260 mm", id: "140 mm", thickness: "1.2 mm" },
-      {
-        spec: "FOSBER",
-        od: "230 mm",
-        id: "135 mm",
-        thickness: "1.15 / 1.2 mm",
-      },
-      { spec: "FOSBER", od: "260 mm", id: "112 mm", thickness: "1.2 mm" },
-      {
-        spec: "Marquip",
-        od: "230 mm",
-        id: "110 mm",
-        thickness: "1.2 / 1.5 mm",
-      },
-      { spec: "Agnati", od: "240 mm", id: "115 mm", thickness: "1.0 mm" },
-      { spec: "TCY / Justu", od: "200 mm", id: "122 mm", thickness: "1.2 mm" },
-    ],
-
-    relatedBladeIds: [
-      "paper-cutting-blades",
-      "rotary-slitter-knives",
-      "box-slotting-knives",
-    ],
-    offers: {
-      lowPrice: 35,
-      highPrice: 150,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Why are my thin slitter blades crushing the flutes on E and F flute boards?",
+            "How do I identify the correct replacement corrugator slitter blade?",
           answer:
-            "Flute crushing is caused by a blade that has lost its razor geometry. This happens if the blade carbide is wearing too fast, or if your automatic in-line sharpening stones are glazed. Switching to our HIP-sintered Tungsten Carbide blades ensures the edge stays microscopically sharp, shearing the flutes cleanly without compressive force.",
+            "Start with the machine model and knife reference, then specify the outside diameter, bore, thickness and fixing pattern. Include whether the installed blade is a solid disc or split construction. A drawing or clear photographs of the mounting arrangement help identify the required configuration, particularly when the same machine brand uses different knife assemblies.",
+        },
+        {
+          question: "Do BHS and Fosber slitter blades interchange?",
+          answer:
+            "Interchangeability depends on the complete blade and mounting geometry. Compare the bore, fixing holes or slots, thickness and cutting profile with the installed part. Similar outside diameters can conceal different interfaces, so use the knife drawing or part reference to establish the replacement configuration for the specific BHS or Fosber station.",
         },
         {
           question:
-            "How do your blades interact with automatic slitter-scorer sharpening systems?",
+            "Why is tungsten carbide used for corrugated slitter-scorer blades?",
           answer:
-            "Our blades are engineered specifically for continuous in-line sharpening (common on Fosber and BHS lines). The carbide grain structure and cobalt binder ratio are balanced so that the blade sheds material cleanly when hit by the CBN stones, keeping the blade sharp without loading (glazing) the sharpening wheels.",
+            "Tungsten carbide provides a wear-resistant cutting edge for corrugated board slitting. Grade selection should reflect the blade construction and actual working conditions. Compare gradual edge wear with chipping, and include the machine's sharpening arrangement when specifying a replacement. These details help define the required material more usefully than a hardness value alone.",
         },
         {
           question:
-            "What is the advantage of a Split Top and Bottom Circular Knife?",
+            "Why does corrugated board show rough edges after slitting?",
           answer:
-            "On legacy slitter-scorers, changing a worn solid circular knife requires operators to pull the entire heavy shaft out of the machine. Split circular knives are manufactured in two interlocking halves. You simply bolt the halves directly around the shaft in minutes, saving hours of maintenance downtime.",
+            "Check the blade's cutting edge, sharpening condition and board support at the cut. A worn edge or an unsuitable grinding setup can undermine the thin blade's cutting action. Compare cut samples before and after sharpening, and note changes in paper grade. Follow the corrugator's settings for grinding and support, rather than treating every rough edge as a carbide-grade problem.",
+        },
+        {
+          question:
+            "What should be checked when matching a blade to the automatic sharpening unit?",
+          answer:
+            "Check the blade profile and remaining diameter against the sharpening arrangement, along with the condition and alignment of the grinding components. Use the machine documentation for sharpening settings and service limits. Include the sharpening-unit details when ordering a replacement so the knife is specified as part of the installed cutting and grinding assembly.",
+        },
+        {
+          question:
+            "Can Sureay reproduce a corrugator blade with a specific mounting pattern?",
+          answer:
+            "Yes. Sureay can make replacement blades to drawings defining the bore, fixing-hole arrangement, slots and cutting profile. The original part reference or sample helps identify the installed interface. Specify whether the blade is solid or split, and include the locating and fixing details needed to reproduce the mounting pattern.",
+        },
+        {
+          question:
+            "Are slitter-scorer blades the same as scoring wheels or slotter knives?",
+          answer:
+            "These parts perform different operations. Corrugator slitter blades cut board lengthwise, scoring wheels form fold lines, and slotter knives cut flap slots during box converting. Male and female slotter knives use different profiles and mounting arrangements. Identify the cutting operation when requesting a replacement so the enquiry reaches the correct product configuration.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can Sureay supply the entire knife package for a new corrugator and FFG installation?",
-          answer:
-            "Absolutely. We are a comprehensive tooling partner for box plants. In addition to Tungsten Carbide thin slitters, we manufacture the complete converting spectrum: Slotter knives, Beam slot knives, Stitch lap knives, Scorer/Creaser knives, and Z cut-off knives.",
-        },
-        {
-          question:
-            "Do you maintain dimensions for Bobst / Martin Flexo Folder Gluers?",
-          answer:
-            "Yes, we have an extensive database of OEM blueprints covering the slitting, slotting, and scoring sections of major converting machines including Bobst, Martin, Isowa, Ward, and TCY. Your replacement knives will be an exact drop-in fit.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slotter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 12. Tire Shredder Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement tire-shredder cutters built for your existing primary cutting stack, with custom hooks and bores. Sureay can quote individual cutters or complete sets for whole-tire and TDF processing. Share your machine details and drawing to discuss the required configuration. Machine brands are compatibility references for Sureay aftermarket parts.",
     id: "tire-shredder-blades",
     name: "Tire Shredder Blades",
-    fullName: "Heavy-Duty 3-Claw Rotary Shear Blades for Tire Recycling",
+    fullName: "Tire Shredder Blades for Primary Rotary Shears",
+    seoTitle: "Tire Shredder Blades for Primary Rotary Shears",
+    seoDescription:
+      "Source modified A8 or 42CrMo cutters for primary tire shredding. Match the hook count, cutter thickness and shaft bore to your rotary shear.",
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Tire Shredder Blades",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
+    imageDimensions: { width: 3200, height: 3200, smallerWidths: [320, 640] },
+    specificationImageDimensions: { width: 880, height: 880, smallerWidths: [320, 640] },
     badge: "OEM Standard",
     badgeColor: "red",
     gallery: [
@@ -3675,32 +4000,16 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-00.webp",
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
-
     description:
-      'Premium 3-claw rotary shear blades engineered for primary tire shredding and TDF (Tire Derived Fuel) production. Manufactured from OEM-grade Cru-Wear (PGK) and Modified A8 tool steels to withstand extreme impact from bead wires. Precision machined to exact ±0.05mm (0.002") tolerances to ensure tires are cleanly cut rather than torn.',
-
-    fullDescription:
-      "Primary tire shredding is arguably the most brutal application in the size-reduction industry. Rotary blades must simultaneously slice through elastic rubber while repeatedly impacting high-tensile steel bead wires. Standard shredder alloys fail prematurely in this environment, either through rapid edge rounding or catastrophic brittle fracture.\n\n## Premium Tire-Grade Metallurgy\n\nWe manufacture our tire shredder blades using the exact premium material grades proven in top-tier OEM equipment (such as Barclay and CM shredders):\n\n**Cru-Wear (PGK):** The ultimate factory-standard material. It offers an exceptionally high vanadium and tungsten carbide volume, delivering superior wear resistance while maintaining the extreme toughness required to shear thick steel belts without micro-chipping.\n\n**Modified A8:** Offers an excellent balance of performance and cost-effectiveness, providing massive impact resistance for operations focused on minimizing upfront tooling costs.\n\n## The Two-Thousandths (0.05mm) Tolerance Rule\n\nThe difference between an efficient tire shredder and a constantly jammed machine lies in the cutting clearance. All our tire knives, regardless of material, are ground to precise thickness tolerances — two thousandths of an inch (0.05mm) to be exact.\n\nThis precision ensures that elastic tires and steel wires are cleanly **cut** as opposed to being **torn** and stretched. A proper shearing action drastically reduces pulling forces on the rotor shafts, lowers electrical energy consumption (amp draw), and prevents exposed steel wires from wrapping around the rotor block.\n\n## 3-Claw Geometry & TDF Sizing\n\nThe standard 3-claw (hook) geometry provides the optimal bite-angle to grab whole passenger and light truck tires, pulling them aggressively into the cutting chamber. Blade thickness (typically 2-inch / 50mm) directly dictates the size of your Tire Derived Fuel (TDF) chips, ensuring a consistent, high-quality end product suitable for cement kilns or downstream wire liberation.",
-
+      "Replacement tire shredder cutters for primary rotary shears. Modified A8 and 42CrMo options, with custom hook profiles and shaft bores to drawing.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Granutech-Saturn Systems",
-      "UNTHA",
-      "WEIMA",
-      "Eldan Recycling",
-      "Lindner",
-      "Eco Green Equipment",
-      "American Pulverizer",
-      "Shred-Tech",
-    ],
-
     specs: [
       { label: "Material", value: "Cru-Wear (PGK), Modified A8, 42CrMo" },
       { label: "Machining Tol.", value: "Strictly ±0.05 mm (0.002 inches)" },
       {
-        label: "Standard Geometry",
-        value: "3-Claw Rotary (Custom hook counts available)",
+        label: "Claw Geometry",
+        value: "1, 3 or 5 claws, depending on the listed configuration",
       },
       { label: "Hardness", value: "HRC 54–58 (Optimized for Wire Impact)" },
       { label: "Application", value: "Whole Tires, TDF Chips, OTR Tires" },
@@ -3709,31 +4018,10 @@ export const blades: Blade[] = [
         value: "Barclay, CM, SSI, Untha, Granutech-Saturn",
       },
     ],
-
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "MATERIALS",
-        title: "Cru-Wear (PGK) & Modified A8",
-        description:
-          "Utilizing OEM-grade premium alloys. Cru-Wear provides ultimate toughness and durability for high-volume lines, while Modified A8 offers the best balance of cost and performance.",
-      },
-      {
-        id: "precise-cutting",
-        tag: "EFFICIENCY",
-        title: "Cut, Don't Tear",
-        description:
-          "Precision ground to ±0.05mm. This ensures a true scissor-like cutting action, preventing wire pull-out, reducing machine wear, and drastically lowering energy consumption.",
-      },
-      {
-        id: "consistent-tdf",
-        tag: "OUTPUT QUALITY",
-        title: "Consistent TDF Chips",
-        description:
-          "Exact blade thicknesses (e.g., 2-inch standard) combined with zero-clearance shearing produce uniform, high-quality Tire Derived Fuel (TDF) chips with minimal exposed wire.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "multi-shaft-blades-metal",
     ],
-
     dimensionLabels: {
       col0: "OEM Platform",
       col1: "Outer Diameter",
@@ -3743,11 +4031,9 @@ export const blades: Blade[] = [
       caption:
         "* Dimensions shown are industry standard examples. We manufacture strictly to your exact machine specifications and required TDF chip size.",
     },
-
-    // Rendering: hasBoreHooks=true (bore+hooks) + hasSpec=true (spec+col0)
-    // → col0=spec(OEM) | col1=od | col2=thickness | col3=bore | col4=hooks(claw count)
     standardDimensions: [
       {
+        itemNo: "SR002301",
         spec: "Barclay Standard",
         od: 'Φ 450 mm (17.7")',
         thickness: '50.8 mm (2.0")',
@@ -3755,6 +4041,7 @@ export const blades: Blade[] = [
         hooks: "3 Claws",
       },
       {
+        itemNo: "SR002302",
         spec: "CM Primary",
         od: 'Φ 500 mm (19.6")',
         thickness: '50.8 mm (2.0")',
@@ -3762,6 +4049,7 @@ export const blades: Blade[] = [
         hooks: "3 Claws",
       },
       {
+        itemNo: "SR002303",
         spec: "SSI / Untha",
         od: "Φ 400–600 mm",
         thickness: "25–75 mm",
@@ -3769,6 +4057,7 @@ export const blades: Blade[] = [
         hooks: "1 / 3 / 5 Claws",
       },
       {
+        itemNo: "SR002304",
         spec: "OTR Shredder",
         od: "Φ 800+ mm",
         thickness: "100+ mm",
@@ -3776,104 +4065,288 @@ export const blades: Blade[] = [
         hooks: "1 / 3 Claws",
       },
     ],
-
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-    ],
     offers: {
       lowPrice: 250,
       highPrice: 2500,
     },
+    components: [
+      {
+        id: "tire-shredder-blades-advantage-1",
+        tag: "Steel Configurations for Reinforced Tire Feed",
+        title: "Steel Configurations for Reinforced Tire Feed",
+        description:
+          "Modified A8 and 42CrMo options support replacement orders for tire-shredding cutters, with the material specified around the existing knife design and the wear or impact conditions in service.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-2",
+        tag: "One-, Three- and Five-Claw Cutters",
+        title: "One-, Three- and Five-Claw Cutters",
+        description:
+          "Listed tire cutter configurations use one, three or five claws. Sureay makes the required claw profile and hexagonal, octagonal, splined or keyed bore to suit the replacement position on your primary shredder.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-3",
+        tag: "Single Cutters and Shaft Sets",
+        title: "Single Cutters and Shaft Sets",
+        description:
+          "Individual cutter configurations and sets covering multiple shaft positions can be quoted together, with complete cutters and replaceable inserts identified separately for the planned changeout.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "Why should I upgrade to Cru-Wear (PGK) from standard D2 tool steel?",
+          question: "Which recycling stage uses these tire shredder blades?",
           answer:
-            "Tires contain high-tensile bead wires that act as extreme impact loads. Standard D2 is highly wear-resistant but brittle; the edge will chip when it strikes bead wire. Cru-Wear (PGK) is engineered with a different carbide structure, making it significantly tougher and more durable than D2, absorbing the impact without fracturing while maintaining excellent edge retention.",
+            "These tire shredder blades, also called tyre shredder knives, are shaft-mounted cutters for primary rotary-shear equipment. Downstream raspers and rubber granulators use their own cutting arrangements. Specify the machine and stage first, then identify whether the required replacement is a complete cutter or an insert fitted to an existing body.",
         },
         {
-          question:
-            "How does blade tolerance affect my shredder's energy consumption?",
+          question: "Does cutter thickness determine the final tire-chip size?",
           answer:
-            "If the thickness tolerance of the rotary blades varies by more than 0.05mm (0.002\"), a gap forms between the counter-rotating knives. Instead of shearing the elastic tire, the machine tries to stretch and tear it. This pulling action requires massive amounts of torque, which spikes the motor's amp draw and wastes energy. Precision tolerances ensure a low-friction, clean cut.",
+            "No. Cutter thickness influences one dimension of the primary cut. Hook geometry, cutter arrangement and any downstream sizing stage also affect the final tire-chip size. Keep the existing cutter thickness and the target TDF chip size as separate requirements.",
         },
         {
-          question: "How does the 3-claw design benefit whole tire processing?",
+          question: "How should steel reinforcement affect cutter selection?",
           answer:
-            "A 3-claw geometry provides the ideal bite angle and spacing. If there are too many claws (e.g., 8 or 10), the tire will bounce on top of the rotor because the hook gaps are too small to grab the thick rubber. 3 claws provide a massive opening that hooks into the tire cavity and pulls the entire tire down into the cutting chamber.",
+            "Steel cords and bead sections add local loads to the cutting of the rubber body. Compare the original cutter material, hook support and current wear pattern when assessing a replacement. Gradual wear and chipped hooks call for different balances of wear resistance and toughness, so keep the feed description specific to the tires being processed.",
+        },
+        {
+          question: "What can cause rapid wear or chipped hooks on tire cutters?",
+          answer:
+            "Abrasive contact can wear cutting faces gradually, while reinforcement or foreign material can create concentrated loads at the hooks. Stack condition also matters when damage appears at particular positions. Record the affected faces and compare them with adjacent cutters before deciding whether the replacement needs a different material, profile or assembly correction.",
+        },
+        {
+          question: "Can hook count or bore geometry be changed on a custom tire blade?",
+          answer:
+            "Yes. Sureay can make a revised hook count or bore to drawing. Show how the revised cutter seats on the shaft and how its hooks line up with the opposing cutters. A revision reference distinguishes this change from a like-for-like replacement.",
+        },
+        {
+          question: "Can one worn cutter be replaced without ordering a complete set?",
+          answer:
+            "Yes. A single cutter can be supplied when the retained parts and mating geometry are known. Check the adjacent cutters, spacer widths and installed orientation before defining that replacement. For a full changeout, list each position separately so differences between complete cutters, inserts and shaft-specific parts remain clear in the order.",
+        },
+        {
+          question: "What do you need to quote replacement tire shredder knives?",
+          answer:
+            "Send the primary shredder's model, cutter drawing or part number, tire feed and quantities. Specify complete cutters or replaceable inserts. For each position, include the outside diameter, thickness, hook form and bore, together with the spacer arrangement if the order covers a shaft set.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can you supply spacers and cleaning fingers (scraper plates) to match the blades?",
-          answer:
-            "Yes. A complete tire shredding rotor requires matched blades, spacers, and cleaning fingers. We manufacture the complete set to the same strict tolerances to ensure zero-gap assembly across the entire length of the rotor shaft.",
-        },
-        {
-          question: "Do you have the blueprints for Barclay or CM shredders?",
-          answer:
-            "We maintain a comprehensive database of OEM blade drawings for major tire shredding platforms. Supplying us with your machine model or a basic confirmation drawing allows us to manufacture exact drop-in replacements.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the primary shredder model, tire feed, target chip size and cutter and spacer dimensions.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 13. Nonwoven / Spunbond Slitting Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement nonwoven slitter knives with custom profiles, mounting dimensions and coating options for your converting line. Share your drawing or sample and web application with Sureay for a quotation covering the blade configuration and documentation you need.",
     id: "nonwoven-slitter-knives",
     name: "Nonwoven Slitter Knives",
     fullName:
-      "M2 HSS Circular Slitter Knives for Spunbond, Meltblown & SMS Nonwoven Fabrics",
+      "Nonwoven Slitter Knives for Spunbond, Meltblown & SMS",
+    seoTitle: "Nonwoven Slitter Knives | PP Spunbond & SMS",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Slitter Knives",
-    image:
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+    image: nonwovenSlitterImage,
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     badge: "Medical Grade",
     badgeColor: "teal",
     gallery: [
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
+      nonwovenSlitterImage,
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-02.webp",
     ],
+    galleryAlts: [
+      "Circular nonwoven slitter blades and black anvil rings",
+      "Close-up of a circular slitter blade bevel",
+      "Circular slitter blades and split rings viewed from above",
+    ],
+    detailLayout: {
+      heroTitle:
+        "Nonwoven Slitter Knives for Spunbond, Meltblown & SMS",
+      sizeRange: "OD 60–300 mm",
+      heroSpecs: [
+        { label: "Material", value: "M2 HSS, D2, tungsten carbide, 52100" },
+        {
+          label: "Fits",
+          value:
+            "Pneumatic shear cut holders (80/90/100/110 type) & slitter rewinders up to",
+          emphasis: "800 m/min",
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "OD 60–300 mm" },
+        { label: "Materials", value: "M2 HSS, D2, tungsten carbide, 52100" },
+        {
+          label: "Hardness",
+          value: "M2: 62–64 HRC; D2: 60–62 HRC; carbide: 89–92 HRA",
+        },
+        { label: "Tolerance", value: "Thickness ±0.002 mm" },
+        { label: "Interface", value: "H7 bore, set-screw locking" },
+        { label: "Geometry", value: "Bevel 25°–45°" },
+        {
+          label: "Optional Coatings",
+          value: "PTFE, TiN, DLC or ESD conductive coating",
+        },
+        { label: "Rake Angle", value: "15°–20° positive rake" },
+        { label: "Surface Finish", value: "Ra ≤0.4 µm" },
+        {
+          label: "Application",
+          value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile",
+        },
+      ],
+      inlineRfq: {
+        title: "Need a size that is not listed?",
+        description:
+          "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+        buttonLabel: "Request a Quote",
+      },
+      // Item No. = SR + 001 (slitter knives) + three-digit model code.
+      // Nonwoven models start at 101 and share one sequence across both tables.
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Top Slitter Blades",
+          title: "Top Slitter Blades (Shear Cut – Dished & Flat)",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Profile",
+            "Material Options",
+            "Holder Fit",
+          ],
+          rows: [
+            ["SR001101", "76.2 × 17.0 × 1.00 mm", "Dished", "M2 HSS / D2", "Type 80"],
+            [
+              "SR001102",
+              "90.0 × 22.0 × 1.20 mm",
+              "Dished",
+              "M2 HSS / Carbide",
+              "Type 90",
+            ],
+            [
+              "SR001103",
+              "100.0 × 40.0 × 1.20 mm",
+              "Dished",
+              "M2 HSS / ASP-23",
+              "Dienes / Cotta 100",
+            ],
+            [
+              "SR001104",
+              "105.0 × 40.0 × 1.50 mm",
+              "Dished",
+              "M2 HSS / D2",
+              "Type 105 / 110",
+            ],
+            [
+              "SR001105",
+              "130.0 × 60.0 × 1.50 mm",
+              "Dished",
+              "M2 HSS / D2",
+              "Dienes PSG",
+            ],
+            [
+              "SR001106",
+              "150.0 × 70.0 × 2.00 mm",
+              "Dished / Flat",
+              "D2 / M2 HSS",
+              "A.Celli",
+            ],
+            ["SR001107", "200.0 × 80.0 × 3.00 mm", "Flat", "D2 / Cr12MoV", "—"],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Bottom Rings & Crush Cutters",
+          title: "Bottom Slitter Rings & Crush Cutters",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Knife Type",
+            "Material Options",
+            "Key Specification",
+          ],
+          rows: [
+            [
+              "SR001108",
+              "80.0 × 50.0 × 15.0 mm",
+              "Bottom Anvil Ring",
+              "D2 / 52100",
+              "H7 Bore, Set Screw",
+            ],
+            [
+              "SR001109",
+              "100.0 × 60.0 × 20.0 mm",
+              "Double-Edge Ring",
+              "D2 / M2 HSS",
+              "Air / Solid Shafts",
+            ],
+            [
+              "SR001110",
+              "126.0 × 76.2 × 50.0 mm",
+              "Multi-Groove Sleeve",
+              "D2 / Cr12MoV",
+              "Groove Width ±0.01 mm",
+            ],
+            [
+              "SR001111",
+              "76.2 × 19.05 × 4.76 mm",
+              "Score / Crush Cutter",
+              "52100 / M2 HSS",
+              "R0.05–R0.1 mm Tip Radius",
+            ],
+            [
+              "SR001112",
+              "100.0 × 25.4 × 6.00 mm",
+              "Heavy-Duty Crush Cutter",
+              "52100 / D2",
+              "For Thick Felt & Batting",
+            ],
+          ],
+        },
+        {
+          id: "additional-nonwoven-knives",
+          tabLabel: "Additional Nonwoven Knife Sizes",
+          title: "Additional Nonwoven Knife Sizes",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Knife Type"],
+          rows: [
+            ["SR001834", "75 × 32 × 1.0 mm", "Nonwoven slitter knife"],
+            ["SR001835", "100 × 40 × 1.0 mm", "Nonwoven slitter knife"],
+            ["SR001836", "100 × 50 × 1.5 mm", "Nonwoven slitter knife"],
+            ["SR001837", "120 × 50 × 1.0 mm", "Nonwoven slitter knife"],
+            ["SR001838", "120 × 60 × 1.5 mm", "Nonwoven slitter knife"],
+            ["SR001839", "150 × 75 × 2.0 mm", "Nonwoven slitter knife"],
+          ],
+        },
+      ],
+    },
     description:
-      "M2 HSS and D2 circular slitter knives for spunbond PP, meltblown, SMS, and SMMS nonwoven fabrics. Specialised rake angle geometry prevents fibre fraying and slub formation on loose-structure materials. Used in hygiene, medical, filtration, and geotextile slitting lines.",
+      "Replacement slitter knives for spunbond, meltblown and SMS nonwovens. M2 HSS, D2 or carbide options, with custom profiles and application-specific coatings.",
     fullDescription:
       "Nonwoven fabric slitting presents a fundamentally different challenge from film or paper converting: the material has no grain direction, low tensile strength in the cross-machine direction, and a loose, fibrous structure that can fray, distort, or pill at the slit edge if the knife geometry is not matched to the fabric construction and line tension.\n\nSureay nonwoven slitter knives are manufactured from M2 high-speed steel with a specialist rake angle geometry developed specifically for loose-structure spunbond, meltblown, and hydroentangled materials. The optimised positive rake angle shears through fibre bundles cleanly rather than pushing them aside, eliminating the frayed edge and loose fibre slub that cause downstream quality rejections in baby diaper, feminine hygiene, and surgical drape converting lines.\n\n## Nonwoven Fabric Types\n\n**Spunbond PP (S, SS, SSS structures):** The most common nonwoven substrate. Available in 8–120 GSM. Standard M2 HSS at Ra ≤ 0.4μm surface finish, positive rake 15°–20°. Used in hygiene absorbent product converting, geotextile roll slitting, and agricultural mulch film.\n\n**Meltblown (M layer):** Ultra-fine fibre (1–5μm diameter) layers used as the filtration core in N95/FFP2 respirators and surgical masks. Extremely fragile and sensitive to lateral tensile loading. Requires reduced slit speed (60–100 m/min), low-mass knife body to minimise vibration, and electrostatic discharge (ESD) coatings to prevent fibre attraction to the blade face.\n\n**SMS / SMMS Medical Fabrics:** Spunbond-Meltblown-Spunbond composite used in surgical gowns, drapes, and sterilisation wraps. Medical-grade SMS requires validated equipment — we supply material certificates and dimensional reports traceable to your batch number for regulatory compliance.\n\n**Hydroentangled / Wetlaid Nonwovens:** Higher basis weight (50–200 GSM) fabric with more coherent structure. Closer to foam or paper in cutting characteristics — standard D2 or 52100 steel knives perform well on these substrates.\n\n## ESD Coating Option\n\nFor meltblown and electrospun filtration media slitting, an ESD (electrostatic discharge) conductive surface treatment is available that prevents static charge accumulation on the blade face. Static buildup causes lightweight fibres (particularly PP meltblown at <15 GSM) to cling to the blade and transfer as contamination to the reslitted roll edge.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
-    compatibleMachines: [
-      "Parkinson Spencer Rees",
-      "Atlas Converting",
-      "Euromac",
-      "ACCO Brands",
-      "Erhardt+Leimer",
-    ],
+    compatibleMachines: ["Tidland", "Pneumatic", "Dienes", "Mario Cotta"],
 
     specs: [
+      { label: "Sizes", value: "OD 60–300 mm" },
+      { label: "Materials", value: "M2 HSS, D2, tungsten carbide, 52100" },
       {
-        label: "Material",
-        value:
-          "M2 HSS (standard) / D2 (heavy nonwoven) / 52100 (hydroentangled)",
+        label: "Hardness",
+        value: "M2: 62–64 HRC; D2: 60–62 HRC; carbide: 89–92 HRA",
       },
-      { label: "Hardness", value: "HRC 62–64 (M2) | HRC 60–62 (D2)" },
+      { label: "Tolerance", value: "Thickness ±0.002 mm" },
+      { label: "Interface", value: "H7 bore, set-screw locking" },
+      { label: "Geometry", value: "Bevel 25°–45°" },
       {
-        label: "Rake Angle",
-        value: "15°–20° positive rake (nonwoven-optimised geometry)",
+        label: "Optional Coatings",
+        value: "PTFE, TiN, DLC or ESD conductive coating",
       },
-      {
-        label: "Surface Finish",
-        value: "Ra ≤ 0.4μm — reduces fibre adhesion and slub formation",
-      },
-      {
-        label: "Options",
-        value: "ESD conductive coating (meltblown / filtration media)",
-      },
+      { label: "Rake Angle", value: "15°–20° positive rake" },
+      { label: "Surface Finish", value: "Ra ≤0.4 µm" },
       {
         label: "Application",
         value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile",
@@ -3884,23 +4357,23 @@ export const blades: Blade[] = [
       {
         id: "rake-geometry",
         tag: "EDGE DESIGN",
-        title: "Nonwoven-Optimised Rake Angle",
+        title: "Material Options for Nonwoven Cutting",
         description:
-          "Standard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle. For loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min.",
+          "M2 HSS, D2, bearing steel and carbide options support replacement orders for different nonwoven webs. Specify the material around your existing knife arrangement and observed edge wear.",
       },
       {
         id: "esd-coating",
         tag: "SURFACE TREATMENT",
-        title: "ESD Conductive Coating",
+        title: "Defined Edge Profiles and Optional Surface Treatments",
         description:
-          "Electrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed. On meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction.",
+          "Blade profiles and optional PTFE, TiN, DLC or ESD conductive coatings can be specified separately, allowing your order to distinguish the required cutting geometry from the selected surface treatment.",
       },
       {
         id: "medical-traceability",
         tag: "COMPLIANCE",
-        title: "Medical Batch Traceability",
+        title: "Custom Interfaces for Existing Knife Holders",
         description:
-          "For converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number. Documentation is formatted for inclusion in your supplier qualification file.",
+          "Custom bores, mounting dimensions and cutting profiles let you source replacement knives for your existing holders from a drawing or sample, including the required shaft fit and locking arrangement.",
       },
     ],
 
@@ -3933,26 +4406,47 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "What rake angle should I specify for spunbond polypropylene at 200 m/min?",
+          question: "Which replacement knife fits my nonwoven slitting holder?",
           answer:
-            "For spunbond PP at 200 m/min in basis weights 15–80 GSM, specify 15° positive rake on the cutting bevel. This geometry shears polypropylene fibres cleanly at the contact point without the lateral displacement that causes fraying. For heavier basis weights (80–150 GSM SSS or SMMS), a 20° positive rake with a slightly wider bevel width provides better stability at reduced line speed (150 m/min).",
+            "Identify whether the station uses shear or crush cutting, then specify the holder, mating component and knife dimensions. Include the web construction and basis weight. Shear knives work with a mating cutting edge; crush cutters press against a supporting surface. For cross-cutting already wound rolls, see [Nonwoven Log Saw Blades](/products/nonwoven-log-saw-blades).",
         },
         {
           question:
-            "My meltblown slitting produces visible fibre transfer on the blade face. What is the cause?",
+            "How should knife material be chosen when nonwoven edges fray or wear increases?",
           answer:
-            "Fibre transfer on meltblown fabric (particularly <10 GSM layers) is caused by electrostatic charge accumulation on the blade face, not edge geometry. PP meltblown fibres at 1–5μm diameter are extremely susceptible to static attraction. Specify the ESD conductive coating option on your next order and ensure the slitter machine frame is properly earthed. This typically eliminates visible blade-face contamination within one production shift.",
+            "Compare the condition of the used edge with the web construction and stability of the cutting pair. Gradual wear and chipping call for different material considerations. Record the current knife material and production conditions when discussing a replacement, so a material change can be evaluated alongside the existing geometry and support arrangement.",
         },
-      ],
-      company: [
         {
           question:
-            "Can Sureay supply nonwoven slitter knives with a certificate of conformance for our medical device supplier audit?",
+            "What can cause fraying or loose fibres during nonwoven slitting?",
           answer:
-            "Yes. We issue a Certificate of Conformance (CoC) with each batch referencing the purchase order number, steel grade (M2 AISI M2 / DIN 1.3343), hardness range (HRC 62–64), and dimensional verification results. For full medical device supplier qualification, we can also provide the steel mill certificate and heat treatment batch record on request.",
+            "Edge wear, unsuitable geometry, unstable support and cutting settings can all contribute to loose fibres. Inspect the cut edge and both working components under normal production conditions. The web construction matters alongside speed and basis weight, so compare these details before changing the blade profile or treating one rake angle as suitable for every nonwoven.",
+        },
+        {
+          question: "Does fibre buildup always require an antistatic coating?",
+          answer:
+            "No. Residue, blade condition, web handling and the cutting setup should be checked before attributing fibre buildup to static. A conductive coating addresses a different issue from a damaged edge or unstable cutting support. Describe the buildup and current knife configuration when discussing a surface treatment, so the coating choice addresses the observed condition.",
+        },
+        {
+          question:
+            "How should custom nonwoven knife profiles and coatings be specified?",
+          answer:
+            "Send a drawing or sample defining the bore, mounting dimensions and cutting profile. Specify the blade material and coating separately, together with the nonwoven construction and intended cutting station. Keeping geometry and surface treatment distinct makes it easier to compare a replacement with the existing knife and identify exactly what changes in the order.",
+        },
+        {
+          question:
+            "Which material and dimensional requirements matter for hygiene-converting knives?",
+          answer:
+            "Define the required material identification, hardness and dimensional checks in the purchasing specification. Include the dimensions relevant to the holder and mating component, and agree any documentation requirements before ordering. Batch and purchase-order references can then connect the knife configuration with the requested inspection information and support your own supplier qualification process.",
+        },
+        {
+          question:
+            "When should nonwoven slitter knives be sharpened or replaced?",
+          answer:
+            "Persistent fraying or dust alongside a worn edge is a reason to assess sharpening, after checking the cutting setup. Regrinding is suitable only when the required profile and working dimensions can be restored. On shear stations, retain the specified overlap with the lower knife; assess crush profiles against their own drawing. Replace knives when damage or remaining dimensions prevent a usable cutting configuration.",
         },
       ],
+      company: [],
     },
   },
 
@@ -3962,193 +4456,217 @@ export const blades: Blade[] = [
   {
     id: "bottom-grooved-anvil-knives",
     name: "Bottom Grooved Anvil Knives",
-    fullName:
-      "Bottom Grooved Anvil Knives for Shear Slitting — Film, Paper & Metal Foil Converting",
+    fullName: "Bottom Grooved Anvil Knives for Shear Slitting",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
-    image:
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "OEM Matched Pairs",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
-    ],
-
+    categoryDisplay: "Bottom Grooved Anvil Knives",
+    image: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Precision-ground bottom grooved anvil knives for shear slitting of film, paper, foil & tape. Matched to Tidland, Kampf, Atlas, Goebel & BHS top-knife arbor systems. Single and twin-groove anvil profiles in D2, M2 HSS & solid carbide. Supplied as verified shear pairs or as standalone bottom anvil replacements.",
-
-    fullDescription:
-      "In shear slitting, the bottom grooved anvil knife is the fixed lower half of the scissor pair — yet it is routinely under-specified. When the anvil groove geometry is mismatched to the top blade dish angle, or when the anvil bore tolerance deviates from the arbor design, the result is uncontrolled shear clearance, edge burr, and premature wear on both knives simultaneously.\n\nSureay bottom grooved anvil knives are manufactured to the same ±0.002 mm thickness tolerance and ≤0.02 mm T.I.R. runout specification as our top slitter knives. Every anvil is ground to the groove profile of your OEM platform — whether that is a Tidland single-groove, a Kampf double-groove, or a Goebel / BHS wide-body anvil — and verified against the mating top blade before shipment.\n\n## Why Bottom Anvil Knives Need Individual Attention\n\n**Groove Profile Determines Clearance:** The groove width and depth in the anvil knife directly controls the working shear clearance between the top and bottom knife pair. A worn or incorrectly profiled groove increases effective clearance, producing a ragged slit edge even when the top blade is new. We profile-grind every anvil groove to your OEM specification (groove width ±0.01 mm) to restore factory-designed clearance.\n\n**Different Wear Rate, Different Replacement Cycle:** Bottom anvil knives operate under compressive loading rather than the shear-dominant loading on the top blade. This means the anvil typically outlasts the top blade by a factor of 3–5× — but when it does wear, the groove face rounds off gradually, causing a progressive deterioration in cut quality that is easy to miss until reject rates climb. Ordering replacement anvils independently of top blades avoids unnecessary top-blade disposal.\n\n**Bore and Face Flatness Are Critical:** The anvil knife seats on the lower arbor and must run true. A bore deviation of 0.02 mm induces blade wobble that translates directly to slit-width variation across a multi-knife arbor stack. All Sureay anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\n\n## Application Areas\n\n**Flexible Film & Packaging Slitting:** BOPP, BOPET, CPP, PE stretch film, shrink sleeve. Standard D2 or M2 HSS anvil with single or double groove profile. Optional TiN PVD on the groove face extends contact-wear life on high-speed film lines running 400–600 m/min.\n\n**Paper & Board Converting:** Tissue, kraft, coated paper. For crush-cutting (knife against anvil roll), the anvil is manufactured with a slotted groove profile that compresses and fractures paper fibres without tearing. D2 or 52100 steel, HRC 58–62.\n\n**Metal Foil Slitting:** Aluminium cathode foil, copper anode foil, silicon-steel strip. The anvil knife for metal foil must resist adhesive wear from the metal substrate. ASP23 PM steel or solid carbide grade matched to the top knife alloy; groove form tolerance held to ±0.005 mm.\n\n**Pressure-Sensitive Tape & Labels:** Masking tape, double-coated foam, transfer adhesive. Adhesive contamination on the groove face is the primary failure mode. Teflon or DLC-coated groove faces reduce adhesive build-up intervals by 60–80%.",
-
+      "Replacement grooved anvil knives and cutting rings for web slitters. Steel or carbide options, with custom groove profiles, bores and locking arrangements.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
-
-    disambiguation:
-      "These are disc anvils carrying one to three OEM-matched grooves. If you need a wide ring carrying many slit positions on one body, see [Groove Bottom Knives](/products/groove-bottom-knives).",
-
-    compatibleMachines: [
-      "Tidland",
-      "Kampf",
-      "Atlas Converting",
-      "Goebel",
-      "BHS",
-      "Agnati",
-      "Dusenbery",
-      "Euromac",
-    ],
-
+    compatibleMachinesIntro:
+      "Get replacement bottom grooved anvil knives tailored to your slitting line, with custom groove profiles, bores and locking options. Send us your drawing or sample, and Sureay will help you select the right replacement and prepare a quotation.",
     specs: [
+      { label: "Sizes", value: "Grooved rings OD 46–250 mm" },
       {
         label: "Material",
-        value: "D2 / M2 HSS / ASP23 PM / Solid Carbide",
+        value:
+          "52100, D2, M2 HSS, PM HSS (including ASP23), solid carbide or carbide-tipped construction",
       },
+      { label: "Applications", value: "Film, paper, foil and nonwoven slitting" },
+      { label: "Razor sleeves", value: "Relieved groove to clear the razor edge" },
+      { label: "Groove width tolerance", value: "±0.01 mm" },
+      { label: "Face flatness", value: "≤0.003 mm" },
+      { label: "Bore tolerance", value: "H6 finish-ground bore" },
       {
-        label: "Groove Tolerance",
-        value: "Groove width ±0.01\u202fmm | Face flatness ≤0.003\u202fmm",
+        label: "Optional Coatings",
+        value: "TiN on the groove face, DLC or PTFE (Teflon)",
       },
+      { label: "Runout", value: "≤0.02 mm T.I.R." },
       {
-        label: "Bore Tolerance",
-        value: "H6 finish-ground | T.I.R. ≤0.02\u202fmm",
+        label: "Mounting",
+        value:
+          "Plain bore (NN), eccentric lock (NG), set-screw lock (NS), or split-ring / clamp mounting",
       },
       {
         label: "Shear Clearance",
-        value: "Pre-verified to substrate spec (0.02–0.15\u202fmm)",
-      },
-      {
-        label: "Coatings",
-        value: "TiN groove face, DLC, Teflon anti-adhesion (optional)",
-      },
-      {
-        label: "Applications",
-        value: "Film, Paper, Metal Foil, PSA Tape, Nonwovens",
+        value: "0.02–0.15 mm, according to the substrate and knife pair",
       },
     ],
-
+    detailLayout: {
+      seoTitle: "Bottom Grooved Anvil Knives | Replacement Rings",
+      sizeRange: "Grooved rings OD 46–250 mm",
+      heroAlt: "Grooved bottom anvil knives and detachable cutting rings",
+      specificationImage: {
+        src: "/images/products/slitter-detail/bottom-grooved-anvil-knives-detail.webp",
+        alt: "Two bottom rings showing the recessed running face and cutting shoulder",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "ring",
+          tabLabel: "Grooved Rings",
+          title: "Grooved Rings",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Profile or reference"],
+          rows: [
+            ["SR001451", "46 × 25 × 5 mm", "DIENES dimensional series"],
+            ["SR001452", "80 × 60 × 10 mm", "Grooved bottom ring"],
+            ["SR001453", "105 × 90 × 15 mm", "Grooved bottom ring"],
+            ["SR001454", "105 × 90 × 8 mm", "Kampf dimensional reference"],
+            ["SR001455", "105 × 90 × 17 mm", "Kampf dimensional reference"],
+          ],
+        },
+        {
+          id: "groove-profile-configurations",
+          tabLabel: "Groove Profile Configurations",
+          title: "Groove Profile Configurations",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Platform Reference",
+            "Groove Profile",
+          ],
+          rows: [
+            [
+              "SR001840",
+              "70 × 25.4 × 8 / 10 mm",
+              "Tidland — Single Groove",
+              "W: 1.2 × D: 2.0 / 60°",
+            ],
+            [
+              "SR001841",
+              "100 × 60 × 20 / 25 mm",
+              "Atlas — 3-Slot Anvil",
+              "W: 1.5 × D: 2.5 / 60°",
+            ],
+            [
+              "SR001842",
+              "80 × 30 × 10 mm",
+              "Mario Cotta — Single Groove",
+              "W: 1.3 × D: 2.2 / 45°",
+            ],
+            [
+              "SR001843",
+              "130 × 80 × 12 mm",
+              "Dienes — Single Groove",
+              "W: 1.5 × D: 3.0 / 60°",
+            ],
+            [
+              "SR001844",
+              "Per drawing",
+              "Custom Anvil / Hardfaced",
+              "OEM Spec; Exact CNC Machined Groove",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Grooved rings OD 46–250 mm" },
+        {
+          label: "Material",
+          value:
+            "52100, D2, M2 HSS, PM HSS (including ASP23), solid carbide or carbide-tipped construction",
+        },
+        { label: "Applications", value: "Film, paper, foil and nonwoven slitting" },
+        { label: "Razor sleeves", value: "Relieved groove to clear the razor edge" },
+        { label: "Groove width tolerance", value: "±0.01 mm" },
+        { label: "Face flatness", value: "≤0.003 mm" },
+        { label: "Bore tolerance", value: "H6 finish-ground bore" },
+        {
+          label: "Optional Coatings",
+          value: "TiN on the groove face, DLC or PTFE (Teflon)",
+        },
+        { label: "Runout", value: "≤0.02 mm T.I.R." },
+        {
+          label: "Mounting",
+          value:
+            "Plain bore (NN), eccentric lock (NG), set-screw lock (NS), or split-ring / clamp mounting",
+        },
+        {
+          label: "Shear Clearance",
+          value: "0.02–0.15 mm, according to the substrate and knife pair",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Mario Cotta",
+      "Tidland",
+      "Kampf",
+      "Goebel",
+      "Atlas",
+      "Nishimura",
+    ],
     components: [
       {
-        id: "groove-geometry-control",
-        tag: "PRECISION GRINDING",
-        title: "OEM-Profile Groove Geometry",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Steel and Carbide Anvil Configurations",
         description:
-          "The groove width and depth of each anvil knife is profile-ground to your OEM platform specification — Tidland single-groove, Kampf double-groove, or Goebel wide-body — and held to ±0.01 mm. Correct groove geometry restores factory-designed shear clearance and eliminates the progressive slit-edge deterioration caused by a worn anvil profile.",
+          "Grooved anvil knives are available in tool steel, HSS, PM HSS, solid carbide and carbide-tipped constructions for replacement and application-specific orders.",
       },
       {
-        id: "bore-face-flatness",
-        tag: "DIMENSIONAL ACCURACY",
-        title: "H6 Bore & Lapped Face Flatness",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Ground Grooves, Bores and Locating Faces",
         description:
-          "All anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism. A bore deviation of 0.02 mm on the lower arbor induces blade wobble that translates directly to slit-width variation across a multi-knife stack. Our bore and face tolerances are verified on a CMM for every batch.",
+          "Finish-ground replacement rings are made with the bore, groove profile and locating faces specified for your existing shaft and upper knife.",
       },
       {
-        id: "anti-adhesion-groove-coating",
-        tag: "SURFACE TREATMENT",
-        title: "Anti-Adhesion Groove Coatings",
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Groove Profiles and Locking Designs",
         description:
-          "For pressure-sensitive tape and adhesive laminate slitting, Teflon and DLC PVD coatings on the groove contact face reduce adhesive build-up intervals by 60–80%. Coated anvils run clean through 8–12 hour production shifts without groove contamination that degrades shear clearance and forces unplanned stops.",
+          "Plain-bore, eccentric-lock, screw-lock and split or clamp mounting designs are available with drawing-defined groove profiles and ring widths.",
       },
     ],
-
-    dimensionLabels: {
-      col0: "OEM Platform / Type",
-      col1: "OD × ID (mm)",
-      col2: "Thickness (mm)",
-      col3: "Groove (W × D / Angle)",
-      caption:
-        "* Standard OEM-matched anvil dimensions. Exact groove geometry ensures zero-wobble mating with top slitters. Anvils carrying more than three slots are supplied as bottom cutter rings — see groove bottom knives.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Tidland — Single Groove",
-        od: "70 × 25.4",
-        id: "8 / 10",
-        thickness: "W: 1.2 × D: 2.0 / 60°",
-      },
-      {
-        spec: "Atlas — 3-Slot Anvil",
-        od: "100 × 60",
-        id: "20 / 25",
-        thickness: "W: 1.5 × D: 2.5 / 60°",
-      },
-      {
-        spec: "Mario Cotta — Single Groove",
-        od: "80 × 30",
-        id: "10",
-        thickness: "W: 1.3 × D: 2.2 / 45°",
-      },
-      {
-        spec: "Dienes — Single Groove",
-        od: "130 × 80",
-        id: "12",
-        thickness: "W: 1.5 × D: 3.0 / 60°",
-      },
-      {
-        spec: "Custom Anvil / Hardfaced",
-        od: "Per Drawing",
-        id: "OEM Spec",
-        thickness: "Exact CNC Machined Groove",
-      },
-    ],
-
-    relatedBladeIds: [
-      "groove-bottom-knives",
-      "rotary-slitter-knives",
-      "rotary-slitter-knives-paper",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 200,
-    },
     faqs: {
       technical: [
         {
-          question:
-            "How often should I replace the bottom grooved anvil knife versus the top blade?",
+          question: "What defines a replacement grooved bottom anvil knife?",
           answer:
-            "Bottom anvil knives operate under compressive groove-face loading and typically last 3–5× longer than the top shear blade. However, because wear is gradual — the groove face rounds off slowly — the deterioration in slit quality is easy to miss until scrap rates climb. We recommend inspecting groove face geometry (groove width and depth) every 3 top-blade replacement cycles and replacing the anvil when groove width deviation exceeds ±0.03 mm from the OEM specification.",
+            "The working edge, groove profile, ring width, bore and locking arrangement define the replacement. Include groove depth and the axial position of the cutting edge relative to the mating upper knife. These features establish the working geometry beyond OD and ID. For several cutting positions on one body, see [Multi-Groove Bottom Knives](/products/groove-bottom-knives).",
+        },
+        {
+          question: "What do NN, NG and NS locking types mean?",
+          answer:
+            "In DIENES terminology, NN means a smooth bore, NG uses eccentric locking, and NS uses screw locking. NN rings are positioned with spacers and axially clamped; NG uses an eccentric ring, while NS uses a screw acting on the shaft. Specify the bore, ring width and working profile alongside the mounting type when ordering replacements.",
         },
         {
           question:
-            "What shear clearance should I set between the top blade and bottom anvil groove?",
+            "Why can paper slit quality remain poor after the top knife is replaced?",
           answer:
-            "Shear clearance is substrate-dependent. For flexible plastic films (BOPP, BOPET, CPP) at 0.02–0.05 mm per side is standard. For kraft paper and board, 0.05–0.10 mm. For aluminium and copper foils, 0.01–0.03 mm per side. We pre-verify matched top/bottom pairs to your specified clearance and record the setting on an engineering data sheet that ships with each order, allowing operators to replicate the clearance on every reinstallation.",
+            "Paper shear slitting depends on the complete knife pair and its setup. Check the lower working edge, the material pairing, holder condition, overlap, side pressure and cant angle. A new top knife still works against the retained lower knife, so comparing both working surfaces and their adjustment helps identify what remains unresolved in the cutting arrangement.",
         },
         {
           question:
-            "Can I order replacement anvil knives without buying a full matched pair?",
+            "Which material or coating suits an anvil knife used with adhesive webs?",
           answer:
-            "Yes. We supply bottom anvil knives as standalone replacements machined to the groove profile and OD/ID of your existing top-knife arbor system. Provide your OEM platform (Tidland, Kampf, Atlas, etc.) and the top knife OD/ID, and we will match the anvil to the mating geometry. If you supply a worn anvil as a sample, we can reverse-engineer the original groove profile before regrinding.",
+            "Separate adhesive pickup from cutting-edge wear. For glue accumulation on an otherwise sound edge, review contact geometry, surface finish and the adhesive system when considering the available TiN, DLC or PTFE options. For wear or chipping, assess the base material and mating knife first. Compare surface options under the same web and cutting conditions to judge whether they address the actual problem.",
         },
         {
           question:
-            "Why does my slit edge quality degrade even after I replace the top blade with a new one?",
+            "Can Sureay supply a custom anvil ring without replacing the top knife?",
           answer:
-            "If new top blades do not restore slit quality, the anvil groove is almost certainly worn beyond its specification. A rounded or widened groove face increases effective shear clearance regardless of top-blade condition, producing a ragged, feathered slit edge. Inspect the groove width and depth with a groove gauge or profilometer. If groove deviation exceeds ±0.03 mm from OEM spec, anvil replacement or regrinding is required.",
+            "Yes. A replacement ring can be made to the bore, ring width, groove profile, cutting-edge position and locking details required by the existing shaft. Include the retained upper knife's dimensions and working position. For sample-based orders, distinguish worn cutting surfaces from mounting surfaces so the new ring is defined around the upper knife you will keep.",
+        },
+        {
+          question:
+            "Can a razor support sleeve replace a shear-slitting anvil?",
+          answer:
+            "A razor support sleeve provides clearance for the razor edge, while a shear-slitting anvil provides a cooperating cutting edge. Their working profiles serve different cutting methods. Specify the mating blade, cutting method and required edge position when ordering; the presence of a groove alone does not identify the correct lower component.",
         },
       ],
-      company: [
-        {
-          question:
-            "Do you supply bottom anvil knives as part of a matched pair, or only individually?",
-          answer:
-            "Both options are available. For new installations or full arbor rebuilds, we recommend matched pairs — top blade and bottom anvil verified to a specified shear clearance, with a joint engineering data sheet. For replacement orders on existing lines, standalone anvil knives machined to your OEM groove profile are available with standard 5–7 day lead time.",
-        },
-        {
-          question:
-            "What OEM platforms does Sureay supply matched anvil knives for?",
-          answer:
-            "We currently stock and supply groove-profiled anvil knives for Tidland (single-groove and double-groove arbors), Kampf (narrow and wide arbor series), Atlas Converting Equipment, Goebel, BHS, Agnati, and Dusenbery. For other OEM platforms, provide the arbor drawing or worn sample and we will engineer a matched replacement.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM-profile anvil knives ship within 48–72 hours. Custom groove profiles take 7–12 working days. We partner with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "groove-bottom-knives",
+      "slitter-rewinder-bottom-knives",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -4156,402 +4674,187 @@ export const blades: Blade[] = [
   //      applications rather than competing with the application variants)
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Source replacement carbide slitter knives with custom bores, thicknesses and cutting profiles. Sureay offers solid carbide and carbide-ring constructions; share your drawing and application for a quotation on the configuration required by your machine.",
     id: "tungsten-carbide-slitter-knives",
     name: "Tungsten Carbide Slitter Knives",
-    fullName: "Tungsten Carbide Slitter Knives for High-Wear Slitting",
+    fullName: "Tungsten Carbide Slitter Knives – Solid & Tipped",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Tungsten Carbide Slitter Knives",
     image:
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-    gallery: [
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
-    ],
-    galleryAlts: [
-      "Tungsten carbide slitter knives, three ground circular blades with polished faces",
-      "Carbide slitter knife detail showing centre bore, mounting holes and ground cutting edge",
-    ],
-
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Solid carbide costs six to ten times what D2 does. It earns that premium back in exactly two situations: when your web carries abrasive filler, or when your run lengths are long enough that changeover downtime — not blade price — is what actually costs you money. Micro-grain YG6, YG6X, YG8 and YG10X (ISO K10–K30) at 89.5–92.5 HRA, ground to ±0.002 mm, with a hardness and dimensional report in every shipment.",
-
-    fullDescription:
-      "Tungsten carbide slitter knives are a wear-resistance decision, not a general upgrade. If you are slitting clear BOPP on short runs, D2 or ASP23 PM will serve you better and cost you less, and we will tell you that before you order. This page is for the jobs where tool steel genuinely cannot hold an edge: mineral-filled films, glass-reinforced laminates, abrasive nonwovens, coated foils and high-speed board.\n\n## When the Upgrade Pays\n\nCarbide is worth it when the cost of stopping the line exceeds the cost of the blade. Take your blade changes per month, multiply by the downtime cost per changeover, and compare that against the price difference. On a line where a changeover costs an hour of production, a 10× edge life usually pays back within one or two blade cycles. On a line where changeovers are quick and cheap, it will not.\n\n## Where Carbide Earns Its Cost\n\n**Mineral- and filler-loaded films:** TiO₂-loaded BOPP, calcium-carbonate filled PE, matte and cavitated grades. The filler is what destroys steel edges; hardness is the only defence.\n\n**Glass-reinforced and composite laminates:** FR-4 and prepreg trim, glass-fibre reinforced tapes, aluminium-composite webs. Glass content is deeply abrasive and dulls HSS within a shift.\n\n**Abrasive nonwovens:** mineral-loaded meltblown, spunbond with filler, abrasive-backing and wipe substrates where fibre fuzzing appears the moment the edge softens.\n\n**Metal foil, coated strip and battery electrode:** aluminium and copper foil, coated and laminated strip, where burr-free edges must hold across a full coil run.\n\n**High-speed coated board and paper:** clay- and pigment-coated stock on lines where a knife change costs an hour of production and the blade price is a rounding error against that.\n\n## Where Carbide Is the Wrong Choice\n\n**Shock and interrupted cuts.** Carbide is brittle. If the web snags, if splice tape runs through, or if the knife can contact the anvil metal-to-metal, carbide chips where D2 would deform and survive.\n\n**Clean, unfilled substrates on short runs.** Slitting clear BOPP, plain kraft or unfilled PE? D2 or ASP23 PM will hold an edge long enough, at a fraction of the cost.\n\n**No diamond grinding access.** If neither you nor your service partner can regrind on diamond wheels, a dulled carbide blade becomes scrap rather than a re-sharpenable asset — and the economics invert.\n\n**Loose or unverified clearance.** Carbide amplifies whatever your setup already does. It will not compensate for a worn arbor, an out-of-true knife holder, or clearance nobody has measured.",
-
+      "Solid and carbide-tipped replacement slitter knives for converting and metal processing. Custom sizes, bores and cutting profiles matched to the application.",
     link: "/products/tungsten-carbide-slitter-knives",
-
-    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
-
     specs: [
+      {
+        label: "Sizes",
+        value:
+          "Thin profiles: OD 20–300 mm × 0.3–5.0 mm; corrugator OD 220–340 mm; rotary OD 150.1–300.15 mm",
+      },
       {
         label: "Material",
-        value:
-          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+        value: "WC-Co carbide in YG6, YG6X, YG8, YG10X, YG12X and YG15 grades",
       },
-      { label: "Hardness", value: "89.5–92.5 HRA" },
-      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
-      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
-      { label: "Outer Diameter", value: "20–300 mm" },
-      { label: "Thickness", value: "0.3–5.0 mm" },
-      {
-        label: "Tolerance",
-        value:
-          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
-      },
-      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
-      {
-        label: "Edge Geometry",
-        value: "Single bevel, double bevel, hollow ground, razor",
-      },
-      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
       {
         label: "Applications",
-        value:
-          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+        value: "Corrugated board, film, electrode web and metal strip",
       },
-    ],
-
-    steelGrades: {
-      intro:
-        "Cobalt content is the trade-off dial: more cobalt means tougher and less brittle, but the edge dulls sooner. The four carbide grades below are shown against the tool steels they replace, so the upgrade decision is visible in one table. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
-      rows: [
-        {
-          grade: "D2",
-          hardness: "HRC 58–62",
-          bestFor: "General-purpose slitting of clean, unfilled substrates",
-          tradeoff:
-            "Baseline edge life and baseline cost. Regrinds on conventional wheels.",
-        },
-        {
-          grade: "M2 HSS",
-          hardness: "HRC 62–65",
-          bestFor: "Moderate wear at higher line speeds",
-          tradeoff: "2–3× the edge life of D2 at roughly 1.5× the cost.",
-        },
-        {
-          grade: "ASP23 PM",
-          hardness: "HRC 66–68",
-          bestFor: "High-speed, high-wear work short of true abrasives",
-          tradeoff:
-            "4–6× the edge life of D2 at roughly 3× the cost — frequently the better commercial choice.",
-        },
-        {
-          grade: "YG6 (ISO K10)",
-          hardness: "89.5–91.5 HRA",
-          bestFor: "Steady, low-shock slitting of abrasive film and paper",
-          tradeoff:
-            "6% cobalt. The hardest of the four carbide grades and the least forgiving of shock.",
-        },
-        {
-          grade: "YG6X (ISO K10UF)",
-          hardness: "91–92.5 HRA",
-          bestFor: "Thin gauge, tight tolerance, best achievable edge quality",
-          tradeoff:
-            "6% cobalt, ultra-fine grain. Sharpest edge, most sensitive to interrupted cuts.",
-        },
-        {
-          grade: "YG8 (ISO K20)",
-          hardness: "88.5–90.5 HRA",
-          bestFor: "Nonwovens, foil, anywhere the web may snag",
-          tradeoff:
-            "8% cobalt. Tougher and shock tolerant, at the cost of some edge life.",
-        },
-        {
-          grade: "YG10X (ISO K30)",
-          hardness: "90.5–91.5 HRA",
-          bestFor: "Interrupted cuts, laminates and heavier stock",
-          tradeoff:
-            "10% cobalt, ultra-fine grain. Best toughness-to-wear balance of the range.",
-        },
-      ],
-      outro:
-        "Across the range, carbide delivers roughly 10–30× the edge life of D2 at 6–10× the cost, takes fewer regrind cycles, and can only be reground on diamond wheels. How to run the arithmetic: carbide is worth it when the cost of stopping the line exceeds the cost of the blade. Tell us the material and the failure you are seeing now, and we will pick the grade.",
-    },
-
-    componentsIntro:
-      "Send a worn blade and your machine model — we will reverse-engineer the clearance and quote within 2 hours.",
-
-    components: [
+      { label: "Hardness", value: "89.5–92.5 HRA, depending on carbide grade" },
+      { label: "Fine-grain options", value: "0.4–0.8 μm carbide grain size" },
       {
-        id: "carbide-when-it-pays",
-        tag: "APPLICATION FIT",
-        title: "Where Carbide Earns Its Cost",
-        description:
-          "Abrasive fill is what destroys steel edges, and hardness is the only defence. TiO₂-loaded BOPP, calcium-carbonate filled PE, FR-4 and prepreg trim, glass-fibre reinforced tape, mineral-loaded meltblown, coated aluminium and copper foil, and clay-coated board all wear a tool steel edge faster than the run length allows. The same grade logic applies whatever the substrate — this is a material decision, not an application one.",
+        label: "Construction",
+        value: "Solid carbide disc or steel body with a carbide cutting ring",
       },
       {
-        id: "carbide-when-not-to",
-        tag: "HONEST LIMITS",
-        title: "Where Carbide Is the Wrong Choice",
-        description:
-          "Carbide is a wear-resistance solution, not a general upgrade. It chips where D2 would deform — on splices, snags and interrupted cuts, or where the knife can touch the anvil metal-to-metal. On clean unfilled substrates and short runs, D2 or ASP23 PM holds an edge long enough at a fraction of the price. And without diamond-wheel regrinding access, a dulled carbide blade is scrap rather than an asset. If any of that describes your line, say so when you enquire — we would rather quote the right steel.",
+        label: "Precision options",
+        value: "Thickness ±0.002 mm; face parallelism ≤0.005 mm; T.I.R. ≤0.01 mm",
+      },
+      { label: "Edge finish", value: "Ra 0.2–0.4 μm" },
+      {
+        label: "Edge Geometry",
+        value: "Single bevel, double bevel, hollow-ground or razor profile",
       },
       {
-        id: "carbide-grade-selection",
-        tag: "METALLURGY",
-        title: "Micro-Grain Substrate, Chosen Per Job",
-        description:
-          "We select from four grades against your material and your current failure mode rather than shipping one grade for everything. Sub-micron grades hold a keener edge; higher-cobalt grades survive shock. Carbide can only be finished on diamond wheels, and edge geometry, parallelism and runout are held to the same inspection standard as our tool steel grinding — every blade measured before dispatch, with a hardness test report and dimensional record in the box.",
+        label: "Optional Coatings",
+        value: "DLC, TiN or TiAlN; uncoated knives also available",
       },
+      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
     ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "nonwoven-slitter-knives",
-      "metal-coil-slitting-knives",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 600,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle: "Tungsten Carbide Slitter Knives | Custom Sizes",
+      sizeRange: "OD 20–340 mm",
+      heroAlt: "Three solid tungsten carbide circular slitter knives",
+      specificationImage: {
+        src: "/images/products/slitter-detail/tungsten-carbide-slitter-knives-detail.webp",
+        alt: "Rewinder bottom knife rings showing the body and cutting perimeter",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [corrugatedThinBladeTable, carbideCoilKnifeTable],
+      technicalSpecs: [
         {
-          question: "When should I choose solid carbide over M2 HSS or D2?",
-          answer:
-            "Only when your web carries abrasive filler, or when your run lengths are long enough that regrind and changeover savings cover the 6–10× price difference. For standard clear film, plain paper or unfilled PE, D2 or ASP23 PM is usually the better commercial choice — and we will say so.",
+          label: "Sizes",
+          value:
+            "Thin profiles: OD 20–300 mm × 0.3–5.0 mm; corrugator OD 220–340 mm; rotary OD 150.1–300.15 mm",
         },
         {
-          question: "How many times can a carbide slitter knife be reground?",
-          answer:
-            "It depends on the thickness allowance designed into the blade, not on the material. Each regrind removes stock; the practical limit is where the blade thins past its clearance tolerance. Carbide typically takes fewer regrinds than D2 but delivers far more running time between each one, which is where the economics actually sit. Diamond wheels are required — conventional aluminium-oxide wheels will glaze and will not cut carbide.",
+          label: "Material",
+          value: "WC-Co carbide in YG6, YG6X, YG8, YG10X, YG12X and YG15 grades",
         },
         {
-          question:
-            "My carbide blade chipped on the first run — what went wrong?",
-          answer:
-            "Almost always one of three things. Handling: a carbide blade dropped on a concrete floor develops internal stress and cracks that stay invisible until load is applied. Clearance: set too tight, the knife makes metal-to-metal contact with the anvil and micro-chips along the edge. Or the application has shock in it — a splice, a snag, an interrupted cut — that carbide's brittleness cannot absorb. Send us a photo of the chipped edge; the fracture pattern usually identifies which of the three it was.",
+          label: "Applications",
+          value: "Corrugated board, film, electrode web and metal strip",
+        },
+        { label: "Hardness", value: "89.5–92.5 HRA, depending on carbide grade" },
+        { label: "Fine-grain options", value: "0.4–0.8 μm carbide grain size" },
+        {
+          label: "Construction",
+          value: "Solid carbide disc or steel body with a carbide cutting ring",
         },
         {
-          question: "YG6 or YG8 — which grade should I specify?",
-          answer:
-            "YG6 (ISO K10) is harder and lasts longer on steady, clean, abrasive work. YG8 (ISO K20) carries more cobalt, so it is tougher and tolerates shock at the cost of some edge life. If your current steel blades are dulling, go harder. If they are chipping, go tougher. If both, the problem is usually clearance rather than material.",
+          label: "Precision options",
+          value: "Thickness ±0.002 mm; face parallelism ≤0.005 mm; T.I.R. ≤0.01 mm",
+        },
+        { label: "Edge finish", value: "Ra 0.2–0.4 μm" },
+        {
+          label: "Edge Geometry",
+          value: "Single bevel, double bevel, hollow-ground or razor profile",
         },
         {
-          question: "Can a carbide top knife run against a steel bottom anvil?",
-          answer:
-            "Yes, and it is common — but the anvil then becomes the wear part and will need attention sooner than before. If the anvil is softer, verify clearance more often, since anvil wear opens the gap and the first symptom is a ragged edge that looks like a knife problem. Matched carbide pairs are available where anvil wear is the limiting factor.",
+          label: "Optional Coatings",
+          value: "DLC, TiN or TiAlN; uncoated knives also available",
         },
-        {
-          question: "How should carbide blades be stored and handled?",
-          answer:
-            "Individually separated, never stacked bare metal-to-metal, in a dry environment. Most carbide failures we investigate started in the stockroom or in transit, not on the machine. Blades ship in protective packaging that is worth keeping for the ones you are not running.",
-        },
-      ],
-      company: [
-        {
-          question: "Are you a manufacturer or a trading company?",
-          answer:
-            "We manufacture. Grinding, heat treatment control and inspection are done in our own ISO 9001:2015 certified facility, in operation since 2008 and shipping to 50+ countries. That is why we can quote against a worn sample and stand behind the dimensional record that ships with it.",
-        },
-        {
-          question: "Can you make carbide blades without an OEM drawing?",
-          answer:
-            "Yes — send a worn blade and your machine model. We measure the sample, reverse-engineer the working clearance from the wear pattern, and produce a matched replacement; the wear pattern usually tells us more about how the knife is actually running than the original drawing does. Bore, keyway, mounting-hole pattern and thickness are matched to the arbors you already run, so there is no holder change and no retooling.",
-        },
-        {
-          question: "What documentation ships with a carbide order?",
-          answer:
-            "A hardness test report and a dimensional inspection record with every shipment, from an ISO 9001:2015 certified facility. If your incoming inspection needs full CMM data, ask when you order and it ships with the blades. Where several knives share a shaft, they are ground and shipped as a verified matched set so stack-up error does not accumulate across positions.",
-        },
-        {
-          question:
-            "Can we trial a small carbide set before committing to a full order?",
-          answer:
-            "Yes. We supply trial sets — typically 2–5 blades — for machine fit verification and edge life testing against your current steel blades. We would rather you prove the payback on your own line than take our word for the multiplier. For custom profiles, a dimensional sign-off sample is produced before full production starts.",
-        },
-        {
-          question: "What is the lead time on carbide slitter knives?",
-          answer:
-            "Standard profiles in stocked grades ship in 7–12 working days; custom geometry and non-standard diameters take 15–20. Carbide runs longer than tool steel because sintered blanks and diamond-wheel finishing cannot be rushed without costing you edge quality. Blades ship individually separated in protective packaging — most carbide damage we investigate happened in transit or storage, not on the machine.",
-        },
+        { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
       ],
     },
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // 14. Metal Cold Circular Saw Blades
-  // ─────────────────────────────────────────────────────────────────────────
-  {
-    id: "metal-cold-saw-blades",
-    name: "Metal Cold Saw Blades",
-    fullName:
-      "HSS & TCT Cold Circular Saw Blades for Metal Tube and Profile Cutting",
-    category: "cold_saw_blades",
-    sector: "metal",
-    categoryDisplay: "Metal Processing Blades",
-    image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Burr-Free Cut",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-01.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
-    ],
-    description:
-      "Premium HSS (M2 / M35 Cobalt) and TCT cold saw blades for cutting steel tubes, solid bars, aluminum profiles, and stainless steel. The cold cutting process produces a precise, burr-free end with no heat-affected zone (HAZ)—ready for immediate welding or threading.",
-
-    fullDescription:
-      "Cold circular sawing is the preferred metal cutting process for tube mills, structural fabrication, and precision bar stock applications. Unlike abrasive cut-off wheels or bandsaws, a cold circular saw blade cuts by metal-removal (chip formation) rather than high-friction abrasion. This keeps the material cool, producing a smooth, perfectly square end-face with zero thermal distortion and no secondary deburring required.\n\nSureay cold saw blades are manufactured from M2 (Standard HSS), M35 (5% Cobalt HSS), and TCT (Tungsten Carbide Tipped) configurations. All blades are manufactured to strict DIN 1837/1840 standards and are available in standard diameters from 200 mm to 450 mm with tooth configurations and PVD coatings matched to the workpiece material.\n\n## Material & Grade Selection Guide\n\n**M2 HSS (Standard / Steam Treated):** The baseline grade for cold sawing mild steel pipes, structural tubing, and angle sections up to 400 MPa tensile strength. Provides excellent toughness for interrupted cuts on hollow sections. Typically supplied with a black oxide (steam treated) finish to retain coolant and prevent micro-welding.\n\n**M35 Cobalt HSS (Recommended for Stainless):** The addition of 5% cobalt dramatically elevates the blade’s red-hardness (hot hardness) and wear resistance. This is essential when cutting 304/316 austenitic stainless steel, which work-hardens rapidly under the blade. M35 maintains sharp edge geometry through the elevated cutting temperatures generated by stainless steel.\n\n**TCT (Tungsten Carbide Tipped):** Brazed carbide inserts on a high-alloy steel body. Best for high-volume tube mill applications and non-ferrous metals (aluminum extrusions, copper pipes) running at elevated cutting speeds. Delivers 5–8× longer service life vs HSS on aluminum profiles.\n\n## Advanced PVD Coatings\nTo significantly extend blade life and reduce cutting friction, we offer advanced PVD coatings:\n- **TiN (Titanium Nitride — Gold):** Lowers the friction coefficient, ideal for cutting standard steel tubes at higher speeds.\n- **TiAlN (Titanium Aluminum Nitride — Violet/Black):** Forms a hard aluminum oxide layer during cutting, protecting the teeth from extreme heat. The ultimate choice for cutting stainless steel, cast iron, and high-tensile alloys.",
-
-    link: "/products/metal-cold-saw-blades",
-    isFeatured: false,
     compatibleMachines: [
-      "Kaltenbach",
-      "Bewo",
-      "MEP",
-      "Kasto",
-      "Macc",
-      "Pedrazzoli",
-      "Ficep",
+      "BHS",
+      "Fosber",
+      "Dusenbery",
+      "DIENES",
+      "Tidland",
+      "Nishimura",
+      "Fagor Arrasate",
     ],
-
-    specs: [
-      {
-        label: "Grade Options",
-        value: "M2 HSS (DMo5) · M35 Cobalt (Co5) · TCT Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 63–65 (M2) | HRC 64–66 (M35) | Carbide Tipped",
-      },
-      {
-        label: "Surface Finish",
-        value: "Steam Treated (Black) / TiN / TiAlN PVD Coatings",
-      },
-      {
-        label: "Tooth Form",
-        value: "BW, HZ (Standard) | Fine / Medium / Coarse Pitch",
-      },
-      {
-        label: "Application",
-        value: "Steel Pipes, Stainless Tubes, Aluminum Profiles, Solid Bars",
-      },
-    ],
-
     components: [
       {
-        id: "cold-cut-quality",
-        tag: "PROCESS ADVANTAGE",
-        title: "Cold Cut vs. Abrasive Wheels",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Solid and Carbide-Tipped Knife Configurations",
         description:
-          "Abrasive wheels generate temperatures above 800°C, producing a heat-affected zone (HAZ) and heavy slag that must be ground off. Cold circular sawing operates at low RPM with coolant, keeping the cut face below 200°C. The result is a clean, weld-ready surface right off the machine.",
+          "Choose solid carbide discs or steel bodies with carbide cutting rings to match the construction required by your existing slitter and replacement order.",
       },
       {
-        id: "grade-cobalt",
-        tag: "METALLURGY",
-        title: "M35 Cobalt for Stainless",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Ground Edge Forms with Optional Coatings",
         description:
-          "Stainless steel (304/316) work-hardens under cutting pressure, instantly dulling standard M2 blades. Our M35 grade contains 5% Cobalt, granting it extreme ‘red hardness’ to slice through austenitic stainless steel without losing edge geometry.",
+          "Single-bevel, double-bevel, hollow-ground and razor profiles can be specified with uncoated surfaces or selected DLC, TiN and TiAlN coatings, giving you control over the blade form and finish you order.",
       },
       {
-        id: "pvd-coatings",
-        tag: "SURFACE TECH",
-        title: "TiN & TiAlN Coatings",
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Carbide Knives for Existing Slitters",
         description:
-          "While standard steam-treated blades are great for mild steel, upgrading to TiN (Titanium Nitride) or TiAlN PVD coatings drastically reduces friction and heat. This allows for faster feed rates and prevents material from cold-welding to the saw teeth.",
+          "Custom bores, axial sections and cutting profiles are available to your knife drawing or machine-specific part reference, so replacement orders can follow the geometry of the installed cutting station.",
+        relatedBladeIds: [
+          "corrugated-slitter-scorer-blades",
+          "metal-coil-slitting-knives",
+        ],
       },
     ],
-
-    dimensionLabels: {
-      col0: "Blade Grade & Finish",
-      col1: "Outer Diameter (mm)",
-      col2: "Bore (mm)",
-      col3: "Thickness (mm)",
-      col4: "Teeth (Z)",
-      caption:
-        "* Standard dimensions for Kaltenbach, Bewo, and MEP machines. Tooth count (Z) is selected based on your pipe wall thickness. Custom drive pin holes machined to order.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "250",
-        id: "32 / 40",
-        length: "2.0",
-        teeth: "120 z / 160 z",
-      },
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "275",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "140 z / 180 z",
-      },
-      {
-        spec: "M35 Cobalt (TiN Coated)",
-        od: "315",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "160 z / 200 z",
-      },
-      {
-        spec: "M35 Cobalt (TiAlN Coated)",
-        od: "350",
-        id: "40 / 50",
-        length: "2.5",
-        teeth: "160 z / 220 z",
-      },
-      {
-        spec: "M2 / M35 HSS",
-        od: "400",
-        id: "40 / 50",
-        length: "3.0",
-        teeth: "180 z / 240 z",
-      },
-      {
-        spec: "TCT (Aluminum Profile)",
-        od: "450",
-        id: "30 / 32",
-        length: "3.5",
-        teeth: "120 z",
-      },
-    ],
-
-    relatedBladeIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 420,
-    },
     faqs: {
       technical: [
         {
-          question: "How do I choose between M2 and M35 Cobalt HSS grades?",
+          question:
+            "What is the difference between solid carbide and carbide-tipped knives?",
           answer:
-            "For standard structural steel, mild steel pipes, and box sections, M2 HSS provides excellent toughness and value. If you are cutting stainless steel (304, 316), high-tensile steel, or using high-speed automatic saws, you must upgrade to M35. M35 contains 5% Cobalt, which prevents the teeth from softening under high friction heat.",
+            "A solid carbide knife uses carbide through the knife body. A carbide-tipped knife combines a steel body with a carbide working edge or cutting ring. Specify the construction as well as the mounting geometry. Carbide rotary knives and carbide slitter blades are overlapping purchasing names; neither name identifies the construction or cutting station by itself.",
         },
         {
           question:
-            "How many teeth (TPI / Pitch) do I need for my steel pipes?",
+            "When should I choose carbide instead of HSS or tool steel slitter knives?",
           answer:
-            "The golden rule of cold sawing is to always have 3 to 4 teeth simultaneously engaged in the material thickness. If you are cutting thin-walled tubes (e.g., 1.5 mm wall), you need a fine pitch (high tooth count, e.g., 220Z or 240Z) to prevent the teeth from hooking and snapping. If you are cutting thick solid bars (e.g., 40 mm solid), you need a coarse pitch (low tooth count, e.g., 120Z) to allow room for the massive metal chips to escape.",
-        },
-        {
-          question: "Can HSS cold saw blades be resharpened?",
-          answer:
-            "Yes. This is the biggest advantage of HSS cold saw blades. Unlike abrasive discs that are thrown away, an HSS blade can be CNC-resharpened 10 to 15 times before the diameter becomes too small to use. We offer professional regrinding and recoating services to restore factory-new performance.",
-        },
-        {
-          question: "Should I use coolant when cutting with HSS cold saws?",
-          answer:
-            "Absolutely. You must use a flood coolant (water-soluble synthetic or semi-synthetic oil, mixed at about 8–10%) directed right at the cutting teeth. Coolant flushes away the metal chips and keeps the blade cool. Cutting dry with an HSS blade will burn the teeth instantly. Only specialized TCT blades on high-end machines are designed for dry cutting.",
-        },
-      ],
-      company: [
-        {
-          question: "Will these blades fit my specific cold saw machine?",
-          answer:
-            "Our blades feature standard bore sizes (e.g., 32 mm, 40 mm, 50 mm) and universal drive pin hole patterns that fit 95% of the market, including Kaltenbach, Bewo, MEP, Macc, Pedrazzoli, and Kasto. If your machine has a non-standard drive pin layout, we can CNC-machine the exact mounting holes before shipping.",
+            "Consider carbide in relation to the wear pattern you need to address. A knife that wears gradually presents a different selection problem from one that chips. Compare the current material, edge geometry and working conditions, including support and machine setup. Hardness alone does not establish longer service life, and a harder edge cannot correct poor support or incorrect setup.",
         },
         {
           question:
-            "What is the lead time for M35 Cobalt or TiAlN coated blades?",
+            "Are YG6, YG8 and similarly named carbide grades interchangeable?",
           answer:
-            "Standard M2 (Steam Treated) blades in common sizes are often in stock and ship within 3–5 days. Premium M35 Cobalt blades and customized PVD coatings (TiN, TiAlN) typically require 10–15 working days.",
+            "Similar grade names do not establish equivalence between suppliers or grading systems. Carbide grain structure, binder content and the intended application also define the material. Provide the specified material requirements and the performance of the current knife when requesting a replacement, so the proposed grade can be assessed beyond its name or nominal hardness.",
+        },
+        {
+          question:
+            "Why does a carbide slitter knife chip before it wears out?",
+          answer:
+            "Impact, excessive edge loading or grinding damage can break a carbide edge before gradual wear becomes the main issue. Inspect the damage location, knife engagement, support and recent sharpening history. Carbide's wear resistance does not remove its sensitivity to shock. Establish whether the problem follows handling, setup or grinding before changing the grade or cutting-edge geometry.",
+        },
+        {
+          question: "Should carbide slitter knives be coated or left uncoated?",
+          answer:
+            "Both uncoated knives and selected DLC, TiN or TiAlN options are available. Choose with reference to the carbide substrate, processed material and observed wear. Specify the coating separately from the required bore, thickness and cutting profile, so the replacement retains the necessary mounting geometry while the surface option is considered for the actual application.",
+        },
+        {
+          question:
+            "Can custom carbide knives be made for an existing slitter?",
+          answer:
+            "Yes. Sureay can make solid or carbide-tipped knives to a machine-specific drawing or part reference. Define the bore, axial section, cutting profile, mounting and mating component. Include the processed material, such as [metal foil](/products/metal-foil-strip-slitter-knives) or [coated electrode](/products/lithium-battery-slitting-knives), so the material and construction are considered with the complete replacement geometry.",
+        },
+        {
+          question: "Can carbide slitter knives be reground?",
+          answer:
+            "Yes, where sufficient material remains to restore the specified edge profile and working dimensions. Assess the disc on a solid carbide knife; on a tipped design, also check the remaining carbide ring and its attachment to the body. Specialist carbide grinding and dimensional checks are needed. Extensive damage or insufficient remaining material may make replacement the appropriate option.",
         },
       ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -4560,23 +4863,21 @@ export const blades: Blade[] = [
   {
     id: "scrap-chopper-blades",
     name: "Scrap Chopper Blades",
-    fullName:
-      "Heavy-Duty Scrap Chopper Blades for Metal Slitting & Coil Processing Lines",
+    fullName: "Scrap Chopper Blades for Coil Slitting Lines",
+    seoTitle: "Scrap Chopper Blades | Custom Coil-Line Knives",
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Scrap Chopper Blades",
-    image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
+    image: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
     badge: "Extreme Impact",
     badgeColor: "orange",
     gallery: [
-      "/images/products/granulator-blades/scrap-chopper-blades.webp",
+      "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
-      "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
+      "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
     ],
     description:
-      "Specifically engineered to survive the chaotic, extreme-impact environments of processing line edge-trim chopping. Forged from S7 shock-resisting tool steel or featuring specialized carbide-inlaid geometries, these blades cleanly fracture and reduce irregular steel strips, aluminum strip trim, and copper foil edge scrap without suffering catastrophic blade failure or chipping.",
-    fullDescription:
-      "Located at the terminus of metal slitting and conversion lines, scrap choppers are tasked with destroying the irregular, edge-trim waste generated during processing. The operating environment involves severe, unpredictable impact loads capable of shattering standard blades. Consequently, scrap chopper blades are forged from high-impact, shock-resistant alloys such as S7 tool steel, or employ heavily supported carbide-inlaid designs to cleanly fracture steel, aluminum, and copper waste without failing.\n\n## Operating Environment & Challenges\n\nScrap choppers operate under conditions fundamentally different from precision slitting or shearing:\n\n**Unpredictable Material Geometry:** Edge trim from slitting lines arrives at the chopper in irregular, curled, and twisted configurations. Unlike straight sheet shearing, the blade must engage the scrap at random angles, creating variable impact loads that can exceed 3–5× the nominal rated force.\n\n**Metal Inclusions & Contamination:** The scrap stream frequently contains metal fasteners, weld spatter, and mill scale that create localized stress concentrations. Standard high-hardness blades (D2 at HRC 60–62) are brittle and catastrophically fracture when impacted by such inclusions.\n\n**High Cycle Frequency:** Scrap choppers operate at 40–120 chops per minute depending on line speed. Each chop imparts a shock load, and the blade must resist fatigue crack propagation over millions of cycles.\n\n## Metallurgical Solutions\n\n**S7 Shock-Resisting Tool Steel:** S7 is a chromium-molybdenum-tungsten tool steel specifically developed for impact tooling applications. Unlike D2 (which achieves wear resistance through 12% chromium carbide precipitates), S7 utilizes a lower carbon content (0.50% C vs. 1.55% C in D2) and a balanced alloy system that produces a tough, resilient matrix. Heat-treated to HRC 54–58, S7 delivers twice the impact toughness of D2, virtually eliminating catastrophic blade fracture.\n\n**H13 Hot-Work Tool Steel:** H13 (5% chromium, 1.5% molybdenum, 1% vanadium) is the workhorse grade for aluminum and copper scrap chopping. Its austenitic structure at operating temperature provides excellent shock absorption, and the low carbide volume fraction prevents brittle fracture on metal inclusion impacts. Best suited for non-ferrous scrap streams.\n\n**Carbide-Inlaid Edges:** For steel service centers processing high-tensile and stainless steel trim, tungsten carbide edge inserts are mechanically supported in an S7 or H13 body. The carbide provides localized wear resistance at the cutting edge, while the tool steel body absorbs the gross impact energy. This hybrid construction delivers 3–5× longer service life than solid S7 in heavily contaminated scrap streams.",
+      "Custom replacement scrap chopper blades for coil-line edge trim. S7, H13 or carbide-inlaid knives with straight, raked or profiled cutting arrangements.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4587,117 +4888,177 @@ export const blades: Blade[] = [
       "Kohler Maschinenbau",
       "Fagor Arrasate",
     ],
-
+    compatibleMachinesIntro:
+      "Get replacement scrap chopper knives for your coil slitting line, with S7, H13 or carbide-inlaid cutting edges and custom profiles. Send your existing knife drawing or sample, and Sureay will prepare a quotation for your chopper. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "scrap-chopper-profile",
+        tag: "Cutting geometry",
+        title: "Tool Steel and Carbide-Inlaid Options",
+        description:
+          "Sureay offers S7, H13 and carbide-inlaid S7 configurations for steel, aluminium or copper edge trim. The listed hardness for steel knife versions is 54–58 HRC.",
+      },
+      {
+        id: "scrap-chopper-mounting",
+        tag: "Installation",
+        title: "Straight, Raked and Profiled Cutting Arrangements",
+        description:
+          "Sureay supplies replacement knives for straight or raked arrangements, including radius and spiral-ground profiles to drawing, so orders can reproduce the working geometry of the installed chopper.",
+      },
+      {
+        id: "scrap-chopper-feed",
+        tag: "Coil-line conditions",
+        title: "Custom Knife Blocks with Indexable Options",
+        description:
+          "Square and rectangular bodies are available with machine-specific mounting details. Four-edge versions can be ordered where the original knife configuration supports indexing, alongside individual replacement pieces.",
+      },
+    ],
     specs: [
+      { label: "Sizes", value: "100–400 mm" },
       {
         label: "Material",
+        value: "S7 tool steel, H13 tool steel or carbide-inlaid S7",
+      },
+      { label: "Hardness", value: "Steel knife versions: 54–58 HRC" },
+      {
+        label: "Blade bodies",
+        value: "Square or rectangular profiles; four-edge versions available",
+      },
+      {
+        label: "Chopper configurations",
         value:
-          "S7 Shock-Resisting Tool Steel | H13 Hot-Work Steel | Carbide-Inlaid S7",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–58 (optimized for maximum impact toughness)",
-      },
-      {
-        label: "Edge Configuration",
-        value: "Square/Rectangular Profile (4-edge usable)",
-      },
-      {
-        label: "Impact Resistance",
-        value: "2× toughness vs. D2 — prevents catastrophic fracture",
+          "Straight or raked knife arrangements; radius and spiral-ground profiles to drawing",
       },
       {
         label: "Application",
         value:
-          "Steel, aluminum, copper edge-trim scrap from slitting & coil processing lines",
+          "Steel, aluminium and copper edge-trim scrap from coil slitting lines",
       },
       {
         label: "Cycle Life",
-        value: "50,000–200,000 chops (material & contamination dependent)",
+        value: "50,000–200,000 chops, dependent on the material and contamination",
       },
     ],
-
-    components: [
-      {
-        id: "s7-metallurgy",
-        tag: "MATERIAL SCIENCE",
-        title: "S7 Shock-Resisting Alloy Structure",
-        description:
-          "S7 tool steel achieves its superior toughness through a carefully balanced alloy system: 0.50% carbon (vs. 1.55% in D2) minimizes brittle carbide formation, while chromium (3.25%), molybdenum (1.40%), and tungsten (1.80%) additions provide hardenability and temper resistance. Heat treated to HRC 54–58 rather than the HRC 60–62 typical of D2, S7 sacrifices some abrasion resistance in exchange for double the Charpy impact energy. This is the critical trade-off for scrap chopper applications: the blade must absorb unpredictable shock loads without shattering.",
-      },
-      {
-        id: "4-edge-design",
-        tag: "DESIGN EFFICIENCY",
-        title: "Four-Edge Reversible Configuration",
-        description:
-          "Scrap chopper blades are manufactured as rectangular blocks with four usable cutting edges. When the active edge exhibits visible wear (typically indicated by increased chopping noise or incomplete scrap fracture), the operator indexes the blade 90° to present a fresh edge. This design quadruples the effective service life compared to single-edge blades and reduces non-productive downtime. The blade body geometry is precision-ground to ensure all four edges are parallel within ±0.05mm, preventing uneven loading that would cause premature wear on indexed edges.",
-      },
-      {
-        id: "carbide-inlay",
-        tag: "ADVANCED OPTION",
-        title: "Carbide-Inlaid Hybrid Construction",
-        description:
-          "For steel service centers processing high-carbon or stainless steel trim with heavy mill scale contamination, we offer carbide-inlaid scrap chopper blades. A tungsten carbide insert (typically 6–10mm wide, full blade thickness) is mechanically locked into a precision-ground slot in the S7 body using a shrink-fit or brazed joint. The carbide provides localized wear resistance where the blade contacts the scrap, while the S7 body absorbs the gross impact energy. This construction is the optimal solution for contaminated scrap streams where solid carbide would fracture and solid S7 wears too rapidly.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Typical Machine / Duty",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Standard dimensions for common scrap chopper models. Custom sizes available. All blades are 4-edge reversible. Carbide-inlaid option available for all dimensions (+30–40% unit price premium).",
-    },
-
-    standardDimensions: [
-      { spec: "Light Gauge Trim", od: "100", id: "40", thickness: "15" },
-      { spec: "Standard Capacity", od: "150", id: "50", thickness: "20" },
-      { spec: "Butech / Medium Duty", od: "200", id: "60", thickness: "25" },
-      { spec: "Heavy Duty Coil Line", od: "250", id: "80", thickness: "25" },
-      { spec: "Extra Heavy", od: "300", id: "80", thickness: "30" },
-      { spec: "Extreme Plate Chopper", od: "400", id: "100", thickness: "30" },
-    ],
-
-    relatedBladeIds: ["metal-shear-knives", "metal-coil-slitting-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 280,
-    },
+    relatedBladeIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
+    offers: { lowPrice: 35, highPrice: 280 },
     faqs: {
       technical: [
         {
-          question:
-            "Should I use S7 or H13 for chopping stainless steel edge trim?",
+          question: "Are scrap chopper blades and edge-trim chopper knives the same product?",
           answer:
-            "For stainless steel trim (304, 316, or duplex grades), specify S7 at HRC 54–58. Stainless generates higher cutting forces than mild steel due to work hardening, and S7's balanced alloy system provides better edge retention than H13 in this application. H13 is optimized for aluminum and copper scrap where the lower cutting forces allow the softer H13 matrix to absorb impact without excessive edge deformation. For heavily contaminated stainless scrap with weld spatter or fasteners, upgrade to carbide-inlaid S7.",
+            "Yes. On a coil line, both names refer to knives that chop discarded edge trim into short pieces. The chopper assembly determines their working profile and mounting. The circular knives that slit the production coil are [Steel Coil Slitting Knives](/products/metal-coil-slitting-knives).",
         },
         {
-          question:
-            "How do I know when to index the blade to the next cutting edge?",
+          question: "How do strip thickness and trim width affect the knife specification?",
           answer:
-            "The primary indicator is increased chopping noise or vibration, which signals that the active edge has developed a wear flat and is no longer cleanly fracturing the scrap. Visually, inspect the active edge every 8–12 hours of operation. When the wear flat (the dulled, polished zone on the cutting corner) exceeds 1.0–1.5mm width, it is time to index to the next edge. Indexing before the wear flat contacts the blade body prevents accelerated wear on the holder and frame.",
+            "Strip grade, thickness and trim width describe the material entering the chopper and help define the cutting duty. The chopper assembly establishes the knife body's dimensions and mounting. Review both sets of information when comparing material or edge options, particularly if the line processes a different trim specification from before.",
         },
         {
-          question: "Can scrap chopper blades be resharpened or reground?",
+          question: "Why can scrap chopper knife edges chip?",
           answer:
-            "Scrap chopper blades are a wear consumable and are not typically reground. The 4-edge reversible design already provides extended service life, and regrinding would require re-heat-treatment and precision grinding to restore the edge geometry and hardness. The cost of regrinding approaches 60–70% of new blade cost, making replacement more economical. However, for very large custom blades (above 500mm length), regrinding may be cost-effective — contact us with your blade dimensions.",
+            "Mechanical overload, unsuitable cutting clearance and doubled edge trim can contribute to chipping. Excessive time between regrinds and an unsuitable material or hardness may also be involved. Examine the feed, cutting setup and damage pattern together. The chopper manufacturer's procedure provides the clearance requirements for the material being processed.",
+        },
+        {
+          question: "What identifies straight, raked, radius and spiral-ground chopper knives?",
+          answer:
+            "These terms describe the working-edge form or its arrangement in the machine. The knife and assembly drawings establish the contour, orientation and relationship with the opposing edge. Retain those features when ordering a replacement, especially where the same outside block dimensions can accommodate different working profiles.",
+        },
+        {
+          question: "Does every scrap chopper knife have four usable edges?",
+          answer:
+            "No. Four edges are usable only on knife bodies and mounts designed for four indexing positions. Use the knife drawing to confirm each orientation, inspect the unused edges for damage and restore the specified cutting setup when changing edges.",
+        },
+        {
+          question: "Can worn scrap chopper knives be reground?",
+          answer:
+            "Yes, if the worn or damaged faces can be restored within the knife's permitted dimensions. Check the cutting profile, seating surfaces and remaining stock against the drawing. A reground knife must still seat correctly and allow the specified cutting clearance.",
+        },
+        {
+          question: "What information do you need to quote edge-trim chopper knives?",
+          answer:
+            "Send the chopper model, knife drawing or original part number, trim grade, thickness and width, and quantity. Label the cutting position and working profile, especially for raked, radius or spiral-ground knives. If using a sample, mark the faces already reground.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the chopper model, knife drawing, mounting pattern, strip grade, thickness and edge-trim width.",
+    disambiguation:
+      "For the circular knives that slit the production coil, see [Steel Coil Slitting Knives](/products/metal-coil-slitting-knives).",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 640] },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Two rectangular scrap chopper knives showing mounting holes and cutting edges",
+      sizeRange: "100–400 mm",
+      heroSpecs: [
         {
-          question:
-            "Does Sureay stock scrap chopper blades, or are they made to order?",
-          answer:
-            "We maintain stock inventory of standard S7 scrap chopper blades in the six most common sizes (100×40×15mm through 400×100×30mm). Stock blades ship within 3–5 working days. Custom dimensions, H13 material, and carbide-inlaid configurations are manufactured to order with lead times of 12–18 working days from drawing approval. Rush production (7–10 days) available for standard sizes subject to heat-treat schedule availability.",
-        },
-        {
-          question:
-            "Can Sureay supply scrap chopper blades that match our existing blade dimensions?",
-          answer:
-            "Yes. Send us a sample blade, technical drawing, or the chopper machine make and model number. We will confirm the length, width, thickness, mounting hole pattern (if applicable), and material grade. Most chopper blades are standard rectangular blocks without mounting holes, but some models use clamped or bolted retention that requires specific hole locations. We can replicate any existing blade geometry.",
+          label: "Application",
+          value: "Chopping edge trim discharged from a coil slitting line",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
+        alt: "Scrap chopper knife samples showing different body profiles and mounting-hole patterns",
+      },
+      technicalSpecs: [
+        { label: "Sizes", value: "100–400 mm" },
+        {
+          label: "Material",
+          value: "S7 tool steel, H13 tool steel or carbide-inlaid S7",
+        },
+        { label: "Hardness", value: "Steel knife versions: 54–58 HRC" },
+        {
+          label: "Blade bodies",
+          value: "Square or rectangular profiles; four-edge versions available",
+        },
+        {
+          label: "Chopper configurations",
+          value:
+            "Straight or raked knife arrangements; radius and spiral-ground profiles to drawing",
+        },
+        {
+          label: "Application",
+          value:
+            "Steel, aluminium and copper edge-trim scrap from coil slitting lines",
+        },
+        {
+          label: "Cycle Life",
+          value: "50,000–200,000 chops, dependent on the material and contamination",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Standard dimensions",
+          title: "Common Standard Dimensions",
+          columns: ["Item No.", "Length (mm)", "Width (mm)", "Thickness (mm)"],
+          rows: [
+            ["SR003301", "100", "40", "15"],
+            ["SR003302", "150", "50", "20"],
+            ["SR003303", "200", "60", "25"],
+            ["SR003304", "250", "80", "25"],
+            ["SR003305", "300", "80", "30"],
+            ["SR003306", "400", "100", "30"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Request a quote for your knife configuration",
+        description:
+          "Include the chopper model, knife drawing, mounting pattern, strip grade, thickness and edge-trim width.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    rfqPlaceholder:
+      "Include the chopper model, knife drawing, mounting pattern, strip grade, thickness and edge-trim width.",
+    dimensionLabels: {
+      intro:
+        "Listed dimensions identify catalog configurations. Confirm the drawing, mounting interface, knife position and usable cutting edges; size alone does not identify the chopper model.",
     },
   },
 
@@ -4707,11 +5068,13 @@ export const blades: Blade[] = [
   {
     id: "strand-pelletizer-rotors",
     name: "Strand Pelletizer Rotors",
-    fullName: "High-Precision Strand Pelletizer Rotors for Compounding Lines",
-    category: "granulator_blades",
+    fullName: "Strand Pelletizer Cutting Rotors",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Pelletizer Blades",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    imageDimensions: { width: 1600, height: 1600, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: { width: 1500, height: 1500, smallerWidths: [320, 480, 640] },
     badge: "PM-HSS & Carbide",
     badgeColor: "blue",
     gallery: [
@@ -4719,194 +5082,217 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-02.webp",
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
-
     description:
-      "Strand pelletizer rotors and pelletizing cutter rotors for plastic compounding and recycling lines. PM-HSS (ASP2023, ASP2052) and solid tungsten carbide construction. Helical geometry with ≤0.005\u202fmm concentricity, dynamic balancing to ISO 1940-1 G2.5. Drop-in replacement for Maag, Coperion, Cumberland, Conair, and Reduction Engineering pelletizers.",
-
-    fullDescription:
-      "Engineered for continuous, high-volume compounding lines, Sureay's strand pelletizer rotors deliver flawless, uniform micro-pellets with zero tailing. Manufactured from advanced Powder Metallurgy High-Speed Steels (PM-HSS) and Solid Tungsten Carbide, our helical rotors are designed to withstand the extreme abrasive wear of glass-filled (GF), carbon-filled, and heavily pigmented polymers. Every rotor undergoes rigorous dynamic balancing and precision profile grinding to ensure perfect concentricity, reducing bearing wear and vibration even at peak RPMs.\n\n## Rotor Types\n\n**Helical (Spiral) Rotors:** The standard configuration for high-speed continuous compounding. The constant helical pitch across the full cutting width ensures a progressive shear action — one tooth engages at any given instant rather than the full edge impacting simultaneously. This dramatically reduces peak cutting force, motor load, and strand snap events. Sureay's 5-axis CNC grinding centers maintain helical pitch constancy to within ±0.01° across the entire rotor face.\n\n**Straight Edge Rotors:** Specified for softer elastomers and low-viscosity polymer melts where the helical shear force is excessive. The full-width simultaneous cut action provides a clean, consistent pellet length on TPE, TPU, and TPV strands.\n\n**Brazed Carbide Inlay Rotors:** The optimal solution for abrasive compounding of glass-filled (GF), carbon-filled (CF), and mineral-filled compounds. Tungsten carbide cutting inserts are vacuum-brazed into precision-machined HSS rotor bodies. The carbide edges deliver 5–10× longer service life versus standard M2 on GF40 and CF30 compounds, while the tough HSS body absorbs shock loads from intermittent strands and cold-start events without brittle fracture.\n\n**Solid Carbide Rotors:** The ultimate specification for extreme abrasive compounds at moderate throughput. Used in specialty compounding of ultra-abrasive ceramic, boron nitride, and SiC-filled polymers where even brazed carbide tips wear rapidly.\n\n## Material Selection by Application\n\n**M2, M35 HSS (Standard Compounding):** Cost-effective for non-filled thermoplastics — PA6, PA66, PC, POM, PBT — at standard compounding temperatures. M35 cobalt-grade extends service life on moderately abrasive fillers (talc, CaCO₃) by 30–40% versus standard M2.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Abrasive Compounding):** Powder metallurgy manufacturing produces an ultra-fine, homogeneous carbide distribution that conventional HSS cannot achieve. ASP2023 delivers 2–3× longer edge life on GF20 and CF15 compounds. ASP2052 and CPM10V push tool life to 4–6× M2 on the most demanding filled compounds. The PM microstructure also reduces edge micro-chipping that causes pellet fines and dust contamination.\n\n**Solid Tungsten Carbide (WC) & Brazed Carbide Tips (Extreme Wear):** For long glass fiber (LGF) compounds, carbon fiber reinforced polymers, and high-mineral-content masterbatch. Carbide maintains its cutting edge under sustained abrasive loading that would strip PM-HSS within hours.\n\n## Application Scenarios\n\n**Long Glass Fiber (LGF) & Carbon Fiber Compounding:** Brazed tungsten carbide rotors maintain their cutting edge 5–10× longer than standard HSS when shearing highly abrasive structural composites. The vacuum brazing process guarantees carbide teeth cannot detach, even under severe shock loads from cold strand starts.\n\n**Masterbatch & High-Pigment Production:** Mirror-polished tooth flutes (Ra 0.2\u202fµm) prevent color accumulation, allowing for rapid color changes and zero cross-contamination between batches.\n\n**Engineering Thermoplastics (PA, PC, POM, PBT):** The ultra-tight concentricity (≤0.005\u202fmm) allows operators to set extreme micro-gaps, resulting in a clean, scissor-like shear that eliminates fines, dust, and snake-skins.\n\n**Soft Elastomers (TPE, TPU, TPV):** Optimized acute cutting angles prevent the stretching and smearing of soft strands, eliminating the dreaded tailing effect.\n\n## OEM Compatibility\n\nSureay manufactures exact fitment replacement rotors for major pelletizer platforms. All replacement rotors are reverse-engineered from OEM drawings or customer samples, verified on CMM, and supplied with full dimensional inspection reports. We also offer pelletizer rotor repair and regrinding services — restoring worn helical rotors and granulator rotor shafts to factory-new concentricity at a fraction of replacement cost.\n\n*All manufacturer names and models are used for reference and compatibility purposes only.*",
-
+      "Replacement strand pelletizer rotors with helical or straight cutting edges. HSS and carbide options, with custom tooth profiles and shaft ends.",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
-
     compatibleMachines: [
-      "Maag",
-      "Coperion",
-      "Cumberland",
-      "Conair",
-      "Reduction Engineering",
+      "Maag", "Coperion", "Cumberland", "Conair", "Reduction Engineering",
     ],
-
+    compatibleMachinesIntro:
+      "Source replacement strand pelletizer rotors with the tooth pattern, working width and shaft interfaces your line requires. Sureay offers helical or straight-edge designs in steel and carbide constructions. Share your drawing or worn rotor for a custom replacement quotation. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "strand-rotor-tooth-layout",
+        tag: "Cutting geometry",
+        title: "HSS, PM-Steel and Carbide Rotor Options",
+        description:
+          "Sureay offers M2, M35, ASP2023, ASP2052 and CPM 10V options alongside solid or brazed-carbide cutting constructions, allowing rotor material to be specified for the polymer compound and existing cutter design.",
+      },
+      {
+        id: "strand-rotor-construction",
+        tag: "Construction",
+        title: "Helical and Straight Cutting Geometries",
+        description:
+          "Listed cutting diameters span Ø100–250 mm. Sureay supplies helical and straight-edge rotors with tooth count, profile and working width specified for the existing pelletizer.",
+      },
+      {
+        id: "strand-rotor-cutting-pair",
+        tag: "Cutting assembly",
+        title: "Custom Shaft Ends and Bearing Interfaces",
+        description:
+          "Rotors can be made with the shaft ends, bearing seats, shoulders and drive connections required by the existing machine, combining the cutting section and mounting interfaces in one replacement specification.",
+        relatedBladeIds: ["die-face-cutting-knives"],
+      },
+    ],
     specs: [
+      { label: "Sizes", value: "Ø100–250 mm" },
+      {
+        label: "Application",
+        value: "Cutting cooled polymer strands into pellets",
+      },
       {
         label: "Material",
         value:
-          "M2 (AISI M2 / 1.3343) | M35 (1.3243) | PM-HSS ASP2023 (1.3395) / ASP2052 / CPM10V | Solid WC & Brazed Carbide",
-      },
-      {
-        label: "Application",
-        value:
-          "GF/CF Compounding, Masterbatch, Engineering Thermoplastics (PA/PC/POM/PBT), Soft Elastomers (TPE/TPU/TPV)",
+          "M2, M35, ASP2023, ASP2052, CPM 10V, solid tungsten carbide or brazed carbide",
       },
       {
         label: "Rotor Types",
         value:
-          "Helical (Spiral), Straight Edge, Brazed Carbide Inlay, Solid Carbide",
+          "Helical or straight-edge rotors; solid or brazed-carbide cutting edges",
       },
       {
         label: "Tooth Count",
-        value: "10, 12, 16, 24, 32, 48, 60, up to 120 (custom)",
+        value: "10, 12, 16, 24, 32, 48 or 60; custom counts up to 120",
       },
+      { label: "Helical Angle", value: "1.5°, 2° or 3°; custom helix available" },
+      { label: "Concentricity (Runout)", value: "≤0.005 mm" },
+      { label: "Surface Finish", value: "Ra 0.2 µm" },
+      { label: "Dynamic Balancing", value: "ISO 1940-1, grade G2.5" },
       {
-        label: "Concentricity (Runout)",
-        value: "≤ 0.005\u202fmm — critical for micro-clearance setting",
-      },
-      {
-        label: "Surface Polish",
-        value: "Ra 0.2\u202fµm — prevents polymer build-up and sticking",
-      },
-      {
-        label: "Dynamic Balancing",
-        value: "ISO 1940-1 G2.5 — vibration-free at peak RPM",
-      },
-      {
-        label: "Helical Angle",
-        value: "1.5°, 2°, 3° or custom-milled to OEM blueprints",
+        label: "Feedstock",
+        value:
+          "GF/CF compounds, masterbatch, PA, PC, POM, PBT and TPE/TPU/TPV elastomers",
       },
     ],
-
-    components: [
-      {
-        id: "dynamic-balancing",
-        tag: "PRECISION ENGINEERING",
-        title: "Zero-Defect Dynamic Balancing",
-        description:
-          "Operating at high speeds, unbalanced rotors destroy bearings and ruin clearances. Every Sureay rotor is dynamically balanced at operating speeds to ISO 1940-1 G2.5 standards, ensuring whisper-quiet, vibration-free operation and protecting the pelletizer's bearing investment.",
-      },
-      {
-        id: "helical-geometry",
-        tag: "5-AXIS CNC GRINDING",
-        title: "Flawless Helical Geometry",
-        description:
-          "Using state-of-the-art 5-axis CNC grinding centers, we guarantee the helical pitch is constant across the entire cutting width. This ensures constant shear force, reducing motor load and preventing strand snapping on high-speed compounding lines.",
-      },
-      {
-        id: "vacuum-brazing",
-        tag: "CARBIDE TECHNOLOGY",
-        title: "Proprietary Vacuum Brazing",
-        description:
-          "For carbide-tipped rotors, a specialized high-strength vacuum brazing process guarantees that carbide teeth will never detach, even under severe shock loads from cold strand starts or intermittent strand feed conditions.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "OEM Platform",
-      col1: "Rotor Diameter (mm)",
-      col2: "Cutting Width (mm)",
-      col3: "Tooth Count",
-      col4: "Helix Angle",
-      caption:
-        "* Representative dimensions for common strand pelletizer platforms. All rotors manufactured to exact OEM blueprints or customer sample. Custom diameters, widths, tooth counts, and helix angles available on request.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Maag Primo / Baoli",
-        od: "100 – 200",
-        id: "80 – 300",
-        length: "12 / 16 / 24",
-        teeth: "2° / 3°",
-      },
-      {
-        spec: "Coperion SP Series",
-        od: "120 – 250",
-        id: "100 – 350",
-        length: "16 / 24 / 32",
-        teeth: "1.5° / 2°",
-      },
-      {
-        spec: "Cumberland Quietizer",
-        od: "100 – 180",
-        id: "80 – 250",
-        length: "12 / 16",
-        teeth: "2° / 3°",
-      },
-      {
-        spec: "Conair 304 / 306 / CS",
-        od: "100 – 200",
-        id: "80 – 300",
-        length: "12 / 16 / 24",
-        teeth: "2°",
-      },
-      {
-        spec: "Reduction Engineering SGS",
-        od: "120 – 220",
-        id: "100 – 320",
-        length: "16 / 24 / 32",
-        teeth: "1.5° / 2° / 3°",
-      },
-    ],
-
-    relatedBladeIds: [
-      "die-face-cutting-knives",
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "twin-shaft-blades-recycling",
-    ],
-
+    relatedBladeIds: ["die-face-cutting-knives", "granulator-blades"],
     offers: {
       lowPrice: 80,
       highPrice: 1200,
     },
-
     faqs: {
       technical: [
         {
-          question:
-            "We process 40% Glass-Filled Nylon (PA66 GF40). Standard M2 rotors wear out in days. What is your solution?",
+          question: "What identifies a replacement strand pelletizer rotor?",
           answer:
-            "For extreme abrasive wear, M2 steel is insufficient. We recommend our PM-HSS grades (ASP2023 or ASP2052) or our brazed Tungsten Carbide rotors. While the initial investment is higher, tool life is extended by up to 1000%, drastically reducing machine downtime and lowering your cost-per-ton of compound. For PA66 GF40 specifically, brazed carbide inlay rotors are the most cost-effective long-term solution — the HSS body handles shock loading while the carbide cutting edges resist abrasion.",
+            "The cutting diameter, working width, tooth form, helix and both shaft ends identify the rotor together. Include bearing seats, drive connections and the mating bed knife. Pelletizing cutter rotor is a related purchasing name for the toothed component that cuts polymer strands, while the complete cutting-head assembly contains additional parts.",
         },
         {
-          question:
-            "Why are we getting 'tails' on our pellets, and how can your rotors fix this?",
+          question: "How should rotor material be selected for filled polymer compounds?",
           answer:
-            "Tailing occurs when the polymer strand is torn or melted rather than cleanly sheared. This is caused by blunt rotor teeth, irregular helical angles, or excessive clearance from rotor runout. Sureay rotors feature a concentricity of ≤0.005\u202fmm, allowing your technicians to set a micro-gap against the bed knife for a perfect, scissor-like cut. The polished flute surface (Ra 0.2\u202fµm) also prevents polymer sticking that creates drag and uneven shear force.",
+            "Consider the polymer, filler type and loading alongside the current edge condition. Abrasive wear and tooth chipping call for different material considerations. Compare the existing HSS, PM-steel or carbide construction with the actual wear pattern and cutting arrangement, including the bed knife, before selecting a different replacement material.",
         },
         {
-          question:
-            "What is the difference between helical and straight-edge rotors, and when should I use each?",
+          question: "How does a strand rotor differ from a die-face cutting knife?",
           answer:
-            "Helical rotors produce a progressive shear action — only one tooth segment engages at a time — which reduces peak cutting force, motor amperage spikes, and strand snap events. This makes them the standard choice for rigid thermoplastics and filled compounds on high-speed lines. Straight-edge rotors engage the full cutting width simultaneously, which is preferred for soft elastomers (TPE, TPU, TPV) where the gradual helical shear force can stretch and deform the strand rather than cutting it cleanly.",
+            "A strand rotor cuts formed polymer strands against a stationary bed knife. [Die-Face Cutting Knives](/products/die-face-cutting-knives) are individual blades carried by a hub at the extrusion die face. Some strand systems also cut underwater, so the process location and cutting assembly provide a clearer identification than the word underwater alone.",
         },
         {
-          question:
-            "Can you duplicate a custom rotor if we send a physical sample or CAD drawing?",
+          question: "Can changing the tooth count alone change pellet size?",
           answer:
-            "Absolutely. As a direct manufacturing facility, we have full reverse-engineering capabilities. You can send us your worn rotor or technical blueprints, and we will produce a detailed CAD drawing for your approval before manufacturing the exact replacement. Dimensional verification on CMM is performed before shipment.",
+            "Yes. Changing the tooth count can change pellet length even with the same rotor speed and strand feed. Changing the tooth count changes the cutting configuration. For a like-for-like replacement, retain the approved tooth pattern and specify the existing setup and target pellet length separately.",
         },
         {
-          question:
-            "How do I know when to replace or regrind my strand pelletizer rotor?",
+          question: "Why can pellet quality change even when the rotor edges are sharp?",
           answer:
-            "Key indicators: (1) increasing pellet fines and dust in the pellet stream — dulled teeth tear rather than shear; (2) rising motor amperage on the pelletizer drive — blunt edges require more force; (3) strand snapping becoming more frequent — irregular shear force from worn geometry increases tension spikes; (4) tailing reappearing despite correct gap setting — worn concentricity causes gap variation around the rotor circumference. For PM-HSS rotors, precision regrinding to OEM geometry is cost-effective. For carbide-tipped rotors, carbide can be re-tipped once before full rotor replacement is required.",
+            "Uneven strand feed or cooling can change pellet quality even when the rotor edges are sharp. Compare the strand condition at the cutting head with the rotor-to-bed knife setup. If the defect changes with the feed, check upstream of the cutting edge as well.",
+        },
+        {
+          question: "Can a strand pelletizer rotor be reground?",
+          answer:
+            "Yes, when the construction and remaining cutting material allow the specified tooth geometry to be restored. Check the reduced rotor diameter against its working position relative to the bed knife. Record the reground diameter separately when ordering a new rotor.",
+        },
+        {
+          question: "How do I request a quote for a strand pelletizer cutting rotor?",
+          answer:
+            "Send the pelletizer model, rotor drawing or original reference, polymer and filler, and quantity. Specify the cutting diameter, working width, tooth count and helix direction, and include drawings of both shaft ends and the mating bed knife. Mark the reduced diameter separately if the reference rotor has been reground.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can Sureay supply matched rotor and bed knife (stator) sets?",
-          answer:
-            "Yes, and we strongly recommend purchasing them as matched pairs. We manufacture stator bed knives in Stellite 6 (for HSS rotors) and Solid Carbide (for carbide-tipped rotors). A matched pair ensures the cutting gap geometry and hardness differential are optimized together, delivering zero-tail pelletizing from the first strand. Mismatched rotor-stator combinations are a leading cause of premature wear and tailing on otherwise well-maintained lines.",
-        },
-        {
-          question:
-            "What lead times and documentation can Sureay provide for replacement rotors?",
-          answer:
-            "Standard PM-HSS replacement rotors for common OEM platforms (Maag, Coperion, Cumberland) ship in 10–15 working days from drawing approval. Custom helix angles or non-standard tooth counts require 15–20 working days. Every rotor ships with: CMM dimensional inspection certificate, dynamic balancing report (ISO 1940-1 G2.5), hardness test certificate, and steel mill material traceability. Rush production available subject to schedule.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the pelletizer model, rotor drawing, working width, tooth count and profile, shaft ends and bed knife details.",
+    dimensionLabels: {
+      "col0": "OEM Platform",
+      "col1": "Rotor Diameter (mm)",
+      "col2": "Cutting Width (mm)",
+      "col3": "Tooth Count",
+      "col4": "Helix Angle",
+      "caption": "* Representative dimensions for common strand pelletizer platforms. All rotors manufactured to exact OEM blueprints or customer sample. Custom diameters, widths, tooth counts, and helix angles available on request."
+    },
+    standardDimensions: [
+      {
+        "itemNo": "SR007101",
+        "spec": "Maag Primo / Baoli",
+        "od": "100 – 200",
+        "id": "80 – 300",
+        "length": "12 / 16 / 24",
+        "teeth": "2° / 3°"
+      },
+      {
+        "itemNo": "SR007102",
+        "spec": "Coperion SP Series",
+        "od": "120 – 250",
+        "id": "100 – 350",
+        "length": "16 / 24 / 32",
+        "teeth": "1.5° / 2°"
+      },
+      {
+        "itemNo": "SR007103",
+        "spec": "Cumberland Quietizer",
+        "od": "100 – 180",
+        "id": "80 – 250",
+        "length": "12 / 16",
+        "teeth": "2° / 3°"
+      },
+      {
+        "itemNo": "SR007104",
+        "spec": "Conair 304 / 306 / CS",
+        "od": "100 – 200",
+        "id": "80 – 300",
+        "length": "12 / 16 / 24",
+        "teeth": "2°"
+      },
+      {
+        "itemNo": "SR007105",
+        "spec": "Reduction Engineering SGS",
+        "od": "120 – 220",
+        "id": "100 – 320",
+        "length": "16 / 24 / 32",
+        "teeth": "1.5° / 2° / 3°"
+      }
+    ],
+    detailLayout: {
+      seoTitle: "Strand Pelletizer Cutting Rotors | Custom Replacement",
+      heroAlt: "Strand pelletizer cutting rotor with toothed cutting surface and shaft ends",
+      sizeRange: "Ø100–250 mm",
+      heroSpecs: [
+        { label: "Material", value: "HSS, PM steel or tungsten carbide" },
+        { label: "Application", value: "Cutting cooled polymer strands into pellets" },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Ø100–250 mm" },
+        {
+          label: "Application",
+          value: "Cutting cooled polymer strands into pellets",
+        },
+        {
+          label: "Material",
+          value:
+            "M2, M35, ASP2023, ASP2052, CPM 10V, solid tungsten carbide or brazed carbide",
+        },
+        {
+          label: "Rotor Types",
+          value:
+            "Helical or straight-edge rotors; solid or brazed-carbide cutting edges",
+        },
+        {
+          label: "Tooth Count",
+          value: "10, 12, 16, 24, 32, 48 or 60; custom counts up to 120",
+        },
+        { label: "Helical Angle", value: "1.5°, 2° or 3°; custom helix available" },
+        { label: "Concentricity (Runout)", value: "≤0.005 mm" },
+        { label: "Surface Finish", value: "Ra 0.2 µm" },
+        { label: "Dynamic Balancing", value: "ISO 1940-1, grade G2.5" },
+        {
+          label: "Feedstock",
+          value:
+            "GF/CF compounds, masterbatch, PA, PC, POM, PBT and TPE/TPU/TPV elastomers",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/strand-pelletizer-rotor-03.webp",
+        alt: "Strand pelletizer rotor showing its cutting surface and shaft arrangement",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your pelletizer rotor",
+        description: "Include the machine model, rotor drawing, working width, tooth form, shaft-end details and quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    disambiguation:
+      "For blades mounted on a die-face cutter hub, see [Die-Face Cutting Knives](/products/die-face-cutting-knives).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -4915,12 +5301,13 @@ export const blades: Blade[] = [
   {
     id: "continuous-melt-filter-scraper-blades",
     name: "Melt Filter Scraper Blades",
-    fullName:
-      "Premium Scraper Blades & Filter Plates for Continuous Melt Filters",
-    category: "granulator_blades",
+    fullName: "Continuous Melt Filter Scraper Blades",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Melt Filter Scraper Blades",
     image: "/images/products/blades/scraper-blades.webp",
+    imageDimensions: { width: 2560, height: 1440, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: { width: 1280, height: 720, smallerWidths: [320, 480, 640] },
     badge: "PCR Recycling",
     badgeColor: "orange",
     gallery: [
@@ -4928,137 +5315,71 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-01.webp",
       "/images/products/blades/scraper-blades-02.webp",
     ],
-
     description:
-      "Precision D2/H13/Carbide scraper blades & laser-drilled conical filter plates for PCR continuous melt filters. Engineered hardness synergy (blade HRC 58–62 vs. plasma-nitrided plate HV 1,000+) protects filter plate capital investment. HCl-resistant alloys for PVC blends. Backflush-compatible with EREMA, Gneuß, Ettlinger & FIMIC.",
-
-    fullDescription:
-      "Continuous melt filters are the heart of any high-throughput PCR plastic recycling line. When processing heavily contaminated post-consumer regrind — containing mineral fillers, glass fibers, carbonized residues, and hard foreign particles — the scraper blade is the single component under the most extreme combined load: abrasive wear from hard contaminants, thermal fatigue from cyclic melt temperature exposure (220–300 °C), and cyclic bending stress from the rotation mechanism. A blade that fails prematurely forces an emergency line stop, costing hours of restarting time and wasting significant volumes of in-process melt.\n\nSureay continuous melt filter scraper blades are precision-manufactured from premium D2 cold-work tool steel and H13 hot-work tool steel — two alloys specifically selected for this dual wear-plus-heat-resistance requirement — and vacuum heat-treated to HRC 58–62 with deep cryogenic post-treatment to eliminate retained austenite and extend wear life by 30–40% versus standard heat treatment.\n\n## Alloy Selection by Contamination Level\n\n**D2 Tool Steel (HRC 60–62):** The standard specification for PCR HDPE, PP, and mixed rigid plastics with moderate contamination (< 3% mineral filler content). The 12% chromium and 1.5% carbon content delivers excellent abrasion resistance against glass particles and calcium carbonate fillers at melt processing temperatures up to 260 °C. Cost-effective for medium-duty continuous filtration at throughputs of 300–800 kg/h.\n\n**H13 Hot-Work Tool Steel (HRC 48–52):** Selected for heavily contaminated streams — post-consumer film regrind, agricultural mulch film, WEEE plastics — where melt temperatures exceed 280 °C and thermal cycling is severe. H13's molybdenum-vanadium carbide matrix maintains dimensional stability and edge geometry under sustained thermal loading that would cause D2 to soften and deform.\n\n**Solid Tungsten Carbide (HRA 88–91):** The ultimate specification for ultra-abrasive feedstocks: glass-filled engineering plastics (PA-GF30, PBT-GF), ceramic-contaminated streams, and silicon-rich agricultural film with embedded soil particles. Carbide scrapers deliver 5–8× longer service life versus D2 on these feedstocks, reducing blade change frequency to once per 1,000+ operating hours.\n\n## Precision-Ground Blade Geometry\n\nThe scraper blade's edge geometry directly controls filtration screen surface cleanliness and therefore melt pressure consistency. A worn or incorrectly profiled scraper leaves a residual contamination layer on the filter screen, causing progressive pressure build-up, reduced throughput, and ultimately screen breakthrough. Sureay blades are precision-ground to ±0.05 mm dimensional tolerance with edge bevel profiles matched to each filter OEM's screen contact geometry. The result is a consistent, reproducible scraping action that maintains screen cleanliness throughout the full blade service life.\n\n## Drop-In OEM Compatibility\n\nScraper blade geometry is machine-specific: each continuous melt filter OEM uses proprietary rotor dimensions, blade mounting interfaces, and screen diameters. Sureay reverse-engineers replacement blades from OEM drawings or customer samples, verifying fit on a coordinate measuring machine (CMM) before production. Compatible with EREMA Continuous Filter, Gneuß Rotary Filtration System, Ettlinger ERF series, FIMIC RAS series, Kreyenborg KSF series, and Nordson BKG continuous screen changers.\n\n## Laser-Drilled Conical Filter Plate Micro-Perforations\n\nThe filter plate's hole geometry is as critical as the scraper blade material. Standard punched or drilled cylindrical holes create a flat-wall channel where molten polymer and suspended contaminants can stagnate — carbonizing inside the hole under sustained heat, progressively reducing effective open area, and eventually causing premature screen blockage. Sureay filter plates use laser-drilled conical (tapered) micro-perforations: the hole is narrowest at the upstream melt-contact surface and widens progressively toward the downstream outlet. This conical profile exploits melt-side hydraulic pressure: once a contaminant particle passes the narrow inlet restriction, the expanding channel geometry immediately expels it toward the outlet with no dead-zone stagnation. The result is a filter plate that maintains consistent differential pressure and open-area percentage over a significantly longer service interval — particularly critical on heavily contaminated PCR streams where cylindrical-hole plates would require frequent replacement.\n\nAvailable filtration fineness: 80 µm (food-contact rPET/rHDPE), 150–200 µm (film-grade PCR), 300–500 µm (injection-grade PCR), 500–2,000 µm (coarse pre-filtration). Conical profile available across all fineness grades.\n\n## Hardness Synergy: Protecting Your Filter Plate Capital Investment\n\nA common and justified concern when sourcing aftermarket scraper blades is whether a high-hardness replacement blade will score or gouge the filter plate — a capital component that costs significantly more than the blade itself. Sureay engineers a deliberate and verified hardness differential between the scraper blade and the filter plate surface.\n\nThe filter plate's upstream face is plasma nitrided to HV 1,000+ (approximately equivalent to HRC 70+), creating an extremely hard, wear-resistant ceramic-like surface layer 0.1–0.3 mm deep. The scraper blade is intentionally manufactured to a lower HRC 58–62. This differential means that under all operating conditions, the blade is the controlled-wear consumable: it wears gradually against the harder plate surface without generating metal-transfer scoring or gouging. The filter plate surface remains intact across multiple blade replacement cycles. Every Sureay blade shipment includes a hardness test certificate confirming the blade is within the specified HRC range — verifiable documentation that the controlled-wear principle is maintained in every production batch.\n\n## Chemical & Corrosion Resistance for PVC and Mixed-Plastic Streams\n\nProcessing washed post-consumer PVC, mixed flexible films, or WEEE-derived plastics releases aggressive corrosive outgassing — primarily hydrochloric acid (HCl) and organochlorine compounds — at melt temperatures of 200–260 °C. Standard D2 and H13 tool steels corrode under sustained HCl exposure: surface pitting initiates at grain boundaries, progressively degrading the micro-perforation edge geometry and enlarging hole diameters beyond specification, compromising filtration quality without any visible external indication.\n\nFor PVC-inclusive streams, Sureay applies two protective measures: (1) base alloy upgrade to corrosion-resistant PM (powder-metallurgy) steel grades with homogeneous chromium distribution that resists acid grain-boundary attack; (2) physical vapour deposition (PVD) barrier coatings on filter plate surfaces that seal the micro-perforation walls against HCl diffusion. This combination extends filter plate service life by 2–3× versus uncoated standard-alloy plates on PVC-containing feedstocks, and prevents the insidious hole-enlargement failure mode that undermines filtration efficiency without triggering a pressure alarm.\n\n## Backflush Compatibility\n\nHigh-end continuous melt filters (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) incorporate automated backflushing mechanisms: a high-pressure reverse pulse of clean melt is periodically fired backward through a localized section of the filter plate to expel embedded contaminant cake from the micro-perforations, restoring open area without stopping the line. The backflush pulse generates a localized reverse pressure spike — typically 150–400 bar depending on the OEM — applied to a small area of the filter plate.\n\nSureay filter plates are designed and manufactured to withstand OEM-rated backflush pressures without micro-cracking or deformation. The conical hole geometry is dimensionally optimized for this: the wider downstream outlet of each conical perforation acts as a flared nozzle that accelerates the backflush pulse, improving contaminant ejection efficiency versus cylindrical holes. Structural integrity under repeated high-pressure reverse cycles is validated through finite element analysis (FEA) of the inter-hole ligament stress distribution. Replacement Sureay plates maintain 100% compatibility with OEM backflush timing, pressure, and hole-array layout — no recalibration of the backflush controller is required.\n\n## Failure Analysis: Diagnosing & Eliminating Common Scraper and Filter Failures\n\nEngineers sourcing replacement components are typically dealing with a specific failure mode. The correct material upgrade depends on the root cause.\n\n**Edge Chipping (Brittle Fracture at Blade Tip):** Caused by a single high-energy impact from tramp metal — bolts, nuts, wire fragments — embedded in the PCR regrind feedstock. D2 and standard carbide grades are vulnerable to brittle fracture under this impulse loading. **Upgrade:** Specify H13 (higher impact toughness than D2) for mixed-contamination streams where tramp metal risk is moderate, or a toughness-optimized carbide grade (Co content ≥ 12%) for high-risk streams. Add upstream magnet and/or metal detector to reduce tramp metal frequency.\n\n**Progressive Surface Scoring on Filter Plate:** Fine parallel grooves on the filter plate face, accompanied by rising differential pressure and shortened blade intervals. Caused by incorrect blade hardness (blade harder than plate), incorrect bevel angle causing concentrated edge loading, or grit contamination in the blade-plate interface. **Upgrade:** Verify blade hardness certificate (must be ≤ HRC 62). Confirm edge bevel angle matches OEM screen contact geometry (±0.5°). Inspect plate surface for plasma-nitride layer depletion — if scoring has reached the base metal, the plate requires replacement before installing new blades.\n\n**Rapid Blade Wear (< 200 Hours on Standard PCR):** Unexpectedly short service life on a nominally moderate feedstock indicates higher-than-declared contamination: elevated glass-fiber, silica, or ceramic filler content in the regrind. Submit regrind sample for XRF contamination analysis. **Upgrade:** Step from D2 to H13 first; if service life remains inadequate, move to solid tungsten carbide which delivers 5–8× longer life on abrasive-dominated failure streams.\n\n**Hole Enlargement / Filtration Quality Degradation Without Pressure Alarm:** Filter plate micro-perforations gradually enlarge over time, allowing oversized contaminant particles through at stable differential pressure. Root cause: HCl corrosion from PVC outgassing dissolving hole-wall material. No pressure alarm because the enlarged holes maintain low resistance. **Upgrade:** Specify PVD-coated, corrosion-resistant PM steel filter plates for all streams containing ≥ 5% PVC by weight.",
-
+      "Replacement scraper blades for continuous plastic melt filters. D2, H13 and carbide options, with custom profiles and mounting details to drawing.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
-
     compatibleMachines: [
-      "EREMA",
-      "Gneuß",
-      "Ettlinger",
-      "FIMIC",
-      "Kreyenborg",
-      "Nordson BKG",
+      "EREMA", "Gneuß", "Ettlinger", "FIMIC", "Kreyenborg", "Nordson BKG",
     ],
-
+    compatibleMachinesIntro:
+      "Get replacement melt-filter scraper blades with custom working edges, body profiles and carrier mountings. Sureay offers D2, H13 and carbide configurations with surface-treatment options for your melt service. Send your drawing or sample for a quotation tailored to your filter. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "melt-scraper-working-edge",
+        tag: "Working edge",
+        title: "Steel and Carbide Scraper Options",
+        description:
+          "D2, H13 and solid-carbide configurations give you material choices for replacement melt-filter scrapers, specified with the polymer, contaminants and mating screen in view.",
+      },
+      {
+        id: "melt-scraper-carrier",
+        tag: "Installation",
+        title: "Custom Edges and Carrier Mounting Profiles",
+        description:
+          "Listed scraper lengths span 150–500 mm. Sureay can make the outline, thickness and carrier mounting features to the filter drawing so the new scraper places its working edge at the specified position against the screen.",
+      },
+      {
+        id: "melt-scraper-material",
+        tag: "Material options",
+        title: "Surface Options for Specified Melt Service",
+        description:
+          "Barrier-coating and corrosion-resistant alloy options are available for specified PVC and mixed-plastic melt service, allowing the surface and material requirements to be included in the blade enquiry.",
+      },
+    ],
     specs: [
+      { label: "Sizes", value: "150–500 mm" },
+      {
+        label: "Application",
+        value: "Removal of contamination from a melt filter screen",
+      },
+      { label: "Part position", value: "Scraper carrier at the filter screen" },
       {
         label: "Material",
-        value: "D2 Tool Steel / H13 Hot-Work Steel / Solid Tungsten Carbide",
+        value: "D2 tool steel, H13 hot-work steel or solid tungsten carbide",
       },
-      {
-        label: "Hardness Differential",
-        value:
-          "Blade: HRC 58–62 (controlled-wear consumable) | Filter Plate Surface: Plasma Nitrided HV 1,000+",
-      },
-      {
-        label: "Filter Plate Profile",
-        value:
-          "Laser-drilled conical micro-perforations, 80–2,000 µm — tapered inlet expels contaminants, prevents polymer stagnation",
-      },
-      {
-        label: "Dimensional Tolerance",
-        value: "±0.05 mm (blade profile) | ±0.02 mm (thickness)",
-      },
+      { label: "Steel Blade Hardness", value: "HRC 58–62" },
+      { label: "Profile Tolerance", value: "±0.05 mm" },
+      { label: "Thickness Tolerance", value: "±0.02 mm" },
       {
         label: "Operating Temperature",
-        value: "Up to 300 °C (H13 / Carbide grades)",
+        value: "Up to 300 °C for H13 or carbide configurations",
+      },
+      {
+        label: "Optional Coatings",
+        value: "Barrier coatings for PVC and mixed-plastic melt service",
       },
       {
         label: "Corrosion Resistance",
+        value: "HCl-resistant alloy options for PVC and mixed-plastic melt service",
+      },
+      {
+        label: "Feedstock",
         value:
-          "HCl-resistant alloys & barrier coatings for PVC and mixed-plastic melt outgassing",
-      },
-      {
-        label: "Applications",
-        value:
-          "PCR HDPE/PP, Glass-Filled Compounds, PVC Blends, Agricultural Film, WEEE Plastics",
+          "PCR HDPE/PP, glass-filled compounds, PVC blends, agricultural film and WEEE plastics",
       },
     ],
-
-    components: [
-      {
-        id: "hardness-synergy",
-        tag: "ASSET PROTECTION",
-        title: "Engineered Hardness Synergy",
-        description:
-          "Filter plates are plasma nitrided to HV 1,000+ (≈ HRC 70+). Scraper blades are deliberately held at HRC 58–62. This verified differential makes the blade the controlled-wear consumable — it wears against the harder plate surface without scoring or gouging. Every shipment includes a hardness certificate confirming the blade is within range.",
-      },
-      {
-        id: "conical-laser-plates",
-        tag: "FILTRATION TECHNOLOGY",
-        title: "Conical Laser-Drilled Micro-Perforations",
-        description:
-          "Tapered hole geometry (narrow inlet, wide outlet) exploits melt pressure to immediately expel contaminants rather than allowing them to stagnate inside cylindrical-wall holes. Prevents carbonization-driven hole blockage, maintains consistent differential pressure, and supports OEM backflush pulse dynamics at 150–400 bar without micro-cracking.",
-      },
-      {
-        id: "failure-upgrade-path",
-        tag: "FAILURE ANALYSIS",
-        title: "Diagnostic Upgrade Path",
-        description:
-          "Edge chipping from tramp metal → upgrade to H13 or toughness-grade carbide. Progressive plate scoring → verify blade HRC certificate and bevel angle. Service life < 200 h on standard PCR → step to solid carbide for abrasion-dominated failure. Silent hole enlargement → specify PVD-coated corrosion-resistant PM plates for PVC-containing streams.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Filter Model / OEM",
-      col1: "Blade Length (mm)",
-      col2: "Blade Width (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Representative dimensions for common continuous melt filter platforms. All blades reverse-engineered to exact OEM drawing or customer sample. Custom geometries and mounting interfaces available on request.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "EREMA",
-        od: "180 – 420",
-        id: "25 – 40",
-        thickness: "6 / 8",
-      },
-      {
-        spec: "Gneuß Rotary System",
-        od: "150 – 380",
-        id: "20 – 35",
-        thickness: "5 / 8",
-      },
-      {
-        spec: "Ettlinger ERF 200/350",
-        od: "200 / 350",
-        id: "30 / 40",
-        thickness: "8 / 10",
-      },
-      {
-        spec: "FIMIC",
-        od: "160 – 400",
-        id: "22 – 38",
-        thickness: "6 / 8",
-      },
-      {
-        spec: "Kreyenborg KSF",
-        od: "200 – 500",
-        id: "30 – 50",
-        thickness: "8 / 12",
-      },
-      {
-        spec: "Nordson BKG",
-        od: "150 – 350",
-        id: "20 – 35",
-        thickness: "5 / 8",
-      },
-    ],
-
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-      "scrap-chopper-blades",
-    ],
+    relatedBladeIds: ["cutter-compactor-blades", "die-face-cutting-knives"],
     offers: {
       lowPrice: 35,
       highPrice: 480,
@@ -5066,68 +5387,141 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "When should I upgrade from D2 to H13 for my scraper blades?",
+          question: "What do melt filter knives and scraper blades refer to?",
           answer:
-            "Upgrade to H13 when your melt processing temperature consistently exceeds 260 °C, or when you are processing highly contaminated streams such as post-consumer agricultural film, WEEE plastics, or heavily printed packaging waste. These feedstocks generate significant thermal cycling stress that causes D2 to soften and lose edge geometry within 200–400 operating hours. H13's molybdenum-vanadium carbide matrix maintains hardness and dimensional stability up to 300 °C, extending scraper service life by 60–80% on these feedstocks.",
+            "They describe the replaceable elements that lift retained contamination from the filter-screen surface. The perforated screen performs filtration and the carrier locates the scraper. Identify the installed position and part reference when ordering, so the blade, screen and carrier are each specified as the required component.",
         },
         {
-          question:
-            "How does scraper blade wear affect melt pressure and throughput on a continuous filter?",
+          question: "Which features identify a replacement melt-filter scraper?",
           answer:
-            "A worn scraper blade leaves a residual contamination film on the filter screen surface after each rotation. This film progressively reduces the effective open screen area, causing melt pressure to rise and throughput to fall. On a heavily loaded PCR line, a blade worn beyond its service limit can cause a 15–25% throughput reduction and accelerate screen clogging to the point of breakthrough failure. Monitoring melt pressure differential across the filter is the most reliable wear indicator — we recommend blade inspection when differential pressure rises more than 20% above baseline.",
+            "Use the filter model and version, blade outline, working-edge profile, thickness and carrier mounting. The edge must occupy the intended position relative to the screen. Overall length is only one identifier, particularly when similarly named continuous filters use different screen or scraper mechanisms.",
         },
         {
-          question:
-            "What filtration fineness should I specify for recycled HDPE and PP pellet production?",
+          question: "How should scraper material be chosen for contaminated plastic melt?",
           answer:
-            "For standard PCR HDPE and PP pellet production targeting film or injection moulding applications, specify 300–500 µm filtration fineness. This removes hard particles that cause die-face streaking and surface defects without excessive pressure drop on moderately contaminated feedstock. For food-grade contact recycled resin (rHDPE, rPP under EU 10/2011), specify 150–200 µm to meet the stricter contamination removal requirements. For highly contaminated agricultural film or MSW-derived feedstock, start with 500–800 µm to manage pressure and step down as the input quality improves.",
+            "Consider the polymer, contaminant type, melt-service conditions and the mating screen specification together. Compare gradual edge wear with local damage in the used scraper. The selected steel or carbide construction must suit the filter's contact arrangement, with any coating or corrosion-resistance requirement recorded separately.",
         },
         {
-          question:
-            "Will high-hardness aftermarket scraper blades score or damage my filter plates?",
+          question: "Does a self-cleaning melt filter use a universally interchangeable scraper?",
           answer:
-            "This is the most important question to ask any aftermarket blade supplier. Sureay engineers a deliberate hardness differential: filter plates are plasma nitrided to HV 1,000+ (approximately HRC 70+), and scraper blades are manufactured to a strictly controlled HRC 58–62. The blade is always softer than the plate surface — it functions as a controlled-wear consumable that gradually wears away without generating metal-transfer scoring or gouging on the harder plate face. Every shipment includes a Rockwell HRC test certificate confirming the blade is within this range. If a supplier cannot provide this certificate, you have no guarantee the hardness differential is correct.",
+            "No. A self-cleaning melt filter's scraper must match the working profile, carrier and screen of that specific assembly. Some OEM systems use controlled contact with a harder screen to maintain the edge. The replacement needs to preserve the geometry and material pairing specified for the filter.",
         },
         {
-          question:
-            "Are Sureay filter plates compatible with automated backflushing on Ettlinger and Gneuß systems?",
+          question: "What should be reviewed when contamination is no longer removed effectively?",
           answer:
-            "Yes, fully compatible. Sureay filter plates are designed and FEA-validated for OEM-rated backflush pulse pressures (typically 150–400 bar on Ettlinger ERF and Gneuß RSFgenius systems). The conical laser-drilled hole geometry enhances backflush efficiency: the wider downstream outlet acts as a nozzle that accelerates the reverse pulse through each perforation, improving contaminant ejection versus cylindrical-hole plates. Hole array layout and plate dimensions replicate OEM specifications exactly — no recalibration of backflush timing, pressure, or controller parameters is required after installation.",
+            "Check whether the scraper edge still makes the intended contact with the screen. Contaminant load or an obstruction in the discharge system can also affect removal. Compare those conditions with changes in the melt feed and use the filter maker's service procedure to identify the part that needs attention.",
         },
         {
-          question:
-            "My filter is losing filtration quality without a differential pressure alarm. How do I diagnose this?",
+          question: "What should I send for a melt filter scraper blade quote?",
           answer:
-            "This is the symptom of silent hole enlargement — a failure mode where filter plate micro-perforations gradually widen due to chemical corrosion of the hole walls rather than mechanical wear. Enlarged holes allow oversized contaminant particles through while maintaining low differential pressure because the wider holes offer less resistance. The root cause is almost always HCl outgassing from PVC or organochlorine contamination in the feedstock reacting with standard tool steel at melt temperatures. Confirm by: (1) measuring output melt contamination particle size — if oversized particles are present without pressure rise, hole enlargement is confirmed; (2) inspect a removed plate under magnification for hole-wall pitting or rounding. The solution is to specify Sureay PVD-coated, corrosion-resistant PM steel filter plates, which seal the micro-perforation walls against acid diffusion and prevent the insidious progressive enlargement.",
-        },
-        {
-          question:
-            "Can Sureay match our existing EREMA or Gneuß scraper blade dimensions?",
-          answer:
-            "Yes. Send us your existing blade sample or the OEM part number and machine model. We will dimensionally verify the blade profile on our CMM, confirm the mounting interface, edge bevel angle, and material specification, and supply direct drop-in replacements. For EREMA Continuous Filter and Gneuß Rotary Filtration Systems, we maintain reference drawings for the most common platform sizes. Lead time for standard replacement blades is 7–12 working days from dimension confirmation.",
-        },
-        {
-          question:
-            "How many operating hours can I expect from D2 scraper blades on a mixed PCR line?",
-          answer:
-            "On a mixed PCR rigid plastics line (HDPE/PP, < 3% mineral contamination, melt temperature 230–260 °C), D2 scraper blades typically deliver 400–700 operating hours before the edge profile degrades to the point of rising differential pressure. H13 blades on the same line extend service intervals to 600–1,000 hours. On highly abrasive streams (glass-filled compounds, agricultural film with embedded soil), D2 service life drops to 150–300 hours; H13 extends this to 250–450 hours; solid carbide delivers 1,000–2,000+ hours on these feedstocks.",
+            "Send the filter model and version, scraper drawing or part number, polymer and contaminants, and quantity. Add the carrier mounting and retained screen specification. If you use a sample, show which way it mounts on the carrier and mark the worn working edge.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the filter model, scraper drawing, screen plate details, polymer and typical contaminants.",
+    dimensionLabels: {
+      "col0": "Filter Model / OEM",
+      "col1": "Blade Length (mm)",
+      "col2": "Blade Width (mm)",
+      "col3": "Thickness (mm)",
+      "caption": "* Representative dimensions for common continuous melt filter platforms. All blades reverse-engineered to exact OEM drawing or customer sample. Custom geometries and mounting interfaces available on request."
+    },
+    standardDimensions: [
+      {
+        "itemNo": "SR007201",
+        "spec": "EREMA",
+        "od": "180 – 420",
+        "id": "25 – 40",
+        "thickness": "6 / 8"
+      },
+      {
+        "itemNo": "SR007202",
+        "spec": "Gneuß Rotary System",
+        "od": "150 – 380",
+        "id": "20 – 35",
+        "thickness": "5 / 8"
+      },
+      {
+        "itemNo": "SR007203",
+        "spec": "Ettlinger ERF 200/350",
+        "od": "200 / 350",
+        "id": "30 / 40",
+        "thickness": "8 / 10"
+      },
+      {
+        "itemNo": "SR007204",
+        "spec": "FIMIC",
+        "od": "160 – 400",
+        "id": "22 – 38",
+        "thickness": "6 / 8"
+      },
+      {
+        "itemNo": "SR007205",
+        "spec": "Kreyenborg KSF",
+        "od": "200 – 500",
+        "id": "30 – 50",
+        "thickness": "8 / 12"
+      },
+      {
+        "itemNo": "SR007206",
+        "spec": "Nordson BKG",
+        "od": "150 – 350",
+        "id": "20 – 35",
+        "thickness": "5 / 8"
+      }
+    ],
+    detailLayout: {
+      seoTitle: "Melt Filter Scraper Blades | Custom Replacements",
+      heroAlt: "Replacement scraper blades for a continuous melt filter",
+      sizeRange: "150–500 mm",
+      heroSpecs: [
+        { label: "Material", value: "D2, H13 or tungsten carbide" },
+        { label: "Application", value: "Continuous plastic melt filtration" },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "150–500 mm" },
         {
-          question:
-            "Are your melt filter scraper blades direct OEM replacements or aftermarket parts?",
-          answer:
-            "They are precision aftermarket replacements manufactured to OEM dimensional specifications. We reverse-engineer each blade from OEM drawings or customer samples, verify fit on a CMM, and supply with a dimensional inspection certificate. Our blades are not rebranded OEM parts — they are manufactured directly in our facility using premium D2, H13, or carbide materials with our full quality documentation package.",
+          label: "Application",
+          value: "Removal of contamination from a melt filter screen",
+        },
+        { label: "Part position", value: "Scraper carrier at the filter screen" },
+        {
+          label: "Material",
+          value: "D2 tool steel, H13 hot-work steel or solid tungsten carbide",
+        },
+        { label: "Steel Blade Hardness", value: "HRC 58–62" },
+        { label: "Profile Tolerance", value: "±0.05 mm" },
+        { label: "Thickness Tolerance", value: "±0.02 mm" },
+        {
+          label: "Operating Temperature",
+          value: "Up to 300 °C for H13 or carbide configurations",
         },
         {
-          question:
-            "What quality documentation is included with scraper blade shipments?",
-          answer:
-            "Every shipment includes: Rockwell HRC hardness test certificate, CMM dimensional inspection report confirming edge profile and mounting interface tolerances, steel mill material traceability certificate, and heat treatment batch certificate. For customers requiring enhanced documentation for ISO 9001 or recycling process qualification, full material test reports and process records are available on request.",
+          label: "Optional Coatings",
+          value: "Barrier coatings for PVC and mixed-plastic melt service",
+        },
+        {
+          label: "Corrosion Resistance",
+          value: "HCl-resistant alloy options for PVC and mixed-plastic melt service",
+        },
+        {
+          label: "Feedstock",
+          value:
+            "PCR HDPE/PP, glass-filled compounds, PVC blends, agricultural film and WEEE plastics",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/scraper-blades-02.webp",
+        alt: "Melt filter scraper blades showing their body profiles and working edges",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your melt filter scraper",
+        description: "Include the filter model, blade drawing or sample, carrier details, polymer and required quantity.",
+        buttonLabel: "Request a quote",
+      },
     },
   },
 
@@ -5135,17 +5529,21 @@ export const blades: Blade[] = [
   // Shredder Screens & Screen Baskets
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement screen baskets and plates made around your shredder's mounting layout, curvature and aperture pattern. Sureay offers custom hole arrangements and wear-material options. Share your screen drawing or sample for a quotation tailored to your discharge-screening application. Machine brands are compatibility references for Sureay aftermarket parts.",
     id: "shredder-screens",
     name: "Shredder Screens",
     fullName: "Shredder Screens, Baskets & Screen Plates",
+    seoTitle: "Replacement Shredder Screens | Custom Baskets & Plates",
     category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Shredder Screens",
-    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    image: "/images/products/shredder-screens/shredder-screens-04-square.webp",
+    imageDimensions: { width: 836, height: 836, smallerWidths: [320, 640] },
+    specificationImageDimensions: standardSquareImage,
     badge: "Wear Parts",
     badgeColor: "teal",
     gallery: [
-      "/images/products/shredder-screens/shredder-screens-04.webp",
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
@@ -5154,79 +5552,34 @@ export const blades: Blade[] = [
       "Batch of perforated shredder screen baskets prepared for export shipment",
       "Stack of curved shredder screen plates on a pallet, showing staggered round hole pattern",
     ],
-
     description:
-      "Perforated shredder screens, baskets and screen plates in S355J2 and Hardox 400–500. Hole Ø 8–80 mm, 12–30 mm thick, reverse-engineered from your worn screen.",
-
-    fullDescription:
-      "The screen is the component that actually decides your output particle size — the rotor and knives only reduce material until it is small enough to pass through. Yet it is the part most operators treat as an afterthought, running a blinded or bell-mouthed screen for months while blaming falling throughput on the knives. On a size-reduction line, screen condition and screen specification together account for more lost capacity than blade wear does.\n\nSureay manufactures shredder screens as engineered wear parts, not as generic perforated plate. Each screen is rolled to the exact rotor radius, so the gap between rotor tip and screen surface stays uniform across the full cutting width. An uneven gap means material is dragged and ground rather than cut, which raises motor amp draw, generates heat and fines, and accelerates knife wear on the very blades the screen was supposed to protect.\n\n## The Three Screen Forms\n\n**Screen Basket (half-round or full-round):** The standard geometry for single-shaft and twin-shaft shredders. Supplied as a half-shell that cradles the rotor, or as two halves clamped into a full cylinder. Basket screens carry the largest open area and are the highest-wear form because the entire inner surface is in contact with circulating material.\n\n**Screen Plate (flat):** Used on granulators and beside-the-press crushers where the cutting chamber geometry is flat rather than cylindrical. Easier to manufacture and to reverse-engineer, and usually the cheapest form to replace.\n\n**Sickle Screen:** A curved partial screen fitted where the discharge geometry does not allow a full basket. Common on compact and mobile shredders.\n\n**Cassette Screen:** A framed, quick-change insert. Higher initial cost, dramatically lower changeover time — worth specifying on lines that run several particle sizes on the same machine.\n\n## Specifying a Screen: Three Numbers That Matter\n\nEvery screen is defined by three interacting dimensions, and changing one forces a change in the others:\n\n- **Hole diameter (Ø)** sets the maximum particle size passing through. It is the number buyers usually quote, and the only one they usually quote.\n- **Plate thickness (t)** sets how long the screen survives. A thicker plate resists deformation and bell-mouthing but reduces effective open area, because each hole becomes a longer channel that material must clear.\n- **Ligament width** — the web of steel between adjacent holes — sets the screen's structural strength. Push the ligament too narrow chasing open area and the screen cracks between holes under impact, usually starting at the discharge edge.\n\nOpen area follows directly from hole diameter and ligament. For round holes on a 60° staggered pitch, open area ≈ 90.7 × (d / p)², where p is the hole centre pitch. Going from a 20 mm hole on a 28 mm pitch to a 20 mm hole on a 24 mm pitch lifts open area from roughly 46% to 63% — and cuts the ligament from 8 mm to 4 mm, which on a plastics shredder handling occasional metal contamination will fail early.\n\n## Why Screens Should Not Be Made From Tool Steel\n\nThis is the most common specification error we correct. A screen is not a cutting tool. It is a perforated structural member that absorbs continuous impact and abrasion while holding its shape. Hardening a screen to HRC 58–62 like a blade makes it brittle: the ligaments crack, and a fractured screen can drop steel fragments into the rotor and destroy a full knife set.\n\nWhat a screen needs is toughness with adequate abrasion resistance:\n\n- **S355J2 structural plate** — the default for clean plastics, film, paper and light MSW. Tough, cheap, easy to re-drill and repair.\n- **Hardox 400 / 450** — for mixed post-consumer waste, wood with grit, and moderately abrasive feed. Roughly 2–3× the service life of S355 at a modest cost premium.\n- **Hardox 500 or hardfaced surfaces** — for glass-filled compounds, contaminated demolition wood, C&D waste and other severely abrasive streams. Hardfacing is applied selectively to the high-wear inner face while the base plate stays tough.\n\n## Reverse Engineering From a Worn Screen\n\nMost replacement orders arrive without a drawing. Send photographs of the worn screen with a tape measure across the hole pitch, plus the machine make and model, and we will produce a manufacturing drawing for your approval before cutting steel. Where the original screen has bell-mouthed, we work from the unworn hole geometry at the edges rather than the enlarged centre holes, so the replacement restores the original particle size rather than reproducing the worn condition.",
-
+      "Replacement screens for single-shaft shredders, with 8–80 mm apertures. Custom baskets and plates matched to the hole pattern, curvature and mounting.",
     disambiguation:
-      "Looking for the cutting tools rather than the sizing screen? See [Single Shaft Shredder Blades](/products/single-shaft-shredder-blades) for rotor inserts, bed knives and holders.",
+      "For the moving cutting tools, see [Single-Shaft Shredder Rotor Knives](/products/single-shaft-shredder-blades).",
     link: "/products/shredder-screens",
-
-    compatibleMachines: [
-      "Lindner",
-      "Vecoplan",
-      "UNTHA",
-      "WEIMA",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "SSI Shredding Systems",
-      "Genox",
-    ],
-
     specs: [
       {
         label: "Screen Forms",
         value: "Basket (half/full round) · Flat Plate · Sickle · Cassette",
       },
-      { label: "Hole Diameter", value: "8 – 80 mm (round, square or slotted)" },
-      { label: "Plate Thickness", value: "12 – 30 mm" },
-      { label: "Ligament Width", value: "5 – 20 mm (application-matched)" },
+      { label: "Sizes", value: "Apertures 8–80 mm" },
       {
         label: "Material",
         value: "S355J2 · Hardox 400 / 450 / 500 · Hardfaced",
       },
       { label: "Open Area", value: "34 – 58% (pattern-dependent)" },
       { label: "Hole Pattern", value: "60° staggered · Straight · Slotted" },
-      {
-        label: "Supply Format",
-        value: "Drop-in OEM replacement or reverse-engineered from sample",
-      },
+      { label: "Application", value: "Discharge screening in single-shaft shredders" },
       {
         label: "OEM Fitment",
         value: "Lindner, Vecoplan, UNTHA, WEIMA, Herbold, ZERMA",
       },
     ],
-
-    componentsIntro:
-      "A screen is judged on three things: whether it holds the particle size you specified, how long it holds it, and whether it survives the contamination in your feed without cracking.",
-
-    components: [
-      {
-        id: "aperture-sets-particle-size",
-        tag: "SIZING",
-        title: "The Screen Sets Your Output, Not the Rotor",
-        description:
-          "Rolled to your exact rotor radius so the tip-to-screen gap stays uniform across the full width. A consistent gap means material is cut once and discharged, instead of being recirculated and ground into heat and fines.",
-      },
-      {
-        id: "toughness-not-hardness",
-        tag: "METALLURGY",
-        title: "Toughness, Not Blade Hardness",
-        description:
-          "Screens are specified in S355J2, Hardox 400–500 or selectively hardfaced plate — never hardened to blade HRC. A brittle screen cracks at the ligaments and can drop steel into the rotor, taking a full knife set with it.",
-      },
-      {
-        id: "screen-knife-system",
-        tag: "SYSTEM",
-        title: "Screens, Counter Knives and Holders as One Order",
-        description:
-          "A blinded or bell-mouthed screen accelerates knife wear, and worn knives blind the screen faster. We supply screens together with counter knives, knife holders, clamping bars and spacers so the whole wear set is replaced on the same shutdown.",
-      },
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "single-shaft-bed-knives",
+      "granulator-blades",
     ],
-
     dimensionLabels: {
       col0: "Output Class",
       col1: "Hole Ø (mm)",
@@ -5235,112 +5588,140 @@ export const blades: Blade[] = [
       caption:
         "* Representative round-hole specifications on a 60° staggered pitch. Square, slotted and mixed-pattern screens available. Every screen is rolled to the customer's rotor radius — send the machine model or a photograph of the worn screen for reverse engineering.",
     },
-
     standardDimensions: [
       {
+        itemNo: "SR002701",
         spec: "Fine regrind — PET flake, film",
         od: "8",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
+        itemNo: "SR002702",
         spec: "Fine regrind — PET flake, film",
         od: "10",
         bolt: "12 – 15",
         thickness: "5",
       },
-      { spec: "General regrind", od: "12", bolt: "15", thickness: "6" },
-      { spec: "General regrind", od: "16", bolt: "15 – 20", thickness: "7" },
-      { spec: "Coarse regrind", od: "20", bolt: "20", thickness: "8" },
-      { spec: "Coarse regrind", od: "25", bolt: "20 – 25", thickness: "9" },
       {
+        itemNo: "SR002703",
+        spec: "General regrind",
+        od: "12",
+        bolt: "15",
+        thickness: "6",
+      },
+      {
+        itemNo: "SR002704",
+        spec: "General regrind",
+        od: "16",
+        bolt: "15 – 20",
+        thickness: "7",
+      },
+      {
+        itemNo: "SR002705",
+        spec: "Coarse regrind",
+        od: "20",
+        bolt: "20",
+        thickness: "8",
+      },
+      {
+        itemNo: "SR002706",
+        spec: "Coarse regrind",
+        od: "25",
+        bolt: "20 – 25",
+        thickness: "9",
+      },
+      {
+        itemNo: "SR002707",
         spec: "Pre-shred / bulky waste",
         od: "30",
         bolt: "25",
         thickness: "10",
       },
       {
+        itemNo: "SR002708",
         spec: "Pre-shred / bulky waste",
         od: "40",
         bolt: "25 – 30",
         thickness: "12",
       },
       {
+        itemNo: "SR002709",
         spec: "Primary shred / RDF",
         od: "50 – 80",
         bolt: "30",
         thickness: "14 – 20",
       },
     ],
-
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "single-shaft-bed-knives",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 120,
       highPrice: 1900,
     },
-
+    components: [
+      {
+        id: "shredder-screens-advantage-1",
+        tag: "Plate and Wear-Resistant Material Options",
+        title: "Plate and Wear-Resistant Material Options",
+        description:
+          "S355J2, Hardox 400, 450 and 500, and hardfaced configurations give you material options for replacement shredder screens, with the chosen construction specified for the feed and panel design.",
+      },
+      {
+        id: "shredder-screens-advantage-2",
+        tag: "Custom Apertures from 8 to 80 mm",
+        title: "Custom Apertures from 8 to 80 mm",
+        description:
+          "Sureay makes round and slotted screen patterns. Listed apertures span 8–80 mm. Aperture size and pitch can be specified together to reproduce the discharge openings and the material left between them.",
+      },
+      {
+        id: "shredder-screens-advantage-3",
+        tag: "Formed Baskets, Plates and Cassette Screens",
+        title: "Formed Baskets, Plates and Cassette Screens",
+        description:
+          "Half-round or full-round baskets, flat plates, sickle forms and cassette configurations can be made to the required curvature and fixing layout for your existing screen supports.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "My throughput has dropped. Should I replace the screen or the knives first?",
+          question: "Which details identify a replacement shredder screen?",
           answer:
-            "Inspect the screen first, because it is cheaper to check and more often the cause. Look for bell-mouthing — holes that have worn conical and enlarged on the inner face — and for blinding, where softened plastic has plugged the apertures. If holes have grown more than about 10% over nominal, the screen is already passing oversize particles and should be replaced regardless of knife condition. In practice the two wear together: a dull knife pushes material against the screen instead of cutting it, and a blinded screen recirculates material that grinds the knife edge. Replacing only one usually means a second shutdown within weeks.",
+            "The machine model, panel outline, plate thickness, curvature and fixing positions establish fit. Hole size and pattern define the discharge openings. A flat plate and a curved basket can share an aperture size while requiring different installation geometry, so use the original panel drawing or unworn reference dimensions for the replacement.",
         },
         {
-          question:
-            "What actually causes screen blinding, and how do I stop it?",
+          question: "How do I choose a shredder screen aperture size?",
           answer:
-            "Blinding is almost always a heat problem, not a hole-size problem. When knives are dull or the rotor-to-screen gap has opened, material is smeared and worked rather than cut. Frictional heat softens the polymer, which then extrudes into the apertures and sets. Fitting a larger screen usually makes the coarse fraction unacceptable without fixing the cause. The durable fixes are sharpening or replacing the knives, restoring the correct rotor gap, and — for heat-sensitive polymers like LDPE and PP film — reducing feed rate or adding cooling. A thicker plate makes blinding worse, not better, because each hole becomes a longer channel to clear.",
+            "Start with the downstream size requirement and the feed shape. Smaller apertures generally target finer output, while larger openings allow coarser material to discharge. Flat or flexible feed can pass differently from rigid pieces, so confirm the existing hole shape and machine configuration. The aperture is an opening size. Actual output has a size distribution.",
         },
         {
-          question:
-            "How much open area can I add before the screen becomes structurally unsafe?",
+          question: "What do screen basket, cassette and screen plate mean?",
           answer:
-            "The limit is set by ligament width, not by open-area percentage. As a working rule, keep the ligament at or above 0.4× the hole diameter for clean plastics and at or above 0.6× for feed that may contain metal, stone or other hard contamination. A 20 mm hole with an 8 mm ligament gives roughly 46% open area and survives contaminated feed; the same hole with a 4 mm ligament reaches about 63% open area but will crack between holes under impact, typically starting at the discharge edge. On abrasive streams we would rather increase plate thickness and accept slightly lower open area than chase throughput with a thin ligament.",
+            "A basket describes a curved screen form, while a plate may be flat or shaped. Cassette describes a removable assembly that can include supporting features. The actual scope of the replacement should identify the perforated panel, frame and fixing details, because these purchasing names can refer to different assemblies on different machines.",
         },
         {
-          question:
-            "Why shouldn't a screen be hardened to the same HRC as the blades?",
+          question: "Can hole shape and pitch be customized?",
           answer:
-            "Because a screen fails differently from a blade. A blade needs edge retention and works in compression at the cutting edge; a screen is a perforated structural member absorbing continuous impact across a large span. Hardened to HRC 58–62, the ligaments lose the ductility they need to absorb shock and crack rather than deform. A cracked screen is far more expensive than a worn one, because fragments entering the rotor can destroy an entire knife set. We specify S355J2 for clean plastics, Hardox 400/450 for mixed post-consumer feed, and Hardox 500 or selective hardfacing for severely abrasive material — all chosen for toughness first.",
+            "Yes. Sureay can make the specified aperture and spacing pattern to the screen drawing. Hole pitch, opening size and plate thickness should be considered together because they determine the open area and material remaining between holes. Include the mounting layout when proposing a pattern change for an existing basket or panel.",
         },
         {
-          question:
-            "Can you manufacture a screen from my worn one if I have no drawing?",
+          question: "How do I choose between structural steel, Hardox and hardfaced screens?",
           answer:
-            "Yes, and this is how most of our screen orders start. Send photographs of the worn screen with a tape measure laid across the hole pitch, plus the machine make and model and, where possible, the overall arc length and end-plate detail. We produce a manufacturing drawing for your written approval before any steel is cut. One important detail: we take hole geometry from the unworn edges rather than the enlarged centre holes, so the new screen restores your original particle size instead of reproducing the worn condition.",
+            "Compare feed abrasiveness and impact with the current screen's wear pattern, thickness and formed geometry. Hardox grades and hardfaced constructions provide alternatives to the listed structural-steel option. Specify the required plate or surface construction explicitly, keeping the machine's support and fixing requirements part of the replacement design.",
         },
         {
-          question:
-            "Do you supply the counter knives, holders and clamping bars as well?",
+          question: "Why does material accumulate at a shredder screen?",
           answer:
-            "Yes. Screens, counter knives, knife holders, clamping bars and spacers are all manufactured in-house and routinely shipped together, which is how we recommend ordering them. Replacing the screen while leaving worn counter knives in place means the new screen blinds faster, and a single consolidated shipment reduces both freight cost and the number of production shutdowns.",
+            "An opening pattern that works with one feed may clog with another, particularly when processing flat material. Compare the accumulated material with the hole pattern and condition before changing aperture size. Screen geometry can address feed-specific passage problems, but a replacement should retain the support and mounting arrangement required by the machine.",
+        },
+        {
+          question: "How do I get a quote for a replacement shredder screen or basket?",
+          answer:
+            "Send the shredder model and screen drawing or part number, panel quantity, feed and target output size. For a custom basket, show the mounting pattern, curvature, plate thickness and hole layout. If a worn panel is your reference, flag enlarged holes, bent areas and damaged fixings.",
         },
       ],
-      company: [
-        {
-          question: "Are you a manufacturer or a trading company?",
-          answer:
-            "We are a direct manufacturer established in 2008. Screens are cut, rolled, drilled and — where specified — hardfaced in our own workshop, which is why we can work from a photograph of a worn part rather than requiring a finished drawing.",
-        },
-        {
-          question:
-            "What is the lead time on a reverse-engineered screen, and how is it packed?",
-          answer:
-            "Standard screens in stocked plate thicknesses ship in 10–15 working days from drawing approval. Reverse-engineered screens add roughly 3–5 days for the drawing and approval cycle. Screens are shipped on fumigated wooden pallets with edge protection and steel strapping; large-diameter baskets are nested to reduce volumetric freight cost.",
-        },
-        {
-          question: "What documentation ships with a screen order?",
-          answer:
-            "Every order includes a dimensional inspection record against the approved drawing and a material certificate for the plate — including the Hardox mill certificate where Hardox grades are specified. Hardfaced screens additionally carry a record of the hardfacing consumable and deposited hardness.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the machine model, hole shape and size, pitch, plate thickness, panel radius and fixing positions. For Ø100 mm round holes, send the model and screen drawing so we can check the configuration.",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -5348,13 +5729,18 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "cutter-compactor-blades",
+    legacyLocaleSeoTitle: "Cutter Compactor Blades | OEM Replacement",
+    seoDescription:
+      "Prepare PE or PP film and PET flakes for extrusion with replacement rotor and stator knives in D2, M2 HSS or carbide-tipped construction.",
     name: "Cutter Compactor Blades",
-    fullName: "Cutter Compactor Rotor & Stator Knives",
-    category: "granulator_blades",
+    fullName: "Cutter Compactor Blades for Extrusion Lines",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Cutter Compactor Blades",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+    imageDimensions: { width: 1500, height: 1500, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: { width: 1920, height: 1920, smallerWidths: [320, 480, 640] },
     badge: "PCR Recycling",
     badgeColor: "orange",
     gallery: [
@@ -5367,196 +5753,211 @@ export const blades: Blade[] = [
       "Cutter compactor blade set — rotor knife, knife holder block and stator knife",
       "Long cutter compactor rotor knife with ground cutting edge and counterbored fixing hole",
     ],
-
     description:
-      "Rotor and stator knives for cutter compactors and agglomerators in D2, M2 HSS and carbide-tipped. Drop-in fit for EREMA, NGR, Starlinger and Previero.",
-
-    fullDescription:
-      "In a cutter compactor — also sold as an agglomerator, densifier or preconditioning unit — rotating knives cut and friction-heat loose film, fibre or PET flake until it softens and densifies into a free-flowing crumb the extruder can actually feed. The knives do two jobs at once: they cut, and they generate the controlled frictional heat that makes densification work. That dual duty is why they wear faster than any other tool on the line, typically needing replacement every three to six months on continuous film and PET operations.\n\nSureay manufactures both the rotating knives and the fixed stator knives, plus the holder blocks and pre-cutter blades that mount with them. Blades are ground flat and parallel across their full length, because on a compactor the flatness of the mounting face is what determines whether the cutting gap you set at installation is the gap you still have at the far end of the knife.\n\n## Cutting Gap: The Variable That Controls Everything\n\nThe gap between the rotating knife and the fixed stator knife is the single most consequential setting on a cutter compactor, and the one most often left unchecked between blade changes.\n\n**Gap too wide.** Material is kneaded rather than cut. Frictional heat climbs beyond the intended window, film smears into lumps instead of forming a uniform crumb, bulk density becomes inconsistent, and the extruder downstream sees a fluctuating feed. On PET flake, excess heat drives moisture-related degradation before the material ever reaches the dryer. Throughput falls while power consumption rises — the classic signature of a worn or badly set gap.\n\n**Gap too narrow.** The knives contact under load. Edges chip, motor current spikes on every heavy charge, and in the worst case a rotating knife strikes the stator hard enough to damage the holder block or the rotor disc itself — a repair an order of magnitude more expensive than the blades.\n\nTypical working gaps run in the region of 0.2–0.5 mm depending on machine size and material, but the correct figure is the one in your machine manual. What matters is that the gap can actually be held: if the blade's mounting face is not flat, or if the rotor knife and stator knife have worn by different amounts, the gap varies along the cutting length no matter how carefully it was set.\n\n## Why Rotor and Stator Knives Are Replaced as a Set\n\nRotating and fixed knives wear at different rates and in different geometries — the rotor knife loses its edge, while the stator knife tends to wear a radius and to hollow slightly where the material stream concentrates. Fitting a new rotor knife against a worn stator restores only half the cutting geometry: the gap becomes uneven along its length, the new blade carries the whole cutting load, and it dulls far faster than it should. Replacing both together costs more per shutdown and less per tonne.\n\n## Material Selection by Feedstock\n\n**D2 (1.2379), HRC 58–61** — the general-purpose choice for clean LDPE, LLDPE and PP film, woven bags and pre-consumer production scrap. Good edge retention, forgiving of the occasional impact, and the most economical to re-sharpen.\n\n**M2 HSS (1.3343), HRC 62–64** — for PET flake, printed and heavily dusted film, and post-consumer material carrying paper label residue or fine mineral contamination. Retains its edge at the elevated temperatures inside a working compactor, where D2 begins to soften.\n\n**Carbide-tipped, HRA 89–91 at the edge** — for glass-fibre reinforced compounds, mineral-filled material, carbon-black masterbatch and high-ash feedstocks. Substantially longer intervals between changes on streams that destroy tool steel, at a higher unit price and with less tolerance for impact.\n\n## Machine Compatibility\n\nBlades are reverse-engineered to EREMA (INTAREMA, TVEplus and RegrindPro preconditioning units), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac and Munchy machines. Send the machine model and a photograph of the worn blade, or the blade itself, and we will produce a drawing for approval before manufacture.",
-
+      "Replacement rotor and stator knives for plastic cutter compactors. D2, M2 HSS and carbide-tipped options, with custom profiles for extrusion feed preparation.",
     link: "/products/cutter-compactor-blades",
-
     compatibleMachines: [
-      "EREMA",
-      "NGR",
-      "Starlinger",
-      "Erdwich",
-      "Previero",
-      "Sorema",
-      "Plasmac",
-      "Munchy",
+      "EREMA", "NGR", "Starlinger", "Erdwich", "Previero", "Sorema", "Plasmac", "Munchy",
     ],
-
+    compatibleMachinesIntro:
+      "Source replacement cutter-compactor knives for your extrusion line, including rotor, stator and pre-cutter positions. Sureay offers custom profiles in D2, M2 HSS and carbide-tipped constructions. Share your drawing or sample for a quotation covering the knives and separately specified holder blocks. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "compactor-knife-positions",
+        tag: "Knife positions",
+        title: "Steel and Carbide-Tipped Cutting Options",
+        description:
+          "D2, M2 HSS and carbide-tipped knives give you material and construction choices for plastic feed preparation, with the replacement specified around the feed form and existing knife position.",
+      },
+      {
+        id: "compactor-edge-construction",
+        tag: "Edge construction",
+        title: "Rotor, Stator and Pre-Cutter Knives",
+        description:
+          "Sureay supplies moving, fixed and pre-cutter knives for cutter-compactor assemblies. Listed knife lengths span 80–400 mm. Each position can be ordered separately or coordinated with the other cutting positions in the assembly.",
+      },
+      {
+        id: "compactor-process-position",
+        tag: "Process position",
+        title: "Custom Profiles with Holder Blocks",
+        description:
+          "Custom blade outlines, fixing features and cutting profiles can be quoted alongside the required holder blocks, keeping the blade and its supporting parts aligned with your existing assembly.",
+        relatedBladeIds: ["granulator-blades"],
+      },
+    ],
     specs: [
+      { label: "Sizes", value: "80–400 mm" },
+      { label: "Application", value: "Preconditioning feedstock before extrusion" },
       {
         label: "Knife Types",
-        value: "Rotor (movable) · Stator (fixed) · Pre-cutter · Holder block",
+        value:
+          "Rotor knives, fixed stator knives, pre-cutter knives and knife holder blocks",
       },
       {
         label: "Material",
-        value: "D2 (1.2379) · M2 HSS (1.3343) · Carbide-tipped",
+        value: "D2 (1.2379), M2 HSS (1.3343) or carbide-tipped construction",
       },
       {
         label: "Hardness",
-        value: "HRC 58–61 (D2) · HRC 62–64 (M2) · HRA 89–91 (carbide)",
+        value: "D2: HRC 58–61; M2: HRC 62–64; carbide cutting edge: HRA 89–91",
       },
+      { label: "Face Flatness", value: "≤0.03 mm over the blade length" },
+      { label: "Parallelism", value: "≤0.02 mm" },
       {
-        label: "Typical Cutting Gap",
-        value: "0.2 – 0.5 mm (machine-dependent)",
+        label: "Feedstock",
+        value: "PE / PP film, PET flake, woven bags, fibre and foam",
       },
-      { label: "Face Flatness", value: "≤ 0.03 mm over full blade length" },
-      { label: "Parallelism", value: "≤ 0.02 mm" },
+      { label: "Typical Cutting Gap", value: "0.2–0.5 mm (machine-dependent)" },
       {
         label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
-      },
-      {
-        label: "Applications",
-        value: "PE / PP Film, PET Flake, Woven Bags, Fibre, Foam",
-      },
-      {
-        label: "OEM Fitment",
-        value: "EREMA, NGR, Starlinger, Previero, Sorema, Erdwich",
+        value: "Vacuum hardening and deep cryogenic treatment (−196°C)",
       },
     ],
-
-    componentsIntro:
-      "Compactor blades fail in one of three ways: the edge goes, the gap drifts, or the blade chips on contamination. Each has a different fix, and specifying for the wrong one wastes money.",
-
-    components: [
-      {
-        id: "gap-holding-geometry",
-        tag: "GEOMETRY",
-        title: "A Gap You Set Once and Keep",
-        description:
-          "Ground to ≤0.03 mm flatness and ≤0.02 mm parallelism over the full blade length. The gap you dial in at installation stays uniform end to end, instead of opening at one end and closing at the other as load is applied.",
-      },
-      {
-        id: "feedstock-matched-alloy",
-        tag: "METALLURGY",
-        title: "Alloy Matched to What You Actually Run",
-        description:
-          "D2 for clean PE and PP film, M2 HSS for PET flake and dusted post-consumer material that softens D2 at working temperature, carbide-tipped for glass-filled and high-ash streams. Specified from your feedstock, not from a default.",
-      },
-      {
-        id: "matched-rotor-stator-sets",
-        tag: "SERVICE LIFE",
-        title: "Supplied as Matched Rotor + Stator Sets",
-        description:
-          "Rotor and stator knives wear to different geometries. Fitting a new rotor knife against a worn stator leaves the gap uneven and loads the new blade alone — it dulls in a fraction of its rated life. We quote and ship them as sets.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Knife Type",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Representative envelope sizes across common compactor platforms. Every blade is manufactured to the OEM drawing or reverse-engineered from your sample — send the machine model and a photograph of the worn blade for an exact quotation.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Rotor knife (movable)",
-        od: "150 – 250",
-        bolt: "40 – 60",
-        thickness: "8 – 12",
-      },
-      {
-        spec: "Rotor knife (movable)",
-        od: "250 – 400",
-        bolt: "60 – 80",
-        thickness: "12 – 20",
-      },
-      {
-        spec: "Stator knife (fixed)",
-        od: "120 – 220",
-        bolt: "40 – 60",
-        thickness: "10 – 16",
-      },
-      {
-        spec: "Stator knife (fixed)",
-        od: "220 – 350",
-        bolt: "60 – 80",
-        thickness: "16 – 25",
-      },
-      {
-        spec: "Pre-cutter / feed blade",
-        od: "80 – 160",
-        bolt: "30 – 50",
-        thickness: "8 – 14",
-      },
-      {
-        spec: "Knife holder block",
-        od: "60 – 120",
-        bolt: "50 – 90",
-        thickness: "20 – 40",
-      },
-    ],
-
     relatedBladeIds: [
-      "continuous-melt-filter-scraper-blades",
       "granulator-blades",
-      "strand-pelletizer-rotors",
+      "continuous-melt-filter-scraper-blades",
     ],
     offers: {
       lowPrice: 40,
       highPrice: 560,
     },
-
     faqs: {
       technical: [
         {
-          question:
-            "What cutting gap should I set between the rotor and stator knives?",
+          question: "Are agglomerator knives and cutter-compactor blades the same?",
           answer:
-            "Use the figure in your machine manual — it is machine- and material-specific, and typically falls somewhere in the 0.2–0.5 mm range. The more useful question is whether the gap stays where you set it. If the blade mounting face is not flat, or if you have fitted a new rotor knife against a worn stator, the gap will vary along the cutting length regardless of how carefully it was dialled in. Set the gap with feeler gauges at both ends and the centre of the blade, not at a single point, and re-check it after the first few hours of running once everything has seated and reached working temperature.",
+            "Yes, the names can refer to knives on the same extrusion feed-preparation equipment. The actual part depends on the machine and on whether the knife sits on the rotor, stator or pre-cutting station.",
         },
         {
-          question:
-            "My compactor is running hot and the output is lumpy instead of a uniform crumb. What's wrong?",
+          question: "How do flexible film and pre-cut flakes affect knife selection?",
           answer:
-            "That is the classic signature of an over-wide cutting gap, usually from worn blades. When the gap opens, material is kneaded rather than cut, so frictional heat rises past the intended window, film smears into lumps, and bulk density becomes erratic — which the extruder sees as a fluctuating feed. You will typically also see power consumption up and throughput down at the same time. Check the gap and the blade edges before adjusting temperature setpoints or feed rate, because those are compensations for the real problem rather than fixes.",
+            "Flexible film and pre-cut flakes present different feed forms to the preconditioning unit. Compare the installed knife position and bevel with the material being processed. Retaining those details helps specify a replacement, while a change of feed form may require review of the machine's intended knife configuration.",
         },
         {
-          question:
-            "Can I replace only the rotor knives and keep the stator knives?",
+          question: "When should carbide-tipped compactor knives be considered?",
           answer:
-            "You can, but it is usually a false economy. The two wear to different geometries — the rotor knife loses its edge while the stator tends to wear a radius and hollow where the material stream concentrates. A new rotor knife running against a worn stator carries the entire cutting load across an uneven gap and will dull far faster than its rated life, so you end up back at the same shutdown sooner. Replacing both together costs more per changeover and less per tonne processed.",
+            "Evaluate carbide-tipped edges when the current steel knife's wear pattern suggests an abrasive duty, alongside the cleanliness and consistency of the feed. Recurring impact damage calls for a separate assessment of contamination and edge support. Compare the complete blade construction and bevel with the original rotor or stator configuration.",
         },
         {
-          question:
-            "How do I choose between D2, M2 HSS and carbide-tipped blades?",
+          question: "Can a granulator knife replace a cutter-compactor knife?",
           answer:
-            "Match the alloy to your feedstock. D2 at HRC 58–61 is the economical default for clean LDPE, LLDPE and PP film, woven bags and pre-consumer scrap. Move to M2 HSS at HRC 62–64 for PET flake and for printed or dusty post-consumer film — M2 holds its edge at the elevated temperature inside a working compactor, where D2 starts to soften. Reserve carbide-tipped blades for glass-fibre reinforced compounds, mineral-filled material and high-ash streams; they last dramatically longer on those feeds but cost more and tolerate impact less well, so they are the wrong choice if your feed contains occasional metal.",
+            "Generally no. Cutter-compactor knives prepare feed for extrusion, while [Plastic Granulator Knives](/products/granulator-blades) cut material into regrind. Choose by the working position, knife seat and cutting profile even if the two blades have similar lengths or hole spacing.",
         },
         {
-          question:
-            "How many times can a cutter compactor blade be re-sharpened?",
+          question: "Can Sureay supply rotor and stator knives together?",
           answer:
-            "Three to five regrinds is typical for D2 and M2 blades before the blade reaches its minimum usable height and the gap can no longer be adjusted to compensate. Each regrind removes material from the cutting face, so the blade sits progressively lower in its holder — most machines allow this to be taken up with shims up to a point. Carbide-tipped blades are re-ground on the carbide only and generally allow fewer cycles. We mark the minimum height on the manufacturing drawing so your maintenance team knows when a blade is finished rather than guessing.",
+            "Yes. Moving and fixed knives can be included in one order with each position separately identified. List any pre-cutter knives and holder blocks as distinct items. The machine model and drawings define the relevant profiles, cutting directions and quantities for the complete replacement requirement.",
+        },
+        {
+          question: "How do I get a quote for cutter compactor knives and holder blocks?",
+          answer:
+            "Send the machine model, drawings or part numbers and quantities by rotor, stator and pre-cutter position. Describe whether you process film or pre-cut flakes, and indicate whether holder blocks are needed. If the reference knife was sharpened, distinguish its remaining edge position from the original dimension.",
         },
       ],
-      company: [
-        {
-          question:
-            "Can you make blades for my compactor without an OEM drawing?",
-          answer:
-            "Yes — this is the majority of what we do on this product. Send the machine make and model plus a worn blade, or clear photographs with measurements across length, width, thickness and the mounting hole positions. We produce a manufacturing drawing for your written approval before cutting steel, and we keep it on file so repeat orders need no re-measurement.",
-        },
-        {
-          question: "What is the lead time, and can I trial a set first?",
-          answer:
-            "Blades manufactured to an existing drawing ship in 10–15 working days. First-time reverse-engineered blades add roughly 3–5 days for drawing and approval. We supply trial sets for machine-fit verification and edge-life testing before you commit to a production quantity — for custom profiles we produce a dimensional sign-off sample first, so there is no tooling commitment until fit is confirmed.",
-        },
-        {
-          question: "What documentation comes with the blades?",
-          answer:
-            "Each shipment includes a Rockwell hardness test certificate, a dimensional inspection record against the approved drawing, a steel mill material traceability certificate and a heat treatment batch record. Full CMM dimensional reports are available on request for OEM qualification.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the compactor model, rotor or stationary position, blade drawing, polymer, feed form and wear pattern.",
+    dimensionLabels: {
+      "col0": "Knife Type",
+      "col1": "Length (mm)",
+      "col2": "Width (mm)",
+      "col3": "Thickness (mm)",
+      "caption": "* Representative envelope sizes across common compactor platforms. Every blade is manufactured to the OEM drawing or reverse-engineered from your sample — send the machine model and a photograph of the worn blade for an exact quotation."
+    },
+    standardDimensions: [
+      {
+        "itemNo": "SR007301",
+        "spec": "Rotor knife (movable)",
+        "od": "150 – 250",
+        "bolt": "40 – 60",
+        "thickness": "8 – 12"
+      },
+      {
+        "itemNo": "SR007302",
+        "spec": "Rotor knife (movable)",
+        "od": "250 – 400",
+        "bolt": "60 – 80",
+        "thickness": "12 – 20"
+      },
+      {
+        "itemNo": "SR007303",
+        "spec": "Stator knife (fixed)",
+        "od": "120 – 220",
+        "bolt": "40 – 60",
+        "thickness": "10 – 16"
+      },
+      {
+        "itemNo": "SR007304",
+        "spec": "Stator knife (fixed)",
+        "od": "220 – 350",
+        "bolt": "60 – 80",
+        "thickness": "16 – 25"
+      },
+      {
+        "itemNo": "SR007305",
+        "spec": "Pre-cutter / feed blade",
+        "od": "80 – 160",
+        "bolt": "30 – 50",
+        "thickness": "8 – 14"
+      },
+      {
+        "itemNo": "SR007306",
+        "spec": "Knife holder block",
+        "od": "60 – 120",
+        "bolt": "50 – 90",
+        "thickness": "20 – 40"
+      }
+    ],
+    detailLayout: {
+      seoTitle: "Cutter Compactor Blades | Rotor & Stator Knives",
+      heroAlt: "Cutter compactor stator knives with ground cutting edges and mounting features",
+      sizeRange: "80–400 mm",
+      heroSpecs: [
+        { label: "Material", value: "D2, M2 HSS or carbide-tipped construction" },
+        { label: "Application", value: "Preconditioning plastics before extrusion" },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "80–400 mm" },
+        { label: "Application", value: "Preconditioning feedstock before extrusion" },
+        {
+          label: "Knife Types",
+          value:
+            "Rotor knives, fixed stator knives, pre-cutter knives and knife holder blocks",
+        },
+        {
+          label: "Material",
+          value: "D2 (1.2379), M2 HSS (1.3343) or carbide-tipped construction",
+        },
+        {
+          label: "Hardness",
+          value: "D2: HRC 58–61; M2: HRC 62–64; carbide cutting edge: HRA 89–91",
+        },
+        { label: "Face Flatness", value: "≤0.03 mm over the blade length" },
+        { label: "Parallelism", value: "≤0.02 mm" },
+        {
+          label: "Feedstock",
+          value: "PE / PP film, PET flake, woven bags, fibre and foam",
+        },
+        { label: "Typical Cutting Gap", value: "0.2–0.5 mm (machine-dependent)" },
+        {
+          label: "Heat Treatment",
+          value: "Vacuum hardening and deep cryogenic treatment (−196°C)",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
+        alt: "Cutter compactor rotor knife with a ground cutting edge and fixing hole",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your compactor knives",
+        description: "Include the machine model, rotor or stator position, blade drawing or sample, feed form and quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    disambiguation:
+      "For regrind production, see [Plastic Granulator Knives](/products/granulator-blades).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -5564,13 +5965,15 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "die-face-cutting-knives",
-    name: "Die Face Cutting Knives & Pelletizer Blades",
-    fullName: "Die Face Cutting Knives & Pelletizer Blades",
-    category: "granulator_blades",
+    name: "Die-Face Cutting Knives",
+    fullName: "Die-Face Cutting Knives for Plastic Pelletizers",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Die Face Cutting Knives",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+    imageDimensions: { width: 1200, height: 1200, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: { width: 1199, height: 899, smallerWidths: [320, 480, 640] },
     badge: "Die-Safe",
     badgeColor: "blue",
     gallery: [
@@ -5583,141 +5986,72 @@ export const blades: Blade[] = [
       "Close-up of a single die face cutting knife showing the ground cutting edge and twin mounting slots",
       "Pair of die face cutting knives on a white background showing slot geometry and edge finish",
     ],
-
     description:
-      "Die face cutting knives for underwater, water-ring and hot die face pelletizers, ground softer than your die plate. Fits Gala, Nordson BKG, Maag, ECON.",
-
-    fullDescription:
-      "A die face cutting knife — also sold as an underwater pelletizer blade, die face cutter knife, hot die face knife or UWP knife — is a consumable running in permanent sliding contact with a die plate worth tens of thousands of dollars. That asymmetry defines the entire specification problem: the blade must be hard enough to hold a cutting edge against hot polymer, and deliberately softer than the die face it rides on, so that wear is absorbed by the part you intend to replace.\n\nThis is the same controlled-wear logic Sureay applies to continuous melt filter scraper blades, and it is why we quote a hardness differential rather than simply the highest hardness available. A blade harder than the die plate does not last longer — it scores the die face, opens the cutting gap, and turns a routine blade change into a die refurbishment.\n\n## Three Pelletizing Methods, Three Different Blades\n\n**Underwater pelletizing (UWP).** The die face is fully submerged in a temperature-controlled water box. Pellets are cut directly at the die face and carried away as a slurry. Blades run wet and warm, which makes corrosion resistance a genuine selection factor — 440C stainless earns its place here despite lower edge retention than tool steel.\n\n**Water-ring pelletizing.** An annular water curtain cools pellets after they are cut, but the die face itself runs in air. Thermal cycling on the blade edge is more severe than in true underwater cutting, favouring tougher grades over the hardest ones.\n\n**Hot die face pelletizing.** Cutting happens dry against a heated die, with pellets conveyed away by air. The highest edge temperature of the three methods, and the strongest case for PM-HSS or carbide.\n\n## Blade Geometry\n\nEdge form is chosen from polymer viscosity and the pellet shape you want:\n\n- **45° bevel** — the general-purpose geometry. Good balance of edge strength and cutting sharpness across commodity polyolefins.\n- **90° square edge** — maximum edge strength for stiff, filled or highly abrasive compounds where a fine bevel would chip.\n- **Stepped bevel** — a two-stage relief that keeps a sharp cutting line while leaving a robust land behind it. Used where a fine edge is needed but blade life on a 45° would be unacceptable.\n- **Curved / hooked** — draws the melt strand into the cut rather than pushing it away. Suited to low-viscosity and tacky polymers that smear against a straight edge.\n\n## Why Thickness Consistency Within a Set Decides Blade Life\n\nA pelletizer runs a full set of blades on one cutter hub, held against the die face by a common preload. If the blades in that set vary in thickness, the thickest blades carry a disproportionate share of the contact pressure while the thinnest barely touch. The result is a set that wears unevenly, a cut quality that degrades long before the average blade is worn out, and localized die face scoring under the high blades.\n\nWe grind blades in matched sets and verify thickness consistency across the set on a CMM, rather than inspecting to a per-piece tolerance alone. Flatness matters for the same reason: a blade that is not flat contacts the die on an edge rather than across its land.\n\n## Material Selection\n\n**D2 (1.2379)** — economical general-purpose grade for clean commodity polyolefins.\n**M2 HSS (1.3343)** — better hot hardness for higher-temperature and engineering polymers.\n**T42 (1.3207)** — high-tungsten HSS for sustained elevated-temperature cutting.\n**PM powder-metallurgy HSS** — uniform fine carbide structure, the best combination of edge retention and toughness for abrasive and filled compounds.\n**440C stainless** — for underwater service where corrosion resistance outweighs peak edge life, particularly on lines that sit idle between campaigns.\n**Tungsten carbide** — maximum life on glass-filled and mineral-filled compounds, where its brittleness is an acceptable trade.\n\n## Machine Compatibility\n\nBlades are manufactured to suit Gala, Nordson BKG (including AH series), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec and WRP pelletizing systems. Send the machine model with a sample blade or a photograph with measurements, and we will produce a drawing for approval. Cutter hubs, die plates, threaded rods, blade screws and O-rings are supplied alongside the blades.",
-
-    disambiguation:
-      "Cutting extruded strands in air rather than at the die face? See [Strand Pelletizer Rotors](/products/strand-pelletizer-rotors) for helical rotor and bed knife sets.",
+      "Replacement die-face pelletizer knives for underwater, water-ring and hot-face systems. Custom blade slots, edge profiles and matched sets to drawing.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
-
     compatibleMachines: [
-      "Gala",
-      "Nordson BKG",
-      "Maag",
-      "ECON",
-      "Coperion",
-      "Starlinger",
-      "NGR",
-      "Tecnova",
-      "IPS",
-      "Filtec",
+      "Gala", "Nordson BKG", "Maag", "ECON", "Coperion", "Starlinger", "NGR", "Tecnova", "IPS", "Filtec",
     ],
-
-    specs: [
+    compatibleMachinesIntro:
+      "Get replacement die-face cutting knives made for your cutter hub, with custom slots, shoulders and edge profiles. Sureay offers matched knife sets in steel, HSS, stainless and carbide configurations. Send your drawings for a quotation tailored to your pelletizing system. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
       {
-        label: "Material",
-        value: "D2 · M2 HSS · T42 · PM-HSS · 440C Stainless · Carbide",
+        id: "die-face-body-profiles",
+        tag: "Body profiles",
+        title: "Material Choices for the Blade-and-Die Pair",
+        description:
+          "Sureay offers D2, M2 HSS, T42, PM-HSS, 440C stainless steel and carbide configurations, allowing knife material to be selected with the polymer and mating die plate.",
       },
       {
-        label: "Hardness Differential",
-        value: "Blade held below die plate hardness (controlled wear)",
+        id: "die-face-working-edge",
+        tag: "Working edge",
+        title: "Custom Bodies and Working-Edge Profiles",
+        description:
+          "Listed knife bodies span 45–70 mm in length. Sureay makes straight, forked and stepped bodies with the slots, seating faces and square, bevelled or curved working edges specified for the installed cutter hub.",
+      },
+      {
+        id: "die-face-pelletizing-station",
+        tag: "Pelletizing method",
+        title: "Matched Knife Sets and Companion Components",
+        description:
+          "Order matched knife sets made to a common drawing, with blade thickness, seating geometry and cutting direction specified for the required hub positions. Hubs and die plates can be included in the enquiry.",
+        relatedBladeIds: ["strand-pelletizer-rotors"],
+      },
+    ],
+    specs: [
+      { label: "Application", value: "Pellet cutting at the extrusion die face" },
+      {
+        label: "Material",
+        value: "D2, M2 HSS, T42, PM-HSS, 440C stainless steel or carbide",
       },
       {
         label: "Edge Geometry",
-        value: "45° bevel · 90° square · Stepped bevel · Curved / hooked",
+        value: "45° bevel, 90° square, stepped bevel or curved / hooked edge",
       },
+      { label: "Sizes", value: "45–70 mm" },
       {
         label: "Thickness Consistency",
-        value: "≤ 0.01 mm variation within a matched set",
+        value: "≤0.01 mm variation within a matched set",
       },
-      { label: "Flatness", value: "≤ 0.01 mm" },
+      { label: "Flatness", value: "≤0.01 mm" },
       {
         label: "Pelletizing Methods",
-        value: "Underwater · Water-ring · Hot die face",
+        value: "Underwater, water-ring or hot die-face pelletizing",
+      },
+      {
+        label: "Hardness Differential",
+        value:
+          "Blade hardness below the mating die plate (controlled-wear configuration)",
       },
       {
         label: "Supply Format",
         value: "Matched sets, CMM-verified; hubs and die plates available",
       },
-      {
-        label: "OEM Fitment",
-        value: "Gala, Nordson BKG, Maag, ECON, Coperion, NGR",
-      },
     ],
-
-    componentsIntro:
-      "The die plate is the asset; the blade is the consumable. Everything below follows from keeping that relationship the right way round.",
-
-    components: [
-      {
-        id: "die-plate-protection",
-        tag: "CONTROLLED WEAR",
-        title: "Your Die Plate Outlives the Blade",
-        description:
-          "Blade hardness is specified below the die face hardness so the consumable absorbs the wear. A blade harder than the die does not last longer — it scores the die face, opens the cutting gap and turns a blade change into a die refurbishment.",
-      },
-      {
-        id: "matched-set-grinding",
-        tag: "PRECISION",
-        title: "Ground and Verified as a Matched Set",
-        description:
-          "Thickness consistency within ≤0.01 mm across the set, CMM-verified. A full set shares one preload against the die: thick blades take the load and score the die, thin ones never cut. Per-piece tolerance alone does not prevent this.",
-      },
-      {
-        id: "geometry-by-polymer",
-        tag: "GEOMETRY",
-        title: "Edge Form Chosen From Your Polymer",
-        description:
-          "45° for commodity polyolefins, 90° for filled and abrasive compounds, stepped bevel where a fine edge is needed but must survive, hooked for low-viscosity and tacky melts that smear against a straight edge.",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Blade Profile",
-      col1: "Length × Width (mm)",
-      col2: "Thickness (mm)",
-      col3: "Mounting",
-      caption:
-        "* Representative geometries from blades currently in production. Underwater pelletizer blades are made to the specific cutter hub — send the machine model with a sample blade or a dimensioned photograph for an exact quotation.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Straight, twin slot",
-        od: "45 × 25",
-        bolt: "3 – 6",
-        thickness: "2 × Ø5.5 slots",
-      },
-      {
-        spec: "Straight, twin slot",
-        od: "60 × 30",
-        bolt: "3 – 6",
-        thickness: "2 × R3.5 slots",
-      },
-      {
-        spec: "Straight, wide body",
-        od: "60 × 46",
-        bolt: "4 – 8",
-        thickness: "2 × R3.5, R5 relief",
-      },
-      {
-        spec: "Forked, triple slot",
-        od: "55 × 34",
-        bolt: "3 – 6",
-        thickness: "3 × R3.5 slots",
-      },
-      {
-        spec: "Stepped / shouldered",
-        od: "60 × 35",
-        bolt: "4 – 8",
-        thickness: "2 slots, 129° flank",
-      },
-      {
-        spec: "Tapered / hooked",
-        od: "70 × 60",
-        bolt: "4 – 8",
-        thickness: "63° flank",
-      },
-    ],
-
     drawings: {
       intro:
-        "Most pelletizer blade orders reach us without an OEM drawing — a customer sends a worn blade, or a photograph and a machine model. The geometries below are drawings we produced that way, from measurement to approved manufacturing print. They show the range of body shapes, slot patterns and flank angles we hold in production, and what your own blade would look like once reverse-engineered.",
+        "These drawing examples show how body shape, mounting slots and flank angles vary by cutter hub. Use your approved drawing or a measured sample when requesting a replacement.",
       items: [
         {
           image:
@@ -5776,73 +6110,155 @@ export const blades: Blade[] = [
         },
       ],
     },
-
     relatedBladeIds: [
       "strand-pelletizer-rotors",
       "continuous-melt-filter-scraper-blades",
-      "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 18,
       highPrice: 320,
     },
-
     faqs: {
       technical: [
         {
-          question: "Will your blades damage my die plate?",
+          question: "Which replacement die-face knife fits my pelletizer?",
           answer:
-            "Not if the hardness relationship is specified correctly, and that is the first thing we establish on any enquiry. The blade is deliberately held below the hardness of the die face so wear is absorbed by the consumable. A blade harder than the die plate does not give you longer life — it scores the die face, which opens the cutting gap, degrades pellet quality and eventually requires the die to be re-ground or replaced. Tell us the die plate material and hardness, or the machine model if you do not have it, and we specify the blade against it. Every shipment carries a hardness certificate so you can verify the relationship before the blades go on.",
+            "Identify the pelletizer and cutter hub, then specify the knife body, thickness, fixing slots, seating face and cutting direction. Die-face knives and hot-face pelletizer blades are related purchasing terms. The complete working profile and mounting relationship establish the particular replacement within that machine.",
         },
         {
-          question:
-            "Why does one blade in my set wear out much faster than the others?",
+          question: "Are underwater, water-ring and hot-face pelletizer knives interchangeable?",
           answer:
-            "Almost always uneven thickness within the set. A full set of blades shares one preload against the die face, so if thickness varies from blade to blade the thickest ones carry a disproportionate share of the contact pressure — they wear rapidly and score the die, while the thinnest blades barely make contact and never cut properly. The set fails long before the average blade is worn out. This is why we grind blades in matched sets and CMM-verify thickness consistency across the set to within 0.01 mm, rather than inspecting each blade to a tolerance in isolation.",
+            "No. Underwater, water-ring and hot-face machines can use different hubs, mounting features and blade profiles. Match the actual hub and knife drawing. If the machine cuts strands underwater with a toothed rotor and bed knife, see [Strand Pelletizer Rotors](/products/strand-pelletizer-rotors).",
         },
         {
-          question:
-            "Which edge geometry should I use — 45°, 90°, stepped or hooked?",
+          question: "Why does die-plate material matter when choosing the knife?",
           answer:
-            "Choose from polymer viscosity and filler content. A 45° bevel is the general-purpose geometry and the right default for commodity polyolefins. Move to a 90° square edge for stiff, mineral-filled or highly abrasive compounds where a fine bevel would chip. A stepped bevel gives you a sharp cutting line with a robust land behind it, for cases where you need the fine edge but a plain 45° will not survive. Curved or hooked geometry draws the melt into the cut instead of pushing it away, which is what you want on low-viscosity or tacky polymers that smear against a straight edge.",
+            "The knife and die face form a working pair, so their materials and wear characteristics need to be considered together. Use the original die-face specification alongside the polymer and current knife wear. A change in blade hardness or construction should preserve the material relationship intended for that pelletizing system.",
         },
         {
-          question:
-            "Should I use stainless steel blades for underwater pelletizing?",
+          question: "Why should knives in one set share the specified seating geometry?",
           answer:
-            "440C stainless is worth specifying when corrosion is a real operating factor — particularly on lines that sit idle between campaigns, where a tool steel blade can develop surface rust in the water box that then scores the die on restart. The trade-off is edge retention: 440C will not hold an edge as long as M2 or PM-HSS at the same duty. If your line runs continuously and the water chemistry is controlled, tool steel or PM-HSS usually gives better cost per tonne. If it stops and starts, or the water box is not drained, the stainless option often pays for itself.",
+            "Each blade must reach its intended working position on the hub. Variations in thickness, seating faces or edge position can affect how the knives meet the die. Specify the complete set to the same drawing revision, including any deliberately different positions, so the installed cutting geometry is clearly defined.",
         },
         {
-          question:
-            "How do underwater, water-ring and hot die face blades differ?",
+          question: "What should be reviewed when one knife wears faster than the others?",
           answer:
-            "They differ mainly in the thermal and corrosive environment at the edge. Underwater blades run submerged and warm, so corrosion resistance is a genuine selection factor. Water-ring blades cut at a die face running in air with the water curtain downstream, which subjects the edge to more severe thermal cycling and favours tougher grades over the hardest ones. Hot die face blades cut dry against a heated die and see the highest edge temperature of the three, which is where PM-HSS and carbide earn their premium. Tell us which method your line uses — it changes the recommended grade even when the blade dimensions are identical.",
+            "Start by checking whether that knife sits at the same specified height and angle as the others on the hub. Compare its thickness, seating face and edge position, then check holder alignment and the shared die face. Inspecting those contact points helps assess uneven wear before changing the blade material.",
         },
         {
-          question:
-            "Do you supply cutter hubs and die plates as well as blades?",
+          question: "Can Sureay reproduce a forked or stepped knife from a sample?",
           answer:
-            "Yes. Cutter hubs, die plates, threaded rods, blade fixing screws and O-rings are all available, and ordering the wear set together avoids the mismatch that causes uneven blade loading. If you are replacing a hub as well as blades, we recommend supplying them together so the blade seating faces and the hub are verified against each other before shipment.",
+            "Yes. A sample can identify the outline, slots and seating features, while the drawing establishes the intended new dimensions and cutting profile. Mark the working face and cutting direction clearly. The illustrated shapes provide references, with the complete thickness and mounting details defining the blade for your cutter hub.",
+        },
+        {
+          question: "What do you need to quote die-face pelletizer blades, hubs or die plates?",
+          answer:
+            "Provide the pelletizer model, polymer, knife drawing and quantity for the set. Show the blade seats, fixing slots and cutting direction. If the quote should include a cutter hub or die plate, send a separate drawing or part reference for each and identify the components you will retain.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Include the pelletizer and cutter hub model, blade drawing, slot pattern, working edge direction and die plate details.",
+    dimensionLabels: {
+      "col0": "Blade Profile",
+      "col1": "Length × Width (mm)",
+      "col2": "Thickness (mm)",
+      "col3": "Mounting",
+      "caption": "* Representative geometries from blades currently in production. Underwater pelletizer blades are made to the specific cutter hub — send the machine model with a sample blade or a dimensioned photograph for an exact quotation."
+    },
+    standardDimensions: [
+      {
+        "itemNo": "SR007401",
+        "spec": "Straight, twin slot",
+        "od": "45 × 25",
+        "bolt": "3 – 6",
+        "thickness": "2 × Ø5.5 slots"
+      },
+      {
+        "itemNo": "SR007402",
+        "spec": "Straight, twin slot",
+        "od": "60 × 30",
+        "bolt": "3 – 6",
+        "thickness": "2 × R3.5 slots"
+      },
+      {
+        "itemNo": "SR007403",
+        "spec": "Straight, wide body",
+        "od": "60 × 46",
+        "bolt": "4 – 8",
+        "thickness": "2 × R3.5, R5 relief"
+      },
+      {
+        "itemNo": "SR007404",
+        "spec": "Forked, triple slot",
+        "od": "55 × 34",
+        "bolt": "3 – 6",
+        "thickness": "3 × R3.5 slots"
+      },
+      {
+        "itemNo": "SR007405",
+        "spec": "Stepped / shouldered",
+        "od": "60 × 35",
+        "bolt": "4 – 8",
+        "thickness": "2 slots, 129° flank"
+      },
+      {
+        "itemNo": "SR007406",
+        "spec": "Tapered / hooked",
+        "od": "70 × 60",
+        "bolt": "4 – 8",
+        "thickness": "63° flank"
+      }
+    ],
+    detailLayout: {
+      seoTitle: "Die-Face Cutting Knives | Custom Replacement Blades",
+      heroAlt: "Die-face cutting knife profiles with straight, forked and stepped body shapes",
+      sizeRange: "45–70 mm",
+      heroSpecs: [
+        { label: "Material", value: "Tool steel, HSS, PM steel, stainless steel or carbide" },
+        { label: "Application", value: "Pellet cutting at the extrusion die face" },
+      ],
+      technicalSpecs: [
+        { label: "Application", value: "Pellet cutting at the extrusion die face" },
         {
-          question:
-            "Can you reverse-engineer blades from a sample without an OEM drawing?",
-          answer:
-            "Yes, and it is how most pelletizer blade orders begin. Send a sample blade — ideally an unworn one, or a worn one together with the machine model — and we produce a full dimensional drawing on our CMM for your approval before manufacture. We keep the approved drawing on file so repeat orders require no re-measurement. Your drawings and samples remain your intellectual property and are never shared.",
+          label: "Material",
+          value: "D2, M2 HSS, T42, PM-HSS, 440C stainless steel or carbide",
         },
         {
-          question: "What is the lead time, and can I run a trial set first?",
-          answer:
-            "Blades made to an existing approved drawing ship in 10–15 working days; first-time reverse-engineered sets add roughly 3–5 days for measurement, drawing and approval. We supply trial sets for fit verification and edge-life comparison against your current supplier before you commit to a production quantity.",
+          label: "Edge Geometry",
+          value: "45° bevel, 90° square, stepped bevel or curved / hooked edge",
+        },
+        { label: "Sizes", value: "45–70 mm" },
+        {
+          label: "Thickness Consistency",
+          value: "≤0.01 mm variation within a matched set",
+        },
+        { label: "Flatness", value: "≤0.01 mm" },
+        {
+          label: "Pelletizing Methods",
+          value: "Underwater, water-ring or hot die-face pelletizing",
         },
         {
-          question: "What documentation ships with a pelletizer blade set?",
-          answer:
-            "Every set includes a Rockwell hardness certificate — the document that lets you verify the blade-to-die hardness relationship before installation — plus a CMM dimensional report covering thickness consistency across the set, a steel mill material traceability certificate and a heat treatment batch record.",
+          label: "Hardness Differential",
+          value:
+            "Blade hardness below the mating die plate (controlled-wear configuration)",
+        },
+        {
+          label: "Supply Format",
+          value: "Matched sets, CMM-verified; hubs and die plates available",
         },
       ],
+      specificationImage: {
+        src: "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
+        alt: "Die-face cutting knives showing their mounting slots and ground edges",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your die-face knives",
+        description: "Include the pelletizer and cutter-hub model, blade drawing or sample, slot pattern, edge orientation and quantity.",
+        buttonLabel: "Request a quote",
+      },
     },
   },
 
@@ -5851,8 +6267,9 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "special-shaped-blades",
-    name: "Special-Shaped Blades",
-    fullName: "Custom Profile & Special-Shaped Industrial Blades",
+    name: "Special-Shaped Industrial Blades",
+    fullName: "Special-Shaped Industrial Blades Made to Drawing",
+    seoTitle: "Special-Shaped Industrial Blades | Custom Profiles",
     category: "custom_profile",
     sector: "other",
     categoryDisplay: "Custom Profile Blades",
@@ -5860,18 +6277,89 @@ export const blades: Blade[] = [
     badge: "OEM Custom",
     badgeColor: "teal",
     description:
-      "Precision-manufactured custom profile and special-shaped industrial blades produced from customer DXF/DWG drawings or physical samples. D2, H13, PM-HSS, and solid carbide. Tolerances to ±0.02 mm. Any profile, any industry.",
+      "Custom-profile replacement machine knives in D2, H13, PM-HSS or carbide. Part-specific outlines, cutting edges and mounting features made to drawing.",
     link: "/custom",
     specs: [
-      { label: "Material", value: "D2 / H13 / PM-HSS / Carbide" },
-      { label: "Tolerance", value: "±0.02 mm" },
-      { label: "Drawing Input", value: "DXF / DWG / STEP / Sample" },
-      { label: "Lead Time", value: "7–15 working days" },
+      {
+        label: "Application",
+        value: "Machine knives with a part-specific outline or edge profile",
+      },
+      {
+        label: "Material",
+        value: "D2, H13, PM-HSS or carbide",
+      },
+      {
+        label: "Sizes",
+        value: "Made to Drawing",
+      },
+      { label: "Dimensional Tolerance", value: "±0.02 mm" },
     ],
     offers: {
       lowPrice: 20,
       highPrice: 800,
     },
+    quoteRequirements:
+      "Include the machine and material, drawing revision, blade outline, mounting dimensions and critical edge or tolerance requirements.",
+    components: [
+      {
+        id: "special-shaped-blades-advantage-1",
+        tag: "Part-Specific Cutting Profiles",
+        title: "Part-Specific Cutting Profiles",
+        description:
+          "Sureay makes industrial blades with custom outlines, bevels and working-edge positions, giving you a replacement route for knife profiles outside standard straight or circular configurations.",
+      },
+      {
+        id: "special-shaped-blades-advantage-2",
+        tag: "Tool-Steel, PM-HSS and Carbide Options",
+        title: "Tool-Steel, PM-HSS and Carbide Options",
+        description:
+          "D2, H13, PM-HSS and carbide configurations allow the cutting material to be specified around your existing blade design and the material being processed.",
+      },
+      {
+        id: "special-shaped-blades-advantage-3",
+        tag: "Drawing-Based Mounting and Handed Profiles",
+        title: "Drawing-Based Mounting and Handed Profiles",
+        description:
+          "Sureay makes custom holes, slots and seating faces to your mounting datums. Specify the edge-to-seat distance, cutting direction and any left- or right-hand differences so the replacement preserves the original working position.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "What is a special-shaped industrial blade?",
+          answer:
+            "It is a machine knife whose outline, edge profile or mounting arrangement needs a part-specific drawing. Custom-profile knife and specialty blade are related purchasing names. The cutting task and installed position establish the actual geometry, including features that cannot be identified by overall length, width and thickness alone.",
+        },
+        {
+          question: "Which dimensions determine fit on a special-profile knife?",
+          answer:
+            "The edge position relative to the mounting datums is particularly important. Define the outline, thickness, holes, slots, recesses and bevel, then identify which dimensions control location and clamping. This connects the cutting profile to the installed position rather than relying on overall dimensions alone.",
+        },
+        {
+          question: "How should left-hand and right-hand knives be identified?",
+          answer:
+            "Use a defined drawing view and show the installed orientation and cutting direction. Include both faces where the bevel, countersink or mounting recess changes sides. A mirrored outline may preserve overall dimensions while moving a critical feature, so each required hand should have an unambiguous part reference.",
+        },
+        {
+          question: "Can the material be changed while keeping the existing profile?",
+          answer:
+            "Yes, a new material can be considered while retaining the required profile. Choose the candidate grade using the stock being cut, wear on the current knife and support at the edge. Treat it as a revised material specification and retain the required cutting and mounting geometry.",
+        },
+        {
+          question: "Can a special-shaped blade be resharpened?",
+          answer:
+            "Yes, if grinding can restore the specified cutting profile without moving the edge beyond the drawing limits. Reference the same hole, shoulder or seating face when measuring the reground edge. Replace the knife if the edge can no longer be restored within those limits.",
+        },
+        {
+          question: "What should I send for a custom-profile industrial blade quote?",
+          answer:
+            "Send the machine or cutting station, material being cut, approved part drawing and quantity. Mark the cutting direction, mounting datums and toleranced edge-to-seat dimensions, including each handed profile. If you only have a sample, show the mating component or an unused reference and mark the worn areas.",
+        },
+      ],
+      company: [],
+    },
+    disambiguation:
+      "For drawing submission and the manufacturing process, see [Custom Industrial Blades](/custom).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -5879,13 +6367,16 @@ export const blades: Blade[] = [
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "wood-chipper-blades",
+    seoDescription:
+      "Moving knives for drum and disc wood chippers in listed lengths of 230–600 mm. Specify chipper steel, D2 or a carbide-tipped edge, plus your bevel and bolt pattern.",
     name: "Wood Chipper Blades",
-    fullName:
-      "Heavy-Duty Drum & Disc Chipper Knives for Biomass, Forestry & Wood Recycling",
+    fullName: "Wood Chipper Blades for Drum & Disc Chippers",
     category: "wood_chipper",
     sector: "wood",
     categoryDisplay: "Wood Chipper Blades",
     image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: { width: 1600, height: 846, smallerWidths: [320, 480, 640] },
     badge: "Forestry Grade",
     badgeColor: "green",
     gallery: [
@@ -5894,117 +6385,196 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Premium D2, Cr12MoV & TCT drum and disc chipper knives for biomass processing, forestry operations & wood recycling. Through-hardened HRC 57–62 with deep cryogenic treatment. Precision-ground to ±0.05 mm thickness tolerance for clean, uniform chip geometry. Drop-in OEM fit for Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz chippers.",
-    fullDescription:
-      "Wood chipper blades operate under some of the most punishing conditions in the size-reduction industry. Every rotation drives the cutting edge into dense hardwood, green timber with high moisture content, contaminated demolition wood, or recycled pallets embedded with nails and staples. A blade that lacks the correct balance of hardness and toughness will either dull within hours on clean hardwood or shatter on the first nail strike in contaminated feedstock.\n\nSureay wood chipper blades are forged from premium tool steels — D2 (1.2379), Cr12MoV, and high-carbon chipper knife steel — vacuum heat-treated to HRC 57–62, followed by a mandatory deep cryogenic soak at −196°C. This processing sequence produces a fully stabilised martensitic microstructure with uniform carbide distribution across the entire blade cross-section, delivering the dual performance requirement of wood chipping: abrasion resistance to hold a sharp edge through hundreds of cubic meters of timber, combined with sufficient core toughness to survive impacts from embedded metal contaminants without catastrophic fracture.\n\n## Chipper Type & Blade Geometry\n\n### Drum Chipper Blades\n\nDrum chippers (Vermeer BC1800, Bandit 1990, Morbark 40/36) use rectangular straight knives bolted to a high-speed rotating drum (typically 1,000–2,500 RPM). The blade acts as a planer knife — each revolution peels a chip from the infeed timber at the programmed depth of cut. Blade length corresponds to the drum width (typically 200–600 mm), and thickness (typically 12–30 mm) determines maximum chip depth.\n\nCritical parameters for drum chipper performance:\n- **Bevel angle:** 30°–37° (hardwood) or 25°–30° (softwood/green timber)\n- **Thickness parallelism:** ≤ 0.05 mm — uneven blade thickness causes drum imbalance, destructive vibration, and inconsistent chip size\n- **Bolt-hole positional tolerance:** ±0.10 mm — ensures the cutting edge projects evenly across the full drum width after mounting\n\n### Disc Chipper Blades\n\nDisc chippers (Peterson 5710, Morbark 50/48, Precision Husky) mount blades radially on a heavy rotating disc. The timber is fed axially into the disc face, and the blades produce chips by a combination of shearing and splitting action. Disc chipper blades are typically shorter but thicker than drum chipper knives, and are subjected to higher individual impact loads from large-diameter logs.\n\nDisc chipper blades require maximum toughness specification: Cr12MoV or modified chipper knife steel at HRC 55–58 is recommended for whole-log disc chippers processing hardwood above 300 mm diameter.\n\n### Whole-Tree / Biomass Chipper Blades\n\nBiomass and whole-tree chippers (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) process entire trees including branches, root balls, and brush. The feedstock contains embedded soil, stones, and occasional metal debris. Blades for these applications are manufactured from impact-optimised steel at HRC 55–58, with a wider bevel angle (35°–42°) that distributes impact forces across a broader cutting face and prevents edge rollover on contaminated feedstock.\n\n## Material Selection by Feedstock\n\n**High-Carbon Chipper Knife Steel (HRC 55–58):** The industry-standard grade for general forestry and green timber chipping. Cost-effective, easily resharpened on standard surface grinders, and tough enough for moderate nail contamination. Suited to landscape contractors, tree service companies, and municipal green waste operations.\n\n**D2 / Cr12MoV Cold-Work Tool Steel (HRC 58–62):** Premium specification for high-volume commercial wood recycling and biomass fuel chip production. The 12% chromium carbide matrix provides 2–3× longer edge life versus standard carbon steel on abrasive hardwoods (oak, hickory, ironbark) and dry recycled timber. Recommended for industrial drum chippers running 8–16 hour continuous shifts.\n\n**TCT — Tungsten Carbide Tipped (Brazed Inserts):** The ultimate specification for extreme-duty biomass processing. Carbide-tipped chipper knives deliver 5–10× the service life of D2 on contaminated demolition wood, railroad ties, and heavily soiled root balls. The carbide cutting edge is vacuum-brazed onto a tough alloy steel body that absorbs the gross impact energy without transmitting brittle fracture to the carbide insert.\n\n## Precision Grinding for Chip Quality\n\nChip geometry is the primary product quality metric in biomass fuel production: pulp mills, biomass power plants, and pellet manufacturers specify strict chip size distribution standards (e.g., EN 17225-4 / TAPPI T257). Uneven blade thickness or inconsistent bevel angles across a multi-blade drum or disc produce oversized and undersized chips that fail screening specifications, requiring secondary processing or causing price deductions.\n\nSureay chipper blades are precision surface-ground to:\n- **Thickness tolerance:** ±0.05 mm across the full blade length\n- **Bevel angle:** ±0.5° (verified by optical comparator)\n- **Face flatness:** ≤ 0.05 mm per 300 mm length\n- **Surface finish:** Ra ≤ 1.6 μm on the rake face for reduced friction and clean chip ejection\n\n## Counter-Knife (Anvil) & Wear Plate Supply\n\nThe counter-knife (anvil or bed knife) sets the clearance gap that determines minimum chip thickness. Worn or misaligned counter-knives negate the benefit of new chipper blades. Sureay manufactures matched counter-knives and replaceable wear plates in D2 and manganese steel, supplied as integrated sets with pre-verified clearance specifications for your chipper model.\n\n## Resharpening Capability\n\nUnlike shredder blades, chipper knives are designed for multiple regrinding cycles. Our through-hardened heat treatment ensures uniform hardness from the surface to the core — each regrind exposes steel of identical hardness and wear characteristics. A standard D2 chipper blade can be reground 8–12 times before reaching minimum safe thickness, making the total cost of ownership extremely competitive.",
+      "Replacement knives for drum and disc wood chippers. Chipper steel, D2 and carbide-tipped options, with custom bevels and bolt patterns to drawing.",
     link: "/products/wood-chipper-blades",
     isFeatured: true,
     compatibleMachines: [
-      "Bandit Industries",
-      "Vermeer",
-      "Morbark",
-      "Peterson Pacific",
-      "Doppstadt",
-      "Jenz",
-      "CBI",
-      "Precision Husky",
-      "Bruks Siwertell",
+      "Bandit Industries", "Vermeer", "Morbark", "Peterson Pacific",
+      "Doppstadt", "Jenz", "CBI", "Precision Husky", "Bruks Siwertell",
+    ],
+    compatibleMachinesIntro:
+      "Get replacement knives made for your drum or disc chipper, with custom bevels, fixing holes and clamping profiles. Sureay offers chipper steel, D2, Cr12MoV and carbide-tipped options. Share your drawing or sample for a quotation, including the matching anvil when required. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "chipper-knife-body",
+        tag: "Knife geometry",
+        title: "Chipper Steel and Carbide-Tipped Options",
+        description:
+          "High-carbon chipper steel, D2, Cr12MoV and carbide-tipped constructions give you replacement choices for different wood feeds and observed wear conditions.",
+      },
+      {
+        id: "chipper-knife-material",
+        tag: "Material options",
+        title: "Custom Bevels and Mounting Profiles",
+        description:
+          "Listed wood chipper knife lengths span 230–600 mm, with custom lengths up to 800 mm. Sureay makes the bevel, bolt pattern and seating profile to drawing for existing drum and disc chippers.",
+      },
+      {
+        id: "chipper-knife-anvil-pair",
+        tag: "Cutting pair",
+        title: "Moving Knives and Matching Anvils",
+        description:
+          "Order moving knives and stationary anvils in one enquiry, with each part specified for the chipper's cutting assembly and the components you intend to retain.",
+        relatedBladeIds: ["wood-chipper-anvils"],
+      },
     ],
     specs: [
       {
-        label: "Material",
-        value:
-          "High-Carbon Chipper Steel | D2 (1.2379) / Cr12MoV | TCT Carbide Tipped",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
-      },
-      {
-        label: "Thickness Tolerance",
-        value: "±0.05 mm (prevents drum imbalance & vibration)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per timber species & contamination level)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
+        label: "Sizes",
+        value: "Listed lengths 230–600 mm; custom lengths up to 800 mm",
       },
       {
         label: "Application",
         value:
-          "Forestry Drum Chippers, Disc Chippers, Biomass Whole-Tree Chippers, Pallet Recycling",
-      },
-    ],
-    components: [
-      {
-        id: "through-hardened-core",
-        tag: "METALLURGY",
-        title: "Through-Hardened for Maximum Regrind Life",
-        description:
-          "Unlike case-hardened alternatives that expose a soft core after the first regrind, Sureay chipper blades are vacuum heat-treated to achieve uniform hardness (HRC 57–62) from surface to core. Each regrind delivers identical edge performance to a new blade, yielding 8–12 productive service cycles per blade.",
+          "Moving knives for drum, disc and biomass whole-tree chippers and pallet recycling",
       },
       {
-        id: "impact-toughness",
-        tag: "DURABILITY",
-        title: "Nail & Contaminant Resistance",
-        description:
-          "Contaminated demolition wood, recycled pallets, and urban green waste contain hidden nails, screws, and stones. Our deep cryogenic treatment (−196°C) stabilises the martensitic microstructure, delivering the core toughness needed to absorb metal-strike impacts without brittle edge fracture or blade cracking.",
+        label: "Material",
+        value:
+          "High-carbon chipper steel, D2 (1.2379), Cr12MoV or carbide-tipped construction",
       },
       {
-        id: "chip-quality",
-        tag: "OUTPUT QUALITY",
-        title: "Precision Bevel for Uniform Chip Size",
-        description:
-          "Biomass power plants and pulp mills penalise off-spec chip size distributions. Every blade is surface-ground to ±0.05 mm thickness and ±0.5° bevel angle, ensuring consistent chip geometry across the full drum or disc width that meets EN 17225 and TAPPI T257 standards.",
+        label: "Hardness",
+        value:
+          "Chipper steel: HRC 55–58; D2 / Cr12MoV: HRC 58–62; carbide cutting edge: HRA 89–91",
+      },
+      { label: "Bevel Angle", value: "25°–42°" },
+      { label: "Thickness Tolerance", value: "±0.05 mm" },
+      {
+        label: "Heat Treatment",
+        value: "Vacuum hardening and deep cryogenic treatment (−196°C)",
+      },
+      {
+        label: "Resharpening",
+        value:
+          "Through-hardened; 8–12 regrind cycles, subject to wear and remaining knife height",
       },
     ],
     dimensionLabels: {
-      col0: "Chipper Type / OEM Platform",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Standard dimensions for major chipper OEMs. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact OEM blueprints. Counter-knives and wear plates available as matched sets. Custom lengths up to 800 mm.",
+      "col0": "Chipper Type / OEM Platform",
+      "col1": "Length (mm)",
+      "col2": "Width (mm)",
+      "col3": "Thickness (mm)",
+      "caption": "* Standard dimensions for major chipper OEMs. 2-hole, 3-hole, and 4-hole bolt patterns CNC-machined to exact OEM blueprints. Counter-knives and wear plates available as matched sets. Custom lengths up to 800 mm."
     },
     standardDimensions: [
-      { spec: 'Bandit 12" / 15" Drum', od: "230", id: "80", thickness: "16" },
-      { spec: 'Bandit 18" / 19" Drum', od: "295", id: "80", thickness: "19" },
       {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      { spec: "Morbark 40/36 Drum", od: "400", id: "100", thickness: "22" },
-      { spec: "Morbark 50/48 Disc", od: "250", id: "120", thickness: "25" },
-      { spec: "Peterson 5710 Disc", od: "280", id: "130", thickness: "25" },
-      {
-        spec: "Doppstadt / Jenz Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
+        "itemNo": "SR006101",
+        "spec": "Bandit 12\" / 15\" Drum",
+        "od": "230",
+        "id": "80",
+        "thickness": "16"
       },
       {
-        spec: "Heavy Whole-Tree Chipper",
-        od: "600",
-        id: "150",
-        thickness: "30",
+        "itemNo": "SR006102",
+        "spec": "Bandit 18\" / 19\" Drum",
+        "od": "295",
+        "id": "80",
+        "thickness": "19"
       },
+      {
+        "itemNo": "SR006103",
+        "spec": "Vermeer BC1800 / BC2100",
+        "od": "310",
+        "id": "100",
+        "thickness": "19"
+      },
+      {
+        "itemNo": "SR006104",
+        "spec": "Morbark 40/36 Drum",
+        "od": "400",
+        "id": "100",
+        "thickness": "22"
+      },
+      {
+        "itemNo": "SR006105",
+        "spec": "Morbark 50/48 Disc",
+        "od": "250",
+        "id": "120",
+        "thickness": "25"
+      },
+      {
+        "itemNo": "SR006106",
+        "spec": "Peterson 5710 Disc",
+        "od": "280",
+        "id": "130",
+        "thickness": "25"
+      },
+      {
+        "itemNo": "SR006107",
+        "spec": "Doppstadt / Jenz Biomass",
+        "od": "350",
+        "id": "100",
+        "thickness": "20"
+      },
+      {
+        "itemNo": "SR006108",
+        "spec": "Heavy Whole-Tree Chipper",
+        "od": "600",
+        "id": "150",
+        "thickness": "30"
+      },
+      {
+        "itemNo": "SR006109",
+        "spec": "Eschlböck Biber",
+        "od": "245",
+        "id": "285",
+        "thickness": "20"
+      }
     ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
+    detailLayout: {
+      seoTitle: "Wood Chipper Blades for Drum & Disc Chippers",
+      heroAlt: "Wood chipper knife with a straight cutting edge, open mounting slots and fixing holes",
+      sizeRange: "230–600 mm",
+      heroSpecs: [
+        { label: "Material", value: "Chipper steel, D2, Cr12MoV or carbide-tipped" },
+        { label: "Application", value: "Drum and disc wood chippers" },
+      ],
+      technicalSpecs: [
+        {
+          label: "Sizes",
+          value: "Listed lengths 230–600 mm; custom lengths up to 800 mm",
+        },
+        {
+          label: "Application",
+          value:
+            "Moving knives for drum, disc and biomass whole-tree chippers and pallet recycling",
+        },
+        {
+          label: "Material",
+          value:
+            "High-carbon chipper steel, D2 (1.2379), Cr12MoV or carbide-tipped construction",
+        },
+        {
+          label: "Hardness",
+          value:
+            "Chipper steel: HRC 55–58; D2 / Cr12MoV: HRC 58–62; carbide cutting edge: HRA 89–91",
+        },
+        { label: "Bevel Angle", value: "25°–42°" },
+        { label: "Thickness Tolerance", value: "±0.05 mm" },
+        {
+          label: "Heat Treatment",
+          value: "Vacuum hardening and deep cryogenic treatment (−196°C)",
+        },
+        {
+          label: "Resharpening",
+          value:
+            "Through-hardened; 8–12 regrind cycles, subject to wear and remaining knife height",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
+        alt: "Wood chipper knife drawing showing the body, open mounting slots and bevel cross-section",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your chipper knives",
+        description:
+          "Include the chipper model and serial number, drum or disc type, knife drawing or sample, and required quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-anvils"],
     offers: {
       lowPrice: 25,
       highPrice: 380,
@@ -6012,98 +6582,65 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "What blade material should I use for chipping clean green timber versus contaminated demolition wood?",
+          question: "Which replacement wood chipper knives fit my machine?",
           answer:
-            "For clean green timber (forestry, tree service, land clearing), standard high-carbon chipper knife steel at HRC 55–58 delivers excellent edge life at the lowest cost per regrind cycle. For contaminated demolition wood, recycled pallets, or urban green waste with embedded nails, screws, and stones, upgrade to Cr12MoV or D2 at HRC 58–60. The chromium-carbide matrix provides 2–3× longer edge life on abrasive dry wood while maintaining sufficient toughness to survive moderate metal impacts. For heavily contaminated streams (railroad ties, C&D debris), specify TCT carbide-tipped blades that deliver 5–10× longer service life than D2.",
+            "Use the chipper model, serial number and original part reference to identify the new-knife dimensions, bevel, fixing pattern and seat. Chipper blades and chipper knives commonly describe the moving knives on a drum or disc. Grinder teeth are a separate wear-part type, so the actual cutting assembly should accompany the purchasing name.",
         },
         {
-          question:
-            "How does blade thickness tolerance affect chip quality and drum vibration?",
+          question: "When should carbide-tipped chipper knives be considered?",
           answer:
-            "Blade thickness directly controls chip depth and influences drum balance. If blade thicknesses vary by more than 0.10 mm across a multi-blade drum, the thicker blades cut deeper and produce oversized chips while thinner blades produce undersized chips — both conditions fail biomass fuel screening specifications (EN 17225-4). Additionally, uneven blade mass creates dynamic imbalance at operating RPM (1,000–2,500 RPM), causing destructive vibration that accelerates bearing failure and fatigues the drum housing. Our ±0.05 mm thickness tolerance eliminates both issues.",
+            "Consider the wear pattern and feed condition before changing the working-edge construction. Gradual abrasive wear and localized impact damage call for different material decisions. Compare the current steel knife, bevel and contamination history with the proposed carbide-tipped design, while preserving the mounting and working geometry required by the chipper.",
         },
         {
-          question:
-            "What bevel angle should I specify for hardwood versus softwood chipping?",
+          question: "Why do chip quality and cutting effort change as knives wear?",
           answer:
-            "For softwood and green timber with high moisture content (pine, spruce, poplar), specify 25°–30° bevel angle. The sharper included angle slices through soft, fibrous wood with minimum cutting force and produces clean chip faces with low fibre tear. For dry hardwood (oak, hickory, eucalyptus), increase to 30°–37° to strengthen the cutting edge against the higher density and impact loading. For contaminated biomass and whole-tree chipping with soil and stone contamination, specify 35°–42° — the wider bevel distributes impact forces across a broader cutting face, preventing edge rollover.",
+            "A dull or damaged edge changes how the knife engages the wood and can increase the effort needed to process it. Compare the used edges with the chip sample and feed condition. Include the stationary anvil in the inspection, because both parts establish the cutting relationship.",
         },
         {
-          question:
-            "How many times can Sureay chipper blades be resharpened, and what is the correct regrinding procedure?",
+          question: "Are reversible knives and resharpenable knives the same?",
           answer:
-            "Our through-hardened chipper blades can be resharpened 8–12 times before reaching minimum safe thickness (typically 60–70% of original thickness). Regrind on a wet surface grinder using an aluminum oxide wheel (46–60 grit) at 0.02–0.05 mm depth per pass to prevent thermal damage to the heat-treated edge. Never dry-grind chipper knives — the localised overheating above 200°C draws the temper and softens the edge. After grinding, verify the bevel angle with an optical comparator or digital protractor. We also offer a professional regrinding service with hardness re-verification.",
+            "No. A reversible chipper knife can be turned to use a second cutting edge. A resharpenable knife can have a worn edge reground within its service limits. Some knives support both. Use the blade drawing and chipper manual to confirm the allowed orientation, bevel and remaining dimensions.",
         },
         {
-          question:
-            "What causes premature edge rollover on my chipper blades, and how do I prevent it?",
+          question: "When should a chipper knife be replaced instead of sharpened?",
           answer:
-            "Edge rollover (the cutting edge folding over rather than chipping or wearing gradually) indicates the blade hardness is too low for the feedstock, or the bevel angle is too acute for the impact loading. On standard carbon steel blades processing dry hardwood, the edge lacks sufficient carbide reinforcement to resist plastic deformation. Upgrade to D2 or Cr12MoV at HRC 58–62 and increase the bevel angle by 3°–5°. Also verify counter-knife clearance: excessive clearance (> 1.5 mm) forces the blade to fracture the wood by bending rather than shearing, dramatically increasing edge loading.",
+            "Replace knives with cracks, distortion or damage that prevents restoration of the specified working geometry. A worn edge may be reground when the remaining knife dimensions allow it. Use the chipper's limits for the particular knife rather than a fixed regrind count, and inspect the mounting surfaces as well as the edge.",
         },
         {
-          question:
-            "Should I replace the counter-knife (anvil) when I install new chipper blades?",
+          question: "Should the anvil be replaced whenever the moving knives are changed?",
           answer:
-            "The counter-knife should be inspected every time chipper blades are changed. A worn counter-knife with a rounded or chipped edge forces new blades to work against an inconsistent shear gap, reducing their effective service life by 30–50% and producing poor chip quality. Replace or regrind the counter-knife when the cutting edge shows visible rounding exceeding 1.0 mm or chipping deeper than 0.5 mm. We supply matched counter-knives manufactured from D2 or manganese steel as integrated sets with pre-verified clearance.",
+            "No. A new moving knife does not always require a new anvil. Assess the anvil for wear, damage and remaining adjustment. A serviceable anvil can stay in place if its edge and mounting still allow the required cutting gap. See [Wood Chipper Anvils](/products/wood-chipper-anvils) for replacement stationary knives.",
         },
         {
-          question:
-            "What chip size distribution should I target for biomass fuel production versus pulp mill supply?",
+          question: "How do I request a quote for drum or disc chipper blades?",
           answer:
-            "Biomass power plants typically require chips within 3–50 mm (EN 17225-4 Class P31s or P45s) with less than 5% fines (< 3 mm) and less than 1% oversized (> 63 mm). Pulp mills require tighter specifications per TAPPI T257: typically 80% acceptance in 7–25 mm range with strict limits on pin chips and overthick pieces. Achieving these specifications requires consistent blade thickness (±0.05 mm), correct bevel angle, proper counter-knife clearance (0.5–1.0 mm), and uniform drum speed. We can recommend the optimal blade geometry for your target specification.",
+            "Send the chipper model and serial number, original part reference or drawing, wood feed and quantity. Include the bevel, bolt or slot dimensions and blade-seat profile. For an older machine with no drawing, a dimensioned sample can show the seat and fixing pattern. Mark any height lost to sharpening.",
         },
       ],
-      company: [
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades.",
-        },
-        {
-          question:
-            "Can you supply blades for my specific chipper model if it is not listed in your standard dimensions?",
-          answer:
-            "Yes. Send us your existing blade sample, a technical drawing, or your chipper make and model number. We will confirm the length, width, thickness, bevel angle, and bolt-hole pattern, and manufacture exact drop-in replacements. We maintain an extensive database of OEM chipper blade blueprints for Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz, and CBI platforms. Custom dimensions are manufactured to drawing within 10–15 working days.",
-        },
-        {
-          question:
-            "What makes Sureay's heat treatment different from cheaper alternatives?",
-          answer:
-            "Unlike standard quench-and-temper processes, every Sureay chipper blade undergoes vacuum hardening followed by deep cryogenic treatment at −196°C. The cryogenic step transforms retained austenite into stable martensite, improving wear resistance by up to 40% and ensuring uniform hardness from surface to core. This means every regrind exposes steel of identical quality — cheap blades often expose a softer core after the first regrind, halving the edge life of subsequent sharpening cycles.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement chipper blades in stock sizes typically ship within 48–72 hours. Custom profiles and TCT carbide-tipped blades take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question:
-            "What quality certifications does Sureay hold, and can you provide material test reports?",
-          answer:
-            "Sureay is ISO 9001:2015 certified. Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (thickness, bevel angle, bolt-hole positions), and a heat treatment batch certificate. For large-volume biomass operations requiring full traceability, steel mill composition certificates and CMM dimensional reports are available on request.",
-        },
-        {
-          question:
-            "Can we trial a sample set before committing to a full production order?",
-          answer:
-            "Yes. We offer sample sets (typically 2–4 blades) for machine fit verification and edge life benchmarking against your current supplier. Standard sample lead time is 5–7 working days. For TCT carbide-tipped blades, sample lead time is 10–12 working days.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the chipper model and serial, drum or disc type, knife drawing, bolt pattern and wood feedstock.",
+    rfqPlaceholder:
+      "Chipper model and serial number, drum or disc type, knife drawing or sample, and quantity required.",
+    disambiguation:
+      "For the stationary part opposite the rotating knife, see [Wood Chipper Anvils](/products/wood-chipper-anvils).",
   },
 
   // Wood Chipper Anvils (Counter-Knives / Bed Knives)
   // ─────────────────────────────────────────────────────────────────────────
   {
     id: "wood-chipper-anvils",
+    seoDescription:
+      "Replace the stationary counter knife opposite the moving chipper knives. Wood chipper anvils are listed in 185–400 mm lengths, with custom mounting slots.",
     name: "Wood Chipper Anvils",
-    fullName:
-      "Heavy-Duty Counter-Knives & Bed Knife Anvils for Drum & Disc Wood Chippers",
+    fullName: "Wood Chipper Anvils & Counter Knives",
     category: "wood_chipper",
     sector: "wood",
     categoryDisplay: "Counter-Knives & Anvils",
     image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+    imageDimensions: { width: 1920, height: 1439, smallerWidths: [320, 480, 640] },
+    specificationImageDimensions: { width: 1920, height: 1440, smallerWidths: [320, 480, 640] },
     badge: "Matched Sets",
     badgeColor: "blue",
     gallery: [
@@ -6111,1005 +6648,2032 @@ export const blades: Blade[] = [
       "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
       "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
     ],
-
     description:
-      "Wood chipper anvils and counter-knives (bed knives) for drum and disc chippers. D2, Cr12MoV, and A8 Modified tool steel, through-hardened HRC 55–60 for maximum resharpening life. Sets the blade-to-anvil clearance gap that controls chip thickness and chipper efficiency. Surface-ground to ±0.05 mm full-length parallelism. OEM-compatible replacements for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz chippers.",
-
-    fullDescription:
-      "The anvil — also called the counter-knife, bed knife, or stationary blade — is the fixed cutting edge inside a wood chipper that the rotating drum or disc blade cuts against. Together, the chipper blade and anvil form a scissor-like shearing pair: the blade slices chips from the timber, and the anvil sets the clearance gap that determines minimum chip thickness, cutting efficiency, and motor load.\n\nA worn or misaligned anvil is the single most overlooked cause of poor chipper performance. When the anvil edge rounds off, the blade-to-anvil clearance gap widens progressively. Instead of a clean shearing action, the timber is torn and crushed rather than cut — spiking fuel consumption by 15–25%, producing ragged chips that fail screening specs, and accelerating wear on the chipper blades themselves. Replacing chipper blades without inspecting the anvil is throwing away money: new blades working against a dull anvil deliver only 50–70% of their potential service life.\n\n## Why the Anvil Matters as Much as the Blade\n\n**Clearance Gap Control:** The blade-to-anvil clearance gap — typically set at 0.5–1.5 mm for drum chippers and 0.8–2.0 mm for disc chippers — directly controls minimum chip thickness. A worn anvil increases this gap beyond specification, producing oversized chips and long fibrous slivers that fail biomass fuel screening standards (EN 17225-4). Our anvils are precision surface-ground to ±0.05 mm full-length parallelism, ensuring a uniform shear gap across the entire cutting width.\n\n**Impact Absorption:** Unlike the chipper blade (which rotates at high speed), the anvil absorbs the full reaction force of every cut as a static impact load. Over millions of chipping cycles, this sustained impact loading causes edge deformation, micro-cracking, and eventual bulk fracture in poorly heat-treated anvils. Sureay anvils are through-hardened to HRC 55–60 via vacuum heat treatment — hard enough to hold a sharp edge against abrasive timber, yet tough enough to absorb repeated impact without brittle fracture.\n\n**Different Wear Rate, Different Replacement Cycle:** The anvil typically outlasts chipper blades by a factor of 2–4× because it operates under compressive (static) loading rather than the dynamic shear loading on the blade. However, because anvil wear is gradual, operators often miss the progressive deterioration until chip quality has degraded significantly. We recommend inspecting the anvil edge every time chipper blades are changed or sharpened.\n\n## Material Selection\n\n**D2 / Cr12MoV Tool Steel (HRC 58–60):** The premium specification for high-volume commercial wood processing and biomass operations. The 12% chromium-carbide matrix provides outstanding abrasion resistance against dense hardwoods and bark-heavy feedstock. Recommended for industrial drum chippers (Morbark, Vermeer HG series, Doppstadt) running continuous 8–16 hour shifts.\n\n**A8 Modified Tool Steel (HRC 54–58):** The industry-standard OEM grade used by Bandit, Morbark, and Vermeer for factory-original anvils. A8 Modified provides an excellent balance of wear resistance and impact toughness — critical for anvils that must absorb millions of impact cycles without micro-cracking. The correct choice for general forestry and tree service operations processing mixed species with moderate contamination.\n\n**42CrMo / Manganese Steel (HRC 50–55):** A cost-effective, high-toughness option for operators processing heavily contaminated demolition wood, railroad ties, and urban green waste where the feedstock contains significant metal debris. The lower hardness prioritises impact absorption over wear resistance, preventing the catastrophic anvil fracture that can damage the drum housing.\n\n## Adjustable Mounting & Clearance Setting\n\nMost chipper OEMs provide a mechanical adjustment system — typically shim plates or adjustable mounting bolts — to advance the anvil toward the blade as both components wear, maintaining the designed clearance gap. Sureay anvils are CNC-machined with slotted or oversized mounting holes that match your OEM's adjustment mechanism precisely, ensuring maintenance teams can set the gap accurately and lock it down securely.\n\n## Matched Blade + Anvil Sets\n\nFor operators changing both blades and anvil simultaneously, we offer matched sets: chipper blades and counter-knife manufactured from the same steel batch, heat-treated in the same vacuum furnace cycle, and surface-ground to the same parallelism tolerance. A matched set eliminates the hardness mismatch between blade and anvil that causes accelerated wear when sourcing components from different suppliers.",
-
+      "Replacement wood chipper anvils in D2, Cr12MoV, modified A8 or 42CrMo. Custom working-edge profiles and mounting slots matched to the original part.",
     link: "/products/wood-chipper-anvils",
     isFeatured: true,
-
     compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Morbark",
-      "Timberwolf",
-      "Schliesing",
-      "Greenmech",
-      "Jensen",
-      "Jenz",
-      "Eschlböck",
-      "Forst",
+      "Bandit", "Vermeer", "Morbark", "Timberwolf", "Schliesing",
+      "Greenmech", "Jensen", "Jenz", "Eschlböck", "Forst",
     ],
-
+    compatibleMachinesIntro:
+      "Get a replacement chipper anvil with the working edge, fixing slots and seating faces your machine needs. Sureay offers through-hardened material options and custom profiles. Share your drawing or sample for an anvil quotation, with moving knives available as separate items. Machine brands are compatibility references for Sureay aftermarket parts.",
+    components: [
+      {
+        id: "chipper-anvil-edge",
+        tag: "Stationary edge",
+        title: "Multiple Steel Options for Stationary Edges",
+        description:
+          "Sureay offers D2, Cr12MoV, modified A8 and 42CrMo anvils, allowing the replacement material to be specified around the chipper's existing knife pair and wear conditions.",
+      },
+      {
+        id: "chipper-anvil-adjustment",
+        tag: "Mounting",
+        title: "Defined Working Edges and Seating Faces",
+        description:
+          "Listed anvil lengths span 185–400 mm, with custom lengths up to 600 mm. Sureay makes the stationary edge and locating surfaces to the drawing for your existing chipper housing.",
+      },
+      {
+        id: "chipper-anvil-pair",
+        tag: "Replacement pair",
+        title: "Mounting Slots for Existing Adjustment Systems",
+        description:
+          "Slotted mounting configurations are available for shim-adjusted assemblies, with slot locations and body dimensions made to the original anvil drawing.",
+        relatedBladeIds: ["wood-chipper-blades"],
+      },
+    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 (Cr12MoV) | A8 Modified | 42CrMo Manganese Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–60 (Through-Hardened, Surface = Core)",
-      },
-      {
-        label: "Parallelism",
-        value: "±0.05 mm full-length (uniform shear gap)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single-bevel 30°–37° (matched to chipper blade angle)",
-      },
-      {
-        label: "Mounting",
-        value: "Slotted holes / shim-adjustable (OEM clearance adjustment)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 5–10 regrind cycles per anvil",
+        label: "Sizes",
+        value: "Listed lengths 185–400 mm; custom lengths up to 600 mm",
       },
       {
         label: "Application",
+        value: "Stationary counter knife opposite the moving chipper knives",
+      },
+      { label: "Material", value: "D2, Cr12MoV, modified A8 or 42CrMo" },
+      {
+        label: "Mounting",
+        value: "Slotted holes with shim-adjustable knife clearance",
+      },
+      { label: "Hardness", value: "HRC 54–60, through-hardened" },
+      { label: "Edge Geometry", value: "Single bevel, 30°–37°" },
+      { label: "Parallelism", value: "±0.05 mm over the blade length" },
+      {
+        label: "Resharpening",
         value:
-          "Drum Chippers, Disc Chippers, Biomass Chippers, Landscape Chippers",
+          "Through-hardened; 5–10 regrind cycles, subject to wear and remaining anvil height",
       },
     ],
-
-    components: [
-      {
-        id: "clearance-gap-control",
-        tag: "CUTTING EFFICIENCY",
-        title: "Precision Clearance Gap Control",
-        description:
-          "The blade-to-anvil gap determines chip thickness, cutting force, and fuel consumption. A rounded anvil edge widens this gap beyond specification, turning clean shearing into inefficient crushing. Our anvils are surface-ground to ±0.05 mm parallelism to maintain the designed clearance across the full cutting width — restoring the self-feeding bite and reducing motor load by up to 20%.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "DURABILITY",
-        title: "Static Impact Resistance",
-        description:
-          "The anvil absorbs the full reaction force of every cut as a static impact load — millions of hits per shift. Through-hardened D2 and A8 Modified steel at HRC 54–60 provides the correct balance: hard enough to hold a sharp edge against abrasive timber, tough enough to absorb repeated impacts without micro-cracking or catastrophic fracture.",
-      },
-      {
-        id: "matched-sets",
-        tag: "SYSTEM INTEGRATION",
-        title: "Matched Blade + Anvil Sets",
-        description:
-          "Chipper blades and counter-knives from different suppliers often have mismatched hardness — a harder anvil wears the blade prematurely, or a softer anvil degrades faster than expected. Our matched sets are manufactured from the same steel batch and heat-treated in the same cycle, ensuring balanced wear rates and maximum combined service life.",
-      },
-    ],
-
     dimensionLabels: {
-      col0: "Chipper OEM / Model",
-      col1: "Length (mm)",
-      col2: "Width (mm)",
-      col3: "Thickness (mm)",
-      caption:
-        "* Standard OEM replacement anvil dimensions. Slotted mounting holes CNC-machined to exact OEM clearance adjustment patterns. Matched blade + anvil sets available for all sizes. Custom lengths up to 600 mm.",
+      "col0": "Chipper OEM / Model",
+      "col1": "Length (mm)",
+      "col2": "Width (mm)",
+      "col3": "Thickness (mm)",
+      "caption": "* Standard OEM replacement anvil dimensions. Slotted mounting holes CNC-machined to exact OEM clearance adjustment patterns. Matched blade + anvil sets available for all sizes. Custom lengths up to 600 mm."
     },
-
     standardDimensions: [
       {
-        spec: 'Bandit 12" / 15" / Mighty Bandit',
-        od: "185",
-        id: "75",
-        thickness: "10",
+        "itemNo": "SR006201",
+        "spec": "Bandit 12\" / 15\" / Mighty Bandit",
+        "od": "185",
+        "id": "75",
+        "thickness": "10"
       },
       {
-        spec: 'Bandit 18" / 19" / 1290 / 1590',
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      { spec: "Vermeer BC1200 / BC1500", od: "200", id: "80", thickness: "12" },
-      {
-        spec: "Vermeer BC1800 / BC2000",
-        od: "260",
-        id: "100",
-        thickness: "16",
+        "itemNo": "SR006202",
+        "spec": "Bandit 18\" / 19\" / 1290 / 1590",
+        "od": "265",
+        "id": "95",
+        "thickness": "12"
       },
       {
-        spec: "Morbark 2 / 5 / 7 / 12 / 13",
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      { spec: "Morbark 40/36 / 50/48", od: "400", id: "100", thickness: "20" },
-      {
-        spec: "Timberwolf 150 / 190 / 230",
-        od: "230",
-        id: "80",
-        thickness: "16",
+        "itemNo": "SR006203",
+        "spec": "Vermeer BC1200 / BC1500",
+        "od": "200",
+        "id": "80",
+        "thickness": "12"
       },
       {
-        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
-        od: "260",
-        id: "80",
-        thickness: "20",
+        "itemNo": "SR006204",
+        "spec": "Vermeer BC1800 / BC2000",
+        "od": "260",
+        "id": "100",
+        "thickness": "16"
       },
       {
-        spec: "Greenmech / Jensen / Forst",
-        od: "Per OEM Drawing",
-        id: "Per OEM Drawing",
-        thickness: "Per OEM Drawing",
+        "itemNo": "SR006205",
+        "spec": "Morbark 2 / 5 / 7 / 12 / 13",
+        "od": "265",
+        "id": "95",
+        "thickness": "12"
       },
+      {
+        "itemNo": "SR006206",
+        "spec": "Morbark 40/36 / 50/48",
+        "od": "400",
+        "id": "100",
+        "thickness": "20"
+      },
+      {
+        "itemNo": "SR006207",
+        "spec": "Timberwolf 150 / 190 / 230",
+        "od": "230",
+        "id": "80",
+        "thickness": "16"
+      },
+      {
+        "itemNo": "SR006208",
+        "spec": "Schliesing 400 / 500 / 550 / 600 / 660",
+        "od": "260",
+        "id": "80",
+        "thickness": "20"
+      },
+      {
+        "itemNo": "SR006209",
+        "spec": "Greenmech / Jensen / Forst",
+        "od": "Per OEM Drawing",
+        "id": "Per OEM Drawing",
+        "thickness": "Per OEM Drawing"
+      }
     ],
-
+    detailLayout: {
+      seoTitle: "Wood Chipper Anvils & Counter Knives",
+      heroAlt: "Rectangular wood chipper anvil with three fixing holes and a ground working edge",
+      sizeRange: "185–400 mm",
+      heroSpecs: [
+        { label: "Material", value: "D2, Cr12MoV, modified A8 or 42CrMo" },
+        { label: "Application", value: "Stationary counter knives for wood chippers" },
+      ],
+      technicalSpecs: [
+        {
+          label: "Sizes",
+          value: "Listed lengths 185–400 mm; custom lengths up to 600 mm",
+        },
+        {
+          label: "Application",
+          value: "Stationary counter knife opposite the moving chipper knives",
+        },
+        { label: "Material", value: "D2, Cr12MoV, modified A8 or 42CrMo" },
+        {
+          label: "Mounting",
+          value: "Slotted holes with shim-adjustable knife clearance",
+        },
+        { label: "Hardness", value: "HRC 54–60, through-hardened" },
+        { label: "Edge Geometry", value: "Single bevel, 30°–37°" },
+        { label: "Parallelism", value: "±0.05 mm over the blade length" },
+        {
+          label: "Resharpening",
+          value:
+            "Through-hardened; 5–10 regrind cycles, subject to wear and remaining anvil height",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+        alt: "Two wood chipper counter knives showing the bevel and counterbored fixing holes",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Request a quote for your chipper anvils",
+        description:
+          "Include the chipper model and serial number, anvil position, drawing or sample, and required quantity.",
+        buttonLabel: "Request a quote",
+      },
+    },
     relatedBladeIds: ["wood-chipper-blades"],
-
     offers: { lowPrice: 25, highPrice: 250 },
-
     faqs: {
       technical: [
         {
-          question: "What does the anvil do in a wood chipper?",
+          question: "What does a wood chipper anvil do, and is it a counter knife?",
           answer:
-            "The anvil (also called the bed knife or counter-knife) is the fixed cutting edge that the rotating chipper blades shear against. Wood is sliced cleanly in the gap between the spinning knife and the stationary anvil. A correctly set anvil-to-knife clearance (typically 0.5–1.5 mm) produces uniform chips, reduces knife wear, and prevents stringy or oversized output. A worn or misaligned anvil is the most common cause of poor chip quality and accelerated blade dulling.",
+            "The anvil provides the stationary edge that the moving chipper knives cut against. Counter knife and bed knife can refer to that same position, depending on the machine. Use the parts diagram to identify the stationary edge and its mounting before ordering by name.",
         },
         {
-          question:
-            "How often should I replace or resharpen the anvil compared to the chipper blades?",
+          question: "Why can cutting remain poor after the moving knives are replaced?",
           answer:
-            "The anvil typically outlasts chipper blades by 2–4× because it operates under static compressive loading rather than the dynamic shear loading on the blade. However, we recommend inspecting the anvil edge every time chipper blades are changed or flipped. When the anvil edge shows visible rounding exceeding 1.0 mm (check with a straightedge under bright light), regrind or replace it. Installing new chipper blades against a worn anvil delivers only 50–70% of their potential edge life and produces poor chip quality regardless of blade sharpness.",
+            "The moving knives still work against the existing stationary edge. Rounding, damage or an altered installed position at the anvil can affect their cutting relationship. Compare both parts and their mounting condition, then use the chipper manufacturer's procedure to assess clearance. A new moving knife does not restore a worn stationary face.",
         },
         {
-          question:
-            "What clearance gap should I set between the chipper blade and the anvil?",
+          question: "What should guide the choice of anvil steel?",
           answer:
-            "Clearance varies by chipper type and timber species. For drum chippers processing green softwood: 0.5–1.0 mm. For drum chippers on dry hardwood: 0.8–1.5 mm. For disc chippers: 1.0–2.0 mm. Always refer to your chipper OEM manual for the exact specification. The gap should be measured at multiple points across the full anvil width using a feeler gauge. If the gap varies by more than 0.3 mm from end to end, the anvil face parallelism has degraded and the anvil needs regrinding or replacement.",
+            "Compare the current material, edge wear and any local damage with the wood feed and moving-knife configuration. The material decision should address the observed condition while retaining the required bevel and body profile. Distinguish gradual wear from impact-related damage before selecting among the listed steel options.",
         },
         {
-          question:
-            "Should I use the same steel grade for the anvil as the chipper blade?",
+          question: "Can a worn anvil be turned to expose another edge?",
           answer:
-            "Not necessarily — the anvil and blade have different wear modes and therefore different optimal metallurgy. The blade experiences dynamic shear loading at high speed and benefits from maximum edge hardness (HRC 58–62). The anvil experiences static compressive impact and benefits from a slightly lower hardness (HRC 54–58) that provides greater impact absorption. A8 Modified at HRC 54–58 is the industry-standard anvil grade for this reason. However, for high-volume biomass operations on clean hardwood, upgrading both blade and anvil to D2 at HRC 58–60 is recommended.",
+            "Yes, if the anvil was designed with another usable edge and that orientation is permitted by the mounting. Check the drawing for its seating faces and adjustment requirements. Some faces of a rectangular anvil may locate or support it without serving as working edges.",
         },
         {
-          question:
-            "What causes a chipper to stop self-feeding even with sharp blades?",
+          question: "Can I order the anvil separately from the chipper knives?",
           answer:
-            "If the chipper stops pulling timber into the cutting chamber despite having freshly sharpened or new blades, the anvil is almost certainly worn. A rounded anvil edge increases the effective clearance gap, which means the blade can no longer bite into the timber with sufficient depth to generate the pulling force. The timber bounces on the blade surface instead of being grabbed and drawn in. Inspect and regrind or replace the anvil, then reset the clearance gap to OEM specification.",
+            "Yes. The anvil can be supplied as an individual replacement or included with [Wood Chipper Blades](/products/wood-chipper-blades). Keep the two drawings and quantities separate. The dimensions and condition of retained moving knives remain relevant because the new anvil must occupy its intended position in the existing cutting pair.",
         },
         {
-          question:
-            "Can I sharpen the anvil with the same tools I use for chipper blades?",
+          question: "What details do I need to get a wood chipper anvil quote?",
           answer:
-            "Yes — the same wet surface grinder and aluminum oxide wheel (46–60 grit) used for chipper blades works for anvils. The same rules apply: light passes (0.02–0.05 mm per pass), never dry-grind without quenching, and verify the bevel angle with a protractor after grinding. The anvil bevel angle should match the chipper OEM specification (typically 30°–37°). Some operators neglect the anvil during regrinding because it appears less worn than the blade — this is a false economy that shortens blade life and degrades chip quality.",
-        },
-        {
-          question:
-            "Why does my chipper produce long, stringy fibres instead of clean chips?",
-          answer:
-            "Long fibrous slivers — sometimes called 'spaghetti' or 'stringers' — indicate the blade-to-anvil clearance gap is too wide. The timber is being torn and pulled apart rather than sheared cleanly. This happens when the anvil edge has rounded off or when the anvil has been improperly shimmed after blade replacement. Reset the clearance to OEM specification using a feeler gauge. If the anvil edge cannot be resharpened to a clean, straight edge (due to deep chips or cracks), replace the anvil.",
+            "Send the chipper model and serial number, anvil drawing or part number, quantity and the wood you process. For a shim-adjusted assembly, show the slot spacing, seating faces, shim arrangement and working-edge position relative to the moving knife. Mark any dimensions changed by wear or regrinding.",
         },
       ],
-      company: [
-        {
-          question: "Are you a trading company or a direct manufacturer?",
-          answer:
-            "We are a 100% direct OEM manufacturer established in 2008. When you buy from Sureay, you bypass middleman markups and communicate directly with the engineers who forge and grind your blades and anvils.",
-        },
-        {
-          question:
-            "Can you supply matched blade + anvil sets for my specific chipper model?",
-          answer:
-            "Yes. We strongly recommend purchasing blades and anvils as matched sets — manufactured from the same steel batch and heat-treated in the same vacuum furnace cycle. This ensures balanced hardness and wear rates across both components. Provide your chipper make and model number, and we will supply a complete matched set with pre-verified clearance recommendations. Matched sets are available for Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck, and Forst platforms.",
-        },
-        {
-          question:
-            "Can you manufacture an anvil for my chipper if it is not listed in your standard dimensions?",
-          answer:
-            "Yes. Send us your existing anvil, a technical drawing, or your chipper make and model number. We reverse-engineer replacement anvils from OEM drawings or physical samples, verifying fit on a CMM before production. Custom lengths up to 600 mm are manufactured within 10–15 working days.",
-        },
-        {
-          question: "Do you ship globally and how long does it take?",
-          answer:
-            "Yes, we export to over 50 countries. Standard OEM replacement anvils in stock sizes typically ship within 48–72 hours. Custom dimensions take 10–15 working days. We partner directly with DHL, FedEx, and international sea freight forwarders for reliable door-to-door delivery.",
-        },
-        {
-          question: "What quality documentation ships with each anvil?",
-          answer:
-            "Every shipment includes a Rockwell HRC hardness test report, a dimensional inspection record (length, width, thickness parallelism, mounting hole positions), and a heat treatment batch certificate. For matched blade + anvil sets, a combined inspection report documents the hardness of both components to verify the designed hardness differential.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Include the chipper model and serial, anvil drawing, mounting-slot pattern, working faces and knife details.",
+    rfqPlaceholder:
+      "Chipper model and serial number, anvil position, drawing or sample, and quantity required.",
+    disambiguation:
+      "For the knives attached to the rotating drum or disc, see [Wood Chipper Blades](/products/wood-chipper-blades).",
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 37. Slitter Rewinder Bottom Knives (circular bottom knives, paper rewinding)
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement bottom knives for your slitter rewinder, including cup, double-edge and replaceable-ring designs. Send Sureay your drawing or sample for a quotation on the flange, bore and cutting-face configuration your existing assembly needs.",
     id: "slitter-rewinder-bottom-knives",
+    seoDescription:
+      "Cup, double-edge and replaceable-ring bottom knives for paper rewinders, in OD 70–300 mm. Specify a keyed bore, flange mount or carbide cutting edge.",
     name: "Slitter Rewinder Bottom Knives",
-    fullName:
-      "Carbide Slitter Rewinder Bottom Knives for Paper & Film Rewinding Lines",
+    fullName: "Slitter Rewinder Bottom Knives – Cup, Double Edge & Tipped",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Slitter Knives",
+    categoryDisplay: "Slitter Rewinder Bottom Knives",
     image:
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Mirror Finish",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Range of slitter rewinder bottom knives and blade rings in four diameters",
-      "Pair of carbide slitter rewinder bottom knives showing bore and bolt holes",
-      "Single slitter rewinder bottom knife ring with mirror-finished running face",
-    ],
-
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Solid and carbide-tipped bottom knives for high-speed paper slitter rewinders. Mirror-finished faces, burr-free cutting and reduced dust in the wound roll. Φ250–Φ254 stock sizes in thicknesses from 15 to 50 mm, custom bores to machine. Fits Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban and other electric rewinder platforms.",
-
-    fullDescription:
-      "The bottom knife on a slitter rewinder is the fixed half of a shear pair, and it is deliberately the harder half. That hardness differential between top and bottom knife is not incidental — it is the mechanism that keeps the cut clean. When the two knives are close in hardness, the shear zone deforms rather than shears, and the result is a burred slit edge and dust carried into the wound roll.\n\nSureay bottom knives are supplied in solid tungsten carbide and carbide-tipped construction, with mirror-finished faces and a keen, precisely located edge. On the tipped version the carbide is set by a controlled hot-setting process so the inserts stay bonded under high-speed running rather than loosening in service, and worn inserts can be replaced without scrapping the body.\n\n## Why Dust in the Roll Is a Bottom Knife Problem\n\nOperators usually chase dust upstream — web cleaners, static bars, extraction. Often the source is the slit itself. A bottom knife whose edge has rounded or whose face has lost its finish stops shearing and starts crushing, and crushed paper fibre becomes airborne dust that is wound directly into the roll and shows up as a converting defect two processes later. If dust appeared gradually rather than after a grade change, the bottom knife is the first thing to inspect.\n\n## Materials by Substrate\n\nSolid tungsten carbide is the longest-life choice and the right answer on abrasive and heavily coated stocks. Carbide-tipped is the best cost-to-life balance for general paper, and it has the practical advantage of being re-tippable. HSS remains reasonable for short runs on soft stocks and lowest unit cost.\n\n## Applications\n\nPaper, film, foil and similar web materials on electric slitter rewinder platforms — reel slitting, roll converting and rewinding lines running coated and uncoated paper, board, and light flexible substrates.\n\n## The Hardness Differential Is the Whole Mechanism\n\nA shear cut needs a hardness differential to stay a shear cut. When top and bottom knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and the outputs are a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often, and why replacing both on the same cycle wastes serviceable tooling. Matching the two hardnesses is a common and expensive specification mistake, and it is worth checking on any line where slit quality has drifted after a tooling change.\n\n## Dust in the Roll Usually Starts at the Slit\n\nOperators chase dust upstream — web cleaners, static bars, extraction — when the source is frequently the cut itself. A bottom knife whose edge has rounded, or whose face finish has dulled, stops shearing and starts crushing; crushed fibre is wound directly into the roll and shows up as a converting defect two processes later. The timing is the tell: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish rather than testing sharpness by feel, because face finish degrades before the edge does and raises dust well before anyone would call the knife blunt.\n\n## Solid Carbide or Carbide-Tipped\n\nSolid tungsten carbide gives the longest single service life and is the right answer on abrasive and heavily coated stocks, but when the edge is spent the knife is spent. Carbide-tipped costs less, lasts less per cycle, and is re-tippable: provided the body is straight and true and the braze seats are sound, worn inserts are replaced and the knife returns to service. That re-tippability is usually the deciding factor when the economics between the two are close. On the tipped construction the inserts are hot-set under controlled conditions so they stay bonded at rewinder speeds rather than loosening in service — braze quality, not carbide grade, is what limits the life of a badly made tipped knife.\n\n## What We Need to Match Your Machine\n\nBottom knives are made to the machine in every case, so the listed rewinder platforms are the ones we see most often rather than a limit. To quote, send the OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, the line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption. Knives ship individually with the edge protected and VCI paper against corrosion, crated for the larger diameters, because a bottom knife that arrives with a nicked edge is useless however well it was ground.",
-
+      "Replacement bottom knives for paper slitter rewinders. Cup, double-edge and carbide-tipped designs, with custom bores, flanges and widths to drawing.",
     link: "/products/slitter-rewinder-bottom-knives",
-
-    disambiguation:
-      "These are circular bottom knives that run as a shear pair with a top knife on rewinding lines. If you need flat anvils for crush cutting instead, see [Bottom Grooved Anvil Knives](/products/bottom-grooved-anvil-knives).",
-
-    compatibleMachines: [
-      "Beck",
-      "Bielomatik",
-      "Clark Aiken",
-      "DATM",
-      "Didde",
-      "ECH Will",
-      "Harris",
-      "Hamblett",
-      "Jagenberg",
-      "Langston",
-      "Lenox",
-      "Maxson",
-      "Miltex",
-      "Masson Scott",
-      "Pasaban",
+    specs: [
+      { label: "Sizes", value: "OD 70–300 mm" },
+      {
+        label: "Material",
+        value:
+          "52100, D2, M2 HSS, PM HSS, solid tungsten carbide or WC-Co on a steel body",
+      },
+      {
+        label: "Applications",
+        value: "Paper slitter rewinders and other web converting lines",
+      },
+      { label: "Profiles", value: "Cup, double edge or replaceable cutting ring" },
+      {
+        label: "Carbide options",
+        value: "Tipped and inlay constructions for the working edge",
+      },
+      {
+        label: "Mounting",
+        value: "Flange mounting, keyed bore or plain shaft bore",
+      },
+      { label: "Face finish", value: "Mirror finished" },
     ],
+    detailLayout: {
+      seoTitle: "Slitter Rewinder Bottom Knives | Cup & Double-Edge",
+      sizeRange: "OD 70–300 mm",
+      heroAlt:
+        "Circular rewinder bottom knives with several flange and mounting hole patterns",
+      specificationImage: {
+        src: "/images/products/slitter-detail/slitter-rewinder-bottom-knives-detail.webp",
+        alt: "Close-up of rewinder bottom knives with drilled and recessed flange faces",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "flange",
+          tabLabel: "Flange & Double Edge",
+          title: "Flange-Mounted and Double-Edge Bottom Knives",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Mounting or edge",
+            "Reference",
+          ],
+          rows: [
+            ["SR001211", "105 × 80 × 15 mm", "Flange", "DIENES dimensional series"],
+            ["SR001212", "130 × 90 × 20 mm", "Flange", "DIENES dimensional series"],
+            ["SR001213", "190 × 138 × 15 mm", "Double edge", "Tidland TID131393"],
+            ["SR001214", "130 × 100 × 30 mm", "Double edge", "Tidland TID133503"],
+            ["SR001215", "250 × 188 × 15 mm", "Double edge", "Tidland TID131395"],
+          ],
+        },
+        {
+          id: "tipped",
+          tabLabel: "Carbide Edge",
+          title: "Bottom Knives with a Carbide Cutting Edge",
+          columns: [
+            "Item No.",
+            "Dimensions (OD × ID × W)",
+            "Construction",
+            "Reference",
+          ],
+          rows: [
+            [
+              "SR001561",
+              "90.81 × 60.00 × 12.70 mm",
+              "Carbide-tipped",
+              "Dusenbery 783533",
+            ],
+          ],
+        },
+        {
+          id: "keyed",
+          tabLabel: "Keyway Mount",
+          title: "Bottom Knives with a Keyway",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Mounting"],
+          rows: [
+            ["SR001571", "70 × 45 × 10 mm", "10 mm keyway series"],
+            ["SR001572", "80 × 50 × 10 mm", "10 mm keyway series"],
+            ["SR001573", "108 × 80 × 20 mm", "10 mm keyway series"],
+          ],
+        },
+        {
+          id: "additional-rewinder-knives",
+          tabLabel: "Additional Rewinder Knife Sizes",
+          title: "Additional Rewinder Knife Sizes",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Knife Type"],
+          rows: [
+            ["SR001845", "250 × 188 × 25 mm", "Rewinder bottom knife"],
+            ["SR001846", "254 × 195 × 50 mm", "Rewinder bottom knife"],
+            ["SR001847", "250 × 140 × 20 mm", "Rewinder bottom knife"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "OD 70–300 mm" },
+        {
+          label: "Material",
+          value:
+            "52100, D2, M2 HSS, PM HSS, solid tungsten carbide or WC-Co on a steel body",
+        },
+        {
+          label: "Applications",
+          value: "Paper slitter rewinders and other web converting lines",
+        },
+        { label: "Profiles", value: "Cup, double edge or replaceable cutting ring" },
+        {
+          label: "Carbide options",
+          value: "Tipped and inlay constructions for the working edge",
+        },
+        {
+          label: "Mounting",
+          value: "Flange mounting, keyed bore or plain shaft bore",
+        },
+        { label: "Face finish", value: "Mirror finished" },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Tidland",
+      "Mario Cotta",
+      "Jagenberg",
+      "Valmet",
+      "Voith",
+      "Dusenbery",
+      "Cameron",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Selection",
+        title: "Steel and Carbide Working-Edge Options",
+        description:
+          "Sureay supplies steel, solid carbide and carbide-edged bottom knives, giving paper converters a choice of working-edge materials and constructions for their existing rewinder assemblies.",
+      },
+      {
+        id: "selection-2",
+        tag: "Setup",
+        title: "Cup, Double-Edge and Replaceable-Ring Designs",
+        description:
+          "Cup knives, double-edge profiles and replaceable cutting rings are available with finished working faces, supporting replacement of the specific knife body or cutting ring your assembly requires.",
+      },
+      {
+        id: "selection-3",
+        tag: "Application",
+        title: "Custom Mounting Interfaces for Rewinders",
+        description:
+          "Flanges, keyed bores, plain bores and cutting profiles can be made to your drawing or sample, supporting replacement orders for existing rewinders and older knife assemblies.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "Which replacement bottom knife fits my slitter rewinder?",
+          answer:
+            "Identify the machine model or part reference, then compare outside diameter, bore, width, flange details and fixing holes with the installed assembly. Bottom bands, lower knives and female knives are common names for the lower member of a shear-slitting pair. The working profile and mounting arrangement establish fit more precisely than the name alone.",
+        },
+        {
+          question:
+            "Can custom bottom knives be supplied for an older rewinder without replacing the upper knife?",
+          answer:
+            "Yes. Sureay can make the bottom knife to a drawing or sample while retaining a serviceable upper knife. Define the bore, flange, working width and cutting profile, and include the upper knife dimensions, condition and regrinding history. These details establish the lower knife's working position within the existing assembly.",
+        },
+        {
+          question:
+            "How do cup, double-edge and replaceable-ring bottom knives differ?",
+          answer:
+            "A cup knife uses a shaped body to position its working edge. A double-edge knife provides two working cutting faces, while a replaceable-ring assembly separates the cutting ring from its support. Select the construction required by the installed holder. For a station designed around several cutting positions on one body, see [Multi-Groove Bottom Knives](/products/groove-bottom-knives).",
+        },
+        {
+          question:
+            "Should a rewinder bottom knife use steel, solid carbide or a carbide edge?",
+          answer:
+            "For paper shear slitting, start with the existing knife construction and retained upper knife. A carbide working edge is worth evaluating when gradual wear drives knife changes; recurring chips or contact damage call for checking the pair and support first. Solid carbide and steel bodies with carbide cutting rings have different constructions, so retain the required mounting and working geometry when comparing alternatives.",
+        },
+        {
+          question:
+            "Why is the paper edge still poor after replacing a bottom knife?",
+          answer:
+            "The retained upper knife, holder stability, working-face condition and slitting settings can still affect the paper edge. Inspect both members of the pair and their mounting faces, including any geometry changed by regrinding. Comparing the same paper grade at the normal settings helps distinguish the replacement knife from other conditions in the cutting station.",
+        },
+        {
+          question:
+            "When can a rewinder bottom knife be reground rather than replaced?",
+          answer:
+            "Regrinding can be considered for a bottom-knife design whose working geometry can be restored within its permitted remaining dimensions. Assess the damaged working face and its relationship to the upper knife against the original drawing. Cup knives and replaceable cutting rings require their own geometry and allowance checks before deciding between regrinding and replacement.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "rotary-slitter-knives-paper",
+      "groove-bottom-knives",
+      "bottom-grooved-anvil-knives",
+    ],
+  },
 
+  // ─────────────────────────────────────────────────────────────────────────
+  // 38. Corrugated Slotter Knives (male arcs and female counter knives)
+  // ─────────────────────────────────────────────────────────────────────────
+  {
+    compatibleMachinesIntro: "Get replacement slotter knives for your printer-slotter or flexo folder-gluer, with custom arcs, mounting holes and cutting profiles. Send Sureay a drawing or sample for a quotation on male knives, counter knives and matching spacers.",
+    id: "corrugated-slotter-knives",
+    seoDescription:
+      "Plain or serrated male arcs and female counter knives for corrugated flap slotting. Order replacement blades made to your slot width and mounting drawing.",
+    name: "Corrugated Slotter Knives",
+    fullName: "Corrugated Slotter Knives – Male & Female Blades",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Corrugated Slotter Knives",
+    image: "/images/products/slitter-detail/box-slotting-knives-white.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
+    description:
+      "Replacement male and female slotter knives for corrugated box machines. Plain or serrated arcs, counter knives and custom mounting patterns to drawing.",
+    link: "/products/corrugated-slotter-knives",
     specs: [
       {
         label: "Material",
-        value: "Solid tungsten carbide / carbide-tipped / HSS",
-      },
-      { label: "Outer Diameter", value: "Φ250–Φ254 mm standard" },
-      { label: "Thickness", value: "15 / 20 / 25 / 50 mm" },
-      { label: "Face Finish", value: "Mirror finished" },
-      {
-        label: "Design Principle",
-        value: "Bottom knife harder than the top knife — burr and dust control",
+        value:
+          "D2, M2 HSS, 9CrSi, 9Mn2V, 52100 or carbide-tipped counter knives",
       },
       {
-        label: "Materials Slit",
-        value: "Paper, film, foil and similar web substrates",
+        label: "Applications",
+        value:
+          "Corrugated flap slotting on flexo folder-gluers and printer-slotters",
+      },
+      {
+        label: "Typical hardness",
+        value: "D2 58–62 HRC · M2 62–65 HRC · Carbide working edge 89–92 HRA",
+      },
+      {
+        label: "Male blade",
+        value:
+          "Plain or serrated arc, with stitch-lap and corner segments available",
+      },
+      {
+        label: "Female assembly",
+        value: "Two counter-knife halves with a matched spacer",
+      },
+      {
+        label: "Mounting",
+        value:
+          "Round holes, countersunk holes or arc adjustment slots",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Item",
-      col1: "OD ØD (mm)",
-      col2: "Bore Ød (mm)",
-      col3: "Thickness T (mm)",
-      caption:
-        "* Standard rewinder bottom knife sizes. Bore, thickness and edge geometry are matched to the machine — send the OD/ID/T of the knife you run now plus the matching top knife spec.",
-    },
-
-    standardDimensions: [
-      { spec: "1", od: "Φ250", id: "Φ188", thickness: "25" },
-      { spec: "2", od: "Φ254", id: "Φ195", thickness: "50" },
-      { spec: "3", od: "Φ250", id: "Φ188", thickness: "15" },
-      { spec: "4", od: "Φ250", id: "Φ140", thickness: "20" },
-    ],
-
-    steelGrades: {
-      intro:
-        "The bottom knife should always be the harder half of the pair. Within that rule, the grade is chosen on how abrasive the substrate is and on whether you want a re-tippable body.",
-      rows: [
+    detailLayout: {
+      seoTitle: "Corrugated Slotter Knives | Male & Female",
+      sizeRange: "Arc series R105–R406 mm",
+      heroAlt:
+        "Arc-shaped corrugated slotter components with round mounting holes and elongated slots",
+      specificationImage: {
+        src: "/images/products/slitter-detail/box-slotting-knives-detail-white.webp",
+        alt: "Detail of curved slotter segments showing round fixing holes and arc adjustment slots",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
         {
-          grade: "Solid tungsten carbide",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Abrasive and heavily coated stocks; the longest interval between changes",
-          tradeoff:
-            "Highest unit price, and the whole knife is scrapped when the edge is spent",
+          id: "male",
+          tabLabel: "Male Blades",
+          title: "Male Slotter Blades",
+          columns: [ITEM_NO_COLUMN, "Outer R × Inner r × T", "Arc angle", "Edge"],
+          rows: [
+            ["SR001601", "105 × 58 × 5 mm", "To drawing", "Plain or serrated"],
+            [
+              "SR001602",
+              "113 × 63.5 × 7.5 mm",
+              "To drawing",
+              "Plain or serrated",
+            ],
+            ["SR001603", "115 × 58 × 8 mm", "To drawing", "Plain or serrated"],
+            ["SR001604", "168.7 × 120.3 × 8 mm", "36.2°", "To drawing"],
+            ["SR001605", "213.5 × 130 × 7.5 mm", "20.5°", "To drawing"],
+            ["SR001606", "213.5 × 130 × 7.5 mm", "72°", "To drawing"],
+            ["SR001607", "212 × 159 × 10 mm", "60°", "To drawing"],
+            ["SR001608", "281.5 × 237.5 × 7.2 mm", "88°", "To drawing"],
+            ["SR001609", "406 × 316 × 7.9 mm", "To drawing", "To drawing"],
+          ],
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 at the tip",
-          bestFor:
-            "General paper and board — the best cost-to-life balance, and re-tippable",
-          tradeoff:
-            "Braze quality decides service life; poorly set inserts loosen at speed",
-        },
-        {
-          grade: "HSS",
-          hardness: "62–64 HRC",
-          bestFor: "Short runs, soft uncoated stocks, lowest unit cost",
-          tradeoff:
-            "Edge rounds quickly at rewinder speeds, which is where dust in the roll begins",
+          id: "female",
+          tabLabel: "Female Knives",
+          title: "Female Counter Knives",
+          columns: [
+            ITEM_NO_COLUMN,
+            "Configuration",
+            "Dimensions",
+            "Mounting or reference",
+          ],
+          rows: [
+            [
+              "SR001610",
+              "Plain counter knife",
+              "OD 90–450 mm range",
+              "Mounting and thickness to drawing",
+            ],
+            [
+              "SR001611",
+              "Split counter knife",
+              "OD 90–450 mm range",
+              "Plain lower halves, spacer to drawing",
+            ],
+            [
+              "SR001612",
+              "Carbide-tipped lower set",
+              "To matched slot and drawing",
+              "Confirm lower shaft and upper blade",
+            ],
+          ],
         },
       ],
-      outro:
-        "Whichever grade you choose, keep the hardness differential with the top knife. Matching the two hardnesses is a common and expensive mistake — it removes the shear and leaves you crushing the web.",
     },
-
+    compatibleMachines: [
+      "BOBST",
+      "Martin",
+      "EMBA",
+      "Mitsubishi EVOL",
+      "Isowa",
+      "Göpfert",
+      "MarquipWardUnited",
+      "TCY",
+      "Shinko",
+      "Dongfang",
+    ],
     components: [
       {
-        id: "hardness-differential",
-        tag: "SHEAR MECHANICS",
-        title: "Deliberately Harder Than the Top Knife",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Materials Selected by Male and Female Knife Position",
         description:
-          "The bottom knife is specified harder than its mating top knife on purpose. That differential is what keeps the pair shearing rather than deforming the web, and it is the direct cause of burr-free slit edges and low dust carry-over into the wound roll.",
+          "Sureay supplies steel slotter knives and carbide-tipped counter knives, allowing male and female components to be specified separately for the material and construction required by your slotting assembly.",
       },
       {
-        id: "mirror-face-finish",
-        tag: "SURFACE FINISH",
-        title: "Mirror-Finished Running Face",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Plain and Serrated Arcs with Custom Mounting",
         description:
-          "A polished face releases the web instead of dragging on it, which keeps the slit clean and reduces friction heat at the cut. Face finish is one of the first things to degrade in service and one of the last things operators check — a dulled face raises dust long before the edge itself is worn out.",
+          "Plain and serrated arcs, stitch-lap segments and corner segments are available with round holes, countersunk holes or adjustment slots made for the existing slotter head.",
       },
       {
-        id: "hot-set-carbide",
-        tag: "CONSTRUCTION",
-        title: "Controlled Hot-Set Carbide Inserts",
+        id: "selection-3",
+        tag: "Application",
+        title: "Male Knives, Female Knives and Matching Spacers",
         description:
-          "On the tipped construction, inserts are hot-set under controlled conditions so they stay firmly bonded under high-speed running. The practical payoff is a re-tippable body: worn inserts are replaced and the knife returns to service rather than being scrapped.",
+          "Order replacement male arcs, female counter-knife halves and matching spacers individually or together, with each component defined for the parts you plan to retain.",
       },
     ],
-
-    relatedBladeIds: [
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-      "tungsten-carbide-slitter-knives",
-    ],
-
-    rfqPlaceholder:
-      "Example: Jagenberg rewinder, bottom knife Φ250 × Φ188 × 25 mm, matched to a Φ200 top knife. Slitting 120 gsm coated paper at 800 m/min, 12 slits. Getting dust in the roll and a slightly burred edge.",
-
     faqs: {
       technical: [
         {
-          question: "Why should the bottom knife be harder than the top knife?",
+          question:
+            "How are replacement slotter knives matched to a box converting machine?",
           answer:
-            "Because a shear cut needs a hardness differential to stay a shear cut. When the two knives are close in hardness, the material in the shear zone deforms instead of separating cleanly, and you get a burred slit edge and crushed fibre that becomes dust in the roll. The harder bottom knife holds a stable edge geometry while the softer top knife carries the wear — which is also why the top knife is the one you expect to change more often. Matching the hardnesses is a common and expensive mistake.",
+            "Identify the printer-slotter or flexo folder-gluer station and whether you need a male arc, female counter knife or spacer. Compare the arc geometry, thickness, mounting pattern and installed hand with the existing part. Slotter knives form flap slots during box converting; [slitter-scorer blades](/products/corrugated-slitter-scorer-blades) slit board lengthwise at the corrugator dry end and use different geometry. For grooves in greyboard used to make rigid boxes, see [Carbide Box V-Grooving Knives](/products/box-slotting-knives).",
         },
         {
           question:
-            "I am getting dust in the wound roll. Where should I look first?",
+            "What is the difference between male and female slotter knives?",
           answer:
-            "At the slit itself, before the web cleaners and static bars. A bottom knife whose edge has rounded or whose face finish has dulled stops shearing and starts crushing, and crushed fibre goes straight into the roll — often showing up as a defect two processes later. The tell is timing: dust that appeared gradually points at the knife, dust that appeared after a grade change points at the substrate. Inspect the edge under magnification and check the face finish, not just sharpness by feel.",
+            "The male arc enters the female knife assembly to form the board slot. Two female counter faces and their spacer establish the cooperating opening. A replacement order should identify which component is being changed and the dimensions of the retained parts, so the male blade and female opening remain defined as a working combination.",
+        },
+        {
+          question: "Should I choose a plain or serrated male slotter blade?",
+          answer:
+            "For a like-for-like replacement, retain the plain or serrated edge form used by the installed slotter head. Changing the edge form requires checking the male arc with the female opening, board specification and slot-quality requirement. Specify the intended edge form on the drawing so the replacement is not identified by arc dimensions alone.",
+        },
+        {
+          question: "Why do corrugated slots have torn edges or uneven widths?",
+          answer:
+            "Torn slot edges or width variation can involve worn cutting faces or the way the male and female heads run together. Check the male edge, both female counter faces, spacer, head alignment and runout against the machine's setup requirements. Compare the defect across slot positions before deciding which knives or supporting components need replacement.",
         },
         {
           question:
-            "Can I order bottom knives without replacing the top knives?",
+            "When should a carbide-tipped female slotter knife be considered?",
           answer:
-            "Yes, and it is the normal way these are bought. Bottom knives typically outlast top knives by a wide margin, so replacing them on the same cycle wastes serviceable tooling. Give us the bottom knife OD/ID/thickness and the matching top knife specification, and we will match the mating geometry and the hardness differential to what you already run.",
+            "Consider carbide-tipped counter knives when recurring wear of the female cutting faces is the main replacement issue, after checking head alignment, runout and the mating clearance. Keep the male-blade geometry and female opening consistent with the original assembly. Compare the existing steel knife's wear pattern and operating conditions when specifying the carbide-tipped alternative.",
         },
         {
-          question: "Can worn carbide-tipped knives be re-tipped?",
+          question: "Can custom slotter arcs be made from a drawing or sample?",
           answer:
-            "Yes, provided the body is straight and true and the braze seats are sound. Re-tipping is substantially cheaper than a new knife and is the reason to choose tipped over solid carbide when the economics are close. Solid carbide cannot be re-tipped — when the edge is spent the knife is spent, which is the trade you accept for the longest single service life.",
+            "Yes. Sureay can reproduce arcs with specified inner and outer radii, arc angle, thickness, edge form and mounting holes or slots. A sample helps identify the installed profile and hand; the intended new dimensions should account for wear on the sample. Identify the mating female assembly and which arc segments are required.",
+        },
+        {
+          question: "Must male and female slotter knives be replaced together?",
+          answer:
+            "They can be ordered separately when the retained components remain serviceable and their mating geometry is known. Check both female counter faces and the spacer as well as the male arc. The replacement needs the correct relationship to the female opening, in addition to matching the mounting pattern.",
         },
       ],
-      company: [
-        {
-          question: "What do you need to quote a bottom knife?",
-          answer:
-            "OD, bore and thickness of the knife you run now, the matching top knife specification, what you are slitting, line speed and the number of slits. If any of that is unknown, send the worn knife or photographs with a caliper in frame — we would rather reverse-engineer from a sample than quote against an assumption.",
-        },
-        {
-          question:
-            "Do you supply for rewinder brands outside the list on this page?",
-          answer:
-            "Yes. The listed platforms are the ones we see most often, not a limit — bottom knives are made to the machine in every case. Any electric slitter rewinder is in scope once we have the mounting dimensions and the mating top knife specification.",
-        },
-        {
-          question: "How are these packed?",
-          answer:
-            "Individually, with the edge protected and VCI paper against corrosion, in a fitted crate for the larger diameters. Bottom knives that arrive with a nicked edge are useless regardless of how they were made, so the packing is specified for the transit rather than for the shelf.",
-        },
-      ],
+      company: [],
     },
-  },
-
-  // ─────────────────────────────────────────────────────────────────────────
-  // 38. Box Slotting Knives (rigid & gift box greyboard grooving)
-  // ─────────────────────────────────────────────────────────────────────────
-  {
-    id: "box-slotting-knives",
-    name: "Box Slotting Knives",
-    fullName: "Precision Carbide Slotting Knives for Rigid & Gift Box Grooving",
-    category: "slitter_knives",
-    sector: "converting",
-    categoryDisplay: "Packaging & Board Knives",
-    image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Left / Right Pairs",
-    badgeColor: "teal",
-    gallery: [
-      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Six carbide box slotting knives fanned out to show the stock length and width range",
-      "Pair of carbide box slotting knives showing the ground grooving bevel",
-      "Box slotting knives in labelled protective cases alongside two loose knives",
-    ],
-
-    description:
-      "Carbide slotting knives for greyboard V-grooving on rigid and gift box lines. Supplied as left- and right-hand pairs in five stock sizes from 50 × 12 mm to 60 × 15 mm, 2.0 / 2.2 mm thick, in GS05U wear-optimised and GS20U tough carbide grades. Clean grooves without tearing or fraying the board face, adjustable to board thickness.",
-
-    fullDescription:
-      "A rigid box is only as good as its groove. The V-groove cut into greyboard controls how the board folds, and a groove that tears or frays the face liner shows through the wrap as a visible defect on a product that is bought precisely because it looks expensive. On gift and luxury box work there is no acceptable tolerance for a ragged groove.\n\nSureay slotting knives are ground from high-grade tungsten carbide and supplied as matched left- and right-hand pairs, because that is how they cut. The two knives work together to form the groove walls; running a new knife against a worn one produces an asymmetric groove that folds off-square, which is why we quote and ship them as pairs rather than as units.\n\n## Two Grades, One Decision\n\nGS05U is the higher-hardness, wear-optimised grade and the right choice for standard greyboard on long runs. GS20U trades some hardness for toughness and is the grade for thick board and for recycled board carrying inclusions — the same distinction that runs through every carbide application, expressed here in board terms. Choosing GS05U for recycled board with grit in it is the most common way these knives get chipped.\n\n## Adjustable to Board Thickness\n\nThe knife gap is set to the board being run, so one pair covers a range of board calipers rather than being locked to a single thickness. In practice that means a rigid box line changing between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width is within range.\n\n## Applications\n\nGreyboard V-grooving on rigid box and gift box lines: luxury packaging, cosmetics and spirits boxes, presentation cases, hardcover book board, and standard rigid cartons.\n\n## Why We Quote in Pairs\n\nThe two knives form the groove walls together, so they are ground, matched and shipped as a pair, and they should be changed as one. Running a new knife against a worn one cuts an asymmetric groove, and an asymmetric groove folds off-square — a defect that shows through the wrap on precisely the products that can least afford it. Replacing a single knife is also usually a missed diagnosis: an early single-knife failure normally means an inclusion strike or a setting fault, and both will happen again to the replacement. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month and we will quote a schedule rather than a one-off quantity, because most rigid box lines are better served by a standing order than by ordering when the last pair fails.\n\n## GS05U or GS20U — Decide on the Board, Not the Run Length\n\nGS05U is harder and wears more slowly, which makes it right for clean virgin greyboard. GS20U trades hardness for toughness and survives inclusions, which makes it right for thick board and recycled stock. The failure modes differ and that is the entire decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year even though it tests softer and shows shorter edge life on a clean-board trial. Choosing the hardest available grade for contaminated board is the most common way these knives get destroyed.\n\n## Fraying Grooves: Edge or Setting\n\nA fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it. Check the edges first. If they are still keen, look at the knife gap relative to board caliper — too wide and the board is torn open rather than cut, too tight and the face is crushed. The timing separates the two causes reliably: setting problems appear immediately after a changeover, edge problems appear gradually over a run. Because the knife gap is set to the board rather than fixed, a single pair covers a range of calipers, so a line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools provided the groove width stays in range.\n\n## Sizes and Machines Outside the List\n\nThe five stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing, and any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. If you have no drawing, send a worn knife or photographs with a caliper in frame and we return a dimensioned drawing for approval before manufacture. We would rather work from your actual tooling than from a compatibility claim. Stock sizes typically ship within a few working days; made-to-drawing geometries run 15–25 working days from drawing approval, and repeat orders against an approved drawing quote the same day.",
-
-    link: "/products/box-slotting-knives",
-
-    specs: [
-      { label: "Material", value: "High-grade tungsten carbide" },
-      { label: "Grades", value: "GS05U (wear) / GS20U (toughness)" },
-      { label: "Length", value: "50 / 60 mm" },
-      { label: "Width", value: "12 / 15 / 16 mm" },
-      { label: "Thickness", value: "2.0 / 2.2 mm" },
-      { label: "Supply", value: "Matched left- and right-hand pairs" },
-      {
-        label: "Application",
-        value: "Greyboard V-grooving on rigid and gift box lines",
-      },
-    ],
-
-    dimensionLabels: {
-      col0: "Item",
-      col1: "L × W (mm)",
-      col2: "Thickness T (mm)",
-      caption:
-        "* Five stock sizes, supplied as left- and right-hand pairs. Other lengths, widths and edge geometries made to drawing or reverse-engineered from a worn knife.",
-    },
-
-    standardDimensions: [
-      { spec: "1", od: "50 × 12", id: "2 / 2.2" },
-      { spec: "2", od: "50 × 15", id: "2 / 2.2" },
-      { spec: "3", od: "50 × 16", id: "2 / 2.2" },
-      { spec: "4", od: "60 × 12", id: "2 / 2.2" },
-      { spec: "5", od: "60 × 15", id: "2 / 2.2" },
-    ],
-
-    steelGrades: {
-      intro:
-        "The grade decision on slotting knives is wear against toughness, and the board tells you which one you need. Clean virgin greyboard wears an edge; recycled board with inclusions chips it.",
-      rows: [
-        {
-          grade: "GS05U",
-          hardness: "Higher hardness, wear-optimised",
-          bestFor:
-            "Standard virgin greyboard on long production runs — the default grade",
-          tradeoff:
-            "Less forgiving of inclusions; chips rather than wears if the board is contaminated",
-        },
-        {
-          grade: "GS20U",
-          hardness: "Higher toughness",
-          bestFor:
-            "Thick board and recycled board carrying grit or other inclusions",
-          tradeoff: "Shorter edge life on clean board than GS05U",
-        },
-      ],
-      outro:
-        "If your board mix includes recycled stock at all, GS20U usually wins on total cost even though it loses on edge life — a chipped knife is scrapped, a worn one is reground.",
-    },
-
-    components: [
-      {
-        id: "matched-pairs",
-        tag: "SUPPLY FORMAT",
-        title: "Left and Right Supplied as a Pair",
-        description:
-          "The two knives form the groove walls together, so they are ground, matched and shipped as a pair. Running a new knife against a worn one produces an asymmetric groove that folds off-square — a defect that shows through the wrap on exactly the products that can least afford it.",
-      },
-      {
-        id: "clean-groove-edge",
-        tag: "SURFACE QUALITY",
-        title: "Grooves That Do Not Tear the Face",
-        description:
-          "Edge geometry is ground to sever greyboard fibre rather than push it, so the groove walls stay clean and the face liner does not fray. On rigid and gift box work the groove is the difference between a fold that looks machined and one that looks damaged.",
-      },
-      {
-        id: "adjustable-gap",
-        tag: "PROCESS FLEXIBILITY",
-        title: "Adjustable to Board Caliper",
-        description:
-          "Knife gap is set to the board being run, so a single pair covers a range of calipers instead of being locked to one thickness. A line moving between 1.5 mm and 3 mm greyboard adjusts rather than re-tools, provided the groove width stays in range.",
-      },
-    ],
-
     relatedBladeIds: [
       "corrugated-slitter-scorer-blades",
+      "rotary-slitter-knives-paper",
       "tungsten-carbide-slitter-knives",
-      "paper-straw-slitting-blades",
     ],
-
-    rfqPlaceholder:
-      "Example: rigid box V-grooving line, knives 50 × 15 × 2.2 mm left and right. Running 2 mm greyboard, some recycled. Groove width 2 mm. Need 10 pairs, and a recommendation on grade.",
-
-    faqs: {
-      technical: [
-        {
-          question:
-            "Can I replace just one knife of a pair when only one is worn?",
-          answer:
-            "You can, but it is usually a false economy. The two knives form the groove walls together, so a new knife working against a worn one cuts an asymmetric groove and the board folds off-square. On rigid and gift box work that shows through the wrap. If one knife of a pair has failed early, it is worth finding out why — an early single-knife failure normally means an inclusion strike or a setting problem, and both will happen again to the replacement.",
-        },
-        {
-          question: "GS05U or GS20U — how do I choose?",
-          answer:
-            "By what is in the board, not by how long the run is. GS05U is harder and wears more slowly, which makes it the right grade for clean virgin greyboard. GS20U is tougher and survives inclusions, which makes it the right grade for thick board and recycled stock. The failure modes are different and that is the whole decision: a worn knife is reground and returned to service, a chipped one is scrapped. If your board mix includes recycled material at all, GS20U usually costs less over a year.",
-        },
-        {
-          question:
-            "My grooves are fraying at the face. Is that the knife or the setting?",
-          answer:
-            "Check the edge first. A fraying groove face is the signature of an edge that has stopped severing fibre and started pushing it — the same failure that shows as a furry cut on any board application. If the edges are still keen, look at the knife gap relative to board caliper: too wide and the board is torn open rather than cut, too tight and the face is crushed. Setting problems tend to appear immediately after a changeover, edge problems appear gradually.",
-        },
-        {
-          question: "Can you make lengths outside 50 and 60 mm?",
-          answer:
-            "Yes. The stock sizes are the ones ordered most often, not a limit — lengths, widths and edge geometry are made to drawing. If you do not have a drawing, send a worn knife or photographs with a caliper in frame and we will produce a dimensioned drawing for your approval before manufacture.",
-        },
-      ],
-      company: [
-        {
-          question: "Are these quoted per knife or per pair?",
-          answer:
-            "Per pair, because that is how they cut and how they should be changed. Tell us how many grooving stations the line runs and how many pairs you consume in a typical month, and we will quote a schedule rather than a one-off quantity — most rigid box lines are better served by a standing order than by ordering when the last pair fails.",
-        },
-        {
-          question: "Which slotting machines do you supply for?",
-          answer:
-            "Knives are made to the machine, so any greyboard V-grooving or rigid box slotting line is in scope once we have the knife geometry. Send the machine make and model together with the dimensions of the knives you run now — or a worn sample — and we will match them. We would rather work from your actual tooling than from a compatibility claim.",
-        },
-        {
-          question: "What is the lead time?",
-          answer:
-            "Stock sizes typically ship within a few working days of order confirmation. Made-to-drawing geometries run 15–25 working days from drawing approval. Repeat orders against an approved drawing quote same-day, since the geometry stays on file.",
-        },
-      ],
-    },
   },
 
   // ─────────────────────────────────────────────────────────────────────────
-  // 39. Paper Straw & Filter Rod Slitting Blades
+  // 39. Paper Straw Cutting Blades
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Get replacement paper straw cutting blades with custom bores, thicknesses and edge profiles for your winding-line cutter. Share your drawing or sample with Sureay for a quotation on the blade material and coating options for your station.",
     id: "paper-straw-slitting-blades",
-    name: "Paper Straw & Filter Rod Slitting Blades",
-    fullName: "Carbide Circular Slitting Blades for Paper Straws & Filter Rods",
+    name: "Paper Straw Cutting Blades",
+    fullName: "Paper Straw Cutting Blades",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Slitter Knives",
-    image:
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Non-Stick Coated",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
-    ],
-    galleryAlts: [
-      "Carbide circular slitting blade for paper straw and filter rod cutting, full face and centre bore",
-      "Pair of carbide circular slitting blades for paper straw cutting, face and centre bore",
-      "Close-up of the mirror-finished face and cutting edge of a paper straw slitting blade",
-    ],
-
+    categoryDisplay: "Paper Straw Cutting Blades",
+    image: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Non-stick carbide circular blades for paper straw and filter rod cutting. Φ88–Φ100 outside diameter, 0.15–0.30 mm thick, in six stock sizes. Anti-stick coating resists water-based adhesive build-up so the cut edge stays square and fray-free through long runs on high-speed straw and filter rod makers.",
-
-    fullDescription:
-      "On a paper straw line the blade usually does not fail by wearing out. It fails by picking up glue. Water-based adhesive transfers to the blade face, builds into a ridge along the cutting edge, and from that point the blade stops cutting the tube and starts dragging it — which is exactly what a frayed straw end is. Sharpness is not the variable that fixes it.\n\nThat is why these blades are specified around adhesive release rather than around hardness alone. A carbide substrate holds the edge; the anti-stick coating keeps the face clean so the edge can keep working. On a line running water-based adhesive, the coating does more for cut quality than another point of hardness would.\n\n## Paper Straw Lines Are Not Filter Rod Lines\n\nThe two applications share machinery ancestry and blade geometry but not their failure conditions. Filter rod cutting on tobacco machinery runs at very high speed on a consistent, well-characterised material. Paper straw lines are newer, run a wider spread of paper plies and grammages, and use adhesives that vary between producers — so blade life on a straw line is far more sensitive to the adhesive than to the paper. If you are commissioning a new straw line, expect to tune blade specification against your adhesive rather than against your paper.\n\n## Thin Blades, Real Consequences\n\nAt 0.15 to 0.30 mm these are thin blades, and thickness is a process decision. A thinner blade removes less material and leaves a squarer end on a thin-walled tube; a thicker blade is more stable at speed and more forgiving of a machine with runout. Getting this wrong shows up as either a ragged end or a blade that flexes and wanders.\n\n## Applications\n\nPaper straw winding and cut-off machines; cigarette filter rod makers including Hauni platforms; paper tube and core cut-off on comparable high-speed converting equipment.\n\n## Diagnosing a Frayed Straw End\n\nIf the ends fray while the edge still feels sharp, the cause is almost always adhesive pick-up rather than wear. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge underneath can be perfectly serviceable. Wipe the face and inspect it under a light before changing the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade. Chasing this as a sharpness problem is the standard way a straw line burns through blades it did not need to replace.\n\n## Thickness Is a Process Choice\n\nAt 0.15 to 0.30 mm the thickness is not a leftover dimension. A thinner blade removes less material and leaves a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which makes it the safer choice on older machinery or thicker multi-ply tube. Getting it wrong produces either a ragged end or a blade that flexes and wanders, and the two faults look nothing alike — tell us the ply count, grammage and machine and we will recommend rather than leave you to guess.\n\n## Filter Rod Heritage, Straw Reality\n\nMany straw lines were built on filter rod machinery, and the blade geometry often interchanges dimensionally. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent, well-characterised material; straw lines run a wider spread of papers and, critically, adhesives that vary between producers. A blade that performs on a Hauni filter rod maker can gum up within hours on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry — the adhesive is the single most useful piece of information you can give us on this application and the one most buyers leave out.\n\n## Coatings, Regrinding and Commissioning a New Line\n\nThe anti-stick coating is a surface layer, and grinding the edge removes it where it matters most, so coated blades of this type are run to end of life and replaced rather than built into a regrind cycle. If your economics favour regrinding we will quote uncoated carbide instead, and you accept more frequent face cleaning as the trade. On a line still being commissioned, the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. A fortnight of that tells you more than any datasheet comparison and sets the standing-order specification correctly from the start. Stock sizes generally ship within a few working days; custom diameters, bores and thicknesses run 15–25 working days from drawing approval, with a few days added for the coating cycle.",
-
+      "Replacement circular knives for paper straw cut-off and trimming. Carbide or M2 HSS options, custom bores and profiles, and coatings selected for the line.",
     link: "/products/paper-straw-slitting-blades",
-
-    introNote:
-      "Paper straw production is where most of the demand for these blades now sits. If your line runs water-based adhesive, tell us which adhesive — it predicts blade life on this application better than the paper specification does.",
-
-    compatibleMachines: ["Hauni"],
-
     specs: [
-      { label: "Material", value: "Tungsten carbide with anti-stick coating" },
-      { label: "Outer Diameter", value: "Φ88–Φ100 mm" },
-      { label: "Bore", value: "Φ15 / Φ16 / Φ45 mm" },
-      { label: "Thickness", value: "0.15–0.30 mm" },
+      { label: "Sizes", value: "Standard OD 88–100 mm" },
       {
-        label: "Coating Purpose",
-        value: "Resists water-based adhesive build-up on the blade face",
+        label: "Material",
+        value: "Fine-grain carbide, M2 HSS or zirconia, depending on station",
       },
       {
-        label: "Application",
-        value: "Paper straw cut-off, filter rod cutting, paper tube cut-off",
+        label: "Applications",
+        value: "Paper straw trimming and cut-off on winding lines",
+      },
+      {
+        label: "Optional Coatings",
+        value: "DLC, TiN, TiAlN or CrN by blade and application",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Item",
-      col1: "OD ØD (mm)",
-      col2: "Bore Ød (mm)",
-      col3: "Thickness T (mm)",
-      caption:
-        "* Six stock sizes. Other diameters, bores and thicknesses made to drawing — send the machine model, straw ply count and adhesive type and we will specify the blade against them.",
-    },
-
-    standardDimensions: [
-      { spec: "1", od: "Φ88", id: "Φ16", thickness: "0.26" },
-      { spec: "2", od: "Φ89", id: "Φ15", thickness: "0.30" },
-      { spec: "3", od: "Φ90", id: "Φ15", thickness: "0.30" },
-      { spec: "4", od: "Φ100", id: "Φ15", thickness: "0.15" },
-      { spec: "5", od: "Φ100", id: "Φ15", thickness: "0.30" },
-      { spec: "6", od: "Φ100", id: "Φ45", thickness: "0.20" },
-    ],
-
-    steelGrades: {
-      intro:
-        "On adhesive-bearing work the surface matters more than the substrate. Choose the coating for the adhesive you run, then choose the substrate for the paper.",
-      rows: [
+    detailLayout: {
+      seoTitle: "Paper Straw Cutting Blades | Replacement Knives",
+      sizeRange: "Standard OD 88–100 mm",
+      heroAlt: "Circular paper straw cutting knife with a small center bore",
+      specificationImage: {
+        src: "/images/products/slitter-detail/paper-straw-slitting-blades-detail.webp",
+        alt: "Thin circular cutting blades showing the polished faces and cutting edges",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
         {
-          grade: "Carbide + anti-stick coating",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Water-based adhesive straw lines and filter rod cutting — the default specification",
-          tradeoff:
-            "Higher unit price; the coating is a consumable layer and does not survive a regrind",
+          id: "straw",
+          tabLabel: "Paper Straw Knives",
+          title: "Paper Straw Knives",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Station"],
+          rows: [
+            ["SR001651", "100 × 15 × 0.20 mm", "Paper straw trim"],
+            ["SR001652", "100 × 15 × 0.30 mm", "Paper straw trim"],
+            ["SR001653", "100 × 16 × 0.30 mm", "Paper straw trim"],
+            ["SR001654", "100 × 45 × 0.30 mm", "Paper straw trim"],
+          ],
         },
         {
-          grade: "Uncoated carbide",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Dry or low-tack applications, and paper tube cut-off without adhesive at the cut line",
-          tradeoff:
-            "Picks up adhesive quickly on glued lines; cut edge frays long before the edge is worn",
+          id: "additional-straw-knives",
+          tabLabel: "Additional Straw Knife Sizes",
+          title: "Additional Straw Knife Sizes",
+          columns: ["Item No.", "Dimensions (OD × ID × W)", "Application"],
+          rows: [
+            ["SR001848", "88 × 16 × 0.26 mm", "Paper straw cut-off"],
+            ["SR001849", "89 × 15 × 0.30 mm", "Paper straw cut-off"],
+            ["SR001850", "90 × 15 × 0.30 mm", "Paper straw cut-off"],
+            ["SR001851", "100 × 15 × 0.15 mm", "Paper straw cut-off"],
+            ["SR001852", "100 × 45 × 0.20 mm", "Paper straw cut-off"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        { label: "Sizes", value: "Standard OD 88–100 mm" },
+        {
+          label: "Material",
+          value: "Fine-grain carbide, M2 HSS or zirconia, depending on station",
         },
         {
-          grade: "Tool steel",
-          hardness: "60–63 HRC",
-          bestFor:
-            "Trials, short runs and low-speed lines where cost dominates",
-          tradeoff:
-            "Loses the edge quickly at straw-line speeds; not viable on continuous production",
+          label: "Applications",
+          value: "Paper straw trimming and cut-off on winding lines",
+        },
+        {
+          label: "Optional Coatings",
+          value: "DLC, TiN, TiAlN or CrN by blade and application",
         },
       ],
     },
-
+    compatibleMachines: ["Jota", "KETE"],
     components: [
       {
-        id: "adhesive-release-coating",
-        tag: "SURFACE TREATMENT",
-        title: "Coated for Adhesive Release, Not Just Hardness",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Carbide, HSS and Ceramic Material Options",
         description:
-          "On water-based adhesive lines the blade fails by pick-up, not by wear. The anti-stick coating keeps the face clean so the edge keeps cutting the tube instead of dragging it — which is the actual mechanism behind a fray-free straw end.",
+          "Fine-grain carbide, M2 HSS and station-dependent zirconia options give you a choice of blade materials for formed-straw cutting, with the construction specified for your existing cutting station.",
       },
       {
-        id: "thin-section-stability",
-        tag: "BLADE GEOMETRY",
-        title: "0.15–0.30 mm, Specified to the Cut",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Custom Cutting Edges and Optional Coatings",
         description:
-          "Thickness is a process choice, not a leftover. Thinner blades remove less material and leave a squarer end on thin-walled tube; thicker blades run more stably at speed and tolerate machine runout. We specify it against your ply count and machine rather than defaulting to one number.",
+          "Sureay supplies custom cutting profiles with optional DLC, TiN, TiAlN or CrN coatings selected for the blade material and application, so edge geometry and surface configuration can be specified separately.",
       },
       {
-        id: "straw-line-tuning",
-        tag: "APPLICATION ENGINEERING",
-        title: "Tuned to the Adhesive, Not Only the Paper",
+        id: "selection-3",
+        tag: "Application",
+        title: "Replacement Knives for Formed-Straw Cut-Off",
         description:
-          "Paper straw lines vary far more in adhesive than in paper, and blade life follows the adhesive. Tell us which one you run and we will specify coating and geometry against it — the single most useful piece of information you can give us on this application.",
+          "Circular replacement knives are made for trimming and cutting formed paper straws, with bores, blade sections and working edges defined for the holder on your winding line.",
       },
     ],
-
-    relatedBladeIds: [
-      "tungsten-carbide-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "nonwoven-slitter-knives",
-    ],
-
-    rfqPlaceholder:
-      "Example: paper straw cut-off station, blade Φ100 × Φ15 × 0.20 mm. Three-ply straw, 60 gsm kraft, water-based adhesive. Blades are gumming up after about 6 hours and the straw ends fray. Need 50 pcs, coated.",
-
     faqs: {
       technical: [
         {
           question:
-            "My straw ends are fraying but the blade edge still feels sharp. What is happening?",
+            "Can Sureay make a replacement knife for my paper straw cutting station?",
           answer:
-            "Almost certainly adhesive pick-up. Water-based adhesive transfers to the blade face and builds a ridge along the cutting edge; past that point the blade drags the tube instead of severing it, and a dragged tube frays. The edge itself can be perfectly serviceable underneath. Wipe the face and inspect it under a light before you change the blade — if the deposit is visible, the answer is a coating or a cleaning interval, not a sharper blade.",
-        },
-        {
-          question: "Should I run 0.15 mm or 0.30 mm?",
-          answer:
-            "It depends on the tube and the machine. A thinner blade removes less material and gives a squarer end on thin-walled, low-ply straws, which is why it is the choice on premium straw work. A thicker blade is stiffer, runs more stably at speed and tolerates spindle runout, which is why it is the safer choice on older machinery or on thicker multi-ply tube. Tell us the ply count, grammage and machine and we will recommend rather than leaving you to guess.",
-        },
-        {
-          question: "Does the coating survive regrinding?",
-          answer:
-            "No. The coating is a surface layer, and grinding the edge removes it where it matters most. On coated blades of this type the practical approach is to run them to end of life and replace, rather than to build a regrind cycle around them. If your economics favour regrinding, we can quote uncoated carbide instead and you accept more frequent face cleaning as the trade.",
-        },
-        {
-          question: "Do filter rod blades and paper straw blades interchange?",
-          answer:
-            "Dimensionally they often do — the geometry lineage is the same and many straw lines were built on filter rod machinery. What does not transfer is the specification logic. Filter rod cutting runs at very high speed on a consistent material; straw lines run varied paper and, critically, varied adhesive. A blade that performs on a Hauni filter rod maker may gum up on a straw line running a different glue. Specify against the adhesive, not against the machine ancestry.",
-        },
-      ],
-      company: [
-        {
-          question: "What information do you need to quote?",
-          answer:
-            "Outside diameter, bore and thickness; the machine model; straw ply count and paper grammage; the adhesive type; and your current change interval. The adhesive is the item most buyers leave out and the one that predicts blade life best on this application, so include it even if you are not sure it matters.",
+            "Yes. A drawing or sample can define the bore, thickness and cutting profile required by your cut-off or trimming holder. Include the current blade material, straw wall thickness and paper construction. These details distinguish knives that share an outside diameter but serve different cutting arrangements on a straw-production line.",
         },
         {
           question:
-            "Can you supply for a straw line we are still commissioning?",
+            "Are paper straw cutting blades the same as paper slitter knives?",
           answer:
-            "Yes, and it is worth involving us early. On a new line the useful first step is a small trial quantity across two specifications — typically a coated blade and a different thickness — run against your actual adhesive and paper. That tells you more in a fortnight than a datasheet comparison will, and it sets the standing order specification correctly from the start.",
+            "Paper straw cutting blades cut or trim the formed tube on its production line. [Paper slitter knives](/products/rotary-slitter-knives-paper) divide a continuous flat paper web into narrower strips. Establish whether the required part works on the incoming web or the finished straw, then identify its holder and cutting profile.",
         },
         {
-          question: "What are the lead times?",
+          question:
+            "How should blade wear guide paper straw knife material selection?",
           answer:
-            "Stock sizes generally ship within a few working days. Custom diameters, bores and thicknesses run 15–25 working days from drawing approval. Coated blades add a few days over uncoated for the coating cycle, so factor that in when you are planning a first trial.",
+            "Use the cutting station and condition of the used blade as the starting point. Compare gradual edge wear, chipping and adhesive residue separately, then evaluate a material change against the issue observed. Keep the required bore, blade section and holder geometry defined when considering an alternative to the current blade.",
+        },
+        {
+          question: "Why are paper straw ends ragged or distorted?",
+          answer:
+            "Inspect the cutting edge, adhesive buildup and tube support alongside the paper ply count, wall thickness and adhesive condition. Compare the cut made by a clean blade with the affected blade at normal machine settings. This gives a more useful picture of the cutting conditions than judging sharpness alone.",
+        },
+        {
+          question:
+            "What should guide coating selection when adhesive builds up on straw knives?",
+          answer:
+            "Select the coating together with the blade material, adhesive system and residue pattern at the cutting station. Record where buildup occurs and compare it with the original blade under the normal production conditions. Used-blade photographs and cut samples help define the surface requirement when considering a coating change.",
+        },
+        {
+          question: "When should a paper straw cutting blade be replaced?",
+          answer:
+            "Replace a blade when edge damage or continuing wear prevents the required clean end cut, or when its remaining dimensions fall outside the machine's specified working range. Check adhesive residue and tube support when comparing cut samples under the same production conditions. Base replacement on blade condition and the required cut quality rather than a fixed calendar interval.",
         },
       ],
+      company: [],
     },
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
   },
 
   // ─────────────────────────────────────────────────────────────────────────
   // 36. Groove Bottom Knives (multi-groove bottom rings / cutter rings)
   // ─────────────────────────────────────────────────────────────────────────
   {
+    compatibleMachinesIntro: "Order multi-groove bottom knives made to your slit pattern, with custom pitch, working-edge layout and shaft mounting. Send Sureay your drawing and width schedule for a quotation on a one-piece or split-ring configuration.",
     id: "groove-bottom-knives",
-    name: "Groove Bottom Knives",
-    fullName: "Multi-Groove Bottom Knives & Cutter Rings for Shear Slitting",
+    seoDescription:
+      "Multi-groove cutter rings for shear slitting. Groove pitch from 5 mm and OD up to 406 mm, with one-piece and split configurations made to drawing.",
+    name: "Multi-Groove Bottom Knives",
+    fullName: "Multi-Groove Bottom Knives & Cutter Rings",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Slitter Knives",
-    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Pitch from 5 mm",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Multi-groove bottom knife ring with parallel precision-ground grooves for shear slitting",
-      "Multi-groove bottom knife rings with a smooth spacer ring and flat bottom knives",
-      "Multi-groove bottom cutter ring showing groove pitch and ground bore",
-    ],
-
+    categoryDisplay: "Multi-Groove Bottom Knives",
+    image: "/images/products/slitter-detail/groove-bottom-knives.webp",
+    imageDimensions: standardSquareImage,
+    specificationImageDimensions: standardSquareImage,
     description:
-      "Multi-groove bottom knife rings for shear slitting on paper, board and film rewinders. Slit width is changed by moving the top knife to another groove instead of re-tooling. Groove pitch from 5 mm, OD to Φ406 mm, plain bore for air shafts or set-screw for solid shafts. Single or double cutting edge, one-piece or split ring. Also supplied as single-groove and smooth spacer rings.",
-
-    fullDescription:
-      "A multi-groove bottom knife — also called a multi-groove bottom slitter, a multi-groove anvil, or an MKB — is one wide ring carrying many parallel precision-ground grooves. Every groove is a usable cutting position, so a width change means moving the top knife into a different groove rather than stripping the shaft and rebuilding the knife stack. On a line that changes order width often, that difference is measured in shift hours, not in blade cost.\n\nThe grooves are what make the cut, so they are what has to be right. Groove position sets slit width, groove width sets the working shear clearance against the mating top knife, and groove edge condition sets whether the web shears or tears. All three are ground in one setup on the same ring, which is why a multi-groove ring holds width accuracy across the full stack better than an equivalent number of separate anvil knives assembled with spacers.\n\n## Where the Format Earns Its Price\n\nA single-groove bottom knife is cheaper per piece and perfectly adequate on a line that runs one width for weeks. The multi-groove ring wins where order width changes frequently, where slit counts are high, or where re-setting a spacer stack has become the real changeover bottleneck. It also removes a whole class of setting error: with fixed groove positions ground into one body, width cannot drift because someone stacked the spacers a millimetre out.\n\n## Mounting: Air Shaft or Solid Shaft\n\nTwo mounting styles cover almost every rewinder. A plain bore clamps onto an expandable air shaft, which is the fast-change option and the usual choice on modern converting lines. A set-screw design fixes onto a solid bottom shaft, which is more common on older machines and on heavy board lines where shaft rigidity matters more than change speed. Tell us which shaft you run — it changes the bore specification, not just the fixing, and a ring bored for the wrong system will not seat true.\n\n## One Piece or Split\n\nStandard rings are one-piece. A two-piece split ring costs more but comes off and goes back on without breaking down the shaft assembly, which on a wide machine can turn a planned stop into a running change. If your rings are currently changed by pulling the whole shaft, the split version is usually the first thing worth quoting.\n\n## Single or Double Cutting Edge\n\nRings are ground with a single cutting edge or with cutting edges on both sides of each groove. Double-edged geometry doubles the usable positions and lets the ring be reversed when one side is worn, at the cost of a more demanding grind and a higher unit price. Which is right depends on how your slit positions are distributed across the ring, so send the width schedule rather than only the groove count.\n\n## Groove Pitch Is Made to Your Schedule\n\nCutting edge division — the distance from one cutting edge to the next, also called the pitch — is custom in almost every case and can go as narrow as 5 mm (0.200 in). Outside diameters run up to Φ406 mm (16 in). There is no useful standard table here, which is why we quote from your width schedule or from a drawing: give us the OD, bore, ring width, the widths you actually run, and the mating top knife, and we grind the groove positions to that schedule.\n\n## The Rest of the Ring Set\n\nA working shaft is rarely all multi-groove rings. Single-groove cutter rings cover fixed positions, and smooth rings act as spacers and web supports between cutting positions. We supply all three to the same bore and runout specification so they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and hard-to-diagnose source of slit-width variation.\n\n## Applications\n\nPaper, board, tissue and corrugated converting; film, foil, label stock, adhesive tape, non-wovens and textiles on shear-slitting rewinders.",
-
+      "Custom multi-groove bottom knives for rewinder shear slitting. Replacement cutter rings with specified groove pitch, width, bore and solid or split construction.",
     link: "/products/groove-bottom-knives",
-
-    disambiguation:
-      "This page covers multi-groove rings that carry many slit positions on one body. For the single-edge circular bottom knives that pair with a top knife on paper rewinders, see [Slitter Rewinder Bottom Knives](/products/slitter-rewinder-bottom-knives).",
-
-    introNote:
-      "Groove pitch, groove count and bore are made to your width schedule — there is no meaningful standard size for this product. Send the widths you actually run, the shaft type (air or solid) and the mating top knife, and we grind the groove positions to that schedule.",
-
-    compatibleMachines: [
-      "Kampf",
-      "Goebel",
-      "Atlas Converting",
-      "Dienes",
-      "Nishimura",
-      "Deacro",
-      "Parkinson Technologies",
-    ],
-
     specs: [
+      { label: "Sizes", value: "OD up to 406 mm" },
       {
-        label: "Material",
-        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / carbide-tipped",
+        label: "Material options",
+        value: "Cr12MoV, SKD11, 9CrSi, 65Mn, HSS or carbide-tipped construction",
       },
-      { label: "Outer Diameter", value: "Up to Φ406 mm (16 in)" },
       {
-        label: "Groove Pitch",
-        value: "From 5 mm (0.200 in), ground to your width schedule",
+        label: "Groove pitch",
+        value: "From 5 mm; pitch and groove count vary by knife configuration",
       },
+      { label: "Construction", value: "One-piece ring or two-piece split ring" },
+      { label: "Cutting edges", value: "Single or double working shoulder" },
       {
         label: "Mounting",
         value:
-          "Plain bore for expandable air shaft, or set screw for solid shaft",
-      },
-      { label: "Edge Configuration", value: "Single or double cutting edge" },
-      {
-        label: "Construction",
-        value: "One-piece ring or two-piece split ring",
+          "Plain bore for an expandable air shaft, or set screw for a solid shaft",
       },
       {
-        label: "Application",
+        label: "Applications",
         value:
-          "Multi-width shear slitting of paper, board, film, foil and tape",
+          "Paper, board, film and foil shear slitting with multiple slit positions",
       },
     ],
-
-    dimensionLabels: {
-      col0: "Configuration",
-      col1: "Outer Diameter",
-      col2: "Mounting",
-      col3: "Groove Pitch / Edges",
-      caption:
-        "* Groove pitch, groove count, ring width and bore are made to your width schedule — there is no standard size table for this product. Send the widths you run, the shaft type and the mating top knife specification, or a drawing, and we grind the groove positions to match.",
-    },
-
-    standardDimensions: [
-      {
-        spec: "Multi-groove ring — plain bore",
-        od: "Up to Φ406 (16 in)",
-        id: "Expandable air shaft",
-        thickness: "From 5 mm pitch",
-      },
-      {
-        spec: "Multi-groove ring — set screw",
-        od: "Up to Φ406 (16 in)",
-        id: "Solid bottom shaft",
-        thickness: "From 5 mm pitch",
-      },
-      {
-        spec: "Two-piece split ring",
-        od: "Up to Φ406 (16 in)",
-        id: "Air or solid shaft",
-        thickness: "From 5 mm pitch",
-      },
-      {
-        spec: "Double-edged multi-groove ring",
-        od: "Up to Φ406 (16 in)",
-        id: "Air or solid shaft",
-        thickness: "Cutting edges both sides",
-      },
-      {
-        spec: "Single-groove cutter ring",
-        od: "To drawing",
-        id: "Air or solid shaft",
-        thickness: "One fixed position",
-      },
-      {
-        spec: "Smooth spacer ring",
-        od: "To drawing",
-        id: "Air or solid shaft",
-        thickness: "No groove — sets spacing",
-      },
-    ],
-
-    steelGrades: {
-      intro:
-        "Grade choice on a multi-groove ring is governed by how abrasive the web is, because the groove edges wear where the web passes rather than where the knife strikes. A ring is also a large, expensive body to scrap, so grades that can be reground repeatedly are usually the better economics.",
-      rows: [
+    detailLayout: {
+      seoTitle: "Multi-Groove Bottom Knives | Bottom Cutter Rings",
+      sizeRange: "OD up to 406 mm",
+      technicalSpecs: [
+        { label: "Sizes", value: "OD up to 406 mm" },
         {
-          grade: "Cr12MoV / SKD-11",
-          hardness: "HRC 58–62",
-          bestFor:
-            "General paper, board and film — the standard specification and the best all-round balance of wear life and regrindability",
-          tradeoff:
-            "Outlasted by carbide-tipped on heavily coated or filled stocks",
+          label: "Material options",
+          value: "Cr12MoV, SKD11, 9CrSi, 65Mn, HSS or carbide-tipped construction",
         },
         {
-          grade: "9CrSi / 65Mn",
-          hardness: "HRC 56–60",
-          bestFor:
-            "Soft uncoated stocks, tissue and lower line speeds where unit price drives the decision",
-          tradeoff:
-            "Groove edges round off sooner, so expect a shorter interval between regrinds",
+          label: "Groove pitch",
+          value: "From 5 mm; pitch and groove count vary by knife configuration",
+        },
+        { label: "Construction", value: "One-piece ring or two-piece split ring" },
+        { label: "Cutting edges", value: "Single or double working shoulder" },
+        {
+          label: "Mounting",
+          value:
+            "Plain bore for an expandable air shaft, or set screw for a solid shaft",
         },
         {
-          grade: "HSS",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Higher line speeds and mixed job schedules where the ring must hold edge through long runs",
-          tradeoff: "Higher cost than tool steel; still wears on filled stocks",
-        },
-        {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 at the tip",
-          bestFor:
-            "Abrasive coated, filled and laminated webs where tool steel grooves wear out in weeks",
-          tradeoff:
-            "Highest price, and the tips chip rather than wear if the shaft runs out of true",
+          label: "Applications",
+          value:
+            "Paper, board, film and foil shear slitting with multiple slit positions",
         },
       ],
-      outro:
-        "If you are unsure, send the substrate and your present regrind interval and we will size the recommendation against your own consumption rather than a generic table.",
+      heroAlt: "Multi-groove bottom knife ring showing parallel ground grooves",
+      specificationImage: {
+        src: "/images/products/slitter-detail/groove-bottom-knives-detail.webp",
+        alt: "Multi-groove ring showing the stepped bore, grooves and overall body width",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "multi-groove",
+          tabLabel: "Multi-Groove Bottom Knives",
+          title: "Multi-Groove Bottom Knife Sizes",
+          columns: [
+            "Item No.",
+            "Outer Diameter (mm)",
+            "Bore Options (mm)",
+            "Width Options (mm)",
+          ],
+          rows: [
+            ["SR001701", "150", "60 / 80 / 90", "39 / 49 / 50"],
+            ["SR001702", "130", "100 / 110", "50 / 100"],
+            ["SR001703", "150", "120 / 130", "50 / 100"],
+            ["SR001704", "180", "150", "50 / 100"],
+          ],
+        },
+        {
+          id: "multi-groove-configurations",
+          tabLabel: "Ring & Shaft Configurations",
+          title: "Ring & Shaft Configurations",
+          columns: [
+            "Item No.",
+            "Outside Diameter (mm / in)",
+            "Configuration",
+            "Shaft / Mounting",
+            "Pitch / Working Edge",
+          ],
+          rows: [
+            [
+              "SR001853",
+              "Up to Φ406 (16 in)",
+              "Multi-groove ring — plain bore",
+              "Expandable air shaft",
+              "From 5 mm pitch",
+            ],
+            [
+              "SR001854",
+              "Up to Φ406 (16 in)",
+              "Multi-groove ring — set screw",
+              "Solid bottom shaft",
+              "From 5 mm pitch",
+            ],
+            [
+              "SR001855",
+              "Up to Φ406 (16 in)",
+              "Two-piece split ring",
+              "Air or solid shaft",
+              "From 5 mm pitch",
+            ],
+            [
+              "SR001856",
+              "Up to Φ406 (16 in)",
+              "Double-edged multi-groove ring",
+              "Air or solid shaft",
+              "Cutting edges both sides",
+            ],
+            [
+              "SR001857",
+              "To drawing",
+              "Single-groove cutter ring",
+              "Air or solid shaft",
+              "One fixed position",
+            ],
+            [
+              "SR001858",
+              "To drawing",
+              "Smooth spacer ring",
+              "Air or solid shaft",
+              "No groove — sets spacing",
+            ],
+          ],
+        },
+      ],
     },
-
+    compatibleMachines: ["Kampf", "Göbel"],
     components: [
       {
-        id: "one-ring-many-widths",
-        tag: "CHANGEOVER TIME",
-        title: "One Ring, Many Slit Positions",
+        id: "selection-1",
+        tag: "Selection",
+        title: "Steel and Carbide-Edged Working Shoulders",
         description:
-          "Every groove is a usable cutting position, so a width change means repositioning the top knife rather than stripping the shaft and rebuilding a spacer stack. On lines that change order width often, this is a changeover-time product before it is a consumable.",
+          "Steel and carbide-tipped constructions are available for multi-groove bottom knives, giving you defined working-edge material options while retaining the ring geometry required by your slitting station.",
       },
       {
-        id: "ground-in-one-setup",
-        tag: "DIMENSIONAL ACCURACY",
-        title: "All Grooves Ground in One Setup",
+        id: "selection-2",
+        tag: "Setup",
+        title: "Custom Pitch and Cutting-Edge Layouts",
         description:
-          "Groove positions are ground into a single body in one setup, so slit width cannot drift the way it does when an operator rebuilds a spacer stack a millimetre out. Bore and runout are held to the same specification across multi-groove, single-groove and smooth rings so a mixed shaft still stacks true.",
+          "Sureay makes groove patterns, body widths and single- or double-working-shoulder layouts to drawing, allowing replacement blocks to reproduce the cutting positions required by your slit-width schedule.",
       },
       {
-        id: "mounting-and-split",
-        tag: "MOUNTING OPTIONS",
-        title: "Air Shaft, Solid Shaft, or Split Ring",
+        id: "selection-3",
+        tag: "Application",
+        title: "One-Piece and Split Mounting Designs",
         description:
-          "Plain bore clamps onto an expandable air shaft; a set-screw design fixes to a solid bottom shaft. A two-piece split ring comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change.",
+          "One-piece and two-piece split rings are available with plain bores for expandable air shafts or screw locking for solid shafts, specified to suit the existing mounting arrangement.",
       },
     ],
-
-    relatedBladeIds: [
-      "slitter-rewinder-bottom-knives",
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-    ],
-
-    rfqPlaceholder:
-      "Example: Kampf rewinder, expandable air shaft, bottom ring Φ180 × 100 mm wide, 12 grooves at 25 mm pitch, single edge. Slitting 120 gsm coated board, 8 slits, changing width twice a week. Need 4 rings plus 2 smooth spacer rings.",
-
     faqs: {
       technical: [
         {
           question:
-            "How is a multi-groove bottom knife different from a grooved anvil knife?",
+            "Which dimensions define a replacement multi-groove knife block?",
           answer:
-            "Scale and purpose. A grooved anvil knife is a disc carrying one to three grooves, ground to an OEM shear-pair profile and used mainly on film, foil and tape lines — see our bottom grooved anvil knives page for that product. A multi-groove ring is a much wider body carrying many parallel grooves, and its point is that a single ring covers many slit positions so width changes do not require re-tooling. If you change width often, you want the ring; if you run one width against a specified OEM anvil profile, you want the anvil.",
+            "Define the cutting positions, first-edge location, overall width, outside diameter, bore and locking method together. Multi-groove anvils, knife blocks and bottom slitters describe a bottom cutting body, but do not establish its mounting or edge arrangement. Identify the mating upper knife and cutting method as well: a grooved razor support sleeve performs a different function.",
         },
         {
           question:
-            "What groove pitch can you actually grind, and how do I specify it?",
+            "How should groove pitch and cutting-edge positions be specified?",
           answer:
-            "Cutting edge division — the distance from one cutting edge to the next — is custom in nearly every case and can go as narrow as 5 mm (0.200 in). Do not specify it as a single number: send the list of slit widths you actually run and we will lay out the groove positions so your common widths all land on a groove. That is the difference between a ring that covers your schedule and one that covers half of it and forces a spacer stack for the rest.",
-        },
-        {
-          question: "Should I order plain bore or set screw?",
-          answer:
-            "It follows your bottom shaft, not your preference. A plain bore clamps onto an expandable air shaft and is the fast-change option found on most modern converting lines. A set-screw design fixes onto a solid bottom shaft and is common on older machines and heavy board lines. The two are not interchangeable — the bore specification differs — so a ring bored for the wrong system will not seat true and will read as runout at the slit. If you are unsure, photograph the shaft end with the existing rings on it.",
+            "Pitch is the distance between corresponding cutting edges on adjacent grooves. Mark the first working edge from a common axial datum, then show the remaining cutting positions and overall body width. Groove opening width is a separate measurement; it does not define the distance between cutting edges.",
         },
         {
           question:
-            "My slit widths have started drifting across the shaft. Is the ring the problem?",
+            "Can Sureay make a knife block to a custom slit-width pattern?",
           answer:
-            "Check runout and the ring stack before the grooves. Groove positions are ground in one setup and do not move, so a ring that was accurate on installation is rarely the source of progressive width drift. The usual causes are a bore seating on a worn or contaminated shaft, or rings from different suppliers mixed on one shaft with slightly different bore and face specifications, which stacks a small wobble into a measurable width error. Worn groove edges show as a deteriorating cut edge and rising dust, not as width drift.",
+            "Yes. Sureay can make the groove layout, working-edge count, body width and shaft mounting to your drawing. Specify each cutting position from the same axial datum and include the mating top knife. Identify the active cutting edges in the intended slit pattern so the replacement block reproduces the required layout.",
+        },
+        {
+          question:
+            "When should I choose a split ring instead of a one-piece ring?",
+          answer:
+            "Choose according to the shaft arrangement and available installation or removal access. A split ring can provide access where the assembly accommodates that construction, while its joints and locking features must suit the existing design. Keep the required cutting profile, bore fit and working-edge positions defined for either option.",
+        },
+        {
+          question:
+            "What should I check when slit quality varies across a multi-groove block?",
+          answer:
+            "Compare the upper knife and working shoulder at each affected cutting position, including their condition, material pairing and working geometry. Review mounting, knife movement and any previous grinding alongside the slit pattern. Recording which positions produce the defect helps focus the checks on the relevant knife pair and assembly conditions.",
+        },
+        {
+          question:
+            "How should working-edge material be chosen when some slit positions wear faster?",
+          answer:
+            "For paper winding lines, compare the affected working shoulders with their mating top knives before changing material. Separate gradual wear from chips or damage associated with knife movement, geometry or grinding. Once the pair and mounting conditions are established, compare the current steel or carbide-tipped configuration against the actual wear pattern and production requirement.",
+        },
+        {
+          question:
+            "What does an Item No. identify when ordering a replacement block?",
+          answer:
+            "The Item No. identifies the catalog row or series used as the reference for your order. Confirm the selected bore, body width, groove pattern and mating upper knife on the order drawing; some entries cover size options or made-to-drawing layouts. Use the item reference together with that drawing and its revision for repeat purchases.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    "id": "stationary-scrap-shear-blades",
+    "name": "Stationary Scrap Shear Blades",
+    "fullName": "Stationary Scrap Shear Blades for Gantry Shears",
+    seoTitle: "Stationary Scrap Shear Blades for Gantry Shears",
+    seoDescription:
+      "Order bolt-mounted moving knife blocks and fixed counter knives for stationary gantry scrap shears. Choose 1.2746 or 1.2767 steel and send your mounting drawing.",
+    "category": "shear_blades",
+    "sector": "metal",
+    "categoryDisplay": "Stationary Scrap Shear Blades",
+    "image": "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    "imageDimensions": {
+      "width": 800,
+      "height": 800,
+      "smallerWidths": [320, 480]
+    },
+    "specificationImageDimensions": {
+      "width": 800,
+      "height": 800,
+      "smallerWidths": [320, 480]
+    },
+    "description": "Replacement gantry and stationary scrap shear blades in 1.2746 or 1.2767 steel. Moving knives and counter knives made to the specified mounting drawing.",
+    "link": "/products/stationary-scrap-shear-blades",
+    "specs": [
+      { label: "Sizes", value: "260–550 mm" },
+      { label: "Material options", value: "1.2746 or 1.2767 tool steel" },
+      {
+        label: "Knife positions",
+        value: "Moving cutting knives and fixed counter knives",
+      },
+      { label: "Mounting", value: "Bolt-mounted knife blocks" },
+      {
+        label: "Application",
+        value: "Stationary scrap shears and gantry shears",
+      },
+    ],
+    "compatibleMachines": [
+      "Danieli Henschel",
+      "Metso-Lindemann",
+      "Lefort",
+      "Becker-Leimbach"
+    ],
+    "compatibleMachinesIntro": "Replace moving knives and fixed counter knives on your stationary scrap shear with drawing-made knife blocks from Sureay. Order individual pieces or a complete set in 1.2746 or 1.2767 tool steel, and request a quotation for your installation. Machine brands are compatibility references for Sureay aftermarket parts.",
+    "components": [
+      {
+        "id": "stationary-scrap-shear-blades-1",
+        "tag": "Knife seat",
+        "title": "1.2746 and 1.2767 Tool-Steel Options",
+        "description":
+          "Sureay offers these steel options for stationary scrap-shear knife blocks, allowing the material requirement to be specified around the scrap duty and the wear or damage observed on the existing knives."
+      },
+      {
+        "id": "stationary-scrap-shear-blades-2",
+        "tag": "Scrap duty",
+        "title": "Moving Knives and Fixed Counter Knives",
+        "description":
+          "Replacement cutting knives and counter knives can be supplied individually or as the required set, with each block identified by its position within the shear assembly."
+      },
+      {
+        "id": "stationary-scrap-shear-blades-3",
+        "tag": "Knife arrangement",
+        "title": "Custom Blocks for Existing Knife Seats",
+        "description":
+          "Listed knife blocks span 260–550 mm in length. Sureay makes the recesses, seating faces and bolt patterns to your drawing, including blocks with the same length and width but different thicknesses or mounting details."
+      }
+    ],
+    "faqs": {
+      technical: [
+        {
+          question: "Can Sureay supply one counter knife or a complete knife set?",
+          answer:
+            "Yes. A fixed counter knife can be supplied separately, and the moving and fixed knives can be specified as a complete set. For a set, identify the position, drawing and quantity of each block. For a single replacement, include the retained components that determine its cutting and mounting relationship.",
+        },
+        {
+          question: "What is the difference between a moving knife and a counter knife?",
+          answer:
+            "The moving knife travels with the shear mechanism. The fixed counter knife supplies the opposing cutting edge. Their body shapes, mounting faces and installed orientations can differ even when their nominal dimensions look similar. Identify each by its working position so a replacement preserves the intended cutting relationship.",
+        },
+        {
+          question: "How should 1.2746 or 1.2767 steel be selected for scrap shear knives?",
+          answer:
+            "Use the current material specification alongside the scrap composition, section size and knife's wear history. Gradual abrasion, localized chipping and edge deformation indicate different conditions for review. Assess the material and hardness requirements together with the knife support and cutting duty before selecting an alternative to the existing steel.",
+        },
+        {
+          question: "How do I identify a stationary scrap shear knife block when length and width match?",
+          answer:
+            "Check thickness first, followed by the bolt pattern, recesses and locating faces. For example, the catalog includes 525 × 200 mm blocks with different thicknesses. Use the full dimensions, Item No. and drawing together to confirm the block for the correct moving or fixed position.",
+        },
+        {
+          question: "Can a worn stationary scrap-shear knife be indexed or reground?",
+          answer:
+            "Indexing is possible if the design allows an unused edge to seat correctly. Regrinding is possible if the block can recover its specified cutting height and seating within the machine's limits. Assess the cutting edge and the body surfaces that locate the block before returning it to service.",
+        },
+        {
+          question: "Can stationary scrap shear knives replace alligator shear blades?",
+          answer:
+            "No. A stationary gantry shear uses a different knife seat and cutting mechanism from a hinged-jaw alligator shear. For upper and lower knives on a hinged-jaw machine, see [Alligator Shear Blades](/products/metal-shear-knives).",
+        },
+        {
+          question: "How do I get a quote for stationary gantry scrap shear knives?",
+          answer:
+            "Send the machine model and version, scrap section and the drawing or part number for each block. List moving and fixed positions separately with quantities. Include full block thickness, recesses and mounting datums when several positions use similar body outlines.",
+        },
+      ],
+      company: [],
+    },
+    "quoteRequirements": "Send the stationary shear model and serial number, blade position, full knife drawing, scrap material and quantity.",
+    "rfqPlaceholder": "Send the stationary shear model and serial number, blade position, full knife drawing, scrap material and quantity.",
+    "relatedBladeIds": [
+      "metal-shear-knives",
+      "guillotine-shear-blades"
+    ],
+    "isFeatured": false,
+    "dimensionLabels": {
+      "intro": "Published replacement-knife configurations are shown for dimensional reference. Each family has multiple models and mounting patterns. Supply the full drawing before ordering; these are not interchangeable blades or an industry-wide size standard."
+    },
+    "detailLayout": {
+      "heroAlt": "Stationary scrap shear blade with two mounting holes",
+      "sizeRange": "260–550 mm",
+      "heroSpecs": [
+        {
+          "label": "Material",
+          "value": "1.2746 / 1.2767; specified heat treatment"
+        },
+        {
+          "label": "Application",
+          "value": "Stationary scrap shears and gantry shears"
+        }
+      ],
+      "technicalSpecs": [
+        { label: "Sizes", value: "260–550 mm" },
+        { label: "Material options", value: "1.2746 or 1.2767 tool steel" },
+        {
+          label: "Knife positions",
+          value: "Moving cutting knives and fixed counter knives",
+        },
+        { label: "Mounting", value: "Bolt-mounted knife blocks" },
+        {
+          label: "Application",
+          value: "Stationary scrap shears and gantry shears",
+        },
+      ],
+      "dimensionTables": [
+        {
+          "id": "standard-dimensions",
+          "tabLabel": "Standard dimensions",
+          "title": "Common Standard Dimensions",
+          "columns": [
+            "Item No.",
+            "Reference family",
+            "Length (mm)",
+            "Width (mm)",
+            "Thickness (mm)"
+          ],
+          "rows": [
+            [
+              "SR003601",
+              "Danieli Henschel · knife configuration",
+              "525",
+              "200",
+              "100"
+            ],
+            [
+              "SR003602",
+              "Metso-Lindemann · knife configuration",
+              "525",
+              "200",
+              "80"
+            ],
+            [
+              "SR003603",
+              "Becker-Leimbach · knife configuration",
+              "518",
+              "200",
+              "120"
+            ],
+            [
+              "SR003604",
+              "Danieli Henschel · counter knife",
+              "260",
+              "200",
+              "100"
+            ],
+            [
+              "SR003605",
+              "Lefort · knife configuration",
+              "550",
+              "200",
+              "100"
+            ],
+            [
+              "SR003606",
+              "Lefort · knife configuration",
+              "510",
+              "140",
+              "50"
+            ]
+          ]
+        }
+      ],
+      "inlineRfq": {
+        "title": "Request a quote for your knife configuration",
+        "description": "Send the stationary shear model and serial number, blade position, full knife drawing, scrap material and quantity.",
+        "buttonLabel": "Request a quote"
+      }
+    }
+  },
+  {
+    "id": "flying-shear-blades",
+    "name": "Flying Shear Blades",
+    "fullName": "Crop & Flying Shear Blades for Rolling Mills",
+    seoTitle: "Flying Shear Blades | Custom Rolling-Mill Knives",
+    "category": "shear_blades",
+    "sector": "metal",
+    "categoryDisplay": "Flying Shear Blades",
+    "image": "/images/products/shear-detail/crop-flying-shear-blades.webp",
+    "imagePending": false,
+    "imageDimensions": {
+      "width": 600,
+      "height": 600,
+      "smallerWidths": [
+        320,
+        480
+      ]
+    },
+    "specificationImageDimensions": {
+      "width": 600,
+      "height": 600,
+      "smallerWidths": [
+        320,
+        480
+      ]
+    },
+    "description": "Custom crop and flying shear blades for rolling mills. Straight or profiled knives for hot, cold or quenched-bar cutting, manufactured to drawing.",
+    "link": "/products/flying-shear-blades",
+    "specs": [
+      { label: "Sizes", value: "Made to Drawing" },
+      {
+        label: "Blade geometry",
+        value: "Straight or profiled cutting edges; stepped knife bodies",
+      },
+      {
+        label: "Material options",
+        value: "Hot-work tool steel or high-alloy tool steel",
+      },
+      {
+        label: "Cutting duty",
+        value:
+          "Hot cutting, cold cutting or quenched-bar cutting configurations",
+      },
+      {
+        label: "Application",
+        value:
+          "Head/tail cropping and dividing cuts on rolling-mill flying shears",
+      },
+    ],
+    "compatibleMachines": [
+      "Danieli"
+    ],
+    "compatibleMachinesIntro": "Source custom crop and flying shear blades for your rolling mill, including straight, profiled and stepped knife bodies. Sureay offers hot-work and high-alloy tool-steel options; share your drawing and cutting duty for a tailored replacement quotation. Machine brands are compatibility references for Sureay aftermarket parts.",
+    "components": [
+      {
+        "id": "flying-shear-blades-1",
+        "tag": "Thermal duty",
+        "title": "Materials for Hot, Cold and Quenched-Bar Cutting",
+        "description":
+          "Hot-work and high-alloy tool-steel options allow the knife material to be specified for the rolled product and temperature conditions at the cutting station."
+      },
+      {
+        "id": "flying-shear-blades-2",
+        "tag": "Profile matching",
+        "title": "Drawing-Matched Profiles for Bar and Section Cutting",
+        "description":
+          "Sureay makes straight and profiled blades, including stepped bodies and shaped cutting edges. The stock cross-section and installed shear geometry define the blade contour and mounting datums for each knife position."
+      },
+      {
+        "id": "flying-shear-blades-3",
+        "tag": "Service condition",
+        "title": "Custom Knife Pairs for Cropping and Dividing",
+        "description":
+          "Individual knives and paired replacements can be made to position-specific drawings for head-and-tail cropping or dividing cuts, with each knife's orientation and interface defined for the existing assembly."
+      }
+    ],
+    "faqs": {
+      technical: [
+        {
+          question: "Can Sureay make custom flying shear blades for an existing rolling mill?",
+          answer:
+            "Yes. Sureay makes straight, profiled and stepped replacements to drawing. For a profiled bar or section knife, the working contour, datum faces and mounting features are specified together. The material can then be selected for the actual cut temperature and load.",
+        },
+        {
+          question: "Are crop shear knives and flying shear blades the same?",
+          answer:
+            "They overlap when a flying shear crops the head or tail of moving stock. Cropping describes where the cut is made. Flying describes cutting in coordination with moving stock, which can also be used to divide it into lengths. The installed shear and knife position define the replacement.",
+        },
+        {
+          question: "What changes when selecting knives for hot and cold cutting?",
+          answer:
+            "The edge encounters different thermal and mechanical conditions. Specify the stock grade, cross-section and temperature condition at the cutting station, together with the existing knife material. Compare those requirements with the available hot-work or high-alloy tool-steel options while retaining the required body and cutting profile.",
+        },
+        {
+          question: "Why should quenched-bar cutting be identified separately?",
+          answer:
+            "The surface and core of a quenched bar can be in different conditions when it reaches the shear. Those conditions affect the duty alongside the steel grade and bar section. Record the actual condition at the cutting point so a replacement material can be assessed for that operation rather than from a general hot-or-cold label alone.",
+        },
+        {
+          question: "What determines the profile of a flying shear knife?",
+          answer:
+            "The stock cross-section and motion of the shear determine how the cutting edges engage. Curves, steps and edge orientation form part of that working geometry, together with the knife's mounting datums. Reproduce the specified contour when replacing the knife, including the relationship with its mating component.",
+        },
+        {
+          question: "Can a worn flying shear knife be used as the replacement sample?",
+          answer:
+            "Yes. A worn knife can show the stepped body, locating faces and mounting holes. Identify which position it came from and mark reground surfaces. Use the original drawing or an unused mating reference, where available, to distinguish the intended contour from the remaining edge.",
+        },
+        {
+          question: "What should I send to quote a flying shear blade pair?",
+          answer:
+            "Send the mill or shear model, drawings for both knife positions and quantities. State whether the cut crops the head or tail or divides the stock to length. Include the rolled section, steel grade, cutting-point temperature and line speed so the drawings and material specification can be considered together.",
+        },
+      ],
+      company: [],
+    },
+    "quoteRequirements": "Send the mill/shear model, knife drawings, product section and grade, cutting temperature, line speed, blade positions and quantities.",
+    "rfqPlaceholder": "Send the mill/shear model, knife drawings, product section and grade, cutting temperature, line speed, blade positions and quantities.",
+    "relatedBladeIds": [
+      "guillotine-shear-blades",
+      "stationary-scrap-shear-blades"
+    ],
+    "isFeatured": false,
+    "dimensionLabels": {
+      "intro": "Flying shear bodies and profiles are specific to the mill and shear mechanism. Complete standard body dimensions are not available for a universal configuration; supply the original drawing or a dimensioned sample."
+    },
+    "detailLayout": {
+      "heroAlt": "Crop and flying shear knife samples with stepped bodies and mounting holes",
+      "sizeRange": "Made to Drawing",
+      "heroSpecs": [
+        {
+          "label": "Material",
+          "value": "Hot-work / high-alloy tool steel to duty"
+        },
+        {
+          "label": "Application",
+          "value": "Head/tail cropping and dividing cuts on rolling-mill flying shears"
+        }
+      ],
+      "technicalSpecs": [
+        { label: "Sizes", value: "Made to Drawing" },
+        {
+          label: "Blade geometry",
+          value: "Straight or profiled cutting edges; stepped knife bodies",
+        },
+        {
+          label: "Material options",
+          value: "Hot-work tool steel or high-alloy tool steel",
+        },
+        {
+          label: "Cutting duty",
+          value:
+            "Hot cutting, cold cutting or quenched-bar cutting configurations",
+        },
+        {
+          label: "Application",
+          value:
+            "Head/tail cropping and dividing cuts on rolling-mill flying shears",
+        },
+      ],
+      "dimensionTables": [],
+      "inlineRfq": {
+        "title": "Request a quote for your knife configuration",
+        "description": "Send the mill/shear model, knife drawings, product section and grade, cutting temperature, line speed, blade positions and quantities.",
+        "buttonLabel": "Request a quote"
+      }
+    }
+  },
+  {
+    "id": "paper-sheeter-knives",
+    "name": "Paper Sheeter Knives",
+    "fullName": "Paper Sheeter & Cross-Cutting Knives",
+    seoTitle: "Paper Sheeter Knives | Custom Replacement Blades",
+    "category": "paper_cutting",
+    "sector": "paper",
+    "categoryDisplay": "Paper Sheeter Knives",
+    "image": "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+    "imageDimensions": {
+      "width": 800,
+      "height": 800,
+      "smallerWidths": [320, 480]
+    },
+    "specificationImageDimensions": {
+      "width": 680,
+      "height": 1208,
+      "smallerWidths": [320, 480]
+    },
+    "description": "Custom replacement paper sheeter and cross-cutting knives. HSS, PM steel or carbide-tipped edges for paper and board webs, made to your mounting profile.",
+    "link": "/products/paper-sheeter-knives",
+    "specs": [
+      { label: "Sizes", value: "2230–2285 mm" },
+      {
+        label: "Reference configurations",
+        value: "Jagenberg Synchro-series knife bodies listed below",
+      },
+      {
+        label: "Knife arrangement",
+        value: "Radial or tangential installation",
+      },
+      {
+        label: "Material options",
+        value: "HSS, powder-metallurgy steel or carbide-tipped constructions",
+      },
+      {
+        label: "Application",
+        value: "Cross cutting continuous paper and board webs into sheets",
+      },
+    ],
+    "compatibleMachines": [
+      "Jagenberg",
+      "Bielomatik",
+      "E.C.H. Will",
+      "Pasaban"
+    ],
+    "compatibleMachinesIntro": "Get replacement paper sheeter knives with custom lengths, clamping profiles and cutting-edge geometry for your machine. Sureay offers HSS, powder-metallurgy steel and carbide-tipped options for paper and board cross-cutting; send your drawing for a quotation. Machine brands are compatibility references for Sureay aftermarket parts.",
+    "components": [
+      {
+        "id": "paper-sheeter-knives-1",
+        "tag": "Cross-cutting duty",
+        "title": "HSS, PM Steel and Carbide-Tipped Options",
+        "description":
+          "Sureay offers these material choices for cross-cutting paper and board webs, allowing the knife construction to be specified for the stock, production duty and existing maintenance process."
+      },
+      {
+        "id": "paper-sheeter-knives-2",
+        "tag": "Installation",
+        "title": "Radial and Tangential Knife Configurations",
+        "description":
+          "Replacement knives are available for radial and tangential arrangements, with body profiles and clamping features made for the installed cutting cylinder."
+      },
+      {
+        "id": "paper-sheeter-knives-3",
+        "tag": "Edge finish",
+        "title": "Long Sheeter Knives Made to Drawing",
+        "description":
+          "Listed sheeter knife lengths span 2230–2285 mm. Sureay makes the complete cross-section, clamping profile, working edge and finish to drawing for replacement knives on existing cutting cylinders."
+      }
+    ],
+    "faqs": {
+      technical: [
+        {
+          question: "Which replacement paper sheeter knife fits my machine?",
+          answer:
+            "Identify the sheeter model and version, knife position and mounting drawing. Match the complete cross-section, clamping surfaces, cutting profile and installed orientation. The mating knife also forms part of the arrangement. Use those details with the original part reference to select the required replacement configuration.",
+        },
+        {
+          question: "How are paper sheeter knives different from slitter and guillotine knives?",
+          answer:
+            "A sheeter knife cuts across a moving paper or board web to make sheets. A slitter knife cuts lengthwise along the web and a guillotine knife cuts a clamped stack. For the lengthwise operation, see [Paper Slitter Knives](/products/rotary-slitter-knives-paper).",
+        },
+        {
+          question: "How should HSS, PM steel and carbide-tipped sheeter knives be compared?",
+          answer:
+            "Compare performance on the same paper grade, web arrangement and cut-quality requirement. Gradual edge wear, chipping and the available sharpening process should guide the material assessment. Keep the existing mounting and working profile defined so that an alternative material can be evaluated within the actual sheeter configuration.",
+        },
+        {
+          question: "Why can a sheeter leave a poor cross-cut even with new knives?",
+          answer:
+            "The adjustment between the mating knives, their cutting geometry, ground finish and machine condition can affect the cut. Higher grammage or several webs together can change the cutting duty. Compare the installed geometry and setup with the machine requirements, and record the stock and defect before deciding that the knife material needs changing.",
+        },
+        {
+          question: "What does radial or tangential knife installation mean?",
+          answer:
+            "The terms describe the knife's position relative to the cutting cylinder. Each arrangement has its own body profile, clamping and working-edge position. The replacement should reproduce the installed design, including the mating knife relationship. Overall length and thickness are only part of the information required to identify that arrangement.",
+        },
+        {
+          question: "Do the listed sizes fit every Jagenberg Synchro sheeter?",
+          answer:
+            "No. Jagenberg Synchro machines can use different knife bodies and clamping arrangements by version. Use the listed Item No. as a reference and compare the full cross-section and clamping faces with the drawing for your installed knife.",
+        },
+        {
+          question: "Which geometric requirements matter when ordering long sheeter knives?",
+          answer:
+            "Cutting-edge straightness, face parallelism, thickness and bevel finish describe different aspects of the knife. State their required values and measurement datums on the working drawing. Those requirements allow the finished knife to be assessed consistently and help preserve the intended relationship between its clamping surfaces and working edge.",
+        },
+        {
+          question: "What do you need to quote a radial or tangential paper sheeter knife?",
+          answer:
+            "Provide the sheeter model and version, mounting and knife drawings, paper or board grade, and quantity. Label radial or tangential installation, the clamping surfaces and the mating position. Include the working-edge datums and finish requirement if defined on your drawing.",
+        },
+      ],
+      company: [],
+    },
+    "quoteRequirements": "Send the sheeter model, knife and clamp drawings, radial/tangential arrangement, stock grade, web conditions and quantities.",
+    "rfqPlaceholder": "Send the sheeter model, knife and clamp drawings, radial/tangential arrangement, stock grade, web conditions and quantities.",
+    "relatedBladeIds": [
+      "paper-cutting-blades",
+      "rotary-slitter-knives-paper"
+    ],
+    "isFeatured": false,
+    "dimensionLabels": {
+      "intro": "Reference dimensions follow historical IKS Klingelnberg sheeter configurations. They do not identify every Synchro version or specify the full clamping profile. Confirm the model, installation arrangement and original knife drawing before ordering."
+    },
+    "detailLayout": {
+      "heroAlt": "Long paper sheeter knife with countersunk mounting holes",
+      "specificationImage": {
+        "src": "/images/products/shear-detail/paper-sheeter-knives-detail.webp",
+        "alt": "Paper sheeter knives on workshop supports showing mounting holes and edge details"
+      },
+      "sizeRange": "2230–2285 mm",
+      "heroSpecs": [
+        {
+          "label": "Material",
+          "value": "HSS / PM steel / carbide-tipped"
+        },
+        {
+          "label": "Application",
+          "value": "Cross cutting continuous paper and board webs into sheets"
+        }
+      ],
+      "technicalSpecs": [
+        { label: "Sizes", value: "2230–2285 mm" },
+        {
+          label: "Reference configurations",
+          value: "Jagenberg Synchro-series knife bodies listed below",
+        },
+        {
+          label: "Knife arrangement",
+          value: "Radial or tangential installation",
+        },
+        {
+          label: "Material options",
+          value: "HSS, powder-metallurgy steel or carbide-tipped constructions",
+        },
+        {
+          label: "Application",
+          value: "Cross cutting continuous paper and board webs into sheets",
+        },
+      ],
+      "dimensionTables": [
+        {
+          "id": "standard-dimensions",
+          "tabLabel": "Standard dimensions",
+          "title": "Common Standard Dimensions",
+          "columns": [
+            "Item No.",
+            "Reference configuration",
+            "Length (mm)",
+            "Width (mm)",
+            "Thickness (mm)"
+          ],
+          "rows": [
+            [
+              "SR004101",
+              "Jagenberg Synchro · radial",
+              "2285",
+              "55",
+              "10"
+            ],
+            [
+              "SR004102",
+              "Jagenberg Synchro · radial",
+              "2285",
+              "32",
+              "10"
+            ],
+            [
+              "SR004103",
+              "Jagenberg Synchro · radial / conical",
+              "2230",
+              "60",
+              "9.5"
+            ],
+            [
+              "SR004104",
+              "Jagenberg Synchro · radial / conical",
+              "2230",
+              "35",
+              "10"
+            ],
+            [
+              "SR004105",
+              "Jagenberg Synchro · tangential",
+              "2285",
+              "40",
+              "12"
+            ],
+            [
+              "SR004106",
+              "Jagenberg Synchro · tangential",
+              "2285",
+              "38",
+              "12"
+            ]
+          ]
+        }
+      ],
+      "inlineRfq": {
+        "title": "Request a quote for your knife configuration",
+        "description": "Send the sheeter model, knife and clamp drawings, radial/tangential arrangement, stock grade, web conditions and quantities.",
+        "buttonLabel": "Request a quote"
+      }
+    }
+  },
+  {
+    "id": "saddle-stitcher-trimmer-knives",
+    "name": "Saddle Stitcher Trimmer Knives",
+    "fullName": "Saddle Stitcher Trimmer Knives",
+    seoTitle: "Saddle Stitcher Trimmer Knives for Booklets",
+    seoDescription:
+      "Replace front or side knives on saddle-stitching lines for booklets and magazines. See DS 304 / Tempo reference sizes and HSS or carbide-tipped options.",
+    "category": "paper_cutting",
+    "sector": "paper",
+    "categoryDisplay": "Saddle Stitcher Trimmer Knives",
+    "image": "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+    "imageDimensions": {
+      "width": 800,
+      "height": 800,
+      "smallerWidths": [320, 480]
+    },
+    "specificationImageDimensions": {
+      "width": 800,
+      "height": 559,
+      "smallerWidths": [320, 480]
+    },
+    "description": "Replacement saddle stitcher trimmer knives for booklets and magazines. Front, side, upper and lower knives in tool steel, HSS or carbide-tipped versions.",
+    "link": "/products/saddle-stitcher-trimmer-knives",
+    "specs": [
+      { label: "Sizes", value: "280–400 mm" },
+      {
+        label: "Reference configurations",
+        value: "Müller Martini DS 304 / Tempo knife positions listed below",
+      },
+      {
+        label: "Knife positions",
+        value:
+          "Front upper, side upper, front lower and side lower; left- and right-hand knives",
+      },
+      {
+        label: "Material options",
+        value: "Tool steel, HSS or carbide-tipped cutting edges",
+      },
+      {
+        label: "Application",
+        value: "Trimming stitched booklets, brochures and magazines",
+      },
+    ],
+    "compatibleMachines": [
+      "Müller Martini",
+      "Heidelberg",
+      "Horizon"
+    ],
+    "compatibleMachinesIntro": "Order front, side, upper or lower saddle-stitcher trimmer knives from Sureay, including individual replacements and custom knife profiles. Tool steel, HSS and carbide-tipped options are available; send your position-labelled drawings for a quotation tailored to your stitching line. Machine brands are compatibility references for Sureay aftermarket parts.",
+    "components": [
+      {
+        "id": "saddle-stitcher-trimmer-knives-1",
+        "tag": "Knife matching",
+        "title": "Tool Steel, HSS and Carbide-Tipped Edges",
+        "description":
+          "Material options for booklet and magazine trimming allow replacement orders to reflect the paper stock, cutting duty and edge wear on the existing line."
+      },
+      {
+        "id": "saddle-stitcher-trimmer-knives-2",
+        "tag": "Booklet finish",
+        "title": "Front, Side, Upper and Lower Knife Positions",
+        "description":
+          "Listed knife lengths span 280–400 mm. Sureay supplies front and side positions in upper, lower, left- and right-hand configurations so buyers can order the parts needed for their trimmer."
+      },
+      {
+        "id": "saddle-stitcher-trimmer-knives-3",
+        "tag": "Special configurations",
+        "title": "Custom Profiles for Existing Stitching Lines",
+        "description":
+          "Drawing-defined bodies, bevels and mounting holes support replacement of existing knives, with special profiles specified together with their mating parts and installed orientation."
+      }
+    ],
+    "faqs": {
+      technical: [
+        {
+          question: "How do I identify replacement knives for a saddle-stitching line?",
+          answer:
+            "Identify the stitcher and trimmer version, then specify front or side, upper or lower, and left or right where relevant. The original reference and mounting drawing distinguish the positions. Include bevel direction and installed orientation so the replacement follows the actual knife arrangement used for your booklets or magazines.",
+        },
+        {
+          question: "Can I replace just one damaged side knife?",
+          answer:
+            "Yes. A side knife can be supplied separately when its position and mounting are identified. Inspect the retained mating knife and record its dimensions and regrinding history. Use the left- or right-hand part reference with the upper or lower position, because those features determine which replacement is required.",
+        },
+        {
+          question: "How should knife material be chosen for coated booklet stock?",
+          answer:
+            "Compare the existing edge wear with the paper coating, booklet thickness and production duty. Gradual abrasion and edge chipping call for different material considerations. The available grinding process also affects the choice of tool steel, HSS or carbide-tipped construction. Keep the specified bevel and mounting geometry with the material requirement.",
+        },
+        {
+          question: "Do the listed knives cover every Müller Martini DS 304 / Tempo configuration?",
+          answer:
+            "No. The listed Item No. entries cover specific Müller Martini DS 304 / Tempo knife positions and dimensions. Compare the version and original part reference for the front upper, side upper, front lower or side lower knife with the full mounting drawing.",
+        },
+        {
+          question: "When should a saddle-stitcher knife be replaced instead of reground?",
+          answer:
+            "Remaining knife height and, for inlaid or tipped knives, usable cutting-edge material govern whether the working geometry can be restored. Use the wear limit for that knife construction and the trimmer's adjustment limits. Upper and lower knives can differ in construction, so assess each position separately when deciding which parts require replacement.",
+        },
+        {
+          question: "Are saddle-stitcher knives also called three-knife trimmer blades?",
+          answer:
+            "Sometimes. The terms overlap when a saddle-stitching line trims three sides of a booklet. Identify the stitcher and the exact upper, lower, front or side position when ordering. For separate three-knife sets used on bound book blocks, see [Three-Knife Trimmer Blades](/products/three-knife-trimmer-blades).",
+        },
+        {
+          question: "What should I send for a saddle stitcher trimmer knife quote?",
+          answer:
+            "Send the stitcher and trimmer model, booklet stock, original part numbers or drawings, and quantities. Label upper or lower, front or side, and left or right where applicable. For a splitter or V-phase arrangement, include the actual profile and the mating knife drawing.",
+        },
+      ],
+      company: [],
+    },
+    "quoteRequirements": "Send the saddle stitcher/trimmer model, version, position-labelled knife drawings, stock and booklet thickness, and quantities.",
+    "rfqPlaceholder": "Send the saddle stitcher/trimmer model, version, position-labelled knife drawings, stock and booklet thickness, and quantities.",
+    "relatedBladeIds": [
+      "three-knife-trimmer-blades",
+      "paper-cutting-blades"
+    ],
+    "isFeatured": false,
+    "dimensionLabels": {
+      "intro": "DS 304 / Tempo reference dimensions follow the DIENES paper-knife catalogue, page 34. Left and right upper knives have separate Item No. entries even where their outside dimensions match. Confirm the full hole pattern and knife drawing; other machine versions are made to drawing."
+    },
+    "detailLayout": {
+      "heroAlt": "Saddle stitcher trimmer knife set showing straight and shaped blades with mounting holes",
+      "specificationImage": {
+        "src": "/images/products/shear-detail/saddle-stitcher-trimmer-knives-detail.webp",
+        "alt": "Three trimmer knives on a workshop surface showing cutting bevels and mounting holes"
+      },
+      "sizeRange": "280–400 mm",
+      "heroSpecs": [
+        {
+          "label": "Material",
+          "value": "Tool steel / HSS / carbide-tipped"
+        },
+        {
+          "label": "Application",
+          "value": "Trimming stitched booklets, brochures and magazines"
+        }
+      ],
+      "technicalSpecs": [
+        { label: "Sizes", value: "280–400 mm" },
+        {
+          label: "Reference configurations",
+          value: "Müller Martini DS 304 / Tempo knife positions listed below",
+        },
+        {
+          label: "Knife positions",
+          value:
+            "Front upper, side upper, front lower and side lower; left- and right-hand knives",
+        },
+        {
+          label: "Material options",
+          value: "Tool steel, HSS or carbide-tipped cutting edges",
+        },
+        {
+          label: "Application",
+          value: "Trimming stitched booklets, brochures and magazines",
+        },
+      ],
+      "dimensionTables": [
+        {
+          "id": "standard-dimensions",
+          "tabLabel": "Standard dimensions",
+          "title": "Common Standard Dimensions",
+          "columns": [
+            "Item No.",
+            "Machine / position",
+            "Length (mm)",
+            "Width (mm)",
+            "Thickness (mm)"
+          ],
+          "rows": [
+            [
+              "SR004201",
+              "DS 304 / Tempo · front upper",
+              "390",
+              "60",
+              "8"
+            ],
+            [
+              "SR004202",
+              "DS 304 / Tempo · side upper, right",
+              "280",
+              "60",
+              "8"
+            ],
+            [
+              "SR004203",
+              "DS 304 / Tempo · side upper, left",
+              "280",
+              "60",
+              "8"
+            ],
+            [
+              "SR004204",
+              "DS 304 / Tempo · front lower",
+              "400",
+              "40",
+              "15"
+            ],
+            [
+              "SR004205",
+              "DS 304 / Tempo · side lower",
+              "295",
+              "32",
+              "15"
+            ]
+          ]
+        }
+      ],
+      "inlineRfq": {
+        "title": "Request a quote for your knife configuration",
+        "description": "Send the saddle stitcher/trimmer model, version, position-labelled knife drawings, stock and booklet thickness, and quantities.",
+        "buttonLabel": "Request a quote"
+      }
+    }
+  },
+
+];
+
+// Preserve the established detail page for grayboard tooling separately from
+// the corrugated slotter and the current product grids.
+const boxSlottingBlade: Blade = {
+  id: "box-slotting-knives",
+  name: "Box Slotting Knives",
+  fullName: "Precision Carbide Slotting Knives for Rigid & Gift Box Grooving",
+  seoTitle: "Box Slotting Knives | Carbide Grooving Knives",
+  category: "slitter_knives",
+  sector: "converting",
+  categoryDisplay: "Packaging & Board Knives",
+  image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
+  description:
+    "Carbide slotting knives for greyboard V-grooving on rigid and gift box lines. Matched left- and right-hand pairs in GS05U and GS20U, with five listed sizes.",
+  link: "/products/box-slotting-knives",
+  specs: [
+    { label: "Material", value: "Tungsten carbide" },
+    { label: "Grades", value: "GS05U or GS20U" },
+    { label: "Length", value: "50 / 60 mm" },
+    { label: "Width", value: "12 / 15 / 16 mm" },
+    { label: "Thickness", value: "2.0 / 2.2 mm" },
+    { label: "Supply", value: "Matched left- and right-hand pairs" },
+    { label: "Application", value: "Greyboard V-grooving on rigid and gift box lines" },
+  ],
+  dimensionLabels: { col0: "Item", col1: "L × W (mm)", col2: "Thickness (mm)" },
+  standardDimensions: [
+    { spec: "1", od: "50 × 12", id: "2 / 2.2" },
+    { spec: "2", od: "50 × 15", id: "2 / 2.2" },
+    { spec: "3", od: "50 × 16", id: "2 / 2.2" },
+    { spec: "4", od: "60 × 12", id: "2 / 2.2" },
+    { spec: "5", od: "60 × 15", id: "2 / 2.2" },
+  ],
+  components: [
+    {
+      id: "matched-pairs",
+      tag: "Supply format",
+      title: "Matched Left- and Right-Hand Pairs",
+      description:
+        "Order the two knives together so each side of the V-groove can be specified with its mating cutting edge.",
+    },
+    {
+      id: "carbide-grades",
+      tag: "Material options",
+      title: "GS05U and GS20U Carbide Options",
+      description:
+        "Choose a wear-oriented or toughness-oriented grade according to the board and the wear on your existing knives.",
+    },
+    {
+      id: "drawing-based-pairs",
+      tag: "Custom dimensions",
+      title: "Replacement Pairs Made to Drawing",
+      description:
+        "Specify the knife body, bevel and cutting hand for your existing V-grooving station. Five reference sizes give buyers a starting point for repeat orders.",
+    },
+  ],
+  relatedBladeIds: ["corrugated-slotter-knives"],
+  quoteRequirements:
+    "Send your machine model, knife drawing or sample, greyboard thickness and the number of pairs you need.",
+  faqs: {
+    technical: [
+      {
+        question: "What is a rigid box V-grooving knife used for?",
+        answer:
+          "It cuts a groove in greyboard so the board can fold at the required line on a rigid box or gift box. For flap slots in corrugated cartons, see [Corrugated Slotter Knives](/products/corrugated-slotter-knives).",
+      },
+      {
+        question: "Are V-grooving knives supplied as pairs?",
+        answer:
+          "Yes. A matched left- and right-hand pair defines both walls of the groove. Specify the two hands and the orientation for your machine.",
+      },
+      {
+        question: "How should I choose between GS05U and GS20U?",
+        answer:
+          "GS05U is the wear-oriented option and GS20U is the toughness-oriented option. Compare your board composition and whether your existing edge wears smoothly or chips.",
+      },
+      {
+        question: "Do the listed sizes cover custom V-grooving knives?",
+        answer:
+          "The table lists five reference configurations. Custom lengths, widths and bevels can be specified to drawing for the installed knife holder.",
+      },
+      {
+        question: "What should I check if the face of the greyboard frays?",
+        answer:
+          "Check for dull or chipped edges and confirm the knife setting for the board thickness. A defect appearing immediately after a board change can indicate a setup issue.",
+      },
+      {
+        question: "What should I send for a box V-grooving knife quote?",
+        answer:
+          "Send the machine model, knife drawing or sample and the number of pairs. Include the board thickness and show the bevels and mounting faces for both cutting hands.",
+      },
+    ],
+    company: [],
+  },
+};
+
+export const bladeDetailPages = [...blades, boxSlottingBlade];
+
+// Local product previews are kept outside the public catalog.
+export const draftBlades: Blade[] = [
+  {
+    id: "filter-rod-cutting-blades",
+    draft: true,
+    name: "Filter Rod Cutting Blades",
+    fullName: "Filter Rod Cutting Blades",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Filter Rod Cutting Blades",
+    image: "/images/products/slitter-detail/filter-rod-cutting-blades.webp",
+    description:
+      "Circular knives for filter rod cutting stations. Compare five standard reference sizes for Hauni KDF 2 and G.D AF machines and quote to drawing.",
+    link: "/products/filter-rod-cutting-blades",
+    specs: [
+      { label: "Material", value: "Fine-grain tungsten carbide" },
+      { label: "Applications", value: "Filter rod cut-off and segmentation" },
+      { label: "Listed bore sizes", value: "19, 19.05, 19.5 or 20 mm" },
+      { label: "Listed blade thickness", value: "0.25 or 0.30 mm" },
+      { label: "Mounting", value: "Bore, drive holes and cutting hand to station drawing" },
+    ],
+    detailLayout: {
+      seoTitle: "Filter Rod Cutting Blades for Hauni KDF & G.D AF",
+      sizeRange: "Standard examples OD 60–64 mm",
+      heroAlt: "Schematic of a circular filter rod cutting blade with a center bore",
+      specificationImage: {
+        src: "/images/products/slitter-detail/filter-rod-cutting-blades-detail.webp",
+        alt: "Filter rod knife schematic showing a 60 mm outer diameter and 19 mm bore",
+      },
+      inlineRfq: slitterRfq,
+      dimensionTables: [
+        {
+          id: "rod",
+          tabLabel: "Filter Rod Cutting Blades",
+          title: "Filter Rod Cutting Blades",
+          columns: [
+            ITEM_NO_COLUMN,
+            "Dimensions (OD × ID × W)",
+            "Equipment reference",
+          ],
+          rows: [
+            ["SR001671", "60 × 19 × 0.25 mm", "Hauni KDF 2"],
+            ["SR001672", "60 × 20 × 0.30 mm", "Hauni KDF 2"],
+            ["SR001673", "61 × 19.05 × 0.30 mm", "G.D AF"],
+            ["SR001674", "63 × 19.05 × 0.30 mm", "G.D AF"],
+            ["SR001675", "64 × 19.5 × 0.30 mm", "G.D AF dimensional reference"],
+          ],
+        },
+      ],
+    },
+    compatibleMachines: ["Hauni", "G.D"],
+    components: [
+      {
+        id: "station",
+        tag: "Selection",
+        title: "Identify the filter rod cutting station",
+        description:
+          "Start with the machine model and knife position. Send the existing blade drawing or a worn sample to confirm the bore, mounting and cutting hand.",
+      },
+      {
+        id: "bore",
+        tag: "Mounting",
+        title: "Check the bore and drive holes",
+        description:
+          "Use the drawing or installed blade to verify the bore and any drive-hole pattern. The machine family alone leaves several possible sizes.",
+      },
+      {
+        id: "cut",
+        tag: "Application",
+        title: "Specify the rod construction",
+        description:
+          "Include the rod material, diameter and the finish required at the cut end when requesting a replacement.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "Can I order by Hauni KDF 2 or G.D AF model alone?",
+          answer:
+            "Use the table to identify a reference size, then supply the station model and drawing or sample so we can check the fit.",
+        },
+        {
+          question: "What measurements should I send with a sample?",
+          answer:
+            "Include the outer diameter, bore, blade thickness and any mounting holes. A photo of both faces helps identify the cutting edge.",
         },
       ],
       company: [
         {
-          question: "What do you need in order to quote?",
-          answer:
-            "Outer diameter, bore, ring width, groove count and pitch, the shaft type (expandable air shaft or solid shaft), the mating top knife specification, and the substrate and line speed. The single most useful extra is your list of running widths — it lets us lay out groove positions against your real schedule instead of copying a pitch. A drawing or a worn ring shortens the quote further; we reverse-engineer from samples as routine work.",
-        },
-        {
-          question:
-            "Do you supply single-groove and smooth rings as well, or only multi-groove?",
-          answer:
-            "All three, and we recommend buying them together. Single-groove cutter rings cover fixed positions and smooth rings act as spacers and web supports between cutting positions. Because they are made to the same bore and runout specification they stack without introducing wobble — mixing rings from different suppliers on one shaft is a common and genuinely hard-to-diagnose source of slit-width variation.",
-        },
-        {
-          question: "Can these be reground, and how many times?",
-          answer:
-            "Yes, and regrinding is central to the economics because a ring is a large body to scrap. How many cycles you get depends on groove depth and how much material each regrind takes; tool-steel rings typically give several cycles before groove geometry can no longer be restored. We regrind rings we manufactured and, in most cases, rings we did not, provided the body is true and the bore is undamaged — and we will tell you plainly when a ring is not worth the work.",
+          question: "Can you quote a size outside the table?",
+          answer: "Send a drawing or sample with the required quantity for a custom quotation.",
         },
       ],
     },
+    relatedBladeIds: ["tungsten-carbide-slitter-knives", "rotary-slitter-knives"],
   },
 ];
 
@@ -7121,7 +8685,113 @@ export const blades: Blade[] = [
  * Get a blade by ID
  */
 export function getBladeById(id: string): Blade | undefined {
-  return blades.find(b => b.id === id);
+  return bladeDetailPages.find(b => b.id === id);
+}
+
+export function getWebpImageSrcSet(
+  src: string,
+  dimensions?: BladeImageDimensions
+): string | undefined {
+  if (!dimensions || !src.endsWith(".webp")) return undefined;
+
+  const stem = src.slice(0, -".webp".length);
+  return [
+    ...dimensions.smallerWidths.map(width => `${stem}-${width}w.webp ${width}w`),
+    `${src} ${dimensions.width}w`,
+  ].join(", ");
+}
+
+/** Summarize the listed primary dimensions for cards and detail-page heroes. */
+export function getBladeSizeRange(
+  blade: Blade,
+  source: Blade = blade
+): string | undefined {
+  if (source.detailLayout?.sizeRange) return source.detailLayout.sizeRange;
+
+  const { col0, col1, col2 } = source.dimensionLabels ?? {};
+  const hasLengthColumn = /^Overall Length\b/i.test(col0 ?? "");
+  const secondColumn = /^Dimensions\b/i.test(col2 ?? "");
+  const values = source.standardDimensions?.map(row =>
+    hasLengthColumn
+      ? row.spec
+      : secondColumn
+        ? row.id
+        : (row.dimension ?? row.od ?? row.spec)
+  );
+  // Use the primary dimension, in mm. Reject text-only or mixed-unit columns.
+  const sizes = values?.map(value =>
+    value?.match(
+      /^\s*([ØΦ])?\s*(\d+(?:\.\d+)?)(?:\s*[–—-]\s*(\d+(?:\.\d+)?))?(\+)?(?=\s*(?:mm\b|[×x*()]|$))/i
+    )
+  );
+  if (
+    sizes?.length &&
+    sizes.every((size): size is RegExpMatchArray => size != null)
+  ) {
+    const numbers = sizes.flatMap(size => [
+      Number(size[2]),
+      Number(size[3] ?? size[2]),
+    ]);
+    const min = Math.min(...numbers);
+    const max = Math.max(...numbers);
+    const diameter =
+      sizes.every(size => size[1]) || /diameter|^Hole Ø/i.test(col1 ?? "");
+    const openEnded = sizes.some(
+      size => size[4] && Number(size[3] ?? size[2]) === max
+    );
+    const range = min === max ? `${max}` : `${min}–${max}`;
+    return `${diameter ? "Ø" : ""}${range}${openEnded ? "+" : ""} mm`;
+  }
+
+  const index = source.specs.findIndex(spec =>
+    /^(?:outer diameter|diameter (?:range|capacity)|length(?: capability| capacity)?|hole diameter)$/i.test(
+      spec.label
+    )
+  );
+  return blade.specs[index]?.value ?? source.specs[index]?.value;
+}
+
+/** Only the seven reviewed Shredder products use the upgraded detail template. */
+export function isUpgradedShredderBlade(blade: Blade): boolean {
+  return [
+    "twin-shaft-blades-recycling",
+    "multi-shaft-blades-metal",
+    "tire-shredder-blades",
+    "twin-shaft-blades-battery",
+    "single-shaft-shredder-blades",
+    "single-shaft-bed-knives",
+    "shredder-screens",
+  ].includes(blade.id);
+}
+
+/** Use the shared detail template with the catalog's existing Shredder data. */
+export function getShredderDetailBlade(blade: Blade): Blade {
+  const sizeRange = getBladeSizeRange(blade) ?? "Made to Drawing";
+  const technicalSize = blade.specs.find(spec => spec.label === "Sizes");
+  const fitment = blade.specs.find(spec =>
+    /^(?:OEM Fitment|Compatibility)$/.test(spec.label)
+  );
+
+  return {
+    ...blade,
+    compatibleMachines:
+      blade.compatibleMachines ??
+      fitment?.value.split(",").map(brand => brand.trim()),
+    detailLayout: {
+      sizeRange,
+      heroSpecs: ["Material", "Application", "Screen Forms"].flatMap(label =>
+        blade.specs.filter(spec => spec.label === label)
+      ),
+      technicalSpecs: [
+        technicalSize ?? { label: "Sizes", value: sizeRange },
+        ...blade.specs.filter(spec => spec !== fitment && spec !== technicalSize),
+      ],
+      dimensionTables: [],
+      inlineRfq: blade.quoteRequirements
+        ? { ...slitterRfq, description: blade.quoteRequirements }
+        : undefined,
+    },
+  };
 }
 
 function normalizeBladeOfferId(value: string): string {
@@ -7175,33 +8845,12 @@ export function getRelatedBlades(currentId: string, limit = 4): Blade[] {
 /**
  * Catalog PDF URL — single complete catalog for all products
  */
-const CATALOG_URL = "/catalogs/sureay-complete-product-catalog.pdf";
-
 export function getCatalogUrl(_blade: Blade): string {
-  return CATALOG_URL;
+  return COMPLETE_CATALOG_URL;
 }
 
 /**
  * Badge styling helper (mirrors machines.ts pattern)
  */
-export const getBadgeClasses = (color?: string): string => {
-  const base =
-    "absolute top-4 left-4 z-10 px-2 py-1 text-[10px] font-bold  tracking-wider rounded border";
-  switch (color) {
-    case "green":
-      return `${base} bg-green-50 dark:bg-green-900 text-green-700 dark:text-green-300 border-green-200 dark:border-green-800`;
-    case "blue":
-      return `${base} bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800`;
-    case "red":
-      return `${base} bg-red-50 dark:bg-red-900 text-red-700 dark:text-red-300 border-red-200 dark:border-red-800`;
-    case "purple":
-      return `${base} bg-purple-50 dark:bg-purple-900 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-800`;
-    case "orange":
-      return `${base} bg-orange-50 dark:bg-orange-900 text-orange-700 dark:text-orange-300 border-orange-200 dark:border-orange-800`;
-    case "teal":
-      return `${base} bg-teal-50 dark:bg-teal-900 text-teal-700 dark:text-teal-300 border-teal-200 dark:border-teal-800`;
-    case "slate":
-    default:
-      return `${base} bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700`;
-  }
-};
+export const getBadgeClasses = (_color?: string): string =>
+  "absolute top-4 left-4 z-10 px-2 py-1 text-[12px] font-bold tracking-wider rounded-none border border-slate-300 bg-white text-[#001f4d]";

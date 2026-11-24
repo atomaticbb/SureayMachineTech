@@ -1,8 +1,4 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    seo-config.ts
-// Target:    tr
-// Generated: 2026-09-20T07:57:37.852Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (tr).
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
@@ -13,13 +9,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "endüstriyel bıçak üreticisi, özel makine bıçakları, parçalayıcı bıçakları, öğütücü bıçakları, kesme bıçakları, makas bıçakları, OEM özel bıçaklar",
     ogImage: "/images/hero/homehero.webp",
-  },
-  products: {
-    title: "Endüstriyel Bıçak Ürünleri | Hassas Kesme Aletleri | Sureay",
-    description:
-      "Endüstriyel kesme bıçaklarından oluşan eksiksiz ürün yelpazemize göz atın: döner dilimleme bıçakları, parçalayıcı bıçakları, öğütücü bıçakları, kağıt mendil bıçakları kağıt rulo testere bıçakları ve metal kesme bıçakları. D2'den karbüre kadar özel metalurji. Mikron düzeyinde toleranslar.",
-    keywords:
-      "endüstriyel bıçak kataloğu, kesici aletler, döner bıçaklar, parçalayıcı bıçakları, granülatör bıçakları",
   },
   about: {
     title: "Sureay Machinery Hakkında | ISO 9001 Sertifikalı Bıçak Üreticisi",
@@ -42,6 +31,13 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "bıçak teknolojisi, üretim haberleri, teknik kılavuzlar, endüstriyel kesim konusunda bilgiler",
   },
+  products: {
+    title: "Endüstriyel Bıçak Ürünleri | Hassas Kesme Aletleri | Sureay",
+    description:
+      "Endüstriyel kesme bıçaklarımızın tamamına göz atın: döner dilme bıçakları, parçalayıcı bıçaklar, granülatör bıçakları, kağıt mendil rulolarını kesmek için daire testere bıçakları ve metal kesme bıçakları. D2'den karbüre kadar özel metalurji. Mikron seviyesinde toleranslar.",
+    keywords:
+      "endüstriyel bıçak kataloğu, kesici aletler, döner bıçaklar, parçalayıcı bıçakları, granülatör bıçakları",
+  },
   plasticIndustry: {
     title:
       "Plastik Geri Dönüşüm Bıçakları | Öğütücü ve Parçalayıcı Bıçakları | Sureay",
@@ -59,243 +55,265 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   paperIndustry: {
     title:
-      "Kağıt İşleme Bıçakları | Kağıt Havlu Rulo Testereleri ve Giyotin Bıçakları | Sureay",
+      "Kağıt Dönüştürme Bıçakları | Kağıt rulosu kesme testereleri ve Giyotin Bıçakları | Sureay",
     description:
-      "Kağıt mendil işleme ve ticari baskı için yüksek hassasiyetli bıçaklar: Ø610 kağıt rulo testere bıçakları, ayna cilalı, giyotin kesme bıçakları. Islak ortamlar için TiN kaplama seçeneği mevcuttur. Son derece temiz kesimler, sıfır toz oluşumu.",
+      "Kağıt mendil dönüştürme ve ticari baskı için yüksek hassasiyetli bıçaklar: Ayna cilalı ruloları kesmek için Ø610 dairesel bıçaklar, giyotin kesme bıçakları. Islak ortamlar için TiN kaplama mevcuttur. Ultra temiz kesimler, sıfır toz oluşumu.",
     keywords:
-      "kağıt rulo testere bıçakları kağıt kesme bıçakları, giyotin bıçakları, kağıt işleme, baskı endüstrisi bıçakları",
+      "kağıt mendil rulolarını kesmek için daire testere bıçakları, kağıt kesme bıçakları, giyotin bıçakları, kağıt dönüştürme, matbaa endüstrisi bıçakları",
   },
   "rotary-slitter-knives": {
-    title: "Esnek Ambalajlar için Film ve Bant Kesme Bıçakları",
+    title: "Esnek ambalaj filmleri ve bantları için dilme bıçakları",
     description:
-      "±0,002 mm hassasiyetinde taşlanmış film ve bant kesme bıçakları — D2, M2 HSS ve PM çeliği. BOPP, CPP film ve PSA bantlar için kesme, çizme ve jilet profilleri. Tidland, Kampf ve Atlas markalarına uyumlu OEM ürünleri.",
-    keywords:
-      "film kesme bıçakları, bant kesme bıçakları, BOPP kesme bıçakları, PSA bant kesme bıçakları, esnek ambalaj kesme bıçakları, dairesel kesme bıçakları, kesme bıçağı, işleme bıçakları",
+      "BOPP, PET, CPP film ve yapışkan bantlar için yedek dilme bıçakları. Çizime göre özel delik ve profillere sahip, takım çeliği veya karbür üst ve alt bıçaklar.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives.webp",
   },
-  "tungsten-carbide-slitter-knives": {
-    title: "Tungsten Karbür Dilimleme Bıçakları | Karbür Dilimleme Bıçakları",
+  "rotary-slitter-knives-paper": {
+    title: "Kağıt mendili ve Kraft için Kağıt Kesme Bıçakları",
     description:
-      "Takım çeliğine kıyasla 10-30 kat daha uzun kesici kenar ömrüne sahip tungsten karbür kesme bıçakları. Mikro taneli YG6/YG8 ve ISO K10/K20 kaliteleri, ±0,002 mm hassasiyetinde taşlanmış, test raporları mevcuttur.",
-    keywords:
-      "karbür kesme bıçakları, tungsten karbür kesme bıçakları, karbür kesme bıçakları, tungsten kesme bıçakları, tungsten karbür kesme bıçakları, YG6 kesme bıçakları, YG8 karbür bıçaklar, K10 karbür kesme bıçağı, mikro taneli karbür bıçaklar",
+      "Kağıt mendili, kraft kağıt ve kuşe kağıt için kağıt kesme bıçakları. Çukur veya düz üst bıçakları, takım çeliği veya karbür uçlu yapıya sahip uygun alt bıçaklarla eşleştirin.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
   },
   "metal-foil-strip-slitter-knives": {
-    title:
-      "Alüminyum Folyo ve Metal Şerit Kesme Bıçakları | ASP23/ASP52 PM Çelik, ±0,001 mm | Sureay",
+    title: "Bakır ve Alüminyum Folyo Dilimleme Bıçakları | Özel Üretim",
     description:
-      "Metal hizmet merkezleri için ASP23/ASP52 ve karbür dilimleme bıçakları. ±0,001 mm tolerans, alüminyum folyo, bakır ve silikonlu çeliğin çapak bırakmadan toplu olarak dilimlenmesi.",
-    keywords:
-      "alüminyum folyo kesme bıçakları, tungsten karbür kesme bıçakları, metal folyo kesme bıçakları, ASP23 kesme bıçakları, silikon çelik kesme makinesi, çoklu kesme mili, rulo kesme bıçakları, metal şerit kesme makinesi, ASP52 kesme bıçakları",
+      "Bakır ve alüminyum folyo için yedek döner dilimleme bıçakları. Karbür, takım çeliği ve PM çeliği seçenekleri; özel delikler, genişlikler ve uyumlu ara parçalar mevcuttur.",
+    ogImage:
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
   },
   "twin-shaft-blades-recycling": {
-    title: "Çift Mil Parçalayıcı Bıçakları | D2/SKD11 OEM Uyumlu",
+    title: "Çift Milparçalayıcı bıçakları | Plastik ve Karışık Atıklar",
     description:
-      "D2/SKD11 çift şaftlı parçalayıcı bıçakları, kentsel katı atıklar, plastikler ve ahşap için. Weima, Untha, SSI ve Vecoplan markaları için OEM yedek parça. Fabrikadan doğrudan satış — düşük minimum sipariş miktarı, hızlı fiyat teklifi.",
-    keywords:
-      "krom karbür rotor bıçakları, çift şaftlı parçalayıcı bıçakları, D2 parçalayıcı bıçakları, MSW parçalayıcı bıçakları, plastik geri dönüşüm bıçakları, SKD11 parçalayıcı, çift şaftlı bıçaklar, krom karbür rotor bıçakları toptan satışı, kesişen makas rotorlu parçalayıcı",
+      "Plastik, ahşap paletler ve karışık atıklar için yedek çift şaftlı parçalayıcı bıçakları. Özel kancalı ve delikli D2, SKD11 ve 42CrMo seçenekleri.",
+    ogImage:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
   },
   "multi-shaft-blades-metal": {
-    title:
-      "Metal Parçalayıcı Bıçakları | H13 – Hurda ve Elektronik Atıklar için",
+    title: "Hurda Metal parçalayıcı bıçakları | H13 & 42CrMo",
     description:
-      "H13/42CrMo çok şaftlı parçalayıcı bıçakları, hurda metal, kullanım ömrü dolmuş araçlar (ELV) ve elektronik atıklar için. HRC 50–54 darbeye dayanıklı. Shred-Tech, Forus ve Arjes için tel kıvılcım erozyonlu (EDM) delikler.",
-    keywords:
-      "parçalayıcı bıçakları metal, hurda metal bıçakları, elektronik atık parçalayıcı bıçakları, H13 parçalayıcı bıçakları, kullanım ömrü dolmuş araç (ELV) parçalayıcı, metal geri dönüşüm bıçakları",
+      "Kullanım ömrü dolmuş araçları, elektronik atıkları veya ev aletlerini işleyen çok şaftlı parçalayıcılar için H13 veya 42CrMo'dan kesiciler temin edin. Kanca profilini ve yivli veya kama yuvalı deliği belirtin.",
+    ogImage: "/images/products/shredder-blades/shredder-blades-05.webp",
   },
   "twin-shaft-blades-battery": {
-    title: "Lityum-İyon Pil Parçalayıcı Bıçakları | ±0,02 mm Hassasiyet",
+    title: "Pil Geri Dönüşüm parçalayıcı bıçakları | Özel Yedek Parçalar",
     description:
-      "Elektrikli araçların lityum-iyon pillerinin ön parçalanması için tasarlanmış hassas çift şaftlı parçalayıcı bıçakları. Bakır/alüminyum folyo için ±0,02 mm paralellik. LiPF6'ya karşı korozyona dayanıklı.",
-    keywords:
-      "parçalayıcı bıçakları batarya, lityum batarya geri dönüşüm bıçakları, elektrikli araç batarya parçalayıcı, lityum-iyon batarya işleme, batarya ön parçalama",
+      "Pil geri dönüşüm ön parçalayıcıları için yedek döner kesiciler. Onaylı çizimlere göre üretilen özel kesici profilleri ve mil arayüzleri.",
+    ogImage: "/images/products/shredder-blades/shredder-blades.webp",
   },
   "tissue-log-saw-blades": {
-    title: "Kağıt Rulo Testere Bıçakları | D2 Ø610–1200 mm | Sureay",
+    title: "Temizlik kâğıdı rulo kesme testere bıçakları | Ø610–1000 mm",
     description:
-      "kağıt rulo testere bıçakları, Ø610–1200 mm, D2 HRC 58–60, ayna cilalı, ≤0,15 mm eksantriklik. TiN kaplamalı. Perini, PCMC, Gambini markalarına uyumlu. Hızlı fiyat teklifi.",
-    keywords:
-      "kağıt rulo testere bıçakları, kağıt rulo testere bıçakları, kağıt rulo testere bıçakları, kağıt testere bıçakları, işleme dairesel testereleri, D2 testere bıçakları",
+      "Tuvalet kağıdı kağıtlarını ve mutfak havlusu rulolarını D2, Cr12MoV veya M2 HSS bıçaklarla kesin. Listelenen çaplar 610–1000 mm'dir ve 1200 mm'ye kadar özel boyutlar mevcuttur.",
+    ogImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
   },
-  "granulator-blades": {
-    title: "Plastik Öğütücü Bıçakları ve Kırıcı Bıçakları | OEM",
-    description:
-      "D2/SKD-11/Cr12MoV granülatör bıçakları — rotor ve stator bıçakları ±0,02 mm hassasiyetinde taşlanmış, HRC 58–62. Cumberland, Herbold ve Rapid markalı OEM uyumlu. Fabrikadan doğrudan satış.",
-    keywords:
-      "plastik granülatör bıçakları, granülatör bıçakları, granülatör bıçakları tedarikçileri, plastik kırıcı bıçakları, granülatör bıçakları, rotor-stator bıçakları, PET geri dönüşüm bıçakları",
-  },
-  "tire-shredder-blades": {
+  "nonwoven-log-saw-blades": {
     title:
-      "Lastik Parçalayıcı Bıçakları | TDF için 3 Pençeli Döner Makas | Sureay",
+      "Dokusuz kumaş rulo kesme testere bıçakları | Özel ölçüde yedek bıçaklar",
     description:
-      "Lastik parçalama ve TDF üretimi için 3 pençeli döner makaslama bıçakları. Cru-Wear ve Modifiye A8 çeliği, ±0,05 mm tolerans. Barclay, CM, SSI ve Untha markalarına OEM uyumlu.",
-    keywords:
-      "lastik parçalayıcı bıçakları, lastik parçalayıcı bıçakları, döner makaslama bıçakları, TDF bıçakları, lastik geri dönüşüm bıçakları, 3 pençeli parçalayıcı, Barclay parçalayıcı bıçakları",
+      "Dokunmamış kumaş rulolarını çapraz kesmek için ruloları kesmek için D2 yedek dairesel bıçaklar. Bıçak çiziminize göre özel delikler, montaj deliği desenleri ve bıçak profilleri yapılır.",
+    ogImage: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
   },
   "paper-cutting-blades": {
-    title: "Hassas Kağıt Kesme ve Giyotin Bıçakları",
+    title: "Kağıt Kesme Bıçakları | Kağıt Giyotin Bıçakları",
     description:
-      "Ticari baskı ve kağıt işleme için giyotin bıçakları; 0,01 mm toleransla taşlanmıştır. Kaplamalı kağıt ve kartonda temiz, çapak bırakmayan kesimler sağlar.",
-    keywords:
-      "kağıt kesme bıçakları, giyotin bıçakları, baskı bıçakları, kağıt giyotin bıçakları",
-  },
-  "three-knife-trimmer-blades": {
-    title:
-      "Üç Bıçaklı Kesme Bıçakları — Kombi Başlık için Yedek Bıçaklar | Sureay",
-    description:
-      "HSS ve TC üç bıçaklı kesici bıçakları — kombi kafa için yedek bıçaklar. Müller Martini, Wohlenberg, Kolbus markalarına OEM uyumlu. Ön ve yan setler mevcuttur.",
-    keywords:
-      "üç adet kesici bıçak, kombi kafa için yedek bıçaklar, Müller Martini yedek bıçakları, kitap ciltleme kesici bıçakları, HSS kesici bıçakları, TC kesici bıçakları, Wohlenberg kesici bıçakları, yapıştırmalı ciltleme için kesici bıçaklar, Kolbus kesici bıçak seti",
-    ogImage:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      "Yığın kesiciler için HSS kaplamalı veya karbür uçlu kağıt giyotin bıçakları sipariş edin. Listelenen uzunluklar 450–2050 mm arasındadır; özel uzunluklar ve montaj delikleri de mevcuttur.",
+    ogImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
   },
   "single-shaft-shredder-blades": {
-    title: "Tek Şaftlı Rotor Ek Parçaları | Taç Kesici Bıçaklar | Sureay",
+    title: "Tek Mil Parçalayıcı Rotor Bıçakları | Kare Uçlar",
     description:
-      "Ağır hizmet tipi parçalama için tek şaftlı öğütücü rotor uçları — içbükey, bombeli ve V-oluklu profiller. Hacimli plastikler ve kentsel katı atıklar için kriyojenik işlemden geçirilmiştir.",
-    keywords:
-      "tek şaftlı rotor uçları, parçalayıcı rotor bıçakları, taç kesiciler, kare rotor uçları, içbükey parçalayıcı bıçakları, 4 yönlü değiştirilebilir",
+      "DC53, D2 veya Cr12MoV. malzemelerinden kare rotor uçları veya içbükey kesme taçları seçin. Bıçak yüzeyini ve cıvata yuvasını tek şaftlı parçalayıcınıza uygun olarak seçin.",
+    ogImage: "/images/products/shredder-blades/single-shredder-blades-06.webp",
   },
   "single-shaft-bed-knives": {
-    title: "Tek Şaftlı Parçalayıcılar için Stator ve Sabit Bıçaklar",
+    title:
+      "Tek milli parçalayıcılar için sabit stator bıçakları (karşı bıçaklar)",
     description:
-      "Tek şaftlı öğütücüler için D2/DC53 stator yatak bıçakları. Düzlük ≤0,05 mm/m, uzunluklar 3500 mm’ye kadar. Vecoplan, Weima, Lindner ve Zerma markalarına OEM uyumlu.",
-    keywords:
-      "stator bıçağı, stator bıçakları, tek şaftlı taban bıçakları, parçalayıcı taban bıçağı, karşı bıçaklı parçalayıcı, taban bıçağı değişimi, D2 taban bıçağı, parçalayıcı stator bıçağı, Vecoplan taban bıçağı",
+      "Listelenen 279–3000 mm uzunluklarda tek şaftlı öğütücüler için sabit sabit bıçaklar. Çiziminize uygun düz veya tırtıklı kenarlar ve montaj yuvaları sipariş edin.",
+    ogImage: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+  },
+  "granulator-blades": {
+    title: "Plastik Kırma Bıçakları | Rotor ve Yatak Bıçakları",
+    description:
+      "PET, PP, HDPE veya PVC işleyen granülatörlerdeki rotor ve sabit bıçakları değiştirin. Özel cıvata desenleriyle, 90–1178 mm'lik listelenen uzunluklarda plastik kırma bıçakları.",
+    ogImage: "/images/products/granulator-blades/granulator-blades-06.webp",
   },
   "metal-coil-slitting-knives": {
-    title: "Hassas Bobin Kesme Bıçakları | Metal Kesme Bıçakları",
+    title: "Çelik Rulo Dilme Bıçakları | Özel Takımlar",
     description:
-      "Metal rulo işleme için üst ve alt kesme bıçağı setleri. ±0,001 mm tolerans, 0,002 mm paralellik. Çelik, alüminyum ve bakır rulolar için eksiksiz takım seti.",
-    keywords:
-      "metal kesme bıçakları, rulo kesme bıçakları, döner metal kesme makineleri, üst-alt kesme makineleri, çelik kesme bıçakları",
+      "Karbon, paslanmaz ve yüksek mukavemetli çelik için yedek çelik bobin dilme bıçakları. Çizime göre özel döner kesme bıçakları, ara parçalar ve sıyırıcı halkalar.",
+    ogImage: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
   },
   "metal-shear-knives": {
-    title: "Ağır Hizmet Tipi Metal Makasları ve Giyotin Bıçakları",
+    title: "Hurda Metal için Timsah makaslama bıçakları",
     description:
-      "D2, S1 (6CrW2Si) ve H13 takım çeliğinden imal edilmiş giyotin ve hurda kesme bıçakları. Yumuşak çelik ve paslanmaz çelik levhaların çapak bırakmadan kesilmesi için ±0,05 mm paralellik.",
-    keywords:
-      "metal kesme bıçakları, giyotin makaslama bıçakları, çelik kesme bıçakları, hidrolik makaslama bıçakları, hurda makaslama bıçakları, D2 makaslama bıçakları",
+      "Timsah makasınızın üst hareketli bıçağını veya alt sabit bıçağını değiştirin. Listelenen uzunluklar 320–508 mm olup S1 , 6CrW2Si ve H13 çelik seçenekleriyle sunulmaktadır.",
+    ogImage: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
   },
-  "metal-cold-saw-blades": {
-    title: "HSS ve TCT Soğuk Testere Bıçakları | Metal Boru Kesimi",
+  "guillotine-shear-blades": {
+    title: "Sac kesme giyotinleri için makas bıçakları",
     description:
-      "Çelik boru, paslanmaz çelik ve alüminyum profillerin kesimi için M2/M35 Kobalt HSS ve TCT soğuk testere bıçakları. DIN 1837/1840 standardına uygun, çapak bırakmaz. Kaltenbach ve Bewo markalarına OEM uyumlu.",
-    keywords:
-      "soğuk testere bıçakları, HSS soğuk testere bıçakları, M35 kobalt soğuk testere, TCT soğuk testere bıçakları, metal soğuk daire testere, boru kesme bıçakları, soğuk testere bıçağı üreticisi",
+      "D2 , 6CrW2Si veya 9CrSi giyotin makaslama bıçakları ile kesilmiş saclar. Üst ve alt bıçakları özel montaj desenleriyle tek parça veya bölümlü setler halinde sipariş edin.",
+    ogImage: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
+  },
+  "three-knife-trimmer-blades": {
+    title: "Kitap ciltleme hatları için üç ağızlı kesim bıçakları",
+    description:
+      "Ciltli kitapların ön, baş ve ayak kısımlarını HSS veya karbür bıçaklarla kesin. Bir yedek bıçak veya bir ön ve iki yan bıçaktan oluşan uyumlu bir set sipariş edin.",
+    ogImage:
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
   },
   "lithium-battery-slitting-knives": {
-    title: "Karbür Pil Dilimleme Bıçakları | Elektrot Folyosu",
+    title: "Akü Elektrot Dilme Bıçakları | Karbür Çiftleri",
     description:
-      "Lityum-iyon pil elektrot folyosu için ayna parlaklığında tungsten karbür kesme bıçakları. Ra ≤0,05 μm kenar, ±0,001 mm tolerans. Al/Cu folyoda mikro çapak yok.",
-    keywords:
-      "tungsten karbür kesme bıçakları, pil kesme bıçakları, lityum pil bıçakları, elektrot folyo kesici, karbür kesme bıçakları, karbür dairesel bıçaklar",
+      "Kaplamalı lityum pil anotları ve katotları için ince taneli karbür dilme bıçakları. İsteğe bağlı DLC veya TiN ile uyumlu üst ve alt döner bıçakları sipariş edin.",
+    ogImage:
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
   },
   "corrugated-slitter-scorer-blades": {
     title: "Oluklu Mukavva Kesme ve Çizme Bıçakları | BHS & Fosber",
     description:
-      "Oluklu mukavva kuru hatları için tungsten karbür tipi katı kesme bıçakları. Ezilmesiz kesim. BHS, Fosber ve Marquip markalarına OEM uyumlu. Çizici bıçaklar stokta mevcuttur.",
-    keywords:
-      "oluklu mukavva kesme bıçakları, tungsten karbür kesme bıçakları, çizme bıçakları, BHS kesme makinesi, Fosber kesme bıçakları, oluklu mukavva kutu bıçakları",
+      "Oluklu mukavva kuru uç hatları için BHS ve Fosber referans konfigürasyonlarına sahip karbür dilme bıçakları. Çizime göre özel delikler ve sabitleme desenleri yapılır.",
+    ogImage:
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+  },
+  "tire-shredder-blades": {
+    title: "Lastiklerin birincil parçalanması için döner makas bıçakları",
+    description:
+      "Birincil lastik parçalama için kaynağı değiştirilmiş A8 veya 42CrMo kesiciler. Kanca sayısını, kesici kalınlığını ve şaft deliğini döner makasınıza göre eşleştirin.",
+    ogImage: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
   },
   "nonwoven-slitter-knives": {
     title: "Dokumasız Kumaş Kesme Bıçakları | PP Spunbond ve SMS",
     description:
-      "PP spunbond, meltblown ve SMS dokumasız kumaşlar için 200–500 m/dk hızında kullanılan M2 HSS ve D2 dairesel kesme bıçakları. Hijyen ve tıbbi ürün hatları için yıpranmayı önleyici geometri.",
-    keywords:
-      "dokumasız kumaş kesme makinesi, dokumasız kumaş kesme bıçakları, dokumasız kumaş kesme bıçakları, spunbond kesme bıçakları, eritilerek üflenmiş kumaş kesme bıçakları, tıbbi dokumasız kumaş bıçakları",
-  },
-  "scrap-chopper-blades": {
-    title: "Hurda Kesme Bıçakları | Rulo Hatları için S7 ve H13",
-    description:
-      "Metal kesme hatları için S7 ve H13 takım çeliğinden üretilmiş ağır hizmet tipi hurda kesme bıçakları. 4 kenarlı değiştirilebilir uçlu tasarım, isteğe bağlı karbür kaplama. Yüksek darbe direnci.",
-    keywords:
-      "hurda kesme bıçakları, bobin işleme bıçakları, metal hurda kesici, dilme hattı kesme bıçakları, S7 kesme bıçakları",
-  },
-  "rotary-slitter-knives-paper": {
-    title:
-      "Kağıt Kesme Bıçakları | Kağıt Mendil ve Kraft | D2, M2 HSS | Sureay",
-    description:
-      "Kağıt mendil, kraft kağıt ve kaplamalı kağıtlar için kesme ve ezme tipi dilimleme bıçakları. D2, M2 HSS ve 52100 malzemelerinden üretilmiş, ±0,002 mm kalınlığında. Atlas, Kampf, Goebel IMS ve Perini makinelerine uygundur.",
-    keywords:
-      "kağıt mendil kesme bıçakları, kağıt kesme bıçakları, oluklu mukavva kesme bıçakları, kağıt mendil işleme bıçakları, kraft kağıt kesme bıçağı, tomruk testere kesme bıçakları, kağıt makas çiftleri, lif tozu içermeyen kesme",
-  },
-  "guillotine-shear-blades": {
-    title:
-      "Giyotin Makas Bıçakları | Hidrolik Makaslar için D2 ve 6CrW2Si | Sureay",
-    description:
-      "D2, 6CrW2Si ve 9CrSi giyotin makaslama bıçakları, ±0,05 mm paralellik hassasiyetinde taşlanmıştır. 16 mm × 4000 mm boyutlarına kadar olan makineler için setler — üretimden kaldırılmış modeller, numunenize göre üretilir.",
-    keywords:
-      "giyotin makaslama bıçakları, köşelendirme makaslama bıçakları, levha makaslama bıçakları, sac makaslama bıçakları, hidrolik makaslama bıçakları, salıncak kirişli makaslama bıçakları, D2 makaslama bıçakları, 6CrW2Si kesme bıçakları, AMADA yedek bıçakları, TRUMPF kesme bıçakları",
-  },
-  "wood-chipper-blades": {
-    title:
-      "Ağaç Öğütücü Bıçakları | D2 ve TCT Tamburlu ve Diskli Öğütücü Bıçakları | Sureay",
-    description:
-      "D2, Cr12MoV ve TCT tambur/diskli parçalayıcı bıçakları, HRC 57–62, ±0,05 mm tolerans. Bandit, Vermeer, Morbark ve Doppstadt markalarına OEM uyumlu. 8–12 yeniden bileme döngüsü.",
-    keywords:
-      "odun parçalayıcı bıçakları, tamburlu parçalayıcı bıçakları, diskli parçalayıcı bıçakları, ormancılık amaçlı parçalayıcı bıçakları, biyokütle parçalayıcı bıçakları, D2 parçalayıcı bıçakları, TCT parçalayıcı bıçakları, Vermeer parçalayıcı bıçakları, Bandit parçalayıcı bıçakları",
-  },
-  "wood-chipper-anvils": {
-    title:
-      "Ağaç Öğütücü Örsleri ve Karşı Bıçakları | D2 · A8 Modifiye | Eşleştirilmiş Setler | Sureay",
-    description:
-      "D2, Cr12MoV ve A8 Modifiye çelikten üretilmiş, HRC 54–60 sertlikte odun öğütücü örsleri (karşı bıçaklar). ±0,05 mm paralellik. Bandit, Vermeer ve Morbark markalı makinelere OEM uyumlu.",
-    keywords:
-      "odun öğütücü örsü, öğütücü karşı bıçağı, yatak bıçağı, öğütücü örs yedeği, Bandit örsü, Vermeer karşı bıçağı, Morbark yatak bıçağı, tamburlu öğütücü örsü, diskli öğütücü karşı bıçağı, uyumlu bıçaklı örs seti",
-  },
-  "special-shaped-blades": {
-    title:
-      "Özel Şekilli Bıçaklar | Her Türlü Profil, Her Türlü Alaşım | Sureay",
-    description:
-      "DXF/DWG/STEP çizimleri veya numunelerden üretilen özel profilli endüstriyel bıçaklar. D2, H13, PM-HSS ve karbür. Toleranslar ±0,02 mm’ye kadar. Her sektör, her geometri.",
-    keywords:
-      "özel bıçaklar, özel şekilli bıçaklar, özel profilli bıçaklar, OEM özel bıçaklar, istek üzerine üretilen endüstriyel bıçaklar, DXF formatında bıçak imalatı",
+      "Spunbond, meltblown ve SMS nonwovenlar için yedek dilimleme bıçakları. Özel profiller ve uygulamaya özel kaplamalarla M2 HSS , D2 veya karbür seçenekleri.",
+    ogImage:
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
   },
   "bottom-grooved-anvil-knives": {
-    title: "Alt Kısımda Yivli Örs Bıçakları | Makas Çifti Örsleri | Sureay",
+    title: "Alt Yivli Örs Bıçaklar | Yedek Yüzükler",
     description:
-      "Film, kağıt, folyo ve bantların kesme-yarıma işlemine yönelik alt kısmı oluklu örs bıçakları. D2, M2 HSS ve karbür. Tidland, Kampf, Atlas ve BHS mil sistemlerine OEM uyumlu.",
-    keywords:
-      "alt örs bıçağı, oluklu örs bıçağı, kesme-yarıma örs, yarıma için örs bıçakları, Tidland örs bıçağı, Kampf örs bıçağı, ezme kesim örs bıçağı",
+      "Web kesiciler için yedek yivli örs bıçakları ve kesme halkaları. Özel kanal profilleri, delikler ve kilitleme düzenlemeleriyle çelik veya karbür seçenekleri.",
+    ogImage: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
   },
-  "continuous-melt-filter-scraper-blades": {
-    title: "Erime Filtresi Sıyırıcı Bıçakları ve Filtre Plakaları",
+  "tungsten-carbide-slitter-knives": {
+    title: "tungsten karbür Dilme Bıçakları | Özel Boyutlar",
     description:
-      "PCR sürekli erime filtreleri için D2/H13/Karbür sıyırıcı bıçaklar ve filtre plakaları. HRC 58–62, PVC karışımlarına karşı HCl dirençli. EREMA, Gneuß ve Ettlinger makinelerine uygundur.",
+      "Dönüştürme ve metal işleme için yekpare ve karbür uçlu yedek dilme bıçakları. Uygulamaya uygun özel boyutlar, delikler ve kesme profilleri.",
+    ogImage:
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+  },
+  "scrap-chopper-blades": {
+    title: "Hurda Kıyıcı Bıçakları | Özel Bobin Hattı Bıçakları",
+    description:
+      "Bobin hattı kenar düzeltmesi için özel yedek hurda kıyıcı bıçakları. Düz, eğimli veya profilli kesme düzenlemelerine sahip S7 , H13 veya karbür kakmalı bıçaklar.",
+    ogImage: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
   },
   "strand-pelletizer-rotors": {
-    title: "Kompozit Üretim Hatları için Strand Peletleme Rotorları",
+    title: "İplik Peletleyici Kesme Rotorları | Özel Değiştirme",
     description:
-      "Plastik kompozit üretim hatları için şerit tipi peletleme rotorları. PM-HSS ve karbür, ≤0,005 mm eşmerkezlilik. Maag, Coperion ve Cumberland peletleyicilere doğrudan takılabilir.",
+      "Helisel veya düz kesme kenarlı yedek iplik peletleyici rotorları. Özel diş profilleri ve mil uçları ile HSS ve karbür seçenekleri.",
+    ogImage: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+  },
+  "continuous-melt-filter-scraper-blades": {
+    title: "Eriyik Filtresi Kazıyıcı Bıçaklar | Özel Değiştirmeler",
+    description:
+      "Sürekli plastik eriyik filtreleri için yedek kazıyıcı bıçaklar. D2 , H13 ve karbür seçenekleri, özel profiller ve çizime montaj detayları.",
+    ogImage: "/images/products/blades/scraper-blades.webp",
+  },
+  "shredder-screens": {
+    title: "Yedek Parçalayıcı Elekleri | Özel Sepetler ve Tabaklar",
+    description:
+      "8–80 mm açıklıklara sahip tek şaftlı parçalayıcılar için yedek elekler. Delik düzenine, eğime ve montaja uygun özel sepetler ve plakalar.",
+    ogImage:
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
+  },
+  "cutter-compactor-blades": {
+    title: "Kesici Kompaktör Bıçakları | Rotor ve Stator Bıçakları",
+    description:
+      "D2 , M2 HSS veya karbür uçlu yapıda yedek rotor ve stator bıçaklarıyla ekstrüzyon için PE veya PP film ve PET pulları hazırlayın.",
+    ogImage:
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+  },
+  "die-face-cutting-knives": {
+    title: "Kalıp Yüzlü Kesme Bıçakları | Özel Yedek Bıçaklar",
+    description:
+      "Su altı, su halkalı ve sıcak yüz sistemleri için yedek kalıp yüzeyli peletleyici bıçaklar. Özel bıçak yuvaları, kenar profilleri ve çizime uygun setler.",
+    ogImage:
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+  },
+  "special-shaped-blades": {
+    title: "Özel Şekilli Endüstriyel Bıçaklar | Özel Profiller",
+    description:
+      "D2 , H13 , PM- HSS veya karbürden özel profilli yedek makine bıçakları. Parçaya özel ana hatlar, kesici kenarlar ve montaj özellikleri çizime göre yapılmıştır.",
+    ogImage: "/images/products/blades/special-shaped-knife.webp",
+  },
+  "wood-chipper-blades": {
+    title: "Tamburlu ve diskli odun yongalama makineleri için bıçaklar",
+    description:
+      "Listelenen uzunluklarda 230–600 mm tamburlu ve diskli ağaç öğütücüler için hareketli bıçaklar. Ufalayıcı çelik, D2 veya karbür uçlu kenarın yanı sıra eğim ve cıvata deseninizi belirtin.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+  },
+  "wood-chipper-anvils": {
+    title: "Odun yongalama makineleri için örsler ve karşı bıçaklar",
+    description:
+      "Hareketli parçalayıcı bıçakların karşısındaki sabit karşı bıçağı değiştirin. Ağaç öğütücü örsleri, özel montaj yuvalarıyla birlikte 185–400 mm uzunluklarda listelenir.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
   },
   "slitter-rewinder-bottom-knives": {
-    title:
-      "Kesici-Sarma Makinesi Alt Bıçakları | Kağıt Sarma Makinesi Bıçakları | Sureay",
+    title: "Dilme Sarıcı Alt Bıçaklar | Fincan ve Çift Kenar",
     description:
-      "Kağıt kesme-sarma makineleri için katı ve karbür uçlu alt bıçaklar. Ayna parlaklığında, çapak içermeyen, toz oluşumu azaltılmış. Φ250–Φ254 standart boyutlar, makineye göre özel delik ölçüleri.",
-    keywords:
-      "kesme-sarma makinesi alt bıçakları, sarma makinesi alt bıçağı, kağıt sarma makinesi bıçakları, Jagenberg sarma makinesi bıçakları, Bielomatik alt bıçağı, ECH Will sarma makinesi bıçakları, Maxson sarma makinesi bıçakları",
+      "Kağıt geri sarma makineleri için çanak, çift kenarlı ve değiştirilebilir halkalı alt bıçaklar, OD 70–300 mm. Kamalı bir delik, flanş montajı veya karbür kesici kenar belirtin.",
+    ogImage:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
   },
-  "box-slotting-knives": {
-    title: "Kutu Yiv Açma Bıçakları | Karbür Yiv Açma Bıçakları | Sureay",
+  "corrugated-slotter-knives": {
+    title: "Oluklu mukavva slotter bıçakları | Erkek ve dişi bıçaklar",
     description:
-      "Gri karton ve sert hediye kutusu makineleri için karbür oluk açma bıçakları. Sol/sağ çiftleri, GS05U ve GS20U kaliteleri, beş farklı stok boyutu, karton kalınlığına göre ayarlanabilir.",
-    keywords:
-      "kutu oluk açma bıçakları, gri karton oluk açma bıçağı, sert kutu oluk açma bıçağı, hediye kutusu V oluk bıçağı, karbür oluk açma bıçağı",
+      "Oluklu kapak kanal açma için düz veya tırtıklı erkek yaylar ve dişi karşı bıçaklar. Yuva genişliğinize ve montaj çiziminize göre yapılmış yedek bıçakları sipariş edin.",
+    ogImage: "/images/products/slitter-detail/box-slotting-knives-white.webp",
   },
   "paper-straw-slitting-blades": {
-    title:
-      "Kağıt Pipet Kesme Bıçakları | Yapışmaz Karbür Dilimleyiciler | Sureay",
+    title: "Kağıt Saman Kesme Bıçakları | Yedek Bıçaklar",
     description:
-      "Kağıt pipet ve filtre çubuklarının kesilmesi için yapışmaz karbür dairesel bıçaklar. Φ88–Φ100, 0,15–0,30 mm. Yapışkan birikimini önleyerek uçların pürüzsüz kesilmesini sağlar.",
-    keywords:
-      "kağıt pipet kesme bıçakları, kağıt pipet dilimleme bıçağı, filtre çubuğu kesme bıçağı, yapışmaz karbür dairesel bıçak, Hauni filtre bıçağı",
+      "Kağıt samanını kesmek ve düzeltmek için yedek dairesel bıçaklar . Karbür veya M2 HSS seçenekleri, özel delikler ve profiller ve hat için seçilen kaplamalar.",
+    ogImage: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
   },
   "groove-bottom-knives": {
-    title: "Çok Kanallı Alt Bıçaklar | Alt Kesme Halkaları | Sureay",
+    title: "Çok Yivli Alt Bıçaklar | Alt Kesici Halkalar",
     description:
-      "Kesme yivleme için çok yivli alt bıçak halkaları. Yiv aralığı 5 mm’den itibaren, dış çap Φ406 mm’ye kadar, havalı mil veya ayar vidası deliği. Tek yivli ve pürüzsüz halkalar da mevcuttur.",
-    keywords:
-      "çok oluklu alt bıçak, oluklu alt bıçaklar, çok oluklu alt kesici, alt kesici halkalar, çok bıçaklı kesici halka, tek bıçaklı kesici halka, düz ara halka, MKB alt bıçağı, oluk aralıklı kesici halka, bölünmüş kesici halka",
+      "Makasla dilme için çok kanallı kesici halkalar. Çizime göre tek parça ve bölünmüş konfigürasyonlarla 5 mm'den 406 mm'ye kadar dış çap ve oluk aralığı.",
+    ogImage: "/images/products/slitter-detail/groove-bottom-knives.webp",
+  },
+  "stationary-scrap-shear-blades": {
+    title: "Sabit portal tipi hurda makasları için bıçaklar",
+    description:
+      "Sabit portal hurda makasları için cıvataya monteli hareketli bıçak blokları ve sabit karşı bıçaklar sipariş edin. 1.2746 veya 1.2767 çeliğini seçin ve montaj çiziminizi gönderin.",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+  },
+  "flying-shear-blades": {
+    title: "Uçan makas bıçakları | Haddehaneler için özel üretim",
+    description:
+      "Haddehaneler için özel mahsul ve uçan makaslama bıçakları . Sıcak, soğuk veya su verilmiş çubuk kesimi için düz veya profilli bıçaklar, çizime göre üretilmiştir.",
+    ogImage: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+  },
+  "paper-sheeter-knives": {
+    title:
+      "Bobinden tabakaya kâğıt kesme bıçakları | Özel üretim yedek bıçaklar",
+    description:
+      "Özel yedek kağıt tabakalama ve çapraz kesme bıçakları. Kağıt ve karton ağlar için HSS , PM çelik veya karbür uçlu kenarlar, montaj profilinize göre yapılır.",
+    ogImage: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+  },
+  "saddle-stitcher-trimmer-knives": {
+    title: "Tel dikişli broşürler için üç ağızlı kesim bıçakları",
+    description:
+      "Kitapçıklar ve dergiler için sırt dikişi hatlarındaki ön veya yan bıçakları değiştirin. Bkz. DS 304 / Tempo referans boyutları ve HSS veya karbür uçlu seçenekler.",
+    ogImage:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+  },
+  "box-slotting-knives": {
+    title: "Sert kutular için gri mukavvada V kanal açma bıçakları | Karbür",
+    description:
+      "Sert ve hediye kutusu hatlarında gri tahta V-kanal açma için karbür kanal açma bıçakları. Listelenen beş boyutla GS05U ve GS20U eşleşen sol ve sağ el çiftleri.",
+    ogImage: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
   },
 };

@@ -10,8 +10,8 @@
  * uses [data-testid="language-switcher"] as the assertion marker.
  */
 
-import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Check } from "lucide-react";
+import { useEffect, useId, useRef, useState } from "react";
+import { ChevronDown, Check, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import GB from "country-flag-icons/react/3x2/GB";
 import ES from "country-flag-icons/react/3x2/ES";
@@ -22,13 +22,13 @@ import SA from "country-flag-icons/react/3x2/SA";
 import BR from "country-flag-icons/react/3x2/BR";
 import TR from "country-flag-icons/react/3x2/TR";
 import {
-  PUBLISHED_LANGS,
+  getPageLanguages,
   isEnglishOnlyProductPath,
   localizedPath,
   stripLangPrefix,
   type Lang,
 } from "@/lib/i18n";
-import { useLang } from "@/contexts/LangContext";
+import { useTranslation } from "@/lib/useTranslation";
 
 type FlagComponent = React.ComponentType<{
   title?: string;
@@ -48,14 +48,17 @@ const LANG_META: Record<Lang, { label: string; Flag: FlagComponent }> = {
 };
 
 interface Props {
-  // Visual variant. "light" = navbar (dark text on white), "dark" = drawer.
-  variant?: "light" | "dark";
+  variant?: "light" | "mobile";
+  onSelect?: () => void;
 }
 
-export default function LanguageSwitcher({ variant = "light" }: Props) {
-  const currentLang = useLang();
+export default function LanguageSwitcher({ variant = "light", onSelect }: Props) {
+  const { t, lang: currentLang } = useTranslation();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const listId = useId();
+  const { label: currentLabel, Flag: CurrentFlag } = LANG_META[currentLang];
 
   // The canonical path stripped of any language prefix. Computed once per
   // render from the live URL — Puppeteer prerender visits each route as a
@@ -87,44 +90,88 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
     return () => document.removeEventListener("mousedown", handler);
   }, [open]);
 
-  // Mobile drawer: flex-wrap chip row — no dropdown needed on touch
-  if (variant === "dark") {
+  if (variant === "mobile") {
+    const languages: Lang[] = isEnglishOnlyPath
+      ? ["en"]
+      : getPageLanguages(canonicalPath);
+    const suffix = typeof window === "undefined"
+      ? ""
+      : window.location.search + window.location.hash;
+    const currentLanguage = (
+      <>
+        <Globe aria-hidden="true" className="size-[18px] shrink-0" strokeWidth={1.6} />
+        <span lang={currentLang} translate="no">{currentLabel}</span>
+      </>
+    );
+
     return (
       <div
+        ref={rootRef}
         data-testid="language-switcher"
         data-current-lang={currentLang}
-        className="flex flex-wrap gap-1.5"
+        className="text-[#243d52]"
+        onKeyDown={event => {
+          if (event.key === "Escape" && open) {
+            event.stopPropagation();
+            setOpen(false);
+            triggerRef.current?.focus();
+          }
+        }}
       >
-        {PUBLISHED_LANGS.map(lang => {
-          const isCurrent = lang === currentLang;
-          const href = isEnglishOnlyPath
-            ? canonicalPath
-            : localizedPath(canonicalPath, lang);
-          const { label, Flag } = LANG_META[lang];
-          return (
-            <a
-              key={lang}
-              href={href}
-              hrefLang={lang}
-              data-lang={lang}
-              className={`flex items-center gap-2 text-[12px] font-medium px-2.5 py-1.5 transition-colors ${
-                isCurrent
-                  ? "bg-white text-[#001f4d]"
-                  : "text-white/50 border border-white/20 hover:text-white hover:border-white/50"
-              }`}
+        {languages.length === 1 && languages[0] === currentLang ? (
+          <div className="flex min-h-12 items-center gap-3 text-[16px]">
+            {currentLanguage}
+          </div>
+        ) : (
+          <>
+            <button
+              ref={triggerRef}
+              type="button"
+              aria-controls={listId}
+              aria-expanded={open}
+              aria-label={`${t("common.chooseLanguage")}, ${currentLabel}`}
+              onClick={() => setOpen(value => !value)}
+              className="flex min-h-12 w-full items-center gap-3 text-start text-[16px] font-normal"
             >
-              <Flag className="w-5 h-auto flex-shrink-0" />
-              <span>{label}</span>
-            </a>
-          );
-        })}
+              {currentLanguage}
+              <ChevronDown
+                aria-hidden="true"
+                className={`ms-auto size-4 motion-safe:transition-transform ${open ? "rotate-180" : ""}`}
+                strokeWidth={1.6}
+              />
+            </button>
+            <ul
+              id={listId}
+              aria-label={t("common.chooseLanguage")}
+              className={open ? "grid grid-cols-2 gap-x-2 pb-3" : "hidden"}
+            >
+              {languages.map(lang => (
+                <li key={lang}>
+                  <a
+                    href={localizedPath(canonicalPath, lang) + suffix}
+                    hrefLang={lang}
+                    lang={lang}
+                    translate="no"
+                    data-lang={lang}
+                    aria-current={lang === currentLang ? "page" : undefined}
+                    onClick={onSelect}
+                    className={`flex min-h-11 items-center justify-between gap-2 px-3 text-[15px] hover:bg-slate-50 ${
+                      lang === currentLang ? "bg-slate-100 font-medium text-[#001f4d]" : "font-normal"
+                    }`}
+                  >
+                    <bdi dir={lang === "ar" ? "rtl" : "ltr"}>{LANG_META[lang].label}</bdi>
+                    {lang === currentLang && <Check aria-hidden="true" className="size-4 shrink-0" />}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
       </div>
     );
   }
 
   // Desktop: hover dropdown
-  const { label: currentLabel, Flag: CurrentFlag } = LANG_META[currentLang];
-
   return (
     <div
       ref={rootRef}
@@ -140,12 +187,12 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
         aria-expanded={open}
         aria-label="Choose language"
         className={`flex items-center gap-1.5 px-2 py-1 transition-colors cursor-pointer ${
-          open ? "text-[#003366]" : "text-slate-500 hover:text-[#003366]"
+          open ? "text-[#003366]" : "text-muted-foreground hover:text-[#003366]"
         }`}
         onClick={() => setOpen(v => !v)}
       >
         <CurrentFlag className="w-5 h-auto flex-shrink-0" />
-        <span className="text-[13px] font-medium">{currentLabel}</span>
+        <span className="text-[16px] font-medium">{currentLabel}</span>
         <ChevronDown
           className={`w-3 h-3 transition-transform duration-150 ${open ? "rotate-180" : ""}`}
           strokeWidth={2.5}
@@ -161,9 +208,9 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
             exit={{ opacity: 0, y: -6, scaleY: 0.95 }}
             transition={{ duration: 0.12, ease: "easeOut" }}
             style={{ transformOrigin: "top" }}
-            className="absolute right-0 top-full mt-1.5 min-w-[180px] py-1 z-50 bg-white border border-slate-200 shadow-xl"
+            className="absolute right-0 top-full mt-1.5 min-w-[180px] py-1 z-50 bg-white border border-slate-200 shadow-none"
           >
-            {PUBLISHED_LANGS.map(lang => {
+            {getPageLanguages(canonicalPath).map(lang => {
               const isCurrent = lang === currentLang;
               const href = isEnglishOnlyPath
                 ? canonicalPath
@@ -175,10 +222,10 @@ export default function LanguageSwitcher({ variant = "light" }: Props) {
                     href={href}
                     hrefLang={lang}
                     data-lang={lang}
-                    className={`flex items-center gap-3 px-4 py-2.5 text-[13px] font-medium transition-colors border-l-2 ${
+                    className={`flex items-center gap-3 px-4 py-2.5 text-[16px] font-medium transition-colors border-l-2 ${
                       isCurrent
                         ? "border-[#001f4d] bg-slate-50 text-[#001f4d] font-bold"
-                        : "border-transparent text-slate-500 hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#003366]"
+                        : "border-transparent text-muted-foreground hover:border-[#001f4d] hover:bg-slate-50 hover:text-[#003366]"
                     }`}
                   >
                     <Flag className="w-5 h-auto flex-shrink-0" />

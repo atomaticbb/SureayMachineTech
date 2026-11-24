@@ -1,128 +1,76 @@
-/*
- * IndustryToolingMatrix — Module 2
- * Filterable, paginated product grid.
- * Framer Motion AnimatePresence popLayout + mechanical spring (stiffness 500).
- */
-
-import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import type { IndustryProduct } from "./types";
+import { motion } from "framer-motion";
+import ProductVariantCard from "@/components/product/ProductVariantCard";
+import { getWebpImageSrcSet, type Blade } from "@/data/blades";
+import { useTranslation } from "@/lib/useTranslation";
 import { SPRING_MECHANICAL } from "./types";
 
 interface Props {
-  products: IndustryProduct[];
-  filterCategories: string[]; // ["ALL", "SHREDDING", ...]
+  blades: Blade[];
+  catalogCards?: boolean;
 }
 
-export default function IndustryToolingMatrix({
-  products,
-  filterCategories,
-}: Props) {
-  const [activeFilter, setActiveFilter] = useState("ALL");
-
-  const filtered =
-    activeFilter === "ALL"
-      ? products
-      : products.filter(p => p.category.toUpperCase() === activeFilter);
-
-  const handleFilter = (f: string) => {
-    setActiveFilter(f);
-  };
+export default function IndustryToolingMatrix({ blades, catalogCards }: Props) {
+  const { t } = useTranslation();
 
   return (
-    <section id="tooling-matrix" className="bg-slate-50 py-12 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        {/* Section header */}
-        <div className="mb-14">
-          <p className="font-bold text-[11px] text-slate-400  tracking-[0.45em] mb-3">
-            Engineered Product Range
-          </p>
-          <h2 className="font-black text-2xl md:text-3xl text-[#001f4d]  tracking-tight leading-[1.0]">
-            Core Tooling Matrix.
-          </h2>
-          <div className="w-14 h-[3px] bg-slate-300 mt-6" />
-        </div>
-
-        {/* Filter bar */}
-        <div className="flex flex-wrap gap-3 mb-10">
-          {filterCategories.map(f => (
-            <button
-              key={f}
-              type="button"
-              onClick={() => handleFilter(f)}
-              className={`border-2 px-6 py-2.5 text-[11px] font-black  tracking-[0.2em] transition-colors duration-200 rounded-none cursor-pointer ${
-                activeFilter === f
-                  ? "border-[#001f4d] bg-[#001f4d] text-white"
-                  : "border-slate-200 text-slate-500 bg-transparent hover:border-[#001f4d] hover:text-[#001f4d]"
-              }`}
-            >
-              {f}
-            </button>
-          ))}
-        </div>
-
-        {/* Card grid — mechanical AnimatePresence */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          <AnimatePresence mode="popLayout">
-            {filtered.map(product => (
+    <section id="tooling-matrix" className="site-section bg-slate-50 py-12 lg:py-28">
+      <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
+        <h2 className="mb-6 font-black text-2xl md:text-3xl text-[#001f4d] tracking-tight leading-[1.0]">
+          {t("industry.products.heading")}
+        </h2>
+        {catalogCards ? (
+          <div className="mobile-product-grid grid auto-rows-fr grid-cols-2 gap-x-3 gap-y-4 md:gap-4 lg:grid-cols-4">
+            {blades.map(blade => (
+              <ProductVariantCard key={blade.id} blade={blade} sectorBadge={null} />
+            ))}
+          </div>
+        ) : (
+          <div className="mobile-product-grid grid grid-cols-2 gap-x-3 gap-y-4 md:gap-6 lg:grid-cols-3 lg:gap-8">
+            {blades.map(blade => (
               <motion.div
-                key={`${product.href}-${product.name}`}
-                layout
+                key={blade.id}
+                className="min-w-0"
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.96 }}
                 transition={SPRING_MECHANICAL}
               >
-                <Link href={product.href}>
-                  <div className="border border-slate-200 bg-white flex flex-col h-full group relative cursor-pointer transition-all duration-200 hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[6px_6px_0px_#001f4d]">
-                    {/* Image viewport */}
-                    <div className="aspect-[16/10] bg-slate-50 relative overflow-hidden flex items-center justify-center p-5">
-                      <span className="absolute top-2 left-2 w-2 h-2 border-t border-l border-slate-300 pointer-events-none" />
-                      <span className="absolute top-2 right-2 w-2 h-2 border-t border-r border-slate-300 pointer-events-none" />
-                      <span className="absolute bottom-2 left-2 w-2 h-2 border-b border-l border-slate-300 pointer-events-none" />
-                      <span className="absolute bottom-2 right-2 w-2 h-2 border-b border-r border-slate-300 pointer-events-none" />
-
-                      <div className="absolute top-0 left-0 z-10">
-                        <span className="inline-block border-l-4 border-[#001f4d] bg-white/80 backdrop-blur-sm text-[#001f4d] font-black text-[10px]  tracking-[0.3em] px-3 py-2">
-                          {product.isFlagship ? "★ FLAGSHIP" : product.category}
-                        </span>
-                      </div>
-
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        loading="lazy"
-                        decoding="async"
-                        className="w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"
-                      />
-                    </div>
-
-                    {/* Nameplate */}
-                    <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="font-black text-[17px] text-[#001f4d]  tracking-[-0.03em] leading-[1.15] mb-3 line-clamp-2 min-h-[42px]">
-                        {product.name}
-                      </h3>
-                      <p className="text-[14px] text-slate-500 leading-relaxed mb-6 flex-grow line-clamp-2">
-                        {product.desc ??
-                          (product.isFlagship
-                            ? "Extreme-wear grade engineered for maximum continuous uptime. 100% CMM-verified tolerance."
-                            : "Precision-engineered OEM replacement tooling designed for drop-in compatibility and extended service life.")}
-                      </p>
-                      <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span className="text-[10px] font-black text-slate-400  tracking-widest group-hover:text-[#001f4d] transition-colors duration-300">
-                          [ View Spec Sheet ]
-                        </span>
-                        <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-[#001f4d] group-hover:translate-x-1 transition-all duration-300" />
-                      </div>
-                    </div>
+                <Link href={blade.link} className="group flex h-full flex-col border border-slate-200 bg-white hover:-translate-y-1 hover:-translate-x-1 transition-transform">
+                  <div className="relative aspect-square bg-white overflow-hidden p-3 md:aspect-[16/10] md:bg-slate-50 md:p-5">
+                    <img
+                      src={blade.image}
+                      srcSet={getWebpImageSrcSet(blade.image, blade.imageDimensions)}
+                      sizes="(min-width: 1920px) 550px, (min-width: 1024px) calc((100vw - 144px) / 3 - 42px), (min-width: 768px) calc((100vw - 72px) / 2 - 42px), (min-width: 640px) calc(50vw - 56px), calc(50vw - 48px)"
+                      width={blade.imageDimensions?.width}
+                      height={blade.imageDimensions?.height}
+                      alt={blade.name}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-contain mix-blend-multiply motion-safe:group-hover:scale-105 transition-transform duration-700 ease-out"
+                    />
+                    <span className="hidden md:block absolute top-2 left-2 size-2 border-t border-l border-slate-300" />
+                    <span className="hidden md:block absolute top-2 right-2 size-2 border-t border-r border-slate-300" />
+                    <span className="hidden md:block absolute bottom-2 left-2 size-2 border-b border-l border-slate-300" />
+                    <span className="hidden md:block absolute bottom-2 right-2 size-2 border-b border-r border-slate-300" />
+                  </div>
+                  <div className="flex flex-1 flex-col p-3 md:p-6">
+                    <h3 className="mb-2 text-[16px] font-semibold leading-snug wrap-anywhere text-[#001f4d] md:mb-3 md:min-h-[42px] md:line-clamp-2 md:text-[20px] md:font-black md:leading-[1.15] md:tracking-[-0.03em]">
+                      {blade.name}
+                    </h3>
+                    <p className="mb-3 flex-1 line-clamp-2 text-[14px] leading-relaxed text-muted-foreground md:mb-6 md:text-[16px]">
+                      {blade.description}
+                    </p>
+                    <span className="mt-auto flex min-w-0 items-center justify-between gap-1 border-t border-slate-100 pt-2 text-[14px] font-semibold text-[#001f4d] md:pt-4 md:text-[12px] md:font-black md:tracking-widest md:text-muted-foreground">
+                      {t("industry.products.specSheet")}
+                      <ArrowRight aria-hidden="true" className="size-4 shrink-0 text-slate-400 rtl:rotate-180" />
+                    </span>
                   </div>
                 </Link>
               </motion.div>
             ))}
-          </AnimatePresence>
-        </div>
+          </div>
+        )}
       </div>
     </section>
   );

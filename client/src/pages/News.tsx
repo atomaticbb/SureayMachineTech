@@ -5,11 +5,12 @@
  */
 
 import { useRef, useState } from "react";
-import { Link } from "wouter";
+import NewsArticleCard from "@/components/common/NewsArticleCard";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import SEO from "@/components/common/SEO";
 import { SORTED_DISPATCHES } from "@/data/news";
+import { useTranslation } from "@/lib/useTranslation";
 
 // ── UI Constants ──────────────────────────────────────────────────────────────
 
@@ -24,6 +25,7 @@ const PER_PAGE = 12;
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function CorporateDispatches() {
+  const { t, lang } = useTranslation();
   const [activeCategory, setActiveCategory] = useState("ALL");
   const [page, setPage] = useState(1);
   const gridRef = useRef<HTMLElement>(null);
@@ -56,7 +58,7 @@ export default function CorporateDispatches() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 antialiased">
+    <div className={`group/news min-h-screen antialiased ${lang === "en" ? "bg-white" : "bg-slate-50"}`}>
       <SEO
         title="Industry Dispatches — Blade Technology & News"
         description="Latest updates from Sureay: technology innovations, exhibition reports and company milestones in industrial blade manufacturing."
@@ -80,17 +82,19 @@ export default function CorporateDispatches() {
           />
           {/* Text overlay */}
           <div className="relative h-full flex flex-col justify-center px-8 sm:px-14 lg:px-20 max-w-4xl">
-            <p className="text-[11px] font-semibold tracking-[0.28em]  text-white/50 mb-5">
-              News & Industry Updates
-            </p>
-            <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-white  tracking-tight leading-none mb-6">
-              Articles
-              <br />
-              and News
+            {lang !== "en" && (
+              <p className="text-[14px] font-semibold tracking-[0.28em]  text-white/80 mb-5">
+                News & Industry Updates
+              </p>
+            )}
+            <h1 className="text-[42px] lg:text-[66px] font-black text-white  tracking-tight leading-none mb-6">
+              {t("nav.news")}
             </h1>
             <div className="w-12 h-[3px] bg-white/30 mb-6" />
-            <p className="text-white/70 text-[16px] leading-relaxed max-w-xl">
-              Latest news and technology articles about us.
+            <p className="text-white/70 text-[18px] leading-relaxed max-w-xl">
+              {lang === "en"
+                ? "Industrial blade selection, maintenance guides and manufacturing updates from Sureay."
+                : "Latest news and technology articles about us."}
             </p>
           </div>
         </section>
@@ -98,17 +102,17 @@ export default function CorporateDispatches() {
         {/* ═══════════════════════════════════════════════════════════════════
             ZONE 2 — Category Filter
         ═══════════════════════════════════════════════════════════════════ */}
-        <section className="bg-white border-b border-slate-200 sticky top-0 z-10">
-          <div className="max-w-7xl mx-auto border-l border-slate-200">
+        <section className="site-section sticky top-[75px] z-10 border-b border-slate-200 bg-white transition-[top] duration-300 ease-in-out group-has-[[data-scroll-hidden=true]]/news:top-0">
+          <div className="site-content max-w-7xl mx-auto border-l border-slate-200">
             <div className="flex overflow-x-auto flex-nowrap w-full no-scrollbar">
               {CATEGORIES.map(cat => (
                 <button
                   key={cat.value}
                   onClick={() => selectCategory(cat.value)}
-                  className={`flex-shrink-0 min-w-fit md:flex-1 px-8 py-4 border-r border-slate-200 text-center font-mono text-[11px] font-semibold tracking-[0.16em] whitespace-nowrap transition-colors ${
+                  className={`flex-shrink-0 min-w-fit md:flex-1 px-8 py-4 border-r border-slate-200 text-center font-mono text-[14px] font-semibold tracking-[0.16em] whitespace-nowrap transition-colors ${
                     activeCategory === cat.value
                       ? "bg-[#001f4d] text-white"
-                      : "bg-transparent text-slate-500 hover:bg-slate-50 hover:text-[#001f4d]"
+                      : "bg-transparent text-muted-foreground hover:bg-slate-50 hover:text-[#001f4d]"
                   }`}
                 >
                   {cat.label}
@@ -123,56 +127,16 @@ export default function CorporateDispatches() {
         ═══════════════════════════════════════════════════════════════════ */}
         <section
           ref={gridRef}
-          className="scroll-mt-20 py-16 lg:py-24 max-w-7xl mx-auto px-6 sm:px-8"
+          className="site-section site-content scroll-mt-20 py-16 lg:py-24 max-w-7xl mx-auto px-6 sm:px-8"
         >
           {filteredDispatches.length === 0 ? (
-            <p className="font-mono text-sm text-slate-400 tracking-widest">
+            <p className="font-mono text-sm text-muted-foreground tracking-widest">
               — No dispatches in this category —
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
               {pagedDispatches.map(post => (
-                <Link key={post.id} href={`/news/${post.id}`} asChild>
-                  <a className="bg-white border border-slate-200 group cursor-pointer flex flex-col hover:border-[#001f4d] transition-colors duration-300">
-                    {/* Image — taller for 2-col layout */}
-                    <div className="relative aspect-[16/9] overflow-hidden bg-slate-100 border-b border-slate-200">
-                      <img
-                        src={post.image}
-                        alt={post.imageAlt ?? post.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                        loading="lazy"
-                        decoding="async"
-                        width={800}
-                        height={450}
-                      />
-                      <div className="absolute top-0 left-0 bg-white border-b border-r border-slate-200 px-3 py-1.5">
-                        <span className="font-mono text-[9px] font-bold text-[#001f4d] tracking-widest ">
-                          {post.date}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-7 flex flex-col flex-grow">
-                      <p className="text-[10px] font-semibold tracking-[0.22em] text-slate-400  mb-3">
-                        {post.tag}
-                      </p>
-                      <h2 className="text-[18px] font-black text-[#001f4d]  leading-tight tracking-tight mb-3 group-hover:text-[#003366] transition-colors duration-200">
-                        {post.title}
-                      </h2>
-                      <p className="text-[15px] text-slate-500 leading-relaxed mb-6 line-clamp-3">
-                        {post.excerpt}
-                      </p>
-
-                      {/* Footer */}
-                      <div className="mt-auto pt-4 border-t border-slate-100">
-                        <span className="inline-flex items-center gap-1 font-mono text-sm font-bold text-[#001f4d] tracking-widest underline-offset-4 group-hover:underline transition-all">
-                          Read more &gt;&gt;
-                        </span>
-                      </div>
-                    </div>
-                  </a>
-                </Link>
+                <NewsArticleCard key={post.id} article={post} variant="listing" />
               ))}
             </div>
           )}
@@ -189,7 +153,7 @@ export default function CorporateDispatches() {
                   onClick={() => goToPage(Math.max(1, currentPage - 1))}
                   disabled={currentPage === 1}
                   aria-label="Previous page"
-                  className="font-mono w-10 h-10 border border-slate-200 text-[13px] text-slate-500 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
+                  className="font-mono w-10 h-10 border border-slate-200 text-[16px] text-muted-foreground flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
                 >
                   «
                 </button>
@@ -200,10 +164,10 @@ export default function CorporateDispatches() {
                     type="button"
                     onClick={() => goToPage(n)}
                     aria-current={n === currentPage ? "page" : undefined}
-                    className={`font-mono w-10 h-10 border text-[13px] transition-colors duration-200 ${
+                    className={`font-mono w-10 h-10 border text-[16px] transition-colors duration-200 ${
                       n === currentPage
                         ? "border-[#001f4d] bg-[#001f4d] text-white"
-                        : "border-slate-200 text-slate-500 hover:border-[#001f4d] hover:text-[#001f4d]"
+                        : "border-slate-200 text-muted-foreground hover:border-[#001f4d] hover:text-[#001f4d]"
                     }`}
                   >
                     {n}
@@ -217,7 +181,7 @@ export default function CorporateDispatches() {
                   }
                   disabled={currentPage === totalPages}
                   aria-label="Next page"
-                  className="font-mono w-10 h-10 border border-slate-200 text-[13px] text-slate-500 flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
+                  className="font-mono w-10 h-10 border border-slate-200 text-[16px] text-muted-foreground flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed hover:border-[#001f4d] hover:text-[#001f4d] transition-colors duration-200"
                 >
                   »
                 </button>
@@ -229,7 +193,7 @@ export default function CorporateDispatches() {
                   style={{ width: `${(currentPage / totalPages) * 100}%` }}
                 />
               </div>
-              <p className="font-mono text-[10px] text-slate-400 tracking-[0.3em]">
+              <p className="font-mono text-[12px] text-muted-foreground tracking-[0.3em]">
                 {currentPage} / {totalPages}
               </p>
             </nav>

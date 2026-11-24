@@ -53,7 +53,7 @@ scripts/  Puppeteer prerender (SSG) + sitemap generator
 ```
 
 **Design system — Swiss Brutalist / Industrial:**
-- Colors: navy `#001f4d`, white `#ffffff`, gold `#e8b84b`
+- Colors: remove brand gold; see `design.md` for navy/white/cool-gray design specifications and `design-decisions.md` for pending decisions. Verify rendered styles before reporting visual defects.
 - `rounded-none` everywhere — no border-radius, no drop shadows
 - Monospace uppercase labels with letter-spacing for spec data
 - Framer Motion for entrance animations (keep subtle)
@@ -75,6 +75,21 @@ New endpoint: create service → controller → route file → mount in `server/
 ## Product Catalog
 
 `client/src/data/blades.ts` — `Blade` type includes `id` (URL slug), `category` (`BladeCategoryType`), `sector` (`BladeSectorType`), `standardDimensions`, optional `dimensionLabels`. Add new products only here.
+
+Use the [product page upgrade template](docs/qa/product-page-upgrade.md) for English category and product updates. Slitter and Shredder are the reference implementations.
+
+For each next category, follow the template's category workflow proactively: read and cite the existing research and latest decisions first; audit taxonomy, product gaps, content, actual images, dimensions and links; recommend changes with evidence before implementation. Apply already approved shared standards without asking the user to repeat them. Distinguish new business decisions and unresolved evidence from authorized routine work, and respect analysis-only requests and deferred tasks. Do not generate other language versions.
+
+### Category acceptance
+
+- Use `Item No.` as the first column in every English Common Standard Dimensions table. Format catalog identifiers as `SR` followed by the three-digit category code and a three-digit serial, such as `SR001154`. Slitter uses `001`, Shredder uses `002`, and Shear uses `003`.
+- Store each identifier with its configuration in `blades.ts` so row reordering keeps it stable. Reuse an identifier across pages only when both rows describe the same configuration.
+- Check the heading, category prefix, row coverage and duplicate identifiers when accepting a category. Add new category codes to the catalog item-number test when their tables are introduced.
+
+### Release image performance
+
+- Treat image performance as a priority release check. Verify that published raster images are served as `.webp` and preserve alpha where transparency is required.
+- Provide width variants for images used at different display sizes. Use `srcset` and `sizes` to match the rendered layout, declare the intrinsic width and height, and check which file the browser actually loads on mobile and desktop.
 
 ## SEO
 

@@ -114,7 +114,7 @@ interface MegaMenuProps {
 
 function MegaMenu({ onClose }: MegaMenuProps) {
   return (
-    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] shadow-xl z-50">
+    <div className="absolute top-full left-0 right-0 bg-white border-t-2 border-[#001f4d] shadow-none z-50">
       <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Sector Grid - 4 columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -150,7 +150,7 @@ function MegaMenu({ onClose }: MegaMenuProps) {
 
         {/* Footer CTA */}
         <div className="mt-8 pt-6 border-t border-slate-200">
-          <p className="text-xs text-slate-500  tracking-wider">
+          <p className="text-xs text-muted-foreground  tracking-wider">
             Need a custom blade solution?{" "}
             <Link href="/contact">
               <a
@@ -213,7 +213,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
         {/* Industries & Products - Accordion */}
         <div>
-          <div className="text-xs font-bold text-slate-400  tracking-wider mb-3">
+          <div className="text-xs font-bold text-muted-foreground  tracking-wider mb-3">
             Industries & Products
           </div>
           <div className="space-y-2">
@@ -240,7 +240,7 @@ function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       </span>
                     </div>
                     <ChevronDown
-                      className={`w-4 h-4 text-slate-400 transition-transform duration-150 ${
+                      className={`w-4 h-4 text-muted-foreground transition-transform duration-150 ${
                         isExpanded ? "rotate-180" : ""
                       }`}
                     />
@@ -309,7 +309,7 @@ export default function HeaderIndustrial() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 bg-[#001f4d] text-white shadow-lg z-40">
+    <header className="sticky top-0 bg-[#001f4d] text-white shadow-none z-40">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

@@ -5,8 +5,7 @@
  *
  * Asserts:
  *   1. Every canonical English route has a corresponding index.html.
- *   2. For each non-default language (es/fr/ru/vi), dist/public/{lang}/
- *      contains the same set of routes as the English root.
+ *   2. Each published language has an HTML file for every translated route.
  *   3. The HTML files are non-empty and contain a <html> opening tag.
  *
  * Exit code 0 → all assertions pass. Non-zero → first failure logged.
@@ -19,13 +18,13 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { blades } from "../client/src/data/blades.ts";
+import { bladeDetailPages } from "../client/src/data/blades.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { ALL_DISPATCHES } from "../client/src/data/news.ts";
 import { mixerParts, mixerCategories } from "../client/src/data/mixerParts.ts";
 import {
-  PUBLISHED_LANG_PREFIXES,
-  isEnglishOnlyProductPath,
+  getPageLanguages,
+  localizedPath,
 } from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -48,12 +47,8 @@ const CANONICAL_ROUTES: string[] = [
   "/news",
   "/privacy-policy",
   "/terms",
-  ...blades.map(b => `/products/${b.id}`),
-  // "custom-profile" is excluded: the server returns 410 for it (/custom is
-  // the live page; this slug was only ever reached via old backlinks)
-  ...BLADE_CATEGORIES.filter(c => c.slug !== "custom-profile").map(
-    c => `/categories/${c.slug}`
-  ),
+  ...bladeDetailPages.map(b => `/products/${b.id}`),
+  ...BLADE_CATEGORIES.map(c => `/categories/${c.slug}`),
   ...ALL_DISPATCHES.map(a => `/news/${a.id}`),
   // mixer wear parts: overview + 2 categories + 11 products (multilingual)
   "/mixer-wear-parts",
@@ -65,13 +60,6 @@ const PRERENDER_LANGS_RAW = (
   process.env.PRERENDER_LANGS ?? "all"
 ).toLowerCase();
 const EXPECT_MULTI_LANG = PRERENDER_LANGS_RAW !== "en";
-
-// English-only routes: no /{lang}/* variants and no hreflang. Mixer wear
-// parts are translated and are checked like any other multilingual route.
-const isNewsRoute = (r: string) => r === "/news" || r.startsWith("/news/");
-const isLegalRoute = (r: string) => r === "/privacy-policy" || r === "/terms";
-const isEnglishOnlyRoute = (r: string) =>
-  isNewsRoute(r) || isLegalRoute(r) || isEnglishOnlyProductPath(r);
 
 const failures: string[] = [];
 
@@ -114,7 +102,7 @@ function assertFile(route: string, label: string): void {
   }
   // SEO essentials (Task 3.4):
   //   <html lang="..."> must match the route's language.
-  //   hreflang link tags must exist for all 5 supported languages
+  //   hreflang link tags must exist for all published languages
   //     plus an x-default entry. Match by attribute value rather than
   //     fragile substring so attribute order doesn't matter.
   const htmlLangRe = /<html[^>]*\blang="([a-z]{2})"/;
@@ -127,27 +115,19 @@ function assertFile(route: string, label: string): void {
     );
   }
 
-  // English-only routes intentionally carry no hreflang tags.
-  if (!isEnglishOnlyRoute(route)) {
-    const hreflangValues = [...content.matchAll(/hreflang="([a-z-]+)"/g)].map(
-      m => m[1]
-    );
-    const REQUIRED_HREFLANGS = [
-      "en",
-      "es",
-      "fr",
-      "ru",
-      "vi",
-      "ar",
-      "x-default",
-    ];
-    for (const required of REQUIRED_HREFLANGS) {
-      if (!hreflangValues.includes(required)) {
-        failures.push(
-          `[${label}] hreflang="${required}" missing in "${route}"`
-        );
-      }
-    }
+  const languages = getPageLanguages(route);
+  const expectedHreflangs =
+    languages.length > 1
+      ? [...languages, ...(languages.includes("en") ? ["x-default"] : [])]
+      : [];
+  const actualHreflangs = [...content.matchAll(/hreflang="([a-z-]+)"/g)].map(
+    match => match[1]
+  );
+  if (
+    JSON.stringify(actualHreflangs.sort()) !==
+    JSON.stringify(expectedHreflangs.sort())
+  ) {
+    failures.push(`[${label}] incorrect hreflang languages in "${route}"`);
   }
 }
 
@@ -163,31 +143,25 @@ if (!fs.existsSync(DIST_DIR)) {
 }
 
 // 1. English routes — always required.
+let expected = 0;
 for (const route of CANONICAL_ROUTES) {
+  if (!getPageLanguages(route).includes("en")) continue;
   assertFile(route, "en");
+  expected++;
 }
 
 // 2. Per-language routes — required when EXPECT_MULTI_LANG.
-//    English-only routes (news, mixer, legal) are skipped.
+//    English-only routes are skipped.
 if (EXPECT_MULTI_LANG) {
-  for (const lang of PUBLISHED_LANG_PREFIXES) {
-    for (const route of CANONICAL_ROUTES) {
-      if (isEnglishOnlyRoute(route)) continue;
-      const localized = route === "/" ? `/${lang}` : `/${lang}${route}`;
-      assertFile(localized, lang);
+  for (const route of CANONICAL_ROUTES) {
+    for (const lang of getPageLanguages(route).filter(lang => lang !== "en")) {
+      assertFile(localizedPath(route, lang), lang);
+      expected++;
     }
   }
 }
 
 // 3. Summary.
-const multiLangRouteCount = CANONICAL_ROUTES.filter(
-  r => !isEnglishOnlyRoute(r)
-).length;
-const expected = EXPECT_MULTI_LANG
-  ? CANONICAL_ROUTES.length +
-    multiLangRouteCount * PUBLISHED_LANG_PREFIXES.length
-  : CANONICAL_ROUTES.length;
-
 if (failures.length === 0) {
   console.log(`[verify] OK — ${expected} prerendered HTML files validated`);
   process.exit(0);

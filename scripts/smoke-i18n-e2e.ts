@@ -8,12 +8,9 @@
  * Coverage per sampled route:
  *   - <html lang="…"> matches the URL prefix
  *   - canonical points at the localized URL
- *   - 5 hreflang alternates + x-default present
- *   - sitemap.xml lists the route in all 5 languages with xhtml:link
- *   - For ES/FR (fully translated): page contains at least one Spanish/
- *     French token that does NOT appear in the English baseline
- *   - For RU/VI (stub fallback): page still renders English data —
- *     surfaced as PASS so we don't block on pending translation work
+ *   - hreflang alternates include all published languages and x-default
+ *   - sitemap.xml includes each published home page and xhtml:link alternates
+ *   - each localized page includes at least one expected navigation token
  *
  * Run: pnpm test:e2e
  */
@@ -26,7 +23,10 @@ import { PUBLISHED_LANGS, type Lang } from "../client/src/lib/i18n.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.resolve(__dirname, "../dist/public");
-const SITEMAP = path.resolve(__dirname, "../client/public/sitemap.xml");
+const SITEMAP = path.join(DIST, "sitemap.xml");
+const buildLangs: Lang[] = process.env.PRERENDER_LANGS?.toLowerCase() === "en"
+  ? ["en"]
+  : PUBLISHED_LANGS;
 
 // A sampling of high-value routes — Home, products listing, product detail,
 // category page, contact, plus one industry page. Add/remove sparingly.
@@ -34,7 +34,11 @@ const SAMPLE_ROUTES = [
   "/",
   "/products",
   "/products/granulator-blades",
-  "/categories/granulator-blades",
+  "/categories/shredder-blades",
+  "/categories/paper-cutting-knives",
+  "/categories/other-custom-blades",
+  "/products/corrugated-slotter-knives",
+  "/products/box-slotting-knives",
   "/plastic-industry",
   "/contact",
   "/about",
@@ -46,12 +50,14 @@ const LANG_TRANSLATED_TOKENS: Record<Lang, string[]> = {
   en: [],
   es: ["Productos", "Inicio", "Industria", "Cuchillas"],
   fr: ["Produits", "Accueil", "Lames", "Industrie"],
-  ru: ["Продукция", "Главная"],
+  ru: ["Промышленные ножи", "Продукция", "Главная"],
   // Navbar-rendered tokens ("Industrial Blades" / "Mixer Wear Parts") — present
   // on every page via the sitewide nav, unlike the old "Sản phẩm"/"Trang chủ"
   // picks which only ever appeared in breadcrumbs on product/category pages.
   vi: ["Lưỡi Dao Công Nghiệp", "Phụ Tùng Hao Mòn"],
   ar: ["الشفرات الصناعية", "قطع تآكل الخلاطات"],
+  pt: ["Lâminas industriais", "Peças de desgaste para misturadores"],
+  tr: ["Endüstriyel bıçaklar", "Mikser aşınma parçaları"],
 };
 
 interface Failure {
@@ -111,11 +117,11 @@ function checkRouteLang(route: string, lang: Lang): void {
     failures.push({ route, lang, reason: "no canonical link" });
   }
 
-  // 3. hreflang alternates — must include all 5 + x-default
+  // 3. hreflang alternates — include every published language and x-default.
   const hreflangs = new Set(
     [...html.matchAll(/hreflang="([a-z-]+)"/g)].map(m => m[1])
   );
-  for (const required of ["en", "es", "fr", "ru", "vi", "ar", "x-default"]) {
+  for (const required of [...PUBLISHED_LANGS, "x-default"]) {
     if (!hreflangs.has(required)) {
       failures.push({
         route,
@@ -135,6 +141,14 @@ function checkRouteLang(route: string, lang: Lang): void {
         lang,
         reason: `no expected ${lang} token (${tokens.slice(0, 2).join("/")}…) found`,
       });
+    }
+  }
+  if (lang !== "en" && /^\/(?:products|categories)\//.test(route)) {
+    const heading = (markup: string) => markup.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]
+      .replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+    const english = fs.readFileSync(fileFor(route, "en"), "utf8");
+    if (!heading(html) || heading(html) === heading(english)) {
+      failures.push({ route, lang, reason: "missing translated catalog heading" });
     }
   }
 }
@@ -181,22 +195,18 @@ function checkSitemap(): void {
 // ── Run ────────────────────────────────────────────────────────────────────
 
 console.log(
-  `[smoke-e2e] ${SAMPLE_ROUTES.length} routes × ${PUBLISHED_LANGS.length} langs + sitemap`
+  `[smoke-e2e] ${SAMPLE_ROUTES.length} routes × ${buildLangs.length} langs + sitemap`
 );
 
 for (const route of SAMPLE_ROUTES) {
-  for (const lang of PUBLISHED_LANGS) {
+  for (const lang of buildLangs) {
     checkRouteLang(route, lang);
   }
 }
 
 checkSitemap();
 
-const checks =
-  SAMPLE_ROUTES.length * PUBLISHED_LANGS.length * 4 + // 4 assertions per (route, lang)
-  PUBLISHED_LANGS.length + // sitemap home per lang
-  2; // sitemap xhtml namespace + alternate count
-console.log(`[smoke-e2e] ran ${checks} assertions, ${failures.length} failed`);
+console.log(`[smoke-e2e] checked ${SAMPLE_ROUTES.length * buildLangs.length} pages and the sitemap, ${failures.length} failures`);
 
 if (failures.length === 0) {
   console.log("[smoke-e2e] ✓ ALL PASS");

@@ -8,8 +8,8 @@
  * Same contract as gen-mixer-locale.ts: the English object is cloned
  * structurally, so ids, slugs, links, image paths, OEM brand names, steel
  * grades and dimension tables cannot drift between locales — only prose
- * changes. Strings missing from a dictionary fall through to English and are
- * reported, so a half-finished language is visible rather than silent.
+ * changes. Missing dictionary entries are reported before replacing any
+ * published files so an incomplete dictionary cannot undo existing translations.
  *
  * Used for languages translated by hand (see PENDING_LANGS in lib/i18n.ts).
  * Languages translated through the DeepL pipeline go via translate-data.ts
@@ -26,7 +26,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { blades } from "../client/src/data/blades.ts";
+import { blades } from "./catalog/translation-source.ts";
 import { BLADE_CATEGORIES } from "../client/src/data/blade-categories.ts";
 import { SEO_CONFIG } from "../client/src/utils/seo-config.ts";
 
@@ -64,6 +64,14 @@ const SKIP_KEYS = new Set([
   "badgeColor",
   "compatibleMachines",
   "relatedBladeIds",
+  "productIds",
+  "layout",
+  "oemExcludeList",
+  "itemNo",
+  "grade",
+  "hardness",
+  "src",
+  "heroImage",
   "isFeatured",
   "offers",
   "catalogUrl",
@@ -122,7 +130,7 @@ interface WalkResult {
 
 /** A string worth translating: contains letters, not a bare code. */
 function isTranslatable(value: string): boolean {
-  return /\p{L}{2,}/u.test(value);
+  return !/^SR\d{6}$/.test(value) && /\p{L}{2,}/u.test(value);
 }
 
 function localize(node: unknown, dict: Dict, result: WalkResult): unknown {
@@ -167,6 +175,7 @@ function header(source: string, lang: string): string {
 function generate(lang: LangCode, only: string[]): void {
   const dict = loadDict(lang);
   const result: WalkResult = { sources: [], missing: [] };
+  const outputs = new Map<string, string>();
 
   for (const t of TARGETS) {
     if (!only.includes(t.key)) continue;
@@ -178,7 +187,7 @@ function generate(lang: LangCode, only: string[]): void {
       `export const ${t.exportName}: ${t.typeName} = ${JSON.stringify(translated, null, 2)};`,
       "",
     ].join("\n");
-    fs.writeFileSync(path.join(OUT_DIR, t.outFile(lang)), body, "utf-8");
+    outputs.set(path.join(OUT_DIR, t.outFile(lang)), body);
   }
 
   const done = result.sources.length - result.missing.length;
@@ -188,7 +197,7 @@ function generate(lang: LangCode, only: string[]): void {
   console.log(
     `  ${lang}: ${done}/${result.sources.length} translated (${pct}%)` +
       (result.missing.length
-        ? ` — ${result.missing.length} falling back to English`
+        ? ` — ${result.missing.length} missing dictionary entries`
         : "")
   );
   const missFile = path.join(DICT_DIR, `_missing.${lang}.json`);
@@ -202,9 +211,12 @@ function generate(lang: LangCode, only: string[]): void {
       ),
       "utf-8"
     );
-  } else if (fs.existsSync(missFile)) {
+    throw new Error(`Complete ${missFile} before replacing ${lang} catalog files.`);
+  }
+  if (fs.existsSync(missFile)) {
     fs.rmSync(missFile);
   }
+  for (const [file, body] of outputs) fs.writeFileSync(file, body, "utf-8");
 }
 
 function extract(): void {

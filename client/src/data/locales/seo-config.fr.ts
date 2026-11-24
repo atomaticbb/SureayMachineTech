@@ -1,8 +1,4 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    seo-config.ts
-// Target:    fr
-// Generated: 2026-05-21T13:16:54.139Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (fr).
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
@@ -14,14 +10,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "fabricant de lames industrielles, couteaux sur mesure pour machines, lames de broyeurs, couteaux de granulateurs, lames de découpeuses, lames de cisailles, lames sur mesure pour équipementiers (OEM)",
     ogImage: "/images/hero/homehero.webp",
-  },
-  products: {
-    title:
-      "Produits lames industrielles | Outils de coupe de précision | Sureay",
-    description:
-      "Consultez notre gamme complète de lames de coupe industrielles : couteaux rotatifs de refente, lames de broyeur, couteaux de broyeur, lames de scie circulaire pour bûches de papier tissu, et couteaux de cisaille à métaux. Métallurgie personnalisée, du D2 au carbure. Tolérances de l'ordre du micron.",
-    keywords:
-      "catalogue de lames industrielles, outils de coupe, lames rotatives, couteaux de broyeur, lames de granulateur",
   },
   about: {
     title: "A propos des lames Sureay - Fabricant de lames certifié ISO 9001",
@@ -45,6 +33,14 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "technologie des lames, actualités de la fabrication, guides techniques, informations sur la coupe industrielle",
   },
+  products: {
+    title:
+      "Produits lames industrielles | Outils de coupe de précision | Sureay",
+    description:
+      "Parcourez notre gamme complète de lames de coupe industrielles : couteaux de refendeuse rotatifs, lames de broyeur, couteaux de granulateur, lames de scie circulaire pour couper des rouleaux de papier ouate et couteaux de cisaille à métaux. Métallurgie sur mesure du D2 au carbure. Tolérances au niveau du micron.",
+    keywords:
+      "catalogue de lames industrielles, outils de coupe, lames rotatives, couteaux de broyeur, lames de granulateur",
+  },
   plasticIndustry: {
     title:
       "Lames pour le recyclage du plastique | Couteaux pour broyeurs et granulateurs | Sureay",
@@ -63,237 +59,272 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   paperIndustry: {
     title:
-      "Lames pour la transformation du papier | Scies à bûches et couteaux de guillotine pour papier tissus | Sureay",
+      "Lames de conversion de papier | Scies à rouleaux de papier et couteaux guillotine | Bien sûr",
     description:
-      "Lames de haute précision pour la transformation du papier de soie et l'impression commerciale : Ø610 lames de scie circulaire pour bûches avec polissage miroir, couteaux de coupe guillotine. Revêtement TiN disponible pour les environnements humides. Coupes ultra-propres, pas de production de poussière.",
+      "Lames de haute précision pour la transformation du papier ouate et l'impression commerciale : lames circulaires Ø610 pour couper les rouleaux avec polissage miroir, couteaux de coupe guillotine. Revêtement TiN disponible pour les environnements humides. Coupes ultra-propres, zéro génération de poussière.",
     keywords:
-      "tissu lames de scie circulaire pour bûches, couteaux pour la coupe du papier, lames de guillotine, lames pour la transformation du papier et l'industrie de l'impression",
+      "lames de scie circulaire pour couper des rouleaux de papier ouate, couteaux à papier, lames de guillotine, transformation du papier, lames pour l'industrie de l'imprimerie",
   },
   "rotary-slitter-knives": {
-    title: "Couteaux rotatifs pour films, rubans et emballages",
+    title: "Couteaux de refente pour films et rubans d’emballage souple",
     description:
-      "Lames et couteaux de refendeuse rotative rectifiés avec précision à ±0,002 mm. D2, M2 HSS, ASP23 PM steel & carbure de tungstène options. Profilés de cisaillement, d'incision et de rasage pour les films BOPP, BOPET, CPP, les bandes PSA et les non-tissés. OEM pour Tidland, Kampf, Atlas & Dusenbery - devis direct usine.",
-    keywords:
-      "lames de découpe rotatives, lames de découpe couteaux rotatifs de refente, lames de découpe carbure de tungstène, couteaux de découpe circulaires, lames de découpe, lames de découpe rotatives, couteaux de découpe industriels, couteaux de découpe de films, lames de découpe BOPP, couteaux de découpe de bandes PSA, lames de découpe de produits de transformation",
+      "Lames de rechange pour découpeuses de films BOPP, PET, CPP et de rubans adhésifs. Lames supérieures et inférieures en acier à outils ou en carbure, avec alésages et profils sur mesure selon les plans.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives.webp",
   },
-  "tungsten-carbide-slitter-knives": {
-    title: "Couteaux de refendage carbure de tungstène | Lames carbure",
+  "rotary-slitter-knives-paper": {
+    title: "Lames de découpe pour papier d'Papier tissu et papier kraft",
     description:
-      "Couteaux de refendage en carbure de tungstène offrant 10 à 30× la durée de vie de tranchant de l'acier à outils. Nuances micrograin YG6/YG8 et ISO K10/K20, rectifiées à ±0,002 mm, avec rapports d'essai.",
-    keywords:
-      "couteaux de refendage carbure, lames de refendage carbure de tungstène, couteaux carbure, lames carbure de tungstène, couteaux de coupe carbure, couteaux de refendage YG6, lames carbure YG8, carbure K10 refendage, lames carbure micrograin",
+      "Lames de découpeuses pour le papier Papier tissue, le papier kraft et le papier couché. Associez des lames supérieures bombées ou plates à des lames inférieures correspondantes en acier à outils ou à pointe en carbure.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
   },
   "metal-foil-strip-slitter-knives": {
     title:
-      "Couteaux à refendre les feuilles d'aluminium et les bandes métalliques | ASP23/ASP52 PM Steel, ±0.001 mm | Sureay",
+      "Lames de découpe pour feuilles de cuivre et d’aluminium | Sur mesure",
     description:
-      "Couteaux de refendage ASP23/ASP52 PM en acier à outils et carbure de tungstène pour les centres de service des métaux. tolérance d'épaisseur de ±0,001 mm, Ra ≤0,02 μm pour la découpe sans bavure de feuilles d'aluminium, de bandes de cuivre, d'acier inoxydable et d'acier au silicium. Vente en gros directe de l'usine - faible MOQ, spécifications sur demande.",
-    keywords:
-      "couteaux pour feuille d'aluminium, lames de découpe carbure de tungstène, couteaux pour feuille de métal, couteaux pour découpe ASP23, découpeuse en acier au silicium, arbre de découpe en bandes, lames pour découpe de bobines, découpeuse de bandes de métal, lames de découpe ASP52",
+      "couteaux rotatifs de refentes de rechange pour les feuilles de cuivre et d’aluminium. Options en carbure, en acier à outils et en acier PM, avec alésages, largeurs et entretoises adaptées sur mesure.",
+    ogImage:
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
   },
   "twin-shaft-blades-recycling": {
-    title: "Lames de déchiqueteuse à double arbre | D2/SKD11 OEM Fit",
+    title: "lames de broyeur à double arbre | Plastiques et déchets mixtes",
     description:
-      "Lames de rotor en D2/SKD11 et en carbure de chrome pour le broyage à deux arbres des déchets solides municipaux, des plastiques et du bois. Géométrie en ciseaux entrecroisés, 3-12 griffes, alésages en fil-EDM. Remplacement OEM pour Weima, Untha, SSI et Vecoplan. Vente en gros directe de l'usine - faible MOQ, spécifications personnalisées et devis rapide.",
-    keywords:
-      "lames de rotor en carbure de chrome, arbre double lames de broyeur, D2 lames de broyeur, couteaux de broyeur MSW, lames de recyclage plastique, broyeur SKD11, lames à double arbre, vente en gros de lames de rotor en carbure de chrome, broyeur à rotor à ciseaux entrecroisés",
+      "lames de broyeurs de rechange à double arbre pour les plastiques, les palettes en bois et les déchets mixtes. Options D2, SKD11 et 42CrMo, avec crochets et alésages sur mesure.",
+    ogImage:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
   },
   "multi-shaft-blades-metal": {
-    title:
-      "Lames de broyeur de métaux - H13 pour la ferraille et les déchets électroniques",
+    title: "lames de broyeur pour ferraille | H13 et 42CrMo",
     description:
-      "ZGTR0zGTR multi-arbre H13/42CrMo à fort impact pour le traitement de la ferraille, des VHU et des déchets électroniques. Résistance HRC 50-54 - optimisée pour survivre aux chocs catastrophiques. Alésages cannelés lourds Wire-EDM pour les plateformes Shred-Tech, Forus et Arjes.",
-    keywords:
-      "métal lames de broyeur, lames de ferraille, couteaux de broyeur de déchets électroniques, H13 lames de broyeur, broyeur de VHU, lames de recyclage de métaux",
+      "Choisissez des lames en acier H13 ou 42CrMo pour les broyeurs à plusieurs arbres destinés au traitement des véhicules hors d'usage, des déchets électroniques ou des appareils électroménagers. Précisez le profil du crochet et l'alésage cannelé ou claveté.",
+    ogImage: "/images/products/shredder-blades/shredder-blades-05.webp",
   },
   "twin-shaft-blades-battery": {
     title:
-      "Lames de déchiqueteuse pour batterie Li-Ion avec une précision de ±0,02 mm",
+      "lames de broyeur pour le recyclage des batteries | Pièces de rechange sur mesure",
     description:
-      "ZGTR0zGTR de précision à deux arbres pour le pré-broyage des batteries lithium-ion des véhicules électriques. parallélisme de l'épaisseur de ±0,02 mm pour un jeu de cisaillement constant sur les feuilles de cuivre et d'aluminium. Traitements de surface résistants à la corrosion pour les environnements à gaz inerte LiPF6.",
-    keywords:
-      "batterie lames de broyeur, lames de recyclage de batteries au lithium, broyeur de batteries EV, traitement de batteries Li-ion, pré-broyage de batteries",
+      "Lames de cisailles rotatives de rechange pour les pré-broyeurs destinés au recyclage des batteries. Profils de lames et interfaces d'arbres sur mesure, fabriqués selon des plans homologués.",
+    ogImage: "/images/products/shredder-blades/shredder-blades.webp",
   },
   "tissue-log-saw-blades": {
-    title: "Lames de scie à bûches de papier tissu | D2 Ø610-1200mm | Sureay",
+    title: "Lames de scie pour rouleaux de papier tissue | Ø610–1000 mm",
     description:
-      "Papier tissu lames de scie circulaire pour bûches Ø610-1200mm, D2 HRC 58-60, poli miroir, ≤0.15mm faux-rond. Revêtement TiN. Convient à Perini, PCMC, Gambini. Devis rapide.",
-    keywords:
-      "tissu lames de scie circulaire pour bûches, tissu lames de scie circulaire pour bûches, lames de scie circulaire pour bûches, lames de scie à papier, scies circulaires de conversion, lames de scie D2",
+      "Coupez des rouleaux de papier hygiénique et d'essuie-tout avec des lames D2, Cr12MoV ou M2 HSS. Les diamètres répertoriés vont de 610 à 1 000 mm, avec des tailles personnalisées jusqu'à 1 200 mm.",
+    ogImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
   },
-  "granulator-blades": {
-    title: "Lames de broyeur de plastique et couteaux de broyeur | OEM",
-    description:
-      "D2, SKD-11 & Cr12MoV plastique lames de granulateur - couteaux du rotor et du stator rectifiés à ±0,02 mm. HRC 58-62, remplacement OEM pour les broyeurs Cumberland, Herbold et Rapid. Approvisionnement direct de l'usine, vente en gros possible. Envoyer le numéro de modèle pour un devis précis.",
-    keywords:
-      "plastique lames de granulateur, lames de granulateur, lames de granulateur fournisseurs, couteaux de broyeur de plastique, couteaux de granulateur, lames de stator de rotor, lames de recyclage PET",
-  },
-  "tire-shredder-blades": {
+  "nonwoven-log-saw-blades": {
     title:
-      "Lames de broyeur de pneus | Cisaille rotative à 3 griffes pour TDF | Sureay",
+      "Lames de scie pour rouleaux de non-tissé | Lames de rechange sur mesure",
     description:
-      "Broyeur rotatif à 3 griffes de première qualité lames de cisaille pour le broyage primaire des pneus et la production de TDF. Nuances d'acier Cru-Wear (PGK) et A8 modifié. tolérance d'épaisseur de ±0,05 mm. Adapté en OEM à Barclay, CM, SSI, Untha, Granutech-Saturn. Broyage de pneus entiers et OTR.",
-    keywords:
-      "tire lames de broyeur, couteaux de broyeur de pneus, lames de cisaille rotatif, lames TDF, couteaux de recyclage de pneus, broyeur à 3 griffes, Barclay lames de broyeur",
+      "Lames circulaires de rechange D2 pour rouleaux de coupe pour rouleaux de coupe transversale de tissu non tissé. Alésages personnalisés, modèles de trous de montage et profils de lame réalisés selon le dessin de votre couteau.",
+    ogImage: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
   },
   "paper-cutting-blades": {
-    title: "Lames de coupe de papier et de guillotine de précision",
+    title: "Lames de coupe-papier | Couteaux à guillotine en papier",
     description:
-      "ZGTR0zGTR professionnel pour l'impression commerciale et la transformation du papier. Meule de précision avec une tolérance de 0,01 mm. Coupes nettes et sans bavures sur le papier couché, le carton et les matériaux multicouches. Large compatibilité avec les machines.",
-    keywords:
-      "lames de coupe du papier, lames de guillotine, lames d'impression, couteaux de guillotine à papier",
-  },
-  "three-knife-trimmer-blades": {
-    title: "Lames de coupe et couteaux de rechange pour Combi Head | Sureay",
-    description:
-      "Lames de coupe à trois couteaux HSS & TC, couteaux de rechange pour tête combinée. OEM pour Müller Martini, Heidelberg, Kolbus. Jeux avant et latéraux disponibles.",
-    keywords:
-      "lames de massicot à trois couteaux, couteaux de rechange pour tête combi, couteaux de remplacement Müller Martini, couteaux de massicot pour reliure, lames de massicot HSS, lames de massicot TC, couteau de massicot Heidelberg, set de lames de massicot Kolbus",
-    ogImage:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      "Commandez des couteaux guillotine à papier incrustés HSS ou à pointe de carbure pour les coupe-empiles. Les longueurs répertoriées sont de 450 à 2 050 mm, avec des longueurs personnalisées et des trous de montage disponibles.",
+    ogImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
   },
   "single-shaft-shredder-blades": {
-    title:
-      "Plaquettes pour rotors à arbre unique | Couteaux Crown Cutter | Sureay",
+    title: "Couteaux de rotor de broyeur à arbre unique | Inserts carrés",
     description:
-      "Inserts de rotor de broyeur à arbre unique à fort impact pour un broyage agressif. Profils concaves, en couronne et en V. 4 arêtes de coupe utilisables par plaquette. Traitement cryogénique profond. Pour les plastiques encombrants, les conteneurs à parois épaisses et les déchets solides municipaux.",
-    keywords:
-      "plaquettes de rotor à arbre unique, couteaux de rotor de broyeur, couteaux de couronne, plaquettes de rotor carrées, concaves lames de broyeur, indexables à 4 voies",
+      "Choisissez des plaquettes de rotor carrées ou des couronnes de coupe concaves en DC53 , D2 ou Cr12MoV. Adaptez la face du couteau et le siège du boulon à votre broyeur à arbre unique.",
+    ogImage: "/images/products/shredder-blades/single-shredder-blades-06.webp",
   },
   "single-shaft-bed-knives": {
-    title: "Couteaux de stator et de lit pour broyeurs à arbre unique",
+    title:
+      "Couteaux fixes de stator pour broyeurs mono-arbre (contre-couteaux)",
     description:
-      "Couteaux de stator D2/DC53 (couteaux de contre-lit) pour déchiqueteurs à arbre unique. Rectitude ≤0,05 mm/m, longueurs sur mesure jusqu'à 3500 mm. Remplacement OEM pour Vecoplan, Weima, Lindner et Zerma. Directement de l'usine - envoyez le dessin ou le modèle de la machine pour un devis rapide.",
-    keywords:
-      "couteau de stator, couteaux de stator, couteaux de lit à arbre unique, couteau de lit de broyeur, contre-couteaux de broyeur, couteau de lit de remplacement, couteau de lit D2, lame de stator de broyeur, couteau de lit Vecoplan",
+      "Couteaux fixes fixes pour broyeurs à arbre unique dans les longueurs indiquées de 279 à 3 000 mm. Commandez des bords droits ou dentelés et des fentes de montage adaptées à votre dessin.",
+    ogImage: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+  },
+  "granulator-blades": {
+    title: "Couteaux de granulateur en plastique | Pales de rotor et de lit",
+    description:
+      "Remplacez le rotor et les couteaux fixes sur les granulateurs traitant du PET, PP, HDPE ou PVC. Lames de granulateur en plastique dans des longueurs répertoriées de 90 à 1 178 mm, avec des modèles de boulons personnalisés.",
+    ogImage: "/images/products/granulator-blades/granulator-blades-06.webp",
   },
   "metal-coil-slitting-knives": {
-    title:
-      "Couteaux de précision pour le refendage de bobines | Lames pour le refendage de métaux",
+    title: "Couteaux à refendre les bobines d'acier | Outillage personnalisé",
     description:
-      "Jeux de lames de refendage supérieures et inférieures de première qualité pour le traitement des bobines de métal. Tolérance d'épaisseur ±0,001 mm, parallélisme 0,002 mm. Outillage complet avec entretoises et anneaux en caoutchouc. Pour les bobines d'acier, d'aluminium, de cuivre et galvanisées.",
-    keywords:
-      "couteaux à refendre les métaux, lames à refendre les bobines, coupeuses rotatives de métaux, coupeuses à fond supérieur, couteaux à refendre l'acier",
+      "Couteaux de refendage de bobines d'acier de remplacement pour l'acier au carbone, l'acier inoxydable et l'acier à haute résistance. Cisailles rotatives sur mesure, entretoises et bagues de dévêtissage selon dessin.",
+    ogImage: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
   },
   "metal-shear-knives": {
-    title: "Cisaille à métaux et couteaux guillotine robustes",
+    title: "Alligator lames de cisaille pour ferraille",
     description:
-      "Couteaux de précision pour cisailles à guillotine et à ferraille en aciers à outils D2, S1 (6CrW2Si) et H13. Parallélisme rectifié à ±0,05 mm pour un cisaillement sans bavure de l'acier doux, des tôles inoxydables et de la ferraille lourde. Longueurs d'une seule pièce jusqu'à 6000 mm.",
-    keywords:
-      "couteaux de cisaille à métaux, guillotine lames de cisaille, couteaux de cisaille à acier, hydraulique lames de cisaille, ferraille lames de cisaille, D2 lames de cisaille",
+      "Remplacez la lame mobile supérieure ou le couteau fixe inférieur de votre cisaille crocodile. Les longueurs répertoriées sont de 320 à 508 mm, avec les options d'acier S1 , 6CrW2Si et H13 .",
+    ogImage: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
   },
-  "metal-cold-saw-blades": {
-    title: "Lames de scie à froid HSS & TCT | Coupe de tubes métalliques",
+  "guillotine-shear-blades": {
+    title: "Lames de cisailles guillotines pour tôles",
     description:
-      "Lames de scie circulaire à froid M2, M35 Cobalt HSS et TCT pour la coupe de tubes d'acier, d'acier inoxydable et de profilés d'aluminium. Norme DIN 1837/1840. Face frontale sans bavure, pas de HAZ. Revêtements PVD TiN/TiAlN disponibles. Adaptation OEM pour Kaltenbach, Bewo, MEP.",
-    keywords:
-      "lames de scie à froid, lames de scie à froid HSS, scie à froid M35 cobalt, lames de scie à froid TCT, scie circulaire à froid pour métaux, lames de coupe pour tubes, fabricant de lames de scie à froid",
+      "Découper la tôle avec lames de cisaille guillotine D2 , 6CrW2Si ou 9CrSi . Commandez des couteaux supérieurs et inférieurs en ensembles monoblocs ou segmentés avec des modèles de montage personnalisés.",
+    ogImage: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
+  },
+  "three-knife-trimmer-blades": {
+    title: "Lames de massicot trilatéral pour la finition des livres",
+    description:
+      "Coupez le devant, la tête et le pied des livres reliés avec des couteaux HSS ou en carbure. Commandez une lame de rechange ou un ensemble assorti avec un couteau avant et deux couteaux latéraux.",
+    ogImage:
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
   },
   "lithium-battery-slitting-knives": {
-    title:
-      "Couteaux à refendre en carbure pour batteries | Feuilles d'électrodes",
+    title: "Couteaux à fendre les électrodes de batterie | Paires de carbure",
     description:
-      "Couteaux à refendre carbure de tungstène à finition miroir pour feuilles d'électrodes de batteries lithium-ion. Ra ≤0,05μm sur le bord, tolérance de ±0,001mm. Zéro micro-bavure sur les feuilles Al/Cu.",
-    keywords:
-      "carbure de tungstène lames de découpe, couteaux de découpe pour batteries, couteaux pour batteries au lithium, découpeur de feuilles d'électrodes, lames de découpe en carbure, carbure couteaux circulaires",
+      "Couteaux de refendage en carbure à grain fin pour anodes et cathodes de batteries au lithium revêtues. Commandez des couteaux rotatifs supérieurs et inférieurs assortis avec DLC ou TiN en option.",
+    ogImage:
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
   },
   "corrugated-slitter-scorer-blades": {
     title: "Lames de découpeuse-scanneuse pour carton ondulé | BHS & Fosber",
     description:
-      "Lames de découpe minces carbure de tungstène solides pour les lignes de production de carton ondulé à sec. Coupe sans écrasement. Adaptation OEM pour BHS, Fosber, Marquip. Couteaux de rainurage et d'inciseur en stock.",
-    keywords:
-      "lames de découpe pour carton ondulé, lames de découpe carbure de tungstène, lames de découpe, découpeuse BHS, couteaux de découpe Fosber, couteaux pour carton ondulé",
+      "Lames de coupe en carbure pour lignes sèches d'onduleuses, avec configurations de référence BHS et Fosber . Alésages et modèles de fixation personnalisés réalisés sur dessin.",
+    ogImage:
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+  },
+  "tire-shredder-blades": {
+    title: "Couteaux de cisailles rotatives pour le broyage primaire des pneus",
+    description:
+      "Source de coupe A8 ou 42CrMo modifiés pour le déchiquetage primaire des pneus. Faites correspondre le nombre de crochets, l’épaisseur de la fraise et l’alésage de l’arbre à votre cisaille rotative.",
+    ogImage: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
   },
   "nonwoven-slitter-knives": {
     title: "Couteaux de découpe pour non-tissés | PP Spunbond & SMS",
     description:
-      "Couteaux circulaires M2 HSS & D2 pour PP spunbond, meltblown & SMS nonwoven à 200-500 m/min. La géométrie du râteau anti-fragmentation élimine la déchirure des fibres sur les lignes d'hygiène, médicales et de filtration. Adaptation OEM aux principaux systèmes de transformation des non-tissés - demander un devis.",
-    keywords:
-      "coupeuse de non-tissés, lames de coupeuses de non-tissés, couteaux de coupeuses de non-tissés, couteaux de coupeuses de spunbond, lames de coupe de meltblown, couteaux de non-tissés médicaux",
-  },
-  "scrap-chopper-blades": {
-    title:
-      "Lames de broyeur de ferraille - S7 et H13 pour les lignes de bobines",
-    description:
-      "Lames de broyeur de ferraille robustes en acier à outils S7 et H13 pour les lignes de refendage de métaux. conception indexable à 4 arêtes, incrustation de carbure en option. Haute résistance aux chocs.",
-    keywords:
-      "lames de broyeur de ferraille, lames pour le traitement des bobines, broyeur de ferraille, couteaux de broyeur pour ligne de refendage, lames de broyeur S7",
-  },
-  "rotary-slitter-knives-paper": {
-    title: "Couteaux coupe-papier | Papier tissu & Kraft | D2, M2 HSS | Sureay",
-    description:
-      "Couteaux de refendage par cisaillement et par écrasement pour le papier tissu, le kraft et le papier couché. D2, M2 HSS et 52100 à ±0,002mm d'épaisseur. Compatible avec Atlas, Kampf, Goebel IMS, Perini.",
-    keywords:
-      "lames de découpe de papier, couteaux de découpe de papier, couteaux de découpe de carton ondulé, lames de transformation de papier, découpe de papier kraft, lames de découpe de scie à bûches, paires de cisailles à papier, découpe sans poussière de fibres",
-  },
-  "guillotine-shear-blades": {
-    title:
-      "Lames de cisailles à guillotine | D2 & 6CrW2Si pour cisailles hydrauliques | Sureay",
-    description:
-      "Guillotine D2 (Cr12MoV), 6CrW2Si & 9CrSi lames de cisaille rectifiée à ±0,05 mm de parallélisme sur toute la longueur. Ensembles supérieurs et inférieurs pour machines jusqu'à 16 mm × 4000 mm. Compatible OEM avec TRUMPF, AMADA, LVD, Durma & Bystronic.",
-    keywords:
-      "guillotine lames de cisaille, hydraulique lames de cisaille, D2 lames de cisaille, 6CrW2Si couteaux de cisaille, tôle lames de cisaille, lames de rechange AMADA, couteaux de cisaille TRUMPF",
-  },
-  "wood-chipper-blades": {
-    title:
-      "Lames de broyeur à bois | D2 & TCT Couteaux de broyeur à tambour et à disque | Sureay",
-    description:
-      "Couteaux de déchiqueteuse à tambour et à disque D2, Cr12MoV et TCT, HRC 57-62, tolérance d'épaisseur de ±0,05 mm. Adaptation OEM pour Bandit, Vermeer, Morbark, Peterson, Doppstadt et Jenz. 8-12 cycles de réaffûtage.",
-    keywords:
-      "lames de broyeur de bois, lames de broyeur à tambour, lames de broyeur à disque, lames de broyeur forestier, lames de broyeur de biomasse, lames de broyeur D2, lames de broyeur TCT, lames de broyeur Vermeer, lames de broyeur Bandit",
-  },
-  "wood-chipper-anvils": {
-    title:
-      "Enclumes et contre-couteaux pour déchiqueteuses à bois | D2 - A8 Modifié | Ensembles assortis | Sureay",
-    description:
-      "Enclumes de broyeurs de bois (contre-couteaux / couteaux) en acier D2, Cr12MoV et A8 modifié, rectifiées avec précision. HRC 54-60 trempé à cœur. Parallélisme de ±0,05 mm. Adaptation OEM pour Bandit, Vermeer, Morbark, Timberwolf et Schliesing. Jeux de lames et d'enclumes assortis disponibles.",
-    keywords:
-      "enclume de déchiqueteuse, contre-couteau de déchiqueteuse, couteau de déchiqueteuse, remplacement d'enclume de déchiqueteuse, enclume Bandit, contre-couteau Vermeer, couteau de déchiqueteuse Morbark, enclume de déchiqueteuse à tambour, contre-couteau de déchiqueteuse à disque, ensemble d'enclumes à lames appariées",
-  },
-  "special-shaped-blades": {
-    title:
-      "Lames de forme spéciale sur mesure | Tout profil, tout alliage | Sureay",
-    description:
-      "Lames industrielles de forme spéciale et de profil personnalisé fabriquées à partir de dessins DXF/DWG/STEP ou d'échantillons physiques. D2, H13, PM-HSS et carbure. Tolérances de ±0,02 mm. Toute industrie, toute géométrie.",
-    keywords:
-      "lames sur mesure, couteaux de forme spéciale, lames de profil sur mesure, lames sur mesure OEM, couteaux industriels sur mesure, fabrication de lames DXF",
+      "Couteaux de rechange pour non-tissés spunbond, meltblown et SMS. Options M2 HSS , D2 ou carbure, avec profils personnalisés et revêtements spécifiques à l'application.",
+    ogImage:
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
   },
   "bottom-grooved-anvil-knives": {
-    title:
-      "Couteaux à enclume rainurés dans leur partie inférieure | Paires d'enclumes de cisailles | Sureay",
+    title: "Couteaux à enclume à rainure inférieure | Anneaux de remplacement",
+    description:
+      "Couteaux à enclume rainurés de remplacement et anneaux coupants pour les coupe-bandes. Options en acier ou en carbure, avec profils de rainures, alésages et dispositifs de verrouillage personnalisés.",
+    ogImage: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
   },
-  "continuous-melt-filter-scraper-blades": {
-    title: "Lames de raclage et plaques filtrantes pour filtres à fusion",
+  "tungsten-carbide-slitter-knives": {
+    title: "couteaux à découper carbure de tungstène | Tailles personnalisées",
+    description:
+      "Couteaux de rechange solides et à pointe en carbure pour la transformation et le traitement des métaux. Dimensions, alésages et profils de coupe personnalisés adaptés à l'application.",
+    ogImage:
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+  },
+  "scrap-chopper-blades": {
+    title: "Lames de hachoir à ferraille | Couteaux à bobine personnalisés",
+    description:
+      "Lames de hachoir de rechange personnalisées pour garniture de bord de ligne de bobine. Couteaux S7 , H13 ou incrustés de carbure à agencement de coupe droit, incliné ou profilé.",
+    ogImage: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
   },
   "strand-pelletizer-rotors": {
-    title: "Rotors de granulation à brins pour lignes de compoundage",
-  },
-  "groove-bottom-knives": {
-    title: "Couteaux inférieurs multi-rainures | Bagues de coupe | Sureay",
+    title:
+      "Rotors de coupe pour pelletiseur à brins | Remplacement personnalisé",
     description:
-      "Bagues de couteau inférieur multi-rainures pour refendage par cisaillement. Pas dès 5 mm, DE jusqu à Φ406 mm, alésage arbre pneumatique ou vis de pression.",
-    keywords:
-      "couteau inférieur multi-rainures, bagues de coupe inférieures, couteaux inférieurs rainurés, bague d écartement lisse, pas de rainure",
+      "Rotors de granulation à brins de rechange avec bords coupants hélicoïdaux ou droits. Options HSS et carbure, avec profils de dents et extrémités d'arbre personnalisés.",
+    ogImage: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+  },
+  "continuous-melt-filter-scraper-blades": {
+    title:
+      "Lames de grattoir pour filtre à fusion | Remplacements personnalisés",
+    description:
+      "Lames de grattoir de rechange pour filtres continus en matière plastique. Options D2 , H13 et carbure, avec profils personnalisés et détails de montage selon dessin.",
+    ogImage: "/images/products/blades/scraper-blades.webp",
+  },
+  "shredder-screens": {
+    title:
+      "Écrans de déchiquetage de remplacement | Paniers et assiettes personnalisés",
+    description:
+      "Grilles de rechange pour broyeurs à arbre unique, avec ouvertures de 8 à 80 mm. Paniers et assiettes personnalisés adaptés au modèle de trou, à la courbure et au montage.",
+    ogImage:
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
+  },
+  "cutter-compactor-blades": {
+    title: "Lames de compacteur de coupe | Couteaux de rotor et de stator",
+    description:
+      "Préparez le film PE ou PP et les flocons de PET pour l'extrusion avec des couteaux de rotor et de stator de remplacement en construction D2 , M2 HSS ou à pointe en carbure.",
+    ogImage:
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+  },
+  "die-face-cutting-knives": {
+    title:
+      "Couteaux de découpe à matrice | Lames de remplacement personnalisées",
+    description:
+      "Couteaux de granulation à face filière de rechange pour systèmes sous-marins, à anneau d'eau et à face chaude. Fentes de lame personnalisées, profils de bord et ensembles assortis au dessin.",
+    ogImage:
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+  },
+  "special-shaped-blades": {
+    title: "Lames industrielles de forme spéciale | Profils personnalisés",
+    description:
+      "Couteaux de machine de remplacement à profil personnalisé en D2 , H13 , PM- HSS ou carbure. Contours, arêtes de coupe et caractéristiques de montage spécifiques à la pièce réalisés selon le dessin.",
+    ogImage: "/images/products/blades/special-shaped-knife.webp",
+  },
+  "wood-chipper-blades": {
+    title: "Couteaux pour déchiqueteuses de bois à tambour et à disque",
+    description:
+      "Couteaux mobiles pour broyeurs de branches à tambour et à disque dans les longueurs indiquées de 230 à 600 mm. Spécifiez l'acier de déchiqueteuse, D2 ou un bord à pointe de carbure, ainsi que votre modèle de biseau et de boulon.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+  },
+  "wood-chipper-anvils": {
+    title: "Enclumes et contre-couteaux pour déchiqueteuses de bois",
+    description:
+      "Remplacez le contre-couteau fixe en face des couteaux mobiles du broyeur. Les enclumes de déchiqueteuse à bois sont répertoriées dans des longueurs de 185 à 400 mm, avec des fentes de montage personnalisées.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
   },
   "slitter-rewinder-bottom-knives": {
-    title: "Couteaux inférieurs pour refendeuses-enrouleuses | Sureay",
+    title:
+      "Couteaux inférieurs pour refendeuse et enrouleuse | Coupe et double tranchant",
     description:
-      "Couteaux inférieurs massifs et à plaquettes carbure pour enrouleuses papier. Poli miroir, sans bavure. Tailles Φ250–Φ254, alésages sur mesure.",
-    keywords:
-      "couteaux inférieurs enrouleuse, couteau inférieur de refendage, couteaux refendeuse papier, couteaux Jagenberg",
+      "Couteaux à coupelle, à double tranchant et à fond d'anneau remplaçable pour enrouleurs de papier, en diamètre extérieur 70–300 mm. Spécifiez un alésage claveté, un montage sur bride ou une arête de coupe en carbure.",
+    ogImage:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
   },
-  "box-slotting-knives": {
-    title: "Couteaux à rainurer pour boîtes | Carbure GS05U et GS20U | Sureay",
+  "corrugated-slotter-knives": {
+    title: "Couteaux de slotter pour carton ondulé | Mâles et femelles",
     description:
-      "Couteaux à rainurer carbure pour carton gris sur boîtes rigides et coffrets. Paires gauche/droite, nuances GS05U et GS20U, cinq tailles de stock.",
-    keywords:
-      "couteaux à rainurer boîtes, rainurage en V carton gris, couteaux boîtes rigides, couteau rainurer carbure",
+      "Arcs mâles unis ou dentés et contre-couteaux femelles pour le rainurage des rabats ondulés. Commandez des lames de remplacement adaptées à la largeur de votre fente et à votre schéma de montage.",
+    ogImage: "/images/products/slitter-detail/box-slotting-knives-white.webp",
   },
   "paper-straw-slitting-blades": {
-    title: "Lames pour pailles en papier | Carbure anti-adhérent | Sureay",
+    title: "Lames de coupe de paille de papier | Couteaux de remplacement",
     description:
-      "Lames circulaires carbure anti-adhérentes pour pailles en papier et bâtonnets filtres. Φ88–Φ100, 0,15–0,30 mm. Résistent à l accumulation de colle.",
-    keywords:
-      "lames pailles en papier, lame circulaire anti-adhérente, lames bâtonnet filtre, coupe de pailles en papier",
+      "couteaux circulaires de remplacement pour couper et couper les pailles en papier. Options en carbure ou M2 HSS , alésages et profils personnalisés et revêtements sélectionnés pour la gamme.",
+    ogImage: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+  },
+  "groove-bottom-knives": {
+    title: "Couteaux inférieurs multi-rainures | Anneaux coupants inférieurs",
+    description:
+      "Anneaux de coupe multi-rainures pour le refendage par cisaillement. Pas de rainure de 5 mm et diamètre extérieur jusqu'à 406 mm, avec configurations monobloc et divisées selon dessin.",
+    ogImage: "/images/products/slitter-detail/groove-bottom-knives.webp",
+  },
+  "stationary-scrap-shear-blades": {
+    title: "Lames pour cisailles à ferraille fixes à portique",
+    description:
+      "Commandez des blocs de couteaux mobiles montés sur boulons et des contre-couteaux fixes pour les cisailles à ferraille à portique stationnaires. Choisissez l'acier 1.2746 ou 1.2767 et envoyez votre plan de montage.",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+  },
+  "flying-shear-blades": {
+    title: "Lames de cisailles volantes | Couteaux sur mesure pour laminoirs",
+    description:
+      "Récolte à façon et lames de cisaille volantes pour laminoirs. Couteaux droits ou profilés pour coupe à chaud, à froid ou en barre trempée, fabriqués sur plan.",
+    ogImage: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+  },
+  "paper-sheeter-knives": {
+    title:
+      "Couteaux pour coupeuses de papier en feuilles | Lames de rechange sur mesure",
+    description:
+      "Laminoir de papier de remplacement personnalisé et couteaux à coupe transversale. Bords en acier HSS , PM ou carbure pour bandes de papier et carton, réalisés selon votre profil de montage.",
+    ogImage: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+  },
+  "saddle-stitcher-trimmer-knives": {
+    title: "Lames de coupe trilatérale pour brochures piquées à cheval",
+    description:
+      "Remplacez les couteaux avant ou latéraux sur les lignes d'agrafage à cheval pour les livrets et les magazines. Voir les tailles de référence DS 304 / Tempo et les options HSS ou à pointe en carbure.",
+    ogImage:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+  },
+  "box-slotting-knives": {
+    title: "Couteaux en carbure pour rainurage en V du carton gris",
+    description:
+      "Couteaux à rainurer en carbure pour rainures en V sur panneaux gris sur les lignes de boîtes rigides et cadeaux. Paires gauche et droite assorties en GS05U et GS20U , avec cinq tailles répertoriées.",
+    ogImage: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
   },
 };

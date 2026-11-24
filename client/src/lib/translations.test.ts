@@ -34,7 +34,7 @@ describe("translate", () => {
   it("returns the English value when lang is en", () => {
     expect(translate("nav.home", "en")).toBe("Home");
     expect(translate("nav.products", "en")).toBe("Products");
-    expect(translate("cta.getQuote", "en")).toBe("GET A QUOTE");
+    expect(translate("cta.getQuote", "en")).toBe("Request a quote");
   });
 
   it("returns the translated value for all populated dictionaries", () => {

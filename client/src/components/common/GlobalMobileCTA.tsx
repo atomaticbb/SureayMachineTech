@@ -4,6 +4,7 @@
  * Mounted once in App.tsx so every page gets a contact entry point on mobile.
  */
 
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { gtagEvent } from "@/lib/gtag";
 import { useTranslation } from "@/lib/useTranslation";
@@ -11,8 +12,17 @@ import { useTranslation } from "@/lib/useTranslation";
 const WA_PHONE = "8618005550657";
 
 export default function GlobalMobileCTA() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [location, navigate] = useLocation();
+  const barRef = useRef<HTMLDivElement>(null);
+  const [barHeight, setBarHeight] = useState(80);
+  useEffect(() => {
+    const bar = barRef.current;
+    if (!bar) return;
+    const observer = new ResizeObserver(() => setBarHeight(bar.offsetHeight));
+    observer.observe(bar);
+    return () => observer.disconnect();
+  }, [location]);
 
   // Hide on admin screens
   if (location.startsWith("/admin")) return null;
@@ -39,10 +49,10 @@ export default function GlobalMobileCTA() {
   return (
     <>
       {/* Spacer: in-flow placeholder so the fixed bar never covers the footer (SSR-safe) */}
-      <div className="lg:hidden h-[72px]" aria-hidden="true" />
+      <div className="lg:hidden" style={{ height: barHeight }} aria-hidden="true" />
 
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-2xl">
-        <div className="px-4 py-3 flex items-center gap-2">
+      <div ref={barRef} className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-none">
+        <div className={`pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] flex items-stretch gap-2 ${lang === "en" && location === "/" ? "px-6 sm:px-9" : "px-4"}`}>
           {/* WhatsApp */}
           <a
             href={waUrl}
@@ -54,7 +64,7 @@ export default function GlobalMobileCTA() {
               })
             }
             aria-label={t("globalCta.whatsappAriaLabel")}
-            className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#25D366] text-white font-black text-sm tracking-widest rounded-none hover:bg-[#1ebe5d] transition-colors duration-200 shrink-0"
+            className="flex items-center justify-center gap-2 px-3 py-3.5 border border-[#001f4d] bg-white text-[#001f4d] font-black text-sm tracking-normal rounded-none hover:bg-slate-50 transition-colors duration-200 shrink-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +81,7 @@ export default function GlobalMobileCTA() {
           {/* Request Quote */}
           <button
             onClick={handleQuote}
-            className="flex-1 text-center px-6 py-3.5 bg-[#001f4d] text-white font-black text-sm tracking-widest rounded-none hover:bg-[#001f4d]/90 transition-colors duration-200"
+            className="flex-1 min-w-0 break-words [overflow-wrap:anywhere] text-center px-3 py-3.5 bg-[#001f4d] text-white font-black text-sm tracking-normal rounded-none hover:bg-[#001f4d]/90 transition-colors duration-200"
           >
             {t("cta.requestQuote")}
           </button>

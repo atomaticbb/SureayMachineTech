@@ -1,265 +1,327 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blade-categories.ts
-// Target:    ru
-// Generated: 2026-05-22T04:25:06.937Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (ru).
 import type { BladeCategoryMeta } from "../blade-categories";
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
-    "slug": "slitter-knives",
-    "category": "slitter_knives",
-    "title": "Ножи и дисковые ножи",
-    "shortName": "Ножи для резки",
-    "tagline": "Ротационные ножи с прецизионной заточкой для пленки, бумаги и металлической фольги",
-    "heroImage": "/images/categories/slitter-knives-nav.webp",
-    "description": "ротационные ножи для продольной резки разработаны для срезания, зачистки и бритвенной резки гибкой упаковочной пленки, бумаги, нетканых материалов и металлической фольги. Допуск по толщине ±0,002 мм, биение ≤0,02 мм T.I.R., доступны из стали M2 HSS, D2, ASP23 PM и твердого карбида с дополнительными покрытиями TiN, DLC и Teflon.",
-    "specItems": [
-      {
-        "label": "Допуск по толщине",
-        "value": "±0,002 мм"
-      },
-      {
-        "label": "T.I.R. Runout",
-        "value": "≤0,02 мм"
-      },
-      {
-        "label": "Материалы",
-        "value": "M2 HSS - D2 - ASP23 PM - Твердый сплав"
-      },
-      {
-        "label": "Покрытия",
-        "value": "TiN - DLC - тефлон"
-      },
-      {
-        "label": "Режимы резки",
-        "value": "Ножницы - Острие - Бритва"
-      },
-      {
-        "label": "Приложения",
-        "value": "Пленка - Бумага - Нетканые материалы - Фольга"
-      }
-    ]
+    slug: "slitter-knives",
+    category: "slitter_knives",
+    title: "Ножи для продольной резки и дисковые ножи",
+    seoTitle: "Ротационные ножи и дисковые лезвия для продольной резки",
+    shortName: "Ножи для продольной резки",
+    tagline:
+      "Ножи для продольной резки полотна, обработки рулонов металла и переработки гофрокартона",
+    heroImage: "/images/categories/slitter-knives-nav.webp",
+    description:
+      "Изучите ножи для продольной резки пленки, бумаги, нетканых материалов, медной и алюминиевой фольги, стальных рулонов и батарей. Сравните типы лезвий, нижние кольца и твердосплавные варианты.",
   },
   {
-    "slug": "shredder-blades",
-    "category": "shredder_blades",
-    "title": "Лезвия и вставки для шредеров",
-    "shortName": "Лезвия для шредера",
-    "tagline": "Двухвальные, одновальные и режущие инструменты для измельчения шин",
-    "heroImage": "/images/categories/shredder-blades-nav.webp",
-    "description": "Сверхпрочный ножи для шредера для линий по переработке пластика, металла, шин и аккумуляторов. Кованый сплав D2/SKD11/Cr12MoV с криогенным и вакуумным термическая обработка для экстремальной ударопрочности и износостойкости. Подходит для двухвальных и одновальных шредерных платформ.",
-    "specItems": [
-      {
-        "label": "Материалы",
-        "value": "D2 - SKD11 - Cr12MoV"
-      },
-      {
-        "label": "Твердость",
-        "value": "58-62 HRC"
-      },
-      {
-        "label": "Термообработка",
-        "value": "Криогенные + вакуумные"
-      },
-      {
-        "label": "Платформы",
-        "value": "Двухвальный - Одновальный"
-      },
-      {
-        "label": "Приложения",
-        "value": "Пластик - Металл - Шина - Аккумулятор"
-      },
-      {
-        "label": "Fit",
-        "value": "Замена оригинального оборудования"
-      }
-    ]
+    slug: "shredder-blades",
+    category: "shredder_blades",
+    title: "Ножи и изнашиваемые детали для шредеров",
+    shortName: "Ножи для шредеров",
+    tagline: "Роторные вставки, стационарные ножи, сита и фрезы на валу",
+    heroImage: "/images/categories/shredder-blades-nav.webp",
+    description:
+      "Выбирайте многовалковые фрезы для общей переработки, металлолома, шин или предварительного измельчения аккумуляторов. Найдите одновальные роторные вставки, стационарные ножи и сита.",
+    selectionGuide: {
+      title: "Руководство по выбору лезвия измельчителя",
+      articles: [
+        {
+          id: "single-shaft-shredder-blade-face-profile-guide",
+          width: 800,
+          height: 800,
+          smallerWidths: [320, 400, 640],
+        },
+        {
+          id: "tire-shredder-blade-wear-steel-cord",
+          width: 2496,
+          height: 1696,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "granulator-rotor-bed-knife-configuration",
+          width: 1672,
+          height: 941,
+          smallerWidths: [400, 640, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "twin-and-multi-shaft-cutters",
+          title: "Многовальные фрезы по применению",
+          description:
+            "Начните с того, что попадает в измельчитель. Затем используйте модель машины и комплект фрез, чтобы определить правильную замену.",
+          productIds: [
+            "twin-shaft-blades-recycling",
+            "multi-shaft-blades-metal",
+            "tire-shredder-blades",
+            "twin-shaft-blades-battery",
+          ],
+        },
+        {
+          id: "single-shaft-parts",
+          title: "Детали одновального измельчителя и гранулятора",
+          description:
+            "Ножи ротора режут неподвижные ножи статора. Экран контролирует, какой материал может выходить из камеры.",
+          productIds: [
+            "single-shaft-shredder-blades",
+            "single-shaft-bed-knives",
+            "shredder-screens",
+            "granulator-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Укажите модель машины, номер детали, сырье и количество. Прикрепите чертеж резака или экрана, если таковой имеется.",
+    },
   },
   {
-    "slug": "granulator-blades",
-    "category": "granulator_blades",
-    "title": "Ножи для грануляторов и дробилок",
-    "shortName": "Ножи для гранулятора",
-    "tagline": "Максимальное качество измельчения, увеличение срока службы",
-    "heroImage": "/images/categories/granulator-blades-nav.webp",
-    "description": "Ножи для гранулятора и дробилки пластика разработаны для линий измельчения. Оптимизированная геометрия граблей сохраняет качество измельчения, снижая нагрузку на двигатель и уменьшая образование пыли. Совместимы с роторными, когтевыми, бункерными и гранулирующими грануляторами.",
-    "specItems": [
-      {
-        "label": "Материалы",
-        "value": "H13 - D2 - M2 HSS - Твердый сплав"
-      },
-      {
-        "label": "Геометрия",
-        "value": "Оптимизированный угол наклона"
-      },
-      {
-        "label": "Машины",
-        "value": "Роторный - Когтевой - Бункер - Гранулирование"
-      },
-      {
-        "label": "Выгода",
-        "value": "Меньшая нагрузка на двигатель - Меньше пыли"
-      },
-      {
-        "label": "Приложения",
-        "value": "Повторное измельчение пластмасс - уменьшение размеров"
-      },
-      {
-        "label": "Регенерируемый",
-        "value": "Да - несколько циклов"
-      }
-    ]
+    slug: "log-saw-blades",
+    category: "log_saw_blades",
+    title:
+      "Дисковые ножи для рулонов санитарно-гигиенической бумаги и нетканых материалов",
+    shortName: "Дисковые ножи для резки рулонов",
+    tagline: "Сменные дисковые ножи по материалу рулона",
+    heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
+    description:
+      "Сравните дисковые ножи для резки рулонов туалетной бумаги, бумажных полотенец и нетканого материала для салфеток. Для подбора ножа укажите материал рулона и модель пилы.",
+    seoTitle:
+      "Дисковые ножи для рулонов санитарно-гигиенической бумаги и нетканых материалов",
+    selectionGuide: {
+      title: "Как выбрать дисковый нож для резки рулонов",
+      articles: [
+        {
+          id: "log-saw-blade-chipping-causes-prevention",
+          width: 1600,
+          height: 878,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "log-saw-blade-bevel-angles",
+          width: 1108,
+          height: 1108,
+          smallerWidths: [320, 400, 480, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "tissue-and-towel-logs",
+          title: "Рулоны туалетной бумаги и бумажных полотенец",
+          productIds: ["tissue-log-saw-blades"],
+        },
+        {
+          id: "nonwoven-logs",
+          title: "Рулоны нетканого полотна и материала для салфеток",
+          productIds: ["nonwoven-log-saw-blades"],
+        },
+      ],
+      quotePrompt:
+        "Укажите модель пилы, материал рулона, диаметр полотна, расположение отверстия и приводного пальца, а также прикрепите чертеж, если таковой имеется.",
+    },
   },
   {
-    "slug": "log-saw-blades",
-    "category": "log_saw_blades",
-    "oemExcludeList": ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
-    "title": "Пильные диски для тиссью и логов",
-    "shortName": "Пильные диски для логов",
-    "tagline": "Ноль пыли. Отрезание салфеток без заусенцев.",
-    "heroImage": "/images/products/blades/tissue-log-saw-blades-05.webp",
-    "description": "Круговой дисковые пилы для логов для линий по переработке тиссью, кухонных полотенец и салфеток. Совместимые с CBN профили с контролируемым биением, антифрикционной обработкой поверхности и геометрией серрейтора, настроенной на чистую перфорацию без пыли на высоких скоростях линии.",
-    "routingCopy": "Два семейства пильных дисков для логов, в зависимости от того, что вы режете. Логи тиссью и полотенец на станках Perini, PCMC, Casmatic, Gambini и Bretting используют тиссью лезвия Ø610–1200 мм. Логи из нетканых материалов и салфеток используют меньшие лезвия Ø350–700 мм с другой фаской. Выберите то, что подходит для вашей линии, или пришлите нам модель станка, и мы подскажем правильный вариант.",
-    "specItems": [
-      {
-        "label": "Профиль",
-        "value": "Совместимые с CBN"
-      },
-      {
-        "label": "Поверхность",
-        "value": "Антифрикционная обработка"
-      },
-      {
-        "label": "Качество резки",
-        "value": "Перфорация без пыли"
-      },
-      {
-        "label": "Скорость",
-        "value": "Оптимизирована для высоких скоростей линии"
-      },
-      {
-        "label": "Приложения",
-        "value": "Салфетка - Кухонное полотенце - Салфетка"
-      },
-      {
-        "label": "Серрация",
-        "value": "Возможна нестандартная геометрия"
-      }
-    ]
+    slug: "shear-blades",
+    category: "shear_blades",
+    title: "Ножи для резки металла на ножницах",
+    seoTitle: "Ножи для резки листового и рулонного металла и металлолома",
+    shortName: "Ножи для резки металла на ножницах",
+    tagline: "Сменные ножи на станции резки металла",
+    heroImage: "/images/categories/shear-blades-nav.webp",
+    description:
+      "Выбирайте гильотины, летучие ножницы и ножи для измельчения лома, а также стационарные ножницы и ножницы для резки из крокодиловой кожи. Совместите положение машины и ножа.",
+    selectionGuide: {
+      title: "Руководство по выбору ножей для резки металла",
+      articles: [
+        {
+          id: "guillotine-shear-blade-clearance-setting",
+          width: 1200,
+          height: 960,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "guillotine-shear-blade-parallelism",
+          image: "/images/news/guillotine-shear-blade-parallelism-cover.webp",
+          width: 990,
+          height: 742,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "metal-shearing",
+          title: "Листовой металл, рулонные линии и прокатные станы",
+          description:
+            "Выбирайте автономные ножи для резки листового металла, летающие ножницы для резки или ножи для обрезки кромок.",
+          productIds: [
+            "guillotine-shear-blades",
+            "flying-shear-blades",
+            "scrap-chopper-blades",
+          ],
+        },
+        {
+          id: "scrap-recycling-shears",
+          title: "Ножницы для переработки лома",
+          description:
+            "Прежде чем выбирать сменный нож, определите ножницы типа «аллигатор» с шарнирными челюстями или стационарные ножницы для лома.",
+          productIds: ["metal-shear-knives", "stationary-scrap-shear-blades"],
+        },
+      ],
+      quotePrompt:
+        "Укажите модель машины, положение лезвия, материал и толщину или размер сечения, а также прикрепите чертеж ножа.",
+    },
   },
   {
-    "slug": "shear-blades",
-    "category": "shear_blades",
-    "title": "Ножницы и гильотинные ножи",
-    "shortName": "Ножи для ножниц",
-    "tagline": "Ножи для гильотинных ножниц, металлические ножи ножницы для резки и наборы для обрезки бумаги",
-    "heroImage": "/images/categories/shear-blades-nav.webp",
-    "description": "Прямые ножницы и ножницы гильотинные ножи для резки металлических листов, гидравлических гильотинных машин, бумажных гильотин и трехножевых обрезчиков. Конструкция кромки с накладкой TCT или биметаллической кромкой с контролируемой плоскостностью торца; поставляются в виде согласованных комплектов для совместимости с OEM-производителями.",
-    "specItems": [
-      {
-        "label": "Строительство краев",
-        "value": "TCT-вставка - Биметаллическая - Твердая быстрорежущая сталь"
-      },
-      {
-        "label": "Плоскостность поверхности",
-        "value": "Сохраняется по всей длине"
-      },
-      {
-        "label": "Формат поставки",
-        "value": "Соответствующие комплекты OEM"
-      },
-      {
-        "label": "Машины",
-        "value": "Гидравлическая гильотина - Ножницы для резки пластин - Трехножевой триммер"
-      },
-      {
-        "label": "Приложения",
-        "value": "Стальной лист - Бумага - Картон - Книжный блок"
-      },
-      {
-        "label": "Регенерируемый",
-        "value": "Да"
-      }
-    ]
+    slug: "paper-cutting-knives",
+    category: "paper_cutting",
+    title: "Ножи для резки и подрезки бумаги",
+    shortName: "Ножи для резки бумаги",
+    tagline:
+      "Ножи для стопок бумаги, рулонной пленки и послепечатной обработки",
+    heroImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
+    description:
+      "Выберите ножи для одноножевой бумагорезальной машины, поперечной резки бумаги на листы, трёхсторонней обрезки книжных блоков или линии шитья внакидку. Сверьте узел резки, позицию ножа и чертёж машины.",
+    selectionGuide: {
+      title: "Руководство по выбору ножа для резки бумаги",
+      articles: [
+        {
+          id: "paper-guillotine-knives-selection-maintenance-guide",
+          width: 1200,
+          height: 537,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "custom-length-guillotine-paper-cutter-blades",
+          width: 1122,
+          height: 1402,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "paper-cutting",
+          title: "Резка стопки бумаги и рулонная бумага",
+          description:
+            "Отличие резки стопки бумаги с зажимом от поперечной резки непрерывного полотна на листы.",
+          productIds: ["paper-cutting-blades", "paper-sheeter-knives"],
+        },
+        {
+          id: "print-finishing",
+          title: "Отделка книг и печати",
+          description:
+            "Выберите комплект ножей для машины трёхсторонней обрезки или линии шитья внакидку. Уточните передние, боковые, верхние и нижние позиции.",
+          productIds: [
+            "three-knife-trimmer-blades",
+            "saddle-stitcher-trimmer-knives",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Укажите модель и версию машины, положения ножей, характеристики бумаги или картона, а также оригинальные чертежи ножей.",
+    },
   },
   {
-    "slug": "cold-saw-blades",
-    "category": "cold_saw_blades",
-    "title": "Пильные диски для холодной резки металла",
-    "shortName": "Пильные диски для холодной резки",
-    "tagline": "Круглые ножи из быстрорежущей стали и твердого сплава для холодной резки стали и труб",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    "description": "Диски для холодной циркулярной пилы для резки стальных труб, цельного прутка и конструкционных профилей без заусенцев. Поставляются в вариантах HSS-E (M35/M42) и TCT (с наконечником карбид вольфрама) с геометрией формы стружки, настроенной на сухие, заливные охлаждающие жидкости и условия резки MQL.",
-    "specItems": [
-      {
-        "label": "Материалы",
-        "value": "HSS-E M35/M42 - твердосплавные наконечники TCT"
-      },
-      {
-        "label": "Качество резки",
-        "value": "Без заусенцев, без зоны термического воздействия"
-      },
-      {
-        "label": "Условия резки",
-        "value": "Сухой - Заливная СОЖ - MQL"
-      },
-      {
-        "label": "Приложения",
-        "value": "Стальная труба - Цельный пруток - Конструкционный профиль"
-      },
-      {
-        "label": "Формат поставки",
-        "value": "Замена OEM или изготовление на заказ OD/ID/шаг"
-      },
-      {
-        "label": "Регенерируемый",
-        "value": "Да - несколько циклов"
-      }
-    ]
+    slug: "other-custom-blades",
+    category: "custom_profile",
+    title: "Прочие ножи и ножи на заказ",
+    shortName: "Прочие и на заказ",
+    tagline: "Режущие детали для конкретного процесса и индивидуальные профили",
+    heroImage: "/images/products/blades/special-shaped-knife.webp",
+    description:
+      "Найдите лезвия режущего уплотнителя, скребки для фильтров расплава, ножи для гранулирования и индивидуальные профили по типу процесса или детали.",
+    selectionGuide: {
+      title: "Руководство по выбору технологического ножа",
+      articles: [
+        {
+          id: "cutter-compactor-blade-film-vs-flake-wear",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "how-to-spec-die-face-cutting-knives",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+          width: 1280,
+          height: 720,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "products",
+          title: "Прочие ножи и ножи на заказ",
+          productIds: [
+            "cutter-compactor-blades",
+            "continuous-melt-filter-scraper-blades",
+            "strand-pelletizer-rotors",
+            "die-face-cutting-knives",
+            "special-shaped-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Укажите процесс, модель машины, положение детали и размеры чертежа или образца.",
+    },
   },
   {
-    "slug": "custom-profile",
-    "category": "custom_profile",
-    "title": "Нестандартные и специальные лезвия",
-    "shortName": "Нестандартные лезвия",
-    "tagline": "Любая геометрия - любой сплав - из DXF, DWG или образца",
-    "heroImage": "/images/products/blades/special-shaped-knife.webp",
-    "description": "Промышленные лезвия с нестандартным профилем и специальной формы, изготовленные по вашим чертежам DXF/DWG/STEP или физическим образцам. Варианты D2, H13, PM-HSS и твердого карбида с допусками до ±0,02 мм - любой профиль, любая отрасль."
+    slug: "wood-chipper-blades",
+    category: "wood_chipper",
+    title: "Ножи и контрножи для рубительных машин",
+    shortName: "Ножи для рубительных машин",
+    tagline: "Подвижные ножи и стационарные контрножи",
+    heroImage:
+      "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
+    description:
+      "Найдите движущиеся ножи измельчителя и стационарные наковальни для барабанных и дисковых измельчителей древесины. Сравните их роли, затем сопоставьте замену с машиной.",
+    seoTitle: "Ножи и контрножи для барабанных и дисковых рубительных машин",
+    selectionGuide: {
+      title: "Руководство по выбору ножа для измельчения древесины",
+      articles: [
+        {
+          id: "wood-chipper-blade-wear-patterns",
+          width: 1149,
+          height: 766,
+          smallerWidths: [320, 400, 640, 800],
+        },
+        {
+          id: "wood-chipper-knife-sharpening-guide",
+          width: 1536,
+          height: 1024,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "moving-chipper-knives",
+          title: "Передвижные ножи измельчителя",
+          productIds: ["wood-chipper-blades"],
+        },
+        {
+          id: "stationary-anvils",
+          title: "Стационарные наковальни",
+          productIds: ["wood-chipper-anvils"],
+        },
+      ],
+      quotePrompt:
+        "Укажите модель и серийный номер измельчителя, тип барабана или диска, положение ножа или упора, а также чертеж или размеры образца.",
+    },
   },
-  {
-    "slug": "wood-chipper-blades",
-    "category": "wood_chipper",
-    "title": "Ножи для измельчения древесины",
-    "shortName": "Ножи для измельчения древесины",
-    "tagline": "Ножи для барабанных и дисковых дробилок для лесного хозяйства, биомассы и переработки древесины",
-    "heroImage": "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
-    "description": "Сверхпрочные барабанные и дисковые ножи для измельчителей из стали с твердосплавными напайками D2, Cr12MoV и TCT. Вакуумная термообработка до HRC 57-62 с глубокой криогенной обработкой. Прецизионная шлифовка с допуском по толщине ±0,05 мм обеспечивает чистую и равномерную геометрию стружки.",
-    "specItems": [
-      {
-        "label": "Материалы",
-        "value": "Высокоуглеродистая сталь - D2/Cr12MoV - Твердосплавные наконечники TCT"
-      },
-      {
-        "label": "Твердость",
-        "value": "HRC 55-58 (стандарт) - HRC 58-62 (D2) - HRA 89-91 (TCT)"
-      },
-      {
-        "label": "Допуск по толщине",
-        "value": "±0,05 мм"
-      },
-      {
-        "label": "Приложения",
-        "value": "Барабанные измельчители - Дисковые измельчители - Измельчители биомассы из цельного дерева"
-      },
-      {
-        "label": "Совместимость с OEM",
-        "value": "Бандит - Вермер - Морбарк - Петерсон - Допштадт - Йенц"
-      },
-      {
-        "label": "Регенерируемый",
-        "value": "Да - 8-12 циклов (сквозная закалка)"
-      }
-    ]
-  }
 ];

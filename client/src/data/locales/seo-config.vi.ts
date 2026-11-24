@@ -1,8 +1,4 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    seo-config.ts
-// Target:    vi
-// Generated: 2026-05-24T14:10:57.490Z
-// Provider:  google
+// Generated from the English industrial blade catalog (vi).
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
@@ -14,13 +10,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "nhà sản xuất lưỡi dao công nghiệp, lưỡi dao máy theo yêu cầu, lưỡi dao máy nghiền, lưỡi dao máy nghiền hạt, lưỡi dao máy cắt dọc, lưỡi dao cắt, lưỡi dao OEM theo yêu cầu",
     ogImage: "/images/hero/homehero.webp",
-  },
-  products: {
-    title: "Sản phẩm lưỡi công nghiệp | Dụng cụ cắt chính xác | Sureay",
-    description:
-      "Duyệt qua toàn bộ dòng sản phẩm lưỡi cắt công nghiệp của chúng tôi: dao cắt rotary, dao máy cắt, dao tạo hạt, lưỡi cưa cuộn khăn giấy và dao cắt kim loại. Luyện kim tùy chỉnh từ D2 đến cacbua. Dung sai ở cấp độ micron.",
-    keywords:
-      "danh mục lưỡi dao công nghiệp, dụng cụ cắt, lưỡi quay, dao cắt tài liệu, dao máy nghiền",
   },
   about: {
     title:
@@ -45,6 +34,13 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "công nghệ lưỡi cắt, tin tức sản xuất, hướng dẫn kỹ thuật, hiểu biết sâu sắc về cắt công nghiệp",
   },
+  products: {
+    title: "Sản phẩm lưỡi công nghiệp | Dụng cụ cắt chính xác | Sureay",
+    description:
+      "Duyệt qua toàn bộ dòng sản phẩm lưỡi cắt công nghiệp của chúng tôi: dao xén quay, lưỡi cắt giấy, dao tạo hạt, lưỡi cưa tròn để cắt cuộn giấy tissue và dao cắt kim loại. Luyện kim tùy chỉnh từ D2 đến cacbua. Dung sai ở cấp độ micron.",
+    keywords:
+      "danh mục lưỡi dao công nghiệp, dụng cụ cắt, lưỡi quay, dao cắt tài liệu, dao máy nghiền",
+  },
   plasticIndustry: {
     title: "Lưỡi tái chế nhựa | Dao tạo hạt & Máy hủy tài liệu | Sureay",
     description:
@@ -60,225 +56,263 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
       "dao rạch kim loại, máy chém dao cắt thép, gia công cuộn, cắt thép, lưỡi chế tạo kim loại",
   },
   paperIndustry: {
-    title: "Lưỡi chuyển đổi giấy | Máy cưa cuộn & Dao chém | Sureay",
+    title:
+      "Lưỡi chuyển đổi giấy | Máy cưa cuộn giấy & Dao chém | Chắc chắn rồi",
     description:
-      "Lưỡi dao có độ chính xác cao để chuyển đổi giấy lụa và in ấn thương mại: Ø610 lưỡi cưa cuộn với chất đánh bóng gương, dao cắt chém. Lớp phủ TiN có sẵn cho môi trường ẩm ướt. Vết cắt siêu sạch, không tạo bụi.",
+      "Lưỡi dao có độ chính xác cao để chuyển đổi giấy tissue và in ấn thương mại: Lưỡi tròn Ø610 để cắt cuộn với chất đánh bóng gương, dao cắt chém. Lớp phủ TiN có sẵn cho môi trường ẩm ướt. Vết cắt siêu sạch, không tạo bụi.",
     keywords:
-      "khăn giấy lưỡi cưa cuộn, dao cắt giấy, dao cắt giấy, chuyển đổi giấy, lưỡi dao ngành in",
+      "lưỡi cưa tròn dùng để cắt cuộn giấy tissue, dao cắt giấy, lưỡi chém, chuyển đổi giấy, lưỡi dao ngành in",
   },
   "rotary-slitter-knives": {
-    title: "Dao xén quay cho màng, băng & bao bì",
+    title: "Dao xẻ dọc màng và băng dùng trong bao bì mềm",
     description:
-      "Dao và lưỡi máy xẻ quay được mài chính xác đến ±0,002mm. Tùy chọn D2, M2 HSS, ASP23 PM & hợp kim cacbua vonfram. Các biên dạng cắt, khía & dao cạo cho màng BOPP, BOPET, CPP, băng PSA & vải không dệt. OEM phù hợp với Tidland, Kampf, Atlas & Dusenbery — báo giá trực tiếp tại nhà máy.",
-    keywords:
-      "lưỡi xén quay, dao cắt rotary, lưỡi xén hợp kim cacbua vonfram, dao xén tròn, lưỡi xén, lưỡi xén quay, dao xén công nghiệp, dao xén màng, lưỡi xén BOPP, dao xén băng PSA, lưỡi chuyển đổi",
+      "Dao cắt thay thế cho màng BOPP, PET, CPP và băng dính. Dao trên và dưới bằng thép công cụ hoặc cacbua, có lỗ và biên dạng tùy chỉnh để vẽ.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives.webp",
   },
-  "tungsten-carbide-slitter-knives": {
-    title: "Dao xẻ hợp kim cứng | Lưỡi xẻ carbide vonfram",
+  "rotary-slitter-knives-paper": {
+    title: "Dao xén giấy Khăn giấy & Kraft",
     description:
-      "Dao xẻ hợp kim cứng có tuổi thọ lưỡi gấp 10-30 lần thép dụng cụ. Mác hạt siêu mịn YG6/YG8 và ISO K10/K20, mài chính xác ±0,002 mm, kèm báo cáo kiểm định.",
-    keywords:
-      "dao xẻ hợp kim cứng, lưỡi dao carbide vonfram, dao xẻ carbide, lưỡi xẻ hợp kim cứng, dao cắt hợp kim cứng, dao xẻ YG6, lưỡi carbide YG8, carbide K10, hợp kim cứng hạt siêu mịn",
+      "Lưỡi cắt giấy dùng cho Khăn giấy , giấy kraft và giấy tráng. Ghép nối các loại dao có đĩa hoặc dao có đáy phẳng với các loại dao có đáy phù hợp được làm bằng thép công cụ hoặc kết cấu có đầu bằng cacbua.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
   },
   "metal-foil-strip-slitter-knives": {
-    title: "Dao xẻ lá nhôm & kim loại | Thép ASP23/ASP52 PM, ±0,001mm | Sureay",
+    title: "Dao cắt lá đồng và nhôm | Phong tục",
     description:
-      "Thép công cụ ASP23/ASP52 PM & dao xẻ hợp kim cacbua vonfram dành cho các trung tâm dịch vụ kim loại. Dung sai độ dày ± 0,001mm, Ra được tráng gương 0,02μm đối với việc rạch nhóm không có gờ trên lá nhôm, dải đồng, thép không gỉ và thép silicon. Bán buôn trực tiếp tại nhà máy - MOQ thấp, yêu cầu thông số kỹ thuật.",
-    keywords:
-      "dao cắt lá nhôm, lưỡi cắt hợp kim cacbua vonfram, dao cắt lá kim loại, dao cắt lá ASP23, máy xén thép silicon, giàn rạch gang, lưỡi cắt cuộn, máy xén dải kim loại, lưỡi cắt giấy ASP52",
+      "dao cắt rotary thay thế cho lá đồng và nhôm. Các tùy chọn cacbua, thép công cụ và thép PM, với các lỗ, chiều rộng và miếng đệm phù hợp tùy chỉnh.",
+    ogImage:
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
   },
   "twin-shaft-blades-recycling": {
-    title: "Lưỡi máy hủy tài liệu trục đôi | Phù hợp với OEM D2/SKD11",
+    title: "dao máy cắt trục đôi | Nhựa & Chất thải hỗn hợp",
     description:
-      "D2/SKD11 & lưỡi rôto cacbua crom dùng để băm nhỏ MSW, nhựa và gỗ hai trục. Hình học cắt kéo giao nhau, 3–12 vấu, lỗ khoan dây EDM. Thay thế OEM cho Weima, Untha, SSI & Vecoplan. Bán buôn trực tiếp tại nhà máy - moq thấp, thông số kỹ thuật tùy chỉnh và báo giá nhanh.",
-    keywords:
-      "lưỡi rôto cacbua crom, trục đôi dao máy cắt, D2 dao máy cắt, dao hủy tài liệu MSW, lưỡi tái chế nhựa, máy hủy SKD11, lưỡi trục đôi, bán buôn lưỡi rôto cacbua crom, máy hủy rôto cắt kéo giao nhau",
+      "dao máy cắt trục đôi thay thế cho pallet nhựa, pallet gỗ và rác thải hỗn hợp. Tùy chọn D2 , SKD11 và 42CrMo với móc và lỗ khoan tùy chỉnh.",
+    ogImage:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
   },
   "multi-shaft-blades-metal": {
-    title: "Lưỡi hủy tài liệu kim loại | H13 cho phế liệu và rác thải điện tử",
+    title: "dao máy cắt kim loại phế liệu | H13 & 42CrMo",
     description:
-      "dao máy cắt đa trục H13/42CrMo có tác động cao để xử lý kim loại phế liệu, ELV và chất thải điện tử. Độ bền HRC 50–54 được tối ưu hóa để chịu được tải trọng va đập thảm khốc. Các lỗ khoan Wire-EDM có rãnh nặng dành cho nền tảng Shred-Tech, Forus và Arjes.",
-    keywords:
-      "kim loại dao máy cắt, lưỡi kim loại phế liệu, dao hủy rác thải điện tử, H13 dao máy cắt, máy hủy ELV, lưỡi tái chế kim loại",
+      "Nguồn máy cắt H13 hoặc 42CrMo dành cho máy hủy nhiều trục xử lý các phương tiện, phế liệu điện tử hoặc thiết bị hết hạn sử dụng. Chỉ định biên dạng móc và lỗ khoan có chốt hoặc có khóa.",
+    ogImage: "/images/products/shredder-blades/shredder-blades-05.webp",
   },
   "twin-shaft-blades-battery": {
-    title: "Lưỡi máy hủy tài liệu pin Li-Ion | Độ chính xác ± 0,02mm",
+    title: "Pin Tái Chế dao máy cắt | Thay thế tùy chỉnh",
     description:
-      "Trục đôi dao máy cắt chính xác để băm nhỏ trước pin lithium-ion EV. Độ dày song song ±0,02mm để tạo ra độ hở cắt nhất quán trên lá đồng và nhôm. Xử lý bề mặt chống ăn mòn cho môi trường khí trơ LiPF6.",
-    keywords:
-      "pin dao máy cắt, lưỡi tái chế pin lithium, máy hủy pin EV, xử lý pin Li-ion, băm nhỏ pin",
+      "Máy cắt quay thay thế cho máy hủy tài liệu tái chế pin. Cấu hình máy cắt tùy chỉnh và giao diện trục được thực hiện theo bản vẽ đã được phê duyệt.",
+    ogImage: "/images/products/shredder-blades/shredder-blades.webp",
   },
   "tissue-log-saw-blades": {
-    title: "Lưỡi cưa cuộn khăn giấy | D2 Ø610–1200mm | Sureay",
+    title: "Lưỡi cưa cắt cuộn giấy tissue | Ø610–1000 mm",
     description:
-      "Khăn giấy lưỡi cưa cuộn Ø610–1200mm, D2 HRC 58–60, bóng gương, độ lệch ≤0,15mm. phủ TiN. Phù hợp với Perini, PCMC, Gambini. Báo giá nhanh.",
-    keywords:
-      "khăn giấy lưỡi cưa cuộn, khăn giấy lưỡi cưa cuộn, lưỡi cưa cuộn, lưỡi cưa giấy, cưa đĩa chuyển đổi, lưỡi cưa D2",
+      "Cắt cuộn giấy vệ sinh, khăn bếp bằng lưỡi D2, Cr12MoV hoặc M2 HSS. Đường kính được liệt kê là 610–1000 mm, với kích thước tùy chỉnh lên tới 1200 mm.",
+    ogImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
   },
-  "granulator-blades": {
-    title: "Lưỡi tạo hạt nhựa & Dao nghiền | OEM",
+  "nonwoven-log-saw-blades": {
+    title: "Lưỡi cưa cắt cuộn vải không dệt | Lưỡi thay thế theo bản vẽ",
     description:
-      "D2, SKD-11 & Cr12MoV nhựa dao máy nghiền — dao rôto & stato được nối đất đến ±0,02mm. HRC 58–62, OEM thay thế cho máy tạo hạt Cumberland, Herbold & Rapid. Nhà máy cung cấp trực tiếp, bán buôn có sẵn. Gửi mẫu số. để có báo giá khớp chính xác.",
-    keywords:
-      "nhà cung cấp nhựa dao máy nghiền, dao máy nghiền, dao máy nghiền, dao nghiền nhựa, dao tạo hạt, lưỡi stato rôto, lưỡi tái chế PET",
-  },
-  "tire-shredder-blades": {
-    title: "Lưỡi máy hủy lốp | Máy cắt quay 3 móng cho TDF | Sureay",
-    description:
-      "Máy quay 3 càng cao cấp dao cắt thép dùng để băm lốp sơ cấp và sản xuất TDF. Các loại thép Cru-Wear (PGK) và thép A8 cải tiến. Dung sai độ dày ± 0,05mm. OEM phù hợp với Barclay, CM, SSI, Untha, Granutech-Saturn. Cắt nhỏ toàn bộ lốp và OTR.",
-    keywords:
-      "lốp dao máy cắt, dao hủy lốp, dao cắt thép quay, lưỡi TDF, dao tái chế lốp, máy hủy 3 móng, Barclay dao máy cắt",
+      "Lưỡi tròn thay thế D2 dùng để cắt cuộn dùng để cắt ngang cuộn vải không dệt. Các lỗ khoan tùy chỉnh, mẫu lỗ lắp và cấu hình lưỡi dao được tạo theo bản vẽ dao của bạn.",
+    ogImage: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
   },
   "paper-cutting-blades": {
-    title: "Lưỡi cắt giấy & máy chém chính xác",
+    title: "Lưỡi cắt giấy | Dao chém giấy",
     description:
-      "dao cắt giấy chuyên nghiệp để in thương mại và chuyển đổi giấy. Mặt đất chính xác đến dung sai 0,01mm. Các vết cắt sạch sẽ, không có gờ trên giấy tráng, bìa cứng và vật liệu nhiều lớp. Khả năng tương thích máy rộng.",
-    keywords: "lưỡi cắt giấy, dao cắt giấy, lưỡi in, dao chém giấy",
-  },
-  "three-knife-trimmer-blades": {
-    title: "Lưỡi tông đơ & Dao dự phòng cho Đầu Combi | Sureay",
-    description:
-      "Lưỡi tông đơ ba dao HSS & TC, dao dự phòng cho đầu lược. OEM phù hợp với Müller Martini, Heidelberg, Kolbus. Có sẵn bộ mặt trước + mặt bên.",
-    keywords:
-      "ba lưỡi tông đơ, dao dự phòng cho đầu lược, dao thay thế Müller Martini, dao xén đóng sách, lưỡi tông đơ HSS, lưỡi tông đơ TC, dao tông đơ Heidelberg, bộ lưỡi tông đơ Kolbus",
-    ogImage:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      "Đặt hàng Dao chém giấy có dát HSS hoặc có đầu bằng cacbua dành cho máy cắt xếp. Chiều dài được liệt kê là 450–2050 mm, có sẵn chiều dài tùy chỉnh và lỗ lắp.",
+    ogImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
   },
   "single-shaft-shredder-blades": {
-    title: "Mảnh dao rôto trục đơn | Dao cắt vương miện | Sureay",
+    title: "Dao rôto máy hủy tài liệu trục đơn | Chèn vuông",
     description:
-      "Rôto máy hủy tài liệu một trục có tác động cao giúp giảm kích thước mạnh mẽ. Cấu hình lõm, vương miện và rãnh chữ V. 4 lưỡi cắt có thể sử dụng được cho mỗi hạt dao. Điều trị đông lạnh sâu. Dành cho nhựa cồng kềnh, thùng chứa có thành dày và MSW.",
-    keywords:
-      "mảnh dao rôto trục đơn, dao rôto máy hủy, dao cắt vương miện, mảnh dao rôto vuông, dao máy cắt lõm, có thể lập chỉ mục 4 chiều",
+      "Chọn hạt dao rôto vuông hoặc mão cắt lõm ở DC53 , D2 hoặc Cr12MoV. Khớp mặt dao và đế chốt với máy hủy trục đơn của bạn.",
+    ogImage: "/images/products/shredder-blades/single-shredder-blades-06.webp",
   },
   "single-shaft-bed-knives": {
-    title: "Dao Stator & Giường dành cho máy hủy trục đơn",
+    title: "Dao tĩnh (dao đối) cho máy nghiền xé một trục",
     description:
-      "Dao stator D2/DC53 (dao có bệ đỡ) dành cho máy hủy một trục. Độ thẳng 0,05mm/m, chiều dài tùy chỉnh đến 3500mm. OEM thay thế cho Vecoplan, Weima, Lindner & Zerma. Trực tiếp tại nhà máy - gửi bản vẽ hoặc mô hình máy để báo giá nhanh.",
-    keywords:
-      "Dao stator, dao stator, dao giường trục đơn, dao giường máy hủy tài liệu, máy hủy dao cố định, thay thế dao giường, dao giường D2, lưỡi máy hủy tài liệu stator, dao giường Vecoplan",
+      "Dao cố định dành cho máy hủy một trục có chiều dài được liệt kê là 279–3000 mm. Đặt hàng các cạnh thẳng hoặc có răng cưa và các khe lắp phù hợp với bản vẽ của bạn.",
+    ogImage: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+  },
+  "granulator-blades": {
+    title: "Dao tạo hạt nhựa | Cánh quạt & lưỡi giường",
+    description:
+      "Thay thế rôto và dao cố định trên máy tạo hạt chế biến PET, PP, HDPE hoặc PVC. Lưỡi máy tạo hạt nhựa có chiều dài được liệt kê là 90–1178 mm, với các mẫu bu lông tùy chỉnh.",
+    ogImage: "/images/products/granulator-blades/granulator-blades-06.webp",
   },
   "metal-coil-slitting-knives": {
-    title: "Dao rạch cuộn chính xác | Lưỡi cắt kim loại",
+    title: "Dao rạch thép cuộn | Công cụ tùy chỉnh",
     description:
-      "Bộ lưỡi cắt trên và dưới cao cấp để gia công cuộn kim loại. Dung sai độ dày ± 0,001mm, độ song song 0,002mm. Dụng cụ hoàn chỉnh với miếng đệm và vòng cao su. Dùng cho thép, nhôm, đồng và cuộn mạ kẽm.",
-    keywords:
-      "dao rạch kim loại, lưỡi rạch cuộn, máy rạch kim loại quay, máy rạch trên dưới, dao rạch thép",
+      "Dao cắt cuộn thép thay thế cho thép carbon, thép không gỉ và thép cường độ cao. Dao cắt quay, miếng đệm và vòng gạt phôi tùy chỉnh để vẽ.",
+    ogImage: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
   },
   "metal-shear-knives": {
-    title: "Dao cắt kim loại hạng nặng và dao chém",
+    title: "Alligator dao cắt thép cho phế liệu kim loại",
     description:
-      "Dao chém và cắt phế liệu chính xác bằng thép công cụ D2, S1 (6CrW2Si) và H13. Độ song song được nối đất đến ±0,05 mm để cắt thép nhẹ, tấm không gỉ và phế liệu nặng mà không có gờ. Chiều dài một mảnh lên tới 6000 mm.",
-    keywords:
-      "dao cắt kim loại, dao chém dao cắt thép, dao cắt thép, dao cắt thép thủy lực, phế liệu dao cắt thép, D2 dao cắt thép",
+      "Thay thế lưỡi dao di chuyển phía trên hoặc dao cố định phía dưới trên máy cắt cá sấu của bạn. Chiều dài được liệt kê là 320–508 mm, với các tùy chọn thép S1 , 6CrW2Si và H13 .",
+    ogImage: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
   },
-  "metal-cold-saw-blades": {
-    title: "Lưỡi cưa nguội HSS & TCT | Cắt ống kim loại",
+  "guillotine-shear-blades": {
+    title: "Dao máy cắt tôn kiểu guillotine",
     description:
-      "Lưỡi cưa đĩa nguội M2, M35 Cobalt HSS và TCT dùng để cắt ống thép, thép không gỉ và nhôm. Tiêu chuẩn DIN 1837/1840. Mặt cuối không có gờ, không có HAZ. Có sẵn lớp phủ TiN/TiAlN PVD. OEM phù hợp cho Kaltenbach, Bewo, MEP.",
-    keywords:
-      "lưỡi cưa nguội, lưỡi cưa nguội HSS, lưỡi cưa nguội coban M35, lưỡi cưa nguội TCT, lưỡi cưa nguội kim loại, lưỡi cắt ống, nhà sản xuất lưỡi cưa nguội",
+      "Cắt kim loại tấm bằng dao cắt thép thép D2 , 6CrW2Si hoặc 9CrSi . Đặt mua dao trên và dao dưới theo bộ từng mảnh hoặc theo từng đoạn với kiểu lắp tùy chỉnh.",
+    ogImage: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
+  },
+  "three-knife-trimmer-blades": {
+    title: "Dao xén ba mặt dùng cho gia công sau in",
+    description:
+      "Cắt mặt trước, đầu và chân sách bằng dao HSS hoặc dao cacbua. Đặt mua một lưỡi dao thay thế hoặc một bộ phù hợp với một con dao phía trước và hai con dao bên.",
+    ogImage:
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
   },
   "lithium-battery-slitting-knives": {
-    title: "Dao rạch pin cacbua | Lá điện cực",
+    title: "Dao rạch điện cực dùng pin | Cặp cacbua",
     description:
-      "Dao rạch hợp kim cacbua vonfram được tráng gương dành cho lá điện cực pin lithium-ion. Cạnh Ra 0,05μm, dung sai ± 0,001mm. Không có vệt nhỏ trên lá Al/Cu.",
-    keywords:
-      "Lưỡi cắt hợp kim cacbua vonfram, dao rạch pin, dao cắt pin lithium, máy xén lá điện cực, lưỡi cắt cacbua, cacbua dao tròn",
+      "Dao rạch cacbua hạt mịn dùng cho cực dương và cực âm của pin lithium được phủ. Đặt hàng dao quay trên và dưới phù hợp với DLC hoặc TiN tùy chọn.",
+    ogImage:
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
   },
   "corrugated-slitter-scorer-blades": {
     title: "Lưỡi ghi điểm dạng sóng | BHS & Fosber",
     description:
-      "Lưỡi xẻ mỏng hợp kim cacbua vonfram rắn dành cho dây chuyền khô bìa các tông sóng. Cắt không nghiền nát. OEM phù hợp cho BHS, Fosber, Marquip. Dao cắt và ghi bàn còn hàng.",
-    keywords:
-      "lưỡi máy xén sóng, lưỡi máy xén hợp kim cacbua vonfram, lưỡi ghi điểm, máy xén BHS, dao máy xén Fosber, dao hộp sóng",
+      "Lưỡi cắt cacbua dành cho dây chuyền đầu cuối máy gấp nếp, có cấu hình tham chiếu BHS và Fosber . Các lỗ khoan tùy chỉnh và các mẫu sửa chữa được thực hiện theo bản vẽ.",
+    ogImage:
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+  },
+  "tire-shredder-blades": {
+    title: "Dao cho máy nghiền xé lốp sơ cấp kiểu cắt quay",
+    description:
+      "Nguồn máy cắt A8 hoặc 42CrMo đã được sửa đổi để băm lốp chính. Khớp số móc, độ dày dao cắt và lỗ trục với máy cắt quay của bạn.",
+    ogImage: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
   },
   "nonwoven-slitter-knives": {
     title: "Dao xén vải không dệt | PP Spunbond & SMS",
     description:
-      "Dao xẻ tròn M2 HSS & D2 dành cho vải không dệt PP spunbond, vải tan chảy & vải không dệt SMS với tốc độ 200–500m/phút. Hình học cào chống sờn giúp loại bỏ hiện tượng rách xơ trên dây chuyền vệ sinh, y tế & lọc. OEM phù hợp với các hệ thống chuyển đổi vải không dệt hàng đầu - yêu cầu báo giá.",
-    keywords:
-      "máy xén vải không dệt, lưỡi cắt vải không dệt, dao xẻ vải không dệt, dao xén spunbond, lưỡi cắt tan chảy, dao vải không dệt y tế",
-  },
-  "scrap-chopper-blades": {
-    title: "Lưỡi cắt phế liệu | S7 & H13 cho dây cuộn",
-    description:
-      "Lưỡi cắt phế liệu hạng nặng bằng thép công cụ S7 và H13 dành cho dây chuyền xẻ kim loại. Thiết kế 4 cạnh có thể lập chỉ mục, khảm cacbua tùy chọn. Khả năng chống va đập cao.",
-    keywords:
-      "lưỡi cắt phế liệu, lưỡi cắt cuộn, máy cắt phế liệu kim loại, dao cắt dây chuyền, lưỡi cắt nhỏ S7",
-  },
-  "rotary-slitter-knives-paper": {
-    title: "Dao xén giấy | Giấy lụa & Kraft | D2, M2 HSS | Sureay",
-    description:
-      "Dao xén cắt rạch và cắt nghiền cho giấy lụa, kraft và giấy tráng. D2, M2 HSS và 52100 với dung sai độ dày ±0,002mm. OEM phù hợp với Atlas, Kampf, Goebel IMS, Perini.",
-    keywords:
-      "lưỡi xén giấy, dao xén giấy, dao xén sóng, lưỡi chuyển đổi khăn giấy, máy xén giấy kraft, lưỡi xẻng cưa gỗ, cặp cắt giấy, rạch không bụi",
-  },
-  "guillotine-shear-blades": {
-    title: "Lưỡi cắt chém | D2 & 6CrW2Si cho máy cắt thủy lực | Sureay",
-    description:
-      "Máy chém D2 (Cr12MoV), 6CrW2Si & 9CrSi dao cắt thép được nối đất đến độ song song toàn chiều dài ±0,05 mm. Bộ trên và dưới cho máy có kích thước lên tới 16mm × 4000mm. Tương thích OEM với TRUMPF, AMADA, LVD, Durma & Bystronic.",
-    keywords:
-      "máy chém dao cắt thép, thủy lực dao cắt thép, D2 dao cắt thép, dao cắt 6CrW2Si, tấm kim loại dao cắt thép, lưỡi thay thế AMADA, dao cắt TRUMPF",
-  },
-  "wood-chipper-blades": {
-    title: "Lưỡi Chipper Gỗ | Dao Chipper Trống & Đĩa D2 & TCT | Sureay",
-    description:
-      "Dao băm trống và đĩa D2, Cr12MoV & TCT, HRC 57–62, dung sai độ dày ±0,05mm. OEM phù hợp cho Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz. 8–12 chu kỳ xay lại.",
-    keywords:
-      "lưỡi băm gỗ, dao băm trống, lưỡi băm đĩa, dao băm lâm nghiệp, lưỡi băm sinh khối, dao băm D2, lưỡi băm TCT, lưỡi băm Vermeer, dao băm Bandit",
-  },
-  "wood-chipper-anvils": {
-    title:
-      "Đe băm gỗ & dao phản công | D2 · A8 Đã sửa đổi | Bộ phù hợp | Sureay",
-    description:
-      "Đe băm gỗ được mài chính xác (dao phản công/dao giường) bằng thép biến tính D2, Cr12MoV và A8. HRC 54–60 được làm cứng hoàn toàn. Độ song song ± 0,05 mm. OEM phù hợp cho Bandit, Vermeer, Morbark, Timberwolf & Schliesing. Bộ lưỡi dao + đe phù hợp có sẵn.",
-    keywords:
-      "Đe băm gỗ, dao phản chipper, đe dao băm giường, thay thế đe chipper, đe Bandit, dao cố định Vermeer, dao giường Morbark, đe trống băm, dao phản chipper đĩa, bộ đe lưỡi phù hợp",
-  },
-  "special-shaped-blades": {
-    title:
-      "Lưỡi dao có hình dạng đặc biệt tùy chỉnh | Mọi hồ sơ, mọi hợp kim | Sureay",
-    description:
-      "Lưỡi công nghiệp có hình dạng đặc biệt và có cấu hình tùy chỉnh được sản xuất từ ​​bản vẽ DXF/DWG/STEP hoặc mẫu vật lý. D2, H13, PM-HSS & cacbua. Dung sai đến ± 0,02mm. Bất kỳ ngành nào, bất kỳ hình học nào.",
-    keywords:
-      "lưỡi tùy chỉnh, dao có hình dạng đặc biệt, lưỡi định hình tùy chỉnh, lưỡi tùy chỉnh OEM, dao công nghiệp đặt riêng, sản xuất lưỡi DXF",
+      "Dao cắt thay thế cho vải không dệt spunbond, vải tan chảy và vải không dệt SMS. Tùy chọn M2 HSS , D2 hoặc cacbua, với cấu hình tùy chỉnh và lớp phủ dành riêng cho ứng dụng.",
+    ogImage:
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
   },
   "bottom-grooved-anvil-knives": {
-    title: "Dao đe có rãnh ở đáy | Bộ đe cắt | Sureay",
+    title: "Dao đe có rãnh đáy | Nhẫn thay thế",
+    description:
+      "Thay thế dao đe có rãnh và vòng cắt cho máy xén web. Tùy chọn thép hoặc cacbua, với cấu hình rãnh, lỗ khoan và bố trí khóa tùy chỉnh.",
+    ogImage: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
   },
-  "continuous-melt-filter-scraper-blades": {
-    title: "Lưỡi cạo và tấm lọc lọc nóng chảy",
+  "tungsten-carbide-slitter-knives": {
+    title: "hợp kim cacbua vonfram Slitter Dao | Kích thước tùy chỉnh",
+    description:
+      "Dao xẻ thay thế dạng rắn và có đầu bằng cacbua để chuyển đổi và gia công kim loại. Kích thước, lỗ khoan và biên dạng cắt tùy chỉnh phù hợp với ứng dụng.",
+    ogImage:
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+  },
+  "scrap-chopper-blades": {
+    title: "Lưỡi cắt phế liệu | Dao cuộn dây tùy chỉnh",
+    description:
+      "Lưỡi dao cắt phế liệu thay thế tùy chỉnh để cắt cạnh đường cuộn. Dao S7 , H13 hoặc cacbua có các kiểu cắt thẳng, xẻ hoặc định hình.",
+    ogImage: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
   },
   "strand-pelletizer-rotors": {
-    title: "Rôto Pelletizer sợi cho dây chuyền trộn",
-  },
-  "groove-bottom-knives": {
-    title: "Dao dưới nhiều rãnh | Vòng dao cắt | Sureay",
+    title: "Cánh quạt cắt Pelletizer | Thay thế tùy chỉnh",
     description:
-      "Vòng dao dưới nhiều rãnh dùng cho cắt trượt. Bước rãnh từ 5 mm, ĐK ngoài tới Φ406 mm, lỗ trơn cho trục hơi hoặc vít hãm cho trục đặc.",
-    keywords:
-      "dao dưới nhiều rãnh, vòng dao cắt dưới, dao dưới có rãnh, vòng đệm trơn, bước rãnh",
+      "Rôto máy ép viên sợi thay thế có cạnh cắt xoắn ốc hoặc thẳng. Tùy chọn HSS và cacbit, với biên dạng răng và đầu trục tùy chỉnh.",
+    ogImage: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+  },
+  "continuous-melt-filter-scraper-blades": {
+    title: "Lưỡi cạo lọc tan chảy | Thay thế tùy chỉnh",
+    description:
+      "Lưỡi cạo thay thế cho bộ lọc nóng chảy nhựa liên tục. Tùy chọn D2 , H13 và cacbua, với cấu hình tùy chỉnh và chi tiết lắp vào bản vẽ.",
+    ogImage: "/images/products/blades/scraper-blades.webp",
+  },
+  "shredder-screens": {
+    title: "Màn hình máy hủy tài liệu thay thế | Giỏ & đĩa tùy chỉnh",
+    description:
+      "Màn hình thay thế cho máy hủy trục đơn, có khẩu độ 8–80 mm. Giỏ và tấm tùy chỉnh phù hợp với kiểu lỗ, độ cong và cách lắp.",
+    ogImage:
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
+  },
+  "cutter-compactor-blades": {
+    title: "Lưỡi cắt máy đầm | Dao Rotor & Stator",
+    description:
+      "Chuẩn bị màng PE hoặc PP và mảnh PET để ép đùn bằng dao rôto và stato thay thế ở dạng kết cấu D2 , M2 HSS hoặc đầu cacbua.",
+    ogImage:
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+  },
+  "die-face-cutting-knives": {
+    title: "Dao cắt khuôn mặt | Lưỡi thay thế tùy chỉnh",
+    description:
+      "Dao ép viên có mặt khuôn thay thế cho các hệ thống dưới nước, vòng nước và mặt nóng. Khe lưỡi tùy chỉnh, biên dạng cạnh và bộ phù hợp với bản vẽ.",
+    ogImage:
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+  },
+  "special-shaped-blades": {
+    title: "Lưỡi công nghiệp có hình dạng đặc biệt | Hồ sơ tùy chỉnh",
+    description:
+      "Dao máy thay thế có cấu hình tùy chỉnh ở D2 , H13 , PM- HSS hoặc cacbua. Các đường viền, cạnh cắt và các tính năng lắp đặt dành riêng cho từng bộ phận được thực hiện trên bản vẽ.",
+    ogImage: "/images/products/blades/special-shaped-knife.webp",
+  },
+  "wood-chipper-blades": {
+    title: "Dao cho máy băm gỗ kiểu tang trống và kiểu đĩa",
+    description:
+      "Dao di chuyển dành cho máy băm gỗ dạng trống và đĩa có chiều dài được liệt kê là 230–600 mm. Chỉ định thép dăm, D2 hoặc cạnh có đầu bằng cacbua, cùng với kiểu vát và bu lông của bạn.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+  },
+  "wood-chipper-anvils": {
+    title: "Đe và dao đối cho máy băm gỗ",
+    description:
+      "Thay dao cố định cố định đối diện với dao băm đang di chuyển. Đe máy băm gỗ có chiều dài 185–400 mm, có khe lắp tùy chỉnh.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
   },
   "slitter-rewinder-bottom-knives": {
-    title: "Dao dưới cho máy cắt cuộn lại | Sureay",
+    title: "Dao đáy tua lại máy xén | Cốc & Cạnh đôi",
     description:
-      "Dao dưới hợp kim cứng nguyên khối và gắn mảnh cho máy cuộn lại giấy. Đánh bóng gương, không ba via. Kích thước Φ250–Φ254, lỗ lắp theo máy.",
-    keywords:
-      "dao dưới máy cuộn lại, dao dưới cắt dọc, dao máy cắt cuộn giấy, dao Jagenberg",
+      "Dao đáy cốc, hai cạnh và vòng có thể thay thế dành cho máy cuộn giấy, đường kính ngoài 70–300 mm. Chỉ định lỗ khoan có khóa, mặt bích hoặc lưỡi cắt cacbua.",
+    ogImage:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
   },
-  "box-slotting-knives": {
-    title: "Dao xẻ rãnh hộp | Hợp kim cứng GS05U và GS20U | Sureay",
+  "corrugated-slotter-knives": {
+    title: "Dao xẻ rãnh carton sóng | Dao đực và dao cái",
     description:
-      "Dao xẻ rãnh hợp kim cứng cho bìa xám trên dây chuyền hộp cứng và hộp quà. Cặp trái/phải, mác GS05U và GS20U, năm kích thước tồn kho.",
-    keywords:
-      "dao xẻ rãnh hộp, xẻ rãnh chữ V bìa xám, dao hộp cứng, dao xẻ rãnh hợp kim cứng",
+      "Dao hình cung trơn hoặc có răng cưa và dao phản diện dạng cái để xẻ rãnh dạng sóng. Đặt hàng các lưỡi thay thế được thực hiện theo chiều rộng khe và bản vẽ lắp đặt của bạn.",
+    ogImage: "/images/products/slitter-detail/box-slotting-knives-white.webp",
   },
   "paper-straw-slitting-blades": {
-    title: "Dao cắt ống hút giấy | Hợp kim cứng chống dính | Sureay",
+    title: "Lưỡi cắt giấy rơm | Dao thay thế",
     description:
-      "Dao tròn hợp kim cứng phủ chống dính cho ống hút giấy và que lọc. Φ88–Φ100, 0,15–0,30 mm. Kháng tích tụ keo gốc nước.",
-    keywords:
-      "dao cắt ống hút giấy, dao tròn chống dính, dao cắt que lọc, cắt ống hút giấy",
+      "dao tròn thay thế để cắt và cắt ống hút giấy. Tùy chọn cacbua hoặc M2 HSS , lỗ khoan và biên dạng tùy chỉnh cũng như lớp phủ được chọn cho dây chuyền.",
+    ogImage: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+  },
+  "groove-bottom-knives": {
+    title: "Dao đáy nhiều rãnh | Nhẫn cắt đáy",
+    description:
+      "Vòng cắt nhiều rãnh để cắt cắt. Khoảng cách rãnh từ 5 mm và OD lên tới 406 mm, với cấu hình một mảnh và tách rời được thực hiện theo bản vẽ.",
+    ogImage: "/images/products/slitter-detail/groove-bottom-knives.webp",
+  },
+  "stationary-scrap-shear-blades": {
+    title: "Lưỡi dao cho máy cắt phế liệu kim loại dạng cổng cố định",
+    description:
+      "Đặt hàng các khối dao chuyển động gắn bu-lông và dao cố định cho máy cắt phế liệu cố định. Chọn thép 1.2746 hoặc 1.2767 và gửi bản vẽ lắp đặt của bạn.",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+  },
+  "flying-shear-blades": {
+    title: "Lưỡi dao cắt bay | Chế tạo theo yêu cầu cho dây chuyền cán thép",
+    description:
+      "dao cắt thép cắt và cắt tùy chỉnh dành cho máy cán. Dao thẳng hoặc định hình để cắt thanh nóng, nguội hoặc nguội, được sản xuất theo bản vẽ.",
+    ogImage: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+  },
+  "paper-sheeter-knives": {
+    title: "Dao máy cắt giấy cuộn thành tờ | Dao thay thế theo yêu cầu",
+    description:
+      "Máy ép giấy thay thế tùy chỉnh và dao cắt chéo. Các cạnh bằng thép HSS , PM hoặc cacbua dành cho màng giấy và bìa, được chế tạo theo cấu hình lắp của bạn.",
+    ogImage: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+  },
+  "saddle-stitcher-trimmer-knives": {
+    title: "Dao xén ba mặt cho tập sách đóng ghim lồng",
+    description:
+      "Dao trước hoặc dao bên thay thế cho dây chuyền đóng ghim lồng sách mỏng và tạp chí. Tham khảo kích thước của DS 304 / Tempo và các lựa chọn thép gió hoặc lưỡi gắn hợp kim cứng.",
+    ogImage:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+  },
+  "box-slotting-knives": {
+    title: "Dao soi rãnh chữ V bằng hợp kim cứng cho bìa xám làm hộp",
+    description:
+      "Dao xẻ rãnh cacbua để tạo rãnh chữ V trên bảng cứng trên dây chuyền sản xuất hộp cứng và hộp quà tặng. Các cặp tay trái và tay phải phù hợp ở GS05U và GS20U , với năm kích cỡ được liệt kê.",
+    ogImage: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
   },
 };

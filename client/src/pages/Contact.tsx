@@ -7,6 +7,7 @@
 import { useRef, useState } from "react";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import InquiryForm from "@/components/common/InquiryForm";
 import SEO from "@/components/common/SEO";
 import { toast } from "sonner";
 import { gtagEvent, trackLead } from "@/lib/gtag";
@@ -37,7 +38,7 @@ function fmtSize(bytes: number) {
 }
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [formData, setFormData] = useState({
     inquiryType: "Industrial Blade" as InquiryType,
     name: "",
@@ -48,6 +49,7 @@ export default function Contact() {
   });
   const [attachment, setAttachment] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const submittingRef = useRef(false);
   const [dragOver, setDragOver] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -67,7 +69,20 @@ export default function Contact() {
       return;
     }
     const ext = file.name.split(".").pop()?.toLowerCase() ?? "";
-    if (!["pdf", "dxf", "dwg", "step", "stp", "jpg", "jpeg", "png", "webp", "gif"].includes(ext)) {
+    if (
+      ![
+        "pdf",
+        "dxf",
+        "dwg",
+        "step",
+        "stp",
+        "jpg",
+        "jpeg",
+        "png",
+        "webp",
+        "gif",
+      ].includes(ext)
+    ) {
       toast.error(t("contactPage.toast.invalidType"));
       return;
     }
@@ -87,6 +102,8 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (submittingRef.current) return;
+    submittingRef.current = true;
     setIsSubmitting(true);
 
     try {
@@ -107,7 +124,11 @@ export default function Contact() {
       const data = await response.json();
 
       if (response.ok && data.success) {
-        toast.success(t("contactPage.toast.success"));
+        if (data.data?.emailSent === false) {
+          toast.warning(data.message || t("contact.form.savedOnly.body"));
+        } else {
+          toast.success(t("contactPage.toast.success"));
+        }
         trackLead(
           { email: formData.email, phone: formData.phone },
           {
@@ -127,7 +148,9 @@ export default function Contact() {
       } else {
         if (data.errors && Array.isArray(data.errors)) {
           data.errors.forEach((error: { message?: string }) => {
-            toast.error(error.message || t("contactPage.toast.validationError"));
+            toast.error(
+              error.message || t("contactPage.toast.validationError")
+            );
           });
         } else {
           toast.error(data.message || t("contactPage.toast.failure"));
@@ -137,6 +160,7 @@ export default function Contact() {
       console.error("Error submitting form:", error);
       toast.error(t("contactPage.toast.unexpectedError"));
     } finally {
+      submittingRef.current = false;
       setIsSubmitting(false);
     }
   };
@@ -149,21 +173,24 @@ export default function Contact() {
         canonicalUrl="/contact"
       />
       <Navbar />
+      <main>
 
       {/* 1. HERO */}
       <section className="bg-white pt-[74px]">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-14 pb-4 lg:pt-20 lg:pb-12">
-          <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-6">
-            {t("contactPage.hero.eyebrow")}
-          </p>
+          {lang !== "en" && (
+            <p className="text-[14px] font-semibold tracking-[0.28em]  text-muted-foreground mb-6">
+              {t("contactPage.hero.eyebrow")}
+            </p>
+          )}
 
-          <h1 className="text-[clamp(1.9rem,4.2vw,3.25rem)] font-black text-[#001f4d]  tracking-tight leading-none mb-7 break-words">
+          <h1 className="text-[34px] lg:text-[54px] font-black text-[#001f4d]  tracking-tight leading-none mb-7 break-words">
             {t("contactPage.hero.headline")}
           </h1>
 
           <div className="w-12 h-[3px] bg-[#001f4d] mb-7" />
 
-          <p className="text-slate-500 text-[16px] leading-relaxed max-w-3xl">
+          <p className="text-description text-muted-foreground leading-relaxed max-w-3xl">
             {t("contactPage.hero.body1")}
             <br />
             {t("contactPage.hero.body2")}
@@ -172,21 +199,29 @@ export default function Contact() {
       </section>
 
       {/* 2. FORM + DIRECTORY */}
-      <section className="border-t border-b border-slate-200">
-        <div className="lg:grid lg:grid-cols-12">
+      <section className="site-section border-t border-b border-slate-200">
+        <div className="site-content lg:grid lg:grid-cols-12">
           {/* LEFT: Form */}
-          <div className="lg:col-span-7 bg-white border-b lg:border-b-0 lg:border-r border-slate-200 p-6 lg:p-8">
-            <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em]  mb-2">
-              {t("contactPage.form.formRef")}
-            </p>
-            <h2 className="text-2xl font-black text-[#001f4d]  tracking-tight mb-6">
+          <div id="rfq" className={`scroll-mt-[75px] lg:col-span-7 bg-white border-slate-200 p-6 lg:p-8 ${lang === "en" ? "border shadow-sm" : "border-b lg:border-b-0 lg:border-r"}`}>
+            {lang !== "en" && (
+              <p className="font-mono text-[12px] text-muted-foreground tracking-[0.35em]  mb-2">
+                {t("contactPage.form.formRef")}
+              </p>
+            )}
+            <h2 className={`text-2xl font-black text-[#001f4d] tracking-tight ${lang === "en" ? "mb-3" : "mb-6"}`}>
               {t("contactPage.form.heading")}
             </h2>
 
-            <form className="space-y-4" onSubmit={handleSubmit}>
+            {lang === "en" ? (
+              <InquiryForm
+                formLocation="contact_page"
+                eventCategory="contact_form"
+              />
+            ) : (
+              <form className="space-y-4" onSubmit={handleSubmit}>
               {/* Inquiry Type Tiles */}
               <div>
-                <p className="font-bold text-[10px] tracking-widest text-slate-500  mb-3">
+                <p className="font-bold text-[12px] tracking-widest text-muted-foreground  mb-3">
                   {t("contactPage.form.inquiryTypeLabel")} *
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 border border-slate-200">
@@ -195,12 +230,15 @@ export default function Contact() {
                       key={type.value}
                       type="button"
                       onClick={() =>
-                        setFormData(prev => ({ ...prev, inquiryType: type.value }))
+                        setFormData(prev => ({
+                          ...prev,
+                          inquiryType: type.value,
+                        }))
                       }
-                      className={`px-4 py-4 font-mono text-[10px] font-bold tracking-[0.15em]  text-left border-r border-slate-200 last:border-r-0 transition-none ${
+                      className={`px-4 py-4 font-mono text-[12px] font-bold tracking-[0.15em]  text-left border-r border-slate-200 last:border-r-0 transition-none ${
                         formData.inquiryType === type.value
                           ? "bg-[#001f4d] text-white"
-                          : "bg-white text-slate-500 hover:bg-slate-50 hover:text-[#001f4d]"
+                          : "bg-white text-muted-foreground hover:bg-slate-50 hover:text-[#001f4d]"
                       }`}
                     >
                       {t(type.labelKey)}
@@ -214,7 +252,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
+                    className="block font-bold text-[12px] tracking-widest text-muted-foreground  mb-2"
                   >
                     {t("contactPage.form.nameLabel")} *
                   </label>
@@ -231,7 +269,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
+                    className="block font-bold text-[12px] tracking-widest text-muted-foreground  mb-2"
                   >
                     {t("contactPage.form.emailLabel")} *
                   </label>
@@ -252,7 +290,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="company"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
+                    className="block font-bold text-[12px] tracking-widest text-muted-foreground  mb-2"
                   >
                     {t("contactPage.form.companyLabel")}
                   </label>
@@ -268,7 +306,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
+                    className="block font-bold text-[12px] tracking-widest text-muted-foreground  mb-2"
                   >
                     {t("contactPage.form.phoneLabel")}
                   </label>
@@ -287,7 +325,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block font-bold text-[10px] tracking-widest text-slate-500  mb-2"
+                  className="block font-bold text-[12px] tracking-widest text-muted-foreground  mb-2"
                 >
                   {t("contactPage.form.messageLabel")} *
                 </label>
@@ -304,9 +342,9 @@ export default function Contact() {
 
               {/* CAD upload */}
               <div>
-                <p className="font-bold text-[10px] tracking-widest text-slate-500  mb-2">
+                <p className="font-bold text-[12px] tracking-widest text-muted-foreground  mb-2">
                   {t("contactPage.form.cadLabel")}{" "}
-                  <span className="text-slate-400 normal-case tracking-normal font-normal">
+                  <span className="text-muted-foreground normal-case tracking-normal font-normal">
                     ({t("common.optional")} · max {MAX_FILE_MB} MB)
                   </span>
                 </p>
@@ -327,10 +365,10 @@ export default function Contact() {
                         [ ⊡ ]
                       </span>
                       <div className="min-w-0">
-                        <p className="font-mono text-[11px] font-bold text-[#001f4d]  tracking-wide truncate">
+                        <p className="font-mono text-[14px] font-bold text-[#001f4d]  tracking-wide truncate">
                           {attachment.name}
                         </p>
-                        <p className="font-mono text-[10px] text-slate-400 tracking-wide">
+                        <p className="font-mono text-[12px] text-muted-foreground tracking-wide">
                           {fmtSize(attachment.size)} ·{" "}
                           {attachment.name.split(".").pop()?.toUpperCase()}
                         </p>
@@ -339,10 +377,10 @@ export default function Contact() {
                     <button
                       type="button"
                       onClick={() => setAttachment(null)}
-                      className="flex-shrink-0 font-mono text-[10px] font-bold text-slate-400 hover:text-red-600  tracking-widest transition-colors"
+                      className="flex-shrink-0 font-mono text-[12px] font-bold text-muted-foreground hover:text-red-600  tracking-widest transition-colors"
                       aria-label={t("common.remove")}
                     >
-                      [ × {t("common.remove").toUpperCase()} ]
+                      × {t("common.remove")}
                     </button>
                   </div>
                 ) : (
@@ -368,11 +406,12 @@ export default function Contact() {
                     <p className="font-mono text-sm font-bold text-[#001f4d]  tracking-wide mb-1">
                       {t("contactPage.form.cadDropZoneTitle")}
                     </p>
-                    <p className="font-mono text-[11px] text-slate-500 tracking-wide leading-relaxed">
+                    <p className="font-mono text-[14px] text-muted-foreground tracking-wide leading-relaxed">
                       {t("contactPage.form.cadDropZoneHint")}
                     </p>
-                    <p className="font-mono text-[10px] text-slate-400 mt-1">
-                      .DXF · .DWG · .PDF · .STEP · .STP · .JPG · .PNG · .WEBP — max {MAX_FILE_MB} MB
+                    <p className="font-mono text-[12px] text-muted-foreground mt-1">
+                      .DXF · .DWG · .PDF · .STEP · .STP · .JPG · .PNG · .WEBP —
+                      max {MAX_FILE_MB} MB
                     </p>
                   </div>
                 )}
@@ -387,22 +426,23 @@ export default function Contact() {
                   ? t("contactPage.form.submitting")
                   : t("contactPage.form.submit")}
               </button>
-            </form>
+              </form>
+            )}
           </div>
 
           {/* RIGHT: Directory */}
           <div className="lg:col-span-5 bg-[#001f4d] p-6 lg:p-8 flex flex-col">
             <div className="mt-8 lg:mt-[2.75rem] mb-12">
-              <p className="font-mono text-[10px] text-white/50 tracking-widest  mb-3">
+              <p className="font-mono text-[12px] text-white/80 tracking-widest  mb-3">
                 {t("contactPage.directory.emailLabel")}
               </p>
-              <p className="text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none break-all">
+              <p className="text-[22px] lg:text-[34px] lg:text-3xl font-black text-white  tracking-tight leading-none break-all">
                 lynn@sureay.com
               </p>
             </div>
 
             <div className="mb-12">
-              <p className="font-mono text-[10px] text-white/50 tracking-widest  mb-3">
+              <p className="font-mono text-[12px] text-white/80 tracking-widest  mb-3">
                 {t("contactPage.directory.whatsappLabel")}
               </p>
               <a
@@ -411,8 +451,10 @@ export default function Contact() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => gtagEvent("whatsapp_click", { link_location: "contact_page" })}
-                className="block text-[clamp(1.25rem,5vw,2rem)] lg:text-3xl font-black text-white  tracking-tight leading-none hover:text-white/70 transition-colors"
+                onClick={() =>
+                  gtagEvent("whatsapp_click", { link_location: "contact_page" })
+                }
+                className="block text-[22px] lg:text-[34px] lg:text-3xl font-black text-white  tracking-tight leading-none hover:text-white/70 transition-colors"
               >
                 +86 180-0555-0657
               </a>
@@ -421,10 +463,10 @@ export default function Contact() {
             <div className="border-t border-white/20 pt-8 mt-auto">
               <div className="space-y-4">
                 <div>
-                  <p className="font-bold text-xs text-white/50 tracking-widest  mb-1.5">
+                  <p className="font-bold text-xs text-white/80 tracking-widest  mb-1.5">
                     {t("contactPage.directory.factoryLabel")}
                   </p>
-                  <p className="font-sans text-sm text-white leading-relaxed">
+                  <p className="text-description font-sans text-white leading-relaxed">
                     {t("contactPage.directory.factoryLine1")}
                     <br />
                     {t("contactPage.directory.factoryLine2")}
@@ -434,19 +476,19 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <p className="font-bold text-xs text-white/50 tracking-widest  mb-1.5">
+                  <p className="font-bold text-xs text-white/80 tracking-widest  mb-1.5">
                     {t("contactPage.directory.hoursLabel")}
                   </p>
-                  <p className="font-sans text-sm text-white leading-relaxed">
+                  <p className="text-description font-sans text-white leading-relaxed">
                     {t("contactPage.directory.hoursValue")}
                   </p>
                 </div>
 
                 <div>
-                  <p className="font-bold text-xs text-white/50 tracking-widest  mb-1.5">
+                  <p className="font-bold text-xs text-white/80 tracking-widest  mb-1.5">
                     {t("contactPage.directory.responseLabel")}
                   </p>
-                  <p className="font-sans text-sm text-white leading-relaxed">
+                  <p className="text-description font-sans text-white leading-relaxed">
                     {t("contactPage.directory.responseValue")}
                   </p>
                 </div>
@@ -457,15 +499,15 @@ export default function Contact() {
       </section>
 
       {/* 3. TRUST STAMPS */}
-      <section className="bg-[#001f4d]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
+      <section className="site-section bg-[#001f4d]">
+        <div className="site-content max-w-7xl mx-auto">
+          <div className={`grid grid-cols-2 md:grid-cols-4 divide-x ${lang === "en" ? "divide-slate-200" : "divide-white/10"}`}>
             {TRUST_STAMPS.map((stampKey, i) => (
               <div
                 key={i}
                 className="px-6 py-6 lg:px-10 lg:py-7 flex items-center justify-center text-center"
               >
-                <span className="font-mono text-[10px] font-bold tracking-[0.2em] text-white/70  leading-snug">
+                <span className={`font-mono text-[12px] font-bold tracking-[0.2em] leading-snug ${lang === "en" ? "text-slate-600" : "text-white/70"}`}>
                   {t(stampKey)}
                 </span>
               </div>
@@ -474,6 +516,7 @@ export default function Contact() {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

@@ -9,6 +9,11 @@ import { errorHandler } from "./middleware/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import { corsMiddleware } from "./middleware/cors.js";
 import { analyticsMiddleware } from "./middleware/analytics.js";
+import {
+  appendRedirectQuery,
+  getCategoryRedirect,
+  isRetiredProductPath,
+} from "../shared/catalog-routing.js";
 
 type CreateAppOptions = {
   staticPath?: string;
@@ -54,10 +59,7 @@ export function createApp({
     next();
   });
 
-  // Permanently-removed URLs. These paths never had content of their own:
-  // locale prefixes on English-only sections, and category slugs that only
-  // ever existed in old backlinks. 410 (not 301) so Google drops them for
-  // good — a redirect keeps them in the crawl schedule indefinitely.
+  // Permanently removed URLs must be handled before static files and the SPA.
   const sendGone = (res: express.Response) => {
     res.status(410);
     if (!staticPath) {
@@ -80,65 +82,50 @@ export function createApp({
     (_req, res) => sendGone(res)
   );
 
-  // Invalid category slugs Google only ever reached through old backlinks.
+  // Category migrations precede static HTML and the historical 410 rules.
+  app.use((req, res, next) => {
+    const target = getCategoryRedirect(req.path);
+    if (target) {
+      return res.redirect(
+        301,
+        appendRedirectQuery(target, req.url.slice(req.path.length))
+      );
+    }
+    next();
+  });
+
   app.get(
-    /^\/(?:(?:en|es|fr|ru|vi|ar|pt|tr)\/)?categories\/(?:battery-precision|metal-processing|custom-profile)\/?$/,
+    /^\/(?:(?:en|es|fr|ru|vi|ar|pt|tr)\/)?categories\/(?:battery-precision|metal-processing)\/?$/,
     (_req, res) => sendGone(res)
   );
 
-  // Canonical redirects for deprecated / duplicate SEO paths.
+  // Withdrawn products must take precedence over stale static HTML.
   app.use((req, res, next) => {
-    const redirects: Array<{ from: RegExp; to: string }> = [
-      {
-        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/wood-chipper-blades-industrial\/?$/,
-        to: "/products/wood-chipper-blades",
-      },
-      {
-        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/wood-chipper-blades-standard\/?$/,
-        to: "/products/wood-chipper-blades",
-      },
-      {
-        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/categories\/wood-chipper-blades\/?$/,
-        to: "/products/wood-chipper-blades",
-      },
-      {
-        from: /^\/products\/wood-chipper-blades-industrial\/?$/,
-        to: "/products/wood-chipper-blades",
-      },
-      {
-        from: /^\/products\/wood-chipper-blades-standard\/?$/,
-        to: "/products/wood-chipper-blades",
-      },
-      {
-        from: /^\/categories\/wood-chipper-blades\/?$/,
-        to: "/products/wood-chipper-blades",
-      },
-      {
-        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/shredder-blades-direct\/?$/,
-        to: "/categories/shredder-blades",
-      },
-      {
-        from: /^\/(?:en|es|fr|ru|vi|ar|pt|tr)\/products\/factory-direct-shredder-blades\/?$/,
-        to: "/categories/shredder-blades",
-      },
-      {
-        from: /^\/products\/shredder-blades-direct\/?$/,
-        to: "/categories/shredder-blades",
-      },
-      {
-        from: /^\/products\/factory-direct-shredder-blades\/?$/,
-        to: "/categories/shredder-blades",
-      },
-    ];
-
-    for (const rule of redirects) {
-      if (rule.from.test(req.path)) {
-        return res.redirect(301, rule.to);
-      }
+    if (isRetiredProductPath(req.path)) {
+      return sendGone(res);
     }
-
     next();
   });
+
+  // Cold saw products were withdrawn without an equivalent replacement.
+  app.get(
+    /^\/(?:(?:en|es|fr|ru|vi|ar|pt|tr)\/)?(?:products\/metal-cold-saw-blades|categories\/cold-saw-blades)\/?$/,
+    (_req, res) => sendGone(res)
+  );
+
+  // Old product aliases should stay within the visitor's language.
+  app.get(
+    /^\/(?:(en|es|fr|ru|vi|ar|pt|tr)\/)?products\/(wood-chipper-blades-(?:industrial|standard)|factory-direct-shredder-blades|shredder-blades-direct)\/?$/,
+    (req, res) => {
+      const language = req.params[0];
+      const alias = req.params[1];
+      const prefix = language && language !== "en" ? `/${language}` : "";
+      const target = alias.startsWith("wood-chipper-")
+        ? "/products/wood-chipper-blades"
+        : "/categories/shredder-blades";
+      return res.redirect(301, prefix + target + req.url.slice(req.path.length));
+    }
+  );
 
   app.use((req, res, next) => {
     if (req.path === "/admin" || req.path.startsWith("/admin/")) {

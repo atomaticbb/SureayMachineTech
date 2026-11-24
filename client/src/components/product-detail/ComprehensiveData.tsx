@@ -1,215 +1,180 @@
-/**
- * ComprehensiveData — ZONE 3: Common Standard Dimensions.
- * Two-column layout: dimensions table on the left, product image on the right.
- * Header sits outside the flex row so the image height matches the table exactly.
- */
-
-import type { CSSProperties } from "react";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Blade } from "@/data/blades";
+import { getBladeDimensionTables, getStandardColumns } from "@/data/blade-dimension-tables";
+import { ITEM_NO_COLUMN } from "@/data/blades";
 import { useTranslation } from "@/lib/useTranslation";
 
 interface ComprehensiveDataProps {
   blade: Blade;
 }
 
-const DOT_GRID_STYLE: CSSProperties = {
-  backgroundImage: "radial-gradient(circle, #cbd5e1 1px, transparent 1px)",
-  backgroundSize: "24px 24px",
-};
-
 export default function ComprehensiveData({ blade }: ComprehensiveDataProps) {
   const { t } = useTranslation();
-  if (!blade.standardDimensions || blade.standardDimensions.length === 0)
-    return null;
-
-  const hasLengthTeeth = blade.standardDimensions.some(
-    r => r.length !== undefined || r.teeth !== undefined
-  );
-  const hasBoreHooks = blade.standardDimensions.some(
-    r => r.bore !== undefined || r.hooks !== undefined
-  );
-  const hasOem = blade.standardDimensions.some(r => r.oem !== undefined);
-  // Only show spec column if col0 label is explicitly defined
-  const hasSpec =
-    blade.dimensionLabels?.col0 !== undefined &&
-    blade.standardDimensions.some(r => r.spec !== undefined);
-  // Only show col3 if explicitly defined or if there's thickness/type data
-  const hasCol3 =
-    blade.dimensionLabels?.col3 !== undefined ||
-    blade.standardDimensions.some(
-      r => r.thickness !== undefined || r.type !== undefined
+  const heading = t("productDetail.comprehensiveData.headline");
+  const standardRows = blade.standardDimensions ?? [];
+  const standardColumns = getStandardColumns(blade, standardRows, t);
+  const dimensionTables = blade.detailLayout
+    ? getBladeDimensionTables(blade, heading, standardColumns)
+    : undefined;
+  if (dimensionTables?.length) {
+    const renderTable = (table: (typeof dimensionTables)[number]) => (
+      <Table
+        aria-label={table.title}
+        pinFirstColumn
+        className="border-collapse border border-slate-300 font-sans [&_th]:border [&_th]:border-slate-200 [&_td]:border [&_td]:border-slate-200"
+      >
+        <TableHeader>
+          <TableRow className="border-slate-300 bg-white hover:bg-white">
+            {table.columns.map(column => (
+              <TableHead
+                key={column}
+                scope="col"
+                className="h-auto whitespace-nowrap px-4 py-4 text-[14px] font-medium leading-5 text-slate-600"
+              >
+                {column === ITEM_NO_COLUMN ? t("bladeUi.itemNo") : column}
+              </TableHead>
+            ))}
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {table.rows.map(([partNo, ...values]) => (
+            <TableRow
+              key={JSON.stringify([partNo, ...values])}
+              className="border-slate-100 bg-white hover:bg-white"
+            >
+              <th
+                scope="row"
+                className="whitespace-nowrap px-4 py-3.5 text-left text-[16px] font-semibold leading-[1.4] text-[#001f4d]"
+              >
+                {partNo}
+              </th>
+              {values.map((value, index) => (
+                <TableCell
+                  key={table.columns[index + 1]}
+                  className="whitespace-nowrap px-4 py-3.5 text-[16px] leading-[1.4] text-slate-800"
+                >
+                  {value}
+                </TableCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
     );
-  const panelImage = blade.gallery?.at(-2) ?? blade.image;
-  const panelAlt = blade.galleryAlts?.at(-2) ?? blade.fullName ?? blade.name;
+    return (
+      <section
+        aria-labelledby="product-dimensions-heading"
+        className="site-section site-content max-w-7xl mx-auto px-6 max-[359px]:px-3 sm:px-8"
+      >
+        <h2
+          id="product-dimensions-heading"
+          className="mb-8 text-4xl font-black tracking-tight text-[#001f4d] sm:mb-10"
+        >
+          {blade.detailLayout?.dimensionsHeading ?? heading}
+        </h2>
+        {blade.dimensionLabels?.intro && (
+          <p className="mb-5 max-w-4xl text-description text-muted-foreground">
+            {blade.dimensionLabels.intro}
+          </p>
+        )}
+        {dimensionTables.length === 1 ? (
+          renderTable(dimensionTables[0])
+        ) : (
+          <Tabs
+            key={blade.id}
+            defaultValue={dimensionTables[0].id}
+            className="gap-5"
+          >
+            <TabsList
+              aria-label={blade.detailLayout?.dimensionsHeading ?? heading}
+              className="h-auto w-full max-w-full justify-start gap-1 overflow-x-auto bg-white p-0 sm:w-fit sm:gap-2"
+            >
+              {dimensionTables.map(table => (
+                <TabsTrigger
+                  key={table.id}
+                  value={table.id}
+                  className="h-auto min-h-11 flex-auto whitespace-nowrap border-[#001f4d] bg-white px-1.5 py-2 text-[12px] font-semibold text-[#001f4d] transition-none data-[state=active]:bg-[#001f4d] data-[state=active]:text-white max-[359px]:px-1 max-[359px]:text-[11px] sm:px-5 sm:text-sm"
+                >
+                  {table.tabLabel}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            {dimensionTables.map(table => (
+              <TabsContent
+                key={table.id}
+                value={table.id}
+                forceMount
+                className="data-[state=inactive]:hidden"
+              >
+                {renderTable(table)}
+              </TabsContent>
+            ))}
+          </Tabs>
+        )}
+      </section>
+    );
+  }
 
-  const col0Label =
-    blade.dimensionLabels?.col0 ??
-    t("productDetail.comprehensiveData.colSpecification");
-  const col1Label =
-    blade.dimensionLabels?.col1 ??
-    t("productDetail.comprehensiveData.colOuterDiameter");
-  const col2Label =
-    blade.dimensionLabels?.col2 ??
-    t("productDetail.comprehensiveData.colInnerDiameter");
-  const col3Label =
-    blade.dimensionLabels?.col3 ??
-    t("productDetail.comprehensiveData.colThickness");
-  const col4Label =
-    blade.dimensionLabels?.col4 ?? t("productDetail.comprehensiveData.colTeeth");
-  const captionText =
-    blade.dimensionLabels?.caption ??
-    t("productDetail.comprehensiveData.defaultCaption");
+  if (!standardRows.length) return null;
 
   return (
     <section
-      aria-label="Common standard dimensions"
-      className="max-w-7xl mx-auto px-6 sm:px-8"
+      aria-label={heading}
+      className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
     >
-      {/* Section header — outside the flex row */}
-      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ {t("productDetail.comprehensiveData.eyebrow")} ]
-      </p>
       <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10">
-        {t("productDetail.comprehensiveData.headline")}
+        {heading}
       </h2>
 
-      {/* Flex row: lg:items-start — desktop only, keeps image+table heights independent */}
-      <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 lg:items-start">
-        {/* Left — product image, fixed width so table can't encroach */}
-        <div className="flex-shrink-0 w-full lg:w-[420px] xl:w-[480px]">
-          <div
-            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
-            style={DOT_GRID_STYLE}
-          >
-            <img
-              src={panelImage}
-              alt={panelAlt}
-              className="w-full h-full object-contain p-4 mix-blend-multiply"
-              loading="lazy"
-              decoding="async"
-              width={800}
-              height={600}
-            />
-          </div>
-        </div>
+      <div className="mx-auto max-w-4xl border border-slate-200 border-t-2 border-t-[#001f4d]">
+        <Table aria-label={heading} pinFirstColumn>
+          <TableHeader>
+            <TableRow className="bg-slate-100 hover:bg-slate-100 border-b border-slate-200">
+              {standardColumns.map((column, index) => (
+                <TableHead
+                  key={index}
+                  className="h-auto px-3 py-2.5 font-mono font-semibold text-[14px] tracking-wider text-slate-600"
+                >
+                  {column.label}
+                </TableHead>
+              ))}
+            </TableRow>
+          </TableHeader>
 
-        {/* Right — dimensions table, fills remaining space */}
-        <div className="flex-1 min-w-0">
-          <div className="border border-slate-200 border-t-2 border-t-[#001f4d] overflow-x-auto overscroll-x-contain h-full shadow-sm">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-slate-100 hover:bg-slate-100 border-b border-slate-200">
-                  {hasSpec && (
-                    <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                      {col0Label}
-                    </TableHead>
-                  )}
-                  <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                    {col1Label}
-                  </TableHead>
-                  <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                    {col2Label}
-                  </TableHead>
-                  {hasLengthTeeth || hasBoreHooks ? (
-                    <>
-                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                        {col3Label}
-                      </TableHead>
-                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                        {col4Label}
-                      </TableHead>
-                    </>
-                  ) : hasCol3 ? (
-                    <>
-                      <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                        {col3Label}
-                      </TableHead>
-                      {hasOem && (
-                        <TableHead className="h-auto px-3 py-2.5 font-mono font-semibold text-[11px]  tracking-wider text-slate-600">
-                          {col4Label}
-                        </TableHead>
-                      )}
-                    </>
-                  ) : null}
-                </TableRow>
-              </TableHeader>
-
-              <TableBody>
-                {blade.standardDimensions.map((row, i) => (
-                  <TableRow
-                    key={i}
-                    className={
-                      i % 2 === 0
-                        ? "bg-white hover:bg-slate-50"
-                        : "bg-slate-50/60 hover:bg-slate-50"
-                    }
+          <TableBody>
+            {standardRows.map((row, i) => (
+              <TableRow
+                key={i}
+                className={
+                  i % 2 === 0
+                    ? "bg-white hover:bg-slate-50"
+                    : "bg-slate-50 hover:bg-slate-50"
+                }
+              >
+                {standardColumns.map((column, index) => (
+                  <TableCell
+                    key={index}
+                    className={`px-3 py-2.5 font-mono text-[16px] ${
+                      column.muted
+                        ? "text-muted-foreground whitespace-pre-line"
+                        : "font-medium text-[#001f4d]"
+                    }`}
                   >
-                    {hasSpec && (
-                      <TableCell className="px-3 py-2.5 font-mono text-[14px] text-slate-500 whitespace-pre-line">
-                        {row.spec ?? "—"}
-                      </TableCell>
-                    )}
-                    <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                      {hasSpec
-                        ? (row.dimension ?? row.od)
-                        : (row.dimension ?? row.spec ?? row.od)}
-                    </TableCell>
-                    <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                      {hasBoreHooks
-                        ? (row.thickness ?? "—")
-                        : (row.bolt ?? row.id)}
-                    </TableCell>
-                    {hasLengthTeeth ? (
-                      <>
-                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                          {row.length ?? "—"}
-                        </TableCell>
-                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                          {row.pcs ?? row.teeth ?? "—"}
-                        </TableCell>
-                      </>
-                    ) : hasBoreHooks ? (
-                      <>
-                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                          {row.bore ?? "—"}
-                        </TableCell>
-                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                          {row.hooks ?? "—"}
-                        </TableCell>
-                      </>
-                    ) : hasCol3 ? (
-                      <>
-                        <TableCell className="px-3 py-2.5 font-mono font-medium text-[14px] text-[#001f4d]">
-                          {row.type ?? row.thickness}
-                        </TableCell>
-                        {hasOem && (
-                          <TableCell className="px-3 py-2.5 font-mono text-[14px] text-slate-500">
-                            {row.oem ?? "—"}
-                          </TableCell>
-                        )}
-                      </>
-                    ) : null}
-                  </TableRow>
+                    {column.value(row)}
+                  </TableCell>
                 ))}
-              </TableBody>
-
-              <TableCaption className="text-left px-3 py-2 border-t border-slate-100 bg-slate-50/50">
-                <span className="italic text-slate-400 text-xs">
-                  {captionText}
-                </span>
-              </TableCaption>
-            </Table>
-          </div>
-        </div>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
       </div>
     </section>
   );

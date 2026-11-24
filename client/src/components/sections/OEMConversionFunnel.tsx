@@ -62,8 +62,8 @@ export default function OEMConversionFunnel({
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-4">
             {/* Step 1 */}
             <div className="relative z-10 flex flex-row md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center group">
-              <div className="w-16 h-16 rounded-2xl bg-white/10 border-2 border-blue-400/40 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-white group-hover:shadow-lg transition-all duration-300">
-                <span className="text-blue-300 text-[10px] font-black tracking-widest  mb-0.5 group-hover:text-[#FF6600] transition-colors">
+              <div className="w-16 h-16 rounded-2xl bg-white/10 border-2 border-blue-400/40 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-white shadow-none transition-all duration-300">
+                <span className="text-blue-300 text-[12px] font-black tracking-widest  mb-0.5 group-hover:text-[#ffffff] transition-colors">
                   STEP
                 </span>
                 <span className="text-white text-3xl font-black leading-none">
@@ -83,8 +83,8 @@ export default function OEMConversionFunnel({
 
             {/* Step 2 */}
             <div className="relative z-10 flex flex-row md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center group">
-              <div className="w-16 h-16 rounded-2xl bg-white/10 border-2 border-blue-400/40 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-white group-hover:shadow-lg transition-all duration-300">
-                <span className="text-blue-300 text-[10px] font-black tracking-widest  mb-0.5 group-hover:text-[#FF6600] transition-colors">
+              <div className="w-16 h-16 rounded-2xl bg-white/10 border-2 border-blue-400/40 flex flex-col items-center justify-center flex-shrink-0 group-hover:border-white shadow-none transition-all duration-300">
+                <span className="text-blue-300 text-[12px] font-black tracking-widest  mb-0.5 group-hover:text-[#ffffff] transition-colors">
                   STEP
                 </span>
                 <span className="text-white text-3xl font-black leading-none">
@@ -104,8 +104,8 @@ export default function OEMConversionFunnel({
 
             {/* Step 3 */}
             <div className="relative z-10 flex flex-row md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center group">
-              <div className="w-16 h-16 rounded-2xl bg-white/20 border-2 border-[#FF6600] flex flex-col items-center justify-center flex-shrink-0 shadow-md group-hover:scale-105 transition-all duration-300">
-                <span className="text-[#FF6600] text-[10px] font-black tracking-widest  mb-0.5">
+              <div className="w-16 h-16 rounded-2xl bg-white/20 border-2 border-[#ffffff] flex flex-col items-center justify-center flex-shrink-0 shadow-none group-hover:scale-105 transition-all duration-300">
+                <span className="text-[#ffffff] text-[12px] font-black tracking-widest  mb-0.5">
                   STEP
                 </span>
                 <span className="text-white text-3xl font-black leading-none">
@@ -129,12 +129,12 @@ export default function OEMConversionFunnel({
         {/* Bottom: CTA Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
           <Link href="/contact" asChild>
-            <a className="px-10 py-4 bg-[#FF6600] hover:bg-[#E55A00] text-white font-bold text-center rounded-lg shadow-2xl hover:shadow-[#FF6600]/50 transition-all duration-300 hover:scale-105 transform inline-block">
+            <a className="px-10 py-4 bg-white hover:bg-slate-100 text-[#001f4d] font-bold text-center rounded-lg shadow-none shadow-none transition-all duration-300 hover:scale-105 transform inline-block">
               Submit Requirements
             </a>
           </Link>
           <Link href="/contact" asChild>
-            <a className="px-10 py-4 bg-transparent border-2 border-white hover:border-[#FF6600] text-white hover:text-[#FF6600] font-bold text-center rounded-lg transition-all duration-300 hover:scale-105 transform inline-flex items-center justify-center">
+            <a className="px-10 py-4 bg-transparent border-2 border-white hover:border-[#ffffff] text-white hover:text-[#ffffff] font-bold text-center rounded-lg transition-all duration-300 hover:scale-105 transform inline-flex items-center justify-center">
               Custom OEM Services
             </a>
           </Link>

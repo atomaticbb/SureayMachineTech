@@ -1,6 +1,6 @@
 /*
  * About.tsx — Sureay Machinery
- * Sections: Hero · Stats · Our Story · Manufacturing · Precision · Certifications · OEM Process
+ * Sections: Hero · Stats · Our Story · Manufacturing · Precision · Certifications
  */
 
 import { useEffect, useState, type CSSProperties } from "react";
@@ -9,7 +9,6 @@ import { Link } from "wouter";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SEO from "@/components/common/SEO";
-import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import { useTranslation } from "@/lib/useTranslation";
 
 // ── Data — only language-invariant fields (year, image src, code values)
@@ -166,7 +165,7 @@ const HERO_NAV_ANCHORS = [
 // ── Component ─────────────────────────────────────────────────────────────────
 
 export default function About() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [certZoom, setCertZoom] = useState(false);
 
   // Cross-page anchors (e.g. /about#certifications): the global ScrollToTop
@@ -216,10 +215,11 @@ export default function About() {
         ]}
       />
       <Navbar />
+      <main>
 
       {/* 1. HERO */}
       <section className="pt-[74px]">
-        <div className="flex flex-col lg:flex-row h-[calc(100vh-74px)]">
+        <div className="flex flex-col lg:min-h-[calc(100vh-74px)] lg:flex-row">
           <motion.div
             className="flex flex-col px-8 sm:px-14 lg:px-20 py-14 lg:py-20 bg-white lg:w-[44%] flex-shrink-0 border-b lg:border-b-0 lg:border-r border-slate-200"
             initial={{ opacity: 0, y: 24 }}
@@ -227,14 +227,16 @@ export default function About() {
             transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <div className="flex-1 flex flex-col justify-center max-w-sm">
-              <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-6">
-                {t("about.hero.eyebrow")}
-              </p>
-              <h1 className="text-[clamp(2.4rem,5.5vw,4rem)] font-black text-[#001f4d] leading-none tracking-tight  mb-7">
+              {lang !== "en" && (
+                <p className="text-[14px] font-semibold tracking-[0.28em]  text-muted-foreground mb-6">
+                  {t("about.hero.eyebrow")}
+                </p>
+              )}
+              <h1 className="text-[42px] lg:text-[66px] font-black text-[#001f4d] leading-none tracking-tight  mb-7">
                 {t("about.hero.headline")}
               </h1>
               <div className="w-12 h-[3px] bg-[#001f4d] mb-7" />
-              <p className="text-slate-500 text-[16px] leading-relaxed mb-10">
+              <p className="text-description text-muted-foreground leading-relaxed mb-10">
                 {t("about.hero.body")}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -242,7 +244,7 @@ export default function About() {
                   <a
                     key={a.href}
                     href={a.href}
-                    className="text-[11px] font-semibold tracking-[0.14em]  border border-slate-200 px-3 py-1.5 text-slate-400 hover:border-[#001f4d] hover:text-[#001f4d] transition-colors"
+                    className="text-[14px] font-semibold tracking-[0.14em]  border border-slate-200 px-3 py-1.5 text-muted-foreground hover:border-[#001f4d] hover:text-[#001f4d] transition-colors"
                   >
                     {t(a.labelKey)}
                   </a>
@@ -260,21 +262,29 @@ export default function About() {
               height={887}
               decoding="async"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/75 px-8 py-4">
-              <p className="text-[11px] font-semibold tracking-[0.22em]  text-white/70">
-                {t("about.hero.imageCaption")}
-              </p>
-            </div>
+            {lang !== "en" && (
+              <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/75 px-8 py-4">
+                <p className="text-[14px] font-semibold tracking-[0.22em]  text-white/70">
+                  {t("about.hero.imageCaption")}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </section>
 
       {/* 2. FACTORY VIDEO */}
-      <section className="bg-slate-50 border-y border-slate-200">
-        <div className="max-w-5xl mx-auto px-6 sm:px-8 py-8 lg:py-10">
-          <p className="text-[11px] font-semibold tracking-[0.28em] text-slate-400 mb-5">
-            {t("about.video.eyebrow")}
-          </p>
+      <section className="site-section bg-slate-50 border-y border-slate-200">
+        <div className="site-content max-w-5xl mx-auto px-6 sm:px-8 py-8 lg:py-10">
+          {lang === "en" ? (
+            <h2 className="text-3xl md:text-4xl font-black text-[#001f4d] tracking-tight mb-6">
+              {t("about.video.eyebrow")}
+            </h2>
+          ) : (
+            <p className="text-[14px] font-semibold tracking-[0.28em] text-muted-foreground mb-5">
+              {t("about.video.eyebrow")}
+            </p>
+          )}
           <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
             <iframe
               className="absolute inset-0 w-full h-full"
@@ -291,13 +301,15 @@ export default function About() {
       {/* 3. OUR STORY */}
       <section
         id="story"
-        className="bg-white py-24 lg:py-28 border-b border-slate-200"
+        className="site-section bg-white py-24 lg:py-28 border-b border-slate-200"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
-              {t("about.story.eyebrow")}
-            </p>
+            {lang !== "en" && (
+              <p className="text-[14px] font-semibold tracking-[0.28em]  text-muted-foreground mb-3">
+                {t("about.story.eyebrow")}
+              </p>
+            )}
             <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
               {t("about.story.headline")}
             </h2>
@@ -328,13 +340,13 @@ export default function About() {
                       </div>
                     </div>
                     <div>
-                      <p className="text-[11px] font-black tracking-[0.2em] text-slate-400 mb-1.5">
+                      <p className="text-[14px] font-black tracking-[0.2em] text-muted-foreground mb-1.5">
                         {epoch.year}
                       </p>
-                      <p className="text-[14px] font-black  tracking-tight text-[#001f4d] leading-snug mb-2">
+                      <p className="text-[16px] font-black  tracking-tight text-[#001f4d] leading-snug mb-2">
                         {t(epoch.titleKey)}
                       </p>
-                      <p className="text-[15px] text-slate-500 leading-relaxed max-w-xs">
+                      <p className="text-description text-muted-foreground leading-relaxed max-w-xs">
                         {t(epoch.descKey)}
                       </p>
                     </div>
@@ -389,7 +401,7 @@ export default function About() {
                     height={518}
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-black/40 px-6 py-4 border-t border-white/10">
-                    <p className="text-[10px] font-semibold tracking-[0.2em]  text-white/60">
+                    <p className="text-[12px] font-semibold tracking-[0.2em]  text-white/60">
                       {t("about.story.image4Caption")}
                     </p>
                   </div>
@@ -403,13 +415,15 @@ export default function About() {
       {/* 4. MANUFACTURING */}
       <section
         id="manufacturing"
-        className="py-24 lg:py-28 bg-slate-50 border-b border-slate-200"
+        className="site-section py-24 lg:py-28 bg-slate-50 border-b border-slate-200"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
-              {t("about.mfg.eyebrow")}
-            </p>
+            {lang !== "en" && (
+              <p className="text-[14px] font-semibold tracking-[0.28em]  text-muted-foreground mb-3">
+                {t("about.mfg.eyebrow")}
+              </p>
+            )}
             <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
               {t("about.mfg.headline")}
             </h2>
@@ -429,27 +443,27 @@ export default function About() {
             </div>
 
             <div className="flex-1 flex flex-col justify-center gap-8">
-              <p className="text-[15px] text-slate-500 leading-relaxed">
+              <p className="text-description text-muted-foreground leading-relaxed">
                 {t("about.mfg.body")}
               </p>
               <div className="flex flex-col gap-7">
                 {CAPABILITIES.map(cap => (
                   <div key={cap.num} className="flex gap-5 items-start">
-                    <span className="text-[11px] font-black text-slate-300 tracking-widest flex-shrink-0 mt-0.5 w-6">
+                    <span className="text-[14px] font-black text-muted-foreground tracking-widest flex-shrink-0 mt-0.5 w-6">
                       {cap.num}
                     </span>
                     <div>
-                      <p className="text-[15px] font-black  tracking-tight text-[#001f4d] mb-1">
+                      <p className="text-[18px] font-black  tracking-tight text-[#001f4d] mb-1">
                         {t(cap.titleKey)}
                       </p>
-                      <p className="text-[15px] text-slate-500 leading-relaxed">
+                      <p className="text-description text-muted-foreground leading-relaxed">
                         {t(cap.descKey)}
                       </p>
                     </div>
                   </div>
                 ))}
               </div>
-              <p className="text-[15px] text-slate-500 leading-relaxed">
+              <p className="text-description text-muted-foreground leading-relaxed">
                 The same foundry, tool-steel metallurgy and precision-grinding
                 lines now also produce{" "}
                 <Link
@@ -480,7 +494,7 @@ export default function About() {
                   height={400}
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/70 px-4 py-2.5">
-                  <p className="text-[10px] font-black tracking-[0.2em]  text-white">
+                  <p className="text-[12px] font-black tracking-[0.2em]  text-white">
                     {t(img.labelKey)}
                   </p>
                 </div>
@@ -493,13 +507,15 @@ export default function About() {
       {/* 5. PRECISION STANDARDS */}
       <section
         id="precision"
-        className="py-24 lg:py-28 bg-white border-b border-slate-200"
+        className="site-section py-24 lg:py-28 bg-white border-b border-slate-200"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-14">
-            <p className="text-[11px] font-semibold tracking-[0.28em]  text-slate-400 mb-3">
-              {t("about.precision.eyebrow")}
-            </p>
+            {lang !== "en" && (
+              <p className="text-[14px] font-semibold tracking-[0.28em]  text-muted-foreground mb-3">
+                {t("about.precision.eyebrow")}
+              </p>
+            )}
             <h2 className="text-3xl md:text-4xl font-black text-[#001f4d]  tracking-tight">
               {t("about.precision.headline")}
             </h2>
@@ -508,13 +524,13 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-slate-200 mb-14">
             {PRECISION_STATS.map((s, i) => (
               <div key={i} className="bg-white px-8 py-8">
-                <p className="text-[clamp(1.4rem,3vw,2rem)] font-black text-[#001f4d] leading-none tracking-tight mb-2">
+                <p className="font-display text-[26px] lg:text-[34px] font-bold text-[#001f4d] leading-none tracking-tight mb-2">
                   {s.value}
                 </p>
-                <p className="text-[12px] font-semibold  tracking-[0.14em] text-slate-500 leading-snug mb-1">
+                <p className="text-[14px] font-semibold  tracking-[0.14em] text-muted-foreground leading-snug mb-1">
                   {t(s.labelKey)}
                 </p>
-                <p className="text-[11px]  tracking-[0.12em] text-slate-400">
+                <p className="text-[14px]  tracking-[0.12em] text-muted-foreground">
                   {t(s.subKey)}
                 </p>
               </div>
@@ -532,18 +548,18 @@ export default function About() {
                   decoding="async"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-[#001f4d]/80 px-5 py-3">
-                  <p className="text-[10px] font-black tracking-[0.18em]  text-white/60 mb-0.5">
+                  <p className="text-[12px] font-black tracking-[0.18em]  text-white/60 mb-0.5">
                     {t("about.precision.imageEyebrow")}
                   </p>
-                  <p className="text-[16px] font-black text-white">
+                  <p className="text-[18px] font-black text-white">
                     {t("about.precision.imageTitle")}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="flex-1">
-              <p className="text-[11px] font-black tracking-[0.22em]  text-slate-400 mb-5">
+            <div className="min-w-0 flex-1">
+              <p className="text-[14px] font-black tracking-[0.22em]  text-muted-foreground mb-5">
                 {t("about.precision.tableEyebrow")}
               </p>
               <div className="border border-slate-200">
@@ -552,13 +568,13 @@ export default function About() {
                     key={i}
                     className={`flex items-start gap-4 px-4 py-3 ${i < MATERIALS.length - 1 ? "border-b border-slate-200" : ""}`}
                   >
-                    <span className="text-[13px] font-black text-[#001f4d] w-48 flex-shrink-0 leading-snug">
+                    <span className="text-[16px] font-black text-[#001f4d] w-36 sm:w-48 flex-shrink-0 leading-snug">
                       {m.grade}
                     </span>
-                    <span className="text-[13px] font-mono text-slate-400 w-24 flex-shrink-0">
+                    <span className="text-[16px] font-mono text-muted-foreground w-24 flex-shrink-0">
                       {m.hrc}
                     </span>
-                    <span className="text-[13px] text-slate-500 hidden sm:block">
+                    <span className="text-[16px] text-muted-foreground hidden sm:block">
                       {t(m.useKey)}
                     </span>
                   </div>
@@ -572,13 +588,15 @@ export default function About() {
       {/* 6. CERTIFICATIONS */}
       <section
         id="certifications"
-        className="py-28 bg-white border-b border-slate-200 scroll-mt-[74px]"
+        className="site-section py-28 bg-white border-b border-slate-200 scroll-mt-[74px]"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
           <div className="mb-12">
-            <p className="text-[11px] font-semibold tracking-[0.25em]  text-slate-400 mb-3">
-              {t("about.cert.eyebrow")}
-            </p>
+            {lang !== "en" && (
+              <p className="text-[14px] font-semibold tracking-[0.25em]  text-muted-foreground mb-3">
+                {t("about.cert.eyebrow")}
+              </p>
+            )}
             <h2 className="text-3xl font-black text-[#001f4d]  tracking-tight">
               {t("about.cert.headline")}
             </h2>
@@ -631,26 +649,26 @@ export default function About() {
               </h3>
               <dl className="flex flex-col gap-5">
                 <div>
-                  <dt className="mb-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                  <dt className="mb-1.5 text-[12px] font-black  tracking-[0.2em] text-muted-foreground">
                     {t("about.cert.featured.issuerLabel")}
                   </dt>
-                  <dd className="text-[14px] leading-snug text-[#001f4d]">
+                  <dd className="text-[16px] leading-snug text-[#001f4d]">
                     {ISO_CERTIFICATE.issuer}
                   </dd>
                 </div>
                 <div>
-                  <dt className="mb-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                  <dt className="mb-1.5 text-[12px] font-black  tracking-[0.2em] text-muted-foreground">
                     {t("about.cert.featured.accredLabel")}
                   </dt>
-                  <dd className="text-[14px] leading-snug text-[#001f4d]">
+                  <dd className="text-[16px] leading-snug text-[#001f4d]">
                     {ISO_CERTIFICATE.accreditation}
                   </dd>
                 </div>
                 <div>
-                  <dt className="mb-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                  <dt className="mb-1.5 text-[12px] font-black  tracking-[0.2em] text-muted-foreground">
                     {t("about.cert.featured.validLabel")}
                   </dt>
-                  <dd className="font-mono text-[14px] leading-snug text-[#001f4d]">
+                  <dd className="font-mono text-[16px] leading-snug text-[#001f4d]">
                     {ISO_CERTIFICATE.validity}
                   </dd>
                 </div>
@@ -664,10 +682,10 @@ export default function About() {
                 key={i}
                 className="border border-slate-200 bg-white px-4 py-10 flex flex-col items-center justify-center gap-2 hover:border-[#001f4d] hover:bg-[#001f4d] group transition-colors cursor-default"
               >
-                <span className="text-[11px] font-black  tracking-wide text-[#001f4d] group-hover:text-white text-center leading-tight transition-colors">
+                <span className="text-[14px] font-black  tracking-wide text-[#001f4d] group-hover:text-white text-center leading-tight transition-colors">
                   {t(cert.labelKey)}
                 </span>
-                <span className="text-[9px] font-medium  tracking-wider text-slate-400 group-hover:text-white/60 text-center transition-colors">
+                <span className="text-[12px] font-medium  tracking-wider text-muted-foreground group-hover:text-white/60 text-center transition-colors">
                   {t(cert.subKey)}
                 </span>
               </div>
@@ -675,9 +693,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* 7. OEM PROCESS */}
-      <IndustryOemPipeline />
 
       {/* Certificate lightbox — local to this page, framer-motion fade.
           Closes on Escape (effect above), backdrop click, and the × button. */}
@@ -725,6 +740,7 @@ export default function About() {
         )}
       </AnimatePresence>
 
+      </main>
       <Footer />
     </div>
   );

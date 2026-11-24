@@ -116,6 +116,10 @@ export default function MixerProductDetail() {
   const heroSpecs = part.specs.filter(
     (_, i) => isSpec(i, /^material$/i) || isSpec(i, /^application$/i)
   );
+  const heroDescription =
+    lang === "en" && part.sector === "seal" && part.trustProcess
+      ? `${part.trustProcess.charAt(0)}${part.trustProcess.slice(1).toLowerCase()} ${part.description.charAt(0).toLowerCase()}${part.description.slice(1)}`
+      : part.description;
 
   const productTrustItems = [
     trustItems[0],
@@ -133,6 +137,7 @@ export default function MixerProductDetail() {
     t("mixer.product.seoTitle")
       .replace("{{name}}", part.name)
       .replace("{{oem}}", oemTop);
+  const sectionBleed = lang === "en" ? "" : "-mx-4 sm:-mx-8";
 
   return (
     <div className="bg-white min-h-screen flex flex-col antialiased">
@@ -174,12 +179,12 @@ export default function MixerProductDetail() {
           ]}
         />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-8">
-          <div className="flex flex-col gap-y-8">
+        <div className={lang === "en" ? "pt-8" : "max-w-7xl mx-auto px-4 sm:px-8 pt-8"}>
+          <div className="flex flex-col gap-y-12 lg:gap-y-16">
             {/* Zone 1 — Hero */}
             <section
               aria-label={part.fullName || part.name}
-              className="flex flex-col lg:flex-row overflow-hidden"
+              className={`flex flex-col lg:flex-row overflow-hidden ${lang === "en" ? "w-full max-w-7xl mx-auto px-4 sm:px-8" : ""}`}
             >
               <div className="lg:w-[580px] lg:shrink-0 border-r border-slate-200">
                 <div
@@ -195,7 +200,7 @@ export default function MixerProductDetail() {
                     width={580}
                     height={520}
                     onError={e => {
-                      e.currentTarget.src = "/images/products/product.webp";
+                      e.currentTarget.src = "/sureay.svg";
                     }}
                   />
                 </div>
@@ -225,7 +230,7 @@ export default function MixerProductDetail() {
                           decoding="async"
                           onError={e => {
                             e.currentTarget.src =
-                              "/images/products/product.webp";
+                              "/sureay.svg";
                           }}
                         />
                       </button>
@@ -236,23 +241,25 @@ export default function MixerProductDetail() {
 
               <div className="flex-1 p-6 lg:p-10 flex flex-col justify-between">
                 <div className="space-y-5">
-                  <h1 className="font-black text-[26px] text-[#001f4d] leading-[1.15] tracking-tight">
+                  <h1 className="font-black text-[28px] text-[#001f4d] leading-[1.15] tracking-tight">
                     {part.fullName || part.name}
                   </h1>
-                  <p className="text-[16px] font-bold text-black tracking-widest border-l-2 border-[#001f4d] pl-3">
-                    {part.categoryDisplay}
-                  </p>
-                  <p className="text-[16px] text-black leading-relaxed">
-                    {part.description}
+                  {lang !== "en" && (
+                    <p className="text-[18px] font-bold text-black tracking-widest border-l-2 border-[#001f4d] pl-3">
+                      {part.categoryDisplay}
+                    </p>
+                  )}
+                  <p className="text-description text-black leading-relaxed">
+                    {heroDescription}
                   </p>
                   {heroSpecs.length > 0 && (
                     <ul className="space-y-2.5 pt-1">
                       {heroSpecs.map((spec, i) => (
                         <li key={i} className="flex items-baseline gap-2">
-                          <span className="text-black font-black flex-shrink-0 text-[11px]">
+                          <span className="text-black font-black flex-shrink-0 text-[14px]">
                             ■
                           </span>
-                          <span className="text-[16px] leading-snug">
+                          <span className="text-[18px] leading-snug">
                             <span className="font-bold text-black tracking-wide">
                               {spec.label}:{" "}
                             </span>
@@ -282,48 +289,53 @@ export default function MixerProductDetail() {
               </div>
             </section>
 
-            {/* Zone 1b — Trust strip */}
-            <div className="-mx-4 sm:-mx-8">
-              <section
-                aria-label={t("mixer.product.trustAria")}
-                className="border-y border-slate-700 bg-white py-4"
-              >
-                <div className="max-w-7xl mx-auto px-6 sm:px-8">
-                  <div className="flex flex-wrap items-center justify-center lg:justify-between gap-x-8 gap-y-3">
-                    {productTrustItems.map((item, i) => (
-                      <p
-                        key={i}
-                        className="font-mono text-[11px] text-slate-700 tracking-widest"
-                      >
-                        ■ {item}
-                      </p>
-                    ))}
+            {lang !== "en" && (
+              <div className="-mx-4 sm:-mx-8">
+                <section
+                  aria-label={t("mixer.product.trustAria")}
+                  className="border-y border-slate-700 bg-white py-4"
+                >
+                  <div className="max-w-7xl mx-auto px-6 sm:px-8">
+                    <div className="flex flex-wrap items-center justify-center lg:justify-between gap-x-8 gap-y-3">
+                      {productTrustItems.map((item, i) => (
+                        <p
+                          key={i}
+                          className="font-mono text-[14px] text-slate-700 tracking-widest"
+                        >
+                          ■ {item}
+                        </p>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </section>
-            </div>
+                </section>
+              </div>
+            )}
 
             {/* Zone 2 — Decisive Specs (reused) */}
             {/* TODO: dimensioned spec drawing — primary image used until a
                 CAD/dimension asset exists */}
-            <div className="-mx-4 sm:-mx-8">
+            <div className={sectionBleed}>
               <DecisiveSpecs blade={bladeLike} specImage={part.image} />
             </div>
 
             {/* Zone 2b — Grade selection guidance (how to choose) */}
-            <div className="-mx-4 sm:-mx-8 pt-8">
+            <div className={sectionBleed}>
               <section
                 aria-label={t("mixer.grade.heading")}
-                className="max-w-7xl mx-auto px-6 sm:px-8"
+                className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
               >
-                <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                  [ {t("mixer.grade.eyebrow")} ]
-                </p>
+                {lang !== "en" && (
+                  <p className="font-mono text-[12px] text-slate-700 tracking-widest mb-3">
+                    {t("mixer.grade.eyebrow")}
+                  </p>
+                )}
                 <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-4">
                   {t("mixer.grade.heading")}
                 </h2>
-                <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-8">
-                  {guide.intro}
+                <p className="text-description text-slate-600 leading-[1.7] max-w-3xl mb-8">
+                  {lang === "en"
+                    ? `${guide.intro.replace(/:\s*$/, ".")} Share your aggregate type, output and plant model for a grade recommendation with your quote.`
+                    : guide.intro}
                 </p>
                 <div className="border border-slate-300 divide-y divide-slate-200">
                   {guide.rows.map(row => (
@@ -331,35 +343,39 @@ export default function MixerProductDetail() {
                       key={row.duty}
                       className="grid grid-cols-1 sm:grid-cols-[minmax(0,16rem)_1fr] gap-x-6 gap-y-1 px-5 py-4"
                     >
-                      <span className="font-black text-[14px] text-[#001f4d] tracking-tight border-l-2 border-[#001f4d] pl-3">
+                      <span className="font-black text-[16px] text-[#001f4d] tracking-tight border-l-2 border-[#001f4d] pl-3">
                         {row.duty}
                       </span>
-                      <span className="text-[14px] text-slate-600 leading-snug">
+                      <span className="text-[16px] text-slate-600 leading-snug">
                         {row.grade}
                       </span>
                     </div>
                   ))}
                 </div>
-                <p className="text-[13px] text-slate-500 leading-[1.7] mt-5 max-w-3xl">
-                  {t("mixer.grade.footnote")}
-                </p>
+                {lang !== "en" && (
+                  <p className="text-description text-muted-foreground leading-[1.7] mt-5 max-w-3xl">
+                    {t("mixer.grade.footnote")}
+                  </p>
+                )}
               </section>
             </div>
 
             {/* Zone 2c — Available Grades / Variants (what's on offer) */}
             {part.variants && part.variants.length > 0 && (
-              <div className="-mx-4 sm:-mx-8 pt-8">
+              <div className={sectionBleed}>
                 <section
                   aria-label={t("mixer.variants.heading")}
-                  className="max-w-7xl mx-auto px-6 sm:px-8"
+                  className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
                 >
-                  <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                    [ {t("mixer.variants.eyebrow")} ]
-                  </p>
+                  {lang !== "en" && (
+                    <p className="font-mono text-[12px] text-slate-700 tracking-widest mb-3">
+                      {t("mixer.variants.eyebrow")}
+                    </p>
+                  )}
                   <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-4">
                     {t("mixer.variants.heading")}
                   </h2>
-                  <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-8">
+                  <p className="text-description text-slate-600 leading-[1.7] max-w-3xl mb-8">
                     {t("mixer.variants.lead")}
                   </p>
                   <div className="border border-slate-300 divide-y divide-slate-200">
@@ -368,10 +384,10 @@ export default function MixerProductDetail() {
                         key={v.grade}
                         className="grid grid-cols-1 sm:grid-cols-[minmax(0,16rem)_1fr] gap-x-6 gap-y-1 px-5 py-4 hover:bg-slate-50 transition-colors"
                       >
-                        <span className="font-black text-[14px] text-[#001f4d] tracking-tight border-l-2 border-[#001f4d] pl-3">
+                        <span className="font-black text-[16px] text-[#001f4d] tracking-tight border-l-2 border-[#001f4d] pl-3">
                           {v.grade}
                         </span>
-                        <span className="text-[14px] text-slate-600 leading-snug">
+                        <span className="text-[16px] text-slate-600 leading-snug">
                           {v.note}
                         </span>
                       </div>
@@ -382,42 +398,52 @@ export default function MixerProductDetail() {
             )}
 
             {/* Inline RFQ prompt (reused) — before OEM / decision content */}
-            <div className="-mx-4 sm:-mx-8 pt-8">
+            <div className={sectionBleed}>
               <InlineRFQPrompt />
             </div>
 
             {/* Zone 3 — OEM compatibility (mixer wording) */}
             {part.compatibleMachines.length > 0 && (
-              <div className="-mx-4 sm:-mx-8">
+              <div className={sectionBleed}>
                 <section
                   aria-label={t("mixer.product.oemHeading")}
-                  className="max-w-7xl mx-auto px-6 sm:px-8"
+                  className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
                 >
-                  <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                    [ {t("mixer.oem.eyebrow")} ]
-                  </p>
-                  <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-10">
+                  {lang !== "en" && (
+                    <p className="font-mono text-[12px] text-slate-700 tracking-widest mb-3">
+                      {t("mixer.oem.eyebrow")}
+                    </p>
+                  )}
+                  <h2 className={`font-black text-4xl text-[#001f4d] tracking-tight ${lang === "en" ? "mb-4" : "mb-10"}`}>
                     {t("mixer.product.oemHeading")}
                   </h2>
+                  {lang === "en" && (
+                    <p className="text-description text-slate-600 leading-[1.7] max-w-3xl mb-8">
+                      {part.compatibleMachinesIntro ??
+                        "Get replacement wear parts tailored to your mixing plant. Share your machine model and a drawing or sample with Sureay for a replacement quotation."}
+                    </p>
+                  )}
                   <div className="flex flex-wrap gap-3">
                     {part.compatibleMachines.map(brand => (
                       <span
                         key={brand}
-                        className="border-t-2 border-t-[#001f4d] border border-slate-300 bg-white px-4 py-2 font-mono text-[13px] text-[#001f4d] font-semibold tracking-wide"
+                        className="border-t-2 border-t-[#001f4d] border border-slate-300 bg-white px-4 py-2 font-mono text-[16px] text-[#001f4d] font-semibold tracking-wide"
                       >
-                        {brand}&#174;
+                        {brand}®
                       </span>
                     ))}
                   </div>
-                  <p className="font-mono text-[11px] text-slate-500 tracking-widest mt-6">
-                    &#174; {t("mixer.oem.trademarkNote")}
-                  </p>
+                  {lang !== "en" && (
+                    <p className="font-mono text-[14px] text-muted-foreground tracking-widest mt-6">
+                      &#174; {t("mixer.oem.trademarkNote")}
+                    </p>
+                  )}
                 </section>
               </div>
             )}
 
             {/* Zone 4 — Technical Audit (reused) */}
-            <div className="-mx-4 sm:-mx-8 pt-8">
+            <div className={sectionBleed}>
               <TechnicalAudit blade={bladeLike} />
             </div>
           </div>
@@ -425,15 +451,17 @@ export default function MixerProductDetail() {
 
         {/* Overview — long-form detail, below the decision content */}
         {part.fullDescription && (
-          <div className="mt-16">
+          <div className="mt-12 lg:mt-16">
             <section
               aria-label={t("mixer.product.overview.heading")}
-              className="max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-6"
+              className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-6"
             >
               <aside className="lg:col-span-4">
-                <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                  [ {t("mixer.category.overview.eyebrow")} ]
-                </p>
+                {lang !== "en" && (
+                  <p className="font-mono text-[12px] text-slate-700 tracking-widest mb-3">
+                    {t("mixer.category.overview.eyebrow")}
+                  </p>
+                )}
                 <h2 className="font-black text-3xl lg:text-4xl text-[#001f4d] tracking-tight leading-[1.1]">
                   {t("mixer.product.overview.heading")}
                 </h2>
@@ -448,7 +476,7 @@ export default function MixerProductDetail() {
                     loading="lazy"
                     decoding="async"
                     onError={e => {
-                      e.currentTarget.src = "/images/products/product.webp";
+                      e.currentTarget.src = "/sureay.svg";
                     }}
                   />
                 </div>
@@ -457,7 +485,7 @@ export default function MixerProductDetail() {
                 {part.fullDescription.split(/\n\n+/).map((para, i) => (
                   <p
                     key={i}
-                    className="text-[16px] text-slate-700 leading-[1.8] max-w-[70ch]"
+                    className="text-[18px] text-slate-700 leading-[1.8] max-w-[70ch]"
                   >
                     {para}
                   </p>
@@ -468,30 +496,32 @@ export default function MixerProductDetail() {
         )}
 
         {/* How to Order — reverse-engineer process (primes the decision) */}
-        <div className="mt-16">
+        <div className="mt-12 lg:mt-16">
           <section
             aria-label={t("mixer.order.eyebrow")}
-            className="max-w-7xl mx-auto px-6 sm:px-8"
+            className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
           >
-            <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-              [ {t("mixer.order.eyebrow")} ]
-            </p>
+            {lang !== "en" && (
+              <p className="font-mono text-[12px] text-slate-700 tracking-widest mb-3">
+                {t("mixer.order.eyebrow")}
+              </p>
+            )}
             <h2 className="font-black text-3xl lg:text-4xl text-[#001f4d] tracking-tight mb-4">
               {t("mixer.order.heading")}
             </h2>
-            <p className="text-[15px] text-slate-600 leading-[1.7] max-w-3xl mb-10">
+            <p className="text-description text-slate-600 leading-[1.7] max-w-3xl mb-10">
               {t("mixer.order.lead")}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-200 border border-slate-200">
               {orderSteps.map(step => (
                 <div key={step.tag} className="bg-white p-6 flex flex-col">
-                  <span className="font-mono text-[11px] text-[#003a8c] tracking-[0.28em] mb-3">
+                  <span className="font-mono text-[14px] text-[#003a8c] tracking-[0.28em] mb-3">
                     {step.tag}
                   </span>
                   <h3 className="font-black text-lg text-[#001f4d] tracking-tight leading-tight mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-[14px] text-slate-600 leading-[1.7]">
+                  <p className="text-description text-slate-600 leading-[1.7]">
                     {step.body}
                   </p>
                 </div>
@@ -508,9 +538,9 @@ export default function MixerProductDetail() {
           ].includes(part.id) && (
             <section
               aria-label="Mixer material selection guide"
-              className="max-w-7xl mx-auto px-6 sm:px-8 mt-12"
+              className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8 mt-12"
             >
-              <div className="border-l-[3px] border-[#e8b84b] bg-slate-50 p-6">
+              <div className="border-l-[3px] border-[#001f4d] bg-slate-50 p-6">
                 <h2 className="font-bold text-xl text-[#001f4d] mb-3">
                   Choose the material for your mixer duty
                 </h2>
@@ -530,14 +560,16 @@ export default function MixerProductDetail() {
 
         {/* Zone 5 — Related mixer parts (same category only) */}
         {related.length > 0 && (
-          <div className="mt-16">
+          <div className="mt-12 lg:mt-16">
             <section
               aria-label={t("mixer.product.related.eyebrow")}
-              className="max-w-7xl mx-auto px-6 sm:px-8"
+              className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
             >
-              <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-                [ {t("mixer.product.related.eyebrow")} ]
-              </p>
+              {lang !== "en" && (
+                <p className="font-mono text-[12px] text-slate-700 tracking-widest mb-3">
+                  {t("mixer.product.related.eyebrow")}
+                </p>
+              )}
               <div className="flex items-end justify-between gap-4 mb-6">
                 <h2 className="font-black text-3xl text-[#001f4d] tracking-tight">
                   {t("mixer.product.related.heading").replace(
@@ -547,7 +579,7 @@ export default function MixerProductDetail() {
                 </h2>
                 {category && (
                   <Link href={category.link}>
-                    <span className="font-mono text-[10px] text-slate-700 tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
+                    <span className="font-mono text-[12px] text-slate-700 tracking-[0.2em] hover:text-[#001f4d] cursor-pointer transition-colors">
                       {t("mixer.product.viewAll")} →
                     </span>
                   </Link>
@@ -559,7 +591,7 @@ export default function MixerProductDetail() {
         )}
 
         {/* Zone 6 — FAQ (reused) */}
-        <div className="mt-16">
+        <div className="mt-12 lg:mt-16">
           <ProductFAQ
             faqs={{
               technical: part.faq ?? [],
@@ -570,16 +602,17 @@ export default function MixerProductDetail() {
         </div>
 
         {/* Zone 7 — RFQ form (reused) */}
-        <div id="rfq">
+        <div id="rfq" className="mt-8 lg:mt-12">
           <ContactRFQ productName={part.name} formLocation="mixer_parts" />
         </div>
 
-        {/* OEM-brand disclaimer (page footer) */}
-        <div className="border-t border-slate-200 bg-slate-50">
-          <p className="max-w-7xl mx-auto px-6 sm:px-8 py-6 font-mono text-[11px] text-slate-500 tracking-wide leading-relaxed">
-            {t("mixer.oem.disclaimer")}
-          </p>
-        </div>
+        {lang !== "en" && (
+          <div className="border-t border-slate-200 bg-slate-50">
+            <p className="max-w-7xl mx-auto px-6 sm:px-8 py-6 font-mono text-[14px] text-muted-foreground tracking-wide leading-relaxed">
+              {t("mixer.oem.disclaimer")}
+            </p>
+          </div>
+        )}
       </main>
 
       <FloatingContactButtons

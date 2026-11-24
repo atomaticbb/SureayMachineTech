@@ -4,24 +4,21 @@
  * Architecture mirrors plastic-industry.tsx
  */
 
-import { Helmet } from "react-helmet-async";
 import SEO from "@/components/common/SEO";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import IndustryHero from "@/components/industry/IndustryHero";
 import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
-import CategoryLinksRow from "@/components/industry/CategoryLinksRow";
+import { industryProductList } from "@/components/industry/industryProductList";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
-import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
+import { getIndustryBlades } from "@/data/industry-blades";
 import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
-  IndustryProduct,
   IndustryNarrative,
   IndustrySpec,
   IndustryMaterial,
@@ -42,62 +39,6 @@ const GALLERY_IMAGES = [
 const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
 
-// ─── JSON-LD Structured Data ─────────────────────────────────────────────────
-const PAGE_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Flexible Converting & Packaging Tooling",
-  url: "https://sureay.com/converting-industry",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      item: {
-        "@type": "Product",
-        name: "Film & Tape Slitter Knives",
-        image:
-          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-        description:
-          "Precision circular slitting knives for BOPP film, flexible packaging, and label converting at ±0.002mm tolerance.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/rotary-slitter-knives",
-        offers: getBladeOffer("rotary-slitter-knives"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      item: {
-        "@type": "Product",
-        name: "Nonwoven Slitter Knives",
-        image:
-          "https://sureay.com/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-        description:
-          "M2 HSS circular slitter knives with 15–20° positive rake geometry for spunbond, SMS, and meltblown nonwoven fabrics.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/nonwoven-slitter-knives",
-        offers: getBladeOffer("nonwoven-slitter-knives"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      item: {
-        "@type": "Product",
-        name: "Bottom Grooved Anvil Knives",
-        image:
-          "https://sureay.com/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-        description:
-          "Bottom grooved anvil knives for film, tape, and flexible packaging shear slitting systems. Precision-ground groove geometry for consistent nip pressure.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/bottom-grooved-anvil-knives",
-        offers: getBladeOffer("bottom-grooved-anvil-knives"),
-      },
-    },
-  ],
-};
-
-// ─────────────────────────────────────────────────────────────────────────────
 export default function ConvertingIndustry() {
   const lang = useLang();
   const { t } = useTranslation();
@@ -105,7 +46,6 @@ export default function ConvertingIndustry() {
   const HERO_DATA: IndustryHeroData = {
     breadcrumb: t("industry.converting.hero.breadcrumb"),
     h1: t("industry.converting.hero.h1"),
-    h2: t("industry.converting.hero.h2"),
     body1: t("industry.converting.hero.body1"),
     body2: t("industry.converting.hero.body2"),
     ctaHref: "#tooling-matrix",
@@ -160,30 +100,18 @@ export default function ConvertingIndustry() {
     {
       name: t("industry.converting.materials.m2.name"),
       abrasion: t("industry.converting.materials.m2.abrasion"),
-      grade: "D2 / M2 HSS with TiN",
+      grade: t("industry.grade.tin"),
       image: "/images/materials/label-stock.webp",
     },
     {
       name: t("industry.converting.materials.m3.name"),
       abrasion: t("industry.converting.materials.m3.abrasion"),
-      grade: "M2 HSS (ESD Coated)",
+      grade: t("industry.grade.esd"),
       image: "/images/materials/medical-nonwoven.webp",
     },
   ];
 
-  const PRODUCTS: IndustryProduct[] = getBlades(lang)
-    .filter(blade => blade.sector === "converting")
-    .map((blade, index) => ({
-      category: blade.categoryDisplay,
-      name: blade.name,
-      image: blade.image,
-      href: blade.link,
-      isFlagship: index === 0,
-    }));
-  const FILTER_CATEGORIES = [
-    "ALL",
-    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-  ];
+  const industryBlades = getIndustryBlades(getBlades(lang), "converting");
 
   return (
     <>
@@ -200,26 +128,22 @@ export default function ConvertingIndustry() {
             url: "/converting-industry",
           },
         ]}
+        preloadImage={LCP_PRELOAD}
+        extraJsonLd={[
+          industryProductList(industryBlades, HERO_DATA.h1, "/converting-industry", lang),
+        ]}
       />
-      <Helmet>
-        <link rel="preload" as="image" href={LCP_PRELOAD} />
-        <script type="application/ld+json">
-          {JSON.stringify(PAGE_SCHEMA)}
-        </script>
-      </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
         <Navbar />
-        <IndustryHero data={HERO_DATA} />
-        <IndustryToolingMatrix
-          products={PRODUCTS}
-          filterCategories={FILTER_CATEGORIES}
-        />
-        <CategoryLinksRow slugs={["slitter-knives", "log-saw-blades"]} />
-        <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
-        <IndustryMaterialFocus materials={MATERIALS} />
-        <IndustryOemPipeline />
-        <ContactRFQ />
+        <main>
+          <IndustryHero data={HERO_DATA} />
+          <IndustryToolingMatrix blades={industryBlades} />
+
+          <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
+          <IndustryMaterialFocus materials={MATERIALS} />
+          <ContactRFQ />
+        </main>
         <Footer />
       </div>
     </>

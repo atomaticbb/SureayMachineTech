@@ -76,7 +76,7 @@ interface Target {
 const TARGETS: Target[] = [
   {
     key: "blades",
-    sourcePath: path.resolve(ROOT, "client/src/data/blades.ts"),
+    sourcePath: path.resolve(ROOT, "scripts/catalog/translation-source.ts"),
     exports: [
       {
         name: "blades",
@@ -229,21 +229,22 @@ async function runBucketResumable(
   const sources = prepped.map(p => p.processed);
 
   // Resume from previous run, if any.
-  let translated: string[] = [];
+  const translated: string[] = [];
   if (fs.existsSync(cachePath)) {
     const lines = fs
       .readFileSync(cachePath, "utf-8")
       .split("\n")
       .filter(Boolean);
-    translated = lines.map(l => JSON.parse(l) as string);
-    if (translated.length > sources.length) {
-      // Source shrank since last run — invalidate cache rather than guess.
-      console.log(
-        `    [${label}] cache stale (had ${translated.length}, need ${sources.length}) — restarting`
-      );
-      fs.rmSync(cachePath);
-      translated = [];
-    } else if (translated.length > 0) {
+    for (const [i, line] of lines.entries()) {
+      const entry = JSON.parse(line);
+      if (!fields[i] || entry?.source !== fields[i].value ||
+          entry.processed !== sources[i] || typeof entry.translation !== "string" ||
+          !entry.translation.trim() || JSON.stringify(entry.path) !== JSON.stringify(fields[i].path)) {
+        throw new Error(`Incompatible checkpoint at ${cachePath}:${i + 1}. Move the old checkpoint before translating this source.`);
+      }
+      translated.push(entry.translation);
+    }
+    if (translated.length > 0) {
       console.log(
         `    [${label}] resuming from cache: ${translated.length}/${sources.length} already done`
       );
@@ -265,8 +266,12 @@ async function runBucketResumable(
     for (let i = translated.length; i < sources.length; i += batchSize) {
       const batch = sources.slice(i, i + batchSize);
       const out = await provider.translateBatch(batch, lang);
-      for (const t of out) {
-        stream.write(JSON.stringify(t) + "\n");
+      if (out.length !== batch.length || out.some(t => !t?.trim())) {
+        throw new Error(`Incomplete ${label} translation batch beginning at field ${i}.`);
+      }
+      for (const [offset, t] of out.entries()) {
+        const field = fields[i + offset];
+        stream.write(JSON.stringify({ path: field.path, source: field.value, processed: sources[i + offset], translation: t }) + "\n");
         translated.push(t);
       }
       if (

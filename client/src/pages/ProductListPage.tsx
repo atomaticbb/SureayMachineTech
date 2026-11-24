@@ -13,6 +13,7 @@ import { Link, useSearchParams } from "wouter";
 import { type BladeCategoryType, type BladeSectorType } from "@/data/blades";
 import { SECTOR_LABEL } from "@/data/blade-categories";
 import { useLang } from "@/contexts/LangContext";
+import { localizedPath } from "@/lib/i18n";
 import { useTranslation } from "@/lib/useTranslation";
 import { getBlades } from "@/data/locales";
 import ProductGrid from "@/components/product/ProductGrid";
@@ -21,14 +22,16 @@ import ProductFacetSidebar, {
   SECTOR_FACETS,
 } from "@/components/product/ProductFacetSidebar";
 import ProductPagination from "@/components/product/ProductPagination";
-import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import { gtagEvent } from "@/lib/gtag";
+import {
+  COMPLETE_CATALOG_FILENAME,
+  COMPLETE_CATALOG_URL,
+} from "@/lib/catalogPdf";
 
 // 4 columns × 4 rows.
 const PER_PAGE = 16;
 
-const CATEGORY_VALUES = CATEGORY_FACETS.map(f => f.value);
 const SECTOR_VALUES = SECTOR_FACETS.map(f => f.value);
 
 /** Reads a comma-separated query param, dropping anything not in `allowed`. */
@@ -46,71 +49,38 @@ function parseFacetParam<T extends string>(
   });
 }
 
-const FACTORY_IMAGES = [
-  {
-    src: "/images/process/premium-steel-selection.webp",
-    ref: "REF: PREMIUM STEEL SELECTION",
-    altKey: "productList.factory.altSteelSelection",
-  },
-  {
-    src: "/images/process/vacuum-heat-treatment.webp",
-    ref: "REF: VACUUM HEAT TREATMENT",
-    altKey: "productList.factory.altHeatTreatment",
-  },
-  {
-    src: "/images/process/cnc-precision-grinding.webp",
-    ref: "REF: CNC PRECISION GRINDING",
-    altKey: "productList.factory.altPrecisionGrinding",
-  },
-  {
-    src: "/images/process/quality-control.webp",
-    ref: "REF: RIGOROUS QUALITY CONTROL",
-    altKey: "productList.factory.altQualityControl",
-  },
-];
-
-const COMPLETE_CATALOG_URL = "/catalogs/sureay-complete-product-catalog.pdf";
 type CatalogState = "idle" | "form" | "loading" | "done";
 
 export default function BladeListPage() {
   const lang = useLang();
   const { t } = useTranslation();
   const blades = getBlades(lang);
-  const specialBlade = blades.find(
-    blade => blade.id === "special-shaped-blades"
-  );
   // The query string is the single source of truth for facets + page, so a
   // filtered view is shareable and the back button steps through it.
   const [searchParams, setSearchParams] = useSearchParams();
-  const [filterTop, setFilterTop] = useState(74);
   const [catalogState, setCatalogState] = useState<CatalogState>("idle");
   const [catalogEmail, setCatalogEmail] = useState("");
   const [catalogError, setCatalogError] = useState("");
   const catalogBoxRef = useRef<HTMLDivElement | null>(null);
+  const sidebarRef = useRef<HTMLDivElement | null>(null);
+  const [sidebarHeight, setSidebarHeight] = useState(0);
   const listSectionRef = useRef<HTMLElement | null>(null);
   const didMountRef = useRef<boolean>(false);
-  const filterScrollRef = useRef(0);
 
-  // Mirror navbar hide/show logic so filter bar tracks navbar position
   useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      if (y < 10) {
-        setFilterTop(74);
-      } else if (y > filterScrollRef.current + 4) {
-        setFilterTop(0);
-      } else if (y < filterScrollRef.current - 4) {
-        setFilterTop(74);
-      }
-      filterScrollRef.current = y;
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const sidebar = sidebarRef.current;
+    if (!sidebar) return;
+
+    const measure = () => setSidebarHeight(sidebar.offsetHeight);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(sidebar);
+    return () => observer.disconnect();
   }, []);
 
   const selectedCategories = parseFacetParam(
     searchParams.get("category"),
-    CATEGORY_VALUES
+    CATEGORY_FACETS.map(f => f.value)
   );
   const selectedSectors = parseFacetParam(
     searchParams.get("sector"),
@@ -211,7 +181,7 @@ export default function BladeListPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: t("productList.seo.title"),
-    url: "https://sureay.com/products",
+    url: `https://sureay.com${localizedPath("/products", lang)}`,
     description: t("productList.collectionLd.description"),
     mainEntity: {
       "@type": "ItemList",
@@ -219,7 +189,7 @@ export default function BladeListPage() {
       itemListElement: blades.map((b, i) => ({
         "@type": "ListItem",
         position: i + 1,
-        url: `https://sureay.com${b.link}`,
+        url: `https://sureay.com${localizedPath(b.link, lang)}`,
         name: b.name,
       })),
     },
@@ -243,14 +213,14 @@ export default function BladeListPage() {
 
       const a = document.createElement("a");
       a.href = COMPLETE_CATALOG_URL;
-      a.download = "sureay-complete-product-catalog.pdf";
+      a.download = COMPLETE_CATALOG_FILENAME;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
 
       gtagEvent("file_download", {
         event_category: "catalog",
-        file_name: "sureay-complete-product-catalog.pdf",
+        file_name: COMPLETE_CATALOG_FILENAME,
         file_extension: "pdf",
         link_url: COMPLETE_CATALOG_URL,
         page_context: "products",
@@ -296,16 +266,10 @@ export default function BladeListPage() {
         description={t("productList.seo.description")}
         canonicalUrl="/products"
         keywords={t("productList.seo.keywords")}
-        breadcrumbs={[
-          { name: t("nav.home"), url: "/" },
-          {
-            name: t("productList.seo.breadcrumbBladesKnives"),
-            url: "/products",
-          },
-        ]}
         extraJsonLd={[collectionLd]}
       />
       <Navbar />
+      <main>
 
       {/* ═══════════════════════════════════════════════════════════════════
           ZONE 1 — Technical Hero (Left Navy / Right Image)
@@ -314,7 +278,7 @@ export default function BladeListPage() {
         {/* Full-bleed background image */}
         <img
           src="/images/hero/cnc-machine-produce-blades.webp"
-          alt="Industrial Blades & Cutting Tools — Sureay Machinery"
+          alt={t("productList.hero.headline")}
           className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75"
           width={1920}
           height={500}
@@ -329,16 +293,13 @@ export default function BladeListPage() {
           }}
         >
           <div>
-            <p className="text-[11px] font-semibold tracking-[0.28em]  text-white/40 mb-6">
-              {t("productList.hero.eyebrow")}
-            </p>
 
-            <h1 className="text-[clamp(2.2rem,5.5vw,3.8rem)] font-black text-white  tracking-tight leading-none mb-7">
+            <h1 className="text-[38px] lg:text-[64px] font-black text-white  tracking-tight leading-none mb-7">
               {t("productList.hero.headline")}
             </h1>
 
             <div className="w-12 h-[3px] bg-white/30 mb-7" />
-            <p className="text-white/70 text-[16px] leading-relaxed max-w-xl mb-10">
+            <p className="text-description text-white/70 leading-relaxed max-w-xl mb-10">
               {t("productList.hero.body")}
             </p>
           </div>
@@ -351,19 +312,14 @@ export default function BladeListPage() {
       <section
         id="products"
         ref={listSectionRef}
-        className="border-b border-slate-200 min-h-[720px] scroll-mt-[74px]"
+        className="site-section border-b border-slate-200 min-h-[720px] scroll-mt-[74px]"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 py-8 lg:py-10">
+        <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 py-8 lg:py-10">
           <div className="lg:grid lg:grid-cols-[240px_1fr] lg:gap-8 lg:items-start">
-            {/* Left column — facets + catalog download, sticky as one unit so
-                the grid keeps scrolling past it. `filterTop` tracks the navbar
-                hide/show, which is the only thing above this now. */}
             <div
-              className="lg:sticky lg:overflow-y-auto lg:pr-1 transition-[top] duration-300 ease-in-out"
-              style={{
-                top: filterTop + 16,
-                maxHeight: `calc(100vh - ${filterTop + 32}px)`,
-              }}
+              ref={sidebarRef}
+              className="space-y-5 lg:sticky"
+              style={{ top: `min(90px, calc(100dvh - ${sidebarHeight}px - 16px))` }}
             >
               <ProductFacetSidebar
                 blades={blades}
@@ -375,7 +331,7 @@ export default function BladeListPage() {
                 onClearSectors={() => applyFacets({ sectors: [] })}
               />
 
-              <div ref={catalogBoxRef} className="relative mt-8">
+              <div ref={catalogBoxRef}>
                 {catalogState === "idle" && (
                   <button
                     type="button"
@@ -383,13 +339,13 @@ export default function BladeListPage() {
                       setCatalogState("form");
                       setCatalogError("");
                     }}
-                    className="w-full inline-flex items-center justify-center gap-2 font-mono text-[12px] font-black text-white tracking-[0.06em] border-2 border-[#001f4d] bg-[#001f4d] px-3 py-3 rounded-none hover:bg-white hover:text-[#001f4d] transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-2 font-mono text-[14px] font-black text-white tracking-[0.06em] border-2 border-[#001f4d] bg-[#001f4d] px-3 py-3 rounded-none hover:bg-white hover:text-[#001f4d] transition-colors"
                   >
                     <Download className="w-4 h-4 shrink-0" />
-                    <span className="hidden sm:inline whitespace-nowrap">
+                    <span className="hidden sm:inline">
                       {t("productList.catalog.downloadButton")}
                     </span>
-                    <span className="sm:hidden whitespace-nowrap">
+                    <span className="sm:hidden">
                       {t("productList.catalog.downloadButtonShort")}
                     </span>
                   </button>
@@ -400,7 +356,7 @@ export default function BladeListPage() {
                     onSubmit={handleCatalogSubmit}
                     className="border-2 border-slate-300 bg-white p-3 space-y-2"
                   >
-                    <p className="font-mono text-[10px] text-slate-500 tracking-[0.14em]">
+                    <p className="font-mono text-[12px] text-muted-foreground tracking-[0.14em]">
                       {t("productDetail.hero.emailPrompt")}
                     </p>
                     <input
@@ -421,7 +377,7 @@ export default function BladeListPage() {
                       <button
                         type="submit"
                         disabled={catalogState === "loading"}
-                        className="flex-1 bg-[#001f4d] text-white font-black text-[11px] tracking-[0.14em] px-3 py-2 hover:bg-[#003366] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
+                        className="flex-1 bg-[#001f4d] text-white font-black text-[14px] tracking-[0.14em] px-3 py-2 hover:bg-[#003366] transition-colors disabled:opacity-60 flex items-center justify-center gap-2"
                       >
                         {catalogState === "loading" ? (
                           <>
@@ -438,7 +394,7 @@ export default function BladeListPage() {
                           setCatalogState("idle");
                           setCatalogError("");
                         }}
-                        className="px-3 py-2 border border-slate-300 text-slate-500 text-[11px] font-mono tracking-[0.14em] hover:border-slate-400 transition-colors"
+                        className="px-3 py-2 border border-slate-300 text-muted-foreground text-[14px] font-mono tracking-[0.14em] hover:border-slate-400 transition-colors"
                       >
                         {t("common.cancel")}
                       </button>
@@ -452,14 +408,14 @@ export default function BladeListPage() {
                       <span className="text-green-600 font-black text-sm">
                         ✓
                       </span>
-                      <span className="font-mono text-[10px] text-slate-600 tracking-[0.12em]">
+                      <span className="font-mono text-[12px] text-slate-600 tracking-[0.12em]">
                         {t("productList.catalog.downloadStarted")}
                       </span>
                     </div>
                     <button
                       type="button"
                       onClick={() => setCatalogState("idle")}
-                      className="text-[10px] font-mono tracking-[0.12em] text-slate-500 hover:text-slate-700 shrink-0"
+                      className="text-[12px] font-mono tracking-[0.12em] text-muted-foreground hover:text-slate-700 shrink-0"
                     >
                       {t("productList.catalog.close")}
                     </button>
@@ -469,24 +425,16 @@ export default function BladeListPage() {
             </div>
 
             <div className="mt-6 lg:mt-0">
-              {specialBlade && (
-                <Link
-                  href={`/products/${specialBlade.id}`}
-                  className="mb-4 inline-block font-semibold text-[#001f4d] underline underline-offset-4"
-                >
-                  {specialBlade.fullName}
-                </Link>
-              )}
               {/* Result count + removable active-facet pills — one slim row so
                   the cards start as high up the page as possible. */}
               <div className="flex items-center flex-wrap gap-1.5 pb-3 mb-4 border-b border-slate-200">
                 {/* translate() has no interpolation, so the number is composed here */}
-                <p className="font-mono text-[12px] text-slate-500 tracking-[0.1em] mr-2 whitespace-nowrap">
+                <p className="font-mono text-[14px] text-muted-foreground tracking-[0.1em] mr-2 whitespace-nowrap">
                   <span className="text-[#001f4d] font-bold">
                     {filteredBlades.length}
                   </span>
                   {filteredBlades.length !== blades.length && (
-                    <span className="text-slate-400"> / {blades.length}</span>
+                    <span className="text-muted-foreground"> / {blades.length}</span>
                   )}{" "}
                   {t("productList.facets.productsFound")}
                 </p>
@@ -496,7 +444,7 @@ export default function BladeListPage() {
                     key={pill.key}
                     type="button"
                     onClick={pill.remove}
-                    className="flex-shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 font-mono text-[11px] font-medium tracking-[0.1em] border border-[#001f4d] bg-[#001f4d] text-white whitespace-nowrap hover:bg-white hover:text-[#001f4d] transition-colors"
+                    className="flex-shrink-0 inline-flex items-center gap-1.5 px-2.5 py-1 max-lg:min-h-11 font-mono text-[14px] font-medium tracking-[0.1em] border border-[#001f4d] bg-[#001f4d] text-white whitespace-nowrap hover:bg-white hover:text-[#001f4d] transition-colors"
                   >
                     {pill.label}
                     <X className="w-3 h-3" />
@@ -507,7 +455,7 @@ export default function BladeListPage() {
                   <button
                     type="button"
                     onClick={clearAll}
-                    className="flex-shrink-0 px-2 py-1 font-mono text-[11px] text-slate-400 tracking-[0.1em] hover:text-[#001f4d] transition-colors"
+                    className="flex-shrink-0 px-2 py-1 max-lg:min-h-11 max-lg:min-w-11 font-mono text-[14px] text-muted-foreground tracking-[0.1em] hover:text-[#001f4d] transition-colors"
                   >
                     {t("productList.facets.clearAll")}
                   </button>
@@ -540,7 +488,7 @@ export default function BladeListPage() {
             <ul>
               {blades.map(b => (
                 <li key={b.id}>
-                  <Link href={b.link}>{b.fullName || b.name}</Link>
+                  <Link href={b.link} tabIndex={-1}>{b.fullName || b.name}</Link>
                 </li>
               ))}
             </ul>
@@ -548,83 +496,37 @@ export default function BladeListPage() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          ZONE 4 — Factory Showcase (Left Text / Right 4-Image Grid)
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section className="py-16 lg:py-24 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
-            {/* Left: SEO Text */}
-            <div className="flex flex-col justify-center">
-              <p className="font-mono text-[10px] text-slate-400 tracking-[0.35em]  mb-6">
-                [ {t("productList.factory.eyebrow")} ]
-              </p>
-              <h2 className="text-3xl lg:text-4xl font-black text-[#001f4d]  tracking-tight leading-tight mb-8">
-                {t("productList.factory.headline")}
-              </h2>
-              <div className="border-l-4 border-[#001f4d] pl-6 space-y-5">
-                <p className="text-slate-600 text-base leading-relaxed">
-                  {t("productList.factory.paragraph1")}
-                </p>
-                <p className="text-slate-600 text-base leading-relaxed">
-                  {t("productList.factory.paragraph2")}
-                </p>
-              </div>
-              <div className="border-t border-slate-200 mt-10 pt-6 grid grid-cols-3 gap-4">
-                <div>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
-                    {t("productList.factory.statFacility")}
-                  </p>
-                  <p className="font-black text-sm text-[#001f4d] ">
-                    15,000 m²
-                  </p>
-                </div>
-                <div>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
-                    {t("productList.factory.statFounded")}
-                  </p>
-                  <p className="font-black text-sm text-[#001f4d] ">
-                    {t("productList.factory.foundedValue")}
-                  </p>
-                </div>
-                <div>
-                  <p className="font-mono text-[9px] text-slate-400 tracking-widest  mb-1">
-                    {t("productList.factory.statStandard")}
-                  </p>
-                  <p className="font-black text-sm text-[#001f4d] ">ISO 9001</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Right: 4-Image Grid with Caption Plates */}
-            <div className="grid grid-cols-2 grid-rows-2 gap-3 min-h-[400px] lg:min-h-0">
-              {FACTORY_IMAGES.map(img => (
-                <div
-                  key={img.ref}
-                  className="relative overflow-hidden bg-slate-100 border border-slate-200 group"
-                >
-                  <img
-                    src={img.src}
-                    alt={t(img.altKey)}
-                    className="absolute inset-0 w-full h-full object-cover brightness-95 contrast-110 saturate-75 transition-transform duration-700 group-hover:scale-[1.04]"
-                    loading="lazy"
-                    decoding="async"
-                    width={400}
-                    height={300}
-                  />
-                </div>
-              ))}
-            </div>
+      <section aria-labelledby="custom-blade-intro" className="site-section border-b border-slate-200 bg-slate-50 py-16 lg:py-24">
+        <div className="site-content mx-auto grid max-w-7xl items-center gap-8 px-6 sm:px-8 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <h2 id="custom-blade-intro" className="mb-5 text-3xl font-black leading-tight tracking-tight text-[#001f4d] lg:text-4xl">
+              {t("productList.filters.customBlades")}
+            </h2>
+            <p className="mb-7 max-w-xl text-description leading-relaxed text-slate-600">
+              {t("productList.customBlades.description")}
+            </p>
+            <Link href="/custom" className="inline-flex min-h-11 items-center border border-[#001f4d] bg-[#001f4d] px-5 py-3 text-[16px] font-semibold text-white transition-colors hover:bg-white hover:text-[#001f4d]">
+              {t("productList.customBlades.link")}
+            </Link>
           </div>
+          <img
+            src="/images/products/blades/special-shaped-knife.webp"
+            alt={t("productList.filters.customBlades")}
+            width={2912}
+            height={1440}
+            loading="lazy"
+            decoding="async"
+            className="aspect-[3/2] w-full border border-slate-200 bg-white object-contain"
+          />
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          ZONE 5 — OEM Conversion Funnel
+          ZONE 5 — Contact
       ═══════════════════════════════════════════════════════════════════ */}
-      <IndustryOemPipeline />
       <ContactRFQ />
 
+      </main>
       <Footer />
     </div>
   );

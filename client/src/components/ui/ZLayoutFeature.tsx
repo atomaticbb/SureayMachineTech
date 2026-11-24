@@ -16,7 +16,7 @@ export default function ZLayoutFeature({
   const textCol = (
     <div className="flex flex-col justify-center">
       {label && (
-        <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
+        <p className="text-muted-foreground font-bold text-xs  tracking-[0.3em] mb-3">
           {label}
         </p>
       )}
@@ -25,7 +25,7 @@ export default function ZLayoutFeature({
       </h2>
       <div className="flex flex-col gap-4 border-l-2 border-slate-200 pl-5">
         {paragraphs.map((p, i) => (
-          <p key={i} className="text-slate-500 text-base leading-relaxed">
+          <p key={i} className="text-muted-foreground text-base leading-relaxed">
             {p}
           </p>
         ))}

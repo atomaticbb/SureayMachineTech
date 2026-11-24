@@ -9,6 +9,7 @@ WORKDIR /app
 # Puppeteer will download its own Chrome binary during `pnpm install`.
 RUN apt-get update && apt-get install -y \
     ca-certificates \
+    fonts-dejavu-core \
     fonts-liberation \
     libasound2 \
     libatk-bridge2.0-0 \
@@ -56,7 +57,8 @@ COPY . .
 # --mount=type=tmpfs gives Chromium a proper /dev/shm (Docker build layers
 # restrict the kernel's shared-memory device which causes Chrome to crash).
 RUN --mount=type=tmpfs,target=/dev/shm \
-    pnpm db:generate && pnpm build:full
+    pnpm db:generate && pnpm build:full && \
+    PRERENDER_LANGS=all pnpm test:release
 
 # ===================================
 # Stage 2: Production

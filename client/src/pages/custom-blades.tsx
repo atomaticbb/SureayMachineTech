@@ -139,7 +139,7 @@ const PROFILES = [
 // ─── Standard-shape cross-links — reuse existing productList.filters.* labels ──
 const STANDARD_SHAPE_LINKS = [
   {
-    href: "/categories/granulator-blades",
+    href: "/products/granulator-blades",
     labelKey: "productList.filters.granulatorBlades",
   },
   {
@@ -153,10 +153,6 @@ const STANDARD_SHAPE_LINKS = [
   {
     href: "/categories/shear-blades",
     labelKey: "productList.filters.shearBlades",
-  },
-  {
-    href: "/categories/cold-saw-blades",
-    labelKey: "productList.filters.coldSawBlades",
   },
   {
     href: "/categories/log-saw-blades",
@@ -218,7 +214,8 @@ const FAQ_KEYS = {
 
 export default function CustomBlades() {
   const { t } = useTranslation();
-  const specialBlade = getBladeById("special-shaped-blades", useLang());
+  const lang = useLang();
+  const specialBlade = getBladeById("special-shaped-blades", lang);
 
   const faqData: ProductFaqData = {
     technical: FAQ_KEYS.technical.map(({ q, a }) => ({
@@ -252,7 +249,7 @@ export default function CustomBlades() {
             "/images/process/CMM-verification.webp",
           ],
           description: t("custom.productData.description"),
-          material: "D2, H13, PM-HSS, Solid Carbide",
+          material: `D2, H13, PM-HSS, ${t("custom.productData.solidCarbide")}`,
           specs: [
             {
               label: t("custom.productData.specs.profileToleranceLabel"),
@@ -280,11 +277,12 @@ export default function CustomBlades() {
 
       <div className="min-h-screen bg-slate-50">
         <Navbar />
+      <main className="blade-page">
 
         {/* ── Hero ────────────────────────────────────────────────────────── */}
         <section
-          aria-label="Custom blade header"
-          className="relative mt-[74px] h-[379px] bg-[#001f4d] border-b border-white/10 overflow-hidden"
+          aria-labelledby="custom-blades-heading"
+          className="relative mt-[74px] grid min-h-[379px] bg-[#001f4d] border-b border-white/10 overflow-hidden"
         >
           <div
             className="hidden md:block absolute inset-y-0 right-0 w-1/2 lg:w-[45%]"
@@ -295,12 +293,12 @@ export default function CustomBlades() {
               backgroundPosition: "right center",
             }}
           />
-          <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex items-center">
+          <div className="relative max-w-7xl mx-auto w-full px-6 py-6 sm:px-8 flex items-center">
             <div className="w-full md:w-[68%] lg:w-[72%]">
-              <h1 className="text-[28px] md:text-[38px] lg:text-[48px] font-black text-white tracking-tight leading-tight">
+              <h1 id="custom-blades-heading" className="text-[30px] md:text-[40px] lg:text-[50px] font-black text-white tracking-tight leading-tight">
                 {t("custom.hero.title")}
               </h1>
-              <p className="text-white/50 text-[16px] leading-snug mt-1.5 max-w-2xl">
+              <p className="text-white/80 text-[18px] leading-snug mt-1.5 max-w-2xl">
                 {t("custom.hero.subtitle")}
               </p>
               <a
@@ -322,8 +320,8 @@ export default function CustomBlades() {
         />
 
         {/* ── Stats Strip ─────────────────────────────────────────────────── */}
-        <section className="bg-white border-y border-slate-200">
-          <div className="max-w-7xl mx-auto">
+        <section className="site-section bg-white border-y border-slate-200">
+          <div className="site-content max-w-7xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4">
               {STATS.map((stat, i) => (
                 <div
@@ -337,16 +335,14 @@ export default function CustomBlades() {
                     .filter(Boolean)
                     .join(" ")}
                 >
-                  <span className="font-mono text-[10px] text-[#001f4d]/65  tracking-[0.28em]">
-                    {String(i + 1).padStart(2, "0")} /
-                  </span>
-                  <p className="text-[10px] font-semibold tracking-[0.25em]  text-slate-500">
+
+                  <p className="text-[12px] font-semibold tracking-[0.25em]  text-muted-foreground">
                     {t(stat.subKey)}
                   </p>
-                  <p className="text-[clamp(1rem,2.5vw,1.5rem)] font-black text-[#001f4d] leading-tight tracking-tight font-mono">
+                  <p className="text-[18px] lg:text-[26px] font-black text-[#001f4d] leading-tight tracking-tight font-mono">
                     {t(stat.valueKey)}
                   </p>
-                  <p className="text-[11px] font-semibold tracking-[0.15em]  text-slate-600 mt-0.5">
+                  <p className="text-[14px] font-semibold tracking-[0.15em]  text-slate-600 mt-0.5">
                     {t(stat.labelKey)}
                   </p>
                   <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#001f4d] group-hover:w-full transition-all duration-500 ease-out" />
@@ -357,8 +353,8 @@ export default function CustomBlades() {
         </section>
 
         {/* ── Verified Track Record ───────────────────────────────────────── */}
-        <section className="bg-white border-b border-slate-200 py-10 lg:py-12">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <section className="site-section bg-white border-b border-slate-200 py-10 lg:py-12">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <Link href="/about#certifications" asChild>
                 <a className="group flex items-center gap-4 border border-slate-200 hover:border-[#001f4d] p-4 transition-colors">
@@ -375,7 +371,7 @@ export default function CustomBlades() {
                     <p className="font-black text-sm text-[#001f4d] tracking-tight">
                       {t("custom.verified.certLabel")}
                     </p>
-                    <p className="text-xs text-slate-500 mt-0.5 group-hover:text-[#001f4d] transition-colors">
+                    <p className="text-xs text-muted-foreground mt-0.5 group-hover:text-[#001f4d] transition-colors">
                       {t("custom.verified.certLink")}
                     </p>
                   </div>
@@ -383,7 +379,13 @@ export default function CustomBlades() {
               </Link>
               <div className="border-l-2 border-slate-200 pl-6">
                 <p className="text-slate-600 text-sm leading-relaxed italic">
-                  &ldquo;{t("home.testimonials.t2.quote")}&rdquo;
+                  <span aria-hidden="true" className="font-display not-italic">
+                    &ldquo;
+                  </span>
+                  {t("home.testimonials.t2.quote")}
+                  <span aria-hidden="true" className="font-display not-italic">
+                    &rdquo;
+                  </span>
                 </p>
                 <p className="text-xs font-black text-[#001f4d] mt-3">
                   Kevin L. — {t("home.testimonials.t2.role")}
@@ -394,12 +396,10 @@ export default function CustomBlades() {
         </section>
 
         {/* ── Custom Blades Showcase ──────────────────────────────────────── */}
-        <section className="bg-slate-50 border-t border-slate-200 py-16 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-              {t("custom.showcase.eyebrow")}
-            </p>
-            <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-2xl">
+        <section className="site-section bg-slate-50 border-t border-slate-200 py-16 lg:py-24">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
+
+            <h2 className="font-black text-2xl md:text-[34px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-2xl">
               {t("custom.showcase.headline")}
             </h2>
             <div className="w-12 h-[3px] bg-slate-300 mt-6" />
@@ -448,13 +448,11 @@ export default function CustomBlades() {
                         reverse ? "lg:order-1" : "lg:order-2",
                       ].join(" ")}
                     >
-                      <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-                        {t(block.labelKey)}
-                      </p>
+
                       <h3 className="font-black text-xl md:text-2xl text-[#001f4d]  tracking-tight leading-[1.1] mb-4 max-w-lg">
                         {t(block.titleKey)}
                       </h3>
-                      <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-lg">
+                      <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-lg">
                         {t(block.summaryKey)}
                       </p>
                     </div>
@@ -468,19 +466,17 @@ export default function CustomBlades() {
         {/* ── Capabilities ────────────────────────────────────────────────── */}
         <section
           id="capabilities"
-          className="bg-white border-t border-slate-200"
+          className="site-section bg-white border-t border-slate-200"
         >
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 pt-16 lg:pt-20 pb-10 lg:pb-12">
-            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-              {t("custom.capabilities.eyebrow")}
-            </p>
-            <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-3xl">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 pt-16 lg:pt-20 pb-10 lg:pb-12">
+
+            <h2 className="font-black text-2xl md:text-3xl lg:text-[38px] text-[#001f4d]  tracking-tight leading-[1.05] max-w-3xl">
               {t("custom.capabilities.headline")}
             </h2>
             <div className="w-12 h-[3px] bg-slate-300 mt-6" />
           </div>
 
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 pb-14 lg:pb-20">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8 pb-14 lg:pb-20">
             {CAPABILITIES.map((block, index) => {
               const reverse = index % 2 === 1;
               return (
@@ -515,13 +511,11 @@ export default function CustomBlades() {
                       reverse ? "lg:order-1" : "lg:order-2",
                     ].join(" ")}
                   >
-                    <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-                      {t(block.labelKey)}
-                    </p>
-                    <h3 className="font-black text-2xl md:text-[30px] text-[#001f4d]  tracking-tight leading-[1.08] mb-5 max-w-2xl">
+
+                    <h3 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.08] mb-5 max-w-2xl">
                       {t(block.titleKey)}
                     </h3>
-                    <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-2xl mb-6">
+                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed max-w-2xl mb-6">
                       {t(block.summaryKey)}
                     </p>
                     <div className="grid grid-cols-1 gap-4">
@@ -530,7 +524,7 @@ export default function CustomBlades() {
                           key={pointKey}
                           className="border-l-2 border-slate-200 pl-4"
                         >
-                          <p className="text-slate-600 text-sm md:text-[15px] leading-relaxed">
+                          <p className="text-slate-600 text-sm md:text-[18px] leading-relaxed">
                             {t(pointKey)}
                           </p>
                         </div>
@@ -544,17 +538,15 @@ export default function CustomBlades() {
         </section>
 
         {/* ── Profile Types ────────────────────────────────────────────────── */}
-        <section className="bg-slate-50 border-y border-slate-200 py-10 lg:py-14">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
+        <section className="site-section bg-slate-50 border-y border-slate-200 py-10 lg:py-14">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               <div className="lg:pt-2">
-                <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-                  {t("custom.profiles.eyebrow")}
-                </p>
-                <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-4">
+
+                <h2 className="font-black text-2xl md:text-[34px] text-[#001f4d]  tracking-tight leading-[1.05] mb-4">
                   {t("custom.profiles.headline")}
                 </h2>
-                <p className="text-slate-500 text-sm md:text-base leading-relaxed mb-6 max-w-lg">
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6 max-w-lg">
                   {t("custom.profiles.body")}
                 </p>
                 <a href="#rfq">
@@ -564,7 +556,7 @@ export default function CustomBlades() {
                 </a>
 
                 <div className="mt-6 pt-6 border-t border-slate-200">
-                  <p className="text-slate-500 font-bold text-[10px]  tracking-[0.25em] mb-3">
+                  <p className="text-muted-foreground font-bold text-[12px]  tracking-[0.25em] mb-3">
                     {t("custom.profiles.standardShapePrompt")}
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -592,10 +584,10 @@ export default function CustomBlades() {
                   >
                     <span className="w-[3px] h-5 bg-[#001f4d] flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-[13px] font-semibold text-slate-700 tracking-[0.06em]">
+                      <p className="text-[16px] font-semibold text-slate-700 tracking-[0.06em]">
                         {t(profile.nameKey)}
                       </p>
-                      <p className="text-sm text-slate-500 leading-relaxed mt-1">
+                      <p className="text-sm text-muted-foreground leading-relaxed mt-1">
                         {t(profile.descriptionKey)}
                       </p>
                     </div>
@@ -607,12 +599,10 @@ export default function CustomBlades() {
         </section>
 
         {/* ── Process Timeline ─────────────────────────────────────────────── */}
-        <section className="bg-white border-b border-slate-200 py-14 lg:py-20">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8">
-            <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-4">
-              {t("custom.process.eyebrow")}
-            </p>
-            <h2 className="font-black text-2xl md:text-[32px] text-[#001f4d]  tracking-tight leading-[1.05] mb-12 max-w-xl">
+        <section className="site-section bg-white border-b border-slate-200 py-14 lg:py-20">
+          <div className="site-content max-w-7xl mx-auto px-6 sm:px-8">
+
+            <h2 className="font-black text-2xl md:text-[34px] text-[#001f4d]  tracking-tight leading-[1.05] mb-12 max-w-xl">
               {t("custom.process.headline")}
             </h2>
 
@@ -641,13 +631,13 @@ export default function CustomBlades() {
                     .filter(Boolean)
                     .join(" ")}
                 >
-                  <p className="font-mono text-[28px] font-black text-slate-200 leading-none mb-4">
+                  <p className="font-mono text-[30px] font-black text-slate-200 leading-none mb-4">
                     {step.step}
                   </p>
-                  <h3 className="font-black text-[14px]  tracking-[0.1em] text-[#001f4d] mb-3 leading-tight">
+                  <h3 className="font-black text-[16px]  tracking-[0.1em] text-[#001f4d] mb-3 leading-tight">
                     {t(step.titleKey)}
                   </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
                     {t(step.bodyKey)}
                   </p>
                 </motion.div>
@@ -657,19 +647,16 @@ export default function CustomBlades() {
         </section>
 
         {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-        <section
-          aria-label="Frequently asked questions"
-          className="bg-slate-50 border-y border-slate-200 py-14 lg:py-20"
-        >
+        <div className="site-section bg-slate-50 border-y border-slate-200 py-14 lg:py-20">
           <ProductFAQ
             faqs={faqData}
-            productName="Special-Shaped & Custom Profile Blades"
+            productName={t("custom.productData.name")}
           />
-        </section>
+        </div>
 
         {/* ── RFQ Form ─────────────────────────────────────────────────────── */}
         <div id="rfq">
-          <ContactRFQ productName="Special-Shaped / Custom Profile Blades" />
+          <ContactRFQ productName={t("custom.productData.name")} />
         </div>
 
         <FloatingContactButtons
@@ -677,7 +664,8 @@ export default function CustomBlades() {
           rfqAnchorId="rfq"
         />
 
-        <Footer />
+        </main>
+      <Footer />
       </div>
     </>
   );

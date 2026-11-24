@@ -4,23 +4,21 @@
  * Architecture follows Home.tsx: page orchestrates imported section components.
  */
 
-import { Helmet } from "react-helmet-async";
 import SEO from "@/components/common/SEO";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactRFQ from "@/components/home/ContactRFQ";
 import IndustryHero from "@/components/industry/IndustryHero";
 import IndustryToolingMatrix from "@/components/industry/IndustryToolingMatrix";
+import { industryProductList } from "@/components/industry/industryProductList";
 import IndustryBlueprintDashboard from "@/components/industry/IndustryBlueprintDashboard";
-import IndustryOemPipeline from "@/components/industry/IndustryOemPipeline";
 import IndustryMaterialFocus from "@/components/industry/IndustryMaterialFocus";
-import { getBladeOffer } from "@/data/blades";
 import { useLang } from "@/contexts/LangContext";
 import { getBlades } from "@/data/locales";
+import { getIndustryBlades } from "@/data/industry-blades";
 import { useTranslation } from "@/lib/useTranslation";
 import type {
   IndustryHeroData,
-  IndustryProduct,
   IndustryNarrative,
   IndustrySpec,
   IndustryMaterial,
@@ -41,77 +39,6 @@ const GALLERY_IMAGES = [
 const LCP_IMG = GALLERY_IMAGES[0];
 const LCP_PRELOAD = LCP_IMG.replace(/(\.\w+)$/, "-640w.webp");
 
-// ─── JSON-LD Structured Data ─────────────────────────────────────────────────
-const PAGE_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  name: "Wood Chipper Knives & Forestry Blades",
-  url: "https://sureay.com/wood-industry",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      item: {
-        "@type": "Product",
-        name: "Wood Chipper Blades — Industrial Grade",
-        image:
-          "https://sureay.com/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-        description:
-          "Heavy-duty D2, Cr12MoV & TCT drum and disc chipper knives for industrial forestry and biomass processing. Through-hardened HRC 57–62 with deep cryogenic treatment.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/wood-chipper-blades",
-        offers: getBladeOffer("wood-chipper-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      item: {
-        "@type": "Product",
-        name: "Industrial Wood Chipper Blades",
-        image:
-          "https://sureay.com/images/products/wood-chipper-blades/wood-chipper-blades-12.webp",
-        description:
-          "HSS & D2 drum chipper knives for heavy forestry, whole-tree biomass processing and demolition wood recycling. Vacuum-hardened HRC 58–62.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/wood-chipper-blades",
-        offers: getBladeOffer("wood-chipper-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      item: {
-        "@type": "Product",
-        name: "Wood Chipper Knives",
-        image:
-          "https://sureay.com/images/products/wood-chipper-blades/wood-chipper-blades-standard-00.webp",
-        description:
-          "Reversible double-edge wood chipper knives in T10, 9CrSi & Cr12MoV. Flip when dull — doubles installed life before regrinding. OEM fit for Bandit, Vermeer & Patriot.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/wood-chipper-blades",
-        offers: getBladeOffer("wood-chipper-blades"),
-      },
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      item: {
-        "@type": "Product",
-        name: "Wood Chipper Anvils",
-        image:
-          "https://sureay.com/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-        description:
-          "Precision-ground wood chipper anvils (counter-knives / bed knives) in D2, Cr12MoV and A8 Modified steel. HRC 54–60 through-hardened, ±0.05 mm parallelism. OEM fit for Bandit, Vermeer & Morbark.",
-        brand: { "@type": "Brand", name: "Sureay" },
-        url: "https://sureay.com/products/wood-chipper-anvils",
-        offers: getBladeOffer("wood-chipper-anvils"),
-      },
-    },
-  ],
-};
-
-// ─────────────────────────────────────────────────────────────────────────────
 export default function WoodIndustry() {
   const lang = useLang();
   const { t } = useTranslation();
@@ -119,7 +46,6 @@ export default function WoodIndustry() {
   const HERO_DATA: IndustryHeroData = {
     breadcrumb: t("industry.wood.hero.breadcrumb"),
     h1: t("industry.wood.hero.h1"),
-    h2: t("industry.wood.hero.h2"),
     body1: t("industry.wood.hero.body1"),
     body2: t("industry.wood.hero.body2"),
     ctaHref: "#tooling-matrix",
@@ -180,25 +106,12 @@ export default function WoodIndustry() {
     {
       name: t("industry.wood.materials.m3.name"),
       abrasion: t("industry.wood.materials.m3.abrasion"),
-      grade: "6CrW2Si / TCT Carbide",
+      grade: t("industry.grade.tct"),
       image: "/images/materials/demolition-wood.webp",
     },
   ];
 
-  const PRODUCTS: IndustryProduct[] = getBlades(lang)
-    .filter(blade => blade.category === "wood_chipper")
-    .map((blade, index) => ({
-      category: blade.categoryDisplay,
-      name: blade.name,
-      image: blade.image,
-      href: blade.link,
-      isFlagship: index === 0,
-      desc: blade.description,
-    }));
-  const FILTER_CATEGORIES = [
-    "ALL",
-    ...Array.from(new Set(PRODUCTS.map(p => p.category.toUpperCase()))),
-  ];
+  const industryBlades = getIndustryBlades(getBlades(lang), "wood");
 
   return (
     <>
@@ -212,25 +125,21 @@ export default function WoodIndustry() {
           { name: t("footer.industries"), url: "/products" },
           { name: t("footer.industry.wood"), url: "/wood-industry" },
         ]}
+        preloadImage={LCP_PRELOAD}
+        extraJsonLd={[
+          industryProductList(industryBlades, HERO_DATA.h1, "/wood-industry", lang),
+        ]}
       />
-      <Helmet>
-        <link rel="preload" as="image" href={LCP_PRELOAD} />
-        <script type="application/ld+json">
-          {JSON.stringify(PAGE_SCHEMA)}
-        </script>
-      </Helmet>
 
       <div className="min-h-screen bg-white pt-[68px]">
         <Navbar />
-        <IndustryHero data={HERO_DATA} />
-        <IndustryToolingMatrix
-          products={PRODUCTS}
-          filterCategories={FILTER_CATEGORIES}
-        />
-        <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
-        <IndustryMaterialFocus materials={MATERIALS} />
-        <IndustryOemPipeline />
-        <ContactRFQ />
+        <main>
+          <IndustryHero data={HERO_DATA} />
+          <IndustryToolingMatrix blades={industryBlades} />
+          <IndustryBlueprintDashboard narrative={NARRATIVE} specs={SPECS} />
+          <IndustryMaterialFocus materials={MATERIALS} />
+          <ContactRFQ />
+        </main>
         <Footer />
       </div>
     </>

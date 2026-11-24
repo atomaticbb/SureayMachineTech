@@ -7,12 +7,18 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Download, Loader2 } from "lucide-react";
 import { Link } from "wouter";
-import type { Blade } from "@/data/blades";
-import { getCatalogUrl } from "@/data/blades";
+import type { Blade, BladeSpec } from "@/data/blades";
+import {
+  getCatalogUrl,
+  getWebpImageSrcSet,
+  isUpgradedShredderBlade,
+} from "@/data/blades";
 import { useTranslation } from "@/lib/useTranslation";
 
 interface BladeHeroProps {
   blade: Blade;
+  heroSpecs: (BladeSpec & { emphasis?: string })[];
+  breadcrumbs?: React.ReactNode;
 }
 
 /** Renders a single `[text](/url)` markdown link inside plain text. */
@@ -40,8 +46,10 @@ const DOT_GRID_STYLE = {
 
 type CatalogState = "idle" | "form" | "loading" | "done";
 
-export default function BladeHero({ blade }: BladeHeroProps) {
+export default function BladeHero({ blade, heroSpecs, breadcrumbs }: BladeHeroProps) {
   const { t } = useTranslation();
+  const detailLayout = blade.detailLayout;
+  const title = detailLayout?.heroTitle || blade.fullName || blade.name;
   const catalogUrl = getCatalogUrl(blade);
   const [catalogState, setCatalogState] = useState<CatalogState>("idle");
   const [email, setEmail] = useState("");
@@ -51,18 +59,40 @@ export default function BladeHero({ blade }: BladeHeroProps) {
   // Hero images: the last two gallery slots are reserved for the
   // DecisiveSpecs/ComprehensiveData panels, so only the leading slots
   // are eligible for the hero thumbnail track.
-  const heroImages =
-    blade.gallery && blade.gallery.length > 2
+  const detailHeroImages = detailLayout?.heroAlt
+    ? [
+        {
+          src: blade.image,
+          alt: detailLayout.heroAlt,
+          dimensions: blade.imageDimensions,
+        },
+        ...(detailLayout.additionalHeroImages ?? []),
+      ]
+    : undefined;
+  const heroImages = detailHeroImages
+    ? detailHeroImages.map(image => image.src)
+    : blade.gallery && blade.gallery.length > 2
       ? blade.gallery.slice(0, -2)
       : [blade.image];
   const heroAlts =
-    blade.galleryAlts && blade.galleryAlts.length > 2
+    detailHeroImages?.map(image => image.alt) ??
+    (blade.galleryAlts && blade.galleryAlts.length > 2
       ? blade.galleryAlts.slice(0, -2)
-      : undefined;
+      : undefined);
   const clampedActiveImg = Math.min(activeImg, heroImages.length - 1);
   const activeSrc = heroImages[clampedActiveImg];
+  const coverDimensions =
+    detailHeroImages?.[clampedActiveImg]?.dimensions ??
+    (activeSrc === blade.image ? blade.imageDimensions : undefined);
+  const coverSrcSet = getWebpImageSrcSet(activeSrc, coverDimensions);
+  const responsiveCover =
+    detailLayout?.heroAlt &&
+    activeSrc === blade.image &&
+    activeSrc.endsWith(".webp");
   const activeAlt =
-    heroAlts?.[clampedActiveImg] ?? (blade.fullName || blade.name);
+    detailHeroImages?.[clampedActiveImg]?.alt ??
+    heroAlts?.[clampedActiveImg] ??
+    (blade.fullName || blade.name);
 
   // Reset to the cover shot when navigating between products (the page
   // component may reuse this instance across route param changes).
@@ -99,24 +129,38 @@ export default function BladeHero({ blade }: BladeHeroProps) {
 
   return (
     <section
-      aria-label={`${blade.fullName || blade.name} — product hero`}
-      className="flex flex-col lg:flex-row overflow-hidden"
+      aria-label={title}
+      className={`flex flex-col lg:flex-row overflow-hidden ${detailLayout ? "bg-white" : ""}`}
     >
       {/* ── Left: Product Image (580px) ───────────────────────── */}
-      <div className="lg:w-[580px] lg:shrink-0 border-r border-slate-200">
+      <div
+        className={`lg:w-[580px] lg:shrink-0 ${detailLayout ? "" : "border-r border-slate-200"}`}
+      >
+        {breadcrumbs}
         <div
-          className="h-[320px] lg:h-[520px] bg-slate-100 flex items-center justify-center overflow-hidden"
-          style={DOT_GRID_STYLE}
+          className={`flex items-center justify-center overflow-hidden ${detailLayout ? "pt-2" : "h-[320px] bg-slate-100 lg:h-[520px]"}`}
+          style={detailLayout ? undefined : DOT_GRID_STYLE}
         >
           <img
             src={activeSrc}
+            srcSet={
+              coverSrcSet ??
+              (responsiveCover
+                ? `${activeSrc.replace(/\.webp$/, "-640w.webp")} 640w, ${activeSrc} 800w`
+                : undefined)
+            }
+            sizes={
+              coverSrcSet || responsiveCover
+                ? "(min-width: 1024px) 480px, 288px"
+                : undefined
+            }
             alt={activeAlt}
-            className="h-full w-full object-contain p-3 mix-blend-multiply"
+            className={`object-contain mix-blend-multiply ${detailLayout ? "aspect-square product-detail-image lg:w-[480px]" : "h-full w-full p-3"}`}
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width={580}
-            height={520}
+            width={coverDimensions?.width ?? (detailLayout ? 800 : 580)}
+            height={coverDimensions?.height ?? (detailLayout ? 800 : 520)}
           />
         </div>
         {heroImages.length > 1 && (
@@ -126,17 +170,22 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                 key={src}
                 type="button"
                 onClick={() => setActiveImg(i)}
-                aria-label={`View image ${i + 1} of ${blade.name}`}
+                aria-label={t("bladeUi.viewImage").replace("{number}", String(i + 1)).replace("{name}", blade.name)}
                 aria-current={i === activeImg}
                 className={`h-16 w-16 lg:h-20 lg:w-20 shrink-0 border overflow-hidden transition-colors ${
                   i === activeImg
                     ? "border-[#001f4d]"
                     : "border-slate-200 hover:border-slate-400"
                 }`}
-                style={DOT_GRID_STYLE}
+                style={detailLayout ? undefined : DOT_GRID_STYLE}
               >
                 <img
                   src={src}
+                  srcSet={getWebpImageSrcSet(
+                    src,
+                    detailHeroImages?.[i]?.dimensions
+                  )}
+                  sizes={detailHeroImages ? "80px" : undefined}
                   alt={heroAlts?.[i] ?? ""}
                   className="h-full w-full object-contain p-1 mix-blend-multiply"
                   loading="lazy"
@@ -151,59 +200,50 @@ export default function BladeHero({ blade }: BladeHeroProps) {
       </div>
 
       {/* ── Right: Product Info ───────────────────────────────── */}
-      <div className="flex-1 p-6 lg:p-10 flex flex-col justify-between">
+      <div
+        className={`flex-1 flex flex-col ${
+          detailLayout
+            ? "px-6 pt-6 lg:mt-[32px] lg:self-start lg:px-10 lg:pt-10"
+            : "justify-between p-6 lg:p-10"
+        }`}
+      >
         <div className="space-y-5">
           {/* H1 — full product name */}
-          <h1 className="font-black text-[26px] text-[#001f4d]  leading-[1.15] tracking-tight">
-            {blade.fullName || blade.name}
+          <h1 className="blade-product-title font-black text-[#001f4d] leading-[1.15] tracking-tight">
+            {title}
           </h1>
 
-          {/* Category */}
-          <p className="text-[16px] font-bold text-black  tracking-widest border-l-2 border-[#001f4d] pl-3">
-            {blade.categoryDisplay}
-          </p>
-
           {/* Disambiguation — points to a sibling product sharing this keyword root */}
-          {blade.disambiguation && (
-            <p className="text-[13px] text-slate-500 leading-relaxed italic">
-              {renderDisambiguation(blade.disambiguation)}
-            </p>
-          )}
+          {(!detailLayout || isUpgradedShredderBlade(blade)) &&
+            blade.disambiguation && (
+              <p className="text-description text-muted-foreground leading-relaxed italic">
+                {renderDisambiguation(blade.disambiguation)}
+              </p>
+            )}
 
-          {/* Description */}
-          {(blade.description || blade.fullDescription) && (
-            <p className="text-[16px] text-black leading-relaxed">
-              {blade.description || blade.fullDescription}
-            </p>
+          {heroSpecs.length > 0 && (
+            <ul className="space-y-2.5 pt-1">
+              {heroSpecs.map((spec, i) => (
+                <li key={i} className="flex items-baseline gap-2">
+                  <span className="text-black font-black flex-shrink-0 text-[14px]">
+                    ■
+                  </span>
+                  <span className="text-[18px] leading-snug text-black">
+                    <span className="font-bold tracking-wide">
+                      {spec.label}:{" "}
+                    </span>
+                    {spec.value}
+                    {spec.emphasis && (
+                      <>
+                        {" "}
+                        <strong>{spec.emphasis}</strong>
+                      </>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
           )}
-
-          {/* Spec bullets — Material & Applications */}
-          {blade.specs &&
-            blade.specs.length > 0 &&
-            (() => {
-              const filtered = blade.specs.filter(
-                s =>
-                  /^material$/i.test(s.label.trim()) ||
-                  /^applications?$/i.test(s.label.trim())
-              );
-              return filtered.length > 0 ? (
-                <ul className="space-y-2.5 pt-1">
-                  {filtered.map((spec, i) => (
-                    <li key={i} className="flex items-baseline gap-2">
-                      <span className="text-black font-black flex-shrink-0 text-[11px]">
-                        ■
-                      </span>
-                      <span className="text-[16px] leading-snug">
-                        <span className="font-bold text-black  tracking-wide">
-                          {spec.label}:{" "}
-                        </span>
-                        <span className="text-black">{spec.value}</span>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              ) : null;
-            })()}
         </div>
 
         {/* CTA */}
@@ -218,7 +258,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
             }}
             className="w-full bg-[#001f4d] hover:bg-white border-2 border-[#001f4d] text-white hover:text-[#001f4d] font-black text-sm  tracking-widest rounded-none transition-colors duration-200 flex items-center justify-between px-6 py-4"
           >
-            <span>{t("cta.requestEngineeringQuote")}</span>
+            <span>{t("cta.getQuote")}</span>
             <ArrowRight className="w-5 h-5 shrink-0" />
           </a>
 
@@ -240,7 +280,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               {/* Form: email input */}
               {(catalogState === "form" || catalogState === "loading") && (
                 <form onSubmit={handleCatalogSubmit} className="p-4 space-y-3">
-                  <p className="font-mono text-[10px] text-slate-400  tracking-widest">
+                  <p className="font-mono text-[12px] text-muted-foreground  tracking-widest">
                     {t("productDetail.hero.emailPrompt")}
                   </p>
                   <input
@@ -253,7 +293,9 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                     className="w-full border border-slate-300 px-4 py-2.5 text-sm font-mono text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#001f4d] rounded-none"
                   />
                   {formError && (
-                    <p className="text-red-500 text-xs font-mono">{formError}</p>
+                    <p className="text-red-500 text-xs font-mono">
+                      {formError}
+                    </p>
                   )}
                   <div className="flex gap-2">
                     <button
@@ -276,7 +318,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
                         setCatalogState("idle");
                         setFormError("");
                       }}
-                      className="px-4 py-2.5 border border-slate-300 text-slate-500 text-xs font-mono  tracking-widest hover:border-slate-400 transition-colors"
+                      className="px-4 py-2.5 border border-slate-300 text-muted-foreground text-xs font-mono  tracking-widest hover:border-slate-400 transition-colors"
                     >
                       {t("common.cancel")}
                     </button>
@@ -288,7 +330,7 @@ export default function BladeHero({ blade }: BladeHeroProps) {
               {catalogState === "done" && (
                 <div className="px-6 py-3 flex items-center gap-3">
                   <span className="text-green-600 font-black text-sm">✓</span>
-                  <span className="font-mono text-[11px] text-slate-600  tracking-widest">
+                  <span className="font-mono text-[14px] text-slate-600  tracking-widest">
                     {t("productDetail.hero.downloadStarted")}
                   </span>
                 </div>

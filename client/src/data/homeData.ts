@@ -201,6 +201,7 @@ export const FEATURED_PRODUCTS = [
   {
     name: "Twin Shaft Shredder Blades",
     image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+    imageDimensions: { width: 1400, height: 1050, smallerWidths: [640] },
     href: "/products/twin-shaft-blades-recycling",
     tag: "Recycling",
     summary:
@@ -210,6 +211,7 @@ export const FEATURED_PRODUCTS = [
     name: "Paper Slitter Knives",
     image:
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
+    imageDimensions: { width: 1200, height: 1198, smallerWidths: [640] },
     href: "/products/rotary-slitter-knives-paper",
     tag: "Paper & Packaging",
     summary:
@@ -218,6 +220,7 @@ export const FEATURED_PRODUCTS = [
   {
     name: "Tissue Log Saw Blades",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
+    imageDimensions: { width: 2000, height: 2000, smallerWidths: [320, 480, 640] },
     href: "/products/tissue-log-saw-blades",
     tag: "Paper & Packaging",
     summary:
@@ -226,6 +229,7 @@ export const FEATURED_PRODUCTS = [
   {
     name: "Paper Cutting Blades",
     image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    imageDimensions: { width: 9600, height: 9600, smallerWidths: [640] },
     href: "/products/paper-cutting-blades",
     tag: "Paper & Packaging",
     summary:
@@ -234,6 +238,7 @@ export const FEATURED_PRODUCTS = [
   {
     name: "Metal Shear Knives",
     image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
+    imageDimensions: { width: 1600, height: 1600, smallerWidths: [640] },
     href: "/products/metal-shear-knives",
     tag: "Metal Processing",
     summary:
@@ -243,6 +248,7 @@ export const FEATURED_PRODUCTS = [
     name: "Corrugated Slitter Blades",
     image:
       "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [640] },
     href: "/products/corrugated-slitter-scorer-blades",
     tag: "Paper & Packaging",
     summary:
@@ -252,6 +258,7 @@ export const FEATURED_PRODUCTS = [
     name: "Nonwoven Slitter Knives",
     image:
       "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+    imageDimensions: { width: 800, height: 800, smallerWidths: [640] },
     href: "/products/nonwoven-slitter-knives",
     tag: "Converting",
     summary:
@@ -260,6 +267,7 @@ export const FEATURED_PRODUCTS = [
   {
     name: "Strand Pelletizer Rotors",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    imageDimensions: { width: 1600, height: 1600, smallerWidths: [320, 480, 640] },
     href: "/products/strand-pelletizer-rotors",
     tag: "Recycling",
     summary:

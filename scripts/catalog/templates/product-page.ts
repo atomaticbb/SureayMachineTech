@@ -1,283 +1,128 @@
-/**
- * scripts/catalog/templates/product-page.ts
- *
- * Two layouts share one data-prep path (dispatched by `index`):
- *  - index 0 (first product of each sector) → HERO layout: large image + navy
- *    info panel + full-width gold spec bar + dimension table. Breaks the rhythm.
- *  - otherwise → COMPACT layout: photo grid + info panel + full-width table.
- */
-
 import type { Blade } from "../../../client/src/data/blades.ts";
 import {
-  imageToBase64Compressed,
-  buildDimensionTableHtml,
-  buildFeaturesHtml,
-  generateQrSvg,
-  escapeHtml,
-} from "../utils.ts";
+  getStandardColumns,
+  getBladeDimensionTables,
+} from "../../../client/src/data/blade-dimension-tables.ts";
 import { COMPANY } from "../constants.ts";
+import type { CatalogCopy } from "../copy.ts";
+import {
+  escapeHtml,
+  generateQrSvg,
+  imageToBase64Compressed,
+} from "../utils.ts";
 import { pageHeader, pageFooter } from "./about.ts";
 
-/** Threshold: if dimension rows ≤ this, show extra content below */
-const SPARSE_THRESHOLD = 5;
+type Table = ReturnType<typeof getBladeDimensionTables>[number];
 
-function buildMachinesHtml(machines: string[] | undefined): string {
-  if (!machines || machines.length === 0) return "";
-  const tags = machines
-    .map((m) => `<span class="product-machine-tag">${escapeHtml(m)}</span>`)
-    .join("");
-  return `
-    <div class="product-machines-strip">
-      <div class="product-machines-label">Compatible Machines</div>
-      <div class="product-machines-tags">${tags}</div>
-    </div>`;
-}
-
-function buildAdvantagesHtml(
-  components: Blade["components"] | undefined
-): string {
-  if (!components || components.length === 0) return "";
-  const cards = components
-    .slice(0, 3)
-    .map(
-      (c) => `
-      <div class="product-advantage-card">
-        <div class="product-advantage-tag">${escapeHtml(c.tag)}</div>
-        <div class="product-advantage-title">${escapeHtml(c.title)}</div>
-        <div class="product-advantage-desc">${escapeHtml(c.description)}</div>
-      </div>`
-    )
-    .join("");
-  return `
-    <div class="product-advantages">
-      <div class="product-advantages-label">Engineering Advantages</div>
-      <div class="product-advantages-grid">${cards}</div>
-    </div>`;
-}
-
-/** QR card → live product page. `onDark` styles it for the navy hero panel. */
-function buildQrCard(
-  qrSvg: string,
-  urlDisplay: string,
-  onDark = false
-): string {
-  return `
-    <div class="product-qr${onDark ? " on-dark" : ""}">
-      <div class="product-qr-code">${qrSvg}</div>
-      <div class="product-qr-text">
-        <div class="product-qr-label">Scan · Live Specs &amp; RFQ</div>
-        <div class="product-qr-url">${escapeHtml(urlDisplay)}</div>
-      </div>
-    </div>`;
-}
-
-export async function buildProductPage(
-  blade: Blade,
-  index: number,
-  publicDir: string,
-  logoSvg: string,
-  pageNum: number
-): Promise<string> {
-  const isHero = index === 0;
-
-  // Main product image — larger for the hero layout
-  const mainImgSrc = await imageToBase64Compressed(
-    publicDir,
-    blade.image,
-    isHero ? 1000 : 600
-  );
-
-  // QR code → live product page
-  const productUrl = `${COMPANY.websiteUrl}${blade.link}`;
-  const qrSvg = await generateQrSvg(productUrl);
-  const productUrlDisplay = productUrl.replace(/^https?:\/\//, "");
-
-  // Dimension table (shared)
-  const dimHtml = buildDimensionTableHtml(blade);
-
-  if (isHero) {
-    return buildHeroLayout(
-      blade,
-      mainImgSrc,
-      qrSvg,
-      productUrlDisplay,
-      dimHtml,
-      logoSvg,
-      pageNum
-    );
-  }
-
-  return buildCompactLayout(
+function dimensionPages(blade: Blade, copy: CatalogCopy): Table[][] {
+  const labels: Record<string, string> = {
+    "bladeUi.itemNo": copy.itemNo,
+    "productDetail.comprehensiveData.colOuterDiameter": copy.od,
+    "productDetail.comprehensiveData.colInnerDiameter": copy.id,
+    "productDetail.comprehensiveData.colThickness": copy.thickness,
+    "productDetail.comprehensiveData.colTeeth": copy.teeth,
+  };
+  const cols = getStandardColumns(
     blade,
-    mainImgSrc,
-    qrSvg,
-    productUrlDisplay,
-    dimHtml,
-    publicDir,
-    logoSvg,
-    pageNum
+    blade.standardDimensions ?? [],
+    key => labels[key]
   );
+  const tables = getBladeDimensionTables(blade, copy.dimensions, cols);
+  const pages: Table[][] = [];
+  let space = 0;
+  for (const table of tables) {
+    let part: Table | undefined;
+    // Reserve a heading and column headings each time a table starts or continues.
+    // Long model names wrap in narrower columns, consuming an extra printed line.
+    const charsPerLine = Math.max(15, Math.floor(140 / table.columns.length));
+    for (const row of table.rows) {
+      const units = Math.max(
+        1,
+        ...row.map(value => Math.ceil(value.length / charsPerLine))
+      );
+      if (space < units + (part ? 0 : 4)) {
+        pages.push([]);
+        space = 20;
+        part = undefined;
+      }
+      if (!part) {
+        part = { ...table, rows: [] };
+        pages[pages.length - 1].push(part);
+        space -= 4;
+      }
+      part.rows.push(row);
+      space -= units;
+    }
+  }
+  return pages;
 }
 
-// ── HERO layout (first product of a sector) ─────────────────────────────────────
-
-function buildHeroLayout(
-  blade: Blade,
-  mainImgSrc: string,
-  qrSvg: string,
-  productUrlDisplay: string,
-  dimHtml: string,
-  logoSvg: string,
-  pageNum: number
-): string {
-  const featuresHtml = buildFeaturesHtml(blade, 320);
-
-  // Up to 4 headline specs for the gold spec bar
-  const barSpecs = (blade.specs || []).slice(0, 4);
-  const specBarHtml = barSpecs.length
-    ? `<div class="hero-spec-bar">${barSpecs
-        .map(
-          (s) => `
-        <div class="hero-spec">
-          <div class="hero-spec-value">${escapeHtml(s.value)}</div>
-          <div class="hero-spec-label">${escapeHtml(s.label)}</div>
-        </div>`
-        )
-        .join("")}</div>`
-    : "";
-
-  return `
-  <div class="product-page product-page-hero page">
-    ${pageHeader(logoSvg)}
-
-    <div class="hero-body">
-      <div class="hero-top">
-        <div class="hero-img">
-          ${mainImgSrc ? `<img src="${mainImgSrc}" alt="${escapeHtml(blade.name)}" />` : ""}
-          <span class="hero-img-tag">Featured</span>
-        </div>
-        <div class="hero-panel">
-          <span class="hero-eyebrow">${escapeHtml(blade.categoryDisplay)}</span>
-          <h2 class="hero-name">${escapeHtml(blade.name)}</h2>
-          <p class="hero-fullname">${escapeHtml(blade.fullName || "")}</p>
-          <div class="hero-gold-rule"></div>
-          <div class="hero-features">${featuresHtml}</div>
-          ${buildQrCard(qrSvg, productUrlDisplay, true)}
-        </div>
-      </div>
-
-      ${specBarHtml}
-
-      ${dimHtml ? `
-      <div class="product-bottom">
-        <div class="product-table-title">Standard Dimensions</div>
-        ${dimHtml}
-      </div>` : ""}
-    </div>
-
-    ${pageFooter(pageNum)}
-  </div>`;
+function renderTable(table: Table, copy: CatalogCopy) {
+  const headers = table.columns
+    .map(
+      c =>
+        `<th scope="col">${escapeHtml(c === "Item No." ? copy.itemNo : c)}</th>`
+    )
+    .join("");
+  const rows = table.rows
+    .map(
+      row =>
+        `<tr>${row.map(v => `<td><bdi${/^SR\d{6}$/.test(v) ? ' class="item-number"' : ""} dir="${/^[\s+±<≥≤=ØΦ×∅0-9]|^SR\d/.test(v) ? "ltr" : "auto"}">${escapeHtml(v || "—")}</bdi></td>`).join("")}</tr>`
+    )
+    .join("");
+  return `<div class="table-block"><h3>${escapeHtml(table.title)}</h3><table><thead><tr>${headers}</tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
-// ── COMPACT layout (remaining products) ─────────────────────────────────────────
-
-async function buildCompactLayout(
+export async function buildProductPages(
   blade: Blade,
-  mainImgSrc: string,
-  qrSvg: string,
-  productUrlDisplay: string,
-  dimHtml: string,
   publicDir: string,
-  logoSvg: string,
-  pageNum: number
-): Promise<string> {
-  // Gallery thumbnails (up to 3 others besides main)
-  const thumbImages = (blade.gallery || [])
-    .filter((img) => img !== blade.image)
-    .slice(0, 3);
-  const thumbSrcs = await Promise.all(
-    thumbImages.map((img) => imageToBase64Compressed(publicDir, img, 250))
+  logo: string,
+  firstPage: number,
+  copy: CatalogCopy
+): Promise<string[]> {
+  const url = `${COMPANY.websiteUrl}/products/${blade.id}`;
+  const [image, qr] = await Promise.all([
+    blade.image && !blade.imagePending
+      ? imageToBase64Compressed(publicDir, blade.image, 900)
+      : Promise.resolve(""),
+    generateQrSvg(url),
+  ]);
+  const specs = blade.detailLayout?.technicalSpecs?.length
+    ? blade.detailLayout.technicalSpecs
+    : blade.specs;
+  const images = (blade.gallery ?? [])
+    .filter((v, i, all) => v !== blade.image && all.indexOf(v) === i)
+    .slice(0, 2);
+  const gallery = blade.imagePending
+    ? []
+    : await Promise.all(
+        images.map(v => imageToBase64Compressed(publicDir, v, 360))
+      );
+  const qrLink = `<a class="product-link" href="${url}"><span class="qr">${qr}</span><span><b>${escapeHtml(copy.viewProduct)}</b><small dir="ltr">${url.replace("https://", "")}</small></span></a>`;
+  const intro = `<section class="sheet product" id="product-${escapeHtml(blade.id)}">${pageHeader(logo, copy.catalog)}
+    <main class="product-grid"><div class="visuals">
+      ${image ? `<div class="product-photo"><img src="${image}" alt="${escapeHtml(blade.name)}"></div>` : ""}
+      ${
+        gallery.some(Boolean)
+          ? `<div class="thumbnails">${gallery
+              .filter(Boolean)
+              .map(src => `<img src="${src}" alt="">`)
+              .join("")}</div>`
+          : ""
+      }
+      ${qrLink}</div><div class="product-copy">
+      <div class="eyebrow">${escapeHtml(blade.categoryDisplay)}</div><h2>${escapeHtml(blade.name)}</h2>
+      <p class="description">${escapeHtml(blade.description)}</p>
+      <h3 class="rule-heading">${escapeHtml(copy.specifications)}</h3>
+      <dl class="specs">${specs.map(s => `<div><dt>${escapeHtml(s.label)}</dt><dd><bdi>${escapeHtml(s.value)}</bdi></dd></div>`).join("")}</dl>
+      ${blade.compatibleMachines?.length ? `<div class="machines"><h4>${escapeHtml(copy.machines)}</h4><p dir="ltr">${blade.compatibleMachines.map(escapeHtml).join(" · ")}</p></div>` : ""}
+    </div></main>${pageFooter(firstPage)}</section>`;
+  const details = dimensionPages(blade, copy).map(
+    (tables, index) =>
+      `<section class="sheet reference">${pageHeader(logo, copy.dimensions)}
+      <main><div class="eyebrow">${escapeHtml(blade.categoryDisplay)}</div><h2>${escapeHtml(blade.name)}</h2>
+      ${index === 0 && blade.dimensionLabels?.intro ? `<p class="dimension-note">${escapeHtml(blade.dimensionLabels.intro)}</p>` : ""}
+      ${tables.map(t => renderTable(t, copy)).join("")}</main>${pageFooter(firstPage + index + 1)}</section>`
   );
-  const thumbsHtml = thumbSrcs
-    .filter(Boolean)
-    .map(
-      (src) =>
-        `<div class="product-photo-thumb"><img src="${src}" alt="" /></div>`
-    )
-    .join("");
-
-  // Features copy — clean intro paragraphs, sentence-safe, no Markdown residue
-  const featuresHtml = buildFeaturesHtml(blade);
-
-  // Key specs (up to 6 for the mini grid)
-  const keySpecs = (blade.specs || []).slice(0, 6);
-  const specsHtml = keySpecs
-    .map(
-      (s) => `
-      <div class="product-spec-item">
-        <div class="product-spec-label">${escapeHtml(s.label)}</div>
-        <div class="product-spec-value">${escapeHtml(s.value)}</div>
-      </div>`
-    )
-    .join("");
-
-  // Extra content for sparse products
-  const dimCount = blade.standardDimensions?.length || 0;
-  const isSparse = dimCount <= SPARSE_THRESHOLD;
-  const machinesHtml = isSparse
-    ? buildMachinesHtml(blade.compatibleMachines)
-    : "";
-  const advantagesHtml = isSparse
-    ? buildAdvantagesHtml(blade.components)
-    : "";
-  const hasExtra = machinesHtml || advantagesHtml;
-
-  return `
-  <div class="product-page page">
-    ${pageHeader(logoSvg)}
-
-    <div class="product-body${isSparse ? " sparse" : ""}">
-      <!-- Top row: photos + info -->
-      <div class="product-top">
-        <div class="product-photos">
-          <div class="product-photo-main">
-            ${mainImgSrc ? `<img src="${mainImgSrc}" alt="${escapeHtml(blade.name)}" />` : ""}
-          </div>
-          ${thumbsHtml ? `<div class="product-photo-side">${thumbsHtml}</div>` : ""}
-        </div>
-
-        <div class="product-info">
-          <div class="product-name-bar">
-            <h2 class="product-name">${escapeHtml(blade.name)}</h2>
-            <p class="product-name-en">${escapeHtml(blade.fullName || "")}</p>
-          </div>
-          <span class="product-category-badge">${escapeHtml(blade.categoryDisplay)}</span>
-
-          <div class="product-features-title">Features</div>
-          <div class="product-features-text">${featuresHtml}</div>
-
-          <div class="product-info-footer">
-            ${specsHtml ? `<div class="product-specs-mini">${specsHtml}</div>` : ""}
-            ${buildQrCard(qrSvg, productUrlDisplay)}
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom row: full-width dimension table -->
-      ${dimHtml ? `
-      <div class="product-bottom">
-        <div class="product-table-title">Standard Dimensions</div>
-        ${dimHtml}
-      </div>` : ""}
-
-      <!-- Extra content when table is sparse -->
-      ${hasExtra ? `
-      <div class="product-extra">
-        ${machinesHtml}
-        ${advantagesHtml}
-      </div>` : ""}
-    </div>
-
-    ${pageFooter(pageNum)}
-  </div>`;
+  return [intro, ...details];
 }

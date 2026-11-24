@@ -34,7 +34,8 @@ const ARROW_CLASS =
   "flex h-9 w-9 items-center justify-center border border-slate-300 text-[#001f4d] transition-colors hover:bg-[#001f4d] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#001f4d] disabled:pointer-events-none disabled:opacity-30";
 
 export default function ProductDrawings({ blade }: Props) {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
+  const rtl = lang === "ar";
   const data = blade.drawings;
   const scrollerRef = useRef<HTMLUListElement>(null);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -45,8 +46,9 @@ export default function ProductDrawings({ blade }: Props) {
     const el = scrollerRef.current;
     if (!el) return;
     // 1px slack absorbs sub-pixel rounding at the track ends.
-    setCanPrev(el.scrollLeft > 1);
-    setCanNext(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+    const offset = Math.abs(el.scrollLeft);
+    setCanPrev(offset > 1);
+    setCanNext(offset < el.scrollWidth - el.clientWidth - 1);
   }, []);
 
   useEffect(() => {
@@ -61,7 +63,7 @@ export default function ProductDrawings({ blade }: Props) {
   const page = (dir: 1 | -1) => {
     const el = scrollerRef.current;
     if (!el) return;
-    el.scrollBy({ left: dir * el.clientWidth, behavior: "smooth" });
+    el.scrollBy({ left: (rtl ? -dir : dir) * el.clientWidth, behavior: "smooth" });
   };
 
   if (!data || data.items.length === 0) return null;
@@ -70,18 +72,15 @@ export default function ProductDrawings({ blade }: Props) {
 
   return (
     <section
-      aria-label="Engineering drawings"
-      className="max-w-7xl mx-auto px-6 sm:px-8"
+      aria-label={t("productDetail.drawings.headline")}
+      className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
     >
-      <p className="font-mono text-[10px] text-slate-700 tracking-widest mb-3">
-        [ {t("productDetail.drawings.eyebrow")} ]
-      </p>
       <h2 className="font-black text-4xl text-[#001f4d] tracking-tight mb-6">
         {t("productDetail.drawings.headline")}
       </h2>
 
       {data.intro && (
-        <p className="text-[16px] text-slate-600 leading-relaxed max-w-[80ch] mb-8">
+        <p className="text-description text-slate-600 leading-relaxed max-w-[80ch] mb-8">
           {data.intro}
         </p>
       )}
@@ -93,7 +92,7 @@ export default function ProductDrawings({ blade }: Props) {
           disabled={!canPrev}
           className={ARROW_CLASS}
         >
-          <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+          <ArrowLeft className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
           <span className="sr-only">{t("productDetail.drawings.prev")}</span>
         </button>
         <button
@@ -102,7 +101,7 @@ export default function ProductDrawings({ blade }: Props) {
           disabled={!canNext}
           className={ARROW_CLASS}
         >
-          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          <ArrowRight className="h-4 w-4 rtl:rotate-180" aria-hidden="true" />
           <span className="sr-only">{t("productDetail.drawings.next")}</span>
         </button>
       </div>
@@ -137,7 +136,7 @@ export default function ProductDrawings({ blade }: Props) {
                   height={800}
                 />
               </div>
-              <p className="font-mono text-[11px] text-slate-600 group-hover:text-[#001f4d] leading-snug px-3 py-2.5 border-t border-slate-200">
+              <p className="font-mono text-[14px] text-slate-600 group-hover:text-[#001f4d] leading-snug px-3 py-2.5 border-t border-slate-200">
                 {item.caption}
               </p>
             </button>
@@ -145,9 +144,6 @@ export default function ProductDrawings({ blade }: Props) {
         ))}
       </ul>
 
-      <p className="font-mono text-[11px] text-slate-500 tracking-wide mt-4">
-        ■ {t("productDetail.drawings.note")}
-      </p>
 
       <Dialog
         open={openIndex !== null}
@@ -155,7 +151,7 @@ export default function ProductDrawings({ blade }: Props) {
       >
         <DialogContent className="rounded-none border-slate-300 max-w-3xl">
           <DialogHeader>
-            <DialogTitle className="font-mono text-[12px] text-slate-600 tracking-wide text-left">
+            <DialogTitle className="font-mono text-[14px] text-slate-600 tracking-wide text-left">
               {active?.caption}
             </DialogTitle>
           </DialogHeader>

@@ -28,6 +28,7 @@ const BLADE_SUBCATEGORY_MAP: Record<BladeCategoryType, ProductSubCategory> = {
   granulator_blades: "production-line-blades",
   log_saw_blades: "log-saw-blades",
   shear_blades: "shear-blades",
+  paper_cutting: "paper-cutting-blades",
   cold_saw_blades: "cold-saw-blades",
   wood_chipper: "wood-chipper-blades",
   custom_profile: "shaped-custom-blades",

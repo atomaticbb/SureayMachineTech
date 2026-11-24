@@ -26,7 +26,7 @@ export default function ProductHero({
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         {/* Left: Image + view toggle */}
         <div className="flex flex-col gap-3">
-          <div className="relative w-full aspect-[4/3] bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm flex items-center justify-center p-4">
+          <div className="relative w-full aspect-[4/3] bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-none flex items-center justify-center p-4">
             <img
               src={
                 viewMode === "photo"
@@ -43,27 +43,27 @@ export default function ProductHero({
               height={600}
               decoding="async"
               onError={e => {
-                e.currentTarget.src = "/images/products/product.webp";
+                e.currentTarget.src = "/sureay.svg";
               }}
             />
-            <div className="absolute top-4 left-4 z-20 bg-[#003366] text-white text-[10px]  font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">
+            <div className="absolute top-4 left-4 z-20 bg-[#003366] text-white text-[12px]  font-bold px-3 py-1.5 rounded shadow-none tracking-wider">
               OEM / Custom Available
             </div>
             {blade.badge && (
-              <div className="absolute top-4 right-4 z-20 bg-[#003366] text-white text-[10px]  font-bold px-3 py-1.5 rounded shadow-sm tracking-wider">
+              <div className="absolute top-4 right-4 z-20 bg-[#003366] text-white text-[12px]  font-bold px-3 py-1.5 rounded shadow-none tracking-wider">
                 {blade.badge}
               </div>
             )}
           </div>
 
           {/* Photo / Schematic segmented control */}
-          <div className="flex self-start rounded-lg bg-slate-100 dark:bg-slate-800 p-1 shadow-sm">
+          <div className="flex self-start rounded-lg bg-slate-100 dark:bg-slate-800 p-1 shadow-none">
             <button
               onClick={() => setViewMode("photo")}
               className={`flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold  tracking-wider rounded-md transition-all duration-200 ${
                 viewMode === "photo"
-                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm"
-                  : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-none"
+                  : "text-muted-foreground dark:text-muted-foreground hover:text-slate-700 dark:hover:text-slate-200"
               }`}
             >
               <svg
@@ -85,8 +85,8 @@ export default function ProductHero({
               onClick={() => setViewMode("blueprint")}
               className={`flex items-center gap-1.5 px-4 py-1.5 text-xs font-bold  tracking-wider rounded-md transition-all duration-200 ${
                 viewMode === "blueprint"
-                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm"
-                  : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                  ? "bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-none"
+                  : "text-muted-foreground dark:text-muted-foreground hover:text-slate-700 dark:hover:text-slate-200"
               }`}
             >
               <svg
@@ -124,7 +124,7 @@ export default function ProductHero({
             <div className="bg-slate-50 dark:bg-slate-800/50 px-5 py-5 rounded-xl border border-slate-100 dark:border-slate-700 flex flex-col gap-3.5">
               {blade.specs.slice(0, 5).map((spec, i) => (
                 <div key={i} className="flex items-end gap-1">
-                  <span className="text-base text-slate-500 dark:text-slate-400 whitespace-nowrap">
+                  <span className="text-base text-muted-foreground dark:text-muted-foreground whitespace-nowrap">
                     {spec.label}
                   </span>
                   <div className="flex-grow border-b-2 border-dotted border-slate-200 dark:border-slate-700 mx-1 mb-1"></div>
@@ -144,7 +144,7 @@ export default function ProductHero({
           {/* Action Buttons */}
           <div className="flex flex-col xl:flex-row items-stretch xl:items-center gap-3 mb-4">
             <Link href="/contact" asChild>
-              <a className="inline-block w-full text-center px-18 py-4 bg-[#003366] text-white font-bold text-base rounded-lg hover:bg-[#FF6600] transition-colors duration-300">
+              <a className="inline-block w-full text-center px-18 py-4 bg-[#003366] text-white font-bold text-base rounded-lg hover:bg-[#0b4a8f] transition-colors duration-300">
                 Request Quote
               </a>
             </Link>

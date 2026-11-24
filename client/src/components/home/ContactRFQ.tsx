@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import Link from "@/components/common/SiteLink";
+import InquiryForm from "@/components/common/InquiryForm";
 import type { ContactSubmissionResponse } from "@shared/types";
 import { useTranslation } from "@/lib/useTranslation";
 import { gtagEvent, trackLead } from "@/lib/gtag";
@@ -18,6 +19,7 @@ export default function ContactRFQ({
   messagePlaceholder,
   formLocation = "homepage_bottom",
   eventCategory = "homepage_rfq",
+  hideIntro = false,
 }: {
   productName?: string;
   /** Product-specific example for the message field. Falls back to the
@@ -25,10 +27,12 @@ export default function ContactRFQ({
   messagePlaceholder?: string;
   formLocation?: string;
   eventCategory?: string;
+  hideIntro?: boolean;
 } = {}) {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const submittingRef = useRef(false);
   const [error, setError] = useState("");
   const [submitNotice, setSubmitNotice] = useState("");
   const [emailNoticeOnly, setEmailNoticeOnly] = useState(false);
@@ -81,6 +85,8 @@ export default function ContactRFQ({
   // ── Submit ────────────────────────────────────────────────────────────────
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (submittingRef.current) return;
+    submittingRef.current = true;
     setLoading(true);
     setError("");
     setSubmitNotice("");
@@ -137,33 +143,38 @@ export default function ContactRFQ({
           : "Submission failed. Please try again."
       );
     } finally {
+      submittingRef.current = false;
       setLoading(false);
     }
   }
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8">
-        <div className="mb-10 lg:mb-14">
-          <p className="text-slate-500 font-bold text-xs  tracking-[0.3em] mb-3">
-            {t("contact.section.eyebrow")}
-          </p>
-          <h2 className="font-black text-2xl md:text-3xl lg:text-[36px] text-[#003366]   tracking-tight leading-[1.05]">
+    <section id="contact" className="site-section home-section py-16 lg:py-24 bg-white">
+      <div className="home-content max-w-7xl mx-auto px-6 sm:px-8">
+        <div className={hideIntro ? "mb-5 lg:mb-6" : "mb-10 lg:mb-14"}>
+          {lang !== "en" && (
+            <p className="text-muted-foreground font-bold text-xs  tracking-[0.3em] mb-3">
+              {t("contact.section.eyebrow")}
+            </p>
+          )}
+          <h2 className="home-section-title font-black text-2xl md:text-3xl lg:text-[38px] text-[#003366] tracking-tight leading-[1.05]">
             {t("contact.section.title")}
           </h2>
-          <div className="w-16 h-[3px] bg-slate-300 mt-5" />
+          {!hideIntro && <div className="w-16 h-[3px] bg-slate-300 mt-5" />}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
           {/* Left: Contact channels */}
           <div className="flex flex-col gap-6 py-10">
             <div>
-              <h3 className="font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
+              <h3 className="home-contact-subheading font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
                 {t("contact.channels.title")}
               </h3>
-              <p className="text-sm text-slate-600">
-                {t("contact.channels.subtitle")}
-              </p>
+              {!hideIntro && (
+                <p className="text-sm text-slate-600">
+                  {t("contact.channels.subtitle")}
+                </p>
+              )}
             </div>
 
             {/* Email */}
@@ -174,7 +185,7 @@ export default function ContactRFQ({
               }
               className="group block"
             >
-              <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
+              <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] shadow-none transition-all duration-300 rounded-none">
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#e8eef5] rounded-none flex items-center justify-center group-hover:bg-[#d0dcea] transition-colors duration-300">
                     <svg
@@ -192,7 +203,7 @@ export default function ContactRFQ({
                     </svg>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-[10px] text-slate-400 font-bold  tracking-widest mb-1">
+                    <div className="text-[12px] text-muted-foreground font-bold  tracking-widest mb-1">
                       {t("contact.channels.emailUs")}
                     </div>
                     <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors truncate">
@@ -200,7 +211,7 @@ export default function ContactRFQ({
                     </div>
                     <div className="mt-1.5 inline-flex items-center gap-1.5 bg-[#003366]/8 border border-[#003366]/20 px-2 py-0.5">
                       <span className="block w-1.5 h-1.5 rounded-full bg-[#003366]" />
-                      <span className="text-[10px] font-black text-[#003366]  tracking-widest">
+                      <span className="text-[12px] font-black text-[#003366]  tracking-widest">
                         {t("contact.channels.engineerResponse")}
                       </span>
                     </div>
@@ -217,7 +228,7 @@ export default function ContactRFQ({
               }
               className="group block"
             >
-              <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
+              <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] shadow-none transition-all duration-300 rounded-none">
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#e8eef5] rounded-none flex items-center justify-center group-hover:bg-[#d0dcea] transition-colors duration-300">
                     <svg
@@ -235,7 +246,7 @@ export default function ContactRFQ({
                     </svg>
                   </div>
                   <div className="flex-1">
-                    <div className="text-[10px] text-slate-400 font-bold  tracking-widest mb-1">
+                    <div className="text-[12px] text-muted-foreground font-bold  tracking-widest mb-1">
                       {t("contact.channels.callUs")}
                     </div>
                     <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors">
@@ -256,7 +267,7 @@ export default function ContactRFQ({
               }
               className="group block"
             >
-              <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] hover:shadow-lg transition-all duration-300 rounded-none">
+              <div className="bg-slate-50 p-5 border border-slate-200 hover:border-[#003366] shadow-none transition-all duration-300 rounded-none">
                 <div className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#e8eef5] rounded-none flex items-center justify-center group-hover:bg-[#d0dcea] transition-colors duration-300">
                     <svg
@@ -269,21 +280,21 @@ export default function ContactRFQ({
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-[10px] text-slate-400 font-bold  tracking-widest">
+                      <span className="text-[12px] text-muted-foreground font-bold  tracking-widest">
                         {t("contact.channels.whatsapp")}
                       </span>
                       <span className="relative flex items-center">
                         <span className="absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75 animate-ping" />
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
                       </span>
-                      <span className="text-[10px] text-slate-500 font-semibold">
+                      <span className="text-[12px] text-muted-foreground font-semibold">
                         {t("common.online")}
                       </span>
                     </div>
                     <div className="text-sm font-bold text-[#003366] group-hover:text-[#003366] transition-colors">
                       {t("contact.channels.chatEngineer")}
                     </div>
-                    <div className="text-[10px] text-slate-500 font-semibold mt-0.5  tracking-widest">
+                    <div className="text-[12px] text-muted-foreground font-semibold mt-0.5  tracking-widest">
                       {t("contact.channels.directSupport")}
                     </div>
                   </div>
@@ -293,15 +304,24 @@ export default function ContactRFQ({
           </div>
 
           {/* Right: Quote form */}
-          <div className="bg-white border border-slate-200 shadow-sm rounded-none p-8 flex flex-col">
-            <h3 className="font-black text-2xl text-[#003366] tracking-tight leading-[1.05] mb-1">
+          <div className={`bg-white border border-slate-200 rounded-none flex flex-col ${lang === "en" ? "p-4 sm:p-6 shadow-sm" : "p-8 shadow-none"}`}>
+            <h3 className={`home-contact-subheading font-black text-2xl text-[#003366] tracking-tight leading-[1.05] ${lang === "en" ? "mb-3" : hideIntro ? "mb-6" : "mb-1"}`}>
               {t("contact.form.title")}
             </h3>
-            <p className="text-sm text-slate-600 mb-6">
-              {t("contact.form.subtitle")}
-            </p>
+            {lang !== "en" && !hideIntro && (
+              <p className="text-sm text-slate-600 mb-6">
+                {t("contact.form.subtitle")}
+              </p>
+            )}
 
-            {submitted ? (
+            {lang === "en" ? (
+              <InquiryForm
+                productName={productName}
+                messagePlaceholder={messagePlaceholder}
+                formLocation={formLocation}
+                eventCategory={eventCategory}
+              />
+            ) : submitted ? (
               /* ── Success state ─────────────────────────────────────── */
               <div className="flex-1 flex flex-col items-center justify-center gap-5 py-10 text-center">
                 <div className="w-14 h-14 bg-[#003366] flex items-center justify-center flex-shrink-0">
@@ -320,7 +340,7 @@ export default function ContactRFQ({
                   </svg>
                 </div>
                 <div>
-                  <p className="font-black text-[11px] text-[#003366]  tracking-[0.25em] mb-2">
+                  <p className="font-black text-[14px] text-[#003366]  tracking-[0.25em] mb-2">
                     {emailNoticeOnly
                       ? t("contact.form.savedOnly.eyebrow")
                       : t("contact.form.success.eyebrow")}
@@ -330,7 +350,7 @@ export default function ContactRFQ({
                       ? t("contact.form.savedOnly.title")
                       : t("contact.form.success.title")}
                   </p>
-                  <p className="text-sm text-slate-500 leading-relaxed max-w-xs mx-auto">
+                  <p className="text-description text-muted-foreground leading-relaxed max-w-xs mx-auto">
                     {submitNotice || t("contact.form.success.body")}
                   </p>
                   {emailNoticeOnly && (
@@ -340,7 +360,7 @@ export default function ContactRFQ({
                   )}
                 </div>
                 <div className="w-full border-t border-slate-100 pt-5">
-                  <p className="font-mono text-[9px] text-slate-400  tracking-[0.25em]">
+                  <p className="font-mono text-[12px] text-muted-foreground  tracking-[0.25em]">
                     ■ ISO 9001:2015 · CMM VERIFIED · OEM GRADE
                   </p>
                 </div>
@@ -353,7 +373,7 @@ export default function ContactRFQ({
               >
                 {productName && (
                   <div className="flex items-center gap-3 px-4 py-2.5 border border-[#001f4d]/20 bg-[#001f4d]/5">
-                    <span className="font-mono text-[9px] text-[#001f4d]  tracking-widest font-black flex-shrink-0">
+                    <span className="font-mono text-[12px] text-[#001f4d]  tracking-widest font-black flex-shrink-0">
                       {t("contact.form.productLabel")}
                     </span>
                     <span className="font-bold text-sm text-[#001f4d] truncate">
@@ -395,7 +415,7 @@ export default function ContactRFQ({
                 <div>
                   <label className="block text-sm font-semibold text-slate-800  tracking-wider mb-1.5">
                     {t("contact.form.cadLabel")}{" "}
-                    <span className="text-slate-400 normal-case tracking-normal font-normal">
+                    <span className="text-muted-foreground normal-case tracking-normal font-normal">
                       ({t("common.optional")} · max {MAX_FILE_MB} MB)
                     </span>
                   </label>
@@ -431,7 +451,7 @@ export default function ContactRFQ({
                           <p className="text-xs font-bold text-[#003366] truncate">
                             {attachment.name}
                           </p>
-                          <p className="text-[10px] text-slate-400">
+                          <p className="text-[12px] text-muted-foreground">
                             {fmtSize(attachment.size)} ·{" "}
                             {attachment.name.split(".").pop()?.toUpperCase()}
                           </p>
@@ -440,7 +460,7 @@ export default function ContactRFQ({
                       <button
                         type="button"
                         onClick={() => setAttachment(null)}
-                        className="flex-shrink-0 text-[10px] font-bold text-slate-400 hover:text-red-600  tracking-widest transition-colors"
+                        className="flex-shrink-0 text-[12px] font-bold text-muted-foreground hover:text-red-600  tracking-widest transition-colors"
                         aria-label={t("common.remove")}
                       >
                         {t("common.remove")}
@@ -468,7 +488,7 @@ export default function ContactRFQ({
                       }`}
                     >
                       <svg
-                        className="w-4 h-4 flex-shrink-0 text-slate-400"
+                        className="w-4 h-4 flex-shrink-0 text-muted-foreground"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -484,13 +504,13 @@ export default function ContactRFQ({
                         <p className="text-xs font-bold text-slate-600  tracking-wide">
                           {t("contact.form.cadDropZoneTitle")}
                         </p>
-                        <p className="text-[10px] text-slate-400 mt-0.5">
+                        <p className="text-[12px] text-muted-foreground mt-0.5">
                           {t("contact.form.cadDropZoneHint")}
                         </p>
                       </div>
                     </div>
                   )}
-                  <p className="text-[10px] text-slate-400 leading-snug mt-1.5">
+                  <p className="text-[12px] text-muted-foreground leading-snug mt-1.5">
                     {t("contact.form.ipNotice")}{" "}
                     <Link href="/terms#products-quotations" asChild>
                       <a className="underline hover:text-[#003366]">
@@ -509,13 +529,13 @@ export default function ContactRFQ({
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none shadow-md"
+                  className="w-full bg-[#003366] border border-[#003366] hover:bg-white hover:text-[#003366] disabled:opacity-60 disabled:cursor-not-allowed text-white py-4 min-h-[48px] font-black text-sm  tracking-widest transition-all duration-300 rounded-none shadow-none"
                 >
                   {loading
                     ? t("common.sending")
                     : t("contact.form.submitButton")}
                 </button>
-                <p className="text-xs text-slate-400 text-center">
+                <p className="text-xs text-muted-foreground text-center">
                   {t("contact.form.privacyNote")}
                 </p>
               </form>

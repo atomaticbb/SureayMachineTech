@@ -6,7 +6,9 @@
  */
 
 import type { CSSProperties } from "react";
+import { TableScrollRegion } from "@/components/ui/table";
 import type { Blade } from "@/data/blades";
+import { getWebpImageSrcSet } from "@/data/blades";
 import { useTranslation } from "@/lib/useTranslation";
 
 interface DecisiveSpecsProps {
@@ -26,78 +28,173 @@ export default function DecisiveSpecs({
   blade,
   specImage,
 }: DecisiveSpecsProps) {
-  const { t } = useTranslation();
-  const specs = blade.specs ?? [];
+  const { t, lang } = useTranslation();
+  const catalogLayout = lang === "en" || !blade.link.startsWith("/mixer-wear-parts/");
+  const detailLayout = blade.detailLayout;
+  const specs =
+    detailLayout?.technicalSpecs ??
+    (detailLayout
+      ? [{ label: t("bladeUi.sizes"), value: detailLayout.sizeRange }, ...blade.specs]
+      : blade.specs);
   if (specs.length === 0) return null;
 
-  const panelImage = specImage ?? blade.gallery?.at(-1) ?? blade.image;
+  const title = detailLayout
+    ? t("bladeUi.technicalSpecifications")
+    : t("productDetail.decisiveSpecs.headline");
+  const specificationImage = detailLayout?.specificationImage;
+  const panelImage =
+    specificationImage?.src ??
+    specImage ??
+    blade.gallery?.at(-1) ??
+    blade.image;
   const panelAlt =
-    (!specImage && blade.galleryAlts?.at(-1)) || blade.fullName || blade.name;
+    specificationImage?.alt ??
+    ((!specImage && blade.galleryAlts?.at(-1)) || blade.fullName || blade.name);
+  const panelDimensions =
+    specificationImage || !specImage
+      ? blade.specificationImageDimensions
+      : undefined;
+  const panelSrcSet = getWebpImageSrcSet(panelImage, panelDimensions);
+  const description =
+    catalogLayout
+      ? [
+          blade.introNote,
+          !detailLayout
+            ? blade.id === "granulator-blades" || blade.id === "special-shaped-blades"
+              ? t("bladeUi.manufacturingNote")
+              : t("productDetail.decisiveSpecs.footnote")
+            : undefined,
+        ].filter(Boolean).join(" ")
+      : undefined;
 
   return (
     <section
-      aria-label="Decisive specifications"
-      className="max-w-7xl mx-auto px-6 sm:px-8"
+      aria-label={detailLayout ? undefined : title}
+      aria-labelledby={
+        detailLayout ? "product-technical-specifications-heading" : undefined
+      }
+      className="site-section site-content max-w-7xl mx-auto px-6 sm:px-8"
     >
       {/* Section header — outside the flex row */}
-      <p className="font-mono text-[10px] text-slate-700  tracking-widest mb-3">
-        [ {t("productDetail.decisiveSpecs.eyebrow")} ]
-      </p>
-      <h2 className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10">
-        {t("productDetail.decisiveSpecs.headline")}
+      {!catalogLayout && (
+        <p
+          className={`font-mono text-[12px] text-slate-700 mb-3 ${detailLayout ? "tracking-normal" : "tracking-widest"}`}
+        >
+          {t("productDetail.decisiveSpecs.eyebrow")}
+        </p>
+      )}
+      <h2
+        id={
+          detailLayout ? "product-technical-specifications-heading" : undefined
+        }
+        className="font-black text-4xl text-[#001f4d]  tracking-tight mb-10"
+      >
+        {title}
       </h2>
 
+      {description && (
+        <p className="mb-8 max-w-[80ch] text-description leading-relaxed text-slate-600">
+          {description}
+        </p>
+      )}
+
       {/* Flex row: items-start — each column its own height, no cross-stretch */}
-      <div className="flex flex-col lg:flex-row gap-10 xl:gap-14 items-start">
-        {/* Left — specs table only */}
-        <div className="w-full lg:w-[500px] xl:w-[540px] flex-shrink-0">
-          <div className="border-t-2 border-t-[#001f4d] border border-slate-300 overflow-hidden h-full">
-            <table className="w-full text-left border-collapse">
-              <tbody>
-                {specs.map((spec, i) => (
-                  <tr
-                    key={i}
-                    className={`border-b border-slate-200 last:border-b-0 ${i % 2 === 0 ? "bg-white" : "bg-slate-50/60"}`}
-                  >
-                    <th
-                      scope="row"
-                      className="px-5 py-3 border-r border-slate-200 font-mono text-[11px] text-slate-600  tracking-wider font-semibold w-[36%] lg:w-[28%]"
+      <div
+        className={`flex flex-col items-start lg:flex-row ${detailLayout ? "gap-6 xl:gap-8" : "gap-10 xl:gap-14"}`}
+      >
+        {/* Left — technical specifications */}
+        <div
+          className={
+            detailLayout
+              ? "w-full min-w-0 lg:flex-1"
+              : "w-full flex-shrink-0 lg:w-[500px] xl:w-[540px]"
+          }
+        >
+          {detailLayout ? (
+            <ul className="list-disc space-y-3 ps-5 text-[18px] leading-[1.6] text-black">
+              {specs.map(spec => (
+                <li key={spec.label}>
+                  <strong className="font-bold tracking-wide">
+                    {spec.label}:
+                  </strong>{" "}
+                  {spec.value}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <TableScrollRegion
+              label={title}
+              pinFirstColumn={catalogLayout}
+              className="h-full border border-t-2 border-slate-300 border-t-[#001f4d]"
+            >
+              <table className="w-full text-left border-collapse">
+                <tbody>
+                  {specs.map((spec, i) => (
+                    <tr
+                      key={i}
+                      className={`border-b border-slate-200 last:border-b-0 ${i % 2 === 0 ? "bg-white" : "bg-slate-50"}`}
                     >
-                      {spec.label}
-                    </th>
-                    <td className="px-5 py-3 font-mono font-medium text-[14px] text-[#001f4d]">
-                      {spec.value}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                      <th
+                        scope="row"
+                        className="px-5 py-3 border-r border-slate-200 font-mono text-[14px] text-slate-600 font-semibold tracking-wider w-[36%] lg:w-[28%]"
+                      >
+                        {spec.label}
+                      </th>
+                      <td className="px-5 py-3 font-mono font-medium text-[16px] text-[#001f4d]">
+                        {spec.value}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </TableScrollRegion>
+          )}
         </div>
 
         {/* Right — product image, fixed aspect ratio */}
-        <div className="flex-1 min-w-0">
+        <div className={`flex-1 min-w-0 ${detailLayout ? "w-full" : ""}`}>
           <div
-            className="w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
-            style={DOT_GRID_STYLE}
+            className={
+              detailLayout
+                ? "w-full"
+                : "w-full aspect-[4/3] border border-slate-200 bg-slate-50 overflow-hidden flex items-center justify-center"
+            }
+            style={detailLayout ? undefined : DOT_GRID_STYLE}
           >
             <img
               src={panelImage}
+              srcSet={
+                panelSrcSet ??
+                (specificationImage
+                  ? `${panelImage.replace(/\.webp$/, "-640w.webp")} 640w, ${panelImage} 800w`
+                  : undefined)
+              }
+              sizes={
+                panelSrcSet || specificationImage
+                  ? "(min-width: 1024px) 480px, 288px"
+                  : undefined
+              }
               alt={panelAlt}
-              className="w-full h-full object-contain p-4 mix-blend-multiply"
+              className={
+                detailLayout
+                  ? "product-detail-image mx-auto"
+                  : "w-full h-full object-contain p-4 mix-blend-multiply"
+              }
               loading="lazy"
               decoding="async"
-              width={800}
-              height={600}
+              width={panelDimensions?.width ?? 800}
+              height={panelDimensions?.height ?? (detailLayout ? 800 : 600)}
             />
           </div>
         </div>
       </div>
 
       {/* Footnote — outside the flex row */}
-      <p className="font-mono text-[11px] text-slate-500  tracking-widest mt-4">
-        ■ {t("productDetail.decisiveSpecs.footnote")}
-      </p>
+      {!catalogLayout && !detailLayout && (
+        <p className="font-mono text-[14px] text-muted-foreground  tracking-widest mt-4">
+          ■ {t("productDetail.decisiveSpecs.footnote")}
+        </p>
+      )}
     </section>
   );
 }

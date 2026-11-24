@@ -1,19 +1,83 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/lib/useTranslation";
 
-function Table({ className, ...props }: React.ComponentProps<"table">) {
+function TableScrollRegion({
+  children,
+  label,
+  pinFirstColumn = false,
+  className,
+}: {
+  children: React.ReactNode;
+  label: string;
+  pinFirstColumn?: boolean;
+  className?: string;
+}) {
+  const { t } = useTranslation();
+  const regionRef = React.useRef<HTMLDivElement>(null);
+  const hintId = React.useId();
+  const [overflowing, setOverflowing] = React.useState(false);
+
+  React.useEffect(() => {
+    const region = regionRef.current;
+    if (!pinFirstColumn || !region) return;
+
+    const measure = () =>
+      setOverflowing(region.clientWidth > 0 && region.scrollWidth > region.clientWidth);
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(region);
+    const table = region.querySelector("table");
+    if (table) observer.observe(table);
+    return () => observer.disconnect();
+  }, [pinFirstColumn]);
+
+  const pinned = pinFirstColumn && overflowing;
   return (
-    <div
-      data-slot="table-container"
-      className="relative w-full overflow-x-auto"
+    <>
+      {pinned && (
+        <p id={hintId} className="mb-2 text-[14px] text-slate-600 print:hidden">
+          {t("bladeUi.scrollTable")}
+        </p>
+      )}
+      <div
+        ref={regionRef}
+        data-slot="table-container"
+        data-pinned-column={pinned || undefined}
+        tabIndex={0}
+        role="region"
+        aria-label={label}
+        aria-describedby={pinned ? hintId : undefined}
+        className={cn(
+          "relative overflow-x-auto",
+          pinFirstColumn && "table-with-row-labels",
+          className
+        )}
+      >
+        {children}
+      </div>
+    </>
+  );
+}
+
+function Table({
+  className,
+  pinFirstColumn,
+  ...props
+}: React.ComponentProps<"table"> & { pinFirstColumn?: boolean }) {
+  return (
+    <TableScrollRegion
+      label={props["aria-label"] ?? "Scrollable specifications"}
+      pinFirstColumn={pinFirstColumn}
+      className="w-full"
     >
       <table
         data-slot="table"
         className={cn("w-full caption-bottom text-sm", className)}
         {...props}
       />
-    </div>
+    </TableScrollRegion>
   );
 }
 
@@ -104,6 +168,7 @@ function TableCaption({
 
 export {
   Table,
+  TableScrollRegion,
   TableHeader,
   TableBody,
   TableFooter,

@@ -1,265 +1,328 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blade-categories.ts
-// Target:    es
-// Generated: 2026-05-21T13:14:56.601Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (es).
 import type { BladeCategoryMeta } from "../blade-categories";
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
-    "slug": "slitter-knives",
-    "category": "slitter_knives",
-    "title": "Cuchillas de corte longitudinal y circulares",
-    "shortName": "Cuchillas cortadoras",
-    "tagline": "Cuchillas rotativas rectificadas de precisión para film, papel y láminas metálicas",
-    "heroImage": "/images/categories/slitter-knives-nav.webp",
-    "description": "cuchillas rotativas de corte longitudinal diseñada para corte por cizalladura, incisión y cuchilla de películas de embalaje flexibles, papel, telas no tejidas y láminas metálicas. ±0,002 mm de tolerancia de espesor, ≤0,02 mm de excentricidad T.I.R., disponible en acero M2 HSS, D2, ASP23 PM y metal duro con recubrimientos opcionales de TiN, DLC y teflón.",
-    "specItems": [
-      {
-        "label": "Tolerancia de grosor",
-        "value": "±0,002 mm"
-      },
-      {
-        "label": "T.I.R. Runout",
-        "value": "≤0,02 mm"
-      },
-      {
-        "label": "Materiales",
-        "value": "M2 HSS - D2 - ASP23 PM - Carburo"
-      },
-      {
-        "label": "Revestimientos",
-        "value": "TiN - DLC - Teflón"
-      },
-      {
-        "label": "Modos de corte",
-        "value": "Cizalla - Partitura - Navaja"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Película - Papel - No tejidos - Lámina"
-      }
-    ]
+    slug: "slitter-knives",
+    category: "slitter_knives",
+    title: "Cuchillas de corte longitudinal y cuchillas circulares",
+    seoTitle: "Cuchillas rotativas y circulares para corte longitudinal",
+    shortName: "Cuchillas de corte longitudinal",
+    tagline:
+      "Cuchillas para corte longitudinal de bobinas, procesamiento de bobinas metálicas y conversión de cartón corrugado",
+    heroImage: "/images/categories/slitter-knives-nav.webp",
+    description:
+      "Explore las cuchillas cortadoras para películas, papel, telas no tejidas, láminas de cobre y aluminio, bobinas de acero y baterías. Compare tipos de hojas, anillos inferiores y opciones de carburo.",
   },
   {
-    "slug": "shredder-blades",
-    "category": "shredder_blades",
-    "title": "Cuchillas e insertos para trituradoras",
-    "shortName": "Cuchillas trituradoras",
-    "tagline": "Herramientas de corte de doble eje, eje único y trituradoras de neumáticos",
-    "heroImage": "/images/categories/shredder-blades-nav.webp",
-    "description": "ZGTR0zGTR de alta resistencia para líneas de reciclaje de plástico, metal, neumáticos y baterías. Aleación forjada D2/SKD11/Cr12MoV con tratamiento térmico criogénico y de vacío para una resistencia extrema al impacto y al desgaste. Ajuste OEM para plataformas de trituradoras de doble eje y eje único.",
-    "specItems": [
-      {
-        "label": "Materiales",
-        "value": "D2 - SKD11 - Cr12MoV"
-      },
-      {
-        "label": "Dureza",
-        "value": "58-62 HRC"
-      },
-      {
-        "label": "Tratamiento térmico",
-        "value": "Criogénico + Vacío"
-      },
-      {
-        "label": "Plataformas",
-        "value": "Eje doble - Eje único"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Plástico - Metal - Neumático - Batería"
-      },
-      {
-        "label": "Ajuste",
-        "value": "Reemplazo OEM"
-      }
-    ]
+    slug: "shredder-blades",
+    category: "shredder_blades",
+    title: "Cuchillas y piezas de desgaste para trituradoras",
+    shortName: "Cuchillas para trituradoras",
+    tagline:
+      "Insertos de rotor, cuchillas estacionarias, cribas y cortadores montados en eje",
+    heroImage: "/images/categories/shredder-blades-nav.webp",
+    description:
+      "Elija cortadoras de ejes múltiples para reciclaje general, chatarra, neumáticos o pretrituración de baterías. Encuentre insertos de rotor de un solo eje, cuchillas estacionarias y cribas.",
+    selectionGuide: {
+      title: "Guía de selección de cuchillas trituradoras",
+      articles: [
+        {
+          id: "single-shaft-shredder-blade-face-profile-guide",
+          width: 800,
+          height: 800,
+          smallerWidths: [320, 400, 640],
+        },
+        {
+          id: "tire-shredder-blade-wear-steel-cord",
+          width: 2496,
+          height: 1696,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "granulator-rotor-bed-knife-configuration",
+          width: 1672,
+          height: 941,
+          smallerWidths: [400, 640, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "twin-and-multi-shaft-cutters",
+          title: "Cortadores de ejes múltiples por aplicación",
+          description:
+            "Comience con lo que va a la trituradora. Luego utilice el modelo de la máquina y la pila de cortadores para identificar el reemplazo correcto.",
+          productIds: [
+            "twin-shaft-blades-recycling",
+            "multi-shaft-blades-metal",
+            "tire-shredder-blades",
+            "twin-shaft-blades-battery",
+          ],
+        },
+        {
+          id: "single-shaft-parts",
+          title: "Piezas para trituradora y granuladora de un solo eje",
+          description:
+            "Las cuchillas del rotor cortan contra las cuchillas del estator estacionarias. La pantalla controla qué material puede salir de la cámara.",
+          productIds: [
+            "single-shaft-shredder-blades",
+            "single-shaft-bed-knives",
+            "shredder-screens",
+            "granulator-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Incluya el modelo de la máquina, el número de pieza, la materia prima y la cantidad. Adjunte un cortador o un dibujo de pantalla si está disponible.",
+    },
   },
   {
-    "slug": "granulator-blades",
-    "category": "granulator_blades",
-    "title": "Cuchillas para granuladoras y trituradoras",
-    "shortName": "Cuchillas granuladoras",
-    "tagline": "Máxima calidad de triturado, MTBR ampliado",
-    "heroImage": "/images/categories/granulator-blades-nav.webp",
-    "description": "Granuladora de plástico y cuchillas trituradoras diseñadas para líneas de reducción de tamaño. La geometría optimizada del rastrillo preserva la calidad del triturado al tiempo que reduce la carga del motor y la generación de polvo. Compatibles con máquinas granuladoras rotativas, de garra, de tolva y de granulación.",
-    "specItems": [
-      {
-        "label": "Materiales",
-        "value": "H13 - D2 - M2 HSS - Carburo"
-      },
-      {
-        "label": "Geometría",
-        "value": "Ángulo de rastrillo optimizado"
-      },
-      {
-        "label": "Máquinas",
-        "value": "Rotativa - Garra - Tolva - Granulado"
-      },
-      {
-        "label": "Beneficio",
-        "value": "Menor carga del motor - Menos polvo"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Rectificado de plástico - Reducción de tamaño"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Sí - varios ciclos"
-      }
-    ]
+    slug: "log-saw-blades",
+    category: "log_saw_blades",
+    title: "Discos de sierra para rollos de papel tisú y no tejidos",
+    shortName: "Discos de sierra para rollos",
+    tagline: "Discos de recambio según el material del rollo",
+    heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
+    description:
+      "Compare discos para cortar rollos de papel higiénico, papel de cocina y material no tejido para toallitas. Para elegir el disco, identifique el material del rollo y el modelo de sierra.",
+    seoTitle: "Discos de sierra para rollos de papel tisú y no tejidos",
+    selectionGuide: {
+      title: "Guía para elegir discos de corte de rollos",
+      articles: [
+        {
+          id: "log-saw-blade-chipping-causes-prevention",
+          width: 1600,
+          height: 878,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "log-saw-blade-bevel-angles",
+          width: 1108,
+          height: 1108,
+          smallerWidths: [320, 400, 480, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "tissue-and-towel-logs",
+          title: "Rollos de papel higiénico y de cocina",
+          productIds: ["tissue-log-saw-blades"],
+        },
+        {
+          id: "nonwoven-logs",
+          title: "Rollos de material no tejido y de toallitas",
+          productIds: ["nonwoven-log-saw-blades"],
+        },
+      ],
+      quotePrompt:
+        "Incluya el modelo de sierra, el material en rollo, el diámetro de la hoja, la disposición del orificio y del pasador de accionamiento y adjunte un dibujo si está disponible.",
+    },
   },
   {
-    "slug": "log-saw-blades",
-    "category": "log_saw_blades",
-    "oemExcludeList": ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
-    "title": "Hojas de sierra para papel tisú y troncos",
-    "shortName": "Hojas de sierra para troncos",
-    "tagline": "Cero polvo. Corte de pañuelos y servilletas sin rebabas.",
-    "heroImage": "/images/products/blades/tissue-log-saw-blades-05.webp",
-    "description": "Circular sierras circulares para troncos para líneas de transformación de pañuelos de papel, toallas de cocina y servilletas. Perfiles compatibles con CBN con desviación controlada, tratamiento superficial antifricción y geometría de dentado ajustada para una perforación limpia y sin polvo a altas velocidades de línea.",
-    "routingCopy": "Dos familias de hojas de sierra para troncos, según lo que esté cortando. Los troncos de pañuelos y toallas en máquinas Perini, PCMC, Casmatic, Gambini y Bretting usan las hojas de papel tisú Ø610–1200 mm. Los troncos de no tejidos y toallitas usan hojas más pequeñas Ø350–700 mm con un bisel diferente. Elija la que se ajuste a su línea, o envíenos el modelo de máquina y le indicaremos la correcta.",
-    "specItems": [
-      {
-        "label": "Perfil",
-        "value": "Compatible con CBN"
-      },
-      {
-        "label": "Superficie",
-        "value": "Tratamiento antifricción"
-      },
-      {
-        "label": "Calidad de corte",
-        "value": "Perforación sin polvo"
-      },
-      {
-        "label": "Velocidad",
-        "value": "Optimizado para altas velocidades de línea"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Pañuelos de papel - Paños de cocina - Servilletas"
-      },
-      {
-        "label": "Serrado",
-        "value": "Geometría personalizada disponible"
-      }
-    ]
+    slug: "shear-blades",
+    category: "shear_blades",
+    title: "Cuchillas para cizallas de metal",
+    seoTitle: "Cuchillas de cizalla para chapa, bobinas metálicas y chatarra",
+    shortName: "Cuchillas para cizallas de metal",
+    tagline: "Cuchillas de repuesto por estación de corte de metal",
+    heroImage: "/images/categories/shear-blades-nav.webp",
+    description:
+      "Elija cuchillas de guillotina, cizalla voladora y cortadoras de chatarra, además cuchillas de cizalla cizalla estacionarias y de cocodrilo. Haga coincidir la posición de la máquina y la cuchilla.",
+    selectionGuide: {
+      title: "Guía de selección de hojas de corte para metal",
+      articles: [
+        {
+          id: "guillotine-shear-blade-clearance-setting",
+          width: 1200,
+          height: 960,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "guillotine-shear-blade-parallelism",
+          image: "/images/news/guillotine-shear-blade-parallelism-cover.webp",
+          width: 990,
+          height: 742,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "metal-shearing",
+          title: "Líneas de chapa metálica, bobinas y laminadores",
+          description:
+            "Elija cuchillas de corte para chapa metálica independientes, cuchillas de cizalla voladoras de laminador o cuchillas cortadoras de corte de bordes.",
+          productIds: [
+            "guillotine-shear-blades",
+            "flying-shear-blades",
+            "scrap-chopper-blades",
+          ],
+        },
+        {
+          id: "scrap-recycling-shears",
+          title: "Cizallas para reciclaje de chatarra",
+          description:
+            "Identifique una cizalla tipo cocodrilo con mandíbula articulada o una cizalla para chatarra estacionaria antes de elegir la cuchilla de repuesto.",
+          productIds: ["metal-shear-knives", "stationary-scrap-shear-blades"],
+        },
+      ],
+      quotePrompt:
+        "Incluya el modelo de la máquina, la posición de la hoja, el material y el espesor o tamaño de la sección, y adjunte el dibujo de la cuchilla.",
+    },
   },
   {
-    "slug": "shear-blades",
-    "category": "shear_blades",
-    "title": "Cuchillas de cizalla y guillotina",
-    "shortName": "Cuchillas de cizalla",
-    "tagline": "Cuchillas de guillotina, cuchillas de cizalla de metal y juegos de corte de papel",
-    "heroImage": "/images/categories/shear-blades-nav.webp",
-    "description": "Cizalla recta y cuchillas de guillotina para cizallado de chapa/hoja, guillotinas hidráulicas, guillotinas de papel y recortadoras de tres cuchillas. Construcción de filo TCT-inlay o bimetálico con planeidad de cara controlada; se suministran como juegos emparejados para compatibilidad OEM.",
-    "specItems": [
-      {
-        "label": "Construcción de bordes",
-        "value": "TCT-inlay - Bimetálico - HSS macizo"
-      },
-      {
-        "label": "Planitud de la cara",
-        "value": "Se mantiene en toda su longitud"
-      },
-      {
-        "label": "Formato de suministro",
-        "value": "Conjuntos OEM a juego"
-      },
-      {
-        "label": "Máquinas",
-        "value": "Guillotina hidráulica - Cizalla de chapa - Recortadora de tres cuchillas"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Chapa de acero - Papel - Cartón - Bloque de libros"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Sí"
-      }
-    ]
+    slug: "paper-cutting-knives",
+    category: "paper_cutting",
+    title: "Cuchillas de corte y recorte de papel",
+    shortName: "Cuchillas para corte de papel",
+    tagline:
+      "Cuchillas para pilas de papel, láminas web y acabado de impresión",
+    heroImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
+    description:
+      "Elija cuchillas de guillotina para papel, cuchillas laminadoras, cuchillas cortadoras de tres cuchillas y cuchillas para encuadernación. Haga coincidir la estación de corte, la posición de la cuchilla y el dibujo de la máquina.",
+    selectionGuide: {
+      title: "Guía de selección de cuchillas para cortar papel",
+      articles: [
+        {
+          id: "paper-guillotine-knives-selection-maintenance-guide",
+          width: 1200,
+          height: 537,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "custom-length-guillotine-paper-cutter-blades",
+          width: 1122,
+          height: 1402,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "paper-cutting",
+          title: "Corte de pilas de papel y láminas web",
+          description:
+            "Distinga el corte de pilas de papel sujetas con abrazaderas del corte transversal de banda continua en hojas.",
+          productIds: ["paper-cutting-blades", "paper-sheeter-knives"],
+        },
+        {
+          id: "print-finishing",
+          title: "Acabado de libros e impresiones",
+          description:
+            "Elija el juego de cuchillas para una recortadora de tres cuchillas o una línea de encuadernación. Confirme las posiciones frontal, lateral, superior e inferior.",
+          productIds: [
+            "three-knife-trimmer-blades",
+            "saddle-stitcher-trimmer-knives",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Incluya el modelo y la versión de la máquina, las posiciones de las cuchillas, las especificaciones del papel o cartón y los dibujos originales de las cuchillas.",
+    },
   },
   {
-    "slug": "cold-saw-blades",
-    "category": "cold_saw_blades",
-    "title": "Hojas de sierra en frío para metal",
-    "shortName": "Hojas de sierra en frío",
-    "tagline": "Cuchillas circulares HSS y de metal duro para el corte en frío de acero y tubos",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    "description": "Hojas de sierra circular en frío para el corte sin rebaba de tubos de acero, barras macizas y perfiles estructurales. Disponibles en variantes HSS-E (M35/M42) y TCT (punta carburo de tungsteno) con geometrías de forma de viruta adaptadas a condiciones de corte en seco, con refrigerante y MQL.",
-    "specItems": [
-      {
-        "label": "Materiales",
-        "value": "HSS-E M35/M42 - con punta de metal duro"
-      },
-      {
-        "label": "Calidad de corte",
-        "value": "Sin rebabas, sin zona afectada por el calor"
-      },
-      {
-        "label": "Condiciones de corte",
-        "value": "Seco - Refrigerante de inundación - MQL"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Tubo de acero - Barra maciza - Perfil estructural"
-      },
-      {
-        "label": "Formato de suministro",
-        "value": "Recambio OEM o personalizado OD/ID/pitch"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Sí - varios ciclos"
-      }
-    ]
+    slug: "other-custom-blades",
+    category: "custom_profile",
+    title: "Otras cuchillas y cuchillas a medida",
+    shortName: "Otras y a medida",
+    tagline:
+      "Piezas de corte específicas del proceso y perfiles personalizados",
+    heroImage: "/images/products/blades/special-shaped-knife.webp",
+    description:
+      "Encuentre cuchillas cortadoras compactadoras, raspadores de filtro de material fundido, cuchillas peletizadoras y perfiles personalizados por proceso o tipo de pieza.",
+    selectionGuide: {
+      title: "Guía de selección de cuchillas de proceso",
+      articles: [
+        {
+          id: "cutter-compactor-blade-film-vs-flake-wear",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "how-to-spec-die-face-cutting-knives",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+          width: 1280,
+          height: 720,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "products",
+          title: "Otras cuchillas y cuchillas a medida",
+          productIds: [
+            "cutter-compactor-blades",
+            "continuous-melt-filter-scraper-blades",
+            "strand-pelletizer-rotors",
+            "die-face-cutting-knives",
+            "special-shaped-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Incluya el proceso, el modelo de la máquina, la posición de la pieza y un dibujo o dimensiones de muestra.",
+    },
   },
   {
-    "slug": "custom-profile",
-    "category": "custom_profile",
-    "title": "Cuchillas especiales",
-    "shortName": "Cuchillas personalizadas",
-    "tagline": "Cualquier geometría - cualquier aleación - a partir de DXF, DWG o muestra",
-    "heroImage": "/images/products/blades/special-shaped-knife.webp",
-    "description": "Cuchillas industriales de perfil personalizado y formas especiales fabricadas a partir de sus planos DXF/DWG/STEP o muestras físicas. Opciones de D2, H13, PM-HSS y carburo sólido con tolerancias de hasta ±0,02 mm: cualquier perfil, cualquier industria."
+    slug: "wood-chipper-blades",
+    category: "wood_chipper",
+    title: "Cuchillas y contracuchillas para astilladoras de madera",
+    shortName: "Cuchillas para astilladoras de madera",
+    tagline: "Cuchillas móviles y contracuchillas fijas",
+    heroImage:
+      "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
+    description:
+      "Encuentre cuchillas trituradoras móviles y yunques estacionarios para trituradoras de madera de tambor y disco. Compare sus roles y luego haga coincidir el reemplazo con la máquina.",
+    seoTitle:
+      "Cuchillas y contracuchillas para astilladoras de tambor y de disco",
+    selectionGuide: {
+      title: "Guía de selección de cuchillas para trituradoras de madera",
+      articles: [
+        {
+          id: "wood-chipper-blade-wear-patterns",
+          width: 1149,
+          height: 766,
+          smallerWidths: [320, 400, 640, 800],
+        },
+        {
+          id: "wood-chipper-knife-sharpening-guide",
+          width: 1536,
+          height: 1024,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "moving-chipper-knives",
+          title: "Cuchillas trituradoras móviles",
+          productIds: ["wood-chipper-blades"],
+        },
+        {
+          id: "stationary-anvils",
+          title: "Yunques estacionarios",
+          productIds: ["wood-chipper-anvils"],
+        },
+      ],
+      quotePrompt:
+        "Incluya el modelo de la trituradora y el número de serie, el tipo de tambor o disco, la posición de la cuchilla o yunque y un dibujo o muestra de las dimensiones.",
+    },
   },
-  {
-    "slug": "wood-chipper-blades",
-    "category": "wood_chipper",
-    "title": "Astilladoras de madera",
-    "shortName": "Astilladoras de madera",
-    "tagline": "Cuchillas astilladoras de tambor y disco para silvicultura, biomasa y reciclaje de madera",
-    "heroImage": "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
-    "description": "Cuchillas para astilladoras de tambor y disco de alta resistencia fabricadas con acero D2, Cr12MoV y TCT con punta de carburo. Tratadas térmicamente al vacío a HRC 57-62 con tratamiento criogénico profundo. Rectificado de precisión con una tolerancia de espesor de ±0,05 mm para una geometría de viruta limpia y uniforme.",
-    "specItems": [
-      {
-        "label": "Materiales",
-        "value": "Acero Alto Carbono - D2/Cr12MoV - TCT Carbide-Tipped"
-      },
-      {
-        "label": "Dureza",
-        "value": "HRC 55-58 (estándar) - HRC 58-62 (D2) - HRA 89-91 (TCT)"
-      },
-      {
-        "label": "Tolerancia de grosor",
-        "value": "±0,05 mm"
-      },
-      {
-        "label": "Aplicaciones",
-        "value": "Astilladoras de tambor - Astilladoras de disco - Astilladoras de biomasa de árboles enteros"
-      },
-      {
-        "label": "Compatibilidad OEM",
-        "value": "Bandit - Vermeer - Morbark - Peterson - Doppstadt - Jenz"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Sí - 8-12 ciclos (endurecido)"
-      }
-    ]
-  }
 ];

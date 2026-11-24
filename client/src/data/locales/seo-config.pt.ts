@@ -1,8 +1,4 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    seo-config.ts
-// Target:    pt
-// Generated: 2026-09-20T07:57:10.660Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (pt).
 import type { PageSEO } from "../../utils/seo-config";
 
 export const SEO_CONFIG: Record<string, PageSEO> = {
@@ -13,14 +9,6 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "fabricante de lâminas industriais, facas para máquinas sob medida, lâminas para trituradores, facas para granuladores, lâminas para cortadoras, lâminas para tesouras, lâminas sob medida para OEM",
     ogImage: "/images/hero/homehero.webp",
-  },
-  products: {
-    title:
-      "Produtos de lâminas industriais | Ferramentas de corte de precisão | Sureay",
-    description:
-      "Conheça nossa linha completa de lâminas de corte industrial: facas circulares de corte longitudinal, facas para trituradores, facas para granuladores, lâminas de serra para bobinas para papel higiênico e facas para tesouras de corte de metal. Metalurgia personalizada, desde D2 até carboneto. Tolerâncias na ordem de mícrons.",
-    keywords:
-      "catálogo de lâminas industriais, ferramentas de corte, lâminas rotativas, facas para trituradoras, facas para granuladores",
   },
   about: {
     title:
@@ -46,6 +34,14 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     keywords:
       "tecnologia de lâminas, notícias sobre fabricação, guias técnicos, informações sobre corte industrial",
   },
+  products: {
+    title:
+      "Produtos de lâminas industriais | Ferramentas de corte de precisão | Sureay",
+    description:
+      "Navegue por nossa linha completa de lâminas de corte industrial: facas cortadoras rotativas, lâminas trituradoras, facas granuladoras, lâminas de serra circular para cortar rolos de papel tissue e facas de cisalhamento de metal. Metalurgia personalizada de D2 a metal duro. Tolerâncias em nível de mícron.",
+    keywords:
+      "catálogo de lâminas industriais, ferramentas de corte, lâminas rotativas, facas para trituradoras, facas para granuladores",
+  },
   plasticIndustry: {
     title:
       "Lâminas para reciclagem de plástico | Lâminas para granuladores e trituradores | Sureay",
@@ -64,254 +60,273 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
   },
   paperIndustry: {
     title:
-      "Lâminas para processamento de papel | Serras para rolos de papel-toalha e lâminas de guilhotina | Sureay",
+      "Lâminas de conversão de papel | Serras para corte de rolos de tecido e facas guilhotinas | Claro",
     description:
-      "Lâminas de alta precisão para a transformação de papel-toalha e impressão comercial: Ø610 lâminas de serra para bobinas com polimento espelhado, lâminas de corte tipo guilhotina. Revestimento TiN disponível para ambientes úmidos. Cortes ultralimpos, sem geração de poeira.",
+      "Lâminas de alta precisão para conversão de papel tissue e impressão comercial: lâminas circulares Ø610 para corte de rolos com polimento espelhado, facas de corte guilhotinadas. Revestimento TiN disponível para ambientes úmidos. Cortes ultralimpos, zero geração de poeira.",
     keywords:
-      "papel tissue lâminas de serra para bobinas, facas para corte de papel, facas de guilhotina, transformação de papel, lâminas para a indústria gráfica",
+      "lâminas de serra circular para corte de rolos de papel tissue, facas de corte de papel, lâminas de guilhotina, conversão de papel, lâminas para indústria gráfica",
   },
   "rotary-slitter-knives": {
-    title: "Facas para corte de filmes e fitas para embalagens flexíveis",
-    description:
-      "Lâminas para cortadoras de filmes e fitas retificadas com precisão de ±0,002 mm — aço HSS D2, M2 e PM. Perfis de cisalhamento, entalhe e lâmina de barbear para filmes BOPP, CPP e fitas PSA. Compatíveis com os fabricantes Tidland, Kampf e Atlas.",
-    keywords:
-      "lâminas para cortadoras de filme, lâminas para cortadoras de fita, lâminas para cortadoras de BOPP, lâminas para cortadoras de fita PSA, lâminas para cortadoras de embalagens flexíveis, lâminas circulares para cortadoras, lâmina para cortadora, lâminas para conversão",
-  },
-  "tungsten-carbide-slitter-knives": {
     title:
-      "Facas de corte de carboneto de tungstênio | Lâminas de corte de carboneto",
+      "Facas de corte longitudinal para filmes e fitas de embalagens flexíveis",
     description:
-      "Lâminas de corte de carboneto de tungstênio com vida útil da aresta de 10 a 30 vezes maior do que a do aço para ferramentas. Graus YG6/YG8 de microgrão e ISO K10/K20, retificadas com precisão de ±0,002 mm, acompanhadas de relatórios de teste.",
-    keywords:
-      "facas de corte em metal duro, lâminas de corte metal duro, lâminas de corte em metal duro, facas de corte em tungstênio, lâminas de corte metal duro, facas de corte YG6, lâminas em metal duro YG8, faca de corte em metal duro K10, lâminas em metal duro de microgrão",
+      "Lâminas de reposição para cortadoras de filmes BOPP, PET, CPP e fitas adesivas. Lâminas superiores e inferiores em aço para ferramentas ou carboneto, com furos e perfis personalizados conforme desenho.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives.webp",
+  },
+  "rotary-slitter-knives-paper": {
+    title: "Lâminas de corte para papelPapel tissue e Kraft",
+    description:
+      "Lâminas de cortadoras de papel para papelPapel tissue, papel kraft e papel revestido. Combine lâminas superiores côncavas ou planas com lâminas inferiores correspondentes, em aço para ferramentas ou com ponta de carboneto.",
+    ogImage: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
   },
   "metal-foil-strip-slitter-knives": {
     title:
-      "Facas para cortadoras de folha de alumínio e tiras metálicas | Aço PM ASP23/ASP52, ±0,001 mm | Sureay",
+      "Lâminas para cortadoras de folhas de cobre e alumínio | Personalizadas",
     description:
-      "Facas de corte ASP23/ASP52 e de carboneto para centros de serviços de metal. Tolerância de ±0,001 mm; corte em série sem rebarbas de folha de alumínio, cobre e aço silicônico.",
-    keywords:
-      "facas para cortadoras de folha de alumínio, lâminas para cortadoras metal duro, facas para cortadoras de folha metálica, facas para cortadoras ASP23, cortadora de aço silício, eixo para corte em série, lâminas para corte de bobinas, cortadora de tiras metálicas, lâminas para cortadoras ASP52",
+      "facas circulares de corte longitudinals de reposição para folhas de cobre e alumínio. Opções em metal duro, aço para ferramentas e aço PM, com furos, larguras e espaçadores personalizados.",
+    ogImage:
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
   },
   "twin-shaft-blades-recycling": {
     title:
-      "Lâminas para triturador de dois eixos | D2/SKD11 – Compatíveis com peças originais (OEM)",
+      "facas para trituradores de eixo duplo | Plásticos e resíduos mistos",
     description:
-      "facas para trituradores de eixo duplo D2/SKD11 para resíduos sólidos urbanos, plásticos e madeira. Peça de reposição OEM para Weima, Untha, SSI e Vecoplan. Venda direta da fábrica — baixa quantidade mínima de pedido, orçamento rápido.",
-    keywords:
-      "lâminas de rotor de carboneto de cromo, facas para trituradores de eixo duplo, D2 facas para trituradores, facas para trituradores de resíduos sólidos urbanos (MSW), lâminas para reciclagem de plástico, triturador SKD11, lâminas de eixo duplo, venda por atacado de lâminas de rotor de carboneto de cromo, triturador com rotor em tesoura cruzada",
+      "facas para trituradores de eixo duplo de reposição para plásticos, paletes de madeira e resíduos mistos. Opções em D2, SKD11 e 42CrMo, com ganchos e furos personalizados.",
+    ogImage:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
   },
   "multi-shaft-blades-metal": {
-    title:
-      "Lâminas para trituradores de metal | H13 para sucata e lixo eletrônico",
+    title: "facas para trituradores de sucata | H13 e 42CrMo",
     description:
-      "facas para trituradores de eixos múltiplos em H13/42CrMo para sucata metálica, veículos fora de uso (ELV) e lixo eletrônico. Resistente a impactos, com dureza HRC 50–54. Furos usinados por eletroerosão a fio (EDM) para Shred-Tech, Forus e Arjes.",
-    keywords:
-      "metal facas para trituradores, lâminas para sucata metálica, lâminas para trituradores de lixo eletrônico, H13 facas para trituradores, triturador de veículos fora de uso (ELV), lâminas para reciclagem de metal",
+      "Utilize cortadores de aço H13 ou 42CrMo para trituradores de múltiplos eixos que processam veículos em fim de vida, sucata eletrônica ou eletrodomésticos. Especifique o perfil do gancho e o furo estriado ou com chaveta.",
+    ogImage: "/images/products/shredder-blades/shredder-blades-05.webp",
   },
   "twin-shaft-blades-battery": {
     title:
-      "Lâminas para trituradora de baterias de íon-lítio | Precisão de ±0,02 mm",
+      "facas para trituradores para reciclagem de baterias | Peças de reposição personalizadas",
     description:
-      "facas para trituradores de dupla eixo de precisão para pré-trituração de baterias de íon-lítio de veículos elétricos. Paralelismo de ±0,02 mm para folhas de cobre/alumínio. Resistente à corrosão causada pelo LiPF₆.",
-    keywords:
-      "bateria facas para trituradores, lâminas para reciclagem de baterias de lítio, triturador de baterias de veículos elétricos, processamento de baterias de íon-lítio, pré-trituração de baterias",
+      "Lâminas de corte rotativas de reposição para pré-trituradores de reciclagem de baterias. Perfis de corte e interfaces de eixo personalizados, fabricados de acordo com desenhos aprovados.",
+    ogImage: "/images/products/shredder-blades/shredder-blades.webp",
   },
   "tissue-log-saw-blades": {
-    title: "Lâminas de serra para troncos de papel | D2 Ø610–1200 mm | Sureay",
+    title: "Lâminas de serra para rolos de papel tissue | Ø610–1000 mm",
     description:
-      "Papel tissue lâminas de serra para bobinas Ø610–1200 mm, D2 HRC 58–60, polimento espelhado, excentricidade ≤0,15 mm. Revestimento de TiN. Compatível com Perini, PCMC, Gambini. Orçamento rápido.",
-    keywords:
-      "papel tissue lâminas de serra para bobinas, papel tissue lâminas de serra para bobinas, lâminas de serra para bobinas, lâminas de serra para papel, serras circulares para processamento, lâminas de serra D2",
+      "Corte rolos de papel higiênico e papel de cozinha com lâminas D2, Cr12MoV ou M2 HSS. Os diâmetros listados são de 610 a 1.000 mm, com tamanhos personalizados de até 1.200 mm.",
+    ogImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
   },
-  "granulator-blades": {
-    title:
-      "Lâminas para granuladores de plástico e facas para trituradores | OEM",
+  "nonwoven-log-saw-blades": {
+    title: "Lâminas de serra para rolos de não tecido | Reposição sob medida",
     description:
-      "D2/SKD-11/Cr12MoV facas para granuladores — facas do rotor e do estator retificadas com tolerância de ±0,02 mm, HRC 58–62. Compatíveis com os equipamentos originais (OEM) das marcas Cumberland, Herbold e Rapid. Venda direta da fábrica.",
-    keywords:
-      "plástico facas para granuladores, facas para granuladores, facas para granuladores — fornecedores, facas para trituradores de plástico, facas para granuladores, lâminas de rotor e estator, lâminas para reciclagem de PET",
-  },
-  "tire-shredder-blades": {
-    title:
-      "Lâminas para triturador de pneus | Tesoura rotativa de 3 garras para TDF | Sureay",
-    description:
-      "Rotativo de 3 garras facas de cisalhamento para trituração de pneus e produção de TDF. Aço Cru-Wear e A8 modificado, tolerância de ±0,05 mm. Compatível com os fabricantes originais (OEM) Barclay, CM, SSI e Untha.",
-    keywords:
-      "pneu facas para trituradores, facas para triturador de pneus, rotativo facas de cisalhamento, lâminas TDF, facas para reciclagem de pneus, triturador de três garras, Barclay facas para trituradores",
+      "Lâminas circulares de reposição D2 para corte de rolos para corte transversal de rolos de tecido não tecido. Furos personalizados, padrões de furos de montagem e perfis de lâmina feitos de acordo com o desenho da sua faca.",
+    ogImage: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
   },
   "paper-cutting-blades": {
-    title: "Corte de papel de precisão e lâminas para guilhotina",
-    description:
-      "Lâminas de guilhotina para impressão comercial e transformação de papel, retificadas com tolerância de 0,01 mm. Cortes limpos e sem rebarbas em papéis revestidos e papelão.",
-    keywords:
-      "lâminas para corte de papel, facas de guilhotina, lâminas para impressão, lâminas para guilhotina de papel",
-  },
-  "three-knife-trimmer-blades": {
     title:
-      "Lâminas para cortador de três facas — Lâminas de reposição para o cabeçote combinado | Sureay",
+      "Lâminas para cortadores de papel | Lâminas para guilhotinas de papel",
     description:
-      "Lâminas de corte de três facas HSS e TC — lâminas de reposição para cabeçote combinado. Compatíveis com os fabricantes originais (OEM) Müller Martini, Wohlenberg e Kolbus. Conjuntos frontais e laterais disponíveis.",
-    keywords:
-      "três lâminas de cortador, lâminas sobressalentes para cabeçote combinado, lâminas de reposição Müller Martini, lâminas de cortador para encadernação, lâminas de cortador HSS, lâminas de cortador TC, lâminas de cortador Wohlenberg, lâminas de cortador para encadernação sem costura, conjunto de lâminas de cortador Kolbus",
-    ogImage:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-00.webp",
+      "Encomende lâminas de guilhotina para papel com incrustações de HSS ou com ponta de metal duro para cortadores de pilhas. Os comprimentos listados variam de 450 a 2.050 mm, com comprimentos personalizados e furos de montagem disponíveis.",
+    ogImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
   },
   "single-shaft-shredder-blades": {
     title:
-      "Inserções para rotores de eixo único | Facas cortadoras em coroa | Sureay",
+      "Lâminas de rotor para trituradores de eixo único | Inserções quadradas",
     description:
-      "Inserções para o rotor de trituradores de eixo único destinadas à redução agressiva de tamanho — perfis côncavos, em coroa e com ranhura em V. Submetidas a tratamento criogênico para plásticos volumosos e resíduos sólidos urbanos.",
-    keywords:
-      "insertos para rotores de eixo único, lâminas para rotores de trituradores, cortadores de coroa, insertos para rotores quadrados, côncavo facas para trituradores, indexáveis em 4 posições",
+      "Escolha insertos de rotor quadrados ou coroas de corte côncavas em DC53, D2 ou Cr12MoV. Adapte a face da lâmina e o assento do parafuso ao seu triturador de eixo único.",
+    ogImage: "/images/products/shredder-blades/single-shredder-blades-06.webp",
   },
   "single-shaft-bed-knives": {
-    title: "Estator e facas fixas para trituradores de eixo único",
+    title: "Facas fixas do estator para trituradores de um eixo (contrafacas)",
     description:
-      "Lâminas de base do estator D2/DC53 para trituradores de eixo único. Retidão ≤0,05 mm/m, comprimentos de até 3.500 mm. Compatíveis com os equipamentos originais (OEM) das marcas Vecoplan, Weima, Lindner e Zerma.",
-    keywords:
-      "lâmina do estator, lâminas do estator, lâminas de base de eixo único, lâmina de base para triturador, lâminas contrárias para triturador, substituição de lâmina de base, lâmina de base D2, lâmina do estator para triturador, lâmina de base Vecoplan",
+      "Facas estacionárias para trituradores de eixo único em comprimentos listados de 279–3000 mm. Solicite bordas retas ou serrilhadas e slots de montagem que correspondam ao seu desenho.",
+    ogImage: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+  },
+  "granulator-blades": {
+    title: "Facas granuladoras de plástico | Lâminas de rotor e base",
+    description:
+      "Substitua o rotor e as facas estacionárias em granuladores que processam PET, PP, HDPE ou PVC. Lâminas granuladoras de plástico em comprimentos listados de 90–1178 mm, com padrões de parafusos personalizados.",
+    ogImage: "/images/products/granulator-blades/granulator-blades-06.webp",
   },
   "metal-coil-slitting-knives": {
-    title:
-      "Facas de corte de bobinas de precisão | Lâminas para cortadoras de metal",
+    title: "Facas de corte de bobina de aço | Ferramentas personalizadas",
     description:
-      "Conjuntos de lâminas de corte superior e inferior para processamento de bobinas metálicas. Tolerância de ±0,001 mm, paralelismo de 0,002 mm. Conjunto completo de ferramentas para bobinas de aço, alumínio e cobre.",
-    keywords:
-      "facas para corte de metal, lâminas para corte de bobinas, cortadoras rotativas de metal, cortadoras superior e inferior, facas para corte de aço",
+      "Facas de corte de bobinas de aço de reposição para aço carbono, inoxidável e de alta resistência. Facas de cisalhamento rotativo personalizadas, espaçadores e anéis de remoção de acordo com o desenho.",
+    ogImage: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
   },
   "metal-shear-knives": {
-    title: "Tesouras para metal para serviços pesados e lâminas de guilhotina",
+    title: "facas de cisalhamento de jacaré para sucata",
     description:
-      "Lâminas para guilhotina e tesouras de corte de sucata em aço para ferramentas D2, S1 (6CrW2Si) e H13. Paralelismo de ±0,05 mm para corte sem rebarbas de chapas de aço carbono e aço inoxidável.",
-    keywords:
-      "lâminas de corte para metal, guilhotina facas de cisalhamento, lâminas de corte para aço, hidráulica facas de cisalhamento, sucata facas de cisalhamento, D2 facas de cisalhamento",
+      "Substitua a lâmina móvel superior ou a faca fixa inferior em sua tesoura jacaré. Os comprimentos listados são 320–508 mm, com opções de aço S1 , 6CrW2Si e H13 .",
+    ogImage: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
   },
-  "metal-cold-saw-blades": {
-    title: "Lâminas de serra a frio HSS e TCT | Corte de tubos metálicos",
+  "guillotine-shear-blades": {
+    title: "Facas de guilhotina para chapas metálicas",
     description:
-      "Lâminas de serra a frio M2/M35 de cobalto HSS e TCT para corte de tubos de aço, aço inoxidável e perfis de alumínio. DIN 1837/1840, sem rebarbas. Compatíveis com equipamentos originais (OEM) das marcas Kaltenbach e Bewo.",
-    keywords:
-      "lâminas para serras a frio, lâminas para serras a frio HSS, serra a frio de cobalto M35, lâminas para serras a frio TCT, serra circular a frio para metal, lâminas para corte de tubos, fabricante de lâminas para serras a frio",
+      "Corte de chapa com facas de cisalhamento guilhotina D2 , 6CrW2Si ou 9CrSi . Encomende facas superiores e inferiores em peças únicas ou conjuntos segmentados com padrões de montagem personalizados.",
+    ogImage: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
+  },
+  "three-knife-trimmer-blades": {
+    title: "Facas de refile trilateral para acabamento de livros",
+    description:
+      "Apare a frente, a cabeça e o pé dos livros encadernados com facas HSS ou de metal duro. Solicite uma lâmina de reposição ou um conjunto correspondente com uma faca frontal e duas laterais.",
+    ogImage:
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
   },
   "lithium-battery-slitting-knives": {
-    title: "Facas de corte de baterias de carboneto | Folha de eletrodo",
+    title: "Facas de corte de eletrodo de bateria | Pares de Carboneto",
     description:
-      "Facas de corte metal duro com acabamento espelhado para folhas de eletrodo de baterias de íons de lítio. Borda com Ra ≤ 0,05 μm, tolerância de ±0,001 mm. Zero micro-rebarbas na folha de Al/Cu.",
-    keywords:
-      "Lâminas de corte metal duro, facas para corte de baterias, facas para baterias de lítio, cortador de folha de eletrodo, lâminas de corte de carboneto, carboneto facas circulares",
+      "Facas de corte de metal duro de grão fino para ânodos e cátodos de baterias de lítio revestidos. Solicite facas rotativas superiores e inferiores combinadas com DLC ou TiN opcional.",
+    ogImage:
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
   },
   "corrugated-slitter-scorer-blades": {
     title:
       "Lâminas para cortadoras e marcadoras de papelão ondulado | BHS & Fosber",
     description:
-      "Lâminas de corte metal duro de material sólido para linhas de acabamento a seco de papelão ondulado. Corte sem amassamento. Compatíveis com os equipamentos originais (OEM) da BHS, Fosber e Marquip. Facas de ranhura em estoque.",
-    keywords:
-      "lâminas para cortadoras de papelão ondulado, lâminas para cortadoras metal duro, lâminas para ranhuradoras, cortadora BHS, facas para cortadoras Fosber, facas para caixas de papelão ondulado",
+      "Lâminas cortadoras de metal duro para linhas dry-end de corrugadoras, com configurações de referência BHS e Fosber . Furos personalizados e padrões de fixação feitos conforme desenho.",
+    ogImage:
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+  },
+  "tire-shredder-blades": {
+    title: "Facas de cisalhamento rotativo para trituração primária de pneus",
+    description:
+      "Cortadores A8 ou 42CrMo modificados na origem para trituração primária de pneus. Combine a contagem de ganchos, a espessura do cortador e o diâmetro do eixo com sua tesoura rotativa.",
+    ogImage: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
   },
   "nonwoven-slitter-knives": {
     title: "Facas para cortadoras de não tecidos | PP spunbond e SMS",
     description:
-      "Lâminas circulares M2 HSS e D2 para não-tecidos PP spunbond, meltblown e SMS a velocidades de 200–500 m/min. Geometria anti-desfiamento para linhas de produtos de higiene e médicos.",
-    keywords:
-      "cortadora de não-tecido, lâminas de corte para não-tecido, facas para cortadora de não-tecido, facas para cortadora de spunbond, lâminas de corte para meltblown, facas para não-tecido médico",
-  },
-  "scrap-chopper-blades": {
-    title:
-      "Lâminas para trituradores de sucata | S7 e H13 para linhas de bobinas",
-    description:
-      "Lâminas de triturador de sucata para serviços pesados em aço para ferramentas S7 e H13, destinadas a linhas de corte de metal. Design com 4 gumes intercambiáveis, com inserção opcional de metal duro. Alta resistência ao impacto.",
-    keywords:
-      "lâminas para trituradores de sucata, lâminas para processamento de bobinas, triturador de sucata metálica, facas para trituradores em linhas de corte longitudinal, lâminas para trituradores S7",
-  },
-  "rotary-slitter-knives-paper": {
-    title:
-      "Lâminas para cortadoras de papel | Papel-toalha e papel kraft | D2, M2 HSS | Sureay",
-    description:
-      "Lâminas de corte por cisalhamento e esmagamento para papel-toalha, papel kraft e papel revestido. D2, M2 HSS e 52100 com espessura de ±0,002 mm. Compatíveis com Atlas, Kampf, Goebel IMS e Perini.",
-    keywords:
-      "lâminas para cortadoras de papel-toalha, facas para cortadoras de papel, facas para cortadoras de papel ondulado, lâminas para processamento de papel-toalha, cortadora de papel kraft, lâminas para cortadoras de troncos, pares de tesouras para papel, corte sem geração de pó de fibra",
-  },
-  "guillotine-shear-blades": {
-    title:
-      "Lâminas para tesouras guilhotina | D2 e 6CrW2Si para tesouras hidráulicas | Sureay",
-    description:
-      "Guilhotina D2, 6CrW2Si e 9CrSi facas de cisalhamento, retificada com paralelismo de ±0,05 mm. Conjuntos para máquinas de até 16 mm × 4.000 mm — modelos descontinuados fabricados a partir da sua amostra.",
-    keywords:
-      "guilhotina facas de cisalhamento, esquadria facas de cisalhamento, chapa facas de cisalhamento, chapa metálica facas de cisalhamento, hidráulica facas de cisalhamento, viga oscilante facas de cisalhamento, D2 facas de cisalhamento, facas de corte 6CrW2Si, lâminas de reposição AMADA, facas de corte TRUMPF",
-  },
-  "wood-chipper-blades": {
-    title:
-      "Lâminas para trituradores de madeira | Lâminas para trituradores de tambor e disco D2 e TCT | Sureay",
-    description:
-      "Lâminas para trituradores de tambor/disco em D2, Cr12MoV e TCT, HRC 57–62, tolerância de ±0,05 mm. Compatíveis com os modelos originais (OEM) das marcas Bandit, Vermeer, Morbark e Doppstadt. 8 a 12 ciclos de reafiação.",
-    keywords:
-      "lâminas para trituradores de madeira, facas para trituradores de tambor, lâminas para trituradores de disco, facas para trituradores florestais, lâminas para trituradores de biomassa, facas para trituradores D2, lâminas para trituradores TCT, lâminas para trituradores Vermeer, facas para trituradores Bandit",
-  },
-  "wood-chipper-anvils": {
-    title:
-      "Bigornas e contra-facas para trituradores de madeira | D2 · A8 Modificado | Conjuntos combinados | Sureay",
-    description:
-      "Bigornas (facas contrárias) para trituradores de madeira em aço D2, Cr12MoV e A8 Modificado, HRC 54–60. Paralelismo de ±0,05 mm. Compatíveis com os modelos originais (OEM) das marcas Bandit, Vermeer e Morbark.",
-    keywords:
-      "bigorna para triturador de madeira, lâmina contrária para triturador, lâmina fixa para triturador, reposição de bigorna para triturador, bigorna Bandit, lâmina contrária Vermeer, lâmina fixa Morbark, bigorna para triturador de tambor, lâmina contrária para triturador de disco, conjunto de bigorna com lâminas correspondentes",
-  },
-  "special-shaped-blades": {
-    title:
-      "Lâminas personalizadas com formatos especiais | Qualquer perfil, qualquer liga | Sureay",
-    description:
-      "Lâminas industriais com perfil personalizado, fabricadas a partir de desenhos em DXF/DWG/STEP ou amostras. D2, H13, PM-HSS e metal duro. Tolerâncias de ±0,02 mm. Qualquer setor, qualquer geometria.",
-    keywords:
-      "lâminas personalizadas, facas com formatos especiais, lâminas com perfil personalizado, lâminas personalizadas para OEM, facas industriais sob medida, fabricação de lâminas em formato DXF",
+      "Facas cortadoras de reposição para não-tecidos spunbond, meltblown e SMS. Opções M2 HSS , D2 ou metal duro, com perfis personalizados e revestimentos específicos para aplicação.",
+    ogImage:
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
   },
   "bottom-grooved-anvil-knives": {
-    title:
-      "Facas de bigorna com ranhura na parte inferior | Pares de bigornas para tesoura | Sureay",
+    title: "Facas de bigorna com ranhura inferior | Anéis de reposição",
     description:
-      "Facas de bigorna com ranhura inferior para corte por cisalhamento de filmes, papel, folhas metálicas e fitas. D2, M2 HSS e metal duro. Compatíveis com os sistemas de eixo OEM da Tidland, Kampf, Atlas e BHS.",
-    keywords:
-      "faca de bigorna inferior, faca de bigorna ranhurada, bigorna de corte por cisalhamento, facas de bigorna para corte longitudinal, faca de bigorna Tidland, lâmina de bigorna Kampf, lâmina de bigorna para corte por esmagamento",
+      "Facas de bigorna ranhuradas de reposição e anéis de corte para cortadores de teia. Opções de aço ou metal duro, com perfis de ranhura, furos e arranjos de travamento personalizados.",
+    ogImage: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
   },
-  "continuous-melt-filter-scraper-blades": {
-    title: "Lâminas raspadoras e placas de filtro para filtros de fusão",
+  "tungsten-carbide-slitter-knives": {
+    title: "facas cortadoras metal duro | Tamanhos personalizados",
     description:
-      "D2/H13/Lâminas raspadoras de carboneto e placas filtrantes para filtros de fusão contínua de PCR. HRC 58–62, resistentes ao HCl para misturas de PVC. Compatíveis com EREMA, Gneuß e Ettlinger.",
+      "Facas cortadoras de substituição sólidas e com ponta de metal duro para conversão e processamento de metal. Tamanhos personalizados, furos e perfis de corte adequados à aplicação.",
+    ogImage:
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+  },
+  "scrap-chopper-blades": {
+    title: "Lâminas de corte de sucata | Facas Coil-Line Personalizadas",
+    description:
+      "Lâminas de corte de sucata de reposição personalizadas para corte de borda de linha de bobina. Facas S7 , H13 ou incrustadas em metal duro com arranjos de corte reto, inclinado ou perfilado.",
+    ogImage: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
   },
   "strand-pelletizer-rotors": {
-    title: "Rotores de peletizadoras Strand para linhas de composição",
+    title:
+      "Rotores de corte para pelotizadores de fio | Substituição personalizada",
     description:
-      "Rotores para peletizadoras de fio destinados a linhas de composição de plásticos. PM-HSS e carboneto, concentricidade ≤0,005 mm. Encaixe direto para peletizadoras Maag, Coperion e Cumberland.",
+      "Rotores de pelotização de fios de reposição com arestas de corte helicoidais ou retas. Opções de HSS e metal duro, com perfis de dentes e pontas de eixo personalizados.",
+    ogImage: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+  },
+  "continuous-melt-filter-scraper-blades": {
+    title:
+      "Lâminas raspadoras de filtro derretido | Substituições personalizadas",
+    description:
+      "Lâminas raspadoras de reposição para filtros contínuos de plástico fundido. Opções D2 , H13 e metal duro, com perfis customizados e detalhes de montagem conforme desenho.",
+    ogImage: "/images/products/blades/scraper-blades.webp",
+  },
+  "shredder-screens": {
+    title: "Telas trituradoras de reposição | Cestas e Pratos Personalizados",
+    description:
+      "Telas de reposição para trituradores de eixo único, com aberturas de 8–80 mm. Cestos e pratos personalizados de acordo com o padrão de furo, curvatura e montagem.",
+    ogImage:
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
+  },
+  "cutter-compactor-blades": {
+    title: "Lâminas Compactadoras de Cortador | Facas de rotor e estator",
+    description:
+      "Prepare filmes PE ou PP e flocos de PET para extrusão com rotor de reposição e facas de estator em D2 , M2 HSS ou construção com ponta de metal duro.",
+    ogImage:
+      "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
+  },
+  "die-face-cutting-knives": {
+    title: "Facas de corte moldadas | Lâminas de reposição personalizadas",
+    description:
+      "Facas peletizadoras de reposição para sistemas subaquáticos, de anel de água e de face quente. Slots de lâmina personalizados, perfis de borda e conjuntos correspondentes ao desenho.",
+    ogImage:
+      "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+  },
+  "special-shaped-blades": {
+    title: "Lâminas Industriais com Formato Especial | Perfis personalizados",
+    description:
+      "Facas para máquinas de reposição com perfil personalizado em D2 , H13 , PM- HSS ou metal duro. Contornos específicos da peça, arestas de corte e recursos de montagem feitos de acordo com o desenho.",
+    ogImage: "/images/products/blades/special-shaped-knife.webp",
+  },
+  "wood-chipper-blades": {
+    title: "Facas para picadores de madeira a tambor e a disco",
+    description:
+      "Facas móveis para picadores de madeira de tambor e disco em comprimentos listados de 230–600 mm. Especifique o aço picador, D2 ou uma aresta com ponta de metal duro, além do padrão de chanfro e parafuso.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+  },
+  "wood-chipper-anvils": {
+    title: "Bigornas e contrafacas para picadores de madeira",
+    description:
+      "Substitua a contrafaca estacionária oposta às facas picadoras móveis. As bigornas do picador de madeira estão listadas em comprimentos de 185–400 mm, com slots de montagem personalizados.",
+    ogImage: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
   },
   "slitter-rewinder-bottom-knives": {
-    title:
-      "Lâminas inferiores para cortadoras-rebobinadoras | Lâminas para rebobinadoras de papel | Sureay",
+    title: "Facas inferiores cortadoras e rebobinadoras | Copo e Borda Dupla",
     description:
-      "Lâminas inferiores sólidas e com ponta de metal duro para cortadoras-rebobinadoras de papel. Acabamento espelhado, sem rebarbas, com redução de poeira. Tamanhos padrão de Φ250 a Φ254; furos personalizados de acordo com a máquina.",
-    keywords:
-      "facas inferiores para cortadoras-enroladoras, faca inferior para enroladora, lâminas para enroladoras de papel, facas para enroladoras Jagenberg, faca inferior Bielomatik, lâminas para enroladoras ECH Will, facas para enroladoras Maxson",
+      "Facas de fundo em forma de copo, borda dupla e anel substituível para rebobinadeiras de papel, em DE 70–300 mm. Especifique um furo chaveado, montagem em flange ou aresta de corte de metal duro.",
+    ogImage:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
+  },
+  "corrugated-slotter-knives": {
+    title: "Facas de slotter para papelão ondulado | Macho e fêmea",
+    description:
+      "Arcos machos lisos ou serrilhados e contrafacas fêmeas para abertura de abas corrugadas. Solicite lâminas de reposição feitas de acordo com a largura do slot e o desenho de montagem.",
+    ogImage: "/images/products/slitter-detail/box-slotting-knives-white.webp",
+  },
+  "paper-straw-slitting-blades": {
+    title: "Lâminas de corte de palha de papel | Facas de reposição",
+    description:
+      "Substituição facas circulares para corte e recorte de palha de papel. Opções de metal duro ou M2 HSS , furos e perfis personalizados e revestimentos selecionados para a linha.",
+    ogImage: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+  },
+  "groove-bottom-knives": {
+    title: "Facas de fundo com múltiplas ranhuras | Anéis de corte inferior",
+    description:
+      "Anéis de corte multiranhuras para corte por cisalhamento. Passo de ranhura de 5 mm e diâmetro externo de até 406 mm, com configurações de peça única e divididas conforme desenho.",
+    ogImage: "/images/products/slitter-detail/groove-bottom-knives.webp",
+  },
+  "stationary-scrap-shear-blades": {
+    title: "Facas para tesouras fixas de pórtico para sucata metálica",
+    description:
+      "Encomende blocos de facas móveis montados em parafusos e contrafacas fixas para tesouras de sucata de pórtico estacionárias. Escolha o aço 1.2746 ou 1.2767 e envie seu desenho de montagem.",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+  },
+  "flying-shear-blades": {
+    title: "Facas para tesouras volantes | Sob medida para linhas de laminação",
+    description:
+      "Corte personalizado e facas de cisalhamento para laminadores. Facas retas ou perfiladas para corte a quente, frio ou temperado, fabricadas sob medida.",
+    ogImage: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+  },
+  "paper-sheeter-knives": {
+    title:
+      "Facas para cortadeiras de papel de bobina em folhas | Reposição sob medida",
+    description:
+      "Folhador de papel de substituição personalizado e facas transversais. Bordas com ponta de aço HSS , PM ou metal duro para bandas de papel e cartão, feitas de acordo com seu perfil de montagem.",
+    ogImage: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+  },
+  "saddle-stitcher-trimmer-knives": {
+    title: "Facas de refile trilateral para livretos grampeados a cavalo",
+    description:
+      "Substitua as facas frontais ou laterais nas linhas de lombada para livretos e revistas. Consulte tamanhos de referência DS 304/Tempo e opções de HSS ou ponta de metal duro.",
+    ogImage:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
   },
   "box-slotting-knives": {
     title:
-      "Facas para ranhuras em caixas | Facas de metal duro para ranhuras | Sureay",
+      "Facas de metal duro para canais em V no papelão cinza de caixas rígidas",
     description:
-      "Facas de corte em metal duro para máquinas de papelão cinza e caixas de presente rígidas. Pares esquerda/direita, classes GS05U e GS20U, cinco tamanhos padrão, ajustáveis à espessura do papelão.",
-    keywords:
-      "facas para ranhuras em caixas, faca para ranhuras em papelão cinza, lâmina para ranhuras em caixas rígidas, faca para ranhura em V em caixas de presente, faca de metal duro para ranhuras",
-  },
-  "paper-straw-slitting-blades": {
-    title:
-      "Lâminas para corte de canudos de papel | Lâminas de corte de carboneto antiaderentes | Sureay",
-    description:
-      "Lâminas circulares de carboneto antiaderentes para corte de canudos de papel e hastes de filtro. Φ88–Φ100, 0,15–0,30 mm. Resistentes ao acúmulo de adesivo, garantindo extremidades cortadas sem desfiados.",
-    keywords:
-      "lâminas para corte de canudos de papel, faca para corte longitudinal de canudos de papel, lâmina para corte de hastes de filtro, lâmina circular de carboneto antiaderente, lâmina de filtro Hauni",
-  },
-  "groove-bottom-knives": {
-    title:
-      "Facas inferiores com múltiplas ranhuras | Anéis cortadores inferiores | Sureay",
-    description:
-      "Anéis de lâmina inferiores com múltiplas ranhuras para corte por cisalhamento. Passo das ranhuras a partir de 5 mm, diâmetro externo (OD) até Φ406 mm, com furo para eixo pneumático ou parafuso de fixação. Também estão disponíveis anéis com ranhura única e lisos.",
-    keywords:
-      "faca inferior com múltiplas ranhuras, facas inferiores com ranhuras, cortador inferior com múltiplas ranhuras, anéis cortadores inferiores, anel cortador com múltiplas lâminas, anel cortador com lâmina única, anel espaçador liso, faca inferior MKB, anel cortador com passo de ranhura, anel cortador dividido",
+      "Facas de metal duro para ranhuramento em V de cartão cinza em linhas rígidas e de caixa de presente. Pares esquerdo e direito combinados em GS05U e GS20U , com cinco tamanhos listados.",
+    ogImage: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
   },
 };

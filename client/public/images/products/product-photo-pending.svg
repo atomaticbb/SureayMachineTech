@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="Product photograph pending">
+  <rect width="800" height="800" fill="white"/>
+  <path d="M300 365h200v110H300zM355 365l15-25h60l15 25" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+  <circle cx="400" cy="418" r="29" fill="none" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="400" y="530" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#64748b">Product photo pending</text>
+</svg>

@@ -1,265 +1,328 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blade-categories.ts
-// Target:    fr
-// Generated: 2026-05-21T13:16:49.899Z
-// Provider:  deepl
+// Generated from the English industrial blade catalog (fr).
 import type { BladeCategoryMeta } from "../blade-categories";
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
   {
-    "slug": "slitter-knives",
-    "category": "slitter_knives",
-    "title": "Couteaux à refendre et lames circulaires",
-    "shortName": "Couteaux à fendre",
-    "tagline": "Lames rotatives affûtées avec précision pour les films, le papier et les feuilles métalliques",
-    "heroImage": "/images/categories/slitter-knives-nav.webp",
-    "description": "couteaux rotatifs de refente conçu pour le cisaillement, le rainurage et la coupe au rasoir des films d'emballage souples, du papier, des non-tissés et des feuilles métalliques. Tolérance d'épaisseur de ±0,002 mm, faux-rond de ≤0,02 mm, disponible en M2 HSS, D2, ASP23 PM et carbure monobloc avec revêtements TiN, DLC et Téflon en option.",
-    "specItems": [
-      {
-        "label": "Tolérance d'épaisseur",
-        "value": "±0,002 mm"
-      },
-      {
-        "label": "T.I.R. Runout",
-        "value": "≤0,02 mm"
-      },
-      {
-        "label": "Matériaux",
-        "value": "M2 HSS - D2 - ASP23 PM - Carbure"
-      },
-      {
-        "label": "Revêtements",
-        "value": "TiN - DLC - Téflon"
-      },
-      {
-        "label": "Modes de coupe",
-        "value": "Cisaille - Score - Rasoir"
-      },
-      {
-        "label": "Applications",
-        "value": "Film - Papier - Non-tissés - Feuilles"
-      }
-    ]
+    slug: "slitter-knives",
+    category: "slitter_knives",
+    title: "Couteaux de refente et lames circulaires",
+    seoTitle: "Couteaux rotatifs et lames circulaires de refendage",
+    shortName: "Couteaux de refente",
+    tagline:
+      "Couteaux pour le refendage de bandes, le traitement de bobines métalliques et la transformation du carton ondulé",
+    heroImage: "/images/categories/slitter-knives-nav.webp",
+    description:
+      "Découvrez les couteaux de découpe pour films, papiers, non-tissés, feuilles de cuivre et d'aluminium, bobines d'acier et batteries. Comparez les types de lames, les anneaux inférieurs et les options en carbure.",
   },
   {
-    "slug": "shredder-blades",
-    "category": "shredder_blades",
-    "title": "Lames de déchiqueteuse et inserts de coupe",
-    "shortName": "Lames de déchiqueteuse",
-    "tagline": "Outils de coupe à deux arbres, à un arbre et pour broyeurs de pneus",
-    "heroImage": "/images/categories/shredder-blades-nav.webp",
-    "description": "ZGTR0zGTR à usage intensif pour les lignes de recyclage du plastique, du métal, des pneus et des batteries. Alliage forgé D2/SKD11/Cr12MoV avec traitement thermique cryogénique et sous vide pour une résistance extrême aux chocs et à l'usure. Adaptation OEM pour les plates-formes de broyage à deux arbres et à un arbre.",
-    "specItems": [
-      {
-        "label": "Matériaux",
-        "value": "D2 - SKD11 - Cr12MoV"
-      },
-      {
-        "label": "Dureté",
-        "value": "58-62 HRC"
-      },
-      {
-        "label": "Traitement thermique",
-        "value": "Cryogénie + vide"
-      },
-      {
-        "label": "Plates-formes",
-        "value": "Arbre double - Arbre simple"
-      },
-      {
-        "label": "Applications",
-        "value": "Plastique - Métal - Pneu - Batterie"
-      },
-      {
-        "label": "En forme",
-        "value": "Remplacement de l'OEM"
-      }
-    ]
+    slug: "shredder-blades",
+    category: "shredder_blades",
+    title: "Couteaux et pièces d’usure pour broyeurs",
+    shortName: "Couteaux de broyeur",
+    tagline:
+      "Inserts de rotor, couteaux fixes, tamis et couteaux montés sur arbre",
+    heroImage: "/images/categories/shredder-blades-nav.webp",
+    description:
+      "Choisissez des cisailles multi-arbres pour le recyclage général, la ferraille, les pneus ou le pré-déchiquetage des batteries. Trouvez des inserts de rotor à arbre unique, des couteaux fixes et des tamis.",
+    selectionGuide: {
+      title: "Guide de sélection des lames de déchiqueteuse",
+      articles: [
+        {
+          id: "single-shaft-shredder-blade-face-profile-guide",
+          width: 800,
+          height: 800,
+          smallerWidths: [320, 400, 640],
+        },
+        {
+          id: "tire-shredder-blade-wear-steel-cord",
+          width: 2496,
+          height: 1696,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "granulator-rotor-bed-knife-configuration",
+          width: 1672,
+          height: 941,
+          smallerWidths: [400, 640, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "twin-and-multi-shaft-cutters",
+          title: "Fraises multi-arbres par application",
+          description:
+            "Commencez par ce qui entre dans la déchiqueteuse. Utilisez ensuite le modèle de machine et la pile de couteaux pour identifier le remplacement correct.",
+          productIds: [
+            "twin-shaft-blades-recycling",
+            "multi-shaft-blades-metal",
+            "tire-shredder-blades",
+            "twin-shaft-blades-battery",
+          ],
+        },
+        {
+          id: "single-shaft-parts",
+          title: "Pièces de broyeur et granulateur à arbre unique",
+          description:
+            "Les couteaux du rotor coupent les couteaux du stator stationnaires. L'écran contrôle quel matériau peut sortir de la chambre.",
+          productIds: [
+            "single-shaft-shredder-blades",
+            "single-shaft-bed-knives",
+            "shredder-screens",
+            "granulator-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Incluez le modèle de la machine, le numéro de pièce, la matière première et la quantité. Joignez un cutter ou un dessin d'écran si disponible.",
+    },
   },
   {
-    "slug": "granulator-blades",
-    "category": "granulator_blades",
-    "title": "Lames de broyeur et couteaux de broyeur",
-    "shortName": "Lames de broyeur",
-    "tagline": "Optimisation de la qualité du rebroyage, allongement du MTBR",
-    "heroImage": "/images/categories/granulator-blades-nav.webp",
-    "description": "Couteaux de broyeur et de granulateur en plastique conçus pour les lignes de broyage. La géométrie optimisée du râteau préserve la qualité du broyat tout en réduisant la charge du moteur et la production de poussière. Compatible avec les broyeurs rotatifs, à griffes, à trémie et à granulation.",
-    "specItems": [
-      {
-        "label": "Matériaux",
-        "value": "H13 - D2 - M2 HSS - Carbure"
-      },
-      {
-        "label": "Géométrie",
-        "value": "Angle de coupe optimisé"
-      },
-      {
-        "label": "Machines",
-        "value": "Rotary - Claw - Hopper - Pelletizing"
-      },
-      {
-        "label": "Bénéfice",
-        "value": "Moins de charge sur le moteur - Moins de poussière"
-      },
-      {
-        "label": "Applications",
-        "value": "Broyage de matières plastiques - Réduction de la taille"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Oui - plusieurs cycles"
-      }
-    ]
+    slug: "log-saw-blades",
+    category: "log_saw_blades",
+    title: "Lames de scie pour rouleaux de papier tissue et de non-tissé",
+    shortName: "Lames de scie pour rouleaux",
+    tagline: "Lames circulaires de rechange par matière à couper",
+    heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
+    description:
+      "Comparez les lames circulaires pour rouleaux de papier hygiénique, d’essuie-tout et de non-tissé pour lingettes. Le choix de la lame dépend de la matière du rouleau et du modèle de scie.",
+    seoTitle: "Lames de scie pour rouleaux de papier tissue et de non-tissé",
+    selectionGuide: {
+      title: "Guide de sélection des lames pour la coupe des rouleaux",
+      articles: [
+        {
+          id: "log-saw-blade-chipping-causes-prevention",
+          width: 1600,
+          height: 878,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "log-saw-blade-bevel-angles",
+          width: 1108,
+          height: 1108,
+          smallerWidths: [320, 400, 480, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "tissue-and-towel-logs",
+          title: "Rouleaux de papier hygiénique et d’essuie-tout",
+          productIds: ["tissue-log-saw-blades"],
+        },
+        {
+          id: "nonwoven-logs",
+          title: "Rouleaux de non-tissé et de lingettes",
+          productIds: ["nonwoven-log-saw-blades"],
+        },
+      ],
+      quotePrompt:
+        "Incluez le modèle de scie, le matériau du rouleau, le diamètre de la lame, l'alésage et la disposition des goupilles d'entraînement, et joignez un dessin si disponible.",
+    },
   },
   {
-    "slug": "log-saw-blades",
-    "category": "log_saw_blades",
-    "oemExcludeList": ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
-    "title": "Lames de scie pour papier tissu et à bûches",
-    "shortName": "Lames de scie à bûches",
-    "tagline": "Pas de poussière. Découpe des mouchoirs et des serviettes sans bavure.",
-    "heroImage": "/images/products/blades/tissue-log-saw-blades-05.webp",
-    "description": "ZGTR0zGTR circulaire pour les lignes de transformation de mouchoirs en papier, d'essuie-tout et de serviettes. Profils compatibles CBN avec un faux-rond contrôlé, un traitement de surface anti-friction et une géométrie de denture adaptée pour une perforation propre et sans poussière à des vitesses de ligne élevées.",
-    "routingCopy": "Deux familles de lames de scie à bûches, selon ce que vous découpez. Les bûches de mouchoirs et d'essuie-tout sur les machines Perini, PCMC, Casmatic, Gambini et Bretting utilisent les lames tissu Ø610–1200 mm. Les bûches non tissées et lingettes utilisent des lames plus petites Ø350–700 mm avec un biseau différent. Choisissez celle qui correspond à votre ligne, ou envoyez-nous le modèle de machine et nous vous orienterons vers la bonne.",
-    "specItems": [
-      {
-        "label": "Profil",
-        "value": "Compatible avec le CBN"
-      },
-      {
-        "label": "Surface",
-        "value": "Traitement anti-friction"
-      },
-      {
-        "label": "Qualité de coupe",
-        "value": "Perforation sans poussière"
-      },
-      {
-        "label": "Vitesse",
-        "value": "Optimisé pour des vitesses de ligne élevées"
-      },
-      {
-        "label": "Applications",
-        "value": "Mouchoir en papier - Essuie-tout - Serviette de table"
-      },
-      {
-        "label": "Serration",
-        "value": "Géométrie personnalisée disponible"
-      }
-    ]
+    slug: "shear-blades",
+    category: "shear_blades",
+    title: "Lames de cisaille pour métaux",
+    seoTitle: "Lames de cisaille pour tôles, bobines métalliques et ferrailles",
+    shortName: "Lames de cisaille pour métaux",
+    tagline: "Couteaux de remplacement par station de découpe métal",
+    heroImage: "/images/categories/shear-blades-nav.webp",
+    description:
+      "Choisissez des couteaux à guillotine, des cisailles volantes et des hachoirs à ferraille, ainsi que lames de cisaille fixes et en alligator. Faites correspondre la position de la machine et du couteau.",
+    selectionGuide: {
+      title: "Guide de sélection des lames de cisaillement pour métaux",
+      articles: [
+        {
+          id: "guillotine-shear-blade-clearance-setting",
+          width: 1200,
+          height: 960,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "guillotine-shear-blade-parallelism",
+          image: "/images/news/guillotine-shear-blade-parallelism-cover.webp",
+          width: 990,
+          height: 742,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "metal-shearing",
+          title: "Tôles, lignes de bobines et laminoirs",
+          description:
+            "Choisissez des couteaux de cisaille à tôle autonomes, lames de cisaille volantes de laminoir ou des couteaux de hachoir à bordures.",
+          productIds: [
+            "guillotine-shear-blades",
+            "flying-shear-blades",
+            "scrap-chopper-blades",
+          ],
+        },
+        {
+          id: "scrap-recycling-shears",
+          title: "Cisailles de recyclage de ferraille",
+          description:
+            "Identifiez une cisaille crocodile à mâchoire articulée ou une cisaille à ferraille stationnaire avant de choisir le couteau de remplacement.",
+          productIds: ["metal-shear-knives", "stationary-scrap-shear-blades"],
+        },
+      ],
+      quotePrompt:
+        "Incluez le modèle de la machine, la position de la lame, le matériau et l'épaisseur ou la taille de la section, et joignez le dessin du couteau.",
+    },
   },
   {
-    "slug": "shear-blades",
-    "category": "shear_blades",
-    "title": "Lames de cisailles et de guillotines",
-    "shortName": "Lames de cisailles",
-    "tagline": "Couteaux de guillotine, lames de cisaille en métal et jeux de coupe-papier",
-    "heroImage": "/images/categories/shear-blades-nav.webp",
-    "description": "Cisaille droite et lames de guillotine pour le cisaillage de tôles, les guillotines hydrauliques, les guillotines à papier et les rogneuses à trois couteaux. Construction des arêtes en TCT ou bimétallique avec une planéité contrôlée de la face ; fournies sous forme de jeux appariés pour une compatibilité OEM.",
-    "specItems": [
-      {
-        "label": "Construction des bords",
-        "value": "TCT-inlay - Bimétallique - Solid HSS"
-      },
-      {
-        "label": "Planéité de la face",
-        "value": "Maintenu sur toute sa longueur"
-      },
-      {
-        "label": "Format de l'offre",
-        "value": "Kits OEM assortis"
-      },
-      {
-        "label": "Machines",
-        "value": "Guillotine hydraulique - Cisaille à tôle - Coupeuse à trois couteaux"
-      },
-      {
-        "label": "Applications",
-        "value": "Tôle d'acier - Papier - Carton - Bloc de livres"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Oui"
-      }
-    ]
+    slug: "paper-cutting-knives",
+    category: "paper_cutting",
+    title: "Lames de coupe et de rognage pour papier",
+    shortName: "Lames de coupe pour papier",
+    tagline:
+      "Couteaux pour piles de papier, mise en feuille et finition d'impression",
+    heroImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
+    description:
+      "Choisissez lames de guillotine à papier, des couteaux de coupe-feuille, des lames de coupe-bordure à trois couteaux et des couteaux d'encarteuse-piqueuse. Faites correspondre le poste de coupe, la position du couteau et le dessin de la machine.",
+    selectionGuide: {
+      title: "Guide de sélection des couteaux à papier",
+      articles: [
+        {
+          id: "paper-guillotine-knives-selection-maintenance-guide",
+          width: 1200,
+          height: 537,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "custom-length-guillotine-paper-cutter-blades",
+          width: 1122,
+          height: 1402,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "paper-cutting",
+          title: "Découpe de pile de papier et mise en feuille",
+          description:
+            "Distinguez la découpe en pile de papier serrée de la découpe transversale en bande continue en feuilles.",
+          productIds: ["paper-cutting-blades", "paper-sheeter-knives"],
+        },
+        {
+          id: "print-finishing",
+          title: "Finition de livres et d'impressions",
+          description:
+            "Choisissez le jeu de couteaux pour une ligne de coupe-bordure à trois couteaux ou de piqûre à cheval. Confirmez les positions avant, latérales, supérieure et inférieure.",
+          productIds: [
+            "three-knife-trimmer-blades",
+            "saddle-stitcher-trimmer-knives",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Incluez le modèle et la version de la machine, les positions des couteaux, les spécifications du papier ou du carton et les dessins originaux des couteaux.",
+    },
   },
   {
-    "slug": "cold-saw-blades",
-    "category": "cold_saw_blades",
-    "title": "Lames de scie à froid pour métaux",
-    "shortName": "Lames de scie à froid",
-    "tagline": "Lames circulaires HSS et carbure pour la coupe à froid de l'acier et des tubes",
-    "heroImage": "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    "description": "Lames de scie circulaire à froid pour la coupe sans bavure de tubes d'acier, de barres pleines et de profilés de construction. Disponibles en HSS-E (M35/M42) et TCT (carbure de tungstène-tipped) avec des géométries de forme de copeaux adaptées aux conditions de coupe à sec, avec liquide de refroidissement et MQL.",
-    "specItems": [
-      {
-        "label": "Matériaux",
-        "value": "HSS-E M35/M42 - TCT à pointe carbure"
-      },
-      {
-        "label": "Qualité de coupe",
-        "value": "Pas de bavure, pas de zone affectée par la chaleur"
-      },
-      {
-        "label": "Conditions de coupe",
-        "value": "Sec - Liquide de refroidissement - MQL"
-      },
-      {
-        "label": "Applications",
-        "value": "Tube d'acier - Barre massive - Profilé de construction"
-      },
-      {
-        "label": "Format de l'offre",
-        "value": "Remplacement OEM ou OD/ID/pitch personnalisé"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Oui - plusieurs cycles"
-      }
-    ]
+    slug: "other-custom-blades",
+    category: "custom_profile",
+    title: "Autres lames et lames sur mesure",
+    shortName: "Autres et sur mesure",
+    tagline:
+      "Pièces de coupe spécifiques au processus et profils personnalisés",
+    heroImage: "/images/products/blades/special-shaped-knife.webp",
+    description:
+      "Trouvez des lames de compacteur de coupe, des grattoirs pour filtre à fusion, des couteaux de granulation et des profils personnalisés par processus ou type de pièce.",
+    selectionGuide: {
+      title: "Guide de sélection des couteaux de traitement",
+      articles: [
+        {
+          id: "cutter-compactor-blade-film-vs-flake-wear",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "how-to-spec-die-face-cutting-knives",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+          width: 1280,
+          height: 720,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "products",
+          title: "Autres lames et lames sur mesure",
+          productIds: [
+            "cutter-compactor-blades",
+            "continuous-melt-filter-scraper-blades",
+            "strand-pelletizer-rotors",
+            "die-face-cutting-knives",
+            "special-shaped-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Incluez le processus, le modèle de machine, la position de la pièce et un dessin ou un échantillon de dimensions.",
+    },
   },
   {
-    "slug": "custom-profile",
-    "category": "custom_profile",
-    "title": "Lames sur mesure et de forme spéciale",
-    "shortName": "Lames sur mesure",
-    "tagline": "Toute géométrie - tout alliage - à partir de DXF, DWG ou d'un échantillon",
-    "heroImage": "/images/products/blades/special-shaped-knife.webp",
-    "description": "Lames industrielles à profil personnalisé et de forme spéciale fabriquées à partir de vos dessins DXF/DWG/STEP ou d'échantillons physiques. Options D2, H13, PM-HSS et carbure monobloc avec des tolérances de ±0,02 mm - tout profil, toute industrie."
+    slug: "wood-chipper-blades",
+    category: "wood_chipper",
+    title: "Couteaux et contre-couteaux pour déchiqueteuses de bois",
+    shortName: "Couteaux pour déchiqueteuses de bois",
+    tagline: "Couteaux mobiles et contre-couteaux fixes",
+    heroImage:
+      "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
+    description:
+      "Trouvez des couteaux de déchiqueteuse mobiles et des enclumes fixes pour les déchiqueteuses de bois à tambour et à disque. Comparez leurs rôles, puis associez le remplaçant à la machine.",
+    seoTitle:
+      "Couteaux et contre-couteaux pour déchiqueteuses de bois à tambour et à disque",
+    selectionGuide: {
+      title: "Guide de sélection des couteaux pour déchiqueteuse à bois",
+      articles: [
+        {
+          id: "wood-chipper-blade-wear-patterns",
+          width: 1149,
+          height: 766,
+          smallerWidths: [320, 400, 640, 800],
+        },
+        {
+          id: "wood-chipper-knife-sharpening-guide",
+          width: 1536,
+          height: 1024,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "moving-chipper-knives",
+          title: "Couteaux de déchiqueteuse mobiles",
+          productIds: ["wood-chipper-blades"],
+        },
+        {
+          id: "stationary-anvils",
+          title: "Enclumes stationnaires",
+          productIds: ["wood-chipper-anvils"],
+        },
+      ],
+      quotePrompt:
+        "Incluez le modèle et le numéro de série de la déchiqueteuse, le type de tambour ou de disque, la position du couteau ou de l'enclume et un dessin ou des dimensions d'un échantillon.",
+    },
   },
-  {
-    "slug": "wood-chipper-blades",
-    "category": "wood_chipper",
-    "title": "Lames de déchiqueteuse de bois",
-    "shortName": "Lames de déchiqueteuse de bois",
-    "tagline": "Couteaux de déchiqueteuse à tambour et à disque pour la sylviculture, la biomasse et le recyclage du bois",
-    "heroImage": "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
-    "description": "Couteaux de déchiqueteuse à tambour et à disque pour usage intensif fabriqués en acier D2, Cr12MoV et TCT à pointe en carbure. Traitement thermique sous vide à HRC 57-62 avec traitement cryogénique profond. Affûtage de précision avec une tolérance de ±0,05 mm sur l'épaisseur pour une géométrie de copeaux propre et uniforme.",
-    "specItems": [
-      {
-        "label": "Matériaux",
-        "value": "Acier à haute teneur en carbone - D2/Cr12MoV - TCT Carbide-Tipped"
-      },
-      {
-        "label": "Dureté",
-        "value": "HRC 55-58 (standard) - HRC 58-62 (D2) - HRA 89-91 (TCT)"
-      },
-      {
-        "label": "Tolérance d'épaisseur",
-        "value": "±0,05 mm"
-      },
-      {
-        "label": "Applications",
-        "value": "Broyeurs à tambour - Broyeurs à disque - Broyeurs de biomasse pour arbres entiers"
-      },
-      {
-        "label": "Compatibilité OEM",
-        "value": "Bandit - Vermeer - Morbark - Peterson - Doppstadt - Jenz"
-      },
-      {
-        "label": "Regrindable",
-        "value": "Oui - 8-12 cycles (trempé à cœur)"
-      }
-    ]
-  }
 ];

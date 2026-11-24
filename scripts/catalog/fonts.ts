@@ -1,7 +1,7 @@
 /**
  * scripts/catalog/fonts.ts
  *
- * Self-hosted @font-face CSS for the PDF catalog. The three families are
+ * Self-hosted @font-face CSS for the PDF catalog. The families are
  * variable woff2 files (latin subset) committed under ./fonts/, base64-embedded
  * as data URLs so Puppeteer's setContent renders fully offline — no dependency
  * on fonts.googleapis.com (which is unreachable from CN build machines).
@@ -31,7 +31,6 @@ interface FaceDef {
 
 const FACES: FaceDef[] = [
   { family: "Inter", file: "inter.woff2", weightRange: "100 900" },
-  { family: "Oswald", file: "oswald.woff2", weightRange: "200 700" },
   { family: "JetBrains Mono", file: "jetbrainsmono.woff2", weightRange: "100 800" },
 ];
 

@@ -3,7 +3,7 @@
  *
  * Each entry maps one BladeCategoryType to the display copy + hero image used
  * by /categories/:slug. The blade catalog itself stays in blades.ts; this file
- * only carries presentation metadata for the 8 aggregation pages.
+ * only carries presentation metadata for the 7 category entries.
  */
 
 import {
@@ -26,6 +26,16 @@ export interface BladeCategoryMeta {
   heroImage: string;
   description: string;
   specItems?: { label: string; value: string }[];
+  selectionGuide?: {
+    title: string;
+    articles: {
+      id: string;
+      image?: string;
+      width: number;
+      height: number;
+      smallerWidths: number[];
+    }[];
+  };
   /** Overrides the short products-section intro when a category needs a
    *  longer routing paragraph (e.g. to split traffic between variants that
    *  would otherwise cannibalize each other in search). */
@@ -35,6 +45,65 @@ export interface BladeCategoryMeta {
    *  use when a variant serves an adjacent market whose OEMs don't belong
    *  on the category's general audience-facing list. */
   oemExcludeList?: string[];
+  buyingGuide?: {
+    layout?: "flat";
+    groups: {
+      id: string;
+      title: string;
+      description?: string;
+      productIds: string[];
+    }[];
+    quotePrompt: string;
+  };
+}
+
+const slitterProductGroups = [
+  {
+    id: "by-application",
+    label: "By Application",
+    title: "Choose Knives by Application",
+    productIds: [
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+      "nonwoven-slitter-knives",
+      "metal-foil-strip-slitter-knives",
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+      "corrugated-slitter-scorer-blades",
+      "corrugated-slotter-knives",
+      "paper-straw-slitting-blades",
+    ],
+  },
+  {
+    id: "bottom-knives-rings",
+    label: "Bottom Knives & Rings",
+    title: "Bottom Knives & Rings",
+    productIds: [
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+      "groove-bottom-knives",
+    ],
+  },
+  {
+    id: "tungsten-carbide",
+    label: "Tungsten Carbide",
+    title: "Tungsten Carbide Slitter Knives",
+    productIds: ["tungsten-carbide-slitter-knives"],
+  },
+];
+
+export function getSlitterProductGroups(variants: Blade[]) {
+  const productsById = new Map(variants.map(blade => [blade.id, blade]));
+  const groups = slitterProductGroups.map(({ productIds, ...group }) => ({
+    ...group,
+    products: productIds.flatMap(id => {
+      const blade = productsById.get(id);
+      return blade ? [blade] : [];
+    }),
+  }));
+  const grouped = new Set(groups.flatMap(group => group.products));
+  groups[0].products.push(...variants.filter(blade => !grouped.has(blade)));
+  return groups.filter(group => group.products.length > 0);
 }
 
 export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
@@ -44,174 +113,312 @@ export const BLADE_CATEGORIES: BladeCategoryMeta[] = [
     title: "Slitter Knives & Circular Blades",
     seoTitle: "Rotary Slitter Knives & Circular Slitting Blades",
     shortName: "Slitter Knives",
-    tagline: "Precision-ground rotary blades for film, paper & metal foil",
+    tagline:
+      "Knives for web slitting, metal coil processing and corrugated converting",
     heroImage: "/images/categories/slitter-knives-nav.webp",
     description:
-      "Rotary slitter knives for shear, score & razor cutting — film, paper, nonwovens & metal foil. ±0.002mm tolerance. M2 HSS, D2, ASP23 PM & carbide.",
-    specItems: [
-      { label: "Thickness Tolerance", value: "±0.002 mm" },
-      { label: "T.I.R. Runout", value: "≤0.02 mm" },
-      { label: "Materials", value: "M2 HSS · D2 · ASP23 PM · Carbide" },
-      { label: "Coatings", value: "TiN · DLC · Teflon" },
-      { label: "Cutting Modes", value: "Shear · Score · Razor" },
-      { label: "Applications", value: "Film · Paper · Nonwovens · Foil" },
-    ],
+      "Explore slitter knives for film, paper, nonwovens, copper and aluminum foil, steel coils and batteries. Compare blade types, bottom rings and carbide options.",
   },
   {
     slug: "shredder-blades",
     category: "shredder_blades",
-    title: "Shredder Blades & Cutter Inserts",
+    title: "Shredder Blades & Wear Parts",
     shortName: "Shredder Blades",
-    tagline: "Twin-shaft, single-shaft and tire shredder cutting tools",
+    tagline: "Rotor inserts, bed knives, screens and shaft-mounted cutters",
     heroImage: "/images/categories/shredder-blades-nav.webp",
     description:
-      "Heavy-duty shredder blades for plastic, metal, tire & battery recycling. D2/SKD11/Cr12MoV, cryo & vacuum heat treated. Drop-in OEM fit, twin & single-shaft.",
-    specItems: [
-      { label: "Materials", value: "D2 · SKD11 · Cr12MoV" },
-      { label: "Hardness", value: "58–62 HRC" },
-      { label: "Heat Treatment", value: "Cryogenic + Vacuum" },
-      { label: "Platforms", value: "Twin-shaft · Single-shaft" },
-      { label: "Applications", value: "Plastic · Metal · Tire · Battery" },
-      { label: "Fit", value: "Drop-in OEM replacement" },
-    ],
-  },
-  {
-    slug: "granulator-blades",
-    category: "granulator_blades",
-    // Titles describe the whole routing set, not one member. The old title
-    // ("Granulator Blades & Crusher Knives") was a substring of the
-    // /products/granulator-blades title and cannibalized it in search.
-    title: "Plastic Size-Reduction Blades: Granulator, Pelletizer & Compactor",
-    seoTitle: "Granulator, Pelletizer & Compactor Blades",
-    shortName: "Granulator Blades",
-    tagline: "Maximized regrind quality, extended MTBR",
-    heroImage: "/images/categories/granulator-blades-nav.webp",
-    description:
-      "Choose between granulator rotor and bed knives, strand pelletizer rotors, die-face cutting knives, compactor blades and melt filter scrapers.",
-    specItems: [
-      { label: "Materials", value: "H13 · D2 · M2 HSS · Carbide" },
-      { label: "Geometry", value: "Optimized rake angle" },
-      { label: "Machines", value: "Rotary · Claw · Hopper · Pelletizing" },
-      { label: "Benefit", value: "Lower motor load · Less dust" },
-      { label: "Applications", value: "Plastic regrind · Size reduction" },
-      { label: "Regrindable", value: "Yes — multiple cycles" },
-    ],
+      "Choose multi-shaft cutters for general recycling, scrap metal, tires or battery pre-shredding. Find single-shaft rotor inserts, bed knives and screens.",
+    selectionGuide: {
+      title: "Shredder Blade Selection Guide",
+      articles: [
+        {
+          id: "single-shaft-shredder-blade-face-profile-guide",
+          width: 800,
+          height: 800,
+          smallerWidths: [320, 400, 640],
+        },
+        {
+          id: "tire-shredder-blade-wear-steel-cord",
+          width: 2496,
+          height: 1696,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "granulator-rotor-bed-knife-configuration",
+          width: 1672,
+          height: 941,
+          smallerWidths: [400, 640, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "twin-and-multi-shaft-cutters",
+          title: "Multi-Shaft Cutters by Application",
+          description:
+            "Start with what goes into the shredder. Then use the machine model and cutter stack to identify the correct replacement.",
+          productIds: [
+            "twin-shaft-blades-recycling",
+            "multi-shaft-blades-metal",
+            "tire-shredder-blades",
+            "twin-shaft-blades-battery",
+          ],
+        },
+        {
+          id: "single-shaft-parts",
+          title: "Single-Shaft Shredder & Granulator Parts",
+          description:
+            "The rotor knives cut against the stationary stator knives. The screen controls which material can pass out of the chamber.",
+          productIds: [
+            "single-shaft-shredder-blades",
+            "single-shaft-bed-knives",
+            "shredder-screens",
+            "granulator-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Include the machine model, part number, feedstock and quantity. Attach a cutter or screen drawing if available.",
+    },
   },
   {
     slug: "log-saw-blades",
     category: "log_saw_blades",
-    title: "Tissue & Log Saw Blades",
+    title: "Tissue & Nonwoven Log Saw Blades",
     shortName: "Log Saw Blades",
-    tagline: "Zero dust. Burr-free tissue and napkin cutting.",
+    tagline: "Circular replacement blades by log material",
     heroImage: "/images/products/blades/tissue-log-saw-blades-05.webp",
     description:
-      "Circular log saw blades for tissue, kitchen towel & napkin converting. CBN-compatible, controlled runout, anti-friction coating for dust-free perforation.",
-    routingCopy:
-      "Two log saw blade families, split by what you are cutting. Tissue and towel logs on Perini, PCMC, Casmatic, Gambini and Bretting machines take the Ø610–1200 mm tissue blades. Nonwoven and wipes logs run smaller Ø350–700 mm blades with a different bevel. Pick the one that matches your line, or send us the machine model and we will point you at the right one.",
-    oemExcludeList: ["Fameccanica", "GDM", "Curt G. Joa", "Zuiko"],
-    specItems: [
-      { label: "Profile", value: "CBN-compatible" },
-      { label: "Surface", value: "Anti-friction treatment" },
-      { label: "Cut Quality", value: "Dust-free perforation" },
-      { label: "Speed", value: "Optimized for high line speeds" },
-      { label: "Applications", value: "Tissue · Kitchen towel · Napkin" },
-      { label: "Serration", value: "Custom geometry available" },
-    ],
+      "Compare circular blades for tissue and towel logs or nonwoven wipe logs. Identify the log material and saw model before matching the blade.",
+    seoTitle: "Circular Log Saw Blades for Tissue & Nonwovens",
+    selectionGuide: {
+      title: "Log Saw Blade Selection Guide",
+      articles: [
+        {
+          id: "log-saw-blade-chipping-causes-prevention",
+          width: 1600,
+          height: 878,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "log-saw-blade-bevel-angles",
+          width: 1108,
+          height: 1108,
+          smallerWidths: [320, 400, 480, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "tissue-and-towel-logs",
+          title: "Tissue & Towel Logs",
+          productIds: ["tissue-log-saw-blades"],
+        },
+        {
+          id: "nonwoven-logs",
+          title: "Nonwoven & Wipe Logs",
+          productIds: ["nonwoven-log-saw-blades"],
+        },
+      ],
+      quotePrompt:
+        "Include the saw model, log material, blade diameter, bore and drive-pin layout, and attach a drawing if available.",
+    },
   },
   {
     slug: "shear-blades",
     category: "shear_blades",
-    title: "Shear & Guillotine Blades",
-    seoTitle: "Guillotine Blades & Industrial Shear Knives",
-    shortName: "Shear Blades",
-    tagline: "Guillotine shear knives, metal shear blades and paper trim sets",
+    title: "Metal Shear Blades",
+    seoTitle: "Metal Shear Blades for Sheet, Coil & Scrap Cutting",
+    shortName: "Metal Shear Blades",
+    tagline: "Replacement knives by metal cutting station",
     heroImage: "/images/categories/shear-blades-nav.webp",
     description:
-      "Guillotine blades for sheet metal shears, paper cutters and three-knife trimmers. D2, 6CrW2Si, HSS and TCT-inlay edges, ground to drawing or to sample.",
-    specItems: [
-      {
-        label: "Edge Construction",
-        value: "TCT-inlay · Bimetallic · Solid HSS",
-      },
-      { label: "Face Flatness", value: "Maintained over full length" },
-      { label: "Supply Format", value: "Matched OEM sets" },
-      {
-        label: "Machines",
-        value: "Hydraulic guillotine · Plate shear · Three-knife trimmer",
-      },
-      {
-        label: "Applications",
-        value: "Steel sheet · Paper · Board · Book block",
-      },
-      { label: "Regrindable", value: "Yes" },
-    ],
+      "Choose guillotine, flying shear and scrap chopper knives, plus stationary and alligator scrap shear blades. Match the machine and knife position.",
+    selectionGuide: {
+      title: "Metal Shear Blade Selection Guide",
+      articles: [
+        {
+          id: "guillotine-shear-blade-clearance-setting",
+          width: 1200,
+          height: 960,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "guillotine-shear-blade-parallelism",
+          image: "/images/news/guillotine-shear-blade-parallelism-cover.webp",
+          width: 990,
+          height: 742,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "metal-shearing",
+          title: "Sheet Metal, Coil Lines & Rolling Mills",
+          description:
+            "Choose standalone sheet-metal shear knives, rolling-mill flying shear blades or edge-trim chopper knives.",
+          productIds: [
+            "guillotine-shear-blades",
+            "flying-shear-blades",
+            "scrap-chopper-blades",
+          ],
+        },
+        {
+          id: "scrap-recycling-shears",
+          title: "Scrap Recycling Shears",
+          description:
+            "Identify a hinged-jaw alligator shear or stationary scrap shear before choosing the replacement knife.",
+          productIds: ["metal-shear-knives", "stationary-scrap-shear-blades"],
+        },
+      ],
+      quotePrompt:
+        "Include the machine model, blade position, material and thickness or section size, and attach the knife drawing.",
+    },
   },
   {
-    slug: "cold-saw-blades",
-    category: "cold_saw_blades",
-    title: "Metal Cold Saw Blades",
-    shortName: "Cold Saw Blades",
-    tagline: "HSS and carbide circular blades for cold-cutting steel and tube",
-    heroImage:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
+    slug: "paper-cutting-knives",
+    category: "paper_cutting",
+    title: "Paper Cutting & Trimming Knives",
+    shortName: "Paper Cutting Knives",
+    tagline: "Knives for paper stacks, web sheeting and print finishing",
+    heroImage: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     description:
-      "Cold circular saw blades for burr-free cutting of steel tube, solid bar & structural profiles. HSS-E (M35/M42) & TCT carbide-tipped, dry/flood/MQL cutting.",
-    specItems: [
-      { label: "Materials", value: "HSS-E M35/M42 · TCT carbide-tipped" },
-      { label: "Cut Quality", value: "Burr-free, no heat-affected zone" },
-      { label: "Cutting Conditions", value: "Dry · Flood coolant · MQL" },
-      {
-        label: "Applications",
-        value: "Steel tube · Solid bar · Structural profile",
-      },
-      {
-        label: "Supply Format",
-        value: "OEM replacement or custom OD/ID/pitch",
-      },
-      { label: "Regrindable", value: "Yes — multiple cycles" },
-    ],
+      "Choose paper guillotine blades, sheeter knives, three-knife trimmer blades and saddle-stitcher knives. Match the cutting station, knife position and machine drawing.",
+    selectionGuide: {
+      title: "Paper Cutting Knife Selection Guide",
+      articles: [
+        {
+          id: "paper-guillotine-knives-selection-maintenance-guide",
+          width: 1200,
+          height: 537,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "custom-length-guillotine-paper-cutter-blades",
+          width: 1122,
+          height: 1402,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      groups: [
+        {
+          id: "paper-cutting",
+          title: "Paper Stack Cutting & Web Sheeting",
+          description: "Distinguish clamped paper-stack cutting from continuous-web cross cutting into sheets.",
+          productIds: ["paper-cutting-blades", "paper-sheeter-knives"],
+        },
+        {
+          id: "print-finishing",
+          title: "Book & Print Finishing",
+          description: "Choose the knife set for a three-knife trimmer or saddle-stitching line. Confirm front, side, upper and lower positions.",
+          productIds: ["three-knife-trimmer-blades", "saddle-stitcher-trimmer-knives"],
+        },
+      ],
+      quotePrompt: "Include the machine model and version, knife positions, paper or board specification, and the original knife drawings.",
+    },
   },
   {
-    slug: "custom-profile",
+    slug: "other-custom-blades",
     category: "custom_profile",
-    title: "Custom & Special-Shaped Blades",
-    shortName: "Custom Blades",
-    tagline: "Any geometry · any alloy · from DXF, DWG or sample",
+    title: "Other & Custom Blades",
+    shortName: "Other & Custom",
+    tagline: "Process-specific cutting parts and custom profiles",
     heroImage: "/images/products/blades/special-shaped-knife.webp",
     description:
-      "Custom profile and special-shaped industrial blades manufactured from your DXF/DWG/STEP drawings or physical samples. D2, H13, PM-HSS and solid carbide options with tolerances to ±0.02 mm — any profile, any industry.",
+      "Find cutter compactor blades, melt filter scrapers, pelletizing knives and custom profiles by process or part type.",
+    selectionGuide: {
+      title: "Process Knife Selection Guide",
+      articles: [
+        {
+          id: "cutter-compactor-blade-film-vs-flake-wear",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 640, 800],
+        },
+        {
+          id: "how-to-spec-die-face-cutting-knives",
+          width: 1600,
+          height: 900,
+          smallerWidths: [400, 800],
+        },
+        {
+          id: "melt-filter-scraper-blade-daily-maintenance-checklist",
+          width: 1280,
+          height: 720,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+      layout: "flat",
+      groups: [
+        {
+          id: "products",
+          title: "Other & Custom Blades",
+          productIds: [
+            "cutter-compactor-blades",
+            "continuous-melt-filter-scraper-blades",
+            "strand-pelletizer-rotors",
+            "die-face-cutting-knives",
+            "special-shaped-blades",
+          ],
+        },
+      ],
+      quotePrompt:
+        "Include the process, machine model, part position and a drawing or sample dimensions.",
+    },
   },
   {
     slug: "wood-chipper-blades",
     category: "wood_chipper",
-    title: "Wood Chipper Blades",
+    title: "Wood Chipper Knives & Anvils",
     shortName: "Wood Chipper Blades",
-    tagline:
-      "Drum & disc chipper knives for forestry, biomass & wood recycling",
+    tagline: "Moving knives and stationary counter knives",
     heroImage:
       "/images/products/wood-chipper-blades/wood-chipper-blades-00.webp",
     description:
-      "Heavy-duty drum and disc chipper knives manufactured from D2, Cr12MoV and TCT carbide-tipped steel. Vacuum heat-treated to HRC 57–62 with deep cryogenic treatment. Precision-ground to ±0.05 mm thickness tolerance for clean, uniform chip geometry.",
-    specItems: [
-      {
-        label: "Materials",
-        value: "High-Carbon Steel · D2/Cr12MoV · TCT Carbide-Tipped",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–58 (standard) · HRC 58–62 (D2) · HRA 89–91 (TCT)",
-      },
-      { label: "Thickness Tolerance", value: "±0.05 mm" },
-      {
-        label: "Applications",
-        value: "Drum chippers · Disc chippers · Biomass whole-tree chippers",
-      },
-      {
-        label: "OEM Compatibility",
-        value: "Bandit · Vermeer · Morbark · Peterson · Doppstadt · Jenz",
-      },
-      { label: "Regrindable", value: "Yes — 8–12 cycles (through-hardened)" },
-    ],
+      "Find moving chipper knives and stationary anvils for drum and disc wood chippers. Compare their roles, then match the replacement to the machine.",
+    seoTitle: "Wood Chipper Knives & Anvils for Drum and Disc Chippers",
+    selectionGuide: {
+      title: "Wood Chipper Knife Selection Guide",
+      articles: [
+        {
+          id: "wood-chipper-blade-wear-patterns",
+          width: 1149,
+          height: 766,
+          smallerWidths: [320, 400, 640, 800],
+        },
+        {
+          id: "wood-chipper-knife-sharpening-guide",
+          width: 1536,
+          height: 1024,
+          smallerWidths: [400, 800],
+        },
+      ],
+    },
+    buyingGuide: {
+        layout: "flat",
+      groups: [
+        {
+          id: "moving-chipper-knives",
+          title: "Moving Chipper Knives",
+          productIds: ["wood-chipper-blades"],
+        },
+        {
+          id: "stationary-anvils",
+          title: "Stationary Anvils",
+          productIds: ["wood-chipper-anvils"],
+        },
+      ],
+      quotePrompt:
+        "Include the chipper model and serial number, drum or disc type, knife or anvil position and a drawing or sample dimensions.",
+    },
   },
 ];
 

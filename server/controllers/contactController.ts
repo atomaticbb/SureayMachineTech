@@ -25,7 +25,13 @@ export const submitContactForm = async (
 ) => {
   try {
     // 1. Validate text fields (multer places multipart text fields in req.body)
-    const data = ContactFormSchema.parse(req.body);
+    const submittedData = ContactFormSchema.parse(req.body);
+    const data = {
+      ...submittedData,
+      message: submittedData.productName
+        ? `[Product: ${submittedData.productName}] ${submittedData.message}`
+        : submittedData.message,
+    };
 
     // 2. Optional file attachment — populated by multer upload.single('attachment')
     const file = req.file as Express.Multer.File | undefined;

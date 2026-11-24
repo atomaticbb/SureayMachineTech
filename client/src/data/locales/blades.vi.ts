@@ -1,717 +1,812 @@
-// AUTO-GENERATED — do not edit by hand.
-// Source:    blades.ts
-// Target:    vi
-// Generated: 2026-05-24T16:25:21.131Z
-// Provider:  deepl (incremental: faqs + components)
-
+// Generated from the English industrial blade catalog (vi).
 import type { Blade } from "../blades";
+
 export const blades: Blade[] = [
   {
+    compatibleMachinesIntro:
+      "Nhận dao cắt màng và băng thay thế được sản xuất cho đầu cặp của bạn, với các lỗ, biên dạng cắt và tùy chọn bề mặt tùy chỉnh. Gửi cho Sureay bản vẽ hoặc mẫu của bạn để nhận báo giá về từng loại dao hoặc cặp dao trên và dưới.",
     id: "rotary-slitter-knives",
-    name: "Dao xén phim và băng",
-    fullName:
-      "Dao xén quay chính xác để chuyển đổi màng, băng và bao bì linh hoạt",
+    name: "Dao xẻ dọc màng và băng",
+    fullName: "Dao xẻ dọc màng và băng dùng trong bao bì mềm",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Dao xén phim và băng",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-    badge: "Bán chạy nhất",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-09.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    ],
+    categoryDisplay: "Dao xẻ dọc màng và băng",
+    image: "/images/products/slitter-detail/rotary-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lưỡi cắt tròn được mài chính xác dành cho màng BOPP, BOPET & CPP, màng căng PE, băng PSA & vải không dệt. Dung sai độ dày ± 0,002mm, T.I.R. hết. Các biên dạng cắt, ghi điểm và dao cạo bằng thép M2 HSS, D2 & ASP23 PM với lớp phủ chống dính TiN & DLC tùy chọn. OEM phù hợp cho các hệ thống máy xén Tidland, Kampf, Atlas & Dusenbery.",
-    fullDescription:
-      "dao cắt rotary tròn và các lưỡi dao hoạt động ở điểm giao nhau giữa độ chính xác về chiều và khoa học vật liệu. Trên dây chuyền chuyển đổi chạy màng BOPP hoặc BOPET ở tốc độ 400–600m/phút, sai số dung sai độ dày lưỡi rạch quay là 0,005mm trên mỗi dao kết hợp trên một ngăn xếp nhiều dao, tạo ra độ lệch chiều rộng khe có thể nhìn thấy, độ cong cạnh và bụi làm ô nhiễm thiết bị đóng cuộn và đóng gói xuôi dòng. Các lưỡi máy xén quay Sureay được sản xuất với dung sai độ dày ±0,002mm và tổng độ lệch chỉ định (T.I.R.) 20,02mm—dung sai duy trì trên toàn bộ đường kính sản xuất, không chỉ ở lỗ khoan.\n\nLựa chọn hợp kim được xác định theo ứng dụng. Chuyển đổi tiêu chuẩn giấy tráng và bìa kraft chạy trên thép chịu lực 52100 hoặc D2 thép dụng cụ gia công nguội. Chất nền mài mòn—lá điện cực bằng nhôm và đồng cấp pin dành cho pin lithium EV, bao bì gia cố bằng sợi thủy tinh, lớp lót nhả phủ silicon—yêu cầu thép luyện kim bột (PM) ASP23 hoặc ASP52 hoặc cacbua rắn để có tuổi thọ cạnh chấp nhận được. Màng nhựa dẻo (BOPP, BOPET, CPP, PE) được xử lý thường xuyên trên lưỡi M2 HSS với lớp phủ bề mặt TiN hoặc DLC PVD tùy chọn để ngăn chặn sự chuyển màng dính và giảm hiện tượng nóng lên do ma sát gây ra.\n\n## Bằng phương pháp cắt\n\n**Rạch cắt (Cặp dao trên và dưới phù hợp):** Tác động cắt kéo giữa dao trên có rãnh và dao đe dưới có rãnh tạo ra một vết cắt sạch với tải trọng kéo bằng 0 trên bụng. Khoảng hở giữa dao với dao thường được đặt ở mức 0,05–0,15mm (phụ thuộc vào chất nền); Dung sai mài của chúng tôi đảm bảo khoảng hở này nhất quán trên toàn bộ chiều rộng khe. Quan trọng đối với giấy, vải không dệt và màng dẻo nhẹ ở đó sự biến dạng của cạnh là không thể chấp nhận được.\n\n**Cắt/nghiền/cắt điểm (Lưỡi tròn chống lại cuộn đe cao su):** Một lưỡi dao cứng, sắc bén xuyên qua tấm màng bao bì nhiều lớp, xốp hoặc nhiều lớp dính nhạy áp với đe cao su có độ cứng được kiểm soát. Hình học biên dạng lưỡi và góc vát được tối ưu hóa trên mỗi bề mặt để ngăn chặn hiện tượng keo bị ép ra và tách lớp ở cạnh cắt. Sự lựa chọn tiêu chuẩn cho băng keo nhạy áp, cắt khuôn xốp và tách bao bì y tế.\n\n**Razor Razor (Lưỡi dao đơn cố định hoặc nổi tự do):** Lưỡi dao có cấu hình mỏng, siêu sắc giúp cắt tỉa phế liệu từ các dây chuyền ép đùn màng đúc, dây chuyền màng định hướng và sản xuất vải không dệt spunbond ở tốc độ trên 500m/phút. Hình dạng lưỡi được tối ưu hóa để giảm thiểu lực cản của màng và độ sạch của cạnh tối đa, ngăn chặn hiện tượng cong mép và phóng tĩnh điện gây ra hiện tượng đứt màng trên đường dây tốc độ cao.\n\n##Theo nguyên liệu & ngành nghề\n\n**Màng đóng gói linh hoạt:** Màng co BOPP, BOPET, CPP, PE/PP, ống co. Rạch màng tốc độ cao đòi hỏi phải kiểm soát độ lệch chính xác để ngăn chặn sự dao động của lực căng màng do dao động gây ra. M2 HSS với lớp phủ DLC tùy chọn giúp loại bỏ độ bám dính chuyển màng trên mặt lưỡi dao.\n\n**Vải không dệt & vải y tế:** Spunbond PP, vải tan chảy, vải y tế SMS, vật liệu lọc HEPA. Các góc cào chuyên dụng giúp ngăn xơ bị sờn và trượt màng trong quá trình rạch các vật liệu có cấu trúc lỏng lẻo ở mức độ căng cao.\n\n**Băng & nhãn chịu áp lực:** Mặt nạ, băng keo, xốp hai mặt, giấy dán nhãn, keo chuyển. Lớp phủ chống bám dính TiN và Teflon giúp giảm tần suất làm sạch từ 60–80%, kéo dài Thời gian Trung bình Giữa các lần Thay thế trên các ứng dụng rạch băng đòi hỏi khắt khe nhất.",
-    disambiguation:
-      "Bạn đang gia công giấy, giấy lụa hoặc bìa thay vì phim? Xem trang [Dao xén giấy](/products/rotary-slitter-knives-paper) của chúng tôi để biết dữ liệu độ hở cắt và chu kỳ mài lại trên các chất nền xenlulo.",
+      "Dao cắt thay thế cho màng BOPP, PET, CPP và băng dính. Dao trên và dưới bằng thép công cụ hoặc cacbua, có lỗ và biên dạng tùy chỉnh để vẽ.",
     link: "/products/rotary-slitter-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "Đường kính tròn OD 20–300 mm",
+      },
+      {
+        label: "Vật liệu",
+        value: "52100, D2 , M2 HSS , ASP23 PM thép hoặc hợp kim cacbua vonfram",
+      },
+      {
+        label: "Ứng dụng",
+        value: "BOPP, BOPET, CPP, màng căng và băng nhạy áp lực",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value:
+          "TiN, DLC, PTFE (Teflon), CrAlN hoặc gốm, tùy thuộc vào bề mặt lưỡi cắt",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Giá đỡ cắt quay hoặc giá đỡ cắt nghiền",
+      },
+      {
+        label: "Dung sai độ dày",
+        value: "±0.002 mm",
+      },
+      {
+        label: "hết",
+        value: "≤0.02 mm T.I.R.",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao xẻ dọc màng và băng dùng trong bao bì mềm",
+      sizeRange: "Đường kính tròn OD 20–300 mm",
+      heroAlt: "Dao cắt màng và băng tròn và vòng đáy",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-detail.webp",
+        alt: "Cận cảnh góc xiên được mài chính xác và mặt của dao xén tròn",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Dao xẻ dọc",
+          title: "Dao xẻ trên & dưới",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Loại Dao"],
+          rows: [
+            ["SR001154", "60 × 40 × 1.0 mm", "Con dao hàng đầu"],
+            ["SR001155", "62 × 35 × 0.5 mm", "Con dao hàng đầu"],
+            ["SR001156", "75 × 45 × 1.2 mm", "Con dao hàng đầu"],
+            ["SR001151", "90 × 60 × 1.0 mm", "Con dao hàng đầu"],
+            ["SR001152", "105 × 70 × 1.2 mm", "Con dao hàng đầu"],
+            ["SR001157", "130 × 80 × 1.2 mm", "Con dao hàng đầu"],
+            ["SR001158", "150 × 75 × 2.0 mm", "Con dao hàng đầu"],
+            ["SR001168", "70 × 28 × 12 mm", "Dao đáy"],
+            ["SR001169", "70 × 45 × 3 mm", "Dao đáy"],
+            ["SR001170", "70 × 45 × 20 mm", "Dao đáy"],
+            ["SR001182", "80 × 55 × 5 mm", "Dao đáy"],
+            ["SR001452", "80 × 60 × 10 mm", "Dao đáy"],
+            ["SR001183", "105 × 60 × 15 mm", "Dao đáy"],
+            ["SR001184", "108 × 80 × 8 mm", "Dao đáy"],
+            ["SR001185", "150 × 120 × 15 mm", "Dao đáy"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Dao trên và dưới bổ sung",
+          title: "Dao trên và dưới bổ sung",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Loại dao / Tham chiếu nền tảng",
+          ],
+          rows: [
+            [
+              "SR001801",
+              "75 × 25.4 × 1.0 / 1.2 mm",
+              "Dao trên — Tidland / Atlas",
+            ],
+            ["SR001802", "70 × 25.4 × 8 / 10 mm", "Đe đáy — Tidland / Atlas"],
+            [
+              "SR001803",
+              "100 × 32 × 1.2 / 1.5 mm",
+              "Top Blade — Kampf / Dusenbery",
+            ],
+            ["SR001804", "80 × 60 × 16 / 20 mm", "Đe đáy — Kampf / Dusenbery"],
+            [
+              "SR001805",
+              "118 × 80 × 1.2 / 2.0 mm",
+              "Top Blade — Goebel / BHS / Agnati",
+            ],
+            [
+              "SR001806",
+              "100 × 70 × 16 / 20 mm",
+              "Đe đáy — Goebel / BHS / Agnati",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Đường kính tròn OD 20–300 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "52100, D2 , M2 HSS , ASP23 PM thép hoặc hợp kim cacbua vonfram",
+        },
+        {
+          label: "Ứng dụng",
+          value: "BOPP, BOPET, CPP, màng căng và băng nhạy áp lực",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value:
+            "TiN, DLC, PTFE (Teflon), CrAlN hoặc gốm, tùy thuộc vào bề mặt lưỡi cắt",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Giá đỡ cắt quay hoặc giá đỡ cắt nghiền",
+        },
+        {
+          label: "Dung sai độ dày",
+          value: "±0.002 mm",
+        },
+        {
+          label: "hết",
+          value: "≤0.02 mm T.I.R.",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
       "Tidland",
-      "Mario Cotta",
-      "Dusenbery",
       "Kampf",
       "Atlas",
       "Goebel",
-      "BHS",
-      "Agnati",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "52100 / D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Cutting Styles",
-        value: "Shear Slitting, Score / Crush Cutting, Razor Slitting",
-      },
-      {
-        label: "Outer Diameter",
-        value: "50–200 mm (custom OD available)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.002 mm thickness | ≤0.02 mm T.I.R. runout",
-      },
-      {
-        label: "Coatings",
-        value: "TiN, DLC, Teflon, CrAlN (optional)",
-      },
-      {
-        label: "Applications",
-        value:
-          "BOPP / BOPET / CPP Film, PE Stretch Film, PSA Tape, Non-Wovens, Flexible Packaging",
-      },
+      "Windmöller & Hölscher",
     ],
     components: [
       {
-        id: "multi-material-compatibility",
-        tag: "Luyện kim",
-        title: "Thép công cụ dành riêng cho ứng dụng",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Tùy chọn thép và cacbua phù hợp với ứng dụng",
         description:
-          "Chất liệu phù hợp với trang web của bạn. Thép carbon 52100 dùng làm lớp lót màng đóng gói tiêu chuẩn và chất nền được phủ; M2 HSS cho màng nhựa mài mòn; ASP23 PM hoặc cacbua rắn dùng cho lớp lót nhả phủ silica và tấm mỏng được gia cố bằng sợi thủy tinh. Mỗi loại đều có sẵn và sẵn sàng để giao hàng OEM nhanh chóng.",
+          "Từ 52100 và D2 ​​đến M2 HSS , thép PM và cacbit nguyên khối, Sureay cung cấp các lựa chọn vật liệu để cắt màng thông thường và các điều kiện mài mòn khắt khe hơn.",
       },
       {
-        id: "advanced-coating-systems",
-        tag: "GIỮ CẠNH",
-        title: "Lớp phủ PVD chống dính",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Các cạnh được mài chính xác và lớp phủ tùy chọn",
         description:
-          "Lớp phủ TiN và DLC làm giảm độ bám dính bề mặt tới 80%, loại bỏ sự tích tụ chất kết dính trên mặt lưỡi dao trong quá trình cắt băng PSA và rạch lớp keo. Ma sát thấp hơn có nghĩa là vận hành mát hơn, tuổi thọ lưỡi cắt dài hơn và ít lần dừng làm sạch hơn mỗi ca.",
+          "Các lưỡi cắt được mài chính xác có sẵn với các tùy chọn lớp phủ TiN, DLC, PTFE (Teflon), CrAlN hoặc gốm, được chọn cho đế lưỡi cắt và màng hoặc băng được cắt.",
       },
       {
-        id: "five-cutting-applications",
-        tag: "NĂNG LỰC QUY TRÌNH",
-        title: "Hình học cạnh được tối ưu hóa",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao thay thế tùy chỉnh và cặp phù hợp",
         description:
-          "Các cấu hình vát đơn, vát kép và cạnh cùn được thiết kế cho các cặp cắt, cắt đe nghiền/cắt điểm và cắt tỉa bằng dao cạo. Được định cấu hình cho tốc độ đường truyền và độ căng của web - chỉ định phương pháp cắt và chất nền và chúng tôi khớp hình học.",
+          "Đặt hàng các loại dao thay thế riêng lẻ hoặc các cặp dao trên và dưới phù hợp với lỗ khoan, biên dạng và các chi tiết lắp đặt được thực hiện theo cách sắp xếp rạch hiện có của bạn.",
       },
     ],
-    dimensionLabels: {
-      col0: "Loại lưỡi / Ứng dụng",
-      col1: "Đường kính ngoài (mm)",
-      col2: "ID (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước cặp cắt tiêu chuẩn. Các lưỡi dao trên (đĩa) và dưới (rãnh đe) được cung cấp theo cặp phù hợp. Cấu hình OD / ID và rãnh tùy chỉnh theo yêu cầu.",
+    faqs: {
+      technical: [
+        {
+          question:
+            "Con dao thay thế nào phù hợp với máy cắt phim hoặc băng của tôi?",
+          answer:
+            "Xác định phương pháp cắt và vị trí dao trước tiên. Trạm cắt quay sử dụng các cạnh trên và dưới hợp tác; trạm cắt nghiền ấn máy cắt vào bề mặt đỡ. Tham chiếu đầu cặp, lỗ khoan, biên dạng cắt và kích thước trục thiết lập sự thay thế. Lưỡi cắt màng và dao xén băng là những tên mua phổ biến, nhưng cách bố trí cắt được lắp đặt sẽ quyết định bộ phận cần thiết.",
+        },
+        {
+          question:
+            "Khi nào nên ưu tiên khả năng chịu mài mòn trong việc lựa chọn dao cắt xẻ?",
+          answer:
+            "Khả năng chống mài mòn cao hơn đáng được xem xét khi lưỡi làm việc bị mòn dần theo thiết lập cắt rạch phù hợp. Trong trường hợp hư hỏng do sứt mẻ hoặc tiếp xúc chiếm ưu thế, quyết định về vật liệu cũng cần tính đến độ bền và khả năng hỗ trợ dao. So sánh lưỡi dao đã qua sử dụng, lưỡi dao đã qua xử lý và cặp dao hiện có trước khi chọn vật liệu cho đơn hàng thay thế.",
+        },
+        {
+          question: "Tại sao chất kết dính lại tích tụ trên dao cắt băng?",
+          answer:
+            "Chất kết dính có thể chuyển từ băng sang lưỡi dao trong quá trình tiếp xúc. Hình dạng lưỡi dao, diện tích tiếp xúc và độ hoàn thiện bề mặt ảnh hưởng đến mức độ tích tụ cặn dễ dàng. Kiểm tra nơi nó thu thập và so sánh góc xiên và bề mặt làm việc hiện tại với cấu trúc băng. Sau đó, có thể xem xét cấu hình phù hợp, bề mặt được đánh bóng hoặc lớp phủ tùy chọn cho vật liệu lưỡi và chất kết dính đó.",
+        },
+        {
+          question:
+            "Điều gì có thể gây ra hư hỏng cạnh trong cặp dao cắt rạch?",
+          answer:
+            "Sự tiếp xúc ngoài ý muốn giữa các cạnh dao trên và dưới trong quá trình ăn khớp có thể làm hỏng cặp rạch cắt. Kiểm tra cả hai cạnh, chuyển động ăn khớp của đầu cặp và vị trí dao được lắp đặt. So sánh hư hỏng cục bộ với sự hao mòn dần dần trước khi thay đổi vật liệu, để việc thay thế giải quyết được tình trạng quan sát được thay vì lặp lại sự cố tiếp xúc hoặc thiết lập.",
+        },
+        {
+          question:
+            "Độ dày lưỡi dao, lỗ khoan và chiều cao đĩa ảnh hưởng như thế nào đến độ vừa khít khi thay thế?",
+          answer:
+            "Lỗ khoan định vị con dao trên giá đỡ của nó, độ dày của lưỡi dao mô tả phần vật liệu và chiều cao đĩa mô tả hình dạng trục tổng thể của một con dao đĩa. Cùng với chiều rộng của vòng đáy và các chi tiết lắp đặt, các kích thước này xác định nơi giao nhau của các cạnh làm việc. Ghi lại chúng một cách riêng biệt khi thay dao vào giá đỡ hiện có.",
+        },
+        {
+          question: "Có nên thay cả dao xẻ trên và dao dưới không?",
+          answer:
+            "Bạn có thể yêu cầu thay thế một lần khi dao đối tiếp được giữ lại vẫn có thể sử dụng được và đã biết hình dạng của nó. Kiểm tra cả cạnh cắt, mặt lắp và đường kính làm việc. Đối với một cặp hoàn chỉnh, hãy xác định riêng các vị trí trên và dưới để có thể xem xét các kích thước và lựa chọn vật liệu của chúng cùng nhau, bao gồm mọi lần mài lại trước đó.",
+        },
+        {
+          question:
+            "Sureay có thể tạo dao xén màng tùy chỉnh từ bản vẽ hoặc mẫu không?",
+          answer:
+            "Đúng. Sureay có thể cung cấp các lỗ khoan, phần lưỡi cắt, tính năng lắp đặt và biên dạng cắt tùy chỉnh. Một bản vẽ thiết lập các kích thước mới dự định; mẫu bị mòn giúp xác định hình dạng được lắp đặt và bất kỳ vật liệu nào bị mất trong quá trình sử dụng hoặc mài sắc. Bao gồm các chi tiết về dao ghép hoặc đe cho một cặp làm việc và nêu rõ số lượng cần thiết cho mỗi cấu hình.",
+        },
+      ],
+      company: [],
     },
-    standardDimensions: [
-      {
-        spec: "Top Blade — Tidland / Atlas",
-        od: "75",
-        id: "25.4",
-        thickness: "1.0 / 1.2",
-      },
-      {
-        spec: "Bottom Anvil — Tidland / Atlas",
-        od: "70",
-        id: "25.4",
-        thickness: "8 / 10",
-      },
-      {
-        spec: "Top Blade — Kampf / Dusenbery",
-        od: "100",
-        id: "32",
-        thickness: "1.2 / 1.5",
-      },
-      {
-        spec: "Bottom Anvil — Kampf / Dusenbery",
-        od: "80",
-        id: "60",
-        thickness: "16 / 20",
-      },
-      {
-        spec: "Top Blade — Goebel / BHS / Agnati",
-        od: "118",
-        id: "80",
-        thickness: "1.2 / 2.0",
-      },
-      {
-        spec: "Bottom Anvil — Goebel / BHS / Agnati",
-        od: "100",
-        id: "70",
-        thickness: "16 / 20",
-      },
-    ],
     relatedBladeIds: [
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
       "bottom-grooved-anvil-knives",
+      "rotary-slitter-knives-paper",
       "nonwoven-slitter-knives",
     ],
-    offers: {
-      lowPrice: 15,
-      highPrice: 150,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Tôi nên chỉ định dung sai độ dày bao nhiêu cho các lưỡi dao trên ngăn xếp nhiều dao?",
-          answer:
-            "Đối với việc cắt cắt các màng và lá linh hoạt, chỉ định dung sai độ dày ± 0,002mm và 20,02mm T.I.R. hết. Sai số 0,005mm trên mỗi lưỡi dao sẽ kết hợp với chồng 12 con dao, tạo ra độ lệch chiều rộng khe nhìn thấy được và độ căng của màng tăng đột biến. Chúng tôi mài từng lưỡi dao theo dung sai này và xác minh trên CMM trước khi gửi đi.",
-        },
-        {
-          question:
-            "'Tỷ lệ vượt tốc độ' của dao cắt trên/dưới là gì và tại sao nó lại quan trọng?",
-          answer:
-            "Tỷ lệ quá tốc độ là sự chênh lệch tốc độ quay có chủ ý giữa trục dao trên và trục đe dưới—thường được đặt ở mức 2–5% so với tốc độ web. Sự vi sai này tạo ra tác động cắt vi mô tại điểm cắt, tạo ra cạnh sạch hơn và giảm sự tích tụ nhiệt so với cắt tiếp tuyến thuần túy. Ở tỷ lệ vượt tốc độ cao hơn, chất lượng cắt được cải thiện nhưng độ mòn của cạnh tăng lên; ở mức chênh lệch bằng 0, lưỡi dao hoạt động giống như một máy cắt nghiền. OEM máy xén của bạn chỉ định tỷ lệ vượt tốc độ được thiết kế; chúng tôi cung cấp các cặp phù hợp được tối ưu hóa cho cài đặt đó.",
-        },
-        {
-          question:
-            "Làm cách nào để ngăn chặn sự chuyển màng dính và tích tụ trên các mặt lưỡi cắt?",
-          answer:
-            "Chất kết dính tích tụ trên mặt lưỡi dao làm tăng ma sát, tăng nhiệt độ màng và gây ô nhiễm khi vận chuyển vật liệu. Chúng tôi cung cấp lớp phủ PVD TiN (titan nitride) và DLC (cacbon giống kim cương) giúp giảm độ bám dính bề mặt tới 80%, kéo dài khoảng thời gian chạy sạch trên các ứng dụng rạch băng dính và băng dính nhạy áp.",
-        },
-        {
-          question:
-            "Khi nào tôi nên nâng cấp từ thép D2 lên thép luyện kim bột (PM) để cắt màng linh hoạt?",
-          answer:
-            "Thép PM (ASP23, ASP52) được khuyên dùng khi rạch các chất nền linh hoạt có độ mài mòn cao như màng đóng gói được gia cố bằng sợi thủy tinh, lớp lót nhả phủ silica hoặc màng chắn chứa đầy gốm. Những vật liệu này vượt quá giới hạn mài mòn của D2 trong một lần sản xuất do các hạt độn khoáng cứng. Các loại PM mang lại sự phân bố cacbua đồng đều và tuổi thọ lưỡi dài hơn 50–80% trên các chất nền linh hoạt có độ mài mòn cao.",
-        },
-        {
-          question:
-            "Lớp phủ bề mặt nào là tốt nhất để cắt băng dính nhạy áp lực ở tốc độ cao?",
-          answer:
-            "Lớp phủ PVD DLC (cacbon giống kim cương) là thông số kỹ thuật hàng đầu dành cho băng keo xốp phủ hai lớp và rãnh chuyển keo. Nó làm giảm góc tiếp xúc trên mặt lưỡi dao khoảng 35° so với D2 không phủ, duy trì độ trượt ổn định trong suốt 8–12 giờ sản xuất mà không cần dừng vệ sinh. TiN có hiệu quả đối với băng che một mặt và loại nhãn dính nhẹ với chi phí lớp phủ thấp hơn.",
-        },
-        {
-          question:
-            "Sureay có thể cung cấp các cặp dao trên và dưới phù hợp đã được xác minh theo độ hở cắt được chỉ định không?",
-          answer:
-            "Đúng. Các cặp cắt phù hợp—lưỡi trên có rãnh và lưỡi dưới đe có rãnh—được cung cấp khoảng hở giữa dao với dao đã được xác minh trước theo thông số kỹ thuật nền của bạn. Chúng tôi ghi lại OD, ID, độ dày và độ hở cắt được thiết kế cho từng cặp khớp trên bảng dữ liệu kỹ thuật đi kèm với dụng cụ, cho phép người vận hành dây chuyền sao chép cài đặt độ hở trong mỗi lần lắp đặt lại.",
-        },
-        {
-          question:
-            "Nên sử dụng hình dạng cạnh lưỡi cắt nào để rạch vải không dệt nung chảy mà không bị sờn sợi?",
-          answer:
-            "Đối với vải không dệt Meltblown và Spunbond (8–80 GSM), chỉ định góc nghiêng dương (15°–20°) với độ hoàn thiện bề mặt Ra ≤0,4μm. Hình học này cắt xuyên qua cấu trúc sợi lỏng lẻo một cách sạch sẽ mà không bị dịch chuyển sợi sang bên gây ra các cạnh bị sờn. Đối với sợi tan chảy rất nhẹ (<15 GSM), lớp phủ ESD (phóng tĩnh điện) tùy chọn sẽ ngăn chặn lực hút sợi tĩnh điện lên mặt lưỡi dao.",
-        },
-      ],
-      company: [
-        {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
-        },
-        {
-          question:
-            "Điều gì làm cho xử lý nhiệt của Sureay khác biệt so với các lựa chọn thay thế rẻ hơn?",
-          answer:
-            "Không giống như quá trình làm nguội tiêu chuẩn, mỗi lưỡi dao Sureay đều trải qua quá trình xử lý đông lạnh sâu sau khi đông cứng chân không. Điều này biến austenite còn lại thành martensite, tăng khả năng chống mài mòn lên tới 40% và đảm bảo độ cứng đồng đều trên toàn bộ lưỡi cắt.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question:
-            "Sureay có những chứng chỉ chất lượng nào và bạn có thể cung cấp báo cáo thử nghiệm vật liệu không?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước và chứng chỉ lô xử lý nhiệt. Đối với chứng chỉ OEM, báo cáo chiều CMM đầy đủ và chứng chỉ nhà máy thép có sẵn theo yêu cầu.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 lưỡi) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ của cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc. Đối với các cấu hình tùy chỉnh, các mẫu xác nhận kích thước được tạo ra trước khi bắt đầu sản xuất hoàn chỉnh—không có cam kết về dụng cụ cho đến khi sự phù hợp được xác nhận.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Nguồn dao cắt giấy thay thế cho máy cuộn giấy của bạn, với các loại dao có bề mặt phẳng hoặc dạng đĩa và các cấu hình đáy phù hợp. Chia sẻ bản vẽ hoặc mẫu và loại giấy của bạn với Sureay để nhận được báo giá phù hợp với cặp cắt của bạn.",
     id: "rotary-slitter-knives-paper",
-    name: "Dao xén giấy",
-    fullName: "Dao xén giấy & khăn giấy cho dây chuyền chuyển đổi tốc độ cao",
+    seoDescription:
+      "Lưỡi cắt giấy dùng cho Khăn giấy , giấy kraft và giấy tráng. Ghép nối các loại dao có đĩa hoặc dao có đáy phẳng với các loại dao có đáy phù hợp được làm bằng thép công cụ hoặc kết cấu có đầu bằng cacbua.",
+    name: "Dao xẻ dọc giấy",
+    fullName: "Dao xẻ dọc giấy tissue, giấy kraft và giấy tráng phủ",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "Dao xén giấy",
-    image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-    badge: "Chuyển đổi giấy",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-02.webp",
-      "/images/products/rotary-slitter-knives/paper-score-slitting-line.webp",
-    ],
+    categoryDisplay: "Dao xẻ dọc giấy",
+    image: "/images/products/slitter-detail/rotary-slitter-knives-paper.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Dao xén giấy được mài chuyên biệt cho xenlulo, không phải dụng cụ cắt màng nhựa được tận dụng lại. Các cặp dao cắt trên/dưới phù hợp bằng thép D2, M2 HSS hoặc 52100, đạt dung sai ±0,002mm về độ dày và độ đảo ≤0,02mm, với độ hở cắt được cài đặt sẵn theo chất nền bạn đang chạy: 0,02–0,05mm cho giấy lụa, 0,05–0,10mm cho giấy kraft. Đạt tốc độ lên đến 600 m/phút trên dây chuyền giấy lụa. Hãy gửi bản vẽ, một lưỡi dao đã mòn hoặc chỉ cần model máy của bạn, chúng tôi sẽ xác nhận độ vừa vặn.",
-    fullDescription:
-      "Dây chuyền chuyển đổi giấy yêu cầu dao cắt giấy mang lại những đường cắt nhất quán, không có bụi sợi trong suốt quá trình sản xuất nhiều ca. dao cắt rotary cấp giấy Sureay được mài chính xác từ thép công cụ D2 (đối với giấy và bìa tiêu chuẩn) hoặc thép tốc độ cao M2 (đối với giấy lụa tốc độ cao và giấy đặc biệt) để đạt được dung sai kích thước chính xác giúp ngăn lưỡi dao lắc lư và đảm bảo chất lượng khe đồng đều.\n\n## Luyện kim dành riêng cho giấy\n\nKhông giống như rạch màng nhựa hoặc lá kim loại, giấy chuyển đổi khiến mép lưỡi dao bị mài mòn liên tục từ sợi xenlulo, chất hồ và chất độn khoáng (canxi cacbonat, cao lanh). Chúng tôi chọn hợp kim lưỡi đặc biệt cho các ứng dụng giấy:\n\n**Thép công cụ D2 (HRC 60–62):** Loại tiêu chuẩn dành cho giấy kraft, bìa hộp và tôn chuyển đổi. Hàm lượng crom 12% mang lại khả năng chống mài mòn tuyệt vời chống lại các sợi giàu lignin và các hợp chất độn khoáng.\n\n**Thép tốc độ cao M2 (HRC 62–64):** Được ưu tiên để chuyển đổi giấy vệ sinh và giấy vệ sinh tốc độ cao khi tốc độ đường truyền vượt quá 400 m/phút. Molypden và hợp kim cacbua vonfram duy trì hình dạng cạnh dưới áp suất nhiệt khi cắt tốc độ cực cao.\n\n**Thép chịu lực 52100 (HRC 58–60):** Tùy chọn tiết kiệm chi phí cho giấy in báo, giấy tạp chí tiêu chuẩn và chuyển đổi sợi tái chế cấp thấp khi tốc độ mài mòn ở mức vừa phải.\n\n**Cacbua vonfram (Nguyên khối hoặc đầu cacbua):** Lựa chọn nâng cấp cho giấy tráng có hàm lượng tro cao, giấy mỹ thuật và bìa các tông sóng, nơi chất độn khoáng làm mòn nhanh cạnh thép giữa các lần thay dao. Cung cấp dạng cacbua nguyên khối trên các lưỡi dao đường kính nhỏ hơn, hoặc đầu cacbua — một cạnh cacbua được hàn vào thân thép — trên các lưỡi dao đường kính lớn hơn, nơi thân dao cacbua nguyên khối hoàn toàn không hiệu quả về chi phí.\n\n## Cắt so với Cắt nghiền giấy\n\nChuyển đổi giấy sử dụng hai phương pháp rạch chính:\n\n**Rạch cắt (Cặp dao trên/dưới):** Hai dao tròn quay theo hướng ngược nhau tạo ra hành động cắt giống như cắt kéo. Đây là phương pháp tiêu chuẩn cho giấy tráng, khăn giấy và các loại bao bì nhẹ, trong đó phải giảm thiểu lực kéo sợi và tạo bụi. Chúng tôi cung cấp các cặp phù hợp với độ hở cắt được kiểm soát (thường là 0,02–0,05mm đối với khăn giấy, 0,05–0,10mm đối với giấy kraft).\n\n**Cắt nghiền (Dao chống đe):** Một con dao tròn cứng sẽ nghiền nát mạng giấy dựa vào cuộn đe có rãnh. Được sử dụng cho các tông sóng nặng và bao bì nhiều lớp mà việc bảo trì độ hở cắt là không thực tế. Lưỡi đe (vị trí phía dưới) được sản xuất với hình dạng nhiều rãnh có tác dụng nén và bẻ gãy các sợi giấy.\n\n## Hiệu suất không có bụi sợi\n\nBụi sợi sinh ra ở mép khe làm ô nhiễm các trạm cuộn lại của nhà máy giấy, làm giảm chất lượng sản phẩm trên các loại giấy vệ sinh và giấy vệ sinh, đồng thời gây ra các điểm dừng làm sạch ngoài kế hoạch. Dao xén cấp giấy của chúng tôi được mài chính xác đến độ hoàn thiện bề mặt Ra 0,2–0,4μm với các góc vát cạnh được kiểm soát giúp cắt sạch qua các bó sợi xenlulo thay vì xé hoặc kéo. Điều này giúp giảm bụi sợi trong không khí khoảng 60–70% so với các loại dao công nghiệp tiêu chuẩn.",
+      "Dao xén giấy thay thế cho Khăn giấy , giấy kraft và giấy tráng. Dao có đầu dạng đĩa hoặc dẹt và dao có đáy bằng thép hoặc cacbua, được chế tạo theo hình vẽ.",
     link: "/products/rotary-slitter-knives-paper",
-    isFeatured: false,
-    compatibleMachines: [
-      "Atlas Converting",
-      "Tidland",
-      "Parkinson",
-      "Kampf",
-      "Laem System",
-      "Euromac",
-      "Goebel IMS",
-      "Fabio Perini",
-      "Körber",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 Tool Steel, M2 HSS, 52100 Bearing Steel, Tungsten Carbide",
+        label: "Kích cỡ",
+        value: "OD đáy 62–203 mm · OD đáy 70–300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 58–64 (steel) / HRA 90–92 (carbide)",
+        label: "Vật liệu",
+        value: "Cấu trúc 52100, D2 , M2 , ASP23 , CPM 10V hoặc cacbua",
       },
       {
-        label: "Cutting Styles",
-        value: "Shear Slitting (matched pairs), Crush Cutting (anvil pairs)",
+        label: "Ứng dụng",
+        value: "Khăn giấy , giấy kraft, giấy tráng và tái chế",
       },
       {
-        label: "Surface Finish",
-        value: "Ra 0.2–0.4μm (precision ground)",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.002mm | Runout: ≤0.02mm",
-      },
-      {
-        label: "Application",
+        label: "Cách Lắp",
         value:
-          "Tissue & Sanitary Paper, Kraft Paper, Corrugated Board, Coated Papers, Newsprint",
+          "Dao trên gắn trên trục hoặc mặt bích phù hợp và mặt cắt trên dao dưới",
       },
+      {
+        label: "độ cứng",
+        value: "58–64 HRC cho dao thép; 90–92 HRA cho các cạnh cacbua",
+      },
+      {
+        label: "Bề mặt hoàn thiện",
+        value: "Mặt được mài chính xác, Ra 0,2–0,4 μm",
+      },
+      {
+        label: "Dung sai độ dày",
+        value: "±0.002 mm",
+      },
+      {
+        label: "hết",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Kiểu cắt",
+        value:
+          "Cắt rạch bằng dao trên và dưới phù hợp hoặc cắt nghiền bằng cặp đe",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao xén giấy Khăn giấy & Kraft",
+      sizeRange: "OD đáy 62–203 mm · OD đáy 70–300 mm",
+      heroAlt: "Cặp dao rạch giấy hình tròn có lưỡi trên và vòng dưới",
+      specificationImage: {
+        src: "/images/products/slitter-detail/rotary-slitter-knives-paper-detail.webp",
+        alt: "Dao xén giấy hiển thị mặt cắt đất và lỗ khoan ở giữa",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Dao hàng đầu",
+          title: "Dao hàng đầu",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Hồ sơ hoặc tài liệu tham khảo",
+            "Chiều cao đĩa",
+          ],
+          rows: [
+            ["SR001201", "90 × 60 × 1.2 mm", "món ăn", "Để vẽ"],
+            ["SR001202", "130 × 80 × 1.5 mm", "món ăn", "Để vẽ"],
+            [
+              "SR001203",
+              "150 × 80 × 2.5 mm",
+              "Dished / Tidland Loại II",
+              "Để vẽ",
+            ],
+            ["SR001204", "180 × 90 × 3.5 mm", "món ăn", "Để vẽ"],
+            [
+              "SR001205",
+              "200 × 80 × 4.0 mm",
+              "Dished / Tidland Loại III",
+              "9.25 mm",
+            ],
+            ["SR001206", "203 × 90 × 4.0 mm", "Bielomatik 701.115", "Để vẽ"],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Dao đáy",
+          title: "Dao đáy",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Gắn hoặc cạnh",
+            "Thẩm quyền giải quyết",
+          ],
+          rows: [
+            ["SR001211", "105 × 80 × 15 mm", "mặt bích", "Chuỗi chiều DIENES"],
+            ["SR001212", "130 × 90 × 20 mm", "mặt bích", "Chuỗi chiều DIENES"],
+            ["SR001213", "190 × 138 × 15 mm", "Cạnh đôi", "Tidland TID131393"],
+            ["SR001214", "130 × 100 × 30 mm", "Cạnh đôi", "Tidland TID133503"],
+            ["SR001215", "250 × 188 × 15 mm", "Cạnh đôi", "Tidland TID131395"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Dao xén giấy bổ sung",
+          title: "Dao xén giấy bổ sung",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Loại dao / Tham chiếu nền tảng",
+          ],
+          rows: [
+            ["SR001807", "75 × 45 × 1.0 / 1.2 mm", "Dao trên (cắt kiểu xén)"],
+            ["SR001808", "70 × 45 × 10 / 8 mm", "Đe dưới"],
+            ["SR001809", "100 × 32 × 1.2 mm", "Dao trên (cắt kiểu xén)"],
+            ["SR001810", "80 × 60 × 20 / 16 mm", "Đe dưới"],
+            ["SR001811", "150 × 80 × 1.5 mm", "Dao trên (giấy tissue)"],
+            ["SR001812", "108 × 80 × 20 / 18 mm", "Đe dưới"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "OD đáy 62–203 mm · OD đáy 70–300 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "Cấu trúc 52100, D2 , M2 , ASP23 , CPM 10V hoặc cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Khăn giấy , giấy kraft, giấy tráng và tái chế",
+        },
+        {
+          label: "Cách Lắp",
+          value:
+            "Dao trên gắn trên trục hoặc mặt bích phù hợp và mặt cắt trên dao dưới",
+        },
+        {
+          label: "độ cứng",
+          value: "58–64 HRC cho dao thép; 90–92 HRA cho các cạnh cacbua",
+        },
+        {
+          label: "Bề mặt hoàn thiện",
+          value: "Mặt được mài chính xác, Ra 0,2–0,4 μm",
+        },
+        {
+          label: "Dung sai độ dày",
+          value: "±0.002 mm",
+        },
+        {
+          label: "hết",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Kiểu cắt",
+          value:
+            "Cắt rạch bằng dao trên và dưới phù hợp hoặc cắt nghiền bằng cặp đe",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Valmet",
+      "Voith",
+      "Tidland",
+      "Jagenberg",
+      "Bielomatik",
+      "E.C.H. Will",
     ],
     components: [
       {
-        id: "paper-metallurgy",
-        tag: "KHOA HỌC VẬT LIỆU",
-        title: "Dao xén giấy nên sử dụng loại thép nào?",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Tùy chọn vật liệu để chuyển đổi giấy",
         description:
-          "Sợi giấy có chứa chất độn khoáng có tính mài mòn (canxi cacbonat, cao lanh, titan dioxide) làm xỉn màu nhanh chóng các loại thép làm dao tiêu chuẩn. Các loại D2 và M2 HSS của chúng tôi được xử lý nhiệt đặc biệt cho các ứng dụng chuyển đổi giấy, mang lại tuổi thọ cạnh dài hơn 40–60% so với dao xén đa năng trên nền giấy được tráng và phủ đầy.",
+          "Các tùy chọn thép công cụ, HSS , PM-thép và lưỡi cacbua mang đến cho bộ chuyển đổi giấy các lựa chọn vật liệu cho các loại Khăn giấy , giấy kraft, có tráng phủ và tái chế.",
       },
       {
-        id: "shear-clearance",
-        tag: "CẮT CHÍNH XÁC",
-        title: "Độ hở cắt nào ngăn bụi sợi ở mép khe?",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Độ dày mặt đất chính xác và mặt cắt",
         description:
-          "Các cặp cắt trên/dưới phù hợp được xác minh trước theo thông số kỹ thuật về độ hở cấp khăn giấy (0,02–0,05mm đối với giấy siêu mỏng, 0,05–0,10mm đối với giấy kraft). Khoảng hở được kiểm soát này cắt sạch các bó sợi xenlulo mà không làm rách hoặc tạo ra bụi sợi trong không khí làm nhiễm bẩn các trạm tua lại và làm giảm chất lượng sản phẩm.",
+          "Dao xén giấy có thể được mài chính xác theo độ dày và độ hoàn thiện bề mặt làm việc được chỉ định của bạn cho vị trí trên cùng hoặc dưới cùng trong cặp cắt.",
       },
       {
-        id: "bore-locking-options",
-        tag: "PHÙ HỢP MÁY",
-        title: "Có những tùy chọn lỗ khoan, khóa và góc vát nào?",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Bộ dao trên và dưới tùy chỉnh",
         description:
-          "Dao xén giấy được cung cấp với lỗ khoan trơn, có rãnh then hoặc kiểu lưỡi lê để khớp với trục của bạn, và được khóa cố định bằng rãnh then, vít định vị, lệch tâm có then hoặc lệch tâm không then — tùy theo loại máy xén hoặc máy cuộn lại của bạn đang sử dụng. Lưỡi trên được mài với biên dạng lõm vát đơn ở góc 15°–20°, có thể cung cấp thêm vát kép (hai giai đoạn) hoặc mài lõm mặt sau ở những nơi độ bền cạnh quan trọng hơn góc tiếp cận mỏng như dao cạo. Hãy gửi cho chúng tôi bản vẽ dao hiện tại hoặc bản vẽ trục của bạn, chúng tôi sẽ xác nhận lỗ khoan, cơ chế khóa và góc vát trước khi cắt thép, để phần thay thế lắp vừa, khóa chặt và cắt chính xác như dao gốc.",
+          "Các lỗ khoan tùy chỉnh, biên dạng đĩa, mặt bích dao đáy và mặt cắt hỗ trợ thay thế dao đơn và bộ hoàn chỉnh cho máy cuộn giấy hiện có.",
+        relatedBladeIds: ["slitter-rewinder-bottom-knives"],
       },
     ],
-    dimensionLabels: {
-      col0: "Loại lưỡi",
-      col1: "Đường kính ngoài",
-      col2: "Đường kính trong",
-      col3: "độ dày",
-      caption:
-        "* Kích thước tiêu chuẩn để chuyển đổi giấy. Lưỡi trên (biên dạng lõm để rạch cắt) và lưỡi dưới (đe có rãnh để cắt nghiền). Chúng tôi sản xuất dao xén giấy và lưỡi đe với đường kính ngoài khoảng 50–320mm, lỗ khoan 20–100mm và độ dày 0,8–20mm (từ lưỡi trên dạng lõm mỏng đến lưỡi đe có rãnh nặng) — ngoài ba bộ kích thước trên, hãy gửi model máy của bạn và chúng tôi sẽ xác nhận kích thước gần nhất hoặc gia công theo đúng kích thước của bạn.",
-    },
-    standardDimensions: [
-      {
-        spec: "Top Blade (Shear)",
-        od: "75 mm",
-        id: "45 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "70 mm",
-        id: "45 mm",
-        thickness: "10 / 8 mm",
-      },
-      {
-        spec: "Top Blade (Shear)",
-        od: "100 mm",
-        id: "32 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "80 mm",
-        id: "60 mm",
-        thickness: "20 / 16 mm",
-      },
-      {
-        spec: "Top Blade (Tissue)",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        spec: "Bottom Anvil",
-        od: "108 mm",
-        id: "80 mm",
-        thickness: "20 / 18 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "tissue-log-saw-blades",
-      "corrugated-slitter-scorer-blades",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 280,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Tôi nên sử dụng loại vật liệu nào để chuyển đổi khăn giấy tốc độ cao ở tốc độ 500 m/phút?",
+            "Sureay có thể tái tạo dao rạch giấy cho máy cuộn giấy hiện tại của tôi không?",
           answer:
-            "Chỉ định thép tốc độ cao M2 ở HRC 62–64 để chuyển đổi khăn giấy trên 400 m/phút. Molypden và hợp kim cacbua vonfram trong M2 duy trì hình dạng cạnh trong chu kỳ nhiệt được tạo ra bằng cách cắt tốc độ cực cao, mang lại tuổi thọ chiến dịch dài hơn 2–3× so với D2 trên các loại khăn giấy nhẹ (12–18 GSM).",
-        },
-        {
-          question: "Làm cách nào để ngăn ngừa ô nhiễm bụi sợi ở mép khe?",
-          answer:
-            "Bụi sợi chủ yếu là do độ hở cắt quá mức (>0,10 mm trên khăn giấy) hoặc bề mặt lưỡi thô (Ra >0,6μm) làm rách các bó sợi thay vì cắt sạch. Chỉ định các cặp cắt phù hợp với độ hở đã được xác minh trước (0,02–0,05mm đối với khăn giấy, 0,05–0,10mm đối với giấy kraft) và độ hoàn thiện bề mặt Ra ≤0,4μm. Điều này giúp giảm 60–70% bụi trong không khí so với các loại dao công nghiệp tiêu chuẩn.",
+            "Đúng. Một bản vẽ hoặc mẫu có thể thiết lập lỗ khoan, biên dạng và cách bố trí lắp đặt cho dao trên hoặc dưới thay thế. Bao gồm loại giấy và kích thước dao ăn khớp. Tham chiếu bộ phận ban đầu giúp phân biệt các kích thước mới dự định với mẫu bị mòn. Đối với các cụm mặt bích, cốc hoặc vòng có thể thay thế, hãy xem [Dao đáy máy cuộn cuộn giấy](/products/slitter-rewinder-bottom-knives) .",
         },
         {
           question:
-            "Tôi có nên sử dụng phương pháp cắt xén hoặc cắt nghiền để chuyển đổi tấm tôn?",
+            "Khi nào thì giấy được phủ hoặc phủ có phù hợp với dao cắt HSS hoặc cacbua?",
           answer:
-            "Đối với các tông sóng (sáo B/C/E), cắt nghiền dựa vào cuộn đe có rãnh là phương pháp tiêu chuẩn. Lưỡi đe nén và bẻ gãy các sợi giấy một cách sạch sẽ mà không cần bảo trì độ hở cắt chính xác. Rạch cắt được dành riêng cho giấy và khăn giấy có tráng nhẹ, nơi phải giảm thiểu lực kéo của sợi. Đối với các ứng dụng tôn trên 200 m/phút, hãy chỉ định các lưỡi đe hợp kim cacbua vonfram để chống mài mòn do nén từ các tấm ván nhiều lớp.",
+            "Hãy cân nhắc sử dụng vật liệu lưỡi làm việc khác khi con dao hiện tại có dấu hiệu mòn dần trên loại giấy thực tế. Hàm lượng lớp phủ hoặc chất độn, dao ăn khớp còn sót lại và vết sứt mẻ được quan sát đều ảnh hưởng đến quyết định đó. So sánh khả năng chống mài mòn với hoạt động của cạnh trong cặp hiện có, việc duy trì độ ổn định khi lắp và thiết lập rạch trong đánh giá.",
         },
         {
           question:
-            "Dao xén giấy nên được mài lại bao lâu một lần và có thể mài lại bao nhiêu lần?",
+            "Nguyên nhân gây ra bụi giấy hoặc mép giấy bị rách trong quá trình rạch?",
           answer:
-            "Dao xén giấy trên dây chuyền chuyển đổi khăn giấy (400–600 m/phút) thường yêu cầu mài lại sau mỗi 40–60 giờ hoạt động do tốc độ cắt cao và chất độn khoáng có tính mài mòn trong giấy lụa. Đối với chuyển đổi giấy và bìa kraft (200–300 m/phút), thời gian nghiền lại kéo dài đến 80–120 giờ. Dao M2 HSS và D2 ​​có thể được mài lại 4–6 lần trước khi OD giảm xuống dưới đường kính hoạt động tối thiểu. Chúng tôi cung cấp dịch vụ mài lại bao gồm xác minh lại độ cứng và kiểm tra kích thước CMM.",
+            "Cấu trúc giấy, tình trạng dao ăn khớp, độ ổn định của đầu cặp và thiết lập rạch có thể ảnh hưởng đến cạnh ngay cả khi con dao trên cùng sắc bén. Kiểm tra cả hai cạnh làm việc và so sánh mẫu có khe ở cài đặt sản xuất bình thường. Việc ghi lại loại giấy và cài đặt giúp phân biệt những thay đổi về vật liệu hoặc cách bố trí do độ mòn của cặp dao.",
         },
         {
           question:
-            "Điều gì gây ra chất lượng mép khe không đồng đều trên toàn bộ chiều rộng của màng giấy?",
+            "Dao xén giấy trên và dưới có phải thay thế cùng nhau không?",
           answer:
-            "Chất lượng khe không đồng đều (cắt sạch ở một bên, kéo sợi ở bên kia) cho thấy việc lắp lưỡi dao không đồng đều hoặc độ giãn nở nhiệt chênh lệch trên toàn bộ trục. Xác minh rằng tất cả các dao trên đầu cặp dao đều được mài đến dung sai độ dày ±0,002 mm và độ lệch trục trục đầu cặp dao là 0,02 mm T.I.R. Có thể giảm thiểu sự giãn nở nhiệt bằng cách sử dụng phương pháp luyện kim phù hợp (tất cả D2 hoặc tất cả M2) trên toàn bộ bộ dao, đảm bảo hệ số giãn nở nhiệt đồng đều trong quá trình vận hành tốc độ cao.",
+            "Chúng có thể được đặt hàng riêng khi bộ phận được giữ lại ở tình trạng phù hợp và đã biết hình dạng làm việc. Kiểm tra mặt cắt phía dưới cũng như cạnh trên. Nếu một trong hai con dao đã được mài lại, hãy xác nhận các kích thước còn lại của nó trước khi chọn một con dao thay thế hoặc đặt mua một cặp hoàn chỉnh.",
+        },
+        {
+          question: "Dao đĩa, dao trên và dao nam có giống nhau không?",
+          answer:
+            "Những cái tên này thường đề cập đến phần trên của cặp rạch cắt. Dished mô tả hình dạng trục, trong khi top và male mô tả vị trí của dao. Dao đầu phẳng cũng tồn tại. So sánh biên dạng thực tế, cách sắp xếp lắp đặt và mối quan hệ với dao đáy để xác định vật thay thế chính xác theo các điều khoản mua hàng này.",
+        },
+        {
+          question:
+            "Tại sao độ dày lưỡi dao và chiều cao đĩa được liệt kê riêng?",
+          answer:
+            "Độ dày lưỡi đo phần vật liệu; chiều cao đĩa đo hình dạng trục tổng thể của dao. Hai con dao đĩa có thể có chung đường kính và lỗ khoan bên ngoài nhưng vị trí các cạnh cắt của chúng khác nhau. Việc giữ riêng các kích thước này cho phép vật thay thế khớp với cách bố trí đầu cặp và dao đáy hiện tại trong khi vẫn giữ được vị trí lưỡi dao như dự định.",
+        },
+        {
+          question: "Khi nào nên mài lại hoặc thay thế dao xén giấy?",
+          answer:
+            "Việc mài lại là phù hợp khi hình dạng cắt bị mòn có thể được phục hồi trong phạm vi kích thước cho phép của dao. Kiểm tra các cạnh, bề mặt làm việc và mối liên hệ với dao ghép nối trước khi quyết định. Các yêu cầu về bản vẽ dao và máy xác định hình dạng còn lại cho phép. Việc thay thế là phù hợp khi hư hỏng hoặc mất kích thước khiến hình học đó không thể được khôi phục.",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay có thể cung cấp dao tương thích với Atlas Converting hoặc máy xén/cuộn cuộn Kampf hiện có của chúng tôi không?",
-          answer:
-            "Đúng. Gửi cho chúng tôi mẫu dao hoặc số kiểu máy hiện tại của bạn. Chúng tôi sẽ xác nhận OD, ID, cấu hình lỗ khoan và độ dày lưỡi cắt, đồng thời cung cấp dao thay thế trực tiếp được sản xuất theo thông số kỹ thuật OEM. Các mẫu rãnh tùy chỉnh cho cuộn đe có sẵn cho các ứng dụng chuyển đổi tôn và ván cụ thể.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 lưỡi) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ của cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc. Đối với các cấu hình tùy chỉnh, các mẫu xác nhận kích thước được tạo ra trước khi bắt đầu sản xuất hoàn chỉnh—không có cam kết về dụng cụ cho đến khi sự phù hợp được xác nhận.",
-        },
-      ],
+      company: [],
     },
-    steelGrades: {
-      intro:
-        "Sợi giấy làm mòn lưỡi dao theo cách khác với màng nhựa hoặc lá kim loại — tải trọng mài mòn đến từ chất độn khoáng trong nguyên liệu, chứ không phải từ chính sợi giấy. Các loại thép dưới đây bao gồm phạm vi mà chúng tôi báo giá cho giấy, giấy lụa và bìa.",
-      rows: [
-        {
-          grade: "D2 Tool Steel",
-          hardness: "HRC 58–61",
-          bestFor:
-            "Giấy kraft tiêu chuẩn, bìa hộp và tôn chuyển đổi — loại thép giấy mặc định của chúng tôi.",
-          tradeoff:
-            "Giá trị tổng thể tốt; tuổi thọ cạnh giảm nhanh hơn so với M2 hoặc cacbua trên vật liệu có độ độn hoặc tráng phủ dày.",
-        },
-        {
-          grade: "M2 High-Speed Steel",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Giấy lụa và giấy vệ sinh tốc độ cao trên 400 m/phút, nơi cạnh dao phải giữ được hình học dưới chu kỳ nhiệt.",
-          tradeoff:
-            "Chi phí cao hơn D2; chu kỳ mài lại vẫn ngắn hơn so với cacbua trên nguyên liệu có tính mài mòn.",
-        },
-        {
-          grade: "52100 Bearing Steel",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Giấy in báo tiêu chuẩn, giấy tạp chí và sợi tái chế cấp thấp, nơi tốc độ mài mòn ở mức vừa phải.",
-          tradeoff:
-            "Khả năng chống mài mòn thấp hơn D2 trên vật liệu có độn hoặc tráng phủ — tốt nhất nên dành cho nguyên liệu sạch hơn.",
-        },
-        {
-          grade: "Cacbua vonfram",
-          hardness: "HRA 90–92",
-          bestFor:
-            "Giấy tráng có hàm lượng tro cao, giấy mỹ thuật và bìa các tông sóng, nơi chất độn khoáng làm mòn nhanh cạnh thép giữa các lần thay dao. Có dạng nguyên khối hoặc đầu cacbua.",
-          tradeoff:
-            "Chi phí đơn vị cao nhất và giòn hơn khi chịu va đập so với thép công cụ — cần tốc độ cấp liệu ổn định và căn chỉnh chính xác để tránh sứt mẻ cạnh.",
-        },
-      ],
-      outro:
-        "Dao xén giấy dạng nguyên khối và đầu cacbua đều có sẵn. Hãy cho chúng tôi biết loại sợi bạn sử dụng (nguyên chất, tái chế, tráng phủ hoặc có độn), tốc độ dây chuyền và chu kỳ mài lại hiện tại, chúng tôi sẽ xác nhận loại thép giúp giảm tổng chi phí trên mỗi lần cắt, chứ không chỉ giá niêm yết.",
-    },
-    disambiguation:
-      "Bạn đang xén phim, băng hoặc bao bì linh hoạt? Các loại dao đó có trên trang [Dao xén phim và băng](/products/rotary-slitter-knives) của chúng tôi. Trang này chỉ đề cập đến các chất nền giấy.",
-    categoryCardAnchorText: "Dao xén giấy — giấy lụa, kraft & giấy tráng",
+    relatedBladeIds: [
+      "slitter-rewinder-bottom-knives",
+      "groove-bottom-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Nhận các loại dao xẻ lá nhôm và đồng thay thế với chiều rộng, lỗ khoan và miếng đệm phù hợp tùy chỉnh cho cụm trục của bạn. Gửi cho Sureay bản vẽ và lịch trình chiều rộng khe của bạn để nhận báo giá về dụng cụ bạn cần.",
     id: "metal-foil-strip-slitter-knives",
-    name: "Máy cắt cuộn & dải",
-    fullName:
-      "Dao xén quay chính xác để rạch kim loại, cuộn và cắt lá khổ mỏng",
+    name: "Dao xẻ dọc lá đồng và lá nhôm",
+    fullName: "Dao xẻ dọc lá đồng và lá nhôm",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Dao cắt dải kim loại",
+    categoryDisplay: "Dao xẻ dọc lá đồng và lá nhôm",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-    badge: "Gia công kim loại",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-02.webp",
-    ],
+      "/images/products/slitter-detail/metal-foil-strip-slitter-knives-copper-aluminum.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Dao xẻ tròn có độ chính xác cao dành cho trung tâm dịch vụ kim loại và nhà máy cán nguội. Thép công cụ ASP23/ASP52 PM và được mài hợp kim cacbua vonfram rắn với dung sai độ dày nghiêm ngặt ±0,001mm. Được thiết kế để rạch dải và cuộn nhôm không có gờ, dải đồng, thép không gỉ và thép silicon định hướng dạng hạt.",
-    fullDescription:
-      "Cắt dải kim loại và lá kim loại chính xác đòi hỏi hiệu suất luyện kim và độ chính xác về kích thước vượt xa các ứng dụng cắt tiêu chuẩn. Khi xử lý các kim loại có kích thước mỏng (0,01 mm đến 1,5 mm), ngay cả một khuyết tật cực nhỏ của lưỡi dao hoặc độ lệch độ dày cũng sẽ gây ra hiện tượng khum (cung bên), gờ cạnh và cuộn dây bị loại bỏ. Sureay dao cắt rotary được mài chính xác đến dung sai độ dày ±0,001mm với tổng độ đảo chỉ định ≤0,01mm (T.I.R.), đảm bảo căn chỉnh hoàn hảo trên các cụm đầu cặp dao nhiều dao.\n\n## Luyện kim tiên tiến cho kim loại mỏng\n\nRạch các hợp kim kim loại khác nhau đòi hỏi vật liệu lưỡi cụ thể để tránh bị cùn nhanh, sứt mẻ cạnh hoặc lõm vật liệu (hàn nguội).\n\n**Thép luyện kim bột ASP23 (PM):** Một bản nâng cấp lớn so với D2 thông thường. Cấu trúc cacbua đồng nhất, siêu mịn của nó mang lại tuổi thọ cạnh dài hơn 3–5× trên lá bao bì nhôm, dải đồng thau và thép cacbon khổ mỏng thông thường mà không bị sứt mẻ vi mô.\n\n**Thép ASP52 PM:** Được thiết kế cho vật liệu có độ bền kéo cao. Với hàm lượng vanadi 11%, ASP52 mang lại khả năng chống mài mòn cực cao cần thiết để rạch các dải thép không gỉ cứng, thép silicon định hướng dạng hạt (lõi biến áp) và đồng berili.\n\n**Cacbua vonfram rắn:** Thông số kỹ thuật tối ưu dành cho lá kim loại siêu mỏng (<0,05 mm), trong đó bắt buộc phải có các cạnh sắc như dao cạo, không có gờ trong các chiến dịch sản xuất tốc độ cao, kéo dài.\n\n## Đánh bại lỗi Arbor tích lũy\n\nTrên các dây chuyền xẻ rãnh, 10 đến 40 dao tròn có thể được xếp chồng lên nhau trên một trục duy nhất. Sai số độ dày của mỗi con dao được cộng dồn theo cấp số nhân: sai số ±0,003 mm trên mỗi lưỡi dao tạo ra sai số lớn ±0,060 mm trên một chồng 20 con dao, đảm bảo chiều rộng cuộn dây ngoài thông số kỹ thuật. Chúng tôi mài từng con dao xẻ cấp kim loại và miếng đệm phù hợp với dung sai độ dày nghiêm ngặt ±0,001mm, xác minh chúng trên thiết bị CMM để đảm bảo không có lỗi tích lũy.\n\n## Bề mặt hoàn thiện chống trầy xước\n\nKhi rạch các kim loại màu như nhôm và đồng mềm, bụi kim loại có xu hướng bám vào mặt lưỡi dao (tròn), làm trầy xước nghiêm trọng bề mặt của cuộn dây được rạch. Dao cắt kim loại Sureay có bề mặt bên được tráng gương có độ bóng cao (Ra ≤0,02μm) giúp giảm đáng kể ma sát và ngăn chặn sự bám dính của vật liệu, đảm bảo các cạnh cuộn nguyên sơ.",
+      "dao cắt rotary thay thế cho lá đồng và nhôm. Các tùy chọn cacbua, thép công cụ và thép PM, với các lỗ, chiều rộng và miếng đệm phù hợp tùy chỉnh.",
     link: "/products/metal-foil-strip-slitter-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Kampf",
-      "Sundwig",
-      "GOEBEL IMS",
-      "Fagor Arrasate",
-      "Camu",
-      "Heinrich Georg",
-      "Kohler",
-      "Yuri Roll",
-      "Hohsen",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "ASP23, ASP52 (PM Steel), Solid Tungsten Carbide, D2/D3",
+        label: "Kích cỡ",
+        value: "OD 100–300 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 64–67 (PM Steel) | HRA 91–92 (Carbide)",
+        label: "Vật liệu",
+        value:
+          "D2 , D3 , M2 , ASP2023 , ASP2052 hoặc hợp kim cacbua vonfram (WC-Co)",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Ứng dụng",
+        value: "Lá đồng và lá nhôm",
       },
       {
-        label: "Runout (T.I.R.)",
-        value: "≤ 0.01 mm",
+        label: "độ cứng",
+        value: "64–67 HRC đối với thép PM; 91–92 HRA cho cacbua",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror-lapped Ra ≤0.02μm — prevents galling on Al/Cu",
+        label: "Dung sai độ dày",
+        value: "±0.001 mm",
       },
       {
-        label: "Application",
-        value: "Aluminum Foil, SS Strips, Silicon Steel, Brass/Copper",
+        label: "hết",
+        value: "≤0.01 mm T.I.R.",
       },
+      {
+        label: "Bề mặt hoàn thiện",
+        value: "Mặt tráng gương, Ra 0,02 μm",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Dao gắn trên trục có lỗ trơn hoặc có chốt",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao cắt lá đồng và nhôm | Phong tục",
+      sizeRange: "OD 100–300 mm",
+      heroAlt: "Dao cắt lá tròn có mặt được đánh bóng và lỗ trơn",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-foil-strip-slitter-knives-keyway.webp",
+        alt: "Dao cắt lá kim loại hình tròn có rãnh then trong lỗ khoan",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "slitter-knives",
+          tabLabel: "Dao xẻ dọc",
+          title: "Dao xẻ dọc",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Vật liệu"],
+          rows: [
+            ["SR001253", "130 × 60 × 1 mm", "hợp kim cacbua vonfram"],
+            ["SR001254", "130 × 60 × 2 mm", "hợp kim cacbua vonfram"],
+            ["SR001255", "130 × 60 × 3 mm", "hợp kim cacbua vonfram"],
+            ["SR001256", "130 × 60 × 4 mm", "hợp kim cacbua vonfram"],
+            ["SR001257", "130 × 66.68 × 1 mm", "hợp kim cacbua vonfram"],
+            ["SR001258", "130 × 66.68 × 2 mm", "hợp kim cacbua vonfram"],
+            ["SR001259", "130 × 66.68 × 3 mm", "hợp kim cacbua vonfram"],
+            ["SR001260", "130 × 66.68 × 4 mm", "hợp kim cacbua vonfram"],
+            ["SR001261", "130 × 66.68 × 5 mm", "hợp kim cacbua vonfram"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Kích thước dao lá & dải bổ sung",
+          title: "Kích thước dao lá & dải bổ sung",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Loại dao / Tham chiếu nền tảng",
+          ],
+          rows: [
+            ["SR001813", "100 × 40 × 1.0 / 1.5 mm", "Máy cắt lá mỏng"],
+            ["SR001814", "150 × 80 × 2.0 / 3.0 mm", "Máy xén dải chính xác"],
+            ["SR001815", "200 × 120 × 3.0 / 4.0 mm", "Máy chia dải chung"],
+            ["SR001816", "250 × 150 × 4.0 / 5.0 mm", "Silicon / thép không gỉ"],
+            ["SR001817", "300 × 200 × 5.0 / 10.0 mm", "Dải đo nặng"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "OD 100–300 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "D2 , D3 , M2 , ASP2023 , ASP2052 hoặc hợp kim cacbua vonfram (WC-Co)",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Lá đồng và lá nhôm",
+        },
+        {
+          label: "độ cứng",
+          value: "64–67 HRC đối với thép PM; 91–92 HRA cho cacbua",
+        },
+        {
+          label: "Dung sai độ dày",
+          value: "±0.001 mm",
+        },
+        {
+          label: "hết",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Bề mặt hoàn thiện",
+          value: "Mặt tráng gương, Ra 0,02 μm",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Dao gắn trên trục có lỗ trơn hoặc có chốt",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Red Bud Industries",
+      "Fagor Arrasate",
+      "Burghardt + Schmidt",
+      "Heinrich Georg",
     ],
     components: [
       {
-        id: "pm-metallurgy",
-        tag: "ĐỘ BỀN",
-        title: "Luyện kim bột (PM) Thép",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Tùy chọn thép công cụ và cacbua cho lá kim loại",
         description:
-          "Thép ASP23 và ASP52 PM loại bỏ sự phân chia cacbua dải được tìm thấy trong đúc D2. Cấu trúc hạt nhỏ hơn micron này ngăn ngừa hiện tượng sứt mẻ cạnh khi cắt các dải thép không gỉ hoặc silicon cứng, có độ bền kéo cao.",
+          "Các tùy chọn D2 , D3 , M2 , PM HSS và hợp kim cacbua vonfram cung cấp cho bộ xử lý lá lựa chọn vật liệu cho loại đồng hoặc nhôm, thước đo lá và độ mòn dao được quan sát.",
       },
       {
-        id: "cumulative-tolerance",
-        tag: "CHÍNH XÁC",
-        title: "Không có lỗi tích lũy",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Mặt dao mài chính xác để gia công giấy bạc",
         description:
-          "Khi thiết lập xẻ rãnh, lỗi về độ dày lưỡi dao sẽ tăng lên nhanh chóng. Độ mài chính xác ±0,001mm của chúng tôi đảm bảo kích thước trục của bạn vẫn hoàn hảo trong thông số kỹ thuật, tiết kiệm thời gian thiết lập và thời gian làm mờ.",
+          "Sureay cung cấp các loại dao lá được mài chính xác được chế tạo theo chiều rộng trục được chỉ định và độ hoàn thiện bề mặt làm việc, hỗ trợ thay thế các lưỡi dao riêng lẻ trong ngăn xếp trục hiện có của bạn.",
       },
       {
-        id: "anti-galling",
-        tag: "CHẤT LƯỢNG BỀ MẶT",
-        title: "Chất đánh bóng chống trầy xước",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao tùy chỉnh và miếng đệm phù hợp",
         description:
-          "Rạch nhôm, đồng thường khiến bụi kim loại “hàn nguội” vào lưỡi dao, làm xước mép cuộn dây. Các mặt bên được tráng gương của chúng tôi (Ra ≤0,02μm) làm giảm đáng kể ma sát, ngăn chặn hoàn toàn sự bám dính của vật liệu.",
+          "Đặt hàng các loại dao lá tùy chỉnh và các miếng đệm phù hợp với nhau, với chiều rộng riêng, chi tiết lỗ khoan và số lượng được xác định xung quanh lịch trình chiều rộng khe và dụng cụ được giữ lại của bạn.",
       },
     ],
-    dimensionLabels: {
-      col0: "Ứng dụng điển hình",
-      col1: "Đường kính ngoài",
-      col2: "Đường kính trong",
-      col3: "độ dày",
-      caption:
-        "* Kích thước đại diện cho tiêu chuẩn chung của trung tâm dịch vụ kim loại. Chúng tôi sản xuất theo thông số kỹ thuật chính xác của máy và có thể cung cấp các miếng đệm có độ chính xác cao phù hợp với cùng dung sai ±0,001mm.",
-    },
-    standardDimensions: [
-      {
-        spec: "Thin Foil Slitter",
-        od: "100 mm",
-        id: "40 mm",
-        thickness: "1.0 / 1.5 mm",
-      },
-      {
-        spec: "Precision Strip Slitter",
-        od: "150 mm",
-        id: "80 mm",
-        thickness: "2.0 / 3.0 mm",
-      },
-      {
-        spec: "General Strip Slitter",
-        od: "200 mm",
-        id: "120 mm",
-        thickness: "3.0 / 4.0 mm",
-      },
-      {
-        spec: "Silicon / Stainless Steel",
-        od: "250 mm",
-        id: "150 mm",
-        thickness: "4.0 / 5.0 mm",
-      },
-      {
-        spec: "Heavy Gauge Strip",
-        od: "300 mm",
-        id: "200 mm",
-        thickness: "5.0 / 10.0 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 45,
-      highPrice: 750,
-    },
     faqs: {
       technical: [
         {
-          question: "Tôi nên sử dụng D2 hay ASP23 để cắt dải thép không gỉ?",
+          question:
+            "Làm cách nào để chỉ định dao lá kim loại thay thế tùy chỉnh và miếng đệm phù hợp?",
           answer:
-            "Trong khi D2 phù hợp với thép cacbon mềm thì việc rạch thép không gỉ có độ bền kéo cao gây ra sự mài mòn nhanh chóng và sứt mẻ vi mô trên các cạnh D2. Thép luyện kim bột ASP23 được khuyến khích sử dụng cho các dải không gỉ có độ dày dưới 1,0mm. Cấu trúc cacbua đồng nhất của nó chống sứt mẻ, mang lại tuổi thọ lưỡi gấp 3 đến 5 lần so với D2 và giảm thiểu thời gian ngừng hoạt động của máy.",
+            "Chỉ định đường kính ngoài, lỗ khoan, chiều rộng trục và rãnh then của mỗi con dao, cùng với chiều rộng của miếng đệm và cách sắp xếp ngăn xếp. Bao gồm thông số kỹ thuật của giấy bạc, lịch trình chiều rộng khe và số lượng của từng cấu hình. Xác định các bộ phận sẽ vẫn được sử dụng để có thể cân nhắc sử dụng dao và miếng đệm mới trong bố cục trục hoàn chỉnh.",
         },
         {
           question:
-            "Làm thế nào để bạn ngăn chặn tình trạng 'tấn công' hoặc tích tụ kim loại khi rạch nhôm?",
+            "Máy đo lá và hư hỏng cạnh ảnh hưởng như thế nào đến việc lựa chọn thép hoặc cacbua?",
           answer:
-            "Nhôm rất dễ bị ăn mòn (hàn lạnh vào lưỡi dao). Chúng tôi ngăn chặn điều này bằng cách tráng gương các mặt bên của lưỡi dao đến độ nhám bề mặt Ra 0,02μm. Lớp hoàn thiện siêu mịn này làm giảm hệ số ma sát, ngăn các hạt nhôm bám vào dao và làm trầy xước cuộn dây đã hoàn thiện của bạn.",
+            "Hợp kim lá, độ dày, tình trạng bề mặt và cạnh khe cần thiết cung cấp điểm khởi đầu. So sánh độ mòn dần dần của con dao hiện tại và bất kỳ vết sứt cạnh nào tại trạm đó. Việc lựa chọn vật liệu phải giải quyết được tình trạng quan sát được trong khi vẫn giữ được hình dạng dao cần thiết và thiết lập theo cặp, thay vì chỉ được chọn từ độ cứng.",
         },
         {
-          question: "Tại sao cần có dung sai độ dày ±0,001mm?",
+          question:
+            "Điều gì có thể gây ra các vệt trên lá đồng hoặc nhôm có khe hở?",
           answer:
-            "Trong các hoạt động rạch theo nhóm, nhiều con dao và miếng đệm được xếp chồng lên nhau trên giàn. Nếu một lưỡi dao có dung sai ±0,005mm, việc xếp chồng 20 lưỡi dao sẽ tạo ra sai số tích lũy là ±0,100mm. Điều này sẽ làm cho các cuộn dây có khe hở vượt quá quy định về chiều rộng và gây ra hiện tượng khum (cong). Dung sai ±0,001mm của chúng tôi đảm bảo độ chính xác tuyệt đối trên toàn bộ cụm đầu cặp kính.",
+            "Tình trạng lưỡi dao, khe hở lắp ráp, tình trạng đầu cặp dao và sự căn chỉnh đều cần được chú ý khi các vệt xuất hiện. So sánh thông số kỹ thuật của giấy bạc với thiết lập đang được sử dụng, sau đó ghi lại vị trí cạnh và khe nào bị ảnh hưởng. Điều này giúp dễ dàng phân biệt một con dao bị hỏng với một sự cố tái diễn với ngăn xếp hoặc thiết lập vận hành.",
         },
         {
-          question: "Bạn có thể cung cấp miếng đệm chính xác phù hợp không?",
+          question:
+            "Tại sao chiều rộng khe có thể thay đổi ngay cả khi từng con dao đều chính xác?",
           answer:
-            "Có, việc rạch chính xác yêu cầu cả dao và miếng đệm đều có dung sai giống nhau. Chúng tôi sản xuất bộ tháo dỡ/miếng đệm bằng nhôm, thép và cao su nhẹ được mài với cùng dung sai độ dày ±0,001mm như dao cắt của chúng tôi.",
+            "Chiều rộng trục của dao mô tả từng bộ phận riêng lẻ, trong khi việc sắp xếp dao và miếng đệm được lắp ráp sẽ thiết lập các vị trí cắt. Dao thay thế chính xác vẫn cần phải chiếm các vị trí dự định trong bố cục đó. Đọc kích thước của chúng cùng với bản vẽ ngăn xếp và chiều rộng của miếng đệm, đặc biệt khi một số thành phần được giữ lại từ thiết lập hiện có.",
+        },
+        {
+          question:
+            "Dao lá trần và dao điện cực dùng pin có thể thay thế cho nhau được không?",
+          answer:
+            "Lá đồng hoặc nhôm trần và các điện cực pin được phủ có các yêu cầu rạch khác nhau. Một điện cực kết hợp lá thu với các lớp phủ, do đó biên dạng cắt và thiết lập ghép nối của nó phải phù hợp với cấu trúc đó. Xác định web và trạm thực tế khi lựa chọn thay thế; các ứng dụng phủ cực dương và cực âm được đề cập trong [Dao rạch pin](/products/lithium-battery-slitting-knives) .",
+        },
+        {
+          question:
+            "Tôi có thể tái sử dụng các miếng đệm hiện có khi thay thế dao cắt giấy bạc không?",
+          answer:
+            "Có, nếu các miếng đệm được giữ lại vẫn đáp ứng các yêu cầu về chiều rộng, lỗ khoan và bề mặt của ngăn xếp dự định. Ghi lại kích thước và vị trí thực tế của chúng cùng với lịch trình chiều rộng dao và chiều rộng khe mới. Xác nhận cách bố trí đã lắp ráp trước khi đặt hàng để dao thay thế hoạt động với các miếng đệm mà bạn định giữ lại.",
         },
       ],
-      company: [
-        {
-          question:
-            "Bạn có cung cấp bộ dao phù hợp cùng với báo cáo kiểm tra không?",
-          answer:
-            "Đúng. Đối với đầu cặp dao xẻ nhiều dao, chúng tôi cung cấp các bộ phù hợp kèm theo báo cáo kiểm tra CMM. Tài liệu này ghi lại độ dày chính xác của từng con dao, đảm bảo bộ sản phẩm đáp ứng các yêu cầu về dung sai tích lũy của bạn trước khi lắp đặt.",
-        },
-        {
-          question:
-            "Thời gian sản xuất dao cắt thép PM hoặc cacbua là bao lâu?",
-          answer:
-            "Kích thước thép D2 tiêu chuẩn và thép PM cơ bản thường có thể được sản xuất trong 10–15 ngày làm việc. Cacbua vonfram rắn và hợp kim PM chuyên dụng cao yêu cầu mài và mài phức tạp, thường mất 15–25 ngày làm việc tùy thuộc vào yêu cầu về đường kính ngoài và dung sai.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Luôn cung cấp dây chuyền tái chế của bạn với dao máy cắt hai trục thay thế xung quanh máy cắt hiện có của bạn. Cấu hình móc tùy chỉnh, độ dày và lỗ khoan dây EDM có sẵn. Chia sẻ bản vẽ hoặc mẫu của bạn để nhận báo giá cho từng máy cắt hoặc một bộ hoàn chỉnh. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     id: "twin-shaft-blades-recycling",
-    name: "Lưỡi máy hủy tài liệu trục đôi",
-    fullName:
-      "Lưỡi vuốt trục đôi D2/SKD11 công suất cao để tái chế nhựa, chất thải rắn và gỗ",
+    name: "Dao máy nghiền xé hai trục",
+    fullName: "Dao máy nghiền xé hai trục cho tái chế nhiều loại phế liệu",
+    seoTitle: "dao máy cắt trục đôi | Nhựa & Chất thải hỗn hợp",
+    seoDescription:
+      "dao máy cắt trục đôi thay thế cho pallet nhựa, pallet gỗ và rác thải hỗn hợp. Tùy chọn D2 , SKD11 và 42CrMo với móc và lỗ khoan tùy chỉnh.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lưỡi máy hủy tài liệu",
-    image: "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+    categoryDisplay: "Dao máy nghiền xé",
+    image:
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
+    imageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
     gallery: [
-      "/images/products/shredder-blades/4-claw-shredder-blades-00.webp",
+      "/images/products/shredder-blades/twin-shaft-shredder-blades-recycling-cover.webp",
       "/images/products/shredder-blades/shredder-blades-for-recycling.webp",
       "/images/products/shredder-blades/twin-shaft-shredder-blade-01.webp",
     ],
     description:
-      "Trục đôi crom cacbua D2/SKD11 dao máy cắt được thiết kế theo nguyên lý cắt kéo giao nhau dành cho chất thải rắn có khối lượng lớn, nhựa cồng kềnh, rác thải điện tử và pallet gỗ. HRC 55–62 được làm cứng bằng chân không với xử lý đông lạnh sâu để kéo dài tuổi thọ lưỡi cắt. Hình học móng vuốt 3–12 tùy chỉnh. Các lỗ khoan dây EDM để không có phản ứng ngược phù hợp trên các rôto Weima, Untha, SSI & Vecoplan.",
-    fullDescription:
-      "Trục đôi dao máy cắt hoạt động theo nguyên lý cắt kéo giao nhau—hai trục quay ngược chiều với các lưỡi vuốt lồng vào nhau giúp cắt nguyên liệu thông qua giao diện cắt kéo, mang lại lực bám mạnh mẽ với nhu cầu mô-men xoắn thấp.\n\nKhi xử lý chất thải cồng kềnh có độ mài mòn cao—chẳng hạn như MSW nhiễm kim loại, chất tẩy nhựa có thành dày hoặc kiện nhựa cứng hỗn hợp—các lưỡi dao không đạt tiêu chuẩn sẽ bị bo tròn cạnh sớm, lỗ khoan bị giãn dài và gãy móc nghiêm trọng.\n\ndao máy cắt đa trục Sureay được sản xuất từ ​​thép công cụ D2 (1.2379), SKD11 và 42CrMo, được tôi cứng chân không và tôi luyện qua 4–5 chu kỳ để đạt được cấu trúc vi mô martensitic ổn định hoàn toàn (HRC 55–62). Giai đoạn xử lý sâu dưới nhiệt độ đông lạnh (−196°C, ngâm trong 24 giờ) loại bỏ austenite còn sót lại và tăng đáng kể khả năng chống mài mòn mà không làm mất đi giới hạn độ bền cần thiết để ngăn ngừa gãy vỡ hàng loạt trên nguyên liệu bị ô nhiễm.\n\n## Hình học móc được tối ưu hóa FEA\n\nHình dáng của lưỡi cắt quyết định hiệu quả gắp và khả năng chống mỏi. Sureay sử dụng mô phỏng Phân tích phần tử hữu hạn (FEA) để tối ưu hóa sự phân bổ ứng suất trên lưỡi dao khi va chạm với mô-men xoắn cao. Thiết kế ba càng (3C) mang lại lực bám mạnh mẽ cho các thùng gỗ lớn và IBC; Cấu hình 8 móng (8C) được tối ưu hóa cho nhựa cứng hỗn hợp và MSW; Các biến thể 12 móng (12C) tạo ra kích thước hạt đầu ra mịn hơn để xử lý tiếp theo. Tất cả các biên dạng móc đều được gia cố ở bán kính gốc để chống biến dạng dưới tải trọng tuần hoàn liên tục.\n\n## Lỗ khoan dây EDM chính xác\n\nSự khớp lỏng giữa lỗ cánh và trục rôto sẽ tạo ra các tác động vi mô làm lỗ khoan dần dần dài ra và phá hủy trục. Sureay loại bỏ chế độ lỗi này: tất cả các lỗ lắp bên trong—hình lục giác, hình bát giác hoặc hình rãnh—được xử lý bằng Wire-EDM chính xác, đảm bảo không phản ứng ngược, vừa khít cho các hệ thống rôto SSI, Untha, Weima và Vecoplan.\n\n## Lựa chọn hợp kim theo nguyên liệu\n\nD2 (1.2379) — Nhựa hỗn hợp & Chất thải nhẹ: Chai nhựa HDPE sau tiêu dùng, khay PET, các bộ phận đúc PP và kiện nhựa cứng hỗn hợp. Khả năng chống mài mòn crom-cacbua hiệu quả về mặt chi phí cho các dây chuyền tái chế chung.\n\nSKD11 — Dòng ô nhiễm mài mòn: Nhựa kỹ thuật chứa đầy thủy tinh, màng nông nghiệp bẩn và phế liệu hậu công nghiệp có mức độ ô nhiễm cao. Độ bền vượt trội của SKD11 giúp kéo dài tuổi thọ của hạt dao trên các vật liệu có bề mặt cứng trong các dòng bị ô nhiễm.\n\n42CrMo — Chất thải chứa gỗ và kim loại: Pallet gỗ, chất thải rắn sinh hoạt cồng kềnh và phế liệu hậu công nghiệp có nguy cơ ô nhiễm kim loại. Khả năng hấp thụ năng lượng va chạm cao hơn của 42CrMo ngăn ngừa hiện tượng gãy giòn gây ra hư hỏng nghiêm trọng cho rôto khi va chạm với kim loại.",
+      "Lưỡi thay thế D2 / SKD11 dành cho máy hủy trục đôi xử lý nhựa, gỗ và MSW. Các lỗ khoan, độ dày và cấu hình móc tùy chỉnh được thực hiện theo bản vẽ.",
     link: "/products/twin-shaft-blades-recycling",
     isFeatured: true,
-    compatibleMachines: [
-      "WEIMA",
-      "UNTHA",
-      "Vecoplan",
-      "SSI Shredding Systems",
-      "Lindner",
-      "Erdwich",
-      "BRT Hartner",
-      "ZERMA",
-    ],
     specs: [
       {
-        label: "Material",
+        label: "Vật liệu",
         value: "D2 (1.2379), SKD11, 42CrMo",
       },
       {
-        label: "Hardness",
-        value: "HRC 55–62 (4–5 tempering cycles)",
+        label: "độ cứng",
+        value: "55–62 HRC (4–5 chu kỳ ram)",
       },
       {
-        label: "Claw Count",
-        value: "3-Claw · 8-Claw · 12-Claw (custom)",
+        label: "Số móng vuốt",
+        value: "3 móng · 5 móng · 8 móng · 12 móng",
       },
       {
-        label: "Thickness",
-        value: "10 mm – 150 mm",
+        label: "Thiết kế lỗ khoan",
+        value: "Dây-EDM chính xác: Hex / Octagonal / Spline",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM: Hex / Octagonal / Splined",
+        label: "Khả năng tương thích",
+        value: "Weima , Untha , SSI , Vecoplan , Genox",
       },
       {
-        label: "Compatibility",
-        value: "Weima, Untha, SSI, Vecoplan, Genox",
+        label: "Ứng dụng",
+        value: "MSW · Nhựa · Pallet gỗ · Rác thải cồng kềnh",
       },
       {
-        label: "Application",
-        value: "MSW · Plastics · Wood Pallets · Bulky Waste",
+        label: "Kích cỡ",
+        value:
+          "OD được liệt kê Ø150–450 mm; OD tùy chỉnh lên tới Ø800 mm; độ dày 10–150 mm",
       },
     ],
-    components: [
-      {
-        id: "fea-geometry",
-        tag: "KỸ THUẬT",
-        title: "Cấu hình móc được tối ưu hóa FEA",
-        description:
-          "Hình dạng móc được thiết kế thông qua Phân tích phần tử hữu hạn để loại bỏ các bộ tập trung ứng suất. Cấu hình 3 móng, 8 móng và 12 móng cung cấp lực kẹp chính xác cho mọi loại nguyên liệu.",
-      },
-      {
-        id: "wire-edm",
-        tag: "CHÍNH XÁC",
-        title: "Lỗ khoan dây-EDM chính xác",
-        description:
-          "Tất cả các lỗ lắp đều được cắt bằng Wire-EDM đến ±0,01mm, đảm bảo lắp khít vào không phản ứng ngược giúp loại bỏ rung lắc vi mô gây hư hỏng trục và kéo dài lỗ khoan.",
-      },
-      {
-        id: "cryogenic-treatment",
-        tag: "Luyện kim",
-        title: "Điều trị đông lạnh sâu",
-        description:
-          "Quá trình xử lý đông lạnh sau đông cứng ở −196°C sẽ loại bỏ austenite còn sót lại, ổn định cấu trúc vi mô martensite để có khả năng chống mài mòn cao hơn tới 40% mà không làm giảm độ bền.",
-      },
+    relatedBladeIds: [
+      "multi-shaft-blades-metal",
+      "tire-shredder-blades",
+      "twin-shaft-blades-battery",
     ],
     dimensionLabels: {
       col0: "Dòng máy hủy tài liệu",
@@ -724,144 +819,216 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "200 Series",
+        itemNo: "SR002101",
+        spec: "Dòng 200",
         od: "Φ 150 mm",
         thickness: "15 mm",
-        bore: "Hex Ø70 mm",
-        hooks: "5-Claw",
+        bore: "Lục giác Ø70 mm",
+        hooks: "5-Móng vuốt",
       },
       {
-        spec: "400 Series",
+        itemNo: "SR002102",
+        spec: "Dòng 400",
         od: "Φ 180 mm",
         thickness: "20 mm",
-        bore: "Hex Ø90 mm",
-        hooks: "8-Claw",
+        bore: "Lục giác Ø90 mm",
+        hooks: "8-Móng vuốt",
       },
       {
-        spec: "600 Series",
+        itemNo: "SR002103",
+        spec: "Dòng 600",
         od: "Φ 200 mm",
         thickness: "20 mm",
-        bore: "Hex Ø140 mm",
-        hooks: "8-Claw",
+        bore: "Lục giác Ø140 mm",
+        hooks: "8-Móng vuốt",
       },
       {
-        spec: "800 Series",
+        itemNo: "SR002104",
+        spec: "Dòng 800",
         od: "Φ 250 mm",
         thickness: "25 mm",
-        bore: "Hex Ø160 mm",
-        hooks: "8-Claw",
+        bore: "Lục giác Ø160 mm",
+        hooks: "8-Móng vuốt",
       },
       {
-        spec: "1000 Series",
+        itemNo: "SR002105",
+        spec: "Dòng 1000",
         od: "Φ 300 mm",
         thickness: "30 mm",
-        bore: "Hex Ø180 mm",
-        hooks: "12-Claw",
+        bore: "Lục giác Ø180 mm",
+        hooks: "12-Móng vuốt",
       },
       {
-        spec: "1200 Series",
+        itemNo: "SR002106",
+        spec: "Dòng 1200",
         od: "Φ 350 mm",
         thickness: "40 mm",
-        bore: "Splined Ø200 mm",
-        hooks: "12-Claw",
+        bore: "Có rãnh Ø200 mm",
+        hooks: "12-Móng vuốt",
       },
       {
-        spec: "1500 Series",
+        itemNo: "SR002107",
+        spec: "Dòng 1500",
         od: "Φ 400 mm",
         thickness: "40 mm",
-        bore: "Splined Ø220 mm",
-        hooks: "3-Claw",
+        bore: "Có rãnh Ø220 mm",
+        hooks: "3-Móng vuốt",
       },
       {
-        spec: "2000 Series",
+        itemNo: "SR002108",
+        spec: "Dòng 2000",
         od: "Φ 450 mm",
         thickness: "30 mm",
-        bore: "Splined Ø260 mm",
-        hooks: "3-Claw",
+        bore: "Có rãnh Ø260 mm",
+        hooks: "3-Móng vuốt",
       },
-    ],
-    relatedBladeIds: [
-      "tire-shredder-blades",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
     ],
     offers: {
       lowPrice: 45,
       highPrice: 600,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-recycling-advantage-1",
+        tag: "Các lựa chọn thép để tái chế chung",
+        title: "Các lựa chọn thép để tái chế chung",
+        description:
+          "Máy cắt D2 , SKD11 và 42CrMo có sẵn cho nhựa, pallet gỗ và băm nhỏ rác thải hỗn hợp, mang đến cho các đơn đặt hàng thay thế sự lựa chọn vật liệu cùng với hình dạng móc và trục cần thiết.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-2",
+        tag: "Móc tùy chỉnh và lỗ dây EDM",
+        title: "Móc tùy chỉnh và lỗ dây EDM",
+        description:
+          "Sureay chế tạo máy cắt móc có lỗ hình lục giác, bát giác hoặc có rãnh. Các cấu hình được liệt kê trải dài từ Ø150–450 mm, với đường kính tùy chỉnh lên tới Ø800 mm để thay thế dựa trên bản vẽ.",
+      },
+      {
+        id: "twin-shaft-blades-recycling-advantage-3",
+        tag: "Máy cắt riêng lẻ và bộ thay đổi hoàn chỉnh",
+        title: "Máy cắt riêng lẻ và bộ thay đổi hoàn chỉnh",
+        description:
+          "Đặt hàng một cấu hình dao cắt duy nhất hoặc một bộ bao gồm một số vị trí trục, với độ dày yêu cầu, hướng móc và số lượng được xác định cho dàn cắt đã lắp đặt của bạn.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Làm cách nào để chọn giữa các thiết kế lưỡi 3 móng, 8 móng và 12 móng?",
+            "Những lưỡi dao thay thế nào phù hợp với máy hủy tài liệu hai trục?",
           answer:
-            "Số lượng móng vuốt trực tiếp kiểm soát tần số bám của lưỡi dao và kích thước hạt đầu ra. Lưỡi 3 càng (3C) được thiết kế để băm sơ cấp mô-men xoắn cao đối với hàng hóa cồng kềnh—pallet gỗ và thùng chứa HDPE lớn—nơi hình dạng móc mạnh mẽ mang lại lực cắn tối đa. 8-claw (8C) là tiêu chuẩn chung cho chất thải rắn đô thị hỗn hợp, kiện nhựa và phế liệu hậu công nghiệp. Cấu hình 12-claw (12C) tạo ra các hạt đầu ra mịn hơn từ các nguyên liệu nhẹ hơn như nhựa cứng gia dụng và bao bì.",
+            "Vật thay thế phù hợp khi lỗ khoan, biên dạng móc, độ dày và hướng lắp đặt của nó khớp với vị trí của nó trong ngăn dao. Hai dao cắt có cùng đường kính ngoài có thể có kích thước lỗ khoan hoặc hướng móc khác nhau. Sử dụng tham chiếu bộ phận và bố cục miếng đệm để phân biệt các máy cắt tương tự.",
         },
         {
           question:
-            "Tại sao Sureay sử dụng Wire-EDM cho lỗ khoan bên trong thay vì chuốt?",
+            "dao máy cắt hai trục, hai trục và hai trục có giống nhau không?",
           answer:
-            "Việc chuốt tiêu chuẩn tạo ra dung sai kích thước ±0,1–0,2 mm và tạo ra ứng suất dư bề mặt trong thành lỗ khoan. Trải qua hàng triệu chu kỳ rôto, khe hở này tạo ra hiện tượng rung chuyển vi mô—sự kéo dài lỗ khoan tăng dần mà cuối cùng sẽ phá hủy trục rôto. Máy cắt dây-EDM chính xác có lỗ khoan chính xác tới ±0,01mm với bề mặt cắt không bị căng, loại bỏ khe hở gây rung lắc vi mô.",
+            "Đúng. Trong thiết bị tái chế máy cắt quay, cả ba tên này thường được dùng để chỉ máy cắt trên hai trục của máy. Dao cắt có móc và lưỡi vuốt mô tả đường viền cắt. Một bộ dao đề cập đến nhiều bộ phận, vì vậy hãy khớp mỗi bộ dao với vị trí trục riêng của nó.",
         },
         {
           question:
-            "Làm cách nào để chọn giữa D2, SKD11 và 42CrMo để băm nhỏ nhựa hoặc MSW bị ô nhiễm?",
+            "Số lượng móc và độ dày dao ảnh hưởng như thế nào đến việc lựa chọn thay thế?",
           answer:
-            "D2 (1.2379) đúng cho các kiện nhựa sau tiêu dùng có bụi bẩn còn sót lại và vết nhiễm bẩn. Nâng cấp lên SKD11 khi nguyên liệu của bạn bao gồm nhựa kỹ thuật gia cố bằng thủy tinh (PA66-GF30, ABS) được trộn vào dòng nước bị ô nhiễm. Chọn 42CrMo cho gỗ hoặc phế liệu công nghiệp có nguy cơ ô nhiễm kim loại cao—sự hấp thụ năng lượng tác động cao hơn của nó giúp ngăn ngừa hiện tượng gãy giòn khi va chạm với kim loại.",
+            "Hình dạng móc ảnh hưởng đến cách dao cắt ăn dao. Độ dày dao cắt và chiều rộng miếng đệm thiết lập sự sắp xếp theo trục của cụm cắt. Giữ lại các kích thước đó để thay thế tương tự. Cần phải xem xét sự thay đổi về số lượng móc hoặc chiều rộng với các dao cắt đối diện và vật liệu đang được xử lý.",
         },
         {
           question:
-            "Tần suất dao máy cắt hai trục nên được lập chỉ mục hoặc thay thế trên dây chuyền tái chế liên tục?",
+            "Khi nào nên chống mài mòn hoặc độ dẻo dai hướng dẫn lựa chọn thép?",
           answer:
-            "Trên dây chuyền xử lý liên tục 16 giờ HDPE và PP sau tiêu dùng, hãy lên lịch lập chỉ mục đầu tiên ở 400–600 giờ hoạt động với D2 và 600–800 giờ với SKD11 trên nguyên liệu sạch. Các dòng bị ô nhiễm hoặc chứa đầy thủy tinh làm giảm khoảng cách này từ 30–40%. Nên lập chỉ mục cột mốc trọng tải cố định thay vì chờ làm tròn cạnh có thể nhìn thấy được.",
+            "Việc làm tròn dần dần mép làm việc giúp cho khả năng chống mài mòn trở thành một so sánh hữu ích. Các phoi lặp đi lặp lại hoặc móc bị hỏng cũng cần chú ý đến độ bền, khả năng hỗ trợ cạnh và tác động của thức ăn. Đánh giá tình trạng thép và xử lý nhiệt ban đầu cùng với kiểu hư hỏng để vật liệu thay thế giải quyết được tình trạng quan sát được trên máy đó.",
+        },
+        {
+          question: "Điều gì có thể khiến dao cắt bị mòn hoặc sứt mẻ sớm?",
+          answer:
+            "Thức ăn mài mòn có thể tăng tốc độ mài mòn dần dần, trong khi các vật cứng bất ngờ hoặc tải trọng cục bộ quá mức có thể làm hỏng móc và mặt cắt. Bộ dao cắt được lắp ráp lỏng lẻo hoặc không đúng cách cũng có thể góp phần gây hư hỏng. So sánh vị trí xảy ra hư hỏng với lịch sử nguồn cấp dữ liệu và tình trạng ngăn xếp trước khi thay đổi thông số kỹ thuật thay thế.",
         },
         {
           question:
-            "Bạn có cung cấp dao phản kích và màn hình định cỡ như một hệ thống dụng cụ hoàn chỉnh không?",
+            "Nhựa, kim loại phế liệu và lốp xe có sử dụng cùng một cấu hình máy cắt không?",
           answer:
-            "Đúng. Chúng tôi sản xuất các loại dao phản kích cố định phù hợp và các sàng định cỡ đục lỗ như một hệ thống dụng cụ băm nhỏ hai trục hoàn chỉnh. Việc cung cấp các lưỡi rô-to và dao phản lực từ cùng một lần mài đảm bảo độ hở cắt nhất quán trên toàn bộ bề mặt tiếp xúc giữa rô-to và bệ máy.",
+            "Thường thì không. Máy cắt tái chế thông thường được cấu hình cho nhựa, pallet gỗ và chất thải hỗn hợp. Tải trọng nạp và hình dạng dao cắt khác nhau ở [Scrap Metal dao máy cắt](/products/multi-shaft-blades-metal) và [Tire dao máy cắt](/products/tire-shredder-blades) . Chọn phạm vi cho nguồn cấp dữ liệu của bạn và khớp cấu hình với máy đã cài đặt của bạn.",
+        },
+        {
+          question: "Bạn cần thông tin gì để báo giá dao máy cắt trục đôi?",
+          answer:
+            "Gửi model máy, bản vẽ dao cắt hoặc số bộ phận, nguyên liệu nạp và số lượng theo vị trí trục. Để thay đổi hoàn toàn, hãy bao gồm bố cục miếng đệm, độ dày dao cắt và hướng móc. Một mẫu bị mòn có thể hiển thị các chi tiết lỗ khoan và lắp đặt. Đánh dấu các đầu móc bị mòn và thêm tài liệu tham khảo hoặc bản vẽ gốc chưa sử dụng nếu có.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm kiểu máy, đường kính ngoài của dao cắt, độ dày, biên dạng lỗ khoan, số lượng móc và chiều rộng miếng đệm.",
+    compatibleMachines: ["Weima", "Untha", "SSI", "Vecoplan", "Genox"],
+    detailLayout: {
+      sizeRange: "Ø150–450 mm",
+      heroSpecs: [
         {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
+          label: "Vật liệu",
+          value: "D2 (1.2379), SKD11, 42CrMo",
         },
         {
-          question:
-            "Điều gì khiến xử lý nhiệt của Sureay khác biệt so với các lựa chọn thay thế rẻ hơn?",
-          answer:
-            "Không giống như quá trình làm nguội một chu kỳ tiêu chuẩn, mỗi lưỡi máy hủy tài liệu Sureay đều trải qua quá trình đông cứng chân không, sau đó là 4–5 chu kỳ ủ và xử lý đông lạnh sâu ở −196°C. Điều này ổn định cấu trúc vi mô martensite đầy đủ, tăng khả năng chống mài mòn lên tới 40%.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question: "Sureay có những chứng nhận chất lượng nào?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước và chứng chỉ lô xử lý nhiệt. Đối với chứng chỉ OEM, báo cáo chiều CMM đầy đủ và chứng chỉ nhà máy thép có sẵn theo yêu cầu.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 lưỡi) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ của cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc.",
+          label: "Ứng dụng",
+          value: "MSW · Nhựa · Pallet gỗ · Rác thải cồng kềnh",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value:
+            "OD được liệt kê Ø150–450 mm; OD tùy chỉnh lên tới Ø800 mm; độ dày 10–150 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "D2 (1.2379), SKD11, 42CrMo",
+        },
+        {
+          label: "độ cứng",
+          value: "55–62 HRC (4–5 chu kỳ ram)",
+        },
+        {
+          label: "Số móng vuốt",
+          value: "3 móng · 5 móng · 8 móng · 12 móng",
+        },
+        {
+          label: "Thiết kế lỗ khoan",
+          value: "Dây-EDM chính xác: Hex / Octagonal / Spline",
+        },
+        {
+          label: "Ứng dụng",
+          value: "MSW · Nhựa · Pallet gỗ · Rác thải cồng kềnh",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Bao gồm kiểu máy, đường kính ngoài của dao cắt, độ dày, biên dạng lỗ khoan, số lượng móc và chiều rộng miếng đệm.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Máy cắt hủy kim loại phế liệu thay thế nguồn có hình dạng móc và giao diện trục mà máy của bạn cần. Sureay cung cấp cấu hình H13 và 42CrMo với các lỗ có chốt hoặc có khóa tùy chỉnh. Chia sẻ bản vẽ máy cắt của bạn để có báo giá bao gồm các vị trí riêng lẻ hoặc bộ nhiều trục. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     id: "multi-shaft-blades-metal",
-    name: "Lưỡi máy hủy tài liệu kim loại",
-    fullName:
-      "Lưỡi đa trục có tác động cao dành cho kim loại phế liệu, ELV & rác thải điện tử",
+    name: "Dao máy nghiền xé phế liệu kim loại",
+    fullName: "Dao máy nghiền xé nhiều trục dùng cho phế liệu kim loại",
+    seoTitle: "dao máy cắt kim loại phế liệu | H13 & 42CrMo",
+    seoDescription:
+      "Nguồn máy cắt H13 hoặc 42CrMo dành cho máy hủy nhiều trục xử lý các phương tiện, phế liệu điện tử hoặc thiết bị hết hạn sử dụng. Chỉ định biên dạng móc và lỗ khoan có chốt hoặc có khóa.",
     category: "shredder_blades",
     sector: "metal",
     categoryDisplay: "Lưỡi máy hủy tài liệu kim loại",
     image: "/images/products/shredder-blades/shredder-blades-05.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1309,
+      smallerWidths: [320, 640],
+    },
     badge: "nhiệm vụ nặng nề",
     badgeColor: "red",
     gallery: [
@@ -870,70 +1037,34 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/shredder-blades-for-metal.webp",
     ],
     description:
-      "Được thiết kế để tồn tại dưới tải trọng sốc thảm khốc của kim loại phế liệu, ELV (phương tiện hết hạn sử dụng) và việc băm nhỏ rác thải điện tử hai trục. Được rèn từ thép hợp kim H13 và 42CrMo (AISI 4140) cao cấp. Những lưỡi dao hạng nặng này ưu tiên độ dẻo dai của lõi để ngăn ngừa hiện tượng gãy giòn khi va chạm vào các tạp chất kim loại rắn.",
-    fullDescription:
-      "Khi máy hủy tài liệu hai trục gặp khối động cơ, dầm chữ I bằng thép hoặc chất thải điện tử bị nén chặt, các lưỡi dao sẽ phải đối mặt với tải trọng sốc thảm khốc được đo bằng hàng chục nghìn Newton mỗi mili giây. Việc sử dụng thép công cụ có hàm lượng carbon cao tiêu chuẩn (như D2) trong các ứng dụng này sẽ dẫn đến gãy giòn ngay lập tức và các móc bị vỡ—gây ra hư hỏng nghiêm trọng cho rô-to, thời gian ngừng hoạt động ngoài dự kiến ​​và các mảnh đạn tiềm ẩn nguy hiểm.\n\nĐối với gia công kim loại nặng, độ dẻo dai là điều tối quan trọng so với độ cứng cực cao. Sureay thiết kế những lưỡi dao cụ thể này từ thép công cụ gia công nóng **H13 (AISI H13 / 1.2344)** và hợp kim cường độ cao **42CrMo (AISI 4140)** thông qua chu trình nhiệt tôi sâu chuyên dụng. Độ cứng bề mặt được cố tình giữ ở HRC 50–54. Độ cứng thấp hơn được kiểm soát này mang lại độ đàn hồi lớn cho lõi, cho phép lưỡi dao hấp thụ các tác động động học cực mạnh mà không bị sứt mẻ hoặc vỡ.\n\n## Hình dạng móc cấu hình thấp cho lực cắn tối đa\n\nViệc băm nhỏ kim loại đòi hỏi lực cắn rất lớn hơn là tần suất chộp lấy. Sureay thiết kế các dạng hình học thấp 1 móc, 2 móc và 3 móc với độ dày chân răng nặng. Những cấu hình móng vuốt chắc chắn này có thể kẹp và cắt các vỏ kim loại dày, cấu hình nhôm và các bộ phận phụ của ô tô mà không bị gãy móc.\n\n## Lỗ khoan có rãnh nặng: Truyền mô-men xoắn không trượt\n\nKim loại phế liệu nặng tạo ra mômen phản ứng rôto lớn có thể cắt các lỗ khoan có chốt tiêu chuẩn. Sureay gia công tất cả các lỗ bên trong dành cho máy hủy kim loại nặng bằng cách sử dụng các cấu hình trục cắt dây EDM chính xác. Điều này cung cấp sự tương tác mô-men xoắn theo chu vi hoàn toàn giữa lưỡi dao và trục—loại bỏ chế độ hỏng hóc do cắt then chốt và ngăn chặn sự mài mòn từ lỗ khoan đến trục tăng dần phá hủy rô-to trong các hoạt động băm nhỏ kim loại tiêu chuẩn.\n\n## Lựa chọn hợp kim theo hồ sơ phế liệu\n\n**H13 (1.2344) — Chất thải điện tử & Phế liệu hỗn hợp nhẹ:** Cụm bảng mạch, ép đùn nhôm, bó cáp đồng và thiết bị CNTT. Độ bền nóng vượt trội của H13 xử lý các đỉnh nhiệt do ma sát gây ra điển hình của phế liệu điện tử.\n\n**42CrMo (AISI 4140) — ELV & Phế liệu nặng:** Khối động cơ, vỏ hộp số, các đoạn thép cuộn và thép kết cấu. Khả năng hấp thụ năng lượng va chạm đặc biệt của 42CrMo (Charpy V-not > 35J) là sự lựa chọn tối ưu cho các ứng dụng tải trọng va đập nặng nhất trong phá hủy ô tô và kim loại.",
+      "Máy cắt hủy đa trục thay thế cho kim loại phế liệu, ELV và WEEE. Tùy chọn H13 và 42CrMo , với các lỗ có chốt hoặc có khóa tùy chỉnh để vẽ.",
     link: "/products/multi-shaft-blades-metal",
     isFeatured: true,
-    compatibleMachines: [
-      "Shred-Tech",
-      "Arjes",
-      "Forus",
-      "SSI Shredding",
-      "Bano",
-      "Hammel",
-    ],
     specs: [
       {
-        label: "Material",
+        label: "Vật liệu",
         value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
       },
       {
-        label: "Hardness",
-        value: "HRC 50–54 (Optimized for Shock Absorption)",
+        label: "độ cứng",
+        value: "HRC 50–54",
       },
       {
-        label: "Claw Geometry",
-        value: "1, 2, or 3 Low-Profile Thick Hooks",
+        label: "Hình học móng vuốt",
+        value: "1, 2 hoặc 3 móc dày có cấu hình thấp",
       },
       {
-        label: "Thickness",
-        value: "40 mm – 150 mm (Heavy Duty)",
+        label: "Thiết kế lỗ khoan",
+        value: "Đường nối nặng / Nhiều phím (Wire-EDM)",
       },
       {
-        label: "Bore Design",
-        value: "Heavy Splined / Multi-Keyway (Wire-EDM)",
+        label: "Đồ đạc OEM",
+        value: "Shred-Tech , Forus , Arjes , SSI , Hammel",
       },
       {
-        label: "OEM Fitment",
-        value: "Shred-Tech, Forus, Arjes, SSI, Hammel",
-      },
-      {
-        label: "Application",
-        value: "Scrap Metal · ELV · E-Waste · Appliances (WEEE)",
-      },
-    ],
-    components: [
-      {
-        id: "impact-alloy",
-        tag: "Luyện kim",
-        title: "Độ cứng lõi lớn",
-        description:
-          "Được tổ chức tại các hợp kim HRC 50–54, H13 và 42CrMo mang lại độ đàn hồi lõi lớn cần thiết để hấp thụ các tác động động học cực lớn, tránh được hiện tượng vỡ vụn thảm khốc điển hình của lưỡi dao D2.",
-      },
-      {
-        id: "heavy-spline",
-        tag: "CHUYỂN MÔ-men xoắn",
-        title: "Splines không trượt",
-        description:
-          "Các lỗ trục có chu vi đầy đủ được gia công bằng Wire-EDM đến ± 0,01mm đảm bảo truyền mô-men xoắn không trượt dưới tải trọng cắt nhỏ cực lớn, loại bỏ hư hỏng trục rôto.",
-      },
-      {
-        id: "low-profile-hooks",
-        tag: "HÌNH HỌC",
-        title: "Móc cắn cấu hình thấp",
-        description:
-          "1 đến 3 móc có độ dày rễ nặng cung cấp lực cắn tối đa trên mỗi hành trình để cắt vỏ kim loại dày mà không có nguy cơ gãy xương liên quan đến thiết kế nhiều móng.",
+        label: "Ứng dụng",
+        value:
+          "Phế liệu kim loại · ELV · Chất thải điện tử · Thiết bị gia dụng (WEEE)",
       },
     ],
     dimensionLabels: {
@@ -947,87 +1078,180 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "E-Waste / Light Scrap",
+        itemNo: "SR002201",
+        spec: "Rác thải điện tử / Phế liệu nhẹ",
         od: "Φ 300–450 mm",
         thickness: "40–60 mm",
-        bore: "Hex / Light Splined",
-        hooks: "3 Hooks",
+        bore: "Hex / Tách ánh sáng",
+        hooks: "3 móc",
       },
       {
-        spec: "Appliances / Steel Drums",
+        itemNo: "SR002202",
+        spec: "Thiết bị / Trống thép",
         od: "Φ 450–600 mm",
         thickness: "60–80 mm",
-        bore: "Medium Splined",
-        hooks: "2–3 Hooks",
+        bore: "Có rãnh vừa",
+        hooks: "2–3 móc",
       },
       {
-        spec: "ELV / Heavy Demolition",
+        itemNo: "SR002203",
+        spec: "ELV / Phá hủy nặng",
         od: "Φ 600–800+ mm",
         thickness: "80–150 mm",
-        bore: "Heavy Splined",
-        hooks: "1–2 Hooks",
+        bore: "Nặng nề",
+        hooks: "1–2 móc",
       },
     ],
-    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "scrap-chopper-blades",
+      "metal-shear-knives",
+    ],
     offers: {
       lowPrice: 250,
       highPrice: 3500,
     },
+    components: [
+      {
+        id: "multi-shaft-blades-metal-advantage-1",
+        tag: "Tùy chọn máy cắt H13 và 42CrMo",
+        title: "Tùy chọn máy cắt H13 và 42CrMo",
+        description:
+          "Cấu hình H13 và 42CrMo cung cấp các tùy chọn vật liệu cho bộ xử lý phế liệu cho máy cắt thay thế, với loại thép được chỉ định được xem xét cùng với dòng kim loại và thiết kế móc dày hiện có.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-2",
+        tag: "Cấu hình một, hai và ba móc",
+        title: "Cấu hình một, hai và ba móc",
+        description:
+          "Sureay cung cấp máy cắt móc dày có cấu hình thấp với cấu hình một, hai và ba móc được liệt kê. Các lỗ có rãnh then và có nhiều rãnh then có thể được tạo theo bản vẽ trục, với vị trí móc được xác định tương ứng với lỗ khoan.",
+      },
+      {
+        id: "multi-shaft-blades-metal-advantage-3",
+        tag: "Bộ thay thế theo vị trí trục",
+        title: "Bộ thay thế theo vị trí trục",
+        description:
+          "Có thể đặt hàng các dao cắt riêng lẻ và các bộ đa vị trí với các tham chiếu bản vẽ riêng biệt cho từng trục, hỗ trợ các thay đổi khi máy sử dụng nhiều chiều rộng hoặc biên dạng dao cắt.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Tại sao chọn H13 hoặc 42CrMo thay vì D2 cho các ứng dụng băm nhỏ kim loại?",
+            "Máy cắt máy hủy kim loại phế liệu thay thế được xác định như thế nào?",
           answer:
-            "D2 được tối ưu hóa để chống mài mòn nhưng phải đánh đổi bằng độ dẻo dai—nó đạt HRC 58–62 nhưng trở nên giòn khi chịu tải va đập cực mạnh. Khi lưỡi dao D2 chạm vào khối động cơ, năng lượng va chạm sẽ vượt quá độ bền gãy của vật liệu tính bằng micro giây, gây ra hiện tượng vỡ móc thảm khốc. H13 và 42CrMo (AISI 4140) vốn có độ dẻo dai vượt trội; ở HRC 50–54, chúng hấp thụ cùng một năng lượng va chạm một cách đàn hồi thay vì bị gãy.",
+            "Xác định vị trí trục và dao cắt, sau đó so sánh đường kính, độ dày trục, dạng móc và giao diện trục. Máy nhiều trục có thể sử dụng các thiết kế khác nhau trong cùng một buồng cắt. Kiểu máy, số bộ phận ban đầu và bản vẽ lắp ráp cung cấp thông tin tham khảo cho bộ thay thế, bao gồm mối quan hệ với các miếng đệm và dao cắt được giữ lại.",
         },
         {
           question:
-            "Tôi nên chỉ định số lượng móc và cấu hình nào cho việc băm nhỏ ô tô ELV?",
+            "Máy cắt, búa và dao cắt thép có thể hoán đổi cho nhau được không?",
           answer:
-            "Đối với việc băm nhỏ ELV sơ cấp (thân ô tô, cụm động cơ), chỉ định thiết kế cấu hình thấp 1 móc hoặc 2 móc với độ dày chân răng tối đa. Số vấu thấp tập trung mô-men xoắn sẵn có của máy vào ít điểm tiếp xúc móc chắc chắn hơn, tạo ra lực cắn lớn cần thiết để xuyên qua thép dày. Số lượng móng vuốt cao làm lan truyền mô-men xoắn quá mỏng, khiến lưỡi dao trượt trên kim loại thay vì cắn vào nó.",
+            "Không. Máy cắt quay xen kẽ trên trục máy hủy tài liệu, máy nghiền búa làm vỡ vật liệu do va chạm và [Alligator dao cắt thép](/products/metal-shear-knives) được cắt thành một cặp gắn hàm. Loại thiết bị xác định bộ phận hao mòn nào cần đặt hàng.",
         },
         {
           question:
-            "Làm thế nào để các lỗ có rãnh ngăn ngừa hư hỏng trục rôto khi băm nhỏ kim loại nặng?",
+            "Những đặc điểm phế liệu nào quan trọng khi lựa chọn vật liệu cắt?",
           answer:
-            "Trong quá trình băm nhỏ kim loại nặng, mô-men xoắn cực đại của rô-to tăng vọt lên mức tải ở trạng thái ổn định 3–5× khi va chạm mạnh. Các lỗ khóa đơn tiêu chuẩn tập trung tất cả mô-men xoắn này vào một điểm, dần dần mở rộng rãnh then và cuối cùng là cắt chìa khóa. Các lỗ có rãnh nối dây EDM phân phối đồng đều mô-men xoắn lớn này trên 10 đến 20 mặt tiếp xúc xung quanh toàn bộ chu vi, giảm ứng suất cực đại và bảo vệ trục rôto đắt tiền của bạn.",
+            "Các phần kim loại dày nhất, độ bền của cấp liệu và sự hiện diện của vật liệu hỗn hợp hoặc mài mòn ảnh hưởng đến tải trọng ở mép. Tấm thiết bị nhẹ, phế liệu điện tử và các phần kim loại dày đặc có thể tạo ra các kiểu mài mòn khác nhau. So sánh các điều kiện đó với thông số kỹ thuật H13 hoặc 42CrMo hiện có và tình trạng của các móc đã sử dụng.",
         },
         {
           question:
-            "Các dấu hiệu cảnh báo rằng dao máy cắt kim loại cần thay thế là gì?",
+            "Tại sao máy cắt kim loại phế liệu cứng hơn vẫn có thể bị gãy cạnh?",
           answer:
-            "Các dấu hiệu chính bao gồm: (1) Vết nứt chân tóc có thể nhìn thấy ở chân móc; (2) Độ mòn của đường kính ngoài (OD) vượt quá 10–15mm dưới mức danh nghĩa, cho thấy sự mất đi độ hở cắt; (3) Độ giãn dài của lỗ khoan, nghĩa là lưỡi dao lắc lư trên trục ngay cả khi có mô-men xoắn siết chặt hoàn toàn; (4) Công suất giảm >20% khi tải động cơ không đổi, cho thấy các lưỡi dao đang đẩy thay vì cắt mảnh vụn.",
+            "Độ cứng chỉ là một phần của đặc điểm kỹ thuật vật liệu. Tác động lặp đi lặp lại, tải tập trung ở móc và sự hỗ trợ không đầy đủ có thể gây ra gãy xương ngay cả khi độ mài mòn bị hạn chế. Đánh giá hình dạng dao cắt, tình trạng xử lý nhiệt và lượng cấp liệu thực tế cùng nhau trước khi thay đổi độ cứng, đặc biệt khi hư hỏng hiện tại là sứt mẻ cục bộ chứ không phải mài mòn dần dần.",
+        },
+        {
+          question:
+            "Có thể tùy chỉnh các lỗ khoan có rãnh và nhiều rãnh được tùy chỉnh không?",
+          answer:
+            "Đúng. Sureay có thể tạo giao diện trục với bản vẽ dao, bao gồm hình học rãnh then hoặc rãnh then, mặt tựa và hướng. Bản vẽ phải xác định vị trí các đặc điểm lỗ khoan liên quan đến biên dạng móc. Điều này đặc biệt hữu ích khi các dao cắt liền kề có đường kính tương tự nhưng kết nối xung nhịp hoặc trục khác nhau.",
+        },
+        {
+          question:
+            "Máy cắt kim loại phế liệu thay thế có thể giữ được hình dáng móc ban đầu không?",
+          answer:
+            "Đúng. Sử dụng số lượng móc, đường viền và độ dày thân ban đầu trên bản vẽ, với lỗ khoan được căn chỉnh theo hình dạng móc. Sử dụng tham chiếu chưa mòn để khôi phục hình dạng đầu mũi mong muốn nếu dao cắt cũ có móc bị sứt mẻ hoặc tròn.",
+        },
+        {
+          question:
+            "Làm cách nào để yêu cầu báo giá Bộ máy cắt phế liệu kim loại nhiều trục?",
+          answer:
+            "Cung cấp model máy, dòng phế liệu và các mặt cắt dày nhất, sau đó liệt kê bản vẽ và số lượng máy cắt theo trục và vị trí. Đánh dấu những miếng đệm và máy cắt nào sẽ tiếp tục được sử dụng. Các chi tiết đơn hàng riêng biệt phân biệt hình dạng móc có biên dạng thấp, chiều rộng trục và hướng lỗ khoan ngay cả khi đường kính dao cắt khớp nhau.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm kiểu máy, loại phế liệu, bản vẽ dao cắt và miếng đệm cũng như trục của bộ phận đó.",
+    compatibleMachines: ["Shred-Tech", "Forus", "Arjes", "SSI", "Hammel"],
+    detailLayout: {
+      sizeRange: "Ø300–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "Bạn có thể cung cấp lưỡi cắt cho nền tảng băm nhỏ Shred-Tech, Arjes hoặc Forus không?",
-          answer:
-            "Đúng. Chúng tôi thiết kế ngược các lưỡi dao thay thế từ các mẫu OEM được đo lường tại nhà máy cho dòng Shred-Tech ST, Arjes Imperator/Orion, máy hủy tài liệu hạng nặng Forus và nền tảng SSI. Cấu hình spline tùy chỉnh và các mẫu lỗ đối diện được tạo ra với độ chính xác cực cao bằng cách sử dụng Wire-EDM.",
+          label: "Vật liệu",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
         },
         {
-          question: "Thời gian sản xuất kim loại nặng dao máy cắt là bao lâu?",
-          answer:
-            "Các loại H13 và 42CrMo tiêu chuẩn ở các kích thước thông thường được lưu giữ ở dạng bán thành phẩm và thường được vận chuyển trong vòng 10–15 ngày làm việc. Đối với các OD lớn không chuẩn hoặc các cấu hình spline tùy chỉnh yêu cầu công cụ mới, thời gian thực hiện là 20–25 ngày làm việc.",
-        },
-        {
-          question: "Bạn cung cấp những chứng nhận và tài liệu chất lượng nào?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Đối với kim loại nặng dao máy cắt, chúng tôi cung cấp khả năng truy xuất nguồn gốc đầy đủ: báo cáo kiểm tra độ cứng Rockwell HRC (tối thiểu 5 điểm cho mỗi lưỡi), chứng chỉ kiểm tra tác động Charpy cho cấp 42CrMo, hồ sơ kiểm tra kích thước CMM và chứng chỉ thành phần nhà máy thép.",
+          label: "Ứng dụng",
+          value:
+            "Phế liệu kim loại · ELV · Chất thải điện tử · Thiết bị gia dụng (WEEE)",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Ø300–800+ mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "H13 (AISI H13 / 1.2344), 42CrMo (AISI 4140)",
+        },
+        {
+          label: "độ cứng",
+          value: "HRC 50–54",
+        },
+        {
+          label: "Hình học móng vuốt",
+          value: "1, 2 hoặc 3 móc dày có cấu hình thấp",
+        },
+        {
+          label: "Thiết kế lỗ khoan",
+          value: "Đường nối nặng / Nhiều phím (Wire-EDM)",
+        },
+        {
+          label: "Ứng dụng",
+          value:
+            "Phế liệu kim loại · ELV · Chất thải điện tử · Thiết bị gia dụng (WEEE)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Bao gồm kiểu máy, loại phế liệu, bản vẽ dao cắt và miếng đệm cũng như trục của bộ phận đó.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
     id: "twin-shaft-blades-battery",
-    name: "Lưỡi tái chế pin",
-    fullName: "Lưỡi máy hủy tài liệu trục đôi chính xác để tái chế pin Li-Ion",
+    name: "Dao nghiền xé pin và ắc quy để tái chế",
+    fullName: "Dao nghiền xé sơ bộ cho dây chuyền tái chế pin",
+    seoTitle: "Pin Tái Chế dao máy cắt | Thay thế tùy chỉnh",
     category: "shredder_blades",
     sector: "new_energy",
-    categoryDisplay: "Lưỡi máy hủy tài liệu",
+    categoryDisplay: "Dao máy nghiền xé",
     image: "/images/products/shredder-blades/shredder-blades.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 640],
+    },
     badge: "Năng lượng mới",
     badgeColor: "teal",
     gallery: [
@@ -1036,59 +1260,38 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/four-shaft-shredder-blade-00.webp",
     ],
     description:
-      "Được thiết kế để băm nhỏ trước các bộ pin, mô-đun và tế bào pin lithium-ion EV trong môi trường khí trơ. Mặt đất chính xác đến độ song song ± 0,02mm để đảm bảo độ hở cắt chính xác giúp ngăn chặn hiện tượng rách lá và thoát nhiệt. Lựa chọn hợp kim chuyên dụng và xử lý bề mặt chống lại tác động ăn mòn cao của chất điện phân pin LiPF6.",
-    fullDescription:
-      "Việc tái chế pin lithium-ion (Li-ion) đặt ra những thách thức cơ học và hóa học đặc biệt mà dao máy cắt tiêu chuẩn không thể giải quyết một cách đáng tin cậy. Việc băm nhỏ trước các bộ pin và tế bào hình trụ thường xảy ra trong môi trường được thanh lọc nitơ để ngăn chặn nguy cơ cháy và thoát nhiệt. dao máy cắt tiêu chuẩn bị hỏng sớm trong môi trường này thông qua hai cơ chế riêng biệt: ăn mòn chất điện phân từ LiPF6 và axit HF được giải phóng trong quá trình thủng tế bào và hỏng hóc cơ học do độ hở cắt không chính xác làm gấp lại thay vì cắt các lá thu dòng điện bằng đồng mỏng (8–12μm) và nhôm (15–20μm) bên trong pin.\n\n## Mài chính xác khe hở vi mô (± 0,02mm)\n\nNếu khe hở giữa các cánh quạt hai trục quay ngược chiều quá rộng, các lá pin sẽ không bị cắt mà chúng gấp, kéo căng và quấn quanh rôto, gây ra tình trạng kẹt ngay lập tức trong môi trường khí trơ. Việc xử lý kẹt rôto trong điều kiện nitơ đòi hỏi phải tắt hoàn toàn hệ thống, thanh lọc và loại bỏ thủ công—thời gian ngừng hoạt động hàng giờ tiêu tốn đáng kể N₂. Pin Sureay dao máy cắt được nối đất chính xác đến độ song song ±0,02mm trên toàn bộ mặt lưỡi, đảm bảo độ hở cắt nhất quán tối thiểu trên toàn bộ rôto để cắt sạch, có kiểm soát trên tế bào túi, mô-đun lăng trụ và bộ pin hình trụ 18650/21700.\n\n##Khả năng chống ăn mòn điện giải\n\nChất điện phân LiPF6 thủy phân khi tiếp xúc với độ ẩm không khí để tạo ra axit hydrofluoric (HF)—một trong những hóa chất công nghiệp ăn mòn mạnh nhất. Thép công cụ D2 hoặc SKD11 tiêu chuẩn bị ăn mòn nhanh chóng trong môi trường này, với hiện tượng rỗ bề mặt bắt đầu ở ranh giới hạt trong vòng 200–500 giờ hoạt động. Sureay áp dụng các phương pháp xử lý bề mặt chống ăn mòn chuyên dụng và chọn các loại hợp kim chống ăn mòn cho các ứng dụng tái chế pin, kéo dài đáng kể thời gian sử dụng dịch vụ.\n\n## Cấu hình lỗ khoan dây-EDM chính xác\n\nMáy hủy trước dùng pin hoạt động ở tốc độ rôto chính xác, được điều khiển bằng máy tính, trong đó phản ứng ngược từ lỗ khoan đến trục ảnh hưởng trực tiếp đến độ chính xác của vị trí lưỡi cắt và tính nhất quán của khe hở cắt. Tất cả các cấu hình lỗ khoan đều được gia công Wire-EDM đến ±0,01mm, đảm bảo độ hở quay bằng 0 có thể gây ra sự không đồng nhất về độ hở cắt trong quá trình băm nhỏ chính xác các lá pin.",
+      "Máy cắt quay thay thế cho máy hủy tài liệu tái chế pin. Cấu hình máy cắt tùy chỉnh và giao diện trục được thực hiện theo bản vẽ đã được phê duyệt.",
     link: "/products/twin-shaft-blades-battery",
     isFeatured: false,
     specs: [
       {
-        label: "Tolerance",
-        value: "±0.02 mm Thickness Parallelism",
+        label: "Sức chịu đựng",
+        value: "Độ dày song song ± 0,02 mm",
       },
       {
-        label: "Hardness",
+        label: "độ cứng",
         value: "HRC 54–58",
       },
       {
-        label: "Bore Design",
-        value: "Precision Wire-EDM Hex / Splined",
+        label: "Thiết kế lỗ khoan",
+        value: "Dây chính xác-EDM Hex / Spline",
       },
       {
-        label: "Surface",
-        value: "Anti-corrosion treatment available",
+        label: "Lớp phủ tùy chọn",
+        value: "Xử lý bề mặt chống ăn mòn có sẵn",
       },
       {
-        label: "Application",
-        value: "EV Battery Packs · Pouch Cells · 18650/21700",
+        label: "Ứng dụng",
+        value: "Bộ pin EV · Túi đựng pin · 18650/21700",
       },
       {
-        label: "Environment",
-        value: "Inert gas (N₂ / Ar) compatible",
+        label: "Môi trường",
+        value: "Tương thích với khí trơ (N₂ / Ar)",
       },
     ],
-    components: [
-      {
-        id: "micro-clearance",
-        tag: "CHÍNH XÁC",
-        title: "Độ dày song song ± 0,02mm",
-        description:
-          "Được nối đất chính xác đến dung sai độ dày siêu chặt, đảm bảo độ hở cắt nhất quán trên toàn bộ rôto để cắt sạch các lá pin đồng và nhôm mà không cần gấp hoặc quấn quanh rôto.",
-      },
-      {
-        id: "corrosion-resistance",
-        tag: "ĐỘ BỀN",
-        title: "Chống ăn mòn điện phân",
-        description:
-          "Phương pháp xử lý bề mặt và luyện kim chuyên dụng giúp tăng cường khả năng chống ăn mòn axit HF có nguồn gốc từ LiPF6, kéo dài thời gian bảo dưỡng lưỡi dao trong môi trường hóa chất tái chế pin khắc nghiệt.",
-      },
-      {
-        id: "wire-edm-bore",
-        tag: "PHÙ HỢP",
-        title: "Lỗ khoan chính xác dây-EDM",
-        description:
-          "Tất cả các cấu hình lỗ khoan đều được gia công đến ±0,01mm thông qua Wire-EDM, loại bỏ hiện tượng chuyển động quay gây ra sự không đồng nhất về khoảng cách cắt trong quá trình xử lý xếp chồng lá pin chính xác.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "lithium-battery-slitting-knives",
     ],
     dimensionLabels: {
       col0: "Loại tế bào / mô-đun",
@@ -1101,87 +1304,159 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Cylindrical / Pouch Cells",
+        itemNo: "SR002401",
+        spec: "Tế bào hình trụ / túi",
         od: "Φ 200–350 mm",
         thickness: "10–20 mm",
-        bore: "Hex / Splined",
+        bore: "Hex / Tách",
         hooks: "±0.02 mm",
       },
       {
-        spec: "EV Module / Battery Pack",
+        itemNo: "SR002402",
+        spec: "Mô-đun EV / Bộ pin",
         od: "Φ 400–600 mm",
         thickness: "30–50 mm",
-        bore: "Splined",
+        bore: "có rãnh",
         hooks: "±0.05 mm",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 300,
       highPrice: 3000,
     },
+    components: [
+      {
+        id: "twin-shaft-blades-battery-advantage-1",
+        tag: "Máy cắt trước máy hủy tài liệu dựa trên bản vẽ",
+        title: "Máy cắt trước máy hủy tài liệu dựa trên bản vẽ",
+        description:
+          "Sureay cung cấp máy cắt trước máy hủy tài liệu bằng pin thay thế cho bản vẽ và sửa đổi bộ phận được chỉ định. Độ cứng của dao được liệt kê là 54–58 HRC , với giao diện vật liệu, lớp hoàn thiện và trục được thiết lập theo thông số kỹ thuật của từng bộ phận riêng lẻ.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-2",
+        tag: "Lỗ khoan hình lục giác và rãnh nối dây-EDM",
+        title: "Lỗ khoan hình lục giác và rãnh nối dây-EDM",
+        description:
+          "Các giao diện trục lục giác và trục xoay có thể được sản xuất với độ dày dao cắt và hình học chỗ ngồi được chỉ định, do đó việc bố trí lỗ khoan và trục được xử lý theo cùng một thứ tự thay thế.",
+      },
+      {
+        id: "twin-shaft-blades-battery-advantage-3",
+        tag: "Xử lý bề mặt chống ăn mòn tùy chọn",
+        title: "Xử lý bề mặt chống ăn mòn tùy chọn",
+        description:
+          "Xử lý bề mặt chống ăn mòn tùy chọn có sẵn cho các cấu hình máy cắt được chỉ định, cho phép bao gồm yêu cầu hoàn thiện cùng với các yêu cầu về vật liệu và kích thước của bộ phận.",
+      },
+    ],
     faqs: {
       technical: [
         {
-          question:
-            "Tại sao dung sai độ dày ±0,02mm lại quan trọng đối với việc băm nhỏ trước bộ pin?",
+          question: "Giai đoạn tái chế pin nào sử dụng các máy cắt này?",
           answer:
-            "Bộ pin chứa các lá thu dòng bằng đồng và nhôm dày 8–20μm. Khi khe hở cắt giữa các lưỡi quay ngược chiều vượt quá khoảng 0,05mm, các lá kim loại sẽ biến dạng dẻo thay vì bị cắt—gấp và quấn quanh rôto, gây ra hiện tượng kẹt khi vận hành. Trong môi trường được lọc bằng nitơ, việc xử lý kẹt rô-to đòi hỏi phải tắt hoàn toàn hệ thống khí trơ, sơ tán và loại bỏ thủ công—thời gian ngừng hoạt động hàng giờ tiêu tốn đáng kể N₂. Việc giữ độ song song của lưỡi dao ở mức ±0,02 mm đảm bảo khe hở cắt tối thiểu nhất quán trên toàn bộ chiều dài rôto, ngăn ngừa hiện tượng lá nhôm quấn quanh trong điều kiện vận hành bình thường.",
+            "Những máy cắt quay này phục vụ giai đoạn cắt nhỏ trước của thiết bị tái chế pin. Các giai đoạn băm nhỏ sau này có dụng cụ khác nhau. Sản xuất pin sử dụng [Dao rạch pin](/products/lithium-battery-slitting-knives) cho lưới điện cực được phủ. Giai đoạn thiết bị và bản vẽ máy cắt hiện có xác định loại thiết bị thay thế nào thuộc về máy tái chế.",
         },
         {
           question:
-            "Điều gì gây ra hiện tượng ăn mòn lưỡi dao trong môi trường băm nhỏ pin lithium-ion?",
+            "Kích thước nào quyết định máy cắt pin có phù hợp hay không?",
           answer:
-            "LiPF6, muối điện phân lithium-ion phổ biến nhất, phản ứng với hơi ẩm trong khí quyển để tạo ra HF (axit hydrofluoric). Trong trường hợp tế bào bị thủng trong quá trình cắt nhỏ, ngay cả môi trường nitơ cũng chứa đủ độ ẩm dư để thủy phân một phần. Các loại thép công cụ tiêu chuẩn (D2, SKD11) bị ăn mòn nhanh chóng ở HF—rỗ bề mặt bắt đầu ở các ranh giới hạt trong vòng 200–500 giờ, làm suy giảm hình dạng cạnh và giảm hiệu quả cắt. Sureay áp dụng các phương pháp xử lý bề mặt chống ăn mòn chuyên dụng để kéo dài thời gian bảo dưỡng đáng kể ngoài thép công cụ tiêu chuẩn trong dây chuyền tái chế pin.",
+            "Sự phù hợp phụ thuộc vào biên dạng dao, lỗ khoan hoặc trục xoay, mặt tựa và vị trí trục phù hợp với cụm ban đầu. Chiều rộng của miếng đệm xác định vị trí của các máy cắt lân cận. Bản vẽ xếp chồng phân biệt các đường viền dao tương tự được gán cho các vị trí trục khác nhau.",
         },
         {
           question:
-            "Nên sử dụng máy hủy trục đôi hay trục đơn để xử lý trước pin Li-ion?",
+            "Máy cắt pin cũng có thể được sử dụng cho mô-đun hoặc gói không?",
           answer:
-            "Máy hủy trục đôi (trục kép) là tiêu chuẩn để giảm kích thước chính của bộ pin EV vì thiết kế mô-men xoắn cao, tốc độ thấp, quay ngược khiến các tế bào chịu lực cắt có kiểm soát thay vì va chạm. Chế độ hỏng hóc được kiểm soát này làm giảm các sự cố nhiệt cấp tính so với các máy va chạm một trục tốc độ cao. Do đó, các lưỡi trục đôi chính xác với độ hở cắt được kiểm soát là tiêu chuẩn cơ học ở giai đoạn đầu tiên, sau đó là quá trình xử lý tiếp theo.",
+            "Chỉ khi cấu hình được phê duyệt của máy bao gồm nguồn cấp dữ liệu đó. Ô, mô-đun và gói mô tả đầu vào và cùng kích thước dao cắt có thể tương ứng với các nhiệm vụ băm nhỏ khác nhau. Sử dụng tham chiếu bộ phận đã được phê duyệt cho dây chuyền đã lắp đặt của bạn và đánh giá bất kỳ thay đổi nguồn cấp dữ liệu nào theo yêu cầu quy trình của dây chuyền đó.",
         },
         {
           question:
-            "Những cấu hình lỗ khoan nào cần thiết cho nền tảng máy hủy pin được lọc bằng nitơ?",
+            "Vật liệu và xử lý bề mặt tùy chọn nên được chỉ định như thế nào?",
           answer:
-            "Máy hủy trước dùng pin của các nhà sản xuất chuyên dụng (dây chuyền tái chế pin Erdwich, Hosokawa, Metso và Andritz) sử dụng cấu hình trục rôto độc quyền có dung sai chính xác hơn so với máy hủy công nghiệp thông thường. Cần có các lỗ có rãnh xoắn và hình lục giác của dây EDMM có độ chính xác ±0,01mm để lắp rôto không hoạt động—bất kỳ phản ứng quay ngược nào ở tốc độ vận hành đều gây ra sự thay đổi khe hở cắt nhất quán và nguy cơ kẹt giấy bạc. Chúng tôi sản xuất các biên dạng lỗ khoan theo bản vẽ trục tùy chỉnh; vui lòng cung cấp bản vẽ biên dạng trục rôto để biết thông số kỹ thuật lỗ khoan chính xác.",
+            "Nêu rõ vật liệu và xử lý bề mặt theo yêu cầu của bản vẽ máy cắt dưới dạng các yêu cầu đặt hàng riêng biệt. Đối với biện pháp xử lý chống ăn mòn tùy chọn, hãy xác định lớp hoàn thiện được yêu cầu cùng với các kích thước hoàn thiện và bề mặt tiếp giáp. Việc lựa chọn phải tuân theo các yêu cầu thành phần của dây chuyền, bao gồm mọi hạn chế trong việc thay đổi vật liệu hoặc cấu hình bề mặt hiện có.",
+        },
+        {
+          question:
+            "Ngăn xếp dao cắt lỏng lẻo ảnh hưởng như thế nào đến lưỡi dao thay thế?",
+          answer:
+            "Nới lỏng bên trong dao cắt và ngăn đệm có thể làm giảm hiệu suất băm nhỏ và tăng nguy cơ hư hỏng bộ phận lắp ráp. Chỉ riêng các lưỡi cắt mới không thể khắc phục được chồng bị mòn hoặc không được cố định đúng mức. Xem xét tình trạng của nó so với các yêu cầu bảo trì của máy, đồng thời giữ lại các mặt tựa và kích thước trục được chỉ định khi đặt hàng máy cắt thay thế.",
+        },
+        {
+          question: "Làm cách nào để yêu cầu báo giá máy cắt trước dùng pin?",
+          answer:
+            "Gửi mô hình dây chuyền hoặc máy, bản vẽ và sửa đổi máy cắt đã được phê duyệt, số lượng theo vị trí trục cũng như vật liệu và xử lý bề mặt được yêu cầu. Chỉ định nguồn cấp dữ liệu được xử lý ở giai đoạn đó. Nếu bạn cần một phần sửa đổi, hãy đánh dấu các tính năng đã thay đổi cũng như kích thước chỗ ngồi và ngăn xếp được giữ lại trên bản vẽ.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình máy hủy tài liệu trước, bản vẽ máy cắt và miếng đệm đã được phê duyệt cũng như các yêu cầu về vật liệu hoặc bề mặt của bạn.",
+    disambiguation:
+      "Để biết cách sản xuất điện cực, hãy xem [Dao rạch điện cực dùng pin lithium](/products/lithium-battery-slitting-knives) .",
+    detailLayout: {
+      sizeRange: "Ø200–600 mm",
+      heroSpecs: [
         {
-          question:
-            "Bạn có thể cung cấp bộ rôto và dao phản diện phù hợp cho máy hủy trước bằng pin không?",
-          answer:
-            "Đúng. Đối với các dây chuyền tái chế pin trong đó tính nhất quán về độ hở cắt là tối quan trọng, chúng tôi cung cấp bộ lưỡi rô-to và dao phản lực cố định được nối đất với nhau thành một cặp phù hợp để đảm bảo khe hở cắt tổng hợp đáp ứng thông số kỹ thuật. Tất cả các bộ phù hợp đều bao gồm chứng chỉ xác minh khe hở ghi lại khoảng cách đo được tại nhiều điểm trên chiều dài rôto.",
-        },
-        {
-          question:
-            "Tài liệu chất lượng nào được cung cấp cho việc chứng nhận nhà máy tái chế pin?",
-          answer:
-            "Các cơ sở tái chế pin thường yêu cầu tài liệu chất lượng nâng cao để xác nhận quy trình. Chúng tôi cung cấp: Báo cáo kiểm tra kích thước CMM, hồ sơ đo độ tròn và độ song song, chứng chỉ quy trình xử lý bề mặt, truy xuất nguồn gốc vật liệu từ nhà máy thép được chứng nhận CoA cho đến khâu kiểm tra cuối cùng và kết quả kiểm tra độ cứng trên mỗi lưỡi dao. Các gói tài liệu dành riêng cho ứng dụng có thể được cung cấp cho các môi trường được kiểm soát IATF 16949 hoặc ISO 45001.",
-        },
-        {
-          question:
-            "Bạn có cung cấp lưỡi dao mẫu để xác nhận quy trình trước khi đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Đánh giá quy trình tái chế pin thường yêu cầu 2–4 lưỡi mẫu để xác minh độ vừa vặn và kiểm tra độ bền điện phân trước khi cam kết sản xuất. Thời gian thực hiện mẫu là 10–15 ngày làm việc đối với thông số kỹ thuật của loại pin. Chúng tôi có thể tham gia vào các cuộc gọi đánh giá kỹ thuật của khách hàng trong quá trình xác nhận.",
+          label: "Ứng dụng",
+          value: "Bộ pin EV · Túi đựng pin · 18650/21700",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Ø200–600 mm",
+        },
+        {
+          label: "Sức chịu đựng",
+          value: "Độ dày song song ± 0,02 mm",
+        },
+        {
+          label: "độ cứng",
+          value: "HRC 54–58",
+        },
+        {
+          label: "Thiết kế lỗ khoan",
+          value: "Dây chính xác-EDM Hex / Spline",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "Xử lý bề mặt chống ăn mòn có sẵn",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Bộ pin EV · Túi đựng pin · 18650/21700",
+        },
+        {
+          label: "Môi trường",
+          value: "Tương thích với khí trơ (N₂ / Ar)",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Bao gồm mô hình máy hủy tài liệu trước, bản vẽ máy cắt và miếng đệm đã được phê duyệt cũng như các yêu cầu về vật liệu hoặc bề mặt của bạn.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
     id: "tissue-log-saw-blades",
-    name: "Lưỡi cưa cuộn khăn giấy",
-    fullName: "Lưỡi cưa cuộn cao cấp để chuyển đổi khăn giấy và khăn tắm",
+    seoDescription:
+      "Cắt cuộn giấy vệ sinh, khăn bếp bằng lưỡi D2, Cr12MoV hoặc M2 HSS. Đường kính được liệt kê là 610–1000 mm, với kích thước tùy chỉnh lên tới 1200 mm.",
+    name: "Lưỡi cưa cắt cuộn giấy tissue",
+    fullName: "Lưỡi cưa cắt ngang cuộn giấy tissue",
     category: "log_saw_blades",
     sector: "paper",
     categoryDisplay: "Lưỡi giấy lụa",
     image: "/images/products/blades/tissue-log-saw-blades-05.webp",
-    badge: "Không có lõi nghiền",
-    badgeColor: "blue",
+    imageDimensions: {
+      width: 2000,
+      height: 2000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1108,
+      height: 1108,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/tissue-log-saw-blades-05.webp",
       "/images/products/blades/tissue-log-saw-blades-real-02.webp",
@@ -1191,17 +1466,15 @@ export const blades: Blade[] = [
       "/images/products/blades/tissue-log-saw-blades-02.webp",
     ],
     galleryAlts: [
-      "Hình dựng lưỡi cưa cuộn từ khăn giấy với mặt được đánh bóng như gương và các lỗ chốt truyền động",
-      "Chồng lưỡi cưa cuộn từ khăn giấy đã hoàn thiện trong thùng gỗ tại Sureay",
-      "Lưỡi cưa cuộn từ khăn giấy được đóng gói trong thùng gỗ với miếng bảo vệ cạnh trước khi vận chuyển",
-      "Lưỡi cưa cuộn từ khăn giấy Ø610mm D2, mặt được đánh bóng như gương với các lỗ chốt truyền động",
-      "Lỗ khoan Ø68,26mm và mẫu lỗ chốt truyền động cho máy cưa cuộn Fabio Perini",
-      "Mặt lưỡi cưa cuộn từ khăn giấy cho thấy lớp hoàn thiện đánh bóng như gương dưới ánh sáng xưởng",
+      "lưỡi cưa tròn để cắt cuộn giấy tissue hiển thị mặt được đánh bóng như gương và mô hình lỗ chốt truyền động",
+      "Bộ lưỡi cưa đĩa thành phẩm dùng để cắt cuộn khăn giấy đựng trong thùng đóng gói bằng gỗ tại Sureay",
+      "lưỡi cưa tròn để cắt cuộn giấy tissue được đóng gói trong thùng gỗ có miếng bảo vệ cạnh trước khi vận chuyển",
+      "lưỡi cưa tròn để cắt cuộn giấy tissue có mặt được đánh bóng và có lỗ lắp",
+      "Mẫu lỗ khoan và lỗ lắp ở giữa trên lưỡi cưa tròn để cắt cuộn giấy tissue",
+      "lưỡi cưa tròn để cắt cuộn giấy tissue mặt có bề mặt được đánh bóng như gương dưới ánh sáng nhà xưởng",
     ],
     description:
-      "Khăn giấy lưỡi cưa cuộn Ø610–Ø1200mm — D2/Cr12MoV được làm cứng chân không (HRC 58–60), được mài siêu nhỏ đến độ đảo ngang ≤0,15mm để cắt ngang không bị rung lắc. Loại bỏ lõi vụn và bụi giấy trên khăn giấy, khăn bếp & dây chuyền JRT. Tương thích mài CBN nội tuyến. OEM phù hợp với Fabio Perini, PCMC, Casmatic, Gambini & Bretting. Đường kính tùy chỉnh trong 10 ngày làm việc.",
-    fullDescription:
-      "Cắt ngang khăn giấy là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi khăn giấy. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.\n\nKhăn giấy Sureay lưỡi cưa cuộn được sản xuất từ ​​D2 (1.2379) và Cr12MoV thép dụng cụ gia công nguội cao cấp. Bởi vì những lưỡi dao khổng lồ này (lên tới Ø1200mm) quay với tốc độ RPM cực cao nên độ ổn định là trên hết. Mỗi lưỡi dao đều được làm cứng bằng chân không, được cân bằng độ căng và được mài nhỏ đến dung sai kích thước nghiêm ngặt được xác minh trên CMM đã hiệu chuẩn trước khi gửi đi:\n\n- **Độ đảo bên:** ≤0,15mm\n- **Độ đảo cạnh:** ≤0,10mm\n- **Mặt song song:** 0,05mm\n- **Độ đồng tâm (OD đến lỗ khoan):** ≤0,30mm\n- **Dung sai lỗ khoan:** Ø68,26mm (+0,05/0,00mm)\n\n## Khả năng tương thích mài sắc liên tục\n\nKhông giống như dao tròn tiêu chuẩn, máy cưa cuộn được mài sắc liên tục *trong* khi vận hành bằng bánh mài CBN (Cubic Boron Nitride) đồng bộ. xử lý nhiệt của Sureay nhắm tới HRC58–60. Phạm vi độ cứng cụ thể này đảm bảo lưỡi dao mài sạch với đá CBN mà không cần tải hoặc tráng men, duy trì chu kỳ cạnh sắc như dao cạo sau chu kỳ mà không tiêu tốn bánh mài đắt tiền của bạn.\n\n## Hình học góc xiên & Giảm bụi\n\nMô là một mạng lưới có mật độ thấp, diện tích bề mặt cao với cường độ nén gần như bằng không. Cắt nó với góc xiên quá dốc sẽ tạo ra lực nén, dẫn đến có quá nhiều bụi giấy (nguy cơ cháy nổ lớn đối với các dòng khăn được dán bằng keo xịt) và độ đặc của cạnh làm giảm độ mềm của cuộn. Chúng tôi sử dụng góc vát nông (15°–25°) để tách các sợi bằng lực cắt thuần túy. Kết hợp với mặt lưỡi được đánh bóng như gương (Ra<0,2μm), điều này mang lại những đường cắt hoàn hảo trên khăn giấy tắm 2 lớp và 3 lớp cao cấp.\n\n## Khả năng tương thích lỗ khoan của nền tảng OEM\n\n**Ø68,26mm (+0,05mm):** Fabio Perini (tất cả các dòng), máy cưa cuộn PCMC Forte/Elite, Körber/MTC.\n\n**Ø82,55mm:** Casmatic (nền tảng được cấp phép của Kimberly-Clark), hệ thống cưa cuộn OEM của bên thứ ba của Ý và Tây Ban Nha.\n\n**Ø60,00mm:** Máy cưa cuộn khổ lớn dành cho khăn lau công nghiệp, cuộn jumbo (JRT) và sản xuất giấy tắm không lõi (OD 870–1000mm).\n\nOD tùy chỉnh từ Ø610mm đến Ø1200mm được sản xuất theo đơn đặt hàng với thời gian thực hiện tiêu chuẩn là 10 ngày làm việc. Việc xem xét bản vẽ và xác nhận kích thước có sẵn trên công cụ đặt hàng đầu tiên.\n\n## Lớp phủ bề mặt tiên tiến\n\n**Mạ Chrome cứng:** Cung cấp khả năng chống ăn mòn trong môi trường nhà máy giấy có độ ẩm cao (>75% RH) và giảm hệ số bám dính của sợi khăn giấy, kéo dài khoảng thời gian chạy sạch giữa các chu kỳ mài lưỡi.\n\n**Lớp phủ Teflon (PTFE):** Tạo ra bề mặt có độ bôi trơn cao lướt qua các cuộn khăn bếp dày đặc, giảm đáng kể lực hút của động cơ và loại bỏ vết cháy trên mép giấy. Thông số kỹ thuật hàng đầu của dòng khăn bếp 3 lớp cao cấp.\n\n**Lớp phủ TiN PVD:** Titan nitrit lắng đọng hơi vật lý (2–3μm, HV2300+) kéo dài thời gian bảo dưỡng sắc bén trong hoạt động chu kỳ cao. Được khuyên dùng cho các nhãn hiệu khăn giấy cao cấp có thông số kỹ thuật nghiêm ngặt về ô nhiễm bụi.",
+      "Lưỡi cưa thay thế để cắt cuộn giấy vệ sinh và giấy lau bếp. Chọn thép D2, Cr12MoV hoặc thép gió M2 HSS, với lỗ tâm, sơ đồ lỗ lắp và biên dạng vát theo yêu cầu.",
     link: "/products/tissue-log-saw-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1217,141 +1490,69 @@ export const blades: Blade[] = [
       "Maflex",
       "MTorres",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379), Cr12MoV, M2 HSS",
-      },
-      {
-        label: "Diameter Capacity",
-        value: "Standard Ø610 mm up to Custom Ø1200 mm",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (Zero-wobble guaranteed)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Polished (Ra ≤0.2 μm)",
-      },
-      {
-        label: "Optional Coatings",
-        value: "Hard Chrome, Teflon (PTFE), TiN",
-      },
-      {
-        label: "Applications",
-        value: "Toilet Tissue, Kitchen Towels, Industrial Wipers (JRT)",
-      },
-      {
-        label: "Max Line Speed",
-        value: "300 strokes/min",
-      },
-      {
-        label: "Inspection Records Supplied",
-        value:
-          "Rockwell HRC report · CMM dimensional record · heat-treatment batch certificate, with every shipment",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Tuổi thọ của lưỡi cưa cuộn trên dây chuyền khăn giấy phụ thuộc vào cách thép phản ứng dưới quá trình mài CBN liên tục, chứ không chỉ dựa vào độ cứng. Hai loại thép dưới đây bao gồm hầu hết các ứng dụng khăn giấy và khăn bếp mà chúng tôi báo giá.",
-      rows: [
-        {
-          grade: "D2 / 1.2379",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Dây chuyền khăn giấy vệ sinh và khăn bếp tiêu chuẩn sử dụng mài CBN nội tuyến. Loại thép mặc định của chúng tôi.",
-          tradeoff:
-            "Giá trị tổng thể cao nhất. Không có tuổi thọ dài nhất trên sợi tái chế có hàm lượng tro cao.",
-        },
-        {
-          grade: "Cr12MoV",
-          hardness: "HRC 58–60",
-          bestFor:
-            "Dây chuyền mà chi phí lưỡi dao trên mỗi lần cắt quan trọng hơn tuổi thọ cạnh tuyệt đối; hỗ trợ mài lại có sẵn rộng rãi.",
-          tradeoff:
-            "Khả năng chống mài mòn thấp hơn một chút so với D2 trên sợi tái chế có tính mài mòn.",
-        },
-      ],
-      outro:
-        "Đối với các dây chuyền tốc độ cao chạy sợi tái chế có tính mài mòn cao với chất độn mài mòn, chúng tôi cũng báo giá thép M2 HSS, loại thép giữ được cạnh sắc lâu nhất giữa các lần mài nhưng nhạy cảm hơn với tình trạng của bánh mài CBN. Nếu bạn không chắc dây chuyền của mình cần loại thép nào, hãy cho chúng tôi biết loại sợi (nguyên chất hay tái chế), mật độ cuộn và số lần cắt mỗi phút bạn thực hiện. Chúng tôi chọn loại thép phù hợp với dây chuyền, chứ không phải ngược lại.",
-    },
-    componentsIntro:
-      "Cắt ngang khăn giấy là hoạt động cắt có mức đặt cược cao nhất trong dây chuyền chuyển đổi khăn giấy. Khiếm khuyết về kích thước ở giai đoạn này—lõi bìa cứng bị dập, phát sinh quá nhiều bụi hoặc các mặt cắt góc cạnh—lan truyền ngay vào các trạm đóng gói, gây ra tình trạng dừng dây chuyền và bị từ chối ở cấp độ người tiêu dùng.",
+    compatibleMachinesIntro:
+      "Sureay cung cấp lưỡi cưa thay thế bằng thép D2, Cr12MoV hoặc M2 HSS cho dây chuyền gia công giấy tissue. Lỗ tâm, sơ đồ lỗ lắp và biên dạng lưỡi được làm theo yêu cầu. Gửi bản vẽ để nhận báo giá phù hợp với máy cưa. Tên các hãng máy dùng để tham khảo khả năng tương thích của phụ tùng Sureay.",
     components: [
       {
-        id: "runout-control",
-        tag: "CHÍNH XÁC",
-        title: "Căng thẳng không lắc lư",
+        id: "tissue-log-saw-mounting",
+        tag: "Gắn hình học",
+        title: "Tùy chọn Thép công cụ và HSS để Chuyển đổi Khăn giấy",
         description:
-          "Tại sao cưa cuộn lại nghiền nát lõi bìa cứng? Hầu như luôn là do độ đảo bên đã vượt quá khoảng 0,20mm, và lưỡi dao bắt đầu đập vào lõi thay vì cắt nó. Lưỡi dao 610mm quay với tốc độ RPM cao sẽ bị cong vênh nếu không được căng đúng cách. Chúng tôi gia công CNC và mài vi mô từng lưỡi cưa cuộn đến độ lệch bên ≤0,15mm, đảm bảo lưỡi cưa cắt thẳng hoàn hảo mà không dao động và làm nát lõi bìa cứng mỏng manh.",
+          "Sureay cung cấp lưỡi tròn D2, Cr12MoV và M2 HSS để cắt cuộn để chuyển đổi khăn giấy và khăn bếp, mang đến cho bạn các lựa chọn vật liệu cho cách bố trí cưa và mài hiện có của bạn.",
       },
       {
-        id: "cbn-compatible",
-        tag: "Luyện kim",
-        title: "Sẵn sàng mài sắc CBN nội tuyến",
+        id: "tissue-log-saw-profile",
+        tag: "Hồ sơ lưỡi",
+        title: "Bề mặt được đánh bóng và xử lý bề mặt tùy chọn",
         description:
-          "Lưỡi D2 và Cr12MoV được xử lý nhiệt đạt HRC58–60. Phạm vi độ cứng cụ thể này đáp ứng rõ ràng với các bánh mài CBN liên tục mà không cần tải hoặc tráng men, duy trì cạnh sắc như dao cạo và bảo vệ thiết bị mài của bạn.",
+          "Các mặt lưỡi được đánh bóng bằng gương có sẵn với các tùy chọn mạ crôm cứng, PTFE hoặc TiN, cho phép lựa chọn thông số kỹ thuật bề mặt cùng với sản phẩm Khăn giấy và chất liệu lưỡi.",
       },
       {
-        id: "anti-friction",
-        tag: "SƠN PHỦ",
-        title: "Lớp hoàn thiện Teflon & Chrome",
+        id: "tissue-log-saw-replacement",
+        tag: "Tài liệu tham khảo thay thế",
+        title: "Các mẫu gắn tùy chỉnh và cấu hình góc xiên",
         description:
-          "Ma sát sinh ra nhiệt và bụi giấy dễ nổ. Lưỡi dao được phủ Chrome hoặc Teflon (PTFE) cứng làm giảm hệ số ma sát, mang lại các cạnh cắt nguyên sơ trên khúc khăn bếp 3 lớp cao cấp và kéo dài Thời gian trung bình giữa các chu kỳ mài.",
+          "Đặt hàng các lưỡi dao thay thế có lỗ khoan, kiểu lỗ truyền động, trục và góc xiên tùy chỉnh cho dây chuyền chuyển đổi của bạn. Đường kính được liệt kê bao gồm 610–1000 mm, với đường kính tùy chỉnh lên tới 1200 mm.",
+        relatedBladeIds: ["rotary-slitter-knives-paper"],
       },
     ],
-    dimensionLabels: {
-      col0: "Máy mục tiêu / Loại cuộn",
-      col1: "Đường kính ngoài (mm)",
-      col2: "Lỗ khoan / ID (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước tiêu chuẩn cho các OEM chuyển đổi khăn giấy lớn. Các lỗ chốt truyền động, rãnh then và kích thước lên tới Ø1200mm dành cho cuộn công nghiệp JRT được sản xuất theo thông số kỹ thuật chính xác.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "4.76",
+        label: "Kích cỡ",
+        value:
+          "OD được liệt kê Ø610–1000 mm; đường kính tùy chỉnh lên tới Ø1200 mm",
       },
       {
-        spec: "Fabio Perini / PCMC",
-        od: '610 (24")',
-        id: '68.26 (2-11/16")',
-        thickness: "3.80",
+        label: "Vật liệu",
+        value: "D2 (1.2379), Cr12MoV hoặc M2 HSS",
       },
       {
-        spec: "Casmatic Standard",
-        od: '610 (24")',
-        id: '82.55 (3-1/4")',
-        thickness: "4.76",
+        label: "Lớp phủ tùy chọn",
+        value: "Crom cứng, PTFE hoặc TiN",
       },
       {
-        spec: "Bretting / MTC",
-        od: "680",
-        id: "68.26",
-        thickness: "4.76",
+        label: "Ứng dụng",
+        value:
+          "Khăn giấy vệ sinh, khăn bếp, khăn lau công nghiệp và cuộn giấy lớn Khăn giấy",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "870",
-        id: "60",
-        thickness: "6.0",
+        label: "Dòng chảy bên",
+        value: "≤0.15 mm",
       },
       {
-        spec: "JRT / Industrial Roll",
-        od: "1000",
-        id: "60",
-        thickness: "6.0",
+        label: "Hết cạnh",
+        value: "≤0.10 mm",
+      },
+      {
+        label: "Hoàn thiện bề mặt",
+        value: "Được đánh bóng như gương, Ra 0,2 µm",
+      },
+      {
+        label: "Tỷ lệ cắt tham chiếu",
+        value: "Lên đến 300 nét/phút, tùy thuộc vào thiết lập cưa và cắt",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["nonwoven-log-saw-blades", "rotary-slitter-knives-paper"],
     offers: {
       lowPrice: 180,
       highPrice: 1200,
@@ -1360,75 +1561,182 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Tại sao cưa cuộn của tôi lại nghiền nát lõi bìa cứng của cuộn giấy vệ sinh?",
+            "Lưỡi cưa tròn thay thế nào để cắt cuộn giấy tissue phù hợp với dây chuyền chuyển đổi của tôi?",
           answer:
-            "Nghiền lõi chủ yếu là do lưỡi dao bị lung lay quá mức (chảo ngang) hoặc lưỡi cắt bị cùn. Khi độ lệch bên vượt quá 0,20mm, lưỡi dao sẽ đập vào lõi thay vì cắt nó. Các lưỡi của chúng tôi có độ căng được cân bằng và được CMM xác minh là có độ đảo ngang ≤0,15mm. Đồng thời, hãy xác minh rằng đá mài CBN trong dây chuyền của bạn được căn chỉnh chính xác và tích cực mài lưỡi dao trong mỗi chu kỳ.",
+            "Việc thay thế phải phù hợp với đường kính lưỡi, lỗ khoan, độ dày, trục, góc xiên và kiểu lỗ truyền động được chỉ định cho máy cưa. Hai lưỡi dao Ø610 mm có thể có lỗ khoan hoặc độ dày thân khác nhau, vì vậy hãy sử dụng tham chiếu dao ban đầu cũng như kiểu máy. Dao cắt giấy vệ sinh và lưỡi cưa cuộn giấy tissue đều có thể nói đến loại lưỡi cắt chéo hình tròn này. Để cắt vải theo chiều dọc, hãy xem [Dao xén giấy](/products/rotary-slitter-knives-paper) .",
+        },
+        {
+          question: "Tôi nên chọn giữa D2 , Cr12MoV và M2 HSS như thế nào?",
+          answer:
+            "Bắt đầu với chất liệu lưỡi dao hiện tại, Khăn giấy hoặc khăn lau hiện tại và cách sắp xếp mài sắc. So sánh độ mòn dần dần, hư hỏng cạnh và vết cắt được tạo ra giữa các chu kỳ mài. Thông số kỹ thuật thay thế phải kết hợp việc lựa chọn thép với phần vát và lưỡi hiện có để có thể đánh giá sự thay đổi vật liệu trong các điều kiện sản xuất tương đương.",
         },
         {
           question:
-            "Làm cách nào để giảm thiểu bụi và rách xơ trong quá trình cắt ngang khăn giấy?",
+            "Điều gì nên hướng dẫn việc lựa chọn lớp phủ cho lưỡi cưa tròn để cắt cuộn giấy tissue?",
           answer:
-            "Bụi được tạo ra khi lưỡi dao có độ ma sát cao làm rách các sợi khăn giấy thay vì cắt chúng. Chúng tôi thiết kế góc vát nông (15°–25°) kết hợp với bề mặt được đánh bóng như gương (Ra<0,2μm). Để giảm bụi tối đa, hãy nâng cấp lên các lưỡi được phủ Teflon (PTFE) của chúng tôi, giúp giảm ma sát đáng kể và cho phép lưỡi dao lướt qua cuộn với sự dịch chuyển sợi tối thiểu.",
+            "Hãy xem xét chất liệu lưỡi cắt, sản phẩm Khăn giấy và vị trí tồn tại cặn hoặc các vấn đề cắt liên quan đến nhiệt. Ma sát giữa lưỡi dao và cuộn có thể góp phần làm nóng. Chỉ định cách xử lý bề mặt được yêu cầu riêng biệt với loại thép và góc xiên, đồng thời so sánh các cấu hình được phủ và không phủ trong cùng điều kiện cắt.",
         },
         {
           question:
-            "Bạn có thể cung cấp lưỡi cưa cho máy cưa cuộn Fabio Perini, PCMC, Casmatic hoặc Gambini không?",
+            "Tại sao lưỡi cưa tròn dùng để cắt cuộn giấy tissue sau khi mài lại bị sứt vỏ?",
           answer:
-            "Đúng. Lỗ khoan Ø68,26mm (+0,05mm) tiêu chuẩn phù hợp trực tiếp với máy cưa cuộn Fabio Perini và PCMC Forte/Elite. Lỗ khoan Ø82,55mm bao gồm Casmatic và các nền tảng tương đương. Đối với máy Gambini và Bretting, chúng tôi sản xuất theo hình học đo được của lưỡi dao hiện tại của bạn hoặc bản vẽ riêng của bạn, để phần thay thế lắp vừa mà không cần điều chỉnh lại máy. Hãy gửi cho chúng tôi model máy, một lưỡi dao đã mòn, hoặc một bản phác thảo có kích thước và chúng tôi sẽ xác nhận độ vừa vặn trước khi báo giá.",
+            "Việc mài không đều xung quanh chu vi có thể tạo ra cạnh hình vỏ sò hoặc đa giác. Các kiểm tra liên quan bao gồm tình trạng bánh mài, sự tiếp xúc trên hai mặt và độ đảo của lưỡi dao được lắp. So sánh mẫu với lịch sử mài và làm theo quy trình mài của nhà sản xuất cưa trước khi chọn vật liệu thay thế khác.",
         },
         {
           question:
-            "Lưỡi dao tương tác với hệ thống mài CBN liên tục của máy như thế nào?",
+            "Tại sao trục và góc xiên lại quan trọng khi đường kính đã khớp?",
           answer:
-            "Máy cưa cuộn sử dụng đá CBN (Cubic Boron Nitride) đồng bộ để mài lưỡi liên tục trong quá trình vận hành. Nếu vật liệu làm lưỡi quá cứng hoặc quá mềm, nó sẽ tải hoặc tráng men đá, khiến chúng không còn hiệu quả. Lưỡi D2 của chúng tôi được xử lý nhiệt đến HRC58–60 loại bỏ các vi chip một cách sạch sẽ mà không làm tắc nghẽn bánh xe CBN của bạn.",
+            "Trung tâm thiết lập mối quan hệ lắp đặt của lưỡi dao, trong khi góc xiên xác định hình dạng cạnh làm việc của nó và tiếp xúc với các bánh mài. Hai con dao có cùng đường kính, lỗ khoan và độ dày thân có thể khác nhau về những đặc điểm này. Bản vẽ mặt cắt xác định cấu hình đầy đủ cần thiết của cưa và cách bố trí mài của nó.",
         },
         {
           question:
-            "Đường kính lưỡi dài nhất bạn có thể sản xuất là bao nhiêu?",
+            "Có nên sử dụng đường kính của lưỡi cắt lại để thay thế mới không?",
           answer:
-            "Chúng tôi sản xuất khăn giấy lưỡi cưa cuộn có đường kính lên đến Ø1200mm cho dây chuyền sản xuất khăn lau công nghiệp khổ lớn và cuộn jumbo (JRT). Những công việc này đòi hỏi phải có lò nung chân không xử lý nhiệt khổ lớn và thiết bị mài CNC của chúng tôi. Thời gian thực hiện tiêu chuẩn là 10 ngày làm việc kể từ khi ký kết bản vẽ.",
+            "Sử dụng đường kính lưỡi mới ban đầu nếu có. Việc mài đi lặp lại sẽ làm giảm đường kính bên ngoài, vì vậy hãy ghi lại kích thước mặt đất riêng biệt. Số Mục trong danh mục cung cấp kích thước được liệt kê và bản vẽ lưỡi bổ sung thêm hình học trục, giá đỡ và góc xiên để thay thế mới.",
+        },
+        {
+          question:
+            "Bạn cần thông tin gì để báo giá lưỡi cưa đĩa cắt cuộn giấy tissue?",
+          answer:
+            "Chia sẻ mẫu cưa, bản vẽ hoặc tham chiếu lưỡi cưa gốc, số lượng và sản phẩm Khăn giấy bạn cắt. Bao gồm đường kính và độ dày của lưỡi dao mới, lỗ khoan, cách bố trí chốt truyền động, mặt cắt ngang trục và góc xiên. Chỉ định loại thép được yêu cầu và độ hoàn thiện nếu đã được xác định, đồng thời dán nhãn đường kính hiện tại riêng nếu mẫu đã được nghiền lại.",
         },
       ],
-      company: [
-        {
-          question: "Bạn là nhà sản xuất hay công ty thương mại?",
-          answer:
-            "Nhà sản xuất trực tiếp. Chúng tôi rèn, mài và kiểm tra chất lượng từng lưỡi dao trong nhà theo chứng nhận ISO 9001:2015. Bạn giao tiếp trực tiếp với các kỹ sư sản xuất đã tạo ra lưỡi dao của bạn — không cần đánh dấu từ người bán lại.",
-        },
-        {
-          question:
-            "Bạn có cung cấp bánh mài CBN phù hợp cùng với lưỡi dao không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ đá mài CBN phù hợp được thiết kế cho lưỡi cưa cuộn của chúng tôi, đảm bảo góc mài chính xác, độ cứng liên kết và hạt mài mòn để có tuổi thọ lưỡi tối đa và độ mòn đá tối thiểu.",
-        },
-        {
-          question: "Sureay có những chứng nhận chất lượng nào?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước CMM và chứng chỉ lô xử lý nhiệt. Giấy chứng nhận của nhà máy và báo cáo truy xuất nguồn gốc nguyên liệu đầy đủ có sẵn theo yêu cầu.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Bao gồm mô hình cưa cắt cuộn, vật liệu cuộn, đường kính ngoài của lưỡi, lỗ khoan, độ dày, kiểu vát và lỗ chốt dẫn động.",
+    dimensionLabels: {
+      col1: "Đường kính ngoài (mm)",
+      col2: "Lỗ khoan (mm)",
+      col3: "Độ dày cơ thể (mm)",
+      intro:
+        "Mỗi Mã số xác định sự kết hợp hoàn chỉnh giữa đường kính bên ngoài, lỗ khoan và độ dày thân.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005101",
+        od: "610",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005102",
+        od: "610",
+        id: "68.26",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005103",
+        od: "610",
+        id: "82.55",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005104",
+        od: "680",
+        id: "68.26",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005105",
+        od: "870",
+        id: "60",
+        thickness: "6.0",
+      },
+      {
+        itemNo: "SR005106",
+        od: "1000",
+        id: "60",
+        thickness: "6.0",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lưỡi cưa cắt cuộn giấy tissue | Ø610–1000 mm",
+      heroAlt:
+        "lưỡi cưa tròn để cắt cuộn giấy tissue có lưỡi cắt tròn, lỗ khoan ở giữa và lỗ lắp",
+      sizeRange: "Ø610–1000 mm",
+      heroSpecs: [
+        {
+          label: "Ứng dụng",
+          value: "cắt cuộn khăn giấy và khăn bếp",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value:
+            "OD được liệt kê Ø610–1000 mm; đường kính tùy chỉnh lên tới Ø1200 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "D2 (1.2379), Cr12MoV hoặc M2 HSS",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "Crom cứng, PTFE hoặc TiN",
+        },
+        {
+          label: "Ứng dụng",
+          value:
+            "Khăn giấy vệ sinh, khăn bếp, khăn lau công nghiệp và cuộn giấy lớn Khăn giấy",
+        },
+        {
+          label: "Dòng chảy bên",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Hết cạnh",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Hoàn thiện bề mặt",
+          value: "Được đánh bóng như gương, Ra 0,2 µm",
+        },
+        {
+          label: "Tỷ lệ cắt tham chiếu",
+          value: "Lên đến 300 nét/phút, tùy thuộc vào thiết lập cưa và cắt",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/tissue-log-saw-blades-02.webp",
+        alt: "lưỡi cưa tròn để cắt cuộn giấy tissue lộ mặt và khu vực lắp đặt trung tâm",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho lưỡi cắt tròn của bạn để cắt cuộn",
+        description:
+          "Bao gồm Mã số hoặc tài liệu tham khảo về dao ban đầu, mẫu cưa, bản vẽ lắp và góc xiên cũng như số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Bao gồm Mã số hoặc tài liệu tham khảo về dao ban đầu, mẫu cưa, bản vẽ lắp và góc xiên cũng như số lượng.",
   },
   {
     id: "nonwoven-log-saw-blades",
-    name: "Lưỡi cưa cuộn cho vải không dệt",
-    fullName:
-      "Lưỡi cưa cuộn chống ăn mòn cho chuyển đổi vải không dệt và sản phẩm vệ sinh",
+    name: "Lưỡi cưa cắt cuộn vải không dệt",
+    fullName: "Lưỡi cưa cắt ngang cuộn vải không dệt",
     category: "log_saw_blades",
     sector: "converting",
     categoryDisplay: "Lưỡi dao chuyển đổi vải không dệt",
     image: "/images/products/blades/nonwoven-log-saw-blades-01.webp",
-    badge: "Chống ăn mòn",
-    badgeColor: "teal",
+    imageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1000,
+      height: 1000,
+      smallerWidths: [320, 480],
+    },
     gallery: [
       "/images/products/blades/nonwoven-log-saw-blades-01.webp",
       "/images/products/blades/nonwoven-log-saw-blades-02.webp",
       "/images/products/blades/nonwoven-log-saw-blades-03.webp",
     ],
     description:
-      "Lưỡi cưa cuộn được thiết kế cho các dây chuyền chuyển đổi vải không dệt và sản phẩm vệ sinh — khăn ướt cho bé, khăn ướt, sản phẩm vệ sinh phụ nữ và tã người lớn. Thép dụng cụ D2 với lớp phủ chống ăn mòn TiN hoặc mạ crôm cứng chịu được dung dịch gốc cồn, kem dưỡng và chất hoạt động bề mặt. Mài tinh đến độ đảo hướng tâm ≤0,15 mm cho vết cắt không xơ tước trên nền vải spunbond, meltblown, SMS và airlaid. Tương thích với các dây chuyền Fameccanica, GDM, Curt G. Joa và Zuiko. Đường kính tùy chỉnh trong 10 ngày làm việc.",
-    fullDescription:
-      "Các dây chuyền chuyển đổi vải không dệt cho sản phẩm vệ sinh đặt ra những yêu cầu về lưỡi dao hoàn toàn khác so với hoạt động sản xuất khăn giấy. Trong khi lưỡi cưa cuộn cho khăn giấy phải xử lý bụi giấy và tình trạng dập lõi, lưỡi cưa cho vải không dệt lại gặp phải hai kiểu hỏng hóc khác biệt: xơ tước sợi do nền vải tổng hợp chống lại việc cắt gọn, và ăn mòn tăng nhanh do môi trường hóa chất trên các dây chuyền sử dụng cồn, kem dưỡng, chất bảo quản (phenoxyethanol) và chất hoạt động bề mặt trong điều kiện độ ẩm cao.\n\nLưỡi cưa cuộn cho vải không dệt của Sureay được chế tạo từ thép dụng cụ D2 (1.2379) hàm lượng carbon cao, crôm cao, và có sẵn với các lớp phủ chống ăn mòn phù hợp theo từng ứng dụng. Mỗi lưỡi dao đều được tôi chân không, cân bằng ứng suất và kiểm tra bằng máy đo tọa độ (CMM) trước khi xuất xưởng.\n\n## Vì sao lưỡi dao cho khăn giấy không phù hợp với dây chuyền vải không dệt\n\nCác loại màng composite polypropylene spunbond, meltblown và SMS về cơ bản khó cắt gọn hơn nhiều so với khăn giấy xenlulo. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một lưỡi dao cùn hoặc hơi đảo thay vì tách gọn, tạo ra các cạnh cắt xơ tước, có sợi thừa gây ra lỗi gấp và đóng gói ở công đoạn sau. Một lưỡi dao được tối ưu cho khăn giấy (góc vát nông hơn, nền mềm hơn để tương thích với đá mài CBN) sẽ gây ra hiện tượng bung sợi rõ rệt trên nền spunbond chỉ sau một phần nhỏ thời gian vận hành mà nó đạt được trên khăn giấy.\n\nMôi trường hóa chất càng làm trầm trọng thêm vấn đề này. Các dây chuyền khăn ướt vận hành với tỷ lệ tẩm ướt 2,0–3,5× (khối lượng dung dịch so với khối lượng nền vải), nghĩa là lưỡi dao liên tục tiếp xúc với hóa chất tẩm: thường là 80–95% nước tinh khiết cộng với chất bảo quản, chất giữ ẩm và chất hoạt động bề mặt. Thép D2 tiêu chuẩn không qua xử lý bề mặt sẽ xuất hiện rỗ vi mô tại lưỡi cắt chỉ sau vài tuần, làm tăng tốc độ suy giảm lưỡi cắt và tăng nguy cơ nhiễm hạt trong sản phẩm vốn đòi hỏi độ vệ sinh nghiêm ngặt.\n\n## Các lựa chọn lớp phủ cho môi trường vệ sinh\n\n**Lớp phủ TiN PVD (2–3 µm, HV 2300+):** Titan nitride lắng đọng bằng phương pháp hơi vật lý tạo ra một lớp rào cản trơ về mặt hóa học với độ bám dính tuyệt vời. Ngăn cồn và chất hoạt động bề mặt xâm nhập vào nền lưỡi dao, kéo dài chu kỳ bảo dưỡng lưỡi cắt và bổ sung một lớp cứng chống mài mòn vi mô từ các hạt SAP (polymer siêu thấm) có trong dây chuyền lõi thấm hút. Khuyến nghị cho chuyển đổi khăn ướt và tã người lớn.\n\n**Mạ crôm cứng:** Lớp crôm cứng mạ điện (20–30 µm) mang lại khả năng chống ăn mòn vượt trội trong môi trường độ ẩm cao (≥75% RH) và giảm hệ số ma sát với màng sợi tổng hợp. Lớp dày hơn cũng lấp đầy các lỗ vi mô trên bề mặt, tạo hiệu ứng bịt kín chống lại sự xâm nhập của chất tẩy rửa trong các chu kỳ rửa.\n\n**D2 không phủ (tiêu chuẩn):** Phù hợp cho các dây chuyền chuyển đổi vải không dệt khô — airlaid, thermobond, spunlace — nơi không có hóa chất tẩm ướt. Độ cứng HRC 58–60, tương thích với mài đá CBN.\n\n## Hình học góc vát cho sợi tổng hợp\n\nNền vải không dệt yêu cầu góc vát chính hơi dốc hơn (25°–35°) so với khăn giấy (15°–25°). Hình học dốc hơn tập trung lực cắt tại điểm tiếp xúc của lưỡi cắt, khởi động sự tách sợi gọn gàng thay vì độ lệch đàn hồi gây ra xơ tước. Đối với các cuộn khăn ướt tẩm kem dưỡng có độ liên kết cao, góc vát kép (vát chính + vát phụ) mang lại bề mặt cắt sạch nhất với độ cuộn mép tối thiểu trong các chu kỳ vận hành kéo dài.\n\n## Dung sai kích thước\n\n- **Độ đảo hướng tâm:** ≤0,15 mm\n- **Độ đảo mép cắt:** ≤0,10 mm\n- **Độ song song bề mặt:** 0,05 mm\n- **Độ đồng tâm (đường kính ngoài so với lỗ trục):** ≤0,30 mm\n- **Độ hoàn thiện bề mặt:** Đánh bóng gương (Ra ≤0,2 µm)\n\n## Khả năng tương thích với nền tảng OEM\n\nLưỡi cưa cuộn cho chuyển đổi vải không dệt vệ sinh khác với dây chuyền khăn giấy về thông số lỗ trục và đường kính. Các nền tảng phổ biến:\n\n**Fameccanica (Ý):** Dây chuyền chuyển đổi tã em bé và sản phẩm vệ sinh phụ nữ; đường kính lưỡi dao thường từ Ø400–Ø550 mm tùy theo định dạng sản phẩm và đường kính cuộn.\n\n**GDM (Ý):** Dây chuyền sản phẩm vệ sinh tốc độ cao; thông số lưỡi dao theo bản vẽ của khách hàng.\n\n**Curt G. Joa (Mỹ):** Dây chuyền tã người lớn và sản phẩm vệ sinh phụ nữ tại Bắc Mỹ; có sẵn thông số lỗ trục theo hệ inch.\n\n**Zuiko (Nhật Bản):** Chuyển đổi tã em bé; kích thước lưỡi dao theo bản vẽ OEM.\n\n**Các nhà sản xuất OEM nội địa Trung Quốc (Zlink, Dachang, các nhà chế tạo tại khu vực Tuyền Châu):** Thông số lưỡi dao được cung cấp theo bản vẽ hoặc dịch ngược từ mẫu.\n\nĐường kính ngoài tùy chỉnh từ Ø350 mm đến Ø700 mm được sản xuất theo đơn đặt hàng. Có sẵn dịch vụ xem xét bản vẽ và phê duyệt kích thước mẫu đầu tiên.",
+      "Lưỡi tròn thay thế D2 dùng để cắt cuộn dùng để cắt ngang cuộn vải không dệt. Các lỗ khoan tùy chỉnh, mẫu lỗ lắp và cấu hình lưỡi dao được tạo theo bản vẽ dao của bạn.",
     link: "/products/nonwoven-log-saw-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -1439,102 +1747,63 @@ export const blades: Blade[] = [
       "Zlink",
       "Dachang",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (1.2379) — HRC 58–60",
-      },
-      {
-        label: "Coating Options",
-        value: "TiN PVD | Hard Chrome | Uncoated",
-      },
-      {
-        label: "Lateral Runout",
-        value: "≤0.15 mm (CMM-verified)",
-      },
-      {
-        label: "Edge Runout",
-        value: "≤0.10 mm",
-      },
-      {
-        label: "Diameter Range",
-        value: "Ø350 mm – Ø700 mm (custom to drawing)",
-      },
-      {
-        label: "Applications",
-        value: "Baby Wipes, Wet Wipes, Femcare, Adult Incontinence Rolls",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Đặt hàng lưỡi tròn thay thế D2 để cắt cuộn cho thiết bị cắt cuộn vải không dệt của bạn, với các lỗ và kiểu lắp tùy chỉnh cùng với các tùy chọn không tráng phủ, TiN hoặc crom cứng. Gửi bản vẽ hoặc mẫu của bạn và Sureay sẽ chuẩn bị báo giá cho cấu hình của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi của Sureay.",
     components: [
       {
-        id: "corrosion-coating",
-        tag: "LỚP PHỦ",
-        title: "TiN và crôm cứng cho khả năng chống hóa chất",
+        id: "nonwoven-log-saw-installation",
+        tag: "Hình học lắp đặt",
+        title: "D2 Dao cuộn vải không dệt",
         description:
-          "Các dây chuyền khăn ướt và sản phẩm vệ sinh liên tục tiếp xúc với cồn, chất hoạt động bề mặt và chất bảo quản gây ăn mòn lưỡi thép dụng cụ trần chỉ sau vài tuần. Lớp phủ TiN PVD (HV 2300+) và mạ crôm cứng của chúng tôi tạo ra một rào cản trơ về mặt hóa học, ngăn chặn sự xâm nhập tại lưỡi cắt và kéo dài chu kỳ vận hành sạch giữa các lần mài lại.",
+          "Sureay cung cấp lưỡi tròn D2 để cắt các cuộn có độ cứng được liệt kê là 58–60 HRC để cắt ngang các cuộn vải không dệt. Biên dạng cắt và phần lưỡi cắt có thể được chỉ định cho thiết bị cắt cuộn được lắp đặt.",
       },
       {
-        id: "nonwoven-bevel",
-        tag: "HÌNH HỌC",
-        title: "Biên dạng góc vát cho sợi tổng hợp",
+        id: "nonwoven-log-saw-edge",
+        tag: "Hình học cạnh",
+        title: "Tùy chọn không tráng phủ, TiN và Chrome cứng",
         description:
-          "Các màng spunbond, meltblown và SMS bị lệch đàn hồi trước một góc vát theo tiêu chuẩn khăn giấy, gây ra hiện tượng xơ tước sợi rõ rệt trên bề mặt cắt. Chúng tôi áp dụng góc vát chính dốc hơn (25°–35°) với vát phụ kép, giúp khởi động sự tách sợi gọn gàng ngay từ lần tiếp xúc đầu tiên — loại bỏ hiện tượng bung sợi và dồn nén mép cắt vốn gây ra phế phẩm trên dây chuyền đóng gói.",
+          "Lưỡi dao không tráng phủ, TiN PVD và cấu hình crom cứng cung cấp cho bạn các tùy chọn bề mặt để đặt hàng thay thế, với lớp phủ được chỉ định riêng biệt với hình dạng lưỡi dao.",
       },
       {
-        id: "runout-hygiene",
-        tag: "ĐỘ CHÍNH XÁC",
-        title: "Độ đảo ≤0,15 mm cho vết cắt không xơ tước",
+        id: "nonwoven-log-saw-reference",
+        tag: "Nhận dạng bộ phận",
+        title: "Lỗ khoan tùy chỉnh và kiểu lắp đặt hoàn chỉnh",
         description:
-          "Cuộn vải không dệt mềm hơn và dễ nén hơn so với cuộn khăn giấy. Bất kỳ độ đảo hướng tâm nào của lưỡi dao đều trực tiếp dẫn đến bề mặt cắt bị nén, xù xì thay vì một mặt phẳng cắt gọn gàng. Mỗi lưỡi dao đều được cân bằng ứng suất và kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm trước khi xuất xưởng, đảm bảo lưỡi dao đi vào cuộn vải theo một góc ổn định ở mỗi nhát cắt.",
+          "Các lỗ trung tâm tùy chỉnh, tính năng cố định và bề mặt định vị cho phép dao thay thế tuân theo bản vẽ cưa hiện có của bạn, bao gồm các cấu hình có chung đường kính nhưng sử dụng các ngàm khác nhau.",
+        relatedBladeIds: ["nonwoven-slitter-knives"],
       },
     ],
-    dimensionLabels: {
-      col0: "Nền tảng máy / Định dạng sản phẩm",
-      col1: "Đường kính ngoài (mm)",
-      col2: "Lỗ trục / Đường kính trong (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước tham khảo cho các nền tảng chuyển đổi vải không dệt vệ sinh phổ biến. Kiểu lỗ trục, rãnh then và lỗ chốt truyền động được chế tạo theo bản vẽ của khách hàng. Đường kính ngoài tùy chỉnh Ø350–Ø700 mm có sẵn với thời gian giao hàng 10 ngày làm việc.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Baby Wipe / Wet Wipe (short log)",
-        od: "400",
-        id: "To drawing",
-        thickness: "3.80",
+        label: "Ứng dụng",
+        value: "Cuộn vải không dệt cắt ngang",
       },
       {
-        spec: "Baby Wipe / Wet Wipe (standard log)",
-        od: "450",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "Vật liệu",
+        value: "D2 (1.2379)",
       },
       {
-        spec: "Femcare / Sanitary Napkin Roll",
-        od: "500",
-        id: "To drawing",
-        thickness: "4.00",
+        label: "độ cứng",
+        value: "58–60 HRC",
       },
       {
-        spec: "Adult Incontinence / Large Format",
-        od: "550",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Kích cỡ",
+        value: "Ø350–700 mm",
       },
       {
-        spec: "Industrial / Canister Wipe Roll",
-        od: "600",
-        id: "To drawing",
-        thickness: "4.76",
+        label: "Lớp phủ tùy chọn",
+        value: "TiN PVD hoặc crom cứng; lưỡi không tráng cũng có sẵn",
       },
       {
-        spec: "Custom / OEM to Drawing",
-        od: "Ø350–700",
-        id: "To drawing",
-        thickness: "3.80–6.00",
+        label: "Chạy ngang",
+        value: "≤0.15 mm",
+      },
+      {
+        label: "Hết cạnh",
+        value: "≤0.10 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "rotary-slitter-knives-paper"],
+    relatedBladeIds: ["tissue-log-saw-blades", "nonwoven-slitter-knives"],
     offers: {
       lowPrice: 150,
       highPrice: 900,
@@ -1543,75 +1812,161 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Vì sao lưỡi dao của chúng tôi bị ăn mòn nhanh trên dây chuyền chuyển đổi khăn ướt?",
+            "Làm cách nào để xác định loại dao tròn thay thế cho các cuộn vải không dệt cắt ngang?",
           answer:
-            "Các dây chuyền khăn ướt liên tục khiến lưỡi dao tiếp xúc với chất bảo quản (phenoxyethanol), chất hoạt động bề mặt và dung dịch gốc cồn trong điều kiện độ ẩm cao. Thép dụng cụ D2 trần sẽ xuất hiện rỗ vi mô tại lưỡi cắt chỉ sau vài tuần trong các điều kiện này, làm tăng tốc độ mài mòn và tạo nguy cơ nhiễm hạt. Giải pháp là xử lý bề mặt chống ăn mòn: lớp phủ TiN PVD (2–3 µm, HV 2300+) tạo ra rào cản trơ về mặt hóa học chống lại sự xâm nhập của cồn và chất hoạt động bề mặt, trong khi mạ crôm cứng bịt kín các lỗ vi mô trên bề mặt chống lại sự thẩm thấu của chất tẩy rửa trong các chu kỳ rửa.",
+            "Xác định tham chiếu của cưa và bộ phận ban đầu, sau đó so sánh đường kính, lỗ khoan, độ dày, kiểu lắp và góc xiên. Lưỡi cắt cuộn vải không dệt là tên mua hàng liên quan. Xác nhận rằng bộ phận cắt ngang một cuộn vết thương. Để cắt một màng chuyển động theo chiều dọc, xem [Dao xén vải không dệt](/products/nonwoven-slitter-knives) .",
         },
         {
           question:
-            "Lưỡi dao của chúng tôi để lại cạnh cắt xơ tước, có sợi thừa trên cuộn vải không dệt spunbond. Nguyên nhân là gì?",
+            "Sureay có thể tạo mẫu lỗ và lỗ tùy chỉnh cho máy cưa hiện có không?",
           answer:
-            "Hiện tượng xơ tước trên nền PP spunbond hoặc SMS do hai yếu tố gây ra: hình học góc vát không đúng và/hoặc độ đảo hướng tâm quá mức. Sợi tổng hợp có tính đàn hồi — chúng bị lệch trước một góc vát nông theo tiêu chuẩn khăn giấy (15°–25°) thay vì cắt gọn. Nền vải không dệt cần góc vát chính dốc hơn (25°–35°) để tập trung lực cắt tại điểm tiếp xúc với sợi. Ngoài ra, độ đảo hướng tâm vượt quá 0,20 mm khiến lưỡi dao nén cuộn vải thay vì cắt, tạo ra các cạnh xù xì. Lưỡi dao cho vải không dệt của chúng tôi được kiểm tra bằng CMM đạt độ đảo hướng tâm ≤0,15 mm và được mài với biên dạng góc vát kép tối ưu cho sợi tổng hợp.",
+            "Đúng. Sureay có thể tạo các mẫu lỗ khoan và bu lông hoặc khe để vẽ. Nêu rõ đường kính vòng tròn và vị trí góc của các bộ phận cố định cũng như kích thước của chúng. Hai giá đỡ có thể có cùng số lỗ và vẫn sử dụng các vòng tròn bước hoặc bố cục góc khác nhau.",
+        },
+        {
+          question: "Độ cứng D2 và xử lý bề mặt nên được xác định như thế nào?",
+          answer:
+            "Chỉ định độ cứng của thép nền D2 và độ hoàn thiện bề mặt riêng biệt. Nếu thay đổi từ lưỡi dao không được phủ sang TiN PVD hoặc crom cứng, hãy xác định lớp hoàn thiện được yêu cầu trên bản vẽ thay thế và giữ rõ phần lưỡi dao được chỉ định cũng như kích thước lắp đặt.",
+        },
+        {
+          question: "Độ dày thân máy có mô tả đầy đủ biên dạng cắt không?",
+          answer:
+            "Không. Độ dày thân chỉ cho biết một chiều của mặt cắt dọc trục. Bao gồm góc xiên và hướng của nó, cộng với bất kỳ tâm hoặc phần bậc nào, trên bản vẽ mặt cắt ngang. Những chi tiết đó xác định vị trí của lưỡi cắt so với bề mặt lắp đặt.",
+        },
+        {
+          question: "Độ đảo bên và độ đảo cạnh mô tả điều gì?",
+          answer:
+            "Độ đảo bên mô tả sự biến đổi theo chiều ngang của lưỡi dao khi nó quay, trong khi độ đảo cạnh mô tả sự biến đổi hướng tâm ở chu vi cắt. Cả hai đều thuộc về thông số kỹ thuật của lưỡi cắt, cùng với tham chiếu lắp đặt được sử dụng để đo lường. Khi đánh giá một con dao đã được lắp đặt, hãy phân biệt số đo của lưỡi dao với sự thay đổi do tình trạng trục, mặt bích hoặc chỗ ngồi gây ra.",
         },
         {
           question:
-            "Quý công ty có thể cung cấp lưỡi dao tương thích với máy chuyển đổi sản phẩm vệ sinh Fameccanica hoặc GDM không?",
+            "Tôi nên bao gồm những gì trong một con dao tròn để cắt ngang các cuộn vải không dệt?",
           answer:
-            "Có. Chúng tôi sản xuất theo bản vẽ hoặc mẫu của khách hàng cho các nền tảng Fameccanica, GDM, Curt G. Joa, Zuiko và các nhà sản xuất OEM nội địa Trung Quốc. Đường kính lỗ trục, kiểu lỗ chốt truyền động, đường kính ngoài và độ dày đều có thể tùy chỉnh. Hãy gửi cho chúng tôi bản vẽ OEM hoặc mẫu lưỡi dao đã mòn, chúng tôi sẽ cung cấp xác nhận kích thước và phê duyệt mẫu đầu tiên trước khi sản xuất hàng loạt.",
-        },
-        {
-          question:
-            "Sự khác biệt giữa lớp phủ TiN và mạ crôm cứng cho lưỡi dao vệ sinh là gì?",
-          answer:
-            "TiN PVD (titan nitride) là một lớp phủ mỏng, cực kỳ cứng (2–3 µm, HV 2300+) được phủ trong buồng chân không. Nó tạo ra rào cản trơ chống ăn mòn hóa học, bổ sung độ cứng bề mặt chống mài mòn vi mô từ các hạt SAP trong dây chuyền lõi thấm hút, và kéo dài chu kỳ bảo dưỡng lưỡi cắt. Crôm cứng là lớp mạ điện dày hơn (20–30 µm) mang lại khả năng chống ăn mòn vượt trội trong môi trường độ ẩm cao và giảm hệ số ma sát với màng sợi tổng hợp. Đối với dây chuyền khăn ướt có hóa chất mạnh, TiN là lựa chọn ưu tiên. Đối với dây chuyền vải không dệt khô hoặc bán khô trong môi trường nhà máy có độ ẩm cao, mạ crôm cứng tiết kiệm chi phí hơn.",
-        },
-        {
-          question:
-            "Những lưỡi dao này có hoạt động được với hệ thống mài CBN trực tuyến trên dây chuyền vải không dệt không?",
-          answer:
-            "Hầu hết các lưỡi cưa cuộn cho chuyển đổi vải không dệt vệ sinh không sử dụng hệ thống mài CBN trực tuyến liên tục (khác với dây chuyền khăn giấy). Lưỡi dao thường được thay thế theo lịch trình định kỳ thay vì được mài liên tục. Tuy nhiên, nếu dây chuyền của quý công ty có sử dụng mài CBN trực tuyến, lưỡi dao D2 của chúng tôi được tôi cứng đến HRC 58–60 tương thích với các thông số đá mài CBN tiêu chuẩn. Lớp phủ TiN sẽ bị loại bỏ do tiếp xúc với CBN tại lưỡi cắt, đây là điều bình thường — lợi ích bảo vệ áp dụng cho thân lưỡi dao, không phải vùng lưỡi cắt đang được mài tích cực.",
+            "Cung cấp mẫu cưa, bản vẽ dao hoặc số bộ phận, loại vải không dệt cuộn và số lượng. Xác định lỗ khoan tâm, đường tròn bước, hướng vát và độ hoàn thiện. Đối với một mẫu, hãy cung cấp các chế độ xem mặt trước, mặt sau và cạnh, đồng thời đánh dấu bất kỳ khu vực nào được mài lại hoặc bị hư hỏng không còn đại diện cho biên dạng dao mới.",
         },
       ],
-      company: [
-        {
-          question: "Quý công ty là nhà sản xuất hay công ty thương mại?",
-          answer:
-            "Nhà sản xuất trực tiếp. Chúng tôi rèn, mài, phủ và kiểm tra chất lượng từng lưỡi dao ngay tại nhà máy rộng 15.000 m² ở Mã An Sơn, tỉnh An Huy, theo chứng nhận ISO 9001:2015. Quý khách sẽ trao đổi trực tiếp với các kỹ sư sản xuất đã chế tạo lưỡi dao của mình — không qua khâu trung gian.",
-        },
-        {
-          question:
-            "Quý công ty có thể dịch ngược một lưỡi dao từ mẫu đã mòn hoặc bản vẽ OEM không?",
-          answer:
-            "Có. Hãy gửi cho chúng tôi lưỡi dao đã mòn hoặc bản vẽ kích thước OEM, chúng tôi sẽ lập báo cáo đo lường bằng CMM và xác nhận kích thước trước khi bắt đầu sản xuất. Báo cáo kiểm tra mẫu đầu tiên có sẵn theo yêu cầu cho các dự án khuôn dưỡng mới.",
-        },
-        {
-          question:
-            "Số lượng đặt hàng tối thiểu và thời gian giao hàng là bao lâu?",
-          answer:
-            "Đơn hàng tối thiểu thường từ 2–5 lưỡi dao tùy theo đường kính. Thời gian giao hàng tiêu chuẩn là 10 ngày làm việc kể từ khi phê duyệt bản vẽ. Chúng tôi có thể đáp ứng đơn hàng gấp — hãy liên hệ với chúng tôi về mốc thời gian của quý công ty.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Bao gồm kiểu cưa, bản vẽ lưỡi cưa, đường kính ngoài, lỗ khoan, độ dày thân, kiểu vát và lỗ lắp.",
+    detailLayout: {
+      seoTitle: "Lưỡi cưa cắt cuộn vải không dệt | Lưỡi thay thế theo bản vẽ",
+      heroAlt:
+        "dao tròn để cắt ngang các cuộn vải không dệt có lưỡi cắt tròn, lỗ khoan ở giữa và các lỗ lắp",
+      sizeRange: "Ø350–700 mm",
+      heroSpecs: [
+        {
+          label: "Ứng dụng",
+          value: "cuộn vải không dệt cắt ngang",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Ø350–700 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "D2 (1.2379)",
+        },
+        {
+          label: "độ cứng",
+          value: "58–60 HRC",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "TiN PVD hoặc crom cứng; lưỡi không tráng cũng có sẵn",
+        },
+        {
+          label: "Chạy ngang",
+          value: "≤0.15 mm",
+        },
+        {
+          label: "Hết cạnh",
+          value: "≤0.10 mm",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cuộn vải không dệt cắt ngang",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/blades/nonwoven-log-saw-blades-03.webp",
+        alt: "dao tròn dùng để cắt ngang các cuộn vải không dệt mẫu có lỗ khoan và lỗ lắp",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho lưỡi cắt tròn của bạn để cắt cuộn",
+        description:
+          "Gửi mô hình cưa, tài liệu tham khảo dao ban đầu, bản vẽ kích thước đầy đủ và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Gửi mô hình cưa, tài liệu tham khảo dao ban đầu, bản vẽ kích thước đầy đủ và số lượng.",
+    dimensionLabels: {
+      col1: "Đường kính ngoài (mm)",
+      col2: "Lỗ khoan / ID (mm)",
+      col3: "Độ dày (mm)",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR005201",
+        od: "400",
+        id: "To drawing",
+        thickness: "3.80",
+      },
+      {
+        itemNo: "SR005202",
+        od: "450",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005203",
+        od: "500",
+        id: "To drawing",
+        thickness: "4.00",
+      },
+      {
+        itemNo: "SR005204",
+        od: "550",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005205",
+        od: "600",
+        id: "To drawing",
+        thickness: "4.76",
+      },
+      {
+        itemNo: "SR005206",
+        od: "Ø350–700",
+        id: "To drawing",
+        thickness: "3.80–6.00",
+      },
+    ],
   },
   {
     id: "paper-cutting-blades",
-    name: "Lưỡi cắt giấy",
-    fullName: "Lưỡi cắt giấy chém cao cấp (HSS & TCT)",
-    category: "shear_blades",
+    name: "Dao máy xén giấy",
+    fullName: "Dao máy xén chồng giấy kiểu guillotine",
+    seoTitle: "Lưỡi cắt giấy | Dao chém giấy",
+    seoDescription:
+      "Đặt hàng Dao chém giấy có dát HSS hoặc có đầu bằng cacbua dành cho máy cắt xếp. Chiều dài được liệt kê là 450–2050 mm, có sẵn chiều dài tùy chỉnh và lỗ lắp.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Lưỡi cắt giấy",
-    image: "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+    image: "/images/products/shear-detail/paper-cutting-blades-cover.webp",
     badge: "OEM chính xác",
     badgeColor: "teal",
     gallery: [
-      "/images/products/paper-cutting-blades/paper-cutting-blades-00.webp",
+      "/images/products/shear-detail/paper-cutting-blades-cover.webp",
       "/images/products/paper-cutting-blades/paper-cutting-blades-02.webp",
-      "/images/products/paper-cutting-blades/paper-cutting-blades-04.webp",
+      "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
     ],
     description:
-      "Loại bỏ vết bám giấy và bụi bằng dao cắt giấy thay thế cho máy cắt Polar, Wohlenberg và Perfecta. Có sẵn ở dạng khảm 18% bằng thép tốc độ cao vonfram (HSS) và cacbua vonfram (TCT). Được mài siêu nhỏ đến góc xiên 21° chính xác với độ phẳng toàn bộ bề mặt ≤0,05mm để có những đường cắt vuông vức hoàn hảo khi chạy số lượng lớn.",
-    fullDescription:
-      "Lưỡi thay thế máy cắt giấy chém là các bộ phận tiêu dùng có cấp độ hợp kim, hình dạng cạnh và độ chính xác về chiều dài tối đa xác định trực tiếp chất lượng cắt trên toàn bộ dãy ream—từ lưỡi dao cắt văn phòng 450mm đến máy chém thương mại hai dầm 2050mm.\n\nLưỡi cắt giấy Sureay được cung cấp theo ba cấp độ luyện kim, phù hợp với khối lượng cắt, chất nền và tổng chi phí yêu cầu sở hữu:\n\n## Cấp vật liệu\n\n**Thép công cụ tiêu chuẩn (T10, 9CrSi — HRC 57–60):** Tiết kiệm chi phí cho các xưởng in có khối lượng vừa phải và các hoạt động hoàn thiện cắt giấy bông, giấy in báo và giấy không tráng phủ lên đến 80 gsm. Thép carbon cao T10 được làm cứng đến HRC 57–60 và mang lại độ sắc bén đáng tin cậy ở mức chi phí đơn vị thấp nhất. Phù hợp với các máy hạng Polar, Schneider Senator và Challenge 305 trong môi trường có chu kỳ hàng ngày vừa phải.\n\n**M2 / SKH-9 / SKH-51 HSS (HRC 60–62):** Lựa chọn cao cấp dành cho máy in thương mại, xuất bản sách và máy chém chuyển đổi nhãn số lượng lớn chạy nhiều ngăn xếp ram mỗi giờ. M2 và SKH-51 HSS duy trì độ cứng tối đa ở nhiệt độ cắt cao được tạo ra bởi hoạt động chu kỳ cao—mang lại tuổi thọ dài hơn 4–6× giữa các lần mài lại so với lưỡi thép cacbon tiêu chuẩn. Được khuyên dùng cho giấy nghệ thuật có tráng phủ, các tông, bao bì nhiều lớp và các tấm nhãn dính nhiều lớp nơi độ mòn ở mép tăng nhanh.\n\n**Lớp phủ TCT — Đầu cacbua vonfram (YG15 / YG20):** Lớp phủ cạnh cacbua hàn bằng lò nitơ dành cho các chất nền có độ mài mòn cao nhất: giấy sao chép không chứa carbon (lớp phủ CBS), bìa đóng gói chứa đầy canxi-cacbonat cao, bìa cứng có tráng phủ, giấy đặc biệt có tính mài mòn và giấy kỹ thuật được gia cố bằng sợi. Lưỡi TCT bền hơn HSS trên các chất nền này với hệ số 3–5× và duy trì chất lượng cạnh khe tốt hơn điểm mà HSS cần phải mài lại.\n\n##Tiêu chuẩn mài chính xác\n\n- **Góc vát:** 21° (hình học chém tiêu chuẩn, vát đơn)\n- **Dung sai chiều dài:** +2 / −1 mm\n- **Dung sai chiều rộng:** ±1 mm\n- **Dung sai độ dày cạnh:** 0 / −0,1 mm\n- **Độ phẳng mặt (toàn bộ chiều dài):** ≤ 0,05 mm\n\nĐộ lệch độ phẳng trên 0,08mm trên chiều dài lưỡi dao gây ra sự tiếp xúc không đều giữa lưỡi dao với mặt tủ, tạo ra đường cắt côn và yêu cầu người vận hành phải hiệu chỉnh các miếng chêm—sự kém hiệu quả trong sản xuất tích tụ thành thời gian ngừng hoạt động có thể đo lường được trên các dây chuyền cắt khối lượng lớn.\n\n## Trạng thái cung cấp và tương thích của máy\n\nChiều dài tiêu chuẩn từ 450 mm đến 2050 mm. Tương thích với các dòng Polar 115/137/155/176/200, Schneider Senator, Perfecta, Wohlenberg, Prism và máy chém Challenge. Độ dài tùy chỉnh, mẫu lỗ lắp và biên dạng cạnh sau được sản xuất theo bản vẽ trong vòng 7 ngày làm việc.\n\n**Điều kiện cung cấp hiện có:** Cạnh mài sắc (sẵn sàng lắp đặt) / Cạnh bán thành phẩm (để mài lại lần cuối tại chỗ theo thông số kỹ thuật của máy) / Dao phôi (không nối đất, dành cho khách hàng có khả năng mài lại tại nhà).",
+      "Lưỡi cắt giấy thay thế và dao chém giấy để cắt chồng. Khảm HSS hoặc các cạnh có đầu bằng cacbua, với độ dài và lỗ lắp tùy chỉnh.",
     link: "/products/paper-cutting-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -1623,123 +1978,65 @@ export const blades: Blade[] = [
       "Prism",
       "Seybold",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS Inlay | Tungsten Carbide Tipped (TCT)",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 62–64 (HSS) | HRA 89–91 (Carbide)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "Standard 21° – 24° (Double bevel available)",
-      },
-      {
-        label: "Face Flatness",
-        value: "≤0.05 mm (Eliminates paper draw & tapered cuts)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic (premium edge brazed to alloy steel body)",
-      },
-      {
-        label: "Application",
-        value: "Coated Art Paper, Recycled Board, Carbonless Copy Paper",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Sureay sản xuất dao chém giấy có dát HSS và có đầu bằng cacbua, với độ dài tùy chỉnh, kiểu lắp và cấu hình góc xiên cho máy cắt của bạn. Chia sẻ bản vẽ hoặc mẫu của bạn để nhận báo giá về cấu hình lưỡi dao và vật liệu bạn cần. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "tct-inlay",
-        tag: "Luyện kim",
-        title: "Vonfram cacbua",
+        id: "paper-knife-edge-selection",
+        tag: "Lựa chọn vật liệu",
+        title: "Khảm HSS và lưỡi cắt có đầu bằng cacbua",
         description:
-          "Lưỡi tiêu chuẩn bị xỉn màu nhanh chóng khi cắt giấy có chứa canxi cacbonat, có tính mài mòn. Các lưỡi dao có đầu cacbua vonfram (TCT) của chúng tôi duy trì cạnh dao dài hơn 3–5× so với HSS, giảm đáng kể thời gian ngừng hoạt động của máy để thay đổi lưỡi trên bản sao không dùng carbon và giấy mỹ thuật có phủ.",
+          "Sureay cung cấp 18% khảm HSS vonfram và các cạnh hợp kim cacbua vonfram trên thân thép, giúp người cắt xếp có thể lựa chọn cấu trúc dao cho kho giấy và nhiệm vụ sản xuất của họ.",
       },
       {
-        id: "face-flatness",
-        tag: "CHÍNH XÁC",
-        title: "Không cần rút giấy",
+        id: "paper-guillotine-bevel",
+        tag: "Cắt hình học",
+        title: "Mặt đất và biên dạng góc xiên được chỉ định",
         description:
-          "Nếu lưỡi dao bị cong dù chỉ một chút, áp suất thủy lực sẽ khiến nó bị lệch ở đường cắt giữa, tạo ra các kích thước không đồng đều từ trên xuống dưới của chồng giấy. Chúng tôi mài các lưỡi dao của mình đến độ phẳng toàn bộ bề mặt ≤0,05mm để đảm bảo các vết cắt thẳng đứng hoàn hảo qua từng doa.",
+          "Dao cắt giấy hiện có sẵn với các mặt mài và các góc xiên xác định bằng bản vẽ, bao gồm cả cấu hình góc xiên kép, do đó hình dạng làm việc có thể được chỉ định cùng với vật liệu tiên tiến.",
       },
       {
-        id: "oem-compatibility",
-        tag: "PHÙ HỢP",
-        title: "Thay thế OEM chính xác",
+        id: "paper-cutter-replacement-fit",
+        tag: "Phù hợp thay thế",
+        title: "Độ dài tùy chỉnh và kiểu lắp đặt",
         description:
-          "Chúng tôi nắm giữ các bản thiết kế kỹ thuật cho máy chém Polar, Wohlenberg, Perfecta và Schneider Senator. Các lỗ lắp, ren và khe ở cạnh sau được gia công bằng CNC để đảm bảo vừa vặn khi thả vào — không cần đệm lót hoặc sửa đổi.",
+          "Dao chém giấy được liệt kê có chiều dài 450–2050 mm. Sureay cũng tạo ra các thân dao, góc xiên và mẫu lắp thay thế vào bản vẽ cho chùm cắt hiện có của bạn.",
       },
     ],
-    dimensionLabels: {
-      col0: "Thông số kỹ thuật (mm)",
-      col1: "Chiều dài",
-      col2: "Chiều rộng",
-      col3: "Độ dày cạnh",
-      col4: "Độ dày cơ thể",
-      caption:
-        "* Kích thước tiêu chuẩn được liệt kê ở trên. Kích thước tùy chỉnh có sẵn theo yêu cầu.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "450 * 51 * 12/10",
-        od: "450",
-        id: "51",
-        length: "12",
-        teeth: "10",
+        label: "Kích cỡ",
+        value: "450–2050 mm",
       },
       {
-        spec: "595 * 55 * 13.5/10",
-        od: "595",
-        id: "55",
-        length: "13.5",
-        teeth: "10",
+        label: "Vật liệu",
+        value:
+          "18% vonfram HSS khảm hoặc hợp kim cacbua vonfram -tipped ( TCT )",
       },
       {
-        spec: "795 * 60 * 13.5/10",
-        od: "795",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
+        label: "độ cứng",
+        value: "HSS : 62–64 HRC ; cacbua: 89–91 HRA",
       },
       {
-        spec: "895 * 60 * 13.5/10",
-        od: "895",
-        id: "60",
-        length: "13.5",
-        teeth: "10",
+        label: "Cấu trúc lưỡi",
+        value:
+          "Lưỡng kim: lớp khảm tiên tiến được hàn vào thân bằng thép hợp kim",
       },
       {
-        spec: "995 * 60 * 14/11",
-        od: "995",
-        id: "60",
-        length: "14",
-        teeth: "11",
+        label: "Góc vát",
+        value: "21°–24°; cấu hình vát đôi có sẵn",
       },
       {
-        spec: "1095 * 65 * 14/11",
-        od: "1095",
-        id: "65",
-        length: "14",
-        teeth: "11",
+        label: "Ứng dụng",
+        value:
+          "Chồng giấy, giấy nghệ thuật tráng, bìa tái chế và giấy sao chép không chứa carbon",
       },
       {
-        spec: "1350 * 80 * 16/13",
-        od: "1350",
-        id: "80",
-        length: "16",
-        teeth: "13",
-      },
-      {
-        spec: "2050 * 85 * 16/14",
-        od: "2050",
-        id: "85",
-        length: "16",
-        teeth: "14",
+        label: "Độ phẳng của mặt",
+        value: "≤0.05 mm",
       },
     ],
-    relatedBladeIds: ["tissue-log-saw-blades", "paper-cutting-blades"],
+    relatedBladeIds: ["three-knife-trimmer-blades"],
     offers: {
       lowPrice: 80,
       highPrice: 650,
@@ -1747,77 +2044,164 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Tôi nên chọn lưỡi dao M2 HSS hay lưỡi cacbua vonfram (TCT) cho máy chém của mình?",
+          question: "Làm cách nào để xác định lưỡi cắt giấy thay thế?",
           answer:
-            "M2 HSS là sự lựa chọn chính xác cho giấy nghệ thuật tráng phủ, giấy trái phiếu và kho nhãn tiêu chuẩn ở các cửa hàng in số lượng lớn - mang lại tuổi thọ cao hơn 4–6 lần so với thép cacbon tiêu chuẩn. Chỉ nâng cấp lên TCT (lớp phủ cacbua YG15/YG20) khi cắt giấy sao chép không chứa carbon, bìa đóng gói có hàm lượng canxi-cacbonat cao hoặc giấy đặc biệt có tính mài mòn. TCT hoạt động tốt hơn HSS 3–5× trên các chất nền này nhưng có đơn giá cao hơn.",
+            "Sử dụng mô hình và phiên bản dao cắt đầy đủ với tham chiếu hoặc bản vẽ dao ban đầu. Kiểm tra chiều dài, độ dày thân và cạnh, các lỗ lắp và hướng vát với nhau. Một mẫu được sử dụng phải bao gồm lịch sử nghiền của nó. Chiều rộng làm việc được quảng cáo của dao giúp xác định máy, trong khi kích thước dao hoàn chỉnh sẽ quyết định việc thay thế.",
         },
         {
           question:
-            "Hình dạng lưỡi cắt của bạn ngăn bụi như thế nào khi chém các ram giấy dày?",
+            "Khi nào tôi nên xem xét sử dụng dao chém giấy có đầu cacbua?",
           answer:
-            "Chúng tôi mài từng lưỡi dao chém đến độ chính xác góc xiên 21° với độ phẳng mặt ≤0,05 mm trên toàn bộ chiều dài. Góc xiên nông, sắc sẽ cắt từng tờ dần dần qua rea ​​thay vì nghiền qua chồng giấy - bụi được tạo ra do các cạnh vát xỉn hoặc không chính xác sẽ nén các sợi giấy thay vì cắt chúng. Các loại HSS M2 và TCT duy trì hình dạng vát chính xác này lâu hơn đáng kể so với thép cacbon, do đó ít lần mài lại hơn đồng nghĩa với ít chu kỳ cắt lưỡi cùn tạo bụi mỗi năm hơn.",
+            "Cacbua đáng được đánh giá khi độ mòn cạnh dần dần trên giấy thực tế khiến việc thay dao thường xuyên. Lớp phủ, chất độn, nội dung tái chế và quy trình nghiền sẵn có ảnh hưởng đến sự lựa chọn đó. Nếu con dao hiện tại bị sứt mẻ hoặc cắt không đều, hãy kiểm tra góc xiên của nó, thanh cắt và tình trạng kẹp cùng với yêu cầu về vật liệu.",
+        },
+        {
+          question: "Lưỡi cắt giấy và dao chém giấy có giống nhau không?",
+          answer:
+            "Đúng. Trong cắt chồng công nghiệp, cả hai tên đều đề cập đến lưỡi thẳng cắt chồng giấy hoặc bìa được kẹp. Về máy cắt ngang một màng chuyển động thành các tờ, xem [Dao ép giấy](/products/paper-sheeter-knives) .",
+        },
+        {
+          question: "Tại sao các tấm dưới cùng có thể bị cắt kém sau khi mài?",
+          answer:
+            "Que cắt bị mòn, dao đâm không đúng hoặc kẹp không đều có thể khiến các tấm dưới cùng bị cắt kém ngay cả với một lưỡi dao sắc. Kiểm tra xem khuyết tật có tập trung tại cùng một điểm trên ngăn xếp hay không và kiểm tra khu vực tương ứng của thanh. Sử dụng cài đặt được chỉ định của máy cắt để kiểm tra nguyên nhân.",
         },
         {
           question:
-            "Bạn có thể cung cấp các lưỡi dao có chiều dài chính xác và kiểu lỗ lắp mà máy Polar hoặc Wohlenberg của tôi yêu cầu không?",
+            "Nên chọn góc xiên cho giấy hoặc bìa tráng phủ như thế nào?",
           answer:
-            "Đúng. Chúng tôi cung cấp các chiều dài tiêu chuẩn từ 450mm đến 2050mm để bao gồm các máy chém dòng Polar 115/137/155/176/200, Schneider Senator, Wohlenberg, Perfecta và Challenge. Độ dài tùy chỉnh, biên dạng cạnh sau và mẫu lỗ lắp được sản xuất theo bản vẽ trong vòng 7 ngày làm việc. Các lưỡi dao có thể được cung cấp ở dạng mài sắc, bán thành phẩm hoặc để trống để phù hợp với thiết lập mài lại tại chỗ của bạn.",
+            "Bắt đầu với góc xiên của dao được chỉ định và phôi đang được xử lý. Cấu trúc giấy, hàm lượng lớp phủ hoặc chất độn và điều kiện xếp giấy ảnh hưởng đến quá trình cắt. So sánh chất lượng độ mòn, sứt mẻ và cắt của cạnh trước khi yêu cầu một biên dạng khác. Góc xiên mới phải tương thích với cấu trúc dao và cách bố trí làm việc của dao cắt.",
         },
         {
-          question:
-            "dao cắt giấy nên được bảo quản và xử lý như thế nào để tránh làm hỏng cạnh sớm trước khi lắp đặt?",
+          question: "Khi nào nên mài lại hoặc thay dao chém giấy?",
           answer:
-            "Bảo quản các lưỡi dao theo chiều ngang trong bao bì gốc trên giá đỡ bằng gỗ có đệm lót — không bao giờ xếp chồng lên nhau theo chiều dọc hoặc để kim loại tiếp xúc với kim loại trên lưỡi cắt. Sử dụng miếng bảo vệ cạnh bằng nhựa hoặc cao su trong quá trình xử lý. Kiểm tra dưới kính lúp 10× trước khi lắp: vết khía 0,2mm ở cạnh sẽ tăng gấp đôi tốc độ mài mòn cục bộ trong 10.000 lần cắt đầu tiên. Tránh kéo cạnh vào ray dẫn hướng trong khi lắp đặt.",
+            "Việc mài lại là phù hợp khi vẫn còn đủ chiều cao dao và vật liệu lưỡi cắt để khôi phục góc xiên được chỉ định trong giới hạn sử dụng của dao. Kiểm tra lớp lót hoặc cạnh nghiêng và thân trước khi mài. Việc thay thế là phù hợp khi hư hỏng, vật liệu cạnh còn lại hoặc các giới hạn điều chỉnh ngăn cản việc khôi phục cấu hình làm việc cần thiết.",
         },
         {
-          question:
-            "Bạn có thể cung cấp giấy dao cắt giấy ở trạng thái bán thành phẩm để mài lại trong nhà không?",
+          question: "Làm cách nào để yêu cầu báo giá lưỡi cắt giấy?",
           answer:
-            "Đúng. Các phôi bán thành phẩm có sẵn ở tất cả các chiều dài tiêu chuẩn với phần thân được mài đến kích thước cuối cùng nhưng cạnh được để lại trong tình trạng mài trước để hoàn thiện lần cuối theo góc xiên và độ hoàn thiện cụ thể của bạn. Trạng thái cung cấp này phù hợp với các cửa hàng in có khả năng mài bề mặt, giảm chi phí đơn vị từ 15–20% và mang lại toàn quyền kiểm soát hình dạng và độ sắc nét của cạnh cuối cùng.",
+            "Gửi mẫu và phiên bản dao cắt, số dao hoặc bản vẽ gốc, kho giấy và số lượng. Đối với máy cũ hơn, hãy bao gồm mẫu lỗ lắp, hướng vát và chiều cao dao mới. Nếu tham chiếu duy nhất là một con dao đã qua sử dụng, hãy hiển thị chiều cao còn lại của nó một cách riêng biệt với kích thước mục tiêu mới.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm kiểu dao cắt, bản vẽ dao hoặc số bộ phận, vật liệu và chiều cao ngăn xếp cũng như bước lỗ lắp.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    detailLayout: {
+      heroAlt: "Dao chém giấy có lỗ lắp và lưỡi cắt thẳng",
+      sizeRange: "450–2050 mm",
+      heroSpecs: [
         {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
-        },
-        {
-          question:
-            "Điều gì khiến xử lý nhiệt của Sureay khác biệt so với các lựa chọn thay thế rẻ hơn?",
-          answer:
-            "Không giống như quá trình làm nguội tiêu chuẩn, mỗi lưỡi dao Sureay đều trải qua quá trình xử lý đông lạnh sâu sau khi đông cứng chân không. Điều này biến austenite còn lại thành martensite, tăng khả năng chống mài mòn lên tới 40% và đảm bảo độ cứng đồng đều trên toàn bộ lưỡi cắt.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question:
-            "Sureay có những chứng chỉ chất lượng nào và bạn có thể cung cấp báo cáo thử nghiệm vật liệu không?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước và chứng chỉ lô xử lý nhiệt. Đối với chứng chỉ OEM, báo cáo chiều CMM đầy đủ và chứng chỉ nhà máy thép có sẵn theo yêu cầu.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 lưỡi) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ của cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc. Đối với các cấu hình tùy chỉnh, các mẫu xác nhận kích thước được tạo ra trước khi bắt đầu sản xuất hoàn chỉnh - không có cam kết về dụng cụ cho đến khi xác nhận sự phù hợp.",
+          label: "Ứng dụng",
+          value: "Cắt chồng giấy và bìa",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-guillotine-knives-detail.webp",
+        alt: "Dao chém giấy có lưỡi cắt thẳng và hình lỗ lắp",
+      },
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "450–2050 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "18% vonfram HSS khảm hoặc hợp kim cacbua vonfram -tipped ( TCT )",
+        },
+        {
+          label: "độ cứng",
+          value: "HSS : 62–64 HRC ; cacbua: 89–91 HRA",
+        },
+        {
+          label: "Cấu trúc lưỡi",
+          value:
+            "Lưỡng kim: lớp khảm tiên tiến được hàn vào thân bằng thép hợp kim",
+        },
+        {
+          label: "Góc vát",
+          value: "21°–24°; cấu hình vát đôi có sẵn",
+        },
+        {
+          label: "Ứng dụng",
+          value:
+            "Chồng giấy, giấy nghệ thuật tráng, bìa tái chế và giấy sao chép không chứa carbon",
+        },
+        {
+          label: "Độ phẳng của mặt",
+          value: "≤0.05 mm",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày cạnh (mm)",
+            "Độ dày thân (mm)",
+          ],
+          rows: [
+            ["SR003101", "450", "51", "12", "10"],
+            ["SR003102", "595", "55", "13.5", "10"],
+            ["SR003103", "795", "60", "13.5", "10"],
+            ["SR003104", "895", "60", "13.5", "10"],
+            ["SR003105", "995", "60", "14", "11"],
+            ["SR003106", "1095", "65", "14", "11"],
+            ["SR003107", "1350", "80", "16", "13"],
+            ["SR003108", "2050", "85", "16", "14"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Bao gồm kiểu dao cắt, bản vẽ dao hoặc số bộ phận, vật liệu và chiều cao ngăn xếp cũng như bước lỗ lắp.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Bao gồm kiểu dao cắt, bản vẽ dao hoặc số bộ phận, vật liệu và chiều cao ngăn xếp cũng như bước lỗ lắp.",
+    dimensionLabels: {
+      intro:
+        "Kích thước dao được liệt kê là cấu hình trong danh mục, không phải chiều rộng cắt của máy. Xác nhận kiểu lắp và hiển thị độ dày của cạnh và thân trên bản vẽ mặt cắt ngang.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Nhận các loại dao rôto thay thế có hình dạng dành cho máy hủy tài liệu một trục của bạn, bao gồm các biên dạng phẳng, lõm, rãnh chữ V và đỉnh. Sureay cung cấp các mặt cắt tùy chỉnh và đế bu-lông cố định, cùng với các loại dao cố định phù hợp được báo giá riêng. Gửi bản vẽ hoặc mẫu của bạn để nhận báo giá phù hợp. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi của Sureay.",
     id: "single-shaft-shredder-blades",
-    name: "Chèn rôto trục đơn",
-    fullName:
-      "Bộ phận rôto của máy hủy tài liệu trục đơn có tác động cao (Máy cắt vương miện)",
+    name: "Dao rôto cho máy nghiền xé một trục",
+    fullName: "Dao rôto cho máy nghiền xé một trục",
+    seoTitle: "Dao rôto máy hủy tài liệu trục đơn | Chèn vuông",
+    seoDescription:
+      "Chọn hạt dao rôto vuông hoặc mão cắt lõm ở DC53 , D2 hoặc Cr12MoV. Khớp mặt dao và đế chốt với máy hủy trục đơn của bạn.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Chèn rôto trục đơn",
+    categoryDisplay: "Dao rôto trục đơn",
     image: "/images/products/shredder-blades/single-shredder-blades-06.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1918,
+      height: 1769,
+      smallerWidths: [320, 640],
+    },
     badge: "nhiệm vụ nặng nề",
     badgeColor: "orange",
     gallery: [
@@ -1826,204 +2210,273 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-blades-01.webp",
     ],
     description:
-      "Các hạt dao rôto DC53, D2 (1.2379) và Cr12MoV thép dụng cụ gia công nguội dành cho máy hủy trục đơn tốc độ thấp, mô-men xoắn cao. Được làm cứng bằng chân không và xử lý đông lạnh theo HRC 58–62, được gia công bằng máy CNC với dung sai bề mặt ±0,02 mm. Có hình học vuông có thể lập chỉ mục 4 chiều. Tương thích với các nền tảng Vecoplan, Weima, Lindner và Zerma.",
-    fullDescription:
-      "Máy hủy trục đơn hoạt động ở tốc độ 80–150 vòng/phút với mô-men xoắn cực cao, rôto kiểu khối truyền động chèn vào dao giường cố định với khoảng hở cắt chặt 0,2–1,5mm. Ở các thông số cơ học này, nguyên nhân chính dẫn đến hỏng lưỡi dao là do vi mạch ở cạnh do va đập hoặc hiện tượng mềm do nhiệt do mô-men xoắn đạt cực đại ở chu kỳ cao duy trì, chứ không phải do mài mòn tăng dần.\n\nSureay giải quyết các dạng hư hỏng này thông qua quá trình luyện kim nghiêm ngặt. Hạt dao thép công cụ D2 (1.2379) tiêu chuẩn mang lại khả năng chống mài mòn tuyệt vời ở mức giá hợp lý. Đối với các ứng dụng liên quan đến nhựa kỹ thuật cứng (PA66-GF, PC, PEEK) hoặc các cục tẩy nặng, DC53 được chỉ định—mang lại độ bền đứt ngang cao hơn 17% để tránh sứt mẻ cạnh khi chịu tác động nặng.\n\n## ± 0,02mm Dung sai gia công CNC\n\nKhoảng hở cắt giữa mặt chèn rôto và dao giường cố định sẽ quyết định kích thước hạt vụn và tải động cơ. Khoảng hở không nhất quán gây ra tình trạng quấn vật liệu và rôto. Các hạt dao rôto Sureay được gia công bằng CNC với độ phẳng bề mặt ±0,02 mm, đảm bảo khe hở cắt hoàn hảo và có thể lặp lại trên toàn bộ chiều dài rôto khi kết hợp với một con dao giường chất lượng.\n\n## Hình học có thể lập chỉ mục 4 chiều\n\nĐịnh dạng khối vuông đối xứng cung cấp bốn lưỡi cắt độc lập cho mỗi hạt dao. Khi một cạnh bị cùn, người vận hành nới lỏng bu-lông lắp chìm, xoay miếng đệm 90° sang một cạnh mới và vặn lại. Bộ phận bổ sung rôto đầy đủ có thể được lập chỉ mục nhanh chóng mà không cần tháo trục, giúp giảm 75% chi phí sử dụng dụng cụ hàng năm một cách hiệu quả.\n\n## Xử lý đông lạnh sâu (−196°C)\n\nTất cả các hạt dao một trục Sureay đều trải qua quá trình đông cứng chân không đến HRC 58–62, sau đó bắt buộc phải ngâm trong nhiệt độ lạnh sâu ở −196°C. Giai đoạn cuối cùng quan trọng này giúp loại bỏ austenite còn sót lại và ổn định cấu trúc vi mô martensitic, giảm đáng kể nguy cơ gãy vỡ khi rôto gặp phải các tạp chất kim loại lạ không mong muốn.",
+      "Thay thế dao rôto máy hủy đơn trục DC53 , D2 và Cr12MoV. Hạt dao vuông và mão cắt lõm với các mặt tùy chỉnh và đế bu lông.",
     link: "/products/single-shaft-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
-        label: "Material",
+        label: "Vật liệu",
         value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Độ cứng mục tiêu",
+        value: "HRC 58–62 (Ổn định ở nhiệt độ đông lạnh)",
       },
       {
-        label: "Machining Tolerance",
-        value: "±0.02 mm Face Flatness",
+        label: "Dung sai gia công",
+        value: "±0,02 mm Độ phẳng mặt",
       },
       {
-        label: "Edge Geometry",
-        value: "4-Way Indexable (90° Rotation)",
+        label: "Hình học cạnh",
+        value: "Có thể lập chỉ mục 4 chiều (Xoay 90°)",
       },
       {
-        label: "Face Profile",
-        value: "Concave, Flat, V-Groove, Crown",
+        label: "Hồ sơ khuôn mặt",
+        value: "Lõm, phẳng, rãnh chữ V, vương miện",
       },
       {
-        label: "Mounting Style",
-        value: "M12 to M24 Countersunk Hex Bolt",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
-      },
-      {
-        label: "System Integration",
-        value: "Matched Bed Knives available separately",
-      },
-      {
-        label: "Application",
+        label: "Kiểu lắp",
         value:
-          "HDPE/PVC Pipes · Injection Purgings · Wood Pallets · IBC Totes · MSW",
-      },
-    ],
-    components: [
-      {
-        id: "indexable-design",
-        tag: "GIẢM TCO",
-        title: "Các cạnh có thể lập chỉ mục 4 chiều",
-        description:
-          "Thiết kế hình vuông đối xứng cho phép xoay 90° khi bị cùn. Điều này tăng gấp bốn lần tuổi thọ của một lưỡi dao, cắt giảm 75% chi phí thay thế và giảm thiểu thời gian dừng bảo trì.",
+          "Bu lông cố định M12 – M24 ; ghế chìm hoặc đầu ổ cắm theo cấu hình",
       },
       {
-        id: "concave-profile",
-        tag: "HIỆU QUẢ CẮT",
-        title: "Hồ sơ lõm tích cực",
-        description:
-          "Các mặt lõm được gia công bằng CNC chính xác đảm bảo khả năng cắn mạnh vào các khối nhựa mịn, dày đặc, ngăn chặn vật liệu nảy lên hoặc bắc cầu trên rô-to trong quá trình băm nhỏ ở tốc độ thấp.",
+        label: "Đồ đạc OEM",
+        value: "Vecoplan , Weima , Lindner , Zerma , Cresswood",
       },
       {
-        id: "cryo-treatment",
-        tag: "ĐỘ TIN CẬY TUYỆT VỜI",
-        title: "Nhiệt độ đông lạnh sâu",
-        description:
-          "Được xử lý ở −196°C để loại bỏ ứng suất dư bên trong. Điều này đảm bảo lưỡi dao sẽ hấp thụ các chấn động động học lớn mà không bị vỡ khi va vào các tạp chất kim loại ẩn giấu.",
-      },
-    ],
-    dimensionLabels: {
-      col1: "Kích thước chèn (L × W × T)",
-      col2: "Kích thước bu lông",
-      col3: "Chèn hồ sơ",
-      col4: "Nền tảng OEM điển hình",
-      caption:
-        "* Có sẵn dao giường Stator và cấu hình lưỡi rôto tùy chỉnh. Tương thích với các thương hiệu máy hủy trục đơn lớn trên toàn cầu.",
-    },
-    standardDimensions: [
-      {
-        spec: "34 × 34 × 23 mm",
-        bolt: "M12",
-        type: "Concave / Flat",
-        oem: "Weima / Vecoplan Standard",
+        label: "Tích hợp hệ thống",
+        value: "Dao cố định phù hợp có sẵn riêng biệt",
       },
       {
-        spec: "40 × 40 × 25 mm",
-        bolt: "M14",
-        type: "Concave / Flat",
-        oem: "Vecoplan / Heavy Plastics",
-      },
-      {
-        spec: "43 × 43 × 19.5 mm",
-        bolt: "M14",
-        type: "Crown / Concave",
-        oem: "Lindner Micromat / Urraco",
-      },
-      {
-        spec: "50 × 50 × 30 mm",
-        bolt: "M16",
-        type: "Concave / Flat",
-        oem: "Heavy Duty MSW",
-      },
-      {
-        spec: "60 × 60 × 30 mm",
-        bolt: "M16 / M18",
-        type: "Flat / V-Groove",
-        oem: "Zerma / Tyre Shredding",
-      },
-      {
-        spec: "80 × 80 × 45 mm",
-        bolt: "M24",
-        type: "Concave",
-        oem: "Extreme High-Torque",
+        label: "Ứng dụng",
+        value: "Ống HDPE/PVC · Thanh lọc phun · Pallet gỗ · Túi IBC · MSW",
       },
     ],
     relatedBladeIds: [
       "single-shaft-bed-knives",
       "shredder-screens",
-      "twin-shaft-blades-recycling",
       "granulator-blades",
+    ],
+    dimensionLabels: {
+      col1: "Kích thước dao (L × W × T)",
+      col2: "Sửa Bolt",
+      col3: "Cắt mặt",
+      col4: "Tham khảo máy / OEM",
+      intro:
+        "Sử dụng kiểu máy và tài liệu tham khảo OEM để xác định bộ phận, sau đó so sánh mặt cắt, chỗ lắp và bu lông cố định với dao ban đầu.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR002501",
+        spec: "34 × 34 × 20 mm",
+        bolt: "M12 × 40 (DIN 912)",
+        type: "—",
+        oem: "ZERMA ZSS 850 / 1200 · 80001003",
+      },
+      {
+        itemNo: "SR002502",
+        spec: "34 × 34 × 23 mm",
+        bolt: "M12",
+        type: "Lõm / phẳng",
+        oem: "Weima / Vecoplan Standard",
+      },
+      {
+        itemNo: "SR002503",
+        spec: "40 × 40 × 25 mm",
+        bolt: "M14",
+        type: "Lõm / phẳng",
+        oem: "Vecoplan / Heavy Plastics",
+      },
+      {
+        itemNo: "SR002504",
+        spec: "43 × 43 × 19.5 mm",
+        bolt: "M14",
+        type: "Vương miện / Lõm",
+        oem: "Lindner Micromat",
+      },
+      {
+        itemNo: "SR002505",
+        spec: "50 × 50 × 30 mm",
+        bolt: "M16",
+        type: "Lõm / phẳng",
+        oem: "Heavy Duty MSW",
+      },
+      {
+        itemNo: "SR002506",
+        spec: "60 × 60 × 30 mm",
+        bolt: "M16 / M18",
+        type: "phẳng/rãnh chữ V",
+        oem: "Zerma / Tyre Shredding",
+      },
+      {
+        itemNo: "SR002507",
+        spec: "80 × 80 × 45 mm",
+        bolt: "M24",
+        type: "Lõm",
+        oem: "Extreme High-Torque",
+      },
     ],
     offers: {
       lowPrice: 20,
       highPrice: 200,
     },
+    components: [
+      {
+        id: "single-shaft-shredder-blades-advantage-1",
+        tag: "Lựa chọn thép công cụ cho mảnh dao rô-to",
+        title: "Lựa chọn thép công cụ cho mảnh dao rô-to",
+        description:
+          "Cấu hình DC53 , D2 , Cr12MoV và 42CrMo cung cấp cho bạn các tùy chọn vật liệu cho dao rô-to thay thế, có tính đến mặt cắt hiện tại và điều kiện mài mòn của nguyên liệu nạp của bạn.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-2",
+        tag: "Mặt cắt phẳng, lõm và hình vương miện",
+        title: "Mặt cắt phẳng, lõm và hình vương miện",
+        description:
+          "Sureay cung cấp các mặt cắt phẳng, lõm, rãnh chữ V và vương miện. Kích thước chèn được liệt kê bao gồm 34 × 34 × 20 mm. Có sẵn các cấu hình có thể lập chỉ mục trong đó dao và giá đỡ được thiết kế cho các cạnh làm việc liên tiếp.",
+      },
+      {
+        id: "single-shaft-shredder-blades-advantage-3",
+        tag: "Ghế lắp được làm theo bản vẽ cánh quạt",
+        title: "Ghế lắp được làm theo bản vẽ cánh quạt",
+        description:
+          "Sureay chế tạo các mặt dưới của dao và các chốt cố định vào bản vẽ rôto, do đó, việc thay thế có thể tái tạo lại hình dạng bệ đỡ và hình học kẹp của đầu cặp hiện có.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Hợp kim nào có khả năng giữ cạnh tốt hơn để cắt các vật liệu cứng: D2 hay DC53?",
+            "Làm cách nào để xác định dao rôto thay thế cho máy hủy tài liệu một trục?",
           answer:
-            "Đối với các thanh lọc đúc phun dày đặc và HDPE có thành dày trên rôto một trục ở tốc độ 80–120 vòng/phút, DC53 luôn hoạt động tốt hơn D2. Tải trọng va đập một trục cho thấy độ bền đứt ngang cao hơn 17% của DC53, chống lại sự sứt mẻ vi mô ở mặt cắt mà D2 thường phát triển trên vật liệu thanh lọc cứng sau 300–500 giờ hoạt động.",
-        },
-        {
-          question: "Điều gì gây ra hiện tượng quấn vật liệu và rôto bị dừng?",
-          answer:
-            "Hiện tượng quấn lại thường do độ phẳng bề mặt không nhất quán trên cụm hạt dao rô-to, tạo ra khoảng hở giữa dao và bệ không đồng đều. Vật liệu đi qua các khe hở rộng thay vì bị cắt, tuần hoàn trở lại và làm tắc túi rôto. Hạt dao của chúng tôi được gia công bằng CNC đến độ phẳng bề mặt ±0,02mm để loại bỏ điều này.",
+            "Sử dụng model máy và tham chiếu bộ phận, sau đó so sánh mặt cắt, mặt dưới và mặt tựa bu-lông cố định. Hai hạt dao có cùng chiều dài và chiều rộng có thể có tâm, lỗ hoặc mặt tựa nâng lên khác nhau. Những chi tiết này xác định cách đặt và kẹp con dao mới trong giá đỡ rôto hiện có.",
         },
         {
           question:
-            "Thiết kế có thể lập chỉ mục bốn cạnh giúp giảm chi phí dụng cụ như thế nào?",
+            "Dao rôto, hạt dao và mão cắt có phải là cùng một sản phẩm không?",
           answer:
-            "Mỗi hạt dao vuông có bốn cạnh cắt độc lập. Khi một cạnh bị cùn, hãy nới lỏng bu-lông lắp đơn, xoay miếng đệm 90° sang một cạnh mới và vặn lại. Điều này tăng gấp bốn lần tuổi thọ sử dụng hiệu quả trên mỗi lưỡi dao được mua, giảm chi phí sử dụng dụng cụ hàng năm khoảng 75% so với các lựa chọn thay thế không thể lập chỉ mục.",
+            "Dao rôto là thuật ngữ chung để chỉ dao chuyển động trên rôto. Chèn và cắt vương miện mô tả các thiết kế cụ thể trong nhóm đó. Lưỡi cắt cố định đối diện với các bộ phận này là [Dao Stator Máy hủy trục đơn](/products/single-shaft-bed-knives) .",
+        },
+        {
+          question: "Nên chọn mặt dao rôto phẳng và lõm như thế nào?",
+          answer:
+            "Giữ lại mặt đã cài đặt để thay thế tương tự. Biên dạng phẳng và lõm thay đổi cách lưỡi cắt tiếp xúc với nguồn cấp dữ liệu, do đó, thay đổi được đề xuất phải tính đến vật liệu, đầu cặp và stator đối tiếp. Tham chiếu dao hiện có cung cấp điểm khởi đầu rõ ràng hơn so với việc chỉ chọn một bề mặt từ hình dáng của nó.",
         },
         {
           question:
-            "Hình dạng hạt dao nào cần thiết để băm nhỏ các thùng IBC và trống HDPE khổ lớn?",
+            "Tôi có thể xoay miếng chèn hình vuông đã mòn để sử dụng cạnh khác không?",
           answer:
-            "Đối với các thùng chứa có thành dày, hãy chỉ định các vật chèn có mặt lõm (50×50mm hoặc 60×60mm). Cấu hình lõm tạo ra hình dạng cào tích cực, ngăn lưỡi dao trượt trên bề mặt HDPE mịn khi va chạm ban đầu và đảm bảo khả năng xuyên qua ngay lập tức trong quá trình đi xuống.",
+            "Có, trong đó hạt dao và đầu cặp được thiết kế để lập chỉ mục và vẫn có lưỡi làm việc không bị hư hại. Kiểm tra bề mặt chỗ ngồi và các tính năng cố định cũng như cạnh tiếp theo. Sử dụng cách sắp xếp chỉ số được chỉ định cho con dao đó, vì chỉ đường viền hình vuông không thiết lập số lượng hoặc hướng quay được phép.",
         },
         {
-          question: "Sureay có thể cung cấp loại dao cố định phù hợp không?",
+          question:
+            "Điều gì nên hướng dẫn lựa chọn vật liệu khi rô-to góc chip?",
           answer:
-            "Đúng. Dao giường cố định được sản xuất dưới dạng bộ phù hợp với các miếng đệm rô-to, với khoảng hở mặt được mài có cùng dung sai ±0,02mm. Dao giường phù hợp giúp loại bỏ phỏng đoán khoảng trống khi tìm nguồn hạt dao rô-to và dao giường từ các nhà cung cấp riêng biệt.",
+            "So sánh các góc bị sứt mẻ với độ mòn dần dần của các hạt dao khác. Ô nhiễm thức ăn, tác động cục bộ và sự hỗ trợ của mặt và giá đỡ có thể ảnh hưởng đến hư hỏng. Đánh giá thép hiện tại, tình trạng được xử lý nhiệt và biên dạng cắt cùng nhau trước khi thay đổi vật liệu, đặc biệt nếu hư hỏng liên tục xuất hiện ở một bộ phận của rôto.",
+        },
+        {
+          question:
+            "Có thể sao chép chỗ ngồi bu-lông cố định tùy chỉnh và mặt dưới dao không?",
+          answer:
+            "Đúng. Chỗ tựa bu lông cố định và mặt dưới có thể được sao chép bằng mặt cắt trên một bản vẽ. Hình ảnh cả hai mặt sẽ hữu ích khi phần chèn có tâm nhô lên hoặc bề mặt tựa có hình dạng. Đánh dấu bất kỳ khu vực tiếp xúc nào bị mòn và xác định bu lông và giá đỡ được sử dụng cùng với nó.",
+        },
+        {
+          question:
+            "Tôi nên cung cấp những gì để báo giá dao rôto máy hủy tài liệu một trục?",
+          answer:
+            "Gửi mô hình máy hủy tài liệu, số hoặc bản vẽ ban đầu, nguyên liệu và số lượng thức ăn. Thay vào đó, nếu bạn có một mẫu, hãy bao gồm các kích thước hạt dao và ảnh của mặt cắt và mặt dưới, có thể nhìn thấy mặt tựa bu-lông cố định. Những khung nhìn đó phân biệt các hạt dao có cùng đường viền hình vuông nhưng có biên dạng đầu cặp khác nhau.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi model máy, số bộ phận OEM và số lượng. Hãy gửi kèm hình vẽ hoặc ảnh chụp cả hai mặt của con dao và cho chúng tôi biết liệu bạn có cần giá đỡ dao rôto hay không.",
+    disambiguation:
+      "Đối với dao cố định đối diện với rô-to, xem [Dao Stator Máy hủy Trục Đơn](/products/single-shaft-bed-knives) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "34–80 mm",
+      heroSpecs: [
         {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
+          label: "Vật liệu",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
         },
         {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Các phụ kiện thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các nhà giao nhận vận tải đường biển quốc tế.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 hạt dao) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc.",
-        },
-        {
-          question:
-            "Sureay có những chứng chỉ chất lượng nào và bạn có thể cung cấp báo cáo thử nghiệm vật liệu không?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước và chứng chỉ lô xử lý nhiệt. Đối với chứng chỉ OEM, báo cáo chiều CMM đầy đủ và chứng chỉ nhà máy thép có sẵn theo yêu cầu.",
+          label: "Ứng dụng",
+          value: "Ống HDPE/PVC · Thanh lọc phun · Pallet gỗ · Túi IBC · MSW",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "34–80 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "DC53, D2 (1.2379), Cr12MoV, 42CrMo",
+        },
+        {
+          label: "Độ cứng mục tiêu",
+          value: "HRC 58–62 (Ổn định ở nhiệt độ đông lạnh)",
+        },
+        {
+          label: "Dung sai gia công",
+          value: "±0,02 mm Độ phẳng mặt",
+        },
+        {
+          label: "Hình học cạnh",
+          value: "Có thể lập chỉ mục 4 chiều (Xoay 90°)",
+        },
+        {
+          label: "Hồ sơ khuôn mặt",
+          value: "Lõm, phẳng, rãnh chữ V, vương miện",
+        },
+        {
+          label: "Kiểu lắp",
+          value:
+            "Bu lông cố định M12 – M24 ; ghế chìm hoặc đầu ổ cắm theo cấu hình",
+        },
+        {
+          label: "Tích hợp hệ thống",
+          value: "Dao cố định phù hợp có sẵn riêng biệt",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Ống HDPE/PVC · Thanh lọc phun · Pallet gỗ · Túi IBC · MSW",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi model máy, số bộ phận OEM và số lượng. Hãy gửi kèm hình vẽ hoặc ảnh chụp cả hai mặt của con dao và cho chúng tôi biết liệu bạn có cần giá đỡ dao rôto hay không.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Nhận dao stato thay thế có hình dạng cạnh và các tính năng lắp đặt mà máy hủy trục đơn của bạn yêu cầu. Sureay cung cấp các cấu hình thẳng và răng cưa, độ dài tùy chỉnh và các bộ phân đoạn. Chia sẻ bản vẽ hoặc mẫu của bạn để nhận báo giá, bao gồm cả phần chèn rô-to khi cần. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     id: "single-shaft-bed-knives",
-    name: "Dao giường trục đơn",
-    fullName: "Dao giường máy hủy tài liệu trục đơn (Dao Stator)",
+    name: "Dao tĩnh máy nghiền xé một trục",
+    fullName: "Dao tĩnh (dao đối) cho máy nghiền xé một trục",
+    seoTitle: "Dao tĩnh (dao đối) cho máy nghiền xé một trục",
+    seoDescription:
+      "Dao cố định dành cho máy hủy một trục có chiều dài được liệt kê là 279–3000 mm. Đặt hàng các cạnh thẳng hoặc có răng cưa và các khe lắp phù hợp với bản vẽ của bạn.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Dao giường trục đơn",
+    categoryDisplay: "Dao Stator trục đơn",
     image: "/images/products/shredder-blades/single-shredder-bed-knives.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1814,
+      height: 1020,
+      smallerWidths: [320, 640],
+    },
     badge: "Mặt đất chính xác",
     badgeColor: "blue",
     gallery: [
@@ -2032,198 +2485,257 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/single-shredder-bed-knives-02.webp",
     ],
     description:
-      "Dao stator hạng nặng (dao giường) dành cho máy hủy một trục. Được sản xuất từ ​​thép D2 (1.2379) và thép hợp kim cao chuyên dụng. Được làm nguội bằng máy ép và mài chính xác đến dung sai độ thẳng nghiêm ngặt (≤ 0,05mm/m) để đảm bảo độ hở cắt đồng đều giữa rô-to và bệ. Các mẫu lỗ có rãnh tùy chỉnh để điều chỉnh độ hở chính xác. Tương thích với Vecoplan, Weima, Lindner và Zerma.",
-    fullDescription:
-      "Trong hệ thống băm một trục, dao giường (stato) đóng vai trò là cạnh cắt ngược cứng để các hạt dao quay cắt vật liệu. Bởi vì những con dao này trải dài toàn bộ chiều rộng của rôto máy hủy—thường có chiều dài vượt quá 2.000mm—việc sản xuất chúng đòi hỏi phải kiểm soát tuyệt đối độ biến dạng nhiệt.\n\n## Sự thẳng thắn là điều bắt buộc\n\nDao giường bị cong vênh là nguyên nhân chính khiến máy hủy tài liệu hoạt động kém hiệu quả. Nếu lưỡi dao bị cong, khe hở cắt sẽ trở nên không đồng đều: quá chặt ở trung tâm (có nguy cơ va chạm rôto nghiêm trọng) và quá lỏng ở hai đầu (gây ra hiện tượng quấn lại vật liệu và tan chảy do ma sát). Dao giường Sureay trải qua quá trình ép nguội chuyên dụng trong quá trình xử lý nhiệt, sau đó là mài bề mặt chính xác. Chúng tôi đảm bảo dung sai độ thẳng ≤ 0,05mm trên mỗi mét tuyến tính, đảm bảo khe hở cắt đồng đều hoàn hảo trên toàn bộ rôto.\n\n## Làm cứng sâu cho nhiều lần xay lại\n\nKhông giống như các vật liệu chèn rô-to bị loại bỏ hoặc lập chỉ mục, dao giường nặng cần đầu tư vốn đáng kể và phải có thể mài lại được. Chúng tôi sử dụng xử lý nhiệt chân không để đạt được độ cứng đồng đều HRC 56–60 trên toàn bộ mặt cắt ngang của lưỡi dao chứ không chỉ bề mặt. Điều này cho phép người vận hành mài lại cạnh vát nhiều lần mà không để lộ lõi mềm, tối đa hóa tổng tuổi thọ hoạt động của dao.\n\n## Gắn có rãnh và đối xứng\n\nViệc duy trì khe hở cắt tối ưu 0,2 mm–1,0 mm là rất quan trọng vì cả dao rôto và dao stato đều mòn. Dao giường của chúng tôi có các lỗ có rãnh được gia công bằng CNC chính xác hoặc các lỗ phản cỡ lớn, được thiết kế để khớp hoàn hảo với cơ chế điều chỉnh của máy OEM của bạn. Điều này đảm bảo các đội bảo trì có thể nâng dao giường lên một cách chính xác và khóa nó an toàn dưới độ rung lớn.\n\n## Ordering the Complete Wear Set\n\nThe shear gap is set by two parts, not one. Replacing a bed knife while worn rotor inserts stay on the shaft leaves the 0.2mm–1.0mm clearance out of spec at every insert position, and the new bed knife edge takes the uneven load. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and shipped on the same order — sourcing the set from three suppliers means three tolerance stacks, and the clearance achievable on reassembly is limited by the loosest one.",
+      "Thay thế stato máy hủy một trục và dao cố định ở loại D2, DC53 hoặc 42CrMo. Cấu hình cạnh tùy chỉnh và khe gắn được thực hiện theo bản vẽ.",
     link: "/products/single-shaft-bed-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Neue Herbold",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "WEIMA",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2 (1.2379), DC53, 42CrMo (AISI 4140), Chipper Knife Steel",
+        label: "Vật liệu",
+        value: "D2 (1.2379), DC53 , 42CrMo (AISI 4140), Thép làm dao Chipper",
       },
       {
-        label: "Target Hardness",
-        value: "HRC 56–60 (Through-Hardened)",
+        label: "Độ cứng mục tiêu",
+        value: "HRC 56–60 (Được làm cứng hoàn toàn)",
       },
       {
-        label: "Straightness Tol.",
-        value: "≤ 0.05 mm per linear meter",
+        label: "Độ thẳng Tol.",
+        value: "0,05 mm trên mỗi mét tuyến tính",
       },
       {
-        label: "Length Capability",
-        value: "Up to 3,500 mm (Seamless single piece)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single Bevel, Double Bevel, Serrated",
-      },
-      {
-        label: "Mounting Holes",
-        value: "Slotted, Counter-Bored, Threaded",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Vecoplan, Weima, Lindner, Zerma, Cresswood",
-      },
-      {
-        label: "System Integration",
-        value: "Matched Rotor Inserts available separately",
-      },
-      {
-        label: "Application",
+        label: "Kích cỡ",
         value:
-          "Single-Shaft Shredders · HDPE/PP/PVC · Wood Pallets · MSW · Tyre",
+          "Chiều dài được liệt kê 279–3000 mm; dao từng mảnh tùy chỉnh lên tới 3.500 mm",
+      },
+      {
+        label: "Hình học cạnh",
+        value: "Vát đơn, vát đôi, có răng cưa",
+      },
+      {
+        label: "lỗ gắn",
+        value: "Rãnh, phản nhàm chán, ren",
+      },
+      {
+        label: "Đồ đạc OEM",
+        value: "Vecoplan , Weima , Lindner , Zerma , Cresswood",
+      },
+      {
+        label: "Tích hợp hệ thống",
+        value: "Các mảnh rô-to phù hợp có sẵn riêng biệt",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy hủy trục đơn · HDPE/PP/PVC · Pallet gỗ · MSW · Lốp xe",
       },
     ],
-    components: [
-      {
-        id: "straightness-control",
-        tag: "SỨC CHỊU ĐỰNG",
-        title: "Độ thẳng không biến dạng",
-        description:
-          "Được dập nguội và mài chính xác để loại bỏ hiện tượng cong vênh. Dao giường thẳng hoàn toàn đảm bảo khe hở cắt đồng đều, ngăn chặn vật liệu trượt qua phần chưa cắt.",
-      },
-      {
-        id: "deep-hardening",
-        tag: "TUỔI THỌ",
-        title: "Lõi cứng xuyên suốt",
-        description:
-          "Xử lý nhiệt chân không để đảm bảo độ cứng ổn định (HRC 56–60) sâu vào lõi. Bạn có thể mài lại góc xiên nhiều lần mà không làm giảm hiệu suất.",
-      },
-      {
-        id: "adjustable-mounting",
-        tag: "BẢO TRÌ",
-        title: "Khe điều chỉnh chính xác",
-        description:
-          "Các khe lắp được phay CNC cho phép kỹ thuật viên dễ dàng đưa dao giường về phía rô-to để bù độ mòn, duy trì hiệu suất băm tối đa.",
-      },
-      {
-        id: "complete-wear-set",
-        tag: "SUPPLY",
-        title: "Complete Bed Knife Wear Set",
-        description:
-          "The shear gap is set by the rotor insert and the bed knife together. Matching rotor inserts, knife holders, clamping bars and adjustment shims are manufactured in-house and shipped on one order, so the whole wear set is replaced in a single shutdown.",
-      },
-    ],
+    relatedBladeIds: ["single-shaft-shredder-blades", "shredder-screens"],
     dimensionLabels: {
       col0: "Chiều dài tổng thể (mm)",
       col1: "Chiều rộng (mm)",
       col2: "Độ dày (mm)",
-      col3: "Cấu hình lỗ / lắp",
-      caption:
-        "* Dao giường có tính đặc thù cao đối với máy. Kích thước tham chiếu tiêu chuẩn được hiển thị bằng mm - chúng tôi sản xuất theo bản vẽ OEM chính xác hoặc thông số kỹ thuật tùy chỉnh của khách hàng. Liền mạch một mảnh lên tới 3.500 mm.",
+      col3: "Gắn kết / Tham khảo OEM",
+      intro:
+        "So sánh cấu hình dao, khe lắp và số bộ phận OEM với bộ phận gốc. Đối với một tập hợp được phân đoạn, hãy xác định phân khúc nào bạn cần.",
     },
     standardDimensions: [
       {
+        itemNo: "SR002601",
+        spec: "279",
+        od: "80",
+        bolt: "30",
+        type: "Phân đoạn · Sửa M12 × 55 · ZERMA ZSS 850 (80001202)",
+      },
+      {
+        itemNo: "SR002602",
+        spec: "396",
+        od: "80",
+        bolt: "20",
+        type: "6 khe, 22 × 40 mm, ở tâm 68 mm",
+      },
+      {
+        itemNo: "SR002603",
+        spec: "396",
+        od: "85",
+        bolt: "20",
+        type: "6 khe, 22 × 40 mm, ở tâm 68 mm",
+      },
+      {
+        itemNo: "SR002604",
         spec: "800",
         od: "100",
         bolt: "30",
-        type: "Slotted / Counter-Bored",
+        type: "Rãnh / phản nhàm chán",
       },
       {
+        itemNo: "SR002605",
         spec: "1000",
         od: "120",
         bolt: "35",
-        type: "Slotted / Counter-Bored",
+        type: "Rãnh / phản nhàm chán",
       },
       {
+        itemNo: "SR002606",
         spec: "1300",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Rãnh / phản nhàm chán",
       },
       {
+        itemNo: "SR002607",
         spec: "1500",
         od: "150",
         bolt: "40",
-        type: "Slotted / Counter-Bored",
+        type: "Rãnh / phản nhàm chán",
       },
       {
+        itemNo: "SR002608",
         spec: "2000",
         od: "200",
         bolt: "50",
-        type: "Custom OEM Pattern",
+        type: "Mẫu OEM tùy chỉnh",
       },
       {
+        itemNo: "SR002609",
         spec: "3000",
         od: "250",
         bolt: "60",
-        type: "Heavy Duty Multi-Hole",
+        type: "Nhiệm vụ nặng nề nhiều lỗ",
       },
     ],
-    relatedBladeIds: ["single-shaft-shredder-blades", "granulator-blades"],
     offers: {
       lowPrice: 150,
       highPrice: 1200,
     },
+    components: [
+      {
+        id: "single-shaft-bed-knives-advantage-1",
+        tag: "Tùy chọn thép cho lưỡi cắt cố định",
+        title: "Tùy chọn thép cho lưỡi cắt cố định",
+        description:
+          "Cấu hình D2 , DC53 , 42CrMo và thép-dao-chipper có sẵn cho dao stator, hỗ trợ các đơn đặt hàng thay thế với vật liệu và dạng lưỡi được chỉ định cho máy hủy tài liệu hiện có.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-2",
+        tag: "Các cạnh thẳng và có răng cưa với các bản sửa lỗi tùy chỉnh",
+        title: "Các cạnh thẳng và có răng cưa với các bản sửa lỗi tùy chỉnh",
+        description:
+          "Các biên dạng vát đơn, vát kép và răng cưa có thể được cung cấp với các tính năng lắp có rãnh, khoét ngược hoặc có ren, cho phép thực hiện lưỡi cắt và mẫu cố định như một bộ phận thay thế.",
+      },
+      {
+        id: "single-shaft-bed-knives-advantage-3",
+        tag: "Các phân đoạn riêng lẻ và bộ Stator đầy đủ",
+        title: "Các phân đoạn riêng lẻ và bộ Stator đầy đủ",
+        description:
+          "Chiều dài stato được liệt kê trải dài 279–3000 mm. Đặt hàng một phân đoạn cố định riêng lẻ hoặc một bộ hoàn chỉnh với các vị trí cuối và trung gian được chỉ định riêng. Dao rôto phù hợp có thể được trích dẫn trong cùng một yêu cầu.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Tại sao khả năng chịu đựng độ thẳng của dao cắt giường lại quan trọng đến vậy?",
+            "Dao stator, dao cố định và dao cố định có phải là cùng một bộ phận không?",
           answer:
-            "Nếu dao cắt giường bị cong vênh dù chỉ 0,5 mm, thì khoảng cách giữa các phần chèn rôto và dao cắt giường sẽ trở nên không nhất quán. Trường hợp khe hở quá chật, dao rôto sẽ va vào dao giường, gây ra hư hỏng nặng. Khi khe hở quá rộng, vật liệu sẽ gấp và quấn quanh rôto thay vì bị cắt. Dung sai độ thẳng ≤ 0,05 mm/m của chúng tôi ngăn ngừa được cả hai vấn đề này.",
-        },
-        {
-          question: "Con dao giường Sureay có thể được mài lại bao nhiêu lần?",
-          answer:
-            "Bởi vì chúng tôi đã làm cứng dao trải giường của mình (đảm bảo lõi cứng như bề mặt), chúng có thể được mài lại nhiều lần cho đến khi đạt đến giới hạn kích thước của cơ chế điều chỉnh của máy. Thông thường, dao giường D2 hạng nặng có thể trải qua 5 đến 10 chu kỳ mài lại tùy thuộc vào mức độ mài mòn.",
+            "Đúng. Trên máy hủy một trục, dao stator, dao giường và dao cố định đều mô tả lưỡi cắt cố định đối diện với [Dao cánh quạt máy hủy một trục](/products/single-shaft-shredder-blades) . Các máy khác cũng sử dụng một số tên này, vì vậy kiểu máy hủy tài liệu và vị trí cố định rất quan trọng khi đặt hàng.",
         },
         {
           question:
-            "Làm cách nào để đảm bảo dao giường thay thế thẳng hàng với bộ đẩy điều chỉnh của máy?",
+            "Một con dao cố định tạo hạt nhựa có thể thay thế một con dao stator của máy hủy tài liệu không?",
           answer:
-            "Dao giường sử dụng các lỗ có rãnh hoặc các kiểu lỗ đối diện cụ thể để tích hợp với các bu lông điều chỉnh phía sau (bộ đẩy) của máy hủy tài liệu. Chúng tôi duy trì một cơ sở dữ liệu khổng lồ về các bản vẽ OEM cho các thương hiệu như Weima, Vecoplan và Lindner. Việc cung cấp cho chúng tôi mẫu máy hoặc bản vẽ cơ bản của bạn sẽ đảm bảo các khe được phay theo tọa độ OEM chính xác.",
+            "Nói chung là không. Cấu hình, chỗ ngồi và việc điều chỉnh dao stator của máy hủy tài liệu được xác định bởi máy nguyên bản của nó. Một con dao tạo hạt hoạt động trong một buồng cắt khác. Đối với các bộ rôto và bệ máy tạo ra khả năng nghiền lại nhựa, xem [Dao tạo hạt nhựa](/products/granulator-blades) .",
         },
         {
           question:
-            "Tôi có nên thay dao giường khi thay các miếng đệm rôto không?",
+            "Tại sao hiệu suất cắt vẫn kém sau khi lắp miếng đệm rô-to mới?",
           answer:
-            "Không nhất thiết phải mọi lúc. Rôto chèn mòn nhanh hơn nhiều. Tuy nhiên, nếu lưỡi cắt của dao giường bị bo tròn hoặc sứt mẻ nghiêm trọng, việc đặt các miếng đệm rô-to mới tựa vào một con dao giường cùn sẽ làm giảm đáng kể tuổi thọ của các miếng đệm mới và giảm năng suất. Chúng tôi khuyên bạn nên kiểm tra cạnh dao giường trong mỗi chu kỳ định vị rôto và mài lại hoặc thay thế nó khi không thể duy trì cạnh sắc nữa.",
+            "Cạnh stato được giữ lại và khe hở cắt vẫn tham gia vào mỗi lần cắt. Cấu hình cố định bị mòn hoặc điều chỉnh không phù hợp có thể ảnh hưởng đến sự ăn khớp ngay cả khi các miếng đệm rô-to còn mới. Kiểm tra cùng nhau các đoạn stato, tình trạng lắp đặt và điều chỉnh theo chỉ định của máy trước khi quyết định bộ phận nào của cặp cắt cần thay thế.",
+        },
+        {
+          question: "Nên đo dao stato nối lại như thế nào để thay thế?",
+          answer:
+            "Đo từ mốc cố định đến cạnh còn lại và ghi lại số đo đó dưới dạng chiều cao nền. Một con dao phù hợp hoặc bản vẽ gốc chưa sử dụng có thể thiết lập vị trí cạnh mới. Sự khác biệt quan trọng khi con dao rút ngắn đã sử dụng một phần phạm vi điều chỉnh của máy.",
+        },
+        {
+          question: "Những cạnh và chi tiết lắp đặt nào có thể được tùy chỉnh?",
+          answer:
+            "Sureay có thể tạo các cạnh vát đơn, vát kép và có răng cưa với các rãnh, lỗ đối diện hoặc ren được chỉ định. Xác định hướng cạnh từ các mốc cố định và xác định vị trí đoạn. Điều này cho phép hai con dao có chiều dài tổng thể tương tự nhau giữ được các biên dạng cắt và cách sắp xếp lắp đặt riêng biệt.",
         },
         {
           question:
-            "Can you supply the matching rotor inserts, holders and shims on the same order?",
+            "Làm cách nào để nhận được báo giá cho các loại dao cố định hoặc đoạn stato của máy hủy tài liệu một trục?",
           answer:
-            "Yes. Rotor inserts, knife holders, clamping bars, adjustment shims and spacers are manufactured in-house and routinely shipped together with the bed knives. This is how we recommend ordering, because the rotor-to-bed clearance is set by both parts: fitting a new bed knife against worn inserts leaves the gap out of spec at every insert position, and the fresh edge absorbs the uneven load. One consolidated shipment also means one shutdown instead of two, and one tolerance stack instead of three.",
+            "Gửi mô hình máy, bản vẽ hoặc tài liệu tham khảo bộ phận gốc và số lượng theo phân khúc. Đối với stato được phân đoạn, hãy dán nhãn các phần cuối và phần trung gian, đồng thời hiển thị các mặt liền kề, biên dạng cạnh và các mẫu cố định của chúng trong bố cục. Bao gồm chiều cao dao mới ban đầu khi tham chiếu đã được mài lại.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi model máy, số bộ phận OEM và số lượng. Bao gồm bản vẽ hoặc ảnh hiển thị lưỡi cắt và khe lắp, đồng thời cho chúng tôi biết nếu bạn cũng cần tấm lắp.",
+    disambiguation:
+      "Đối với các loại dao được gắn trên rôto, xem [Dao rôto máy hủy tài liệu một trục](/products/single-shaft-shredder-blades) .",
+    compatibleMachines: ["Vecoplan", "Weima", "Lindner", "Zerma", "Cresswood"],
+    detailLayout: {
+      sizeRange: "279–3000 mm",
+      heroSpecs: [
         {
-          question: "Bạn có năng lực sản xuất lưỡi dao dài hơn 2 mét không?",
-          answer:
-            "Đúng. Cơ sở của chúng tôi được trang bị máy mài bề mặt hạng nặng và lò nung xử lý nhiệt chân không mở rộng có khả năng xử lý dao giường liền mạch, một mảnh có chiều dài lên tới 3.500 mm mà không gây biến dạng nhiệt.",
+          label: "Vật liệu",
+          value: "D2 (1.2379), DC53 , 42CrMo (AISI 4140), Thép làm dao Chipper",
         },
         {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp. Điều này cho phép chúng tôi kiểm soát chặt chẽ xử lý nhiệt và các quy trình mài quan trọng đối với dao stator dài, loại bỏ tình trạng không nhất quán về chất lượng thường gặp ở các công ty thương mại.",
-        },
-        {
-          question: "Thời gian thực hiện dao giường tùy chỉnh là bao lâu?",
-          answer:
-            "Đối với các sản phẩm thay thế OEM tiêu chuẩn, chúng tôi thường giao hàng trong vòng 3–5 ngày. Đối với độ dài tùy chỉnh hoặc yêu cầu hợp kim cụ thể, thời gian thực hiện sản xuất thường là 15–20 ngày làm việc, bao gồm các quy trình luân chuyển nhiệt sâu cần thiết để ổn định kích thước.",
+          label: "Ứng dụng",
+          value: "Máy hủy trục đơn · HDPE/PP/PVC · Pallet gỗ · MSW · Lốp xe",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value:
+            "Chiều dài được liệt kê 279–3000 mm; dao từng mảnh tùy chỉnh lên tới 3.500 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "D2 (1.2379), DC53 , 42CrMo (AISI 4140), Thép làm dao Chipper",
+        },
+        {
+          label: "Độ cứng mục tiêu",
+          value: "HRC 56–60 (Được làm cứng hoàn toàn)",
+        },
+        {
+          label: "Độ thẳng Tol.",
+          value: "0,05 mm trên mỗi mét tuyến tính",
+        },
+        {
+          label: "Hình học cạnh",
+          value: "Vát đơn, vát đôi, có răng cưa",
+        },
+        {
+          label: "lỗ gắn",
+          value: "Rãnh, phản nhàm chán, ren",
+        },
+        {
+          label: "Tích hợp hệ thống",
+          value: "Các mảnh rô-to phù hợp có sẵn riêng biệt",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Máy hủy trục đơn · HDPE/PP/PVC · Pallet gỗ · MSW · Lốp xe",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi model máy, số bộ phận OEM và số lượng. Bao gồm bản vẽ hoặc ảnh hiển thị lưỡi cắt và khe lắp, đồng thời cho chúng tôi biết nếu bạn cũng cần tấm lắp.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
     id: "granulator-blades",
-    name: "Lưỡi tạo hạt",
-    fullName:
-      "Máy nghiền nhựa công nghiệp & Dao tạo hạt để tái chế PET, PVC & PP",
-    category: "granulator_blades",
+    name: "Dao máy băm nhựa",
+    fullName: "Dao rôto và dao tĩnh cho máy nghiền nhựa",
+    seoTitle: "Dao tạo hạt nhựa | Cánh quạt & lưỡi giường",
+    seoDescription:
+      "Thay thế rôto và dao cố định trên máy tạo hạt chế biến PET, PP, HDPE hoặc PVC. Lưỡi máy tạo hạt nhựa có chiều dài được liệt kê là 90–1178 mm, với các mẫu bu lông tùy chỉnh.",
+    category: "shredder_blades",
     sector: "recycling",
     categoryDisplay: "Lưỡi tạo hạt",
     image: "/images/products/granulator-blades/granulator-blades-06.webp",
@@ -2233,84 +2745,143 @@ export const blades: Blade[] = [
       "/images/products/granulator-blades/edge-configurations.webp",
     ],
     description:
-      "Dao stator và rôto của máy tạo hạt D2, SKD-11 và Cr12MoV được mài chính xác đến dung sai lỗ bu lông ± 0,02mm dành cho máy tạo hạt Cumberland, Conair/Wortex, Herbold và Rapid. Các góc vát từ 30° đến 55° phù hợp với loại polyme - mang lại quá trình nghiền lại sạch, ít mịn. Làm cứng chân không cộng với xử lý đông lạnh sâu giúp ổn định HRC 58–62 để giữ cạnh lâu hơn.",
-    fullDescription:
-      "Rôto và dao stator của máy tạo hạt là những bộ phận có độ mài mòn cao nhất trong bất kỳ dây chuyền tái chế nhựa khép kín nào. Lựa chọn hợp kim không chính xác hoặc dung sai hình học không đạt tiêu chuẩn sẽ trực tiếp dẫn đến sự phân bố kích thước hạt lớn hơn, quá nhiều bụi và hạt mịn, tăng amp động cơ và rút ngắn khoảng thời gian mài - tất cả đều làm giảm chất lượng viên nghiền lại và tăng chi phí mỗi tấn được xử lý.\n\nSureay dao máy nghiền được sản xuất từ ​​​​D2 (1.2379), SKD-11, DC53 và Cr12MoV thép dụng cụ gia công nguội được chọn dựa trên hàm lượng chất độn polymer và mài mòn cụ thể đang được xử lý. PVC chứa đầy canxi cacbonat và nylon gia cố bằng sợi thủy tinh cần SKD-11 hoặc DC53 để có khả năng chống mài mòn tối đa. Các ứng dụng chịu tải va đập như thùng chứa HDPE có thành dày, đường dẫn nylon lạnh và đường dẫn nặng đòi hỏi tỷ lệ độ bền trên độ cứng cao hơn của Cr12MoV.\n\nTất cả các lưỡi dao đều được làm cứng chân không và được xử lý đông lạnh sâu ở -196°C để đạt được cấu trúc vi mô HRC 58–62 ổn định. Bước đông lạnh giúp loại bỏ austenite còn sót lại, giảm ứng suất nén bên trong và kéo dài đáng kể thời gian giữa các chu kỳ mài bằng cách cải thiện độ đồng đều phân tán cacbua trên lưỡi cắt.\n\n##Tiêu chuẩn mài chính xác\nKhoảng hở cắt giữa dao rôto và dao stato là biến số có ảnh hưởng lớn nhất kiểm soát kích thước hạt nghiền lại và tỷ lệ hạt mịn. Sureay dao máy nghiền được gia công theo các dung sai sau để đảm bảo khoảng cách giữa rôto và bệ nhất quán trên toàn bộ chiều rộng cắt:\n\n- Dung sai vị trí lỗ bu lông: ±0,02 mm\n- Độ phẳng mặt: 0,05 mm\n- Độ song song (mặt trên và mặt dưới): 0,03 mm\n- Góc vát: 30°–55° (được tối ưu hóa ứng dụng cho mỗi tốc độ polyme và rôto)\n\nĐộ lệch độ phẳng bề mặt trên 0,08 mm cho phép dao rô-to lắc lư khi chịu tải, dần dần mở rộng khoảng cách cắt và tăng tỷ lệ thô khi mài lại - một khiếm khuyết gây ra sự không đồng nhất trong cấp liệu của máy đùn xuôi dòng.\n\n## Lựa chọn góc vát dành riêng cho polyme\nGóc xiên 30°–35°: Nhựa nhiệt dẻo mềm (LDPE, LLDPE, EVA, PP xốp). Góc bao gồm thấp mang lại độ sắc nét tối đa để cắt sạch các vật liệu tuân thủ.\n\nGóc xiên 40°–45°: Nhựa kỹ thuật đa năng (HDPE, ABS, nghiền lại PP/PET tiêu chuẩn). Độ bền và độ sắc nét cân bằng của cạnh dành cho các nguyên liệu tạo hạt phổ biến nhất.\n\nGóc xiên 50°–55°: Hợp chất có độ mài mòn cao hoặc chứa đầy (ny lông chứa đầy thủy tinh, PVC canxi cacbonat, UHMW-PE). Góc xiên rộng hơn giúp phân bổ độ mài mòn trên bề mặt cắt lớn hơn, kéo dài khoảng thời gian mài sắc.\n\n## Khả năng tương thích của máy\nKích thước được thiết kế ngược để phù hợp với cấu hình Cumberland, Conair/Wortex, Alpine, Foremost, Nelmor, Herbold, Pallmann, Rapid và Ramco. Cả hai kiểu lắp hai lỗ và nhiều lỗ (ba, bốn lỗ) đều có sẵn trong kho tiêu chuẩn.",
+      "Rôto máy tạo hạt nhựa thay thế và dao cố định ở D2, SKD11, DC53 hoặc Cr12MoV. Cấu hình tùy chỉnh và mẫu bu lông để sản xuất nhựa tái chế.",
     link: "/products/granulator-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Rapid Granulator",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "Getecha",
-      "Cumberland Engineering",
-      "Conair",
-      "Wittmann Battenfeld",
-      "Gamma Meccanica",
-    ],
+    quoteRequirements:
+      "Bao gồm mô hình máy tạo hạt, vị trí rôto hoặc bệ máy, kích thước dao, bước lỗ lắp và vật liệu được cắt.",
+    introNote:
+      "Việc sắp xếp dao thẳng và xiên sẽ thay đổi cách các cạnh gặp nhau trong buồng cắt. Xác định cách sắp xếp ban đầu trước khi chọn bộ thay thế.",
     specs: [
       {
-        label: "Material",
-        value: "D2 (1.2379), SKD-11, DC53, Cr12MoV",
+        label: "Kích cỡ",
+        value: "90–1178 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 58–62 (Cryogenically Stabilized)",
+        label: "Ứng dụng",
+        value: "Sản xuất nghiền lại nhựa",
       },
       {
-        label: "Bolt-hole Tol.",
+        label: "Vị trí dao",
+        value: "Dao rôto quay và dao đứng yên",
+      },
+      {
+        label: "Vật liệu",
+        value: "D2 (1.2379), SKD-11 , DC53 hoặc Cr12MoV",
+      },
+      {
+        label: "độ cứng",
+        value: "HRC 58–62",
+      },
+      {
+        label: "Góc vát",
+        value: "30°–55°",
+      },
+      {
+        label: "Dung sai lỗ bu lông",
         value: "±0.02 mm",
       },
       {
-        label: "Face Flatness",
-        value: "≤ 0.05 mm",
+        label: "Độ phẳng của mặt",
+        value: "≤0.05 mm",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.03 mm",
+        label: "Sự song song",
+        value: "≤0.03 mm",
       },
       {
-        label: "Bevel Angle",
-        value: "30° - 55° (Application-optimized)",
+        label: "Xử lý nhiệt",
+        value: "Làm cứng chân không và xử lý đông lạnh sâu (−196°C)",
       },
       {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
-      },
-      {
-        label: "Application",
-        value: "PET, PVC, PP, HDPE, Engineering Plastics",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Cumberland, Rapid, Herbold, Conair, Nelmor",
+        label: "Nguyên liệu",
+        value: "Nhựa PET, PVC, PP, HDPE và nhựa kỹ thuật",
       },
     ],
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "cutter-compactor-blades",
+    ],
+    offers: {
+      lowPrice: 25,
+      highPrice: 320,
+    },
     components: [
       {
-        id: "maximized-regrind-quality",
-        tag: "CHẤT LƯỢNG",
-        title: "Chất lượng xay lại tối đa",
+        id: "granulator-blades-advantage-1",
+        tag: "Tùy chọn thép công cụ cho việc mài lại nhựa",
+        title: "Tùy chọn thép công cụ cho việc mài lại nhựa",
         description:
-          "Các cạnh cắt siêu sắc, được căn chỉnh chính xác giúp cắt nhựa một cách sạch sẽ thay vì làm rách, giảm đáng kể việc tạo ra bụi và mảnh vụn không mong muốn.",
+          "Dao D2 , SKD11 , DC53 và Cr12MoV cung cấp các lựa chọn vật liệu cho quá trình sản xuất nghiền lại nhựa, với loại thép được chỉ định được xem xét cùng với polyme, chất độn và cách bố trí cắt hiện có.",
       },
       {
-        id: "extended-mtbr",
-        tag: "TIN CẬY",
-        title: "MTBR kéo dài (Thời gian trung bình giữa các lần thay thế)",
+        id: "granulator-blades-advantage-2",
+        tag: "Góc vát mặt đất và hình học gắn kết xác định",
+        title: "Góc vát mặt đất và hình học gắn kết xác định",
         description:
-          "Khả năng chống mài mòn cao giúp giảm thiểu tần suất mài và thay thế lưỡi dao, giữ cho dây chuyền tái chế của bạn hoạt động liên tục.",
+          "Sureay cung cấp rôto và dao cố định với các góc xiên, mặt làm việc và mẫu bu lông được chỉ định, cho phép các đơn đặt hàng thay thế giữ nguyên hướng cắt và hình dạng chỗ ngồi của máy.",
       },
       {
-        id: "reduced-motor-load",
-        tag: "HIỆU QUẢ",
-        title: "Giảm tải động cơ",
+        id: "granulator-blades-advantage-3",
+        tag: "Bộ dao cố định và cánh quạt tùy chỉnh",
+        title: "Bộ dao cố định và cánh quạt tùy chỉnh",
         description:
-          "Góc cắt được tối ưu hóa giúp giảm lực cắt cần thiết, giảm mức tiêu thụ điện trên động cơ máy tạo hạt của bạn và giảm chi phí năng lượng trên mỗi tấn.",
+          "Sureay cung cấp từng rôto và dao cố định hoặc bộ hoàn chỉnh để vẽ hoặc lấy mẫu. Chiều dài dao được liệt kê trải dài từ 90–1178 mm, với các vị trí di chuyển và cố định được chỉ định riêng cho buồng cắt.",
       },
     ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Làm cách nào để chọn dao thay thế cho máy tạo hạt nhựa của tôi?",
+          answer:
+            "Sử dụng kiểu máy, vị trí dao và số bộ phận ban đầu, sau đó so sánh chiều dài, mặt cắt, góc xiên và mẫu cố định. Dao rôto và dao cố định có thể khác nhau trong cùng một máy. Bảng kích thước tiêu chuẩn cung cấp các cấu hình riêng, trong khi bản vẽ dao thiết lập sự thay thế chính xác cho buồng cắt đã lắp đặt của bạn.",
+        },
+        {
+          question: "Dao rôto, dao bay và dao cố định có ý nghĩa gì?",
+          answer:
+            "Dao rôto, còn được gọi là dao bay, di chuyển bằng rôto máy tạo hạt. dao cố định tạo thành cạnh đối diện cố định. Dao nghiền nhựa là tên mua rộng hơn đôi khi được sử dụng cho các bộ phận này. Xác định máy và vị trí thực tế vì các thuật ngữ giống nhau có thể được sử dụng cho các cách bố trí cắt khác nhau trong thiết bị giảm kích thước.",
+        },
+        {
+          question:
+            "Khi nào hàm lượng polymer hoặc chất độn nên thay đổi sự lựa chọn vật liệu?",
+          answer:
+            "Chất độn mài mòn và chất bẩn có thể làm thay đổi tốc độ mòn của cạnh làm việc, trong khi tác động và hư hỏng cạnh giòn gây ra những lo ngại khác nhau. So sánh hợp chất thực tế và dao đã qua sử dụng với thông số kỹ thuật vật liệu hiện tại. Sự so sánh đó giúp đánh giá cấp độ thay thế mà không thay đổi phần dao, góc xiên hoặc hình dạng lắp đặt cần thiết của máy.",
+        },
+        {
+          question:
+            "Tại sao máy tạo hạt lại tạo ra nhiều hạt mịn hơn hoặc độ nghiền lại kém hơn?",
+          answer:
+            "Cặp cắt cùn, khe hở giữa rôto và bệ không chính xác hoặc màn chắn bị mòn có thể làm tăng độ mịn hoặc thay đổi chất lượng nghiền lại. Tìm kiếm các cạnh tròn hoặc độ mòn không đồng đều trên rôto và dao cố định, đồng thời so sánh đầu ra trong cùng điều kiện nạp trước khi thay đổi thông số kỹ thuật của dao.",
+        },
+        {
+          question:
+            "Có một khe hở dao tiêu chuẩn cho tất cả các máy tạo hạt không?",
+          answer:
+            "Không. Khoảng cách giữa rô-to và bệ được chỉ định tùy thuộc vào máy tạo hạt của bạn và cấu hình dao của nó. Cài đặt OEM xác định loại dao nào có thể được điều chỉnh và kích thước dao tối thiểu sau khi mài lại. Kiểm tra cả hai giới hạn khi lắp bộ mài hoặc bộ thay thế.",
+        },
+        {
+          question:
+            "Tại sao cách sắp xếp dao thẳng và dao xiên cần có hình vẽ khác nhau?",
+          answer:
+            "Góc cắt có thể là kết quả của biên dạng dao, vị trí của nó trên rôto hoặc bệ máy hoặc cả hai. Do đó, chiều dài dao tổng thể chỉ mô tả một phần cấu hình. Bản vẽ cần duy trì hướng vát và hình học cố định được sử dụng bởi sự kết hợp rôto và bệ máy của máy.",
+        },
+        {
+          question: "Khi nào dao tạo hạt có thể được mài lại?",
+          answer:
+            "Việc mài lại phù hợp khi biên dạng cắt đã chỉ định có thể được khôi phục trong phạm vi kích thước dao tối thiểu cho phép. Kiểm tra chiều cao còn lại và mức điều chỉnh cho phép theo hướng dẫn của máy. Những con dao đã đạt đến giới hạn sử dụng hoặc không thể phục hồi mép âm thanh cần được thay thế, với vị trí rôto và bệ máy được đánh giá là một cặp làm việc.",
+        },
+        {
+          question:
+            "Cần thông tin gì để báo giá rôto máy tạo hạt nhựa và dao cố định?",
+          answer:
+            "Gửi mô hình máy tạo hạt và các bản vẽ, số bộ phận hoặc mẫu riêng biệt cho các vị trí rôto và bệ máy, cùng với loại nhựa, chất độn và số lượng cho mỗi con dao. Hiển thị mẫu vát và lỗ cho từng vị trí. Đánh dấu riêng chiều cao của mặt đất nếu tài liệu tham khảo duy nhất của bạn là một con dao được mài sắc.",
+        },
+      ],
+      company: [],
+    },
     dimensionLabels: {
-      col0: "Cấu hình lỗ",
+      col0: "Cấu hình",
       col1: "Kích thước (L × W × T)",
       col2: "Sân trung tâm lỗ",
       caption:
@@ -2318,443 +2889,442 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Double hole",
+        itemNo: "SR002801",
+        spec: "Lỗ đôi",
         od: "90 × 70 × 8",
         bolt: "40 / 45 / 50",
       },
       {
-        spec: "Double hole",
+        itemNo: "SR002802",
+        spec: "Lỗ đôi",
         od: "120 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002803",
+        spec: "Ba lỗ",
         od: "126 × 60 × 8",
         bolt: "40",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002804",
+        spec: "Ba lỗ",
         od: "150 × 70 × 8",
         bolt: "50 / 55",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002805",
+        spec: "Ba lỗ",
         od: "170 × 70 × 8",
         bolt: "45",
       },
       {
-        spec: "Triple hole",
+        itemNo: "SR002806",
+        spec: "Ba lỗ",
         od: "180 × 70 × 8",
         bolt: "60",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002807",
+        spec: "lỗ tứ giác",
         od: "170 × 70 × 8",
         bolt: "40",
       },
       {
-        spec: "Quadra hole",
+        itemNo: "SR002808",
+        spec: "lỗ tứ giác",
         od: "200 × 70 × 8",
         bolt: "50",
       },
+      {
+        itemNo: "SR002809",
+        spec: "Rôto ZERMA GSP 560/700 - vị trí 501",
+        od: "310 × 100 × 22",
+        bolt: "Để vẽ",
+      },
+      {
+        itemNo: "SR002810",
+        spec: "Stator ZERMA GSP 560/700 — vị trí 601",
+        od: "646 × 100 × 22",
+        bolt: "Để vẽ",
+      },
+      {
+        itemNo: "SR002811",
+        spec: "Rôto ZERMA GSH 800/1200 - 80000900",
+        od: "568 × 100 × 22",
+        bolt: "Để vẽ",
+      },
+      {
+        itemNo: "SR002812",
+        spec: "Stator ZERMA GSH 800/1200 — 80001050",
+        od: "1178 × 100 × 22",
+        bolt: "Để vẽ",
+      },
+      {
+        itemNo: "SR002813",
+        spec: "Rôto ZERMA GSH 800/1600 — 80000920",
+        od: "385 × 100 × 22",
+        bolt: "Để vẽ",
+      },
+      {
+        itemNo: "SR002814",
+        spec: "Stator ZERMA GSH 800/1600 — 80001070",
+        od: "795 × 100 × 22",
+        bolt: "Để vẽ",
+      },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "twin-shaft-blades-recycling",
-      "cutter-compactor-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 320,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Làm cách nào để chọn giữa D2, DC53 và Cr12MoV cho máy tạo hạt của tôi?",
-          answer:
-            "D2 là tiêu chuẩn công nghiệp dành cho nhựa sạch như PET và PP. Đối với các polyme chứa thủy tinh hoặc có tính mài mòn, DC53 mang lại khả năng chống mài mòn vượt trội. Nếu nguồn cấp dữ liệu của bạn thỉnh thoảng có chứa tạp chất kim loại (như dây hoặc ghim), Cr12MoV mang lại độ bền va đập cao hơn để ngăn ngừa sứt mẻ cạnh.",
-        },
-        {
-          question:
-            "Điều gì gây ra quá nhiều bụi và tiền phạt trong quá trình tạo hạt nhựa?",
-          answer:
-            "Nguyên nhân thường là do các cạnh cùn hoặc góc vát không chính xác làm rách nhựa thay vì cắt nó. Chúng tôi tối ưu hóa góc vát (30°–55°) dựa trên loại polyme cụ thể của bạn để đảm bảo cắt sạch, giúp tối đa hóa chất lượng nghiền lại và giá trị viên của bạn.",
-        },
-        {
-          question:
-            "Bạn có thể ghép các mẫu lỗ bu lông chính xác cho máy cụ thể của tôi không?",
-          answer:
-            "Tuyệt đối. Chúng tôi duy trì một cơ sở dữ liệu khổng lồ về các bản thiết kế OEM cho Cumberland, Herbold, Rapid, Weima, v.v. Chúng tôi gia công CNC tất cả các lỗ đối diện với dung sai nghiêm ngặt ±0,02mm để đảm bảo lắp vừa khít hoàn hảo mà không bị rung lắc vi mô.",
-        },
-        {
-          question:
-            "Hình dạng dao rôto nào tạo ra tỷ lệ hạt mịn thấp nhất trong máy tạo hạt bên cạnh máy ép?",
-          answer:
-            "Đối với máy tạo hạt nội tuyến bên cạnh máy ép trên dây chuyền ép phun, góc vát 40°–45° với mặt trước được đánh bóng (Ra ≤ 0,8μm) mang lại quá trình nghiền lại sạch nhất, có độ mịn thấp nhất trên vật liệu đường dẫn và mầm. Bề mặt được đánh bóng làm giảm độ bám dính trong vùng cắt, ngăn ngừa hiện tượng hàn vi mô của vật liệu HDPE và PP tạo ra các hạt mịn ở tốc độ chu kỳ cao điển hình của sản xuất ép phun liên tục.",
-        },
-        {
-          question:
-            "Khi nào tôi nên mài và thay thế dao rôto máy tạo hạt của mình?",
-          answer:
-            "Chỉ báo chính là sự phân bố kích thước hạt nghiền lại - khi tỷ lệ quá cỡ vượt quá 8–10% trọng lượng đầu ra, dao rô-to cần được mài sắc. Các chỉ số phụ là mức tăng amp động cơ trên 15% so với mức cơ bản và tỷ lệ bụi tăng cao. Mỗi lưỡi dao Sureay thường có thể được mài lại 3–5 lần trước khi hình dạng vát đạt đến độ sâu vật liệu có thể sử dụng tối thiểu, tại thời điểm đó việc thay thế sẽ tiết kiệm hơn.",
-        },
-      ],
-      company: [
-        {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
-        },
-        {
-          question:
-            "Điều gì khiến xử lý nhiệt của Sureay khác biệt so với các lựa chọn thay thế rẻ hơn?",
-          answer:
-            "Không giống như quá trình làm nguội tiêu chuẩn, mỗi lưỡi dao Sureay đều trải qua quá trình xử lý đông lạnh sâu sau khi đông cứng chân không. Điều này biến austenite còn lại thành martensite, tăng khả năng chống mài mòn lên tới 40% và đảm bảo độ cứng đồng đều trên toàn bộ lưỡi cắt.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi thay thế OEM tiêu chuẩn thường được giao trong vòng 48 giờ. Hồ sơ tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question:
-            "Sureay có những chứng chỉ chất lượng nào và bạn có thể cung cấp báo cáo thử nghiệm vật liệu không?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước và chứng chỉ lô xử lý nhiệt. Đối với chứng chỉ OEM, báo cáo chiều CMM đầy đủ và chứng chỉ nhà máy thép có sẵn theo yêu cầu.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–5 lưỡi) để xác minh độ vừa vặn của máy và kiểm tra tuổi thọ của cạnh. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc. Đối với các cấu hình tùy chỉnh, các mẫu xác nhận kích thước được tạo ra trước khi bắt đầu sản xuất hoàn chỉnh - không có cam kết về dụng cụ cho đến khi xác nhận sự phù hợp.",
-        },
-      ],
-    },
   },
   {
+    compatibleMachinesIntro:
+      "Đặt hàng dao rạch cuộn thép có miếng đệm, vòng gạt phôi và đĩa phân cách cần thiết cho dây chuyền của bạn. Sureay cung cấp các tùy chọn cấp độ, lỗ khoan tùy chỉnh và chiều rộng dụng cụ; gửi bản vẽ và lịch trình cắt của bạn để có báo giá phối hợp.",
     id: "metal-coil-slitting-knives",
-    name: "Dao rạch cuộn kim loại",
-    fullName: "Dao rạch quay hạng nặng để gia công thép cuộn",
+    name: "Dao xẻ băng thép cuộn",
+    fullName: "Dao xẻ dọc thép cuộn và dụng cụ cắt kiểu kéo quay",
     category: "slitter_knives",
     sector: "metal",
-    categoryDisplay: "Lưỡi cắt kim loại",
-    image:
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-    badge: "nhiệm vụ nặng nề",
-    badgeColor: "red",
-    gallery: [
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-00.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-03.webp",
-      "/images/products/rotary-slitter-knives/metal-slitter-knives-05.webp",
-    ],
+    categoryDisplay: "Dao xẻ băng thép cuộn",
+    image: "/images/products/slitter-detail/metal-coil-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Dụng cụ rạch cuộn dây quay hoàn chỉnh dành cho các trung tâm dịch vụ kim loại và nhà máy thép. Dao xẻ tròn D2, SKD-11 và H13 có độ dày Ra ≤ 0,2μm với dung sai độ dày ±0,001mm. Được thiết kế để cắt không có gờ các loại thép cán nguội (CR), thép cán nóng (HR), cuộn mạ kẽm và thép silicon nặng.",
-    fullDescription:
-      "Rạch cuộn chính xác đòi hỏi một tiêu chuẩn dung sai kích thước mà hầu hết các ứng dụng cắt công nghiệp không bao giờ đạt được. Trên dây chuyền rạch tốc độ cao chạy các cuộn thép nặng ở tốc độ 200–400 m/phút trên một cụm trục nhiều dao, sai số độ dày tích lũy chỉ 0,01 mm trên mỗi dao sẽ tạo ra độ lệch chiều rộng khe có thể đo được, các gờ sắc nghiêm trọng và độ cong của cuộn vượt quá giới hạn chất lượng cho sản xuất ô tô và thiết bị.\n\nDao cắt kim loại hình tròn Sureay được sản xuất với dung sai cực kỳ đã được xác minh. Tất cả các mặt bên của dao đều được mài hoàn thiện tới Ra ≤ 0,2μm. Lớp hoàn thiện mặt gương này không chỉ mang tính thẩm mỹ—nó đảm bảo sự tiếp xúc hoàn toàn giữa kim loại với kim loại giữa các cánh và miếng đệm trong cụm trục, loại bỏ các khe hở không khí cực nhỏ cho phép lệch từng cánh khi chịu tải rạch ngang.\n\n## Lựa chọn hợp kim nặng theo vật liệu dải\n\n**Thép cán nguội và mạ kẽm (CR, EG, HDG):** D2 (1.2379) hoặc SKD-11, được làm cứng đến HRC 60–62 thông qua tôi chân không. Hàm lượng cacbua crom cao chống lại sự mài mòn từ vảy kẽm và cặn bề mặt. Được khuyến nghị cho các trung tâm dịch vụ thép CR thay đổi liên tục.\n\n**Thép cán nóng & tấm khổ nặng:** Thép công cụ gia công nóng H13 (SKD-61) hoặc 6CrW2Si. Rạch thép cán nóng tạo ra lực tác động lớn và nhiệt độ môi trường tăng cao. Độ dẻo dai vượt trội của H13 ngăn ngừa hiện tượng gãy giòn thảm khốc phá hủy lưỡi D2 tiêu chuẩn trên dây chuyền khổ lớn.\n\n**Thép silicon (Cấp điện CRGO / CRNO):** Các loại luyện kim bột Cr12MoV hoặc PM. Độ mài mòn cực cao của thép silicon—chủ yếu do tạp chất silica gây ra—đòi hỏi khả năng chống mài mòn tối đa để duy trì dung sai chiều rộng khe trong suốt quá trình sản xuất máy biến áp hoàn chỉnh.\n\n## Hoàn thiện công cụ cắt rãnh\n\nDao cắt chỉ là một bộ phận của hệ thống rạch cuộn chính xác. Các miếng đệm bằng thép, các vòng gạt cao su được liên kết và các đĩa tách tay đòn phải có kích thước phù hợp với bộ dao để đảm bảo tải trước đầu trục đồng nhất và độ căng dải nhất quán. Sureay cung cấp các gói công cụ rạch tích hợp đầy đủ—được xác minh là một hệ thống phù hợp để loại bỏ các lỗi xếp chồng dung sai.",
+      "Dao cắt cuộn thép thay thế cho thép carbon, thép không gỉ và thép cường độ cao. Dao cắt quay, miếng đệm và vòng gạt phôi tùy chỉnh để vẽ.",
     link: "/products/metal-coil-slitting-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "Fagor Arrasate",
-      "Heinrich Georg",
-      "Red Bud Industries",
-      "Braner",
-      "Salico",
-      "Athader",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "D2, SKD11, Cr12MoV (Cold-Roll) | H13, 6CrW2Si (Hot-Roll)",
+        label: "Kích cỡ",
+        value: "Cắt quay OD 80–680 mm",
       },
       {
-        label: "Hardness",
-        value: "HRC 60–62 (Cold-Roll) | HRC 54–58 (Hot-Roll / Impact)",
+        label: "Vật liệu",
+        value:
+          "Cacbua D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS hoặc WC-Co",
       },
       {
-        label: "Thickness Tol.",
-        value: "Strictly ±0.001 mm",
+        label: "Ứng dụng",
+        value: "Cuộn cán nguội, cán nóng, không gỉ và độ bền cao",
       },
       {
-        label: "Parallelism",
-        value: "≤ 0.002 mm",
+        label: "Bề mặt hoàn thiện",
+        value: "Mặt tráng gương, Ra 0,2 μm",
       },
       {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤ 0.2 μm)",
+        label: "Phù hợp với lỗ khoan",
+        value: "H7 cho mẫu H7 được liệt kê. Khác phù hợp để vẽ.",
       },
       {
-        label: "Complete Tooling",
-        value: "Knives, Spacers, Rubber Stripper Rings, Separators",
+        label: "Độ cứng điển hình",
+        value:
+          "D2 58–62 HRC · H13 54–58 HRC để cắt tấm xung quanh · PM HSS 64–66 HRC",
       },
       {
-        label: "Application",
-        value: "Cold / Hot Rolled Steel, Silicon Steel, Galvanized Plate",
+        label: "Tùy chọn chính xác",
+        value:
+          "Đối với OD lên tới 420 mm, độ dày ± 0,001 mm và độ song song của mặt 0,002 mm. Các kích thước khác để vẽ.",
       },
+      {
+        label: "Dụng cụ",
+        value: "Miếng đệm, vòng gạt phôi và đĩa tách vòng tay",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Cây thông rắn có lỗ khoan trơn hoặc có khóa",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao rạch thép cuộn | Công cụ tùy chỉnh",
+      sizeRange: "Cắt quay OD 80–680 mm",
+      heroAlt: "Dao cắt quay mặt đất dày để cắt cuộn thép",
+      specificationImage: {
+        src: "/images/products/slitter-detail/metal-coil-slitting-knives-detail.webp",
+        alt: "Vòng cắt cuộn có lõi thép và vòng ngoài được liên kết",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "steel",
+          tabLabel: "Dao thép",
+          title: "Dao quay thép",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Lớp dòng"],
+          rows: [
+            ["SR001301", "200 × 120 × 10 mm", "Máy đo ánh sáng"],
+            ["SR001302", "200 × 120 × 12 mm", "Máy đo ánh sáng"],
+            ["SR001303", "250 × 150 × 12 mm", "Trung tâm dịch vụ"],
+            ["SR001304", "250 × 150 × 15 mm", "Trung tâm dịch vụ"],
+            ["SR001305", "300 × 200 H7 × 12 mm", "Nhiệm vụ trung bình"],
+            ["SR001306", "315 × 200 × 15 mm", "Cán nguội / cán nóng"],
+            ["SR001307", "315 × 200 × 20 mm", "Cán nguội / cán nóng"],
+            ["SR001308", "400 × 260 × 25 mm", "Cán nóng"],
+            ["SR001309", "500 × 320 × 40 mm", "Tấm nặng"],
+          ],
+        },
+        {
+          id: "carbide",
+          tabLabel: "Dao cacbua",
+          title: "Dao quay cacbua",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Kết cấu"],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "cacbua rắn"],
+            ["SR001332", "181 × 125 × 9.5 mm", "cacbua rắn"],
+            ["SR001333", "204 × 125 × 10 mm", "cacbua rắn"],
+            ["SR001334", "250 × 125 × 10.1 mm", "cacbua rắn"],
+            ["SR001335", "300.15 × 160 × 28 mm", "cacbua rắn"],
+          ],
+        },
+        {
+          id: "tooling",
+          tabLabel: "Dụng cụ trồng cây",
+          title: "Dụng cụ trồng cây",
+          columns: [
+            "Mã sản phẩm",
+            "Thành phần",
+            "Chức năng",
+            "Lựa chọn đầu vào",
+          ],
+          rows: [
+            [
+              "SR001341",
+              "Miếng đệm",
+              "Đặt vị trí cắt",
+              "Chiều rộng, lỗ khoan và ngăn xếp phù hợp",
+            ],
+            [
+              "SR001342",
+              "Nhẫn vũ nữ thoát y",
+              "Dải hỗ trợ và phát hành",
+              "Chất đàn hồi bằng thép hoặc ngoại quan, độ cứng và chiều rộng",
+            ],
+            [
+              "SR001343",
+              "Đĩa phân cách",
+              "Hướng dẫn tách dải",
+              "Lỗ khoan, OD và dạng cạnh",
+            ],
+          ],
+        },
+        {
+          id: "additional-steel-knives",
+          tabLabel: "Kích thước dao thép bổ sung",
+          title: "Kích thước dao thép bổ sung",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Ứng dụng"],
+          rows: [
+            ["SR001818", "400 × 260 × 20 mm", "Thép cán nóng khổ lớn"],
+            ["SR001819", "500 × 320 × 30 mm", "Tấm nặng"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Cắt quay OD 80–680 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "Cacbua D2 , SKD11 , Cr12MoV , H13 , 6CrW2Si , DC53 , M2 , PM HSS hoặc WC-Co",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cuộn cán nguội, cán nóng, không gỉ và độ bền cao",
+        },
+        {
+          label: "Bề mặt hoàn thiện",
+          value: "Mặt tráng gương, Ra 0,2 μm",
+        },
+        {
+          label: "Phù hợp với lỗ khoan",
+          value: "H7 cho mẫu H7 được liệt kê. Khác phù hợp để vẽ.",
+        },
+        {
+          label: "Độ cứng điển hình",
+          value:
+            "D2 58–62 HRC · H13 54–58 HRC để cắt tấm xung quanh · PM HSS 64–66 HRC",
+        },
+        {
+          label: "Tùy chọn chính xác",
+          value:
+            "Đối với OD lên tới 420 mm, độ dày ± 0,001 mm và độ song song của mặt 0,002 mm. Các kích thước khác để vẽ.",
+        },
+        {
+          label: "Dụng cụ",
+          value: "Miếng đệm, vòng gạt phôi và đĩa tách vòng tay",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Cây thông rắn có lỗ khoan trơn hoặc có khóa",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "Braner",
+      "Fagor Arrasate",
+      "Heinrich Georg",
+      "Burghardt + Schmidt",
+      "ANDRITZ",
+      "Red Bud Industries",
     ],
     components: [
       {
-        id: "micron-tolerance",
-        tag: "CHÍNH XÁC",
-        title: "Kỹ thuật dung sai vi mô",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Các loại thép cho các tải cuộn khác nhau",
         description:
-          "Được thiết kế với dung sai độ dày ± 0,001mm và độ song song 0,002mm. Điều này đảm bảo không có lỗi tích lũy khi xếp chồng nhiều lưỡi dao và miếng đệm nặng lên trục máy xén.",
+          "Sureay cung cấp các cấu hình thép công cụ và thép PM cho các loại cuộn và tải xử lý khác nhau, cho phép các đơn đặt hàng dao thay thế phản ánh đặc điểm kỹ thuật của dải và độ mòn hoặc sứt mẻ được quan sát.",
       },
       {
-        id: "alloy-toughness",
-        tag: "Luyện kim",
-        title: "Lựa chọn hợp kim hạng nặng",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Kích thước mặt đất cho ngăn xếp dao và miếng đệm",
         description:
-          "Từ D2/SKD11 hàm lượng crom cao dành cho thép cán nguội và mạ kẽm có tính mài mòn đến H13 chống sốc dành cho máy cán nóng nặng. Mỗi lưỡi dao được làm cứng chân không để mang lại độ bền cạnh đặc biệt.",
+          "Dao thay thế được mài theo hình dạng bề mặt và chiều rộng được chỉ định cho ngăn xếp cuộn cuộn của bạn, với các kích thước miếng đệm phù hợp được phối hợp với cùng một bố cục dụng cụ.",
       },
       {
-        id: "complete-setup",
-        tag: "HỆ THỐNG",
-        title: "Công cụ Arbor hoàn chỉnh",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao rạch có dụng cụ đi kèm",
         description:
-          "Ngoài lưỡi dao, chúng tôi còn cung cấp các miếng đệm bằng thép phù hợp chính xác, vòng gạt phôi bằng cao su và đĩa tách tay. Một hệ thống tích hợp đầy đủ đảm bảo độ căng dải hoàn hảo và cuộn dây không có gờ.",
+          "Tìm nguồn dao rạch, miếng đệm, vòng gạt phôi và đĩa phân tách trong một yêu cầu, với các bộ phận và số lượng cần thiết được sắp xếp xung quanh bố cục dụng cụ dạng cuộn của bạn.",
       },
     ],
-    dimensionLabels: {
-      col0: "Loại máy / dây chuyền điển hình",
-      col1: "Đường kính ngoài",
-      col2: "Đường kính trong",
-      col3: "độ dày",
-      caption:
-        "* Kích thước hiển thị là ví dụ tiêu chuẩn. Chúng tôi sản xuất dây chuyền xẻ tấm khổ lớn lên đến Ø 1500 mm. Các rãnh then tùy chỉnh và các lỗ chốt truyền động được gia công theo bản thiết kế OEM chính xác.",
-    },
-    standardDimensions: [
-      {
-        spec: "Light Gauge Slitting Line",
-        od: "Ø 200 mm",
-        id: "120 mm",
-        thickness: "10 / 12 mm",
-      },
-      {
-        spec: "Standard Steel Service Center",
-        od: "Ø 250 mm",
-        id: "150 mm",
-        thickness: "12 / 15 mm",
-      },
-      {
-        spec: "Medium-Heavy CR/HR Line",
-        od: "Ø 315 mm",
-        id: "200 mm",
-        thickness: "15 / 20 mm",
-      },
-      {
-        spec: "Heavy Gauge HR Steel Mill",
-        od: "Ø 400 mm",
-        id: "260 mm",
-        thickness: "20 / 25 mm",
-      },
-      {
-        spec: "Extreme Heavy Plate Mill",
-        od: "Ø 500 mm",
-        id: "320 mm",
-        thickness: "30 / 40 mm",
-      },
-    ],
-    relatedBladeIds: [
-      "metal-foil-strip-slitter-knives",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1500,
-    },
     faqs: {
       technical: [
         {
-          question:
-            "Tôi nên đặt khoảng hở dao nào cho thép cán nguội so với thép silicon?",
+          question: "Điều gì nhận biết một con dao rạch cuộn thép thay thế?",
           answer:
-            "Đối với thép nhẹ cán nguội (CR, EG), đặt khoảng hở ngang ở mức 8–10% độ dày vật liệu. Đối với thép silicon (CRGO/CRNO), hãy thắt chặt khe hở đến 5–8% - độ cứng và độ giòn cực cao của thép silicon đòi hỏi khe hở cắt chặt hơn để ngăn chặn hiện tượng nứt cạnh tạo ra các vệt trên dải cán máy biến áp.",
+            "Đường kính ngoài, lỗ khoan, chiều rộng trục và bề mặt tiếp xúc của trục thiết lập sự phù hợp cơ bản. Bao gồm cấp dải, độ dày và dụng cụ được giữ lại. Dao cắt quay là loại dao tròn được sử dụng để rạch cuộn theo chiều dọc; dao cắt thẳng cắt ngang dải, trong khi [Lưỡi cắt phế liệu](/products/scrap-chopper-blades) cắt phần viền cạnh thành các đoạn ngắn hơn.",
         },
         {
           question:
-            "Tại sao chiều rộng khe của tôi trôi qua toàn bộ chiều rộng cuộn dây sau cuộn dây đầu tiên?",
+            "Độ bền của cuộn dây và hư hỏng của lưỡi dao ảnh hưởng như thế nào đến việc lựa chọn vật liệu làm dao?",
           answer:
-            "Độ lệch chiều rộng khe là do sự mất tiếp xúc giữa mặt cánh và miếng đệm do dung sai độ dày khác nhau trong cụm đầu cặp dao. Ngay cả sự không nhất quán về độ dày lưỡi dao 0,002mm trong ngăn xếp 20 con dao cũng tạo ra sự dịch chuyển ngang tích lũy 0,04mm. Các lưỡi dao và miếng đệm của chúng tôi được mài với dung sai độ dày ±0,001mm và độ hoàn thiện bề mặt Ra ≤ 0,2μm, loại bỏ các khe hở không khí cho phép làm lệch từng lưỡi dao.",
+            "Xem xét độ bền, độ dày và điều kiện xử lý của dải cùng với tình trạng của dao đã sử dụng. Sự mài mòn dần dần và sứt mẻ cạnh đặt ra các câu hỏi lựa chọn vật liệu khác nhau. So sánh thông số kỹ thuật của cuộn dây và kiểu hao mòn hiện tại với dụng cụ hiện có giúp xác định yêu cầu thay thế, bao gồm sự cân bằng giữa khả năng chống mài mòn và khả năng chống hư hỏng cạnh.",
+        },
+        {
+          question: "Tại sao dao rạch cuộn lại bị sứt mẻ thay vì mòn dần?",
+          answer:
+            "Sứt mẻ có thể chỉ ra tình trạng quá tải cơ học. Có thể góp phần tạo ra khoảng hở ngang không chính xác, chồng chéo quá mức, dụng cụ bị biến dạng hoặc lưỡi cắt bị mỏi. Chất liệu dao và độ cứng cũng ảnh hưởng đến kết quả. Kiểm tra vị trí bị hư hỏng, lịch sử dụng cụ được giữ lại và quá trình mài so với cấp độ và độ dày dải thực tế trước khi quyết định liệu thiết lập hoặc vật liệu thay thế có cần thay đổi hay không.",
         },
         {
           question:
-            "Tôi nên sử dụng D2 hay H13 để xẻ tấm thép cán nóng (HR) dày 8mm?",
+            "Điều gì gây ra các vệt hoặc các cạnh khe không đều trên dây cuộn?",
           answer:
-            "Đối với tấm HR 8 mm, bạn phải sử dụng H13 hoặc 6CrW2Si. Việc xẻ thép cán nóng khổ lớn tạo ra lực va đập lớn tại điểm cắn. D2 (ở HRC 60) quá giòn và có thể sẽ bị vỡ hoặc bị sứt mẻ vi mô nghiêm trọng dưới các tải trọng này. H13 (được tôi luyện theo HRC 54–56) mang lại độ bền lõi lớn cần thiết để hấp thụ các lực tác động này một cách đáng tin cậy.",
+            "Mòn hoặc sứt mẻ lưỡi dao, độ hở của dao, sự chồng chéo, tình trạng của trục và những thay đổi về cấp dải đều có thể góp phần. So sánh vị trí và hướng của khuyết tật trên mẫu khe. Bản ghi đó giúp xác định xem nó tuân theo một con dao, một thiết lập dụng cụ cụ thể hay một sự thay đổi về vật liệu đang được xử lý.",
         },
         {
           question:
-            "Lịch trình kiểm tra bảo trì nào giúp tối đa hóa tuổi thọ sử dụng của dao xén tròn?",
+            "Dung sai của dao và miếng đệm nên được chỉ định như thế nào cho một ngăn xếp hoàn chỉnh?",
           answer:
-            "Kiểm tra các mặt dao hàng tuần dưới độ phóng đại 10 lần xem có bị sứt mẻ ở cạnh không (biểu thị độ lệch khe hở hoặc tạp chất cứng). Chồng lại các mặt bên khi độ nhám bề mặt vượt quá Ra 0,4μm để khôi phục lại toàn bộ tiếp xúc của trục. Bảo quản dao đã tháo theo chiều dọc trong dầu chống gỉ để tránh hiện tượng rỗ ăn mòn trong thời gian không sử dụng.",
+            "Xác định biến thể được phép cho từng chiều rộng và cho ngăn xếp đã hoàn thành. Độ khít của lỗ khoan, tình trạng bề mặt và độ song song cũng ảnh hưởng đến việc lắp ráp. Các tùy chọn về độ chính xác trong danh mục áp dụng cho dao có đường kính ngoài lên tới 420 mm; kích thước khác được chỉ định để vẽ. Ghi lại các bộ phận được giữ lại cùng với các bộ phận thay thế để việc sắp xếp hoàn chỉnh có các yêu cầu về kích thước rõ ràng.",
+        },
+        {
+          question:
+            "Sureay có thể cung cấp dao, miếng đệm, vòng gạt phôi và đĩa phân cách cùng nhau không?",
+          answer:
+            "Đúng. Bốn loại công cụ này có thể được bao gồm trong cùng một báo giá. Sơ đồ chiều rộng khe và các bản vẽ thành phần xác định sự sắp xếp của chúng. Liệt kê số lượng của từng cấu hình và xác định những bộ phận hiện có nào sẽ vẫn được sử dụng, cho phép chiều rộng, giao diện và đường kính làm việc thay thế được coi là một phần của một bộ phận lắp ráp.",
+        },
+        {
+          question:
+            "Làm cách nào để so sánh giá thành của các vật liệu dao cắt cuộn khác nhau?",
+          answer:
+            "So sánh chi phí trên mỗi tấn hoặc mét có thể chấp nhận được trong cùng yêu cầu về cấp cuộn, thước đo, kiểu khe và chất lượng cạnh. Bao gồm việc mua dao, mài lại, thời gian thay dao và phế liệu, sử dụng sản lượng được ghi lại giữa các lần thay dao. Áp dụng cùng một kỳ kế toán cho từng tùy chọn để những thay đổi trong điều kiện sản xuất được tách biệt khỏi những khác biệt về hiệu suất của dao.",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay có thể cung cấp gói dụng cụ tích hợp hoàn chỉnh bao gồm miếng đệm và vòng gạt phôi không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các hệ thống dụng cụ rạch hoàn chỉnh phù hợp: bộ dao, miếng đệm thép chính xác (nối đất đến ± 0,001mm), vòng gạt cao su liên kết và đĩa tách tay. Việc tìm nguồn cung ứng tất cả các thành phần từ một nhóm dung sai đã được xác minh duy nhất sẽ loại bỏ các lỗi tích lũy xuất hiện khi trộn dụng cụ từ các nhà cung cấp riêng biệt.",
-        },
-        {
-          question:
-            "Bạn có sản xuất dao xẻ đường kính lớn cho máy nghiền tấm nặng không?",
-          answer:
-            "Có, cơ sở mài nặng và xử lý nhiệt của chúng tôi có thể xử lý dao rạch tròn có đường kính ngoài lên tới 1500mm, được thiết kế đặc biệt cho các ứng dụng cắt cạnh máy nghiền tấm và cuộn cán nóng khổ lớn.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "guillotine-shear-blades",
+    ],
   },
   {
     id: "metal-shear-knives",
-    name: "Dao cắt kim loại",
-    fullName: "Dao chém & cắt phế liệu hạng nặng để chế tạo kim loại",
+    name: "Lưỡi máy cắt kiểu cá sấu",
+    fullName:
+      "Dao máy cắt kiểu hàm cá sấu dùng trong tái chế phế liệu kim loại",
+    seoTitle: "Alligator dao cắt thép cho phế liệu kim loại",
+    seoDescription:
+      "Thay thế lưỡi dao di chuyển phía trên hoặc dao cố định phía dưới trên máy cắt cá sấu của bạn. Chiều dài được liệt kê là 320–508 mm, với các tùy chọn thép S1 , 6CrW2Si và H13 .",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Dao cắt kim loại",
-    image: "/images/products/granulator-blades/metal-shear-blades-00.webp",
-    badge: "Cắt nặng",
+    categoryDisplay: "Lưỡi máy cắt kiểu cá sấu",
+    image: "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+    badge: "Kéo cắt cá sấu",
     badgeColor: "blue",
     gallery: [
-      "/images/products/granulator-blades/metal-shear-blades-00.webp",
-      "/images/products/granulator-blades/metal-shear-blades-04.webp",
-      "/images/products/granulator-blades/metal-shear-blades-02.webp",
+      "/images/products/shear-detail/alligator-shear-knives-cover.webp",
+      "/images/products/shear-detail/alligator-shear-knives-detail.webp",
     ],
     description:
-      "dao cắt thép thẳng cao cấp dành cho máy chém thủy lực, kéo cắt cá sấu và kéo cắt kim loại phế liệu nặng. Được rèn từ thép công cụ D2, S1 (6CrW2Si) và H13. Độ song song toàn bộ chiều dài ± 0,05mm được mài bề mặt để cắt thép nhẹ, tấm không gỉ và phôi thép nặng mà không có gờ.",
-    fullDescription:
-      "Máy chém và phế liệu dao cắt thép hoạt động trong các điều kiện bộc lộ mọi điểm yếu trong việc lựa chọn hợp kim, độ sâu xử lý nhiệt và độ song song của quá trình mài. Lưỡi cắt phía trên được dẫn động chống lại lực phía dưới của bộ truyền động từ 40 đến hơn 2000 tấn trên các dây cắt tấm nặng. Các dạng hỏng hóc sớm—né mép trên thép nhẹ, gãy giòn trên thép không gỉ hoặc vỡ vụn trên phế liệu nặng—mỗi dạng đều có thể quy cho sự không khớp trong luyện kim hoặc độ lệch song song khi mài tập trung lực cực lớn vào một điểm duy nhất.\n\nKim loại chắc chắn dao cắt thép được cung cấp ở ba loại luyện kim cụ thể, mỗi loại phù hợp với một chế độ cơ học xác định:\n\n## Lựa chọn hợp kim bằng ứng dụng cắt\n\n**Cắt nguội (Thép nhẹ):** Thép công cụ cacbon cao tiêu chuẩn được làm cứng đến HRC 57–59. Điều này mang lại hình dạng cạnh sắc nét, ổn định với chi phí tiết kiệm, khiến nó trở thành thông số kỹ thuật chính xác cho các xưởng chế tạo thông thường và nhà thầu kết cấu thép cắt tấm thép nhẹ A3/A36 tiêu chuẩn lên đến 8 mm.\n\n**Tấm nặng & Cắt không gỉ:** Các loại tương đương D2 (Cr12MoV) được cứng đến HRC 58–60. Được chỉ định cho khả năng chống mài mòn tối đa trên thép không gỉ austenit (304, 316L) và tấm hợp kim cường độ cao (Hardox). Ma trận crom-cacbua cao chịu được sự mài mòn nghiêm trọng khi gia công cứng do các kim loại cứng này gây ra.\n\n**Tái chế phế liệu & Cắt nóng:** Thép chống va đập S1 (6CrW2Si) và thép công cụ gia công nóng H13. Khi cắt hỗn hợp kim loại phế liệu, thép cây hoặc phôi thép nóng (900–1100°C), độ bền va đập cực cao được ưu tiên hơn độ cứng. Các hợp kim này hấp thụ tải trọng sốc lớn mà không bị gãy giòn như phá hủy các lưỡi D2 tiêu chuẩn.\n\n## Mệnh lệnh song song (± 0,05mm)\nSự song song không đúng cách là nguyên nhân phổ biến nhất có thể phòng ngừa được gây ra hỏng lưỡi cắt sớm. Tiếp xúc bề mặt không đồng đều tập trung toàn bộ tải trọng cắt lên một phần chiều dài đã giảm của cạnh lưỡi, tạo ra hiện tượng cuộn hoặc sứt mẻ cạnh trong vòng vài giờ. Tất cả Sureay dao cắt thép đều được mài bề mặt chính xác trên cả hai mặt cắt để đảm bảo dung sai độ song song tiêu chuẩn là ±0,05mm trên chiều dài 1000mm (với dung sai cao cấp ±0,02mm dành cho các ứng dụng hàng không vũ trụ và thép không gỉ chính xác).",
+      "dao cắt thép cá sấu thay thế để cắt kim loại phế liệu. Dao trên và dưới S1 , 6CrW2Si hoặc H13 , với các chi tiết lắp phù hợp với bản vẽ của bạn.",
     link: "/products/metal-shear-knives",
     isFeatured: true,
-    compatibleMachines: [
-      "TRUMPF",
-      "AMADA",
-      "BYSTRONIC",
-      "Durma",
-      "Haco",
-      "Lefort",
-      "Harris",
+    compatibleMachines: ["JMC McIntyre", "Bronneberg"],
+    compatibleMachinesIntro:
+      "Sureay cung cấp lưỡi trên và lưỡi dưới cho máy cắt phế liệu kiểu hàm cá sấu, theo từng lưỡi hoặc cả cặp. Kích thước và lỗ lắp có thể gia công theo yêu cầu bằng thép dụng cụ S1, 6CrW2Si hoặc H13. Hãy gửi bản vẽ lưỡi dao để nhận báo giá. Các thương hiệu máy được nêu để tham khảo khả năng tương thích của phụ tùng Sureay.",
+    components: [
+      {
+        id: "alligator-knife-position",
+        tag: "Vị trí dao",
+        title: "Lựa chọn thép cho nhiệm vụ cắt phế liệu",
+        description:
+          "Các tùy chọn thép công cụ S1 , 6CrW2Si và H13 cho bạn lựa chọn vật liệu thay thế cho các phần phế liệu và điều kiện mài mòn cạnh gặp phải khi cắt cá sấu của bạn.",
+      },
+      {
+        id: "alligator-edge-selection",
+        tag: "Điều kiện phế liệu",
+        title: "Dao trên và dao dưới có sẵn riêng biệt",
+        description:
+          "Đặt hàng một con dao di chuyển trên, một con dao dưới cố định hoặc một cặp hoàn chỉnh, với mỗi bộ phận được chỉ định cho vị trí hàm của nó và các bộ phận bạn định giữ lại.",
+      },
+      {
+        id: "alligator-indexing",
+        tag: "Cấu hình cạnh",
+        title: "Thân dao tùy chỉnh và lỗ lắp",
+        description:
+          "Dao cắt cá sấu được liệt kê có chiều dài từ 320–508 mm. Sureay cũng thực hiện các thay thế dựa trên bản vẽ với phần thân, mẫu lỗ và định vị các mặt theo yêu cầu của hàm trên hoặc hàm dưới.",
+      },
     ],
     specs: [
       {
-        label: "Material",
-        value: "D2 (Cr12MoV), S1 (6CrW2Si), H13, High Carbon Steel",
+        label: "Kích cỡ",
+        value: "320–508 mm",
       },
       {
-        label: "Cold / Mild Steel",
-        value: "High Carbon Tool Steel (HRC 57–59)",
+        label: "Vật liệu",
+        value:
+          "Thép công cụ S1 , 6CrW2Si hoặc H13 dành cho cấu hình cắt phế liệu",
       },
       {
-        label: "Stainless / Heavy",
-        value: "D2 / Cr12MoV (HRC 58–60)",
+        label: "Vị trí dao",
+        value: "Dao di chuyển trên và dao cố định dưới",
       },
       {
-        label: "Scrap / High Impact",
-        value: "S1 / 6CrW2Si / H13 (Shock Resistant)",
+        label: "dạng lưỡi",
+        value: "Dao hình chữ nhật thẳng",
       },
       {
-        label: "Length Capacity",
-        value: "Up to 6000 mm (Single Piece Seamless)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "1, 2, or 4 Usable Cutting Edges",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Application",
-        value: "Plate Shearing, Alligator Shears, Scrap Metal Balers",
-      },
-    ],
-    components: [
-      {
-        id: "stainless-shearing",
-        tag: "NHIỆM VỤ NẶNG",
-        title: "D2 cho tấm không gỉ và nặng",
-        description:
-          "Sử dụng thép D2 (Cr12MoV) cao cấp được tôi cứng sâu tới HRC 58–60. Nó chịu được lực mài mòn cực cao và lực làm cứng khi cắt thép không gỉ và các tấm hợp kim dày.",
-      },
-      {
-        id: "scrap-shearing",
-        tag: "TÁC ĐỘNG CAO",
-        title: "Thép chống sốc S1 dùng làm phế liệu",
-        description:
-          "Đối với kéo cắt cá sấu và máy đóng kiện phế liệu nặng, lưỡi dao tiêu chuẩn sẽ bị vỡ. Chúng tôi rèn những lưỡi dao này từ thép chống sốc S1 (6CrW2Si), mang lại độ bền lõi lớn để cắt cốt thép và dầm chữ I mà không bị gãy.",
-      },
-      {
-        id: "precision-parallelism",
-        tag: "SỨC CHỊU ĐỰNG",
-        title: "Độ song song chính xác (± 0,05mm)",
-        description:
-          "Bề mặt được mài đến mức hoàn hảo tuyệt đối. Việc duy trì tính song song nghiêm ngặt trên các chiều dài lên tới 6 mét đảm bảo máy của bạn duy trì khe hở cắt đồng đều, luôn mang lại các vết cắt không có gờ.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Kích thước điển hình (L × W × T)",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước tiêu chuẩn cho các mẫu máy cắt chém thủy lực thông dụng. Độ dài tùy chỉnh đến 6000mm, thiết kế nhiều đoạn và có sẵn các cấu hình đơn / đôi / bốn cạnh.",
-    },
-    standardDimensions: [
-      {
-        spec: "500 × 70 × 22",
-        od: "500",
-        id: "70",
-        thickness: "22",
-      },
-      {
-        spec: "510 × 80 × 25",
-        od: "510",
-        id: "80",
-        thickness: "25",
-      },
-      {
-        spec: "1025 × 80 × 20",
-        od: "1025",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1025 × 100 × 25",
-        od: "1025",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "1300 × 80 × 20",
-        od: "1300",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "1300 × 125 × 32",
-        od: "1300",
-        id: "125",
-        thickness: "32",
-      },
-      {
-        spec: "3100 × 100 × 25",
-        od: "3100",
-        id: "100",
-        thickness: "25",
-      },
-      {
-        spec: "Heavy Scrap Shear",
-        od: "Custom",
-        id: "Custom",
-        thickness: "Up to 100+",
+        label: "Ứng dụng",
+        value: "Cắt kim loại phế liệu bằng kéo cá sấu",
       },
     ],
     relatedBladeIds: [
-      "metal-coil-slitting-knives",
-      "multi-shaft-blades-metal",
+      "guillotine-shear-blades",
       "scrap-chopper-blades",
+      "multi-shaft-blades-metal",
     ],
     offers: {
       lowPrice: 120,
@@ -2763,66 +3333,150 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Nên sử dụng hợp kim nào để cắt inox 304?",
+          question: "Lưỡi cắt cá sấu thay thế nào phù hợp với máy của tôi?",
           answer:
-            "Chúng tôi khuyên dùng D2 (Cr12MoV) cho thép không gỉ (304, 316L) và các tấm có độ bền cao như Hardox. Ma trận crom-cacbua cao của D2 chịu được sự mài mòn nghiêm trọng khi làm cứng do thép không gỉ austenit gây ra. Đối với thép nhẹ tiêu chuẩn, thép công cụ có hàm lượng carbon cao mang lại độ bền tối đa với chi phí thấp hơn.",
+            "Sử dụng mô hình và phiên bản cắt cùng với vị trí dao trên hoặc dưới. Khớp chiều dài, chiều rộng, độ dày, lỗ lắp và các đặc điểm của đế lưỡi dao với bộ phận ban đầu. Độ mở hàm và công suất cắt được quảng cáo mô tả hoạt động của máy. Tham chiếu hoặc bản vẽ dao thiết lập hình dạng thân và lắp đặt cần thiết để thay thế.",
         },
         {
           question:
-            "Lưỡi của chúng tôi tiếp tục sứt mẻ khi cắt kim loại phế liệu hỗn hợp. Có chuyện gì vậy?",
+            "Tôi có thể đặt mua một con dao trên hoặc dưới thay vì một cặp không?",
           answer:
-            "Có thể bạn đang sử dụng lưỡi dao quá cứng (như D2). Phế liệu hỗn hợp chứa chất rắn nặng, không thể đoán trước (như cốt thép hoặc bu lông). Khi tác động mạnh chạm vào một lưỡi dao cứng, giòn, nó sẽ bị sứt mẻ hoặc vỡ vụn. Bạn cần chuyển sang hợp kim chống sốc như S1 (6CrW2Si) hoặc H13, được tôi luyện ở độ cứng thấp hơn một chút (HRC 54–56) để hấp thụ các chấn động động học lớn một cách đàn hồi.",
+            "Đúng. Cả hai vị trí có thể được đặt hàng riêng lẻ hoặc cùng nhau. Xác định riêng biệt các dao di chuyển trên và dao dưới cố định, bao gồm mọi khác biệt trong cấu hình lắp hoặc cắt của chúng. Đối với một lần thay thế duy nhất, hãy kiểm tra con dao được giữ lại và ghi lại kích thước hoạt động của nó để xác định bộ phận mới cho cặp hiện có đó.",
         },
         {
           question:
-            "Biên dạng cạnh nào giúp giảm thiểu các vệt khi cắt các tấm thép cường độ cao?",
+            "Nguồn cấp dữ liệu phế liệu ảnh hưởng như thế nào đến việc lựa chọn vật liệu làm dao cắt cá sấu?",
           answer:
-            "Yếu tố quan trọng là tính đồng nhất của liên hệ. Sự tiếp xúc giữa các lưỡi dao không đồng đều tập trung lực cắt ở một đầu, tạo ra đặc tính cuộn qua nén và lưỡi xé của thép có độ cứng gia công cao. Dung sai tiêu chuẩn của chúng tôi là ±0,05mm độ song song trên 1000mm; phí bảo hiểm ± 0,02mm được chỉ định cho các ứng dụng không gỉ và chính xác.",
+            "Thành phần phế liệu, hình dạng mặt cắt và độ dày ảnh hưởng đến tải trọng trên lưỡi cắt. So sánh các điều kiện đó với độ mòn, sứt mẻ hoặc biến dạng dần dần của dao hiện tại. Chúng giúp thiết lập sự cân bằng cần thiết về độ bền và khả năng chống mài mòn giữa các vật liệu sẵn có, cùng với công suất cắt và thông số kỹ thuật ban đầu của dao.",
+        },
+        {
+          question: "Dao cắt cá sấu có thể xoay để sử dụng cạnh khác không?",
+          answer:
+            "Có, nếu dao và hàm ban đầu cho phép có một cạnh làm việc khác. Xác nhận rằng vị trí tiếp theo vẫn giữ nguyên chỗ ngồi, kiểu bu lông và khoảng trống đã chỉ định. Hướng dẫn sử dụng máy xác định vị trí nào có thể sử dụng được, ngay cả trên dao hình chữ nhật.",
         },
         {
           question:
-            "Làm thế nào để lưỡi dao đảo ngược hai cạnh giảm chi phí dụng cụ hàng năm của tôi?",
+            "Dao McIntyre 320, 407 và 500 có chung một thông số kỹ thuật không?",
           answer:
-            "Lưỡi đảo ngược hai cạnh (hoặc 4 cạnh) cung cấp nhiều mặt cắt độc lập từ một thân lưỡi duy nhất. Khi cạnh 1 bị mòn, hãy nới lỏng các bu lông lắp, lật hoặc xoay lưỡi dao và vặn lại. Điều này giúp tăng tuổi thọ của lưỡi dao trước khi cần mài lại, giảm đáng kể chi phí dụng cụ cho mỗi lần cắt.",
+            "Không. Danh mục liệt kê các cấu hình thân dao khác nhau cho McIntyre 320, 407 và 500. Sử dụng bảng và Mã mục để thu hẹp lựa chọn, sau đó kiểm tra mẫu lỗ, vị trí dao và phiên bản máy. Những tên mẫu này xác định cấu hình tham chiếu để thay thế Sureay .",
+        },
+        {
+          question:
+            "Dao cắt cá sấu khác với dao cắt thép phế liệu cố định như thế nào?",
+          answer:
+            "Dao cắt cá sấu vừa với hàm có bản lề và vị trí cố định đối diện của nó. Kéo cắt cố định sử dụng dao chuyển động và cụm dao phản công khác nhau. Để biết phần sau, hãy xem [Stationary Scrap dao cắt thép](/products/stationary-scrap-shear-blades) .",
+        },
+        {
+          question: "Tôi nên gửi gì để báo giá lưỡi cắt cá sấu?",
+          answer:
+            "Cung cấp kiểu máy và phiên bản, bản vẽ hoặc mẫu có kích thước, vị trí và số lượng dao. Cho biết bạn cần dao trên di chuyển, dao dưới cố định hay cả hai. Thêm phần phế liệu điển hình và đánh dấu bất kỳ thay đổi nào về chiều cao cắt khi mài lại mẫu.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình cắt cá sấu, vị trí dao trên hoặc dưới, số bộ phận hoặc bản vẽ, số lượng cũng như loại kim loại và kích thước phần bạn cắt.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1024,
+      height: 765,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt: "Hai mẫu dao cắt cá sấu có lỗ lắp chìm và cạnh cắt thẳng",
+      sizeRange: "320–508 mm",
+      heroSpecs: [
         {
-          question:
-            "Bạn có thể sản xuất lưỡi dao phù hợp chính xác với máy chém TRUMPF, AMADA hoặc Durma của tôi không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các kích thước phù hợp với OEM cho các nền tảng TRUMPF, AMADA, BYSTRONIC, Durma và Haco. Các lưỡi dao từng mảnh lên đến 6000 mm, thiết kế nhiều đoạn dành cho bàn dài hơn và các cấu hình đơn, đôi hoặc bốn cạnh đều có sẵn. Độ dài tùy chỉnh được sản xuất theo bản vẽ trong vòng 15 ngày làm việc.",
-        },
-        {
-          question:
-            "Sureay có thể sản xuất lưỡi thay thế cho kéo cắt phế liệu nặng đã lỗi thời không?",
-          answer:
-            "Đúng. Đối với kéo cắt phế liệu nặng (Lefort, Harris, Genesis) hoặc các mẫu đã lỗi thời, chúng tôi làm việc dựa trên bản vẽ do khách hàng cung cấp hoặc mẫu lưỡi cắt vật lý. Mẫu khảo sát kích thước có sẵn theo yêu cầu để đo chính xác biên dạng cánh và các lỗ lắp chìm.",
+          label: "Ứng dụng",
+          value: "Cắt kim loại phế liệu bằng kéo cá sấu",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/alligator-shear-knives-detail.webp",
+        alt: "Năm mẫu dao cắt cá sấu thể hiện các hình dáng cơ thể và kiểu lỗ gắn khác nhau",
+      },
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "320–508 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "Thép công cụ S1 , 6CrW2Si hoặc H13 dành cho cấu hình cắt phế liệu",
+        },
+        {
+          label: "Vị trí dao",
+          value: "Dao di chuyển trên và dao cố định dưới",
+        },
+        {
+          label: "dạng lưỡi",
+          value: "Dao hình chữ nhật thẳng",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt kim loại phế liệu bằng kéo cá sấu",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Tham khảo máy",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+          ],
+          rows: [
+            ["SR003501", "JMC McIntyre 320", "320", "65", "30"],
+            ["SR003502", "JMC McIntyre 407", "407", "64", "32"],
+            ["SR003503", "JMC McIntyre 500", "508", "70", "30"],
+            ["SR003504", "Bronneberg A-400", "406", "70", "32"],
+            ["SR003505", "Bronneberg A-500PB", "500", "70", "32"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Bao gồm mô hình cắt cá sấu, vị trí dao trên hoặc dưới, số bộ phận hoặc bản vẽ, số lượng cũng như loại kim loại và kích thước phần bạn cắt.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Bao gồm mô hình cắt cá sấu, vị trí dao trên hoặc dưới, số bộ phận hoặc bản vẽ, số lượng cũng như loại kim loại và kích thước phần bạn cắt.",
+    dimensionLabels: {
+      intro:
+        "Tài liệu tham khảo máy xác định các cấu hình được liệt kê. Xác nhận phiên bản máy, vị trí dao trên hoặc dưới và bản vẽ lỗ lắp hoàn chỉnh trước khi đặt hàng; chỉ riêng kích thước cơ thể không tạo nên sự vừa vặn.",
     },
   },
   {
     id: "guillotine-shear-blades",
-    name: "Lưỡi cắt chém",
-    fullName:
-      "Lưỡi cắt chém chính xác cho máy cắt kim loại tấm thủy lực và cơ khí",
+    name: "Dao máy cắt tôn kiểu chém",
+    fullName: "Dao máy cắt tôn kiểu guillotine",
+    seoTitle: "Dao máy cắt tôn kiểu guillotine",
+    seoDescription:
+      "Cắt kim loại tấm bằng dao cắt thép thép D2 , 6CrW2Si hoặc 9CrSi . Đặt mua dao trên và dao dưới theo bộ từng mảnh hoặc theo từng đoạn với kiểu lắp tùy chỉnh.",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Lưỡi cắt chém",
-    image:
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+    categoryDisplay: "Dao máy cắt tôn kiểu chém",
+    image: "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
     badge: "Tấm kim loại",
     badgeColor: "blue",
     gallery: [
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-05.webp",
+      "/images/products/shear-detail/guillotine-shear-blades-cover.webp",
       "/images/products/guillotine-shear-blades/guillotine-shear-blades-01.webp",
-      "/images/products/guillotine-shear-blades/guillotine-shear-blades-02.webp",
+      "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
     ],
     description:
-      "Máy chém dao cắt thép có độ chính xác cao ở dạng thép công cụ D2 (Cr12MoV), 6CrW2Si và 9CrSi dành cho máy cắt thủy lực và cơ khí. Được nối đất bề mặt với độ song song toàn bộ chiều dài ± 0,05 mm. Bộ lưỡi trên và dưới dành cho máy có công suất lên tới 16 mm × 4000 mm. Các thiết bị thay thế tương thích với OEM dành cho máy chém TRUMPF, AMADA, LVD, Durma và Bystronic.",
-    fullDescription:
-      "Guillotine dao cắt thép là bộ phận cắt quan trọng trong máy cắt tấm thủy lực và cơ khí được sử dụng tại các trung tâm dịch vụ thép, nhà máy đóng tàu, xưởng chế tạo kết cấu và nhà máy dập ô tô. Mỗi chu kỳ cắt khiến lưỡi dao chịu lực cắt cực lớn tập trung dọc theo một đường cạnh hẹp — lưỡi dao phải duy trì hình dạng cạnh sắc như dao cạo, độ song song tuyệt đối và độ cứng đồng đều trên toàn bộ chiều dài của nó để mang lại những đường cắt kim loại tấm không có gờ, không bị biến dạng.\n\nSureay sản xuất máy chém dao cắt thép từ thép công cụ cao cấp — D2 (Cr12MoV), 6CrW2Si và 9CrSi — mỗi loại được chọn cho phạm vi độ dày cụ thể và cấu hình độ cứng vật liệu. Mỗi lưỡi dao đều được xử lý nhiệt chân không trong nhà và được mài bề mặt chính xác đến độ song song toàn bộ ± 0,05 mm, đảm bảo khe hở cắt giữa các lưỡi trên và dưới vẫn đồng nhất từ ​​đầu đến cuối. Điều này giúp loại bỏ các vết xoắn, cong và mép gây khó chịu cho các lưỡi thay thế được sản xuất kém.\n\n## Lựa chọn hợp kim bằng ứng dụng cắt\n\n**D2 / Cr12MoV (HRC 58–62):** Thông số kỹ thuật cao cấp để cắt thép không gỉ (304, 316L), tấm hợp kim thấp cường độ cao (HSLA), tấm mài mòn Hardox và cuộn sơn sẵn. Ma trận crom-cacbua 12% của D2 cung cấp khả năng chống mài mòn cực cao cần thiết khi cắt thép không gỉ austenit cứng trong gia công vốn làm xỉn màu nhanh chóng các loại lưỡi mềm hơn.\n\n**6CrW2Si (HRC 55–58):** Hợp kim chống sốc kết hợp độ cứng cạnh tuyệt vời với độ bền lõi. Được chỉ định để cắt tấm từ trung bình đến nặng (thép nhẹ 6–25 mm) và môi trường sản xuất vật liệu hỗn hợp nơi lưỡi dao thỉnh thoảng gặp phải vật liệu cứng hơn mong đợi. Hàm lượng vonfram và crom mang lại khả năng chịu nhiệt ở nhiệt độ cao.\n\n**9CrSi (HRC 55–60):** Hợp kim tiết kiệm chi phí để cắt thép nhẹ và thép carbon khối lượng lớn (lên đến 12 mm). 9CrSi mang lại tuổi thọ lưỡi cắt đáng tin cậy trên thép kết cấu tiêu chuẩn, tấm mạ kẽm và tấm sàn với chi phí mỗi lưỡi thấp hơn so với D2.\n\n## Bộ lưỡi trên và dưới\n\nMáy cắt chém hoạt động với các lưỡi dao trên (ram di chuyển) và lưỡi dưới (giường cố định) được ghép nối. Sureay cung cấp các bộ lưỡi dao trên và dưới phù hợp được mài từ cùng một lô thép, đảm bảo độ cứng và đặc tính giãn nở nhiệt giống hệt nhau trên cả cặp. Mỗi bộ được cung cấp các lỗ lắp được khoan theo mẫu bu lông OEM chính xác trên máy của bạn.\n\n## Lưỡi dao có thể đảo ngược nhiều cạnh\n\nĐối với các lưỡi có tiết diện hình chữ nhật tiêu chuẩn, chúng tôi cung cấp các mặt cắt có thể đảo ngược 2 cạnh và 4 cạnh. Khi một lưỡi cắt bị mòn, người vận hành sẽ nới lỏng các bu lông lắp, lật hoặc xoay lưỡi dao để lộ ra một cạnh mới và vặn lại. Điều này giúp tăng tuổi thọ lưỡi cắt hiệu quả lên gấp 2× đến 4× trước khi cần mài lại hoặc thay thế — giảm đáng kể chi phí dụng cụ hàng năm cho mỗi lần cắt.\n\n## Hệ thống lưỡi phân đoạn cho bàn dài\n\nĐối với máy cắt rộng hơn 3200 mm, lưỡi cắt đơn mảnh trở nên không thực tế do nguy cơ biến dạng xử lý nhiệt. Sureay sản xuất các hệ thống lưỡi phân đoạn chính xác — nhiều lưỡi ngắn hơn được lập chỉ mục từ đầu đến cuối trên bệ máy — với dung sai chiều cao từ đầu đến cuối phù hợp (± 0,02 mm) để đảm bảo đường cắt liên tục, không có khe hở trên toàn bộ chiều rộng bàn máy.",
+      "dao cắt thép thay thế cho kim loại tấm, dạng D2 , 6CrW2Si hoặc 9CrSi. Dao trên và dao dưới với chiều dài và kiểu lắp tùy chỉnh.",
     link: "/products/guillotine-shear-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -2837,129 +3491,63 @@ export const blades: Blade[] = [
       "Adira",
       "Ursviken",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV), 6CrW2Si, 9CrSi, High Carbon Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 55–62 (alloy dependent)",
-      },
-      {
-        label: "Machine Capacity",
-        value: "4 mm × 2500 mm up to 16 mm × 4000 mm (and custom)",
-      },
-      {
-        label: "Edge Profile",
-        value: "1, 2, or 4 Usable Cutting Edges (Reversible)",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.05 mm Full-Length Parallelism",
-      },
-      {
-        label: "Application",
-        value:
-          "Sheet Metal Shearing, Plate Cutting, Stainless Steel, Mild Steel, Galvanized Sheet",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Trang bị cho máy cắt kim loại tấm của bạn các loại dao trên và dưới thay thế, được cung cấp dưới dạng lưỡi cắt đơn lẻ hoặc bộ phân đoạn. Sureay cung cấp các kích thước dựa trên bản vẽ và các tùy chọn thép cho nhiệm vụ cắt của bạn; liên hệ với chúng tôi để có báo giá cho máy của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "d2-stainless-shearing",
-        tag: "TẤM NẶNG",
-        title: "D2 cho tấm thép không gỉ & HSLA",
+        id: "guillotine-upper-lower",
+        tag: "Cấu hình dao",
+        title: "Tùy chọn thép công cụ để cắt kim loại tấm",
         description:
-          "Premium D2 (Cr12MoV) được làm cứng sâu đến HRC 58–62. Ma trận crom-cacbua cao chịu được lực mài mòn cực cao và lực làm cứng khi cắt thép không gỉ 304/316L, tấm HSLA và cuộn dây được sơn sẵn.",
+          "Sureay cung cấp D2 , 6CrW2Si , 9CrSi và thép công cụ carbon cao, với độ cứng được liệt kê là 55–62 HRC tùy thuộc vào loại. Chỉ định độ bền của tấm, phạm vi độ dày và điều kiện mài mòn của cạnh khi so sánh các vật liệu thay thế.",
       },
       {
-        id: "6crw2si-shock",
-        tag: "KHẢO SỐC",
-        title: "6CrW2Si cho tấm nặng vừa",
+        id: "guillotine-segmented-knives",
+        tag: "Bộ phân đoạn",
+        title: "Bộ dao đơn mảnh và phân khúc",
         description:
-          "Hợp kim 6CrW2Si chống sốc kết hợp các lưỡi cắt cứng (HRC 55–58) với độ bền lõi lớn. Được thiết kế để sản xuất tấm thép nhẹ dày 6–25 mm và vật liệu hỗn hợp trong đó các tạp chất cứng không mong muốn sẽ làm sứt mẻ một lưỡi dao giòn.",
+          "Dao trên và dao dưới có sẵn dưới dạng từng miếng riêng lẻ hoặc bộ dao được phân đoạn, với chiều dài, mặt cuối và chi tiết lắp đặt được chỉ định cho dầm cắt hiện có.",
       },
       {
-        id: "parallelism-precision",
-        tag: "SỨC CHỊU ĐỰNG",
-        title: "Độ song song chính xác (± 0,05 mm)",
+        id: "guillotine-material-setup",
+        tag: "Điều kiện cắt",
+        title: "Các mẫu gắn tùy chỉnh và các cạnh có thể sử dụng được",
         description:
-          "Mỗi lưỡi dao đều được mài bề mặt với độ song song tối đa ± 0,05 mm trên các chiều dài lên tới 4000 mm. Điều này đảm bảo khoảng cách cắt đồng đều giữa các lưỡi cắt trên và dưới, mang lại những đường cắt không có gờ và ngăn ngừa hiện tượng xoắn và cong trên tấm cắt.",
+          "Các mẫu lỗ và biên dạng cắt tùy chỉnh hỗ trợ thay thế cấu hình dao đã cài đặt. Các phiên bản một, hai và bốn cạnh có sẵn tùy theo thiết kế dao và các vị trí chia độ được phép của nó.",
       },
     ],
-    dimensionLabels: {
-      col0: "Công suất máy",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      col4: "Cái / Bộ",
-      caption:
-        "* Kích thước tiêu chuẩn cho máy cắt chém thủy lực và cơ khí thông thường. Mỗi bộ bao gồm lưỡi trên và dưới. Thiết kế phân khúc cho bàn rộng hơn 4000 mm có sẵn theo yêu cầu. Độ dài tùy chỉnh, cấu hình nhiều cạnh và mẫu bu lông OEM được sản xuất theo bản vẽ.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "4 × 2500",
-        od: "508",
-        id: "80",
-        length: "25",
-        pcs: "10",
+        label: "Kích cỡ",
+        value: "508–1300 mm",
       },
       {
-        spec: "4 × 2500",
-        od: "1300",
-        id: "63",
-        length: "16",
-        pcs: "4",
+        label: "Vật liệu",
+        value: "D2 , 6CrW2Si , 9CrSi hoặc thép công cụ có hàm lượng carbon cao",
       },
       {
-        spec: "6 × 2500",
-        od: "1300",
-        id: "80",
-        length: "20",
-        pcs: "4",
+        label: "độ cứng",
+        value: "55–62 HRC , tùy thuộc vào loại thép",
       },
       {
-        spec: "6 × 3200",
-        od: "1100",
-        id: "80",
-        length: "20",
-        pcs: "6",
+        label: "Vị trí dao",
+        value: "Dao trên và dưới; bộ đơn lẻ hoặc phân đoạn",
       },
       {
-        spec: "6 × 4000",
-        od: "1025",
-        id: "80",
-        length: "20",
-        pcs: "8",
+        label: "Cấu hình cạnh",
+        value:
+          "Một, hai hoặc bốn lưỡi cắt có thể sử dụng được, tùy thuộc vào biên dạng dao",
       },
       {
-        spec: "16 × 2500",
-        od: "1300",
-        id: "100",
-        length: "25",
-        pcs: "4",
+        label: "Ứng dụng",
+        value: "Cắt tấm kim loại trên máy chém và kéo vuông",
       },
       {
-        spec: "16 × 3200",
-        od: "1100",
-        id: "100",
-        length: "25",
-        pcs: "6",
-      },
-      {
-        spec: "16 × 4000",
-        od: "1025",
-        id: "100",
-        length: "25",
-        pcs: "8",
+        label: "Sự song song",
+        value: "±0,05 mm trên toàn bộ chiều dài dao",
       },
     ],
-    relatedBladeIds: [
-      "metal-shear-knives",
-      "metal-coil-slitting-knives",
-      "scrap-chopper-blades",
-      "multi-shaft-blades-metal",
-    ],
+    relatedBladeIds: ["metal-shear-knives", "scrap-chopper-blades"],
     offers: {
       lowPrice: 30,
       highPrice: 350,
@@ -2967,94 +3555,162 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Nên chọn loại thép nào để cắt inox 304 trên máy chém thủy lực?",
+          question: "Làm cách nào để xác định lưỡi cắt chém thay thế?",
           answer:
-            "D2 (Cr12MoV) được làm cứng đến HRC 58–62 là loại được khuyên dùng cho thép không gỉ (304, 316L) và các tấm có độ bền cao như Hardox. Hàm lượng crom-cacbua cao của D2 chịu được sự mài mòn làm cứng nghiêm trọng do thép không gỉ austenit gây ra. Đối với thép nhẹ tiêu chuẩn, 9CrSi mang lại tuổi thọ lưỡi tuyệt vời với chi phí thấp hơn.",
+            "Bản vẽ dao trên hoặc dưới xác định việc thay thế đáng tin cậy hơn chiều rộng cắt được quảng cáo của máy cắt. So sánh chiều dài thực tế, tiết diện, lỗ bu lông, bề mặt định vị và cạnh làm việc. Trên một chùm được phân đoạn, hãy khớp từng phần riêng lẻ và vị trí của nó trong hàng.",
         },
         {
           question:
-            "Tại sao máy chém dao cắt thép của tôi lại bị sứt mẻ khi cắt tấm hỗn hợp hoặc tấm nặng hơn?",
+            "Nên chọn vật liệu lưỡi dao như thế nào cho thép nhẹ, thép không gỉ hoặc nhôm?",
           answer:
-            "Việc sứt mẻ thường cho thấy hợp kim của lưỡi quá cứng và giòn khi chịu tải cắt. Nếu bạn đang cắt tấm hỗn hợp 10–25 mm hoặc thỉnh thoảng gặp phải vật liệu cứng hơn, hãy chuyển từ D2 sang 6CrW2Si. Hợp kim chống sốc này cung cấp độ cứng thấp hơn được kiểm soát (HRC 55–58) với độ bền lõi lớn, hấp thụ tải trọng va đập một cách đàn hồi thay vì sứt mẻ.",
+            "Bắt đầu với cấp độ thực tế của tấm, độ bền, phạm vi độ dày và tình trạng của dao đã qua sử dụng. Sự mài mòn dần dần, sứt mẻ cạnh và biến dạng đòi hỏi phải xem xét các loại vật liệu khác nhau. So sánh vật liệu hiện tại với các tùy chọn thép có sẵn trong khi vẫn giữ được hình dạng cạnh cần thiết. Việc thay đổi thông số kỹ thuật của tấm cũng có thể yêu cầu xem lại cài đặt cắt của máy.",
+        },
+        {
+          question: "Tại sao phải dao cắt thép tấm kim loại?",
+          answer:
+            "Kiểm tra cạnh làm việc và so sánh hư hỏng với thông số kỹ thuật của tấm và khe hở cắt. Quá tải cơ học, khe hở không phù hợp hoặc lớp kép ngoài ý muốn có thể góp phần tạo ra sứt mẻ. Một cạnh bị mòn hoặc hư hỏng có thể ảnh hưởng đến vết cắt hoàn thiện. Kiểm tra các điều kiện này cùng nhau trước khi quyết định thay đổi vật liệu làm dao hay thay thế một đoạn bị hỏng.",
+        },
+        {
+          question: "Dao cắt vuông và dao cắt thép có giống nhau không?",
+          answer:
+            "Có, trong thiết bị kim loại tấm, cả hai tên đều có thể đề cập đến dao thẳng trên và dưới để cắt ngang. Nối dao với dầm trên hoặc dầm dưới của máy. Về dao cắt chồng giấy được kẹp, xem [Dao chém giấy](/products/paper-cutting-blades) .",
+        },
+        {
+          question: "Sự khác biệt giữa độ hở của lưỡi dao và góc cào là gì?",
+          answer:
+            "Khoảng hở là khoảng cách giữa các cạnh cắt đối diện. Góc cào mô tả độ nghiêng tương đối của chúng dọc theo vết cắt. Cả hai đều ảnh hưởng đến điều kiện cắt nhưng chúng là các cài đặt riêng biệt. Sử dụng quy trình của nhà sản xuất máy cắt đối với cấp độ và độ dày của tấm, đồng thời giữ lại các yêu cầu đó khi chỉ định hình dạng dao thay thế.",
+        },
+        {
+          question: "Lưỡi cắt chém có thể quay hoặc mài lại được không?",
+          answer:
+            "Một lưỡi cắt có thể được phân loại nếu dao và giá đỡ hỗ trợ một cạnh làm việc khác. Nó có thể được nối lại nếu cấu hình được chỉ định có thể được khôi phục trong các kích thước còn lại được phép. Sau mỗi lần vận hành, hãy kiểm tra chỗ ngồi, chiều cao cắt và khoảng hở so với bản vẽ ban đầu và giới hạn của máy.",
         },
         {
           question:
-            "Điều gì gây ra các vệt và xoắn trên cạnh bị cắt và máy chém dao cắt thép giải quyết vấn đề này như thế nào?",
+            "Làm cách nào để yêu cầu báo giá dao cắt thép hoặc bộ chia đoạn?",
           answer:
-            "Các vệt và xoắn hầu như luôn được gây ra bởi sự tiếp xúc giữa các lưỡi dao không đều - khi khe hở cắt thay đổi từ đầu này sang đầu kia của lưỡi. Điều này tập trung lực cắt tại một điểm, tạo ra các vệt cuộn do nén và biến dạng tấm. Các lưỡi dao của chúng tôi được mài bề mặt với độ song song tối đa ±0,05 mm, đảm bảo khe hở đồng đều trên toàn bộ chiều dài cắt để cắt sạch, không có gờ.",
-        },
-        {
-          question:
-            "Làm cách nào để máy chém 4 cạnh dao cắt thép có thể đảo ngược giảm chi phí dụng cụ hàng năm của tôi?",
-          answer:
-            "Lưỡi dao đảo ngược 4 cạnh cung cấp bốn mặt cắt độc lập từ một thân lưỡi duy nhất. Khi cạnh 1 bị mòn, hãy nới lỏng các bu lông lắp, xoay lưỡi dao 90° để lộ ra cạnh mới và vặn lại. Điều này giúp tăng tuổi thọ lắp đặt của lưỡi dao lên gấp 4 lần trước khi cần mài lại, giảm đáng kể chi phí dụng cụ cho mỗi lần cắt trên các dây chuyền cắt khối lượng lớn.",
-        },
-        {
-          question:
-            "Chiều dài lưỡi cắt đơn tối đa mà Sureay có thể sản xuất là bao nhiêu?",
-          answer:
-            "Chúng tôi sản xuất máy chém một mảnh dao cắt thép có chiều dài lên tới 4000 mm. Đối với các máy rộng hơn 4000 mm, chúng tôi sản xuất bộ lưỡi cắt phân đoạn chính xác — nhiều lưỡi được lập chỉ mục từ đầu đến cuối với dung sai chiều cao phù hợp (± 0,02 mm) — để tạo một đường cắt liên tục, không có khe hở trên toàn bộ chiều rộng bàn máy.",
-        },
-        {
-          question:
-            "Làm cách nào để chọn kích thước lưỡi cắt chính xác cho máy cắt chém cụ thể của tôi?",
-          answer:
-            "Kích thước lưỡi cắt được xác định bởi công suất cắt của máy (độ dày tấm tối đa × chiều rộng bàn). Ví dụ: máy 6 × 3200 mm sử dụng lưỡi dao có kích thước 1100 × 80 × 20 mm, được cung cấp dưới dạng bộ phân đoạn 6 mảnh. Gửi cho chúng tôi số kiểu máy của bạn hoặc bản vẽ lưỡi dao hiện có của bạn và chúng tôi sẽ xác nhận kích thước chính xác, kiểu bu lông và loại thép được đề xuất.",
+            "Chia sẻ mô hình cắt, bản vẽ trên và dưới hoặc số bộ phận, cấp độ và độ dày của tấm cũng như số lượng. Đối với một hàng được phân đoạn, hãy gắn nhãn cho chuỗi phân đoạn và hiển thị các mặt liền kề. Nếu bạn chỉ thay thế một phần của hàng, hãy xác định các phân đoạn đang được sử dụng.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình cắt, bản vẽ trên và dưới, cấp độ và độ dày của tấm cũng như số lượng yêu cầu.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt: "Mẫu dao cắt chém có cạnh cắt thẳng và các lỗ lắp khác nhau",
+      sizeRange: "508–1300 mm",
+      heroSpecs: [
         {
-          question:
-            "Bạn có thể sản xuất các lưỡi dao thay thế để khớp chính xác với máy chém TRUMPF, AMADA, LVD hoặc Durma của tôi không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các kích thước và kiểu bu lông phù hợp với OEM dành cho máy cắt TRUMPF, AMADA, Bystronic, LVD, Durma, Haco, Cincinnati và Adira. Cung cấp số kiểu máy của bạn hoặc mẫu lưỡi dao bị mòn và chúng tôi sẽ xác nhận đồ đạc. Độ dài tùy chỉnh được sản xuất theo bản vẽ trong vòng 15 ngày làm việc.",
-        },
-        {
-          question: "Bạn có cung cấp cả bộ lưỡi cắt chém trên và dưới không?",
-          answer:
-            "Đúng. Mỗi đơn hàng tiêu chuẩn bao gồm các bộ lưỡi trên (ram) và dưới (giường) phù hợp, được mài từ cùng một lô thép để đảm bảo độ cứng, cấu trúc thớ và đặc tính giãn nở nhiệt trên cặp giống hệt nhau. Các lỗ lắp được khoan theo mẫu bu lông OEM chính xác của bạn.",
-        },
-        {
-          question:
-            "Sureay có thể sản xuất lưỡi thay thế cho các máy cắt cũ hoặc đã ngừng sản xuất không?",
-          answer:
-            "Đúng. Đối với các mẫu máy chém đã ngừng sản xuất hoặc hiếm, chúng tôi làm việc dựa trên các bản vẽ do khách hàng cung cấp hoặc các mẫu lưỡi dao vật lý. Mẫu khảo sát kích thước có sẵn theo yêu cầu để đo chính xác biên dạng lưỡi, góc cạnh và lỗ lắp chìm. Chúng tôi đã sản xuất thành công các thiết bị thay thế cho các máy móc có niên đại từ những năm 1980.",
-        },
-        {
-          question: "Tài liệu chất lượng nào đi kèm với mỗi bộ lưỡi dao?",
-          answer:
-            "Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước xác minh độ song song toàn chiều dài và chứng chỉ lô xử lý nhiệt. Đối với các chương trình chứng nhận OEM, báo cáo CMM đầy đủ và chứng chỉ vật liệu nhà máy thép được cung cấp theo yêu cầu.",
-        },
-        {
-          question:
-            "Thời gian thực hiện điển hình cho máy chém dao cắt thép tiêu chuẩn là bao lâu?",
-          answer:
-            "Các kích thước tiêu chuẩn (được liệt kê trong bảng kích thước của chúng tôi) sẽ được giao trong vòng 7–10 ngày làm việc. Kích thước tùy chỉnh, loại hợp kim đặc biệt hoặc đơn đặt hàng số lượng lớn thường yêu cầu 15–20 ngày làm việc. Chúng tôi cung cấp dịch vụ sản xuất nhanh theo yêu cầu cho các tình huống ngừng hoạt động khẩn cấp của máy.",
+          label: "Ứng dụng",
+          value: "Cắt tấm kim loại trên máy chém hoặc máy cắt vuông",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/guillotine-sheet-metal-knives.webp",
+        alt: "Bốn mẫu dao chém bằng kim loại tấm có cạnh thẳng và lỗ lắp",
+      },
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "508–1300 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "D2 , 6CrW2Si , 9CrSi hoặc thép công cụ có hàm lượng carbon cao",
+        },
+        {
+          label: "độ cứng",
+          value: "55–62 HRC , tùy thuộc vào loại thép",
+        },
+        {
+          label: "Vị trí dao",
+          value: "Dao trên và dưới; bộ đơn lẻ hoặc phân đoạn",
+        },
+        {
+          label: "Cấu hình cạnh",
+          value:
+            "Một, hai hoặc bốn lưỡi cắt có thể sử dụng được, tùy thuộc vào biên dạng dao",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt tấm kim loại trên máy chém và kéo vuông",
+        },
+        {
+          label: "Sự song song",
+          value: "±0,05 mm trên toàn bộ chiều dài dao",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Công suất cắt máy (mm)",
+            "Chiều dài dao (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+            "Cái/bộ",
+          ],
+          rows: [
+            ["SR003201", "4 × 2500", "508", "80", "25", "10"],
+            ["SR003202", "4 × 2500", "1300", "63", "16", "4"],
+            ["SR003203", "6 × 2500", "1300", "80", "20", "4"],
+            ["SR003204", "6 × 3200", "1100", "80", "20", "6"],
+            ["SR003205", "6 × 4000", "1025", "80", "20", "8"],
+            ["SR003206", "16 × 2500", "1300", "100", "25", "4"],
+            ["SR003207", "16 × 3200", "1100", "100", "25", "6"],
+            ["SR003208", "16 × 4000", "1025", "100", "25", "8"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Bao gồm mô hình cắt, bản vẽ trên và dưới, cấp độ và độ dày của tấm cũng như số lượng yêu cầu.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Bao gồm mô hình cắt, bản vẽ trên và dưới, cấp độ và độ dày của tấm cũng như số lượng yêu cầu.",
+    dimensionLabels: {
+      intro:
+        "Công suất cắt của máy chỉ mang tính chất tham khảo, không phải là mẫu máy duy nhất hoặc sự đảm bảo phù hợp. Xác nhận vị trí dao trên và dưới, thứ tự phân đoạn và lỗ lắp cho các cấu hình được liệt kê.",
     },
   },
   {
     id: "three-knife-trimmer-blades",
-    name: "Lưỡi tông đơ ba dao",
-    fullName: "Bộ Tông đơ ba dao HSS & Carbide cao cấp để đóng sách",
-    category: "shear_blades",
+    name: "Dao máy xén ba mặt",
+    fullName: "Dao xén ba mặt dùng cho gia công sau in",
+    seoTitle: "Dao xén ba mặt dùng cho gia công sau in",
+    seoDescription:
+      "Cắt mặt trước, đầu và chân sách bằng dao HSS hoặc dao cacbua. Đặt mua một lưỡi dao thay thế hoặc một bộ phù hợp với một con dao phía trước và hai con dao bên.",
+    category: "paper_cutting",
     sector: "paper",
     categoryDisplay: "Dao đóng sách",
     badge: "OEM phù hợp",
     badgeColor: "blue",
     image:
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
     gallery: [
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-02.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-cover.webp",
       "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-03.webp",
-      "/images/products/paper-cutting-blades/muller-martini-trimmer-blades-04.webp",
+      "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
     ],
     description:
-      "Bộ thay thế 3 dao phù hợp (1 Mặt trước, 2 Mặt) để hoàn thiện bản in số lượng lớn. Cấu trúc lưỡng kim với lưỡi cắt 18% Vonfram HSS hoặc cacbua vonfram rắn (TC). OEM trực tiếp phù hợp cho tông đơ Müller Martini, Kolbus và Wohlenberg.",
-    fullDescription:
-      "Trong các hoạt động hoàn thiện bản in và đóng bìa thương mại tốc độ cao, máy xén ba dao là bước quan trọng cuối cùng trước khi đóng gói. Lưỡi tông đơ không đạt tiêu chuẩn gây ra hiện tượng tách gáy, sứt mẻ bìa và tích tụ keo PUR/EVA, biến sách thành phẩm thành phế liệu đắt tiền.\n\nBộ Tông đơ ba dao Sureay được sản xuất theo thông số kỹ thuật OEM chính xác để đảm bảo các cạnh trước, đầu và đuôi hoàn hảo trên các danh mục dày, tạp chí và sách được đóng bìa hoàn hảo.\n\n## Cấu trúc lưỡng kim tiên tiến\n\nLưỡi thép tốc độ cao rắn ở kích thước này quá giòn và dễ bị gãy dưới áp lực kẹp lớn của máy xén sách. Chúng tôi sử dụng quy trình sản xuất **Lớp phủ lưỡng kim** tiên tiến. Lưỡi cắt cao cấp — 18% Vonfram HSS hoặc Cacbua Vonfram hạt siêu nhỏ — được hàn chân không trên thân thép lò xo có độ bền kéo cao, hấp thụ sốc. Điều này mang đến sự kết hợp tối ưu: lưỡi cắt cực kỳ cứng, chống mài mòn được hỗ trợ bởi lõi linh hoạt, chống vỡ.\n\n## Cấp độ vật liệu cho đóng sách\n\n- **18% Vonfram HSS (Thép tốc độ cao):** Tiêu chuẩn ngành dành cho in ấn thương mại nói chung. Mang lại một cạnh cực kỳ sắc nét, dễ dàng xử lý các loại sách không tráng phủ và tráng nhẹ tiêu chuẩn.\n- **Cacbua vonfram (Tương đương TC / Widia):** Thông số kỹ thuật hàng đầu tuyệt đối. Lưỡi TC mang lại **5× đến 10× tuổi thọ sử dụng** của HSS. Chúng là bắt buộc khi cắt giấy tái chế nặng, giấy nghệ thuật được phủ bóng có độ mài mòn cao hoặc sách được đóng bằng chất kết dính PUR cứng.\n\n## Hoàn thiện gương chống keo\n\nSách đóng bìa hoàn hảo hiện đại sử dụng chất kết dính EVA hoặc PUR mạnh. Trong chu trình cắt tỉa, ma sát làm nóng keo, khiến keo bị lem và dính vào mặt lưỡi dao. Các lưỡi tông đơ của Sureay được mài chính xác đến độ hoàn thiện như gương Ra ≤0,1μm, giảm đáng kể ma sát và độ bám dính của chất kết dính, đảm bảo chu kỳ cắt sạch sẽ sau chu kỳ này.",
+      "Dao xén ba mặt thay thế để hoàn thiện sách. Dao xén mặt trước và hai cạnh dùng thép gió (HSS) hoặc hợp kim cứng, cung cấp từng chiếc hoặc theo bộ đồng bộ theo bản vẽ.",
     link: "/products/three-knife-trimmer-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -3065,102 +3721,62 @@ export const blades: Blade[] = [
       "Meccanotecnica",
       "Horizon",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "18% Tungsten HSS (Duritan eq.) | Tungsten Carbide (TC)",
-      },
-      {
-        label: "Construction",
-        value: "Bimetallic Inlay (Hard edge brazed to tough steel body)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror Lapped (Ra ≤0.1 μm) to prevent glue build-up",
-      },
-      {
-        label: "Set Configuration",
-        value: "Matched 3-Piece Set (1 Front Knife, 2 Side Knives)",
-      },
-      {
-        label: "OEM Tolerance",
-        value: "Thickness matched to ±0.01 mm across the full set",
-      },
-      {
-        label: "Applications",
-        value: "Perfect Bound Books, Magazines, Hardcover Book Blocks",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Đặt dao trước và dao cạnh cho máy xén sách theo bộ đồng bộ hoặc từng chiếc. Sureay báo giá theo cấu hình của dây chuyền, với lưỡi cắt bằng thép gió hoặc hợp kim cứng và biên dạng lắp theo yêu cầu. Tên hãng máy dùng để đối chiếu khả năng tương thích của phụ tùng thay thế Sureay.",
     components: [
       {
-        id: "bimetallic-inlay",
-        tag: "Luyện kim",
-        title: "Công nghệ khảm lưỡng kim",
+        id: "trimmer-front-side-set",
+        tag: "Đặt cấu hình",
+        title: "Khảm HSS và cacbua để cắt sách",
         description:
-          "Chúng tôi hàn cạnh Thép tốc độ cao (HSS) hoặc cacbua vonfram cao cấp lên thân thép hợp kim dẻo dai, linh hoạt. Điều này mang lại cho bạn khả năng chống mài mòn cực cao cần thiết cho giấy tráng mà không có nguy cơ lưỡi dao bị gãy dưới áp lực kẹp lớn.",
+          "Các lưỡi cắt HSS vonfram 18% và lưỡi cắt hợp kim cacbua vonfram có sẵn trên thân thép, mang lại sự lựa chọn vật liệu đóng sách cho nguyên liệu giấy và nhiệm vụ cắt trong dây chuyền hoàn thiện sách của họ.",
       },
       {
-        id: "matched-sets",
-        tag: "CẤU HÌNH",
-        title: "Bộ 3 món phù hợp",
+        id: "trimmer-edge-selection",
+        tag: "Lựa chọn cạnh",
+        title: "Độ dày phù hợp và bề mặt làm việc được xếp chồng lên nhau",
         description:
-          "Được cung cấp dưới dạng bộ lắp đặt sẵn (1 Mặt trước, 1 Bên trái, 1 Bên phải). Cả ba lưỡi dao đều được mài bề mặt chính xác trong cùng một mẻ với dung sai độ dày ±0,01mm, đảm bảo lắp đặt không có thời gian ngừng hoạt động và căn chỉnh hoàn hảo.",
+          "Độ dày thiết lập phù hợp được liệt kê là ± 0,01 mm. Các bề mặt làm việc được tráng gương và độ dày phù hợp giúp dao trước và dao bên có bề mặt hoàn thiện và hình học xác định để sắp xếp cùng nhau.",
       },
       {
-        id: "anti-glue-finish",
-        tag: "HIỆU SUẤT",
-        title: "Hoàn thiện gương chống keo",
+        id: "trimmer-spine-finish",
+        tag: "Cắt tỉa cột sống",
+        title: "Dao trước và dao bên dưới dạng bộ hoặc bộ phận riêng lẻ",
         description:
-          "Cắt qua gáy sách sẽ làm cho lưỡi sách tiếp xúc với chất kết dính PUR và EVA nóng, dính. Các lưỡi dao của chúng tôi được phủ một lớp tráng gương cực nhỏ, ngăn chặn lực kéo keo có thể làm lem khắp mép sách.",
+          "Đặt hàng một bộ hoàn chỉnh phía trước, bên trái và bên phải hoặc một bộ thay thế riêng lẻ, với các góc xiên và chi tiết lắp đặt theo vị trí cụ thể được sao chép từ bản vẽ dao.",
       },
     ],
-    dimensionLabels: {
-      col0: "Mẫu máy OEM",
-      col1: "Vị trí lưỡi",
-      col2: "Kích thước (L × W × T)",
-      col3: "Lỗ gắn / Khe cắm",
-      caption:
-        "* Kích thước phản ánh các mẫu Müller Martini và Kolbus tiêu chuẩn. Chúng tôi mang theo bản thiết kế OEM cho Wohlenberg và Perfecta. Các mẫu lỗ tùy chỉnh được gia công theo đơn đặt hàng.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Müller Martini 301/361",
-        od: "Front Knife",
-        id: "540 × 90 × 12 mm",
-        type: "12 × M10 Threaded",
+        label: "Kích cỡ",
+        value: "392–585 mm",
       },
       {
-        spec: "Müller Martini 301/361",
-        od: "Left & Right",
-        id: "392 × 90 × 12 mm",
-        type: "8 × M10 Threaded",
+        label: "Vật liệu",
+        value: "Lưỡi cắt 18% vonfram HSS hoặc hợp kim cacbua vonfram",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Front Knife",
-        id: "580 × 115 × 12 mm",
-        type: "12 × M10, 1 Slot",
+        label: "Cấu trúc lưỡi",
+        value: "Lớp phủ lưỡng kim với lưỡi cắt hàn đồng và thân bằng thép",
       },
       {
-        spec: "Müller Martini 3671 Merit",
-        od: "Left & Right",
-        id: "450 × 115 × 12 mm",
-        type: "15 × M10, 2 Slots",
+        label: "Đặt cấu hình",
+        value: "Một con dao phía trước và hai con dao bên",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Front Knife",
-        id: "510 × 110 × 10 mm",
-        type: "10 × M10 Threaded",
+        label: "Hoàn thiện bề mặt",
+        value: "Gương chồng lên nhau, Ra 0,1 µm",
       },
       {
-        spec: "Kolbus HD 150/153",
-        od: "Left & Right",
-        id: "400 × 110 × 10 mm",
-        type: "8 × M10 Threaded",
+        label: "Ứng dụng",
+        value: "Cắt tỉa mặt trước, đầu và chân sách đóng bìa, bìa sách",
+      },
+      {
+        label: "Đặt độ dày phù hợp",
+        value: "±0,01 mm trên bộ phù hợp",
       },
     ],
-    relatedBladeIds: ["paper-cutting-blades", "tissue-log-saw-blades"],
+    relatedBladeIds: ["paper-cutting-blades"],
     offers: {
       lowPrice: 120,
       highPrice: 850,
@@ -3168,412 +3784,826 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Khi nào tôi nên nâng cấp từ lưỡi tông đơ HSS lên cacbua vonfram (TC)?",
+          question: "Bộ dao thay thế cho máy xén ba mặt gồm những dao nào?",
           answer:
-            "Bạn nên nâng cấp lên cacbua vonfram (TC) khi cắt khối lượng lớn giấy tái chế, giấy nghệ thuật phủ bóng hoặc sách dày đóng gáy bằng keo PUR nặng. Giấy tráng có chứa đất sét và khoáng chất làm mờ HSS rất nhanh. Lưỡi TC mang lại tuổi thọ cắt gấp 5 đến 10 lần so với lưỡi HSS, giảm đáng kể thời gian dừng máy để thay lưỡi.",
+            "Bộ dao gồm một dao trước và hai dao bên để xén cạnh ngoài, đầu và chân ruột sách. Mỗi vị trí có kích thước và cách lắp riêng. Hãy ghi rõ dao trái, dao phải và hướng vát của từng dao để bộ thay thế phù hợp với cách lắp trên máy.",
         },
         {
           question:
-            "Tại sao lưỡi xén của tôi liên tục làm rách hoặc sứt mẻ gáy sách?",
+            "Làm sao chọn đúng dao cho máy xén Müller Martini hoặc Kolbus?",
           answer:
-            "Rách cột sống thường do một trong ba nguyên nhân: (1) Lưỡi dao bị cùn và cần thay; (2) Góc vát không đúng với loại giấy/keo được cắt; hoặc (3) Chất kết dính tích tụ ở mặt sau của lưỡi dao gây ra ‘lực cản’. Đảm bảo lưỡi dao của bạn được tráng gương để ngăn keo dính và cân nhắc nâng cấp lên HSS hoặc Carbide để giữ cạnh tốt hơn.",
+            "Đối chiếu mã dao trước, dao trái và dao phải với đầy đủ model và phiên bản máy xén. Danh mục chỉ áp dụng cho một số cấu hình Müller Martini 367x và Kolbus HD. Đối chiếu mã hàng, hướng vát và bố trí lỗ lắp của từng vị trí với bản vẽ.",
         },
         {
           question:
-            "Lưỡi tông đơ vonfram cacbua (TC) có thể được mài lại không?",
+            "Chất liệu giấy ảnh hưởng như thế nào đến việc lựa chọn giữa cạnh HSS và cạnh cacbua?",
           answer:
-            "Có, nhưng chúng phải được mài sắc bằng đá mài kim cương chuyên dụng. Việc sử dụng bánh xe bằng nhôm oxit hoặc cacbua silic tiêu chuẩn sẽ phá hủy cạnh cacbua và tạo ra các vết nứt nhỏ. Nếu dịch vụ mài sắc tại địa phương của bạn không có thiết bị bánh xe kim cương phù hợp, chúng tôi khuyên bạn nên gửi chúng đến máy mài công nghiệp chuyên dụng.",
+            "Lớp phủ giấy, hàm lượng chất độn và nhiệm vụ sản xuất ảnh hưởng đến độ mòn của cạnh. Hãy xem xét cacbua khi vấn đề chính là mài mòn dần dần và đánh giá quá trình mài sắc có sẵn cho công trình đó. Giữ lại các góc xiên phía trước và bên cần thiết và đặt kích thước. Để sứt mẻ, hãy kiểm tra các điều kiện cạnh và cắt trước khi chọn vật liệu cứng hơn.",
         },
         {
-          question: "Trình tự lắp đặt chính xác cho bộ ba con dao là gì?",
+          question:
+            "Điều gì có thể gây ra vết hằn dai dẳng trên mép sách đã bị cắt?",
           answer:
-            "Vì dao bên thường bị cắt nhẹ so với đường cắt của dao cắt hoặc dao phía trước nên việc căn chỉnh là rất quan trọng. Trước tiên hãy lắp lỏng lẻo cả ba lưỡi dao. Đặt và vặn dao trước để thiết lập mốc chuẩn của đầu, sau đó luân phiên siết chặt các dao bên. Vì bộ 3 mảnh của chúng tôi được mài đến cùng dung sai độ dày giống nhau nên chúng ngăn chặn áp lực kẹp không đồng đều gây ra hiện tượng dính.",
+            "Các chip nhỏ ở cạnh làm việc có thể là một trong những nguyên nhân. Xác định vị trí vết cắt ở mặt trước, đầu hoặc chân và kiểm tra con dao tương ứng. Kiểm tra độ sắc nét, độ vát và tình trạng dính cắt của nó cùng nhau. Việc khôi phục hình dạng cạnh và giá đỡ giải quyết một vấn đề khác với việc loại bỏ cặn dính khỏi một con dao còn nguyên vẹn.",
+        },
+        {
+          question: "Tại sao keo lại dính trên dao cắt sách?",
+          answer:
+            "Keo chưa đủ khô có thể để lại cặn trong quá trình cắt tỉa, và mực chưa khô hoàn toàn cũng có thể ảnh hưởng đến lớp sơn hoàn thiện. Ghi lại xem sự tích tụ có xảy ra gần gáy hay không và xem xét các điều kiện làm khô bằng quy trình đóng bìa. So sánh con dao đã được làm sạch và vết cắt bị ảnh hưởng trước khi quyết định xem hình dạng hoặc bề mặt của con dao có cần được chú ý thêm hay không.",
+        },
+        {
+          question:
+            "Tôi có thể thay thế một con dao bên mà không cần mua bộ hoàn chỉnh không?",
+          answer:
+            "Đúng. Có thể đặt hàng riêng dao phía trước, bên trái hoặc bên phải. Xác định tham chiếu ban đầu của nó và kích thước của dao đang sử dụng, bao gồm cả mọi lần mài lại. Việc thay thế cần có hướng vát và kiểu lắp phù hợp, cùng với các kích thước làm việc mà bộ đó yêu cầu.",
+        },
+        {
+          question:
+            "Dao máy xén ba mặt và dao xén trên dây chuyền đóng ghim lồng có dùng thay cho nhau được không?",
+          answer:
+            "Thông thường không. Máy xén ba mặt xén ba cạnh của ruột sách đã đóng. Dây chuyền đóng ghim lồng cũng có thể xén ba cạnh, nhưng dao trên, dưới, trước và bên tùy thuộc từng máy. Xem [dao xén cho dây chuyền đóng ghim lồng](/products/saddle-stitcher-trimmer-knives) để chọn cấu hình cho tập sách.",
+        },
+        {
+          question: "Tôi cần gửi gì để nhận báo giá bộ dao xén ba mặt?",
+          answer:
+            "Gửi model và phiên bản máy xén, quy cách giấy hoặc ruột sách và số lượng. Ghi riêng bản vẽ dao trước, trái và phải, kèm hướng vát và chi tiết lắp. Với đơn đặt lại, cung cấp mã hàng hoặc mã phụ tùng gốc của từng dao. Nếu chỉ thay một phần bộ dao, ghi rõ các dao tiếp tục sử dụng.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi model máy xén, bản vẽ dao trước và dao bên, khổ sách và loại giấy.",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 960,
+      height: 960,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt:
+        "Mẫu bộ dao xén ba mặt gồm một dao trước dài và hai dao bên ngắn hơn",
+      sizeRange: "392–585 mm",
+      heroSpecs: [
         {
-          question:
-            "Lưỡi tông đơ của bạn có phù hợp với máy Kolbus, Wohlenberg và Perfecta không?",
-          answer:
-            "Đúng. Chúng tôi duy trì cơ sở dữ liệu toàn diện về các bản thiết kế OEM chính xác cho tất cả các dây chuyền đóng sách lớn của Châu Âu và Nhật Bản, bao gồm Müller Martini, Kolbus, Wohlenberg, Perfecta và Horizon. Các lỗ lắp, khe và các miếng chèn có ren sẽ vừa khít hoàn hảo.",
-        },
-        {
-          question:
-            "Thời gian thực hiện cho một bộ tông đơ cacbua vonfram tùy chỉnh là bao lâu?",
-          answer:
-            "Bộ HSS tiêu chuẩn dành cho các dòng xe phổ thông Müller Martini và Kolbus thường có sẵn trong kho. Các bộ khảm cacbua vonfram (TC) tùy chỉnh thường cần 15–20 ngày làm việc để sản xuất, do quy trình hàn chân không và mài kim cương phức tạp cần thiết cho cacbua.",
+          label: "Ứng dụng",
+          value: "Cắt tỉa mặt trước, đầu và chân của sản phẩm đóng bìa",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/three-knife-trimmer-blades-detail.webp",
+        alt: "Mẫu dao xén ba mặt với các biên dạng thân dao và bố trí lỗ lắp khác nhau",
+      },
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "392–585 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "Lưỡi cắt 18% vonfram HSS hoặc hợp kim cacbua vonfram",
+        },
+        {
+          label: "Cấu trúc lưỡi",
+          value: "Lớp phủ lưỡng kim với lưỡi cắt hàn đồng và thân bằng thép",
+        },
+        {
+          label: "Đặt cấu hình",
+          value: "Một con dao phía trước và hai con dao bên",
+        },
+        {
+          label: "Hoàn thiện bề mặt",
+          value: "Gương chồng lên nhau, Ra 0,1 µm",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt tỉa mặt trước, đầu và chân sách đóng bìa, bìa sách",
+        },
+        {
+          label: "Đặt độ dày phù hợp",
+          value: "±0,01 mm trên bộ phù hợp",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Máy/phiên bản",
+            "Vị trí dao",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+            "Lỗ/khe gắn",
+          ],
+          rows: [
+            [
+              "SR003401",
+              "Müller Martini 3670/3672 — Phong cách mới",
+              "Đằng trước",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003402",
+              "Müller Martini 3670/3672 — Phong cách mới",
+              "Bên trái",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003403",
+              "Müller Martini 3670/3672 — Phong cách mới",
+              "Bên phải",
+              "392",
+              "90",
+              "12",
+              "8 × M10",
+            ],
+            [
+              "SR003404",
+              "Bằng khen Müller Martini 3671 — Series 97",
+              "Đằng trước",
+              "540",
+              "90",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003405",
+              "Bằng khen Müller Martini 3671 — Series 97",
+              "Bên trái",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003406",
+              "Bằng khen Müller Martini 3671 — Series 97",
+              "Bên phải",
+              "417",
+              "90",
+              "12",
+              "20 × M10",
+            ],
+            [
+              "SR003407",
+              "Müller Martini 3675 Orbit – Kiểu cũ",
+              "Đằng trước",
+              "580",
+              "115",
+              "12",
+              "12 × M10 + 1 khe",
+            ],
+            [
+              "SR003408",
+              "Müller Martini 3675 Orbit – Kiểu cũ",
+              "Bên trái",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 khe",
+            ],
+            [
+              "SR003409",
+              "Müller Martini 3675 Orbit – Kiểu cũ",
+              "Bên phải",
+              "450",
+              "115",
+              "12",
+              "15 × M10 + 2 khe",
+            ],
+            [
+              "SR003410",
+              "Müller Martini 3675 Orbit — Phong cách mới",
+              "Đằng trước",
+              "585",
+              "115",
+              "12",
+              "12 × M10",
+            ],
+            [
+              "SR003411",
+              "Müller Martini 3675 Orbit — Phong cách mới",
+              "Bên trái",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003412",
+              "Müller Martini 3675 Orbit — Phong cách mới",
+              "Bên phải",
+              "466.6",
+              "115",
+              "12",
+              "15 × M10",
+            ],
+            [
+              "SR003413",
+              "Kolbus HD150 – Phong cách cổ điển",
+              "Đằng trước",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003414",
+              "Kolbus HD150 – Phong cách cổ điển",
+              "Bên trái",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003415",
+              "Kolbus HD150 – Phong cách cổ điển",
+              "Bên phải",
+              "445",
+              "115",
+              "10",
+              "6 × M12",
+            ],
+            [
+              "SR003416",
+              "Kolbus HD153",
+              "Đằng trước",
+              "560",
+              "115",
+              "10",
+              "10 × M12",
+            ],
+            [
+              "SR003417",
+              "Kolbus HD153",
+              "Bên trái",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+            [
+              "SR003418",
+              "Kolbus HD153",
+              "Bên phải",
+              "405",
+              "115",
+              "10",
+              "9 × M12",
+            ],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Gửi model máy xén, bản vẽ dao trước và dao bên, khổ sách và loại giấy.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Gửi model máy xén, bản vẽ dao trước và dao bên, khổ sách và loại giấy.",
+    dimensionLabels: {
+      intro:
+        "Mỗi bộ có một con dao phía trước và một con dao cho mỗi bên. Khớp phiên bản máy, hướng vát và mẫu lỗ và khe hoàn chỉnh với bản vẽ của bạn trước khi đặt hàng.",
     },
   },
   {
+    compatibleMachinesIntro:
+      "Nhận các loại dao trên và dưới thay thế cho trạm rạch điện cực pin của bạn, với các lỗ, chiều rộng và biên dạng cạnh tùy chỉnh. Gửi cho Sureay bản vẽ trạm và chi tiết điện cực của bạn để nhận báo giá về các tùy chọn bề mặt và cặp cacbua.",
     id: "lithium-battery-slitting-knives",
-    name: "Dao rạch pin",
-    fullName: "Dao rạch tròn cacbua vonfram cho lá điện cực pin lithium",
+    seoDescription:
+      "Dao rạch cacbua hạt mịn dùng cho cực dương và cực âm của pin lithium được phủ. Đặt hàng dao quay trên và dưới phù hợp với DLC hoặc TiN tùy chọn.",
+    name: "Dao xẻ điện cực pin",
+    fullName: "Dao xẻ dọc điện cực pin lithium",
     category: "slitter_knives",
     sector: "new_energy",
-    categoryDisplay: "Lưỡi dao chính xác dùng pin",
+    categoryDisplay: "Dao xẻ điện cực pin",
     image:
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-    badge: "Năng lượng mới",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-10.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-07.webp",
-      "/images/products/rotary-slitter-knives/rotary-slitter-knives-detail.webp",
-    ],
+      "/images/products/slitter-detail/lithium-battery-slitting-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Dao rạch tròn hợp kim cacbua vonfram được hoàn thiện bằng gương cho lá điện cực pin lithium-ion. Chất lượng cạnh Ra 0,05μm không khía giúp ngăn chặn các vệt nhỏ trên lá cực âm Al và cực dương Cu, duy trì độ sạch của tổ hợp tế bào ISO Cấp 7. Dung sai: độ dày ± 0,001mm, T.I.R.",
-    fullDescription:
-      "Rạch điện cực pin lithium là một trong những ứng dụng cắt chính xác đòi hỏi khắt khe nhất trong sản xuất công nghiệp. Một vệt siêu nhỏ hoặc vết khía ở cạnh trên mép giấy bạc đã cắt có thể xuyên qua màng phân cách trong quá trình lắp ráp tế bào, gây đoản mạch bên trong và hỏng pin nghiêm trọng. Dao rạch pin lithium Sureay được thiết kế để loại bỏ rủi ro này thông qua quá trình luyện kim bề mặt và độ chính xác cực cao.\n\nMỗi con dao đều được sản xuất từ ​​hạt siêu mịn hợp kim cacbua vonfram (WC-Co, cỡ hạt ≤ 0,5μm) và được mài chính xác đến lớp hoàn thiện gương Ra ≤ 0,05μm trên góc xiên cắt. Dung sai độ dày được giữ ở mức ±0,001mm trên toàn bộ mặt đĩa — chặt hơn ba lần so với thông số kỹ thuật của dao cắt tiêu chuẩn — và tổng độ đảo chỉ định (T.I.R.) được xác minh ở mức 0,01mm trên mỗi đơn vị trước khi giao hàng. Hình dạng cạnh không khía này ngăn chặn sự phân tách vi mô ở cạnh cắt giấy bạc và loại bỏ việc tạo ra các hạt kim loại làm ô nhiễm môi trường lắp ráp tế bào trong phòng khô.\n\n## Ứng dụng lá điện cực\n\n**Lá nhôm Cathode (Tế bào LFP, NMC, NCA):** Phạm vi độ dày 12–20μm. Lớp oxit cứng, giòn trên lá Al loại pin nhanh chóng mài mòn các cạnh HSS và D2 ​​tiêu chuẩn chỉ trong một cuộn. Các loại cacbua vonfram duy trì tuổi thọ cạnh hình học lâu hơn 8–12×, giảm các điểm dừng ngoài kế hoạch trên dây chuyền cuộn tốc độ cao chạy ở tốc độ 80–120 m/phút.\n\n**Lá cực dương đồng (LFP, NMC, pin thể rắn):** Phạm vi độ dày 6–12μm. Giấy bạc Cu siêu mỏng yêu cầu khoảng hở dao/đe phải được đặt trong phạm vi ±0,002mm để tránh giấy bạc bị nhăn và co rút trên cuộn tua lại. Các cặp dao có đường kính phù hợp của chúng tôi được mài thành bộ ghép đôi với khoảng hở được xác minh trước theo thông số kỹ thuật máy của bạn.\n\n**Màng tách PVDF (Quy trình khô):** Màng tách được phủ gốm dành cho quy trình điện cực khô (được sử dụng trong các dòng tế bào thể rắn Gen 4) tạo ra chất nền cắt cực kỳ mài mòn. Dao PCD (kim cương đa tinh thể) cấp gốm kim loại hoặc rắn có sẵn cho ứng dụng này theo yêu cầu.\n\n## Khả năng tương thích phòng sạch\n\nTất cả các con dao đều được làm sạch bằng siêu âm, đóng gói riêng lẻ trong túi chống tĩnh điện kín và được chứng nhận không chứa hạt theo tiêu chuẩn ISO Loại 7. Giấy chứng nhận bao bì và vật liệu tuân thủ các yêu cầu về tài liệu IATF 16949 dành cho chuỗi cung ứng pin EV.",
+      "Dao rạch thay thế cacbua dùng cho cực dương và cực âm của pin lithium được phủ. Cặp dao trên và dưới tùy chỉnh, với tùy chọn lớp phủ DLC hoặc TiN.",
     link: "/products/lithium-battery-slitting-knives",
     isFeatured: true,
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "Dòng điện cực OD 60–150 mm",
+      },
+      {
+        label: "Vật liệu",
+        value: "hạt mịn hợp kim cacbua vonfram (WC-Co); gốm sứ theo yêu cầu",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Mạng lưới cực dương và cực âm của pin lithium được phủ",
+      },
+      {
+        label: "Cấp điện cực",
+        value: "YG6X , YG6H , YG8 và YG10X",
+      },
+      {
+        label: "Hoàn thiện cạnh",
+        value: "Mặt cắt được đánh bóng bằng gương, Ra ≤0,05 μm",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value: "DLC hoặc TiN",
+      },
+      {
+        label: "độ cứng",
+        value: "91–93 HRA, tùy thuộc vào cấp độ WC-Co",
+      },
+      {
+        label: "Dung sai độ dày",
+        value: "±0.001 mm",
+      },
+      {
+        label: "hết",
+        value: "≤0.01 mm T.I.R.",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Cặp dao quay trên và dưới phù hợp bằng trạm rạch điện cực",
+      },
+      {
+        label: "Lá thu thập hiện tại",
+        value: "Nhôm 12–20 µm; đồng 6–12 µm",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao rạch điện cực dùng pin | Cặp cacbua",
+      sizeRange: "Dòng điện cực OD 60–150 mm",
+      heroAlt:
+        "Các dao cắt pin tròn được bố trí để lộ các lỗ khoan và các mặt cắt được đánh bóng",
+      specificationImage: {
+        src: "/images/products/slitter-detail/lithium-battery-slitting-knives-detail.webp",
+        alt: "Cận cảnh lưỡi cắt được đánh bóng trên dao xẻ tròn",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "electrode",
+          tabLabel: "Cặp điện cực",
+          title: "Cặp điện cực",
+          columns: [
+            "Mã sản phẩm",
+            "Loạt",
+            "OD trên × ID × W",
+            "OD dưới × ID × W",
+          ],
+          rows: [
+            ["SR001351", "60 loạt", "72 × 46 × 0.5 mm", "60 × 40 × 5.0 mm"],
+            ["SR001352", "Dòng 80/98", "98 × 66 × 0.7 mm", "80 × 55 × 5.0 mm"],
+            ["SR001353", "100 loạt", "100 × 65 × 0.7 mm", "100 × 65 × 3.0 mm"],
+            ["SR001354", "100 loạt", "100 × 65 × 1.0 mm", "100 × 55 × 5.0 mm"],
+            ["SR001355", "Dòng 130", "130 × 88 × 0.8 mm", "130 × 95 × 3.0 mm"],
+            ["SR001356", "Dòng 130", "130 × 97 × 1.0 mm", "130 × 70 × 5.0 mm"],
+          ],
+        },
+        {
+          id: "individual-electrode-knives",
+          tabLabel: "Dao điện cực cá nhân",
+          title: "Dao điện cực cá nhân",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Cấu hình"],
+          rows: [
+            ["SR001820", "76 × 38 × 0.5 mm", "Dao cá nhân"],
+            ["SR001821", "76 × 38 × 1.0 mm", "Dao cá nhân"],
+            ["SR001822", "100 × 50 × 0.5 mm", "Dao cá nhân"],
+            ["SR001823", "100 × 50 × 1.0 mm", "Dao cá nhân"],
+            ["SR001824", "100 × 50 × 1.5 mm", "Dao cá nhân"],
+            ["SR001825", "120 × 60 × 0.5 mm", "Dao cá nhân"],
+            ["SR001826", "120 × 60 × 1.0 mm", "Dao cá nhân"],
+            ["SR001827", "150 × 76 × 1.0 mm", "Dao cá nhân"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Dòng điện cực OD 60–150 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "hạt mịn hợp kim cacbua vonfram (WC-Co); gốm sứ theo yêu cầu",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Mạng lưới cực dương và cực âm của pin lithium được phủ",
+        },
+        {
+          label: "Cấp điện cực",
+          value: "YG6X , YG6H , YG8 và YG10X",
+        },
+        {
+          label: "Hoàn thiện cạnh",
+          value: "Mặt cắt được đánh bóng bằng gương, Ra ≤0,05 μm",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "DLC hoặc TiN",
+        },
+        {
+          label: "độ cứng",
+          value: "91–93 HRA, tùy thuộc vào cấp độ WC-Co",
+        },
+        {
+          label: "Dung sai độ dày",
+          value: "±0.001 mm",
+        },
+        {
+          label: "hết",
+          value: "≤0.01 mm T.I.R.",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Cặp dao quay trên và dưới phù hợp bằng trạm rạch điện cực",
+        },
+        {
+          label: "Lá thu thập hiện tại",
+          value: "Nhôm 12–20 µm; đồng 6–12 µm",
+        },
+      ],
+    },
     compatibleMachines: [
-      "Kaido",
-      "Koem",
+      "Nishimura",
+      "DIENES",
+      "Kampf",
+      "CIS",
+      "PNT",
       "Hirano Tecseed",
       "CKD",
-      "Manz",
-      "Targray",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "Ultra-fine WC-Co Tungsten Carbide, Cermet (on request)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Mirror polish Ra ≤ 0.05μm — zero-notch edge",
-      },
-      {
-        label: "Tolerance",
-        value: "Thickness: ±0.001mm | T.I.R. Runout: ≤0.01mm",
-      },
-      {
-        label: "Hardness",
-        value: "HRA 91–93 (WC-Co grade)",
-      },
-      {
-        label: "Coatings",
-        value: "DLC, TiN (optional, anti-adhesion for PVDF-coated foil)",
-      },
-      {
-        label: "Application",
-        value:
-          "Al cathode foil (12–20μm), Cu anode foil (6–12μm), PVDF separator film",
-      },
+      "Lead Intelligent",
     ],
     components: [
       {
-        id: "zero-notch-edge",
-        tag: "CHÍNH XÁC",
-        title: "Hoàn thiện gương không khía",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Cấu hình cacbua cho điện cực tráng",
         description:
-          "Mỗi góc xiên cắt được đặt ở Ra ≤ 0,05μm — cùng tiêu chuẩn chất lượng bề mặt được sử dụng để mài thấu kính quang học. Điều này giúp loại bỏ các vết khía vi mô tạo ra các hạt kim loại trong môi trường lắp ráp tế bào trong phòng khô và ngăn ngừa thủng màng phân cách.",
+          "Dao cacbua WC-Co hiện có sẵn để cắt rãnh cực dương và cực âm, với yêu cầu về vật liệu và cấu hình dao được xác định cho trạm điện cực của bạn.",
       },
       {
-        id: "ultra-fine-carbide",
-        tag: "Luyện kim",
-        title: "Lớp cacbua WC-Co siêu mịn",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Mặt cắt đất và DLC hoặc TiN tùy chọn",
         description:
-          "Cacbua công nghiệp tiêu chuẩn sử dụng kích thước hạt từ 1–3μm. Dao cấp pin của chúng tôi được sản xuất từ ​​WC-Co siêu nhỏ 0,5μm, mang lại độ cứng cạnh cao hơn đáng kể (HRA 91–93), khả năng chống mài mòn vượt trội trên các lá Al và Cu mỏng, đồng thời tuổi thọ có thể đánh bóng lâu hơn giữa các chu kỳ mài lại.",
+          "Các mặt cắt được đánh bóng bằng gương và các cấu hình bề mặt DLC hoặc TiN tùy chọn cho phép các lệnh dao điện cực chỉ định bề mặt làm việc riêng biệt với vật liệu cacbua và hình dạng lưỡi.",
       },
       {
-        id: "matched-knife-pairs",
-        tag: "NĂNG LỰC QUY TRÌNH",
-        title: "Các cặp giải phóng mặt bằng đã được xác minh trước",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao trên và dưới cho trạm điện cực",
         description:
-          "Bộ dao trên và dưới được mài theo cặp đường kính phù hợp với khoảng hở được xác minh trước theo thông số kỹ thuật máy cuộn của bạn (thường là 0,002–0,005 mm đối với lá đồng). Mỗi cặp đi kèm với một bảng dữ liệu kỹ thuật ghi lại OD, ID, độ dày và khoảng trống đo được, cho phép lắp đặt lại phía đường dây một cách nhất quán.",
+          "Đặt hàng các cặp dao trên và dưới tùy chỉnh hoặc các bộ thay thế riêng lẻ, với lỗ khoan, chiều rộng và biên dạng cắt được chỉ định xung quanh trạm rạch điện cực hiện có của bạn và dao ghép nối được giữ lại.",
       },
     ],
-    dimensionLabels: {
-      col1: "Đường kính ngoài (OD)",
-      col2: "Đường kính trong (ID)",
-      col3: "độ dày",
-      caption:
-        "* Kích thước tiêu chuẩn để cắt lá điện cực pin. OD/ID tùy chỉnh và độ dày có sẵn cho tất cả các kiểu máy cuộn dây. Các cặp trên/dưới trùng khớp được cung cấp cùng với bảng dữ liệu thông quan đã được xác minh trước.",
-    },
-    standardDimensions: [
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "76 mm",
-        id: "38 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "100 mm",
-        id: "50 mm",
-        thickness: "1.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "0.5 mm",
-      },
-      {
-        od: "120 mm",
-        id: "60 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        od: "150 mm",
-        id: "76 mm",
-        thickness: "1.0 mm",
-      },
-    ],
-    relatedBladeIds: ["rotary-slitter-knives", "metal-coil-slitting-knives"],
-    offers: {
-      lowPrice: 45,
-      highPrice: 480,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Tiêu chuẩn hoàn thiện bề mặt nào là cần thiết để ngăn chặn các vệt nhỏ trên lá điện cực của pin?",
+            "Làm cách nào để xác định cặp dao điện cực trên và dưới thay thế?",
           answer:
-            "Đối với việc rạch bằng điện cực pin lithium-ion, góc xiên cắt phải được đánh bóng đến Ra ≤ 0,05μm (hoàn thiện như gương) và được xác minh không có vết khía nào dưới độ phóng đại 400×. Bất kỳ sự bất thường nào trên bề mặt vượt quá ngưỡng này sẽ tạo ra các hạt vi kim loại làm ô nhiễm môi trường phòng khô ISO Cấp 7 và có thể xuyên qua thiết bị phân tách, gây đoản mạch bên trong tế bào thành phẩm.",
+            "Xác định cả hai vị trí dao và ghi lại lỗ khoan, chiều rộng, biên dạng cắt và mối quan hệ được lắp đặt của chúng. Mô hình trạm và bản vẽ hiện tại thiết lập các yêu cầu lắp đặt. Bao gồm cấu trúc lưới điện cực để có thể chỉ định cặp thay thế cho vật liệu phủ cũng như cách bố trí cơ học, với từng vị trí được xác định rõ ràng.",
         },
         {
           question:
-            "Làm cách nào để đặt khoảng hở dao-to-dao cho lá anode đồng siêu mỏng?",
+            "Hướng dẫn lựa chọn cacbua chống mài mòn hiện tại cho điện cực được phủ như thế nào?",
           answer:
-            "Đối với lá anode Cu 6–12μm, khoảng hở dao trên/dưới phải được đặt ở 0,002–0,005mm (2–5% độ dày của lá). Khoảng hở dưới phạm vi này gây ra sự hình thành gờ; ở trên nó dẫn đến giấy bạc bị nhăn và tua lại bằng kính thiên văn. Các cặp phù hợp của chúng tôi được xác minh trước theo khoảng trống được chỉ định của bạn và được cung cấp bảng dữ liệu kích thước để lắp đặt dọc theo đường dây nhất quán.",
+            "Ghi lại kiểu mòn của dao đã sử dụng cùng với cấu trúc điện cực và chất lượng cạnh được yêu cầu. Những điều này cung cấp cơ sở để thảo luận về yêu cầu vật liệu cacbua. Giữ lớp nền và lớp phủ bề mặt tùy chọn dưới dạng thông số kỹ thuật riêng biệt và so sánh chúng với hình dạng dao hiện có và tiêu chí chấp nhận sản xuất khi đánh giá thay thế.",
         },
         {
           question:
-            "Tôi nên chỉ định loại cacbua nào cho lá cực âm nhôm so với lá cực dương bằng đồng?",
+            "Điều gì có thể gây ra các vệt, bụi hoặc lớp phủ ở cạnh điện cực?",
           answer:
-            "Cả hai loại giấy bạc đều được hưởng lợi từ submicron WC-Co (hạt ≤0,5μm, HRA 91–93). Đối với lá cực âm Al, lớp bề mặt oxit cứng là tác nhân mài mòn chính - loại cacbua K10/K20 tiêu chuẩn mang lại tuổi thọ cạnh chấp nhận được. Đối với lá anode Cu, ưu tiên chuyển sang đạt được độ nhám bề mặt thấp nhất có thể (Ra ≤ 0,05μm) để ngăn chặn sự chuyển chất kết dính và vết lá ở mép cắt.",
+            "Điều kiện lưỡi dao, hình học cắt, căn chỉnh cặp và cấu trúc điện cực đều có thể góp phần. Kiểm tra cạnh thu và lớp phủ riêng biệt, chú ý xem khuyết tật xuất hiện ở một bên hay ở một số vị trí khe. So sánh những quan sát đó với các cài đặt máy đã được xác thực và các yêu cầu về chất lượng cạnh để xác định xem cặp dao thay thế cần giải quyết vấn đề gì.",
         },
         {
-          question: "Chu trình mài lại điển hình trên dao rạch pin là gì?",
+          question: "Tại sao dao điện cực cacbua lại phát triển các vi mạch?",
           answer:
-            "Trên dây chuyền rạch lá rộng 600mm tiêu chuẩn chạy với tốc độ 80 m/phút, dao Subicron WC-Co thường duy trì chất lượng lưỡi ở mức chấp nhận được trong 4–6 tháng hoạt động liên tục trước khi cần mài lại. Sự xuống cấp của cạnh xuất hiện đầu tiên khi độ nhám của cạnh cắt tăng lên (Ra leo lên trên 0,1μm) có thể nhìn thấy được khi kiểm tra SEM, chứ không phải là vết sứt mẻ nghiêm trọng. Chúng tôi cung cấp dịch vụ mài lại với chứng nhận lại đầy đủ chiều.",
+            "Các cạnh cacbua cứng rất nhạy cảm với các tác động khi xử lý, tiếp xúc ngoài ý muốn với dao và vị trí không ổn định. Kiểm tra cả hai cạnh, tình trạng lắp và độ đảo, sau đó so sánh sự căn chỉnh cặp và hình dạng cắt với các yêu cầu của trạm. Ghi lại xem hư hỏng có xuất hiện lần đầu trong quá trình cài đặt, khởi động hoặc chạy hay không để phân biệt hư hỏng tiếp xúc với sự cố vận hành định kỳ trước khi thay đổi cấp độ.",
+        },
+        {
+          question:
+            "DLC hoặc TiN nên được chỉ định như thế nào cho dao điện cực thay thế?",
+          answer:
+            "Chỉ định lớp phủ riêng biệt với cấp độ cacbua, lỗ khoan, chiều rộng dao và biên dạng cắt. Xác định xem đơn đặt hàng có nên tái tạo dao được phủ hiện có hay đánh giá sự thay đổi so với cấu hình không được phủ. Đảm bảo các yêu cầu về cấu trúc điện cực và chất lượng cạnh phù hợp với thông số kỹ thuật để xác định được cách xử lý bề mặt được yêu cầu cho trạm đó.",
+        },
+        {
+          question:
+            "Sureay có thể cung cấp một cặp dao tùy chỉnh hay chỉ thay thế con dao phía trên?",
+          answer:
+            "Đúng. Các cặp tùy chỉnh có thể được chỉ định từ bản vẽ trạm và dao trên có thể được cung cấp riêng khi dao dưới được giữ lại được xác định và có thể sử dụng được. Bao gồm các kích thước thực tế, biên dạng cạnh và lịch sử mài lại. Xác định rõ ràng con dao nào đang được thay thế và liệu đơn đặt hàng có nên tái tạo hoặc thay đổi cấu hình hiện có hay không.",
+        },
+        {
+          question:
+            "Dao cắt điện cực có giống như dao cắt lá đồng hoặc nhôm trần không?",
+          answer:
+            "Dao điện cực cắt một mạng lưới cực dương hoặc cực âm có chứa cả lá thu và lớp phủ. Dao lá trần rạch trên bề mặt đồng hoặc nhôm không tráng phủ. Yêu cầu về cạnh và hạt của chúng có thể khác nhau mặc dù có hình dạng tròn tương tự nhau. Đối với chất nền không được phủ, xem [Dao xẻ lá đồng và nhôm](/products/metal-foil-strip-slitter-knives) .",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay có thể cung cấp dao rạch pin được chứng nhận theo yêu cầu IATF 16949 không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp đầy đủ tài liệu truy xuất nguồn gốc nguyên liệu để chứng nhận chuỗi cung ứng pin EV: chứng chỉ nhà máy nguyên liệu thô WC-Co, báo cáo kiểm tra độ cứng (HRA theo tiêu chuẩn ASTM E18), hồ sơ đo độ nhám bề mặt (Ra theo ISO 4287) và báo cáo CMM chiều. Tất cả các tài liệu được tham chiếu đến số lô đơn đặt hàng của bạn.",
-        },
-        {
-          question:
-            "Thời gian thực hiện cho các đơn đặt hàng dao rạch pin tiêu chuẩn và tùy chỉnh là bao lâu?",
-          answer:
-            "Kích thước chứng khoán tiêu chuẩn: 3–5 ngày làm việc. Kích thước OD/ID tùy chỉnh không còn trong kho: 10–15 ngày làm việc bao gồm tài liệu QC đầy đủ. Đối với các đơn đặt hàng đủ tiêu chuẩn OEM ban đầu yêu cầu xác minh mẫu trước khi sản xuất hoàn chỉnh, hãy chờ 7–10 ngày làm việc đối với các mẫu sản phẩm đầu tiên.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "metal-foil-strip-slitter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Các lưỡi cắt cacbua thay thế nguồn cho đầu khô của máy gấp nếp của bạn, với các lỗ tùy chỉnh, lỗ cố định và kiểu lắp có rãnh. Gửi cho Sureay bản vẽ bộ phận hoặc mẫu để báo giá về cấu hình lưỡi cắt nguyên khối hoặc lưỡi chia đôi của bạn.",
     id: "corrugated-slitter-scorer-blades",
-    name: "Lưỡi xẻ sóng",
+    seoDescription:
+      "Lưỡi cắt cacbua dành cho dây chuyền đầu cuối máy gấp nếp, có cấu hình tham chiếu BHS và Fosber . Các lỗ khoan tùy chỉnh và các mẫu sửa chữa được thực hiện theo bản vẽ.",
+    name: "Dao xẻ dọc bìa carton sóng",
     fullName:
-      "Lưỡi cắt mỏng cacbua vonfram cho dây chuyền đầu khô của máy uốn lượn",
+      "Dao xẻ dọc tấm carton sóng cho phần khô của dây chuyền sản xuất carton",
     category: "slitter_knives",
     sector: "paper",
-    categoryDisplay: "lưỡi sóng",
+    categoryDisplay: "Dao xẻ dọc bìa carton sóng",
     image:
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-    badge: "Không nghiền nát",
-    badgeColor: "orange",
-    gallery: [
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades-01.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-tooling-portfolio.webp",
-      "/images/products/corrugated-slitter-scorer-blades/corrugated-slitter-scorer-blades.webp",
-    ],
+      "/images/products/slitter-detail/corrugated-slitter-scorer-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Lưỡi cắt mỏng bằng cacbua vonfram rắn được thiết kế để cắt các tấm tôn không bị nghiền nát. Các sản phẩm thay thế OEM chính xác cho BHS, Fosber và Marquip. Với tư cách là nhà sản xuất dụng cụ nhà máy đóng hộp hoàn chỉnh, chúng tôi cũng cung cấp dao xẻ rãnh, dao cắt hình chữ Z, dao ghi điểm/tạo nếp và dao cuộn đường khâu.",
-    fullDescription:
-      "Trên dây chuyền gấp sóng tốc độ cao chạy với tốc độ trên 250 m/phút, máy ghi điểm đầu khô sẽ quyết định chất lượng cuối cùng của các tông sóng. Sử dụng lưỡi dao kém sẽ khiến sáo bị dập, mép bị rách và có quá nhiều bụi giấy. Lưỡi xẻng mỏng dạng sóng Sureay được sản xuất từ ​​cacbua vonfram hạt nhỏ 100% rắn thông qua quá trình thiêu kết HIP (Ép đẳng tĩnh nóng), mang lại độ bền đứt ngang vô song và độ ổn định của cạnh.\n\n## Hình học dao cạo 'Zero-Crush'\n\nThuật ngữ 'Lưỡi mỏng' dùng để chỉ lưỡi cắt chứ không phải toàn bộ thân lưỡi. Để tránh rung lắc ở tốc độ cao, thân lưỡi dao của chúng tôi được gia công ở độ dày cứng từ 1,0 mm đến 1,2 mm. Sau đó, lưỡi cắt được mài chính xác bằng các bánh xe kim cương thành một mặt cắt siêu nhỏ (thường rộng 0,3mm ở đỉnh). Hình dạng cụ thể này cắt xuyên qua các tấm ván hai lớp nặng hoàn toàn bằng hành động cắt, tạo ra lực nén bằng 0 và loại bỏ hoàn toàn hiện tượng dập sáo.\n\n## Làm sắc nét nội tuyến liên tục\n\nCác máy tạo sóng hiện đại sử dụng các bánh mài CBN thẳng hàng, tự động để mài các lưỡi cắt trong quá trình vận hành. Sureay đặc biệt xây dựng công thức ma trận cacbua vonfram của chúng tôi để cân bằng khả năng chống mài mòn cực cao với khả năng mài hoàn hảo, đảm bảo lưỡi cắt vật liệu sạch mà không cần tráng men hoặc nạp đá mài vào máy.\n\n## Danh mục dụng cụ tôn hoàn chỉnh\n\nTrong khi các máy xẻ mỏng cacbua vonfram của chúng tôi là nhịp tim của đầu khô máy gấp nếp, Sureay là đối tác cung cấp dụng cụ toàn diện cho toàn bộ nhà máy sản xuất hộp. Ngoài lưỡi cắt, chúng tôi sản xuất và cung cấp:\n- **Dao xẻ rãnh (Dao xẻ rãnh) & Dao xẻ rãnh chùm:** Để có các khe sạch, không bị rách trên Keo dán thư mục Flexo (FFG).\n- **Dao cắt Z:** Lưỡi cắt răng cưa tốc độ cao dành cho trạm cắt đầu khô.\n- **Dao khâu vòng:** Lưỡi cắt chính xác để cắt mấu keo/mũi khâu quan trọng trên thùng giấy gấp.\n- **Dao ghi điểm & dao tạo nếp:** Vòng ghi điểm nam/nữ tạo ra bản lề gập hoàn hảo.\n- **Dao tròn chia đôi trên và dưới:** Thiết kế hai mảnh giúp thay thế nhanh chóng trong máy, tiết kiệm thời gian ngừng hoạt động để bảo trì trục.",
+      "Lưỡi cắt thay thế cacbua cho dây chuyền đầu khô của máy gấp nếp. BHS , Fosber và các tài liệu tham khảo về máy khác, với các lỗ tùy chỉnh và các mẫu cố định để vẽ.",
     link: "/products/corrugated-slitter-scorer-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "BHS",
-      "FOSBER",
-      "Marquip",
-      "Agnati",
-      "Martin / Bobst",
-      "TCY",
-      "Isowa",
-    ],
     specs: [
       {
-        label: "Main Product",
-        value: "Solid Tungsten Carbide Thin Slitter Blades (HIP Sintered)",
+        label: "Kích cỡ",
+        value: "Lưỡi mỏng OD 15–340 mm",
       },
       {
-        label: "Material",
-        value: "Tungsten Carbide WC-Co K05 / K10 / K20 (grade by board type)",
-      },
-      {
-        label: "Blade Hardness",
-        value: "HRA 90–92 (Optimized for wear and in-line grindability)",
-      },
-      {
-        label: "Body Thickness",
-        value: "1.0 mm – 1.2 mm (Ensures high-speed rigidity)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Precision lapped razor profile, ~0.3 mm apex (Zero-crush)",
-      },
-      {
-        label: "Line Speed Rating",
-        value: "Up to 350+ m/min on modern high-speed corrugators",
-      },
-      {
-        label: "Application",
+        label: "Vật liệu",
         value:
-          "B/C/E/F flute corrugated board — slit and score on BHS, Marquip, FOSBER corrugators",
+          "Cacbua WC-Co ở các loại K05 , K10 , K20 , YG8 , YG10 , YG12X hoặc YG15",
       },
       {
-        label: "Other Tooling Cap.",
-        value: "Slotter Knives, Z Cut-off Knives, Scorer Knives, Split Knives",
+        label: "Ứng dụng",
+        value: "Rạch dọc ở đầu khô của máy gấp nếp",
       },
+      {
+        label: "Tùy chọn lưỡi",
+        value: "Cấu trúc dạng đĩa đặc hoặc tách rời",
+      },
+      {
+        label: "độ cứng",
+        value: "90–92 HRA, tùy thuộc vào loại cacbua",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Lỗ trơn, mẫu lỗ cố định hoặc mẫu lắp có rãnh",
+      },
+      {
+        label: "Phương pháp sản xuất",
+        value: "HIP-thiêu kết rắn hợp kim cacbua vonfram",
+      },
+      {
+        label: "Đỉnh cạnh",
+        value: "Khoảng 0,3 mm",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lưỡi ghi điểm dạng sóng | BHS & Fosber",
+      sizeRange: "Lưỡi mỏng OD 15–340 mm",
+      heroAlt:
+        "Các tấm tôn mỏng có lưỡi cắt mỏng với các kiểu lắp và lỗ khoan khác nhau",
+      specificationImage: {
+        src: "/images/products/slitter-detail/corrugated-slitter-scorer-blades-detail.webp",
+        alt: "Lưỡi cắt tôn tròn cho thấy lỗ khoan lớn và các lỗ cố định",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "thin",
+          tabLabel: "Lưỡi mỏng cacbua",
+          title: "Lưỡi mỏng cacbua",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Tham khảo thiết bị",
+            "Kiểu lắp",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Mẫu 6 × Ø9 mm"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "mẫu 4 khe"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Vẽ trận đấu"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Vẽ trận đấu"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Vẽ trận đấu"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Vẽ trận đấu"],
+            ["SR001410", "280 × 160 × 1.1 mm", "Mitsubishi", "Vẽ trận đấu"],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Vẽ trận đấu"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Vẽ trận đấu"],
+            ["SR001413", "340 × 230.2 × 1.0 mm", "Göpfert", "Vẽ trận đấu"],
+          ],
+        },
+        {
+          id: "catalog-configurations",
+          tabLabel: "Kích thước dao lượn sóng bổ sung",
+          title: "Kích thước dao lượn sóng bổ sung",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Loại dao / Tham chiếu nền tảng",
+          ],
+          rows: [
+            ["SR001828", "240 × 115 × 1.0 / 1.2 mm", "BHS"],
+            ["SR001829", "260 × 140 × 1.2 mm", "BHS"],
+            ["SR001830", "230 × 135 × 1.15 / 1.2 mm", "FOSBER"],
+            ["SR001831", "260 × 112 × 1.2 mm", "FOSBER"],
+            ["SR001832", "230 × 110 × 1.2 / 1.5 mm", "Marquip"],
+            ["SR001833", "200 × 122 × 1.2 mm", "TCY / Justu"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Lưỡi mỏng OD 15–340 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "Cacbua WC-Co ở các loại K05 , K10 , K20 , YG8 , YG10 , YG12X hoặc YG15",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Rạch dọc ở đầu khô của máy gấp nếp",
+        },
+        {
+          label: "Tùy chọn lưỡi",
+          value: "Cấu trúc dạng đĩa đặc hoặc tách rời",
+        },
+        {
+          label: "độ cứng",
+          value: "90–92 HRA, tùy thuộc vào loại cacbua",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Lỗ trơn, mẫu lỗ cố định hoặc mẫu lắp có rãnh",
+        },
+        {
+          label: "Phương pháp sản xuất",
+          value: "HIP-thiêu kết rắn hợp kim cacbua vonfram",
+        },
+        {
+          label: "Đỉnh cạnh",
+          value: "Khoảng 0,3 mm",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BHS",
+      "Fosber",
+      "MarquipWardUnited",
+      "Agnati",
+      "Mitsubishi",
+      "Isowa",
+      "TCY",
+      "Göpfert",
     ],
     components: [
       {
-        id: "hip-sintering",
-        tag: "Luyện kim",
-        title: "Cacbua thiêu kết HIP",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Tùy chọn vật liệu cacbua để rạch sóng",
         description:
-          "Ép đẳng nhiệt nóng (HIP) đảm bảo lưỡi máy xén mỏng của chúng tôi không có lỗ chân lông cực nhỏ. Cấu trúc siêu dày này giữ cho cạnh sắc như dao cạo hoàn hảo (đầu ~ 0,3 mm) không bị sứt mẻ vi mô dưới tác động của tấm tôn tốc độ cao.",
+          "Tùy chọn cacbua WC-Co cho bạn lựa chọn vật liệu thay thế cho việc rạch tôn. Chỉ định cấp độ hiện tại của bạn, cấu hình lưỡi dao và điều kiện bảng để xác định loại dao cần thiết.",
       },
       {
-        id: "zero-crush",
-        tag: "HÌNH HỌC",
-        title: "Cạnh dao cạo Zero-Crush",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Cấu trúc lưỡi rắn và lưỡi chia",
         description:
-          "Thân lưỡi dày (1,0–1,2mm) mang lại sự ổn định tuyệt đối chống lại sự dao động ngang ở tốc độ, trong khi cạnh được làm thon sâu và được dát kim cương thành lớp hoàn thiện như dao cạo. Thao tác này sẽ cắt các ống sáo một cách sạch sẽ thay vì ấn chúng xuống.",
+          "Cấu trúc đĩa cứng và phân chia có sẵn cho các trạm dao lượn sóng hiện có, cho phép bạn đặt hàng dạng lưỡi cắt theo yêu cầu của tổ hợp đã lắp đặt của bạn.",
       },
       {
-        id: "full-portfolio",
-        tag: "NĂNG LỰC SẢN XUẤT",
-        title: "Dụng cụ nhà máy hộp hoàn chỉnh",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Các lỗ khoan và kiểu lắp đặt tùy chỉnh",
         description:
-          "Từ Máy xẻ rãnh mỏng cacbua vonfram trên máy gấp sóng, đến dao cắt Z, vòng ghi điểm và Dao xẻ rãnh trên/dưới trên Máy dán thư mục Flexo của bạn - chúng tôi thiết kế toàn bộ quang phổ cắt cho nhà máy đóng hộp của bạn.",
+          "Các lưỡi thay thế có thể được chế tạo bằng các lỗ khoan xác định bằng bản vẽ, các lỗ cố định và khe cắm, cung cấp cho bạn lộ trình mua trực tiếp mẫu lắp đặt được sử dụng trên đường dây của bạn.",
       },
     ],
-    dimensionLabels: {
-      col0: "Mục tiêu Corrugator OEM",
-      col1: "Đường kính ngoài (OD)",
-      col2: "Đường kính trong (ID)",
-      col3: "Độ dày cơ thể",
-      caption:
-        "* Kích thước trên là thông số kỹ thuật OEM tiêu chuẩn cho Lưỡi cắt mỏng. Các lỗ chốt truyền động được gia công theo dung sai thương hiệu. Dao cắt rãnh, ghi điểm và Z cắt được sản xuất theo bản thiết kế chính xác của khách hàng hoặc OEM.",
-    },
-    standardDimensions: [
-      {
-        spec: "BHS",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 / 1.2 mm",
-      },
-      {
-        spec: "BHS",
-        od: "260 mm",
-        id: "140 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "230 mm",
-        id: "135 mm",
-        thickness: "1.15 / 1.2 mm",
-      },
-      {
-        spec: "FOSBER",
-        od: "260 mm",
-        id: "112 mm",
-        thickness: "1.2 mm",
-      },
-      {
-        spec: "Marquip",
-        od: "230 mm",
-        id: "110 mm",
-        thickness: "1.2 / 1.5 mm",
-      },
-      {
-        spec: "Agnati",
-        od: "240 mm",
-        id: "115 mm",
-        thickness: "1.0 mm",
-      },
-      {
-        spec: "TCY / Justu",
-        od: "200 mm",
-        id: "122 mm",
-        thickness: "1.2 mm",
-      },
-    ],
-    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 150,
-    },
     faqs: {
       technical: [
         {
           question:
-            "Tại sao lưỡi cắt mỏng của tôi lại làm nát các sáo trên ván sáo E và F?",
+            "Làm cách nào để xác định đúng lưỡi cắt của máy xén sóng thay thế?",
           answer:
-            "Việc dập sáo là do lưỡi dao đã mất hình dạng dao cạo. Điều này xảy ra nếu cacbua lưỡi mài mòn quá nhanh hoặc nếu đá mài nội tuyến tự động của bạn được tráng men. Việc chuyển sang lưỡi cacbua vonfram thiêu kết HIP của chúng tôi đảm bảo cạnh vẫn sắc nét ở mức độ vi mô, cắt sáo một cách sạch sẽ mà không cần lực nén.",
+            "Bắt đầu với kiểu máy và tham chiếu dao, sau đó chỉ định đường kính ngoài, lỗ khoan, độ dày và kiểu cố định. Bao gồm xem lưỡi dao được lắp đặt là dạng đĩa đặc hay cấu trúc tách rời. Bản vẽ hoặc ảnh chụp rõ ràng về cách bố trí lắp đặt giúp xác định cấu hình cần thiết, đặc biệt khi cùng một nhãn hiệu máy sử dụng các cụm dao khác nhau.",
+        },
+        {
+          question: "Lưỡi máy xén BHS và Fosber có trao đổi cho nhau không?",
+          answer:
+            "Khả năng thay thế lẫn nhau phụ thuộc vào hình dạng lắp đặt và lưỡi cắt hoàn chỉnh. So sánh lỗ khoan, lỗ hoặc khe cố định, độ dày và biên dạng cắt với bộ phận được lắp đặt. Đường kính bên ngoài tương tự có thể che giấu các giao diện khác nhau, vì vậy hãy sử dụng bản vẽ dao hoặc tham chiếu bộ phận để thiết lập cấu hình thay thế cho trạm BHS hoặc Fosber cụ thể.",
         },
         {
           question:
-            "Làm thế nào để lưỡi dao của bạn tương tác với hệ thống mài dao ghi điểm tự động?",
+            "Tại sao hợp kim cacbua vonfram được sử dụng cho lưỡi ghi rãnh sóng?",
           answer:
-            "Lưỡi dao của chúng tôi được thiết kế đặc biệt để mài sắc liên tục trên dây chuyền (phổ biến trên các dòng Fosber và BHS). Cấu trúc hạt cacbua và tỷ lệ chất kết dính coban được cân bằng để lưỡi dao loại bỏ vật liệu sạch khi va vào đá CBN, giữ cho lưỡi dao sắc bén mà không cần tải (làm bóng) các bánh mài.",
+            "hợp kim cacbua vonfram cung cấp lưỡi cắt chống mài mòn cho việc rạch tấm tôn. Việc lựa chọn cấp độ phủ phải phản ánh kết cấu cánh và điều kiện làm việc thực tế. So sánh độ mài mòn dần dần của cạnh với hiện tượng sứt mẻ và bao gồm cách bố trí độ sắc nét của máy khi chỉ định thay thế. Những chi tiết này giúp xác định vật liệu cần thiết hữu ích hơn chỉ riêng giá trị độ cứng.",
         },
         {
-          question: "Ưu điểm của dao tròn xẻ trên và dưới là gì?",
+          question: "Tại sao tấm tôn sau khi cắt có các cạnh thô ráp?",
           answer:
-            "Trên các máy ghi rãnh truyền thống, việc thay một con dao tròn đặc đã mòn đòi hỏi người vận hành phải kéo toàn bộ trục nặng ra khỏi máy. Tách dao tròn được sản xuất thành hai nửa lồng vào nhau. Bạn chỉ cần bắt vít các nửa trực tiếp quanh trục trong vài phút, tiết kiệm hàng giờ ngừng hoạt động bảo trì.",
+            "Kiểm tra lưỡi cắt, tình trạng mài sắc và tấm đỡ tấm ván tại vết cắt. Cạnh bị mòn hoặc thiết lập mài không phù hợp có thể làm suy yếu hoạt động cắt của lưỡi dao mỏng. So sánh các mẫu đã cắt trước và sau khi mài, đồng thời lưu ý những thay đổi về loại giấy. Thực hiện theo các cài đặt của máy tạo sóng để mài và hỗ trợ, thay vì coi mọi cạnh thô là vấn đề cấp độ cacbua.",
+        },
+        {
+          question:
+            "Cần kiểm tra những gì khi ghép lưỡi dao với bộ phận mài tự động?",
+          answer:
+            "Kiểm tra biên dạng lưỡi và đường kính còn lại so với cách bố trí mài, cùng với tình trạng và sự thẳng hàng của các bộ phận mài. Sử dụng tài liệu máy để biết cài đặt mài sắc và giới hạn dịch vụ. Bao gồm các chi tiết của bộ mài khi yêu cầu thay thế để con dao được chỉ định là một phần của cụm cắt và mài được lắp đặt.",
+        },
+        {
+          question:
+            "Sureay có thể tái tạo một lưỡi lượn sóng với kiểu lắp đặt cụ thể không?",
+          answer:
+            "Đúng. Sureay có thể chế tạo các lưỡi dao thay thế theo bản vẽ xác định lỗ khoan, bố trí lỗ cố định, rãnh và biên dạng cắt. Tài liệu tham khảo hoặc mẫu phần gốc giúp xác định giao diện được cài đặt. Chỉ định xem lưỡi dao là rắn hay tách rời, đồng thời bao gồm các chi tiết định vị và cố định cần thiết để tái tạo kiểu lắp.",
+        },
+        {
+          question:
+            "Lưỡi ghi điểm có giống như bánh xe ghi điểm hoặc dao ghi điểm không?",
+          answer:
+            "Những bộ phận này thực hiện các hoạt động khác nhau. Các lưỡi máy xén của máy xén cắt ván theo chiều dọc, bánh xe ghi điểm tạo thành các đường gấp và dao xẻ rãnh cắt các khe nắp trong quá trình chuyển đổi hộp. Dao xẻ rãnh nam và nữ sử dụng các cấu hình và cách sắp xếp lắp đặt khác nhau. Xác định thao tác cắt khi yêu cầu thay thế để yêu cầu đạt được cấu hình sản phẩm chính xác.",
         },
       ],
-      company: [
-        {
-          question:
-            "Sureay có thể cung cấp toàn bộ gói dao cho bộ tạo sóng mới và lắp đặt FFG không?",
-          answer:
-            "Tuyệt đối. Chúng tôi là đối tác cung cấp dụng cụ toàn diện cho các nhà máy dạng hộp. Ngoài các loại dao xẻ mỏng cacbua vonfram, chúng tôi còn sản xuất các loại dao chuyển đổi hoàn chỉnh: dao xẻ rãnh, dao xẻ rãnh, dao xếp rãnh, dao ghi điểm/dao tạo nếp và dao cắt hình chữ Z.",
-        },
-        {
-          question:
-            "Bạn có duy trì kích thước cho Bobst / Martin Flexo Folder Glurs không?",
-          answer:
-            "Có, chúng tôi có cơ sở dữ liệu phong phú về các bản thiết kế OEM bao gồm các phần rạch, xẻ rãnh và ghi điểm của các máy chuyển đổi chính bao gồm Bobst, Martin, Isowa, Ward và TCY. Những con dao thay thế của bạn sẽ vừa vặn chính xác.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slotter-knives",
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
   },
   {
+    compatibleMachinesIntro:
+      "Sureay cung cấp dao thay thế cho cụm cắt sơ cấp hiện có của máy nghiền lốp, với biên dạng móc và lỗ lắp trục theo yêu cầu. Chúng tôi có thể báo giá dao lẻ hoặc cả bộ cho dây chuyền nghiền lốp nguyên chiếc và sản xuất nhiên liệu từ lốp (TDF). Hãy gửi thông số máy và bản vẽ để xác định cấu hình. Các thương hiệu máy được nêu để tham khảo khả năng tương thích của phụ tùng Sureay.",
     id: "tire-shredder-blades",
-    name: "Lưỡi máy hủy lốp",
-    fullName: "Lưỡi cắt quay 3 móng hạng nặng để tái chế lốp xe",
+    name: "Dao máy nghiền xé lốp",
+    fullName: "Dao cho máy nghiền xé lốp sơ cấp kiểu cắt quay",
+    seoTitle: "Dao cho máy nghiền xé lốp sơ cấp kiểu cắt quay",
+    seoDescription:
+      "Nguồn máy cắt A8 hoặc 42CrMo đã được sửa đổi để băm lốp chính. Khớp số móc, độ dày dao cắt và lỗ trục với máy cắt quay của bạn.",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lưỡi máy hủy lốp",
+    categoryDisplay: "Dao máy nghiền xé lốp",
     image: "/images/products/shredder-blades/3-claw-shredder-blades.webp",
+    imageDimensions: {
+      width: 3200,
+      height: 3200,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 880,
+      height: 880,
+      smallerWidths: [320, 640],
+    },
     badge: "Tiêu chuẩn OEM",
     badgeColor: "red",
     gallery: [
@@ -3582,69 +4612,38 @@ export const blades: Blade[] = [
       "/images/products/shredder-blades/3-claw-shredder-blades-01.webp",
     ],
     description:
-      'Máy quay 3 vấu cao cấp dao cắt thép được thiết kế để băm lốp sơ cấp và sản xuất TDF (Nhiên liệu có nguồn gốc từ lốp). Được sản xuất từ ​​thép công cụ Cru-Wear (PGK) và thép công cụ A8 cải tiến cấp OEM để chịu được tác động mạnh từ dây hạt. Được gia công chính xác với dung sai chính xác ± 0,05mm (0,002") để đảm bảo lốp được cắt sạch chứ không bị rách.',
-    fullDescription:
-      "Việc băm lốp sơ cấp được cho là ứng dụng tàn bạo nhất trong ngành giảm kích thước. Các lưỡi quay phải đồng thời cắt xuyên qua cao su đàn hồi đồng thời tác động liên tục vào các dây thép có độ bền kéo cao. Hợp kim của máy hủy tài liệu tiêu chuẩn sẽ sớm bị hỏng trong môi trường này, do cạnh bị bo tròn nhanh hoặc bị gãy giòn nghiêm trọng.\n\n## Luyện kim cấp lốp cao cấp\n\nChúng tôi sản xuất lốp dao máy cắt bằng cách sử dụng các loại vật liệu cao cấp chính xác đã được chứng minh trong các thiết bị OEM hàng đầu (chẳng hạn như máy hủy tài liệu Barclay và CM):\n\n**Cru-Wear (PGK):** Chất liệu cao cấp đạt tiêu chuẩn nhà máy. Nó cung cấp khối lượng vanadi và hợp kim cacbua vonfram đặc biệt cao, mang lại khả năng chống mài mòn vượt trội trong khi vẫn duy trì độ bền cực cao cần thiết để cắt các đai thép dày mà không bị sứt mẻ vi mô.\n\n**A8 đã sửa đổi:** Mang lại sự cân bằng tuyệt vời giữa hiệu suất và hiệu quả chi phí, mang lại khả năng chống va đập lớn cho các hoạt động tập trung vào việc giảm thiểu chi phí gia công dụng cụ ban đầu.\n\n## Quy tắc dung sai hai phần nghìn (0,05mm)\n\nSự khác biệt giữa máy hủy lốp hiệu quả và máy bị kẹt lốp liên tục nằm ở khoảng hở cắt. Tất cả các loại dao lốp của chúng tôi, bất kể vật liệu, đều được mài với dung sai độ dày chính xác - chính xác là hai phần nghìn inch (0,05mm).\n\nĐộ chính xác này đảm bảo rằng lốp đàn hồi và dây thép được **cắt** sạch sẽ thay vì bị **rách** và kéo căng. Hành động cắt thích hợp sẽ làm giảm đáng kể lực kéo trên trục rôto, giảm mức tiêu thụ năng lượng điện (rút amp) và ngăn dây thép lộ ra quấn quanh khối rôto.\n\n## Hình học 3 móng & Định cỡ TDF\n\nHình dạng 3 vấu (móc) tiêu chuẩn cung cấp góc cắn tối ưu để kẹp toàn bộ lốp xe khách và xe tải nhẹ, kéo mạnh vào buồng cắt. Độ dày lưỡi dao (thường là 2 inch / 50mm) quyết định trực tiếp kích thước của chip Nhiên liệu có nguồn gốc từ lốp xe (TDF), đảm bảo sản phẩm cuối cùng có chất lượng cao, nhất quán, phù hợp cho lò nung xi măng hoặc giải phóng dây điện hạ nguồn.",
+      "Máy cắt lốp thay thế cho máy cắt quay sơ cấp. Các tùy chọn A8 và 42CrMo đã được sửa đổi, với cấu hình móc và lỗ trục tùy chỉnh để vẽ.",
     link: "/products/tire-shredder-blades",
     isFeatured: true,
-    compatibleMachines: [
-      "Granutech-Saturn Systems",
-      "UNTHA",
-      "WEIMA",
-      "Eldan Recycling",
-      "Lindner",
-      "Eco Green Equipment",
-      "American Pulverizer",
-      "Shred-Tech",
-    ],
     specs: [
       {
-        label: "Material",
-        value: "Cru-Wear (PGK), Modified A8, 42CrMo",
+        label: "Vật liệu",
+        value: "Cru-Wear (PGK), A8 đã sửa đổi, 42CrMo",
       },
       {
-        label: "Machining Tol.",
-        value: "Strictly ±0.05 mm (0.002 inches)",
+        label: "Công cụ gia công.",
+        value: "Đúng ± 0,05 mm (0,002 inch)",
       },
       {
-        label: "Standard Geometry",
-        value: "3-Claw Rotary (Custom hook counts available)",
+        label: "Hình học móng vuốt",
+        value: "1, 3 hoặc 5 móng, tùy thuộc vào cấu hình được liệt kê",
       },
       {
-        label: "Hardness",
-        value: "HRC 54–58 (Optimized for Wire Impact)",
+        label: "độ cứng",
+        value: "HRC 54–58 (Tối ưu hóa cho tác động của dây)",
       },
       {
-        label: "Application",
-        value: "Whole Tires, TDF Chips, OTR Tires",
+        label: "Ứng dụng",
+        value: "Lốp nguyên chiếc, chip TDF, lốp OTR",
       },
       {
-        label: "OEM Fitment",
-        value: "Barclay, CM, SSI, Untha, Granutech-Saturn",
+        label: "Đồ đạc OEM",
+        value: "Barclay , CM , SSI , Untha , Granutech-Saturn",
       },
     ],
-    components: [
-      {
-        id: "premium-metallurgy",
-        tag: "NGUYÊN VẬT LIỆU",
-        title: "Cru-Wear (PGK) & A8 đã sửa đổi",
-        description:
-          "Sử dụng hợp kim cao cấp cấp OEM. Cru-Wear mang lại độ dẻo dai và độ bền cao nhất cho các dòng sản lượng lớn, trong khi Modified A8 mang lại sự cân bằng tốt nhất giữa chi phí và hiệu suất.",
-      },
-      {
-        id: "precise-cutting",
-        tag: "HIỆU QUẢ",
-        title: "Cắt, đừng xé",
-        description:
-          "Mặt đất chính xác đến ± 0,05mm. Điều này đảm bảo hoạt động cắt giống như cắt kéo thực sự, ngăn dây bị tuột ra, giảm mài mòn máy và giảm đáng kể mức tiêu thụ năng lượng.",
-      },
-      {
-        id: "consistent-tdf",
-        tag: "CHẤT LƯỢNG ĐẦU RA",
-        title: "Chip TDF nhất quán",
-        description:
-          "Độ dày lưỡi cắt chính xác (ví dụ: tiêu chuẩn 2 inch) kết hợp với khả năng cắt không khe hở tạo ra các chip Nhiên liệu có nguồn gốc từ lốp (TDF) đồng nhất, chất lượng cao với lượng dây lộ ra tối thiểu.",
-      },
+    relatedBladeIds: [
+      "twin-shaft-blades-recycling",
+      "multi-shaft-blades-metal",
     ],
     dimensionLabels: {
       col0: "Nền tảng OEM",
@@ -3657,157 +4656,458 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Barclay Standard",
+        itemNo: "SR002301",
+        spec: "Tiêu chuẩn Barclay",
         od: 'Φ 450 mm (17.7")',
         thickness: '50.8 mm (2.0")',
-        bore: "Hex / Splined",
-        hooks: "3 Claws",
+        bore: "Hex / Tách",
+        hooks: "3 móng vuốt",
       },
       {
-        spec: "CM Primary",
+        itemNo: "SR002302",
+        spec: "CM sơ cấp",
         od: 'Φ 500 mm (19.6")',
         thickness: '50.8 mm (2.0")',
-        bore: "Heavy Splined",
-        hooks: "3 Claws",
+        bore: "Nặng nề",
+        hooks: "3 móng vuốt",
       },
       {
+        itemNo: "SR002303",
         spec: "SSI / Untha",
         od: "Φ 400–600 mm",
         thickness: "25–75 mm",
-        bore: "Hex / Octagon",
-        hooks: "1 / 3 / 5 Claws",
+        bore: "lục giác/bát giác",
+        hooks: "1/3/5 Móng Vuốt",
       },
       {
-        spec: "OTR Shredder",
+        itemNo: "SR002304",
+        spec: "Máy hủy tài liệu OTR",
         od: "Φ 800+ mm",
         thickness: "100+ mm",
-        bore: "Heavy Keyed",
-        hooks: "1 / 3 Claws",
+        bore: "Phím nặng",
+        hooks: "1/3 móng vuốt",
       },
-    ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
     ],
     offers: {
       lowPrice: 250,
       highPrice: 2500,
     },
+    components: [
+      {
+        id: "tire-shredder-blades-advantage-1",
+        tag: "Cấu hình thép cho nguồn cấp dữ liệu lốp gia cố",
+        title: "Cấu hình thép cho nguồn cấp dữ liệu lốp gia cố",
+        description:
+          "Các tùy chọn A8 và 42CrMo được sửa đổi hỗ trợ các đơn đặt hàng thay thế cho máy cắt lốp, với vật liệu được chỉ định xung quanh thiết kế dao hiện có và các điều kiện mài mòn hoặc va đập khi sử dụng.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-2",
+        tag: "Máy cắt một, ba và năm móng",
+        title: "Máy cắt một, ba và năm móng",
+        description:
+          "Các cấu hình máy cắt lốp được liệt kê sử dụng một, ba hoặc năm càng. Sureay tạo ra cấu hình càng vuốt cần thiết và lỗ khoan hình lục giác, bát giác, có rãnh hoặc có khóa để phù hợp với vị trí thay thế trên máy hủy tài liệu chính của bạn.",
+      },
+      {
+        id: "tire-shredder-blades-advantage-3",
+        tag: "Máy cắt đơn và bộ trục",
+        title: "Máy cắt đơn và bộ trục",
+        description:
+          "Có thể báo giá cùng nhau các cấu hình và bộ dao cắt riêng lẻ bao gồm nhiều vị trí trục, với các dao cắt hoàn chỉnh và hạt dao có thể thay thế được xác định riêng cho kế hoạch thay đổi.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Tại sao tôi nên nâng cấp lên Cru-Wear (PGK) từ thép công cụ D2 tiêu chuẩn?",
+            "Công đoạn tái chế nào sử dụng những chiếc dao máy cắt lốp này?",
           answer:
-            "Lốp xe chứa các dây hạt có độ bền kéo cao hoạt động như tải trọng tác động cực lớn. Tiêu chuẩn D2 có khả năng chịu mài mòn cao nhưng giòn; cạnh sẽ sứt mẻ khi chạm vào dây hạt. Cru-Wear (PGK) được thiết kế với cấu trúc cacbua khác, làm cho nó cứng hơn và bền hơn đáng kể so với D2, hấp thụ lực tác động mà không bị gãy trong khi vẫn duy trì khả năng giữ cạnh tuyệt vời.",
+            "dao máy cắt lốp này, còn được gọi là dao cắt lốp, là loại dao cắt gắn trục dành cho thiết bị cắt quay sơ cấp. Máy mài và máy tạo hạt cao su ở hạ lưu sử dụng cách sắp xếp cắt riêng của chúng. Trước tiên, hãy chỉ định máy và giai đoạn, sau đó xác định xem vật thay thế cần thiết là một máy cắt hoàn chỉnh hay một miếng đệm được lắp vào thân máy hiện có.",
         },
         {
           question:
-            "Dung sai của lưỡi dao ảnh hưởng thế nào đến mức tiêu thụ năng lượng của máy hủy tài liệu?",
+            "Độ dày của dao cắt có quyết định kích thước chip lốp cuối cùng không?",
           answer:
-            'Nếu dung sai độ dày của các lưỡi quay thay đổi hơn 0,05mm (0,002"), thì sẽ tạo ra một khe hở giữa các dao quay ngược chiều. Thay vì cắt lốp đàn hồi, máy sẽ cố gắng kéo căng và xé nó. Hành động kéo này đòi hỏi lượng mô-men xoắn lớn, làm tăng lực hút amp của động cơ và lãng phí năng lượng. Dung sai chính xác đảm bảo đường cắt sạch, ma sát thấp.',
+            "Không. Độ dày của dao cắt ảnh hưởng đến một chiều của vết cắt sơ cấp. Hình dạng móc, cách sắp xếp dao cắt và bất kỳ giai đoạn định cỡ nào sau đó cũng ảnh hưởng đến kích thước phoi lốp cuối cùng. Giữ độ dày dao cắt hiện có và kích thước chip TDF mục tiêu làm yêu cầu riêng biệt.",
+        },
+        {
+          question: "Cốt thép ảnh hưởng thế nào đến việc lựa chọn máy cắt?",
+          answer:
+            "Dây thép và các phần hạt bổ sung tải trọng cục bộ vào quá trình cắt thân cao su. So sánh vật liệu dao ban đầu, ổ đỡ móc và kiểu mòn hiện tại khi đánh giá thay thế. Độ mòn dần dần và móc bị sứt mẻ đòi hỏi sự cân bằng khác nhau về khả năng chống mài mòn và độ bền, vì vậy hãy giữ mô tả nguồn cấp dữ liệu cụ thể cho lốp đang được xử lý.",
         },
         {
           question:
-            "Thiết kế 3 vấu mang lại lợi ích như thế nào cho toàn bộ quá trình xử lý lốp?",
+            "Điều gì có thể gây ra tình trạng mòn nhanh hoặc sứt mẻ móc trên máy cắt lốp?",
           answer:
-            "Hình dạng 3 móng cung cấp góc cắn và khoảng cách lý tưởng. Nếu có quá nhiều vấu (ví dụ: 8 hoặc 10), lốp sẽ nảy lên trên rôto vì các khe hở của móc quá nhỏ để bám vào lớp cao su dày. 3 càng tạo ra một lỗ lớn móc vào khoang lốp và kéo toàn bộ lốp xuống buồng cắt.",
+            "Tiếp xúc mài mòn có thể làm mòn các mặt cắt dần dần, trong khi cốt thép hoặc vật liệu lạ có thể tạo ra tải trọng tập trung ở các móc. Tình trạng ngăn xếp cũng có vấn đề khi hư hỏng xuất hiện ở các vị trí cụ thể. Ghi lại các mặt bị ảnh hưởng và so sánh chúng với các dao cắt liền kề trước khi quyết định xem việc thay thế có cần hiệu chỉnh vật liệu, biên dạng hoặc lắp ráp khác hay không.",
+        },
+        {
+          question:
+            "Có thể thay đổi số lượng móc hoặc hình dạng lỗ khoan trên lưỡi lốp tùy chỉnh không?",
+          answer:
+            "Đúng. Sureay có thể sửa đổi số lượng móc hoặc lỗ khoan để vẽ. Hiển thị cách đặt dao cắt đã sửa lại trên trục và cách các móc của nó thẳng hàng với các dao cắt đối diện. Tham chiếu sửa đổi phân biệt sự thay đổi này với sự thay thế tương tự.",
+        },
+        {
+          question:
+            "Có thể thay thế một dao cắt bị mòn mà không cần đặt mua một bộ hoàn chỉnh không?",
+          answer:
+            "Đúng. Một máy cắt duy nhất có thể được cung cấp khi đã biết các bộ phận được giữ lại và hình học giao tiếp. Kiểm tra các dao cắt liền kề, chiều rộng miếng đệm và hướng lắp đặt trước khi xác định sự thay thế đó. Để thay đổi hoàn toàn, hãy liệt kê từng vị trí riêng biệt để sự khác biệt giữa dao cắt, hạt dao hoàn chỉnh và các bộ phận dành riêng cho trục vẫn rõ ràng theo thứ tự.",
+        },
+        {
+          question: "Bạn cần báo giá thay dao băm lốp thay thế những gì?",
+          answer:
+            "Gửi mẫu máy hủy tài liệu chính, bản vẽ máy cắt hoặc số bộ phận, cấp liệu lốp và số lượng. Chỉ định các dao cắt hoàn chỉnh hoặc các hạt dao có thể thay thế được. Đối với mỗi vị trí, bao gồm đường kính ngoài, độ dày, dạng móc và lỗ khoan, cùng với việc bố trí miếng đệm nếu đơn hàng bao gồm một bộ trục.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm kiểu máy hủy chính, cấp liệu lốp, kích thước chip mục tiêu cũng như kích thước dao cắt và miếng đệm.",
+    compatibleMachines: ["Barclay", "CM", "SSI", "Untha", "Granutech-Saturn"],
+    detailLayout: {
+      sizeRange: "Ø400–800+ mm",
+      heroSpecs: [
         {
-          question:
-            "Bạn có thể cung cấp miếng đệm và đầu ngón tay làm sạch (tấm cạp) để phù hợp với lưỡi dao không?",
-          answer:
-            "Đúng. Một rôto băm lốp hoàn chỉnh cần có các lưỡi dao, miếng đệm và ngón tay làm sạch phù hợp. Chúng tôi sản xuất bộ hoàn chỉnh với cùng dung sai nghiêm ngặt để đảm bảo lắp ráp không có khe hở trên toàn bộ chiều dài của trục rôto.",
+          label: "Vật liệu",
+          value: "Cru-Wear (PGK), A8 đã sửa đổi, 42CrMo",
         },
         {
-          question:
-            "Bạn có bản thiết kế cho máy hủy tài liệu Barclay hoặc CM không?",
-          answer:
-            "Chúng tôi duy trì cơ sở dữ liệu toàn diện về bản vẽ lưỡi OEM cho các nền tảng băm lốp chính. Việc cung cấp cho chúng tôi mẫu máy của bạn hoặc bản vẽ xác nhận cơ bản sẽ cho phép chúng tôi sản xuất các thiết bị thay thế chính xác.",
+          label: "Ứng dụng",
+          value: "Lốp nguyên chiếc, chip TDF, lốp OTR",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Ø400–800+ mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "Cru-Wear (PGK), A8 đã sửa đổi, 42CrMo",
+        },
+        {
+          label: "Công cụ gia công.",
+          value: "Đúng ± 0,05 mm (0,002 inch)",
+        },
+        {
+          label: "Hình học móng vuốt",
+          value: "1, 3 hoặc 5 móng, tùy thuộc vào cấu hình được liệt kê",
+        },
+        {
+          label: "độ cứng",
+          value: "HRC 54–58 (Tối ưu hóa cho tác động của dây)",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Lốp nguyên chiếc, chip TDF, lốp OTR",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Bao gồm kiểu máy hủy chính, cấp liệu lốp, kích thước chip mục tiêu cũng như kích thước dao cắt và miếng đệm.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
+    compatibleMachinesIntro:
+      "Nhận dao xén vải không dệt thay thế có cấu hình tùy chỉnh, kích thước lắp đặt và tùy chọn lớp phủ cho dây chuyền chuyển đổi của bạn. Chia sẻ bản vẽ hoặc mẫu và ứng dụng web của bạn với Sureay để nhận báo giá về cấu hình lưỡi cắt và tài liệu bạn cần.",
     id: "nonwoven-slitter-knives",
-    name: "Dao xén vải không dệt",
-    fullName:
-      "Dao xén tròn M2 HSS dành cho vải không dệt Spunbond, Meltblown & SMS",
+    name: "Dao xẻ dọc vải không dệt",
+    fullName: "Dao xẻ dọc vải không dệt spunbond, meltblown và SMS",
+    seoTitle: "Dao xén vải không dệt | PP Spunbond & SMS",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Dao rạch",
+    categoryDisplay: "Dao xẻ dọc",
     image:
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Lớp y tế",
     badgeColor: "teal",
     gallery: [
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-01.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-00-white.webp",
       "/images/products/rotary-slitter-knives/rotary-slitter-knives-08.webp",
+      "/images/products/rotary-slitter-knives/nonwoven-slitter-knives-02.webp",
     ],
+    galleryAlts: [
+      "Lưỡi cắt vải không dệt tròn và vòng đe đen",
+      "Cận cảnh một góc xiên của lưỡi máy xén tròn",
+      "Lưỡi cắt tròn và vòng chia nhìn từ trên xuống",
+    ],
+    detailLayout: {
+      heroTitle: "Dao xẻ dọc vải không dệt spunbond, meltblown và SMS",
+      sizeRange: "OD 60–300 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "M2 HSS , D2 , hợp kim cacbua vonfram , 52100",
+        },
+        {
+          label: "Phù hợp",
+          value:
+            "Giá đỡ cắt cắt Pneumatic (loại 80/90/100/110) & máy cuộn cuộn cuộn lên đến",
+          emphasis: "800 m/min",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "OD 60–300 mm",
+        },
+        {
+          label: "Nguyên vật liệu",
+          value: "M2 HSS , D2 , hợp kim cacbua vonfram , 52100",
+        },
+        {
+          label: "độ cứng",
+          value: "M2 : 62–64 HRC ; D2 : 60–62 HRC ; cacbua: 89–92 HRA",
+        },
+        {
+          label: "Sức chịu đựng",
+          value: "Độ dày ± 0,002 mm",
+        },
+        {
+          label: "Giao diện",
+          value: "Lỗ khoan H7 , khóa vít",
+        },
+        {
+          label: "Hình học",
+          value: "Góc xiên 25°–45°",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "Lớp phủ dẫn điện PTFE, TiN, DLC hoặc ESD",
+        },
+        {
+          label: "Góc cào",
+          value: "Góc nghiêng dương 15°–20°",
+        },
+        {
+          label: "Hoàn thiện bề mặt",
+          value: "Ra ≤0.4 µm",
+        },
+        {
+          label: "Ứng dụng",
+          value:
+            "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Vải địa kỹ thuật",
+        },
+      ],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "top",
+          tabLabel: "Lưỡi cắt hàng đầu",
+          title: "Lưỡi cắt dọc hàng đầu (Cắt cắt – Đĩa & phẳng)",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Hồ sơ",
+            "Tùy chọn vật liệu",
+            "Giá đỡ vừa vặn",
+          ],
+          rows: [
+            [
+              "SR001101",
+              "76.2 × 17.0 × 1.00 mm",
+              "món ăn",
+              "M2 HSS / D2",
+              "Loại 80",
+            ],
+            [
+              "SR001102",
+              "90.0 × 22.0 × 1.20 mm",
+              "món ăn",
+              "M2 HSS / cacbua",
+              "Loại 90",
+            ],
+            [
+              "SR001103",
+              "100.0 × 40.0 × 1.20 mm",
+              "món ăn",
+              "M2 HSS / ASP-23",
+              "Dienes / Cotta 100",
+            ],
+            [
+              "SR001104",
+              "105.0 × 40.0 × 1.50 mm",
+              "món ăn",
+              "M2 HSS / D2",
+              "Loại 105/110",
+            ],
+            [
+              "SR001105",
+              "130.0 × 60.0 × 1.50 mm",
+              "món ăn",
+              "M2 HSS / D2",
+              "Dienes PSG",
+            ],
+            [
+              "SR001106",
+              "150.0 × 70.0 × 2.00 mm",
+              "Đĩa / phẳng",
+              "D2 / M2 HSS",
+              "A.Celli",
+            ],
+            [
+              "SR001107",
+              "200.0 × 80.0 × 3.00 mm",
+              "Phẳng",
+              "D2 / Cr12MoV",
+              "—",
+            ],
+          ],
+        },
+        {
+          id: "bottom",
+          tabLabel: "Vòng đáy & Máy cắt nghiền",
+          title: "Vòng xẻ đáy & Máy cắt nghiền",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Loại Dao",
+            "Tùy chọn vật liệu",
+            "Đặc điểm kỹ thuật chính",
+          ],
+          rows: [
+            [
+              "SR001108",
+              "80.0 × 50.0 × 15.0 mm",
+              "Vòng đe dưới",
+              "D2 / 52100",
+              "Lỗ khoan H7 , vít đặt",
+            ],
+            [
+              "SR001109",
+              "100.0 × 60.0 × 20.0 mm",
+              "Nhẫn hai cạnh",
+              "D2 / M2 HSS",
+              "Trục không khí / rắn",
+            ],
+            [
+              "SR001110",
+              "126.0 × 76.2 × 50.0 mm",
+              "Tay áo nhiều rãnh",
+              "D2 / Cr12MoV",
+              "Chiều rộng rãnh ± 0,01 mm",
+            ],
+            [
+              "SR001111",
+              "76.2 × 19.05 × 4.76 mm",
+              "Máy cắt điểm / nghiền nát",
+              "52100 / M2 HSS",
+              "Bán kính đầu R0.05 – R0.1 mm",
+            ],
+            [
+              "SR001112",
+              "100.0 × 25.4 × 6.00 mm",
+              "Máy cắt nghiền hạng nặng",
+              "52100 / D2",
+              "Dành cho nỉ dày & đánh bóng",
+            ],
+          ],
+        },
+        {
+          id: "additional-nonwoven-knives",
+          tabLabel: "Kích thước dao không dệt bổ sung",
+          title: "Kích thước dao không dệt bổ sung",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Loại Dao"],
+          rows: [
+            ["SR001834", "75 × 32 × 1.0 mm", "Dao cắt vải không dệt"],
+            ["SR001835", "100 × 40 × 1.0 mm", "Dao cắt vải không dệt"],
+            ["SR001836", "100 × 50 × 1.5 mm", "Dao cắt vải không dệt"],
+            ["SR001837", "120 × 50 × 1.0 mm", "Dao cắt vải không dệt"],
+            ["SR001838", "120 × 60 × 1.5 mm", "Dao cắt vải không dệt"],
+            ["SR001839", "150 × 75 × 2.0 mm", "Dao cắt vải không dệt"],
+          ],
+        },
+      ],
+    },
     description:
-      "Dao xén tròn M2 HSS và D2 ​​dùng cho vải không dệt Spunbond PP, Meltblown, SMS và SMMS. Hình học góc nghiêng chuyên dụng giúp ngăn chặn sự xơ vải và hình thành rãnh trên các vật liệu có cấu trúc lỏng lẻo. Được sử dụng trong các dây chuyền vệ sinh, y tế, lọc và vải địa kỹ thuật.",
+      "Dao cắt thay thế cho vải không dệt spunbond, vải tan chảy và vải không dệt SMS. Tùy chọn M2 HSS , D2 hoặc cacbua, với cấu hình tùy chỉnh và lớp phủ dành riêng cho ứng dụng.",
     fullDescription:
       "Việc rạch vải không dệt đưa ra một thách thức khác biệt cơ bản so với việc chuyển đổi phim hoặc giấy: vật liệu không có hướng thớ, độ bền kéo thấp theo hướng máy chéo và cấu trúc sợi lỏng lẻo có thể bị sờn, biến dạng hoặc vón cục ở mép khe nếu hình dạng dao không phù hợp với cấu trúc vải và độ căng của đường.\n\nDao xẻ vải không dệt Sureay được sản xuất từ ​​thép tốc độ cao M2 với hình học góc cào chuyên dụng được phát triển đặc biệt cho các vật liệu spunbond, tan chảy và vướng víu có cấu trúc lỏng lẻo. Góc cào dương được tối ưu hóa sẽ cắt xuyên qua các bó sợi một cách sạch sẽ thay vì đẩy chúng sang một bên, loại bỏ các cạnh bị sờn và sợi xơ lỏng lẻo gây ra tình trạng loại bỏ chất lượng tiếp theo trong tã trẻ em, vệ sinh phụ nữ và dây chuyền chuyển đổi khăn trải giường phẫu thuật.\n\n##Các Loại Vải Không Dệt\n\n**Spunbond PP (cấu trúc S, SS, SSS):** Chất nền không dệt phổ biến nhất. Có sẵn ở 8–120 GSM. Tiêu chuẩn M2 HSS ở độ hoàn thiện bề mặt Ra ≤ 0,4μm, góc nghiêng dương 15°–20°. Được sử dụng trong chuyển đổi sản phẩm thấm hút vệ sinh, rạch cuộn vải địa kỹ thuật và màng phủ nông nghiệp.\n\n**Meltblown (Lớp M):** Lớp sợi siêu mịn (đường kính 1–5μm) được dùng làm lõi lọc trong khẩu trang N95/FFP2 và khẩu trang phẫu thuật. Cực kỳ mỏng manh và nhạy cảm với tải trọng kéo ngang. Yêu cầu giảm tốc độ rạch (60–100 m/phút), thân dao có khối lượng thấp để giảm thiểu độ rung và lớp phủ phóng tĩnh điện (ESD) để ngăn chặn lực hút sợi vào mặt lưỡi dao.\n\n**Vải y tế SMS / SMMS:** Hỗn hợp Spunbond-Meltblown-Spunbond được sử dụng trong áo choàng phẫu thuật, màn che và màng bọc khử trùng. SMS cấp y tế yêu cầu thiết bị đã được xác thực - chúng tôi cung cấp chứng chỉ vật liệu và báo cáo kích thước có thể truy nguyên theo số lô của bạn để tuân thủ quy định.\n\n**Vải không dệt Hydroentangled / Wetlaid:** Vải có trọng lượng cơ bản cao hơn (50–200 GSM) với cấu trúc mạch lạc hơn. Gần giống với xốp hoặc giấy về đặc tính cắt - dao thép tiêu chuẩn D2 hoặc 52100 hoạt động tốt trên các chất nền này.\n\n## Tùy chọn lớp phủ ESD\n\nĐối với việc rạch phương tiện lọc tan chảy và quay điện, có sẵn phương pháp xử lý bề mặt dẫn điện ESD (phóng tĩnh điện) để ngăn ngừa sự tích tụ điện tích tĩnh trên mặt lưỡi dao. Sự tích tụ tĩnh điện làm cho các sợi nhẹ (đặc biệt là PP tan chảy ở tốc độ <15 GSM) bám vào lưỡi dao và chuyển thành chất bẩn sang mép cuộn bị xẻ rãnh.",
     link: "/products/nonwoven-slitter-knives",
     isFeatured: false,
-    compatibleMachines: [
-      "Parkinson Spencer Rees",
-      "Atlas Converting",
-      "Euromac",
-      "ACCO Brands",
-      "Erhardt+Leimer",
-    ],
+    compatibleMachines: ["Tidland", "Pneumatic", "Dienes", "Mario Cotta"],
     specs: [
       {
-        label: "Material",
+        label: "Kích cỡ",
+        value: "OD 60–300 mm",
+      },
+      {
+        label: "Nguyên vật liệu",
+        value: "M2 HSS , D2 , hợp kim cacbua vonfram , 52100",
+      },
+      {
+        label: "độ cứng",
+        value: "M2 : 62–64 HRC ; D2 : 60–62 HRC ; cacbua: 89–92 HRA",
+      },
+      {
+        label: "Sức chịu đựng",
+        value: "Độ dày ± 0,002 mm",
+      },
+      {
+        label: "Giao diện",
+        value: "Lỗ khoan H7 , khóa vít",
+      },
+      {
+        label: "Hình học",
+        value: "Góc xiên 25°–45°",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value: "Lớp phủ dẫn điện PTFE, TiN, DLC hoặc ESD",
+      },
+      {
+        label: "Góc cào",
+        value: "Góc nghiêng dương 15°–20°",
+      },
+      {
+        label: "Hoàn thiện bề mặt",
+        value: "Ra ≤0.4 µm",
+      },
+      {
+        label: "Ứng dụng",
         value:
-          "M2 HSS (standard) / D2 (heavy nonwoven) / 52100 (hydroentangled)",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 62–64 (M2) | HRC 60–62 (D2)",
-      },
-      {
-        label: "Rake Angle",
-        value: "15°–20° positive rake (nonwoven-optimised geometry)",
-      },
-      {
-        label: "Surface Finish",
-        value: "Ra ≤ 0.4μm — reduces fibre adhesion and slub formation",
-      },
-      {
-        label: "Options",
-        value: "ESD conductive coating (meltblown / filtration media)",
-      },
-      {
-        label: "Application",
-        value: "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile",
+          "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Vải địa kỹ thuật",
       },
     ],
     components: [
       {
         id: "rake-geometry",
         tag: "THIẾT KẾ CẠNH",
-        title: "Góc cào được tối ưu hóa bằng vải không dệt",
+        title: "Tùy chọn vật liệu để cắt vải không dệt",
         description:
-          "Hình dạng dao rạch tiêu chuẩn được thiết kế cho giấy và màng nhựa sử dụng góc cào dương hoặc trung tính 5°–10°. Đối với vải không dệt có cấu trúc lỏng lẻo, hình học này đẩy các sợi theo chiều ngang trước khi bị cắt, khiến cho mép bị sờn được coi là khiếm khuyết về chất lượng khi kiểm tra sản phẩm vệ sinh. Cào cào dương 15°–20° của chúng tôi cắt xuyên qua các bó sợi theo một hành động lũy ​​tiến duy nhất, tạo ra cạnh khe sạch, khít ở tốc độ dây lên tới 400 m/phút.",
+          "Các tùy chọn M2 HSS , D2 , thép chịu lực và cacbua hỗ trợ các đơn đặt hàng thay thế cho các màng vải không dệt khác nhau. Chỉ định vật liệu xung quanh cách sắp xếp dao hiện tại của bạn và độ mòn của cạnh được quan sát.",
       },
       {
         id: "esd-coating",
         tag: "XỬ LÝ BỀ ​​MẶT",
-        title: "Lớp phủ dẫn điện ESD",
+        title: "Cấu hình cạnh được xác định và xử lý bề mặt tùy chọn",
         description:
-          "Điện tích tĩnh điện được tạo ra khi vải không dệt PP nhẹ chạy trên bề mặt kim loại ở tốc độ cao. Trên các lớp tan chảy (<15 GSM), điện tích này làm cho các sợi bám vào mặt lưỡi dao và chuyển thành chất bẩn sang mép cuộn được xẻ lại. Lớp phủ dẫn điện ESD của chúng tôi tiêu tán điện tích từ mặt lưỡi cắt liên tục, loại bỏ lực hút sợi mà không yêu cầu giảm tốc độ xử lý.",
+          "Cấu hình lưỡi cắt và lớp phủ dẫn điện PTFE, TiN, DLC hoặc ESD tùy chọn có thể được chỉ định riêng, cho phép đơn hàng của bạn phân biệt hình dạng cắt cần thiết với cách xử lý bề mặt đã chọn.",
       },
       {
         id: "medical-traceability",
         tag: "SỰ TUÂN THỦ",
-        title: "Truy xuất nguồn gốc lô y tế",
+        title: "Giao diện tùy chỉnh cho người giữ dao hiện có",
         description:
-          "Để chuyển đổi dây chuyền cung cấp cho các nhà sản xuất khăn choàng phẫu thuật, áo choàng và màng bọc khử trùng, chúng tôi cung cấp khả năng truy nguyên lô đầy đủ: chứng chỉ nhà máy thép M2, hồ sơ kiểm tra độ cứng và báo cáo CMM kích thước được tham chiếu đến số lô đơn đặt hàng của bạn. Tài liệu được định dạng để đưa vào hồ sơ năng lực nhà cung cấp của bạn.",
+          "Các lỗ khoan, kích thước lắp đặt và biên dạng cắt tùy chỉnh cho phép bạn tìm nguồn dao thay thế cho đầu cặp hiện có từ bản vẽ hoặc mẫu, bao gồm cả cách lắp trục và bố trí khóa theo yêu cầu.",
       },
     ],
     dimensionLabels: {
@@ -3852,6 +5152,7 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "rotary-slitter-knives",
       "lithium-battery-slitting-knives",
+      "tungsten-carbide-slitter-knives",
     ],
     offers: {
       lowPrice: 20,
@@ -3861,622 +5162,604 @@ export const blades: Blade[] = [
       technical: [
         {
           question:
-            "Tôi nên chỉ định góc nghiêng nào cho polypropylene spunbond ở tốc độ 200 m/phút?",
+            "Con dao thay thế nào phù hợp với giá đỡ rạch vải không dệt của tôi?",
           answer:
-            "Đối với PP spunbond ở tốc độ 200 m/phút với trọng lượng cơ bản 15–80 GSM, chỉ định độ nghiêng dương 15° trên góc xiên cắt. Hình dạng này cắt các sợi polypropylene một cách sạch sẽ tại điểm tiếp xúc mà không bị dịch chuyển về phía bên gây ra sờn. Đối với trọng lượng cơ bản nặng hơn (80–150 GSM SSS hoặc SMMS), góc nghiêng dương 20° với chiều rộng góc xiên rộng hơn một chút mang lại độ ổn định tốt hơn ở tốc độ đường dây giảm (150 m/phút).",
+            "Xác định xem trạm sử dụng cắt cắt hay cắt nghiền, sau đó chỉ định kích thước đầu cặp, bộ phận tiếp nối và dao. Bao gồm việc xây dựng web và trọng lượng cơ sở. Dao cắt hoạt động với lưỡi cắt ghép đôi; máy cắt nghiền ép vào bề mặt đỡ. Để cắt chéo các cuộn đã quấn, xem [lưỡi cưa cắt cuộn](/products/nonwoven-log-saw-blades) .",
         },
         {
           question:
-            "Việc rạch tan chảy của tôi tạo ra sự chuyển sợi có thể nhìn thấy được trên mặt lưỡi dao. Nguyên nhân là gì?",
+            "Nên chọn vật liệu làm dao như thế nào khi các cạnh không dệt bị sờn hoặc độ mòn tăng lên?",
           answer:
-            "Sự truyền sợi trên vải dệt tan chảy (đặc biệt là <10 lớp GSM) là do sự tích tụ điện tích trên mặt lưỡi dao chứ không phải hình dạng cạnh. Sợi PP tan chảy có đường kính 1–5μm cực kỳ dễ bị ảnh hưởng bởi lực hút tĩnh điện. Chỉ định tùy chọn lớp phủ dẫn điện ESD trong đơn đặt hàng tiếp theo của bạn và đảm bảo khung máy xén được nối đất đúng cách. Điều này thường giúp loại bỏ sự nhiễm bẩn có thể nhìn thấy được ở mặt lưỡi dao trong một ca sản xuất.",
+            "So sánh tình trạng của cạnh được sử dụng với cấu trúc bản bụng và độ ổn định của cặp cắt. Sự hao mòn và sứt mẻ dần dần đòi hỏi phải xem xét các vật liệu khác nhau. Ghi lại vật liệu làm dao hiện tại và các điều kiện sản xuất khi thảo luận về việc thay thế, nhờ đó, sự thay đổi vật liệu có thể được đánh giá cùng với hình dạng hiện có và cách bố trí giá đỡ.",
         },
-      ],
-      company: [
         {
           question:
-            "Sureay có thể cung cấp giấy chứng nhận tuân thủ cho dao xẻ vải không dệt để đánh giá nhà cung cấp thiết bị y tế của chúng tôi không?",
+            "Điều gì có thể gây ra hiện tượng sờn hoặc lỏng sợi trong quá trình rạch vải không dệt?",
           answer:
-            "Đúng. Chúng tôi cấp Giấy chứng nhận Tuân thủ (CoC) cho mỗi lô tham chiếu số đơn đặt hàng, loại thép (M2 AISI M2 / DIN 1.3343), phạm vi độ cứng (HRC 62–64) và kết quả xác minh kích thước. Để có đủ trình độ chuyên môn của nhà cung cấp thiết bị y tế, chúng tôi cũng có thể cung cấp chứng chỉ nhà máy thép và hồ sơ lô xử lý nhiệt theo yêu cầu.",
+            "Mòn mép, hình dạng không phù hợp, giá đỡ không ổn định và cài đặt cắt đều có thể góp phần làm cho sợi bị lỏng. Kiểm tra lưỡi cắt và cả hai bộ phận làm việc trong điều kiện sản xuất bình thường. Việc xây dựng web quan trọng cùng với tốc độ và trọng lượng cơ bản, vì vậy hãy so sánh các chi tiết này trước khi thay đổi cấu hình lưỡi cắt hoặc xử lý một góc nghiêng phù hợp với mọi loại vải không dệt.",
+        },
+        {
+          question:
+            "Sự tích tụ chất xơ có luôn cần một lớp phủ chống tĩnh điện không?",
+          answer:
+            "Không. Phải kiểm tra cặn, tình trạng lưỡi cắt, xử lý màng và thiết lập cắt trước khi cho rằng sự tích tụ sợi là do tĩnh điện. Lớp phủ dẫn điện giải quyết các vấn đề khác như cạnh bị hư hỏng hoặc giá đỡ cắt không ổn định. Mô tả sự tích tụ và cấu hình dao hiện tại khi thảo luận về cách xử lý bề mặt để lựa chọn lớp phủ giải quyết được tình trạng quan sát được.",
+        },
+        {
+          question:
+            "Cấu hình và lớp phủ dao không dệt tùy chỉnh nên được chỉ định như thế nào?",
+          answer:
+            "Gửi bản vẽ hoặc mẫu xác định lỗ khoan, kích thước lắp đặt và biên dạng cắt. Chỉ định vật liệu lưỡi cắt và lớp phủ riêng biệt, cùng với kết cấu vải không dệt và trạm cắt dự kiến. Giữ hình dạng và cách xử lý bề mặt khác biệt giúp dễ dàng so sánh việc thay thế với con dao hiện có và xác định chính xác những thay đổi theo thứ tự.",
+        },
+        {
+          question:
+            "Những yêu cầu về vật liệu và kích thước nào quan trọng đối với dao chuyển đổi vệ sinh?",
+          answer:
+            "Xác định việc nhận dạng vật liệu cần thiết, độ cứng và kiểm tra kích thước trong thông số kỹ thuật mua hàng. Bao gồm các kích thước liên quan đến đầu cặp và bộ phận ghép nối, đồng thời thống nhất mọi yêu cầu về tài liệu trước khi đặt hàng. Sau đó, các tài liệu tham khảo về lô và đơn đặt hàng có thể kết nối cấu hình dao với thông tin kiểm tra được yêu cầu và hỗ trợ quy trình đánh giá nhà cung cấp của riêng bạn.",
+        },
+        {
+          question: "Khi nào nên mài hoặc thay thế dao cắt vải không dệt?",
+          answer:
+            "Sự sờn hoặc bám bụi dai dẳng dọc theo cạnh bị mòn là lý do để đánh giá độ sắc nét sau khi kiểm tra thiết lập cắt. Việc mài lại chỉ phù hợp khi có thể khôi phục được biên dạng yêu cầu và kích thước làm việc. Ở các trạm cắt, giữ lại phần chồng lên nhau đã chỉ định bằng dao phía dưới; đánh giá hồ sơ người yêu dựa trên bản vẽ của chính họ. Thay dao khi hư hỏng hoặc kích thước còn lại cản trở cấu hình cắt có thể sử dụng được.",
         },
       ],
+      company: [],
     },
   },
   {
     id: "bottom-grooved-anvil-knives",
-    name: "Dao đe có rãnh đáy",
-    fullName:
-      "Dao đe có rãnh đáy để rạch cắt — Chuyển đổi màng, giấy và lá kim loại",
+    name: "Dao đế dưới có rãnh",
+    fullName: "Dao đe dưới có rãnh cho công đoạn xẻ dọc kiểu cắt kéo",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Dao rạch",
-    image:
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-    badge: "Cặp đôi phù hợp OEM",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-01.webp",
-      "/images/products/rotary-slitter-knives/bottom-grooved-slitter-knives-02.webp",
-    ],
+    categoryDisplay: "Dao đế dưới có rãnh",
+    image: "/images/products/slitter-detail/bottom-grooved-anvil-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Dao đe có rãnh được mài chính xác ở đáy để rạch phim, giấy, giấy bạc và băng keo. Phù hợp với các hệ thống đầu dao hàng đầu Tidland, Kampf, Atlas, Goebel & BHS. Biên dạng nhiều rãnh bằng D2, M2 HSS & cacbit nguyên khối. Được cung cấp dưới dạng cặp cắt đã được xác minh hoặc dưới dạng vật thay thế đe đáy độc lập.",
-    fullDescription:
-      "Trong rạch cắt, con dao đe có rãnh phía dưới là nửa dưới cố định của cặp kéo - tuy nhiên nó thường không được xác định rõ. Khi hình dạng rãnh đe không khớp với góc đĩa lưỡi trên cùng hoặc khi dung sai lỗ đe lệch khỏi thiết kế đầu cặp dao, kết quả là độ hở cắt không được kiểm soát, vệt mép và đồng thời mài mòn sớm trên cả hai dao.\n\nDao đe có rãnh đáy Sureay được sản xuất với cùng dung sai độ dày ± 0,002 mm và 0,02 mm T.I.R. đặc điểm kỹ thuật hết như dao cắt hàng đầu của chúng tôi. Mỗi chiếc đe đều được mài theo cấu hình rãnh của nền tảng OEM của bạn — cho dù đó là rãnh đơn Tidland, rãnh đôi Kampf hay đe thân rộng Goebel / BHS — và được xác minh dựa trên lưỡi đe trên cùng trước khi vận chuyển.\n\n## Tại sao dao đe đáy cần sự chú ý của từng cá nhân\n\n**Hồ sơ rãnh xác định khe hở:** Chiều rộng và chiều sâu rãnh trong dao đe trực tiếp kiểm soát khe hở làm việc giữa cặp dao trên và dưới. Rãnh bị mòn hoặc được định hình không chính xác sẽ làm tăng độ hở hiệu quả, tạo ra mép khe rách ngay cả khi lưỡi dao trên cùng còn mới. Chúng tôi mài định hình mọi rãnh đe theo thông số kỹ thuật OEM của bạn (chiều rộng rãnh ±0,01 mm) để khôi phục khoảng trống do nhà máy thiết kế.\n\n**Tốc độ mài mòn khác nhau, chu kỳ thay thế khác nhau:** Dao đe đáy hoạt động dưới tải trọng nén thay vì tải trọng cắt chiếm ưu thế ở lưỡi trên. Điều này có nghĩa là đe thường bền hơn lưỡi trên theo hệ số 3–5× - nhưng khi nó bị mòn, mặt rãnh sẽ tròn dần, gây ra sự suy giảm dần về chất lượng cắt và rất dễ bị bỏ sót cho đến khi tỷ lệ loại bỏ tăng lên. Đặt hàng đe thay thế độc lập với lưỡi trên sẽ tránh được việc thải bỏ lưỡi trên không cần thiết.\n\n**Độ phẳng của lỗ và mặt là rất quan trọng:** Dao đe đặt ở trục dưới và phải chạy đúng. Độ lệch lỗ khoan 0,02 mm gây ra hiện tượng dao động của lưỡi dao, dẫn trực tiếp đến sự thay đổi chiều rộng khe trên cụm đầu cặp dao nhiều dao. Tất cả các lỗ đe Sureay đều được mài hoàn thiện theo dung sai H6 và được ghép mặt với độ song song ≤0,003 mm.\n\n## Lĩnh vực ứng dụng\n\n**Rạch màng & bao bì linh hoạt:** BOPP, BOPET, CPP, PE căng màng, ống co. Đe HSS tiêu chuẩn D2 hoặc M2 có rãnh đơn hoặc rãnh đôi. TiN PVD tùy chọn trên mặt rãnh giúp kéo dài tuổi thọ tiếp xúc trên dây chuyền màng tốc độ cao chạy 400–600 m/phút.\n\n**Chuyển đổi giấy & bìa:** Khăn giấy, giấy kraft, giấy tráng. Để cắt bằng dao (dao chống cuộn đe), đe được sản xuất với hình học nhiều rãnh giúp nén và bẻ gãy các sợi giấy mà không bị rách. Thép D2 hoặc 52100, HRC 58–62.\n\n**Rạch lá kim loại:** Lá catốt nhôm, lá anode đồng, dải silicon-thép. Dao đe dùng cho lá kim loại phải chống mài mòn chất kết dính từ nền kim loại. Loại thép hoặc cacbua rắn ASP23 PM phù hợp với hợp kim dao trên cùng; Dung sai dạng rãnh được giữ ở mức ± 0,005 mm.\n\n**Băng & nhãn chịu áp lực:** Băng che, xốp phủ hai lớp, keo chuyển. Ô nhiễm chất kết dính trên mặt rãnh là dạng hư hỏng chính. Các mặt rãnh được phủ Teflon hoặc DLC giúp giảm khoảng thời gian tích tụ chất kết dính từ 60–80%.",
+      "Thay thế dao đe có rãnh và vòng cắt cho máy xén web. Tùy chọn thép hoặc cacbua, với cấu hình rãnh, lỗ khoan và bố trí khóa tùy chỉnh.",
     link: "/products/bottom-grooved-anvil-knives",
     isFeatured: true,
+    compatibleMachinesIntro:
+      "Nhận các loại dao đe có rãnh đáy thay thế phù hợp với đường rạch của bạn, với các cấu hình rãnh, lỗ khoan và tùy chọn khóa tùy chỉnh. Gửi cho chúng tôi bản vẽ hoặc mẫu của bạn và Sureay sẽ giúp bạn chọn sản phẩm thay thế phù hợp và chuẩn bị báo giá.",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "Vòng có rãnh OD 46–250 mm",
+      },
+      {
+        label: "Vật liệu",
+        value:
+          "52100, D2 , M2 HSS , PM HSS (bao gồm ASP23 ), kết cấu cacbua rắn hoặc đầu cacbua",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Rạch phim, giấy, giấy bạc và vải không dệt",
+      },
+      {
+        label: "Tay áo dao cạo",
+        value: "Rãnh nhẹ nhõm để xóa cạnh dao cạo",
+      },
+      {
+        label: "Dung sai chiều rộng rãnh",
+        value: "±0.01 mm",
+      },
+      {
+        label: "Độ phẳng của mặt",
+        value: "≤0.003 mm",
+      },
+      {
+        label: "Dung sai lỗ khoan",
+        value: "Lỗ khoan hoàn thiện H6",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value: "TiN trên mặt rãnh, DLC hoặc PTFE (Teflon)",
+      },
+      {
+        label: "hết",
+        value: "≤0.02 mm T.I.R.",
+      },
+      {
+        label: "Cách Lắp",
+        value:
+          "Lỗ trơn (NN), khóa lệch tâm (NG), khóa vít định vị (NS) hoặc lắp vòng chia / kẹp",
+      },
+      {
+        label: "Giải phóng mặt bằng cắt",
+        value: "0,02–0,15 mm, tùy theo cặp đế và dao",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao đe có rãnh đáy | Nhẫn thay thế",
+      sizeRange: "Vòng có rãnh OD 46–250 mm",
+      heroAlt: "Dao đe đáy có rãnh và vòng cắt có thể tháo rời",
+      specificationImage: {
+        src: "/images/products/slitter-detail/bottom-grooved-anvil-knives-detail.webp",
+        alt: "Hai vòng đáy thể hiện mặt chạy lõm và vai cắt",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "ring",
+          tabLabel: "Nhẫn có rãnh",
+          title: "Nhẫn có rãnh",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Hồ sơ hoặc tài liệu tham khảo",
+          ],
+          rows: [
+            ["SR001451", "46 × 25 × 5 mm", "Chuỗi chiều DIENES"],
+            ["SR001452", "80 × 60 × 10 mm", "Vòng đáy có rãnh"],
+            ["SR001453", "105 × 90 × 15 mm", "Vòng đáy có rãnh"],
+            ["SR001454", "105 × 90 × 8 mm", "Tham chiếu chiều Kampf"],
+            ["SR001455", "105 × 90 × 17 mm", "Tham chiếu chiều Kampf"],
+          ],
+        },
+        {
+          id: "groove-profile-configurations",
+          tabLabel: "Cấu hình hồ sơ Groove",
+          title: "Cấu hình hồ sơ Groove",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Tham khảo nền tảng",
+            "Hồ sơ rãnh",
+          ],
+          rows: [
+            [
+              "SR001840",
+              "70 × 25.4 × 8 / 10 mm",
+              "Tidland — Rãnh đơn",
+              "W: 1.2 × D: 2.0 / 60°",
+            ],
+            [
+              "SR001841",
+              "100 × 60 × 20 / 25 mm",
+              "Atlas — dao đế có 3 rãnh",
+              "W: 1.5 × D: 2.5 / 60°",
+            ],
+            [
+              "SR001842",
+              "80 × 30 × 10 mm",
+              "Mario Cotta — Rãnh đơn",
+              "W: 1.3 × D: 2.2 / 45°",
+            ],
+            [
+              "SR001843",
+              "130 × 80 × 12 mm",
+              "Dienes — Rãnh đơn",
+              "W: 1.5 × D: 3.0 / 60°",
+            ],
+            [
+              "SR001844",
+              "Mỗi bản vẽ",
+              "Đe tùy chỉnh / Hardfaced",
+              "Thông số kỹ thuật OEM; Rãnh gia công CNC chính xác",
+            ],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Vòng có rãnh OD 46–250 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "52100, D2 , M2 HSS , PM HSS (bao gồm ASP23 ), kết cấu cacbua rắn hoặc đầu cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Rạch phim, giấy, giấy bạc và vải không dệt",
+        },
+        {
+          label: "Tay áo dao cạo",
+          value: "Rãnh nhẹ nhõm để xóa cạnh dao cạo",
+        },
+        {
+          label: "Dung sai chiều rộng rãnh",
+          value: "±0.01 mm",
+        },
+        {
+          label: "Độ phẳng của mặt",
+          value: "≤0.003 mm",
+        },
+        {
+          label: "Dung sai lỗ khoan",
+          value: "Lỗ khoan hoàn thiện H6",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "TiN trên mặt rãnh, DLC hoặc PTFE (Teflon)",
+        },
+        {
+          label: "hết",
+          value: "≤0.02 mm T.I.R.",
+        },
+        {
+          label: "Cách Lắp",
+          value:
+            "Lỗ trơn (NN), khóa lệch tâm (NG), khóa vít định vị (NS) hoặc lắp vòng chia / kẹp",
+        },
+        {
+          label: "Giải phóng mặt bằng cắt",
+          value: "0,02–0,15 mm, tùy theo cặp đế và dao",
+        },
+      ],
+    },
     compatibleMachines: [
+      "DIENES",
+      "Mario Cotta",
       "Tidland",
       "Kampf",
-      "Atlas Converting",
       "Goebel",
-      "BHS",
-      "Agnati",
-      "Dusenbery",
-      "Euromac",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / M2 HSS / ASP23 PM / Solid Carbide",
-      },
-      {
-        label: "Groove Tolerance",
-        value: "Groove width ±0.01 mm | Face flatness ≤0.003 mm",
-      },
-      {
-        label: "Bore Tolerance",
-        value: "H6 finish-ground | T.I.R. ≤0.02 mm",
-      },
-      {
-        label: "Shear Clearance",
-        value: "Pre-verified to substrate spec (0.02–0.15 mm)",
-      },
-      {
-        label: "Coatings",
-        value: "TiN groove face, DLC, Teflon anti-adhesion (optional)",
-      },
-      {
-        label: "Applications",
-        value: "Film, Paper, Metal Foil, PSA Tape, Nonwovens",
-      },
+      "Atlas",
+      "Nishimura",
     ],
     components: [
       {
-        id: "groove-geometry-control",
-        tag: "MÀI CHÍNH XÁC",
-        title: "Hình học rãnh OEM-Profile",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Cấu hình đe thép và cacbua",
         description:
-          "Chiều rộng và chiều sâu rãnh của mỗi dao đe được mài định hình theo thông số kỹ thuật nền tảng OEM của bạn — rãnh đơn Tidland, rãnh đôi Kampf hoặc thân rộng Goebel — và được giữ ở mức ±0,01 mm. Hình dạng rãnh chính xác sẽ khôi phục độ hở cắt do nhà máy thiết kế và loại bỏ sự hư hỏng dần dần của cạnh khe do hình dạng đe bị mòn.",
+          "Dao đe có rãnh có sẵn bằng thép công cụ, HSS , PM HSS , cấu trúc cacbua rắn và đầu cacbua để thay thế và đặt hàng theo ứng dụng cụ thể.",
       },
       {
-        id: "bore-face-flatness",
-        tag: "ĐỘ CHÍNH XÁC CHIỀU",
-        title: "H6 Độ phẳng mặt lỗ và mặt phẳng",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Rãnh đất, lỗ khoan và mặt định vị",
         description:
-          "Tất cả các lỗ đe đều được mài hoàn thiện theo dung sai H6 và được dát mặt với độ song song ≤0,003 mm. Độ lệch lỗ khoan 0,02 mm ở đầu cặp dao phía dưới gây ra hiện tượng dao động của lưỡi dao, dẫn trực tiếp đến sự thay đổi chiều rộng khe trên một chồng nhiều dao. Dung sai lỗ khoan và bề mặt của chúng tôi được xác minh trên CMM cho mỗi lô.",
+          "Các vòng thay thế mài hoàn thiện được chế tạo với lỗ khoan, biên dạng rãnh và các bề mặt định vị được chỉ định cho trục và dao trên hiện có của bạn.",
       },
       {
-        id: "anti-adhesion-groove-coating",
-        tag: "XỬ LÝ BỀ ​​MẶT",
-        title: "Lớp phủ rãnh chống bám dính",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Cấu hình rãnh tùy chỉnh và thiết kế khóa",
         description:
-          "Đối với băng nhạy áp lực và rạch tấm mỏng dính, lớp phủ Teflon và DLC PVD trên mặt tiếp xúc với rãnh giúp giảm khoảng thời gian tích tụ chất kết dính từ 60–80%. Các đe được tráng phủ hoạt động sạch sẽ trong suốt ca sản xuất kéo dài 8–12 giờ mà không bị nhiễm bẩn rãnh làm giảm độ hở cắt và buộc phải dừng ngoài kế hoạch.",
+          "Các thiết kế gắn lỗ trơn, khóa lệch tâm, khóa vít và tách hoặc kẹp có sẵn với các biên dạng rãnh và chiều rộng vòng được xác định bằng bản vẽ.",
       },
     ],
-    dimensionLabels: {
-      col0: "Nền tảng / Loại OEM",
-      col1: "OD × ID (mm)",
-      col2: "Độ dày (mm)",
-      col3: "Rãnh (W × D / Góc)",
-      caption:
-        "* Kích thước đe phù hợp với tiêu chuẩn OEM. Hình học rãnh chính xác đảm bảo việc tiếp xúc không bị rung lắc với các máy xẻ rãnh trên cùng. Cấu hình nhiều rãnh (2+ khe) có sẵn theo yêu cầu.",
-    },
-    standardDimensions: [
-      {
-        spec: "Tidland — Single Groove",
-        od: "70 × 25.4",
-        id: "8 / 10",
-        thickness: "W: 1.2 × D: 2.0 / 60°",
-      },
-      {
-        spec: "Atlas — Multi-Groove (3 Slots)",
-        od: "100 × 60",
-        id: "20 / 25",
-        thickness: "W: 1.5 × D: 2.5 / 60°",
-      },
-      {
-        spec: "Mario Cotta — Single Groove",
-        od: "80 × 30",
-        id: "10",
-        thickness: "W: 1.3 × D: 2.2 / 45°",
-      },
-      {
-        spec: "Dienes — Single Groove",
-        od: "130 × 80",
-        id: "12",
-        thickness: "W: 1.5 × D: 3.0 / 60°",
-      },
-      {
-        spec: "Custom Anvil / Hardfaced",
-        od: "Per Drawing",
-        id: "OEM Spec",
-        thickness: "Exact CNC Machined Groove",
-      },
-    ],
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "metal-foil-strip-slitter-knives",
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 200,
-    },
     faqs: {
       technical: [
         {
-          question:
-            "Bao lâu thì tôi nên thay thế con dao đe có rãnh phía dưới so với lưỡi dao phía trên?",
+          question: "Điều gì xác định một con dao đe đáy có rãnh thay thế?",
           answer:
-            "Dao đe phía dưới hoạt động dưới tải trọng mặt rãnh nén và thường kéo dài hơn 3–5 × so với lưỡi cắt trên cùng. Tuy nhiên, do sự mài mòn diễn ra từ từ - mặt rãnh tròn dần nên chất lượng khe bị suy giảm rất dễ bị bỏ sót cho đến khi tỷ lệ phế liệu tăng lên. Chúng tôi khuyên bạn nên kiểm tra hình dạng bề mặt rãnh (chiều rộng và chiều sâu rãnh) cứ sau 3 chu kỳ thay thế lưỡi dao trên cùng và thay thế đe khi độ lệch chiều rộng rãnh vượt quá ±0,03 mm so với thông số kỹ thuật OEM.",
+            "Cạnh làm việc, biên dạng rãnh, chiều rộng vòng, lỗ khoan và bố trí khóa xác định việc thay thế. Bao gồm độ sâu rãnh và vị trí trục của lưỡi cắt so với dao phía trên. Các tính năng này thiết lập hình học làm việc ngoài OD và ID. Để biết một số vị trí cắt trên cùng một thân máy, hãy xem [Dao đáy nhiều rãnh](/products/groove-bottom-knives) .",
+        },
+        {
+          question: "Các loại khóa NN, NG và NS có ý nghĩa gì?",
+          answer:
+            "Trong thuật ngữ DIENES , NN có nghĩa là lỗ khoan trơn, NG sử dụng khóa lệch tâm và NS sử dụng khóa vít. Các vòng NN được định vị bằng các miếng đệm và được kẹp theo trục; NG sử dụng vòng lệch tâm, còn NS sử dụng vít tác động lên trục. Chỉ định lỗ khoan, chiều rộng vòng và biên dạng làm việc cùng với loại lắp đặt khi yêu cầu thay thế.",
         },
         {
           question:
-            "Tôi nên đặt khoảng hở cắt nào giữa lưỡi trên và rãnh đe dưới?",
+            "Tại sao chất lượng khe giấy vẫn kém sau khi thay dao trên?",
           answer:
-            "Độ hở cắt phụ thuộc vào chất nền. Đối với màng nhựa dẻo (BOPP, BOPET, CPP) ở mức 0,02–0,05 mm mỗi mặt là tiêu chuẩn. Đối với giấy và bìa kraft, 0,05–0,10 mm. Đối với lá nhôm và đồng, 0,01–0,03 mm mỗi mặt. Chúng tôi xác minh trước các cặp trên/dưới phù hợp với khoảng trống được chỉ định của bạn và ghi lại cài đặt trên bảng dữ liệu kỹ thuật đi kèm với mỗi đơn hàng, cho phép người vận hành sao chép khoảng trống trong mỗi lần cài đặt lại.",
+            "Việc cắt giấy phụ thuộc vào cặp dao hoàn chỉnh và cách thiết lập nó. Kiểm tra cạnh làm việc phía dưới, sự ghép nối của vật liệu, tình trạng đầu kẹp, độ chồng chéo, áp lực bên và góc siêu cao. Dao trên mới vẫn hoạt động so với dao dưới được giữ lại, do đó việc so sánh cả hai bề mặt làm việc và sự điều chỉnh của chúng sẽ giúp xác định những gì còn chưa được giải quyết trong sơ đồ cắt.",
         },
         {
           question:
-            "Tôi có thể đặt mua dao đe thay thế mà không cần mua một cặp hoàn chỉnh không?",
+            "Vật liệu hoặc lớp phủ nào phù hợp với dao đe được sử dụng với màng dính?",
           answer:
-            "Đúng. Chúng tôi cung cấp dao đe đáy dưới dạng dao thay thế độc lập được gia công theo biên dạng rãnh và OD/ID của hệ thống đầu cặp dao trên hiện có của bạn. Cung cấp nền tảng OEM của bạn (Tidland, Kampf, Atlas, v.v.) và OD/ID dao trên cùng và chúng tôi sẽ khớp đe với hình dạng giao phối. Nếu bạn cung cấp đe bị mòn làm mẫu, chúng tôi có thể thiết kế ngược biên dạng rãnh ban đầu trước khi mài lại.",
+            "Tách biệt chất kết dính khỏi sự mài mòn tiên tiến. Để tích tụ keo trên một cạnh chắc chắn, hãy xem xét hình dạng tiếp xúc, độ hoàn thiện bề mặt và hệ thống kết dính khi xem xét các tùy chọn TiN, DLC hoặc PTFE có sẵn. Đối với tình trạng mòn hoặc sứt mẻ, trước tiên hãy đánh giá vật liệu cơ bản và dao ghép nối. So sánh các tùy chọn bề mặt trong cùng một web và các điều kiện cắt để đánh giá xem chúng có giải quyết được vấn đề thực tế hay không.",
         },
         {
           question:
-            "Tại sao chất lượng cạnh khe của tôi lại giảm ngay cả sau khi tôi thay lưỡi trên cùng bằng lưỡi mới?",
+            "Sureay có thể cung cấp vòng đe tùy chỉnh mà không cần thay thế con dao trên cùng không?",
           answer:
-            "Nếu các lưỡi trên mới không phục hồi được chất lượng khe hở thì rãnh đe gần như chắc chắn bị mòn vượt quá thông số kỹ thuật của nó. Mặt rãnh được làm tròn hoặc mở rộng làm tăng độ hở cắt hiệu quả bất kể tình trạng lưỡi trên cùng, tạo ra một cạnh khe rách, có lông. Kiểm tra chiều rộng và chiều sâu của rãnh bằng thước đo rãnh hoặc máy đo biên dạng. Nếu độ lệch rãnh vượt quá ±0,03 mm so với thông số kỹ thuật OEM thì cần phải thay đe hoặc mài lại.",
+            "Đúng. Vòng thay thế có thể được chế tạo theo lỗ khoan, chiều rộng vòng, biên dạng rãnh, vị trí lưỡi cắt và các chi tiết khóa theo yêu cầu của trục hiện có. Bao gồm các kích thước và vị trí làm việc của dao phía trên được giữ lại. Đối với các đơn đặt hàng dựa trên mẫu, hãy phân biệt bề mặt cắt bị mòn với bề mặt lắp đặt để vòng mới được xác định xung quanh con dao phía trên mà bạn sẽ giữ lại.",
+        },
+        {
+          question: "Ống đỡ dao cạo có thể thay thế đe cắt được không?",
+          answer:
+            "Một ống đỡ dao cạo cung cấp khoảng trống cho lưỡi dao cạo, trong khi đe cắt rạch mang lại lưỡi cắt hợp tác. Hồ sơ làm việc của họ phục vụ các phương pháp cắt khác nhau. Chỉ định lưỡi cắt tương ứng, phương pháp cắt và vị trí cạnh cần thiết khi đặt hàng; sự hiện diện của riêng một rãnh không xác định được thành phần bên dưới chính xác.",
         },
       ],
-      company: [
-        {
-          question:
-            "Bạn có cung cấp dao đe đáy theo cặp phù hợp hay chỉ riêng lẻ?",
-          answer:
-            "Cả hai tùy chọn đều có sẵn. Đối với việc lắp đặt mới hoặc xây dựng lại toàn bộ trục, chúng tôi khuyên bạn nên sử dụng các cặp phù hợp - lưỡi trên và đe dưới đã được xác minh với độ hở cắt được chỉ định, cùng với bảng dữ liệu kỹ thuật chung. Đối với các đơn đặt hàng thay thế trên dây chuyền hiện có, dao đe độc ​​lập được gia công theo biên dạng rãnh OEM của bạn có sẵn với thời gian thực hiện tiêu chuẩn từ 5–7 ngày.",
-        },
-        {
-          question:
-            "Sureay cung cấp dao đe phù hợp cho những nền tảng OEM nào?",
-          answer:
-            "Chúng tôi hiện đang dự trữ và cung cấp dao đe định hình rãnh cho Tidland (đầu cặp rãnh đơn và đầu cặp rãnh đôi), Kampf (dòng đầu cặp hẹp và rộng), Thiết bị chuyển đổi Atlas, Goebel, BHS, Agnati và Dusenbery. Đối với các nền tảng OEM khác, hãy cung cấp bản vẽ trục hoặc mẫu bị mòn và chúng tôi sẽ thiết kế một thiết bị thay thế phù hợp.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Dao đe có cấu hình OEM tiêu chuẩn sẽ được giao trong vòng 48–72 giờ. Hồ sơ rãnh tùy chỉnh mất 7-12 ngày làm việc. Chúng tôi hợp tác với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "rotary-slitter-knives",
+      "groove-bottom-knives",
+      "slitter-rewinder-bottom-knives",
+    ],
   },
-
   {
+    compatibleMachinesIntro:
+      "Nguồn dao cắt cacbua thay thế có lỗ khoan, độ dày và biên dạng cắt tùy chỉnh. Sureay cung cấp các cấu trúc cacbua và vòng cacbua rắn; chia sẻ bản vẽ và ứng dụng của bạn để nhận báo giá về cấu hình mà máy của bạn yêu cầu.",
     id: "tungsten-carbide-slitter-knives",
-    name: "Dao xẻ hợp kim cứng",
-    fullName: "Dao xẻ hợp kim cứng cho ứng dụng xẻ mài mòn cao",
+    name: "Dao xẻ dọc bằng cacbua vonfram",
+    fullName:
+      "Dao xẻ dọc bằng cacbua vonfram nguyên khối hoặc gắn lưỡi hợp kim",
     category: "slitter_knives",
     sector: "converting",
-    categoryDisplay: "Dao xẻ",
+    categoryDisplay: "Dao xẻ dọc bằng cacbua vonfram",
     image:
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-    gallery: [
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-01.webp",
-      "/images/products/tungsten-carbide-slitter-knives/tungsten-carbide-slitter-knives-02.webp",
-    ],
-    galleryAlts: [
-      "Dao xẻ hợp kim cứng, ba lưỡi tròn đã mài với bề mặt đánh bóng",
-      "Chi tiết dao xẻ hợp kim cứng cho thấy lỗ tâm, lỗ bắt bu lông và lưỡi cắt đã mài",
-    ],
-
+      "/images/products/slitter-detail/tungsten-carbide-slitter-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     description:
-      "Hợp kim cứng nguyên khối có giá cao gấp sáu đến mười lần D2. Khoản chênh lệch đó chỉ hoàn vốn trong đúng hai tình huống: khi vật liệu của bạn có chất độn khoáng gây mài mòn, hoặc khi lô sản xuất đủ dài để thời gian dừng máy thay dao — chứ không phải giá dao — mới là thứ thực sự tốn tiền. Hợp kim cứng hạt siêu mịn YG6, YG6X, YG8 và YG10X (ISO K10–K30) đạt 89,5–92,5 HRA, mài chính xác ±0,002 mm, kèm báo cáo độ cứng và biên bản kích thước trong mỗi lô hàng.",
-
-    fullDescription:
-      "Dao xẻ hợp kim cứng là một quyết định về khả năng chịu mài mòn, không phải một bản nâng cấp chung. Nếu bạn xẻ màng BOPP trong suốt với lô ngắn, D2 hoặc ASP23 PM sẽ phục vụ tốt hơn và rẻ hơn, và chúng tôi sẽ nói điều đó với bạn trước khi bạn đặt hàng. Trang này dành cho những công việc mà thép dụng cụ thực sự không giữ được lưỡi cắt: màng có chất độn khoáng, vật liệu ép lớp gia cường sợi thủy tinh, vải không dệt mài mòn, lá kim loại phủ và bìa carton tốc độ cao.\n\n## Khi nào việc nâng cấp có lãi\n\nHợp kim cứng đáng giá khi chi phí dừng chuyền vượt quá chi phí con dao. Lấy số lần thay dao mỗi tháng, nhân với chi phí dừng máy cho mỗi lần thay, rồi so với chênh lệch giá. Trên dây chuyền mà một lần thay dao tốn một giờ sản xuất, tuổi thọ lưỡi cắt gấp 10 lần thường hoàn vốn sau một đến hai chu kỳ dao. Trên dây chuyền mà việc thay dao nhanh và rẻ, sẽ không hoàn vốn.\n\n## Nơi hợp kim cứng xứng đáng với chi phí\n\n**Màng có chất độn khoáng:** BOPP độn TiO₂, PE độn canxi cacbonat, các loại mờ và tạo lỗ rỗng. Chính chất độn phá hủy lưỡi thép; độ cứng là biện pháp phòng vệ duy nhất.\n\n**Vật liệu ép lớp gia cường sợi thủy tinh và composite:** cắt biên FR-4 và prepreg, băng gia cường sợi thủy tinh, tấm composite nhôm. Hàm lượng thủy tinh gây mài mòn rất mạnh và làm cùn thép gió chỉ trong một ca.\n\n**Vải không dệt mài mòn:** meltblown độn khoáng, spunbond có chất độn, đế nhám và vật liệu khăn lau, nơi hiện tượng xù sợi xuất hiện ngay khi lưỡi cắt bắt đầu mềm.\n\n**Lá kim loại, băng phủ và điện cực pin:** lá nhôm và lá đồng, băng phủ và ép lớp, nơi mép cắt không ba via phải giữ được suốt cả cuộn.\n\n**Bìa và giấy tráng phủ tốc độ cao:** vật liệu tráng cao lanh và bột màu trên dây chuyền mà một lần thay dao tốn một giờ sản xuất, còn giá con dao chỉ là sai số làm tròn so với con số đó.\n\n## Nơi hợp kim cứng là lựa chọn sai\n\n**Va đập và cắt gián đoạn.** Hợp kim cứng giòn. Nếu vật liệu bị vướng, nếu băng dán nối chạy qua, hoặc nếu dao có thể chạm kim loại với kim loại vào đe, hợp kim cứng sẽ mẻ ở chỗ mà D2 chỉ biến dạng và vẫn dùng được.\n\n**Vật liệu sạch, không chất độn, lô ngắn.** Bạn xẻ BOPP trong suốt, giấy kraft thường hay PE không độn? D2 hoặc ASP23 PM sẽ giữ lưỡi đủ lâu, với chi phí chỉ bằng một phần nhỏ.\n\n**Không tiếp cận được máy mài kim cương.** Nếu cả bạn lẫn đối tác dịch vụ đều không thể mài lại bằng đá kim cương, một con dao hợp kim cứng bị cùn sẽ thành phế liệu thay vì tài sản mài lại được — và bài toán kinh tế đảo ngược.\n\n**Khe hở lỏng hoặc chưa được kiểm tra.** Hợp kim cứng khuếch đại những gì thiết lập của bạn vốn đã làm. Nó sẽ không bù đắp cho trục mòn, giá dao bị đảo, hay khe hở mà chưa ai đo.",
-
+      "Dao xẻ thay thế dạng rắn và có đầu bằng cacbua để chuyển đổi và gia công kim loại. Kích thước, lỗ khoan và biên dạng cắt tùy chỉnh phù hợp với ứng dụng.",
     link: "/products/tungsten-carbide-slitter-knives",
-
-    compatibleMachines: ["Tidland", "Kampf", "Atlas", "Dusenbery", "Goebel"],
-
     specs: [
       {
-        label: "Material",
+        label: "Kích cỡ",
         value:
-          "Micro-grain tungsten carbide — YG6 / YG6X / YG8 / YG10X (ISO K10 / K10UF / K20 / K30)",
+          "Biên dạng mỏng: OD 20–300 mm × 0,3–5,0 mm; máy gấp nếp OD 220–340 mm; OD quay 150,1–300,15 mm",
       },
-      { label: "Hardness", value: "89.5–92.5 HRA" },
-      { label: "Grain Size", value: "0.4–0.8 µm, ultra-fine to sub-micron" },
-      { label: "Transverse Rupture Strength", value: "2,500–3,000 N/mm²" },
-      { label: "Outer Diameter", value: "20–300 mm" },
-      { label: "Thickness", value: "0.3–5.0 mm" },
       {
-        label: "Tolerance",
+        label: "Vật liệu",
         value:
-          "±0.002 mm thickness | ≤0.005 mm parallelism | ≤0.01 mm T.I.R. runout",
+          "Cacbua WC-Co ở các loại YG6 , YG6X , YG8 , YG10X , YG12X và YG15",
       },
-      { label: "Edge Finish", value: "Ra 0.2–0.4 µm" },
       {
-        label: "Edge Geometry",
-        value: "Single bevel, double bevel, hollow ground, razor",
+        label: "Ứng dụng",
+        value: "Tấm tôn, màng, lưới điện cực và dải kim loại",
       },
-      { label: "Coatings", value: "Uncoated, DLC, TiN, TiAlN (optional)" },
       {
-        label: "Applications",
+        label: "độ cứng",
+        value: "89,5–92,5 HRA, tùy thuộc vào loại cacbua",
+      },
+      {
+        label: "Tùy chọn hạt mịn",
+        value: "Kích thước hạt cacbua 0,4–0,8 μm",
+      },
+      {
+        label: "Kết cấu",
+        value: "Đĩa cacbua rắn hoặc thân thép có vòng cắt cacbua",
+      },
+      {
+        label: "Tùy chọn chính xác",
         value:
-          "Filler-loaded film, glass-reinforced laminate, abrasive nonwoven, coated foil & strip, high-speed coated board",
+          "Dung sai chiều dày ±0,002 mm; độ song song hai mặt ≤0,005 mm; độ đảo toàn phần ≤0,01 mm",
+      },
+      {
+        label: "Hoàn thiện cạnh",
+        value: "Ra 0.2–0.4 μm",
+      },
+      {
+        label: "Hình học cạnh",
+        value: "Biên dạng vát đơn, vát đôi, mặt đất rỗng hoặc dao cạo",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value: "DLC, TiN hoặc TiAlN ; dao không tráng cũng có sẵn",
+      },
+      {
+        label: "Sức mạnh vỡ ngang",
+        value: "2,500–3,000 N/mm²",
       },
     ],
-
-    steelGrades: {
-      intro:
-        "Hàm lượng coban là núm điều chỉnh đánh đổi: nhiều coban hơn nghĩa là dai hơn và ít giòn hơn, nhưng lưỡi cắt cùn sớm hơn. Bốn mác hợp kim cứng dưới đây được trình bày đối chiếu với các loại thép dụng cụ mà chúng thay thế, để quyết định nâng cấp hiện rõ trong một bảng duy nhất. Nếu dao thép hiện tại của bạn bị cùn, hãy chọn cứng hơn. Nếu bị mẻ, hãy chọn dai hơn. Nếu cả hai, vấn đề thường nằm ở khe hở chứ không phải vật liệu.",
-      rows: [
+    detailLayout: {
+      seoTitle: "hợp kim cacbua vonfram Slitter Dao | Kích thước tùy chỉnh",
+      sizeRange: "OD 20–340 mm",
+      heroAlt: "Ba con dao xẻ tròn hợp kim cacbua vonfram",
+      specificationImage: {
+        src: "/images/products/slitter-detail/tungsten-carbide-slitter-knives-detail.webp",
+        alt: "Vòng dao phía dưới tua lại hiển thị thân và chu vi cắt",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
         {
-          grade: "D2",
-          hardness: "HRC 58–62",
-          bestFor: "Xẻ đa dụng các vật liệu sạch, không chất độn",
-          tradeoff:
-            "Tuổi thọ lưỡi và chi phí ở mức chuẩn. Mài lại được bằng đá thông thường.",
+          id: "thin",
+          tabLabel: "Lưỡi mỏng cacbua",
+          title: "Lưỡi mỏng cacbua",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Tham khảo thiết bị",
+            "Kiểu lắp",
+          ],
+          rows: [
+            ["SR001401", "240 × 32 × 1.2 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001402", "240 × 32 × 1.3 mm", "BHS", "2 × Ø8.5 mm"],
+            ["SR001403", "230 × 110 × 1.1 mm", "Fosber", "Mẫu 6 × Ø9 mm"],
+            ["SR001404", "230 × 135 × 1.1 mm", "Fosber", "mẫu 4 khe"],
+            ["SR001405", "257 × 135 × 1.1 mm", "Fosber", "Vẽ trận đấu"],
+            ["SR001406", "291 × 203 × 1.1 mm", "Fosber", "Vẽ trận đấu"],
+            ["SR001408", "220 × 115 × 1.0 mm", "Agnati", "Vẽ trận đấu"],
+            ["SR001409", "240 × 115 × 1.0 mm", "Agnati", "Vẽ trận đấu"],
+            ["SR001410", "280 × 160 × 1.1 mm", "Mitsubishi", "Vẽ trận đấu"],
+            ["SR001411", "260 × 140 × 1.1 mm", "Isowa", "Vẽ trận đấu"],
+            ["SR001412", "300 × 112 × 1.2 mm", "TCY", "Vẽ trận đấu"],
+            ["SR001413", "340 × 230.2 × 1.0 mm", "Göpfert", "Vẽ trận đấu"],
+          ],
         },
         {
-          grade: "M2 HSS",
-          hardness: "HRC 62–65",
-          bestFor: "Mài mòn vừa phải ở tốc độ dây chuyền cao hơn",
-          tradeoff: "Tuổi thọ lưỡi gấp 2–3 lần D2 với chi phí khoảng 1,5 lần.",
-        },
-        {
-          grade: "ASP23 PM",
-          hardness: "HRC 66–68",
-          bestFor:
-            "Công việc tốc độ cao, mài mòn cao nhưng chưa đến mức mài mòn thực sự",
-          tradeoff:
-            "Tuổi thọ lưỡi gấp 4–6 lần D2 với chi phí khoảng 3 lần — thường là lựa chọn kinh tế tốt hơn.",
-        },
-        {
-          grade: "YG6 (ISO K10)",
-          hardness: "89.5–91.5 HRA",
-          bestFor: "Xẻ ổn định, không va đập trên màng và giấy có tính mài mòn",
-          tradeoff:
-            "6 % coban. Cứng nhất trong bốn mác hợp kim cứng và ít dung thứ va đập nhất.",
-        },
-        {
-          grade: "YG6X (ISO K10UF)",
-          hardness: "91–92.5 HRA",
-          bestFor:
-            "Chiều dày mỏng, dung sai chặt, chất lượng lưỡi tốt nhất có thể đạt được",
-          tradeoff:
-            "6 % coban, hạt siêu mịn. Lưỡi sắc nhất, nhạy cảm nhất với cắt gián đoạn.",
-        },
-        {
-          grade: "YG8 (ISO K20)",
-          hardness: "88.5–90.5 HRA",
-          bestFor:
-            "Vải không dệt, lá kim loại, và bất cứ nơi nào vật liệu có thể bị vướng",
-          tradeoff:
-            "8 % coban. Dai hơn và chịu va đập tốt hơn, đổi lại mất một phần tuổi thọ lưỡi.",
-        },
-        {
-          grade: "YG10X (ISO K30)",
-          hardness: "90.5–91.5 HRA",
-          bestFor: "Cắt gián đoạn, vật liệu ép lớp và vật liệu dày hơn",
-          tradeoff:
-            "10 % coban, hạt siêu mịn. Cân bằng độ dai và chịu mài mòn tốt nhất trong dải sản phẩm.",
+          id: "carbide",
+          tabLabel: "Dao cacbua",
+          title: "Dao quay cacbua",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Kết cấu"],
+          rows: [
+            ["SR001331", "150.1 × 95 × 6.35 mm", "cacbua rắn"],
+            ["SR001332", "181 × 125 × 9.5 mm", "cacbua rắn"],
+            ["SR001333", "204 × 125 × 10 mm", "cacbua rắn"],
+            ["SR001334", "250 × 125 × 10.1 mm", "cacbua rắn"],
+            ["SR001335", "300.15 × 160 × 28 mm", "cacbua rắn"],
+          ],
         },
       ],
-      outro:
-        "Trên toàn dải sản phẩm, hợp kim cứng cho tuổi thọ lưỡi khoảng 10–30 lần so với D2 với chi phí cao gấp 6–10 lần, chịu được ít chu kỳ mài lại hơn và chỉ có thể mài bằng đá kim cương. Cách tính: hợp kim cứng đáng giá khi chi phí dừng chuyền vượt quá chi phí con dao. Hãy cho chúng tôi biết vật liệu và dạng hỏng hóc bạn đang gặp, chúng tôi sẽ chọn mác.",
-    },
-
-    componentsIntro:
-      "Gửi cho chúng tôi một con dao đã mòn và model máy của bạn — chúng tôi sẽ dựng lại khe hở bằng kỹ thuật đảo ngược và báo giá trong vòng 2 giờ.",
-
-    components: [
-      {
-        id: "carbide-when-it-pays",
-        tag: "MỨC ĐỘ PHÙ HỢP",
-        title: "Nơi hợp kim cứng xứng đáng với chi phí",
-        description:
-          "Chính chất độn mài mòn phá hủy lưỡi thép, và độ cứng là biện pháp phòng vệ duy nhất. BOPP độn TiO₂, PE độn canxi cacbonat, cắt biên FR-4 và prepreg, băng gia cường sợi thủy tinh, meltblown độn khoáng, lá nhôm và lá đồng có phủ, cùng bìa tráng cao lanh đều làm mòn lưỡi thép dụng cụ nhanh hơn mức mà độ dài lô sản xuất cho phép. Cùng một logic chọn mác được áp dụng cho mọi vật liệu — đây là quyết định về vật liệu, không phải về ứng dụng.",
-      },
-      {
-        id: "carbide-when-not-to",
-        tag: "GIỚI HẠN THÀNH THẬT",
-        title: "Nơi hợp kim cứng là lựa chọn sai",
-        description:
-          "Hợp kim cứng là giải pháp chịu mài mòn, không phải bản nâng cấp chung. Nó mẻ ở chỗ mà D2 chỉ biến dạng — tại mối nối, chỗ vướng và vết cắt gián đoạn, hoặc nơi dao có thể chạm kim loại với kim loại vào đe. Trên vật liệu sạch không chất độn và lô ngắn, D2 hoặc ASP23 PM giữ lưỡi đủ lâu với giá chỉ bằng một phần nhỏ. Và nếu không tiếp cận được việc mài lại bằng đá kim cương, một con dao hợp kim cứng bị cùn là phế liệu chứ không phải tài sản. Nếu điều nào trong số đó mô tả dây chuyền của bạn, hãy nói khi hỏi hàng — chúng tôi thà báo giá đúng loại thép.",
-      },
-      {
-        id: "carbide-grade-selection",
-        tag: "LUYỆN KIM",
-        title: "Nền hạt siêu mịn, chọn theo từng công việc",
-        description:
-          "Chúng tôi chọn trong bốn mác dựa trên vật liệu và dạng hỏng hóc hiện tại của bạn, thay vì giao một mác duy nhất cho mọi trường hợp. Các mác cỡ hạt dưới micron giữ lưỡi sắc hơn; các mác nhiều coban chịu được va đập. Hợp kim cứng chỉ có thể hoàn thiện bằng đá kim cương, và hình học lưỡi, độ song song cùng độ đảo được giữ theo đúng tiêu chuẩn kiểm tra như khi chúng tôi mài thép dụng cụ — mỗi con dao đều được đo trước khi xuất xưởng, kèm báo cáo thử độ cứng và biên bản kích thước trong hộp.",
-      },
-    ],
-
-    relatedBladeIds: [
-      "rotary-slitter-knives",
-      "nonwoven-slitter-knives",
-      "metal-coil-slitting-knives",
-    ],
-    offers: {
-      lowPrice: 40,
-      highPrice: 600,
-    },
-    faqs: {
-      technical: [
+      technicalSpecs: [
         {
-          question:
-            "Khi nào tôi nên chọn hợp kim cứng nguyên khối thay vì M2 HSS hoặc D2?",
-          answer:
-            "Chỉ khi vật liệu của bạn có chất độn mài mòn, hoặc khi lô sản xuất đủ dài để khoản tiết kiệm từ mài lại và thay dao bù được chênh lệch giá 6–10 lần. Với màng trong tiêu chuẩn, giấy thường hoặc PE không độn, D2 hoặc ASP23 PM thường là lựa chọn kinh tế hơn — và chúng tôi sẽ nói vậy.",
+          label: "Kích cỡ",
+          value:
+            "Biên dạng mỏng: OD 20–300 mm × 0,3–5,0 mm; máy gấp nếp OD 220–340 mm; OD quay 150,1–300,15 mm",
         },
         {
-          question: "Một con dao xẻ hợp kim cứng có thể mài lại bao nhiêu lần?",
-          answer:
-            "Điều đó phụ thuộc vào lượng dư chiều dày được thiết kế sẵn trong con dao, không phải vào vật liệu. Mỗi lần mài đều lấy đi vật liệu; giới hạn thực tế là khi dao mỏng quá dung sai khe hở. Hợp kim cứng thường chịu được ít lần mài lại hơn D2 nhưng cho thời gian chạy máy giữa mỗi lần dài hơn nhiều, và đó mới là chỗ bài toán kinh tế nằm ở. Bắt buộc dùng đá kim cương — đá nhôm oxit thông thường sẽ bị chai và không cắt được hợp kim cứng.",
+          label: "Vật liệu",
+          value:
+            "Cacbua WC-Co ở các loại YG6 , YG6X , YG8 , YG10X , YG12X và YG15",
         },
         {
-          question:
-            "Dao hợp kim cứng của tôi bị mẻ ngay lô đầu — đã sai ở đâu?",
-          answer:
-            "Hầu như luôn là một trong ba nguyên nhân. Thao tác: một con dao hợp kim cứng rơi xuống nền bê tông sẽ sinh ứng suất bên trong và vết nứt, vốn vô hình cho đến khi chịu tải. Khe hở: đặt quá chặt, dao tiếp xúc kim loại với kim loại vào đe và vi mẻ dọc theo lưỡi. Hoặc ứng dụng có va đập — một mối nối, một chỗ vướng, một vết cắt gián đoạn — mà độ giòn của hợp kim cứng không hấp thụ nổi. Hãy gửi cho chúng tôi ảnh chụp lưỡi bị mẻ; dạng vết gãy thường cho biết đó là nguyên nhân nào trong ba.",
+          label: "Ứng dụng",
+          value: "Tấm tôn, màng, lưới điện cực và dải kim loại",
         },
         {
-          question: "YG6 hay YG8 — tôi nên chỉ định mác nào?",
-          answer:
-            "YG6 (ISO K10) cứng hơn và bền hơn trong công việc ổn định, sạch, có tính mài mòn. YG8 (ISO K20) chứa nhiều coban hơn nên dai hơn và chịu được va đập, đổi lại mất một phần tuổi thọ lưỡi. Nếu dao thép hiện tại của bạn bị cùn, hãy chọn cứng hơn. Nếu bị mẻ, hãy chọn dai hơn. Nếu cả hai, vấn đề thường nằm ở khe hở chứ không phải vật liệu.",
+          label: "độ cứng",
+          value: "89,5–92,5 HRA, tùy thuộc vào loại cacbua",
         },
         {
-          question:
-            "Dao trên bằng hợp kim cứng có chạy được với đe dưới bằng thép không?",
-          answer:
-            "Có, và điều này phổ biến — nhưng khi đó đe trở thành chi tiết mòn và sẽ cần được quan tâm sớm hơn trước. Nếu đe mềm hơn, hãy kiểm tra khe hở thường xuyên hơn, vì đe mòn làm khe hở rộng ra và triệu chứng đầu tiên là mép cắt xơ, trông giống như lỗi của dao. Chúng tôi có sẵn cặp hợp kim cứng đồng bộ khi độ mòn của đe là yếu tố giới hạn.",
+          label: "Tùy chọn hạt mịn",
+          value: "Kích thước hạt cacbua 0,4–0,8 μm",
         },
         {
-          question:
-            "Nên bảo quản và thao tác với dao hợp kim cứng như thế nào?",
-          answer:
-            "Tách riêng từng con, không bao giờ xếp chồng kim loại trần lên nhau, trong môi trường khô. Phần lớn các hỏng hóc hợp kim cứng mà chúng tôi điều tra đều bắt đầu từ kho hoặc trong vận chuyển, chứ không phải trên máy. Dao được giao trong bao bì bảo vệ, nên giữ lại cho những con chưa đưa vào chạy.",
-        },
-      ],
-      company: [
-        {
-          question: "Các bạn là nhà sản xuất hay công ty thương mại?",
-          answer:
-            "Chúng tôi sản xuất. Việc mài, kiểm soát nhiệt luyện và kiểm tra đều thực hiện tại nhà máy của chính chúng tôi, đạt chứng nhận ISO 9001:2015, hoạt động từ năm 2008 và xuất hàng tới hơn 50 quốc gia. Đó là lý do chúng tôi có thể báo giá từ một mẫu dao đã mòn và chịu trách nhiệm về biên bản kích thước đi kèm.",
+          label: "Kết cấu",
+          value: "Đĩa cacbua rắn hoặc thân thép có vòng cắt cacbua",
         },
         {
-          question:
-            "Các bạn có làm được dao hợp kim cứng khi không có bản vẽ OEM không?",
-          answer:
-            "Có — hãy gửi một con dao đã mòn và model máy của bạn. Chúng tôi đo mẫu, dựng lại khe hở làm việc từ vết mòn bằng kỹ thuật đảo ngược, rồi sản xuất bản thay thế tương thích; vết mòn thường cho chúng tôi biết về cách con dao thực sự chạy nhiều hơn cả bản vẽ gốc. Lỗ trục, rãnh then, sơ đồ lỗ bắt và chiều dày đều khớp với các trục bạn đang dùng, nên không phải đổi giá dao và không phải làm lại đồ gá.",
+          label: "Tùy chọn chính xác",
+          value:
+            "Dung sai chiều dày ±0,002 mm; độ song song hai mặt ≤0,005 mm; độ đảo toàn phần ≤0,01 mm",
         },
         {
-          question: "Đơn hàng hợp kim cứng đi kèm những tài liệu gì?",
-          answer:
-            "Báo cáo thử độ cứng và biên bản kiểm tra kích thước trong mỗi lô hàng, từ nhà máy đạt chứng nhận ISO 9001:2015. Nếu khâu kiểm tra đầu vào của bạn cần dữ liệu CMM đầy đủ, hãy yêu cầu khi đặt hàng và tài liệu sẽ đi cùng dao. Khi nhiều dao dùng chung một trục, chúng được mài và giao thành bộ đồng bộ đã kiểm chứng để sai số cộng dồn không tích lũy qua các vị trí.",
+          label: "Hoàn thiện cạnh",
+          value: "Ra 0.2–0.4 μm",
         },
         {
-          question:
-            "Chúng tôi có thể chạy thử một bộ hợp kim cứng nhỏ trước khi đặt đơn đầy đủ không?",
-          answer:
-            "Được. Chúng tôi cung cấp bộ dùng thử — thường 2–5 con dao — để kiểm tra độ khớp trên máy và thử tuổi thọ lưỡi so với dao thép hiện tại của bạn. Chúng tôi muốn bạn tự chứng minh mức hoàn vốn trên dây chuyền của mình hơn là tin lời chúng tôi về con số nhân. Với biên dạng đặt riêng, một mẫu duyệt kích thước sẽ được làm trước khi vào sản xuất hàng loạt.",
+          label: "Hình học cạnh",
+          value: "Biên dạng vát đơn, vát đôi, mặt đất rỗng hoặc dao cạo",
         },
         {
-          question: "Thời gian giao dao xẻ hợp kim cứng là bao lâu?",
-          answer:
-            "Biên dạng tiêu chuẩn với mác có sẵn giao trong 7–12 ngày làm việc; hình học đặt riêng và đường kính phi tiêu chuẩn cần 15–20 ngày. Hợp kim cứng lâu hơn thép dụng cụ vì phôi thiêu kết và khâu hoàn thiện bằng đá kim cương không thể thúc nhanh mà không làm bạn mất chất lượng lưỡi. Dao được giao tách riêng từng con trong bao bì bảo vệ — phần lớn hư hỏng hợp kim cứng mà chúng tôi điều tra xảy ra trong vận chuyển hoặc lưu kho, không phải trên máy.",
+          label: "Lớp phủ tùy chọn",
+          value: "DLC, TiN hoặc TiAlN ; dao không tráng cũng có sẵn",
+        },
+        {
+          label: "Sức mạnh vỡ ngang",
+          value: "2,500–3,000 N/mm²",
         },
       ],
     },
-  },
-  {
-    id: "metal-cold-saw-blades",
-    name: "Lưỡi cưa nguội kim loại",
-    fullName:
-      "Lưỡi cưa tròn nguội HSS & TCT để cắt ống kim loại và cắt định hình",
-    category: "cold_saw_blades",
-    sector: "metal",
-    categoryDisplay: "Lưỡi gia công kim loại",
-    image: "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-    badge: "Cắt không có gờ",
-    badgeColor: "purple",
-    gallery: [
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-01.webp",
-      "/images/products/metal-cold-saw-blades/metal-cold-saw-blades-02.webp",
-    ],
-    description:
-      "Lưỡi cưa nguội HSS (M2/M35 Cobalt) và TCT cao cấp dùng để cắt ống thép, thanh đặc, nhôm định hình và thép không gỉ. Quy trình cắt nguội tạo ra một đầu cắt chính xác, không có gờ, không có vùng chịu ảnh hưởng nhiệt (HAZ)—sẵn sàng để hàn hoặc cắt ren ngay lập tức.",
-    fullDescription:
-      "Cưa tròn nguội là quy trình cắt kim loại được ưa chuộng cho các máy nghiền ống, chế tạo kết cấu và các ứng dụng phôi thanh chính xác. Không giống như bánh xe cắt hoặc cưa vòng có tính mài mòn, lưỡi cưa đĩa nguội cắt bằng cách loại bỏ kim loại (hình thành phoi) thay vì mài mòn bằng ma sát cao. Điều này giữ cho vật liệu luôn mát, tạo ra một mặt cuối nhẵn, vuông vức hoàn hảo, không bị biến dạng nhiệt và không cần phải mài giũa thứ cấp.\n\nLưỡi cưa nguội Sureay được sản xuất theo cấu hình M2 (HSS tiêu chuẩn), M35 (5% Cobalt HSS) và TCT (Tungsten Carbide Tipped). Tất cả các lưỡi dao đều được sản xuất theo tiêu chuẩn DIN 1837/1840 nghiêm ngặt và có đường kính tiêu chuẩn từ 200mm đến 450mm với cấu hình răng và lớp phủ PVD phù hợp với vật liệu phôi.\n\n## Hướng dẫn lựa chọn vật liệu & lớp\n\n**M2 HSS (Tiêu chuẩn / Đã xử lý bằng hơi nước):** Cấp độ cơ bản dành cho cưa nguội ống thép nhẹ, ống kết cấu và các phần góc có độ bền kéo lên tới 400 MPa. Cung cấp độ bền tuyệt vời cho các vết cắt gián đoạn trên các phần rỗng. Thường được cung cấp lớp hoàn thiện oxit đen (xử lý bằng hơi nước) để giữ lại chất làm mát và ngăn ngừa hàn vi mô.\n\n**M35 Cobalt HSS (Được khuyên dùng cho thép không gỉ):** Việc bổ sung 5% coban giúp nâng cao đáng kể độ cứng màu đỏ (độ cứng nóng) và khả năng chống mài mòn của lưỡi dao. Điều này rất cần thiết khi cắt thép không gỉ austenit 304/316, loại thép này cứng lại nhanh chóng dưới lưỡi dao. M35 duy trì hình dạng cạnh sắc nét thông qua nhiệt độ cắt cao do thép không gỉ tạo ra.\n\n**TCT (Tungsten Carbide Tipped):** Miếng đệm cacbua hàn đồng trên thân thép hợp kim cao. Tốt nhất cho các ứng dụng máy nghiền ống khối lượng lớn và kim loại màu (đùn nhôm, ống đồng) chạy ở tốc độ cắt cao. Mang lại tuổi thọ sử dụng lâu hơn 5–8× so với HSS trên cấu hình nhôm.\n\n## Lớp phủ PVD tiên tiến\nĐể kéo dài đáng kể tuổi thọ của lưỡi cắt và giảm ma sát khi cắt, chúng tôi cung cấp lớp phủ PVD tiên tiến:\n- **TiN (Titanium Nitride — Gold):** Giảm hệ số ma sát, lý tưởng để cắt ống thép tiêu chuẩn ở tốc độ cao hơn.\n- **TiAlN (Titanium Aluminium Nitride — Violet/Black):** Tạo thành lớp oxit nhôm cứng trong quá trình cắt, bảo vệ răng khỏi nhiệt độ quá cao. Sự lựa chọn tối ưu để cắt thép không gỉ, gang và hợp kim có độ bền kéo cao.",
-    link: "/products/metal-cold-saw-blades",
-    isFeatured: false,
     compatibleMachines: [
-      "Kaltenbach",
-      "Bewo",
-      "MEP",
-      "Kasto",
-      "Macc",
-      "Pedrazzoli",
-      "Ficep",
-    ],
-    specs: [
-      {
-        label: "Grade Options",
-        value: "M2 HSS (DMo5) · M35 Cobalt (Co5) · TCT Carbide",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 63–65 (M2) | HRC 64–66 (M35) | Carbide Tipped",
-      },
-      {
-        label: "Surface Finish",
-        value: "Steam Treated (Black) / TiN / TiAlN PVD Coatings",
-      },
-      {
-        label: "Tooth Form",
-        value: "BW, HZ (Standard) | Fine / Medium / Coarse Pitch",
-      },
-      {
-        label: "Application",
-        value: "Steel Pipes, Stainless Tubes, Aluminum Profiles, Solid Bars",
-      },
+      "BHS",
+      "Fosber",
+      "Dusenbery",
+      "DIENES",
+      "Tidland",
+      "Nishimura",
+      "Fagor Arrasate",
     ],
     components: [
       {
-        id: "cold-cut-quality",
-        tag: "LỢI THẾ QUY TRÌNH",
-        title: "Bánh xe cắt nguội và bánh xe mài mòn",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Cấu hình dao rắn và có đầu cacbua",
         description:
-          "Bánh xe mài mòn tạo ra nhiệt độ trên 800°C, tạo ra vùng ảnh hưởng nhiệt (HAZ) và xỉ nặng cần phải được nghiền nhỏ. Máy cưa đĩa nguội hoạt động ở tốc độ vòng/phút thấp với chất làm mát, giữ cho mặt cắt ở nhiệt độ dưới 200°C. Kết quả là bề mặt sạch sẽ, sẵn sàng cho mối hàn ngay trên máy.",
+          "Chọn đĩa cacbua rắn hoặc thân thép có vòng cắt cacbua để phù hợp với kết cấu theo yêu cầu của đơn đặt hàng thay thế và máy xẻ hiện tại của bạn.",
       },
       {
-        id: "grade-cobalt",
-        tag: "Luyện kim",
-        title: "Coban M35 cho thép không gỉ",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Các dạng cạnh mặt đất với lớp phủ tùy chọn",
         description:
-          "Thép không gỉ (304/316) cứng lại dưới áp lực cắt, làm cùn ngay lập tức các lưỡi M2 tiêu chuẩn. Loại M35 của chúng tôi chứa 5% Coban, mang lại 'độ cứng màu đỏ' cực cao để cắt xuyên qua thép không gỉ austenit mà không làm mất hình dạng cạnh.",
+          "Các biên dạng vát đơn, vát kép, mài rỗng và dao cạo có thể được xác định bằng các bề mặt không phủ hoặc các lớp phủ DLC, TiN và TiAlN đã chọn, cho phép bạn kiểm soát dạng lưỡi dao và hoàn thành đơn hàng theo yêu cầu.",
       },
       {
-        id: "pvd-coatings",
-        tag: "CÔNG NGHỆ BỀ MẶT",
-        title: "Lớp phủ TiN & TiAlN",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao cacbua tùy chỉnh cho máy xẻ hiện có",
         description:
-          "Trong khi các lưỡi được xử lý bằng hơi nước tiêu chuẩn rất phù hợp cho thép nhẹ, việc nâng cấp lên lớp phủ TiN (Titanium Nitride) hoặc TiAlN PVD giúp giảm đáng kể ma sát và nhiệt. Điều này cho phép tốc độ tiến dao nhanh hơn và ngăn chặn vật liệu bị hàn nguội vào răng cưa.",
+          "Các lỗ khoan, mặt cắt dọc trục và biên dạng cắt tùy chỉnh có sẵn cho bản vẽ dao hoặc tham chiếu bộ phận dành riêng cho máy của bạn, do đó, các đơn đặt hàng thay thế có thể tuân theo hình dạng của trạm cắt đã lắp đặt.",
+        relatedBladeIds: [
+          "corrugated-slitter-scorer-blades",
+          "metal-coil-slitting-knives",
+        ],
       },
     ],
-    dimensionLabels: {
-      col0: "Lớp lưỡi & kết thúc",
-      col1: "Đường kính ngoài (mm)",
-      col2: "Lỗ khoan (mm)",
-      col3: "Độ dày (mm)",
-      col4: "Răng (Z)",
-      caption:
-        "* Kích thước tiêu chuẩn cho máy Kaltenbach, Bewo và MEP. Số lượng răng (Z) được chọn dựa trên độ dày thành ống của bạn. Các lỗ chốt ổ đĩa tùy chỉnh được gia công theo đơn đặt hàng.",
-    },
-    standardDimensions: [
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "250",
-        id: "32 / 40",
-        length: "2.0",
-        teeth: "120 z / 160 z",
-      },
-      {
-        spec: "M2 HSS (Steam Treated)",
-        od: "275",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "140 z / 180 z",
-      },
-      {
-        spec: "M35 Cobalt (TiN Coated)",
-        od: "315",
-        id: "32 / 40",
-        length: "2.5",
-        teeth: "160 z / 200 z",
-      },
-      {
-        spec: "M35 Cobalt (TiAlN Coated)",
-        od: "350",
-        id: "40 / 50",
-        length: "2.5",
-        teeth: "160 z / 220 z",
-      },
-      {
-        spec: "M2 / M35 HSS",
-        od: "400",
-        id: "40 / 50",
-        length: "3.0",
-        teeth: "180 z / 240 z",
-      },
-      {
-        spec: "TCT (Aluminum Profile)",
-        od: "450",
-        id: "30 / 32",
-        length: "3.5",
-        teeth: "120 z",
-      },
-    ],
-    relatedBladeIds: ["metal-coil-slitting-knives", "metal-shear-knives"],
-    offers: {
-      lowPrice: 35,
-      highPrice: 420,
-    },
     faqs: {
       technical: [
         {
-          question: "Làm cách nào để chọn giữa loại M2 và M35 Cobalt HSS?",
+          question:
+            "Sự khác biệt giữa dao cacbua nguyên khối và dao có đầu cacbua là gì?",
           answer:
-            "Đối với thép kết cấu tiêu chuẩn, ống thép nhẹ và mặt cắt hộp, M2 HSS mang lại độ bền và giá trị tuyệt vời. Nếu bạn đang cắt thép không gỉ (304, 316), thép cường độ cao hoặc sử dụng cưa tự động tốc độ cao thì phải nâng cấp lên M35. M35 chứa 5% Cobalt giúp răng không bị mềm dưới nhiệt độ ma sát cao.",
+            "Dao cacbua rắn sử dụng cacbua xuyên qua thân dao. Dao có đầu bằng cacbua kết hợp thân thép với lưỡi làm việc bằng cacbua hoặc vòng cắt. Chỉ định cấu trúc cũng như hình dạng lắp đặt. Dao quay cacbua và lưỡi cắt cacbua là những tên mua trùng nhau; không có tên nào xác định chính công trình hoặc trạm cắt.",
         },
         {
           question:
-            "Tôi cần bao nhiêu răng (TPI / Pitch) cho ống thép của mình?",
+            "Khi nào tôi nên chọn dao cắt cacbua thay vì dao HSS hoặc dao cắt thép công cụ?",
           answer:
-            "Nguyên tắc vàng của cưa nguội là luôn có 3 đến 4 răng ăn khớp đồng thời với độ dày vật liệu. Nếu bạn đang cắt các ống có thành mỏng (ví dụ: thành 1,5mm), bạn cần bước răng nhỏ (số lượng răng cao, ví dụ: 220Z hoặc 240Z) để ngăn răng móc và gãy. Nếu bạn đang cắt các thanh đặc dày (ví dụ: đặc 40mm), bạn cần bước bước thô (số lượng răng thấp, ví dụ: 120Z) để có chỗ cho các mảnh kim loại lớn thoát ra ngoài.",
+            "Hãy xem xét cacbua liên quan đến kiểu mài mòn mà bạn cần giải quyết. Một con dao bị mòn dần dần sẽ có vấn đề lựa chọn khác với con dao bị sứt mẻ. So sánh vật liệu hiện tại, hình dạng cạnh và điều kiện làm việc, bao gồm cả giá đỡ và thiết lập máy. Chỉ riêng độ cứng không đảm bảo tuổi thọ sử dụng lâu hơn và cạnh cứng hơn không thể khắc phục được khả năng hỗ trợ kém hoặc thiết lập không chính xác.",
         },
         {
-          question: "Lưỡi cưa nguội HSS có thể mài lại được không?",
+          question:
+            "YG6 , YG8 và các loại cacbua có tên tương tự có thể thay thế cho nhau được không?",
           answer:
-            "Đúng. Đây chính là ưu điểm lớn nhất của lưỡi cưa nguội HSS. Không giống như các đĩa mài mòn bị vứt đi, lưỡi HSS có thể được mài lại bằng CNC từ 10 đến 15 lần trước khi đường kính trở nên quá nhỏ để sử dụng. Chúng tôi cung cấp dịch vụ mài lại và sơn lại chuyên nghiệp để khôi phục hiệu suất như mới xuất xưởng.",
+            "Tên hạng tương tự không tạo nên sự tương đương giữa các nhà cung cấp hoặc hệ thống phân loại. Cấu trúc hạt cacbua, hàm lượng chất kết dính và ứng dụng dự định cũng xác định vật liệu. Cung cấp các yêu cầu vật liệu được chỉ định và hiệu suất của dao hiện tại khi yêu cầu thay thế, để có thể đánh giá cấp độ đề xuất ngoài tên hoặc độ cứng danh nghĩa của nó.",
         },
         {
-          question: "Có nên sử dụng chất làm mát khi cắt bằng cưa nguội HSS?",
+          question: "Tại sao dao cắt cacbua lại bị sứt mẻ trước khi bị mòn?",
           answer:
-            "Tuyệt đối. Bạn phải sử dụng chất làm mát lũ (dầu tổng hợp hoặc bán tổng hợp hòa tan trong nước, pha với tỷ lệ khoảng 8–10%) hướng thẳng vào răng cắt. Chất làm mát rửa sạch các mảnh kim loại và giữ cho lưỡi dao luôn mát. Cắt khô bằng lưỡi HSS sẽ làm cháy răng ngay lập tức. Chỉ những lưỡi TCT chuyên dụng trên máy cao cấp mới được thiết kế để cắt khô.",
+            "Tác động, tải cạnh quá mức hoặc hư hỏng do mài có thể làm gãy cạnh cacbua trước khi mài mòn dần dần trở thành vấn đề chính. Kiểm tra vị trí hư hỏng, độ ăn khớp của dao, giá đỡ và lịch sử mài gần đây. Khả năng chống mài mòn của cacbua không loại bỏ khả năng chống sốc của nó. Xác định xem sự cố có xảy ra sau khi xử lý, thiết lập hoặc mài trước khi thay đổi cấp độ hoặc hình học tiên tiến hay không.",
+        },
+        {
+          question: "Dao cắt cacbua nên được phủ hay không tráng?",
+          answer:
+            "Cả hai loại dao không tráng phủ và các tùy chọn DLC, TiN hoặc TiAlN đã chọn đều có sẵn. Chọn dựa trên nền cacbua, vật liệu đã xử lý và độ mòn quan sát được. Chỉ định lớp phủ riêng biệt với lỗ khoan, độ dày và biên dạng cắt cần thiết để việc thay thế vẫn giữ được hình dạng lắp đặt cần thiết trong khi tùy chọn bề mặt được xem xét cho ứng dụng thực tế.",
+        },
+        {
+          question:
+            "Dao cacbua tùy chỉnh có thể được chế tạo cho máy cắt hiện có không?",
+          answer:
+            "Đúng. Sureay có thể chế tạo dao nguyên khối hoặc dao có đầu bằng cacbua theo bản vẽ hoặc tham chiếu bộ phận dành riêng cho máy. Xác định lỗ khoan, mặt cắt dọc trục, biên dạng cắt, bộ phận lắp và ghép nối. Bao gồm vật liệu đã xử lý, chẳng hạn như [lá kim loại](/products/metal-foil-strip-slitter-knives) hoặc [điện cực được phủ](/products/lithium-battery-slitting-knives) , do đó vật liệu và cấu trúc được xem xét với hình học thay thế hoàn chỉnh.",
+        },
+        {
+          question: "Dao cắt cacbua có thể được mài lại không?",
+          answer:
+            "Có, khi vẫn còn đủ vật liệu để khôi phục biên dạng cạnh đã chỉ định và kích thước làm việc. Đánh giá đĩa trên một con dao cacbit nguyên khối; trên thiết kế nghiêng, đồng thời kiểm tra vòng cacbua còn lại và phần gắn của nó với thân. Cần phải mài cacbua chuyên dụng và kiểm tra kích thước. Thiệt hại lớn hoặc vật liệu còn lại không đủ có thể khiến việc thay thế trở thành lựa chọn thích hợp.",
         },
       ],
-      company: [
-        {
-          question:
-            "Những lưỡi dao này có phù hợp với máy cưa nguội cụ thể của tôi không?",
-          answer:
-            "Lưỡi của chúng tôi có kích thước lỗ khoan tiêu chuẩn (ví dụ: 32mm, 40mm, 50mm) và các mẫu lỗ chốt truyền động phổ quát phù hợp với 95% thị trường, bao gồm Kaltenbach, Bewo, MEP, Macc, Pedrazzoli và Kasto. Nếu máy của bạn có bố trí chốt ổ đĩa không chuẩn, chúng tôi có thể gia công CNC các lỗ lắp chính xác trước khi vận chuyển.",
-        },
-        {
-          question:
-            "Thời gian sản xuất lưỡi dao được phủ M35 Cobalt hoặc TiAlN là bao lâu?",
-          answer:
-            "Các lưỡi dao M2 (Xử lý bằng hơi nước) tiêu chuẩn ở các kích cỡ phổ biến thường có sẵn trong kho và giao hàng trong vòng 3–5 ngày. Lưỡi Cobalt M35 cao cấp và lớp phủ PVD tùy chỉnh (TiN, TiAlN) thường cần 10–15 ngày làm việc.",
-        },
-      ],
+      company: [],
     },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "metal-coil-slitting-knives",
+      "lithium-battery-slitting-knives",
+    ],
   },
   {
     id: "scrap-chopper-blades",
-    name: "Lưỡi cắt phế liệu",
-    fullName:
-      "Lưỡi cắt phế liệu hạng nặng dành cho dây chuyền gia công cuộn và rạch kim loại",
+    name: "Dao chặt biên phế liệu kim loại",
+    fullName: "Dao cắt vụn phế mép cho dây chuyền xẻ dọc kim loại cuộn",
+    seoTitle: "Lưỡi cắt phế liệu | Dao cuộn dây tùy chỉnh",
     category: "shear_blades",
     sector: "metal",
-    categoryDisplay: "Lưỡi cắt phế liệu",
-    image: "/images/products/granulator-blades/scrap-chopper-blades.webp",
+    categoryDisplay: "Dao chặt biên phế liệu kim loại",
+    image: "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
     badge: "Tác động cực độ",
     badgeColor: "orange",
     gallery: [
-      "/images/products/granulator-blades/scrap-chopper-blades.webp",
+      "/images/products/shear-detail/scrap-chopper-blades-cover.webp",
       "/images/products/granulator-blades/scrap-chopper-blades-01.webp",
-      "/images/products/granulator-blades/scrap-chopper-blades-02.webp",
+      "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
     ],
     description:
-      "Được thiết kế đặc biệt để tồn tại trong môi trường hỗn loạn, chịu tác động cực lớn của quá trình cắt tỉa cạnh trên dây chuyền xử lý. Được rèn từ thép công cụ chống va đập S7 hoặc có hình học dát cacbua chuyên dụng, những lưỡi dao này có thể bẻ gãy và giảm thiểu các dải thép không đều, viền dải nhôm và mảnh vụn ở cạnh lá đồng mà không bị hỏng hoặc sứt mẻ lưỡi nghiêm trọng.",
-    fullDescription:
-      "Nằm ở điểm cuối của dây chuyền cắt và chuyển đổi kim loại, máy cắt phế liệu có nhiệm vụ tiêu hủy chất thải cắt cạnh không đều được tạo ra trong quá trình xử lý. Môi trường hoạt động bao gồm tải trọng tác động nghiêm trọng, không thể đoán trước, có khả năng làm vỡ các lưỡi dao tiêu chuẩn. Do đó, lưỡi cắt phế liệu được rèn từ các hợp kim chịu va đập, chịu va đập cao như thép công cụ S7 hoặc sử dụng các thiết kế dát cacbua được hỗ trợ mạnh để bẻ gãy thép, nhôm và phế thải đồng một cách sạch sẽ mà không bị hỏng.\n\n## Môi trường hoạt động & thách thức\n\nMáy cắt phế liệu hoạt động trong các điều kiện cơ bản khác với việc rạch hoặc cắt chính xác:\n\n**Hình học vật liệu không thể đoán trước:** Viền cạnh từ các đường rạch được đưa đến máy băm với các cấu hình không đều, cuộn tròn và xoắn. Không giống như cắt tấm thẳng, lưỡi cắt phải tiếp xúc với mảnh vụn ở các góc ngẫu nhiên, tạo ra tải trọng tác động thay đổi có thể vượt quá 3–5 × lực định mức danh nghĩa.\n\n**Tạp chất & ô nhiễm kim loại:** Dòng phế liệu thường chứa các ốc vít kim loại, vết hàn và vảy cán tạo ra sự tập trung ứng suất cục bộ. Các lưỡi có độ cứng cao tiêu chuẩn (D2 ở HRC 60–62) rất giòn và dễ gãy khi bị tác động bởi các tạp chất như vậy.\n\n**Tần suất chu kỳ cao:** Máy cắt phế liệu hoạt động ở tốc độ 40–120 lần mỗi phút tùy thuộc vào tốc độ dây chuyền. Mỗi lưỡi dao truyền tải trọng va đập và lưỡi dao phải chống lại sự lan truyền vết nứt do mỏi qua hàng triệu chu kỳ.\n\n## Giải pháp luyện kim\n\n**Thép công cụ chống sốc S7:** S7 là thép công cụ crom-molypden-vonfram được phát triển đặc biệt cho các ứng dụng dụng cụ va đập. Không giống như D2 (đạt được khả năng chống mài mòn thông qua 12% kết tủa cacbua crom), S7 sử dụng hàm lượng cacbon thấp hơn (0,50% C so với 1,55% C trong D2) và hệ thống hợp kim cân bằng tạo ra ma trận cứng cáp, đàn hồi. Được xử lý nhiệt đến HRC 54–58, S7 mang lại độ bền va đập gấp đôi D2, hầu như loại bỏ hiện tượng gãy lưỡi thảm khốc.\n\n**Thép công cụ gia công nóng H13:** H13 (5% crom, 1,5% molypden, 1% vanadi) là loại thép phù hợp để cắt phế liệu nhôm và đồng. Cấu trúc austenit của nó ở nhiệt độ vận hành mang lại khả năng hấp thụ sốc tuyệt vời và tỷ lệ thể tích cacbua thấp ngăn ngừa hiện tượng gãy giòn khi va chạm với kim loại. Phù hợp nhất cho các dòng phế liệu kim loại màu.\n\n**Cạnh được dát cacbua:** Đối với các trung tâm dịch vụ thép gia công chi tiết trang trí bằng thép không gỉ và cường độ cao, hạt dao hợp kim cacbua vonfram được hỗ trợ cơ học trong thân S7 hoặc H13. Cacbua cung cấp khả năng chống mài mòn cục bộ ở lưỡi cắt, trong khi thân thép dụng cụ hấp thụ tổng năng lượng va chạm. Cấu trúc kết hợp này mang lại tuổi thọ sử dụng lâu hơn 3–5 lần so với S7 rắn trong các dòng phế liệu bị ô nhiễm nặng.",
+      "Lưỡi dao cắt phế liệu thay thế tùy chỉnh để cắt cạnh đường cuộn. Dao S7 , H13 hoặc cacbua có các kiểu cắt thẳng, xẻ hoặc định hình.",
     link: "/products/scrap-chopper-blades",
     isFeatured: false,
     compatibleMachines: [
@@ -4487,104 +5770,64 @@ export const blades: Blade[] = [
       "Kohler Maschinenbau",
       "Fagor Arrasate",
     ],
-    specs: [
-      {
-        label: "Material",
-        value:
-          "S7 Shock-Resisting Tool Steel | H13 Hot-Work Steel | Carbide-Inlaid S7",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–58 (optimized for maximum impact toughness)",
-      },
-      {
-        label: "Edge Configuration",
-        value: "Square/Rectangular Profile (4-edge usable)",
-      },
-      {
-        label: "Impact Resistance",
-        value: "2× toughness vs. D2 — prevents catastrophic fracture",
-      },
-      {
-        label: "Application",
-        value:
-          "Steel, aluminum, copper edge-trim scrap from slitting & coil processing lines",
-      },
-      {
-        label: "Cycle Life",
-        value: "50,000–200,000 chops (material & contamination dependent)",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Nhận dao cắt phế liệu thay thế cho dây chuyền rạch cuộn của bạn, với các lưỡi cắt được dát S7 , H13 hoặc cacbua và biên dạng tùy chỉnh. Gửi bản vẽ hoặc mẫu dao hiện có của bạn và Sureay sẽ chuẩn bị báo giá cho máy băm của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "s7-metallurgy",
-        tag: "KHOA HỌC VẬT LIỆU",
-        title: "Cấu trúc hợp kim chống sốc S7",
+        id: "scrap-chopper-profile",
+        tag: "Cắt hình học",
+        title: "Tùy chọn thép công cụ và khảm cacbua",
         description:
-          "Thép công cụ S7 đạt được độ bền vượt trội thông qua hệ thống hợp kim được cân bằng cẩn thận: 0,50% carbon (so với 1,55% trong D2) giảm thiểu sự hình thành cacbua giòn, trong khi bổ sung crom (3,25%), molypden (1,40%) và vonfram (1,80%) mang lại độ cứng và khả năng chịu nhiệt. Được xử lý nhiệt thành HRC 54–58 thay vì HRC 60–62 điển hình của D2, S7 hy sinh một số khả năng chống mài mòn để đổi lấy năng lượng va chạm Charpy gấp đôi. Đây là sự đánh đổi quan trọng đối với các ứng dụng máy cắt phế liệu: lưỡi dao phải hấp thụ tải trọng va đập không thể đoán trước mà không bị vỡ.",
+          "Sureay cung cấp các cấu hình S7 , H13 và S7 được dát cacbua cho viền cạnh bằng thép, nhôm hoặc đồng. Độ cứng được liệt kê cho các phiên bản dao thép là 54–58 HRC .",
       },
       {
-        id: "4-edge-design",
-        tag: "HIỆU QUẢ THIẾT KẾ",
-        title: "Cấu hình đảo ngược bốn cạnh",
+        id: "scrap-chopper-mounting",
+        tag: "Cài đặt",
+        title: "Sắp xếp cắt thẳng, cắt và cắt định hình",
         description:
-          "Lưỡi cắt phế liệu được sản xuất dưới dạng khối hình chữ nhật với bốn cạnh cắt có thể sử dụng được. Khi cạnh hoạt động có biểu hiện mòn rõ ràng (thường được biểu thị bằng tiếng ồn cắt tăng lên hoặc vết nứt không hoàn toàn), người vận hành sẽ điều chỉnh lưỡi dao 90° để tạo ra một cạnh mới. Thiết kế này tăng gấp bốn lần tuổi thọ sử dụng hiệu quả so với lưỡi dao một cạnh và giảm thời gian ngừng hoạt động không hiệu quả. Hình dạng thân lưỡi dao được mài chính xác để đảm bảo tất cả bốn cạnh song song trong phạm vi ±0,05mm, ngăn tải trọng không đồng đều có thể gây mòn sớm trên các cạnh được lập chỉ mục.",
+          "Sureay cung cấp dao thay thế cho các loại dao thẳng hoặc nghiêng, bao gồm bán kính và biên dạng mặt đất xoắn ốc để vẽ, do đó, các đơn đặt hàng có thể tái tạo hình học làm việc của máy băm đã lắp đặt.",
       },
       {
-        id: "carbide-inlay",
-        tag: "TÙY CHỌN NÂNG CAO",
-        title: "Cấu trúc hỗn hợp dát cacbua",
+        id: "scrap-chopper-feed",
+        tag: "Điều kiện đường dây cuộn",
+        title: "Khối dao tùy chỉnh với các tùy chọn có thể lập chỉ mục",
         description:
-          "Đối với các trung tâm dịch vụ thép xử lý vật liệu trang trí bằng thép không gỉ hoặc carbon cao bị nhiễm bẩn quy mô nhà máy nặng, chúng tôi cung cấp lưỡi cắt phế liệu được dát cacbua. Phần chèn hợp kim cacbua vonfram (thường rộng 6–10 mm, độ dày toàn bộ lưỡi) được khóa cơ học vào một khe nối đất chính xác trong thân S7 bằng cách sử dụng khớp nối co lại hoặc hàn đồng. Cacbua cung cấp khả năng chống mài mòn cục bộ khi lưỡi dao tiếp xúc với mảnh vụn, trong khi thân S7 hấp thụ tổng năng lượng va chạm. Cấu trúc này là giải pháp tối ưu cho các dòng phế liệu bị ô nhiễm, nơi cacbua rắn sẽ bị gãy và S7 rắn bị mòn quá nhanh.",
+          "Thân hình vuông và hình chữ nhật có sẵn với các chi tiết lắp đặt dành riêng cho máy. Có thể đặt hàng phiên bản bốn cạnh trong đó cấu hình dao ban đầu hỗ trợ lập chỉ mục, cùng với các miếng thay thế riêng lẻ.",
       },
     ],
-    dimensionLabels: {
-      col0: "Máy / Nhiệm vụ điển hình",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước tiêu chuẩn cho các mẫu máy băm phế liệu thông thường. Kích thước tùy chỉnh có sẵn. Tất cả các lưỡi dao đều có thể đảo ngược 4 cạnh. Tùy chọn khảm cacbua có sẵn cho tất cả các kích thước (+30–40% đơn giá tăng thêm).",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Light Gauge Trim",
-        od: "100",
-        id: "40",
-        thickness: "15",
+        label: "Kích cỡ",
+        value: "100–400 mm",
       },
       {
-        spec: "Standard Capacity",
-        od: "150",
-        id: "50",
-        thickness: "20",
+        label: "Vật liệu",
+        value: "Thép công cụ S7 , thép công cụ H13 hoặc S7 dát cacbua",
       },
       {
-        spec: "Butech / Medium Duty",
-        od: "200",
-        id: "60",
-        thickness: "25",
+        label: "độ cứng",
+        value: "Phiên bản dao thép: 54–58 HRC",
       },
       {
-        spec: "Heavy Duty Coil Line",
-        od: "250",
-        id: "80",
-        thickness: "25",
+        label: "Thân lưỡi",
+        value: "Hồ sơ hình vuông hoặc hình chữ nhật; phiên bản bốn cạnh có sẵn",
       },
       {
-        spec: "Extra Heavy",
-        od: "300",
-        id: "80",
-        thickness: "30",
+        label: "Cấu hình máy băm",
+        value:
+          "Sắp xếp dao thẳng hoặc dao cào; bán kính và biên dạng mặt đất xoắn ốc để vẽ",
       },
       {
-        spec: "Extreme Plate Chopper",
-        od: "400",
-        id: "100",
-        thickness: "30",
+        label: "Ứng dụng",
+        value: "Phế liệu thép, nhôm và đồng từ dây chuyền rạch cuộn",
+      },
+      {
+        label: "Vòng đời",
+        value:
+          "50.000–200.000 miếng, tùy thuộc vào nguyên liệu và mức độ nhiễm bẩn",
       },
     ],
-    relatedBladeIds: ["metal-shear-knives", "metal-coil-slitting-knives"],
+    relatedBladeIds: ["metal-coil-slitting-knives", "guillotine-shear-blades"],
     offers: {
       lowPrice: 35,
       highPrice: 280,
@@ -4592,48 +5835,160 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Cắt viền inox nên dùng S7 hay H13?",
+          question:
+            "Lưỡi cắt phế liệu và dao cắt cạnh có phải là cùng một sản phẩm không?",
           answer:
-            "Đối với các loại trang trí bằng thép không gỉ (304, 316 hoặc song công), hãy chỉ định S7 ở HRC 54–58. Thép không gỉ tạo ra lực cắt cao hơn thép nhẹ do gia công cứng lại và hệ thống hợp kim cân bằng của S7 mang lại khả năng giữ cạnh tốt hơn H13 trong ứng dụng này. H13 được tối ưu hóa cho phế liệu nhôm và đồng trong đó lực cắt thấp hơn cho phép ma trận H13 mềm hơn hấp thụ tác động mà không bị biến dạng cạnh quá mức. Đối với phế liệu không gỉ bị ô nhiễm nặng có vết hàn hoặc ốc vít, hãy nâng cấp lên lớp phủ cacbua S7.",
+            "Đúng. Trên dây chuyền cuộn, cả hai tên đều đề cập đến những con dao cắt phần viền bỏ đi thành những đoạn ngắn. Việc lắp ráp máy băm xác định biên dạng làm việc và cách lắp đặt của chúng. dao tròn rạch cuộn dây sản xuất là [Dao rạch cuộn thép](/products/metal-coil-slitting-knives) .",
         },
         {
           question:
-            "Làm cách nào để biết khi nào nên đưa lưỡi dao vào lưỡi cắt tiếp theo?",
+            "Độ dày dải và chiều rộng viền ảnh hưởng đến thông số kỹ thuật của dao như thế nào?",
           answer:
-            "Dấu hiệu chính là tiếng ồn hoặc độ rung khi cắt tăng lên, điều này báo hiệu rằng cạnh hoạt động đã bị mòn phẳng và không còn làm gãy phế liệu một cách rõ ràng nữa. Bằng mắt thường, hãy kiểm tra cạnh hoạt động sau mỗi 8–12 giờ hoạt động. Khi mặt phẳng mòn (vùng bị xỉn màu, được đánh bóng trên góc cắt) vượt quá chiều rộng 1,0–1,5mm, đó là lúc phải chuyển sang cạnh tiếp theo. Lập chỉ mục trước khi mặt phẳng mài mòn tiếp xúc với thân lưỡi cắt giúp ngăn chặn sự mài mòn nhanh chóng trên giá đỡ và khung.",
+            "Loại dải, độ dày và chiều rộng cắt mô tả vật liệu đi vào máy băm và giúp xác định nhiệm vụ cắt. Bộ phận cắt xác định kích thước và cách lắp đặt thân dao. Xem lại cả hai bộ thông tin khi so sánh các tùy chọn vật liệu hoặc cạnh, đặc biệt nếu dây chuyền xử lý thông số kỹ thuật cắt tỉa khác với trước đó.",
+        },
+        {
+          question: "Tại sao lưỡi dao của máy băm thịt có thể bị sứt mẻ?",
+          answer:
+            "Quá tải cơ học, khoảng hở cắt không phù hợp và việc cắt mép gấp đôi có thể góp phần gây sứt mẻ. Thời gian quá dài giữa các lần nghiền lại và vật liệu hoặc độ cứng không phù hợp cũng có thể liên quan. Kiểm tra nguồn cấp dữ liệu, thiết lập cắt và mô hình hư hỏng cùng nhau. Quy trình của nhà sản xuất máy băm cung cấp các yêu cầu về khoảng trống cho vật liệu đang được xử lý.",
         },
         {
           question:
-            "Lưỡi dao cắt phế liệu có thể được mài lại hoặc mài lại không?",
+            "Điều gì giúp nhận biết dao cắt thẳng, dao cào, bán kính và mặt đất xoắn ốc?",
           answer:
-            "Lưỡi cắt phế liệu là vật liệu dễ bị mài mòn và thường không được mài lại. Thiết kế đảo ngược 4 cạnh đã mang lại tuổi thọ sử dụng kéo dài và việc mài lại sẽ yêu cầu xử lý nhiệt lại và mài chính xác để khôi phục hình dạng và độ cứng của cạnh. Chi phí mài lại khoảng 60–70% chi phí lưỡi dao mới, giúp việc thay thế trở nên tiết kiệm hơn. Tuy nhiên, đối với các lưỡi tùy chỉnh rất lớn (dài trên 500mm), việc mài lại có thể tiết kiệm chi phí — hãy liên hệ với chúng tôi về kích thước lưỡi của bạn.",
+            "Những thuật ngữ này mô tả dạng lưỡi làm việc hoặc sự sắp xếp của nó trong máy. Các bản vẽ dao và lắp ráp thiết lập đường viền, hướng và mối quan hệ với cạnh đối diện. Giữ lại các tính năng đó khi yêu cầu thay thế, đặc biệt khi cùng kích thước khối bên ngoài có thể chứa các cấu hình làm việc khác nhau.",
+        },
+        {
+          question:
+            "Có phải mọi con dao cắt phế liệu đều có bốn cạnh có thể sử dụng được không?",
+          answer:
+            "Không. Bốn cạnh chỉ có thể sử dụng được trên thân dao và giá đỡ được thiết kế cho bốn vị trí chia độ. Sử dụng bản vẽ dao để xác nhận từng hướng, kiểm tra hư hỏng của các cạnh không sử dụng và khôi phục cài đặt cắt đã chỉ định khi thay đổi các cạnh.",
+        },
+        {
+          question: "Dao cắt phế liệu bị mòn có thể được mài lại không?",
+          answer:
+            "Có, nếu các mặt bị mòn hoặc hư hỏng có thể được phục hồi trong phạm vi kích thước cho phép của dao. Kiểm tra biên dạng cắt, bề mặt tựa và vật liệu còn lại so với bản vẽ. Dao mài lại vẫn phải đặt đúng vị trí và có khoảng hở cắt được chỉ định.",
+        },
+        {
+          question: "Bạn cần thông tin gì để báo giá dao cắt cạnh?",
+          answer:
+            "Gửi mẫu máy cắt, bản vẽ dao hoặc số bộ phận ban đầu, cấp độ trang trí, độ dày và chiều rộng cũng như số lượng. Dán nhãn vị trí cắt và biên dạng làm việc, đặc biệt đối với dao cào, dao bán kính hoặc dao mài xoắn ốc. Nếu sử dụng mẫu, hãy đánh dấu các mặt đã được mài lại.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình máy cắt, bản vẽ dao, kiểu lắp, cấp dải, độ dày và chiều rộng viền cạnh.",
+    disambiguation:
+      "Đối với dao tròn rạch cuộn dây sản xuất, xem [Dao rạch cuộn thép](/products/metal-coil-slitting-knives) .",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1280,
+      smallerWidths: [320, 640],
+    },
+    detailLayout: {
+      heroAlt: "Hai con dao cắt phế liệu hình chữ nhật có lỗ lắp và cạnh cắt",
+      sizeRange: "100–400 mm",
+      heroSpecs: [
         {
-          question:
-            "Sureay có dự trữ lưỡi dao băm phế liệu hay chúng được sản xuất theo đơn đặt hàng?",
-          answer:
-            "Chúng tôi duy trì tồn kho các lưỡi máy băm phế liệu S7 tiêu chuẩn với sáu kích thước phổ biến nhất (100×40×15mm đến 400×100×30mm). Lưỡi dao có sẵn sẽ được vận chuyển trong vòng 3–5 ngày làm việc. Kích thước tùy chỉnh, vật liệu H13 và cấu hình khảm cacbua được sản xuất theo đơn đặt hàng với thời gian thực hiện là 12–18 ngày làm việc kể từ khi phê duyệt bản vẽ. Có thể sản xuất gấp (7–10 ngày) đối với các kích thước tiêu chuẩn tùy theo lịch trình xử lý nhiệt sẵn có.",
-        },
-        {
-          question:
-            "Sureay có thể cung cấp lưỡi cắt phế liệu phù hợp với kích thước lưỡi cắt hiện có của chúng tôi không?",
-          answer:
-            "Đúng. Gửi cho chúng tôi một lưỡi dao mẫu, bản vẽ kỹ thuật hoặc kiểu dáng và số kiểu máy băm nhỏ. Chúng tôi sẽ xác nhận chiều dài, chiều rộng, độ dày, kiểu lỗ lắp (nếu có) và loại vật liệu. Hầu hết các lưỡi máy cắt đều là khối hình chữ nhật tiêu chuẩn không có lỗ lắp, nhưng một số kiểu máy sử dụng bộ giữ bằng kẹp hoặc bắt vít yêu cầu vị trí lỗ cụ thể. Chúng tôi có thể sao chép bất kỳ hình dạng lưỡi hiện có nào.",
+          label: "Ứng dụng",
+          value: "Viền cắt được thải ra từ đường rạch cuộn",
         },
       ],
+      specificationImage: {
+        src: "/images/products/shear-detail/scrap-chopper-knives-samples.webp",
+        alt: "Các mẫu dao cắt phế liệu thể hiện các hình dạng thân và kiểu lỗ lắp khác nhau",
+      },
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "100–400 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "Thép công cụ S7 , thép công cụ H13 hoặc S7 dát cacbua",
+        },
+        {
+          label: "độ cứng",
+          value: "Phiên bản dao thép: 54–58 HRC",
+        },
+        {
+          label: "Thân lưỡi",
+          value:
+            "Hồ sơ hình vuông hoặc hình chữ nhật; phiên bản bốn cạnh có sẵn",
+        },
+        {
+          label: "Cấu hình máy băm",
+          value:
+            "Sắp xếp dao thẳng hoặc dao cào; bán kính và biên dạng mặt đất xoắn ốc để vẽ",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Phế liệu thép, nhôm và đồng từ dây chuyền rạch cuộn",
+        },
+        {
+          label: "Vòng đời",
+          value:
+            "50.000–200.000 miếng, tùy thuộc vào nguyên liệu và mức độ nhiễm bẩn",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+          ],
+          rows: [
+            ["SR003301", "100", "40", "15"],
+            ["SR003302", "150", "50", "20"],
+            ["SR003303", "200", "60", "25"],
+            ["SR003304", "250", "80", "25"],
+            ["SR003305", "300", "80", "30"],
+            ["SR003306", "400", "100", "30"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Bao gồm mô hình máy cắt, bản vẽ dao, kiểu lắp, cấp dải, độ dày và chiều rộng viền cạnh.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    rfqPlaceholder:
+      "Bao gồm mô hình máy cắt, bản vẽ dao, kiểu lắp, cấp dải, độ dày và chiều rộng viền cạnh.",
+    dimensionLabels: {
+      intro:
+        "Thứ nguyên được liệt kê xác định cấu hình danh mục. Xác nhận bản vẽ, giao diện lắp đặt, vị trí dao và các cạnh cắt có thể sử dụng được; chỉ riêng kích thước không xác định được mẫu máy cắt.",
     },
   },
   {
     id: "strand-pelletizer-rotors",
-    name: "Cánh quạt Pelletizer",
-    fullName:
-      "Rotor Pelletizer dạng sợi có độ chính xác cao cho dây chuyền trộn",
-    category: "granulator_blades",
+    name: "Rôto máy cắt hạt nhựa dạng sợi",
+    fullName: "Rôto cắt cho máy tạo hạt nhựa dạng sợi",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Lưỡi ép viên",
     image: "/images/products/blades/strand-pelletizer-rotor-01.webp",
+    imageDimensions: {
+      width: 1600,
+      height: 1600,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "PM-HSS & cacbua",
     badgeColor: "blue",
     gallery: [
@@ -4642,9 +5997,7 @@ export const blades: Blade[] = [
       "/images/products/blades/strand-pelletizer-rotor-03.webp",
     ],
     description:
-      "Rô-to máy tạo hạt sợi chính xác được thiết kế cho các dây chuyền trộn khối lượng lớn, liên tục. PM-HSS (ASP2023, ASP2052) và cấu trúc hợp kim cacbua vonfram vững chắc. Hình học xoắn ốc có độ đồng tâm ≤0,005mm, cân bằng động theo tiêu chuẩn ISO 1940-1 G2.5. Sản phẩm thay thế sẵn có cho máy ép viên Maag, Coperion, Cumberland, Conair và Removal Engineering.",
-    fullDescription:
-      "Được thiết kế cho các dây chuyền trộn khối lượng lớn, liên tục, rôto máy ép viên dạng sợi của Sureay mang đến những viên nhỏ đồng nhất, hoàn hảo không có đuôi. Được sản xuất từ ​​Thép tốc độ cao luyện kim bột (PM-HSS) tiên tiến và cacbua vonfram rắn, rôto xoắn ốc của chúng tôi được thiết kế để chịu được độ mài mòn cực cao của polyme chứa đầy thủy tinh (GF), chứa đầy carbon và có nhiều sắc tố. Mỗi rôto đều trải qua quá trình cân bằng động nghiêm ngặt và mài biên dạng chính xác để đảm bảo độ đồng tâm hoàn hảo, giảm độ mài mòn và độ rung của ổ trục ngay cả ở tốc độ RPM cao nhất.\n\n## Các loại rôto\n\n**Rotor xoắn ốc (xoắn ốc):** Cấu hình tiêu chuẩn cho việc trộn liên tục tốc độ cao. Bước xoắn ốc không đổi trên toàn bộ chiều rộng cắt đảm bảo tác động cắt tăng dần - một răng sẽ ăn khớp vào bất kỳ thời điểm nào thay vì toàn bộ cạnh va chạm đồng thời. Điều này làm giảm đáng kể lực cắt cực đại, tải động cơ và hiện tượng đứt sợi. Trung tâm mài CNC 5 trục của Sureay duy trì độ dốc xoắn ốc không đổi trong phạm vi ±0,01° trên toàn bộ mặt rôto.\n\n**Rotor cạnh thẳng:** Được chỉ định cho chất đàn hồi mềm hơn và polyme có độ nhớt thấp nóng chảy khi lực cắt xoắn ốc quá mức. Hành động cắt đồng thời toàn chiều rộng mang lại chiều dài viên rõ ràng, nhất quán trên các sợi TPE, TPU và TPV.\n\n**Rotor phủ cacbua hàn đồng thau:** Giải pháp tối ưu cho việc kết hợp mài mòn các hợp chất chứa đầy thủy tinh (GF), chứa đầy carbon (CF) và các hợp chất chứa đầy khoáng chất. Mảnh dao cắt bằng cacbua vonfram được hàn chân không vào thân rôto HSS được gia công chính xác. Các cạnh cacbua mang lại tuổi thọ sử dụng lâu hơn 5–10× so với M2 tiêu chuẩn trên hợp chất GF40 và CF30, trong khi thân HSS bền bỉ hấp thụ tải trọng sốc từ các sợi không liên tục và các sự kiện khởi động nguội mà không bị gãy giòn.\n\n**Rotor cacbua rắn:** Thông số kỹ thuật tối ưu dành cho các hợp chất có độ mài mòn cực cao ở công suất vừa phải. Được sử dụng trong hỗn hợp đặc biệt của gốm siêu mài mòn, boron nitride và polyme chứa đầy SiC, nơi ngay cả các đầu cacbua hàn đồng cũng bị mòn nhanh chóng.\n\n## Lựa chọn vật liệu theo ứng dụng\n\n**M2, M35 HSS (Hợp chất tiêu chuẩn):** Tiết kiệm chi phí cho nhựa nhiệt dẻo không chứa đầy — PA6, PA66, PC, POM, PBT — ở nhiệt độ trộn tiêu chuẩn. Cấp coban M35 kéo dài tuổi thọ sử dụng trên các chất độn có độ mài mòn vừa phải (Talc, CaCO₃) thêm 30–40% so với M2 tiêu chuẩn.\n\n**PM-HSS: ASP2023, ASP2052, CPM10V (Hợp chất mài mòn):** Sản xuất luyện kim bột tạo ra sự phân phối cacbua đồng nhất, siêu mịn mà HSS thông thường không thể đạt được. ASP2023 mang lại tuổi thọ cạnh dài hơn 2–3× trên các hợp chất GF20 và CF15. Tuổi thọ dụng cụ đẩy ASP2052 và CPM10V lên 4–6× M2 trên các hợp chất được đổ đầy có yêu cầu khắt khe nhất. Cấu trúc vi mô PM cũng làm giảm hiện tượng sứt mẻ vi mô ở cạnh gây ra các hạt mịn và ô nhiễm bụi.\n\n**Cacbua vonfram rắn (WC) & đầu cacbua hàn đồng (Mài mòn cực độ):** Dành cho hợp chất sợi thủy tinh dài (LGF), polyme gia cố bằng sợi carbon và hạt nhựa có hàm lượng khoáng chất cao. Cacbua duy trì khả năng cắt của nó dưới tải trọng mài mòn liên tục có thể loại bỏ PM-HSS trong vòng vài giờ.\n\n## Kịch bản ứng dụng\n\n**Sợi thủy tinh dài (LGF) & Hợp chất sợi carbon:** Rôto hợp kim cacbua vonfram được hàn bằng đồng duy trì lưỡi cắt dài hơn 5–10× so với HSS tiêu chuẩn khi cắt vật liệu tổng hợp kết cấu có độ mài mòn cao. Quá trình hàn chân không đảm bảo răng cacbua không thể tách ra, ngay cả khi chịu tải va đập mạnh khi khởi động sợi nguội.\n\n**Masterbatch & Sản xuất sắc tố cao:** Sáo răng được đánh bóng như gương (Ra 0,2µm) ngăn chặn sự tích tụ màu, cho phép thay đổi màu nhanh chóng và không bị nhiễm bẩn chéo giữa các lô.\n\n**Nhựa nhiệt dẻo kỹ thuật (PA, PC, POM, PBT):** Độ đồng tâm siêu chặt (<0,005mm) cho phép người vận hành thiết lập các khe hở cực nhỏ, tạo ra đường cắt sạch, giống như cắt kéo giúp loại bỏ các hạt mịn, bụi và da rắn.\n\n**Chất đàn hồi mềm (TPE, TPU, TPV):** Góc cắt cấp tính được tối ưu hóa giúp ngăn chặn sự kéo giãn và nhòe của các sợi mềm, loại bỏ hiệu ứng đuôi đáng sợ.\n\n## Khả năng tương thích OEM\n\nSureay sản xuất các rôto thay thế phụ kiện chính xác cho các nền tảng máy ép viên chính. Tất cả các rôto thay thế đều được thiết kế ngược từ bản vẽ OEM hoặc mẫu của khách hàng, được xác minh trên CMM và được cung cấp báo cáo kiểm tra kích thước đầy đủ.\n\n*Tất cả tên và kiểu máy của nhà sản xuất chỉ được sử dụng cho mục đích tham khảo và tương thích.*",
+      "Rôto máy ép viên sợi thay thế có cạnh cắt xoắn ốc hoặc thẳng. Tùy chọn HSS và cacbit, với biên dạng răng và đầu trục tùy chỉnh.",
     link: "/products/strand-pelletizer-rotors",
     isFeatured: true,
     compatibleMachines: [
@@ -4654,66 +6007,128 @@ export const blades: Blade[] = [
       "Conair",
       "Reduction Engineering",
     ],
-    specs: [
-      {
-        label: "Material",
-        value:
-          "M2 (AISI M2 / 1.3343) | M35 (1.3243) | PM-HSS ASP2023 (1.3395) / ASP2052 / CPM10V | Solid WC & Brazed Carbide",
-      },
-      {
-        label: "Application",
-        value:
-          "GF/CF Compounding, Masterbatch, Engineering Thermoplastics (PA/PC/POM/PBT), Soft Elastomers (TPE/TPU/TPV)",
-      },
-      {
-        label: "Rotor Types",
-        value:
-          "Helical (Spiral), Straight Edge, Brazed Carbide Inlay, Solid Carbide",
-      },
-      {
-        label: "Tooth Count",
-        value: "10, 12, 16, 24, 32, 48, 60, up to 120 (custom)",
-      },
-      {
-        label: "Concentricity (Runout)",
-        value: "≤ 0.005 mm — critical for micro-clearance setting",
-      },
-      {
-        label: "Surface Polish",
-        value: "Ra 0.2 µm — prevents polymer build-up and sticking",
-      },
-      {
-        label: "Dynamic Balancing",
-        value: "ISO 1940-1 G2.5 — vibration-free at peak RPM",
-      },
-      {
-        label: "Helical Angle",
-        value: "1.5°, 2°, 3° or custom-milled to OEM blueprints",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Nguồn rô-to máy ép viên sợi thay thế có kiểu răng, chiều rộng làm việc và giao diện trục mà dây chuyền của bạn yêu cầu. Sureay cung cấp các thiết kế xoắn ốc hoặc cạnh thẳng trong kết cấu thép và cacbua. Chia sẻ bản vẽ hoặc rôto bị mòn của bạn để nhận được báo giá thay thế tùy chỉnh. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "dynamic-balancing",
-        tag: "KỸ THUẬT CHÍNH XÁC",
-        title: "Cân bằng động không khuyết tật",
+        id: "strand-rotor-tooth-layout",
+        tag: "Cắt hình học",
+        title: "Tùy chọn rôto HSS , PM-Thép và cacbua",
         description:
-          "Hoạt động ở tốc độ cao, rôto không cân bằng sẽ phá hủy vòng bi và làm hỏng khe hở. Mỗi rôto Sureay được cân bằng động ở tốc độ vận hành theo tiêu chuẩn ISO 1940-1 G2.5, đảm bảo vận hành êm ái, không rung và bảo vệ khoản đầu tư vòng bi của máy ép viên.",
+          "Sureay cung cấp các tùy chọn M2 , M35 , ASP2023 , ASP2052 và CPM 10V cùng với cấu trúc cắt cacbua rắn hoặc hàn đồng, cho phép chỉ định vật liệu rôto cho hợp chất polyme và thiết kế dao cắt hiện có.",
       },
       {
-        id: "helical-geometry",
-        tag: "MÀI CNC 5 TRỤC",
-        title: "Hình học xoắn ốc hoàn hảo",
+        id: "strand-rotor-construction",
+        tag: "Kết cấu",
+        title: "Hình học cắt xoắn ốc và cắt thẳng",
         description:
-          "Sử dụng các trung tâm mài CNC 5 trục hiện đại, chúng tôi đảm bảo bước xoắn ốc không đổi trên toàn bộ chiều rộng cắt. Điều này đảm bảo lực cắt không đổi, giảm tải động cơ và ngăn ngừa đứt sợi trên dây chuyền trộn tốc độ cao.",
+          "Đường kính cắt được liệt kê trải dài Ø100–250 mm. Sureay cung cấp các rôto xoắn ốc và cạnh thẳng với số lượng răng, biên dạng và chiều rộng làm việc được chỉ định cho máy ép viên hiện có.",
       },
       {
-        id: "vacuum-brazing",
-        tag: "CÔNG NGHỆ CARBIDE",
-        title: "Hàn chân không độc quyền",
+        id: "strand-rotor-cutting-pair",
+        tag: "Cụm cắt",
+        title: "Các đầu trục và giao diện vòng bi tùy chỉnh",
         description:
-          "Đối với rôto có đầu bằng cacbua, quy trình hàn chân không cường độ cao chuyên dụng đảm bảo rằng các răng cacbua sẽ không bao giờ bong ra, ngay cả dưới tải trọng sốc nghiêm trọng do khởi động sợi nguội hoặc điều kiện nạp sợi không liên tục.",
+          "Rôto có thể được chế tạo với các đầu trục, ổ đỡ, vai và kết nối truyền động theo yêu cầu của máy hiện có, kết hợp phần cắt và giao diện lắp đặt trong một thông số kỹ thuật thay thế.",
+        relatedBladeIds: ["die-face-cutting-knives"],
       },
     ],
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "Ø100–250 mm",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cắt sợi polymer đã nguội thành dạng viên",
+      },
+      {
+        label: "Vật liệu",
+        value:
+          "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , hợp kim cacbua vonfram hoặc cacbua hàn đồng",
+      },
+      {
+        label: "Các loại cánh quạt",
+        value:
+          "Rôto xoắn ốc hoặc cạnh thẳng; lưỡi cắt cacbua rắn hoặc hàn đồng",
+      },
+      {
+        label: "Đếm răng",
+        value: "10, 12, 16, 24, 32, 48 hoặc 60; số lượng tùy chỉnh lên tới 120",
+      },
+      {
+        label: "Góc xoắn ốc",
+        value: "1,5°, 2° hoặc 3°; xoắn tùy chỉnh có sẵn",
+      },
+      {
+        label: "Độ đồng tâm (Runout)",
+        value: "≤0.005 mm",
+      },
+      {
+        label: "Hoàn thiện bề mặt",
+        value: "Ra 0.2 µm",
+      },
+      {
+        label: "Cân bằng động",
+        value: "ISO 1940-1, cấp G2.5",
+      },
+      {
+        label: "Nguyên liệu",
+        value:
+          "Hợp chất GF/CF, masterbatch, chất đàn hồi PA, PC, POM, PBT và TPE/TPU/TPV",
+      },
+    ],
+    relatedBladeIds: ["die-face-cutting-knives", "granulator-blades"],
+    offers: {
+      lowPrice: 80,
+      highPrice: 1200,
+    },
+    faqs: {
+      technical: [
+        {
+          question: "Điều gì xác định một rôto máy ép viên sợi thay thế?",
+          answer:
+            "Đường kính cắt, chiều rộng làm việc, dạng răng, đường xoắn và cả hai đầu trục xác định rôto với nhau. Bao gồm ghế chịu lực, kết nối dẫn động và dao cố định đối tiếp. Rôto máy cắt dạng viên là tên mua hàng liên quan của bộ phận có răng cắt các sợi polyme, trong khi cụm đầu cắt hoàn chỉnh chứa các bộ phận bổ sung.",
+        },
+        {
+          question:
+            "Nên chọn vật liệu rôto như thế nào cho các hợp chất polyme được làm đầy?",
+          answer:
+            "Xem xét loại polyme, loại chất độn và tải trọng cùng với tình trạng cạnh hiện tại. Sự mài mòn và sứt mẻ răng đòi hỏi phải cân nhắc các loại vật liệu khác nhau. So sánh kết cấu HSS, thép PM hoặc cacbua hiện có với kiểu mài mòn thực tế và cách bố trí cắt, bao gồm cả dao cố định, trước khi chọn vật liệu thay thế khác.",
+        },
+        {
+          question: "Rôto sợi khác với dao cắt khuôn mặt như thế nào?",
+          answer:
+            "Rôto sợi cắt các sợi polyme đã tạo thành dựa vào dao cắt cố định. [Dao cắt mặt khuôn](/products/die-face-cutting-knives) là các lưỡi dao riêng lẻ được vận chuyển bởi một trục ở mặt khuôn ép đùn. Một số hệ thống sợi cũng được cắt dưới nước, do đó, vị trí xử lý và cụm cắt cung cấp khả năng nhận dạng rõ ràng hơn so với chỉ dùng từ dưới nước.",
+        },
+        {
+          question:
+            "Chỉ thay đổi số lượng răng có thể thay đổi kích thước viên không?",
+          answer:
+            "Đúng. Việc thay đổi số lượng răng có thể thay đổi chiều dài viên ngay cả với cùng tốc độ rôto và cấp sợi. Việc thay đổi số lượng răng sẽ thay đổi cấu hình cắt. Để thay thế tương tự, hãy giữ lại mẫu răng đã được phê duyệt và chỉ định riêng thiết lập hiện có và chiều dài viên mục tiêu.",
+        },
+        {
+          question:
+            "Tại sao chất lượng viên có thể thay đổi ngay cả khi các cạnh rôto sắc nét?",
+          answer:
+            "Việc cấp sợi hoặc làm mát không đồng đều có thể làm thay đổi chất lượng viên ngay cả khi các cạnh của rôto sắc nét. So sánh tình trạng sợi ở đầu cắt với cách thiết lập dao từ rôto đến dao cố định. Nếu lỗi thay đổi khi tiến dao, hãy kiểm tra cả phía trước của lưỡi cắt.",
+        },
+        {
+          question: "Rôto của máy ép viên sợi có thể được nghiền lại không?",
+          answer:
+            "Có, khi kết cấu và vật liệu cắt còn lại cho phép khôi phục hình dạng răng đã chỉ định. Kiểm tra đường kính rôto giảm so với vị trí làm việc của nó so với dao cố định. Ghi lại đường kính mài lại riêng biệt khi đặt mua rôto mới.",
+        },
+        {
+          question:
+            "Làm cách nào để yêu cầu báo giá cho rôto cắt máy ép viên dạng sợi?",
+          answer:
+            "Gửi mô hình máy ép viên, bản vẽ rôto hoặc tài liệu tham khảo ban đầu, polyme và chất độn cũng như số lượng. Chỉ định đường kính cắt, chiều rộng làm việc, số lượng răng và hướng xoắn, đồng thời bao gồm các bản vẽ của cả hai đầu trục và dao cố định giao phối. Đánh dấu riêng đường kính giảm đi nếu rôto tham chiếu đã được nối lại.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình máy ép viên, bản vẽ rôto, chiều rộng làm việc, số lượng răng và biên dạng, đầu trục và các chi tiết dao cố định.",
     dimensionLabels: {
       col0: "Nền tảng OEM",
       col1: "Đường kính cánh quạt (mm)",
@@ -4725,6 +6140,7 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007101",
         spec: "Maag Primo / Baoli",
         od: "100 – 200",
         id: "80 – 300",
@@ -4732,27 +6148,31 @@ export const blades: Blade[] = [
         teeth: "2° / 3°",
       },
       {
-        spec: "Coperion SP Series",
+        itemNo: "SR007102",
+        spec: "Dòng SP Coperion",
         od: "120 – 250",
         id: "100 – 350",
         length: "16 / 24 / 32",
         teeth: "1.5° / 2°",
       },
       {
-        spec: "Cumberland Quietizer",
+        itemNo: "SR007103",
+        spec: "Bộ giảm âm Cumberland",
         od: "100 – 180",
         id: "80 – 250",
         length: "12 / 16",
         teeth: "2° / 3°",
       },
       {
-        spec: "Conair 304 / 306 / CS",
+        itemNo: "SR007104",
+        spec: "Conair 304/306/CS",
         od: "100 – 200",
         id: "80 – 300",
         length: "12 / 16 / 24",
         teeth: "2°",
       },
       {
+        itemNo: "SR007105",
         spec: "Reduction Engineering SGS",
         od: "120 – 220",
         id: "100 – 320",
@@ -4760,73 +6180,99 @@ export const blades: Blade[] = [
         teeth: "1.5° / 2° / 3°",
       },
     ],
-    relatedBladeIds: [
-      "die-face-cutting-knives",
-      "continuous-melt-filter-scraper-blades",
-      "granulator-blades",
-      "twin-shaft-blades-recycling",
-    ],
-    offers: {
-      lowPrice: 80,
-      highPrice: 1200,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle: "Cánh quạt cắt Pelletizer | Thay thế tùy chỉnh",
+      heroAlt: "Rôto cắt viên dạng sợi có bề mặt cắt có răng và đầu trục",
+      sizeRange: "Ø100–250 mm",
+      heroSpecs: [
         {
-          question:
-            "Chúng tôi xử lý 40% nylon chứa đầy thủy tinh (PA66 GF40). Rôto M2 tiêu chuẩn bị mòn theo ngày. Giải pháp của bạn là gì?",
-          answer:
-            "Đối với độ mài mòn cực cao, thép M2 là không đủ. Chúng tôi khuyên dùng các loại PM-HSS (ASP2023 hoặc ASP2052) hoặc rôto cacbua vonfram được hàn đồng của chúng tôi. Mặc dù khoản đầu tư ban đầu cao hơn nhưng tuổi thọ của dụng cụ được kéo dài lên tới 1000%, giảm đáng kể thời gian ngừng hoạt động của máy và giảm chi phí cho mỗi tấn hợp chất của bạn. Đặc biệt đối với PA66 GF40, rô-to khảm cacbua hàn đồng là giải pháp lâu dài tiết kiệm chi phí nhất — thân HSS xử lý tải va đập trong khi các cạnh cắt cacbua chống mài mòn.",
+          label: "Vật liệu",
+          value: "HSS , thép PM hoặc hợp kim cacbua vonfram",
         },
         {
-          question:
-            "Tại sao chúng ta lại có 'đuôi' trên viên của mình và rô-to của bạn có thể khắc phục điều này như thế nào?",
-          answer:
-            "Hiện tượng đuôi xảy ra khi sợi polyme bị rách hoặc tan chảy thay vì được cắt sạch. Điều này là do răng rô-to cùn, góc xoắn không đều hoặc khe hở quá lớn do đảo rô-to. Rôto Sureay có độ đồng tâm ≤0,005mm, cho phép kỹ thuật viên của bạn đặt một khoảng cách siêu nhỏ so với dao giường để có đường cắt hoàn hảo giống như một chiếc cắt kéo. Bề mặt me được đánh bóng (Ra 0,2µm) cũng ngăn ngừa sự dính polyme tạo ra lực cản và lực cắt không đồng đều.",
-        },
-        {
-          question:
-            "Sự khác biệt giữa rôto xoắn ốc và rôto cạnh thẳng là gì và khi nào tôi nên sử dụng mỗi rôto?",
-          answer:
-            "Rôto xoắn ốc tạo ra tác động cắt lũy tiến - mỗi lần chỉ có một đoạn răng tham gia - làm giảm lực cắt cực đại, cường độ dòng điện động cơ tăng đột biến và hiện tượng đứt sợi. Điều này làm cho chúng trở thành sự lựa chọn tiêu chuẩn cho nhựa nhiệt dẻo cứng và các hợp chất chứa đầy trên dây chuyền tốc độ cao. Rôto cạnh thẳng đồng thời thực hiện toàn bộ chiều rộng cắt, điều này được ưu tiên cho các chất đàn hồi mềm (TPE, TPU, TPV) trong đó lực cắt xoắn ốc dần dần có thể kéo căng và biến dạng sợi thay vì cắt sạch.",
-        },
-        {
-          question:
-            "Bạn có thể sao chép rôto tùy chỉnh nếu chúng tôi gửi mẫu vật lý hoặc bản vẽ CAD không?",
-          answer:
-            "Tuyệt đối. Là một cơ sở sản xuất trực tiếp, chúng tôi có đầy đủ khả năng kỹ thuật đảo ngược. Bạn có thể gửi cho chúng tôi bản thiết kế kỹ thuật hoặc rôto bị mòn của bạn và chúng tôi sẽ tạo bản vẽ CAD chi tiết để bạn phê duyệt trước khi sản xuất thiết bị thay thế chính xác. Việc xác minh kích thước trên CMM được thực hiện trước khi giao hàng.",
-        },
-        {
-          question:
-            "Làm cách nào để biết khi nào cần thay thế hoặc nghiền lại rôto máy tạo hạt sợi của tôi?",
-          answer:
-            "Các chỉ số chính: (1) tăng lượng hạt mịn và bụi trong dòng viên - răng xỉn màu bị rách thay vì bị cắt; (2) cường độ dòng điện động cơ tăng trên bộ truyền động máy ép viên - các cạnh cùn cần nhiều lực hơn; (3) hiện tượng đứt sợi trở nên thường xuyên hơn - lực cắt không đều do hình dạng bị mòn làm tăng lực căng đột biến; (4) Đuôi xuất hiện lại mặc dù đã thiết lập khe hở chính xác - độ đồng tâm bị mòn gây ra sự thay đổi khe hở xung quanh chu vi rôto. Đối với rôto PM-HSS, việc mài lại chính xác theo hình dạng OEM sẽ tiết kiệm chi phí. Đối với rôto có đầu bằng cacbua, cacbua có thể được nghiêng lại một lần trước khi cần thay thế toàn bộ rôto.",
+          label: "Ứng dụng",
+          value: "Cắt sợi polymer đã nguội thành dạng viên",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "Sureay có thể cung cấp bộ rôto và dao giường (stator) phù hợp không?",
-          answer:
-            "Có, và chúng tôi thực sự khuyên bạn nên mua chúng theo cặp phù hợp. Chúng tôi sản xuất dao giường stato bằng Stellite 6 (dành cho rôto HSS) và cacbua rắn (dành cho rôto có đầu cacbua). Một cặp phù hợp đảm bảo hình dạng khoảng cách cắt và chênh lệch độ cứng được tối ưu hóa cùng nhau, mang lại khả năng tạo hạt không đuôi từ sợi đầu tiên. Sự kết hợp rôto-stato không khớp là nguyên nhân hàng đầu gây ra hiện tượng mài mòn sớm trên các dây chuyền được bảo trì tốt.",
+          label: "Kích cỡ",
+          value: "Ø100–250 mm",
         },
         {
-          question:
-            "Sureay có thể cung cấp thời gian thực hiện và tài liệu nào cho việc thay thế rôto?",
-          answer:
-            "Rôto thay thế PM-HSS tiêu chuẩn cho các nền tảng OEM thông thường (Maag, Coperion, Cumberland) sẽ được giao hàng sau 10–15 ngày làm việc kể từ khi bản vẽ được phê duyệt. Các góc xoắn tùy chỉnh hoặc số lượng răng không chuẩn cần 15–20 ngày làm việc. Mỗi rôto đều được cung cấp: chứng chỉ kiểm tra kích thước CMM, báo cáo cân bằng động (ISO 1940-1 G2.5), chứng chỉ kiểm tra độ cứng và truy xuất nguồn gốc vật liệu nhà máy thép. Sản xuất gấp có sẵn theo lịch trình.",
+          label: "Ứng dụng",
+          value: "Cắt sợi polymer đã nguội thành dạng viên",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "M2 , M35 , ASP2023 , ASP2052 , CPM 10V , hợp kim cacbua vonfram hoặc cacbua hàn đồng",
+        },
+        {
+          label: "Các loại cánh quạt",
+          value:
+            "Rôto xoắn ốc hoặc cạnh thẳng; lưỡi cắt cacbua rắn hoặc hàn đồng",
+        },
+        {
+          label: "Đếm răng",
+          value:
+            "10, 12, 16, 24, 32, 48 hoặc 60; số lượng tùy chỉnh lên tới 120",
+        },
+        {
+          label: "Góc xoắn ốc",
+          value: "1,5°, 2° hoặc 3°; xoắn tùy chỉnh có sẵn",
+        },
+        {
+          label: "Độ đồng tâm (Runout)",
+          value: "≤0.005 mm",
+        },
+        {
+          label: "Hoàn thiện bề mặt",
+          value: "Ra 0.2 µm",
+        },
+        {
+          label: "Cân bằng động",
+          value: "ISO 1940-1, cấp G2.5",
+        },
+        {
+          label: "Nguyên liệu",
+          value:
+            "Hợp chất GF/CF, masterbatch, chất đàn hồi PA, PC, POM, PBT và TPE/TPU/TPV",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/strand-pelletizer-rotor-03.webp",
+        alt: "Rôto máy ép viên sợi hiển thị bề mặt cắt và cách bố trí trục của nó",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho rôto máy ép viên của bạn",
+        description:
+          "Bao gồm model máy, bản vẽ rôto, chiều rộng làm việc, dạng răng, chi tiết đầu trục và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
+    disambiguation:
+      "Đối với các lưỡi dao được gắn trên trục dao cắt khuôn mặt, hãy xem [Dao cắt khuôn mặt](/products/die-face-cutting-knives) .",
   },
   {
     id: "continuous-melt-filter-scraper-blades",
-    name: "Lưỡi cạo lọc tan chảy",
-    fullName: "Lưỡi cạo & Tấm lọc cao cấp dành cho Bộ lọc tan chảy liên tục",
-    category: "granulator_blades",
+    name: "Dao gạt lọc nhựa nóng chảy",
+    fullName: "Dao gạt cho bộ lọc nhựa nóng chảy liên tục",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Lưỡi cạo lọc tan chảy",
+    categoryDisplay: "Dao gạt lọc nhựa nóng chảy",
     image: "/images/products/blades/scraper-blades.webp",
+    imageDimensions: {
+      width: 2560,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1280,
+      height: 720,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "Tái chế PCR",
     badgeColor: "orange",
     gallery: [
@@ -4835,9 +6281,7 @@ export const blades: Blade[] = [
       "/images/products/blades/scraper-blades-02.webp",
     ],
     description:
-      "Lưỡi cạo D2/H13/cacbua chính xác và tấm lọc hình nón được khoan bằng laser cho bộ lọc tan chảy liên tục PCR. Sức mạnh tổng hợp của độ cứng được thiết kế (lưỡi HRC 58–62 so với tấm thấm nitơ plasma HV 1.000+) bảo vệ vốn đầu tư cho tấm lọc. Hợp kim kháng HCl dùng cho hỗn hợp PVC. Tương thích ngược với EREMA, Gneuß, Ettlinger & FIMIC.",
-    fullDescription:
-      "Bộ lọc tan chảy liên tục là trái tim của bất kỳ dây chuyền tái chế nhựa PCR công suất cao nào. Khi xử lý sản phẩm nghiền lại sau tiêu dùng bị ô nhiễm nặng — chứa chất độn khoáng, sợi thủy tinh, cặn cacbon hóa và các hạt cứng lạ — lưỡi dao cạo là bộ phận duy nhất chịu tải trọng kết hợp cực độ nhất: mài mòn do chất bẩn cứng, mỏi nhiệt do tiếp xúc với nhiệt độ nóng chảy theo chu kỳ (220–300 °C) và ứng suất uốn theo chu kỳ từ cơ chế quay. Một lưỡi dao bị hỏng sớm buộc phải dừng đường dây khẩn cấp, tốn nhiều giờ để khởi động lại và lãng phí khối lượng đáng kể chất tan chảy trong quá trình.\n\nLưỡi cạo lọc nóng chảy liên tục Sureay được chế tạo chính xác từ thép công cụ gia công nóng D2 thép dụng cụ gia công nguội và H13 cao cấp — hai hợp kim được lựa chọn đặc biệt cho yêu cầu kép chống mài mòn cộng với nhiệt này — và được xử lý nhiệt chân không đến HRC 58–62 với quá trình xử lý sau đông lạnh sâu để loại bỏ austenite còn sót lại và kéo dài tuổi thọ mài mòn thêm 30–40% so với xử lý nhiệt tiêu chuẩn.\n\n## Lựa chọn hợp kim theo mức độ ô nhiễm\n\n**Thép công cụ D2 (HRC 60–62):** Thông số kỹ thuật tiêu chuẩn cho PCR HDPE, PP và nhựa cứng hỗn hợp có độ nhiễm bẩn vừa phải (hàm lượng chất độn khoáng < 3%). Hàm lượng 12% crom và 1,5% carbon mang lại khả năng chống mài mòn tuyệt vời chống lại các hạt thủy tinh và chất độn canxi cacbonat ở nhiệt độ xử lý nóng chảy lên tới 260 ° C. Tiết kiệm chi phí cho quá trình lọc liên tục ở mức trung bình với công suất 300–800 kg/h.\n\n**Thép công cụ gia công nóng H13 (HRC 48–52):** Được chọn cho các dòng bị ô nhiễm nặng — nghiền lại màng sau tiêu dùng, màng phủ nông nghiệp, nhựa WEEE — nơi nhiệt độ nóng chảy vượt quá 280 °C và chu trình nhiệt rất nghiêm trọng. Ma trận cacbua molybdenum-vanadi của H13 duy trì độ ổn định kích thước và hình dạng cạnh dưới tải nhiệt liên tục có thể khiến D2 mềm và biến dạng.\n\n**Cacbua vonfram rắn (HRA 88–91):** Thông số kỹ thuật tối ưu cho nguyên liệu thô siêu mài mòn: nhựa kỹ thuật chứa đầy thủy tinh (PA-GF30, PBT-GF), dòng suối nhiễm gốm và màng nông nghiệp giàu silicon có chứa các hạt đất. Máy cạo cacbua mang lại tuổi thọ sử dụng lâu hơn 5–8× so với D2 trên các nguyên liệu thô này, giảm tần suất thay lưỡi dao xuống một lần trên hơn 1.000 giờ hoạt động.\n\n## Hình học lưỡi cắt đất chính xác\n\nHình dạng cạnh của lưỡi cào trực tiếp kiểm soát độ sạch của bề mặt màn lọc và do đó làm tan chảy tính nhất quán của áp suất. Một dụng cụ cạo bị mòn hoặc được định hình không chính xác sẽ để lại lớp ô nhiễm còn sót lại trên màn hình bộ lọc, gây ra sự tích tụ áp suất ngày càng tăng, giảm thông lượng và cuối cùng là thủng màn hình. Các lưỡi chắc chắn được mài chính xác đến dung sai kích thước ±0,05 mm với các đường vát cạnh phù hợp với hình dạng tiếp xúc màn hình của từng bộ lọc OEM. Kết quả là một hành động cạo nhất quán, có thể lặp lại, duy trì độ sạch của màn hình trong suốt thời gian sử dụng của lưỡi cắt.\n\n## Khả năng tương thích OEM thả vào\n\nHình dạng lưỡi nạo dành riêng cho máy: mỗi bộ lọc tan chảy liên tục OEM sử dụng kích thước rôto độc quyền, giao diện lắp lưỡi và đường kính màn hình. Chắc chắn các kỹ sư đảo ngược sẽ thay thế các lưỡi dao từ bản vẽ OEM hoặc mẫu của khách hàng, xác minh sự phù hợp trên máy đo tọa độ (CMM) trước khi sản xuất. Tương thích với Bộ lọc liên tục EREMA, Hệ thống lọc quay Gneuß, dòng Ettlinger ERF, dòng FIMIC RAS, dòng Kreyenborg KSF và bộ thay đổi màn hình liên tục Nordson BKG.\n\n## Tấm lọc hình nón được khoan bằng laze Các lỗ siêu nhỏ\n\nHình dạng lỗ của tấm lọc cũng quan trọng như vật liệu của lưỡi cạo. Các lỗ hình trụ được đục lỗ hoặc khoan tiêu chuẩn tạo ra một rãnh tường phẳng, nơi polyme nóng chảy và các chất ô nhiễm lơ lửng có thể đọng lại - cacbon hóa bên trong lỗ dưới nhiệt độ duy trì, làm giảm dần diện tích mở hiệu quả và cuối cùng gây ra tắc nghẽn màn hình sớm. Các tấm lọc Sureay sử dụng các lỗ siêu nhỏ hình nón (thon) được khoan bằng laser: lỗ hẹp nhất ở bề mặt tiếp xúc nóng chảy ngược dòng và mở rộng dần về phía đầu ra phía hạ lưu. Cấu hình hình nón này khai thác áp suất thủy lực phía nóng chảy: khi một hạt chất gây ô nhiễm vượt qua giới hạn đầu vào hẹp, hình dạng kênh mở rộng sẽ ngay lập tức đẩy nó về phía đầu ra mà không bị đọng lại vùng chết. Kết quả là tấm lọc duy trì được sự chênh lệch áp suất và tỷ lệ phần trăm diện tích mở nhất quán trong khoảng thời gian dịch vụ dài hơn đáng kể — đặc biệt quan trọng đối với các dòng PCR bị ô nhiễm nặng trong đó các tấm lỗ hình trụ sẽ cần được thay thế thường xuyên.\n\nĐộ mịn lọc hiện có: 80 µm (rPET/rHDPE tiếp xúc với thực phẩm), 150–200 µm (PCR cấp màng), 300–500 µm (PCR cấp tiêm), 500–2.000 µm (lọc trước thô). Hồ sơ hình nón có sẵn trên tất cả các cấp độ mịn.\n\n## Sức mạnh tổng hợp của độ cứng: Bảo vệ khoản đầu tư vốn cho tấm lọc của bạn\n\nMột mối quan tâm phổ biến và chính đáng khi tìm nguồn cung cấp lưỡi nạo thay thế là liệu một lưỡi dao thay thế có độ cứng cao có làm thủng hoặc khoét tấm lọc hay không - một thành phần cơ bản có giá cao hơn đáng kể so với bản thân lưỡi dao. Sureay thiết kế sự khác biệt về độ cứng có chủ ý và đã được xác minh giữa lưỡi cạp và bề mặt tấm lọc.\n\nMặt trước của tấm lọc được thấm nitơ plasma đến HV 1.000+ (tương đương với HRC 70+), tạo ra lớp bề mặt giống như gốm cực kỳ cứng, chống mài mòn, sâu 0,1–0,3 mm. Lưỡi cạp được cố tình sản xuất ở mức HRC thấp hơn 58–62. Sự khác biệt này có nghĩa là trong mọi điều kiện vận hành, lưỡi dao là vật liệu tiêu hao có kiểm soát độ mài mòn: nó mòn dần trên bề mặt tấm cứng hơn mà không tạo ra vết khía hoặc vết cắt khi chuyển kim loại. Bề mặt tấm lọc vẫn còn nguyên vẹn qua nhiều chu kỳ thay thế lưỡi dao. Mỗi lô hàng lưỡi dao Sureay đều bao gồm chứng chỉ kiểm tra độ cứng xác nhận lưỡi dao nằm trong phạm vi HRC được chỉ định - tài liệu có thể kiểm chứng rằng nguyên tắc kiểm soát mài mòn được duy trì trong mỗi lô sản xuất.\n\n## Khả năng chống hóa chất và ăn mòn cho dòng PVC và nhựa hỗn hợp\n\nQuá trình xử lý PVC sau tiêu dùng đã rửa, màng dẻo hỗn hợp hoặc nhựa có nguồn gốc WEEE sẽ giải phóng khí ăn mòn mạnh - chủ yếu là axit clohydric (HCl) và các hợp chất clo hữu cơ - ở nhiệt độ nóng chảy 200–260 °C. Thép công cụ D2 và H13 tiêu chuẩn bị ăn mòn khi tiếp xúc với HCl kéo dài: rỗ bề mặt bắt đầu ở ranh giới hạt, làm suy giảm dần hình dạng cạnh thủng vi mô và mở rộng đường kính lỗ vượt quá thông số kỹ thuật, ảnh hưởng đến chất lượng lọc mà không có bất kỳ dấu hiệu bên ngoài nào có thể nhìn thấy được.\n\nĐối với các dòng bao gồm PVC, Sureay áp dụng hai biện pháp bảo vệ: (1) nâng cấp hợp kim cơ bản lên các loại thép PM (luyện kim bột) chống ăn mòn với sự phân bổ crom đồng nhất chống lại sự tấn công của ranh giới hạt axit; (2) lớp phủ rào cản lắng đọng hơi vật lý (PVD) trên bề mặt tấm lọc giúp bịt kín các bức tường thủng vi mô chống lại sự khuếch tán HCl. Sự kết hợp này giúp kéo dài tuổi thọ của tấm lọc lên 2–3 × so với các tấm hợp kim tiêu chuẩn không tráng phủ trên nguyên liệu chứa PVC và ngăn ngừa chế độ lỗi mở rộng lỗ ngấm ngầm làm suy yếu hiệu quả lọc mà không gây ra cảnh báo áp suất.\n\n## Khả năng tương thích ngược\n\nBộ lọc tan chảy liên tục cao cấp (Ettlinger ERF, Gneuß RSFgenius, Kreyenborg KSF) kết hợp cơ chế xả ngược tự động: xung ngược áp suất cao của tan chảy sạch được bắn ngược định kỳ qua một phần cục bộ của tấm lọc để trục xuất bánh chất gây ô nhiễm khỏi các lỗ vi mô, khôi phục khu vực mở mà không dừng đường dây. Xung xả ngược tạo ra áp suất ngược cục bộ tăng đột biến — thường là 150–400 bar tùy thuộc vào OEM — được áp dụng cho một khu vực nhỏ của tấm lọc.\n\nCác tấm lọc Sureay được thiết kế và sản xuất để chịu được áp lực xả ngược được OEM đánh giá mà không bị nứt hoặc biến dạng vi mô. Hình dạng lỗ hình nón được tối ưu hóa về mặt kích thước cho mục đích này: đầu ra phía sau rộng hơn của mỗi lỗ thủng hình nón hoạt động như một vòi phun loe giúp tăng tốc xung xả ngược, cải thiện hiệu suất đẩy chất gây ô nhiễm so với các lỗ hình trụ. Tính toàn vẹn về cấu trúc trong các chu kỳ đảo ngược áp suất cao lặp đi lặp lại được xác nhận thông qua phân tích phần tử hữu hạn (FEA) của sự phân bổ ứng suất dây chằng giữa các lỗ. Các tấm Sureay thay thế duy trì khả năng tương thích 100% với thời gian xả ngược của OEM, áp suất và bố cục mảng lỗ - không cần hiệu chỉnh lại bộ điều khiển xả ngược.\n\n## Phân tích lỗi: Chẩn đoán & Loại bỏ các lỗi phổ biến của Bộ quét và bộ lọc\n\nCác kỹ sư tìm nguồn cung ứng linh kiện thay thế thường xử lý một dạng lỗi cụ thể. Việc nâng cấp vật liệu chính xác phụ thuộc vào nguyên nhân gốc rễ.\n\n**Mứt mép (Gãy giòn ở Đầu Lưỡi dao):** Gây ra bởi một tác động năng lượng cao duy nhất từ ​​kim loại bị va đập — bu lông, đai ốc, mảnh dây — được nhúng trong nguyên liệu nghiền lại PCR. D2 và các loại cacbua tiêu chuẩn dễ bị gãy giòn dưới tải xung này. **Nâng cấp:** Chỉ định H13 (độ bền va đập cao hơn D2) cho các dòng ô nhiễm hỗn hợp trong đó rủi ro kim loại lang thang ở mức vừa phải hoặc loại cacbua có độ bền được tối ưu hóa (hàm lượng Co ≥ 12%) cho các dòng có rủi ro cao. Thêm nam châm ngược dòng và/hoặc máy dò kim loại để giảm tần số kim loại lang thang.\n\n**Chấm điểm bề mặt lũy tiến trên tấm lọc:** Các rãnh mịn song song trên mặt tấm lọc, đi kèm với sự chênh lệch áp suất tăng và khoảng cách giữa các lưỡi cắt được rút ngắn. Nguyên nhân là do độ cứng của lưỡi dao không chính xác (lưỡi cứng hơn tấm), góc vát không chính xác gây ra tải trọng tập trung ở cạnh hoặc nhiễm bẩn ở bề mặt tiếp xúc giữa lưỡi và tấm. **Nâng cấp:** Xác minh chứng chỉ độ cứng của lưỡi dao (phải ≤ HRC 62). Xác nhận góc vát cạnh khớp với hình dạng tiếp xúc của màn hình OEM (±0,5°). Kiểm tra bề mặt tấm xem có bị suy giảm lớp plasma-nitride hay không - nếu vết ghi đã chạm đến kim loại cơ bản, tấm cần được thay thế trước khi lắp các lưỡi dao mới.\n\n**Mòn lưỡi dao nhanh (< 200 giờ trên PCR tiêu chuẩn):** Tuổi thọ sử dụng ngắn bất ngờ trên nguyên liệu thô ở mức trung bình danh nghĩa cho thấy mức độ nhiễm bẩn cao hơn mức công bố: hàm lượng chất độn sợi thủy tinh, silica hoặc gốm trong quá trình nghiền lại tăng cao. Gửi mẫu nghiền lại để phân tích tạp chất XRF. **Nâng cấp:** Bước từ D2 lên H13 trước; nếu tuổi thọ sử dụng vẫn không đủ, hãy chuyển sang hợp kim cacbua vonfram rắn, mang lại tuổi thọ cao hơn 5–8× đối với các luồng hư hỏng chủ yếu do mài mòn.\n\n**Mở rộng lỗ / Suy giảm chất lượng lọc mà không có cảnh báo áp suất:** Các lỗ thủng siêu nhỏ trên tấm lọc tăng dần theo thời gian, cho phép các hạt chất gây ô nhiễm quá khổ xuyên qua ở áp suất chênh lệch ổn định. Nguyên nhân cốt lõi: Sự ăn mòn HCl từ vật liệu làm thành lỗ hòa tan thoát khí PVC. Không có báo động áp suất vì các lỗ mở rộng duy trì điện trở thấp. **Nâng cấp:** Chỉ định tấm lọc bằng thép PM chống ăn mòn, phủ PVD cho tất cả các dòng chứa ≥ 5% PVC theo trọng lượng.",
+      "Lưỡi cạo thay thế cho bộ lọc nóng chảy nhựa liên tục. Tùy chọn D2 , H13 và cacbua, với cấu hình tùy chỉnh và chi tiết lắp vào bản vẽ.",
     link: "/products/continuous-melt-filter-scraper-blades",
     isFeatured: true,
     compatibleMachines: [
@@ -4848,63 +6292,126 @@ export const blades: Blade[] = [
       "Kreyenborg",
       "Nordson BKG",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 Tool Steel / H13 Hot-Work Steel / Solid Tungsten Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value:
-          "Blade: HRC 58–62 (controlled-wear consumable) | Filter Plate Surface: Plasma Nitrided HV 1,000+",
-      },
-      {
-        label: "Filter Plate Profile",
-        value:
-          "Laser-drilled conical micro-perforations, 80–2,000 µm — tapered inlet expels contaminants, prevents polymer stagnation",
-      },
-      {
-        label: "Dimensional Tolerance",
-        value: "±0.05 mm (blade profile) | ±0.02 mm (thickness)",
-      },
-      {
-        label: "Operating Temperature",
-        value: "Up to 300 °C (H13 / Carbide grades)",
-      },
-      {
-        label: "Corrosion Resistance",
-        value:
-          "HCl-resistant alloys & barrier coatings for PVC and mixed-plastic melt outgassing",
-      },
-      {
-        label: "Applications",
-        value:
-          "PCR HDPE/PP, Glass-Filled Compounds, PVC Blends, Agricultural Film, WEEE Plastics",
-      },
-    ],
+    compatibleMachinesIntro:
+      "Nhận các lưỡi cạo bộ lọc tan chảy thay thế với các cạnh làm việc, cấu hình thân máy và giá đỡ khung đỡ tùy chỉnh. Sureay cung cấp các cấu hình D2 , H13 và cacbua với các tùy chọn xử lý bề mặt cho dịch vụ nấu chảy của bạn. Gửi bản vẽ hoặc mẫu của bạn để nhận báo giá phù hợp với bộ lọc của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "hardness-synergy",
-        tag: "BẢO VỆ TÀI SẢN",
-        title: "Sức mạnh tổng hợp của độ cứng được thiết kế",
+        id: "melt-scraper-working-edge",
+        tag: "Cạnh làm việc",
+        title: "Tùy chọn máy cạo thép và cacbua",
         description:
-          "Các tấm lọc được thấm nitơ huyết tương đến HV 1.000+ (≈ HRC 70+). Lưỡi cạp được giữ cố định ở HRC 58–62. Sự khác biệt đã được xác minh này làm cho lưỡi dao trở thành vật liệu tiêu hao có thể kiểm soát độ mài mòn - nó mài mòn trên bề mặt tấm cứng hơn mà không bị xước hoặc khoét. Mỗi lô hàng đều có giấy chứng nhận độ cứng xác nhận lưỡi dao nằm trong phạm vi cho phép.",
+          "Cấu hình D2 , H13 và cacbua rắn cung cấp cho bạn các lựa chọn vật liệu để thay thế máy cạo bộ lọc tan chảy, được chỉ định với polyme, chất gây ô nhiễm và màn hình ghép trong tầm nhìn.",
       },
       {
-        id: "conical-laser-plates",
-        tag: "CÔNG NGHỆ LỌC",
-        title: "Các lỗ siêu nhỏ được khoan bằng laser hình nón",
+        id: "melt-scraper-carrier",
+        tag: "Cài đặt",
+        title: "Các cạnh tùy chỉnh và cấu hình gắn nhà cung cấp",
         description:
-          "Hình dạng lỗ côn (đầu vào hẹp, đầu ra rộng) khai thác áp suất nóng chảy để trục xuất ngay các chất gây ô nhiễm thay vì để chúng đọng lại bên trong các lỗ có thành hình trụ. Ngăn chặn tắc nghẽn lỗ do quá trình cacbon hóa, duy trì áp suất chênh lệch ổn định và hỗ trợ động lực xung dòng chảy ngược OEM ở 150–400 bar mà không bị nứt vi mô.",
+          "Chiều dài cạp được liệt kê là 150–500 mm. Sureay có thể tạo các tính năng lắp đường viền, độ dày và giá đỡ cho bản vẽ bộ lọc để dụng cụ cạo mới đặt cạnh làm việc của nó ở vị trí được chỉ định so với màn hình.",
       },
       {
-        id: "failure-upgrade-path",
-        tag: "PHÂN TÍCH THẤT BẠI",
-        title: "Đường dẫn nâng cấp chẩn đoán",
+        id: "melt-scraper-material",
+        tag: "Tùy chọn vật liệu",
+        title: "Tùy chọn bề mặt cho dịch vụ nấu chảy được chỉ định",
         description:
-          "Sứt mẻ cạnh từ kim loại thô → nâng cấp lên H13 hoặc cacbua có độ bền cao. Chấm điểm tấm lũy tiến → xác minh chứng chỉ HRC của lưỡi và góc xiên. Tuổi thọ sử dụng < 200 giờ trên PCR tiêu chuẩn → chuyển sang cacbua rắn đối với hư hỏng do mài mòn. Mở rộng lỗ im lặng → chỉ định tấm PM chống ăn mòn được phủ PVD cho dòng chứa PVC.",
+          "Các tùy chọn hợp kim chống ăn mòn và lớp phủ rào cản có sẵn cho dịch vụ nấu chảy nhựa PVC và nhựa hỗn hợp cụ thể, cho phép đưa các yêu cầu về bề mặt và vật liệu vào yêu cầu về lưỡi dao.",
       },
     ],
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "150–500 mm",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Loại bỏ ô nhiễm từ màn hình lọc tan chảy",
+      },
+      {
+        label: "Vị trí bộ phận",
+        value: "Dụng cụ cạo ở màn hình bộ lọc",
+      },
+      {
+        label: "Vật liệu",
+        value:
+          "Thép công cụ D2 , thép gia công nóng H13 hoặc thép hợp kim cacbua vonfram",
+      },
+      {
+        label: "Độ cứng lưỡi thép",
+        value: "HRC 58–62",
+      },
+      {
+        label: "Dung sai hồ sơ",
+        value: "±0.05 mm",
+      },
+      {
+        label: "Dung sai độ dày",
+        value: "±0.02 mm",
+      },
+      {
+        label: "Nhiệt độ hoạt động",
+        value: "Lên đến 300 °C đối với cấu hình H13 hoặc cacbua",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value: "Lớp phủ rào cản cho dịch vụ nấu chảy PVC và nhựa hỗn hợp",
+      },
+      {
+        label: "Chống ăn mòn",
+        value:
+          "Tùy chọn hợp kim kháng HCl cho dịch vụ nấu chảy PVC và nhựa hỗn hợp",
+      },
+      {
+        label: "Nguyên liệu",
+        value:
+          "PCR HDPE/PP, hợp chất chứa đầy thủy tinh, hỗn hợp PVC, màng nông nghiệp và nhựa WEEE",
+      },
+    ],
+    relatedBladeIds: ["cutter-compactor-blades", "die-face-cutting-knives"],
+    offers: {
+      lowPrice: 35,
+      highPrice: 480,
+    },
+    faqs: {
+      technical: [
+        {
+          question: "Dao lọc tan chảy và lưỡi cạo đề cập đến điều gì?",
+          answer:
+            "Họ mô tả các bộ phận có thể thay thế được để loại bỏ chất bẩn còn sót lại trên bề mặt màn lọc. Màn hình đục lỗ thực hiện quá trình lọc và chất mang định vị dụng cụ cạo. Xác định vị trí lắp đặt và tham chiếu bộ phận khi đặt hàng, do đó mỗi lưỡi dao, màn chắn và giá đỡ đều được chỉ định là thành phần bắt buộc.",
+        },
+        {
+          question:
+            "Những tính năng nào xác định một dụng cụ cạo bộ lọc nóng chảy thay thế?",
+          answer:
+            "Sử dụng kiểu và phiên bản bộ lọc, đường viền lưỡi cắt, biên dạng cạnh làm việc, độ dày và cách lắp giá đỡ. Cạnh phải chiếm vị trí dự định so với màn hình. Độ dài tổng thể chỉ là một mã định danh, đặc biệt khi các bộ lọc liên tục có tên tương tự sử dụng các cơ chế sàng lọc hoặc cơ chế quét khác nhau.",
+        },
+        {
+          question:
+            "Nên chọn vật liệu cạo như thế nào cho nhựa nóng chảy bị ô nhiễm?",
+          answer:
+            "Cùng nhau xem xét loại polyme, loại chất gây ô nhiễm, điều kiện sử dụng nóng chảy và thông số kỹ thuật của màn hình ghép. So sánh độ mài mòn dần dần của cạnh với hư hỏng cục bộ ở dụng cụ cạo đã qua sử dụng. Kết cấu thép hoặc cacbua được chọn phải phù hợp với cách bố trí tiếp điểm của bộ lọc, với mọi yêu cầu về lớp phủ hoặc khả năng chống ăn mòn được ghi riêng.",
+        },
+        {
+          question:
+            "Bộ lọc tan chảy tự làm sạch có sử dụng dụng cụ cạo có thể thay thế được không?",
+          answer:
+            "Không. Dụng cụ cạo của bộ lọc tan chảy tự làm sạch phải phù hợp với biên dạng làm việc, giá đỡ và màn hình của cụm cụ thể đó. Một số hệ thống OEM sử dụng khả năng tiếp xúc có kiểm soát với màn hình cứng hơn để duy trì lợi thế. Việc thay thế cần duy trì sự ghép nối hình học và vật liệu được chỉ định cho bộ lọc.",
+        },
+        {
+          question:
+            "Cần xem xét lại điều gì khi ô nhiễm không còn được loại bỏ hiệu quả?",
+          answer:
+            "Kiểm tra xem cạnh cạp có còn tiếp xúc như dự định với màn hình hay không. Tải lượng chất gây ô nhiễm hoặc tắc nghẽn trong hệ thống xả cũng có thể ảnh hưởng đến việc loại bỏ. So sánh các điều kiện đó với những thay đổi trong nguồn cấp liệu nóng chảy và sử dụng quy trình bảo trì của nhà sản xuất bộ lọc để xác định bộ phận cần chú ý.",
+        },
+        {
+          question: "Tôi nên gửi gì để báo giá lưỡi dao cạo lọc nóng chảy?",
+          answer:
+            "Gửi mô hình và phiên bản bộ lọc, bản vẽ hoặc số bộ phận của bộ phận cạo, polyme và chất gây ô nhiễm cũng như số lượng. Thêm thông số kỹ thuật về giá đỡ và màn hình được giữ lại. Nếu bạn sử dụng một mẫu, hãy chỉ ra cách nó gắn trên giá đỡ và đánh dấu cạnh làm việc bị mòn.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình bộ lọc, bản vẽ cạp, chi tiết tấm chắn, polyme và các chất gây ô nhiễm điển hình.",
     dimensionLabels: {
       col0: "Mô hình bộ lọc / OEM",
       col1: "Chiều dài lưỡi dao (mm)",
@@ -4915,632 +6422,149 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
+        itemNo: "SR007201",
         spec: "EREMA",
         od: "180 – 420",
         id: "25 – 40",
         thickness: "6 / 8",
       },
       {
-        spec: "Gneuß Rotary System",
+        itemNo: "SR007202",
+        spec: "Hệ thống quay Gneuß",
         od: "150 – 380",
         id: "20 – 35",
         thickness: "5 / 8",
       },
       {
+        itemNo: "SR007203",
         spec: "Ettlinger ERF 200/350",
         od: "200 / 350",
         id: "30 / 40",
         thickness: "8 / 10",
       },
       {
+        itemNo: "SR007204",
         spec: "FIMIC",
         od: "160 – 400",
         id: "22 – 38",
         thickness: "6 / 8",
       },
       {
+        itemNo: "SR007205",
         spec: "Kreyenborg KSF",
         od: "200 – 500",
         id: "30 – 50",
         thickness: "8 / 12",
       },
       {
+        itemNo: "SR007206",
         spec: "Nordson BKG",
         od: "150 – 350",
         id: "20 – 35",
         thickness: "5 / 8",
       },
     ],
-    relatedBladeIds: [
-      "twin-shaft-blades-recycling",
-      "granulator-blades",
-      "scrap-chopper-blades",
-    ],
-    offers: {
-      lowPrice: 35,
-      highPrice: 480,
-    },
-    faqs: {
-      technical: [
+    detailLayout: {
+      seoTitle: "Lưỡi cạo lọc tan chảy | Thay thế tùy chỉnh",
+      heroAlt: "Lưỡi cạo thay thế cho bộ lọc tan chảy liên tục",
+      sizeRange: "150–500 mm",
+      heroSpecs: [
         {
-          question:
-            "Khi nào tôi nên nâng cấp từ D2 lên H13 cho lưỡi cạp của mình?",
-          answer:
-            "Nâng cấp lên H13 khi nhiệt độ xử lý tan chảy của bạn luôn vượt quá 260 °C hoặc khi bạn đang xử lý các dòng bị ô nhiễm nặng như màng nông nghiệp sau tiêu dùng, nhựa WEEE hoặc chất thải bao bì được in nhiều. Những nguyên liệu thô này tạo ra ứng suất chu trình nhiệt đáng kể khiến D2 mềm đi và mất hình dạng cạnh trong vòng 200–400 giờ hoạt động. Ma trận cacbua molybdenum-vanadi của H13 duy trì độ cứng và độ ổn định kích thước lên đến 300 °C, kéo dài tuổi thọ của máy cạo lên 60–80% trên các nguyên liệu thô này.",
+          label: "Vật liệu",
+          value: "D2 , H13 hoặc hợp kim cacbua vonfram",
         },
         {
-          question:
-            "Độ mòn của lưỡi dao cạo ảnh hưởng như thế nào đến áp suất nóng chảy và thông lượng trên bộ lọc liên tục?",
-          answer:
-            "Lưỡi cạo bị mòn để lại màng nhiễm bẩn còn sót lại trên bề mặt màn lọc sau mỗi lần quay. Lớp màng này làm giảm dần diện tích màn hình mở hiệu quả, khiến áp suất tan chảy tăng lên và thông lượng giảm xuống. Trên dây chuyền PCR tải nặng, lưỡi dao bị mòn quá giới hạn sử dụng có thể làm giảm thông lượng từ 15–25% và đẩy nhanh quá trình tắc nghẽn màn hình đến mức không thể thực hiện được. Giám sát chênh lệch áp suất nóng chảy trên bộ lọc là chỉ báo hao mòn đáng tin cậy nhất - chúng tôi khuyên bạn nên kiểm tra lưỡi dao khi áp suất chênh lệch tăng hơn 20% so với mức cơ bản.",
-        },
-        {
-          question:
-            "Tôi nên chỉ định độ mịn lọc nào cho sản xuất viên nhựa HDPE và PP tái chế?",
-          answer:
-            "Đối với các ứng dụng ép phun hoặc ép phun sản xuất viên nhựa HDPE và PP tiêu chuẩn PCR, hãy chỉ định độ mịn lọc 300–500 µm. Điều này loại bỏ các hạt cứng gây ra các vệt trên bề mặt khuôn và các khuyết tật bề mặt mà không làm giảm áp suất quá mức đối với nguyên liệu bị ô nhiễm vừa phải. Đối với nhựa tái chế tiếp xúc cấp thực phẩm (rHDPE, rPP theo EU 10/2011), chỉ định 150–200 µm để đáp ứng các yêu cầu loại bỏ ô nhiễm nghiêm ngặt hơn. Đối với màng nông nghiệp bị ô nhiễm cao hoặc nguyên liệu có nguồn gốc từ MSW, hãy bắt đầu với 500–800 µm để quản lý áp suất và giảm dần khi chất lượng đầu vào được cải thiện.",
-        },
-        {
-          question:
-            "Liệu lưỡi dao cạo hậu mãi có độ cứng cao sẽ ghi điểm hoặc làm hỏng tấm lọc của tôi?",
-          answer:
-            "Đây là câu hỏi quan trọng nhất cần hỏi bất kỳ nhà cung cấp lưỡi dao hậu mãi nào. Sureay thiết kế sự khác biệt về độ cứng có chủ ý: các tấm lọc được thấm nitơ plasma đến HV 1.000+ (khoảng HRC 70+) và các lưỡi nạo được sản xuất theo HRC 58–62 được kiểm soát chặt chẽ. Lưỡi dao luôn mềm hơn bề mặt tấm - nó hoạt động như một vật liệu tiêu hao có kiểm soát độ mài mòn và dần dần mòn đi mà không tạo ra vết chuyển kim loại hoặc khoét lỗ trên mặt tấm cứng hơn. Mỗi lô hàng đều có chứng chỉ kiểm tra Rockwell HRC xác nhận lưỡi dao nằm trong phạm vi này. Nếu nhà cung cấp không thể cung cấp chứng chỉ này thì bạn không có gì đảm bảo rằng chênh lệch độ cứng là chính xác.",
-        },
-        {
-          question:
-            "Các tấm lọc Sureay có tương thích với chức năng xả ngược tự động trên hệ thống Ettlinger và Gneuß không?",
-          answer:
-            "Có, hoàn toàn tương thích. Các tấm lọc Sureay được thiết kế và được FEA xác nhận về áp suất xung xả ngược được xếp hạng OEM (thường là 150–400 bar trên các hệ thống Ettlinger ERF và Gneuß RSFgenius). Hình dạng lỗ khoan bằng laze hình nón nâng cao hiệu quả xả ngược: đầu ra phía sau rộng hơn hoạt động như một vòi phun tăng tốc xung ngược qua mỗi lỗ thủng, cải thiện khả năng phun chất gây ô nhiễm so với các tấm lỗ hình trụ. Bố cục mảng lỗ và kích thước tấm sao chép chính xác các thông số kỹ thuật OEM - không cần hiệu chỉnh lại các thông số thời gian, áp suất hoặc bộ điều khiển xả ngược sau khi cài đặt.",
-        },
-        {
-          question:
-            "Bộ lọc của tôi đang giảm chất lượng lọc mà không có cảnh báo chênh lệch áp suất. Làm thế nào để tôi chẩn đoán điều này?",
-          answer:
-            "Đây là triệu chứng của sự mở rộng lỗ im lặng - một dạng hư hỏng trong đó các lỗ thủng siêu nhỏ trên tấm lọc dần dần mở rộng do sự ăn mòn hóa học của thành lỗ chứ không phải do mài mòn cơ học. Các lỗ mở rộng cho phép các hạt chất gây ô nhiễm có kích thước quá lớn xuyên qua trong khi vẫn duy trì áp suất chênh lệch thấp vì các lỗ rộng hơn mang lại ít lực cản hơn. Nguyên nhân sâu xa hầu như luôn là HCl thoát ra từ sự nhiễm bẩn PVC hoặc clo hữu cơ trong nguyên liệu thô phản ứng với thép công cụ tiêu chuẩn ở nhiệt độ nóng chảy. Xác nhận bằng cách: (1) đo kích thước hạt ô nhiễm tan chảy đầu ra - nếu có các hạt quá khổ mà không tăng áp suất, thì việc mở rộng lỗ được xác nhận; (2) kiểm tra tấm đã tháo ra dưới độ phóng đại xem có bị rỗ hoặc làm tròn thành lỗ hay không. Giải pháp là chỉ định các tấm lọc bằng thép PM chống ăn mòn, được phủ PVD Sureay, giúp bịt kín các bức tường thủng vi mô chống lại sự khuếch tán của axit và ngăn chặn sự mở rộng dần dần âm thầm.",
-        },
-        {
-          question:
-            "Sureay có thể khớp với kích thước lưỡi cạp EREMA hoặc Gneuß hiện tại của chúng tôi không?",
-          answer:
-            "Đúng. Gửi cho chúng tôi mẫu lưỡi cắt hiện có của bạn hoặc số bộ phận OEM và kiểu máy. Chúng tôi sẽ xác minh kích thước cấu hình lưỡi cắt trên CMM của mình, xác nhận giao diện lắp đặt, góc vát cạnh và thông số kỹ thuật vật liệu, đồng thời cung cấp các thiết bị thay thế trực tiếp. Đối với Hệ thống lọc liên tục EREMA và Hệ thống lọc quay Gneuß, chúng tôi duy trì các bản vẽ tham chiếu cho các kích thước bệ phổ biến nhất. Thời gian thực hiện đối với các lưỡi dao thay thế tiêu chuẩn là 7–12 ngày làm việc kể từ khi xác nhận kích thước.",
-        },
-        {
-          question:
-            "Tôi có thể mong đợi bao nhiêu giờ hoạt động từ lưỡi dao nạo D2 trên dây chuyền PCR hỗn hợp?",
-          answer:
-            "Trên dây chuyền nhựa cứng PCR hỗn hợp (HDPE/PP, nhiễm khoáng chất < 3%, nhiệt độ nóng chảy 230–260 °C), lưỡi cạp D2 thường cung cấp 400–700 giờ hoạt động trước khi biên dạng cạnh xuống cấp đến mức chênh lệch áp suất tăng. Lưỡi H13 trên cùng dây chuyền kéo dài thời gian bảo dưỡng lên 600–1.000 giờ. Trên các dòng có độ mài mòn cao (hợp chất chứa đầy thủy tinh, màng nông nghiệp có đất nhúng), tuổi thọ của D2 giảm xuống còn 150–300 giờ; H13 kéo dài thời gian này lên 250–450 giờ; cacbua rắn mang lại hơn 1.000–2.000 giờ cho các nguyên liệu thô này.",
+          label: "Ứng dụng",
+          value: "Lọc nóng chảy nhựa liên tục",
         },
       ],
-      company: [
+      technicalSpecs: [
         {
-          question:
-            "Lưỡi cạo bộ lọc tan chảy của bạn có phải là bộ phận thay thế OEM trực tiếp hoặc các bộ phận hậu mãi không?",
-          answer:
-            "Chúng là những sản phẩm thay thế hậu mãi chính xác được sản xuất theo thông số kỹ thuật kích thước OEM. Chúng tôi thiết kế ngược từng lưỡi dao từ bản vẽ OEM hoặc mẫu của khách hàng, xác minh sự phù hợp trên CMM và cung cấp chứng chỉ kiểm tra kích thước. Lưỡi dao của chúng tôi không phải là bộ phận OEM được đổi thương hiệu - chúng được sản xuất trực tiếp tại cơ sở của chúng tôi bằng vật liệu D2, H13 hoặc cacbua cao cấp với gói tài liệu chất lượng đầy đủ của chúng tôi.",
+          label: "Kích cỡ",
+          value: "150–500 mm",
         },
         {
-          question:
-            "Những tài liệu chất lượng nào được bao gồm trong lô hàng lưỡi cạp?",
-          answer:
-            "Mỗi lô hàng bao gồm: Chứng chỉ kiểm tra độ cứng Rockwell HRC, báo cáo kiểm tra kích thước CMM xác nhận biên dạng cạnh và dung sai giao diện lắp đặt, chứng chỉ truy xuất nguồn gốc vật liệu nhà máy thép và chứng chỉ lô xử lý nhiệt. Đối với những khách hàng yêu cầu tài liệu nâng cao về tiêu chuẩn ISO 9001 hoặc chứng nhận quy trình tái chế, các báo cáo thử nghiệm vật liệu đầy đủ và hồ sơ quy trình đều có sẵn theo yêu cầu.",
+          label: "Ứng dụng",
+          value: "Loại bỏ ô nhiễm từ màn hình lọc tan chảy",
+        },
+        {
+          label: "Vị trí bộ phận",
+          value: "Dụng cụ cạo ở màn hình bộ lọc",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "Thép công cụ D2 , thép gia công nóng H13 hoặc thép hợp kim cacbua vonfram",
+        },
+        {
+          label: "Độ cứng lưỡi thép",
+          value: "HRC 58–62",
+        },
+        {
+          label: "Dung sai hồ sơ",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Dung sai độ dày",
+          value: "±0.02 mm",
+        },
+        {
+          label: "Nhiệt độ hoạt động",
+          value: "Lên đến 300 °C đối với cấu hình H13 hoặc cacbua",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "Lớp phủ rào cản cho dịch vụ nấu chảy PVC và nhựa hỗn hợp",
+        },
+        {
+          label: "Chống ăn mòn",
+          value:
+            "Tùy chọn hợp kim kháng HCl cho dịch vụ nấu chảy PVC và nhựa hỗn hợp",
+        },
+        {
+          label: "Nguyên liệu",
+          value:
+            "PCR HDPE/PP, hợp chất chứa đầy thủy tinh, hỗn hợp PVC, màng nông nghiệp và nhựa WEEE",
         },
       ],
+      specificationImage: {
+        src: "/images/products/blades/scraper-blades-02.webp",
+        alt: "Lưỡi cạo bộ lọc tan chảy hiển thị hình dạng cơ thể và các cạnh làm việc của chúng",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho máy cạo lọc tan chảy của bạn",
+        description:
+          "Bao gồm mô hình bộ lọc, bản vẽ lưỡi hoặc mẫu, chi tiết chất mang, polyme và số lượng yêu cầu.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
-    id: "special-shaped-blades",
-    name: "Lưỡi dao có hình dạng đặc biệt",
-    fullName: "Cấu hình tùy chỉnh & Lưỡi công nghiệp có hình dạng đặc biệt",
-    category: "custom_profile",
-    sector: "other",
-    categoryDisplay: "Lưỡi hồ sơ tùy chỉnh",
-    image: "/images/products/blades/special-shaped-knife.webp",
-    badge: "Tùy chỉnh OEM",
-    badgeColor: "teal",
-    description:
-      "Cấu hình tùy chỉnh được sản xuất chính xác và các lưỡi cắt công nghiệp có hình dạng đặc biệt được sản xuất từ ​​bản vẽ DXF/DWG của khách hàng hoặc các mẫu vật lý. D2, H13, PM-HSS và cacbua rắn. Dung sai đến ± 0,02 mm. Mọi hồ sơ, mọi ngành nghề.",
-    link: "/custom",
-    specs: [
-      {
-        label: "Material",
-        value: "D2 / H13 / PM-HSS / Carbide",
-      },
-      {
-        label: "Tolerance",
-        value: "±0.02 mm",
-      },
-      {
-        label: "Drawing Input",
-        value: "DXF / DWG / STEP / Sample",
-      },
-      {
-        label: "Lead Time",
-        value: "7–15 working days",
-      },
-    ],
-    offers: {
-      lowPrice: 20,
-      highPrice: 800,
-    },
-  },
-  {
-    id: "wood-chipper-blades",
-    name: "Lưỡi Chipper Gỗ",
-    fullName:
-      "Dao băm trống & đĩa hạng nặng để tái chế sinh khối, lâm nghiệp và gỗ",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Lưỡi Chipper Gỗ",
-    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-    badge: "Lớp lâm nghiệp",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
-    ],
-    description:
-      "Dao băm dạng trống và dạng đĩa D2, Cr12MoV & TCT cao cấp để xử lý sinh khối, hoạt động lâm nghiệp & tái chế gỗ. HRC 57–62 được làm cứng hoàn toàn bằng xử lý đông lạnh sâu. Được mài chính xác đến dung sai độ dày ± 0,05 mm để có hình dạng chip đồng nhất, sạch sẽ. OEM phù hợp cho máy băm Bandit, Vermeer, Morbark, Peterson, Doppstadt & Jenz.",
-    fullDescription:
-      "Lưỡi của máy băm gỗ hoạt động trong một số điều kiện khắc nghiệt nhất trong ngành giảm kích thước. Mỗi vòng quay sẽ đẩy lưỡi cắt vào gỗ cứng dày đặc, gỗ xanh có độ ẩm cao, gỗ bị phá hủy bị ô nhiễm hoặc các pallet tái chế được gắn đinh và ghim. Một lưỡi dao thiếu sự cân bằng chính xác giữa độ cứng và độ dẻo dai sẽ bị cùn trong vòng vài giờ trên gỗ cứng sạch hoặc bị gãy ngay lần đóng đinh đầu tiên trên nguyên liệu bị ô nhiễm.\n\nLưỡi băm gỗ Sureay được rèn từ thép công cụ cao cấp — D2 (1.2379), Cr12MoV và thép dao băm băm có hàm lượng carbon cao — được xử lý nhiệt chân không đến HRC 57–62, sau đó là ngâm đông lạnh bắt buộc ở −196°C. Trình tự xử lý này tạo ra cấu trúc vi mô martensitic được ổn định hoàn toàn với sự phân bổ cacbua đồng đều trên toàn bộ mặt cắt ngang của lưỡi, mang lại yêu cầu về hiệu suất kép của việc đẽo gỗ: khả năng chống mài mòn để giữ cạnh sắc xuyên qua hàng trăm mét khối gỗ, kết hợp với độ bền của lõi đủ để chịu được tác động từ các chất ô nhiễm kim loại nhúng vào mà không bị gãy xương nghiêm trọng.\n\n## Loại Chipper & Hình dạng lưỡi\n\n### Lưỡi Chipper Trống\n\nMáy băm trống (Vermeer BC1800, Bandit 1990, Morbark 40/36) sử dụng dao thẳng hình chữ nhật được bắt vít vào trống quay tốc độ cao (thường là 1.000–2.500 vòng/phút). Lưỡi dao hoạt động như một con dao bào - mỗi vòng quay sẽ bóc một phoi từ gỗ tiến vào ở độ sâu cắt được lập trình. Chiều dài lưỡi dao tương ứng với chiều rộng trống (thường là 200–600 mm) và độ dày (thường là 12–30 mm) xác định độ sâu phoi tối đa.\n\nCác thông số quan trọng đối với hiệu suất của máy băm trống:\n- **Góc vát:** 30°–37° (gỗ cứng) hoặc 25°–30° (gỗ mềm/gỗ xanh)\n- **Độ dày song song:** ≤ 0,05 mm — độ dày lưỡi dao không đồng đều gây mất cân bằng trống, rung động phá hủy và kích thước chip không nhất quán\n- **Dung sai vị trí lỗ bu lông:** ±0,10 mm — đảm bảo lưỡi cắt chiếu đều trên toàn bộ chiều rộng trống sau khi lắp\n\n### Lưỡi Chipper đĩa\n\nMáy băm đĩa (Peterson 5710, Morbark 50/48, Precision Husky) gắn các lưỡi dao hướng tâm trên một đĩa quay nặng. Gỗ được đưa theo hướng trục vào mặt đĩa và các lưỡi dao tạo ra phoi bằng sự kết hợp giữa hành động cắt và tách. Lưỡi máy băm đĩa thường ngắn hơn nhưng dày hơn dao băm dạng trống và chịu tải trọng tác động riêng lẻ cao hơn từ các khúc gỗ có đường kính lớn.\n\nLưỡi máy băm đĩa yêu cầu thông số kỹ thuật về độ bền tối đa: Thép dao băm Cr12MoV hoặc thép biến đổi ở HRC 55–58 được khuyên dùng cho máy băm đĩa nguyên khúc xử lý gỗ cứng có đường kính trên 300 mm.\n\n### Lưỡi băm nguyên cây / sinh khối\n\nMáy băm sinh khối và băm cả cây (Doppstadt DH 910, Jenz HEM 820, CBI Magnum Force) xử lý toàn bộ cây bao gồm cành, bóng rễ và bụi cây. Nguyên liệu chứa đất, đá và mảnh vụn kim loại thường xuyên. Lưỡi dao dành cho các ứng dụng này được sản xuất từ ​​thép có độ va đập tối ưu ở HRC 55–58, với góc vát rộng hơn (35°–42°) giúp phân phối lực va chạm trên một mặt cắt rộng hơn và ngăn ngừa hiện tượng cuộn mép trên nguyên liệu bị nhiễm bẩn.\n\n## Lựa chọn nguyên liệu theo nguyên liệu\n\n**Thép dùng làm dao băm có hàm lượng carbon cao (HRC 55–58):** Loại tiêu chuẩn công nghiệp dành cho băm gỗ lâm nghiệp nói chung và gỗ xanh. Tiết kiệm chi phí, dễ dàng mài lại bằng máy mài bề mặt tiêu chuẩn và đủ cứng để tránh nhiễm bẩn móng ở mức độ vừa phải. Phù hợp với các nhà thầu cảnh quan, công ty dịch vụ cây xanh và hoạt động xử lý rác thải xanh của thành phố.\n\n**Thép công cụ gia công nguội D2 / Cr12MoV (HRC 58–62):** Thông số kỹ thuật cao cấp để tái chế gỗ thương mại khối lượng lớn và sản xuất chip nhiên liệu sinh khối. Ma trận cacbua crom 12% mang lại tuổi thọ lưỡi dài hơn 2–3× so với thép cacbon tiêu chuẩn trên gỗ cứng mài mòn (sồi, hickory, vỏ sắt) và gỗ tái chế khô. Được khuyên dùng cho máy băm dạng trống công nghiệp hoạt động theo ca liên tục 8–16 giờ.\n\n**TCT — Vonfram cacbua có đầu (Vít chèn hàn):** Thông số kỹ thuật tối ưu cho quá trình xử lý sinh khối hiệu suất cao. Dao băm có đầu bằng cacbua mang lại tuổi thọ sử dụng của D2 từ 5–10× trên gỗ bị phá hủy bị ô nhiễm, các mối nối đường sắt và các củ rễ bị bẩn nặng. Lưỡi cắt cacbua được hàn chân không trên thân thép hợp kim cứng giúp hấp thụ tổng năng lượng va chạm mà không truyền vết nứt giòn sang vật chèn cacbua.\n\n## Mài chính xác cho chất lượng chip\n\nHình dạng chip là thước đo chất lượng sản phẩm chính trong sản xuất nhiên liệu sinh khối: nhà máy bột giấy, nhà máy điện sinh khối và nhà sản xuất viên quy định các tiêu chuẩn phân phối kích thước chip nghiêm ngặt (ví dụ: EN 17225-4 / TAPPI T257). Độ dày lưỡi dao không đồng đều hoặc các góc vát không nhất quán trên trống hoặc đĩa nhiều lưỡi tạo ra các chip có kích thước quá lớn và quá nhỏ, không đạt các thông số kỹ thuật sàng lọc, yêu cầu xử lý thứ cấp hoặc gây giảm giá.\n\nLưỡi dao băm chắc chắn được mài bề mặt chính xác để:\n- **Dung sai độ dày:** ±0,05 mm trên toàn bộ chiều dài lưỡi dao\n- **Góc vát:** ±0,5° (được xác minh bằng bộ so sánh quang học)\n- **Độ phẳng mặt:** ≤ 0,05 mm trên 300 mm chiều dài\n- **Độ hoàn thiện bề mặt:** Ra ≤ 1,6 μm trên mặt trước giúp giảm ma sát và phóng phoi sạch\n\n## Cung cấp dao phản công (đe) & tấm đeo\n\nDao phản công (dao hoặc dao cắt) thiết lập khe hở xác định độ dày phoi tối thiểu. Dao phản diện bị mòn hoặc lệch sẽ làm mất đi lợi ích của lưỡi dao băm mới. Sureay sản xuất các loại dao phản công phù hợp và các tấm mài mòn có thể thay thế bằng thép D2 và thép mangan, được cung cấp dưới dạng bộ tích hợp với các thông số kỹ thuật về khoảng hở đã được xác minh trước cho kiểu máy băm của bạn.\n\n## Khả năng làm sắc nét lại\n\nKhông giống như dao máy cắt, dao băm được thiết kế cho nhiều chu kỳ mài lại. xử lý nhiệt được tôi cứng hoàn toàn của chúng tôi đảm bảo độ cứng đồng đều từ bề mặt đến lõi - mỗi lần mài lại sẽ cho ra loại thép có độ cứng và đặc tính mài mòn giống hệt nhau. Một lưỡi máy băm D2 tiêu chuẩn có thể được mài lại 8–12 lần trước khi đạt được độ dày an toàn tối thiểu, khiến tổng chi phí sở hữu trở nên cực kỳ cạnh tranh.",
-    link: "/products/wood-chipper-blades",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit Industries",
-      "Vermeer",
-      "Morbark",
-      "Peterson Pacific",
-      "Doppstadt",
-      "Jenz",
-      "CBI",
-      "Precision Husky",
-      "Bruks Siwertell",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value:
-          "High-Carbon Chipper Steel | D2 (1.2379) / Cr12MoV | TCT Carbide Tipped",
-      },
-      {
-        label: "Hardness",
-        value:
-          "HRC 55–58 (Standard) | HRC 58–62 (D2/Cr12MoV) | HRA 89–91 (TCT)",
-      },
-      {
-        label: "Thickness Tolerance",
-        value: "±0.05 mm (prevents drum imbalance & vibration)",
-      },
-      {
-        label: "Bevel Angle",
-        value: "25°–42° (optimised per timber species & contamination level)",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (−196°C)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 8–12 regrind cycles per blade",
-      },
-      {
-        label: "Application",
-        value:
-          "Forestry Drum Chippers, Disc Chippers, Biomass Whole-Tree Chippers, Pallet Recycling",
-      },
-    ],
-    components: [
-      {
-        id: "through-hardened-core",
-        tag: "Luyện kim",
-        title: "Được làm cứng hoàn toàn để có tuổi thọ xay lại tối đa",
-        description:
-          "Không giống như các giải pháp thay thế được làm cứng bằng vỏ để lộ ra lõi mềm sau lần mài lại đầu tiên, lưỡi máy băm Sureay được xử lý nhiệt chân không để đạt được độ cứng đồng đều (HRC 57–62) từ bề mặt đến lõi. Mỗi lần mài lại mang lại hiệu suất lưỡi giống hệt nhau cho một lưỡi dao mới, mang lại 8–12 chu kỳ dịch vụ hiệu quả cho mỗi lưỡi dao.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "ĐỘ BỀN",
-        title: "Chống đinh & chất gây ô nhiễm",
-        description:
-          "Gỗ phá hủy bị ô nhiễm, pallet tái chế và rác thải xanh đô thị có chứa đinh, ốc vít và đá ẩn. Phương pháp xử lý đông lạnh sâu của chúng tôi (−196°C) giúp ổn định cấu trúc vi mô martensitic, mang lại độ bền lõi cần thiết để hấp thụ các tác động va đập của kim loại mà không bị gãy cạnh giòn hoặc nứt lưỡi.",
-      },
-      {
-        id: "chip-quality",
-        tag: "CHẤT LƯỢNG ĐẦU RA",
-        title: "Góc xiên chính xác cho kích thước chip đồng nhất",
-        description:
-          "Các nhà máy điện sinh khối và nhà máy bột giấy xử phạt việc phân phối kích thước chip không đúng thông số kỹ thuật. Mỗi lưỡi dao đều được mài bề mặt với độ dày ±0,05 mm và góc vát ±0,5°, đảm bảo hình dạng chip nhất quán trên toàn bộ trống hoặc chiều rộng đĩa đáp ứng các tiêu chuẩn EN 17225 và TAPPI T257.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Loại Chipper / Nền tảng OEM",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước tiêu chuẩn cho các OEM chipper lớn. Các mẫu bu lông 2 lỗ, 3 lỗ và 4 lỗ được gia công CNC theo bản thiết kế OEM chính xác. Dao phản lực và tấm mài mòn có sẵn dưới dạng bộ phù hợp. Chiều dài tùy chỉnh lên tới 800 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Bandit 12" / 15" Drum',
-        od: "230",
-        id: "80",
-        thickness: "16",
-      },
-      {
-        spec: 'Bandit 18" / 19" Drum',
-        od: "295",
-        id: "80",
-        thickness: "19",
-      },
-      {
-        spec: "Vermeer BC1800 / BC2100",
-        od: "310",
-        id: "100",
-        thickness: "19",
-      },
-      {
-        spec: "Morbark 40/36 Drum",
-        od: "400",
-        id: "100",
-        thickness: "22",
-      },
-      {
-        spec: "Morbark 50/48 Disc",
-        od: "250",
-        id: "120",
-        thickness: "25",
-      },
-      {
-        spec: "Peterson 5710 Disc",
-        od: "280",
-        id: "130",
-        thickness: "25",
-      },
-      {
-        spec: "Doppstadt / Jenz Biomass",
-        od: "350",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Heavy Whole-Tree Chipper",
-        od: "600",
-        id: "150",
-        thickness: "30",
-      },
-    ],
-    relatedBladeIds: [
-      "wood-chipper-anvils",
-      "twin-shaft-blades-recycling",
-      "single-shaft-shredder-blades",
-      "granulator-blades",
-    ],
-    offers: {
-      lowPrice: 25,
-      highPrice: 380,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Tôi nên sử dụng vật liệu lưỡi dao nào để băm gỗ sạch và gỗ bị ô nhiễm?",
-          answer:
-            "Đối với gỗ xanh sạch (lâm nghiệp, dịch vụ chăm sóc cây xanh, khai hoang đất), thép dùng cho máy băm có hàm lượng carbon cao tiêu chuẩn ở HRC 55–58 mang lại tuổi thọ lưỡi dao tuyệt vời với chi phí trên mỗi chu kỳ mài lại thấp nhất. Đối với gỗ phá hủy bị ô nhiễm, pallet tái chế hoặc rác thải xanh đô thị có đinh, ốc vít và đá cắm vào, hãy nâng cấp lên Cr12MoV hoặc D2 ở HRC 58–60. Ma trận crom-cacbua mang lại tuổi thọ cạnh cao hơn 2–3× trên gỗ khô bị mài mòn trong khi vẫn duy trì đủ độ dẻo dai để chịu được các tác động kim loại vừa phải. Đối với các dòng chảy bị ô nhiễm nặng (đường ray, mảnh vụn C&D), hãy chỉ định các lưỡi có đầu bằng cacbua TCT mang lại tuổi thọ sử dụng lâu hơn 5–10× so với D2.",
-        },
-        {
-          question:
-            "Dung sai độ dày lưỡi dao ảnh hưởng như thế nào đến chất lượng chip và độ rung của trống?",
-          answer:
-            "Độ dày lưỡi cắt trực tiếp kiểm soát độ sâu phoi và ảnh hưởng đến sự cân bằng của trống. Nếu độ dày lưỡi cắt thay đổi hơn 0,10 mm trên một trống nhiều lưỡi, thì lưỡi dày hơn cắt sâu hơn và tạo ra phoi quá khổ trong khi lưỡi mỏng hơn tạo ra phoi có kích thước nhỏ hơn — cả hai điều kiện đều không đạt thông số kỹ thuật sàng lọc nhiên liệu sinh khối (EN 17225-4). Ngoài ra, khối lượng lưỡi dao không đồng đều tạo ra sự mất cân bằng động khi vận hành RPM (1.000–2.500 vòng/phút), gây ra rung động phá hủy làm tăng tốc độ hỏng ổ trục và làm mỏi vỏ trống. Dung sai độ dày ±0,05 mm của chúng tôi sẽ loại bỏ cả hai vấn đề.",
-        },
-        {
-          question:
-            "Tôi nên chỉ định góc vát nào cho việc đẽo gỗ cứng và gỗ mềm?",
-          answer:
-            "Đối với gỗ mềm và gỗ xanh có độ ẩm cao (thông, vân sam, bạch dương), chỉ định góc vát 25°–30°. Các vết cắt góc sắc nét hơn bao gồm các lát cắt xuyên qua gỗ mềm, nhiều sợi với lực cắt tối thiểu và tạo ra các mặt phoi sạch ít bị rách xơ. Đối với gỗ cứng khô (sồi, hickory, bạch đàn), tăng lên 30°–37° để tăng cường lưỡi cắt trước mật độ và tải trọng va đập cao hơn. Đối với sinh khối bị ô nhiễm và toàn bộ cây bị sứt mẻ có lẫn đất và đá, hãy chỉ định 35°–42° — góc xiên rộng hơn sẽ phân bổ lực tác động trên một mặt cắt rộng hơn, ngăn ngừa hiện tượng cuộn cạnh.",
-        },
-        {
-          question:
-            "Lưỡi dao băm Sureay có thể được mài lại bao nhiêu lần và quy trình mài lại chính xác là gì?",
-          answer:
-            "Lưỡi máy băm đã được tôi cứng hoàn toàn của chúng tôi có thể được mài lại 8–12 lần trước khi đạt độ dày an toàn tối thiểu (thường bằng 60–70% độ dày ban đầu). Nghiền lại trên máy mài bề mặt ướt sử dụng bánh xe oxit nhôm (46–60 grit) ở độ sâu 0,02–0,05 mm mỗi lần chạy để tránh hư hỏng do nhiệt đối với cạnh được xử lý nhiệt. Không bao giờ mài khô dao băm - nhiệt độ quá nóng cục bộ trên 200°C sẽ làm giảm nhiệt độ và làm mềm lưỡi dao. Sau khi mài, kiểm tra góc vát bằng bộ so sánh quang học hoặc thước đo góc kỹ thuật số. Chúng tôi cũng cung cấp dịch vụ mài lại chuyên nghiệp với việc xác minh lại độ cứng.",
-        },
-        {
-          question:
-            "Điều gì gây ra hiện tượng cuộn lưỡi sớm trên lưỡi máy băm của tôi và làm cách nào để ngăn chặn điều đó?",
-          answer:
-            "Cuộn qua cạnh (lưỡi cắt gấp lại thay vì sứt mẻ hoặc mòn dần) cho thấy độ cứng của lưỡi cắt quá thấp đối với nguyên liệu thô hoặc góc vát quá nhọn đối với tải trọng va đập. Trên các lưỡi dao bằng thép carbon tiêu chuẩn xử lý gỗ cứng khô, cạnh không được gia cố bằng cacbua đủ để chống biến dạng dẻo. Nâng cấp lên D2 hoặc Cr12MoV ở HRC 58–62 và tăng góc xiên thêm 3°–5°. Đồng thời kiểm tra độ hở của dao phản lực: độ hở quá mức (> 1,5 mm) buộc lưỡi dao làm gãy gỗ bằng cách uốn cong thay vì cắt, làm tăng đáng kể tải trọng ở cạnh.",
-        },
-        {
-          question:
-            "Tôi có nên thay dao cố định (đe) khi lắp lưỡi dao băm mới không?",
-          answer:
-            "Cần kiểm tra dao cố định mỗi lần thay đổi lưỡi dao băm. Một con dao phản công bị mòn có cạnh tròn hoặc sứt mẻ buộc các lưỡi dao mới phải hoạt động dựa trên khe hở cắt không nhất quán, làm giảm tuổi thọ sử dụng hiệu quả của chúng xuống 30–50% và tạo ra chất lượng phoi kém. Thay thế hoặc mài lại dao cố định khi lưỡi cắt có vết tròn vượt quá 1,0 mm hoặc sứt mẻ sâu hơn 0,5 mm. Chúng tôi cung cấp các loại dao phản công phù hợp được sản xuất từ ​​thép D2 hoặc thép mangan dưới dạng bộ tích hợp có khoảng hở đã được xác minh trước.",
-        },
-        {
-          question:
-            "Tôi nên nhắm mục tiêu phân bổ kích thước chip nào để sản xuất nhiên liệu sinh khối so với nguồn cung của nhà máy bột giấy?",
-          answer:
-            "Các nhà máy điện sinh khối thường yêu cầu phoi có đường kính trong vòng 3–50 mm (EN 17225-4 Loại P31 hoặc P45) với độ mịn dưới 5% (< 3 mm) và tỷ lệ quá khổ dưới 1% (> 63 mm). Các nhà máy bột giấy yêu cầu các thông số kỹ thuật chặt chẽ hơn theo TAPPI T257: thường chấp nhận 80% trong phạm vi 7–25 mm với các giới hạn nghiêm ngặt đối với phoi ghim và các mảnh quá dày. Để đạt được các thông số kỹ thuật này đòi hỏi độ dày lưỡi dao nhất quán (± 0,05 mm), góc vát chính xác, khoảng hở dao phản diện thích hợp (0,5–1,0 mm) và tốc độ trống đồng đều. Chúng tôi có thể đề xuất hình dạng lưỡi cắt tối ưu cho đặc điểm kỹ thuật mục tiêu của bạn.",
-        },
-      ],
-      company: [
-        {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua việc đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao của bạn.",
-        },
-        {
-          question:
-            "Bạn có thể cung cấp lưỡi dao cho mẫu máy băm cụ thể của tôi nếu nó không được liệt kê trong kích thước tiêu chuẩn của bạn không?",
-          answer:
-            "Đúng. Gửi cho chúng tôi mẫu lưỡi cắt hiện có của bạn, bản vẽ kỹ thuật hoặc số kiểu máy và nhãn hiệu máy băm của bạn. Chúng tôi sẽ xác nhận chiều dài, chiều rộng, độ dày, góc xiên và kiểu lỗ bu lông, đồng thời sản xuất các vật thay thế có thể tháo lắp chính xác. Chúng tôi duy trì một cơ sở dữ liệu phong phú về các bản thiết kế lưỡi chipper OEM cho các nền tảng Bandit, Vermeer, Morbark, Peterson, Doppstadt, Jenz và CBI. Kích thước tùy chỉnh được sản xuất theo bản vẽ trong vòng 10–15 ngày làm việc.",
-        },
-        {
-          question:
-            "Điều gì khiến xử lý nhiệt của Sureay khác biệt so với các lựa chọn thay thế rẻ hơn?",
-          answer:
-            "Không giống như các quy trình tôi và tôi tiêu chuẩn, mỗi lưỡi máy băm Sureay đều trải qua quá trình đông cứng chân không, sau đó là xử lý đông lạnh sâu ở −196°C. Bước đông lạnh biến austenite còn lại thành martensite ổn định, cải thiện khả năng chống mài mòn lên đến 40% và đảm bảo độ cứng đồng đều từ bề mặt đến lõi. Điều này có nghĩa là mỗi lần mài lại sẽ tạo ra thép có chất lượng giống nhau - các lưỡi dao rẻ tiền thường có lõi mềm hơn sau lần mài lại đầu tiên, làm giảm một nửa tuổi thọ của lưỡi dao trong các chu kỳ mài tiếp theo.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Lưỡi dao băm thay thế OEM tiêu chuẩn có kích thước sẵn có thường được giao hàng trong vòng 48–72 giờ. Cấu hình tùy chỉnh và lưỡi cắt bằng cacbua TCT mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question:
-            "Sureay có những chứng chỉ chất lượng nào và bạn có thể cung cấp báo cáo thử nghiệm vật liệu không?",
-          answer:
-            "Sureay được chứng nhận ISO 9001:2015. Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước (độ dày, góc xiên, vị trí lỗ bu lông) và chứng chỉ lô xử lý nhiệt. Đối với các hoạt động sinh khối khối lượng lớn yêu cầu truy xuất nguồn gốc đầy đủ, giấy chứng nhận thành phần nhà máy thép và báo cáo kích thước CMM được cung cấp theo yêu cầu.",
-        },
-        {
-          question:
-            "Chúng tôi có thể dùng thử một bộ mẫu trước khi thực hiện đơn đặt hàng sản xuất đầy đủ không?",
-          answer:
-            "Đúng. Chúng tôi cung cấp các bộ mẫu (thường là 2–4 lưỡi) để xác minh độ vừa khít của máy và so sánh điểm chuẩn tuổi thọ lưỡi cắt với nhà cung cấp hiện tại của bạn. Thời gian lấy mẫu tiêu chuẩn là 5–7 ngày làm việc. Đối với lưỡi có đầu bằng cacbua TCT, thời gian lấy mẫu là 10–12 ngày làm việc.",
-        },
-      ],
-    },
-  },
-  {
-    id: "wood-chipper-anvils",
-    name: "Đe băm gỗ",
-    fullName:
-      "Đe dao phản công hạng nặng và đe dao dùng cho máy băm gỗ dạng trống và đĩa",
-    category: "wood_chipper",
-    sector: "wood",
-    categoryDisplay: "Dao phản công & đe",
-    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-    badge: "Bộ phù hợp",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
-      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
-    ],
-    description:
-      "Đe dăm gỗ được mài chính xác (dao phản công / dao giường) bằng thép công cụ cải tiến D2, Cr12MoV và A8. HRC 55–60 được tôi cứng xuyên suốt để có tuổi thọ mài sắc lại tối đa. Đặt khoảng hở giữa lưỡi dao và đe để kiểm soát độ dày phoi và hiệu suất của máy băm. Được nối đất bề mặt với độ song song toàn bộ chiều dài ± 0,05 mm. Các sản phẩm thay thế tương thích OEM dành cho máy băm Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen & Jenz.",
-    fullDescription:
-      "Cái đe - còn được gọi là dao phản đòn, dao giường hoặc lưỡi cố định - là lưỡi cắt cố định bên trong máy băm gỗ mà trống quay hoặc lưỡi đĩa cắt vào. Cùng với nhau, lưỡi băm và đe tạo thành một cặp cắt giống như cắt kéo: lưỡi cắt phoi từ gỗ và đe tạo ra khe hở xác định độ dày phoi tối thiểu, hiệu quả cắt và tải của động cơ.\n\nĐe bị mòn hoặc lệch là nguyên nhân bị bỏ qua nhiều nhất dẫn đến hiệu suất hoạt động của máy băm kém. Khi cạnh đe tròn lại, khoảng cách giữa lưỡi đe và lưỡi đe sẽ mở rộng dần dần. Thay vì thực hiện hành động cắt sạch, gỗ bị xé và nghiền nát thay vì cắt - làm mức tiêu thụ nhiên liệu tăng vọt từ 15–25%, tạo ra các mảnh vụn không đạt tiêu chuẩn sàng lọc và làm tăng tốc độ mài mòn của lưỡi máy băm. Thay thế các lưỡi dao băm mà không kiểm tra đe là lãng phí tiền: các lưỡi dao mới hoạt động với đe cùn chỉ mang lại 50–70% tuổi thọ sử dụng tiềm năng của chúng.\n\n## Tại sao cái đe lại quan trọng như lưỡi dao\n\n**Kiểm soát khoảng trống:** Khoảng cách giữa lưỡi dao và đe — thường được đặt ở mức 0,5–1,5 mm đối với máy băm dạng trống và 0,8–2,0 mm đối với máy băm dạng đĩa — trực tiếp kiểm soát độ dày phoi tối thiểu. Một chiếc đe bị mòn sẽ làm tăng khoảng cách này vượt quá thông số kỹ thuật, tạo ra các mảnh vụn quá khổ và các mảnh sợi dài không đạt tiêu chuẩn sàng lọc nhiên liệu sinh khối (EN 17225-4). Đe của chúng tôi được mài bề mặt chính xác đến độ song song toàn bộ ± 0,05 mm, đảm bảo khe hở cắt đồng đều trên toàn bộ chiều rộng cắt.\n\n**Hấp thụ tác động:** Không giống như lưỡi dao băm (quay với tốc độ cao), đe hấp thụ toàn bộ phản lực của mỗi vết cắt dưới dạng tải trọng tác động tĩnh. Trải qua hàng triệu chu kỳ sứt mẻ, tải trọng tác động kéo dài này gây ra biến dạng cạnh, nứt vi mô và cuối cùng là gãy vỡ khối ở các đe được xử lý nhiệt kém. Đe Sureay được làm cứng hoàn toàn đến HRC 55–60 thông qua chân không xử lý nhiệt - đủ cứng để giữ cạnh sắc trước gỗ bị mài mòn, nhưng đủ cứng để hấp thụ tác động lặp đi lặp lại mà không bị gãy giòn.\n\n**Tốc độ mài mòn khác nhau, chu kỳ thay thế khác nhau:** Đe thường bền hơn lưỡi máy băm với hệ số 2–4× vì nó hoạt động dưới tải trọng nén (tĩnh) thay vì tải trọng cắt động trên lưỡi dao. Tuy nhiên, do đe mài mòn diễn ra từ từ nên người vận hành thường bỏ lỡ sự suy giảm dần dần cho đến khi chất lượng phoi bị suy giảm đáng kể. Chúng tôi khuyên bạn nên kiểm tra cạnh đe mỗi khi thay đổi hoặc mài lưỡi dao băm.\n\n## Lựa chọn vật liệu\n\n**Thép công cụ D2 / Cr12MoV (HRC 58–60):** Thông số kỹ thuật cao cấp dành cho hoạt động chế biến gỗ thương mại và sinh khối khối lượng lớn. Ma trận crom-cacbua 12% mang lại khả năng chống mài mòn vượt trội đối với gỗ cứng dày đặc và nguyên liệu thô có vỏ nặng. Được khuyên dùng cho máy băm trống công nghiệp (Morbark, dòng Vermeer HG, Doppstadt) chạy liên tục theo ca 8–16 giờ.\n\n**Thép công cụ cải tiến A8 (HRC 54–58):** Loại OEM tiêu chuẩn công nghiệp được Bandit, Morbark và Vermeer sử dụng cho đe nguyên bản của nhà máy. A8 Modified mang lại sự cân bằng tuyệt vời giữa khả năng chống mài mòn và độ bền va đập - rất quan trọng đối với đe phải hấp thụ hàng triệu chu kỳ va đập mà không bị nứt vi mô. Sự lựa chọn chính xác cho các hoạt động lâm nghiệp nói chung và dịch vụ cây xanh xử lý các loài hỗn hợp có mức độ ô nhiễm vừa phải.\n\n**42CrMo / Thép Mangan (HRC 50–55):** Một lựa chọn có độ bền cao, hiệu quả về mặt chi phí dành cho người vận hành xử lý gỗ phá dỡ, thanh ray đường sắt và rác thải xanh đô thị bị ô nhiễm nặng trong đó nguyên liệu thô có chứa các mảnh vụn kim loại đáng kể. Độ cứng thấp hơn ưu tiên khả năng hấp thụ va đập hơn là khả năng chống mài mòn, ngăn chặn hiện tượng gãy đe thảm khốc có thể làm hỏng vỏ trống.\n\n## Cài đặt lắp đặt và giải phóng mặt bằng có thể điều chỉnh\n\nHầu hết các OEM chipper đều cung cấp một hệ thống điều chỉnh cơ học - thường là các tấm đệm hoặc bu lông lắp có thể điều chỉnh - để đẩy đe về phía lưỡi dao khi cả hai bộ phận đều mòn, duy trì khe hở được thiết kế. Đe Sureay được gia công CNC với các lỗ lắp có rãnh hoặc quá khổ phù hợp chính xác với cơ chế điều chỉnh OEM của bạn, đảm bảo các nhóm bảo trì có thể đặt khe hở một cách chính xác và khóa nó lại một cách an toàn.\n\n## Bộ Lưỡi + Đe\n\nĐối với những người vận hành thay đồng thời cả lưỡi dao và đe, chúng tôi cung cấp các bộ phù hợp: lưỡi dao băm và dao phản công được sản xuất từ cùng một mẻ thép, được xử lý nhiệt trong cùng một chu trình lò chân không và được mài bề mặt với cùng dung sai độ song song. Một bộ phù hợp giúp loại bỏ sự không phù hợp về độ cứng giữa lưỡi dao và đe gây ra sự mài mòn nhanh chóng khi tìm nguồn cung ứng linh kiện từ các nhà cung cấp khác nhau.",
-    link: "/products/wood-chipper-anvils",
-    isFeatured: true,
-    compatibleMachines: [
-      "Bandit",
-      "Vermeer",
-      "Morbark",
-      "Timberwolf",
-      "Schliesing",
-      "Greenmech",
-      "Jensen",
-      "Jenz",
-      "Eschlböck",
-      "Forst",
-    ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 (Cr12MoV) | A8 Modified | 42CrMo Manganese Steel",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 54–60 (Through-Hardened, Surface = Core)",
-      },
-      {
-        label: "Parallelism",
-        value: "±0.05 mm full-length (uniform shear gap)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "Single-bevel 30°–37° (matched to chipper blade angle)",
-      },
-      {
-        label: "Mounting",
-        value: "Slotted holes / shim-adjustable (OEM clearance adjustment)",
-      },
-      {
-        label: "Resharpening",
-        value: "Through-hardened — 5–10 regrind cycles per anvil",
-      },
-      {
-        label: "Application",
-        value:
-          "Drum Chippers, Disc Chippers, Biomass Chippers, Landscape Chippers",
-      },
-    ],
-    components: [
-      {
-        id: "clearance-gap-control",
-        tag: "HIỆU QUẢ CẮT",
-        title: "Kiểm soát khoảng cách giải phóng mặt bằng chính xác",
-        description:
-          "Khoảng cách giữa lưỡi dao và đe xác định độ dày phoi, lực cắt và mức tiêu thụ nhiên liệu. Cạnh đe tròn làm tăng khoảng cách này vượt quá tiêu chuẩn kỹ thuật, biến việc cắt sạch thành việc nghiền không hiệu quả. Các đe của chúng tôi được mài bề mặt đến độ song song ±0,05 mm để duy trì khoảng hở được thiết kế trên toàn bộ chiều rộng cắt — khôi phục khớp cắn tự ăn và giảm tải động cơ tới 20%.",
-      },
-      {
-        id: "impact-toughness",
-        tag: "ĐỘ BỀN",
-        title: "Khả năng chống va đập tĩnh",
-        description:
-          "Chiếc đe hấp thụ toàn bộ phản lực của mỗi vết cắt dưới dạng tải trọng tác động tĩnh - hàng triệu cú đánh mỗi ca. Thép biến tính D2 và A8 được tôi cứng hoàn toàn ở HRC 54–60 mang lại sự cân bằng chính xác: đủ cứng để giữ cạnh sắc trước gỗ bị mài mòn, đủ cứng để hấp thụ các tác động lặp đi lặp lại mà không bị nứt vi mô hoặc gãy xương nghiêm trọng.",
-      },
-      {
-        id: "matched-sets",
-        tag: "TÍCH HỢP HỆ THỐNG",
-        title: "Bộ Lưỡi + Đe",
-        description:
-          "Lưỡi Chipper và dao phản đòn từ các nhà cung cấp khác nhau thường có độ cứng không khớp - đe cứng hơn sẽ làm mòn lưỡi sớm hơn hoặc đe mềm hơn sẽ xuống cấp nhanh hơn dự kiến. Các bộ phù hợp của chúng tôi được sản xuất từ ​​cùng một lô thép và được xử lý nhiệt trong cùng một chu trình, đảm bảo tốc độ mài mòn cân bằng và tuổi thọ kết hợp tối đa.",
-      },
-    ],
-    dimensionLabels: {
-      col0: "Chipper OEM / Model",
-      col1: "Chiều dài (mm)",
-      col2: "Chiều rộng (mm)",
-      col3: "Độ dày (mm)",
-      caption:
-        "* Kích thước đe thay thế OEM tiêu chuẩn. Các lỗ lắp có rãnh được gia công bằng máy CNC theo mẫu điều chỉnh khe hở OEM chính xác. Bộ lưỡi + đe phù hợp có sẵn cho mọi kích cỡ. Chiều dài tùy chỉnh lên tới 600 mm.",
-    },
-    standardDimensions: [
-      {
-        spec: 'Bandit 12" / 15" / Mighty Bandit',
-        od: "185",
-        id: "75",
-        thickness: "10",
-      },
-      {
-        spec: 'Bandit 18" / 19" / 1290 / 1590',
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      {
-        spec: "Vermeer BC1200 / BC1500",
-        od: "200",
-        id: "80",
-        thickness: "12",
-      },
-      {
-        spec: "Vermeer BC1800 / BC2000",
-        od: "260",
-        id: "100",
-        thickness: "16",
-      },
-      {
-        spec: "Morbark 2 / 5 / 7 / 12 / 13",
-        od: "265",
-        id: "95",
-        thickness: "12",
-      },
-      {
-        spec: "Morbark 40/36 / 50/48",
-        od: "400",
-        id: "100",
-        thickness: "20",
-      },
-      {
-        spec: "Timberwolf 150 / 190 / 230",
-        od: "230",
-        id: "80",
-        thickness: "16",
-      },
-      {
-        spec: "Schliesing 400 / 500 / 550 / 600 / 660",
-        od: "260",
-        id: "80",
-        thickness: "20",
-      },
-      {
-        spec: "Greenmech / Jensen / Forst",
-        od: "Per OEM Drawing",
-        id: "Per OEM Drawing",
-        thickness: "Per OEM Drawing",
-      },
-    ],
-    relatedBladeIds: ["wood-chipper-blades"],
-    offers: {
-      lowPrice: 25,
-      highPrice: 250,
-    },
-    faqs: {
-      technical: [
-        {
-          question:
-            "Bao lâu thì tôi nên thay thế hoặc mài lại đe so với lưỡi máy băm?",
-          answer:
-            "Đe thường bền hơn lưỡi máy băm từ 2–4× vì nó hoạt động dưới tải trọng nén tĩnh thay vì tải trọng cắt động trên lưỡi dao. Tuy nhiên, chúng tôi khuyên bạn nên kiểm tra cạnh đe mỗi khi thay đổi hoặc lật lưỡi dao băm. Khi cạnh đe có độ tròn có thể nhìn thấy vượt quá 1,0 mm (kiểm tra bằng thước thẳng dưới ánh sáng mạnh), hãy mài lại hoặc thay thế nó. Việc lắp đặt các lưỡi dao băm mới trên đe đã mòn chỉ mang lại 50–70% tuổi thọ lưỡi dao tiềm năng của chúng và tạo ra chất lượng phoi kém bất kể độ sắc bén của lưỡi dao.",
-        },
-        {
-          question: "Tôi nên đặt khoảng hở nào giữa lưỡi máy băm và đe?",
-          answer:
-            "Khoảng trống thay đổi tùy theo loại máy băm và loài gỗ. Đối với máy băm dạng trống xử lý gỗ mềm xanh: 0,5–1,0 mm. Đối với máy băm dạng trống trên gỗ cứng khô: 0,8–1,5 mm. Đối với máy băm đĩa: 1,0–2,0 mm. Luôn tham khảo sổ tay hướng dẫn OEM chipper của bạn để biết thông số kỹ thuật chính xác. Khoảng cách phải được đo tại nhiều điểm trên toàn bộ chiều rộng đe bằng thước đo cảm biến. Nếu khe hở thay đổi lớn hơn 0,3 mm từ đầu này đến đầu kia thì độ song song của mặt đe đã bị suy giảm và đe cần được mài lại hoặc thay thế.",
-        },
-        {
-          question:
-            "Tôi có nên sử dụng cùng loại thép cho đe như lưỡi máy băm không?",
-          answer:
-            "Không nhất thiết - đe và lưỡi dao có các chế độ mài mòn khác nhau và do đó có cách luyện kim tối ưu khác nhau. Lưỡi dao chịu tải cắt động ở tốc độ cao và được hưởng lợi từ độ cứng cạnh tối đa (HRC 58–62). Chiếc đe chịu tác động nén tĩnh và được hưởng lợi từ độ cứng thấp hơn một chút (HRC 54–58) mang lại khả năng hấp thụ tác động lớn hơn. A8 được sửa đổi ở HRC 54–58 là loại đe tiêu chuẩn công nghiệp vì lý do này. Tuy nhiên, đối với các hoạt động sinh khối khối lượng lớn trên gỗ cứng sạch, nên nâng cấp cả lưỡi và đe lên D2 ở HRC 58–60.",
-        },
-        {
-          question:
-            "Điều gì khiến máy băm ngừng tự ăn ngay cả với lưỡi dao sắc bén?",
-          answer:
-            "Nếu máy băm ngừng kéo gỗ vào buồng cắt dù đã có lưỡi mới mài hoặc mới thì đe gần như chắc chắn đã bị mòn. Cạnh đe tròn làm tăng khe hở hiệu quả, nghĩa là lưỡi dao không còn có thể cắn vào gỗ với độ sâu đủ để tạo ra lực kéo. Gỗ nảy lên trên bề mặt lưỡi dao thay vì bị túm và kéo vào trong. Kiểm tra và mài lại hoặc thay thế đe, sau đó đặt lại khe hở theo thông số kỹ thuật OEM.",
-        },
-        {
-          question:
-            "Tôi có thể mài đe bằng các dụng cụ tương tự mà tôi sử dụng cho lưỡi máy băm không?",
-          answer:
-            "Có - cùng một máy mài bề mặt ướt và bánh xe oxit nhôm (46–60 grit) được sử dụng cho lưỡi máy băm hoạt động cho đe. Các quy tắc tương tự cũng được áp dụng: ánh sáng đi qua (0,02–0,05 mm mỗi lần), không bao giờ mài khô mà không làm nguội và kiểm tra góc vát bằng thước đo góc sau khi mài. Góc vát của đe phải phù hợp với thông số kỹ thuật của máy băm OEM (thường là 30°–37°). Một số người vận hành bỏ qua đe trong quá trình mài lại vì nó có vẻ ít bị mòn hơn lưỡi dao - đây là một cách tiết kiệm sai lầm làm rút ngắn tuổi thọ của lưỡi dao và làm giảm chất lượng chip.",
-        },
-        {
-          question:
-            "Tại sao máy băm của tôi tạo ra những sợi dài, xơ thay vì phoi sạch?",
-          answer:
-            "Các mảnh sợi dài — đôi khi được gọi là 'spaghetti' hoặc 'sợi dây' — cho thấy khoảng cách giữa lưỡi dao và đe quá rộng. Gỗ đang bị xé và kéo ra chứ không được cắt sạch. Điều này xảy ra khi cạnh đe bị tròn hoặc khi đe được đệm không đúng cách sau khi thay lưỡi dao. Đặt lại khe hở về thông số kỹ thuật OEM bằng thước đo cảm biến. Nếu cạnh đe không thể mài lại thành cạnh thẳng, sạch sẽ (do sứt mẻ hoặc vết nứt sâu), hãy thay đe.",
-        },
-      ],
-      company: [
-        {
-          question: "Bạn là công ty thương mại hay nhà sản xuất trực tiếp?",
-          answer:
-            "Chúng tôi là nhà sản xuất OEM trực tiếp 100% được thành lập vào năm 2008. Khi mua từ Sureay, bạn bỏ qua các yêu cầu đánh giá của người trung gian và giao tiếp trực tiếp với các kỹ sư rèn và mài lưỡi dao và đe của bạn.",
-        },
-        {
-          question:
-            "Bạn có thể cung cấp bộ lưỡi + đe phù hợp cho mẫu máy băm cụ thể của tôi không?",
-          answer:
-            "Đúng. Chúng tôi thực sự khuyên bạn nên mua lưỡi dao và đe theo bộ phù hợp - được sản xuất từ ​​cùng một lô thép và được xử lý nhiệt trong cùng một chu trình lò chân không. Điều này đảm bảo độ cứng cân bằng và tốc độ mài mòn trên cả hai thành phần. Cung cấp số kiểu máy và nhãn hiệu máy băm của bạn và chúng tôi sẽ cung cấp một bộ hoàn chỉnh phù hợp với các đề xuất giải phóng mặt bằng đã được xác minh trước. Các bộ phù hợp có sẵn cho các nền tảng Bandit, Vermeer, Morbark, Timberwolf, Schliesing, Greenmech, Jensen, Jenz, Eschlböck và Forst.",
-        },
-        {
-          question:
-            "Bạn có thể sản xuất một cái đe cho máy băm của tôi nếu nó không được liệt kê trong kích thước tiêu chuẩn của bạn không?",
-          answer:
-            "Đúng. Gửi cho chúng tôi cái đe hiện có của bạn, bản vẽ kỹ thuật hoặc số hiệu và mẫu máy băm của bạn. Chúng tôi thiết kế ngược các đe thay thế từ bản vẽ OEM hoặc mẫu vật lý, xác minh sự phù hợp trên CMM trước khi sản xuất. Chiều dài tùy chỉnh lên tới 600 mm được sản xuất trong vòng 10–15 ngày làm việc.",
-        },
-        {
-          question: "Bạn có vận chuyển toàn cầu không và mất bao lâu?",
-          answer:
-            "Có, chúng tôi xuất khẩu sang hơn 50 quốc gia. Đe thay thế OEM tiêu chuẩn ở kích thước có sẵn thường được giao hàng trong vòng 48–72 giờ. Thứ nguyên tùy chỉnh mất 10–15 ngày làm việc. Chúng tôi hợp tác trực tiếp với DHL, FedEx và các công ty giao nhận vận tải đường biển quốc tế để giao hàng tận nơi đáng tin cậy.",
-        },
-        {
-          question: "Tài liệu chất lượng nào đi kèm với mỗi chiếc đe?",
-          answer:
-            "Mỗi lô hàng đều bao gồm báo cáo kiểm tra độ cứng Rockwell HRC, hồ sơ kiểm tra kích thước (chiều dài, chiều rộng, độ dày song song, vị trí lỗ lắp) và chứng chỉ lô xử lý nhiệt. Đối với bộ lưỡi dao + đe phù hợp, báo cáo kiểm tra kết hợp ghi lại độ cứng của cả hai bộ phận để xác minh chênh lệch độ cứng được thiết kế.",
-        },
-      ],
-    },
-  },
-  {
+    compatibleMachinesIntro:
+      "Nhận các giỏ và tấm sàng thay thế được làm xung quanh cách bố trí lắp đặt, độ cong và kiểu khẩu độ của máy hủy tài liệu của bạn. Sureay cung cấp các cách sắp xếp lỗ tùy chỉnh và các tùy chọn vật liệu chống mài mòn. Chia sẻ bản vẽ màn hình hoặc mẫu của bạn để nhận báo giá phù hợp với ứng dụng sàng lọc xả thải của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     id: "shredder-screens",
-    name: "Lưới Sàng Máy Băm",
-    fullName: "Lưới Sàng Máy Băm, Giỏ Sàng & Tấm Sàng Đục Lỗ",
+    name: "Lưới sàng máy nghiền xé",
+    fullName: "Lưới sàng, giỏ sàng và tấm sàng đục lỗ cho máy nghiền xé",
+    seoTitle: "Màn hình máy hủy tài liệu thay thế | Giỏ & đĩa tùy chỉnh",
     category: "shredder_blades",
     sector: "recycling",
-    categoryDisplay: "Lưới Sàng Máy Băm",
-    image: "/images/products/shredder-screens/shredder-screens-04.webp",
+    categoryDisplay: "Lưới sàng máy nghiền xé",
+    image: "/images/products/shredder-screens/shredder-screens-04-square.webp",
+    imageDimensions: {
+      width: 836,
+      height: 836,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
     badge: "Phụ Tùng Mài Mòn",
     badgeColor: "teal",
     gallery: [
-      "/images/products/shredder-screens/shredder-screens-04.webp",
+      "/images/products/shredder-screens/shredder-screens-04-square.webp",
       "/images/products/shredder-screens/shredder-screens-02.webp",
       "/images/products/shredder-screens/shredder-screens-01.webp",
     ],
@@ -5550,84 +6574,44 @@ export const blades: Blade[] = [
       "Chồng tấm lưới sàng cong trên pallet, thể hiện kiểu lỗ tròn so le",
     ],
     description:
-      "Lưới sàng máy băm đục lỗ, giỏ sàng và tấm sàng bằng S355J2 và Hardox 400–500. Lỗ Ø 8–80 mm, dày 12–30 mm, chế tạo ngược từ lưới sàng đã mòn của bạn.",
-    fullDescription:
-      "Lưới sàng mới là bộ phận thực sự quyết định kích thước hạt đầu ra — rotor và dao chỉ giảm kích thước vật liệu cho tới khi nó đủ nhỏ để lọt qua. Vậy mà đây lại là chi tiết mà phần lớn người vận hành coi là thứ yếu: chạy hàng tháng trời với lưới sàng bị bít hoặc lỗ đã loe rộng, trong khi đổ lỗi sản lượng sụt giảm cho dao. Trên một dây chuyền giảm kích thước, tình trạng và thông số của lưới sàng cộng lại gây mất năng suất nhiều hơn là hao mòn dao.\n\nSureay chế tạo lưới sàng máy băm như phụ tùng mài mòn được thiết kế bài bản, không phải tấm thép đục lỗ đại trà. Mỗi lưới sàng được cuốn đúng bán kính rotor, nhờ đó khe hở giữa đỉnh dao rotor và bề mặt lưới sàng luôn đồng đều trên toàn bộ chiều rộng cắt. Khe hở không đều nghĩa là vật liệu bị kéo lê và nghiền thay vì được cắt, làm tăng dòng điện động cơ, sinh nhiệt và bụi mịn, đồng thời đẩy nhanh hao mòn chính những con dao mà lưới sàng lẽ ra phải bảo vệ.\n\n## Ba dạng lưới sàng\n\n**Giỏ sàng (bán nguyệt hoặc trụ tròn hoàn chỉnh):** Hình dạng tiêu chuẩn cho máy băm một trục và hai trục. Cung cấp dưới dạng nửa vỏ ôm lấy rotor, hoặc hai nửa kẹp lại thành hình trụ hoàn chỉnh. Giỏ sàng có diện tích thoát lớn nhất và cũng là dạng mòn nhanh nhất, vì toàn bộ mặt trong tiếp xúc với vật liệu tuần hoàn.\n\n**Tấm sàng (phẳng):** Dùng cho máy nghiền hạt và máy nghiền cạnh máy ép, nơi buồng cắt có hình dạng phẳng thay vì trụ. Dễ chế tạo và dễ dựng lại theo mẫu hơn, và thường là dạng thay thế rẻ nhất.\n\n**Lưới sàng lưỡi liềm:** Lưới sàng cong một phần, lắp ở nơi hình dạng cửa xả không cho phép dùng giỏ đầy đủ. Phổ biến trên máy băm nhỏ gọn và máy băm di động.\n\n**Lưới sàng dạng hộp (cassette):** Cụm lắp có khung, thay nhanh. Chi phí ban đầu cao hơn nhưng thời gian thay giảm rất mạnh — đáng chỉ định cho dây chuyền chạy nhiều cỡ hạt trên cùng một máy.\n\n## Chọn thông số lưới sàng: ba con số quan trọng\n\nMọi lưới sàng đều được xác định bởi ba kích thước tác động lẫn nhau, thay đổi một con số buộc phải thay đổi những con số còn lại:\n\n- **Đường kính lỗ (Ø)** quyết định kích thước hạt lớn nhất lọt qua. Đây là con số người mua thường nêu, và thường là con số duy nhất họ nêu.\n- **Chiều dày tấm (t)** quyết định tuổi thọ lưới sàng. Tấm dày hơn chống biến dạng và chống loe lỗ tốt hơn, nhưng làm giảm diện tích thoát hữu ích, vì mỗi lỗ trở thành một đường dẫn dài hơn mà vật liệu phải vượt qua.\n- **Bề rộng gân** — dải thép giữa hai lỗ liền kề — quyết định độ bền kết cấu của lưới sàng. Thu hẹp gân quá mức để chạy theo diện tích thoát sẽ khiến lưới sàng nứt giữa các lỗ dưới tải va đập, thường bắt đầu từ mép xả.\n\nDiện tích thoát suy ra trực tiếp từ đường kính lỗ và bề rộng gân. Với lỗ tròn bố trí so le 60°, diện tích thoát ≈ 90,7 × (d / p)², trong đó p là bước tâm lỗ. Chuyển từ lỗ 20 mm bước 28 mm sang lỗ 20 mm bước 24 mm nâng diện tích thoát từ khoảng 46 % lên 63 % — đồng thời giảm gân từ 8 mm xuống 4 mm, điều này trên máy băm nhựa thỉnh thoảng lẫn kim loại sẽ hỏng sớm.\n\n## Vì sao không nên làm lưới sàng bằng thép dụng cụ\n\nĐây là lỗi chỉ định thông số phổ biến nhất mà chúng tôi phải chỉnh lại. Lưới sàng không phải dụng cụ cắt. Nó là một cấu kiện chịu lực có đục lỗ, hấp thụ va đập và mài mòn liên tục trong khi vẫn giữ nguyên hình dạng. Tôi cứng lưới sàng lên HRC 58–62 như một con dao sẽ làm nó giòn: gân nứt, và một lưới sàng bị nứt vỡ có thể làm rơi mảnh thép vào rotor, phá hỏng cả bộ dao.\n\nThứ lưới sàng cần là độ dai kèm khả năng chống mài mòn vừa đủ:\n\n- **Tấm kết cấu S355J2** — lựa chọn mặc định cho nhựa sạch, màng, giấy và rác thải sinh hoạt nhẹ. Dai, rẻ, dễ khoan lại và sửa chữa.\n- **Hardox 400 / 450** — cho rác thải sau tiêu dùng hỗn hợp, gỗ lẫn sạn và nguyên liệu mài mòn vừa phải. Tuổi thọ khoảng 2–3 lần S355 với mức chênh giá phải chăng.\n- **Hardox 500 hoặc bề mặt đắp cứng** — cho hợp chất độn sợi thủy tinh, gỗ phá dỡ nhiễm bẩn, phế thải xây dựng và các dòng vật liệu mài mòn rất mạnh. Lớp đắp cứng được phủ chọn lọc lên mặt trong chịu mòn nhiều nhất, trong khi tấm nền vẫn giữ được độ dai.\n\n## Chế tạo ngược từ lưới sàng đã mòn\n\nPhần lớn đơn hàng thay thế đến với chúng tôi mà không có bản vẽ. Hãy gửi ảnh chụp lưới sàng đã mòn kèm thước dây đặt ngang bước lỗ, cùng hãng và model máy, chúng tôi sẽ lập bản vẽ chế tạo để bạn duyệt trước khi cắt thép. Khi lưới sàng gốc đã bị loe lỗ, chúng tôi lấy hình học lỗ ở phần mép chưa mòn thay vì các lỗ giữa đã nở rộng, để chi tiết thay thế khôi phục đúng cỡ hạt ban đầu chứ không sao chép lại tình trạng đã mòn.",
+      "Màn hình thay thế cho máy hủy trục đơn, có khẩu độ 8–80 mm. Giỏ và tấm tùy chỉnh phù hợp với kiểu lỗ, độ cong và cách lắp.",
     disambiguation:
-      "Bạn đang tìm dụng cụ cắt chứ không phải lưới sàng định cỡ? Xem [Dao Máy Băm Một Trục](/products/single-shaft-shredder-blades) để biết về dao rotor, dao tĩnh và giá kẹp dao.",
+      "Để biết các công cụ cắt chuyển động, hãy xem [Dao rô-to máy hủy trục đơn](/products/single-shaft-shredder-blades) .",
     link: "/products/shredder-screens",
-    compatibleMachines: [
-      "Lindner",
-      "Vecoplan",
-      "UNTHA",
-      "WEIMA",
-      "Herbold Meckesheim",
-      "ZERMA",
-      "SSI Shredding Systems",
-      "Genox",
-    ],
     specs: [
       {
-        label: "Screen Forms",
-        value: "Basket (half/full round) · Flat Plate · Sickle · Cassette",
+        label: "Biểu mẫu màn hình",
+        value: "Rổ (nửa/toàn vòng) · Đĩa phẳng · Liềm · Cassette",
       },
       {
-        label: "Hole Diameter",
-        value: "8 – 80 mm (round, square or slotted)",
+        label: "Kích cỡ",
+        value: "Khẩu độ 8–80 mm",
       },
       {
-        label: "Plate Thickness",
-        value: "12 – 30 mm",
+        label: "Vật liệu",
+        value: "S355J2 · Hardox 400 / 450 / 500 · Bề mặt cứng",
       },
       {
-        label: "Ligament Width",
-        value: "5 – 20 mm (application-matched)",
+        label: "Khu vực mở",
+        value: "34 – 58% (phụ thuộc vào mẫu)",
       },
       {
-        label: "Material",
-        value: "S355J2 · Hardox 400 / 450 / 500 · Hardfaced",
+        label: "Mẫu lỗ",
+        value: "So le 60° · Thẳng · Có rãnh",
       },
       {
-        label: "Open Area",
-        value: "34 – 58% (pattern-dependent)",
+        label: "Ứng dụng",
+        value: "Sàng lọc xả trong máy hủy trục đơn",
       },
       {
-        label: "Hole Pattern",
-        value: "60° staggered · Straight · Slotted",
-      },
-      {
-        label: "Supply Format",
-        value: "Drop-in OEM replacement or reverse-engineered from sample",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Lindner, Vecoplan, UNTHA, WEIMA, Herbold, ZERMA",
+        label: "Đồ đạc OEM",
+        value: "Lindner , Vecoplan , UNTHA , WEIMA , Herbold , ZERMA",
       },
     ],
-    componentsIntro:
-      "Một lưới sàng được đánh giá qua ba điểm: nó có giữ đúng cỡ hạt bạn yêu cầu không, giữ được bao lâu, và có chịu được tạp chất trong nguyên liệu của bạn mà không nứt hay không.",
-    components: [
-      {
-        id: "aperture-sets-particle-size",
-        tag: "ĐỊNH CỠ",
-        title: "Lưới sàng quyết định đầu ra, không phải rotor",
-        description:
-          "Cuốn đúng bán kính rotor của bạn để khe hở đỉnh dao – lưới sàng luôn đồng đều trên toàn chiều rộng. Khe hở ổn định nghĩa là vật liệu được cắt một lần rồi thoát ra, thay vì tuần hoàn lại và bị nghiền thành nhiệt và bụi mịn.",
-      },
-      {
-        id: "toughness-not-hardness",
-        tag: "LUYỆN KIM",
-        title: "Độ dai, không phải độ cứng của dao",
-        description:
-          "Lưới sàng được chỉ định bằng S355J2, Hardox 400–500 hoặc tấm đắp cứng chọn lọc — không bao giờ tôi cứng đến độ cứng HRC của dao. Lưới sàng giòn sẽ nứt tại gân và có thể làm rơi thép vào rotor, kéo theo cả bộ dao.",
-      },
-      {
-        id: "screen-knife-system",
-        tag: "HỆ THỐNG",
-        title: "Lưới sàng, dao tĩnh và giá kẹp trong cùng một đơn hàng",
-        description:
-          "Lưới sàng bị bít hoặc loe lỗ làm dao mòn nhanh hơn, và dao mòn lại làm lưới sàng bít nhanh hơn. Chúng tôi cung cấp lưới sàng cùng dao tĩnh, giá kẹp dao, thanh kẹp và căn đệm để toàn bộ cụm chi tiết mài mòn được thay trong cùng một lần dừng máy.",
-      },
+    relatedBladeIds: [
+      "single-shaft-shredder-blades",
+      "single-shaft-bed-knives",
+      "granulator-blades",
     ],
     dimensionLabels: {
       col0: "Nhóm Sản Phẩm Đầu Ra",
@@ -5639,138 +6623,224 @@ export const blades: Blade[] = [
     },
     standardDimensions: [
       {
-        spec: "Fine regrind — PET flake, film",
+        itemNo: "SR002701",
+        spec: "Nghiền lại mịn - mảnh PET, màng",
         od: "8",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
-        spec: "Fine regrind — PET flake, film",
+        itemNo: "SR002702",
+        spec: "Nghiền lại mịn - mảnh PET, màng",
         od: "10",
         bolt: "12 – 15",
         thickness: "5",
       },
       {
-        spec: "General regrind",
+        itemNo: "SR002703",
+        spec: "Nghiền lại chung",
         od: "12",
         bolt: "15",
         thickness: "6",
       },
       {
-        spec: "General regrind",
+        itemNo: "SR002704",
+        spec: "Nghiền lại chung",
         od: "16",
         bolt: "15 – 20",
         thickness: "7",
       },
       {
-        spec: "Coarse regrind",
+        itemNo: "SR002705",
+        spec: "Nghiền lại thô",
         od: "20",
         bolt: "20",
         thickness: "8",
       },
       {
-        spec: "Coarse regrind",
+        itemNo: "SR002706",
+        spec: "Nghiền lại thô",
         od: "25",
         bolt: "20 – 25",
         thickness: "9",
       },
       {
-        spec: "Pre-shred / bulky waste",
+        itemNo: "SR002707",
+        spec: "Chất thải được cắt nhỏ/cỡ lớn",
         od: "30",
         bolt: "25",
         thickness: "10",
       },
       {
-        spec: "Pre-shred / bulky waste",
+        itemNo: "SR002708",
+        spec: "Chất thải được cắt nhỏ/cỡ lớn",
         od: "40",
         bolt: "25 – 30",
         thickness: "12",
       },
       {
-        spec: "Primary shred / RDF",
+        itemNo: "SR002709",
+        spec: "Cắt nhỏ / RDF",
         od: "50 – 80",
         bolt: "30",
         thickness: "14 – 20",
       },
     ],
-    relatedBladeIds: [
-      "single-shaft-shredder-blades",
-      "single-shaft-bed-knives",
-      "granulator-blades",
-    ],
     offers: {
       lowPrice: 120,
       highPrice: 1900,
     },
+    components: [
+      {
+        id: "shredder-screens-advantage-1",
+        tag: "Tùy chọn vật liệu chống mài mòn và tấm",
+        title: "Tùy chọn vật liệu chống mài mòn và tấm",
+        description:
+          "Cấu hình S355J2 , Hardox 400, 450 và 500 và mặt cứng cung cấp cho bạn các tùy chọn vật liệu cho màn hình máy hủy tài liệu thay thế, với cấu trúc đã chọn được chỉ định cho thiết kế nguồn cấp dữ liệu và bảng điều khiển.",
+      },
+      {
+        id: "shredder-screens-advantage-2",
+        tag: "Khẩu độ tùy chỉnh từ 8 đến 80 mm",
+        title: "Khẩu độ tùy chỉnh từ 8 đến 80 mm",
+        description:
+          "Sureay tạo ra các mẫu màn hình tròn và có rãnh. Khẩu độ được liệt kê trải dài từ 8–80 mm. Kích thước khẩu độ và cao độ có thể được chỉ định cùng nhau để tái tạo các lỗ phóng điện và vật liệu còn sót lại giữa chúng.",
+      },
+      {
+        id: "shredder-screens-advantage-3",
+        tag: "Giỏ, đĩa và màn hình cassette",
+        title: "Giỏ, đĩa và màn hình cassette",
+        description:
+          "Cấu hình giỏ nửa vòng hoặc tròn, tấm phẳng, dạng liềm và cấu hình băng cassette có thể được thực hiện theo độ cong cần thiết và bố cục cố định cho các giá đỡ màn hình hiện có của bạn.",
+      },
+    ],
     faqs: {
       technical: [
         {
           question:
-            "Sản lượng của tôi bị giảm. Nên thay lưới sàng hay thay dao trước?",
+            "Những chi tiết nào nhận biết màn hình máy hủy tài liệu thay thế?",
           answer:
-            "Hãy kiểm tra lưới sàng trước, vì kiểm tra rẻ hơn và đây thường là nguyên nhân. Tìm dấu hiệu loe lỗ — các lỗ mòn thành hình côn và nở rộng ở mặt trong — và dấu hiệu bít lỗ, khi nhựa mềm ra bịt kín các khe thoát. Nếu lỗ đã nở quá khoảng 10 % so với danh nghĩa thì lưới sàng đang cho lọt hạt quá cỡ và cần thay bất kể tình trạng dao. Trên thực tế hai bộ phận này mòn cùng nhau: dao cùn ép vật liệu vào lưới sàng thay vì cắt, còn lưới sàng bị bít lại đẩy vật liệu tuần hoàn làm mòn lưỡi dao. Chỉ thay một trong hai thường đồng nghĩa với một lần dừng máy nữa trong vài tuần.",
+            "Kiểu máy, đường viền của tấm, độ dày tấm, độ cong và vị trí cố định tạo nên sự phù hợp. Kích thước và kiểu lỗ xác định các lỗ xả. Tấm phẳng và giỏ cong có thể có chung kích thước khe hở trong khi yêu cầu hình dạng lắp đặt khác nhau, vì vậy, hãy sử dụng bản vẽ bảng gốc hoặc kích thước tham chiếu chưa có sẵn để thay thế.",
         },
         {
           question:
-            "Nguyên nhân thực sự gây bít lưới sàng là gì và làm sao ngăn chặn?",
+            "Làm cách nào để chọn kích thước khẩu độ màn hình máy hủy tài liệu?",
           answer:
-            "Bít lưới sàng hầu như luôn là vấn đề nhiệt, không phải vấn đề cỡ lỗ. Khi dao cùn hoặc khe hở rotor – lưới sàng đã nở ra, vật liệu bị miết và nhào thay vì được cắt. Nhiệt ma sát làm mềm polymer, khiến nó bị ép vào các lỗ rồi đông cứng lại. Lắp lưới sàng lỗ lớn hơn thường làm phần hạt thô trở nên không chấp nhận được mà vẫn không xử lý được nguyên nhân. Giải pháp bền vững là mài lại hoặc thay dao, khôi phục đúng khe hở rotor, và — với các polymer nhạy nhiệt như màng LDPE và PP — giảm tốc độ nạp liệu hoặc bổ sung làm mát. Tấm dày hơn làm tình trạng bít nặng thêm chứ không đỡ hơn, vì mỗi lỗ trở thành đường dẫn dài hơn cần thông.",
+            "Bắt đầu với yêu cầu về kích thước tiếp theo và hình dạng nguồn cấp dữ liệu. Khẩu độ nhỏ hơn thường hướng tới đầu ra mịn hơn, trong khi khẩu độ lớn hơn cho phép xả vật liệu thô hơn. Cấp liệu phẳng hoặc linh hoạt có thể đi qua khác với các sản phẩm cứng, vì vậy hãy xác nhận hình dạng lỗ hiện có và cấu hình máy. Khẩu độ là một kích thước mở. Sản lượng thực tế có sự phân bố kích thước.",
         },
         {
           question:
-            "Tôi có thể tăng diện tích thoát đến mức nào trước khi lưới sàng mất an toàn về kết cấu?",
+            "Giỏ màn hình, băng cassette và tấm màn hình có ý nghĩa gì?",
           answer:
-            "Giới hạn do bề rộng gân quyết định, không phải tỷ lệ phần trăm diện tích thoát. Theo quy tắc thực dụng, hãy giữ gân từ 0,4× đường kính lỗ trở lên với nhựa sạch, và từ 0,6× trở lên với nguyên liệu có thể lẫn kim loại, đá hoặc tạp chất cứng khác. Lỗ 20 mm với gân 8 mm cho khoảng 46 % diện tích thoát và chịu được nguyên liệu nhiễm bẩn; cũng lỗ đó với gân 4 mm đạt gần 63 % nhưng sẽ nứt giữa các lỗ dưới va đập, thường bắt đầu từ mép xả. Với dòng vật liệu mài mòn, chúng tôi thà tăng chiều dày tấm và chấp nhận diện tích thoát thấp hơn đôi chút còn hơn chạy theo sản lượng bằng một chiếc gân mỏng.",
+            "Một cái giỏ mô tả một dạng màn hình cong, trong khi một cái đĩa có thể phẳng hoặc có hình dạng. Cassette mô tả một cụm có thể tháo rời có thể bao gồm các tính năng hỗ trợ. Phạm vi thực tế của việc thay thế phải xác định các chi tiết bảng đục lỗ, khung và cố định vì những tên mua này có thể đề cập đến các bộ phận lắp ráp khác nhau trên các máy khác nhau.",
+        },
+        {
+          question: "Hình dạng và cao độ lỗ có thể được tùy chỉnh không?",
+          answer:
+            "Đúng. Sureay có thể tạo khẩu độ và khoảng cách được chỉ định cho bản vẽ màn hình. Khoảng cách lỗ, kích thước lỗ và độ dày tấm phải được xem xét cùng nhau vì chúng xác định diện tích lỗ và vật liệu còn lại giữa các lỗ. Bao gồm bố cục lắp đặt khi đề xuất thay đổi mẫu cho giỏ hoặc bảng hiện có.",
         },
         {
           question:
-            "Vì sao không nên tôi lưới sàng đến cùng độ cứng HRC như dao?",
+            "Làm cách nào để chọn giữa kết cấu thép, Hardox và màn hình cứng?",
           answer:
-            "Vì lưới sàng hỏng theo cách khác với dao. Dao cần giữ lưỡi và làm việc chịu nén tại vùng cắt; còn lưới sàng là cấu kiện chịu lực có đục lỗ, hấp thụ va đập liên tục trên một nhịp lớn. Khi tôi lên HRC 58–62, các gân mất đi độ dẻo cần thiết để hấp thụ va đập và sẽ nứt thay vì biến dạng. Một lưới sàng nứt tốn kém hơn nhiều so với lưới sàng mòn, vì mảnh vỡ lọt vào rotor có thể phá hỏng cả bộ dao. Chúng tôi chỉ định S355J2 cho nhựa sạch, Hardox 400/450 cho nguyên liệu sau tiêu dùng hỗn hợp, và Hardox 500 hoặc đắp cứng chọn lọc cho vật liệu mài mòn rất mạnh — tất cả đều ưu tiên độ dai trước hết.",
+            "So sánh độ mài mòn và tác động của thức ăn với kiểu mài mòn, độ dày và hình dạng hình thành của màn hình hiện tại. Các loại Hardox và kết cấu bề mặt cứng cung cấp các lựa chọn thay thế cho tùy chọn kết cấu thép được liệt kê. Chỉ định rõ ràng kết cấu tấm hoặc bề mặt được yêu cầu, đảm bảo các yêu cầu về hỗ trợ và cố định của máy là một phần của thiết kế thay thế.",
+        },
+        {
+          question: "Tại sao vật liệu lại tích tụ ở màn hình máy hủy tài liệu?",
+          answer:
+            "Kiểu mở hoạt động với một nguồn cấp dữ liệu có thể bị tắc với một nguồn cấp dữ liệu khác, đặc biệt khi xử lý vật liệu phẳng. So sánh vật liệu tích lũy với mẫu lỗ và tình trạng trước khi thay đổi kích thước khẩu độ. Hình dạng màn hình có thể giải quyết các vấn đề về đường dẫn cụ thể của nguồn cấp dữ liệu, nhưng việc thay thế phải giữ lại sự sắp xếp hỗ trợ và lắp đặt theo yêu cầu của máy.",
         },
         {
           question:
-            "Các bạn có chế tạo lưới sàng từ chiếc đã mòn của tôi khi tôi không có bản vẽ không?",
+            "Làm cách nào để nhận được báo giá cho giỏ hoặc màn hình máy hủy tài liệu thay thế?",
           answer:
-            "Có, và phần lớn đơn hàng lưới sàng của chúng tôi bắt đầu như vậy. Hãy gửi ảnh chụp lưới sàng đã mòn với thước dây đặt ngang bước lỗ, kèm hãng và model máy và, nếu có thể, tổng chiều dài cung và chi tiết tấm bịt đầu. Chúng tôi lập bản vẽ chế tạo để bạn duyệt bằng văn bản trước khi cắt thép. Một chi tiết quan trọng: chúng tôi lấy hình học lỗ từ phần mép chưa mòn thay vì các lỗ giữa đã nở rộng, nhờ đó lưới sàng mới khôi phục đúng cỡ hạt ban đầu chứ không tái tạo tình trạng đã mòn.",
-        },
-        {
-          question:
-            "Các bạn có cung cấp cả dao tĩnh, giá kẹp và thanh kẹp không?",
-          answer:
-            "Có. Lưới sàng, dao tĩnh, giá kẹp dao, thanh kẹp và căn đệm đều được sản xuất tại xưởng của chúng tôi và thường được giao cùng nhau, đó cũng là cách chúng tôi khuyến nghị bạn đặt hàng. Thay lưới sàng mà vẫn giữ dao tĩnh đã mòn sẽ khiến lưới sàng mới bít nhanh hơn, còn một lô hàng gộp giúp giảm cả chi phí vận chuyển lẫn số lần dừng sản xuất.",
+            "Gửi mô hình máy hủy tài liệu và bản vẽ màn hình hoặc số bộ phận, số lượng bảng, nguồn cấp dữ liệu và kích thước đầu ra mục tiêu. Đối với giỏ tùy chỉnh, hãy hiển thị kiểu lắp, độ cong, độ dày tấm và bố cục lỗ. Nếu bạn tham khảo một bảng bị mòn, hãy đánh dấu các lỗ mở rộng, các khu vực bị cong và các chi tiết cố định bị hỏng.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm kiểu máy, hình dạng và kích thước lỗ, bước, độ dày tấm, bán kính bảng và vị trí cố định. Đối với lỗ tròn Ø100 mm, gửi model và bản vẽ màn hình để chúng tôi kiểm tra cấu hình.",
+    compatibleMachines: [
+      "Lindner",
+      "Vecoplan",
+      "UNTHA",
+      "WEIMA",
+      "Herbold",
+      "ZERMA",
+    ],
+    detailLayout: {
+      sizeRange: "Ø8–80 mm",
+      heroSpecs: [
         {
-          question: "Các bạn là nhà sản xuất hay công ty thương mại?",
-          answer:
-            "Chúng tôi là nhà sản xuất trực tiếp, thành lập năm 2008. Lưới sàng được cắt, cuốn, khoan và — khi có yêu cầu — đắp cứng ngay tại xưởng của chúng tôi, nhờ đó chúng tôi có thể làm việc từ ảnh chụp một chi tiết đã mòn thay vì đòi hỏi bản vẽ hoàn chỉnh.",
+          label: "Vật liệu",
+          value: "S355J2 · Hardox 400 / 450 / 500 · Bề mặt cứng",
         },
         {
-          question:
-            "Thời gian giao một lưới sàng chế tạo ngược là bao lâu và đóng gói thế nào?",
-          answer:
-            "Lưới sàng tiêu chuẩn với chiều dày tấm có sẵn trong kho được giao trong 10–15 ngày làm việc kể từ khi duyệt bản vẽ. Lưới sàng chế tạo ngược cần thêm khoảng 3–5 ngày cho chu trình lập và duyệt bản vẽ. Lưới sàng được giao trên pallet gỗ đã hun trùng, có bảo vệ cạnh và đai thép; giỏ đường kính lớn được lồng vào nhau để giảm chi phí vận chuyển theo thể tích.",
+          label: "Ứng dụng",
+          value: "Sàng lọc xả trong máy hủy trục đơn",
         },
         {
-          question: "Đơn hàng lưới sàng đi kèm những tài liệu gì?",
-          answer:
-            "Mỗi đơn hàng đều có biên bản kiểm tra kích thước đối chiếu bản vẽ đã duyệt và chứng chỉ vật liệu của tấm thép — bao gồm chứng chỉ nhà máy Hardox khi có chỉ định mác Hardox. Lưới sàng đắp cứng còn kèm hồ sơ ghi nhận vật liệu đắp và độ cứng lớp đắp.",
+          label: "Biểu mẫu màn hình",
+          value: "Rổ (nửa/toàn vòng) · Đĩa phẳng · Liềm · Cassette",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Khẩu độ 8–80 mm",
+        },
+        {
+          label: "Biểu mẫu màn hình",
+          value: "Rổ (nửa/toàn vòng) · Đĩa phẳng · Liềm · Cassette",
+        },
+        {
+          label: "Vật liệu",
+          value: "S355J2 · Hardox 400 / 450 / 500 · Bề mặt cứng",
+        },
+        {
+          label: "Khu vực mở",
+          value: "34 – 58% (phụ thuộc vào mẫu)",
+        },
+        {
+          label: "Mẫu lỗ",
+          value: "So le 60° · Thẳng · Có rãnh",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Sàng lọc xả trong máy hủy trục đơn",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Bao gồm kiểu máy, hình dạng và kích thước lỗ, bước, độ dày tấm, bán kính bảng và vị trí cố định. Đối với lỗ tròn Ø100 mm, gửi model và bản vẽ màn hình để chúng tôi kiểm tra cấu hình.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
     id: "cutter-compactor-blades",
-    name: "Dao Máy Nén Cắt",
-    fullName: "Dao Rotor & Dao Tĩnh Máy Nén Cắt",
-    category: "granulator_blades",
+    seoDescription:
+      "Chuẩn bị màng PE hoặc PP và mảnh PET để ép đùn bằng dao rôto và stato thay thế ở dạng kết cấu D2 , M2 HSS hoặc đầu cacbua.",
+    name: "Dao máy cắt nén nhựa",
+    fullName: "Dao cho cụm cắt nén nhựa trên dây chuyền ép đùn",
+    category: "custom_profile",
     sector: "recycling",
-    categoryDisplay: "Dao Máy Nén Cắt",
+    categoryDisplay: "Dao máy cắt nén nhựa",
     image:
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
-    badge: "Tái Chế PCR",
+    imageDimensions: {
+      width: 1500,
+      height: 1500,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1920,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Tái chế PCR",
     badgeColor: "orange",
     gallery: [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-02.webp",
@@ -5778,14 +6848,12 @@ export const blades: Blade[] = [
       "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
     ],
     galleryAlts: [
-      "Cặp dao tĩnh máy nén cắt thể hiện mặt vát đã mài và lỗ bắt vít chìm",
+      "Cặp dao cắt stato của máy đầm thể hiện cách lắp vát và chìm chính xác trên mặt đất",
       "Bộ dao máy nén cắt — dao rotor, khối giá kẹp dao và dao tĩnh",
       "Dao rotor dài của máy nén cắt với lưỡi cắt đã mài và lỗ bắt vít khoét bậc",
     ],
     description:
-      "Dao rotor và dao tĩnh cho máy nén cắt và máy kết khối bằng D2, M2 HSS và gắn mảnh hợp kim cứng. Lắp trực tiếp cho EREMA, NGR, Starlinger và Previero.",
-    fullDescription:
-      "Trong một máy nén cắt — còn được bán dưới tên máy kết khối, máy làm đặc hoặc cụm tiền xử lý — các dao quay vừa cắt vừa sinh nhiệt ma sát cho màng rời, sợi hoặc mảnh PET cho đến khi vật liệu mềm ra và kết đặc thành dạng hạt vụn chảy tự do mà máy đùn thực sự có thể nạp được. Dao làm hai việc cùng lúc: cắt, và tạo ra lượng nhiệt ma sát có kiểm soát giúp quá trình làm đặc diễn ra. Chính nhiệm vụ kép đó khiến chúng mòn nhanh hơn bất kỳ dụng cụ nào khác trên dây chuyền, thường phải thay sau mỗi ba đến sáu tháng với dây chuyền màng và PET chạy liên tục.\n\nSureay chế tạo cả dao quay lẫn dao tĩnh cố định, cùng với khối giá kẹp và dao cắt sơ bộ lắp kèm. Dao được mài phẳng và song song trên toàn chiều dài, bởi vì trên máy nén cắt chính độ phẳng của mặt lắp mới quyết định khe hở cắt bạn đặt lúc lắp có còn giữ nguyên ở đầu kia của con dao hay không.\n\n## Khe hở cắt: biến số chi phối tất cả\n\nKhe hở giữa dao quay và dao tĩnh cố định là thông số cài đặt quan trọng nhất trên máy nén cắt, và cũng là thông số hay bị bỏ qua nhất giữa các lần thay dao.\n\n**Khe hở quá rộng.** Vật liệu bị nhào thay vì được cắt. Nhiệt ma sát vượt quá dải mong muốn, màng bị miết thành cục thay vì tạo hạt vụn đồng đều, khối lượng riêng biểu kiến trở nên bất ổn, và máy đùn phía sau nhận được dòng nạp dao động. Với mảnh PET, nhiệt dư gây suy giảm chất lượng do ẩm ngay cả trước khi vật liệu tới máy sấy. Sản lượng giảm trong khi điện năng tiêu thụ tăng — dấu hiệu kinh điển của khe hở đã mòn hoặc đặt sai.\n\n**Khe hở quá hẹp.** Dao chạm nhau khi có tải. Lưỡi bị mẻ, dòng điện động cơ vọt lên ở mỗi mẻ nạp nặng, và trong trường hợp xấu nhất dao quay va vào dao tĩnh đủ mạnh để làm hỏng khối giá kẹp hoặc chính đĩa rotor — một hư hỏng đắt hơn cả bộ dao nhiều lần.\n\nKhe hở làm việc thông thường nằm quanh mức 0,2–0,5 mm tùy kích cỡ máy và vật liệu, nhưng con số đúng là con số ghi trong tài liệu máy của bạn. Điều quan trọng là khe hở có thực sự giữ được hay không: nếu mặt lắp của dao không phẳng, hoặc dao rotor và dao tĩnh mòn không đều nhau, khe hở sẽ thay đổi dọc theo chiều dài cắt cho dù bạn đã căn chỉnh cẩn thận đến đâu.\n\n## Vì sao dao rotor và dao tĩnh phải thay theo bộ\n\nDao quay và dao cố định mòn với tốc độ và hình dạng khác nhau — dao rotor mất lưỡi, còn dao tĩnh có xu hướng mòn thành bán kính và lõm nhẹ ở chỗ dòng vật liệu tập trung. Lắp dao rotor mới đối diện một dao tĩnh đã mòn chỉ khôi phục được một nửa hình học cắt: khe hở trở nên không đều dọc chiều dài, con dao mới gánh toàn bộ tải cắt và cùn nhanh hơn nhiều so với mức đáng có. Thay cả hai cùng lúc tốn hơn cho mỗi lần dừng máy nhưng rẻ hơn tính trên mỗi tấn.\n\n## Chọn vật liệu theo nguyên liệu đầu vào\n\n**D2 (1.2379), HRC 58–61** — lựa chọn đa dụng cho màng LDPE, LLDPE và PP sạch, bao dệt và phế liệu sản xuất trước tiêu dùng. Giữ lưỡi tốt, chịu được va đập lẻ tẻ và mài lại kinh tế nhất.\n\n**M2 HSS (1.3343), HRC 62–64** — cho mảnh PET, màng in và bám nhiều bụi, và vật liệu sau tiêu dùng còn dính cặn nhãn giấy hoặc tạp chất khoáng mịn. Giữ được lưỡi ở nhiệt độ cao bên trong máy nén cắt đang vận hành, nơi D2 bắt đầu mềm đi.\n\n**Gắn mảnh hợp kim cứng, HRA 89–91 tại lưỡi** — cho hợp chất gia cường sợi thủy tinh, vật liệu độn khoáng, hạt màu đen carbon và nguyên liệu có hàm lượng tro cao. Khoảng cách giữa các lần thay dài hơn đáng kể với những dòng vật liệu phá hủy thép dụng cụ, đổi lại đơn giá cao hơn và khả năng chịu va đập kém hơn.\n\n## Tương thích máy\n\nDao được chế tạo ngược cho các máy EREMA (cụm tiền xử lý INTAREMA, TVEplus và RegrindPro), NGR, Starlinger, Erdwich, Previero, Sorema, Plasmac và Munchy. Hãy gửi model máy kèm ảnh chụp con dao đã mòn, hoặc gửi chính con dao đó, chúng tôi sẽ lập bản vẽ để duyệt trước khi chế tạo.",
+      "Dao rôto và stato thay thế cho máy đầm cắt nhựa. Các tùy chọn D2 , M2 HSS và đầu cacbua, với các cấu hình tùy chỉnh để chuẩn bị nguyên liệu ép đùn.",
     link: "/products/cutter-compactor-blades",
     compatibleMachines: [
       "EREMA",
@@ -5797,119 +6865,77 @@ export const blades: Blade[] = [
       "Plasmac",
       "Munchy",
     ],
-    specs: [
-      {
-        label: "Knife Types",
-        value: "Rotor (movable) · Stator (fixed) · Pre-cutter · Holder block",
-      },
-      {
-        label: "Material",
-        value: "D2 (1.2379) · M2 HSS (1.3343) · Carbide-tipped",
-      },
-      {
-        label: "Hardness",
-        value: "HRC 58–61 (D2) · HRC 62–64 (M2) · HRA 89–91 (carbide)",
-      },
-      {
-        label: "Typical Cutting Gap",
-        value: "0.2 – 0.5 mm (machine-dependent)",
-      },
-      {
-        label: "Face Flatness",
-        value: "≤ 0.03 mm over full blade length",
-      },
-      {
-        label: "Parallelism",
-        value: "≤ 0.02 mm",
-      },
-      {
-        label: "Heat Treatment",
-        value: "Vacuum Hardening + Deep Cryogenic (-196°C)",
-      },
-      {
-        label: "Applications",
-        value: "PE / PP Film, PET Flake, Woven Bags, Fibre, Foam",
-      },
-      {
-        label: "OEM Fitment",
-        value: "EREMA, NGR, Starlinger, Previero, Sorema, Erdwich",
-      },
-    ],
-    componentsIntro:
-      "Dao máy nén cắt hỏng theo một trong ba cách: mất lưỡi, lệch khe hở, hoặc mẻ do tạp chất. Mỗi trường hợp có cách khắc phục khác nhau, và chỉ định sai nguyên nhân là lãng phí tiền.",
+    compatibleMachinesIntro:
+      "Nguồn dao cắt-máy đầm thay thế cho dây chuyền ép đùn của bạn, bao gồm các vị trí rôto, stato và máy cắt trước. Sureay cung cấp các cấu hình tùy chỉnh ở dạng kết cấu D2 , M2 HSS và đầu cacbua. Chia sẻ bản vẽ hoặc mẫu của bạn để nhận báo giá về dao và các khối giá đỡ được chỉ định riêng. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "gap-holding-geometry",
-        tag: "HÌNH HỌC",
-        title: "Khe hở đặt một lần và giữ nguyên",
+        id: "compactor-knife-positions",
+        tag: "Vị trí dao",
+        title: "Tùy chọn cắt thép và cacbua",
         description:
-          "Mài đạt độ phẳng ≤0,03 mm và độ song song ≤0,02 mm trên toàn chiều dài dao. Khe hở bạn căn chỉnh lúc lắp giữ nguyên đồng đều từ đầu này sang đầu kia, thay vì hở ra một bên và khép lại bên kia khi chịu tải.",
+          "D2 , M2 HSS và dao có đầu bằng cacbua cung cấp cho bạn các lựa chọn về vật liệu và kết cấu để chuẩn bị nguyên liệu nhựa, với khả năng thay thế được chỉ định xung quanh dạng nguyên liệu và vị trí dao hiện có.",
       },
       {
-        id: "feedstock-matched-alloy",
-        tag: "LUYỆN KIM",
-        title: "Mác thép khớp với thứ bạn thực sự chạy",
+        id: "compactor-edge-construction",
+        tag: "Xây dựng cạnh",
+        title: "Rotor, Stator và Dao cắt sẵn",
         description:
-          "D2 cho màng PE và PP sạch, M2 HSS cho mảnh PET và vật liệu sau tiêu dùng nhiều bụi vốn làm mềm D2 ở nhiệt độ làm việc, mảnh hợp kim cứng cho dòng vật liệu độn sợi thủy tinh và nhiều tro. Được chỉ định từ nguyên liệu của bạn, không phải từ một giá trị mặc định.",
+          "Sureay cung cấp dao di chuyển, dao cố định và dao cắt sẵn cho cụm máy cắt-máy nén. Chiều dài dao được liệt kê khoảng 80–400 mm. Mỗi vị trí có thể được đặt hàng riêng biệt hoặc phối hợp với các vị trí cắt khác trong cụm.",
       },
       {
-        id: "matched-rotor-stator-sets",
-        tag: "TUỔI THỌ",
-        title: "Cung cấp theo bộ dao rotor + dao tĩnh đồng bộ",
+        id: "compactor-process-position",
+        tag: "Vị trí xử lý",
+        title: "Hồ sơ tùy chỉnh với khối giữ",
         description:
-          "Dao rotor và dao tĩnh mòn theo hình dạng khác nhau. Lắp dao rotor mới đối diện dao tĩnh đã mòn khiến khe hở không đều và dồn toàn bộ tải lên con dao mới — nó sẽ cùn chỉ sau một phần nhỏ tuổi thọ danh định. Chúng tôi báo giá và giao hàng theo bộ.",
+          "Các đường viền, tính năng cố định và biên dạng cắt tùy chỉnh của lưỡi dao có thể được đặt cùng với các khối giá đỡ cần thiết, giữ cho lưỡi dao và các bộ phận hỗ trợ của nó thẳng hàng với cụm lắp ráp hiện có của bạn.",
+        relatedBladeIds: ["granulator-blades"],
       },
     ],
-    dimensionLabels: {
-      col0: "Loại Dao",
-      col1: "Chiều Dài (mm)",
-      col2: "Chiều Rộng (mm)",
-      col3: "Chiều Dày (mm)",
-      caption:
-        "* Kích thước bao tiêu biểu trên các dòng máy nén cắt phổ biến. Mỗi con dao được chế tạo theo bản vẽ OEM hoặc chế tạo ngược từ mẫu của bạn — hãy gửi model máy và ảnh chụp con dao đã mòn để nhận báo giá chính xác.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Rotor knife (movable)",
-        od: "150 – 250",
-        bolt: "40 – 60",
-        thickness: "8 – 12",
+        label: "Kích cỡ",
+        value: "80–400 mm",
       },
       {
-        spec: "Rotor knife (movable)",
-        od: "250 – 400",
-        bolt: "60 – 80",
-        thickness: "12 – 20",
+        label: "Ứng dụng",
+        value: "Nguyên liệu chuẩn bị trước khi ép đùn",
       },
       {
-        spec: "Stator knife (fixed)",
-        od: "120 – 220",
-        bolt: "40 – 60",
-        thickness: "10 – 16",
+        label: "Các loại dao",
+        value: "Dao rôto, dao stato cố định, dao cắt sẵn và khối giữ dao",
       },
       {
-        spec: "Stator knife (fixed)",
-        od: "220 – 350",
-        bolt: "60 – 80",
-        thickness: "16 – 25",
+        label: "Vật liệu",
+        value: "Cấu trúc D2 (1.2379), M2 HSS (1.3343) hoặc cacbua",
       },
       {
-        spec: "Pre-cutter / feed blade",
-        od: "80 – 160",
-        bolt: "30 – 50",
-        thickness: "8 – 14",
+        label: "độ cứng",
+        value: "D2 : HRC 58–61; M2 : HRC 62–64; lưỡi cắt cacbit: HRA 89–91",
       },
       {
-        spec: "Knife holder block",
-        od: "60 – 120",
-        bolt: "50 – 90",
-        thickness: "20 – 40",
+        label: "Độ phẳng của mặt",
+        value: "≤0,03 mm trên toàn bộ chiều dài lưỡi dao",
+      },
+      {
+        label: "Sự song song",
+        value: "≤0.02 mm",
+      },
+      {
+        label: "Nguyên liệu",
+        value: "Màng PE/PP, vảy PET, túi dệt, sợi và xốp",
+      },
+      {
+        label: "Khoảng cách cắt điển hình",
+        value: "0,2–0,5 mm (phụ thuộc vào máy)",
+      },
+      {
+        label: "Xử lý nhiệt",
+        value: "Làm cứng chân không và xử lý đông lạnh sâu (−196°C)",
       },
     ],
     relatedBladeIds: [
-      "continuous-melt-filter-scraper-blades",
       "granulator-blades",
-      "strand-pelletizer-rotors",
+      "continuous-melt-filter-scraper-blades",
     ],
     offers: {
       lowPrice: 40,
@@ -5918,63 +6944,186 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question:
-            "Tôi nên đặt khe hở cắt bao nhiêu giữa dao rotor và dao tĩnh?",
+          question: "Dao kết tụ và lưỡi cắt-máy nén có giống nhau không?",
           answer:
-            "Hãy dùng con số trong tài liệu máy của bạn — nó phụ thuộc vào máy và vật liệu, thường nằm đâu đó trong khoảng 0,2–0,5 mm. Câu hỏi hữu ích hơn là khe hở có giữ nguyên ở mức bạn đã đặt hay không. Nếu mặt lắp của dao không phẳng, hoặc bạn lắp dao rotor mới đối diện một dao tĩnh đã mòn, khe hở sẽ thay đổi dọc chiều dài cắt bất kể bạn căn chỉnh kỹ đến đâu. Hãy đặt khe hở bằng căn lá ở cả hai đầu và giữa con dao, không chỉ tại một điểm, rồi kiểm tra lại sau vài giờ chạy đầu tiên khi mọi thứ đã ổn định và đạt nhiệt độ làm việc.",
+            "Có, tên có thể đề cập đến dao trên cùng một thiết bị chuẩn bị thức ăn ép đùn. Bộ phận thực tế phụ thuộc vào máy và vào việc dao nằm trên rôto, stato hay trạm cắt trước.",
         },
         {
           question:
-            "Máy nén cắt của tôi chạy nóng và đầu ra vón cục thay vì hạt vụn đồng đều. Vấn đề là gì?",
+            "Màng mềm và các mảnh cắt sẵn ảnh hưởng như thế nào đến việc lựa chọn dao?",
           answer:
-            "Đó là dấu hiệu kinh điển của khe hở cắt quá rộng, thường do dao đã mòn. Khi khe hở hở ra, vật liệu bị nhào thay vì được cắt, nên nhiệt ma sát vượt quá dải mong muốn, màng bị miết thành cục và khối lượng riêng biểu kiến trở nên thất thường — điều mà máy đùn cảm nhận như một dòng nạp dao động. Bạn thường sẽ thấy đồng thời điện năng tiêu thụ tăng và sản lượng giảm. Hãy kiểm tra khe hở và lưỡi dao trước khi chỉnh nhiệt độ cài đặt hay tốc độ nạp liệu, vì đó chỉ là cách bù trừ cho vấn đề thật sự chứ không phải cách khắc phục.",
+            "Màng mềm và mảnh cắt sẵn có dạng thức ăn khác nhau cho thiết bị tiền điều hòa. So sánh vị trí và góc xiên của dao được lắp đặt với vật liệu đang được xử lý. Việc giữ lại những chi tiết đó giúp xác định phương án thay thế, trong khi việc thay đổi dạng cấp liệu có thể yêu cầu xem xét cấu hình dao dự định của máy.",
         },
         {
-          question: "Tôi có thể chỉ thay dao rotor và giữ lại dao tĩnh không?",
+          question: "Khi nào nên cân nhắc sử dụng dao đầm có đầu bằng cacbua?",
           answer:
-            "Có thể, nhưng thường là tiết kiệm giả. Hai loại mòn theo hình dạng khác nhau — dao rotor mất lưỡi trong khi dao tĩnh có xu hướng mòn thành bán kính và lõm ở chỗ dòng vật liệu tập trung. Một dao rotor mới chạy đối diện dao tĩnh đã mòn phải gánh toàn bộ tải cắt trên một khe hở không đều và sẽ cùn nhanh hơn nhiều so với tuổi thọ danh định, khiến bạn quay lại đúng lần dừng máy đó sớm hơn. Thay cả hai cùng lúc tốn hơn cho mỗi lần thay nhưng rẻ hơn tính trên mỗi tấn xử lý.",
+            "Đánh giá các cạnh có đầu cacbua khi kiểu mài mòn của dao thép hiện tại cho thấy khả năng mài mòn, cùng với độ sạch và tính nhất quán của thức ăn. Thiệt hại do va chạm thường xuyên đòi hỏi phải có đánh giá riêng về mức độ nhiễm bẩn và hỗ trợ cạnh. So sánh cấu trúc và góc xiên hoàn chỉnh của lưỡi dao với cấu hình rôto hoặc stato ban đầu.",
         },
         {
-          question: "Tôi nên chọn dao D2, M2 HSS hay gắn mảnh hợp kim cứng?",
+          question: "Dao tạo hạt có thể thay thế dao cắt-máy nén không?",
           answer:
-            "Hãy khớp mác thép với nguyên liệu của bạn. D2 ở HRC 58–61 là lựa chọn kinh tế mặc định cho màng LDPE, LLDPE và PP sạch, bao dệt và phế liệu trước tiêu dùng. Chuyển sang M2 HSS ở HRC 62–64 cho mảnh PET và cho màng sau tiêu dùng có in hoặc nhiều bụi — M2 giữ được lưỡi ở nhiệt độ cao bên trong máy nén cắt đang chạy, nơi D2 bắt đầu mềm. Hãy dành dao gắn mảnh hợp kim cứng cho hợp chất gia cường sợi thủy tinh, vật liệu độn khoáng và dòng nhiều tro; chúng bền hơn rất nhiều với những nguyên liệu đó nhưng đắt hơn và chịu va đập kém hơn, nên là lựa chọn sai nếu nguyên liệu của bạn thỉnh thoảng lẫn kim loại.",
+            "Nói chung là không. Dao cắt-máy nén chuẩn bị thức ăn cho quá trình ép đùn, trong khi [Dao tạo hạt nhựa](/products/granulator-blades) cắt vật liệu thành nghiền lại. Chọn theo vị trí làm việc, chỗ đặt dao và biên dạng cắt ngay cả khi hai lưỡi dao có chiều dài hoặc khoảng cách lỗ tương tự nhau.",
         },
         {
-          question: "Một con dao máy nén cắt có thể mài lại bao nhiêu lần?",
+          question:
+            "Sureay có thể cung cấp dao rôto và dao stato cùng nhau không?",
           answer:
-            "Ba đến năm lần mài lại là mức thông thường với dao D2 và M2, trước khi dao chạm chiều cao sử dụng tối thiểu và không thể điều chỉnh khe hở để bù nữa. Mỗi lần mài đều lấy đi vật liệu ở mặt cắt, nên con dao ngày càng thấp dần trong giá kẹp — phần lớn máy cho phép bù lại bằng căn đệm đến một giới hạn nhất định. Dao gắn mảnh hợp kim cứng chỉ mài lại phần hợp kim và thường cho phép ít chu kỳ hơn. Chúng tôi ghi chiều cao tối thiểu ngay trên bản vẽ chế tạo để đội bảo trì của bạn biết khi nào một con dao đã hết vòng đời thay vì phải phỏng đoán.",
+            "Đúng. Dao di chuyển và dao cố định có thể được bao gồm trong một đơn hàng với mỗi vị trí được xác định riêng biệt. Liệt kê bất kỳ dao cắt sẵn và khối giữ nào dưới dạng các vật dụng riêng biệt. Mẫu máy và bản vẽ xác định các biên dạng liên quan, hướng cắt và số lượng đáp ứng yêu cầu thay thế hoàn chỉnh.",
+        },
+        {
+          question:
+            "Làm cách nào để nhận được báo giá cho dao cắt và khối giữ?",
+          answer:
+            "Gửi mô hình máy, bản vẽ hoặc số bộ phận và số lượng theo vị trí rôto, stato và máy cắt trước. Mô tả xem bạn xử lý phim hay mảnh cắt sẵn và cho biết liệu có cần khối giữ hay không. Nếu dao tham chiếu đã được mài sắc, hãy phân biệt vị trí cạnh còn lại của nó với kích thước ban đầu.",
         },
       ],
-      company: [
-        {
-          question:
-            "Các bạn có làm được dao cho máy nén cắt của tôi khi không có bản vẽ OEM không?",
-          answer:
-            "Có — đây chính là phần lớn công việc của chúng tôi với sản phẩm này. Hãy gửi hãng và model máy kèm một con dao đã mòn, hoặc ảnh chụp rõ nét có ghi kích thước chiều dài, chiều rộng, chiều dày và vị trí các lỗ lắp. Chúng tôi lập bản vẽ chế tạo để bạn duyệt bằng văn bản trước khi cắt thép, và lưu lại bản vẽ đó để các đơn hàng sau không phải đo lại.",
-        },
-        {
-          question:
-            "Thời gian giao hàng là bao lâu, và tôi có thể dùng thử một bộ trước không?",
-          answer:
-            "Dao chế tạo theo bản vẽ sẵn có được giao trong 10–15 ngày làm việc. Dao chế tạo ngược lần đầu cần thêm khoảng 3–5 ngày cho bản vẽ và duyệt. Chúng tôi cung cấp bộ dùng thử để kiểm chứng độ khớp trên máy và so sánh tuổi thọ lưỡi trước khi bạn cam kết số lượng sản xuất — với biên dạng đặc biệt, chúng tôi làm mẫu duyệt kích thước trước, nên không có cam kết về đồ gá cho đến khi xác nhận lắp vừa.",
-        },
-        {
-          question: "Dao được giao kèm những tài liệu gì?",
-          answer:
-            "Mỗi lô hàng đều kèm chứng chỉ thử độ cứng Rockwell, biên bản kiểm tra kích thước đối chiếu bản vẽ đã duyệt, chứng chỉ truy xuất nguồn gốc vật liệu từ nhà máy thép và hồ sơ mẻ nhiệt luyện. Báo cáo đo kích thước đầy đủ bằng máy CMM có sẵn theo yêu cầu phục vụ đánh giá OEM.",
-        },
-      ],
+      company: [],
     },
+    quoteRequirements:
+      "Bao gồm mô hình máy đầm, rôto hoặc vị trí cố định, bản vẽ lưỡi, polyme, dạng cấp liệu và kiểu mài mòn.",
+    dimensionLabels: {
+      col0: "Loại Dao",
+      col1: "Chiều dài (mm)",
+      col2: "Chiều rộng (mm)",
+      col3: "Độ dày (mm)",
+      caption:
+        "* Kích thước bao tiêu biểu trên các dòng máy nén cắt phổ biến. Mỗi con dao được chế tạo theo bản vẽ OEM hoặc chế tạo ngược từ mẫu của bạn — hãy gửi model máy và ảnh chụp con dao đã mòn để nhận báo giá chính xác.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR007301",
+        spec: "Dao rôto (có thể di chuyển)",
+        od: "150 – 250",
+        bolt: "40 – 60",
+        thickness: "8 – 12",
+      },
+      {
+        itemNo: "SR007302",
+        spec: "Dao rôto (có thể di chuyển)",
+        od: "250 – 400",
+        bolt: "60 – 80",
+        thickness: "12 – 20",
+      },
+      {
+        itemNo: "SR007303",
+        spec: "Dao Stator (cố định)",
+        od: "120 – 220",
+        bolt: "40 – 60",
+        thickness: "10 – 16",
+      },
+      {
+        itemNo: "SR007304",
+        spec: "Dao Stator (cố định)",
+        od: "220 – 350",
+        bolt: "60 – 80",
+        thickness: "16 – 25",
+      },
+      {
+        itemNo: "SR007305",
+        spec: "Lưỡi cắt trước / lưỡi nạp",
+        od: "80 – 160",
+        bolt: "30 – 50",
+        thickness: "8 – 14",
+      },
+      {
+        itemNo: "SR007306",
+        spec: "Khối giữ dao",
+        od: "60 – 120",
+        bolt: "50 – 90",
+        thickness: "20 – 40",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lưỡi cắt máy đầm | Dao Rotor & Stator",
+      heroAlt:
+        "Dao cắt stato của máy đầm có lưỡi cắt được mài và tính năng lắp đặt",
+      sizeRange: "80–400 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "Cấu trúc D2 , M2 HSS hoặc cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Chuẩn bị nhựa trước khi ép đùn",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "80–400 mm",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Nguyên liệu chuẩn bị trước khi ép đùn",
+        },
+        {
+          label: "Các loại dao",
+          value: "Dao rôto, dao stato cố định, dao cắt sẵn và khối giữ dao",
+        },
+        {
+          label: "Vật liệu",
+          value: "Cấu trúc D2 (1.2379), M2 HSS (1.3343) hoặc cacbua",
+        },
+        {
+          label: "độ cứng",
+          value: "D2 : HRC 58–61; M2 : HRC 62–64; lưỡi cắt cacbit: HRA 89–91",
+        },
+        {
+          label: "Độ phẳng của mặt",
+          value: "≤0,03 mm trên toàn bộ chiều dài lưỡi dao",
+        },
+        {
+          label: "Sự song song",
+          value: "≤0.02 mm",
+        },
+        {
+          label: "Nguyên liệu",
+          value: "Màng PE/PP, vảy PET, túi dệt, sợi và xốp",
+        },
+        {
+          label: "Khoảng cách cắt điển hình",
+          value: "0,2–0,5 mm (phụ thuộc vào máy)",
+        },
+        {
+          label: "Xử lý nhiệt",
+          value: "Làm cứng chân không và xử lý đông lạnh sâu (−196°C)",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/cutter-compactor-blades/cutter-compactor-blades-01.webp",
+        alt: "Dao rôto máy đầm có lưỡi cắt được mài và lỗ cố định",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho dao đầm của bạn",
+        description:
+          "Bao gồm kiểu máy, vị trí rôto hoặc stato, bản vẽ cánh hoặc mẫu, dạng cấp liệu và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    disambiguation:
+      "Để biết quy trình nghiền lại, hãy xem [Dao tạo hạt nhựa](/products/granulator-blades) .",
   },
   {
     id: "die-face-cutting-knives",
-    name: "Dao Cắt Mặt Khuôn & Dao Máy Tạo Hạt",
-    fullName: "Dao Cắt Mặt Khuôn & Dao Máy Tạo Hạt",
-    category: "granulator_blades",
+    name: "Dao cắt hạt tại mặt khuôn",
+    fullName: "Dao cắt sát mặt khuôn cho máy tạo hạt nhựa",
+    category: "custom_profile",
     sector: "recycling",
     categoryDisplay: "Dao Cắt Mặt Khuôn",
     image:
       "/images/products/die-face-cutting-knives/die-face-cutting-knives-00.webp",
+    imageDimensions: {
+      width: 1200,
+      height: 1200,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1199,
+      height: 899,
+      smallerWidths: [320, 480, 640],
+    },
     badge: "An Toàn Cho Khuôn",
     badgeColor: "blue",
     gallery: [
@@ -5988,11 +7137,7 @@ export const blades: Blade[] = [
       "Cặp dao cắt mặt khuôn trên nền trắng thể hiện hình học rãnh và độ hoàn thiện lưỡi",
     ],
     description:
-      "Dao cắt mặt khuôn cho máy tạo hạt dưới nước, vòng nước và mặt khuôn nóng, mài mềm hơn tấm khuôn của bạn. Phù hợp Gala, Nordson BKG, Maag, ECON.",
-    fullDescription:
-      "Dao cắt mặt khuôn — còn được bán dưới tên dao máy tạo hạt dưới nước, dao cắt tại mặt khuôn, dao mặt khuôn nóng hay dao UWP — là một chi tiết tiêu hao luôn trượt tiếp xúc với tấm khuôn trị giá hàng chục nghìn đô la. Chính sự bất đối xứng đó định hình toàn bộ bài toán chọn thông số: con dao phải đủ cứng để giữ lưỡi trước polymer nóng, đồng thời phải mềm hơn mặt khuôn mà nó trượt lên một cách có chủ đích, để phần hao mòn được hấp thụ bởi chi tiết mà bạn vốn định thay.\n\nĐây cũng chính là logic hao mòn có kiểm soát mà Sureay áp dụng cho dao cạo bộ lọc nhựa nóng chảy liên tục, và đó là lý do chúng tôi chào một chênh lệch độ cứng thay vì đơn giản là độ cứng cao nhất có thể. Một con dao cứng hơn tấm khuôn không bền hơn — nó cào xước mặt khuôn, làm hở khe cắt, và biến một lần thay dao thông thường thành một lần đại tu khuôn.\n\n## Ba phương pháp tạo hạt, ba loại dao khác nhau\n\n**Tạo hạt dưới nước (UWP).** Mặt khuôn ngập hoàn toàn trong buồng nước có kiểm soát nhiệt độ. Hạt được cắt ngay tại mặt khuôn và cuốn đi dưới dạng huyền phù. Dao làm việc trong môi trường ẩm và ấm, khiến khả năng chống ăn mòn trở thành yếu tố chọn lựa thực sự — thép không gỉ 440C xứng đáng có chỗ đứng ở đây dù giữ lưỡi kém hơn thép dụng cụ.\n\n**Tạo hạt vòng nước.** Một màn nước hình vành khuyên làm nguội hạt sau khi cắt, nhưng bản thân mặt khuôn lại làm việc trong không khí. Chu trình nhiệt tác động lên lưỡi dao khắc nghiệt hơn so với cắt dưới nước thực thụ, nên ưu tiên các mác dai hơn thay vì cứng nhất.\n\n**Tạo hạt mặt khuôn nóng.** Cắt khô trên một khuôn được gia nhiệt, hạt được vận chuyển đi bằng khí. Đây là phương pháp có nhiệt độ lưỡi cao nhất trong ba loại, và là lý lẽ mạnh nhất cho PM-HSS hoặc hợp kim cứng.\n\n## Hình học lưỡi dao\n\nDạng lưỡi được chọn theo độ nhớt polymer và hình dạng hạt bạn mong muốn:\n\n- **Vát 45°** — hình học đa dụng. Cân bằng tốt giữa độ bền lưỡi và độ sắc khi cắt các polyolefin thông dụng.\n- **Lưỡi vuông 90°** — độ bền lưỡi tối đa cho hợp chất cứng, có độn hoặc mài mòn mạnh, nơi một mặt vát mỏng sẽ bị mẻ.\n- **Vát bậc** — dạng thoát hai cấp giữ được đường cắt sắc trong khi để lại phần đỡ vững phía sau. Dùng khi cần lưỡi mỏng nhưng tuổi thọ dao với góc vát 45° sẽ không chấp nhận được.\n- **Cong / móc** — kéo dòng nhựa nóng chảy vào vết cắt thay vì đẩy nó ra. Phù hợp với polymer độ nhớt thấp và dính, vốn bị miết trên lưỡi thẳng.\n\n## Vì sao độ đồng đều chiều dày trong một bộ quyết định tuổi thọ dao\n\nMáy tạo hạt vận hành cả một bộ dao trên cùng một đầu dao, được ép vào mặt khuôn bằng một lực ép ban đầu chung. Nếu chiều dày các dao trong bộ không đều nhau, những con dày nhất sẽ gánh phần áp lực tiếp xúc lớn bất thường, còn những con mỏng nhất gần như không chạm tới. Kết quả là cả bộ mòn không đều, chất lượng cắt suy giảm từ lâu trước khi con dao trung bình mòn hết, và mặt khuôn bị cào xước cục bộ ngay dưới những con dao cao.\n\nChúng tôi mài dao theo bộ đồng bộ và kiểm chứng độ đồng đều chiều dày của cả bộ trên máy CMM, thay vì chỉ kiểm tra dung sai từng chiếc riêng lẻ. Độ phẳng cũng quan trọng vì lý do tương tự: một con dao không phẳng sẽ tiếp xúc với khuôn bằng cạnh thay vì bằng cả mặt đỡ.\n\n## Lựa chọn vật liệu\n\n**D2 (1.2379)** — mác kinh tế đa dụng cho polyolefin thông dụng sạch.\n**M2 HSS (1.3343)** — độ cứng nóng tốt hơn cho polymer kỹ thuật và nhiệt độ cao hơn.\n**T42 (1.3207)** — thép gió hàm lượng vonfram cao cho cắt liên tục ở nhiệt độ cao.\n**Thép gió luyện kim bột PM** — cấu trúc carbide mịn và đồng đều, kết hợp tốt nhất giữa giữ lưỡi và độ dai cho hợp chất mài mòn và có độn.\n**Thép không gỉ 440C** — cho vận hành dưới nước khi chống ăn mòn quan trọng hơn tuổi thọ lưỡi tối đa, đặc biệt trên các dây chuyền dừng nghỉ giữa các đợt sản xuất.\n**Hợp kim cứng vonfram** — tuổi thọ tối đa với hợp chất độn thủy tinh và độn khoáng, nơi tính giòn của nó là đánh đổi chấp nhận được.\n\n## Tương thích máy\n\nDao được chế tạo phù hợp với các hệ thống tạo hạt Gala, Nordson BKG (kể cả dòng AH), Maag, ECON, Coperion, Starlinger, NGR, Tecnova, IPS, Filtec và WRP. Hãy gửi model máy kèm một con dao mẫu hoặc ảnh chụp có ghi kích thước, chúng tôi sẽ lập bản vẽ để duyệt. Đầu dao, tấm khuôn, thanh ren, vít bắt dao và vòng đệm O cũng được cung cấp cùng với dao.",
-    disambiguation:
-      "Bạn cắt sợi nhựa đùn trong không khí thay vì tại mặt khuôn? Xem [Rotor Máy Tạo Hạt Dạng Sợi](/products/strand-pelletizer-rotors) để biết về bộ rotor xoắn và dao tĩnh.",
+      "Dao ép viên có mặt khuôn thay thế cho các hệ thống dưới nước, vòng nước và mặt nóng. Khe lưỡi tùy chỉnh, biên dạng cạnh và bộ phù hợp với bản vẽ.",
     link: "/products/die-face-cutting-knives",
     isFeatured: true,
     compatibleMachines: [
@@ -6007,114 +7152,74 @@ export const blades: Blade[] = [
       "IPS",
       "Filtec",
     ],
-    specs: [
-      {
-        label: "Material",
-        value: "D2 · M2 HSS · T42 · PM-HSS · 440C Stainless · Carbide",
-      },
-      {
-        label: "Hardness Differential",
-        value: "Blade held below die plate hardness (controlled wear)",
-      },
-      {
-        label: "Edge Geometry",
-        value: "45° bevel · 90° square · Stepped bevel · Curved / hooked",
-      },
-      {
-        label: "Thickness Consistency",
-        value: "≤ 0.01 mm variation within a matched set",
-      },
-      {
-        label: "Flatness",
-        value: "≤ 0.01 mm",
-      },
-      {
-        label: "Pelletizing Methods",
-        value: "Underwater · Water-ring · Hot die face",
-      },
-      {
-        label: "Supply Format",
-        value: "Matched sets, CMM-verified; hubs and die plates available",
-      },
-      {
-        label: "OEM Fitment",
-        value: "Gala, Nordson BKG, Maag, ECON, Coperion, NGR",
-      },
-    ],
-    componentsIntro:
-      "Tấm khuôn là tài sản; con dao là chi tiết tiêu hao. Mọi điều dưới đây đều bắt nguồn từ việc giữ mối quan hệ đó đúng chiều.",
+    compatibleMachinesIntro:
+      "Nhận các loại dao cắt có mặt khuôn thay thế dành riêng cho trục dao của bạn, với các rãnh, vai và biên dạng cạnh tùy chỉnh. Sureay cung cấp các bộ dao phù hợp với cấu hình thép, HSS , không gỉ và cacbua. Gửi bản vẽ của bạn để nhận báo giá phù hợp với hệ thống tạo hạt của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "die-plate-protection",
-        tag: "HAO MÒN CÓ KIỂM SOÁT",
-        title: "Tấm khuôn của bạn sống lâu hơn con dao",
+        id: "die-face-body-profiles",
+        tag: "Hồ sơ cơ thể",
+        title: "Lựa chọn vật liệu cho cặp Blade-and-Die",
         description:
-          "Độ cứng dao được quy định thấp hơn độ cứng mặt khuôn để chi tiết tiêu hao hấp thụ phần hao mòn. Dao cứng hơn khuôn không bền hơn — nó cào xước mặt khuôn, làm hở khe cắt và biến một lần thay dao thành một lần đại tu khuôn.",
+          "Sureay cung cấp các cấu hình cacbua và thép không gỉ D2 , M2 HSS , T42 , PM- HSS , 440C , cho phép lựa chọn vật liệu dao bằng polyme và tấm khuôn tiếp xúc.",
       },
       {
-        id: "matched-set-grinding",
-        tag: "ĐỘ CHÍNH XÁC",
-        title: "Mài và kiểm chứng theo bộ đồng bộ",
+        id: "die-face-working-edge",
+        tag: "Cạnh làm việc",
+        title: "Cơ quan tùy chỉnh và hồ sơ Working-Edge",
         description:
-          "Độ đồng đều chiều dày trong phạm vi ≤0,01 mm trên cả bộ, kiểm chứng bằng CMM. Cả bộ dùng chung một lực ép vào khuôn: dao dày gánh tải và cào xước khuôn, dao mỏng thì không hề cắt. Chỉ riêng dung sai từng chiếc không ngăn được điều này.",
+          "Thân dao được liệt kê có chiều dài từ 45–70 mm. Sureay chế tạo các thân thẳng, xẻ và bậc với các rãnh, mặt tựa và các cạnh làm việc hình vuông, vát hoặc cong được chỉ định cho trục dao được lắp đặt.",
       },
       {
-        id: "geometry-by-polymer",
-        tag: "HÌNH HỌC",
-        title: "Dạng lưỡi được chọn từ polymer của bạn",
+        id: "die-face-pelletizing-station",
+        tag: "Phương pháp tạo hạt",
+        title: "Bộ dao phù hợp và các thành phần đi kèm",
         description:
-          "45° cho polyolefin thông dụng, 90° cho hợp chất có độn và mài mòn, vát bậc khi cần lưỡi mỏng nhưng vẫn phải trụ được, dạng móc cho nhựa nóng chảy độ nhớt thấp và dính vốn bị miết trên lưỡi thẳng.",
+          "Đặt hàng các bộ dao phù hợp được thực hiện theo một bản vẽ chung, với độ dày lưỡi dao, hình dạng chỗ ngồi và hướng cắt được chỉ định cho các vị trí trục yêu cầu. Các trục và tấm khuôn có thể được đưa vào yêu cầu.",
+        relatedBladeIds: ["strand-pelletizer-rotors"],
       },
     ],
-    dimensionLabels: {
-      col0: "Biên Dạng Dao",
-      col1: "Dài × Rộng (mm)",
-      col2: "Chiều Dày (mm)",
-      col3: "Cách Lắp",
-      caption:
-        "* Hình học tiêu biểu của các con dao hiện đang sản xuất. Dao máy tạo hạt dưới nước được chế tạo theo đúng đầu dao cụ thể — hãy gửi model máy kèm dao mẫu hoặc ảnh chụp có ghi kích thước để nhận báo giá chính xác.",
-    },
-    standardDimensions: [
+    specs: [
       {
-        spec: "Straight, twin slot",
-        od: "45 × 25",
-        bolt: "3 – 6",
-        thickness: "2 × Ø5.5 slots",
+        label: "Ứng dụng",
+        value: "Cắt viên ở mặt đùn",
       },
       {
-        spec: "Straight, twin slot",
-        od: "60 × 30",
-        bolt: "3 – 6",
-        thickness: "2 × R3.5 slots",
+        label: "Vật liệu",
+        value: "D2 , M2 HSS , T42 , PM- HSS , thép không gỉ 440C hoặc cacbua",
       },
       {
-        spec: "Straight, wide body",
-        od: "60 × 46",
-        bolt: "4 – 8",
-        thickness: "2 × R3.5, R5 relief",
+        label: "Hình học cạnh",
+        value: "Góc xiên 45°, góc vuông 90°, góc xiên bậc hoặc cạnh cong/móc",
       },
       {
-        spec: "Forked, triple slot",
-        od: "55 × 34",
-        bolt: "3 – 6",
-        thickness: "3 × R3.5 slots",
+        label: "Kích cỡ",
+        value: "45–70 mm",
       },
       {
-        spec: "Stepped / shouldered",
-        od: "60 × 35",
-        bolt: "4 – 8",
-        thickness: "2 slots, 129° flank",
+        label: "Độ dày nhất quán",
+        value: "Sai lệch ≤0,01 mm giữa các dao trong cùng bộ",
       },
       {
-        spec: "Tapered / hooked",
-        od: "70 × 60",
-        bolt: "4 – 8",
-        thickness: "63° flank",
+        label: "Độ phẳng",
+        value: "≤0.01 mm",
+      },
+      {
+        label: "Phương pháp tạo hạt",
+        value: "Tạo hạt dưới nước, vòng nước hoặc khuôn mặt nóng",
+      },
+      {
+        label: "Chênh lệch độ cứng",
+        value:
+          "Độ cứng của lưỡi dao bên dưới tấm khuôn giao phối (cấu hình mài mòn được kiểm soát)",
+      },
+      {
+        label: "Định dạng cung cấp",
+        value: "Các bộ khớp, được xác minh CMM; trung tâm và tấm khuôn có sẵn",
       },
     ],
     drawings: {
       intro:
-        "Phần lớn đơn hàng dao máy tạo hạt đến với chúng tôi mà không có bản vẽ OEM — khách gửi một con dao đã mòn, hoặc một tấm ảnh kèm model máy. Các hình học dưới đây là những bản vẽ chúng tôi đã lập theo cách đó, từ khâu đo đạc đến bản vẽ chế tạo được duyệt. Chúng thể hiện dải hình dạng thân dao, kiểu rãnh và góc mặt bên mà chúng tôi đang sản xuất, và cho thấy con dao của chính bạn sẽ trông ra sao sau khi được chế tạo ngược.",
+        "Các ví dụ bản vẽ này cho thấy hình dạng thân máy, khe lắp và góc sườn thay đổi như thế nào tùy theo trục dao. Sử dụng bản vẽ đã được phê duyệt của bạn hoặc mẫu đo được khi yêu cầu thay thế.",
       items: [
         {
           image:
@@ -6176,7 +7281,6 @@ export const blades: Blade[] = [
     relatedBladeIds: [
       "strand-pelletizer-rotors",
       "continuous-melt-filter-scraper-blades",
-      "cutter-compactor-blades",
     ],
     offers: {
       lowPrice: 18,
@@ -6185,533 +7289,2575 @@ export const blades: Blade[] = [
     faqs: {
       technical: [
         {
-          question: "Dao của các bạn có làm hỏng tấm khuôn của tôi không?",
+          question: "Con dao mặt thay thế nào phù hợp với máy ép viên của tôi?",
           answer:
-            "Không, nếu quan hệ độ cứng được quy định đúng, và đó là điều đầu tiên chúng tôi xác lập với mọi yêu cầu báo giá. Độ cứng của dao được giữ thấp hơn độ cứng mặt khuôn một cách có chủ đích để phần hao mòn do chi tiết tiêu hao gánh chịu. Dao cứng hơn tấm khuôn không cho bạn tuổi thọ dài hơn — nó cào xước mặt khuôn, làm hở khe cắt, giảm chất lượng hạt và cuối cùng buộc phải mài lại hoặc thay khuôn. Hãy cho chúng tôi biết vật liệu và độ cứng tấm khuôn, hoặc model máy nếu bạn không có thông tin đó, và chúng tôi sẽ chỉ định dao tương ứng. Mỗi lô hàng đều kèm chứng chỉ độ cứng để bạn kiểm chứng quan hệ này trước khi lắp dao.",
+            "Xác định máy tạo hạt và trục dao cắt, sau đó chỉ định thân dao, độ dày, khe cố định, mặt ngồi và hướng cắt. Dao khuôn và dao máy tạo hạt có liên quan đến nhau. Hồ sơ làm việc hoàn chỉnh và mối quan hệ lắp đặt thiết lập sự thay thế cụ thể trong máy đó.",
         },
         {
           question:
-            "Vì sao một con dao trong bộ của tôi mòn nhanh hơn hẳn những con khác?",
+            "Dao ép viên dưới nước, vòng nước và mặt nóng có thể hoán đổi cho nhau không?",
           answer:
-            "Hầu như luôn là do chiều dày không đều trong bộ. Cả bộ dao dùng chung một lực ép vào mặt khuôn, nên nếu chiều dày chênh nhau giữa các con thì những con dày nhất sẽ gánh phần áp lực tiếp xúc lớn bất thường — chúng mòn nhanh và cào xước khuôn, trong khi những con mỏng nhất gần như không chạm tới và chẳng bao giờ cắt đúng cách. Cả bộ hỏng từ lâu trước khi con dao trung bình mòn hết. Đó là lý do chúng tôi mài dao theo bộ đồng bộ và dùng CMM kiểm chứng độ đồng đều chiều dày cả bộ trong phạm vi 0,01 mm, thay vì kiểm tra từng con riêng lẻ theo một dung sai.",
+            "Không. Máy hoạt động dưới nước, vòng nước và mặt nóng có thể sử dụng các trục, tính năng lắp đặt và cấu hình lưỡi dao khác nhau. Khớp bản vẽ trung tâm và dao thực tế. Nếu máy cắt sợi dưới nước bằng rô-to có răng và dao cắt giường, hãy xem [Rô-to máy tạo hạt dạng sợi](/products/strand-pelletizer-rotors) .",
+        },
+        {
+          question: "Tại sao vật liệu tấm khuôn lại quan trọng khi chọn dao?",
+          answer:
+            "Dao và mặt khuôn tạo thành một cặp làm việc, do đó vật liệu và đặc tính mài mòn của chúng cần được xem xét cùng nhau. Sử dụng thông số kỹ thuật ban đầu của mặt khuôn cùng với độ mòn dao bằng polyme và hiện tại. Sự thay đổi về độ cứng hoặc kết cấu của lưỡi dao sẽ duy trì mối quan hệ vật liệu dành cho hệ thống tạo hạt đó.",
         },
         {
           question:
-            "Tôi nên dùng hình học lưỡi nào — 45°, 90°, vát bậc hay móc?",
+            "Tại sao dao trong một bộ dao phải có chung hình dạng chỗ ngồi được chỉ định?",
           answer:
-            "Hãy chọn theo độ nhớt polymer và hàm lượng chất độn. Mặt vát 45° là hình học đa dụng và là lựa chọn mặc định đúng đắn cho polyolefin thông dụng. Chuyển sang lưỡi vuông 90° cho hợp chất cứng, độn khoáng hoặc mài mòn mạnh, nơi mặt vát mỏng sẽ bị mẻ. Vát bậc cho bạn đường cắt sắc với phần đỡ vững phía sau, dành cho trường hợp cần lưỡi mỏng nhưng góc 45° trơn sẽ không trụ nổi. Hình học cong hoặc móc kéo nhựa nóng chảy vào vết cắt thay vì đẩy ra, đúng thứ bạn cần với polymer độ nhớt thấp hoặc dính vốn bị miết trên lưỡi thẳng.",
+            "Mỗi lưỡi dao phải đạt đến vị trí làm việc dự định trên trục. Sự thay đổi về độ dày, bề mặt tiếp xúc hoặc vị trí cạnh có thể ảnh hưởng đến cách dao tiếp xúc với khuôn. Chỉ định bộ hoàn chỉnh cho cùng một bản sửa đổi bản vẽ, bao gồm mọi vị trí khác nhau có chủ ý để hình học cắt được cài đặt được xác định rõ ràng.",
         },
         {
           question:
-            "Tôi có nên dùng dao thép không gỉ cho tạo hạt dưới nước không?",
+            "Cần xem xét điều gì khi một con dao mòn nhanh hơn những con dao khác?",
           answer:
-            "Thép không gỉ 440C đáng được chỉ định khi ăn mòn là yếu tố vận hành có thật — nhất là trên dây chuyền dừng nghỉ giữa các đợt sản xuất, nơi con dao thép dụng cụ có thể bị gỉ bề mặt trong buồng nước rồi cào xước khuôn khi khởi động lại. Đánh đổi là khả năng giữ lưỡi: 440C không giữ lưỡi lâu bằng M2 hay PM-HSS ở cùng chế độ làm việc. Nếu dây chuyền chạy liên tục và hóa tính nước được kiểm soát, thép dụng cụ hoặc PM-HSS thường cho chi phí trên mỗi tấn tốt hơn. Nếu dây chuyền chạy ngắt quãng, hoặc buồng nước không được xả, phương án không gỉ thường tự bù lại chi phí.",
+            "Bắt đầu bằng cách kiểm tra xem con dao đó có nằm ở cùng độ cao và góc được chỉ định như những con dao khác trên trục hay không. So sánh độ dày, mặt ngồi và vị trí cạnh của nó, sau đó kiểm tra căn chỉnh đầu giữ và mặt khuôn chung. Kiểm tra các điểm tiếp xúc đó giúp đánh giá độ mòn không đều trước khi thay đổi vật liệu lưỡi dao.",
         },
         {
           question:
-            "Dao dưới nước, vòng nước và mặt khuôn nóng khác nhau thế nào?",
+            "Sureay có thể tái tạo dao nĩa hoặc dao bậc từ một mẫu không?",
           answer:
-            "Chúng khác nhau chủ yếu ở môi trường nhiệt và ăn mòn tại lưỡi. Dao dưới nước làm việc ngập nước và ấm, nên chống ăn mòn là yếu tố chọn lựa thực sự. Dao vòng nước cắt tại mặt khuôn làm việc trong không khí với màn nước ở phía sau, khiến lưỡi chịu chu trình nhiệt khắc nghiệt hơn và ưu tiên các mác dai hơn thay vì cứng nhất. Dao mặt khuôn nóng cắt khô trên khuôn được gia nhiệt và chịu nhiệt độ lưỡi cao nhất trong ba loại, đây chính là chỗ PM-HSS và hợp kim cứng xứng đáng với mức giá cao hơn. Hãy cho chúng tôi biết dây chuyền của bạn dùng phương pháp nào — điều đó làm thay đổi mác thép được khuyến nghị ngay cả khi kích thước dao giống hệt nhau.",
+            "Đúng. Một mẫu có thể xác định đường viền, các khe và các đặc điểm chỗ ngồi, trong khi bản vẽ thiết lập các kích thước và biên dạng cắt mới dự định. Đánh dấu mặt làm việc và hướng cắt rõ ràng. Các hình dạng minh họa cung cấp thông tin tham khảo, với độ dày hoàn chỉnh và các chi tiết lắp đặt xác định lưỡi dao cho trục dao cắt của bạn.",
         },
         {
           question:
-            "Các bạn có cung cấp cả đầu dao và tấm khuôn ngoài dao không?",
+            "Bạn cần báo giá die-face dao máy tạo hạt , trục hay tấm khuôn?",
           answer:
-            "Có. Đầu dao, tấm khuôn, thanh ren, vít bắt dao và vòng đệm O đều có sẵn, và việc đặt cả cụm chi tiết mài mòn cùng lúc tránh được sự không khớp gây tải lệch lên dao. Nếu bạn thay cả đầu dao lẫn dao, chúng tôi khuyến nghị cung cấp chúng cùng nhau để các mặt tựa của dao và đầu dao được đối chiếu kiểm tra với nhau trước khi giao hàng.",
+            "Cung cấp mô hình máy ép viên, polymer, bản vẽ dao và số lượng cho bộ sản phẩm. Hiển thị chỗ ngồi của lưỡi cắt, khe cố định và hướng cắt. Nếu báo giá nên bao gồm trục dao hoặc tấm khuôn, hãy gửi bản vẽ hoặc tài liệu tham khảo bộ phận riêng cho từng bộ phận và xác định các bộ phận bạn sẽ giữ lại.",
         },
       ],
-      company: [
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình trục máy ép viên và máy cắt, bản vẽ lưỡi dao, kiểu khe, hướng cạnh làm việc và các chi tiết tấm khuôn.",
+    dimensionLabels: {
+      col0: "Biên Dạng Dao",
+      col1: "Dài × Rộng (mm)",
+      col2: "Độ dày (mm)",
+      col3: "Cách Lắp",
+      caption:
+        "* Hình học tiêu biểu của các con dao hiện đang sản xuất. Dao máy tạo hạt dưới nước được chế tạo theo đúng đầu dao cụ thể — hãy gửi model máy kèm dao mẫu hoặc ảnh chụp có ghi kích thước để nhận báo giá chính xác.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR007401",
+        spec: "Khe thẳng, đôi",
+        od: "45 × 25",
+        bolt: "3 – 6",
+        thickness: "Khe cắm 2 × Ø5,5",
+      },
+      {
+        itemNo: "SR007402",
+        spec: "Khe thẳng, đôi",
+        od: "60 × 30",
+        bolt: "3 – 6",
+        thickness: "Khe cắm 2 × R3.5",
+      },
+      {
+        itemNo: "SR007403",
+        spec: "Thân thẳng, rộng",
+        od: "60 × 46",
+        bolt: "4 – 8",
+        thickness: "2 × R3.5 , R5 cứu trợ",
+      },
+      {
+        itemNo: "SR007404",
+        spec: "Rẽ nhánh, ba khe",
+        od: "55 × 34",
+        bolt: "3 – 6",
+        thickness: "Khe cắm 3 × R3.5",
+      },
+      {
+        itemNo: "SR007405",
+        spec: "Bước / vai",
+        od: "60 × 35",
+        bolt: "4 – 8",
+        thickness: "2 khe, sườn 129°",
+      },
+      {
+        itemNo: "SR007406",
+        spec: "Thon gọn / móc",
+        od: "70 × 60",
+        bolt: "4 – 8",
+        thickness: "sườn 63°",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao cắt khuôn mặt | Lưỡi thay thế tùy chỉnh",
+      heroAlt:
+        "Cấu hình dao cắt khuôn với hình dạng thân thẳng, rẽ nhánh và bước",
+      sizeRange: "45–70 mm",
+      heroSpecs: [
         {
-          question:
-            "Các bạn có chế tạo ngược dao từ mẫu khi không có bản vẽ OEM không?",
-          answer:
-            "Có, và phần lớn đơn hàng dao máy tạo hạt bắt đầu như vậy. Hãy gửi một con dao mẫu — lý tưởng nhất là con chưa mòn, hoặc con đã mòn kèm model máy — và chúng tôi sẽ lập bản vẽ kích thước đầy đủ trên máy CMM để bạn duyệt trước khi chế tạo. Chúng tôi lưu bản vẽ đã duyệt để các đơn hàng sau không phải đo lại. Bản vẽ và mẫu của bạn vẫn thuộc quyền sở hữu trí tuệ của bạn và không bao giờ được chia sẻ.",
+          label: "Vật liệu",
+          value: "Thép công cụ, HSS , thép PM, thép không gỉ hoặc cacbua",
         },
         {
-          question:
-            "Thời gian giao hàng là bao lâu, và tôi có thể chạy thử một bộ trước không?",
-          answer:
-            "Dao chế tạo theo bản vẽ đã duyệt sẵn có được giao trong 10–15 ngày làm việc; bộ chế tạo ngược lần đầu cần thêm khoảng 3–5 ngày cho đo đạc, lập và duyệt bản vẽ. Chúng tôi cung cấp bộ dùng thử để kiểm chứng độ khớp và so sánh tuổi thọ lưỡi với nhà cung cấp hiện tại của bạn trước khi bạn cam kết số lượng sản xuất.",
-        },
-        {
-          question: "Bộ dao máy tạo hạt được giao kèm những tài liệu gì?",
-          answer:
-            "Mỗi bộ đều kèm chứng chỉ độ cứng Rockwell — tài liệu cho phép bạn kiểm chứng quan hệ độ cứng giữa dao và khuôn trước khi lắp — cùng báo cáo kích thước CMM về độ đồng đều chiều dày trên cả bộ, chứng chỉ truy xuất nguồn gốc vật liệu từ nhà máy thép và hồ sơ mẻ nhiệt luyện.",
+          label: "Ứng dụng",
+          value: "Cắt viên ở mặt đùn",
         },
       ],
+      technicalSpecs: [
+        {
+          label: "Ứng dụng",
+          value: "Cắt viên ở mặt đùn",
+        },
+        {
+          label: "Vật liệu",
+          value: "D2 , M2 HSS , T42 , PM- HSS , thép không gỉ 440C hoặc cacbua",
+        },
+        {
+          label: "Hình học cạnh",
+          value: "Góc xiên 45°, góc vuông 90°, góc xiên bậc hoặc cạnh cong/móc",
+        },
+        {
+          label: "Kích cỡ",
+          value: "45–70 mm",
+        },
+        {
+          label: "Độ dày nhất quán",
+          value: "Sai lệch ≤0,01 mm giữa các dao trong cùng bộ",
+        },
+        {
+          label: "Độ phẳng",
+          value: "≤0.01 mm",
+        },
+        {
+          label: "Phương pháp tạo hạt",
+          value: "Tạo hạt dưới nước, vòng nước hoặc khuôn mặt nóng",
+        },
+        {
+          label: "Chênh lệch độ cứng",
+          value:
+            "Độ cứng của lưỡi dao bên dưới tấm khuôn giao phối (cấu hình mài mòn được kiểm soát)",
+        },
+        {
+          label: "Định dạng cung cấp",
+          value:
+            "Các bộ khớp, được xác minh CMM; trung tâm và tấm khuôn có sẵn",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/die-face-cutting-knives/die-face-cutting-knives-01.webp",
+        alt: "Dao cắt khuôn cho thấy các rãnh lắp và cạnh mài của chúng",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho dao khuôn mặt của bạn",
+        description:
+          "Bao gồm máy ép viên và mô hình trục máy cắt, bản vẽ lưỡi hoặc mẫu, kiểu khe, hướng cạnh và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
-    id: "groove-bottom-knives",
-    name: "Dao Dưới Có Rãnh",
-    fullName: "Dao dưới nhiều rãnh và vòng dao cho cắt trượt",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Dao Cắt Dọc",
-    image: "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-    badge: "Bước rãnh từ 5 mm",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/groove-bottom-knives/groove-bottom-knives-01.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-02.webp",
-      "/images/products/groove-bottom-knives/groove-bottom-knives-03.webp",
+    id: "special-shaped-blades",
+    name: "Dao công nghiệp biên dạng đặc biệt",
+    fullName: "Dao công nghiệp có biên dạng đặc biệt chế tạo theo bản vẽ",
+    seoTitle: "Lưỡi công nghiệp có hình dạng đặc biệt | Hồ sơ tùy chỉnh",
+    category: "custom_profile",
+    sector: "other",
+    categoryDisplay: "Lưỡi hồ sơ tùy chỉnh",
+    image: "/images/products/blades/special-shaped-knife.webp",
+    badge: "Tùy chỉnh OEM",
+    badgeColor: "teal",
+    description:
+      "Dao máy thay thế có cấu hình tùy chỉnh ở D2 , H13 , PM- HSS hoặc cacbua. Các đường viền, cạnh cắt và các tính năng lắp đặt dành riêng cho từng bộ phận được thực hiện trên bản vẽ.",
+    link: "/custom",
+    specs: [
+      {
+        label: "Ứng dụng",
+        value:
+          "Dao máy có đường viền hoặc biên dạng cạnh dành riêng cho từng bộ phận",
+      },
+      {
+        label: "Vật liệu",
+        value: "D2 , H13 , PM- HSS hoặc cacbua",
+      },
+      {
+        label: "Kích cỡ",
+        value: "Thực hiện để vẽ",
+      },
+      {
+        label: "Dung sai kích thước",
+        value: "±0.02 mm",
+      },
     ],
-    galleryAlts: [
-      "Vòng dao dưới nhiều rãnh với các rãnh song song mài chính xác dùng cho cắt trượt",
-      "Các vòng dao dưới nhiều rãnh cùng một vòng đệm trơn và các dao dưới dạng phẳng",
-      "Vòng dao dưới nhiều rãnh thể hiện bước rãnh và lỗ lắp đã mài",
+    offers: {
+      lowPrice: 20,
+      highPrice: 800,
+    },
+    quoteRequirements:
+      "Bao gồm máy và vật liệu, bản sửa đổi bản vẽ, đường viền lưỡi cắt, kích thước lắp đặt và các yêu cầu về dung sai hoặc cạnh tới hạn.",
+    components: [
+      {
+        id: "special-shaped-blades-advantage-1",
+        tag: "Hồ sơ cắt cụ thể theo từng phần",
+        title: "Hồ sơ cắt cụ thể theo từng phần",
+        description:
+          "Sureay chế tạo các lưỡi dao công nghiệp với đường viền, góc xiên và vị trí lưỡi làm việc tùy chỉnh, mang đến cho bạn lộ trình thay thế cho các cấu hình dao bên ngoài cấu hình thẳng hoặc tròn tiêu chuẩn.",
+      },
+      {
+        id: "special-shaped-blades-advantage-2",
+        tag: "Tùy chọn Thép công cụ, PM- HSS và Cacbua",
+        title: "Tùy chọn Thép công cụ, PM- HSS và Cacbua",
+        description:
+          "Cấu hình D2 , H13 , PM- HSS và cacbua cho phép vật liệu cắt được xác định phù hợp với thiết kế lưỡi cắt hiện có của bạn và vật liệu đang được xử lý.",
+      },
+      {
+        id: "special-shaped-blades-advantage-3",
+        tag: "Hồ sơ gắn kết và cầm tay dựa trên bản vẽ",
+        title: "Hồ sơ gắn kết và cầm tay dựa trên bản vẽ",
+        description:
+          "Sureay tạo ra các lỗ, khe và mặt ngồi tùy chỉnh cho các mốc lắp đặt của bạn. Chỉ định khoảng cách từ cạnh đến chỗ ngồi, hướng cắt và bất kỳ sự khác biệt nào về bên trái hoặc bên phải để việc thay thế duy trì vị trí làm việc ban đầu.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "Lưỡi dao công nghiệp có hình dạng đặc biệt là gì?",
+          answer:
+            "Đó là một con dao máy có đường viền, hình dạng cạnh hoặc cách sắp xếp lắp đặt cần có bản vẽ cụ thể cho từng bộ phận. Dao có cấu hình tùy chỉnh và lưỡi dao đặc biệt là tên mua hàng có liên quan. Nhiệm vụ cắt và vị trí lắp đặt thiết lập hình dạng thực tế, bao gồm các đặc điểm không thể được xác định chỉ bằng chiều dài, chiều rộng và độ dày tổng thể.",
+        },
+        {
+          question:
+            "Kích thước nào quyết định độ vừa vặn của một con dao có cấu hình đặc biệt?",
+          answer:
+            "Vị trí cạnh so với mốc lắp đặt là đặc biệt quan trọng. Xác định đường viền, độ dày, lỗ, khe, hốc và góc xiên, sau đó xác định kích thước nào kiểm soát vị trí và kẹp. Điều này kết nối biên dạng cắt với vị trí được lắp đặt thay vì chỉ dựa vào kích thước tổng thể.",
+        },
+        {
+          question: "Làm thế nào để nhận biết dao tay trái và dao tay phải?",
+          answer:
+            "Sử dụng chế độ xem bản vẽ được xác định và hiển thị hướng đã cài đặt và hướng cắt. Bao gồm cả hai bề mặt nơi góc xiên, mũi khoét hoặc hốc lắp thay đổi các mặt. Đường viền phản chiếu có thể bảo toàn các kích thước tổng thể trong khi di chuyển một tính năng quan trọng, do đó, mỗi bàn tay cần thiết phải có một tham chiếu bộ phận rõ ràng.",
+        },
+        {
+          question:
+            "Vật liệu có thể được thay đổi trong khi vẫn giữ hồ sơ hiện có?",
+          answer:
+            "Có, vật liệu mới có thể được xem xét trong khi vẫn giữ được hồ sơ yêu cầu. Chọn loại ứng cử viên bằng cách sử dụng phôi được cắt, đeo dao hiện tại và giá đỡ ở cạnh. Hãy coi nó như một thông số kỹ thuật vật liệu đã được sửa đổi và giữ lại hình dạng cắt và lắp đặt cần thiết.",
+        },
+        {
+          question:
+            "Một lưỡi dao có hình dạng đặc biệt có thể được mài lại không?",
+          answer:
+            "Có, nếu mài có thể khôi phục biên dạng cắt đã chỉ định mà không di chuyển cạnh vượt quá giới hạn bản vẽ. Tham khảo cùng một lỗ, vai hoặc mặt ngồi khi đo cạnh nền. Thay dao nếu lưỡi dao không thể phục hồi được trong giới hạn đó nữa.",
+        },
+        {
+          question:
+            "Tôi nên gửi gì để nhận báo giá lưỡi cắt công nghiệp theo cấu hình tùy chỉnh?",
+          answer:
+            "Gửi máy hoặc trạm cắt, vật liệu được cắt, bản vẽ và số lượng bộ phận đã được phê duyệt. Đánh dấu hướng cắt, mốc lắp đặt và kích thước dung sai từ mép đến chỗ ngồi, bao gồm cả biên dạng cầm tay. Nếu bạn chỉ có một mẫu, hãy hiển thị thành phần tương ứng hoặc tài liệu tham khảo chưa sử dụng và đánh dấu các khu vực bị mòn.",
+        },
+      ],
+      company: [],
+    },
+    disambiguation:
+      "Để gửi bản vẽ và quy trình sản xuất, hãy xem [Lưỡi dao công nghiệp tùy chỉnh](/custom) .",
+  },
+  {
+    id: "wood-chipper-blades",
+    seoDescription:
+      "Dao di chuyển dành cho máy băm gỗ dạng trống và đĩa có chiều dài được liệt kê là 230–600 mm. Chỉ định thép dăm, D2 hoặc cạnh có đầu bằng cacbua, cùng với kiểu vát và bu lông của bạn.",
+    name: "Dao máy băm gỗ",
+    fullName: "Dao cho máy băm gỗ kiểu tang trống và kiểu đĩa",
+    category: "wood_chipper",
+    sector: "wood",
+    categoryDisplay: "Dao máy băm gỗ",
+    image: "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1600,
+      height: 846,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Lớp lâm nghiệp",
+    badgeColor: "green",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-blades-11.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-10.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
     ],
     description:
-      "Vòng dao dưới nhiều rãnh dùng cho cắt trượt trên máy cuộn lại giấy, bìa và màng. Khổ cắt được thay đổi bằng cách dời dao trên sang rãnh khác thay vì thay lại toàn bộ dụng cụ. Bước rãnh từ 5 mm, ĐK ngoài tới Φ406 mm, lỗ trơn cho trục hơi hoặc vít hãm cho trục đặc. Lưỡi cắt đơn hoặc kép, vòng liền khối hoặc vòng chẻ. Cũng cung cấp vòng một rãnh và vòng đệm trơn.",
-    fullDescription:
-      "Dao dưới nhiều rãnh — còn gọi là dao cắt dưới nhiều rãnh, đe nhiều rãnh hay MKB — là một vòng bản rộng mang nhiều rãnh song song được mài chính xác. Mỗi rãnh là một vị trí cắt sử dụng được, nên việc đổi khổ chỉ là dời dao trên sang một rãnh khác thay vì tháo trục và lắp lại cả bộ dao. Trên dây chuyền thường xuyên đổi khổ đơn hàng, khác biệt đó được tính bằng giờ ca chứ không phải bằng tiền dao.\n\nChính các rãnh tạo ra vết cắt, nên chính chúng phải chuẩn. Vị trí rãnh định ra khổ cắt, bề rộng rãnh định ra khe hở cắt trượt thực tế so với dao trên đi kèm, và tình trạng lưỡi rãnh quyết định vật liệu được cắt trượt hay bị xé. Cả ba được mài trong một lần gá trên cùng một vòng, và đó là lý do vòng nhiều rãnh giữ độ chính xác khổ trên toàn bộ chồng dao tốt hơn một số lượng tương đương các dao đe rời lắp cùng vòng đệm.\n\n## Nơi định dạng này xứng với giá của nó\n\nDao dưới một rãnh rẻ hơn tính theo con và hoàn toàn phù hợp với dây chuyền chạy một khổ suốt nhiều tuần. Vòng nhiều rãnh thắng ở nơi khổ đơn hàng thay đổi thường xuyên, nơi số đường cắt lớn, hoặc nơi việc căn lại bộ vòng đệm đã trở thành nút thắt thực sự của quá trình đổi lệnh. Nó còn loại bỏ cả một nhóm lỗi căn chỉnh: với vị trí rãnh cố định được mài vào một thân duy nhất, khổ cắt không thể lệch vì ai đó xếp vòng đệm sai một milimét.\n\n## Lắp đặt: trục hơi hay trục đặc\n\nHai kiểu lắp bao phủ gần như mọi máy cuộn lại. Lỗ trơn kẹp lên trục hơi nở, là phương án đổi nhanh và là lựa chọn thường thấy trên các dây chuyền gia công hiện đại. Kiểu vít hãm bắt lên trục dưới dạng đặc, phổ biến hơn trên máy đời cũ và trên dây chuyền bìa nặng nơi độ cứng vững của trục quan trọng hơn tốc độ thay dao. Hãy cho chúng tôi biết bạn dùng trục nào: điều đó thay đổi đặc tả lỗ lắp chứ không chỉ cách bắt chặt, và một vòng khoét cho hệ khác sẽ không ngồi đúng tâm.\n\n## Liền khối hay chẻ\n\nVòng tiêu chuẩn là liền khối. Vòng chẻ hai mảnh đắt hơn nhưng tháo ra lắp vào được mà không phải rã cụm trục, điều mà trên máy khổ rộng có thể biến một lần dừng theo kế hoạch thành một lần thay khi máy vẫn chạy. Nếu hiện nay bạn thay vòng bằng cách rút cả trục ra, bản chẻ thường là thứ đáng báo giá đầu tiên.\n\n## Lưỡi cắt đơn hay kép\n\nVòng được mài với một lưỡi cắt hoặc với lưỡi ở cả hai phía mỗi rãnh. Hình học hai lưỡi nhân đôi số vị trí sử dụng được và cho phép lật vòng khi một mặt đã mòn, đổi lại là mài khó hơn và giá cao hơn. Loại nào phù hợp phụ thuộc vào cách các vị trí cắt của bạn phân bố trên vòng, nên hãy gửi bảng khổ chứ không chỉ số lượng rãnh.\n\n## Bước rãnh được chế tạo theo bảng khổ của bạn\n\nKhoảng chia giữa các lưỡi — khoảng cách từ lưỡi cắt này sang lưỡi kế tiếp, còn gọi là bước — hầu như luôn được làm theo yêu cầu và có thể hẹp tới 5 mm (0,200 inch). Đường kính ngoài lên tới Φ406 mm (16 inch). Ở đây không tồn tại bảng tiêu chuẩn nào hữu ích, và đó là lý do chúng tôi báo giá từ bảng khổ hoặc bản vẽ của bạn: hãy cho chúng tôi ĐK ngoài, lỗ lắp, bề rộng vòng, các khổ bạn thực sự chạy và dao trên đi kèm, chúng tôi sẽ mài vị trí rãnh theo đúng bảng đó.\n\n## Phần còn lại của bộ vòng\n\nMột trục đang sản xuất hiếm khi chỉ gồm vòng nhiều rãnh. Vòng cắt một rãnh phụ trách các vị trí cố định, còn vòng trơn đóng vai trò đệm và đỡ vật liệu giữa các vị trí cắt. Chúng tôi cung cấp cả ba theo cùng một đặc tả lỗ lắp và độ đảo để chúng xếp chồng mà không sinh dao động: trộn vòng của nhiều nhà cung cấp trên cùng một trục là nguyên nhân phổ biến và khó chẩn đoán gây sai lệch khổ cắt.\n\n## Ứng dụng\n\nGia công giấy, bìa, giấy tissue và bìa sóng; màng, lá kim loại, giấy decal, băng dính, vải không dệt và dệt may trên máy cuộn lại cắt trượt.",
-    link: "/products/groove-bottom-knives",
-    disambiguation:
-      "Trang này nói về các vòng nhiều rãnh mang nhiều vị trí cắt trên cùng một thân. Với dao dưới dạng đĩa tròn một lưỡi ghép cặp với dao trên trên máy cuộn lại giấy, xem [Dao Dưới Cho Máy Cắt Cuộn Lại](/products/slitter-rewinder-bottom-knives).",
-    introNote:
-      "Bước rãnh, số rãnh và lỗ lắp được chế tạo theo bảng khổ của bạn — sản phẩm này không có kích thước tiêu chuẩn nào thực sự có ý nghĩa. Hãy gửi các khổ bạn thực sự chạy, loại trục (trục hơi hay trục đặc) và dao trên đi kèm, chúng tôi sẽ mài vị trí rãnh theo bảng đó.",
+      "Dao thay thế cho máy băm gỗ dạng trống và đĩa. Các tùy chọn thép Chipper, D2 và đầu cacbua, với các kiểu vát và bu lông tùy chỉnh để vẽ.",
+    link: "/products/wood-chipper-blades",
+    isFeatured: true,
     compatibleMachines: [
-      "Kampf",
-      "Goebel",
-      "Atlas Converting",
-      "Dienes",
-      "Nishimura",
-      "Deacro",
-      "Parkinson Technologies",
+      "Bandit Industries",
+      "Vermeer",
+      "Morbark",
+      "Peterson Pacific",
+      "Doppstadt",
+      "Jenz",
+      "CBI",
+      "Precision Husky",
+      "Bruks Siwertell",
+    ],
+    compatibleMachinesIntro:
+      "Nhận các loại dao thay thế dành cho máy băm trống hoặc đĩa của bạn, với các góc xiên, lỗ cố định và cấu hình kẹp tùy chỉnh. Sureay cung cấp các tùy chọn thép dăm, D2 , Cr12MoV và đầu cacbua. Chia sẻ bản vẽ hoặc mẫu của bạn để nhận báo giá, bao gồm cả đe phù hợp khi được yêu cầu. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
+    components: [
+      {
+        id: "chipper-knife-body",
+        tag: "Hình học dao",
+        title: "Tùy chọn thép Chipper và cacbua",
+        description:
+          "Cấu trúc thép dăm carbon cao, D2 , Cr12MoV và cacbua mang đến cho bạn các lựa chọn thay thế cho các loại cấp liệu gỗ khác nhau và các điều kiện mài mòn quan sát được.",
+      },
+      {
+        id: "chipper-knife-material",
+        tag: "Tùy chọn vật liệu",
+        title: "Góc xiên tùy chỉnh và cấu hình gắn kết",
+        description:
+          "Chiều dài dao băm gỗ được liệt kê là 230–600 mm, với chiều dài tùy chỉnh lên tới 800 mm. Sureay tạo ra các đường vát, kiểu bu lông và mặt cắt chỗ ngồi để vẽ cho các máy băm trống và đĩa hiện có.",
+      },
+      {
+        id: "chipper-knife-anvil-pair",
+        tag: "Cặp cắt",
+        title: "Dao di chuyển và đe phù hợp",
+        description:
+          "Đặt hàng dao di chuyển và đe cố định trong một yêu cầu, với mỗi bộ phận được chỉ định cho cụm cắt của máy băm và các bộ phận bạn định giữ lại.",
+        relatedBladeIds: ["wood-chipper-anvils"],
+      },
     ],
     specs: [
       {
+        label: "Kích cỡ",
+        value:
+          "Chiều dài được liệt kê là 230–600 mm; chiều dài tùy chỉnh lên tới 800 mm",
+      },
+      {
+        label: "Ứng dụng",
+        value:
+          "Dao di chuyển dành cho máy băm nguyên cây dạng trống, đĩa và sinh khối và tái chế pallet",
+      },
+      {
         label: "Vật liệu",
-        value: "Cr12MoV / SKD-11 / 9CrSi / 65Mn / HSS / gắn mảnh hợp kim",
+        value:
+          "Thép máy nghiền carbon cao, D2 (1.2379), Cr12MoV hoặc kết cấu cacbua",
       },
       {
-        label: "Đường kính ngoài",
-        value: "Tới Φ406 mm (16 inch)",
+        label: "độ cứng",
+        value:
+          "Thép dăm: HRC 55–58; D2 / Cr12MoV : HRC 58–62; lưỡi cắt cacbit: HRA 89–91",
       },
       {
-        label: "Bước rãnh",
-        value: "Từ 5 mm (0,200 inch), mài theo bảng khổ của bạn",
+        label: "Góc vát",
+        value: "25°–42°",
       },
       {
-        label: "Lắp đặt",
-        value: "Lỗ trơn cho trục hơi nở, hoặc vít hãm cho trục đặc",
+        label: "Dung sai độ dày",
+        value: "±0.05 mm",
       },
       {
-        label: "Cấu hình lưỡi",
-        value: "Lưỡi cắt đơn hoặc kép",
+        label: "Xử lý nhiệt",
+        value: "Làm cứng chân không và xử lý đông lạnh sâu (−196°C)",
+      },
+      {
+        label: "Làm sắc nét lại",
+        value:
+          "Đã được làm cứng hoàn toàn; 8–12 chu kỳ mài lại, có thể bị mòn và chiều cao dao còn lại",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Loại Chipper / Nền tảng OEM",
+      col1: "Chiều dài (mm)",
+      col2: "Chiều rộng (mm)",
+      col3: "Độ dày (mm)",
+      caption:
+        "* Kích thước tiêu chuẩn cho các OEM chipper lớn. Các mẫu bu lông 2 lỗ, 3 lỗ và 4 lỗ được gia công CNC theo bản thiết kế OEM chính xác. Dao phản lực và tấm mài mòn có sẵn dưới dạng bộ phù hợp. Chiều dài tùy chỉnh lên tới 800 mm.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR006101",
+        spec: 'Trống Bandit 12" / 15"',
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006102",
+        spec: 'Bandit 18" / 19"',
+        od: "295",
+        id: "80",
+        thickness: "19",
+      },
+      {
+        itemNo: "SR006103",
+        spec: "Vermeer BC1800 / BC2100",
+        od: "310",
+        id: "100",
+        thickness: "19",
+      },
+      {
+        itemNo: "SR006104",
+        spec: "Trống Morbark 40/36",
+        od: "400",
+        id: "100",
+        thickness: "22",
+      },
+      {
+        itemNo: "SR006105",
+        spec: "Đĩa Morbark 50/48",
+        od: "250",
+        id: "120",
+        thickness: "25",
+      },
+      {
+        itemNo: "SR006106",
+        spec: "Đĩa Peterson 5710",
+        od: "280",
+        id: "130",
+        thickness: "25",
+      },
+      {
+        itemNo: "SR006107",
+        spec: "Sinh khối Doppstadt / Jenz",
+        od: "350",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006108",
+        spec: "Máy băm nguyên cây hạng nặng",
+        od: "600",
+        id: "150",
+        thickness: "30",
+      },
+      {
+        itemNo: "SR006109",
+        spec: "Eschlböck Biber",
+        od: "245",
+        id: "285",
+        thickness: "20",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao cho máy băm gỗ kiểu tang trống và kiểu đĩa",
+      heroAlt: "Dao băm gỗ có lưỡi cắt thẳng, khe lắp mở và lỗ cố định",
+      sizeRange: "230–600 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "Thép Chipper, D2 , Cr12MoV hoặc cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Máy băm gỗ dạng trống và đĩa",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value:
+            "Chiều dài được liệt kê là 230–600 mm; chiều dài tùy chỉnh lên tới 800 mm",
+        },
+        {
+          label: "Ứng dụng",
+          value:
+            "Dao di chuyển dành cho máy băm nguyên cây dạng trống, đĩa và sinh khối và tái chế pallet",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "Thép máy nghiền carbon cao, D2 (1.2379), Cr12MoV hoặc kết cấu cacbua",
+        },
+        {
+          label: "độ cứng",
+          value:
+            "Thép dăm: HRC 55–58; D2 / Cr12MoV : HRC 58–62; lưỡi cắt cacbit: HRA 89–91",
+        },
+        {
+          label: "Góc vát",
+          value: "25°–42°",
+        },
+        {
+          label: "Dung sai độ dày",
+          value: "±0.05 mm",
+        },
+        {
+          label: "Xử lý nhiệt",
+          value: "Làm cứng chân không và xử lý đông lạnh sâu (−196°C)",
+        },
+        {
+          label: "Làm sắc nét lại",
+          value:
+            "Đã được làm cứng hoàn toàn; 8–12 chu kỳ mài lại, có thể bị mòn và chiều cao dao còn lại",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-blades-drawing.webp",
+        alt: "Bản vẽ dao băm gỗ thể hiện thân dao, khe lắp mở và mặt cắt xiên",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho dao Chipper của bạn",
+        description:
+          "Bao gồm model máy băm và số sê-ri, loại trống hoặc đĩa, bản vẽ dao hoặc mẫu và số lượng yêu cầu.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-anvils"],
+    offers: {
+      lowPrice: 25,
+      highPrice: 380,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Những loại dao băm gỗ thay thế nào phù hợp với máy của tôi?",
+          answer:
+            "Sử dụng mẫu máy băm, số sê-ri và tham chiếu bộ phận gốc để xác định kích thước, góc xiên, kiểu cố định và chỗ ngồi của dao mới. Lưỡi Chipper và dao Chipper thường mô tả các dao chuyển động trên trống hoặc đĩa. Răng máy mài là một loại bộ phận mài mòn riêng biệt, vì vậy cụm cắt thực tế phải kèm theo tên mua hàng.",
+        },
+        {
+          question: "Khi nào nên cân nhắc sử dụng dao băm có đầu bằng cacbua?",
+          answer:
+            "Xem xét kiểu mài mòn và tình trạng cấp liệu trước khi thay đổi kết cấu lưỡi làm việc. Sự mài mòn dần dần và hư hỏng do va chạm cục bộ đòi hỏi các quyết định về vật liệu khác nhau. So sánh lịch sử dao, góc xiên và vết bẩn bằng thép hiện tại với thiết kế đầu cacbua được đề xuất, trong khi vẫn duy trì hình dạng lắp đặt và làm việc theo yêu cầu của máy băm.",
+        },
+        {
+          question: "Tại sao chất lượng phoi và lực cắt thay đổi khi dao mòn?",
+          answer:
+            "Một cạnh bị cùn hoặc bị hư hỏng sẽ làm thay đổi cách dao tiếp xúc với gỗ và có thể khiến bạn phải tốn nhiều công sức hơn để xử lý gỗ. So sánh các cạnh được sử dụng với mẫu chip và tình trạng nạp. Bao gồm đe cố định khi kiểm tra vì cả hai bộ phận đều thiết lập mối quan hệ cắt.",
+        },
+        {
+          question: "Dao đảo ngược và dao có thể mài lại có giống nhau không?",
+          answer:
+            "Không. Có thể xoay dao băm đảo chiều để sử dụng lưỡi cắt thứ hai. Một con dao có thể mài lại có thể bị mòn cạnh trong giới hạn sử dụng của nó. Một số dao hỗ trợ cả hai. Sử dụng hướng dẫn sử dụng bản vẽ lưỡi và máy băm để xác nhận hướng, góc xiên và các kích thước còn lại cho phép.",
+        },
+        {
+          question: "Khi nào nên thay dao băm thay vì mài?",
+          answer:
+            "Thay thế dao bị nứt, biến dạng hoặc hư hỏng ngăn cản việc khôi phục hình dạng làm việc đã chỉ định. Một cạnh bị mòn có thể được mài lại khi kích thước dao còn lại cho phép. Sử dụng giới hạn của máy băm cho từng loại dao cụ thể thay vì số lần mài lại cố định và kiểm tra các bề mặt lắp cũng như cạnh.",
+        },
+        {
+          question: "Có nên thay đe mỗi khi thay dao chuyển động không?",
+          answer:
+            "Không. Một con dao chuyển động mới không phải lúc nào cũng cần một cái đe mới. Đánh giá đe xem có bị mòn, hư hỏng và điều chỉnh còn lại không. Một chiếc đe có thể sử dụng được có thể giữ nguyên vị trí nếu cạnh và giá đỡ của nó vẫn cho phép khoảng cách cắt cần thiết. Xem [Đe gỗ Chipper](/products/wood-chipper-anvils) để biết các loại dao cố định thay thế.",
+        },
+        {
+          question:
+            "Làm cách nào để yêu cầu báo giá cho lưỡi máy băm trống hoặc đĩa?",
+          answer:
+            "Gửi mẫu máy băm và số sê-ri, tài liệu tham khảo hoặc bản vẽ bộ phận gốc, nguồn cấp dữ liệu gỗ và số lượng. Bao gồm các kích thước góc xiên, bu lông hoặc khe và biên dạng chỗ tựa của lưỡi dao. Đối với máy cũ không có bản vẽ, mẫu có kích thước có thể hiển thị chỗ ngồi và mẫu cố định. Đánh dấu bất kỳ chiều cao nào bị mất do mài sắc.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình máy băm và loại nối tiếp, trống hoặc đĩa, bản vẽ dao, mẫu bu lông và nguyên liệu gỗ.",
+    rfqPlaceholder:
+      "Kiểu máy và số sê-ri, loại trống hoặc đĩa, bản vẽ dao hoặc mẫu và số lượng yêu cầu.",
+    disambiguation:
+      "Đối với bộ phận cố định đối diện với dao quay, xem [Đe gỗ Chipper](/products/wood-chipper-anvils) .",
+  },
+  {
+    id: "wood-chipper-anvils",
+    seoDescription:
+      "Thay dao cố định cố định đối diện với dao băm đang di chuyển. Đe máy băm gỗ có chiều dài 185–400 mm, có khe lắp tùy chỉnh.",
+    name: "Dao đế máy băm gỗ",
+    fullName: "Đe và dao đối cho máy băm gỗ",
+    category: "wood_chipper",
+    sector: "wood",
+    categoryDisplay: "Dao phản công & đe",
+    image: "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+    imageDimensions: {
+      width: 1920,
+      height: 1439,
+      smallerWidths: [320, 480, 640],
+    },
+    specificationImageDimensions: {
+      width: 1920,
+      height: 1440,
+      smallerWidths: [320, 480, 640],
+    },
+    badge: "Bộ phù hợp",
+    badgeColor: "blue",
+    gallery: [
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-00.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-01.webp",
+      "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+    ],
+    description:
+      "Đe dăm gỗ thay thế D2 , Cr12MoV , cải tiến A8 hoặc 42CrMo. Cấu hình cạnh làm việc tùy chỉnh và khe lắp phù hợp với bộ phận ban đầu.",
+    link: "/products/wood-chipper-anvils",
+    isFeatured: true,
+    compatibleMachines: [
+      "Bandit",
+      "Vermeer",
+      "Morbark",
+      "Timberwolf",
+      "Schliesing",
+      "Greenmech",
+      "Jensen",
+      "Jenz",
+      "Eschlböck",
+      "Forst",
+    ],
+    compatibleMachinesIntro:
+      "Nhận một chiếc đe máy băm thay thế có cạnh làm việc, các khe cố định và bề mặt tiếp xúc mà máy của bạn cần. Sureay cung cấp các tùy chọn vật liệu đã được tôi cứng và hồ sơ tùy chỉnh. Chia sẻ bản vẽ hoặc mẫu của bạn để báo giá đe, với dao di chuyển có sẵn dưới dạng các mục riêng biệt. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
+    components: [
+      {
+        id: "chipper-anvil-edge",
+        tag: "Cạnh cố định",
+        title: "Nhiều lựa chọn thép cho các cạnh cố định",
+        description:
+          "Sureay cung cấp đe D2 , Cr12MoV , A8 và 42CrMo đã được sửa đổi, cho phép xác định vật liệu thay thế xung quanh cặp dao hiện có của máy băm và các điều kiện mài mòn.",
+      },
+      {
+        id: "chipper-anvil-adjustment",
+        tag: "Cách Lắp",
+        title: "Các cạnh làm việc và mặt ngồi được xác định",
+        description:
+          "Chiều dài đe được liệt kê trải dài từ 185–400 mm, với chiều dài tùy chỉnh lên tới 600 mm. Sureay tạo ra các cạnh cố định và các bề mặt định vị theo bản vẽ cho vỏ máy băm hiện có của bạn.",
+      },
+      {
+        id: "chipper-anvil-pair",
+        tag: "Cặp thay thế",
+        title: "Khe lắp cho hệ thống điều chỉnh hiện có",
+        description:
+          "Cấu hình lắp có rãnh có sẵn cho các cụm lắp ghép được điều chỉnh bằng miếng chêm, với vị trí khe và kích thước thân được làm theo bản vẽ đe ban đầu.",
+        relatedBladeIds: ["wood-chipper-blades"],
+      },
+    ],
+    specs: [
+      {
+        label: "Kích cỡ",
+        value:
+          "Chiều dài được liệt kê là 185–400 mm; chiều dài tùy chỉnh lên tới 600 mm",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Dao cố định cố định đối diện với dao băm chuyển động",
+      },
+      {
+        label: "Vật liệu",
+        value: "D2 , Cr12MoV , A8 hoặc 42CrMo được sửa đổi",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Các lỗ có rãnh với khoảng hở dao có thể điều chỉnh bằng chêm",
+      },
+      {
+        label: "độ cứng",
+        value: "HRC 54–60, được làm cứng hoàn toàn",
+      },
+      {
+        label: "Hình học cạnh",
+        value: "Góc xiên đơn, 30°–37°",
+      },
+      {
+        label: "Sự song song",
+        value: "±0,05 mm trên chiều dài lưỡi dao",
+      },
+      {
+        label: "Làm sắc nét lại",
+        value:
+          "Đã được làm cứng hoàn toàn; 5–10 chu kỳ mài lại, có thể bị mài mòn và chiều cao đe còn lại",
+      },
+    ],
+    dimensionLabels: {
+      col0: "Chipper OEM / Model",
+      col1: "Chiều dài (mm)",
+      col2: "Chiều rộng (mm)",
+      col3: "Độ dày (mm)",
+      caption:
+        "* Kích thước đe thay thế OEM tiêu chuẩn. Các lỗ lắp có rãnh được gia công bằng máy CNC theo mẫu điều chỉnh khe hở OEM chính xác. Bộ lưỡi + đe phù hợp có sẵn cho mọi kích cỡ. Chiều dài tùy chỉnh lên tới 600 mm.",
+    },
+    standardDimensions: [
+      {
+        itemNo: "SR006201",
+        spec: 'Bandit 12" / 15" / Bandit hùng mạnh',
+        od: "185",
+        id: "75",
+        thickness: "10",
+      },
+      {
+        itemNo: "SR006202",
+        spec: 'Bandit 18" / 19" / 1290 / 1590',
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006203",
+        spec: "Vermeer BC1200 / BC1500",
+        od: "200",
+        id: "80",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006204",
+        spec: "Vermeer BC1800 / BC2000",
+        od: "260",
+        id: "100",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006205",
+        spec: "Morbark 2 / 5 / 7 / 12 / 13",
+        od: "265",
+        id: "95",
+        thickness: "12",
+      },
+      {
+        itemNo: "SR006206",
+        spec: "Morbark 40/36 / 50/48",
+        od: "400",
+        id: "100",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006207",
+        spec: "Timberwolf 150 / 190 / 230",
+        od: "230",
+        id: "80",
+        thickness: "16",
+      },
+      {
+        itemNo: "SR006208",
+        spec: "Schliesing 400/500/550/600/660",
+        od: "260",
+        id: "80",
+        thickness: "20",
+      },
+      {
+        itemNo: "SR006209",
+        spec: "Greenmech / Jensen / Forst",
+        od: "Mỗi bản vẽ OEM",
+        id: "Per OEM Drawing",
+        thickness: "Mỗi bản vẽ OEM",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Đe và dao đối cho máy băm gỗ",
+      heroAlt:
+        "Đe băm gỗ hình chữ nhật có ba lỗ cố định và cạnh làm việc trên mặt đất",
+      sizeRange: "185–400 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "D2 , Cr12MoV , A8 hoặc 42CrMo được sửa đổi",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Dao đếm cố định dành cho máy băm gỗ",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value:
+            "Chiều dài được liệt kê là 185–400 mm; chiều dài tùy chỉnh lên tới 600 mm",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Dao cố định cố định đối diện với dao băm chuyển động",
+        },
+        {
+          label: "Vật liệu",
+          value: "D2 , Cr12MoV , A8 hoặc 42CrMo được sửa đổi",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Các lỗ có rãnh với khoảng hở dao có thể điều chỉnh bằng chêm",
+        },
+        {
+          label: "độ cứng",
+          value: "HRC 54–60, được làm cứng hoàn toàn",
+        },
+        {
+          label: "Hình học cạnh",
+          value: "Góc xiên đơn, 30°–37°",
+        },
+        {
+          label: "Sự song song",
+          value: "±0,05 mm trên chiều dài lưỡi dao",
+        },
+        {
+          label: "Làm sắc nét lại",
+          value:
+            "Đã được làm cứng hoàn toàn; 5–10 chu kỳ mài lại, có thể bị mài mòn và chiều cao đe còn lại",
+        },
+      ],
+      specificationImage: {
+        src: "/images/products/wood-chipper-blades/wood-chipper-anvil-02.webp",
+        alt: "Hai con dao quầy của máy băm gỗ hiển thị các lỗ vát và lỗ cố định đối diện",
+      },
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho đe dăm của bạn",
+        description:
+          "Bao gồm model máy băm và số sê-ri, vị trí đe, bản vẽ hoặc mẫu và số lượng yêu cầu.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+    relatedBladeIds: ["wood-chipper-blades"],
+    offers: {
+      lowPrice: 25,
+      highPrice: 250,
+    },
+    faqs: {
+      technical: [
+        {
+          question:
+            "Đe băm gỗ có tác dụng gì và nó có phải là dao phản biện không?",
+          answer:
+            "Cái đe cung cấp cạnh cố định mà dao băm chuyển động cắt vào. Dao cố định và dao giường có thể đề cập đến cùng một vị trí, tùy thuộc vào máy. Sử dụng sơ đồ các bộ phận để xác định cạnh cố định và cách lắp đặt nó trước khi đặt hàng theo tên.",
+        },
+        {
+          question:
+            "Tại sao khả năng cắt vẫn kém sau khi thay dao chuyển động?",
+          answer:
+            "Dao chuyển động vẫn hoạt động dựa vào cạnh cố định hiện có. Việc làm tròn, hư hỏng hoặc vị trí lắp đặt bị thay đổi ở đe có thể ảnh hưởng đến mối quan hệ cắt của chúng. So sánh cả hai bộ phận và tình trạng lắp đặt của chúng, sau đó sử dụng quy trình của nhà sản xuất máy băm để đánh giá khe hở. Một con dao chuyển động mới không phục hồi được bề mặt cố định đã bị mài mòn.",
+        },
+        {
+          question: "Điều gì nên hướng dẫn lựa chọn thép đe?",
+          answer:
+            "So sánh vật liệu hiện tại, độ mòn của cạnh và bất kỳ hư hỏng cục bộ nào với cấu hình nạp gỗ và dao chuyển động. Quyết định về vật liệu phải giải quyết được tình trạng quan sát được trong khi vẫn giữ được mặt cắt góc xiên và thân máy cần thiết. Phân biệt sự hao mòn dần dần với hư hỏng do va đập trước khi lựa chọn trong số các phương án thép được liệt kê.",
+        },
+        {
+          question:
+            "Một cái đe đã mòn có thể xoay để lộ ra một cạnh khác không?",
+          answer:
+            "Có, nếu đe được thiết kế với một cạnh có thể sử dụng khác và hướng lắp đặt đó cho phép. Kiểm tra bản vẽ để biết mặt ngồi và các yêu cầu điều chỉnh. Một số mặt của đe hình chữ nhật có thể định vị hoặc đỡ nó mà không đóng vai trò là các cạnh làm việc.",
+        },
+        {
+          question: "Tôi có thể đặt hàng đe riêng với dao băm được không?",
+          answer:
+            "Đúng. Chiếc đe có thể được cung cấp dưới dạng thay thế riêng lẻ hoặc đi kèm với [Lưỡi Chipper Gỗ](/products/wood-chipper-blades) . Giữ hai bản vẽ và số lượng riêng biệt. Kích thước và tình trạng của dao chuyển động được giữ lại vẫn phù hợp vì đe mới phải chiếm vị trí dự định của nó trong cặp cắt hiện có.",
+        },
+        {
+          question: "Tôi cần những chi tiết gì để nhận được báo giá đe dăm gỗ?",
+          answer:
+            "Gửi mẫu máy băm và số sê-ri, bản vẽ đe hoặc số bộ phận, số lượng và gỗ bạn xử lý. Đối với cụm lắp ráp được điều chỉnh bằng miếng chêm, hãy hiển thị khoảng cách giữa các rãnh, mặt tựa, cách sắp xếp miếng chêm và vị trí cạnh gia công so với dao chuyển động. Đánh dấu bất kỳ kích thước nào bị thay đổi do mài mòn hoặc mài lại.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Bao gồm mô hình máy băm và sê-ri, bản vẽ đe, mẫu khe lắp, mặt làm việc và chi tiết dao.",
+    rfqPlaceholder:
+      "Model máy băm và số sê-ri, vị trí đe, bản vẽ hoặc mẫu và số lượng yêu cầu.",
+    disambiguation:
+      "Đối với các dao được gắn vào trống hoặc đĩa quay, xem [Lưỡi Chipper Gỗ](/products/wood-chipper-blades) .",
+  },
+  {
+    compatibleMachinesIntro:
+      "Nhận các loại dao đáy thay thế cho máy cuộn cuộn máy xén của bạn, bao gồm các thiết kế cốc, hai cạnh và vòng có thể thay thế. Gửi cho Sureay bản vẽ hoặc mẫu của bạn để báo giá về cấu hình mặt bích, lỗ khoan và mặt cắt mà nhu cầu lắp ráp hiện tại của bạn cần.",
+    id: "slitter-rewinder-bottom-knives",
+    seoDescription:
+      "Dao đáy cốc, hai cạnh và vòng có thể thay thế dành cho máy cuộn giấy, đường kính ngoài 70–300 mm. Chỉ định lỗ khoan có khóa, mặt bích hoặc lưỡi cắt cacbua.",
+    name: "Dao dưới cho máy xẻ cuộn và cuộn lại",
+    fullName:
+      "Dao dưới cho máy xẻ cuộn và cuốn lại, loại hình chén, hai lưỡi hoặc gắn hợp kim",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Dao dưới cho máy xẻ cuộn và cuộn lại",
+    image:
+      "/images/products/slitter-detail/slitter-rewinder-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Dao đáy thay thế cho máy cuộn giấy. Thiết kế dạng cốc, hai cạnh và đầu bằng cacbua, với các lỗ, mặt bích và chiều rộng tùy chỉnh để vẽ.",
+    link: "/products/slitter-rewinder-bottom-knives",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "OD 70–300 mm",
+      },
+      {
+        label: "Vật liệu",
+        value:
+          "52100, D2 , M2 HSS , PM HSS , hợp kim cacbua vonfram hoặc WC-Co trên thân thép",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Máy cuộn giấy và các dây chuyền chuyển đổi web khác",
+      },
+      {
+        label: "Hồ sơ",
+        value: "Cốc, cạnh đôi hoặc vòng cắt có thể thay thế",
+      },
+      {
+        label: "Tùy chọn cacbua",
+        value: "Cấu trúc nghiêng và khảm cho cạnh làm việc",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Lắp mặt bích, lỗ khoan có khóa hoặc lỗ trục trơn",
+      },
+      {
+        label: "Hoàn thiện mặt",
+        value: "Đánh bóng gương",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao đáy tua lại máy xén | Cốc & Cạnh đôi",
+      sizeRange: "OD 70–300 mm",
+      heroAlt: "Dao đáy cuộn tròn có nhiều mặt bích và lỗ lắp",
+      specificationImage: {
+        src: "/images/products/slitter-detail/slitter-rewinder-bottom-knives-detail.webp",
+        alt: "Cận cảnh các dao đáy cuốn cuộn có mặt bích được khoan và lõm",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "flange",
+          tabLabel: "Mặt bích & cạnh đôi",
+          title: "Dao đáy hai cạnh và gắn mặt bích",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Gắn hoặc cạnh",
+            "Thẩm quyền giải quyết",
+          ],
+          rows: [
+            ["SR001211", "105 × 80 × 15 mm", "mặt bích", "Chuỗi chiều DIENES"],
+            ["SR001212", "130 × 90 × 20 mm", "mặt bích", "Chuỗi chiều DIENES"],
+            ["SR001213", "190 × 138 × 15 mm", "Cạnh đôi", "Tidland TID131393"],
+            ["SR001214", "130 × 100 × 30 mm", "Cạnh đôi", "Tidland TID133503"],
+            ["SR001215", "250 × 188 × 15 mm", "Cạnh đôi", "Tidland TID131395"],
+          ],
+        },
+        {
+          id: "tipped",
+          tabLabel: "Cạnh cacbua",
+          title: "Dao đáy có lưỡi cắt cacbua",
+          columns: [
+            "Mã sản phẩm",
+            "Kích thước (OD × ID × W)",
+            "Kết cấu",
+            "Thẩm quyền giải quyết",
+          ],
+          rows: [
+            [
+              "SR001561",
+              "90.81 × 60.00 × 12.70 mm",
+              "cacbua nghiêng",
+              "Dusenbery 783533",
+            ],
+          ],
+        },
+        {
+          id: "keyed",
+          tabLabel: "Núi rãnh then",
+          title: "Dao đáy có rãnh then",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Cách Lắp"],
+          rows: [
+            ["SR001571", "70 × 45 × 10 mm", "Dòng rãnh then 10 mm"],
+            ["SR001572", "80 × 50 × 10 mm", "Dòng rãnh then 10 mm"],
+            ["SR001573", "108 × 80 × 20 mm", "Dòng rãnh then 10 mm"],
+          ],
+        },
+        {
+          id: "additional-rewinder-knives",
+          tabLabel: "Kích thước dao tua lại bổ sung",
+          title: "Kích thước dao tua lại bổ sung",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Loại Dao"],
+          rows: [
+            ["SR001845", "250 × 188 × 25 mm", "Dao đáy tua lại"],
+            ["SR001846", "254 × 195 × 50 mm", "Dao đáy tua lại"],
+            ["SR001847", "250 × 140 × 20 mm", "Dao đáy tua lại"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "OD 70–300 mm",
+        },
+        {
+          label: "Vật liệu",
+          value:
+            "52100, D2 , M2 HSS , PM HSS , hợp kim cacbua vonfram hoặc WC-Co trên thân thép",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Máy cuộn giấy và các dây chuyền chuyển đổi web khác",
+        },
+        {
+          label: "Hồ sơ",
+          value: "Cốc, cạnh đôi hoặc vòng cắt có thể thay thế",
+        },
+        {
+          label: "Tùy chọn cacbua",
+          value: "Cấu trúc nghiêng và khảm cho cạnh làm việc",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Lắp mặt bích, lỗ khoan có khóa hoặc lỗ trục trơn",
+        },
+        {
+          label: "Hoàn thiện mặt",
+          value: "Đánh bóng gương",
+        },
+      ],
+    },
+    compatibleMachines: [
+      "DIENES",
+      "Tidland",
+      "Mario Cotta",
+      "Jagenberg",
+      "Valmet",
+      "Voith",
+      "Dusenbery",
+      "Cameron",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Tùy chọn lưỡi gia công thép và cacbua",
+        description:
+          "Sureay cung cấp thép, cacbua rắn và dao đáy có lưỡi cacbua, mang đến cho các nhà sản xuất giấy nhiều lựa chọn về vật liệu và kết cấu tiên tiến cho các cụm máy cuộn hiện có của họ.",
+      },
+      {
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Thiết kế cốc, hai cạnh và vòng có thể thay thế",
+        description:
+          "Dao dạng cốc, dao định hình hai lưỡi và vòng cắt có thể thay thế hiện có sẵn với các bề mặt gia công hoàn thiện, hỗ trợ thay thế thân dao cụ thể hoặc vòng cắt mà quá trình lắp ráp của bạn yêu cầu.",
+      },
+      {
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Giao diện gắn tùy chỉnh cho bộ tua lại",
+        description:
+          "Mặt bích, lỗ có khóa, lỗ trơn và biên dạng cắt có thể được thực hiện theo bản vẽ hoặc mẫu của bạn, hỗ trợ các đơn đặt hàng thay thế cho bộ tua lại hiện có và cụm dao cũ hơn.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Con dao đáy thay thế nào phù hợp với máy cuộn cuộn máy xén của tôi?",
+          answer:
+            "Xác định kiểu máy hoặc tham chiếu bộ phận, sau đó so sánh đường kính ngoài, lỗ khoan, chiều rộng, chi tiết mặt bích và lỗ cố định với cụm đã lắp đặt. Dao dưới, dao dưới và dao cái là tên gọi chung cho phần dưới của cặp rạch cắt. Hồ sơ hoạt động và cách bố trí lắp đặt phù hợp chính xác hơn tên gọi.",
+        },
+        {
+          question:
+            "Có thể cung cấp dao đáy tùy chỉnh cho máy cuộn cũ hơn mà không thay thế dao trên không?",
+          answer:
+            "Đúng. Sureay có thể biến con dao phía dưới thành một bản vẽ hoặc mẫu trong khi vẫn giữ lại con dao phía trên có thể sử dụng được. Xác định lỗ khoan, mặt bích, chiều rộng làm việc và biên dạng cắt, đồng thời bao gồm các kích thước, tình trạng và lịch sử mài lại của dao trên. Những chi tiết này thiết lập vị trí làm việc của dao dưới trong cụm hiện có.",
+        },
+        {
+          question:
+            "Dao đáy cốc, dao hai cạnh và dao đáy vòng có thể thay thế khác nhau như thế nào?",
+          answer:
+            "Dao cốc sử dụng thân có hình dạng để định vị cạnh làm việc của nó. Dao hai lưỡi cung cấp hai mặt cắt làm việc, trong khi cụm vòng có thể thay thế sẽ tách vòng cắt khỏi giá đỡ của nó. Chọn kết cấu theo yêu cầu của giá đỡ được lắp đặt. Đối với trạm được thiết kế xung quanh một số vị trí cắt trên một thân máy, xem [Dao đáy nhiều rãnh](/products/groove-bottom-knives) .",
+        },
+        {
+          question:
+            "Dao đáy tua cuộn nên sử dụng thép, cacbua nguyên khối hay cạnh cacbua?",
+          answer:
+            "Để cắt giấy, hãy bắt đầu với cấu trúc dao hiện có và giữ lại dao phía trên. Lưỡi làm việc cacbua đáng được đánh giá khi độ mòn dần dần dẫn đến thay đổi dao; chip định kỳ hoặc hư hỏng liên hệ, hãy gọi để kiểm tra cặp và hỗ trợ trước. Thân cacbua và thép nguyên khối có vòng cắt cacbua có cấu trúc khác nhau, do đó vẫn giữ được hình dạng lắp đặt và làm việc cần thiết khi so sánh các giải pháp thay thế.",
+        },
+        {
+          question: "Tại sao mép giấy vẫn kém sau khi thay dao đáy?",
+          answer:
+            "Dao trên được giữ lại, độ ổn định của đầu kẹp, tình trạng bề mặt làm việc và cài đặt rạch vẫn có thể ảnh hưởng đến mép giấy. Kiểm tra cả hai bộ phận của cặp và mặt lắp của chúng, bao gồm mọi hình dạng bị thay đổi do mài lại. So sánh cùng loại giấy ở cài đặt bình thường giúp phân biệt dao thay thế với các điều kiện khác trong trạm cắt.",
+        },
+        {
+          question:
+            "Khi nào có thể mài lại dao phía dưới của cuộn cuộn thay vì thay thế?",
+          answer:
+            "Việc mài lại có thể được xem xét đối với thiết kế dao đáy mà hình học làm việc của nó có thể được phục hồi trong phạm vi các kích thước còn lại cho phép. Đánh giá bề mặt làm việc bị hư hỏng và mối quan hệ của nó với dao trên so với bản vẽ ban đầu. Dao dạng cốc và vòng cắt có thể thay thế yêu cầu phải kiểm tra hình dạng và dung sai riêng trước khi quyết định giữa việc mài lại và thay thế.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "rotary-slitter-knives-paper",
+      "groove-bottom-knives",
+      "bottom-grooved-anvil-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Nhận các loại dao xẻ rãnh thay thế cho máy xẻ rãnh máy in hoặc máy dán thư mục flexo của bạn, với các đường cung, lỗ lắp và biên dạng cắt tùy chỉnh. Gửi cho Sureay một bản vẽ hoặc mẫu để báo giá về dao nam, dao đếm và miếng đệm phù hợp.",
+    id: "corrugated-slotter-knives",
+    seoDescription:
+      "Dao hình cung trơn hoặc có răng cưa và dao phản diện dạng cái để xẻ rãnh dạng sóng. Đặt hàng các lưỡi thay thế được thực hiện theo chiều rộng khe và bản vẽ lắp đặt của bạn.",
+    name: "Dao xẻ rãnh thùng carton sóng",
+    fullName: "Dao đực và dao cái xẻ rãnh thùng carton sóng",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Dao xẻ rãnh thùng carton sóng",
+    image: "/images/products/slitter-detail/box-slotting-knives-white.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Dao xẻ rãnh nam và nữ thay thế cho máy đóng hộp sóng. Vòng cung trơn hoặc răng cưa, dao phản lực và các mẫu gắn tùy chỉnh để vẽ.",
+    link: "/products/corrugated-slotter-knives",
+    specs: [
+      {
+        label: "Vật liệu",
+        value:
+          "D2 , M2 HSS , 9CrSi , 9Mn2V , 52100 hoặc dao đếm có đầu bằng cacbua",
+      },
+      {
+        label: "Ứng dụng",
+        value:
+          "Khe rãnh dạng sóng trên máy dán tài liệu flexo và máy xẻ rãnh máy in",
+      },
+      {
+        label: "Độ cứng điển hình",
+        value: "D2 58–62 HRC · M2 62–65 HRC · Lưỡi gia công cacbua 89–92 HRA",
+      },
+      {
+        label: "Lưỡi nam",
+        value:
+          "Vòng cung trơn hoặc răng cưa, có sẵn các đoạn đường khâu và góc",
+      },
+      {
+        label: "hội nữ",
+        value: "Hai nửa con dao phản đòn có miếng đệm phù hợp",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Lỗ tròn, lỗ chìm hoặc khe điều chỉnh vòng cung",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Dao xẻ rãnh carton sóng | Dao đực và dao cái",
+      sizeRange: "Dòng hồ quang R105 – R406 mm",
+      heroAlt:
+        "Các bộ phận của máy xẻ rãnh sóng hình vòng cung có lỗ lắp tròn và khe dài",
+      specificationImage: {
+        src: "/images/products/slitter-detail/box-slotting-knives-detail-white.webp",
+        alt: "Chi tiết các đoạn rãnh cong thể hiện các lỗ cố định tròn và rãnh điều chỉnh vòng cung",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "male",
+          tabLabel: "Lưỡi nam",
+          title: "Lưỡi máy đánh bạc nam",
+          columns: [
+            "Mã sản phẩm",
+            "Bên ngoài R × Bên trong r × T",
+            "Góc cung",
+            "Bờ rìa",
+          ],
+          rows: [
+            ["SR001601", "105 × 58 × 5 mm", "Để vẽ", "Đồng bằng hoặc răng cưa"],
+            [
+              "SR001602",
+              "113 × 63.5 × 7.5 mm",
+              "Để vẽ",
+              "Đồng bằng hoặc răng cưa",
+            ],
+            ["SR001603", "115 × 58 × 8 mm", "Để vẽ", "Đồng bằng hoặc răng cưa"],
+            ["SR001604", "168.7 × 120.3 × 8 mm", "36.2°", "Để vẽ"],
+            ["SR001605", "213.5 × 130 × 7.5 mm", "20.5°", "Để vẽ"],
+            ["SR001606", "213.5 × 130 × 7.5 mm", "72°", "Để vẽ"],
+            ["SR001607", "212 × 159 × 10 mm", "60°", "Để vẽ"],
+            ["SR001608", "281.5 × 237.5 × 7.2 mm", "88°", "Để vẽ"],
+            ["SR001609", "406 × 316 × 7.9 mm", "Để vẽ", "Để vẽ"],
+          ],
+        },
+        {
+          id: "female",
+          tabLabel: "Dao cái",
+          title: "Dao truy cập nữ",
+          columns: [
+            "Mã sản phẩm",
+            "Cấu hình",
+            "Kích thước",
+            "Gắn kết hoặc tham khảo",
+          ],
+          rows: [
+            [
+              "SR001610",
+              "Dao truy cập đơn giản",
+              "Phạm vi OD 90–450 mm",
+              "Gắn và độ dày để vẽ",
+            ],
+            [
+              "SR001611",
+              "Dao phản lực chia đôi",
+              "Phạm vi OD 90–450 mm",
+              "Nửa dưới trơn, miếng đệm để vẽ",
+            ],
+            [
+              "SR001612",
+              "Bộ dưới có đầu bằng cacbua",
+              "Để phù hợp với khe và bản vẽ",
+              "Xác nhận trục dưới và lưỡi trên",
+            ],
+          ],
+        },
+      ],
+    },
+    compatibleMachines: [
+      "BOBST",
+      "Martin",
+      "EMBA",
+      "Mitsubishi EVOL",
+      "Isowa",
+      "Göpfert",
+      "MarquipWardUnited",
+      "TCY",
+      "Shinko",
+      "Dongfang",
+    ],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Vật liệu được lựa chọn theo vị trí dao nam và nữ",
+        description:
+          "Sureay cung cấp dao xẻ rãnh bằng thép và dao đếm có đầu bằng cacbua, cho phép xác định riêng các bộ phận nam và nữ cho vật liệu và kết cấu mà bộ phận xẻ rãnh của bạn yêu cầu.",
+      },
+      {
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Vòng cung trơn và răng cưa có gắn tùy chỉnh",
+        description:
+          "Cung phẳng và cung có răng cưa, đoạn ghép và đoạn góc có sẵn với các lỗ tròn, lỗ chìm hoặc khe điều chỉnh được làm cho đầu xẻ rãnh hiện có.",
+      },
+      {
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao nam, dao nữ và miếng đệm phù hợp",
+        description:
+          "Đặt hàng thay thế các cung đực, nửa dao phản đòn cái và các miếng đệm phù hợp riêng lẻ hoặc cùng nhau, với mỗi bộ phận được xác định cho các bộ phận bạn dự định giữ lại.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Dao xẻ rãnh thay thế phù hợp như thế nào với máy chuyển hộp?",
+          answer:
+            "Xác định trạm máy in-khe hoặc trạm dán thư mục flexo và liệu bạn cần một vòng cung nam, dao cố định nữ hay miếng đệm. So sánh hình dạng vòng cung, độ dày, kiểu lắp và tay lắp đặt với bộ phận hiện có. Dao xẻ rãnh tạo thành các khe nắp trong quá trình chuyển đổi hộp; [lưỡi ghi-máy xén](/products/corrugated-slitter-scorer-blades) xẻ ván theo chiều dọc ở đầu khô của máy gấp nếp và sử dụng hình dạng khác nhau. Đối với các rãnh trên bảng xám được sử dụng để làm các hộp cứng, xem [Dao tạo rãnh chữ V cho hộp cacbua](/products/box-slotting-knives) .",
+        },
+        {
+          question: "Sự khác biệt giữa dao slotter nam và nữ là gì?",
+          answer:
+            "Vòng cung đực đi vào cụm dao cái tạo thành rãnh bảng. Hai mặt quầy nữ và miếng đệm của họ thiết lập sự mở đầu hợp tác. Đơn đặt hàng thay thế phải xác định thành phần nào đang được thay đổi và kích thước của các bộ phận được giữ lại, do đó, lỗ ren dạng lỗ đực và lỗ dạng lỗ cái vẫn được xác định là một tổ hợp hoạt động.",
+        },
+        {
+          question: "Nên chọn lưỡi xẻng nam trơn hay răng cưa?",
+          answer:
+            "Để thay thế tương tự, hãy giữ lại dạng cạnh trơn hoặc có răng cưa được sử dụng bởi đầu xẻ rãnh đã lắp đặt. Việc thay đổi hình dạng cạnh yêu cầu kiểm tra cung đực với lỗ cái, thông số kỹ thuật của bảng và yêu cầu về chất lượng khe. Chỉ định dạng cạnh dự định trên bản vẽ để việc thay thế không được xác định chỉ bằng kích thước cung.",
+        },
+        {
+          question: "Tại sao khe tôn lại bị rách mép hoặc bề rộng không đều?",
+          answer:
+            "Các mép rãnh bị rách hoặc sự thay đổi chiều rộng có thể liên quan đến các mặt cắt bị mòn hoặc cách các đầu đực và đầu cái chạy với nhau. Kiểm tra mép trong, cả hai mặt quầy trong, miếng đệm, căn chỉnh đầu và độ đảo so với yêu cầu thiết lập của máy. So sánh lỗi giữa các vị trí khe trước khi quyết định loại dao hoặc bộ phận hỗ trợ nào cần thay thế.",
+        },
+        {
+          question:
+            "Khi nào nên cân nhắc sử dụng dao xẻ rãnh cái có đầu bằng cacbua?",
+          answer:
+            "Hãy cân nhắc sử dụng dao cố định có đầu bằng cacbit khi việc mài mòn định kỳ của các mặt cắt dạng cái là vấn đề thay thế chính, sau khi kiểm tra độ thẳng hàng của đầu, độ đảo và khe hở tiếp xúc. Giữ hình dạng của lưỡi dao đực và lỗ cái phù hợp với bộ lắp ráp ban đầu. So sánh kiểu mài mòn của dao thép hiện tại và điều kiện vận hành khi chỉ định giải pháp thay thế có đầu cacbua.",
+        },
+        {
+          question:
+            "Có thể tạo các vòng cung máy đánh bạc tùy chỉnh từ bản vẽ hoặc mẫu không?",
+          answer:
+            "Đúng. Sureay có thể tái tạo các cung với bán kính bên trong và bên ngoài, góc cung, độ dày, hình dạng cạnh và các lỗ hoặc khe lắp được chỉ định. Một mẫu giúp xác định biên dạng và bàn tay được cài đặt; kích thước mới dự định sẽ tính đến độ mòn trên mẫu. Xác định cụm cái giao phối và những đoạn cung nào được yêu cầu.",
+        },
+        {
+          question: "Dao xọc nam và nữ có phải được thay thế cùng nhau không?",
+          answer:
+            "Chúng có thể được đặt hàng riêng khi các bộ phận được giữ lại vẫn có thể sử dụng được và đã biết hình dạng khớp nối của chúng. Kiểm tra cả mặt quầy cái và miếng đệm cũng như vòng cung nam. Việc thay thế cần có mối quan hệ chính xác với lỗ cái, bên cạnh việc phải khớp với kiểu lắp.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "corrugated-slitter-scorer-blades",
+      "rotary-slitter-knives-paper",
+      "tungsten-carbide-slitter-knives",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Nhận các lưỡi cắt ống hút giấy thay thế có lỗ, độ dày và biên dạng cạnh tùy chỉnh cho máy cắt dây quấn của bạn. Chia sẻ bản vẽ hoặc mẫu của bạn với Sureay để nhận báo giá về các tùy chọn vật liệu lưỡi và lớp phủ cho trạm của bạn.",
+    id: "paper-straw-slitting-blades",
+    name: "Dao cắt ống hút giấy",
+    fullName: "Dao cắt ống hút giấy",
+    category: "slitter_knives",
+    sector: "converting",
+    categoryDisplay: "Dao cắt ống hút giấy",
+    image: "/images/products/slitter-detail/paper-straw-slitting-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "dao tròn thay thế để cắt và cắt ống hút giấy. Tùy chọn cacbua hoặc M2 HSS , lỗ khoan và biên dạng tùy chỉnh cũng như lớp phủ được chọn cho dây chuyền.",
+    link: "/products/paper-straw-slitting-blades",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "OD tiêu chuẩn 88–100 mm",
+      },
+      {
+        label: "Vật liệu",
+        value: "Cacbua hạt mịn, M2 HSS hoặc zirconia, tùy theo trạm",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cắt và cắt rơm giấy trên dây quấn",
+      },
+      {
+        label: "Lớp phủ tùy chọn",
+        value: "DLC, TiN, TiAlN hoặc CrN theo lưỡi dao và ứng dụng",
+      },
+    ],
+    detailLayout: {
+      seoTitle: "Lưỡi cắt giấy rơm | Dao thay thế",
+      sizeRange: "OD tiêu chuẩn 88–100 mm",
+      heroAlt: "Dao cắt giấy rơm hình tròn có lỗ ở giữa nhỏ",
+      specificationImage: {
+        src: "/images/products/slitter-detail/paper-straw-slitting-blades-detail.webp",
+        alt: "Lưỡi cắt tròn mỏng thể hiện các mặt và cạnh cắt được đánh bóng",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "straw",
+          tabLabel: "Dao giấy rơm",
+          title: "Dao giấy rơm",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Ga tàu"],
+          rows: [
+            ["SR001651", "100 × 15 × 0.20 mm", "Viền rơm bằng giấy"],
+            ["SR001652", "100 × 15 × 0.30 mm", "Viền rơm bằng giấy"],
+            ["SR001653", "100 × 16 × 0.30 mm", "Viền rơm bằng giấy"],
+            ["SR001654", "100 × 45 × 0.30 mm", "Viền rơm bằng giấy"],
+          ],
+        },
+        {
+          id: "additional-straw-knives",
+          tabLabel: "Kích thước dao rơm bổ sung",
+          title: "Kích thước dao rơm bổ sung",
+          columns: ["Mã sản phẩm", "Kích thước (OD × ID × W)", "Ứng dụng"],
+          rows: [
+            ["SR001848", "88 × 16 × 0.26 mm", "Cắt ống hút giấy"],
+            ["SR001849", "89 × 15 × 0.30 mm", "Cắt ống hút giấy"],
+            ["SR001850", "90 × 15 × 0.30 mm", "Cắt ống hút giấy"],
+            ["SR001851", "100 × 15 × 0.15 mm", "Cắt ống hút giấy"],
+            ["SR001852", "100 × 45 × 0.20 mm", "Cắt ống hút giấy"],
+          ],
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "OD tiêu chuẩn 88–100 mm",
+        },
+        {
+          label: "Vật liệu",
+          value: "Cacbua hạt mịn, M2 HSS hoặc zirconia, tùy theo trạm",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt và cắt rơm giấy trên dây quấn",
+        },
+        {
+          label: "Lớp phủ tùy chọn",
+          value: "DLC, TiN, TiAlN hoặc CrN theo lưỡi dao và ứng dụng",
+        },
+      ],
+    },
+    compatibleMachines: ["Jota", "KETE"],
+    components: [
+      {
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Tùy chọn vật liệu cacbua, HSS và gốm",
+        description:
+          "Các tùy chọn cacbua hạt mịn, M2 HSS và zirconia phụ thuộc vào trạm cho bạn lựa chọn vật liệu lưỡi để cắt rơm định hình, với cấu trúc được chỉ định cho trạm cắt hiện tại của bạn.",
+      },
+      {
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Các cạnh cắt tùy chỉnh và lớp phủ tùy chọn",
+        description:
+          "Sureay cung cấp các biên dạng cắt tùy chỉnh với các lớp phủ DLC, TiN, TiAlN hoặc CrN tùy chọn được chọn cho vật liệu lưỡi cắt và ứng dụng, do đó hình dạng cạnh và cấu hình bề mặt có thể được chỉ định riêng.",
+      },
+      {
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Dao thay thế để cắt rơm thành hình",
+        description:
+          "Dao thay thế hình tròn được chế tạo để cắt tỉa và cắt ống hút giấy đã định hình, có lỗ khoan, phần lưỡi dao và các cạnh làm việc được xác định cho bộ phận giữ trên dây quấn của bạn.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Sureay có thể làm một con dao thay thế cho trạm cắt ống hút giấy của tôi không?",
+          answer:
+            "Đúng. Một bản vẽ hoặc mẫu có thể xác định lỗ khoan, độ dày và biên dạng cắt mà bộ phận giữ cắt hoặc cắt của bạn yêu cầu. Bao gồm vật liệu lưỡi dao hiện tại, độ dày thành ống hút và kết cấu giấy. Những chi tiết này giúp phân biệt các loại dao có chung đường kính ngoài nhưng phục vụ các cách cắt khác nhau trên dây chuyền sản xuất rơm.",
+        },
+        {
+          question: "Lưỡi cắt ống hút giấy có giống như dao xén giấy không?",
+          answer:
+            "Lưỡi cắt ống hút giấy cắt hoặc cắt ống đã định hình trên dây chuyền sản xuất. [Dao rạch giấy](/products/rotary-slitter-knives-paper) chia một mạng giấy phẳng liên tục thành các dải hẹp hơn. Xác định xem bộ phận được yêu cầu có hoạt động trên màng đến hay ống hút thành phẩm hay không, sau đó xác định giá đỡ và biên dạng cắt của nó.",
+        },
+        {
+          question:
+            "Lựa chọn chất liệu dao bằng giấy rơm hướng dẫn sử dụng lưỡi dao như thế nào?",
+          answer:
+            "Sử dụng trạm cắt và tình trạng của lưỡi cắt đã sử dụng làm điểm bắt đầu. So sánh riêng biệt độ mòn dần dần của cạnh, vết sứt mẻ và cặn bám dính, sau đó đánh giá sự thay đổi của vật liệu so với vấn đề quan sát được. Xác định rõ hình dạng lỗ khoan, phần lưỡi và giá đỡ cần thiết khi xem xét giải pháp thay thế cho lưỡi hiện tại.",
+        },
+        {
+          question: "Vì sao đầu ống hút giấy bị rách, méo mó?",
+          answer:
+            "Kiểm tra lưỡi cắt, sự tích tụ chất kết dính và giá đỡ ống cùng với số lớp giấy, độ dày thành và tình trạng kết dính. So sánh vết cắt được thực hiện bằng lưỡi dao sạch với lưỡi cắt bị ảnh hưởng ở cài đặt máy bình thường. Điều này mang lại một bức tranh hữu ích hơn về các điều kiện cắt hơn là chỉ đánh giá độ sắc nét.",
+        },
+        {
+          question:
+            "Điều gì nên hướng dẫn lựa chọn lớp phủ khi chất kết dính tích tụ trên dao cắt ống hút?",
+          answer:
+            "Chọn lớp phủ cùng với vật liệu lưỡi dao, hệ thống kết dính và mẫu cặn tại trạm cắt. Ghi lại nơi xảy ra sự tích tụ và so sánh nó với lưỡi dao ban đầu trong điều kiện sản xuất bình thường. Hình ảnh lưỡi cắt đã qua sử dụng và mẫu cắt giúp xác định yêu cầu về bề mặt khi xem xét thay đổi lớp phủ.",
+        },
+        {
+          question: "Khi nào nên thay lưỡi cắt ống hút giấy?",
+          answer:
+            "Thay lưỡi dao khi lưỡi dao bị hư hỏng hoặc tiếp tục bị mài mòn cản trở việc cắt đầu sạch theo yêu cầu hoặc khi các kích thước còn lại của lưỡi dao nằm ngoài phạm vi làm việc được chỉ định của máy. Kiểm tra dư lượng chất kết dính và giá đỡ ống khi so sánh các mẫu đã cắt trong cùng điều kiện sản xuất. Thay thế cơ sở dựa trên tình trạng lưỡi cắt và chất lượng cắt được yêu cầu thay vì theo khoảng thời gian cố định theo lịch.",
+        },
+      ],
+      company: [],
+    },
+    relatedBladeIds: [
+      "tungsten-carbide-slitter-knives",
+      "rotary-slitter-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    compatibleMachinesIntro:
+      "Đặt hàng các loại dao đáy nhiều rãnh được chế tạo theo mẫu khe của bạn, với bước răng tùy chỉnh, cách bố trí lưỡi dao gia công và cách lắp trục. Gửi cho Sureay bản vẽ và lịch trình chiều rộng của bạn để nhận báo giá về cấu hình một mảnh hoặc vòng chia.",
+    id: "groove-bottom-knives",
+    seoDescription:
+      "Vòng cắt nhiều rãnh để cắt cắt. Khoảng cách rãnh từ 5 mm và OD lên tới 406 mm, với cấu hình một mảnh và tách rời được thực hiện theo bản vẽ.",
+    name: "Dao dưới nhiều rãnh",
+    fullName: "Dao dưới nhiều rãnh và vòng dao cắt",
+    category: "slitter_knives",
+    sector: "paper",
+    categoryDisplay: "Dao dưới nhiều rãnh",
+    image: "/images/products/slitter-detail/groove-bottom-knives.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 640],
+    },
+    description:
+      "Dao đáy nhiều rãnh tùy chỉnh để cắt cuộn cuộn lại. Vòng cắt thay thế có bước rãnh, chiều rộng, lỗ khoan và kết cấu đặc hoặc tách được chỉ định.",
+    link: "/products/groove-bottom-knives",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "OD lên tới 406 mm",
+      },
+      {
+        label: "Tùy chọn vật liệu",
+        value: "Cấu trúc Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS hoặc cacbua",
+      },
+      {
+        label: "bước rãnh",
+        value: "Từ 5mm; số bước và rãnh thay đổi tùy theo cấu hình dao",
       },
       {
         label: "Kết cấu",
         value: "Vòng liền khối hoặc vòng chẻ hai mảnh",
       },
       {
+        label: "Các cạnh cắt",
+        value: "Vai làm việc đơn hoặc đôi",
+      },
+      {
+        label: "Cách Lắp",
+        value:
+          "Lỗ trơn cho trục không khí có thể mở rộng hoặc vít định vị cho trục đặc",
+      },
+      {
         label: "Ứng dụng",
-        value: "Cắt trượt nhiều khổ giấy, bìa, màng, lá kim loại và băng dính",
+        value: "Cắt giấy, bìa, màng và giấy bạc với nhiều vị trí khe",
       },
     ],
-    dimensionLabels: {
-      col0: "Cấu hình",
-      col1: "Đường kính ngoài",
-      col2: "Lắp đặt",
-      col3: "Bước rãnh / Lưỡi",
-      caption:
-        "* Bước rãnh, số rãnh, bề rộng vòng và lỗ lắp được chế tạo theo bảng khổ của bạn — sản phẩm này không có bảng kích thước tiêu chuẩn. Hãy gửi các khổ bạn chạy, loại trục và đặc tả dao trên đi kèm, hoặc một bản vẽ, chúng tôi sẽ mài vị trí rãnh tương ứng.",
-    },
-    standardDimensions: [
-      {
-        spec: "Vòng nhiều rãnh — lỗ trơn",
-        od: "Tới Φ406 (16 inch)",
-        id: "Trục hơi nở",
-        thickness: "Từ bước 5 mm",
-      },
-      {
-        spec: "Vòng nhiều rãnh — vít hãm",
-        od: "Tới Φ406 (16 inch)",
-        id: "Trục dưới dạng đặc",
-        thickness: "Từ bước 5 mm",
-      },
-      {
-        spec: "Vòng chẻ hai mảnh",
-        od: "Tới Φ406 (16 inch)",
-        id: "Trục hơi hoặc trục đặc",
-        thickness: "Từ bước 5 mm",
-      },
-      {
-        spec: "Vòng nhiều rãnh hai lưỡi",
-        od: "Tới Φ406 (16 inch)",
-        id: "Trục hơi hoặc trục đặc",
-        thickness: "Lưỡi cắt ở cả hai phía",
-      },
-      {
-        spec: "Vòng cắt một rãnh",
-        od: "Theo bản vẽ",
-        id: "Trục hơi hoặc trục đặc",
-        thickness: "Một vị trí cố định",
-      },
-      {
-        spec: "Vòng đệm trơn",
-        od: "Theo bản vẽ",
-        id: "Trục hơi hoặc trục đặc",
-        thickness: "Không rãnh — định khoảng cách",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Việc chọn mác vật liệu cho vòng nhiều rãnh do mức độ mài mòn của vật liệu quyết định, bởi lưỡi rãnh mòn ở nơi vật liệu đi qua chứ không phải nơi dao va đập. Vòng lại là một thân lớn và tốn kém để bỏ đi, nên những mác cho phép mài lại nhiều lần thường có bài toán kinh tế tốt hơn.",
-      rows: [
+    detailLayout: {
+      seoTitle: "Dao đáy nhiều rãnh | Nhẫn cắt đáy",
+      sizeRange: "OD lên tới 406 mm",
+      technicalSpecs: [
         {
-          grade: "Cr12MoV / SKD-11",
-          hardness: "HRC 58–62",
-          bestFor:
-            "Giấy, bìa và màng thông dụng — đặc tả tiêu chuẩn và cân bằng tốt nhất giữa tuổi thọ và khả năng mài lại",
-          tradeoff:
-            "Bị bản gắn mảnh hợp kim vượt qua trên vật liệu tráng phủ nặng hoặc nhiều phụ gia khoáng",
+          label: "Kích cỡ",
+          value: "OD lên tới 406 mm",
         },
         {
-          grade: "9CrSi / 65Mn",
-          hardness: "HRC 56–60",
-          bestFor:
-            "Vật liệu mềm không tráng, giấy tissue và tốc độ dây chuyền thấp hơn, nơi giá đơn vị quyết định",
-          tradeoff:
-            "Lưỡi rãnh tròn cạnh sớm hơn, nên khoảng cách giữa các lần mài lại sẽ ngắn hơn",
+          label: "Tùy chọn vật liệu",
+          value: "Cấu trúc Cr12MoV , SKD11 , 9CrSi , 65Mn , HSS hoặc cacbua",
         },
         {
-          grade: "HSS",
-          hardness: "HRC 62–64",
-          bestFor:
-            "Tốc độ dây chuyền cao và lịch sản xuất hỗn hợp, nơi vòng phải giữ lưỡi qua các lô dài",
-          tradeoff:
-            "Đắt hơn thép dụng cụ; vẫn mòn trên vật liệu nhiều phụ gia khoáng",
+          label: "bước rãnh",
+          value: "Từ 5mm; số bước và rãnh thay đổi tùy theo cấu hình dao",
         },
         {
-          grade: "Carbide-tipped",
-          hardness: "HRA 89–91 tại mảnh",
-          bestFor:
-            "Vật liệu mài mòn, tráng phủ, nhiều phụ gia và ép lớp, nơi rãnh thép dụng cụ mòn hết chỉ sau vài tuần",
-          tradeoff: "Giá cao nhất, và mảnh sẽ mẻ thay vì mòn nếu trục bị đảo",
+          label: "Kết cấu",
+          value: "Vòng liền khối hoặc vòng chẻ hai mảnh",
+        },
+        {
+          label: "Các cạnh cắt",
+          value: "Vai làm việc đơn hoặc đôi",
+        },
+        {
+          label: "Cách Lắp",
+          value:
+            "Lỗ trơn cho trục không khí có thể mở rộng hoặc vít định vị cho trục đặc",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt giấy, bìa, màng và giấy bạc với nhiều vị trí khe",
         },
       ],
-      outro:
-        "Nếu bạn chưa chắc chắn, hãy gửi loại vật liệu và khoảng thời gian mài lại hiện tại của bạn, chúng tôi sẽ đưa ra khuyến nghị dựa trên mức tiêu hao thực tế của bạn thay vì một bảng chung chung.",
+      heroAlt: "Vòng dao đáy nhiều rãnh hiển thị các rãnh mài song song",
+      specificationImage: {
+        src: "/images/products/slitter-detail/groove-bottom-knives-detail.webp",
+        alt: "Vòng nhiều rãnh hiển thị lỗ khoan bậc, rãnh và chiều rộng tổng thể của thân",
+      },
+      inlineRfq: {
+        title: "Cần một kích thước không được liệt kê?",
+        description:
+          "Gửi bản vẽ, mẫu bị mòn hoặc chỉ mẫu máy của bạn. Chúng tôi trả lời kèm theo báo giá trong vòng 24 giờ.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+      dimensionTables: [
+        {
+          id: "multi-groove",
+          tabLabel: "Dao dưới nhiều rãnh",
+          title: "Kích thước dao đáy nhiều rãnh",
+          columns: [
+            "Mã sản phẩm",
+            "Đường kính ngoài (mm)",
+            "Tùy chọn lỗ khoan (mm)",
+            "Tùy chọn chiều rộng (mm)",
+          ],
+          rows: [
+            ["SR001701", "150", "60 / 80 / 90", "39 / 49 / 50"],
+            ["SR001702", "130", "100 / 110", "50 / 100"],
+            ["SR001703", "150", "120 / 130", "50 / 100"],
+            ["SR001704", "180", "150", "50 / 100"],
+          ],
+        },
+        {
+          id: "multi-groove-configurations",
+          tabLabel: "Cấu hình vòng & trục",
+          title: "Cấu hình vòng & trục",
+          columns: [
+            "Mã sản phẩm",
+            "Đường kính ngoài (mm/in)",
+            "Cấu hình",
+            "Trục/Gắn",
+            "Cao độ / cạnh làm việc",
+          ],
+          rows: [
+            [
+              "SR001853",
+              "Tới Φ406 (16 inch)",
+              "Vòng nhiều rãnh - lỗ trơn",
+              "Trục không khí có thể mở rộng",
+              "Bước rãnh từ 5 mm",
+            ],
+            [
+              "SR001854",
+              "Tới Φ406 (16 inch)",
+              "Vòng nhiều rãnh - vít định vị",
+              "Trục đáy vững chắc",
+              "Bước rãnh từ 5 mm",
+            ],
+            [
+              "SR001855",
+              "Tới Φ406 (16 inch)",
+              "Vòng chia hai mảnh",
+              "Trục không khí hoặc rắn",
+              "Bước rãnh từ 5 mm",
+            ],
+            [
+              "SR001856",
+              "Tới Φ406 (16 inch)",
+              "Nhẫn nhiều rãnh hai lưỡi",
+              "Trục không khí hoặc rắn",
+              "Cắt cạnh cả hai bên",
+            ],
+            [
+              "SR001857",
+              "Để vẽ",
+              "Vòng cắt rãnh đơn",
+              "Trục không khí hoặc rắn",
+              "Một vị trí cố định",
+            ],
+            [
+              "SR001858",
+              "Để vẽ",
+              "Vòng đệm trơn",
+              "Trục không khí hoặc rắn",
+              "Không có rãnh - đặt khoảng cách",
+            ],
+          ],
+        },
+      ],
     },
+    compatibleMachines: ["Kampf", "Göbel"],
     components: [
       {
-        id: "one-ring-many-widths",
-        tag: "THỜI GIAN ĐỔI LỆNH",
-        title: "Một vòng, nhiều vị trí cắt",
+        id: "selection-1",
+        tag: "Lựa chọn",
+        title: "Vai làm việc bằng thép và cacbua",
         description:
-          "Mỗi rãnh là một vị trí cắt sử dụng được, nên đổi khổ chỉ là đặt lại dao trên thay vì tháo trục và lắp lại bộ vòng đệm. Trên các dây chuyền thường xuyên đổi khổ đơn hàng, đây trước hết là sản phẩm về thời gian đổi lệnh, sau đó mới là vật tư tiêu hao.",
+          "Cấu trúc bằng thép và cacbua có sẵn dành cho dao đáy nhiều rãnh, mang lại cho bạn các tùy chọn vật liệu lưỡi làm việc được xác định trong khi vẫn giữ được hình dạng vòng mà trạm rạch của bạn yêu cầu.",
       },
       {
-        id: "ground-in-one-setup",
-        tag: "ĐỘ CHÍNH XÁC KÍCH THƯỚC",
-        title: "Toàn bộ rãnh được mài trong một lần gá",
+        id: "selection-2",
+        tag: "Cài đặt",
+        title: "Bố cục tùy chỉnh và bố cục tiên tiến",
         description:
-          "Vị trí rãnh được mài vào một thân duy nhất trong một lần gá, nên khổ cắt không thể lệch như khi người vận hành lắp lại bộ vòng đệm sai một milimét. Lỗ lắp và độ đảo được giữ theo cùng một đặc tả trên vòng nhiều rãnh, vòng một rãnh và vòng trơn, để một trục hỗn hợp vẫn xếp chồng đúng tâm.",
+          "Sureay tạo ra các mẫu rãnh, chiều rộng thân và bố cục vai làm việc đơn hoặc đôi để vẽ, cho phép các khối thay thế tái tạo các vị trí cắt theo lịch trình chiều rộng khe của bạn.",
       },
       {
-        id: "mounting-and-split",
-        tag: "PHƯƠNG ÁN LẮP ĐẶT",
-        title: "Trục hơi, trục đặc hoặc vòng chẻ",
+        id: "selection-3",
+        tag: "Ứng dụng",
+        title: "Thiết kế lắp một mảnh và tách rời",
         description:
-          "Lỗ trơn kẹp lên trục hơi nở; kiểu vít hãm bắt lên trục dưới dạng đặc. Vòng chẻ hai mảnh tháo ra được mà không phải rã cụm trục, điều mà trên máy khổ rộng biến một lần dừng theo kế hoạch thành một lần thay khi máy vẫn chạy.",
+          "Vòng chia một mảnh và hai mảnh có sẵn với các lỗ trơn cho trục không khí có thể mở rộng hoặc khóa vít cho trục đặc, được chỉ định để phù hợp với cách bố trí lắp đặt hiện có.",
       },
     ],
-    relatedBladeIds: [
-      "slitter-rewinder-bottom-knives",
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-    ],
-    rfqPlaceholder:
-      "Ví dụ: máy cuộn lại Kampf, trục hơi nở, vòng dưới Φ180 × bản rộng 100 mm, 12 rãnh bước 25 mm, lưỡi đơn. Cắt bìa tráng 120 g/m², 8 đường cắt, đổi khổ hai lần mỗi tuần. Cần 4 vòng và 2 vòng đệm trơn.",
     faqs: {
       technical: [
         {
-          question: "Dao dưới nhiều rãnh khác dao đe có rãnh ở điểm nào?",
+          question: "Kích thước nào xác định khối dao nhiều rãnh thay thế?",
           answer:
-            "Ở quy mô và mục đích. Dao đe có rãnh là một đĩa mang một đến ba rãnh, được mài theo biên dạng cặp cắt trượt của hãng máy và dùng chủ yếu trên dây chuyền màng, lá kim loại và băng dính — xem trang dao đe dưới có rãnh của chúng tôi cho sản phẩm đó. Vòng nhiều rãnh là một thân rộng hơn nhiều mang nhiều rãnh song song, và điểm mấu chốt là một vòng bao phủ nhiều vị trí cắt nên việc đổi khổ không cần thay lại dụng cụ. Nếu bạn đổi khổ thường xuyên, bạn cần vòng; nếu bạn chạy một khổ theo biên dạng đe của hãng máy, bạn cần đe.",
+            "Xác định các vị trí cắt, vị trí cạnh đầu tiên, chiều rộng tổng thể, đường kính ngoài, lỗ khoan và phương pháp khóa cùng nhau. Đe nhiều rãnh, khối dao và dao xẻ đáy mô tả thân cắt đáy, nhưng không thiết lập cách lắp đặt hoặc sắp xếp cạnh của nó. Xác định cả dao trên và phương pháp cắt: ống đỡ dao cạo có rãnh thực hiện một chức năng khác.",
+        },
+        {
+          question: "Nên xác định bước rãnh và vị trí lưỡi cắt như thế nào?",
+          answer:
+            "Cao độ là khoảng cách giữa các lưỡi cắt tương ứng trên các rãnh liền kề. Đánh dấu cạnh làm việc đầu tiên từ mốc đo trục chung, sau đó hiển thị các vị trí cắt còn lại và chiều rộng thân tổng thể. Chiều rộng mở rãnh là một phép đo riêng; nó không xác định khoảng cách giữa các cạnh cắt.",
         },
         {
           question:
-            "Bạn thực sự mài được bước rãnh bao nhiêu, và tôi đặc tả thế nào?",
+            "Sureay có thể tạo khối dao theo mẫu có chiều rộng khe tùy chỉnh không?",
           answer:
-            "Khoảng chia giữa các lưỡi — khoảng cách từ lưỡi cắt này sang lưỡi kế tiếp — hầu như luôn làm theo yêu cầu và có thể hẹp tới 5 mm (0,200 inch). Đừng đặc tả nó bằng một con số duy nhất: hãy gửi danh sách các khổ cắt bạn thực sự chạy, chúng tôi sẽ bố trí vị trí rãnh sao cho mọi khổ thông dụng của bạn đều rơi đúng vào một rãnh. Đó là khác biệt giữa một vòng bao phủ được lịch sản xuất của bạn và một vòng chỉ bao phủ một nửa rồi buộc bạn phải lắp bộ vòng đệm cho phần còn lại.",
+            "Đúng. Sureay có thể tạo bố cục rãnh, số lượng cạnh làm việc, chiều rộng thân và lắp trục vào bản vẽ của bạn. Chỉ định từng vị trí cắt từ cùng một mốc đo dọc trục và bao gồm dao trên cùng tương ứng. Xác định các cạnh cắt đang hoạt động trong mẫu khe dự định để khối thay thế tái tạo bố cục được yêu cầu.",
         },
         {
-          question: "Tôi nên đặt lỗ trơn hay vít hãm?",
+          question: "Khi nào nên chọn nhẫn chia đôi thay vì nhẫn nguyên khối?",
           answer:
-            "Điều đó theo trục dưới của bạn, không theo sở thích. Lỗ trơn kẹp lên trục hơi nở và là phương án đổi nhanh có trên hầu hết dây chuyền gia công hiện đại. Kiểu vít hãm bắt lên trục dưới dạng đặc và phổ biến trên máy đời cũ và dây chuyền bìa nặng. Hai loại không thay thế cho nhau — đặc tả lỗ lắp khác nhau — nên một vòng khoét cho hệ sai sẽ không ngồi đúng tâm và sẽ biểu hiện thành độ đảo tại vết cắt. Nếu chưa chắc, hãy chụp ảnh đầu trục với các vòng đang lắp.",
+            "Chọn theo cách bố trí trục và khả năng tiếp cận lắp đặt hoặc tháo dỡ có sẵn. Vòng phân chia có thể cung cấp khả năng tiếp cận ở nơi tổ hợp phù hợp với cấu trúc đó, trong khi các khớp nối và tính năng khóa của nó phải phù hợp với thiết kế hiện có. Giữ biên dạng cắt cần thiết, vị trí lắp lỗ khoan và lưỡi làm việc được xác định cho một trong hai tùy chọn.",
         },
         {
           question:
-            "Khổ cắt của tôi bắt đầu lệch dọc theo trục. Có phải do vòng dao không?",
+            "Tôi nên kiểm tra điều gì khi chất lượng khe thay đổi trên khối nhiều rãnh?",
           answer:
-            "Hãy kiểm tra độ đảo và cách xếp chồng vòng trước khi xét đến rãnh. Vị trí rãnh được mài trong một lần gá và không dịch chuyển, nên một vòng đã chuẩn khi lắp hiếm khi là nguồn gốc của việc khổ lệch dần. Nguyên nhân thường gặp là lỗ lắp ngồi trên trục đã mòn hoặc bẩn, hoặc vòng của nhiều nhà cung cấp bị trộn trên cùng một trục với đặc tả lỗ và mặt đầu hơi khác nhau, khiến một dao động nhỏ tích lũy thành sai lệch khổ đo được. Lưỡi rãnh mòn biểu hiện bằng mép cắt xấu đi và bụi tăng lên, chứ không phải bằng lệch khổ.",
+            "So sánh dao trên và vai làm việc tại từng vị trí cắt bị ảnh hưởng, bao gồm tình trạng của chúng, cách ghép vật liệu và hình học làm việc. Xem lại cách lắp, chuyển động của dao và bất kỳ thao tác mài nào trước đó dọc theo mẫu khe. Việc ghi lại vị trí nào gây ra lỗi giúp tập trung kiểm tra cặp dao liên quan và các điều kiện lắp ráp.",
+        },
+        {
+          question:
+            "Nên chọn vật liệu cho lưỡi làm việc như thế nào khi một số vị trí khe mòn nhanh hơn?",
+          answer:
+            "Đối với các dây quấn giấy, hãy so sánh các vai làm việc bị ảnh hưởng với các dao trên cùng của chúng trước khi thay đổi vật liệu. Tách biệt sự mài mòn dần dần khỏi phoi hoặc hư hỏng liên quan đến chuyển động của dao, hình học hoặc quá trình mài. Sau khi thiết lập cặp và điều kiện lắp đặt, hãy so sánh cấu hình đầu bằng thép hoặc cacbua hiện tại với kiểu mài mòn thực tế và yêu cầu sản xuất.",
+        },
+        {
+          question:
+            "Mã số Mục xác định điều gì khi đặt hàng một khối thay thế?",
+          answer:
+            "Mã số mặt hàng xác định hàng hoặc chuỗi danh mục được sử dụng làm tài liệu tham khảo cho đơn đặt hàng của bạn. Xác nhận lỗ khoan, chiều rộng thân, kiểu rãnh và dao trên đã chọn trên bản vẽ thứ tự; một số mục bao gồm các tùy chọn kích thước hoặc bố cục được tạo theo bản vẽ. Sử dụng tài liệu tham khảo mặt hàng cùng với bản vẽ đó và bản sửa đổi của nó để mua hàng lặp lại.",
         },
       ],
-      company: [
+      company: [],
+    },
+    relatedBladeIds: [
+      "bottom-grooved-anvil-knives",
+      "slitter-rewinder-bottom-knives",
+      "rotary-slitter-knives-paper",
+    ],
+  },
+  {
+    id: "stationary-scrap-shear-blades",
+    name: "Lưỡi máy cắt phế liệu cố định",
+    fullName: "Lưỡi dao cho máy cắt phế liệu kim loại dạng cổng cố định",
+    seoTitle: "Lưỡi dao cho máy cắt phế liệu kim loại dạng cổng cố định",
+    seoDescription:
+      "Đặt hàng các khối dao chuyển động gắn bu-lông và dao cố định cho máy cắt phế liệu cố định. Chọn thép 1.2746 hoặc 1.2767 và gửi bản vẽ lắp đặt của bạn.",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Lưỡi máy cắt phế liệu cố định",
+    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Giàn khoan thay thế và phế liệu cố định dao cắt thép bằng thép 1.2746 hoặc 1.2767. Dao di chuyển và dao cố định được thực hiện theo bản vẽ lắp đặt được chỉ định.",
+    link: "/products/stationary-scrap-shear-blades",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "260–550 mm",
+      },
+      {
+        label: "Tùy chọn vật liệu",
+        value: "Thép công cụ 1.2746 hoặc 1.2767",
+      },
+      {
+        label: "Vị trí dao",
+        value: "Dao cắt di chuyển và dao cố định",
+      },
+      {
+        label: "Cách Lắp",
+        value: "Khối dao gắn bu-lông",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Kéo cắt phế liệu cố định và kéo giàn",
+      },
+    ],
+    compatibleMachines: [
+      "Danieli Henschel",
+      "Metso-Lindemann",
+      "Lefort",
+      "Becker-Leimbach",
+    ],
+    compatibleMachinesIntro:
+      "Thay thế dao chuyển động và dao cố định trên máy cắt phế liệu cố định của bạn bằng khối dao vẽ từ Sureay . Đặt hàng riêng lẻ hoặc một bộ hoàn chỉnh bằng thép công cụ 1.2746 hoặc 1.2767 và yêu cầu báo giá cho việc lắp đặt của bạn. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
+    components: [
+      {
+        id: "stationary-scrap-shear-blades-1",
+        tag: "Ghế dao",
+        title: "Tùy chọn thép công cụ 1.2746 và 1.2767",
+        description:
+          "Sureay cung cấp các tùy chọn thép này cho các khối dao cắt phế liệu cố định, cho phép xác định yêu cầu vật liệu xung quanh nhiệm vụ phế liệu và mức độ hao mòn hoặc hư hỏng quan sát được trên các loại dao hiện có.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-2",
+        tag: "thuế phế liệu",
+        title: "Dao di chuyển và dao phản lực cố định",
+        description:
+          "Dao cắt và dao cố định thay thế có thể được cung cấp riêng lẻ hoặc theo bộ yêu cầu, với mỗi khối được xác định theo vị trí của nó trong cụm cắt.",
+      },
+      {
+        id: "stationary-scrap-shear-blades-3",
+        tag: "Sắp xếp dao",
+        title: "Khối tùy chỉnh cho Ghế dao hiện có",
+        description:
+          "Các khối dao được liệt kê có chiều dài từ 260–550 mm. Sureay tạo ra các hốc, mặt ngồi và mẫu bu lông cho bản vẽ của bạn, bao gồm các khối có cùng chiều dài và chiều rộng nhưng độ dày hoặc chi tiết lắp đặt khác nhau.",
+      },
+    ],
+    faqs: {
+      technical: [
         {
-          question: "Bạn cần gì để báo giá?",
+          question:
+            "Sureay có thể cung cấp một con dao cố định hoặc một bộ dao hoàn chỉnh không?",
           answer:
-            "Đường kính ngoài, lỗ lắp, bề rộng vòng, số rãnh và bước rãnh, loại trục (trục hơi nở hay trục đặc), đặc tả dao trên đi kèm, cùng loại vật liệu và tốc độ dây chuyền. Thông tin bổ sung hữu ích nhất là danh sách khổ sản xuất của bạn: nó cho phép chúng tôi bố trí vị trí rãnh theo lịch thực tế của bạn thay vì sao chép một bước rãnh. Bản vẽ hoặc một vòng đã mòn còn rút ngắn thêm việc báo giá; dựng lại kích thước từ mẫu là công việc thường ngày của chúng tôi.",
+            "Đúng. Dao cố định có thể được cung cấp riêng và dao di chuyển và dao cố định có thể được chỉ định thành một bộ hoàn chỉnh. Đối với một bộ, hãy xác định vị trí, bản vẽ và số lượng của từng khối. Đối với một lần thay thế duy nhất, hãy bao gồm các bộ phận được giữ lại để xác định mối quan hệ cắt và lắp của nó.",
+        },
+        {
+          question: "Sự khác biệt giữa dao chuyển động và dao đếm là gì?",
+          answer:
+            "Dao chuyển động di chuyển theo cơ chế cắt. Dao cố định cung cấp lưỡi cắt đối diện. Hình dạng thân, mặt lắp và hướng lắp đặt của chúng có thể khác nhau ngay cả khi kích thước danh nghĩa của chúng trông giống nhau. Xác định từng vị trí theo vị trí làm việc của nó để việc thay thế duy trì mối quan hệ cắt như dự kiến.",
         },
         {
           question:
-            "Bạn có cung cấp cả vòng một rãnh và vòng trơn hay chỉ vòng nhiều rãnh?",
+            "Nên chọn thép 1.2746 hay 1.2767 cho dao cắt phế liệu như thế nào?",
           answer:
-            "Cả ba, và chúng tôi khuyên nên mua cùng nhau. Vòng cắt một rãnh phụ trách các vị trí cố định, còn vòng trơn đóng vai trò đệm và đỡ vật liệu giữa các vị trí cắt. Vì được chế tạo theo cùng một đặc tả lỗ lắp và độ đảo, chúng xếp chồng mà không sinh dao động: trộn vòng của nhiều nhà cung cấp trên cùng một trục là nguyên nhân phổ biến và thực sự khó chẩn đoán gây sai lệch khổ cắt.",
+            "Sử dụng thông số kỹ thuật vật liệu hiện tại cùng với thành phần phế liệu, kích thước mặt cắt và lịch sử mài mòn của dao. Sự mài mòn dần dần, sứt mẻ cục bộ và biến dạng cạnh cho thấy các điều kiện khác nhau để xem xét. Đánh giá các yêu cầu về vật liệu và độ cứng cùng với khả năng hỗ trợ dao và khả năng cắt trước khi chọn giải pháp thay thế cho thép hiện có.",
         },
         {
-          question: "Có mài lại được không và mài được bao nhiêu lần?",
+          question:
+            "Làm cách nào để xác định khối dao cắt phế liệu cố định khi chiều dài và chiều rộng khớp nhau?",
           answer:
-            "Có, và mài lại là yếu tố trung tâm của bài toán kinh tế vì vòng là một thân lớn để bỏ đi. Số chu kỳ phụ thuộc vào chiều sâu rãnh và lượng vật liệu mỗi lần mài lấy đi; vòng thép dụng cụ thường cho vài chu kỳ trước khi hình học rãnh không còn khôi phục được. Chúng tôi mài lại vòng do chúng tôi chế tạo và trong hầu hết trường hợp cả vòng không phải của chúng tôi, miễn là thân vòng còn đúng tâm và lỗ lắp không hư hại — và chúng tôi sẽ nói thẳng khi một vòng không đáng để làm.",
+            "Kiểm tra độ dày trước tiên, tiếp theo là mẫu bu lông, các hốc và các bề mặt định vị. Ví dụ: danh mục bao gồm các khối 525 × 200 mm với độ dày khác nhau. Sử dụng các kích thước đầy đủ, số hạng mục và bản vẽ cùng nhau để xác nhận khối cho vị trí di chuyển hoặc cố định chính xác.",
+        },
+        {
+          question:
+            "Một con dao cắt phế liệu cố định đã bị mòn có thể được mài lại hoặc mài lại không?",
+          answer:
+            "Có thể lập chỉ mục nếu thiết kế cho phép cạnh không sử dụng được đặt đúng vị trí. Có thể mài lại nếu khối có thể phục hồi chiều cao cắt và chỗ ngồi đã chỉ định trong giới hạn của máy. Đánh giá lưỡi cắt và bề mặt thân giúp xác định vị trí của khối trước khi đưa nó trở lại hoạt động.",
+        },
+        {
+          question:
+            "Dao cắt phế liệu cố định có thể thay thế dao cắt thép cá sấu không?",
+          answer:
+            "Không. Máy cắt giàn cố định sử dụng đế dao và cơ cấu cắt khác với máy cắt cá sấu hàm bản lề. Đối với dao trên và dao dưới trên máy hàm bản lề, xem [Alligator dao cắt thép](/products/metal-shear-knives) .",
+        },
+        {
+          question:
+            "Làm cách nào để tôi nhận được báo giá cho dao cắt phế liệu cố định tại giàn cố định?",
+          answer:
+            "Gửi kiểu máy và phiên bản, phần phế liệu và bản vẽ hoặc số bộ phận cho mỗi khối. Liệt kê các vị trí di chuyển và cố định riêng biệt với số lượng. Bao gồm độ dày toàn khối, các hốc và mốc lắp đặt khi một số vị trí sử dụng đường viền thân tương tự nhau.",
         },
       ],
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi mô hình cắt cố định và số sê-ri, vị trí lưỡi dao, bản vẽ dao đầy đủ, vật liệu phế liệu và số lượng.",
+    rfqPlaceholder:
+      "Gửi mô hình cắt cố định và số sê-ri, vị trí lưỡi dao, bản vẽ dao đầy đủ, vật liệu phế liệu và số lượng.",
+    relatedBladeIds: ["metal-shear-knives", "guillotine-shear-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Cấu hình dao thay thế đã công bố được hiển thị để tham khảo về kích thước. Mỗi dòng có nhiều mẫu mã và kiểu lắp đặt. Cung cấp bản vẽ đầy đủ trước khi đặt hàng; đây không phải là những lưỡi dao có thể hoán đổi cho nhau hoặc tiêu chuẩn kích thước toàn ngành.",
+    },
+    detailLayout: {
+      heroAlt: "Lưỡi cắt phế liệu cố định có hai lỗ lắp",
+      sizeRange: "260–550 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "1,2746/1,2767; xử lý nhiệt được chỉ định",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Kéo cắt phế liệu cố định và kéo giàn",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "260–550 mm",
+        },
+        {
+          label: "Tùy chọn vật liệu",
+          value: "Thép công cụ 1.2746 hoặc 1.2767",
+        },
+        {
+          label: "Vị trí dao",
+          value: "Dao cắt di chuyển và dao cố định",
+        },
+        {
+          label: "Cách Lắp",
+          value: "Khối dao gắn bu-lông",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Kéo cắt phế liệu cố định và kéo giàn",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Họ tham khảo",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+          ],
+          rows: [
+            [
+              "SR003601",
+              "Danieli Henschel · cấu hình dao",
+              "525",
+              "200",
+              "100",
+            ],
+            ["SR003602", "Metso-Lindemann · cấu hình dao", "525", "200", "80"],
+            ["SR003603", "Becker-Leimbach · cấu hình dao", "518", "200", "120"],
+            ["SR003604", "Danieli Henschel · dao phay", "260", "200", "100"],
+            ["SR003605", "Lefort · cấu hình dao", "550", "200", "100"],
+            ["SR003606", "Lefort · cấu hình dao", "510", "140", "50"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Gửi mô hình cắt cố định và số sê-ri, vị trí lưỡi dao, bản vẽ dao đầy đủ, vật liệu phế liệu và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
-    id: "slitter-rewinder-bottom-knives",
-    name: "Dao Dưới Cho Máy Cắt Cuộn Lại",
-    fullName:
-      "Dao dưới hợp kim cứng cho dây chuyền cắt và cuộn lại giấy và màng",
-    category: "slitter_knives",
-    sector: "paper",
-    categoryDisplay: "Dao Cắt Dọc",
-    image:
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-    badge: "Đánh Bóng Gương",
-    badgeColor: "blue",
-    gallery: [
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-01.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-02.webp",
-      "/images/products/slitter-rewinder-bottom-knives/slitter-rewinder-bottom-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Dải dao dưới và vòng dao máy cắt cuộn lại ở bốn đường kính",
-      "Cặp dao dưới hợp kim cứng cho thấy lỗ lắp và các lỗ bắt vít",
-      "Vòng dao dưới máy cuộn lại với mặt làm việc đánh bóng gương",
-    ],
+    id: "flying-shear-blades",
+    name: "Dao máy cắt bay",
+    fullName: "Lưỡi dao cắt đầu đuôi và dao cắt bay cho dây chuyền cán thép",
+    seoTitle: "Lưỡi dao cắt bay | Chế tạo theo yêu cầu cho dây chuyền cán thép",
+    category: "shear_blades",
+    sector: "metal",
+    categoryDisplay: "Dao máy cắt bay",
+    image: "/images/products/shear-detail/crop-flying-shear-blades.webp",
+    imagePending: false,
+    imageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 600,
+      height: 600,
+      smallerWidths: [320, 480],
+    },
     description:
-      "Dao dưới hợp kim cứng nguyên khối và gắn mảnh hợp kim cho máy cắt cuộn lại giấy tốc độ cao. Mặt đánh bóng gương, cắt không ba via và giảm bụi trong cuộn. Kích thước tồn kho Φ250–Φ254 mm, dày từ 15 đến 50 mm, lỗ lắp theo máy. Phù hợp Beck, Bielomatik, Jagenberg, ECH Will, Maxson, Masson Scott, Pasaban và các nền tảng cuộn lại điện khác.",
-    fullDescription:
-      "Dao dưới trên máy cắt cuộn lại là nửa cố định của cặp dao cắt trượt, và nó được làm cứng hơn một cách có chủ đích. Chênh lệch độ cứng giữa dao trên và dao dưới không phải ngẫu nhiên: đó chính là cơ chế giữ cho vết cắt sạch. Khi hai dao có độ cứng gần nhau, vùng cắt bị biến dạng thay vì được cắt trượt, và kết quả là mép cắt có ba via cùng bụi bị cuốn vào cuộn.\n\nDao dưới Sureay được cung cấp ở dạng hợp kim cứng vonfram nguyên khối và dạng gắn mảnh hợp kim, với mặt đánh bóng gương và lưỡi sắc, định vị chính xác. Ở bản gắn mảnh, hợp kim được cố định bằng quy trình lắp nóng có kiểm soát để các mảnh giữ chặt khi chạy tốc độ cao thay vì lỏng ra trong vận hành, và các mảnh mòn có thể thay mà không phải bỏ thân dao.\n\n## Vì sao bụi trong cuộn là vấn đề của dao dưới\n\nNgười vận hành thường truy bụi ở phía trước: bộ làm sạch màng, thanh khử tĩnh điện, hút bụi. Nguồn gốc thường lại nằm ở chính vết cắt. Dao dưới có lưỡi đã tròn cạnh hoặc mặt đã mất độ bóng sẽ ngừng cắt trượt và chuyển sang nghiền, và sợi giấy bị nghiền trở thành bụi lơ lửng cuốn thẳng vào cuộn, rồi xuất hiện như lỗi gia công hai công đoạn sau đó. Nếu bụi tăng dần chứ không phải xuất hiện sau khi đổi loại giấy, dao dưới là thứ cần kiểm tra đầu tiên.\n\n## Vật liệu theo nền vật liệu cắt\n\nHợp kim cứng vonfram nguyên khối là lựa chọn có tuổi thọ dài nhất và là câu trả lời đúng cho vật liệu mài mòn và tráng phủ nặng. Bản gắn mảnh cho cân bằng chi phí – tuổi thọ tốt nhất với giấy thông thường, kèm ưu điểm thực tế là gắn lại được mảnh. Thép gió vẫn hợp lý cho lô ngắn trên vật liệu mềm và khi cần giá đơn vị thấp nhất.\n\n## Ứng dụng\n\nGiấy, màng, lá kim loại và các vật liệu cuộn tương tự trên nền tảng cắt – cuộn lại chạy điện: cắt cuộn, gia công cuộn và các dây chuyền cuộn lại giấy tráng và không tráng, bìa và vật liệu mềm nhẹ.\n\n## Chênh lệch độ cứng chính là toàn bộ cơ chế\n\nMột vết cắt trượt cần chênh lệch độ cứng để vẫn là cắt trượt. Khi dao trên và dao dưới có độ cứng gần nhau, vật liệu ở vùng cắt bị biến dạng thay vì tách sạch, và kết quả là mép cắt có ba via cùng sợi bị nghiền trở thành bụi trong cuộn. Dao dưới cứng hơn giữ hình học lưỡi ổn định trong khi dao trên mềm hơn nhận phần mòn — đó cũng là lý do dao trên là dao phải thay thường xuyên hơn, và là lý do thay cả hai trong cùng một chu kỳ gây lãng phí dụng cụ còn dùng được. Làm cho hai độ cứng bằng nhau là sai sót đặc tả phổ biến và tốn kém, đáng kiểm tra trên bất kỳ dây chuyền nào có chất lượng cắt suy giảm sau khi thay dụng cụ.\n\n## Bụi trong cuộn thường bắt đầu từ vết cắt\n\nNgười vận hành truy bụi ở phía trước — bộ làm sạch màng, thanh khử tĩnh điện, hút bụi — trong khi nguồn gốc thường là chính vết cắt. Dao dưới có lưỡi tròn cạnh, hoặc mặt đã mờ độ bóng, ngừng cắt trượt và chuyển sang nghiền; sợi bị nghiền cuốn thẳng vào cuộn và xuất hiện như lỗi hai công đoạn sau. Dấu hiệu nằm ở thời điểm: bụi tăng dần chỉ về phía dao, bụi xuất hiện sau khi đổi loại giấy chỉ về phía vật liệu. Hãy soi lưỡi dưới kính lúp và kiểm tra độ bóng mặt dao thay vì thử độ sắc bằng tay, vì độ bóng mặt suy giảm trước lưỡi và làm tăng bụi từ rất lâu trước khi ai đó cho rằng dao đã cùn.\n\n## Hợp kim nguyên khối hay gắn mảnh\n\nHợp kim cứng vonfram nguyên khối cho tuổi thọ dài nhất trên một con dao và là câu trả lời đúng cho vật liệu mài mòn và tráng phủ nặng, nhưng khi lưỡi hết thì con dao cũng hết. Bản gắn mảnh rẻ hơn, mỗi chu kỳ ngắn hơn và gắn lại được: miễn là thân dao thẳng, không đảo và các bệ hàn còn tốt, mảnh mòn được thay và dao trở lại làm việc. Khả năng gắn lại mảnh thường là yếu tố quyết định khi bài toán kinh tế giữa hai bên sát nhau. Ở bản gắn mảnh, các mảnh được lắp nóng trong điều kiện kiểm soát để giữ chặt ở tốc độ cuộn lại thay vì lỏng ra trong vận hành — thứ giới hạn tuổi thọ của một con dao gắn mảnh làm kém là chất lượng mối hàn, không phải mác hợp kim.\n\n## Chúng tôi cần gì để khớp với máy của bạn\n\nDao dưới luôn được chế tạo theo máy, nên danh sách nền tảng cuộn lại nêu trên là những gì chúng tôi gặp nhiều nhất, không phải giới hạn. Để báo giá, hãy gửi đường kính ngoài, lỗ lắp và độ dày của con dao bạn đang dùng, đặc tả dao trên tương ứng, vật liệu bạn đang cắt, tốc độ dây chuyền và số đường cắt. Nếu thiếu thông tin nào, hãy gửi con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình — chúng tôi thà dựng lại kích thước từ mẫu còn hơn báo giá dựa trên phỏng đoán. Dao được đóng gói riêng từng con, bảo vệ lưỡi và giấy VCI chống ăn mòn, đóng thùng gỗ với đường kính lớn, bởi một con dao dưới đến nơi với lưỡi bị sứt là vô dụng dù được chế tạo tốt đến đâu.",
-    link: "/products/slitter-rewinder-bottom-knives",
-    disambiguation:
-      "Đây là dao dưới dạng đĩa tròn làm việc thành cặp cắt trượt với dao trên trên dây chuyền cuộn lại. Nếu bạn cần đe phẳng để cắt ép, xem [Dao Đe Dưới Có Rãnh](/products/bottom-grooved-anvil-knives).",
-    compatibleMachines: [
-      "Beck",
-      "Bielomatik",
-      "Clark Aiken",
-      "DATM",
-      "Didde",
-      "ECH Will",
-      "Harris",
-      "Hamblett",
-      "Jagenberg",
-      "Langston",
-      "Lenox",
-      "Maxson",
-      "Miltex",
-      "Masson Scott",
-      "Pasaban",
-    ],
+      "dao cắt thép cắt và cắt tùy chỉnh dành cho máy cán. Dao thẳng hoặc định hình để cắt thanh nóng, nguội hoặc nguội, được sản xuất theo bản vẽ.",
+    link: "/products/flying-shear-blades",
     specs: [
       {
-        label: "Vật liệu",
-        value: "Hợp kim cứng vonfram nguyên khối / gắn mảnh hợp kim / thép gió",
+        label: "Kích cỡ",
+        value: "Thực hiện để vẽ",
       },
       {
-        label: "Đường kính ngoài",
-        value: "Φ250–Φ254 mm tiêu chuẩn",
+        label: "Hình dạng lưỡi",
+        value: "Các cạnh cắt thẳng hoặc định hình; thân dao bước",
       },
       {
-        label: "Độ dày",
-        value: "15 / 20 / 25 / 50 mm",
+        label: "Tùy chọn vật liệu",
+        value: "Thép công cụ gia công nóng hoặc thép công cụ hợp kim cao",
       },
       {
-        label: "Hoàn thiện bề mặt",
-        value: "Đánh bóng gương",
+        label: "nhiệm vụ cắt",
+        value: "Cấu hình cắt nóng, cắt nguội hoặc cắt thanh nguội",
       },
       {
-        label: "Nguyên tắc thiết kế",
-        value: "Dao dưới cứng hơn dao trên — kiểm soát ba via và bụi",
-      },
-      {
-        label: "Vật liệu cắt",
-        value: "Giấy, màng, lá kim loại và các vật liệu cuộn tương tự",
+        label: "Ứng dụng",
+        value: "Cắt đầu/đuôi và cắt chia trên kéo bay máy cán",
       },
     ],
-    dimensionLabels: {
-      col0: "STT",
-      col1: "ĐK ngoài ØD (mm)",
-      col2: "Lỗ lắp Ød (mm)",
-      col3: "Độ dày T (mm)",
-      caption:
-        "* Kích thước dao dưới tiêu chuẩn cho máy cuộn lại. Lỗ lắp, độ dày và hình học lưỡi được khớp theo máy — hãy gửi ĐK ngoài / ĐK trong / độ dày của con dao bạn đang dùng cùng đặc tả dao trên tương ứng.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "25",
-      },
-      {
-        spec: "2",
-        od: "Φ254",
-        id: "Φ195",
-        thickness: "50",
-      },
-      {
-        spec: "3",
-        od: "Φ250",
-        id: "Φ188",
-        thickness: "15",
-      },
-      {
-        spec: "4",
-        od: "Φ250",
-        id: "Φ140",
-        thickness: "20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Dao dưới luôn phải là nửa cứng hơn của cặp dao. Trong nguyên tắc đó, mác vật liệu được chọn theo mức độ mài mòn của vật liệu cắt và theo việc bạn có muốn thân dao gắn lại được mảnh hay không.",
-      rows: [
-        {
-          grade: "Hợp kim cứng vonfram nguyên khối",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Vật liệu mài mòn và tráng phủ nặng; khoảng thời gian giữa hai lần thay dài nhất",
-          tradeoff: "Giá đơn vị cao nhất, và bỏ cả con dao khi lưỡi đã hết",
-        },
-        {
-          grade: "Gắn mảnh hợp kim",
-          hardness: "HRA 89–91 tại mảnh",
-          bestFor:
-            "Giấy và bìa thông thường — cân bằng chi phí – tuổi thọ tốt nhất, gắn lại được mảnh",
-          tradeoff:
-            "Chất lượng mối hàn quyết định tuổi thọ; mảnh lắp kém sẽ lỏng khi chạy tốc độ",
-        },
-        {
-          grade: "Thép gió",
-          hardness: "62–64 HRC",
-          bestFor: "Lô ngắn, vật liệu mềm không tráng, giá đơn vị thấp nhất",
-          tradeoff:
-            "Lưỡi tròn cạnh nhanh ở tốc độ cuộn lại, và đó là nơi bụi trong cuộn bắt đầu",
-        },
-      ],
-      outro:
-        "Dù chọn mác nào, hãy giữ chênh lệch độ cứng với dao trên. Làm hai độ cứng bằng nhau là sai sót phổ biến và tốn kém: nó triệt tiêu cắt trượt và để bạn nghiền màng vật liệu.",
-    },
+    compatibleMachines: ["Danieli"],
+    compatibleMachinesIntro:
+      "Tìm nguồn cung cấp dao cắt thép cắt tùy chỉnh cho máy cán của bạn, bao gồm thân dao thẳng, dao định hình và dao bậc. Sureay cung cấp các tùy chọn thép công cụ gia công nóng và hợp kim cao; chia sẻ nhiệm vụ vẽ và cắt của bạn để có báo giá thay thế phù hợp. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
     components: [
       {
-        id: "hardness-differential",
-        tag: "CƠ HỌC CẮT TRƯỢT",
-        title: "Cố ý cứng hơn dao trên",
+        id: "flying-shear-blades-1",
+        tag: "Nhiệm vụ nhiệt",
+        title: "Vật liệu cắt thanh nóng, nguội và nguội",
         description:
-          "Dao dưới được đặc tả cứng hơn dao trên đi kèm một cách có chủ đích. Chênh lệch đó giữ cho cặp dao cắt trượt thay vì làm biến dạng màng vật liệu, và là nguyên nhân trực tiếp của mép cắt không ba via và lượng bụi cuốn vào cuộn thấp.",
+          "Các tùy chọn thép công cụ gia công nóng và hợp kim cao cho phép vật liệu dao được chỉ định cho sản phẩm cán và điều kiện nhiệt độ tại trạm cắt.",
       },
       {
-        id: "mirror-face-finish",
-        tag: "HOÀN THIỆN BỀ MẶT",
-        title: "Mặt làm việc đánh bóng gương",
+        id: "flying-shear-blades-2",
+        tag: "So khớp hồ sơ",
+        title: "Biên dạng phù hợp với bản vẽ để cắt thanh và mặt cắt",
         description:
-          "Mặt được đánh bóng nhả vật liệu thay vì kéo lê nó, giúp vết cắt sạch và giảm nhiệt ma sát tại chỗ cắt. Độ bóng mặt là thứ suy giảm sớm nhất trong vận hành và là thứ người vận hành kiểm tra muộn nhất — mặt bị mờ làm tăng bụi từ rất lâu trước khi lưỡi thực sự mòn.",
+          "Sureay chế tạo các lưỡi cắt thẳng và định hình, bao gồm cả thân dạng bậc và lưỡi cắt được định hình. Mặt cắt ngang phôi và hình học cắt được lắp đặt xác định đường viền lưỡi dao và các mốc lắp đặt cho từng vị trí dao.",
       },
       {
-        id: "hot-set-carbide",
-        tag: "KẾT CẤU",
-        title: "Mảnh hợp kim lắp nóng có kiểm soát",
+        id: "flying-shear-blades-3",
+        tag: "Điều kiện dịch vụ",
+        title: "Cặp dao tùy chỉnh để cắt và chia",
         description:
-          "Ở bản gắn mảnh, các mảnh được lắp nóng trong điều kiện kiểm soát để giữ chặt khi chạy tốc độ cao. Lợi ích thực tế là thân dao gắn lại được: mảnh mòn được thay và dao trở lại làm việc thay vì bị bỏ đi.",
+          "Các dao riêng lẻ và các cặp dao thay thế có thể được thực hiện theo các bản vẽ theo vị trí cụ thể để cắt đầu và đuôi hoặc cắt chia, với hướng và giao diện của mỗi dao được xác định cho tổ hợp hiện có.",
       },
     ],
-    relatedBladeIds: [
-      "bottom-grooved-anvil-knives",
-      "rotary-slitter-knives-paper",
-      "tungsten-carbide-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Ví dụ: máy cuộn lại Jagenberg, dao dưới Φ250 × Φ188 × 25 mm, ghép với dao trên Φ200. Cắt giấy tráng 120 g/m² ở 800 m/phút, 12 đường cắt. Có bụi trong cuộn và mép cắt hơi ba via.",
     faqs: {
       technical: [
         {
-          question: "Vì sao dao dưới phải cứng hơn dao trên?",
+          question:
+            "Sureay có thể chế tạo dao cắt thép bay tùy chỉnh cho máy cán hiện có không?",
           answer:
-            "Vì một vết cắt trượt cần chênh lệch độ cứng để vẫn là cắt trượt. Khi hai dao có độ cứng gần nhau, vật liệu ở vùng cắt bị biến dạng thay vì tách sạch, và bạn nhận được mép cắt có ba via cùng sợi bị nghiền trở thành bụi trong cuộn. Dao dưới cứng hơn giữ hình học lưỡi ổn định trong khi dao trên mềm hơn nhận phần mòn — đó cũng là lý do dao trên phải thay thường xuyên hơn. Làm hai độ cứng bằng nhau là sai sót phổ biến và tốn kém.",
+            "Đúng. Sureay thực hiện các thay thế thẳng, định hình và từng bước cho bản vẽ. Đối với thanh định hình hoặc dao cắt, đường viền làm việc, mặt chuẩn và tính năng lắp đặt được chỉ định cùng nhau. Sau đó, vật liệu có thể được chọn theo nhiệt độ và tải trọng cắt thực tế.",
+        },
+        {
+          question: "Dao cắt cây và dao cắt thép có giống nhau không?",
+          answer:
+            "Chúng chồng lên nhau khi một máy cắt bay cắt phần đầu hoặc đuôi của vật chuyển động. Cắt xén mô tả nơi cắt được thực hiện. Bay mô tả việc cắt phối hợp với vật chuyển động, cũng có thể được sử dụng để chia nó thành các chiều dài. Vị trí cắt và dao được lắp đặt xác định việc thay thế.",
         },
         {
           question:
-            "Tôi bị bụi trong cuộn thành phẩm. Nên kiểm tra ở đâu trước?",
+            "Điều gì thay đổi khi lựa chọn dao để cắt nóng và cắt lạnh?",
           answer:
-            "Ở chính vết cắt, trước khi xét bộ làm sạch màng và thanh khử tĩnh điện. Dao dưới có lưỡi tròn cạnh hoặc mặt mờ độ bóng ngừng cắt trượt và chuyển sang nghiền, và sợi bị nghiền đi thẳng vào cuộn — thường xuất hiện như lỗi hai công đoạn sau. Dấu hiệu nằm ở thời điểm: bụi tăng dần chỉ về phía dao, bụi xuất hiện sau khi đổi loại giấy chỉ về phía vật liệu. Hãy soi lưỡi dưới kính lúp và kiểm tra độ bóng mặt dao, không chỉ thử độ sắc bằng tay.",
-        },
-        {
-          question: "Tôi có thể đặt dao dưới mà không thay dao trên không?",
-          answer:
-            "Có, và đó là cách mua thông thường. Dao dưới thường bền hơn dao trên rất nhiều, nên thay cả hai theo cùng chu kỳ là lãng phí dụng cụ còn dùng được. Hãy cho chúng tôi ĐK ngoài / ĐK trong / độ dày của dao dưới và đặc tả dao trên tương ứng, chúng tôi sẽ khớp hình học ăn khớp và chênh lệch độ cứng với những gì bạn đang chạy.",
-        },
-        {
-          question: "Dao gắn mảnh đã mòn có gắn lại mảnh được không?",
-          answer:
-            "Được, miễn là thân dao thẳng, không đảo và các bệ hàn còn tốt. Gắn lại mảnh rẻ hơn đáng kể so với dao mới và là lý do chọn bản gắn mảnh thay vì hợp kim nguyên khối khi bài toán kinh tế sát nhau. Hợp kim nguyên khối không gắn lại được — khi lưỡi hết thì con dao cũng hết, đó là đánh đổi bạn chấp nhận để có tuổi thọ dài nhất trên một con dao.",
-        },
-      ],
-      company: [
-        {
-          question: "Bạn cần gì để báo giá một con dao dưới?",
-          answer:
-            "Đường kính ngoài, lỗ lắp và độ dày của con dao bạn đang dùng, đặc tả dao trên tương ứng, vật liệu bạn đang cắt, tốc độ dây chuyền và số đường cắt. Nếu thiếu thông tin nào, hãy gửi con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình — chúng tôi thà dựng lại kích thước từ mẫu còn hơn báo giá dựa trên phỏng đoán.",
+            "Cạnh gặp các điều kiện nhiệt và cơ học khác nhau. Chỉ định cấp phôi, mặt cắt và điều kiện nhiệt độ tại trạm cắt, cùng với vật liệu làm dao hiện có. So sánh các yêu cầu đó với các tùy chọn thép công cụ gia công nóng hoặc hợp kim cao có sẵn trong khi vẫn giữ được thân và biên dạng cắt cần thiết.",
         },
         {
           question:
-            "Bạn có cung cấp cho các hãng máy cuộn lại không có trong danh sách này không?",
+            "Tại sao việc cắt thanh nguội phải được xác định riêng biệt?",
           answer:
-            "Có. Các nền tảng liệt kê là những gì chúng tôi gặp nhiều nhất, không phải giới hạn — dao dưới luôn được chế tạo theo máy. Bất kỳ máy cắt cuộn lại chạy điện nào cũng nằm trong phạm vi khi chúng tôi có kích thước lắp đặt và đặc tả dao trên tương ứng.",
+            "Bề mặt và lõi của thanh tôi có thể ở các điều kiện khác nhau khi nó tiếp xúc với lực cắt. Những điều kiện đó ảnh hưởng đến nhiệm vụ cùng với loại thép và tiết diện thanh. Ghi lại tình trạng thực tế tại điểm cắt để có thể đánh giá vật liệu thay thế cho hoạt động đó thay vì chỉ dựa vào nhãn nóng hoặc lạnh thông thường.",
         },
         {
-          question: "Chúng được đóng gói như thế nào?",
+          question: "Điều gì quyết định hình dáng của một con dao cắt bay?",
           answer:
-            "Riêng từng con, bảo vệ lưỡi và giấy VCI chống ăn mòn, đóng trong thùng gỗ vừa khít với đường kính lớn. Dao dưới đến nơi với lưỡi bị sứt là vô dụng bất kể được chế tạo thế nào, nên quy cách đóng gói được đặc tả cho quá trình vận chuyển chứ không phải cho việc lưu kho.",
+            "Mặt cắt ngang phôi và chuyển động cắt xác định cách các lưỡi cắt ăn khớp với nhau. Các đường cong, các bước và hướng cạnh tạo thành một phần của hình học làm việc đó, cùng với các mốc lắp đặt của dao. Tái tạo đường viền đã chỉ định khi thay dao, bao gồm cả mối quan hệ với thành phần tiếp giáp của nó.",
+        },
+        {
+          question: "Có thể sử dụng dao cắt bay bị mòn làm mẫu thay thế không?",
+          answer:
+            "Đúng. Một con dao mòn có thể lộ ra phần thân bậc, các mặt định vị và các lỗ lắp. Xác định vị trí của nó và đánh dấu các bề mặt tiếp đất. Sử dụng bản vẽ gốc hoặc tham chiếu so khớp chưa sử dụng, nếu có, để phân biệt đường viền dự định với cạnh còn lại.",
+        },
+        {
+          question: "Tôi nên gửi gì để báo giá một cặp lưỡi cắt bay?",
+          answer:
+            "Gửi mô hình máy nghiền hoặc máy cắt, bản vẽ cho cả vị trí và số lượng dao. Nêu rõ vết cắt cắt đầu hay đuôi hay chia thân theo chiều dài. Bao gồm phần cán, cấp thép, nhiệt độ điểm cắt và tốc độ dây chuyền để có thể xem xét các bản vẽ và thông số kỹ thuật vật liệu cùng nhau.",
         },
       ],
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi mô hình máy nghiền/cắt, bản vẽ dao, phân loại và cấp sản phẩm, nhiệt độ cắt, tốc độ dây chuyền, vị trí lưỡi dao và số lượng.",
+    rfqPlaceholder:
+      "Gửi mô hình máy nghiền/cắt, bản vẽ dao, phân loại và cấp sản phẩm, nhiệt độ cắt, tốc độ dây chuyền, vị trí lưỡi dao và số lượng.",
+    relatedBladeIds: [
+      "guillotine-shear-blades",
+      "stationary-scrap-shear-blades",
+    ],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Thân và biên dạng cắt bay dành riêng cho máy nghiền và cơ cấu cắt. Kích thước thân máy tiêu chuẩn hoàn chỉnh không có sẵn cho cấu hình phổ thông; cung cấp bản vẽ gốc hoặc mẫu có kích thước.",
+    },
+    detailLayout: {
+      heroAlt: "Mẫu dao cắt cắt và bay có thân bậc và lỗ lắp",
+      sizeRange: "Thực hiện để vẽ",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "Thép công cụ gia công nóng/hợp kim cao",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt đầu/đuôi và cắt chia trên kéo bay máy cán",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "Thực hiện để vẽ",
+        },
+        {
+          label: "Hình dạng lưỡi",
+          value: "Các cạnh cắt thẳng hoặc định hình; thân dao bước",
+        },
+        {
+          label: "Tùy chọn vật liệu",
+          value: "Thép công cụ gia công nóng hoặc thép công cụ hợp kim cao",
+        },
+        {
+          label: "nhiệm vụ cắt",
+          value: "Cấu hình cắt nóng, cắt nguội hoặc cắt thanh nguội",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt đầu/đuôi và cắt chia trên kéo bay máy cán",
+        },
+      ],
+      dimensionTables: [],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Gửi mô hình máy nghiền/cắt, bản vẽ dao, phân loại và cấp sản phẩm, nhiệt độ cắt, tốc độ dây chuyền, vị trí lưỡi dao và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+  },
+  {
+    id: "paper-sheeter-knives",
+    name: "Dao cắt ngang giấy cuộn thành tờ",
+    fullName: "Dao cắt ngang cho máy cắt giấy cuộn thành tờ",
+    seoTitle: "Dao máy cắt giấy cuộn thành tờ | Dao thay thế theo yêu cầu",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay: "Dao cắt ngang giấy cuộn thành tờ",
+    image: "/images/products/shear-detail/paper-sheeter-knives-cover.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 680,
+      height: 1208,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Máy ép giấy thay thế tùy chỉnh và dao cắt chéo. Các cạnh bằng thép HSS , PM hoặc cacbua dành cho màng giấy và bìa, được chế tạo theo cấu hình lắp của bạn.",
+    link: "/products/paper-sheeter-knives",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "2230–2285 mm",
+      },
+      {
+        label: "Cấu hình tham khảo",
+        value: "Thân dao dòng Jagenberg Synchro được liệt kê bên dưới",
+      },
+      {
+        label: "Sắp xếp dao",
+        value: "Cài đặt xuyên tâm hoặc tiếp tuyến",
+      },
+      {
+        label: "Tùy chọn vật liệu",
+        value: "HSS , thép luyện kim bột hoặc kết cấu có đầu cacbua",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cắt chéo các mạng giấy và bảng liên tục thành các tờ",
+      },
+    ],
+    compatibleMachines: ["Jagenberg", "Bielomatik", "E.C.H. Will", "Pasaban"],
+    compatibleMachinesIntro:
+      "Nhận dao ép giấy thay thế với chiều dài tùy chỉnh, cấu hình kẹp và hình học tiên tiến cho máy của bạn. Sureay cung cấp các tùy chọn HSS , thép luyện kim bột và đầu cacbua để cắt ngang giấy và bìa; gửi bản vẽ của bạn để báo giá. Thương hiệu máy là tài liệu tham khảo về khả năng tương thích cho các bộ phận hậu mãi Sureay .",
+    components: [
+      {
+        id: "paper-sheeter-knives-1",
+        tag: "Nhiệm vụ xuyên suốt",
+        title: "Tùy chọn HSS , thép PM và thép có đầu cacbua",
+        description:
+          "Sureay cung cấp các lựa chọn vật liệu này cho các tấm giấy và bìa cắt chéo, cho phép cấu trúc dao được chỉ định cho kho hàng, nhiệm vụ sản xuất và quy trình bảo trì hiện có.",
+      },
+      {
+        id: "paper-sheeter-knives-2",
+        tag: "Cài đặt",
+        title: "Cấu hình dao xuyên tâm và tiếp tuyến",
+        description:
+          "Dao thay thế có sẵn để sắp xếp theo hướng xuyên tâm và tiếp tuyến, với các biên dạng thân và tính năng kẹp được chế tạo cho xi lanh cắt được lắp đặt.",
+      },
+      {
+        id: "paper-sheeter-knives-3",
+        tag: "Hoàn thiện cạnh",
+        title: "Dao cán dài được làm để vẽ",
+        description:
+          "Chiều dài được liệt kê của dao cắt ngang giấy là 2230–2285 mm. Sureay tạo ra mặt cắt ngang hoàn chỉnh, biên dạng kẹp, cạnh gia công và hoàn thiện để kéo dao thay thế trên trụ cắt hiện có.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question: "Con dao ép giấy thay thế nào phù hợp với máy của tôi?",
+          answer:
+            "Xác định kiểu máy và phiên bản tấm, vị trí dao và bản vẽ lắp đặt. Khớp mặt cắt ngang hoàn chỉnh, bề mặt kẹp, biên dạng cắt và hướng lắp đặt. Con dao giao phối cũng là một phần của sự sắp xếp. Sử dụng những chi tiết đó cùng với tham chiếu bộ phận ban đầu để chọn cấu hình thay thế cần thiết.",
+        },
+        {
+          question: "Dao ép giấy khác với dao xén và dao chém như thế nào?",
+          answer:
+            "Một con dao cắt giấy cắt ngang một tờ giấy hoặc bìa đang chuyển động để tạo thành các tờ giấy. Một con dao xén cắt dọc theo mạng và một con dao chém cắt một chồng được kẹp. Để biết thao tác theo chiều dọc, hãy xem [Dao xén giấy](/products/rotary-slitter-knives-paper) .",
+        },
+        {
+          question:
+            "Nên so sánh dao tấm HSS , thép PM và dao cắt tấm có đầu cacbua như thế nào?",
+          answer:
+            "So sánh hiệu suất trên cùng một loại giấy, cách sắp xếp giấy và yêu cầu về chất lượng cắt. Sự mài mòn dần dần của cạnh, sứt mẻ và quá trình mài sắc có sẵn sẽ hướng dẫn việc đánh giá vật liệu. Giữ cấu hình lắp đặt và làm việc hiện có được xác định để có thể đánh giá vật liệu thay thế trong cấu hình máy cán thực tế.",
+        },
+        {
+          question:
+            "Tại sao máy cán có thể để lại vết cắt kém ngay cả với dao mới?",
+          answer:
+            "Việc điều chỉnh giữa các dao ăn khớp, hình dạng cắt, độ hoàn thiện mặt đất và tình trạng máy của chúng có thể ảnh hưởng đến vết cắt. Định lượng cao hơn hoặc nhiều màng cùng nhau có thể thay đổi nhiệm vụ cắt. So sánh hình dạng đã lắp đặt và thiết lập với các yêu cầu của máy, đồng thời ghi lại tồn kho và khuyết tật trước khi quyết định rằng vật liệu làm dao cần thay đổi.",
+        },
+        {
+          question:
+            "Việc lắp đặt dao xuyên tâm hoặc tiếp tuyến có nghĩa là gì?",
+          answer:
+            "Các thuật ngữ mô tả vị trí của dao so với trụ cắt. Mỗi sự sắp xếp đều có hình dạng thân, vị trí kẹp và cạnh làm việc riêng. Việc thay thế phải tái tạo lại thiết kế đã được lắp đặt, bao gồm cả mối quan hệ dao ăn khớp. Chiều dài và độ dày tổng thể chỉ là một phần thông tin cần thiết để xác định sự sắp xếp đó.",
+        },
+        {
+          question:
+            "Các kích thước được liệt kê có phù hợp với mọi máy tính bảng Jagenberg Synchro không?",
+          answer:
+            "Không. Máy đồng bộ Jagenberg có thể sử dụng các thân dao và cách sắp xếp kẹp khác nhau tùy theo phiên bản. Sử dụng Mã mục được liệt kê làm tài liệu tham khảo và so sánh toàn bộ mặt cắt ngang và mặt kẹp với bản vẽ cho con dao đã lắp đặt của bạn.",
+        },
+        {
+          question:
+            "Những yêu cầu hình học nào quan trọng khi đặt hàng dao cán dài?",
+          answer:
+            "Độ thẳng vượt trội, độ song song của mặt, độ dày và độ vát mô tả các khía cạnh khác nhau của con dao. Nêu các giá trị yêu cầu và mốc đo lường trên bản vẽ thi công. Những yêu cầu đó cho phép đánh giá con dao đã hoàn thiện một cách nhất quán và giúp duy trì mối quan hệ dự kiến ​​giữa bề mặt kẹp và lưỡi làm việc của nó.",
+        },
+        {
+          question:
+            "Bạn cần gì để báo giá một con dao ép giấy hướng tâm hoặc tiếp tuyến?",
+          answer:
+            "Cung cấp mô hình và phiên bản tờ giấy, bản vẽ lắp và dao, loại giấy hoặc bìa và số lượng. Dán nhãn lắp đặt hướng tâm hoặc tiếp tuyến, các bề mặt kẹp và vị trí giao tiếp. Bao gồm các mốc chuẩn làm việc và yêu cầu hoàn thiện nếu được xác định trên bản vẽ của bạn.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi mô hình tấm, bản vẽ dao và kẹp, sắp xếp hướng tâm/tiếp tuyến, cấp phôi, điều kiện và số lượng.",
+    rfqPlaceholder:
+      "Gửi mô hình tấm, bản vẽ dao và kẹp, sắp xếp hướng tâm/tiếp tuyến, cấp phôi, điều kiện và số lượng.",
+    relatedBladeIds: ["paper-cutting-blades", "rotary-slitter-knives-paper"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Kích thước tham chiếu tuân theo cấu hình trang tính IKS Klingelnberg lịch sử. Họ không xác định mọi phiên bản Synchro hoặc chỉ định cấu hình kẹp đầy đủ. Xác nhận mẫu mã, cách sắp xếp lắp đặt và bản vẽ dao gốc trước khi đặt hàng.",
+    },
+    detailLayout: {
+      heroAlt: "Dao cắt giấy dài có lỗ gắn chìm",
+      specificationImage: {
+        src: "/images/products/shear-detail/paper-sheeter-knives-detail.webp",
+        alt: "Dao ép giấy trên giá đỡ xưởng cho thấy các lỗ lắp và chi tiết cạnh",
+      },
+      sizeRange: "2230–2285 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "Thép HSS / PM / đầu cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt chéo các mạng giấy và bảng liên tục thành các tờ",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "2230–2285 mm",
+        },
+        {
+          label: "Cấu hình tham khảo",
+          value: "Thân dao dòng Jagenberg Synchro được liệt kê bên dưới",
+        },
+        {
+          label: "Sắp xếp dao",
+          value: "Cài đặt xuyên tâm hoặc tiếp tuyến",
+        },
+        {
+          label: "Tùy chọn vật liệu",
+          value: "HSS , thép luyện kim bột hoặc kết cấu có đầu cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt chéo các mạng giấy và bảng liên tục thành các tờ",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Cấu hình tham khảo",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+          ],
+          rows: [
+            ["SR004101", "Đồng bộ Jagenberg · xuyên tâm", "2285", "55", "10"],
+            ["SR004102", "Đồng bộ Jagenberg · xuyên tâm", "2285", "32", "10"],
+            [
+              "SR004103",
+              "Đồng bộ Jagenberg · xuyên tâm / hình nón",
+              "2230",
+              "60",
+              "9.5",
+            ],
+            [
+              "SR004104",
+              "Đồng bộ Jagenberg · xuyên tâm / hình nón",
+              "2230",
+              "35",
+              "10",
+            ],
+            ["SR004105", "Đồng bộ Jagenberg · tiếp tuyến", "2285", "40", "12"],
+            ["SR004106", "Đồng bộ Jagenberg · tiếp tuyến", "2285", "38", "12"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Gửi mô hình tấm, bản vẽ dao và kẹp, sắp xếp hướng tâm/tiếp tuyến, cấp phôi, điều kiện và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
+    },
+  },
+  {
+    id: "saddle-stitcher-trimmer-knives",
+    name: "Dao xén ba mặt cho dây chuyền đóng ghim lồng",
+    fullName: "Dao xén ba mặt cho dây chuyền đóng ghim lồng",
+    seoTitle: "Dao xén ba mặt cho tập sách đóng ghim lồng",
+    seoDescription:
+      "Dao trước hoặc dao bên thay thế cho dây chuyền đóng ghim lồng sách mỏng và tạp chí. Tham khảo kích thước của DS 304 / Tempo và các lựa chọn thép gió hoặc lưỡi gắn hợp kim cứng.",
+    category: "paper_cutting",
+    sector: "paper",
+    categoryDisplay: "Dao xén ba mặt cho dây chuyền đóng ghim lồng",
+    image:
+      "/images/products/shear-detail/saddle-stitcher-trimmer-knives-cover-transparent.webp",
+    imageDimensions: {
+      width: 800,
+      height: 800,
+      smallerWidths: [320, 480],
+    },
+    specificationImageDimensions: {
+      width: 800,
+      height: 559,
+      smallerWidths: [320, 480],
+    },
+    description:
+      "Dao xén thay thế cho dây chuyền đóng ghim lồng tập sách và tạp chí. Dao trước, bên, trên và dưới có các lựa chọn thép dụng cụ, thép gió hoặc lưỡi gắn hợp kim cứng.",
+    link: "/products/saddle-stitcher-trimmer-knives",
+    specs: [
+      {
+        label: "Kích cỡ",
+        value: "280–400 mm",
+      },
+      {
+        label: "Cấu hình tham khảo",
+        value:
+          "Các vị trí dao Müller Martini DS 304/Tempo được liệt kê bên dưới",
+      },
+      {
+        label: "Vị trí dao",
+        value:
+          "Mặt trước trên, mặt trên, mặt trước dưới và mặt dưới; dao bên trái và bên phải",
+      },
+      {
+        label: "Tùy chọn vật liệu",
+        value: "Lưỡi cắt bằng thép công cụ, HSS hoặc cacbua",
+      },
+      {
+        label: "Ứng dụng",
+        value: "Cắt tỉa các tập sách nhỏ, tài liệu quảng cáo và tạp chí",
+      },
+    ],
+    compatibleMachines: ["Müller Martini", "Heidelberg", "Horizon"],
+    compatibleMachinesIntro:
+      "Sureay cung cấp dao trước, bên, trên hoặc dưới cho bộ phận xén trên dây chuyền đóng ghim lồng. Có thể đặt riêng từng dao hoặc biên dạng theo yêu cầu, với thép dụng cụ, thép gió hoặc lưỡi gắn hợp kim cứng. Gửi bản vẽ ghi rõ vị trí để nhận báo giá. Tên hãng máy dùng để đối chiếu phụ tùng thay thế Sureay.",
+    components: [
+      {
+        id: "saddle-stitcher-trimmer-knives-1",
+        tag: "Phù hợp với dao",
+        title: "Thép công cụ, HSS và các cạnh có đầu cacbua",
+        description:
+          "Các tùy chọn vật liệu để cắt tập sách và tạp chí cho phép các đơn đặt hàng thay thế phản ánh lượng giấy tồn kho, nhiệm vụ cắt và độ mòn của mép trên dây chuyền hiện có.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-2",
+        tag: "Kết thúc tập sách",
+        title: "Vị trí dao trước, bên, trên và dưới",
+        description:
+          "Chiều dài dao trong danh mục là 280–400 mm. Sureay cung cấp dao trước và dao bên theo cấu hình trên, dưới, trái hoặc phải để khách hàng có thể đặt đúng từng dao cho máy xén.",
+      },
+      {
+        id: "saddle-stitcher-trimmer-knives-3",
+        tag: "Cấu hình đặc biệt",
+        title: "Hồ sơ tùy chỉnh cho các đường khâu hiện có",
+        description:
+          "Thân, góc xiên và lỗ lắp được xác định bằng bản vẽ hỗ trợ việc thay thế các loại dao hiện có, với các cấu hình đặc biệt được chỉ định cùng với các bộ phận giao tiếp và hướng lắp đặt của chúng.",
+      },
+    ],
+    faqs: {
+      technical: [
+        {
+          question:
+            "Làm sao xác định đúng dao thay thế cho dây chuyền đóng ghim lồng?",
+          answer:
+            "Ghi rõ phiên bản máy đóng ghim và bộ phận xén. Xác định dao trước hay bên, trên hay dưới và trái hay phải nếu có. Đối chiếu mã phụ tùng gốc và bản vẽ lắp của từng vị trí. Cho biết hướng vát và chiều lắp thực tế trên dây chuyền sản xuất tập sách hoặc tạp chí.",
+        },
+        {
+          question: "Tôi có thể thay thế chỉ một con dao bên bị hỏng không?",
+          answer:
+            "Đúng. Dao bên có thể được cung cấp riêng khi xác định được vị trí và cách lắp đặt của nó. Kiểm tra con dao ăn khớp được giữ lại và ghi lại kích thước cũng như lịch sử mài lại của nó. Sử dụng tham chiếu bộ phận bên trái hoặc bên phải với vị trí trên hoặc dưới vì những đặc điểm đó xác định cần phải thay thế nào.",
+        },
+        {
+          question: "Nên chọn vật liệu làm dao như thế nào cho bìa sách mỏng?",
+          answer:
+            "So sánh độ mòn của cạnh hiện tại với lớp phủ giấy, độ dày của tập sách và nhiệm vụ sản xuất. Sự mài mòn dần dần và sứt mẻ cạnh đòi hỏi phải xem xét các vật liệu khác nhau. Quá trình mài có sẵn cũng ảnh hưởng đến việc lựa chọn thép công cụ, kết cấu HSS hoặc cacbua. Giữ hình học góc xiên và lắp đặt được chỉ định với yêu cầu vật liệu.",
+        },
+        {
+          question:
+            "Các loại dao được liệt kê có bao gồm mọi cấu hình Müller Martini DS 304 / Tempo không?",
+          answer:
+            "Không. Các mục nhập Mã Mục được liệt kê bao gồm các vị trí và kích thước dao Müller Martini DS 304 / Tempo cụ thể. So sánh phiên bản và tham chiếu bộ phận gốc của dao phía trên, phía trên, phía dưới phía trước hoặc phía dưới với bản vẽ lắp đầy đủ.",
+        },
+        {
+          question:
+            "Khi nào nên thay dao xén trên dây chuyền đóng ghim lồng thay vì mài lại?",
+          answer:
+            "Khả năng phục hồi hình dạng lưỡi cắt phụ thuộc chiều cao dao còn lại và lượng vật liệu cắt còn sử dụng được ở dao ghép lưỡi hoặc gắn hợp kim. Kiểm tra giới hạn mòn của loại dao và giới hạn điều chỉnh của bộ phận xén. Dao trên và dưới có thể khác cấu tạo, vì vậy hãy đánh giá riêng từng vị trí.",
+        },
+        {
+          question:
+            "Dao xén cho dây chuyền đóng ghim lồng có được gọi là dao xén ba mặt không?",
+          answer:
+            "Đôi khi hai tên gọi cùng được dùng khi dây chuyền đóng ghim lồng xén ba cạnh của tập sách. Khi đặt hàng, hãy ghi rõ máy đóng ghim và vị trí chính xác của dao trên, dưới, trước hoặc bên. Với bộ dao riêng dùng cho ruột sách đã đóng, xem [dao xén ba mặt](/products/three-knife-trimmer-blades).",
+        },
+        {
+          question:
+            "Cần gửi gì để nhận báo giá dao xén cho dây chuyền đóng ghim lồng?",
+          answer:
+            "Gửi model máy đóng ghim và bộ phận xén, loại giấy của tập sách, mã phụ tùng gốc hoặc bản vẽ và số lượng. Ghi rõ dao trên hay dưới, trước hay bên và trái hay phải nếu có. Với cấu hình dao chia đôi hoặc kiểu V-phase, gửi biên dạng thực tế và bản vẽ dao đối.",
+        },
+      ],
+      company: [],
+    },
+    quoteRequirements:
+      "Gửi model và phiên bản máy đóng ghim lồng cùng bộ phận xén, bản vẽ dao ghi rõ vị trí, loại giấy, độ dày tập sách và số lượng.",
+    rfqPlaceholder:
+      "Gửi model và phiên bản máy đóng ghim lồng cùng bộ phận xén, bản vẽ dao ghi rõ vị trí, loại giấy, độ dày tập sách và số lượng.",
+    relatedBladeIds: ["three-knife-trimmer-blades", "paper-cutting-blades"],
+    isFeatured: false,
+    dimensionLabels: {
+      intro:
+        "Kích thước tham chiếu DS 304 / Tempo tuân theo danh mục dao giấy DIENES , trang 34. Dao phía trên bên trái và bên phải có các mục Mã Mục riêng biệt ngay cả khi kích thước bên ngoài của chúng khớp với nhau. Xác nhận mẫu lỗ đầy đủ và bản vẽ dao; các phiên bản máy khác được thực hiện để vẽ.",
+    },
+    detailLayout: {
+      heroAlt:
+        "Bộ dao xén cho dây chuyền đóng ghim lồng gồm dao thẳng và dao định hình có lỗ lắp",
+      specificationImage: {
+        src: "/images/products/shear-detail/saddle-stitcher-trimmer-knives-detail.webp",
+        alt: "Ba dao xén sách đặt trên bàn xưởng, có thể thấy mặt vát lưỡi cắt và các lỗ lắp",
+      },
+      sizeRange: "280–400 mm",
+      heroSpecs: [
+        {
+          label: "Vật liệu",
+          value: "Thép công cụ / HSS / đầu cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt tỉa các tập sách nhỏ, tài liệu quảng cáo và tạp chí",
+        },
+      ],
+      technicalSpecs: [
+        {
+          label: "Kích cỡ",
+          value: "280–400 mm",
+        },
+        {
+          label: "Cấu hình tham khảo",
+          value:
+            "Các vị trí dao Müller Martini DS 304/Tempo được liệt kê bên dưới",
+        },
+        {
+          label: "Vị trí dao",
+          value:
+            "Mặt trước trên, mặt trên, mặt trước dưới và mặt dưới; dao bên trái và bên phải",
+        },
+        {
+          label: "Tùy chọn vật liệu",
+          value: "Lưỡi cắt bằng thép công cụ, HSS hoặc cacbua",
+        },
+        {
+          label: "Ứng dụng",
+          value: "Cắt tỉa các tập sách nhỏ, tài liệu quảng cáo và tạp chí",
+        },
+      ],
+      dimensionTables: [
+        {
+          id: "standard-dimensions",
+          tabLabel: "Kích thước tiêu chuẩn",
+          title: "Kích thước tiêu chuẩn chung",
+          columns: [
+            "Mã sản phẩm",
+            "Máy/vị trí",
+            "Chiều dài (mm)",
+            "Chiều rộng (mm)",
+            "Độ dày (mm)",
+          ],
+          rows: [
+            [
+              "SR004201",
+              "DS 304 / Tempo · mặt trước phía trên",
+              "390",
+              "60",
+              "8",
+            ],
+            [
+              "SR004202",
+              "DS 304 / Tempo · mặt trên, bên phải",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004203",
+              "DS 304 / Tempo · bên trên, bên trái",
+              "280",
+              "60",
+              "8",
+            ],
+            [
+              "SR004204",
+              "DS 304 / Tempo · phía trước thấp hơn",
+              "400",
+              "40",
+              "15",
+            ],
+            ["SR004205", "DS 304 / Tempo · bên dưới", "295", "32", "15"],
+          ],
+        },
+      ],
+      inlineRfq: {
+        title: "Yêu cầu báo giá cho cấu hình dao của bạn",
+        description:
+          "Gửi model và phiên bản máy đóng ghim lồng cùng bộ phận xén, bản vẽ dao ghi rõ vị trí, loại giấy, độ dày tập sách và số lượng.",
+        buttonLabel: "Yêu cầu báo giá",
+      },
     },
   },
   {
     id: "box-slotting-knives",
-    name: "Dao Xẻ Rãnh Hộp",
-    fullName: "Dao xẻ rãnh hợp kim cứng chính xác cho hộp cứng và hộp quà",
+    name: "Dao soi rãnh chữ V cho bìa xám",
+    fullName:
+      "Dao hợp kim cứng chính xác để soi rãnh chữ V trên bìa xám làm hộp cứng và hộp quà",
+    seoTitle: "Dao soi rãnh chữ V bằng hợp kim cứng cho bìa xám làm hộp",
     category: "slitter_knives",
     sector: "converting",
     categoryDisplay: "Dao Bao Bì & Bìa Carton",
     image: "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-    badge: "Cặp Trái / Phải",
-    badgeColor: "teal",
-    gallery: [
-      "/images/products/box-slotting-knives/box-slotting-knives-01.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-02.webp",
-      "/images/products/box-slotting-knives/box-slotting-knives-03.webp",
-    ],
-    galleryAlts: [
-      "Sáu dao xẻ rãnh hợp kim cứng xếp hình quạt thể hiện dải chiều dài và chiều rộng tồn kho",
-      "Cặp dao xẻ rãnh hợp kim cứng cho thấy vát xẻ rãnh đã mài",
-      "Dao xẻ rãnh trong hộp bảo vệ có nhãn bên cạnh hai con dao rời",
-    ],
     description:
-      "Dao xẻ rãnh hợp kim cứng để xẻ rãnh chữ V trên bìa xám cho dây chuyền hộp cứng và hộp quà. Cung cấp theo cặp trái và phải ở năm kích thước tồn kho từ 50 × 12 mm đến 60 × 15 mm, dày 2,0 / 2,2 mm, theo mác hợp kim GS05U (tối ưu chống mòn) và GS20U (dai). Rãnh sạch không làm rách hay xơ mặt bìa, điều chỉnh được theo độ dày bìa.",
-    fullDescription:
-      "Một chiếc hộp cứng chỉ tốt ngang với đường rãnh của nó. Rãnh chữ V xẻ vào bìa xám quyết định cách bìa gấp, và một rãnh làm rách hoặc xơ lớp mặt sẽ hiện lên qua lớp bọc như một lỗi nhìn thấy được trên sản phẩm được mua chính vì nó trông sang trọng. Với hộp quà và hộp cao cấp, không có dung sai chấp nhận được cho một đường rãnh nham nhở.\n\nDao xẻ rãnh Sureay được mài từ hợp kim cứng vonfram cao cấp và cung cấp theo cặp trái – phải đã ghép, bởi đó là cách chúng cắt. Hai con dao cùng nhau tạo nên hai thành rãnh; cho một dao mới làm việc với một dao đã mòn sẽ tạo ra rãnh không đối xứng khiến bìa gấp lệch vuông, và đó là lý do chúng tôi báo giá và giao hàng theo cặp chứ không theo con.\n\n## Hai mác vật liệu, một quyết định\n\nGS05U là mác cứng hơn, tối ưu chống mòn, và là lựa chọn đúng cho bìa xám tiêu chuẩn ở lô sản xuất dài. GS20U đánh đổi một phần độ cứng lấy độ dai và là mác dành cho bìa dày và bìa tái chế có lẫn tạp chất — cùng một sự phân biệt xuyên suốt mọi ứng dụng hợp kim cứng, ở đây được diễn đạt theo ngôn ngữ bìa carton. Chọn GS05U cho bìa tái chế có lẫn sạn là cách phổ biến nhất khiến những con dao này bị mẻ.\n\n## Điều chỉnh theo độ dày bìa\n\nKhe hở giữa hai dao được đặt theo loại bìa đang chạy, nên một cặp bao phủ được một dải độ dày thay vì bị khóa ở một giá trị duy nhất. Trên thực tế, một dây chuyền hộp cứng chuyển giữa bìa xám 1,5 mm và 3 mm chỉ cần chỉnh lại thay vì thay dụng cụ, miễn là bề rộng rãnh nằm trong dải.\n\n## Ứng dụng\n\nXẻ rãnh chữ V trên bìa xám cho dây chuyền hộp cứng và hộp quà: bao bì cao cấp, hộp mỹ phẩm và rượu mạnh, hộp trưng bày, bìa bìa cứng đóng sách và hộp carton cứng tiêu chuẩn.\n\n## Vì sao chúng tôi báo giá theo cặp\n\nHai con dao cùng nhau tạo nên hai thành rãnh, nên chúng được mài, ghép và giao theo cặp, và phải được thay cùng nhau. Cho một dao mới làm việc với một dao đã mòn sẽ xẻ ra rãnh không đối xứng, và rãnh không đối xứng khiến bìa gấp lệch vuông — một lỗi hiện lên qua lớp bọc đúng trên những sản phẩm ít có khả năng chịu đựng điều đó nhất. Thay một con dao đơn lẻ thường còn là một chẩn đoán bị bỏ sót: một con dao hỏng sớm đơn lẻ thường có nghĩa là va phải tạp chất hoặc lỗi căn chỉnh, và cả hai sẽ lặp lại với con dao thay thế. Hãy cho chúng tôi biết dây chuyền có bao nhiêu trạm xẻ rãnh và bạn dùng hết bao nhiêu cặp trong một tháng điển hình, chúng tôi sẽ báo giá theo lịch cung cấp thay vì một lô lẻ, bởi hầu hết dây chuyền hộp cứng được phục vụ tốt hơn bằng đơn hàng khung so với việc đặt hàng khi cặp cuối cùng hỏng.\n\n## GS05U hay GS20U — quyết định theo bìa, không theo độ dài lô\n\nGS05U cứng hơn và mòn chậm hơn, khiến nó phù hợp với bìa xám nguyên sinh sạch. GS20U đánh đổi độ cứng lấy độ dai và chịu được tạp chất, khiến nó phù hợp với bìa dày và nguyên liệu tái chế. Cơ chế hỏng khác nhau và đó là toàn bộ quyết định: dao mòn được mài lại và trở lại làm việc, dao mẻ bị bỏ. Nếu hỗn hợp bìa của bạn có nguyên liệu tái chế dù chỉ một phần, GS20U thường rẻ hơn tính theo cả năm, dù đo được độ cứng thấp hơn và cho tuổi thọ lưỡi ngắn hơn trong thử nghiệm trên bìa sạch. Chọn mác cứng nhất có sẵn cho bìa nhiễm bẩn là cách phổ biến nhất phá hỏng những con dao này.\n\n## Rãnh bị xơ: do lưỡi hay do căn chỉnh\n\nThành rãnh bị xơ là dấu hiệu của một lưỡi đã ngừng cắt đứt sợi và bắt đầu đẩy sợi. Hãy kiểm tra lưỡi trước. Nếu lưỡi vẫn còn sắc, hãy xem khe hở giữa hai dao so với độ dày bìa: quá rộng thì bìa bị xé toạc thay vì được cắt, quá hẹp thì lớp mặt bị nghiền. Thời điểm phân biệt hai nguyên nhân một cách đáng tin cậy: lỗi căn chỉnh xuất hiện ngay sau khi đổi lệnh sản xuất, lỗi lưỡi xuất hiện dần trong suốt lô. Vì khe hở được đặt theo bìa chứ không cố định, một cặp bao phủ được một dải độ dày, nên dây chuyền chuyển giữa bìa xám 1,5 mm và 3 mm chỉ cần chỉnh lại thay vì thay dụng cụ, miễn bề rộng rãnh vẫn trong dải.\n\n## Kích thước và máy ngoài danh sách\n\nNăm kích thước tồn kho là những kích thước được đặt nhiều nhất, không phải giới hạn — chiều dài, chiều rộng và hình học lưỡi được chế tạo theo bản vẽ, và bất kỳ dây chuyền xẻ rãnh chữ V trên bìa xám hay xẻ rãnh hộp cứng nào cũng nằm trong phạm vi khi chúng tôi có hình học con dao. Nếu bạn không có bản vẽ, hãy gửi một con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình và chúng tôi sẽ trả lại bản vẽ có kích thước để duyệt trước khi chế tạo. Chúng tôi thà làm việc trên dụng cụ thực tế của bạn còn hơn dựa trên một tuyên bố tương thích. Kích thước tồn kho thường giao trong vài ngày làm việc; hình học theo bản vẽ mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ, và đơn hàng lặp lại theo bản vẽ đã duyệt được báo giá ngay trong ngày.",
+      "Dao xẻ rãnh cacbua để tạo rãnh chữ V trên bảng cứng trên dây chuyền sản xuất hộp cứng và hộp quà tặng. Các cặp tay trái và tay phải phù hợp ở GS05U và GS20U , với năm kích cỡ được liệt kê.",
     link: "/products/box-slotting-knives",
     specs: [
       {
         label: "Vật liệu",
-        value: "Hợp kim cứng vonfram cao cấp",
+        value: "hợp kim cacbua vonfram",
       },
       {
         label: "Mác vật liệu",
-        value: "GS05U (chống mòn) / GS20U (độ dai)",
+        value: "GS05U hoặc GS20U",
       },
       {
         label: "Chiều dài",
@@ -6722,8 +9868,8 @@ export const blades: Blade[] = [
         value: "12 / 15 / 16 mm",
       },
       {
-        label: "Độ dày",
-        value: "2,0 / 2,2 mm",
+        label: "độ dày",
+        value: "2.0 / 2.2 mm",
       },
       {
         label: "Hình thức cung cấp",
@@ -6736,10 +9882,8 @@ export const blades: Blade[] = [
     ],
     dimensionLabels: {
       col0: "STT",
-      col1: "D × R (mm)",
-      col2: "Độ dày T (mm)",
-      caption:
-        "* Năm kích thước tồn kho, cung cấp theo cặp trái và phải. Các chiều dài, chiều rộng và hình học lưỡi khác được chế tạo theo bản vẽ hoặc dựng lại từ một con dao đã mòn.",
+      col1: "L × W (mm)",
+      col2: "Độ dày (mm)",
     },
     standardDimensions: [
       {
@@ -6768,306 +9912,67 @@ export const blades: Blade[] = [
         id: "2 / 2.2",
       },
     ],
-    steelGrades: {
-      intro:
-        "Với dao xẻ rãnh, quyết định về mác vật liệu là chống mòn đối lại độ dai, và chính loại bìa cho bạn biết cần loại nào. Bìa xám nguyên sinh sạch làm mòn lưỡi; bìa tái chế có tạp chất làm mẻ lưỡi.",
-      rows: [
-        {
-          grade: "GS05U",
-          hardness: "Độ cứng cao hơn, tối ưu chống mòn",
-          bestFor:
-            "Bìa xám nguyên sinh tiêu chuẩn ở lô sản xuất dài — mác mặc định",
-          tradeoff:
-            "Kém khoan dung với tạp chất; mẻ thay vì mòn nếu bìa bị nhiễm bẩn",
-        },
-        {
-          grade: "GS20U",
-          hardness: "Độ dai cao hơn",
-          bestFor: "Bìa dày và bìa tái chế có lẫn sạn hoặc tạp chất khác",
-          tradeoff: "Tuổi thọ lưỡi trên bìa sạch ngắn hơn GS05U",
-        },
-      ],
-      outro:
-        "Nếu hỗn hợp bìa của bạn có nguyên liệu tái chế dù chỉ một phần, GS20U thường thắng về tổng chi phí dù thua về tuổi thọ lưỡi: dao mẻ bị bỏ, dao mòn được mài lại.",
-    },
     components: [
       {
         id: "matched-pairs",
-        tag: "HÌNH THỨC CUNG CẤP",
-        title: "Trái và phải cung cấp theo cặp",
+        tag: "định dạng cung cấp",
+        title: "Cặp tay trái và tay phải phù hợp",
         description:
-          "Hai con dao cùng nhau tạo nên hai thành rãnh, nên chúng được mài, ghép và giao theo cặp. Cho một dao mới làm việc với một dao đã mòn tạo ra rãnh không đối xứng khiến bìa gấp lệch vuông — một lỗi hiện lên qua lớp bọc đúng trên những sản phẩm ít có khả năng chịu đựng nhất.",
+          "Đặt hai con dao lại với nhau sao cho mỗi bên của rãnh chữ V có thể được chỉ định bằng lưỡi cắt tiếp xúc của nó.",
       },
       {
-        id: "clean-groove-edge",
-        tag: "CHẤT LƯỢNG BỀ MẶT",
-        title: "Rãnh không làm rách lớp mặt",
+        id: "carbide-grades",
+        tag: "Tùy chọn vật liệu",
+        title: "Tùy chọn cacbua GS05U và GS20U",
         description:
-          "Hình học lưỡi được mài để cắt đứt sợi bìa xám thay vì đẩy sợi, nhờ đó thành rãnh giữ được sự sạch sẽ và lớp mặt không bị xơ. Với hộp cứng và hộp quà, đường rãnh tạo nên khác biệt giữa một nếp gấp trông như được gia công và một nếp gấp trông như bị hỏng.",
+          "Chọn cấp độ theo định hướng mài mòn hoặc định hướng độ bền tùy theo bảng và độ mòn trên dao hiện có của bạn.",
       },
       {
-        id: "adjustable-gap",
-        tag: "TÍNH LINH HOẠT QUY TRÌNH",
-        title: "Điều chỉnh theo độ dày bìa",
+        id: "drawing-based-pairs",
+        tag: "Thứ nguyên tùy chỉnh",
+        title: "Cặp thay thế được thực hiện để vẽ",
         description:
-          "Khe hở giữa hai dao được đặt theo loại bìa đang chạy, nên một cặp bao phủ được một dải độ dày thay vì bị khóa ở một giá trị. Dây chuyền chuyển giữa bìa xám 1,5 mm và 3 mm chỉ cần chỉnh lại thay vì thay dụng cụ, miễn bề rộng rãnh vẫn trong dải.",
+          "Chỉ định thân dao, góc xiên và tay cắt cho trạm tạo rãnh chữ V hiện tại của bạn. Năm kích thước tham khảo giúp người mua có điểm khởi đầu cho các đơn đặt hàng lặp lại.",
       },
     ],
-    relatedBladeIds: [
-      "corrugated-slitter-scorer-blades",
-      "tungsten-carbide-slitter-knives",
-      "paper-straw-slitting-blades",
-    ],
-    rfqPlaceholder:
-      "Ví dụ: dây chuyền xẻ rãnh chữ V cho hộp cứng, dao 50 × 15 × 2,2 mm trái và phải. Chạy bìa xám 2 mm, một phần tái chế. Bề rộng rãnh 2 mm. Cần 10 cặp và một khuyến nghị về mác vật liệu.",
+    relatedBladeIds: ["corrugated-slotter-knives"],
+    quoteRequirements:
+      "Gửi mẫu máy, bản vẽ dao hoặc mẫu, độ dày bảng xám và số lượng cặp bạn cần.",
     faqs: {
       technical: [
         {
-          question:
-            "Tôi có thể chỉ thay một con dao trong cặp khi chỉ một con bị mòn không?",
+          question: "Dao xẻ rãnh chữ V dạng hộp cứng dùng để làm gì?",
           answer:
-            "Bạn có thể, nhưng thường là tiết kiệm giả. Hai con dao cùng nhau tạo nên hai thành rãnh, nên một dao mới làm việc với một dao đã mòn sẽ xẻ rãnh không đối xứng và bìa gấp lệch vuông. Với hộp cứng và hộp quà, điều đó hiện lên qua lớp bọc. Nếu một con dao trong cặp hỏng sớm, đáng để tìm hiểu vì sao: hỏng sớm đơn lẻ thường nghĩa là va phải tạp chất hoặc lỗi căn chỉnh, và cả hai sẽ lặp lại với con dao thay thế.",
+            "Nó cắt một rãnh trên bảng xám để bảng có thể gấp theo đường yêu cầu trên hộp cứng hoặc hộp quà tặng. Để biết các khe có nắp trong thùng carton sóng, hãy xem [Dao xẻ rãnh sóng](/products/corrugated-slotter-knives) .",
         },
         {
-          question: "GS05U hay GS20U — chọn thế nào?",
+          question: "Dao tạo rãnh chữ V có được cung cấp theo cặp không?",
           answer:
-            "Theo thứ có trong bìa, không theo độ dài lô. GS05U cứng hơn và mòn chậm hơn, khiến nó là mác đúng cho bìa xám nguyên sinh sạch. GS20U dai hơn và chịu được tạp chất, khiến nó là mác đúng cho bìa dày và nguyên liệu tái chế. Cơ chế hỏng khác nhau và đó là toàn bộ quyết định: dao mòn được mài lại và trở lại làm việc, dao mẻ bị bỏ. Nếu hỗn hợp bìa của bạn có nguyên liệu tái chế dù chỉ một phần, GS20U thường rẻ hơn tính theo cả năm.",
+            "Đúng. Cặp bên trái và bên phải phù hợp xác định cả hai thành của rãnh. Chỉ định hai tay và hướng cho máy của bạn.",
         },
         {
-          question: "Rãnh của tôi bị xơ ở lớp mặt. Là do dao hay do căn chỉnh?",
+          question: "Tôi nên chọn GS05U và GS20U như thế nào?",
           answer:
-            "Kiểm tra lưỡi trước. Thành rãnh bị xơ là dấu hiệu của một lưỡi đã ngừng cắt đứt sợi và bắt đầu đẩy sợi — cùng một dạng hỏng thể hiện thành vết cắt xù lông trong mọi ứng dụng bìa carton. Nếu lưỡi vẫn sắc, hãy xem khe hở giữa hai dao so với độ dày bìa: quá rộng thì bìa bị xé toạc thay vì được cắt, quá hẹp thì lớp mặt bị nghiền. Lỗi căn chỉnh thường xuất hiện ngay sau khi đổi lệnh sản xuất, lỗi lưỡi xuất hiện dần dần.",
-        },
-        {
-          question:
-            "Bạn có chế tạo được chiều dài khác ngoài 50 và 60 mm không?",
-          answer:
-            "Có. Các kích thước tồn kho là những kích thước được đặt nhiều nhất, không phải giới hạn — chiều dài, chiều rộng và hình học lưỡi được chế tạo theo bản vẽ. Nếu bạn không có bản vẽ, hãy gửi một con dao đã mòn hoặc ảnh chụp có thước cặp trong khung hình và chúng tôi sẽ lập bản vẽ có kích thước để bạn duyệt trước khi chế tạo.",
-        },
-      ],
-      company: [
-        {
-          question: "Báo giá theo con dao hay theo cặp?",
-          answer:
-            "Theo cặp, vì đó là cách chúng cắt và cách chúng nên được thay. Hãy cho chúng tôi biết dây chuyền có bao nhiêu trạm xẻ rãnh và bạn dùng hết bao nhiêu cặp trong một tháng điển hình, chúng tôi sẽ báo giá theo lịch cung cấp thay vì một lô lẻ — hầu hết dây chuyền hộp cứng được phục vụ tốt hơn bằng đơn hàng khung so với việc đặt hàng khi cặp cuối cùng hỏng.",
-        },
-        {
-          question: "Bạn cung cấp cho những máy xẻ rãnh nào?",
-          answer:
-            "Dao được chế tạo theo máy, nên bất kỳ dây chuyền xẻ rãnh chữ V trên bìa xám hay xẻ rãnh hộp cứng nào cũng nằm trong phạm vi khi chúng tôi có hình học con dao. Hãy gửi hãng và model máy cùng kích thước những con dao bạn đang dùng — hoặc một mẫu đã mòn — và chúng tôi sẽ làm khớp. Chúng tôi thà làm việc trên dụng cụ thực tế của bạn còn hơn dựa trên một tuyên bố tương thích.",
-        },
-        {
-          question: "Thời gian giao hàng là bao lâu?",
-          answer:
-            "Kích thước tồn kho thường giao trong vài ngày làm việc kể từ khi xác nhận đơn hàng. Hình học theo bản vẽ mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ. Đơn hàng lặp lại theo bản vẽ đã duyệt được báo giá ngay trong ngày, vì hình học được lưu hồ sơ.",
-        },
-      ],
-    },
-  },
-  {
-    id: "paper-straw-slitting-blades",
-    name: "Dao Cắt Ống Hút Giấy Và Que Lọc",
-    fullName: "Dao tròn hợp kim cứng cho ống hút giấy và que lọc",
-    category: "slitter_knives",
-    sector: "converting",
-    categoryDisplay: "Dao Cắt Dọc",
-    image:
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-    badge: "Phủ Chống Dính",
-    badgeColor: "green",
-    gallery: [
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-01.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-02.webp",
-      "/images/products/paper-straw-slitting-blades/paper-straw-slitting-blades-03.webp",
-    ],
-    galleryAlts: [
-      "Dao tròn hợp kim cứng để cắt ống hút giấy và que lọc, toàn mặt và lỗ tâm",
-      "Cặp dao tròn hợp kim cứng để cắt ống hút giấy, mặt dao và lỗ tâm",
-      "Cận cảnh mặt đánh bóng gương và lưỡi cắt của dao cắt ống hút giấy",
-    ],
-    description:
-      "Dao tròn hợp kim cứng phủ chống dính để cắt ống hút giấy và que lọc. Đường kính ngoài Φ88–Φ100, dày 0,15–0,30 mm, sáu kích thước tồn kho. Lớp phủ chống dính kháng lại sự tích tụ keo gốc nước, nhờ đó mép cắt giữ được độ vuông và không xơ suốt các lô dài trên máy làm ống hút và que lọc tốc độ cao.",
-    fullDescription:
-      "Trên dây chuyền ống hút giấy, dao thường không hỏng vì mòn. Nó hỏng vì bám keo. Keo gốc nước bám sang mặt dao, tích thành gờ dọc lưỡi cắt, và từ thời điểm đó dao ngừng cắt ống mà bắt đầu kéo ống — và đó chính xác là đầu ống hút bị xơ. Độ sắc không phải là biến số giải quyết chuyện này.\n\nĐó là lý do những con dao này được đặc tả quanh khả năng nhả keo chứ không chỉ quanh độ cứng. Nền hợp kim cứng giữ lưỡi; lớp phủ chống dính giữ cho mặt dao sạch để lưỡi có thể tiếp tục làm việc. Trên dây chuyền chạy keo gốc nước, lớp phủ đóng góp cho chất lượng cắt nhiều hơn một điểm độ cứng nữa.\n\n## Dây chuyền ống hút không phải dây chuyền que lọc\n\nHai ứng dụng có chung nguồn gốc máy móc và hình học dao, nhưng không chung điều kiện hỏng. Cắt que lọc trên máy thuốc lá chạy ở tốc độ rất cao trên một vật liệu đồng nhất, đã được nghiên cứu kỹ. Dây chuyền ống hút giấy mới hơn, chạy dải số lớp và định lượng giấy rộng hơn, và dùng keo khác nhau giữa các nhà sản xuất — nên tuổi thọ dao trên dây chuyền ống hút nhạy với keo hơn nhiều so với với giấy. Nếu bạn đang chạy thử một dây chuyền ống hút mới, hãy chuẩn bị tinh chỉnh đặc tả dao theo keo của bạn chứ không theo giấy.\n\n## Dao mỏng, hệ quả thật\n\nỞ mức 0,15 đến 0,30 mm, đây là những con dao mỏng, và độ dày là một quyết định công nghệ. Dao mỏng hơn lấy đi ít vật liệu hơn và để lại đầu cắt vuông hơn trên ống thành mỏng; dao dày hơn ổn định hơn ở tốc độ cao và khoan dung hơn với máy bị đảo. Chọn sai ở đây biểu hiện thành đầu cắt nham nhở hoặc dao bị võng và trượt hướng.\n\n## Ứng dụng\n\nMáy cuốn và cắt ống hút giấy; máy làm que lọc thuốc lá, bao gồm các nền tảng Hauni; cắt ống và lõi giấy trên thiết bị gia công tốc độ cao tương đương.\n\n## Chẩn đoán đầu ống hút bị xơ\n\nNếu đầu ống bị xơ trong khi lưỡi vẫn còn cảm giác sắc, nguyên nhân gần như luôn là bám keo chứ không phải mòn. Keo gốc nước bám sang mặt dao và tích thành gờ dọc lưỡi cắt; qua điểm đó dao kéo ống thay vì cắt đứt, và ống bị kéo sẽ xơ. Lưỡi nằm bên dưới có thể vẫn hoàn toàn dùng được. Hãy lau mặt dao và soi dưới ánh sáng trước khi thay dao: nếu thấy rõ lớp bám, câu trả lời là lớp phủ hoặc chu kỳ vệ sinh, không phải một con dao sắc hơn. Xử lý việc này như vấn đề độ sắc là cách điển hình khiến một dây chuyền ống hút tiêu tốn những con dao lẽ ra không cần thay.\n\n## Độ dày là một lựa chọn công nghệ\n\nỞ mức 0,15 đến 0,30 mm, độ dày không phải kích thước thừa. Dao mỏng hơn lấy đi ít vật liệu hơn và cho đầu cắt vuông hơn trên ống hút thành mỏng, ít lớp, và đó là lý do nó được chọn cho ống hút cao cấp. Dao dày hơn cứng vững hơn, chạy ổn định hơn ở tốc độ cao và chịu được độ đảo trục chính, khiến nó an toàn hơn trên máy đời cũ hoặc ống nhiều lớp dày hơn. Chọn sai tạo ra hoặc đầu cắt nham nhở hoặc dao võng và trượt hướng, và hai lỗi này không giống nhau chút nào — hãy cho chúng tôi biết số lớp, định lượng và loại máy, chúng tôi sẽ khuyến nghị thay vì để bạn đoán.\n\n## Di sản que lọc, thực tế ống hút\n\nNhiều dây chuyền ống hút được xây trên máy làm que lọc, và hình học dao thường thay thế được nhau về kích thước. Thứ không chuyển giao được là logic đặc tả. Cắt que lọc chạy ở tốc độ rất cao trên vật liệu đồng nhất; dây chuyền ống hút chạy giấy đa dạng và, quan trọng hơn, keo đa dạng. Một con dao chạy tốt trên máy que lọc Hauni có thể bị bết keo chỉ sau vài giờ trên dây chuyền ống hút dùng loại keo khác. Hãy đặc tả theo keo, không theo nguồn gốc máy — keo là thông tin hữu ích nhất bạn có thể cung cấp cho chúng tôi ở ứng dụng này, và cũng là thứ hầu hết người mua bỏ sót.\n\n## Lớp phủ, mài lại và chạy thử dây chuyền mới\n\nLớp phủ chống dính là một lớp bề mặt, và mài lưỡi sẽ lấy đi lớp phủ đúng ở nơi nó quan trọng nhất, nên dao có phủ loại này được dùng đến hết tuổi thọ rồi thay chứ không đưa vào chu kỳ mài lại. Nếu bài toán kinh tế của bạn nghiêng về mài lại, chúng tôi sẽ báo giá hợp kim cứng không phủ và bạn chấp nhận đánh đổi bằng việc vệ sinh mặt dao thường xuyên hơn. Trên dây chuyền còn đang chạy thử, bước đầu hữu ích là một lô thử nhỏ với hai đặc tả — thường là một con dao có phủ và một độ dày khác — chạy thực tế với keo và giấy của bạn. Hai tuần như vậy cho biết nhiều hơn mọi so sánh trên tài liệu kỹ thuật, và định đúng ngay từ đầu đặc tả cho đơn hàng định kỳ. Kích thước tồn kho thường giao trong vài ngày làm việc; đường kính, lỗ lắp và độ dày theo yêu cầu mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ, cộng thêm vài ngày cho chu trình phủ.",
-    link: "/products/paper-straw-slitting-blades",
-    introNote:
-      "Sản xuất ống hút giấy hiện chiếm phần lớn nhu cầu đối với những con dao này. Nếu dây chuyền của bạn dùng keo gốc nước, hãy cho chúng tôi biết loại keo nào: nó dự đoán tuổi thọ dao ở ứng dụng này tốt hơn đặc tả giấy.",
-    compatibleMachines: ["Hauni"],
-    specs: [
-      {
-        label: "Vật liệu",
-        value: "Hợp kim cứng vonfram có lớp phủ chống dính",
-      },
-      {
-        label: "Đường kính ngoài",
-        value: "Φ88–Φ100 mm",
-      },
-      {
-        label: "Lỗ lắp",
-        value: "Φ15 / Φ16 / Φ45 mm",
-      },
-      {
-        label: "Độ dày",
-        value: "0,15–0,30 mm",
-      },
-      {
-        label: "Mục đích lớp phủ",
-        value: "Kháng lại sự tích tụ keo gốc nước trên mặt dao",
-      },
-      {
-        label: "Ứng dụng",
-        value: "Cắt ống hút giấy, cắt que lọc, cắt ống giấy",
-      },
-    ],
-    dimensionLabels: {
-      col0: "STT",
-      col1: "ĐK ngoài ØD (mm)",
-      col2: "Lỗ lắp Ød (mm)",
-      col3: "Độ dày T (mm)",
-      caption:
-        "* Sáu kích thước tồn kho. Các đường kính, lỗ lắp và độ dày khác được chế tạo theo bản vẽ — hãy gửi model máy, số lớp ống hút và loại keo, chúng tôi sẽ đặc tả dao theo đó.",
-    },
-    standardDimensions: [
-      {
-        spec: "1",
-        od: "Φ88",
-        id: "Φ16",
-        thickness: "0.26",
-      },
-      {
-        spec: "2",
-        od: "Φ89",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "3",
-        od: "Φ90",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "4",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.15",
-      },
-      {
-        spec: "5",
-        od: "Φ100",
-        id: "Φ15",
-        thickness: "0.30",
-      },
-      {
-        spec: "6",
-        od: "Φ100",
-        id: "Φ45",
-        thickness: "0.20",
-      },
-    ],
-    steelGrades: {
-      intro:
-        "Với công việc có keo, bề mặt quan trọng hơn nền vật liệu. Hãy chọn lớp phủ theo loại keo bạn dùng, rồi chọn nền vật liệu theo loại giấy.",
-      rows: [
-        {
-          grade: "Hợp kim cứng + lớp phủ chống dính",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Dây chuyền ống hút dùng keo gốc nước và cắt que lọc — đặc tả mặc định",
-          tradeoff:
-            "Giá đơn vị cao hơn; lớp phủ là lớp tiêu hao và không tồn tại sau khi mài lại",
-        },
-        {
-          grade: "Hợp kim cứng không phủ",
-          hardness: "HRA 89–91",
-          bestFor:
-            "Ứng dụng khô hoặc ít dính, và cắt ống giấy không có keo tại đường cắt",
-          tradeoff:
-            "Bám keo nhanh trên dây chuyền có keo; mép cắt xơ từ rất lâu trước khi lưỡi mòn",
-        },
-        {
-          grade: "Thép dụng cụ",
-          hardness: "60–63 HRC",
-          bestFor:
-            "Chạy thử, lô ngắn và dây chuyền tốc độ thấp nơi chi phí quyết định",
-          tradeoff:
-            "Mất lưỡi nhanh ở tốc độ dây chuyền ống hút; không khả thi cho sản xuất liên tục",
-        },
-      ],
-    },
-    components: [
-      {
-        id: "adhesive-release-coating",
-        tag: "XỬ LÝ BỀ MẶT",
-        title: "Phủ để nhả keo, không chỉ để cứng",
-        description:
-          "Trên dây chuyền dùng keo gốc nước, dao hỏng vì bám keo chứ không phải vì mòn. Lớp phủ chống dính giữ mặt dao sạch để lưỡi tiếp tục cắt ống thay vì kéo ống — đó mới là cơ chế thực sự đằng sau một đầu ống hút không xơ.",
-      },
-      {
-        id: "thin-section-stability",
-        tag: "HÌNH HỌC DAO",
-        title: "0,15–0,30 mm, đặc tả theo vết cắt",
-        description:
-          "Độ dày là một lựa chọn công nghệ, không phải phần thừa. Dao mỏng hơn lấy đi ít vật liệu hơn và để lại đầu cắt vuông hơn trên ống thành mỏng; dao dày hơn chạy ổn định hơn ở tốc độ cao và chịu được độ đảo của máy. Chúng tôi đặc tả theo số lớp và máy của bạn thay vì mặc định một con số duy nhất.",
-      },
-      {
-        id: "straw-line-tuning",
-        tag: "KỸ THUẬT ỨNG DỤNG",
-        title: "Tinh chỉnh theo keo, không chỉ theo giấy",
-        description:
-          "Dây chuyền ống hút giấy khác nhau về keo nhiều hơn hẳn so với về giấy, và tuổi thọ dao đi theo keo. Hãy cho chúng tôi biết bạn dùng loại nào và chúng tôi sẽ đặc tả lớp phủ và hình học theo đó — đây là thông tin hữu ích nhất bạn có thể cung cấp ở ứng dụng này.",
-      },
-    ],
-    relatedBladeIds: [
-      "tungsten-carbide-slitter-knives",
-      "rotary-slitter-knives-paper",
-      "nonwoven-slitter-knives",
-    ],
-    rfqPlaceholder:
-      "Ví dụ: trạm cắt ống hút giấy, dao Φ100 × Φ15 × 0,20 mm. Ống hút ba lớp, kraft 60 g/m², keo gốc nước. Dao bị bết keo sau khoảng 6 giờ và đầu ống hút bị xơ. Cần 50 chiếc, có phủ.",
-    faqs: {
-      technical: [
-        {
-          question:
-            "Đầu ống hút của tôi bị xơ nhưng lưỡi dao vẫn còn cảm giác sắc. Chuyện gì đang xảy ra?",
-          answer:
-            "Gần như chắc chắn là bám keo. Keo gốc nước bám sang mặt dao và tích thành gờ dọc lưỡi cắt; qua điểm đó dao kéo ống thay vì cắt đứt, và ống bị kéo sẽ xơ. Bản thân lưỡi bên dưới có thể vẫn hoàn toàn dùng được. Hãy lau mặt dao và soi dưới ánh sáng trước khi thay dao: nếu thấy rõ lớp bám, câu trả lời là lớp phủ hoặc chu kỳ vệ sinh, không phải một con dao sắc hơn.",
-        },
-        {
-          question: "Tôi nên dùng 0,15 mm hay 0,30 mm?",
-          answer:
-            "Tùy vào ống và máy. Dao mỏng hơn lấy đi ít vật liệu hơn và cho đầu cắt vuông hơn trên ống hút thành mỏng, ít lớp, đó là lý do nó được chọn cho ống hút cao cấp. Dao dày hơn cứng vững hơn, chạy ổn định hơn ở tốc độ cao và chịu được độ đảo trục chính, đó là lý do nó an toàn hơn trên máy đời cũ hoặc ống nhiều lớp dày hơn. Hãy cho chúng tôi biết số lớp, định lượng và loại máy, chúng tôi sẽ khuyến nghị thay vì để bạn đoán.",
-        },
-        {
-          question: "Lớp phủ có tồn tại sau khi mài lại không?",
-          answer:
-            "Không. Lớp phủ là một lớp bề mặt, và mài lưỡi sẽ lấy nó đi đúng ở nơi nó quan trọng nhất. Với dao có phủ loại này, cách làm thực tế là dùng đến hết tuổi thọ rồi thay, thay vì xây một chu kỳ mài lại quanh chúng. Nếu bài toán kinh tế của bạn nghiêng về mài lại, chúng tôi có thể báo giá hợp kim cứng không phủ và bạn chấp nhận đánh đổi bằng việc vệ sinh mặt dao thường xuyên hơn.",
+            "GS05U là tùy chọn thiên về độ mài mòn và GS20U là tùy chọn thiên về độ bền. So sánh thành phần bảng của bạn và xem cạnh hiện tại của bạn có bị mòn hay sứt mẻ hay không.",
         },
         {
           question:
-            "Dao que lọc và dao ống hút giấy có thay thế cho nhau được không?",
+            "Các kích thước được liệt kê có bao gồm dao tạo rãnh chữ V tùy chỉnh không?",
           answer:
-            "Về kích thước thì thường là được — cùng một dòng hình học và nhiều dây chuyền ống hút được xây trên máy làm que lọc. Thứ không chuyển giao được là logic đặc tả. Cắt que lọc chạy ở tốc độ rất cao trên vật liệu đồng nhất; dây chuyền ống hút chạy giấy đa dạng và, quan trọng hơn, keo đa dạng. Một con dao chạy tốt trên máy que lọc Hauni có thể bị bết keo trên dây chuyền ống hút dùng loại keo khác. Hãy đặc tả theo keo, không theo nguồn gốc máy.",
+            "Bảng liệt kê năm cấu hình tham khảo. Có thể chỉ định chiều dài, chiều rộng và góc xiên tùy chỉnh để vẽ cho giá đỡ dao đã lắp đặt.",
+        },
+        {
+          question: "Tôi nên kiểm tra điều gì nếu mặt của bảng màu xám bị sờn?",
+          answer:
+            "Kiểm tra các cạnh bị xỉn màu hoặc sứt mẻ và xác nhận cài đặt dao cho độ dày của tấm. Lỗi xuất hiện ngay sau khi thay bo mạch có thể cho thấy có vấn đề về thiết lập.",
+        },
+        {
+          question: "Tôi nên gửi gì để báo giá dao xẻ rãnh chữ V dạng hộp?",
+          answer:
+            "Gửi model máy, bản vẽ dao hoặc mẫu và số lượng cặp. Bao gồm độ dày của bảng và hiển thị các góc xiên cũng như mặt lắp cho cả hai tay cắt.",
         },
       ],
-      company: [
-        {
-          question: "Bạn cần thông tin gì để báo giá?",
-          answer:
-            "Đường kính ngoài, lỗ lắp và độ dày; model máy; số lớp ống hút và định lượng giấy; loại keo; và khoảng thời gian thay dao hiện tại của bạn. Keo là thứ hầu hết người mua bỏ sót và cũng là thứ dự đoán tuổi thọ dao tốt nhất ở ứng dụng này, nên hãy nêu ra kể cả khi bạn không chắc nó có quan trọng hay không.",
-        },
-        {
-          question:
-            "Bạn có cung cấp cho dây chuyền ống hút mà chúng tôi còn đang chạy thử không?",
-          answer:
-            "Có, và nên để chúng tôi tham gia sớm. Với dây chuyền mới, bước đầu hữu ích là một lô thử nhỏ với hai đặc tả — thường là một con dao có phủ và một độ dày khác — chạy thực tế với keo và giấy của bạn. Điều đó cho biết nhiều hơn trong hai tuần so với việc so sánh tài liệu kỹ thuật, và định đúng ngay từ đầu đặc tả cho đơn hàng định kỳ.",
-        },
-        {
-          question: "Thời gian giao hàng là bao lâu?",
-          answer:
-            "Kích thước tồn kho thường giao trong vài ngày làm việc. Đường kính, lỗ lắp và độ dày theo yêu cầu mất 15–25 ngày làm việc kể từ khi duyệt bản vẽ. Dao có phủ cần thêm vài ngày so với dao không phủ do chu trình phủ, hãy tính đến điều đó khi lên kế hoạch cho lô thử đầu tiên.",
-        },
-      ],
+      company: [],
     },
   },
 ];

@@ -40,7 +40,7 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
               className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all duration-300 ${
                 selectedIndex === index
                   ? "border-[#003366] ring-2 ring-[#003366] ring-opacity-30"
-                  : "border-slate-200 dark:border-slate-700 hover:border-[#FF6600]"
+                  : "border-slate-200 dark:border-slate-700 hover:border-[#0b4a8f]"
               }`}
             >
               <img

@@ -17,6 +17,8 @@ import "dotenv/config";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
+import { blades as sourceBlades } from "./catalog/translation-source.ts";
+import type { Blade } from "../client/src/data/blades.ts";
 
 import {
   extractTranslatableFields,
@@ -35,7 +37,6 @@ import {
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const LOCALES_DIR = path.resolve(ROOT, "client/src/data/locales");
-const SOURCE_BLADES = path.resolve(ROOT, "client/src/data/blades.ts");
 
 // Keys we want to ADD this run. They're in NON_TRANSLATABLE_KEYS by default
 // (the W2/W3 launch budget excluded them); a relaxed skip set is built here.
@@ -100,27 +101,15 @@ function countFields(fields: TranslatableField[]): CountSummary {
 async function main() {
   const flags = parseFlags();
 
-  // Load source (English) blades.
-  const sourceMod = (await import(pathToFileURL(SOURCE_BLADES).href)) as {
-    blades: unknown[];
-  };
-  const sourceBlades = sourceMod.blades;
-
-  // Extract with the relaxed skip set, then keep ONLY fields whose path
-  // crosses one of the INCLUDE_KEYS — that's what we're adding this round.
-  const allFields = extractTranslatableFields(sourceBlades, [], RELAXED_SKIP);
-  const newFields = allFields.filter(f =>
-    f.path.some(
-      seg =>
-        typeof seg === "string" &&
-        (INCLUDE_KEYS as readonly string[]).includes(seg)
-    )
-  );
+  const sections = sourceBlades.map(({ id, faqs, components }) => ({ id, faqs, components }));
+  const newFields = extractTranslatableFields(sections, [], RELAXED_SKIP);
 
   const summary = countFields(newFields);
   console.log(
     `[incremental] source has ${summary.fields} new fields, ${summary.chars} chars per lang`
   );
+
+  if (flags.dryRun) return;
 
   // DeepL Free quota status — informational.
   const deeplKey = process.env.DEEPL_API_KEY;
@@ -151,11 +140,6 @@ async function main() {
     );
   }
 
-  if (flags.dryRun) {
-    console.log("[incremental] dry-run — no API calls");
-    return;
-  }
-
   for (const lang of flags.langs) {
     const outPath = localePath(lang);
     if (!fs.existsSync(outPath)) {
@@ -165,6 +149,13 @@ async function main() {
       continue;
     }
 
+    const existingMod = (await import(pathToFileURL(outPath).href)) as { blades: Blade[] };
+    const existingBlades = existingMod.blades;
+    const existingIds = new Set(existingBlades.map(blade => blade.id));
+    if (existingIds.size !== existingBlades.length || existingIds.size !== sections.length ||
+        sections.some(section => !existingIds.has(section.id))) {
+      throw new Error(`Update the base ${lang} catalog to the current public product IDs before merging FAQ and component translations.`);
+    }
     const provider = providerFor(lang);
     console.log(
       `\n[${lang}] adding ${INCLUDE_KEYS.join(" + ")} via ${provider.name}`
@@ -182,6 +173,9 @@ async function main() {
     for (let i = 0; i < sources.length; i += batchSize) {
       const batch = sources.slice(i, i + batchSize);
       const out = await provider.translateBatch(batch, lang);
+      if (out.length !== batch.length || out.some(t => !t?.trim())) {
+        throw new Error(`Incomplete ${lang} translation batch beginning at field ${i}.`);
+      }
       translated.push(...out);
       if (
         translated.length === sources.length ||
@@ -197,17 +191,13 @@ async function main() {
       postprocessGlossary(t, prepped[i].placeholders)
     );
 
-    // Load the existing locale file with a cache-busting query so a re-run
-    // sees the freshly-written output if we're scripting back-to-back.
-    const existingMod = (await import(
-      `${pathToFileURL(outPath).href}?ts=${Date.now()}`
-    )) as { blades: unknown[] };
-    const existingBlades = existingMod.blades;
-
-    // Apply translations into the EXISTING translated structure. The field
-    // paths from the source extraction are valid against the locale file
-    // because the schema is shape-identical.
-    const merged = applyTranslations(existingBlades, newFields, restored);
+    const translatedSections = new Map(
+      applyTranslations(sections, newFields, restored).map(section => [section.id, section])
+    );
+    const merged = existingBlades.map(blade => {
+      const section = translatedSections.get(blade.id)!;
+      return { ...blade, faqs: section.faqs, components: section.components };
+    });
 
     // Rewrite the TS file. Header is preserved style + bumped provenance.
     const header = [
@@ -215,7 +205,7 @@ async function main() {
       "// Source:    blades.ts",
       `// Target:    ${lang}`,
       `// Generated: ${new Date().toISOString()}`,
-      "// Provider:  deepl (incremental: faqs + components)",
+      `// Provider:  ${provider.name} (incremental: faqs + components)`,
       "",
       'import type { Blade } from "../blades";',
       "",
