@@ -355,6 +355,10 @@ export default function NewsDetail() {
                     srcSet: `${article.image.replace(/\.webp$/i, "-640w.webp")} 640w, ${article.image} 1672w`,
                     sizes: "(max-width: 1024px) 100vw, 460px",
                   })}
+                  {...(article.imageSrcSet && {
+                    srcSet: article.imageSrcSet,
+                    sizes: "(min-width: 1024px) 458px, calc(100vw - 50px)",
+                  })}
                   alt={article.imageAlt ?? formatHeadingCase(article.title)}
                   className="w-full aspect-[4/3] lg:aspect-auto lg:h-[420px] object-cover print:h-auto print:max-h-[240px] print:object-contain"
                   width={article.imageWidth ?? 920}
@@ -560,6 +564,12 @@ export default function NewsDetail() {
                         <figure className="max-w-[760px] border border-slate-200 bg-white overflow-hidden">
                           <img
                             src={block.value}
+                            srcSet={block.imageSrcSet}
+                            sizes={
+                              block.imageSrcSet
+                                ? "(min-width: 1024px) min(758px, calc(100vw - 366px)), (min-width: 640px) min(758px, calc(100vw - 50px)), calc(100vw - 34px)"
+                                : undefined
+                            }
                             alt={alt}
                             className="w-full max-h-[400px] object-contain bg-slate-50"
                             loading="eager"

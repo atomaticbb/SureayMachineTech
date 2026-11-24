@@ -4,6 +4,7 @@
  */
 
 import { mixerLinerMaterialArticle } from "./mixerLinerMaterialArticle";
+import { sicomaPolandShipmentArticle } from "./sicomaPolandShipmentArticle";
 
 // ── Interfaces ────────────────────────────────────────────────────────────────
 
@@ -22,6 +23,7 @@ export interface NewsContent {
     | "list";
   value: string;
   id?: string;
+  imageSrcSet?: string;
   imageWidth?: number;
   imageHeight?: number;
   tableCaption?: string;
@@ -53,6 +55,7 @@ export interface DispatchArticle {
   title: string;
   excerpt: string;
   image: string;
+  imageSrcSet?: string;
   imageAlt?: string;
   imageWidth?: number;
   imageHeight?: number;
@@ -136,6 +139,7 @@ function sortDispatchesByDate(
 // ── Data ──────────────────────────────────────────────────────────────────────
 
 export const ALL_DISPATCHES: DispatchArticle[] = [
+  sicomaPolandShipmentArticle,
   mixerLinerMaterialArticle,
   {
     id: "concrete-mixer-wear-parts",
@@ -8331,6 +8335,7 @@ export const ALL_DISPATCHES: DispatchArticle[] = [
 export const SORTED_DISPATCHES = sortDispatchesByDate(ALL_DISPATCHES);
 
 const DISPATCH_AUTHOR_BY_ID: Record<string, DispatchAuthor> = {
+  [sicomaPolandShipmentArticle.id]: "lynn",
   "concrete-mixer-liner-material-ni-hard-vs-high-chrome":
     "Sureay Machinery Technology",
   "concrete-mixer-wear-parts": "Eric",

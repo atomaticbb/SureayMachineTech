@@ -25,6 +25,12 @@ export default function NewsArticleCard({
         <div className="aspect-video overflow-hidden border-b border-slate-200 bg-slate-100">
           <img
             src={article.image}
+            {...(article.imageSrcSet && {
+              srcSet: article.imageSrcSet,
+              sizes: "auto, (min-width: 1920px) 596px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw",
+              width: article.imageWidth,
+              height: article.imageHeight,
+            })}
             {...responsiveImage}
             alt={article.imageAlt ?? article.title}
             loading="lazy"
