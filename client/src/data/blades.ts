@@ -2415,8 +2415,18 @@ export const blades: Blade[] = [
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/edge-configurations.webp",
+      "/images/products/granulator-blades/granulator-knife-four-mounting-slots.webp",
     ],
+    galleryAlts: [
+      "Plastic Granulator Knives: Rotor & Bed Blades",
+      "Stacked granulator knives with slotted mounting holes",
+      "Straight granulator knife with four elongated mounting slots",
+    ],
+    specificationImageDimensions: {
+      width: 1200,
+      height: 960,
+      smallerWidths: [320, 480, 800],
+    },
     description:
       "Replacement plastic granulator rotor and bed knives in D2, SKD11, DC53 or Cr12MoV. Custom profiles and bolt patterns for plastic regrind production.",
     link: "/products/granulator-blades",
@@ -7672,7 +7682,7 @@ export const blades: Blade[] = [
     "category": "shear_blades",
     "sector": "metal",
     "categoryDisplay": "Stationary Scrap Shear Blades",
-    "image": "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    "image": "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
     "imageDimensions": {
       "width": 800,
       "height": 800,

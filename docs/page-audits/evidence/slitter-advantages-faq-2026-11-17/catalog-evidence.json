@@ -1,0 +1,3458 @@
+{
+  "capturedDate": "2026-11-17",
+  "scope": "Read-only audit excerpt; runtime SSOT remains client/src/data/blades.ts",
+  "source": "client/src/data/blades.ts",
+  "sourceSha256": "82d7f36c06291a209cdfb0b9388db1fe2b699889686e30a558a16e1c0ccd2542",
+  "products": [
+    {
+      "id": "rotary-slitter-knives",
+      "name": "Film & Tape Slitter Knives",
+      "fullName": "Film & Tape Slitter Knives for Flexible Packaging",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Circular OD 20–300 mm"
+        },
+        {
+          "label": "Material",
+          "value": "52100, D2, M2 HSS, ASP23 PM steel or solid tungsten carbide"
+        },
+        {
+          "label": "Applications",
+          "value": "BOPP, BOPET, CPP, stretch film and pressure-sensitive tape"
+        },
+        {
+          "label": "Optional Coatings",
+          "value": "TiN, DLC, PTFE (Teflon), CrAlN or ceramic, depending on blade substrate"
+        },
+        {
+          "label": "Mounting",
+          "value": "Rotary shear holders or crush-cut holders"
+        },
+        {
+          "label": "Thickness tolerance",
+          "value": "±0.002 mm"
+        },
+        {
+          "label": "Runout",
+          "value": "≤0.02 mm T.I.R."
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Film & Tape Slitter Knives | OEM Replacement",
+        "sizeRange": "Circular OD 20–300 mm",
+        "heroAlt": "Circular film and tape slitter knives and bottom rings",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/rotary-slitter-knives-detail.webp",
+          "alt": "Close-up of the ground bevel and face of a circular slitter knife"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "slitter-knives",
+            "tabLabel": "Slitter Knives",
+            "title": "Top & Bottom Slitter Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type"
+            ],
+            "rows": [
+              [
+                "SR001154",
+                "60 × 40 × 1.0 mm",
+                "Top knife"
+              ],
+              [
+                "SR001155",
+                "62 × 35 × 0.5 mm",
+                "Top knife"
+              ],
+              [
+                "SR001156",
+                "75 × 45 × 1.2 mm",
+                "Top knife"
+              ],
+              [
+                "SR001151",
+                "90 × 60 × 1.0 mm",
+                "Top knife"
+              ],
+              [
+                "SR001152",
+                "105 × 70 × 1.2 mm",
+                "Top knife"
+              ],
+              [
+                "SR001157",
+                "130 × 80 × 1.2 mm",
+                "Top knife"
+              ],
+              [
+                "SR001158",
+                "150 × 75 × 2.0 mm",
+                "Top knife"
+              ],
+              [
+                "SR001168",
+                "70 × 28 × 12 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001169",
+                "70 × 45 × 3 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001170",
+                "70 × 45 × 20 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001182",
+                "80 × 55 × 5 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001452",
+                "80 × 60 × 10 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001183",
+                "105 × 60 × 15 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001184",
+                "108 × 80 × 8 mm",
+                "Bottom knife"
+              ],
+              [
+                "SR001185",
+                "150 × 120 × 15 mm",
+                "Bottom knife"
+              ]
+            ]
+          },
+          {
+            "id": "catalog-configurations",
+            "tabLabel": "Additional Top & Bottom Knives",
+            "title": "Additional Top & Bottom Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type / Platform Reference"
+            ],
+            "rows": [
+              [
+                "SR001801",
+                "75 × 25.4 × 1.0 / 1.2 mm",
+                "Top Blade — Tidland / Atlas"
+              ],
+              [
+                "SR001802",
+                "70 × 25.4 × 8 / 10 mm",
+                "Bottom Anvil — Tidland / Atlas"
+              ],
+              [
+                "SR001803",
+                "100 × 32 × 1.2 / 1.5 mm",
+                "Top Blade — Kampf / Dusenbery"
+              ],
+              [
+                "SR001804",
+                "80 × 60 × 16 / 20 mm",
+                "Bottom Anvil — Kampf / Dusenbery"
+              ],
+              [
+                "SR001805",
+                "118 × 80 × 1.2 / 2.0 mm",
+                "Top Blade — Goebel / BHS / Agnati"
+              ],
+              [
+                "SR001806",
+                "100 × 70 × 16 / 20 mm",
+                "Bottom Anvil — Goebel / BHS / Agnati"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Circular OD 20–300 mm"
+          },
+          {
+            "label": "Material",
+            "value": "52100, D2, M2 HSS, ASP23 PM steel or solid tungsten carbide"
+          },
+          {
+            "label": "Applications",
+            "value": "BOPP, BOPET, CPP, stretch film and pressure-sensitive tape"
+          },
+          {
+            "label": "Optional Coatings",
+            "value": "TiN, DLC, PTFE (Teflon), CrAlN or ceramic, depending on blade substrate"
+          },
+          {
+            "label": "Mounting",
+            "value": "Rotary shear holders or crush-cut holders"
+          },
+          {
+            "label": "Thickness tolerance",
+            "value": "±0.002 mm"
+          },
+          {
+            "label": "Runout",
+            "value": "≤0.02 mm T.I.R."
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Choose the cut before choosing the blade",
+          "description": "Start with the machine’s rotary shear pair or crush station. Thin film and laminated webs can require different blade support."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Manage adhesive pickup",
+          "description": "Check the tape adhesive, buildup pattern and cleaning method before selecting a low-friction finish. Filled film can require a harder edge even when adhesion is not the problem."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Match the holder",
+          "description": "Specify the bore, blade thickness, cutting hand and holder model. For a dished top knife, include the overall dish height."
+        }
+      ],
+      "compatibleMachines": [
+        "DIENES",
+        "Tidland",
+        "Kampf",
+        "Atlas",
+        "Goebel",
+        "Windmöller & Hölscher"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I identify replacement knives for my film or tape slitter?",
+            "answer": "Start with the cutting method and knife position. A rotary shear station uses a mating top and bottom knife, while a crush-cut station uses a cutter against a supporting surface. The holder reference, bore, cutting profile and axial dimensions identify the replacement more reliably than the machine brand alone."
+          },
+          {
+            "question": "Can film slitter knives be custom-made from a drawing or sample?",
+            "answer": "Yes. Custom orders can specify the bore, blade section, mounting features and cutting profile. A drawing defines the intended new dimensions; a worn sample also shows the installed geometry but may have lost material through sharpening. Include the mating knife or anvil details when reproducing a working pair. State the quantity required for each configuration."
+          },
+          {
+            "question": "Are film slitter blades and tape slitter knives interchangeable?",
+            "answer": "Blade and knife are common names for these circular cutting tools, but the application does not establish interchangeability. Adhesive tape, uncoated film and laminated webs can require different edge profiles or surface options. Keep the original cutting method and mounting geometry while assessing the material being slit."
+          },
+          {
+            "question": "How do shear cutting and crush cutting differ?",
+            "answer": "Shear cutting separates the web between cooperating upper and lower cutting edges. Crush cutting presses a circular edge against an anvil or supporting surface. The holder and support arrangement determine which system can be used; a knife intended for one method is not automatically suitable for the other."
+          },
+          {
+            "question": "What do OD, bore, thickness and dish height describe?",
+            "answer": "OD is the outside diameter and the bore locates the knife on its mount. Blade thickness describes the material section; dish height describes the overall axial profile of a dished knife. Ring width and mounting features also affect where the cutting edge sits relative to its mating tool."
+          },
+          {
+            "question": "What should I check when adhesive builds up on tape slitter knives?",
+            "answer": "Check the adhesive and web construction, where residue collects, and the condition of the cutting faces. Surface finish and an appropriate coating may help, but the choice depends on the blade substrate and adhesive. Compare the existing knife and cut samples before selecting PTFE, DLC or another listed coating."
+          },
+          {
+            "question": "Should I order a complete top-and-bottom knife pair?",
+            "answer": "A single worn knife can be replaced when the retained mating component remains serviceable and its geometry is known. Check both cutting edges, mounting faces and working diameters. For a new pair, identify the top and bottom positions separately so that dimensions and material choices are considered together."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "rotary-slitter-knives-paper",
+      "name": "Paper Slitter Knives",
+      "fullName": "Paper Slitter Knives for Tissue, Kraft & Coated Paper",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Dished OD 62–203 mm · Bottom OD 70–300 mm"
+        },
+        {
+          "label": "Material",
+          "value": "52100, D2, M2, ASP23, CPM 10V or carbide-tipped construction"
+        },
+        {
+          "label": "Applications",
+          "value": "Tissue, kraft, coated and recycled paper"
+        },
+        {
+          "label": "Mounting",
+          "value": "Shaft-mounted top knife or matching flange and cutting face on the bottom knife"
+        },
+        {
+          "label": "Hardness",
+          "value": "58–64 HRC for steel knives; 90–92 HRA for carbide edges"
+        },
+        {
+          "label": "Surface finish",
+          "value": "Precision-ground faces, Ra 0.2–0.4 μm"
+        },
+        {
+          "label": "Thickness tolerance",
+          "value": "±0.002 mm"
+        },
+        {
+          "label": "Runout",
+          "value": "≤0.02 mm T.I.R."
+        },
+        {
+          "label": "Cutting Styles",
+          "value": "Shear slitting with matched top and bottom knives or crush cutting with anvil pairs"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Paper Slitter Knives | OEM Replacement",
+        "sizeRange": "Dished OD 62–203 mm · Bottom OD 70–300 mm",
+        "heroAlt": "Pair of circular paper slitter knives showing upper blade and bottom ring",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/rotary-slitter-knives-paper-detail.webp",
+          "alt": "Paper slitter knife showing the ground cutting face and center bore"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "top",
+            "tabLabel": "Top Knives",
+            "title": "Top Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Profile or reference",
+              "Dish height"
+            ],
+            "rows": [
+              [
+                "SR001201",
+                "90 × 60 × 1.2 mm",
+                "Dished",
+                "To drawing"
+              ],
+              [
+                "SR001202",
+                "130 × 80 × 1.5 mm",
+                "Dished",
+                "To drawing"
+              ],
+              [
+                "SR001203",
+                "150 × 80 × 2.5 mm",
+                "Dished / Tidland Class II",
+                "To drawing"
+              ],
+              [
+                "SR001204",
+                "180 × 90 × 3.5 mm",
+                "Dished",
+                "To drawing"
+              ],
+              [
+                "SR001205",
+                "200 × 80 × 4.0 mm",
+                "Dished / Tidland Class III",
+                "9.25 mm"
+              ],
+              [
+                "SR001206",
+                "203 × 90 × 4.0 mm",
+                "Bielomatik 701.115",
+                "To drawing"
+              ]
+            ]
+          },
+          {
+            "id": "bottom",
+            "tabLabel": "Bottom Knives",
+            "title": "Bottom Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Mounting or edge",
+              "Reference"
+            ],
+            "rows": [
+              [
+                "SR001211",
+                "105 × 80 × 15 mm",
+                "Flange",
+                "DIENES dimensional series"
+              ],
+              [
+                "SR001212",
+                "130 × 90 × 20 mm",
+                "Flange",
+                "DIENES dimensional series"
+              ],
+              [
+                "SR001213",
+                "190 × 138 × 15 mm",
+                "Double edge",
+                "Tidland TID131393"
+              ],
+              [
+                "SR001214",
+                "130 × 100 × 30 mm",
+                "Double edge",
+                "Tidland TID133503"
+              ],
+              [
+                "SR001215",
+                "250 × 188 × 15 mm",
+                "Double edge",
+                "Tidland TID131395"
+              ]
+            ]
+          },
+          {
+            "id": "catalog-configurations",
+            "tabLabel": "Additional Paper Slitter Knives",
+            "title": "Additional Paper Slitter Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type / Platform Reference"
+            ],
+            "rows": [
+              [
+                "SR001807",
+                "75 × 45 × 1.0 / 1.2 mm",
+                "Top Blade (Shear)"
+              ],
+              [
+                "SR001808",
+                "70 × 45 × 10 / 8 mm",
+                "Bottom Anvil"
+              ],
+              [
+                "SR001809",
+                "100 × 32 × 1.2 mm",
+                "Top Blade (Shear)"
+              ],
+              [
+                "SR001810",
+                "80 × 60 × 20 / 16 mm",
+                "Bottom Anvil"
+              ],
+              [
+                "SR001811",
+                "150 × 80 × 1.5 mm",
+                "Top Blade (Tissue)"
+              ],
+              [
+                "SR001812",
+                "108 × 80 × 20 / 18 mm",
+                "Bottom Anvil"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Dished OD 62–203 mm · Bottom OD 70–300 mm"
+          },
+          {
+            "label": "Material",
+            "value": "52100, D2, M2, ASP23, CPM 10V or carbide-tipped construction"
+          },
+          {
+            "label": "Applications",
+            "value": "Tissue, kraft, coated and recycled paper"
+          },
+          {
+            "label": "Mounting",
+            "value": "Shaft-mounted top knife or matching flange and cutting face on the bottom knife"
+          },
+          {
+            "label": "Hardness",
+            "value": "58–64 HRC for steel knives; 90–92 HRA for carbide edges"
+          },
+          {
+            "label": "Surface finish",
+            "value": "Precision-ground faces, Ra 0.2–0.4 μm"
+          },
+          {
+            "label": "Thickness tolerance",
+            "value": "±0.002 mm"
+          },
+          {
+            "label": "Runout",
+            "value": "≤0.02 mm T.I.R."
+          },
+          {
+            "label": "Cutting Styles",
+            "value": "Shear slitting with matched top and bottom knives or crush cutting with anvil pairs"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Match the paper grade",
+          "description": "Choose the top and bottom knives together for the paper grade. Tissue needs careful edge engagement to limit fibre pull. For kraft, check the web thickness and the support at the cutting edge. For coated paper, inspect the edge for abrasive wear."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Check the ground edge",
+          "description": "Check clearance, overlap and the edge condition together when dust rises. A sharper knife cannot correct a poorly aligned holder or a worn bottom face."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Measure the dish separately",
+          "description": "Measure the blade thickness and overall dish height separately. For a bottom knife replacement by rewinder model, flange pattern or keyway, see the rewinder bottom knife range.",
+          "relatedBladeIds": [
+            "slitter-rewinder-bottom-knives"
+          ]
+        }
+      ],
+      "compatibleMachines": [
+        "DIENES",
+        "Valmet",
+        "Voith",
+        "Tidland",
+        "Jagenberg",
+        "Bielomatik",
+        "E.C.H. Will"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How are replacement paper slitter knives matched to a rewinder?",
+            "answer": "Identify the top or bottom position, machine model and installed knife reference. The bore, working diameter, axial profile and mounting arrangement must suit that station. Paper grade and the retained mating knife help determine the appropriate construction; a rewinder brand can cover several different slitting assemblies."
+          },
+          {
+            "question": "Are dished knives, top knives and male knives the same part?",
+            "answer": "These names often describe the upper member of a shear-slitting pair. Dished refers to its axial shape, whereas top or male describes its position. Flat top knives also exist, so the name alone cannot establish fit. Compare the actual profile and its relationship to the bottom knife."
+          },
+          {
+            "question": "Can custom paper slitter knives be supplied from a worn sample?",
+            "answer": "Yes. The sample helps identify the profile, bore and mounting arrangement, while a drawing or original part reference helps establish dimensions lost through wear or regrinding. Include the corresponding bottom or top knife dimensions and paper grade so the replacement can be evaluated as part of the cutting pair. State the quantity required for each configuration."
+          },
+          {
+            "question": "Why are blade thickness and dish height listed separately?",
+            "answer": "Thickness measures the blade material section; dish height measures its overall axial profile. Two dished knives can have the same outside diameter and bore yet place their cutting edges differently. These dimensions therefore need separate checks when fitting a replacement into an existing holder and bottom-knife arrangement."
+          },
+          {
+            "question": "What can cause paper dust even with a sharp slitter knife?",
+            "answer": "Dust can also reflect the paper structure, mating-knife condition, holder stability and slitting setup. Inspect both edges and the slit sample rather than considering only the top knife. A useful comparison records paper grade and machine settings, allowing changes in material or setup to be distinguished from blade wear."
+          },
+          {
+            "question": "How should I choose steel or carbide for paper slitting?",
+            "answer": "Consider the paper grade, coating or filler content, existing knife pairing and the type of wear observed. The catalog includes tool steel, HSS, PM steel and carbide-edge options. A harder working edge is not a substitute for stable mounting or an appropriate pair; compare wear resistance with edge-chipping behaviour."
+          },
+          {
+            "question": "Must top and bottom paper slitter knives be replaced together?",
+            "answer": "They can be ordered separately when the retained component is in suitable condition and the working geometry is known. Inspect the bottom cutting face as well as the top edge. If either component has been reground, confirm the remaining dimensions before ordering a replacement or a complete matched pair."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "metal-foil-strip-slitter-knives",
+      "name": "Slitter Knives for Copper & Aluminum Foil",
+      "fullName": "Slitter Knives for Copper & Aluminum Foil",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "OD 100–300 mm"
+        },
+        {
+          "label": "Material",
+          "value": "D2, D3, M2, ASP2023, ASP2052 or tungsten carbide (WC-Co)"
+        },
+        {
+          "label": "Applications",
+          "value": "Copper foil and aluminum foil"
+        },
+        {
+          "label": "Hardness",
+          "value": "64–67 HRC for PM steel; 91–92 HRA for carbide"
+        },
+        {
+          "label": "Thickness tolerance",
+          "value": "±0.001 mm"
+        },
+        {
+          "label": "Runout",
+          "value": "≤0.01 mm T.I.R."
+        },
+        {
+          "label": "Surface finish",
+          "value": "Mirror-lapped faces, Ra ≤0.02 μm"
+        },
+        {
+          "label": "Mounting",
+          "value": "Arbor-mounted knives with plain or keyed bores"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Copper & Aluminum Foil Slitter Knives | Custom",
+        "sizeRange": "OD 100–300 mm",
+        "heroAlt": "Circular foil slitter knife with a polished face and plain bore",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/metal-foil-strip-slitter-knives-keyway.webp",
+          "alt": "Circular metal foil slitter knife showing a keyway in the bore"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "slitter-knives",
+            "tabLabel": "Slitter Knives",
+            "title": "Slitter Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Material"
+            ],
+            "rows": [
+              [
+                "SR001253",
+                "130 × 60 × 1 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001254",
+                "130 × 60 × 2 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001255",
+                "130 × 60 × 3 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001256",
+                "130 × 60 × 4 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001257",
+                "130 × 66.68 × 1 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001258",
+                "130 × 66.68 × 2 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001259",
+                "130 × 66.68 × 3 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001260",
+                "130 × 66.68 × 4 mm",
+                "Tungsten Carbide"
+              ],
+              [
+                "SR001261",
+                "130 × 66.68 × 5 mm",
+                "Tungsten Carbide"
+              ]
+            ]
+          },
+          {
+            "id": "catalog-configurations",
+            "tabLabel": "Additional Foil & Strip Knife Sizes",
+            "title": "Additional Foil & Strip Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type / Platform Reference"
+            ],
+            "rows": [
+              [
+                "SR001813",
+                "100 × 40 × 1.0 / 1.5 mm",
+                "Thin Foil Slitter"
+              ],
+              [
+                "SR001814",
+                "150 × 80 × 2.0 / 3.0 mm",
+                "Precision Strip Slitter"
+              ],
+              [
+                "SR001815",
+                "200 × 120 × 3.0 / 4.0 mm",
+                "General Strip Slitter"
+              ],
+              [
+                "SR001816",
+                "250 × 150 × 4.0 / 5.0 mm",
+                "Silicon / Stainless Steel"
+              ],
+              [
+                "SR001817",
+                "300 × 200 × 5.0 / 10.0 mm",
+                "Heavy Gauge Strip"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "OD 100–300 mm"
+          },
+          {
+            "label": "Material",
+            "value": "D2, D3, M2, ASP2023, ASP2052 or tungsten carbide (WC-Co)"
+          },
+          {
+            "label": "Applications",
+            "value": "Copper foil and aluminum foil"
+          },
+          {
+            "label": "Hardness",
+            "value": "64–67 HRC for PM steel; 91–92 HRA for carbide"
+          },
+          {
+            "label": "Thickness tolerance",
+            "value": "±0.001 mm"
+          },
+          {
+            "label": "Runout",
+            "value": "≤0.01 mm T.I.R."
+          },
+          {
+            "label": "Surface finish",
+            "value": "Mirror-lapped faces, Ra ≤0.02 μm"
+          },
+          {
+            "label": "Mounting",
+            "value": "Arbor-mounted knives with plain or keyed bores"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Set clearance for the foil gauge",
+          "description": "Confirm the foil alloy, temper and thickness before setting knife clearance. Share the current clearance and any burr or edge distortion when matching a replacement knife pair."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Control stack width",
+          "description": "A close knife thickness alone does not set slit width. Match spacers, faces and bore fit across the stack."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Inspect edge and face condition",
+          "description": "Check material pickup, edge wear and face flatness when burrs increase. Choose the face finish and blade grade for the copper or aluminum foil being cut."
+        }
+      ],
+      "compatibleMachines": [
+        "Braner",
+        "Red Bud Industries",
+        "Fagor Arrasate",
+        "Burghardt + Schmidt",
+        "Heinrich Georg"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I specify replacement copper or aluminum foil slitter knives?",
+            "answer": "Use the knife drawing and arbor arrangement to establish outside diameter, bore, knife width and any keyway. The spacer widths and foil specification also matter because the knife works within a complete stack. A matching outside diameter alone does not establish the correct cutting position or arbor fit."
+          },
+          {
+            "question": "Can foil slitter knives and spacers be made to a custom drawing?",
+            "answer": "Yes. The knife and spacer drawings can define the individual widths, bore details and required stack arrangement. Include the slit-width schedule and identify components that will be reused. This allows replacement knives and new spacers to be considered together rather than treating each width as an isolated dimension. State the quantity required for each configuration."
+          },
+          {
+            "question": "Are bare-foil knives and battery electrode knives interchangeable?",
+            "answer": "Bare copper or aluminium foil and coated battery electrodes are different slitting applications. A coated electrode includes the collector foil and coating layers, which influence edge-quality requirements. Even when a knife fits the arbor, its cutting profile and paired setup need checking against the actual web and station."
+          },
+          {
+            "question": "What does OD × ID × W mean for a foil slitter knife?",
+            "answer": "OD is the outside diameter, ID is the bore diameter and W is the axial knife width. W describes the knife itself, not the finished strip width. The final slit positions depend on the assembled knife-and-spacer arrangement, so the individual dimensions should be read alongside the stack drawing."
+          },
+          {
+            "question": "Which foil properties affect carbide or steel knife selection?",
+            "answer": "The foil alloy, thickness, surface condition and required slit edge all influence selection. Compare the current wear pattern and any edge chipping with the material options in the catalog. Carbide and steel configurations should be evaluated for the actual station rather than selected solely from a hardness figure."
+          },
+          {
+            "question": "What should be checked when burrs appear during foil slitting?",
+            "answer": "Inspect the knife edges, assembled clearances, arbor condition and alignment, then compare the foil specification with the setup used. Burrs are not enough to identify a single cause. Recording which edge and slit position is affected helps separate a damaged knife from a recurring stack or setup problem."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "metal-coil-slitting-knives",
+      "name": "Steel Coil Slitting Knives",
+      "fullName": "Steel Coil Slitting Knives & Rotary Shear Tooling",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Rotary shear OD 80–680 mm"
+        },
+        {
+          "label": "Material",
+          "value": "D2, SKD11, Cr12MoV, H13, 6CrW2Si, DC53, M2, PM HSS or WC-Co carbide"
+        },
+        {
+          "label": "Applications",
+          "value": "Cold-rolled, hot-rolled, stainless and high-strength coil"
+        },
+        {
+          "label": "Surface finish",
+          "value": "Mirror-lapped faces, Ra ≤0.2 μm"
+        },
+        {
+          "label": "Bore fit",
+          "value": "H7 for the listed H7 model. Other fits to drawing."
+        },
+        {
+          "label": "Typical hardness",
+          "value": "D2 58–62 HRC · H13 54–58 HRC for ambient plate slitting · PM HSS 64–66 HRC"
+        },
+        {
+          "label": "Precision options",
+          "value": "For OD up to 420 mm, ±0.001 mm thickness and 0.002 mm face parallelism. Other sizes to drawing."
+        },
+        {
+          "label": "Tooling",
+          "value": "Spacers, stripper rings and overarm separator discs"
+        },
+        {
+          "label": "Mounting",
+          "value": "Solid arbor with a plain or keyed bore"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Steel Coil Slitting Knives | Custom Tooling",
+        "sizeRange": "Rotary shear OD 80–680 mm",
+        "heroAlt": "Thick ground rotary shear knife for steel coil slitting",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/metal-coil-slitting-knives-detail.webp",
+          "alt": "Coil slitting stripper ring with a steel core and bonded outer ring"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "steel",
+            "tabLabel": "Steel Knives",
+            "title": "Steel Rotary Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Line class"
+            ],
+            "rows": [
+              [
+                "SR001301",
+                "200 × 120 × 10 mm",
+                "Light gauge"
+              ],
+              [
+                "SR001302",
+                "200 × 120 × 12 mm",
+                "Light gauge"
+              ],
+              [
+                "SR001303",
+                "250 × 150 × 12 mm",
+                "Service center"
+              ],
+              [
+                "SR001304",
+                "250 × 150 × 15 mm",
+                "Service center"
+              ],
+              [
+                "SR001305",
+                "300 × 200 H7 × 12 mm",
+                "Medium-duty"
+              ],
+              [
+                "SR001306",
+                "315 × 200 × 15 mm",
+                "Cold / hot rolled"
+              ],
+              [
+                "SR001307",
+                "315 × 200 × 20 mm",
+                "Cold / hot rolled"
+              ],
+              [
+                "SR001308",
+                "400 × 260 × 25 mm",
+                "Hot rolled"
+              ],
+              [
+                "SR001309",
+                "500 × 320 × 40 mm",
+                "Heavy plate"
+              ]
+            ]
+          },
+          {
+            "id": "carbide",
+            "tabLabel": "Carbide Knives",
+            "title": "Carbide Rotary Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Construction"
+            ],
+            "rows": [
+              [
+                "SR001331",
+                "150.1 × 95 × 6.35 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001332",
+                "181 × 125 × 9.5 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001333",
+                "204 × 125 × 10 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001334",
+                "250 × 125 × 10.1 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001335",
+                "300.15 × 160 × 28 mm",
+                "Solid carbide"
+              ]
+            ]
+          },
+          {
+            "id": "tooling",
+            "tabLabel": "Arbor Tooling",
+            "title": "Arbor Tooling",
+            "columns": [
+              "Item No.",
+              "Component",
+              "Function",
+              "Selection inputs"
+            ],
+            "rows": [
+              [
+                "SR001341",
+                "Spacers",
+                "Set cutting positions",
+                "Width, bore and stack fit"
+              ],
+              [
+                "SR001342",
+                "Stripper rings",
+                "Support and release strip",
+                "Steel or bonded elastomer, hardness and width"
+              ],
+              [
+                "SR001343",
+                "Separator discs",
+                "Guide separated strips",
+                "Overarm bore, OD and edge form"
+              ]
+            ]
+          },
+          {
+            "id": "additional-steel-knives",
+            "tabLabel": "Additional Steel Knife Sizes",
+            "title": "Additional Steel Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Application"
+            ],
+            "rows": [
+              [
+                "SR001818",
+                "400 × 260 × 20 mm",
+                "Heavy gauge hot-rolled steel"
+              ],
+              [
+                "SR001819",
+                "500 × 320 × 30 mm",
+                "Heavy plate"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Rotary shear OD 80–680 mm"
+          },
+          {
+            "label": "Material",
+            "value": "D2, SKD11, Cr12MoV, H13, 6CrW2Si, DC53, M2, PM HSS or WC-Co carbide"
+          },
+          {
+            "label": "Applications",
+            "value": "Cold-rolled, hot-rolled, stainless and high-strength coil"
+          },
+          {
+            "label": "Surface finish",
+            "value": "Mirror-lapped faces, Ra ≤0.2 μm"
+          },
+          {
+            "label": "Bore fit",
+            "value": "H7 for the listed H7 model. Other fits to drawing."
+          },
+          {
+            "label": "Typical hardness",
+            "value": "D2 58–62 HRC · H13 54–58 HRC for ambient plate slitting · PM HSS 64–66 HRC"
+          },
+          {
+            "label": "Precision options",
+            "value": "For OD up to 420 mm, ±0.001 mm thickness and 0.002 mm face parallelism. Other sizes to drawing."
+          },
+          {
+            "label": "Tooling",
+            "value": "Spacers, stripper rings and overarm separator discs"
+          },
+          {
+            "label": "Mounting",
+            "value": "Solid arbor with a plain or keyed bore"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Choose toughness for the load",
+          "description": "D2 suits many standard coil lines. Impact-heavy cuts can call for H13 or another tougher grade. Evaluate PM HSS or carbide where abrasive wear dominates."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Match tolerances to the tooling",
+          "description": "Specify thickness and parallelism together with bore fit and runout. The complete knife and spacer stack controls the cutting positions."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Support the strip after the cut",
+          "description": "Select stripper rings for the strip gauge and surface, then match separator discs to the overarm arrangement."
+        }
+      ],
+      "compatibleMachines": [
+        "Braner",
+        "Fagor Arrasate",
+        "Heinrich Georg",
+        "Burghardt + Schmidt",
+        "ANDRITZ",
+        "Red Bud Industries"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "Which details identify replacement steel coil slitting knives?",
+            "answer": "The outside diameter, bore, knife width and arbor interface define the basic fit. Also identify the strip grade and thickness, the existing knife stack and components being retained. Rotary shear knives work as part of assembled tooling, so matching an individual disc does not by itself reproduce the slit setup."
+          },
+          {
+            "question": "Can a complete custom slitter tooling stack be supplied?",
+            "answer": "Yes. The catalog includes knives, spacers, stripper rings and separator discs. The slit-width schedule and component drawings define the required arrangement. State which parts are replacements and which will remain in use so their widths, interfaces and working diameters can be checked as one assembly. State the quantity required for each configuration."
+          },
+          {
+            "question": "Are rotary shear knives and steel coil slitting knives the same?",
+            "answer": "In a coil slitting line, these terms commonly describe the circular knives that divide a moving metal strip into narrower widths. They should be distinguished from straight shear knives that cut across the strip and scrap chopper knives that cut the edge trim into short pieces."
+          },
+          {
+            "question": "How should knife material be selected for different steel coils?",
+            "answer": "Consider the strip strength, thickness and processing conditions alongside the observed knife wear. A knife suffering gradual abrasion presents a different selection problem from one that chips. The listed tool steels, HSS and carbide options allow a material discussion based on the coil specification and existing tooling."
+          },
+          {
+            "question": "Why do component tolerances matter in a mixed knife stack?",
+            "answer": "Knife and spacer widths accumulate across the assembled stack. Specify the permitted error for the completed arrangement as well as the relevant individual parts. Bore fit, face condition and parallelism also influence assembly; replacing one accurate knife does not correct errors elsewhere in the retained tooling."
+          },
+          {
+            "question": "What can cause burrs or inconsistent slit edges on a coil line?",
+            "answer": "Check blade wear and chipping together with knife clearance, overlap, arbor condition and the strip grade. Compare the position and direction of the defect across the slit pattern. That evidence helps identify whether the issue follows one knife, a particular setup or a change in processed material."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "lithium-battery-slitting-knives",
+      "name": "Battery Slitting Knives",
+      "fullName": "Lithium Battery Electrode Slitting Knives",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Electrode series OD 60–150 mm"
+        },
+        {
+          "label": "Material",
+          "value": "Fine-grain tungsten carbide (WC-Co); cermet on request"
+        },
+        {
+          "label": "Applications",
+          "value": "Coated lithium battery anode and cathode webs"
+        },
+        {
+          "label": "Electrode grades",
+          "value": "YG6X, YG6H, YG8 and YG10X"
+        },
+        {
+          "label": "Edge finish",
+          "value": "Mirror-polished cutting faces, Ra ≤0.05 μm"
+        },
+        {
+          "label": "Optional Coatings",
+          "value": "DLC or TiN"
+        },
+        {
+          "label": "Hardness",
+          "value": "91–93 HRA, depending on WC-Co grade"
+        },
+        {
+          "label": "Thickness tolerance",
+          "value": "±0.001 mm"
+        },
+        {
+          "label": "Runout",
+          "value": "≤0.01 mm T.I.R."
+        },
+        {
+          "label": "Mounting",
+          "value": "Matched upper and lower rotary knife pair by electrode slitting station"
+        },
+        {
+          "label": "Current Collector Foil",
+          "value": "Aluminum 12–20 µm; copper 6–12 µm"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Battery Electrode Slitting Knives | OEM Replacement",
+        "sizeRange": "Electrode series OD 60–150 mm",
+        "heroAlt": "Circular battery slitter knives arranged to show the bores and polished cutting faces",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/lithium-battery-slitting-knives-detail.webp",
+          "alt": "Close-up of the polished cutting edge on a circular slitter knife"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "electrode",
+            "tabLabel": "Electrode Pairs",
+            "title": "Electrode Pairs",
+            "columns": [
+              "Item No.",
+              "Series",
+              "Upper OD × ID × W",
+              "Lower OD × ID × W"
+            ],
+            "rows": [
+              [
+                "SR001351",
+                "60 series",
+                "72 × 46 × 0.5 mm",
+                "60 × 40 × 5.0 mm"
+              ],
+              [
+                "SR001352",
+                "80/98 series",
+                "98 × 66 × 0.7 mm",
+                "80 × 55 × 5.0 mm"
+              ],
+              [
+                "SR001353",
+                "100 series",
+                "100 × 65 × 0.7 mm",
+                "100 × 65 × 3.0 mm"
+              ],
+              [
+                "SR001354",
+                "100 series",
+                "100 × 65 × 1.0 mm",
+                "100 × 55 × 5.0 mm"
+              ],
+              [
+                "SR001355",
+                "130 series",
+                "130 × 88 × 0.8 mm",
+                "130 × 95 × 3.0 mm"
+              ],
+              [
+                "SR001356",
+                "130 series",
+                "130 × 97 × 1.0 mm",
+                "130 × 70 × 5.0 mm"
+              ]
+            ]
+          },
+          {
+            "id": "individual-electrode-knives",
+            "tabLabel": "Individual Electrode Knives",
+            "title": "Individual Electrode Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Configuration"
+            ],
+            "rows": [
+              [
+                "SR001820",
+                "76 × 38 × 0.5 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001821",
+                "76 × 38 × 1.0 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001822",
+                "100 × 50 × 0.5 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001823",
+                "100 × 50 × 1.0 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001824",
+                "100 × 50 × 1.5 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001825",
+                "120 × 60 × 0.5 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001826",
+                "120 × 60 × 1.0 mm",
+                "Individual knife"
+              ],
+              [
+                "SR001827",
+                "150 × 76 × 1.0 mm",
+                "Individual knife"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Electrode series OD 60–150 mm"
+          },
+          {
+            "label": "Material",
+            "value": "Fine-grain tungsten carbide (WC-Co); cermet on request"
+          },
+          {
+            "label": "Applications",
+            "value": "Coated lithium battery anode and cathode webs"
+          },
+          {
+            "label": "Electrode grades",
+            "value": "YG6X, YG6H, YG8 and YG10X"
+          },
+          {
+            "label": "Edge finish",
+            "value": "Mirror-polished cutting faces, Ra ≤0.05 μm"
+          },
+          {
+            "label": "Optional Coatings",
+            "value": "DLC or TiN"
+          },
+          {
+            "label": "Hardness",
+            "value": "91–93 HRA, depending on WC-Co grade"
+          },
+          {
+            "label": "Thickness tolerance",
+            "value": "±0.001 mm"
+          },
+          {
+            "label": "Runout",
+            "value": "≤0.01 mm T.I.R."
+          },
+          {
+            "label": "Mounting",
+            "value": "Matched upper and lower rotary knife pair by electrode slitting station"
+          },
+          {
+            "label": "Current Collector Foil",
+            "value": "Aluminum 12–20 µm; copper 6–12 µm"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Specify the electrode stack",
+          "description": "Tell us the current collector thickness, coating and whether the electrode is coated on one or both sides. Check burr height, coating debris and edge damage on the trial roll."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Match upper and lower knives",
+          "description": "Verify both shaft bores, the installed blade widths and edge orientation before ordering the pair."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Inspect the slit electrode edge",
+          "description": "On the trial roll, inspect the cut edge for coating chips and debris. Compare the result against the acceptance criteria for the electrode line."
+        }
+      ],
+      "compatibleMachines": [
+        "Nishimura",
+        "DIENES",
+        "Kampf",
+        "CIS",
+        "PNT",
+        "Hirano Tecseed",
+        "CKD",
+        "Lead Intelligent"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I match replacement knives to an electrode slitting station?",
+            "answer": "Identify both the upper and lower knives, including their bores, widths, cutting profiles and installed relationship. The station model and current drawings establish the mounting requirements. Electrode web specifications complete the selection because fitting the shaft alone does not establish suitability for the coated material."
+          },
+          {
+            "question": "Can custom upper and lower electrode knife pairs be supplied?",
+            "answer": "Yes. Custom pairs can be specified from the station drawings and the existing knife geometry. The quotation should distinguish each knife position and state which dimensions or surface options are changing. Include the electrode construction so the cutting-edge requirements are considered alongside the mechanical fit. State the quantity required for each configuration."
+          },
+          {
+            "question": "How do electrode knives differ from bare-foil slitting knives?",
+            "answer": "Electrode knives cut a coated anode or cathode web, combining a metal current collector with coating layers. Bare-foil slitting handles the uncoated copper or aluminium substrate. The two applications can have different edge and particle requirements, even where their circular knives appear similar."
+          },
+          {
+            "question": "Can I replace only the upper electrode slitter knife?",
+            "answer": "Yes, provided the retained lower knife is identified and its condition is suitable. Compare the actual diameters, widths, edge profiles and any regrinding history. The replacement must be assessed with that lower knife rather than ordered only from the upper knife dimensions."
+          },
+          {
+            "question": "What affects burrs, dust or coating damage at the slit edge?",
+            "answer": "Knife-edge condition, cutting geometry, pair alignment and the electrode structure can all contribute. Inspect the collector edge and coating separately, and note whether the defect appears on one side or across several slit positions. Machine settings and edge-quality limits should follow the validated production requirements."
+          },
+          {
+            "question": "How should carbide grade and optional coating be specified?",
+            "answer": "Specify the carbide material and coating as separate requirements. The listed DLC and TiN options do not determine the underlying carbide grade or knife geometry. Selection should consider the current wear pattern, electrode construction and acceptance criteria; changing a coating alone does not establish equivalent cutting performance."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "corrugated-slitter-scorer-blades",
+      "name": "Corrugated Board Slitter Blades",
+      "fullName": "Corrugated Board Slitter Blades for Dry-End Lines",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Thin blade OD 15–340 mm"
+        },
+        {
+          "label": "Material",
+          "value": "WC-Co carbide in K05, K10, K20, YG8, YG10, YG12X or YG15 grades"
+        },
+        {
+          "label": "Applications",
+          "value": "Longitudinal slitting on the corrugator dry end"
+        },
+        {
+          "label": "Blade options",
+          "value": "Solid disc or split construction"
+        },
+        {
+          "label": "Hardness",
+          "value": "90–92 HRA, depending on carbide grade"
+        },
+        {
+          "label": "Mounting",
+          "value": "Plain bore, fixing-hole pattern or slotted mounting pattern"
+        },
+        {
+          "label": "Production Method",
+          "value": "HIP-sintered solid tungsten carbide"
+        },
+        {
+          "label": "Edge Apex",
+          "value": "Approximately 0.3 mm"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Corrugated Slitter Blades | OEM Replacement",
+        "sizeRange": "Thin blade OD 15–340 mm",
+        "heroAlt": "Corrugated board thin slitter blades with different bore and mounting patterns",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/corrugated-slitter-scorer-blades-detail.webp",
+          "alt": "Circular corrugated slitter blade showing its large bore and fixing holes"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "thin",
+            "tabLabel": "Carbide Thin Blades",
+            "title": "Carbide Thin Blades",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Equipment reference",
+              "Mounting pattern"
+            ],
+            "rows": [
+              [
+                "SR001401",
+                "240 × 32 × 1.2 mm",
+                "BHS",
+                "2 × Ø8.5 mm"
+              ],
+              [
+                "SR001402",
+                "240 × 32 × 1.3 mm",
+                "BHS",
+                "2 × Ø8.5 mm"
+              ],
+              [
+                "SR001403",
+                "230 × 110 × 1.1 mm",
+                "Fosber",
+                "6 × Ø9 mm pattern"
+              ],
+              [
+                "SR001404",
+                "230 × 135 × 1.1 mm",
+                "Fosber",
+                "4-slot pattern"
+              ],
+              [
+                "SR001405",
+                "257 × 135 × 1.1 mm",
+                "Fosber",
+                "Match drawing"
+              ],
+              [
+                "SR001406",
+                "291 × 203 × 1.1 mm",
+                "Fosber",
+                "Match drawing"
+              ],
+              [
+                "SR001408",
+                "220 × 115 × 1.0 mm",
+                "Agnati",
+                "Match drawing"
+              ],
+              [
+                "SR001409",
+                "240 × 115 × 1.0 mm",
+                "Agnati",
+                "Match drawing"
+              ],
+              [
+                "SR001410",
+                "280 × 160 × 1.1 mm",
+                "Mitsubishi",
+                "Match drawing"
+              ],
+              [
+                "SR001411",
+                "260 × 140 × 1.1 mm",
+                "Isowa",
+                "Match drawing"
+              ],
+              [
+                "SR001412",
+                "300 × 112 × 1.2 mm",
+                "TCY",
+                "Match drawing"
+              ],
+              [
+                "SR001413",
+                "340 × 230.2 × 1.0 mm",
+                "Göpfert",
+                "Match drawing"
+              ]
+            ]
+          },
+          {
+            "id": "catalog-configurations",
+            "tabLabel": "Additional Corrugator Knife Sizes",
+            "title": "Additional Corrugator Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type / Platform Reference"
+            ],
+            "rows": [
+              [
+                "SR001828",
+                "240 × 115 × 1.0 / 1.2 mm",
+                "BHS"
+              ],
+              [
+                "SR001829",
+                "260 × 140 × 1.2 mm",
+                "BHS"
+              ],
+              [
+                "SR001830",
+                "230 × 135 × 1.15 / 1.2 mm",
+                "FOSBER"
+              ],
+              [
+                "SR001831",
+                "260 × 112 × 1.2 mm",
+                "FOSBER"
+              ],
+              [
+                "SR001832",
+                "230 × 110 × 1.2 / 1.5 mm",
+                "Marquip"
+              ],
+              [
+                "SR001833",
+                "200 × 122 × 1.2 mm",
+                "TCY / Justu"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Thin blade OD 15–340 mm"
+          },
+          {
+            "label": "Material",
+            "value": "WC-Co carbide in K05, K10, K20, YG8, YG10, YG12X or YG15 grades"
+          },
+          {
+            "label": "Applications",
+            "value": "Longitudinal slitting on the corrugator dry end"
+          },
+          {
+            "label": "Blade options",
+            "value": "Solid disc or split construction"
+          },
+          {
+            "label": "Hardness",
+            "value": "90–92 HRA, depending on carbide grade"
+          },
+          {
+            "label": "Mounting",
+            "value": "Plain bore, fixing-hole pattern or slotted mounting pattern"
+          },
+          {
+            "label": "Production Method",
+            "value": "HIP-sintered solid tungsten carbide"
+          },
+          {
+            "label": "Edge Apex",
+            "value": "Approximately 0.3 mm"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Check the mounting pattern",
+          "description": "Measure the bore, hole count, pitch circle and keying. The same outside diameter can fit several machine revisions with different fixing patterns."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Match the grinding station",
+          "description": "Specify the installed grinding system and board grade so the carbide and cutting edge suit the application."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Identify the cutting station",
+          "description": "Thin slitters divide the board longitudinally at the corrugator. Scoring wheels crease it. Arc slotter knives cut flap slots on downstream converting machines."
+        }
+      ],
+      "compatibleMachines": [
+        "BHS",
+        "Fosber",
+        "MarquipWardUnited",
+        "Agnati",
+        "Mitsubishi",
+        "Isowa",
+        "TCY",
+        "Göpfert"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I identify replacement corrugated slitter-scorer blades?",
+            "answer": "Use the machine model and knife reference together with the outside diameter, bore, thickness and fixing pattern. Check whether the installed blade is a solid disc or a split configuration. The machine brand alone is insufficient because mounting arrangements can differ between models and assemblies."
+          },
+          {
+            "question": "Do BHS and Fosber slitter blades interchange?",
+            "answer": "Some catalog dimensions may look similar, but interchangeability depends on the complete blade and mounting geometry. Compare the bore, fixing holes or slots, thickness and cutting profile against the installed part. A shared outside diameter or reference to a machine brand does not establish a replacement fit."
+          },
+          {
+            "question": "Can corrugator knives be made to a custom mounting pattern?",
+            "answer": "Yes. A drawing can specify the bore, fixing-hole arrangement, slots and blade profile required by the station. Include the original part reference or a sample when available. The pattern should be reproduced from the actual mounting requirements, rather than inferred from the corrugator name. State the quantity required for each configuration."
+          },
+          {
+            "question": "Are slitter blades, scoring tools and slotter knives the same?",
+            "answer": "They perform different operations. A corrugator slitter blade cuts the board lengthwise, a scoring tool forms a fold line, and a slotter knife cuts flap slots during box converting. Downstream male and female slotter knives have different cutting profiles and mounting arrangements from the corrugator slitting blade."
+          },
+          {
+            "question": "Why is tungsten carbide used for corrugated board slitting?",
+            "answer": "Carbide is a wear-resistant cutting-edge option for corrugated board production. The appropriate grade still depends on the blade configuration and working conditions. Check edge wear, chipping and the machine sharpening arrangement together; hardness alone does not describe how a replacement will behave on the line."
+          },
+          {
+            "question": "What should be checked around the automatic sharpening unit?",
+            "answer": "Check that the blade profile and remaining diameter suit the original sharpening arrangement, and inspect the grinding components for wear or misalignment. Sharpening settings and service limits should follow the machine documentation. A new knife should be assessed with the sharpening system rather than treated as a separate consumable."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "nonwoven-slitter-knives",
+      "name": "Nonwoven Slitter Knives",
+      "fullName": "Nonwoven Slitter Knives for Spunbond, Meltblown & SMS",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "OD 60–300 mm"
+        },
+        {
+          "label": "Materials",
+          "value": "M2 HSS, D2, tungsten carbide, 52100"
+        },
+        {
+          "label": "Hardness",
+          "value": "M2: 62–64 HRC; D2: 60–62 HRC; carbide: 89–92 HRA"
+        },
+        {
+          "label": "Tolerance",
+          "value": "Thickness ±0.002 mm"
+        },
+        {
+          "label": "Interface",
+          "value": "H7 bore, set-screw locking"
+        },
+        {
+          "label": "Geometry",
+          "value": "Bevel 25°–45°"
+        },
+        {
+          "label": "Optional Coatings",
+          "value": "PTFE, TiN, DLC or ESD conductive coating"
+        },
+        {
+          "label": "Rake Angle",
+          "value": "15°–20° positive rake"
+        },
+        {
+          "label": "Surface Finish",
+          "value": "Ra ≤0.4 µm"
+        },
+        {
+          "label": "Application",
+          "value": "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile"
+        }
+      ],
+      "standardDimensions": [
+        {
+          "od": "75 mm",
+          "id": "32 mm",
+          "thickness": "1.0 mm"
+        },
+        {
+          "od": "100 mm",
+          "id": "40 mm",
+          "thickness": "1.0 mm"
+        },
+        {
+          "od": "100 mm",
+          "id": "50 mm",
+          "thickness": "1.5 mm"
+        },
+        {
+          "od": "120 mm",
+          "id": "50 mm",
+          "thickness": "1.0 mm"
+        },
+        {
+          "od": "120 mm",
+          "id": "60 mm",
+          "thickness": "1.5 mm"
+        },
+        {
+          "od": "150 mm",
+          "id": "75 mm",
+          "thickness": "2.0 mm"
+        }
+      ],
+      "dimensionLabels": {
+        "col1": "Outer Diameter (OD)",
+        "col2": "Inner Diameter (ID)",
+        "col3": "Thickness",
+        "caption": "* Standard dimensions for common nonwoven slitting machine models. Custom OD, ID, and edge geometry available. ESD coating (+10–15% on unit price) available for all sizes."
+      },
+      "detailLayout": {
+        "heroTitle": "Nonwoven Slitter Knives for Spunbond, Meltblown & SMS",
+        "sizeRange": "OD 60–300 mm",
+        "heroSpecs": [
+          {
+            "label": "Material",
+            "value": "M2 HSS, D2, tungsten carbide, 52100"
+          },
+          {
+            "label": "Fits",
+            "value": "Pneumatic shear cut holders (80/90/100/110 type) & slitter rewinders up to",
+            "emphasis": "800 m/min"
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "OD 60–300 mm"
+          },
+          {
+            "label": "Materials",
+            "value": "M2 HSS, D2, tungsten carbide, 52100"
+          },
+          {
+            "label": "Hardness",
+            "value": "M2: 62–64 HRC; D2: 60–62 HRC; carbide: 89–92 HRA"
+          },
+          {
+            "label": "Tolerance",
+            "value": "Thickness ±0.002 mm"
+          },
+          {
+            "label": "Interface",
+            "value": "H7 bore, set-screw locking"
+          },
+          {
+            "label": "Geometry",
+            "value": "Bevel 25°–45°"
+          },
+          {
+            "label": "Optional Coatings",
+            "value": "PTFE, TiN, DLC or ESD conductive coating"
+          },
+          {
+            "label": "Rake Angle",
+            "value": "15°–20° positive rake"
+          },
+          {
+            "label": "Surface Finish",
+            "value": "Ra ≤0.4 µm"
+          },
+          {
+            "label": "Application",
+            "value": "Spunbond PP, Meltblown, SMS/SMMS, Hydroentangled, Geotextile"
+          }
+        ],
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "top",
+            "tabLabel": "Top Slitter Blades",
+            "title": "Top Slitter Blades (Shear Cut – Dished & Flat)",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Profile",
+              "Material Options",
+              "Holder Fit"
+            ],
+            "rows": [
+              [
+                "SR001101",
+                "76.2 × 17.0 × 1.00 mm",
+                "Dished",
+                "M2 HSS / D2",
+                "Type 80"
+              ],
+              [
+                "SR001102",
+                "90.0 × 22.0 × 1.20 mm",
+                "Dished",
+                "M2 HSS / Carbide",
+                "Type 90"
+              ],
+              [
+                "SR001103",
+                "100.0 × 40.0 × 1.20 mm",
+                "Dished",
+                "M2 HSS / ASP-23",
+                "Dienes / Cotta 100"
+              ],
+              [
+                "SR001104",
+                "105.0 × 40.0 × 1.50 mm",
+                "Dished",
+                "M2 HSS / D2",
+                "Type 105 / 110"
+              ],
+              [
+                "SR001105",
+                "130.0 × 60.0 × 1.50 mm",
+                "Dished",
+                "M2 HSS / D2",
+                "Dienes PSG"
+              ],
+              [
+                "SR001106",
+                "150.0 × 70.0 × 2.00 mm",
+                "Dished / Flat",
+                "D2 / M2 HSS",
+                "A.Celli"
+              ],
+              [
+                "SR001107",
+                "200.0 × 80.0 × 3.00 mm",
+                "Flat",
+                "D2 / Cr12MoV",
+                "—"
+              ]
+            ]
+          },
+          {
+            "id": "bottom",
+            "tabLabel": "Bottom Rings & Crush Cutters",
+            "title": "Bottom Slitter Rings & Crush Cutters",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type",
+              "Material Options",
+              "Key Specification"
+            ],
+            "rows": [
+              [
+                "SR001108",
+                "80.0 × 50.0 × 15.0 mm",
+                "Bottom Anvil Ring",
+                "D2 / 52100",
+                "H7 Bore, Set Screw"
+              ],
+              [
+                "SR001109",
+                "100.0 × 60.0 × 20.0 mm",
+                "Double-Edge Ring",
+                "D2 / M2 HSS",
+                "Air / Solid Shafts"
+              ],
+              [
+                "SR001110",
+                "126.0 × 76.2 × 50.0 mm",
+                "Multi-Groove Sleeve",
+                "D2 / Cr12MoV",
+                "Groove Width ±0.01 mm"
+              ],
+              [
+                "SR001111",
+                "76.2 × 19.05 × 4.76 mm",
+                "Score / Crush Cutter",
+                "52100 / M2 HSS",
+                "R0.05–R0.1 mm Tip Radius"
+              ],
+              [
+                "SR001112",
+                "100.0 × 25.4 × 6.00 mm",
+                "Heavy-Duty Crush Cutter",
+                "52100 / D2",
+                "For Thick Felt & Batting"
+              ]
+            ]
+          },
+          {
+            "id": "additional-nonwoven-knives",
+            "tabLabel": "Additional Nonwoven Knife Sizes",
+            "title": "Additional Nonwoven Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type"
+            ],
+            "rows": [
+              [
+                "SR001834",
+                "75 × 32 × 1.0 mm",
+                "Nonwoven slitter knife"
+              ],
+              [
+                "SR001835",
+                "100 × 40 × 1.0 mm",
+                "Nonwoven slitter knife"
+              ],
+              [
+                "SR001836",
+                "100 × 50 × 1.5 mm",
+                "Nonwoven slitter knife"
+              ],
+              [
+                "SR001837",
+                "120 × 50 × 1.0 mm",
+                "Nonwoven slitter knife"
+              ],
+              [
+                "SR001838",
+                "120 × 60 × 1.5 mm",
+                "Nonwoven slitter knife"
+              ],
+              [
+                "SR001839",
+                "150 × 75 × 2.0 mm",
+                "Nonwoven slitter knife"
+              ]
+            ]
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "rake-geometry",
+          "tag": "EDGE DESIGN",
+          "title": "Nonwoven-Optimised Rake Angle",
+          "description": "Standard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle. For loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min."
+        },
+        {
+          "id": "esd-coating",
+          "tag": "SURFACE TREATMENT",
+          "title": "ESD Conductive Coating",
+          "description": "Electrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed. On meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction."
+        },
+        {
+          "id": "medical-traceability",
+          "tag": "COMPLIANCE",
+          "title": "Medical Batch Traceability",
+          "description": "For converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number. Documentation is formatted for inclusion in your supplier qualification file."
+        }
+      ],
+      "compatibleMachines": [
+        "Tidland",
+        "Pneumatic",
+        "Dienes",
+        "Mario Cotta"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I choose replacement knives for a nonwoven slitting line?",
+            "answer": "Identify the cutting method, knife holder and mating component before choosing the blade. Include the nonwoven construction and basis weight because different webs respond differently at the slit edge. A replacement must match the installed geometry as well as the material, whether the station uses shear or crush cutting."
+          },
+          {
+            "question": "Can custom nonwoven slitter profiles and coatings be specified?",
+            "answer": "Yes. The bore, cutting profile and mounting dimensions can be specified from a drawing or sample. Optional coatings should be selected with the blade substrate and web application. The order should distinguish the base knife geometry from the coating so any change can be evaluated separately."
+          },
+          {
+            "question": "Are shear knives and crush cutters suitable for the same holder?",
+            "answer": "They use different cutting arrangements. Shear knives cooperate with a mating cutting edge, while crush cutters press against a supporting surface. Nonwoven lines can use either approach, but the holder and anvil or lower knife determine compatibility. The web description alone does not identify the correct replacement."
+          },
+          {
+            "question": "What can cause fraying or loose fibres during nonwoven slitting?",
+            "answer": "Loose fibres can result from edge wear, unsuitable cutting geometry, unstable support or an unsuitable setup for the web construction. Inspect the cut edge and both working components, and compare results at the normal production settings. Line speed and basis weight alone do not determine one universal rake angle."
+          },
+          {
+            "question": "Does fibre buildup always mean the blade needs an antistatic coating?",
+            "answer": "No. Inspect residue, blade condition, web handling and the existing cutting setup before attributing buildup to static. A conductive coating addresses a different issue from a damaged edge or poor cutting support. Select an ESD or other coating for the diagnosed condition rather than assuming it will resolve every contamination problem."
+          },
+          {
+            "question": "How do material choices differ for nonwoven slitter knives?",
+            "answer": "The catalog includes M2 HSS, D2, bearing steel and carbide options. Selection should reflect the web construction, edge wear and stability of the cutting pair. Compare gradual wear with chipping or impact damage; the highest hardness or a coating change alone does not guarantee the best result."
+          },
+          {
+            "question": "What inspection information is useful for hygiene or medical converting?",
+            "answer": "Define the required material identification, hardness and dimensional checks in the purchasing specification. Batch and purchase-order references help connect the supplied knife to its inspection records. Agree the documentation scope before ordering; a blade inspection report is not a substitute for qualification of the finished medical or hygiene product."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "bottom-grooved-anvil-knives",
+      "name": "Bottom Grooved Anvil Knives",
+      "fullName": "Bottom Grooved Anvil Knives for Shear Slitting",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Grooved rings OD 46–250 mm"
+        },
+        {
+          "label": "Material",
+          "value": "52100, D2, M2 HSS, PM HSS (including ASP23), solid carbide or carbide-tipped construction"
+        },
+        {
+          "label": "Applications",
+          "value": "Film, paper, foil and nonwoven slitting"
+        },
+        {
+          "label": "Razor sleeves",
+          "value": "Relieved groove to clear the razor edge"
+        },
+        {
+          "label": "Groove width tolerance",
+          "value": "±0.01 mm"
+        },
+        {
+          "label": "Face flatness",
+          "value": "≤0.003 mm"
+        },
+        {
+          "label": "Bore tolerance",
+          "value": "H6 finish-ground bore"
+        },
+        {
+          "label": "Optional Coatings",
+          "value": "TiN on the groove face, DLC or PTFE (Teflon)"
+        },
+        {
+          "label": "Runout",
+          "value": "≤0.02 mm T.I.R."
+        },
+        {
+          "label": "Mounting",
+          "value": "Plain bore (NN), eccentric lock (NG), set-screw lock (NS), or split-ring / clamp mounting"
+        },
+        {
+          "label": "Shear Clearance",
+          "value": "0.02–0.15 mm, according to the substrate and knife pair"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Bottom Grooved Anvil Knives | Replacement Rings",
+        "sizeRange": "Grooved rings OD 46–250 mm",
+        "heroAlt": "Grooved bottom anvil knives and detachable cutting rings",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/bottom-grooved-anvil-knives-detail.webp",
+          "alt": "Two bottom rings showing the recessed running face and cutting shoulder"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "ring",
+            "tabLabel": "Grooved Rings",
+            "title": "Grooved Rings",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Profile or reference"
+            ],
+            "rows": [
+              [
+                "SR001451",
+                "46 × 25 × 5 mm",
+                "DIENES dimensional series"
+              ],
+              [
+                "SR001452",
+                "80 × 60 × 10 mm",
+                "Grooved bottom ring"
+              ],
+              [
+                "SR001453",
+                "105 × 90 × 15 mm",
+                "Grooved bottom ring"
+              ],
+              [
+                "SR001454",
+                "105 × 90 × 8 mm",
+                "Kampf dimensional reference"
+              ],
+              [
+                "SR001455",
+                "105 × 90 × 17 mm",
+                "Kampf dimensional reference"
+              ]
+            ]
+          },
+          {
+            "id": "groove-profile-configurations",
+            "tabLabel": "Groove Profile Configurations",
+            "title": "Groove Profile Configurations",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Platform Reference",
+              "Groove Profile"
+            ],
+            "rows": [
+              [
+                "SR001840",
+                "70 × 25.4 × 8 / 10 mm",
+                "Tidland — Single Groove",
+                "W: 1.2 × D: 2.0 / 60°"
+              ],
+              [
+                "SR001841",
+                "100 × 60 × 20 / 25 mm",
+                "Atlas — 3-Slot Anvil",
+                "W: 1.5 × D: 2.5 / 60°"
+              ],
+              [
+                "SR001842",
+                "80 × 30 × 10 mm",
+                "Mario Cotta — Single Groove",
+                "W: 1.3 × D: 2.2 / 45°"
+              ],
+              [
+                "SR001843",
+                "130 × 80 × 12 mm",
+                "Dienes — Single Groove",
+                "W: 1.5 × D: 3.0 / 60°"
+              ],
+              [
+                "SR001844",
+                "Per drawing",
+                "Custom Anvil / Hardfaced",
+                "OEM Spec; Exact CNC Machined Groove"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Grooved rings OD 46–250 mm"
+          },
+          {
+            "label": "Material",
+            "value": "52100, D2, M2 HSS, PM HSS (including ASP23), solid carbide or carbide-tipped construction"
+          },
+          {
+            "label": "Applications",
+            "value": "Film, paper, foil and nonwoven slitting"
+          },
+          {
+            "label": "Razor sleeves",
+            "value": "Relieved groove to clear the razor edge"
+          },
+          {
+            "label": "Groove width tolerance",
+            "value": "±0.01 mm"
+          },
+          {
+            "label": "Face flatness",
+            "value": "≤0.003 mm"
+          },
+          {
+            "label": "Bore tolerance",
+            "value": "H6 finish-ground bore"
+          },
+          {
+            "label": "Optional Coatings",
+            "value": "TiN on the groove face, DLC or PTFE (Teflon)"
+          },
+          {
+            "label": "Runout",
+            "value": "≤0.02 mm T.I.R."
+          },
+          {
+            "label": "Mounting",
+            "value": "Plain bore (NN), eccentric lock (NG), set-screw lock (NS), or split-ring / clamp mounting"
+          },
+          {
+            "label": "Shear Clearance",
+            "value": "0.02–0.15 mm, according to the substrate and knife pair"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Match the groove to the top knife",
+          "description": "Match groove width, depth and working shoulder to the mating top knife. Rings with the same outer diameter and bore can place the cutting face at different positions."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Choose the correct locking design",
+          "description": "Confirm the shaft type and existing locking method before matching the ring. A photo of the eccentric lock, set screw or clamp helps identify the mounting."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Distinguish shear from razor support",
+          "description": "A shear anvil has a working cutting shoulder. A razor-in-groove sleeve supports the web while the groove keeps the razor clear of the sleeve."
+        }
+      ],
+      "compatibleMachines": [
+        "DIENES",
+        "Mario Cotta",
+        "Tidland",
+        "Kampf",
+        "Goebel",
+        "Atlas",
+        "Nishimura"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I select a replacement grooved anvil knife?",
+            "answer": "Identify the working edge, groove profile and shaft locking arrangement, then compare outside diameter, bore and ring width. The mating upper knife is part of the selection. A visually similar grooved ring may support a different cutting method or put its working edge at a different axial position."
+          },
+          {
+            "question": "Can grooved rings be custom-made for an existing slitter shaft?",
+            "answer": "Yes. A drawing can define the bore, ring width, groove dimensions, edge position and locking detail. For a sample-based replacement, distinguish worn cutting surfaces from the mounting surfaces. Include the mating knife dimensions so the new ring can be checked against the actual cutting arrangement. State the quantity required for each configuration."
+          },
+          {
+            "question": "Can a razor support sleeve replace a shear-slitting anvil?",
+            "answer": "These parts have different working profiles. A razor support sleeve provides clearance for a razor edge, while a shear anvil supplies a cooperating cutting edge. The presence of a groove does not make them equivalent. Identify the cutting method and mating blade before selecting either component."
+          },
+          {
+            "question": "What do NN, NG and NS mounting types mean?",
+            "answer": "In the mounting descriptions used here, NN denotes a plain bore, NG an eccentric locking arrangement and NS screw locking. These labels identify a mounting concept, not a complete interchangeable size. Compare the bore, ring width and working profile as well as the locking method."
+          },
+          {
+            "question": "Which dimensions matter besides outside diameter and bore?",
+            "answer": "Ring width establishes the axial envelope, while groove width, depth and cutting-edge position define the working profile. Shaft fit and locking details establish how the ring is retained. These features should be read together on a drawing because equal OD and ID values do not guarantee the same cutting geometry."
+          },
+          {
+            "question": "How does a single grooved ring differ from a multi-groove knife block?",
+            "answer": "A multi-groove block provides several possible cutting positions on one body. A grooved anvil ring is selected for its particular edge profile and mounting arrangement. Choose by the station layout and required slit positions; the number and location of working edges matter more than the general name bottom knife."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "tungsten-carbide-slitter-knives",
+      "name": "Tungsten Carbide Slitter Knives",
+      "fullName": "Tungsten Carbide Slitter Knives – Solid & Tipped",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Thin profiles: OD 20–300 mm × 0.3–5.0 mm; corrugator OD 220–340 mm; rotary OD 150.1–300.15 mm"
+        },
+        {
+          "label": "Material",
+          "value": "WC-Co carbide in YG6, YG6X, YG8, YG10X, YG12X and YG15 grades"
+        },
+        {
+          "label": "Applications",
+          "value": "Corrugated board, film, electrode web and metal strip"
+        },
+        {
+          "label": "Hardness",
+          "value": "89.5–92.5 HRA, depending on carbide grade"
+        },
+        {
+          "label": "Fine-grain options",
+          "value": "0.4–0.8 μm carbide grain size"
+        },
+        {
+          "label": "Construction",
+          "value": "Solid carbide disc or steel body with a carbide cutting ring"
+        },
+        {
+          "label": "Precision options",
+          "value": "Thickness ±0.002 mm; face parallelism ≤0.005 mm; T.I.R. ≤0.01 mm"
+        },
+        {
+          "label": "Edge finish",
+          "value": "Ra 0.2–0.4 μm"
+        },
+        {
+          "label": "Edge Geometry",
+          "value": "Single bevel, double bevel, hollow-ground or razor profile"
+        },
+        {
+          "label": "Optional Coatings",
+          "value": "DLC, TiN or TiAlN; uncoated knives also available"
+        },
+        {
+          "label": "Transverse Rupture Strength",
+          "value": "2,500–3,000 N/mm²"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Tungsten Carbide Slitter Knives | Custom Sizes",
+        "sizeRange": "OD 20–340 mm",
+        "heroAlt": "Three solid tungsten carbide circular slitter knives",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/tungsten-carbide-slitter-knives-detail.webp",
+          "alt": "Rewinder bottom knife rings showing the body and cutting perimeter"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "thin",
+            "tabLabel": "Carbide Thin Blades",
+            "title": "Carbide Thin Blades",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Equipment reference",
+              "Mounting pattern"
+            ],
+            "rows": [
+              [
+                "SR001401",
+                "240 × 32 × 1.2 mm",
+                "BHS",
+                "2 × Ø8.5 mm"
+              ],
+              [
+                "SR001402",
+                "240 × 32 × 1.3 mm",
+                "BHS",
+                "2 × Ø8.5 mm"
+              ],
+              [
+                "SR001403",
+                "230 × 110 × 1.1 mm",
+                "Fosber",
+                "6 × Ø9 mm pattern"
+              ],
+              [
+                "SR001404",
+                "230 × 135 × 1.1 mm",
+                "Fosber",
+                "4-slot pattern"
+              ],
+              [
+                "SR001405",
+                "257 × 135 × 1.1 mm",
+                "Fosber",
+                "Match drawing"
+              ],
+              [
+                "SR001406",
+                "291 × 203 × 1.1 mm",
+                "Fosber",
+                "Match drawing"
+              ],
+              [
+                "SR001408",
+                "220 × 115 × 1.0 mm",
+                "Agnati",
+                "Match drawing"
+              ],
+              [
+                "SR001409",
+                "240 × 115 × 1.0 mm",
+                "Agnati",
+                "Match drawing"
+              ],
+              [
+                "SR001410",
+                "280 × 160 × 1.1 mm",
+                "Mitsubishi",
+                "Match drawing"
+              ],
+              [
+                "SR001411",
+                "260 × 140 × 1.1 mm",
+                "Isowa",
+                "Match drawing"
+              ],
+              [
+                "SR001412",
+                "300 × 112 × 1.2 mm",
+                "TCY",
+                "Match drawing"
+              ],
+              [
+                "SR001413",
+                "340 × 230.2 × 1.0 mm",
+                "Göpfert",
+                "Match drawing"
+              ]
+            ]
+          },
+          {
+            "id": "carbide",
+            "tabLabel": "Carbide Knives",
+            "title": "Carbide Rotary Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Construction"
+            ],
+            "rows": [
+              [
+                "SR001331",
+                "150.1 × 95 × 6.35 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001332",
+                "181 × 125 × 9.5 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001333",
+                "204 × 125 × 10 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001334",
+                "250 × 125 × 10.1 mm",
+                "Solid carbide"
+              ],
+              [
+                "SR001335",
+                "300.15 × 160 × 28 mm",
+                "Solid carbide"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Thin profiles: OD 20–300 mm × 0.3–5.0 mm; corrugator OD 220–340 mm; rotary OD 150.1–300.15 mm"
+          },
+          {
+            "label": "Material",
+            "value": "WC-Co carbide in YG6, YG6X, YG8, YG10X, YG12X and YG15 grades"
+          },
+          {
+            "label": "Applications",
+            "value": "Corrugated board, film, electrode web and metal strip"
+          },
+          {
+            "label": "Hardness",
+            "value": "89.5–92.5 HRA, depending on carbide grade"
+          },
+          {
+            "label": "Fine-grain options",
+            "value": "0.4–0.8 μm carbide grain size"
+          },
+          {
+            "label": "Construction",
+            "value": "Solid carbide disc or steel body with a carbide cutting ring"
+          },
+          {
+            "label": "Precision options",
+            "value": "Thickness ±0.002 mm; face parallelism ≤0.005 mm; T.I.R. ≤0.01 mm"
+          },
+          {
+            "label": "Edge finish",
+            "value": "Ra 0.2–0.4 μm"
+          },
+          {
+            "label": "Edge Geometry",
+            "value": "Single bevel, double bevel, hollow-ground or razor profile"
+          },
+          {
+            "label": "Optional Coatings",
+            "value": "DLC, TiN or TiAlN; uncoated knives also available"
+          },
+          {
+            "label": "Transverse Rupture Strength",
+            "value": "2,500–3,000 N/mm²"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Choose the structure first",
+          "description": "Choose between a solid carbide disc and a steel body with a carbide cutting ring. Match the construction to the original knife, how the holder supports it and the loads at the cutting edge."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Balance abrasion with edge loading",
+          "description": "Use the wear pattern to guide grade selection. A fine, hard grade can help when abrasion wears the edge evenly. A tougher grade and better edge support can help when the edge chips."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Find sizes by application",
+          "description": "The standard tables cover corrugator thin blades and solid carbide rotary knives for steel coils. Use the application pages to match equipment references and mounting details.",
+          "relatedBladeIds": [
+            "corrugated-slitter-scorer-blades",
+            "metal-coil-slitting-knives"
+          ]
+        }
+      ],
+      "compatibleMachines": [
+        "BHS",
+        "Fosber",
+        "Dusenbery",
+        "DIENES",
+        "Tidland",
+        "Nishimura",
+        "Fagor Arrasate"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "Can carbide slitter knives be made to custom dimensions?",
+            "answer": "Yes. Specify the complete knife geometry, including the bore, axial section and cutting profile, together with the application. The catalog covers more than one construction and machine type. An outside-diameter range does not mean every bore, thickness and edge form can be combined into one configuration. State the quantity required for each configuration."
+          },
+          {
+            "question": "What is the difference between solid and carbide-tipped knives?",
+            "answer": "A solid carbide knife uses carbide through the knife body. A carbide-tipped design combines a steel body with a carbide working edge or ring. The two constructions can have different mounting and service requirements, so the selected structure should be stated explicitly rather than specified only as carbide."
+          },
+          {
+            "question": "Are carbide rotary knives and carbide slitter blades the same?",
+            "answer": "These names commonly refer to circular cutting tools with a carbide working edge. They do not identify the application or exact knife geometry. A corrugator thin blade, an electrode knife and a metal coil rotary shear may all use carbide but require different dimensions and cutting arrangements."
+          },
+          {
+            "question": "Does a higher carbide hardness always give longer service life?",
+            "answer": "Hardness is one selection factor, alongside grade structure, edge geometry and the working conditions. A blade that wears gradually presents a different problem from one that chips. Compare the actual wear or damage pattern before changing grade; a harder edge cannot correct poor support or incorrect machine setup."
+          },
+          {
+            "question": "Are similarly named carbide grades directly interchangeable?",
+            "answer": "Grade names alone do not establish equivalence between suppliers or grading systems. The carbide grain structure, binder content and intended application also matter. Use the specified material requirements and current performance to assess a replacement rather than matching only a similar number or hardness range."
+          },
+          {
+            "question": "How do I match a carbide replacement to an OEM machine?",
+            "answer": "Use the machine-specific knife drawing or part reference, not carbide grade alone. The bore, profile, mounting arrangement and mating component must match the station. The corrugated, electrode and steel coil product pages provide application-specific configurations; repeated Sureay Item No. references identify the same catalog configuration."
+          },
+          {
+            "question": "Should carbide slitter knives be coated?",
+            "answer": "Coating is an option rather than an automatic requirement. The catalog includes uncoated knives and selected DLC, TiN or TiAlN options. Assess the substrate, processed material and observed wear before choosing; the required knife geometry and mounting dimensions remain important with either a coated or uncoated edge."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "slitter-rewinder-bottom-knives",
+      "name": "Slitter Rewinder Bottom Knives",
+      "fullName": "Slitter Rewinder Bottom Knives – Cup, Double Edge & Tipped",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "OD 70–300 mm"
+        },
+        {
+          "label": "Material",
+          "value": "52100, D2, M2 HSS, PM HSS, solid tungsten carbide or WC-Co on a steel body"
+        },
+        {
+          "label": "Applications",
+          "value": "Paper slitter rewinders and other web converting lines"
+        },
+        {
+          "label": "Profiles",
+          "value": "Cup, double edge or replaceable cutting ring"
+        },
+        {
+          "label": "Carbide options",
+          "value": "Tipped and inlay constructions for the working edge"
+        },
+        {
+          "label": "Mounting",
+          "value": "Flange mounting, keyed bore or plain shaft bore"
+        },
+        {
+          "label": "Face finish",
+          "value": "Mirror finished"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Slitter Rewinder Bottom Knives | OEM Replacement",
+        "sizeRange": "OD 70–300 mm",
+        "heroAlt": "Circular rewinder bottom knives with several flange and mounting hole patterns",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/slitter-rewinder-bottom-knives-detail.webp",
+          "alt": "Close-up of rewinder bottom knives with drilled and recessed flange faces"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "flange",
+            "tabLabel": "Flange & Double Edge",
+            "title": "Flange-Mounted and Double-Edge Bottom Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Mounting or edge",
+              "Reference"
+            ],
+            "rows": [
+              [
+                "SR001211",
+                "105 × 80 × 15 mm",
+                "Flange",
+                "DIENES dimensional series"
+              ],
+              [
+                "SR001212",
+                "130 × 90 × 20 mm",
+                "Flange",
+                "DIENES dimensional series"
+              ],
+              [
+                "SR001213",
+                "190 × 138 × 15 mm",
+                "Double edge",
+                "Tidland TID131393"
+              ],
+              [
+                "SR001214",
+                "130 × 100 × 30 mm",
+                "Double edge",
+                "Tidland TID133503"
+              ],
+              [
+                "SR001215",
+                "250 × 188 × 15 mm",
+                "Double edge",
+                "Tidland TID131395"
+              ]
+            ]
+          },
+          {
+            "id": "tipped",
+            "tabLabel": "Carbide Edge",
+            "title": "Bottom Knives with a Carbide Cutting Edge",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Construction",
+              "Reference"
+            ],
+            "rows": [
+              [
+                "SR001561",
+                "90.81 × 60.00 × 12.70 mm",
+                "Carbide-tipped",
+                "Dusenbery 783533"
+              ]
+            ]
+          },
+          {
+            "id": "keyed",
+            "tabLabel": "Keyway Mount",
+            "title": "Bottom Knives with a Keyway",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Mounting"
+            ],
+            "rows": [
+              [
+                "SR001571",
+                "70 × 45 × 10 mm",
+                "10 mm keyway series"
+              ],
+              [
+                "SR001572",
+                "80 × 50 × 10 mm",
+                "10 mm keyway series"
+              ],
+              [
+                "SR001573",
+                "108 × 80 × 20 mm",
+                "10 mm keyway series"
+              ]
+            ]
+          },
+          {
+            "id": "additional-rewinder-knives",
+            "tabLabel": "Additional Rewinder Knife Sizes",
+            "title": "Additional Rewinder Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Knife Type"
+            ],
+            "rows": [
+              [
+                "SR001845",
+                "250 × 188 × 25 mm",
+                "Rewinder bottom knife"
+              ],
+              [
+                "SR001846",
+                "254 × 195 × 50 mm",
+                "Rewinder bottom knife"
+              ],
+              [
+                "SR001847",
+                "250 × 140 × 20 mm",
+                "Rewinder bottom knife"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "OD 70–300 mm"
+          },
+          {
+            "label": "Material",
+            "value": "52100, D2, M2 HSS, PM HSS, solid tungsten carbide or WC-Co on a steel body"
+          },
+          {
+            "label": "Applications",
+            "value": "Paper slitter rewinders and other web converting lines"
+          },
+          {
+            "label": "Profiles",
+            "value": "Cup, double edge or replaceable cutting ring"
+          },
+          {
+            "label": "Carbide options",
+            "value": "Tipped and inlay constructions for the working edge"
+          },
+          {
+            "label": "Mounting",
+            "value": "Flange mounting, keyed bore or plain shaft bore"
+          },
+          {
+            "label": "Face finish",
+            "value": "Mirror finished"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Identify the rewinder and mounting",
+          "description": "Start with the rewinder model and the original bottom knife reference. For a flange mount, check the bolt pattern and locating face. For a keyed bore, include the keyway width and bore fit."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Select the cutting face",
+          "description": "Match the original cup or double-edge profile and its cutting face offset. Check the working edge and where the mating top knife seats before specifying a replacement."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Choose between solid and tipped",
+          "description": "Compare wear on the current cutting face before moving to a carbide-tipped construction. Supply the original profile and any approved regrind allowance."
+        }
+      ],
+      "compatibleMachines": [
+        "DIENES",
+        "Tidland",
+        "Mario Cotta",
+        "Jagenberg",
+        "Valmet",
+        "Voith",
+        "Dusenbery",
+        "Cameron"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How do I identify a replacement slitter rewinder bottom knife?",
+            "answer": "Use the machine model or part reference together with the actual mounting arrangement. Compare outside diameter, bore, width, flange details and any fixing holes. Rewinders can have several different knife assemblies, so a machine name alone does not identify the correct bottom knife."
+          },
+          {
+            "question": "Are bottom bands, lower knives and female knives the same?",
+            "answer": "These are common names for the lower cutting member in a shear-slitting system. They identify the position more than the construction. Cup knives, double-edge knives and replaceable cutting rings can all serve that role, but their mounts and working profiles must be checked before treating them as interchangeable."
+          },
+          {
+            "question": "Can custom bottom knives be supplied for an older rewinder?",
+            "answer": "Yes. A drawing or sample can establish the bore, flange, working width and cutting profile. Include the retained upper knife dimensions and identify any previous regrinding. This gives the replacement a defined relationship to the existing assembly rather than relying only on an older machine designation. State the quantity required for each configuration."
+          },
+          {
+            "question": "How do cup, double-edge and replaceable-ring designs differ?",
+            "answer": "A cup knife has a shaped body that locates its working edge relative to the mount. A double-edge design offers two working cutting faces, while a replaceable-ring assembly separates the cutting ring from its support. The appropriate choice follows the installed holder and cutting geometry."
+          },
+          {
+            "question": "When is a multi-groove bottom knife more appropriate?",
+            "answer": "A multi-groove body provides several cutting positions along its width, which can suit a station designed around those positions. A dedicated bottom knife provides the profile required by an individual mounting arrangement. The station design determines the choice; it is not simply a substitute selected by outside diameter."
+          },
+          {
+            "question": "What should be checked when only the bottom knife is replaced?",
+            "answer": "Inspect the retained top knife, mounting faces and relevant working diameters. A new lower knife must cooperate with the existing upper edge and holder travel. If either knife has been reground, compare the remaining profile and dimensions before confirming the replacement configuration."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "corrugated-slotter-knives",
+      "name": "Corrugated Slotter Knives",
+      "fullName": "Corrugated Slotter Knives – Male & Female Blades",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "D2, M2 HSS, 9CrSi, 9Mn2V, 52100 or carbide-tipped counter knives"
+        },
+        {
+          "label": "Applications",
+          "value": "Corrugated flap slotting on flexo folder-gluers and printer-slotters"
+        },
+        {
+          "label": "Typical hardness",
+          "value": "D2 58–62 HRC · M2 62–65 HRC · Carbide working edge 89–92 HRA"
+        },
+        {
+          "label": "Male blade",
+          "value": "Plain or serrated arc, with stitch-lap and corner segments available"
+        },
+        {
+          "label": "Female assembly",
+          "value": "Two counter-knife halves with a matched spacer"
+        },
+        {
+          "label": "Mounting",
+          "value": "Round holes, countersunk holes or arc adjustment slots"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Corrugated Slotter Knives | OEM Replacement",
+        "sizeRange": "Arc series R105–R406 mm",
+        "heroAlt": "Arc-shaped corrugated slotter components with round mounting holes and elongated slots",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/box-slotting-knives-detail-white.webp",
+          "alt": "Detail of curved slotter segments showing round fixing holes and arc adjustment slots"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "male",
+            "tabLabel": "Male Blades",
+            "title": "Male Slotter Blades",
+            "columns": [
+              "Item No.",
+              "Outer R × Inner r × T",
+              "Arc angle",
+              "Edge"
+            ],
+            "rows": [
+              [
+                "SR001601",
+                "105 × 58 × 5 mm",
+                "To drawing",
+                "Plain or serrated"
+              ],
+              [
+                "SR001602",
+                "113 × 63.5 × 7.5 mm",
+                "To drawing",
+                "Plain or serrated"
+              ],
+              [
+                "SR001603",
+                "115 × 58 × 8 mm",
+                "To drawing",
+                "Plain or serrated"
+              ],
+              [
+                "SR001604",
+                "168.7 × 120.3 × 8 mm",
+                "36.2°",
+                "To drawing"
+              ],
+              [
+                "SR001605",
+                "213.5 × 130 × 7.5 mm",
+                "20.5°",
+                "To drawing"
+              ],
+              [
+                "SR001606",
+                "213.5 × 130 × 7.5 mm",
+                "72°",
+                "To drawing"
+              ],
+              [
+                "SR001607",
+                "212 × 159 × 10 mm",
+                "60°",
+                "To drawing"
+              ],
+              [
+                "SR001608",
+                "281.5 × 237.5 × 7.2 mm",
+                "88°",
+                "To drawing"
+              ],
+              [
+                "SR001609",
+                "406 × 316 × 7.9 mm",
+                "To drawing",
+                "To drawing"
+              ]
+            ]
+          },
+          {
+            "id": "female",
+            "tabLabel": "Female Knives",
+            "title": "Female Counter Knives",
+            "columns": [
+              "Item No.",
+              "Configuration",
+              "Dimensions",
+              "Mounting or reference"
+            ],
+            "rows": [
+              [
+                "SR001610",
+                "Plain counter knife",
+                "OD 90–450 mm range",
+                "Mounting and thickness to drawing"
+              ],
+              [
+                "SR001611",
+                "Split counter knife",
+                "OD 90–450 mm range",
+                "Plain lower halves, spacer to drawing"
+              ],
+              [
+                "SR001612",
+                "Carbide-tipped lower set",
+                "To matched slot and drawing",
+                "Confirm lower shaft and upper blade"
+              ]
+            ]
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Choose plain or serrated male arcs",
+          "description": "Plain arcs and serrated arcs engage the board differently. Share the flute, liner and recycled content, plus photos of torn or crushed slots."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Match both counter faces and the spacer",
+          "description": "The female assembly controls the support and clearance around the male blade. Check the spacer and both edges before replacing only one part."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Identify the converting station",
+          "description": "Specify the printer-slotter or flexo folder-gluer station and the required arc. For corrugator dry-end cutting, use thin slitter blades."
+        }
+      ],
+      "compatibleMachines": [
+        "BOBST",
+        "Martin",
+        "EMBA",
+        "Mitsubishi EVOL",
+        "Isowa",
+        "Göpfert",
+        "MarquipWardUnited",
+        "TCY",
+        "Shinko",
+        "Dongfang"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "How are replacement slotter knives matched to a box machine?",
+            "answer": "Identify the slotter station, part reference and whether the component is a male arc, female counter knife or spacer. The arc geometry, thickness, mounting pattern and installed hand must agree with the existing assembly. A machine brand by itself does not define all of these features."
+          },
+          {
+            "question": "What is the difference between male and female slotter knives?",
+            "answer": "The male knife enters the female knife assembly to form the board slot. The female counter faces and their spacer establish the cooperating opening. They work together but are different parts, so a replacement order should identify the blade position and the dimensions of the retained components."
+          },
+          {
+            "question": "Can custom slotter arcs be made from a drawing or sample?",
+            "answer": "Yes. The drawing should define outer and inner radii, arc angle, blade thickness, edge form and mounting holes or adjustment slots. A sample helps identify the installed profile and hand. Worn cutting edges should be distinguished from the intended new geometry before reproducing the part. State the quantity required for each configuration."
+          },
+          {
+            "question": "Should I choose a plain or serrated male slotter blade?",
+            "answer": "Use the existing slotter design and required board slot as the starting point. Plain and serrated edges are different configurations, and the mating counter knives must suit the selected male blade. Assess the board, current cut quality and machine requirements before changing the established edge form."
+          },
+          {
+            "question": "Must male and female slotter knives be replaced together?",
+            "answer": "They can be quoted separately when the retained parts remain serviceable and the mating geometry is known. Inspect both female counter faces and the spacer along with the male blade. A replacement that matches the male mounting holes still needs the correct relationship to the female opening."
+          },
+          {
+            "question": "Are corrugated slotter knives the same as slitter-scorer blades?",
+            "answer": "No. Slotter knives form flap slots during box converting, commonly on printer-slotters and flexo folder-gluers. Slitter-scorer blades slit the board lengthwise on the corrugator dry end. The workpiece may be the same corrugated board, but the cutting operation, blade geometry and mounting system differ."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "paper-straw-slitting-blades",
+      "name": "Paper Straw Cutting Blades",
+      "fullName": "Paper Straw Cutting Blades",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "Standard OD 88–100 mm"
+        },
+        {
+          "label": "Material",
+          "value": "Fine-grain carbide, M2 HSS or zirconia, depending on station"
+        },
+        {
+          "label": "Applications",
+          "value": "Paper straw trimming and cut-off on winding lines"
+        },
+        {
+          "label": "Optional Coatings",
+          "value": "DLC, TiN, TiAlN or CrN by blade and application"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Paper Straw Cutting Blades | Replacement Knives",
+        "sizeRange": "Standard OD 88–100 mm",
+        "heroAlt": "Circular paper straw cutting knife with a small center bore",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/paper-straw-slitting-blades-detail.webp",
+          "alt": "Thin circular cutting blades showing the polished faces and cutting edges"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "straw",
+            "tabLabel": "Paper Straw Knives",
+            "title": "Paper Straw Knives",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Station"
+            ],
+            "rows": [
+              [
+                "SR001651",
+                "100 × 15 × 0.20 mm",
+                "Paper straw trim"
+              ],
+              [
+                "SR001652",
+                "100 × 15 × 0.30 mm",
+                "Paper straw trim"
+              ],
+              [
+                "SR001653",
+                "100 × 16 × 0.30 mm",
+                "Paper straw trim"
+              ],
+              [
+                "SR001654",
+                "100 × 45 × 0.30 mm",
+                "Paper straw trim"
+              ]
+            ]
+          },
+          {
+            "id": "additional-straw-knives",
+            "tabLabel": "Additional Straw Knife Sizes",
+            "title": "Additional Straw Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Dimensions (OD × ID × W)",
+              "Application"
+            ],
+            "rows": [
+              [
+                "SR001848",
+                "88 × 16 × 0.26 mm",
+                "Paper straw cut-off"
+              ],
+              [
+                "SR001849",
+                "89 × 15 × 0.30 mm",
+                "Paper straw cut-off"
+              ],
+              [
+                "SR001850",
+                "90 × 15 × 0.30 mm",
+                "Paper straw cut-off"
+              ],
+              [
+                "SR001851",
+                "100 × 15 × 0.15 mm",
+                "Paper straw cut-off"
+              ],
+              [
+                "SR001852",
+                "100 × 45 × 0.20 mm",
+                "Paper straw cut-off"
+              ]
+            ]
+          }
+        ],
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "Standard OD 88–100 mm"
+          },
+          {
+            "label": "Material",
+            "value": "Fine-grain carbide, M2 HSS or zirconia, depending on station"
+          },
+          {
+            "label": "Applications",
+            "value": "Paper straw trimming and cut-off on winding lines"
+          },
+          {
+            "label": "Optional Coatings",
+            "value": "DLC, TiN, TiAlN or CrN by blade and application"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Match the station before the disc",
+          "description": "Two blades with the same diameter can differ in bore, edge hand or support. Identify the cutting station and the current part."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Inspect adhesive buildup on straw lines",
+          "description": "Send the paper construction, adhesive and photos of the blade after use. Surface finish and a suitable coating can help reduce buildup."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Match the edge to the straw wall",
+          "description": "Check the straw wall thickness and the cutter support when changing blade thickness. Compare cut samples for fraying, crushing and adhesive transfer."
+        }
+      ],
+      "compatibleMachines": [
+        "Jota",
+        "KETE"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "Which replacement blade fits a paper straw cutting machine?",
+            "answer": "Identify the cut-off or trimming station, holder and current blade dimensions. The bore, blade thickness and cutting profile must match that position. Include straw wall thickness and paper construction because knives with the same outside diameter can behave differently when cutting the finished wound tube."
+          },
+          {
+            "question": "Are paper straw cutting blades and paper slitter knives the same?",
+            "answer": "Paper straw cutting knives cut or trim the formed straw on its production line. Paper slitter knives usually divide a continuous flat web into narrower strips. The names can overlap in purchasing requests, so identify whether the blade cuts the incoming paper web or the finished tube."
+          },
+          {
+            "question": "Can custom paper straw knives be made to a drawing?",
+            "answer": "Yes. A drawing or sample can define the bore, thickness and cutting profile required by the holder. Include the current blade material and straw construction. This allows the replacement geometry to be established without assuming that every machine using the same nominal diameter accepts the same knife. State the quantity required for each configuration."
+          },
+          {
+            "question": "How should I choose carbide, HSS or another blade material?",
+            "answer": "Start with the station requirements and the condition of the used blade. The catalog includes carbide, M2 HSS and station-dependent zirconia options. Compare gradual edge wear, chipping and residue buildup separately; the material choice should address the observed issue while retaining the required mounting geometry."
+          },
+          {
+            "question": "What can cause ragged or distorted paper straw ends?",
+            "answer": "Inspect edge condition, adhesive buildup and the way the tube is supported during cutting. Paper ply count, wall thickness and adhesive condition also help explain differences between cut samples. Comparing a clean blade and an affected blade at the normal machine settings is more useful than considering sharpness alone."
+          },
+          {
+            "question": "How should an optional coating be selected for a straw knife?",
+            "answer": "Select the coating with the blade material and actual adhesive system. The catalog lists several options, but their suitability depends on the cutting station and residue pattern. Keep samples or photographs of the buildup so coating changes can be evaluated against the original knife and production conditions."
+          }
+        ],
+        "company": []
+      }
+    },
+    {
+      "id": "groove-bottom-knives",
+      "name": "Multi-Groove Bottom Knives",
+      "fullName": "Multi-Groove Bottom Knives & Cutter Rings",
+      "category": "slitter_knives",
+      "specs": [
+        {
+          "label": "Sizes",
+          "value": "OD up to 406 mm"
+        },
+        {
+          "label": "Material options",
+          "value": "Cr12MoV, SKD11, 9CrSi, 65Mn, HSS or carbide-tipped construction"
+        },
+        {
+          "label": "Groove pitch",
+          "value": "From 5 mm; pitch and groove count vary by knife configuration"
+        },
+        {
+          "label": "Construction",
+          "value": "One-piece ring or two-piece split ring"
+        },
+        {
+          "label": "Cutting edges",
+          "value": "Single or double working shoulder"
+        },
+        {
+          "label": "Mounting",
+          "value": "Plain bore for an expandable air shaft, or set screw for a solid shaft"
+        },
+        {
+          "label": "Applications",
+          "value": "Paper, board, film and foil shear slitting with multiple slit positions"
+        }
+      ],
+      "detailLayout": {
+        "seoTitle": "Multi-Groove Bottom Knives | Made to Drawing",
+        "sizeRange": "OD up to 406 mm",
+        "technicalSpecs": [
+          {
+            "label": "Sizes",
+            "value": "OD up to 406 mm"
+          },
+          {
+            "label": "Material options",
+            "value": "Cr12MoV, SKD11, 9CrSi, 65Mn, HSS or carbide-tipped construction"
+          },
+          {
+            "label": "Groove pitch",
+            "value": "From 5 mm; pitch and groove count vary by knife configuration"
+          },
+          {
+            "label": "Construction",
+            "value": "One-piece ring or two-piece split ring"
+          },
+          {
+            "label": "Cutting edges",
+            "value": "Single or double working shoulder"
+          },
+          {
+            "label": "Mounting",
+            "value": "Plain bore for an expandable air shaft, or set screw for a solid shaft"
+          },
+          {
+            "label": "Applications",
+            "value": "Paper, board, film and foil shear slitting with multiple slit positions"
+          }
+        ],
+        "heroAlt": "Multi-groove bottom knife ring showing parallel ground grooves",
+        "specificationImage": {
+          "src": "/images/products/slitter-detail/groove-bottom-knives-detail.webp",
+          "alt": "Multi-groove ring showing the stepped bore, grooves and overall body width"
+        },
+        "inlineRfq": {
+          "title": "Need a size that is not listed?",
+          "description": "Send a drawing, a worn sample, or just your machine model. We reply with a quotation within 24 hours.",
+          "buttonLabel": "Request a Quote"
+        },
+        "dimensionTables": [
+          {
+            "id": "multi-groove",
+            "tabLabel": "Multi-Groove Bottom Knives",
+            "title": "Multi-Groove Bottom Knife Sizes",
+            "columns": [
+              "Item No.",
+              "Outer Diameter (mm)",
+              "Bore Options (mm)",
+              "Width Options (mm)"
+            ],
+            "rows": [
+              [
+                "SR001701",
+                "150",
+                "60 / 80 / 90",
+                "39 / 49 / 50"
+              ],
+              [
+                "SR001702",
+                "130",
+                "100 / 110",
+                "50 / 100"
+              ],
+              [
+                "SR001703",
+                "150",
+                "120 / 130",
+                "50 / 100"
+              ],
+              [
+                "SR001704",
+                "180",
+                "150",
+                "50 / 100"
+              ]
+            ]
+          },
+          {
+            "id": "multi-groove-configurations",
+            "tabLabel": "Ring & Shaft Configurations",
+            "title": "Ring & Shaft Configurations",
+            "columns": [
+              "Item No.",
+              "Outside Diameter (mm / in)",
+              "Configuration",
+              "Shaft / Mounting",
+              "Pitch / Working Edge"
+            ],
+            "rows": [
+              [
+                "SR001853",
+                "Up to Φ406 (16 in)",
+                "Multi-groove ring — plain bore",
+                "Expandable air shaft",
+                "From 5 mm pitch"
+              ],
+              [
+                "SR001854",
+                "Up to Φ406 (16 in)",
+                "Multi-groove ring — set screw",
+                "Solid bottom shaft",
+                "From 5 mm pitch"
+              ],
+              [
+                "SR001855",
+                "Up to Φ406 (16 in)",
+                "Two-piece split ring",
+                "Air or solid shaft",
+                "From 5 mm pitch"
+              ],
+              [
+                "SR001856",
+                "Up to Φ406 (16 in)",
+                "Double-edged multi-groove ring",
+                "Air or solid shaft",
+                "Cutting edges both sides"
+              ],
+              [
+                "SR001857",
+                "To drawing",
+                "Single-groove cutter ring",
+                "Air or solid shaft",
+                "One fixed position"
+              ],
+              [
+                "SR001858",
+                "To drawing",
+                "Smooth spacer ring",
+                "Air or solid shaft",
+                "No groove — sets spacing"
+              ]
+            ]
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "selection-1",
+          "tag": "Selection",
+          "title": "Lay out the slit schedule",
+          "description": "Specify the groove count, pitch and overall ring width for the required slit pattern. Give the first groove position and all other slit positions from the same axial datum."
+        },
+        {
+          "id": "selection-2",
+          "tag": "Setup",
+          "title": "Plan the width changeover",
+          "description": "List the web widths and slit patterns used on the line. Use the shaft arrangement and changeover procedure to choose a one-piece or split ring, then confirm the bore fit and locking method."
+        },
+        {
+          "id": "selection-3",
+          "tag": "Application",
+          "title": "Check the top knife at each position",
+          "description": "Tell us the top knife width and working side. Match the groove and working shoulder for proper clearance throughout the ring."
+        }
+      ],
+      "compatibleMachines": [
+        "Kampf",
+        "Göbel"
+      ],
+      "faqs": {
+        "technical": [
+          {
+            "question": "What defines a replacement multi-groove bottom knife?",
+            "answer": "The required cutting positions define the groove pitch, first-edge location and overall working width. Outside diameter, bore and locking method establish the mounting fit. These features need to be considered together; two rings with equal OD and bore can place their cutting edges at different slit positions."
+          },
+          {
+            "question": "Can multi-groove knives be made to a custom slit pattern?",
+            "answer": "Yes. Specify the groove positions from a common axial datum, the number of working edges and the required body width. Include the shaft mounting and mating top knife. This identifies the complete pattern rather than relying on a nominal groove count or a single pitch dimension. State the quantity required for each configuration."
+          },
+          {
+            "question": "Are multi-groove anvils, knife blocks and bottom slitters the same?",
+            "answer": "These terms commonly describe a bottom cutting body with multiple possible working positions. They do not specify its mounting or cutting-edge arrangement. A razor support sleeve can also have grooves but performs a different role, so identify the mating blade and cutting method as well as the product name."
+          },
+          {
+            "question": "How should groove pitch be measured?",
+            "answer": "Measure between corresponding working edges, using the same edge reference for each interval. Also record the first working edge from the mounting datum and the overall width. Measuring only the empty space within a groove can omit the land width and give the wrong cutting-position spacing."
+          },
+          {
+            "question": "When should I choose a split ring rather than a one-piece ring?",
+            "answer": "The choice depends on the shaft arrangement and how the knife can be installed or removed. A split construction can provide access where a suitable assembly allows it, but its joints and locking arrangement must match the design. Preserve the required cutting profile and shaft fit when specifying either construction."
+          },
+          {
+            "question": "What does an Item No. tell me when ordering a knife block?",
+            "answer": "The Item No. identifies the catalog configuration or series shown in the table. For made-to-drawing variants, the final order also needs the selected bore, width, groove pattern and mating knife. Record those details with the item reference so a repeat order reproduces the intended assembly."
+          }
+        ],
+        "company": []
+      }
+    }
+  ]
+}

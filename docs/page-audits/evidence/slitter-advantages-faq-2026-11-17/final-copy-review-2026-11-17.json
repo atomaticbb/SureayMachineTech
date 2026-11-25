@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-17",
+  "scope": "English copy document only; no application, specification, image or translation changes.",
+  "input": "docs/page-audits/slitter-blades-advantages-faqs.md",
+  "output": "docs/page-audits/slitter-blades-advantages-faqs-final.md",
+  "inputSha256": "0D8AB1C51A8D29A75AFE29C3F21E82D8CD82B231B558040CB3FB8E8FD0AEB6FC",
+  "outputSha256": "7356A156583806C0C64A4D8CC64421A9F55BCB58272BAF3E9EF69C40EC7ACB0E",
+  "claudeReview": "User supplied latest review, archived as claude-clean-copy-review-2026-11-17.txt, combined with previous two supplied reviews.",
+  "localClaudeAttempt": "Claude Code print audit could not run: authentication status loggedIn=false, authMethod=none. No new Claude-generated findings were claimed.",
+  "implemented": [
+    "Clarified carbide rotary knife / slitter blade aliases; custom-order FAQ now focuses on configuration.",
+    "Clarified pitch using corresponding cutting edges; distinguished groove opening width.",
+    "Qualified Paper precision-ground supply wording.",
+    "Foil spacer reuse now answers eligibility rather than repeating an order checklist.",
+    "Standardized Sureay voice and removed repeated quantity tails where not integral to the specific decision.",
+    "Restored Film Optional Coatings from current catalog: TiN, DLC, PTFE, CrAlN, ceramic, subject to blade substrate.",
+    "Multi-Groove Item No. now identifies a catalog row or series; the order drawing completes the configuration.",
+    "Improved Foil/Coil precision-ground supply advantages, Film edge-contact explanation, Battery coating question/answer alignment, Rewinder material decision and Slotter edge-form selection."
+  ],
+  "retainedAfterCheck": [
+    "Nonwoven coating options and Anvil carbide-tipped construction are present in current catalog.",
+    "Anvil paper application is in current catalog; paper-specific FAQ keeps the source scope.",
+    "All 13 products, 39 advantages and 87 complete FAQs retained."
+  ],
+  "localVsLive": [
+    "Local English company FAQs are empty for these products; legacy trust strip, CMM footnote and old hero descriptions do not render under current detailLayout conditions.",
+    "Current local Slotter URL is corrugated-slotter-knives; box-slotting-knives has client routing and server 301. Production redirect deployment remains to be checked at release.",
+    "Scrap Chopper and Nonwoven Log Saw are valid public local catalog IDs.",
+    "Live Film, Corrugated and Multi pages fetched during review still showed legacy content. This document task did not change or deploy the website."
+  ],
+  "rewinderMaterialSources": [
+    {
+      "use": "Conditional evaluation of wear-resistant carbide edges, with knife-pair and handling/contact considerations. No supplier life multipliers transferred.",
+      "url": "https://www.dienes.de/en/products/bottom-knives/tungsten-carbide-and-ceramic-knives/",
+      "location": "Highly wear-resistant cutting tools; Tungsten carbide knives; Use of the tungsten carbide and ceramic knives"
+    },
+    {
+      "use": "Paper-winder bottom-knife context and steel/carbide-tipped construction options.",
+      "url": "https://www.tkmgroup.com/en/bottom-slitter-knives",
+      "location": "Paper Processing Industry / Advantages & Features"
+    }
+  ],
+  "verification": {
+    "products": 13,
+    "advantages": 39.0,
+    "faqs": 87.0,
+    "missingAnswers": [],
+    "invalidNames": [],
+    "unwantedText": 0,
+    "quantityForEachConfiguration": 1,
+    "productRows": [
+      {
+        "id": "rotary-slitter-knives",
+        "name": "Film & Tape Slitter Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "rotary-slitter-knives-paper",
+        "name": "Paper Slitter Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "metal-foil-strip-slitter-knives",
+        "name": "Slitter Knives for Copper & Aluminum Foil",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 6
+      },
+      {
+        "id": "metal-coil-slitting-knives",
+        "name": "Steel Coil Slitting Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "lithium-battery-slitting-knives",
+        "name": "Battery Slitting Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "corrugated-slitter-scorer-blades",
+        "name": "Corrugated Board Slitter Blades",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "nonwoven-slitter-knives",
+        "name": "Nonwoven Slitter Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "bottom-grooved-anvil-knives",
+        "name": "Bottom Grooved Anvil Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 6
+      },
+      {
+        "id": "tungsten-carbide-slitter-knives",
+        "name": "Tungsten Carbide Slitter Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "slitter-rewinder-bottom-knives",
+        "name": "Slitter Rewinder Bottom Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 6
+      },
+      {
+        "id": "corrugated-slotter-knives",
+        "name": "Corrugated Slotter Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      },
+      {
+        "id": "paper-straw-slitting-blades",
+        "name": "Paper Straw Cutting Blades",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 6
+      },
+      {
+        "id": "groove-bottom-knives",
+        "name": "Multi-Groove Bottom Knives",
+        "nameMatches": true,
+        "advantages": 3,
+        "faqs": 7
+      }
+    ]
+  }
+}

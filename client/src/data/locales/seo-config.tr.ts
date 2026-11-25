@@ -288,7 +288,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Sabit portal tipi hurda makasları için bıçaklar",
     description:
       "Sabit portal hurda makasları için cıvataya monteli hareketli bıçak blokları ve sabit karşı bıçaklar sipariş edin. 1.2746 veya 1.2767 çeliğini seçin ve montaj çiziminizi gönderin.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "Uçan makas bıçakları | Haddehaneler için özel üretim",

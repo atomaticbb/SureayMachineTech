@@ -89,13 +89,13 @@ export default function MixerWearPartsOverview() {
         {/* Right image region — full height so the whole part shows, not cropped */}
         <div className="absolute inset-y-0 right-0 h-full w-full lg:w-[46%]">
           <img
-            src="/images/mixer-parts/hero/mixer-wear-parts-hero.webp"
-            srcSet="/images/mixer-parts/hero/mixer-wear-parts-hero-800w.webp 800w, /images/mixer-parts/hero/mixer-wear-parts-hero.webp 1600w"
-            sizes="(max-width: 1024px) 100vw, 46vw"
-            alt={t("mixer.hub.hero.imageAlt")}
-            className="h-full w-full object-cover object-right"
-            width={1600}
-            height={900}
+            src="/images/mixer-parts/hero/mixer-wear-parts-collection-1200w.webp"
+            srcSet="/images/mixer-parts/hero/mixer-wear-parts-collection-480w.webp 480w, /images/mixer-parts/hero/mixer-wear-parts-collection-800w.webp 800w, /images/mixer-parts/hero/mixer-wear-parts-collection-1200w.webp 1200w"
+            sizes="(min-width: 1024px) 46vw, 100vw"
+            alt={t("nav.mixerWearParts")}
+            className="h-full w-full object-cover object-right lg:object-contain"
+            width={1200}
+            height={800}
             loading="eager"
             decoding="async"
             fetchPriority="high"

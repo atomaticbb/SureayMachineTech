@@ -2742,8 +2742,13 @@ export const blades: Blade[] = [
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/edge-configurations.webp",
+      "/images/products/granulator-blades/granulator-knife-four-mounting-slots.webp",
     ],
+    specificationImageDimensions: {
+      width: 1200,
+      height: 960,
+      smallerWidths: [320, 480, 800],
+    },
     description:
       "Rôto máy tạo hạt nhựa thay thế và dao cố định ở D2, SKD11, DC53 hoặc Cr12MoV. Cấu hình tùy chỉnh và mẫu bu lông để sản xuất nhựa tái chế.",
     link: "/products/granulator-blades",
@@ -9035,7 +9040,7 @@ export const blades: Blade[] = [
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Lưỡi máy cắt phế liệu cố định",
-    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    image: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
     imageDimensions: {
       width: 800,
       height: 800,

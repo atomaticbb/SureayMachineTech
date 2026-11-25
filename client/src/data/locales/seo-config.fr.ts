@@ -299,7 +299,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Lames pour cisailles à ferraille fixes à portique",
     description:
       "Commandez des blocs de couteaux mobiles montés sur boulons et des contre-couteaux fixes pour les cisailles à ferraille à portique stationnaires. Choisissez l'acier 1.2746 ou 1.2767 et envoyez votre plan de montage.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "Lames de cisailles volantes | Couteaux sur mesure pour laminoirs",

@@ -1,0 +1,54 @@
+## Verdict
+
+This revision fixes most of what I flagged. The shared #8 boilerplate is gone, the evidence and status columns now exist on every row, and the unknown company commitments live in one HOLD register (H1–H9) instead of being scattered. It is much closer to draftable. What remains is mostly internal consistency, plus some labelling that over-states how verified the rows are. I'm still auditing the document only. I can't open the linked evidence files, the catalog JSON or the live pages, so I can't confirm any C or L entry.
+
+## 1. Numbers that don't reconcile
+
+- **The active-question total is wrong.** The page table sums to 7+7+6+7+7+7+7+7+7+6+7+6+7 = **89**, but the text says **88**.
+- **The "82 existing FAQs" figure may be wrong.** Counting the index gives 7+7+6+6+6+6+7+6+7+6+6+6+6 = **82**, so this one checks out. The "104 candidates" for the old plan is plausible (13×8), but the old document is not visible to me, so I can't check it.
+- **"39 advantages" is fine** (13×3).
+
+Fix the 88 before it propagates into other documents.
+
+## 2. "DRAFT-ready" is applied to almost everything
+
+Every active FAQ row and every advantage row is marked DRAFT-ready. Two problems:
+
+- **A label with no variance carries no information.** The document says some rows depend on unresolved H-items, yet those rows are still marked ready. Examples: Battery advantage 1 (grades vs. hardness, H6), Corrugated Slitter-Scorer advantage 1 (HIP, H1/H6), and Straw FAQ 3 (P-HMK was never successfully read).
+- **Many rows cite `specs` / 相关原技术问答 as their C source.** That is not a stable field locator, unlike `faqs.technical` Q#. These are the new FAQs (failure, maintenance, cost). I count about 20 such rows. They are effectively sourced to "the catalog in general," which is weaker than the document's own definition of C. Either give them a real locator or mark them "P-only, editorial."
+
+## 3. The "same boilerplate" problem has moved, not disappeared
+
+The new rows repeat the same sentence shape across pages:
+
+- Nearly every failure FAQ ends with "不给单一原因 / 不保证…". Fine as an internal guardrail, but make sure the English answers don't each end in a disclaimer.
+- **Source citations are generic per page.** Every FAQ row on a page cites the identical "P-X / P-Y" pair. That is a page-level citation, not a row-level one, so it doesn't show which source supports which answer.
+- **The P1/P2/P3 ranking is thin.** Paper has P1 on rows 1–2, then P2, then P3 on row 7. Many pages have exactly two P1s and five P2s. The rationale ("本页采购流程") is plausible, but the tiers don't discriminate much. Since you correctly say they aren't search-volume based, consider dropping the three tiers and keeping only the order.
+
+## 4. Remaining overlaps between advantages and FAQs
+
+You now say FAQs must add independent information. Most do, but several are still close to the advantage they sit under:
+
+- **Foil FAQ 6** ("replaced as a set") largely restates advantage 3 and FAQ 1. The row itself admits the split is slim ("与本版第1题分工").
+- **Bottom Anvil FAQ 7** and **Rewinder FAQ 3** both exist mainly to hand off to Multi-Groove. A one-line link inside an answer would do the job without two FAQs.
+- **Corrugated Slitter-Scorer FAQ 6** carries an unclear boundary: it keeps "no first-article commitment" in the answer, but the question itself ("Can Sureay reproduce… specific mounting pattern") is a services question.
+- **"Can Sureay make/supply…" questions are still on 10 of 13 pages** (Film, Paper, Foil, Coil, Battery, Anvil, Carbide, Rewinder, Slotter, Straw, Multi-Groove). That is the same shape, if not the same text. Fine if each answer is distinct, but check this at drafting time.
+
+## 5. Gaps that remain
+
+- **Bottom Anvil still depends on a source I can't verify.** FAQ 2 attributes NN = flat bore, NG = eccentric lock, NS = screw lock to DIENES. The first-round document described these only as "平孔、偏心与螺钉锁". Confirm the exact expansions against the DIENES page before writing them as fixed definitions.
+- **Corrugated Slotter has no live baseline** (404), so all three advantages are new rather than "restored." The plan says so, which is good, but it means the "restore original expression" rationale doesn't apply to this page. Say that in the summary table.
+- **Straw rests on weak sourcing.** P-HMK failed to load, and the page leans on C-only FAQs. Consider marking Straw lower-confidence overall.
+- **Internal links use `localhost:5173`.** Fine for review, but don't let them into drafts.
+- **Two linked pages are outside the 13** (Scrap Chopper, Nonwoven Log Saw). Confirm those routes exist.
+- **Still no English advantage text for 10 pages.** The sample file for the first three pages is referenced but not shown, so I can't evaluate the wording of the actual headings and one-liners, only the titles in the tables.
+
+## 6. What I'd do next
+
+1. Correct the 88 → 89.
+2. Replace blanket DRAFT-ready with three states: ready, ready-with-caveat (names the H-item), hold. Several rows named above belong in the middle state.
+3. Give each new FAQ a precise source locator, or label it editorial.
+4. Merge Foil FAQ 6, and either drop Anvil FAQ 7 and Rewinder FAQ 3 or make each answer stand alone with a single link.
+5. Review the three sample pages' English text before the other ten.
+
+I can build the corrected row-level status table, or review the English samples once you paste them.

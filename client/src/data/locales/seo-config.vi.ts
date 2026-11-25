@@ -288,7 +288,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Lưỡi dao cho máy cắt phế liệu kim loại dạng cổng cố định",
     description:
       "Đặt hàng các khối dao chuyển động gắn bu-lông và dao cố định cho máy cắt phế liệu cố định. Chọn thép 1.2746 hoặc 1.2767 và gửi bản vẽ lắp đặt của bạn.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "Lưỡi dao cắt bay | Chế tạo theo yêu cầu cho dây chuyền cán thép",

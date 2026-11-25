@@ -295,7 +295,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Ножи для стационарных портальных ножниц по металлолому",
     description:
       "Закажите подвижные ножевые блоки с болтовым креплением и фиксированные контрножи для стационарных портальных ножниц для обрезки лома. Выберите сталь 1.2746 или 1.2767 и отправьте монтажный чертеж.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "Ножи летучих ножниц для прокатных станов на заказ",

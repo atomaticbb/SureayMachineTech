@@ -152,7 +152,7 @@ export default function DecisiveSpecs({
         </div>
 
         {/* Right — product image, fixed aspect ratio */}
-        <div className={`flex-1 min-w-0 ${detailLayout ? "w-full" : ""}`}>
+        <div className={`flex-1 min-w-0 ${detailLayout || panelSrcSet ? "w-full" : ""}`}>
           <div
             className={
               detailLayout
@@ -170,9 +170,11 @@ export default function DecisiveSpecs({
                   : undefined)
               }
               sizes={
-                panelSrcSet || specificationImage
-                  ? "(min-width: 1024px) 480px, 288px"
-                  : undefined
+                panelSrcSet && !detailLayout
+                  ? "auto, (min-width: 1024px) 55vw, 100vw"
+                  : panelSrcSet || specificationImage
+                    ? "(min-width: 1024px) 480px, 288px"
+                    : undefined
               }
               alt={panelAlt}
               className={

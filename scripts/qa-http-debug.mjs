@@ -1,0 +1,2 @@
+import http from 'node:http';
+for(const [path,host] of [['/qa-not-a-real-page','127.0.0.1:4300'],['/products/qa-not-real','127.0.0.1:4300'],['/qa-missing-file.webp','127.0.0.1:4300'],['/products','www.sureay.com']]) await new Promise(resolve=>http.get({hostname:'127.0.0.1',port:4300,path,headers:{Host:host}},r=>{console.log(JSON.stringify({path,host,status:r.statusCode,location:r.headers.location}));r.resume();r.on('end',resolve)}).on('error',e=>{console.log(String(e));resolve()}));

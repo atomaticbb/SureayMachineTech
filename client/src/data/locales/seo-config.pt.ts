@@ -300,7 +300,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Facas para tesouras fixas de pórtico para sucata metálica",
     description:
       "Encomende blocos de facas móveis montados em parafusos e contrafacas fixas para tesouras de sucata de pórtico estacionárias. Escolha o aço 1.2746 ou 1.2767 e envie seu desenho de montagem.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "Facas para tesouras volantes | Sob medida para linhas de laminação",

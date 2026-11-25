@@ -1,0 +1,65 @@
+I'll fetch the live pages first, then compare them with the draft text.
+
+## Verdict
+
+The new advantages and FAQs are now cleaner and safer than anything earlier in this thread. The main remaining risk is outside the text you rewrote: the live site still carries the old claims in sections this plan doesn't touch.
+
+**What I checked.** I fetched five live Sureay pages (Film & Tape, Nonwoven, Bottom Grooved Anvil, Multi-Groove, Corrugated Slitter-Scorer) and the DIENES grooved-knives page. The slotter URL was refused by the fetch tool, and I did not fetch Paper, Foil, Coil, Battery, Carbide, Rewinder Bottom or Straw. Findings on those pages come from the draft only.
+
+## 1. Blockers
+
+**The live "Why Choose Sureay" FAQ group contradicts your HOLD list.** Your plan replaces only Advantages and Technical FAQs, and the live pages keep the group below. I confirmed these on the pages I fetched:
+
+- **Heat treatment (H1).** Film says every blade gets deep cryogenic treatment after vacuum hardening, with "up to 40%" better wear resistance. H1 holds that claim.
+- **Documents (H4).** Film says every shipment includes a hardness report, a dimensional record and a heat-treatment batch certificate. Nonwoven says each batch gets a CoC.
+- **Samples and lead times (H5).** Film promises 2–5 sample blades in 5–7 days. Anvil promises 48–72 hours standard and 7–12 days custom.
+- **Page-wide badges.** Every page repeats "ISO 9001:2015 Certified", "In-House Heat Treatment" and "All values verified via CMM inspection".
+
+If these stay, your carefully hedged FAQ answers sit next to unhedged promises. Either extend the plan to this group or record that it is out of scope.
+
+**The slotter link may be broken.** The plan says `/products/corrugated-slotter-knives` returned 404 on 2026-11-17, and my fetch of it was refused. The live Slitter-Scorer page links its slotter category to `/products/box-slotting-knives`. Corrugated FAQ 7 and the Slotter page both depend on the first slug. Confirm which slug is real before anything ships.
+
+**Two other internal links are unverified.** I did not confirm that `scrap-chopper-blades` and `nonwoven-log-saw-blades` exist. The other linked slugs appear on the live site.
+
+**Live copy still contradicts the new Slitter-Scorer BHS/Fosber answer.** The live page calls the blades "Exact OEM replacements" and promises an "exact drop-in fit". Your new answer says interchangeability depends on the complete geometry. Film has the same issue with "Drop-in OEM fit for Tidland, Kampf, Atlas & Dusenbery". Soften these in the hero, or the FAQ will read as backpedalling.
+
+**The Multi-Groove Item No. FAQ conflicts with the live page.** The draft says the Item No. identifies "the catalog configuration shown in the dimensions table". The live page has no Item No. column and states there is "no standard size table for this product". Check whether the local build has an Item No. column. The Carbide FAQ 6 mentions Item No. too.
+
+## 2. Text defects in the draft
+
+- **Carbide FAQ 6 is garbled.** It says carbide rotary knives and slitter blades "serve different stations, including foil and electrode cutting". The original question was whether they are the same part, and your notes said the aliases don't specify the station. Rewrite it. It also tries to do too much: custom order, aliases, size ranges and Item No.
+- **Multi-Groove FAQ 2 contains an unclear sentence:** "The empty space within a groove excludes the adjoining land". The live page defines it more plainly as the distance from one cutting edge to the next. Use that.
+- **Paper advantage 2 says "Each replacement knife is precision-ground…".** That is a universal claim. "Can be ground to the specified…" matches the tone of the other advantages.
+- **Foil FAQ 6 duplicates FAQ 1.** Both tell the buyer to list retained parts and widths. Fold it into FAQ 1, or give it a different angle.
+- **Slitter-Scorer FAQ 6 says "We can make"** while every other answer says "Sureay can". Pick one voice.
+- **The phrase "quantity for each configuration" recurs in about 12 answers.** Fix this at the template level, not answer by answer.
+
+## 3. Draft versus live product claims
+
+- **Coatings.** Live Film lists TiN, DLC, Teflon and CrAlN. The draft says TiN, DLC and PTFE, and drops CrAlN. Live Nonwoven lists only an ESD option. The draft's Nonwoven advantage 2 adds PTFE, TiN and DLC. Confirm the catalog's Optional Coatings before publishing either line.
+- **Anvil construction.** The draft lists "carbide-tipped". Live Anvil lists D2, M2 HSS, ASP23 PM and solid carbide only.
+- **Anvil flatness.** The draft says flatness, correctly. Live advantage 2 says "parallelism" while the live spec says flatness. Replacing that block fixes it.
+- **Anvil FAQ 3 is paper-framed.** It covers side pressure and cant angle. The live page's lead substrates are film, foil and tape. Name the substrates broadly, or confirm the page carries enough paper content.
+- **Still-open numbers.** Live Slitter-Scorer shows HRA 90–92, ~0.3 mm apex and 350+ m/min. These are the H7-type items and stay in the spec table. The draft correctly doesn't use them.
+
+## 4. Verified
+
+- **DIENES terminology is correct.** NN is a smooth bore, NG is eccentric locking and NS is a screw lock. Your answer's details on spacers and axial clamping for NN, and the eccentric ring and shaft-pressing screw, match the source. DIENES also lists NR (Multilock), which the draft omits, and that is fine.
+- **Single-ring versus multi-ring scope is consistent.** Anvil is one to three grooves, Multi-Groove is many slit positions per body, and the live pages cross-link on this basis. The draft's handoff links match.
+- **The draft removes the live Anvil claims you wanted gone:** the 60–80% adhesion reduction, the 8–12 hour runs, the ±0.03 mm replacement threshold and the "almost certainly worn" diagnosis.
+- **The draft drops the live Nonwoven claims:** 400 m/min, "eliminating fibre attraction" and "full batch traceability".
+- **Multi-Groove advantage 3 matches the live mounting options.** It avoids the live "comes off without breaking down the shaft" claim.
+
+## 5. Counts
+
+I count **87** active FAQs: Anvil is now 6, not the plan's 7. The plan's "88" and my earlier "89" are both superseded. The advantages total 39. Every page is within 6–7 FAQs.
+
+## 6. Order of work
+
+1. Decide the scope of the "Why Choose Sureay" group and the page badges.
+2. Confirm the slotter slug and the two unverified links.
+3. Fix Carbide FAQ 6, Multi-Groove FAQ 2 and the Item No. FAQ.
+4. Confirm coatings and Anvil construction against the catalog.
+5. Soften "Exact OEM"/"drop-in" in the Film and Slitter-Scorer heroes.
+
+I can draft replacement text for the three broken items, or fetch the remaining seven pages.

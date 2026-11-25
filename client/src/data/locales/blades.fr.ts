@@ -2895,8 +2895,13 @@ export const blades: Blade[] = [
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/edge-configurations.webp",
+      "/images/products/granulator-blades/granulator-knife-four-mounting-slots.webp",
     ],
+    specificationImageDimensions: {
+      width: 1200,
+      height: 960,
+      smallerWidths: [320, 480, 800],
+    },
     description:
       "Rotor de granulateur en plastique de remplacement et couteaux fixes en D2, SKD11, DC53 ou Cr12MoV. Profils personnalisés et modèles de boulons pour la production de rebroyés de plastique.",
     link: "/products/granulator-blades",
@@ -9551,7 +9556,7 @@ export const blades: Blade[] = [
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Lames pour cisailles stationnaires à ferraille",
-    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    image: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
     imageDimensions: {
       width: 800,
       height: 800,

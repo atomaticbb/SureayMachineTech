@@ -1,0 +1,5 @@
+/* global document, window, requestAnimationFrame */
+import fs from 'node:fs';
+const base=process.env.QA_BASE||'http://127.0.0.1:5173';import puppeteer from 'puppeteer';
+const b=await puppeteer.launch({headless:true});const out=[];
+try{for(const path of ['/ru','/ru/products/granulator-blades','/ru/contact']){const p=await b.newPage();await p.setViewport({width:390,height:844});await p.setRequestInterception(true);p.on('request',r=>r.url().startsWith(base)?r.continue():r.abort());await p.goto(base+path,{waitUntil:'domcontentloaded'});await p.waitForSelector('h1');await p.evaluate(()=>document.fonts.ready);await p.evaluate(async()=>{for(let y=0;y<document.body.scrollHeight;y+=600){window.scrollTo(0,y);await new Promise(requestAnimationFrame);}window.scrollTo(0,0)});const data=await p.evaluate(()=>({width:window.innerWidth,scroll:document.documentElement.scrollWidth}));out.push({path,...data,pass:data.width===data.scroll});await p.close();}fs.writeFileSync('qa-results/full-qa/ru-overflow-recheck.json',JSON.stringify(out,null,2));console.log(JSON.stringify(out));if(out.some(x=>!x.pass))process.exitCode=1;}finally{await b.close();}

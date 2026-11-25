@@ -1,0 +1,331 @@
+{
+  "notice": "Historical public Sureay copy captured for audit only, not approved claims or runtime catalog",
+  "accessDate": "2026-11-17",
+  "pages": [
+    {
+      "id": "rotary-slitter-knives",
+      "requestedUrl": "https://sureay.com/products/rotary-slitter-knives",
+      "finalUrl": "https://sureay.com/products/rotary-slitter-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Film & Tape Slitter Knives for Flexible Packaging | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Application-Specific Tool Steels",
+          "description": "Material matched to your web. 52100 carbon steel for standard packaging film liners and coated substrates; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for silica-coated release liners and fiberglass-reinforced laminates. Every grade stocked and ready for fast-turn OEM delivery."
+        },
+        {
+          "heading": "Anti-Stick PVD Coatings",
+          "description": "TiN and DLC coatings reduce surface adhesion by up to 80%, eliminating adhesive build-up on blade faces during PSA tape and adhesive-laminate slitting. Lower friction means cooler running, longer edge life, and fewer cleaning stops per shift."
+        },
+        {
+          "heading": "Optimized Edge Geometries",
+          "description": "Single bevel, double bevel, and blunt-edge profiles engineered for shear pairs, crush/score anvil cutting, and razor trim. Profiled for your line speed and web tension — specify cutting method and substrate and we match the geometry."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — METALLURGY\nApplication-Specific Tool Steels\nMaterial matched to your web.\n52100 carbon steel for standard packaging film liners and coated substrates; M2 HSS for abrasive plastic films; ASP23 PM or solid carbide for silica-coated release liners and fiberglass-reinforced laminates. Every grade stocked and ready for fast-turn OEM delivery.\n02 — EDGE RETENTION\nAnti-Stick PVD Coatings\nTiN and DLC coatings reduce surface adhesion by up to 80%, eliminating adhesive build-up on blade faces during PSA tape and adhesive-laminate slitting.\nLower friction means cooler running, longer edge life, and fewer cleaning stops per shift.\n03 — PROCESS CAPABILITY\nOptimized Edge Geometries\nSingle bevel, double bevel, and blunt-edge profiles engineered for shear pairs, crush/score anvil cutting, and razor trim.\nProfiled for your line speed and web tension — specify cutting method and substrate and we match the geometry.",
+      "responseSha256": "a28c4e093f05f4b3f5cdbb96ac7ce98551cc779af00b111d67c4e1f1c13522d3"
+    },
+    {
+      "id": "rotary-slitter-knives-paper",
+      "requestedUrl": "https://sureay.com/products/rotary-slitter-knives-paper",
+      "finalUrl": "https://sureay.com/products/rotary-slitter-knives-paper",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Paper Slitter Knives | Tissue & Kraft | D2, M2 HSS | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Which steel grade should paper slitter knives use?",
+          "description": "Paper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels. Our D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates."
+        },
+        {
+          "heading": "What shear clearance stops fibre dust at the slit edge?",
+          "description": "Matched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper). This controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality."
+        },
+        {
+          "heading": "What bore, locking, and bevel options are available?",
+          "description": "Paper slitter knives ship with smooth, keyed, or bayonet bores to match your arbor, and lock in place with keyway, set screw, keyed excenter, or keyless excenter clamping — whichever your slitter or rewinder uses. Top blades are ground with a single-bevel dished profile at 15°–20°, with compound (two-stage) bevel or hollow-ground backing available where edge durability matters more than a razor-thin approach angle. Send your current knife or arbor drawing and we confirm bore, locking, and bevel before cutting steel, so the replacement seats, locks, and cuts exactly like the original."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — MATERIAL SCIENCE\nWhich steel grade should paper slitter knives use?\nPaper fibers contain abrasive mineral fillers (calcium carbonate, kaolin, titanium dioxide) that rapidly dull standard knife steels.\nOur D2 and M2 HSS grades are specifically heat-treated for paper converting applications, delivering 40–60% longer edge life than general-purpose slitter knives on coated and filled paper substrates.\n02 — CUTTING PRECISION\nWhat shear clearance stops fibre dust at the slit edge?\nMatched top/bottom shear pairs are pre-verified to tissue-grade clearance specifications (0.02–0.05mm for ultra-thin tissue, 0.05–0.10mm for kraft paper).\nThis controlled clearance shears cleanly through cellulose fiber bundles without tearing or generating airborne fiber dust that contaminates rewinding stations and degrades product quality.\n03 — MACHINE FIT\nWhat bore, locking, and bevel options are available?\nPaper slitter knives ship with smooth, keyed, or bayonet bores to match your arbor, and lock in place with keyway, set screw, keyed excenter, or keyless excenter clamping — whichever your slitter or rewinder uses.\nTop blades are ground with a single-bevel dished profile at 15°–20°, with compound (two-stage) bevel or hollow-ground backing available where edge durability matters more than a razor-thin approach angle. Send your current knife or arbor drawing and we confirm bore, locking, and bevel before cutting steel, so the replacement seats, locks, and cuts exactly like the original.",
+      "responseSha256": "b36684b89e7974756b3073e3b6c0012c9e111c596bdfddb4bbd617f1b270712a"
+    },
+    {
+      "id": "metal-foil-strip-slitter-knives",
+      "requestedUrl": "https://sureay.com/products/metal-foil-strip-slitter-knives",
+      "finalUrl": "https://sureay.com/products/metal-foil-strip-slitter-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Aluminum Foil & Metal Strip Slitter Knives | ASP23/ASP52 PM Steel, ±0.001 mm | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Powder Metallurgy (PM) Steel",
+          "description": "ASP23 and ASP52 PM steels eliminate the banded carbide segregation found in cast D2. This sub-micron grain structure prevents edge chipping when cutting hard, high-tensile stainless or silicon steel strips."
+        },
+        {
+          "heading": "Zero Cumulative Error",
+          "description": "On gang slitting setups, blade thickness errors stack up quickly. Our ±0.001mm precision grinding ensures your arbor dimensions remain perfectly within specification, saving hours of setup and shimming time."
+        },
+        {
+          "heading": "Anti-Galling Polish",
+          "description": "Slitting aluminum and copper often causes metal dust to 'cold weld' to the blade, scratching the coil edge. Our mirror-lapped side faces (Ra ≤0.02μm) drastically reduce friction, preventing material adhesion entirely."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — DURABILITY\nPowder Metallurgy (PM) Steel\nASP23 and ASP52 PM steels eliminate the banded carbide segregation found in cast D2.\nThis sub-micron grain structure prevents edge chipping when cutting hard, high-tensile stainless or silicon steel strips.\n02 — PRECISION\nZero Cumulative Error\nOn gang slitting setups, blade thickness errors stack up quickly.\nOur ±0.001mm precision grinding ensures your arbor dimensions remain perfectly within specification, saving hours of setup and shimming time.\n03 — SURFACE QUALITY\nAnti-Galling Polish\nSlitting aluminum and copper often causes metal dust to 'cold weld' to the blade, scratching the coil edge.\nOur mirror-lapped side faces (Ra ≤0.02μm) drastically reduce friction, preventing material adhesion entirely.",
+      "responseSha256": "34b4d129cc02a64cdd4433e140fe884d529f1f11c019274619db4611319f66b1"
+    },
+    {
+      "id": "metal-coil-slitting-knives",
+      "requestedUrl": "https://sureay.com/products/metal-coil-slitting-knives",
+      "finalUrl": "https://sureay.com/products/metal-coil-slitting-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Precision Coil Slitting Knives | Metal Slitter Blades | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Micro-Tolerance Engineering",
+          "description": "Engineered with a thickness tolerance of ±0.001mm and parallelism of 0.002mm. This guarantees zero cumulative error when stacking multiple heavy blades and spacers on the slitter arbor."
+        },
+        {
+          "heading": "Heavy-Duty Alloy Selection",
+          "description": "From high-chromium D2/SKD11 for abrasive cold-rolled and galvanized steel, to shock-resistant H13 for heavy hot-rolled mills. Each blade is vacuum hardened to deliver exceptional edge strength."
+        },
+        {
+          "heading": "Complete Arbor Tooling",
+          "description": "Beyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and overarm separator discs. A fully integrated system ensures perfect strip tension and burr-free coil rewinding."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — PRECISION\nMicro-Tolerance Engineering\nEngineered with a thickness tolerance of ±0.001mm and parallelism of 0.002mm.\nThis guarantees zero cumulative error when stacking multiple heavy blades and spacers on the slitter arbor.\n02 — METALLURGY\nHeavy-Duty Alloy Selection\nFrom high-chromium D2/SKD11 for abrasive cold-rolled and galvanized steel, to shock-resistant H13 for heavy hot-rolled mills.\nEach blade is vacuum hardened to deliver exceptional edge strength.\n03 — SYSTEM\nComplete Arbor Tooling\nBeyond blades, we provide exact-match steel spacers, rubber bonded stripper rings, and overarm separator discs.\nA fully integrated system ensures perfect strip tension and burr-free coil rewinding.",
+      "responseSha256": "057279086e634ef9eef9499db12d883529cbb6c194ab6d757b416466946c18c6"
+    },
+    {
+      "id": "lithium-battery-slitting-knives",
+      "requestedUrl": "https://sureay.com/products/lithium-battery-slitting-knives",
+      "finalUrl": "https://sureay.com/products/lithium-battery-slitting-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Carbide Battery Slitting Knives | Electrode Foil | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Zero-Notch Mirror Finish",
+          "description": "Every cutting bevel is lapped to Ra ≤ 0.05μm — the same surface quality standard used for optical lens grinding. This eliminates the micro-notching that generates metallic particles in dry-room cell assembly environments and prevents separator membrane puncture."
+        },
+        {
+          "heading": "Ultra-Fine WC-Co Carbide Grade",
+          "description": "Standard industrial carbide uses grain sizes of 1–3μm. Our battery-grade knives are manufactured from ≤0.5μm submicron WC-Co, providing dramatically higher edge hardness (HRA 91–93), superior abrasion resistance on thin Al and Cu foils, and a longer polishable service life between regrinding cycles."
+        },
+        {
+          "heading": "Pre-Verified Clearance Pairs",
+          "description": "Upper and lower knife sets are ground as matched diameter pairs with clearance pre-verified to your winding machine specification (typically 0.002–0.005mm for Cu foil). Each pair ships with an engineering data sheet recording OD, ID, thickness, and measured clearance, enabling consistent line-side reinstallation."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — PRECISION\nZero-Notch Mirror Finish\nEvery cutting bevel is lapped to Ra ≤ 0.05μm — the same surface quality standard used for optical lens grinding.\nThis eliminates the micro-notching that generates metallic particles in dry-room cell assembly environments and prevents separator membrane puncture.\n02 — METALLURGY\nUltra-Fine WC-Co Carbide Grade\nStandard industrial carbide uses grain sizes of 1–3μm.\nOur battery-grade knives are manufactured from ≤0.5μm submicron WC-Co, providing dramatically higher edge hardness (HRA 91–93), superior abrasion resistance on thin Al and Cu foils, and a longer polishable service life between regrinding cycles.\n03 — PROCESS CAPABILITY\nPre-Verified Clearance Pairs\nUpper and lower knife sets are ground as matched diameter pairs with clearance pre-verified to your winding machine specification (typically 0.002–0.005mm for Cu foil).\nEach pair ships with an engineering data sheet recording OD, ID, thickness, and measured clearance, enabling consistent line-side reinstallation.",
+      "responseSha256": "58442c36feffc6f7154f0965c9d19e32591adfa08cb2368b7bc7dfb2d46197c1"
+    },
+    {
+      "id": "corrugated-slitter-scorer-blades",
+      "requestedUrl": "https://sureay.com/products/corrugated-slitter-scorer-blades",
+      "finalUrl": "https://sureay.com/products/corrugated-slitter-scorer-blades",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Corrugated Slitter Scorer Blades | BHS & Fosber | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "HIP Sintered Carbide",
+          "description": "Hot Isostatic Pressing (HIP) ensures our thin slitter blades have zero microscopic pores. This ultra-dense structure holds a flawless razor edge (~0.3mm tip) without micro-chipping under high-speed corrugated board impact."
+        },
+        {
+          "heading": "Zero-Crush Razor Edge",
+          "description": "A thick blade body (1.0–1.2mm) provides absolute stability against lateral wobble at speed, while the edge is deeply tapered and diamond-lapped to a razor finish. This slices the flutes cleanly instead of pressing them down."
+        },
+        {
+          "heading": "Complete Box Plant Tooling",
+          "description": "From Tungsten Carbide Thin Slitters on the corrugator, to Z Cut-off knives, Scorer rings, and upper/lower Slotter Knives on your Flexo Folder Gluer — we engineer the entire cutting spectrum for your box plant."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — METALLURGY\nHIP Sintered Carbide\nHot Isostatic Pressing (HIP) ensures our thin slitter blades have zero microscopic pores.\nThis ultra-dense structure holds a flawless razor edge (~0.3mm tip) without micro-chipping under high-speed corrugated board impact.\n02 — GEOMETRY\nZero-Crush Razor Edge\nA thick blade body (1.0–1.2mm) provides absolute stability against lateral wobble at speed, while the edge is deeply tapered and diamond-lapped to a razor finish.\nThis slices the flutes cleanly instead of pressing them down.\n03 — MANUFACTURING CAPABILITY\nComplete Box Plant Tooling\nFrom Tungsten Carbide Thin Slitters on the corrugator, to Z Cut-off knives, Scorer rings, and upper/lower Slotter Knives on your Flexo Folder Gluer — we engineer the entire cutting spectrum for your box plant.",
+      "responseSha256": "4336b64a68af21d4cdddfc628ad2fe0d54fd29cceac045bb2caef665b60f6506"
+    },
+    {
+      "id": "nonwoven-slitter-knives",
+      "requestedUrl": "https://sureay.com/products/nonwoven-slitter-knives",
+      "finalUrl": "https://sureay.com/products/nonwoven-slitter-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Nonwoven Slitter Knives | PP Spunbond & SMS | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Nonwoven-Optimised Rake Angle",
+          "description": "Standard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle. For loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min."
+        },
+        {
+          "heading": "ESD Conductive Coating",
+          "description": "Electrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed. On meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction."
+        },
+        {
+          "heading": "Medical Batch Traceability",
+          "description": "For converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number. Documentation is formatted for inclusion in your supplier qualification file."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — EDGE DESIGN\nNonwoven-Optimised Rake Angle\nStandard slitter knife geometries designed for paper and plastic film use a 5°–10° positive or neutral rake angle.\nFor loose-structure nonwoven, this geometry pushes fibres laterally before shearing, causing the frayed edge that registers as a quality defect in hygiene product inspection. Our 15°–20° positive rake shears through fibre bundles in a single progressive action, producing a clean, tight slit edge at line speeds up to 400 m/min.\n02 — SURFACE TREATMENT\nESD Conductive Coating\nElectrostatic charge is generated when lightweight PP nonwoven fabric runs over metallic surfaces at high speed.\nOn meltblown layers (<15 GSM), this charge causes fibres to cling to the blade face and transfer as contamination to the reslitted roll edge. Our ESD conductive coating dissipates charge from the blade face continuously, eliminating fibre attraction without requiring process speed reduction.\n03 — COMPLIANCE\nMedical Batch Traceability\nFor converting lines supplying surgical drape, gown, and sterilisation wrap manufacturers, we provide full batch traceability: M2 steel mill certificates, hardness test records, and dimensional CMM reports referenced to your purchase order batch number.\nDocumentation is formatted for inclusion in your supplier qualification file.",
+      "responseSha256": "0000bc45e08f05827bfb22d3f8c8a0296a218aaeb4a3e4d57cad6b9adbd356ce"
+    },
+    {
+      "id": "bottom-grooved-anvil-knives",
+      "requestedUrl": "https://sureay.com/products/bottom-grooved-anvil-knives",
+      "finalUrl": "https://sureay.com/products/bottom-grooved-anvil-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Bottom Grooved Anvil Knives | Shear Pair Anvils | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "OEM-Profile Groove Geometry",
+          "description": "The groove width and depth of each anvil knife is profile-ground to your OEM platform specification — Tidland single-groove, Kampf double-groove, or Goebel wide-body — and held to ±0.01 mm. Correct groove geometry restores factory-designed shear clearance and eliminates the progressive slit-edge deterioration caused by a worn anvil profile."
+        },
+        {
+          "heading": "H6 Bore & Lapped Face Flatness",
+          "description": "All anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism. A bore deviation of 0.02 mm on the lower arbor induces blade wobble that translates directly to slit-width variation across a multi-knife stack. Our bore and face tolerances are verified on a CMM for every batch."
+        },
+        {
+          "heading": "Anti-Adhesion Groove Coatings",
+          "description": "For pressure-sensitive tape and adhesive laminate slitting, Teflon and DLC PVD coatings on the groove contact face reduce adhesive build-up intervals by 60–80%. Coated anvils run clean through 8–12 hour production shifts without groove contamination that degrades shear clearance and forces unplanned stops."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — PRECISION GRINDING\nOEM-Profile Groove Geometry\nThe groove width and depth of each anvil knife is profile-ground to your OEM platform specification — Tidland single-groove, Kampf double-groove, or Goebel wide-body — and held to ±0.01 mm.\nCorrect groove geometry restores factory-designed shear clearance and eliminates the progressive slit-edge deterioration caused by a worn anvil profile.\n02 — DIMENSIONAL ACCURACY\nH6 Bore & Lapped Face Flatness\nAll anvil bores are finish-ground to H6 tolerance and face-lapped to ≤0.003 mm parallelism.\nA bore deviation of 0.02 mm on the lower arbor induces blade wobble that translates directly to slit-width variation across a multi-knife stack. Our bore and face tolerances are verified on a CMM for every batch.\n03 — SURFACE TREATMENT\nAnti-Adhesion Groove Coatings\nFor pressure-sensitive tape and adhesive laminate slitting, Teflon and DLC PVD coatings on the groove contact face reduce adhesive build-up intervals by 60–80%.\nCoated anvils run clean through 8–12 hour production shifts without groove contamination that degrades shear clearance and forces unplanned stops.",
+      "responseSha256": "bbe1c97fee94e6fc069feadebb31ce5344d5cc7bb8c27c7b15ccbb8c01f7cf38"
+    },
+    {
+      "id": "tungsten-carbide-slitter-knives",
+      "requestedUrl": "https://sureay.com/products/tungsten-carbide-slitter-knives",
+      "finalUrl": "https://sureay.com/products/tungsten-carbide-slitter-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Tungsten Carbide Slitter Knives | Carbide Slitting Blades | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Where Carbide Earns Its Cost",
+          "description": "Abrasive fill is what destroys steel edges, and hardness is the only defence. TiO₂-loaded BOPP, calcium-carbonate filled PE, FR-4 and prepreg trim, glass-fibre reinforced tape, mineral-loaded meltblown, coated aluminium and copper foil, and clay-coated board all wear a tool steel edge faster than the run length allows. The same grade logic applies whatever the substrate — this is a material decision, not an application one."
+        },
+        {
+          "heading": "Where Carbide Is the Wrong Choice",
+          "description": "Carbide is a wear-resistance solution, not a general upgrade. It chips where D2 would deform — on splices, snags and interrupted cuts, or where the knife can touch the anvil metal-to-metal. On clean unfilled substrates and short runs, D2 or ASP23 PM holds an edge long enough at a fraction of the price. And without diamond-wheel regrinding access, a dulled carbide blade is scrap rather than an asset. If any of that describes your line, say so when you enquire — we would rather quote the right steel."
+        },
+        {
+          "heading": "Micro-Grain Substrate, Chosen Per Job",
+          "description": "We select from four grades against your material and your current failure mode rather than shipping one grade for everything. Sub-micron grades hold a keener edge; higher-cobalt grades survive shock. Carbide can only be finished on diamond wheels, and edge geometry, parallelism and runout are held to the same inspection standard as our tool steel grinding — every blade measured before dispatch, with a hardness test report and dimensional record in the box."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\nSend a worn blade and your machine model — we will reverse-engineer the clearance and quote within 2 hours.\n01 — APPLICATION FIT\nWhere Carbide Earns Its Cost\nAbrasive fill is what destroys steel edges, and hardness is the only defence.\nTiO₂-loaded BOPP, calcium-carbonate filled PE, FR-4 and prepreg trim, glass-fibre reinforced tape, mineral-loaded meltblown, coated aluminium and copper foil, and clay-coated board all wear a tool steel edge faster than the run length allows. The same grade logic applies whatever the substrate — this is a material decision, not an application one.\n02 — HONEST LIMITS\nWhere Carbide Is the Wrong Choice\nCarbide is a wear-resistance solution, not a general upgrade.\nIt chips where D2 would deform — on splices, snags and interrupted cuts, or where the knife can touch the anvil metal-to-metal. On clean unfilled substrates and short runs, D2 or ASP23 PM holds an edge long enough at a fraction of the price. And without diamond-wheel regrinding access, a dulled carbide blade is scrap rather than an asset. If any of that describes your line, say so when you enquire — we would rather quote the right steel.\n03 — METALLURGY\nMicro-Grain Substrate, Chosen Per Job\nWe select from four grades against your material and your current failure mode rather than shipping one grade for everything.\nSub-micron grades hold a keener edge; higher-cobalt grades survive shock. Carbide can only be finished on diamond wheels, and edge geometry, parallelism and runout are held to the same inspection standard as our tool steel grinding — every blade measured before dispatch, with a hardness test report and dimensional record in the box.",
+      "responseSha256": "b989a67c55f7bdca24ccb83716ba31e50efc1c45868754847e915ac84b6d15d8"
+    },
+    {
+      "id": "slitter-rewinder-bottom-knives",
+      "requestedUrl": "https://sureay.com/products/slitter-rewinder-bottom-knives",
+      "finalUrl": "https://sureay.com/products/slitter-rewinder-bottom-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Slitter Rewinder Bottom Knives | Paper Rewinder Blades | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Deliberately Harder Than the Top Knife",
+          "description": "The bottom knife is specified harder than its mating top knife on purpose. That differential is what keeps the pair shearing rather than deforming the web, and it is the direct cause of burr-free slit edges and low dust carry-over into the wound roll."
+        },
+        {
+          "heading": "Mirror-Finished Running Face",
+          "description": "A polished face releases the web instead of dragging on it, which keeps the slit clean and reduces friction heat at the cut. Face finish is one of the first things to degrade in service and one of the last things operators check — a dulled face raises dust long before the edge itself is worn out."
+        },
+        {
+          "heading": "Controlled Hot-Set Carbide Inserts",
+          "description": "On the tipped construction, inserts are hot-set under controlled conditions so they stay firmly bonded under high-speed running. The practical payoff is a re-tippable body: worn inserts are replaced and the knife returns to service rather than being scrapped."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — SHEAR MECHANICS\nDeliberately Harder Than the Top Knife\nThe bottom knife is specified harder than its mating top knife on purpose.\nThat differential is what keeps the pair shearing rather than deforming the web, and it is the direct cause of burr-free slit edges and low dust carry-over into the wound roll.\n02 — SURFACE FINISH\nMirror-Finished Running Face\nA polished face releases the web instead of dragging on it, which keeps the slit clean and reduces friction heat at the cut.\nFace finish is one of the first things to degrade in service and one of the last things operators check — a dulled face raises dust long before the edge itself is worn out.\n03 — CONSTRUCTION\nControlled Hot-Set Carbide Inserts\nOn the tipped construction, inserts are hot-set under controlled conditions so they stay firmly bonded under high-speed running.\nThe practical payoff is a re-tippable body: worn inserts are replaced and the knife returns to service rather than being scrapped.",
+      "responseSha256": "8d6d35b0f0a2236d60c9af7f2c452c286db94cf692b0bcdf5c8f24dfb0f76774"
+    },
+    {
+      "id": "corrugated-slotter-knives",
+      "requestedUrl": "https://sureay.com/products/corrugated-slotter-knives",
+      "finalUrl": "https://sureay.com/products/corrugated-slotter-knives",
+      "status": 404,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "404 — Page Not Found | Sureay",
+      "foundSection": false,
+      "cards": [],
+      "sectionText": "NOT FOUND",
+      "responseSha256": "d4b73b1624f5e739d868e06969e9b9fd237c320a44fa92db3c2f588556b68a11"
+    },
+    {
+      "id": "paper-straw-slitting-blades",
+      "requestedUrl": "https://sureay.com/products/paper-straw-slitting-blades",
+      "finalUrl": "https://sureay.com/products/paper-straw-slitting-blades",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Paper Straw Cutting Blades | Non-Stick Carbide Slitters | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "Coated for Adhesive Release, Not Just Hardness",
+          "description": "On water-based adhesive lines the blade fails by pick-up, not by wear. The anti-stick coating keeps the face clean so the edge keeps cutting the tube instead of dragging it — which is the actual mechanism behind a fray-free straw end."
+        },
+        {
+          "heading": "0.15–0.30 mm, Specified to the Cut",
+          "description": "Thickness is a process choice, not a leftover. Thinner blades remove less material and leave a squarer end on thin-walled tube; thicker blades run more stably at speed and tolerate machine runout. We specify it against your ply count and machine rather than defaulting to one number."
+        },
+        {
+          "heading": "Tuned to the Adhesive, Not Only the Paper",
+          "description": "Paper straw lines vary far more in adhesive than in paper, and blade life follows the adhesive. Tell us which one you run and we will specify coating and geometry against it — the single most useful piece of information you can give us on this application."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — SURFACE TREATMENT\nCoated for Adhesive Release, Not Just Hardness\nOn water-based adhesive lines the blade fails by pick-up, not by wear.\nThe anti-stick coating keeps the face clean so the edge keeps cutting the tube instead of dragging it — which is the actual mechanism behind a fray-free straw end.\n02 — BLADE GEOMETRY\n0.15–0.30 mm, Specified to the Cut\nThickness is a process choice, not a leftover.\nThinner blades remove less material and leave a squarer end on thin-walled tube; thicker blades run more stably at speed and tolerate machine runout. We specify it against your ply count and machine rather than defaulting to one number.\n03 — APPLICATION ENGINEERING\nTuned to the Adhesive, Not Only the Paper\nPaper straw lines vary far more in adhesive than in paper, and blade life follows the adhesive.\nTell us which one you run and we will specify coating and geometry against it — the single most useful piece of information you can give us on this application.",
+      "responseSha256": "b5380437ee5251e5a82f509e50f13808302d5fb200a252ddbc0bf98462ab3c37"
+    },
+    {
+      "id": "groove-bottom-knives",
+      "requestedUrl": "https://sureay.com/products/groove-bottom-knives",
+      "finalUrl": "https://sureay.com/products/groove-bottom-knives",
+      "status": 200,
+      "accessDate": "2026-11-17",
+      "locator": "Engineering Advantages > h3 headings",
+      "pageTitle": "Multi-Groove Bottom Knives | Bottom Cutter Rings | Sureay",
+      "foundSection": true,
+      "cards": [
+        {
+          "heading": "One Ring, Many Slit Positions",
+          "description": "Every groove is a usable cutting position, so a width change means repositioning the top knife rather than stripping the shaft and rebuilding a spacer stack. On lines that change order width often, this is a changeover-time product before it is a consumable."
+        },
+        {
+          "heading": "All Grooves Ground in One Setup",
+          "description": "Groove positions are ground into a single body in one setup, so slit width cannot drift the way it does when an operator rebuilds a spacer stack a millimetre out. Bore and runout are held to the same specification across multi-groove, single-groove and smooth rings so a mixed shaft still stacks true."
+        },
+        {
+          "heading": "Air Shaft, Solid Shaft, or Split Ring",
+          "description": "Plain bore clamps onto an expandable air shaft; a set-screw design fixes to a solid bottom shaft. A two-piece split ring comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change."
+        }
+      ],
+      "sectionText": "[ Technical Audit ]\nEngineering Advantages\n01 — CHANGEOVER TIME\nOne Ring, Many Slit Positions\nEvery groove is a usable cutting position, so a width change means repositioning the top knife rather than stripping the shaft and rebuilding a spacer stack.\nOn lines that change order width often, this is a changeover-time product before it is a consumable.\n02 — DIMENSIONAL ACCURACY\nAll Grooves Ground in One Setup\nGroove positions are ground into a single body in one setup, so slit width cannot drift the way it does when an operator rebuilds a spacer stack a millimetre out.\nBore and runout are held to the same specification across multi-groove, single-groove and smooth rings so a mixed shaft still stacks true.\n03 — MOUNTING OPTIONS\nAir Shaft, Solid Shaft, or Split Ring\nPlain bore clamps onto an expandable air shaft; a set-screw design fixes to a solid bottom shaft.\nA two-piece split ring comes off without breaking down the shaft assembly, which on a wide machine turns a planned stop into a running change.",
+      "responseSha256": "5a946ad2cd71eb3b84b623cf385a501430325806e1a8b4223217413cd6ba71ea"
+    }
+  ]
+}

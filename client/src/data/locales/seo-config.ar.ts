@@ -285,7 +285,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "شفرات مقصات الخردة المعدنية البوابية الثابتة",
     description:
       "اطلب كتل سكاكين متحركة مثبتة بمسامير وسكاكين مضادة ثابتة لمقصات خردة القنطرية الثابتة. اختر 1.2746 أو 1.2767 من الفولاذ وأرسل رسم التثبيت الخاص بك.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "شفرات المقصات الطائرة | تصنيع حسب الطلب لخطوط الدرفلة",

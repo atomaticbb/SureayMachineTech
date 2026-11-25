@@ -2887,8 +2887,13 @@ export const blades: Blade[] = [
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/edge-configurations.webp",
+      "/images/products/granulator-blades/granulator-knife-four-mounting-slots.webp",
     ],
+    specificationImageDimensions: {
+      width: 1200,
+      height: 960,
+      smallerWidths: [320, 480, 800],
+    },
     description:
       "Rotor granulador de plástico de reposição e facas estacionárias em D2, SKD11, DC53 ou Cr12MoV. Perfis personalizados e padrões de parafusos para produção de reciclados de plástico.",
     link: "/products/granulator-blades",
@@ -9398,7 +9403,7 @@ export const blades: Blade[] = [
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Facas para tesouras estacionárias de sucata",
-    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    image: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
     imageDimensions: {
       width: 800,
       height: 800,

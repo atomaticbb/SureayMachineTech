@@ -304,7 +304,7 @@ export const SEO_CONFIG: Record<string, PageSEO> = {
     title: "Cuchillas para cizallas fijas de pórtico para chatarra",
     description:
       "Solicite bloques de cuchillas móviles montados con pernos y contracuchillas fijas para cizallas de pórtico estacionarias para chatarra. Elija acero 1.2746 o 1.2767 y envíe su plano de montaje.",
-    ogImage: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    ogImage: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
   },
   "flying-shear-blades": {
     title: "Cuchillas de cizalla volante | A medida para trenes de laminación",

@@ -2773,8 +2773,13 @@ export const blades: Blade[] = [
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/edge-configurations.webp",
+      "/images/products/granulator-blades/granulator-knife-four-mounting-slots.webp",
     ],
+    specificationImageDimensions: {
+      width: 1200,
+      height: 960,
+      smallerWidths: [320, 480, 800],
+    },
     description:
       "استبدال الدوار المحبب البلاستيكي والسكاكين الثابتة في D2 أو SKD11 أو DC53 أو Cr12MoV. ملفات تعريف مخصصة وأنماط الترباس لإنتاج إعادة طحن البلاستيك.",
     link: "/products/granulator-blades",
@@ -9041,7 +9046,7 @@ export const blades: Blade[] = [
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "شفرات مقصات الخردة الثابتة",
-    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    image: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
     imageDimensions: {
       width: 800,
       height: 800,

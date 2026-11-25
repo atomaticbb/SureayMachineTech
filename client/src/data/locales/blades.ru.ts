@@ -2862,8 +2862,13 @@ export const blades: Blade[] = [
     gallery: [
       "/images/products/granulator-blades/granulator-blades-06.webp",
       "/images/products/granulator-blades/granulator-blades-03.webp",
-      "/images/products/granulator-blades/edge-configurations.webp",
+      "/images/products/granulator-blades/granulator-knife-four-mounting-slots.webp",
     ],
+    specificationImageDimensions: {
+      width: 1200,
+      height: 960,
+      smallerWidths: [320, 480, 800],
+    },
     description:
       "Сменный пластиковый ротор гранулятора и стационарные ножи из D2, SKD11, DC53 или Cr12MoV. Нестандартные профили и схемы крепления болтов для производства перешлифовки пластика.",
     link: "/products/granulator-blades",
@@ -9344,7 +9349,7 @@ export const blades: Blade[] = [
     category: "shear_blades",
     sector: "metal",
     categoryDisplay: "Ножи для стационарных пресс-ножниц для металлолома",
-    image: "/images/products/shear-detail/stationary-scrap-shear-blades.webp",
+    image: "/images/products/shear-detail/stationary-scrap-shear-knife.webp",
     imageDimensions: {
       width: 800,
       height: 800,
